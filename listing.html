@@ -52,7 +52,7 @@
         </section>
 
         <section class="search-panel" id="filters" aria-label="Фильтр объектов">
-          <div class="search-panel__row">
+          <div class="search-panel__row search-panel__row--primary">
             <button class="filter-control" type="button" data-open-filters>
               <span class="filter-control__label">Сделка</span>
               <strong data-control-value="deal">Купить</strong>
@@ -73,6 +73,8 @@
               <strong data-control-value="city">Москва</strong>
               <span class="filter-control__chevron" aria-hidden="true">⌄</span>
             </button>
+          </div>
+          <div class="search-panel__row search-panel__row--secondary">
             <button class="filter-control" type="button" data-open-filters data-city-dependent>
               <span class="filter-control__label">Район</span>
               <strong data-control-value="district">Любой</strong>
@@ -88,12 +90,20 @@
               <span>Еще фильтры</span>
               <span class="filter-control__badge" data-filter-badge hidden>0</span>
             </button>
+            <label class="search-panel__query">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" /><path d="m20 20-3.5-3.5" /></svg>
+              <span class="visually-hidden">Поиск по ID, ЖК или адресу</span>
+              <input type="search" placeholder="Поиск по ID, ЖК или адресу" autocomplete="off" data-query />
+            </label>
           </div>
-          <label class="search-panel__query">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" /><path d="m20 20-3.5-3.5" /></svg>
-            <span class="visually-hidden">Поиск по ID, ЖК или адресу</span>
-            <input type="search" placeholder="Поиск по ID, ЖК или адресу" autocomplete="off" data-query />
-          </label>
+          <nav class="quick-links" aria-label="Быстрые параметры поиска">
+            <a href="#results" data-quick-filter="penthouse">Пентхаусы</a>
+            <a href="#results" data-quick-filter="apartment">Апартаменты</a>
+            <a href="#results" data-quick-filter="terrace">С террасой</a>
+            <a href="#results" data-quick-filter="view">С видом</a>
+            <a href="#results" data-quick-filter="new-build">Новостройки</a>
+            <a href="#results" data-quick-filter="exclusive">Эксклюзивы BARNES</a>
+          </nav>
         </section>
 
         <div class="active-filters" data-active-filters aria-live="polite"></div>
