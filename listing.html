@@ -64,8 +64,18 @@
               <span class="filter-control__chevron" aria-hidden="true">⌄</span>
             </button>
             <button class="filter-control" type="button" data-open-filters>
-              <span class="filter-control__label">Локация</span>
-              <strong data-control-value="location">Москва</strong>
+              <span class="filter-control__label">Страна</span>
+              <strong data-control-value="country">Россия</strong>
+              <span class="filter-control__chevron" aria-hidden="true">⌄</span>
+            </button>
+            <button class="filter-control" type="button" data-open-filters>
+              <span class="filter-control__label">Город</span>
+              <strong data-control-value="city">Москва</strong>
+              <span class="filter-control__chevron" aria-hidden="true">⌄</span>
+            </button>
+            <button class="filter-control" type="button" data-open-filters data-city-dependent>
+              <span class="filter-control__label">Район</span>
+              <strong data-control-value="district">Любой</strong>
               <span class="filter-control__chevron" aria-hidden="true">⌄</span>
             </button>
             <button class="filter-control" type="button" data-open-filters>
@@ -113,7 +123,7 @@
           </div>
 
           <div class="listing-grid" data-listing-grid>
-            <article class="card" data-card data-category="city" data-type="penthouse" data-price="350000000" data-area="285.5" data-rooms="4" data-district="хамовники">
+            <article class="card" data-card data-category="city" data-country="russia" data-city="moscow" data-type="penthouse" data-price="350000000" data-area="285.5" data-rooms="4" data-district="хамовники">
               <div class="card__media">
                 <a class="card__media-link" href="https://front.barnes.vsavr.ru/vtorichnaya-nedvizhimost/561413/"><img class="card__image" src="https://c15d3839-d361-4fb8-9615-0c7a980d0169.selstorage.ru/resize_cache/11075423/d13733056f669deb3558a833a5d4f8f4/iblock/516/516ff1a2ffb19b012219760f5be431dc/3bdbfb684ee31aaf8e43a0355d272251.jpg" alt="Видовой пентхаус с тремя террасами и камином" loading="lazy" /></a>
                 <span class="card__exclusive">EXCLUSIVE</span>
@@ -123,7 +133,7 @@
               <div class="card__actions"><button class="card__call" type="button" data-request-call>Заказать звонок</button><a class="card__detail" href="https://front.barnes.vsavr.ru/vtorichnaya-nedvizhimost/561413/">Подробнее <span class="card__arrow" aria-hidden="true">↗</span></a></div>
             </article>
 
-            <article class="card" data-card data-category="city" data-type="apartment" data-price="179000000" data-area="154" data-rooms="2" data-district="пресненский">
+            <article class="card" data-card data-category="city" data-country="russia" data-city="moscow" data-type="apartment" data-price="179000000" data-area="154" data-rooms="2" data-district="пресненский">
               <div class="card__media">
                 <a class="card__media-link" href="https://front.barnes.vsavr.ru/vtorichnaya-nedvizhimost/575401/"><img class="card__image" src="https://c15d3839-d361-4fb8-9615-0c7a980d0169.selstorage.ru/resize_cache/11005738/d13733056f669deb3558a833a5d4f8f4/iblock/6d4/6d4e63c9a5a5340f6870db100decb834/392b41d6a54c0e54beb45f5d061d2c63.jpg" alt="Изысканный апартамент в башне Москва" loading="lazy" /></a>
                 <span class="card__exclusive">EXCLUSIVE</span>
@@ -133,7 +143,7 @@
               <div class="card__actions"><button class="card__call" type="button" data-request-call>Заказать звонок</button><a class="card__detail" href="https://front.barnes.vsavr.ru/vtorichnaya-nedvizhimost/575401/">Подробнее <span class="card__arrow" aria-hidden="true">↗</span></a></div>
             </article>
 
-            <article class="card" data-card data-category="city" data-type="apartment" data-price="151373100" data-area="159.6" data-rooms="5" data-district="хорошевский">
+            <article class="card" data-card data-category="city" data-country="russia" data-city="moscow" data-type="apartment" data-price="151373100" data-area="159.6" data-rooms="5" data-district="хорошевский">
               <div class="card__media">
                 <a class="card__media-link" href="https://front.barnes.vsavr.ru/vtorichnaya-nedvizhimost/593595/"><img class="card__image" src="https://c15d3839-d361-4fb8-9615-0c7a980d0169.selstorage.ru/resize_cache/11114744/d13733056f669deb3558a833a5d4f8f4/iblock/5a4/5a4526b6eb91f6fbc7f6aef0465b1a74/5f3c3b4ab0aea8a69138dd3226e2bfd4.jpg" alt="Просторная квартира в премиальном ЖК Prime Park" loading="lazy" /></a>
                 <button class="card__favorite" type="button" aria-pressed="false" aria-label="Добавить в избранное">♡</button>
@@ -178,6 +188,29 @@
               <label class="choice"><input type="radio" name="category" value="commercial" /><span>Коммерческая</span></label>
             </div>
           </fieldset>
+          <fieldset class="filter-section filter-section--location">
+            <legend>Локация</legend>
+            <div class="location-fields">
+              <label class="select-field">
+                <span>Страна</span>
+                <select name="country" data-country-select>
+                  <option value="russia" selected>Россия</option>
+                  <option value="france">Франция</option>
+                  <option value="italy">Италия</option>
+                  <option value="uae">ОАЭ</option>
+                </select>
+              </label>
+              <label class="select-field" data-city-field hidden>
+                <span>Город</span>
+                <select name="city" data-city-select></select>
+              </label>
+              <label class="select-field" data-district-field hidden>
+                <span>Район</span>
+                <select name="district" data-district-select></select>
+              </label>
+            </div>
+          </fieldset>
+
           <fieldset class="filter-section">
             <legend>Цена, ₽</legend>
             <div class="input-range">
@@ -200,15 +233,6 @@
               <label class="choice"><input type="checkbox" name="rooms" value="3" /><span>3</span></label>
               <label class="choice"><input type="checkbox" name="rooms" value="4" /><span>4</span></label>
               <label class="choice"><input type="checkbox" name="rooms" value="5" /><span>5+</span></label>
-            </div>
-          </fieldset>
-          <fieldset class="filter-section">
-            <legend>Район</legend>
-            <div class="choice-grid">
-              <label class="choice"><input type="radio" name="district" value="" checked /><span>Любой район</span></label>
-              <label class="choice"><input type="radio" name="district" value="хамовники" /><span>Хамовники</span></label>
-              <label class="choice"><input type="radio" name="district" value="пресненский" /><span>Пресненский</span></label>
-              <label class="choice"><input type="radio" name="district" value="хорошевский" /><span>Хорошевский</span></label>
             </div>
           </fieldset>
         </div>
