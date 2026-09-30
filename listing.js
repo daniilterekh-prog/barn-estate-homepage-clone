@@ -180,7 +180,6 @@
     button.setAttribute('aria-label', active ? 'Добавить в избранное' : 'Удалить из избранного')
   }))
   document.querySelectorAll('[data-request-call]').forEach((button) => button.addEventListener('click', () => showToast('Заявка на звонок отправлена')))
-  document.querySelector('[data-save-search]').addEventListener('click', () => showToast('Поиск сохранён'))
 
   syncForm()
   render()

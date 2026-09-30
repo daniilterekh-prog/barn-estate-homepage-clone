@@ -52,6 +52,13 @@
         </section>
 
         <section class="search-panel" id="filters" aria-label="Фильтр объектов">
+          <div class="search-panel__layout">
+            <label class="search-panel__query">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" /><path d="m20 20-3.5-3.5" /></svg>
+              <span class="visually-hidden">Поиск по ID, ЖК или адресу</span>
+              <input type="search" placeholder="Поиск по ID, ЖК или адресу" autocomplete="off" data-query />
+            </label>
+            <div class="search-panel__filters">
           <div class="search-panel__row search-panel__row--primary">
             <button class="filter-control" type="button" data-open-filters>
               <span class="filter-control__label">Сделка</span>
@@ -90,11 +97,8 @@
               <span>Еще фильтры</span>
               <span class="filter-control__badge" data-filter-badge hidden>0</span>
             </button>
-            <label class="search-panel__query">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" /><path d="m20 20-3.5-3.5" /></svg>
-              <span class="visually-hidden">Поиск по ID, ЖК или адресу</span>
-              <input type="search" placeholder="Поиск по ID, ЖК или адресу" autocomplete="off" data-query />
-            </label>
+          </div>
+            </div>
           </div>
           <nav class="quick-links" aria-label="Быстрые параметры поиска">
             <a href="#results" data-quick-filter="penthouse">Пентхаусы</a>
@@ -115,7 +119,6 @@
               <p class="results-count" data-results-count>3 объекта</p>
             </div>
             <div class="results-toolbar__actions">
-              <button class="save-search" type="button" data-save-search>Сохранить поиск</button>
               <label class="sort-control">
                 <span>Сортировка</span>
                 <select data-sort aria-label="Сортировка объектов">
@@ -125,9 +128,6 @@
                   <option value="area-desc">По площади</option>
                 </select>
               </label>
-              <div class="view-toggle" role="group" aria-label="Вид выдачи">
-                <button type="button" class="view-toggle__button is-active" data-view="grid" aria-pressed="true">Плитка</button>
-              </div>
             </div>
           </div>
 
