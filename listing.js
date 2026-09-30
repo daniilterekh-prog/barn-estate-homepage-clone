@@ -173,12 +173,6 @@
     sorted.forEach((card) => grid.append(card))
   })
 
-  document.querySelectorAll('[data-view]').forEach((button) => button.addEventListener('click', () => {
-    const list = button.dataset.view === 'list'
-    grid.classList.toggle('listing-grid--list', list)
-    document.querySelectorAll('[data-view]').forEach((item) => { item.classList.toggle('is-active', item === button); item.setAttribute('aria-pressed', String(item === button)) })
-  }))
-
   document.querySelectorAll('.card__favorite').forEach((button) => button.addEventListener('click', () => {
     const active = button.getAttribute('aria-pressed') === 'true'
     button.setAttribute('aria-pressed', String(!active))
