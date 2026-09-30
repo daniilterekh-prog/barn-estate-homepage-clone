@@ -36,7 +36,7 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{ou
 .listing-intro h1{font-size:clamp(42px,5vw,70px);font-weight:300;letter-spacing:-.055em;line-height:.95;margin:0}
 .listing-intro__text{color:var(--muted);font-size:17px;line-height:1.4;margin:0 0 3px;max-width:390px}
 
-.search-panel{background:var(--surface);border:1px solid var(--line);padding:14px}
+.search-panel{background:#fff;border:1px solid var(--line);padding:14px}
 .search-panel__row{display:grid;gap:8px;grid-template-columns:repeat(4,minmax(0,1fr)) minmax(160px,1.1fr)}
 .filter-control{align-items:center;background:#fff;border:1px solid var(--line);color:var(--ink);display:flex;gap:10px;min-height:62px;padding:11px 14px;text-align:left;transition:border-color .2s,background-color .2s}
 .filter-control:hover{background:#fafaf8;border-color:var(--accent)}
