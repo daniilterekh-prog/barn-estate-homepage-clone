@@ -21,6 +21,47 @@
     });
   }
 
+  if (!document.querySelector('.floating-expert')) {
+    const expert = document.createElement('aside');
+    expert.className = 'floating-expert floating-expert--gorodskaya';
+    expert.setAttribute('aria-label', 'Руслан Прус');
+    expert.innerHTML = '<button type="button" class="floating-expert__card" aria-haspopup="dialog"><span class="floating-expert__avatar"><img src="assets/ruslan.webp" alt="Руслан Прус" width="72" height="72" loading="lazy" decoding="async"></span><span class="floating-expert__content"><span class="floating-expert__label">Руководитель департамента городской недвижимости</span><span class="floating-expert__title">Задать вопрос эксперту</span><span class="floating-expert__name">Руслан Прус</span></span></button><button type="button" class="floating-expert__close" aria-label="Скрыть карточку Руслан Прус"></button>';
+    expert.querySelectorAll('*').forEach(function (element) {
+      element.setAttribute('data-v-cd0a1259', '');
+    });
+    expert.setAttribute('data-v-cd0a1259', '');
+    document.body.appendChild(expert);
+
+    const feedbackModal = document.createElement('div');
+    feedbackModal.className = 'modal feedback-modal vfm vfm--fixed vfm--inset';
+    feedbackModal.setAttribute('role', 'dialog');
+    feedbackModal.setAttribute('aria-modal', 'true');
+    feedbackModal.setAttribute('hidden', '');
+    feedbackModal.innerHTML = '<div class="vfm__overlay vfm--overlay vfm--absolute vfm--inset vfm--prevent-none" aria-hidden="true"></div><div class="vfm__content vfm--outline-none modal__content" tabindex="0"><button type="button" class="modal__close" aria-label="Закрыть"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg></button><div class="feedback-modal__layout"><div class="feedback-modal__hero"><img src="assets/feedback-hero.webp" alt="" class="feedback-modal__hero-image" width="840" height="360" loading="lazy"><div class="feedback-modal__hero-overlay" aria-hidden="true"></div><div class="feedback-modal__brand"><img src="assets/logo.svg" alt="BARNES Moscow" class="feedback-modal__logo" width="220" height="30"></div></div><div class="feedback-modal__body"><h2 class="feedback-modal__title">Обратная связь</h2><form class="feedback-modal__form" novalidate><div class="feedback-modal__honeypot" aria-hidden="true"><input type="text" tabindex="-1" autocomplete="off"></div><label class="feedback-modal__field"><input type="text" class="feedback-modal__input" autocomplete="name" placeholder="Введите Ваше Имя:"></label><label class="feedback-modal__field"><input type="text" inputmode="tel" class="feedback-modal__input" autocomplete="tel" placeholder="Ваш номер телефона:"></label><button formnovalidate type="submit" class="ui-button ui-button--primary ui-button--large ui-button--full feedback-modal__submit">Отправить заявку</button><label class="feedback-modal__consent"><input type="checkbox" class="feedback-modal__consent-input"><span class="feedback-modal__consent-box" aria-hidden="true"></span><span class="feedback-modal__consent-text"> Я даю согласие на обработку <a class="feedback-modal__consent-link" target="_blank" href="https://front.barnes.vsavr.ru/legal_notices/yuridicheskie-uvedomleniya/"> персональных данных </a></span></label></form></div></div></div>';
+    feedbackModal.querySelector('.modal__close').setAttribute('data-v-fd466e7b', '');
+    feedbackModal.querySelectorAll('.feedback-modal__layout, .feedback-modal__layout *').forEach(function (element) {
+      element.setAttribute('data-v-231b17b3', '');
+    });
+    feedbackModal.querySelector('.feedback-modal__submit').setAttribute('data-v-0abc262e', '');
+    document.body.appendChild(feedbackModal);
+
+    const closeFeedback = function () {
+      feedbackModal.setAttribute('hidden', '');
+      document.body.classList.remove('no-scroll');
+    };
+    expert.querySelector('.floating-expert__card').addEventListener('click', function () {
+      feedbackModal.removeAttribute('hidden');
+      document.body.classList.add('no-scroll');
+      feedbackModal.querySelector('.feedback-modal__input')?.focus();
+    });
+    expert.querySelector('.floating-expert__close').addEventListener('click', function (event) {
+      event.stopPropagation();
+      expert.remove();
+    });
+    feedbackModal.querySelector('.modal__close').addEventListener('click', closeFeedback);
+    feedbackModal.querySelector('.vfm__overlay').addEventListener('click', closeFeedback);
+  }
+
   page.querySelectorAll('.owner-sale-services__slider-wrap').forEach(function (wrap) {
     const placeholder = wrap.querySelector(':scope > span');
     if (!placeholder || placeholder.children.length) return;
@@ -46,7 +87,7 @@
     slider.setAttribute('aria-label', 'Список услуг');
     slider.innerHTML = '<div class="splide__track" data-v-2d6c67d9=""><ul class="splide__list" data-v-2d6c67d9="">' + services.map(function (service, index) {
       const number = String(index + 1).padStart(2, '0');
-      return '<li class="splide__slide" data-v-2d6c67d9="" style="width: calc(25vw - 13px);"><article class="owner-sale-services__card" data-v-2d6c67d9=""><span class="owner-sale-services__number" data-v-2d6c67d9="">' + number + '</span><p class="owner-sale-services__text" data-v-2d6c67d9="">' + service + '</p></article></li>';
+      return '<li class="splide__slide" data-v-2d6c67d9=""><article class="owner-sale-services__card" data-v-2d6c67d9=""><span class="owner-sale-services__number" data-v-2d6c67d9="">' + number + '</span><p class="owner-sale-services__text" data-v-2d6c67d9="">' + service + '</p></article></li>';
     }).join('') + '</ul></div>';
     placeholder.replaceWith(slider);
   });

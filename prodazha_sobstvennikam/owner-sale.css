@@ -2,6 +2,10 @@
   display: none;
 }
 
+.feedback-modal[hidden] {
+  display: none;
+}
+
 .owner-sale-clone-menu {
   background: #fff;
   color: #1e1e1e;
