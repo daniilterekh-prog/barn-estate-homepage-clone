@@ -68,7 +68,7 @@ def download_url_map(urls: list[str], index_start: int = 1) -> dict[str, str]:
         try:
             if not output_path.exists():
                 output_path.write_bytes(request(source_url))
-            replacements[raw_url] = output_path.relative_to(ROOT).as_posix()
+            replacements[raw_url] = "/" + output_path.relative_to(ROOT).as_posix()
         except Exception as error:  # Keep the original URL if the source CDN rejects it.
             print(f"asset kept remote: {source_url} ({error})")
     return replacements
@@ -97,7 +97,7 @@ def download_images(html: str) -> dict[str, str]:
             url = candidate.strip().split(" ", 1)[0]
             # A previous sync can already have localized CSS image URLs in
             # the source snapshot. They are local files, not new source URLs.
-            if url.startswith(("/city-real-estate/source-assets/", "assets/city-real-estate/source-assets/")):
+            if url.startswith(("/city-real-estate/source-assets/", "assets/city-real-estate/source-assets/", "/assets/city-real-estate/source-assets/")):
                 continue
             if url and url not in urls and (url.startswith("/") or url.startswith("http")):
                 urls.append(url)
@@ -213,23 +213,10 @@ def inject_image_bridge(html: str, replacements: dict[str, str]) -> str:
   const imageMap = {payload};
   const rewrite = (node) => {{
     if (!(node instanceof Element)) return;
-    let localImage = null;
     for (const attribute of ["src", "poster"]) {{
       const value = node.getAttribute(attribute);
       if (value && imageMap[value]) {{
-        localImage = imageMap[value];
-        node.setAttribute(attribute, localImage);
-      }} else if (value && value.startsWith("/assets/city-real-estate/source-assets/")) {{
-        localImage = value;
-      }}
-      if (node.tagName === "IMG" && value && (imageMap[value] || value.startsWith("/assets/city-real-estate/source-assets/"))) node.removeAttribute("loading");
-    }}
-    if (node.tagName === "IMG" && localImage) {{
-      const media = node.closest(".apartment-card__media") || node.parentElement;
-      if (media) {{
-        media.style.backgroundImage = `url("${{localImage}}")`;
-        media.style.backgroundSize = "cover";
-        media.style.backgroundPosition = "center";
+        node.setAttribute(attribute, imageMap[value]);
       }}
     }}
     const srcset = node.getAttribute("srcset");
@@ -283,14 +270,17 @@ def sync(source_path: Path | None = None) -> None:
 
     html = localize_nuxt_runtime(html)
 
-    html = html.replace("<head>", '<head><base href="/">', 1)
+    html = html.replace("<head>", '<head><base href="/gorodskaya-nedvizhimost/">', 1)
     interactive_html = "<!-- Source snapshot: " + SOURCE_URL + " -->\n" + html
     static_html = re.sub(r"<script\b[^>]*\bsrc=\"[^\"]+\"[^>]*>.*?</script>", "", interactive_html, flags=re.S)
     static_html = re.sub(r"[ \t]+(?=\n|$)", "", static_html)
     interactive_html = inject_map_bridge(interactive_html)
     interactive_html = inject_image_bridge(interactive_html, replacements)
 
-    PAGE.write_text(static_html, encoding="utf-8")
+    # Keep the standalone file fully interactive as well. The folder route
+    # remains separate for clean URL routing, while this file is the direct
+    # page entry a static host or repository browser will open.
+    PAGE.write_text(interactive_html, encoding="utf-8")
     ROUTE_PAGE.parent.mkdir(parents=True, exist_ok=True)
     ROUTE_PAGE.write_text(interactive_html, encoding="utf-8")
     print(f"wrote {PAGE} ({PAGE.stat().st_size} bytes)")
