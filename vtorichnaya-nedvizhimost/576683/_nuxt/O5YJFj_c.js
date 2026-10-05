@@ -1,0 +1,1 @@
+import{d as r,a,h as o,s as d}from"./DyBIFPuG.js";const u=r((e,{slots:t,emit:s})=>{const i=d();return a(i,n=>{s("trigger",n)},e.options),()=>{if(t.default)return o(e.as||"div",{ref:i},t.default())}},{name:"OnClickOutside",props:["as","options"],emits:["trigger"]});export{u as O};

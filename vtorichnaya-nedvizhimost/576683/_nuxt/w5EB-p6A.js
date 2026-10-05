@@ -1,0 +1,1 @@
+import{d as a,A as n,C as r,G as c}from"./DyBIFPuG.js";const p=a({__name:"[code]",async setup(i){let e,t;const s=n(),o=String(s.params.code??"");return[e,t]=r(()=>c(o?`/zastroyshchiki/${encodeURIComponent(o)}/`:"/zastroyshchiki/",{})),await e,t(),()=>{}}});export{p as default};
