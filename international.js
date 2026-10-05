@@ -7,6 +7,7 @@
   const header = document.querySelector('.site-header')
   const menuButton = document.querySelector('.site-header__icon-btn')
   const nav = document.querySelector('.catalog-page-nav')
+
   const toast = document.createElement('div')
   toast.className = 'international-toast'
   toast.setAttribute('role', 'status')
@@ -26,16 +27,21 @@
   menu.innerHTML = `
     <div class="international-menu__grid">
       <section class="international-menu__group"><h2>Недвижимость</h2>
-        <a href="/mezhdunarodnaya-nedvizhimost.html">Зарубежная недвижимость</a>
-        <a href="/gorodskaya-nedvizhimost/">Городская недвижимость</a>
-        <a href="/zagorodnaya-nedvizhimost/">Загородная недвижимость</a>
+        <a href="international.html">Зарубежная недвижимость</a>
+        <a href="index.html">Городская недвижимость</a>
+        <a href="listing.html">Загородная недвижимость</a>
       </section>
       <section class="international-menu__group"><h2>Направления</h2>
-        <a href="/oae/">ОАЭ</a><a href="/ispaniya/">Испания</a><a href="/italiya/">Италия</a>
-        <a href="/mezhdunarodnaya-nedvizhimost/turtsiya/">Турция</a><a href="/tailand/">Таиланд</a>
+        <a href="international.html#departments-section">ОАЭ</a>
+        <a href="international.html#departments-section">Испания</a>
+        <a href="international.html#departments-section">Италия</a>
+        <a href="international.html#departments-section">Турция</a>
+        <a href="international.html#departments-section">Таиланд</a>
       </section>
       <section class="international-menu__group"><h2>BARNES Moscow</h2>
-        <a href="/contacts/">Контакты</a><a href="/team/">Команда</a><a href="#catalog-contact">Оставить заявку</a>
+        <a href="international.html#catalog-contact">Контакты</a>
+        <a href="international.html#catalog-contact">Команда</a>
+        <a href="international.html#catalog-contact">Оставить заявку</a>
       </section>
     </div>`
   document.body.append(menu)
@@ -46,6 +52,7 @@
     menuButton?.setAttribute('aria-expanded', String(open))
     page.classList.toggle('international-menu-open', open)
   }
+
   menuButton?.setAttribute('aria-expanded', 'false')
   menuButton?.addEventListener('click', () => setMenu(menu.hidden))
   menu.addEventListener('click', (event) => {
@@ -65,31 +72,30 @@
     window.scrollTo({ top: target.getBoundingClientRect().top + window.scrollY - offset, behavior: 'smooth' })
   }
 
-  const navTargets = ['.catalog-best-offers', '.catalog-map', '.catalog-consultation', '.departments-section', '.news-section']
+  const navTargets = [
+    '.catalog-best-offers',
+    '.catalog-map',
+    '.catalog-consultation',
+    '.departments-section',
+    '.news-section',
+  ]
   nav?.querySelectorAll('button').forEach((button, index) => {
     button.addEventListener('click', () => scrollTo(navTargets[index]))
   })
 
   const bestOffers = document.querySelector('.catalog-best-offers')
-  const bestOfferImages = [...document.querySelectorAll('img')]
-    .filter((image) => image.src.includes('selstorage.ru'))
-    .slice(0, 3)
-  if (bestOffers && bestOfferImages.length && !bestOffers.querySelector('.international-offer-strip')) {
+  const offerItems = [
+    ['https://c15d3839-d361-4fb8-9615-0c7a980d0169.selstorage.ru/resize_cache/9682332/50c67a0738bb1843e93eec7710536d7b/iblock/4bc/pyoq5gkg0qj03x3h2k15682sij7nmlw8/2.3.jpeg', 'Жемчужина Стамбула в Кыгытхане', 'Стамбул'],
+    ['https://c15d3839-d361-4fb8-9615-0c7a980d0169.selstorage.ru/iblock/039/0395030729d5073ce642d246a9a4f6f9/3a8b2f35f0f0ac0d0d647e54e043a3ed.jpeg', 'AL JURF GARDENS', 'Дубай'],
+    ['https://c15d3839-d361-4fb8-9615-0c7a980d0169.selstorage.ru/iblock/5f5/5f5825870604d427e45f0f174fcd12dc/7c727a309e816ccfe4aacda7f0347575.png', 'AMAZI SALALAH', 'Салала'],
+  ]
+  if (bestOffers && !bestOffers.querySelector('.international-offer-strip')) {
     const offerStrip = document.createElement('div')
     offerStrip.className = 'international-offer-strip'
-    const offerNames = [
-      ['Жемчужина Стамбула в Кыгытхане', 'Стамбул'],
-      ['AL JURF GARDENS', 'Дубай'],
-      ['AMAZI SALALAH', 'Салала']
-    ]
-    bestOfferImages.forEach((image, index) => {
+    offerItems.forEach(([src, name, place]) => {
       const card = document.createElement('article')
       card.className = 'international-offer-card'
-      const clone = image.cloneNode(true)
-      clone.alt = offerNames[index][0]
-      card.innerHTML = '<div class="international-offer-card__media"></div>'
-      card.querySelector('.international-offer-card__media').append(clone)
-      card.insertAdjacentHTML('beforeend', `<p class="international-offer-card__name">${offerNames[index][0]}</p><p class="international-offer-card__place">${offerNames[index][1]}</p>`)
+      card.innerHTML = `<div class="international-offer-card__media"><img src="${src}" alt="${name}" loading="lazy"></div><p class="international-offer-card__name">${name}</p><p class="international-offer-card__place">${place}</p>`
       offerStrip.append(card)
     })
     bestOffers.querySelector('.catalog-best-offers__header')?.after(offerStrip)
@@ -97,20 +103,21 @@
 
   const news = document.querySelector('.news-section')
   if (news && !news.querySelector('.international-news-grid')) {
+    news.querySelector('.news-section__inner > span')?.remove()
     const newsItems = [
       ['https://c15d3839-d361-4fb8-9615-0c7a980d0169.selstorage.ru/resize_cache/11174655/8f5ddbc1f811f957fe777caaf9cef323/iblock/9a9/9a9041c1611692076e767fdcd4a2fb6d/32bb1c09e2de90b389dcf4bd8cfa3802.png', 'Forbes обновил мировой рейтинг городов по числу миллиардеров: Москва опустилась на третье место'],
       ['https://c15d3839-d361-4fb8-9615-0c7a980d0169.selstorage.ru/resize_cache/11174656/8f5ddbc1f811f957fe777caaf9cef323/iblock/48e/48e3fba91f6bfc920f2e2c77244dcf82/8b67d18cf8e818fb793c259ffb3fed78.png', 'Инвестиции в туризм Алтайского края выросли в полтора раза за год'],
       ['https://c15d3839-d361-4fb8-9615-0c7a980d0169.selstorage.ru/resize_cache/11174654/8f5ddbc1f811f957fe777caaf9cef323/iblock/753/753a5fd832550d48dca46a89a654e6e9/f65d8dbc17c559c5df2fd4ac4d1c0c94.png', 'Москва вошла в топ-5 городов мира по ценам на элитное жилье'],
       ['https://c15d3839-d361-4fb8-9615-0c7a980d0169.selstorage.ru/resize_cache/11138184/8f5ddbc1f811f957fe777caaf9cef323/iblock/090/0901ea8a8fe1ab26001aa935c0442cea/f19bce520e61659e0feb1844a98319ae.png', 'Состоятельные покупатели стимулируют рынок брендовой недвижимости в Дубае'],
       ['https://c15d3839-d361-4fb8-9615-0c7a980d0169.selstorage.ru/resize_cache/11183306/8f5ddbc1f811f957fe777caaf9cef323/iblock/a3f/a3f9a05b430280e2897d887fbf6bfe12/764e3d4bccb6027b30366e2f2bf025d2.jpg', 'Стоимость недвижимости делюкс-сегмента выросла в третьем квартале 2024'],
-      ['https://c15d3839-d361-4fb8-9615-0c7a980d0169.selstorage.ru/resize_cache/11177242/8f5ddbc1f811f957fe777caaf9cef323/iblock/1d1/1d19c59186122a2d4c2b21fa848f77ac/32b04ebf9a2af2e54c68f782cb58f3f9.png', 'Опубликован рейтинг городов по уровню ресторанного обслуживания']
+      ['https://c15d3839-d361-4fb8-9615-0c7a980d0169.selstorage.ru/resize_cache/11177242/8f5ddbc1f811f957fe777caaf9cef323/iblock/1d1/1d19c59186122a2d4c2b21fa848f77ac/32b04ebf9a2af2e54c68f782cb58f3f9.png', 'Опубликован рейтинг городов по уровню ресторанного обслуживания'],
     ]
     const grid = document.createElement('div')
     grid.className = 'international-news-grid'
     newsItems.forEach(([src, title]) => {
       const card = document.createElement('article')
-      card.className = 'international-news-card'
-      card.innerHTML = `<a href="https://front.barnes.vsavr.ru/media/novosti/"><img src="${src}" alt="${title}"><p>${title}</p><span>Читать подробнее</span></a>`
+      card.className = 'international-news-card news-section__card'
+      card.innerHTML = `<a class="news-section__card-link" href="https://front.barnes.vsavr.ru/media/novosti/"><img class="news-section__image" src="${src}" alt="${title}" loading="lazy"><div class="news-section__content"><p class="news-section__category">${title}</p><span class="news-section__read-more">Читать подробнее</span></div></a>`
       grid.append(card)
     })
     news.querySelector('.news-section__header')?.after(grid)
@@ -120,6 +127,7 @@
   const submitSearch = document.querySelector('.catalog-hero-filters__submit')
   const catalog = document.querySelector('.catalog-grid')
   const cards = [...document.querySelectorAll('.apartment-card--catalog')]
+
   const applySearch = () => {
     const query = heroSearch?.value.trim().toLocaleLowerCase('ru') || ''
     let matches = 0
@@ -131,8 +139,12 @@
     if (catalog) scrollTo('.catalog-grid')
     showToast(query ? `Найдено объектов: ${matches}` : 'Показаны все объекты')
   }
+
   heroSearch?.addEventListener('keydown', (event) => {
-    if (event.key === 'Enter') { event.preventDefault(); applySearch() }
+    if (event.key === 'Enter') {
+      event.preventDefault()
+      applySearch()
+    }
   })
   submitSearch?.addEventListener('click', applySearch)
 
@@ -179,15 +191,7 @@
     const viewport = document.createElement('div')
     viewport.className = 'catalog-projects-map'
     viewport.setAttribute('aria-label', 'Карта объектов BARNES')
-    viewport.innerHTML = `
-      <div class="international-map-fallback"></div>
-      <div class="international-map-markers" aria-live="polite"></div>
-      <div class="international-map-zoom" aria-label="Управление масштабом"><button type="button" data-map-zoom="in" aria-label="Увеличить карту">+</button><button type="button" data-map-zoom="out" aria-label="Уменьшить карту">−</button></div>
-      <div class="international-map-controls"><label><input type="search" placeholder="Поиск в видимой области" aria-label="Поиск в видимой области"></label><button type="button" data-map-fullscreen>На весь экран</button></div>
-      <div class="international-map-popup" hidden>
-        <button type="button" class="international-map-popup__close" aria-label="Закрыть карточку">×</button>
-        <p class="international-map-popup__kicker">Направление BARNES</p><h3></h3><p></p><a href="#catalog-contact">Подробнее ↗</a>
-      </div>`
+    viewport.innerHTML = `<div class="international-map-fallback"></div><div class="international-map-markers" aria-live="polite"></div><div class="international-map-zoom" aria-label="Управление масштабом"><button type="button" data-map-zoom="in" aria-label="Увеличить карту">+</button><button type="button" data-map-zoom="out" aria-label="Уменьшить карту">−</button></div><div class="international-map-controls"><label><input type="search" placeholder="Поиск в видимой области" aria-label="Поиск в видимой области"></label><button type="button" data-map-fullscreen>На весь экран</button></div><div class="international-map-popup" hidden><button type="button" class="international-map-popup__close" aria-label="Закрыть карточку">×</button><p class="international-map-popup__kicker">Направление BARNES</p><h3></h3><p></p><a href="#catalog-contact">Подробнее ↗</a></div>`
     map.append(viewport)
     const markers = viewport.querySelector('.international-map-markers')
     const popup = viewport.querySelector('.international-map-popup')
@@ -229,6 +233,14 @@
     })
   }
 
+  document.querySelectorAll('.apartment-card__favorite').forEach((button) => {
+    button.addEventListener('click', () => {
+      const active = button.getAttribute('aria-pressed') === 'true'
+      button.setAttribute('aria-pressed', String(!active))
+      button.setAttribute('aria-label', active ? 'Добавить в избранное' : 'Удалить из избранного')
+    })
+  })
+
   document.querySelectorAll('form').forEach((form) => {
     form.addEventListener('submit', (event) => {
       event.preventDefault()
@@ -237,7 +249,10 @@
       const label = button.textContent
       button.textContent = 'Заявка отправлена'
       button.disabled = true
-      window.setTimeout(() => { button.textContent = label; button.disabled = false }, 2400)
+      window.setTimeout(() => {
+        button.textContent = label
+        button.disabled = false
+      }, 2400)
     })
   })
 

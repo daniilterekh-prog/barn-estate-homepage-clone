@@ -1,21 +1,7 @@
-/*
- * Isolated interaction and fallback styles for the international catalogue.
- * The page's visual system is kept in the captured BARNES SSR styles in
- * international.html; every rule here is scoped to this page only.
- */
+/* Isolated behavior styles for the captured international catalogue page. */
 
 body.international-page {
   overflow-x: clip;
-}
-
-body.international-page .international-menu {
-  background: #fff;
-  color: #1e1e1e;
-  inset: 111px 0 0;
-  overflow-y: auto;
-  padding: 42px clamp(20px, 5.2vw, 100px) 60px;
-  position: fixed;
-  z-index: 1200;
 }
 
 body.international-page .catalog-best-offers {
@@ -80,12 +66,12 @@ body.international-page .news-section {
 body.international-page .international-news-grid {
   display: flex;
   gap: 32px;
-  margin-top: 50px;
+  margin-top: 0;
   overflow: hidden;
 }
 
 body.international-page .international-news-card {
-  flex: 0 0 28.5%;
+  flex: 0 0 31.78%;
   min-width: 0;
 }
 
@@ -99,55 +85,43 @@ body.international-page .international-news-card img {
 
 body.international-page .international-news-card a {
   color: inherit;
+  display: block;
   text-decoration: none;
 }
 
-body.international-page .international-news-card p {
-  font-size: 20px;
-  font-weight: 300;
-  line-height: 1.4;
-  margin: 18px 0 0;
-}
-
-body.international-page .international-menu__grid {
-  display: grid;
-  gap: 48px;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  margin: 0 auto;
-  max-width: 1920px;
-}
-
-body.international-page .international-menu__group {
+body.international-page .international-news-card .news-section__content {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  padding-top: 18px;
 }
 
-body.international-page .international-menu__group h2 {
+body.international-page .international-news-card .news-section__category {
+  color: #262626;
+  display: -webkit-box;
   font-size: 20px;
-  font-weight: 400;
-  margin: 0 0 8px;
-}
-
-body.international-page .international-menu__group a {
-  color: inherit;
-  font-size: 18px;
   font-weight: 300;
-  text-decoration: none;
-  transition: color .2s ease;
+  line-height: 1.5;
+  margin: 0;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  text-overflow: ellipsis;
 }
 
-body.international-page .international-menu__group a:hover,
-body.international-page .international-menu__group a:focus-visible {
-  color: #8b1d25;
+body.international-page .international-news-card .news-section__read-more {
+  color: #262626;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.4;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  width: fit-content;
 }
 
 body.international-page .international-map-fallback {
   background-color: #e8e9e6;
-  background-image:
-    linear-gradient(28deg, transparent 0 49%, #d1d4d0 49.2% 49.8%, transparent 50%),
-    linear-gradient(112deg, transparent 0 49%, #d8dad7 49.2% 49.8%, transparent 50%),
-    linear-gradient(90deg, transparent 0 49%, #d3d6d2 49.2% 49.8%, transparent 50%);
+  background-image: linear-gradient(28deg, transparent 0 49%, #d1d4d0 49.2% 49.8%, transparent 50%), linear-gradient(112deg, transparent 0 49%, #d8dad7 49.2% 49.8%, transparent 50%), linear-gradient(90deg, transparent 0 49%, #d3d6d2 49.2% 49.8%, transparent 50%);
   background-size: 260px 180px, 340px 210px, 210px 170px;
   inset: 0;
   overflow: hidden;
@@ -332,6 +306,49 @@ body.international-page .catalog-projects-map.international-map--fullscreen {
   z-index: 2000;
 }
 
+body.international-page .international-menu {
+  background: #fff;
+  color: #1e1e1e;
+  inset: 111px 0 0;
+  overflow-y: auto;
+  padding: 42px clamp(20px, 5.2vw, 100px) 60px;
+  position: fixed;
+  z-index: 1200;
+}
+
+body.international-page .international-menu__grid {
+  display: grid;
+  gap: 48px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin: 0 auto;
+  max-width: 1920px;
+}
+
+body.international-page .international-menu__group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+body.international-page .international-menu__group h2 {
+  font-size: 20px;
+  font-weight: 400;
+  margin: 0 0 8px;
+}
+
+body.international-page .international-menu__group a {
+  color: inherit;
+  font-size: 18px;
+  font-weight: 300;
+  text-decoration: none;
+  transition: color .2s ease;
+}
+
+body.international-page .international-menu__group a:hover,
+body.international-page .international-menu__group a:focus-visible {
+  color: #8b1d25;
+}
+
 body.international-page .catalog-grid__item.is-filtered {
   display: none;
 }
@@ -388,7 +405,8 @@ body.international-page .international-toast.is-visible {
     flex: 0 0 78vw;
   }
 
-  body.international-page .international-offer-strip::-webkit-scrollbar {
+  body.international-page .international-offer-strip::-webkit-scrollbar,
+  body.international-page .international-news-grid::-webkit-scrollbar {
     display: none;
   }
 
@@ -403,22 +421,22 @@ body.international-page .international-toast.is-visible {
   body.international-page .international-news-grid {
     display: flex;
     gap: 16px;
-    margin-top: 25px;
+    margin-top: 0;
     overflow-x: auto;
     scrollbar-width: none;
-  }
-
-  body.international-page .international-news-grid::-webkit-scrollbar {
-    display: none;
   }
 
   body.international-page .international-news-card {
     flex: 0 0 82vw;
   }
 
-  body.international-page .international-news-card p {
+  body.international-page .international-news-card .news-section__content {
+    gap: 8px;
+    padding-top: 12px;
+  }
+
+  body.international-page .international-news-card .news-section__category {
     font-size: 16px;
-    margin-top: 12px;
   }
 
   body.international-page .catalog-projects-map {
@@ -472,7 +490,6 @@ body.international-page .international-toast.is-visible {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  body.international-page .international-map-marker,
   body.international-page .international-toast {
     transition: none;
   }
