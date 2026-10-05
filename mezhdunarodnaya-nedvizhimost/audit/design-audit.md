@@ -398,5 +398,5 @@ breakpoints            = 540, 640, 768, 1024, 1280, 1440, 1920
 - Checked local and live reference at 29 exact widths from 320 to 2560 px, plus breakpoint boundary pairs and viewport-height checkpoints.
 - Checked DOM structure, styles, SEO metadata, JSON-LD, forms, button names, menu open/close, sticky nav and FAQ expansion.
 - Captured visual checkpoints at `390×844` and `1440×900`.
-- Found 18 open findings and 1 intentional implementation finding: 0 P1, 9 P2, 8 P3, 1 P4 open; the intentional clipped-carousel finding is excluded from remediation count.
+- Found 18 open findings and 1 intentional implementation finding: 0 P1, 8 P2, 9 P3, 1 P4 open; the intentional clipped-carousel finding is excluded from remediation count.
 - No production HTML/CSS/JS/assets were changed during the audit.
