@@ -5,6 +5,38 @@
   const menuToggle = document.querySelector('[data-menu-toggle]');
   const toast = document.querySelector('[data-toast]');
 
+  const consultation = document.querySelector('.commercial-consultation');
+  if (consultation?.id === 'commercial-contact') consultation.id = 'commercial-consultation';
+  const faqTitle = document.querySelector('#commercial-faq-title');
+  if (faqTitle) faqTitle.textContent = 'Вопросы и ответы по коммерческой недвижимости';
+  document.querySelectorAll('.commercial-faq details').forEach((item) => item.removeAttribute('open'));
+  const favoriteCount = document.querySelector('.commercial-header__favorite b');
+  if (favoriteCount) favoriteCount.style.display = 'none';
+  const mapImage = document.querySelector('.commercial-map > img');
+  if (mapImage && window.innerWidth >= 1800) {
+    mapImage.src = 'assets/commercial/source-map-wide.png';
+    document.querySelector('.commercial-map')?.classList.add('commercial-map--captured');
+  }
+
+  // The source catalog keeps the action row outside the information body.
+  // Move our semantically grouped controls after the body before layout settles.
+  document.querySelectorAll('.commercial-property-card').forEach((card) => {
+    const body = card.querySelector('.commercial-property-card__body');
+    const actions = body?.querySelector('.commercial-property-card__actions');
+    if (body && actions) body.parentNode.insertBefore(actions, body.nextSibling);
+  });
+
+  const footerNav = document.querySelector('.commercial-footer__nav');
+  if (footerNav && footerNav.children.length === 8) {
+    const owner = footerNav.lastElementChild;
+    const sp = document.createElement('div');
+    sp.innerHTML = '<h2>Санкт-Петербург</h2><a>Вторичная</a><a>Новостройки</a><a>Загородная</a><a>Коммерческая</a><a>Эксклюзив</a><a>Апартаменты</a><a>Пентхаус</a>';
+    footerNav.insertBefore(sp, owner);
+    owner.style.gridColumn = '1';
+    const titles = ['Москва', 'Загородная', 'Коммерческая', 'Курортная', 'Зарубежная', 'Санкт-Петербург', 'Медиа', 'О BARNES', 'Собственникам'];
+    [...footerNav.children].forEach((column, index) => { const title = column.querySelector('h2'); if (title) title.textContent = titles[index]; });
+  }
+
   const showToast = (message) => {
     toast.textContent = message;
     toast.classList.add('is-visible');
@@ -28,7 +60,9 @@
     const active = button.getAttribute('aria-pressed') === 'true';
     button.setAttribute('aria-pressed', String(!active));
     const count = [...document.querySelectorAll('.commercial-favorite[aria-pressed="true"]')].length;
-    document.querySelector('.commercial-header__favorite b').textContent = count;
+    const badge = document.querySelector('.commercial-header__favorite b');
+    badge.textContent = count;
+    badge.style.display = count ? 'grid' : 'none';
   }));
 
   document.querySelector('[data-hero-search]')?.addEventListener('submit', (event) => {
@@ -58,11 +92,11 @@
     button.classList.add('is-active');
   }));
 
-  document.querySelector('[data-lead-form]')?.addEventListener('submit', (event) => {
+  document.querySelectorAll('[data-lead-form]').forEach((form) => form.addEventListener('submit', (event) => {
     event.preventDefault();
     event.currentTarget.querySelector('[data-form-status]').textContent = 'Спасибо — эксперт BARNES свяжется с вами.';
     event.currentTarget.reset();
-  });
+  }));
 
   const grid = document.querySelector('[data-project-grid]');
   document.querySelector('[data-sort]')?.addEventListener('change', (event) => {
