@@ -1,1 +1,0 @@
-import{f as i,t as o}from"./DyBIFPuG.js";function s(e){i({title:()=>o(e)?.title,description:()=>o(e)?.description,keywords:()=>o(e)?.keywords,ogTitle:()=>o(e)?.title,ogDescription:()=>o(e)?.description})}export{s as u};
