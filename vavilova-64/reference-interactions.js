@@ -1,3 +1,24 @@
+(() => {
+  const updateStaticLayout = () => {
+    const header = document.querySelector('.layout__header .site-header, .site-header')
+    if (header) document.documentElement.style.setProperty('--layout-header-height', `${Math.ceil(header.getBoundingClientRect().height)}px`)
+  }
+  const addStaticSliderRules = () => {
+    if (document.querySelector('style[data-vavilova-static]')) return
+    const style = document.createElement('style')
+    style.dataset.vavilovaStatic = ''
+    style.textContent = '.documents__slider[data-v-2131a8df] .splide__slide{width:var(--documents-slide-width)!important}'
+    document.head.appendChild(style)
+  }
+  updateStaticLayout()
+  addStaticSliderRules()
+  if (window.ResizeObserver) {
+    const header = document.querySelector('.layout__header .site-header, .site-header')
+    if (header) new ResizeObserver(updateStaticLayout).observe(header)
+  }
+  window.addEventListener('resize', updateStaticLayout, { passive: true })
+})()
+
 if (window.location.protocol !== 'file:') {
   const localAssetByFilename = {
     '37537bbcc39d4cd6cbbfa8bee57ccfe0.jpg': 'remote-01.jpg',
@@ -48,7 +69,7 @@ if (window.location.protocol !== 'file:') {
   new MutationObserver(rewriteImages).observe(document.documentElement, { subtree: true, childList: true, attributes: true, attributeFilter: ['src', 'srcset'] })
 }
 
-if (window.location.protocol !== 'file:') {
+if (window.location.protocol !== 'file:' && /\/zhilye-kompleksy\/vavilova-64\/?$/.test(window.location.pathname)) {
   const originalClient = document.createElement('script')
   originalClient.type = 'module'
   originalClient.src = '_nuxt/B9PCyV3B.js'
