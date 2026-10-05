@@ -1,6 +1,6 @@
 (() => {
   const fallback = document.createElement('style');
-  fallback.textContent = '.catalog-map{position:relative;overflow:hidden;background:#fff}.catalog-map:after{display:none}.catalog-map .base-container{position:relative;z-index:1}.catalog-projects-map{background:url("map-canvas.png") center/cover no-repeat!important;overflow:hidden}.catalog-projects-map__canvas{background:transparent!important}.catalog-projects-map__canvas canvas{opacity:0}@media(max-width:1920px){.catalog-projects-map{background-image:url("map-canvas-1920.png")!important}}@media(max-width:1440px){.catalog-projects-map{background-image:url("map-canvas-1440.png")!important}}@media(max-width:1024px){.catalog-projects-map{background-image:url("map-canvas-1024.png")!important}}@media(max-width:768px){.catalog-projects-map{background-image:url("map-canvas-768.png")!important}}@media(min-width:541px) and (max-width:1024px){.news-section__slider[data-v-411e09d7] .splide__slide{width:calc(50% - 20px)!important}}@media(max-width:540px){.catalog-projects-map{background-image:url("map-canvas-540.png")!important}.news-section__slider[data-v-411e09d7] .splide__slide{margin-right:0!important;width:100%!important}.catalog-best-offers__slider[data-v-08286baa] .splide__pagination,.news-section__slider[data-v-411e09d7] .splide__pagination{display:flex!important}}@media(min-width:541px){.catalog-best-offers__slider[data-v-08286baa] .splide__pagination,.news-section__slider[data-v-411e09d7] .splide__pagination{display:none!important}}@media(max-width:400px){.catalog-projects-map{background-image:url("map-canvas-390.png")!important}}';
+  fallback.textContent = '.catalog-map{position:relative;overflow:hidden;background:#fff}.catalog-map:after{display:none}.catalog-map .base-container{position:relative;z-index:1}.catalog-projects-map{background:url("map-canvas.png") center/cover no-repeat!important;overflow:hidden}.catalog-projects-map__canvas{background:transparent!important}.catalog-projects-map__canvas canvas{opacity:0}.catalog-projects-map__link-proxy{height:1px;opacity:0;overflow:hidden;pointer-events:none;position:absolute;width:1px}@media(max-width:1920px){.catalog-projects-map{background-image:url("map-canvas-1920.png")!important}}@media(max-width:1440px){.catalog-projects-map{background-image:url("map-canvas-1440.png")!important}}@media(max-width:1024px){.catalog-projects-map{background-image:url("map-canvas-1024.png")!important}}@media(max-width:768px){.catalog-projects-map{background-image:url("map-canvas-768.png")!important}}@media(min-width:541px) and (max-width:1024px){.news-section__slider[data-v-411e09d7] .splide__slide{width:calc(50% - 20px)!important}}@media(max-width:540px){.catalog-projects-map{background-image:url("map-canvas-540.png")!important}.news-section__slider[data-v-411e09d7] .splide__slide{margin-right:0!important;width:100%!important}.catalog-best-offers__slider[data-v-08286baa] .splide__pagination,.news-section__slider[data-v-411e09d7] .splide__pagination{display:flex!important}}@media(min-width:541px){.catalog-best-offers__slider[data-v-08286baa] .splide__pagination,.news-section__slider[data-v-411e09d7] .splide__pagination{display:none!important}}@media(max-width:400px){.catalog-projects-map{background-image:url("map-canvas-390.png")!important}}';
   document.head.appendChild(fallback);
 
   const bestOffers = [
@@ -54,23 +54,30 @@
       row.setAttribute('data-v-08286baa', '');
       section.append(row);
     }
-    const gap = () => window.innerWidth > 1440 ? 90 : window.innerWidth > 1024 ? 24 : window.innerWidth > 768 ? 20 : window.innerWidth > 540 ? 16 : 0;
-    const slideMarkup = ([href, image, name, address, price], index, state = '') => `<li class="splide__slide ${state}" data-v-08286baa="" style="margin-right:${gap()}px;"><article data-v-80c326fb="" data-v-08286baa="" class="apartment-card"><a data-v-80c326fb="" class="apartment-card__link" href="${href}" tabindex="-1"><div data-v-80c326fb="" class="apartment-card__media"><img data-v-80c326fb="" src="${image}" alt="${name}" class="apartment-card__image" width="514" height="424" loading="lazy"></div><div data-v-80c326fb="" class="apartment-card__body"><p data-v-80c326fb="" class="apartment-card__name">${name}</p><p data-v-80c326fb="" class="apartment-card__address">${address}</p><div data-v-80c326fb="" class="apartment-card__details"><div data-v-80c326fb="" class="apartment-card__price-row"><p data-v-80c326fb="" class="apartment-card__price">${price}</p></div></div></div></a></article></li>`;
-    const cards = [...bestOffers, ...bestOffers, ...bestOffers].map((item, index) => slideMarkup(item, index, index === 4 ? 'is-visible is-prev' : index === 5 ? 'is-active is-visible' : index === 6 ? 'is-visible is-next' : '')).join('');
+    const gap = () => window.innerWidth > 1440 ? 90 : window.innerWidth > 1024 ? 24 : window.innerWidth > 768 ? 16 : window.innerWidth > 540 ? 12 : 0;
+    const mobile = () => window.innerWidth <= 540;
+    const slideMarkup = ([href, image, name, address, price], index, state = '') => `<li class="splide__slide ${state}" data-v-08286baa="" style="${mobile() ? 'width:calc(100%);' : `margin-right:${gap()}px;`}"><article data-v-80c326fb="" data-v-08286baa="" class="apartment-card"><a data-v-80c326fb="" class="apartment-card__link" href="${href}" tabindex="-1"><div data-v-80c326fb="" class="apartment-card__media"><img data-v-80c326fb="" src="${image}" alt="${name}" class="apartment-card__image" width="514" height="424" loading="lazy"></div><div data-v-80c326fb="" class="apartment-card__body"><p data-v-80c326fb="" class="apartment-card__name">${name}</p><p data-v-80c326fb="" class="apartment-card__address">${address}</p><div data-v-80c326fb="" class="apartment-card__details"><div data-v-80c326fb="" class="apartment-card__price-row"><p data-v-80c326fb="" class="apartment-card__price">${price}</p></div></div></div></a></article></li>`;
+    const sourceSlides = mobile() ? bestOffers : [...bestOffers, ...bestOffers, ...bestOffers];
+    const cards = sourceSlides.map((item, index) => {
+      const state = mobile() ? (index === 0 ? 'is-active is-visible' : index === 1 ? 'is-next' : '') : index === 4 ? 'splide__slide--clone is-visible is-prev' : index === 5 ? 'is-active is-visible' : index === 6 ? 'is-visible is-next' : index < 5 || index >= 10 ? 'splide__slide--clone' : '';
+      return slideMarkup(item, index, state);
+    }).join('');
     const wrap = row.querySelector('.catalog-best-offers__slider-wrap') || (() => { const x = document.createElement('div'); x.className = 'catalog-best-offers__slider-wrap'; x.setAttribute('data-v-08286baa', ''); row.append(x); return x; })();
-    wrap.innerHTML = `<div class="splide catalog-best-offers__slider splide--slide splide--ltr splide--draggable is-active is-overflow" data-v-08286baa=""><div class="splide__track" data-v-08286baa="" style="padding-left:0px;padding-right:0px;"><ul class="splide__list" data-v-08286baa="">${cards}</ul></div><ul class="splide__pagination splide__pagination--ltr" role="tablist" aria-label="Select a slide to show" data-v-08286baa=""><li role="presentation"><button class="splide__pagination__page is-active" type="button" role="tab" aria-label="Go to slide 1"></button></li><li role="presentation"><button class="splide__pagination__page" type="button" role="tab" aria-label="Go to slide 2"></button></li><li role="presentation"><button class="splide__pagination__page" type="button" role="tab" aria-label="Go to slide 3"></button></li><li role="presentation"><button class="splide__pagination__page" type="button" role="tab" aria-label="Go to slide 4"></button></li><li role="presentation"><button class="splide__pagination__page" type="button" role="tab" aria-label="Go to slide 5"></button></li></ul></div>`;
+    wrap.innerHTML = `<div class="splide catalog-best-offers__slider splide--slide ${mobile() ? '' : 'splide--loop '}splide--ltr splide--draggable is-active is-overflow is-initialized" data-v-08286baa="" aria-label="Новые старты ЖК" role="region" aria-roledescription="carousel"><div class="splide__track ${mobile() ? 'splide__track--slide' : 'splide__track--loop'} splide__track--ltr splide__track--draggable" data-v-08286baa="" style="padding-left:0px;padding-right:0px;"><ul class="splide__list" data-v-08286baa="">${cards}</ul></div><ul class="splide__pagination splide__pagination--ltr" role="tablist" aria-label="Select a slide to show" data-v-08286baa=""><li role="presentation"><button class="splide__pagination__page is-active" type="button" role="tab" aria-label="Go to slide 1"></button></li><li role="presentation"><button class="splide__pagination__page" type="button" role="tab" aria-label="Go to slide 2"></button></li><li role="presentation"><button class="splide__pagination__page" type="button" role="tab" aria-label="Go to slide 3"></button></li><li role="presentation"><button class="splide__pagination__page" type="button" role="tab" aria-label="Go to slide 4"></button></li><li role="presentation"><button class="splide__pagination__page" type="button" role="tab" aria-label="Go to slide 5"></button></li></ul></div>`;
     const list = row.querySelector('.splide__list');
-    let active = 5;
+    let active = mobile() ? 0 : 5;
     const update = () => {
       const slide = list?.querySelector('.splide__slide');
       if (!list || !slide) return;
       const step = slide.getBoundingClientRect().width + gap();
-      const offset = window.innerWidth <= 768 ? active : active - 1;
+      const offset = mobile() ? active : active - 1;
       list.style.transform = `translateX(-${offset * step}px)`;
       list.querySelectorAll('.splide__slide').forEach((item, index) => item.classList.toggle('is-prev', index === active - 1));
       list.querySelectorAll('.splide__slide').forEach((item, index) => item.classList.toggle('is-active', index === active));
       list.querySelectorAll('.splide__slide').forEach((item, index) => item.classList.toggle('is-next', index === active + 1));
+      row.querySelectorAll('.splide__pagination__page').forEach((item, index) => item.classList.toggle('is-active', index === active));
     };
+    row.querySelectorAll('.splide__pagination__page').forEach((button, index) => button.addEventListener('click', () => { active = index; update(); }));
     row.querySelector('.catalog-best-offers__nav-btn--prev')?.addEventListener('click', () => { active = active <= 5 ? 9 : active - 1; update(); });
     row.querySelector('.catalog-best-offers__nav-btn--next')?.addEventListener('click', () => { active = active >= 9 ? 5 : active + 1; update(); });
     window.addEventListener('resize', update, { passive: true });
@@ -86,7 +93,7 @@
     map.className = 'catalog-projects-map';
     map.setAttribute('data-v-4e8b332d', '');
     map.setAttribute('data-v-725ba8fe', '');
-    map.innerHTML = '<div class="catalog-projects-map__canvas" data-v-4e8b332d="" data-v-725ba8fe=""></div>';
+    map.innerHTML = '<div class="catalog-projects-map__canvas" data-v-4e8b332d="" data-v-725ba8fe=""></div><div class="catalog-projects-map__link-proxy" aria-hidden="true"><a href="https://yandex.ru/legal/maps_termsofuse/?lang=ru_RU" target="_blank" rel="noopener">Условия использования</a><a href="https://yandex.ru/maps/?from=api-maps&amp;utm_source=jsapi&amp;ll=37.61842300000002%2C55.75124399999371&amp;origin=jsapi_3&amp;z=11&amp;l=map" target="_blank" rel="noopener"></a></div>';
     container.append(map);
   };
 
@@ -97,9 +104,34 @@
     const slider = document.createElement('div');
     slider.className = 'splide news-section__slider splide--slide splide--ltr splide--draggable is-active is-overflow is-initialized';
     slider.setAttribute('data-v-411e09d7', '');
-    const cards = news.map(([href, image, title]) => `<li class="splide__slide" data-v-411e09d7="" style="margin-right:40px;width:calc(33.3333% - 26.6667px);"><article data-v-411e09d7="" class="news-section__card"><a data-v-411e09d7="" class="news-section__card-link" href="${href}"><img data-v-411e09d7="" src="${image}" alt="${title}" class="news-section__image" width="540" height="489" loading="lazy"><div data-v-411e09d7="" class="news-section__content"><p data-v-411e09d7="" class="news-section__category">${title}</p><span data-v-411e09d7="" class="news-section__read-more">Читать подробнее</span></div></a></article></li>`).join('');
-    slider.innerHTML = `<div class="splide__track" data-v-411e09d7=""><ul class="splide__list" data-v-411e09d7="">${cards}</ul></div><ul class="splide__pagination splide__pagination--ltr" role="tablist" aria-label="Select a slide to show" data-v-411e09d7=""><li role="presentation"><button class="splide__pagination__page is-active" type="button" role="tab" aria-label="Go to slide 1"></button></li><li role="presentation"><button class="splide__pagination__page" type="button" role="tab" aria-label="Go to slide 2"></button></li><li role="presentation"><button class="splide__pagination__page" type="button" role="tab" aria-label="Go to slide 3"></button></li><li role="presentation"><button class="splide__pagination__page" type="button" role="tab" aria-label="Go to slide 4"></button></li><li role="presentation"><button class="splide__pagination__page" type="button" role="tab" aria-label="Go to slide 5"></button></li><li role="presentation"><button class="splide__pagination__page" type="button" role="tab" aria-label="Go to slide 6"></button></li></ul>`;
+    const cards = news.map(([href, image, title], index) => `<li class="splide__slide ${index === 0 ? 'is-active is-visible' : index === 1 ? 'is-visible is-next' : ''}" data-v-411e09d7="" style="margin-right:40px;width:calc(33.3333% - 26.6667px);"><article data-v-411e09d7="" class="news-section__card"><a data-v-411e09d7="" class="news-section__card-link" href="${href}"><img data-v-411e09d7="" src="${image}" alt="${title}" class="news-section__image" width="540" height="489" loading="lazy"><div data-v-411e09d7="" class="news-section__content"><p data-v-411e09d7="" class="news-section__category">${title}</p><span data-v-411e09d7="" class="news-section__read-more">Читать подробнее</span></div></a></article></li>`).join('');
+    slider.innerHTML = `<div class="splide__track splide__track--slide splide__track--ltr splide__track--draggable" data-v-411e09d7=""><ul class="splide__list" data-v-411e09d7="">${cards}</ul></div><ul class="splide__pagination splide__pagination--ltr" role="tablist" aria-label="Select a slide to show" data-v-411e09d7=""><li role="presentation"><button class="splide__pagination__page is-active" type="button" role="tab" aria-label="Go to slide 1"></button></li><li role="presentation"><button class="splide__pagination__page" type="button" role="tab" aria-label="Go to slide 2"></button></li><li role="presentation"><button class="splide__pagination__page" type="button" role="tab" aria-label="Go to slide 3"></button></li><li role="presentation"><button class="splide__pagination__page" type="button" role="tab" aria-label="Go to slide 4"></button></li><li role="presentation"><button class="splide__pagination__page" type="button" role="tab" aria-label="Go to slide 5"></button></li><li role="presentation"><button class="splide__pagination__page" type="button" role="tab" aria-label="Go to slide 6"></button></li></ul>`;
     section.querySelector('.news-section__footer')?.before(slider);
+    const list = slider.querySelector('.splide__list');
+    const update = (active) => {
+      const slide = list?.querySelector('.splide__slide');
+      if (!list || !slide || window.innerWidth > 540) return;
+      list.style.transform = `translateX(-${active * slide.getBoundingClientRect().width}px)`;
+      list.querySelectorAll('.splide__slide').forEach((item, index) => {
+        item.classList.toggle('is-active', index === active);
+        item.classList.toggle('is-next', index === active + 1);
+        item.classList.toggle('is-visible', index === active || index === active + 1);
+      });
+      slider.querySelectorAll('.splide__pagination__page').forEach((button, index) => button.classList.toggle('is-active', index === active));
+    };
+    slider.querySelectorAll('.splide__pagination__page').forEach((button, index) => button.addEventListener('click', () => update(index)));
+  };
+
+  const addFloatingExpert = () => {
+    if (document.querySelector('.floating-expert')) return;
+    const aside = document.createElement('aside');
+    aside.className = 'floating-expert floating-expert--alexander';
+    aside.setAttribute('data-v-553bd346', '');
+    aside.setAttribute('aria-label', 'Михаил Долгов');
+    aside.innerHTML = '<button data-v-553bd346 type="button" class="floating-expert__card" aria-haspopup="dialog"><span data-v-553bd346 class="floating-expert__avatar"><img data-v-553bd346 src="/pictures/floating-expert/alexander-dolgov.webp" alt="Михаил Долгов" width="72" height="72" loading="lazy" decoding="async"></span><span data-v-553bd346 class="floating-expert__content"><span data-v-553bd346 class="floating-expert__label">Руководитель департамента загородной недвижимости</span><span data-v-553bd346 class="floating-expert__title">Задать вопрос эксперту</span><span data-v-553bd346 class="floating-expert__name">Михаил Долгов</span></span></button><button data-v-553bd346 type="button" class="floating-expert__close" aria-label="Скрыть карточку Михаил Долгов"></button>';
+    aside.querySelector('.floating-expert__close')?.addEventListener('click', () => aside.remove());
+    aside.querySelector('.floating-expert__card')?.addEventListener('click', () => document.querySelector('.catalog-consultation')?.scrollIntoView({ behavior: 'smooth' }));
+    document.body.append(aside);
   };
 
   const syncStaticImagePaths = () => {
@@ -114,9 +146,14 @@
   addMap();
   addBestOffers();
   addNews();
+  addFloatingExpert();
 
   const header = document.querySelector('.site-header');
-  const syncHeader = () => header?.classList.toggle('site-header--scrolled', window.scrollY > 36);
+  const pageNav = document.querySelector('.catalog-page-nav');
+  const syncHeader = () => {
+    header?.classList.toggle('site-header--scrolled', window.scrollY > 36);
+    pageNav?.classList.toggle('catalog-page-nav--visible', window.scrollY > 330);
+  };
   window.addEventListener('scroll', syncHeader, { passive: true });
   syncHeader();
   document.querySelectorAll('.site-header__icon-btn').forEach((button) => button.addEventListener('click', () => header?.classList.toggle('site-header--menu-open')));
@@ -128,10 +165,21 @@
   });
   document.querySelector('.catalog-hero-filters__bar')?.addEventListener('submit', (event) => { event.preventDefault(); document.querySelector('#catalog-grid')?.scrollIntoView({ behavior: 'smooth' }); });
 
-  document.querySelectorAll('.catalog-page-nav__link').forEach((button) => button.addEventListener('click', () => {
-    const target = button.textContent.trim() === 'Карта' ? '.catalog-map' : button.textContent.trim() === 'Оставить заявку' ? '.catalog-consultation' : '.catalog-best-offers';
-    document.querySelector(target)?.scrollIntoView({ behavior: 'smooth' });
-  }));
+  const pageNavTargets = ['.catalog-best-offers', '.catalog-map', '.catalog-consultation', '.departments-section', '.news-section'];
+  const pageNavButtons = [...document.querySelectorAll('.catalog-page-nav__link')];
+  const syncPageNav = () => {
+    const marker = window.scrollY + window.innerHeight * 0.5;
+    let active = 0;
+    pageNavTargets.forEach((selector, index) => {
+      const section = document.querySelector(selector);
+      if (section && section.getBoundingClientRect().top + window.scrollY <= marker) active = index;
+    });
+    pageNavButtons.forEach((button, index) => button.classList.toggle('catalog-page-nav__link--active', index === active));
+  };
+  pageNavButtons.forEach((button, index) => button.addEventListener('click', () => document.querySelector(pageNavTargets[index])?.scrollIntoView({ behavior: 'smooth' })));
+  window.addEventListener('scroll', syncPageNav, { passive: true });
+  window.addEventListener('resize', syncPageNav, { passive: true });
+  syncPageNav();
 
   document.querySelectorAll('.catalog-intro__toggle').forEach((button) => button.addEventListener('click', () => {
     const details = button.closest('.catalog-intro__content')?.querySelector('.catalog-intro__details');
