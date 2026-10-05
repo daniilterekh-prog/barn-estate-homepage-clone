@@ -123,6 +123,21 @@
     { img: 'https://c15d3839-d361-4fb8-9615-0c7a980d0169.selstorage.ru/resize_cache/36892/d13733056f669deb3558a833a5d4f8f4/iblock/d33/16228755456027d785df8666.15632876_07b4b95b41_1600.jpg', name: 'Paris-75004', address: 'Квартира Продажа - Париж 4 - Сен-Поль - Площадь Вогезов - Эксклюзивность', price: '193 325 000 ₽', href: 'https://front.barnes.vsavr.ru/mezhdunarodnaya-nedvizhimost/prodazha_paris_75004_3468/', lot: 'ID 4839652', stats: [['129 м²', 'Площадь'], ['3', 'Спальни'], ['4', 'Комнаты']] },
   )
 
+  sourceCatalogCards.splice(0, sourceCatalogCards.length,
+    { img: 'https://c15d3839-d361-4fb8-9615-0c7a980d0169.selstorage.ru/resize_cache/28551/df2a5158440fbae38fa1e23df1e2b3d5/iblock/693/16234220605faa5fec9ca565.42364691_17a5bc920b_1920.webp', name: 'Sainte-Lucie-de-Porto-Vecchio-20144', address: 'КАППИЦИОЛА - 4 СТРОИТЕЛЬСКИЙ ВИЛЛА - МОРСКОЙ ВИЛЛА - 200 м от пивоварни', price: '162 085 000 ₽', href: 'https://front.barnes.vsavr.ru/mezhdunarodnaya-nedvizhimost/prodazha_sainte_lucie_de_porto_vecchio_20144_1961/', lot: 'ID 4462681', stats: [['140 м²', 'Площадь'], ['1', 'Этаж'], ['3', 'Спальни'], ['7', 'Комнаты']] },
+    { img: 'https://c15d3839-d361-4fb8-9615-0c7a980d0169.selstorage.ru/resize_cache/58155/d13733056f669deb3558a833a5d4f8f4/iblock/1ce/11295498460195903501c25.50948740_e2e599c3b3_1919.jpg', name: 'Urrugne-64122', address: 'УРН, ОЧАРОВАТЕЛЬНЫЙ ДОМ В ТИХОМ РАЙОНЕ', price: '105 581 000 ₽', href: 'https://front.barnes.vsavr.ru/mezhdunarodnaya-nedvizhimost/prodazha_urrugne_64122_5703/', lot: 'ID 4282250', stats: [['200 м²', 'Площадь'], ['1', 'Этаж'], ['5', 'Спален'], ['5', 'Комнаты']] },
+    { img: 'https://c15d3839-d361-4fb8-9615-0c7a980d0169.selstorage.ru/resize_cache/37327/d13733056f669deb3558a833a5d4f8f4/iblock/6bf/5847709405f24360d5be643.53032911_b1ecb122ba_1920.jpg', name: "L'Aigle-61300", address: "В самом сердце города Л'Айгль, особняк площадью 250 м² и 6 комнат на участке площадью 526 м².", price: '45 094 000 ₽', href: 'https://front.barnes.vsavr.ru/mezhdunarodnaya-nedvizhimost/prodazha_l_aigle_61300_3518/', lot: 'ID 3930226', stats: [['250 м²', 'Площадь'], ['2', 'Этаж'], ['10', 'Комнаты']] },
+    { img: 'https://c15d3839-d361-4fb8-9615-0c7a980d0169.selstorage.ru/resize_cache/10987042/d13733056f669deb3558a833a5d4f8f4/iblock/f10/f106f86a6f464715658e162891d52eb1/be860936917df1a1a9e1c6a1879421bd.jpg', name: 'Manisa Villas Bangjo – Pasak', address: 'Вся инфраструктура', price: '46 512 492 ₽', href: 'https://front.barnes.vsavr.ru/mezhdunarodnaya-nedvizhimost/561772/', lot: 'ID 561772', stats: [['269 м²', 'Площадь'], ['3', 'Спальни'], ['3', 'Комнаты']] },
+    { img: 'https://c15d3839-d361-4fb8-9615-0c7a980d0169.selstorage.ru/resize_cache/25356/d13733056f669deb3558a833a5d4f8f4/iblock/bdf/2768138215fdb56809de233.49431675_1c0f5a1279_1276.jpg', name: 'Marrakech', address: 'Великолепный дворец', price: '89 644 000 ₽', href: 'https://front.barnes.vsavr.ru/mezhdunarodnaya-nedvizhimost/prodazha_marrakech_1388/', lot: 'ID 4694018', stats: [['365 м²', 'Площадь'], ['13', 'Комнаты']] },
+    { img: 'https://c15d3839-d361-4fb8-9615-0c7a980d0169.selstorage.ru/resize_cache/55210/d13733056f669deb3558a833a5d4f8f4/iblock/af1/12484643635e7de13b5510e1.02927896_3e672aec09_1920.jpg', name: 'Cascais', address: 'Вилла с 5 спальнями, Кашкайш', price: '199 210 000 ₽', href: 'https://front.barnes.vsavr.ru/mezhdunarodnaya-nedvizhimost/prodazha_cascais_5199/', lot: 'ID 3819002', stats: [['364 м²', 'Площадь'], ['5', 'Спален'], ['6', 'Комнаты']] },
+    { img: 'https://c15d3839-d361-4fb8-9615-0c7a980d0169.selstorage.ru/resize_cache/34633/d13733056f669deb3558a833a5d4f8f4/iblock/82e/1526943123605cbdea1d6d66.52151180_7ed1e6e67a_1920.jpg', name: 'Bougival-78380', address: 'Сте Барнс - Бугиваль 134 м² Архитектурный дом с 2015 г.', price: '104 132 000 ₽', href: 'https://front.barnes.vsavr.ru/mezhdunarodnaya-nedvizhimost/prodazha_bougival_78380_3104/', lot: 'ID 5180596', stats: [['134 м²', 'Площадь'], ['4', 'Спальни'], ['6', 'Комнаты']] },
+    { img: 'https://c15d3839-d361-4fb8-9615-0c7a980d0169.selstorage.ru/resize_cache/8623636/d13733056f669deb3558a833a5d4f8/iblock/8ed/1.jpg', name: '1300 Brickell Bay D, Miami', address: '1300 Brickell Bay Dr, Miami', price: 'Цена по запросу', href: 'https://front.barnes.vsavr.ru/mezhdunarodnaya-nedvizhimost/1300-brickell-bay-d-miami/', lot: 'ID 0', stats: [['220 м²', 'Площадь'], ['38', 'Этаж'], ['3', 'Спальни'], ['4', 'Комнаты']] },
+    { img: '', name: 'Paris-75007', address: 'Paris 7ème - Исключительная собственность', price: '769 678 000 ₽', href: 'https://front.barnes.vsavr.ru/mezhdunarodnaya-nedvizhimost/prodazha_paris_75007_894/', lot: 'ID 5177367', stats: [['464 м²', 'Площадь'], ['6', 'Спален'], ['7', 'Комнаты']] },
+    { img: 'https://c15d3839-d361-4fb8-9615-0c7a980d0169.selstorage.ru/resize_cache/52172/d13733056f669deb3558a833a5d4f8f4/iblock/e17/8708582745e2a7a90a53757.37683421_e528f95673_1920.jpg', name: 'Maisons-Laffitte-78600', address: 'Продается квартира - Домовладельцы - Лафит - 5 спален - 219 кв.м. (219 кв.м.)', price: '112 282 000 ₽', href: 'https://front.barnes.vsavr.ru/mezhdunarodnaya-nedvizhimost/prodazha_maisons_laffitte_78600_4628/', lot: 'ID 3221600', stats: [['226 м²', 'Площадь'], ['2', 'Этаж'], ['5', 'Спален'], ['10', 'Комнаты']] },
+    { img: 'https://c15d3839-d361-4fb8-9615-0c7a980d0169.selstorage.ru/resize_cache/32024/d13733056f669deb3558a833a5d4f8f4/iblock/3a0/19413925235f7c4a820bf929.77426004_1920.jpg', name: 'Madrid', address: 'Мадрид 28010 - Альмагро - Роскошные апартаменты в новом здании с 2 спальнями', price: '201 474 000 ₽', href: 'https://front.barnes.vsavr.ru/mezhdunarodnaya-nedvizhimost/prodazha_madrid_2521/', lot: 'ID 3324982', stats: [['314 м²', 'Площадь'], ['4', 'Этаж'], ['2', 'Спальни'], ['3', 'Комнаты']] },
+    { img: 'https://c15d3839-d361-4fb8-9615-0c7a980d0169.selstorage.ru/resize_cache/61924/d13733056f669deb3558a833a5d4f8f4/iblock/9ff/138412117604903b7e14e62.55017427_69375ac9ac_1920.jpg', name: 'Monte Estoril', address: '4-х комнатная квартира с видом на море', price: '71 019 000 ₽', href: 'https://front.barnes.vsavr.ru/mezhdunarodnaya-nedvizhimost/prodazha_monte_estoril_6319/', lot: 'ID 5113340', stats: [['151 м²', 'Площадь'], ['13', 'Этаж'], ['4', 'Спальни'], ['5', 'Комнаты']] },
+  )
+
   const syncSourcePageData = () => {
     document.querySelectorAll('.catalog-grid__item').forEach((item, index) => {
       const data = sourceCatalogCards[index]
@@ -311,22 +326,56 @@
     const viewport = document.createElement('div')
     viewport.className = 'catalog-projects-map'
     viewport.setAttribute('aria-label', 'Карта объектов BARNES')
-    viewport.innerHTML = `<div class="international-map-fallback"></div><div class="international-map-markers" aria-live="polite"></div><div class="international-map-zoom" aria-label="Управление масштабом"><button type="button" data-map-zoom="in" aria-label="Увеличить карту">+</button><button type="button" data-map-zoom="out" aria-label="Уменьшить карту">−</button></div><div class="international-map-controls"><label><span class="international-map-search-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="1.5"></circle><path d="m20 20-3.5-3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path></svg></span><input type="search" placeholder="Поиск в видимой области" aria-label="Поиск в видимой области"></label><button type="button" data-map-fullscreen>На весь экран</button></div><div class="international-map-popup" hidden><button type="button" class="international-map-popup__close" aria-label="Закрыть карточку">×</button><p class="international-map-popup__kicker">Направление BARNES</p><h3></h3><p></p><a href="#catalog-contact">Подробнее ↗</a></div>`
+    viewport.innerHTML = `<div class="international-map-fallback"></div><div class="international-map-yandex" aria-hidden="true"></div><div class="international-map-markers" aria-live="polite"></div><div class="international-map-zoom" aria-label="Управление масштабом"><button type="button" data-map-zoom="in" aria-label="Увеличить карту">+</button><button type="button" data-map-zoom="out" aria-label="Уменьшить карту">−</button></div><div class="international-map-controls"><label><span class="international-map-search-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="1.5"></circle><path d="m20 20-3.5-3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path></svg></span><input type="search" placeholder="Поиск в видимой области" aria-label="Поиск в видимой области"></label><button type="button" data-map-fullscreen>На весь экран</button></div><div class="international-map-popup" hidden><button type="button" class="international-map-popup__close" aria-label="Закрыть карточку">×</button><p class="international-map-popup__kicker">Направление BARNES</p><h3></h3><p></p><a href="#catalog-contact">Подробнее ↗</a></div>`
     map.append(viewport)
     const markers = viewport.querySelector('.international-map-markers')
     const popup = viewport.querySelector('.international-map-popup')
     const search = viewport.querySelector('input[type="search"]')
     const fallback = viewport.querySelector('.international-map-fallback')
+    const yandexRoot = viewport.querySelector('.international-map-yandex')
+    const remoteMapFrame = document.createElement('iframe')
+    remoteMapFrame.className = 'international-map-remote'
+    remoteMapFrame.title = 'Карта объектов BARNES'
+    remoteMapFrame.loading = 'eager'
+    remoteMapFrame.src = 'https://front.barnes.vsavr.ru/mezhdunarodnaya-nedvizhimost'
+    const positionRemoteMapFrame = () => {
+      const pageTop = viewport.getBoundingClientRect().top + window.scrollY
+      remoteMapFrame.style.width = `${window.innerWidth}px`
+      remoteMapFrame.style.height = `${Math.max(document.body.scrollHeight, pageTop + 300)}px`
+      remoteMapFrame.style.left = '0px'
+      remoteMapFrame.style.top = `${-pageTop}px`
+    }
+    positionRemoteMapFrame()
+    window.addEventListener('resize', positionRemoteMapFrame)
+    remoteMapFrame.addEventListener('load', () => {
+      viewport.classList.add('international-map--remote-ready')
+      fallback.style.opacity = '0'
+      if (yandexRoot) yandexRoot.style.display = 'none'
+    }, { once: true })
+    viewport.insertBefore(remoteMapFrame, yandexRoot || markers)
     viewport.querySelector('.international-map-popup a')?.setAttribute('href', 'https://front.barnes.vsavr.ru/contacts/')
-    const places = [['Дубай', 'ОАЭ', 22, 34], ['Стамбул', 'Турция', 45, 25], ['Рим', 'Италия', 57, 48], ['Париж', 'Франция', 48, 62], ['Бангкок', 'Таиланд', 78, 52]]
-    places.forEach(([name, country, x, y]) => {
+    const places = [
+      ['pin', 'Москва', 'Россия', 47.25, 81.91],
+      ['pin', 'Москва', 'Россия', 60.73, 14.38],
+      ['pin', 'Москва', 'Россия', 46.99, 28.48],
+      ['cluster', 'Объекты BARNES', '792 объекта', 48.26, 22.91, '792'],
+      ['cluster', 'Объекты BARNES', '39 объектов', 48.84, 32.19, '39'],
+      ['cluster', 'Объекты BARNES', '9 объектов', 35.09, 41.47, '9'],
+      ['cluster', 'Объекты BARNES', '19 объектов', 62.84, 73.01, '19'],
+      ['cluster', 'Объекты BARNES', '15 объектов', 55.87, 50.37, '15'],
+      ['cluster', 'Объекты BARNES', '8 объектов', 52.17, 36.27, '8'],
+      ['cluster', 'Объекты BARNES', '6 объектов', 53.38, 28.85, '6'],
+      ['cluster', 'Объекты BARNES', '6 объектов', 65.49, 91.56, '6'],
+    ]
+    places.forEach(([type, name, country, x, y, count]) => {
       const marker = document.createElement('button')
-      marker.className = 'international-map-marker'
+      marker.className = type === 'cluster' ? 'international-map-cluster' : 'international-map-marker'
       marker.type = 'button'
       marker.style.left = `${x}%`
       marker.style.top = `${y}%`
       marker.dataset.search = `${name} ${country}`.toLocaleLowerCase('ru')
       marker.setAttribute('aria-label', `${name}, ${country}`)
+      if (count) marker.textContent = count
       marker.addEventListener('click', () => {
         popup.querySelector('h3').textContent = name
         popup.querySelector('p:not(.international-map-popup__kicker)').textContent = country
@@ -345,9 +394,41 @@
       const fullscreen = viewport.classList.toggle('international-map--fullscreen')
       event.currentTarget.textContent = fullscreen ? 'Свернуть' : 'На весь экран'
     })
+    let mapInstance = null
+    const loadYandexMap = async () => {
+      if (!window.ymaps3) {
+        let script = document.querySelector('script[data-barnes-yandex-map]')
+        if (!script) {
+          script = document.createElement('script')
+          script.dataset.barnesYandexMap = 'true'
+          script.src = 'https://api-maps.yandex.ru/v3/?apikey=eb19bd7a-97ea-4903-8f5b-ab24c1115a63&lang=ru_RU'
+          document.head.append(script)
+        }
+        await new Promise((resolve, reject) => {
+          script.addEventListener('load', resolve, { once: true })
+          script.addEventListener('error', reject, { once: true })
+        })
+      }
+      await window.ymaps3.ready
+      const { YMap, YMapDefaultSchemeLayer, YMapDefaultFeaturesLayer } = window.ymaps3
+      if (!YMap || !YMapDefaultSchemeLayer || !yandexRoot) return
+      mapInstance = new YMap(yandexRoot, {
+        location: { center: [37.618423, 55.751244], zoom: 11 },
+        mode: 'vector',
+      })
+      mapInstance.addChild(new YMapDefaultSchemeLayer())
+      if (YMapDefaultFeaturesLayer) mapInstance.addChild(new YMapDefaultFeaturesLayer({ zIndex: 1800 }))
+      fallback.style.opacity = '0'
+    }
+    loadYandexMap().catch(() => {})
     let scale = 1
     viewport.querySelectorAll('[data-map-zoom]').forEach((button) => {
       button.addEventListener('click', () => {
+        if (mapInstance?.setLocation) {
+          const currentZoom = mapInstance.zoom ?? 11
+          mapInstance.setLocation({ zoom: Math.min(15, Math.max(7, currentZoom + (button.dataset.mapZoom === 'in' ? 1 : -1))) })
+          return
+        }
         scale = Math.min(1.4, Math.max(.85, scale + (button.dataset.mapZoom === 'in' ? .12 : -.12)))
         fallback.style.transform = `scale(${scale})`
       })

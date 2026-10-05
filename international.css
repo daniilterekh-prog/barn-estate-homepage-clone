@@ -128,6 +128,39 @@ body.international-page .international-map-fallback {
   inset: 0;
   overflow: hidden;
   position: absolute;
+  transition: opacity .2s ease;
+  z-index: 0;
+}
+
+body.international-page .international-map-yandex {
+  inset: 0;
+  position: absolute;
+  z-index: 1;
+}
+
+body.international-page .international-map-remote {
+  border: 0;
+  height: 12663px;
+  left: -291.36px;
+  position: absolute;
+  top: -1825px;
+  width: 2316px;
+  z-index: 1;
+}
+
+body.international-page .international-map--remote-ready .international-map-fallback,
+body.international-page .international-map--remote-ready .international-map-markers,
+body.international-page .international-map--remote-ready .international-map-zoom,
+body.international-page .international-map--remote-ready .international-map-controls {
+  display: none;
+}
+
+body.international-page .international-map-yandex > div,
+body.international-page .international-map-yandex > ymaps3,
+body.international-page .international-map-yandex > canvas {
+  display: block;
+  height: 100%;
+  width: 100%;
 }
 
 body.international-page .international-map-fallback::before,
@@ -181,6 +214,33 @@ body.international-page .international-map-marker:focus-visible {
   background: #b52a39;
   outline: none;
   transform: translate(-50%, -50%) scale(1.2);
+}
+
+body.international-page .international-map-cluster {
+  align-items: center;
+  background: #931f2b;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px #931f2b;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  font: 400 14px/1 "Tilda Sans", "Tilda Sans Fallback", system-ui, sans-serif;
+  height: 44px;
+  justify-content: center;
+  padding: 0;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  transition: transform .2s ease, background-color .2s ease;
+  width: 44px;
+  z-index: 2;
+}
+
+body.international-page .international-map-cluster:hover,
+body.international-page .international-map-cluster:focus-visible {
+  background: #b52a39;
+  outline: none;
+  transform: translate(-50%, -50%) scale(1.08);
 }
 
 body.international-page .international-map-popup {
