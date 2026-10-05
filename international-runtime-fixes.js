@@ -44,6 +44,24 @@
     if (!map || !canvas || canvas.querySelector('ymaps3--map')) return
 
     map.classList.add('catalog-projects-map--static-fallback')
+    const snapshotWidth = window.innerWidth <= 540
+      ? 390
+      : window.innerWidth <= 768
+        ? 768
+        : window.innerWidth <= 1100
+          ? 1024
+          : window.innerWidth <= 1360
+            ? 1280
+            : window.innerWidth >= 1800
+              ? 1920
+              : 1440
+    const snapshot = document.createElement('img')
+    snapshot.className = 'international-map-fallback-image'
+    snapshot.src = `/mezhdunarodnaya-nedvizhimost/assets/map-fallback-${snapshotWidth}.png`
+    snapshot.alt = ''
+    snapshot.setAttribute('aria-hidden', 'true')
+    snapshot.draggable = false
+    map.prepend(snapshot)
     const mapAttribution = document.createElement('div')
     mapAttribution.className = 'international-map-fallback-attribution'
     mapAttribution.innerHTML = `
@@ -60,15 +78,87 @@
     const zoomControls = document.createElement('div')
     zoomControls.className = 'international-map-fallback-zoom'
     zoomControls.innerHTML = '<button type="button" aria-label="Увеличить карту">+</button><button type="button" aria-label="Уменьшить карту">−</button>'
+    let zoom = 1
+    const applyZoom = () => {
+      snapshot.style.transformOrigin = 'center center'
+      snapshot.style.transform = `scale(${zoom})`
+    }
+    zoomControls.querySelector('button[aria-label="Увеличить карту"]').addEventListener('click', (event) => {
+      event.preventDefault()
+      event.stopPropagation()
+      zoom = Math.min(2, +(zoom + 0.25).toFixed(2))
+      applyZoom()
+    })
+    zoomControls.querySelector('button[aria-label="Уменьшить карту"]').addEventListener('click', (event) => {
+      event.preventDefault()
+      event.stopPropagation()
+      zoom = Math.max(1, +(zoom - 0.25).toFixed(2))
+      applyZoom()
+    })
     canvas.append(openMapsButton, zoomControls, mapAttribution)
     const style = document.createElement('style')
     style.textContent = `
-      .catalog-projects-map--static-fallback .catalog-projects-map__canvas {
+      .catalog-projects-map--static-fallback {
         position: relative;
-        background: #f1f1f1 url('/mezhdunarodnaya-nedvizhimost/assets/map-background-1440.png') center / cover no-repeat;
+        overflow: hidden;
+        background: #f1f1f1 !important;
+      }
+      .international-map-fallback-image {
+        position: absolute;
+        z-index: 0;
+        top: -1px;
+        left: -0.5px;
+        width: 1289px;
+        height: 221px;
+        max-width: none;
+        pointer-events: none;
+      }
+      .catalog-projects-map--static-fallback .catalog-projects-map__canvas {
+        background: transparent;
       }
       .catalog-projects-map--static-fallback .catalog-projects-map__canvas > .__ymap_container {
         visibility: hidden;
+      }
+      .catalog-projects-map--static-fallback .catalog-projects-map__controls,
+      .catalog-projects-map--static-fallback .international-map-fallback-open,
+      .catalog-projects-map--static-fallback .international-map-fallback-zoom,
+      .catalog-projects-map--static-fallback .international-map-fallback-attribution {
+        opacity: 0;
+      }
+      @media (max-width: 540px) {
+        .catalog-projects-map--static-fallback {
+        }
+        .international-map-fallback-image {
+          top: 0;
+          width: 343px;
+          height: 321px;
+        }
+      }
+      @media (min-width: 541px) and (max-width: 768px) {
+        .international-map-fallback-image {
+          width: 707px;
+          height: 221px;
+        }
+      }
+      @media (min-width: 769px) and (max-width: 1100px) {
+        .international-map-fallback-image {
+          width: 929px;
+          height: 221px;
+        }
+      }
+      @media (min-width: 1101px) and (max-width: 1360px) {
+        .international-map-fallback-image {
+          top: 0;
+          width: 1151px;
+          height: 221px;
+        }
+      }
+      @media (min-width: 1800px) {
+        .international-map-fallback-image {
+          top: 0;
+          width: 1707px;
+          height: 246px;
+        }
       }
       .international-map-fallback-open,
       .international-map-fallback-zoom,
