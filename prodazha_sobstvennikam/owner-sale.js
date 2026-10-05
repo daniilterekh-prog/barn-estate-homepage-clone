@@ -7,6 +7,16 @@
   const menuButton = document.querySelector('[aria-label="Открыть меню"]');
   let menu = document.querySelector('.site-menu');
   const sticky = page.querySelector('.owner-sale-sticky');
+  const header = document.querySelector('.site-header');
+  const lockBodyScroll = function () {
+    const scrollbarWidth = Math.max(0, window.innerWidth - document.documentElement.clientWidth);
+    document.body.style.paddingRight = scrollbarWidth ? scrollbarWidth + 'px' : '';
+    document.body.style.overflow = 'hidden';
+  };
+  const unlockBodyScroll = function () {
+    document.body.style.paddingRight = '';
+    document.body.style.overflow = '';
+  };
 
   if (!menu && menuButton) {
     menu = document.createElement('aside');
@@ -17,7 +27,7 @@
     menu.querySelector('.owner-sale-clone-menu__close').addEventListener('click', function () {
       menu.setAttribute('hidden', '');
       menuButton.setAttribute('aria-expanded', 'false');
-      document.body.classList.remove('no-scroll');
+      unlockBodyScroll();
     });
   }
 
@@ -47,12 +57,17 @@
 
     const closeFeedback = function () {
       feedbackModal.setAttribute('hidden', '');
-      document.body.classList.remove('no-scroll');
+      unlockBodyScroll();
+    };
+    const openFeedback = function (title) {
+      const heading = feedbackModal.querySelector('.feedback-modal__title');
+      if (heading) heading.textContent = title || 'Обратная связь';
+      feedbackModal.removeAttribute('hidden');
+      lockBodyScroll();
+      feedbackModal.querySelector('.feedback-modal__input')?.focus();
     };
     expert.querySelector('.floating-expert__card').addEventListener('click', function () {
-      feedbackModal.removeAttribute('hidden');
-      document.body.classList.add('no-scroll');
-      feedbackModal.querySelector('.feedback-modal__input')?.focus();
+      openFeedback('Обратная связь');
     });
     expert.querySelector('.floating-expert__close').addEventListener('click', function (event) {
       event.stopPropagation();
@@ -60,6 +75,28 @@
     });
     feedbackModal.querySelector('.modal__close').addEventListener('click', closeFeedback);
     feedbackModal.querySelector('.vfm__overlay').addEventListener('click', closeFeedback);
+
+    [['.owner-sale-hero__button', 'Получить консультацию'], ['.owner-sale-stages__offer-btn', 'Отправить заявку'], ['.owner-sale-strategy__button', 'Обсудить стратегию'], ['.catalog-contact__card-submit', 'ПОЛУЧИТЕ ПРЕДВАРИТЕЛЬНУЮ ОЦЕНКУ ОБЪЕКТА'], ['.site-footer__callback-btn', 'Обратная связь']].forEach(function (item) {
+      document.querySelectorAll(item[0]).forEach(function (button) {
+        button.addEventListener('click', function () {
+          openFeedback(item[1]);
+        });
+      });
+    });
+  }
+
+  const liveFeedbackModal = document.querySelector('.feedback-modal');
+  if (liveFeedbackModal) {
+    const closeLiveFeedback = function () {
+      liveFeedbackModal.setAttribute('hidden', '');
+      unlockBodyScroll();
+    };
+    liveFeedbackModal.querySelectorAll('.modal__close, .vfm__overlay').forEach(function (control) {
+      control.addEventListener('click', closeLiveFeedback);
+    });
+    document.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape' && !liveFeedbackModal.hasAttribute('hidden')) closeLiveFeedback();
+    });
   }
 
   page.querySelectorAll('.owner-sale-services__slider-wrap').forEach(function (wrap) {
@@ -95,9 +132,23 @@
   if (menuButton && menu) {
     menuButton.addEventListener('click', function () {
       const isOpen = menu.hasAttribute('hidden') === false;
-      menu.toggleAttribute('hidden', isOpen);
-      menuButton.setAttribute('aria-expanded', String(!isOpen));
-      document.body.classList.toggle('no-scroll', !isOpen);
+      const nextOpen = !isOpen;
+      menu.toggleAttribute('hidden', !nextOpen);
+      if (header) header.classList.toggle('site-header--menu-open', nextOpen);
+      if (nextOpen && header) {
+        const headerHeight = header.getBoundingClientRect().height;
+        document.documentElement.style.setProperty('--layout-header-height', headerHeight + 'px');
+        document.documentElement.style.setProperty('--site-menu-top', headerHeight + 'px');
+      } else {
+        document.documentElement.style.removeProperty('--layout-header-height');
+        document.documentElement.style.removeProperty('--site-menu-top');
+      }
+      menuButton.setAttribute('aria-label', nextOpen ? 'Закрыть меню' : 'Открыть меню');
+      menuButton.innerHTML = nextOpen
+        ? '<span class="ui-icon ui-icon-current site-header__icon" data-v-7912d681 data-v-8bd2f545><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg></span>'
+        : '<span class="ui-icon ui-icon-current site-header__icon" data-v-7912d681 data-v-8bd2f545><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M5 7h14"></path><path d="M5 12h14"></path><path d="M5 17h14"></path></svg></span>';
+      if (nextOpen) lockBodyScroll();
+      else unlockBodyScroll();
     });
   }
 
@@ -106,16 +157,35 @@
       if (!menu) return;
       menu.setAttribute('hidden', '');
       if (menuButton) menuButton.setAttribute('aria-expanded', 'false');
-      document.body.classList.remove('no-scroll');
+      unlockBodyScroll();
     });
   });
 
   const syncSticky = function () {
     if (!sticky) return;
     sticky.classList.toggle('owner-sale-sticky--visible', window.scrollY > window.innerHeight * 0.72);
+    const links = Array.from(sticky.querySelectorAll('.owner-sale-sticky__link'));
+    const stagesTop = document.querySelector('#stages')?.offsetTop || 0;
+    const typesTop = document.querySelector('#property-types')?.offsetTop || 0;
+    const requestTop = document.querySelector('#request')?.offsetTop || 0;
+    let active = 0;
+    if (window.scrollY >= stagesTop) active = 1;
+    if (window.scrollY >= typesTop) active = 2;
+    if (window.scrollY >= requestTop) active = 3;
+    links.forEach(function (link, index) {
+      link.classList.toggle('owner-sale-sticky__link--active', index === active);
+    });
   };
   window.addEventListener('scroll', syncSticky, { passive: true });
   syncSticky();
+
+  page.querySelectorAll('.owner-sale-sticky__link').forEach(function (link) {
+    link.addEventListener('click', function () {
+      const targets = { 'О Барнс': '#about', 'Процесс продажи объекта': '#stages', 'Виды недвижимости': '#property-types', 'Оставить заявку': '#request', 'Статьи': '#newsletter-title' };
+      const target = document.querySelector(targets[link.textContent.trim()]);
+      if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  });
 
   page.querySelectorAll('a[href^="#"]').forEach(function (link) {
     link.addEventListener('click', function (event) {
@@ -167,11 +237,27 @@
       tab.addEventListener('click', function () {
         tabs.forEach(function (item) {
           item.setAttribute('aria-selected', String(item === tab));
-          item.classList.toggle('is-active', item === tab);
+          const itemMethodClass = Array.from(item.classList).find(function (className) {
+            return className.endsWith('__method') || className.endsWith('__method--active');
+          });
+          const baseMethodClass = itemMethodClass?.replace(/--active$/, '');
+          if (baseMethodClass) item.className = item === tab ? baseMethodClass + '--active ' + baseMethodClass : baseMethodClass;
         });
       });
     });
   });
+
+  const moreButton = page.querySelector('.ui-more-link[aria-controls="about-company-more"]');
+  const moreCopy = document.querySelector('#about-company-more');
+  if (moreButton && moreCopy) {
+    moreButton.addEventListener('click', function () {
+      const expanded = moreButton.getAttribute('aria-expanded') === 'true';
+      moreButton.setAttribute('aria-expanded', String(!expanded));
+      moreButton.querySelector('.ui-more-link__label').textContent = expanded ? 'Читать далее' : 'Свернуть';
+      const copy = moreCopy.closest('.about-company__copy');
+      if (copy) copy.classList.toggle('about-company__copy--open', !expanded);
+    });
+  }
 
   page.querySelectorAll('form').forEach(function (form) {
     form.addEventListener('submit', function (event) {
