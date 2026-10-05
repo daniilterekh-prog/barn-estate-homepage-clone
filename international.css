@@ -1,0 +1,479 @@
+/*
+ * Isolated interaction and fallback styles for the international catalogue.
+ * The page's visual system is kept in the captured BARNES SSR styles in
+ * international.html; every rule here is scoped to this page only.
+ */
+
+body.international-page {
+  overflow-x: clip;
+}
+
+body.international-page .international-menu {
+  background: #fff;
+  color: #1e1e1e;
+  inset: 111px 0 0;
+  overflow-y: auto;
+  padding: 42px clamp(20px, 5.2vw, 100px) 60px;
+  position: fixed;
+  z-index: 1200;
+}
+
+body.international-page .catalog-best-offers {
+  min-height: 886px;
+}
+
+body.international-page .international-offer-strip {
+  display: grid;
+  gap: 32px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin: 54px auto 0;
+  max-width: 1920px;
+  overflow: hidden;
+}
+
+body.international-page .international-offer-card {
+  min-width: 0;
+}
+
+body.international-page .international-offer-card__media {
+  aspect-ratio: 1.32;
+  background: #f1f1f1;
+  overflow: hidden;
+}
+
+body.international-page .international-offer-card__media img {
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+body.international-page .international-offer-card__name {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.25;
+  margin: 16px 0 4px;
+}
+
+body.international-page .international-offer-card__place {
+  color: #1e1e1e99;
+  font-size: 16px;
+  margin: 0;
+}
+
+body.international-page .catalog-map {
+  min-height: 565px;
+}
+
+body.international-page .catalog-projects-map {
+  background: #f1f1f1;
+  height: 245px;
+  margin-top: 38px;
+  overflow: hidden;
+  position: relative;
+}
+
+body.international-page .news-section {
+  min-height: 1005px;
+}
+
+body.international-page .international-news-grid {
+  display: flex;
+  gap: 32px;
+  margin-top: 50px;
+  overflow: hidden;
+}
+
+body.international-page .international-news-card {
+  flex: 0 0 28.5%;
+  min-width: 0;
+}
+
+body.international-page .international-news-card img {
+  aspect-ratio: 547 / 495;
+  background: #f1f1f1;
+  display: block;
+  object-fit: cover;
+  width: 100%;
+}
+
+body.international-page .international-news-card a {
+  color: inherit;
+  text-decoration: none;
+}
+
+body.international-page .international-news-card p {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.4;
+  margin: 18px 0 0;
+}
+
+body.international-page .international-menu__grid {
+  display: grid;
+  gap: 48px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin: 0 auto;
+  max-width: 1920px;
+}
+
+body.international-page .international-menu__group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+body.international-page .international-menu__group h2 {
+  font-size: 20px;
+  font-weight: 400;
+  margin: 0 0 8px;
+}
+
+body.international-page .international-menu__group a {
+  color: inherit;
+  font-size: 18px;
+  font-weight: 300;
+  text-decoration: none;
+  transition: color .2s ease;
+}
+
+body.international-page .international-menu__group a:hover,
+body.international-page .international-menu__group a:focus-visible {
+  color: #8b1d25;
+}
+
+body.international-page .international-map-fallback {
+  background-color: #e8e9e6;
+  background-image:
+    linear-gradient(28deg, transparent 0 49%, #d1d4d0 49.2% 49.8%, transparent 50%),
+    linear-gradient(112deg, transparent 0 49%, #d8dad7 49.2% 49.8%, transparent 50%),
+    linear-gradient(90deg, transparent 0 49%, #d3d6d2 49.2% 49.8%, transparent 50%);
+  background-size: 260px 180px, 340px 210px, 210px 170px;
+  inset: 0;
+  overflow: hidden;
+  position: absolute;
+}
+
+body.international-page .international-map-fallback::before,
+body.international-page .international-map-fallback::after {
+  background: #f7f7f5;
+  content: '';
+  position: absolute;
+  transform-origin: center;
+}
+
+body.international-page .international-map-fallback::before {
+  height: 14px;
+  left: -5%;
+  top: 54%;
+  transform: rotate(-16deg);
+  width: 110%;
+}
+
+body.international-page .international-map-fallback::after {
+  height: 9px;
+  left: 38%;
+  top: -10%;
+  transform: rotate(32deg);
+  width: 9px;
+}
+
+body.international-page .international-map-markers {
+  inset: 0;
+  pointer-events: none;
+  position: absolute;
+  z-index: 2;
+}
+
+body.international-page .international-map-marker {
+  background: #931f2b;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px #931f2b;
+  cursor: pointer;
+  height: 16px;
+  padding: 0;
+  pointer-events: auto;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  transition: transform .2s ease, background-color .2s ease;
+  width: 16px;
+}
+
+body.international-page .international-map-marker:hover,
+body.international-page .international-map-marker:focus-visible {
+  background: #b52a39;
+  outline: none;
+  transform: translate(-50%, -50%) scale(1.2);
+}
+
+body.international-page .international-map-popup {
+  background: #fff;
+  box-shadow: 0 12px 32px #0000002e;
+  left: 24px;
+  max-width: 290px;
+  padding: 20px 22px 18px;
+  position: absolute;
+  top: 20px;
+  z-index: 4;
+}
+
+body.international-page .international-map-popup[hidden] {
+  display: none;
+}
+
+body.international-page .international-map-popup__close {
+  background: none;
+  border: 0;
+  color: #1e1e1e99;
+  cursor: pointer;
+  font-size: 24px;
+  line-height: 1;
+  padding: 0;
+  position: absolute;
+  right: 10px;
+  top: 8px;
+}
+
+body.international-page .international-map-popup__kicker {
+  color: #931f2b;
+  font-size: 10px;
+  letter-spacing: .12em;
+  margin: 0 20px 12px 0;
+  text-transform: uppercase;
+}
+
+body.international-page .international-map-popup h3 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.2;
+  margin: 0 0 8px;
+}
+
+body.international-page .international-map-popup p:not(.international-map-popup__kicker) {
+  color: #1e1e1e99;
+  font-size: 14px;
+  line-height: 1.4;
+  margin: 0 0 16px;
+}
+
+body.international-page .international-map-popup a {
+  color: #931f2b;
+  font-size: 14px;
+}
+
+body.international-page .international-map-controls {
+  align-items: center;
+  bottom: 20px;
+  display: flex;
+  gap: 10px;
+  position: absolute;
+  right: 20px;
+  z-index: 3;
+}
+
+body.international-page .international-map-controls label,
+body.international-page .international-map-controls button {
+  background: #fff;
+  border: 1px solid #dedede;
+  color: #1e1e1e;
+  font: inherit;
+  min-height: 48px;
+}
+
+body.international-page .international-map-controls label {
+  align-items: center;
+  display: flex;
+  padding: 0 14px;
+  width: 340px;
+}
+
+body.international-page .international-map-controls input {
+  background: transparent;
+  border: 0;
+  color: inherit;
+  font: inherit;
+  min-width: 0;
+  outline: 0;
+  width: 100%;
+}
+
+body.international-page .international-map-controls button {
+  cursor: pointer;
+  padding: 0 16px;
+}
+
+body.international-page .international-map-zoom {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  z-index: 3;
+}
+
+body.international-page .international-map-zoom button {
+  background: #fff;
+  border: 0;
+  color: #1e1e1e;
+  cursor: pointer;
+  font: 300 22px/1 Arial, sans-serif;
+  height: 34px;
+  width: 34px;
+}
+
+body.international-page .catalog-projects-map.international-map--fullscreen {
+  inset: 0;
+  height: 100vh;
+  margin: 0;
+  position: fixed;
+  width: 100vw;
+  z-index: 2000;
+}
+
+body.international-page .catalog-grid__item.is-filtered {
+  display: none;
+}
+
+body.international-page .catalog-faq__answer[hidden] {
+  display: none;
+}
+
+body.international-page .international-toast {
+  background: #262626;
+  bottom: 24px;
+  color: #fff;
+  font-size: 15px;
+  left: 50%;
+  opacity: 0;
+  padding: 14px 20px;
+  pointer-events: none;
+  position: fixed;
+  transform: translate(-50%, 12px);
+  transition: opacity .2s ease, transform .2s ease;
+  z-index: 2200;
+}
+
+body.international-page .international-toast.is-visible {
+  opacity: 1;
+  transform: translate(-50%, 0);
+}
+
+@media screen and (max-width: 1024px) {
+  body.international-page .international-menu {
+    inset: 76px 0 0;
+  }
+
+  body.international-page .international-menu__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media screen and (max-width: 540px) {
+  body.international-page .catalog-best-offers {
+    min-height: 548px;
+  }
+
+  body.international-page .international-offer-strip {
+    display: flex;
+    gap: 16px;
+    margin-top: 30px;
+    overflow-x: auto;
+    padding-bottom: 8px;
+    scrollbar-width: none;
+  }
+
+  body.international-page .international-offer-card {
+    flex: 0 0 78vw;
+  }
+
+  body.international-page .international-offer-strip::-webkit-scrollbar {
+    display: none;
+  }
+
+  body.international-page .catalog-map {
+    min-height: 565px;
+  }
+
+  body.international-page .news-section {
+    min-height: 0;
+  }
+
+  body.international-page .international-news-grid {
+    display: flex;
+    gap: 16px;
+    margin-top: 25px;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  body.international-page .international-news-grid::-webkit-scrollbar {
+    display: none;
+  }
+
+  body.international-page .international-news-card {
+    flex: 0 0 82vw;
+  }
+
+  body.international-page .international-news-card p {
+    font-size: 16px;
+    margin-top: 12px;
+  }
+
+  body.international-page .catalog-projects-map {
+    margin-top: 24px;
+  }
+
+  body.international-page .international-menu {
+    inset: 69px 0 0;
+    padding: 28px 20px 40px;
+  }
+
+  body.international-page .international-menu__grid {
+    gap: 30px;
+    grid-template-columns: 1fr;
+  }
+
+  body.international-page .international-menu__group h2 {
+    font-size: 18px;
+  }
+
+  body.international-page .international-menu__group a {
+    font-size: 16px;
+  }
+
+  body.international-page .international-map-popup {
+    left: 16px;
+    max-width: calc(100% - 32px);
+    top: 16px;
+  }
+
+  body.international-page .international-map-controls {
+    align-items: stretch;
+    bottom: 16px;
+    flex-direction: column;
+    right: 16px;
+    width: min(calc(100% - 32px), 320px);
+  }
+
+  body.international-page .international-map-controls label {
+    width: auto;
+  }
+
+  body.international-page .international-map-controls button {
+    width: 100%;
+  }
+
+  body.international-page .international-map-zoom {
+    right: 16px;
+    top: 16px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body.international-page .international-map-marker,
+  body.international-page .international-toast {
+    transition: none;
+  }
+}
