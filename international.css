@@ -55,8 +55,10 @@ body.international-page .catalog-projects-map {
   background: #f1f1f1;
   height: 245px;
   margin-top: 38px;
+  margin-inline: auto;
   overflow: hidden;
   position: relative;
+  width: min(1720px, calc(100% - 32px));
 }
 
 body.international-page .news-section {
@@ -238,11 +240,12 @@ body.international-page .international-map-popup a {
 
 body.international-page .international-map-controls {
   align-items: center;
-  bottom: 20px;
+  bottom: 24px;
   display: flex;
-  gap: 10px;
+  gap: 12px;
+  height: 54px;
   position: absolute;
-  right: 20px;
+  right: 24px;
   z-index: 3;
 }
 
@@ -258,8 +261,9 @@ body.international-page .international-map-controls button {
 body.international-page .international-map-controls label {
   align-items: center;
   display: flex;
-  padding: 0 14px;
-  width: 340px;
+  height: 54px;
+  padding: 0 16px;
+  width: 395px;
 }
 
 body.international-page .international-map-controls input {
@@ -272,9 +276,23 @@ body.international-page .international-map-controls input {
   width: 100%;
 }
 
+body.international-page .international-map-search-icon {
+  display: inline-flex;
+  flex: 0 0 20px;
+  margin-right: 12px;
+}
+
+body.international-page .international-map-search-icon svg {
+  display: block;
+  height: 20px;
+  width: 20px;
+}
+
 body.international-page .international-map-controls button {
   cursor: pointer;
+  height: 54px;
   padding: 0 16px;
+  width: 171px;
 }
 
 body.international-page .international-map-zoom {
@@ -282,7 +300,7 @@ body.international-page .international-map-zoom {
   flex-direction: column;
   gap: 1px;
   position: absolute;
-  right: 20px;
+  right: 24px;
   top: 20px;
   z-index: 3;
 }
@@ -493,4 +511,59 @@ body.international-page .international-toast.is-visible {
   body.international-page .international-toast {
     transition: none;
   }
+}
+
+body.international-page .catalog-quick-filters {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 8px;
+  position: relative;
+}
+
+body.international-page .catalog-quick-filters__item {
+  position: relative;
+}
+
+body.international-page .catalog-quick-filters__button {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 7px 30px 7px 11px;
+  border: 1px solid rgba(30, 30, 30, .16);
+  background: transparent;
+  color: #1e1e1e;
+  text-align: left;
+  font: 16px/16px "Tilda Sans", "Tilda Sans Fallback", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+body.international-page .catalog-quick-filters__label {
+  display: block;
+  color: #1e1e1e;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.15;
+}
+
+body.international-page .catalog-quick-filters__value {
+  display: block;
+  margin-top: 4px;
+  color: #929292;
+  font-size: 10px;
+  line-height: 1.1;
+}
+
+body.international-page .catalog-quick-filters__chevron {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  width: 6px;
+  height: 6px;
+  border-right: 1px solid;
+  border-bottom: 1px solid;
+  transform: translateY(-70%) rotate(45deg);
+  transition: transform .15s;
+}
+
+body.international-page .catalog-quick-filters__button.is-open .catalog-quick-filters__chevron {
+  transform: translateY(-30%) rotate(225deg);
 }
