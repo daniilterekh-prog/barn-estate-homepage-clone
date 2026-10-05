@@ -1,0 +1,10 @@
+@import url("./arenda_sobstvennikam/source.css");
+
+/* Only the dynamically-created menu belongs to this page. */
+.owner-rent-drawer{background:#fff;box-shadow:0 14px 40px rgba(0,0,0,.18);color:#1e1e1e;inset:0 0 0 auto;max-width:420px;overflow:auto;padding:clamp(84px,10vw,140px) clamp(28px,6vw,72px) 48px;position:fixed;width:min(88vw,420px);z-index:1400}
+.owner-rent-drawer__close{background:none;border:0;color:inherit;cursor:pointer;font:300 42px/1 "Tilda Sans",Arial,sans-serif;padding:0;position:absolute;right:28px;top:28px}
+.owner-rent-drawer nav{display:flex;flex-direction:column;gap:24px}
+.owner-rent-drawer a{color:inherit;font-size:22px;font-weight:300;text-decoration:none;text-transform:uppercase}
+.owner-rent-drawer a:hover{color:#8b1d25}
+.owner-rent-menu-open{overflow:hidden}
+@media(max-width:540px){.owner-rent-drawer{max-width:none;width:100%}.owner-rent-drawer a{font-size:20px}}
