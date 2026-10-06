@@ -9,6 +9,7 @@
   /* Primitive type values */
   --font-family-sans: "Tilda Sans", "Tilda Sans Fallback", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   --font-weight-light: 300;
+  --font-weight-heading: 200;
   --font-weight-regular: 400;
   --font-weight-medium: 500;
 
@@ -63,6 +64,14 @@
   }
 }
 
+/* The approved 1280px desktop emphasis: +8px from the 38px desktop step. */
+@media (min-width: 1025px) and (max-width: 1440px) {
+  :root {
+    --type-h2-standard-size: 46px;
+    --type-h2-compact-size: 46px;
+  }
+}
+
 /*
  * H2 Standard: section headings that introduce supporting copy or a content grid.
  * The source page uses scoped selectors with higher specificity, so these role
@@ -74,7 +83,7 @@
   color: var(--color-text-primary) !important;
   font-family: var(--font-family-sans) !important;
   font-size: var(--type-h2-standard-size) !important;
-  font-weight: var(--font-weight-light) !important;
+  font-weight: var(--font-weight-heading) !important;
   line-height: var(--type-h2-standard-line-height) !important;
 }
 
@@ -86,7 +95,7 @@
   color: var(--color-text-primary) !important;
   font-family: var(--font-family-sans) !important;
   font-size: var(--type-h2-compact-size) !important;
-  font-weight: var(--font-weight-light) !important;
+  font-weight: var(--font-weight-heading) !important;
   line-height: var(--type-h2-compact-line-height) !important;
 }
 
@@ -95,9 +104,15 @@
   color: var(--color-text-primary) !important;
   font-family: var(--font-family-sans) !important;
   font-size: var(--type-h2-editorial-size) !important;
-  font-weight: var(--font-weight-light) !important;
+  font-weight: var(--font-weight-heading) !important;
   letter-spacing: var(--type-h2-editorial-tracking) !important;
   line-height: var(--type-h2-editorial-line-height) !important;
+}
+
+/* CTA headings keep their own size/line-height contract but use the same H2 weight. */
+.office-contact__copy h2,
+.newsletter-cta__copy h2 {
+  font-weight: var(--font-weight-heading) !important;
 }
 
 /* Keep the current rendered foundation unchanged while routing it through tokens. */

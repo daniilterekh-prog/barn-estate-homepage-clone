@@ -63,8 +63,8 @@ Reference readiness: not APPROVED. The homepage still has one P1 runtime issue a
 |---|---|---|---|
 | Display / Hero | 48/48px mobile; fluid to 104/104px wide; weight 300 | clamp-based between breakpoints | hero brand/title only |
 | H1 / Page title | visual Display style with semantic H1 | one per page | page-level heading; may be visually integrated into hero |
-| H2 Standard | 22/26.4px mobile; 38/45.6px desktop; 44/52.8px wide; weight 300 | fluid or 3 semantic steps | section titles with supporting copy |
-| H2 Compact | 22/22px mobile; 38/38px desktop; 44/44px wide; weight 300 | only for short one-line editorial labels | Barnes choice, team/news style where line-height 1 is intentional |
+| H2 Standard | 22/26.4px mobile; 38/45.6px tablet; 46/55.2px at 1025–1440px; 44/52.8px wide; weight 200 | fluid or semantic steps | section titles with supporting copy |
+| H2 Compact | 22/22px mobile; 38/38px tablet; 46/46px at 1025–1440px; 44/44px wide; weight 200 | only for short one-line editorial labels | Barnes choice, team/news style where line-height 1 is intentional |
 | H3 / Card title | 18–22px, line-height 1.15–1.25, weight 400 | scale only when wrapping requires it | property, news, department and team titles |
 | Lead / Body Large | 15/21px mobile; 22/33px desktop; weight 300 | fluid within content width | section intro and editorial lead |
 | Body | 16/22.4px, weight 300/400 | stable | paragraphs and supporting copy |
@@ -79,10 +79,10 @@ Reference readiness: not APPROVED. The homepage still has one P1 runtime issue a
 
 | Role | Current variants | Reference decision | Classification |
 |---|---|---|---|
-| Services/section title | 22/26.4, 38/45.6, 44/52.8 | H2 Standard | SAFE TO UNIFY |
-| Barnes/team/news title | 22/22, 38/38, 44/44 | H2 Compact for short editorial headings | INTENTIONAL, document role |
-| Reviews title | 22/22, 52/52, 64/64 | H2 Standard: 22/26.4, 38/45.6, 44/52.8 | SAFE TO UNIFY |
-| About title | 22/26.4 with negative tracking; 44/43.12 desktop | preserve as Brand Editorial, not a third generic H2 | INTENTIONAL |
+| Services/section title | 22/26.4, 38/45.6, 46/55.2 at 1025–1440, 44/52.8 wide | H2 Standard, weight 200 | SAFE TO UNIFY |
+| Barnes/team/news title | 22/22, 38/38, 46/46 at 1025–1440, 44/44 wide | H2 Compact, weight 200 | INTENTIONAL, document role |
+| Reviews title | 22/22, 52/52, 64/64 | H2 Standard with 46px desktop emphasis and weight 200 | SAFE TO UNIFY |
+| About title | 22/26.4 with negative tracking; 44/43.12 desktop; weight 200 | preserve as Brand Editorial, not a third generic H2 | INTENTIONAL |
 | Eyebrows | 12, 13, 16, 22, 24px | 12–14px, role-based tracking | SAFE TO UNIFY |
 | Footer links | 11/11 mobile, 16/16 desktop | minimum 13/18 mobile | SAFE TO UNIFY |
 | Page heading | no h1 | add semantic H1 using hero/display visual role | SAFE TO UNIFY |
@@ -456,3 +456,4 @@ These are specification outputs, not completed implementation changes.
 - Connected the token layer to the homepage without changing the rendered font, weight or color values.
 - Implemented the homepage H2 role tokens: H2 Standard, H2 Compact and Brand Editorial.
 - Normalized the Reviews section to H2 Standard; hero/project Display headings and editorial CTA headings remain separate roles.
+- At 1280px desktop, increased H2 Standard/Compact from 38px to 46px and set all homepage H2-role weights to 200.
