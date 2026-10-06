@@ -2,7 +2,7 @@
  * Homepage UI tokens — first reference-system layer.
  * Scope: the BARNES Moscow homepage only.
  * This file defines typography and color foundations for the homepage reference UI.
- * Spacing, components, states and responsive tokens are handled in later steps.
+ * Component states and remaining component tokens are handled in later steps.
  */
 
 :root {
@@ -21,6 +21,15 @@
   --type-h2-editorial-size: 44px;
   --type-h2-editorial-line-height: 0.98;
   --type-h2-editorial-tracking: -0.035em;
+
+  /* Reference spacing roles — specification tokens only for now. */
+  --space-inline-xs: 8px;
+  --space-inline-sm: 16px;
+  --space-component: 24px;
+  --space-component-lg: 32px;
+  --space-section-sm: 75px;
+  --space-section-md: 72px;
+  --space-section-lg: 100px;
 
   /* Primitive color values */
   --color-neutral-0: #ffffff;
@@ -73,6 +82,17 @@ html body {
     --type-h2-compact-line-height: 1;
     --type-h2-editorial-size: 22px;
     --type-h2-editorial-line-height: 1.2;
+    --space-section-sm: 35px;
+    --space-section-md: 50px;
+    --space-section-lg: 60px;
+  }
+}
+
+@media (min-width: 541px) and (max-width: 1024px) {
+  :root {
+    --space-section-sm: 60px;
+    --space-section-md: 64px;
+    --space-section-lg: 80px;
   }
 }
 
@@ -82,5 +102,6 @@ html body {
     --type-h2-standard-line-height: 1.2;
     --type-h2-compact-size: 44px;
     --type-h2-compact-line-height: 1;
+    --space-section-md: 96px;
   }
 }

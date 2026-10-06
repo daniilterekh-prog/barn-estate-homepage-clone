@@ -158,6 +158,22 @@ Values 35px, 50px, 75px and 115.2px remain allowed only as named fluid section r
 | section-md | 50px mobile → 64px tablet → 72px desktop → 96px wide | standard editorial sections |
 | section-lg | 60px mobile → 70/80px tablet → 80/100px desktop | hero-adjacent or media sections |
 
+### Fixed homepage spacing reference tokens
+
+These are reference tokens for the homepage only. They are recorded for the future UI Kit and are not yet attached to section selectors, so this decision does not change the current rendered page.
+
+| Token | Base / medium | Mobile ≤540px | Tablet 541–1024px | Wide ≥1441px | Use |
+|---|---:|---:|---:|---:|---|
+| `--space-inline-xs` | `8px` | `8px` | `8px` | `8px` | icon/label micro gap |
+| `--space-inline-sm` | `16px` | `16px` | `16px` | `16px` | compact control and metadata gap |
+| `--space-component` | `24px` | `24px` | `24px` | `24px` | card/form internal gap |
+| `--space-component-lg` | `32px` | `32px` | `32px` | `32px` | heading-to-content and grouped content |
+| `--space-section-sm` | `75px` | `35px` | `60px` | `75px` | compact section rhythm |
+| `--space-section-md` | `72px` | `50px` | `64px` | `96px` | standard inter-section rhythm |
+| `--space-section-lg` | `100px` | `60px` | `80px` | `100px` | hero-adjacent/media sections |
+
+The canonical base/medium spacing value to reuse first is `--space-section-md: 72px`. About, Projects and Newsletter remain documented editorial exceptions where media and asymmetric composition determine the final section height.
+
 ### Section rhythm decision
 
 Do not force every section to the same height. Standardize section padding roles, then allow content and media to determine section height. About, Project and Newsletter are editorial exceptions because their composition depends on media and asymmetric columns.
@@ -435,7 +451,7 @@ These are specification outputs, not completed implementation changes.
 |---|---|---|---|
 | Typography | Tilda Sans, 300/400/500; H2 Standard + Compact | HIGH | repeated computed styles and brand character |
 | Colors | #1E1E1E, #4F4D49, #656462, #8B1D25, #FFFFFF, #F1F1F1, #262626 | HIGH | repeated actual palette and contrast review |
-| Spacing | named scale with fluid section roles | MEDIUM | actual values are fluid and editorial |
+| Spacing | `--space-section-md: 72px` with responsive `50/64/96px` steps; named supporting scale | HIGH | repeated homepage rhythm, documented responsive bands and editorial exceptions |
 | Containers | max 1920px, one shared gutter system | HIGH | measured base container and alignment drift |
 | Grid | stack, service 2-col, department 6-col, editorial split, slider | HIGH | repeated layout patterns |
 | Buttons | Primary/Secondary/Outline/Text/Icon; 58/70px primary | MEDIUM | current height is clear; radius needs review |
@@ -469,3 +485,5 @@ These are specification outputs, not completed implementation changes.
 - Connected the token layer to the homepage without changing the rendered font, weight or color values.
 - Fixed the homepage reference H2 base/medium token at `38px / 45.6px`, weight `300`; retained `22px` mobile and `44px` wide responsive steps.
 - Recorded H2 tokens as specification only; no H2 component selectors or rendered heading styles were changed.
+- Fixed the homepage reference spacing base/medium token at `72px`; retained `50px` mobile, `64px` tablet and `96px` wide steps for standard sections.
+- Recorded spacing tokens as specification only; no section selectors or rendered spacing values were changed.
