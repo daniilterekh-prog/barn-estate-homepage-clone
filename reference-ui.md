@@ -2,11 +2,11 @@
 
 ## Status
 
-**DRAFT / REVIEW**
+**REFERENCE / LOCKED — HOMEPAGE ONLY**
 
-This document defines the proposed reference UI system for the BARNES Moscow homepage only. It is not the final global UI Kit and must not be applied automatically to other pages.
+This document defines the locked reference UI system for the BARNES Moscow homepage only. It is not the final global UI Kit and must not be applied automatically to other pages.
 
-Reference readiness: not APPROVED. The homepage still has one P1 runtime issue and eight P2 corrections from the source audit. Approval should happen after those corrections and a second responsive QA pass.
+Reference state: the current homepage decisions are fixed as the working reference for the next implementation steps. This does not claim that every audit issue is fixed and does not promote the values to the global site UI Kit.
 
 ## Source Page
 
@@ -25,6 +25,21 @@ Reference readiness: not APPROVED. The homepage still has one P1 runtime issue a
 5. Make responsive behavior continuous where the content allows it; document deliberate steps.
 6. Accessibility is part of the reference: one page H1, explicit labels, visible focus and complete disclosure/tab semantics.
 7. This file describes the target reference. It does not authorize production-code changes by itself.
+
+## Locked Reference Scope
+
+The following homepage UI decisions are now the single reference baseline for the next implementation passes:
+
+- Typography: Tilda Sans with weights `300 / 400 / 500`; heading weight `300`.
+- H2 Standard: `38px / 45.6px` base, `22px / 26.4px` mobile, `44px / 52.8px` wide.
+- H2 Compact: `38px / 38px` base, `22px / 22px` mobile, `44px / 44px` wide.
+- Colors: semantic primary `#1E1E1E`, secondary `#4F4D49`, muted `#656462`, brand `#8B1D25`, surface `#F1F1F1`, dark surface `#262626`, border `#E4E4E4`.
+- Spacing: `8 / 16 / 24 / 32px` component scale and `50 / 64 / 72 / 96px` responsive section scale.
+- Standard section spacing is applied to Services, Barnes Choice, Departments, Reviews, Video, Team, Partners and News.
+- About, Projects, Office and Newsletter remain intentional editorial exceptions until separately reviewed.
+- Container, grid, buttons, links, cards, forms, icons, radius and responsive rules remain governed by the specifications below.
+
+This is a homepage reference UI Kit, not a global site-wide token contract.
 
 ## Page Map
 
@@ -464,11 +479,10 @@ These are specification outputs, not completed implementation changes.
 
 ## Open Decisions
 
-1. Confirm whether this homepage H2 reference system is ready for promotion to the global UI Kit after homepage QA.
-2. Approve radius 3px for primary CTA or retain sharp desktop hero CTA as intentional.
-3. Choose whether the local clone is an independently crawlable deployment.
-4. Approve the mobile video loading policy after performance measurement.
-5. Approve the exact navigation behavior at 1280–1281px.
+1. Approve radius 3px for primary CTA or retain sharp desktop hero CTA as intentional.
+2. Choose whether the local clone is an independently crawlable deployment.
+3. Approve the mobile video loading policy after performance measurement.
+4. Approve the exact navigation behavior at 1280–1281px.
 
 ## Changelog
 
@@ -487,3 +501,4 @@ These are specification outputs, not completed implementation changes.
 - Recorded H2 tokens as specification only; no H2 component selectors or rendered heading styles were changed.
 - Fixed the homepage reference spacing base/medium token at `72px`; retained `50px` mobile, `64px` tablet and `96px` wide steps for standard sections.
 - Applied `section-md` spacing to the standard section family; kept About, Projects, Office and Newsletter as editorial exceptions.
+- Locked the current homepage typography, color, spacing and component decisions as the Homepage Reference UI Kit; global-site promotion remains out of scope.
