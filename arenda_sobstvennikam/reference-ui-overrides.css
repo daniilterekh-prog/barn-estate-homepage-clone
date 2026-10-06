@@ -1,0 +1,134 @@
+/*
+ * BARNES Homepage Reference UI — explicitly applied to the owner-rent page.
+ * This file is page-local on purpose; it must not become a global UI kit.
+ */
+:root {
+  --owner-rent-ui-brand: #8b1d25;
+  --owner-rent-ui-brand-accent: #e7c88f;
+  --owner-rent-ui-background: #fff;
+  --owner-rent-ui-surface: #f1f1f1;
+  --owner-rent-ui-dark-surface: #262626;
+  --owner-rent-ui-text-primary: #1e1e1e;
+  --owner-rent-ui-text-secondary: #4f4d49;
+  --owner-rent-ui-text-muted: #656462;
+  --owner-rent-ui-border: #e4e4e4;
+  --owner-rent-ui-heading-weight: 300;
+  --owner-rent-ui-h2-size: 38px;
+  --owner-rent-ui-h2-line: 45.6px;
+  --owner-rent-ui-h2-mobile-size: 22px;
+  --owner-rent-ui-h2-mobile-line: 26.4px;
+  --owner-rent-ui-control-radius: 3px;
+  --owner-rent-ui-focus-width: 2px;
+  --owner-rent-ui-focus-offset: 4px;
+  --owner-rent-ui-motion: 200ms ease;
+}
+
+.owner-rent-reference-ui {
+  background: var(--owner-rent-ui-background);
+  color: var(--owner-rent-ui-text-primary);
+}
+
+.owner-rent-reference-ui :is(
+  .owner-sale-presentation__title,
+  .owner-sale-services__title,
+  .owner-sale-exclusive__title
+) {
+  color: var(--owner-rent-ui-text-primary);
+  font-weight: var(--owner-rent-ui-heading-weight);
+}
+
+.owner-rent-reference-ui .owner-sale-exclusive__title {
+  color: #fff;
+}
+
+.owner-rent-reference-ui .owner-sale-hero__title {
+  font-weight: var(--owner-rent-ui-heading-weight);
+}
+
+.owner-rent-reference-ui :is(.ui-button, .newsletter-form button) {
+  border-radius: var(--owner-rent-ui-control-radius);
+  font-size: 16px;
+  line-height: 17.6px;
+  font-weight: 500;
+  transition: background-color var(--owner-rent-ui-motion),
+    border-color var(--owner-rent-ui-motion), color var(--owner-rent-ui-motion),
+    opacity var(--owner-rent-ui-motion);
+}
+
+.owner-rent-reference-ui :is(.catalog-contact__submit, .catalog-contact__card-submit) {
+  font-size: 16px;
+  line-height: 17.6px;
+}
+
+.owner-rent-reference-ui .ui-button--primary.ui-button--medium {
+  min-height: 70px;
+}
+
+.owner-rent-reference-ui .newsletter-form button {
+  font-weight: 500;
+}
+
+.owner-rent-reference-ui :is(a, button, input, textarea, select):focus-visible {
+  outline: var(--owner-rent-ui-focus-width) solid var(--owner-rent-ui-brand);
+  outline-offset: var(--owner-rent-ui-focus-offset);
+}
+
+.owner-rent-reference-ui :is(.catalog-contact__input, .catalog-contact__textarea):focus-visible {
+  outline-color: #fff;
+  outline-offset: 3px;
+}
+
+.owner-rent-reference-ui .catalog-contact__consent-input:focus-visible {
+  outline-color: #fff;
+  outline-offset: 3px;
+}
+
+.owner-rent-reference-ui .newsletter-cta {
+  --newsletter-muted: var(--owner-rent-ui-text-muted);
+}
+
+.owner-rent-reference-ui .site-footer__link {
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+@media (min-width: 1441px) {
+  .owner-rent-reference-ui .site-header__nav-link {
+    font-size: 18px;
+    line-height: 18px;
+  }
+}
+
+@media (max-width: 540px) {
+  .owner-rent-reference-ui :is(
+    .owner-sale-presentation__title,
+    .owner-sale-services__title,
+    .owner-sale-exclusive__title
+  ) {
+    font-size: var(--owner-rent-ui-h2-mobile-size);
+    line-height: var(--owner-rent-ui-h2-mobile-line);
+  }
+
+  .owner-rent-reference-ui :is(.catalog-contact__submit, .catalog-contact__card-submit) {
+    min-height: 58px;
+  }
+
+  .owner-rent-reference-ui .ui-button--primary.ui-button--medium {
+    min-height: 58px;
+  }
+
+  .owner-rent-reference-ui .newsletter-form button {
+    min-height: 58px;
+  }
+
+  .owner-rent-reference-ui .site-footer__link {
+    font-size: 13px;
+    line-height: 18px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .owner-rent-reference-ui :is(.ui-button, .newsletter-form button) {
+    transition: none;
+  }
+}
