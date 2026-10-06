@@ -1,7 +1,7 @@
 /*
  * Homepage UI tokens — first reference-system layer.
  * Scope: the BARNES Moscow homepage only.
- * This file intentionally defines typography and color foundations only.
+ * This file defines typography and color foundations for the homepage reference UI.
  * Spacing, components, states and responsive tokens are handled in later steps.
  */
 
@@ -11,6 +11,16 @@
   --font-weight-light: 300;
   --font-weight-regular: 400;
   --font-weight-medium: 500;
+  --font-weight-heading: var(--font-weight-light);
+
+  /* Reference H2 roles — specification tokens only for now. */
+  --type-h2-standard-size: 38px;
+  --type-h2-standard-line-height: 1.2;
+  --type-h2-compact-size: 38px;
+  --type-h2-compact-line-height: 1;
+  --type-h2-editorial-size: 44px;
+  --type-h2-editorial-line-height: 0.98;
+  --type-h2-editorial-tracking: -0.035em;
 
   /* Primitive color values */
   --color-neutral-0: #ffffff;
@@ -48,4 +58,29 @@ html body {
   background-color: var(--color-bg-page);
   color: var(--color-text-primary);
   font-family: var(--font-family-sans);
+}
+
+/*
+ * Responsive reference steps. These variables are intentionally not attached
+ * to existing heading selectors yet, so recording the UI Kit value does not
+ * change the current rendered homepage before the implementation step.
+ */
+@media (max-width: 540px) {
+  :root {
+    --type-h2-standard-size: 22px;
+    --type-h2-standard-line-height: 1.2;
+    --type-h2-compact-size: 22px;
+    --type-h2-compact-line-height: 1;
+    --type-h2-editorial-size: 22px;
+    --type-h2-editorial-line-height: 1.2;
+  }
+}
+
+@media (min-width: 1441px) {
+  :root {
+    --type-h2-standard-size: 44px;
+    --type-h2-standard-line-height: 1.2;
+    --type-h2-compact-size: 44px;
+    --type-h2-compact-line-height: 1;
+  }
 }

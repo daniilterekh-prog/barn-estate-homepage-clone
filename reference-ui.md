@@ -56,6 +56,20 @@ Reference readiness: not APPROVED. The homepage still has one P1 runtime issue a
 - Other declared font weights remain available only when a real content need is documented.
 - Text colors use semantic tokens; component CSS must not introduce a new dark grey for the same role.
 - Uppercase is reserved for navigation, eyebrow labels and selected editorial headings.
+- Canonical H2 base/medium value: `38px / 45.6px`, weight `300`. Responsive steps are `22px / 26.4px` on mobile and `44px / 52.8px` on wide screens.
+
+### Fixed homepage H2 reference tokens
+
+These are reference tokens for the homepage only. They are recorded for the future UI Kit and are not yet applied to existing heading selectors, so this decision does not change the current rendered page.
+
+| Token | Base / medium | Mobile ≤540px | Wide ≥1441px | Use |
+|---|---:|---:|---:|---|
+| `--font-weight-heading` | `300` | `300` | `300` | all reference H2 roles |
+| `--type-h2-standard-size` / line-height | `38px / 45.6px` | `22px / 26.4px` | `44px / 52.8px` | section titles with supporting copy |
+| `--type-h2-compact-size` / line-height | `38px / 38px` | `22px / 22px` | `44px / 44px` | short one-line editorial headings |
+| `--type-h2-editorial-size` / line-height | `44px / 43.12px` | `22px / 26.4px` | `44px / 43.12px` | About brand-editorial exception |
+
+The canonical value to reuse first in later UI Kit work is the base/medium H2 value: `38px`, `45.6px`, weight `300`.
 
 ### Reference type roles
 
@@ -434,7 +448,7 @@ These are specification outputs, not completed implementation changes.
 
 ## Open Decisions
 
-1. Approve H2 Standard and H2 Compact as two homepage section-title roles.
+1. Confirm whether this homepage H2 reference system is ready for promotion to the global UI Kit after homepage QA.
 2. Approve radius 3px for primary CTA or retain sharp desktop hero CTA as intentional.
 3. Choose whether the local clone is an independently crawlable deployment.
 4. Approve the mobile video loading policy after performance measurement.
@@ -453,3 +467,5 @@ These are specification outputs, not completed implementation changes.
 
 - Implemented the first homepage-only primitive and semantic token layer in homepage-ui-tokens.css.
 - Connected the token layer to the homepage without changing the rendered font, weight or color values.
+- Fixed the homepage reference H2 base/medium token at `38px / 45.6px`, weight `300`; retained `22px` mobile and `44px` wide responsive steps.
+- Recorded H2 tokens as specification only; no H2 component selectors or rendered heading styles were changed.
