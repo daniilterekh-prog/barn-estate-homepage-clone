@@ -1,7 +1,7 @@
 /*
  * Homepage UI tokens — first reference-system layer.
  * Scope: the BARNES Moscow homepage only.
- * This file intentionally defines typography and color foundations only.
+ * This file defines typography and color foundations plus the homepage H2 roles.
  * Spacing, components, states and responsive tokens are handled in later steps.
  */
 
@@ -11,6 +11,15 @@
   --font-weight-light: 300;
   --font-weight-regular: 400;
   --font-weight-medium: 500;
+
+  /* Reference heading roles — desktop-wide baseline */
+  --type-h2-standard-size: 44px;
+  --type-h2-standard-line-height: 1.2;
+  --type-h2-compact-size: 44px;
+  --type-h2-compact-line-height: 1;
+  --type-h2-editorial-size: 44px;
+  --type-h2-editorial-line-height: 0.98;
+  --type-h2-editorial-tracking: -0.035em;
 
   /* Primitive color values */
   --color-neutral-0: #ffffff;
@@ -35,6 +44,60 @@
   --color-text-on-brand: var(--color-neutral-0);
   --color-action-primary: var(--color-brand-burgundy);
   --color-border-default: var(--color-border-subtle);
+}
+
+/* Keep the existing three-step homepage type rhythm while giving each role one source of truth. */
+@media (max-width: 1440px) {
+  :root {
+    --type-h2-standard-size: 38px;
+    --type-h2-compact-size: 38px;
+  }
+}
+
+@media (max-width: 540px) {
+  :root {
+    --type-h2-standard-size: 22px;
+    --type-h2-compact-size: 22px;
+    --type-h2-editorial-size: 22px;
+    --type-h2-editorial-line-height: 1.2;
+  }
+}
+
+/*
+ * H2 Standard: section headings that introduce supporting copy or a content grid.
+ * The source page uses scoped selectors with higher specificity, so these role
+ * declarations are intentionally authoritative in the homepage adapter layer.
+ */
+.services-section__title,
+.departments-section__title,
+.reviews-section__title {
+  color: var(--color-text-primary) !important;
+  font-family: var(--font-family-sans) !important;
+  font-size: var(--type-h2-standard-size) !important;
+  font-weight: var(--font-weight-light) !important;
+  line-height: var(--type-h2-standard-line-height) !important;
+}
+
+/* H2 Compact: short one-line editorial section labels. */
+.barnes-choice__title,
+.team-section__title,
+.partners-section__title,
+.news-section__title {
+  color: var(--color-text-primary) !important;
+  font-family: var(--font-family-sans) !important;
+  font-size: var(--type-h2-compact-size) !important;
+  font-weight: var(--font-weight-light) !important;
+  line-height: var(--type-h2-compact-line-height) !important;
+}
+
+/* Brand Editorial: preserve the asymmetric About composition without creating another generic H2 level. */
+.about-company__title {
+  color: var(--color-text-primary) !important;
+  font-family: var(--font-family-sans) !important;
+  font-size: var(--type-h2-editorial-size) !important;
+  font-weight: var(--font-weight-light) !important;
+  letter-spacing: var(--type-h2-editorial-tracking) !important;
+  line-height: var(--type-h2-editorial-line-height) !important;
 }
 
 /* Keep the current rendered foundation unchanged while routing it through tokens. */

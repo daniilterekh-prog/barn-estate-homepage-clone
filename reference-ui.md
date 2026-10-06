@@ -81,6 +81,7 @@ Reference readiness: not APPROVED. The homepage still has one P1 runtime issue a
 |---|---|---|---|
 | Services/section title | 22/26.4, 38/45.6, 44/52.8 | H2 Standard | SAFE TO UNIFY |
 | Barnes/team/news title | 22/22, 38/38, 44/44 | H2 Compact for short editorial headings | INTENTIONAL, document role |
+| Reviews title | 22/22, 52/52, 64/64 | H2 Standard: 22/26.4, 38/45.6, 44/52.8 | SAFE TO UNIFY |
 | About title | 22/26.4 with negative tracking; 44/43.12 desktop | preserve as Brand Editorial, not a third generic H2 | INTENTIONAL |
 | Eyebrows | 12, 13, 16, 22, 24px | 12–14px, role-based tracking | SAFE TO UNIFY |
 | Footer links | 11/11 mobile, 16/16 desktop | minimum 13/18 mobile | SAFE TO UNIFY |
@@ -453,3 +454,5 @@ These are specification outputs, not completed implementation changes.
 
 - Implemented the first homepage-only primitive and semantic token layer in homepage-ui-tokens.css.
 - Connected the token layer to the homepage without changing the rendered font, weight or color values.
+- Implemented the homepage H2 role tokens: H2 Standard, H2 Compact and Brand Editorial.
+- Normalized the Reviews section to H2 Standard; hero/project Display headings and editorial CTA headings remain separate roles.
