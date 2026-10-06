@@ -160,7 +160,7 @@ Values 35px, 50px, 75px and 115.2px remain allowed only as named fluid section r
 
 ### Fixed homepage spacing reference tokens
 
-These are reference tokens for the homepage only. They are recorded for the future UI Kit and are not yet attached to section selectors, so this decision does not change the current rendered page.
+These are reference tokens for the homepage only. The standard section family now uses the `section-md` token in the first implementation pass; editorial sections remain unchanged until their composition is reviewed.
 
 | Token | Base / medium | Mobile ≤540px | Tablet 541–1024px | Wide ≥1441px | Use |
 |---|---:|---:|---:|---:|---|
@@ -172,7 +172,7 @@ These are reference tokens for the homepage only. They are recorded for the futu
 | `--space-section-md` | `72px` | `50px` | `64px` | `96px` | standard inter-section rhythm |
 | `--space-section-lg` | `100px` | `60px` | `80px` | `100px` | hero-adjacent/media sections |
 
-The canonical base/medium spacing value to reuse first is `--space-section-md: 72px`. About, Projects and Newsletter remain documented editorial exceptions where media and asymmetric composition determine the final section height.
+The canonical base/medium spacing value to reuse first is `--space-section-md: 72px`. About, Projects, Office and Newsletter remain documented editorial exceptions where media and asymmetric composition determine the final section height.
 
 ### Section rhythm decision
 
@@ -486,4 +486,4 @@ These are specification outputs, not completed implementation changes.
 - Fixed the homepage reference H2 base/medium token at `38px / 45.6px`, weight `300`; retained `22px` mobile and `44px` wide responsive steps.
 - Recorded H2 tokens as specification only; no H2 component selectors or rendered heading styles were changed.
 - Fixed the homepage reference spacing base/medium token at `72px`; retained `50px` mobile, `64px` tablet and `96px` wide steps for standard sections.
-- Recorded spacing tokens as specification only; no section selectors or rendered spacing values were changed.
+- Applied `section-md` spacing to the standard section family; kept About, Projects, Office and Newsletter as editorial exceptions.

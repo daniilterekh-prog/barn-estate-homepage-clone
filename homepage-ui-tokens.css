@@ -2,7 +2,8 @@
  * Homepage UI tokens — first reference-system layer.
  * Scope: the BARNES Moscow homepage only.
  * This file defines typography and color foundations for the homepage reference UI.
- * Component states and remaining component tokens are handled in later steps.
+ * Standard section spacing is now connected below; component states and the
+ * remaining component tokens are handled in later steps.
  */
 
 :root {
@@ -70,9 +71,8 @@ html body {
 }
 
 /*
- * Responsive reference steps. These variables are intentionally not attached
- * to existing heading selectors yet, so recording the UI Kit value does not
- * change the current rendered homepage before the implementation step.
+ * Responsive reference steps. H2 variables remain specification-only; the
+ * section spacing variables are connected to standard homepage sections below.
  */
 @media (max-width: 540px) {
   :root {
@@ -103,5 +103,34 @@ html body {
     --type-h2-compact-size: 44px;
     --type-h2-compact-line-height: 1;
     --space-section-md: 96px;
+  }
+}
+
+/*
+ * First spacing implementation pass. The [class] qualifier matches the
+ * specificity of the snapshot's scoped component rules without depending on
+ * generated data-v attributes. Editorial sections keep their own composition.
+ */
+section.services-section[class],
+section.barnes-choice[class],
+section.departments-section[class],
+section.reviews-section[class],
+section.video-section[class],
+section.team-section[class],
+section.partners-section[class],
+section.news-section[class] {
+  padding-block: var(--space-section-md);
+}
+
+@media (max-width: 540px) {
+  section.services-section[class],
+  section.barnes-choice[class],
+  section.departments-section[class],
+  section.reviews-section[class],
+  section.video-section[class],
+  section.team-section[class],
+  section.partners-section[class],
+  section.news-section[class] {
+    padding-block: var(--space-section-md);
   }
 }
