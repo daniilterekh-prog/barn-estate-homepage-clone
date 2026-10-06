@@ -448,3 +448,8 @@ These are specification outputs, not completed implementation changes.
 - Added page map, typography/color/spacing/container/grid/button/card/form/icon rules.
 - Added current-to-reference mapping, decision confidence, safe/review/intentional classification and 19 required corrections.
 - Kept this document separate from design-audit.md; no production code changed.
+
+### 2026-10-06
+
+- Implemented the first homepage-only primitive and semantic token layer in homepage-ui-tokens.css.
+- Connected the token layer to the homepage without changing the rendered font, weight or color values.

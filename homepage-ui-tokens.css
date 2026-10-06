@@ -1,0 +1,51 @@
+/*
+ * Homepage UI tokens — first reference-system layer.
+ * Scope: the BARNES Moscow homepage only.
+ * This file intentionally defines typography and color foundations only.
+ * Spacing, components, states and responsive tokens are handled in later steps.
+ */
+
+:root {
+  /* Primitive type values */
+  --font-family-sans: "Tilda Sans", "Tilda Sans Fallback", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+
+  /* Primitive color values */
+  --color-neutral-0: #ffffff;
+  --color-neutral-50: #f1f1f1;
+  --color-neutral-900: #1e1e1e;
+  --color-neutral-800: #262626;
+  --color-neutral-700: #4f4d49;
+  --color-neutral-600: #656462;
+  --color-border-subtle: #e4e4e4;
+  --color-brand-burgundy: #8b1d25;
+  --color-brand-gold: #e7c88f;
+  --color-overlay-media: rgb(0 0 0 / 28%);
+  --color-state-error: #ef4444;
+
+  /* Semantic homepage roles */
+  --color-bg-page: var(--color-neutral-0);
+  --color-bg-surface: var(--color-neutral-50);
+  --color-bg-inverse: var(--color-neutral-800);
+  --color-text-primary: var(--color-neutral-900);
+  --color-text-secondary: var(--color-neutral-700);
+  --color-text-muted: var(--color-neutral-600);
+  --color-text-on-brand: var(--color-neutral-0);
+  --color-action-primary: var(--color-brand-burgundy);
+  --color-border-default: var(--color-border-subtle);
+}
+
+/* Keep the current rendered foundation unchanged while routing it through tokens. */
+html {
+  color: var(--color-text-primary);
+  font-family: var(--font-family-sans);
+  font-weight: var(--font-weight-regular);
+}
+
+html body {
+  background-color: var(--color-bg-page);
+  color: var(--color-text-primary);
+  font-family: var(--font-family-sans);
+}
