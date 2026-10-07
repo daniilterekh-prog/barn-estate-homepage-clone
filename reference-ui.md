@@ -449,7 +449,7 @@ Borders are 1px. Preferred border color is #E4E4E4; use rgba(30,30,30,.12) only 
 
 - Keep dark #262626 surface and white logo/text treatment.
 - Use one footer container and shared column guides.
-- From `1025px` up, place `Медиа`, `О BARNES` and `Собственникам` in the third row using the first three shared grid columns; keep the four-column guide aligned.
+- From `1200px` up, use six equal columns: row one is `Москва`, `Загородная`, `Коммерческая`, `Санкт-Петербург`, `Курортная`, `Зарубежная`; row two is `Медиа`, `О BARNES`, `Собственникам`.
 - Footer links must not fall to 11/11px on mobile.
 - Newsletter form and callback remain distinct roles: newsletter is lead capture; callback is contact conversion.
 - Legal and consent copy must remain readable and keyboard accessible.
@@ -630,4 +630,4 @@ These are specification outputs, not completed implementation changes.
 - Unified Newsletter with the rectangular CTA geometry and changed all rectangular action labels to weight `400`; kept header and circular controls unchanged.
 - Increased rectangular action labels to `17px` base / `19px` wide and set the button radius token to `1px`.
 - Aligned Office/Contact communication links to the same `17px / 19px`, weight `400` typography while preserving their `48px` hit area.
-- Reflowed desktop footer navigation so `Медиа`, `О BARNES` and `Собственникам` occupy the third aligned row of the four-column grid.
+- Reflowed wide desktop footer navigation to six columns: six property directions on row one, then `Медиа`, `О BARNES` and `Собственникам` on row two.
