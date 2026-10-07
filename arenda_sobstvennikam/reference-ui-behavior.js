@@ -10,46 +10,36 @@
     var section = document.querySelector('.owner-sale-services');
     var headerWrap = section && section.querySelector('.owner-sale-services__header-wrap');
 
-    if (!section || !headerWrap || section.querySelector('.owner-sale-services__reference')) return;
+    if (!section || !headerWrap) return;
 
-    var eyebrow = document.createElement('p');
-    eyebrow.className = 'owner-sale-services__eyebrow';
-    eyebrow.textContent = 'ЕДИНАЯ КОМАНДА BARNES';
-    headerWrap.insertBefore(eyebrow, headerWrap.firstChild);
+    if (!headerWrap.querySelector('.owner-sale-services__eyebrow')) {
+      var eyebrow = document.createElement('p');
+      eyebrow.className = 'owner-sale-services__eyebrow';
+      eyebrow.textContent = 'ЕДИНАЯ КОМАНДА BARNES';
+      headerWrap.insertBefore(eyebrow, headerWrap.firstChild);
+    }
 
-    var enhancement = document.createElement('div');
-    enhancement.className = 'owner-sale-services__reference';
-    enhancement.innerHTML = [
-      '<div class="owner-sale-services__comparison" aria-label="Сравнение подходов к сдаче объекта">',
-      '  <article class="owner-sale-services__comparison-card owner-sale-services__comparison-card--primary">',
-      '    <h3>ОДНА КОМАНДА BARNES</h3>',
-      '    <ul>',
-      '      <li>Одна цена и стратегия</li>',
-      '      <li>Один ответственный брокер</li>',
-      '      <li>Все обращения в одном месте</li>',
-      '    </ul>',
-      '  </article>',
-      '  <article class="owner-sale-services__comparison-card">',
-      '    <h3>НЕСКОЛЬКО АГЕНТСТВ</h3>',
-      '    <ul>',
-      '      <li>Разные цены и позиционирование</li>',
-      '      <li>Несогласованные условия</li>',
-      '      <li>Несколько точек коммуникации</li>',
-      '    </ul>',
-      '  </article>',
-      '</div>',
-      '<div class="owner-sale-services__process" role="img" aria-label="Один объект, одна стратегия, один ответственный результат">',
-      '  <span><strong>01</strong>Объект</span>',
-      '  <i aria-hidden="true">→</i>',
-      '  <span><strong>02</strong>Стратегия</span>',
-      '  <i aria-hidden="true">→</i>',
-      '  <span><strong>03</strong>Ответственный результат</span>',
-      '</div>',
-      '<a class="ui-button ui-button--primary ui-button--medium owner-sale-services__cta" href="#request">Обсудить стратегию сдачи <span aria-hidden="true">↗</span></a>'
-    ].join('');
+    section.querySelectorAll('.owner-sale-services__text').forEach(function (text) {
+      if (text.querySelector('strong')) return;
 
-    section.appendChild(enhancement);
-    section.dataset.referenceEnhanced = 'true';
+      var copy = text.textContent.trim().split(' — ');
+      if (copy.length < 2) return;
+
+      text.textContent = '';
+      var lead = document.createElement('strong');
+      lead.textContent = copy.shift();
+      var detail = document.createElement('span');
+      detail.textContent = copy.join(' — ');
+      text.append(lead, detail);
+    });
+
+    if (!section.querySelector('.owner-sale-services__cta')) {
+      var cta = document.createElement('a');
+      cta.className = 'ui-button ui-button--primary ui-button--medium owner-sale-services__cta';
+      cta.href = '#request';
+      cta.innerHTML = 'Обсудить стратегию сдачи <span aria-hidden="true">↗</span>';
+      section.appendChild(cta);
+    }
   }
 
   function scheduleServicesEnhancement() {
