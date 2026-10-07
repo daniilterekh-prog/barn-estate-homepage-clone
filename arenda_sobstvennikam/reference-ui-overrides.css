@@ -776,8 +776,12 @@ body.owner-rent-reference-ui .owner-sale-hero .breadcrumbs__link {
     min-height: 58px;
   }
 
-  .owner-rent-reference-ui .site-footer {
+  .owner-rent-reference-ui .newsletter-cta {
     margin-top: 40px;
+  }
+
+  .owner-rent-reference-ui .site-footer {
+    margin-top: 0;
   }
 
   .owner-rent-reference-ui .site-footer__column-title {
