@@ -61,6 +61,7 @@
 - H2 Editorial «О BARNES»: `22/26.4px` mobile, `44/43.12px` desktop.
 - H2 Compact newsletter: `22/22px` mobile, `38/38px` desktop, `44/44px` wide.
 - Каждый видимый H2 имеет отдельный eyebrow, который не повторяет заголовок: «СТРАТЕГИЯ ПРЕЗЕНТАЦИИ», «BARNES / МОСКВА», «ЕДИНАЯ КОМАНДА BARNES», «BARNES / ЭКСКЛЮЗИВ», «КОНСУЛЬТАЦИЯ ЭКСПЕРТА», «BARNES / АНАЛИТИКА».
+- Eyebrow «СТРАТЕГИЯ ПРЕЗЕНТАЦИИ» центрируется вместе с H2 секции презентации; остальные eyebrow сохраняют выравнивание своих секций.
 - Eyebrow: `14/16.1px` desktop, `12/14.4px` mobile; tracking `0.12em`; gap до H2 — `25px` desktop и `12px` mobile/tablet.
 - Button label: `18/19.8px` mobile, `17/18.7px` desktop, `19/20.9px` wide.
 - Action button: высота `58px` mobile и `70px` tablet/desktop; padding-inline `24px` mobile, `36px` base, `47px` wide; weight `400`; radius `1px`.

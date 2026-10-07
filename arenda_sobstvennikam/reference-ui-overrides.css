@@ -699,6 +699,10 @@ body.owner-rent-reference-ui .owner-sale-hero .breadcrumbs__link {
   color: var(--owner-rent-ui-brand-accent);
 }
 
+.owner-rent-reference-ui .owner-sale-presentation__inner > .owner-rent-section-eyebrow {
+  text-align: center;
+}
+
 .owner-rent-reference-ui .owner-sale-exclusive__title {
   font-size: var(--owner-rent-ui-h2-size);
   line-height: var(--owner-rent-ui-h2-line);
