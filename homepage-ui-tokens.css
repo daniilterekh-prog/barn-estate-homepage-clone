@@ -28,7 +28,7 @@
   --control-cta-radius: 1px;
   --control-action-gap: 12px;
   --space-newsletter-footer-mobile: 40px;
-  --office-contact-image-max-height: 520px;
+  --office-contact-image-max-height: 540px;
 
   /* Reference contact-link role for the homepage office/contact block. */
   --type-contact-link-size: 17px;
@@ -281,7 +281,7 @@ section.news-section[class] {
 }
 
 .office-contact__visual[class] {
-  align-self: start;
+  align-self: center;
   height: var(--office-contact-image-max-height) !important;
   max-height: var(--office-contact-image-max-height) !important;
   min-height: 0 !important;
