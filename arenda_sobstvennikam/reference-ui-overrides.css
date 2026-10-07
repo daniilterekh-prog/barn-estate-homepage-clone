@@ -96,6 +96,19 @@
   line-height: 52.8px;
 }
 
+@media (min-width: 1921px) {
+  .owner-rent-reference-ui .about-company {
+    padding-inline: 0;
+  }
+
+  .owner-rent-reference-ui .about-company__inner {
+    box-sizing: border-box;
+    max-width: 1920px;
+    padding-inline: 100px;
+    width: 100%;
+  }
+}
+
 .owner-rent-reference-ui .newsletter-cta h2 {
   color: var(--owner-rent-ui-text-primary);
   font-size: var(--owner-rent-ui-h2-size);
