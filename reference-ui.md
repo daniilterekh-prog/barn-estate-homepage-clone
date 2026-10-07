@@ -289,6 +289,30 @@ Measured on the homepage at 390, 768, 1280 and 1920px. The same visual action cu
 
 No button CSS was changed as part of this audit snapshot; these are the next reference decisions to approve before implementation.
 
+### Rectangular control inventory — header excluded
+
+This inventory includes rectangular `<button>` elements and anchors styled as controls. Circular slider arrows, pagination dots and all header controls are excluded.
+
+| Family / selector | 390px | 768px | 1280px | 1920px | Type inside |
+|---|---|---|---|---|---|
+| Hero filter icon `.home-hero-filters__filter-icon` | `60×58px` | hidden | hidden | hidden | `16/16px`, weight `400` |
+| Hero filter tabs `.home-hero-filters__tab` | hidden | `24px` high | `24px` high | `26px` high | `16/16px` → `18/18px` wide; active `400`, inactive `300` |
+| Hero filter fields `.hero-filter-field` / `.home-hero-filters__more` | hidden | `70px` high | `70px` high | `70px` high | `16/17.6px`, weight `300`; `18/19.8px` wide |
+| Hero primary `.home-hero-filters__submit` | `342×58px` | `706×70px` | `203×70px` | `241×70px` | `16/17.6px`, weight `500`; `18/19.8px` wide |
+| Barnes tabs `.barnes-choice__tab` | select only | `32px` high | `32px` high | `34px` high | `20/20px` → `22/22px` wide, weight `300` |
+| Barnes mobile select `.barnes-choice__select-control` | `120×26px` | hidden | hidden | hidden | `12/14.4px`, weight `300` |
+| Barnes primary `.barnes-choice__action` | `342×68px` | `320×56px` | `336×70px` | `336×70px` | `16/16px` → `20/20px`, weight `500` |
+| Project outline `.project-hero__cta` | `198×68px` | `230×56px` | `316×70px` | `316×70px` | `16/16px` → `20/20px`, weight `500` |
+| About text CTA `.ui-more-link` | `141×25px` | `141×25px` | `141×25px` | `141×25px` | `14/16.8px`, weight `300` |
+| News text CTA `.news-section__action` | `206×25px` | `206×25px` | `206×25px` | `206×25px` | `14/16.8px`, weight `400` |
+| Office/contact `.office-contact__social` | `335×48px` | `315×48px` | `226×48px` | `348×48px` | `16/20px` mobile; `18/22.5px` otherwise, weight `400` |
+| Newsletter submit | `335×54px` | `168×58px` | `168×58px` | `168×58px` | `16/16px`, weight `400` |
+| Footer callback `.site-footer__callback-btn` | `294×50px` | `706×56px` | `294×56px` | `331×56px` | `16/16px`, weight `500` |
+| Floating expert `.floating-expert__card` | `343×97px` | `360×110px` | `360×110px` | `360×110px` | `16/16px`, weight `400` |
+| Floating close `.floating-expert__close` | `30×30px` | `30×30px` | `30×30px` | `30×30px` | inherited `16/16px`; icon-only |
+
+Rectangular-system conclusion: Hero primary, Barnes primary, Project outline, Newsletter submit and Footer callback currently form five different size/type contracts. The first unification candidate is the CTA family; text links and filter/tab controls should remain separate semantic roles.
+
 ### Icon and slider contract
 
 Slider arrows: 48px mobile, 56px desktop, 68px wide. Use disabled state instead of hiding unavailable navigation. Menu/close/favorite/search parents must be at least 44×44px even when the visual icon is smaller.
@@ -506,6 +530,7 @@ These are specification outputs, not completed implementation changes.
 | R-023 | Newsletter/footer actions | newsletter `54/58px`, footer callback `50/56px`, both radius `0` | map to Primary/Secondary contracts or document intentional compact editorial variants | P3 |
 | R-024 | Header hit areas | menu `29/33px`, phone/favorites `22px`, text phone `21px` high | add invisible minimum `44×44px`/`44px` height without changing icon or text visuals | P2 |
 | R-025 | Header focus | menu/favorites/search compute to `outline: none` | add visible `:focus-visible` ring, 2px with 2px offset | P2 |
+| R-026 | Rectangular CTA family | primary/outline/submit/callback controls use `50/54/56/58/68/70px` and `16/20px` labels | unify semantic CTA roles first; keep filters, tabs and text links as separate families | P2 |
 
 ## Safe to Unify
 
@@ -584,3 +609,4 @@ These are specification outputs, not completed implementation changes.
 - Increased homepage office/contact method labels to the reference contact-link role: 18/22.5px from tablet through wide desktop and 16/20px on mobile; retained the 48px touch target.
 - Audited homepage buttons and interactive links at 390/768/1280/1920px; documented CTA height/type divergence, radius divergence and undersized hit areas. No button CSS was changed.
 - Audited header controls at 320/390/540/541/768/1024/1025/1280/1281/1440/1920px; isolated hit-area and keyboard-focus fixes from the rest of the button system. No header CSS was changed.
+- Audited all rectangular homepage controls with the header excluded; recorded dimensions and typography at 390/768/1280/1920px. No button CSS was changed.
