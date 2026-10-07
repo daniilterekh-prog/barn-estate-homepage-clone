@@ -275,8 +275,15 @@ section.news-section[class] {
 }
 
 /* Contact-method buttons use the same rectangular contract as email/route actions. */
+.office-contact__copy[class] {
+  container: office-contact-copy / inline-size;
+}
+
 .office-contact__socials[class] {
+  display: grid;
   gap: var(--control-action-gap);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: var(--control-action-gap);
 }
 
 .office-contact__social[class] {
@@ -298,6 +305,7 @@ section.news-section[class] {
   height: var(--control-cta-height);
   min-height: var(--control-cta-height);
   padding: 0 var(--control-cta-padding-inline);
+  width: 100%;
   transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
 }
 
@@ -336,9 +344,9 @@ section.news-section[class] {
 /* Office contact actions reuse the rectangular CTA contract. */
 .office-contact__actions[class] {
   align-items: stretch;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
   gap: var(--control-action-gap);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   margin: 0;
 }
 
@@ -359,7 +367,15 @@ section.news-section[class] {
   min-height: var(--control-cta-height);
   padding: 0 var(--control-cta-padding-inline);
   text-decoration: none;
+  width: 100%;
   transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+@container office-contact-copy (max-width: 635px) {
+  .office-contact__actions[class],
+  .office-contact__socials[class] {
+    grid-template-columns: minmax(0, 1fr);
+  }
 }
 
 .office-contact__action--email[class] {
