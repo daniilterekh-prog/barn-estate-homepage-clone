@@ -434,7 +434,9 @@ body.owner-rent-reference-ui .owner-sale-hero .breadcrumbs__link {
 .owner-rent-reference-ui .owner-sale-services__card:hover .owner-sale-services__text,
 .owner-rent-reference-ui .owner-sale-services__card:focus-within .owner-sale-services__text,
 .owner-rent-reference-ui .owner-sale-services__card:hover .owner-sale-services__text strong,
-.owner-rent-reference-ui .owner-sale-services__card:focus-within .owner-sale-services__text strong {
+.owner-rent-reference-ui .owner-sale-services__card:focus-within .owner-sale-services__text strong,
+.owner-rent-reference-ui .owner-sale-services__card:hover .owner-sale-services__text span,
+.owner-rent-reference-ui .owner-sale-services__card:focus-within .owner-sale-services__text span {
   color: #fff;
 }
 
