@@ -5,23 +5,6 @@
   var trigger;
   var menuId = 'owner-rent-site-menu';
 
-  function syncHeroButton() {
-    var body = document.querySelector('.owner-sale-hero__body');
-    var title = document.querySelector('.owner-sale-hero__title');
-    var actions = document.querySelector('.owner-sale-hero__actions');
-    var button = document.querySelector('.owner-sale-hero__button');
-
-    if (!body || !title || !actions || !button) return;
-
-    if (window.innerWidth < 1025) {
-      actions.style.removeProperty('margin-top');
-      return;
-    }
-
-    var offset = Math.max(0, title.getBoundingClientRect().height - button.getBoundingClientRect().height);
-    actions.style.marginTop = offset + 'px';
-  }
-
   function syncMenuState() {
     trigger = document.querySelector('.site-header__icon-btn');
     var menu = document.querySelector('.site-menu');
@@ -60,19 +43,11 @@
     attributeFilter: ['class']
   });
 
-  window.addEventListener('resize', syncHeroButton, { passive: true });
-  if (window.ResizeObserver) {
-    var heroTitle = document.querySelector('.owner-sale-hero__title');
-    if (heroTitle) new ResizeObserver(syncHeroButton).observe(heroTitle);
-  }
-
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', function () {
       syncMenuState();
-      syncHeroButton();
     }, { once: true });
   } else {
     syncMenuState();
-    syncHeroButton();
   }
 })();
