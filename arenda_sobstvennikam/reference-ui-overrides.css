@@ -278,6 +278,7 @@ body.owner-rent-reference-ui .owner-sale-hero .breadcrumbs__link {
     border: 1px solid #fff;
     color: #fff;
     display: inline-flex;
+    font-family: inherit;
     font-size: 16px;
     font-weight: 400;
     justify-content: center;
@@ -378,6 +379,7 @@ body.owner-rent-reference-ui .owner-sale-hero .breadcrumbs__link {
   border: 1px solid var(--owner-rent-ui-brand);
   color: #fff;
   display: inline-flex;
+  font-family: inherit;
   font-size: 16px;
   font-weight: 400;
   justify-content: center;

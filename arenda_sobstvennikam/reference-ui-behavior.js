@@ -66,6 +66,16 @@
     button.innerHTML = 'Обсудить стратегию <span class="owner-sale-hero__button-arrow" aria-hidden="true"><svg viewBox="0 0 16 16" focusable="false"><path d="M3 13 13 3M5 3h8v8" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25"></path></svg></span>';
   }
 
+  function bindRequestPopup(button) {
+    if (!button || button.dataset.requestPopupBound === 'true') return;
+
+    button.dataset.requestPopupBound = 'true';
+    button.addEventListener('click', function () {
+      var heroRequest = document.querySelector('.owner-sale-hero__button');
+      if (heroRequest) heroRequest.click();
+    });
+  }
+
   function enhanceHeroHeader() {
     var header = document.querySelector('.layout__header .site-header');
     var inner = header && header.querySelector('.site-header__inner');
@@ -135,12 +145,13 @@
     }
 
     if (!right.querySelector('.owner-rent-hero-request')) {
-      var request = document.createElement('a');
+      var request = document.createElement('button');
       request.className = 'owner-rent-hero-request';
-      request.href = '#request';
+      request.type = 'button';
       request.textContent = 'Оставить заявку';
       right.appendChild(request);
     }
+    bindRequestPopup(right.querySelector('.owner-rent-hero-request'));
   }
 
   function enhanceStickyHeader() {
@@ -157,9 +168,9 @@
     }
 
     if (!brand.querySelector('.owner-sale-sticky__request')) {
-      var request = document.createElement('a');
+      var request = document.createElement('button');
       request.className = 'owner-sale-sticky__request';
-      request.href = '#request';
+      request.type = 'button';
       request.textContent = 'Оставить заявку';
       brand.insertBefore(request, phone);
     }
@@ -198,6 +209,7 @@
     if (requestLink && requestLink !== brand.lastElementChild) {
       brand.appendChild(requestLink);
     }
+    bindRequestPopup(requestLink);
   }
 
   function enhanceExclusiveSection() {
