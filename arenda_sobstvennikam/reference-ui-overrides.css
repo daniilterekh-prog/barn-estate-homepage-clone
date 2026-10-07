@@ -93,14 +93,14 @@
   color: var(--owner-rent-ui-text-primary);
   font-size: 44px;
   font-weight: var(--owner-rent-ui-heading-weight);
-  line-height: 43.12px;
+  line-height: 52.8px;
 }
 
 .owner-rent-reference-ui .newsletter-cta h2 {
   color: var(--owner-rent-ui-text-primary);
   font-size: var(--owner-rent-ui-h2-size);
   font-weight: var(--owner-rent-ui-heading-weight);
-  line-height: var(--owner-rent-ui-h2-compact-line);
+  line-height: var(--owner-rent-ui-h2-line);
 }
 
 .owner-rent-reference-ui :is(
@@ -613,7 +613,7 @@ body.owner-rent-reference-ui .owner-sale-hero .breadcrumbs__link {
 
   .owner-rent-reference-ui .newsletter-cta h2 {
     font-size: var(--owner-rent-ui-h2-wide-size);
-    line-height: var(--owner-rent-ui-h2-compact-wide-line);
+    line-height: var(--owner-rent-ui-h2-wide-line);
   }
 
   .owner-rent-reference-ui :is(.ui-button, .newsletter-form button) {
@@ -737,7 +737,7 @@ body.owner-rent-reference-ui .owner-sale-hero .breadcrumbs__link {
 
   .owner-rent-reference-ui .newsletter-cta h2 {
     font-size: var(--owner-rent-ui-h2-mobile-size);
-    line-height: var(--owner-rent-ui-h2-compact-line);
+    line-height: var(--owner-rent-ui-h2-mobile-line);
   }
 
   .owner-rent-reference-ui :is(
@@ -1024,7 +1024,7 @@ body.owner-rent-reference-ui .owner-sale-hero .breadcrumbs__link {
   }
 
   .owner-rent-reference-ui .newsletter-cta h2 {
-    line-height: 22px;
+    line-height: var(--owner-rent-ui-h2-mobile-line);
   }
 
   .owner-rent-reference-ui .newsletter-form button {
