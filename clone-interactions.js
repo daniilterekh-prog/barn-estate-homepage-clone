@@ -3,15 +3,22 @@
 
   const mountHomepageReferenceLabels = () => {
     const insertEyebrow = (headingSelector, className, text) => {
-      const heading = document.querySelector(headingSelector);
-      if (!heading || heading.previousElementSibling?.classList.contains(className)) return;
+      document.querySelectorAll(headingSelector).forEach((heading) => {
+        const previous = heading.previousElementSibling;
+        if (previous?.classList.contains(className)) {
+          previous.textContent = text;
+          return;
+        }
 
-      const eyebrow = document.createElement("p");
-      eyebrow.className = className;
-      eyebrow.textContent = text;
-      heading.parentElement.insertBefore(eyebrow, heading);
+        const eyebrow = document.createElement("p");
+        eyebrow.className = className;
+        eyebrow.textContent = text;
+        heading.parentElement.insertBefore(eyebrow, heading);
+      });
     };
 
+    // The services section already ships with its eyebrow in the source markup.
+    // Keep it there instead of creating a second label above the same H2.
     insertEyebrow(
       ".barnes-choice__title",
       "barnes-choice__eyebrow",
@@ -22,7 +29,46 @@
       "departments-section__eyebrow",
       "Выбрать направление",
     );
-    document.querySelector(".reviews-section__eyebrow")?.remove();
+    insertEyebrow(
+      ".about-company__title",
+      "about-company__eyebrow",
+      "О компании",
+    );
+    insertEyebrow(
+      ".project-hero__title",
+      "project-hero__eyebrow",
+      "Избранные проекты",
+    );
+    insertEyebrow(
+      ".reviews-section__title",
+      "reviews-section__eyebrow",
+      "Репутация BARNES",
+    );
+    insertEyebrow(
+      ".team-section__title",
+      "team-section__eyebrow",
+      "Эксперты по недвижимости",
+    );
+    insertEyebrow(
+      ".partners-section__title",
+      "partners-section__eyebrow",
+      "Международная сеть",
+    );
+    insertEyebrow(
+      ".office-contact h2",
+      "office-contact__eyebrow",
+      "Связь с BARNES",
+    );
+    insertEyebrow(
+      ".news-section__title",
+      "news-section__eyebrow",
+      "Медиа BARNES",
+    );
+    insertEyebrow(
+      ".newsletter-cta__copy h2",
+      "newsletter-cta__eyebrow",
+      "Рассылка BARNES",
+    );
   };
 
   setTimeout(mountHomepageReferenceLabels, 900);

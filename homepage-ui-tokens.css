@@ -160,13 +160,24 @@ section.news-section[class] {
 .departments-section__eyebrow[class],
 .services-section__eyebrow[class],
 .reviews-section__eyebrow[class],
-.news-section__eyebrow[class] {
+.news-section__eyebrow[class],
+.about-company__eyebrow[class],
+.project-hero__eyebrow[class],
+.team-section__eyebrow[class],
+.partners-section__eyebrow[class],
+.office-contact__eyebrow[class],
+.newsletter-cta__eyebrow[class] {
   color: var(--color-text-secondary);
   font-size: 14px;
   font-weight: var(--font-weight-regular);
   letter-spacing: 0.12em;
   line-height: 1.15;
+  margin: 0;
   text-transform: uppercase;
+}
+
+.project-hero__eyebrow[class] {
+  color: var(--color-neutral-0);
 }
 
 @media (max-width: 540px) {
@@ -174,7 +185,13 @@ section.news-section[class] {
   .departments-section__eyebrow[class],
   .services-section__eyebrow[class],
   .reviews-section__eyebrow[class],
-  .news-section__eyebrow[class] {
+  .news-section__eyebrow[class],
+  .about-company__eyebrow[class],
+  .project-hero__eyebrow[class],
+  .team-section__eyebrow[class],
+  .partners-section__eyebrow[class],
+  .office-contact__eyebrow[class],
+  .newsletter-cta__eyebrow[class] {
     font-size: 12px;
     line-height: 1.2;
   }
