@@ -62,7 +62,6 @@
   --color-border-subtle: #e4e4e4;
   --color-brand-burgundy: #8b1d25;
   --color-brand-gold: #e7c88f;
-  --color-action-primary-hover: #6f161d;
   --color-overlay-media: rgb(0 0 0 / 28%);
   --color-state-error: #ef4444;
 
@@ -310,6 +309,14 @@ section.news-section[class] {
   transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
 }
 
+.office-contact__social[class] > span:not(.office-contact__arrow),
+.office-contact__action[class] > span:not(.office-contact__arrow) {
+  align-items: center;
+  display: inline-flex;
+  line-height: 1;
+  min-width: 0;
+}
+
 .office-contact__social[class]:hover {
   background: var(--color-action-primary);
   border-color: var(--color-action-primary);
@@ -387,9 +394,9 @@ section.news-section[class] {
 }
 
 .office-contact__action--email[class] {
-  background: var(--color-action-primary);
-  border-color: var(--color-action-primary);
-  color: var(--color-text-on-brand);
+  background: var(--color-bg-page);
+  border-color: var(--color-text-primary);
+  color: var(--color-text-primary);
 }
 
 .office-contact__action--route[class] {
@@ -399,8 +406,9 @@ section.news-section[class] {
 }
 
 .office-contact__action--email[class]:hover {
-  background: var(--color-action-primary-hover);
-  border-color: var(--color-action-primary-hover);
+  background: var(--color-action-primary);
+  border-color: var(--color-action-primary);
+  color: var(--color-text-on-brand);
 }
 
 .office-contact__action--route[class]:hover {
