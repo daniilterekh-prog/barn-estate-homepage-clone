@@ -890,6 +890,7 @@ body.owner-rent-reference-ui .owner-sale-hero .breadcrumbs__link {
   letter-spacing: 0.12em;
   line-height: 19.6px;
   padding-bottom: 7px;
+  text-decoration: none;
   text-transform: uppercase;
   width: fit-content;
 }
