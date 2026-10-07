@@ -1,6 +1,6 @@
 /*
- * BARNES Homepage Reference UI — explicitly applied to the owner-rent page.
- * This file is page-local on purpose; it must not become a global UI kit.
+ * BARNES Reference UI — page-local transfer for the owner-rent route.
+ * Keep this layer scoped to this page so the homepage and future routes stay independent.
  */
 :root {
   --owner-rent-ui-brand: #8b1d25;
@@ -12,60 +12,135 @@
   --owner-rent-ui-text-secondary: #4f4d49;
   --owner-rent-ui-text-muted: #656462;
   --owner-rent-ui-border: #e4e4e4;
+  --owner-rent-ui-error: #ef4444;
   --owner-rent-ui-heading-weight: 300;
+  --owner-rent-ui-body-weight: 400;
   --owner-rent-ui-h2-size: 38px;
   --owner-rent-ui-h2-line: 45.6px;
+  --owner-rent-ui-h2-compact-line: 38px;
+  --owner-rent-ui-h2-wide-size: 44px;
+  --owner-rent-ui-h2-wide-line: 52.8px;
+  --owner-rent-ui-h2-compact-wide-line: 44px;
   --owner-rent-ui-h2-mobile-size: 22px;
   --owner-rent-ui-h2-mobile-line: 26.4px;
-  --owner-rent-ui-control-radius: 3px;
+  --owner-rent-ui-control-radius: 1px;
   --owner-rent-ui-focus-width: 2px;
-  --owner-rent-ui-focus-offset: 4px;
+  --owner-rent-ui-focus-offset: 3px;
   --owner-rent-ui-motion: 200ms ease;
 }
 
 .owner-rent-reference-ui {
   background: var(--owner-rent-ui-background);
   color: var(--owner-rent-ui-text-primary);
+  font-family: "Tilda Sans", "Tilda Sans Fallback", system-ui, sans-serif;
 }
 
 .owner-rent-reference-ui :is(
   .owner-sale-presentation__title,
   .owner-sale-services__title,
-  .owner-sale-exclusive__title
+  .owner-sale-exclusive__title,
+  .owner-sale-magazine__title,
+  .catalog-contact__title
 ) {
   color: var(--owner-rent-ui-text-primary);
+  font-size: var(--owner-rent-ui-h2-size);
   font-weight: var(--owner-rent-ui-heading-weight);
+  line-height: var(--owner-rent-ui-h2-line);
 }
 
-.owner-rent-reference-ui .owner-sale-exclusive__title {
+.owner-rent-reference-ui :is(
+  .owner-sale-exclusive__title,
+  .owner-sale-magazine__title,
+  .catalog-contact__title
+) {
   color: #fff;
 }
 
 .owner-rent-reference-ui .owner-sale-hero__title {
+  font-size: clamp(48px, 5.2vw, 104px);
   font-weight: var(--owner-rent-ui-heading-weight);
+  line-height: 0.98;
+}
+
+.owner-rent-reference-ui .owner-sale-hero__text {
+  color: #fff;
+  font-size: 22px;
+  font-weight: var(--owner-rent-ui-heading-weight);
+  line-height: 33px;
+}
+
+.owner-rent-reference-ui .about-company__title {
+  color: var(--owner-rent-ui-text-primary);
+  font-size: 44px;
+  font-weight: var(--owner-rent-ui-heading-weight);
+  line-height: 43.12px;
+}
+
+.owner-rent-reference-ui .newsletter-cta h2 {
+  color: var(--owner-rent-ui-text-primary);
+  font-size: var(--owner-rent-ui-h2-size);
+  font-weight: var(--owner-rent-ui-heading-weight);
+  line-height: var(--owner-rent-ui-h2-compact-line);
+}
+
+.owner-rent-reference-ui :is(
+  .owner-sale-presentation__featured-title,
+  .owner-sale-types__title,
+  .catalog-contact__card-title
+) {
+  font-size: 22px;
+  font-weight: var(--owner-rent-ui-body-weight);
+  line-height: 26.4px;
+}
+
+.owner-rent-reference-ui :is(
+  .owner-sale-services__text,
+  .owner-sale-exclusive__text,
+  .owner-sale-magazine__item
+) {
+  font-size: 16px;
+  line-height: 22.4px;
+}
+
+.owner-rent-reference-ui :is(.breadcrumbs__link, .owner-sale-presentation__badge) {
+  font-size: 14px;
+  line-height: 16.1px;
 }
 
 .owner-rent-reference-ui :is(.ui-button, .newsletter-form button) {
   border-radius: var(--owner-rent-ui-control-radius);
-  font-size: 16px;
-  line-height: 17.6px;
-  font-weight: 500;
+  font-size: 17px;
+  line-height: 18.7px;
+  font-weight: var(--owner-rent-ui-body-weight);
   transition: background-color var(--owner-rent-ui-motion),
     border-color var(--owner-rent-ui-motion), color var(--owner-rent-ui-motion),
     opacity var(--owner-rent-ui-motion);
 }
 
-.owner-rent-reference-ui :is(.catalog-contact__submit, .catalog-contact__card-submit) {
-  font-size: 16px;
-  line-height: 17.6px;
-}
-
-.owner-rent-reference-ui .ui-button--primary.ui-button--medium {
+.owner-rent-reference-ui :is(.ui-button--primary.ui-button--medium, .catalog-contact__submit, .catalog-contact__card-submit) {
   min-height: 70px;
+  padding-inline: 36px;
 }
 
-.owner-rent-reference-ui .newsletter-form button {
-  font-weight: 500;
+.owner-rent-reference-ui .catalog-contact__submit,
+.owner-rent-reference-ui .catalog-contact__card-submit {
+  font-size: 17px;
+  line-height: 18.7px;
+}
+
+.owner-rent-reference-ui .catalog-contact__method {
+  border-radius: var(--owner-rent-ui-control-radius);
+}
+
+.owner-rent-reference-ui .site-footer__callback-btn {
+  border-radius: var(--owner-rent-ui-control-radius);
+  font-weight: var(--owner-rent-ui-body-weight);
+}
+
+.owner-rent-reference-ui .site-header__icon-btn {
+  min-width: 44px;
+  min-height: 44px;
+  justify-content: center;
 }
 
 .owner-rent-reference-ui :is(a, button, input, textarea, select):focus-visible {
@@ -73,14 +148,12 @@
   outline-offset: var(--owner-rent-ui-focus-offset);
 }
 
-.owner-rent-reference-ui :is(.catalog-contact__input, .catalog-contact__textarea):focus-visible {
+.owner-rent-reference-ui :is(
+  .catalog-contact__input,
+  .catalog-contact__textarea,
+  .catalog-contact__consent-input
+):focus-visible {
   outline-color: #fff;
-  outline-offset: 3px;
-}
-
-.owner-rent-reference-ui .catalog-contact__consent-input:focus-visible {
-  outline-color: #fff;
-  outline-offset: 3px;
 }
 
 .owner-rent-reference-ui .newsletter-cta {
@@ -88,42 +161,117 @@
 }
 
 .owner-rent-reference-ui .site-footer__link {
+  font-weight: var(--owner-rent-ui-body-weight);
   text-decoration-thickness: 1px;
   text-underline-offset: 3px;
 }
 
 @media (min-width: 1441px) {
+  .owner-rent-reference-ui :is(
+    .owner-sale-presentation__title,
+    .owner-sale-services__title,
+    .owner-sale-exclusive__title,
+    .owner-sale-magazine__title,
+    .catalog-contact__title
+  ) {
+    font-size: var(--owner-rent-ui-h2-wide-size);
+    line-height: var(--owner-rent-ui-h2-wide-line);
+  }
+
+  .owner-rent-reference-ui .newsletter-cta h2 {
+    font-size: var(--owner-rent-ui-h2-wide-size);
+    line-height: var(--owner-rent-ui-h2-compact-wide-line);
+  }
+
+  .owner-rent-reference-ui :is(.ui-button, .newsletter-form button) {
+    font-size: 19px;
+    line-height: 20.9px;
+  }
+
+  .owner-rent-reference-ui :is(.ui-button--primary.ui-button--medium, .catalog-contact__submit, .catalog-contact__card-submit) {
+    padding-inline: 47px;
+  }
+
   .owner-rent-reference-ui .site-header__nav-link {
     font-size: 18px;
     line-height: 18px;
   }
 }
 
+@media (min-width: 1280px) and (max-width: 1919px) {
+  .owner-rent-reference-ui :is(.catalog-contact__submit, .catalog-contact__card-submit) {
+    padding-inline: 8px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .owner-rent-reference-ui :is(.catalog-contact__submit, .catalog-contact__card-submit) {
+    padding-inline: 47px;
+  }
+}
+
 @media (max-width: 540px) {
+  .owner-rent-reference-ui .owner-sale-hero__title {
+    font-size: 48px;
+    line-height: 48px;
+  }
+
+  .owner-rent-reference-ui .owner-sale-hero__text {
+    font-size: 15px;
+    line-height: 21px;
+  }
+
   .owner-rent-reference-ui :is(
     .owner-sale-presentation__title,
     .owner-sale-services__title,
-    .owner-sale-exclusive__title
+    .owner-sale-exclusive__title,
+    .owner-sale-magazine__title,
+    .catalog-contact__title
   ) {
     font-size: var(--owner-rent-ui-h2-mobile-size);
     line-height: var(--owner-rent-ui-h2-mobile-line);
   }
 
-  .owner-rent-reference-ui :is(.catalog-contact__submit, .catalog-contact__card-submit) {
-    min-height: 58px;
+  .owner-rent-reference-ui .about-company__title {
+    font-size: var(--owner-rent-ui-h2-mobile-size);
+    line-height: var(--owner-rent-ui-h2-mobile-line);
   }
 
-  .owner-rent-reference-ui .ui-button--primary.ui-button--medium {
+  .owner-rent-reference-ui .newsletter-cta h2 {
+    font-size: var(--owner-rent-ui-h2-mobile-size);
+    line-height: var(--owner-rent-ui-h2-compact-line);
+  }
+
+  .owner-rent-reference-ui :is(
+    .owner-sale-presentation__featured-title,
+    .owner-sale-types__title,
+    .catalog-contact__card-title
+  ) {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .owner-rent-reference-ui :is(.ui-button, .newsletter-form button) {
+    font-size: 18px;
+    line-height: 19.8px;
+  }
+
+  .owner-rent-reference-ui :is(.ui-button--primary.ui-button--medium, .catalog-contact__submit, .catalog-contact__card-submit) {
     min-height: 58px;
+    padding-inline: 24px;
   }
 
   .owner-rent-reference-ui .newsletter-form button {
     min-height: 58px;
   }
 
+  .owner-rent-reference-ui .newsletter-cta {
+    margin-bottom: 40px;
+  }
+
   .owner-rent-reference-ui .site-footer__link {
     font-size: 13px;
-    line-height: 18px;
+    line-height: 18.2px;
   }
 }
 
