@@ -153,10 +153,11 @@
 
   const footerNav = document.querySelector('.commercial-footer__nav');
   if (footerNav && footerNav.children.length === 8) {
+    const media = footerNav.children[5];
     const owner = footerNav.lastElementChild;
     const sp = document.createElement('div');
     sp.innerHTML = '<h2>Санкт-Петербург</h2><a>Вторичная</a><a>Новостройки</a><a>Загородная</a><a>Коммерческая</a><a>Эксклюзив</a><a>Апартаменты</a><a>Пентхаус</a>';
-    footerNav.insertBefore(sp, owner);
+    footerNav.insertBefore(sp, media);
     owner.style.gridColumn = '1';
     const titles = ['Москва', 'Загородная', 'Коммерческая', 'Курортная', 'Зарубежная', 'Санкт-Петербург', 'Медиа', 'О BARNES', 'Собственникам'];
     [...footerNav.children].forEach((column, index) => { const title = column.querySelector('h2'); if (title) title.textContent = titles[index]; });
@@ -170,8 +171,26 @@
     });
     appendLinks(footerNav.children[0], ['Застройщики']);
     appendLinks(footerNav.children[4], ['Португалия', 'Франция', 'Оман', 'Жилые комплексы']);
-    appendLinks(footerNav.children[5], ['Кейсы', 'Журнал']);
-    appendLinks(footerNav.children[6], ['Мероприятия', 'Вакансии', 'Стиль жизни']);
+    appendLinks(footerNav.children[6], ['Кейсы', 'Журнал']);
+    appendLinks(footerNav.children[7], ['Мероприятия', 'Вакансии', 'Стиль жизни']);
+
+    const footerLinks = [
+      ['/vtorichnaya-nedvizhimost/', '/arendovat/', '/novostroyki/', '/zhilye-kompleksy/', '/gorodskaya-nedvizhimost/kvartiry/', '/gorodskaya-nedvizhimost/apartamenty/', '/kupit-penthausy-v-moskve/', '/zastroyshchiki/'],
+      ['/zagorodnaya-nedvizhimost/', '/snyat-zagorodnuyu-nedvizhimost/', '/kottedzhnye-poselki/'],
+      ['/kommercheskaya-nedvizhimost/', '/kommercheskaya-nedvizhimost/arendovat/', '/kommercheskaya-nedvizhimost/zdanie/', '/kommercheskaya-nedvizhimost/business-center/', '/kommercheskaya-nedvizhimost/osobnyak/', '/kommercheskaya-nedvizhimost/arendnyj-biznes/'],
+      ['/media/tag/investitsii-v-kurortnuyu-nedvizhimost-rossii/', '/altai/', '/arhyz/', '/sochi/'],
+      ['/oae/', '/mezhdunarodnaya-nedvizhimost/turtsiya/', '/tailand/', '/zhilye-kompleksy-indonesia/', '/ispaniya/', '/italiya/', '/portugaliya/', '/frantsiya/', '/oman/', '/mezhdunarodnaya-nedvizhimost-zhilye-kompleksy/'],
+      ['https://barnes-spb.ru/gorodskaya-nedvizhimost/vtorichnaya-nedvizhimost/', 'https://barnes-spb.ru/gorodskaya-nedvizhimost/novostroyki/', 'https://barnes-spb.ru/zagorodnaya-nedvizhimost/', 'https://barnes-spb.ru/kommercheskaya-nedvizhimost/', 'https://barnes-spb.ru/exclusive/', 'https://barnes-spb.ru/gorodskaya-nedvizhimost/filter/type_immovables-is-apartamenty/', 'https://barnes-spb.ru/gorodskaya-nedvizhimost/filter/type_immovables-is-penthausy/'],
+      ['/media/blog/', '/media/novosti/', '/media/vebinary-i-video/', '/media/analitika/', '/media/stil-zhizni/', '/media/cases/', '/zhurnaly/'],
+      ['/contacts/', '/for-partners/', '/barnes-club/', '/novosti/smi-o-nas/', '/novosti/meropriyatiya/', '/team/', '/vacancies/', '/stily-zhizni/'],
+      ['/prodazha_sobstvennikam/', '/arenda_sobstvennikam/']
+    ];
+    [...footerNav.children].forEach((column, columnIndex) => {
+      [...column.querySelectorAll('a')].forEach((link, linkIndex) => {
+        const href = footerLinks[columnIndex]?.[linkIndex];
+        if (href) link.href = href.startsWith('http') ? href : `https://barn-estate.ru${href}`;
+      });
+    });
   }
 
   const showToast = (message) => {
