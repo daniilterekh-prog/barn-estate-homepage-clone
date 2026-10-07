@@ -203,11 +203,82 @@ body.owner-rent-reference-ui .owner-sale-hero .breadcrumbs__link {
   outline-offset: var(--owner-rent-ui-focus-offset);
 }
 
+.owner-rent-reference-ui .owner-sale-sticky__messengers {
+  align-items: center;
+  display: flex;
+  gap: 12px;
+}
+
+.owner-rent-reference-ui :is(
+  .owner-sale-sticky__messenger,
+  .owner-sale-sticky__phone
+) {
+  align-items: center;
+  color: var(--owner-rent-ui-text-primary);
+  display: inline-flex;
+  height: 24px;
+  justify-content: center;
+  transition: color var(--owner-rent-ui-motion);
+  width: 24px;
+}
+
+.owner-rent-reference-ui .owner-sale-sticky__messenger svg {
+  display: block;
+  height: 19px;
+  width: 19px;
+}
+
+.owner-rent-reference-ui .owner-sale-sticky__messenger--max svg {
+  height: 18px;
+  width: 18px;
+}
+
+.owner-rent-reference-ui .owner-sale-sticky__phone-number {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.owner-rent-reference-ui .owner-sale-sticky__phone-icon {
+  height: 19px;
+  width: 19px;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .owner-rent-reference-ui :is(
+    .owner-sale-sticky__messenger,
+    .owner-sale-sticky__phone
+  ):hover {
+    color: var(--owner-rent-ui-brand);
+  }
+}
+
+.owner-rent-reference-ui :is(
+  .owner-sale-sticky__messenger,
+  .owner-sale-sticky__phone
+):focus-visible {
+  border-radius: 1px;
+  outline: var(--owner-rent-ui-focus-width) solid var(--owner-rent-ui-brand);
+  outline-offset: var(--owner-rent-ui-focus-offset);
+}
+
 @media (max-width: 1024px) {
   .owner-rent-reference-ui .owner-sale-sticky__request {
     font-size: 13px;
     min-height: 34px;
     padding-inline: 12px;
+  }
+
+  .owner-rent-reference-ui .owner-sale-sticky__brand {
+    gap: 12px;
+  }
+
+  .owner-rent-reference-ui .owner-sale-sticky__messengers {
+    gap: 8px;
   }
 }
 
