@@ -124,6 +124,30 @@
 
   enhanceSectionEyebrows();
 
+  const reorderSaleSections = function () {
+    const hero = page.querySelector(':scope > .owner-sale-hero');
+    if (!hero) return;
+
+    const orderedSections = [
+      page.querySelector(':scope > .owner-sale-presentation'),
+      page.querySelector(':scope > .owner-sale-services'),
+      page.querySelector(':scope > .about-company'),
+      page.querySelector(':scope > .owner-sale-stages'),
+      page.querySelector(':scope > .owner-sale-strategy'),
+      page.querySelector(':scope > .owner-sale-magazine'),
+      page.querySelector(':scope > .catalog-consultation'),
+      page.querySelector(':scope > .owner-sale-types')
+    ].filter(Boolean);
+
+    let insertionPoint = hero.nextSibling;
+    orderedSections.forEach(function (section) {
+      page.insertBefore(section, insertionPoint);
+      insertionPoint = section.nextSibling;
+    });
+  };
+
+  reorderSaleSections();
+
   if (!menu && menuButton) {
     menu = document.createElement('aside');
     menu.className = 'owner-sale-clone-menu';
