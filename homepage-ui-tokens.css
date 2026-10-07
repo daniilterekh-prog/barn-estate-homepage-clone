@@ -46,6 +46,7 @@
   --space-inline-sm: 16px;
   --space-component: 24px;
   --space-component-lg: 32px;
+  --space-eyebrow-to-heading: 12px;
   --space-section-sm: 75px;
   --space-section-md: 72px;
   --space-section-lg: 100px;
@@ -180,7 +181,69 @@ section.news-section[class] {
   color: var(--color-neutral-0);
 }
 
+/* Keep only the eyebrow-to-H2 relationship uniform; later content gaps stay local. */
+.services-section__header[class] {
+  --eyebrow-parent-gap: 14px;
+}
+
+.barnes-choice__heading[class],
+.departments-section__heading[class] {
+  --eyebrow-parent-gap: 12px;
+}
+
+.reviews-section__intro[class],
+.news-section__header[class] {
+  --eyebrow-parent-gap: 15px;
+}
+
+.team-section__intro[class] {
+  --eyebrow-parent-gap: 28px;
+}
+
+.partners-section__intro[class] {
+  --eyebrow-parent-gap: 20px;
+}
+
+.about-company__content[class],
+.project-hero__content[class],
+.office-contact__copy[class],
+.newsletter-cta__copy[class] {
+  --eyebrow-parent-gap: 0px;
+}
+
+.services-section__eyebrow[class] + .services-section__titles[class],
+.barnes-choice__eyebrow[class] + .barnes-choice__title[class],
+.departments-section__eyebrow[class] + .departments-section__title[class],
+.about-company__eyebrow[class] + .about-company__title[class],
+.project-hero__eyebrow[class] + .project-hero__title[class],
+.reviews-section__eyebrow[class] + .reviews-section__title[class],
+.team-section__eyebrow[class] + .team-section__title[class],
+.partners-section__eyebrow[class] + .partners-section__title[class],
+.office-contact__eyebrow[class] + h2,
+.news-section__eyebrow[class] + .news-section__title[class],
+.newsletter-cta__eyebrow[class] + h2 {
+  margin-block-start: calc(var(--space-eyebrow-to-heading) - var(--eyebrow-parent-gap));
+}
+
 @media (max-width: 540px) {
+  .services-section__header[class] {
+    --eyebrow-parent-gap: 8px;
+  }
+
+  .barnes-choice__heading[class] {
+    --eyebrow-parent-gap: 8px;
+  }
+
+  .reviews-section__intro[class],
+  .news-section__header[class] {
+    --eyebrow-parent-gap: 10px;
+  }
+
+  .team-section__intro[class],
+  .partners-section__intro[class] {
+    --eyebrow-parent-gap: 12px;
+  }
+
   .barnes-choice__eyebrow[class],
   .departments-section__eyebrow[class],
   .services-section__eyebrow[class],
