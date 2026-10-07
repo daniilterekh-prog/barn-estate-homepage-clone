@@ -302,7 +302,7 @@ section.news-section[class] {
   font-weight: var(--control-cta-font-weight);
   gap: 10px;
   height: var(--control-cta-height);
-  justify-content: space-between;
+  justify-content: flex-start;
   line-height: var(--control-cta-line-height);
   min-height: var(--control-cta-height);
   padding: 0 var(--control-cta-padding-inline);
@@ -338,9 +338,24 @@ section.news-section[class] {
   outline-offset: 3px;
 }
 
-.office-contact__action-arrow[class] {
-  font-size: 1.1em;
-  line-height: 1;
+.office-contact__action-icon[class] {
+  flex: 0 0 auto;
+  height: 18px;
+  width: 18px;
+}
+
+.office-contact__action .office-contact__arrow[class] {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  height: 14px;
+  margin-left: auto;
+  width: 14px;
+}
+
+.office-contact__action .office-contact__arrow svg {
+  height: 100%;
+  width: 100%;
 }
 
 /* Primary and outline CTA family: Hero, Barnes Choice and Project. */
@@ -504,5 +519,15 @@ section.news-section[class] {
     min-height: var(--control-cta-height-mobile);
     padding: 10px 24px;
     width: 100%;
+  }
+
+  .office-contact__action-icon[class] {
+    height: 22px;
+    width: 22px;
+  }
+
+  .office-contact__action .office-contact__arrow[class] {
+    height: 16px;
+    width: 16px;
   }
 }

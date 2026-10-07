@@ -78,12 +78,28 @@
       actions.className = "office-contact__actions";
       actions.innerHTML = `
         <a class="office-contact__action office-contact__action--email" href="${emailHref}">
+          <svg class="office-contact__action-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none">
+            <rect x="3" y="5" width="18" height="14" rx="1.5" stroke="currentColor" stroke-width="1.5"/>
+            <path d="m4 7 8 6 8-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
           <span>Написать на email</span>
-          <span class="office-contact__action-arrow" aria-hidden="true">↗</span>
+          <span class="office-contact__arrow" aria-hidden="true">
+            <svg viewBox="0 0 16 16" fill="none">
+              <path d="M3 13 13 3M5 3h8v8" stroke="currentColor" stroke-width="1.35" stroke-linecap="square"/>
+            </svg>
+          </span>
         </a>
         <a class="office-contact__action office-contact__action--route" href="${routeHref}" target="_blank" rel="noreferrer" aria-label="Проложить маршрут до офиса BARNES на улице Петровка">
+          <svg class="office-contact__action-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none">
+            <path d="M12 21s6-5.1 6-10a6 6 0 1 0-12 0c0 4.9 6 10 6 10Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+            <circle cx="12" cy="11" r="2" stroke="currentColor" stroke-width="1.5"/>
+          </svg>
           <span>Проложить маршрут</span>
-          <span class="office-contact__action-arrow" aria-hidden="true">↗</span>
+          <span class="office-contact__arrow" aria-hidden="true">
+            <svg viewBox="0 0 16 16" fill="none">
+              <path d="M3 13 13 3M5 3h8v8" stroke="currentColor" stroke-width="1.35" stroke-linecap="square"/>
+            </svg>
+          </span>
         </a>
       `;
       officeAddress.replaceWith(actions);
