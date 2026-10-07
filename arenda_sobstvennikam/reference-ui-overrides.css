@@ -272,28 +272,7 @@ body.owner-rent-reference-ui .owner-sale-hero .breadcrumbs__link {
     width: 19px;
   }
 
-  .owner-rent-reference-ui .owner-rent-hero-request {
-    align-items: center;
-    background: transparent;
-    border: 1px solid #fff;
-    color: #fff;
-    display: inline-flex;
-    font-family: inherit;
-    font-size: 16px;
-    font-weight: 400;
-    justify-content: center;
-    line-height: 1;
-    min-height: 38px;
-    padding-inline: 18px;
-    text-decoration: none;
-    transition: background-color var(--owner-rent-ui-motion), color var(--owner-rent-ui-motion);
-    white-space: nowrap;
-  }
-
-  .owner-rent-reference-ui :is(
-    .owner-rent-hero-contact,
-    .owner-rent-hero-request
-  ):focus-visible {
+  .owner-rent-reference-ui .owner-rent-hero-contact:focus-visible {
     outline: var(--owner-rent-ui-focus-width) solid #fff;
     outline-offset: var(--owner-rent-ui-focus-offset);
   }
@@ -320,17 +299,10 @@ body.owner-rent-reference-ui .owner-sale-hero .breadcrumbs__link {
     opacity: 0.76;
   }
 
-  .owner-rent-reference-ui .owner-rent-hero-request:hover {
-    background: #fff;
-    color: var(--owner-rent-ui-brand);
-  }
 }
 
 @media (max-width: 1024px) {
-  .owner-rent-reference-ui :is(
-    .owner-rent-hero-contacts,
-    .owner-rent-hero-request
-  ) {
+  .owner-rent-reference-ui .owner-rent-hero-contacts {
     display: none;
   }
 }

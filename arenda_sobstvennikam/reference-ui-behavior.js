@@ -144,19 +144,8 @@
       right.appendChild(contacts);
     }
 
-    if (!right.querySelector('.owner-rent-hero-request')) {
-      var request = document.createElement('button');
-      request.className = 'owner-rent-hero-request';
-      request.type = 'button';
-      request.textContent = 'Оставить заявку';
-      right.appendChild(request);
-    }
-    var heroRequest = right.querySelector('.owner-rent-hero-request');
-    var heroContacts = right.querySelector('.owner-rent-hero-contacts');
-    if (heroRequest && heroContacts && heroRequest.nextElementSibling !== heroContacts) {
-      right.insertBefore(heroRequest, heroContacts);
-    }
-    bindRequestPopup(heroRequest);
+    var obsoleteRequest = right.querySelector('.owner-rent-hero-request');
+    if (obsoleteRequest) obsoleteRequest.remove();
   }
 
   function enhanceStickyHeader() {
