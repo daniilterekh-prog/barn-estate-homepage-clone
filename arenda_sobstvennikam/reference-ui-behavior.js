@@ -38,7 +38,8 @@
       var lead = document.createElement('strong');
       lead.textContent = copy.shift();
       var detail = document.createElement('span');
-      detail.textContent = copy.join(' — ');
+      var detailText = copy.join(' — ').trim();
+      detail.textContent = detailText.charAt(0).toLocaleUpperCase('ru-RU') + detailText.slice(1);
       text.append(lead, detail);
     });
 
