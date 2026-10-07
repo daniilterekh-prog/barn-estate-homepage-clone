@@ -227,6 +227,14 @@
     });
   }
 
+  function reorderConsultationAndTypes() {
+    var consultation = document.querySelector('.catalog-consultation');
+    var types = document.querySelector('.owner-sale-types');
+    if (!consultation || !types) return;
+    if (consultation.nextElementSibling === types) return;
+    types.parentNode.insertBefore(consultation, types);
+  }
+
   function enhancePresentationCards() {
     var descriptions = [
       'Находим сильные стороны объекта и превращаем их в понятные преимущества для будущего арендатора.',
@@ -422,6 +430,7 @@
     enhancementTimer = window.setTimeout(function () {
       reorderBrandSections();
       replaceConsultationSection();
+      reorderConsultationAndTypes();
       enhancePresentationCards();
       enhanceHeroSection();
       enhanceServicesSection();
