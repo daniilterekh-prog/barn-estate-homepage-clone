@@ -261,6 +261,34 @@ Do not create a new button variant for a different section if the action has the
 - Disabled: opacity 0.5–0.6, cursor not-allowed, no hover transform.
 - Loading: only where network submission exists; preserve width and expose aria-busy.
 
+### Button audit snapshot — 2026-10-07
+
+Measured on the homepage at 390, 768, 1280 and 1920px. The same visual action currently uses several incompatible contracts:
+
+| Role / selector | Current measurements | Finding |
+|---|---|---|
+| Hero primary `.home-hero-filters__submit` | `58px` mobile, `70px` tablet/desktop; `16/17.6px`, `18/19.8px` wide; radius `3px` mobile and `0` from tablet | Primary role changes radius and wide typography without a documented reason |
+| Barnes CTA `.barnes-choice__action` | `68px` mobile, `56px` tablet, `70px` desktop; `16/16px` mobile/tablet and `20/20px` desktop; radius `3px` | Same primary role has a tablet height dip and oversized desktop label |
+| Project outline `.project-hero__cta` | `68px` mobile, `56px` tablet, `70px` desktop; same `16/20px` split; radius `3px` | Outline CTA does not share one height/type contract |
+| Newsletter submit | `54px` mobile, `58px` tablet/desktop; `16/16px`; radius `0` | Submit control is shorter and sharper than primary CTA |
+| Footer callback | `50px` mobile, `56px` tablet/desktop; `16/16px`, weight `500`; radius `0` | Callback is visually smaller than the main CTA family |
+| Slider arrows | `48px` mobile, `56px` tablet/desktop, `68px` wide; circular | Responsive scale is intentional, but hit-area behavior must remain explicit |
+| Text links `.ui-more-link` | about `25px` rendered box; `14/16.8px` | Text is correct for the role, but clickable area needs a larger invisible hit area |
+| Hero/Barnes tabs | `24–34px` rendered height, `12–22px` type | Tab labels are visually distinct but current touch areas are below the 44px reference target |
+| Header icon controls | visual/link boxes from `22px` to `33px` | Icon is small by design, but the interactive parent must be at least `44×44px` |
+| Slider pagination | visual button boxes `8px`, active `38×8px` | Needs an accessible hit area around the visual dot |
+| Floating close | `30×30px` | Below the reference icon-control hit area |
+
+### Proposed button unification order
+
+1. Unify Primary and Outline CTA height/type first: `58px` mobile, `70px` from tablet/desktop; `16/17.6px`, weight `500`; `3px` radius.
+2. Remove the `56px` tablet dip from Barnes and Project CTAs.
+3. Bring newsletter submit and footer callback into the same height family unless their narrower editorial composition is intentionally approved.
+4. Keep visual slider-arrow scaling `48/56/68px`, but ensure every other icon action has a minimum `44×44px` interactive parent.
+5. Preserve the visual size of text links, tabs and pagination dots while enlarging their hit areas invisibly.
+
+No button CSS was changed as part of this audit snapshot; these are the next reference decisions to approve before implementation.
+
 ### Icon and slider contract
 
 Slider arrows: 48px mobile, 56px desktop, 68px wide. Use disabled state instead of hiding unavailable navigation. Menu/close/favorite/search parents must be at least 44×44px even when the visual icon is smaller.
@@ -412,7 +440,9 @@ No component token should duplicate a semantic token without a local, documented
 | Body dark text | #1E1E1E, #1D1D1B, #000 | Text primary #1E1E1E | remove duplicate semantics |
 | Muted text | #4F4D49, #656462, #7F7D7A, #CACACA | Text secondary/muted only | contrast and consistency |
 | Primary CTA | 58px mobile, 70px desktop, sharp/radius differences | 58/70px token, radius 3px unless editorial exception approved | one action contract |
+| CTA typography | 16/16px, 16/17.6px, 18/19.8px and 20/20px across roles | 16/17.6px base; 18/19.8px only wide; weight 500 | eliminate same-role label jumps |
 | Slider arrows | 48/56/68px | responsive Icon button token | same function, documented scale |
+| Small interactive controls | 8–34px visual boxes | preserve visual, add 44px minimum hit area | touch and keyboard usability |
 | Footer links | 11px mobile to 18px wide | 13/18 minimum mobile, 16/16 desktop | readability |
 | Focus | outline none in many controls | visible 2px focus-visible | keyboard QA |
 | Hero search | empty label | explicit label | form semantics |
@@ -442,6 +472,10 @@ These are specification outputs, not completed implementation changes.
 | R-017 | ARIA | menu/tab relationships incomplete | add disclosure and tabpanel relations | P3 |
 | R-018 | Header | nav hidden at 1280, visible at 1281; +42px header | review available-space breakpoint | P4 |
 | R-019 | Local deployment | robots/sitemap return 404 | add only if clone is independently indexed | P4 |
+| R-020 | Primary/outline CTA | same role uses 56/58/68/70px and 16/18/20px labels | unify to 58px mobile, 70px tablet/desktop, 16/17.6px base, 18/19.8px wide, weight 500 | P2 |
+| R-021 | CTA radius | primary controls use both `0` and `3px` | use `3px` standard; keep sharp only as documented editorial exception | P3 |
+| R-022 | Interactive hit areas | header icons 22–33px, tabs 24–34px, pagination 8px, close 30px | add invisible minimum `44×44px` parents without changing visual icons/dots | P2 |
+| R-023 | Newsletter/footer actions | newsletter `54/58px`, footer callback `50/56px`, both radius `0` | map to Primary/Secondary contracts or document intentional compact editorial variants | P3 |
 
 ## Safe to Unify
 
@@ -518,3 +552,4 @@ These are specification outputs, not completed implementation changes.
 - Unified Services, Barnes Choice, Departments and News eyebrow styles: 12px mobile, 14px from tablet through wide desktop, weight 400, 0.12em tracking and Text secondary color.
 - Added Barnes Choice eyebrow `Недвижимость по направлениям` and Departments eyebrow `Выбрать направление`; removed the Reviews eyebrow.
 - Increased homepage office/contact method labels to the reference contact-link role: 18/22.5px from tablet through wide desktop and 16/20px on mobile; retained the 48px touch target.
+- Audited homepage buttons and interactive links at 390/768/1280/1920px; documented CTA height/type divergence, radius divergence and undersized hit areas. No button CSS was changed.
