@@ -132,6 +132,7 @@ body.owner-rent-reference-ui .owner-sale-hero .breadcrumbs__link {
 }
 
 .owner-rent-reference-ui .owner-sale-exclusive {
+  --owner-rent-exclusive-sticky-top: clamp(180px, 28vh, 260px);
   background: #fff;
   color: var(--owner-rent-ui-text-primary);
   min-height: 0;
@@ -727,13 +728,13 @@ body.owner-rent-reference-ui .owner-sale-hero .breadcrumbs__link {
 
 @media (min-width: 901px) {
   .owner-rent-reference-ui .owner-sale-exclusive__grid {
-    padding-bottom: 160px;
+    padding-bottom: calc(var(--owner-rent-exclusive-sticky-top) + 40px);
   }
 
   .owner-rent-reference-ui .owner-sale-exclusive__header {
     align-self: start;
     position: sticky;
-    top: 120px;
+    top: var(--owner-rent-exclusive-sticky-top);
   }
 
   .owner-rent-reference-ui .owner-sale-exclusive--scroll-ready .owner-sale-exclusive__number,

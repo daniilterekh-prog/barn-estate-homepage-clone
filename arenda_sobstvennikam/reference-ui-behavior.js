@@ -126,6 +126,7 @@
   function updateExclusiveScrollState() {
     var section = document.querySelector('.owner-sale-exclusive');
     var items = section && Array.from(section.querySelectorAll('.owner-sale-exclusive__item'));
+    var header = section && section.querySelector('.owner-sale-exclusive__header');
     var desktop = window.matchMedia('(min-width: 901px)').matches;
 
     if (!section || !items.length) return;
@@ -138,7 +139,8 @@
       return;
     }
 
-    var alignmentLine = 120;
+    var alignmentLine = header ? parseFloat(window.getComputedStyle(header).top) : 120;
+    if (!Number.isFinite(alignmentLine)) alignmentLine = 120;
     var activeIndex = 0;
     var closestDistance = Infinity;
 
