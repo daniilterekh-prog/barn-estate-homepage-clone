@@ -57,7 +57,7 @@
 }
 
 .owner-rent-reference-ui .owner-sale-hero__title {
-  font-size: clamp(48px, 5.2vw, 104px);
+  font-size: clamp(48px, 5.2vw, 75px);
   font-weight: var(--owner-rent-ui-heading-weight);
   line-height: 0.98;
 }
