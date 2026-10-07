@@ -148,7 +148,53 @@ body.owner-rent-reference-ui .owner-sale-hero .breadcrumbs__link {
 @media (hover: hover) and (pointer: fine) {
   .owner-rent-reference-ui .layout__header .site-header__nav-link:hover {
     color: #fff;
-    opacity: 0.72;
+  }
+}
+
+.owner-rent-reference-ui .layout__header .site-header__subnav {
+  background: linear-gradient(180deg, rgba(20, 20, 20, 0.76), rgba(20, 20, 20, 0.52));
+  border-top-color: rgba(255, 255, 255, 0.3);
+  display: none;
+  min-width: 190px;
+  padding: 15px 18px 18px;
+}
+
+.owner-rent-reference-ui .layout__header .owner-rent-nav-item:hover > .site-header__subnav,
+.owner-rent-reference-ui .layout__header .owner-rent-nav-item:focus-within > .site-header__subnav {
+  display: flex;
+}
+
+.owner-rent-reference-ui .layout__header .site-header__subnav-link {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.owner-rent-reference-ui .layout__header .site-header__subnav-link:hover,
+.owner-rent-reference-ui .layout__header .site-header__subnav-link:focus-visible {
+  color: #fff;
+  font-weight: 400;
+}
+
+.owner-rent-reference-ui :is(
+  .owner-sale-hero__breadcrumbs,
+  .owner-sale-hero__body
+) {
+  transition: opacity 180ms ease, visibility 180ms ease;
+}
+
+.owner-rent-reference-ui.owner-rent-hero-nav-open :is(
+  .owner-sale-hero__breadcrumbs,
+  .owner-sale-hero__body
+) {
+  opacity: 0;
+  visibility: hidden;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .owner-rent-reference-ui :is(
+    .owner-sale-hero__breadcrumbs,
+    .owner-sale-hero__body
+  ) {
+    transition: none;
   }
 }
 
