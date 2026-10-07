@@ -295,7 +295,7 @@ Slider arrows: 48px mobile, 56px desktop, 68px wide. Use disabled state instead 
 
 ### Header button audit snapshot — 2026-10-07
 
-The header was checked separately at 320, 390, 768, 1024, 1280, 1440 and 1920px:
+The header was checked separately at 320, 390, 540, 541, 768, 1024, 1025, 1280, 1281, 1440 and 1920px:
 
 | Control | Current rendered / interactive box | Typography / state | Finding |
 |---|---:|---|---|
@@ -304,6 +304,12 @@ The header was checked separately at 320, 390, 768, 1024, 1280, 1440 and 1920px:
 | Favorites `.site-header__favorites-btn` | `22×22px` above 540px | icon-only; transparent; hover opacity; no visible focus ring | hit area is below `44×44px` |
 | Search `.site-header__search-btn` | `22px` icon at 541–1024px; about `72×22px` with label from 1025px | label `16/16px`, weight `400` in computed snapshot; no visible focus ring | label is readable, vertical hit area is too small |
 | Header phone `.site-header__phone` | about `168×21px` from 1025px | `16/16px`, weight `300`; default focus visible | text link needs a 44px vertical parent area |
+
+Breakpoint observations:
+
+- `540→541px`: header height changes from `69px` to `111px`; mobile phone disappears, menu grows from `29px` to `33px`, favorites/search appear at `22px`.
+- `1024→1025px`: search changes from icon-only `22×22px` to icon plus label `71.5×22px`; the header phone appears at `167.8×21px`.
+- `1280→1281px`: header navigation appears and header height changes from `111px` to `153px`; the button dimensions themselves do not change.
 
 Header-specific state findings:
 
@@ -577,4 +583,4 @@ These are specification outputs, not completed implementation changes.
 - Added Barnes Choice eyebrow `Недвижимость по направлениям` and Departments eyebrow `Выбрать направление`; removed the Reviews eyebrow.
 - Increased homepage office/contact method labels to the reference contact-link role: 18/22.5px from tablet through wide desktop and 16/20px on mobile; retained the 48px touch target.
 - Audited homepage buttons and interactive links at 390/768/1280/1920px; documented CTA height/type divergence, radius divergence and undersized hit areas. No button CSS was changed.
-- Audited header controls at 320/390/768/1024/1280/1440/1920px; isolated hit-area and keyboard-focus fixes from the rest of the button system. No header CSS was changed.
+- Audited header controls at 320/390/540/541/768/1024/1025/1280/1281/1440/1920px; isolated hit-area and keyboard-focus fixes from the rest of the button system. No header CSS was changed.
