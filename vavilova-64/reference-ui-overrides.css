@@ -1,0 +1,212 @@
+/*
+ * BARNES Reference UI — page-local layer for Vavilova 64.
+ * This file is intentionally scoped to .catalog-detail so the homepage and
+ * future project routes keep their own visual contracts.
+ */
+.catalog-detail {
+  --vav-ui-brand: #8b1d25;
+  --vav-ui-background: #fff;
+  --vav-ui-surface: #f1f1f1;
+  --vav-ui-dark-surface: #262626;
+  --vav-ui-text-primary: #1e1e1e;
+  --vav-ui-text-secondary: #4f4d49;
+  --vav-ui-text-muted: #656462;
+  --vav-ui-border: #e4e4e4;
+  --vav-ui-heading-weight: 300;
+  --vav-ui-body-weight: 400;
+  --vav-ui-section-space: clamp(60px, 4.16667vw, 80px);
+  --vav-ui-h2-size: 38px;
+  --vav-ui-h2-line: 45.6px;
+  color: var(--vav-ui-text-primary);
+  font-family: "Tilda Sans", "Tilda Sans Fallback", system-ui, sans-serif;
+}
+
+/* Reference palette and the shared type scale. */
+.catalog-detail :is(
+  .detail-characteristics__title,
+  .detail-location__title,
+  .mortgage__title,
+  .detail-architecture__title,
+  .detail-infrastructure__title,
+  .construction__title,
+  .documents__title,
+  .detail-similar__title,
+  .catalog-faq__title
+) {
+  color: var(--vav-ui-text-primary);
+  font-size: var(--vav-ui-h2-size);
+  font-weight: var(--vav-ui-heading-weight);
+  letter-spacing: normal;
+  line-height: var(--vav-ui-h2-line);
+}
+
+.catalog-detail :is(.detail-about__eyebrow, .reviews-section__eyebrow) {
+  color: var(--vav-ui-text-primary);
+  font-size: 14px;
+  font-weight: var(--vav-ui-body-weight);
+  letter-spacing: .12em;
+  line-height: 16.1px;
+  text-transform: uppercase;
+}
+
+.catalog-detail :is(
+  .detail-about__text,
+  .detail-architecture__text,
+  .detail-infrastructure__content,
+  .catalog-contact__subtitle,
+  .catalog-contact__card-text,
+  .newsletter-cta__lead
+) {
+  color: var(--vav-ui-text-secondary);
+  font-weight: 300;
+}
+
+/* Hero display role from the reference page. */
+.catalog-detail .detail-hero__title {
+  font-size: clamp(48px, 5.2vw, 75px);
+  font-weight: var(--vav-ui-heading-weight);
+  line-height: .98;
+}
+
+.catalog-detail .detail-hero__location {
+  font-weight: 300;
+}
+
+/* Keep the page rhythm aligned to the reference section rhythm. */
+.catalog-detail :is(
+  .detail-characteristics,
+  .detail-about,
+  .detail-location,
+  .mortgage,
+  .detail-architecture,
+  .detail-infrastructure,
+  .construction,
+  .documents,
+  .reviews-section,
+  .detail-similar,
+  .catalog-faq
+) {
+  padding-block: var(--vav-ui-section-space);
+}
+
+/* ActionButton contract: square corners, reference weight and dimensions. */
+.catalog-detail :is(.ui-button, .detail-sticky-header__consult) {
+  border-radius: 1px;
+  font-family: inherit;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 18.7px;
+}
+
+.catalog-detail .ui-button.ui-button--medium {
+  border-radius: 1px;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 18.7px;
+  min-height: 70px;
+  padding: 16px 36px;
+}
+
+.catalog-detail :is(.ui-button, a, button, input, textarea):focus-visible {
+  outline: 2px solid var(--vav-ui-brand);
+  outline-offset: 3px;
+}
+
+.catalog-detail .detail-characteristics__cta,
+.catalog-detail .detail-hero__button--primary {
+  background: var(--vav-ui-brand);
+  border-color: var(--vav-ui-brand);
+  color: #fff;
+}
+
+.catalog-detail .detail-characteristics__cta:hover,
+.catalog-detail .detail-hero__button--primary:hover {
+  background: #741820;
+  border-color: #741820;
+}
+
+/* Wide containers use the same 1920px / 100px reference rails. */
+.catalog-detail .base-container {
+  max-width: 1920px;
+}
+
+@media (min-width: 1441px) {
+  .catalog-detail {
+    --vav-ui-h2-size: 44px;
+    --vav-ui-h2-line: 52.8px;
+  }
+}
+
+@media (min-width: 1921px) {
+  .catalog-detail .base-container {
+    padding-inline: 100px;
+  }
+
+  .catalog-detail .detail-hero__title {
+    font-size: 85px;
+    line-height: 85px;
+  }
+}
+
+@media (max-width: 540px) {
+  .catalog-detail {
+    --vav-ui-section-space: 35px;
+    --vav-ui-h2-size: 22px;
+    --vav-ui-h2-line: 26.4px;
+  }
+
+  .catalog-detail :is(
+    .detail-characteristics__title,
+    .detail-location__title,
+    .mortgage__title,
+    .detail-architecture__title,
+    .detail-infrastructure__title,
+    .construction__title,
+    .documents__title,
+    .detail-similar__title,
+    .catalog-faq__title
+  ) {
+    letter-spacing: normal;
+  }
+
+  .catalog-detail :is(.detail-about__eyebrow, .reviews-section__eyebrow) {
+    font-size: 12px;
+    line-height: 14.4px;
+  }
+
+  .catalog-detail .detail-hero__title {
+    font-size: 35px;
+    line-height: 35px;
+  }
+
+  .catalog-detail .ui-button.ui-button--medium {
+    font-size: 18px;
+    line-height: 19.8px;
+    min-height: 58px;
+    padding-inline: 24px;
+  }
+
+  .catalog-detail :is(.detail-about__text, .detail-architecture__text) {
+    font-size: 15px;
+    line-height: 19.2px;
+  }
+
+  .catalog-detail :is(.catalog-contact__subtitle, .catalog-contact__card-text) {
+    font-size: 15px;
+    line-height: 19.2px;
+  }
+}
+
+@media (min-width: 541px) and (max-width: 1440px) {
+  .catalog-detail .detail-hero__title {
+    font-size: clamp(48px, 5.2vw, 75px);
+  }
+}
+
+@media (min-width: 1441px) {
+  .catalog-detail .ui-button.ui-button--medium {
+    font-size: 19px;
+    line-height: 20.9px;
+    padding-inline: 47px;
+  }
+}
