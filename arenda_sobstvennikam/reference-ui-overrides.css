@@ -417,8 +417,8 @@ body.owner-rent-reference-ui .owner-sale-hero .breadcrumbs__link {
 
 @media (max-width: 540px) {
   .owner-rent-reference-ui .owner-sale-hero__title {
-    font-size: 48px;
-    line-height: 48px;
+    font-size: 35px;
+    line-height: 35px;
   }
 
   .owner-rent-reference-ui .owner-sale-hero__text {
