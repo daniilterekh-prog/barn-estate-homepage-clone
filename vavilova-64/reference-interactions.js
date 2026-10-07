@@ -43,11 +43,15 @@ if (window.location.protocol !== 'file:') {
   const localAsset = (value) => {
     if (!value) return value
     if (value.includes('/pictures/logo.svg')) return '/vavilova-64/assets/reference/remote-06.svg'
+    if (value.includes('8f5ddbc1f811f957fe777caaf9cef323')) return '/vavilova-64/assets/reference/expert-anastasia-shpak.jpg'
     if (value.includes('/pictures/consultation/cta-ruslan-pruss.webp')) return '/vavilova-64/assets/reference/cta-ruslan-pruss.webp'
     if (value.includes('/pictures/newsletter/subscribe-block-img.webp')) return '/vavilova-64/assets/reference/subscribe-block-img.webp'
     if (value.includes('/pictures/newsletter/subscribe-block-img-mob.webp')) return '/vavilova-64/assets/reference/subscribe-block-img-mob.webp'
     if (value.includes('/pictures/floating-expert/old-money-interior.webp')) return '/vavilova-64/assets/reference/old-money-interior.webp'
     if (value.includes('/pictures/for-banks/modal-request-img.webp')) return '/vavilova-64/assets/reference/modal-request-img.webp'
+    if (value.includes('/images/mock/contacts-background.png')) return '/vavilova-64/assets/reference/contacts-background.webp'
+    if (value.includes('/images/mock/dom-dostizhenie-construction-2025.jpg')) return '/vavilova-64/assets/reference/construction-2025.webp'
+    if (value.includes('/images/mock/dom-dostizhenie-construction-2026.jpg')) return '/vavilova-64/assets/reference/construction-2026.webp'
     if (value.startsWith('assets/reference/')) return `/vavilova-64/${value}`
     if (value.includes('/zhilye-kompleksy/vavilova-64/assets/reference/')) return value.replace('/zhilye-kompleksy/vavilova-64/', '/vavilova-64/')
     const filename = Object.keys(localAssetByFilename).find((name) => value.includes(name))
