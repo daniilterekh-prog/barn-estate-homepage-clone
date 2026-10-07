@@ -176,11 +176,22 @@
 }
 
 .owner-sale-reference-ui .owner-sale-hero__text {
-  color: #fff;
+  color: rgb(255 255 255 / 75%);
   font-size: 22px;
   line-height: 1.5;
   margin-top: 24px;
   max-width: 800px;
+}
+
+body.owner-sale-reference-ui .owner-sale-hero .breadcrumbs__link {
+  font-size: 13px;
+  line-height: 18px;
+}
+
+@media (min-width: 769px) {
+  body.owner-sale-reference-ui .owner-sale-hero .breadcrumbs__link {
+    font-size: 17px;
+  }
 }
 
 .owner-sale-reference-ui :is(

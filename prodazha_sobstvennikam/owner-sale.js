@@ -58,9 +58,9 @@
     contacts.className = 'owner-sale-hero-contacts';
     contacts.setAttribute('aria-label', 'Способы связи');
     [
-      ['WhatsApp', 'https://wa.me/79252621650', '/pictures/office-contact/whatsapp.svg'],
-      ['MAX', 'https://max.ru/join/AWj8ibiCtAPOJOlulMGNkykKGz_prXVWg-IQK1KpUG8', '/pictures/office-contact/max.svg'],
-      ['Telegram', 'https://t.me/art_de_vivre_barnes', '/pictures/office-contact/telegram.svg']
+      ['WhatsApp', 'https://wa.me/79252621650', '../pictures/office-contact/whatsapp.svg'],
+      ['MAX', 'https://max.ru/join/AWj8ibiCtAPOJOlulMGNkykKGz_prXVWg-IQK1KpUG8', '../pictures/office-contact/max.svg'],
+      ['Telegram', 'https://t.me/art_de_vivre_barnes', '../pictures/office-contact/telegram.svg']
     ].forEach(function (item) {
       const link = document.createElement('a');
       const icon = document.createElement('img');
