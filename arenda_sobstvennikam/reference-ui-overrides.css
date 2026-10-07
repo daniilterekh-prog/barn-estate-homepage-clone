@@ -742,15 +742,28 @@ body.owner-rent-reference-ui .owner-sale-hero .breadcrumbs__link {
   display: inline-flex;
   gap: 24px;
   justify-content: space-between;
+  line-height: 18.7px;
   margin-top: 28px;
   min-width: 280px;
   padding: 16px 24px 16px 36px;
   text-decoration: none;
+  text-align: left;
 }
 
 .owner-rent-reference-ui .owner-sale-exclusive__cta span {
-  font-size: 22px;
-  line-height: 1;
+  align-items: center;
+  display: flex;
+  flex: 0 0 16px;
+  height: 16px;
+  justify-content: center;
+  line-height: 0;
+  width: 16px;
+}
+
+.owner-rent-reference-ui .owner-sale-exclusive__cta svg {
+  display: block;
+  height: 16px;
+  width: 16px;
 }
 
 @media (min-width: 1280px) {

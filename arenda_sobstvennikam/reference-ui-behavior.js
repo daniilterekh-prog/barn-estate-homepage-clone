@@ -107,7 +107,7 @@
       var exclusiveCta = document.createElement('a');
       exclusiveCta.className = 'ui-button ui-button--primary ui-button--medium owner-sale-exclusive__cta';
       exclusiveCta.href = '#request';
-      exclusiveCta.innerHTML = 'Обсудить сдачу <span aria-hidden="true">↗</span>';
+      exclusiveCta.innerHTML = 'Связаться с брокером <span aria-hidden="true"><svg viewBox="0 0 16 16" focusable="false"><path d="M3 13 13 3M5 3h8v8" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25"></path></svg></span>';
 
       exclusiveHeader.append(intro, exclusiveCta);
     }
