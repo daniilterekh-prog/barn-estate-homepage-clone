@@ -122,7 +122,12 @@
   line-height: 22.4px;
 }
 
-.owner-rent-reference-ui :is(.breadcrumbs__link, .owner-sale-presentation__badge) {
+body.owner-rent-reference-ui .owner-sale-hero .breadcrumbs__link {
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.owner-rent-reference-ui .owner-sale-presentation__badge {
   font-size: 14px;
   line-height: 16.1px;
 }
@@ -368,8 +373,8 @@
 
 @media (min-width: 1921px) {
   .owner-rent-reference-ui .owner-sale-hero__title {
-    font-size: 75px;
-    line-height: 75px;
+    font-size: 85px;
+    line-height: 85px;
   }
 }
 
@@ -382,6 +387,11 @@
   .owner-rent-reference-ui .owner-sale-hero__text {
     font-size: 15px;
     line-height: 21px;
+  }
+
+  body.owner-rent-reference-ui .owner-sale-hero .breadcrumbs__link {
+    font-size: 12px;
+    line-height: 16px;
   }
 
   .owner-rent-reference-ui .owner-sale-services__eyebrow {
