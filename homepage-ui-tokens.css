@@ -225,6 +225,29 @@ section.news-section[class] {
   line-height: var(--control-cta-line-height) !important;
 }
 
+/* Desktop footer navigation: keep the final three groups on one aligned row. */
+@media (min-width: 1025px) {
+  .site-footer__nav[class] {
+    align-items: start;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .site-footer__nav[class] > .site-footer__column:nth-child(7) {
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  .site-footer__nav[class] > .site-footer__column:nth-child(8) {
+    grid-column: 2;
+    grid-row: 3;
+  }
+
+  .site-footer__nav[class] > .site-footer__column:nth-child(9) {
+    grid-column: 3;
+    grid-row: 3;
+  }
+}
+
 @media (min-width: 1441px) {
   :is(
     .home-hero-filters__submit,
