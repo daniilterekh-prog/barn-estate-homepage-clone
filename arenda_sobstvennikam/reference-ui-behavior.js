@@ -9,8 +9,15 @@
   function enhanceServicesSection() {
     var section = document.querySelector('.owner-sale-services');
     var headerWrap = section && section.querySelector('.owner-sale-services__header-wrap');
+    var title = section && section.querySelector('.owner-sale-services__title');
 
     if (!section || !headerWrap) return;
+
+    if (title) {
+      title.id = 'owner-rent-services-title';
+      section.setAttribute('aria-labelledby', title.id);
+      section.removeAttribute('aria-label');
+    }
 
     if (!headerWrap.querySelector('.owner-sale-services__eyebrow')) {
       var eyebrow = document.createElement('p');
@@ -77,7 +84,7 @@
     }
 
     if (!title.querySelector('br')) {
-      title.innerHTML = 'ПРЕИМУЩЕСТВА<br>ЭКСКЛЮЗИВНОЙ<br>РАБОТЫ С BARNES';
+      title.innerHTML = 'ПРЕИМУЩЕСТВА<br> ЭКСКЛЮЗИВНОЙ<br> РАБОТЫ С BARNES';
     }
 
     section.querySelectorAll('.owner-sale-exclusive__item').forEach(function (item, index) {
@@ -104,11 +111,62 @@
     });
   }
 
+  function enhanceSectionHeadings() {
+    var sections = [
+      {
+        selector: '.owner-sale-presentation__title',
+        eyebrow: 'СТРАТЕГИЯ ПРЕЗЕНТАЦИИ',
+        id: 'owner-rent-presentation-title'
+      },
+      {
+        selector: '.about-company__title',
+        eyebrow: 'BARNES / МОСКВА',
+        id: 'owner-rent-about-title'
+      },
+      {
+        selector: '.catalog-contact__title',
+        eyebrow: 'КОНСУЛЬТАЦИЯ ЭКСПЕРТА',
+        id: 'owner-rent-contact-title'
+      },
+      {
+        selector: '.newsletter-cta h2',
+        eyebrow: 'BARNES / АНАЛИТИКА',
+        id: 'owner-rent-newsletter-title'
+      }
+    ];
+
+    sections.forEach(function (config) {
+      var title = document.querySelector(config.selector);
+      var section = title && title.closest('section');
+      var container = title && title.parentElement;
+
+      if (!title || !container) return;
+
+      title.id = config.id;
+      if (section) section.setAttribute('aria-labelledby', config.id);
+
+      var eyebrow = container.querySelector(':scope > .owner-rent-section-eyebrow');
+      if (!eyebrow) {
+        eyebrow = document.createElement('p');
+        eyebrow.className = 'owner-rent-section-eyebrow';
+        eyebrow.textContent = config.eyebrow;
+        container.insertBefore(eyebrow, title);
+      }
+    });
+
+    document.querySelectorAll(
+      '.owner-sale-services__eyebrow, .owner-sale-exclusive__eyebrow'
+    ).forEach(function (eyebrow) {
+      eyebrow.classList.add('owner-rent-section-eyebrow');
+    });
+  }
+
   function scheduleServicesEnhancement() {
     window.clearTimeout(enhancementTimer);
     enhancementTimer = window.setTimeout(function () {
       enhanceServicesSection();
       enhanceExclusiveSection();
+      enhanceSectionHeadings();
     }, 600);
   }
 

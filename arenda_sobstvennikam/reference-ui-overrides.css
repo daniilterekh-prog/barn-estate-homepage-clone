@@ -564,6 +564,20 @@ body.owner-rent-reference-ui .owner-sale-hero .breadcrumbs__link {
   }
 }
 
+@media (min-width: 1280px) and (max-width: 1919px) {
+  .owner-rent-reference-ui .catalog-contact__submit.catalog-contact__submit,
+  .owner-rent-reference-ui .catalog-contact__card-submit.catalog-contact__card-submit {
+    padding-inline: 8px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .owner-rent-reference-ui .catalog-contact__submit.catalog-contact__submit,
+  .owner-rent-reference-ui .catalog-contact__card-submit.catalog-contact__card-submit {
+    padding-inline: 47px;
+  }
+}
+
 @media (max-width: 540px) {
   .owner-rent-reference-ui .owner-sale-hero__title {
     font-size: 35px;
@@ -667,5 +681,72 @@ body.owner-rent-reference-ui .owner-sale-hero .breadcrumbs__link {
 @media (prefers-reduced-motion: reduce) {
   .owner-rent-reference-ui :is(.ui-button, .newsletter-form button) {
     transition: none;
+  }
+}
+
+/* Shared SectionHeading and ActionButton contracts from reference-ui.md. */
+.owner-rent-reference-ui .owner-rent-section-eyebrow {
+  color: var(--owner-rent-ui-brand);
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.12em;
+  line-height: 16.1px;
+  margin: 0 0 25px;
+  text-transform: uppercase;
+}
+
+.owner-rent-reference-ui .catalog-contact .owner-rent-section-eyebrow {
+  color: var(--owner-rent-ui-brand-accent);
+}
+
+.owner-rent-reference-ui .owner-sale-exclusive__title {
+  font-size: var(--owner-rent-ui-h2-size);
+  line-height: var(--owner-rent-ui-h2-line);
+}
+
+.owner-rent-reference-ui .newsletter-form button {
+  min-height: 70px;
+  padding-inline: 36px;
+}
+
+@media (max-width: 1279px) {
+  .owner-rent-reference-ui .owner-rent-section-eyebrow {
+    margin-bottom: 12px;
+  }
+}
+
+@media (min-width: 1441px) {
+  .owner-rent-reference-ui .owner-sale-exclusive__title {
+    font-size: var(--owner-rent-ui-h2-wide-size);
+    line-height: var(--owner-rent-ui-h2-wide-line);
+  }
+
+  .owner-rent-reference-ui .newsletter-form button {
+    padding-inline: 47px;
+  }
+}
+
+@media (max-width: 540px) {
+  .owner-rent-reference-ui .owner-rent-section-eyebrow {
+    font-size: 12px;
+    line-height: 14.4px;
+  }
+
+  body.owner-rent-reference-ui .owner-sale-exclusive .owner-sale-exclusive__title {
+    font-size: var(--owner-rent-ui-h2-mobile-size);
+    line-height: var(--owner-rent-ui-h2-mobile-line);
+  }
+
+  .owner-rent-reference-ui .newsletter-cta h2 {
+    line-height: 22px;
+  }
+
+  .owner-rent-reference-ui .newsletter-form button {
+    min-height: 58px;
+    padding-inline: 24px;
+  }
+
+  .owner-rent-reference-ui .site-footer__callback-btn {
+    min-height: 54px;
   }
 }

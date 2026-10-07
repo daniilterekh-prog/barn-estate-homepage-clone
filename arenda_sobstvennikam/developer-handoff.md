@@ -52,15 +52,20 @@
 - Desktop: две колонки; eyebrow и трёхстрочный H2 слева, шесть преимуществ справа.
 - Элементы списка имеют номера `01–06`, смысловые H3, описание и верхний разделитель `1px #E4E4E4`.
 - Desktop H3: `24/28.8px`, описание: `22/26.4px`.
-- Mobile до `540px`: одна колонка, H2 `28/32.2px`, H3 `20/24px`, описание `16/22.4px`.
+- Mobile до `540px`: одна колонка, H2 Standard `22/26.4px`, H3 `20/24px`, описание `16/22.4px`.
 - Исходное фоновое изображение и пиктограммы в этой секции скрыты.
 
 ## Заголовки и кнопки
 
 - H2 Standard: `22/26.4px` mobile, `38/45.6px` desktop, `44/52.8px` wide.
 - H2 Editorial «О BARNES»: `22/26.4px` mobile, `44/43.12px` desktop.
-- H2 Compact newsletter: `22/38px` mobile, `38/38px` desktop, `44/44px` wide.
+- H2 Compact newsletter: `22/22px` mobile, `38/38px` desktop, `44/44px` wide.
+- Каждый видимый H2 имеет отдельный eyebrow, который не повторяет заголовок: «СТРАТЕГИЯ ПРЕЗЕНТАЦИИ», «BARNES / МОСКВА», «ЕДИНАЯ КОМАНДА BARNES», «BARNES / ЭКСКЛЮЗИВ», «КОНСУЛЬТАЦИЯ ЭКСПЕРТА», «BARNES / АНАЛИТИКА».
+- Eyebrow: `14/16.1px` desktop, `12/14.4px` mobile; tracking `0.12em`; gap до H2 — `25px` desktop и `12px` mobile/tablet.
 - Button label: `18/19.8px` mobile, `17/18.7px` desktop, `19/20.9px` wide.
+- Action button: высота `58px` mobile и `70px` tablet/desktop; padding-inline `24px` mobile, `36px` base, `47px` wide; weight `400`; radius `1px`.
+- Две action-кнопки контактного блока используют компактный padding-inline `8px` в диапазоне `1280–1919px`, затем `47px` от `1920px`.
+- Footer callback сохраняет отдельную компактную высоту: `54px` mobile и `56px` tablet/desktop.
 - Горизонтальный padding CTA: `24px` mobile, `36px` desktop, `47px` wide.
 - Контактные CTA в диапазоне `1280–1919px`: horizontal padding `8px`.
 
