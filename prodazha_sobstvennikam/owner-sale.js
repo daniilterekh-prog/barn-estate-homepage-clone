@@ -148,6 +148,23 @@
 
   reorderSaleSections();
 
+  const alignConsultationCopy = function () {
+    const consultation = page.querySelector('.catalog-consultation');
+    if (!consultation) return;
+
+    const title = 'Эксперты BARNES подскажут';
+    const description = 'Поможем подготовить объект, найти покупателя и продать недвижимость на выгодных условиях';
+
+    consultation.querySelectorAll('.catalog-consultation__subtitle, .catalog-consultation__mobile-title').forEach(function (element) {
+      element.textContent = title;
+    });
+    consultation.querySelectorAll('.catalog-consultation__lead, .catalog-consultation__mobile-lead').forEach(function (element) {
+      element.textContent = description;
+    });
+  };
+
+  alignConsultationCopy();
+
   const enhanceStickyHeader = function () {
     const inner = sticky && sticky.querySelector('.owner-sale-sticky__inner');
     const nav = inner && inner.querySelector('.owner-sale-sticky__nav');
