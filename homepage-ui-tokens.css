@@ -294,6 +294,20 @@ section.news-section[class] {
   object-fit: cover;
 }
 
+@media (min-width: 1921px) {
+  .office-contact[class] {
+    padding-inline: 0;
+  }
+
+  .office-contact__inner[class] {
+    box-sizing: border-box;
+    margin-inline: auto;
+    max-width: 1920px;
+    padding-inline: 100px;
+    width: 100%;
+  }
+}
+
 .office-contact__socials[class] {
   display: grid;
   gap: var(--control-action-gap);
