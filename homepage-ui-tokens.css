@@ -19,11 +19,11 @@
   --control-cta-height-mobile: 58px;
   --control-cta-padding-inline: 36px;
   --control-cta-padding-inline-wide: 47px;
-  --control-cta-font-size: 16px;
-  --control-cta-font-size-wide: 18px;
+  --control-cta-font-size: 17px;
+  --control-cta-font-size-wide: 19px;
   --control-cta-line-height: 1.1;
   --control-cta-font-weight: var(--font-weight-regular);
-  --control-cta-radius: 3px;
+  --control-cta-radius: 1px;
 
   /* Reference contact-link role for the homepage office/contact block. */
   --type-contact-link-size: 18px;
@@ -196,7 +196,7 @@ section.news-section[class] {
   .project-hero__cta
 )[class] {
   border-radius: var(--control-cta-radius) !important;
-  font-size: var(--control-cta-font-size);
+  font-size: var(--control-cta-font-size) !important;
   font-weight: var(--control-cta-font-weight) !important;
   height: var(--control-cta-height);
   line-height: var(--control-cta-line-height);
@@ -217,7 +217,10 @@ section.news-section[class] {
 
 /* Footer callback keeps its compact geometry but uses the shared label weight. */
 .site-footer__callback-btn[class] {
+  border-radius: var(--control-cta-radius) !important;
+  font-size: var(--control-cta-font-size) !important;
   font-weight: var(--control-cta-font-weight);
+  line-height: var(--control-cta-line-height) !important;
 }
 
 @media (min-width: 1441px) {
@@ -226,13 +229,17 @@ section.news-section[class] {
     .barnes-choice__action,
     .project-hero__cta
   )[class] {
-    font-size: var(--control-cta-font-size-wide);
+    font-size: var(--control-cta-font-size-wide) !important;
     padding: 0 var(--control-cta-padding-inline-wide) !important;
   }
 
   .newsletter-form__row > button {
     font-size: var(--control-cta-font-size-wide) !important;
     padding: 0 var(--control-cta-padding-inline-wide) !important;
+  }
+
+  .site-footer__callback-btn[class] {
+    font-size: var(--control-cta-font-size-wide) !important;
   }
 }
 

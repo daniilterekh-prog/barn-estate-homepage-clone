@@ -253,9 +253,9 @@ Do not create a new button variant for a different section if the action has the
 - Mobile height: 58px.
 - Tablet/desktop height: 70px.
 - Horizontal padding: 24px mobile, 36px desktop, 47px wide only when the label requires it.
-- Label: 16/17.6px, weight 500; 18px only at wide scale.
+- Label: 17/18.7px, weight 400; 19px/20.9px at wide scale.
 - Background: Brand; text: On dark.
-- Radius: 3px reference. Existing sharp desktop hero radius 0 is REVIEW REQUIRED because it is a visible editorial exception.
+- Radius: 1px reference for rectangular action buttons.
 - Transition: background/color/opacity 180–220ms ease.
 - Focus-visible: 2px Brand or contrast-safe outline with 4px offset.
 - Disabled: opacity 0.5–0.6, cursor not-allowed, no hover transform.
@@ -281,7 +281,7 @@ Measured on the homepage at 390, 768, 1280 and 1920px. The same visual action cu
 
 ### Proposed button unification order
 
-1. Unify Primary and Outline CTA height/type first: `58px` mobile, `70px` from tablet/desktop; `16/17.6px`, weight `500`; `3px` radius.
+1. Unify Primary and Outline CTA height/type first: `58px` mobile, `70px` from tablet/desktop; `17/18.7px`, weight `400`; `1px` radius.
 2. Remove the `56px` tablet dip from Barnes and Project CTAs.
 3. Bring newsletter submit and footer callback into the same height family unless their narrower editorial composition is intentionally approved.
 4. Keep visual slider-arrow scaling `48/56/68px`, but ensure every other icon action has a minimum `44×44px` interactive parent.
@@ -298,16 +298,16 @@ This inventory includes rectangular `<button>` elements and anchors styled as co
 | Hero filter icon `.home-hero-filters__filter-icon` | `60×58px` | hidden | hidden | hidden | `16/16px`, weight `400` |
 | Hero filter tabs `.home-hero-filters__tab` | hidden | `24px` high | `24px` high | `26px` high | `16/16px` → `18/18px` wide; active `400`, inactive `300` |
 | Hero filter fields `.hero-filter-field` / `.home-hero-filters__more` | hidden | `70px` high | `70px` high | `70px` high | `16/17.6px`, weight `300`; `18/19.8px` wide |
-| Hero primary `.home-hero-filters__submit` | `342×58px` | `705×70px` | `202×70px` | `238×70px` | `16/17.6px`, weight `400`; `18/19.8px` wide |
+| Hero primary `.home-hero-filters__submit` | `342×58px` | `705×70px` | `209×70px` | `248×70px` | `17/18.7px`, weight `400`; `19/20.9px` wide |
 | Barnes tabs `.barnes-choice__tab` | select only | `32px` high | `32px` high | `34px` high | `20/20px` → `22/22px` wide, weight `300` |
 | Barnes mobile select `.barnes-choice__select-control` | `120×26px` | hidden | hidden | hidden | `12/14.4px`, weight `300` |
-| Barnes primary `.barnes-choice__action` | `342×58px` | `320×70px` | `320×70px` | `320×70px` | `16/17.6px`, weight `400`; `18/19.8px` wide |
-| Project outline `.project-hero__cta` | `198×58px` | `222×70px` | `222×70px` | `256×70px` | `16/17.6px`, weight `400`; `18/19.8px` wide |
+| Barnes primary `.barnes-choice__action` | `342×58px` | `320×70px` | `320×70px` | `320×70px` | `17/18.7px`, weight `400`; `19/20.9px` wide |
+| Project outline `.project-hero__cta` | `204×58px` | `228×70px` | `228×70px` | `266×70px` | `17/18.7px`, weight `400`; `19/20.9px` wide |
 | About text CTA `.ui-more-link` | `141×25px` | `141×25px` | `141×25px` | `141×25px` | `14/16.8px`, weight `300` |
 | News text CTA `.news-section__action` | `206×25px` | `206×25px` | `206×25px` | `206×25px` | `14/16.8px`, weight `400` |
 | Office/contact `.office-contact__social` | `335×48px` | `315×48px` | `226×48px` | `348×48px` | `16/20px` mobile; `18/22.5px` otherwise, weight `400` |
-| Newsletter submit | `335×58px` | `193×70px` | `193×70px` | `228×70px` | `16/17.6px`, weight `400`; `18/19.8px` wide |
-| Footer callback `.site-footer__callback-btn` | `294×50px` | `706×56px` | `294×56px` | `331×56px` | `16/16px`, weight `400` |
+| Newsletter submit | `335×58px` | `199×70px` | `199×70px` | `233×70px` | `17/18.7px`, weight `400`; `19/20.9px` wide |
+| Footer callback `.site-footer__callback-btn` | `294×53px` | `705×56px` | `294×56px` | `334×56px` | `17/18.7px`, weight `400`; `19/20.9px` wide |
 | Floating expert `.floating-expert__card` | `343×97px` | `360×110px` | `360×110px` | `360×110px` | `16/16px`, weight `400` |
 | Floating close `.floating-expert__close` | `30×30px` | `30×30px` | `30×30px` | `30×30px` | inherited `16/16px`; icon-only |
 
@@ -318,9 +318,9 @@ Rectangular-system conclusion: Hero primary, Barnes primary, Project outline and
 The first rectangular-control correction is limited to the main CTA family:
 
 - Hero primary, Barnes primary, Project outline and Newsletter submit now share `58px` height on mobile and `70px` from tablet through desktop.
-- Rectangular action labels use `16px / 17.6px`, weight `400`; wide desktop uses `18px / 19.8px`.
+- Rectangular action labels use `17px / 18.7px`, weight `400`; wide desktop uses `19px / 20.9px`.
 - Horizontal padding is `24px` mobile, `36px` base desktop and `47px` wide desktop.
-- Radius is `3px` for the four shared CTA controls.
+- Radius is `1px` for the four shared CTA controls and the compact Footer callback.
 - Footer callback keeps its compact size but now also uses weight `400`.
 - Office/contact, filter fields, tabs, text links and floating controls remain separate roles and were not changed in this pass.
 
@@ -418,7 +418,7 @@ The WhatsApp, Telegram, MAX and phone links use the same interactive contact-lin
 | Token | Value | Use |
 |---|---:|---|
 | radius-sharp | 0 | editorial media/sections where the edge is intentionally architectural |
-| radius-control | 3px | buttons and standard inputs |
+| radius-control | 1px | rectangular action buttons; standard inputs remain separate |
 | radius-filter | 14px | hero filter fields |
 | radius-round | 999px | pills/badges only |
 | radius-circle | 50% | arrow/icon controls |
@@ -487,7 +487,7 @@ Required QA widths remain: 320, 360, 375, 390, 414, 430, 480, 576, 600, 640, 720
 | 20px | space-component | card/form gap |
 | 60px | section-md tablet | standard section padding |
 | 70px | control-desktop | hero fields and desktop primary button |
-| radius 3px | radius-control | CTA/input |
+| radius 1px | radius-control | rectangular CTA/input |
 | 2px outline | focus-visible | all keyboard interactive components |
 
 No component token should duplicate a semantic token without a local, documented reason.
@@ -501,8 +501,8 @@ No component token should duplicate a semantic token without a local, documented
 | Eyebrows | 12–24px | 12–14px role | same function should read the same |
 | Body dark text | #1E1E1E, #1D1D1B, #000 | Text primary #1E1E1E | remove duplicate semantics |
 | Muted text | #4F4D49, #656462, #7F7D7A, #CACACA | Text secondary/muted only | contrast and consistency |
-| Primary CTA | 58px mobile, 70px desktop, sharp/radius differences | 58/70px token, radius 3px unless editorial exception approved | one action contract |
-| CTA typography | 16/16px, 16/17.6px, 18/19.8px and 20/20px across roles | 16/17.6px base; 18/19.8px only wide; weight 500 | eliminate same-role label jumps |
+| Primary CTA | 58px mobile, 70px desktop, sharp/radius differences | 58/70px token, radius 1px | one action contract |
+| CTA typography | 16/16px, 16/17.6px, 18/19.8px and 20/20px across roles | 17/18.7px base; 19/20.9px only wide; weight 400 | compensate for the lighter label weight |
 | Slider arrows | 48/56/68px | responsive Icon button token | same function, documented scale |
 | Small interactive controls | 8–34px visual boxes | preserve visual, add 44px minimum hit area | touch and keyboard usability |
 | Header controls | 22–33px icon/link boxes | preserve visual icon, add 44px parent and visible focus ring | header usability and keyboard QA |
@@ -622,4 +622,8 @@ These are specification outputs, not completed implementation changes.
 - Audited header controls at 320/390/540/541/768/1024/1025/1280/1281/1440/1920px; isolated hit-area and keyboard-focus fixes from the rest of the button system. No header CSS was changed.
 - Audited all rectangular homepage controls with the header excluded; recorded dimensions and typography at 390/768/1280/1920px. No button CSS was changed.
 - Applied the first rectangular CTA correction to Hero, Barnes Choice and Project controls; kept header, circular controls and separate form/footer/text-link roles unchanged.
+
+### 2026-10-07
+
 - Unified Newsletter with the rectangular CTA geometry and changed all rectangular action labels to weight `400`; kept header and circular controls unchanged.
+- Increased rectangular action labels to `17px` base / `19px` wide and set the button radius token to `1px`.
