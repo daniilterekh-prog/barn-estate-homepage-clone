@@ -947,9 +947,10 @@
   width: 24px;
 }
 
-.owner-sale-reference-ui .owner-sale-hero-contact svg {
+.owner-sale-reference-ui .owner-sale-hero-contact img {
   display: block;
   height: 20px;
+  object-fit: contain;
   width: 20px;
 }
 
