@@ -593,6 +593,12 @@ body.owner-rent-reference-ui .owner-sale-hero .breadcrumbs__link {
   --newsletter-muted: var(--owner-rent-ui-text-muted);
 }
 
+@media (min-width: 1921px) {
+  .owner-rent-reference-ui .newsletter-cta__inner {
+    max-width: 1720px;
+  }
+}
+
 /* Shared description role across light and media-backed sections. */
 .owner-rent-reference-ui :is(
   .about-company__intro,
