@@ -149,6 +149,7 @@ body.owner-rent-reference-ui .owner-sale-hero .breadcrumbs__link {
   display: grid;
   gap: clamp(32px, 3vw, 56px);
   grid-template-columns: minmax(0, 0.82fr) minmax(0, 1.18fr);
+  padding-block: 0;
 }
 
 .owner-rent-reference-ui .owner-sale-exclusive__header {
@@ -827,15 +828,27 @@ body.owner-rent-reference-ui .owner-sale-hero .breadcrumbs__link {
   }
 }
 
+@media (min-width: 769px) {
+  .owner-rent-reference-ui :is(
+    .owner-sale-presentation,
+    .owner-sale-exclusive,
+    .owner-sale-services,
+    .about-company,
+    .owner-sale-types
+  ) {
+    padding-block: clamp(60px, 4.16667vw, 80px);
+  }
+}
+
 @media (min-width: 901px) {
   .owner-rent-reference-ui .owner-sale-exclusive + .owner-sale-services {
-    margin-top: clamp(-330px, -17vw, -200px);
+    margin-top: clamp(-280px, -19vw, -200px);
     position: relative;
     z-index: 1;
   }
 
   .owner-rent-reference-ui .owner-sale-exclusive__grid {
-    padding-bottom: calc(var(--owner-rent-exclusive-sticky-top) + 40px);
+    padding-bottom: calc(var(--owner-rent-exclusive-sticky-top) + 44px);
   }
 
   .owner-rent-reference-ui .owner-sale-exclusive__item:last-child {
