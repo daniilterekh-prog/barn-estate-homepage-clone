@@ -14,6 +14,10 @@
   --font-weight-medium: 500;
   --font-weight-heading: var(--font-weight-light);
 
+  /* Reference contact-link role for the homepage office/contact block. */
+  --type-contact-link-size: 18px;
+  --type-contact-link-line-height: 1.25;
+
   /* Reference H2 roles — specification tokens only for now. */
   --type-h2-standard-size: 38px;
   --type-h2-standard-line-height: 1.2;
@@ -167,8 +171,20 @@ section.news-section[class] {
   gap: 12px;
 }
 
+/* Keep the contact methods readable without changing their existing 48px hit area. */
+.office-contact__social[class] {
+  font-size: var(--type-contact-link-size);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--type-contact-link-line-height);
+}
+
 @media (max-width: 540px) {
   .barnes-choice__heading[class] {
     gap: 8px;
+  }
+
+  :root {
+    --type-contact-link-size: 16px;
+    --type-contact-link-line-height: 1.25;
   }
 }

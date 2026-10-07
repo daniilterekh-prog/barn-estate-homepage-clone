@@ -314,6 +314,15 @@ Keep the existing BARNES icon family and current font/SVG source. Normalize by f
 
 Stroke/fill should follow the existing icon family; do not mix a new icon set into the homepage.
 
+## Office/contact Link Reference
+
+The WhatsApp, Telegram, MAX and phone links use the same interactive contact-link role:
+
+- Desktop/tablet: `18px / 22.5px`, weight `400`.
+- Mobile: `16px / 20px`, weight `400`.
+- Existing control height remains `48px`; the change affects text readability only.
+- Existing icon sizing and horizontal spacing remain unchanged.
+
 ## Radius, Borders and Elevation
 
 | Token | Value | Use |
@@ -508,3 +517,4 @@ These are specification outputs, not completed implementation changes.
 - Locked the current homepage typography, color, spacing and component decisions as the Homepage Reference UI Kit; global-site promotion remains out of scope.
 - Unified Services, Barnes Choice, Departments and News eyebrow styles: 12px mobile, 14px from tablet through wide desktop, weight 400, 0.12em tracking and Text secondary color.
 - Added Barnes Choice eyebrow `Недвижимость по направлениям` and Departments eyebrow `Выбрать направление`; removed the Reviews eyebrow.
+- Increased homepage office/contact method labels to the reference contact-link role: 18/22.5px from tablet through wide desktop and 16/20px on mobile; retained the 48px touch target.
