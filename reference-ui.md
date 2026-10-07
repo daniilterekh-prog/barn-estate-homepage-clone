@@ -293,6 +293,27 @@ No button CSS was changed as part of this audit snapshot; these are the next ref
 
 Slider arrows: 48px mobile, 56px desktop, 68px wide. Use disabled state instead of hiding unavailable navigation. Menu/close/favorite/search parents must be at least 44×44px even when the visual icon is smaller.
 
+### Header button audit snapshot — 2026-10-07
+
+The header was checked separately at 320, 390, 768, 1024, 1280, 1440 and 1920px:
+
+| Control | Current rendered / interactive box | Typography / state | Finding |
+|---|---:|---|---|
+| Mobile menu `.site-header__icon-btn` | `29×29px` at ≤540px; `33×33px` above 540px | icon-only; transparent; hover opacity; no visible focus ring | visual size is intentional, hit area is below `44×44px` |
+| Mobile phone `.site-header__mobile-phone` | `22×22px` at ≤540px | icon-only; transparent; default focus is visible | hit area is below `44×44px` |
+| Favorites `.site-header__favorites-btn` | `22×22px` above 540px | icon-only; transparent; hover opacity; no visible focus ring | hit area is below `44×44px` |
+| Search `.site-header__search-btn` | `22px` icon at 541–1024px; about `72×22px` with label from 1025px | label `16/16px`, weight `400` in computed snapshot; no visible focus ring | label is readable, vertical hit area is too small |
+| Header phone `.site-header__phone` | about `168×21px` from 1025px | `16/16px`, weight `300`; default focus visible | text link needs a 44px vertical parent area |
+
+Header-specific state findings:
+
+- Hover exists for desktop controls as opacity reduction (`.75–.8`), with no transform or layout shift.
+- Menu, favorites and search declare `outline: none` but do not provide a replacement `:focus-visible` treatment in the current computed state.
+- The visual icon sizes should remain unchanged; only the invisible interactive parent should grow.
+- Recommended reference: `44×44px` minimum parent for mobile menu/phone and desktop menu/favorites/search icon actions, `44px` minimum height for text phone/search links, with a visible `2px` focus ring and `2px` offset.
+
+The header navigation itself remains outside this button pass. Its current visibility switches at the `1280/1281px` boundary and is documented separately as a navigation breakpoint issue.
+
 ## Reference Links
 
 | Link role | Reference style | States |
@@ -443,6 +464,7 @@ No component token should duplicate a semantic token without a local, documented
 | CTA typography | 16/16px, 16/17.6px, 18/19.8px and 20/20px across roles | 16/17.6px base; 18/19.8px only wide; weight 500 | eliminate same-role label jumps |
 | Slider arrows | 48/56/68px | responsive Icon button token | same function, documented scale |
 | Small interactive controls | 8–34px visual boxes | preserve visual, add 44px minimum hit area | touch and keyboard usability |
+| Header controls | 22–33px icon/link boxes | preserve visual icon, add 44px parent and visible focus ring | header usability and keyboard QA |
 | Footer links | 11px mobile to 18px wide | 13/18 minimum mobile, 16/16 desktop | readability |
 | Focus | outline none in many controls | visible 2px focus-visible | keyboard QA |
 | Hero search | empty label | explicit label | form semantics |
@@ -476,6 +498,8 @@ These are specification outputs, not completed implementation changes.
 | R-021 | CTA radius | primary controls use both `0` and `3px` | use `3px` standard; keep sharp only as documented editorial exception | P3 |
 | R-022 | Interactive hit areas | header icons 22–33px, tabs 24–34px, pagination 8px, close 30px | add invisible minimum `44×44px` parents without changing visual icons/dots | P2 |
 | R-023 | Newsletter/footer actions | newsletter `54/58px`, footer callback `50/56px`, both radius `0` | map to Primary/Secondary contracts or document intentional compact editorial variants | P3 |
+| R-024 | Header hit areas | menu `29/33px`, phone/favorites `22px`, text phone `21px` high | add invisible minimum `44×44px`/`44px` height without changing icon or text visuals | P2 |
+| R-025 | Header focus | menu/favorites/search compute to `outline: none` | add visible `:focus-visible` ring, 2px with 2px offset | P2 |
 
 ## Safe to Unify
 
@@ -553,3 +577,4 @@ These are specification outputs, not completed implementation changes.
 - Added Barnes Choice eyebrow `Недвижимость по направлениям` and Departments eyebrow `Выбрать направление`; removed the Reviews eyebrow.
 - Increased homepage office/contact method labels to the reference contact-link role: 18/22.5px from tablet through wide desktop and 16/20px on mobile; retained the 48px touch target.
 - Audited homepage buttons and interactive links at 390/768/1280/1920px; documented CTA height/type divergence, radius divergence and undersized hit areas. No button CSS was changed.
+- Audited header controls at 320/390/768/1024/1280/1440/1920px; isolated hit-area and keyboard-focus fixes from the rest of the button system. No header CSS was changed.
