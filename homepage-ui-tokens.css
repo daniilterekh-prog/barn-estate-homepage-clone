@@ -127,6 +127,12 @@ html body {
   }
 }
 
+@media (min-width: 1025px) {
+  :root {
+    --space-eyebrow-to-heading: 25px;
+  }
+}
+
 /*
  * First spacing implementation pass. The [class] qualifier matches the
  * specificity of the snapshot's scoped component rules without depending on
