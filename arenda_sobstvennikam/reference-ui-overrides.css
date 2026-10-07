@@ -147,7 +147,7 @@
   display: flex;
   gap: 16px;
   justify-content: space-between;
-  margin: 28px max(20px, 4.75vw) 0 auto;
+  margin: 28px auto 0 max(20px, 4.75vw);
   min-height: 70px;
   padding: 16px 24px 16px 36px;
   position: relative;
@@ -178,6 +178,31 @@
   position: absolute;
   right: 0;
   top: 0;
+}
+
+.owner-rent-reference-ui .owner-sale-services__card:hover,
+.owner-rent-reference-ui .owner-sale-services__card:focus-within {
+  background: var(--owner-rent-ui-brand) !important;
+  border-color: #fff !important;
+  color: #fff !important;
+}
+
+.owner-rent-reference-ui .owner-sale-services__card:hover::before,
+.owner-rent-reference-ui .owner-sale-services__card:focus-within::before {
+  background: #fff;
+}
+
+.owner-rent-reference-ui .owner-sale-services__card:hover .owner-sale-services__number,
+.owner-rent-reference-ui .owner-sale-services__card:focus-within .owner-sale-services__number {
+  border-color: #fff;
+  color: #fff;
+}
+
+.owner-rent-reference-ui .owner-sale-services__card:hover .owner-sale-services__text,
+.owner-rent-reference-ui .owner-sale-services__card:focus-within .owner-sale-services__text,
+.owner-rent-reference-ui .owner-sale-services__card:hover .owner-sale-services__text strong,
+.owner-rent-reference-ui .owner-sale-services__card:focus-within .owner-sale-services__text strong {
+  color: #fff;
 }
 
 .owner-rent-reference-ui .owner-sale-services__number {
@@ -338,7 +363,7 @@
   }
 
   .owner-rent-reference-ui .owner-sale-services__cta {
-    margin: 24px 20px 0 auto;
+    margin: 24px auto 0 20px;
     min-height: 58px;
     padding: 14px 20px 14px 24px;
     width: calc(100% - 40px);
