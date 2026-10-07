@@ -322,8 +322,9 @@ body.owner-rent-reference-ui .owner-sale-hero .breadcrumbs__link {
   background: var(--owner-rent-ui-brand);
   color: #fff;
   display: flex;
-  gap: 16px;
+  gap: 24px;
   justify-content: space-between;
+  line-height: 18.7px;
   margin: 28px auto 0 max(
     var(--owner-rent-services-gutter),
     calc((100% - 1920px) / 2 + 100px)
@@ -331,14 +332,26 @@ body.owner-rent-reference-ui .owner-sale-hero .breadcrumbs__link {
   min-height: 70px;
   padding: 16px 24px 16px 36px;
   position: relative;
+  text-align: left;
   text-decoration: none;
   width: 360px;
   z-index: 2;
 }
 
 .owner-rent-reference-ui .owner-sale-services__cta span {
-  font-size: 22px;
-  line-height: 1;
+  align-items: center;
+  display: flex;
+  flex: 0 0 16px;
+  height: 16px;
+  justify-content: center;
+  line-height: 0;
+  width: 16px;
+}
+
+.owner-rent-reference-ui .owner-sale-services__cta svg {
+  display: block;
+  height: 16px;
+  width: 16px;
 }
 
 .owner-rent-reference-ui .owner-sale-services__card {
@@ -604,7 +617,7 @@ body.owner-rent-reference-ui .owner-sale-hero .breadcrumbs__link {
   .owner-rent-reference-ui .owner-sale-services__cta {
     margin: 24px auto 0 var(--owner-rent-services-gutter);
     min-height: 58px;
-    padding: 14px 20px 14px 24px;
+    padding: 16px 24px;
     width: calc(100% - 2 * var(--owner-rent-services-gutter));
   }
 
