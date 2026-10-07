@@ -79,11 +79,6 @@
 
   enhanceHeroHeader();
 
-  const heroButtonIcon = page.querySelector('.owner-sale-hero__button-icon');
-  if (heroButtonIcon) {
-    heroButtonIcon.innerHTML = '<svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 13 13 3M5 3h8v8" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25"></path></svg>';
-  }
-
   if (!menu && menuButton) {
     menu = document.createElement('aside');
     menu.className = 'owner-sale-clone-menu';

@@ -1032,13 +1032,6 @@
   gap: 24px;
 }
 
-.owner-sale-reference-ui .owner-sale-hero__button-icon,
-.owner-sale-reference-ui .owner-sale-hero__button-icon svg {
-  display: block;
-  height: 16px;
-  width: 16px;
-}
-
 @media (min-width: 1441px) {
   .owner-sale-reference-ui .owner-sale-hero {
     min-height: 1040px;
