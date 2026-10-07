@@ -173,6 +173,7 @@ body.owner-rent-reference-ui .owner-sale-hero .breadcrumbs__link {
 
 .owner-rent-reference-ui .layout__header .site-header__subnav-link {
   color: rgba(255, 255, 255, 0.8);
+  white-space: nowrap;
 }
 
 .owner-rent-reference-ui .layout__header .site-header__subnav-link:hover,
@@ -182,6 +183,10 @@ body.owner-rent-reference-ui .owner-sale-hero .breadcrumbs__link {
 }
 
 @media (min-width: 1025px) {
+  .owner-rent-reference-ui .owner-sale-hero {
+    min-height: 840px;
+  }
+
   .owner-rent-reference-ui .owner-sale-hero__inner {
     padding-top: 210px;
   }
@@ -254,6 +259,12 @@ body.owner-rent-reference-ui .owner-sale-hero .breadcrumbs__link {
   ):focus-visible {
     outline: var(--owner-rent-ui-focus-width) solid #fff;
     outline-offset: var(--owner-rent-ui-focus-offset);
+  }
+}
+
+@media (min-width: 1441px) {
+  .owner-rent-reference-ui .owner-sale-hero {
+    min-height: 980px;
   }
 }
 
