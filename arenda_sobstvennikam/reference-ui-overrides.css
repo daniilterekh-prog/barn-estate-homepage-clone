@@ -725,11 +725,13 @@ body.owner-rent-reference-ui .owner-sale-hero .breadcrumbs__link {
 }
 
 .owner-rent-reference-ui .catalog-consultation__submit {
-  background: #a51e2a;
-  border: 1px solid #a51e2a;
+  background: var(--owner-rent-ui-brand);
+  border: 1px solid var(--owner-rent-ui-brand);
   color: #fff;
   font: inherit;
-  font-size: 16px;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 18.7px;
   min-height: 70px;
   padding: 18px 28px;
   transition: background-color 200ms ease, color 200ms ease;
@@ -737,8 +739,9 @@ body.owner-rent-reference-ui .owner-sale-hero .breadcrumbs__link {
 }
 
 .owner-rent-reference-ui .catalog-consultation__submit:hover {
-  background: #fff;
-  color: #8b1d25;
+  background: #741820;
+  border-color: #741820;
+  color: #fff;
 }
 
 .owner-rent-reference-ui .catalog-consultation__consent {
@@ -900,8 +903,16 @@ body.owner-rent-reference-ui .owner-sale-hero .breadcrumbs__link {
   }
 
   .owner-rent-reference-ui .catalog-consultation__submit {
-    font-size: 16px;
+    font-size: 18px;
+    line-height: 19.8px;
     min-height: 58px;
+  }
+}
+
+@media (min-width: 1441px) {
+  .owner-rent-reference-ui .catalog-consultation__submit {
+    font-size: 19px;
+    line-height: 20.9px;
   }
 }
 
