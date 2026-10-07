@@ -145,6 +145,17 @@ body.owner-rent-reference-ui .owner-sale-hero .breadcrumbs__link {
   color: #fff;
 }
 
+.owner-rent-reference-ui .layout__header .site-header__icon--search {
+  font-size: 24px;
+  height: 24px;
+  width: 24px;
+}
+
+.owner-rent-reference-ui .layout__header .site-header__icon--search svg {
+  height: 24px;
+  width: 24px;
+}
+
 /* The route has its own post-hero sticky header. Keep the hero header in the
    normal document flow when the framework adds its intermediate state. */
 .owner-rent-reference-ui .layout__header .site-header--scrolled:not(.site-header--menu-open) {
