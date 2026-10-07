@@ -33,6 +33,7 @@ The following homepage UI decisions are now the single reference baseline for th
 - Typography: Tilda Sans with weights `300 / 400 / 500`; heading weight `300`.
 - H2 Standard: `38px / 45.6px` base, `22px / 26.4px` mobile, `44px / 52.8px` wide.
 - H2 Compact: `38px / 38px` base, `22px / 22px` mobile, `44px / 44px` wide.
+- Eyebrow: `12px / 14.4px` mobile and `14px / 16.1px` tablet/desktop/wide, weight `400`, tracking `0.12em`, semantic color `#4F4D49`.
 - Colors: semantic primary `#1E1E1E`, secondary `#4F4D49`, muted `#656462`, brand `#8B1D25`, surface `#F1F1F1`, dark surface `#262626`, border `#E4E4E4`.
 - Spacing: `8 / 16 / 24 / 32px` component scale and `50 / 64 / 72 / 96px` responsive section scale.
 - Standard section spacing is applied to Services, Barnes Choice, Departments, Reviews, Video, Team, Partners and News.
@@ -98,7 +99,7 @@ The canonical value to reuse first in later UI Kit work is the base/medium H2 va
 | Lead / Body Large | 15/21px mobile; 22/33px desktop; weight 300 | fluid within content width | section intro and editorial lead |
 | Body | 16/22.4px, weight 300/400 | stable | paragraphs and supporting copy |
 | Secondary | 13/18px, weight 300/400 | stable | metadata, helper, form notes |
-| Eyebrow | 12–14px/1.15, weight 400, letter-spacing 1.4–1.9px | do not exceed 14px for same role | section label |
+| Eyebrow | 12/14.4px mobile; 14/16.1px tablet/desktop/wide, weight 400, letter-spacing 0.12em, #4F4D49 | no breakpoint growth above 14px | Services, Reviews and News section label |
 | Navigation | 16/16px desktop, 18/18px wide, weight 300, uppercase | hidden/compact below available-space threshold | header navigation |
 | Button label | 16/17.6px desktop, 16px mobile, weight 500 | 18px only at wide scale | actions |
 | Form label | 14/20px, weight 400 | explicit visible or visually hidden label | all fields |
@@ -111,7 +112,7 @@ The canonical value to reuse first in later UI Kit work is the base/medium H2 va
 | Services/section title | 22/26.4, 38/45.6, 44/52.8 | H2 Standard | SAFE TO UNIFY |
 | Barnes/team/news title | 22/22, 38/38, 44/44 | H2 Compact for short editorial headings | INTENTIONAL, document role |
 | About title | 22/26.4 with negative tracking; 44/43.12 desktop | preserve as Brand Editorial, not a third generic H2 | INTENTIONAL |
-| Eyebrows | 12, 13, 16, 22, 24px | 12–14px, role-based tracking | SAFE TO UNIFY |
+| Eyebrows | 12, 13, 16, 22, 24px; #CACACA and rgba dark grey | 12/14.4px mobile; 14/16.1px tablet/desktop/wide; 400; 0.12em; #4F4D49 | FIXED IN REFERENCE CSS |
 | Footer links | 11/11 mobile, 16/16 desktop | minimum 13/18 mobile | SAFE TO UNIFY |
 | Page heading | no h1 | add semantic H1 using hero/display visual role | SAFE TO UNIFY |
 
@@ -423,7 +424,7 @@ These are specification outputs, not completed implementation changes.
 | R-011 | SEO | canonical absent locally | add self-canonical | P3 |
 | R-012 | Images | 32/126 missing alt | classify decorative/informative | P3 |
 | R-013 | Footer | 11/11px mobile links | use readable footer token | P3 |
-| R-014 | Typography | eyebrows 12/13/16/22/24px | map to 12–14px role | P3 |
+| R-014 | Typography | eyebrows 12/13/16/22/24px | map to 12/14.4px mobile and 14/16.1px tablet/desktop/wide; 400; 0.12em; #4F4D49 | P3 |
 | R-015 | Colors | three dark primary text values | consolidate Text primary | P3 |
 | R-016 | Reviews | author metadata is footer landmark | use citation wrapper without footer landmark | P3 |
 | R-017 | ARIA | menu/tab relationships incomplete | add disclosure and tabpanel relations | P3 |
@@ -502,3 +503,4 @@ These are specification outputs, not completed implementation changes.
 - Fixed the homepage reference spacing base/medium token at `72px`; retained `50px` mobile, `64px` tablet and `96px` wide steps for standard sections.
 - Applied `section-md` spacing to the standard section family; kept About, Projects, Office and Newsletter as editorial exceptions.
 - Locked the current homepage typography, color, spacing and component decisions as the Homepage Reference UI Kit; global-site promotion remains out of scope.
+- Unified Services, Reviews and News eyebrow styles: 12px mobile, 14px from tablet through wide desktop, weight 400, 0.12em tracking and Text secondary color.

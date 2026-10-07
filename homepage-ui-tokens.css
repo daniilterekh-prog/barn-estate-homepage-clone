@@ -134,3 +134,24 @@ section.news-section[class] {
     padding-block: var(--space-section-md);
   }
 }
+
+/* Locked eyebrow role for the homepage reference UI Kit. */
+.services-section__eyebrow[class],
+.reviews-section__eyebrow[class],
+.news-section__eyebrow[class] {
+  color: var(--color-text-secondary);
+  font-size: 14px;
+  font-weight: var(--font-weight-regular);
+  letter-spacing: 0.12em;
+  line-height: 1.15;
+  text-transform: uppercase;
+}
+
+@media (max-width: 540px) {
+  .services-section__eyebrow[class],
+  .reviews-section__eyebrow[class],
+  .news-section__eyebrow[class] {
+    font-size: 12px;
+    line-height: 1.2;
+  }
+}
