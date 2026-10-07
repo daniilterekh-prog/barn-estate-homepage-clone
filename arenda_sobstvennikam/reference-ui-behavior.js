@@ -425,6 +425,27 @@
     });
   }
 
+  function enhanceTypesHeading() {
+    var section = document.querySelector('.owner-sale-types');
+    var inner = section && section.querySelector('.owner-sale-types__inner');
+
+    if (!section || !inner) return;
+
+    var header = inner.querySelector(':scope > .owner-sale-types__header');
+    if (!header) {
+      header = document.createElement('header');
+      header.className = 'owner-sale-types__header';
+      header.innerHTML = [
+        '<p class="owner-sale-types__eyebrow owner-rent-section-eyebrow">НАПРАВЛЕНИЯ BARNES</p>',
+        '<h2 class="owner-sale-types__section-title" id="owner-rent-types-title">НЕДВИЖИМОСТЬ ДЛЯ ПРОДАЖИ</h2>'
+      ].join('');
+      inner.insertBefore(header, inner.firstChild);
+    }
+
+    section.setAttribute('aria-labelledby', 'owner-rent-types-title');
+    section.removeAttribute('aria-label');
+  }
+
   function scheduleServicesEnhancement() {
     window.clearTimeout(enhancementTimer);
     enhancementTimer = window.setTimeout(function () {
@@ -436,6 +457,7 @@
       enhanceServicesSection();
       enhanceExclusiveSection();
       enhanceSectionHeadings();
+      enhanceTypesHeading();
       enhanceTypeCardActions();
       setupExclusiveScrollAnimation();
     }, 600);
