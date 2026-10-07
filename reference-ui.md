@@ -37,6 +37,9 @@ The following homepage UI decisions are now the single reference baseline for th
 - Colors: semantic primary `#1E1E1E`, secondary `#4F4D49`, muted `#656462`, brand `#8B1D25`, surface `#F1F1F1`, dark surface `#262626`, border `#E4E4E4`.
 - Spacing: `8 / 16 / 24 / 32px` component scale and `50 / 64 / 72 / 96px` responsive section scale.
 - Standard section spacing is applied to Services, Barnes Choice, Departments, Reviews, Video, Team, Partners and News.
+- Barnes Choice eyebrow: `Недвижимость по направлениям`.
+- Departments eyebrow: `Выбрать направление`.
+- Reviews intentionally has no eyebrow; its title is `Отзывы`.
 - About, Projects, Office and Newsletter remain intentional editorial exceptions until separately reviewed.
 - Container, grid, buttons, links, cards, forms, icons, radius and responsive rules remain governed by the specifications below.
 
@@ -49,11 +52,11 @@ This is a homepage reference UI Kit, not a global site-wide token contract.
 | 1 | Header | brand, navigation, conversion actions | logo, nav, phone, menu, callback | transparent → white on scroll | base |
 | 2 | Hero / filters | first impression and property search | video, tabs, filters, search, submit | media + overlay | full-bleed media + base controls |
 | 3 | Services | explain service offer | eyebrow, H2, lead, 3 cards | white | base |
-| 4 | Barnes choice | recommended properties | tabs, cards, CTA, arrows | white | base |
+| 4 | Barnes choice | recommended properties | eyebrow, title, tabs, cards, CTA, arrows | white | base |
 | 5 | About company | brand/editorial proof | title, copy, statistics, expand | white | editorial |
-| 6 | Departments | entry points by property type | title, 7 category tiles | white | base |
+| 6 | Departments | entry points by property type | eyebrow, title, 7 category tiles | white | base |
 | 7 | Projects | project promotion | 2 project slides, media, arrows | image/media | full section + base controls |
-| 8 | Reviews | trust and social proof | eyebrow, title, quote, author, arrows | white | base |
+| 8 | Reviews | trust and social proof | title, quote, author, arrows | white | base |
 | 9 | Video | editorial media | video controls | white | base |
 | 10 | Team | people and expertise | eyebrow, title, profile cards | white | base |
 | 11 | Partners | partner proof | title, copy, logo tracks | white | base |
@@ -99,7 +102,7 @@ The canonical value to reuse first in later UI Kit work is the base/medium H2 va
 | Lead / Body Large | 15/21px mobile; 22/33px desktop; weight 300 | fluid within content width | section intro and editorial lead |
 | Body | 16/22.4px, weight 300/400 | stable | paragraphs and supporting copy |
 | Secondary | 13/18px, weight 300/400 | stable | metadata, helper, form notes |
-| Eyebrow | 12/14.4px mobile; 14/16.1px tablet/desktop/wide, weight 400, letter-spacing 0.12em, #4F4D49 | no breakpoint growth above 14px | Services, Reviews and News section label |
+| Eyebrow | 12/14.4px mobile; 14/16.1px tablet/desktop/wide, weight 400, letter-spacing 0.12em, #4F4D49 | no breakpoint growth above 14px | Services, Barnes Choice, Departments and News section label |
 | Navigation | 16/16px desktop, 18/18px wide, weight 300, uppercase | hidden/compact below available-space threshold | header navigation |
 | Button label | 16/17.6px desktop, 16px mobile, weight 500 | 18px only at wide scale | actions |
 | Form label | 14/20px, weight 400 | explicit visible or visually hidden label | all fields |
@@ -503,4 +506,5 @@ These are specification outputs, not completed implementation changes.
 - Fixed the homepage reference spacing base/medium token at `72px`; retained `50px` mobile, `64px` tablet and `96px` wide steps for standard sections.
 - Applied `section-md` spacing to the standard section family; kept About, Projects, Office and Newsletter as editorial exceptions.
 - Locked the current homepage typography, color, spacing and component decisions as the Homepage Reference UI Kit; global-site promotion remains out of scope.
-- Unified Services, Reviews and News eyebrow styles: 12px mobile, 14px from tablet through wide desktop, weight 400, 0.12em tracking and Text secondary color.
+- Unified Services, Barnes Choice, Departments and News eyebrow styles: 12px mobile, 14px from tablet through wide desktop, weight 400, 0.12em tracking and Text secondary color.
+- Added Barnes Choice eyebrow `Недвижимость по направлениям` and Departments eyebrow `Выбрать направление`; removed the Reviews eyebrow.

@@ -136,6 +136,8 @@ section.news-section[class] {
 }
 
 /* Locked eyebrow role for the homepage reference UI Kit. */
+.barnes-choice__eyebrow[class],
+.departments-section__eyebrow[class],
 .services-section__eyebrow[class],
 .reviews-section__eyebrow[class],
 .news-section__eyebrow[class] {
@@ -148,10 +150,25 @@ section.news-section[class] {
 }
 
 @media (max-width: 540px) {
+  .barnes-choice__eyebrow[class],
+  .departments-section__eyebrow[class],
   .services-section__eyebrow[class],
   .reviews-section__eyebrow[class],
   .news-section__eyebrow[class] {
     font-size: 12px;
     line-height: 1.2;
+  }
+}
+
+.barnes-choice__heading[class] {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+@media (max-width: 540px) {
+  .barnes-choice__heading[class] {
+    gap: 8px;
   }
 }

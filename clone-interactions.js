@@ -1,6 +1,32 @@
 (() => {
   const expertImage = "https://barn-estate.ru/pictures/consultation/cta-ruslan-pruss.webp";
 
+  const mountHomepageReferenceLabels = () => {
+    const insertEyebrow = (headingSelector, className, text) => {
+      const heading = document.querySelector(headingSelector);
+      if (!heading || heading.previousElementSibling?.classList.contains(className)) return;
+
+      const eyebrow = document.createElement("p");
+      eyebrow.className = className;
+      eyebrow.textContent = text;
+      heading.parentElement.insertBefore(eyebrow, heading);
+    };
+
+    insertEyebrow(
+      ".barnes-choice__title",
+      "barnes-choice__eyebrow",
+      "Недвижимость по направлениям",
+    );
+    insertEyebrow(
+      ".departments-section__title",
+      "departments-section__eyebrow",
+      "Выбрать направление",
+    );
+    document.querySelector(".reviews-section__eyebrow")?.remove();
+  };
+
+  setTimeout(mountHomepageReferenceLabels, 900);
+
   const mountExpertCard = () => {
     if (document.querySelector(".floating-expert")) return;
 
