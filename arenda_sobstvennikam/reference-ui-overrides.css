@@ -528,6 +528,8 @@ body.owner-rent-reference-ui .owner-sale-hero .breadcrumbs__link {
 
 .owner-rent-reference-ui .site-footer__callback-btn {
   border-radius: var(--owner-rent-ui-control-radius);
+  font-size: 17px;
+  line-height: 18.7px;
   font-weight: var(--owner-rent-ui-body-weight);
 }
 
@@ -555,9 +557,46 @@ body.owner-rent-reference-ui .owner-sale-hero .breadcrumbs__link {
 }
 
 .owner-rent-reference-ui .site-footer__link {
-  font-weight: var(--owner-rent-ui-body-weight);
+  font-weight: 300;
   text-decoration-thickness: 1px;
   text-underline-offset: 3px;
+}
+
+@media (min-width: 1200px) {
+  .owner-rent-reference-ui .site-footer__nav {
+    align-items: start;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+
+  .owner-rent-reference-ui .site-footer__nav > .site-footer__column:nth-child(6) {
+    grid-column: 4;
+    grid-row: 1;
+  }
+
+  .owner-rent-reference-ui .site-footer__nav > .site-footer__column:nth-child(4) {
+    grid-column: 5;
+    grid-row: 1;
+  }
+
+  .owner-rent-reference-ui .site-footer__nav > .site-footer__column:nth-child(5) {
+    grid-column: 6;
+    grid-row: 1;
+  }
+
+  .owner-rent-reference-ui .site-footer__nav > .site-footer__column:nth-child(7) {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .owner-rent-reference-ui .site-footer__nav > .site-footer__column:nth-child(8) {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .owner-rent-reference-ui .site-footer__nav > .site-footer__column:nth-child(9) {
+    grid-column: 3;
+    grid-row: 2;
+  }
 }
 
 @media (min-width: 1441px) {
@@ -724,12 +763,18 @@ body.owner-rent-reference-ui .owner-sale-hero .breadcrumbs__link {
     min-height: 58px;
   }
 
-  .owner-rent-reference-ui .newsletter-cta {
-    margin-bottom: 40px;
+  .owner-rent-reference-ui .site-footer {
+    margin-top: 40px;
+  }
+
+  .owner-rent-reference-ui .site-footer__column-title {
+    font-size: 14px;
+    line-height: 16.8px;
   }
 
   .owner-rent-reference-ui .site-footer__link {
     font-size: 13px;
+    font-weight: 400;
     line-height: 18.2px;
   }
 }
@@ -960,6 +1005,11 @@ body.owner-rent-reference-ui .owner-sale-hero .breadcrumbs__link {
   .owner-rent-reference-ui .newsletter-form button {
     padding-inline: 47px;
   }
+
+  .owner-rent-reference-ui .site-footer__callback-btn {
+    font-size: 19px;
+    line-height: 20.9px;
+  }
 }
 
 @media (max-width: 540px) {
@@ -983,6 +1033,8 @@ body.owner-rent-reference-ui .owner-sale-hero .breadcrumbs__link {
   }
 
   .owner-rent-reference-ui .site-footer__callback-btn {
+    font-size: 18px;
+    line-height: 19.8px;
     min-height: 54px;
   }
 }
