@@ -726,6 +726,16 @@ body.owner-rent-reference-ui .owner-sale-hero .breadcrumbs__link {
   text-indent: 0;
 }
 
+@media (min-width: 1280px) {
+  .owner-rent-reference-ui .owner-sale-exclusive__inner {
+    grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
+  }
+
+  .owner-rent-reference-ui .owner-sale-exclusive__title-line {
+    white-space: nowrap;
+  }
+}
+
 @media (min-width: 901px) {
   .owner-rent-reference-ui .owner-sale-exclusive__grid {
     padding-bottom: calc(var(--owner-rent-exclusive-sticky-top) + 40px);
