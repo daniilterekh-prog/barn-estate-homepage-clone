@@ -305,7 +305,7 @@ This inventory includes rectangular `<button>` elements and anchors styled as co
 | Project outline `.project-hero__cta` | `204×58px` | `228×70px` | `228×70px` | `266×70px` | `17/18.7px`, weight `400`; `19/20.9px` wide |
 | About text CTA `.ui-more-link` | `141×25px` | `141×25px` | `141×25px` | `141×25px` | `14/16.8px`, weight `300` |
 | News text CTA `.news-section__action` | `206×25px` | `206×25px` | `206×25px` | `206×25px` | `14/16.8px`, weight `400` |
-| Office/contact `.office-contact__social` | `335×48px` | `315×48px` | `226×48px` | `348×48px` | `16/20px` mobile; `18/22.5px` otherwise, weight `400` |
+| Office/contact `.office-contact__social` | `335×48px` | `315×48px` | `225×48px` | `348×48px` | `17/18.7px` mobile/tablet/desktop; `19/20.9px` wide, weight `400` |
 | Newsletter submit | `335×58px` | `199×70px` | `199×70px` | `233×70px` | `17/18.7px`, weight `400`; `19/20.9px` wide |
 | Footer callback `.site-footer__callback-btn` | `294×53px` | `705×56px` | `294×56px` | `334×56px` | `17/18.7px`, weight `400`; `19/20.9px` wide |
 | Floating expert `.floating-expert__card` | `343×97px` | `360×110px` | `360×110px` | `360×110px` | `16/16px`, weight `400` |
@@ -406,10 +406,11 @@ Stroke/fill should follow the existing icon family; do not mix a new icon set in
 
 ## Office/contact Link Reference
 
-The WhatsApp, Telegram, MAX and phone links use the same interactive contact-link role:
+The WhatsApp, Telegram, MAX and phone links use the same interactive contact-link role as the rectangular homepage actions:
 
-- Desktop/tablet: `18px / 22.5px`, weight `400`.
-- Mobile: `16px / 20px`, weight `400`.
+- Desktop/tablet: `17px / 18.7px`, weight `400`.
+- Wide desktop: `19px / 20.9px`, weight `400`.
+- Mobile: `17px / 18.7px`, weight `400`.
 - Existing control height remains `48px`; the change affects text readability only.
 - Existing icon sizing and horizontal spacing remain unchanged.
 
@@ -627,3 +628,4 @@ These are specification outputs, not completed implementation changes.
 
 - Unified Newsletter with the rectangular CTA geometry and changed all rectangular action labels to weight `400`; kept header and circular controls unchanged.
 - Increased rectangular action labels to `17px` base / `19px` wide and set the button radius token to `1px`.
+- Aligned Office/Contact communication links to the same `17px / 19px`, weight `400` typography while preserving their `48px` hit area.

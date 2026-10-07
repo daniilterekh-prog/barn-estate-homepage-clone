@@ -26,8 +26,8 @@
   --control-cta-radius: 1px;
 
   /* Reference contact-link role for the homepage office/contact block. */
-  --type-contact-link-size: 18px;
-  --type-contact-link-line-height: 1.25;
+  --type-contact-link-size: 17px;
+  --type-contact-link-line-height: 1.1;
 
   /* Reference H2 roles — specification tokens only for now. */
   --type-h2-standard-size: 38px;
@@ -118,6 +118,8 @@ html body {
     --type-h2-compact-size: 44px;
     --type-h2-compact-line-height: 1;
     --space-section-md: 96px;
+    --type-contact-link-size: 19px;
+    --type-contact-link-line-height: 1.1;
   }
 }
 
@@ -249,8 +251,8 @@ section.news-section[class] {
   }
 
   :root {
-    --type-contact-link-size: 16px;
-    --type-contact-link-line-height: 1.25;
+    --type-contact-link-size: 17px;
+    --type-contact-link-line-height: 1.1;
   }
 
   :is(
