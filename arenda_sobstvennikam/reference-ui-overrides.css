@@ -140,6 +140,18 @@ body.owner-rent-reference-ui .owner-sale-hero .breadcrumbs__link {
   line-height: 18px;
 }
 
+/* The hero header uses the same department navigation as the homepage. */
+.owner-rent-reference-ui .layout__header .site-header__nav-link {
+  color: #fff;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .owner-rent-reference-ui .layout__header .site-header__nav-link:hover {
+    color: #fff;
+    opacity: 0.72;
+  }
+}
+
 .owner-rent-reference-ui .owner-sale-magazine {
   display: none;
 }

@@ -59,6 +59,36 @@
     button.innerHTML = 'Обсудить стратегию <span class="owner-sale-hero__button-arrow" aria-hidden="true"><svg viewBox="0 0 16 16" focusable="false"><path d="M3 13 13 3M5 3h8v8" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25"></path></svg></span>';
   }
 
+  function enhanceHeroHeader() {
+    var header = document.querySelector('.layout__header .site-header');
+    var inner = header && header.querySelector('.site-header__inner');
+
+    if (!header || !inner) return;
+
+    header.classList.remove('site-header--no-nav');
+    if (inner.querySelector(':scope > .site-header__nav')) return;
+
+    var items = [
+      ['Москва', 'https://barn-estate.ru/gorodskaya-nedvizhimost/'],
+      ['Загородная', 'https://barn-estate.ru/zagorodnaya-nedvizhimost/'],
+      ['Коммерческая', 'https://barn-estate.ru/kommercheskaya-nedvizhimost/'],
+      ['Курортная', 'https://barn-estate.ru/kurortnaya/'],
+      ['Зарубежная', 'https://barn-estate.ru/mezhdunarodnaya-nedvizhimost/'],
+      ['Санкт-Петербург', 'https://barnes-spb.ru'],
+      ['Медиа', 'https://barn-estate.ru/media/'],
+      ['О BARNES', 'https://barn-estate.ru/mir-barnes/'],
+      ['Собственникам', 'https://barn-estate.ru/sobstvennikam/']
+    ];
+    var nav = document.createElement('nav');
+    nav.className = 'site-header__nav';
+    nav.setAttribute('aria-label', 'Основное меню');
+    nav.setAttribute('data-v-7912d681', '');
+    nav.innerHTML = '<ul class="site-header__nav-list" data-v-7912d681>' + items.map(function (item) {
+      return '<li class="site-header__nav-item" data-v-7912d681><a class="site-header__nav-link" href="' + item[1] + '" data-v-7912d681>' + item[0] + '</a></li>';
+    }).join('') + '</ul>';
+    inner.appendChild(nav);
+  }
+
   function enhanceStickyHeader() {
     var sticky = document.querySelector('.owner-sale-sticky');
     var inner = sticky && sticky.querySelector('.owner-sale-sticky__inner');
@@ -489,6 +519,7 @@
       replaceConsultationSection();
       reorderConsultationAndTypes();
       enhancePresentationCards();
+      enhanceHeroHeader();
       enhanceHeroSection();
       enhanceStickyHeader();
       enhanceServicesSection();
