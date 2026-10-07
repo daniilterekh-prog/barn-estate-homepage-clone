@@ -156,7 +156,7 @@ body.owner-rent-reference-ui .owner-sale-hero .breadcrumbs__link {
 }
 
 .owner-rent-reference-ui .owner-sale-exclusive__eyebrow {
-  color: var(--owner-rent-ui-brand);
+  color: var(--owner-rent-ui-text-primary);
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 0.2em;
@@ -309,7 +309,7 @@ body.owner-rent-reference-ui .owner-sale-hero .breadcrumbs__link {
 }
 
 .owner-rent-reference-ui .owner-sale-services__eyebrow {
-  color: var(--owner-rent-ui-brand);
+  color: var(--owner-rent-ui-text-primary);
   font-size: 14px;
   font-weight: var(--owner-rent-ui-body-weight);
   letter-spacing: 0.12em;
@@ -711,7 +711,7 @@ body.owner-rent-reference-ui .owner-sale-hero .breadcrumbs__link {
 
 /* Shared SectionHeading and ActionButton contracts from reference-ui.md. */
 .owner-rent-reference-ui .owner-rent-section-eyebrow {
-  color: var(--owner-rent-ui-brand);
+  color: var(--owner-rent-ui-text-primary);
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 0.12em;
