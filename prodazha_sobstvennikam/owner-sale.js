@@ -20,6 +20,70 @@
     document.body.style.overflow = '';
   };
 
+  const enhanceHeroHeader = function () {
+    const inner = header && header.querySelector('.site-header__inner');
+    if (!header || !inner) return;
+
+    header.classList.remove('site-header--no-nav');
+    if (!inner.querySelector(':scope > .site-header__nav')) {
+      const items = [
+        ['Москва', 'https://barn-estate.ru/gorodskaya-nedvizhimost/', [['Вторичная', 'https://barn-estate.ru/vtorichnaya-nedvizhimost/'], ['Арендовать', 'https://barn-estate.ru/arendovat/'], ['Новостройки', 'https://barn-estate.ru/novostroyki/'], ['Жилые комплексы', 'https://barn-estate.ru/zhilye-kompleksy/']]],
+        ['Загородная', 'https://barn-estate.ru/zagorodnaya-nedvizhimost/', [['Купить', 'https://barn-estate.ru/zagorodnaya-nedvizhimost/'], ['Снять', 'https://barn-estate.ru/snyat-zagorodnuyu-nedvizhimost/'], ['Коттеджные поселки', 'https://barn-estate.ru/kottedzhnye-poselki/']]],
+        ['Коммерческая', 'https://barn-estate.ru/kommercheskaya-nedvizhimost/', [['Купить', 'https://barn-estate.ru/kommercheskaya-nedvizhimost/'], ['Снять', 'https://barn-estate.ru/kommercheskaya-nedvizhimost/arendovat/'], ['Бизнес-центры', 'https://barn-estate.ru/kommercheskaya-nedvizhimost/business-center/'], ['Особняки', 'https://barn-estate.ru/kommercheskaya-nedvizhimost/osobnyak/']]],
+        ['Курортная', 'https://barn-estate.ru/kurortnaya/', [['Алтай', 'https://barn-estate.ru/altai/'], ['Архыз', 'https://barn-estate.ru/arhyz/'], ['Сочи', 'https://barn-estate.ru/sochi/']]],
+        ['Зарубежная', 'https://barn-estate.ru/mezhdunarodnaya-nedvizhimost/', [['ОАЭ', 'https://barn-estate.ru/oae/'], ['Турция', 'https://barn-estate.ru/mezhdunarodnaya-nedvizhimost/turtsiya/'], ['Таиланд', 'https://barn-estate.ru/tailand/'], ['Франция', 'https://barn-estate.ru/frantsiya/']]],
+        ['Санкт-Петербург', 'https://barnes-spb.ru', [['Вторичная', 'https://barnes-spb.ru/gorodskaya-nedvizhimost/vtorichnaya-nedvizhimost/'], ['Новостройки', 'https://barnes-spb.ru/gorodskaya-nedvizhimost/novostroyki/'], ['Загородная', 'https://barnes-spb.ru/zagorodnaya-nedvizhimost/'], ['Коммерческая', 'https://barnes-spb.ru/kommercheskaya-nedvizhimost/']]],
+        ['Медиа', 'https://barn-estate.ru/media/', [['Блог', 'https://barn-estate.ru/media/blog/'], ['Новости', 'https://barn-estate.ru/media/novosti/'], ['Аналитика рынка', 'https://barn-estate.ru/media/analitika/'], ['Журнал', 'https://barn-estate.ru/zhurnaly/']]],
+        ['О BARNES', 'https://barn-estate.ru/mir-barnes/', [['Контакты', 'https://barn-estate.ru/contacts/'], ['Партнерам', 'https://barn-estate.ru/for-partners/'], ['Команда', 'https://barn-estate.ru/team/'], ['Вакансии', 'https://barn-estate.ru/vacancies/']]],
+        ['Собственникам', 'https://barn-estate.ru/sobstvennikam/', [['Продажа', 'https://barn-estate.ru/prodazha_sobstvennikam/'], ['Аренда', 'https://barn-estate.ru/arenda_sobstvennikam/']]]
+      ];
+      const nav = document.createElement('nav');
+      nav.className = 'site-header__nav';
+      nav.setAttribute('aria-label', 'Основное меню');
+      nav.setAttribute('data-v-7912d681', '');
+      nav.innerHTML = '<ul class="site-header__nav-list" data-v-7912d681>' + items.map(function (item) {
+        const subnav = '<ul class="site-header__subnav" data-v-7912d681>' + item[2].map(function (subitem) {
+          return '<li data-v-7912d681><a class="site-header__subnav-link" href="' + subitem[1] + '" data-v-7912d681>' + subitem[0] + '</a></li>';
+        }).join('') + '</ul>';
+        return '<li class="site-header__nav-item owner-sale-nav-item" data-v-7912d681><a class="site-header__nav-link" href="' + item[1] + '" data-v-7912d681>' + item[0] + '</a>' + subnav + '</li>';
+      }).join('') + '</ul>';
+      inner.appendChild(nav);
+    }
+
+    const right = inner.querySelector('.site-header__right');
+    const phone = right && right.querySelector('.site-header__phone');
+    if (!right || !phone || right.querySelector('.owner-sale-hero-contacts')) return;
+
+    const contacts = document.createElement('nav');
+    contacts.className = 'owner-sale-hero-contacts';
+    contacts.setAttribute('aria-label', 'Способы связи');
+    [
+      ['WhatsApp', 'https://wa.me/79252621650', '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="#25d366"/><path d="M8.1 17.3l.7-2.4a6 6 0 1 1 2.3 1.3l-3 .8Z" fill="none" stroke="#fff" stroke-width="1.35"/><path d="M9.6 9.2c.3 2.2 2 4 4.2 4.5" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1.5"/></svg>'],
+      ['MAX', 'https://max.ru/join/AWj8ibiCtAPOJOlulMGNkykKGz_prXVWg-IQK1KpUG8', '<svg viewBox="0 0 24 24" aria-hidden="true"><defs><linearGradient id="sale-max" x1="3" y1="20" x2="21" y2="4"><stop stop-color="#00c8ff"/><stop offset=".55" stop-color="#315cff"/><stop offset="1" stop-color="#8a2be2"/></linearGradient></defs><circle cx="12" cy="12" r="10" fill="url(#sale-max)"/><path d="M7.8 15.8V8.2l4.2 4.1 4.2-4.1v7.6" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/></svg>'],
+      ['Telegram', 'https://t.me/art_de_vivre_barnes', '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="#26a5e4"/><path d="m6.6 11.6 10.2-4-2 9.3-3.1-2.3-1.8 1.7.3-2.8 5-4.2-6.1 3Z" fill="#fff"/></svg>']
+    ].forEach(function (item) {
+      const link = document.createElement('a');
+      link.className = 'owner-sale-hero-contact';
+      link.href = item[1];
+      link.target = '_blank';
+      link.rel = 'noopener noreferrer';
+      link.setAttribute('aria-label', 'Написать в ' + item[0]);
+      link.innerHTML = item[2];
+      contacts.appendChild(link);
+    });
+    phone.classList.add('owner-sale-hero-contact', 'owner-sale-hero-contact--phone');
+    phone.setAttribute('aria-label', 'Позвонить по номеру +7 495 182-50-79');
+    contacts.appendChild(phone);
+    right.appendChild(contacts);
+  };
+
+  enhanceHeroHeader();
+
+  const heroButtonIcon = page.querySelector('.owner-sale-hero__button-icon');
+  if (heroButtonIcon) {
+    heroButtonIcon.innerHTML = '<svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 13 13 3M5 3h8v8" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25"></path></svg>';
+  }
+
   if (!menu && menuButton) {
     menu = document.createElement('aside');
     menu.className = 'owner-sale-clone-menu';
