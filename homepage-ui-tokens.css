@@ -14,6 +14,16 @@
   --font-weight-medium: 500;
   --font-weight-heading: var(--font-weight-light);
 
+  /* Rectangular CTA reference contract. Header and circular controls excluded. */
+  --control-cta-height: 70px;
+  --control-cta-height-mobile: 58px;
+  --control-cta-padding-inline: 36px;
+  --control-cta-padding-inline-wide: 47px;
+  --control-cta-font-size: 16px;
+  --control-cta-font-size-wide: 18px;
+  --control-cta-line-height: 1.1;
+  --control-cta-radius: 3px;
+
   /* Reference contact-link role for the homepage office/contact block. */
   --type-contact-link-size: 18px;
   --type-contact-link-line-height: 1.25;
@@ -178,6 +188,32 @@ section.news-section[class] {
   line-height: var(--type-contact-link-line-height);
 }
 
+/* Primary and outline CTA family: Hero, Barnes Choice and Project. */
+:is(
+  .home-hero-filters__submit,
+  .barnes-choice__action,
+  .project-hero__cta
+)[class] {
+  border-radius: var(--control-cta-radius) !important;
+  font-size: var(--control-cta-font-size);
+  font-weight: var(--font-weight-medium);
+  height: var(--control-cta-height);
+  line-height: var(--control-cta-line-height);
+  min-height: var(--control-cta-height);
+  padding: 0 var(--control-cta-padding-inline) !important;
+}
+
+@media (min-width: 1441px) {
+  :is(
+    .home-hero-filters__submit,
+    .barnes-choice__action,
+    .project-hero__cta
+  )[class] {
+    font-size: var(--control-cta-font-size-wide);
+    padding: 0 var(--control-cta-padding-inline-wide) !important;
+  }
+}
+
 @media (max-width: 540px) {
   .barnes-choice__heading[class] {
     gap: 8px;
@@ -186,5 +222,15 @@ section.news-section[class] {
   :root {
     --type-contact-link-size: 16px;
     --type-contact-link-line-height: 1.25;
+  }
+
+  :is(
+    .home-hero-filters__submit,
+    .barnes-choice__action,
+    .project-hero__cta
+  )[class] {
+    height: var(--control-cta-height-mobile);
+    min-height: var(--control-cta-height-mobile);
+    padding: 10px 24px !important;
   }
 }

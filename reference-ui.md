@@ -313,6 +313,16 @@ This inventory includes rectangular `<button>` elements and anchors styled as co
 
 Rectangular-system conclusion: Hero primary, Barnes primary, Project outline, Newsletter submit and Footer callback currently form five different size/type contracts. The first unification candidate is the CTA family; text links and filter/tab controls should remain separate semantic roles.
 
+### Implemented CTA correction — 2026-10-07
+
+The first rectangular-control correction is limited to the main CTA family:
+
+- Hero primary, Barnes primary and Project outline now share `58px` height on mobile and `70px` from tablet through desktop.
+- CTA label typography is `16px / 17.6px`, weight `500`; wide desktop uses `18px / 19.8px`.
+- Horizontal padding is `24px` mobile, `36px` base desktop and `47px` wide desktop.
+- Radius is `3px` for all three controls.
+- Newsletter, Footer, Office/contact, filter fields, tabs, text links and floating controls remain separate roles and were not changed in this pass.
+
 ### Icon and slider contract
 
 Slider arrows: 48px mobile, 56px desktop, 68px wide. Use disabled state instead of hiding unavailable navigation. Menu/close/favorite/search parents must be at least 44×44px even when the visual icon is smaller.
@@ -610,3 +620,4 @@ These are specification outputs, not completed implementation changes.
 - Audited homepage buttons and interactive links at 390/768/1280/1920px; documented CTA height/type divergence, radius divergence and undersized hit areas. No button CSS was changed.
 - Audited header controls at 320/390/540/541/768/1024/1025/1280/1281/1440/1920px; isolated hit-area and keyboard-focus fixes from the rest of the button system. No header CSS was changed.
 - Audited all rectangular homepage controls with the header excluded; recorded dimensions and typography at 390/768/1280/1920px. No button CSS was changed.
+- Applied the first rectangular CTA correction to Hero, Barnes Choice and Project controls; kept header, circular controls and separate form/footer/text-link roles unchanged.
