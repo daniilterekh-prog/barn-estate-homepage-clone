@@ -156,19 +156,25 @@ body.owner-rent-reference-ui .owner-sale-hero .breadcrumbs__link {
   display: none;
   gap: 12px 28px;
   grid-auto-flow: column;
-  grid-template-rows: repeat(4, auto);
+  grid-template-rows: auto;
+  left: 50%;
   min-width: max-content;
   padding: 15px 0 0;
+  right: auto;
+  transform: translateX(-50%);
+}
+
+.owner-rent-reference-ui .layout__header .site-header__nav-list {
+  position: relative;
+}
+
+.owner-rent-reference-ui .layout__header .owner-rent-nav-item {
+  position: static;
 }
 
 .owner-rent-reference-ui .layout__header .owner-rent-nav-item:hover > .site-header__subnav,
 .owner-rent-reference-ui .layout__header .owner-rent-nav-item:focus-within > .site-header__subnav {
   display: grid;
-}
-
-.owner-rent-reference-ui .layout__header .owner-rent-nav-item:nth-last-child(-n + 3) > .site-header__subnav {
-  left: auto;
-  right: 0;
 }
 
 .owner-rent-reference-ui .layout__header .site-header__subnav-link {
