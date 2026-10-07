@@ -107,6 +107,50 @@
     });
   }
 
+  function enhanceHeroHeaderContacts() {
+    var right = document.querySelector('.layout__header .site-header__right');
+    var phone = right && right.querySelector('.site-header__phone');
+
+    if (!right || !phone) return;
+
+    if (!right.querySelector('.owner-rent-hero-contacts')) {
+      var contacts = document.createElement('nav');
+      contacts.className = 'owner-rent-hero-contacts';
+      contacts.setAttribute('aria-label', 'Способы связи');
+      [
+        ['WhatsApp', 'https://wa.me/79252621650', '/arenda_sobstvennikam/pictures/office-contact/whatsapp.svg'],
+        ['MAX', 'https://max.ru/join/AWj8ibiCtAPOJOlulMGNkykKGz_prXVWg-IQK1KpUG8', '/arenda_sobstvennikam/pictures/office-contact/max.svg'],
+        ['Telegram', 'https://t.me/art_de_vivre_barnes', '/arenda_sobstvennikam/pictures/office-contact/telegram.svg']
+      ].forEach(function (item) {
+        var link = document.createElement('a');
+        var icon = document.createElement('img');
+        link.className = 'owner-rent-hero-contact';
+        link.href = item[1];
+        link.target = '_blank';
+        link.rel = 'noopener noreferrer';
+        link.setAttribute('aria-label', 'Написать в ' + item[0]);
+        icon.src = item[2];
+        icon.alt = '';
+        icon.setAttribute('aria-hidden', 'true');
+        link.appendChild(icon);
+        contacts.appendChild(link);
+      });
+
+      phone.classList.add('owner-rent-hero-contact', 'owner-rent-hero-contact--phone');
+      phone.setAttribute('aria-label', 'Позвонить по номеру +7 495 182-50-79');
+      contacts.appendChild(phone);
+      right.appendChild(contacts);
+    }
+
+    if (!right.querySelector('.owner-rent-hero-request')) {
+      var request = document.createElement('a');
+      request.className = 'owner-rent-hero-request';
+      request.href = '#request';
+      request.textContent = 'Оставить заявку';
+      right.appendChild(request);
+    }
+  }
+
   function enhanceStickyHeader() {
     var sticky = document.querySelector('.owner-sale-sticky');
     var inner = sticky && sticky.querySelector('.owner-sale-sticky__inner');
@@ -558,6 +602,7 @@
       replaceConsultationSection();
       reorderConsultationAndTypes();
       enhancePresentationCards();
+      enhanceHeroHeaderContacts();
       enhanceHeroHeader();
       enhanceHeroSection();
       enhanceStickyHeader();
