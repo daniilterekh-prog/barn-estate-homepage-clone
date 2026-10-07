@@ -158,6 +158,10 @@
     if (messengerGroup && phone.parentElement !== messengerGroup) {
       messengerGroup.appendChild(phone);
     }
+    var requestLink = brand.querySelector('.owner-sale-sticky__request');
+    if (requestLink && requestLink !== brand.lastElementChild) {
+      brand.appendChild(requestLink);
+    }
   }
 
   function enhanceExclusiveSection() {
