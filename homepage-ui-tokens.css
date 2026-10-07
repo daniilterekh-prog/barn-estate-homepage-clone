@@ -28,6 +28,7 @@
   --control-cta-radius: 1px;
   --control-action-gap: 12px;
   --space-newsletter-footer-mobile: 40px;
+  --office-contact-image-max-height: 520px;
 
   /* Reference contact-link role for the homepage office/contact block. */
   --type-contact-link-size: 17px;
@@ -277,6 +278,20 @@ section.news-section[class] {
 /* Contact-method buttons use the same rectangular contract as email/route actions. */
 .office-contact__copy[class] {
   container: office-contact-copy / inline-size;
+}
+
+.office-contact__visual[class] {
+  align-self: start;
+  height: var(--office-contact-image-max-height) !important;
+  max-height: var(--office-contact-image-max-height) !important;
+  min-height: 0 !important;
+  overflow: hidden;
+}
+
+.office-contact__visual[class] img {
+  height: var(--office-contact-image-max-height);
+  max-height: var(--office-contact-image-max-height);
+  object-fit: cover;
 }
 
 .office-contact__socials[class] {
