@@ -933,7 +933,7 @@ body.owner-rent-reference-ui .owner-sale-hero .breadcrumbs__link {
 }
 
 @media (min-width: 901px) {
-  .owner-rent-reference-ui .owner-sale-exclusive + .owner-sale-services {
+  .owner-rent-reference-ui .owner-sale-exclusive + .owner-sale-types {
     margin-top: clamp(-280px, -19vw, -200px);
     position: relative;
     z-index: 1;

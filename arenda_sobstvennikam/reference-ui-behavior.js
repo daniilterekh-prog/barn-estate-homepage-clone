@@ -151,11 +151,16 @@
 
     if (!about || !services || !exclusive) return;
     if (about.parentNode !== services.parentNode || services.parentNode !== exclusive.parentNode) return;
-    if (exclusive.nextElementSibling === services && services.nextElementSibling === about) return;
+    if (services.nextElementSibling === about && about.nextElementSibling === exclusive) return;
 
     var parent = services.parentNode;
-    parent.insertBefore(exclusive, services);
+    var first = [about, services, exclusive].sort(function (a, b) {
+      return a.compareDocumentPosition(b) & Node.DOCUMENT_POSITION_FOLLOWING ? -1 : 1;
+    })[0];
+
+    parent.insertBefore(services, first);
     parent.insertBefore(about, services.nextSibling);
+    parent.insertBefore(exclusive, about.nextSibling);
   }
 
   function updateExclusiveScrollState() {
