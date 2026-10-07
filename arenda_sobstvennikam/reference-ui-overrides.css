@@ -1218,6 +1218,33 @@ body.owner-rent-reference-ui .owner-sale-hero .breadcrumbs__link {
   }
 }
 
+/* One typography contract for all five strategy cards. */
+.owner-rent-reference-ui .owner-sale-presentation__featured-title {
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  line-height: 25.2px;
+}
+
+.owner-rent-reference-ui .owner-sale-presentation__featured-text {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 20.48px;
+}
+
+@media (max-width: 540px) {
+  .owner-rent-reference-ui .owner-sale-presentation__featured-title {
+    font-size: 15px;
+    letter-spacing: 0.04em;
+    line-height: 21px;
+  }
+
+  .owner-rent-reference-ui .owner-sale-presentation__featured-text {
+    font-size: 15px;
+    line-height: 19.2px;
+  }
+}
+
 /* The wide fifth strategy card follows the same inactive/reveal pattern. */
 .owner-rent-reference-ui .owner-sale-presentation__card--featured {
   align-self: stretch;
