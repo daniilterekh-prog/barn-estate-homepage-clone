@@ -4,8 +4,8 @@
 
 - Локальная страница: `/kurortnaya/`
 - Эталон для сравнения: https://barn-estate.ru/kurortnaya/
-- Дата аудита: 2026-10-05
-- Статус: initial full audit; production-код в рамках аудита не изменялся.
+- Дата аудита: 2026-10-07
+- Статус: обновлённый snapshot синхронизирован со staging `front.barnes.vsavr.ru` и повторно проверен.
 
 > В приложенном брифе URL оставлен как `[ВСТАВИТЬ URL]`. В качестве эталона использован URL из исходной задачи — `https://barn-estate.ru/kurortnaya/`.
 
@@ -288,15 +288,15 @@ breakpoints            = 540, 640, 768, 1024, 1280, 1440, 1920
 
 | ID | Status | Viewport | Section | Element | Current | Problem | Recommended | Priority |
 |---|---|---|---|---|---|---|---|---|
-| UI-001 | OPEN | local all | Runtime | external scripts/assets | 5 external CSS + 6 external JS; CORS errors from local origin | interactive runtime and map depend on live domain; clone is not self-contained | vendor/pin required runtime or remove nonessential external scripts and provide local map fallback | P1 |
-| UI-002 | OPEN | ≤540, network failure | Mobile loader | `fetch('mobile.html')` + `document.write` | fetch failure has no visible error/fallback; desktop snapshot can remain unexpectedly | use one responsive DOM or explicit error/fallback and verify response before document replacement | P1 |
-| UI-003 | OPEN | all | Snapshot architecture | `index.html` + `mobile.html` | ~794 KB + ~764 KB duplicated HTML | high maintenance cost, stale desktop/mobile content risk, slower parse | reduce to one source of truth; generate responsive markup at build time | P2 |
+| UI-001 | PARTIAL | local all | Runtime | external scripts/assets | Nuxt runtime/preload удалены; визуальные ассеты и карта всё ещё зависят от staging/Yandex | clone больше не выдаёт CORS/runtime errors, но остаётся не полностью автономным | локально закрепить необходимые изображения и предусмотреть map fallback | P1 |
+| UI-002 | PARTIAL | ≤540, network failure | Mobile loader | `fetch('mobile.html')` + `document.write` с проверкой response и fallback class | архитектурно остаётся подмена всего документа; fallback не сообщает пользователю об ошибке | перейти на один responsive DOM либо добавить видимый fallback state | P1 |
+| UI-003 | OPEN | all | Snapshot architecture | `index.html` + `mobile.html` | ~313 KB + ~282 KB duplicated HTML | high maintenance cost, stale desktop/mobile content risk, slower parse | reduce to one source of truth; generate responsive markup at build time | P2 |
 | UI-004 | OPEN | 541 | Hero / filters | `@max540` → `@min541` | hero 684→644; H1 32→38; filter 124 stacked→70 inline; catalog/FAQ 1→2 columns | 1 px width cliff; behavior can feel broken on narrow tablets | smooth typography/spacing; move structural switch to tested 600/640 and test 539–641 | P2 |
 | UI-005 | OPEN | 1024/1025 | Grid / departments / footer | `@max1024` → desktop | catalog 2→3 columns, departments 1→6, footer 2→4, hero alignment changes | simultaneous multi-section layout jump and card width change | introduce intermediate tablet-wide layout or stagger changes; verify 1023/1024/1025 | P2 |
 | UI-006 | OPEN | mobile | Forms | consultation/contact inputs | no explicit label/aria-label for text fields; placeholder is primary hint | screen-reader name and persistent field context are incomplete | add visible labels or `aria-label`/`aria-describedby`; connect errors to fields | P2 |
 | UI-007 | OPEN | mobile | Interactive controls | header, phone, sticky nav, floating close | visual/clickable sizes include 22×22, 29×29, 30×30 and 23 px link heights | below recommended 44×44 target; difficult touch interaction | keep visual icon, enlarge button/link hit area to ≥44×44 | P2 |
 | UI-008 | OPEN | all | Images | 58 images | 15 missing alt, 3 empty alt | content/decorative intent not explicit | add meaningful alt to content images; use explicit empty alt only for decorative images | P3 |
-| UI-009 | OPEN | all | Document metadata | `<html>` | `lang` missing/empty; no CSP meta | language detection and baseline hardening are incomplete | set `lang="ru"`; configure CSP at server level where compatible | P3 |
+| UI-009 | PARTIAL | all | Document metadata | `<html>` | `lang="ru"` добавлен; CSP не задан | language detection исправлен, baseline hardening остаётся неполным | configure CSP at server level where compatible | P3 |
 | UI-010 | OPEN | all | Maintainability | legacy `kurortnaya.css/js` | tracked but not linked by current snapshot | future changes may be made in dead files | document generated snapshot ownership; remove or archive in separate cleanup | P3 |
 | UI-011 | OPEN | 1280/1281 | Header/footer | nav/footer column rules | footer 4→8 columns; header state changes at nearby range | density shift is abrupt on medium desktop | define a named compact-desktop state and test 1200–1366 | P3 |
 | UI-012 | OPEN | all | Color system | alpha variants | several near-duplicate text/white alpha colors | token drift and inconsistent future components | normalize semantic muted/on-dark tokens | P3 |
@@ -327,6 +327,14 @@ breakpoints            = 540, 640, 768, 1024, 1280, 1440, 1920
 - [ ] Add a small audit smoke test that verifies title, canonical, `lang`, zero root overflow, form accessible names and no failed external runtime requests.
 
 ## Audit History
+
+### 2026-10-07
+
+- Повторно сняты desktop/mobile DOM и full-page screenshots с `https://front.barnes.vsavr.ru/kurortnaya/`.
+- Перенесены обновлённые фильтры каталога «Тип недвижимости», «Цена ₽», «Общая площадь», актуальный счётчик избранного, карточки, карта и свежие стили.
+- Добавлен изолированный `kurortnaya/source.css`; главная и другие страницы репозитория не изменялись.
+- Удалён внешний Nuxt bootstrap и preload build metadata, вызывавшие CORS-ошибки в локальном origin; на контрольных ширинах 390, 541, 1024 и 1440 px console errors/exceptions отсутствуют.
+- Проверены ширины 320–1920 px: корневого горизонтального overflow нет; mobile содержит 5 карточек, desktop — 12, как на актуальном staging.
 
 ### 2026-10-05
 
