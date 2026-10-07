@@ -242,6 +242,27 @@
   gap: 12px;
 }
 
+@media (min-width: 769px) {
+  .owner-rent-reference-ui .owner-sale-services__card {
+    aspect-ratio: auto;
+    height: 250px;
+    min-height: 250px;
+    padding: 24px 24px 28px;
+  }
+
+  .owner-rent-reference-ui .owner-sale-services__text {
+    font-size: 20px;
+    gap: 8px;
+    line-height: 28.16px;
+    margin-top: 20px;
+  }
+
+  .owner-rent-reference-ui .owner-sale-services__text strong {
+    font-size: 20px;
+    line-height: 28.16px;
+  }
+}
+
 .owner-rent-reference-ui :is(.ui-button, .newsletter-form button) {
   border-radius: var(--owner-rent-ui-control-radius);
   font-size: 17px;
