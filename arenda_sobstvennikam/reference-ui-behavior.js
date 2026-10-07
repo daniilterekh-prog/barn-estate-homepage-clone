@@ -254,6 +254,16 @@
 
     var featuredCard = document.querySelector('.owner-sale-presentation__card--featured');
     var featuredText = featuredCard && featuredCard.querySelector('.owner-sale-presentation__featured-text');
+    var featuredTitle = featuredCard && featuredCard.querySelector('.owner-sale-presentation__featured-title');
+    if (featuredTitle && !featuredTitle.querySelector('.owner-sale-presentation__featured-title-line')) {
+      featuredTitle.textContent = '';
+      ['ДЛЯ КАЖДОГО ОБЪЕКТА —', 'СВОЙ СЦЕНАРИЙ СДАЧИ'].forEach(function (line) {
+        var lineElement = document.createElement('span');
+        lineElement.className = 'owner-sale-presentation__featured-title-line';
+        lineElement.textContent = line;
+        featuredTitle.appendChild(lineElement);
+      });
+    }
     if (featuredCard && featuredText) {
       featuredText.id = featuredText.id || 'owner-sale-presentation-description-5';
       featuredCard.tabIndex = 0;

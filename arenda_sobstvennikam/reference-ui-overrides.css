@@ -1224,6 +1224,11 @@ body.owner-rent-reference-ui .owner-sale-hero .breadcrumbs__link {
   font-weight: 500;
   letter-spacing: 0.04em;
   line-height: 25.2px;
+  max-width: 360px;
+}
+
+.owner-rent-reference-ui .owner-sale-presentation__featured-title-line {
+  display: block;
 }
 
 .owner-rent-reference-ui .owner-sale-presentation__featured-text {
