@@ -90,21 +90,6 @@
       return '<li class="site-header__nav-item owner-rent-nav-item" data-v-7912d681><a class="site-header__nav-link" href="' + item[1] + '" data-v-7912d681>' + item[0] + '</a>' + subnav + '</li>';
     }).join('') + '</ul>';
     inner.appendChild(nav);
-
-    nav.addEventListener('pointerenter', function () {
-      document.body.classList.add('owner-rent-hero-nav-open');
-    });
-    nav.addEventListener('pointerleave', function () {
-      document.body.classList.remove('owner-rent-hero-nav-open');
-    });
-    nav.addEventListener('focusin', function () {
-      document.body.classList.add('owner-rent-hero-nav-open');
-    });
-    nav.addEventListener('focusout', function (event) {
-      if (!nav.contains(event.relatedTarget)) {
-        document.body.classList.remove('owner-rent-hero-nav-open');
-      }
-    });
   }
 
   function enhanceHeroHeaderContacts() {
