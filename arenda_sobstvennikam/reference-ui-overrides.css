@@ -612,7 +612,7 @@ body.owner-rent-reference-ui .owner-sale-hero .breadcrumbs__link {
   text-underline-offset: 3px;
 }
 
-@media (min-width: 1025px) {
+@media (hover: hover) {
   .owner-rent-reference-ui :is(
     .site-footer__column-title--link,
     .site-footer__link,
@@ -620,8 +620,18 @@ body.owner-rent-reference-ui .owner-sale-hero .breadcrumbs__link {
     .site-footer__email,
     .site-footer__privacy
   ):hover {
-    color: var(--owner-rent-ui-brand);
+    color: var(--owner-rent-ui-brand) !important;
   }
+}
+
+.owner-rent-reference-ui :is(
+  .site-footer__column-title--link,
+  .site-footer__link,
+  .site-footer__phone,
+  .site-footer__email,
+  .site-footer__privacy
+):is(:focus-visible, :active) {
+  color: var(--owner-rent-ui-brand) !important;
 }
 
 /* Exact pre-footer consultation pattern from the city-real-estate route. */
