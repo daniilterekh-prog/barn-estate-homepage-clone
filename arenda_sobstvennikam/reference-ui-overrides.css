@@ -1035,6 +1035,10 @@ body.owner-rent-reference-ui .owner-sale-hero .breadcrumbs__link {
     line-height: 14.4px;
   }
 
+  .owner-rent-reference-ui .about-company .owner-rent-section-eyebrow {
+    text-align: center;
+  }
+
   body.owner-rent-reference-ui .owner-sale-exclusive .owner-sale-exclusive__title {
     font-size: var(--owner-rent-ui-h2-mobile-size);
     line-height: var(--owner-rent-ui-h2-mobile-line);
