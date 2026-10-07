@@ -136,6 +136,18 @@ body.owner-rent-reference-ui .owner-sale-hero .breadcrumbs__link {
   height: auto;
 }
 
+.owner-rent-reference-ui .owner-sale-services {
+  --owner-rent-services-gutter: 100px;
+}
+
+.owner-rent-reference-ui .owner-sale-services__slider {
+  box-sizing: border-box;
+  margin-inline: auto;
+  max-width: 1920px;
+  padding-inline: var(--owner-rent-services-gutter);
+  width: 100%;
+}
+
 .owner-rent-reference-ui .owner-sale-services__eyebrow {
   color: var(--owner-rent-ui-brand);
   font-size: 14px;
@@ -152,7 +164,10 @@ body.owner-rent-reference-ui .owner-sale-hero .breadcrumbs__link {
   display: flex;
   gap: 16px;
   justify-content: space-between;
-  margin: 28px auto 0 max(20px, 4.75vw);
+  margin: 28px auto 0 max(
+    var(--owner-rent-services-gutter),
+    calc((100% - 1920px) / 2 + 100px)
+  );
   min-height: 70px;
   padding: 16px 24px 16px 36px;
   position: relative;
@@ -245,6 +260,18 @@ body.owner-rent-reference-ui .owner-sale-hero .breadcrumbs__link {
 
 .owner-rent-reference-ui .owner-sale-services__slider .splide__list {
   gap: 12px;
+}
+
+@media (max-width: 1920px) {
+  .owner-rent-reference-ui .owner-sale-services {
+    --owner-rent-services-gutter: calc(-26.66667px + 6.59722vw);
+  }
+}
+
+@media (max-width: 768px) {
+  .owner-rent-reference-ui .owner-sale-services {
+    --owner-rent-services-gutter: calc(8.94118px + 1.96078vw);
+  }
 }
 
 @media (min-width: 769px) {
@@ -401,10 +428,10 @@ body.owner-rent-reference-ui .owner-sale-hero .breadcrumbs__link {
   }
 
   .owner-rent-reference-ui .owner-sale-services__cta {
-    margin: 24px auto 0 20px;
+    margin: 24px auto 0 var(--owner-rent-services-gutter);
     min-height: 58px;
     padding: 14px 20px 14px 24px;
-    width: calc(100% - 40px);
+    width: calc(100% - 2 * var(--owner-rent-services-gutter));
   }
 
   .owner-rent-reference-ui .owner-sale-services__card {
