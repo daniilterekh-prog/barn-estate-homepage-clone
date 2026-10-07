@@ -210,6 +210,51 @@
       brand.appendChild(requestLink);
     }
     bindRequestPopup(requestLink);
+    enhanceStickyNavigation(sticky, inner, messengerGroup);
+  }
+
+  function enhanceStickyNavigation(sticky, inner, messengerGroup) {
+    var nav = sticky.querySelector('.owner-sale-sticky__nav');
+    var list = nav && nav.querySelector('.owner-sale-sticky__list');
+    var services = document.querySelector('.owner-sale-services');
+    var exclusive = document.querySelector('.owner-sale-exclusive');
+
+    if (!nav || !list) return;
+    if (services) services.id = 'team';
+    if (exclusive) exclusive.id = 'exclusive';
+
+    if (!list.dataset.ownerRentAnchors) {
+      var anchors = [
+        ['Стратегия', 'about'],
+        ['Команда', 'team'],
+        ['Эксклюзив', 'exclusive'],
+        ['Направления', 'property-types']
+      ];
+      list.innerHTML = anchors.map(function (item) {
+        return '<li class="owner-sale-sticky__item"><a class="owner-sale-sticky__link" href="#' + item[1] + '">' + item[0] + '</a></li>';
+      }).join('') + '<li class="owner-sale-sticky__item owner-sale-sticky__item--contacts"><button class="owner-sale-sticky__contact-toggle" type="button" aria-expanded="false" aria-controls="owner-rent-sticky-contacts" aria-label="Показать способы связи"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.5 9.8 9.8 0 0 1-4-.9L3 21l1.7-4.6A8.4 8.4 0 1 1 21 11.5Z"/><path d="M8 12h.01M12 12h.01M16 12h.01"/></svg></button></li>';
+      list.dataset.ownerRentAnchors = 'true';
+    }
+
+    var toggle = list.querySelector('.owner-sale-sticky__contact-toggle');
+    var panel = inner.querySelector('.owner-sale-sticky__contact-panel');
+    if (!panel && messengerGroup) {
+      panel = messengerGroup.cloneNode(true);
+      panel.id = 'owner-rent-sticky-contacts';
+      panel.className = 'owner-sale-sticky__contact-panel';
+      panel.hidden = true;
+      inner.appendChild(panel);
+    }
+
+    if (toggle && panel && toggle.dataset.bound !== 'true') {
+      toggle.dataset.bound = 'true';
+      toggle.addEventListener('click', function () {
+        var willOpen = panel.hidden;
+        panel.hidden = !willOpen;
+        toggle.setAttribute('aria-expanded', String(willOpen));
+        toggle.setAttribute('aria-label', willOpen ? 'Скрыть способы связи' : 'Показать способы связи');
+      });
+    }
   }
 
   function enhanceExclusiveSection() {

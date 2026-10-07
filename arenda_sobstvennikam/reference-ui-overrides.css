@@ -447,6 +447,56 @@ body.owner-rent-reference-ui .owner-sale-hero .breadcrumbs__link {
   width: 19px;
 }
 
+.owner-rent-reference-ui :is(
+  #about,
+  #team,
+  #exclusive,
+  #property-types
+) {
+  scroll-margin-top: 112px;
+}
+
+.owner-rent-reference-ui .owner-sale-sticky__contact-toggle {
+  align-items: center;
+  background: transparent;
+  border: 1px solid var(--owner-rent-ui-brand);
+  color: var(--owner-rent-ui-brand);
+  cursor: pointer;
+  display: none;
+  height: 34px;
+  justify-content: center;
+  padding: 0;
+  width: 34px;
+}
+
+.owner-rent-reference-ui .owner-sale-sticky__contact-toggle svg {
+  height: 20px;
+  width: 20px;
+}
+
+.owner-rent-reference-ui .owner-sale-sticky__contact-panel {
+  align-items: center;
+  background: #fff;
+  border: 1px solid var(--owner-rent-ui-border);
+  box-shadow: 0 10px 30px rgba(30, 30, 30, 0.12);
+  display: flex;
+  gap: 14px;
+  padding: 12px 14px;
+  position: absolute;
+  right: 16px;
+  top: calc(100% + 8px);
+  z-index: 2;
+}
+
+.owner-rent-reference-ui .owner-sale-sticky__contact-panel[hidden] {
+  display: none;
+}
+
+.owner-rent-reference-ui .owner-sale-sticky__contact-panel .owner-sale-sticky__messenger img {
+  height: 20px;
+  width: 20px;
+}
+
 @media (hover: hover) and (pointer: fine) {
   .owner-rent-reference-ui :is(
     .owner-sale-sticky__messenger,
@@ -482,6 +532,36 @@ body.owner-rent-reference-ui .owner-sale-hero .breadcrumbs__link {
 }
 
 @media (max-width: 540px) {
+  .owner-rent-reference-ui .owner-sale-sticky__inner {
+    overflow: visible;
+    position: relative;
+  }
+
+  .owner-rent-reference-ui .owner-sale-sticky__nav {
+    min-width: 0;
+    overflow: visible;
+    width: 100%;
+  }
+
+  .owner-rent-reference-ui .owner-sale-sticky__list {
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    padding-right: 4px;
+    scroll-snap-type: x proximity;
+  }
+
+  .owner-rent-reference-ui .owner-sale-sticky__item {
+    scroll-snap-align: start;
+  }
+
+  .owner-rent-reference-ui .owner-sale-sticky__item--contacts {
+    padding-right: 2px;
+  }
+
+  .owner-rent-reference-ui .owner-sale-sticky__contact-toggle {
+    display: inline-flex;
+  }
+
   .owner-rent-reference-ui .owner-sale-sticky__inner > .owner-sale-sticky__logo {
     display: none;
   }
