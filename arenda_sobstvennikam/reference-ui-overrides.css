@@ -787,6 +787,14 @@ body.owner-rent-reference-ui .owner-sale-hero .breadcrumbs__link {
     padding-bottom: calc(var(--owner-rent-exclusive-sticky-top) + 40px);
   }
 
+  .owner-rent-reference-ui .owner-sale-exclusive__item:last-child {
+    background: #fff;
+    position: relative;
+    transform: translateY(var(--owner-rent-exclusive-last-offset, 0));
+    will-change: transform;
+    z-index: 1;
+  }
+
   .owner-rent-reference-ui .owner-sale-exclusive__header {
     align-self: start;
     position: sticky;

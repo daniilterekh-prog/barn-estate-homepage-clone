@@ -148,12 +148,21 @@
       section.classList.remove('owner-sale-exclusive--scroll-ready');
       items.forEach(function (item) {
         item.classList.remove('is-active', 'is-past');
+        item.style.removeProperty('--owner-rent-exclusive-last-offset');
       });
       return;
     }
 
     var alignmentLine = header ? parseFloat(window.getComputedStyle(header).top) : 120;
     if (!Number.isFinite(alignmentLine)) alignmentLine = 120;
+    var lastItem = items[items.length - 1];
+    var currentLastOffset = parseFloat(
+      lastItem.style.getPropertyValue('--owner-rent-exclusive-last-offset')
+    ) || 0;
+    var naturalLastTop = lastItem.getBoundingClientRect().top - currentLastOffset;
+    var headerTop = header ? header.getBoundingClientRect().top : alignmentLine;
+    var lastOffset = Math.max(0, headerTop - naturalLastTop);
+    lastItem.style.setProperty('--owner-rent-exclusive-last-offset', lastOffset + 'px');
     var activeIndex = 0;
     var closestDistance = Infinity;
 
