@@ -148,6 +148,101 @@
 
   reorderSaleSections();
 
+  const enhanceStickyHeader = function () {
+    const inner = sticky && sticky.querySelector('.owner-sale-sticky__inner');
+    const nav = inner && inner.querySelector('.owner-sale-sticky__nav');
+    const list = nav && nav.querySelector('.owner-sale-sticky__list');
+    const brand = inner && inner.querySelector('.owner-sale-sticky__brand');
+    const logo = brand && brand.querySelector('.owner-sale-sticky__logo');
+    const phone = brand && brand.querySelector('.owner-sale-sticky__phone');
+    if (!sticky || !inner || !list || !brand || !phone) return;
+
+    const presentation = page.querySelector('.owner-sale-presentation');
+    const services = page.querySelector('.owner-sale-services');
+    const about = page.querySelector('.about-company');
+    if (presentation) presentation.id = 'presentation';
+    if (services) services.id = 'services';
+    if (about) about.id = 'team';
+
+    if (logo && logo.parentElement !== inner) inner.insertBefore(logo, brand);
+
+    if (!brand.querySelector('.owner-sale-sticky__request')) {
+      const request = document.createElement('button');
+      request.className = 'owner-sale-sticky__request';
+      request.type = 'button';
+      request.textContent = 'Оставить заявку';
+      brand.insertBefore(request, phone);
+    }
+
+    if (!brand.querySelector('.owner-sale-sticky__messengers')) {
+      const messengers = document.createElement('nav');
+      messengers.className = 'owner-sale-sticky__messengers';
+      messengers.setAttribute('aria-label', 'Способы связи');
+      [
+        ['WhatsApp', 'https://wa.me/79252621650', '../pictures/office-contact/whatsapp.svg'],
+        ['MAX', 'https://max.ru/join/AWj8ibiCtAPOJOlulMGNkykKGz_prXVWg-IQK1KpUG8', '../pictures/office-contact/max.svg'],
+        ['Telegram', 'https://t.me/art_de_vivre_barnes', '../pictures/office-contact/telegram.svg']
+      ].forEach(function (item) {
+        const link = document.createElement('a');
+        const icon = document.createElement('img');
+        link.className = 'owner-sale-sticky__messenger';
+        link.href = item[1];
+        link.target = '_blank';
+        link.rel = 'noopener noreferrer';
+        link.setAttribute('aria-label', 'Написать в ' + item[0]);
+        icon.src = item[2];
+        icon.alt = '';
+        icon.setAttribute('aria-hidden', 'true');
+        link.appendChild(icon);
+        messengers.appendChild(link);
+      });
+      brand.insertBefore(messengers, phone);
+    }
+
+    const messengers = brand.querySelector('.owner-sale-sticky__messengers');
+    phone.setAttribute('aria-label', 'Позвонить по номеру +7 495 182-50-79');
+    if (messengers && phone.parentElement !== messengers) messengers.appendChild(phone);
+
+    list.innerHTML = [
+      ['Представление', 'presentation'],
+      ['Команда', 'team'],
+      ['Этапы', 'stages'],
+      ['Направления', 'property-types']
+    ].map(function (item) {
+      return '<li class="owner-sale-sticky__item"><a class="owner-sale-sticky__link" href="#' + item[1] + '">' + item[0] + '</a></li>';
+    }).join('') + '<li class="owner-sale-sticky__item owner-sale-sticky__item--contacts"><button class="owner-sale-sticky__contact-toggle" type="button" aria-expanded="false" aria-controls="owner-sale-sticky-contacts" aria-label="Показать способы связи"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.5 9.8 9.8 0 0 1-4-.9L3 21l1.7-4.6A8.4 8.4 0 1 1 21 11.5Z"></path><path d="M8 12h.01M12 12h.01M16 12h.01"></path></svg></button></li>';
+
+    let panel = inner.querySelector('.owner-sale-sticky__contact-panel');
+    if (!panel && messengers) {
+      panel = messengers.cloneNode(true);
+      panel.id = 'owner-sale-sticky-contacts';
+      panel.className = 'owner-sale-sticky__contact-panel';
+      panel.hidden = true;
+      inner.appendChild(panel);
+    }
+
+    const toggle = list.querySelector('.owner-sale-sticky__contact-toggle');
+    if (toggle && panel) {
+      toggle.addEventListener('click', function () {
+        const open = panel.hidden;
+        panel.hidden = !open;
+        toggle.setAttribute('aria-expanded', String(open));
+        toggle.setAttribute('aria-label', open ? 'Скрыть способы связи' : 'Показать способы связи');
+      });
+    }
+  };
+
+  enhanceStickyHeader();
+
+  page.querySelectorAll('.owner-sale-types__action').forEach(function (action) {
+    if (action.querySelector('.owner-sale-types__action-icon')) return;
+    const icon = document.createElement('span');
+    icon.className = 'owner-sale-types__action-icon';
+    icon.setAttribute('aria-hidden', 'true');
+    icon.innerHTML = '<svg viewBox="0 0 16 16" focusable="false"><path d="M3 13 13 3M5 3h8v8" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25"></path></svg>';
+    action.appendChild(icon);
+  });
+
   if (!menu && menuButton) {
     menu = document.createElement('aside');
     menu.className = 'owner-sale-clone-menu';
@@ -206,7 +301,7 @@
     feedbackModal.querySelector('.modal__close').addEventListener('click', closeFeedback);
     feedbackModal.querySelector('.vfm__overlay').addEventListener('click', closeFeedback);
 
-    [['.owner-sale-hero__button', 'Получить консультацию'], ['.owner-sale-stages__offer-btn', 'Отправить заявку'], ['.owner-sale-strategy__button', 'Обсудить стратегию'], ['.catalog-contact__card-submit', 'ПОЛУЧИТЕ ПРЕДВАРИТЕЛЬНУЮ ОЦЕНКУ ОБЪЕКТА'], ['.site-footer__callback-btn', 'Обратная связь']].forEach(function (item) {
+    [['.owner-sale-hero__button', 'Получить консультацию'], ['.owner-sale-sticky__request', 'Оставить заявку'], ['.owner-sale-stages__offer-btn', 'Отправить заявку'], ['.owner-sale-strategy__button', 'Обсудить стратегию'], ['.catalog-contact__card-submit', 'ПОЛУЧИТЕ ПРЕДВАРИТЕЛЬНУЮ ОЦЕНКУ ОБЪЕКТА'], ['.site-footer__callback-btn', 'Обратная связь']].forEach(function (item) {
       document.querySelectorAll(item[0]).forEach(function (button) {
         button.addEventListener('click', function () {
           openFeedback(item[1]);
@@ -295,17 +390,18 @@
     if (!sticky) return;
     const hero = page.querySelector('.owner-sale-hero');
     const revealPoint = hero ? hero.offsetTop + hero.offsetHeight - 120 : window.innerHeight * 0.72;
-    sticky.classList.toggle('owner-sale-sticky--visible', window.scrollY > revealPoint);
+    const visible = window.scrollY > revealPoint;
+    sticky.classList.toggle('owner-sale-sticky--visible', visible);
+    sticky.setAttribute('aria-hidden', String(!visible));
+    sticky.toggleAttribute('inert', !visible);
     const links = Array.from(sticky.querySelectorAll('.owner-sale-sticky__link'));
-    const stagesTop = document.querySelector('#stages')?.offsetTop || 0;
-    const typesTop = document.querySelector('#property-types')?.offsetTop || 0;
-    const requestTop = document.querySelector('#request')?.offsetTop || 0;
-    let active = 0;
-    if (window.scrollY >= stagesTop) active = 1;
-    if (window.scrollY >= typesTop) active = 2;
-    if (window.scrollY >= requestTop) active = 3;
-    links.forEach(function (link, index) {
-      link.classList.toggle('owner-sale-sticky__link--active', index === active);
+    let activeLink = links[0];
+    links.forEach(function (link) {
+      const target = document.querySelector(link.getAttribute('href'));
+      if (target && window.scrollY + 140 >= target.offsetTop) activeLink = link;
+    });
+    links.forEach(function (link) {
+      link.classList.toggle('owner-sale-sticky__link--active', link === activeLink);
     });
   };
   window.addEventListener('scroll', syncSticky, { passive: true });
