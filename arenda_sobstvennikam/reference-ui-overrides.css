@@ -703,6 +703,20 @@ body.owner-rent-reference-ui .owner-sale-hero .breadcrumbs__link {
   text-align: center;
 }
 
+.owner-rent-reference-ui .owner-sale-exclusive__header,
+.owner-rent-reference-ui .owner-sale-exclusive__eyebrow,
+.owner-rent-reference-ui .owner-sale-exclusive__title {
+  text-align: left;
+}
+
+@media (min-width: 901px) {
+  .owner-rent-reference-ui .owner-sale-exclusive__header {
+    align-self: start;
+    position: sticky;
+    top: 120px;
+  }
+}
+
 .owner-rent-reference-ui .owner-sale-exclusive__title {
   font-size: var(--owner-rent-ui-h2-size);
   line-height: var(--owner-rent-ui-h2-line);
