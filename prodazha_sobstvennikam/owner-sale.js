@@ -4,6 +4,8 @@
   const page = document.querySelector('.owner-sale-page');
   if (!page) return;
 
+  document.body.classList.add('owner-sale-reference-ui');
+
   const menuButton = document.querySelector('[aria-label="Открыть меню"]');
   let menu = document.querySelector('.site-menu');
   const sticky = page.querySelector('.owner-sale-sticky');
@@ -163,7 +165,9 @@
 
   const syncSticky = function () {
     if (!sticky) return;
-    sticky.classList.toggle('owner-sale-sticky--visible', window.scrollY > window.innerHeight * 0.72);
+    const hero = page.querySelector('.owner-sale-hero');
+    const revealPoint = hero ? hero.offsetTop + hero.offsetHeight - 120 : window.innerHeight * 0.72;
+    sticky.classList.toggle('owner-sale-sticky--visible', window.scrollY > revealPoint);
     const links = Array.from(sticky.querySelectorAll('.owner-sale-sticky__link'));
     const stagesTop = document.querySelector('#stages')?.offsetTop || 0;
     const typesTop = document.querySelector('#property-types')?.offsetTop || 0;
@@ -178,6 +182,34 @@
   };
   window.addEventListener('scroll', syncSticky, { passive: true });
   syncSticky();
+
+  page.querySelectorAll('.owner-sale-presentation__card').forEach(function (card, index) {
+    card.setAttribute('tabindex', '0');
+    const caption = card.querySelector('.owner-sale-presentation__caption, .owner-sale-presentation__featured-title');
+    if (caption && !caption.id) caption.id = 'owner-sale-presentation-caption-' + (index + 1);
+    if (caption) card.setAttribute('aria-labelledby', caption.id);
+  });
+
+  page.querySelectorAll('img:not(.owner-sale-hero__image)').forEach(function (image) {
+    if (!image.hasAttribute('loading')) image.setAttribute('loading', 'lazy');
+    if (!image.hasAttribute('decoding')) image.setAttribute('decoding', 'async');
+  });
+
+  document.querySelectorAll([
+    '.owner-sale-strategy img',
+    '.owner-sale-presentation img',
+    '.catalog-consultation img',
+    '.owner-sale-magazine img',
+    '.owner-sale-types img',
+    '.catalog-contact img',
+    '.newsletter-cta img'
+  ].join(',')).forEach(function (image) {
+    image.setAttribute('loading', 'eager');
+  });
+
+  document.querySelectorAll('a[target="_blank"]').forEach(function (link) {
+    link.setAttribute('rel', 'noopener noreferrer');
+  });
 
   page.querySelectorAll('.owner-sale-sticky__link').forEach(function (link) {
     link.addEventListener('click', function () {

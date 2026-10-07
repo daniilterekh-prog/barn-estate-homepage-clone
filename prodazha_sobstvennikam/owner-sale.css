@@ -81,3 +81,812 @@
     font-size: 30px;
   }
 }
+
+/* Owner sale reference UI — scoped transfer from the approved owner-rent page. */
+.owner-sale-reference-ui {
+  --owner-sale-ink: #1e1e1e;
+  --owner-sale-secondary: #4f4d49;
+  --owner-sale-muted: #656462;
+  --owner-sale-brand: #8b1d25;
+  --owner-sale-surface: #f1f1f1;
+  --owner-sale-border: #e4e4e4;
+  --owner-sale-footer: #262626;
+  color: var(--owner-sale-ink);
+  font-family: "Tilda Sans", system-ui, sans-serif;
+}
+
+.owner-sale-reference-ui *,
+.owner-sale-reference-ui *::before,
+.owner-sale-reference-ui *::after {
+  box-sizing: border-box;
+}
+
+.owner-sale-reference-ui .owner-sale-page {
+  overflow: clip;
+}
+
+.owner-sale-reference-ui :is(
+  .owner-sale-hero__title,
+  .owner-sale-stages__title,
+  .owner-sale-strategy__title,
+  .owner-sale-presentation__title,
+  .about-company__title,
+  .owner-sale-services__title,
+  .owner-sale-magazine__title,
+  .owner-sale-types__title,
+  .catalog-consultation__title,
+  .catalog-contact__title,
+  .newsletter-cta h2
+) {
+  font-weight: 300;
+  letter-spacing: normal;
+}
+
+.owner-sale-reference-ui :is(
+  .owner-sale-hero__text,
+  .owner-sale-stages__item-text,
+  .owner-sale-strategy__text,
+  .about-company__description,
+  .catalog-consultation__lead,
+  .catalog-contact__subtitle,
+  .newsletter-cta__lead
+) {
+  color: var(--owner-sale-secondary);
+  font-weight: 300;
+}
+
+.owner-sale-reference-ui :is(button, a, input, textarea):focus-visible,
+.owner-sale-reference-ui .owner-sale-presentation__card:focus-visible {
+  outline: 2px solid var(--owner-sale-brand);
+  outline-offset: 3px;
+}
+
+/* Hero */
+.owner-sale-reference-ui .owner-sale-hero {
+  min-height: 900px;
+}
+
+.owner-sale-reference-ui .owner-sale-hero__overlay {
+  background: linear-gradient(180deg, rgb(0 0 0 / 42%) 0%, rgb(0 0 0 / 18%) 44%, rgb(0 0 0 / 58%) 100%);
+}
+
+.owner-sale-reference-ui .owner-sale-hero__inner {
+  justify-content: flex-end;
+  min-height: inherit;
+  padding-bottom: clamp(64px, 6vw, 110px);
+  padding-top: 190px;
+}
+
+.owner-sale-reference-ui .owner-sale-hero__breadcrumbs {
+  margin-bottom: 24px;
+}
+
+.owner-sale-reference-ui .owner-sale-hero__body {
+  align-items: end;
+  gap: clamp(32px, 5vw, 80px);
+}
+
+.owner-sale-reference-ui .owner-sale-hero__copy {
+  max-width: 980px;
+}
+
+.owner-sale-reference-ui .owner-sale-hero__title {
+  font-size: clamp(48px, 5.2vw, 75px);
+  line-height: .98;
+}
+
+.owner-sale-reference-ui .owner-sale-hero__text {
+  color: #fff;
+  font-size: 22px;
+  line-height: 1.5;
+  margin-top: 24px;
+  max-width: 800px;
+}
+
+.owner-sale-reference-ui :is(
+  .owner-sale-hero__button,
+  .owner-sale-stages__offer-btn,
+  .owner-sale-strategy__button,
+  .catalog-consultation__submit,
+  .catalog-contact__submit,
+  .catalog-contact__card-submit,
+  .newsletter-form button
+) {
+  border-radius: 1px;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.1;
+  min-height: 70px;
+  padding-inline: 36px;
+  transition: background-color 200ms ease, border-color 200ms ease, color 200ms ease, opacity 200ms ease;
+}
+
+/* Sticky section navigation */
+.owner-sale-reference-ui .owner-sale-sticky {
+  background: #fff;
+  box-shadow: 0 1px 0 rgb(30 30 30 / 10%);
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  position: fixed;
+  right: 0;
+  top: 0;
+  transform: translateY(-100%);
+  transition: opacity 200ms ease, transform 240ms ease;
+  z-index: 900;
+}
+
+.owner-sale-reference-ui .owner-sale-sticky--visible {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+.owner-sale-reference-ui .owner-sale-sticky__link {
+  align-items: center;
+  color: var(--owner-sale-ink);
+  display: inline-flex;
+  font-weight: 400;
+  min-height: 44px;
+  min-width: 44px;
+}
+
+.owner-sale-reference-ui .owner-sale-sticky__link--active {
+  color: var(--owner-sale-brand);
+}
+
+.owner-sale-reference-ui :is(#stages, #about, #property-types, #request) {
+  scroll-margin-top: 112px;
+}
+
+/* Sale stages */
+.owner-sale-reference-ui .owner-sale-stages {
+  padding-block: clamp(72px, 6vw, 100px);
+}
+
+.owner-sale-reference-ui .owner-sale-stages__body {
+  column-gap: clamp(48px, 6vw, 110px);
+  grid-template-columns: minmax(320px, .82fr) minmax(0, 1.18fr);
+}
+
+.owner-sale-reference-ui .owner-sale-stages__aside {
+  gap: 28px;
+  top: 112px;
+}
+
+.owner-sale-reference-ui .owner-sale-stages__title {
+  font-size: 44px;
+  line-height: 1.2;
+}
+
+.owner-sale-reference-ui .owner-sale-stages__offer {
+  border-radius: 1px;
+  min-height: 440px;
+}
+
+.owner-sale-reference-ui .owner-sale-stages__offer-title {
+  font-size: 38px;
+  font-weight: 300;
+  line-height: 1.15;
+}
+
+.owner-sale-reference-ui .owner-sale-stages__list {
+  gap: 0;
+  padding-top: 0;
+}
+
+.owner-sale-reference-ui .owner-sale-stages__item {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 64px minmax(0, 1fr);
+  padding: 28px 0;
+}
+
+.owner-sale-reference-ui .owner-sale-stages__item + .owner-sale-stages__item {
+  border-top: 1px solid var(--owner-sale-border);
+}
+
+.owner-sale-reference-ui .owner-sale-stages__number {
+  align-items: center;
+  border: 1px solid var(--owner-sale-brand);
+  border-radius: 50%;
+  color: var(--owner-sale-brand);
+  display: inline-flex;
+  font-size: 13px;
+  font-weight: 400;
+  height: 38px;
+  justify-content: center;
+  letter-spacing: .08em;
+  line-height: 1;
+  width: 38px;
+}
+
+.owner-sale-reference-ui .owner-sale-stages__item-title {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.owner-sale-reference-ui .owner-sale-stages__item-text {
+  font-size: 22px;
+  line-height: 1.28;
+}
+
+/* Strategy */
+.owner-sale-reference-ui .owner-sale-strategy {
+  padding-block: clamp(72px, 6vw, 100px);
+}
+
+.owner-sale-reference-ui .owner-sale-strategy__frame {
+  border-radius: 0;
+}
+
+.owner-sale-reference-ui .owner-sale-strategy__title {
+  font-size: 44px;
+  line-height: 1.2;
+}
+
+.owner-sale-reference-ui .owner-sale-strategy__text {
+  font-size: 22px;
+  line-height: 1.5;
+}
+
+/* Presentation cards */
+.owner-sale-reference-ui .owner-sale-presentation {
+  padding-block: clamp(72px, 6vw, 100px);
+}
+
+.owner-sale-reference-ui .owner-sale-presentation__title {
+  font-size: 44px;
+  line-height: 1.2;
+  margin-bottom: 48px;
+  text-align: center;
+}
+
+.owner-sale-reference-ui .owner-sale-presentation__grid {
+  gap: 12px;
+}
+
+.owner-sale-reference-ui .owner-sale-presentation__card,
+.owner-sale-reference-ui .owner-sale-presentation__card--featured {
+  aspect-ratio: 1 / .92;
+  border-radius: 0;
+}
+
+.owner-sale-reference-ui .owner-sale-presentation__image {
+  transition: transform 340ms ease, filter 340ms ease;
+}
+
+.owner-sale-reference-ui .owner-sale-presentation__overlay {
+  background: linear-gradient(180deg, rgb(0 0 0 / 8%), rgb(0 0 0 / 66%));
+  transition: background-color 340ms ease;
+}
+
+.owner-sale-reference-ui .owner-sale-presentation__caption {
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: 1.2;
+  max-width: none;
+  padding: 32px;
+}
+
+.owner-sale-reference-ui .owner-sale-presentation__featured {
+  max-width: none;
+  padding: 32px;
+}
+
+.owner-sale-reference-ui .owner-sale-presentation__featured-title {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.owner-sale-reference-ui .owner-sale-presentation__featured-text {
+  color: rgb(255 255 255 / 88%);
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.4;
+}
+
+.owner-sale-reference-ui .owner-sale-presentation__badge {
+  display: none;
+}
+
+@media (hover: hover) {
+  .owner-sale-reference-ui .owner-sale-presentation__card:hover .owner-sale-presentation__image,
+  .owner-sale-reference-ui .owner-sale-presentation__card:focus-visible .owner-sale-presentation__image {
+    filter: brightness(.76);
+    transform: scale(1.025);
+  }
+}
+
+/* About and consultation */
+.owner-sale-reference-ui .about-company {
+  padding-block: clamp(72px, 6vw, 100px);
+}
+
+.owner-sale-reference-ui .about-company__inner {
+  max-width: 1920px;
+}
+
+.owner-sale-reference-ui .about-company__title {
+  font-size: 44px;
+  line-height: 1.2;
+}
+
+.owner-sale-reference-ui .about-company__description {
+  color: var(--owner-sale-secondary);
+  font-size: 22px;
+  line-height: 1.5;
+}
+
+.owner-sale-reference-ui .about-company__stat-value {
+  color: var(--owner-sale-brand);
+  font-weight: 300;
+}
+
+.owner-sale-reference-ui .catalog-consultation {
+  min-height: 720px;
+}
+
+.owner-sale-reference-ui .catalog-consultation__inner {
+  min-height: inherit;
+}
+
+.owner-sale-reference-ui .catalog-consultation__image {
+  object-position: center 22%;
+}
+
+.owner-sale-reference-ui .catalog-consultation__title {
+  font-size: 44px;
+  line-height: 1.15;
+}
+
+.owner-sale-reference-ui .catalog-consultation__lead {
+  color: rgb(255 255 255 / 82%);
+  font-size: 22px;
+  line-height: 1.5;
+}
+
+/* Selling tools */
+.owner-sale-reference-ui .owner-sale-services {
+  padding-block: clamp(72px, 6vw, 100px);
+}
+
+.owner-sale-reference-ui .owner-sale-services__title {
+  font-size: 44px;
+  line-height: 1.2;
+}
+
+.owner-sale-reference-ui .owner-sale-services__slider-wrap {
+  border-color: var(--owner-sale-border);
+}
+
+.owner-sale-reference-ui .owner-sale-services__slider {
+  --services-slide-width: 390px;
+}
+
+.owner-sale-reference-ui .owner-sale-services__card {
+  aspect-ratio: auto;
+  border: 1px solid var(--owner-sale-border);
+  border-top: 4px solid var(--owner-sale-brand);
+  gap: 24px;
+  min-height: 280px;
+  padding: 30px;
+}
+
+.owner-sale-reference-ui .owner-sale-services__number {
+  align-items: center;
+  border: 1px solid var(--owner-sale-brand);
+  border-radius: 50%;
+  color: var(--owner-sale-brand);
+  display: inline-flex;
+  font-size: 13px;
+  font-weight: 400;
+  height: 38px;
+  justify-content: center;
+  letter-spacing: .08em;
+  line-height: 1;
+  width: 38px;
+}
+
+.owner-sale-reference-ui .owner-sale-services__text {
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 1.28;
+}
+
+.owner-sale-reference-ui .owner-sale-services__card:hover,
+.owner-sale-reference-ui .owner-sale-services__card:focus-within {
+  background: var(--owner-sale-brand);
+  border-color: var(--owner-sale-brand);
+  color: #fff;
+}
+
+.owner-sale-reference-ui .owner-sale-services__card:hover .owner-sale-services__number,
+.owner-sale-reference-ui .owner-sale-services__card:focus-within .owner-sale-services__number {
+  border-color: #fff;
+  color: #fff;
+}
+
+/* Magazine and related directions */
+.owner-sale-reference-ui .owner-sale-magazine {
+  min-height: 680px;
+  padding-block: 0;
+}
+
+.owner-sale-reference-ui .owner-sale-magazine__grid {
+  min-height: inherit;
+}
+
+.owner-sale-reference-ui .owner-sale-magazine__title {
+  font-size: 44px;
+  line-height: 1.2;
+}
+
+.owner-sale-reference-ui .owner-sale-magazine__item {
+  font-size: 22px;
+  line-height: 1.35;
+}
+
+.owner-sale-reference-ui .owner-sale-types {
+  padding-block: clamp(72px, 6vw, 100px);
+}
+
+.owner-sale-reference-ui .owner-sale-types__grid {
+  gap: 12px;
+}
+
+.owner-sale-reference-ui .owner-sale-types__card {
+  border-radius: 0;
+}
+
+.owner-sale-reference-ui .owner-sale-types__title {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.owner-sale-reference-ui .owner-sale-types__link {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: .12em;
+}
+
+/* Forms, newsletter and footer */
+.owner-sale-reference-ui .catalog-contact {
+  min-height: 760px;
+}
+
+.owner-sale-reference-ui :is(.catalog-contact__input, .catalog-contact__textarea) {
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.owner-sale-reference-ui .catalog-contact__card-title {
+  font-weight: 300;
+}
+
+.owner-sale-reference-ui .newsletter-cta {
+  padding: clamp(72px, 6vw, 100px) clamp(20px, 5.2vw, 100px) 40px;
+}
+
+.owner-sale-reference-ui .newsletter-cta__inner {
+  max-width: 1920px;
+}
+
+.owner-sale-reference-ui .newsletter-cta h2 {
+  font-size: 44px;
+  line-height: 1.2;
+}
+
+.owner-sale-reference-ui .site-footer__nav {
+  gap: 40px 24px;
+}
+
+.owner-sale-reference-ui .site-footer__column-title {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.owner-sale-reference-ui .site-footer__link {
+  font-size: 16px;
+  font-weight: 300;
+  transition: color 200ms ease;
+}
+
+.owner-sale-reference-ui .site-footer__link:hover,
+.owner-sale-reference-ui .site-footer__link:focus-visible {
+  color: var(--owner-sale-brand);
+}
+
+.owner-sale-reference-ui :is(
+  .site-header__icon-btn,
+  .ui-more-link,
+  .catalog-consultation__method,
+  .catalog-contact__method,
+  .floating-expert__close
+) {
+  min-height: 44px;
+}
+
+.owner-sale-reference-ui :is(.site-header__icon-btn, .floating-expert__close) {
+  min-width: 44px;
+}
+
+@media (min-width: 1200px) {
+  .owner-sale-reference-ui .site-footer__nav {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1441px) {
+  .owner-sale-reference-ui .owner-sale-hero {
+    min-height: 1040px;
+  }
+
+  .owner-sale-reference-ui :is(
+    .owner-sale-stages__title,
+    .owner-sale-strategy__title,
+    .owner-sale-presentation__title,
+    .about-company__title,
+    .owner-sale-services__title,
+    .owner-sale-magazine__title,
+    .catalog-consultation__title,
+    .newsletter-cta h2
+  ) {
+    font-size: 44px;
+    line-height: 1.2;
+  }
+
+  .owner-sale-reference-ui :is(
+    .owner-sale-hero__button,
+    .owner-sale-stages__offer-btn,
+    .owner-sale-strategy__button,
+    .catalog-consultation__submit,
+    .catalog-contact__submit,
+    .catalog-contact__card-submit,
+    .newsletter-form button
+  ) {
+    font-size: 19px;
+    padding-inline: 47px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .owner-sale-reference-ui .owner-sale-hero {
+    min-height: 680px;
+  }
+
+  .owner-sale-reference-ui .owner-sale-hero__inner {
+    padding-top: 130px;
+  }
+
+  .owner-sale-reference-ui .owner-sale-stages__body {
+    grid-template-columns: 1fr;
+  }
+
+  .owner-sale-reference-ui .owner-sale-stages__aside {
+    position: static;
+  }
+
+  .owner-sale-reference-ui .owner-sale-presentation__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .owner-sale-reference-ui .owner-sale-presentation__card--featured {
+    grid-column: auto;
+  }
+
+  .owner-sale-reference-ui .owner-sale-services__slider {
+    --services-slide-width: 360px;
+  }
+}
+
+@media (max-width: 540px) {
+  .owner-sale-reference-ui .owner-sale-hero {
+    min-height: 520px;
+  }
+
+  .owner-sale-reference-ui .owner-sale-hero__inner {
+    gap: 16px;
+    padding-bottom: 28px;
+    padding-top: 88px;
+  }
+
+  .owner-sale-reference-ui .owner-sale-hero__breadcrumbs {
+    margin-bottom: 16px;
+  }
+
+  .owner-sale-reference-ui .owner-sale-hero__title {
+    font-size: 35px;
+    line-height: 1;
+  }
+
+  .owner-sale-reference-ui .owner-sale-hero__text {
+    font-size: 15px;
+    line-height: 1.28;
+    margin-top: 14px;
+  }
+
+  .owner-sale-reference-ui :is(
+    .owner-sale-hero__button,
+    .owner-sale-stages__offer-btn,
+    .owner-sale-strategy__button,
+    .catalog-consultation__submit,
+    .catalog-contact__submit,
+    .catalog-contact__card-submit,
+    .newsletter-form button
+  ) {
+    font-size: 18px;
+    min-height: 58px;
+    padding-inline: 24px;
+  }
+
+  .owner-sale-reference-ui .owner-sale-sticky {
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    scrollbar-width: none;
+  }
+
+  .owner-sale-reference-ui .owner-sale-sticky::-webkit-scrollbar {
+    display: none;
+  }
+
+  .owner-sale-reference-ui :is(
+    .owner-sale-stages,
+    .owner-sale-strategy,
+    .owner-sale-presentation,
+    .about-company,
+    .owner-sale-services,
+    .owner-sale-types
+  ) {
+    padding-block: 48px;
+  }
+
+  .owner-sale-reference-ui :is(
+    .owner-sale-stages__title,
+    .owner-sale-strategy__title,
+    .owner-sale-presentation__title,
+    .about-company__title,
+    .owner-sale-services__title,
+    .owner-sale-magazine__title,
+    .catalog-consultation__title,
+    .newsletter-cta h2
+  ) {
+    font-size: 22px;
+    line-height: 1.2;
+  }
+
+  .owner-sale-reference-ui .owner-sale-stages__offer {
+    min-height: 390px;
+  }
+
+  .owner-sale-reference-ui .owner-sale-stages__offer-title {
+    font-size: 26px;
+  }
+
+  .owner-sale-reference-ui .owner-sale-stages__item {
+    gap: 12px;
+    grid-template-columns: 46px minmax(0, 1fr);
+    padding: 20px 0;
+  }
+
+  .owner-sale-reference-ui .owner-sale-stages__number {
+    height: 34px;
+    width: 34px;
+  }
+
+  .owner-sale-reference-ui .owner-sale-stages__item-title {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  .owner-sale-reference-ui .owner-sale-stages__item-text,
+  .owner-sale-reference-ui .owner-sale-strategy__text,
+  .owner-sale-reference-ui .about-company__description,
+  .owner-sale-reference-ui .catalog-consultation__lead,
+  .owner-sale-reference-ui .owner-sale-magazine__item {
+    font-size: 15px;
+    line-height: 1.4;
+  }
+
+  .owner-sale-reference-ui .owner-sale-presentation__title {
+    margin-bottom: 24px;
+  }
+
+  .owner-sale-reference-ui .owner-sale-presentation__grid {
+    gap: 10px;
+    grid-template-columns: 1fr;
+  }
+
+  .owner-sale-reference-ui .owner-sale-presentation__card,
+  .owner-sale-reference-ui .owner-sale-presentation__card--featured {
+    aspect-ratio: 4 / 3;
+  }
+
+  .owner-sale-reference-ui .owner-sale-presentation__caption,
+  .owner-sale-reference-ui .owner-sale-presentation__featured {
+    padding: 20px;
+  }
+
+  .owner-sale-reference-ui .owner-sale-presentation__caption,
+  .owner-sale-reference-ui .owner-sale-presentation__featured-title {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  .owner-sale-reference-ui .owner-sale-presentation__featured-text {
+    font-size: 15px;
+  }
+
+  .owner-sale-reference-ui .catalog-consultation {
+    min-height: 680px;
+  }
+
+  .owner-sale-reference-ui .catalog-consultation__image {
+    object-position: 56% center;
+  }
+
+  .owner-sale-reference-ui .owner-sale-services__slider {
+    --services-slide-width: 82%;
+  }
+
+  .owner-sale-reference-ui .owner-sale-services__card {
+    min-height: 220px;
+    padding: 22px;
+  }
+
+  .owner-sale-reference-ui .owner-sale-services__text {
+    font-size: 15px;
+    line-height: 1.4;
+  }
+
+  .owner-sale-reference-ui .owner-sale-magazine {
+    min-height: 520px;
+  }
+
+  .owner-sale-reference-ui .owner-sale-types__grid {
+    gap: 10px;
+  }
+
+  .owner-sale-reference-ui .owner-sale-types__title {
+    font-size: 20px;
+  }
+
+  .owner-sale-reference-ui .catalog-contact {
+    min-height: 0;
+  }
+
+  .owner-sale-reference-ui :is(.catalog-contact__input, .catalog-contact__textarea) {
+    font-size: 17px;
+  }
+
+  .owner-sale-reference-ui .newsletter-cta {
+    padding: 40px 0 0;
+  }
+
+  .owner-sale-reference-ui .site-footer__column-title {
+    font-size: 14px;
+    line-height: 1.2;
+  }
+
+  .owner-sale-reference-ui .site-footer__link {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.4;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .owner-sale-reference-ui *,
+  .owner-sale-reference-ui *::before,
+  .owner-sale-reference-ui *::after {
+    scroll-behavior: auto !important;
+    transition-duration: .01ms !important;
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
