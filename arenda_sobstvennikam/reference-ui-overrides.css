@@ -1757,3 +1757,52 @@ body.owner-rent-reference-ui .owner-sale-hero .breadcrumbs__link {
     transition: none;
   }
 }
+
+/* Strategy cards use the same title/description typography as team cards. */
+.owner-rent-reference-ui :is(
+  .owner-sale-presentation__caption,
+  .owner-sale-presentation__featured-title
+) {
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: 28.8px;
+}
+
+.owner-rent-reference-ui :is(
+  .owner-sale-presentation__reveal-text,
+  .owner-sale-presentation__featured-text
+) {
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 28.16px;
+}
+
+.owner-rent-reference-ui .owner-sale-presentation__card:not(.owner-sale-presentation__card--featured):is(:hover, :focus, :focus-within) .owner-sale-presentation__reveal-text {
+  max-height: 200px;
+}
+
+.owner-rent-reference-ui .owner-sale-presentation__card--featured:is(:hover, :focus, :focus-within) .owner-sale-presentation__featured-text {
+  max-height: 220px;
+}
+
+@media (max-width: 540px) {
+  .owner-rent-reference-ui :is(
+    .owner-sale-presentation__caption,
+    .owner-sale-presentation__featured-title
+  ) {
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: 24px;
+  }
+
+  .owner-rent-reference-ui :is(
+    .owner-sale-presentation__reveal-text,
+    .owner-sale-presentation__featured-text
+  ) {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 19.2px;
+  }
+}
