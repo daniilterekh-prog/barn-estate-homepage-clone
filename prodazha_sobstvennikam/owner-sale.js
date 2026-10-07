@@ -83,6 +83,9 @@
 
   enhanceHeroHeader();
 
+  const magazineSection = page.querySelector(':scope > .owner-sale-magazine');
+  if (magazineSection) magazineSection.remove();
+
   const enhanceSectionEyebrows = function () {
     [
       ['.owner-sale-stages__title', 'ПРОЦЕСС ПРОДАЖИ'],
@@ -134,7 +137,6 @@
       page.querySelector(':scope > .about-company'),
       page.querySelector(':scope > .owner-sale-stages'),
       page.querySelector(':scope > .owner-sale-strategy'),
-      page.querySelector(':scope > .owner-sale-magazine'),
       page.querySelector(':scope > .catalog-consultation'),
       page.querySelector(':scope > .owner-sale-types')
     ].filter(Boolean);
@@ -440,7 +442,6 @@
     '.owner-sale-strategy img',
     '.owner-sale-presentation img',
     '.catalog-consultation img',
-    '.owner-sale-magazine img',
     '.owner-sale-types img',
     '.catalog-contact img',
     '.newsletter-cta img'
