@@ -1039,6 +1039,20 @@ body.owner-rent-reference-ui .owner-sale-hero .breadcrumbs__link {
     text-align: center;
   }
 
+  .owner-rent-reference-ui :is(
+    .owner-sale-exclusive__header,
+    .owner-sale-exclusive__eyebrow,
+    .owner-sale-exclusive__title,
+    .owner-sale-exclusive__title-line,
+    .owner-sale-exclusive__intro
+  ) {
+    text-align: center;
+  }
+
+  .owner-rent-reference-ui .owner-sale-exclusive__intro {
+    margin-inline: auto;
+  }
+
   body.owner-rent-reference-ui .owner-sale-exclusive .owner-sale-exclusive__title {
     font-size: var(--owner-rent-ui-h2-mobile-size);
     line-height: var(--owner-rent-ui-h2-mobile-line);
