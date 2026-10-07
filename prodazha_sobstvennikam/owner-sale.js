@@ -83,6 +83,47 @@
 
   enhanceHeroHeader();
 
+  const enhanceSectionEyebrows = function () {
+    [
+      ['.owner-sale-stages__title', 'ПРОЦЕСС ПРОДАЖИ'],
+      ['.owner-sale-strategy__title', 'СТРАТЕГИЯ BARNES'],
+      ['.owner-sale-presentation__title', 'СТРАТЕГИЯ ПРЕЗЕНТАЦИИ'],
+      ['.about-company__title', 'BARNES / МОСКВА'],
+      ['.newsletter-cta h2', 'BARNES / АНАЛИТИКА']
+    ].forEach(function (item) {
+      const title = document.querySelector(item[0]);
+      const container = title && title.parentElement;
+      if (!title || !container || container.querySelector(':scope > .owner-sale-section-eyebrow')) return;
+
+      const eyebrow = document.createElement('p');
+      eyebrow.className = 'owner-sale-section-eyebrow';
+      eyebrow.textContent = item[1];
+      container.insertBefore(eyebrow, title);
+    });
+
+    const services = document.querySelector('.owner-sale-services__header-wrap');
+    const servicesHeader = services && services.querySelector(':scope > .owner-sale-services__header');
+    if (services && servicesHeader && !services.querySelector(':scope > .owner-sale-section-eyebrow')) {
+      const eyebrow = document.createElement('p');
+      eyebrow.className = 'owner-sale-section-eyebrow owner-sale-services__eyebrow';
+      eyebrow.textContent = 'ЕДИНАЯ КОМАНДА BARNES';
+      services.insertBefore(eyebrow, servicesHeader);
+    }
+
+    const typesSection = document.querySelector('.owner-sale-types');
+    const typesInner = typesSection && typesSection.querySelector('.owner-sale-types__inner');
+    if (typesSection && typesInner && !typesInner.querySelector(':scope > .owner-sale-types__header')) {
+      const header = document.createElement('header');
+      header.className = 'owner-sale-types__header';
+      header.innerHTML = '<p class="owner-sale-section-eyebrow owner-sale-types__eyebrow">НАПРАВЛЕНИЯ BARNES</p><h2 class="owner-sale-types__section-title" id="owner-sale-types-title">НЕДВИЖИМОСТЬ ДЛЯ ПРОДАЖИ</h2>';
+      typesInner.insertBefore(header, typesInner.firstChild);
+      typesSection.setAttribute('aria-labelledby', 'owner-sale-types-title');
+      typesSection.removeAttribute('aria-label');
+    }
+  };
+
+  enhanceSectionEyebrows();
+
   if (!menu && menuButton) {
     menu = document.createElement('aside');
     menu.className = 'owner-sale-clone-menu';

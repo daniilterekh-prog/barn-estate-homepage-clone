@@ -903,6 +903,76 @@ body.owner-sale-reference-ui .owner-sale-hero .breadcrumbs__link {
 }
 
 /* Hero parity pass: mirrors the approved owner-rent geometry. */
+.owner-sale-reference-ui .owner-sale-section-eyebrow {
+  color: var(--owner-sale-primary);
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: .12em;
+  line-height: 16.1px;
+  margin: 0 0 25px;
+  text-transform: uppercase;
+}
+
+.owner-sale-reference-ui .owner-sale-presentation__inner > .owner-sale-section-eyebrow {
+  text-align: center;
+}
+
+.owner-sale-reference-ui .owner-sale-types__inner {
+  row-gap: 0;
+}
+
+.owner-sale-reference-ui .owner-sale-types__header {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin: 0 auto clamp(28px, 2.5vw, 48px);
+  max-width: 948px;
+  text-align: center;
+}
+
+.owner-sale-reference-ui .owner-sale-types__header .owner-sale-section-eyebrow {
+  margin: 0;
+}
+
+.owner-sale-reference-ui .owner-sale-types__section-title {
+  color: var(--owner-sale-primary);
+  font-size: 38px;
+  font-weight: 300;
+  line-height: 45.6px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1279px) {
+  .owner-sale-reference-ui .owner-sale-section-eyebrow {
+    margin-bottom: 12px;
+  }
+}
+
+@media (min-width: 1441px) {
+  .owner-sale-reference-ui .owner-sale-types__section-title {
+    font-size: 44px;
+    line-height: 52.8px;
+  }
+}
+
+@media (max-width: 540px) {
+  .owner-sale-reference-ui .owner-sale-section-eyebrow {
+    font-size: 12px;
+    line-height: 14.4px;
+  }
+
+  .owner-sale-reference-ui .about-company .owner-sale-section-eyebrow {
+    text-align: center;
+  }
+
+  .owner-sale-reference-ui .owner-sale-types__section-title {
+    font-size: 22px;
+    line-height: 26.4px;
+  }
+}
+
 .owner-sale-reference-ui .layout__header .site-header__search-label {
   display: none;
 }
