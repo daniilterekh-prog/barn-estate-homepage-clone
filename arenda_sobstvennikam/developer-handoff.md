@@ -209,6 +209,7 @@
 - `reference-ui-overrides.css` — точные визуальные значения и responsive overrides.
 - `reference-ui-behavior.js` — меню, форматирование карточек и CTA после гидрации.
 - `developer-handoff.md` — этот журнал согласованных решений.
+- `migration-checklist.md` — полный переносимый список корректировок и QA для похожих страниц.
 
 ### Шапка блока перелинковки
 
