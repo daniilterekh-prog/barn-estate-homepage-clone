@@ -54,6 +54,13 @@
 
   function enhanceHeroSection() {
     var button = document.querySelector('.owner-sale-hero__button');
+    var breadcrumbs = document.querySelector('.owner-sale-hero__breadcrumbs');
+    var copy = document.querySelector('.owner-sale-hero__copy');
+
+    if (breadcrumbs && copy && breadcrumbs.parentElement !== copy) {
+      copy.insertBefore(breadcrumbs, copy.firstChild);
+    }
+
     if (!button || button.querySelector('.owner-sale-hero__button-arrow')) return;
 
     button.innerHTML = 'Обсудить стратегию <span class="owner-sale-hero__button-arrow" aria-hidden="true"><svg viewBox="0 0 16 16" focusable="false"><path d="M3 13 13 3M5 3h8v8" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25"></path></svg></span>';
