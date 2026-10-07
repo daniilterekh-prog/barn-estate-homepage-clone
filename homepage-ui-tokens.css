@@ -24,6 +24,7 @@
   --control-cta-line-height: 1.1;
   --control-cta-font-weight: var(--font-weight-regular);
   --control-cta-radius: 1px;
+  --space-newsletter-footer-mobile: 40px;
 
   /* Reference contact-link role for the homepage office/contact block. */
   --type-contact-link-size: 17px;
@@ -284,6 +285,22 @@ section.news-section[class] {
 }
 
 @media (max-width: 540px) {
+  /* Give the white newsletter block a clear separation from the dark footer. */
+  .site-footer[class] {
+    margin-top: var(--space-newsletter-footer-mobile);
+  }
+
+  .site-footer__column-title[class] {
+    font-size: 14px !important;
+    line-height: 1.2 !important;
+  }
+
+  .site-footer__link[class] {
+    font-size: 13px !important;
+    font-weight: var(--font-weight-regular) !important;
+    line-height: 1.4 !important;
+  }
+
   .barnes-choice__heading[class] {
     gap: 8px;
   }
