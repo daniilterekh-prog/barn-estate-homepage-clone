@@ -137,6 +137,20 @@
     });
   }
 
+  function reorderBrandSections() {
+    var about = document.querySelector('.about-company');
+    var services = document.querySelector('.owner-sale-services');
+    var exclusive = document.querySelector('.owner-sale-exclusive');
+
+    if (!about || !services || !exclusive) return;
+    if (about.parentNode !== services.parentNode || services.parentNode !== exclusive.parentNode) return;
+    if (exclusive.nextElementSibling === services && services.nextElementSibling === about) return;
+
+    var parent = services.parentNode;
+    parent.insertBefore(exclusive, services);
+    parent.insertBefore(about, services.nextSibling);
+  }
+
   function updateExclusiveScrollState() {
     var section = document.querySelector('.owner-sale-exclusive');
     var items = section && Array.from(section.querySelectorAll('.owner-sale-exclusive__item'));
@@ -254,6 +268,7 @@
   function scheduleServicesEnhancement() {
     window.clearTimeout(enhancementTimer);
     enhancementTimer = window.setTimeout(function () {
+      reorderBrandSections();
       enhanceServicesSection();
       enhanceExclusiveSection();
       enhanceSectionHeadings();
