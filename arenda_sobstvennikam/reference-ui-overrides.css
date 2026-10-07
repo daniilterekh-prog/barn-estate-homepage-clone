@@ -127,6 +127,12 @@ body.owner-rent-reference-ui .owner-sale-hero .breadcrumbs__link {
   line-height: 18px;
 }
 
+@media (min-width: 769px) {
+  body.owner-rent-reference-ui .owner-sale-hero .breadcrumbs__link {
+    font-size: 17px;
+  }
+}
+
 .owner-rent-reference-ui .owner-sale-presentation__badge {
   font-size: 14px;
   line-height: 16.1px;
