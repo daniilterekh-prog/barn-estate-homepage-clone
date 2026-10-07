@@ -227,6 +227,32 @@
     });
   }
 
+  function enhancePresentationCards() {
+    var descriptions = [
+      'Находим сильные стороны объекта и превращаем их в понятные преимущества для будущего арендатора.',
+      'Определяем позиционирование, ценовой ориентир и ключевые акценты для презентации объекта.',
+      'Выбираем релевантные каналы и показываем объект аудитории, которая соответствует его уровню.',
+      'Проверяем документы и сопровождаем договор, чтобы защитить интересы собственника на каждом этапе.'
+    ];
+
+    document.querySelectorAll('.owner-sale-presentation__card:not(.owner-sale-presentation__card--featured)').forEach(function (card, index) {
+      if (card.querySelector('.owner-sale-presentation__reveal')) return;
+      var caption = card.querySelector('.owner-sale-presentation__caption');
+      if (!caption) return;
+
+      var reveal = document.createElement('div');
+      reveal.className = 'owner-sale-presentation__reveal';
+      var text = document.createElement('p');
+      text.className = 'owner-sale-presentation__reveal-text';
+      text.id = 'owner-sale-presentation-description-' + (index + 1);
+      text.textContent = descriptions[index] || descriptions[0];
+      caption.parentNode.insertBefore(reveal, caption);
+      reveal.append(caption, text);
+      card.tabIndex = 0;
+      card.setAttribute('aria-describedby', text.id);
+    });
+  }
+
   function updateExclusiveScrollState() {
     var section = document.querySelector('.owner-sale-exclusive');
     var items = section && Array.from(section.querySelectorAll('.owner-sale-exclusive__item'));
@@ -365,6 +391,7 @@
     enhancementTimer = window.setTimeout(function () {
       reorderBrandSections();
       replaceConsultationSection();
+      enhancePresentationCards();
       enhanceHeroSection();
       enhanceServicesSection();
       enhanceExclusiveSection();

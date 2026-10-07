@@ -1556,3 +1556,104 @@ body.owner-rent-reference-ui .owner-sale-hero .breadcrumbs__link {
     width: 100%;
   }
 }
+
+/* Strategy cards: the fifth card is the reference active state. */
+.owner-rent-reference-ui .owner-sale-presentation__card:not(.owner-sale-presentation__card--featured) {
+  cursor: default;
+  outline: none;
+  overflow: hidden;
+}
+
+.owner-rent-reference-ui .owner-sale-presentation__card:not(.owner-sale-presentation__card--featured) .owner-sale-presentation__image,
+.owner-rent-reference-ui .owner-sale-presentation__card:not(.owner-sale-presentation__card--featured) .owner-sale-presentation__overlay {
+  transition: transform 360ms cubic-bezier(.22, 1, .36, 1), background-color 280ms ease;
+}
+
+.owner-rent-reference-ui .owner-sale-presentation__reveal {
+  display: flex;
+  flex-direction: column;
+  inset: 0;
+  justify-content: flex-end;
+  overflow: hidden;
+  padding: 24px 28px;
+  pointer-events: none;
+  position: absolute;
+  z-index: 2;
+}
+
+.owner-rent-reference-ui .owner-sale-presentation__reveal .owner-sale-presentation__caption {
+  display: block;
+  flex: none;
+  height: auto;
+  margin: 0;
+  min-height: 0;
+  padding: 0;
+  position: static;
+  transform: translateY(0);
+  transition: transform 300ms cubic-bezier(.22, 1, .36, 1);
+  width: auto;
+}
+
+.owner-rent-reference-ui .owner-sale-presentation__reveal-text {
+  border-top: 1px solid rgb(255 255 255 / 45%);
+  color: rgb(255 255 255 / 75%);
+  font-family: "Tilda Sans", "Tilda Sans Fallback", system-ui, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.28;
+  margin: 0;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding-top: 0;
+  transform: translateY(12px);
+  transition: max-height 360ms cubic-bezier(.22, 1, .36, 1), opacity 220ms ease, padding-top 300ms ease, transform 300ms cubic-bezier(.22, 1, .36, 1);
+}
+
+.owner-rent-reference-ui .owner-sale-presentation__card:not(.owner-sale-presentation__card--featured):is(:hover, :focus, :focus-within) .owner-sale-presentation__overlay {
+  background-color: rgb(18 15 14 / 68%);
+}
+
+.owner-rent-reference-ui .owner-sale-presentation__card:not(.owner-sale-presentation__card--featured):is(:hover, :focus, :focus-within) .owner-sale-presentation__image {
+  transform: scale(1.025);
+}
+
+.owner-rent-reference-ui .owner-sale-presentation__card:not(.owner-sale-presentation__card--featured):is(:hover, :focus, :focus-within) .owner-sale-presentation__caption {
+  transform: translateY(-2px);
+}
+
+.owner-rent-reference-ui .owner-sale-presentation__card:not(.owner-sale-presentation__card--featured):is(:hover, :focus, :focus-within) .owner-sale-presentation__reveal-text {
+  max-height: 132px;
+  opacity: 1;
+  padding-top: 14px;
+  transform: translateY(0);
+}
+
+.owner-rent-reference-ui .owner-sale-presentation__card:not(.owner-sale-presentation__card--featured):focus-visible {
+  box-shadow: inset 0 0 0 2px #fff, inset 0 0 0 4px #8b1d25;
+}
+
+@media (max-width: 540px) {
+  .owner-rent-reference-ui .owner-sale-presentation__reveal {
+    padding: 20px;
+  }
+
+  .owner-rent-reference-ui .owner-sale-presentation__reveal-text {
+    font-size: 15px;
+    line-height: 19.2px;
+  }
+
+  .owner-rent-reference-ui .owner-sale-presentation__card:not(.owner-sale-presentation__card--featured):is(:hover, :focus, :focus-within) .owner-sale-presentation__reveal-text {
+    max-height: 150px;
+    padding-top: 12px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .owner-rent-reference-ui .owner-sale-presentation__card:not(.owner-sale-presentation__card--featured) .owner-sale-presentation__image,
+  .owner-rent-reference-ui .owner-sale-presentation__card:not(.owner-sale-presentation__card--featured) .owner-sale-presentation__overlay,
+  .owner-rent-reference-ui .owner-sale-presentation__reveal .owner-sale-presentation__caption,
+  .owner-rent-reference-ui .owner-sale-presentation__reveal-text {
+    transition: none;
+  }
+}
