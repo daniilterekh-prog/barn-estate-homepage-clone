@@ -151,7 +151,12 @@
       request.textContent = 'Оставить заявку';
       right.appendChild(request);
     }
-    bindRequestPopup(right.querySelector('.owner-rent-hero-request'));
+    var heroRequest = right.querySelector('.owner-rent-hero-request');
+    var heroContacts = right.querySelector('.owner-rent-hero-contacts');
+    if (heroRequest && heroContacts && heroRequest.nextElementSibling !== heroContacts) {
+      right.insertBefore(heroRequest, heroContacts);
+    }
+    bindRequestPopup(heroRequest);
   }
 
   function enhanceStickyHeader() {
@@ -206,8 +211,8 @@
       messengerGroup.appendChild(phone);
     }
     var requestLink = brand.querySelector('.owner-sale-sticky__request');
-    if (requestLink && requestLink !== brand.lastElementChild) {
-      brand.appendChild(requestLink);
+    if (requestLink && messengerGroup && requestLink.nextElementSibling !== messengerGroup) {
+      brand.insertBefore(requestLink, messengerGroup);
     }
     bindRequestPopup(requestLink);
     enhanceStickyNavigation(sticky, inner, messengerGroup);
