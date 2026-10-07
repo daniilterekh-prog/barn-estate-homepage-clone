@@ -49,6 +49,43 @@
   text-transform: uppercase;
 }
 
+.catalog-detail .vavilova-section-eyebrow,
+.catalog-detail :is(.detail-about__eyebrow, .reviews-section__eyebrow, .lot-developer__label) {
+  color: var(--vav-ui-text-primary);
+  font-size: 14px;
+  font-weight: var(--vav-ui-body-weight);
+  letter-spacing: .12em;
+  line-height: 16.1px;
+  margin: 0 0 25px;
+  text-transform: uppercase;
+}
+
+.catalog-detail :is(
+  .reviews-section__title,
+  .lot-developer__name
+) {
+  color: var(--vav-ui-text-primary);
+  font-size: var(--vav-ui-h2-size);
+  font-weight: var(--vav-ui-heading-weight);
+  letter-spacing: normal;
+  line-height: var(--vav-ui-h2-line);
+}
+
+.catalog-detail .newsletter-cta h2 {
+  color: var(--vav-ui-text-primary);
+  font-size: var(--vav-ui-h2-size);
+  font-weight: var(--vav-ui-heading-weight);
+  letter-spacing: normal;
+  line-height: 1;
+}
+
+.catalog-detail .catalog-contact__card-title {
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: 26.4px;
+}
+
 .catalog-detail :is(
   .detail-about__text,
   .detail-architecture__text,
@@ -70,6 +107,10 @@
 
 .catalog-detail .detail-hero__location {
   font-weight: 300;
+}
+
+.catalog-detail .detail-hero__spec {
+  font-weight: 400;
 }
 
 /* Keep the page rhythm aligned to the reference section rhythm. */
@@ -105,6 +146,341 @@
   line-height: 18.7px;
   min-height: 70px;
   padding: 16px 36px;
+}
+
+.catalog-detail :is(.detail-hero__button--secondary, .detail-location__action--secondary) {
+  border-radius: 1px;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 18.7px;
+  min-height: 70px;
+  padding: 16px 36px;
+}
+
+.catalog-detail :is(
+  .ui-more-link,
+  .detail-architecture__more,
+  .lot-developer__toggle,
+  .mortgage__action
+) {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: .12em;
+  line-height: 16.8px;
+  text-transform: uppercase;
+}
+
+.catalog-detail .detail-location__category {
+  border-color: var(--vav-ui-border);
+  border-radius: 999px;
+  font-size: 14px;
+  line-height: 19.6px;
+}
+
+.catalog-detail .detail-characteristics__label {
+  color: var(--vav-ui-text-muted);
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: .12em;
+  line-height: 18px;
+}
+
+.catalog-detail .detail-characteristics__value {
+  color: var(--vav-ui-text-primary);
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26.4px;
+}
+
+.catalog-detail .construction__card {
+  border-radius: 1px;
+}
+
+.catalog-detail .catalog-faq__question {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22.4px;
+}
+
+.catalog-detail .catalog-faq__question-text {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22.4px;
+}
+
+.catalog-detail .catalog-faq__answer {
+  color: var(--vav-ui-text-secondary);
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 22.4px;
+  overflow: hidden;
+  transition: max-height 240ms ease;
+}
+
+.catalog-detail .catalog-contact__method {
+  border-radius: 1px;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 18.7px;
+  min-height: 46px;
+  padding: 12px 18px;
+}
+
+.newsletter-cta .newsletter-form__row > button {
+  border-radius: 1px;
+  font-family: inherit;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 18.7px;
+  min-height: 70px;
+  padding: 16px 36px;
+}
+
+.catalog-detail + .newsletter-cta {
+  color: #1e1e1e;
+  font-family: "Tilda Sans", "Tilda Sans Fallback", system-ui, sans-serif;
+}
+
+.newsletter-cta .vavilova-section-eyebrow {
+  color: #1e1e1e;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: .12em;
+  line-height: 16.1px;
+  margin: 0 0 25px;
+  text-transform: uppercase;
+}
+
+.site-footer {
+  background: #262626;
+  font-family: "Tilda Sans", "Tilda Sans Fallback", system-ui, sans-serif;
+}
+
+.site-footer .site-footer__callback-btn {
+  border-radius: 1px;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 18.7px;
+  min-height: 56px;
+}
+
+.catalog-detail .detail-sticky-header__title,
+.catalog-detail .detail-sticky-header__agent-phone {
+  font-weight: 400;
+}
+
+.catalog-detail .mortgage__field-label {
+  color: var(--vav-ui-text-muted);
+  font-size: 16px;
+  line-height: 22.4px;
+}
+
+.catalog-detail .mortgage__field-value {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26.4px;
+}
+
+.catalog-detail .mortgage th {
+  color: var(--vav-ui-text-muted);
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.catalog-detail :is(.apartment-card__address, .apartment-card__stat-label) {
+  color: var(--vav-ui-text-muted);
+}
+
+.catalog-detail :is(.apartment-card__call-btn, .apartment-card__detail-btn) {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 18.7px;
+}
+
+.catalog-detail :is(.reviews-section__text, .reviews-section__author) {
+  color: var(--vav-ui-text-primary);
+}
+
+.catalog-detail .reviews-section__author {
+  font-weight: 400;
+}
+
+.catalog-detail :is(.documents__meta, .documents__date, .documents__size) {
+  color: var(--vav-ui-text-muted);
+}
+
+.site-footer :is(.site-footer__link, .site-footer__phone, .site-footer__email, .site-footer__privacy) {
+  transition: color 200ms ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .site-footer :is(.site-footer__link, .site-footer__phone, .site-footer__email, .site-footer__privacy):hover {
+    color: #8b1d25;
+  }
+}
+
+.site-footer :is(.site-footer__link, .site-footer__phone, .site-footer__email, .site-footer__privacy):focus-visible {
+  color: #8b1d25;
+  outline: 2px solid #8b1d25;
+  outline-offset: 3px;
+}
+
+.layout__header .vavilova-nav-item > .site-header__subnav {
+  display: none;
+}
+
+.layout__header .vavilova-nav-item:hover > .site-header__subnav,
+.layout__header .vavilova-nav-item:focus-within > .site-header__subnav {
+  display: flex;
+}
+
+@media (min-width: 1281px) {
+  .catalog-detail .detail-hero__inner {
+    padding-top: 185px;
+  }
+}
+
+.vavilova-site-menu[hidden] {
+  display: none;
+}
+
+.vavilova-site-menu {
+  background: rgba(30, 30, 30, .45);
+  inset: 0;
+  overflow-y: auto;
+  padding-top: var(--layout-header-height, 111px);
+  position: fixed;
+  z-index: 1200;
+}
+
+.vavilova-site-menu__panel {
+  background: #fff;
+  min-height: calc(100vh - var(--layout-header-height, 111px));
+  padding-block: 48px 64px;
+}
+
+.vavilova-site-menu__nav .site-header__nav-list {
+  align-items: start;
+  display: grid;
+  gap: 40px 32px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  justify-content: stretch;
+}
+
+.vavilova-site-menu__nav .site-header__nav-item {
+  min-width: 0;
+}
+
+.vavilova-site-menu__nav .site-header__nav-link {
+  color: #1e1e1e;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.6px;
+}
+
+.vavilova-site-menu__nav .site-header__subnav {
+  border-top: 1px solid #e4e4e4;
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+  padding-top: 16px;
+  position: static;
+}
+
+.vavilova-site-menu__nav .site-header__subnav-link {
+  color: #4f4d49;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 22.4px;
+}
+
+body.vavilova-menu-open {
+  overflow: hidden;
+}
+
+body.vavilova-menu-open .layout__header {
+  z-index: 1300;
+}
+
+.floating-expert {
+  transition: opacity 200ms ease, transform 200ms ease;
+}
+
+.floating-expert.floating-expert--hero-hidden {
+  opacity: 0 !important;
+  pointer-events: none;
+  transform: translateY(12px) !important;
+}
+
+.vavilova-construction-dialog {
+  background: #262626;
+  border: 0;
+  color: #fff;
+  margin: auto;
+  max-height: calc(100vh - 48px);
+  max-width: min(960px, calc(100vw - 48px));
+  padding: 0;
+  position: relative;
+  width: 100%;
+}
+
+.vavilova-construction-dialog::backdrop {
+  background: rgba(0, 0, 0, .72);
+}
+
+.vavilova-construction-dialog__image {
+  display: block;
+  max-height: calc(100vh - 120px);
+  object-fit: contain;
+  width: 100%;
+}
+
+.vavilova-construction-dialog__caption {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22.4px;
+  margin: 0;
+  padding: 18px 24px;
+}
+
+.vavilova-construction-dialog__close {
+  align-items: center;
+  background: #fff;
+  border: 0;
+  border-radius: 50%;
+  color: #1e1e1e;
+  cursor: pointer;
+  display: flex;
+  font: 300 28px/1 "Tilda Sans", system-ui, sans-serif;
+  height: 44px;
+  justify-content: center;
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  width: 44px;
+  z-index: 1;
+}
+
+.reviews-section__nav-btn:disabled {
+  cursor: not-allowed;
+  opacity: .45;
+}
+
+@media (min-width: 1200px) {
+  .site-footer .site-footer__nav {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+
+  .site-footer .site-footer__column:nth-child(1) { order: 1; }
+  .site-footer .site-footer__column:nth-child(2) { order: 2; }
+  .site-footer .site-footer__column:nth-child(3) { order: 3; }
+  .site-footer .site-footer__column:nth-child(6) { order: 4; }
+  .site-footer .site-footer__column:nth-child(4) { order: 5; }
+  .site-footer .site-footer__column:nth-child(5) { order: 6; }
+  .site-footer .site-footer__column:nth-child(7) { order: 7; }
+  .site-footer .site-footer__column:nth-child(8) { order: 8; }
+  .site-footer .site-footer__column:nth-child(9) { order: 9; }
 }
 
 .catalog-detail :is(.ui-button, a, button, input, textarea):focus-visible {
@@ -174,6 +550,13 @@
     line-height: 14.4px;
   }
 
+  .catalog-detail .vavilova-section-eyebrow,
+  .catalog-detail :is(.detail-about__eyebrow, .reviews-section__eyebrow, .lot-developer__label) {
+    font-size: 12px;
+    line-height: 14.4px;
+    margin-bottom: 12px;
+  }
+
   .catalog-detail .detail-hero__title {
     font-size: 35px;
     line-height: 35px;
@@ -184,6 +567,80 @@
     line-height: 19.8px;
     min-height: 58px;
     padding-inline: 24px;
+  }
+
+  .catalog-detail :is(.detail-hero__button--secondary, .detail-location__action--secondary) {
+    font-size: 18px;
+    line-height: 19.8px;
+    min-height: 58px;
+    padding-inline: 24px;
+  }
+
+  .catalog-detail .catalog-contact__method {
+    font-size: 18px;
+    line-height: 19.8px;
+    min-height: 48px;
+    padding: 13px 16px;
+  }
+
+  .newsletter-cta .newsletter-form__row > button {
+    font-size: 18px;
+    line-height: 19.8px;
+    min-height: 58px;
+    padding-inline: 24px;
+  }
+
+  .newsletter-cta .vavilova-section-eyebrow {
+    font-size: 12px;
+    line-height: 14.4px;
+    margin-bottom: 12px;
+  }
+
+  .floating-expert {
+    display: none !important;
+  }
+
+  .vavilova-site-menu {
+    padding-top: var(--layout-header-height, 68px);
+  }
+
+  .vavilova-site-menu__panel {
+    min-height: calc(100vh - var(--layout-header-height, 68px));
+    padding-block: 28px 48px;
+  }
+
+  .vavilova-site-menu__nav .site-header__nav-list {
+    gap: 30px;
+    grid-template-columns: 1fr;
+  }
+
+  .vavilova-site-menu__nav .site-header__nav-link {
+    font-size: 18px;
+    line-height: 21.6px;
+  }
+
+  .vavilova-site-menu__nav .site-header__subnav-link {
+    font-size: 15px;
+    line-height: 21px;
+  }
+
+  .site-footer .site-footer__column-title {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.8px;
+  }
+
+  .site-footer .site-footer__link {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18.2px;
+  }
+
+  .site-footer .site-footer__callback-btn {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 19.8px;
+    min-height: 54px;
   }
 
   .catalog-detail :is(.detail-about__text, .detail-architecture__text) {
@@ -203,10 +660,42 @@
   }
 }
 
+@media (min-width: 541px) and (max-width: 1024px) {
+  .catalog-detail .detail-hero__actions {
+    grid-column: 1 / -1;
+    max-width: none;
+    width: 100%;
+  }
+
+  .catalog-detail :is(.detail-hero__button--primary, .detail-hero__button--secondary) {
+    max-width: none;
+    width: 100%;
+  }
+}
+
 @media (min-width: 1441px) {
   .catalog-detail .ui-button.ui-button--medium {
     font-size: 19px;
     line-height: 20.9px;
     padding-inline: 47px;
+  }
+
+
+  .catalog-detail :is(.detail-hero__button--secondary, .detail-location__action--secondary),
+  .newsletter-cta .newsletter-form__row > button {
+    font-size: 19px;
+    line-height: 20.9px;
+    padding-inline: 47px;
+  }
+
+  .catalog-detail .catalog-contact__method {
+    font-size: 19px;
+    line-height: 20.9px;
+    min-height: 50px;
+  }
+
+  .site-footer .site-footer__callback-btn {
+    font-size: 19px;
+    line-height: 20.9px;
   }
 }
