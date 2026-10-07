@@ -251,6 +251,14 @@
       card.tabIndex = 0;
       card.setAttribute('aria-describedby', text.id);
     });
+
+    var featuredCard = document.querySelector('.owner-sale-presentation__card--featured');
+    var featuredText = featuredCard && featuredCard.querySelector('.owner-sale-presentation__featured-text');
+    if (featuredCard && featuredText) {
+      featuredText.id = featuredText.id || 'owner-sale-presentation-description-5';
+      featuredCard.tabIndex = 0;
+      featuredCard.setAttribute('aria-describedby', featuredText.id);
+    }
   }
 
   function updateExclusiveScrollState() {

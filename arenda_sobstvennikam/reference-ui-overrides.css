@@ -1218,6 +1218,72 @@ body.owner-rent-reference-ui .owner-sale-hero .breadcrumbs__link {
   }
 }
 
+/* The wide fifth strategy card follows the same inactive/reveal pattern. */
+.owner-rent-reference-ui .owner-sale-presentation__card--featured {
+  align-self: stretch;
+  aspect-ratio: auto;
+  height: 100%;
+  min-height: 100%;
+  outline: none;
+  overflow: hidden;
+}
+
+.owner-rent-reference-ui .owner-sale-presentation__card--featured .owner-sale-presentation__image,
+.owner-rent-reference-ui .owner-sale-presentation__card--featured .owner-sale-presentation__overlay {
+  transition: transform 360ms cubic-bezier(.22, 1, .36, 1), background-color 280ms ease;
+}
+
+.owner-rent-reference-ui .owner-sale-presentation__card--featured .owner-sale-presentation__featured-text {
+  margin-top: 0;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding-top: 0;
+  transform: translateY(12px);
+  transition: max-height 360ms cubic-bezier(.22, 1, .36, 1), opacity 220ms ease, margin-top 300ms ease, transform 300ms cubic-bezier(.22, 1, .36, 1);
+}
+
+.owner-rent-reference-ui .owner-sale-presentation__card--featured:is(:hover, :focus, :focus-within) .owner-sale-presentation__overlay {
+  background-color: rgb(18 15 14 / 68%);
+}
+
+.owner-rent-reference-ui .owner-sale-presentation__card--featured:is(:hover, :focus, :focus-within) .owner-sale-presentation__image {
+  transform: scale(1.025);
+}
+
+.owner-rent-reference-ui .owner-sale-presentation__card--featured:is(:hover, :focus, :focus-within) .owner-sale-presentation__featured-text {
+  margin-top: 12px;
+  max-height: 160px;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.owner-rent-reference-ui .owner-sale-presentation__card--featured:focus-visible {
+  box-shadow: inset 0 0 0 2px #fff, inset 0 0 0 4px #8b1d25;
+}
+
+@media (max-width: 768px) {
+  .owner-rent-reference-ui .owner-sale-presentation__card--featured {
+    aspect-ratio: 4 / 3;
+    height: auto;
+    min-height: 0;
+  }
+}
+
+@media (max-width: 540px) {
+  .owner-rent-reference-ui .owner-sale-presentation__card--featured:is(:hover, :focus, :focus-within) .owner-sale-presentation__featured-text {
+    max-height: 180px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .owner-rent-reference-ui .owner-sale-presentation__card--featured .owner-sale-presentation__image,
+  .owner-rent-reference-ui .owner-sale-presentation__card--featured .owner-sale-presentation__overlay,
+  .owner-rent-reference-ui .owner-sale-presentation__card--featured .owner-sale-presentation__featured-text {
+    transition: none;
+  }
+}
+
 /* Shared SectionHeading and ActionButton contracts from reference-ui.md. */
 .owner-rent-reference-ui .owner-rent-section-eyebrow {
   color: var(--owner-rent-ui-text-primary);
