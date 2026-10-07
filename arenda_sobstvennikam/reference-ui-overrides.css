@@ -1030,6 +1030,10 @@ body.owner-rent-reference-ui .owner-sale-hero .breadcrumbs__link {
 }
 
 @media (max-width: 540px) {
+  .owner-rent-reference-ui .floating-expert {
+    display: none;
+  }
+
   .owner-rent-reference-ui :is(
     .owner-sale-hero__text,
     .owner-sale-presentation__featured-text,
