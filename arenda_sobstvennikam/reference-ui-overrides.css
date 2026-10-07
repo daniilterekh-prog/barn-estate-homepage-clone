@@ -746,11 +746,13 @@ body.owner-rent-reference-ui .owner-sale-hero .breadcrumbs__link {
   color: #fff;
   display: inline-flex;
   font: inherit;
-  font-size: 14px;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 18.7px;
   gap: 8px;
   justify-content: center;
-  min-height: 36px;
-  padding: 8px 15px;
+  min-height: 46px;
+  padding: 10px 16px;
 }
 
 .owner-rent-reference-ui .catalog-consultation__method--active {
@@ -760,15 +762,15 @@ body.owner-rent-reference-ui .owner-sale-hero .breadcrumbs__link {
 }
 
 .owner-rent-reference-ui .catalog-consultation__method-icon {
-  flex: 0 0 15px;
-  height: 15px;
-  width: 15px;
+  flex: 0 0 18px;
+  height: 18px;
+  width: 18px;
 }
 
 .owner-rent-reference-ui .catalog-consultation__method-icon--max {
-  flex-basis: 14px;
-  height: 14px;
-  width: 14px;
+  flex-basis: 17px;
+  height: 17px;
+  width: 17px;
 }
 
 .owner-rent-reference-ui .catalog-consultation__form {
@@ -983,9 +985,22 @@ body.owner-rent-reference-ui .owner-sale-hero .breadcrumbs__link {
   }
 
   .owner-rent-reference-ui .catalog-consultation__method {
-    font-size: 14px;
-    min-height: 36px;
-    padding: 7px 10px;
+    font-size: 18px;
+    line-height: 19.8px;
+    min-height: 48px;
+    padding: 9px 10px;
+  }
+
+  .owner-rent-reference-ui .catalog-consultation__method-icon {
+    flex-basis: 19px;
+    height: 19px;
+    width: 19px;
+  }
+
+  .owner-rent-reference-ui .catalog-consultation__method-icon--max {
+    flex-basis: 18px;
+    height: 18px;
+    width: 18px;
   }
 
   .owner-rent-reference-ui .catalog-consultation__form {
@@ -1016,6 +1031,24 @@ body.owner-rent-reference-ui .owner-sale-hero .breadcrumbs__link {
   .owner-rent-reference-ui .catalog-consultation__submit {
     font-size: 19px;
     line-height: 20.9px;
+  }
+
+  .owner-rent-reference-ui .catalog-consultation__method {
+    font-size: 19px;
+    line-height: 20.9px;
+    min-height: 50px;
+  }
+
+  .owner-rent-reference-ui .catalog-consultation__method-icon {
+    flex-basis: 20px;
+    height: 20px;
+    width: 20px;
+  }
+
+  .owner-rent-reference-ui .catalog-consultation__method-icon--max {
+    flex-basis: 19px;
+    height: 19px;
+    width: 19px;
   }
 }
 
