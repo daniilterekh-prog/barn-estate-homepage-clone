@@ -228,11 +228,6 @@
         id: 'owner-rent-about-title'
       },
       {
-        selector: '.catalog-contact__title',
-        eyebrow: 'КОНСУЛЬТАЦИЯ ЭКСПЕРТА',
-        id: 'owner-rent-contact-title'
-      },
-      {
         selector: '.newsletter-cta h2',
         eyebrow: 'BARNES / АНАЛИТИКА',
         id: 'owner-rent-newsletter-title'
@@ -257,6 +252,18 @@
         container.insertBefore(eyebrow, title);
       }
     });
+
+    var contactTitle = document.querySelector('.catalog-contact__title');
+    var contactSection = contactTitle && contactTitle.closest('section');
+    var contactEyebrow = document.querySelector(
+      '.catalog-contact .owner-rent-section-eyebrow'
+    );
+
+    if (contactEyebrow) contactEyebrow.remove();
+    if (contactTitle) {
+      contactTitle.id = 'owner-rent-contact-title';
+      if (contactSection) contactSection.setAttribute('aria-labelledby', contactTitle.id);
+    }
 
     document.querySelectorAll(
       '.owner-sale-services__eyebrow, .owner-sale-exclusive__eyebrow'

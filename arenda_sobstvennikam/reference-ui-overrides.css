@@ -720,10 +720,6 @@ body.owner-rent-reference-ui .owner-sale-hero .breadcrumbs__link {
   text-transform: uppercase;
 }
 
-.owner-rent-reference-ui .catalog-contact .owner-rent-section-eyebrow {
-  color: var(--owner-rent-ui-brand-accent);
-}
-
 .owner-rent-reference-ui .owner-sale-presentation__inner > .owner-rent-section-eyebrow {
   text-align: center;
 }
