@@ -69,6 +69,16 @@
   line-height: 33px;
 }
 
+@media (min-width: 1025px) {
+  .owner-rent-reference-ui .owner-sale-hero__body {
+    align-items: start;
+  }
+
+  .owner-rent-reference-ui .owner-sale-hero__actions {
+    align-self: start;
+  }
+}
+
 .owner-rent-reference-ui .about-company__title {
   color: var(--owner-rent-ui-text-primary);
   font-size: 44px;
