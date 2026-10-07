@@ -274,11 +274,63 @@ section.news-section[class] {
   gap: 12px;
 }
 
-/* Keep the contact methods readable without changing their existing 48px hit area. */
+/* Contact-method buttons use the same rectangular contract as email/route actions. */
+.office-contact__socials[class] {
+  gap: var(--control-action-gap);
+}
+
 .office-contact__social[class] {
   font-size: var(--type-contact-link-size);
   font-weight: var(--font-weight-regular);
   line-height: var(--type-contact-link-line-height);
+}
+
+.office-contact__social[class] {
+  align-items: center;
+  background: var(--color-bg-page);
+  border: 1px solid var(--color-text-primary);
+  border-radius: var(--control-cta-radius);
+  box-sizing: border-box;
+  color: var(--color-text-primary);
+  cursor: pointer;
+  font-family: var(--font-family-sans);
+  gap: 10px;
+  height: var(--control-cta-height);
+  min-height: var(--control-cta-height);
+  padding: 0 var(--control-cta-padding-inline);
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.office-contact__social[class]:hover {
+  background: var(--color-text-primary);
+  border-color: var(--color-text-primary);
+  color: var(--color-text-on-brand);
+}
+
+.office-contact__social[class]:focus-visible {
+  outline: 2px solid var(--color-brand-gold);
+  outline-offset: 3px;
+}
+
+.office-contact__social[class] .office-contact__brand-icon,
+.office-contact__social[class] .office-contact__phone-icon {
+  flex: 0 0 auto;
+  height: 18px;
+  width: 18px;
+}
+
+.office-contact__social[class] .office-contact__arrow {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  height: 14px;
+  margin-left: auto;
+  width: 14px;
+}
+
+.office-contact__social[class] .office-contact__arrow svg {
+  height: 100%;
+  width: 100%;
 }
 
 /* Office contact actions reuse the rectangular CTA contract. */
@@ -453,6 +505,11 @@ section.news-section[class] {
     font-size: var(--control-cta-font-size-wide);
     padding-inline: var(--control-cta-padding-inline-wide);
   }
+
+  .office-contact__social[class] {
+    font-size: var(--control-cta-font-size-wide);
+    padding-inline: var(--control-cta-padding-inline-wide);
+  }
 }
 
 @media (max-width: 540px) {
@@ -510,6 +567,21 @@ section.news-section[class] {
     font-size: var(--type-contact-link-size) !important;
     font-weight: var(--font-weight-regular) !important;
     line-height: var(--type-contact-link-line-height) !important;
+    height: var(--control-cta-height-mobile) !important;
+    min-height: var(--control-cta-height-mobile) !important;
+    padding: 10px 24px !important;
+    width: 100%;
+  }
+
+  .office-contact__social[class] .office-contact__brand-icon,
+  .office-contact__social[class] .office-contact__phone-icon {
+    height: 22px;
+    width: 22px;
+  }
+
+  .office-contact__social[class] .office-contact__arrow {
+    height: 16px;
+    width: 16px;
   }
 
   .office-contact__action[class] {
