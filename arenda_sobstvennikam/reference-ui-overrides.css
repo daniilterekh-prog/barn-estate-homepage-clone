@@ -726,6 +726,33 @@ body.owner-rent-reference-ui .owner-sale-hero .breadcrumbs__link {
   text-indent: 0;
 }
 
+.owner-rent-reference-ui .owner-sale-exclusive__intro {
+  color: var(--owner-rent-ui-text-muted);
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.4;
+  margin: 30px 0 0;
+  max-width: 520px;
+}
+
+.owner-rent-reference-ui .owner-sale-exclusive__cta {
+  align-items: center;
+  background: var(--owner-rent-ui-brand);
+  color: #fff;
+  display: inline-flex;
+  gap: 24px;
+  justify-content: space-between;
+  margin-top: 28px;
+  min-width: 280px;
+  padding: 16px 24px 16px 36px;
+  text-decoration: none;
+}
+
+.owner-rent-reference-ui .owner-sale-exclusive__cta span {
+  font-size: 22px;
+  line-height: 1;
+}
+
 @media (min-width: 1280px) {
   .owner-rent-reference-ui .owner-sale-exclusive__inner {
     grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
@@ -842,5 +869,36 @@ body.owner-rent-reference-ui .owner-sale-hero .breadcrumbs__link {
 
   .owner-rent-reference-ui .site-footer__callback-btn {
     min-height: 54px;
+  }
+}
+
+@media (max-width: 900px) {
+  .owner-rent-reference-ui .owner-sale-exclusive__title {
+    margin-bottom: 0;
+  }
+
+  .owner-rent-reference-ui .owner-sale-exclusive__intro {
+    font-size: 18px;
+    margin-top: 22px;
+    max-width: 620px;
+  }
+
+  .owner-rent-reference-ui .owner-sale-exclusive__cta {
+    margin-bottom: 36px;
+  }
+}
+
+@media (max-width: 540px) {
+  .owner-rent-reference-ui .owner-sale-exclusive__intro {
+    font-size: 16px;
+    line-height: 1.4;
+    margin-top: 18px;
+  }
+
+  .owner-rent-reference-ui .owner-sale-exclusive__cta {
+    margin-bottom: 30px;
+    margin-top: 22px;
+    min-width: 0;
+    width: 100%;
   }
 }

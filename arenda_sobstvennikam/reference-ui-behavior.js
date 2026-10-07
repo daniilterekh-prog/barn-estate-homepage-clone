@@ -98,6 +98,20 @@
       }).join('');
     }
 
+    var exclusiveHeader = inner.querySelector('.owner-sale-exclusive__header');
+    if (exclusiveHeader && !exclusiveHeader.querySelector('.owner-sale-exclusive__intro')) {
+      var intro = document.createElement('p');
+      intro.className = 'owner-sale-exclusive__intro';
+      intro.textContent = 'Объединяем стратегию, продвижение и переговоры в одной команде — от подготовки объекта до подписания договора.';
+
+      var exclusiveCta = document.createElement('a');
+      exclusiveCta.className = 'ui-button ui-button--primary ui-button--medium owner-sale-exclusive__cta';
+      exclusiveCta.href = '#request';
+      exclusiveCta.innerHTML = 'Обсудить сдачу <span aria-hidden="true">↗</span>';
+
+      exclusiveHeader.append(intro, exclusiveCta);
+    }
+
     section.querySelectorAll('.owner-sale-exclusive__item').forEach(function (item, index) {
       if (item.querySelector('.owner-sale-exclusive__number')) return;
 
