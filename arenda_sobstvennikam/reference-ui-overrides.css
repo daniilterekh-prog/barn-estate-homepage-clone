@@ -131,6 +131,155 @@ body.owner-rent-reference-ui .owner-sale-hero .breadcrumbs__link {
   display: none;
 }
 
+.owner-rent-reference-ui .owner-sale-exclusive {
+  background: #fff;
+  color: var(--owner-rent-ui-text-primary);
+  min-height: 0;
+  overflow: visible;
+  padding-block: clamp(64px, 6.25vw, 120px);
+}
+
+.owner-rent-reference-ui .owner-sale-exclusive__media {
+  display: none;
+}
+
+.owner-rent-reference-ui .owner-sale-exclusive__inner {
+  align-items: start;
+  display: grid;
+  gap: clamp(48px, 6.25vw, 120px);
+  grid-template-columns: minmax(0, 0.82fr) minmax(0, 1.18fr);
+}
+
+.owner-rent-reference-ui .owner-sale-exclusive__header {
+  grid-column: 1;
+}
+
+.owner-rent-reference-ui .owner-sale-exclusive__eyebrow {
+  color: var(--owner-rent-ui-brand);
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  line-height: 18px;
+  margin: 0 0 26px;
+  text-transform: uppercase;
+}
+
+.owner-rent-reference-ui .owner-sale-exclusive__title {
+  color: var(--owner-rent-ui-text-primary);
+  font-size: clamp(38px, 2.3vw, 44px);
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 0;
+  max-width: 590px;
+  text-transform: uppercase;
+}
+
+.owner-rent-reference-ui .owner-sale-exclusive__grid {
+  display: block;
+  grid-column: 2;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.owner-rent-reference-ui .owner-sale-exclusive__item {
+  align-items: start;
+  background: transparent;
+  border: 0;
+  border-top: 1px solid var(--owner-rent-ui-border);
+  display: grid;
+  gap: 22px;
+  grid-template-columns: 48px minmax(0, 1fr);
+  min-height: 0;
+  padding: 24px 0;
+}
+
+.owner-rent-reference-ui .owner-sale-exclusive__icon {
+  display: none;
+}
+
+.owner-rent-reference-ui .owner-sale-exclusive__number {
+  color: var(--owner-rent-ui-brand);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  padding-top: 3px;
+}
+
+.owner-rent-reference-ui .owner-sale-exclusive__content {
+  min-width: 0;
+}
+
+.owner-rent-reference-ui .owner-sale-exclusive__item-title {
+  color: var(--owner-rent-ui-text-primary);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.owner-rent-reference-ui .owner-sale-exclusive__text {
+  color: var(--owner-rent-ui-text-muted);
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 10px 0 0;
+  max-width: none;
+}
+
+@media (max-width: 900px) {
+  .owner-rent-reference-ui .owner-sale-exclusive {
+    padding-block: 56px;
+  }
+
+  .owner-rent-reference-ui .owner-sale-exclusive__inner {
+    display: block;
+  }
+
+  .owner-rent-reference-ui .owner-sale-exclusive__eyebrow {
+    margin-bottom: 20px;
+  }
+
+  .owner-rent-reference-ui .owner-sale-exclusive__title {
+    font-size: 32px;
+    margin-bottom: 36px;
+  }
+}
+
+@media (max-width: 540px) {
+  .owner-rent-reference-ui .owner-sale-exclusive {
+    padding-block: 40px;
+  }
+
+  .owner-rent-reference-ui .owner-sale-exclusive__eyebrow {
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 16px;
+  }
+
+  body.owner-rent-reference-ui .owner-sale-exclusive .owner-sale-exclusive__title {
+    font-size: 28px;
+    line-height: 1.15;
+    margin-bottom: 30px;
+  }
+
+  .owner-rent-reference-ui .owner-sale-exclusive__item {
+    gap: 14px;
+    grid-template-columns: 28px minmax(0, 1fr);
+    padding: 20px 0;
+  }
+
+  .owner-rent-reference-ui .owner-sale-exclusive__item-title {
+    font-size: 20px;
+  }
+
+  .owner-rent-reference-ui .owner-sale-exclusive__text {
+    font-size: 16px;
+    line-height: 1.4;
+    margin-top: 8px;
+  }
+}
+
 @media (min-width: 769px) {
   body.owner-rent-reference-ui .owner-sale-hero .breadcrumbs__link {
     font-size: 17px;

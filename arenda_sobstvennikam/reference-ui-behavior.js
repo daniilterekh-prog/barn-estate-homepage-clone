@@ -42,9 +42,74 @@
     }
   }
 
+  function enhanceExclusiveSection() {
+    var section = document.querySelector('.owner-sale-exclusive');
+    var inner = section && section.querySelector('.owner-sale-exclusive__inner');
+    var title = section && section.querySelector('.owner-sale-exclusive__title');
+    var itemTitles = [
+      'Единая подача',
+      'Расширенный охват',
+      'Персональный брокер',
+      'Обоснованная ставка',
+      'Проверка арендаторов',
+      'Полное сопровождение'
+    ];
+
+    if (!section || !inner || !title) return;
+
+    title.id = 'owner-rent-exclusive-title';
+    section.setAttribute('aria-labelledby', title.id);
+    section.removeAttribute('aria-label');
+
+    if (!inner.querySelector('.owner-sale-exclusive__eyebrow')) {
+      var eyebrow = document.createElement('p');
+      eyebrow.className = 'owner-sale-exclusive__eyebrow';
+      eyebrow.textContent = 'BARNES / ЭКСКЛЮЗИВ';
+      inner.insertBefore(eyebrow, title);
+    }
+
+    if (!inner.querySelector('.owner-sale-exclusive__header')) {
+      var header = document.createElement('header');
+      var sectionEyebrow = inner.querySelector('.owner-sale-exclusive__eyebrow');
+      header.className = 'owner-sale-exclusive__header';
+      inner.insertBefore(header, sectionEyebrow);
+      header.append(sectionEyebrow, title);
+    }
+
+    if (!title.querySelector('br')) {
+      title.innerHTML = 'ПРЕИМУЩЕСТВА<br>ЭКСКЛЮЗИВНОЙ<br>РАБОТЫ С BARNES';
+    }
+
+    section.querySelectorAll('.owner-sale-exclusive__item').forEach(function (item, index) {
+      if (item.querySelector('.owner-sale-exclusive__number')) return;
+
+      var text = item.querySelector('.owner-sale-exclusive__text');
+      if (!text) return;
+
+      var number = document.createElement('span');
+      number.className = 'owner-sale-exclusive__number';
+      number.setAttribute('aria-hidden', 'true');
+      number.textContent = String(index + 1).padStart(2, '0');
+
+      var content = document.createElement('div');
+      content.className = 'owner-sale-exclusive__content';
+
+      var heading = document.createElement('h3');
+      heading.className = 'owner-sale-exclusive__item-title';
+      heading.textContent = itemTitles[index] || '';
+
+      item.insertBefore(number, item.firstChild);
+      content.append(heading, text);
+      item.appendChild(content);
+    });
+  }
+
   function scheduleServicesEnhancement() {
     window.clearTimeout(enhancementTimer);
-    enhancementTimer = window.setTimeout(enhanceServicesSection, 600);
+    enhancementTimer = window.setTimeout(function () {
+      enhanceServicesSection();
+      enhanceExclusiveSection();
+    }, 600);
   }
 
   function syncMenuState() {
