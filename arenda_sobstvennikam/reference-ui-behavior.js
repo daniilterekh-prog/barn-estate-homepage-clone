@@ -236,9 +236,21 @@
     ];
 
     document.querySelectorAll('.owner-sale-presentation__card:not(.owner-sale-presentation__card--featured)').forEach(function (card, index) {
-      if (card.querySelector('.owner-sale-presentation__reveal')) return;
       var caption = card.querySelector('.owner-sale-presentation__caption');
       if (!caption) return;
+
+      var captionLines = caption.querySelectorAll('.owner-sale-presentation__caption-line');
+      if (index === 3 && (captionLines.length !== 2 || captionLines[0].textContent !== 'ОБЕСПЕЧИВАЕМ' || captionLines[1].textContent !== 'ЮРИДИЧЕСКОЕ СОПРОВОЖДЕНИЕ')) {
+        caption.textContent = '';
+        ['ОБЕСПЕЧИВАЕМ', 'ЮРИДИЧЕСКОЕ СОПРОВОЖДЕНИЕ'].forEach(function (line) {
+          var captionLine = document.createElement('span');
+          captionLine.className = 'owner-sale-presentation__caption-line';
+          captionLine.textContent = line;
+          caption.appendChild(captionLine);
+        });
+      }
+
+      if (card.querySelector('.owner-sale-presentation__reveal')) return;
 
       var reveal = document.createElement('div');
       reveal.className = 'owner-sale-presentation__reveal';
@@ -255,9 +267,10 @@
     var featuredCard = document.querySelector('.owner-sale-presentation__card--featured');
     var featuredText = featuredCard && featuredCard.querySelector('.owner-sale-presentation__featured-text');
     var featuredTitle = featuredCard && featuredCard.querySelector('.owner-sale-presentation__featured-title');
-    if (featuredTitle && !featuredTitle.querySelector('.owner-sale-presentation__featured-title-line')) {
+    var featuredTitleLines = featuredTitle && featuredTitle.querySelectorAll('.owner-sale-presentation__featured-title-line');
+    if (featuredTitle && (featuredTitleLines.length !== 2 || featuredTitleLines[0].textContent !== 'ДЛЯ КАЖДОГО ОБЪЕКТА' || featuredTitleLines[1].textContent !== 'СВОЙ СЦЕНАРИЙ СДАЧИ')) {
       featuredTitle.textContent = '';
-      ['ДЛЯ КАЖДОГО ОБЪЕКТА —', 'СВОЙ СЦЕНАРИЙ СДАЧИ'].forEach(function (line) {
+      ['ДЛЯ КАЖДОГО ОБЪЕКТА', 'СВОЙ СЦЕНАРИЙ СДАЧИ'].forEach(function (line) {
         var lineElement = document.createElement('span');
         lineElement.className = 'owner-sale-presentation__featured-title-line';
         lineElement.textContent = line;

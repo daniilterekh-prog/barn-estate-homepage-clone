@@ -321,6 +321,28 @@ body.owner-rent-reference-ui .owner-sale-hero .breadcrumbs__link {
   }
 }
 
+@media (min-width: 541px) {
+  .owner-rent-reference-ui .owner-sale-presentation__card:nth-child(4) .owner-sale-presentation__reveal {
+    padding-inline: 12px;
+  }
+
+  .owner-rent-reference-ui .owner-sale-presentation__card:nth-child(4) .owner-sale-presentation__caption {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 540px) {
+  .owner-rent-reference-ui .owner-sale-presentation__card--featured .owner-sale-presentation__featured,
+  .owner-rent-reference-ui .owner-sale-presentation__card--featured .owner-sale-presentation__featured-title,
+  .owner-rent-reference-ui .owner-sale-presentation__card--featured .owner-sale-presentation__featured-text {
+    text-align: center !important;
+  }
+
+  .owner-rent-reference-ui .owner-sale-presentation__card--featured .owner-sale-presentation__featured {
+    align-items: center;
+  }
+}
+
 @media (min-width: 769px) {
   body.owner-rent-reference-ui .owner-sale-hero .breadcrumbs__link {
     font-size: 17px;
@@ -1231,6 +1253,10 @@ body.owner-rent-reference-ui .owner-sale-hero .breadcrumbs__link {
   display: block;
 }
 
+.owner-rent-reference-ui .owner-sale-presentation__caption-line {
+  display: block;
+}
+
 .owner-rent-reference-ui .owner-sale-presentation__featured-text {
   font-size: 16px;
   font-weight: 300;
@@ -1258,6 +1284,14 @@ body.owner-rent-reference-ui .owner-sale-hero .breadcrumbs__link {
   min-height: 100%;
   outline: none;
   overflow: hidden;
+}
+
+.owner-rent-reference-ui .owner-sale-presentation__card--featured .owner-sale-presentation__badge {
+  display: none;
+}
+
+.owner-rent-reference-ui .owner-sale-presentation__card--featured .owner-sale-presentation__featured {
+  padding: 24px 28px;
 }
 
 .owner-rent-reference-ui .owner-sale-presentation__card--featured .owner-sale-presentation__image,
@@ -1303,6 +1337,18 @@ body.owner-rent-reference-ui .owner-sale-hero .breadcrumbs__link {
 }
 
 @media (max-width: 540px) {
+  .owner-rent-reference-ui .owner-sale-presentation__card--featured .owner-sale-presentation__featured {
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .owner-rent-reference-ui .owner-sale-presentation__card--featured .owner-sale-presentation__featured-title,
+  .owner-rent-reference-ui .owner-sale-presentation__card--featured .owner-sale-presentation__featured-text {
+    margin-inline: auto;
+    text-align: center;
+  }
+
   .owner-rent-reference-ui .owner-sale-presentation__card--featured:is(:hover, :focus, :focus-within) .owner-sale-presentation__featured-text {
     max-height: 180px;
   }
@@ -1761,12 +1807,13 @@ body.owner-rent-reference-ui .owner-sale-hero .breadcrumbs__link {
 /* Strategy cards use the same title/description typography as team cards. */
 .owner-rent-reference-ui :is(
   .owner-sale-presentation__caption,
-  .owner-sale-presentation__featured-title
+  .owner-sale-presentation__featured-title,
+  .owner-sale-services__text strong
 ) {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 400;
   letter-spacing: normal;
-  line-height: 28.8px;
+  line-height: 24px;
 }
 
 .owner-rent-reference-ui :is(
@@ -1784,6 +1831,17 @@ body.owner-rent-reference-ui .owner-sale-hero .breadcrumbs__link {
 
 .owner-rent-reference-ui .owner-sale-presentation__card--featured:is(:hover, :focus, :focus-within) .owner-sale-presentation__featured-text {
   max-height: 220px;
+}
+
+@media (min-width: 541px) and (max-width: 1199px) {
+  .owner-rent-reference-ui :is(
+    .owner-sale-presentation__caption,
+    .owner-sale-presentation__featured-title,
+    .owner-sale-services__text strong
+  ) {
+    font-size: 16px;
+    line-height: 19.2px;
+  }
 }
 
 @media (max-width: 540px) {
