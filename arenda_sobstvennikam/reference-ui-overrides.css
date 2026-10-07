@@ -790,6 +790,37 @@ body.owner-rent-reference-ui .owner-sale-hero .breadcrumbs__link {
   width: 16px;
 }
 
+.owner-rent-reference-ui .owner-sale-types__action {
+  align-items: center;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+  display: flex;
+  font-size: 14px;
+  font-weight: 400;
+  gap: 12px;
+  letter-spacing: 0.12em;
+  line-height: 19.6px;
+  padding-bottom: 7px;
+  text-transform: uppercase;
+  width: fit-content;
+}
+
+.owner-rent-reference-ui .owner-sale-types__action-icon {
+  align-items: center;
+  display: flex;
+  flex: 0 0 15px;
+  height: 15px;
+  justify-content: center;
+  line-height: 0;
+  width: 15px;
+}
+
+.owner-rent-reference-ui .owner-sale-types__action-icon svg {
+  display: block;
+  height: 15px;
+  width: 15px;
+}
+
 @media (min-width: 1280px) {
   .owner-rent-reference-ui .owner-sale-exclusive__inner {
     grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);

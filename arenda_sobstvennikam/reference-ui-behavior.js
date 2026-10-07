@@ -265,6 +265,18 @@
     });
   }
 
+  function enhanceTypeCardActions() {
+    document.querySelectorAll('.owner-sale-types__action').forEach(function (action) {
+      if (action.querySelector('.owner-sale-types__action-icon')) return;
+
+      var icon = document.createElement('span');
+      icon.className = 'owner-sale-types__action-icon';
+      icon.setAttribute('aria-hidden', 'true');
+      icon.innerHTML = '<svg viewBox="0 0 16 16" focusable="false"><path d="M3 13 13 3M5 3h8v8" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25"></path></svg>';
+      action.appendChild(icon);
+    });
+  }
+
   function scheduleServicesEnhancement() {
     window.clearTimeout(enhancementTimer);
     enhancementTimer = window.setTimeout(function () {
@@ -272,6 +284,7 @@
       enhanceServicesSection();
       enhanceExclusiveSection();
       enhanceSectionHeadings();
+      enhanceTypeCardActions();
       setupExclusiveScrollAnimation();
     }, 600);
   }
