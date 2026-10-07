@@ -5,6 +5,8 @@
   var trigger;
   var menuId = 'owner-rent-site-menu';
   var enhancementTimer;
+  var exclusiveScrollFrame;
+  var exclusiveScrollReady = false;
 
   function enhanceServicesSection() {
     var section = document.querySelector('.owner-sale-services');
@@ -121,6 +123,59 @@
     });
   }
 
+  function updateExclusiveScrollState() {
+    var section = document.querySelector('.owner-sale-exclusive');
+    var items = section && Array.from(section.querySelectorAll('.owner-sale-exclusive__item'));
+    var desktop = window.matchMedia('(min-width: 901px)').matches;
+
+    if (!section || !items.length) return;
+
+    if (!desktop) {
+      section.classList.remove('owner-sale-exclusive--scroll-ready');
+      items.forEach(function (item) {
+        item.classList.remove('is-active', 'is-past');
+      });
+      return;
+    }
+
+    var alignmentLine = 120;
+    var activeIndex = 0;
+    var closestDistance = Infinity;
+
+    items.forEach(function (item, index) {
+      var distance = Math.abs(item.getBoundingClientRect().top - alignmentLine);
+      if (distance < closestDistance) {
+        closestDistance = distance;
+        activeIndex = index;
+      }
+    });
+
+    section.classList.add('owner-sale-exclusive--scroll-ready');
+    items.forEach(function (item, index) {
+      item.classList.toggle('is-active', index === activeIndex);
+      item.classList.toggle('is-past', index < activeIndex);
+    });
+  }
+
+  function requestExclusiveScrollUpdate() {
+    if (exclusiveScrollFrame) return;
+
+    exclusiveScrollFrame = window.requestAnimationFrame(function () {
+      exclusiveScrollFrame = null;
+      updateExclusiveScrollState();
+    });
+  }
+
+  function setupExclusiveScrollAnimation() {
+    if (!exclusiveScrollReady) {
+      exclusiveScrollReady = true;
+      window.addEventListener('scroll', requestExclusiveScrollUpdate, { passive: true });
+      window.addEventListener('resize', requestExclusiveScrollUpdate, { passive: true });
+    }
+
+    requestExclusiveScrollUpdate();
+  }
+
   function enhanceSectionHeadings() {
     var sections = [
       {
@@ -177,6 +232,7 @@
       enhanceServicesSection();
       enhanceExclusiveSection();
       enhanceSectionHeadings();
+      setupExclusiveScrollAnimation();
     }, 600);
   }
 
