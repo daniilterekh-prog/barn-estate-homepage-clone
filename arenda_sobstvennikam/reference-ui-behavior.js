@@ -52,6 +52,13 @@
     }
   }
 
+  function enhanceHeroSection() {
+    var button = document.querySelector('.owner-sale-hero__button');
+    if (!button || button.querySelector('.owner-sale-hero__button-arrow')) return;
+
+    button.innerHTML = 'Обсудить стратегию <span class="owner-sale-hero__button-arrow" aria-hidden="true"><svg viewBox="0 0 16 16" focusable="false"><path d="M3 13 13 3M5 3h8v8" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25"></path></svg></span>';
+  }
+
   function enhanceExclusiveSection() {
     var section = document.querySelector('.owner-sale-exclusive');
     var inner = section && section.querySelector('.owner-sale-exclusive__inner');
@@ -288,6 +295,7 @@
     window.clearTimeout(enhancementTimer);
     enhancementTimer = window.setTimeout(function () {
       reorderBrandSections();
+      enhanceHeroSection();
       enhanceServicesSection();
       enhanceExclusiveSection();
       enhanceSectionHeadings();
