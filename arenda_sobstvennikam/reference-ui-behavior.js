@@ -59,6 +59,28 @@
     button.innerHTML = 'Обсудить стратегию <span class="owner-sale-hero__button-arrow" aria-hidden="true"><svg viewBox="0 0 16 16" focusable="false"><path d="M3 13 13 3M5 3h8v8" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25"></path></svg></span>';
   }
 
+  function enhanceStickyHeader() {
+    var sticky = document.querySelector('.owner-sale-sticky');
+    var inner = sticky && sticky.querySelector('.owner-sale-sticky__inner');
+    var brand = inner && inner.querySelector('.owner-sale-sticky__brand');
+    var logo = brand && brand.querySelector('.owner-sale-sticky__logo');
+    var phone = brand && brand.querySelector('.owner-sale-sticky__phone');
+
+    if (!sticky || !inner || !brand || !phone) return;
+
+    if (logo && logo.parentElement !== inner) {
+      inner.insertBefore(logo, brand);
+    }
+
+    if (!brand.querySelector('.owner-sale-sticky__request')) {
+      var request = document.createElement('a');
+      request.className = 'owner-sale-sticky__request';
+      request.href = '#request';
+      request.textContent = 'Оставить заявку';
+      brand.insertBefore(request, phone);
+    }
+  }
+
   function enhanceExclusiveSection() {
     var section = document.querySelector('.owner-sale-exclusive');
     var inner = section && section.querySelector('.owner-sale-exclusive__inner');
@@ -454,6 +476,7 @@
       reorderConsultationAndTypes();
       enhancePresentationCards();
       enhanceHeroSection();
+      enhanceStickyHeader();
       enhanceServicesSection();
       enhanceExclusiveSection();
       enhanceSectionHeadings();
