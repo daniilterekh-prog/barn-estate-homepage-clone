@@ -163,6 +163,70 @@
     parent.insertBefore(exclusive, about.nextSibling);
   }
 
+  function replaceConsultationSection() {
+    var current = document.querySelector('.catalog-contact');
+    if (!current || document.querySelector('.catalog-consultation')) return;
+
+    var section = document.createElement('section');
+    section.id = 'request';
+    section.className = 'catalog-consultation';
+    section.innerHTML = `
+      <div class="catalog-consultation__inner">
+        <div class="catalog-consultation__media">
+          <img class="catalog-consultation__image" src="/assets/city-real-estate/source-assets/16-7d2ca45d4d-contacts-man.webp" alt="" width="1920" height="800">
+          <div class="catalog-consultation__overlay" aria-hidden="true"></div>
+          <div class="catalog-consultation__grid">
+            <div class="catalog-consultation__content">
+              <div class="catalog-consultation__mobile-expert">
+                <div class="catalog-consultation__mobile-photo"><img src="/assets/city-real-estate/source-assets/17-23350d2829-cta-ruslan-pruss.webp" alt="Руслан Прус" width="68" height="68"></div>
+                <div><p class="catalog-consultation__mobile-role">Руководитель департамента городской недвижимости</p><p class="catalog-consultation__mobile-name">Руслан Прус</p></div>
+              </div>
+              <div class="catalog-consultation__mobile-header"><h2 class="catalog-consultation__mobile-title">Эксперты BARNES подскажут</h2><p class="catalog-consultation__mobile-lead">Эксперты BARNES сэкономят ваше время и подберут оптимальный вариант недвижимости</p></div>
+              <div class="catalog-consultation__header"><h2 class="catalog-consultation__subtitle">Эксперты BARNES подскажут</h2><p class="catalog-consultation__lead">Эксперты BARNES сэкономят ваше время и подберут оптимальный вариант недвижимости</p></div>
+              <div class="catalog-consultation__methods" role="tablist" aria-label="Способ связи">
+                <button type="button" role="tab" class="catalog-consultation__method" aria-selected="false" data-method="call"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.4 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/></svg><span>Звонок</span></button>
+                <button type="button" role="tab" class="catalog-consultation__method" aria-selected="false" data-method="max"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Zm-4-6.2c1.3.9 2.7 1.4 4.2 1.4a5.2 5.2 0 1 0-4.9-3.5c.1.8.4 1.5.7 2.1Z" fill="currentColor"/></svg><span>MAX</span></button>
+                <button type="button" role="tab" class="catalog-consultation__method catalog-consultation__method--active" aria-selected="true" data-method="whatsapp"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 21a9 9 0 1 0-7.7-4.3L3 21l4.4-1.2A9 9 0 0 0 12 21Z" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8.2 7.8c.5 4 3 6.5 7 7" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"/></svg><span>Whatsapp</span></button>
+                <button type="button" role="tab" class="catalog-consultation__method" aria-selected="false" data-method="telegram"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m3 11 17-7-4 16-5-4-3 3 1-5-6-3Z" fill="currentColor"/><path d="m9 14 7-6" fill="none" stroke="#262626" stroke-width="1.2"/></svg><span>Telegram</span></button>
+              </div>
+              <form class="catalog-consultation__form" novalidate>
+                <label class="catalog-consultation__field"><span class="visually-hidden">Ваше имя</span><input type="text" class="catalog-consultation__input" name="name" autocomplete="name" placeholder="Введите Ваше имя" aria-label="Ваше имя"></label>
+                <label class="catalog-consultation__field"><span class="visually-hidden">Номер телефона</span><input type="tel" inputmode="tel" class="catalog-consultation__input" name="phone" autocomplete="tel" placeholder="Ваш номер телефона" aria-label="Номер телефона" required></label>
+                <label class="catalog-consultation__field catalog-consultation__field--textarea"><span class="visually-hidden">Комментарий</span><textarea class="catalog-consultation__textarea" name="comment" rows="2" placeholder="Оставьте свой комментарий" aria-label="Комментарий"></textarea></label>
+                <button type="submit" class="catalog-consultation__submit">Отправить заявку</button>
+                <label class="catalog-consultation__consent"><input type="checkbox" class="catalog-consultation__consent-input" required><span class="catalog-consultation__consent-box" aria-hidden="true"></span><span>Я даю согласие на <a target="_blank" href="https://barn-estate.ru/legal_notices/yuridicheskie-uvedomleniya/">обработку персональных данных</a></span></label>
+                <p class="catalog-consultation__status" aria-live="polite"></p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>`;
+
+    current.replaceWith(section);
+
+    section.querySelectorAll('.catalog-consultation__method').forEach(function (button) {
+      button.addEventListener('click', function () {
+        section.querySelectorAll('.catalog-consultation__method').forEach(function (item) {
+          var active = item === button;
+          item.classList.toggle('catalog-consultation__method--active', active);
+          item.setAttribute('aria-selected', String(active));
+        });
+      });
+    });
+
+    section.querySelector('form').addEventListener('submit', function (event) {
+      event.preventDefault();
+      var phone = section.querySelector('[name="phone"]');
+      var consent = section.querySelector('.catalog-consultation__consent-input');
+      var status = section.querySelector('.catalog-consultation__status');
+      if (!phone.value.trim() || !consent.checked) {
+        status.textContent = 'Укажите номер телефона и подтвердите согласие.';
+        return;
+      }
+      status.textContent = 'Спасибо! Заявка подготовлена к отправке.';
+    });
+  }
+
   function updateExclusiveScrollState() {
     var section = document.querySelector('.owner-sale-exclusive');
     var items = section && Array.from(section.querySelectorAll('.owner-sale-exclusive__item'));
@@ -300,6 +364,7 @@
     window.clearTimeout(enhancementTimer);
     enhancementTimer = window.setTimeout(function () {
       reorderBrandSections();
+      replaceConsultationSection();
       enhanceHeroSection();
       enhanceServicesSection();
       enhanceExclusiveSection();
