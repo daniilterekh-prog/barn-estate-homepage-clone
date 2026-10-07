@@ -366,6 +366,13 @@
   }
 }
 
+@media (min-width: 1921px) {
+  .owner-rent-reference-ui .owner-sale-hero__title {
+    font-size: 75px;
+    line-height: 75px;
+  }
+}
+
 @media (max-width: 540px) {
   .owner-rent-reference-ui .owner-sale-hero__title {
     font-size: 48px;
