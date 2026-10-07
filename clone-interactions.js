@@ -69,6 +69,25 @@
       "newsletter-cta__eyebrow",
       "Рассылка BARNES",
     );
+
+    const officeAddress = document.querySelector(".office-contact__address");
+    if (officeAddress && !document.querySelector(".office-contact__actions")) {
+      const emailHref = officeAddress.querySelector('a[href^="mailto:"]')?.href || "mailto:moscow@barn-estate.com";
+      const routeHref = "https://yandex.ru/maps/?rtext=~Москва%2C%20ул.%20Петровка%2C%20дом%2019%2C%20стр.%201&rtt=auto";
+      const actions = document.createElement("div");
+      actions.className = "office-contact__actions";
+      actions.innerHTML = `
+        <a class="office-contact__action office-contact__action--email" href="${emailHref}">
+          <span>Написать на email</span>
+          <span class="office-contact__action-arrow" aria-hidden="true">↗</span>
+        </a>
+        <a class="office-contact__action office-contact__action--route" href="${routeHref}" target="_blank" rel="noreferrer" aria-label="Проложить маршрут до офиса BARNES на улице Петровка">
+          <span>Проложить маршрут</span>
+          <span class="office-contact__action-arrow" aria-hidden="true">↗</span>
+        </a>
+      `;
+      officeAddress.replaceWith(actions);
+    }
   };
 
   setTimeout(mountHomepageReferenceLabels, 900);

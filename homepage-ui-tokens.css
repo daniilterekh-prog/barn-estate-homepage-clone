@@ -26,6 +26,7 @@
   --control-cta-font-weight: var(--font-weight-regular);
   --control-cta-font-weight-mobile: var(--font-weight-regular);
   --control-cta-radius: 1px;
+  --control-action-gap: 12px;
   --space-newsletter-footer-mobile: 40px;
 
   /* Reference contact-link role for the homepage office/contact block. */
@@ -280,6 +281,68 @@ section.news-section[class] {
   line-height: var(--type-contact-link-line-height);
 }
 
+/* Office contact actions reuse the rectangular CTA contract. */
+.office-contact__actions[class] {
+  align-items: stretch;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--control-action-gap);
+  margin: 0;
+}
+
+.office-contact__action[class] {
+  align-items: center;
+  border: 1px solid transparent;
+  border-radius: var(--control-cta-radius);
+  box-sizing: border-box;
+  display: inline-flex;
+  flex: 0 1 auto;
+  font-family: var(--font-family-sans);
+  font-size: var(--control-cta-font-size);
+  font-weight: var(--control-cta-font-weight);
+  gap: 10px;
+  height: var(--control-cta-height);
+  justify-content: space-between;
+  line-height: var(--control-cta-line-height);
+  min-height: var(--control-cta-height);
+  padding: 0 var(--control-cta-padding-inline);
+  text-decoration: none;
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.office-contact__action--email[class] {
+  background: var(--color-action-primary);
+  border-color: var(--color-action-primary);
+  color: var(--color-text-on-brand);
+}
+
+.office-contact__action--route[class] {
+  background: var(--color-bg-page);
+  border-color: var(--color-text-primary);
+  color: var(--color-text-primary);
+}
+
+.office-contact__action--email[class]:hover {
+  background: var(--color-neutral-800);
+  border-color: var(--color-neutral-800);
+}
+
+.office-contact__action--route[class]:hover {
+  background: var(--color-text-primary);
+  border-color: var(--color-text-primary);
+  color: var(--color-text-on-brand);
+}
+
+.office-contact__action[class]:focus-visible {
+  outline: 2px solid var(--color-brand-gold);
+  outline-offset: 3px;
+}
+
+.office-contact__action-arrow[class] {
+  font-size: 1.1em;
+  line-height: 1;
+}
+
 /* Primary and outline CTA family: Hero, Barnes Choice and Project. */
 :is(
   .home-hero-filters__submit,
@@ -370,6 +433,11 @@ section.news-section[class] {
   .site-footer__callback-btn[class] {
     font-size: var(--control-cta-font-size-wide) !important;
   }
+
+  .office-contact__action[class] {
+    font-size: var(--control-cta-font-size-wide);
+    padding-inline: var(--control-cta-padding-inline-wide);
+  }
 }
 
 @media (max-width: 540px) {
@@ -427,5 +495,14 @@ section.news-section[class] {
     font-size: var(--type-contact-link-size) !important;
     font-weight: var(--font-weight-regular) !important;
     line-height: var(--type-contact-link-line-height) !important;
+  }
+
+  .office-contact__action[class] {
+    font-size: var(--control-cta-font-size-mobile);
+    font-weight: var(--control-cta-font-weight-mobile);
+    height: var(--control-cta-height-mobile);
+    min-height: var(--control-cta-height-mobile);
+    padding: 10px 24px;
+    width: 100%;
   }
 }
