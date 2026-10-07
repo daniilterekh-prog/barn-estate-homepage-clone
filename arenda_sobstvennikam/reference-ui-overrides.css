@@ -1030,6 +1030,22 @@ body.owner-rent-reference-ui .owner-sale-hero .breadcrumbs__link {
 }
 
 @media (max-width: 540px) {
+  .owner-rent-reference-ui :is(
+    .owner-sale-hero__text,
+    .owner-sale-presentation__featured-text,
+    .about-company__intro,
+    .owner-sale-services__text span,
+    .owner-sale-exclusive__intro,
+    .owner-sale-exclusive__text,
+    .catalog-contact__subtitle,
+    .catalog-contact__card-text,
+    .newsletter-cta__lead
+  ) {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 19.2px;
+  }
+
   .owner-rent-reference-ui .owner-rent-section-eyebrow {
     font-size: 12px;
     line-height: 14.4px;
@@ -1093,8 +1109,6 @@ body.owner-rent-reference-ui .owner-sale-hero .breadcrumbs__link {
 
 @media (max-width: 540px) {
   .owner-rent-reference-ui .owner-sale-exclusive__intro {
-    font-size: 16px;
-    line-height: 1.4;
     margin-top: 18px;
   }
 
