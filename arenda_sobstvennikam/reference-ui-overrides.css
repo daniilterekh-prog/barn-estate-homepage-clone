@@ -672,7 +672,7 @@ body.owner-rent-reference-ui .owner-sale-hero .breadcrumbs__link {
 }
 
 .owner-rent-reference-ui .catalog-consultation__media {
-  min-height: 638px;
+  min-height: 720px;
   overflow: hidden;
   position: relative;
 }
@@ -687,7 +687,7 @@ body.owner-rent-reference-ui .owner-sale-hero .breadcrumbs__link {
 
 .owner-rent-reference-ui .catalog-consultation__image {
   object-fit: cover;
-  object-position: center;
+  object-position: center top;
 }
 
 .owner-rent-reference-ui .catalog-consultation__overlay {
