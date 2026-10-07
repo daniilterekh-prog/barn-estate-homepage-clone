@@ -298,30 +298,31 @@ This inventory includes rectangular `<button>` elements and anchors styled as co
 | Hero filter icon `.home-hero-filters__filter-icon` | `60×58px` | hidden | hidden | hidden | `16/16px`, weight `400` |
 | Hero filter tabs `.home-hero-filters__tab` | hidden | `24px` high | `24px` high | `26px` high | `16/16px` → `18/18px` wide; active `400`, inactive `300` |
 | Hero filter fields `.hero-filter-field` / `.home-hero-filters__more` | hidden | `70px` high | `70px` high | `70px` high | `16/17.6px`, weight `300`; `18/19.8px` wide |
-| Hero primary `.home-hero-filters__submit` | `342×58px` | `706×70px` | `203×70px` | `241×70px` | `16/17.6px`, weight `500`; `18/19.8px` wide |
+| Hero primary `.home-hero-filters__submit` | `342×58px` | `705×70px` | `202×70px` | `238×70px` | `16/17.6px`, weight `400`; `18/19.8px` wide |
 | Barnes tabs `.barnes-choice__tab` | select only | `32px` high | `32px` high | `34px` high | `20/20px` → `22/22px` wide, weight `300` |
 | Barnes mobile select `.barnes-choice__select-control` | `120×26px` | hidden | hidden | hidden | `12/14.4px`, weight `300` |
-| Barnes primary `.barnes-choice__action` | `342×68px` | `320×56px` | `336×70px` | `336×70px` | `16/16px` → `20/20px`, weight `500` |
-| Project outline `.project-hero__cta` | `198×68px` | `230×56px` | `316×70px` | `316×70px` | `16/16px` → `20/20px`, weight `500` |
+| Barnes primary `.barnes-choice__action` | `342×58px` | `320×70px` | `320×70px` | `320×70px` | `16/17.6px`, weight `400`; `18/19.8px` wide |
+| Project outline `.project-hero__cta` | `198×58px` | `222×70px` | `222×70px` | `256×70px` | `16/17.6px`, weight `400`; `18/19.8px` wide |
 | About text CTA `.ui-more-link` | `141×25px` | `141×25px` | `141×25px` | `141×25px` | `14/16.8px`, weight `300` |
 | News text CTA `.news-section__action` | `206×25px` | `206×25px` | `206×25px` | `206×25px` | `14/16.8px`, weight `400` |
 | Office/contact `.office-contact__social` | `335×48px` | `315×48px` | `226×48px` | `348×48px` | `16/20px` mobile; `18/22.5px` otherwise, weight `400` |
-| Newsletter submit | `335×54px` | `168×58px` | `168×58px` | `168×58px` | `16/16px`, weight `400` |
-| Footer callback `.site-footer__callback-btn` | `294×50px` | `706×56px` | `294×56px` | `331×56px` | `16/16px`, weight `500` |
+| Newsletter submit | `335×58px` | `193×70px` | `193×70px` | `228×70px` | `16/17.6px`, weight `400`; `18/19.8px` wide |
+| Footer callback `.site-footer__callback-btn` | `294×50px` | `706×56px` | `294×56px` | `331×56px` | `16/16px`, weight `400` |
 | Floating expert `.floating-expert__card` | `343×97px` | `360×110px` | `360×110px` | `360×110px` | `16/16px`, weight `400` |
 | Floating close `.floating-expert__close` | `30×30px` | `30×30px` | `30×30px` | `30×30px` | inherited `16/16px`; icon-only |
 
-Rectangular-system conclusion: Hero primary, Barnes primary, Project outline, Newsletter submit and Footer callback currently form five different size/type contracts. The first unification candidate is the CTA family; text links and filter/tab controls should remain separate semantic roles.
+Rectangular-system conclusion: Hero primary, Barnes primary, Project outline and Newsletter submit now share one CTA geometry and use weight `400`; Footer callback keeps its compact geometry but uses the same label weight. Text links and filter/tab controls remain separate semantic roles.
 
-### Implemented CTA correction — 2026-10-07
+### Implemented rectangular action correction — 2026-10-07
 
 The first rectangular-control correction is limited to the main CTA family:
 
-- Hero primary, Barnes primary and Project outline now share `58px` height on mobile and `70px` from tablet through desktop.
-- CTA label typography is `16px / 17.6px`, weight `500`; wide desktop uses `18px / 19.8px`.
+- Hero primary, Barnes primary, Project outline and Newsletter submit now share `58px` height on mobile and `70px` from tablet through desktop.
+- Rectangular action labels use `16px / 17.6px`, weight `400`; wide desktop uses `18px / 19.8px`.
 - Horizontal padding is `24px` mobile, `36px` base desktop and `47px` wide desktop.
-- Radius is `3px` for all three controls.
-- Newsletter, Footer, Office/contact, filter fields, tabs, text links and floating controls remain separate roles and were not changed in this pass.
+- Radius is `3px` for the four shared CTA controls.
+- Footer callback keeps its compact size but now also uses weight `400`.
+- Office/contact, filter fields, tabs, text links and floating controls remain separate roles and were not changed in this pass.
 
 ### Icon and slider contract
 
@@ -621,3 +622,4 @@ These are specification outputs, not completed implementation changes.
 - Audited header controls at 320/390/540/541/768/1024/1025/1280/1281/1440/1920px; isolated hit-area and keyboard-focus fixes from the rest of the button system. No header CSS was changed.
 - Audited all rectangular homepage controls with the header excluded; recorded dimensions and typography at 390/768/1280/1920px. No button CSS was changed.
 - Applied the first rectangular CTA correction to Hero, Barnes Choice and Project controls; kept header, circular controls and separate form/footer/text-link roles unchanged.
+- Unified Newsletter with the rectangular CTA geometry and changed all rectangular action labels to weight `400`; kept header and circular controls unchanged.

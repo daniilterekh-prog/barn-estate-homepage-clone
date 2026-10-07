@@ -22,6 +22,7 @@
   --control-cta-font-size: 16px;
   --control-cta-font-size-wide: 18px;
   --control-cta-line-height: 1.1;
+  --control-cta-font-weight: var(--font-weight-regular);
   --control-cta-radius: 3px;
 
   /* Reference contact-link role for the homepage office/contact block. */
@@ -196,11 +197,27 @@ section.news-section[class] {
 )[class] {
   border-radius: var(--control-cta-radius) !important;
   font-size: var(--control-cta-font-size);
-  font-weight: var(--font-weight-medium);
+  font-weight: var(--control-cta-font-weight) !important;
   height: var(--control-cta-height);
   line-height: var(--control-cta-line-height);
   min-height: var(--control-cta-height);
   padding: 0 var(--control-cta-padding-inline) !important;
+}
+
+/* Newsletter submit joins the same rectangular action geometry. */
+.newsletter-form__row > button {
+  border-radius: var(--control-cta-radius) !important;
+  font-size: var(--control-cta-font-size) !important;
+  font-weight: var(--control-cta-font-weight) !important;
+  height: var(--control-cta-height) !important;
+  line-height: var(--control-cta-line-height) !important;
+  min-height: var(--control-cta-height) !important;
+  padding: 0 var(--control-cta-padding-inline) !important;
+}
+
+/* Footer callback keeps its compact geometry but uses the shared label weight. */
+.site-footer__callback-btn[class] {
+  font-weight: var(--control-cta-font-weight);
 }
 
 @media (min-width: 1441px) {
@@ -210,6 +227,11 @@ section.news-section[class] {
     .project-hero__cta
   )[class] {
     font-size: var(--control-cta-font-size-wide);
+    padding: 0 var(--control-cta-padding-inline-wide) !important;
+  }
+
+  .newsletter-form__row > button {
+    font-size: var(--control-cta-font-size-wide) !important;
     padding: 0 var(--control-cta-padding-inline-wide) !important;
   }
 }
@@ -231,6 +253,12 @@ section.news-section[class] {
   )[class] {
     height: var(--control-cta-height-mobile);
     min-height: var(--control-cta-height-mobile);
+    padding: 10px 24px !important;
+  }
+
+  .newsletter-form__row > button {
+    height: var(--control-cta-height-mobile) !important;
+    min-height: var(--control-cta-height-mobile) !important;
     padding: 10px 24px !important;
   }
 }
