@@ -24,7 +24,7 @@
   --control-cta-font-size-wide: 19px;
   --control-cta-line-height: 1.1;
   --control-cta-font-weight: var(--font-weight-regular);
-  --control-cta-font-weight-mobile: var(--font-weight-light);
+  --control-cta-font-weight-mobile: var(--font-weight-regular);
   --control-cta-radius: 1px;
   --space-newsletter-footer-mobile: 40px;
 
@@ -339,7 +339,7 @@ section.news-section[class] {
 
   .office-contact__social[class] {
     font-size: var(--type-contact-link-size) !important;
-    font-weight: var(--font-weight-light) !important;
+    font-weight: var(--font-weight-regular) !important;
     line-height: var(--type-contact-link-line-height) !important;
   }
 }
