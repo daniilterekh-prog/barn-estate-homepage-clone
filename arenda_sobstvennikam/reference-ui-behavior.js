@@ -83,8 +83,18 @@
       header.append(sectionEyebrow, title);
     }
 
-    if (!title.querySelector('br')) {
-      title.innerHTML = 'ПРЕИМУЩЕСТВА<br> ЭКСКЛЮЗИВНОЙ<br> РАБОТЫ С BARNES';
+    if (!title.querySelector('.owner-sale-exclusive__title-line')) {
+      title.setAttribute(
+        'aria-label',
+        'Преимущества эксклюзивной работы с BARNES'
+      );
+      title.innerHTML = [
+        'ПРЕИМУЩЕСТВА',
+        'ЭКСКЛЮЗИВНОЙ',
+        'РАБОТЫ С BARNES'
+      ].map(function (line) {
+        return '<span class="owner-sale-exclusive__title-line" aria-hidden="true">' + line + '</span>';
+      }).join('');
     }
 
     section.querySelectorAll('.owner-sale-exclusive__item').forEach(function (item, index) {

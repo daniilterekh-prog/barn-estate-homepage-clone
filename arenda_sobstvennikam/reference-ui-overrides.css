@@ -706,7 +706,23 @@ body.owner-rent-reference-ui .owner-sale-hero .breadcrumbs__link {
 .owner-rent-reference-ui .owner-sale-exclusive__header,
 .owner-rent-reference-ui .owner-sale-exclusive__eyebrow,
 .owner-rent-reference-ui .owner-sale-exclusive__title {
+  margin-left: 0;
+  padding-left: 0;
   text-align: left;
+  text-indent: 0;
+}
+
+.owner-rent-reference-ui .owner-sale-exclusive__header {
+  justify-self: start;
+  width: 100%;
+}
+
+.owner-rent-reference-ui .owner-sale-exclusive__title-line {
+  display: block;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  text-indent: 0;
 }
 
 @media (min-width: 901px) {
