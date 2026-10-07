@@ -62,6 +62,7 @@
   --color-border-subtle: #e4e4e4;
   --color-brand-burgundy: #8b1d25;
   --color-brand-gold: #e7c88f;
+  --color-action-primary-hover: #6f161d;
   --color-overlay-media: rgb(0 0 0 / 28%);
   --color-state-error: #ef4444;
 
@@ -310,8 +311,8 @@ section.news-section[class] {
 }
 
 .office-contact__social[class]:hover {
-  background: var(--color-text-primary);
-  border-color: var(--color-text-primary);
+  background: var(--color-action-primary);
+  border-color: var(--color-action-primary);
   color: var(--color-text-on-brand);
 }
 
@@ -371,10 +372,17 @@ section.news-section[class] {
   transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
 }
 
-@container office-contact-copy (max-width: 635px) {
+@media (max-width: 1279px) {
   .office-contact__actions[class],
   .office-contact__socials[class] {
     grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media (min-width: 1280px) and (max-width: 1919px) {
+  .office-contact__action[class],
+  .office-contact__social[class] {
+    padding-inline: 12px;
   }
 }
 
@@ -391,13 +399,13 @@ section.news-section[class] {
 }
 
 .office-contact__action--email[class]:hover {
-  background: var(--color-neutral-800);
-  border-color: var(--color-neutral-800);
+  background: var(--color-action-primary-hover);
+  border-color: var(--color-action-primary-hover);
 }
 
 .office-contact__action--route[class]:hover {
-  background: var(--color-text-primary);
-  border-color: var(--color-text-primary);
+  background: var(--color-action-primary);
+  border-color: var(--color-action-primary);
   color: var(--color-text-on-brand);
 }
 
@@ -617,5 +625,12 @@ section.news-section[class] {
   .office-contact__action .office-contact__arrow[class] {
     height: 16px;
     width: 16px;
+  }
+}
+
+@media (min-width: 1280px) and (max-width: 1919px) {
+  .office-contact__action[class],
+  .office-contact__social[class] {
+    padding-inline: 8px;
   }
 }
