@@ -16,6 +16,105 @@ Reference state: the current homepage decisions are fixed as the working referen
 - Scope: homepage only.
 - Current validation: hydrated DOM, computed styles, CSS media queries, Playwright viewport matrix, screenshots, keyboard/pointer states and source-page comparison.
 
+## Applied Homepage UI Kit — consolidated current values
+
+This section is the current handoff baseline after the homepage UI corrections completed on 2026-10-07. Values marked **applied** are connected through `homepage-ui-tokens.css`; values marked **reference** are documented decisions for the next implementation pass. Header controls and circular controls remain outside the current button changes.
+
+### Foundation
+
+| Token | Current value | Status / use |
+|---|---|---|
+| Font family | `Tilda Sans`, fallback `Tilda Sans Fallback`, system sans | applied globally on homepage |
+| Font weights | `300` Light, `400` Regular, `500` Medium | applied / available by semantic role |
+| Heading weight | `300` | reference heading token |
+| Primary text | `#1E1E1E` | applied semantic color |
+| Secondary text | `#4F4D49` | applied semantic color |
+| Muted text | `#656462` | applied semantic color |
+| Brand | `#8B1D25` | applied CTA/interactive color |
+| Page background | `#FFFFFF` | applied |
+| Surface | `#F1F1F1` | applied |
+| Dark surface | `#262626` | applied footer/editorial surface |
+| Border | `#E4E4E4` | applied reference border |
+
+### Typography scale
+
+| Role | Mobile ≤540px | Base 541–1440px | Wide ≥1441px | Weight | Status |
+|---|---:|---:|---:|---:|---|
+| Display / Hero | `48px / 48px` | fluid | up to `104px / 104px` | `300` | reference |
+| H1 / page title | Display visual role | section-specific | section-specific | `300` | reference; semantic H1 still required |
+| H2 Standard | `22px / 26.4px` | `38px / 45.6px` | `44px / 52.8px` | `300` | reference token |
+| H2 Compact | `22px / 22px` | `38px / 38px` | `44px / 44px` | `300` | reference token |
+| H2 Editorial | `22px / 26.4px` | `44px / 43.12px` | `44px / 43.12px` | `300` | About exception |
+| H3 / card title | `18–20px` | `18–22px` | `18–22px` | `400` | reference range |
+| Lead / Body Large | `15px / 21px` | `22px / 33px` | `22px / 33px` | `300` | reference |
+| Body | `16px / 22.4px` | `16px / 22.4px` | `16px / 22.4px` | `300/400` | reference |
+| Secondary / metadata | `13px / 18px` | `13px / 18px` | `13px / 18px` | `300/400` | reference |
+| Eyebrow | `12px / 14.4px` | `14px / 16.1px` | `14px / 16.1px` | `400` | applied; tracking `0.12em` |
+| Button label | `17px / 18.7px` | `17px / 18.7px` | `19px / 20.9px` | `400` | applied to rectangular action buttons |
+| Contact method | `17px / 18.7px` | `17px / 18.7px` | `19px / 20.9px` | `400` | applied; hit area `48px` |
+| Footer column title | `14px / 16.8px` | `18px / 18px` | `18px / 18px` | `400` | applied mobile readability correction |
+| Footer link | `13px / 18.2px` | `16px / 16px` | `16px / 16px` | `400` mobile / source desktop role | applied mobile correction |
+| Text CTA | `14px / 16.8px` | `14px / 16.8px` | `14px / 16.8px` | `300/400` | separate editorial role |
+
+### Spacing and dimensions
+
+| Role | Mobile | Tablet | Desktop | Wide |
+|---|---:|---:|---:|---:|
+| Inline XS | `8px` | `8px` | `8px` | `8px` |
+| Inline SM | `16px` | `16px` | `16px` | `16px` |
+| Component | `24px` | `24px` | `24px` | `24px` |
+| Component large | `32px` | `32px` | `32px` | `32px` |
+| Standard section | `50px` | `64px` | `72px` | `96px` |
+| Compact section | `35px` | `60px` | `75px` | `75px` |
+| Newsletter → footer gap | `40px` | `0px` | `0px` | `0px` |
+
+### Buttons and controls
+
+| Component | Size / geometry | Typography | Padding | Radius | Status |
+|---|---|---|---|---:|---|
+| Hero primary | `58px` mobile; `70px` desktop | `17/18.7px`; `19/20.9px` wide; `400` | `24px` mobile; `36px` desktop; `47px` wide | `1px` | applied |
+| Barnes primary | same as Hero | same | same | `1px` | applied |
+| Project outline | same as Hero | same | same | `1px` | applied |
+| Newsletter submit | same as Hero | same | same | `1px` | applied |
+| Footer callback | `53px` mobile; `56px` desktop | `17/18.7px`; `19/20.9px` wide; `400` | source compact padding `16px 28px` | `1px` | applied, compact exception |
+| Office/contact link | `48px` interactive height | `17/18.7px`; `19/20.9px` wide; `400` | source icon/text spacing retained | source role | applied |
+| Text CTA | visual box about `25px` high | `14/16.8px` | role-specific | no fill | separate role |
+| Circular slider control | `48/56/68px` | icon role | role-specific | circular | unchanged |
+
+Button states: preserve the existing hover opacity/color behavior; all keyboard controls require a visible `2px` `:focus-visible` ring with `2–4px` offset. Disabled actions use `0.5–0.6` opacity and `cursor: not-allowed`. Loading actions preserve their width and expose `aria-busy`.
+
+### Containers and grids
+
+- Base container: max-width `1920px`, centered, shared left/right guides.
+- Standard sections use the base container; Hero and Project media may remain full-bleed.
+- Service grid: two columns with `20px` gap on desktop.
+- Department grid: six columns with `2px` gap on desktop.
+- Editorial split: two columns with a fluid gap, up to approximately `160px`.
+- Mobile form and card layouts collapse to one content stack where required.
+- Footer at `≤1024px`: two columns with the existing responsive gaps.
+- Footer at `1025–1199px`: four columns with the source responsive layout.
+- Footer at `≥1200px`: six equal columns. Row 1: `Москва`, `Загородная`, `Коммерческая`, `Санкт-Петербург`, `Курортная`, `Зарубежная`. Row 2: `Медиа`, `О BARNES`, `Собственникам`.
+
+### Radius, borders and imagery
+
+| Role | Value |
+|---|---:|
+| Rectangular action button | `1px` |
+| Filter field | `14px` |
+| Circular control | `50%` |
+| Pill/badge | `999px` |
+| Functional border | `1px solid #E4E4E4` |
+| Media treatment | existing image ratios and `object-fit` remain family-specific |
+
+### Applied changes included in this kit
+
+1. Unified rectangular action buttons to `58/70px`, `17/19px`, weight `400`, radius `1px`.
+2. Matched Office/Contact method typography to the action-button type scale while preserving the `48px` hit area.
+3. Added `40px` mobile separation between Newsletter and Footer.
+4. Increased mobile Footer titles to `14px` and links to `13px / 18.2px` weight `400`.
+5. Rebuilt the wide Footer grid into the approved six-column/two-row order.
+6. Preserved the header, circular controls and unrelated page sections.
+
 ## Principles
 
 1. Preserve the premium editorial character: Tilda Sans, large light type, white space, restrained palette, image-led composition and BARNES burgundy.
@@ -104,9 +203,9 @@ The canonical value to reuse first in later UI Kit work is the base/medium H2 va
 | Secondary | 13/18px, weight 300/400 | stable | metadata, helper, form notes |
 | Eyebrow | 12/14.4px mobile; 14/16.1px tablet/desktop/wide, weight 400, letter-spacing 0.12em, #4F4D49 | no breakpoint growth above 14px | Services, Barnes Choice, Departments and News section label |
 | Navigation | 16/16px desktop, 18/18px wide, weight 300, uppercase | hidden/compact below available-space threshold | header navigation |
-| Button label | 16/17.6px desktop, 16px mobile, weight 500 | 18px only at wide scale | actions |
+| Button label | 17/18.7px base, 19/20.9px wide, weight 400 | same rectangular action contract across mobile/desktop | actions |
 | Form label | 14/20px, weight 400 | explicit visible or visually hidden label | all fields |
-| Footer | 13/18px minimum mobile; 16/16px desktop; 18/18px wide | never use 11/11px as a content link | footer navigation/legal |
+| Footer | 14/16.8px column titles and 13/18.2px links mobile; 18/18px titles and 16/16px links desktop | never use 11/11px as a content link | footer navigation/legal |
 
 ### Current → reference typography mapping
 
@@ -362,7 +461,7 @@ The header navigation itself remains outside this button pass. Its current visib
 | Header navigation | uppercase, 16/16px desktop or 18/18px wide, weight 300 | color/opacity hover; visible focus |
 | Text CTA | 14/16.8px, Brand, underline with 2px offset | hover color/opacity; focus ring |
 | Inline content | Text secondary or Brand according to meaning | underline on hover/focus |
-| Footer | 13/18px minimum mobile, 16/16px desktop | visible focus, adequate hit area |
+| Footer | 14/16.8px titles and 13/18.2px links mobile; 18/18px titles and 16/16px links desktop | visible focus, adequate hit area |
 
 Visited styling is not a separate visual role unless browser behavior requires it. Focus-visible must never be removed.
 
@@ -588,14 +687,14 @@ These are specification outputs, not completed implementation changes.
 | Buttons | Primary/Secondary/Outline/Text/Icon; 58/70px primary | MEDIUM | current height is clear; radius needs review |
 | Cards | four families, shared semantics, family-specific media | MEDIUM | visual functions differ |
 | Forms | explicit labels, 58/70 controls, visible states | HIGH | accessibility and current control sizes |
-| Radius | 0, 3, 14, circle | MEDIUM | actual repeated values, desktop CTA exception unresolved |
+| Radius | 0, 1, 14, circle | HIGH | rectangular action radius is now fixed at 1px; other roles remain separate |
 | Borders | 1px #E4E4E4 plus limited alpha divider | HIGH | actual usage |
 | Icons | existing family, role sizes, 44px hit area | MEDIUM | source family is clear; stroke details need component pass |
 | Responsive | 540/541 and 1280/1281 require correction/review | HIGH | measured discontinuities |
 
 ## Open Decisions
 
-1. Approve radius 3px for primary CTA or retain sharp desktop hero CTA as intentional.
+1. Review whether standard form controls should also adopt the new 1px action radius; filter fields remain 14px.
 2. Choose whether the local clone is an independently crawlable deployment.
 3. Approve the mobile video loading policy after performance measurement.
 4. Approve the exact navigation behavior at 1280–1281px.
@@ -632,4 +731,5 @@ These are specification outputs, not completed implementation changes.
 - Increased rectangular action labels to `17px` base / `19px` wide and set the button radius token to `1px`.
 - Aligned Office/Contact communication links to the same `17px / 19px`, weight `400` typography while preserving their `48px` hit area.
 - Reflowed wide desktop footer navigation to six columns: six property directions on row one, then `Медиа`, `О BARNES` and `Собственникам` on row two.
+- Added a consolidated applied Homepage UI Kit with final typography, weights, spacing, controls, radii, footer rules and responsive grid values.
 - Increased mobile footer readability to `14px` titles and `13px / 18.2px` links; added `40px` separation after the newsletter form.
