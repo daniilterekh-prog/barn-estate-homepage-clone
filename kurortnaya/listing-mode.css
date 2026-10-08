@@ -63,16 +63,28 @@
   border-radius: 1px;
   box-sizing: border-box;
   display: flex;
+  gap: 12px;
   height: 56px;
+  justify-content: space-between;
   min-height: 54px;
-  padding: 0 38px 0 16px;
+  padding: 0 16px;
 }
 
 .catalog-mode-toolbar .catalog-quick-filters__label[data-v-6fd45cc6] {
   align-self: center !important;
+  flex: 1 1 auto;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.2;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.catalog-mode-toolbar .catalog-quick-filters__chevron[data-v-6fd45cc6] {
+  flex: 0 0 10px;
+  margin-left: auto;
 }
 
 .catalog-mode-toolbar .catalog-quick-filters__button.is-active[data-v-6fd45cc6] {
