@@ -179,6 +179,88 @@
 
   enhancePresentationCards();
 
+  const enhanceSaleStages = function () {
+    const section = page.querySelector('.owner-sale-stages');
+    const aside = section && section.querySelector('.owner-sale-stages__aside');
+    const title = section && section.querySelector('.owner-sale-stages__title');
+    const offer = section && section.querySelector('.owner-sale-stages__offer');
+    const offerText = offer && offer.querySelector('.owner-sale-stages__offer-text');
+    const offerButton = offer && offer.querySelector('.owner-sale-stages__offer-btn');
+    if (!section || !aside || !title) return;
+
+    title.id = 'owner-sale-stages-title';
+    section.setAttribute('aria-labelledby', title.id);
+    section.removeAttribute('aria-label');
+    aside.classList.add('owner-sale-stages__header');
+
+    if (offerText && !aside.querySelector('.owner-sale-stages__intro')) {
+      offerText.className = 'owner-sale-stages__intro';
+      aside.appendChild(offerText);
+    }
+    if (offerButton) {
+      offerButton.classList.add('owner-sale-stages__cta');
+      aside.appendChild(offerButton);
+    }
+    if (offer) offer.remove();
+  };
+
+  enhanceSaleStages();
+
+  let stagesScrollFrame = null;
+  const updateStagesScrollState = function () {
+    const section = page.querySelector('.owner-sale-stages');
+    const items = section && Array.from(section.querySelectorAll('.owner-sale-stages__item'));
+    const headerBlock = section && section.querySelector('.owner-sale-stages__header');
+    const desktop = window.matchMedia('(min-width: 901px)').matches;
+    if (!section || !items.length) return;
+
+    if (!desktop) {
+      section.classList.remove('owner-sale-stages--scroll-ready');
+      items.forEach(function (item) {
+        item.classList.remove('is-active', 'is-past');
+        item.style.removeProperty('--owner-sale-stages-last-offset');
+      });
+      return;
+    }
+
+    let alignmentLine = headerBlock ? parseFloat(window.getComputedStyle(headerBlock).top) : 120;
+    if (!Number.isFinite(alignmentLine)) alignmentLine = 120;
+    const lastItem = items[items.length - 1];
+    const currentLastOffset = parseFloat(lastItem.style.getPropertyValue('--owner-sale-stages-last-offset')) || 0;
+    const naturalLastTop = lastItem.getBoundingClientRect().top - currentLastOffset;
+    const headerTop = headerBlock ? headerBlock.getBoundingClientRect().top : alignmentLine;
+    const lastOffset = Math.max(0, headerTop - naturalLastTop);
+    lastItem.style.setProperty('--owner-sale-stages-last-offset', lastOffset + 'px');
+
+    let activeIndex = 0;
+    let closestDistance = Infinity;
+    items.forEach(function (item, index) {
+      const distance = Math.abs(item.getBoundingClientRect().top - alignmentLine);
+      if (distance < closestDistance) {
+        closestDistance = distance;
+        activeIndex = index;
+      }
+    });
+
+    section.classList.add('owner-sale-stages--scroll-ready');
+    items.forEach(function (item, index) {
+      item.classList.toggle('is-active', index === activeIndex);
+      item.classList.toggle('is-past', index < activeIndex);
+    });
+  };
+
+  const requestStagesScrollUpdate = function () {
+    if (stagesScrollFrame) return;
+    stagesScrollFrame = window.requestAnimationFrame(function () {
+      stagesScrollFrame = null;
+      updateStagesScrollState();
+    });
+  };
+
+  window.addEventListener('scroll', requestStagesScrollUpdate, { passive: true });
+  window.addEventListener('resize', requestStagesScrollUpdate, { passive: true });
+  requestStagesScrollUpdate();
+
   const alignConsultationCopy = function () {
     const consultation = page.querySelector('.catalog-consultation');
     if (!consultation) return;

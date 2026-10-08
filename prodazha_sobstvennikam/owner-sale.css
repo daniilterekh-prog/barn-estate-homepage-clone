@@ -1079,6 +1079,264 @@ body.owner-sale-reference-ui .owner-sale-hero .breadcrumbs__link {
   }
 }
 
+/* Sale stages — exact text-only scroll pattern from the approved owner-rent page. */
+.owner-sale-reference-ui .owner-sale-stages {
+  --owner-sale-stages-sticky-top: clamp(180px, 28vh, 260px);
+  background: #fff;
+  color: var(--owner-sale-ink);
+  min-height: 0;
+  overflow: visible;
+  padding-block: clamp(60px, 4.16667vw, 80px);
+}
+
+.owner-sale-reference-ui .owner-sale-stages__inner {
+  padding-block: 0;
+}
+
+.owner-sale-reference-ui .owner-sale-stages__body {
+  align-items: start;
+  column-gap: clamp(32px, 3vw, 56px);
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, .8fr);
+}
+
+.owner-sale-reference-ui .owner-sale-stages__header {
+  align-self: start;
+  display: block;
+  gap: 0;
+  grid-column: 1;
+  justify-self: start;
+  width: 100%;
+}
+
+.owner-sale-reference-ui .owner-sale-stages__header .owner-sale-section-eyebrow {
+  margin-bottom: 26px;
+  text-align: left;
+}
+
+.owner-sale-reference-ui .owner-sale-stages__title {
+  color: var(--owner-sale-ink);
+  font-size: 38px;
+  font-weight: 300;
+  line-height: 45.6px;
+  margin: 0;
+  max-width: 590px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.owner-sale-reference-ui .owner-sale-stages__intro {
+  color: var(--owner-sale-muted);
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 30px 0 0;
+  max-width: 520px;
+}
+
+.owner-sale-reference-ui .owner-sale-stages__cta {
+  margin-top: 28px;
+  min-width: 280px;
+}
+
+.owner-sale-reference-ui .owner-sale-stages__list {
+  display: block;
+  grid-column: 2;
+  list-style: none;
+  margin: 0;
+  padding: 0 0 calc(var(--owner-sale-stages-sticky-top) + 44px);
+}
+
+.owner-sale-reference-ui .owner-sale-stages__item {
+  align-items: start;
+  background: transparent;
+  border: 0;
+  border-top: 1px solid var(--owner-sale-border);
+  display: grid;
+  gap: 22px;
+  grid-template-columns: 48px minmax(0, 1fr);
+  min-height: 0;
+  padding: 24px 0;
+}
+
+.owner-sale-reference-ui .owner-sale-stages__item + .owner-sale-stages__item {
+  border-top: 1px solid var(--owner-sale-border);
+}
+
+.owner-sale-reference-ui .owner-sale-stages__number {
+  border: 0;
+  border-radius: 0;
+  color: var(--owner-sale-brand);
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  height: auto;
+  letter-spacing: normal;
+  line-height: 20px;
+  padding-top: 3px;
+  width: auto;
+}
+
+.owner-sale-reference-ui .owner-sale-stages__item-body {
+  min-width: 0;
+}
+
+.owner-sale-reference-ui .owner-sale-stages__item-title {
+  color: var(--owner-sale-ink);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.owner-sale-reference-ui .owner-sale-stages__item-text {
+  color: var(--owner-sale-muted);
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 10px 0 0;
+  max-width: none;
+}
+
+@media (min-width: 901px) {
+  .owner-sale-reference-ui .owner-sale-stages__header {
+    position: sticky;
+    top: var(--owner-sale-stages-sticky-top);
+  }
+
+  .owner-sale-reference-ui .owner-sale-stages__item:last-child {
+    background: #fff;
+    position: relative;
+    transform: translateY(var(--owner-sale-stages-last-offset, 0));
+    will-change: transform;
+    z-index: 1;
+  }
+
+  .owner-sale-reference-ui .owner-sale-stages--scroll-ready :is(
+    .owner-sale-stages__number,
+    .owner-sale-stages__item-body
+  ) {
+    opacity: .34;
+    transform: translateY(18px);
+    transition: opacity 420ms cubic-bezier(.22, 1, .36, 1), transform 520ms cubic-bezier(.22, 1, .36, 1);
+    will-change: opacity, transform;
+  }
+
+  .owner-sale-reference-ui .owner-sale-stages--scroll-ready .owner-sale-stages__item.is-past :is(
+    .owner-sale-stages__number,
+    .owner-sale-stages__item-body
+  ) {
+    opacity: .58;
+    transform: translateY(0);
+  }
+
+  .owner-sale-reference-ui .owner-sale-stages--scroll-ready .owner-sale-stages__item.is-active :is(
+    .owner-sale-stages__number,
+    .owner-sale-stages__item-body
+  ) {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .owner-sale-reference-ui .owner-sale-stages--scroll-ready .owner-sale-stages__item {
+    transition: border-color 420ms ease;
+  }
+
+  .owner-sale-reference-ui .owner-sale-stages--scroll-ready .owner-sale-stages__item.is-active {
+    border-color: var(--owner-sale-brand);
+  }
+}
+
+@media (max-width: 900px) {
+  .owner-sale-reference-ui .owner-sale-stages {
+    padding-block: 56px;
+  }
+
+  .owner-sale-reference-ui .owner-sale-stages__body {
+    display: block;
+  }
+
+  .owner-sale-reference-ui .owner-sale-stages__title {
+    font-size: 32px;
+    line-height: 1.2;
+  }
+
+  .owner-sale-reference-ui .owner-sale-stages__intro {
+    margin-top: 22px;
+    max-width: 620px;
+  }
+
+  .owner-sale-reference-ui .owner-sale-stages__cta {
+    margin-bottom: 36px;
+  }
+
+  .owner-sale-reference-ui .owner-sale-stages__list {
+    padding-bottom: 0;
+  }
+}
+
+@media (max-width: 540px) {
+  .owner-sale-reference-ui .owner-sale-stages {
+    padding-block: 40px;
+  }
+
+  .owner-sale-reference-ui .owner-sale-stages__header .owner-sale-section-eyebrow {
+    margin-bottom: 16px;
+    text-align: center;
+  }
+
+  .owner-sale-reference-ui .owner-sale-stages__title,
+  .owner-sale-reference-ui .owner-sale-stages__intro {
+    margin-inline: auto;
+    text-align: center;
+  }
+
+  .owner-sale-reference-ui .owner-sale-stages__title {
+    font-size: 22px;
+    line-height: 26.4px;
+  }
+
+  .owner-sale-reference-ui .owner-sale-stages__intro {
+    font-size: 15px;
+    line-height: 19.2px;
+    margin-top: 18px;
+  }
+
+  .owner-sale-reference-ui .owner-sale-stages__cta {
+    margin-bottom: 30px;
+    margin-top: 22px;
+    min-width: 0;
+    width: 100%;
+  }
+
+  .owner-sale-reference-ui .owner-sale-stages__item {
+    gap: 14px;
+    grid-template-columns: 28px minmax(0, 1fr);
+    padding: 20px 0;
+  }
+
+  .owner-sale-reference-ui .owner-sale-stages__item-title {
+    font-size: 20px;
+  }
+
+  .owner-sale-reference-ui .owner-sale-stages__item-text {
+    font-size: 15px;
+    line-height: 19.2px;
+    margin-top: 8px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .owner-sale-reference-ui .owner-sale-stages--scroll-ready :is(
+    .owner-sale-stages__number,
+    .owner-sale-stages__item-body
+  ) {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
 /* Hero parity pass: mirrors the approved owner-rent geometry. */
 .owner-sale-reference-ui .owner-sale-section-eyebrow {
   color: var(--owner-sale-ink);
