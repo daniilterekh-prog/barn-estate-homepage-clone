@@ -2,6 +2,10 @@
   margin-bottom: 48px;
 }
 
+#conditions .ambassadors-conditions__title {
+  max-width: 100%;
+}
+
 #conditions .ambassadors-conditions__section-title {
   color: #1e1e1e;
   font-size: 38px;

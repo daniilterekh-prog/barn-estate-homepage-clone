@@ -6,23 +6,38 @@
 
   var stagesStylesheet = document.createElement('link');
   stagesStylesheet.rel = 'stylesheet';
-  stagesStylesheet.href = 'assets/how-it-works.css?v=20261008-6';
+  stagesStylesheet.href = 'assets/how-it-works.css?v=20261008-7';
   document.head.appendChild(stagesStylesheet);
 
   var requestsStylesheet = document.createElement('link');
   requestsStylesheet.rel = 'stylesheet';
-  requestsStylesheet.href = 'assets/requests-typography.css?v=20261008-2';
+  requestsStylesheet.href = 'assets/requests-typography.css?v=20261008-3';
   document.head.appendChild(requestsStylesheet);
 
   var conditionsStylesheet = document.createElement('link');
   conditionsStylesheet.rel = 'stylesheet';
-  conditionsStylesheet.href = 'assets/conditions-heading.css';
+  conditionsStylesheet.href = 'assets/conditions-heading.css?v=20261008-2';
   document.head.appendChild(conditionsStylesheet);
 
   var ownerShellStylesheet = document.createElement('link');
   ownerShellStylesheet.rel = 'stylesheet';
-  ownerShellStylesheet.href = 'assets/owner-shell.css?v=20261008-4';
+  ownerShellStylesheet.href = 'assets/owner-shell.css?v=20261008-5';
   document.head.appendChild(ownerShellStylesheet);
+
+  var modalStylesheet = document.createElement('link');
+  modalStylesheet.rel = 'stylesheet';
+  modalStylesheet.href = 'assets/partner-modal.css?v=20261008-1';
+  document.head.appendChild(modalStylesheet);
+
+  var faqStylesheet = document.createElement('link');
+  faqStylesheet.rel = 'stylesheet';
+  faqStylesheet.href = 'assets/faq-typography.css?v=20261008-2';
+  document.head.appendChild(faqStylesheet);
+
+  var buttonStylesheet = document.createElement('link');
+  buttonStylesheet.rel = 'stylesheet';
+  buttonStylesheet.href = 'assets/button-kit.css?v=20261008-2';
+  document.head.appendChild(buttonStylesheet);
 
   document.body.classList.add('partners-owner-shell');
 
@@ -169,6 +184,66 @@
   enhanceOwnerFooter();
   enhanceOwnerStickyHeader();
 
+  function enhancePartnerModal() {
+    if (document.querySelector('.feedback-modal--partners')) return;
+    var modal = document.createElement('div');
+    var lastTrigger = null;
+    modal.className = 'modal feedback-modal feedback-modal--partners';
+    modal.hidden = true;
+    modal.setAttribute('role', 'dialog');
+    modal.setAttribute('aria-modal', 'true');
+    modal.setAttribute('aria-labelledby', 'partners-modal-title');
+    modal.innerHTML = '<div class="feedback-modal__overlay" aria-hidden="true"></div><div class="feedback-modal__content" tabindex="-1"><button type="button" class="feedback-modal__close" aria-label="Закрыть форму"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"></path></svg></button><div class="feedback-modal__layout"><div class="feedback-modal__body"><h2 class="feedback-modal__title" id="partners-modal-title">Направить клиента</h2><p class="feedback-modal__intro">Знакомьте нас с клиентами, которым нужна помощь с недвижимостью, и получайте вознаграждение после сделки.</p><form class="feedback-modal__form" novalidate><div class="feedback-modal__channels" role="group" aria-label="Предпочтительный способ связи"><button type="button" data-channel="Telegram" aria-pressed="true">Telegram</button><button type="button" data-channel="WhatsApp" aria-pressed="false">WhatsApp</button><button type="button" data-channel="MAX" aria-pressed="false">MAX</button><button type="button" data-channel="Звонок" aria-pressed="false">Звонок</button></div><input type="hidden" name="preferredChannel" value="Telegram"><label class="feedback-modal__field"><span class="visually-hidden">Ваше имя</span><input class="feedback-modal__input" name="name" type="text" autocomplete="name" placeholder="Ваше имя" required></label><label class="feedback-modal__field"><span class="visually-hidden">Номер телефона в Telegram</span><input class="feedback-modal__input" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="Номер телефона в Telegram" required></label><button type="submit" class="feedback-modal__submit">Направить клиента</button><label class="feedback-modal__consent"><input class="feedback-modal__consent-input" type="checkbox" required><span class="feedback-modal__consent-box" aria-hidden="true"></span><span>Я даю согласие на обработку <a href="https://barn-estate.ru/legal_notices/yuridicheskie-uvedomleniya/" target="_blank" rel="noopener noreferrer">персональных данных</a></span></label><p class="feedback-modal__status" role="status" aria-live="polite"></p></form></div><div class="feedback-modal__hero"><img src="assets/media-05.png" alt="Премиальный интерьер BARNES" class="feedback-modal__hero-image" width="755" height="470"></div></div></div>';
+    document.body.appendChild(modal);
+
+    var content = modal.querySelector('.feedback-modal__content');
+    var form = modal.querySelector('.feedback-modal__form');
+    var phone = modal.querySelector('input[name="phone"]');
+    var channelValue = modal.querySelector('input[name="preferredChannel"]');
+    var status = modal.querySelector('.feedback-modal__status');
+    function closeModal() {
+      modal.hidden = true;
+      document.body.style.removeProperty('overflow');
+      if (lastTrigger) lastTrigger.focus();
+    }
+    function openModal(trigger) {
+      lastTrigger = trigger || document.activeElement;
+      modal.hidden = false;
+      document.body.style.overflow = 'hidden';
+      window.requestAnimationFrame(function () { content.focus(); });
+    }
+    modal.querySelector('.feedback-modal__close').addEventListener('click', closeModal);
+    modal.querySelector('.feedback-modal__overlay').addEventListener('click', closeModal);
+    modal.querySelector('.feedback-modal__channels').addEventListener('click', function (event) {
+      var button = event.target.closest('button[data-channel]');
+      if (!button) return;
+      modal.querySelectorAll('.feedback-modal__channels button').forEach(function (item) {
+        item.setAttribute('aria-pressed', String(item === button));
+      });
+      channelValue.value = button.dataset.channel;
+      var label = button.dataset.channel === 'Звонок' ? 'Номер телефона' : 'Номер телефона в ' + button.dataset.channel;
+      phone.placeholder = label;
+      phone.previousElementSibling.textContent = label;
+    });
+    form.addEventListener('submit', function (event) {
+      event.preventDefault();
+      if (!form.reportValidity()) return;
+      status.textContent = 'Спасибо! Мы свяжемся с вами.';
+    });
+    document.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape' && !modal.hidden) closeModal();
+    });
+    document.querySelectorAll('.ambassadors-hero__button--primary, .owner-sale-stages__offer-btn, .ambassadors-requests__button, .catalog-contact__card-submit, .site-footer__callback-btn, .floating-expert__card').forEach(function (button) {
+      button.addEventListener('click', function (event) {
+        event.preventDefault();
+        event.stopImmediatePropagation();
+        openModal(button);
+      }, true);
+    });
+  }
+
+  enhancePartnerModal();
+
   function enhanceHowItWorks() {
     var section = page.querySelector('#how-it-works');
     var aside = section && section.querySelector('.owner-sale-stages__aside');
@@ -228,7 +303,6 @@
       ['.owner-sale-stages__title', 'МЕХАНИКА ПАРТНЁРСТВА'],
       ['.ambassadors-requests__title', 'НАПРАВЛЕНИЯ BARNES'],
       ['.ambassadors-advantages__title', 'ПАРТНЁРСТВО С BARNES'],
-      ['.catalog-contact__title', 'СВЯЗЬ С BARNES'],
       ['.catalog-faq__title', 'ПАРТНЁРСКАЯ ПРОГРАММА'],
       ['.newsletter-cta h2', 'BARNES / АНАЛИТИКА']
     ].forEach(function (item) {

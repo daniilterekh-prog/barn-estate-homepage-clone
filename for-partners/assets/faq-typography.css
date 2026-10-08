@@ -1,0 +1,68 @@
+/* FAQ typography aligned with the approved BARNES UI kit. */
+.partners-owner-shell .catalog-faq__title {
+  font-family: "Tilda Sans", system-ui, sans-serif;
+  font-size: 38px;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.partners-owner-shell .catalog-faq__question {
+  gap: 24px;
+  padding-block: 24px;
+}
+
+.partners-owner-shell .catalog-faq__question-text {
+  font-family: "Tilda Sans", system-ui, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.partners-owner-shell .catalog-faq__answer-content {
+  font-family: "Tilda Sans", system-ui, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.4;
+}
+
+.partners-owner-shell .catalog-faq__item--open .catalog-faq__answer-content {
+  padding-bottom: 24px;
+}
+
+.partners-owner-shell .catalog-faq__icon {
+  font-size: 30px;
+}
+
+@media (min-width: 1441px) {
+  .partners-owner-shell .catalog-faq__title {
+    font-size: 44px;
+  }
+
+  .partners-owner-shell .catalog-faq__question-text {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .partners-owner-shell .catalog-faq__title {
+    font-size: 22px;
+    line-height: 1.2;
+  }
+
+  .partners-owner-shell .catalog-faq__question {
+    gap: 16px;
+    padding-block: 20px;
+  }
+
+  .partners-owner-shell .catalog-faq__question-text {
+    font-size: 18px;
+  }
+
+  .partners-owner-shell .catalog-faq__item--open .catalog-faq__answer-content {
+    padding-bottom: 20px;
+  }
+
+  .partners-owner-shell .catalog-faq__icon {
+    font-size: 24px;
+  }
+}
