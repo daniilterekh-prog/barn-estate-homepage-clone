@@ -67,6 +67,21 @@ html body .catalog-intro__lead[class] {
   line-height: 1.5;
 }
 
+/* FAQ body typography follows the shared text roles at every breakpoint. */
+html body .catalog-faq__question-text[class] {
+  color: var(--kit-text);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+html body .catalog-faq__answer-content[class] {
+  color: var(--kit-text-secondary);
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.4;
+}
+
 html body :is(.catalog-intro__eyebrow, .news-section__eyebrow)[class] {
   color: var(--kit-text-secondary);
   font-size: var(--kit-eyebrow-size);
