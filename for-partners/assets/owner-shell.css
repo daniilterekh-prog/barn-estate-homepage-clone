@@ -35,6 +35,7 @@
 .partners-owner-shell :is(.site-footer__column-title--link,.site-footer__phone,.site-footer__email,.site-footer__privacy):is(:hover,:focus-visible,:active){color:#e7c88f!important}
 .partners-owner-shell .site-footer__callback-btn{border-radius:1px;font-size:17px;font-weight:400;line-height:18.7px}
 .partners-owner-shell .site-header__icon-btn{min-height:44px;min-width:44px}
+.partners-owner-shell :is(.ambassadors-hero__button,.owner-sale-stages__offer-btn,.ambassadors-requests__tab,.ambassadors-requests__button,.owner-sale-sticky__request,.catalog-contact__submit,.catalog-contact__card-submit,.newsletter-form button,.site-footer__callback-btn){border-radius:1px}
 .partners-owner-shell .owner-sale-sticky{background:#fff;box-shadow:0 1px 0 rgb(30 30 30 / 10%);left:0;opacity:0;pointer-events:none;position:fixed;right:0;top:0;transform:translateY(-100%);transition:opacity 200ms ease,transform 240ms ease;z-index:900}
 .partners-owner-shell .owner-sale-sticky--visible{opacity:1;pointer-events:auto;transform:translateY(0)}
 .partners-owner-shell .owner-sale-sticky__inner{align-items:center;display:grid;gap:32px;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);min-height:106px;padding-block:30px;position:relative}
