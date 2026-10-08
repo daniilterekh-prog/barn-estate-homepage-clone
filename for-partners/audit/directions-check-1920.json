@@ -3,24 +3,24 @@
   "measurements": [
     {
       "image": {
-        "top": 3721.5,
-        "bottom": 4341.5,
+        "top": 353.6875,
+        "bottom": 1003.6875,
         "left": 99.984375,
         "right": 804.21875,
-        "height": 620,
+        "height": 650,
         "width": 704.234375
       },
       "copy": {
-        "top": 3721.5,
-        "bottom": 4341.5,
+        "top": 353.6875,
+        "bottom": 1003.6875,
         "left": 852.21875,
         "right": 1805.015625,
-        "height": 620,
+        "height": 650,
         "width": 952.796875
       },
       "button": {
-        "top": 4271.5,
-        "bottom": 4341.5,
+        "top": 933.6875,
+        "bottom": 1003.6875,
         "left": 852.21875,
         "right": 1805.015625,
         "height": 70,
@@ -31,29 +31,99 @@
       "overflow": false,
       "details": 0,
       "font": "\"Tilda Sans\", system-ui, sans-serif",
+      "typography": {
+        "h2": {
+          "size": 44,
+          "line": 52.8,
+          "weight": "300"
+        },
+        ".bd-eyebrow": {
+          "size": 14,
+          "line": 16.1,
+          "weight": "400"
+        },
+        ".bd-heading h3": {
+          "size": 24,
+          "line": 28.8,
+          "weight": "400"
+        },
+        ".bd-intro": {
+          "size": 22,
+          "line": 28.16,
+          "weight": "300"
+        },
+        ".bd-label": {
+          "size": 17,
+          "line": 23.8,
+          "weight": "400"
+        },
+        ".bd-price-label": {
+          "size": 16,
+          "line": 22.4,
+          "weight": "400"
+        },
+        ".bd-price": {
+          "size": 38,
+          "line": 45.6,
+          "weight": "300"
+        },
+        ".bd-price small": {
+          "size": 20,
+          "line": 28,
+          "weight": "400"
+        },
+        ".bd-num": {
+          "size": 38,
+          "line": 45.6,
+          "weight": "300"
+        },
+        ".bd-facttext": null,
+        ".bd-commission strong": {
+          "size": 48,
+          "line": 52.8,
+          "weight": "400"
+        },
+        ".bd-commission-note": null,
+        ".bd-image-caption": null,
+        ".bd-navbtn": {
+          "size": 20,
+          "line": 28,
+          "weight": "400"
+        },
+        ".bd-mobile-picker": {
+          "size": 18,
+          "line": 25.2,
+          "weight": "400"
+        },
+        ".bd-cta": {
+          "size": 19,
+          "line": 20.9,
+          "weight": "400"
+        }
+      },
       "buttonFont": "19px",
       "source": "assets/directions/city.webp"
     },
     {
       "image": {
-        "top": 3721.5,
-        "bottom": 4341.5,
+        "top": 353.6875,
+        "bottom": 1003.6875,
         "left": 99.984375,
         "right": 804.21875,
-        "height": 620,
+        "height": 650,
         "width": 704.234375
       },
       "copy": {
-        "top": 3721.5,
-        "bottom": 4341.5,
+        "top": 353.6875,
+        "bottom": 1003.6875,
         "left": 852.21875,
         "right": 1805.015625,
-        "height": 620,
+        "height": 650,
         "width": 952.796875
       },
       "button": {
-        "top": 4271.5,
-        "bottom": 4341.5,
+        "top": 933.6875,
+        "bottom": 1003.6875,
         "left": 852.21875,
         "right": 1805.015625,
         "height": 70,
@@ -64,29 +134,103 @@
       "overflow": false,
       "details": 0,
       "font": "\"Tilda Sans\", system-ui, sans-serif",
+      "typography": {
+        "h2": {
+          "size": 44,
+          "line": 52.8,
+          "weight": "300"
+        },
+        ".bd-eyebrow": {
+          "size": 14,
+          "line": 16.1,
+          "weight": "400"
+        },
+        ".bd-heading h3": {
+          "size": 24,
+          "line": 28.8,
+          "weight": "400"
+        },
+        ".bd-intro": {
+          "size": 22,
+          "line": 28.16,
+          "weight": "300"
+        },
+        ".bd-label": {
+          "size": 17,
+          "line": 23.8,
+          "weight": "400"
+        },
+        ".bd-price-label": {
+          "size": 16,
+          "line": 22.4,
+          "weight": "400"
+        },
+        ".bd-price": {
+          "size": 38,
+          "line": 45.6,
+          "weight": "300"
+        },
+        ".bd-price small": {
+          "size": 20,
+          "line": 28,
+          "weight": "400"
+        },
+        ".bd-num": {
+          "size": 38,
+          "line": 45.6,
+          "weight": "300"
+        },
+        ".bd-facttext": null,
+        ".bd-commission strong": {
+          "size": 48,
+          "line": 52.8,
+          "weight": "400"
+        },
+        ".bd-commission-note": null,
+        ".bd-image-caption": {
+          "size": 13,
+          "line": 18,
+          "weight": "400"
+        },
+        ".bd-navbtn": {
+          "size": 20,
+          "line": 28,
+          "weight": "400"
+        },
+        ".bd-mobile-picker": {
+          "size": 18,
+          "line": 25.2,
+          "weight": "400"
+        },
+        ".bd-cta": {
+          "size": 19,
+          "line": 20.9,
+          "weight": "400"
+        }
+      },
       "buttonFont": "19px",
       "source": "assets/directions/generated-country.webp"
     },
     {
       "image": {
-        "top": 3721.5,
-        "bottom": 4341.5,
+        "top": 353.6875,
+        "bottom": 1003.6875,
         "left": 99.984375,
         "right": 804.21875,
-        "height": 620,
+        "height": 650,
         "width": 704.234375
       },
       "copy": {
-        "top": 3721.5,
-        "bottom": 4341.5,
+        "top": 353.6875,
+        "bottom": 1003.6875,
         "left": 852.21875,
         "right": 1805.015625,
-        "height": 620,
+        "height": 650,
         "width": 952.796875
       },
       "button": {
-        "top": 4271.5,
-        "bottom": 4341.5,
+        "top": 933.6875,
+        "bottom": 1003.6875,
         "left": 852.21875,
         "right": 1805.015625,
         "height": 70,
@@ -97,29 +241,103 @@
       "overflow": false,
       "details": 0,
       "font": "\"Tilda Sans\", system-ui, sans-serif",
+      "typography": {
+        "h2": {
+          "size": 44,
+          "line": 52.8,
+          "weight": "300"
+        },
+        ".bd-eyebrow": {
+          "size": 14,
+          "line": 16.1,
+          "weight": "400"
+        },
+        ".bd-heading h3": {
+          "size": 24,
+          "line": 28.8,
+          "weight": "400"
+        },
+        ".bd-intro": {
+          "size": 22,
+          "line": 28.16,
+          "weight": "300"
+        },
+        ".bd-label": {
+          "size": 17,
+          "line": 23.8,
+          "weight": "400"
+        },
+        ".bd-price-label": {
+          "size": 16,
+          "line": 22.4,
+          "weight": "400"
+        },
+        ".bd-price": {
+          "size": 38,
+          "line": 45.6,
+          "weight": "300"
+        },
+        ".bd-price small": {
+          "size": 20,
+          "line": 28,
+          "weight": "400"
+        },
+        ".bd-num": {
+          "size": 38,
+          "line": 45.6,
+          "weight": "300"
+        },
+        ".bd-facttext": null,
+        ".bd-commission strong": {
+          "size": 48,
+          "line": 52.8,
+          "weight": "400"
+        },
+        ".bd-commission-note": null,
+        ".bd-image-caption": {
+          "size": 13,
+          "line": 18,
+          "weight": "400"
+        },
+        ".bd-navbtn": {
+          "size": 20,
+          "line": 28,
+          "weight": "400"
+        },
+        ".bd-mobile-picker": {
+          "size": 18,
+          "line": 25.2,
+          "weight": "400"
+        },
+        ".bd-cta": {
+          "size": 19,
+          "line": 20.9,
+          "weight": "400"
+        }
+      },
       "buttonFont": "19px",
       "source": "assets/directions/generated-rent-city.webp"
     },
     {
       "image": {
-        "top": 3721.5,
-        "bottom": 4341.5,
+        "top": 353.6875,
+        "bottom": 1003.6875,
         "left": 99.984375,
         "right": 804.21875,
-        "height": 620,
+        "height": 650,
         "width": 704.234375
       },
       "copy": {
-        "top": 3721.5,
-        "bottom": 4341.5,
+        "top": 353.6875,
+        "bottom": 1003.6875,
         "left": 852.21875,
         "right": 1805.015625,
-        "height": 620,
+        "height": 650,
         "width": 952.796875
       },
       "button": {
-        "top": 4271.5,
-        "bottom": 4341.5,
+        "top": 933.6875,
+        "bottom": 1003.6875,
         "left": 852.21875,
         "right": 1805.015625,
         "height": 70,
@@ -130,29 +348,103 @@
       "overflow": false,
       "details": 0,
       "font": "\"Tilda Sans\", system-ui, sans-serif",
+      "typography": {
+        "h2": {
+          "size": 44,
+          "line": 52.8,
+          "weight": "300"
+        },
+        ".bd-eyebrow": {
+          "size": 14,
+          "line": 16.1,
+          "weight": "400"
+        },
+        ".bd-heading h3": {
+          "size": 24,
+          "line": 28.8,
+          "weight": "400"
+        },
+        ".bd-intro": {
+          "size": 22,
+          "line": 28.16,
+          "weight": "300"
+        },
+        ".bd-label": {
+          "size": 17,
+          "line": 23.8,
+          "weight": "400"
+        },
+        ".bd-price-label": {
+          "size": 16,
+          "line": 22.4,
+          "weight": "400"
+        },
+        ".bd-price": {
+          "size": 38,
+          "line": 45.6,
+          "weight": "300"
+        },
+        ".bd-price small": {
+          "size": 20,
+          "line": 28,
+          "weight": "400"
+        },
+        ".bd-num": {
+          "size": 38,
+          "line": 45.6,
+          "weight": "300"
+        },
+        ".bd-facttext": null,
+        ".bd-commission strong": {
+          "size": 48,
+          "line": 52.8,
+          "weight": "400"
+        },
+        ".bd-commission-note": null,
+        ".bd-image-caption": {
+          "size": 13,
+          "line": 18,
+          "weight": "400"
+        },
+        ".bd-navbtn": {
+          "size": 20,
+          "line": 28,
+          "weight": "400"
+        },
+        ".bd-mobile-picker": {
+          "size": 18,
+          "line": 25.2,
+          "weight": "400"
+        },
+        ".bd-cta": {
+          "size": 19,
+          "line": 20.9,
+          "weight": "400"
+        }
+      },
       "buttonFont": "19px",
       "source": "assets/directions/generated-rent-country.webp"
     },
     {
       "image": {
-        "top": 3721.5,
-        "bottom": 4341.5,
+        "top": 353.6875,
+        "bottom": 1003.6875,
         "left": 99.984375,
         "right": 804.21875,
-        "height": 620,
+        "height": 650,
         "width": 704.234375
       },
       "copy": {
-        "top": 3721.5,
-        "bottom": 4341.5,
+        "top": 353.6875,
+        "bottom": 1003.6875,
         "left": 852.21875,
         "right": 1805.015625,
-        "height": 620,
+        "height": 650,
         "width": 952.796875
       },
       "button": {
-        "top": 4271.5,
-        "bottom": 4341.5,
+        "top": 933.6875,
+        "bottom": 1003.6875,
         "left": 852.21875,
         "right": 1805.015625,
         "height": 70,
@@ -163,29 +455,103 @@
       "overflow": false,
       "details": 0,
       "font": "\"Tilda Sans\", system-ui, sans-serif",
+      "typography": {
+        "h2": {
+          "size": 44,
+          "line": 52.8,
+          "weight": "300"
+        },
+        ".bd-eyebrow": {
+          "size": 14,
+          "line": 16.1,
+          "weight": "400"
+        },
+        ".bd-heading h3": {
+          "size": 24,
+          "line": 28.8,
+          "weight": "400"
+        },
+        ".bd-intro": {
+          "size": 22,
+          "line": 28.16,
+          "weight": "300"
+        },
+        ".bd-label": {
+          "size": 17,
+          "line": 23.8,
+          "weight": "400"
+        },
+        ".bd-price-label": {
+          "size": 16,
+          "line": 22.4,
+          "weight": "400"
+        },
+        ".bd-price": {
+          "size": 38,
+          "line": 45.6,
+          "weight": "300"
+        },
+        ".bd-price small": {
+          "size": 20,
+          "line": 28,
+          "weight": "400"
+        },
+        ".bd-num": null,
+        ".bd-facttext": {
+          "size": 17,
+          "line": 23.8,
+          "weight": "400"
+        },
+        ".bd-commission strong": {
+          "size": 48,
+          "line": 52.8,
+          "weight": "400"
+        },
+        ".bd-commission-note": null,
+        ".bd-image-caption": {
+          "size": 13,
+          "line": 18,
+          "weight": "400"
+        },
+        ".bd-navbtn": {
+          "size": 20,
+          "line": 28,
+          "weight": "400"
+        },
+        ".bd-mobile-picker": {
+          "size": 18,
+          "line": 25.2,
+          "weight": "400"
+        },
+        ".bd-cta": {
+          "size": 19,
+          "line": 20.9,
+          "weight": "400"
+        }
+      },
       "buttonFont": "19px",
       "source": "assets/directions/generated-abroad.webp"
     },
     {
       "image": {
-        "top": 3721.5,
-        "bottom": 4341.5,
+        "top": 353.6875,
+        "bottom": 1003.6875,
         "left": 99.984375,
         "right": 804.21875,
-        "height": 620,
+        "height": 650,
         "width": 704.234375
       },
       "copy": {
-        "top": 3721.5,
-        "bottom": 4341.5,
+        "top": 353.6875,
+        "bottom": 1003.6875,
         "left": 852.21875,
         "right": 1805.015625,
-        "height": 620,
+        "height": 650,
         "width": 952.796875
       },
       "button": {
-        "top": 4271.5,
-        "bottom": 4341.5,
+        "top": 933.6875,
+        "bottom": 1003.6875,
         "left": 852.21875,
         "right": 1805.015625,
         "height": 70,
@@ -196,29 +562,103 @@
       "overflow": false,
       "details": 0,
       "font": "\"Tilda Sans\", system-ui, sans-serif",
+      "typography": {
+        "h2": {
+          "size": 44,
+          "line": 52.8,
+          "weight": "300"
+        },
+        ".bd-eyebrow": {
+          "size": 14,
+          "line": 16.1,
+          "weight": "400"
+        },
+        ".bd-heading h3": {
+          "size": 24,
+          "line": 28.8,
+          "weight": "400"
+        },
+        ".bd-intro": {
+          "size": 22,
+          "line": 28.16,
+          "weight": "300"
+        },
+        ".bd-label": {
+          "size": 17,
+          "line": 23.8,
+          "weight": "400"
+        },
+        ".bd-price-label": {
+          "size": 16,
+          "line": 22.4,
+          "weight": "400"
+        },
+        ".bd-price": {
+          "size": 22,
+          "line": 30.8,
+          "weight": "400"
+        },
+        ".bd-price small": null,
+        ".bd-num": null,
+        ".bd-facttext": {
+          "size": 17,
+          "line": 23.8,
+          "weight": "400"
+        },
+        ".bd-commission strong": {
+          "size": 22,
+          "line": 30.8,
+          "weight": "400"
+        },
+        ".bd-commission-note": {
+          "size": 16,
+          "line": 22.4,
+          "weight": "400"
+        },
+        ".bd-image-caption": {
+          "size": 13,
+          "line": 18,
+          "weight": "400"
+        },
+        ".bd-navbtn": {
+          "size": 20,
+          "line": 28,
+          "weight": "400"
+        },
+        ".bd-mobile-picker": {
+          "size": 18,
+          "line": 25.2,
+          "weight": "400"
+        },
+        ".bd-cta": {
+          "size": 19,
+          "line": 20.9,
+          "weight": "400"
+        }
+      },
       "buttonFont": "19px",
       "source": "assets/directions/generated-residency.webp"
     },
     {
       "image": {
-        "top": 3721.5,
-        "bottom": 4341.5,
+        "top": 353.6875,
+        "bottom": 1003.6875,
         "left": 99.984375,
         "right": 804.21875,
-        "height": 620,
+        "height": 650,
         "width": 704.234375
       },
       "copy": {
-        "top": 3721.5,
-        "bottom": 4341.5,
+        "top": 353.6875,
+        "bottom": 1003.6875,
         "left": 852.21875,
         "right": 1805.015625,
-        "height": 620,
+        "height": 650,
         "width": 952.796875
       },
       "button": {
-        "top": 4271.5,
-        "bottom": 4341.5,
+        "top": 933.6875,
+        "bottom": 1003.6875,
         "left": 852.21875,
         "right": 1805.015625,
         "height": 70,
@@ -229,9 +669,84 @@
       "overflow": false,
       "details": 0,
       "font": "\"Tilda Sans\", system-ui, sans-serif",
+      "typography": {
+        "h2": {
+          "size": 44,
+          "line": 52.8,
+          "weight": "300"
+        },
+        ".bd-eyebrow": {
+          "size": 14,
+          "line": 16.1,
+          "weight": "400"
+        },
+        ".bd-heading h3": {
+          "size": 24,
+          "line": 28.8,
+          "weight": "400"
+        },
+        ".bd-intro": {
+          "size": 22,
+          "line": 28.16,
+          "weight": "300"
+        },
+        ".bd-label": {
+          "size": 17,
+          "line": 23.8,
+          "weight": "400"
+        },
+        ".bd-price-label": {
+          "size": 16,
+          "line": 22.4,
+          "weight": "400"
+        },
+        ".bd-price": {
+          "size": 38,
+          "line": 45.6,
+          "weight": "300"
+        },
+        ".bd-price small": null,
+        ".bd-num": null,
+        ".bd-facttext": {
+          "size": 17,
+          "line": 23.8,
+          "weight": "400"
+        },
+        ".bd-commission strong": {
+          "size": 22,
+          "line": 30.8,
+          "weight": "400"
+        },
+        ".bd-commission-note": {
+          "size": 16,
+          "line": 22.4,
+          "weight": "400"
+        },
+        ".bd-image-caption": {
+          "size": 13,
+          "line": 18,
+          "weight": "400"
+        },
+        ".bd-navbtn": {
+          "size": 20,
+          "line": 28,
+          "weight": "400"
+        },
+        ".bd-mobile-picker": {
+          "size": 18,
+          "line": 25.2,
+          "weight": "400"
+        },
+        ".bd-cta": {
+          "size": 19,
+          "line": 20.9,
+          "weight": "400"
+        }
+      },
       "buttonFont": "19px",
       "source": "assets/directions/generated-commercial.webp"
     }
   ],
-  "errors": []
+  "errors": [],
+  "mode": "focused-component"
 }
