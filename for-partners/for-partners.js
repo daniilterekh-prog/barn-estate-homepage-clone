@@ -14,6 +14,11 @@
   requestsStylesheet.href = 'assets/requests-typography.css';
   document.head.appendChild(requestsStylesheet);
 
+  var conditionsStylesheet = document.createElement('link');
+  conditionsStylesheet.rel = 'stylesheet';
+  conditionsStylesheet.href = 'assets/conditions-heading.css';
+  document.head.appendChild(conditionsStylesheet);
+
   function enhanceHowItWorks() {
     var section = page.querySelector('#how-it-works');
     var aside = section && section.querySelector('.owner-sale-stages__aside');
@@ -46,8 +51,29 @@
 
   enhanceHowItWorks();
 
+  function enhanceConditionsHeading() {
+    var section = page.querySelector('#conditions');
+    var inner = section && section.querySelector('.ambassadors-conditions__inner');
+    var grid = inner && inner.querySelector('.ambassadors-conditions__grid');
+    if (!section || !inner || !grid || inner.querySelector('.ambassadors-conditions__header')) return;
+
+    var header = document.createElement('header');
+    var title = document.createElement('h2');
+    header.className = 'ambassadors-conditions__header';
+    title.className = 'ambassadors-conditions__section-title';
+    title.id = 'partners-conditions-title';
+    title.textContent = 'УСЛОВИЯ СОТРУДНИЧЕСТВА';
+    header.appendChild(title);
+    inner.insertBefore(header, grid);
+    section.setAttribute('aria-labelledby', title.id);
+    section.removeAttribute('aria-label');
+  }
+
+  enhanceConditionsHeading();
+
   function enhanceSectionEyebrows() {
     [
+      ['.ambassadors-conditions__section-title', 'ПАРТНЁРСКАЯ ПРОГРАММА'],
       ['.owner-sale-stages__title', 'МЕХАНИКА ПАРТНЁРСТВА'],
       ['.ambassadors-requests__title', 'НАПРАВЛЕНИЯ BARNES'],
       ['.ambassadors-advantages__title', 'ПАРТНЁРСТВО С BARNES'],

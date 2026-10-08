@@ -1,0 +1,46 @@
+#conditions .ambassadors-conditions__header {
+  margin-bottom: 48px;
+}
+
+#conditions .ambassadors-conditions__section-title {
+  color: #1e1e1e;
+  font-size: 38px;
+  font-weight: 300;
+  line-height: 45.6px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+@media (min-width: 1441px) {
+  #conditions .ambassadors-conditions__section-title {
+    font-size: 44px;
+    line-height: 52.8px;
+  }
+}
+
+@media (max-width: 1024px) {
+  #conditions .ambassadors-conditions__header {
+    margin-bottom: 32px;
+  }
+
+  #conditions .partners-section-eyebrow {
+    font-size: 12px;
+    line-height: 14.4px;
+  }
+
+  #conditions .ambassadors-conditions__section-title {
+    font-size: 22px;
+    line-height: 26.4px;
+  }
+}
+
+@media (max-width: 540px) {
+  #conditions .ambassadors-conditions__header {
+    margin-bottom: 28px;
+    text-align: center;
+  }
+
+  #conditions .partners-section-eyebrow {
+    text-align: center;
+  }
+}
