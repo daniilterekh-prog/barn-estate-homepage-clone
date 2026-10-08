@@ -55,9 +55,10 @@
 
 /* Filter layout: "lower lines" design from the approved mobile reference. */
 .catalog-mode-toolbar {
-  --catalog-filter-ink: #444341;
-  --catalog-filter-muted: #777674;
-  --catalog-filter-line: #ccc;
+  --catalog-filter-ink: #1e1e1e;
+  --catalog-filter-secondary: #4f4d49;
+  --catalog-filter-muted: #656462;
+  --catalog-filter-line: #e4e4e4;
   --catalog-filter-wine: #8b1d25;
   align-items: center;
   box-sizing: border-box;
@@ -87,6 +88,7 @@
   font: inherit;
   font-size: 16px;
   font-weight: 400;
+  line-height: 1.4;
   min-height: 40px;
   padding: 0 0 13px;
   position: relative;
@@ -138,7 +140,7 @@ html body .catalog-mode-toolbar .catalog-mode-filters .catalog-quick-filters__it
   height: 58px;
   justify-content: space-between;
   min-height: 58px;
-  padding: 0 0 12px;
+  padding: 0 0 8px;
   width: 100%;
 }
 
@@ -148,7 +150,7 @@ html body .catalog-mode-toolbar .catalog-mode-filters .catalog-quick-filters__la
   display: flex;
   flex-direction: column;
   font-size: inherit;
-  gap: 6px;
+  gap: 4px;
   line-height: inherit;
   min-width: 0;
   overflow: hidden;
@@ -158,17 +160,17 @@ html body .catalog-mode-toolbar .catalog-mode-filters .catalog-quick-filters__la
 .catalog-mode-toolbar .catalog-quick-filters__caption {
   color: var(--catalog-filter-muted);
   display: block;
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 400;
-  line-height: 1;
+  line-height: 18px;
 }
 
 .catalog-mode-toolbar .catalog-quick-filters__label-text {
-  color: var(--catalog-filter-ink);
+  color: var(--catalog-filter-secondary);
   display: block;
   font-size: 16px;
   font-weight: 400;
-  line-height: 1.2;
+  line-height: 22.4px;
   min-width: 0;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -198,8 +200,9 @@ html body .catalog-mode-toolbar .catalog-grid__sort[class] {
 
 .catalog-mode-toolbar .catalog-mode-sort__label {
   color: var(--catalog-filter-muted);
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 400;
+  line-height: 18px;
   white-space: nowrap;
 }
 
@@ -208,6 +211,8 @@ html body .catalog-mode-toolbar .catalog-grid__sort[class] {
   border-radius: 0;
   color: var(--catalog-filter-ink);
   font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
   height: 40px;
   min-height: 40px;
   min-width: 0;
@@ -249,6 +254,7 @@ html body .catalog-mode-toolbar .catalog-grid__sort[class] {
 .catalog-mode-detailed-filters__label {
   font-size: 14px;
   font-weight: 400;
+  line-height: 16.8px;
   white-space: nowrap;
 }
 
@@ -290,7 +296,7 @@ html body .catalog-mode-toolbar .catalog-grid__sort[class] {
   }
 
   .catalog-mode-switch__button {
-    font-size: 15px;
+    font-size: 16px;
     min-height: 40px;
     padding: 0 0 12px;
   }
