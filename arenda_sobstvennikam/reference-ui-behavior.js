@@ -81,7 +81,8 @@
     if (!button || button.dataset.requestPopupBound === 'true') return;
 
     button.dataset.requestPopupBound = 'true';
-    button.addEventListener('click', function () {
+    button.addEventListener('click', function (event) {
+      event.preventDefault();
       var heroRequest = document.querySelector('.owner-sale-hero__button');
       if (heroRequest) heroRequest.click();
     });
@@ -441,6 +442,7 @@
       exclusiveCta.innerHTML = 'Связаться с брокером <span aria-hidden="true"><svg viewBox="0 0 16 16" focusable="false"><path d="M3 13 13 3M5 3h8v8" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25"></path></svg></span>';
 
       exclusiveHeader.append(intro, exclusiveCta);
+      bindRequestPopup(exclusiveCta);
     }
 
     section.querySelectorAll('.owner-sale-exclusive__item').forEach(function (item, index) {

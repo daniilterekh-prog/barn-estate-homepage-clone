@@ -1,3 +1,8 @@
+/* Match the image-link grid's 2px gutters at every breakpoint. */
+.owner-rent-reference-ui .owner-sale-presentation .owner-sale-presentation__grid {
+  gap: 2px;
+}
+
 /*
  * BARNES Reference UI — page-local transfer for the owner-rent route.
  * Keep this layer scoped to this page so the homepage and future routes stay independent.
