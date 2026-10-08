@@ -21,7 +21,7 @@
 
   var ownerShellStylesheet = document.createElement('link');
   ownerShellStylesheet.rel = 'stylesheet';
-  ownerShellStylesheet.href = 'assets/owner-shell.css?v=20261008-1';
+  ownerShellStylesheet.href = 'assets/owner-shell.css?v=20261008-3';
   document.head.appendChild(ownerShellStylesheet);
 
   document.body.classList.add('partners-owner-shell');
@@ -112,8 +112,62 @@
     });
   }
 
+  function enhanceOwnerStickyHeader() {
+    if (page.querySelector('.owner-sale-sticky')) return;
+    var sections = [
+      ['Условия', 'conditions'],
+      ['Как это работает', 'how-it-works'],
+      ['Запросы', 'requests'],
+      ['Преимущества', 'advantages']
+    ].filter(function (item) { return document.getElementById(item[1]); });
+    var sticky = document.createElement('div');
+    sticky.className = 'owner-sale-sticky';
+    sticky.setAttribute('aria-hidden', 'true');
+    sticky.setAttribute('inert', '');
+    sticky.innerHTML = '<div class="owner-sale-sticky__inner base-container"><nav class="owner-sale-sticky__nav" aria-label="Навигация по странице"><ul class="owner-sale-sticky__list">' + sections.map(function (item) {
+      return '<li class="owner-sale-sticky__item"><a class="owner-sale-sticky__link" href="#' + item[1] + '">' + item[0] + '</a></li>';
+    }).join('') + '<li class="owner-sale-sticky__item owner-sale-sticky__item--contacts"><button class="owner-sale-sticky__contact-toggle" type="button" aria-expanded="false" aria-controls="partners-sticky-contacts" aria-label="Показать способы связи"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.5 9.8 9.8 0 0 1-4-.9L3 21l1.7-4.6A8.4 8.4 0 1 1 21 11.5Z"></path><path d="M8 12h.01M12 12h.01M16 12h.01"></path></svg></button></li></ul></nav><a class="owner-sale-sticky__logo" aria-label="BARNES Moscow — на главную" href="https://barn-estate.ru/"><img src="assets/logo.svg" alt="BARNES Moscow" width="220" height="30"></a><div class="owner-sale-sticky__brand"><button class="owner-sale-sticky__request" type="button">Направить клиента</button><nav class="owner-sale-sticky__messengers" aria-label="Способы связи"><a class="owner-sale-sticky__messenger" href="https://wa.me/79252621650" target="_blank" rel="noopener noreferrer" aria-label="Написать в WhatsApp"><img src="../pictures/office-contact/whatsapp.svg" alt=""></a><a class="owner-sale-sticky__messenger" href="https://max.ru/join/AWj8ibiCtAPOJOlulMGNkykKGz_prXVWg-IQK1KpUG8" target="_blank" rel="noopener noreferrer" aria-label="Написать в MAX"><img src="../pictures/office-contact/max.svg" alt=""></a><a class="owner-sale-sticky__messenger" href="https://t.me/art_de_vivre_barnes" target="_blank" rel="noopener noreferrer" aria-label="Написать в Telegram"><img src="../pictures/office-contact/telegram.svg" alt=""></a><a class="owner-sale-sticky__phone" href="tel:74951825079" aria-label="Позвонить по номеру +7 495 182-50-79"><span class="owner-sale-sticky__phone-number">+7 (495) 182-50-79</span><span class="owner-sale-sticky__phone-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg></span></a></nav></div></div>';
+    var panel = sticky.querySelector('.owner-sale-sticky__messengers').cloneNode(true);
+    panel.id = 'partners-sticky-contacts';
+    panel.className = 'owner-sale-sticky__contact-panel';
+    panel.hidden = true;
+    sticky.querySelector('.owner-sale-sticky__inner').appendChild(panel);
+    page.insertBefore(sticky, page.firstChild);
+
+    sticky.querySelector('.owner-sale-sticky__request').addEventListener('click', function () {
+      var primary = page.querySelector('.ambassadors-hero__button--primary');
+      if (primary) primary.click();
+    });
+    var toggle = sticky.querySelector('.owner-sale-sticky__contact-toggle');
+    toggle.addEventListener('click', function () {
+      var open = panel.hidden;
+      panel.hidden = !open;
+      toggle.setAttribute('aria-expanded', String(open));
+      toggle.setAttribute('aria-label', open ? 'Скрыть способы связи' : 'Показать способы связи');
+    });
+
+    function syncStickyHeader() {
+      var hero = page.querySelector('.ambassadors-hero');
+      var visible = hero ? window.scrollY > hero.offsetTop + hero.offsetHeight - 120 : window.scrollY > window.innerHeight * .72;
+      sticky.classList.toggle('owner-sale-sticky--visible', visible);
+      sticky.setAttribute('aria-hidden', String(!visible));
+      sticky.toggleAttribute('inert', !visible);
+      var active = sections[0] && sections[0][1];
+      sections.forEach(function (item) {
+        var section = document.getElementById(item[1]);
+        if (section && window.scrollY + 140 >= section.offsetTop) active = item[1];
+      });
+      sticky.querySelectorAll('.owner-sale-sticky__link').forEach(function (link) {
+        link.classList.toggle('owner-sale-sticky__link--active', link.getAttribute('href') === '#' + active);
+      });
+    }
+    window.addEventListener('scroll', syncStickyHeader, { passive: true });
+    syncStickyHeader();
+  }
+
   enhanceOwnerHeader();
   enhanceOwnerFooter();
+  enhanceOwnerStickyHeader();
 
   function enhanceHowItWorks() {
     var section = page.querySelector('#how-it-works');
@@ -142,6 +196,7 @@
       offerButton.classList.add('owner-sale-stages__cta');
       aside.appendChild(offerButton);
     }
+
     if (offer) offer.remove();
   }
 
