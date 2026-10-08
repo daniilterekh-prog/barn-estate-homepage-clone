@@ -57,3 +57,40 @@
  #barnes-directions .bd-metrics{column-gap:24px}
 }
 @container(max-width:520px){#barnes-directions .bd-eyebrow{font-size:10px;margin-bottom:15px!important}}
+
+/* Shared UI-kit roles; fixed feature slots preserve the approved composition. */
+#barnes-directions .bd-window { --bd-gray: #656462; --bd-line: #E4E4E4; }
+#barnes-directions .bd-window .bd-eyebrow { font-size:14px; font-weight:400; line-height:16.1px; letter-spacing:.12em; margin-bottom:25px!important; color:#1e1e1e; }
+#barnes-directions .bd-window .bd-section h2 { font-size:38px; line-height:45.6px; font-weight:300; letter-spacing:0; }
+#barnes-directions .bd-window .bd-navbtn { font-size:17px; line-height:23.8px; font-weight:400; }
+#barnes-directions .bd-window .bd-copy>h3 { font-size:22px; line-height:30.8px; font-weight:400; letter-spacing:0; }
+#barnes-directions .bd-window .bd-intro { font-size:16px; line-height:22.4px; font-weight:300; }
+#barnes-directions .bd-window :is(.bd-label,.bd-price-label) { font-size:13px; line-height:18px; font-weight:400; }
+#barnes-directions .bd-window .bd-price { display:flex; align-items:center; gap:6px; font-size:38px; line-height:41.8px; font-weight:300; }
+#barnes-directions .bd-window .bd-price small { font-size:20px; line-height:22px; font-weight:400; }
+#barnes-directions .bd-window .bd-words { font-size:22px; line-height:30.8px; font-weight:400; }
+#barnes-directions .bd-window .bd-num { font-size:38px; line-height:41.8px; font-weight:300; }
+#barnes-directions .bd-window .bd-facttext { font-size:16px; line-height:22.4px; font-weight:400; }
+#barnes-directions .bd-window .bd-cta { height:70px; min-height:70px; padding:0 36px; font-size:17px; line-height:18.7px; font-weight:400; margin-top:2px; }
+#barnes-directions .bd-details { margin-top:40px; border-top:1px solid var(--bd-line); padding-top:24px; }
+#barnes-directions .bd-details h4 { font-size:20px; line-height:28px; font-weight:400; margin:0 0 24px; }
+#barnes-directions .bd-details dl { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); grid-template-rows:110px 110px; gap:24px 48px; margin:0; }
+#barnes-directions .bd-details dt { font-size:20px; line-height:28px; font-weight:400; margin-bottom:8px; }
+#barnes-directions .bd-details dd { font-size:16px; line-height:22.4px; font-weight:300; color:var(--bd-gray); margin:0; }
+@media(min-width:1441px) {
+  #barnes-directions .bd-window .bd-section h2 { font-size:44px; line-height:52.8px; }
+  #barnes-directions .bd-window .bd-cta { font-size:19px; line-height:20.9px; padding-inline:47px; }
+}
+@media(max-width:1024px) {
+  #barnes-directions .bd-window .bd-eyebrow { font-size:12px; line-height:14.4px; margin-bottom:12px!important; }
+  #barnes-directions .bd-window .bd-section h2 { font-size:22px; line-height:26.4px; }
+  #barnes-directions .bd-window .bd-copy>h3 { font-size:20px; line-height:28px; }
+}
+@container(max-width:680px) {
+  #barnes-directions .bd-details dl { grid-template-columns:1fr; grid-template-rows:repeat(4,104px); gap:20px; }
+  #barnes-directions .bd-details dt { font-size:18px; line-height:25.2px; }
+  #barnes-directions .bd-window .bd-mobile-picker { font-size:18px; line-height:19.8px; font-weight:400; }
+}
+@media(max-width:540px) {
+  #barnes-directions .bd-window .bd-cta { height:58px; min-height:58px; font-size:18px; line-height:19.8px; padding-inline:24px; margin-top:14px; }
+}
