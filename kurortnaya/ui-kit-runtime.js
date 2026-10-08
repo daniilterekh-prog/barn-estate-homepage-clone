@@ -15,6 +15,14 @@
     document.head.appendChild(listingStylesheet);
   }
 
+  if (!document.querySelector('link[data-kurortnaya-start-sales]')) {
+    var startSalesStylesheet = document.createElement('link');
+    startSalesStylesheet.rel = 'stylesheet';
+    startSalesStylesheet.href = 'start-sales-cards.css?v=20261009-cinematic-1';
+    startSalesStylesheet.dataset.kurortnayaStartSales = 'true';
+    document.head.appendChild(startSalesStylesheet);
+  }
+
   document.querySelectorAll('input[placeholder]:not([aria-label]), textarea[placeholder]:not([aria-label])')
     .forEach(function (control) {
       control.setAttribute('aria-label', control.getAttribute('placeholder'));
@@ -25,5 +33,12 @@
     listingScript.src = 'listing-mode.js?v=20261009-filter-icons-14';
     listingScript.dataset.kurortnayaListingMode = 'true';
     document.body.appendChild(listingScript);
+  }
+
+  if (!document.querySelector('script[data-kurortnaya-start-sales]')) {
+    var startSalesScript = document.createElement('script');
+    startSalesScript.src = 'start-sales-cards.js?v=20261009-cinematic-1';
+    startSalesScript.dataset.kurortnayaStartSales = 'true';
+    document.body.appendChild(startSalesScript);
   }
 }());
