@@ -1,0 +1,78 @@
+:root {
+  color: #1e1e1e;
+  font-family: "Tilda Sans", system-ui, sans-serif;
+}
+
+body {
+  background: #f4f3f0;
+  margin: 0;
+}
+
+.card-lab {
+  margin-inline: auto;
+  max-width: 1440px;
+  min-height: 100vh;
+  padding: 48px clamp(16px, 4vw, 68px) 72px;
+}
+
+.card-lab__header {
+  margin-bottom: 40px;
+  max-width: 760px;
+}
+
+.card-lab__eyebrow {
+  color: #656462;
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  line-height: 1.2;
+  margin: 0 0 12px;
+}
+
+.card-lab__title {
+  font-size: clamp(28px, 4vw, 44px);
+  font-weight: 300;
+  line-height: 1;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.card-lab__note {
+  color: #4f4d49;
+  font-size: 14px;
+  line-height: 1.4;
+  margin: 16px 0 0;
+}
+
+.card-lab__stage {
+  align-items: start;
+  background: #fff;
+  display: grid;
+  min-height: 720px;
+  padding: clamp(16px, 4vw, 56px);
+  place-items: start center;
+}
+
+.card-lab__stage .apartment-card {
+  height: auto;
+  max-width: 414px;
+  width: 100%;
+}
+
+.card-lab__stage .apartment-card__favorite[aria-pressed="true"] svg {
+  fill: currentColor;
+}
+
+@media (max-width: 540px) {
+  .card-lab {
+    padding-block: 28px 40px;
+  }
+
+  .card-lab__header {
+    margin-bottom: 24px;
+  }
+
+  .card-lab__stage {
+    min-height: 0;
+    padding: 0;
+  }
+}
