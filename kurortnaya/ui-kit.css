@@ -140,11 +140,11 @@ html body .site-footer__callback-btn[class] {
 
 /* Filter controls: the UI kit defines these separately from rectangular CTAs. */
 html body .catalog-hero-filters__bar[class] {
-  border-radius: 14px;
+  border-radius: 1px;
 }
 
 html body .catalog-hero-filters__search[class] {
-  border-radius: 14px 0 0 14px;
+  border-radius: 1px 0 0 1px;
   padding-inline: 24px;
 }
 
@@ -175,7 +175,7 @@ html body .catalog-quick-filters__button[class] {
   align-items: center;
   background: #fff;
   border: 1px solid var(--kit-border);
-  border-radius: 14px;
+  border-radius: 1px;
   display: grid;
   grid-template-columns: minmax(0, 1fr) 12px;
   grid-template-rows: auto auto;
@@ -228,7 +228,7 @@ html body .catalog-quick-filters__chevron[class] {
 html body .catalog-grid__sort-select[class] {
   background-color: #fff;
   border: 1px solid var(--kit-border);
-  border-radius: 14px;
+  border-radius: 1px;
   color: var(--kit-text);
   font-family: var(--kit-font);
   font-size: 16px;
@@ -294,7 +294,7 @@ html body .catalog-grid__sort-select[class] {
   }
 
   html body .catalog-hero-filters__search[class] {
-    border-radius: 14px;
+    border-radius: 1px;
     padding-inline: 18px;
   }
 
