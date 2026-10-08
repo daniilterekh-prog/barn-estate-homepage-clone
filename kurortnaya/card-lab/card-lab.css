@@ -141,7 +141,23 @@ body {
 }
 
 .card-lab__bedrooms {
+  display: grid;
+  gap: 4px;
   text-align: center;
+}
+
+.card-lab__bedrooms-label {
+  color: #1e1e1e;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.card-lab__bedrooms-value {
+  color: #656462;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.2;
 }
 
 @media (max-width: 540px) {
