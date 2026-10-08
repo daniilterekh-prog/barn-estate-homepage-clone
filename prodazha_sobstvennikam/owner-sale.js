@@ -15,7 +15,9 @@
 
   const lowerContact = page.querySelector('.catalog-contact');
   if (lowerContact) {
+    const contactTitle = lowerContact.querySelector('.catalog-contact__title');
     const cardTitle = lowerContact.querySelector('.catalog-contact__card-title');
+    if (contactTitle) contactTitle.textContent = 'Получите персональную консультацию';
     if (cardTitle) cardTitle.textContent = 'Получите предварительную оценку объекта';
 
     lowerContact.querySelectorAll('.catalog-contact__expert-photo img, .catalog-contact__mobile-photo img').forEach(function (image) {
