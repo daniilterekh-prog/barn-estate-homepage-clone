@@ -3,29 +3,36 @@
   "measurements": [
     {
       "image": {
-        "top": 2917.484375,
-        "bottom": 3207.484375,
+        "top": 229.21875,
+        "bottom": 519.21875,
         "left": 15.203125,
         "right": 289.796875,
         "height": 290,
         "width": 274.59375
       },
       "copy": {
-        "top": 3239.484375,
-        "bottom": 3893.484375,
+        "top": 551.21875,
+        "bottom": 1205.21875,
         "left": 15.203125,
         "right": 289.796875,
         "height": 654,
         "width": 274.59375
       },
       "button": {
-        "top": 3835.484375,
-        "bottom": 3893.484375,
+        "top": 1147.21875,
+        "bottom": 1205.21875,
         "left": 15.203125,
         "right": 289.796875,
         "height": 58,
         "width": 274.59375
       },
+      "rows": [
+        112,
+        84,
+        176,
+        128,
+        58
+      ],
       "overlaps": false,
       "internalOverflow": false,
       "overflow": false,
@@ -53,13 +60,13 @@
           "weight": "300"
         },
         ".bd-label": {
-          "size": 16,
-          "line": 22.4,
+          "size": 18,
+          "line": 25.2,
           "weight": "400"
         },
         ".bd-price-label": {
-          "size": 16,
-          "line": 22.4,
+          "size": 18,
+          "line": 25.2,
           "weight": "400"
         },
         ".bd-price": {
@@ -86,13 +93,13 @@
         ".bd-commission-note": null,
         ".bd-image-caption": null,
         ".bd-navbtn": {
-          "size": 18,
-          "line": 25.2,
+          "size": 17,
+          "line": 23.8,
           "weight": "400"
         },
         ".bd-mobile-picker": {
           "size": 18,
-          "line": 25.2,
+          "line": 24,
           "weight": "400"
         },
         ".bd-cta": {
@@ -106,29 +113,36 @@
     },
     {
       "image": {
-        "top": 2917.484375,
-        "bottom": 3207.484375,
+        "top": 229.21875,
+        "bottom": 519.21875,
         "left": 15.203125,
         "right": 289.796875,
         "height": 290,
         "width": 274.59375
       },
       "copy": {
-        "top": 3239.484375,
-        "bottom": 3893.484375,
+        "top": 551.21875,
+        "bottom": 1205.21875,
         "left": 15.203125,
         "right": 289.796875,
         "height": 654,
         "width": 274.59375
       },
       "button": {
-        "top": 3835.484375,
-        "bottom": 3893.484375,
+        "top": 1147.21875,
+        "bottom": 1205.21875,
         "left": 15.203125,
         "right": 289.796875,
         "height": 58,
         "width": 274.59375
       },
+      "rows": [
+        112,
+        84,
+        176,
+        128,
+        58
+      ],
       "overlaps": false,
       "internalOverflow": false,
       "overflow": false,
@@ -156,13 +170,13 @@
           "weight": "300"
         },
         ".bd-label": {
-          "size": 16,
-          "line": 22.4,
+          "size": 18,
+          "line": 25.2,
           "weight": "400"
         },
         ".bd-price-label": {
-          "size": 16,
-          "line": 22.4,
+          "size": 18,
+          "line": 25.2,
           "weight": "400"
         },
         ".bd-price": {
@@ -193,13 +207,13 @@
           "weight": "400"
         },
         ".bd-navbtn": {
-          "size": 18,
-          "line": 25.2,
+          "size": 17,
+          "line": 23.8,
           "weight": "400"
         },
         ".bd-mobile-picker": {
           "size": 18,
-          "line": 25.2,
+          "line": 24,
           "weight": "400"
         },
         ".bd-cta": {
@@ -213,29 +227,36 @@
     },
     {
       "image": {
-        "top": 2917.484375,
-        "bottom": 3207.484375,
+        "top": 229.21875,
+        "bottom": 519.21875,
         "left": 15.203125,
         "right": 289.796875,
         "height": 290,
         "width": 274.59375
       },
       "copy": {
-        "top": 3239.484375,
-        "bottom": 3893.484375,
+        "top": 551.21875,
+        "bottom": 1205.21875,
         "left": 15.203125,
         "right": 289.796875,
         "height": 654,
         "width": 274.59375
       },
       "button": {
-        "top": 3835.484375,
-        "bottom": 3893.484375,
+        "top": 1147.21875,
+        "bottom": 1205.21875,
         "left": 15.203125,
         "right": 289.796875,
         "height": 58,
         "width": 274.59375
       },
+      "rows": [
+        112,
+        84,
+        176,
+        128,
+        58
+      ],
       "overlaps": false,
       "internalOverflow": false,
       "overflow": false,
@@ -263,13 +284,13 @@
           "weight": "300"
         },
         ".bd-label": {
-          "size": 16,
-          "line": 22.4,
+          "size": 18,
+          "line": 25.2,
           "weight": "400"
         },
         ".bd-price-label": {
-          "size": 16,
-          "line": 22.4,
+          "size": 18,
+          "line": 25.2,
           "weight": "400"
         },
         ".bd-price": {
@@ -300,13 +321,13 @@
           "weight": "400"
         },
         ".bd-navbtn": {
-          "size": 18,
-          "line": 25.2,
+          "size": 17,
+          "line": 23.8,
           "weight": "400"
         },
         ".bd-mobile-picker": {
           "size": 18,
-          "line": 25.2,
+          "line": 24,
           "weight": "400"
         },
         ".bd-cta": {
@@ -320,29 +341,36 @@
     },
     {
       "image": {
-        "top": 2917.484375,
-        "bottom": 3207.484375,
+        "top": 229.21875,
+        "bottom": 519.21875,
         "left": 15.203125,
         "right": 289.796875,
         "height": 290,
         "width": 274.59375
       },
       "copy": {
-        "top": 3239.484375,
-        "bottom": 3893.484375,
+        "top": 551.21875,
+        "bottom": 1205.21875,
         "left": 15.203125,
         "right": 289.796875,
         "height": 654,
         "width": 274.59375
       },
       "button": {
-        "top": 3835.484375,
-        "bottom": 3893.484375,
+        "top": 1147.21875,
+        "bottom": 1205.21875,
         "left": 15.203125,
         "right": 289.796875,
         "height": 58,
         "width": 274.59375
       },
+      "rows": [
+        112,
+        84,
+        176,
+        128,
+        58
+      ],
       "overlaps": false,
       "internalOverflow": false,
       "overflow": false,
@@ -370,13 +398,13 @@
           "weight": "300"
         },
         ".bd-label": {
-          "size": 16,
-          "line": 22.4,
+          "size": 18,
+          "line": 25.2,
           "weight": "400"
         },
         ".bd-price-label": {
-          "size": 16,
-          "line": 22.4,
+          "size": 18,
+          "line": 25.2,
           "weight": "400"
         },
         ".bd-price": {
@@ -407,13 +435,13 @@
           "weight": "400"
         },
         ".bd-navbtn": {
-          "size": 18,
-          "line": 25.2,
+          "size": 17,
+          "line": 23.8,
           "weight": "400"
         },
         ".bd-mobile-picker": {
           "size": 18,
-          "line": 25.2,
+          "line": 24,
           "weight": "400"
         },
         ".bd-cta": {
@@ -427,29 +455,36 @@
     },
     {
       "image": {
-        "top": 2917.484375,
-        "bottom": 3207.484375,
+        "top": 229.21875,
+        "bottom": 519.21875,
         "left": 15.203125,
         "right": 289.796875,
         "height": 290,
         "width": 274.59375
       },
       "copy": {
-        "top": 3239.484375,
-        "bottom": 3893.484375,
+        "top": 551.21875,
+        "bottom": 1205.21875,
         "left": 15.203125,
         "right": 289.796875,
         "height": 654,
         "width": 274.59375
       },
       "button": {
-        "top": 3835.484375,
-        "bottom": 3893.484375,
+        "top": 1147.21875,
+        "bottom": 1205.21875,
         "left": 15.203125,
         "right": 289.796875,
         "height": 58,
         "width": 274.59375
       },
+      "rows": [
+        112,
+        84,
+        176,
+        128,
+        58
+      ],
       "overlaps": false,
       "internalOverflow": false,
       "overflow": false,
@@ -477,13 +512,13 @@
           "weight": "300"
         },
         ".bd-label": {
-          "size": 16,
-          "line": 22.4,
+          "size": 18,
+          "line": 25.2,
           "weight": "400"
         },
         ".bd-price-label": {
-          "size": 16,
-          "line": 22.4,
+          "size": 18,
+          "line": 25.2,
           "weight": "400"
         },
         ".bd-price": {
@@ -498,8 +533,8 @@
         },
         ".bd-num": null,
         ".bd-facttext": {
-          "size": 16,
-          "line": 22.4,
+          "size": 18,
+          "line": 25.2,
           "weight": "400"
         },
         ".bd-commission strong": {
@@ -514,13 +549,13 @@
           "weight": "400"
         },
         ".bd-navbtn": {
-          "size": 18,
-          "line": 25.2,
+          "size": 17,
+          "line": 23.8,
           "weight": "400"
         },
         ".bd-mobile-picker": {
           "size": 18,
-          "line": 25.2,
+          "line": 24,
           "weight": "400"
         },
         ".bd-cta": {
@@ -534,29 +569,36 @@
     },
     {
       "image": {
-        "top": 2917.484375,
-        "bottom": 3207.484375,
+        "top": 229.21875,
+        "bottom": 519.21875,
         "left": 15.203125,
         "right": 289.796875,
         "height": 290,
         "width": 274.59375
       },
       "copy": {
-        "top": 3239.484375,
-        "bottom": 3893.484375,
+        "top": 551.21875,
+        "bottom": 1205.21875,
         "left": 15.203125,
         "right": 289.796875,
         "height": 654,
         "width": 274.59375
       },
       "button": {
-        "top": 3835.484375,
-        "bottom": 3893.484375,
+        "top": 1147.21875,
+        "bottom": 1205.21875,
         "left": 15.203125,
         "right": 289.796875,
         "height": 58,
         "width": 274.59375
       },
+      "rows": [
+        112,
+        84,
+        176,
+        128,
+        58
+      ],
       "overlaps": false,
       "internalOverflow": false,
       "overflow": false,
@@ -584,13 +626,13 @@
           "weight": "300"
         },
         ".bd-label": {
-          "size": 16,
-          "line": 22.4,
+          "size": 18,
+          "line": 25.2,
           "weight": "400"
         },
         ".bd-price-label": {
-          "size": 16,
-          "line": 22.4,
+          "size": 18,
+          "line": 25.2,
           "weight": "400"
         },
         ".bd-price": {
@@ -601,8 +643,8 @@
         ".bd-price small": null,
         ".bd-num": null,
         ".bd-facttext": {
-          "size": 16,
-          "line": 22.4,
+          "size": 18,
+          "line": 25.2,
           "weight": "400"
         },
         ".bd-commission strong": {
@@ -611,8 +653,8 @@
           "weight": "400"
         },
         ".bd-commission-note": {
-          "size": 16,
-          "line": 22.4,
+          "size": 18,
+          "line": 25.2,
           "weight": "400"
         },
         ".bd-image-caption": {
@@ -621,13 +663,13 @@
           "weight": "400"
         },
         ".bd-navbtn": {
-          "size": 18,
-          "line": 25.2,
+          "size": 17,
+          "line": 23.8,
           "weight": "400"
         },
         ".bd-mobile-picker": {
           "size": 18,
-          "line": 25.2,
+          "line": 24,
           "weight": "400"
         },
         ".bd-cta": {
@@ -641,29 +683,36 @@
     },
     {
       "image": {
-        "top": 2917.484375,
-        "bottom": 3207.484375,
+        "top": 229.21875,
+        "bottom": 519.21875,
         "left": 15.203125,
         "right": 289.796875,
         "height": 290,
         "width": 274.59375
       },
       "copy": {
-        "top": 3239.484375,
-        "bottom": 3893.484375,
+        "top": 551.21875,
+        "bottom": 1205.21875,
         "left": 15.203125,
         "right": 289.796875,
         "height": 654,
         "width": 274.59375
       },
       "button": {
-        "top": 3835.484375,
-        "bottom": 3893.484375,
+        "top": 1147.21875,
+        "bottom": 1205.21875,
         "left": 15.203125,
         "right": 289.796875,
         "height": 58,
         "width": 274.59375
       },
+      "rows": [
+        112,
+        84,
+        176,
+        128,
+        58
+      ],
       "overlaps": false,
       "internalOverflow": false,
       "overflow": false,
@@ -691,13 +740,13 @@
           "weight": "300"
         },
         ".bd-label": {
-          "size": 16,
-          "line": 22.4,
+          "size": 18,
+          "line": 25.2,
           "weight": "400"
         },
         ".bd-price-label": {
-          "size": 16,
-          "line": 22.4,
+          "size": 18,
+          "line": 25.2,
           "weight": "400"
         },
         ".bd-price": {
@@ -708,8 +757,8 @@
         ".bd-price small": null,
         ".bd-num": null,
         ".bd-facttext": {
-          "size": 16,
-          "line": 22.4,
+          "size": 18,
+          "line": 25.2,
           "weight": "400"
         },
         ".bd-commission strong": {
@@ -718,8 +767,8 @@
           "weight": "400"
         },
         ".bd-commission-note": {
-          "size": 16,
-          "line": 22.4,
+          "size": 18,
+          "line": 25.2,
           "weight": "400"
         },
         ".bd-image-caption": {
@@ -728,13 +777,13 @@
           "weight": "400"
         },
         ".bd-navbtn": {
-          "size": 18,
-          "line": 25.2,
+          "size": 17,
+          "line": 23.8,
           "weight": "400"
         },
         ".bd-mobile-picker": {
           "size": 18,
-          "line": 25.2,
+          "line": 24,
           "weight": "400"
         },
         ".bd-cta": {
@@ -747,5 +796,6 @@
       "source": "assets/directions/generated-commercial.webp"
     }
   ],
-  "errors": []
+  "errors": [],
+  "mode": "focused-component"
 }

@@ -38,7 +38,7 @@ const path=require('path');
    const actual=await page.evaluate(()=>{
     const copy=document.querySelector('.bd-copy'), children=[...copy.children];
     const rect=e=>{const r=e.getBoundingClientRect();return {top:r.top,bottom:r.bottom,left:r.left,right:r.right,height:r.height,width:r.width}};
-    return {image:rect(document.querySelector('.bd-imagewrap')),copy:rect(copy),button:rect(document.querySelector('.bd-cta')),
+    return {image:rect(document.querySelector('.bd-imagewrap')),copy:rect(copy),button:rect(document.querySelector('.bd-cta')),rows:children.map(e=>rect(e).height),
      overlaps:children.slice(0,-1).some((e,i)=>rect(e).bottom>rect(children[i+1]).top),
      internalOverflow:children.some(e=>e.scrollHeight>e.clientHeight+1),
      overflow:document.documentElement.scrollWidth>innerWidth,
@@ -58,8 +58,8 @@ const path=require('path');
    assert.equal(t['.bd-heading h3'].weight,'400');
    assert.equal(t['.bd-intro'].size,width<=1024?16:22);
    assert.equal(t['.bd-intro'].weight,'300');
-   assert.equal(t['.bd-label'].size,width<=1024?16:17);
-   assert.equal(t['.bd-price-label'].size,16);
+   assert.equal(t['.bd-label'].size,width<=1024?18:20);
+   assert.equal(t['.bd-price-label'].size,width<=1024?18:20);
    assert.equal(t['.bd-cta'].size,width<=540?18:width>=1441?19:17);
    assert.equal(t['.bd-cta'].weight,'400');
    const expectRole=(selector,size,line,weight)=>{
@@ -72,17 +72,17 @@ const path=require('path');
    expectRole('.bd-eyebrow',width<=1024?12:14,width<=1024?14.4:16.1,'400');
    expectRole('.bd-heading h3',width<=1024?20:24,width<=1024?24:28.8,'400');
    expectRole('.bd-intro',width<=1024?16:22,width<=1024?22.4:28.16,'300');
-   expectRole('.bd-label',width<=1024?16:17,width<=1024?22.4:23.8,'400');
-   expectRole('.bd-price-label',16,22.4,'400');
+   expectRole('.bd-label',width<=1024?18:20,width<=1024?25.2:28,'400');
+   expectRole('.bd-price-label',width<=1024?18:20,width<=1024?25.2:28,'400');
    expectRole('.bd-price',i===5?22:38,i===5?30.8:45.6,i===5?'400':'300');
    expectRole('.bd-price small',20,28,'400');
    expectRole('.bd-num',width<=540?32:38,width<=540?38.4:45.6,'300');
-   expectRole('.bd-facttext',width<=1024?16:17,width<=1024?22.4:23.8,'400');
+   expectRole('.bd-facttext',width<=1024?18:20,width<=1024?25.2:28,'400');
    expectRole('.bd-commission strong',i>=5?22:48,i>=5?30.8:52.8,'400');
-   expectRole('.bd-commission-note',16,22.4,'400');
+   expectRole('.bd-commission-note',width<=1024?18:20,width<=1024?25.2:28,'400');
    expectRole('.bd-image-caption',13,18);
-   expectRole('.bd-navbtn',width<=1024?18:20,width<=1024?25.2:28,'400');
-   expectRole('.bd-mobile-picker',18,25.2,'400');
+   expectRole('.bd-navbtn',17,23.8,'400');
+   expectRole('.bd-mobile-picker',18,24,'400');
    expectRole('.bd-cta',width<=540?18:width>=1441?19:17,width<=540?19.8:width>=1441?20.9:18.7,'400');
    assert.equal(actual.button.height,width<=540?58:70);
    if(width>900) assert.ok(actual.image.width<actual.copy.width);
@@ -94,7 +94,7 @@ const path=require('path');
    }
   }
   const first=measurements[0];
-  for(const m of measurements){assert.ok(Math.abs(m.image.height-first.image.height)<1);assert.ok(Math.abs(m.button.top-first.button.top)<1);}
+  for(const m of measurements){assert.ok(Math.abs(m.image.height-first.image.height)<1);assert.ok(Math.abs(m.button.top-first.button.top)<1,JSON.stringify(measurements.map(v=>({rows:v.rows,top:v.button.top}))));}
   const directionInForm=process.env.FOCUSED==='1' ? 'focused-component-only' : await page.evaluate(()=>{
     document.querySelector('.bd-cta').click();
     return document.querySelector('input[name="directionId"]')?.value;
