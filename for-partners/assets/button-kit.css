@@ -18,6 +18,21 @@
   padding: 0 36px;
 }
 
+.partners-owner-shell .ambassadors-hero__button-icon {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  font-size: 26px;
+  height: 26px;
+  justify-content: center;
+  width: 26px;
+}
+
+.partners-owner-shell .ambassadors-hero__button-icon svg {
+  height: 100%;
+  width: 100%;
+}
+
 .partners-owner-shell :is(
   .ambassadors-hero__button,
   .owner-sale-stages__offer-btn,
@@ -60,6 +75,12 @@
     line-height: 20.9px;
     padding-inline: 47px;
   }
+
+  .partners-owner-shell .ambassadors-hero__button-icon {
+    font-size: 28px;
+    height: 28px;
+    width: 28px;
+  }
 }
 
 @media (max-width: 540px) {
@@ -77,5 +98,11 @@
     line-height: 19.8px;
     min-height: 58px;
     padding-inline: 24px;
+  }
+
+  .partners-owner-shell .ambassadors-hero__button-icon {
+    font-size: 24px;
+    height: 24px;
+    width: 24px;
   }
 }

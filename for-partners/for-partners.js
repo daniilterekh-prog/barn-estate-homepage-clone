@@ -36,7 +36,7 @@
 
   var buttonStylesheet = document.createElement('link');
   buttonStylesheet.rel = 'stylesheet';
-  buttonStylesheet.href = 'assets/button-kit.css?v=20261008-1';
+  buttonStylesheet.href = 'assets/button-kit.css?v=20261008-2';
   document.head.appendChild(buttonStylesheet);
 
   document.body.classList.add('partners-owner-shell');
