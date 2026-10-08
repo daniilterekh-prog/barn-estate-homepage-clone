@@ -86,6 +86,35 @@
   const magazineSection = page.querySelector(':scope > .owner-sale-magazine');
   if (magazineSection) magazineSection.remove();
 
+  const matchCityContactCta = function () {
+    const section = page.querySelector('.catalog-contact');
+    if (!section) return;
+
+    const background = section.querySelector('.catalog-contact__image');
+    if (background) {
+      background.src = '../assets/city-real-estate/source-assets/30-886f63e629-contacts-background.webp';
+    }
+
+    section.querySelectorAll('.catalog-contact__mobile-photo img, .catalog-contact__expert-photo img').forEach(function (image) {
+      image.src = '../assets/city-real-estate/source-assets/17-23350d2829-cta-ruslan-pruss.webp';
+      image.alt = 'Руслан Прус';
+    });
+
+    section.querySelectorAll('.catalog-contact__mobile-role, .catalog-contact__expert-role').forEach(function (role) {
+      role.textContent = 'Руководитель департамента городской недвижимости';
+    });
+    section.querySelectorAll('.catalog-contact__mobile-name, .catalog-contact__expert-name').forEach(function (name) {
+      name.textContent = 'Руслан Прус';
+    });
+
+    const title = section.querySelector('.catalog-contact__title');
+    const subtitle = section.querySelector('.catalog-contact__subtitle');
+    if (title) title.textContent = 'Эксперты BARNES подскажут';
+    if (subtitle) subtitle.remove();
+  };
+
+  matchCityContactCta();
+
   const enhanceSectionEyebrows = function () {
     [
       ['.owner-sale-stages__title', 'ПРОЦЕСС ПРОДАЖИ'],
