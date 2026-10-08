@@ -90,8 +90,8 @@
   margin-top: 24px;
   padding-top: 20px;
   border-top: 1px solid var(--be-line);
-  font-size: 14px;
-  line-height: 1.4;
+  font-size: 18px;
+  line-height: 1.5;
 }
 #why-barnes .be-panorama-footer { margin-top: 28px; }
 #why-barnes .be-argument-heading { min-width: 0; }
@@ -141,8 +141,8 @@
   #why-barnes .be-tab-panel .be-evidence {
     margin-top: 20px;
     padding-top: 16px;
-    font-size: 13px;
-    line-height: 18px;
+    font-size: 15px;
+    line-height: 21px;
   }
   #why-barnes .be-panorama-footer { margin-top: 24px; }
   #why-barnes .be-panorama-footer .be-cta { margin-top: 0; }
