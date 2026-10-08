@@ -8,6 +8,17 @@
   var exclusiveScrollFrame;
   var exclusiveScrollReady = false;
 
+  function repairProjectAssetPaths() {
+    document.querySelectorAll('[src^="/arenda_sobstvennikam/"], [srcset^="/arenda_sobstvennikam/"]').forEach(function (element) {
+      ['src', 'srcset'].forEach(function (attribute) {
+        var value = element.getAttribute(attribute);
+        if (value && value.indexOf('/arenda_sobstvennikam/') === 0) {
+          element.setAttribute(attribute, '/barn-estate-homepage-clone' + value);
+        }
+      });
+    });
+  }
+
   function enhanceServicesSection() {
     var section = document.querySelector('.owner-sale-services');
     var headerWrap = section && section.querySelector('.owner-sale-services__header-wrap');
@@ -761,6 +772,7 @@
   function scheduleServicesEnhancement() {
     window.clearTimeout(enhancementTimer);
     enhancementTimer = window.setTimeout(function () {
+      repairProjectAssetPaths();
       reorderBrandSections();
       replaceConsultationSection();
       reorderConsultationAndTypes();
