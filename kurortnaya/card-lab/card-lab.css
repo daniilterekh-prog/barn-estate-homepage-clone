@@ -140,6 +140,10 @@ body {
   white-space: nowrap;
 }
 
+.card-lab__bedrooms {
+  text-align: center;
+}
+
 @media (max-width: 540px) {
   .card-lab {
     padding-block: 28px 40px;
