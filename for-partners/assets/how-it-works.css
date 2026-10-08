@@ -88,7 +88,8 @@
 }
 
 #how-it-works .owner-sale-stages__intro {
-  color: var(--partners-stages-muted);
+  color: #656462;
+  font-family: "Tilda Sans", system-ui, sans-serif;
   font-size: 19px;
   font-weight: 300;
   line-height: 1.35;
@@ -152,10 +153,11 @@
 }
 
 #how-it-works .owner-sale-stages__item-text {
-  color: var(--partners-stages-muted);
-  font-size: 18px;
+  color: #656462;
+  font-family: "Tilda Sans", system-ui, sans-serif;
+  font-size: 22px;
   font-weight: 300;
-  line-height: 1.38;
+  line-height: 1.35;
   margin: 13px 0 0;
   max-width: 680px;
 }
@@ -265,7 +267,7 @@
   }
 
   #how-it-works .owner-sale-stages__intro {
-    font-size: 16px;
+    font-size: 15px;
     line-height: 1.35;
     margin-top: 12px;
   }
