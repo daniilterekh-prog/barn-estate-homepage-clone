@@ -1428,7 +1428,7 @@ body.owner-sale-reference-ui .owner-sale-hero .breadcrumbs__link {
 
 .owner-sale-reference-ui .owner-sale-stages__body {
   align-items: start;
-  column-gap: clamp(52px, 6vw, 116px);
+  column-gap: clamp(28px, 3vw, 56px);
   display: grid;
   grid-template-columns: minmax(0, .86fr) minmax(0, 1.14fr);
 }
