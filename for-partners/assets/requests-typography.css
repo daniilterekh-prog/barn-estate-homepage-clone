@@ -1,4 +1,8 @@
 /* Typography alignment for the requests section. */
+#requests .partners-section-eyebrow {
+  text-align: center;
+}
+
 #requests .ambassadors-requests__title {
   font-size: 38px;
   font-weight: 300;
