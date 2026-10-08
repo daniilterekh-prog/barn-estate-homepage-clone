@@ -1541,9 +1541,9 @@ body.owner-sale-reference-ui .owner-sale-hero .breadcrumbs__link {
 
 .owner-sale-reference-ui .owner-sale-stages__item-text {
   color: var(--owner-sale-muted);
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 300;
-  line-height: 1.38;
+  line-height: 1.35;
   margin: 13px 0 0;
   max-width: 680px;
 }
