@@ -485,12 +485,12 @@
     section.innerHTML = `
       <div class="catalog-consultation__inner">
         <div class="catalog-consultation__media">
-          <img class="catalog-consultation__image" src="/barn-estate-homepage-clone/assets/city-real-estate/source-assets/16-7d2ca45d4d-contacts-man.webp" alt="" width="1920" height="800">
+          <img class="catalog-consultation__image" src="/barn-estate-homepage-clone/gorodskaya-nedvizhimost/assets/source-assets/16-7d2ca45d4d-contacts-man.webp" alt="" width="1920" height="800">
           <div class="catalog-consultation__overlay" aria-hidden="true"></div>
           <div class="catalog-consultation__grid">
             <div class="catalog-consultation__content">
               <div class="catalog-consultation__mobile-expert">
-                <div class="catalog-consultation__mobile-photo"><img src="/barn-estate-homepage-clone/assets/city-real-estate/source-assets/17-23350d2829-cta-ruslan-pruss.webp" alt="Руслан Прус" width="68" height="68"></div>
+                <div class="catalog-consultation__mobile-photo"><img src="/barn-estate-homepage-clone/gorodskaya-nedvizhimost/assets/source-assets/17-23350d2829-cta-ruslan-pruss.webp" alt="Руслан Прус" width="68" height="68"></div>
                 <div><p class="catalog-consultation__mobile-role">Руководитель департамента городской недвижимости</p><p class="catalog-consultation__mobile-name">Руслан Прус</p></div>
               </div>
               <div class="catalog-consultation__mobile-header"><h2 class="catalog-consultation__mobile-title">Эксперты BARNES подскажут</h2><p class="catalog-consultation__mobile-lead">Поможем подготовить объект, найти надёжного арендатора и сдать недвижимость на выгодных условиях</p></div>
