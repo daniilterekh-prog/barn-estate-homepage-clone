@@ -1,0 +1,237 @@
+{
+  "width": 1024,
+  "measurements": [
+    {
+      "image": {
+        "top": 3224.65625,
+        "bottom": 3844.65625,
+        "left": 40.875,
+        "right": 421.34375,
+        "height": 620,
+        "width": 380.46875
+      },
+      "copy": {
+        "top": 3224.65625,
+        "bottom": 3844.65625,
+        "left": 453.34375,
+        "right": 968.125,
+        "height": 620,
+        "width": 514.78125
+      },
+      "button": {
+        "top": 3774.65625,
+        "bottom": 3844.65625,
+        "left": 453.34375,
+        "right": 968.125,
+        "height": 70,
+        "width": 514.78125
+      },
+      "overlaps": false,
+      "internalOverflow": false,
+      "overflow": false,
+      "details": 0,
+      "font": "\"Tilda Sans\", system-ui, sans-serif",
+      "buttonFont": "17px",
+      "source": "assets/directions/city.webp"
+    },
+    {
+      "image": {
+        "top": 3224.65625,
+        "bottom": 3844.65625,
+        "left": 40.875,
+        "right": 421.34375,
+        "height": 620,
+        "width": 380.46875
+      },
+      "copy": {
+        "top": 3224.65625,
+        "bottom": 3844.65625,
+        "left": 453.34375,
+        "right": 968.125,
+        "height": 620,
+        "width": 514.78125
+      },
+      "button": {
+        "top": 3774.65625,
+        "bottom": 3844.65625,
+        "left": 453.34375,
+        "right": 968.125,
+        "height": 70,
+        "width": 514.78125
+      },
+      "overlaps": false,
+      "internalOverflow": false,
+      "overflow": false,
+      "details": 0,
+      "font": "\"Tilda Sans\", system-ui, sans-serif",
+      "buttonFont": "17px",
+      "source": "assets/directions/generated-country.webp"
+    },
+    {
+      "image": {
+        "top": 3224.65625,
+        "bottom": 3844.65625,
+        "left": 40.875,
+        "right": 421.34375,
+        "height": 620,
+        "width": 380.46875
+      },
+      "copy": {
+        "top": 3224.65625,
+        "bottom": 3844.65625,
+        "left": 453.34375,
+        "right": 968.125,
+        "height": 620,
+        "width": 514.78125
+      },
+      "button": {
+        "top": 3774.65625,
+        "bottom": 3844.65625,
+        "left": 453.34375,
+        "right": 968.125,
+        "height": 70,
+        "width": 514.78125
+      },
+      "overlaps": false,
+      "internalOverflow": false,
+      "overflow": false,
+      "details": 0,
+      "font": "\"Tilda Sans\", system-ui, sans-serif",
+      "buttonFont": "17px",
+      "source": "assets/directions/generated-rent-city.webp"
+    },
+    {
+      "image": {
+        "top": 3224.65625,
+        "bottom": 3844.65625,
+        "left": 40.875,
+        "right": 421.34375,
+        "height": 620,
+        "width": 380.46875
+      },
+      "copy": {
+        "top": 3224.65625,
+        "bottom": 3844.65625,
+        "left": 453.34375,
+        "right": 968.125,
+        "height": 620,
+        "width": 514.78125
+      },
+      "button": {
+        "top": 3774.65625,
+        "bottom": 3844.65625,
+        "left": 453.34375,
+        "right": 968.125,
+        "height": 70,
+        "width": 514.78125
+      },
+      "overlaps": false,
+      "internalOverflow": false,
+      "overflow": false,
+      "details": 0,
+      "font": "\"Tilda Sans\", system-ui, sans-serif",
+      "buttonFont": "17px",
+      "source": "assets/directions/generated-rent-country.webp"
+    },
+    {
+      "image": {
+        "top": 3224.65625,
+        "bottom": 3844.65625,
+        "left": 40.875,
+        "right": 421.34375,
+        "height": 620,
+        "width": 380.46875
+      },
+      "copy": {
+        "top": 3224.65625,
+        "bottom": 3844.65625,
+        "left": 453.34375,
+        "right": 968.125,
+        "height": 620,
+        "width": 514.78125
+      },
+      "button": {
+        "top": 3774.65625,
+        "bottom": 3844.65625,
+        "left": 453.34375,
+        "right": 968.125,
+        "height": 70,
+        "width": 514.78125
+      },
+      "overlaps": false,
+      "internalOverflow": false,
+      "overflow": false,
+      "details": 0,
+      "font": "\"Tilda Sans\", system-ui, sans-serif",
+      "buttonFont": "17px",
+      "source": "assets/directions/generated-abroad.webp"
+    },
+    {
+      "image": {
+        "top": 3224.65625,
+        "bottom": 3844.65625,
+        "left": 40.875,
+        "right": 421.34375,
+        "height": 620,
+        "width": 380.46875
+      },
+      "copy": {
+        "top": 3224.65625,
+        "bottom": 3844.65625,
+        "left": 453.34375,
+        "right": 968.125,
+        "height": 620,
+        "width": 514.78125
+      },
+      "button": {
+        "top": 3774.65625,
+        "bottom": 3844.65625,
+        "left": 453.34375,
+        "right": 968.125,
+        "height": 70,
+        "width": 514.78125
+      },
+      "overlaps": false,
+      "internalOverflow": false,
+      "overflow": false,
+      "details": 0,
+      "font": "\"Tilda Sans\", system-ui, sans-serif",
+      "buttonFont": "17px",
+      "source": "assets/directions/generated-residency.webp"
+    },
+    {
+      "image": {
+        "top": 3224.65625,
+        "bottom": 3844.65625,
+        "left": 40.875,
+        "right": 421.34375,
+        "height": 620,
+        "width": 380.46875
+      },
+      "copy": {
+        "top": 3224.65625,
+        "bottom": 3844.65625,
+        "left": 453.34375,
+        "right": 968.125,
+        "height": 620,
+        "width": 514.78125
+      },
+      "button": {
+        "top": 3774.65625,
+        "bottom": 3844.65625,
+        "left": 453.34375,
+        "right": 968.125,
+        "height": 70,
+        "width": 514.78125
+      },
+      "overlaps": false,
+      "internalOverflow": false,
+      "overflow": false,
+      "details": 0,
+      "font": "\"Tilda Sans\", system-ui, sans-serif",
+      "buttonFont": "17px",
+      "source": "assets/directions/generated-commercial.webp"
+    }
+  ],
+  "errors": []
+}

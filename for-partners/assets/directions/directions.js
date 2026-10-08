@@ -7,7 +7,23 @@
   root.dataset.initialized = "true";
   const assetBase = root.dataset.assetBase || "./assets/images/";
   const photos = data.map(d => assetBase + d.image);
-function feature(i){const d=data[i];return `<div class="bd-feature"><div class="bd-copy"><h3>${d.title}</h3><p class="bd-intro">${d.intro}</p><div class="bd-price-label">${d.label}</div><div class="bd-price ${d.words?'bd-words':''}">${d.price}</div>${d.metrics?`<div class="bd-metrics">${d.metrics.map(m=>`<div><div class="bd-num">${m[0]}</div><div class="bd-label">${m[1]}</div></div>`).join('')}</div>`:`<div class="bd-textfacts">${d.facts.map(f=>`<div><div class="bd-label">${f[0]}</div><div class="bd-facttext">${f[1]}</div></div>`).join('')}</div>`}<p class="bd-commission ${d.last[0]==='Комиссия'?'bd-commission-primary':''}">${d.last[0]} <strong>${d.last[1]}</strong>${d.commissionNote?`<span class="bd-commission-note">${d.commissionNote}</span>`:""}</p><button type="button" class="bd-cta" data-request="${i}">Отправить заявку <span aria-hidden="true">↗</span></button></div><div class="bd-imagewrap"><img class="bd-photo" src="${photos[i]}" alt="${d.name} — фотография с сайта BARNES"></div></div><div class="bd-details"><h4>Подробнее о направлении</h4><dl>${d.details.map(item=>`<div><dt>${item[0]}</dt><dd>${item[1]}</dd></div>`).join("")}</dl></div>`}
+  function feature(i) {
+    const d = data[i];
+    const negotiated = d.last[0] !== 'Комиссия';
+    const stats = d.metrics
+      ? d.metrics.map(m => `<div><div class="bd-num">${m[0]}</div><div class="bd-label">${m[1]}</div></div>`).join('')
+      : d.facts.map(f => `<div><div class="bd-label">${f[0]}</div><div class="bd-facttext">${f[1]}</div></div>`).join('');
+    return `<div class="bd-feature">
+      <div class="bd-imagewrap"><img class="bd-photo" src="${photos[i]}" alt="${d.imageAlt || d.name}" decoding="async">${d.imageIsGenerated ? '<span class="bd-image-caption">Иллюстрация направления</span>' : ''}</div>
+      <div class="bd-copy">
+        <div class="bd-heading"><h3>${d.title}</h3><p class="bd-intro">${d.intro}</p></div>
+        <div class="bd-budget"><div class="bd-price-label">${d.label}</div><div class="bd-price ${d.words ? 'bd-words' : ''}">${d.price}</div></div>
+        <div class="${d.metrics ? 'bd-metrics' : 'bd-textfacts'}">${stats}</div>
+        <div class="bd-commission ${negotiated ? 'bd-commission-negotiated' : 'bd-commission-primary'}"><span class="bd-label">Комиссия BARNES</span><strong>${negotiated ? 'Условия оговариваются' : d.last[1]}</strong>${negotiated ? `<span class="bd-commission-note">${d.last[0]}: ${d.last[1]}</span>` : ''}</div>
+        <button type="button" class="bd-cta" data-request="${i}">Отправить заявку <span aria-hidden="true">↗</span></button>
+      </div>
+    </div>`;
+  }
 
   const content = root.querySelector('.bd-content');
   let activeIndex = 0;
@@ -34,7 +50,7 @@ function feature(i){const d=data[i];return `<div class="bd-feature"><div class="
     panel.setAttribute('aria-labelledby', buttons[index].id);
     panel.innerHTML = feature(index);
     const img = panel.querySelector('img');
-    img.alt = data[index].imageIsPlaceholder ? '' : 'Интерьер с видом на Москву';
+    img.alt = data[index].imageAlt || 'Интерьер с видом на Москву';
   }
 
   root.addEventListener('click', event => {

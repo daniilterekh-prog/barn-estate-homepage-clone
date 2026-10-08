@@ -48,9 +48,11 @@ window.BarnesDirectionsData = [
     ],
     "id": "country",
     "details": [["Новорижское шоссе", "Загородные дома и резиденции."], ["Рублёво-Успенское шоссе", "Основное направление загородного подбора."], ["Ильинское и Минское шоссе", "Дополнительные направления поиска."], ["Типы объектов", "Особняки, малоэтажные резиденции и участки под строительство."]],
-    "image": "country.webp",
+    "image": "generated-country.webp",
+    "imageAlt": "Иллюстрация: современная загородная резиденция среди сосен",
+    "imageIsGenerated": true,
     "sourceImage": "media-20.png",
-    "imageIsPlaceholder": true
+    "imageIsPlaceholder": false
   },
   {
     "name": "Аренда в Москве",
@@ -74,9 +76,11 @@ window.BarnesDirectionsData = [
     ],
     "id": "rent-city",
     "details": [["Городская аренда", "Подбор недвижимости под запрос клиента."], ["Предложения", "В том числе эксклюзивные объекты."], ["Просмотры", "Презентации объектов и онлайн- или видеопоказы."], ["Сопровождение", "Помощь экспертов на этапах сделки."]],
-    "image": "rent-city.webp",
+    "image": "generated-rent-city.webp",
+    "imageAlt": "Иллюстрация: интерьер премиальной городской квартиры",
+    "imageIsGenerated": true,
     "sourceImage": "media-21.png",
-    "imageIsPlaceholder": true
+    "imageIsPlaceholder": false
   },
   {
     "name": "Аренда в Подмосковье",
@@ -100,9 +104,11 @@ window.BarnesDirectionsData = [
     ],
     "id": "rent-country",
     "details": [["Загородная аренда", "Подбор недвижимости под запрос клиента."], ["Предложения", "В том числе эксклюзивные объекты."], ["Просмотры", "Презентации объектов и онлайн- или видеопоказы."], ["Сопровождение", "Помощь экспертов на этапах сделки."]],
-    "image": "rent-country.webp",
+    "image": "generated-rent-country.webp",
+    "imageAlt": "Иллюстрация: загородный дом с террасой и садом",
+    "imageIsGenerated": true,
     "sourceImage": "media-22.png",
-    "imageIsPlaceholder": true
+    "imageIsPlaceholder": false
   },
   {
     "name": "Покупка за рубежом",
@@ -126,9 +132,11 @@ window.BarnesDirectionsData = [
     ],
     "id": "abroad",
     "details": [["ОАЭ", "Новостройки и коммерция. Помощь с открытием компании и резидентской визой."], ["Турция", "Новостройки, вторичный рынок, закрытые предложения и сопровождение паспортной программы."], ["Таиланд, Бали и Грузия", "Новостройки, вторичный рынок и закрытые предложения. Сопровождение программ ВНЖ."], ["Европа", "Покупка и продажа недвижимости через партнёрскую сеть BARNES."]],
-    "image": "abroad.webp",
+    "image": "generated-abroad.webp",
+    "imageAlt": "Иллюстрация: резиденция у моря",
+    "imageIsGenerated": true,
     "sourceImage": "media-23.png",
-    "imageIsPlaceholder": true
+    "imageIsPlaceholder": false
   },
   {
     "name": "ВНЖ и гражданство",
@@ -154,9 +162,11 @@ window.BarnesDirectionsData = [
     "id": "residency",
     "details": [["Турция", "Сопровождение покупки по паспортной программе."], ["ОАЭ", "Помощь с открытием компании и получением резидентской визы."], ["Другие направления", "Сопровождение программ ВНЖ по условиям выбранной страны."], ["Условия", "Подходящую программу и условия сопровождения уточняем индивидуально."]],
     "commissionNote": "Комиссия: условия оговариваются",
-    "image": "residency.webp",
+    "image": "generated-residency.webp",
+    "imageAlt": "Иллюстрация: жилая недвижимость с видом на Босфор",
+    "imageIsGenerated": true,
     "sourceImage": "media-24.png",
-    "imageIsPlaceholder": true
+    "imageIsPlaceholder": false
   },
   {
     "name": "Коммерческая недвижимость",
@@ -181,8 +191,10 @@ window.BarnesDirectionsData = [
     "id": "commercial",
     "details": [["Аренда для бизнеса", "Поиск помещений для офиса или торговли."], ["Покупка помещений", "Подбор складской, торговой и офисной недвижимости."], ["Готовый арендный бизнес", "Подбор объектов с анализом локации и рыночной окупаемости."], ["Консультации", "Оценка стоимости продажи и консультации по арендным ставкам."]],
     "commissionNote": "Комиссия: условия оговариваются",
-    "image": "commercial.webp",
+    "image": "generated-commercial.webp",
+    "imageAlt": "Иллюстрация: лобби современного бизнес-центра",
+    "imageIsGenerated": true,
     "sourceImage": "media-25.png",
-    "imageIsPlaceholder": true
+    "imageIsPlaceholder": false
   }
 ];
