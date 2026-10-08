@@ -119,25 +119,17 @@
       <button class="catalog-mode-switch__button is-active" type="button" data-listing-mode="new-build" aria-pressed="true">Новостройки</button>
       <button class="catalog-mode-switch__button" type="button" data-listing-mode="secondary" aria-pressed="false">Вторичка</button>
     </div>
-    <div class="catalog-mode-filters catalog-quick-filters" data-listing-filters="new-build" data-v-6fd45cc6>
-      <div class="catalog-quick-filters__item" data-v-6fd45cc6><button class="catalog-quick-filters__button" type="button" aria-expanded="false" aria-haspopup="true" data-v-6fd45cc6><span class="catalog-quick-filters__label" data-v-6fd45cc6>Локация</span><span class="catalog-quick-filters__value" data-v-6fd45cc6>Не выбрано</span><span class="catalog-quick-filters__chevron" aria-hidden="true" data-v-6fd45cc6></span></button></div>
+    <div class="catalog-mode-filters catalog-quick-filters" data-v-6fd45cc6>
       <div class="catalog-quick-filters__item" data-v-6fd45cc6><button class="catalog-quick-filters__button" type="button" aria-expanded="false" aria-haspopup="true" data-v-6fd45cc6><span class="catalog-quick-filters__label" data-v-6fd45cc6>Цена ₽</span><span class="catalog-quick-filters__value" data-v-6fd45cc6>Не выбрано</span><span class="catalog-quick-filters__chevron" aria-hidden="true" data-v-6fd45cc6></span></button></div>
+      <div class="catalog-quick-filters__item" data-v-6fd45cc6><button class="catalog-quick-filters__button" type="button" aria-expanded="false" aria-haspopup="true" data-v-6fd45cc6><span class="catalog-quick-filters__label" data-v-6fd45cc6>Локация</span><span class="catalog-quick-filters__value" data-v-6fd45cc6>Не выбрано</span><span class="catalog-quick-filters__chevron" aria-hidden="true" data-v-6fd45cc6></span></button></div>
+      <div class="catalog-quick-filters__item" data-v-6fd45cc6><button class="catalog-quick-filters__button" type="button" aria-expanded="false" aria-haspopup="true" data-v-6fd45cc6><span class="catalog-quick-filters__label" data-v-6fd45cc6>Площадь</span><span class="catalog-quick-filters__value" data-v-6fd45cc6>Не выбрано</span><span class="catalog-quick-filters__chevron" aria-hidden="true" data-v-6fd45cc6></span></button></div>
       <div class="catalog-quick-filters__item" data-v-6fd45cc6><button class="catalog-quick-filters__button" type="button" aria-expanded="false" aria-haspopup="true" data-v-6fd45cc6><span class="catalog-quick-filters__label" data-v-6fd45cc6>Спальни</span><span class="catalog-quick-filters__value" data-v-6fd45cc6>Не выбрано</span><span class="catalog-quick-filters__chevron" aria-hidden="true" data-v-6fd45cc6></span></button></div>
       <div class="catalog-quick-filters__item" data-v-6fd45cc6><button class="catalog-quick-filters__button" type="button" aria-expanded="false" aria-haspopup="true" data-v-6fd45cc6><span class="catalog-quick-filters__label" data-v-6fd45cc6>Срок сдачи</span><span class="catalog-quick-filters__value" data-v-6fd45cc6>Не выбрано</span><span class="catalog-quick-filters__chevron" aria-hidden="true" data-v-6fd45cc6></span></button></div>
-      <div class="catalog-quick-filters__item" data-v-6fd45cc6><button class="catalog-quick-filters__button" type="button" aria-expanded="false" aria-haspopup="true" data-v-6fd45cc6><span class="catalog-quick-filters__label" data-v-6fd45cc6>Все фильтры</span><span class="catalog-quick-filters__value" data-v-6fd45cc6>Дополнительно</span><span class="catalog-quick-filters__chevron" aria-hidden="true" data-v-6fd45cc6></span></button></div>
-    </div>
-    <div class="catalog-mode-filters catalog-quick-filters" data-listing-filters="secondary" data-v-6fd45cc6 hidden>
-      <div class="catalog-quick-filters__item" data-v-6fd45cc6><button class="catalog-quick-filters__button" type="button" aria-expanded="false" aria-haspopup="true" data-v-6fd45cc6><span class="catalog-quick-filters__label" data-v-6fd45cc6>Локация</span><span class="catalog-quick-filters__value" data-v-6fd45cc6>Не выбрано</span><span class="catalog-quick-filters__chevron" aria-hidden="true" data-v-6fd45cc6></span></button></div>
-      <div class="catalog-quick-filters__item" data-v-6fd45cc6><button class="catalog-quick-filters__button" type="button" aria-expanded="false" aria-haspopup="true" data-v-6fd45cc6><span class="catalog-quick-filters__label" data-v-6fd45cc6>Цена ₽</span><span class="catalog-quick-filters__value" data-v-6fd45cc6>Не выбрано</span><span class="catalog-quick-filters__chevron" aria-hidden="true" data-v-6fd45cc6></span></button></div>
-      <div class="catalog-quick-filters__item" data-v-6fd45cc6><button class="catalog-quick-filters__button" type="button" aria-expanded="false" aria-haspopup="true" data-v-6fd45cc6><span class="catalog-quick-filters__label" data-v-6fd45cc6>Комнаты</span><span class="catalog-quick-filters__value" data-v-6fd45cc6>Не выбрано</span><span class="catalog-quick-filters__chevron" aria-hidden="true" data-v-6fd45cc6></span></button></div>
-      <div class="catalog-quick-filters__item" data-v-6fd45cc6><button class="catalog-quick-filters__button" type="button" aria-expanded="false" aria-haspopup="true" data-v-6fd45cc6><span class="catalog-quick-filters__label" data-v-6fd45cc6>Площадь</span><span class="catalog-quick-filters__value" data-v-6fd45cc6>Не выбрано</span><span class="catalog-quick-filters__chevron" aria-hidden="true" data-v-6fd45cc6></span></button></div>
-      <div class="catalog-quick-filters__item" data-v-6fd45cc6><button class="catalog-quick-filters__button" type="button" aria-expanded="false" aria-haspopup="true" data-v-6fd45cc6><span class="catalog-quick-filters__label" data-v-6fd45cc6>Все фильтры</span><span class="catalog-quick-filters__value" data-v-6fd45cc6>Дополнительно</span><span class="catalog-quick-filters__chevron" aria-hidden="true" data-v-6fd45cc6></span></button></div>
     </div>`;
   toolbar.append(sort);
   header.after(toolbar);
 
   const modeButtons = toolbar.querySelectorAll('[data-listing-mode]');
-  const filterSets = toolbar.querySelectorAll('[data-listing-filters]');
   modeButtons.forEach((button) => {
     button.addEventListener('click', () => {
       const mode = button.dataset.listingMode;
@@ -145,9 +137,6 @@
         const active = item === button;
         item.classList.toggle('is-active', active);
         item.setAttribute('aria-pressed', String(active));
-      });
-      filterSets.forEach((set) => {
-        set.hidden = set.dataset.listingFilters !== mode;
       });
       projectItem.hidden = mode !== 'new-build';
       lotItem.hidden = mode !== 'secondary';
