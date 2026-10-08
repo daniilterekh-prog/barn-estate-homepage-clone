@@ -62,6 +62,43 @@ body {
   fill: currentColor;
 }
 
+.card-lab__facts {
+  align-items: end;
+  display: grid;
+  gap: 16px;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  margin: 0;
+}
+
+.card-lab__fact {
+  min-width: 0;
+}
+
+.card-lab__fact--right {
+  text-align: right;
+}
+
+.card-lab__fact-label {
+  color: #656462;
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  line-height: 1.2;
+  margin: 0 0 5px;
+  text-transform: uppercase;
+}
+
+.card-lab__fact-value {
+  color: #1e1e1e;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.25;
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 @media (max-width: 540px) {
   .card-lab {
     padding-block: 28px 40px;
@@ -74,5 +111,17 @@ body {
   .card-lab__stage {
     min-height: 0;
     padding: 0;
+  }
+
+  .card-lab__facts {
+    gap: 12px;
+  }
+
+  .card-lab__fact-label {
+    font-size: 10px;
+  }
+
+  .card-lab__fact-value {
+    font-size: 13px;
   }
 }
