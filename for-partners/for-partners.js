@@ -21,7 +21,7 @@
 
   var ownerShellStylesheet = document.createElement('link');
   ownerShellStylesheet.rel = 'stylesheet';
-  ownerShellStylesheet.href = 'assets/owner-shell.css?v=20261008-3';
+  ownerShellStylesheet.href = 'assets/owner-shell.css?v=20261008-4';
   document.head.appendChild(ownerShellStylesheet);
 
   document.body.classList.add('partners-owner-shell');
