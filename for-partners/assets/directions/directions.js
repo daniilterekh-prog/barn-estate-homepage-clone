@@ -14,7 +14,7 @@
       ? d.metrics.map(m => `<div><div class="bd-num">${m[0]}</div><div class="bd-label">${m[1]}</div></div>`).join('')
       : d.facts.map(f => `<div><div class="bd-label">${f[0]}</div><div class="bd-facttext">${f[1]}</div></div>`).join('');
     return `<div class="bd-feature">
-      <div class="bd-imagewrap"><img class="bd-photo" src="${photos[i]}" alt="${d.imageAlt || d.name}" decoding="async">${d.imageIsGenerated ? '<span class="bd-image-caption">Иллюстрация направления</span>' : ''}</div>
+      <div class="bd-imagewrap"><img class="bd-photo" src="${photos[i]}" alt="${d.imageAlt || d.name}" decoding="async"></div>
       <div class="bd-copy">
         <div class="bd-heading"><h3>${d.title}</h3><p class="bd-intro">${d.intro}</p></div>
         <div class="bd-budget"><div class="bd-price-label">${d.label}</div><div class="bd-price ${d.words ? 'bd-words' : ''}">${d.price}</div></div>
