@@ -2151,9 +2151,9 @@ body.owner-sale-reference-ui .owner-sale-hero .breadcrumbs__link {
 
 .owner-sale-reference-ui .about-company__intro {
   color: var(--owner-sale-secondary);
-  font-size: 16px;
+  font-size: 22px;
   font-weight: 300;
-  line-height: 1.28;
+  line-height: 1.35;
 }
 
 .owner-sale-reference-ui .owner-sale-services__card {
