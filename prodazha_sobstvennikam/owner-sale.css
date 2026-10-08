@@ -835,10 +835,10 @@ body.owner-sale-reference-ui .owner-sale-hero .breadcrumbs__link {
   line-height: 1.2;
 }
 
-.owner-sale-reference-ui .about-company__description {
+.owner-sale-reference-ui :is(.about-company__description, .about-company__intro) {
   color: var(--owner-sale-secondary);
   font-size: 22px;
-  line-height: 1.5;
+  line-height: 1.35;
 }
 
 .owner-sale-reference-ui .about-company__stat-value {
@@ -1314,7 +1314,7 @@ body.owner-sale-reference-ui .owner-sale-hero .breadcrumbs__link {
 
   .owner-sale-reference-ui .owner-sale-stages__item-text,
   .owner-sale-reference-ui .owner-sale-strategy__text,
-  .owner-sale-reference-ui .about-company__description,
+  .owner-sale-reference-ui :is(.about-company__description, .about-company__intro),
   .owner-sale-reference-ui .catalog-consultation__lead,
   .owner-sale-reference-ui .owner-sale-magazine__item {
     font-size: 15px;
