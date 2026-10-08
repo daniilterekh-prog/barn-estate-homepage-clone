@@ -119,6 +119,10 @@ body {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.card-lab__facts--lot .card-lab__fact {
+  text-align: center;
+}
+
 .card-lab__facts--project {
   gap: 10px;
   grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr) minmax(0, 0.8fr);
