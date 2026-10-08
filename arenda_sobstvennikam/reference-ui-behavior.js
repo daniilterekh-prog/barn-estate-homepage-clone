@@ -561,6 +561,13 @@
   }
 
   function enhancePresentationCards() {
+    // Keep the approved imagery after Nuxt rehydrates its original SSR assets.
+    var presentationScenes = ['object-detail', 'positioning', 'viewing', 'legal', 'interior'];
+    document.querySelectorAll('.owner-sale-presentation__card img').forEach(function (image, index) {
+      if (!presentationScenes[index]) return;
+      var source = new URL('../shared/assets/presentation-v2/' + presentationScenes[index] + '.webp', window.location.href).href;
+      if (image.src !== source) image.src = source;
+    });
     var descriptions = [
       'Находим сильные стороны объекта и превращаем их в понятные преимущества для будущего арендатора.',
       'Определяем позиционирование, ценовой ориентир и ключевые акценты для презентации объекта.',
