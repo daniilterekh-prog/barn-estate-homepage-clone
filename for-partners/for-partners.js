@@ -458,7 +458,7 @@
     button.addEventListener('click', function () {
       document.querySelectorAll('.catalog-contact__method').forEach(function (item) {
         item.classList.remove('catalog-contact__method--active');
-        item.setAttribute('aria-selected', String(item === button));
+        item.setAttribute('aria-pressed', String(item === button));
       });
       button.classList.add('catalog-contact__method--active');
       var channel = document.querySelector('.catalog-contact__form input[name="preferredChannel"]');
