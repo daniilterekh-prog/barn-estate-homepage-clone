@@ -128,12 +128,11 @@
       <div class="catalog-quick-filters__item" data-v-6fd45cc6><button class="catalog-quick-filters__button" type="button" aria-expanded="false" aria-haspopup="true" data-v-6fd45cc6><span class="catalog-quick-filters__label" data-v-6fd45cc6>Цена</span><span class="catalog-quick-filters__chevron" aria-hidden="true" data-v-6fd45cc6></span></button></div>
       <div class="catalog-quick-filters__item" data-v-6fd45cc6><button class="catalog-quick-filters__button" type="button" aria-expanded="false" aria-haspopup="true" data-v-6fd45cc6><span class="catalog-quick-filters__label" data-v-6fd45cc6>Спальни</span><span class="catalog-quick-filters__chevron" aria-hidden="true" data-v-6fd45cc6></span></button></div>
     </div>`;
-  const detailedFiltersSource = document.querySelector('.catalog-hero-filters__filter-icon');
   const detailedFiltersButton = document.createElement('button');
   detailedFiltersButton.className = 'catalog-mode-detailed-filters';
   detailedFiltersButton.type = 'button';
-  detailedFiltersButton.setAttribute('aria-label', 'Открыть подробные фильтры');
-  detailedFiltersButton.setAttribute('aria-expanded', detailedFiltersSource?.getAttribute('aria-expanded') || 'false');
+  detailedFiltersButton.dataset.detailedFiltersTrigger = '';
+  detailedFiltersButton.setAttribute('aria-label', 'Подробные фильтры');
   detailedFiltersButton.title = 'Подробные фильтры';
   detailedFiltersButton.innerHTML = `
     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -142,19 +141,6 @@
       <circle cx="14" cy="12" r="2" stroke="currentColor" stroke-width="1.15"></circle>
       <circle cx="10" cy="18" r="2" stroke="currentColor" stroke-width="1.15"></circle>
     </svg>`;
-  if (detailedFiltersSource) {
-    detailedFiltersButton.setAttribute('aria-controls', detailedFiltersSource.getAttribute('aria-controls') || 'catalog-hero-filters-panel');
-    detailedFiltersButton.addEventListener('click', () => detailedFiltersSource.click());
-    const syncDetailedFiltersState = () => {
-      detailedFiltersButton.setAttribute('aria-expanded', detailedFiltersSource.getAttribute('aria-expanded') || 'false');
-    };
-    new MutationObserver(syncDetailedFiltersState).observe(detailedFiltersSource, {
-      attributes: true,
-      attributeFilter: ['aria-expanded'],
-    });
-  } else {
-    detailedFiltersButton.disabled = true;
-  }
   toolbar.append(sort, detailedFiltersButton);
   header.after(toolbar);
 
