@@ -515,7 +515,7 @@
     const feedbackPicture = document.createElement('picture');
     const feedbackSource = document.createElement('source');
     feedbackSource.media = '(max-width: 580px)';
-    feedbackSource.srcset = '../pictures/consultation/cta-ruslan-pruss.webp';
+    feedbackSource.srcset = '../shared/assets/modal-ruslan-organic.webp';
     feedbackImage.parentNode.insertBefore(feedbackPicture, feedbackImage);
     feedbackPicture.append(feedbackSource, feedbackImage);
     feedbackImage.src = feedbackSource.srcset;

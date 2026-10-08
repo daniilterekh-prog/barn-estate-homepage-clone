@@ -323,7 +323,7 @@
       var picture = document.createElement('picture');
       var source = document.createElement('source');
       source.media = '(max-width: 580px)';
-      source.srcset = new URL('../pictures/consultation/cta-ruslan-pruss.webp', window.location.href).href;
+      source.srcset = new URL('../shared/assets/modal-ruslan-organic.webp', window.location.href).href;
       image.parentNode.insertBefore(picture, image);
       picture.append(source, image);
       image.src = source.srcset;
