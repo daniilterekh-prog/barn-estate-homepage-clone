@@ -10,7 +10,7 @@
   if (!document.querySelector('link[data-kurortnaya-listing-mode]')) {
     var listingStylesheet = document.createElement('link');
     listingStylesheet.rel = 'stylesheet';
-    listingStylesheet.href = 'listing-mode.css?v=20261009-filter-type-18';
+    listingStylesheet.href = 'listing-mode.css?v=20261009-filter-type-19';
     listingStylesheet.dataset.kurortnayaListingMode = 'true';
     document.head.appendChild(listingStylesheet);
   }
@@ -30,7 +30,7 @@
 
   if (!document.querySelector('script[data-kurortnaya-listing-mode]')) {
     var listingScript = document.createElement('script');
-    listingScript.src = 'listing-mode.js?v=20261009-filter-type-18';
+    listingScript.src = 'listing-mode.js?v=20261009-filter-type-19';
     listingScript.dataset.kurortnayaListingMode = 'true';
     document.body.appendChild(listingScript);
   }
