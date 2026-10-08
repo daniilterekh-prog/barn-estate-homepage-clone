@@ -254,6 +254,7 @@
     const aside = section && section.querySelector('.owner-sale-stages__aside');
     const title = section && section.querySelector('.owner-sale-stages__title');
     const offer = section && section.querySelector('.owner-sale-stages__offer');
+    const offerTitle = offer && offer.querySelector('.owner-sale-stages__offer-title');
     const offerText = offer && offer.querySelector('.owner-sale-stages__offer-text');
     const offerButton = offer && offer.querySelector('.owner-sale-stages__offer-btn');
     if (!section || !aside || !title) return;
@@ -263,6 +264,10 @@
     section.removeAttribute('aria-label');
     aside.classList.add('owner-sale-stages__header');
 
+    if (offerTitle && !aside.querySelector('.owner-sale-stages__lead')) {
+      offerTitle.className = 'owner-sale-stages__lead';
+      aside.appendChild(offerTitle);
+    }
     if (offerText && !aside.querySelector('.owner-sale-stages__intro')) {
       offerText.className = 'owner-sale-stages__intro';
       aside.appendChild(offerText);
@@ -270,15 +275,6 @@
     if (offerButton) {
       offerButton.classList.add('owner-sale-stages__cta');
       aside.appendChild(offerButton);
-    }
-
-    if (!aside.querySelector('.owner-sale-stages__progress')) {
-      const totalStages = section.querySelectorAll('.owner-sale-stages__item').length;
-      const progress = document.createElement('div');
-      progress.className = 'owner-sale-stages__progress';
-      progress.setAttribute('aria-hidden', 'true');
-      progress.innerHTML = '<span class="owner-sale-stages__progress-label">Текущий этап</span><span class="owner-sale-stages__progress-value"><strong>01</strong><span>/ ' + String(totalStages).padStart(2, '0') + '</span></span><span class="owner-sale-stages__progress-track"><span></span></span>';
-      aside.appendChild(progress);
     }
     if (offer) offer.remove();
   };
@@ -322,9 +318,6 @@
     });
 
     section.classList.add('owner-sale-stages--scroll-ready');
-    section.style.setProperty('--owner-sale-stages-progress', ((activeIndex + 1) / items.length * 100) + '%');
-    const progressCurrent = section.querySelector('.owner-sale-stages__progress-value strong');
-    if (progressCurrent) progressCurrent.textContent = String(activeIndex + 1).padStart(2, '0');
     items.forEach(function (item, index) {
       item.classList.toggle('is-active', index === activeIndex);
       item.classList.toggle('is-past', index < activeIndex);
