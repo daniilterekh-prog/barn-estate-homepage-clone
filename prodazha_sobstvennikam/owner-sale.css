@@ -1024,6 +1024,13 @@ body.owner-sale-reference-ui .owner-sale-hero .breadcrumbs__link {
 
 .owner-sale-reference-ui .catalog-contact__card-title {
   font-weight: 300;
+  text-transform: none;
+}
+
+.owner-sale-reference-ui :is(.catalog-contact__expert-photo, .catalog-contact__mobile-photo) img {
+  object-position: 50% 16%;
+  transform: scale(1.7);
+  transform-origin: 50% 16%;
 }
 
 .owner-sale-reference-ui .newsletter-cta {

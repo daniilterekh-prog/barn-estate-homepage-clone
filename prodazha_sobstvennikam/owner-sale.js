@@ -13,6 +13,23 @@
     lead.hidden = true;
   });
 
+  const lowerContact = page.querySelector('.catalog-contact');
+  if (lowerContact) {
+    const cardTitle = lowerContact.querySelector('.catalog-contact__card-title');
+    if (cardTitle) cardTitle.textContent = 'Получите предварительную оценку объекта';
+
+    lowerContact.querySelectorAll('.catalog-contact__expert-photo img, .catalog-contact__mobile-photo img').forEach(function (image) {
+      image.src = 'assets/ruslan.webp';
+      image.alt = 'Руслан Прус';
+    });
+    lowerContact.querySelectorAll('.catalog-contact__expert-name, .catalog-contact__mobile-name').forEach(function (name) {
+      name.textContent = 'Руслан Прус';
+    });
+    lowerContact.querySelectorAll('.catalog-contact__expert-role, .catalog-contact__mobile-role').forEach(function (role) {
+      role.textContent = 'Руководитель департамента городской недвижимости';
+    });
+  }
+
   const menuButton = document.querySelector('[aria-label="Открыть меню"]');
   let menu = document.querySelector('.site-menu');
   const sticky = page.querySelector('.owner-sale-sticky');
