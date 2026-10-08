@@ -147,6 +147,7 @@ window.BarnesDirectionsData = [
       "С недвижимостью"
     ],
     "id": "residency",
+    "commissionNote": "Комиссия: условия оговариваются",
     "image": "residency.webp",
     "sourceImage": "media-24.png",
     "imageIsPlaceholder": true
@@ -172,6 +173,7 @@ window.BarnesDirectionsData = [
       "ГАБ"
     ],
     "id": "commercial",
+    "commissionNote": "Комиссия: условия оговариваются",
     "image": "commercial.webp",
     "sourceImage": "media-25.png",
     "imageIsPlaceholder": true

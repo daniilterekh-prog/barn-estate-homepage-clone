@@ -10,6 +10,7 @@
 #barnes-directions .bd-price-label { height: 20px; }
 #barnes-directions .bd-price { height: 44px; }
 #barnes-directions .bd-copy>.bd-commission { height: 68px; }
+#barnes-directions .bd-commission-note { display: block; margin-top: 8px; font-size: 16px; line-height: 20px; color: var(--bd-gray); }
 #barnes-directions .bd-window{--bd-ink:#1e1e1e;--bd-red:#8b1d25;--bd-line:#dedddd;--bd-gray:#666;--bd-white:#fff;color-scheme:light;background:var(--bd-white);color:var(--bd-ink);font-family:BarnesTilda,Arial,sans-serif;container-type:inline-size;width:100%;max-width:1320px;margin:auto;box-sizing:border-box;text-align:left}
 #barnes-directions .bd-window *{box-sizing:border-box}
 #barnes-directions .bd-window button{font-family:inherit;border-radius:0;cursor:pointer}
