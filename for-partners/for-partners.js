@@ -57,11 +57,79 @@
   });
 
   var requestTabs = Array.prototype.slice.call(document.querySelectorAll('.ambassadors-requests__tab'));
+  var requestPanel = document.querySelector('.ambassadors-requests__panel');
+  var requestImage = document.querySelector('.ambassadors-requests__image');
+  var requestStats = requestPanel ? Array.prototype.slice.call(requestPanel.querySelectorAll('.ambassadors-requests__stat')) : [];
+  var requestData = [
+    {
+      image: 'assets/media-06.png',
+      stats: [['Чек покупки', 'от 52 млн ₽'], ['Новостройки класса премиум и выше', '150+'], ['Объекты вторичной недвижимости', '2000+'], ['Комиссия', '3–5%']]
+    },
+    {
+      image: 'assets/media-20.png',
+      stats: [['Чек покупки', 'от 50 млн ₽'], ['Объекты', '380'], ['Эксклюзивы', '30+'], ['Комиссия', '4–5%']]
+    },
+    {
+      image: 'assets/media-21.png',
+      stats: [['Средний чек', '250 тыс. ₽/месяц'], ['Новостройки класса премиум и выше', '200+'], ['Эксклюзивы', '15+'], ['Комиссия', '50–100%']]
+    },
+    {
+      image: 'assets/media-22.png',
+      stats: [['Средний чек', 'от 250 тыс. ₽'], ['Объектов в базе', '200+'], ['Эксклюзивов', '15+'], ['Комиссия', '50–100%']]
+    },
+    {
+      image: 'assets/media-23.png',
+      stats: [['Чек покупки', 'от 200 тыс. $'], ['Направления', 'ОАЭ, Турция, Таиланд, Бали, Грузия, Европа'], ['Помощь в получении', 'ВНЖ и гражданства'], ['Комиссия', '2–5%']]
+    },
+    {
+      image: 'assets/media-24.png',
+      stats: [['Программа', 'Паспорт Турции'], ['Сопровождение', 'Под ключ'], ['ВНЖ', 'ОАЭ и другие'], ['Формат', 'С недвижимостью']]
+    },
+    {
+      image: 'assets/media-25.png',
+      stats: [['Объекты', '500+'], ['Лоты с окупаемостью', 'менее 7 лет'], ['Недвижимость под', 'склад, офис, торговлю'], ['Инвестиции в', 'ГАБ']]
+    }
+  ];
+
+  function updateRequest(index) {
+    var data = requestData[index];
+    if (!data) return;
+
+    requestTabs.forEach(function (item, itemIndex) {
+      var active = itemIndex === index;
+      item.classList.toggle('ambassadors-requests__tab--active', active);
+      item.setAttribute('aria-selected', String(active));
+      item.setAttribute('tabindex', active ? '0' : '-1');
+    });
+
+    requestStats.forEach(function (stat, statIndex) {
+      var values = data.stats[statIndex];
+      if (!values) return;
+      var label = stat.querySelector('.ambassadors-requests__stat-label');
+      var value = stat.querySelector('.ambassadors-requests__stat-value');
+      if (label) label.textContent = values[0];
+      if (value) value.textContent = values[1];
+    });
+
+    if (requestImage) {
+      requestImage.src = data.image;
+      requestImage.removeAttribute('srcset');
+    }
+    if (requestPanel && requestTabs[index]) {
+      requestPanel.setAttribute('aria-labelledby', requestTabs[index].id);
+    }
+    page.dataset.requestIndex = String(index);
+  }
+
   requestTabs.forEach(function (tab, index) {
-    tab.addEventListener('click', function () {
-      requestTabs.forEach(function (item) { item.classList.remove('ambassadors-requests__tab--active'); });
-      tab.classList.add('ambassadors-requests__tab--active');
-      page.dataset.requestIndex = String(index);
+    tab.addEventListener('click', function () { updateRequest(index); });
+    tab.addEventListener('keydown', function (event) {
+      if (event.key !== 'ArrowDown' && event.key !== 'ArrowRight' && event.key !== 'ArrowUp' && event.key !== 'ArrowLeft') return;
+      event.preventDefault();
+      var direction = event.key === 'ArrowDown' || event.key === 'ArrowRight' ? 1 : -1;
+      var nextIndex = (index + direction + requestTabs.length) % requestTabs.length;
+      requestTabs[nextIndex].focus();
+      updateRequest(nextIndex);
     });
   });
 
