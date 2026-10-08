@@ -15,7 +15,7 @@
   projectItems.slice(1).forEach((item) => {
     item.hidden = true;
   });
-  legacyFilters?.setAttribute('hidden', '');
+  legacyFilters?.remove();
 
   const createFact = (label, value) => {
     const fact = document.createElement('div');
