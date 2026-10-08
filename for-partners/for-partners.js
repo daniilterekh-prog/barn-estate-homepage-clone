@@ -9,11 +9,6 @@
   stagesStylesheet.href = 'assets/how-it-works.css?v=20261008-7';
   document.head.appendChild(stagesStylesheet);
 
-  var requestsStylesheet = document.createElement('link');
-  requestsStylesheet.rel = 'stylesheet';
-  requestsStylesheet.href = 'assets/requests-typography.css?v=20261008-3';
-  document.head.appendChild(requestsStylesheet);
-
   var conditionsStylesheet = document.createElement('link');
   conditionsStylesheet.rel = 'stylesheet';
   conditionsStylesheet.href = 'assets/conditions-heading.css?v=20261008-2';
@@ -201,17 +196,39 @@
     var phone = modal.querySelector('input[name="phone"]');
     var channelValue = modal.querySelector('input[name="preferredChannel"]');
     var status = modal.querySelector('.feedback-modal__status');
+    var directionId = document.createElement('input');
+    directionId.type = 'hidden';
+    directionId.name = 'directionId';
+    var directionName = document.createElement('input');
+    directionName.type = 'hidden';
+    directionName.name = 'directionName';
+    form.append(directionId, directionName);
+    var directionSummary = document.createElement('p');
+    directionSummary.className = 'feedback-modal__direction';
+    directionSummary.hidden = true;
+    form.before(directionSummary);
     function closeModal() {
       modal.hidden = true;
       document.body.style.removeProperty('overflow');
       if (lastTrigger) lastTrigger.focus();
     }
     function openModal(trigger) {
+      directionId.value = '';
+      directionName.value = '';
+      directionSummary.hidden = true;
+      status.textContent = '';
       lastTrigger = trigger || document.activeElement;
       modal.hidden = false;
       document.body.style.overflow = 'hidden';
       window.requestAnimationFrame(function () { content.focus(); });
     }
+    document.getElementById('barnes-directions').addEventListener('barnes:request', function (event) {
+      openModal(document.activeElement);
+      directionId.value = event.detail.directionId;
+      directionName.value = event.detail.directionName;
+      directionSummary.textContent = 'Направление: ' + event.detail.directionName;
+      directionSummary.hidden = false;
+    });
     modal.querySelector('.feedback-modal__close').addEventListener('click', closeModal);
     modal.querySelector('.feedback-modal__overlay').addEventListener('click', closeModal);
     modal.querySelector('.feedback-modal__channels').addEventListener('click', function (event) {
@@ -301,7 +318,6 @@
     [
       ['.ambassadors-conditions__section-title', 'ПАРТНЁРСКАЯ ПРОГРАММА'],
       ['.owner-sale-stages__title', 'МЕХАНИКА ПАРТНЁРСТВА'],
-      ['.ambassadors-requests__title', 'НАПРАВЛЕНИЯ BARNES'],
       ['.ambassadors-advantages__title', 'ПАРТНЁРСТВО С BARNES'],
       ['.catalog-faq__title', 'ПАРТНЁРСКАЯ ПРОГРАММА'],
       ['.newsletter-cta h2', 'BARNES / АНАЛИТИКА']
@@ -428,82 +444,6 @@
     });
   });
 
-  var requestTabs = Array.prototype.slice.call(document.querySelectorAll('.ambassadors-requests__tab'));
-  var requestPanel = document.querySelector('.ambassadors-requests__panel');
-  var requestImage = document.querySelector('.ambassadors-requests__image');
-  var requestStats = requestPanel ? Array.prototype.slice.call(requestPanel.querySelectorAll('.ambassadors-requests__stat')) : [];
-  var requestData = [
-    {
-      image: 'assets/media-06.png',
-      stats: [['Чек покупки', 'от 52 млн ₽'], ['Новостройки класса премиум и выше', '150+'], ['Объекты вторичной недвижимости', '2000+'], ['Комиссия', '3–5%']]
-    },
-    {
-      image: 'assets/media-20.png',
-      stats: [['Чек покупки', 'от 50 млн ₽'], ['Объекты', '380'], ['Эксклюзивы', '30+'], ['Комиссия', '4–5%']]
-    },
-    {
-      image: 'assets/media-21.png',
-      stats: [['Средний чек', '250 тыс. ₽/месяц'], ['Новостройки класса премиум и выше', '200+'], ['Эксклюзивы', '15+'], ['Комиссия', '50–100%']]
-    },
-    {
-      image: 'assets/media-22.png',
-      stats: [['Средний чек', 'от 250 тыс. ₽'], ['Объектов в базе', '200+'], ['Эксклюзивов', '15+'], ['Комиссия', '50–100%']]
-    },
-    {
-      image: 'assets/media-23.png',
-      stats: [['Чек покупки', 'от 200 тыс. $'], ['Направления', 'ОАЭ, Турция, Таиланд, Бали, Грузия, Европа'], ['Помощь в получении', 'ВНЖ и гражданства'], ['Комиссия', '2–5%']]
-    },
-    {
-      image: 'assets/media-24.png',
-      stats: [['Программа', 'Паспорт Турции'], ['Сопровождение', 'Под ключ'], ['ВНЖ', 'ОАЭ и другие'], ['Формат', 'С недвижимостью']]
-    },
-    {
-      image: 'assets/media-25.png',
-      stats: [['Объекты', '500+'], ['Лоты с окупаемостью', 'менее 7 лет'], ['Недвижимость под', 'склад, офис, торговлю'], ['Инвестиции в', 'ГАБ']]
-    }
-  ];
-
-  function updateRequest(index) {
-    var data = requestData[index];
-    if (!data) return;
-
-    requestTabs.forEach(function (item, itemIndex) {
-      var active = itemIndex === index;
-      item.classList.toggle('ambassadors-requests__tab--active', active);
-      item.setAttribute('aria-selected', String(active));
-      item.setAttribute('tabindex', active ? '0' : '-1');
-    });
-
-    requestStats.forEach(function (stat, statIndex) {
-      var values = data.stats[statIndex];
-      if (!values) return;
-      var label = stat.querySelector('.ambassadors-requests__stat-label');
-      var value = stat.querySelector('.ambassadors-requests__stat-value');
-      if (label) label.textContent = values[0];
-      if (value) value.textContent = values[1];
-    });
-
-    if (requestImage) {
-      requestImage.src = data.image;
-      requestImage.removeAttribute('srcset');
-    }
-    if (requestPanel && requestTabs[index]) {
-      requestPanel.setAttribute('aria-labelledby', requestTabs[index].id);
-    }
-    page.dataset.requestIndex = String(index);
-  }
-
-  requestTabs.forEach(function (tab, index) {
-    tab.addEventListener('click', function () { updateRequest(index); });
-    tab.addEventListener('keydown', function (event) {
-      if (event.key !== 'ArrowDown' && event.key !== 'ArrowRight' && event.key !== 'ArrowUp' && event.key !== 'ArrowLeft') return;
-      event.preventDefault();
-      var direction = event.key === 'ArrowDown' || event.key === 'ArrowRight' ? 1 : -1;
-      var nextIndex = (index + direction + requestTabs.length) % requestTabs.length;
-      requestTabs[nextIndex].focus();
-      updateRequest(nextIndex);
-    });
-  });
 
   var advantages = document.querySelector('.ambassadors-advantages__slider');
   var previous = document.querySelector('.ambassadors-advantages__nav-btn[aria-label*="Предыдущее"]');
