@@ -124,6 +124,10 @@ body {
   grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr) minmax(0, 0.8fr);
 }
 
+.card-lab__facts--project .card-lab__fact {
+  text-align: center;
+}
+
 .card-lab__fact-label {
   color: #656462;
   font-size: 11px;
