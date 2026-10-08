@@ -447,7 +447,7 @@
     const feedbackTitle = feedbackModal.querySelector('.feedback-modal__title');
     const feedbackImage = feedbackModal.querySelector('.feedback-modal__hero-image');
 
-    feedbackTitle.textContent = 'За сколько можно продать вашу недвижимость?';
+    feedbackTitle.textContent = 'Узнайте рыночную стоимость вашей недвижимости';
     const feedbackIntro = document.createElement('p');
     feedbackIntro.className = 'feedback-modal__intro';
     feedbackIntro.textContent = 'Поможем определить рыночную стоимость и подготовить эффективную стратегию продажи.';
