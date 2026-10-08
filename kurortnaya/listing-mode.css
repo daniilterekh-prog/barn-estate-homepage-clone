@@ -45,7 +45,7 @@
 
 .catalog-mode-toolbar .catalog-mode-filters.catalog-quick-filters {
   display: flex;
-  flex: 1 1 auto;
+  flex: 3 1 0;
   gap: 8px;
   grid-template-columns: none;
   min-width: 0;
@@ -79,7 +79,8 @@
 }
 
 .catalog-mode-toolbar .catalog-grid__sort {
-  flex: 0 0 190px;
+  flex: 1 1 0;
+  min-width: 190px;
 }
 
 .catalog-mode-toolbar .catalog-grid__sort-select[data-v-5a2b3b97] {
@@ -88,8 +89,10 @@
   box-sizing: border-box;
   font-size: 14px;
   height: 56px;
+  min-width: 0;
   min-height: 54px;
   padding-left: 16px;
+  width: 100%;
 }
 
 .catalog-mode-switch__button:focus-visible,
@@ -185,7 +188,8 @@
   }
 
   .catalog-mode-toolbar .catalog-grid__sort {
-    flex-basis: 180px;
+    flex: 0 0 180px;
+    min-width: 180px;
   }
 }
   box-sizing: border-box;
