@@ -16,4 +16,6 @@ Headlines describe concrete services rather than abstract positioning: presentat
 
 Tab numbers use outlined square shapes with 1px radius, 42px desktop / 36px mobile; the active number has burgundy fill and white text. Labels sit to the right, vertically centred, with a 16px desktop / 10px mobile gap. Numbers never shrink; tab targets remain at least 48px tall. Top indicator lines are removed. This is an intentional user-requested component variant.
 
+Tab labels use 22/26.4px, weight 400, and 18/21.6px up to 600px. The tab grid is four columns on desktop, two up to 1000px, and one up to 360px to retain readable labels beside the numbers without overflow. Number typography is unchanged.
+
 The introductory sentence beside the section title and the channel-selection note were removed at the user's request. Publication of both owner routes was explicitly authorised on 2026-10-08. Shared files remain scoped to these routes; other landing pages are unaffected.

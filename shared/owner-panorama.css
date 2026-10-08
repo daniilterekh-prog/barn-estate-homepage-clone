@@ -102,6 +102,9 @@
   align-items: center;
   gap: 16px;
   min-height: 48px;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.2;
   border: 0;
   padding-top: 0;
 }
@@ -126,10 +129,12 @@
 }
 #why-barnes .be-tabs button:hover .be-number { border-color: var(--be-brand); }
 @container (max-width: 1000px) {
+  #why-barnes .be-tabs { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   #why-barnes .be-tab-panel { gap: 32px; }
 }
 @container (max-width: 600px) {
-  #why-barnes .be-tabs button { gap: 10px; }
+  #why-barnes .be-tabs button,
+  #why-barnes .be-tabs button[aria-selected=true] { gap: 10px; font-size: 18px; }
   #why-barnes .be-tabs .be-number { width: 36px; height: 36px; margin-bottom: 0; }
   #why-barnes .be-tab-panel {
     margin-top: 28px;
@@ -146,4 +151,7 @@
   }
   #why-barnes .be-panorama-footer { margin-top: 24px; }
   #why-barnes .be-panorama-footer .be-cta { margin-top: 0; }
+}
+@container (max-width: 360px) {
+  #why-barnes .be-tabs { grid-template-columns: 1fr; }
 }
