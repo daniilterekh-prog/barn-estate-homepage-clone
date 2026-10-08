@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CTA variants — BARNES Moscow</title>
+  <style>
+    @font-face{font-family:Tilda Sans;src:url('../../assets/fonts/TildaSans-Light.woff2') format('woff2');font-weight:300;font-display:swap}
+    @font-face{font-family:Tilda Sans;src:url('../../assets/fonts/TildaSans-Regular.woff2') format('woff2');font-weight:400;font-display:swap}
+    @font-face{font-family:Tilda Sans;src:url('../../assets/fonts/TildaSans-Medium.woff2') format('woff2');font-weight:500;font-display:swap}
+    :root{--ink:#1e1e1e;--muted:rgba(30,30,30,.58);--line:rgba(30,30,30,.18);--accent:#8b1d25;--paper:#fff;--soft:#f7f7f6;--container:1280px}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{background:#fff;color:var(--ink);font-family:'Tilda Sans',Arial,sans-serif;font-synthesis:none;margin:0}
+    button,input,textarea{font:inherit}
+    button{cursor:pointer}
+    .page-head{align-items:flex-end;border-bottom:1px solid var(--line);display:flex;gap:30px;justify-content:space-between;margin:0 auto;max-width:var(--container);padding:34px 32px 28px}
+    .page-head__eyebrow,.variant__number{color:var(--accent);font-size:12px;letter-spacing:.14em;margin:0;text-transform:uppercase}
+    .page-head__title{font-size:clamp(32px,4vw,58px);font-weight:300;letter-spacing:-.045em;line-height:.98;margin:14px 0 0;max-width:760px}
+    .page-head__note{color:var(--muted);font-size:15px;line-height:1.45;margin:0;max-width:260px;text-align:right}
+    .variant{border-bottom:1px solid var(--line);margin:0 auto;max-width:var(--container);padding:32px 32px 56px}
+    .variant__head{align-items:baseline;display:flex;gap:16px;margin:0 0 30px}
+    .variant__title{font-size:18px;font-weight:400;letter-spacing:.04em;margin:0;text-transform:uppercase}
+    .variant__description{color:var(--muted);font-size:15px;line-height:1.4;margin:0 0 30px;max-width:660px}
+    .cta{background:var(--paper);display:grid;gap:clamp(34px,6vw,90px);min-height:480px;position:relative}
+    .cta__copy{min-width:0}
+    .cta__eyebrow{color:var(--accent);font-size:12px;letter-spacing:.14em;line-height:1.3;margin:0 0 22px;text-transform:uppercase}
+    .cta__title{font-size:clamp(34px,4.5vw,62px);font-weight:300;letter-spacing:-.045em;line-height:.97;margin:0;max-width:620px}
+    .cta__lead{color:var(--muted);font-size:clamp(17px,1.6vw,22px);font-weight:300;line-height:1.35;margin:18px 0 26px;max-width:560px}
+    .methods{display:flex;flex-wrap:wrap;gap:9px;margin:0 0 24px}
+    .method{align-items:center;background:transparent;border:1px solid rgba(30,30,30,.32);border-radius:0;color:var(--ink);display:inline-flex;font-size:15px;gap:7px;min-height:36px;padding:6px 15px;transition:.2s ease}
+    .method__icon{display:block;flex:0 0 15px;height:15px;width:15px}
+    .method__icon--max{height:14px;width:14px}
+    .method:hover,.method.is-active{background:var(--accent);border-color:var(--accent);color:#fff}
+    .form{display:flex;flex-direction:column;gap:8px;max-width:610px}
+    .form__input,.form__textarea{background:transparent;border:0;border-bottom:1px solid var(--line);border-radius:0;color:var(--ink);font-size:16px;outline:0;padding:12px 0;width:100%}
+    .form__textarea{border:1px solid var(--line);border-radius:4px;min-height:84px;padding:12px 14px;resize:vertical}
+    .form__input:focus,.form__textarea:focus{border-color:var(--accent)}
+    .form__input::placeholder,.form__textarea::placeholder{color:rgba(30,30,30,.5)}
+    .form__submit,.outline-button{align-items:center;display:inline-flex;justify-content:center;min-height:56px;padding:12px 22px}
+    .form__submit{background:var(--accent);border:1px solid var(--accent);color:#fff;font-size:14px;letter-spacing:.08em;text-transform:uppercase;width:100%}
+    .form__consent{color:var(--muted);font-size:12px;line-height:1.4;margin:0}
+    .form__consent a{color:inherit;text-decoration:underline}
+    .outline-button{background:#fff;border:1px solid var(--accent);color:var(--accent);font-size:14px;letter-spacing:.06em;text-transform:uppercase}
+    .expert{display:flex;align-items:center;gap:12px}
+    .expert__photo{border:1px solid var(--line);border-radius:50%;height:58px;object-fit:cover;width:58px}
+    .expert__role{color:var(--muted);font-size:14px;line-height:1.2;margin:0 0 2px;text-transform:uppercase}
+    .expert__name{font-size:22px;font-weight:400;line-height:1.1;margin:0}
+    .expert-card{background:#fff;border:1px solid var(--line);display:flex;flex-direction:column;gap:18px;padding:clamp(26px,4vw,52px)}
+    .expert-card__title{font-size:clamp(30px,3.2vw,46px);font-weight:300;letter-spacing:-.04em;line-height:1;margin:0;max-width:470px}
+    .expert-card__text{color:var(--muted);font-size:18px;line-height:1.45;margin:0;max-width:430px}
+    .expert-card .outline-button{margin-top:0;width:100%}
+
+    /* 01 — editorial split */
+    .variant--editorial .cta{grid-template-columns:minmax(0,1.08fr) minmax(300px,.92fr)}
+    .variant--editorial .cta__copy{padding:14px 0}
+    .variant--editorial .expert-card{align-self:start;height:fit-content;margin-top:clamp(72px,6.7vw,104px)}
+
+    /* 02 — two clear scenarios */
+    .variant--scenarios .cta{border:1px solid var(--line);grid-template-columns:1fr 1fr;gap:0;min-height:0}
+    .variant--scenarios .cta__copy{padding:clamp(28px,4vw,56px)}
+    .variant--scenarios .cta__copy:first-child{border-right:1px solid var(--line)}
+    .variant--scenarios .cta__title{font-size:clamp(30px,3.4vw,48px)}
+    .variant--scenarios .scenario-label{color:var(--accent);font-size:12px;letter-spacing:.12em;margin:0 0 22px;text-transform:uppercase}
+    .variant--scenarios .scenario-text{color:var(--muted);font-size:17px;line-height:1.4;margin:20px 0 28px;max-width:390px}
+    .variant--scenarios .expert{margin-bottom:26px}
+
+    /* 03 — image accent */
+    .variant--photo .cta{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);min-height:560px}
+    .variant--photo .cta__copy{padding:clamp(34px,5vw,70px) 0}
+    .photo-panel{background:url('https://front.barnes.vsavr.ru/pictures/mock/contacts-background.png') center/cover;min-height:560px;position:relative}
+    .photo-panel::after{background:linear-gradient(180deg,transparent 45%,rgba(0,0,0,.58));content:"";inset:0;position:absolute}
+    .photo-panel__card{background:#fff;bottom:28px;left:28px;padding:20px 22px;position:absolute;width:min(320px,calc(100% - 56px));z-index:1}
+    .photo-panel__card .expert__photo{height:50px;width:50px}
+    .photo-panel__card .expert__role{color:var(--muted)}
+
+    /* 04 — minimal lines */
+    .variant--minimal .cta{display:block;min-height:0}
+    .variant--minimal .cta__copy{border-top:1px solid var(--ink);padding:44px 0 0}
+    .variant--minimal .cta__title{max-width:760px}
+    .variant--minimal .form{display:grid;gap:0 26px;grid-template-columns:1fr 1fr;max-width:none}
+    .variant--minimal .form__textarea,.variant--minimal .form__submit,.variant--minimal .form__consent{grid-column:1/-1}
+    .variant--minimal .form__submit{margin-top:22px;max-width:300px}
+    .variant--minimal .expert-card{align-items:center;border:0;border-top:1px solid var(--line);display:flex;flex-direction:row;gap:30px;margin-top:44px;padding:24px 0 0}
+    .variant--minimal .expert-card__title,.variant--minimal .expert-card__text{display:none}
+    .variant--minimal .expert-card .outline-button{margin:0 0 0 auto;width:auto}
+
+    /* 05 — personal selection */
+    .variant--selection .cta{background:var(--soft);border:1px solid var(--line);grid-template-columns:minmax(0,1.12fr) minmax(300px,.88fr);min-height:0;padding:clamp(30px,5vw,68px)}
+    .variant--selection .cta__copy{padding:0}
+    .selection-options{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 26px}
+    .selection-option{background:#fff;border:1px solid var(--line);color:var(--ink);font-size:14px;min-height:36px;padding:7px 14px}
+    .selection-option.is-active{border-color:var(--accent);color:var(--accent)}
+    .variant--selection .expert-card{background:#fff;border:0;padding:clamp(24px,3vw,40px)}
+    .variant--selection .expert-card__title{font-size:clamp(27px,3vw,40px)}
+
+    @media(max-width:760px){
+      .page-head{align-items:flex-start;display:block;padding:26px 20px 24px}
+      .page-head__note{margin-top:20px;text-align:left}
+      .variant{padding:48px 20px 58px}
+      .variant__head{display:block;margin-bottom:18px}
+      .variant__title{display:block;margin-bottom:8px}
+      .cta,.variant--editorial .cta,.variant--photo .cta,.variant--selection .cta{display:block;min-height:0}
+      .variant--editorial .cta__copy,.variant--photo .cta__copy{padding:0 0 34px}
+      .variant--editorial .expert-card{margin-top:28px}
+      .expert-card,.variant--selection .expert-card{margin-top:28px;padding:25px 20px}
+      .variant--scenarios .cta__copy{padding:28px 20px}
+      .variant--scenarios .cta__copy:first-child{border-bottom:1px solid var(--line);border-right:0}
+      .photo-panel{min-height:390px}
+      .variant--minimal .form{display:flex}
+      .variant--minimal .form__submit{max-width:none}
+      .variant--minimal .expert-card{align-items:flex-start;display:flex;flex-direction:column;gap:18px}
+      .variant--minimal .expert-card .outline-button{margin:0;width:100%}
+      .variant--selection .cta{padding:24px 20px}
+    }
+
+    @media(max-width:760px){
+      .variant--editorial .cta{border:1px solid var(--line);padding:28px 20px}
+      .variant--editorial .cta__copy{padding-bottom:0}
+      .variant--editorial .expert-card{border:0;border-top:1px solid var(--line);margin-top:6px;padding:26px 0 0}
+      .variant--editorial .expert-card .outline-button{margin-top:2px}
+      .variant--editorial .method{font-size:14px;min-height:35px;padding:6px 13px}
+    }
+
+    /* Keep the preview form aligned with the main site's email-form typography. */
+    .cta__lead{color:#1e1e1e}
+    .form__input,.form__textarea{color:#1e1e1e;font-size:20px;font-weight:400}
+    .form__input::placeholder,.form__textarea::placeholder{color:#7f7d7a;opacity:1}
+    .form__submit,.outline-button{font-size:16px;font-weight:400;letter-spacing:.02em;text-transform:none}
+    .expert__role{color:#4a4a4a;text-transform:none}
+    .expert-card__text{color:#4a4a4a}
+    @media(max-width:760px){
+      .form__input,.form__textarea{font-size:18px}
+      .form__submit,.outline-button{font-size:15px}
+    }
+
+    /* Dark format from the previous selected CTA. Layout, type scale and spacing stay unchanged. */
+    body{background:#262626;color:#fff}
+    .variant{border-bottom-color:#ffffff26}
+    .cta{background:#262626}
+    .cta__lead{color:#ffffffb3}
+    .method{border-color:#ffffff66;color:#fff}
+    .method:hover,.method.is-active{background:#fff;border-color:#fff;color:#1e1e1e}
+    .form__input,.form__textarea{border-color:#ffffff66;color:#fff}
+    .form__input::placeholder,.form__textarea::placeholder{color:#ffffff99}
+    .form__input:focus,.form__textarea:focus{border-color:#fff}
+    .form__consent{color:#ffffffb3}
+    .expert-card{background:#ffffff0d;border-color:#ffffff40}
+    .expert__photo{border-color:#fff}
+    .expert__role{color:#ffffffb3}
+    .expert__name,.expert-card__title{color:#fff}
+    .expert-card__text{color:#ffffffb3}
+    .outline-button{background:transparent;border-color:#fff;color:#fff}
+    .outline-button:hover{background:#fff;color:#1e1e1e}
+    body{overflow-x:hidden}
+    .cta{align-items:center;background:#262626;overflow:visible}
+    .cta__media{height:100%;isolation:isolate;left:50%;overflow:hidden;position:absolute;top:0;transform:translateX(-50%);width:100vw;z-index:0}
+    .cta__media img{display:block;height:100%;inset:0;object-fit:cover;object-position:center;position:absolute;width:100%}
+    .cta__media:after{background:rgba(0,0,0,.18);content:"";inset:0;position:absolute}
+    .cta__copy,.expert-card{position:relative;z-index:1}
+    .variant--editorial .expert-card{align-self:center;margin-top:0}
+  </style>
+</head>
+<body>
+  <main>
+    <section class="variant variant--editorial">
+      <div class="cta">
+        <div class="cta__media" aria-hidden="true"><img src="https://front.barnes.vsavr.ru/pictures/mock/contacts-background.png" alt="" width="1920" height="800" /></div>
+        <div class="cta__copy">
+          <h3 class="cta__title">У Вас есть вопросы?</h3>
+          <p class="cta__lead">Эксперты BARNES подскажут и помогут сориентироваться в городском рынке недвижимости.</p>
+          <div class="methods"><button class="method is-active"><svg class="method__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h3l2 5-2 1.4a12.5 12.5 0 0 0 5.6 5.6L15 14l5 2v3c0 1.1-.9 2-2 2C10.3 21 3 13.7 3 5c0-1.1.9-2 2-2Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/></svg><span>Звонок</span></button><button class="method"><svg class="method__icon method__icon--max" viewBox="0 0 42 42" aria-hidden="true"><path d="M21.47 41.88c-4.11 0-6.02-.6-9.34-3-2.1 2.7-8.75 4.81-9.04 1.2 0-2.71-.6-5-1.28-7.5C1 29.5.08 26.07.08 21.1.08 9.23 9.82.3 21.36.3c11.55 0 20.6 9.37 20.6 20.91a20.6 20.6 0 0 1-20.49 20.67m.17-31.32c-5.62-.29-10 3.6-10.97 9.7-.8 5.05.62 11.2 1.83 11.52.58.14 2.04-1.04 2.95-1.95a10.4 10.4 0 0 0 5.08 1.81 10.7 10.7 0 0 0 5.08 1.81 10.7 10.7 0 0 0 11.19-9.97 10.7 10.7 0 0 0-10.08-11.1Z" fill="currentColor"/></svg><span>MAX</span></button><button class="method"><svg class="method__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26C2.158 6.443 6.593 2.009 12.045 2.009c2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884Z" fill="currentColor"/></svg><span>Whatsapp</span></button><button class="method"><svg class="method__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.036.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635Z" fill="currentColor"/></svg><span>Telegram</span></button></div>
+          <form class="form"><input class="form__input" placeholder="Введите Ваше имя"><input class="form__input" placeholder="Ваш номер телефона"><textarea class="form__textarea" rows="3" placeholder="Оставьте свой комментарий"></textarea><button class="form__submit">Отправить заявку</button><p class="form__consent">Я даю согласие на <a href="#">обработку персональных данных</a></p></form>
+        </div>
+        <aside class="expert-card"><div class="expert"><img class="expert__photo" src="https://front.barnes.vsavr.ru/pictures/mock/expert.png" alt="Александра"><div><p class="expert__role">Эксперт проекта</p><p class="expert__name">Александра</p></div></div><h3 class="expert-card__title">Поможем найти подходящий объект</h3><p class="expert-card__text">Расскажите, какую недвижимость вы ищете. Эксперт подберёт подходящие варианты и поможет сравнить предложения.</p><button class="outline-button">Получить подборку</button></aside>
+      </div>
+    </section>
+
+  </main>
+</body>
+</html>

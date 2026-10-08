@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Сравнение вариантов карточек — BARNES Moscow</title>
+    <link rel="stylesheet" href="card-variants.css" />
+  </head>
+  <body>
+    <main class="variants-page">
+      <header class="variants-header">
+        <div>
+          <p class="variants-header__eyebrow">BARNES MOSCOW · CARD STUDY 02</p>
+          <h1>Пять спокойных<br />сценариев карточки</h1>
+          <p>Пересобрал листинг вокруг объекта: три ровные карточки в ряд, сначала образ и цена, затем короткий паспорт и два понятных действия.</p>
+        </div>
+        <nav class="variants-nav" aria-label="Навигация по вариантам">
+          <a href="#editorial">01 Editorial</a>
+          <a href="#dossier">02 Dossier</a>
+          <a href="#noir">03 Noir</a>
+          <a href="#sheet">04 Sheet</a>
+          <a href="#rail">05 Rail</a>
+        </nav>
+      </header>
+
+      <section class="variant variant--editorial" id="editorial" aria-labelledby="variant-editorial-title">
+        <div class="variant__header"><span>01</span><h2 id="variant-editorial-title">Editorial</h2><p>Изображение ведёт, белая карточка собирает решение.</p></div>
+        <div class="variant__grid" data-variant="editorial"></div>
+      </section>
+
+      <section class="variant variant--dossier" id="dossier" aria-labelledby="variant-dossier-title">
+        <div class="variant__header"><span>02</span><h2 id="variant-dossier-title">Dossier</h2><p>Тонкий паспорт объекта — для каталога с высокой плотностью.</p></div>
+        <div class="variant__grid" data-variant="dossier"></div>
+      </section>
+
+      <section class="variant variant--noir" id="noir" aria-labelledby="variant-noir-title">
+        <div class="variant__header"><span>03</span><h2 id="variant-noir-title">Noir collection</h2><p>Тёмная подборка с контрастной ценой и спокойными действиями.</p></div>
+        <div class="variant__grid" data-variant="noir"></div>
+      </section>
+
+      <section class="variant variant--sheet" id="sheet" aria-labelledby="variant-sheet-title">
+        <div class="variant__header"><span>04</span><h2 id="variant-sheet-title">Sheet</h2><p>Чистый лист с визуальным приоритетом и большим воздухом.</p></div>
+        <div class="variant__grid" data-variant="sheet"></div>
+      </section>
+
+      <section class="variant variant--rail" id="rail" aria-labelledby="variant-rail-title">
+        <div class="variant__header"><span>05</span><h2 id="variant-rail-title">Rail</h2><p>Вертикальная красная линия маркирует объект и держит ритм ряда.</p></div>
+        <div class="variant__grid" data-variant="rail"></div>
+      </section>
+    </main>
+    <script src="card-variants.js"></script>
+  </body>
+</html>

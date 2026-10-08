@@ -1,0 +1,124 @@
+@font-face{font-family:"Tilda Sans";src:url("../../assets/fonts/TildaSans-Light.woff2") format("woff2");font-display:swap;font-style:normal;font-weight:300}
+@font-face{font-family:"Tilda Sans";src:url("../../assets/fonts/TildaSans-Regular.woff2") format("woff2");font-display:swap;font-style:normal;font-weight:400}
+@font-face{font-family:"Tilda Sans";src:url("../../assets/fonts/TildaSans-Medium.woff2") format("woff2");font-display:swap;font-style:normal;font-weight:500}
+:root{--paper:#fff;--surface:#fff;--ink:#17212b;--muted:#78808a;--line:rgba(23,33,43,.18);--red:#9c1d2d;--navy:#102b3a;font-family:"Tilda Sans",Arial,sans-serif;color:var(--ink);background:var(--paper);font-synthesis:none}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;min-width:320px}
+button,a{font:inherit}
+button{cursor:pointer}
+.variants-page{margin:0 auto;max-width:1920px;padding:clamp(28px,5vw,82px) clamp(20px,5vw,88px) 110px}
+.variants-header{align-items:end;border-bottom:1px solid var(--line);display:grid;gap:42px;grid-template-columns:minmax(0,1fr) auto;margin-bottom:86px;padding-bottom:34px}
+.variants-header__eyebrow{color:var(--muted);font-size:11px;letter-spacing:.18em;margin:0 0 25px;text-transform:uppercase}
+.variants-header h1{font-size:clamp(42px,5.5vw,78px);font-weight:300;letter-spacing:-.065em;line-height:.92;margin:0;max-width:850px}
+.variants-header>div>p:last-child{color:#53616d;font-size:17px;line-height:1.45;margin:28px 0 0;max-width:530px}
+.variants-nav{display:flex;flex-wrap:wrap;gap:9px;justify-content:flex-end;max-width:390px}
+.variants-nav a{border:1px solid var(--line);color:var(--ink);font-size:12px;padding:9px 11px;text-decoration:none;transition:background .2s ease,color .2s ease}
+.variants-nav a:hover,.variants-nav a:focus-visible{background:var(--ink);color:#fff}
+.variant{margin-bottom:112px;scroll-margin-top:22px}
+.variant__header{align-items:baseline;display:grid;gap:20px;grid-template-columns:36px auto minmax(0,1fr);margin-bottom:25px}
+.variant__header>span{color:var(--red);font-size:12px;letter-spacing:.14em}
+.variant__header h2{font-size:27px;font-weight:300;letter-spacing:-.04em;line-height:1;margin:0;text-transform:uppercase}
+.variant__header p{color:var(--muted);font-size:14px;line-height:1.35;margin:0}
+.variant__grid{align-items:stretch;display:grid;gap:24px;grid-template-columns:repeat(3,minmax(0,1fr))}
+.listing-card{display:flex;flex-direction:column;height:100%;min-width:0;position:relative}
+.listing-card__media{aspect-ratio:4 / 3;background:#dcdad5;flex:none;overflow:hidden;position:relative}
+.listing-card__media img{display:block;height:100%;object-fit:cover;transition:transform .6s cubic-bezier(.2,.7,.2,1);width:100%}
+.listing-card:hover .listing-card__media img{transform:scale(1.035)}
+.listing-card__media-bar{align-items:start;display:flex;justify-content:space-between;left:15px;position:absolute;right:15px;top:15px;z-index:2}
+.listing-card__media-bar>span{background:rgba(255,255,255,.93);color:var(--ink);font-size:11px;letter-spacing:.12em;padding:8px 9px;text-transform:uppercase}
+.listing-card__favorite{align-items:center;background:#fff;border:0;border-radius:50%;color:var(--ink);display:flex;font-size:22px;height:36px;justify-content:center;line-height:1;padding:0;width:36px}
+.listing-card__index{color:rgba(255,255,255,.9);font-size:12px;left:15px;letter-spacing:.12em;position:absolute;top:65px;z-index:2}
+.listing-card__info{display:flex;flex-direction:column;min-height:250px;padding:19px 0 0}
+.listing-card__topline{align-items:baseline;display:flex;justify-content:space-between}
+.listing-card__category-text{color:var(--red);font-size:11px;letter-spacing:.12em;text-transform:uppercase}
+.listing-card__id{color:var(--muted);font-size:13px;letter-spacing:.04em}
+.listing-card__info h3{font-size:20px;font-weight:400;line-height:1.08;margin:10px 0 15px;max-width:290px}
+.listing-card__address,.listing-card__specs{color:#65717a;font-size:14px;line-height:1.35;margin:0}
+.listing-card__specs{border-top:1px solid var(--line);margin-top:13px;padding-top:12px}
+.listing-card__stats{border-top:1px solid var(--line);display:grid;gap:10px;grid-template-columns:repeat(4,minmax(0,1fr));margin-top:15px;padding-top:12px}
+.listing-card__stats span{display:flex;flex-direction:column;gap:3px;min-width:0}
+.listing-card__stats b{font-size:16px;font-weight:400;line-height:1.1}
+.listing-card__stats small{color:var(--muted);font-size:12px;line-height:1.2;text-transform:lowercase}
+.listing-card__price-row{align-items:baseline;display:flex;justify-content:space-between;margin-top:17px}
+.listing-card__price{font-size:22px;font-weight:500;letter-spacing:-.025em;margin:0}
+.listing-card__area{color:var(--muted);font-size:10px;letter-spacing:.1em;text-transform:uppercase}
+.listing-card__actions{display:flex;gap:8px;margin-top:auto;padding-top:19px}
+.listing-card__actions button,.listing-card__actions a{align-items:center;display:flex;flex:1;font-size:15px;font-weight:400;justify-content:center;min-height:54px;padding:9px 8px;text-align:center;text-decoration:none;transition:background .2s ease,color .2s ease,border-color .2s ease;white-space:nowrap}
+.listing-card__call{background:transparent;border:1px solid var(--line);color:var(--ink)}
+.listing-card__call:hover,.listing-card__call:focus-visible{border-color:var(--ink);background:var(--ink);color:#fff}
+.listing-card__detail{background:var(--red);border:1px solid var(--red);color:#fff}
+.listing-card__detail:hover,.listing-card__detail:focus-visible{background:#741420;border-color:#741420}
+.listing-card__detail span{font-size:15px;margin-left:7px}
+
+/* 01 — editorial: white information sheet slightly enters the image */
+.variant--editorial .listing-card__info{background:var(--surface);margin:-35px 12px 0;padding:19px 18px 18px;position:relative;z-index:1}
+.variant--editorial .listing-card__actions{margin-left:-18px;margin-right:-18px;padding-left:18px;padding-right:18px}
+
+/* 02 — dossier: the content is a quiet catalog index */
+.variant--dossier .listing-card{border-top:1px solid var(--ink);padding-top:13px}
+.variant--dossier .listing-card__media{aspect-ratio:4 / 3}
+.variant--dossier .listing-card__index{bottom:14px;color:#fff;left:15px;top:auto}
+.variant--dossier .listing-card__media-bar{left:0;right:0;top:0}
+.variant--dossier .listing-card__media-bar>span{background:transparent;padding:4px 0}
+.variant--dossier .listing-card__favorite{border:1px solid var(--line)}
+.variant--dossier .listing-card__info h3{font-weight:300;letter-spacing:-.025em}
+.variant--dossier .listing-card__actions{border-top:1px solid var(--line);padding-top:14px}
+.variant--dossier .listing-card__call,.variant--dossier .listing-card__detail{background:transparent;border:0;color:var(--ink);justify-content:flex-start;padding-left:0;text-align:left;text-decoration:underline;text-decoration-color:var(--red);text-underline-offset:4px}
+.variant--dossier .listing-card__detail{justify-content:flex-end;padding-left:7px;padding-right:0}
+
+/* 03 — noir: one dark, coherent collection surface */
+.variant--noir{background:var(--navy);color:#fff;margin-left:calc(clamp(20px,5vw,88px) * -1);margin-right:calc(clamp(20px,5vw,88px) * -1);padding:50px clamp(20px,5vw,88px) 58px}
+.variant--noir .variant__header>span{color:#e7a2aa}
+.variant--noir .variant__header p{color:rgba(255,255,255,.58)}
+.variant--noir .listing-card__info{padding-top:19px}
+.variant--noir .listing-card__category-text{color:#e7a2aa}
+.variant--noir .listing-card__id,.variant--noir .listing-card__address,.variant--noir .listing-card__specs,.variant--noir .listing-card__area{color:rgba(255,255,255,.58)}
+.variant--noir .listing-card__specs{border-color:rgba(255,255,255,.25)}
+.variant--noir .listing-card__price{color:#fff}
+.variant--noir .listing-card__favorite{background:var(--navy);border:1px solid rgba(255,255,255,.5);color:#fff}
+.variant--noir .listing-card__call{border-color:rgba(255,255,255,.4);color:#fff}
+.variant--noir .listing-card__call:hover,.variant--noir .listing-card__call:focus-visible{background:#fff;border-color:#fff;color:var(--navy)}
+.variant--noir .listing-card__detail{background:#fff;border-color:#fff;color:var(--navy)}
+
+/* 04 — sheet: the object sits in a generous white catalog sheet */
+.variant--sheet .listing-card{background:#fff;padding:10px 10px 12px}
+.variant--sheet .listing-card__media{aspect-ratio:4 / 3}
+.variant--sheet .listing-card__media-bar{left:12px;right:12px;top:12px}
+.variant--sheet .listing-card__info{min-height:252px;padding:18px 10px 0}
+.variant--sheet .listing-card__actions{margin-left:-10px;margin-right:-10px}
+.variant--sheet .listing-card__call{border-color:var(--ink)}
+
+/* 05 — rail: the red edge becomes the single signature move */
+.variant--rail .listing-card{border-left:3px solid var(--red);padding-left:16px}
+.variant--rail .listing-card__media{aspect-ratio:4 / 3}
+.variant--rail .listing-card__media-bar{left:12px;right:12px;top:12px}
+.variant--rail .listing-card__media-bar>span{background:var(--red);color:#fff}
+.variant--rail .listing-card__index{bottom:14px;left:15px;top:auto}
+.variant--rail .listing-card__info{padding-top:18px}
+.variant--rail .listing-card__info h3{font-size:21px}
+
+@media screen and (max-width:1100px){
+  .variants-header{grid-template-columns:1fr}
+  .variants-nav{justify-content:flex-start;max-width:none}
+  .variant__grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media screen and (max-width:640px){
+  .variants-page{padding-inline:16px}
+  .variants-header{gap:28px;margin-bottom:60px}
+  .variants-header h1{font-size:47px}
+  .variants-header>div>p:last-child{font-size:16px}
+  .variants-nav{gap:7px}
+  .variants-nav a{font-size:11px;padding:8px 9px}
+  .variant{margin-bottom:78px}
+  .variant__header{gap:8px 13px;grid-template-columns:28px minmax(0,1fr)}
+  .variant__header h2{font-size:23px}
+  .variant__header p{grid-column:2;font-size:13px}
+  .variant__grid{grid-template-columns:1fr}
+  .variant--noir{margin-left:-16px;margin-right:-16px;padding:38px 16px 44px}
+  .listing-card__info h3{font-size:22px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .listing-card__media img,.variants-nav a,.listing-card__actions button,.listing-card__actions a{transition:none}
+}

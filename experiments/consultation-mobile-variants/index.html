@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Мобильные варианты блока консультации</title>
+    <link rel="stylesheet" href="../shared/styles.css?v=consultation-fullbleed-20260925" />
+    <style>
+      :root{--mobile-ink:#1e1e1e;--mobile-muted:#666;--mobile-line:#d2d2cf;--mobile-accent:#8b1d25;--mobile-dark:#242424;--mobile-photo:url("https://front.barnes.vsavr.ru/pictures/mock/contacts-man.png")}
+      *{box-sizing:border-box}
+      body{background:#f5f5f3;color:var(--mobile-ink);font-family:"Tilda Sans",Arial,sans-serif;margin:0}
+      button,input,textarea{font:inherit}
+      button{cursor:pointer}
+      .mobile-intro{background:#fff;border-bottom:1px solid var(--mobile-line);padding:28px 20px 30px}
+      .mobile-intro__eyebrow,.variant__label{color:var(--mobile-accent);font-size:11px;letter-spacing:.14em;margin:0;text-transform:uppercase}
+      .mobile-intro__title{font-size:clamp(34px,8vw,52px);font-weight:300;letter-spacing:-.055em;line-height:.98;margin:12px 0 0;max-width:650px}
+      .mobile-intro__note{color:var(--mobile-muted);font-size:15px;line-height:1.5;margin:16px 0 0;max-width:650px}
+      .variants{margin:0 auto;max-width:1100px;padding:36px 20px 80px}
+      .variant{border-bottom:1px solid var(--mobile-line);padding:0 0 42px}.variant+.variant{padding-top:42px}
+      .variant__head{align-items:baseline;display:flex;gap:14px;margin-bottom:8px}.variant__title{font-size:17px;font-weight:400;letter-spacing:.04em;margin:0;text-transform:uppercase}.variant__note{color:var(--mobile-muted);font-size:15px;line-height:1.45;margin:0 0 18px;max-width:560px}
+      .mobile-frame{background:var(--mobile-dark);box-shadow:0 10px 28px #00000012;margin:0;max-width:390px;overflow:hidden;width:100%}
+      .mobile-photo{background-color:#191919;background-image:var(--mobile-photo);background-repeat:no-repeat;position:relative}
+      .mobile-photo::after{background:linear-gradient(180deg,#00000008 0%,#00000020 55%,#00000070 100%);content:"";inset:0;pointer-events:none;position:absolute}
+      .mobile-form{background:var(--mobile-dark);color:#fff;padding:25px 20px 28px}
+      .mobile-form__eyebrow{color:#fff; font-size:11px;letter-spacing:.13em;line-height:1.3;margin:0 0 13px;text-transform:uppercase}
+      .mobile-form__title{font-size:31px;font-weight:300;letter-spacing:-.05em;line-height:1.05;margin:0}
+      .mobile-form__lead{color:#ffffffb3;font-size:15px;font-weight:300;line-height:1.4;margin:12px 0 18px}
+      .mobile-methods{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px}.mobile-method{align-items:center;background:transparent;border:1px solid #ffffff80;border-radius:0;color:#fff;display:inline-flex;font-size:14px;gap:6px;line-height:1;min-height:34px;padding:7px 10px}.mobile-method.is-active{background:#fff;border-color:#fff;color:var(--mobile-ink)}.mobile-method svg{display:block;flex:0 0 14px;height:14px;width:14px}.mobile-method svg.icon-max{height:13px;width:13px}
+      .mobile-form__fields{display:flex;flex-direction:column;gap:7px}.mobile-field{background:transparent;border:0;border-bottom:1px solid #ffffff66;color:#fff;font-size:16px;font-weight:300;line-height:1.3;outline:0;padding:12px 0 9px;width:100%}.mobile-field::placeholder{color:#ffffffa8}.mobile-comment{background:transparent;border:1px solid #ffffff66;border-radius:0;color:#fff;font-size:16px;line-height:1.3;min-height:74px;padding:11px 12px;resize:vertical;width:100%}.mobile-comment::placeholder{color:#ffffffa8}.mobile-submit{background:var(--mobile-accent);border:1px solid var(--mobile-accent);color:#fff;font-size:15px;min-height:52px;margin-top:4px;padding:12px 18px;width:100%}.mobile-consent{align-items:flex-start;color:#ffffffa8;display:flex;font-size:12px;gap:9px;line-height:1.35;margin-top:14px}.mobile-consent input{accent-color:#fff;margin:2px 0 0}.mobile-consent a{color:inherit;text-decoration:underline;text-underline-offset:2px}
+      .mobile-expert{align-items:center;display:flex;gap:12px;margin-bottom:18px}.mobile-expert__photo{background:#262626;border:1px solid #fff;border-radius:50%;display:block;height:68px;overflow:hidden;width:68px}.mobile-expert__photo img{display:block;height:100%;object-fit:cover;object-position:50% 20%;transform:scale(1.15);transform-origin:50% 20%;width:100%}.mobile-expert__role{color:#ffffff8c;font-size:11px;letter-spacing:.1em;line-height:1.2;margin:0 0 4px;text-transform:uppercase}.mobile-expert__name{color:#fff;font-size:21px;font-weight:300;line-height:1.1;margin:0}
+
+      /* 01 — всё фото помещается целиком: лицо точно не обрезается. */
+      .variant--contained .mobile-photo{background-position:right center;background-size:contain;height:205px}
+      .variant--contained .mobile-form{padding-top:22px}
+      /* 02 — обычный кадр, но фокус смещён вправо к лицу. */
+      .variant--face-focus .mobile-photo{background-position:78% 9%;background-size:cover;height:230px}
+      .variant--face-focus .mobile-photo{display:none}.variant--face-focus .mobile-frame,.variant--face-focus .mobile-form{background:#262626}.variant--face-focus .mobile-form{padding-top:24px}
+      .variant--face-focus .mobile-form__eyebrow{display:none}
+      .variant--face-focus .mobile-method{flex:0 0 calc(50% - 4px);justify-content:center}
+      /* 03 — высокий портретный кадр: лицо и верх корпуса остаются в зоне внимания. */
+      .variant--portrait .mobile-photo{background-position:82% 8%;background-size:auto 145%;height:300px}
+      /* 04 — фото отдельной верхней панелью, форма начинается на спокойном фоне. */
+      .variant--top-panel .mobile-photo{background-position:83% 13%;background-size:cover;height:250px}.variant--top-panel .mobile-form{background:#fff;color:var(--mobile-ink)}.variant--top-panel .mobile-form__eyebrow{color:var(--mobile-accent)}.variant--top-panel .mobile-form__lead{color:#666}.variant--top-panel .mobile-method{border-color:#1e1e1e55;color:var(--mobile-ink)}.variant--top-panel .mobile-method.is-active{background:var(--mobile-accent);border-color:var(--mobile-accent);color:#fff}.variant--top-panel .mobile-field{border-color:#1e1e1e44;color:var(--mobile-ink)}.variant--top-panel .mobile-field::placeholder,.variant--top-panel .mobile-comment::placeholder{color:#666}.variant--top-panel .mobile-comment{border-color:#1e1e1e44;color:var(--mobile-ink)}.variant--top-panel .mobile-consent{color:#666}
+      /* 05 — лицо крупнее, но закреплено в безопасной зоне справа. */
+      .variant--face-hero .mobile-photo{background-position:86% 4%;background-size:auto 170%;height:285px}.variant--face-hero .mobile-form{margin-top:-1px}
+      @media(min-width:760px){.mobile-frame{margin:0}.variants{padding-inline:32px}}
+      @media(max-width:390px){.mobile-form{padding-inline:16px}.mobile-form__title{font-size:29px}.mobile-method{font-size:13px;padding-inline:9px}}
+    </style>
+  </head>
+  <body>
+    <header class="mobile-intro">
+      <p class="mobile-intro__eyebrow">BARNES Moscow / mobile CTA</p>
+      <h1 class="mobile-intro__title">Мобильная версия блока консультации</h1>
+      <p class="mobile-intro__note">Серый блок в стиле футера с круглым портретом эксперта и формой консультации.</p>
+    </header>
+    <main class="variants" id="variants"></main>
+
+    <script>
+      const icon={
+        phone:'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h3l2 5-2 1.4a12.5 12.5 0 0 0 5.6 5.6L15 14l5 2v3c0 1.1-.9 2-2 2C10.3 21 3 13.7 3 5c0-1.1.9-2 2-2Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/></svg>',
+        max:'<svg class="icon-max" viewBox="0 0 42 42" aria-hidden="true"><path d="M21.47 41.88c-4.11 0-6.02-.6-9.34-3-2.1 2.7-8.75 4.81-9.04 1.2 0-2.71-.6-5-1.28-7.5C1 29.5.08 26.07.08 21.1.08 9.23 9.82.3 21.36.3c11.55 0 20.6 9.37 20.6 20.91a20.6 20.6 0 0 1-20.49 20.67m.17-31.32c-5.62-.29-10 3.6-10.97 9.7-.8 5.05.62 11.2 1.83 11.52.58.14 2.04-1.04 2.95-1.95a10.4 10.4 0 0 0 5.08 1.81 10.7 10.7 0 0 0 11.19-9.97 10.7 10.7 0 0 0-10.08-11.1Z" fill="currentColor"/></svg>',
+        whatsapp:'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26C2.158 6.443 6.593 2.009 12.045 2.009c2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884Z" fill="currentColor"/></svg>',
+        telegram:'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635Z" fill="currentColor"/></svg>'
+      };
+      const variants=[
+        ['face-focus','Серый блок с экспертом','Верхняя фотография убрана: круглый портрет эксперта остаётся в форме, как в нижнем CTA сайта.']
+      ];
+      const methodMarkup=()=>[['phone','Звонок'],['max','MAX'],['whatsapp','Whatsapp'],['telegram','Telegram']].map(([key,label],i)=>`<button class="mobile-method${i===2?' is-active':''}" type="button" aria-pressed="${i===2}">${icon[key]}<span>${label}</span></button>`).join('');
+      const formMarkup=()=>`<div class="mobile-methods" role="group" aria-label="Способ связи">${methodMarkup()}</div><form class="mobile-form__fields"><input class="mobile-field" placeholder="Введите Ваше имя" autocomplete="name"><input class="mobile-field" placeholder="Ваш номер телефона" inputmode="tel" autocomplete="tel"><textarea class="mobile-comment" rows="2" placeholder="Оставьте свой комментарий"></textarea><button class="mobile-submit" type="submit">Отправить заявку</button><label class="mobile-consent"><input type="checkbox"><span>Я даю согласие на <a href="#">обработку персональных данных</a></span></label></form>`;
+      document.querySelector('#variants').innerHTML=variants.map(([kind,title,note],i)=>`<section class="variant variant--${kind}"><div class="variant__head"><span class="variant__label">0${i+1} / mobile</span><h2 class="variant__title">${title}</h2></div><p class="variant__note">${note}</p><div class="mobile-frame"><div class="mobile-photo" aria-hidden="true"></div><div class="mobile-form">${kind==='face-focus'?'<div class="mobile-expert"><div class="mobile-expert__photo"><img src="../../assets/expert-cutout.png" alt="Руслан Прусс" width="68" height="68"></div><div><p class="mobile-expert__role">Эксперт BARNES</p><p class="mobile-expert__name">Руслан Прусс</p></div></div>':''}<p class="mobile-form__eyebrow">Эксперты BARNES подскажут</p><h3 class="mobile-form__title">Эксперты BARNES подскажут</h3><p class="mobile-form__lead">Эксперты BARNES подскажут и помогут сориентироваться в городском рынке недвижимости.</p>${formMarkup()}</div></div></section>`).join('');
+      document.querySelectorAll('.mobile-methods').forEach((group)=>group.querySelectorAll('.mobile-method').forEach((button)=>button.addEventListener('click',()=>{group.querySelectorAll('.mobile-method').forEach((item)=>{item.classList.remove('is-active');item.setAttribute('aria-pressed','false')});button.classList.add('is-active');button.setAttribute('aria-pressed','true')})));
+      document.querySelectorAll('.mobile-form__fields').forEach((form)=>form.addEventListener('submit',(event)=>event.preventDefault()));
+    </script>
+  </body>
+</html>
