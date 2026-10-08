@@ -2,17 +2,23 @@
   {
     "width": 390,
     "mode": "focused-component",
-    "initial": "clear image, hidden description",
+    "initial": "12% shading, hidden description",
     "reveal": "touch toggle",
     "stableCardHeight": true,
+    "numbersAndTitlesAligned": true,
+    "artDeVivreLast": true,
+    "photosEnabled": true,
     "keyboard": "PASS"
   },
   {
     "width": 1440,
     "mode": "focused-component",
-    "initial": "clear image, hidden description",
+    "initial": "12% shading, hidden description",
     "reveal": "hover",
     "stableCardHeight": true,
+    "numbersAndTitlesAligned": true,
+    "artDeVivreLast": true,
+    "photosEnabled": false,
     "keyboard": "PASS"
   }
 ]

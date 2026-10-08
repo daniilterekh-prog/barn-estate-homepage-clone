@@ -1,11 +1,12 @@
 {
-  "width": 1440,
+  "width": 320,
   "mode": "focused-component",
   "initial": "12% shading, hidden description",
-  "reveal": "hover",
+  "reveal": "touch toggle",
   "stableCardHeight": true,
   "numbersAndTitlesAligned": true,
   "artDeVivreLast": true,
+  "allTenDescriptionsFit": true,
   "photosEnabled": false,
   "keyboard": "PASS"
 }

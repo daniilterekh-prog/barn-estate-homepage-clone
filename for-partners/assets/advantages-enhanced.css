@@ -19,7 +19,7 @@
   aspect-ratio: auto;
   border-radius: 1px;
   display: flex;
-  align-items: flex-end;
+  align-items: flex-start;
   background: #1e1e1e;
 }
 #advantages .ambassadors-advantages__media { position:absolute; inset:0; }
@@ -28,18 +28,18 @@
 }
 #advantages .ambassadors-advantages__overlay {
   position:absolute; inset:0;
-  background: rgba(0,0,0,.68);
-  opacity:0; transition:opacity 240ms ease;
+  background: rgba(0,0,0,.12);
+  opacity:1; transition:background-color 240ms ease;
 }
 #advantages .ambassadors-advantages__media::after {
   content:none;
 }
 @media(hover:hover) and (pointer:fine) {
-  #advantages .ambassadors-advantages__card:hover .ambassadors-advantages__overlay { opacity:1; }
+  #advantages .ambassadors-advantages__card:hover .ambassadors-advantages__overlay { background:rgba(0,0,0,.68); }
   #advantages .ambassadors-advantages__card:hover .ambassadors-advantages__description { max-height:240px; opacity:1; visibility:visible; margin-top:16px; }
 }
 #advantages .splide__track:focus-visible .is-active .ambassadors-advantages__overlay,
-#advantages .ambassadors-advantages__card.is-revealed .ambassadors-advantages__overlay { opacity:1; }
+#advantages .ambassadors-advantages__card.is-revealed .ambassadors-advantages__overlay { background:rgba(0,0,0,.68); }
 #advantages .splide__track:focus-visible .is-active .ambassadors-advantages__description,
 #advantages .ambassadors-advantages__card.is-revealed .ambassadors-advantages__description { max-height:240px; opacity:1; visibility:visible; margin-top:16px; }
 #advantages .ambassadors-advantages__reveal { display:none; }
@@ -60,6 +60,7 @@
   line-height: 16.1px;
   font-weight: 400;
   letter-spacing: .12em;
+  font-variant-numeric:tabular-nums;
   margin-bottom: 24px;
   text-shadow:0 1px 4px #000,0 1px 12px #000;
 }
@@ -78,6 +79,7 @@
   line-height: 28.8px;
   font-weight: 400;
   text-shadow:0 1px 4px #000,0 1px 12px #000;
+  min-height:86.4px;
 }
 #advantages .ambassadors-advantages__description {
   max-height:0; opacity:0; visibility:hidden; overflow:hidden;
@@ -108,7 +110,7 @@
   #advantages .ambassadors-advantages__text { font-size:15px; line-height:21px; }
   #advantages .ambassadors-advantages__card { min-height: 460px; }
   #advantages .ambassadors-advantages__card-copy { padding: 24px; }
-  #advantages .ambassadors-advantages__card-title { font-size:20px; line-height:24px; }
+  #advantages .ambassadors-advantages__card-title { font-size:20px; line-height:24px; min-height:72px; }
   #advantages .ambassadors-advantages__number { font-size:12px; line-height:14.4px; }
 }
 @media(min-width:1441px) {

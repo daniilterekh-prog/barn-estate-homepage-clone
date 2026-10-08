@@ -25,12 +25,12 @@ const fs=require('fs');
     assert.equal(style.h2.size,width<=1024?22:width>=1441?44:38);assert.equal(style.h2.weight,'300');
     assert.equal(style.lead.size,width<=1024?15:22);assert.equal(style.lead.weight,'300');
     assert.equal(style.body.size,16);assert.equal(style.body.line,22.4);assert.equal(style.body.weight,'400');
-    assert.equal(style.overflow,false);assert.equal(style.clipped,false);assert.equal(style.overlay,'rgba(0, 0, 0, 0.68)');
+    assert.equal(style.overflow,false);assert.equal(style.clipped,false);assert.equal(style.overlay,'rgba(0, 0, 0, 0.12)');
     const firstCard=root.locator('.ambassadors-advantages__card').first();
-    const opacity=()=>firstCard.evaluate(e=>getComputedStyle(e.querySelector('.ambassadors-advantages__overlay')).opacity);
-    assert.equal(await opacity(),'0');
-    await firstCard.hover();assert.equal(await opacity(),'1');
-    await page.mouse.move(0,0);assert.equal(await opacity(),'0');
+    const shade=()=>firstCard.evaluate(e=>getComputedStyle(e.querySelector('.ambassadors-advantages__overlay')).backgroundColor);
+    assert.equal(await shade(),'rgba(0, 0, 0, 0.12)');
+    await firstCard.hover();assert.equal(await shade(),'rgba(0, 0, 0, 0.68)');
+    await page.mouse.move(0,0);assert.equal(await shade(),'rgba(0, 0, 0, 0.12)');
     const mediaFillsCard = await root.locator('.ambassadors-advantages__card').first().evaluate(e=>{
       const c=e.getBoundingClientRect(),m=e.querySelector('.ambassadors-advantages__media').getBoundingClientRect();
       return Math.abs(c.width-m.width)<1&&Math.abs(c.height-m.height)<1;
