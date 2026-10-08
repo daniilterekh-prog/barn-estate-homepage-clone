@@ -2293,6 +2293,36 @@ body.owner-sale-reference-ui .owner-sale-hero .breadcrumbs__link {
   }
 }
 
+/* Team cards follow the approved owner-rent title/description hierarchy. */
+.owner-sale-reference-ui .owner-sale-services__text {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.owner-sale-reference-ui .owner-sale-services__text strong {
+  color: var(--owner-sale-ink);
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: 24px;
+}
+.owner-sale-reference-ui .owner-sale-services__text span {
+  color: var(--owner-sale-secondary);
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 28.16px;
+}
+.owner-sale-reference-ui .owner-sale-services__card:is(:hover, :focus-within) .owner-sale-services__text :is(strong, span) {
+  color: #fff;
+}
+@media (min-width: 541px) and (max-width: 1199px) {
+  .owner-sale-reference-ui .owner-sale-services__text strong { font-size: 16px; line-height: 19.2px; }
+}
+@media (max-width: 540px) {
+  .owner-sale-reference-ui .owner-sale-services__text { gap: 6px; }
+  .owner-sale-reference-ui .owner-sale-services__text span { font-size: 15px; line-height: 19.2px; }
+}
+
 /* Keep compact sticky controls keyboard-friendly without changing their visual contract. */
 .owner-sale-reference-ui :is(
   .owner-sale-sticky__request,

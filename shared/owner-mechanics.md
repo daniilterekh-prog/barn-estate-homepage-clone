@@ -22,3 +22,7 @@ The shared stylesheet `owner-mechanics.css` is loaded after each page's existing
 Rent's forced title-line wrapping is removed to fit the new left column naturally. The negative overlap with the next section is removed. The rent CTA invokes the existing hero request handler.
 
 Publication of both owner routes was explicitly authorised on 2026-10-08. Other landing pages are unaffected.
+
+## Team/service cards: sale parity with rent
+
+Sale retains all 11 original service descriptions and its original section title. Each card now has a concise title above the unchanged description, matching rental's strong/span hierarchy. Title: 20/24px, weight 400, primary ink; 541–1199px: 16/19.2px. Description: 22/28.16px, weight 300, secondary #4f4d49; up to 540px: 15/19.2px. Gap: 8px desktop, 6px mobile. On burgundy hover both text roles turn white. No rental service content is copied into sale. Implemented in the sale page's local JS/CSS, without modifying rental.
