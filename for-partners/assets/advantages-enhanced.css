@@ -27,7 +27,19 @@
   display:block; width:100%; height:100%; object-fit:cover; object-position:center;
 }
 #advantages .ambassadors-advantages__overlay {
-  position:absolute; inset:0; background: rgba(0,0,0,.64);
+  position:absolute; inset:0;
+  background: linear-gradient(180deg, rgba(0,0,0,.08), rgba(0,0,0,.25) 35%, rgba(0,0,0,.78) 75%, rgba(0,0,0,.86));
+}
+#advantages .ambassadors-advantages__media::after {
+  content:""; position:absolute; inset:0; background:rgba(0,0,0,.38);
+  opacity:0; transition:opacity 240ms ease; pointer-events:none;
+}
+@media(hover:hover) and (pointer:fine) {
+  #advantages .ambassadors-advantages__card:hover .ambassadors-advantages__media::after { opacity:1; }
+}
+#advantages .splide__track:focus-visible .is-active .ambassadors-advantages__media::after { opacity:1; }
+@media(prefers-reduced-motion:reduce) {
+  #advantages .ambassadors-advantages__media::after { transition:none; }
 }
 #advantages .ambassadors-advantages__card-copy {
   position: relative;
