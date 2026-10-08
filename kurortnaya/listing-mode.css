@@ -29,7 +29,7 @@
   font: inherit;
   font-size: 14px;
   font-weight: 400;
-  min-height: 50px;
+  min-height: 46px;
   padding: 10px 14px;
 }
 
@@ -45,66 +45,16 @@
   min-width: 0;
 }
 
-.catalog-mode-filter,
-.catalog-mode-toolbar .catalog-grid__sort-select {
-  background-color: #fff;
-  border: 1px solid #d7d7d7;
-  border-radius: 1px;
-  color: #1e1e1e;
-  cursor: pointer;
-  font: inherit;
-  font-size: 13px;
-  font-weight: 400;
-  min-height: 58px;
-  white-space: nowrap;
-}
-
-.catalog-mode-filter {
-  align-items: center;
-  display: inline-flex;
+.catalog-mode-filters .catalog-quick-filters__item {
   flex: 1 1 112px;
-  gap: 14px;
-  justify-content: space-between;
-  padding: 0 15px;
-}
-
-.catalog-mode-filter::after {
-  border-bottom: 1px solid currentColor;
-  border-right: 1px solid currentColor;
-  content: "";
-  height: 5px;
-  margin-top: -3px;
-  transform: rotate(45deg);
-  width: 5px;
-}
-
-.catalog-mode-filter--all::after {
-  background: linear-gradient(currentColor, currentColor) center / 9px 1px no-repeat,
-    linear-gradient(currentColor, currentColor) center / 1px 9px no-repeat;
-  border: 0;
-  height: 9px;
-  margin: 0;
-  transform: none;
-  width: 9px;
 }
 
 .catalog-mode-toolbar .catalog-grid__sort {
-  flex: 0 0 auto;
-}
-
-.catalog-mode-toolbar .catalog-grid__sort-select {
-  min-width: 170px;
-  padding-inline: 15px 38px;
-}
-
-.catalog-mode-filter:hover,
-.catalog-mode-toolbar .catalog-grid__sort-select:hover {
-  border-color: #1e1e1e;
+  flex: 0 0 210px;
 }
 
 .catalog-mode-switch__button:focus-visible,
-.catalog-mode-filter:focus-visible,
-.catalog-mode-toolbar .catalog-grid__sort-select:focus-visible {
+.catalog-mode-filters .catalog-quick-filters__button:focus-visible {
   outline: 2px solid #1e1e1e;
   outline-offset: 2px;
 }
@@ -173,7 +123,7 @@
     flex: 0 0 auto;
   }
 
-  .catalog-mode-filter {
+  .catalog-mode-filters .catalog-quick-filters__item {
     flex: 0 0 auto;
     min-width: 118px;
   }
@@ -194,8 +144,7 @@
     padding-inline: 10px;
   }
 
-  .catalog-mode-filter,
-  .catalog-mode-toolbar .catalog-grid__sort-select {
-    min-height: 54px;
+  .catalog-mode-toolbar .catalog-grid__sort {
+    flex-basis: 180px;
   }
 }
