@@ -6,7 +6,7 @@
 
   var stagesStylesheet = document.createElement('link');
   stagesStylesheet.rel = 'stylesheet';
-  stagesStylesheet.href = 'assets/how-it-works.css';
+  stagesStylesheet.href = 'assets/how-it-works.css?v=20261008-2';
   document.head.appendChild(stagesStylesheet);
 
   var requestsStylesheet = document.createElement('link');
@@ -46,6 +46,13 @@
       offerButton.classList.add('owner-sale-stages__cta');
       aside.appendChild(offerButton);
     }
+
+    var progress = document.createElement('div');
+    progress.className = 'partners-stages__progress';
+    progress.setAttribute('aria-hidden', 'true');
+    progress.innerHTML = '<span class="partners-stages__progress-label">Текущий этап</span><span class="partners-stages__progress-value"><strong>01</strong><span>/ 05</span></span><span class="partners-stages__progress-track"><span></span></span>';
+    aside.appendChild(progress);
+
     if (offer) offer.remove();
   }
 
@@ -132,6 +139,9 @@
     });
 
     section.classList.add('owner-sale-stages--scroll-ready');
+    section.style.setProperty('--partners-stages-progress', ((activeIndex + 1) / items.length * 100) + '%');
+    var progressCurrent = section.querySelector('.partners-stages__progress-value strong');
+    if (progressCurrent) progressCurrent.textContent = String(activeIndex + 1).padStart(2, '0');
     items.forEach(function (item, index) {
       item.classList.toggle('is-active', index === activeIndex);
       item.classList.toggle('is-past', index < activeIndex);
