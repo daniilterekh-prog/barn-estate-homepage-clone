@@ -85,7 +85,10 @@ const path=require('path');
    expectRole('.bd-mobile-picker',18,24,'400');
    expectRole('.bd-cta',width<=540?18:width>=1441?19:17,width<=540?19.8:width>=1441?20.9:18.7,'400');
    assert.equal(actual.button.height,width<=540?58:70);
-   if(width>900) assert.ok(actual.image.width<actual.copy.width);
+   if(width>900) {
+     assert.ok(actual.image.width<actual.copy.width);
+     assert.ok(Math.abs(actual.image.bottom-actual.button.bottom)<1,'Photo and CTA bottoms must align');
+   } else assert.equal(actual.image.height,width<=540?290:320);
    measurements.push(actual);
    if(process.env.SCREENSHOTS==='1' && ((width===390&&(i===1||i===6))||(width===1440&&i===1))) {
      await page.locator('.bd-photo').evaluate(img=>img.decode());
