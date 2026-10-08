@@ -6,7 +6,7 @@
 
   var stagesStylesheet = document.createElement('link');
   stagesStylesheet.rel = 'stylesheet';
-  stagesStylesheet.href = 'assets/how-it-works.css?v=20261008-4';
+  stagesStylesheet.href = 'assets/how-it-works.css?v=20261008-6';
   document.head.appendChild(stagesStylesheet);
 
   var requestsStylesheet = document.createElement('link');
