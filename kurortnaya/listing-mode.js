@@ -5,12 +5,16 @@
   const header = document.querySelector('.catalog-grid__header');
   const legacyFilters = document.querySelector('.catalog-quick-filters');
   const sort = document.querySelector('.catalog-grid__sort');
-  if (!list || !header || !sort || list.dataset.modeReady === 'true') return;
+  if (!list || !header || !sort || list.dataset.modeReady === 'true' || list.dataset.modeInitializing === 'true') return;
 
-  list.dataset.modeReady = 'true';
+  list.dataset.modeInitializing = 'true';
   const projectItems = [...list.querySelectorAll(':scope > .catalog-grid__item')];
   const projectItem = projectItems[0];
-  if (!projectItem) return;
+  if (!projectItem) {
+    delete list.dataset.modeInitializing;
+    list.dataset.modeReady = 'true';
+    return;
+  }
 
   projectItems.slice(1).forEach((item) => {
     item.hidden = true;
@@ -140,4 +144,7 @@
       lotItem.hidden = mode !== 'secondary';
     });
   });
+
+  delete list.dataset.modeInitializing;
+  list.dataset.modeReady = 'true';
 }());
