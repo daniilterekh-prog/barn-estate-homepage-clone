@@ -293,7 +293,6 @@
       ['.owner-sale-stages__title', 'МЕХАНИКА ПАРТНЁРСТВА'],
       ['.ambassadors-requests__title', 'НАПРАВЛЕНИЯ BARNES'],
       ['.ambassadors-advantages__title', 'ПАРТНЁРСТВО С BARNES'],
-      ['.catalog-contact__title', 'СВЯЗЬ С BARNES'],
       ['.catalog-faq__title', 'ПАРТНЁРСКАЯ ПРОГРАММА'],
       ['.newsletter-cta h2', 'BARNES / АНАЛИТИКА']
     ].forEach(function (item) {
