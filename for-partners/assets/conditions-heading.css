@@ -7,8 +7,8 @@
 }
 
 #conditions .ambassadors-conditions__copy { position:absolute; z-index:1; inset:auto 0 0; padding:32px; color:#fff; }
-#conditions .ambassadors-conditions__copy .ambassadors-conditions__title { display:block; height:auto; width:100%; padding:0; margin:0; }
-#conditions .ambassadors-conditions__description { margin:0; max-height:0; opacity:0; visibility:hidden; overflow:hidden; font:400 16px/22.4px "Tilda Sans",sans-serif; transition:max-height 240ms ease,opacity 240ms ease,margin-top 240ms ease,visibility 240ms; }
+#conditions .ambassadors-conditions__copy .ambassadors-conditions__title { display:block; height:auto; width:100%; padding:0; margin:0; font:400 24px/28.8px "Tilda Sans",sans-serif; letter-spacing:0; }
+#conditions .ambassadors-conditions__description { margin:0; max-height:0; opacity:0; visibility:hidden; overflow:hidden; font:400 16px/22.4px "Tilda Sans",sans-serif; letter-spacing:0; text-transform:none; transition:max-height 240ms ease,opacity 240ms ease,margin-top 240ms ease,visibility 240ms; }
 #conditions .ambassadors-conditions__overlay { transition:background 240ms ease; }
 #conditions .ambassadors-conditions__card:is(:has(button:focus-visible),.is-revealed) .ambassadors-conditions__overlay { background:rgba(0,0,0,.72); }
 #conditions .ambassadors-conditions__card:is(:has(button:focus-visible),.is-revealed) .ambassadors-conditions__description { margin-top:12px; max-height:180px; opacity:1; visibility:visible; }
@@ -21,7 +21,8 @@
   #conditions .ambassadors-conditions__card:hover .ambassadors-conditions__description { margin-top:12px; max-height:180px; opacity:1; visibility:visible; }
 }
 @media(max-width:1440px) { #conditions .ambassadors-conditions__copy { padding:24px; } }
-@media(max-width:540px) { #conditions .ambassadors-conditions__copy { padding:20px; } }
+@media(max-width:1024px) { #conditions .ambassadors-conditions__copy .ambassadors-conditions__title { font-size:20px; line-height:24px; } }
+@media(max-width:540px) { #conditions .ambassadors-conditions__copy { padding:20px; } #conditions .ambassadors-conditions__card { min-height:260px; } }
 @media(prefers-reduced-motion:reduce) { #conditions :is(.ambassadors-conditions__description,.ambassadors-conditions__overlay) { transition:none; } }
 
 #conditions .ambassadors-conditions__section-title {

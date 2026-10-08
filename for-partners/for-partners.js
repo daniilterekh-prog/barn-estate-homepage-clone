@@ -11,7 +11,7 @@
 
   var conditionsStylesheet = document.createElement('link');
   conditionsStylesheet.rel = 'stylesheet';
-  conditionsStylesheet.href = 'assets/conditions-heading.css?v=20261008-3';
+  conditionsStylesheet.href = 'assets/conditions-heading.css?v=20261008-4';
   document.head.appendChild(conditionsStylesheet);
 
   page.querySelectorAll('.ambassadors-conditions__reveal').forEach(function (button) {
