@@ -1,0 +1,1 @@
+import{d as i,C as s,G as n}from"./B9PCyV3B.js";const r=i({__name:"index",async setup(a){let t,e;return[t,e]=s(()=>n("/media/investitsii-v-kurortnuyu-nedvizhimost-rossii/",{})),await t,e(),()=>{}}});export{r as default};
