@@ -6,6 +6,24 @@
   max-width: 100%;
 }
 
+#conditions .ambassadors-conditions__copy { position:absolute; z-index:1; inset:auto 0 0; padding:32px; color:#fff; }
+#conditions .ambassadors-conditions__copy .ambassadors-conditions__title { display:block; height:auto; width:100%; padding:0; margin:0; }
+#conditions .ambassadors-conditions__description { margin:0; max-height:0; opacity:0; visibility:hidden; overflow:hidden; font:400 16px/22.4px "Tilda Sans",sans-serif; transition:max-height 240ms ease,opacity 240ms ease,margin-top 240ms ease,visibility 240ms; }
+#conditions .ambassadors-conditions__overlay { transition:background 240ms ease; }
+#conditions .ambassadors-conditions__card:is(:has(button:focus-visible),.is-revealed) .ambassadors-conditions__overlay { background:rgba(0,0,0,.72); }
+#conditions .ambassadors-conditions__card:is(:has(button:focus-visible),.is-revealed) .ambassadors-conditions__description { margin-top:12px; max-height:180px; opacity:1; visibility:visible; }
+#conditions .ambassadors-conditions__reveal { position:absolute; z-index:2; top:16px; right:16px; display:grid; place-items:center; width:40px; height:40px; padding:0; border:1px solid #fff; border-radius:1px; background:#fff; color:#1e1e1e; font:400 24px/1 "Tilda Sans",sans-serif; cursor:pointer; }
+#conditions .ambassadors-conditions__reveal:focus-visible { outline:2px solid #fff; outline-offset:4px; }
+@media(hover:hover) and (pointer:fine) {
+  #conditions .ambassadors-conditions__reveal { opacity:0; pointer-events:none; }
+  #conditions .ambassadors-conditions__reveal:focus-visible { opacity:1; pointer-events:auto; }
+  #conditions .ambassadors-conditions__card:hover .ambassadors-conditions__overlay { background:rgba(0,0,0,.72); }
+  #conditions .ambassadors-conditions__card:hover .ambassadors-conditions__description { margin-top:12px; max-height:180px; opacity:1; visibility:visible; }
+}
+@media(max-width:1440px) { #conditions .ambassadors-conditions__copy { padding:24px; } }
+@media(max-width:540px) { #conditions .ambassadors-conditions__copy { padding:20px; } }
+@media(prefers-reduced-motion:reduce) { #conditions :is(.ambassadors-conditions__description,.ambassadors-conditions__overlay) { transition:none; } }
+
 #conditions .ambassadors-conditions__section-title {
   color: #1e1e1e;
   font-size: 38px;

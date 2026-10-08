@@ -11,8 +11,24 @@
 
   var conditionsStylesheet = document.createElement('link');
   conditionsStylesheet.rel = 'stylesheet';
-  conditionsStylesheet.href = 'assets/conditions-heading.css?v=20261008-2';
+  conditionsStylesheet.href = 'assets/conditions-heading.css?v=20261008-3';
   document.head.appendChild(conditionsStylesheet);
+
+  page.querySelectorAll('.ambassadors-conditions__reveal').forEach(function (button) {
+    var card = button.closest('.ambassadors-conditions__card');
+    button.addEventListener('click', function () {
+      var open = card.classList.toggle('is-revealed');
+      button.setAttribute('aria-expanded', String(open));
+      button.textContent = open ? '−' : '+';
+    });
+    button.addEventListener('keydown', function (event) {
+      if (event.key !== 'Escape') return;
+      card.classList.remove('is-revealed');
+      button.setAttribute('aria-expanded', 'false');
+      button.textContent = '+';
+      button.blur();
+    });
+  });
 
   var ownerShellStylesheet = document.createElement('link');
   ownerShellStylesheet.rel = 'stylesheet';
