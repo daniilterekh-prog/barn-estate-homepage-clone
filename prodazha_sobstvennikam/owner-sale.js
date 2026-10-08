@@ -418,7 +418,7 @@
     if (messengers && phone.parentElement !== messengers) messengers.appendChild(phone);
 
     list.innerHTML = [
-      ['Представление', 'presentation'],
+      ['Презентация', 'presentation'],
       ['Команда', 'team'],
       ['Этапы', 'stages'],
       ['Направления', 'property-types']
@@ -724,7 +724,7 @@
 
   page.querySelectorAll('.owner-sale-sticky__link').forEach(function (link) {
     link.addEventListener('click', function () {
-      const targets = { Представление: '#presentation', Команда: '#team', Этапы: '#stages', Направления: '#property-types' };
+      const targets = { Презентация: '#presentation', Команда: '#team', Этапы: '#stages', Направления: '#property-types' };
       const target = document.querySelector(targets[link.textContent.trim()]);
       if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
     });
