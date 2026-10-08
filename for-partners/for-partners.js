@@ -490,6 +490,10 @@
 
     if (previous) previous.disabled = advantageIndex === 0;
     if (next) next.disabled = advantageIndex === maxIndex;
+    var progress = document.querySelector('.ambassadors-advantages__progress');
+    if (progress) progress.textContent = String(advantageIndex + 1).padStart(2, '0') +
+      (visibleCount > 1 ? '–' + String(Math.min(advantageIndex + visibleCount, advantageCards.length)).padStart(2, '0') : '') +
+      ' / ' + advantageCards.length;
   }
 
   function moveAdvantages(direction) {
@@ -501,6 +505,16 @@
   if (next) next.addEventListener('click', function () { moveAdvantages(1); });
 
   if (advantagesTrack && advantagesList && advantageCards.length) {
+    advantagesTrack.addEventListener('keydown', function (event) {
+      if (event.key === 'ArrowRight' || event.key === 'ArrowLeft') {
+        event.preventDefault();
+        moveAdvantages(event.key === 'ArrowRight' ? 1 : -1);
+      } else if (event.key === 'Home' || event.key === 'End') {
+        event.preventDefault();
+        advantageIndex = event.key === 'Home' ? 0 : advantageCards.length;
+        updateAdvantages(true);
+      }
+    });
     advantagesTrack.addEventListener('pointerdown', function (event) {
       if (event.button !== undefined && event.button !== 0) return;
       advantageDragStart = event.clientX;
