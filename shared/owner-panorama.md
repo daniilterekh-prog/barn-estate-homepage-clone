@@ -22,4 +22,4 @@ The introductory sentence beside the section title and the channel-selection not
 
 ## Current request modal image
 
-Both owner routes use the existing real portrait `pictures/consultation/cta-ruslan-pruss.webp` in the modal's right column instead of a generated interior. The portrait has descriptive alt text, `object-fit: contain`, bottom-centred placement and a kit #f1f1f1 background, so the head is never cropped. Mobile retains the stacked layout with a 240px-tall contained portrait. Request fields and submission handlers are unchanged.
+Both owner routes use the existing real portrait `pictures/consultation/cta-ruslan-pruss.webp` in the modal's right column instead of a generated interior. The portrait has descriptive alt text, `object-fit: contain` and bottom-centred placement, so the head is never cropped. A separate generated old-money library background (`assets/modal-expert-old-money.webp`) sits behind the unmodified real cutout via CSS; this is not presented as an actual BARNES office. Mobile retains the stacked layout with a 240px-tall contained portrait. Request fields and submission handlers are unchanged.

@@ -574,7 +574,7 @@ body.owner-rent-reference-ui .owner-sale-hero .breadcrumbs__link {
 }
 
 .owner-rent-reference-ui .feedback-modal--owner-rent .feedback-modal__hero {
-  background: var(--owner-rent-ui-surface);
+  background: #eee6db url('../shared/assets/modal-expert-old-money.webp') center / cover no-repeat;
   max-width: 100%;
   min-height: 100%;
   min-width: 0;
@@ -726,6 +726,9 @@ body.owner-rent-reference-ui .owner-sale-hero .breadcrumbs__link {
   }
 
   .owner-rent-reference-ui .feedback-modal--owner-rent .feedback-modal__hero {
+    height: 240px;
+    max-height: none;
+    flex-shrink: 0;
     min-height: 0;
     order: -1;
   }
