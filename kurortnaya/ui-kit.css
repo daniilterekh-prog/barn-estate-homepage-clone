@@ -1,0 +1,222 @@
+/*
+ * BARNES transferable UI layer for the Kurortnaya page.
+ * Baseline: ../reference-ui.md (2026-10-07).
+ * Project/offer cards are intentionally outside this layer.
+ */
+
+:root {
+  --kit-font: "Tilda Sans", "Tilda Sans Fallback", system-ui, sans-serif;
+  --kit-text: #1e1e1e;
+  --kit-text-secondary: #4f4d49;
+  --kit-text-muted: #656462;
+  --kit-burgundy: #8b1d25;
+  --kit-gold: #e7c88f;
+  --kit-border: #e4e4e4;
+  --kit-h2-standard-size: 38px;
+  --kit-h2-standard-leading: 1.2;
+  --kit-h2-compact-size: 38px;
+  --kit-h2-compact-leading: 1;
+  --kit-h2-editorial-size: 44px;
+  --kit-h2-editorial-leading: 0.98;
+  --kit-eyebrow-size: 14px;
+  --kit-eyebrow-leading: 1.15;
+  --kit-eyebrow-gap: 25px;
+  --kit-action-height: 70px;
+  --kit-action-size: 17px;
+  --kit-action-padding: 36px;
+}
+
+html,
+body {
+  color: var(--kit-text);
+  font-family: var(--kit-font);
+}
+
+/* Headings outside the project-card component family. */
+html body :is(
+  .catalog-map__title,
+  .catalog-grid__title,
+  .departments-section__title,
+  .catalog-faq__title,
+  .catalog-consultation__mobile-title,
+  .catalog-consultation__subtitle,
+  .catalog-contact__title
+)[class] {
+  font-size: var(--kit-h2-standard-size);
+  font-weight: 300;
+  line-height: var(--kit-h2-standard-leading);
+}
+
+html body :is(.catalog-best-offers__title, .news-section__title)[class] {
+  font-size: var(--kit-h2-compact-size);
+  font-weight: 300;
+  line-height: var(--kit-h2-compact-leading);
+}
+
+html body .catalog-intro__title[class] {
+  font-size: var(--kit-h2-editorial-size);
+  font-weight: 300;
+  letter-spacing: -0.035em;
+  line-height: var(--kit-h2-editorial-leading);
+}
+
+html body .catalog-intro__lead[class] {
+  color: var(--kit-text-secondary);
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+html body :is(.catalog-intro__eyebrow, .news-section__eyebrow)[class] {
+  color: var(--kit-text-secondary);
+  font-size: var(--kit-eyebrow-size);
+  font-weight: 400;
+  letter-spacing: 0.12em;
+  line-height: var(--kit-eyebrow-leading);
+  text-transform: uppercase;
+}
+
+html body .catalog-intro__eyebrow[class] + .catalog-intro__title[class],
+html body .news-section__eyebrow[class] + .news-section__title[class] {
+  margin-top: var(--kit-eyebrow-gap);
+}
+
+/* Shared rectangular action contract. Card actions are deliberately excluded. */
+html body :is(
+  .catalog-hero-filters__submit,
+  .catalog-consultation__submit,
+  .catalog-contact__submit,
+  .catalog-contact__card-submit
+)[class] {
+  border-radius: 1px;
+  font-family: var(--kit-font);
+  font-size: var(--kit-action-size);
+  font-weight: 400;
+  height: var(--kit-action-height);
+  line-height: 1.1;
+  min-height: var(--kit-action-height);
+  padding-inline: var(--kit-action-padding);
+}
+
+html body :is(
+  .catalog-hero-filters__submit,
+  .catalog-consultation__submit,
+  .catalog-contact__submit,
+  .catalog-contact__card-submit,
+  .catalog-page-nav__request,
+  .site-footer__callback-btn,
+  .catalog-intro__toggle,
+  .catalog-grid__more,
+  .news-section__read-more
+)[class]:focus-visible,
+html body :is(
+  .catalog-consultation__input,
+  .catalog-consultation__textarea,
+  .catalog-contact__input,
+  .catalog-contact__textarea,
+  .catalog-hero-filters__search-input,
+  .catalog-projects-map__search-input,
+  .catalog-grid__sort-select
+)[class]:focus-visible {
+  outline: 2px solid var(--kit-gold);
+  outline-offset: 3px;
+}
+
+html body :is(.catalog-consultation__input, .catalog-contact__input)[class]:focus-visible {
+  border-bottom-color: #fff;
+}
+
+html body :is(.catalog-consultation__textarea, .catalog-contact__textarea)[class]:focus-visible {
+  border-color: #fff;
+}
+
+html body .site-footer__callback-btn[class] {
+  border-radius: 1px;
+  font-size: var(--kit-action-size);
+  font-weight: 400;
+  line-height: 1.1;
+  min-height: 56px;
+}
+
+@media (min-width: 541px) {
+  html body .site-footer__column-title[class] {
+    font-size: 18px;
+    line-height: 1;
+  }
+
+  html body .site-footer__link[class] {
+    font-size: 16px;
+    line-height: 1;
+  }
+}
+
+@media (min-width: 1200px) {
+  html body .site-footer__nav[class] {
+    align-items: start;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+
+  html body .site-footer__nav[class] > .site-footer__column:nth-child(6) { grid-column: 4; grid-row: 1; }
+  html body .site-footer__nav[class] > .site-footer__column:nth-child(4) { grid-column: 5; grid-row: 1; }
+  html body .site-footer__nav[class] > .site-footer__column:nth-child(5) { grid-column: 6; grid-row: 1; }
+  html body .site-footer__nav[class] > .site-footer__column:nth-child(7) { grid-column: 1; grid-row: 2; }
+  html body .site-footer__nav[class] > .site-footer__column:nth-child(8) { grid-column: 2; grid-row: 2; }
+  html body .site-footer__nav[class] > .site-footer__column:nth-child(9) { grid-column: 3; grid-row: 2; }
+}
+
+@media (min-width: 1441px) {
+  :root {
+    --kit-h2-standard-size: 44px;
+    --kit-h2-compact-size: 44px;
+    --kit-action-size: 19px;
+    --kit-action-padding: 47px;
+  }
+}
+
+@media (max-width: 540px) {
+  :root {
+    --kit-h2-standard-size: 22px;
+    --kit-h2-compact-size: 22px;
+    --kit-h2-editorial-size: 22px;
+    --kit-h2-editorial-leading: 1.2;
+    --kit-eyebrow-size: 12px;
+    --kit-eyebrow-leading: 1.2;
+    --kit-eyebrow-gap: 12px;
+    --kit-action-height: 58px;
+    --kit-action-size: 18px;
+    --kit-action-padding: 24px;
+  }
+
+  html body .catalog-intro__lead[class] {
+    font-size: 15px;
+    line-height: 1.4;
+  }
+
+  html body .site-footer__column-title[class] {
+    font-size: 14px;
+    line-height: 1.2;
+  }
+
+  html body .site-footer__link[class] {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.4;
+  }
+
+  html body .site-footer__callback-btn[class] {
+    font-size: 18px;
+    font-weight: 400;
+    min-height: 54px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}

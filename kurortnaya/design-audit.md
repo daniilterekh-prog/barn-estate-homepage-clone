@@ -328,6 +328,14 @@ breakpoints            = 540, 640, 768, 1024, 1280, 1440, 1920
 
 ## Audit History
 
+### 2026-10-08 — перенос reference UI Kit
+
+- Страница проверена по [`../reference-ui.md`](../reference-ui.md); карточки проектов и предложений намеренно исключены из переноса, так как их контракта в UI Kit пока нет.
+- Добавлен локальный слой `ui-kit.css`: H2 Standard/Compact/Editorial, eyebrow, lead, прямоугольные CTA, focus-visible, reduced-motion и footer приведены к утверждённым токенам.
+- `ui-kit-runtime.js` подключает слой после snapshot-стилей и добавляет доступные имена полям обеих форм; визуальные placeholder сохранены.
+- Подтверждены размеры CTA: `58px / 18px` на mobile, `70px / 17px` на desktop и `70px / 19px` на wide; footer mobile — `14px` для заголовков и `13px` для ссылок.
+- Проверены 390, 541, 768, 1024, 1280, 1440 и 1920 px: UI Kit загружается, корневого overflow нет, console errors/exceptions отсутствуют. Количество карточек осталось 5 mobile / 12 desktop.
+
 ### 2026-10-07
 
 - Повторно сняты desktop/mobile DOM и full-page screenshots с `https://front.barnes.vsavr.ru/kurortnaya/`.
