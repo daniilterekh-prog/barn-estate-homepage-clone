@@ -86,9 +86,12 @@
   transition:max-height 240ms ease,opacity 240ms ease,margin-top 240ms ease,visibility 240ms;
   margin: 0;
   color: #fff;
+  font-family: "Tilda Sans", sans-serif;
   font-size: 16px;
   line-height: 22.4px;
   font-weight: 400;
+  letter-spacing: 0;
+  text-transform: none;
 }
 #advantages .ambassadors-advantages__progress {
   color: #656462;
