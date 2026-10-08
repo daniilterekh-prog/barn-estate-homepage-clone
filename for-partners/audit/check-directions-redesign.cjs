@@ -24,6 +24,8 @@ const path=require('path');
    else await page.evaluate(i=>document.querySelector(`[data-pick="${i}"]`).click(),i);
    try { await page.waitForFunction(()=>{const img=document.querySelector('.bd-photo');return img.complete && img.naturalWidth>0;}); }
    catch(e){console.log({width,i,image:await page.locator('.bd-photo').evaluate(im=>({src:im.src,complete:im.complete,naturalWidth:im.naturalWidth})),active:await page.locator('.bd-navbtn[aria-selected="true"]').getAttribute('data-pick')});throw e;}
+   await page.locator('.bd-photo').evaluate(img=>img.decode());
+   await page.evaluate(()=>new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve))));
    const actual=await page.evaluate(()=>{
     const copy=document.querySelector('.bd-copy'), children=[...copy.children];
     const rect=e=>{const r=e.getBoundingClientRect();return {top:r.top,bottom:r.bottom,left:r.left,right:r.right,height:r.height,width:r.width}};
