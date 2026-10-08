@@ -43,7 +43,7 @@ const path=require('path');
    assert.equal(actual.button.height,width<=540?58:70);
    if(width>900) assert.ok(actual.image.width<actual.copy.width);
    measurements.push(actual);
-   if(process.env.SCREENSHOTS==='1' && (width===390||width===1440)&&(i===1||i===6)) await page.locator('#requests').screenshot({path:path.join(__dirname,`directions-redesign-${width}-${i}.png`)});
+   if(process.env.SCREENSHOTS==='1' && ((width===390&&(i===1||i===6))||(width===1440&&i===1))) await page.locator('#requests').screenshot({path:path.join(__dirname,`directions-redesign-${width}-${i}.png`)});
   }
   const first=measurements[0];
   for(const m of measurements){assert.ok(Math.abs(m.image.height-first.image.height)<1);assert.ok(Math.abs(m.button.top-first.button.top)<1);}
