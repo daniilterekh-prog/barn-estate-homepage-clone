@@ -565,7 +565,7 @@
     var presentationScenes = ['object-detail', 'positioning', 'viewing', 'legal', 'interior'];
     document.querySelectorAll('.owner-sale-presentation__card img').forEach(function (image, index) {
       if (!presentationScenes[index]) return;
-      var source = new URL('../shared/assets/presentation-v2/' + presentationScenes[index] + '.webp', window.location.href).href;
+      var source = new URL('../shared/assets/presentation-v3/' + presentationScenes[index] + '.webp', window.location.href).href;
       if (image.src !== source) image.src = source;
     });
     var descriptions = [
