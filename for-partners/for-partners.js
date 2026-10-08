@@ -37,7 +37,7 @@
 
   var modalStylesheet = document.createElement('link');
   modalStylesheet.rel = 'stylesheet';
-  modalStylesheet.href = 'assets/partner-modal.css?v=20261008-1';
+  modalStylesheet.href = 'assets/partner-modal.css?v=20261008-2';
   document.head.appendChild(modalStylesheet);
 
   var faqStylesheet = document.createElement('link');
@@ -204,7 +204,7 @@
     modal.setAttribute('role', 'dialog');
     modal.setAttribute('aria-modal', 'true');
     modal.setAttribute('aria-labelledby', 'partners-modal-title');
-    modal.innerHTML = '<div class="feedback-modal__overlay" aria-hidden="true"></div><div class="feedback-modal__content" tabindex="-1"><button type="button" class="feedback-modal__close" aria-label="Закрыть форму"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"></path></svg></button><div class="feedback-modal__layout"><div class="feedback-modal__body"><h2 class="feedback-modal__title" id="partners-modal-title">Направить клиента</h2><p class="feedback-modal__intro">Знакомьте нас с клиентами, которым нужна помощь с недвижимостью, и получайте вознаграждение после сделки.</p><form class="feedback-modal__form" novalidate><div class="feedback-modal__channels" role="group" aria-label="Предпочтительный способ связи"><button type="button" data-channel="Telegram" aria-pressed="true">Telegram</button><button type="button" data-channel="WhatsApp" aria-pressed="false">WhatsApp</button><button type="button" data-channel="MAX" aria-pressed="false">MAX</button><button type="button" data-channel="Звонок" aria-pressed="false">Звонок</button></div><input type="hidden" name="preferredChannel" value="Telegram"><label class="feedback-modal__field"><span class="visually-hidden">Ваше имя</span><input class="feedback-modal__input" name="name" type="text" autocomplete="name" placeholder="Ваше имя" required></label><label class="feedback-modal__field"><span class="visually-hidden">Номер телефона в Telegram</span><input class="feedback-modal__input" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="Номер телефона в Telegram" required></label><button type="submit" class="feedback-modal__submit">Направить клиента</button><label class="feedback-modal__consent"><input class="feedback-modal__consent-input" type="checkbox" required><span class="feedback-modal__consent-box" aria-hidden="true"></span><span>Я даю согласие на обработку <a href="https://barn-estate.ru/legal_notices/yuridicheskie-uvedomleniya/" target="_blank" rel="noopener noreferrer">персональных данных</a></span></label><p class="feedback-modal__status" role="status" aria-live="polite"></p></form></div><div class="feedback-modal__hero"><img src="assets/media-05.png" alt="Премиальный интерьер BARNES" class="feedback-modal__hero-image" width="755" height="470"></div></div></div>';
+    modal.innerHTML = '<div class="feedback-modal__overlay" aria-hidden="true"></div><div class="feedback-modal__content" tabindex="-1"><button type="button" class="feedback-modal__close" aria-label="Закрыть форму"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"></path></svg></button><div class="feedback-modal__layout"><div class="feedback-modal__body"><h2 class="feedback-modal__title" id="partners-modal-title">Рекомендовать клиента</h2><p class="feedback-modal__intro">Оставьте свой контакт — обсудим рекомендацию клиента, его закрепление и условия вознаграждения.</p><form class="feedback-modal__form" novalidate><div class="feedback-modal__channels" role="group" aria-label="Предпочтительный способ связи"><button type="button" data-channel="Telegram" aria-pressed="true">Telegram</button><button type="button" data-channel="WhatsApp" aria-pressed="false">WhatsApp</button><button type="button" data-channel="MAX" aria-pressed="false">MAX</button><button type="button" data-channel="Звонок" aria-pressed="false">Звонок</button></div><input type="hidden" name="preferredChannel" value="Telegram"><label class="feedback-modal__field"><span class="visually-hidden">Ваше имя</span><input class="feedback-modal__input" name="name" type="text" autocomplete="name" placeholder="Ваше имя" required></label><label class="feedback-modal__field"><span class="visually-hidden">Номер телефона в Telegram</span><input class="feedback-modal__input" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="Номер телефона в Telegram" required></label><label class="feedback-modal__field"><span class="visually-hidden">Ваш запрос по партнёрству (необязательно)</span><textarea class="feedback-modal__input feedback-modal__textarea" name="message" rows="3" placeholder="Ваш запрос по партнёрству (необязательно)"></textarea></label><button type="submit" class="feedback-modal__submit">Рекомендовать клиента</button><label class="feedback-modal__consent"><input class="feedback-modal__consent-input" type="checkbox" required><span class="feedback-modal__consent-box" aria-hidden="true"></span><span>Я даю согласие на обработку <a href="https://barn-estate.ru/legal_notices/yuridicheskie-uvedomleniya/" target="_blank" rel="noopener noreferrer">персональных данных</a></span></label><p class="feedback-modal__status" role="status" aria-live="polite"></p></form></div><div class="feedback-modal__hero"><img src="assets/igor-bocharov.webp" alt="Игорь Бочаров" class="feedback-modal__hero-image" width="641" height="860"><div class="partner-modal-expert"><p>Игорь Бочаров</p><span>Заместитель директора</span></div></div></div></div>';
     document.body.appendChild(modal);
 
     var content = modal.querySelector('.feedback-modal__content');
@@ -229,6 +229,10 @@
       if (lastTrigger) lastTrigger.focus();
     }
     function openModal(trigger) {
+      var partnership = trigger && trigger.matches('.catalog-contact__card-submit, .floating-expert__card, .site-footer__callback-btn');
+      modal.querySelector('.feedback-modal__title').textContent = partnership ? 'Обсудить партнёрство' : 'Рекомендовать клиента';
+      modal.querySelector('.feedback-modal__intro').textContent = partnership ? 'Расскажите о вашей рекомендации или задайте вопрос об амбассадорской программе. Начнём с удобного для вас способа связи.' : 'Оставьте свой контакт — обсудим рекомендацию клиента, его закрепление и условия вознаграждения.';
+      modal.querySelector('.feedback-modal__submit').textContent = partnership ? 'Обсудить партнёрство' : 'Рекомендовать клиента';
       directionId.value = '';
       directionName.value = '';
       directionSummary.hidden = true;
@@ -261,10 +265,19 @@
     form.addEventListener('submit', function (event) {
       event.preventDefault();
       if (!form.reportValidity()) return;
-      status.textContent = 'Спасибо! Мы свяжемся с вами.';
+      status.textContent = 'Отправка заявок пока не подключена. Позвоните в BARNES: +7 (495) 182-50-79.';
     });
     document.addEventListener('keydown', function (event) {
       if (event.key === 'Escape' && !modal.hidden) closeModal();
+      if (event.key !== 'Tab' || modal.hidden) return;
+      var focusable = Array.from(content.querySelectorAll('button,input:not([type="hidden"]),textarea,a[href]')).filter(function (element) { return !element.disabled && element.getClientRects().length; });
+      var first = focusable[0];
+      var last = focusable[focusable.length - 1];
+      if (event.shiftKey && (document.activeElement === first || document.activeElement === content)) {
+        event.preventDefault(); last.focus();
+      } else if (!event.shiftKey && document.activeElement === last) {
+        event.preventDefault(); first.focus();
+      }
     });
     document.querySelectorAll('.ambassadors-hero__button--primary, .owner-sale-stages__offer-btn, .ambassadors-requests__button, .catalog-contact__card-submit, .site-footer__callback-btn, .floating-expert__card').forEach(function (button) {
       button.addEventListener('click', function (event) {
@@ -445,8 +458,11 @@
     button.addEventListener('click', function () {
       document.querySelectorAll('.catalog-contact__method').forEach(function (item) {
         item.classList.remove('catalog-contact__method--active');
+        item.setAttribute('aria-selected', String(item === button));
       });
       button.classList.add('catalog-contact__method--active');
+      var channel = document.querySelector('.catalog-contact__form input[name="preferredChannel"]');
+      if (channel) channel.value = button.textContent.trim();
     });
   });
 
@@ -584,8 +600,18 @@
   updateAdvantages(false);
 
   document.querySelectorAll('.catalog-contact__form, .newsletter-form').forEach(function (form) {
+    if (form.classList.contains('catalog-contact__form')) {
+      var channel = document.createElement('input');
+      channel.type = 'hidden'; channel.name = 'preferredChannel'; channel.value = 'WhatsApp';
+      form.appendChild(channel);
+    }
     form.addEventListener('submit', function (event) {
       event.preventDefault();
+      if (form.classList.contains('catalog-contact__form')) {
+        if (!form.reportValidity()) return;
+        form.querySelector('.catalog-contact__status').textContent = 'Отправка заявок пока не подключена. Позвоните в BARNES: +7 (495) 182-50-79.';
+        return;
+      }
       var required = form.querySelectorAll('[required]');
       var valid = true;
       required.forEach(function (input) {
