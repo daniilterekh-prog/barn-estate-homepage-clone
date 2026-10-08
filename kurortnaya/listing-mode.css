@@ -108,8 +108,32 @@
   width: 100%;
 }
 
+.catalog-mode-detailed-filters {
+  align-items: center;
+  background: #fff;
+  border: 1px solid #dedede;
+  border-radius: 1px;
+  color: #1e1e1e;
+  display: inline-flex;
+  flex: 0 0 56px;
+  height: 56px;
+  justify-content: center;
+  padding: 0;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.catalog-mode-detailed-filters:hover {
+  background: #f7f7f7;
+  border-color: #9f9f9f;
+}
+
+.catalog-mode-detailed-filters svg {
+  display: block;
+}
+
 .catalog-mode-switch__button:focus-visible,
-.catalog-mode-filters .catalog-quick-filters__button:focus-visible {
+.catalog-mode-filters .catalog-quick-filters__button:focus-visible,
+.catalog-mode-detailed-filters:focus-visible {
   outline: 2px solid #1e1e1e;
   outline-offset: 2px;
 }
