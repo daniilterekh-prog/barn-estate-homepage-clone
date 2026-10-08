@@ -1,0 +1,81 @@
+/* Typography alignment for the requests section. */
+#requests .ambassadors-requests__title {
+  font-size: 38px;
+  font-weight: 300;
+  line-height: 45.6px;
+}
+
+#requests .ambassadors-requests__tab {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 19.8px;
+  text-transform: none;
+}
+
+#requests .ambassadors-requests__stat-label {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+#requests .ambassadors-requests__stat-value {
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 33px;
+}
+
+#requests .ambassadors-requests__button {
+  border-radius: 1px;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 18.7px;
+  min-height: 70px;
+  padding-inline: 36px;
+}
+
+@media (min-width: 1441px) {
+  #requests .ambassadors-requests__title {
+    font-size: 44px;
+    line-height: 52.8px;
+  }
+
+  #requests .ambassadors-requests__button {
+    font-size: 19px;
+    line-height: 20.9px;
+    padding-inline: 47px;
+  }
+}
+
+@media (max-width: 1024px) {
+  #requests .partners-section-eyebrow {
+    font-size: 12px;
+    line-height: 14.4px;
+  }
+
+  #requests .ambassadors-requests__title {
+    font-size: 22px;
+    line-height: 26.4px;
+  }
+
+  #requests .ambassadors-requests__tab {
+    font-size: 14px;
+    line-height: 15.4px;
+  }
+
+  #requests .ambassadors-requests__stat-label {
+    font-size: 13px;
+    line-height: 18px;
+  }
+
+  #requests .ambassadors-requests__stat-value {
+    font-size: 24px;
+    line-height: 26.4px;
+  }
+
+  #requests .ambassadors-requests__button {
+    font-size: 18px;
+    line-height: 19.8px;
+    min-height: 58px;
+    padding-inline: 24px;
+  }
+}

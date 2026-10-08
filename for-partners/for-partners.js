@@ -9,6 +9,11 @@
   stagesStylesheet.href = 'assets/how-it-works.css';
   document.head.appendChild(stagesStylesheet);
 
+  var requestsStylesheet = document.createElement('link');
+  requestsStylesheet.rel = 'stylesheet';
+  requestsStylesheet.href = 'assets/requests-typography.css';
+  document.head.appendChild(requestsStylesheet);
+
   function enhanceHowItWorks() {
     var section = page.querySelector('#how-it-works');
     var aside = section && section.querySelector('.owner-sale-stages__aside');
