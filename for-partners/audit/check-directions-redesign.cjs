@@ -52,6 +52,7 @@ const path=require('path');
    });
    assert.equal(actual.overlaps,false);assert.equal(actual.internalOverflow,false);assert.equal(actual.overflow,false);assert.equal(actual.details,0);
    assert.ok(actual.font.includes('Tilda Sans'));
+   assert.equal(await page.locator('.bd-eyebrow').evaluate(e=>getComputedStyle(e).textAlign),'left');
    const t=actual.typography;
    assert.equal(t['h2'].size,width<=1024?22:width>=1441?44:38);
    assert.equal(t['.bd-heading h3'].size,width<=1024?20:24);

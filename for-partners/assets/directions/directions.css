@@ -4,7 +4,7 @@
 #barnes-directions .bd-window { width:100%; max-width:none; color:var(--bd-ink); }
 #barnes-directions .bd-section { padding:64px 0; }
 #barnes-directions :is(h2,h3,p) { margin:0; }
-#barnes-directions .bd-eyebrow { font-size:14px; line-height:16.1px; font-weight:400; letter-spacing:.12em; color:var(--bd-gray); text-align:center; margin-bottom:25px; }
+#barnes-directions .bd-eyebrow { font-size:14px; line-height:16.1px; font-weight:400; letter-spacing:.12em; color:var(--bd-gray); text-align:left; margin-bottom:25px; }
 #barnes-directions h2 { font-size:38px; line-height:45.6px; font-weight:300; margin-bottom:40px; }
 #barnes-directions .bd-horizontal { display:flex; flex-wrap:wrap; gap:0 24px; border-bottom:1px solid var(--bd-line); margin-bottom:40px; }
 #barnes-directions .bd-navbtn { font:400 17px/23.8px "Tilda Sans",system-ui,sans-serif; padding:16px 0; color:var(--bd-gray); background:none; border:0; border-bottom:2px solid transparent; text-align:left; cursor:pointer; }
