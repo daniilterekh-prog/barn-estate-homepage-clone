@@ -1877,6 +1877,10 @@ body.owner-sale-reference-ui .owner-sale-hero .breadcrumbs__link {
     line-height: 85px;
   }
 
+  .owner-sale-reference-ui .catalog-consultation__image {
+    object-position: center top;
+  }
+
   .owner-sale-reference-ui .about-company {
     padding-inline: 0;
   }
