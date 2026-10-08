@@ -26,8 +26,10 @@ const assert = require('assert/strict');
     assert.equal(actual.h2.size,width<=1024?22:width>=1441?44:38);
     assert.equal(actual.h2.weight,'300'); assert.equal(actual.h3.weight,'400');
     assert.equal(actual.h3.size,width<=1024?18:width>=1441?22:20);
-    assert.equal(actual.body.size,16); assert.equal(actual.body.line,22.4); assert.equal(actual.body.weight,'300');
+    assert.equal(actual.body.size,16); assert.equal(actual.body.line,22.4); assert.equal(actual.body.weight,'400');
     assert.equal(actual.eyebrow.size,width<=1024?12:14);
+    const lead = await page.locator('.be-intro').evaluate(e=>{const s=getComputedStyle(e);return {size:parseFloat(s.fontSize),line:parseFloat(s.lineHeight),weight:s.fontWeight}});
+    assert.equal(lead.size,width<=1024?15:22); assert.equal(lead.line,width<=1024?21:33); assert.equal(lead.weight,'300');
     assert.ok(actual.h2.family.includes('Tilda Sans'));
     assert.ok(actual.next.includes('catalog-contact'));
     if(width<=1024) assert.ok(actual.list.top>=actual.heading.bottom+31);
@@ -57,7 +59,7 @@ const assert = require('assert/strict');
       }
     }
     await page.locator('.barnes-experts').screenshot({path:path.join(__dirname,`experts-${width}.png`)});
-    results.push({width,...actual,geometry,errors});
+    results.push({width,...actual,lead,geometry,errors});
     await page.close();
   }
   await browser.close();
