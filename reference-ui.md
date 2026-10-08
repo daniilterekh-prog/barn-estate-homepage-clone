@@ -340,6 +340,18 @@ Footer-ссылки на мобильном больше не использую
 
 ### Дополнение типографики
 
+### Утверждённые блоки амбассадоров — 2026-10-08
+
+Каноническая библиотека: [barnes-assets / blocks / partners](https://github.com/daniilterekh-prog/barnes-assets/tree/main/blocks/partners). Общие tokens и подробные контракты: [UI-kit](https://github.com/daniilterekh-prog/barnes-assets/tree/main/ui-kit). Это reference-варианты для переноса, не автоматическая замена всех компонентов сайта.
+
+- Hover-описания условий и преимуществ:22/28.16px,300 desktop;16/22.4px,400 до1024px. Номера и заголовки фотокарточек выровнены сверху; постоянное затемнение преимуществ12%, раскрытие68%, условий72%; текст скрыт до hover/focus/tap.
+- Направления: подпись → значение во всех строках; labels/facts22/28.16px,300 desktop и16/22.4px,300 до1024. Фото и кнопка имеют общий нижний край; при переключении категории сохраняются размеры фото и Y кнопки. Комиссии и бюджеты не являются дизайн-токенами.
+- ContactCTA: H3 правой карточки22/26.4px,400; описание22/28.16px,300; имя22/26.4px,400; metadata13/18px,300. Radius1px, padding40px desktop/32px tablet, gap24px. Пользовательский портрет не подменяется AI.
+- **ContactSelector / compact**:35px desktop/tablet,29px до540px, labels17/19/18px,400, SVG18/22px, radius1px;4 колонки от1280 и2 ниже, gaps12px/16px, pointer-area44px. Это утверждённое узкое исключение: основной ActionButton остаётся70/58px.
+- Библиотечные блоки имеют scoped CSS, отдельные превью, источник/SHA, инструкции и initBlock. ID/ARIA уникализируются; onRequest/onSubmit подключаются явно. Preview не отправляет данные и не имитирует подключённую CRM.
+
+### Базовые дополнительные роли
+
 - H1 content-page: `clamp(48px, 5.2vw, 75px)`, weight `300`, line-height `.98`; mobile `35/35px`.
 - Wide H1 `85/85px` допустим только как документированное page-specific исключение шире `1920px`.
 - Breadcrumb: `13/18px` desktop и `12/16px` mobile.
