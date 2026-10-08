@@ -4,6 +4,100 @@
   var page = document.querySelector('.ambassadors-page');
   if (!page) return;
 
+  var stagesStylesheet = document.createElement('link');
+  stagesStylesheet.rel = 'stylesheet';
+  stagesStylesheet.href = 'assets/how-it-works.css';
+  document.head.appendChild(stagesStylesheet);
+
+  function enhanceHowItWorks() {
+    var section = page.querySelector('#how-it-works');
+    var aside = section && section.querySelector('.owner-sale-stages__aside');
+    var title = section && section.querySelector('.owner-sale-stages__title');
+    var offer = section && section.querySelector('.owner-sale-stages__offer');
+    var offerTitle = offer && offer.querySelector('.owner-sale-stages__offer-title');
+    var offerText = offer && offer.querySelector('.owner-sale-stages__offer-text');
+    var offerButton = offer && offer.querySelector('.owner-sale-stages__offer-btn');
+    if (!section || !aside || !title) return;
+
+    title.id = 'partners-stages-title';
+    section.setAttribute('aria-labelledby', title.id);
+    section.removeAttribute('aria-label');
+    aside.classList.add('owner-sale-stages__header');
+
+    if (offerTitle) {
+      offerTitle.className = 'partners-stages__lead';
+      aside.appendChild(offerTitle);
+    }
+    if (offerText) {
+      offerText.className = 'owner-sale-stages__intro';
+      aside.appendChild(offerText);
+    }
+    if (offerButton) {
+      offerButton.classList.add('owner-sale-stages__cta');
+      aside.appendChild(offerButton);
+    }
+    if (offer) offer.remove();
+  }
+
+  enhanceHowItWorks();
+
+  var stagesScrollFrame = null;
+  function updateStagesScrollState() {
+    var section = page.querySelector('#how-it-works');
+    var items = section ? Array.prototype.slice.call(section.querySelectorAll('.owner-sale-stages__item')) : [];
+    var headerBlock = section && section.querySelector('.owner-sale-stages__header');
+    var desktop = window.matchMedia('(min-width: 901px)').matches;
+    if (!section || !items.length) return;
+
+    if (!desktop) {
+      section.classList.remove('owner-sale-stages--scroll-ready');
+      items.forEach(function (item) {
+        item.classList.remove('is-active', 'is-past');
+        item.style.removeProperty('--partners-stages-last-offset');
+      });
+      return;
+    }
+
+    var alignmentLine = headerBlock ? parseFloat(window.getComputedStyle(headerBlock).top) : 120;
+    if (!Number.isFinite(alignmentLine)) alignmentLine = 120;
+
+    var lastItem = items[items.length - 1];
+    var currentLastOffset = parseFloat(lastItem.style.getPropertyValue('--partners-stages-last-offset')) || 0;
+    var naturalLastTop = lastItem.getBoundingClientRect().top - currentLastOffset;
+    var headerTop = headerBlock ? headerBlock.getBoundingClientRect().top : alignmentLine;
+    var lastOffset = Math.max(0, headerTop - naturalLastTop);
+    lastItem.style.setProperty('--partners-stages-last-offset', lastOffset + 'px');
+
+    var activeIndex = 0;
+    var closestDistance = Infinity;
+    items.forEach(function (item, index) {
+      var distance = Math.abs(item.getBoundingClientRect().top - alignmentLine);
+      if (distance < closestDistance) {
+        closestDistance = distance;
+        activeIndex = index;
+      }
+    });
+
+    section.classList.add('owner-sale-stages--scroll-ready');
+    items.forEach(function (item, index) {
+      item.classList.toggle('is-active', index === activeIndex);
+      item.classList.toggle('is-past', index < activeIndex);
+    });
+  }
+
+  function requestStagesScrollUpdate() {
+    if (stagesScrollFrame) return;
+    stagesScrollFrame = window.requestAnimationFrame(function () {
+      stagesScrollFrame = null;
+      updateStagesScrollState();
+    });
+  }
+
+  window.addEventListener('scroll', requestStagesScrollUpdate, { passive: true });
+  window.addEventListener('resize', requestStagesScrollUpdate, { passive: true });
+  window.addEventListener('load', requestStagesScrollUpdate, { once: true });
+  requestStagesScrollUpdate();
+
   var sliderStyle = document.createElement('style');
   sliderStyle.textContent = [
     '@media (max-width: 768px) { .ambassadors-advantages__slider .splide__slide { margin-right: 12px !important; width: calc(100% + 0px) !important; } }',
