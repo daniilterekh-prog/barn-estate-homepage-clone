@@ -439,13 +439,79 @@
     feedbackModal.querySelector('.feedback-modal__submit').setAttribute('data-v-0abc262e', '');
     document.body.appendChild(feedbackModal);
 
+    feedbackModal.classList.add('feedback-modal--owner-sale');
+    const feedbackLayout = feedbackModal.querySelector('.feedback-modal__layout');
+    const feedbackHero = feedbackModal.querySelector('.feedback-modal__hero');
+    const feedbackBody = feedbackModal.querySelector('.feedback-modal__body');
+    const feedbackForm = feedbackModal.querySelector('.feedback-modal__form');
+    const feedbackTitle = feedbackModal.querySelector('.feedback-modal__title');
+    const feedbackImage = feedbackModal.querySelector('.feedback-modal__hero-image');
+
+    feedbackTitle.textContent = 'За сколько можно продать вашу недвижимость?';
+    const feedbackIntro = document.createElement('p');
+    feedbackIntro.className = 'feedback-modal__intro';
+    feedbackIntro.textContent = 'Поможем определить рыночную стоимость и подготовить эффективную стратегию продажи.';
+    feedbackTitle.insertAdjacentElement('afterend', feedbackIntro);
+
+    feedbackHero.querySelectorAll('.feedback-modal__hero-overlay, .feedback-modal__brand').forEach(function (node) {
+      node.remove();
+    });
+    const feedbackPicture = document.createElement('picture');
+    const feedbackSource = document.createElement('source');
+    feedbackSource.media = '(max-width: 580px)';
+    feedbackSource.srcset = 'assets/feedback-hero.webp';
+    feedbackImage.parentNode.insertBefore(feedbackPicture, feedbackImage);
+    feedbackPicture.append(feedbackSource, feedbackImage);
+    feedbackImage.src = 'assets/feedback-modal-interior-desktop.webp';
+    feedbackImage.alt = 'Премиальный интерьер с панорамным видом';
+
+    const feedbackChannels = document.createElement('div');
+    feedbackChannels.className = 'feedback-modal__channels';
+    feedbackChannels.setAttribute('role', 'group');
+    feedbackChannels.setAttribute('aria-label', 'Способ связи');
+    const feedbackChannelValue = document.createElement('input');
+    feedbackChannelValue.type = 'hidden';
+    feedbackChannelValue.name = 'preferredChannel';
+    feedbackChannelValue.value = 'Telegram';
+    ['Telegram', 'WhatsApp', 'MAX', 'Звонок'].forEach(function (channel, index) {
+      const button = document.createElement('button');
+      button.type = 'button';
+      button.textContent = channel;
+      button.dataset.channel = channel;
+      button.setAttribute('aria-pressed', index === 0 ? 'true' : 'false');
+      feedbackChannels.appendChild(button);
+    });
+
+    const feedbackFields = feedbackForm.querySelectorAll('.feedback-modal__input');
+    feedbackForm.insertBefore(feedbackChannels, feedbackFields[0].closest('.feedback-modal__field'));
+    feedbackForm.appendChild(feedbackChannelValue);
+    feedbackFields[0].name = 'name';
+    feedbackFields[0].placeholder = 'Ваше имя';
+    feedbackFields[0].setAttribute('aria-label', 'Ваше имя');
+    feedbackFields[1].name = 'phone';
+    feedbackFields[1].placeholder = 'Номер телефона в Telegram';
+    feedbackFields[1].setAttribute('aria-label', 'Номер телефона в Telegram');
+    feedbackModal.querySelector('.feedback-modal__submit').textContent = 'Получить оценку';
+
+    feedbackChannels.addEventListener('click', function (event) {
+      const button = event.target.closest('button[data-channel]');
+      if (!button) return;
+      feedbackChannels.querySelectorAll('button').forEach(function (item) {
+        item.setAttribute('aria-pressed', String(item === button));
+      });
+      feedbackChannelValue.value = button.dataset.channel;
+      const phoneLabel = button.dataset.channel === 'Звонок' ? 'Номер телефона' : 'Номер телефона в ' + button.dataset.channel;
+      feedbackFields[1].placeholder = phoneLabel;
+      feedbackFields[1].setAttribute('aria-label', phoneLabel);
+    });
+
+    feedbackLayout.insertBefore(feedbackBody, feedbackHero);
+
     const closeFeedback = function () {
       feedbackModal.setAttribute('hidden', '');
       unlockBodyScroll();
     };
-    const openFeedback = function (title) {
-      const heading = feedbackModal.querySelector('.feedback-modal__title');
-      if (heading) heading.textContent = title || 'Обратная связь';
+    const openFeedback = function () {
       feedbackModal.removeAttribute('hidden');
       lockBodyScroll();
       feedbackModal.querySelector('.feedback-modal__input')?.focus();
