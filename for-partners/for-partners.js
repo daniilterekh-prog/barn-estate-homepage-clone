@@ -19,6 +19,102 @@
   conditionsStylesheet.href = 'assets/conditions-heading.css';
   document.head.appendChild(conditionsStylesheet);
 
+  var ownerShellStylesheet = document.createElement('link');
+  ownerShellStylesheet.rel = 'stylesheet';
+  ownerShellStylesheet.href = 'assets/owner-shell.css?v=20261008-1';
+  document.head.appendChild(ownerShellStylesheet);
+
+  document.body.classList.add('partners-owner-shell');
+
+  function enhanceOwnerHeader() {
+    var header = document.querySelector('.site-header');
+    var inner = header && header.querySelector('.site-header__inner');
+    if (!header || !inner) return;
+
+    header.classList.remove('site-header--no-nav');
+    if (!inner.querySelector(':scope > .site-header__nav')) {
+      var items = [
+        ['Москва', 'https://barn-estate.ru/gorodskaya-nedvizhimost/', [['Вторичная', 'https://barn-estate.ru/vtorichnaya-nedvizhimost/'], ['Арендовать', 'https://barn-estate.ru/arendovat/'], ['Новостройки', 'https://barn-estate.ru/novostroyki/'], ['Жилые комплексы', 'https://barn-estate.ru/zhilye-kompleksy/'], ['Квартиры', 'https://barn-estate.ru/gorodskaya-nedvizhimost/kvartiry/'], ['Апартаменты', 'https://barn-estate.ru/gorodskaya-nedvizhimost/apartamenty/'], ['Пентхаусы', 'https://barn-estate.ru/kupit-penthausy-v-moskve/'], ['Застройщики', 'https://barn-estate.ru/zastroyshchiki/']]],
+        ['Загородная', 'https://barn-estate.ru/zagorodnaya-nedvizhimost/', [['Купить', 'https://barn-estate.ru/zagorodnaya-nedvizhimost/'], ['Снять', 'https://barn-estate.ru/snyat-zagorodnuyu-nedvizhimost/'], ['Коттеджные поселки', 'https://barn-estate.ru/kottedzhnye-poselki/']]],
+        ['Коммерческая', 'https://barn-estate.ru/kommercheskaya-nedvizhimost/', [['Купить', 'https://barn-estate.ru/kommercheskaya-nedvizhimost/'], ['Снять', 'https://barn-estate.ru/kommercheskaya-nedvizhimost/arendovat/'], ['Здания', 'https://barn-estate.ru/kommercheskaya-nedvizhimost/zdanie/'], ['Бизнес-центры', 'https://barn-estate.ru/kommercheskaya-nedvizhimost/business-center/'], ['Особняки', 'https://barn-estate.ru/kommercheskaya-nedvizhimost/osobnyak/'], ['Арендный бизнес', 'https://barn-estate.ru/kommercheskaya-nedvizhimost/arendnyj-biznes/']]],
+        ['Курортная', 'https://barn-estate.ru/kurortnaya/', [['Инвестиции', 'https://barn-estate.ru/media/tag/investitsii-v-kurortnuyu-nedvizhimost-rossii/'], ['Алтай', 'https://barn-estate.ru/altai/'], ['Архыз', 'https://barn-estate.ru/arhyz/'], ['Сочи', 'https://barn-estate.ru/sochi/']]],
+        ['Зарубежная', 'https://barn-estate.ru/mezhdunarodnaya-nedvizhimost/', [['ОАЭ', 'https://barn-estate.ru/oae/'], ['Турция', 'https://barn-estate.ru/mezhdunarodnaya-nedvizhimost/turtsiya/'], ['Таиланд', 'https://barn-estate.ru/tailand/'], ['Бали', 'https://barn-estate.ru/zhilye-kompleksy-indonesia/'], ['Испания', 'https://barn-estate.ru/ispaniya/'], ['Италия', 'https://barn-estate.ru/italiya/'], ['Португалия', 'https://barn-estate.ru/portugaliya/'], ['Франция', 'https://barn-estate.ru/frantsiya/'], ['Оман', 'https://barn-estate.ru/oman/'], ['Жилые комплексы', 'https://barn-estate.ru/mezhdunarodnaya-nedvizhimost-zhilye-kompleksy/']]],
+        ['Санкт-Петербург', 'https://barnes-spb.ru', [['Вторичная', 'https://barnes-spb.ru/gorodskaya-nedvizhimost/vtorichnaya-nedvizhimost/'], ['Новостройки', 'https://barnes-spb.ru/gorodskaya-nedvizhimost/novostroyki/'], ['Загородная', 'https://barnes-spb.ru/zagorodnaya-nedvizhimost/'], ['Коммерческая', 'https://barnes-spb.ru/kommercheskaya-nedvizhimost/'], ['Эксклюзив', 'https://barnes-spb.ru/exclusive/'], ['Апартаменты', 'https://barnes-spb.ru/gorodskaya-nedvizhimost/filter/type_immovables-is-apartamenty/'], ['Пентхаус', 'https://barnes-spb.ru/gorodskaya-nedvizhimost/filter/type_immovables-is-penthausy/']]],
+        ['Медиа', 'https://barn-estate.ru/media/', [['Блог', 'https://barn-estate.ru/media/blog/'], ['Новости', 'https://barn-estate.ru/media/novosti/'], ['Вебинары и видео', 'https://barn-estate.ru/media/vebinary-i-video/'], ['Аналитика рынка', 'https://barn-estate.ru/media/analitika/'], ['Искусство жить', 'https://barn-estate.ru/media/stil-zhizni/'], ['Кейсы', 'https://barn-estate.ru/media/cases/'], ['Журнал', 'https://barn-estate.ru/zhurnaly/']]],
+        ['О BARNES', 'https://barn-estate.ru/mir-barnes/', [['Контакты', 'https://barn-estate.ru/contacts/'], ['Партнерам', 'https://barn-estate.ru/for-partners/'], ['Barnes Club', 'https://barn-estate.ru/barnes-club/'], ['СМИ о нас', 'https://barn-estate.ru/novosti/smi-o-nas/'], ['Мероприятия', 'https://barn-estate.ru/novosti/meropriyatiya/'], ['Команда', 'https://barn-estate.ru/team/'], ['Вакансии', 'https://barn-estate.ru/vacancies/'], ['Стиль жизни', 'https://barn-estate.ru/stily-zhizni/']]],
+        ['Собственникам', 'https://barn-estate.ru/sobstvennikam/', [['Продажа', 'https://barn-estate.ru/prodazha_sobstvennikam/'], ['Аренда', 'https://barn-estate.ru/arenda_sobstvennikam/']]]
+      ];
+      var nav = document.createElement('nav');
+      nav.className = 'site-header__nav';
+      nav.setAttribute('aria-label', 'Основное меню');
+      nav.innerHTML = '<ul class="site-header__nav-list">' + items.map(function (item) {
+        return '<li class="site-header__nav-item owner-sale-nav-item"><a class="site-header__nav-link" href="' + item[1] + '">' + item[0] + '</a><ul class="site-header__subnav">' + item[2].map(function (subitem) {
+          return '<li><a class="site-header__subnav-link" href="' + subitem[1] + '">' + subitem[0] + '</a></li>';
+        }).join('') + '</ul></li>';
+      }).join('') + '</ul>';
+      nav.querySelectorAll('*').forEach(function (element) { element.setAttribute('data-v-7912d681', ''); });
+      nav.setAttribute('data-v-7912d681', '');
+      inner.appendChild(nav);
+
+      if (!document.querySelector('.site-menu')) {
+        var menu = document.createElement('div');
+        var columns = [items.slice(0, 5), items.slice(5)];
+        menu.className = 'site-menu';
+        menu.hidden = true;
+        menu.id = 'partners-site-menu';
+        menu.setAttribute('role', 'dialog');
+        menu.setAttribute('aria-modal', 'true');
+        menu.setAttribute('aria-label', 'Основное меню');
+        menu.innerHTML = '<div class="site-menu__panel"><div class="site-menu__inner base-container"><div class="site-menu__main"><nav class="site-menu__nav" aria-label="Категории недвижимости">' + columns.map(function (column) {
+          return '<div class="site-menu__nav-column">' + column.map(function (item) {
+            return '<div class="site-menu__nav-group"><a class="site-menu__nav-title" href="' + item[1] + '">' + item[0] + '</a><ul class="site-menu__nav-list">' + item[2].map(function (subitem) {
+              return '<li><a class="site-menu__nav-link" href="' + subitem[1] + '">' + subitem[0] + '</a></li>';
+            }).join('') + '</ul></div>';
+          }).join('') + '</div>';
+        }).join('') + '</nav></div></div></div>';
+        menu.querySelectorAll('*').forEach(function (element) { element.setAttribute('data-v-6d1f991a', ''); });
+        menu.setAttribute('data-v-6d1f991a', '');
+        document.body.appendChild(menu);
+      }
+    }
+
+    var right = inner.querySelector('.site-header__right');
+    var phone = right && right.querySelector('.site-header__phone');
+    if (!right || !phone || right.querySelector('.owner-sale-hero-contacts')) return;
+    var contacts = document.createElement('nav');
+    contacts.className = 'owner-sale-hero-contacts';
+    contacts.setAttribute('aria-label', 'Способы связи');
+    [['WhatsApp', 'https://wa.me/79252621650', '../pictures/office-contact/whatsapp.svg'], ['MAX', 'https://max.ru/join/AWj8ibiCtAPOJOlulMGNkykKGz_prXVWg-IQK1KpUG8', '../pictures/office-contact/max.svg'], ['Telegram', 'https://t.me/art_de_vivre_barnes', '../pictures/office-contact/telegram.svg']].forEach(function (item) {
+      var link = document.createElement('a');
+      link.className = 'owner-sale-hero-contact';
+      link.href = item[1];
+      link.target = '_blank';
+      link.rel = 'noopener noreferrer';
+      link.setAttribute('aria-label', 'Написать в ' + item[0]);
+      link.innerHTML = '<img src="' + item[2] + '" alt="" aria-hidden="true">';
+      contacts.appendChild(link);
+    });
+    phone.classList.add('owner-sale-hero-contact', 'owner-sale-hero-contact--phone');
+    phone.setAttribute('aria-label', 'Позвонить по номеру +7 495 182-50-79');
+    contacts.appendChild(phone);
+    right.appendChild(contacts);
+  }
+
+  function enhanceOwnerFooter() {
+    document.querySelectorAll('.site-footer__column').forEach(function (column) {
+      var title = column.querySelector('.site-footer__column-title');
+      var links = column.querySelector('.site-footer__links');
+      if (!title || !links || title.textContent.trim().toUpperCase() !== 'СОБСТВЕННИКАМ') return;
+      if (Array.prototype.some.call(links.querySelectorAll('a'), function (link) { return link.textContent.trim() === 'Амбассадоры'; })) return;
+      var item = document.createElement('li');
+      item.innerHTML = '<a class="site-footer__link" href="https://barn-estate.ru/for-partners/">Амбассадоры</a>';
+      links.appendChild(item);
+    });
+  }
+
+  enhanceOwnerHeader();
+  enhanceOwnerFooter();
+
   function enhanceHowItWorks() {
     var section = page.querySelector('#how-it-works');
     var aside = section && section.querySelector('.owner-sale-stages__aside');
@@ -401,9 +497,21 @@
   }
 
   if (menuButton) {
+    menuButton.setAttribute('aria-controls', 'partners-site-menu');
+    menuButton.setAttribute('aria-expanded', 'false');
     menuButton.addEventListener('click', function () {
-      var open = document.body.classList.toggle('partners-menu-open');
+      var menu = document.querySelector('.site-menu');
+      var open = menu ? menu.hasAttribute('hidden') : !document.body.classList.contains('partners-menu-open');
+      if (menu) menu.toggleAttribute('hidden', !open);
+      document.body.classList.toggle('partners-menu-open', open);
+      if (header) header.classList.toggle('site-header--menu-open', open);
       menuButton.setAttribute('aria-expanded', String(open));
+      menuButton.setAttribute('aria-label', open ? 'Закрыть меню' : 'Открыть меню');
+      if (open) {
+        document.body.style.overflow = 'hidden';
+      } else {
+        document.body.style.removeProperty('overflow');
+      }
     });
   }
 })();
