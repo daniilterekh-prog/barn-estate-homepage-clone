@@ -1,4 +1,4 @@
-/* Existing photo carousel: UI-kit Benefit/Card title + Body Regular. */
+/* UI-kit Benefit/Card title + Large card description; mobile Body Regular. */
 #advantages { font-family: "Tilda Sans", system-ui, sans-serif; }
 #advantages .ambassadors-advantages__copy { gap:0; }
 #advantages .partners-section-eyebrow {
@@ -36,12 +36,12 @@
 }
 @media(hover:hover) and (pointer:fine) {
   #advantages .ambassadors-advantages__card:hover .ambassadors-advantages__overlay { background:rgba(0,0,0,.68); }
-  #advantages .ambassadors-advantages__card:hover .ambassadors-advantages__description { max-height:240px; opacity:1; visibility:visible; margin-top:16px; }
+  #advantages .ambassadors-advantages__card:hover .ambassadors-advantages__description { max-height:320px; opacity:1; visibility:visible; margin-top:16px; }
 }
 #advantages .splide__track:focus-visible .is-active .ambassadors-advantages__overlay,
 #advantages .ambassadors-advantages__card.is-revealed .ambassadors-advantages__overlay { background:rgba(0,0,0,.68); }
 #advantages .splide__track:focus-visible .is-active .ambassadors-advantages__description,
-#advantages .ambassadors-advantages__card.is-revealed .ambassadors-advantages__description { max-height:240px; opacity:1; visibility:visible; margin-top:16px; }
+#advantages .ambassadors-advantages__card.is-revealed .ambassadors-advantages__description { max-height:320px; opacity:1; visibility:visible; margin-top:16px; }
 #advantages .ambassadors-advantages__reveal { display:none; }
 @media(hover:none) {
   #advantages .ambassadors-advantages__reveal { display:grid; place-items:center; position:absolute; z-index:2; top:24px; right:24px; width:40px; height:40px; padding:0; border:1px solid #fff; border-radius:1px; background:#fff; color:#1e1e1e; font:400 24px/1 "Tilda Sans",sans-serif; cursor:pointer; }
@@ -87,9 +87,9 @@
   margin: 0;
   color: #fff;
   font-family: "Tilda Sans", sans-serif;
-  font-size: 16px;
-  line-height: 22.4px;
-  font-weight: 400;
+  font-size: 22px;
+  line-height: 28.16px;
+  font-weight: 300;
   letter-spacing: 0;
   text-transform: none;
 }
@@ -115,6 +115,7 @@
   #advantages .ambassadors-advantages__card-copy { padding: 24px; }
   #advantages .ambassadors-advantages__card-title { font-size:20px; line-height:24px; min-height:72px; }
   #advantages .ambassadors-advantages__number { font-size:12px; line-height:14.4px; }
+  #advantages .ambassadors-advantages__description { font-size:16px; line-height:22.4px; font-weight:400; }
 }
 @media(min-width:1441px) {
   #advantages .ambassadors-advantages__title { font-size:44px; line-height:52.8px; }
