@@ -41,6 +41,28 @@
 
   enhanceHowItWorks();
 
+  function enhanceSectionEyebrows() {
+    [
+      ['.owner-sale-stages__title', 'МЕХАНИКА ПАРТНЁРСТВА'],
+      ['.ambassadors-requests__title', 'НАПРАВЛЕНИЯ BARNES'],
+      ['.ambassadors-advantages__title', 'ПАРТНЁРСТВО С BARNES'],
+      ['.catalog-contact__title', 'СВЯЗЬ С BARNES'],
+      ['.catalog-faq__title', 'ПАРТНЁРСКАЯ ПРОГРАММА'],
+      ['.newsletter-cta h2', 'BARNES / АНАЛИТИКА']
+    ].forEach(function (item) {
+      var title = document.querySelector(item[0]);
+      var container = title && title.parentElement;
+      if (!title || !container || container.querySelector(':scope > .partners-section-eyebrow')) return;
+
+      var eyebrow = document.createElement('p');
+      eyebrow.className = 'partners-section-eyebrow';
+      eyebrow.textContent = item[1];
+      container.insertBefore(eyebrow, title);
+    });
+  }
+
+  enhanceSectionEyebrows();
+
   var stagesScrollFrame = null;
   function updateStagesScrollState() {
     var section = page.querySelector('#how-it-works');

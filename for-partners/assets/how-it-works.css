@@ -1,4 +1,28 @@
 /* Text-only scrolling steps, adapted from the approved owner-page pattern. */
+.partners-section-eyebrow {
+  color: currentColor;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: .12em;
+  line-height: 1.15;
+  margin: 0 0 25px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.catalog-contact .partners-section-eyebrow,
+.newsletter-cta .partners-section-eyebrow {
+  color: inherit;
+}
+
+.ambassadors-advantages__copy > .partners-section-eyebrow {
+  margin-bottom: 5px;
+}
+
+.catalog-faq__inner > .partners-section-eyebrow {
+  margin-bottom: -7px;
+}
+
 #how-it-works {
   --partners-stages-accent: #6e1f2d;
   --partners-stages-border: rgba(30, 30, 30, .2);
@@ -164,6 +188,18 @@
 }
 
 @media (max-width: 900px) {
+  .partners-section-eyebrow {
+    margin-bottom: 12px;
+  }
+
+  .ambassadors-advantages__copy > .partners-section-eyebrow {
+    margin-bottom: -8px;
+  }
+
+  .catalog-faq__inner > .partners-section-eyebrow {
+    margin-bottom: -20px;
+  }
+
   #how-it-works {
     padding-block: 56px;
   }
@@ -191,6 +227,15 @@
 }
 
 @media (max-width: 540px) {
+  .partners-section-eyebrow {
+    font-size: 12px;
+    line-height: 1.2;
+  }
+
+  .catalog-faq__inner > .partners-section-eyebrow {
+    margin-bottom: -12px;
+  }
+
   #how-it-works {
     padding-block: 44px;
   }
