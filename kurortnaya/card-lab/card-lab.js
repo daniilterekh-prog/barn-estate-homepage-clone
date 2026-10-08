@@ -1,5 +1,6 @@
 const modeButtons = document.querySelectorAll("[data-card-mode]");
 const cardPanels = document.querySelectorAll("[data-card-panel]");
+const filterPanels = document.querySelectorAll("[data-filter-panel]");
 const favoriteButtons = document.querySelectorAll(".apartment-card__favorite");
 
 modeButtons.forEach((button) => {
@@ -14,6 +15,10 @@ modeButtons.forEach((button) => {
 
     cardPanels.forEach((panel) => {
       panel.hidden = panel.dataset.cardPanel !== selectedMode;
+    });
+
+    filterPanels.forEach((panel) => {
+      panel.hidden = panel.dataset.filterPanel !== selectedMode;
     });
   });
 });

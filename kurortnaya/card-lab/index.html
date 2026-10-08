@@ -17,14 +17,34 @@
         </p>
       </header>
 
-      <div class="card-lab__switch" role="group" aria-label="Тип недвижимости">
-        <button class="card-lab__switch-button is-active" type="button" data-card-mode="new-build" aria-pressed="true">
-          Новостройки
-        </button>
-        <button class="card-lab__switch-button" type="button" data-card-mode="secondary" aria-pressed="false">
-          Вторичка
-        </button>
-      </div>
+      <section class="card-lab__toolbar" aria-label="Фильтры каталога">
+        <div class="card-lab__switch" role="group" aria-label="Тип недвижимости">
+          <button class="card-lab__switch-button is-active" type="button" data-card-mode="new-build" aria-pressed="true">
+            Новостройки
+          </button>
+          <button class="card-lab__switch-button" type="button" data-card-mode="secondary" aria-pressed="false">
+            Вторичка
+          </button>
+        </div>
+
+        <div class="card-lab__filter-set" data-filter-panel="new-build">
+          <button class="card-lab__filter" type="button">Локация</button>
+          <button class="card-lab__filter" type="button">Цена</button>
+          <button class="card-lab__filter" type="button">Спальни</button>
+          <button class="card-lab__filter" type="button">Срок сдачи</button>
+          <button class="card-lab__filter card-lab__filter--all" type="button">Все фильтры</button>
+        </div>
+
+        <div class="card-lab__filter-set" data-filter-panel="secondary" hidden>
+          <button class="card-lab__filter" type="button">Локация</button>
+          <button class="card-lab__filter" type="button">Цена</button>
+          <button class="card-lab__filter" type="button">Комнаты</button>
+          <button class="card-lab__filter" type="button">Площадь</button>
+          <button class="card-lab__filter card-lab__filter--all" type="button">Все фильтры</button>
+        </div>
+
+        <button class="card-lab__sort" type="button">По умолчанию</button>
+      </section>
 
       <section class="card-lab__stage" aria-label="Предпросмотр карточки">
         <article class="apartment-card apartment-card--catalog" data-card-panel="new-build" data-v-5a2b3b97 data-v-80c326fb>
