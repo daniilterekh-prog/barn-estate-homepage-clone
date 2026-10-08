@@ -125,7 +125,24 @@ body {
 }
 
 .card-lab__facts--project .card-lab__fact {
+  background: #f7f6f3;
+  border: 1px solid #e7e4dd;
+  border-radius: 1px;
+  padding: 10px 6px 9px;
   text-align: center;
+}
+
+.card-lab__facts--project .card-lab__fact-label {
+  color: #77736c;
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  margin-bottom: 6px;
+}
+
+.card-lab__facts--project .card-lab__fact-value {
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: -0.01em;
 }
 
 .card-lab__fact-label {
@@ -188,5 +205,17 @@ body {
 
   .card-lab__fact-value {
     font-size: 13px;
+  }
+}
+
+@media (max-width: 360px) {
+  .card-lab__facts--project {
+    gap: 6px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .card-lab__facts--project .card-lab__fact {
+    min-height: 65px;
+    padding-inline: 4px;
   }
 }
