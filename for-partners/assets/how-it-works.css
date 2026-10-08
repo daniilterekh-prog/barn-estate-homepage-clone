@@ -80,22 +80,22 @@
 #how-it-works .partners-stages__lead {
   color: #1e1e1e;
   font-family: "Tilda Sans", system-ui, sans-serif;
-  font-size: 22px;
+  font-size: 38px;
   font-weight: 300;
-  line-height: 33px;
+  line-height: 1.15;
   margin: 34px 0 0;
-  max-width: 560px;
+  max-width: 620px;
   text-transform: none;
 }
 
 #how-it-works .owner-sale-stages__intro {
   color: #656462;
   font-family: "Tilda Sans", system-ui, sans-serif;
-  font-size: 16px;
+  font-size: 25px;
   font-weight: 300;
-  line-height: 22.4px;
+  line-height: 1.3;
   margin: 16px 0 0;
-  max-width: 520px;
+  max-width: 620px;
 }
 
 #how-it-works .owner-sale-stages__cta {
@@ -229,9 +229,14 @@
   }
 
   #how-it-works .partners-stages__lead {
-    font-size: 22px;
-    line-height: 33px;
+    font-size: 26px;
+    line-height: 1.15;
     margin-top: 26px;
+  }
+
+  #how-it-works .owner-sale-stages__intro {
+    font-size: 16px;
+    line-height: 1.3;
   }
 
   #how-it-works .owner-sale-stages__cta {
@@ -263,14 +268,14 @@
   }
 
   #how-it-works .partners-stages__lead {
-    font-size: 15px;
-    line-height: 21px;
+    font-size: 26px;
+    line-height: 1.15;
     margin-top: 22px;
   }
 
   #how-it-works .owner-sale-stages__intro {
     font-size: 16px;
-    line-height: 22.4px;
+    line-height: 1.3;
     margin-top: 12px;
   }
 
