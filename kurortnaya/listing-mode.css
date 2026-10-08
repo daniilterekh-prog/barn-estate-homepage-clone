@@ -32,7 +32,7 @@
   color: #656462;
   cursor: pointer;
   font: inherit;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
   min-height: 54px;
   padding: 8px 12px;
@@ -73,7 +73,7 @@
 .catalog-mode-toolbar .catalog-quick-filters__label[data-v-6fd45cc6] {
   align-self: center !important;
   flex: 1 1 auto;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 1.2;
   min-width: 0;
@@ -100,7 +100,7 @@
   border-color: #dedede;
   border-radius: 1px;
   box-sizing: border-box;
-  font-size: 14px;
+  font-size: 16px;
   height: 56px;
   min-width: 0;
   min-height: 54px;
