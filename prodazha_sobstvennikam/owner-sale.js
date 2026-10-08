@@ -109,8 +109,10 @@
 
     const title = section.querySelector('.catalog-contact__title');
     const subtitle = section.querySelector('.catalog-contact__subtitle');
+    const cardTitle = section.querySelector('.catalog-contact__card-title');
     if (title) title.textContent = 'Эксперты BARNES подскажут';
     if (subtitle) subtitle.remove();
+    if (cardTitle) cardTitle.textContent = 'Получите предварительную оценку объекта';
   };
 
   matchCityContactCta();

@@ -981,8 +981,14 @@ body.owner-sale-reference-ui .owner-sale-hero .breadcrumbs__link {
 
 .owner-sale-reference-ui :is(.catalog-contact__input, .catalog-contact__textarea) {
   font-family: inherit;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 300;
+}
+
+@media (max-width: 1440px) {
+  .owner-sale-reference-ui :is(.catalog-contact__input, .catalog-contact__textarea) {
+    font-size: 18px;
+  }
 }
 
 .owner-sale-reference-ui .catalog-contact__card-title {
