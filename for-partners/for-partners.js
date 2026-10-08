@@ -29,6 +29,11 @@
   modalStylesheet.href = 'assets/partner-modal.css?v=20261008-1';
   document.head.appendChild(modalStylesheet);
 
+  var faqStylesheet = document.createElement('link');
+  faqStylesheet.rel = 'stylesheet';
+  faqStylesheet.href = 'assets/faq-typography.css?v=20261008-2';
+  document.head.appendChild(faqStylesheet);
+
   document.body.classList.add('partners-owner-shell');
 
   function enhanceOwnerHeader() {
