@@ -11,7 +11,7 @@
 
   var requestsStylesheet = document.createElement('link');
   requestsStylesheet.rel = 'stylesheet';
-  requestsStylesheet.href = 'assets/requests-typography.css?v=20261008-2';
+  requestsStylesheet.href = 'assets/requests-typography.css?v=20261008-3';
   document.head.appendChild(requestsStylesheet);
 
   var conditionsStylesheet = document.createElement('link');
