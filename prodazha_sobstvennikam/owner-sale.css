@@ -1633,3 +1633,114 @@ body.owner-sale-reference-ui .owner-sale-hero .breadcrumbs__link {
     margin-top: 24px;
   }
 }
+
+/* Presentation cards reveal — mirrors the approved owner-rent interaction. */
+.owner-sale-reference-ui .owner-sale-presentation__card {
+  cursor: default;
+  outline: none;
+  overflow: hidden;
+}
+
+.owner-sale-reference-ui .owner-sale-presentation__card :is(
+  .owner-sale-presentation__image,
+  .owner-sale-presentation__overlay
+) {
+  transition: transform 360ms cubic-bezier(.22, 1, .36, 1), background-color 280ms ease;
+}
+
+.owner-sale-reference-ui .owner-sale-presentation__reveal {
+  display: flex;
+  flex-direction: column;
+  inset: 0;
+  justify-content: flex-end;
+  overflow: hidden;
+  padding: 24px 28px;
+  pointer-events: none;
+  position: absolute;
+  z-index: 2;
+}
+
+.owner-sale-reference-ui .owner-sale-presentation__reveal .owner-sale-presentation__caption {
+  display: block;
+  flex: none;
+  height: auto;
+  margin: 0;
+  min-height: 0;
+  padding: 0;
+  position: static;
+  transform: translateY(0);
+  transition: transform 300ms cubic-bezier(.22, 1, .36, 1);
+  width: auto;
+}
+
+.owner-sale-reference-ui .owner-sale-presentation__reveal-text {
+  border-top: 1px solid rgb(255 255 255 / 45%);
+  color: rgb(255 255 255 / 75%);
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 28.16px;
+  margin: 0;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding-top: 0;
+  transform: translateY(12px);
+  transition: max-height 360ms cubic-bezier(.22, 1, .36, 1), opacity 220ms ease, padding-top 300ms ease, transform 300ms cubic-bezier(.22, 1, .36, 1);
+}
+
+.owner-sale-reference-ui .owner-sale-presentation__card:is(:hover, :focus, :focus-within) .owner-sale-presentation__overlay {
+  background-color: rgb(18 15 14 / 68%);
+}
+
+.owner-sale-reference-ui .owner-sale-presentation__card:is(:hover, :focus, :focus-within) .owner-sale-presentation__image {
+  transform: scale(1.025);
+}
+
+.owner-sale-reference-ui .owner-sale-presentation__card:is(:hover, :focus, :focus-within) .owner-sale-presentation__caption {
+  transform: translateY(-2px);
+}
+
+.owner-sale-reference-ui .owner-sale-presentation__card:is(:hover, :focus, :focus-within) .owner-sale-presentation__reveal-text {
+  max-height: 200px;
+  opacity: 1;
+  padding-top: 14px;
+  transform: translateY(0);
+}
+
+.owner-sale-reference-ui .owner-sale-presentation__card:focus-visible {
+  box-shadow: inset 0 0 0 2px #fff, inset 0 0 0 4px var(--owner-sale-brand);
+}
+
+@media (min-width: 541px) and (max-width: 1199px) {
+  .owner-sale-reference-ui .owner-sale-presentation__reveal .owner-sale-presentation__caption {
+    font-size: 16px;
+    line-height: 19.2px;
+  }
+}
+
+@media (max-width: 540px) {
+  .owner-sale-reference-ui .owner-sale-presentation__reveal {
+    padding: 20px;
+  }
+
+  .owner-sale-reference-ui .owner-sale-presentation__reveal-text {
+    font-size: 15px;
+    line-height: 19.2px;
+  }
+
+  .owner-sale-reference-ui .owner-sale-presentation__card:is(:hover, :focus, :focus-within) .owner-sale-presentation__reveal-text {
+    max-height: 180px;
+    padding-top: 12px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .owner-sale-reference-ui .owner-sale-presentation__card :is(
+    .owner-sale-presentation__image,
+    .owner-sale-presentation__overlay
+  ),
+  .owner-sale-reference-ui .owner-sale-presentation__reveal .owner-sale-presentation__caption,
+  .owner-sale-reference-ui .owner-sale-presentation__reveal-text {
+    transition: none;
+  }
+}

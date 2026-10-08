@@ -150,6 +150,35 @@
 
   reorderSaleSections();
 
+  const enhancePresentationCards = function () {
+    const descriptions = [
+      'Находим сильные стороны объекта и превращаем их в понятные преимущества для будущего покупателя.',
+      'Определяем позиционирование, ценовой ориентир и ключевые акценты для презентации объекта.',
+      'Выбираем релевантные каналы и показываем объект аудитории, которая соответствует его уровню.',
+      'Берём на себя коммуникацию с покупателями и защищаем интересы собственника на каждом этапе переговоров.',
+      'Проверяем документы и сопровождаем сделку, чтобы обеспечить её юридическую чистоту и безопасность.',
+      'Контролируем доступ к информации об объекте и проводим просмотры с учётом требований собственника.'
+    ];
+
+    page.querySelectorAll('.owner-sale-presentation__card').forEach(function (card, index) {
+      const caption = card.querySelector('.owner-sale-presentation__caption');
+      if (!caption || card.querySelector('.owner-sale-presentation__reveal')) return;
+
+      const reveal = document.createElement('div');
+      const text = document.createElement('p');
+      reveal.className = 'owner-sale-presentation__reveal';
+      text.className = 'owner-sale-presentation__reveal-text';
+      text.id = 'owner-sale-presentation-description-' + (index + 1);
+      text.textContent = descriptions[index];
+      caption.parentNode.insertBefore(reveal, caption);
+      reveal.append(caption, text);
+      card.tabIndex = 0;
+      card.setAttribute('aria-describedby', text.id);
+    });
+  };
+
+  enhancePresentationCards();
+
   const alignConsultationCopy = function () {
     const consultation = page.querySelector('.catalog-consultation');
     if (!consultation) return;
