@@ -1,0 +1,81 @@
+/* Shared rectangular action-button contract from the approved BARNES UI kit. */
+.partners-owner-shell :is(
+  .ambassadors-hero__button,
+  .owner-sale-stages__offer-btn,
+  .ambassadors-requests__button,
+  .catalog-contact__submit,
+  .catalog-contact__card-submit,
+  .newsletter-form button,
+  .feedback-modal__submit
+) {
+  border-radius: 1px;
+  font-family: "Tilda Sans", system-ui, sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  height: 70px;
+  line-height: 18.7px;
+  min-height: 70px;
+  padding: 0 36px;
+}
+
+.partners-owner-shell :is(
+  .ambassadors-hero__button,
+  .owner-sale-stages__offer-btn,
+  .ambassadors-requests__button,
+  .catalog-contact__submit,
+  .catalog-contact__card-submit,
+  .newsletter-form button,
+  .feedback-modal__submit,
+  .site-footer__callback-btn,
+  .owner-sale-sticky__request
+):focus-visible {
+  outline: 2px solid rgba(139, 29, 37, .55);
+  outline-offset: 3px;
+}
+
+.partners-owner-shell :is(
+  .ambassadors-hero__button,
+  .owner-sale-stages__offer-btn,
+  .ambassadors-requests__button,
+  .catalog-contact__submit,
+  .catalog-contact__card-submit,
+  .newsletter-form button,
+  .feedback-modal__submit
+):disabled {
+  cursor: not-allowed;
+  opacity: .55;
+}
+
+@media (min-width: 1441px) {
+  .partners-owner-shell :is(
+    .ambassadors-hero__button,
+    .owner-sale-stages__offer-btn,
+    .ambassadors-requests__button,
+    .catalog-contact__submit,
+    .catalog-contact__card-submit,
+    .newsletter-form button,
+    .feedback-modal__submit
+  ) {
+    font-size: 19px;
+    line-height: 20.9px;
+    padding-inline: 47px;
+  }
+}
+
+@media (max-width: 540px) {
+  .partners-owner-shell :is(
+    .ambassadors-hero__button,
+    .owner-sale-stages__offer-btn,
+    .ambassadors-requests__button,
+    .catalog-contact__submit,
+    .catalog-contact__card-submit,
+    .newsletter-form button,
+    .feedback-modal__submit
+  ) {
+    font-size: 18px;
+    height: 58px;
+    line-height: 19.8px;
+    min-height: 58px;
+    padding-inline: 24px;
+  }
+}
