@@ -2180,6 +2180,19 @@ body.owner-sale-reference-ui .owner-sale-hero .breadcrumbs__link {
   }
 }
 
+/* Keep compact sticky controls keyboard-friendly without changing their visual contract. */
+.owner-sale-reference-ui :is(
+  .owner-sale-sticky__request,
+  .owner-sale-sticky__contact-toggle
+) {
+  min-height: 44px;
+}
+
+.owner-sale-reference-ui .owner-sale-sticky__contact-toggle {
+  height: 44px;
+  width: 44px;
+}
+
 /* Presentation cards reveal — mirrors the approved owner-rent interaction. */
 .owner-sale-reference-ui .owner-sale-presentation__card {
   cursor: default;

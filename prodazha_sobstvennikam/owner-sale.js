@@ -127,6 +127,36 @@
 
   enhanceSectionEyebrows();
 
+  const enhanceFormAccessibility = function () {
+    const fieldMap = [
+      ['.catalog-consultation__input', ['Ваше имя', 'Номер телефона']],
+      ['.catalog-contact__input', ['Ваше имя', 'Номер телефона']]
+    ];
+
+    fieldMap.forEach(function (item) {
+      page.querySelectorAll(item[0]).forEach(function (field, index) {
+        if (!field.hasAttribute('aria-label')) field.setAttribute('aria-label', item[1][index] || 'Контактное поле');
+        if (index === 1 && field.type === 'text') field.type = 'tel';
+        if (index === 0 && !field.hasAttribute('autocomplete')) field.setAttribute('autocomplete', 'name');
+        if (index === 1 && !field.hasAttribute('autocomplete')) field.setAttribute('autocomplete', 'tel');
+      });
+    });
+
+    page.querySelectorAll('.catalog-consultation__textarea, .catalog-contact__textarea').forEach(function (field) {
+      if (!field.hasAttribute('aria-label')) field.setAttribute('aria-label', 'Комментарий');
+    });
+
+    page.querySelectorAll('.catalog-consultation__consent-input, .catalog-contact__consent-input').forEach(function (field) {
+      if (!field.hasAttribute('aria-label')) field.setAttribute('aria-label', 'Согласие на обработку персональных данных');
+    });
+
+    document.querySelectorAll('.newsletter-form input[type="email"]').forEach(function (field) {
+      if (!field.hasAttribute('aria-label')) field.setAttribute('aria-label', 'Ваш email');
+    });
+  };
+
+  enhanceFormAccessibility();
+
   const reorderSaleSections = function () {
     const hero = page.querySelector(':scope > .owner-sale-hero');
     if (!hero) return;
@@ -336,6 +366,7 @@
 
     const toggle = list.querySelector('.owner-sale-sticky__contact-toggle');
     if (toggle && panel) {
+      toggle.dataset.bound = 'true';
       toggle.addEventListener('click', function () {
         const open = panel.hidden;
         panel.hidden = !open;
