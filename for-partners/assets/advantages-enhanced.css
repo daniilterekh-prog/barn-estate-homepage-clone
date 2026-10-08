@@ -28,18 +28,23 @@
 }
 #advantages .ambassadors-advantages__overlay {
   position:absolute; inset:0;
-  background: linear-gradient(180deg, rgba(0,0,0,.08), rgba(0,0,0,.25) 35%, rgba(0,0,0,.78) 75%, rgba(0,0,0,.86));
+  background: rgba(0,0,0,.68);
+  opacity:0; transition:opacity 240ms ease;
 }
 #advantages .ambassadors-advantages__media::after {
-  content:""; position:absolute; inset:0; background:rgba(0,0,0,.38);
-  opacity:0; transition:opacity 240ms ease; pointer-events:none;
+  content:none;
 }
 @media(hover:hover) and (pointer:fine) {
-  #advantages .ambassadors-advantages__card:hover .ambassadors-advantages__media::after { opacity:1; }
+  #advantages .ambassadors-advantages__card:hover .ambassadors-advantages__overlay { opacity:1; }
+  #advantages .ambassadors-advantages__card:hover .ambassadors-advantages__description { max-height:240px; opacity:1; visibility:visible; margin-top:16px; }
 }
-#advantages .splide__track:focus-visible .is-active .ambassadors-advantages__media::after { opacity:1; }
-@media(prefers-reduced-motion:reduce) {
-  #advantages .ambassadors-advantages__media::after { transition:none; }
+#advantages .splide__track:focus-visible .is-active .ambassadors-advantages__overlay,
+#advantages .ambassadors-advantages__card.is-revealed .ambassadors-advantages__overlay { opacity:1; }
+#advantages .splide__track:focus-visible .is-active .ambassadors-advantages__description,
+#advantages .ambassadors-advantages__card.is-revealed .ambassadors-advantages__description { max-height:240px; opacity:1; visibility:visible; margin-top:16px; }
+#advantages .ambassadors-advantages__reveal { display:none; }
+@media(hover:none) {
+  #advantages .ambassadors-advantages__reveal { display:grid; place-items:center; position:absolute; z-index:2; top:24px; right:24px; width:40px; height:40px; padding:0; border:1px solid #fff; border-radius:1px; background:#fff; color:#1e1e1e; font:400 24px/1 "Tilda Sans",sans-serif; cursor:pointer; }
 }
 #advantages .ambassadors-advantages__card-copy {
   position: relative;
@@ -56,6 +61,7 @@
   font-weight: 400;
   letter-spacing: .12em;
   margin-bottom: 24px;
+  text-shadow:0 1px 4px #000,0 1px 12px #000;
 }
 #advantages .ambassadors-advantages__card-title {
   display: block;
@@ -63,7 +69,7 @@
   width: auto;
   max-width: none;
   padding: 0;
-  margin: 0 0 16px;
+  margin: 0;
   text-align: left;
   text-transform: none;
   letter-spacing: 0;
@@ -71,8 +77,11 @@
   font-size: 24px;
   line-height: 28.8px;
   font-weight: 400;
+  text-shadow:0 1px 4px #000,0 1px 12px #000;
 }
 #advantages .ambassadors-advantages__description {
+  max-height:0; opacity:0; visibility:hidden; overflow:hidden;
+  transition:max-height 240ms ease,opacity 240ms ease,margin-top 240ms ease,visibility 240ms;
   margin: 0;
   color: #fff;
   font-size: 16px;
@@ -88,6 +97,7 @@
 }
 #advantages .splide__track { touch-action: pan-y; }
 #advantages .splide__track:focus-visible,
+#advantages .ambassadors-advantages__reveal:focus-visible,
 #advantages .ambassadors-advantages__nav-btn:focus-visible {
   outline: 2px solid #8b1d25;
   outline-offset: 3px;
@@ -106,4 +116,7 @@
 }
 @media(max-width:540px) {
   #advantages .ambassadors-advantages__card-copy { padding:24px; }
+}
+@media(prefers-reduced-motion:reduce) {
+  #advantages :is(.ambassadors-advantages__overlay,.ambassadors-advantages__description) { transition:none; }
 }

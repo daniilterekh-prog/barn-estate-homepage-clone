@@ -1,0 +1,18 @@
+[
+  {
+    "width": 390,
+    "mode": "focused-component",
+    "initial": "clear image, hidden description",
+    "reveal": "touch toggle",
+    "stableCardHeight": true,
+    "keyboard": "PASS"
+  },
+  {
+    "width": 1440,
+    "mode": "focused-component",
+    "initial": "clear image, hidden description",
+    "reveal": "hover",
+    "stableCardHeight": true,
+    "keyboard": "PASS"
+  }
+]

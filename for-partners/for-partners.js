@@ -484,6 +484,8 @@
       card.classList.toggle('is-active', index === advantageIndex);
       card.classList.toggle('is-next', index === advantageIndex + 1);
       card.classList.toggle('is-visible', visible);
+      var reveal = card.querySelector('.ambassadors-advantages__reveal');
+      if (reveal) reveal.tabIndex = visible ? 0 : -1;
       if (visible) card.removeAttribute('aria-hidden');
       else card.setAttribute('aria-hidden', 'true');
     });
@@ -505,6 +507,25 @@
   if (next) next.addEventListener('click', function () { moveAdvantages(1); });
 
   if (advantagesTrack && advantagesList && advantageCards.length) {
+    advantageCards.forEach(function (slide, index) {
+      var card = slide.querySelector('.ambassadors-advantages__card');
+      var description = card.querySelector('.ambassadors-advantages__description');
+      description.id = 'advantage-description-' + index;
+      var reveal = document.createElement('button');
+      reveal.type = 'button';
+      reveal.className = 'ambassadors-advantages__reveal';
+      reveal.setAttribute('aria-label', 'Описание: ' + card.querySelector('h3').textContent);
+      reveal.setAttribute('aria-controls', description.id);
+      reveal.setAttribute('aria-expanded', 'false');
+      reveal.textContent = '+';
+      reveal.addEventListener('pointerdown', function (event) { event.stopPropagation(); });
+      reveal.addEventListener('click', function () {
+        var open = card.classList.toggle('is-revealed');
+        reveal.setAttribute('aria-expanded', String(open));
+        reveal.textContent = open ? '−' : '+';
+      });
+      card.appendChild(reveal);
+    });
     advantagesTrack.addEventListener('keydown', function (event) {
       if (event.key === 'ArrowRight' || event.key === 'ArrowLeft') {
         event.preventDefault();
