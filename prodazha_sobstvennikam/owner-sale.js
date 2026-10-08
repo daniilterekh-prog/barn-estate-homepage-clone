@@ -6,6 +6,13 @@
 
   document.body.classList.add('owner-sale-reference-ui');
 
+  page.querySelectorAll('.catalog-consultation__subtitle, .catalog-consultation__mobile-title').forEach(function (title) {
+    title.textContent = 'Расскажите об объекте эксперту BARNES';
+  });
+  page.querySelectorAll('.catalog-consultation__lead, .catalog-consultation__mobile-lead').forEach(function (lead) {
+    lead.hidden = true;
+  });
+
   const menuButton = document.querySelector('[aria-label="Открыть меню"]');
   let menu = document.querySelector('.site-menu');
   const sticky = page.querySelector('.owner-sale-sticky');
