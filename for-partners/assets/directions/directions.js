@@ -11,7 +11,7 @@
     const d = data[i];
     const negotiated = d.last[0] !== 'Комиссия';
     const stats = d.metrics
-      ? d.metrics.map(m => `<div><div class="bd-num">${m[0]}</div><div class="bd-label">${m[1]}</div></div>`).join('')
+      ? d.metrics.map(m => `<div><div class="bd-label">${m[1]}</div><div class="bd-num">${m[0]}</div></div>`).join('')
       : d.facts.map(f => `<div><div class="bd-label">${f[0]}</div><div class="bd-facttext">${f[1]}</div></div>`).join('');
     return `<div class="bd-feature">
       <div class="bd-imagewrap"><img class="bd-photo" src="${photos[i]}" alt="${d.imageAlt || d.name}" decoding="async"></div>

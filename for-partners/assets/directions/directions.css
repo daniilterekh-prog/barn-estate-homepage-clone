@@ -17,19 +17,20 @@
 #barnes-directions .bd-copy { min-width:0; display:grid; grid-template-rows:minmax(104px,auto) minmax(88px,auto) minmax(176px,auto) minmax(128px,auto) 70px; gap:24px; }
 #barnes-directions .bd-heading h3 { font-size:24px; line-height:28.8px; font-weight:400; margin-bottom:12px; }
 #barnes-directions .bd-intro { font-size:22px; line-height:28.16px; font-weight:300; color:#4f4d49; max-width:48ch; }
-#barnes-directions .bd-label { font-size:20px; line-height:28px; font-weight:400; color:var(--bd-gray); }
-#barnes-directions :is(.bd-price-label,.bd-commission>.bd-label) { font-size:20px; line-height:28px; font-weight:400; color:var(--bd-gray); }
+#barnes-directions .bd-label { font-size:22px; line-height:28.16px; font-weight:300; color:var(--bd-gray); }
+#barnes-directions :is(.bd-price-label,.bd-commission>.bd-label) { font-size:22px; line-height:28.16px; font-weight:300; color:var(--bd-gray); }
 #barnes-directions .bd-price-label { margin-bottom:12px; }
 #barnes-directions .bd-price { display:flex; align-items:baseline; gap:8px; flex-wrap:wrap; font-size:38px; line-height:45.6px; font-weight:300; }
-#barnes-directions .bd-price small { font-size:20px; line-height:28px; font-weight:400; white-space:nowrap; }
-#barnes-directions .bd-words { font-size:22px; line-height:30.8px; font-weight:400; }
+#barnes-directions .bd-price small { font-size:22px; line-height:28.16px; font-weight:300; white-space:nowrap; }
+#barnes-directions .bd-words { font-size:22px; line-height:28.16px; font-weight:300; }
 #barnes-directions :is(.bd-metrics,.bd-textfacts) { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:24px; border-block:1px solid var(--bd-line); padding:24px 0; align-content:center; }
-#barnes-directions .bd-num { font-size:38px; line-height:45.6px; font-weight:300; margin-bottom:8px; }
-#barnes-directions .bd-facttext { margin-top:8px; font-size:20px; line-height:28px; font-weight:400; }
+#barnes-directions .bd-metrics>div { display:grid; grid-template-rows:minmax(56.32px,auto) auto; gap:12px; }
+#barnes-directions .bd-num { font-size:38px; line-height:45.6px; font-weight:300; }
+#barnes-directions .bd-facttext { margin-top:12px; font-size:22px; line-height:28.16px; font-weight:300; }
 #barnes-directions .bd-commission { display:flex; flex-direction:column; align-items:flex-start; justify-content:center; gap:8px; }
 #barnes-directions .bd-commission strong { font-size:48px; line-height:52.8px; font-weight:400; color:var(--bd-red); }
 #barnes-directions .bd-commission-negotiated strong { font-size:22px; line-height:30.8px; }
-#barnes-directions .bd-commission-note { font-size:20px; line-height:28px; font-weight:400; color:var(--bd-gray); }
+#barnes-directions .bd-commission-note { font-size:22px; line-height:28.16px; font-weight:300; color:var(--bd-gray); }
 #barnes-directions .bd-cta { display:inline-flex; align-items:center; justify-content:center; justify-self:start; gap:16px; width:fit-content; max-width:100%; height:70px; padding:0 36px; margin:0; font:400 17px/18.7px "Tilda Sans",system-ui,sans-serif; border:1px solid var(--bd-red); border-radius:1px; background:var(--bd-red); color:white; cursor:pointer; }
 #barnes-directions .bd-cta:hover { background:#6f171e; }
 #barnes-directions :is(button,select):focus-visible { outline:2px solid var(--bd-red); outline-offset:3px; }
@@ -45,7 +46,8 @@
   #barnes-directions .bd-feature { gap:32px; }
   #barnes-directions .bd-heading h3 { font-size:20px; line-height:24px; }
   #barnes-directions .bd-intro { font-size:16px; line-height:22.4px; }
-  #barnes-directions :is(.bd-label,.bd-facttext,.bd-price-label,.bd-commission>.bd-label,.bd-commission-note) { font-size:18px; line-height:25.2px; }
+  #barnes-directions :is(.bd-label,.bd-facttext,.bd-price-label,.bd-commission>.bd-label,.bd-commission-note,.bd-price small,.bd-words) { font-size:16px; line-height:22.4px; font-weight:300; }
+  #barnes-directions .bd-metrics>div { grid-template-rows:minmax(67.2px,auto) auto; }
 }
 @media(max-width:900px) {
   #barnes-directions .bd-horizontal { display:none; }
