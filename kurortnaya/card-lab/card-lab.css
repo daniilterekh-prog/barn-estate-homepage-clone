@@ -153,6 +153,27 @@ body {
   white-space: nowrap;
 }
 
+.card-lab__price-row {
+  align-items: center;
+  border-top: 1px solid rgba(30, 30, 30, 0.18);
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
+  margin-top: 18px;
+  min-width: 0;
+  padding-top: 14px;
+}
+
+.apartment-card--catalog .card-lab__price-row .apartment-card__price[data-v-80c326fb] {
+  border-top: 0;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.card-lab__price-row .apartment-card__lotid {
+  margin: 0;
+}
+
 @media (max-width: 540px) {
   .card-lab {
     padding-block: 28px 40px;
