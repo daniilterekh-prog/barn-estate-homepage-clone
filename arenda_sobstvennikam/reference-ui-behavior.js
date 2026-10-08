@@ -323,11 +323,11 @@
       var picture = document.createElement('picture');
       var source = document.createElement('source');
       source.media = '(max-width: 580px)';
-      source.srcset = '/barn-estate-homepage-clone/arenda_sobstvennikam/pictures/feedback-modal/interior-mobile.webp';
+      source.srcset = new URL('../pictures/consultation/cta-ruslan-pruss.webp', window.location.href).href;
       image.parentNode.insertBefore(picture, image);
       picture.append(source, image);
-      image.src = '/barn-estate-homepage-clone/arenda_sobstvennikam/pictures/feedback-modal/interior-desktop.webp';
-      image.alt = 'Премиальный интерьер с панорамным видом';
+      image.src = source.srcset;
+      image.alt = 'Руслан Прус — руководитель департамента городской недвижимости BARNES';
     }
 
     var channels = document.createElement('div');

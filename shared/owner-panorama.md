@@ -19,3 +19,7 @@ Tab numbers use outlined square shapes with 1px radius, 42px desktop / 36px mobi
 Tab labels use 22/26.4px, weight 400, and 18/21.6px up to 600px. The tab grid is four columns on desktop, two up to 1000px, and one up to 360px to retain readable labels beside the numbers without overflow. Number typography is unchanged.
 
 The introductory sentence beside the section title and the channel-selection note were removed at the user's request. Publication of both owner routes was explicitly authorised on 2026-10-08. Shared files remain scoped to these routes; other landing pages are unaffected.
+
+## Current request modal image
+
+Both owner routes use the existing real portrait `pictures/consultation/cta-ruslan-pruss.webp` in the modal's right column instead of a generated interior. The portrait has descriptive alt text, `object-fit: contain`, bottom-centred placement and a kit #f1f1f1 background, so the head is never cropped. Mobile retains the stacked layout with a 240px-tall contained portrait. Request fields and submission handlers are unchanged.

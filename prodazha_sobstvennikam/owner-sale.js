@@ -515,11 +515,11 @@
     const feedbackPicture = document.createElement('picture');
     const feedbackSource = document.createElement('source');
     feedbackSource.media = '(max-width: 580px)';
-    feedbackSource.srcset = 'assets/feedback-hero.webp';
+    feedbackSource.srcset = '../pictures/consultation/cta-ruslan-pruss.webp';
     feedbackImage.parentNode.insertBefore(feedbackPicture, feedbackImage);
     feedbackPicture.append(feedbackSource, feedbackImage);
-    feedbackImage.src = 'assets/feedback-modal-interior-desktop.webp';
-    feedbackImage.alt = 'Премиальный интерьер с панорамным видом';
+    feedbackImage.src = feedbackSource.srcset;
+    feedbackImage.alt = 'Руслан Прус — руководитель департамента городской недвижимости BARNES';
 
     const feedbackChannels = document.createElement('div');
     feedbackChannels.className = 'feedback-modal__channels';
