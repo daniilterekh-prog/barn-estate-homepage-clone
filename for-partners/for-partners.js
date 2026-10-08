@@ -253,19 +253,88 @@
   var previous = document.querySelector('.ambassadors-advantages__nav-btn[aria-label*="Предыдущее"]');
   var next = document.querySelector('.ambassadors-advantages__nav-btn[aria-label*="Следующее"]');
   var advantageIndex = 0;
+  var advantagesList = advantages && advantages.querySelector('.splide__list');
+  var advantagesTrack = advantages && advantages.querySelector('.splide__track');
+  var advantageCards = advantagesList ? Array.prototype.slice.call(advantagesList.querySelectorAll('.splide__slide')) : [];
+  var advantageDragStart = null;
+  var advantageDragOffset = 0;
+
+  function visibleAdvantageCount() {
+    if (window.matchMedia('(max-width: 768px)').matches) return 1;
+    if (window.matchMedia('(max-width: 1024px)').matches) return 2;
+    return 3;
+  }
+
+  function advantageStep() {
+    if (!advantageCards.length) return 0;
+    var cardStyle = window.getComputedStyle(advantageCards[0]);
+    return advantageCards[0].getBoundingClientRect().width + (parseFloat(cardStyle.marginRight) || 0);
+  }
+
+  function updateAdvantages(animate) {
+    if (!advantagesList || !advantageCards.length) return;
+    var visibleCount = visibleAdvantageCount();
+    var maxIndex = Math.max(0, advantageCards.length - visibleCount);
+    advantageIndex = Math.max(0, Math.min(advantageIndex, maxIndex));
+    advantageDragOffset = -advantageIndex * advantageStep();
+
+    advantagesList.style.transition = animate && !window.matchMedia('(prefers-reduced-motion: reduce)').matches
+      ? 'transform 400ms cubic-bezier(.25, 1, .5, 1)'
+      : 'none';
+    advantagesList.style.transform = 'translateX(' + advantageDragOffset + 'px)';
+
+    advantageCards.forEach(function (card, index) {
+      var visible = index >= advantageIndex && index < advantageIndex + visibleCount;
+      card.classList.toggle('is-active', index === advantageIndex);
+      card.classList.toggle('is-next', index === advantageIndex + 1);
+      card.classList.toggle('is-visible', visible);
+      if (visible) card.removeAttribute('aria-hidden');
+      else card.setAttribute('aria-hidden', 'true');
+    });
+
+    if (previous) previous.disabled = advantageIndex === 0;
+    if (next) next.disabled = advantageIndex === maxIndex;
+  }
+
   function moveAdvantages(direction) {
-    if (!advantages) return;
-    var list = advantages.querySelector('.splide__list');
-    var cards = list && list.querySelectorAll('.splide__slide');
-    if (!list || !cards || cards.length < 2) return;
-    advantageIndex = (advantageIndex + direction + cards.length) % cards.length;
-    list.style.transform = 'translateX(' + (-advantageIndex * 100) + '%)';
+    advantageIndex += direction;
+    updateAdvantages(true);
   }
+
   if (previous) previous.addEventListener('click', function () { moveAdvantages(-1); });
-  if (next) {
-    next.disabled = false;
-    next.addEventListener('click', function () { moveAdvantages(1); });
+  if (next) next.addEventListener('click', function () { moveAdvantages(1); });
+
+  if (advantagesTrack && advantagesList && advantageCards.length) {
+    advantagesTrack.addEventListener('pointerdown', function (event) {
+      if (event.button !== undefined && event.button !== 0) return;
+      advantageDragStart = event.clientX;
+      advantagesList.style.transition = 'none';
+      advantagesTrack.classList.add('is-dragging');
+      if (advantagesTrack.setPointerCapture) advantagesTrack.setPointerCapture(event.pointerId);
+    });
+
+    advantagesTrack.addEventListener('pointermove', function (event) {
+      if (advantageDragStart === null) return;
+      var delta = event.clientX - advantageDragStart;
+      advantagesList.style.transform = 'translateX(' + (advantageDragOffset + delta) + 'px)';
+    });
+
+    function finishAdvantagesDrag(event) {
+      if (advantageDragStart === null) return;
+      var delta = event.clientX - advantageDragStart;
+      var threshold = Math.min(72, Math.max(36, advantageStep() * .16));
+      advantageDragStart = null;
+      advantagesTrack.classList.remove('is-dragging');
+      if (Math.abs(delta) >= threshold) advantageIndex += delta < 0 ? 1 : -1;
+      updateAdvantages(true);
+    }
+
+    advantagesTrack.addEventListener('pointerup', finishAdvantagesDrag);
+    advantagesTrack.addEventListener('pointercancel', finishAdvantagesDrag);
+    window.addEventListener('resize', function () { updateAdvantages(false); }, { passive: true });
   }
+
+  updateAdvantages(false);
 
   document.querySelectorAll('.catalog-contact__form, .newsletter-form').forEach(function (form) {
     form.addEventListener('submit', function (event) {

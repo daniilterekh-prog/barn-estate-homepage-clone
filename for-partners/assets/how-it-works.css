@@ -23,6 +23,19 @@
   margin-bottom: -7px;
 }
 
+.ambassadors-advantages__slider .splide__track {
+  cursor: grab;
+  touch-action: pan-y;
+}
+
+.ambassadors-advantages__slider .splide__track.is-dragging {
+  cursor: grabbing;
+}
+
+.ambassadors-advantages__slider .splide__list {
+  will-change: transform;
+}
+
 #how-it-works {
   --partners-stages-accent: #6e1f2d;
   --partners-stages-border: rgba(30, 30, 30, .2);
