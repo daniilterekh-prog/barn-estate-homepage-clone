@@ -20,6 +20,17 @@
     document.body.style.overflow = '';
   };
 
+  const syncMenuState = function () {
+    if (!menuButton) return;
+    const menuId = 'owner-sale-site-menu';
+    if (menu) {
+      menu.id = menuId;
+      menu.setAttribute('aria-label', 'Основное меню');
+    }
+    menuButton.setAttribute('aria-controls', menuId);
+    menuButton.setAttribute('aria-expanded', menu ? String(!menu.hasAttribute('hidden')) : 'false');
+  };
+
   const enhanceHeroHeader = function () {
     const inner = header && header.querySelector('.site-header__inner');
     if (!header || !inner) return;
@@ -82,6 +93,35 @@
   };
 
   enhanceHeroHeader();
+
+  const enhanceAmbassadorsLink = function () {
+    const label = 'Амбассадоры';
+    const href = 'https://barn-estate.ru/for-partners/';
+
+    document.querySelectorAll('.site-footer__column').forEach(function (column) {
+      const title = column.querySelector('.site-footer__column-title');
+      const links = column.querySelector('.site-footer__links');
+      if (!title || !links || title.textContent.trim().toUpperCase() !== 'СОБСТВЕННИКАМ') return;
+      if (Array.from(links.querySelectorAll('a')).some(function (link) {
+        return link.textContent.trim() === label;
+      })) return;
+
+      const sampleItem = links.querySelector(':scope > li');
+      const item = sampleItem ? sampleItem.cloneNode(true) : document.createElement('li');
+      let link = item.querySelector('a');
+      if (!link) {
+        link = document.createElement('a');
+        link.className = 'site-footer__link';
+        item.appendChild(link);
+      }
+      link.textContent = label;
+      link.href = href;
+      link.removeAttribute('aria-current');
+      links.appendChild(item);
+    });
+  };
+
+  enhanceAmbassadorsLink();
 
   const magazineSection = page.querySelector(':scope > .owner-sale-magazine');
   if (magazineSection) magazineSection.remove();
@@ -564,6 +604,8 @@
     placeholder.replaceWith(slider);
   });
 
+  syncMenuState();
+
   if (menuButton && menu) {
     menuButton.addEventListener('click', function () {
       const isOpen = menu.hasAttribute('hidden') === false;
@@ -579,6 +621,7 @@
         document.documentElement.style.removeProperty('--site-menu-top');
       }
       menuButton.setAttribute('aria-label', nextOpen ? 'Закрыть меню' : 'Открыть меню');
+      syncMenuState();
       menuButton.innerHTML = nextOpen
         ? '<span class="ui-icon ui-icon-current site-header__icon" data-v-7912d681 data-v-8bd2f545><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg></span>'
         : '<span class="ui-icon ui-icon-current site-header__icon" data-v-7912d681 data-v-8bd2f545><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M5 7h14"></path><path d="M5 12h14"></path><path d="M5 17h14"></path></svg></span>';
@@ -591,7 +634,11 @@
     control.addEventListener('click', function () {
       if (!menu) return;
       menu.setAttribute('hidden', '');
-      if (menuButton) menuButton.setAttribute('aria-expanded', 'false');
+      if (menuButton) {
+        menuButton.setAttribute('aria-expanded', 'false');
+        menuButton.setAttribute('aria-label', 'Открыть меню');
+      }
+      syncMenuState();
       unlockBodyScroll();
     });
   });
