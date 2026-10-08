@@ -16,7 +16,7 @@
 
   var conditionsStylesheet = document.createElement('link');
   conditionsStylesheet.rel = 'stylesheet';
-  conditionsStylesheet.href = 'assets/conditions-heading.css';
+  conditionsStylesheet.href = 'assets/conditions-heading.css?v=20261008-2';
   document.head.appendChild(conditionsStylesheet);
 
   var ownerShellStylesheet = document.createElement('link');
