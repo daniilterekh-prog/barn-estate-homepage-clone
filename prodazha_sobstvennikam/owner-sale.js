@@ -515,11 +515,11 @@
     const feedbackPicture = document.createElement('picture');
     const feedbackSource = document.createElement('source');
     feedbackSource.media = '(max-width: 580px)';
-    feedbackSource.srcset = 'assets/feedback-hero.webp';
+    feedbackSource.srcset = '../shared/assets/modal-ruslan-organic.webp';
     feedbackImage.parentNode.insertBefore(feedbackPicture, feedbackImage);
     feedbackPicture.append(feedbackSource, feedbackImage);
-    feedbackImage.src = 'assets/feedback-modal-interior-desktop.webp';
-    feedbackImage.alt = 'Премиальный интерьер с панорамным видом';
+    feedbackImage.src = feedbackSource.srcset;
+    feedbackImage.alt = 'Руслан Прус — руководитель департамента городской недвижимости BARNES';
 
     const feedbackChannels = document.createElement('div');
     feedbackChannels.className = 'feedback-modal__channels';
@@ -623,6 +623,19 @@
       'Брендированный баннер на объекте'
     ];
 
+    const serviceTitles = [
+      'Презентация объекта',
+      'Адресные рассылки',
+      'Тематические подборки',
+      'Социальные сети и площадки',
+      'Персональный брокер',
+      'Индивидуальный сценарий продажи',
+      'Виртуальный 3D-тур',
+      'Видеосъёмка',
+      'Рекламные материалы',
+      'Фотосъёмка',
+      'Баннер на объекте'
+    ];
     const slider = document.createElement('div');
     slider.className = 'splide owner-sale-services__slider is-overflow is-initialized splide--slide splide--ltr splide--draggable is-active';
     slider.setAttribute('data-v-2d6c67d9', '');
@@ -630,7 +643,7 @@
     slider.setAttribute('aria-label', 'Список услуг');
     slider.innerHTML = '<div class="splide__track" data-v-2d6c67d9=""><ul class="splide__list" data-v-2d6c67d9="">' + services.map(function (service, index) {
       const number = String(index + 1).padStart(2, '0');
-      return '<li class="splide__slide" data-v-2d6c67d9=""><article class="owner-sale-services__card" data-v-2d6c67d9=""><span class="owner-sale-services__number" data-v-2d6c67d9="">' + number + '</span><p class="owner-sale-services__text" data-v-2d6c67d9="">' + service + '</p></article></li>';
+      return '<li class="splide__slide" data-v-2d6c67d9=""><article class="owner-sale-services__card" data-v-2d6c67d9=""><span class="owner-sale-services__number" data-v-2d6c67d9="">' + number + '</span><p class="owner-sale-services__text" data-v-2d6c67d9=""><strong>' + serviceTitles[index] + '</strong><span>' + service + '</span></p></article></li>';
     }).join('') + '</ul></div>';
     placeholder.replaceWith(slider);
   });

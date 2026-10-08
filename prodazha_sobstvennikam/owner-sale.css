@@ -31,7 +31,7 @@
 }
 
 .owner-sale-reference-ui .feedback-modal--owner-sale .feedback-modal__hero {
-  background: #fff;
+  background: #eee6db;
   max-width: 100%;
   min-height: 100%;
   min-width: 0;
@@ -50,7 +50,7 @@
   height: 100%;
   inset: 0;
   object-fit: cover;
-  object-position: center;
+  object-position: center top;
   position: absolute;
   width: 100%;
 }
@@ -183,6 +183,9 @@
   }
 
   .owner-sale-reference-ui .feedback-modal--owner-sale .feedback-modal__hero {
+    height: 240px;
+    max-height: none;
+    flex-shrink: 0;
     min-height: 0;
     order: -1;
   }
@@ -192,9 +195,9 @@
   }
 
   .owner-sale-reference-ui .feedback-modal--owner-sale .feedback-modal__hero-image {
-    aspect-ratio: 1160 / 586;
-    height: auto;
-    object-fit: contain;
+    aspect-ratio: auto;
+    height: 240px;
+    object-fit: cover;
     position: static;
   }
 
@@ -2291,6 +2294,36 @@ body.owner-sale-reference-ui .owner-sale-hero .breadcrumbs__link {
     line-height: 22.4px;
     margin-top: 24px;
   }
+}
+
+/* Team cards follow the approved owner-rent title/description hierarchy. */
+.owner-sale-reference-ui .owner-sale-services__text {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.owner-sale-reference-ui .owner-sale-services__text strong {
+  color: var(--owner-sale-ink);
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: 24px;
+}
+.owner-sale-reference-ui .owner-sale-services__text span {
+  color: var(--owner-sale-secondary);
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 28.16px;
+}
+.owner-sale-reference-ui .owner-sale-services__card:is(:hover, :focus-within) .owner-sale-services__text :is(strong, span) {
+  color: #fff;
+}
+@media (min-width: 541px) and (max-width: 1199px) {
+  .owner-sale-reference-ui .owner-sale-services__text strong { font-size: 16px; line-height: 19.2px; }
+}
+@media (max-width: 540px) {
+  .owner-sale-reference-ui .owner-sale-services__text { gap: 6px; }
+  .owner-sale-reference-ui .owner-sale-services__text span { font-size: 15px; line-height: 19.2px; }
 }
 
 /* Keep compact sticky controls keyboard-friendly without changing their visual contract. */

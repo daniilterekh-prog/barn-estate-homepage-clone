@@ -81,7 +81,8 @@
     if (!button || button.dataset.requestPopupBound === 'true') return;
 
     button.dataset.requestPopupBound = 'true';
-    button.addEventListener('click', function () {
+    button.addEventListener('click', function (event) {
+      event.preventDefault();
       var heroRequest = document.querySelector('.owner-sale-hero__button');
       if (heroRequest) heroRequest.click();
     });
@@ -322,11 +323,11 @@
       var picture = document.createElement('picture');
       var source = document.createElement('source');
       source.media = '(max-width: 580px)';
-      source.srcset = '/barn-estate-homepage-clone/arenda_sobstvennikam/pictures/feedback-modal/interior-mobile.webp';
+      source.srcset = new URL('../shared/assets/modal-ruslan-organic.webp', window.location.href).href;
       image.parentNode.insertBefore(picture, image);
       picture.append(source, image);
-      image.src = '/barn-estate-homepage-clone/arenda_sobstvennikam/pictures/feedback-modal/interior-desktop.webp';
-      image.alt = 'Премиальный интерьер с панорамным видом';
+      image.src = source.srcset;
+      image.alt = 'Руслан Прус — руководитель департамента городской недвижимости BARNES';
     }
 
     var channels = document.createElement('div');
@@ -441,6 +442,7 @@
       exclusiveCta.innerHTML = 'Связаться с брокером <span aria-hidden="true"><svg viewBox="0 0 16 16" focusable="false"><path d="M3 13 13 3M5 3h8v8" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25"></path></svg></span>';
 
       exclusiveHeader.append(intro, exclusiveCta);
+      bindRequestPopup(exclusiveCta);
     }
 
     section.querySelectorAll('.owner-sale-exclusive__item').forEach(function (item, index) {
@@ -559,6 +561,13 @@
   }
 
   function enhancePresentationCards() {
+    // Keep the approved imagery after Nuxt rehydrates its original SSR assets.
+    var presentationScenes = ['object-detail', 'positioning', 'viewing', 'legal', 'interior'];
+    document.querySelectorAll('.owner-sale-presentation__card img').forEach(function (image, index) {
+      if (!presentationScenes[index]) return;
+      var source = new URL('../shared/assets/presentation-v3/' + presentationScenes[index] + '.webp', window.location.href).href;
+      if (image.src !== source) image.src = source;
+    });
     var descriptions = [
       'Находим сильные стороны объекта и превращаем их в понятные преимущества для будущего арендатора.',
       'Определяем позиционирование, ценовой ориентир и ключевые акценты для презентации объекта.',
