@@ -655,7 +655,7 @@ body.owner-sale-reference-ui .owner-sale-hero .breadcrumbs__link {
   }
 }
 
-.owner-sale-reference-ui :is(#stages, #about, #property-types, #request) {
+.owner-sale-reference-ui :is(#presentation, #team, #stages, #services, #about, #property-types, #request) {
   scroll-margin-top: 112px;
 }
 

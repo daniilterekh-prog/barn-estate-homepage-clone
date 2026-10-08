@@ -86,37 +86,6 @@
   const magazineSection = page.querySelector(':scope > .owner-sale-magazine');
   if (magazineSection) magazineSection.remove();
 
-  const matchCityContactCta = function () {
-    const section = page.querySelector('.catalog-contact');
-    if (!section) return;
-
-    const background = section.querySelector('.catalog-contact__image');
-    if (background) {
-      background.src = '../assets/city-real-estate/source-assets/30-886f63e629-contacts-background.webp';
-    }
-
-    section.querySelectorAll('.catalog-contact__mobile-photo img, .catalog-contact__expert-photo img').forEach(function (image) {
-      image.src = '../assets/city-real-estate/source-assets/17-23350d2829-cta-ruslan-pruss.webp';
-      image.alt = 'Руслан Прус';
-    });
-
-    section.querySelectorAll('.catalog-contact__mobile-role, .catalog-contact__expert-role').forEach(function (role) {
-      role.textContent = 'Руководитель департамента городской недвижимости';
-    });
-    section.querySelectorAll('.catalog-contact__mobile-name, .catalog-contact__expert-name').forEach(function (name) {
-      name.textContent = 'Руслан Прус';
-    });
-
-    const title = section.querySelector('.catalog-contact__title');
-    const subtitle = section.querySelector('.catalog-contact__subtitle');
-    const cardTitle = section.querySelector('.catalog-contact__card-title');
-    if (title) title.textContent = 'Эксперты BARNES подскажут';
-    if (subtitle) subtitle.remove();
-    if (cardTitle) cardTitle.textContent = 'Получите предварительную оценку объекта';
-  };
-
-  matchCityContactCta();
-
   const enhanceSectionEyebrows = function () {
     [
       ['.owner-sale-stages__title', 'ПРОЦЕСС ПРОДАЖИ'],
@@ -291,23 +260,6 @@
   window.addEventListener('scroll', requestStagesScrollUpdate, { passive: true });
   window.addEventListener('resize', requestStagesScrollUpdate, { passive: true });
   requestStagesScrollUpdate();
-
-  const alignConsultationCopy = function () {
-    const consultation = page.querySelector('.catalog-consultation');
-    if (!consultation) return;
-
-    const title = 'Эксперты BARNES подскажут';
-    const description = 'Поможем подготовить объект, найти покупателя и продать недвижимость на выгодных условиях';
-
-    consultation.querySelectorAll('.catalog-consultation__subtitle, .catalog-consultation__mobile-title').forEach(function (element) {
-      element.textContent = title;
-    });
-    consultation.querySelectorAll('.catalog-consultation__lead, .catalog-consultation__mobile-lead').forEach(function (element) {
-      element.textContent = description;
-    });
-  };
-
-  alignConsultationCopy();
 
   const enhanceStickyHeader = function () {
     const inner = sticky && sticky.querySelector('.owner-sale-sticky__inner');
@@ -663,7 +615,7 @@
 
   page.querySelectorAll('.owner-sale-sticky__link').forEach(function (link) {
     link.addEventListener('click', function () {
-      const targets = { 'О Барнс': '#about', 'Процесс продажи объекта': '#stages', 'Виды недвижимости': '#property-types', 'Оставить заявку': '#request', 'Статьи': '#newsletter-title' };
+      const targets = { Представление: '#presentation', Команда: '#team', Этапы: '#stages', Направления: '#property-types' };
       const target = document.querySelector(targets[link.textContent.trim()]);
       if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
     });
