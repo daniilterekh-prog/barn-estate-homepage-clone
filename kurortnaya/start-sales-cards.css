@@ -21,14 +21,6 @@
   box-sizing: border-box;
 }
 
-.catalog-best-offers__slider.start-sales-carousel-ready .splide__slide[aria-hidden="true"] {
-  visibility: hidden;
-}
-
-.catalog-best-offers__slider.start-sales-carousel-ready .splide__slide.is-visible {
-  visibility: visible;
-}
-
 .catalog-best-offers .launch-card .apartment-card__link {
   position: absolute;
   inset: 0;
