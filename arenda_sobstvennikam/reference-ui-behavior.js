@@ -153,9 +153,9 @@
       contacts.className = 'owner-rent-hero-contacts';
       contacts.setAttribute('aria-label', 'Способы связи');
       [
-        ['WhatsApp', 'https://wa.me/79252621650', '/arenda_sobstvennikam/pictures/office-contact/whatsapp.svg'],
-        ['MAX', 'https://max.ru/join/AWj8ibiCtAPOJOlulMGNkykKGz_prXVWg-IQK1KpUG8', '/arenda_sobstvennikam/pictures/office-contact/max.svg'],
-        ['Telegram', 'https://t.me/art_de_vivre_barnes', '/arenda_sobstvennikam/pictures/office-contact/telegram.svg']
+        ['WhatsApp', 'https://wa.me/79252621650', '/barn-estate-homepage-clone/arenda_sobstvennikam/pictures/office-contact/whatsapp.svg'],
+        ['MAX', 'https://max.ru/join/AWj8ibiCtAPOJOlulMGNkykKGz_prXVWg-IQK1KpUG8', '/barn-estate-homepage-clone/arenda_sobstvennikam/pictures/office-contact/max.svg'],
+        ['Telegram', 'https://t.me/art_de_vivre_barnes', '/barn-estate-homepage-clone/arenda_sobstvennikam/pictures/office-contact/telegram.svg']
       ].forEach(function (item) {
         var link = document.createElement('a');
         var icon = document.createElement('img');
@@ -207,9 +207,9 @@
       messengers.className = 'owner-sale-sticky__messengers';
       messengers.setAttribute('aria-label', 'Способы связи');
       [
-        ['WhatsApp', 'https://wa.me/79252621650', '/arenda_sobstvennikam/pictures/office-contact/whatsapp.svg'],
-        ['MAX', 'https://max.ru/join/AWj8ibiCtAPOJOlulMGNkykKGz_prXVWg-IQK1KpUG8', '/arenda_sobstvennikam/pictures/office-contact/max.svg'],
-        ['Telegram', 'https://t.me/art_de_vivre_barnes', '/arenda_sobstvennikam/pictures/office-contact/telegram.svg']
+        ['WhatsApp', 'https://wa.me/79252621650', '/barn-estate-homepage-clone/arenda_sobstvennikam/pictures/office-contact/whatsapp.svg'],
+        ['MAX', 'https://max.ru/join/AWj8ibiCtAPOJOlulMGNkykKGz_prXVWg-IQK1KpUG8', '/barn-estate-homepage-clone/arenda_sobstvennikam/pictures/office-contact/max.svg'],
+        ['Telegram', 'https://t.me/art_de_vivre_barnes', '/barn-estate-homepage-clone/arenda_sobstvennikam/pictures/office-contact/telegram.svg']
       ].forEach(function (item) {
         var link = document.createElement('a');
         var icon = document.createElement('img');
@@ -311,10 +311,10 @@
       var picture = document.createElement('picture');
       var source = document.createElement('source');
       source.media = '(max-width: 580px)';
-      source.srcset = '/arenda_sobstvennikam/pictures/feedback-modal/interior-mobile.webp';
+      source.srcset = '/barn-estate-homepage-clone/arenda_sobstvennikam/pictures/feedback-modal/interior-mobile.webp';
       image.parentNode.insertBefore(picture, image);
       picture.append(source, image);
-      image.src = '/arenda_sobstvennikam/pictures/feedback-modal/interior-desktop.webp';
+      image.src = '/barn-estate-homepage-clone/arenda_sobstvennikam/pictures/feedback-modal/interior-desktop.webp';
       image.alt = 'Премиальный интерьер с панорамным видом';
     }
 
@@ -485,12 +485,12 @@
     section.innerHTML = `
       <div class="catalog-consultation__inner">
         <div class="catalog-consultation__media">
-          <img class="catalog-consultation__image" src="/assets/city-real-estate/source-assets/16-7d2ca45d4d-contacts-man.webp" alt="" width="1920" height="800">
+          <img class="catalog-consultation__image" src="/barn-estate-homepage-clone/assets/city-real-estate/source-assets/16-7d2ca45d4d-contacts-man.webp" alt="" width="1920" height="800">
           <div class="catalog-consultation__overlay" aria-hidden="true"></div>
           <div class="catalog-consultation__grid">
             <div class="catalog-consultation__content">
               <div class="catalog-consultation__mobile-expert">
-                <div class="catalog-consultation__mobile-photo"><img src="/assets/city-real-estate/source-assets/17-23350d2829-cta-ruslan-pruss.webp" alt="Руслан Прус" width="68" height="68"></div>
+                <div class="catalog-consultation__mobile-photo"><img src="/barn-estate-homepage-clone/assets/city-real-estate/source-assets/17-23350d2829-cta-ruslan-pruss.webp" alt="Руслан Прус" width="68" height="68"></div>
                 <div><p class="catalog-consultation__mobile-role">Руководитель департамента городской недвижимости</p><p class="catalog-consultation__mobile-name">Руслан Прус</p></div>
               </div>
               <div class="catalog-consultation__mobile-header"><h2 class="catalog-consultation__mobile-title">Эксперты BARNES подскажут</h2><p class="catalog-consultation__mobile-lead">Поможем подготовить объект, найти надёжного арендатора и сдать недвижимость на выгодных условиях</p></div>
