@@ -4,8 +4,8 @@
 #barnes-directions .bd-window { width:100%; max-width:none; color:var(--bd-ink); }
 #barnes-directions .bd-section { padding:64px 0; }
 #barnes-directions :is(h2,h3,p) { margin:0; }
-#barnes-directions .bd-eyebrow { font-size:14px; line-height:16.1px; font-weight:400; letter-spacing:.12em; color:var(--bd-gray); text-align:center; margin-bottom:25px; }
-#barnes-directions h2 { font-size:38px; line-height:45.6px; font-weight:300; text-align:center; margin-bottom:40px; }
+#barnes-directions .bd-eyebrow { font-size:14px; line-height:16.1px; font-weight:400; letter-spacing:.12em; color:var(--bd-gray); text-align:left; margin-bottom:25px; }
+#barnes-directions h2 { font-size:38px; line-height:45.6px; font-weight:300; text-align:left; margin-bottom:40px; }
 #barnes-directions .bd-horizontal { display:flex; flex-wrap:wrap; gap:0 24px; border-bottom:1px solid var(--bd-line); margin-bottom:40px; }
 #barnes-directions .bd-navbtn { font:400 17px/23.8px "Tilda Sans",system-ui,sans-serif; padding:16px 0; color:var(--bd-gray); background:none; border:0; border-bottom:2px solid transparent; text-align:left; cursor:pointer; }
 #barnes-directions .bd-navbtn[aria-selected=true] { color:var(--bd-red); border-bottom-color:var(--bd-red); }
@@ -58,6 +58,7 @@
   #barnes-directions .bd-copy { grid-template-rows:minmax(104px,auto) minmax(84px,auto) minmax(176px,auto) minmax(128px,auto) 70px; gap:24px; }
 }
 @media(max-width:540px) {
+  #barnes-directions :is(.bd-eyebrow,h2) { text-align:center; }
   #barnes-directions .bd-picker-label { display:block; margin-bottom:10px; font-size:15px; line-height:19.2px; color:var(--bd-gray); }
   #barnes-directions .bd-mobile-picker { appearance:none; -webkit-appearance:none; padding:16px 44px 16px 16px; border:1px solid var(--bd-red); font-size:16px; line-height:24px; cursor:pointer; background:#faf5f5 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20'%3E%3Cpath d='m5 7.5 5 5 5-5' fill='none' stroke='%238b1d25' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") no-repeat right 16px center; }
   #barnes-directions .bd-imagewrap { height:290px; }
