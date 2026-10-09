@@ -78,6 +78,16 @@
   #barnes-directions .bd-copy { grid-template-rows:minmax(var(--bd-heading-height,104px),auto) minmax(var(--bd-budget-height,88px),auto) minmax(var(--bd-facts-height,176px),auto) minmax(var(--bd-commission-height,128px),auto) 70px; }
   #barnes-directions .bd-copy :is(.bd-price,.bd-words,.bd-num,.bd-facttext) { font-size:38px; line-height:45.6px; font-weight:300; }
   #barnes-directions .bd-commission strong { font-size:38px; line-height:45.6px; font-weight:400; }
-  #barnes-directions :is(.bd-metrics,.bd-textfacts)>div { display:grid; grid-template-rows:minmax(56.32px,auto) auto; gap:12px; align-content:start; }
   #barnes-directions .bd-facttext { margin-top:0; }
 }
+
+/* Equal spacing between every label and its value, including wrapped labels. */
+#barnes-directions .bd-budget,
+#barnes-directions .bd-commission,
+#barnes-directions :is(.bd-metrics,.bd-textfacts)>div {
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+}
+#barnes-directions .bd-price-label { margin-bottom:0; }
+#barnes-directions .bd-facttext { margin-top:0; }
