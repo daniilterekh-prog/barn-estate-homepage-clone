@@ -40,6 +40,44 @@
   const picker = content.querySelector('.bd-mobile-picker');
   const buttons = Array.from(content.querySelectorAll('[data-pick]'));
 
+  function alignDesktopRows() {
+    const properties = ['--bd-heading-height', '--bd-budget-height', '--bd-facts-height', '--bd-commission-height'];
+    if (!window.matchMedia('(min-width: 901px)').matches) {
+      properties.forEach(name => root.style.removeProperty(name));
+      return;
+    }
+    const copy = panel.querySelector('.bd-copy');
+    if (!copy) return;
+    const measure = document.createElement('div');
+    measure.className = 'bd-copy';
+    measure.setAttribute('aria-hidden', 'true');
+    measure.inert = true;
+    Object.assign(measure.style, {
+      position: 'fixed', visibility: 'hidden', pointerEvents: 'none',
+      left: '0', top: '0', width: copy.getBoundingClientRect().width + 'px',
+      gridTemplateRows: 'auto auto auto auto 70px'
+    });
+    root.appendChild(measure);
+    const heights = [104, 88, 176, 128];
+    data.forEach((direction, index) => {
+      const template = document.createElement('template');
+      template.innerHTML = feature(index);
+      measure.replaceChildren(...template.content.querySelector('.bd-copy').children);
+      heights.forEach((height, row) => {
+        heights[row] = Math.max(height, Math.ceil(measure.children[row].getBoundingClientRect().height));
+      });
+    });
+    measure.remove();
+    properties.forEach((name, index) => root.style.setProperty(name, heights[index] + 'px'));
+  }
+
+  let sizingFrame;
+  window.addEventListener('resize', () => {
+    cancelAnimationFrame(sizingFrame);
+    sizingFrame = requestAnimationFrame(alignDesktopRows);
+  });
+  if (document.fonts) document.fonts.ready.then(alignDesktopRows);
+
   function render(index) {
     if (!Number.isInteger(index) || !data[index]) return;
     activeIndex = index;
@@ -82,4 +120,5 @@
     buttons[target].focus();
   });
   render(0);
+  alignDesktopRows();
 })();
