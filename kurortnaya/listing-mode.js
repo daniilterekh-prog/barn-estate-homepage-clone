@@ -118,18 +118,21 @@
   const toolbar = document.createElement('section');
   toolbar.className = 'catalog-mode-toolbar';
   toolbar.setAttribute('aria-label', 'Фильтры каталога');
+  const filterIcons = {
+    location: '<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 21s6-5.4 6-11a6 6 0 1 0-12 0c0 5.6 6 11 6 11Z" stroke="currentColor" stroke-width="1.35"/><circle cx="12" cy="10" r="2.25" stroke="currentColor" stroke-width="1.35"/></svg>',
+    price: '<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.35"/><path d="M9 16V7.5h3.4a2.75 2.75 0 1 1 0 5.5H9m0 0h5.6m-5.6 2h4.6" stroke="currentColor" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round"/></svg>',
+    bedrooms: '<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 18v-7.5M21 18v-5.5a2 2 0 0 0-2-2h-7.5A2.5 2.5 0 0 0 9 13v2M3 15h18M5.5 10.5h2A1.5 1.5 0 0 1 9 12v3H4v-3a1.5 1.5 0 0 1 1.5-1.5Z" stroke="currentColor" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round"/></svg>',
+  };
   toolbar.innerHTML = `
     <div class="catalog-mode-switch" role="group" aria-label="Тип недвижимости">
       <button class="catalog-mode-switch__button is-active" type="button" data-listing-mode="new-build" aria-pressed="true">Новостройки</button>
       <button class="catalog-mode-switch__button" type="button" data-listing-mode="secondary" aria-pressed="false">Вторичная</button>
     </div>
     <div class="catalog-mode-filters catalog-quick-filters" data-v-6fd45cc6>
-      <div class="catalog-quick-filters__item" data-v-6fd45cc6><button class="catalog-quick-filters__button" type="button" aria-expanded="false" aria-haspopup="true" aria-label="Фильтр по локации" data-v-6fd45cc6><span class="catalog-quick-filters__label" data-v-6fd45cc6><span class="catalog-quick-filters__label-text">Локация</span></span><span class="catalog-quick-filters__chevron" aria-hidden="true" data-v-6fd45cc6></span></button></div>
-      <div class="catalog-quick-filters__item" data-v-6fd45cc6><button class="catalog-quick-filters__button" type="button" aria-expanded="false" aria-haspopup="true" aria-label="Фильтр по стоимости" data-v-6fd45cc6><span class="catalog-quick-filters__label" data-v-6fd45cc6><span class="catalog-quick-filters__label-text">Стоимость</span></span><span class="catalog-quick-filters__chevron" aria-hidden="true" data-v-6fd45cc6></span></button></div>
-      <div class="catalog-quick-filters__item" data-v-6fd45cc6><button class="catalog-quick-filters__button" type="button" aria-expanded="false" aria-haspopup="true" aria-label="Фильтр по количеству спален" data-v-6fd45cc6><span class="catalog-quick-filters__label" data-v-6fd45cc6><span class="catalog-quick-filters__label-text">Спальни</span></span><span class="catalog-quick-filters__chevron" aria-hidden="true" data-v-6fd45cc6></span></button></div>
+      <div class="catalog-quick-filters__item" data-v-6fd45cc6><button class="catalog-quick-filters__button" type="button" aria-expanded="false" aria-haspopup="true" aria-label="Локация: Все направления" data-v-6fd45cc6><span class="catalog-quick-filters__content"><span class="catalog-quick-filters__icon">${filterIcons.location}</span><span class="catalog-quick-filters__label" data-v-6fd45cc6><span class="catalog-quick-filters__caption">Локация</span></span></span><span class="catalog-quick-filters__chevron" aria-hidden="true" data-v-6fd45cc6></span></button></div>
+      <div class="catalog-quick-filters__item" data-v-6fd45cc6><button class="catalog-quick-filters__button" type="button" aria-expanded="false" aria-haspopup="true" aria-label="Стоимость: Любая" data-v-6fd45cc6><span class="catalog-quick-filters__content"><span class="catalog-quick-filters__icon">${filterIcons.price}</span><span class="catalog-quick-filters__label" data-v-6fd45cc6><span class="catalog-quick-filters__caption">Стоимость</span></span></span><span class="catalog-quick-filters__chevron" aria-hidden="true" data-v-6fd45cc6></span></button></div>
+      <div class="catalog-quick-filters__item" data-v-6fd45cc6><button class="catalog-quick-filters__button" type="button" aria-expanded="false" aria-haspopup="true" aria-label="Спальни: Любые" data-v-6fd45cc6><span class="catalog-quick-filters__content"><span class="catalog-quick-filters__icon">${filterIcons.bedrooms}</span><span class="catalog-quick-filters__label" data-v-6fd45cc6><span class="catalog-quick-filters__caption">Спальни</span></span></span><span class="catalog-quick-filters__chevron" aria-hidden="true" data-v-6fd45cc6></span></button></div>
     </div>`;
-  const sortLabel = sort.querySelector('.visually-hidden');
-  if (sortLabel) sortLabel.className = 'catalog-mode-sort__label';
   const detailedFiltersButton = document.createElement('button');
   detailedFiltersButton.className = 'catalog-mode-detailed-filters';
   detailedFiltersButton.type = 'button';
@@ -143,7 +146,8 @@
       <circle cx="14" cy="12" r="2" stroke="currentColor" stroke-width="1.15"></circle>
       <circle cx="10" cy="18" r="2" stroke="currentColor" stroke-width="1.15"></circle>
     </svg>
-    <span class="catalog-mode-detailed-filters__label">Все фильтры</span>`;
+    <span class="catalog-mode-detailed-filters__label catalog-mode-detailed-filters__label--desktop">Все фильтры</span>
+    <span class="catalog-mode-detailed-filters__label catalog-mode-detailed-filters__label--mobile">Фильтры</span>`;
   toolbar.append(sort, detailedFiltersButton);
   header.after(toolbar);
 

@@ -67,6 +67,220 @@ html body .catalog-intro__lead[class] {
   line-height: 1.5;
 }
 
+/* Catalog content-page display follows the approved content H1 contract. */
+html body .catalog-hero__title[class] {
+  font-size: clamp(48px, 5.2vw, 75px);
+  font-weight: 300;
+  letter-spacing: -0.025em;
+  line-height: 0.98;
+}
+
+/* Long-form BARNES copy uses heading roles without introducing bold weights. */
+html body .catalog-intro__text[class] :is(h3, h4) {
+  color: var(--kit-text);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+html body .catalog-intro__text[class] h4 {
+  font-size: 18px;
+  line-height: 1.25;
+}
+
+html body .catalog-intro__text[class] :is(p, li) {
+  color: var(--kit-text);
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.4;
+}
+
+html body #catalog-intro .catalog-intro__details[aria-hidden="true"] {
+  margin-top: -22px;
+}
+
+html body #catalog-intro .catalog-intro__image[class] {
+  transform: scale(1.14);
+  transform-origin: right bottom;
+}
+
+/* CTA portraits: Denis stays natural; the layout, not the photograph, is mirrored. */
+@media (min-width: 769px) {
+  html body .catalog-consultation__media[class] {
+    background: #101318;
+    overflow: hidden;
+  }
+
+  html body .catalog-consultation__media[class]::before {
+    background: url("assets/cta-consultation-interior.webp") center / cover no-repeat;
+    bottom: 0;
+    clip-path: inset(0);
+    content: "";
+    filter: brightness(0.72);
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+  }
+
+  html body .catalog-consultation__image[class] {
+    background: transparent;
+    height: 100%;
+    left: 0;
+    object-fit: contain;
+    object-position: center bottom;
+    right: auto;
+    width: 50%;
+    z-index: 1;
+  }
+
+  html body .catalog-consultation__overlay[class] {
+    background: linear-gradient(90deg, rgba(5, 7, 10, 0.08) 0%, rgba(10, 12, 16, 0.18) 42%, rgba(10, 12, 16, 0.72) 62%, rgba(10, 12, 16, 0.88) 100%);
+    z-index: 2;
+  }
+
+  html body .catalog-consultation__grid[class] {
+    z-index: 3;
+  }
+
+  html body .catalog-consultation__content[class] {
+    margin-left: auto;
+  }
+
+  html body .catalog-contact__content[class] {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  html body .catalog-contact__card[class] {
+    -webkit-backdrop-filter: blur(14px) saturate(0.78);
+    backdrop-filter: blur(14px) saturate(0.78);
+    background: rgba(8, 10, 13, 0.52);
+    border-color: rgba(255, 255, 255, 0.3);
+    grid-column: 1;
+    grid-row: 1;
+  }
+}
+
+html body :is(.catalog-contact__mobile-photo, .catalog-contact__expert-photo, .floating-expert__avatar)[class] {
+  overflow: hidden;
+}
+
+html body :is(.catalog-contact__mobile-photo, .catalog-contact__expert-photo)[class] img {
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 0;
+  transform: scale(1.35);
+  transform-origin: 50% 0;
+  width: 100%;
+}
+
+html body .floating-expert__avatar[class] img {
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 0;
+  transform: scale(1.45);
+  transform-origin: 50% 0;
+  width: 100%;
+}
+
+/* FloatingExpert contract. */
+html body .floating-expert[class] {
+  border-color: #e4e4e4;
+  color: #1e1e1e;
+}
+
+html body :is(.floating-expert__label, .floating-expert__name)[class] {
+  color: #656462;
+}
+
+html body .floating-expert__title[class] {
+  color: #8b1d25;
+}
+
+html body .floating-expert__close[class] {
+  height: 44px;
+  min-height: 44px;
+  min-width: 44px;
+  width: 44px;
+}
+
+html body :is(.floating-expert__card, .floating-expert__close)[class]:focus-visible {
+  outline: 2px solid #e7c88f;
+  outline-offset: 3px;
+}
+
+html body .floating-expert[class],
+html body .floating-expert[class]::before,
+html body .floating-expert[class]::after {
+  animation-iteration-count: 2;
+}
+
+html body .catalog-contact__image[class] {
+  filter: blur(4px) brightness(0.86);
+  transform: scale(1.025);
+  transform-origin: center;
+}
+
+/* Compact ContactAction used as a channel selector inside both forms. */
+html body :is(.catalog-consultation__methods, .catalog-contact__methods)[class] {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+html body :is(.catalog-consultation__method, .catalog-contact__method)[class] {
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  border-radius: 1px;
+  display: inline-flex;
+  flex: initial;
+  font-family: var(--kit-font);
+  font-size: 17px;
+  font-weight: 400;
+  gap: 8px;
+  height: 44px;
+  justify-content: center;
+  line-height: 1.1;
+  min-height: 44px;
+  min-width: 0;
+  padding: 0 12px;
+  white-space: nowrap;
+  width: 100%;
+}
+
+html body :is(.catalog-consultation__method-icon, .catalog-contact__method-icon)[class] {
+  flex: 0 0 18px;
+  font-size: 18px;
+  height: 18px;
+  width: 18px;
+}
+
+html body :is(.catalog-consultation__method, .catalog-contact__method)[class]:focus-visible {
+  outline: 2px solid var(--kit-gold);
+  outline-offset: 3px;
+}
+
+html body :is(.catalog-consultation__lead, .catalog-contact__card-text)[class] {
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+html body .catalog-contact__card-title[class] {
+  font-size: var(--kit-h2-standard-size);
+  font-weight: 300;
+  letter-spacing: normal;
+  line-height: var(--kit-h2-standard-leading);
+}
+
+@media (max-width: 540px) {
+  html body #catalog-intro .catalog-intro__image[class] {
+    transform-origin: center bottom;
+  }
+}
+
 /* FAQ body typography follows the shared text roles at every breakpoint. */
 html body .catalog-faq__question-text[class] {
   color: var(--kit-text);
@@ -80,6 +294,30 @@ html body .catalog-faq__answer-content[class] {
   font-size: 16px;
   font-weight: 300;
   line-height: 1.4;
+}
+
+html body .department-card__title[class] {
+  font-weight: 400;
+}
+
+html body .department-card__link[class] {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+html body .news-section__category[class] {
+  color: var(--kit-text);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.35;
+}
+
+html body .news-section__read-more[class] {
+  color: var(--kit-text);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.2;
 }
 
 html body :is(.catalog-intro__eyebrow, .news-section__eyebrow)[class] {
@@ -320,12 +558,44 @@ html body .catalog-grid__sort-select[class] {
   html body .site-footer__nav[class] > .site-footer__column:nth-child(9) { grid-column: 3; grid-row: 2; }
 }
 
+@media (min-width: 1280px) and (max-width: 1440px) {
+  html body :is(
+    .catalog-best-offers,
+    .catalog-map,
+    .catalog-grid,
+    .departments-section,
+    .news-section
+  )[class] {
+    padding-block: 75px;
+  }
+
+  html body .catalog-faq[class] {
+    padding-block: 75px 94px;
+  }
+
+  html body .catalog-consultation[class] {
+    padding-block: 72px;
+  }
+}
+
 @media (min-width: 1441px) {
   :root {
     --kit-h2-standard-size: 44px;
     --kit-h2-compact-size: 44px;
     --kit-action-size: 19px;
     --kit-action-padding: 47px;
+  }
+
+  html body :is(.catalog-consultation__method, .catalog-contact__method)[class] {
+    font-size: 19px;
+    height: 46px;
+    min-height: 46px;
+  }
+}
+
+@media (max-width: 1279px) {
+  html body :is(.catalog-consultation__methods, .catalog-contact__methods)[class] {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
@@ -341,6 +611,46 @@ html body .catalog-grid__sort-select[class] {
     --kit-action-height: 58px;
     --kit-action-size: 18px;
     --kit-action-padding: 24px;
+  }
+
+  html body .catalog-hero__title[class] {
+    font-size: 35px;
+    letter-spacing: -0.02em;
+    line-height: 1;
+  }
+
+  html body :is(.catalog-consultation__method, .catalog-contact__method)[class] {
+    font-size: 18px;
+    height: 46px;
+    line-height: 1.1;
+    min-height: 46px;
+    padding-inline: 10px;
+  }
+
+  html body :is(.catalog-consultation__method-icon, .catalog-contact__method-icon)[class] {
+    flex-basis: 20px;
+    font-size: 20px;
+    height: 20px;
+    width: 20px;
+  }
+
+  html body :is(.catalog-consultation__lead, .catalog-contact__card-text)[class] {
+    font-size: 15px;
+    line-height: 1.4;
+  }
+
+  html body .catalog-intro__text[class] :is(h3, h4) {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  html body .catalog-intro__text[class] h4 {
+    font-size: 18px;
+  }
+
+  html body .news-section__category[class] {
+    font-size: 18px;
+    line-height: 1.35;
   }
 
   html body .catalog-intro__lead[class] {
