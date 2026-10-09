@@ -307,17 +307,55 @@ html body .catalog-contact__card-title[class] {
 
 /* FAQ body typography follows the shared text roles at every breakpoint. */
 html body .catalog-faq__question-text[class] {
-  color: var(--kit-text);
-  font-size: 16px;
+  color: #262626;
+  font-size: 20px;
   font-weight: 400;
   line-height: 1.4;
 }
 
 html body .catalog-faq__answer-content[class] {
-  color: var(--kit-text-secondary);
+  color: #262626;
   font-size: 16px;
   font-weight: 300;
   line-height: 1.4;
+}
+
+html body .catalog-faq__question[class] {
+  gap: 24px;
+  padding-block: 24px;
+}
+
+html body .catalog-faq__item--open[class] .catalog-faq__answer-content[class] {
+  padding-bottom: 24px;
+}
+
+html body .catalog-faq__icon[class] {
+  font-size: 30px;
+}
+
+@media (min-width: 1441px) {
+  html body .catalog-faq__question-text[class] {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 1024px) {
+  html body .catalog-faq__question[class] {
+    gap: 16px;
+    padding-block: 20px;
+  }
+
+  html body .catalog-faq__question-text[class] {
+    font-size: 18px;
+  }
+
+  html body .catalog-faq__item--open[class] .catalog-faq__answer-content[class] {
+    padding-bottom: 20px;
+  }
+
+  html body .catalog-faq__icon[class] {
+    font-size: 24px;
+  }
 }
 
 html body .department-card__title[class] {
@@ -350,6 +388,7 @@ html body :is(.catalog-intro__eyebrow, .news-section__eyebrow)[class] {
   font-weight: 400;
   letter-spacing: 0.12em;
   line-height: var(--kit-eyebrow-leading);
+  margin-bottom: var(--kit-eyebrow-gap);
   text-transform: uppercase;
 }
 
@@ -378,9 +417,56 @@ html body .catalog-grid__header[class] .catalog-grid__title[class] {
   grid-row: auto;
 }
 
-html body .catalog-intro__eyebrow[class] + .catalog-intro__title[class],
-html body .news-section__eyebrow[class] + .news-section__title[class] {
-  margin-top: var(--kit-eyebrow-gap);
+html body :is(
+  .catalog-section-eyebrow,
+  .catalog-intro__eyebrow,
+  .news-section__eyebrow
+)[class] + :is(h2, .catalog-intro__title, .news-section__title)[class] {
+  margin-top: 0 !important;
+}
+
+/* Parent layouts already contribute their own row gaps. Offset those gaps so
+   the visible eyebrow-to-title rhythm matches the approved 25px contract. */
+html body .catalog-best-offers__header[class] > .catalog-section-eyebrow[class] {
+  margin-bottom: -3px;
+}
+
+html body .catalog-intro__content[class] > .catalog-intro__eyebrow[class] {
+  margin-bottom: 1px;
+}
+
+html body .departments-section__heading[class] > .catalog-section-eyebrow[class] {
+  margin-bottom: 13px;
+}
+
+html body .news-section__header[class] > .news-section__eyebrow[class] {
+  margin-bottom: 10px;
+}
+
+html body .catalog-faq__inner[class] > .catalog-section-eyebrow[class] {
+  margin-bottom: -7px;
+}
+
+@media (max-width: 540px) {
+  html body .catalog-best-offers__header[class] > .catalog-section-eyebrow[class] {
+    margin-bottom: -3px;
+  }
+
+  html body .catalog-intro__content[class] > .catalog-intro__eyebrow[class] {
+    margin-bottom: -4px;
+  }
+
+  html body .departments-section__heading[class] > .catalog-section-eyebrow[class] {
+    margin-bottom: 0;
+  }
+
+  html body .news-section__header[class] > .news-section__eyebrow[class] {
+    margin-bottom: 2px;
+  }
+
+  html body .catalog-faq__inner[class] > .catalog-section-eyebrow[class] {
+    margin-bottom: -12px;
+  }
 }
 
 /* Shared rectangular action contract. Card actions are deliberately excluded. */
