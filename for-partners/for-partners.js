@@ -11,21 +11,21 @@
 
   var conditionsStylesheet = document.createElement('link');
   conditionsStylesheet.rel = 'stylesheet';
-  conditionsStylesheet.href = 'assets/conditions-heading.css?v=20261008-5';
+  conditionsStylesheet.href = 'assets/conditions-heading.css?v=20261009-card-hover';
   document.head.appendChild(conditionsStylesheet);
 
   page.querySelectorAll('.ambassadors-conditions__reveal').forEach(function (button) {
     var card = button.closest('.ambassadors-conditions__card');
-    button.addEventListener('click', function () {
+    button.textContent = '';
+    button.addEventListener('click', function (event) {
+      if (event.detail && window.matchMedia('(hover: hover) and (pointer: fine)').matches) return;
       var open = card.classList.toggle('is-revealed');
       button.setAttribute('aria-expanded', String(open));
-      button.textContent = open ? '−' : '+';
     });
     button.addEventListener('keydown', function (event) {
       if (event.key !== 'Escape') return;
       card.classList.remove('is-revealed');
       button.setAttribute('aria-expanded', 'false');
-      button.textContent = '+';
       button.blur();
     });
   });
@@ -559,12 +559,16 @@
       reveal.setAttribute('aria-label', 'Описание: ' + card.querySelector('h3').textContent);
       reveal.setAttribute('aria-controls', description.id);
       reveal.setAttribute('aria-expanded', 'false');
-      reveal.textContent = '+';
-      reveal.addEventListener('pointerdown', function (event) { event.stopPropagation(); });
-      reveal.addEventListener('click', function () {
+      reveal.addEventListener('click', function (event) {
+        if (event.detail && window.matchMedia('(hover: hover) and (pointer: fine)').matches) return;
         var open = card.classList.toggle('is-revealed');
         reveal.setAttribute('aria-expanded', String(open));
-        reveal.textContent = open ? '−' : '+';
+      });
+      reveal.addEventListener('keydown', function (event) {
+        if (event.key !== 'Escape') return;
+        card.classList.remove('is-revealed');
+        reveal.setAttribute('aria-expanded', 'false');
+        reveal.blur();
       });
       card.appendChild(reveal);
     });
@@ -583,12 +587,14 @@
       advantageDragStart = event.clientX;
       advantagesList.style.transition = 'none';
       advantagesTrack.classList.add('is-dragging');
-      if (advantagesTrack.setPointerCapture) advantagesTrack.setPointerCapture(event.pointerId);
     });
 
     advantagesTrack.addEventListener('pointermove', function (event) {
       if (advantageDragStart === null) return;
       var delta = event.clientX - advantageDragStart;
+      if (Math.abs(delta) > 8 && advantagesTrack.setPointerCapture && !advantagesTrack.hasPointerCapture(event.pointerId)) {
+        advantagesTrack.setPointerCapture(event.pointerId);
+      }
       advantagesList.style.transform = 'translateX(' + (advantageDragOffset + delta) + 'px)';
     });
 
