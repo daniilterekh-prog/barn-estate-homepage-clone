@@ -165,11 +165,8 @@
     ['.catalog-best-offers__title', 'Новые проекты'],
     ['.catalog-map__title', 'География'],
     ['.catalog-grid__title', 'Каталог'],
-    ['.catalog-consultation__mobile-title', 'Консультация', true],
-    ['.catalog-consultation__subtitle', 'Консультация', true],
     ['.departments-section__title', 'Направления'],
-    ['.catalog-faq__title', 'Экспертиза BARNES'],
-    ['.catalog-contact__title', 'Персональный подбор', true]
+    ['.catalog-faq__title', 'Экспертиза BARNES']
   ].forEach(function (entry) {
     addSectionEyebrow(entry[0], entry[1], entry[2]);
   });
