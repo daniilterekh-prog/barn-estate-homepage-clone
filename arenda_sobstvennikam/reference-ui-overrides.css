@@ -1801,6 +1801,7 @@ body.owner-rent-reference-ui .owner-sale-hero .breadcrumbs__link {
   }
 
   .owner-rent-reference-ui .owner-sale-hero__text {
+    display: none;
     font-size: 15px;
     line-height: 19.2px;
   }
