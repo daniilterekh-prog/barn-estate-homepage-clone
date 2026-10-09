@@ -241,6 +241,7 @@ body.owner-rent-reference-ui .owner-sale-exclusive .owner-sale-exclusive__text {
     font-size: 16px;
     line-height: 1.3;
     margin-top: 12px;
+    text-align: left;
   }
 
   body.owner-rent-reference-ui .owner-sale-exclusive .owner-sale-exclusive__cta {
