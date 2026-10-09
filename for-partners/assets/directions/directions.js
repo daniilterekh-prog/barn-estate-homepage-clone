@@ -59,7 +59,7 @@
       gridTemplateRows: 'auto auto auto 70px'
     });
     root.appendChild(measure);
-    const heights = [104, 88, 176, 128];
+    const heights = [64, 88, 176, 128];
     data.forEach((direction, index) => {
       const template = document.createElement('template');
       template.innerHTML = feature(index);
