@@ -2,7 +2,7 @@
   if (!document.querySelector('link[data-kurortnaya-ui-kit]')) {
     var stylesheet = document.createElement('link');
     stylesheet.rel = 'stylesheet';
-    stylesheet.href = 'ui-kit.css?v=20261009-section-eyebrows-1';
+    stylesheet.href = 'ui-kit.css?v=20261009-owner-header-1';
     stylesheet.dataset.kurortnayaUiKit = 'true';
     document.head.appendChild(stylesheet);
   }
@@ -22,6 +22,64 @@
     startSalesStylesheet.dataset.kurortnayaStartSales = 'true';
     document.head.appendChild(startSalesStylesheet);
   }
+
+  function enhanceSiteHeader() {
+    var header = document.querySelector('.layout__header .site-header');
+    if (!header) return;
+
+    header.classList.add('site-header--no-nav', 'catalog-header-ready');
+
+    var pageNavigation = document.querySelector('.catalog-page-nav');
+    if (pageNavigation) {
+      pageNavigation.hidden = true;
+      pageNavigation.setAttribute('aria-hidden', 'true');
+    }
+
+    var directionsNavigation = header.querySelector('.site-header__nav');
+    if (directionsNavigation) directionsNavigation.remove();
+
+    var searchButton = header.querySelector('.site-header__search-btn');
+    if (searchButton) {
+      searchButton.classList.add('catalog-header-search');
+      searchButton.setAttribute('aria-label', 'Поиск');
+      searchButton.innerHTML = '<span class="ui-icon ui-icon-current site-header__icon site-header__icon--search" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"></circle><path d="m15.4 15.4 5.1 5.1"></path></svg></span>';
+    }
+
+    var rightColumn = header.querySelector('.site-header__right');
+    var phoneLink = rightColumn && rightColumn.querySelector('.site-header__phone');
+    if (!rightColumn || !phoneLink || rightColumn.querySelector('.catalog-header-contacts')) return;
+
+    var contacts = document.createElement('nav');
+    contacts.className = 'catalog-header-contacts';
+    contacts.setAttribute('aria-label', 'Способы связи');
+
+    [
+      ['Написать в WhatsApp', 'https://wa.me/79252621650', 'assets/header-whatsapp.svg'],
+      ['Написать в MAX', 'https://max.ru/join/AWj8ibiCtAPOJOlulMGNkykKGz_prXVWg-IQK1KpUG8', 'assets/header-max.svg'],
+      ['Написать в Telegram', 'https://t.me/art_de_vivre_barnes', 'assets/header-telegram.svg']
+    ].forEach(function (contact) {
+      var link = document.createElement('a');
+      link.className = 'catalog-header-contact';
+      link.href = contact[1];
+      link.target = '_blank';
+      link.rel = 'noopener noreferrer';
+      link.setAttribute('aria-label', contact[0]);
+
+      var icon = document.createElement('img');
+      icon.src = contact[2];
+      icon.alt = '';
+      icon.setAttribute('aria-hidden', 'true');
+      link.appendChild(icon);
+      contacts.appendChild(link);
+    });
+
+    phoneLink.classList.add('catalog-header-contact', 'catalog-header-contact--phone');
+    phoneLink.setAttribute('aria-label', 'Позвонить по номеру +7 495 182-50-79');
+    contacts.appendChild(phoneLink);
+    rightColumn.appendChild(contacts);
+  }
+
+  enhanceSiteHeader();
 
   function addExplicitLabel(control, id) {
     if (!control) return;

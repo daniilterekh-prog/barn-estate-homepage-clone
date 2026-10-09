@@ -733,6 +733,96 @@ html body .catalog-grid__sort-select[class] {
   }
 }
 
+/* Header contract: compact owner-style navigation with direct contact channels. */
+html body .catalog-page-nav[hidden] {
+  display: none !important;
+}
+
+html body .catalog-header-search[class] {
+  align-items: center;
+  display: inline-flex;
+  height: 24px;
+  justify-content: center;
+  width: 24px;
+}
+
+html body .catalog-header-search[class] .site-header__icon--search {
+  display: block;
+  font-size: 24px;
+  height: 24px;
+  width: 24px;
+}
+
+html body .catalog-header-contacts {
+  align-items: center;
+  display: flex;
+  gap: 14px;
+}
+
+html body .catalog-header-contact {
+  align-items: center;
+  color: inherit;
+  display: inline-flex;
+  flex: 0 0 24px;
+  height: 24px;
+  justify-content: center;
+  line-height: 0;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+  width: 24px;
+}
+
+html body .catalog-header-contact img {
+  display: block;
+  height: 20px;
+  object-fit: contain;
+  width: 20px;
+}
+
+html body .catalog-header-contact--phone[class] {
+  flex-basis: 24px;
+  gap: 0;
+  height: 24px;
+  width: 24px;
+}
+
+html body .catalog-header-contact--phone .site-header__phone-number {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+html body .catalog-header-contact--phone .site-header__icon--phone {
+  font-size: 20px;
+}
+
+html body :is(.catalog-header-search, .catalog-header-contact):focus-visible {
+  outline: 1px solid currentColor;
+  outline-offset: 4px;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  html body .catalog-header-contact:hover {
+    opacity: 0.72;
+  }
+}
+
+@media (max-width: 1024px) {
+  html body .catalog-header-contacts {
+    display: none;
+  }
+}
+
+@media (max-width: 540px) {
+  html body .catalog-header-ready .site-header__mobile-phone {
+    display: none !important;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
