@@ -31,7 +31,8 @@
     <nav class="bd-horizontal" role="tablist" aria-label="Направления BARNES">
       ${data.map((d, i) => `<button type="button" class="bd-navbtn" role="tab" id="direction-tab-${d.id}" aria-controls="direction-panel" aria-selected="${i === 0}" tabindex="${i === 0 ? 0 : -1}" data-pick="${i}">${d.name}</button>`).join('')}
     </nav>
-    <select class="bd-mobile-picker" aria-label="Выберите направление">
+    <label class="bd-picker-label" for="barnes-direction-picker">Выберите направление</label>
+    <select id="barnes-direction-picker" class="bd-mobile-picker" aria-label="Выберите направление">
       ${data.map((d, i) => `<option value="${i}">${d.name}</option>`).join('')}
     </select>
     <div id="direction-panel" class="bd-fixed-panel" role="tabpanel" aria-labelledby="direction-tab-city" aria-live="polite"></div>`;

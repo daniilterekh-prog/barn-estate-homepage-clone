@@ -10,6 +10,7 @@
 #barnes-directions .bd-navbtn { font:400 17px/23.8px "Tilda Sans",system-ui,sans-serif; padding:16px 0; color:var(--bd-gray); background:none; border:0; border-bottom:2px solid transparent; text-align:left; cursor:pointer; }
 #barnes-directions .bd-navbtn[aria-selected=true] { color:var(--bd-red); border-bottom-color:var(--bd-red); }
 #barnes-directions .bd-mobile-picker { display:none; font:400 18px/24px "Tilda Sans",system-ui,sans-serif; }
+#barnes-directions .bd-picker-label { display:none; }
 #barnes-directions .bd-feature { display:grid; grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr); gap:48px; align-items:start; }
 #barnes-directions .bd-imagewrap { position:relative; width:100%; min-height:650px; align-self:stretch; overflow:hidden; border-radius:1px; background:#f1f1f1; }
 #barnes-directions .bd-photo { position:absolute; inset:0; display:block; width:100%; height:100%; object-fit:cover; object-position:center; }
@@ -57,6 +58,8 @@
   #barnes-directions .bd-copy { grid-template-rows:minmax(104px,auto) minmax(84px,auto) minmax(176px,auto) minmax(128px,auto) 70px; gap:24px; }
 }
 @media(max-width:540px) {
+  #barnes-directions .bd-picker-label { display:block; margin-bottom:10px; font-size:15px; line-height:19.2px; color:var(--bd-gray); }
+  #barnes-directions .bd-mobile-picker { appearance:none; -webkit-appearance:none; padding:16px 44px 16px 16px; border:1px solid var(--bd-red); font-size:16px; line-height:24px; cursor:pointer; background:#faf5f5 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20'%3E%3Cpath d='m5 7.5 5 5 5-5' fill='none' stroke='%238b1d25' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") no-repeat right 16px center; }
   #barnes-directions .bd-imagewrap { height:290px; }
   #barnes-directions .bd-section { padding:36px 0; }
   #barnes-directions .bd-copy { grid-template-columns:repeat(2,minmax(0,1fr)); grid-template-rows:minmax(104px,auto) minmax(84px,auto) minmax(176px,auto) 58px; grid-template-areas:"heading heading" "budget commission" "metrics metrics" "cta cta"; }
