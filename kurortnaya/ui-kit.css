@@ -104,6 +104,12 @@ html body #catalog-intro .catalog-intro__image[class] {
   transform-origin: right bottom;
 }
 
+@media (min-width: 769px) {
+  html body #catalog-intro .catalog-intro__media[class] {
+    align-self: end;
+  }
+}
+
 /* CTA portraits: Denis stays natural; the layout, not the photograph, is mirrored. */
 @media (min-width: 769px) {
   html body .catalog-consultation__media[class] {
