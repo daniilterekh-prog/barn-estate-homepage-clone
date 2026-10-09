@@ -42,7 +42,7 @@
 
   var ownerShellStylesheet = document.createElement('link');
   ownerShellStylesheet.rel = 'stylesheet';
-  ownerShellStylesheet.href = 'assets/owner-shell.css?v=20261009-mobile-hero';
+  ownerShellStylesheet.href = 'assets/owner-shell.css?v=20261009-newsletter-width';
   document.head.appendChild(ownerShellStylesheet);
 
   var modalStylesheet = document.createElement('link');
