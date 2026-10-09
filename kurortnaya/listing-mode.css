@@ -299,7 +299,7 @@ html body .catalog-mode-toolbar .catalog-grid__sort[class] {
 .catalog-mode-filters .catalog-quick-filters__button:focus-visible,
 .catalog-mode-detailed-filters:focus-visible,
 .catalog-mode-toolbar .catalog-grid__sort-select:focus-visible {
-  outline: 2px solid #e7c88f;
+  outline: 2px solid var(--kit-focus-accent, #8b1d25);
   outline-offset: 3px;
 }
 

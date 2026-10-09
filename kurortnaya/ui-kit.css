@@ -10,7 +10,7 @@
   --kit-text-secondary: #4f4d49;
   --kit-text-muted: #656462;
   --kit-burgundy: #8b1d25;
-  --kit-gold: #e7c88f;
+  --kit-focus-accent: var(--kit-burgundy);
   --kit-border: #e4e4e4;
   --kit-h2-standard-size: 38px;
   --kit-h2-standard-leading: 1.2;
@@ -231,7 +231,7 @@ html body .floating-expert__close[class] {
 }
 
 html body :is(.floating-expert__card, .floating-expert__close)[class]:focus-visible {
-  outline: 2px solid #e7c88f;
+  outline: 2px solid var(--kit-focus-accent);
   outline-offset: 3px;
 }
 
@@ -282,7 +282,7 @@ html body :is(.catalog-consultation__method-icon, .catalog-contact__method-icon)
 }
 
 html body :is(.catalog-consultation__method, .catalog-contact__method)[class]:focus-visible {
-  outline: 2px solid var(--kit-gold);
+  outline: 2px solid var(--kit-focus-accent);
   outline-offset: 3px;
 }
 
@@ -420,7 +420,7 @@ html body :is(
   .catalog-projects-map__search-input,
   .catalog-grid__sort-select
 )[class]:focus-visible {
-  outline: 2px solid var(--kit-gold);
+  outline: 2px solid var(--kit-focus-accent);
   outline-offset: 3px;
 }
 
@@ -493,7 +493,7 @@ html body .catalog-quick-filters__button[class]:hover {
 html body .catalog-quick-filters__button[class]:focus-visible {
   border-color: var(--kit-text);
   box-shadow: 0 0 0 1px var(--kit-text);
-  outline: 2px solid var(--kit-gold);
+  outline: 2px solid var(--kit-focus-accent);
   outline-offset: 3px;
 }
 
@@ -826,6 +826,18 @@ html body :is(.catalog-header-search, .catalog-header-contact):focus-visible {
 @media (hover: hover) and (pointer: fine) {
   html body .catalog-header-contact:hover {
     opacity: 0.72;
+  }
+
+  /* The BARNES interaction accent is always burgundy, never gold. */
+  html body :is(
+    .news-section__read-more,
+    .site-footer__column-title--link,
+    .site-footer__link,
+    .site-footer__phone,
+    .site-footer__email,
+    .site-footer__privacy
+  )[class]:hover {
+    color: var(--kit-burgundy);
   }
 }
 
