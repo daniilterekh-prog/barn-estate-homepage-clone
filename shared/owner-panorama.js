@@ -5,7 +5,7 @@
   const direction = script.dataset.direction === 'rent' ? 'rent' : 'sale';
   const image = new URL('assets/barnes-private-salon.webp', script.src).href;
   const reasons = [
-    { title: 'Доступ к аудитории', headline: direction === 'rent' ? 'Представляем объект арендаторам с подходящим запросом' : 'Находим покупателей на вашу недвижимость', text: direction === 'rent' ? 'Используем клиентскую базу, профессиональные связи и сообщество BARNES, чтобы представить недвижимость людям с подходящим запросом.' : 'Представим ваш объект клиентам BARNES, участникам партнёрской сети и международной аудитории, которая ищет недвижимость с подходящими параметрами.', evidence: 'Клиентская база · Партнёрская сеть · BARNES Club' },
+    { title: 'Доступ к аудитории', headline: direction === 'rent' ? 'Находим арендаторов на вашу недвижимость' : 'Находим покупателей на вашу недвижимость', text: direction === 'rent' ? 'Представим объект клиентам BARNES, участникам партнёрской сети и международной аудитории, которые ищут недвижимость с подходящими параметрами.' : 'Представим ваш объект клиентам BARNES, участникам партнёрской сети и международной аудитории, которая ищет недвижимость с подходящими параметрами.', evidence: 'Клиентская база · Партнёрская сеть · BARNES Club' },
     { title: 'Собственные медиа', headline: 'Продвигаем объект через собственные медиа BARNES', text: 'Представляем недвижимость в контексте архитектуры, окружения и образа жизни. Подбираем каналы BARNES под особенности объекта.', evidence: 'Журнал BARNES · Цифровые обзоры · Мероприятия' },
     { title: 'Экспертиза сегмента', headline: direction === 'rent' ? 'Обосновываем ставку аренды и условия сделки' : 'Обосновываем цену продажи и условия сделки', text: 'Специализируемся на премиальной недвижимости. Анализ рынка и особенностей объекта помогает обосновать его позиционирование и вести переговоры.', evidence: 'Аналитика рынка · Позиционирование · Переговоры' },
     { title: 'Между­народная сеть', headline: direction === 'rent' ? 'Подключаем зарубежные офисы к поиску арендатора' : 'Подключаем зарубежные офисы к поиску покупателя', text: 'Работаем с международными запросами через зарубежные офисы и партнёров, когда это соответствует объекту и вашим целям.', evidence: 'Международная сеть офисов и партнёров' }
@@ -34,7 +34,7 @@
     const footer = root.querySelector('.be-panorama-footer');
     const mobile = window.matchMedia('(max-width: 540px)');
     function positionAction() {
-      const target = direction === 'sale' && mobile.matches ? section : panel.querySelector('.be-argument-heading');
+      const target = mobile.matches ? section : panel.querySelector('.be-argument-heading');
       if (footer.parentElement !== target) target.appendChild(footer);
     }
     positionAction();
@@ -51,7 +51,7 @@
       let height = 0;
       reasons.forEach(reason => {
         probe.innerHTML = content(reason);
-        if (!(direction === 'sale' && mobile.matches)) {
+        if (!(mobile.matches)) {
           const footer = document.createElement('div');
           footer.className = 'be-panorama-footer';
           const actionPreview = document.createElement('span');
