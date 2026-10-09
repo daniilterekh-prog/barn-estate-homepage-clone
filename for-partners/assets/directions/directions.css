@@ -20,15 +20,16 @@
 #barnes-directions .bd-intro { font-size:22px; line-height:28.16px; font-weight:300; color:#4f4d49; max-width:48ch; }
 #barnes-directions .bd-label { font-size:22px; line-height:28.16px; font-weight:300; color:var(--bd-gray); }
 #barnes-directions :is(.bd-price-label,.bd-commission>.bd-label) { font-size:22px; line-height:28.16px; font-weight:300; color:var(--bd-gray); }
-#barnes-directions .bd-price-label { margin-bottom:12px; }
+#barnes-directions .bd-budget { display:flex; flex-direction:column; gap:12px; }
+#barnes-directions .bd-price-label { margin:0; }
 #barnes-directions .bd-price { display:flex; align-items:baseline; gap:8px; flex-wrap:wrap; font-size:38px; line-height:45.6px; font-weight:300; }
 #barnes-directions .bd-price small { font-size:22px; line-height:28.16px; font-weight:300; white-space:nowrap; }
 #barnes-directions .bd-words { font-size:22px; line-height:28.16px; font-weight:300; }
 #barnes-directions :is(.bd-metrics,.bd-textfacts) { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:24px; border-block:1px solid var(--bd-line); padding:24px 0; align-content:center; }
-#barnes-directions .bd-metrics>div { display:grid; grid-template-rows:minmax(56.32px,auto) auto; gap:12px; }
+#barnes-directions :is(.bd-metrics,.bd-textfacts)>div { display:flex; flex-direction:column; gap:12px; }
 #barnes-directions .bd-num { font-size:38px; line-height:45.6px; font-weight:300; }
-#barnes-directions .bd-facttext { margin-top:12px; font-size:22px; line-height:28.16px; font-weight:300; }
-#barnes-directions .bd-commission { display:flex; flex-direction:column; align-items:flex-start; justify-content:center; gap:8px; }
+#barnes-directions .bd-facttext { margin:0; font-size:22px; line-height:28.16px; font-weight:300; }
+#barnes-directions .bd-commission { display:flex; flex-direction:column; align-items:flex-start; justify-content:center; gap:12px; }
 #barnes-directions .bd-commission strong { font-size:48px; line-height:52.8px; font-weight:400; color:var(--bd-red); }
 #barnes-directions .bd-commission-negotiated strong { font-size:22px; line-height:30.8px; }
 #barnes-directions .bd-commission-note { font-size:22px; line-height:28.16px; font-weight:300; color:var(--bd-gray); }
@@ -48,7 +49,6 @@
   #barnes-directions .bd-heading h3 { font-size:20px; line-height:24px; }
   #barnes-directions .bd-intro { font-size:16px; line-height:22.4px; }
   #barnes-directions :is(.bd-label,.bd-facttext,.bd-price-label,.bd-commission>.bd-label,.bd-commission-note,.bd-price small,.bd-words) { font-size:16px; line-height:22.4px; font-weight:300; }
-  #barnes-directions .bd-metrics>div { grid-template-rows:minmax(67.2px,auto) auto; }
 }
 @media(max-width:900px) {
   #barnes-directions .bd-horizontal { display:none; }
@@ -78,16 +78,13 @@
   #barnes-directions .bd-copy { grid-template-rows:minmax(var(--bd-heading-height,104px),auto) minmax(var(--bd-budget-height,88px),auto) minmax(var(--bd-facts-height,176px),auto) minmax(var(--bd-commission-height,128px),auto) 70px; }
   #barnes-directions .bd-copy :is(.bd-price,.bd-words,.bd-num,.bd-facttext) { font-size:38px; line-height:45.6px; font-weight:300; }
   #barnes-directions .bd-commission strong { font-size:38px; line-height:45.6px; font-weight:400; }
-  #barnes-directions .bd-facttext { margin-top:0; }
 }
 
-/* Equal spacing between every label and its value, including wrapped labels. */
-#barnes-directions .bd-budget,
-#barnes-directions .bd-commission,
-#barnes-directions :is(.bd-metrics,.bd-textfacts)>div {
-  display:flex;
-  flex-direction:column;
-  gap:12px;
+/* Labels and values size to their text; no reserved label-row height. */
+#barnes-directions :is(.bd-budget,.bd-commission,.bd-metrics>div,.bd-textfacts>div)>:is(.bd-label,.bd-price-label,.bd-num,.bd-facttext,strong) {
+  flex: 0 0 auto;
+  min-height: 0;
+  height: auto;
+  margin: 0;
+  padding: 0;
 }
-#barnes-directions .bd-price-label { margin-bottom:0; }
-#barnes-directions .bd-facttext { margin-top:0; }
