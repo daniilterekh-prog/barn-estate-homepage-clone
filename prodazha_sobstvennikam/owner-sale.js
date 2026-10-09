@@ -184,7 +184,7 @@
     if (typesSection && typesInner && !typesInner.querySelector(':scope > .owner-sale-types__header')) {
       const header = document.createElement('header');
       header.className = 'owner-sale-types__header';
-      header.innerHTML = '<p class="owner-sale-section-eyebrow owner-sale-types__eyebrow">НАПРАВЛЕНИЯ BARNES</p><h2 class="owner-sale-types__section-title" id="owner-sale-types-title">НЕДВИЖИМОСТЬ ДЛЯ ПРОДАЖИ</h2>';
+      header.innerHTML = '<p class="owner-sale-section-eyebrow owner-sale-types__eyebrow">НАПРАВЛЕНИЯ BARNES</p><h2 class="owner-sale-types__section-title" id="owner-sale-types-title">КАКУЮ НЕДВИЖИМОСТЬ МЫ ПРОДАЁМ</h2>';
       typesInner.insertBefore(header, typesInner.firstChild);
       typesSection.setAttribute('aria-labelledby', 'owner-sale-types-title');
       typesSection.removeAttribute('aria-label');
