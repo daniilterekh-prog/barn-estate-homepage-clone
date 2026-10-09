@@ -81,6 +81,32 @@
 
   enhanceSiteHeader();
 
+  function enableStickyHeaderAfterHero() {
+    var header = document.querySelector('.layout__header .site-header');
+    var hero = document.querySelector('.catalog-hero');
+    if (!header || !hero || header.dataset.stickyHeaderReady === 'true') return;
+
+    header.dataset.stickyHeaderReady = 'true';
+    var frameRequested = false;
+
+    function updateStickyHeader() {
+      frameRequested = false;
+      header.classList.toggle('site-header--scrolled', hero.getBoundingClientRect().bottom <= 0);
+    }
+
+    function requestStickyHeaderUpdate() {
+      if (frameRequested) return;
+      frameRequested = true;
+      window.requestAnimationFrame(updateStickyHeader);
+    }
+
+    updateStickyHeader();
+    window.addEventListener('scroll', requestStickyHeaderUpdate, { passive: true });
+    window.addEventListener('resize', requestStickyHeaderUpdate);
+  }
+
+  enableStickyHeaderAfterHero();
+
   function addExplicitLabel(control, id) {
     if (!control) return;
 
