@@ -173,6 +173,24 @@ html body :is(.catalog-contact__mobile-photo, .catalog-contact__expert-photo, .f
   overflow: hidden;
 }
 
+@media (min-width: 1025px) {
+  html body .catalog-contact[class] {
+    min-height: 0;
+    padding-block: 28px;
+  }
+
+  html body .catalog-contact__inner[class],
+  html body .catalog-contact__content[class] {
+    padding-block: 0;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+  html body .catalog-contact[class] {
+    min-height: 640px;
+  }
+}
+
 html body :is(.catalog-contact__mobile-photo, .catalog-contact__expert-photo)[class] img {
   height: 100%;
   object-fit: cover;
