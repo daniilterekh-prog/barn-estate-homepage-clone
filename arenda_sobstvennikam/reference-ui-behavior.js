@@ -781,7 +781,7 @@
       header.className = 'owner-sale-types__header';
       header.innerHTML = [
         '<p class="owner-sale-types__eyebrow owner-rent-section-eyebrow">НАПРАВЛЕНИЯ BARNES</p>',
-        '<h2 class="owner-sale-types__section-title" id="owner-rent-types-title">НЕДВИЖИМОСТЬ ДЛЯ ПРОДАЖИ</h2>'
+        '<h2 class="owner-sale-types__section-title" id="owner-rent-types-title">ПОМОЖЕМ СДАТЬ ВАШУ НЕДВИЖИМОСТЬ</h2>'
       ].join('');
       inner.insertBefore(header, inner.firstChild);
     }
