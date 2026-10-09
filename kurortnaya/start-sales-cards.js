@@ -77,7 +77,8 @@
 
     if (region && region.textContent.trim()) {
       region.classList.add('launch-card__region');
-      priceRow.appendChild(region);
+      region.insertAdjacentHTML('afterbegin', '<svg class="launch-card__region-icon" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M8 14s4.5-4.35 4.5-8A4.5 4.5 0 0 0 3.5 6c0 3.65 4.5 8 4.5 8Z"/><circle cx="8" cy="6" r="1.65"/></svg>');
+      name.parentNode.insertBefore(region, name);
     }
 
     image.addEventListener('error', function () {

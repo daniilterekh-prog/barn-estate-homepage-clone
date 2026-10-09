@@ -18,7 +18,7 @@
   if (!document.querySelector('link[data-kurortnaya-start-sales]')) {
     var startSalesStylesheet = document.createElement('link');
     startSalesStylesheet.rel = 'stylesheet';
-    startSalesStylesheet.href = 'start-sales-cards.css?v=20261009-original-slider-4';
+    startSalesStylesheet.href = 'start-sales-cards.css?v=20261009-location-emphasis-1';
     startSalesStylesheet.dataset.kurortnayaStartSales = 'true';
     document.head.appendChild(startSalesStylesheet);
   }
@@ -162,7 +162,7 @@
 
   if (!document.querySelector('script[data-kurortnaya-start-sales]')) {
     var startSalesScript = document.createElement('script');
-    startSalesScript.src = 'start-sales-cards.js?v=20261009-original-slider-4';
+    startSalesScript.src = 'start-sales-cards.js?v=20261009-location-emphasis-1';
     startSalesScript.dataset.kurortnayaStartSales = 'true';
     document.body.appendChild(startSalesScript);
   }
