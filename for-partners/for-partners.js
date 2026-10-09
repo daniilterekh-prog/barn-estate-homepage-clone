@@ -568,8 +568,17 @@
       reveal.setAttribute('aria-label', 'Описание: ' + card.querySelector('h3').textContent);
       reveal.setAttribute('aria-controls', description.id);
       reveal.setAttribute('aria-expanded', 'false');
+      card.addEventListener('pointerenter', function (event) {
+        if (event.pointerType !== 'mouse') return;
+        card.classList.add('is-hovered');
+      });
+      card.addEventListener('pointerleave', function (event) {
+        if (event.pointerType !== 'mouse') return;
+        card.classList.remove('is-hovered', 'is-revealed');
+        reveal.setAttribute('aria-expanded', 'false');
+      });
       reveal.addEventListener('click', function (event) {
-        if (event.detail && window.matchMedia('(hover: hover) and (pointer: fine)').matches) return;
+        if (event.detail && event.pointerType !== 'touch' && window.matchMedia('(any-hover: hover)').matches) return;
         var open = card.classList.toggle('is-revealed');
         reveal.setAttribute('aria-expanded', String(open));
       });
