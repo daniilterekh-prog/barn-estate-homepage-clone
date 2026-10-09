@@ -59,7 +59,13 @@
 @media(max-width:540px) {
   #barnes-directions .bd-imagewrap { height:290px; }
   #barnes-directions .bd-section { padding:36px 0; }
-  #barnes-directions .bd-copy { grid-template-rows:minmax(104px,auto) minmax(84px,auto) minmax(176px,auto) minmax(128px,auto) 58px; }
+  #barnes-directions .bd-copy { grid-template-columns:repeat(2,minmax(0,1fr)); grid-template-rows:minmax(104px,auto) minmax(84px,auto) minmax(176px,auto) 58px; grid-template-areas:"heading heading" "budget commission" "metrics metrics" "cta cta"; }
+  #barnes-directions .bd-heading { grid-area:heading; }
+  #barnes-directions .bd-budget { grid-area:budget; }
+  #barnes-directions .bd-commission { grid-area:commission; justify-content:flex-start; }
+  #barnes-directions .bd-commission-negotiated strong { font-size:16px; line-height:22.4px; }
+  #barnes-directions :is(.bd-metrics,.bd-textfacts) { grid-area:metrics; }
+  #barnes-directions .bd-cta { grid-area:cta; }
   #barnes-directions .bd-num { font-size:32px; line-height:38.4px; }
   #barnes-directions .bd-cta { height:58px; padding-inline:24px; font-size:18px; line-height:19.8px; }
 }
