@@ -154,7 +154,7 @@
 
   const enhanceSectionEyebrows = function () {
     [
-      ['.owner-sale-stages__title', 'ПРОЦЕСС ПРОДАЖИ'],
+      ['.owner-sale-stages__title', 'КАК ПРОХОДИТ СДЕЛКА'],
       ['.owner-sale-strategy__title', 'СТРАТЕГИЯ BARNES'],
       ['.owner-sale-presentation__title', 'СТРАТЕГИЯ ПРЕЗЕНТАЦИИ'],
       ['.about-company__title', 'BARNES / МОСКВА'],
