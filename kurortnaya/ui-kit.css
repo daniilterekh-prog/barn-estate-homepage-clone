@@ -541,46 +541,6 @@ html body .catalog-grid__sort-select[class] {
   padding: 0 44px 0 16px;
 }
 
-/* Listing toolbar: filters and sorting share one row below the title. */
-@media (min-width: 768px) {
-  html body .catalog-grid__inner[class] {
-    column-gap: 12px;
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) auto;
-  }
-
-  html body .catalog-grid__header[class] {
-    display: contents;
-  }
-
-  html body .catalog-grid__title[class] {
-    grid-column: 1 / -1;
-    grid-row: 1;
-  }
-
-  html body .catalog-quick-filters[class] {
-    align-self: start;
-    grid-column: 1;
-    grid-row: 2;
-  }
-
-  html body .catalog-grid__sort[class] {
-    align-self: start;
-    grid-column: 2;
-    grid-row: 2;
-  }
-
-  html body .catalog-grid__list[class] {
-    grid-column: 1 / -1;
-    grid-row: 3;
-  }
-
-  html body .catalog-grid__footer[class] {
-    grid-column: 1 / -1;
-    grid-row: 4;
-  }
-}
-
 @media (min-width: 541px) {
   html body .site-footer__column-title[class] {
     font-size: 18px;
