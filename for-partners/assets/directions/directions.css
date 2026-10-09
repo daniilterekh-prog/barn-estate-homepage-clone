@@ -75,7 +75,13 @@
 }
 
 @media (min-width: 901px) {
-  #barnes-directions .bd-copy { grid-template-rows:minmax(var(--bd-heading-height,104px),auto) minmax(var(--bd-budget-height,88px),auto) minmax(var(--bd-facts-height,176px),auto) minmax(var(--bd-commission-height,128px),auto) 70px; }
+  #barnes-directions .bd-copy { grid-template-columns:repeat(2,minmax(0,1fr)); grid-template-rows:minmax(var(--bd-heading-height,104px),auto) minmax(var(--bd-facts-height,176px),auto) minmax(max(var(--bd-budget-height,88px),var(--bd-commission-height,128px)),auto) 70px; grid-template-areas:"heading heading" "metrics metrics" "commission budget" "cta cta"; }
+  #barnes-directions .bd-heading { grid-area:heading; }
+  #barnes-directions :is(.bd-metrics,.bd-textfacts) { grid-area:metrics; }
+  #barnes-directions .bd-commission { grid-area:commission; justify-content:flex-start; }
+  #barnes-directions .bd-budget { grid-area:budget; }
+  #barnes-directions .bd-cta { grid-area:cta; }
+  #barnes-directions :is(.bd-budget,.bd-commission) { min-width:0; overflow-wrap:anywhere; }
   #barnes-directions .bd-copy :is(.bd-price,.bd-words,.bd-num,.bd-facttext) { font-size:38px; line-height:45.6px; font-weight:300; }
   #barnes-directions .bd-commission strong { font-size:38px; line-height:45.6px; font-weight:400; }
 }

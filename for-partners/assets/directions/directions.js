@@ -56,7 +56,7 @@
     Object.assign(measure.style, {
       position: 'fixed', visibility: 'hidden', pointerEvents: 'none',
       left: '0', top: '0', width: copy.getBoundingClientRect().width + 'px',
-      gridTemplateRows: 'auto auto auto auto 70px'
+      gridTemplateRows: 'auto auto auto 70px'
     });
     root.appendChild(measure);
     const heights = [104, 88, 176, 128];
