@@ -899,6 +899,278 @@ html body :is(.catalog-header-search, .catalog-header-contact):focus-visible {
   }
 }
 
+/* Secondary header: copied from the approved partners-page contract. */
+html body .catalog-sticky {
+  background: #fff;
+  box-shadow: 0 1px 0 rgb(30 30 30 / 10%);
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  position: fixed;
+  right: 0;
+  top: 0;
+  transform: translateY(-100%);
+  transition: opacity 200ms ease, transform 240ms ease;
+  z-index: 900;
+}
+
+html body .catalog-sticky--visible {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+html body .catalog-sticky__inner {
+  align-items: center;
+  display: grid;
+  gap: 32px;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  min-height: 106px;
+  padding-block: 30px;
+  position: relative;
+}
+
+html body .catalog-sticky__nav {
+  grid-column: 1;
+  min-width: 0;
+}
+
+html body .catalog-sticky__list {
+  align-items: center;
+  display: flex;
+  gap: 22px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+html body .catalog-sticky__link {
+  align-items: center;
+  color: #1e1e1e;
+  display: inline-flex;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1;
+  min-height: 44px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+html body .catalog-sticky__link--active {
+  color: var(--kit-burgundy);
+}
+
+html body .catalog-sticky__logo {
+  align-items: center;
+  display: flex;
+  grid-column: 2;
+  justify-self: center;
+}
+
+html body .catalog-sticky__logo img {
+  display: block;
+  filter: none;
+  height: auto;
+  width: 220px;
+}
+
+html body .catalog-sticky__brand {
+  align-items: center;
+  display: flex;
+  gap: 28px;
+  grid-column: 3;
+  justify-content: flex-end;
+  justify-self: end;
+  min-width: 0;
+}
+
+html body .catalog-sticky__request {
+  align-items: center;
+  background: var(--kit-burgundy);
+  border: 1px solid var(--kit-burgundy);
+  border-radius: 1px;
+  color: #fff;
+  display: inline-flex;
+  font: inherit;
+  font-size: 16px;
+  font-weight: 400;
+  justify-content: center;
+  line-height: 1;
+  min-height: 38px;
+  padding: 0 18px;
+  transition: background-color 200ms ease, color 200ms ease;
+  white-space: nowrap;
+}
+
+html body .catalog-sticky__messengers {
+  align-items: center;
+  display: flex;
+  gap: 14px;
+}
+
+html body :is(.catalog-sticky__messenger, .catalog-sticky__phone) {
+  align-items: center;
+  color: #1e1e1e;
+  display: inline-flex;
+  height: 24px;
+  justify-content: center;
+  width: 24px;
+}
+
+html body .catalog-sticky__messenger img {
+  display: block;
+  height: 20px;
+  object-fit: contain;
+  width: 20px;
+}
+
+html body .catalog-sticky__phone-number {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+html body :is(.catalog-sticky__phone-icon, .catalog-sticky__phone-icon svg) {
+  color: var(--kit-burgundy);
+  height: 19px;
+  width: 19px;
+}
+
+html body .catalog-sticky__contact-toggle {
+  align-items: center;
+  background: transparent;
+  border: 1px solid var(--kit-burgundy);
+  border-radius: 1px;
+  color: var(--kit-burgundy);
+  cursor: pointer;
+  display: none;
+  height: 34px;
+  justify-content: center;
+  padding: 0;
+  width: 34px;
+}
+
+html body .catalog-sticky__contact-toggle svg {
+  height: 20px;
+  width: 20px;
+}
+
+html body .catalog-sticky__contact-panel {
+  align-items: center;
+  background: #fff;
+  border: 1px solid rgb(30 30 30 / 14%);
+  box-shadow: 0 10px 30px rgb(30 30 30 / 12%);
+  display: flex;
+  gap: 14px;
+  padding: 12px 14px;
+  position: absolute;
+  right: 16px;
+  top: calc(100% + 8px);
+  z-index: 2;
+}
+
+html body .catalog-sticky__contact-panel[hidden] {
+  display: none;
+}
+
+html body :is(
+  #catalog-new-starts,
+  #catalog-grid,
+  #catalog-intro,
+  #catalog-faq,
+  #catalog-contact
+) {
+  scroll-margin-top: 112px;
+}
+
+html body :is(
+  .catalog-sticky__link,
+  .catalog-sticky__request,
+  .catalog-sticky__messenger,
+  .catalog-sticky__phone,
+  .catalog-sticky__contact-toggle
+):focus-visible {
+  outline: 2px solid rgb(139 29 37 / 45%);
+  outline-offset: 3px;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  html body .catalog-sticky__request:hover {
+    background: #fff;
+    color: var(--kit-burgundy);
+  }
+
+  html body :is(.catalog-sticky__link, .catalog-sticky__messenger, .catalog-sticky__phone):hover {
+    color: var(--kit-burgundy);
+  }
+}
+
+@media (max-width: 1024px) {
+  html body .catalog-sticky__request {
+    font-size: 15px;
+    min-height: 34px;
+    padding-inline: 12px;
+  }
+
+  html body .catalog-sticky__brand {
+    gap: 12px;
+  }
+
+  html body .catalog-sticky__messengers {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 900px) {
+  html body .catalog-sticky {
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    scrollbar-width: none;
+  }
+
+  html body .catalog-sticky::-webkit-scrollbar {
+    display: none;
+  }
+
+  html body .catalog-sticky__inner {
+    display: block;
+    min-height: 0;
+    overflow: visible;
+    padding-block: 10px;
+  }
+
+  html body .catalog-sticky__nav {
+    min-width: 0;
+    overflow: visible;
+    width: 100%;
+  }
+
+  html body .catalog-sticky__list {
+    gap: 18px;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    padding-right: 4px;
+    scroll-snap-type: x proximity;
+  }
+
+  html body .catalog-sticky__item {
+    scroll-snap-align: start;
+  }
+
+  html body .catalog-sticky__contact-toggle {
+    display: inline-flex;
+  }
+
+  html body .catalog-sticky__logo,
+  html body .catalog-sticky__brand {
+    display: none;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
