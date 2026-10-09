@@ -335,6 +335,31 @@ html body :is(.catalog-intro__eyebrow, .news-section__eyebrow)[class] {
   text-transform: uppercase;
 }
 
+html body .catalog-section-eyebrow[class] {
+  color: var(--kit-text-secondary);
+  font-size: var(--kit-eyebrow-size);
+  font-weight: 400;
+  letter-spacing: 0.12em;
+  line-height: var(--kit-eyebrow-leading);
+  margin: 0 0 var(--kit-eyebrow-gap);
+  text-transform: uppercase;
+}
+
+html body .catalog-section-eyebrow--inverse[class] {
+  color: rgba(255, 255, 255, 0.72);
+}
+
+html body .catalog-grid__header[class] {
+  display: block;
+  grid-column: 1 / -1;
+  grid-row: 1;
+}
+
+html body .catalog-grid__header[class] .catalog-grid__title[class] {
+  grid-column: auto;
+  grid-row: auto;
+}
+
 html body .catalog-intro__eyebrow[class] + .catalog-intro__title[class],
 html body .news-section__eyebrow[class] + .news-section__title[class] {
   margin-top: var(--kit-eyebrow-gap);

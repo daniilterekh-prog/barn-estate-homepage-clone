@@ -2,7 +2,7 @@
   if (!document.querySelector('link[data-kurortnaya-ui-kit]')) {
     var stylesheet = document.createElement('link');
     stylesheet.rel = 'stylesheet';
-    stylesheet.href = 'ui-kit.css?v=20261009-intro-bottom-align-1';
+    stylesheet.href = 'ui-kit.css?v=20261009-section-eyebrows-1';
     stylesheet.dataset.kurortnayaUiKit = 'true';
     document.head.appendChild(stylesheet);
   }
@@ -66,6 +66,29 @@
         control.setAttribute('aria-label', control.getAttribute('placeholder'));
       }
     });
+
+  function addSectionEyebrow(selector, text, inverse) {
+    var heading = document.querySelector(selector);
+    if (!heading || (heading.previousElementSibling && heading.previousElementSibling.classList.contains('catalog-section-eyebrow'))) return;
+
+    var eyebrow = document.createElement('p');
+    eyebrow.className = 'catalog-section-eyebrow' + (inverse ? ' catalog-section-eyebrow--inverse' : '');
+    eyebrow.textContent = text;
+    heading.parentNode.insertBefore(eyebrow, heading);
+  }
+
+  [
+    ['.catalog-best-offers__title', 'Новые проекты'],
+    ['.catalog-map__title', 'География'],
+    ['.catalog-grid__title', 'Каталог'],
+    ['.catalog-consultation__mobile-title', 'Консультация', true],
+    ['.catalog-consultation__subtitle', 'Консультация', true],
+    ['.departments-section__title', 'Направления'],
+    ['.catalog-faq__title', 'Экспертиза BARNES'],
+    ['.catalog-contact__title', 'Персональный подбор', true]
+  ].forEach(function (entry) {
+    addSectionEyebrow(entry[0], entry[1], entry[2]);
+  });
 
   var introDetails = document.querySelector('.catalog-intro__details');
   if (introDetails) {
