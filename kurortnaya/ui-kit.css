@@ -602,7 +602,7 @@ html body .catalog-grid__sort-select[class] {
   }
 }
 
-@media (max-width: 1279px) {
+@media (max-width: 1440px) {
   html body :is(.catalog-consultation__methods, .catalog-contact__methods)[class] {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
