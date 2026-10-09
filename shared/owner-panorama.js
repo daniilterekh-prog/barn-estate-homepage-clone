@@ -31,7 +31,13 @@
     path.after(root);
     const section = root.querySelector('.be-section');
     const panel = root.querySelector('.be-tab-panel');
-    panel.querySelector('.be-argument-heading').appendChild(root.querySelector('.be-panorama-footer'));
+    const footer = root.querySelector('.be-panorama-footer');
+    const mobile = window.matchMedia('(max-width: 540px)');
+    function positionAction() {
+      const target = direction === 'sale' && mobile.matches ? section : panel.querySelector('.be-argument-heading');
+      if (footer.parentElement !== target) target.appendChild(footer);
+    }
+    positionAction();
     const tabs = [...root.querySelectorAll('[role="tab"]')];
     let active = 0;
 
@@ -45,13 +51,15 @@
       let height = 0;
       reasons.forEach(reason => {
         probe.innerHTML = content(reason);
-        const footer = document.createElement('div');
-        footer.className = 'be-panorama-footer';
-        const actionPreview = document.createElement('span');
-        actionPreview.className = 'be-cta';
-        actionPreview.innerHTML = root.querySelector('.be-cta').innerHTML;
-        footer.appendChild(actionPreview);
-        probe.querySelector('.be-argument-heading').appendChild(footer);
+        if (!(direction === 'sale' && mobile.matches)) {
+          const footer = document.createElement('div');
+          footer.className = 'be-panorama-footer';
+          const actionPreview = document.createElement('span');
+          actionPreview.className = 'be-cta';
+          actionPreview.innerHTML = root.querySelector('.be-cta').innerHTML;
+          footer.appendChild(actionPreview);
+          probe.querySelector('.be-argument-heading').appendChild(footer);
+        }
         height = Math.max(height, probe.getBoundingClientRect().height);
       });
       probe.remove();
@@ -104,6 +112,10 @@
       measure();
     }).observe(section);
     measure();
+    mobile.addEventListener('change', () => {
+      positionAction();
+      measure();
+    });
     document.fonts.ready.then(() => {
       measure();
       if (location.hash === '#why-barnes') root.scrollIntoView({ block: 'start', behavior: 'instant' });
