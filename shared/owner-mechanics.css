@@ -228,6 +228,7 @@ body.owner-rent-reference-ui .owner-sale-exclusive .owner-sale-exclusive__text {
   body.owner-rent-reference-ui .owner-sale-exclusive .owner-sale-exclusive__title {
     font-size: 28px;
     line-height: 1.12;
+    text-align: center;
   }
 
   body.owner-rent-reference-ui .owner-sale-exclusive .owner-sale-exclusive__lead {
