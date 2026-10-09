@@ -79,6 +79,7 @@ html body .apartment-card--catalog :is(.apartment-card__call-btn, .apartment-car
 /* Filter layout: "lower lines" design from the approved mobile reference. */
 .catalog-mode-toolbar {
   --catalog-filter-font-size: 17px;
+  --catalog-filter-font-weight: 300;
   --catalog-filter-ink: #4f4d49;
   --catalog-filter-muted: #656462;
   --catalog-filter-line: #e4e4e4;
@@ -110,7 +111,7 @@ html body .apartment-card--catalog :is(.apartment-card__call-btn, .apartment-car
   cursor: pointer;
   font: inherit;
   font-size: var(--catalog-filter-font-size);
-  font-weight: 400;
+  font-weight: var(--catalog-filter-font-weight);
   min-height: 40px;
   padding: 0 0 13px;
   position: relative;
@@ -215,7 +216,7 @@ html body .catalog-mode-toolbar .catalog-mode-filters .catalog-quick-filters__la
   color: inherit;
   display: inline-flex;
   font-size: var(--catalog-filter-font-size);
-  font-weight: 400;
+  font-weight: var(--catalog-filter-font-weight);
   height: 22px;
   line-height: 22px;
 }
@@ -247,6 +248,7 @@ html body .catalog-mode-toolbar .catalog-grid__sort[class] {
   border-radius: 0;
   color: var(--catalog-filter-ink);
   font-size: var(--catalog-filter-font-size);
+  font-weight: var(--catalog-filter-font-weight);
   height: 40px;
   min-height: 40px;
   min-width: 0;
@@ -287,7 +289,7 @@ html body .catalog-mode-toolbar .catalog-grid__sort[class] {
 
 .catalog-mode-detailed-filters__label {
   font-size: var(--catalog-filter-font-size);
-  font-weight: 400;
+  font-weight: var(--catalog-filter-font-weight);
   white-space: nowrap;
 }
 
