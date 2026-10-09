@@ -1,0 +1,21 @@
+/* Rental and sale presentation cards: swipe horizontally on phones. */
+@media (max-width: 540px) {
+  body:is(.owner-rent-reference-ui, .owner-sale-reference-ui) .owner-sale-presentation .owner-sale-presentation__grid {
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 12px;
+  }
+
+  body:is(.owner-rent-reference-ui, .owner-sale-reference-ui) .owner-sale-presentation .owner-sale-presentation__grid > .owner-sale-presentation__card {
+    flex: 0 0 calc(100% - 24px);
+    height: 360px;
+    min-height: 360px;
+    aspect-ratio: auto;
+    grid-column: auto;
+    grid-row: auto;
+    scroll-snap-align: start;
+  }
+}
