@@ -30,6 +30,16 @@
     });
   });
 
+  var brandCopy = document.querySelector('.partners-brand-block .about-company__copy');
+  var brandMoreButton = brandCopy && brandCopy.querySelector('.ui-more-link');
+  if (brandMoreButton) {
+    brandMoreButton.addEventListener('click', function () {
+      var expanded = brandCopy.classList.toggle('is-expanded');
+      brandMoreButton.setAttribute('aria-expanded', String(expanded));
+      brandMoreButton.querySelector('.ui-more-link__label').textContent = expanded ? 'Свернуть' : 'Читать далее';
+    });
+  }
+
   var ownerShellStylesheet = document.createElement('link');
   ownerShellStylesheet.rel = 'stylesheet';
   ownerShellStylesheet.href = 'assets/owner-shell.css?v=20261009-mobile-hero';
