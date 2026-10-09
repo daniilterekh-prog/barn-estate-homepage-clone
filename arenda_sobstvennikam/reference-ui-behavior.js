@@ -445,6 +445,18 @@
       bindRequestPopup(exclusiveCta);
     }
 
+    var responsiveCta = inner.querySelector('.owner-sale-exclusive__cta');
+    if (responsiveCta && !responsiveCta.dataset.mobilePositionBound) {
+      responsiveCta.dataset.mobilePositionBound = 'true';
+      var mobileExclusive = window.matchMedia('(max-width: 540px)');
+      function positionExclusiveCta() {
+        var target = mobileExclusive.matches ? inner : exclusiveHeader;
+        if (responsiveCta.parentElement !== target) target.appendChild(responsiveCta);
+      }
+      mobileExclusive.addEventListener('change', positionExclusiveCta);
+      positionExclusiveCta();
+    }
+
     section.querySelectorAll('.owner-sale-exclusive__item').forEach(function (item, index) {
       if (item.querySelector('.owner-sale-exclusive__number')) return;
 
