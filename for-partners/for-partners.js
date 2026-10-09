@@ -11,14 +11,23 @@
 
   var conditionsStylesheet = document.createElement('link');
   conditionsStylesheet.rel = 'stylesheet';
-  conditionsStylesheet.href = 'assets/conditions-heading.css?v=20261009-card-hover';
+  conditionsStylesheet.href = 'assets/conditions-heading.css?v=20261009-pointer-hover';
   document.head.appendChild(conditionsStylesheet);
 
   page.querySelectorAll('.ambassadors-conditions__reveal').forEach(function (button) {
     var card = button.closest('.ambassadors-conditions__card');
     button.textContent = '';
+    card.addEventListener('pointerenter', function (event) {
+      if (event.pointerType !== 'mouse') return;
+      card.classList.add('is-hovered');
+    });
+    card.addEventListener('pointerleave', function (event) {
+      if (event.pointerType !== 'mouse') return;
+      card.classList.remove('is-hovered', 'is-revealed');
+      button.setAttribute('aria-expanded', 'false');
+    });
     button.addEventListener('click', function (event) {
-      if (event.detail && window.matchMedia('(hover: hover) and (pointer: fine)').matches) return;
+      if (event.detail && event.pointerType !== 'touch' && window.matchMedia('(any-hover: hover)').matches) return;
       var open = card.classList.toggle('is-revealed');
       button.setAttribute('aria-expanded', String(open));
     });
