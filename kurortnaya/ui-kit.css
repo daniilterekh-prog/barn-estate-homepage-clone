@@ -1519,6 +1519,21 @@ html body .catalog-feedback-modal .modal__close svg {
   }
 }
 
+@media (max-width: 540px) {
+  html body .catalog-projects-map .catalog-projects-map__controls {
+    bottom: 12px;
+  }
+
+  html body .catalog-projects-map .catalog-projects-map__fullscreen {
+    padding-inline: 8px;
+  }
+
+  html body .catalog-projects-map .ymaps3--controls_bottom .ymaps3--control-button {
+    height: 40px;
+    min-height: 40px;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
