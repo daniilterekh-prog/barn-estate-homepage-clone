@@ -402,13 +402,25 @@ html body .catalog-mode-toolbar .catalog-grid__sort[class] {
     min-width: 0;
     min-height: 54px;
     padding-top: 0;
+    position: relative;
     width: auto;
   }
 
+  .catalog-mode-toolbar .catalog-grid__sort::after {
+    border-bottom: 1px solid var(--catalog-filter-ink);
+    border-right: 1px solid var(--catalog-filter-ink);
+    content: "";
+    height: 10px;
+    pointer-events: none;
+    position: absolute;
+    right: 16px;
+    top: calc(50% - 5px);
+    transform: rotate(45deg);
+    width: 10px;
+  }
+
   .catalog-mode-toolbar .catalog-grid__sort-select[data-v-5a2b3b97] {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='10' viewBox='0 0 16 10' fill='none'%3E%3Cpath d='M1 1L8 8L15 1' stroke='%234f4d49' stroke-width='1'/%3E%3C/svg%3E");
-    background-position: right 4px center;
-    background-size: 16px 10px;
+    background-image: none;
     font-family: inherit;
     font-size: var(--catalog-filter-font-size);
     font-weight: var(--catalog-filter-font-weight);
