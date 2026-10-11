@@ -4,7 +4,7 @@
   if (!document.querySelector('link[data-kurortnaya-ui-kit]')) {
     var stylesheet = document.createElement('link');
     stylesheet.rel = 'stylesheet';
-    stylesheet.href = 'ui-kit.css?v=20261011-mobile-map-controls-2';
+    stylesheet.href = 'ui-kit.css?v=20261012-mobile-contact-menu-1';
     stylesheet.dataset.kurortnayaUiKit = 'true';
     document.head.appendChild(stylesheet);
   }

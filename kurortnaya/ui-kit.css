@@ -1145,7 +1145,7 @@ html body :is(
 
 @media (max-width: 900px) {
   html body .catalog-sticky {
-    overflow-x: auto;
+    overflow: visible;
     overscroll-behavior-inline: contain;
     scrollbar-width: none;
   }
