@@ -434,6 +434,8 @@
 })()
 
 if (window.location.protocol !== 'file:') {
+  // Resolve against this script, so nested deployments retain their site prefix.
+  const assetBase = new URL('.', document.currentScript.src)
   const localAssetByFilename = {
     '37537bbcc39d4cd6cbbfa8bee57ccfe0.jpg': 'remote-01.jpg',
     'bf26ef82ed142679082f0fae8dc18488.png': 'remote-02.png',
@@ -454,7 +456,7 @@ if (window.location.protocol !== 'file:') {
     '7cbc0403f9a07e8399d7dfe3ae2115fe.jpg': 'remote-18.jpg',
     'c1651708fd986a42f24484ae8ca711f5.jpg': 'remote-19.jpg',
   }
-  const localAsset = (value) => {
+  const legacyLocalAsset = (value) => {
     if (!value) return value
     if (value.includes('/pictures/logo.svg')) return '/vavilova-64/assets/reference/remote-06.svg'
     if (value.includes('8f5ddbc1f811f957fe777caaf9cef323')) return '/vavilova-64/assets/reference/expert-anastasia-shpak.jpg'
@@ -471,16 +473,25 @@ if (window.location.protocol !== 'file:') {
     const filename = Object.keys(localAssetByFilename).find((name) => value.includes(name))
     return filename ? `/vavilova-64/assets/reference/${localAssetByFilename[filename]}` : value
   }
+  const localAsset = (value) => {
+    const mapped = legacyLocalAsset(value)
+    return mapped?.startsWith('/vavilova-64/assets/reference/')
+      ? new URL(mapped.slice('/vavilova-64/'.length), assetBase).href
+      : mapped
+  }
   const rewriteImage = (image) => {
     const src = image.getAttribute('src')
     const next = localAsset(src)
     if (src && next !== src) image.setAttribute('src', next)
     const srcset = image.getAttribute('srcset')
-    if (srcset) image.setAttribute('srcset', srcset.split(',').map((part) => {
+    if (srcset) {
+      const nextSrcset = srcset.split(',').map((part) => {
       const [url, descriptor] = part.trim().split(/\s+/, 2)
       const rewritten = localAsset(url)
       return descriptor ? `${rewritten} ${descriptor}` : rewritten
-    }).join(', '))
+      }).join(', ')
+      if (nextSrcset !== srcset) image.setAttribute('srcset', nextSrcset)
+    }
   }
   const rewriteImages = () => document.querySelectorAll('img').forEach(rewriteImage)
   rewriteImages()
