@@ -1,0 +1,1 @@
+const n=/((?:src|href)=["'])\/(?!\/)/gi;function s(e,r){if(!e)return"";const t=r.replace(/\/$/,"");return e.replace(n,`$1${t}/`)}function a(e){return e.replace(/<[^>]*>/g," ").replace(/\s+/g," ").trim()}export{s as r,a as s};

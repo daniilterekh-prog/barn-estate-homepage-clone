@@ -1,0 +1,1 @@
+import{d as a,C as n,G as s}from"./B9PCyV3B.js";const r=a({__name:"index",async setup(o){let t,e;return[t,e]=n(()=>s("/mezhdunarodnaya-nedvizhimost/turtsiya/",{})),await t,e(),()=>{}}});export{r as default};
