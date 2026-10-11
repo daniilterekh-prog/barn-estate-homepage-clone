@@ -1520,6 +1520,11 @@ html body .catalog-feedback-modal .modal__close svg {
 }
 
 @media (max-width: 540px) {
+  html body .catalog-hero__breadcrumbs[class] :is(.breadcrumbs__link, .breadcrumbs__separator) {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
   html body .catalog-projects-map .catalog-projects-map__controls {
     bottom: 12px;
   }
