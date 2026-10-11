@@ -43,6 +43,18 @@
   padding-top: 14px;
 }
 
+@media (min-width: 1025px) {
+  .listing-card-fact__label {
+    font-size: 12px;
+    line-height: 1.2;
+  }
+
+  .listing-card-fact__value {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+
 .apartment-card--catalog .listing-card-price-row .apartment-card__price[data-v-80c326fb] {
   border-top: 0;
   margin-top: 0;
