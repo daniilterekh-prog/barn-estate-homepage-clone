@@ -1,4 +1,33 @@
 /* Measured against for-partners at 1440 px and 390 px; scoped to Vavilova. */
+/* FAQ typography: for-partners/assets/faq-typography.css. Higher specificity
+   keeps the section-heading layer and original scoped snapshot CSS in sync. */
+.catalog-detail .catalog-faq .catalog-faq__title {
+  font-family: "Tilda Sans", system-ui, sans-serif;
+  font-size: 38px;
+  font-weight: 300;
+  line-height: 1.2;
+}
+.catalog-detail .catalog-faq .catalog-faq__question-text {
+  font-family: "Tilda Sans", system-ui, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.4;
+}
+.catalog-detail .catalog-faq .catalog-faq__answer-content,
+.catalog-detail .catalog-faq .catalog-faq__answer-content p {
+  font-family: "Tilda Sans", system-ui, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.4;
+}
+@media (min-width: 1441px) {
+  .catalog-detail .catalog-faq .catalog-faq__title { font-size: 44px; }
+  .catalog-detail .catalog-faq .catalog-faq__question-text { font-size: 22px; }
+}
+@media (max-width: 1024px) {
+  .catalog-detail .catalog-faq .catalog-faq__title { font-size: 22px; }
+  .catalog-detail .catalog-faq .catalog-faq__question-text { font-size: 18px; }
+}
 .catalog-detail { --vavilova-eyebrow-gap: 25px; }
 .catalog-detail .vavilova-section-heading {
   display: flex;

@@ -11,6 +11,11 @@
 
 ## Выравнивание по странице амбассадоров
 
+Типографика FAQ сверена с `../for-partners/assets/faq-typography.css`:
+H2 22/38/44 px и вопросы 18/20/22 px (≤1024 / 1025–1440 / ≥1441 px),
+ответы 16 px при всех ширинах. Tilda Sans, вес 300/400/300;
+межстрочный интервал 1.2/1.4/1.4. Правила изолированы внутри FAQ Вавилова.
+
 `reference-alignment.css` и `reference-alignment.js` — отдельный слой, измеренный
 по `../for-partners/` 12 октября 2026. Источник хедера и hero:
 `../for-partners/assets/owner-shell.css`, `button-kit.css` и `for-partners.js`.
