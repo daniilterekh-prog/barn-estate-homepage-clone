@@ -21,6 +21,21 @@
   font-family: "Tilda Sans", "Tilda Sans Fallback", system-ui, sans-serif;
 }
 
+.catalog-detail .vavilova-section-actions {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 0;
+}
+
+@media (max-width: 540px) {
+  .catalog-detail .vavilova-section-actions {
+    margin-top: 0;
+  }
+  .catalog-detail .vavilova-section-actions .detail-characteristics__cta {
+    width: 100%;
+  }
+}
+
 /* Reference palette and the shared type scale. */
 .catalog-detail :is(
   .detail-characteristics__title,

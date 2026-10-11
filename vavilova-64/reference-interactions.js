@@ -55,6 +55,16 @@
   ]
   sectionEyebrows.forEach(([selector, text]) => addEyebrow(selector, text))
 
+  // Section actions follow the content in both visual and keyboard order.
+  const characteristicsInner = document.querySelector('.detail-characteristics__inner')
+  const characteristicsCta = characteristicsInner?.querySelector('.detail-characteristics__cta')
+  if (characteristicsCta) {
+    const actions = document.createElement('div')
+    actions.className = 'vavilova-section-actions'
+    actions.append(characteristicsCta)
+    characteristicsInner.append(actions)
+  }
+
   const aboutEyebrow = document.querySelector('.detail-about__eyebrow')
   const reviewsEyebrow = document.querySelector('.reviews-section__eyebrow')
   const developerEyebrow = document.querySelector('.lot-developer__label')
