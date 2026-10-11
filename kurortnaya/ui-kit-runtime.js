@@ -4,7 +4,7 @@
   if (!document.querySelector('link[data-kurortnaya-ui-kit]')) {
     var stylesheet = document.createElement('link');
     stylesheet.rel = 'stylesheet';
-    stylesheet.href = 'ui-kit.css?v=20261011-contact-modal-1';
+    stylesheet.href = 'ui-kit.css?v=20261011-contact-modal-2';
     stylesheet.dataset.kurortnayaUiKit = 'true';
     document.head.appendChild(stylesheet);
   }
@@ -365,7 +365,7 @@
       '      </form>',
       '    </div>',
       '    <div class="feedback-modal__hero">',
-      '      <img class="feedback-modal__hero-image" src="assets/denis-perkovsky-interior-hq.webp" alt="Денис Перковский — руководитель департамента курортной недвижимости BARNES" width="2048" height="3072">',
+      '      <img class="feedback-modal__hero-image" src="assets/denis-perkovsky-cutout.png" alt="Денис Перковский — руководитель департамента курортной недвижимости BARNES" width="1024" height="1536">',
       '    </div>',
       '  </div>',
       '</div>'
