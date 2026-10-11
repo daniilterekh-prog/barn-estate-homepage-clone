@@ -1520,6 +1520,12 @@ html body .catalog-feedback-modal .modal__close svg {
 }
 
 @media (max-width: 540px) {
+  html body .catalog-consultation__mobile-photo[class] img {
+    object-position: 50% 0;
+    transform: translateY(6px) scale(1.35);
+    transform-origin: 50% 0;
+  }
+
   html body .catalog-hero__breadcrumbs[class] :is(.breadcrumbs__link, .breadcrumbs__separator) {
     font-size: 12px;
     line-height: 16px;
