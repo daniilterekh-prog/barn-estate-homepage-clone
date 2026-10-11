@@ -132,7 +132,7 @@
 .catalog-best-offers .launch-card .apartment-card__details {
   order: 2;
   display: block;
-  margin: 25px 0 0;
+  margin: 18px 0 0;
 }
 
 .catalog-best-offers .launch-card .apartment-card__price-row {
@@ -245,7 +245,7 @@
   }
 
   .catalog-best-offers .launch-card .apartment-card__details {
-    margin-top: 22px;
+    margin-top: 16px;
   }
 }
 

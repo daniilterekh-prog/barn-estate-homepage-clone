@@ -20,7 +20,7 @@
   if (!document.querySelector('link[data-kurortnaya-start-sales]')) {
     var startSalesStylesheet = document.createElement('link');
     startSalesStylesheet.rel = 'stylesheet';
-    startSalesStylesheet.href = 'start-sales-cards.css?v=20261009-location-emphasis-1';
+    startSalesStylesheet.href = 'start-sales-cards.css?v=20261011-content-spacing-1';
     startSalesStylesheet.dataset.kurortnayaStartSales = 'true';
     document.head.appendChild(startSalesStylesheet);
   }
