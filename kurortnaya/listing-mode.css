@@ -341,7 +341,7 @@ html body .catalog-mode-toolbar .catalog-grid__sort[class] {
   }
 
   .catalog-mode-toolbar {
-    gap: 20px 12px;
+    gap: 10px 12px;
     grid-template-columns: minmax(0, 1fr) auto;
     margin: 18px 0 28px;
   }
@@ -383,12 +383,13 @@ html body .catalog-mode-toolbar .catalog-grid__sort[class] {
   }
 
   html body .catalog-mode-toolbar .catalog-grid__sort[class] {
-    border-top: 1px solid var(--catalog-filter-line);
+    border-top: 0;
     grid-column: 2;
     grid-row: 3;
     justify-content: flex-end;
     min-width: 0;
-    padding-top: 14px;
+    min-height: 54px;
+    padding-top: 0;
     width: auto;
   }
 
@@ -400,7 +401,7 @@ html body .catalog-mode-toolbar .catalog-grid__sort[class] {
   .catalog-mode-detailed-filters {
     align-self: stretch;
     border: 0;
-    border-top: 1px solid var(--catalog-filter-line);
+    border-top: 0;
     border-radius: 0;
     grid-column: 1;
     grid-row: 3;
@@ -408,7 +409,7 @@ html body .catalog-mode-toolbar .catalog-grid__sort[class] {
     justify-content: flex-start;
     min-height: 54px;
     min-width: 0;
-    padding: 14px 0 0;
+    padding: 0;
     width: 100%;
   }
 
