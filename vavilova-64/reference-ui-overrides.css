@@ -506,6 +506,18 @@ body.vavilova-menu-open .layout__header {
   max-width: 1920px;
 }
 
+@media (max-width: 768px) {
+  .catalog-detail .detail-hero {
+    min-height: 560px;
+  }
+}
+
+@media (max-width: 540px) {
+  .catalog-detail .detail-hero {
+    min-height: 520px;
+  }
+}
+
 @media (min-width: 1441px) {
   .catalog-detail {
     --vav-ui-h2-size: 44px;
