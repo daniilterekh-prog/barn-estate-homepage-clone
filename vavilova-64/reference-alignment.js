@@ -1,0 +1,77 @@
+// Page-local alignment with the approved for-partners reference.
+(() => {
+  const page = document.querySelector('.catalog-detail')
+  if (!page) return
+  const createHeading = (parent, eyebrowText, titleText, className) => {
+    const wrapper = document.createElement('header')
+    wrapper.className = 'vavilova-section-heading ' + (className || '')
+    const eyebrow = document.createElement('p')
+    eyebrow.className = 'vavilova-section-eyebrow'
+    eyebrow.textContent = eyebrowText
+    const heading = document.createElement('h2')
+    heading.textContent = titleText
+    wrapper.append(eyebrow, heading)
+    parent.prepend(wrapper)
+    return wrapper
+  }
+  const about = page.querySelector('.detail-about__inner')
+  if (about) {
+    page.querySelector('.detail-about__eyebrow')?.remove()
+    createHeading(about, 'О проекте', 'О жилом комплексе')
+  }
+  const gallery = page.querySelector('.detail-gallery')
+  if (gallery) createHeading(gallery, 'В деталях', 'Галерея проекта', 'base-container vavilova-gallery-heading')
+  const contactTitle = page.querySelector('.catalog-contact__title')
+  if (contactTitle) {
+    const eyebrow = document.createElement('p')
+    eyebrow.className = 'vavilova-section-eyebrow'
+    eyebrow.textContent = 'Консультация BARNES'
+    contactTitle.before(eyebrow)
+  }
+  page.querySelectorAll('h2').forEach((heading) => {
+    const eyebrow = heading.previousElementSibling
+    if (!eyebrow?.matches('.vavilova-section-eyebrow,.reviews-section__eyebrow,.lot-developer__label')) return
+    if (heading.parentElement.classList.contains('vavilova-section-heading')) return
+    const wrapper = document.createElement('header')
+    wrapper.className = 'vavilova-section-heading'
+    eyebrow.before(wrapper)
+    wrapper.append(eyebrow, heading)
+  })
+  const heroCopy = page.querySelector('.detail-hero__copy')
+  const breadcrumbs = page.querySelector('.detail-hero__breadcrumbs')
+  if (heroCopy && breadcrumbs) heroCopy.prepend(breadcrumbs)
+  const heroTitle = page.querySelector('.detail-hero__title')
+  const heroLocation = page.querySelector('.detail-hero__location')
+  if (heroTitle && heroLocation) heroTitle.after(heroLocation)
+
+  const right = document.querySelector('.layout__header .site-header__right')
+  const phone = right?.querySelector('.site-header__phone')
+  if (right && phone) {
+    const contacts = document.createElement('nav')
+    contacts.className = 'vavilova-header-contacts'
+    contacts.setAttribute('aria-label', 'Способы связи')
+    const assetBase = new URL('../pictures/office-contact/', document.currentScript.src)
+    const links = [
+      ['WhatsApp', 'https://wa.me/79252621650', 'whatsapp.svg'],
+      ['MAX', 'https://max.ru/join/AWj8ibiCtAPOJOlulMGNkykKGz_prXVWg-IQK1KpUG8', 'max.svg'],
+      ['Telegram', 'https://t.me/art_de_vivre_barnes', 'telegram.svg'],
+    ]
+    links.forEach(([name, href, file]) => {
+      const link = document.createElement('a')
+      link.href = href
+      link.className = 'vavilova-header-contact'
+      link.target = '_blank'
+      link.rel = 'noopener noreferrer'
+      link.setAttribute('aria-label', 'Написать в ' + name)
+      const image = document.createElement('img')
+      image.src = new URL(file, assetBase).href
+      image.alt = ''
+      link.append(image)
+      contacts.append(link)
+    })
+    phone.classList.add('vavilova-header-contact')
+    phone.setAttribute('aria-label', 'Позвонить по номеру +7 495 182-50-79')
+    contacts.append(phone)
+    right.append(contacts)
+  }
+})()
