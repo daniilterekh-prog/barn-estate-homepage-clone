@@ -1185,13 +1185,6 @@ html body :is(
   }
 }
 
-@media (min-width: 1921px) {
-  html body :is(.catalog-consultation, .catalog-contact)[class] {
-    margin-inline: auto;
-    max-width: 1920px;
-  }
-}
-
 html body.catalog-modal-open {
   overflow: hidden;
 }
