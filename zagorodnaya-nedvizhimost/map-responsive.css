@@ -1,0 +1,12 @@
+/* Reference raster tiles at zoom 11; positions use the same pixel snapping. */
+.catalog-projects-map {
+  background: #f1f1f1 !important;
+  overflow: hidden;
+}
+.catalog-projects-map .ymaps3--map {
+  background: transparent;
+}
+.catalog-projects-map .__ymap_container {
+  height: 100%;
+  width: 100%;
+}

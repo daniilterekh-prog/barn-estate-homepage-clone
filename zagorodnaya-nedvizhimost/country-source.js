@@ -1,7 +1,4 @@
 (() => {
-  const fallback = document.createElement('style');
-  fallback.textContent = '.catalog-map{position:relative;overflow:hidden;background:#fff}.catalog-map:after{display:none}.catalog-map .base-container{position:relative;z-index:1}.catalog-projects-map{background:url("map-canvas.png") center/cover no-repeat!important;overflow:hidden}.catalog-projects-map__canvas{background:transparent!important}.catalog-projects-map__canvas canvas{opacity:0}.catalog-projects-map__link-proxy{height:1px;opacity:0;overflow:hidden;pointer-events:none;position:absolute;width:1px}@media(max-width:1920px){.catalog-projects-map{background-image:url("map-canvas-1920.png")!important}}@media(max-width:1440px){.catalog-projects-map{background-image:url("map-canvas-1440.png")!important}}@media(max-width:1024px){.catalog-projects-map{background-image:url("map-canvas-1024.png")!important}}@media(max-width:768px){.catalog-projects-map{background-image:url("map-canvas-768.png")!important}}@media(min-width:541px) and (max-width:1024px){.news-section__slider[data-v-411e09d7] .splide__slide{width:calc(50% - 20px)!important}}@media(max-width:540px){.catalog-projects-map{background-image:url("map-canvas-540.png")!important}.news-section__slider[data-v-411e09d7] .splide__slide{margin-right:0!important;width:100%!important}.catalog-best-offers__slider[data-v-08286baa] .splide__pagination,.news-section__slider[data-v-411e09d7] .splide__pagination{display:flex!important}}@media(min-width:541px){.catalog-best-offers__slider[data-v-08286baa] .splide__pagination,.news-section__slider[data-v-411e09d7] .splide__pagination{display:none!important}}@media(max-width:400px){.catalog-projects-map{background-image:url("map-canvas-390.png")!important}}';
-  document.head.appendChild(fallback);
 
   const bestOffers = [
     ['/kottedzhnye-poselki/papushevo-park/', 'assets/best-papushevo.jpeg', 'Папушево парк', 'Рублёво-Успенское шоссе, 25 от МКАД', 'от 130 000 000 ₽'],
@@ -20,28 +17,16 @@
     ['https://barn-estate.ru/media/novosti/za-chto-mogut-oshtrafovat-vladeltsev-dach-i-uchastkov-/', 'news-6.png', 'За что могут оштрафовать владельцев дач и участков в 2026 году'],
   ];
 
-  const catalogItems = [
-    ['https://barn-estate.ru/zagorodnaya-nedvizhimost/575528/', 'assets/grid-01.png', 'Резиденции Березки', 'Рублёво-Успенское шоссе, 15 от мкад', '219 000 000 ₽', '575528', ['1 167 м²', '6']],
-    ['https://barn-estate.ru/zagorodnaya-nedvizhimost/595031/', 'assets/grid-02.png', 'Весна', 'Рублёво-Успенское шоссе, 16 от мкад', '239 900 000 ₽', '595031', ['611 м²', '5']],
-    ['https://barn-estate.ru/zagorodnaya-nedvizhimost/586385/', 'assets/grid-03.jpg', 'КП Трувиль', 'Минское шоссе, 18 от мкад', '320 000 000 ₽', '586385', ['365 м²', '5']],
-    ['https://barn-estate.ru/zagorodnaya-nedvizhimost/562250/', 'assets/grid-04.jpg', 'Павлово', 'Новорижское шоссе, 19 от мкад', '877 923 900 ₽', '562250', ['877 м²', '5']],
-    ['https://barn-estate.ru/zagorodnaya-nedvizhimost/593776/', 'assets/grid-05.jpg', 'Княжье Озеро', 'Новорижское шоссе, 25 от мкад', '90 000 000 ₽', '593776', ['260 м²', '3']],
-    ['https://barn-estate.ru/zagorodnaya-nedvizhimost/560208/', 'assets/grid-06.jpg', 'Crystal Istra (Кристал Истра)', 'Новорижское шоссе, 18 от мкад', '93 126 600 ₽', '560208', ['583,6 м²', '6']],
-    ['https://barn-estate.ru/zagorodnaya-nedvizhimost/587962/', 'assets/grid-07.png', 'Успенские дачи -1', 'Рублёво-Успенское шоссе, 19 от мкад', '825 000 000 ₽', '587962', ['687 м²', '5']],
-    ['https://barn-estate.ru/zagorodnaya-nedvizhimost/584131/', 'assets/grid-08.jpg', 'Лес и Река', 'Новорижское шоссе, 15 от мкад', '349 000 000 ₽', '584131', ['600 м²', '4']],
-    ['https://barn-estate.ru/zagorodnaya-nedvizhimost/587243/', 'assets/grid-09.jpg', 'Бузланово', 'Новорижское шоссе, 15 от мкад', '50 170 000 ₽', '587243', []],
-    ['https://barn-estate.ru/zagorodnaya-nedvizhimost/576274/', 'assets/grid-10.png', 'Миллениум Парк', 'Новорижское шоссе, 24 от мкад', '230 000 000 ₽', '576274', ['478 м²', '4']],
-    ['https://barn-estate.ru/zagorodnaya-nedvizhimost/595240/', 'assets/grid-11.jpg', 'Николина Гора', 'Рублёво-Успенское шоссе, 24 от мкад', '210 000 000 ₽', '595240', ['986,8 м²', '3']],
-    ['https://barn-estate.ru/zagorodnaya-nedvizhimost/543198/', 'assets/grid-12.jpg', 'Дом в Конаково', 'Ленинградское шоссе', '300 000 000 ₽', '543198', ['1 038 м²', '7']],
-  ];
-
   const syncCatalogGrid = () => {
     const list = document.querySelector('.catalog-grid__list');
     if (!list) return;
-    list.innerHTML = catalogItems.map(([href, image, name, address, price, id, stats]) => `<li class="catalog-grid__item" data-v-3935e33d=""><article class="apartment-card apartment-card--catalog" data-v-3935e33d="" data-v-80c326fb=""><div class="apartment-card__media" data-v-80c326fb=""><a class="apartment-card__media-link" href="${href}" data-v-80c326fb=""><img src="${image}" alt="${name}" class="apartment-card__image" width="720" height="540" sizes="768:100vw 480px" loading="lazy" data-v-80c326fb=""></a><button type="button" class="apartment-card__favorite" aria-pressed="false" aria-label="Добавить в избранное" data-v-80c326fb=""><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path></svg></button></div><div class="apartment-card__body" data-v-80c326fb=""><div class="apartment-card__topline" data-v-80c326fb=""><span class="apartment-card__lotid" data-v-80c326fb="">ID ${id}</span></div><a class="apartment-card__name apartment-card__name--link" href="${href}" data-v-80c326fb=""><span class="apartment-card__name-text" data-v-80c326fb="">${name}</span></a><p class="apartment-card__address" data-v-80c326fb="">${address}</p>${stats.length ? `<div class="apartment-card__stats" style="--stats-count:${stats.length};" data-v-80c326fb="">${stats.map((stat, index) => `<div class="apartment-card__stat" data-v-80c326fb=""><b class="apartment-card__stat-value" data-v-80c326fb="">${stat}</b><small class="apartment-card__stat-label" data-v-80c326fb="">${index ? 'Спален' : 'Площадь'}</small></div>`).join('')}</div>` : ''}<p class="apartment-card__price" data-v-80c326fb="">${price}</p></div><div class="apartment-card__actions" data-v-80c326fb=""><button type="button" class="ui-button ui-button--secondary ui-button--medium apartment-card__call-btn" data-v-80c326fb=""> Заказать звонок </button><a class="ui-button ui-button--primary ui-button--medium apartment-card__detail-btn" data-v-80c326fb="" href="${href}"> Подробнее <span class="apartment-card__arrow" aria-hidden="true" data-v-80c326fb=""><svg viewBox="0 0 16 16" fill="none"><path d="M3 13 13 3M6 3h7v7" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25"></path></svg></span></a></div></article></li>`).join('');
-    const updateVisibility = () => list.querySelectorAll('.catalog-grid__item').forEach((item, index) => { item.style.display = window.innerWidth <= 540 && index >= 5 ? 'none' : ''; });
-    updateVisibility();
-    window.addEventListener('resize', updateVisibility, { passive: true });
+    let expanded = false;
+    const update = () => list.querySelectorAll('.catalog-grid__item').forEach((item, index) => {
+      item.style.display = window.innerWidth < 768 && !expanded && index >= 5 ? 'none' : '';
+    });
+    document.querySelector('.catalog-grid__more')?.addEventListener('click', () => { expanded = true; update(); });
+    window.addEventListener('resize', update, { passive: true });
+    update();
   };
 
   const addBestOffers = () => {
@@ -128,7 +113,7 @@
     aside.className = 'floating-expert floating-expert--alexander';
     aside.setAttribute('data-v-553bd346', '');
     aside.setAttribute('aria-label', 'Михаил Долгов');
-    aside.innerHTML = '<button data-v-553bd346 type="button" class="floating-expert__card" aria-haspopup="dialog"><span data-v-553bd346 class="floating-expert__avatar"><img data-v-553bd346 src="/pictures/floating-expert/alexander-dolgov.webp" alt="Михаил Долгов" width="72" height="72" loading="lazy" decoding="async"></span><span data-v-553bd346 class="floating-expert__content"><span data-v-553bd346 class="floating-expert__label">Руководитель департамента загородной недвижимости</span><span data-v-553bd346 class="floating-expert__title">Задать вопрос эксперту</span><span data-v-553bd346 class="floating-expert__name">Михаил Долгов</span></span></button><button data-v-553bd346 type="button" class="floating-expert__close" aria-label="Скрыть карточку Михаил Долгов"></button>';
+    aside.innerHTML = '<button data-v-553bd346 type="button" class="floating-expert__card" aria-haspopup="dialog"><span data-v-553bd346 class="floating-expert__avatar"><img data-v-553bd346 src="../pictures/floating-expert/alexander-dolgov.webp" alt="Михаил Долгов" width="72" height="72" loading="lazy" decoding="async"></span><span data-v-553bd346 class="floating-expert__content"><span data-v-553bd346 class="floating-expert__label">Руководитель департамента загородной недвижимости</span><span data-v-553bd346 class="floating-expert__title">Задать вопрос эксперту</span><span data-v-553bd346 class="floating-expert__name">Михаил Долгов</span></span></button><button data-v-553bd346 type="button" class="floating-expert__close" aria-label="Скрыть карточку Михаил Долгов"></button>';
     aside.querySelector('.floating-expert__close')?.addEventListener('click', () => aside.remove());
     aside.querySelector('.floating-expert__card')?.addEventListener('click', () => document.querySelector('.catalog-consultation')?.scrollIntoView({ behavior: 'smooth' }));
     document.body.append(aside);
@@ -148,11 +133,24 @@
   addNews();
   addFloatingExpert();
 
+  const favoritesLink = document.querySelector('.site-header__favorites-btn');
+  if (favoritesLink && !favoritesLink.querySelector('.site-header__favorites-count')) {
+    const count = document.createElement('span');
+    count.className = 'site-header__favorites-count';
+    count.setAttribute('data-v-7912d681', '');
+    count.textContent = '1';
+    favoritesLink.append(count);
+  }
+
   const header = document.querySelector('.site-header');
   const pageNav = document.querySelector('.catalog-page-nav');
+  let pageNavWasVisible = false;
   const syncHeader = () => {
     header?.classList.toggle('site-header--scrolled', window.scrollY > 36);
-    pageNav?.classList.toggle('catalog-page-nav--visible', window.scrollY > 330);
+    const visible = window.scrollY > 320;
+    pageNav?.classList.toggle('catalog-page-nav--visible', visible);
+    if (visible && !pageNavWasVisible) requestAnimationFrame(() => { measurePageNav(); observePageNav(); syncPageNav(); });
+    pageNavWasVisible = visible;
   };
   window.addEventListener('scroll', syncHeader, { passive: true });
   syncHeader();
@@ -165,27 +163,79 @@
   });
   document.querySelector('.catalog-hero-filters__bar')?.addEventListener('submit', (event) => { event.preventDefault(); document.querySelector('#catalog-grid')?.scrollIntoView({ behavior: 'smooth' }); });
 
-  const pageNavTargets = ['.catalog-best-offers', '.catalog-map', '.catalog-consultation', '.departments-section', '.news-section'];
+  const pageNavTargets = ['#catalog-new-starts', '#catalog-map', '#catalog-consultation', '#catalog-departments', '#catalog-news'];
   const pageNavButtons = [...document.querySelectorAll('.catalog-page-nav__link')];
+  let navigating = false;
+  let navigationTimer;
+  let observer;
+  let activeIndex = -1;
+  const navOffset = () => (pageNav?.offsetHeight || 101) + 12;
+  const setActive = (active) => {
+    if (active === activeIndex) return;
+    activeIndex = active;
+    pageNavButtons.forEach((button, index) => button.classList.toggle('catalog-page-nav__link--active', index === active));
+    pageNavButtons[active]?.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+  };
+  const measurePageNav = () => {
+    document.documentElement.style.setProperty('--catalog-sticky-nav-top', '0px');
+    document.documentElement.style.setProperty('--catalog-sticky-nav-height', `${pageNav?.offsetHeight || 0}px`);
+  };
   const syncPageNav = () => {
-    const marker = window.scrollY + window.innerHeight * 0.5;
+    if (navigating) return;
+    measurePageNav();
+    const marker = window.scrollY + navOffset();
     let active = 0;
     pageNavTargets.forEach((selector, index) => {
       const section = document.querySelector(selector);
       if (section && section.getBoundingClientRect().top + window.scrollY <= marker) active = index;
     });
-    pageNavButtons.forEach((button, index) => button.classList.toggle('catalog-page-nav__link--active', index === active));
+    setActive(active);
   };
-  pageNavButtons.forEach((button, index) => button.addEventListener('click', () => document.querySelector(pageNavTargets[index])?.scrollIntoView({ behavior: 'smooth' })));
+  const navigate = (index) => {
+    const section = document.querySelector(pageNavTargets[index]);
+    if (!section) return;
+    navigating = true;
+    setActive(index);
+    clearTimeout(navigationTimer);
+    window.scrollTo({ top: Math.max(0, section.getBoundingClientRect().top + window.scrollY - navOffset()), behavior: 'smooth' });
+    navigationTimer = setTimeout(() => { navigating = false; syncPageNav(); }, 700);
+  };
+  const observePageNav = () => {
+    observer?.disconnect();
+    const ratios = new Map();
+    observer = new IntersectionObserver(entries => {
+      if (navigating) return;
+      entries.forEach(entry => ratios.set(entry.target.id, entry.isIntersecting ? entry.intersectionRatio : 0));
+      let selected = -1;
+      let highest = -1;
+      let nearest = Infinity;
+      pageNavTargets.forEach((selector, index) => {
+        const section = document.querySelector(selector);
+        const ratio = ratios.get(section?.id) || 0;
+        if (!section || ratio <= 0) return;
+        const top = section.getBoundingClientRect().top;
+        if (ratio > highest || (ratio === highest && top < nearest)) { selected = index; highest = ratio; nearest = top; }
+      });
+      if (highest > 0 && selected !== activeIndex) setActive(selected);
+      else syncPageNav();
+    }, { root: null, rootMargin: `-${navOffset()}px 0px -45% 0px`, threshold: [0, .15, .35, .55, .75, 1] });
+    pageNavTargets.forEach(selector => { const section = document.querySelector(selector); if (section) observer.observe(section); });
+  };
+  pageNavButtons.forEach((button, index) => button.addEventListener('click', () => navigate(index)));
+  document.querySelector('.catalog-page-nav__request')?.addEventListener('click', () => navigate(2));
   window.addEventListener('scroll', syncPageNav, { passive: true });
-  window.addEventListener('resize', syncPageNav, { passive: true });
+  window.addEventListener('resize', () => { measurePageNav(); observePageNav(); syncPageNav(); }, { passive: true });
+  measurePageNav();
+  observePageNav();
   syncPageNav();
+  if (pageNav) new ResizeObserver(() => { measurePageNav(); observePageNav(); syncPageNav(); }).observe(pageNav);
 
   document.querySelectorAll('.catalog-intro__toggle').forEach((button) => button.addEventListener('click', () => {
     const details = button.closest('.catalog-intro__content')?.querySelector('.catalog-intro__details');
     if (!details) return;
     const open = details.getAttribute('aria-hidden') !== 'false';
     details.setAttribute('aria-hidden', String(!open)); details.style.maxHeight = open ? `${details.scrollHeight}px` : '0px'; button.setAttribute('aria-expanded', String(open));
+    button.querySelector('.ui-more-link__label').textContent = open ? 'свернуть' : 'читать далее';
   }));
 
   document.querySelectorAll('.catalog-faq__question').forEach((button) => button.addEventListener('click', () => {
@@ -193,7 +243,10 @@
     item?.classList.toggle('catalog-faq__item--open', open); answer?.classList.toggle('catalog-faq__answer--open', open); button.setAttribute('aria-expanded', String(open));
   }));
   document.querySelectorAll('.catalog-seo-links__more').forEach((button) => button.addEventListener('click', () => {
-    button.closest('.catalog-seo-links__group')?.querySelectorAll('li[style*="display:none"], li[style*="display: none"]').forEach((item) => { item.style.display = ''; }); button.setAttribute('aria-expanded', 'true');
+    const open = button.getAttribute('aria-expanded') !== 'true';
+    button.closest('.catalog-seo-links__group')?.querySelectorAll('li').forEach((item, index) => { if (index >= 3) item.style.display = open ? '' : 'none'; });
+    button.setAttribute('aria-expanded', String(open));
+    button.querySelector('.ui-more-link__label').textContent = open ? 'Скрыть' : 'Показать все';
   }));
   document.querySelectorAll('.apartment-card__favorite').forEach((button) => button.addEventListener('click', () => { const active = button.getAttribute('aria-pressed') !== 'true'; button.setAttribute('aria-pressed', String(active)); button.classList.toggle('is-active', active); }));
   document.querySelectorAll('.catalog-best-offers__nav-btn, .news-section__nav-btn').forEach((button) => button.addEventListener('click', () => button.closest('section')?.querySelector('.splide__track, .catalog-best-offers__slider-wrap')?.scrollBy({ left: button.classList.contains('catalog-best-offers__nav-btn--prev') ? -520 : 520, behavior: 'smooth' })));
