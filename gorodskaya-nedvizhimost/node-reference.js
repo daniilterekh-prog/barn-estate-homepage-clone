@@ -97,20 +97,11 @@
   function setupFullFilters() {
     let hero=q('.catalog-hero-filters__filter-icon');
     const listing=q('.catalog-mode-detailed-filters');
-    const controls=q('.catalog-projects-map__controls');
-    if(!hero || !listing || !controls)return;
+    if(!hero || !listing)return;
     hero.dataset.cityFilterEntry='hero';
     listing.dataset.cityFilterEntry='listing';
-    const map=document.createElement('button');
-    map.type='button';map.className='catalog-projects-map__fullscreen city-map-filters';
-    const fullscreen=q('.catalog-projects-map__fullscreen',controls);
-    for(const attr of fullscreen?.attributes || [])if(attr.name.startsWith('data-v-'))map.setAttribute(attr.name,'');
-    map.dataset.cityFilterEntry='map';
-    map.innerHTML='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.15" stroke-linecap="round" aria-hidden="true"><path d="M4 6h3m4 0h9M4 12h8m4 0h4M4 18h4m4 0h8"/><circle cx="9" cy="6" r="2"/><circle cx="14" cy="12" r="2"/><circle cx="10" cy="18" r="2"/></svg><span>Фильтры</span>';
-    controls.insertBefore(map,fullscreen);
-    const triggers=[hero,listing,map];
+    const triggers=[hero,listing];
     triggers.forEach(button=>{button.setAttribute('aria-haspopup','dialog');button.setAttribute('aria-controls','catalog-hero-filters-panel');button.setAttribute('aria-expanded','false')});
-    map.setAttribute('aria-label','Открыть фильтры недвижимости');
   }
   async function setupSharedFilters() {
     for(const file of ['filters-template.js','filters-modal.js','quick-filters.js','brand-filters.js','city-reference-extras.js']) {

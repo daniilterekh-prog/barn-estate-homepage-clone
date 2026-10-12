@@ -254,7 +254,7 @@ def inject_node_reference(html: str) -> str:
     html = html.replace('Показать объекты', 'Найти')
     html = re.sub(r'node-city\.css\?v=[\w-]+', 'node-city.css?v=20261012-cta-unified-1', html)
     html = html.replace('node-reference.js?v=20261012-1', 'node-reference.js?v=20261012-cta-unified-1')
-    html = re.sub(r'node-reference\.js\?v=[\w-]+', 'node-reference.js?v=20261012-reference-sync-1', html)
+    html = re.sub(r'node-reference\.js\?v=[\w-]+', 'node-reference.js?v=20261012-collapsed-map-1', html)
     html = re.sub(r'(node-(?:city|ui|listing|launch)\.css)\?v=[\w-]+', r'\1?v=20261012-reference-sync-1', html)
     if 'node-modal.js?' not in html:
         html = html.replace('</body>', '<script src="node-modal.js?v=20261012-request-modal-1"></script></body>', 1)
@@ -267,7 +267,7 @@ def inject_node_reference(html: str) -> str:
     )
     styles += '<link rel="stylesheet" href="../shared/owner-header.css?v=20261012-owner-header-5">'
     html = html.replace('</head>', styles + '</head>', 1)
-    return html.replace('</body>', '<script src="node-reference.js?v=20261012-reference-sync-1"></script></body>', 1)
+    return html.replace('</body>', '<script src="node-reference.js?v=20261012-collapsed-map-1"></script></body>', 1)
 
 
 def city_entry() -> str:

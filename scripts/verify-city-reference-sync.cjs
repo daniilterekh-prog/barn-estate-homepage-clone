@@ -14,6 +14,7 @@ const base = process.argv[2] || 'http://127.0.0.1:4186';
       await page.waitForFunction(()=>!!document.querySelector('.site-footer a[href*="for-partners"]'));
       await page.evaluate(()=>document.fonts.ready);
       assert.equal(await page.locator('.catalog-mode-filters button').count(),4);
+      assert.equal(await page.locator('.city-map-filters').count(),0);
       assert.equal(await page.locator('[data-brand-context=listing] input').count(),2);
       assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false);
       const widths=await page.locator('.catalog-mode-filters button').evaluateAll(es=>es.map(e=>e.getBoundingClientRect().width));
