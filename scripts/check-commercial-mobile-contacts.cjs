@@ -7,6 +7,7 @@ const {chromium} = require(path.join(process.env.WEB_CAPTURE_TOOLKIT || '/home/d
     const page = await browser.newPage({reducedMotion:'reduce'});
     const errors = []; page.on('pageerror', e => errors.push(e.message));
     await page.goto('file://' + path.resolve(__dirname, '../kommercheskaya-nedvizhimost/index.html'));
+    await page.waitForFunction(()=>document.body.dataset.commercialReferenceReady==='true');
     const toggle = page.locator('.catalog-sticky__contact-toggle');
     const panel = page.locator('#commercial-sticky-contacts');
     for (const width of [320,390,540,768,900]) {
@@ -28,6 +29,7 @@ const {chromium} = require(path.join(process.env.WEB_CAPTURE_TOOLKIT || '/home/d
       const bounds = await panel.boundingBox();
       assert.ok(bounds.x >= 0 && bounds.x + bounds.width <= width, 'Panel stays on screen');
       await page.keyboard.press('Tab');
+      if (width <= 540) await page.keyboard.press('Tab'); // The new reference callback sits beside contacts.
       assert.equal(await panel.locator('a:first-child').evaluate(link => link === document.activeElement), true);
       await page.keyboard.press('Escape');
       assert.equal(await panel.isVisible(), false);

@@ -1,0 +1,46 @@
+const assert=require('node:assert/strict'),path=require('node:path');
+const {chromium}=require('/home/daniil/Documents/Codex/2026-10-11/firecrawl/work/web-capture-toolkit/node_modules/playwright');
+(async()=>{const browser=await chromium.launch({executablePath:'/usr/bin/google-chrome',args:['--no-sandbox']});try{
+ const page=await browser.newPage({reducedMotion:'reduce'}),errors=[];page.on('pageerror',e=>errors.push(e.message));
+ await page.goto('file://'+path.resolve(__dirname,'../kommercheskaya-nedvizhimost/index.html'));
+ await page.waitForFunction(()=>document.body.dataset.commercialReferenceReady==='true');
+ await page.locator('.floating-expert__close').click();
+ assert.equal(await page.locator('[data-listing-mode],[data-map-market]').count(),0,'No residential markets');
+ assert.equal(await page.locator('.catalog-grid__item').count(),12);
+ const popup=page.locator('.resort-quick-dropdown'),modal=page.locator('.resort-filters'),map=page.locator('.map-browser');
+ for(const width of [320,390,540,768,1440,1920,2560]){
+  console.log('Checking reference sync',width);
+  await page.setViewportSize({width,height:900});
+  const buttons=page.locator('.catalog-mode-filters .catalog-quick-filters__button');
+  await buttons.first().click();await popup.waitFor({state:'visible'});
+  assert.equal(await popup.evaluate(e=>getComputedStyle(e).backgroundColor),'rgb(255, 255, 255)');
+  const option=popup.getByRole('option',{name:'Офис',exact:true});await option.click();
+  assert.deepEqual(await page.evaluate(()=>BarnesFilters.getState().propertyTypes),['ofice']);
+  await buttons.nth(2).click();await popup.locator('[name=areaMin]').fill('100');await popup.locator('[name=areaMax]').fill('500');await popup.getByRole('button',{name:'Применить',exact:true}).click();
+  await page.locator('.catalog-mode-detailed-filters').click();await modal.waitFor({state:'visible'});
+  assert.equal(await modal.locator('[name=areaMax]').inputValue(),'500');
+  assert.equal(await modal.locator('[value=ofice]').isChecked(),true);
+  await modal.locator('[name=areaMax]').fill('700');await page.keyboard.press('Escape');
+  assert.equal(await page.evaluate(()=>BarnesFilters.getState().areaMax),'500','Cancel draft');
+  await page.locator('.catalog-mode-toolbar .resort-sort-trigger').click();assert.equal(await popup.isVisible(),true,`Sort popup at ${width}`);await popup.getByRole('option',{name:'Цена больше',exact:true}).click();
+  assert.equal(await page.locator('select.catalog-grid__sort-select').inputValue(),'price_desc');
+  await page.locator('[data-brand-context=listing] label').first().click();
+  await page.locator('.catalog-projects-map__fullscreen').click();await map.waitFor({state:'visible'});
+  if(width<=540)await map.locator('.map-browser__handle').click();
+  assert.equal(await map.locator('[data-filter=type]').inputValue(),'ofice');
+  assert.equal(await map.locator('[data-filter=area]').inputValue(),'500');
+  assert.equal(await map.locator('[data-brand-context=map] input').first().isChecked(),true);
+  await map.locator('.resort-sort-trigger').click();await page.keyboard.press('End');await page.keyboard.press('Enter');
+  assert.equal(await map.locator('[data-filter=sort]').inputValue(),'desc');
+  await map.locator('.map-browser__filter-toggle').click();await modal.waitFor({state:'visible'});
+  assert.equal(await modal.evaluate(e=>e.classList.contains('hero-filter-modal--drawer')),true);
+  assert.equal(await modal.locator('.hero-filter-modal__dialog').evaluate(e=>getComputedStyle(e).backgroundColor),'rgb(255, 255, 255)');
+  await page.keyboard.press('Escape');assert.equal(await map.isVisible(),true);
+  await map.locator('.map-browser__reset').click();assert.deepEqual(await page.evaluate(()=>BarnesFilters.getState().brandFlags),[]);
+  await page.keyboard.press('Escape');assert.equal(await map.isVisible(),false);
+  assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),true,`No page overflow ${width}`);
+ }
+ await page.setViewportSize({width:390,height:900});await page.evaluate(()=>scrollTo(0,document.querySelector('.catalog-hero').offsetHeight+80));await page.waitForTimeout(250);
+ await page.locator('.commercial-mobile-request').click();await page.getByRole('dialog',{name:'Поможем найти подходящий объект'}).waitFor({state:'visible'});await page.keyboard.press('Escape');
+ assert.deepEqual(errors,[]);console.log('PASS: reference sync at 7 widths; commercial dropdowns/ranges/sort, shared draft/state/reset/brands, white map drawer, mobile request, original 12 lots, no residential market/overflow/errors.');
+}finally{await browser.close();}})().catch(e=>{console.error(e);process.exitCode=1});

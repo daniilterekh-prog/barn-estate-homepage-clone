@@ -160,6 +160,7 @@
       button.setAttribute('aria-label', caption);
       button.setAttribute('aria-haspopup', 'dialog');
       button.addEventListener('click', () => {
+        if (window.BarnesFilters) return;
         openDialog('filters', button);
         if (index) {
           const input = all('.hero-filter-panel-content__range-input', dialog)[index === 1 ? 0 : 2];
@@ -215,6 +216,7 @@
   }
 
   function openDialog(kind, trigger) {
+    if (kind === 'filters' && window.BarnesFilters) { closeContacts(); window.BarnesFilters.open(trigger); return; }
     closeContacts();
     closeDialog(); returnFocus = trigger || document.activeElement;
     const template = document.getElementById(`source-${kind}`);
@@ -251,6 +253,7 @@
   menuButton?.addEventListener('click', () => dialog?.classList.contains('site-menu') ? closeDialog() : openDialog('menu', menuButton));
   filterTriggers.forEach(button => button.addEventListener('click', event => openDialog('filters', event.currentTarget)));
   window.CommercialOpenFilters = trigger => openDialog('filters', trigger);
+  window.CommercialOpenCallback = trigger => openDialog('callback', trigger);
   all('.apartment-card__call-btn,.site-footer__callback-btn,.catalog-contact__card-submit,.floating-expert__card').forEach(e => e.addEventListener('click', () => openDialog('callback', e)));
   one('.floating-expert__close')?.addEventListener('click', () => one('.floating-expert')?.remove());
 
@@ -380,10 +383,7 @@
   const selectionScript = document.createElement('script');
   selectionScript.src = 'selection-carousel.js';
   document.body.append(selectionScript);
-  const mapStyles=document.createElement('link');mapStyles.rel='stylesheet';mapStyles.href='open-map-layout.css';document.head.append(mapStyles);
-  const mapTemplateScript=document.createElement('script');mapTemplateScript.src='open-map-template.js';
-  mapTemplateScript.onload=()=>{const runtime=document.createElement('script');runtime.src='open-map.js';document.body.append(runtime);};
-  document.body.append(mapTemplateScript);
+  const nodeSync=document.createElement('script');nodeSync.src='reference-sync.js';document.body.append(nodeSync);
 
   const slider = one('.news-section .splide__list');
   const slides = slider ? all('.splide__slide', slider) : [];

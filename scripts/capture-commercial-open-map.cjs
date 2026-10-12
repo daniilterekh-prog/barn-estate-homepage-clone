@@ -3,16 +3,17 @@ const path=require('node:path');
 const {chromium}=require('/home/daniil/Documents/Codex/2026-10-11/firecrawl/work/web-capture-toolkit/node_modules/playwright');
 (async()=>{
  const root=path.resolve(__dirname,'../kommercheskaya-nedvizhimost');
+ const clean=process.argv.includes('--clean-background');
  const browser=await chromium.launch({executablePath:'/usr/bin/google-chrome',args:['--no-sandbox']});
  try{
   const captures=[];
-  for(const width of [320,390,540,768,1440,1920]){
+  for(const width of clean?[1440]:[320,390,540,768,1440,1920]){
    const page=await browser.newPage({viewport:{width,height:900},reducedMotion:'reduce'});
    await page.goto('https://front.barnes.vsavr.ru/kommercheskaya-nedvizhimost/',{waitUntil:'load'});
    await page.locator('.catalog-projects-map__fullscreen').click();
    await page.waitForTimeout(1400);
    await page.evaluate(()=>document.fonts.ready);
-   if(width===1440){
+   if(width===1440&&!clean){
     const data=await page.locator('.catalog-projects-map').evaluate(map=>{
      const clone=map.cloneNode(true);clone.querySelector('.catalog-projects-map__canvas').innerHTML='<img class="commercial-open-map-image" alt="Карта Москвы — статичный снимок Яндекс Карт">';
      clone.classList.add('commercial-map-open');
@@ -27,10 +28,11 @@ const {chromium}=require('/home/daniil/Documents/Codex/2026-10-11/firecrawl/work
     await fs.writeFile(path.join(root,'open-map-source.css'),data.css+'\n');
    }
    await page.addStyleTag({content:'.catalog-projects-map__panel,.catalog-projects-map__exit,.catalog-projects-map__controls{visibility:hidden!important}'});
+   if(clean)await page.addStyleTag({content:'.ymaps3--controls{visibility:hidden!important}'});
    const file=`assets/open-map-${width}.png`;
    await page.locator('.catalog-projects-map__canvas').screenshot({path:path.join(root,file)});
    captures.push({width,height:900,file});await page.close();
   }
-  await fs.writeFile(path.join(root,'open-map-capture.json'),JSON.stringify({source:'https://front.barnes.vsavr.ru/kommercheskaya-nedvizhimost/',capturedAt:new Date().toISOString(),status:'Static source map at initial fullscreen state, 0 matches; no API keys or invented listings',captures},null,2)+'\n');
+  if(!clean)await fs.writeFile(path.join(root,'open-map-capture.json'),JSON.stringify({source:'https://front.barnes.vsavr.ru/kommercheskaya-nedvizhimost/',capturedAt:new Date().toISOString(),status:'Static source map at initial fullscreen state, 0 matches; no API keys or invented listings',captures},null,2)+'\n');
  }finally{await browser.close();}
 })().catch(e=>{console.error(e);process.exitCode=1});

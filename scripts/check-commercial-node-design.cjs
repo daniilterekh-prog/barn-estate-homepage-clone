@@ -10,6 +10,7 @@ const {chromium}=require(path.join(toolkit,'node_modules/playwright'));
     const page=await browser.newPage({viewport:{width:1440,height:900}});
     const errors=[];page.on('pageerror',e=>errors.push(e.message));
     await page.goto('file://'+path.resolve(__dirname,'../kommercheskaya-nedvizhimost/index.html'));
+    await page.waitForFunction(()=>document.body.dataset.commercialReferenceReady==='true');
     await page.evaluate(async()=>{
       await document.fonts.ready;
       document.querySelectorAll('img').forEach(image=>image.loading='eager');
@@ -19,7 +20,7 @@ const {chromium}=require(path.join(toolkit,'node_modules/playwright'));
     assert.equal(await page.locator('[data-listing-mode],.catalog-mode-switch').count(),0,'No new-build/secondary switch in commerce');
     assert.equal(await page.locator('.apartment-card--catalog').count(),12,'Keep all real commercial lots');
     assert.equal(await page.locator('.listing-card-price-row>.apartment-card__lotid').count(),12,'Lot IDs belong next to their prices');
-    assert.equal(await page.locator('.catalog-mode-filters .catalog-quick-filters__caption').first().textContent(),'Тип недвижимости');
+    assert.equal(await page.locator('.catalog-mode-filters .catalog-quick-filters__caption').first().textContent(),'Тип');
     const results=[];
     for(const width of [320,390,540,541,768,1024,1280,1440,1441,1920,2560]){
       await page.setViewportSize({width,height:900});
@@ -44,7 +45,7 @@ const {chromium}=require(path.join(toolkit,'node_modules/playwright'));
     }
     await page.setViewportSize({width:1440,height:900});
     await page.locator('.catalog-mode-filters .catalog-quick-filters__button').first().click();
-    await page.getByRole('dialog',{name:'Фильтры',exact:true}).waitFor({state:'visible'});
+    await page.getByRole('dialog',{name:'Тип',exact:true}).waitFor({state:'visible'});
     await page.keyboard.press('Escape');
     assert.deepEqual(errors,[]);
     await fs.writeFile(path.resolve(__dirname,'../kommercheskaya-nedvizhimost/node-design-verification.json'),JSON.stringify({reference:'https://daniilterekh-prog.github.io/barn-estate-homepage-clone/kurortnaya/',verifiedAt:new Date().toISOString(),scope:'Commercial adaptation: existing lots and blocks; no new-build/secondary toggle or invented launches/projects',results,errors},null,2)+'\n');
