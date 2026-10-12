@@ -55,6 +55,8 @@
     if (restoreFocus) contactToggle.focus({preventScroll:true});
   }
   one('.catalog-hero-filters__search-input')?.setAttribute('aria-label', 'Поиск по ID, названию ЖК, адресу');
+  const heroSubmit = one('.catalog-hero-filters__submit');
+  if (heroSubmit) heroSubmit.textContent = 'Найти';
   one('.catalog-projects-map__search-input')?.setAttribute('aria-label', 'Поиск в видимой области карты');
   const heroFilter = one('.catalog-hero-filters__filter-icon');
   if (heroFilter) {
