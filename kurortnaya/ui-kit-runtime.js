@@ -7,6 +7,11 @@
     filtersScript.onload = function () {
       var quickScript = document.createElement('script');
       quickScript.src = 'quick-filters.js?v=3';
+      quickScript.onload = function () {
+        var brandsScript = document.createElement('script');
+        brandsScript.src = 'brand-filters.js?v=1';
+        document.body.appendChild(brandsScript);
+      };
       document.body.appendChild(quickScript);
     };
     document.body.appendChild(filtersScript);
@@ -16,7 +21,7 @@
   mapDataScript.src = 'map-projects.js?v=1';
   mapDataScript.onload = function () {
     var mapScript = document.createElement('script');
-    mapScript.src = 'map-fullscreen.js?v=5';
+    mapScript.src = 'map-fullscreen.js?v=6';
     document.body.appendChild(mapScript);
   };
   document.body.appendChild(mapDataScript);
