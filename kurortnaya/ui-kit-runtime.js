@@ -9,7 +9,7 @@
       quickScript.src = 'quick-filters.js?v=3';
       quickScript.onload = function () {
         var brandsScript = document.createElement('script');
-        brandsScript.src = 'brand-filters.js?v=10';
+        brandsScript.src = 'brand-filters.js?v=11';
         document.body.appendChild(brandsScript);
       };
       document.body.appendChild(quickScript);
@@ -34,7 +34,7 @@
   if (!document.querySelector('link[data-kurortnaya-ui-kit]')) {
     var stylesheet = document.createElement('link');
     stylesheet.rel = 'stylesheet';
-    stylesheet.href = 'ui-kit.css?v=20261012-required-market-1';
+    stylesheet.href = 'ui-kit.css?v=20261012-map-row-spacing-1';
     stylesheet.dataset.kurortnayaUiKit = 'true';
     document.head.appendChild(stylesheet);
   }
@@ -531,7 +531,7 @@
 
   if (!document.querySelector('script[data-kurortnaya-listing-mode]')) {
     var listingScript = document.createElement('script');
-    listingScript.src = 'listing-mode.js?v=20261012-required-market-1';
+    listingScript.src = 'listing-mode.js?v=20261012-map-row-spacing-1';
     listingScript.dataset.kurortnayaListingMode = 'true';
     document.body.appendChild(listingScript);
   }

@@ -3,7 +3,7 @@ const assert = require('node:assert/strict');
 (async () => {
   const browser = await chromium.launch({ executablePath: '/usr/bin/google-chrome', headless: true });
   try {
-    for (const width of [390, 1440, 2560]) {
+    for (const width of [320, 390, 540, 1440, 2560]) {
       const page = await browser.newPage({ viewport: { width, height: 1000 } });
       await page.goto('http://127.0.0.1:8769/kurortnaya/');
       await page.waitForSelector('[data-brand-context=listing]');
@@ -32,7 +32,7 @@ const assert = require('node:assert/strict');
       await page.locator('.hero-filter-modal__apply').click();
       assert.equal(await page.evaluate(() => BarnesFilters.getState().market), 'secondary');
       assert.deepEqual(await cards.allTextContents(), ['Resale fixture']);
-      if (width > 540) {
+      {
         for (let i = 0; i < 2; i++) {
           const box = await page.locator('[data-brand-context=map] .barnes-brand-filters__box').nth(i).boundingBox();
           const svg = await page.locator('.map-browser__field > svg').nth(i).boundingBox();
@@ -40,7 +40,12 @@ const assert = require('node:assert/strict');
         }
         const brands = await page.locator('[data-brand-context=map]').boundingBox();
         const sort = await page.locator('.map-browser__extra').boundingBox();
-        assert.ok(brands.y + brands.height <= sort.y, 'Checkbox row precedes sorting');
+        assert.ok(brands.y + brands.height <= sort.y, 'Checkbox row precedes sorting on desktop and mobile');
+        const fields = await page.locator('.map-browser__field:has(> svg)').evaluateAll(els => els.map(el => el.getBoundingClientRect().toJSON()));
+        const label = await page.locator('[data-brand-context=map] label').first().boundingBox();
+        const center = r => r.y + r.height / 2;
+        const stepAbove = center(fields[2]) - center(fields[0]);
+        assert.ok(Math.abs(center(sort) - center(label) - stepAbove) < 1, 'Checkbox/sort row spacing equals quick-filter row spacing');
         await page.locator('.map-browser__panel').screenshot({ path: `/tmp/map-required-market-${width}.png` });
       }
       await page.locator('.map-browser__close').click();
