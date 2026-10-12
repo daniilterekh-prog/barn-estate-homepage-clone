@@ -3,11 +3,13 @@ const assert = require('node:assert/strict')
 const fs = require('node:fs')
 const path = require('node:path')
 const read = f => fs.readFileSync(path.join(__dirname,f),'utf8')
-test('passport has one anchor, six rows, both ceilings and the original CTA class',()=>{
+test('passport has one anchor, seven approved fields and the original CTA class',()=>{
   const html=read('index.html'), section=html.match(/<section[^>]*id="characteristics"[\s\S]*?<\/section>/)[0]
   assert.equal((html.match(/id="characteristics"/g)||[]).length,1)
-  assert.equal((section.match(/class="vp-row"/g)||[]).length,6)
-  for(const value of ['3,15 м','3,95 м','Типовые этажи','Верхние этажи','detail-characteristics__cta vp-cta','aria-labelledby="vavilova-passport-title"','vavilova-lobby.webp','→']) assert.ok(section.includes(value))
+  assert.equal((section.match(/class="vp-row"/g)||[]).length,7)
+  assert.deepEqual([...section.matchAll(/<dt class="vp-label">([^<]+)<\/dt>/g)].map(m=>m[1]),['Район','Класс','Площадь','Срок сдачи','Этажность','Цена от','Застройщик'])
+  for(const value of ['Гагаринский','29–120 м²','По запросу','Сити21','detail-characteristics__cta vp-cta','aria-labelledby="vavilova-passport-title"','vavilova-lobby.webp','→']) assert.ok(section.includes(value))
+  assert.ok(!section.includes('Потолки'))
   assert.ok(!section.includes('detail-characteristics__grid'))
   assert.ok(!html.includes('preview.css'))
 })
