@@ -23,7 +23,7 @@ PAGE = ROOT / "city-real-estate.html"
 ROUTE_PAGE = ROOT / "gorodskaya-nedvizhimost" / "index.html"
 ASSET_DIR = ROOT / "assets" / "city-real-estate" / "source-assets"
 NUXT_DIR = ROOT / "gorodskaya-nedvizhimost" / "_nuxt"
-LOCAL_NUXT_PREFIX = "/gorodskaya-nedvizhimost/_nuxt/"
+LOCAL_NUXT_PREFIX = "./_nuxt/"
 
 
 def request(url: str, referer: str | None = None) -> bytes:
@@ -68,7 +68,7 @@ def download_url_map(urls: list[str], index_start: int = 1) -> dict[str, str]:
         try:
             if not output_path.exists():
                 output_path.write_bytes(request(source_url))
-            replacements[raw_url] = "/" + output_path.relative_to(ROOT).as_posix()
+            replacements[raw_url] = "../" + output_path.relative_to(ROOT).as_posix()
         except Exception as error:  # Keep the original URL if the source CDN rejects it.
             print(f"asset kept remote: {source_url} ({error})")
     return replacements
@@ -204,7 +204,7 @@ def inject_image_bridge(html: str, replacements: dict[str, str]) -> str:
     mapping: dict[str, str] = {}
     for source, local in replacements.items():
         absolute = absolute_url(source)
-        local_url = "/" + local.lstrip("/")
+        local_url = local
         mapping[source] = local_url
         mapping[absolute] = local_url
     payload = json.dumps(mapping, ensure_ascii=False, separators=(",", ":"))
@@ -258,7 +258,7 @@ def sync(source_path: Path | None = None) -> None:
         try:
             css = request(stylesheet.group(1)).decode("utf-8")
             css = localize_css_assets(css, len(re.findall(r"assets/city-real-estate/source-assets/", html)) + 1)
-            css = re.sub(r"url\((['\"]?)/fonts/", r"url(\1/fonts/", css)
+            css = re.sub(r"url\((['\"]?)/fonts/", r"url(\1../fonts/", css)
             html = html.replace(stylesheet.group(0), f"<style data-source-external>{css}</style>")
         except Exception as error:
             print(f"external stylesheet kept remote: {error}")
@@ -270,7 +270,20 @@ def sync(source_path: Path | None = None) -> None:
 
     html = localize_nuxt_runtime(html)
 
-    html = html.replace("<head>", '<head><base href="/gorodskaya-nedvizhimost/">', 1)
+    file_base_script = '''<script data-city-file-base>
+(() => {
+  if (location.protocol !== "file:") return;
+  const base = document.querySelector("base");
+  if (!base) return;
+  base.href = location.pathname.includes("/gorodskaya-nedvizhimost/")
+    ? "./"
+    : "gorodskaya-nedvizhimost/";
+})();
+</script>'''
+    html = html.replace("<head>", '<head><base href="/gorodskaya-nedvizhimost/">' + file_base_script, 1)
+    html = html.replace('"/fonts/', '"../fonts/').replace("'/fonts/", "'../fonts/")
+    html = html.replace("url(/fonts/", "url(../fonts/")
+    html = html.replace("url('/fonts/", "url('../fonts/").replace('url("/fonts/', 'url("../fonts/')
     interactive_html = "<!-- Source snapshot: " + SOURCE_URL + " -->\n" + html
     static_html = re.sub(r"<script\b[^>]*\bsrc=\"[^\"]+\"[^>]*>.*?</script>", "", interactive_html, flags=re.S)
     static_html = re.sub(r"[ \t]+(?=\n|$)", "", static_html)
