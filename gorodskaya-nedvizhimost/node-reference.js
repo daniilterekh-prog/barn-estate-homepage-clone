@@ -45,6 +45,8 @@
   function initialize() {
     const list=q('.catalog-grid__list'),header=q('.catalog-grid__header');if(!list || !header || q('.city-node-ready'))return;
     document.body.classList.add('city-node-ready','barnes-header-template');
+    const consultationImage=q('.catalog-consultation__image');
+    if(consultationImage) consultationImage.src=new URL('assets/cta-ruslan-unified-v1.webp',document.baseURI).href;
     [['.catalog-best-offers__title','Новые проекты'],['.catalog-map__title','География'],['.catalog-grid__title','Каталог'],['.departments-section__title','Направления'],['.catalog-faq__title','Экспертиза BARNES']].forEach(([s,t])=>eyebrow(s,t));
     q('.catalog-grid__title').textContent='Актуальные проекты и лоты';
     all('.catalog-grid .apartment-card').forEach(enhanceLot);
