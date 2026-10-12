@@ -3,7 +3,7 @@
   filtersTemplate.src = 'filters-template.js?v=1';
   filtersTemplate.onload = function () {
     var filtersScript = document.createElement('script');
-    filtersScript.src = 'filters-modal.js?v=2';
+    filtersScript.src = 'filters-modal.js?v=3';
     filtersScript.onload = function () {
       var quickScript = document.createElement('script');
       quickScript.src = 'quick-filters.js?v=3';
