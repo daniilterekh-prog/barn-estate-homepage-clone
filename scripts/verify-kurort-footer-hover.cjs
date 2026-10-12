@@ -23,7 +23,7 @@ const properties = ['fontSize', 'fontWeight', 'lineHeight', 'color', 'background
       assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), 'No horizontal overflow');
       if ([390, 1440, 2560].includes(width)) await page.locator('.site-footer').screenshot({ path: `/tmp/kurort-owner-footer-${width}.png` });
       const audit = await page.evaluate(() => {
-        const gold = 'rgb(231, 200, 143)', probe = document.createElement('span'); document.body.append(probe);
+        const probe = document.createElement('span'); document.body.append(probe);
         const failures = [], warm = []; let hoverRules = 0;
         function walk(rules) { for (const r of rules) {
           if (r.cssRules) walk(r.cssRules);
@@ -39,14 +39,14 @@ const properties = ['fontSize', 'fontWeight', 'lineHeight', 'color', 'background
             const [red, green, blue] = nums;
             if (red > 140 && green > 100 && blue < Math.min(red, green) * .8 && red >= green) {
               warm.push({ selector: r.selectorText, prop, value: c });
-              if (c !== gold) failures.push({ selector: r.selectorText, prop, value: c });
+              failures.push({ selector: r.selectorText, prop, value: c });
             }
           }
         }}
         for (const s of document.styleSheets) { try { walk(s.cssRules); } catch {} }
         probe.remove(); return { hoverRules, warm, failures };
       });
-      assert.deepEqual(audit.failures, [], `${width}: no yellow hover rules; only kit gold allowed`);
+      assert.deepEqual(audit.failures, [], `${width}: no yellow or gold hover rules allowed`);
       await page.locator('.site-footer__link').first().hover();
       await page.waitForTimeout(350);
       await page.locator('.site-footer__link').first().hover();
@@ -55,7 +55,7 @@ const properties = ['fontSize', 'fontWeight', 'lineHeight', 'color', 'background
       await page.locator('.site-footer__callback-btn').evaluate(el => el.scrollIntoView({ block: 'center' }));
       await page.locator('.site-footer__callback-btn').click({ position: { x: 12, y: 20 } });
       await page.locator('.catalog-feedback-modal').waitFor({ state: 'visible' });
-      console.log(`PASS ${width}: footer matches reference, callback opens, ${audit.hoverRules} matching hover rules audited; gold rules ${audit.warm.length}`);
+      console.log(`PASS ${width}: footer matches reference, callback opens, ${audit.hoverRules} matching hover rules audited; yellow/gold rules ${audit.warm.length}`);
       await page.close(); await ref.close();
     }
   } finally { await browser.close(); }

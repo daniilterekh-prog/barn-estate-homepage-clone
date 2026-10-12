@@ -84,7 +84,7 @@ body {
 }
 
 .card-lab__switch-button:focus-visible {
-  outline: 2px solid #e7c88f;
+  outline: 2px solid #8b1d25;
   outline-offset: 2px;
 }
 

@@ -175,7 +175,7 @@ Responsive typography is mostly systematic through `clamp()` and explicit `540/6
 | Secondary text | `#262626` | card/body copy, dark surfaces |
 | Brand burgundy | `#8b1d25` | active, primary buttons, labels |
 | Brand hover | `#801b22` | hero submit hover |
-| Warm accent | `#e7c88f` | desktop link hover |
+| Interaction accent | `#8b1d25` | desktop link hover |
 | White | `#fff` | surfaces, light text |
 | Soft surface | `#f7f7f7` | secondary button hover, controls |
 | Image surface | `#f1f1f1` | image placeholders |
@@ -217,7 +217,7 @@ Touch audit выявил элементы меньше 44×44 px: mobile menu vi
 
 ## Links
 
-В DOM проверено 137 `<a>`; пустых `href` не обнаружено. Основные link states используют `transition`, underline для read-more/privacy/FAQ content и burgundy/gold hover в desktop. Small text links в footer имеют computed height около 12 px на mobile и требуют сохранения увеличенной clickable area через родительский item.
+В DOM проверено 137 `<a>`; пустых `href` не обнаружено. Основные link states используют `transition`, underline для read-more/privacy/FAQ content и burgundy hover в desktop. Small text links в footer имеют computed height около 12 px на mobile и требуют сохранения увеличенной clickable area через родительский item.
 
 ## Cards and Images
 
