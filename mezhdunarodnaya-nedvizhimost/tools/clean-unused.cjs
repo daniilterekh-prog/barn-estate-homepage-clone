@@ -15,6 +15,6 @@ const candidates=[...unused,...obsolete].map(file=>({file:path.relative(root,fil
 if(process.argv.includes('--apply')){
  for(const entry of candidates){const target=path.resolve(root,entry.file);if(!target.startsWith(root+path.sep))throw Error('Invalid cleanup target');fs.unlinkSync(target);}
  for(const name of ['latest','audit']){const dir=path.join(root,name);if(fs.existsSync(dir)&&!fs.readdirSync(dir).length)fs.rmdirSync(dir);}
- fs.writeFileSync(path.join(root,'verification/cleanup.json'),JSON.stringify({removed:candidates,bytesRemoved:candidates.reduce((sum,e)=>sum+e.bytes,0),recovery:'Git history before this packaging commit'},null,2)+'\n');
+ if(candidates.length)fs.writeFileSync(path.join(root,'verification/cleanup.json'),JSON.stringify({removed:candidates,bytesRemoved:candidates.reduce((sum,e)=>sum+e.bytes,0),recovery:'Git history before this packaging commit'},null,2)+'\n');
 }
 console.log(JSON.stringify({mode:process.argv.includes('--apply')?'applied':'dry-run',count:candidates.length,bytes:candidates.reduce((sum,e)=>sum+e.bytes,0),files:candidates.map(e=>e.file)},null,2));
