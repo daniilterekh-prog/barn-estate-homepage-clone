@@ -14,6 +14,12 @@ const assert = require('node:assert/strict');
       await buttons.nth(0).click();
       const dropdown = page.locator('.resort-quick-dropdown');
       await dropdown.waitFor({state:'visible',timeout:5000});
+      const type=await dropdown.getByRole('option',{name:'Сочи',exact:true}).evaluate(el=>{
+        const css=getComputedStyle(el);return {family:css.fontFamily,size:css.fontSize,weight:css.fontWeight};
+      });
+      assert.ok(type.family.includes('Tilda Sans'),'Dropdown uses BARNES font');
+      assert.equal(type.size,width>1440?'19px':'17px');
+      assert.equal(type.weight,'300');
       await dropdown.getByRole('option',{name:'Сочи',exact:true}).click();
       await dropdown.waitFor({state:'hidden'});
       assert.ok((await buttons.nth(0).textContent()).includes('Сочи'));

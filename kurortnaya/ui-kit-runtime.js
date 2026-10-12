@@ -6,7 +6,7 @@
     filtersScript.src = 'filters-modal.js?v=2';
     filtersScript.onload = function () {
       var quickScript = document.createElement('script');
-      quickScript.src = 'quick-filters.js?v=2';
+      quickScript.src = 'quick-filters.js?v=3';
       document.body.appendChild(quickScript);
     };
     document.body.appendChild(filtersScript);
