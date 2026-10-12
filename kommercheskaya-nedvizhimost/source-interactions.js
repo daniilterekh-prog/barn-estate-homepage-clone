@@ -210,6 +210,7 @@
     menuButton?.setAttribute('aria-expanded', 'false');
     if (menuButton && originalMenuIcon) menuButton.innerHTML = originalMenuIcon;
     filterTriggers.forEach(button => button.setAttribute('aria-expanded', 'false'));
+    if (returnFocus?.hasAttribute('aria-expanded')) returnFocus.setAttribute('aria-expanded', 'false');
     returnFocus?.focus({ preventScroll: true });
   }
 
@@ -237,7 +238,7 @@
 
   document.addEventListener('keydown', event => {
     if (event.key === 'Escape') {
-      if (dialog) closeDialog();
+      if (dialog) { event.stopImmediatePropagation(); closeDialog(); }
       else closeContacts(true);
     }
     if (event.key !== 'Tab' || !dialog) return;
@@ -249,6 +250,7 @@
   });
   menuButton?.addEventListener('click', () => dialog?.classList.contains('site-menu') ? closeDialog() : openDialog('menu', menuButton));
   filterTriggers.forEach(button => button.addEventListener('click', event => openDialog('filters', event.currentTarget)));
+  window.CommercialOpenFilters = trigger => openDialog('filters', trigger);
   all('.apartment-card__call-btn,.site-footer__callback-btn,.catalog-contact__card-submit,.floating-expert__card').forEach(e => e.addEventListener('click', () => openDialog('callback', e)));
   one('.floating-expert__close')?.addEventListener('click', () => one('.floating-expert')?.remove());
 
@@ -378,6 +380,10 @@
   const selectionScript = document.createElement('script');
   selectionScript.src = 'selection-carousel.js';
   document.body.append(selectionScript);
+  const mapStyles=document.createElement('link');mapStyles.rel='stylesheet';mapStyles.href='open-map-layout.css';document.head.append(mapStyles);
+  const mapTemplateScript=document.createElement('script');mapTemplateScript.src='open-map-template.js';
+  mapTemplateScript.onload=()=>{const runtime=document.createElement('script');runtime.src='open-map.js';document.body.append(runtime);};
+  document.body.append(mapTemplateScript);
 
   const slider = one('.news-section .splide__list');
   const slides = slider ? all('.splide__slide', slider) : [];
