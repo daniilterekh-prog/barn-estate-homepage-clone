@@ -76,7 +76,7 @@
     });
     const toolbar=document.createElement('section');toolbar.className='catalog-mode-toolbar';toolbar.setAttribute('aria-label','Фильтры каталога');
     toolbar.innerHTML='<div class="catalog-mode-switch" role="group" aria-label="Тип недвижимости"><button class="catalog-mode-switch__button is-active" type="button" data-mode="project" aria-pressed="true">Новостройки</button><button class="catalog-mode-switch__button" type="button" data-mode="lot" aria-pressed="false">Вторичная</button></div><div class="catalog-mode-filters catalog-quick-filters" data-v-6fd45cc6></div>';
-    [['location','Локация'],['type','Тип'],['price','Стоимость'],['bedrooms','Спальни']].forEach(([key,label])=>{
+    [['location','Район'],['type','Тип'],['price','Стоимость'],['bedrooms','Спальни']].forEach(([key,label])=>{
       const item=document.createElement('div');item.className='catalog-quick-filters__item';item.setAttribute('data-v-6fd45cc6','');item.innerHTML=`<button class="catalog-quick-filters__button" type="button" data-v-6fd45cc6 aria-haspopup="dialog" aria-expanded="false"><span class="catalog-quick-filters__content"><span class="catalog-quick-filters__icon">${svg(key)}</span><span class="catalog-quick-filters__label" data-v-6fd45cc6><span class="catalog-quick-filters__caption">${label}</span></span></span><span class="catalog-quick-filters__chevron" data-v-6fd45cc6 aria-hidden="true"></span></button>`;
       q('.catalog-mode-filters',toolbar).append(item);
     });
@@ -110,7 +110,7 @@
   }
   async function setupSharedFilters() {
     for(const file of ['filters-template.js','filters-modal.js','quick-filters.js','brand-filters.js','city-reference-extras.js']) {
-      await new Promise((resolve,reject)=>{const script=document.createElement('script');script.src=new URL(file+'?v=20261012-reference-sync-1',document.baseURI);script.onload=resolve;script.onerror=reject;document.body.append(script)});
+      await new Promise((resolve,reject)=>{const script=document.createElement('script');script.src=new URL(file+'?v=20261012-district-label-1',document.baseURI);script.onload=resolve;script.onerror=reject;document.body.append(script)});
     }
     document.body.classList.add('city-reference-synced');
   }
@@ -119,7 +119,7 @@
     data.src=new URL('city-map-projects.js?v=20261012-1',document.baseURI).href;
     data.onload=()=>{
       const script=document.createElement('script');
-      script.src=new URL('city-map-fullscreen.js?v=20261012-reference-sync-1',document.baseURI).href;
+      script.src=new URL('city-map-fullscreen.js?v=20261012-district-label-1',document.baseURI).href;
       document.body.append(script);
     };
     document.body.append(data);

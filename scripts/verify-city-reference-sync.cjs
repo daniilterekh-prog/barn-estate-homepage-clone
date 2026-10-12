@@ -14,6 +14,7 @@ const base = process.argv[2] || 'http://127.0.0.1:4186';
       await page.waitForFunction(()=>!!document.querySelector('.site-footer a[href*="for-partners"]'));
       await page.evaluate(()=>document.fonts.ready);
       assert.equal(await page.locator('.catalog-mode-filters button').count(),4);
+      assert.match(await page.locator('.catalog-mode-filters button').first().textContent(),/Район/);
       assert.equal(await page.locator('.city-map-filters').count(),0);
       assert.equal(await page.locator('[data-brand-context=listing] input').count(),2);
       assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false);
@@ -41,6 +42,7 @@ const base = process.argv[2] || 'http://127.0.0.1:4186';
       await page.locator('.catalog-projects-map__fullscreen:not(.city-map-filters)').click();
       if(width<=540)await page.locator('.map-browser__handle').click();
       assert.equal(await page.locator('.map-browser__card').count(),12);
+      assert.equal(await page.locator('.map-browser [data-filter=location]').getAttribute('aria-label'),'Район');
       await page.locator('[data-map-market=new-build]').click();
       assert.equal(await page.locator('.map-browser__card').count(),4);
       for(const selector of ['[data-filter=type]','.map-browser [data-filter=location]','.map-browser [data-filter=bedrooms]','.map-browser [data-filter=sort]']){

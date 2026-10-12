@@ -60,7 +60,7 @@
   toolbar.innerHTML = '<div class="catalog-mode-switch" role="group" aria-label="Тип сделки"><button class="catalog-mode-switch__button is-active" type="button" data-country-mode="project" aria-pressed="true">Покупка</button><button class="catalog-mode-switch__button" type="button" data-country-mode="lot" aria-pressed="false">Аренда</button></div><div class="catalog-mode-filters catalog-quick-filters" data-v-6fd45cc6></div>';
   const paths = {
     location: '<path d="M12 21s6-5.4 6-11a6 6 0 1 0-12 0c0 5.6 6 11 6 11Z"/><circle cx="12" cy="10" r="2.25"/>',
-    type: '<path d="M4 21V6l8-3 8 3v15M2 21h20M8 10h2m4 0h2m-8 4h2m4 0h2M10 21v-4h4v4"/>',
+    type: '<path d="M4 21V8l8-5 8 5v13M2 21h20M9 21v-6h6v6M8 9h1m6 0h1M8 12h1m6 0h1"/>',
     price: '<circle cx="12" cy="12" r="9"/><path d="M9 16V7.5h3.4a2.75 2.75 0 1 1 0 5.5H9m0 0h5.6m-5.6 2h4.6"/>',
     bedrooms: '<path d="M3 18v-7.5M21 18v-5.5a2 2 0 0 0-2-2h-7.5A2.5 2.5 0 0 0 9 13v2M3 15h18M5.5 10.5h2A1.5 1.5 0 0 1 9 12v3H4v-3a1.5 1.5 0 0 1 1.5-1.5Z"/>'
   };
@@ -73,7 +73,7 @@
   });
   const sort = q('.catalog-grid__sort'); q('select', sort).setAttribute('data-v-5a2b3b97', ''); toolbar.append(sort);
   const detailed = document.createElement('button'); detailed.className = 'catalog-mode-detailed-filters'; detailed.type = 'button'; detailed.setAttribute('aria-haspopup', 'dialog'); detailed.setAttribute('aria-expanded', 'false');
-  detailed.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.15" aria-hidden="true"><path d="M4 6h3m4 0h9M4 12h8m4 0h4M4 18h4m4 0h8"/><circle cx="9" cy="6" r="2"/><circle cx="14" cy="12" r="2"/><circle cx="10" cy="18" r="2"/></svg><span class="catalog-mode-detailed-filters__label catalog-mode-detailed-filters__label--desktop">Все фильтры</span><span class="catalog-mode-detailed-filters__label catalog-mode-detailed-filters__label--mobile">Фильтры</span>';
+  detailed.innerHTML = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M4 6h3m4 0h9M4 12h8m4 0h4M4 18h4m4 0h8" stroke="currentColor" stroke-width="1.15" stroke-linecap="round"/><circle cx="9" cy="6" r="2" stroke="currentColor" stroke-width="1.15"/><circle cx="14" cy="12" r="2" stroke="currentColor" stroke-width="1.15"/><circle cx="10" cy="18" r="2" stroke="currentColor" stroke-width="1.15"/></svg><span class="catalog-mode-detailed-filters__label catalog-mode-detailed-filters__label--desktop">Все фильтры</span><span class="catalog-mode-detailed-filters__label catalog-mode-detailed-filters__label--mobile">Фильтры</span>';
   detailed.addEventListener('click', () => document.dispatchEvent(new CustomEvent('country-filter-open', {detail: {trigger: detailed}}))); toolbar.append(detailed); header.after(toolbar);
   const empty = document.createElement('p'); empty.className = 'country-catalog-empty'; empty.setAttribute('role', 'status'); empty.textContent = 'Объектов с такими параметрами нет. Измени фильтры.'; list.after(empty);
   let mode = 'project', expanded = false;

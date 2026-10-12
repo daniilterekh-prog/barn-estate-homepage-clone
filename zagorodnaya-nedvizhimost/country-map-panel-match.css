@@ -1,4 +1,5 @@
 /* Desktop fullscreen map panel follows the Kurortnaya node's 420px rhythm. */
+html body.country-node-page .country-map-expanded .catalog-projects-map__panel-search-icon svg {color:#4f4d49;stroke-width:1.35;}
 @media (min-width:541px) {
   html body.country-node-page .country-map-expanded .catalog-projects-map__panel-title {font-size:18px;font-weight:500;line-height:1.3;}
   html body.country-node-page .country-map-expanded .catalog-projects-map__panel-search-row {grid-template-columns:minmax(0,1fr) 48px;gap:16px;margin:0 20px 16px;}

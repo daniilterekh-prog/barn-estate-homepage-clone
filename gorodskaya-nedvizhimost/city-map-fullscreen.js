@@ -32,7 +32,7 @@
     '<button class="map-browser__filter-toggle" aria-label="Подробные фильтры" aria-expanded="false">' + filtersIcon + '</button></div>' +
     '<div class="map-browser__filters"><div class="map-browser__market" role="group" aria-label="Рынок недвижимости"><button type="button" data-map-market="new-build" aria-pressed="false">Новостройки</button><button type="button" data-map-market="secondary" aria-pressed="false">Вторичка</button></div><label class="map-browser__field map-browser__field--select"><span class="map-browser__sr-only">Тип объекта</span>' + buildingIcon + '<select aria-label="Тип объекта" data-filter="type"><option value="">Тип объекта</option><option value="apartment">Апартаменты</option><option value="flat">Квартира</option><option value="penthouse">Пентхаус</option></select><span class="map-browser__chevron" aria-hidden="true"></span></label>' +
     '<label class="map-browser__field"><span class="map-browser__sr-only">Цена до, ₽</span>' + priceIcon + '<input aria-label="Цена до, ₽" type="number" min="0" step="1000000" data-filter="price" placeholder="Стоимость"></label>' +
-    '<label class="map-browser__field map-browser__field--select"><span class="map-browser__sr-only">Локация</span>' + locationIcon + '<select aria-label="Локация" data-filter="location"><option value="">Локация</option><option>Сочи</option><option>Анапа</option><option>Алтай</option><option>Архыз</option></select><span class="map-browser__chevron" aria-hidden="true"></span></label>' +
+    '<label class="map-browser__field map-browser__field--select"><span class="map-browser__sr-only">Район</span>' + locationIcon + '<select aria-label="Район" data-filter="location"><option value="">Район</option></select><span class="map-browser__chevron" aria-hidden="true"></span></label>' +
     '<label class="map-browser__field map-browser__field--select"><span class="map-browser__sr-only">Спальни</span>' + bedroomsIcon + '<select aria-label="Спальни" data-filter="bedrooms"><option value="">Спальни</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4+">Более 3</option></select><span class="map-browser__chevron" aria-hidden="true"></span></label>' +
     '<label class="map-browser__field map-browser__field--select map-browser__extra"><span class="map-browser__sr-only">Сортировка</span><select aria-label="Сортировка" data-filter="sort"><option value="">По релевантности</option><option value="asc">Сначала дешевле</option><option value="desc">Сначала дороже</option></select><span class="map-browser__chevron" aria-hidden="true"></span></label>' +
     '<button class="map-browser__reset">Сбросить фильтры</button></div><p class="map-browser__metadata-notice" role="status" hidden></p><div class="map-browser__list"></div></div>';
@@ -58,7 +58,7 @@
   var sort = dialog.querySelector('[data-filter=sort]');
   var list = dialog.querySelector('.map-browser__list');
   var items = (window.BarnesCityMapProjects || []).map(function (item) { return Object.assign({},item,{market:item.type==='rc'?'new-build':'secondary'}); });
-  location.replaceChildren(new Option('Локация',''));
+  location.replaceChildren(new Option('Район',''));
   Array.from(document.querySelectorAll('.catalog-grid__item[data-location]')).map(function (item) {return item.dataset.location;}).filter(function (value,index,all) {return value && all.indexOf(value)===index;}).forEach(function (value) {location.add(new Option(value,value));});
   var market = 'new-build';
   var marketButtons = Array.from(dialog.querySelectorAll('[data-map-market]'));
@@ -87,7 +87,7 @@
     var hasBrandFlags = items.some(function (item) { return Array.isArray(item.brandFlags); });
     var unavailable = [];
     if (type.value && !hasTypes) unavailable.push('тип объекта');
-    if (location.value && !hasLocations) unavailable.push('локация');
+    if (location.value && !hasLocations) unavailable.push('район');
     if (bedrooms.value && !hasBedrooms) unavailable.push('число спален');
     metadataNotice.hidden = !unavailable.length;
     metadataNotice.textContent = unavailable.length ? 'Нет данных для параметров: ' + unavailable.join(', ') + '. Они пока не меняют выдачу.' : '';

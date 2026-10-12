@@ -7,7 +7,7 @@
   stylesheet.href = new URL('quick-filters.css?v=4', base).href;
   document.head.appendChild(stylesheet);
   var configs = [
-    { title:'Локация', key:'directions', reset:'Все направления', choices:[...new Set(Array.from(document.querySelectorAll('.catalog-grid__item[data-location]'), item => item.dataset.location).filter(Boolean))] },
+    { title:'Район', key:'directions', reset:'Все районы', choices:[...new Set(Array.from(document.querySelectorAll('.catalog-grid__item[data-location]'), item => item.dataset.location).filter(Boolean))] },
     { title:'Тип', key:'propertyTypes', reset:'Любой тип', choices:['Апартаменты','Квартира','Квартира в новостройке','Пентхаус'], values:['apartment','flat','new_build','penthouse'] },
     { title:'Стоимость', key:'priceRanges', reset:'Любая', choices:['до 50 млн ₽','50 – 100 млн ₽','100 – 200 млн ₽','от 200 млн ₽'], values:['50m','50-100m','100-200m','200m+'] },
     { title:'Спальни', key:'bedrooms', reset:'Любые', choices:['1','2','3','Более 3'], values:['1','2','3','4+'] }

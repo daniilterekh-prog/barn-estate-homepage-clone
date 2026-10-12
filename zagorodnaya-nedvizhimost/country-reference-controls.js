@@ -120,6 +120,8 @@
       });
       const heading=$('.catalog-projects-map__panel-title',panel);if(heading)heading.textContent='Найдено объектов: 0';
       const search=$('.catalog-projects-map__panel-search-input',panel);if(search)search.placeholder='Поиск объектов';
+      const searchIcon=$('.catalog-projects-map__panel-search-icon svg',panel);
+      if(searchIcon){searchIcon.setAttribute('viewBox','0 0 24 24');searchIcon.setAttribute('stroke-width','1.35');searchIcon.innerHTML='<circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/>';}
       const filterIcon=$('.catalog-projects-map__panel-filter-icon',panel);
       if(filterIcon)filterIcon.innerHTML='<path d="M4 6h3m4 0h9M4 12h8m4 0h4M4 18h4m4 0h8" stroke="currentColor" stroke-width="1.15" stroke-linecap="round"/><circle cx="9" cy="6" r="2" stroke="currentColor" stroke-width="1.15"/><circle cx="14" cy="12" r="2" stroke="currentColor" stroke-width="1.15"/><circle cx="10" cy="18" r="2" stroke="currentColor" stroke-width="1.15"/>';
       const controls=document.createElement('div');controls.className='country-map-reference';
