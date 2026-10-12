@@ -64,7 +64,7 @@
     price: '<circle cx="12" cy="12" r="9"/><path d="M9 16V7.5h3.4a2.75 2.75 0 1 1 0 5.5H9m0 0h5.6m-5.6 2h4.6"/>',
     bedrooms: '<path d="M3 18v-7.5M21 18v-5.5a2 2 0 0 0-2-2h-7.5A2.5 2.5 0 0 0 9 13v2M3 15h18M5.5 10.5h2A1.5 1.5 0 0 1 9 12v3H4v-3a1.5 1.5 0 0 1 1.5-1.5Z"/>'
   };
-  const filters = [['location', 'Локация'], ['type', 'Тип'], ['price', 'Стоимость'], ['bedrooms', 'Спальни']];
+  const filters = [['location', 'Шоссе'], ['type', 'Тип'], ['price', 'Стоимость'], ['bedrooms', 'Спальни']];
   filters.forEach(([key, label]) => {
     const item = document.createElement('div'); item.className = 'catalog-quick-filters__item'; item.setAttribute('data-v-6fd45cc6', '');
     item.innerHTML = `<button class="catalog-quick-filters__button" type="button" data-v-6fd45cc6 aria-haspopup="dialog" aria-expanded="false"><span class="catalog-quick-filters__content"><span class="catalog-quick-filters__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${paths[key]}</svg></span><span class="catalog-quick-filters__label" data-v-6fd45cc6><span class="catalog-quick-filters__caption">${label}</span></span></span><span class="catalog-quick-filters__chevron" data-v-6fd45cc6 aria-hidden="true"></span></button>`;
@@ -131,7 +131,7 @@
     keys.forEach(key => {
       const label = document.createElement('label'); label.textContent = filters.find(([k]) => k === key)[1]; const select = document.createElement('select'); select.name = key;
       let options = [['', 'Любые']];
-      if (key === 'location') options = [['', 'Все локации'], ...[...new Set(all('.catalog-grid__item', list).filter(item => item.dataset.listingMode === mode).map(item => item.dataset.location).filter(Boolean))].map(s => [s, s])];
+      if (key === 'location') options = [['', 'Все шоссе'], ...[...new Set(all('.catalog-grid__item', list).filter(item => item.dataset.listingMode === mode).map(item => item.dataset.location).filter(Boolean))].map(s => [s, s])];
       if (key === 'price') options = [['', 'Любая стоимость'], ['50000000', 'До 50 млн ₽'], ['100000000', 'До 100 млн ₽'], ['200000000', 'До 200 млн ₽'], ['500000000', 'До 500 млн ₽']];
       if (key === 'bedrooms') options = [['', 'Любое количество'], ['1', 'От 1 спальни'], ['2', 'От 2 спален'], ['3', 'От 3 спален'], ['4', 'От 4 спален']];
       options.forEach(([value, text]) => select.append(new Option(text, value))); select.value = selection[key]; label.append(select); form.append(label);
