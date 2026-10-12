@@ -3,6 +3,12 @@ const assert = require('node:assert/strict')
 const fs = require('node:fs')
 const path = require('node:path')
 const read = name => fs.readFileSync(path.join(__dirname, name), 'utf8')
+test('hero height follows ambassadors breakpoints, not viewport height', () => {
+  const css = read('architecture-hero.css')
+  assert.doesNotMatch(css, /\b(?:\d+(?:\.\d+)?)(?:s|d|l)?vh\b/)
+  for (const height of [900,1040,640,560,520]) assert.ok(css.includes(`min-height: ${height}px`))
+  assert.match(css, /height: auto; min-height: inherit/)
+})
 test('hero arrows have no motion or transform transition', () => {
   const css = read('architecture-hero.css')
   assert.doesNotMatch(css, /transition:\s*transform/)
