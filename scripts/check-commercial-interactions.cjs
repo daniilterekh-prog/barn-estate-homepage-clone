@@ -13,7 +13,7 @@ const { chromium } = require(path.join(toolkit,'node_modules/playwright'));
   await assert.doesNotReject(()=>page.getByRole('dialog',{name:'Меню сайта'}).waitFor({state:'visible'}));
   await page.keyboard.press('Escape');
   await page.getByRole('dialog',{name:'Меню сайта'}).waitFor({state:'detached'});
-  await page.locator('.catalog-hero-filters__filter-icon').click();
+  await page.locator('[data-commercial-filters="hero"]').click();
   await page.getByRole('dialog',{name:'Фильтры',exact:true}).waitFor({state:'visible'});
   await page.keyboard.press('Escape');
   await page.locator('.apartment-card__call-btn').first().click();

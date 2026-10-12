@@ -8,8 +8,32 @@
   let dialog = null;
   let returnFocus = null;
   const originalMenuIcon = menuButton?.innerHTML;
+  let filterValues = null;
   one('.catalog-hero-filters__search-input')?.setAttribute('aria-label', 'Поиск по ID, названию ЖК, адресу');
   one('.catalog-projects-map__search-input')?.setAttribute('aria-label', 'Поиск в видимой области карты');
+  const heroFilter = one('.catalog-hero-filters__filter-icon');
+  if (heroFilter) {
+    heroFilter.dataset.commercialFilters = 'hero';
+    heroFilter.setAttribute('aria-haspopup', 'dialog');
+    const quickFilters = one('.catalog-quick-filters');
+    if (quickFilters) {
+      const row = document.createElement('div');
+      row.className = 'source-listing-filters';
+      quickFilters.before(row); row.append(quickFilters);
+      const button = heroFilter.cloneNode(true);
+      button.dataset.commercialFilters = 'listing';
+      button.classList.add('source-filter-trigger', 'source-filter-trigger--listing');
+      row.append(button);
+    }
+    const mapSearch = one('.catalog-projects-map__search');
+    if (mapSearch) {
+      const button = heroFilter.cloneNode(true);
+      button.dataset.commercialFilters = 'map';
+      button.classList.add('source-filter-trigger', 'source-filter-trigger--map');
+      mapSearch.after(button);
+    }
+  }
+  const filterTriggers = all('[data-commercial-filters]');
 
   function closeDialog() {
     dialog?.remove(); dialog = null;
@@ -17,7 +41,7 @@
     header?.classList.remove('site-header--menu-open');
     menuButton?.setAttribute('aria-expanded', 'false');
     if (menuButton && originalMenuIcon) menuButton.innerHTML = originalMenuIcon;
-    one('.catalog-hero-filters__filter-icon')?.setAttribute('aria-expanded', 'false');
+    filterTriggers.forEach(button => button.setAttribute('aria-expanded', 'false'));
     returnFocus?.focus({ preventScroll: true });
   }
 
@@ -34,25 +58,25 @@
       const svg = menuButton?.querySelector('svg');
       if (svg) svg.innerHTML = '<path d="M5 5l14 14M19 5 5 19"></path>';
     }
-    if (kind === 'filters') one('.catalog-hero-filters__filter-icon')?.setAttribute('aria-expanded', 'true');
+    if (kind === 'filters') trigger?.setAttribute('aria-expanded', 'true');
     all('.modal__close,.vfm__overlay,.hero-filter-modal__close,.hero-filter-modal__backdrop', dialog).forEach(e => e.addEventListener('click', closeDialog));
     bindForms(dialog);
     bindFilters(dialog);
-    const first = one('input:not([tabindex="-1"]),button,a[href]', dialog);
+    const first = kind === 'filters' ? one('.hero-filter-modal__close', dialog) : one('input:not([tabindex="-1"]),button,a[href]', dialog);
     first?.focus({ preventScroll: true });
   }
 
   document.addEventListener('keydown', event => {
     if (event.key === 'Escape') closeDialog();
     if (event.key !== 'Tab' || !dialog) return;
-    const focusable = all('button,a[href],input,select,textarea,[tabindex="0"]', dialog).filter(e => !e.disabled && e.getClientRects().length);
+    const focusable = all('button,a[href],input,select,textarea,[tabindex="0"]', dialog).filter(e => !e.disabled && e.getClientRects().length && !e.classList.contains('hero-filter-modal__backdrop'));
     if (dialog.classList.contains('site-menu') && menuButton) focusable.unshift(menuButton);
     if (!focusable.length) return;
     if (event.shiftKey && document.activeElement === focusable[0]) { event.preventDefault(); focusable.at(-1).focus(); }
     else if (!event.shiftKey && document.activeElement === focusable.at(-1)) { event.preventDefault(); focusable[0].focus(); }
   });
   menuButton?.addEventListener('click', () => dialog?.classList.contains('site-menu') ? closeDialog() : openDialog('menu', menuButton));
-  one('.catalog-hero-filters__filter-icon')?.addEventListener('click', event => openDialog('filters', event.currentTarget));
+  filterTriggers.forEach(button => button.addEventListener('click', event => openDialog('filters', event.currentTarget)));
   all('.apartment-card__call-btn,.site-footer__callback-btn,.catalog-contact__card-submit,.floating-expert__card').forEach(e => e.addEventListener('click', () => openDialog('callback', e)));
   one('.floating-expert__close')?.addEventListener('click', () => one('.floating-expert')?.remove());
 
@@ -125,6 +149,26 @@
   });
 
   function bindFilters(root) {
+    if (root.classList.contains('hero-filter-modal')) {
+      const inputs = all('input', root);
+      if (filterValues) inputs.forEach((input, index) => {
+        const saved = filterValues[index];
+        if (!saved) return;
+        if (input.type === 'checkbox') input.checked = saved.checked;
+        else input.value = saved.value;
+      });
+      const remember = () => {
+        filterValues = inputs.map(input => ({ value:input.value, checked:input.checked }));
+        const active = inputs.some(input => input.type === 'checkbox' ? input.checked : input.value.trim());
+        filterTriggers.forEach(button => button.classList.toggle('catalog-hero-filters__filter-icon--active', active));
+      };
+      inputs.forEach(input => input.addEventListener('input', remember));
+      one('.hero-filter-modal__reset', root)?.addEventListener('click', () => {
+        inputs.forEach(input => { if (input.type === 'checkbox') input.checked = false; else input.value = ''; });
+        remember();
+      });
+      one('.hero-filter-modal__apply', root)?.addEventListener('click', () => { remember(); closeDialog(); });
+    }
     all('.hero-filter-panel__reset', root).forEach(button => button.addEventListener('click', () => all('input', root).forEach(input => { input.value = ''; input.checked = false; })));
     all('button', root).filter(e => /показать.*объект/i.test(e.textContent)).forEach(button => button.addEventListener('click', () => { closeDialog(); scrollToSection('.catalog-grid'); }));
   }
