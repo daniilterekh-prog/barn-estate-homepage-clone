@@ -1,0 +1,39 @@
+{
+  "base": "http://127.0.0.1:8793/",
+  "checks": [
+    {
+      "width": 320,
+      "passed": true
+    },
+    {
+      "width": 390,
+      "passed": true
+    },
+    {
+      "width": 540,
+      "passed": true
+    },
+    {
+      "width": 768,
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "width": 1920,
+      "passed": true
+    },
+    {
+      "width": 2560,
+      "passed": true
+    },
+    {
+      "width": 3840,
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "passed": true
+}

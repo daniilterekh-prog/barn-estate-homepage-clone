@@ -1,7 +1,0 @@
-.commercial-map-surface[hidden] { display:none; }
-.commercial-map-surface { position:fixed; inset:0; z-index:2100; background:#fff; color:#1e1e1e; font-family:inherit; font-size:16px; font-weight:400; line-height:1; }
-.commercial-map-surface .catalog-projects-map.commercial-map-open { position:absolute; inset:0; width:100%; height:100%; }
-.commercial-map-surface .commercial-open-map-image { display:block; width:100%; height:100%; object-fit:cover; }
-.commercial-map-surface :is(button,input):focus-visible { outline:2px solid #8b1d25; outline-offset:2px; }
-html body .commercial-map-surface .catalog-quick-filters__item { height:auto; min-height:0; }
-html body .commercial-map-surface .catalog-quick-filters__button { height:auto; display:inline-block; }
