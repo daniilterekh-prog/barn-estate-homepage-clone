@@ -20,6 +20,32 @@ html body.country-node-page .apartment-card--catalog :is(.apartment-card__call-b
 }
 .country-node-page .catalog-best-offers__title { color:#1e1e1e; }
 .country-node-page .catalog-best-offers__slider-row { margin-top:0; }
+/* Shared contact controls and mobile sticky header from the Kurortnaya node. */
+html body.country-node-page :is(.catalog-consultation__method,.catalog-contact__method)[class] {
+  --contact-icon-size:18px;
+  display:grid;
+  grid-template-columns:var(--contact-icon-size) 4.8em;
+  gap:8px;
+  text-align:left;
+}
+html body.country-node-page :is(.catalog-consultation__method-icon,.catalog-contact__method-icon)[class] {
+  width:var(--contact-icon-size);
+  height:var(--contact-icon-size);
+}
+html body.country-node-page .catalog-sticky__mobile-actions { display:none; }
+@media (max-width:540px) {
+  html body.country-node-page .catalog-header-ready .site-header__top {display:grid;grid-template-columns:44px minmax(0,1fr) 44px;align-items:center;}
+  html body.country-node-page .catalog-header-ready .site-header__left {display:contents;transform:none;}
+  html body.country-node-page .catalog-header-ready .site-header__mobile-phone {display:flex;align-items:center;justify-content:center;grid-column:1;grid-row:1;width:44px;height:44px;}
+  html body.country-node-page .catalog-header-ready .site-header__logo {grid-column:2;grid-row:1;justify-self:center;}
+  html body.country-node-page .catalog-header-ready .site-header__icon-btn {grid-column:3;grid-row:1;display:grid;place-items:center;width:44px;height:44px;padding:0;}
+  html body.country-node-page .catalog-header-ready .site-header__right {display:none;}
+  html body.country-node-page .catalog-sticky__nav {display:flex;align-items:center;gap:12px;}
+  html body.country-node-page .catalog-sticky__list {flex:1;min-width:0;}
+  html body.country-node-page .catalog-sticky__mobile-actions {display:flex;flex:0 0 auto;gap:8px;}
+  html body.country-node-page .catalog-sticky__mobile-actions .catalog-sticky__callback {width:auto;min-height:44px;padding-inline:12px;font-size:15px;white-space:nowrap;flex:0 0 auto;}
+  html body.country-node-page :is(.catalog-consultation__method,.catalog-contact__method)[class] {--contact-icon-size:20px;}
+}
 .country-node-page .catalog-contact__expert-photo img,
 .country-node-page .floating-expert__avatar img { object-fit:cover; object-position:center; }
 /* Channel selectors share the form's 610px cap, including wide CTA content. */

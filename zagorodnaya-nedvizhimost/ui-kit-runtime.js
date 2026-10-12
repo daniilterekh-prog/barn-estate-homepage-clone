@@ -140,6 +140,35 @@
       toggle.setAttribute('aria-expanded', String(open));
       toggle.setAttribute('aria-label', open ? 'Скрыть способы связи' : 'Показать способы связи');
     });
+    var callback = document.createElement('button');
+    callback.type = 'button';
+    callback.className = 'catalog-sticky__request catalog-sticky__callback';
+    callback.textContent = 'Оставить заявку';
+    callback.setAttribute('aria-haspopup', 'dialog');
+    callback.setAttribute('aria-controls', 'catalog-feedback-modal');
+    callback.addEventListener('click', function () {
+      panel.hidden = true;
+      toggle.setAttribute('aria-expanded', 'false');
+      if (openContactModal) openContactModal(callback);
+    });
+    var actions = document.createElement('div');
+    actions.className = 'catalog-sticky__mobile-actions';
+    actions.append(toggle, callback);
+    sticky.querySelector('.catalog-sticky__item--contacts').remove();
+    sticky.querySelector('.catalog-sticky__nav').append(actions);
+    document.addEventListener('click', function (event) {
+      if (!panel.contains(event.target) && !toggle.contains(event.target)) {
+        panel.hidden = true;
+        toggle.setAttribute('aria-expanded', 'false');
+      }
+    });
+    document.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape' && !panel.hidden) {
+        panel.hidden = true;
+        toggle.setAttribute('aria-expanded', 'false');
+        toggle.focus();
+      }
+    });
 
     var frameRequested = false;
 
@@ -295,6 +324,7 @@
 
     var modal = document.createElement('div');
     modal.className = 'catalog-feedback-modal feedback-modal modal';
+    modal.id = 'catalog-feedback-modal';
     modal.hidden = true;
     modal.setAttribute('role', 'dialog');
     modal.setAttribute('aria-modal', 'true');

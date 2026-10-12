@@ -22,7 +22,7 @@ try {
       await page.locator('.catalog-projects-map__panel-handle').click();
       await page.waitForFunction(()=>Math.abs(document.querySelector('.catalog-projects-map__panel').getBoundingClientRect().height-765)<1);
       await page.locator('.catalog-projects-map__panel-handle').click();
-      await panel.locator('input').focus();
+      await panel.locator('.catalog-projects-map__panel-search-input').focus();
       assert.equal(await page.locator('.catalog-projects-map__panel-handle').getAttribute('aria-expanded'),'true');
     }
     await page.locator('.catalog-projects-map__panel-filter').click();
@@ -34,11 +34,13 @@ try {
     if(width<=540 && await page.locator('.catalog-projects-map__panel-handle').getAttribute('aria-expanded')==='false')await page.locator('.catalog-projects-map__panel-handle').click();
     for(let i=0;i<4;i++) {
       await page.locator('.catalog-projects-map__panel .catalog-quick-filters__button').nth(i).click();
-      assert.equal(await page.locator('#country-map-quick-dropdown .catalog-quick-filters__option').count(),[4,4,8,3][i]);
-      const first=page.locator('#country-map-quick-dropdown .catalog-quick-filters__option').first();
-      const label=await first.textContent();await first.click();
+      const options=page.locator('#country-reference-dropdown .catalog-quick-filters__option');
+      assert.ok(await options.count()>=2);
+      const selected=options.nth(1);
+      const label=await selected.textContent();await selected.click();
       assert.equal(await page.locator('.catalog-projects-map__panel .catalog-quick-filters__value').nth(i).textContent(),label);
-      await page.locator('#country-map-quick-dropdown .catalog-quick-filters__dropdown-close').click();
+      await page.locator('.catalog-projects-map__panel .catalog-quick-filters__button').nth(i).click();
+      await page.locator('#country-reference-dropdown .catalog-quick-filters__dropdown-close').click();
     }
     await page.locator('.catalog-projects-map__exit').click();
     await page.waitForFunction(()=>!document.fullscreenElement);

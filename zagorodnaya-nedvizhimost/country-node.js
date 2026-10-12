@@ -60,14 +60,16 @@
   toolbar.innerHTML = '<div class="catalog-mode-switch" role="group" aria-label="Тип недвижимости"><button class="catalog-mode-switch__button is-active" type="button" data-country-mode="project" aria-pressed="true">Новостройки</button><button class="catalog-mode-switch__button" type="button" data-country-mode="lot" aria-pressed="false">Вторичная</button></div><div class="catalog-mode-filters catalog-quick-filters" data-v-6fd45cc6></div>';
   const paths = {
     location: '<path d="M12 21s6-5.4 6-11a6 6 0 1 0-12 0c0 5.6 6 11 6 11Z"/><circle cx="12" cy="10" r="2.25"/>',
+    type: '<path d="M4 21V6l8-3 8 3v15M2 21h20M8 10h2m4 0h2m-8 4h2m4 0h2M10 21v-4h4v4"/>',
     price: '<circle cx="12" cy="12" r="9"/><path d="M9 16V7.5h3.4a2.75 2.75 0 1 1 0 5.5H9m0 0h5.6m-5.6 2h4.6"/>',
     bedrooms: '<path d="M3 18v-7.5M21 18v-5.5a2 2 0 0 0-2-2h-7.5A2.5 2.5 0 0 0 9 13v2M3 15h18M5.5 10.5h2A1.5 1.5 0 0 1 9 12v3H4v-3a1.5 1.5 0 0 1 1.5-1.5Z"/>'
   };
-  const filters = [['location', 'Локация'], ['price', 'Стоимость'], ['bedrooms', 'Спальни']];
+  const filters = [['location', 'Локация'], ['type', 'Тип'], ['price', 'Стоимость'], ['bedrooms', 'Спальни']];
   filters.forEach(([key, label]) => {
     const item = document.createElement('div'); item.className = 'catalog-quick-filters__item'; item.setAttribute('data-v-6fd45cc6', '');
     item.innerHTML = `<button class="catalog-quick-filters__button" type="button" data-v-6fd45cc6 aria-haspopup="dialog" aria-expanded="false"><span class="catalog-quick-filters__content"><span class="catalog-quick-filters__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${paths[key]}</svg></span><span class="catalog-quick-filters__label" data-v-6fd45cc6><span class="catalog-quick-filters__caption">${label}</span></span></span><span class="catalog-quick-filters__chevron" data-v-6fd45cc6 aria-hidden="true"></span></button>`;
-    q('button', item).addEventListener('click', e => openFilters([key], label, e.currentTarget)); q('.catalog-mode-filters', toolbar).append(item);
+    q('button', item).dataset.countryQuick = key;
+    q('.catalog-mode-filters', toolbar).append(item);
   });
   const sort = q('.catalog-grid__sort'); q('select', sort).setAttribute('data-v-5a2b3b97', ''); toolbar.append(sort);
   const detailed = document.createElement('button'); detailed.className = 'catalog-mode-detailed-filters'; detailed.type = 'button'; detailed.setAttribute('aria-haspopup', 'dialog'); detailed.setAttribute('aria-expanded', 'false');
@@ -94,9 +96,22 @@
     empty.textContent = s.types?.length || s.districts?.length || s.roomsMin != null || s.roomsMax != null
       ? 'В локальных карточках нет данных о типе объекта, районе и количестве комнат. Для поиска по этим параметрам используй расширенный поиск на оригинальном сайте.'
       : 'Объектов с такими параметрами нет. Измени фильтры.';
-    Object.keys(selection).forEach(key => selection[key] = ''); expanded = true; render();
+    expanded = true; render();
   });
-  all('[data-country-mode]', toolbar).forEach(button => button.addEventListener('click', () => { mode = button.dataset.countryMode; expanded = false; Object.keys(selection).forEach(key => selection[key] = ''); render(); }));
+  const setMarket = value => {
+    if (!['project','lot'].includes(value)) return;
+    mode = value; expanded = false; render();
+    document.dispatchEvent(new CustomEvent('country-market-change',{detail:{mode}}));
+  };
+  all('[data-country-mode]', toolbar).forEach(button => button.addEventListener('click', () => setMarket(button.dataset.countryMode)));
+  window.countryListing = {
+    getMarket:()=>mode,
+    setMarket,
+    getSelection:()=>({...selection}),
+    setSelection:(key,value)=>{if(!(key in selection))return;selection[key]=value;expanded=true;render();document.dispatchEvent(new CustomEvent('country-quick-change',{detail:{key,value}}));},
+    getLocations:()=>[...new Set(all('.catalog-grid__item',list).filter(item=>item.dataset.listingMode===mode).map(item=>item.dataset.location).filter(Boolean))],
+    getSort:()=>q('select',sort)
+  };
   more?.addEventListener('click', () => { expanded = true; render(); }); addEventListener('resize', render, {passive: true});
   all('.catalog-grid__item', list).forEach((item, i) => item.dataset.order = String(i));
   q('select', sort).addEventListener('change', event => {
