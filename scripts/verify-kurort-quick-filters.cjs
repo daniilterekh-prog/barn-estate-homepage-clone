@@ -48,7 +48,7 @@ const assert = require('node:assert/strict');
       await modal.getByRole('button',{name:'Сбросить фильтры',exact:true}).click();
       await modal.getByRole('button',{name:'Применить',exact:true}).click();
       assert.ok((await buttons.nth(0).textContent()).includes('Локация'));
-      assert.ok((await buttons.nth(1).textContent()).includes('Тип недвижимости'));
+      assert.equal((await buttons.nth(1).locator('.catalog-quick-filters__caption').textContent()).trim(), 'Тип');
       assert.ok((await buttons.nth(3).textContent()).includes('Спальни'));
       const geometry=await buttons.evaluateAll(elements=>elements.map(el=>el.getBoundingClientRect().toJSON()));
       assert.ok(geometry.every(r=>r.x>=0 && r.right<=width),'Filter buttons stay inside viewport');
