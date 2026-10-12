@@ -1,4 +1,20 @@
 /* International content inside the approved node component contracts. */
+.international-map-filter {
+  align-items: center;
+  background: transparent;
+  border: 0;
+  color: #333;
+  cursor: pointer;
+  display: inline-flex;
+  flex: 0 0 36px;
+  justify-content: center;
+  height: 36px;
+  padding: 8px;
+  width: 36px;
+}
+.international-map-filter:focus-visible { outline: 2px solid #821c2a; outline-offset: 2px; }
+.international-node-design .hero-filter-modal { z-index: 1500; }
+.international-node-design .catalog-projects-map__search-input { min-width: 0; }
 .international-node-design .catalog-quick-links--hero { display: none; }
 .international-node-design .catalog-page-nav { display: none !important; }
 .international-node-design .catalog-best-offers__slider-row { margin-top: 0; }
