@@ -52,7 +52,7 @@ const base = process.argv[2] || 'http://127.0.0.1:4186/';
           assert.equal(await page.locator('.vfm').count(), 0);
           await modal.locator('.modal__close').click();
           if (width > 580) {
-            await page.locator('.catalog-sticky__request').click();
+            await page.locator('.catalog-sticky__request:visible').click();
             await modal.waitFor({ state: 'visible' });
             await page.keyboard.press('Escape');
           }

@@ -126,7 +126,7 @@
 
   enhanceContactModal();
   document.addEventListener('click', function (event) {
-    var trigger = event.target.closest('.catalog-sticky__request, .catalog-page-nav__request, .catalog-contact__card-submit, .floating-expert__card, .apartment-card__call-btn');
+    var trigger = event.target.closest('.catalog-sticky__request, .catalog-page-nav__request, .catalog-contact__card-submit, .floating-expert__card, .apartment-card__call-btn, .site-footer__callback-btn');
     if (!trigger) return;
     event.preventDefault();
     event.stopImmediatePropagation();

@@ -1,9 +1,4 @@
 /* City-specific data/layout exceptions to the FirstDegreeNode reference. */
-@media (max-width:540px) {
-  /* Align the visible V strokes with the label, not the rotated square's centre. */
-  html body .catalog-mode-toolbar .catalog-grid__sort::after { top:calc(50% - 8px); right:8px; }
-  html body .map-browser__extra .map-browser__chevron { top:calc(50% - 6px); }
-}
 .city-map-filters svg { width:20px; height:20px; flex-shrink:0; }
 body.city-map-filter-open .hero-filter-modal { z-index:11000; }
 /* The current front original no longer shows this legacy link inside the modal. */
@@ -15,12 +10,6 @@ html body #catalog-intro .catalog-intro__image[class] { object-position:center b
 .city-node-ready .apartment-card--catalog { height:100%; }
 .city-node-ready .apartment-card--catalog .apartment-card__body { flex:1; }
 .city-node-ready .apartment-card--catalog .apartment-card__address { order:0; }
-.city-node-ready .catalog-mode-toolbar .catalog-quick-filters__chevron { border-right:1px solid #4f4d49; border-bottom:1px solid #4f4d49; width:10px; height:10px; }
-.city-filter-dialog { border:1px solid #e4e4e4; border-radius:1px; padding:32px; width:min(420px,calc(100vw - 32px)); color:#1e1e1e; font-family:inherit; }
-.city-filter-dialog::backdrop { background:#0008; }
-.city-filter-dialog h2 { font-size:22px; font-weight:300; margin:0 0 24px; }
-.city-filter-dialog select { width:100%; min-height:54px; font:inherit; border:1px solid #e4e4e4; background:#fff; margin-bottom:24px; padding:12px; }
-.city-filter-dialog button { width:100%; }
 /* City source portraits are composed photographs, not the resort's cutout. */
 @media (min-width:769px) {
   html body.city-node-ready .catalog-consultation__image[class] { width:100%; object-fit:cover; object-position:center top; }
