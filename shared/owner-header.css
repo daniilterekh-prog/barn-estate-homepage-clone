@@ -3,6 +3,7 @@
  * Kurortnaya deliberately retains site-header--no-nav (no directions row).
  */
 body.barnes-header-template { --owner-sale-ink: #1e1e1e; --owner-sale-brand: #8b1d25; --owner-sale-border: rgba(30,30,30,.14); }
+html body.barnes-header-template :is(.layout__header,.owner-sale-sticky,.catalog-sticky) { --layout-header-offset-top:32px; }
 html body.barnes-header-template .layout__header .site-header {pointer-events: auto;}
 html body.barnes-header-template .site-header {color: inherit; display: flex; flex-direction: column; padding-top: var(--layout-header-offset-top,32px); transition: background-color 0.45s, color 0.45s, box-shadow 0.45s;}
 html body.barnes-header-template .site-header--menu-open,
@@ -499,6 +500,7 @@ html body.barnes-header-template .site-header__icon-btn { min-height:44px; min-w
 html body.barnes-header-template :is(.owner-sale-sticky__request,.catalog-sticky__request) { min-height:44px; border-radius:0; }
 html body.barnes-header-template :is(.owner-sale-sticky__logo,.catalog-sticky__logo) img { display: inline; }
 @media (max-width:540px) {
+  html body.barnes-header-template :is(.layout__header,.owner-sale-sticky,.catalog-sticky) { --layout-header-offset-top:16px; }
   html body.barnes-header-template .site-header__search-btn { display:none; }
   /* Keep the contact dropdown clickable; only the anchor list scrolls. */
   html body.barnes-header-template :is(.owner-sale-sticky,.catalog-sticky) { overflow:visible; }

@@ -3,7 +3,7 @@
   document.body.classList.add('barnes-header-template');
   var ownerHeaderStyles = document.createElement('link');
   ownerHeaderStyles.rel = 'stylesheet';
-  ownerHeaderStyles.href = '../shared/owner-header.css?v=20261012-owner-header-4';
+  ownerHeaderStyles.href = '../shared/owner-header.css?v=20261012-owner-header-5';
 
   if (!document.querySelector('link[data-kurortnaya-ui-kit]')) {
     var stylesheet = document.createElement('link');
