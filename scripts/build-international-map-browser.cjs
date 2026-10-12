@@ -4,7 +4,7 @@ const fs = require('node:fs/promises');
   const target = 'mezhdunarodnaya-nedvizhimost';
   let code = await fs.readFile('kurortnaya/map-fullscreen.js', 'utf8');
   code = code.replace("if (!trigger || !source || document.querySelector('.map-browser')) return;", "if (!trigger || !source || document.querySelector('.map-browser')) return;\n  source.dataset.nodeMapBrowser = 'true';");
-  code = code.replace("new URL('map-fullscreen.css?v=2', assetsBase)", "new URL('../kurortnaya/map-fullscreen.css?v=2', assetsBase)");
+  code = code.replace("new URL('map-fullscreen.css?v=2', assetsBase)", "new URL('node-map-browser.css?v=20261012-map-1', assetsBase)");
   code = code.replace("new URL('map-preview.png', assetsBase)", "new URL('assets/map-browser-preview.png', assetsBase)");
   code = code.replace('var items = window.BarnesMapProjects || [];', `var cardElements = Array.from(document.querySelectorAll('.catalog-grid__item'));
   var items = cardElements.map(function (element) {
@@ -30,12 +30,13 @@ const fs = require('node:fs/promises');
   code = code.replace("var extra = dialog.querySelector('.map-browser__extra');\n    extra.hidden = !extra.hidden;\n    event.currentTarget.setAttribute('aria-expanded', String(!extra.hidden));\n    expand(true);", "window.BARNES_OPEN_FILTER(event.currentTarget);\n    expand(true);");
   code = code.replace("[query, type, price, sort].forEach(function (input) { input.value = ''; });", "applied = null;\n    [query, type, price, sort].forEach(function (input) { input.value = ''; });");
   code = code.replace('if (dialog.hidden) return;\n    if (event.key', "if (dialog.hidden || event.defaultPrevented || document.querySelector('.hero-filter-modal')) return;\n    if (event.key");
+  await fs.writeFile(target + '/node-map-browser.css', await fs.readFile('kurortnaya/map-fullscreen.css', 'utf8'));
   await fs.writeFile(target + '/node-map-browser.js', code);
   for (const file of ['index.html', 'standalone/index.html']) {
     const prefix = file.startsWith('standalone/') ? '../' : '';
     let html = await fs.readFile(target + '/' + file, 'utf8');
     html = html.replace(/<script[^>]+src="[^"]*node-map-browser\.js[^"]*"[^>]*><\/script>/g, '');
-    html = html.replace(/(<script src="[^"]*source-runtime\.js[^>]+><\/script>)/, '<script src="' + prefix + 'node-map-browser.js?v=20261012-map-1" defer></script>$1');
+    html = html.replace(/(<script src="[^"]*source-runtime\.js[^>]+><\/script>)/, '<script src="' + prefix + 'node-map-browser.js?v=20261012-map-2" defer></script>$1');
     await fs.writeFile(target + '/' + file, html);
   }
 })().catch(error => { console.error(error); process.exitCode = 1; });
