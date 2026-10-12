@@ -84,6 +84,7 @@
     setupHeader();
     setupSticky();
     setupFullFilters();
+    setupMapResults();
     let pending=false;
     new MutationObserver(()=>{if(pending)return;pending=true;requestAnimationFrame(()=>{pending=false;all('.catalog-grid .apartment-card:not([data-node-card])').forEach(enhanceLot);render()})}).observe(list,{childList:true,subtree:true});
   }
@@ -119,6 +120,13 @@
       if(button===hero){if(!opener)opener=hero;return;}
       event.preventDefault();event.stopImmediatePropagation();
       opener=button;savedScroll=scrollY;
+      button.setAttribute('aria-haspopup','dialog');
+      button.setAttribute('aria-controls','catalog-hero-filters-panel');
+      button.setAttribute('aria-expanded','true');
+      if(button.closest('.map-browser')){
+        q('.map-browser').inert=true;
+        document.body.classList.add('city-map-filter-open');
+      }
       if(!q('.hero-filter-modal'))q('.catalog-hero-filters__filter-icon')?.click();
     },true);
     document.addEventListener('keydown',event=>{
@@ -148,7 +156,12 @@
         q('.hero-filter-modal__close',panel)?.focus({preventScroll:true});
       }
       if(!open && wasOpen){
+        if(document.body.classList.contains('city-map-filter-open')){
+          q('.map-browser').inert=false;
+          document.body.classList.remove('city-map-filter-open');
+        }
         const previous=opener;opener=null;
+        previous?.setAttribute('aria-expanded','false');
         requestAnimationFrame(()=>{
           previous?.focus({preventScroll:true});
           if(previous && previous!==hero)scrollTo({top:savedScroll,behavior:'instant'});
@@ -157,6 +170,16 @@
       wasOpen=open;
     };
     new MutationObserver(update).observe(document.body,{childList:true,subtree:true});
+  }
+  function setupMapResults() {
+    const data=document.createElement('script');
+    data.src=new URL('city-map-projects.js?v=20261012-1',document.baseURI).href;
+    data.onload=()=>{
+      const script=document.createElement('script');
+      script.src=new URL('city-map-fullscreen.js?v=20261012-1',document.baseURI).href;
+      document.body.append(script);
+    };
+    document.body.append(data);
   }
   function setupHeader() {
     const header=q('.layout__header .site-header');if(!header)return;
