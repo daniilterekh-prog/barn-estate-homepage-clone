@@ -22,6 +22,12 @@ const assert = require('node:assert/strict');
       assert.ok(Math.abs(result.sortX-result.filterX)<0.1,`Sorting arrow must align with filter above (${width}px)`);
       assert.equal(result.sortStroke,result.filterStroke);
       const select=sort.locator('select');
+      const spacing=await select.evaluate(el=>{
+        const s=getComputedStyle(el),parent=el.parentElement,arrow=getComputedStyle(parent,'::after');
+        return {padding:parseFloat(s.paddingRight),align:s.textAlign,top:arrow.top,height:parent.getBoundingClientRect().height};
+      });
+      assert.ok(spacing.padding>=48,'Reserve room for arrow and text gap');
+      assert.equal(spacing.align,'center');
       const values=await select.locator('option').evaluateAll(options=>options.map(el=>el.value));
       if(values.length>1) {await select.selectOption(values[1]); assert.equal(await select.inputValue(),values[1]);}
       await sort.scrollIntoViewIfNeeded();
