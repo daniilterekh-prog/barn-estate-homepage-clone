@@ -10,10 +10,11 @@ const { chromium } = require(path.join(toolkit, 'node_modules/playwright'));
     const page = await browser.newPage({ viewport:{width:1440,height:900} });
     const errors=[]; page.on('pageerror',error=>errors.push(error.message));
     await page.goto('file://'+path.resolve(__dirname,'../kommercheskaya-nedvizhimost/index.html'));
-    assert.equal(await page.locator('[data-commercial-filters]').count(),3,'Hero, listing and map must all expose a filter trigger');
+    assert.equal(await page.locator('[data-commercial-filters]').count(),2,'Keep hero and listing filter triggers');
+    assert.equal(await page.locator('.catalog-projects-map [data-commercial-filters],.source-filter-trigger--map').count(),0,'No filter icon beside the collapsed map search');
     for (const width of [320,390,768,1440,1920]) {
       await page.setViewportSize({width,height:900});
-      for (const placement of ['hero','listing','map']) {
+      for (const placement of ['hero','listing']) {
         const trigger=page.locator(`[data-commercial-filters="${placement}"]`);
         await trigger.click();
         const dialog=page.getByRole('dialog',{name:'Фильтры',exact:true});
@@ -44,7 +45,7 @@ const { chromium } = require(path.join(toolkit, 'node_modules/playwright'));
     assert.equal(await dialog.locator('.hero-filter-panel-content__range-input').first().inputValue(),'');
     await dialog.locator('.hero-filter-modal__apply').click();
     await dialog.waitFor({state:'detached'});
-    await page.locator('[data-commercial-filters="map"]').click();
+    await page.locator('[data-commercial-filters="listing"]').click();
     await page.keyboard.press('Shift+Tab');
     assert.equal(await page.locator('.hero-filter-modal__apply').evaluate(e=>e===document.activeElement),true);
     await page.keyboard.press('Tab');
@@ -52,6 +53,6 @@ const { chromium } = require(path.join(toolkit, 'node_modules/playwright'));
     await page.locator('.hero-filter-modal__backdrop').click({position:{x:2,y:2},force:true});
     await dialog.waitFor({state:'detached'});
     assert.deepEqual(errors,[]);
-    console.log('PASS: 3 filter entries at 5 widths; source fields; shared selection; reset/apply; close/backdrop/Escape; focus trap and return; no overflow/errors.');
+    console.log('PASS: 2 filter entries at 5 widths; no collapsed map filter icon; source fields; shared selection; reset/apply; close/backdrop/Escape; focus trap and return; no overflow/errors.');
   } finally { await browser.close(); }
 })().catch(error=>{console.error(error);process.exitCode=1;});

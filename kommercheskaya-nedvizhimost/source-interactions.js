@@ -70,13 +70,6 @@
       button.classList.add('source-filter-trigger', 'source-filter-trigger--listing');
       row.append(button);
     }
-    const mapSearch = one('.catalog-projects-map__search');
-    if (mapSearch) {
-      const button = heroFilter.cloneNode(true);
-      button.dataset.commercialFilters = 'map';
-      button.classList.add('source-filter-trigger', 'source-filter-trigger--map');
-      mapSearch.after(button);
-    }
   }
   // Approved first-degree node design; commerce keeps its own data and routes.
   document.body.classList.add('commercial-node', 'barnes-header-template');
