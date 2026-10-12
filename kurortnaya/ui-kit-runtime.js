@@ -34,7 +34,7 @@
   if (!document.querySelector('link[data-kurortnaya-ui-kit]')) {
     var stylesheet = document.createElement('link');
     stylesheet.rel = 'stylesheet';
-    stylesheet.href = 'ui-kit.css?v=20261012-mobile-header-contacts-1';
+    stylesheet.href = 'ui-kit.css?v=20261012-hero-header-axis-1';
     stylesheet.dataset.kurortnayaUiKit = 'true';
     document.head.appendChild(stylesheet);
   }
@@ -113,36 +113,8 @@
     rightColumn.appendChild(contacts);
     var mobilePhone = header.querySelector('.site-header__mobile-phone');
     if (mobilePhone) {
-      var mobileContacts = document.createElement('button');
-      mobileContacts.type = 'button';
-      mobileContacts.className = 'site-header__mobile-phone catalog-primary-contact-toggle';
-      mobileContacts.innerHTML = mobilePhone.innerHTML;
-      mobileContacts.setAttribute('aria-label', 'Показать способы связи');
-      mobileContacts.setAttribute('aria-expanded', 'false');
-      mobileContacts.setAttribute('aria-controls', 'kurortnaya-primary-contacts');
-      mobilePhone.replaceWith(mobileContacts);
-      var mobilePanel = contacts.cloneNode(true);
-      mobilePanel.id = 'kurortnaya-primary-contacts';
-      mobilePanel.className = 'catalog-primary-contact-panel';
-      mobilePanel.hidden = true;
-      mobilePanel.querySelectorAll('a').forEach(function (link) { link.className = 'catalog-primary-contact'; });
-      header.appendChild(mobilePanel);
-      function closeMobileContacts(focus) {
-        mobilePanel.hidden = true;
-        mobileContacts.setAttribute('aria-expanded', 'false');
-        if (focus) mobileContacts.focus();
-      }
-      mobileContacts.addEventListener('click', function () {
-        mobilePanel.hidden = !mobilePanel.hidden;
-        mobileContacts.setAttribute('aria-expanded', String(!mobilePanel.hidden));
-      });
-      document.addEventListener('click', function (event) {
-        if (!mobilePanel.contains(event.target) && !mobileContacts.contains(event.target)) closeMobileContacts(false);
-      });
-      document.addEventListener('keydown', function (event) {
-        if (event.key === 'Escape' && !mobilePanel.hidden) { event.preventDefault(); closeMobileContacts(true); }
-      });
-      window.addEventListener('scroll', function () { closeMobileContacts(false); }, { passive: true });
+      mobilePhone.classList.add('catalog-primary-call');
+      mobilePhone.setAttribute('aria-label', 'Позвонить по номеру +7 495 182-50-79');
     }
   }
 

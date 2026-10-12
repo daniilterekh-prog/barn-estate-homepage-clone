@@ -6,19 +6,16 @@ const assert = require('node:assert/strict');
     for (const width of [320, 390, 540]) {
       const page = await browser.newPage({ ...devices['iPhone 13'], viewport: { width, height: 900 } });
       await page.goto('http://127.0.0.1:8769/kurortnaya/');
-      const toggle = page.locator('.catalog-primary-contact-toggle');
+      const toggle = page.locator('.catalog-primary-call');
       await toggle.waitFor();
-      await toggle.tap();
-      const panel = page.locator('.catalog-primary-contact-panel');
-      assert.equal(await panel.isVisible(), true);
-      assert.equal(await panel.locator('a').count(), 4);
-      assert.match(await panel.locator('a').last().getAttribute('href'), /^tel:/);
-      const rect = await panel.boundingBox();
-      assert.ok(rect.x >= 0 && rect.x + rect.width <= width);
-      await panel.screenshot({ path: `/tmp/mobile-hero-contacts-${width}.png` });
-      await page.keyboard.press('Escape');
-      assert.equal(await toggle.evaluate(el => el === document.activeElement), true);
-      assert.equal(await panel.isVisible(), false);
+      assert.match(await toggle.getAttribute('href'), /^tel:/);
+      const centers = [];
+      for (const selector of ['.catalog-primary-call svg', '.site-header__logo img', '.site-header__icon-btn svg']) {
+        const rect = await page.locator('.layout__header ' + selector).boundingBox();
+        centers.push(rect.y + rect.height / 2);
+      }
+      assert.ok(Math.max(...centers) - Math.min(...centers) < 1, 'Call, logo and burger centered on one axis');
+      await page.locator('.layout__header .site-header').screenshot({ path: `/tmp/mobile-hero-aligned-${width}.png` });
       await page.evaluate(() => window.scrollTo(0, document.querySelector('.catalog-hero').offsetHeight + 300));
       const contacts = page.locator('.catalog-sticky--visible .catalog-sticky__mobile-actions button').first();
       await contacts.tap();
@@ -31,7 +28,7 @@ const assert = require('node:assert/strict');
       await page.keyboard.press('Escape');
       assert.equal(await modal.isVisible(), false);
       assert.equal(await sticky.evaluate(el => el === document.activeElement), true);
-      console.log(`PASS mobile headers ${width}px: hero contact picker / sticky request form, focus return`);
+      console.log(`PASS mobile headers ${width}px: hero direct call and aligned icons / sticky contacts and callback, focus return`);
       await page.close();
     }
   } finally { await browser.close(); }
