@@ -8,7 +8,7 @@
   const pages=[...slider.querySelectorAll('.splide__pagination__page')];
   function render(){
     const step=slides[0].getBoundingClientRect().width+parseFloat(getComputedStyle(slides[0]).marginRight||0);
-    const visible=Math.max(1,Math.floor((track.clientWidth+parseFloat(getComputedStyle(slides[0]).marginRight||0))/step));
+    const visible=matchMedia('(max-width:560px)').matches?1:matchMedia('(max-width:1024px)').matches?2:3;
     index=Math.max(0,Math.min(index,slides.length-visible));
     list.style.transform='translateX('+(-index*step)+'px)';
     list.style.transition=matchMedia('(prefers-reduced-motion:reduce)').matches?'none':'transform 400ms ease';

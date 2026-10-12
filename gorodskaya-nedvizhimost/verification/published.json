@@ -1,0 +1,46 @@
+{
+  "commit": "992cf591d998ffff6341177eadd3334490f50fc4",
+  "base": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/gorodskaya-nedvizhimost/",
+  "checkedAt": "2026-10-12T22:11:02.764Z",
+  "checks": [
+    {
+      "width": 390,
+      "broken": [],
+      "overflow": false,
+      "menu": true,
+      "map": true,
+      "filters": true,
+      "request": true
+    },
+    {
+      "width": 768,
+      "broken": [],
+      "overflow": false,
+      "menu": true,
+      "map": true,
+      "filters": true,
+      "request": true
+    },
+    {
+      "width": 1440,
+      "broken": [],
+      "overflow": false,
+      "menu": true,
+      "map": true,
+      "filters": true,
+      "request": true
+    },
+    {
+      "width": 2560,
+      "broken": [],
+      "overflow": false,
+      "menu": true,
+      "map": true,
+      "filters": true,
+      "request": true
+    }
+  ],
+  "errors": [],
+  "missing": [],
+  "external": []
+}
