@@ -88,6 +88,16 @@
   addEventListener('scroll',highlightSticky,{passive:true});highlightSticky();
   // Match the common header phone / menu placement without changing links.
   const header=document.querySelector('.site-header');header.classList.add('catalog-header-ready');
+  const heroContacts=header.querySelector('.site-header__messengers');
+  if(heroContacts){
+    heroContacts.className='catalog-header-contacts';
+    for(const name of ['WhatsApp','MAX','Telegram']){
+      const contact=heroContacts.querySelector(`[aria-label="${name}"]`);
+      if(contact){contact.classList.add('catalog-header-contact');heroContacts.append(contact);}
+    }
+    const phone=heroContacts.querySelector('.site-header__phone');
+    if(phone){phone.classList.add('catalog-header-contact','catalog-header-contact--phone');heroContacts.append(phone);}
+  }
   header.querySelector('.site-header__mobile-phone')?.classList.add('catalog-primary-call');
   document.body.dataset.commercialReferenceReady='true';
 })().catch(error=>console.error('Commercial reference initialization failed:',error));

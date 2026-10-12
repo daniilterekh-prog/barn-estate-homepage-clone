@@ -4,7 +4,7 @@ const {PNG}=require('/home/daniil/.local/share/codex-toolkit/node_modules/pngjs'
 (async()=>{
  const {default:pixelmatch}=await import('/home/daniil/Documents/Codex/2026-10-11/firecrawl/work/web-capture-toolkit/node_modules/pixelmatch/index.js');
  const browser=await chromium.launch({executablePath:'/usr/bin/google-chrome',args:['--no-sandbox']});
- try{for(const width of [320,390,540,768,1024,1440,1920]){
+ try{for(const width of [320,390,540,768,1024,1440,1920,2560,3840]){
   const pages=[],images=[];
   for(const url of ['https://daniilterekh-prog.github.io/barn-estate-homepage-clone/kurortnaya/',process.argv[2]||'file://'+path.resolve(__dirname,'../kommercheskaya-nedvizhimost/index.html')]){
    const page=await browser.newPage({viewport:{width,height:900},reducedMotion:'reduce'});pages.push(page);
