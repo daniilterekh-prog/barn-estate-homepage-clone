@@ -1,5 +1,6 @@
 /* City-specific data/layout exceptions to the FirstDegreeNode reference. */
 .city-map-filters svg { width:20px; height:20px; flex-shrink:0; }
+body.city-map-filter-open .hero-filter-modal { z-index:11000; }
 /* The current front original no longer shows this legacy link inside the modal. */
 html body .hero-filter-modal .hero-filter-panel__advanced { display:none; }
 /* Align the visible photograph, not only its contain-sized image box. */
