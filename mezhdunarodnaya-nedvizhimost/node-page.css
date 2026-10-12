@@ -22,7 +22,10 @@ html body.international-node-design .catalog-mode-toolbar .catalog-grid__sort-se
 .international-node-design .catalog-consultation__image { object-fit: contain; }
 .international-node-design .catalog-feedback-modal { z-index: 1400; }
 .international-node-design .catalog-grid__item { display: list-item; }
-html body.international-node-design .catalog-contact__methods { max-width: none; }
+html body.international-node-design :is(.catalog-consultation__methods, .catalog-contact__methods) {
+  width: 100%;
+  max-width: 610px;
+}
 @media (min-width: 541px) and (max-width: 1024px) {
   html body.international-node-design .catalog-contact__card { min-height: 457px; padding: clamp(26px, 4vw, 52px); }
 }
