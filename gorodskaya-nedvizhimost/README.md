@@ -1,5 +1,7 @@
 # Городская недвижимость — узел первой степени
 
+Мобильная сортировка, 12 октября 2026: в `node-city.css` стрелки листинга и карты оптически подняты на 3 px относительно исходного повёрнутого квадрата; в листинге правый отступ уменьшен с 16 до 8 px, чтобы отделить стрелку от подписи «По релевантности». Только до 540 px, desktop не изменён. Проверены 360/390/430/540 px и desktop 1440 px, переключение сортировки в обоих блоках и отсутствие горизонтального overflow.
+
 ## Выдача карты по Курортной
 
 `city-map-fullscreen.js` / `city-map-fullscreen.css` происходят из [Курортной / map-fullscreen.js](https://github.com/daniilterekh-prog/barn-estate-homepage-clone/blob/master/kurortnaya/map-fullscreen.js) и соответствующего CSS, состояние 12 октября 2026. Каноническая оболочка: [barnes-assets / MapFullscreenPanel](https://github.com/daniilterekh-prog/barnes-assets/blob/main/blocks/nodes/first-degree/map/panel/README.md), UI 1.1. Новые библиотеки не добавлены; исходный курортный компонент не менялся.
