@@ -4,9 +4,10 @@ const fs = require('node:fs/promises');
   const target = 'mezhdunarodnaya-nedvizhimost';
   const drawer = await fs.readFile(target + '/map-filters-template.html', 'utf8');
   let code = await fs.readFile('kurortnaya/map-fullscreen.js', 'utf8');
+  code = code.replaceAll('Локация', 'Страна').replace("unavailable.push('локация')", "unavailable.push('страна')");
   code = code.replace("if (!trigger || !source || document.querySelector('.map-browser')) return;", "if (!trigger || !source || document.querySelector('.map-browser')) return;\n  source.dataset.nodeMapBrowser = 'true';");
   code = code.replace("source.dataset.nodeMapBrowser = 'true';", "source.dataset.nodeMapBrowser = 'true';\n  var filterTemplate=document.createElement('template');filterTemplate.id='source-map-filters';filterTemplate.innerHTML="+JSON.stringify(drawer)+";document.body.appendChild(filterTemplate);");
-  code = code.replace(/map-fullscreen\.css\?v=\d+/, 'node-map-browser.css?v=20261012-ref-sync-1');
+  code = code.replace(/map-fullscreen\.css\?v=\d+/, 'node-map-browser.css?v=20261012-country-label-1');
   code = code.replace("new URL('map-preview.png', assetsBase)", "new URL('assets/map-browser-preview.png', assetsBase)");
   code = code.replace('var items = window.BarnesMapProjects || [];', `var cardElements = Array.from(document.querySelectorAll('.catalog-grid__item'));
   var items = cardElements.map(function (element) {
@@ -47,7 +48,7 @@ const fs = require('node:fs/promises');
     const prefix = file.startsWith('standalone/') ? '../' : '';
     let html = await fs.readFile(target + '/' + file, 'utf8');
     html = html.replace(/<script[^>]+src="[^"]*node-map-browser\.js[^"]*"[^>]*><\/script>/g, '');
-    html = html.replace(/(<script src="[^"]*source-runtime\.js[^>]+><\/script>)/, '<script src="' + prefix + 'node-map-browser.js?v=20261012-ref-sync-1" defer></script>$1');
+    html = html.replace(/(<script src="[^"]*source-runtime\.js[^>]+><\/script>)/, '<script src="' + prefix + 'node-map-browser.js?v=20261012-country-label-1" defer></script>$1');
     await fs.writeFile(target + '/' + file, html);
   }
 })().catch(error => { console.error(error); process.exitCode = 1; });

@@ -12,6 +12,8 @@ try {
     page.on('pageerror',error=>errors.push(`${width}: ${error.message}`));
     await page.goto(process.env.COUNTRY_LOCAL_URL||'http://127.0.0.1:4188/zagorodnaya-nedvizhimost/',{waitUntil:'networkidle'});
     await page.evaluate(()=>document.fonts.ready);
+    const listingModes=page.locator('.catalog-mode-switch [data-country-mode]');
+    if((await listingModes.allTextContents()).map(text=>text.trim()).join('|')!=='Покупка|Аренда')throw new Error(`${width}: listing deal labels differ`);
     const quick=page.locator('.catalog-mode-toolbar [data-country-quick]');
     if(await quick.count()!==4)throw new Error(`${width}: expected four listing quick filters`);
     if(!await quick.first().getByText('Шоссе').isVisible())throw new Error(`${width}: listing highway label missing`);
@@ -44,18 +46,23 @@ try {
       await page.screenshot({path:`/tmp/country-reference-listing-${width}.png`});
     }
     await page.locator('.catalog-projects-map__fullscreen').click();
+    if((await page.locator('.country-map-market button').allTextContents()).map(text=>text.trim()).join('|')!=='Покупка|Аренда')throw new Error(`${width}: map deal labels differ`);
     const mapQuick=page.locator('.catalog-projects-map__panel [data-country-quick]');
     if(await mapQuick.count()!==4)throw new Error(`${width}: expected four map quick filters`);
-    if(!((await mapQuick.first().getAttribute('aria-label'))||'').startsWith('Шоссе:'))throw new Error(`${width}: map highway label missing`);
+    if(!((await page.locator('.catalog-projects-map__panel [data-country-quick="location"]').getAttribute('aria-label'))||'').startsWith('Шоссе:'))throw new Error(`${width}: map highway label missing`);
+    if(!((await mapQuick.first().getAttribute('aria-label'))||'').startsWith('Тип объекта:'))throw new Error(`${width}: map type label differs from reference`);
     if(await page.locator('.country-map-sort select').inputValue()!==sortValue)throw new Error(`${width}: map sort did not sync`);
     if(width<=540)await page.locator('.catalog-projects-map__panel-handle').click();
-    await mapQuick.nth(2).click();
+    await page.locator('.catalog-projects-map__panel [data-country-quick="price"]').click();
     if(!await popup.isVisible())throw new Error(`${width}: map popup hidden`);
     await popup.getByRole('option',{name:'Любая стоимость'}).click();
     if(await popup.isVisible())throw new Error(`${width}: map popup did not close`);
     await page.locator('[data-country-market="lot"]').click();
     if(await page.locator('[data-country-mode="lot"]').getAttribute('aria-pressed')!=='true')throw new Error(`${width}: market not synchronized`);
     if(!await page.locator('.country-brand-filters[data-brand-context="map"] input').first().isChecked())throw new Error(`${width}: brand flags not synchronized`);
+    await page.locator('.country-map-reset').click();
+    if(await page.locator('.country-brand-filters[data-brand-context="map"] input').first().isChecked())throw new Error(`${width}: reset did not clear brand flags`);
+    if(await page.locator('.country-map-sort select').inputValue()!==await page.locator('.country-map-sort select').evaluate(select=>select.options[0].value))throw new Error(`${width}: reset did not clear sort`);
     if(width===390||width===1440)await page.screenshot({path:`/tmp/country-reference-map-${width}.png`});
     await page.locator('.catalog-projects-map__exit').click();
     await page.waitForFunction(()=>!document.fullscreenElement&&!document.querySelector('.country-map-fallback')&&!document.querySelector('.country-map-expanded'));

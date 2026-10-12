@@ -21,7 +21,7 @@
   const choice=(key,button)=>{
     if(key==='sort')return {title:'Сортировка',values:all('option',button.nextElementSibling).map(option=>[option.value,option.textContent.trim()]),selected:()=>button.nextElementSibling.value};
     if(key==='location')return {title:'Шоссе',values:listing.getLocations().map(value=>[value,value]),selected:()=>listing.getSelection().location};
-    if(key==='type')return {title:'Тип',values:typeOptions,selected:()=>state.types[0]||''};
+    if(key==='type')return {title:button.closest('.catalog-projects-map__panel')?'Тип объекта':'Тип',values:typeOptions,selected:()=>state.types[0]||''};
     if(key==='price')return {title:'Стоимость',values:priceOptions,selected:()=>state.bands[0]||''};
     if(key==='bedrooms')return {title:'Спальни',values:bedroomOptions,selected:()=>listing.getSelection().bedrooms};
     return null;
@@ -93,24 +93,46 @@
     }
     return fieldset;
   }
+  function resetMapFilters(){
+    close();
+    const search=$('.catalog-projects-map__panel-search-input');if(search)search.value='';
+    document.dispatchEvent(new CustomEvent('country-filter-set',{detail:{types:[],bands:[],districts:[],priceMin:null,priceMax:null,areaMin:null,areaMax:null,roomsMin:null,roomsMax:null}}));
+    listing.setSelection('location','');listing.setSelection('bedrooms','');
+    const sort=listing.getSort();sort.value=sort.options[0].value;sort.dispatchEvent(new Event('change',{bubbles:true}));
+    state.brandFlags=[];sync();
+  }
   function mount(){
     const toolbar=$('.catalog-mode-toolbar');
     if(toolbar&&!$('.country-brand-filters[data-brand-context="listing"]'))toolbar.append(makeBrands('listing'));
     const panel=$('.catalog-projects-map__panel');
     if(panel&&!$('.country-map-reference',panel)){
+      const filterRoot=$('.catalog-projects-map__panel-filters',panel);
+      const iconPaths={
+        location:'<path d="M12 21s6-5.4 6-11a6 6 0 1 0-12 0c0 5.6 6 11 6 11Z"/><circle cx="12" cy="10" r="2.25"/>',
+        type:'<path d="M4 21V5h10v16M14 10h6v11M2 21h20M8 9h2M8 13h2M8 17h2M17 14h1M17 17h1"/>',
+        price:'<circle cx="12" cy="12" r="9"/><path d="M9 16V7.5h3.4a2.75 2.75 0 1 1 0 5.5H9m0 0h5.6m-5.6 2h4.6"/>',
+        bedrooms:'<path d="M3 18v-7.5M21 18v-5.5a2 2 0 0 0-2-2h-7.5A2.5 2.5 0 0 0 9 13v2M3 15h18M5.5 10.5h2A1.5 1.5 0 0 1 9 12v3H4v-3a1.5 1.5 0 0 1 1.5-1.5Z"/>'
+      };
       all('.catalog-quick-filters__button',panel).forEach((button,index)=>{
-        const key=['location','type','price','bedrooms'][index];button.dataset.countryQuick=key;
-        const label=$('.catalog-quick-filters__label',button);if(label)label.textContent=({location:'Шоссе',type:'Тип',price:'Стоимость',bedrooms:'Спальни'})[key];
+        const key=['type','price','location','bedrooms'][index];button.dataset.countryQuick=key;
+        const label=$('.catalog-quick-filters__label',button);if(label)label.textContent=({location:'Шоссе',type:'Тип объекта',price:'Стоимость',bedrooms:'Спальни'})[key];
+        button.insertAdjacentHTML('afterbegin',`<span class="country-map-filter-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round">${iconPaths[key]}</svg></span>`);
       });
+      const heading=$('.catalog-projects-map__panel-title',panel);if(heading)heading.textContent='Найдено объектов: 0';
+      const search=$('.catalog-projects-map__panel-search-input',panel);if(search)search.placeholder='Поиск объектов';
+      const filterIcon=$('.catalog-projects-map__panel-filter-icon',panel);
+      if(filterIcon)filterIcon.innerHTML='<path d="M4 6h3m4 0h9M4 12h8m4 0h4M4 18h4m4 0h8" stroke="currentColor" stroke-width="1.15" stroke-linecap="round"/><circle cx="9" cy="6" r="2" stroke="currentColor" stroke-width="1.15"/><circle cx="14" cy="12" r="2" stroke="currentColor" stroke-width="1.15"/><circle cx="10" cy="18" r="2" stroke="currentColor" stroke-width="1.15"/>';
       const controls=document.createElement('div');controls.className='country-map-reference';
-      const market=document.createElement('div');market.className='country-map-market';market.setAttribute('role','group');market.setAttribute('aria-label','Рынок недвижимости');
-      for(const [value,label] of [['project','Новостройки'],['lot','Вторичка']]){const button=document.createElement('button');button.type='button';button.dataset.countryMarket=value;button.textContent=label;button.addEventListener('click',()=>{listing.setMarket(value);sync();});market.append(button);}
+      const market=document.createElement('div');market.className='country-map-market';market.setAttribute('role','group');market.setAttribute('aria-label','Тип сделки');
+      for(const [value,label] of [['project','Покупка'],['lot','Аренда']]){const button=document.createElement('button');button.type='button';button.dataset.countryMarket=value;button.textContent=label;button.addEventListener('click',()=>{listing.setMarket(value);sync();});market.append(button);}
+      filterRoot.before(market);
       const sorting=document.createElement('div');sorting.className='country-map-sort';sorting.setAttribute('aria-label','Сортировка');
       const source=listing.getSort(),select=source.cloneNode(true);select.removeAttribute('id');
       select.addEventListener('change',()=>{if(source.value===select.value)return;source.value=select.value;source.dispatchEvent(new Event('change',{bubbles:true}));});
       source.addEventListener('change',()=>{if(select.value===source.value)return;select.value=source.value;select.dispatchEvent(new Event('change',{bubbles:true}));});
-      sorting.append(select);controls.append(market,sorting,makeBrands('map'));
-      $('.catalog-projects-map__panel-filters',panel).after(controls);
+      const reset=document.createElement('button');reset.type='button';reset.className='country-map-reset';reset.textContent='Сбросить фильтры';reset.addEventListener('click',resetMapFilters);
+      sorting.append(select);controls.append(sorting,makeBrands('map'),reset);
+      filterRoot.after(controls);
     }
     all('.catalog-mode-toolbar .catalog-grid__sort select,.country-map-sort select').forEach(select=>{
       if(select.dataset.countryEnhanced)return;select.dataset.countryEnhanced='true';

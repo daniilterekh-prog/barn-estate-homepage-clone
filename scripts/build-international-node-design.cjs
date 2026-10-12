@@ -20,7 +20,7 @@ const fs=require('node:fs/promises');
   await fs.writeFile(target+'/node-components.js',code);
   await fs.writeFile(target+'/node-owner-footer.css',await fs.readFile('kurortnaya/owner-footer.css','utf8'));
   await fs.writeFile(target+'/node-brand-filters.css',await fs.readFile('kurortnaya/brand-filters.css','utf8'));
-  await fs.writeFile(target+'/node-brand-filters.js',(await fs.readFile('kurortnaya/brand-filters.js','utf8')).replace(/brand-filters\.css\?v=\d+/, 'node-brand-filters.css?v=20261012-ref-sync-1'));
+  await fs.writeFile(target+'/node-brand-filters.js',(await fs.readFile('kurortnaya/brand-filters.js','utf8')).replace(/brand-filters\.css\?v=\d+/, 'node-brand-filters.css?v=20261012-country-label-1'));
   const footer=(await fs.readFile('kurortnaya/index.html','utf8')).match(/<footer class="site-footer"[\s\S]*?<\/footer>/)[0].replaceAll('data-v-6eb18211','data-v-1e05d2e0');
   for(const [sourceName,targetName]of [['ui-kit.css','node-ui.css'],['start-sales-cards.css','node-start-sales.css'],['listing-mode.css','node-listing.css'],['start-sales-cards.js','node-start-sales.js']]){
     let text=await fs.readFile('kurortnaya/'+sourceName,'utf8');
@@ -38,10 +38,10 @@ const fs=require('node:fs/promises');
     html=html.replace(/src="[^"]+"(?= alt="Зарубежная недвижимость для жизни и инвестиций" class="catalog-intro__image")/, 'src="'+prefix+'../kurortnaya/assets/barnes-moscow-residence-v4.webp"');
     html=html.replaceAll(' Показать объекты </button>', ' Найти </button>');
     html=html.replace(/<link[^>]+href="[^"?]*node-[^"]*"[^>]*>/g,'').replace(/<script[^>]+src="[^"?]*node-[^"?]*\.js[^"]*"[^>]*><\/script>/g,'').replace(/<link[^>]+href="[^"]*shared\/owner-header\.css[^"]*"[^>]*>/g,'');
-    html=html.replace('</head>',['node-ui.css','node-listing.css','node-start-sales.css','node-page.css','node-owner-footer.css'].map(file=>'<link rel="stylesheet" href="'+prefix+file+'?v=20261012-ref-sync-1">').join('')+'<link rel="stylesheet" href="'+prefix+'../shared/owner-header.css?v=20261012-owner-header-5"></head>');
+    html=html.replace('</head>',['node-ui.css','node-listing.css','node-start-sales.css','node-page.css','node-owner-footer.css'].map(file=>'<link rel="stylesheet" href="'+prefix+file+'?v=20261012-country-label-1">').join('')+'<link rel="stylesheet" href="'+prefix+'../shared/owner-header.css?v=20261012-owner-header-5"></head>');
     const sourceRuntime=html.match(/<script src="[^"]*source-runtime\.js[^"]*" defer=""><\/script>/)?.[0];
     if(!sourceRuntime)throw new Error('Missing source runtime: '+file);
-    html=html.replace(sourceRuntime,'<script src="'+prefix+'node-components.js?v=20261012-ref-sync-1" defer></script><script src="'+prefix+'node-catalog.js?v=20261012-country-1" defer></script>'+sourceRuntime.replace(/\?v=[^"]+/,'?v=20261012-ref-sync-1')+'<script src="'+prefix+'node-start-sales.js?v=20261012-ref-sync-1" defer></script>');
+    html=html.replace(sourceRuntime,'<script src="'+prefix+'node-components.js?v=20261012-country-label-1" defer></script><script src="'+prefix+'node-catalog.js?v=20261012-country-label-1" defer></script>'+sourceRuntime.replace(/\?v=[^"]+/,'?v=20261012-country-label-1')+'<script src="'+prefix+'node-start-sales.js?v=20261012-country-label-1" defer></script>');
     await fs.writeFile(target+'/'+file,html);
   }
   require('node:child_process').execFileSync(process.execPath,['scripts/build-international-map-browser.cjs']);

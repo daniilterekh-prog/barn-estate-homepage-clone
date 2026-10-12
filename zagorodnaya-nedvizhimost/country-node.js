@@ -57,7 +57,7 @@
   q('.catalog-best-offers__title').textContent = 'Старты продаж';
   q('.catalog-quick-filters')?.remove();
   const toolbar = document.createElement('section'); toolbar.className = 'catalog-mode-toolbar'; toolbar.setAttribute('aria-label', 'Фильтры каталога');
-  toolbar.innerHTML = '<div class="catalog-mode-switch" role="group" aria-label="Тип недвижимости"><button class="catalog-mode-switch__button is-active" type="button" data-country-mode="project" aria-pressed="true">Новостройки</button><button class="catalog-mode-switch__button" type="button" data-country-mode="lot" aria-pressed="false">Вторичная</button></div><div class="catalog-mode-filters catalog-quick-filters" data-v-6fd45cc6></div>';
+  toolbar.innerHTML = '<div class="catalog-mode-switch" role="group" aria-label="Тип сделки"><button class="catalog-mode-switch__button is-active" type="button" data-country-mode="project" aria-pressed="true">Покупка</button><button class="catalog-mode-switch__button" type="button" data-country-mode="lot" aria-pressed="false">Аренда</button></div><div class="catalog-mode-filters catalog-quick-filters" data-v-6fd45cc6></div>';
   const paths = {
     location: '<path d="M12 21s6-5.4 6-11a6 6 0 1 0-12 0c0 5.6 6 11 6 11Z"/><circle cx="12" cy="10" r="2.25"/>',
     type: '<path d="M4 21V6l8-3 8 3v15M2 21h20M8 10h2m4 0h2m-8 4h2m4 0h2M10 21v-4h4v4"/>',
