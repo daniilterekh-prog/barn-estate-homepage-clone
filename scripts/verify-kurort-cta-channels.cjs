@@ -12,6 +12,12 @@ const assert = require('node:assert/strict');
       await page.evaluate(() => document.fonts.ready);
       for (const prefix of ['catalog-consultation', 'catalog-contact']) {
         const methods = page.locator(`.${prefix}__methods`);
+        const edges = await methods.evaluate((el, prefix) => {
+          const group = el.getBoundingClientRect();
+          const form = document.querySelector(`.${prefix}__form`).getBoundingClientRect();
+          return [Math.abs(group.left - form.left), Math.abs(group.right - form.right)];
+        }, prefix);
+        assert.ok(edges.every(delta => delta < 1), `${width} ${prefix}: channel grid matches form edges, deltas ${edges}`);
         const boxes = await methods.locator('button').evaluateAll(buttons => buttons.map(button => ({
           button: button.getBoundingClientRect().toJSON(),
           icon: button.firstElementChild.getBoundingClientRect().toJSON(),
