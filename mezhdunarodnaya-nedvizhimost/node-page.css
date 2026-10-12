@@ -2,7 +2,13 @@
 .international-node-design .catalog-quick-links--hero { display: none; }
 .international-node-design .catalog-page-nav { display: none !important; }
 .international-node-design .catalog-best-offers__slider-row { margin-top: 0; }
-.international-node-design .catalog-mode-toolbar .catalog-grid__sort { width: 160px; height: 40px; }
+.international-node-design .catalog-mode-toolbar .catalog-grid__sort { width: 190px; height: 40px; }
+html body.international-node-design .catalog-mode-toolbar .catalog-grid__sort-select {
+  flex: 0 0 auto;
+  width: 190px;
+  max-width: none;
+  padding-right: 40px;
+}
 .international-node-design .catalog-consultation__image { object-fit: contain; }
 .international-node-design .catalog-feedback-modal { z-index: 1400; }
 .international-node-design .catalog-grid__item { display: list-item; }
