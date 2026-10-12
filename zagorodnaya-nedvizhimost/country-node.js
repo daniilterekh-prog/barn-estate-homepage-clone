@@ -72,7 +72,7 @@
   const sort = q('.catalog-grid__sort'); q('select', sort).setAttribute('data-v-5a2b3b97', ''); toolbar.append(sort);
   const detailed = document.createElement('button'); detailed.className = 'catalog-mode-detailed-filters'; detailed.type = 'button'; detailed.setAttribute('aria-haspopup', 'dialog'); detailed.setAttribute('aria-expanded', 'false');
   detailed.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.15" aria-hidden="true"><path d="M4 6h3m4 0h9M4 12h8m4 0h4M4 18h4m4 0h8"/><circle cx="9" cy="6" r="2"/><circle cx="14" cy="12" r="2"/><circle cx="10" cy="18" r="2"/></svg><span class="catalog-mode-detailed-filters__label catalog-mode-detailed-filters__label--desktop">Все фильтры</span><span class="catalog-mode-detailed-filters__label catalog-mode-detailed-filters__label--mobile">Фильтры</span>';
-  detailed.addEventListener('click', () => openFilters(filters.map(([key]) => key), 'Все фильтры', detailed)); toolbar.append(detailed); header.after(toolbar);
+  detailed.addEventListener('click', () => document.dispatchEvent(new CustomEvent('country-filter-open', {detail: {trigger: detailed}}))); toolbar.append(detailed); header.after(toolbar);
   const empty = document.createElement('p'); empty.className = 'country-catalog-empty'; empty.setAttribute('role', 'status'); empty.textContent = 'Объектов с такими параметрами нет. Измени фильтры.'; list.after(empty);
   let mode = 'project', expanded = false;
   const selection = {location: '', price: '', bedrooms: ''};
@@ -81,7 +81,7 @@
     let count = 0;
     all(':scope > .catalog-grid__item', list).forEach(item => {
       item.style.display = '';
-      const match = item.dataset.listingMode === mode && (!selection.location || item.dataset.location === selection.location) && (!selection.price || (Number(item.dataset.price) > 0 && Number(item.dataset.price) <= Number(selection.price))) && (!selection.bedrooms || Number.parseInt(item.dataset.bedrooms) >= Number(selection.bedrooms));
+      const match = item.dataset.listingMode === mode && (!selection.location || item.dataset.location === selection.location) && (!selection.price || (Number(item.dataset.price) > 0 && Number(item.dataset.price) <= Number(selection.price))) && (!selection.bedrooms || Number.parseInt(item.dataset.bedrooms) >= Number(selection.bedrooms)) && (!window.countryMatchesFullFilter || window.countryMatchesFullFilter(item));
       item.hidden = !match || (innerWidth < 768 && !expanded && count >= 5);
       if (match) count++;
     });
@@ -89,6 +89,13 @@
     if (more) more.hidden = expanded || count <= (innerWidth < 768 ? 5 : 100);
     all('[data-country-mode]', toolbar).forEach(b => { const active = b.dataset.countryMode === mode; b.classList.toggle('is-active', active); b.setAttribute('aria-pressed', String(active)); });
   };
+  document.addEventListener('country-filter-apply', event => {
+    const s = event.detail;
+    empty.textContent = s.types?.length || s.districts?.length || s.roomsMin != null || s.roomsMax != null
+      ? 'В локальных карточках нет данных о типе объекта, районе и количестве комнат. Для поиска по этим параметрам используй расширенный поиск на оригинальном сайте.'
+      : 'Объектов с такими параметрами нет. Измени фильтры.';
+    Object.keys(selection).forEach(key => selection[key] = ''); expanded = true; render();
+  });
   all('[data-country-mode]', toolbar).forEach(button => button.addEventListener('click', () => { mode = button.dataset.countryMode; expanded = false; Object.keys(selection).forEach(key => selection[key] = ''); render(); }));
   more?.addEventListener('click', () => { expanded = true; render(); }); addEventListener('resize', render, {passive: true});
   all('.catalog-grid__item', list).forEach((item, i) => item.dataset.order = String(i));

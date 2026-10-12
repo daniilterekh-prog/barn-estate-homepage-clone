@@ -1,0 +1,161 @@
+{
+  "pass": true,
+  "results": [
+    {
+      "width": 320,
+      "geometry": {
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 305,
+          "height": 900,
+          "top": 0,
+          "right": 305,
+          "bottom": 900,
+          "left": 0
+        },
+        "overflow": false
+      },
+      "entryPoints": 3,
+      "applyReset": true,
+      "keyboard": true
+    },
+    {
+      "width": 390,
+      "geometry": {
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 375,
+          "height": 900,
+          "top": 0,
+          "right": 375,
+          "bottom": 900,
+          "left": 0
+        },
+        "overflow": false
+      },
+      "pixels": 0,
+      "rawPixels": 0,
+      "entryPoints": 3,
+      "applyReset": true,
+      "keyboard": true
+    },
+    {
+      "width": 540,
+      "geometry": {
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 525,
+          "height": 900,
+          "top": 0,
+          "right": 525,
+          "bottom": 900,
+          "left": 0
+        },
+        "overflow": false
+      },
+      "entryPoints": 3,
+      "applyReset": true,
+      "keyboard": true
+    },
+    {
+      "width": 768,
+      "geometry": {
+        "rect": {
+          "x": 56.5,
+          "y": 24,
+          "width": 640,
+          "height": 852,
+          "top": 24,
+          "right": 696.5,
+          "bottom": 876,
+          "left": 56.5
+        },
+        "overflow": false
+      },
+      "entryPoints": 3,
+      "applyReset": true,
+      "keyboard": true
+    },
+    {
+      "width": 1024,
+      "geometry": {
+        "rect": {
+          "x": 184.5,
+          "y": 24,
+          "width": 640,
+          "height": 852,
+          "top": 24,
+          "right": 824.5,
+          "bottom": 876,
+          "left": 184.5
+        },
+        "overflow": false
+      },
+      "entryPoints": 3,
+      "applyReset": true,
+      "keyboard": true
+    },
+    {
+      "width": 1440,
+      "geometry": {
+        "rect": {
+          "x": 392.5,
+          "y": 24,
+          "width": 640,
+          "height": 852,
+          "top": 24,
+          "right": 1032.5,
+          "bottom": 876,
+          "left": 392.5
+        },
+        "overflow": false
+      },
+      "pixels": 0,
+      "rawPixels": 82,
+      "entryPoints": 3,
+      "applyReset": true,
+      "keyboard": true
+    },
+    {
+      "width": 1920,
+      "geometry": {
+        "rect": {
+          "x": 632.5,
+          "y": 24,
+          "width": 640,
+          "height": 852,
+          "top": 24,
+          "right": 1272.5,
+          "bottom": 876,
+          "left": 632.5
+        },
+        "overflow": false
+      },
+      "entryPoints": 3,
+      "applyReset": true,
+      "keyboard": true
+    },
+    {
+      "width": 2560,
+      "geometry": {
+        "rect": {
+          "x": 952.5,
+          "y": 24,
+          "width": 640,
+          "height": 852,
+          "top": 24,
+          "right": 1592.5,
+          "bottom": 876,
+          "left": 952.5
+        },
+        "overflow": false
+      },
+      "entryPoints": 3,
+      "applyReset": true,
+      "keyboard": true
+    }
+  ]
+}

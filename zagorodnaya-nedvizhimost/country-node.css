@@ -42,3 +42,17 @@ html body.country-node-page :is(.catalog-consultation__methods,.catalog-contact_
 .country-filter-dialog__actions button[type="submit"] { background:#8b1d25; color:white; border-color:#8b1d25; }
 .country-catalog-empty { padding:32px 0; color:#4f4d49; }
 .country-node-page :focus-visible { outline:2px solid #8b1d25; outline-offset:3px; }
+.country-node-page .hero-filter-modal[hidden] { display:none!important; }
+.country-node-page .hero-filter-modal { z-index:2000; }
+.country-node-page .hero-filter-modal :focus-visible { outline-color:#fff; }
+.country-node-page .country-map-filters {
+  display:inline-flex; align-items:center; justify-content:center; gap:8px;
+  height:58px; padding:0 18px; background:#fff; border:1px solid #e4e4e4;
+  color:#4f4d49; border-radius:1px; font:300 17px "Tilda Sans",sans-serif;
+  cursor:pointer; white-space:nowrap;
+}
+.country-node-page .country-map-filters svg { width:18px; height:18px; flex:none; }
+@media (max-width:540px) {
+  .country-node-page .country-map-filters { height:44px; padding:0 12px; }
+  .country-node-page .country-map-filters .catalog-mode-detailed-filters__label--desktop { display:none; }
+}

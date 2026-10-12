@@ -160,6 +160,7 @@
 
   const filterButton = document.querySelector('.catalog-hero-filters__filter-icon');
   filterButton?.addEventListener('click', () => {
+    if (document.body.classList.contains('country-node-page')) return;
     filterButton.classList.toggle('catalog-hero-filters__filter-icon--active');
     filterButton.setAttribute('aria-expanded', String(filterButton.classList.contains('catalog-hero-filters__filter-icon--active')));
   });
