@@ -141,28 +141,7 @@ html body.commercial-node .hero-filter-modal { z-index: 2200; }
 }
 /* Keep the reference contact button reachable even when node links scroll. */
 /* Central CTA: compact equal channel buttons, aligned to the form columns. */
-html body.commercial-node .catalog-consultation__methods[class] {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 12px;
-}
-html body.commercial-node .catalog-consultation__method[class] {
-  font-size: 16px;
-  gap: 6px;
-  padding-inline: 8px;
-  height: 44px;
-  min-height: 44px;
-}
-html body.commercial-node .catalog-consultation__method-icon[class] {
-  flex-basis: 16px;
-  width: 16px;
-  height: 16px;
-  font-size: 16px;
-}
-@media (min-width: 1280px) {
-  html body.commercial-node .catalog-consultation__methods[class] {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
-}
+/* Channel geometry is inherited from the shared Kurortnaya UI kit. */
 @media (max-width: 900px) {
   html body.commercial-node .catalog-page-nav__brand,
   html body.commercial-node .catalog-page-nav__logo { display: none; }

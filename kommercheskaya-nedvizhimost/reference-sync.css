@@ -15,7 +15,6 @@ html body.commercial-node .map-browser .map-browser__reset { grid-row:6; }
 html body.commercial-node .map-browser .map-browser__market .is-active::after { display:none; }
 html body .commercial-quick-range { min-width:0;width:100%;padding:10px;border:0;border-bottom:1px solid #e4e4e4;font:300 17px/1.3 'Tilda Sans',sans-serif;color:#4f4d49; }
 html body.commercial-node .commercial-mobile-request[class] { display:none; }
-html body.commercial-node .catalog-consultation__method[class] { --contact-icon-size:16px;grid-template-columns:16px 4.8em; }
 @media(max-width:1024px){
  html body.commercial-node .catalog-mode-toolbar { grid-template-columns:minmax(0,1fr) auto; }
  html body.commercial-node .catalog-mode-toolbar .catalog-mode-switch { grid-column:1 / -1;grid-row:1; }
@@ -42,6 +41,11 @@ html body.commercial-node .floating-expert__avatar[class] img { transform:scale(
 /* One generated room spans the whole CTA, including behind Alina. */
 html body.commercial-unified-cta .catalog-consultation__media::before { display:none; }
 html body.commercial-unified-cta .catalog-consultation__image[class] { width:100%;object-fit:cover;object-position:center; }
+/* Keep the portrait at desktop scale instead of enlarging/cropping it on ultrawide screens. */
+@media(min-width:1921px){
+ html body.commercial-unified-cta .catalog-consultation__media { background:#101318 url("assets/cta-consultation-interior.webp") center / cover no-repeat; }
+ html body.commercial-unified-cta .catalog-consultation__image[class] { width:1920px;max-width:none;left:50%;transform:translateX(-50%);object-position:center top;mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent); }
+}
 @media(max-width:1024px){
  html body.commercial-unified-cta .catalog-consultation__image[class] { display:none; }
  html body.commercial-unified-cta .catalog-consultation__media { background:#111 url("assets/cta-alina-unified-v2.png") right center / auto 100% no-repeat; }
