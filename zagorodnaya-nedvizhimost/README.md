@@ -79,6 +79,7 @@ CAPTURE_TOOLKIT=/path/to/web-capture-toolkit COUNTRY_LOCAL_URL=http://127.0.0.1:
 ## Происхождение
 
 - Каноническая библиотека BARNES: https://github.com/daniilterekh-prog/barnes-assets — проверена перед работой.
+- SVG быстрых и подробных фильтров сверены с узловой страницей [`kurortnaya/`](../kurortnaya/): исходные контуры в `kurortnaya/index.html` и `kurortnaya/map-fullscreen.js`. Проверка 11 иконок: `CAPTURE_TOOLKIT=/path/to/web-capture-toolkit node scripts/check-country-filter-icons.cjs`.
 - HTML, CSS, фотографии каталога, логотип и обложка сохранены с оригинальной страницы. Исходный CSS: `https://barn-estate.ru/_nuxt/style.HswSfo9A.css`; изменены только локальные пути шрифтов/картинок.
 - Tilda Sans Light / Regular / Medium: исходные файлы сайта; побайтовое совпадение с оригиналом подтверждено SHA-256.
 - Карусели: [Splide 4.1.4](https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/), MIT, локальный `vendor/splide-4.1.4.min.js` и `vendor/SPLIDE-LICENSE`. Настройки и responsive breakpoints взяты из runtime оригинала.
