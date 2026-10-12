@@ -42,7 +42,11 @@ html body.commercial-node .floating-expert__avatar[class] img { transform:scale(
 /* One generated room spans the whole CTA, including behind Alina. */
 html body.commercial-unified-cta .catalog-consultation__media::before { display:none; }
 html body.commercial-unified-cta .catalog-consultation__image[class] { width:100%;object-fit:cover;object-position:center; }
-@media(max-width:540px){
+@media(max-width:1024px){
+ html body.commercial-unified-cta .catalog-consultation__image[class] { display:none; }
  html body.commercial-unified-cta .catalog-consultation__media { background:#111 url("assets/cta-alina-unified-v2.png") right center / auto 100% no-repeat; }
+ html body.commercial-unified-cta .catalog-consultation__overlay { background:rgba(5,7,10,.7); }
+}
+@media(max-width:540px){
  html body.commercial-unified-cta .catalog-consultation__mobile-photo img { object-position:100% 20%;transform:scale(2.3);transform-origin:50% 0; }
 }
