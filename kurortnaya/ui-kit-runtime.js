@@ -6,7 +6,7 @@
     filtersScript.src = 'filters-modal.js?v=2';
     filtersScript.onload = function () {
       var quickScript = document.createElement('script');
-      quickScript.src = 'quick-filters.js?v=1';
+      quickScript.src = 'quick-filters.js?v=2';
       document.body.appendChild(quickScript);
     };
     document.body.appendChild(filtersScript);
@@ -37,7 +37,7 @@
   if (!document.querySelector('link[data-kurortnaya-listing-mode]')) {
     var listingStylesheet = document.createElement('link');
     listingStylesheet.rel = 'stylesheet';
-    listingStylesheet.href = 'listing-mode.css?v=20261012-unified-sort-chevron-2';
+    listingStylesheet.href = 'listing-mode.css?v=20261012-property-type-1';
     listingStylesheet.dataset.kurortnayaListingMode = 'true';
     document.head.appendChild(listingStylesheet);
   }
@@ -484,7 +484,7 @@
 
   if (!document.querySelector('script[data-kurortnaya-listing-mode]')) {
     var listingScript = document.createElement('script');
-    listingScript.src = 'listing-mode.js?v=20261009-ui-contracts-1';
+    listingScript.src = 'listing-mode.js?v=20261012-property-type-1';
     listingScript.dataset.kurortnayaListingMode = 'true';
     document.body.appendChild(listingScript);
   }
