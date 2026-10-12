@@ -34,7 +34,7 @@
   if (!document.querySelector('link[data-kurortnaya-ui-kit]')) {
     var stylesheet = document.createElement('link');
     stylesheet.rel = 'stylesheet';
-    stylesheet.href = 'ui-kit.css?v=20261012-cta-form-width-1';
+    stylesheet.href = 'ui-kit.css?v=20261012-mobile-header-contacts-1';
     stylesheet.dataset.kurortnayaUiKit = 'true';
     document.head.appendChild(stylesheet);
   }
@@ -111,6 +111,39 @@
     phoneLink.setAttribute('aria-label', 'Позвонить по номеру +7 495 182-50-79');
     contacts.appendChild(phoneLink);
     rightColumn.appendChild(contacts);
+    var mobilePhone = header.querySelector('.site-header__mobile-phone');
+    if (mobilePhone) {
+      var mobileContacts = document.createElement('button');
+      mobileContacts.type = 'button';
+      mobileContacts.className = 'site-header__mobile-phone catalog-primary-contact-toggle';
+      mobileContacts.innerHTML = mobilePhone.innerHTML;
+      mobileContacts.setAttribute('aria-label', 'Показать способы связи');
+      mobileContacts.setAttribute('aria-expanded', 'false');
+      mobileContacts.setAttribute('aria-controls', 'kurortnaya-primary-contacts');
+      mobilePhone.replaceWith(mobileContacts);
+      var mobilePanel = contacts.cloneNode(true);
+      mobilePanel.id = 'kurortnaya-primary-contacts';
+      mobilePanel.className = 'catalog-primary-contact-panel';
+      mobilePanel.hidden = true;
+      mobilePanel.querySelectorAll('a').forEach(function (link) { link.className = 'catalog-primary-contact'; });
+      header.appendChild(mobilePanel);
+      function closeMobileContacts(focus) {
+        mobilePanel.hidden = true;
+        mobileContacts.setAttribute('aria-expanded', 'false');
+        if (focus) mobileContacts.focus();
+      }
+      mobileContacts.addEventListener('click', function () {
+        mobilePanel.hidden = !mobilePanel.hidden;
+        mobileContacts.setAttribute('aria-expanded', String(!mobilePanel.hidden));
+      });
+      document.addEventListener('click', function (event) {
+        if (!mobilePanel.contains(event.target) && !mobileContacts.contains(event.target)) closeMobileContacts(false);
+      });
+      document.addEventListener('keydown', function (event) {
+        if (event.key === 'Escape' && !mobilePanel.hidden) { event.preventDefault(); closeMobileContacts(true); }
+      });
+      window.addEventListener('scroll', function () { closeMobileContacts(false); }, { passive: true });
+    }
   }
 
   enhanceSiteHeader();
@@ -143,11 +176,6 @@
     var stickyLogo = sticky.querySelector('.catalog-sticky__logo img');
     if (sourceLogo && stickyLogo) stickyLogo.src = sourceLogo.currentSrc || sourceLogo.src;
 
-    var panel = sticky.querySelector('.catalog-sticky__messengers').cloneNode(true);
-    panel.id = 'kurortnaya-sticky-contacts';
-    panel.className = 'catalog-sticky__contact-panel';
-    panel.hidden = true;
-    sticky.querySelector('.catalog-sticky__inner').appendChild(panel);
     page.insertBefore(sticky, page.firstChild);
 
     sticky.querySelector('.catalog-sticky__request').addEventListener('click', function () {
@@ -160,11 +188,47 @@
     });
 
     var toggle = sticky.querySelector('.catalog-sticky__contact-toggle');
+    var panel = sticky.querySelector('.catalog-sticky__messengers').cloneNode(true);
+    panel.id = 'kurortnaya-sticky-contacts';
+    panel.className = 'catalog-sticky__contact-panel';
+    panel.hidden = true;
+    sticky.querySelector('.catalog-sticky__inner').appendChild(panel);
     toggle.addEventListener('click', function () {
-      var open = panel.hidden;
-      panel.hidden = !open;
-      toggle.setAttribute('aria-expanded', String(open));
-      toggle.setAttribute('aria-label', open ? 'Скрыть способы связи' : 'Показать способы связи');
+      panel.hidden = !panel.hidden;
+      toggle.setAttribute('aria-expanded', String(!panel.hidden));
+    });
+    var callback = document.createElement('button');
+    callback.type = 'button';
+    callback.className = 'catalog-sticky__contact-toggle catalog-sticky__callback';
+    callback.setAttribute('aria-label', 'Заказать обратный звонок');
+    callback.setAttribute('aria-haspopup', 'dialog');
+    callback.setAttribute('aria-controls', 'catalog-feedback-modal');
+    callback.innerHTML = sticky.querySelector('.catalog-sticky__phone-icon').innerHTML;
+    callback.addEventListener('click', function () {
+      panel.hidden = true;
+      toggle.setAttribute('aria-expanded', 'false');
+      if (openContactModal) {
+        openContactModal(callback);
+        document.querySelector('.catalog-feedback-modal [data-channel="Звонок"]').click();
+      }
+    });
+    var actions = document.createElement('div');
+    actions.className = 'catalog-sticky__mobile-actions';
+    actions.append(toggle, callback);
+    sticky.querySelector('.catalog-sticky__item--contacts').remove();
+    sticky.querySelector('.catalog-sticky__nav').appendChild(actions);
+    document.addEventListener('click', function (event) {
+      if (!panel.contains(event.target) && !toggle.contains(event.target)) {
+        panel.hidden = true;
+        toggle.setAttribute('aria-expanded', 'false');
+      }
+    });
+    document.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape' && !panel.hidden) {
+        panel.hidden = true;
+        toggle.setAttribute('aria-expanded', 'false');
+        toggle.focus();
+      }
     });
 
     var frameRequested = false;
@@ -363,6 +427,7 @@
 
     var modal = document.createElement('div');
     modal.className = 'catalog-feedback-modal feedback-modal modal';
+    modal.id = 'catalog-feedback-modal';
     modal.hidden = true;
     modal.setAttribute('role', 'dialog');
     modal.setAttribute('aria-modal', 'true');
