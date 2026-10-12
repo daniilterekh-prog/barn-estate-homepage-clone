@@ -29,11 +29,11 @@ html body.country-node-page :is(.catalog-consultation__methods,.catalog-contact_
 }
 @media (min-width:769px) {
   html body.country-node-page .catalog-consultation__media[class]::before {
-    /* The source room spans the whole CTA; its portrait stays in the foreground. */
-    background-image:url("assets/consultation-background.png");
-    background-position:left center;
-    background-size:200% 100%;
-    filter:none;
+    /* Reuse the approved Denis CTA interior; keep Mikhail's foreground intact. */
+    background-image:url("../kurortnaya/assets/cta-consultation-interior.webp");
+    background-position:center;
+    background-size:cover;
+    filter:brightness(.72);
   }
   html body.country-node-page .catalog-consultation__image[class] {
     width:100%; left:-50%; right:auto;
