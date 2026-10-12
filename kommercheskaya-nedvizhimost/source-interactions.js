@@ -9,6 +9,42 @@
   let returnFocus = null;
   const originalMenuIcon = menuButton?.innerHTML;
   let filterValues = null;
+  // Reference: Kurortnaya / canonical first-degree request-modal fragment.
+  const callbackTemplate = document.getElementById('source-callback');
+  if (callbackTemplate) callbackTemplate.innerHTML = `
+    <div class="catalog-feedback-modal feedback-modal modal" role="dialog" aria-modal="true" aria-labelledby="catalog-feedback-modal-title">
+      <div class="modal__content" tabindex="-1">
+        <button class="modal__close" type="button" aria-label="Закрыть форму" data-catalog-modal-close>
+          <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M5 5l14 14M19 5L5 19"></path></svg>
+        </button>
+        <div class="feedback-modal__layout">
+          <div class="feedback-modal__body">
+            <h2 class="feedback-modal__title" id="catalog-feedback-modal-title">Поможем найти подходящий объект</h2>
+            <p class="feedback-modal__intro">Эксперт BARNES уточнит задачу и подберёт лучшие варианты.</p>
+            <form class="feedback-modal__form" novalidate>
+              <div class="feedback-modal__channels" role="group" aria-label="Предпочтительный способ связи">
+                <button type="button" data-channel="Telegram" aria-pressed="true">Telegram</button>
+                <button type="button" data-channel="WhatsApp" aria-pressed="false">WhatsApp</button>
+                <button type="button" data-channel="MAX" aria-pressed="false">MAX</button>
+                <button type="button" data-channel="Звонок" aria-pressed="false">Звонок</button>
+              </div>
+              <input type="hidden" name="preferredChannel" value="Telegram">
+              <label class="feedback-modal__field"><span class="visually-hidden">Ваше имя</span><input class="feedback-modal__input" name="name" type="text" autocomplete="name" placeholder="Ваше имя" required></label>
+              <label class="feedback-modal__field"><span class="visually-hidden">Номер телефона</span><input class="feedback-modal__input" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="Номер телефона в Telegram" required></label>
+              <label class="feedback-modal__field"><span class="visually-hidden">Комментарий</span><textarea class="feedback-modal__input feedback-modal__textarea" name="comment" rows="3" placeholder="Опишите, какой объект вы ищете"></textarea></label>
+              <button class="feedback-modal__submit" type="submit">Получить подборку</button>
+              <label class="feedback-modal__consent">
+                <input class="feedback-modal__consent-input" name="consent" type="checkbox" required>
+                <span class="feedback-modal__consent-box" aria-hidden="true"></span>
+                <span class="feedback-modal__consent-text">Я даю согласие на обработку <a class="feedback-modal__consent-link" href="https://front.barnes.vsavr.ru/legal_notices/yuridicheskie-uvedomleniya/" target="_blank" rel="noopener noreferrer">персональных данных</a></span>
+              </label>
+              <p class="feedback-modal__status" role="status" aria-live="polite"></p>
+            </form>
+          </div>
+          <div class="feedback-modal__hero"><img class="feedback-modal__hero-image" src="assets/denis-perkovsky-cutout.png" alt="Денис Перковский — руководитель департамента курортной недвижимости BARNES" width="1024" height="1536"></div>
+        </div>
+      </div>
+    </div>`;
   let contactToggle = null;
   let contactPanel = null;
   function closeContacts(restoreFocus = false) {
@@ -202,7 +238,7 @@
     all('.modal__close,.vfm__overlay,.hero-filter-modal__close,.hero-filter-modal__backdrop', dialog).forEach(e => e.addEventListener('click', closeDialog));
     bindForms(dialog);
     bindFilters(dialog);
-    const first = kind === 'filters' ? one('.hero-filter-modal__close', dialog) : one('input:not([tabindex="-1"]),button,a[href]', dialog);
+    const first = kind === 'filters' ? one('.hero-filter-modal__close', dialog) : kind === 'callback' ? one('.modal__content', dialog) : one('input:not([tabindex="-1"]),button,a[href]', dialog);
     first?.focus({ preventScroll: true });
   }
 
@@ -215,7 +251,7 @@
     const focusable = all('button,a[href],input,select,textarea,[tabindex="0"]', dialog).filter(e => !e.disabled && e.getClientRects().length && !e.classList.contains('hero-filter-modal__backdrop'));
     if (dialog.classList.contains('site-menu') && menuButton) focusable.unshift(menuButton);
     if (!focusable.length) return;
-    if (event.shiftKey && document.activeElement === focusable[0]) { event.preventDefault(); focusable.at(-1).focus(); }
+    if (event.shiftKey && (document.activeElement === focusable[0] || document.activeElement === one('.modal__content', dialog))) { event.preventDefault(); focusable.at(-1).focus(); }
     else if (!event.shiftKey && document.activeElement === focusable.at(-1)) { event.preventDefault(); focusable[0].focus(); }
   });
   menuButton?.addEventListener('click', () => dialog?.classList.contains('site-menu') ? closeDialog() : openDialog('menu', menuButton));
@@ -225,7 +261,7 @@
 
   const scrollToSection = selector => one(selector)?.scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth' });
   all('.catalog-page-nav__link').forEach((button, index) => button.addEventListener('click', () => scrollToSection(['.catalog-map', '.catalog-grid', '.catalog-intro', '.catalog-faq'][index])));
-  one('.catalog-page-nav__request')?.addEventListener('click', () => scrollToSection('.catalog-consultation'));
+  one('.catalog-page-nav__request')?.addEventListener('click', event => openDialog('callback', event.currentTarget));
   function onScroll() {
     header?.classList.remove('site-header--scrolled');
     const visible = scrollY >= (one('.catalog-hero')?.offsetHeight || 644) - 110;
@@ -322,6 +358,11 @@
 
   function bindForms(root) {
     all('form:not(.catalog-hero-filters__bar)', root).forEach(form => {
+      all('[data-channel]', form).forEach(button => button.addEventListener('click', () => {
+        all('[data-channel]', form).forEach(item => item.setAttribute('aria-pressed', String(item === button)));
+        one('[name="preferredChannel"]', form).value = button.dataset.channel;
+        one('[name="phone"]', form).placeholder = button.dataset.channel === 'Звонок' ? 'Номер телефона' : `Номер телефона в ${button.dataset.channel}`;
+      }));
       all('input:not([tabindex="-1"]),textarea', form).forEach(input => {
         if (!input.getAttribute('aria-label')) input.setAttribute('aria-label', input.type === 'checkbox' ? 'Согласие на обработку персональных данных' : input.placeholder || 'Комментарий');
       });
@@ -334,7 +375,7 @@
         if (phone) { phone.required = true; phone.setCustomValidity(phone.value.replace(/\D/g, '').length < 10 ? 'Введите номер телефона' : ''); }
         if (consent) consent.required = true;
         if (!form.reportValidity()) return;
-        let status = one('.source-form-status', form);
+        let status = one('.feedback-modal__status,.source-form-status', form);
         if (!status) { status = document.createElement('p'); status.className = 'source-form-status'; status.setAttribute('role', 'status'); form.append(status); }
         status.textContent = 'Для отправки заявки свяжитесь с BARNES: +7 (495) 182-50-79.';
       });
