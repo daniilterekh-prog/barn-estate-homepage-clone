@@ -1,0 +1,83 @@
+{
+  "viewports": [
+    {
+      "width": 390,
+      "heroPixelsDifferent": 0,
+      "heroMismatchPercent": 0,
+      "differences": [
+        {
+          "selector": ".catalog-intro",
+          "heightDelta": 219.34
+        }
+      ]
+    },
+    {
+      "width": 541,
+      "heroPixelsDifferent": 0,
+      "heroMismatchPercent": 0,
+      "differences": [
+        {
+          "selector": ".catalog-intro",
+          "heightDelta": 229.98
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "heroPixelsDifferent": 0,
+      "heroMismatchPercent": 0,
+      "differences": [
+        {
+          "selector": ".catalog-intro",
+          "heightDelta": 359.98
+        }
+      ]
+    },
+    {
+      "width": 1024,
+      "heroPixelsDifferent": 0,
+      "heroMismatchPercent": 0,
+      "differences": [
+        {
+          "selector": ".catalog-intro",
+          "heightDelta": 359.98
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "heroPixelsDifferent": 0,
+      "heroMismatchPercent": 0,
+      "differences": []
+    },
+    {
+      "width": 1920,
+      "heroPixelsDifferent": 0,
+      "heroMismatchPercent": 0,
+      "differences": []
+    }
+  ],
+  "interactions": [
+    {
+      "width": 390,
+      "filters": true,
+      "callback": true,
+      "expert": true,
+      "menu": true,
+      "faq": true,
+      "mapFullscreen": true,
+      "mapZoom": true
+    },
+    {
+      "width": 1440,
+      "filters": true,
+      "callback": true,
+      "expert": true,
+      "menu": true,
+      "faq": true,
+      "mapFullscreen": true,
+      "mapZoom": true
+    }
+  ],
+  "errors": []
+}
