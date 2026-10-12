@@ -13,6 +13,9 @@ const assert = require('node:assert/strict');
       if (width < 541) await page.getByRole('button', { name: 'Развернуть список объектов' }).click();
       await page.locator('.map-browser__card').first().waitFor();
       assert.equal(await page.locator('.map-browser__card').count(), 32);
+      assert.deepEqual(await dialog.getByLabel('Тип объекта',{exact:true}).locator('option').allTextContents(),['Тип объекта','Апартаменты','Квартира','Пентхаус']);
+      assert.equal(await dialog.getByRole('button',{name:'Новостройки',exact:true}).count(),1);
+      assert.equal(await dialog.getByRole('button',{name:'Вторичка',exact:true}).count(),1);
       const referenceFont = await page.locator('.catalog-quick-filters__caption').first().evaluate(el => {
         const s = getComputedStyle(el);
         return { size: s.fontSize, weight: s.fontWeight, color: s.color, family: s.fontFamily };
@@ -53,8 +56,9 @@ const assert = require('node:assert/strict');
       await dialog.getByLabel('Цена до, ₽').fill('1');
       assert.equal(await page.locator('.map-browser__card').count(), 0);
       await page.getByRole('button', { name: 'Сбросить фильтры' }).click();
-      await dialog.getByLabel('Тип объекта', { exact: true }).selectOption('lot');
-      assert.equal(await page.locator('.map-browser__card').count(), 0);
+      await dialog.getByLabel('Тип объекта', { exact: true }).selectOption('apartment');
+      assert.equal(await page.locator('.map-browser__card').count(), 32,'Unannotated snapshot must not pretend to filter property types');
+      assert.equal(await dialog.locator('.map-browser__metadata-notice').isVisible(),true);
       await page.getByRole('button', { name: 'Сбросить фильтры' }).click();
       await dialog.getByRole('button', { name: 'Подробные фильтры' }).click();
       const filtersModal = page.locator('.resort-filters');
@@ -69,6 +73,23 @@ const assert = require('node:assert/strict');
       assert.equal(overflow, false);
       await page.keyboard.press('Escape');
       await dialog.waitFor({ state: 'hidden' });
+      // Controlled annotated data validates independent type/market filtering, not invented production facts.
+      await page.evaluate(()=>window.BarnesMapProjects.splice(0,window.BarnesMapProjects.length,
+        {name:'Apartment new',href:'#',image:'map-preview.png',priceRub:10,price:'10 ₽',propertyTypes:['apartment'],market:'new-build'},
+        {name:'Apartment resale',href:'#',image:'map-preview.png',priceRub:20,price:'20 ₽',propertyTypes:['apartment'],market:'secondary'},
+        {name:'Penthouse resale',href:'#',image:'map-preview.png',priceRub:30,price:'30 ₽',propertyTypes:['penthouse'],market:'secondary'}));
+      await page.locator('.catalog-projects-map__fullscreen').click();
+      if(width<541) await dialog.getByRole('button',{name:'Развернуть список объектов'}).click();
+      await dialog.getByLabel('Тип объекта',{exact:true}).selectOption('apartment');
+      assert.equal(await dialog.locator('.map-browser__card').count(),2);
+      await dialog.getByRole('button',{name:'Вторичка',exact:true}).click();
+      assert.deepEqual(await dialog.locator('.map-browser__card h3').allTextContents(),['Apartment resale']);
+      await dialog.getByRole('button',{name:'Новостройки',exact:true}).click();
+      assert.deepEqual(await dialog.locator('.map-browser__card h3').allTextContents(),['Apartment new']);
+      await dialog.getByRole('button',{name:'Сбросить фильтры'}).click();
+      assert.equal(await dialog.locator('.map-browser__card').count(),3);
+      assert.equal(await dialog.getByRole('button',{name:'Новостройки',exact:true}).getAttribute('aria-pressed'),'false');
+      await dialog.getByRole('button',{name:'Закрыть полноэкранный режим карты'}).click();
       assert.equal(await page.evaluate(() => document.body.style.overflow), '');
       assert.equal(await page.locator('.catalog-projects-map__fullscreen').evaluate(el => el === document.activeElement), true);
       await page.locator('.catalog-projects-map__fullscreen').click();
