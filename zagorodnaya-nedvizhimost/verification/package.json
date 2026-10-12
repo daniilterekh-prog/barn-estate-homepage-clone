@@ -1,0 +1,116 @@
+{
+  "base": "http://127.0.0.1:4195/",
+  "checks": [
+    {
+      "width": 320,
+      "overflow": false,
+      "brokenImages": [],
+      "font": true,
+      "hero": "hero-estate-mobile.png",
+      "projects": 5,
+      "lots": 5,
+      "map": true,
+      "fullFilters": true,
+      "requestModal": true
+    },
+    {
+      "width": 390,
+      "overflow": false,
+      "brokenImages": [],
+      "font": true,
+      "hero": "hero-estate-mobile.png",
+      "projects": 5,
+      "lots": 5,
+      "map": true,
+      "fullFilters": true,
+      "requestModal": true
+    },
+    {
+      "width": 540,
+      "overflow": false,
+      "brokenImages": [],
+      "font": true,
+      "hero": "hero-estate-mobile.png",
+      "projects": 5,
+      "lots": 5,
+      "map": true,
+      "fullFilters": true,
+      "requestModal": true
+    },
+    {
+      "width": 541,
+      "overflow": false,
+      "brokenImages": [],
+      "font": true,
+      "hero": "hero-estate-desktop.png",
+      "projects": 5,
+      "lots": 5,
+      "map": true,
+      "fullFilters": true,
+      "requestModal": true
+    },
+    {
+      "width": 768,
+      "overflow": false,
+      "brokenImages": [],
+      "font": true,
+      "hero": "hero-estate-desktop.png",
+      "projects": 5,
+      "lots": 12,
+      "map": true,
+      "fullFilters": true,
+      "requestModal": true
+    },
+    {
+      "width": 1024,
+      "overflow": false,
+      "brokenImages": [],
+      "font": true,
+      "hero": "hero-estate-desktop.png",
+      "projects": 5,
+      "lots": 12,
+      "map": true,
+      "fullFilters": true,
+      "requestModal": true
+    },
+    {
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "font": true,
+      "hero": "hero-estate-desktop.png",
+      "projects": 5,
+      "lots": 12,
+      "map": true,
+      "fullFilters": true,
+      "requestModal": true
+    },
+    {
+      "width": 1920,
+      "overflow": false,
+      "brokenImages": [],
+      "font": true,
+      "hero": "hero-estate-desktop.png",
+      "projects": 5,
+      "lots": 12,
+      "map": true,
+      "fullFilters": true,
+      "requestModal": true
+    },
+    {
+      "width": 2560,
+      "overflow": false,
+      "brokenImages": [],
+      "font": true,
+      "hero": "hero-estate-desktop.png",
+      "projects": 5,
+      "lots": 12,
+      "map": true,
+      "fullFilters": true,
+      "requestModal": true
+    }
+  ],
+  "pageErrors": [],
+  "missingResources": [],
+  "externalRequests": []
+}

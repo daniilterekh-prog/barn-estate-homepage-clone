@@ -118,7 +118,7 @@ html body #catalog-intro .catalog-intro__image[class] {
   }
 
   html body .catalog-consultation__media[class]::before {
-    background: url("assets/cta-consultation-interior.webp") center / cover no-repeat;
+    background: url("../assets/cta-consultation-interior.webp") center / cover no-repeat;
     bottom: 0;
     clip-path: inset(0);
     content: "";
@@ -1234,7 +1234,7 @@ html body .catalog-feedback-modal .feedback-modal__body {
 }
 
 html body .catalog-feedback-modal .feedback-modal__hero {
-  background: #111318 url("assets/cta-consultation-interior.webp") center / cover no-repeat;
+  background: #111318 url("../assets/cta-consultation-interior.webp") center / cover no-repeat;
   min-height: 100%;
   min-width: 0;
   overflow: hidden;

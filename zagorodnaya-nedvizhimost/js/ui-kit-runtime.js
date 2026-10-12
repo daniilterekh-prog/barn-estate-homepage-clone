@@ -3,12 +3,12 @@
   document.body.classList.add('barnes-header-template');
   var ownerHeaderStyles = document.createElement('link');
   ownerHeaderStyles.rel = 'stylesheet';
-  ownerHeaderStyles.href = '../shared/owner-header.css?v=20261012-owner-header-5';
+  ownerHeaderStyles.href = 'css/owner-header.css';
 
   if (!document.querySelector('link[data-kurortnaya-ui-kit]')) {
     var stylesheet = document.createElement('link');
     stylesheet.rel = 'stylesheet';
-    stylesheet.href = 'ui-kit.css?v=20261012-mobile-denis-crop-1';
+    stylesheet.href = 'css/ui-kit.css';
     stylesheet.dataset.kurortnayaUiKit = 'true';
     document.head.appendChild(stylesheet);
   }
@@ -16,7 +16,7 @@
   if (!document.querySelector('link[data-kurortnaya-listing-mode]')) {
     var listingStylesheet = document.createElement('link');
     listingStylesheet.rel = 'stylesheet';
-    listingStylesheet.href = 'listing-mode.css?v=20261012-unified-sort-chevron-2';
+    listingStylesheet.href = 'css/listing-mode.css';
     listingStylesheet.dataset.kurortnayaListingMode = 'true';
     document.head.appendChild(listingStylesheet);
   }
@@ -24,7 +24,7 @@
   if (!document.querySelector('link[data-kurortnaya-start-sales]')) {
     var startSalesStylesheet = document.createElement('link');
     startSalesStylesheet.rel = 'stylesheet';
-    startSalesStylesheet.href = 'start-sales-cards.css?v=20261011-content-spacing-1';
+    startSalesStylesheet.href = 'css/start-sales-cards.css';
     startSalesStylesheet.dataset.kurortnayaStartSales = 'true';
     document.head.appendChild(startSalesStylesheet);
   }
