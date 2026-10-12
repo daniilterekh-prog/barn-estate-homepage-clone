@@ -139,7 +139,6 @@ html body .apartment-card--catalog :is(.apartment-card__call-btn, .apartment-car
   background: var(--catalog-filter-wine);
   bottom: 0;
   content: "";
-  color: var(--catalog-filter-ink);
   height: 2px;
   left: 0;
   position: absolute;
@@ -259,6 +258,7 @@ html body .catalog-mode-toolbar .catalog-grid__sort[class] {
 
 /* One chevron treatment at every breakpoint, matching the filter controls. */
 .catalog-mode-toolbar .catalog-grid__sort::after {
+  color: var(--catalog-filter-ink);
   border-bottom: 1px solid var(--catalog-filter-ink);
   border-right: 1px solid var(--catalog-filter-ink);
   content: "";
