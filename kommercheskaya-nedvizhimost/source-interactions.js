@@ -2,6 +2,18 @@
 (() => {
   const one = (selector, root = document) => root.querySelector(selector);
   const all = (selector, root = document) => [...root.querySelectorAll(selector)];
+  const heroImage = one('.catalog-hero__image');
+  if (heroImage) {
+    const mobileSource = document.createElement('source');
+    mobileSource.media = '(max-width: 540px)';
+    mobileSource.srcset = 'assets/hero-commercial-mobile.png';
+    heroImage.before(mobileSource);
+    heroImage.src = 'assets/hero-commercial-desktop.png';
+    heroImage.width = 2111;
+    heroImage.height = 745;
+    heroImage.setAttribute('fetchpriority', 'high');
+    document.body.classList.add('commercial-hero-art');
+  }
   const header = one('.site-header');
   const menuButton = one('.site-header__icon-btn');
   const nav = one('.catalog-page-nav');

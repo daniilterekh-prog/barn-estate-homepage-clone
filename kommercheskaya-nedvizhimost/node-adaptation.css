@@ -171,3 +171,5 @@ html body.commercial-node .catalog-consultation__method-icon[class] {
   html body.commercial-node .catalog-page-nav__brand,
   html body.commercial-node .catalog-page-nav__logo { display: none; }
 }
+/* User-supplied hero artwork already includes its dark treatment. */
+html body.commercial-hero-art .catalog-hero__overlay { background: none; }
