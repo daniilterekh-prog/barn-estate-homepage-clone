@@ -35,3 +35,5 @@ html body.commercial-node #commercial-selection { scroll-margin-top:112px; }
 html body.commercial-node .apartment-card--catalog .apartment-card__name[class] { min-width:0;min-height:0; }
 html body.commercial-node .apartment-card--catalog .apartment-card__name-text[class] { display:block;min-width:0;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;-webkit-line-clamp:unset; }
 html body.commercial-node .catalog-feedback-modal .feedback-modal__hero-image--alina { object-fit:cover;object-position:90% center; }
+/* Selection carousel keeps its geometry while long names use one line. */
+html body.commercial-node .catalog-best-offers .launch-card .apartment-card__name { display:block;min-width:0;min-height:0;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;-webkit-line-clamp:unset; }
