@@ -53,7 +53,7 @@
               <p class="feedback-modal__status" role="status" aria-live="polite"></p>
             </form>
           </div>
-          <div class="feedback-modal__hero"><img class="feedback-modal__hero-image" src="assets/denis-perkovsky-cutout.png" alt="Денис Перковский — руководитель департамента курортной недвижимости BARNES" width="1024" height="1536"></div>
+          <div class="feedback-modal__hero"><img class="feedback-modal__hero-image feedback-modal__hero-image--alina" src="assets/alina-medvedeva-popup.png" alt="Алина Медведева — руководитель департамента коммерческой недвижимости BARNES" width="1734" height="907"></div>
         </div>
       </div>
     </div>`;
