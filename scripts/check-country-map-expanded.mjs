@@ -9,10 +9,10 @@ try {
     await page.setViewportSize({width,height:900});await page.goto(url);
     await page.waitForFunction(()=>window.countryMapEnter);
     const trigger=page.locator('.catalog-projects-map__fullscreen');
-    await trigger.click();await page.waitForFunction(()=>document.fullscreenElement);
+    await trigger.click();await page.waitForFunction(()=>document.fullscreenElement&&document.querySelector('.catalog-projects-map')?.classList.contains('country-map-expanded'));
     const panel=page.locator('.catalog-projects-map__panel');
     let rect=await panel.evaluate(e=>e.getBoundingClientRect().toJSON());
-    assert.ok(width<=540 ? rect.bottom===900&&rect.height===92 : rect.width===420&&rect.height===900);
+    assert.ok(width<=540 ? rect.bottom===900&&rect.height===92 : rect.width===420&&rect.height===900,`${width}: panel ${JSON.stringify(rect)}`);
     if(width<=540) {
       const box=await page.locator('.catalog-projects-map__panel-handle').boundingBox();
       await page.mouse.move(box.x+box.width/2,box.y+box.height/2);await page.mouse.down();
@@ -30,7 +30,7 @@ try {
     await page.keyboard.press('Escape');
     assert.equal(await page.locator('.hero-filter-modal:visible').count(),0);
     // Chrome may also exit native fullscreen on Escape; reopen to test the cross independently.
-    if(!await page.evaluate(()=>!!document.fullscreenElement)) { await trigger.click();await page.waitForFunction(()=>document.fullscreenElement); }
+    if(!await page.evaluate(()=>!!document.fullscreenElement)) { await trigger.click();await page.waitForFunction(()=>document.fullscreenElement&&document.querySelector('.catalog-projects-map')?.classList.contains('country-map-expanded')); }
     if(width<=540 && await page.locator('.catalog-projects-map__panel-handle').getAttribute('aria-expanded')==='false')await page.locator('.catalog-projects-map__panel-handle').click();
     for(let i=0;i<4;i++) {
       await page.locator('.catalog-projects-map__panel .catalog-quick-filters__button').nth(i).click();
@@ -43,7 +43,7 @@ try {
       await page.locator('#country-reference-dropdown .catalog-quick-filters__dropdown-close').click();
     }
     await page.locator('.catalog-projects-map__exit').click();
-    await page.waitForFunction(()=>!document.fullscreenElement);
+    await page.waitForFunction(()=>!document.fullscreenElement&&!document.querySelector('.country-map-expanded'));
     assert.equal(await trigger.evaluate(e=>e===document.activeElement),true);
     assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false);
     await page.evaluate(()=>document.querySelector('.catalog-projects-map').requestFullscreen=()=>Promise.reject(Error('test fallback')));

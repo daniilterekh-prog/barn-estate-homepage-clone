@@ -54,7 +54,7 @@ try {
     // On a full-width mobile drawer the backdrop is covered; use its close button.
     if(await page.locator('.country-map-filter-drawer').count())await page.locator('.country-map-filter-drawer .hero-filter-modal__close').click();
     await page.locator('.catalog-projects-map__exit').click();
-    await page.waitForFunction(()=>!document.fullscreenElement&&!document.querySelector('.country-map-fallback'));
+    await page.waitForFunction(()=>!document.fullscreenElement&&!document.querySelector('.country-map-fallback')&&!document.querySelector('.country-map-expanded'));
     assert.equal(await page.locator('[inert]').count(),0);
     await page.evaluate(()=>document.querySelector('.catalog-projects-map').requestFullscreen=()=>Promise.reject(Error('test fallback')));
     await page.locator('.catalog-projects-map__fullscreen').click();await trigger.click();
