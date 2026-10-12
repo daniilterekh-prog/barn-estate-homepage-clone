@@ -44,6 +44,29 @@
   const heroLocation = page.querySelector('.detail-hero__location')
   if (heroTitle && heroLocation) heroTitle.after(heroLocation)
 
+  // No confirmed minimum price is available: never use the mortgage example
+  // amount as the project's starting price (see hero-data-rules.md).
+  const originalSpecs = page.querySelector('.detail-hero__specs')
+  if (heroCopy && originalSpecs) {
+    const facts = document.createElement('dl')
+    facts.className = 'vavilova-hero-facts'
+    ;[
+      ['Площадь', '29–120 м²'],
+      ['Цена', 'Цена по запросу'],
+      ['Сдача', 'III кв. 2029'],
+    ].forEach(([label, value]) => {
+      const fact = document.createElement('div')
+      fact.className = 'vavilova-hero-fact'
+      const term = document.createElement('dt')
+      term.textContent = label
+      const description = document.createElement('dd')
+      description.textContent = value
+      fact.append(term, description)
+      facts.append(fact)
+    })
+    originalSpecs.replaceWith(facts)
+  }
+
   const right = document.querySelector('.layout__header .site-header__right')
   const phone = right?.querySelector('.site-header__phone')
   if (right && phone) {
