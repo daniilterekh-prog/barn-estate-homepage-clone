@@ -3,7 +3,7 @@ const assert = require('node:assert/strict');
 (async () => {
   const browser = await chromium.launch({ executablePath: '/usr/bin/google-chrome', headless: true });
   try {
-    for (const width of [320, 390, 768, 1440, 2560]) {
+    for (const width of [320, 390, 540, 768, 1440, 2560]) {
       const page = await browser.newPage({ viewport: { width, height: 1000 } });
       await page.goto('http://127.0.0.1:8769/kurortnaya/');
       const listing = page.locator('[data-brand-context=listing]');
@@ -27,7 +27,12 @@ const assert = require('node:assert/strict');
         const switchRect = textRect(toolbar.querySelector('.catalog-mode-switch__button'));
         const captions = Array.from(toolbar.querySelectorAll('.catalog-mode-filters .catalog-quick-filters__caption')).map(textRect);
         const checkboxText = textRect(el.querySelector('label > span:last-child'));
-        return [captions[0].top - switchRect.bottom, checkboxText.top - Math.max(...captions.map(rect => rect.bottom))];
+        // Compare the text-row centres when narrow columns wrap the label.
+        const textRange = document.createRange();
+        textRange.selectNodeContents(el.querySelector('label > span:last-child'));
+        const lineHeight = textRange.getClientRects()[0].height;
+        const textRowTop = checkboxText.top + Math.max(0, checkboxText.height - lineHeight) / 2;
+        return [captions[0].top - switchRect.bottom, textRowTop - Math.max(...captions.map(rect => rect.bottom))];
       });
       if (width <= 1024) assert.ok(Math.abs(gaps[0] - gaps[1]) < 1, `Matching visible text gaps: ${gaps}`);
       else {
@@ -39,6 +44,9 @@ const assert = require('node:assert/strict');
         const checkX = (await listing.locator('.barnes-brand-filters__box').first().boundingBox()).x;
         const iconX = (await page.locator('.catalog-mode-filters .catalog-quick-filters__icon svg').first().boundingBox()).x;
         assert.ok(Math.abs(checkX - iconX) < 1, 'Mobile listing checkbox aligned with filter SVG left edge');
+        const exclusiveX = (await listing.locator('.barnes-brand-filters__box').nth(1).boundingBox()).x;
+        const secondIconX = (await page.locator('.catalog-mode-filters .catalog-quick-filters__icon svg').nth(1).boundingBox()).x;
+        assert.ok(Math.abs(exclusiveX - secondIconX) < 1, `Mobile exclusive checkbox aligned with second SVG: ${exclusiveX} vs ${secondIconX}`);
         const bottom = (await listing.boundingBox()).y + (await listing.boundingBox()).height;
         for (const selector of ['.catalog-grid__sort', '.catalog-mode-detailed-filters']) {
           assert.ok((await page.locator(selector).boundingBox()).y >= bottom, 'Mobile sorting and detailed filters below checkboxes, no overlap');
@@ -63,6 +71,9 @@ const assert = require('node:assert/strict');
         const checkX = (await map.locator('.barnes-brand-filters__box').first().boundingBox()).x;
         const iconX = (await page.locator('.map-browser__field > svg').first().boundingBox()).x;
         assert.ok(Math.abs(checkX - iconX) < 1, 'Mobile map checkbox aligned with filter SVG left edge');
+        const exclusiveX = (await map.locator('.barnes-brand-filters__box').nth(1).boundingBox()).x;
+        const secondIconX = (await page.locator('.map-browser__field > svg').nth(1).boundingBox()).x;
+        assert.ok(Math.abs(exclusiveX - secondIconX) < 1, `Mobile map exclusive checkbox aligned with second SVG: ${exclusiveX} vs ${secondIconX}`);
       }
       assert.equal(await map.getByRole('checkbox', { name: 'Выбор BARNES', exact: true }).isChecked(), true);
       assert.equal(await map.getByRole('checkbox', { name: 'Эксклюзив BARNES', exact: true }).isChecked(), true);

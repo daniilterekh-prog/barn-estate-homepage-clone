@@ -9,7 +9,7 @@
       quickScript.src = 'quick-filters.js?v=3';
       quickScript.onload = function () {
         var brandsScript = document.createElement('script');
-        brandsScript.src = 'brand-filters.js?v=8';
+        brandsScript.src = 'brand-filters.js?v=9';
         document.body.appendChild(brandsScript);
       };
       document.body.appendChild(quickScript);
@@ -34,7 +34,7 @@
   if (!document.querySelector('link[data-kurortnaya-ui-kit]')) {
     var stylesheet = document.createElement('link');
     stylesheet.rel = 'stylesheet';
-    stylesheet.href = 'ui-kit.css?v=20261012-burgundy-only-1';
+    stylesheet.href = 'ui-kit.css?v=20261012-brand-column-alignment-1';
     stylesheet.dataset.kurortnayaUiKit = 'true';
     document.head.appendChild(stylesheet);
   }
