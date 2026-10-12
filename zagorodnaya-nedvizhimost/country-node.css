@@ -16,6 +16,11 @@ html body.country-node-page .apartment-card--catalog :is(.apartment-card__call-b
 .country-node-page .catalog-best-offers__slider-row { margin-top:0; }
 .country-node-page .catalog-contact__expert-photo img,
 .country-node-page .floating-expert__avatar img { object-fit:cover; object-position:center; }
+/* Channel selectors share the form's 610px cap, including wide CTA content. */
+html body.country-node-page :is(.catalog-consultation__methods,.catalog-contact__methods)[class] {
+  width:100%;
+  max-width:610px;
+}
 @media (min-width:769px) {
   html body.country-node-page .catalog-consultation__image[class] {
     object-fit:cover; object-position:right bottom;
