@@ -97,9 +97,9 @@ const assert = require('node:assert/strict');
     // Only tests supply these flags; production metadata is never fabricated.
     const page = await browser.newPage({ viewport: { width: 1440, height: 1000 } });
     await page.route('**/map-projects.js?*', route => route.fulfill({ contentType: 'text/javascript', body: 'window.BarnesMapProjects=' + JSON.stringify([
-      { name: 'Selection fixture', href: '#a', image: '', priceRub: 1, brandFlags: ['selection'] },
-      { name: 'Exclusive fixture', href: '#b', image: '', priceRub: 2, brandFlags: ['exclusive'] },
-      { name: 'Other fixture', href: '#c', image: '', priceRub: 3, brandFlags: [] }
+      { name: 'Selection fixture', href: '#a', image: '', priceRub: 1, market: 'new-build', brandFlags: ['selection'] },
+      { name: 'Exclusive fixture', href: '#b', image: '', priceRub: 2, market: 'new-build', brandFlags: ['exclusive'] },
+      { name: 'Other fixture', href: '#c', image: '', priceRub: 3, market: 'new-build', brandFlags: [] }
     ]) }));
     await page.goto('http://127.0.0.1:8769/kurortnaya/');
     await page.locator('[data-brand-context=listing]').waitFor();

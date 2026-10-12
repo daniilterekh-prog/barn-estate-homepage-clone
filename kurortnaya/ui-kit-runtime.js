@@ -3,13 +3,13 @@
   filtersTemplate.src = 'filters-template.js?v=1';
   filtersTemplate.onload = function () {
     var filtersScript = document.createElement('script');
-    filtersScript.src = 'filters-modal.js?v=3';
+    filtersScript.src = 'filters-modal.js?v=4';
     filtersScript.onload = function () {
       var quickScript = document.createElement('script');
       quickScript.src = 'quick-filters.js?v=3';
       quickScript.onload = function () {
         var brandsScript = document.createElement('script');
-        brandsScript.src = 'brand-filters.js?v=9';
+        brandsScript.src = 'brand-filters.js?v=10';
         document.body.appendChild(brandsScript);
       };
       document.body.appendChild(quickScript);
@@ -18,10 +18,10 @@
   };
   document.body.appendChild(filtersTemplate);
   var mapDataScript = document.createElement('script');
-  mapDataScript.src = 'map-projects.js?v=1';
+  mapDataScript.src = 'map-projects.js?v=2';
   mapDataScript.onload = function () {
     var mapScript = document.createElement('script');
-    mapScript.src = 'map-fullscreen.js?v=7';
+    mapScript.src = 'map-fullscreen.js?v=8';
     document.body.appendChild(mapScript);
   };
   document.body.appendChild(mapDataScript);
@@ -34,7 +34,7 @@
   if (!document.querySelector('link[data-kurortnaya-ui-kit]')) {
     var stylesheet = document.createElement('link');
     stylesheet.rel = 'stylesheet';
-    stylesheet.href = 'ui-kit.css?v=20261012-brand-column-alignment-1';
+    stylesheet.href = 'ui-kit.css?v=20261012-required-market-1';
     stylesheet.dataset.kurortnayaUiKit = 'true';
     document.head.appendChild(stylesheet);
   }
@@ -531,7 +531,7 @@
 
   if (!document.querySelector('script[data-kurortnaya-listing-mode]')) {
     var listingScript = document.createElement('script');
-    listingScript.src = 'listing-mode.js?v=20261012-project-address-1';
+    listingScript.src = 'listing-mode.js?v=20261012-required-market-1';
     listingScript.dataset.kurortnayaListingMode = 'true';
     document.body.appendChild(listingScript);
   }
