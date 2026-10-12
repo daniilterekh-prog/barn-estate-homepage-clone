@@ -1,4 +1,10 @@
 /* Country data exceptions only. Design contracts are copied from /kurortnaya/. */
+/* Keep both art-directed hero images inside the existing cover-sized media box. */
+html body.country-node-page .catalog-hero__media picture {display:block;width:100%;height:100%;}
+html body.country-node-page .catalog-hero__media .catalog-hero__image {object-position:60% center;}
+@media (max-width:540px) {
+  html body.country-node-page .catalog-hero__media .catalog-hero__image {object-position:center;}
+}
 /* Give the country editorial heading two lines without shrinking its type. */
 @media (min-width:1280px) {
   html body.country-node-page .catalog-intro__inner[class] {
