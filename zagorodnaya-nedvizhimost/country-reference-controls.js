@@ -20,7 +20,7 @@
   let active, config, lastParent=document.body;
   const choice=(key,button)=>{
     if(key==='sort')return {title:'Сортировка',values:all('option',button.nextElementSibling).map(option=>[option.value,option.textContent.trim()]),selected:()=>button.nextElementSibling.value};
-    if(key==='location')return {title:'Локация',values:listing.getLocations().map(value=>[value,value]),selected:()=>listing.getSelection().location};
+    if(key==='location')return {title:'Шоссе',values:listing.getLocations().map(value=>[value,value]),selected:()=>listing.getSelection().location};
     if(key==='type')return {title:'Тип',values:typeOptions,selected:()=>state.types[0]||''};
     if(key==='price')return {title:'Стоимость',values:priceOptions,selected:()=>state.bands[0]||''};
     if(key==='bedrooms')return {title:'Спальни',values:bedroomOptions,selected:()=>listing.getSelection().bedrooms};
@@ -81,7 +81,7 @@
     popup.hidden=false;popup.style.display='block';position();
     (list.querySelector('[aria-selected=true]')||list.firstElementChild)?.focus({preventScroll:true});
   }
-  const keyReset=key=>({location:'Все локации',type:'Любой тип',price:'Любая стоимость',bedrooms:'Любые спальни'}[key]||'Любые');
+  const keyReset=key=>({location:'Все шоссе',type:'Любой тип',price:'Любая стоимость',bedrooms:'Любые спальни'}[key]||'Любые');
   function makeBrands(context){
     const fieldset=document.createElement('fieldset');fieldset.className='country-brand-filters';fieldset.dataset.brandContext=context;
     const legend=document.createElement('legend');legend.textContent='Подборки BARNES';fieldset.append(legend);
@@ -100,7 +100,7 @@
     if(panel&&!$('.country-map-reference',panel)){
       all('.catalog-quick-filters__button',panel).forEach((button,index)=>{
         const key=['location','type','price','bedrooms'][index];button.dataset.countryQuick=key;
-        const label=$('.catalog-quick-filters__label',button);if(label)label.textContent=({location:'Локация',type:'Тип',price:'Стоимость',bedrooms:'Спальни'})[key];
+        const label=$('.catalog-quick-filters__label',button);if(label)label.textContent=({location:'Шоссе',type:'Тип',price:'Стоимость',bedrooms:'Спальни'})[key];
       });
       const controls=document.createElement('div');controls.className='country-map-reference';
       const market=document.createElement('div');market.className='country-map-market';market.setAttribute('role','group');market.setAttribute('aria-label','Рынок недвижимости');

@@ -14,8 +14,12 @@ try {
     await page.evaluate(()=>document.fonts.ready);
     const quick=page.locator('.catalog-mode-toolbar [data-country-quick]');
     if(await quick.count()!==4)throw new Error(`${width}: expected four listing quick filters`);
-    await quick.nth(1).click();
+    if(!await quick.first().getByText('Шоссе').isVisible())throw new Error(`${width}: listing highway label missing`);
+    await quick.first().click();
     const popup=page.locator('.country-reference-dropdown');
+    if(!await popup.getByRole('option',{name:'Все шоссе'}).isVisible())throw new Error(`${width}: highway reset label missing`);
+    await page.keyboard.press('Escape');
+    await quick.nth(1).click();
     if(!await popup.isVisible())throw new Error(`${width}: listing popup hidden`);
     await popup.getByRole('option',{name:'Дом',exact:true}).click();
     if(!await quick.nth(1).evaluate(button=>button.classList.contains('is-active')))throw new Error(`${width}: type not applied`);
@@ -42,6 +46,7 @@ try {
     await page.locator('.catalog-projects-map__fullscreen').click();
     const mapQuick=page.locator('.catalog-projects-map__panel [data-country-quick]');
     if(await mapQuick.count()!==4)throw new Error(`${width}: expected four map quick filters`);
+    if(!((await mapQuick.first().getAttribute('aria-label'))||'').startsWith('Шоссе:'))throw new Error(`${width}: map highway label missing`);
     if(await page.locator('.country-map-sort select').inputValue()!==sortValue)throw new Error(`${width}: map sort did not sync`);
     if(width<=540)await page.locator('.catalog-projects-map__panel-handle').click();
     await mapQuick.nth(2).click();
