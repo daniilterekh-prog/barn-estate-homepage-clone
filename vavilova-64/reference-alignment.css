@@ -178,3 +178,62 @@
   .catalog-detail .detail-about__inner > .vavilova-section-heading,
   .catalog-detail .vavilova-gallery-heading { margin-bottom: 28px; }
 }
+
+/* Approved desktop simplification. Tablet/mobile keep their existing layout. */
+@media (min-width: 1025px) {
+  .catalog-detail .detail-hero__inner { gap: 0; }
+  .catalog-detail .detail-hero__body { gap: 28px; }
+  .catalog-detail .detail-hero__copy { gap: 0; }
+  .catalog-detail .detail-hero__breadcrumbs { margin: 0 0 20px; }
+  .catalog-detail .detail-hero__breadcrumbs :is(.breadcrumbs__link,.breadcrumbs__separator) {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .catalog-detail .detail-hero__title { margin: 0 0 12px; }
+  .catalog-detail .detail-hero__location {
+    margin: 0 0 16px;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.4;
+  }
+  .catalog-detail .vavilova-hero-facts {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    width: auto;
+    max-width: 100%;
+    margin: 0;
+    gap: 0;
+  }
+  .catalog-detail .vavilova-hero-fact {
+    display: flex;
+    align-items: baseline;
+    position: relative;
+  }
+  .catalog-detail .vavilova-hero-fact + .vavilova-hero-fact {
+    border: 0;
+    padding: 0;
+  }
+  .catalog-detail .vavilova-hero-fact + .vavilova-hero-fact::before {
+    content: "·";
+    padding: 0 14px;
+    font-size: 18px;
+    line-height: 1.4;
+    color: rgb(255 255 255 / 75%);
+  }
+  .catalog-detail .vavilova-hero-fact dt {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+  .catalog-detail .vavilova-hero-fact dd {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.4;
+  }
+}
