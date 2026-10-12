@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-12",
+  "scope": "zagorodnaya-nedvizhimost/ only",
+  "structureReference": "kurortnaya/",
+  "beforeApproxMiB": 31,
+  "afterApproxMiB": 21,
+  "deletedTrackedFiles": 39,
+  "deletedGroups": {
+    "unusedCardImages": 11,
+    "unusedGridImages": 12,
+    "supersededHeroAndReferenceImages": 2,
+    "unusedCountryStylesAndScript": 2,
+    "unusedMapCanvasScreenshots": 7,
+    "supersededVerificationReports": 5
+  },
+  "retained": [
+    "All images referenced by active HTML, CSS or JS",
+    "Local map tiles used by the active map runtime",
+    "Current hero images and CTA interior",
+    "Bundled Splide 4.1.4 and its license"
+  ],
+  "localizedDependencies": [
+    "Seven Tilda Sans font weights from repository assets/fonts/",
+    "Approved CTA interior already present in this node",
+    "Owner header CSS from repository shared/owner-header.css",
+    "Floating-expert image and background from repository pictures/floating-expert/"
+  ],
+  "recovery": "Deleted files remain in Git history before the packaging commit."
+}

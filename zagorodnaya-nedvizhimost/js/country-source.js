@@ -9,12 +9,12 @@
   ];
 
   const news = [
-    ['https://barn-estate.ru/media/blog/top-5-kottedzhnykh-poselkov-dlya-vtorogo-doma-v-podmoskove/', 'news-1.png', 'Топ-5 коттеджных поселков для второго дома в Подмосковье'],
-    ['https://barn-estate.ru/media/novosti/rossiya-voshla-v-top-10-stran-po-rostu-tsen-na-zhiluyu-nedvizhimost/', 'news-2.jpg', 'Россия вошла в топ-10 стран по росту цен на жилую недвижимость'],
-    ['https://barn-estate.ru/media/novosti/tri-proekta-za-230-mlrd-rubley-kak-izmenyatsya-dorogi-ot-moskva-siti-do-novoy-rigi/', 'news-3.jpg', 'Три проекта за 230 млрд рублей: как изменятся дороги от Москва-Сити до Новой Риги'],
-    ['https://barn-estate.ru/media/analitika/analiz-rynka-elitnoy-zagorodnoy-nedvizhimosti-podmoskovya-za-2025-god-ot-barnes/', 'news-4.png', 'Анализ рынка элитной загородной недвижимости Подмосковья за 2025 год от BARNES'],
-    ['https://barn-estate.ru/media/novosti/novye-pravila-stroitelstva-chastnykh-domov-v-podmoskove-v-2026-godu/', 'news-5.jpg', 'Новые правила строительства частных домов в Подмосковье в 2026 году'],
-    ['https://barn-estate.ru/media/novosti/za-chto-mogut-oshtrafovat-vladeltsev-dach-i-uchastkov-/', 'news-6.png', 'За что могут оштрафовать владельцев дач и участков в 2026 году'],
+    ['https://barn-estate.ru/media/blog/top-5-kottedzhnykh-poselkov-dlya-vtorogo-doma-v-podmoskove/', 'assets/news-1.png', 'Топ-5 коттеджных поселков для второго дома в Подмосковье'],
+    ['https://barn-estate.ru/media/novosti/rossiya-voshla-v-top-10-stran-po-rostu-tsen-na-zhiluyu-nedvizhimost/', 'assets/news-2.jpg', 'Россия вошла в топ-10 стран по росту цен на жилую недвижимость'],
+    ['https://barn-estate.ru/media/novosti/tri-proekta-za-230-mlrd-rubley-kak-izmenyatsya-dorogi-ot-moskva-siti-do-novoy-rigi/', 'assets/news-3.jpg', 'Три проекта за 230 млрд рублей: как изменятся дороги от Москва-Сити до Новой Риги'],
+    ['https://barn-estate.ru/media/analitika/analiz-rynka-elitnoy-zagorodnoy-nedvizhimosti-podmoskovya-za-2025-god-ot-barnes/', 'assets/news-4.png', 'Анализ рынка элитной загородной недвижимости Подмосковья за 2025 год от BARNES'],
+    ['https://barn-estate.ru/media/novosti/novye-pravila-stroitelstva-chastnykh-domov-v-podmoskove-v-2026-godu/', 'assets/news-5.jpg', 'Новые правила строительства частных домов в Подмосковье в 2026 году'],
+    ['https://barn-estate.ru/media/novosti/za-chto-mogut-oshtrafovat-vladeltsev-dach-i-uchastkov-/', 'assets/news-6.png', 'За что могут оштрафовать владельцев дач и участков в 2026 году'],
   ];
 
   const syncCatalogGrid = () => {
@@ -114,7 +114,7 @@
     aside.className = 'floating-expert floating-expert--alexander';
     aside.setAttribute('data-v-553bd346', '');
     aside.setAttribute('aria-label', 'Михаил Долгов');
-    aside.innerHTML = '<button data-v-553bd346 type="button" class="floating-expert__card" aria-haspopup="dialog"><span data-v-553bd346 class="floating-expert__avatar"><img data-v-553bd346 src="../pictures/floating-expert/alexander-dolgov.webp" alt="Михаил Долгов" width="72" height="72" loading="lazy" decoding="async"></span><span data-v-553bd346 class="floating-expert__content"><span data-v-553bd346 class="floating-expert__label">Руководитель департамента загородной недвижимости</span><span data-v-553bd346 class="floating-expert__title">Задать вопрос эксперту</span><span data-v-553bd346 class="floating-expert__name">Михаил Долгов</span></span></button><button data-v-553bd346 type="button" class="floating-expert__close" aria-label="Скрыть карточку Михаил Долгов"></button>';
+    aside.innerHTML = '<button data-v-553bd346 type="button" class="floating-expert__card" aria-haspopup="dialog"><span data-v-553bd346 class="floating-expert__avatar"><img data-v-553bd346 src="assets/expert-dolgov.webp" alt="Михаил Долгов" width="72" height="72" loading="lazy" decoding="async"></span><span data-v-553bd346 class="floating-expert__content"><span data-v-553bd346 class="floating-expert__label">Руководитель департамента загородной недвижимости</span><span data-v-553bd346 class="floating-expert__title">Задать вопрос эксперту</span><span data-v-553bd346 class="floating-expert__name">Михаил Долгов</span></span></button><button data-v-553bd346 type="button" class="floating-expert__close" aria-label="Скрыть карточку Михаил Долгов"></button>';
     aside.querySelector('.floating-expert__close')?.addEventListener('click', () => aside.remove());
     aside.querySelector('.floating-expert__card')?.addEventListener('click', () => document.querySelector('.catalog-consultation')?.scrollIntoView({ behavior: 'smooth' }));
     document.body.append(aside);
