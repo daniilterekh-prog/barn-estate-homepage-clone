@@ -21,7 +21,6 @@ html body.commercial-node .catalog-consultation__method[class] { --contact-icon-
 }
 @media(max-width:540px){
  html body.commercial-node .commercial-mobile-request[class] { display:inline-flex;flex:0 0 auto;background:#8b1d25;color:white;min-height:44px;height:44px;padding-inline:12px;font-size:15px; }
- html body.commercial-node .catalog-sticky__inner { gap:8px; }
  html body.commercial-node .catalog-page-nav__list { gap:18px;overflow-x:auto;white-space:nowrap; }
  html body.commercial-node .catalog-mode-toolbar .barnes-brand-filters { grid-row:3;margin-top:7px; }
 }

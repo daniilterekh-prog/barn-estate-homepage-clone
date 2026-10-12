@@ -35,6 +35,32 @@
   const desktopRequest=document.querySelector('.catalog-page-nav__request');
   request.addEventListener('click',()=>{desktopRequest.click();const channel=document.querySelector('.catalog-feedback-modal [data-channel="Звонок"]');channel?.click();});
   document.querySelector('.catalog-sticky__contact-toggle').after(request);
+  // Use the reference sticky-header structure, not source navigation aliases.
+  const sticky=document.querySelector('.catalog-sticky');
+  const inner=sticky.querySelector('.catalog-sticky__inner');
+  const list=sticky.querySelector('.catalog-sticky__list');
+  const navigation=document.createElement('nav');navigation.className='catalog-sticky__nav';navigation.setAttribute('aria-label','Навигация по странице');
+  const actions=document.createElement('div');actions.className='catalog-sticky__mobile-actions';
+  actions.append(sticky.querySelector('.catalog-sticky__contact-toggle'),request);
+  inner.prepend(navigation);navigation.append(list,actions);
+  const targets=['#commercial-selection','.catalog-grid','.catalog-intro','.catalog-faq'];
+  const links=[...list.querySelectorAll('.catalog-sticky__link')].map((old,index)=>{
+    const link=document.createElement('a');link.className='catalog-sticky__link';link.textContent=['Проекты','Каталог','О BARNES','Вопросы'][index];
+    const section=document.querySelector(targets[index]);
+    if(section){if(!section.id)section.id=['catalog-new-starts','catalog-grid','catalog-intro','catalog-faq'][index];link.href='#'+section.id;}
+    link.addEventListener('click',event=>{event.preventDefault();section?.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'});});
+    old.replaceWith(link);link.parentElement.className='catalog-sticky__item';return link;
+  });
+  const brand=sticky.querySelector('.catalog-sticky__brand');
+  brand.querySelector('.catalog-sticky__phone')?.remove();
+  const messengers=document.createElement('nav');messengers.className='catalog-sticky__messengers';messengers.setAttribute('aria-label','Способы связи');
+  sticky.querySelector('.catalog-sticky__contact-panel').querySelectorAll('a').forEach(link=>messengers.append(link.cloneNode(true)));
+  brand.append(messengers);
+  sticky.querySelector('.catalog-page-nav__mobile-phone')?.remove();
+  sticky.querySelectorAll('*').forEach(element=>[...element.classList].filter(name=>name.startsWith('catalog-page-nav__')).forEach(name=>element.classList.remove(name)));
+  sticky.classList.remove('catalog-page-nav');
+  function highlightSticky(){let current=0;targets.forEach((selector,index)=>{const section=document.querySelector(selector);if(section&&section.getBoundingClientRect().top<=sticky.offsetHeight+40)current=index;});links.forEach((link,index)=>{link.classList.toggle('catalog-sticky__link--active',index===current);if(index===current)link.setAttribute('aria-current','location');else link.removeAttribute('aria-current');});}
+  addEventListener('scroll',highlightSticky,{passive:true});highlightSticky();
   // Match the common header phone / menu placement without changing links.
   const header=document.querySelector('.site-header');header.classList.add('catalog-header-ready');
   header.querySelector('.site-header__mobile-phone')?.classList.add('catalog-primary-call');

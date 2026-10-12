@@ -39,7 +39,7 @@ const {chromium} = require(path.join(process.env.WEB_CAPTURE_TOOLKIT || '/home/d
     }
     await page.setViewportSize({width:1440,height:900});
     await page.locator('.floating-expert__close').click();
-    for (const selector of ['.apartment-card__call-btn','.site-footer__callback-btn','.catalog-contact__card-submit','.catalog-page-nav__request']) {
+    for (const selector of ['.apartment-card__call-btn','.site-footer__callback-btn','.catalog-contact__card-submit','.catalog-sticky__brand .catalog-sticky__request']) {
       await page.locator(selector).first().click();
       const modal=page.locator('.catalog-feedback-modal');
       await modal.waitFor({state:'visible'});

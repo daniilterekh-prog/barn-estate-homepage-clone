@@ -5,7 +5,6 @@ html body.commercial-node .catalog-page-nav__brand { margin-left: 0; position: s
 html body.commercial-node .catalog-page-nav__request { position: static; transform: none; margin: 0; flex: none; }
 html body.commercial-node .catalog-page-nav__phone { position: static; width: auto; display: flex; flex: none; gap: 10px; }
 html body.commercial-node .catalog-page-nav__phone-number { position: static; width: auto; white-space: nowrap; }
-html body.commercial-node .catalog-sticky__request { background: transparent; border: 1px solid #8b1d25; border-radius: 1px; color: #8b1d25; height: 44px; padding: 0 20px; }
 html body.commercial-node .catalog-page-nav__logo { display: flex; }
 html body.commercial-node .catalog-page-nav__mobile-phone { display: none; }
 html body.commercial-node .catalog-page-nav__item--request { display: list-item; }
@@ -165,9 +164,6 @@ html body.commercial-node .catalog-consultation__method-icon[class] {
   }
 }
 @media (max-width: 900px) {
-  html body.commercial-node .catalog-sticky__inner { display: flex; gap: 12px; }
-  html body.commercial-node .catalog-sticky__list { flex: 1; min-width: 0; }
-  html body.commercial-node .catalog-sticky__contact-toggle { display: inline-flex; flex: 0 0 44px; }
   html body.commercial-node .catalog-page-nav__brand,
   html body.commercial-node .catalog-page-nav__logo { display: none; }
 }
