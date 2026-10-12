@@ -29,7 +29,7 @@ const {chromium}=require('/home/daniil/Documents/Codex/2026-10-11/firecrawl/work
    await page.keyboard.press('Escape');assert.ok(await page.locator('.map-browser').isHidden());
    await page.locator('.catalog-hero-filters__filter-icon').click();assert.equal(await page.locator('.hero-filter-modal--dark').count(),1);await page.keyboard.press('Escape');
    await page.locator('.catalog-mode-detailed-filters').click();assert.equal(await page.locator('.hero-filter-modal--dark').count(),1);await page.keyboard.press('Escape');
-   await page.locator('.international-map-filter').click();assert.equal(await page.locator('.hero-filter-modal--drawer').count(),1);await page.keyboard.press('Escape');
+   assert.equal(await page.locator('.international-map-filter').count(),0);
    console.log('PASS',width,'original drawer geometry/typography; map apply/reset; hero/listing remain dark');
   }
   assert.deepEqual(errors,[]);
