@@ -1,4 +1,12 @@
 (function () {
+  var mapDataScript = document.createElement('script');
+  mapDataScript.src = 'map-projects.js?v=1';
+  mapDataScript.onload = function () {
+    var mapScript = document.createElement('script');
+    mapScript.src = 'map-fullscreen.js?v=1';
+    document.body.appendChild(mapScript);
+  };
+  document.body.appendChild(mapDataScript);
   var openContactModal = null;
   document.body.classList.add('barnes-header-template');
   var ownerHeaderStyles = document.createElement('link');
