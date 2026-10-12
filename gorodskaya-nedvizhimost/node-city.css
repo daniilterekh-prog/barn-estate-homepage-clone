@@ -23,3 +23,8 @@ html body #catalog-intro .catalog-intro__image[class] { object-position:center b
   html body.city-node-ready .catalog-consultation__overlay[class] { background:rgba(10,12,16,0.75); }
 }
 html body.city-node-ready .catalog-contact__image[class] { object-fit:cover; }
+/* RequestModal keeps the reference geometry; crop the city portrait from its own photograph. */
+html body .catalog-feedback-modal .feedback-modal__hero-image { object-fit:cover; object-position:12% top; }
+@media (max-width:580px) {
+  html body .catalog-feedback-modal .feedback-modal__hero-image { object-position:10% top; }
+}
