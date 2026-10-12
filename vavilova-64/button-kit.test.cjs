@@ -8,10 +8,17 @@ test('hero arrows have no motion or transform transition', () => {
   assert.doesNotMatch(css, /transition:\s*transform/)
   assert.doesNotMatch(css, /transform:\s*translate/)
 })
-test('both hero actions use the same kit arrow path', () => {
+test('hero uses semantic 24px kit icons instead of custom arrows', () => {
   const js = read('architecture-hero.js')
-  assert.doesNotMatch(js, /diagonal\s*\?/)
-  assert.match(js, /M3 13 13 3M5 3h8v8/)
+  assert.match(js, /0 0 24 24/)
+  assert.match(js, /m20 20-3.5-3.5/)
+  assert.doesNotMatch(js, /M3 13 13 3M5 3h8v8/)
+})
+test('both hero actions share the ActionButton contract', () => {
+  const css = read('button-kit.css')
+  assert.match(css, /detail-hero__actions \.detail-hero__button \{/)
+  assert.doesNotMatch(css, /Presentation remains the approved text CTA/)
+  assert.match(css, /min-width: 300px/)
 })
 test('contact selector removes stale snapshot tab semantics', () => {
   const js = read('reference-interactions.js')

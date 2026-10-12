@@ -13,7 +13,7 @@ body.vavilova-button-kit .catalog-detail :is(
   .catalog-contact__submit,.catalog-contact__card-submit
 ),
 body.vavilova-button-kit .newsletter-form__row > button,
-body.vavilova-button-kit .catalog-detail .detail-hero .detail-hero__actions .detail-hero__button--primary {
+body.vavilova-button-kit .catalog-detail .detail-hero .detail-hero__actions .detail-hero__button {
   font-family: "Tilda Sans",system-ui,sans-serif;
   font-size: var(--vav-action-size); font-weight: 400; line-height: var(--vav-action-line);
   box-sizing: border-box; height: var(--vav-action-height); min-height: var(--vav-action-height);
@@ -21,16 +21,33 @@ body.vavilova-button-kit .catalog-detail .detail-hero .detail-hero__actions .det
   transition-property: background-color,border-color,color,opacity;
   transition-duration: 200ms;
 }
-body.vavilova-button-kit .catalog-detail .detail-hero .detail-hero__button--primary .architecture-hero-arrow {
+body.vavilova-button-kit .catalog-detail .detail-hero .detail-hero__button .architecture-hero-icon {
   width: var(--vav-hero-icon); height: var(--vav-hero-icon); flex-basis: var(--vav-hero-icon);
 }
-/* Presentation remains the approved text CTA, not a second filled button. */
-body.vavilova-button-kit .catalog-detail .detail-hero .detail-hero__actions .detail-hero__button--secondary {
-  font-size: 14px; font-weight: 400; line-height: 16.8px; border-radius: 0;
-  min-height: 44px; height: auto; padding: 12px 0;
+/* Both hero actions follow the ambassadors ActionButton, including optical icons. */
+body.vavilova-button-kit .catalog-detail .detail-hero .detail-hero__actions {
+  gap: 20px; align-items: stretch;
 }
-body.vavilova-button-kit .catalog-detail .detail-hero .detail-hero__button--secondary .architecture-hero-arrow {
-  width: 14px; height: 14px; flex-basis: 14px;
+body.vavilova-button-kit .catalog-detail .detail-hero .detail-hero__actions .detail-hero__button {
+  width: 300px; min-width: 300px; gap: 24px;
+}
+body.vavilova-button-kit .catalog-detail .detail-hero .detail-hero__actions .detail-hero__button--secondary {
+  background: transparent; border: 1px solid #fff; color: #fff;
+  transition-property: background-color,border-color,color,opacity;
+}
+body.vavilova-button-kit .catalog-detail .detail-hero .detail-hero__actions .detail-hero__button--secondary:hover {
+  background: rgba(255,255,255,.08); border-color: #fff;
+}
+body.vavilova-button-kit .catalog-detail .detail-hero .detail-hero__actions .detail-hero__button:focus-visible {
+  outline: 2px solid #fff; outline-offset: 3px;
+}
+@media (max-width:1024px) {
+  body.vavilova-button-kit .catalog-detail .detail-hero .detail-hero__actions { width: 100%; gap: 16px; }
+  body.vavilova-button-kit .catalog-detail .detail-hero .detail-hero__actions .detail-hero__button { flex: 1 1 0; min-width: 0; }
+}
+@media (max-width:768px) {
+  body.vavilova-button-kit .catalog-detail .detail-hero .detail-hero__actions { max-width: 420px; }
+  body.vavilova-button-kit .catalog-detail .detail-hero .detail-hero__actions .detail-hero__button--primary { flex: 0 0 auto; width: 100%; }
 }
 body.vavilova-button-kit .catalog-detail :is(.detail-hero__button,.detail-characteristics__cta,
   .detail-location__action,.lot-developer__cta,.catalog-contact__submit,.catalog-contact__card-submit,
@@ -81,6 +98,8 @@ body.vavilova-button-kit .newsletter-form__row > button { display: inline-flex; 
     --vav-action-size: 19px; --vav-action-line: 20.9px; --vav-action-padding: 47px;
     --vav-hero-icon: 28px; --vav-control-size: 68px;
   }
+  body.vavilova-button-kit .catalog-detail .detail-hero .detail-hero__body { max-width: 750px; }
+  body.vavilova-button-kit .catalog-detail .detail-hero .detail-hero__actions .detail-hero__button { width: 340px; min-width: 340px; }
 }
 @media (max-width:540px) {
   body.vavilova-button-kit {
