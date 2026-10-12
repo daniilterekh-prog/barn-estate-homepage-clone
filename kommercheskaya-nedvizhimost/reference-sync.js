@@ -16,8 +16,14 @@
   window.BarnesQuickConfig=[
     {title:'Тип',key:'propertyTypes',reset:'Любой тип',choices:types.map(t=>t.label),values:types.map(t=>t.value)},
     {title:'Стоимость',key:'priceRanges',reset:'Любая',choices:['до 50 млн ₽','50 – 100 млн ₽','100 – 200 млн ₽','от 200 млн ₽'],values:['50m','50-100m','100-200m','200m+']},
-    {title:'Площадь',key:'areaMax',reset:'Любая',range:{min:'areaMin',max:'areaMax',unit:'м²'}}
+    {title:'Площадь',key:'areaMax',reset:'Любая',range:{min:'areaMin',max:'areaMax',unit:'м²'}},
+    {title:'Район',key:'districts',reset:'Все районы',choices:['Академический','Алексеевский','Арбат','Аэропорт','Басманный','Беговой','Бутырский','Войковский','Гагаринский','Головинский','Даниловский','Донской','Дорогомилово','Замоскворечье','Западное Дегунино','Красносельский','Крылатское','Кунцево','Левобережный','Ломоносовский','Марфино','Марьина Роща','Мещанский','Митино','Можайский','Обручевский','Отрадное','Очаково-матвеевское','Покровское-Стрешнево','Пресненский','Проспект Вернадского','Раменки','Савёловский','Свиблово','Сокол','Сокольники','Строгино','Таганский','Тверской','Тропарёво-Никулино','Филевский парк','Фили-Давыдково','Хамовники','Ховрино','Хорошёво-Мнёвники','Хорошёвский','Щукино','Южнопортовый','Якиманка']}
   ];
+  const districtIcon='<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 21s6-5.4 6-11a6 6 0 1 0-12 0c0 5.6 6 11 6 11Z" stroke="currentColor" stroke-width="1.35"/><circle cx="12" cy="10" r="2.25" stroke="currentColor" stroke-width="1.35"/></svg>';
+  const quickList=document.querySelector('.catalog-mode-filters');
+  const districtItem=quickList.querySelector('.catalog-quick-filters__item').cloneNode(true);districtItem.classList.add('commercial-district');
+  districtItem.querySelector('.catalog-quick-filters__icon').innerHTML=districtIcon;
+  quickList.append(districtItem);
   await styles('owner-footer.css');
   await load('reference-footer.js');
   const footerTemplate=document.createElement('template');footerTemplate.innerHTML=window.CommercialReferenceFooter;
@@ -28,6 +34,9 @@
   // Preserve the front commercial zero-results capture; do not borrow resort projects.
   window.BarnesMapProjects=[];
   await load('map-fullscreen.js');
+  const districtField=document.createElement('label');districtField.className='map-browser__field commercial-district';
+  districtField.innerHTML=districtIcon+'<input data-filter="district" aria-label="Район" type="text">';
+  document.querySelector('.map-browser__filters').prepend(districtField);
   await load('quick-filters.js');
   await load('brand-filters.js');
   // Purchase/rent replaces residential markets, sharing selection with the map.

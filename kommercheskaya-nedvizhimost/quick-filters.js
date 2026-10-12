@@ -28,7 +28,7 @@
   var selectConfigs = new Map();
   // Map parameters use the same configuration, options and state as the listing.
   configs.forEach(function (config, index) {
-    var field = document.querySelector('.map-browser [data-filter="' + ['type','price','area'][index] + '"]');
+    var field = document.querySelector('.map-browser [data-filter="' + ['type','price','area','district'][index] + '"]');
     if (!field) return;
     field.hidden = true;
     field.setAttribute('aria-hidden','true');

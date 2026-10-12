@@ -192,7 +192,7 @@
   dialog.querySelector('.map-browser__reset').addEventListener('click', function () {
     [query, type, price, sort, location, bedrooms].forEach(function (input) { input.value = ''; });
     area.value='';
-    if (window.BarnesFilters) window.BarnesFilters.patch({ brandFlags: [],propertyTypes:[],priceRanges:[],priceMin:'',priceMax:'',areaMin:'',areaMax:'' });
+    if (window.BarnesFilters) window.BarnesFilters.patch({ brandFlags: [],propertyTypes:[],priceRanges:[],districts:[],priceMin:'',priceMax:'',areaMin:'',areaMax:'' });
     render();
   });
   document.addEventListener('barnes:filters-apply', function () { if (!dialog.hidden) render(); });
