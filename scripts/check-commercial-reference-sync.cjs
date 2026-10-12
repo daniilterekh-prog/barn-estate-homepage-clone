@@ -29,6 +29,15 @@ const {chromium}=require('/home/daniil/Documents/Codex/2026-10-11/firecrawl/work
   if(width<=540)await map.locator('.map-browser__handle').click();
   assert.equal(await map.locator('[data-filter=type]').inputValue(),'ofice');
   assert.equal(await map.locator('[data-filter=area]').inputValue(),'500');
+  const mapQuick=map.locator('.commercial-map-quick');
+  assert.equal(await mapQuick.count(),3);
+  await mapQuick.nth(0).click();await popup.getByRole('option',{name:'Склад',exact:true}).click();
+  assert.deepEqual(await page.evaluate(()=>BarnesFilters.getState().propertyTypes),['stock']);
+  assert.equal(await buttons.first().innerText(),'Склад');
+  await mapQuick.nth(1).click();await popup.getByRole('option',{name:'50 – 100 млн ₽',exact:true}).click();
+  assert.deepEqual(await page.evaluate(()=>BarnesFilters.getState().priceRanges),['50-100m']);
+  await mapQuick.nth(2).click();await popup.locator('[name=areaMax]').fill('600');await popup.getByRole('button',{name:'Применить',exact:true}).click();
+  assert.equal(await page.evaluate(()=>BarnesFilters.getState().areaMax),'600');
   assert.equal(await map.locator('[data-brand-context=map] input').first().isChecked(),true);
   await map.locator('.resort-sort-trigger').click();await page.keyboard.press('End');await page.keyboard.press('Enter');
   assert.equal(await map.locator('[data-filter=sort]').inputValue(),'desc');

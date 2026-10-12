@@ -26,9 +26,32 @@
   var activeButton = null;
   var savedPopupInert = false;
   var selectConfigs = new Map();
+  // Map parameters use the same configuration, options and state as the listing.
+  configs.forEach(function (config, index) {
+    var field = document.querySelector('.map-browser [data-filter="' + ['type','price','area'][index] + '"]');
+    if (!field) return;
+    field.hidden = true;
+    field.setAttribute('aria-hidden','true');
+    field.tabIndex = -1;
+    field.dataset.sharedMapQuick = 'true';
+    var button = document.createElement('button');
+    button.type = 'button';
+    button.className = 'resort-select-trigger commercial-map-quick';
+    button.dataset.quickIndex = index;
+    button.innerHTML = '<span class="catalog-quick-filters__caption"></span>';
+    field.before(button);
+    var parent = field.closest('label');
+    parent.classList.add('map-browser__field--select');
+    if (!parent.querySelector('.map-browser__chevron')) {
+      var chevron = document.createElement('span');
+      chevron.className = 'map-browser__chevron';
+      chevron.setAttribute('aria-hidden','true');
+      parent.appendChild(chevron);
+    }
+  });
   function mountSelectDropdowns() {
     document.querySelectorAll('.catalog-mode-toolbar .catalog-grid__sort select, .map-browser select[data-filter]').forEach(function (select) {
-      if (select.dataset.customDropdownReady) return;
+      if (select.dataset.customDropdownReady || select.dataset.sharedMapQuick) return;
       select.dataset.customDropdownReady = 'true';
       var button = document.createElement('button');
       button.type = 'button';
@@ -67,8 +90,8 @@
   }
   function update() {
     var value = state();
-    buttons().forEach(function (button, index) {
-      var config = configs[index];
+    buttons().concat(Array.from(document.querySelectorAll('.commercial-map-quick'))).forEach(function (button, index) {
+      var config = configs[button.dataset.quickIndex === undefined ? index : Number(button.dataset.quickIndex)];
       if (!config) return;
       var selected = selection(config,value);
       if(config.range){const min=value[config.range.min]||'',max=value[config.range.max]||'';const caption=button.querySelector('.catalog-quick-filters__caption');caption.textContent=min||max?`${min?'от '+min:''}${min&&max?' ':''}${max?'до '+max:''} ${config.range.unit}`:config.title;button.setAttribute('aria-label',config.title+': '+caption.textContent);button.setAttribute('aria-haspopup','dialog');button.setAttribute('aria-controls',popup.id);button.classList.toggle('is-active',!!(min||max));return;}
@@ -173,6 +196,8 @@
   }
   popup.querySelector('.catalog-quick-filters__dropdown-close').addEventListener('click',function () { close(true); });
   document.addEventListener('click',function (event) {
+    var mapButton = event.target.closest('.commercial-map-quick');
+    if (mapButton) { event.preventDefault(); update(); open(mapButton,Number(mapButton.dataset.quickIndex)); return; }
     var sortButton = event.target.closest('.resort-sort-trigger, .resort-select-trigger');
     if (sortButton) { event.preventDefault(); open(sortButton,selectConfigs.get(sortButton)); return; }
     var button = event.target.closest('.catalog-mode-filters .catalog-quick-filters__button');
