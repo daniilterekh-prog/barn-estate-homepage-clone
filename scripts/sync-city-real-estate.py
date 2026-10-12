@@ -284,6 +284,14 @@ def sync(source_path: Path | None = None) -> None:
     html = html.replace('"/fonts/', '"../fonts/').replace("'/fonts/", "'../fonts/")
     html = html.replace("url(/fonts/", "url(../fonts/")
     html = html.replace("url('/fonts/", "url('../fonts/").replace('url("/fonts/', 'url("../fonts/')
+    pages_base_script = '''<script data-city-pages-base>
+(() => {
+  if (!location.hostname.endsWith("github.io")) return;
+  if (!location.pathname.startsWith("/barn-estate-homepage-clone/")) return;
+  window.__NUXT__?.config?.app && (window.__NUXT__.config.app.baseURL = "/barn-estate-homepage-clone/");
+})();
+</script>'''
+    html = html.replace('<script type="application/ld+json"', pages_base_script + '<script type="application/ld+json"', 1)
     interactive_html = "<!-- Source snapshot: " + SOURCE_URL + " -->\n" + html
     static_html = re.sub(r"<script\b[^>]*\bsrc=\"[^\"]+\"[^>]*>.*?</script>", "", interactive_html, flags=re.S)
     static_html = re.sub(r"[ \t]+(?=\n|$)", "", static_html)
