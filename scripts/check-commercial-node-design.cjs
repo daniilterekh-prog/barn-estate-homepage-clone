@@ -27,7 +27,7 @@ const {chromium}=require(path.join(toolkit,'node_modules/playwright'));
       await page.evaluate(()=>Promise.all([...document.images].map(image=>image.decode().catch(()=>{}))));
       const metrics=await page.evaluate(()=>{
         const css=selector=>{const s=getComputedStyle(document.querySelector(selector));return {size:s.fontSize,weight:s.fontWeight,line:s.lineHeight,color:s.color};};
-        return {title:css('.catalog-grid__title'),eyebrow:css('.catalog-grid__header>.catalog-section-eyebrow'),name:css('.apartment-card__name-text'),price:css('.apartment-card__price'),filter:css('.catalog-quick-filters__caption'),sort:css('.catalog-grid__sort-select'),overflow:document.documentElement.scrollWidth>innerWidth,broken:[...document.images].filter(e=>!e.complete||!e.naturalWidth).map(e=>e.getAttribute('src'))};
+        return {title:css('.catalog-grid__title'),eyebrow:css('.catalog-grid__header>.catalog-section-eyebrow'),name:css('.apartment-card__name-text'),price:css('.catalog-grid .apartment-card__price'),filter:css('.catalog-quick-filters__caption'),sort:css('.catalog-grid__sort-select'),overflow:document.documentElement.scrollWidth>innerWidth,broken:[...document.images].filter(e=>!e.complete||!e.naturalWidth).map(e=>e.getAttribute('src'))};
       });
       assert.equal(metrics.title.size,width<=540?'22px':width>=1441?'44px':'38px');
       assert.equal(metrics.title.weight,'300');

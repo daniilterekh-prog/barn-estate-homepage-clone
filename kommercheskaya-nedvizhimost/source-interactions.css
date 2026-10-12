@@ -2,6 +2,8 @@
 @import url("node-ui-kit.css");
 @import url("node-listing.css");
 @import url("node-header.css");
+@import url("selection-layout.css");
+@import url("selection-cards.css");
 @import url("node-adaptation.css");
 .news-section .splide__slide { flex-shrink: 0; margin-right: 40px; width: calc((100% - 80px) / 3); }
 @media (max-width: 1024px) { .news-section .splide__slide { width: calc((100% - 40px) / 2); } }

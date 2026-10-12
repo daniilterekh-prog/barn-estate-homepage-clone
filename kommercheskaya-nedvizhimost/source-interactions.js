@@ -287,6 +287,9 @@
     });
   }
   bindForms(document);
+  const selectionScript = document.createElement('script');
+  selectionScript.src = 'selection-carousel.js';
+  document.body.append(selectionScript);
 
   const slider = one('.news-section .splide__list');
   const slides = slider ? all('.splide__slide', slider) : [];
