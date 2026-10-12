@@ -15,7 +15,7 @@ const {chromium}=require('/home/daniil/Documents/Codex/2026-10-11/firecrawl/work
    }
    assert.deepEqual(pair[1],pair[0]);
    const buttons=page.locator('.catalog-mode-filters .catalog-quick-filters__button');
-   assert.deepEqual(await page.locator('.catalog-quick-filters__caption').allTextContents(),['Локация','Тип недвижимости','Стоимость','Спальни']);
+   assert.deepEqual(await page.locator('.catalog-quick-filters__caption').allTextContents(),['Локация','Тип','Стоимость','Спальни']);
    for(let i=0;i<4;i++){
     await buttons.nth(i).click();assert.ok(await page.locator('.resort-quick-dropdown').isVisible());assert.equal(await page.locator('.hero-filter-modal').count(),0);
     assert.ok(await page.locator('.resort-quick-dropdown').evaluate(e=>{const r=e.getBoundingClientRect();return r.left>=0&&r.right<=innerWidth&&r.top>=0&&r.bottom<=innerHeight;}));
@@ -26,7 +26,7 @@ const {chromium}=require('/home/daniil/Documents/Codex/2026-10-11/firecrawl/work
    assert.equal(await buttons.nth(1).locator('.catalog-quick-filters__caption').textContent(),'Квартира');
    await page.locator('.catalog-mode-detailed-filters').click();assert.ok(await page.locator('.hero-filter-modal input:checked').count()>0);
    await page.locator('.hero-filter-modal__reset').click();await page.locator('.hero-filter-modal__apply').click();
-   assert.equal(await buttons.nth(1).locator('.catalog-quick-filters__caption').textContent(),'Тип недвижимости');
+   assert.equal(await buttons.nth(1).locator('.catalog-quick-filters__caption').textContent(),'Тип');
    await buttons.nth(2).click();await page.locator('.resort-quick-dropdown [role=option]').getByText('до 50 млн ₽',{exact:true}).click();
    assert.equal(await page.locator('.catalog-grid__item:not([hidden])').count(),1);
    await buttons.nth(2).click();await page.locator('.resort-quick-dropdown [role=option]').getByText('Любая',{exact:true}).click();
