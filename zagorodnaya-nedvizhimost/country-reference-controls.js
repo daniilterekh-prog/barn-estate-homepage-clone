@@ -123,8 +123,8 @@
       const filterIcon=$('.catalog-projects-map__panel-filter-icon',panel);
       if(filterIcon)filterIcon.innerHTML='<path d="M4 6h3m4 0h9M4 12h8m4 0h4M4 18h4m4 0h8" stroke="currentColor" stroke-width="1.15" stroke-linecap="round"/><circle cx="9" cy="6" r="2" stroke="currentColor" stroke-width="1.15"/><circle cx="14" cy="12" r="2" stroke="currentColor" stroke-width="1.15"/><circle cx="10" cy="18" r="2" stroke="currentColor" stroke-width="1.15"/>';
       const controls=document.createElement('div');controls.className='country-map-reference';
-      const market=document.createElement('div');market.className='country-map-market';market.setAttribute('role','group');market.setAttribute('aria-label','Рынок недвижимости');
-      for(const [value,label] of [['project','Новостройки'],['lot','Вторичка']]){const button=document.createElement('button');button.type='button';button.dataset.countryMarket=value;button.textContent=label;button.addEventListener('click',()=>{listing.setMarket(value);sync();});market.append(button);}
+      const market=document.createElement('div');market.className='country-map-market';market.setAttribute('role','group');market.setAttribute('aria-label','Тип сделки');
+      for(const [value,label] of [['project','Покупка'],['lot','Аренда']]){const button=document.createElement('button');button.type='button';button.dataset.countryMarket=value;button.textContent=label;button.addEventListener('click',()=>{listing.setMarket(value);sync();});market.append(button);}
       filterRoot.before(market);
       const sorting=document.createElement('div');sorting.className='country-map-sort';sorting.setAttribute('aria-label','Сортировка');
       const source=listing.getSort(),select=source.cloneNode(true);select.removeAttribute('id');

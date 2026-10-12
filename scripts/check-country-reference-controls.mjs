@@ -12,6 +12,8 @@ try {
     page.on('pageerror',error=>errors.push(`${width}: ${error.message}`));
     await page.goto(process.env.COUNTRY_LOCAL_URL||'http://127.0.0.1:4188/zagorodnaya-nedvizhimost/',{waitUntil:'networkidle'});
     await page.evaluate(()=>document.fonts.ready);
+    const listingModes=page.locator('.catalog-mode-switch [data-country-mode]');
+    if((await listingModes.allTextContents()).map(text=>text.trim()).join('|')!=='Покупка|Аренда')throw new Error(`${width}: listing deal labels differ`);
     const quick=page.locator('.catalog-mode-toolbar [data-country-quick]');
     if(await quick.count()!==4)throw new Error(`${width}: expected four listing quick filters`);
     if(!await quick.first().getByText('Шоссе').isVisible())throw new Error(`${width}: listing highway label missing`);
@@ -44,6 +46,7 @@ try {
       await page.screenshot({path:`/tmp/country-reference-listing-${width}.png`});
     }
     await page.locator('.catalog-projects-map__fullscreen').click();
+    if((await page.locator('.country-map-market button').allTextContents()).map(text=>text.trim()).join('|')!=='Покупка|Аренда')throw new Error(`${width}: map deal labels differ`);
     const mapQuick=page.locator('.catalog-projects-map__panel [data-country-quick]');
     if(await mapQuick.count()!==4)throw new Error(`${width}: expected four map quick filters`);
     if(!((await page.locator('.catalog-projects-map__panel [data-country-quick="location"]').getAttribute('aria-label'))||'').startsWith('Шоссе:'))throw new Error(`${width}: map highway label missing`);
