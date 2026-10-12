@@ -36,6 +36,9 @@ const assert = require('node:assert/strict');
         assert.ok(Math.abs(market.y + market.height / 2 - brands.y - brands.height / 2) < 1, 'Market and checkboxes share top row');
       }
       if (width <= 540) {
+        const checkX = (await listing.locator('.barnes-brand-filters__box').first().boundingBox()).x;
+        const iconX = (await page.locator('.catalog-mode-filters .catalog-quick-filters__icon svg').first().boundingBox()).x;
+        assert.ok(Math.abs(checkX - iconX) < 1, 'Mobile listing checkbox aligned with filter SVG left edge');
         const bottom = (await listing.boundingBox()).y + (await listing.boundingBox()).height;
         for (const selector of ['.catalog-grid__sort', '.catalog-mode-detailed-filters']) {
           assert.ok((await page.locator(selector).boundingBox()).y >= bottom, 'Mobile sorting and detailed filters below checkboxes, no overlap');
@@ -56,6 +59,11 @@ const assert = require('node:assert/strict');
       await listing.screenshot({ path: `/tmp/brand-listing-${width}.png` });
       await page.locator('.catalog-projects-map__fullscreen').click();
       if (width <= 540) await page.locator('.map-browser__handle').click();
+      if (width <= 540) {
+        const checkX = (await map.locator('.barnes-brand-filters__box').first().boundingBox()).x;
+        const iconX = (await page.locator('.map-browser__field > svg').first().boundingBox()).x;
+        assert.ok(Math.abs(checkX - iconX) < 1, 'Mobile map checkbox aligned with filter SVG left edge');
+      }
       assert.equal(await map.getByRole('checkbox', { name: 'Выбор BARNES', exact: true }).isChecked(), true);
       assert.equal(await map.getByRole('checkbox', { name: 'Эксклюзив BARNES', exact: true }).isChecked(), true);
       assert.equal(await page.locator('.map-browser__metadata-notice').isVisible(), false, 'No brand debug notice in map');
