@@ -42,7 +42,7 @@
   if (heroCopy && breadcrumbs) heroCopy.prepend(breadcrumbs)
   const heroTitle = page.querySelector('.detail-hero__title')
   const heroLocation = page.querySelector('.detail-hero__location')
-  if (heroTitle && heroLocation) heroTitle.after(heroLocation)
+  if (heroTitle && heroLocation) heroTitle.before(heroLocation)
 
   // No confirmed minimum price is available: never use the mortgage example
   // amount as the project's starting price (see hero-data-rules.md).
