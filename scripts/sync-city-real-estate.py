@@ -251,6 +251,7 @@ def rewrite_root_paths(html: str) -> str:
 
 def inject_node_reference(html: str) -> str:
     """Keep the approved node design when refreshing the city snapshot."""
+    html = html.replace('Показать объекты', 'Найти')
     if 'data-city-node-design' in html:
         return html
     styles = ''.join(
