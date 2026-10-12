@@ -7,7 +7,7 @@
   const header = one('.site-header'), menuButton = one('.site-header__icon-btn');
   function closeDialog() {
     dialog?.remove(); dialog=null;
-    document.body.style.removeProperty('overflow');
+    if(one('.map-browser:not([hidden])'))document.body.style.overflow='hidden';else document.body.style.removeProperty('overflow');
     header?.classList.remove('site-header--menu-open');
     menuButton?.setAttribute('aria-expanded','false');
     all('[data-international-filter]').forEach(button=>button.setAttribute('aria-expanded','false'));
@@ -40,7 +40,7 @@
     button.dataset.internationalFilter='';button.setAttribute('aria-haspopup','dialog');button.setAttribute('aria-controls','catalog-hero-filters-panel');button.setAttribute('aria-expanded','false');
   });
   document.addEventListener('keydown',event=>{
-    if(event.key==='Escape'){closeDialog();one('.catalog-projects-map')?.classList.remove('source-map-expanded');}
+    if(event.key==='Escape'){if(dialog)event.preventDefault();closeDialog();one('.catalog-projects-map')?.classList.remove('source-map-expanded');}
     if(event.key!=='Tab'||!dialog)return;
     const items=all('button,a[href],input,select,textarea,[tabindex="0"]',dialog).filter(e=>!e.disabled&&e.getClientRects().length);
     if(!items.length)return;
@@ -89,7 +89,7 @@
       const selected=all('input[type="checkbox"]:checked',root).map(e=>e.closest('label')?.textContent.trim().toLowerCase()).filter(Boolean);
       const ranges=all('.hero-filter-panel-content__range-input',root).map(e=>number(e.value)||0);
       items.forEach(item=>{const text=item.textContent.toLowerCase();item.hidden=(list?.dataset.activeMode&&item.dataset.listingMode!==list.dataset.activeMode)||(selected.length>0&&!selected.some(label=>text.includes(label)))||(ranges[0]>0&&price(item)<ranges[0])||(ranges[1]>0&&price(item)>ranges[1]);});
-      closeDialog();scrollToSection('.catalog-grid');
+      closeDialog();window.dispatchEvent(new Event('international-filters-applied'));if(!one('.map-browser:not([hidden])'))scrollToSection('.catalog-grid');
     }));
   }
   function bindForms(root){all('form:not(.catalog-hero-filters__bar)',root).forEach(form=>{
@@ -149,10 +149,10 @@
       const dx=(map.clientWidth-state.width)/2,dy=(map.clientHeight-state.height)/2;
       tiles.dataset.z=String(state.zoom);tiles.style.transform=state.transform;
       tiles.replaceChildren(...state.tiles.map(tile=>{const img=document.createElement('img');img.src=tile.src;Object.assign(img.style,{width:'256px',height:'256px',opacity:'1',left:(tile.left+dx)+'px',top:(tile.top+dy)+'px'});return img;}));
-      markers.replaceChildren(...state.markers.map(marker=>{const e=document.createElement('ymaps3');e.className='ymaps3--marker';e.style.transform=marker.transform.replace(/translate\(([-\d.]+)px, ([-\d.]+)px\)/,(_,x,y)=>'translate('+(Number(x)+dx)+'px, '+(Number(y)+dy)+'px)');e.innerHTML=marker.html.replace(/src="\//g,'src="https://front.barnes.vsavr.ru/');e.addEventListener('click',()=>scrollToSection('.catalog-grid'));return e;}));camera();
+      markers.replaceChildren(...state.markers.map(marker=>{const e=document.createElement('ymaps3');e.className='ymaps3--marker';e.style.transform=marker.transform.replace(/translate\(([-\d.]+)px, ([-\d.]+)px\)/,(_,x,y)=>'translate('+(Number(x)+dx)+'px, '+(Number(y)+dy)+'px)');e.innerHTML=marker.html.replace(/src="\//g,'src="https://front.barnes.vsavr.ru/');e.addEventListener('click',()=>window.BARNES_OPEN_MAP?window.BARNES_OPEN_MAP():scrollToSection('.catalog-grid'));return e;}));camera();
     };
     addEventListener('resize',resize);resize();
-    one('.catalog-projects-map__fullscreen',map)?.addEventListener('click',e=>{const expanded=map.classList.toggle('source-map-expanded');e.currentTarget.setAttribute('aria-pressed',String(expanded));resize();});
+    if(!map.dataset.nodeMapBrowser)one('.catalog-projects-map__fullscreen',map)?.addEventListener('click',e=>{const expanded=map.classList.toggle('source-map-expanded');e.currentTarget.setAttribute('aria-pressed',String(expanded));resize();});
     [['.ymaps3--zoom-control__in',1.2,'Увеличить карту'],['.ymaps3--zoom-control__out',1/1.2,'Уменьшить карту']].forEach(([selector,factor,label])=>{const button=one(selector,map)?.closest('button');button?.setAttribute('aria-label',label);button?.addEventListener('click',()=>{scale=Math.max(.7,Math.min(3,scale*factor));camera();});});
     one('.ymaps3--open-maps-button',map)?.closest('button')?.addEventListener('click',()=>window.open('https://yandex.ru/maps/?ll=37.62%2C55.75&z=11','_blank','noopener'));
     const canvas=one('.catalog-projects-map__canvas',map);let drag=null;
