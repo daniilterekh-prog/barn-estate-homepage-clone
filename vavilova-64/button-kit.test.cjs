@@ -3,6 +3,13 @@ const assert = require('node:assert/strict')
 const fs = require('node:fs')
 const path = require('node:path')
 const read = name => fs.readFileSync(path.join(__dirname, name), 'utf8')
+test('location retains only its original consultation action', () => {
+  const section = read('index.html').match(/<section[^>]*id="location"[\s\S]*?<\/section>/)[0]
+  assert.equal((section.match(/<button[^>]*detail-location__action/g) || []).length, 1)
+  assert.ok(section.includes('detail-location__action--primary'))
+  assert.ok(!section.includes('detail-location__action--secondary'))
+  assert.ok(read('reference-interactions.js').includes('.detail-location__action--primary'))
+})
 test('hero height follows ambassadors breakpoints, not viewport height', () => {
   const css = read('architecture-hero.css')
   assert.doesNotMatch(css, /\b(?:\d+(?:\.\d+)?)(?:s|d|l)?vh\b/)
