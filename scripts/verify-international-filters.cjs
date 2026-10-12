@@ -4,7 +4,7 @@ const {chromium}=require('/home/daniil/Documents/Codex/2026-10-11/firecrawl/work
  const browser=await chromium.launch({executablePath:'/usr/bin/google-chrome',args:['--no-sandbox']});
  const page=await browser.newPage();
  const target=process.argv[2]||'http://127.0.0.1:8125/mezhdunarodnaya-nedvizhimost/';
- const triggers=['.catalog-hero-filters__filter-icon','.catalog-mode-detailed-filters','.international-map-filter'];
+ const triggers=['.catalog-hero-filters__filter-icon','.catalog-mode-detailed-filters'];
  try {
   for(const width of [320,390,768,1440,1920]){
    await page.setViewportSize({width,height:900});
@@ -30,7 +30,7 @@ const {chromium}=require('/home/daniil/Documents/Codex/2026-10-11/firecrawl/work
    await page.locator('.hero-filter-modal .ui-checkbox').first().click();
    await page.locator('.hero-filter-modal__apply').click();
    assert.equal(await page.locator('.hero-filter-modal').count(),0);
-   await page.locator(triggers[2]).click();
+   await page.locator(triggers[0]).click();
    assert.equal(await page.locator('.hero-filter-modal input[type="checkbox"]').first().isChecked(),true);
    await page.locator('.hero-filter-modal__reset').click();
    assert.equal(await page.locator('.hero-filter-modal input:checked').count(),0);

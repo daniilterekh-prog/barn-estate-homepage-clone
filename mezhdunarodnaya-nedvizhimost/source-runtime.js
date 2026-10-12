@@ -33,11 +33,6 @@
     one('input:not([tabindex="-1"]),button',dialog)?.focus({preventScroll:true});
   }
   window.BARNES_OPEN_FILTER=trigger=>openDialog('filters',trigger);
-  const mapSearch=one('.catalog-projects-map__search');
-  if(mapSearch){
-    const mapFilter=one('.catalog-hero-filters__filter-icon')?.cloneNode(true);
-    if(mapFilter){mapFilter.className='international-map-filter';mapFilter.setAttribute('aria-label','Открыть фильтры на карте');mapSearch.append(mapFilter);mapFilter.addEventListener('click',event=>{event.preventDefault();openDialog('filters',mapFilter);});}
-  }
   all('.catalog-hero-filters__filter-icon,.catalog-mode-detailed-filters,.catalog-quick-filters__button,.international-map-filter').forEach(button=>{
     button.dataset.internationalFilter='';button.setAttribute('aria-haspopup','dialog');button.setAttribute('aria-controls','catalog-hero-filters-panel');button.setAttribute('aria-expanded','false');
   });
