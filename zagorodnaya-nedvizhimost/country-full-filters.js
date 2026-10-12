@@ -64,7 +64,7 @@
   });
   all('input').forEach(input => input.addEventListener('input', () => input.setCustomValidity('')));
   modal.addEventListener('keydown', event => {
-    if (event.key === 'Escape') { event.preventDefault(); close(); }
+    if (event.key === 'Escape') { event.preventDefault(); event.stopPropagation(); close(); }
     if (event.key !== 'Tab') return;
     const focusable = all('button,input,a[href]').filter(el => !el.disabled && el !== q('.hero-filter-modal__backdrop'));
     const first = focusable[0], last = focusable.at(-1);
@@ -72,6 +72,10 @@
     else if (!event.shiftKey && (document.activeElement === last || document.activeElement === dialog)) { event.preventDefault(); first.focus(); }
   });
   document.addEventListener('country-filter-open', event => open(event.detail.trigger));
+  document.addEventListener('country-filter-set', event => {
+    applied = {...applied, ...event.detail};
+    document.dispatchEvent(new CustomEvent('country-filter-apply',{detail:applied}));
+  });
   const hero = document.querySelector('.catalog-hero-filters__filter-icon');
   hero?.addEventListener('click', () => open(hero));
   const listing = document.querySelector('.catalog-mode-detailed-filters');

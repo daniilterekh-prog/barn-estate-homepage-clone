@@ -23,6 +23,13 @@
       tiles.append(image);
     }
   }
+  // Additional captured rows cover the fullscreen viewport without blank strips.
+  ["1233-639.png","1233-640.png","1233-643.png","1233-644.png","1234-639.png","1234-640.png","1234-643.png","1234-644.png","1235-639.png","1235-640.png","1235-643.png","1235-644.png","1236-639.png","1236-640.png","1236-643.png","1236-644.png","1237-639.png","1237-640.png","1237-643.png","1237-644.png","1238-639.png","1238-640.png","1238-643.png","1238-644.png","1239-639.png","1239-640.png","1239-643.png","1239-644.png","1240-639.png","1240-640.png","1240-643.png","1240-644.png","1241-639.png","1241-640.png","1241-643.png","1241-644.png","1242-639.png","1242-640.png","1242-643.png","1242-644.png"].forEach(name => {
+    const [x,y] = name.replace('.png','').split('-');
+    const image = document.createElement('img'); image.src=`assets/map/${name}`; image.alt='';
+    image.dataset.tileX=x; image.dataset.tileY=y; image.style.cssText='width:256px;height:256px;opacity:1;';
+    tiles.append(image);
+  });
   layer.append(tiles);
   holder.append(layer);
   engine.append(holder);
@@ -53,6 +60,7 @@
   position();
   document.fonts.ready.then(position);
   map.querySelector('.catalog-projects-map__fullscreen')?.addEventListener('click', () => {
+    if (window.countryMapEnter) { window.countryMapEnter(); return; }
     if (document.fullscreenElement === map) document.exitFullscreen();
     else map.requestFullscreen?.();
   });
