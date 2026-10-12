@@ -484,7 +484,7 @@
 
   if (!document.querySelector('script[data-kurortnaya-listing-mode]')) {
     var listingScript = document.createElement('script');
-    listingScript.src = 'listing-mode.js?v=20261012-property-type-1';
+    listingScript.src = 'listing-mode.js?v=20261012-project-address-1';
     listingScript.dataset.kurortnayaListingMode = 'true';
     document.body.appendChild(listingScript);
   }
