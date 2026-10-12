@@ -1,3 +1,7 @@
+@import url('../../kurortnaya/ui-kit.css');
+@import url('../../kurortnaya/listing-mode.css');
+@import url('../../kurortnaya/start-sales-cards.css');
+
 /* Isolated behavior styles for the captured international catalogue page. */
 
 body.international-page {
@@ -626,4 +630,127 @@ body.international-page .catalog-quick-filters__chevron {
 
 body.international-page .catalog-quick-filters__button.is-open .catalog-quick-filters__chevron {
   transform: translateY(-30%) rotate(225deg);
+}
+
+/* Keep the international data, but use the resort page's layout contract. */
+body.international-page .catalog-best-offers {
+  min-height: 0;
+}
+
+body.international-page .catalog-best-offers__slider-row {
+  margin-top: 0;
+}
+
+body.international-page .catalog-grid__inner {
+  position: relative;
+}
+
+body.international-page .catalog-mode-toolbar {
+  position: relative;
+  z-index: 3;
+}
+
+body.international-page .catalog-mode-switch__button,
+body.international-page .catalog-mode-detailed-filters,
+body.international-page .catalog-quick-filters__button {
+  font-family: 'Tilda Sans', 'Tilda Sans Fallback', system-ui, sans-serif;
+}
+
+body.international-page .international-offer-rendered .apartment-card {
+  height: 100%;
+}
+
+body.international-page .international-offer-rendered .apartment-card__media {
+  aspect-ratio: 384 / 310;
+}
+
+body.international-page .international-offer-rendered .apartment-card__image {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+body.international-page .international-offer-rendered .apartment-card__body {
+  min-height: 108px;
+}
+
+body.international-page .international-offer-rendered .apartment-card__name {
+  font-weight: 300;
+}
+
+body.international-page .catalog-section-eyebrow {
+  color: #1e1e1e99;
+}
+
+body.international-page .catalog-quick-links--hero {
+  display: none;
+}
+
+body.international-page .catalog-mode-toolbar .catalog-grid__sort {
+  height: 40px;
+  width: 160px;
+}
+
+body.international-page .catalog-projects-map {
+  height: 220px;
+  margin: 0 calc(-26.66667px + 6.59722vw);
+  width: auto;
+}
+
+body.international-page .news-section {
+  min-height: 823.203px;
+}
+
+@media (min-width: 1025px) {
+  body.international-page .catalog-best-offers__slider-row {
+    height: 558px;
+    overflow: hidden;
+  }
+}
+
+@media (min-width: 1441px) {
+  body.international-page .catalog-best-offers__slider-row {
+    height: 582px;
+  }
+
+  body.international-page .catalog-projects-map {
+    height: 245px;
+    margin-inline: 100px;
+    width: auto;
+  }
+}
+
+@media (max-width: 1024px) {
+  body.international-page .catalog-best-offers__slider-row {
+    min-height: 462px;
+  }
+
+  body.international-page .catalog-projects-map {
+    height: 220px;
+    width: auto;
+  }
+
+  body.international-page .news-section {
+    min-height: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  body.international-page .catalog-projects-map {
+    margin-inline: calc(8.94118px + 1.96078vw);
+  }
+}
+
+@media (max-width: 540px) {
+  body.international-page .catalog-projects-map {
+    height: 320px;
+  }
+
+  body.international-page .catalog-best-offers__slider-row {
+    margin-top: 0;
+  }
+
+  body.international-page .catalog-mode-toolbar {
+    margin-top: 20px;
+  }
 }

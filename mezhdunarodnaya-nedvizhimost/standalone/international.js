@@ -465,3 +465,8 @@
     })
   })
 })()
+
+const parityScript = document.createElement('script')
+parityScript.src = `${location.pathname.includes('/standalone/') ? '' : 'standalone/'}international-kurort-parity.js`
+parityScript.defer = false
+document.body.append(parityScript)
