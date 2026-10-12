@@ -19,12 +19,17 @@ const assert = require('node:assert/strict');
       assert.equal(await page.locator('.barnes-brand-filters__notice').count(), 0, 'No technical description on checkbox selection');
       const gaps = await listing.evaluate(el => {
         const toolbar = el.closest('.catalog-mode-toolbar');
-        const switchRect = toolbar.querySelector('.catalog-mode-switch').getBoundingClientRect();
-        const filtersRect = toolbar.querySelector('.catalog-mode-filters').getBoundingClientRect();
-        const lastBottom = Math.max(...Array.from(toolbar.children).filter(child => child !== el).map(child => child.getBoundingClientRect().bottom));
-        return [filtersRect.top - switchRect.bottom, el.getBoundingClientRect().top - lastBottom];
+        function textRect(node) {
+          const range = document.createRange();
+          range.selectNodeContents(node);
+          return range.getBoundingClientRect();
+        }
+        const switchRect = textRect(toolbar.querySelector('.catalog-mode-switch__button'));
+        const captions = Array.from(toolbar.querySelectorAll('.catalog-mode-filters .catalog-quick-filters__caption')).map(textRect);
+        const checkboxText = textRect(el.querySelector('label > span:last-child'));
+        return [captions[0].top - switchRect.bottom, checkboxText.top - Math.max(...captions.map(rect => rect.bottom))];
       });
-      assert.ok(Math.abs(gaps[0] - gaps[1]) < 1, `Matching toolbar row gaps: ${gaps}`);
+      assert.ok(Math.abs(gaps[0] - gaps[1]) < 1, `Matching visible text gaps: ${gaps}`);
       for (const label of await listing.locator('label').all()) {
         const box = await label.boundingBox();
         assert.ok(box.x >= 0 && box.x + box.width <= width, 'Label fits viewport');
