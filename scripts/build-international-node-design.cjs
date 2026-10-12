@@ -31,6 +31,9 @@ const fs=require('node:fs/promises');
   for(const file of ['index.html','standalone/index.html']){
     const prefix=file.startsWith('standalone/')?'../':'';
     let html=await fs.readFile(target+'/'+file,'utf8');
+    if(prefix)html=html.replace('href="source.css?', 'href="../source.css?');
+    html=html.replace(/<picture[^>]*>(?:(?!<\/picture>)[\s\S])*?<img[^>]*class="catalog-hero__image"[^>]*>(?:(?!<\/picture>)[\s\S])*?<\/picture>/,
+      '<picture data-v-aca24971=""><source media="(max-width: 540px)" srcset="'+prefix+'assets/hero-mobile-villa.png" width="941" height="1672"><img src="'+prefix+'assets/9783a5a60ad7ae44-be19a5749214443d45f5e54fdf0fdd03.png" alt="" class="catalog-hero__image" width="1920" height="526" loading="eager" fetchpriority="high" data-v-aca24971=""></picture>');
     html=html.replace(/<footer class="site-footer"[\s\S]*?<\/footer>/,footer.replace('src="../prodazha_sobstvennikam/','src="'+prefix+'../prodazha_sobstvennikam/'));
     html=html.replace(/src="[^"]+"(?= alt="Зарубежная недвижимость для жизни и инвестиций" class="catalog-intro__image")/, 'src="'+prefix+'../kurortnaya/assets/barnes-moscow-residence-v4.webp"');
     html=html.replaceAll(' Показать объекты </button>', ' Найти </button>');
