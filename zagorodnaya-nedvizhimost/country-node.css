@@ -22,9 +22,26 @@ html body.country-node-page :is(.catalog-consultation__methods,.catalog-contact_
   max-width:610px;
 }
 @media (min-width:769px) {
+  html body.country-node-page .catalog-consultation__media[class]::before {
+    /* The source room spans the whole CTA; its portrait stays in the foreground. */
+    background-image:url("assets/consultation-background.png");
+    background-position:left center;
+    background-size:200% 100%;
+    filter:none;
+  }
   html body.country-node-page .catalog-consultation__image[class] {
-    object-fit:cover; object-position:right bottom;
-    mask-image:linear-gradient(90deg,#000 0%,#000 82%,transparent 100%);
+    width:100%; left:-50%; right:auto;
+    object-fit:contain; object-position:right bottom;
+    mask-image:linear-gradient(90deg,#000 0%,#000 90%,transparent 100%);
+  }
+}
+@media (min-width:769px) and (max-width:1024px) {
+  html body.country-node-page .catalog-consultation__image[class] {
+    left:-25%; object-fit:cover;
+    mask-image:linear-gradient(90deg,#000 0%,#000 80%,transparent 100%);
+  }
+  html body.country-node-page .catalog-consultation__content[class] {
+    width:calc(50% - 24px); max-width:none;
   }
 }
 @media (min-width:1025px) {
