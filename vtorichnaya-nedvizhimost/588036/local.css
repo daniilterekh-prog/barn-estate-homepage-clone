@@ -1,0 +1,7 @@
+/* Runtime-only states. The page's original layout and responsive CSS are preserved. */
+.surroundings-map__wrap:fullscreen{background:#fff;width:100vw;height:100vh}
+.surroundings-map__canvas{cursor:grab}
+.surroundings-map__canvas:active{cursor:grabbing}
+[data-local-overlay]{position:relative;z-index:1500}
+.local-form-feedback{font:inherit;color:#8b1d25;margin-top:12px}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
