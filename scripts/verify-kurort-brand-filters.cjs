@@ -34,8 +34,8 @@ const assert = require('node:assert/strict');
         const textRowTop = checkboxText.top + Math.max(0, checkboxText.height - lineHeight) / 2;
         return [captions[0].top - switchRect.bottom, textRowTop - Math.max(...captions.map(rect => rect.bottom))];
       });
-      if (width <= 1024) assert.ok(Math.abs(gaps[0] - gaps[1]) < 1, `Matching visible text gaps: ${gaps}`);
-      else {
+      if (width > 540 && width <= 1024) assert.ok(Math.abs(gaps[0] - gaps[1]) < 1, `Matching visible text gaps: ${gaps}`);
+      else if (width > 1024) {
         const market = await page.locator('.catalog-mode-switch').boundingBox();
         const brands = await listing.boundingBox();
         assert.ok(Math.abs(market.y + market.height / 2 - brands.y - brands.height / 2) < 1, 'Market and checkboxes share top row');
@@ -47,10 +47,12 @@ const assert = require('node:assert/strict');
         const exclusiveX = (await listing.locator('.barnes-brand-filters__box').nth(1).boundingBox()).x;
         const secondIconX = (await page.locator('.catalog-mode-filters .catalog-quick-filters__icon svg').nth(1).boundingBox()).x;
         assert.ok(Math.abs(exclusiveX - secondIconX) < 1, `Mobile exclusive checkbox aligned with second SVG: ${exclusiveX} vs ${secondIconX}`);
-        const bottom = (await listing.boundingBox()).y + (await listing.boundingBox()).height;
+        const top = (await listing.boundingBox()).y;
         for (const selector of ['.catalog-grid__sort', '.catalog-mode-detailed-filters']) {
-          assert.ok((await page.locator(selector).boundingBox()).y >= bottom, 'Mobile sorting and detailed filters below checkboxes, no overlap');
+          const row = await page.locator(selector).boundingBox();
+          assert.ok(row.y + row.height <= top, 'Mobile checkboxes below sorting and detailed filters, no overlap');
         }
+        await page.locator('.catalog-mode-toolbar').screenshot({ path: `/tmp/listing-final-order-${width}.png` });
       } else {
         const brand = await listing.boundingBox();
         const sort = await page.locator('.catalog-grid__sort').boundingBox();

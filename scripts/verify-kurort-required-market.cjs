@@ -40,12 +40,12 @@ const assert = require('node:assert/strict');
         }
         const brands = await page.locator('[data-brand-context=map]').boundingBox();
         const sort = await page.locator('.map-browser__extra').boundingBox();
-        assert.ok(brands.y + brands.height <= sort.y, 'Checkbox row precedes sorting on desktop and mobile');
+        assert.ok(sort.y + sort.height <= brands.y, 'Checkbox row follows sorting on desktop and mobile');
         const fields = await page.locator('.map-browser__field:has(> svg)').evaluateAll(els => els.map(el => el.getBoundingClientRect().toJSON()));
         const label = await page.locator('[data-brand-context=map] label').first().boundingBox();
         const center = r => r.y + r.height / 2;
         const stepAbove = center(fields[2]) - center(fields[0]);
-        assert.ok(Math.abs(center(sort) - center(label) - stepAbove) < 1, 'Checkbox/sort row spacing equals quick-filter row spacing');
+        assert.ok(Math.abs(center(label) - center(sort) - stepAbove) < 1, 'Sort/checkbox row spacing equals quick-filter row spacing');
         await page.locator('.map-browser__panel').screenshot({ path: `/tmp/map-required-market-${width}.png` });
       }
       await page.locator('.map-browser__close').click();
