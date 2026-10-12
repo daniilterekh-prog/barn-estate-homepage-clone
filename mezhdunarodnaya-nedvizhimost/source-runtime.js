@@ -14,6 +14,7 @@
     returnFocus?.focus({preventScroll:true});
   }
   function openDialog(kind, trigger) {
+    if(kind==='callback'&&window.BARNES_OPEN_CONTACT){window.BARNES_OPEN_CONTACT(trigger);return;}
     closeDialog(); returnFocus=trigger || document.activeElement;
     const template=one('#source-'+kind); if(!template)return;
     dialog=template.content.firstElementChild.cloneNode(true);
@@ -25,6 +26,7 @@
     bindForms(dialog); bindFilters(dialog);
     one('input:not([tabindex="-1"]),button',dialog)?.focus({preventScroll:true});
   }
+  window.BARNES_OPEN_FILTER=trigger=>openDialog('filters',trigger);
   document.addEventListener('keydown',event=>{
     if(event.key==='Escape'){closeDialog();one('.catalog-projects-map')?.classList.remove('source-map-expanded');}
     if(event.key!=='Tab'||!dialog)return;
@@ -40,7 +42,7 @@
   const scrollToSection=s=>one(s)?.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion:reduce)').matches?'instant':'smooth'});
   all('.catalog-page-nav__link').forEach((button,i)=>button.addEventListener('click',()=>scrollToSection(['.catalog-best-offers','.catalog-map','.catalog-consultation','.departments-section','.news-section'][i])));
   one('.catalog-page-nav__request')?.addEventListener('click',()=>scrollToSection('.catalog-consultation'));
-  function onScroll(){header?.classList.toggle('site-header--scrolled',scrollY>24);one('.catalog-page-nav')?.classList.toggle('catalog-page-nav--visible',scrollY>=(one('.catalog-hero')?.offsetHeight||644)-110);}
+  function onScroll(){if(document.body.classList.contains('international-node-design'))return;header?.classList.toggle('site-header--scrolled',scrollY>24);one('.catalog-page-nav')?.classList.toggle('catalog-page-nav--visible',scrollY>=(one('.catalog-hero')?.offsetHeight||644)-110);}
   addEventListener('scroll',onScroll,{passive:true}); onScroll();
   all('.catalog-faq__question').forEach((button,i)=>{
     const item=button.closest('.catalog-faq__item'),answer=one('.catalog-faq__answer',item);
@@ -63,7 +65,7 @@
   const area=e=>number(one('.apartment-card__stat-value',e)?.textContent||'0');
   one('.catalog-grid__sort-select')?.addEventListener('change',e=>{const order=e.target.value,read=order.startsWith('price')?price:area;const sorted=order==='relevance'?[...items]:[...items].sort((a,b)=>(read(a)-read(b))*(order.endsWith('desc')?-1:1));sorted.forEach(item=>list.append(item));});
   all('.apartment-card__favorite').forEach(button=>button.addEventListener('click',()=>{const active=button.getAttribute('aria-pressed')!=='true';button.setAttribute('aria-pressed',String(active));button.setAttribute('aria-label',active?'Удалить из избранного':'Добавить в избранное');button.classList.toggle('apartment-card__favorite--active',active);}));
-  function applySearch(){const query=one('.catalog-hero-filters__search-input')?.value.trim().toLowerCase()||'';items.forEach(item=>item.hidden=!!query&&!item.textContent.toLowerCase().includes(query));scrollToSection('.catalog-grid');}
+  function applySearch(){const query=one('.catalog-hero-filters__search-input')?.value.trim().toLowerCase()||'';items.forEach(item=>item.hidden=(list?.dataset.activeMode&&item.dataset.listingMode!==list.dataset.activeMode)||(!!query&&!item.textContent.toLowerCase().includes(query)));scrollToSection('.catalog-grid');}
   one('.catalog-hero-filters__bar')?.addEventListener('submit',e=>{e.preventDefault();applySearch();});
   one('.catalog-hero-filters__submit')?.addEventListener('click',applySearch);
   one('.catalog-grid__more')?.addEventListener('click',()=>items.forEach(item=>item.classList.add('source-revealed')));
@@ -73,11 +75,12 @@
     all('button',root).filter(e=>/показать.*объект/i.test(e.textContent)).forEach(button=>button.addEventListener('click',()=>{
       const selected=all('input[type="checkbox"]:checked',root).map(e=>e.closest('label')?.textContent.trim().toLowerCase()).filter(Boolean);
       const ranges=all('input[type="number"]',root).map(e=>Number(e.value)||0);
-      items.forEach(item=>{const text=item.textContent.toLowerCase();item.hidden=(selected.length>0&&!selected.some(label=>text.includes(label)))||(ranges[0]>0&&price(item)<ranges[0])||(ranges[1]>0&&price(item)>ranges[1]);});
+      items.forEach(item=>{const text=item.textContent.toLowerCase();item.hidden=(list?.dataset.activeMode&&item.dataset.listingMode!==list.dataset.activeMode)||(selected.length>0&&!selected.some(label=>text.includes(label)))||(ranges[0]>0&&price(item)<ranges[0])||(ranges[1]>0&&price(item)>ranges[1]);});
       closeDialog();scrollToSection('.catalog-grid');
     }));
   }
   function bindForms(root){all('form:not(.catalog-hero-filters__bar)',root).forEach(form=>{
+    if(form.closest('.catalog-feedback-modal'))return;
     all('input:not([tabindex="-1"]),textarea',form).forEach(input=>{if(!input.getAttribute('aria-label'))input.setAttribute('aria-label',input.type==='checkbox'?'Согласие на обработку персональных данных':input.placeholder||'Комментарий');});
     form.addEventListener('submit',e=>{
       e.preventDefault();const name=one('input[autocomplete="name"]',form),phone=one('input[autocomplete="tel"],input[type="tel"],input[inputmode="tel"]',form),consent=one('input[type="checkbox"]',form);
@@ -119,7 +122,7 @@
     const buttons=all('.catalog-best-offers__nav-btn',root);buttons[0]?.addEventListener('click',()=>move(-1));buttons[1]?.addEventListener('click',()=>move(1));
     let touch=0;track.addEventListener('touchstart',e=>touch=e.touches[0].clientX,{passive:true});track.addEventListener('touchend',e=>{if(Math.abs(touch-e.changedTouches[0].clientX)>30)move(touch>e.changedTouches[0].clientX?1:-1);},{passive:true});addEventListener('resize',render);render();
   }
-  newsSlider(); offerSlider();
+  newsSlider(); if(!document.body.classList.contains('international-node-design'))offerSlider();
   const map=one('.catalog-projects-map');
   if(map){
     const engine=one('.ymaps3--map',map),tiles=one('.ymaps3--tile-layer__container',map),markers=one('.ymaps3--marker-layer',map);
