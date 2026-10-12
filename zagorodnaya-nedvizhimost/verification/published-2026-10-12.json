@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-12",
+  "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/zagorodnaya-nedvizhimost/",
+  "implementationCommit": "ec4e113a6bc5ed7e81a0bc7377cc4d3507669629",
+  "githubPagesBuild": "built",
+  "publishedChecks": [
+    { "width": 390, "newDesign": true, "launchCardsIncludingClones": 15, "visibleProjects": 5, "sectionEyebrows": 5, "horizontalOverflow": false, "javascriptErrors": [], "failedSameOriginResponses": [] },
+    { "width": 1440, "newDesign": true, "launchCardsIncludingClones": 15, "visibleProjects": 5, "sectionEyebrows": 5, "horizontalOverflow": false, "javascriptErrors": [], "failedSameOriginResponses": [] }
+  ],
+  "supplementalLocalChecks": {
+    "viewport": [1440, 900],
+    "shiftTabFocusTrappedInModal": true,
+    "invalidFormNotSent": true,
+    "allImagesDecodedWithoutFailures": true,
+    "h1Count": 1
+  },
+  "responsiveDesignReport": "node-reference-2026-10-12.json",
+  "limitations": ["The map remains a local zoom-11 snapshot.", "No external form backend is connected; successful submission is not simulated."]
+}
