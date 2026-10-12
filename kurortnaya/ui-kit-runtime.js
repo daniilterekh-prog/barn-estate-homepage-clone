@@ -16,7 +16,7 @@
   if (!document.querySelector('link[data-kurortnaya-listing-mode]')) {
     var listingStylesheet = document.createElement('link');
     listingStylesheet.rel = 'stylesheet';
-    listingStylesheet.href = 'listing-mode.css?v=20261012-matching-sort-chevron-1';
+    listingStylesheet.href = 'listing-mode.css?v=20261012-unified-sort-chevron';
     listingStylesheet.dataset.kurortnayaListingMode = 'true';
     document.head.appendChild(listingStylesheet);
   }
