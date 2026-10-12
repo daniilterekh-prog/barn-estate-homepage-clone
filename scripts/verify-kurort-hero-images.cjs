@@ -20,6 +20,12 @@ const base = process.argv[2] || 'http://127.0.0.1:8769/kurortnaya/';
       if (width > 540) assert.equal(info.width * 9, info.height * 16, 'Desktop is exact 16:9');
       else assert.ok(info.height > info.width, 'Mobile keeps portrait composition');
       assert.equal(await page.locator('.catalog-hero__title').count(), 1);
+      const overlay = await page.locator('.catalog-hero__overlay').evaluate(el => {
+        const style = getComputedStyle(el);
+        return { color: style.backgroundColor, image: style.backgroundImage };
+      });
+      assert.equal(overlay.color, 'rgba(0, 0, 0, 0.2)');
+      assert.equal(overlay.image, 'none');
       assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1));
       if ([390, 1440, 2560].includes(width)) await page.screenshot({ path: `/tmp/kurort-alpine-hero-${width}.png` });
       console.log(`PASS hero ${width}: ${info.width}×${info.height}`);
