@@ -3,7 +3,7 @@
   mapDataScript.src = 'map-projects.js?v=1';
   mapDataScript.onload = function () {
     var mapScript = document.createElement('script');
-    mapScript.src = 'map-fullscreen.js?v=1';
+    mapScript.src = 'map-fullscreen.js?v=2';
     document.body.appendChild(mapScript);
   };
   document.body.appendChild(mapDataScript);

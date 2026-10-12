@@ -13,6 +13,37 @@ const assert = require('node:assert/strict');
       if (width < 541) await page.getByRole('button', { name: 'Развернуть список объектов' }).click();
       await page.locator('.map-browser__card').first().waitFor();
       assert.equal(await page.locator('.map-browser__card').count(), 32);
+      const referenceFont = await page.locator('.catalog-quick-filters__caption').first().evaluate(el => {
+        const s = getComputedStyle(el);
+        return { size: s.fontSize, weight: s.fontWeight, color: s.color, family: s.fontFamily };
+      });
+      for (const selector of ['.map-browser__search input', '[data-filter=type]', '[data-filter=price]', '[data-filter=sort]']) {
+        const actualFont = await dialog.locator(selector).evaluate(el => {
+          const s = getComputedStyle(el);
+          return { size: s.fontSize, weight: s.fontWeight, color: s.color, family: s.fontFamily };
+        });
+        assert.deepEqual(actualFont, referenceFont, selector + ' must use listing typography');
+      }
+      const mapIcon = await dialog.locator('.map-browser__field > svg').first().evaluate(el => {
+        const s = getComputedStyle(el); return [s.width, s.height, el.getAttribute('stroke-width')];
+      });
+      const listingIcon = await page.locator('.catalog-quick-filters__icon svg').first().evaluate(el => {
+        const s = getComputedStyle(el); return [s.width, s.height, el.querySelector('[stroke-width]').getAttribute('stroke-width')];
+      });
+      assert.deepEqual(mapIcon, listingIcon, 'parameter icons must match listing dimensions and stroke');
+      const mapChevron = await dialog.locator('.map-browser__chevron').first().evaluate(el => {
+        const s = getComputedStyle(el); return [s.width, s.height, s.borderBottomWidth, s.borderBottomColor];
+      });
+      const listingChevron = await page.locator('.catalog-grid__sort').evaluate(el => {
+        const s = getComputedStyle(el, '::after'); return [s.width, s.height, s.borderBottomWidth, s.borderBottomColor];
+      });
+      assert.deepEqual(mapChevron, listingChevron, 'select arrows must match listing sorting arrow');
+      assert.equal(await dialog.locator('.map-browser__extra').isVisible(), false);
+      const resetFont = await dialog.locator('.map-browser__reset').evaluate(el => {
+        const s = getComputedStyle(el); return [s.fontSize, s.fontWeight];
+      });
+      assert.deepEqual(resetFont, [referenceFont.size, referenceFont.weight]);
+      if (process.env.SCREENSHOT_DIR) await page.screenshot({ path: `${process.env.SCREENSHOT_DIR}/map-filters-${width}.png` });
       await page.getByRole('searchbox', { name: 'Поиск объектов на карте' }).fill('GRAND HOTEL');
       assert.equal(await page.locator('.map-browser__card').count(), 1);
       await page.getByRole('searchbox', { name: 'Поиск объектов на карте' }).fill('нет-такого-объекта');
