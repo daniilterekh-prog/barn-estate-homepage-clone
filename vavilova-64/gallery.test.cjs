@@ -1,0 +1,12 @@
+const {test}=require('node:test')
+const assert=require('node:assert/strict')
+const fs=require('node:fs')
+const path=require('node:path')
+test('gallery heading has an explicit light surface and dark foreground',()=>{
+  const css=fs.readFileSync(path.join(__dirname,'reference-alignment.css'),'utf8')
+  assert.match(css,/\.catalog-detail \.detail-gallery\s*\{[^}]*background:\s*#fff/)
+  assert.match(css,/\.catalog-detail \.vavilova-gallery-heading\s*\{[^}]*color:\s*#1e1e1e/)
+  assert.match(css,/\.catalog-detail \.detail-gallery\s*\{[^}]*height:\s*auto/)
+  const js=fs.readFileSync(path.join(__dirname,'reference-alignment.js'),'utf8')
+  assert.ok(js.includes('slider.append(controls)'))
+})

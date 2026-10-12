@@ -20,7 +20,13 @@
     createHeading(about, 'О проекте', 'О жилом комплексе')
   }
   const gallery = page.querySelector('.detail-gallery')
-  if (gallery) createHeading(gallery, 'В деталях', 'Галерея проекта', 'base-container vavilova-gallery-heading')
+  if (gallery) {
+    createHeading(gallery, 'В деталях', 'Галерея проекта', 'base-container vavilova-gallery-heading')
+    // Scope the existing absolute overlay/controls to the photo, not the heading.
+    const slider = gallery.querySelector('.detail-gallery__slider')
+    const controls = gallery.querySelector('.detail-gallery__ui')
+    if (slider && controls) slider.append(controls)
+  }
   const contactTitle = page.querySelector('.catalog-contact__title')
   if (contactTitle) {
     const eyebrow = document.createElement('p')
