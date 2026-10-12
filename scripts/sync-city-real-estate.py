@@ -249,6 +249,23 @@ def rewrite_root_paths(html: str) -> str:
     return re.sub(r"((?:href|src|action|poster|data-src)=\")([^\"]+)(\")", replace_attr, html)
 
 
+def inject_node_reference(html: str) -> str:
+    """Keep the approved node design when refreshing the city snapshot."""
+    if 'data-city-node-design' in html:
+        return html
+    styles = ''.join(
+        f'<link rel="stylesheet" data-city-node-design href="{name}?v=20261012-1">'
+        for name in ('node-ui.css', 'node-listing.css', 'node-launch.css', 'node-city.css')
+    )
+    styles += '<link rel="stylesheet" href="../shared/owner-header.css?v=20261012-owner-header-5">'
+    html = html.replace('</head>', styles + '</head>', 1)
+    return html.replace('</body>', '<script src="node-reference.js?v=20261012-1"></script></body>', 1)
+
+
+def city_entry() -> str:
+    return '''<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta http-equiv="refresh" content="0;url=gorodskaya-nedvizhimost/"><title>Городская недвижимость BARNES</title></head><body><a href="gorodskaya-nedvizhimost/">Открыть городскую недвижимость</a></body></html>\n'''
+
+
 def sync(source_path: Path | None = None) -> None:
     html = (source_path.read_bytes() if source_path else request(SOURCE_URL)).decode("utf-8")
     html = rewrite_root_paths(html)
@@ -297,11 +314,12 @@ def sync(source_path: Path | None = None) -> None:
     static_html = re.sub(r"[ \t]+(?=\n|$)", "", static_html)
     interactive_html = inject_map_bridge(interactive_html)
     interactive_html = inject_image_bridge(interactive_html, replacements)
+    interactive_html = inject_node_reference(interactive_html)
 
     # Keep the standalone file fully interactive as well. The folder route
     # remains separate for clean URL routing, while this file is the direct
     # page entry a static host or repository browser will open.
-    PAGE.write_text(interactive_html, encoding="utf-8")
+    PAGE.write_text(city_entry(), encoding="utf-8")
     ROUTE_PAGE.parent.mkdir(parents=True, exist_ok=True)
     ROUTE_PAGE.write_text(interactive_html, encoding="utf-8")
     print(f"wrote {PAGE} ({PAGE.stat().st_size} bytes)")
@@ -312,4 +330,10 @@ def sync(source_path: Path | None = None) -> None:
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--source", type=Path, help="Use a previously fetched HTML file")
-    sync(parser.parse_args().source)
+    parser.add_argument("--design-only", action="store_true", help="Apply node design to the saved snapshot without downloading source assets")
+    args = parser.parse_args()
+    if args.design_only:
+        ROUTE_PAGE.write_text(inject_node_reference(ROUTE_PAGE.read_text(encoding='utf-8')), encoding='utf-8')
+        PAGE.write_text(city_entry(), encoding='utf-8')
+    else:
+        sync(args.source)

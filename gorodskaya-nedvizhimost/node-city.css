@@ -1,0 +1,16 @@
+/* City-specific data/layout exceptions to the FirstDegreeNode reference. */
+.city-node-ready .catalog-grid__item[hidden], .city-node-ready .city-catalog-empty[hidden] { display:none!important; }
+.city-node-ready .catalog-grid__list { align-items:stretch; }
+.city-node-ready .apartment-card--catalog { height:100%; }
+.city-node-ready .apartment-card--catalog .apartment-card__body { flex:1; }
+.city-node-ready .apartment-card--catalog .apartment-card__address { order:0; }
+.city-node-ready .catalog-mode-toolbar .catalog-quick-filters__chevron { border-right:1px solid #4f4d49; border-bottom:1px solid #4f4d49; width:10px; height:10px; }
+.city-filter-dialog { border:1px solid #e4e4e4; border-radius:1px; padding:32px; width:min(420px,calc(100vw - 32px)); color:#1e1e1e; font-family:inherit; }
+.city-filter-dialog::backdrop { background:#0008; }
+.city-filter-dialog h2 { font-size:22px; font-weight:300; margin:0 0 24px; }
+.city-filter-dialog select { width:100%; min-height:54px; font:inherit; border:1px solid #e4e4e4; background:#fff; margin-bottom:24px; padding:12px; }
+.city-filter-dialog button { width:100%; }
+/* City source portraits are composed photographs, not the resort's cutout. */
+html body.city-node-ready .catalog-consultation__image[class] { width:50%; object-fit:cover; object-position:right bottom; }
+html body.city-node-ready .catalog-consultation__media[class]::before { background-image:url('../kurortnaya/assets/cta-consultation-interior.webp'); }
+html body.city-node-ready .catalog-contact__image[class] { object-fit:cover; }
