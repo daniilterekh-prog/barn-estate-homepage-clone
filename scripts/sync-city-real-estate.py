@@ -254,18 +254,19 @@ def inject_node_reference(html: str) -> str:
     html = html.replace('Показать объекты', 'Найти')
     html = re.sub(r'node-city\.css\?v=[\w-]+', 'node-city.css?v=20261012-cta-unified-1', html)
     html = html.replace('node-reference.js?v=20261012-1', 'node-reference.js?v=20261012-cta-unified-1')
-    html = re.sub(r'node-city\.css\?v=[\w-]+', 'node-city.css?v=20261012-request-modal-1', html)
+    html = re.sub(r'node-reference\.js\?v=[\w-]+', 'node-reference.js?v=20261012-full-filters-1', html)
+    html = re.sub(r'node-city\.css\?v=[\w-]+', 'node-city.css?v=20261012-full-filters-1', html)
     if 'node-modal.js?' not in html:
         html = html.replace('</body>', '<script src="node-modal.js?v=20261012-request-modal-1"></script></body>', 1)
     if 'data-city-node-design' in html:
         return html
     styles = ''.join(
-        f'<link rel="stylesheet" data-city-node-design href="{name}?v={"20261012-request-modal-1" if name == "node-city.css" else "20261012-1"}">'
+        f'<link rel="stylesheet" data-city-node-design href="{name}?v={"20261012-full-filters-1" if name == "node-city.css" else "20261012-1"}">'
         for name in ('node-ui.css', 'node-listing.css', 'node-launch.css', 'node-city.css')
     )
     styles += '<link rel="stylesheet" href="../shared/owner-header.css?v=20261012-owner-header-5">'
     html = html.replace('</head>', styles + '</head>', 1)
-    return html.replace('</body>', '<script src="node-reference.js?v=20261012-cta-unified-1"></script></body>', 1)
+    return html.replace('</body>', '<script src="node-reference.js?v=20261012-full-filters-1"></script></body>', 1)
 
 
 def city_entry() -> str:

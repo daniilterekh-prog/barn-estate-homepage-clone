@@ -83,6 +83,7 @@
     const script=document.createElement('script');script.src=new URL('node-launch.js?v=1',document.baseURI);document.body.append(script);
     setupHeader();
     setupSticky();
+    setupFullFilters();
     let pending=false;
     new MutationObserver(()=>{if(pending)return;pending=true;requestAnimationFrame(()=>{pending=false;all('.catalog-grid .apartment-card:not([data-node-card])').forEach(enhanceLot);render()})}).observe(list,{childList:true,subtree:true});
   }
@@ -93,6 +94,69 @@
     if(key==='price')options=[['','Любая стоимость'],['30000000','До 30 млн ₽'],['50000000','До 50 млн ₽'],['100000000','До 100 млн ₽'],['300000000','До 300 млн ₽']];
     if(key==='bedrooms')options=[['','Любое количество'],['1','От 1 спальни'],['2','От 2 спален'],['3','От 3 спален'],['4','От 4 спален']];
     options.forEach(([v,t])=>{const o=new Option(t,v);select.append(o)});select.value=selection[key];const button=document.createElement('button');button.className='ui-button ui-button--primary';button.textContent='Применить';button.addEventListener('click',()=>{selection[key]=select.value;render();dialog.close()});dialog.append(heading,select,button);dialog.addEventListener('close',()=>{trigger.setAttribute('aria-expanded','false');dialog.remove();trigger.focus()});document.body.append(dialog);trigger.setAttribute('aria-expanded','true');dialog.showModal();
+  }
+  function setupFullFilters() {
+    let hero=q('.catalog-hero-filters__filter-icon');
+    const listing=q('.catalog-mode-detailed-filters');
+    const controls=q('.catalog-projects-map__controls');
+    if(!hero || !listing || !controls)return;
+    hero.dataset.cityFilterEntry='hero';
+    listing.dataset.cityFilterEntry='listing';
+    const map=document.createElement('button');
+    map.type='button';map.className='catalog-projects-map__fullscreen city-map-filters';
+    const fullscreen=q('.catalog-projects-map__fullscreen',controls);
+    for(const attr of fullscreen?.attributes || [])if(attr.name.startsWith('data-v-'))map.setAttribute(attr.name,'');
+    map.dataset.cityFilterEntry='map';
+    map.innerHTML='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.15" stroke-linecap="round" aria-hidden="true"><path d="M4 6h3m4 0h9M4 12h8m4 0h4M4 18h4m4 0h8"/><circle cx="9" cy="6" r="2"/><circle cx="14" cy="12" r="2"/><circle cx="10" cy="18" r="2"/></svg><span>Фильтры</span>';
+    controls.insertBefore(map,fullscreen);
+    const triggers=[hero,listing,map];
+    triggers.forEach(button=>{button.setAttribute('aria-haspopup','dialog');button.setAttribute('aria-controls','catalog-hero-filters-panel');button.setAttribute('aria-expanded','false')});
+    map.setAttribute('aria-label','Открыть фильтры недвижимости');
+    let opener=null, wasOpen=false, savedScroll=0;
+    document.addEventListener('click',event=>{
+      const button=event.target.closest('[data-city-filter-entry]');
+      if(!button)return;
+      if(button===hero){if(!opener)opener=hero;return;}
+      event.preventDefault();event.stopImmediatePropagation();
+      opener=button;savedScroll=scrollY;
+      if(!q('.hero-filter-modal'))q('.catalog-hero-filters__filter-icon')?.click();
+    },true);
+    document.addEventListener('keydown',event=>{
+      const panel=q('.hero-filter-modal');
+      if(!panel)return;
+      if(event.key==='Escape'){
+        event.preventDefault();q('.hero-filter-modal__close',panel)?.click();return;
+      }
+      if(event.key!=='Tab')return;
+      const controls=all('button:not(.hero-filter-modal__backdrop),input,a[href]',panel).filter(element=>!element.disabled && element.getClientRects().length);
+      const first=controls[0],last=controls[controls.length-1];
+      if(event.shiftKey && document.activeElement===first){event.preventDefault();last?.focus();}
+      else if(!event.shiftKey && document.activeElement===last){event.preventDefault();first?.focus();}
+    });
+    const update=()=>{
+      const currentHero=q('.catalog-hero-filters__filter-icon');
+      if(currentHero && currentHero!==hero){
+        hero=currentHero;triggers[0]=hero;
+        hero.dataset.cityFilterEntry='hero';
+        hero.setAttribute('aria-haspopup','dialog');
+      }
+      const panel=q('.hero-filter-modal');
+      const open=Boolean(panel);
+      triggers.forEach(button=>button.setAttribute('aria-expanded',String(open)));
+      if(open && !wasOpen){
+        // Use the existing Nuxt modal and reactive selection; never clone its fields.
+        q('.hero-filter-modal__close',panel)?.focus({preventScroll:true});
+      }
+      if(!open && wasOpen){
+        const previous=opener;opener=null;
+        requestAnimationFrame(()=>{
+          previous?.focus({preventScroll:true});
+          if(previous && previous!==hero)scrollTo({top:savedScroll,behavior:'instant'});
+        });
+      }
+      wasOpen=open;
+    };
+    new MutationObserver(update).observe(document.body,{childList:true,subtree:true});
   }
   function setupHeader() {
     const header=q('.layout__header .site-header');if(!header)return;

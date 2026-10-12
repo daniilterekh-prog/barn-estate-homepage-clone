@@ -1,4 +1,7 @@
 /* City-specific data/layout exceptions to the FirstDegreeNode reference. */
+.city-map-filters svg { width:20px; height:20px; flex-shrink:0; }
+/* The current front original no longer shows this legacy link inside the modal. */
+html body .hero-filter-modal .hero-filter-panel__advanced { display:none; }
 /* Align the visible photograph, not only its contain-sized image box. */
 html body #catalog-intro .catalog-intro__image[class] { object-position:center bottom; }
 .city-node-ready .catalog-grid__item[hidden], .city-node-ready .city-catalog-empty[hidden] { display:none!important; }
