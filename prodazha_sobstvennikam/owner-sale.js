@@ -5,6 +5,11 @@
   if (!page) return;
 
   document.body.classList.add('owner-sale-reference-ui');
+  document.body.classList.add('barnes-header-template');
+  const headerStyles = document.createElement('link');
+  headerStyles.rel = 'stylesheet';
+  headerStyles.href = '../shared/owner-header.css?v=20261012-owner-header-4';
+  document.head.appendChild(headerStyles);
 
   page.querySelectorAll('.catalog-consultation__subtitle, .catalog-consultation__mobile-title').forEach(function (title) {
     title.textContent = 'Расскажите об объекте эксперту BARNES';
