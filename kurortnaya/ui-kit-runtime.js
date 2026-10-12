@@ -1,9 +1,17 @@
 (function () {
+  var filtersTemplate = document.createElement('script');
+  filtersTemplate.src = 'filters-template.js?v=1';
+  filtersTemplate.onload = function () {
+    var filtersScript = document.createElement('script');
+    filtersScript.src = 'filters-modal.js?v=1';
+    document.body.appendChild(filtersScript);
+  };
+  document.body.appendChild(filtersTemplate);
   var mapDataScript = document.createElement('script');
   mapDataScript.src = 'map-projects.js?v=1';
   mapDataScript.onload = function () {
     var mapScript = document.createElement('script');
-    mapScript.src = 'map-fullscreen.js?v=2';
+    mapScript.src = 'map-fullscreen.js?v=3';
     document.body.appendChild(mapScript);
   };
   document.body.appendChild(mapDataScript);
