@@ -1,0 +1,15 @@
+{
+  "checkedAt": "2026-10-12T07:38:42.492Z",
+  "fixture": "in-memory only; no extra page or lot folder created",
+  "passed": true,
+  "checks": [
+    "provider data preserved",
+    "hero, price, broker and breadcrumbs rebound",
+    "gallery rebound",
+    "missing blocks hidden",
+    "old structured metadata removed",
+    "no overflow",
+    "no browser errors"
+  ],
+  "errors": []
+}
