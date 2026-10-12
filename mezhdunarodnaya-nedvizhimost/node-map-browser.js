@@ -7,7 +7,7 @@
   var assetsBase = new URL('.', document.currentScript.src);
   var style = document.createElement('link');
   style.rel = 'stylesheet';
-  style.href = new URL('../kurortnaya/map-fullscreen.css?v=2', assetsBase).href;
+  style.href = new URL('node-map-browser.css?v=20261012-map-1', assetsBase).href;
   document.head.appendChild(style);
   var icon = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">';
   var parameterIcon = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">';
