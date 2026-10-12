@@ -1,0 +1,25 @@
+const {test} = require('node:test')
+const assert = require('node:assert/strict')
+const fs = require('node:fs')
+const path = require('node:path')
+const read = f => fs.readFileSync(path.join(__dirname,f),'utf8')
+test('passport has one anchor, six rows, both ceilings and the original CTA class',()=>{
+  const html=read('index.html'), section=html.match(/<section[^>]*id="characteristics"[\s\S]*?<\/section>/)[0]
+  assert.equal((html.match(/id="characteristics"/g)||[]).length,1)
+  assert.equal((section.match(/class="vp-row"/g)||[]).length,6)
+  for(const value of ['3,15 м','3,95 м','Типовые этажи','Верхние этажи','detail-characteristics__cta vp-cta','aria-labelledby="vavilova-passport-title"','vavilova-lobby.webp','→']) assert.ok(section.includes(value))
+  assert.ok(!section.includes('detail-characteristics__grid'))
+  assert.ok(!html.includes('preview.css'))
+})
+test('passport keeps consultation binding and excludes the legacy CTA relocation',()=>{
+  const js=read('reference-interactions.js')
+  assert.ok(js.includes("!characteristicsInner.closest('.vavilova-passport')"))
+  assert.match(js,/\.detail-characteristics__cta[\s\S]*?addEventListener\('click', scrollToContact\)/)
+})
+test('passport overrides legacy height locally and retains mobile photo',()=>{
+  const css=read('passport.css')
+  assert.match(css,/height: auto/)
+  assert.match(css,/height: 168px/)
+  assert.match(css,/container: vavilova-passport \/ inline-size/)
+  assert.match(css,/border-radius: 1px/)
+})

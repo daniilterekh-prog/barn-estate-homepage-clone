@@ -58,7 +58,7 @@
   // Section actions follow the content in both visual and keyboard order.
   const characteristicsInner = document.querySelector('.detail-characteristics__inner')
   const characteristicsCta = characteristicsInner?.querySelector('.detail-characteristics__cta')
-  if (characteristicsCta) {
+  if (characteristicsCta && !characteristicsInner.closest('.vavilova-passport')) {
     const actions = document.createElement('div')
     actions.className = 'vavilova-section-actions'
     actions.append(characteristicsCta)
