@@ -39,6 +39,8 @@ const assert = require('node:assert/strict');
         const brand = await listing.boundingBox();
         const sort = await page.locator('.catalog-grid__sort').boundingBox();
         assert.ok(brand.x + brand.width <= sort.x, 'Checkboxes to the left of sorting');
+        const lastLabel = await listing.locator('label').last().boundingBox();
+        assert.ok(sort.x - lastLabel.x - lastLabel.width <= 21, 'Checkboxes immediately next to sorting, not at page left edge');
         assert.ok(Math.abs(brand.y + brand.height / 2 - sort.y - sort.height / 2) < 1, 'Checkboxes and sorting share row/center');
       }
       for (const label of await listing.locator('label').all()) {
