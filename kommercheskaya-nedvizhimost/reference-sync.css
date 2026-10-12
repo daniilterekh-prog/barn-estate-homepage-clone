@@ -37,3 +37,5 @@ html body.commercial-node .apartment-card--catalog .apartment-card__name-text[cl
 html body.commercial-node .catalog-feedback-modal .feedback-modal__hero-image--alina { object-fit:cover;object-position:90% center; }
 /* Selection carousel keeps its geometry while long names use one line. */
 html body.commercial-node .catalog-best-offers .launch-card .apartment-card__name { display:block;min-width:0;min-height:0;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;-webkit-line-clamp:unset; }
+/* Zoom out only Alina's bottom-right floating avatar, not the request form. */
+html body.commercial-node .floating-expert__avatar[class] img { transform:scale(1.9); }
