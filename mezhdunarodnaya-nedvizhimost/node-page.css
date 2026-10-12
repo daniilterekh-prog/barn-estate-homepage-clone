@@ -14,6 +14,7 @@
 }
 .international-map-filter:focus-visible { outline: 2px solid #821c2a; outline-offset: 2px; }
 .international-node-design .hero-filter-modal { z-index: 11000; }
+html body.international-node-design .hero-filter-modal--drawer { position: fixed; }
 .international-node-design .catalog-projects-map__search-input { min-width: 0; }
 .international-node-design .catalog-quick-links--hero { display: none; }
 .international-node-design .catalog-page-nav { display: none !important; }
