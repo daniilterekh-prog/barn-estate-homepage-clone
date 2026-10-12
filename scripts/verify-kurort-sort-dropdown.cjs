@@ -42,6 +42,19 @@ const assert = require('node:assert/strict');
           assert.equal(await page.locator('.map-browser').isVisible(),true,'Escape closes menu, not map');
           await page.locator('.map-browser__reset').click();
           assert.equal((await button.textContent()).trim(),'По релевантности');
+          for (const [field,value,label] of [['type','apartment','Апартаменты'],['location','Сочи','Сочи'],['bedrooms','4+','Более 3']]) {
+            const select = page.locator(`.map-browser [data-filter="${field}"]`);
+            const trigger = select.locator('..').locator('.resort-select-trigger');
+            await trigger.click();
+            assert.deepEqual(await style(),reference,'Map parameter menu matches sorting/listing');
+            assert.equal(await popup.evaluate(el=>el.inert),false);
+            await popup.getByRole('option',{name:label,exact:true}).click();
+            assert.equal(await select.inputValue(),value);
+            assert.equal((await trigger.textContent()).trim(),label);
+          }
+          await page.locator('.map-browser__reset').click();
+          assert.equal(await page.locator('.map-browser [data-filter=type]').inputValue(),'');
+          assert.equal((await page.locator('.map-browser [data-filter=type]').locator('..').locator('.resort-select-trigger').textContent()).trim(),'Тип объекта');
           await page.locator('.map-browser__close').click();
         }
       }
