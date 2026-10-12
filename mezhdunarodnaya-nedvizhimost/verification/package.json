@@ -1,0 +1,172 @@
+{
+  "base": "http://localhost:8126/",
+  "rows": [
+    {
+      "entry": "index.html",
+      "width": 320,
+      "images": true,
+      "overflow": false,
+      "projects": 4,
+      "lots": 12,
+      "hero": true
+    },
+    {
+      "entry": "index.html",
+      "width": 390,
+      "images": true,
+      "overflow": false,
+      "projects": 4,
+      "lots": 12,
+      "hero": true
+    },
+    {
+      "entry": "index.html",
+      "width": 540,
+      "images": true,
+      "overflow": false,
+      "projects": 4,
+      "lots": 12,
+      "hero": true
+    },
+    {
+      "entry": "index.html",
+      "width": 541,
+      "images": true,
+      "overflow": false,
+      "projects": 4,
+      "lots": 12,
+      "hero": true
+    },
+    {
+      "entry": "index.html",
+      "width": 768,
+      "images": true,
+      "overflow": false,
+      "projects": 4,
+      "lots": 12,
+      "hero": true
+    },
+    {
+      "entry": "index.html",
+      "width": 1024,
+      "images": true,
+      "overflow": false,
+      "projects": 4,
+      "lots": 12,
+      "hero": true
+    },
+    {
+      "entry": "index.html",
+      "width": 1440,
+      "images": true,
+      "overflow": false,
+      "projects": 4,
+      "lots": 12,
+      "hero": true
+    },
+    {
+      "entry": "index.html",
+      "width": 2560,
+      "images": true,
+      "overflow": false,
+      "projects": 4,
+      "lots": 12,
+      "hero": true
+    },
+    {
+      "entry": "mobile.html",
+      "width": 320,
+      "images": true,
+      "overflow": false,
+      "projects": 4,
+      "lots": 12,
+      "hero": true
+    },
+    {
+      "entry": "mobile.html",
+      "width": 390,
+      "images": true,
+      "overflow": false,
+      "projects": 4,
+      "lots": 12,
+      "hero": true
+    },
+    {
+      "entry": "mobile.html",
+      "width": 540,
+      "images": true,
+      "overflow": false,
+      "projects": 4,
+      "lots": 12,
+      "hero": true
+    },
+    {
+      "entry": "mobile.html",
+      "width": 541,
+      "images": true,
+      "overflow": false,
+      "projects": 4,
+      "lots": 12,
+      "hero": true
+    },
+    {
+      "entry": "mobile.html",
+      "width": 768,
+      "images": true,
+      "overflow": false,
+      "projects": 4,
+      "lots": 12,
+      "hero": true
+    },
+    {
+      "entry": "mobile.html",
+      "width": 1024,
+      "images": true,
+      "overflow": false,
+      "projects": 4,
+      "lots": 12,
+      "hero": true
+    },
+    {
+      "entry": "mobile.html",
+      "width": 1440,
+      "images": true,
+      "overflow": false,
+      "projects": 4,
+      "lots": 12,
+      "hero": true
+    },
+    {
+      "entry": "mobile.html",
+      "width": 2560,
+      "images": true,
+      "overflow": false,
+      "projects": 4,
+      "lots": 12,
+      "hero": true
+    },
+    {
+      "width": 390,
+      "quickDropdown": true,
+      "threeFullFilterEntrances": true,
+      "marketSync": true,
+      "map": true,
+      "callback": true,
+      "channel": true,
+      "faq": true
+    },
+    {
+      "width": 1440,
+      "quickDropdown": true,
+      "threeFullFilterEntrances": true,
+      "marketSync": true,
+      "map": true,
+      "callback": true,
+      "channel": true,
+      "faq": true
+    }
+  ],
+  "errors": [],
+  "failed": [],
+  "external": []
+}

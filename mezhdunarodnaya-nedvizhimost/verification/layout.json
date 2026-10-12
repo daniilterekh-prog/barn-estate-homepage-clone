@@ -1,0 +1,20 @@
+{
+  "before": "Git HEAD before packaging, images/fonts loaded; carousel settled",
+  "after": "standalone folder server",
+  "rows": [
+    {
+      "width": 390,
+      "height": 12655,
+      "sectionGeometryMatches": true,
+      "pixelsDifferent": 0,
+      "percent": 0
+    },
+    {
+      "width": 1440,
+      "height": 10465,
+      "sectionGeometryMatches": true,
+      "pixelsDifferent": 0,
+      "percent": 0
+    }
+  ]
+}
