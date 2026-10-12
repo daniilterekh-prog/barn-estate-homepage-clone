@@ -1,0 +1,97 @@
+/* Canonical barnes-assets/ui-kit/{reference-ui,partners}.md.
+   Opt-in on Vavilova only. Do not style every button as an ActionButton. */
+body.vavilova-button-kit {
+  --vav-action-height: 70px;
+  --vav-action-size: 17px;
+  --vav-action-line: 18.7px;
+  --vav-action-padding: 36px;
+  --vav-hero-icon: 26px;
+  --vav-control-size: 56px;
+}
+body.vavilova-button-kit .catalog-detail :is(
+  .detail-characteristics__cta,.detail-location__action,.lot-developer__cta,
+  .catalog-contact__submit,.catalog-contact__card-submit
+),
+body.vavilova-button-kit .newsletter-form__row > button,
+body.vavilova-button-kit .catalog-detail .detail-hero .detail-hero__actions .detail-hero__button--primary {
+  font-family: "Tilda Sans",system-ui,sans-serif;
+  font-size: var(--vav-action-size); font-weight: 400; line-height: var(--vav-action-line);
+  box-sizing: border-box; height: var(--vav-action-height); min-height: var(--vav-action-height);
+  padding: 0 var(--vav-action-padding); border-radius: 1px;
+  transition-property: background-color,border-color,color,opacity;
+  transition-duration: 200ms;
+}
+body.vavilova-button-kit .catalog-detail .detail-hero .detail-hero__button--primary .architecture-hero-arrow {
+  width: var(--vav-hero-icon); height: var(--vav-hero-icon); flex-basis: var(--vav-hero-icon);
+}
+/* Presentation remains the approved text CTA, not a second filled button. */
+body.vavilova-button-kit .catalog-detail .detail-hero .detail-hero__actions .detail-hero__button--secondary {
+  font-size: 14px; font-weight: 400; line-height: 16.8px; border-radius: 0;
+  min-height: 44px; height: auto; padding: 12px 0;
+}
+body.vavilova-button-kit .catalog-detail .detail-hero .detail-hero__button--secondary .architecture-hero-arrow {
+  width: 14px; height: 14px; flex-basis: 14px;
+}
+body.vavilova-button-kit .catalog-detail :is(.detail-hero__button,.detail-characteristics__cta,
+  .detail-location__action,.lot-developer__cta,.catalog-contact__submit,.catalog-contact__card-submit,
+  .ui-more-link,.detail-architecture__more,.lot-developer__toggle,.mortgage__action) :is(svg,.ui-icon),
+body.vavilova-button-kit .catalog-detail :is(.detail-hero__button,.detail-characteristics__cta,
+  .detail-location__action,.lot-developer__cta,.catalog-contact__submit,.catalog-contact__card-submit,
+  .ui-more-link,.detail-architecture__more,.lot-developer__toggle,.mortgage__action):hover :is(svg,.ui-icon) {
+  transform: none; translate: none; rotate: none; scale: none; animation: none; transition: none;
+}
+body.vavilova-button-kit :is(.detail-hero__button,.detail-characteristics__cta,
+  .detail-location__action,.lot-developer__cta,.catalog-contact__submit,.catalog-contact__card-submit,
+  .catalog-contact__method,.ui-more-link,.detail-architecture__more,.lot-developer__toggle,
+  .mortgage__action,.site-footer__callback-btn):focus-visible,
+body.vavilova-button-kit .newsletter-form__row > button:focus-visible {
+  outline: 2px solid #8b1d25; outline-offset: 3px;
+}
+body.vavilova-button-kit .detail-hero .detail-hero__button:focus-visible,
+body.vavilova-button-kit .catalog-contact :is(.catalog-contact__submit,.catalog-contact__card-submit,.catalog-contact__method):focus-visible {
+  outline-color: #fff;
+}
+body.vavilova-button-kit :is(.detail-hero__button,.detail-characteristics__cta,
+  .detail-location__action,.catalog-contact__submit,.catalog-contact__card-submit):disabled,
+body.vavilova-button-kit .newsletter-form__row > button:disabled { opacity: .55; cursor: not-allowed; }
+body.vavilova-button-kit .catalog-detail .catalog-contact .catalog-contact__method {
+  height: 44px; min-height: 44px; padding: 0 18px;
+  font-size: var(--vav-action-size); line-height: var(--vav-action-line); font-weight: 400; border-radius: 1px;
+}
+body.vavilova-button-kit .catalog-detail :is(.detail-gallery__nav,.documents__nav-btn,.reviews-section__nav-btn) {
+  width: var(--vav-control-size); height: var(--vav-control-size); min-width: var(--vav-control-size);
+  border-radius: 50%;
+}
+body.vavilova-button-kit .site-footer .site-footer__callback-btn {
+  height: 56px; min-height: 56px; border-radius: 1px;
+  font-size: var(--vav-action-size); line-height: var(--vav-action-line); font-weight: 400;
+}
+body.vavilova-button-kit .catalog-detail .detail-sticky-header__consult {
+  font-size: 14px; line-height: 16.8px; font-weight: 400;
+  display: inline-flex; align-items: center; min-height: 44px;
+}
+body.vavilova-button-kit .barnes-action-arrow {
+  width: 14px; height: 14px; flex: 0 0 14px;
+  transform: none; transition: none; animation: none;
+}
+body.vavilova-button-kit .mortgage__action .ui-icon { width: 14px; height: 14px; }
+body.vavilova-button-kit .newsletter-form__row > button { display: inline-flex; align-items: center; justify-content: center; gap: 12px; }
+@media (min-width:1441px) {
+  body.vavilova-button-kit {
+    --vav-action-size: 19px; --vav-action-line: 20.9px; --vav-action-padding: 47px;
+    --vav-hero-icon: 28px; --vav-control-size: 68px;
+  }
+}
+@media (max-width:540px) {
+  body.vavilova-button-kit {
+    --vav-action-height: 58px; --vav-action-size: 18px; --vav-action-line: 19.8px;
+    --vav-action-padding: 24px; --vav-hero-icon: 24px; --vav-control-size: 48px;
+  }
+  body.vavilova-button-kit .catalog-detail .catalog-contact .catalog-contact__method { height: 46px; min-height: 46px; }
+  body.vavilova-button-kit .site-footer .site-footer__callback-btn { height: 54px; min-height: 54px; }
+  body.vavilova-button-kit .barnes-action-arrow { width: 16px; height: 16px; flex-basis: 16px; }
+  body.vavilova-button-kit .mortgage__action .ui-icon { width: 16px; height: 16px; }
+}
+@media (prefers-reduced-motion:reduce) {
+  body.vavilova-button-kit :is(button,a[class*="button"],.ui-icon,svg) { transition-duration: 0s; }
+}

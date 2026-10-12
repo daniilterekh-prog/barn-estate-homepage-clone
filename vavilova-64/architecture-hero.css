@@ -88,15 +88,13 @@
   color: #fff; transition: border-color .2s;
 }
 .catalog-detail .detail-hero .architecture-hero-arrow {
-  display: block; width: 22px; height: 22px; flex: 0 0 22px; transition: transform .2s;
+  display: block; width: 22px; height: 22px; flex: 0 0 22px; transform: none;
 }
 .catalog-detail .detail-hero .detail-hero__button--secondary .architecture-hero-arrow {
   width: 18px; height: 18px; flex-basis: 18px;
 }
 .catalog-detail .detail-hero .detail-hero__button--primary:hover { background: #74171e; border-color: #74171e; }
-.catalog-detail .detail-hero .detail-hero__button--primary:hover .architecture-hero-arrow { transform: translateX(3px); }
 .catalog-detail .detail-hero .detail-hero__button--secondary:hover { background: transparent; border-bottom-color: #fff; }
-.catalog-detail .detail-hero .detail-hero__button--secondary:hover .architecture-hero-arrow { transform: translate(2px,-2px); }
 .catalog-detail .detail-hero .detail-hero__button:focus-visible { outline: 2px solid #fff; outline-offset: 5px; }
 @media (min-width:1600px) {
   .catalog-detail .detail-hero .detail-hero__body { max-width: 750px; }

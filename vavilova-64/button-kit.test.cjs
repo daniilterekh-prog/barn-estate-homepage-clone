@@ -1,0 +1,21 @@
+const { test } = require('node:test')
+const assert = require('node:assert/strict')
+const fs = require('node:fs')
+const path = require('node:path')
+const read = name => fs.readFileSync(path.join(__dirname, name), 'utf8')
+test('hero arrows have no motion or transform transition', () => {
+  const css = read('architecture-hero.css')
+  assert.doesNotMatch(css, /transition:\s*transform/)
+  assert.doesNotMatch(css, /transform:\s*translate/)
+})
+test('both hero actions use the same kit arrow path', () => {
+  const js = read('architecture-hero.js')
+  assert.doesNotMatch(js, /diagonal\s*\?/)
+  assert.match(js, /M3 13 13 3M5 3h8v8/)
+})
+test('contact selector removes stale snapshot tab semantics', () => {
+  const js = read('reference-interactions.js')
+  assert.ok(js.includes("button.removeAttribute('aria-selected')"))
+  assert.ok(js.includes("button.removeAttribute('role')"))
+  assert.ok(js.includes("setAttribute('role', 'group')"))
+})

@@ -194,6 +194,10 @@
 
   const phoneField = document.querySelector('.catalog-contact__input[type="tel"]')
   document.querySelectorAll('.catalog-contact__method').forEach((button) => {
+    // Channel choice is a group of native toggle buttons, not tab panels.
+    button.parentElement.setAttribute('role', 'group')
+    button.removeAttribute('role')
+    button.removeAttribute('aria-selected')
     button.setAttribute('aria-pressed', String(button.classList.contains('catalog-contact__method--active')))
     button.addEventListener('click', () => {
       document.querySelectorAll('.catalog-contact__method').forEach((method) => {
