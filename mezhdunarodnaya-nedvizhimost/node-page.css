@@ -9,6 +9,16 @@ html body.international-node-design .catalog-mode-toolbar .catalog-grid__sort-se
   max-width: none;
   padding-right: 40px;
 }
+@media (max-width: 360px) {
+  html body.international-node-design .catalog-mode-toolbar .catalog-grid__sort {
+    grid-column: 1 / -1;
+    grid-row: 4;
+    width: 100%;
+  }
+  .international-node-design .catalog-mode-toolbar .catalog-mode-detailed-filters {
+    grid-column: 1 / -1;
+  }
+}
 .international-node-design .catalog-consultation__image { object-fit: contain; }
 .international-node-design .catalog-feedback-modal { z-index: 1400; }
 .international-node-design .catalog-grid__item { display: list-item; }
