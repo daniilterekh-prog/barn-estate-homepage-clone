@@ -280,7 +280,7 @@ def sync(source_path: Path | None = None) -> None:
     : "gorodskaya-nedvizhimost/";
 })();
 </script>'''
-    html = html.replace("<head>", '<head><base href="/gorodskaya-nedvizhimost/">' + file_base_script, 1)
+    html = html.replace("<head>", '<head><base href="./">' + file_base_script, 1)
     html = html.replace('"/fonts/', '"../fonts/').replace("'/fonts/", "'../fonts/")
     html = html.replace("url(/fonts/", "url(../fonts/")
     html = html.replace("url('/fonts/", "url('../fonts/").replace('url("/fonts/', 'url("../fonts/')
