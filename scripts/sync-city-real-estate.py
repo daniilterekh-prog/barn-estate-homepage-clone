@@ -252,10 +252,11 @@ def rewrite_root_paths(html: str) -> str:
 def inject_node_reference(html: str) -> str:
     """Keep the approved node design when refreshing the city snapshot."""
     html = html.replace('Показать объекты', 'Найти')
+    html = html.replace('node-city.css?v=20261012-1', 'node-city.css?v=20261012-intro-bottom-1')
     if 'data-city-node-design' in html:
         return html
     styles = ''.join(
-        f'<link rel="stylesheet" data-city-node-design href="{name}?v=20261012-1">'
+        f'<link rel="stylesheet" data-city-node-design href="{name}?v={"20261012-intro-bottom-1" if name == "node-city.css" else "20261012-1"}">'
         for name in ('node-ui.css', 'node-listing.css', 'node-launch.css', 'node-city.css')
     )
     styles += '<link rel="stylesheet" href="../shared/owner-header.css?v=20261012-owner-header-5">'

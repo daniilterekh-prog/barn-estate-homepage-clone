@@ -1,4 +1,6 @@
 /* City-specific data/layout exceptions to the FirstDegreeNode reference. */
+/* Align the visible photograph, not only its contain-sized image box. */
+html body #catalog-intro .catalog-intro__image[class] { object-position:center bottom; }
 .city-node-ready .catalog-grid__item[hidden], .city-node-ready .city-catalog-empty[hidden] { display:none!important; }
 .city-node-ready .catalog-grid__list { align-items:stretch; }
 .city-node-ready .apartment-card--catalog { height:100%; }
