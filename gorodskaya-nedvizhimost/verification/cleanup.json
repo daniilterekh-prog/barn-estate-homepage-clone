@@ -1,0 +1,1064 @@
+{
+  "scope": "gorodskaya-nedvizhimost only",
+  "reason": "Unused Nuxt/vendor, old flat adapters now in css/js, duplicate source assets and obsolete standalone snapshot",
+  "files": [
+    {
+      "file": "_nuxt/0dlyJsIT.js",
+      "bytes": 5973
+    },
+    {
+      "file": "_nuxt/1HOx_n5q.js",
+      "bytes": 1038
+    },
+    {
+      "file": "_nuxt/3z2yHhoS.js",
+      "bytes": 178
+    },
+    {
+      "file": "_nuxt/8xZ1OrLI.js",
+      "bytes": 888
+    },
+    {
+      "file": "_nuxt/B-vd8reI.js",
+      "bytes": 752
+    },
+    {
+      "file": "_nuxt/B5RuSEM8.js",
+      "bytes": 1630
+    },
+    {
+      "file": "_nuxt/B7VijMhE.js",
+      "bytes": 1276
+    },
+    {
+      "file": "_nuxt/BA_suQhE.js",
+      "bytes": 11084
+    },
+    {
+      "file": "_nuxt/BBxWh8sA.js",
+      "bytes": 8248
+    },
+    {
+      "file": "_nuxt/BFFg95S3.js",
+      "bytes": 61608
+    },
+    {
+      "file": "_nuxt/BRRFuoBR.js",
+      "bytes": 2762
+    },
+    {
+      "file": "_nuxt/BU2xWQHo.js",
+      "bytes": 1154
+    },
+    {
+      "file": "_nuxt/BVnbrGo_.js",
+      "bytes": 2903
+    },
+    {
+      "file": "_nuxt/BXl3fC6M.js",
+      "bytes": 281
+    },
+    {
+      "file": "_nuxt/BYBkj6W5.js",
+      "bytes": 673
+    },
+    {
+      "file": "_nuxt/BZB7kPwk.js",
+      "bytes": 9244
+    },
+    {
+      "file": "_nuxt/B_MMpjD6.js",
+      "bytes": 54559
+    },
+    {
+      "file": "_nuxt/BeVTJlF1.js",
+      "bytes": 752
+    },
+    {
+      "file": "_nuxt/BflaYs2K.js",
+      "bytes": 5998
+    },
+    {
+      "file": "_nuxt/Bk_h7sOe.js",
+      "bytes": 2274
+    },
+    {
+      "file": "_nuxt/BmmBKfRV.js",
+      "bytes": 622
+    },
+    {
+      "file": "_nuxt/BtKRgsHC.js",
+      "bytes": 473
+    },
+    {
+      "file": "_nuxt/C11biBB7.js",
+      "bytes": 1070
+    },
+    {
+      "file": "_nuxt/C1LGKDnA.js",
+      "bytes": 1996
+    },
+    {
+      "file": "_nuxt/C1oPbOeN.js",
+      "bytes": 15235
+    },
+    {
+      "file": "_nuxt/C6-Z4_IS.js",
+      "bytes": 12516
+    },
+    {
+      "file": "_nuxt/C6npibfe.js",
+      "bytes": 24652
+    },
+    {
+      "file": "_nuxt/C9UQ9igC.js",
+      "bytes": 2596
+    },
+    {
+      "file": "_nuxt/CCmPWXjg.js",
+      "bytes": 794
+    },
+    {
+      "file": "_nuxt/CFZN_xYQ.js",
+      "bytes": 105
+    },
+    {
+      "file": "_nuxt/CGPjjwKC.js",
+      "bytes": 2419
+    },
+    {
+      "file": "_nuxt/CGUdGHOs.js",
+      "bytes": 1665
+    },
+    {
+      "file": "_nuxt/CGpiMgXT.js",
+      "bytes": 377
+    },
+    {
+      "file": "_nuxt/CIWtaDi1.js",
+      "bytes": 7086
+    },
+    {
+      "file": "_nuxt/COxEoAIT.js",
+      "bytes": 1240
+    },
+    {
+      "file": "_nuxt/CQCK6X7p.js",
+      "bytes": 951
+    },
+    {
+      "file": "_nuxt/CUR1J9Rj.js",
+      "bytes": 42151
+    },
+    {
+      "file": "_nuxt/CbzIbZ6U.js",
+      "bytes": 12138
+    },
+    {
+      "file": "_nuxt/CcXDJFMU.js",
+      "bytes": 185
+    },
+    {
+      "file": "_nuxt/CkYfVbvF.js",
+      "bytes": 1084
+    },
+    {
+      "file": "_nuxt/Cq2ZIP5v.js",
+      "bytes": 24785
+    },
+    {
+      "file": "_nuxt/CvADzRIu.js",
+      "bytes": 7883
+    },
+    {
+      "file": "_nuxt/CwSQElkb.js",
+      "bytes": 48870
+    },
+    {
+      "file": "_nuxt/D3IHqPXh.js",
+      "bytes": 8993
+    },
+    {
+      "file": "_nuxt/D44uGJQo.js",
+      "bytes": 864
+    },
+    {
+      "file": "_nuxt/D5G-sRz8.js",
+      "bytes": 33389
+    },
+    {
+      "file": "_nuxt/D8iyaS6S.js",
+      "bytes": 1052
+    },
+    {
+      "file": "_nuxt/DA2C5PnX.js",
+      "bytes": 1061
+    },
+    {
+      "file": "_nuxt/DBnOwuOt.js",
+      "bytes": 1023
+    },
+    {
+      "file": "_nuxt/DEk_Z9lO.js",
+      "bytes": 279
+    },
+    {
+      "file": "_nuxt/DG0aNqvh.js",
+      "bytes": 239
+    },
+    {
+      "file": "_nuxt/DGEaC28g.js",
+      "bytes": 4917
+    },
+    {
+      "file": "_nuxt/DJD10lHD.js",
+      "bytes": 757
+    },
+    {
+      "file": "_nuxt/DJpi0npN.js",
+      "bytes": 766
+    },
+    {
+      "file": "_nuxt/DKHrHuc5.js",
+      "bytes": 546
+    },
+    {
+      "file": "_nuxt/DN7fI00M.js",
+      "bytes": 2629
+    },
+    {
+      "file": "_nuxt/DO2yHtqJ.js",
+      "bytes": 1639
+    },
+    {
+      "file": "_nuxt/DOzOLaxv.js",
+      "bytes": 2165
+    },
+    {
+      "file": "_nuxt/DPp_2IYt.js",
+      "bytes": 3240
+    },
+    {
+      "file": "_nuxt/DPpll8iX.js",
+      "bytes": 41209
+    },
+    {
+      "file": "_nuxt/DSovJPmZ.js",
+      "bytes": 11980
+    },
+    {
+      "file": "_nuxt/DU2OCtk3.js",
+      "bytes": 902
+    },
+    {
+      "file": "_nuxt/DYL8aaEE.js",
+      "bytes": 13847
+    },
+    {
+      "file": "_nuxt/DZHJniJc.js",
+      "bytes": 763
+    },
+    {
+      "file": "_nuxt/DZi1wTvF.js",
+      "bytes": 505
+    },
+    {
+      "file": "_nuxt/DaWZG7Mf.js",
+      "bytes": 1821
+    },
+    {
+      "file": "_nuxt/DdeAg2OB.js",
+      "bytes": 208
+    },
+    {
+      "file": "_nuxt/DgJBaCom.js",
+      "bytes": 22304
+    },
+    {
+      "file": "_nuxt/DkMcCd47.js",
+      "bytes": 26852
+    },
+    {
+      "file": "_nuxt/Dkh97KqP.js",
+      "bytes": 14327
+    },
+    {
+      "file": "_nuxt/DmNL68Ya.js",
+      "bytes": 5123
+    },
+    {
+      "file": "_nuxt/DoXeRzxK.js",
+      "bytes": 11443
+    },
+    {
+      "file": "_nuxt/DqsOIK8S.js",
+      "bytes": 773
+    },
+    {
+      "file": "_nuxt/Ds0Ovg43.js",
+      "bytes": 792
+    },
+    {
+      "file": "_nuxt/Du9NsC4j.js",
+      "bytes": 3498
+    },
+    {
+      "file": "_nuxt/DummgRdI.js",
+      "bytes": 1075
+    },
+    {
+      "file": "_nuxt/HVXSISRx.js",
+      "bytes": 16637
+    },
+    {
+      "file": "_nuxt/KmghkPRD.js",
+      "bytes": 1916
+    },
+    {
+      "file": "_nuxt/MINRXAZk.js",
+      "bytes": 220
+    },
+    {
+      "file": "_nuxt/NpmqBJrO.js",
+      "bytes": 11615
+    },
+    {
+      "file": "_nuxt/RP3nlB6i.js",
+      "bytes": 24118
+    },
+    {
+      "file": "_nuxt/TE6e0mGY.js",
+      "bytes": 226
+    },
+    {
+      "file": "_nuxt/VNfaeIID.js",
+      "bytes": 1064
+    },
+    {
+      "file": "_nuxt/WHtVPqPL.js",
+      "bytes": 1023
+    },
+    {
+      "file": "_nuxt/XU9slP65.js",
+      "bytes": 8420
+    },
+    {
+      "file": "_nuxt/anrU1oF8.js",
+      "bytes": 1148
+    },
+    {
+      "file": "_nuxt/builds/meta/3d8af835-b88d-4eda-a758-627d6de2de53.json",
+      "bytes": 139
+    },
+    {
+      "file": "_nuxt/cr5LBAdK.js",
+      "bytes": 1265
+    },
+    {
+      "file": "_nuxt/ctMODCEm.js",
+      "bytes": 221
+    },
+    {
+      "file": "_nuxt/eQ0w3qy5.js",
+      "bytes": 4673
+    },
+    {
+      "file": "_nuxt/fDH4KdWl.js",
+      "bytes": 1368
+    },
+    {
+      "file": "_nuxt/i1lcDUIy.js",
+      "bytes": 3867
+    },
+    {
+      "file": "_nuxt/jZ6FLDUt.js",
+      "bytes": 183
+    },
+    {
+      "file": "_nuxt/k49taE2-.js",
+      "bytes": 1268
+    },
+    {
+      "file": "_nuxt/ljEerbnj.js",
+      "bytes": 3791
+    },
+    {
+      "file": "_nuxt/mBOgSjX3.js",
+      "bytes": 437316
+    },
+    {
+      "file": "_nuxt/p9UV6NFU.js",
+      "bytes": 7703
+    },
+    {
+      "file": "_nuxt/xKbEQFME.js",
+      "bytes": 1952
+    },
+    {
+      "file": "_nuxt/yDMQCTUJ.js",
+      "bytes": 2882
+    },
+    {
+      "file": "_nuxt/yandex-maps.js",
+      "bytes": 22454
+    },
+    {
+      "file": "_nuxt/yyfK_7Y_.js",
+      "bytes": 3672
+    },
+    {
+      "file": "_nuxt/zP22CyPy.js",
+      "bytes": 1091
+    },
+    {
+      "file": "assets/source-assets/01-01c7d982f2-logo.svg",
+      "bytes": 10900
+    },
+    {
+      "file": "assets/source-assets/01-35fc252d25-modal-request-img.webp",
+      "bytes": 75360
+    },
+    {
+      "file": "assets/source-assets/01-8762967c07-mBOgSjX3.js",
+      "bytes": 437316
+    },
+    {
+      "file": "assets/source-assets/02-01c7d982f2-logo.svg",
+      "bytes": 10900
+    },
+    {
+      "file": "assets/source-assets/02-5ae5fad54a-620ce0cc220756d13a72ddf266404e58.webp",
+      "bytes": 72800
+    },
+    {
+      "file": "assets/source-assets/02-f07a7f7f95-old-money-interior.webp",
+      "bytes": 12644
+    },
+    {
+      "file": "assets/source-assets/03-3d421157d1-4a27f569a12b9c4da292b648f52878dc.jpg",
+      "bytes": 87279
+    },
+    {
+      "file": "assets/source-assets/03-5ae5fad54a-620ce0cc220756d13a72ddf266404e58.webp",
+      "bytes": 72800
+    },
+    {
+      "file": "assets/source-assets/03-c519a464bd-bad1324616f4bc5bcac270b9dd82757d.jpg",
+      "bytes": 62350
+    },
+    {
+      "file": "assets/source-assets/04-5724e685c4-d9328b4f44885661cf17794d3b5991f0.jpeg",
+      "bytes": 113126
+    },
+    {
+      "file": "assets/source-assets/04-b967417a95-dfe2ec6987922e698a858fceaec02f02.jpg",
+      "bytes": 93389
+    },
+    {
+      "file": "assets/source-assets/04-c519a464bd-bad1324616f4bc5bcac270b9dd82757d.jpg",
+      "bytes": 62350
+    },
+    {
+      "file": "assets/source-assets/05-b967417a95-dfe2ec6987922e698a858fceaec02f02.jpg",
+      "bytes": 93389
+    },
+    {
+      "file": "assets/source-assets/05-d09fa9a4c2-b85ac68b5f2a45eb1acde5f6b44beda4.jpg",
+      "bytes": 77211
+    },
+    {
+      "file": "assets/source-assets/05-f35de77414-d482649325abdb84074bb48c4914f78f.jpg",
+      "bytes": 101100
+    },
+    {
+      "file": "assets/source-assets/06-3f3fde743e-8bcd3e319f52c1bc9cd10733b2478075.jpg",
+      "bytes": 106003
+    },
+    {
+      "file": "assets/source-assets/06-c9d4721770-4f40b89fcebbe74ca3d41da254655a00.jpg",
+      "bytes": 55049
+    },
+    {
+      "file": "assets/source-assets/06-d09fa9a4c2-b85ac68b5f2a45eb1acde5f6b44beda4.jpg",
+      "bytes": 77211
+    },
+    {
+      "file": "assets/source-assets/07-3551b15bc8-b4e19207d679d6c0f37f86606fffd442.jpeg",
+      "bytes": 70328
+    },
+    {
+      "file": "assets/source-assets/07-c9d4721770-4f40b89fcebbe74ca3d41da254655a00.jpg",
+      "bytes": 55049
+    },
+    {
+      "file": "assets/source-assets/07-fca8d21929-05303612821a3aa85ca9ba358abd1e4f.jpg",
+      "bytes": 105449
+    },
+    {
+      "file": "assets/source-assets/08-9f3a51543f-cc0649c37d33c29ab5cc1f6d155e6ead.jpg",
+      "bytes": 82960
+    },
+    {
+      "file": "assets/source-assets/08-b9e895823a-652e1518049a3390bed2e6b7483c51a0.jpeg",
+      "bytes": 101616
+    },
+    {
+      "file": "assets/source-assets/08-fca8d21929-05303612821a3aa85ca9ba358abd1e4f.jpg",
+      "bytes": 105449
+    },
+    {
+      "file": "assets/source-assets/09-4f3d74d571-884639fa192137849919e20eaeedee00.jpg",
+      "bytes": 84119
+    },
+    {
+      "file": "assets/source-assets/09-9f3a51543f-cc0649c37d33c29ab5cc1f6d155e6ead.jpg",
+      "bytes": 82960
+    },
+    {
+      "file": "assets/source-assets/09-fe2e3269d2-bcf18c4c540e46f738bf3a4645d4dd52.jpg",
+      "bytes": 105047
+    },
+    {
+      "file": "assets/source-assets/10-a66bd4c8a7-aacf26ab73212238f3a5874db546c248.jpg",
+      "bytes": 92080
+    },
+    {
+      "file": "assets/source-assets/10-ed925cb0e7-7fb64f50d0f8279d4456adb3e9f4c687.jpg",
+      "bytes": 76885
+    },
+    {
+      "file": "assets/source-assets/10-fe2e3269d2-bcf18c4c540e46f738bf3a4645d4dd52.jpg",
+      "bytes": 105047
+    },
+    {
+      "file": "assets/source-assets/11-04da5c098e-43f917ba0ee4ccf29a9f06f3e8501646.jpeg",
+      "bytes": 123969
+    },
+    {
+      "file": "assets/source-assets/11-3d480733d5-fedb4a6ccd850aac9cea7745e53b52f3.jpg",
+      "bytes": 133169
+    },
+    {
+      "file": "assets/source-assets/11-a66bd4c8a7-aacf26ab73212238f3a5874db546c248.jpg",
+      "bytes": 92080
+    },
+    {
+      "file": "assets/source-assets/12-04da5c098e-43f917ba0ee4ccf29a9f06f3e8501646.jpeg",
+      "bytes": 123969
+    },
+    {
+      "file": "assets/source-assets/12-71b30ab307-f70b47a70fef7bb2f03ae5b84f89c359.jpg",
+      "bytes": 62350
+    },
+    {
+      "file": "assets/source-assets/12-ec908eae35-a89972ecc75c34a8c4eadeafceb1fe52.jpeg",
+      "bytes": 73126
+    },
+    {
+      "file": "assets/source-assets/13-26a573d4bb-ad7efc338ed54bca6ef58b570c029fa7.jpg",
+      "bytes": 66949
+    },
+    {
+      "file": "assets/source-assets/13-dd6730219f-10bad24f2e3f18121421957488bf7de1.jpg",
+      "bytes": 80666
+    },
+    {
+      "file": "assets/source-assets/13-ec908eae35-a89972ecc75c34a8c4eadeafceb1fe52.jpeg",
+      "bytes": 73126
+    },
+    {
+      "file": "assets/source-assets/14-046e627599-a83b69d56a500e83341bcbb0b49f0b52.jpg",
+      "bytes": 56689
+    },
+    {
+      "file": "assets/source-assets/14-26a573d4bb-ad7efc338ed54bca6ef58b570c029fa7.jpg",
+      "bytes": 66949
+    },
+    {
+      "file": "assets/source-assets/14-d7ac02c58e-4d7ee071badc9330dcd94928f3168b60.jpg",
+      "bytes": 146170
+    },
+    {
+      "file": "assets/source-assets/15-35edf6f4a0-9a18ffe61bcbab82d1ec7235f332ac9f.png",
+      "bytes": 2166852
+    },
+    {
+      "file": "assets/source-assets/15-d7ac02c58e-4d7ee071badc9330dcd94928f3168b60.jpg",
+      "bytes": 146170
+    },
+    {
+      "file": "assets/source-assets/16-35edf6f4a0-9a18ffe61bcbab82d1ec7235f332ac9f.png",
+      "bytes": 2166852
+    },
+    {
+      "file": "assets/source-assets/16-7d2ca45d4d-contacts-man.webp",
+      "bytes": 94912
+    },
+    {
+      "file": "assets/source-assets/17-23350d2829-cta-ruslan-pruss.webp",
+      "bytes": 96154
+    },
+    {
+      "file": "assets/source-assets/17-7d2ca45d4d-contacts-man.webp",
+      "bytes": 94912
+    },
+    {
+      "file": "assets/source-assets/18-23350d2829-cta-ruslan-pruss.webp",
+      "bytes": 96154
+    },
+    {
+      "file": "assets/source-assets/18-b5c750adf4-1ae6ebb621690055c8904fa66e54c6ec.png",
+      "bytes": 529828
+    },
+    {
+      "file": "assets/source-assets/19-b5c750adf4-1ae6ebb621690055c8904fa66e54c6ec.png",
+      "bytes": 529828
+    },
+    {
+      "file": "assets/source-assets/19-ee06d770fa-2c979b7710cc799e8745f4951b7af6c4.png",
+      "bytes": 624382
+    },
+    {
+      "file": "assets/source-assets/20-957c14ee74-0707d00a27b0c3c3c37dccd097092612.png",
+      "bytes": 560080
+    },
+    {
+      "file": "assets/source-assets/20-ee06d770fa-2c979b7710cc799e8745f4951b7af6c4.png",
+      "bytes": 624382
+    },
+    {
+      "file": "assets/source-assets/21-957c14ee74-0707d00a27b0c3c3c37dccd097092612.png",
+      "bytes": 560080
+    },
+    {
+      "file": "assets/source-assets/21-a8c31cad0a-25ee31fd8e84085de48ad70d83f97bf3.png",
+      "bytes": 474447
+    },
+    {
+      "file": "assets/source-assets/22-a8c31cad0a-25ee31fd8e84085de48ad70d83f97bf3.png",
+      "bytes": 474447
+    },
+    {
+      "file": "assets/source-assets/22-c216c9e869-f55bb31b66b750c049f3d456aba8fda1.png",
+      "bytes": 388727
+    },
+    {
+      "file": "assets/source-assets/23-b6ed82643b-fa7c0336463cae4dca0c27effe64df8d.png",
+      "bytes": 507981
+    },
+    {
+      "file": "assets/source-assets/23-c216c9e869-f55bb31b66b750c049f3d456aba8fda1.png",
+      "bytes": 388727
+    },
+    {
+      "file": "assets/source-assets/24-b1f7e2f756-2d541c7dfecd754ca846349069948092.png",
+      "bytes": 393508
+    },
+    {
+      "file": "assets/source-assets/24-b6ed82643b-fa7c0336463cae4dca0c27effe64df8d.png",
+      "bytes": 507981
+    },
+    {
+      "file": "assets/source-assets/25-628927b905-192a17c4026d6bca687a655f7eb50ac4.png",
+      "bytes": 463360
+    },
+    {
+      "file": "assets/source-assets/25-b1f7e2f756-2d541c7dfecd754ca846349069948092.png",
+      "bytes": 393508
+    },
+    {
+      "file": "assets/source-assets/26-628927b905-192a17c4026d6bca687a655f7eb50ac4.png",
+      "bytes": 463360
+    },
+    {
+      "file": "assets/source-assets/26-e489725665-11e7ec8e3e7de7379b40ead6256afc1d.png",
+      "bytes": 442688
+    },
+    {
+      "file": "assets/source-assets/27-b81d3ca51b-c0aad7cb0a48d53d48132526dae9a863.png",
+      "bytes": 441348
+    },
+    {
+      "file": "assets/source-assets/27-e489725665-11e7ec8e3e7de7379b40ead6256afc1d.png",
+      "bytes": 442688
+    },
+    {
+      "file": "assets/source-assets/28-b81d3ca51b-c0aad7cb0a48d53d48132526dae9a863.png",
+      "bytes": 441348
+    },
+    {
+      "file": "assets/source-assets/28-efe74fcd8d-34d1736ff53b5fb081532066bedc8dd5.png",
+      "bytes": 434273
+    },
+    {
+      "file": "assets/source-assets/29-cc3cd91926-a41d0d682ade63e81e3b18e326b86603.png",
+      "bytes": 395606
+    },
+    {
+      "file": "assets/source-assets/29-efe74fcd8d-34d1736ff53b5fb081532066bedc8dd5.png",
+      "bytes": 434273
+    },
+    {
+      "file": "assets/source-assets/30-886f63e629-contacts-background.webp",
+      "bytes": 39558
+    },
+    {
+      "file": "assets/source-assets/30-cc3cd91926-a41d0d682ade63e81e3b18e326b86603.png",
+      "bytes": 395606
+    },
+    {
+      "file": "assets/source-assets/31-886f63e629-contacts-background.webp",
+      "bytes": 39558
+    },
+    {
+      "file": "assets/source-assets/31-e76d228093-7ff80ab304dfc98b5ae7562c669daa76.webp",
+      "bytes": 88172
+    },
+    {
+      "file": "assets/source-assets/32-e76d228093-7ff80ab304dfc98b5ae7562c669daa76.webp",
+      "bytes": 88172
+    },
+    {
+      "file": "assets/source-assets/32-f07a7f7f95-old-money-interior.webp",
+      "bytes": 12644
+    },
+    {
+      "file": "assets/source-assets/33-e474c91d08-38354625442181b9dd310d2ad6d696c8.png",
+      "bytes": 2301232
+    },
+    {
+      "file": "assets/source-assets/34-14acad5594-7fbe570016207b60c4b87abce0359c2b.jpg",
+      "bytes": 264325
+    },
+    {
+      "file": "assets/source-assets/35-e474c91d08-38354625442181b9dd310d2ad6d696c8.png",
+      "bytes": 2301232
+    },
+    {
+      "file": "assets/source-assets/35-e9b975955e-37537bbcc39d4cd6cbbfa8bee57ccfe0.jpg",
+      "bytes": 374206
+    },
+    {
+      "file": "assets/source-assets/36-14acad5594-7fbe570016207b60c4b87abce0359c2b.jpg",
+      "bytes": 264325
+    },
+    {
+      "file": "assets/source-assets/36-5202e32cb2-ee04fea766ad35ed0e0cc65912603d6f.jpeg",
+      "bytes": 66234
+    },
+    {
+      "file": "assets/source-assets/37-8dbcaecebc-53627b2d71b98135a8c2258f212b0db5.png",
+      "bytes": 1000259
+    },
+    {
+      "file": "assets/source-assets/37-e9b975955e-37537bbcc39d4cd6cbbfa8bee57ccfe0.jpg",
+      "bytes": 374206
+    },
+    {
+      "file": "assets/source-assets/38-5202e32cb2-ee04fea766ad35ed0e0cc65912603d6f.jpeg",
+      "bytes": 66234
+    },
+    {
+      "file": "assets/source-assets/38-f3e7dc96ee-3cd5b2a4636a91623bf1125e9b389892.jpg",
+      "bytes": 98559
+    },
+    {
+      "file": "assets/source-assets/39-8dbcaecebc-53627b2d71b98135a8c2258f212b0db5.png",
+      "bytes": 1000259
+    },
+    {
+      "file": "assets/source-assets/39-afa60a32dd-3484ecf7d74418f69a0504af4589a7d7.jpg",
+      "bytes": 314196
+    },
+    {
+      "file": "assets/source-assets/40-8bd2ad8d53-2a6f5cdc8f57a2f27dae77f9c4b3c757.jpeg",
+      "bytes": 447177
+    },
+    {
+      "file": "assets/source-assets/40-f3e7dc96ee-3cd5b2a4636a91623bf1125e9b389892.jpg",
+      "bytes": 98559
+    },
+    {
+      "file": "assets/source-assets/41-07d9342901-b138dc69ef90454451aad7e0b03633f8.png",
+      "bytes": 1628419
+    },
+    {
+      "file": "assets/source-assets/41-afa60a32dd-3484ecf7d74418f69a0504af4589a7d7.jpg",
+      "bytes": 314196
+    },
+    {
+      "file": "assets/source-assets/42-3c6cc5fdf3-dcd957119fb45bc4e6bf026b560fe838.jpg",
+      "bytes": 485482
+    },
+    {
+      "file": "assets/source-assets/42-8bd2ad8d53-2a6f5cdc8f57a2f27dae77f9c4b3c757.jpeg",
+      "bytes": 447177
+    },
+    {
+      "file": "assets/source-assets/43-07d9342901-b138dc69ef90454451aad7e0b03633f8.png",
+      "bytes": 1628419
+    },
+    {
+      "file": "assets/source-assets/43-a11f0f9619-02ede6a47f1d7d9037a60bbd94dacd88.jpg",
+      "bytes": 142392
+    },
+    {
+      "file": "assets/source-assets/44-3c6cc5fdf3-dcd957119fb45bc4e6bf026b560fe838.jpg",
+      "bytes": 485482
+    },
+    {
+      "file": "assets/source-assets/44-99c369462d-7488fd27911cb615739d3c4e0d57c4ed.jpg",
+      "bytes": 172746
+    },
+    {
+      "file": "assets/source-assets/45-4df538ff81-6b514d540f5654546c4b1a03a4939179.jpg",
+      "bytes": 113958
+    },
+    {
+      "file": "assets/source-assets/45-a11f0f9619-02ede6a47f1d7d9037a60bbd94dacd88.jpg",
+      "bytes": 142392
+    },
+    {
+      "file": "assets/source-assets/46-9018d35c9b-7e61da0b466c54e69065ec03ac1fa43d.jpg",
+      "bytes": 135235
+    },
+    {
+      "file": "assets/source-assets/46-99c369462d-7488fd27911cb615739d3c4e0d57c4ed.jpg",
+      "bytes": 172746
+    },
+    {
+      "file": "assets/source-assets/47-4df538ff81-6b514d540f5654546c4b1a03a4939179.jpg",
+      "bytes": 113958
+    },
+    {
+      "file": "assets/source-assets/47-7fb5e2504d-4c47aeb08f07b7fa3d3ce3ce4250a3c6.jpg",
+      "bytes": 1387817
+    },
+    {
+      "file": "assets/source-assets/48-9018d35c9b-7e61da0b466c54e69065ec03ac1fa43d.jpg",
+      "bytes": 135235
+    },
+    {
+      "file": "assets/source-assets/48-de66e1c251-ai-background.webp",
+      "bytes": 70230
+    },
+    {
+      "file": "assets/source-assets/49-7d2ca45d4d-contacts-man.webp",
+      "bytes": 94912
+    },
+    {
+      "file": "assets/source-assets/49-7fb5e2504d-4c47aeb08f07b7fa3d3ce3ce4250a3c6.jpg",
+      "bytes": 1387817
+    },
+    {
+      "file": "assets/source-assets/50-23350d2829-cta-ruslan-pruss.webp",
+      "bytes": 96154
+    },
+    {
+      "file": "assets/source-assets/50-de66e1c251-ai-background.webp",
+      "bytes": 70230
+    },
+    {
+      "file": "assets/source-assets/51-61a013ad14-32bb1c09e2de90b389dcf4bd8cfa3802.png",
+      "bytes": 911339
+    },
+    {
+      "file": "assets/source-assets/51-7d2ca45d4d-contacts-man.webp",
+      "bytes": 94912
+    },
+    {
+      "file": "assets/source-assets/52-078f1c295c-8b67d18cf8e818fb793c259ffb3fed78.png",
+      "bytes": 1006841
+    },
+    {
+      "file": "assets/source-assets/52-23350d2829-cta-ruslan-pruss.webp",
+      "bytes": 96154
+    },
+    {
+      "file": "assets/source-assets/53-61a013ad14-32bb1c09e2de90b389dcf4bd8cfa3802.png",
+      "bytes": 911339
+    },
+    {
+      "file": "assets/source-assets/53-80aed647c2-f65d8dbc17c559c5df2fd4ac4d1c0c94.png",
+      "bytes": 855034
+    },
+    {
+      "file": "assets/source-assets/54-078f1c295c-8b67d18cf8e818fb793c259ffb3fed78.png",
+      "bytes": 1006841
+    },
+    {
+      "file": "assets/source-assets/54-c1e891b2e1-f19bce520e61659e0feb1844a98319ae.png",
+      "bytes": 262880
+    },
+    {
+      "file": "assets/source-assets/55-6ff3cd0ca4-764e3d4bccb6027b30366e2f2bf025d2.jpg",
+      "bytes": 43053
+    },
+    {
+      "file": "assets/source-assets/55-80aed647c2-f65d8dbc17c559c5df2fd4ac4d1c0c94.png",
+      "bytes": 855034
+    },
+    {
+      "file": "assets/source-assets/56-c1e891b2e1-f19bce520e61659e0feb1844a98319ae.png",
+      "bytes": 262880
+    },
+    {
+      "file": "assets/source-assets/56-df6283a98d-32b04ebf9a2af2e54c68f782cb58f3f9.png",
+      "bytes": 228335
+    },
+    {
+      "file": "assets/source-assets/57-6ff3cd0ca4-764e3d4bccb6027b30366e2f2bf025d2.jpg",
+      "bytes": 43053
+    },
+    {
+      "file": "assets/source-assets/57-886f63e629-contacts-background.webp",
+      "bytes": 39558
+    },
+    {
+      "file": "assets/source-assets/58-66c14d3d33-4d1303ca04ecaaa9b71128001a05fe93.jpg",
+      "bytes": 48855
+    },
+    {
+      "file": "assets/source-assets/58-df6283a98d-32b04ebf9a2af2e54c68f782cb58f3f9.png",
+      "bytes": 228335
+    },
+    {
+      "file": "assets/source-assets/59-83b4f3d0f5-98fcda8000395f94e56615cb37cc0552.jpg",
+      "bytes": 82503
+    },
+    {
+      "file": "assets/source-assets/59-886f63e629-contacts-background.webp",
+      "bytes": 39558
+    },
+    {
+      "file": "assets/source-assets/60-2942a9615b-fd25457afab1963a5533d7cd147a60f8.jpg",
+      "bytes": 68568
+    },
+    {
+      "file": "assets/source-assets/60-66c14d3d33-4d1303ca04ecaaa9b71128001a05fe93.jpg",
+      "bytes": 48855
+    },
+    {
+      "file": "assets/source-assets/61-4b55877070-4302831025e1d832e89a0d6.51773830_e7cfb1ae7e_1920.jpg",
+      "bytes": 33145
+    },
+    {
+      "file": "assets/source-assets/61-83b4f3d0f5-98fcda8000395f94e56615cb37cc0552.jpg",
+      "bytes": 82503
+    },
+    {
+      "file": "assets/source-assets/62-2942a9615b-fd25457afab1963a5533d7cd147a60f8.jpg",
+      "bytes": 68568
+    },
+    {
+      "file": "assets/source-assets/62-b1a38d8722-328645802601c0796034055.62190440_7d58f34253_1920.jpg",
+      "bytes": 47045
+    },
+    {
+      "file": "assets/source-assets/63-4b55877070-4302831025e1d832e89a0d6.51773830_e7cfb1ae7e_1920.jpg",
+      "bytes": 33145
+    },
+    {
+      "file": "assets/source-assets/63-fcc2abc9b3-9937090165e8b3a91d5cac2.30337839_d7e0f65378_1024.jpg",
+      "bytes": 101455
+    },
+    {
+      "file": "assets/source-assets/64-b1a38d8722-328645802601c0796034055.62190440_7d58f34253_1920.jpg",
+      "bytes": 47045
+    },
+    {
+      "file": "assets/source-assets/65-fcc2abc9b3-9937090165e8b3a91d5cac2.30337839_d7e0f65378_1024.jpg",
+      "bytes": 101455
+    },
+    {
+      "file": "brand-filters.css",
+      "bytes": 3732
+    },
+    {
+      "file": "brand-filters.js",
+      "bytes": 2691
+    },
+    {
+      "file": "city-map-fullscreen.css",
+      "bytes": 8228
+    },
+    {
+      "file": "city-map-fullscreen.js",
+      "bytes": 15026
+    },
+    {
+      "file": "city-map-projects.js",
+      "bytes": 6095
+    },
+    {
+      "file": "city-reference-extras.js",
+      "bytes": 2126
+    },
+    {
+      "file": "filters-modal.css",
+      "bytes": 2121
+    },
+    {
+      "file": "filters-modal.js",
+      "bytes": 8960
+    },
+    {
+      "file": "filters-source.css",
+      "bytes": 30176
+    },
+    {
+      "file": "filters-template.js",
+      "bytes": 42047
+    },
+    {
+      "file": "footer-template.js",
+      "bytes": 17746
+    },
+    {
+      "file": "node-city.css",
+      "bytes": 2691
+    },
+    {
+      "file": "node-launch.css",
+      "bytes": 6743
+    },
+    {
+      "file": "node-launch.js",
+      "bytes": 12228
+    },
+    {
+      "file": "node-listing.css",
+      "bytes": 10920
+    },
+    {
+      "file": "node-modal.js",
+      "bytes": 7695
+    },
+    {
+      "file": "node-reference.js",
+      "bytes": 18993
+    },
+    {
+      "file": "node-ui.css",
+      "bytes": 37355
+    },
+    {
+      "file": "owner-footer.css",
+      "bytes": 2150
+    },
+    {
+      "file": "quick-filters.css",
+      "bytes": 3435
+    },
+    {
+      "file": "quick-filters.js",
+      "bytes": 10787
+    },
+    {
+      "file": "standalone/index.html",
+      "bytes": 1494268
+    }
+  ],
+  "recovery": "Previous committed versions remain in Git history",
+  "removedBytes": 48985826
+}

@@ -1,0 +1,693 @@
+{
+  "base": "http://127.0.0.1:4187/",
+  "checks": [
+    {
+      "entry": "index.html",
+      "width": 320,
+      "overflow": false,
+      "broken": [],
+      "geometry": {
+        ".catalog-hero": {
+          "width": 305,
+          "height": 684,
+          "top": 0
+        },
+        ".catalog-best-offers": {
+          "width": 305,
+          "height": 595.390625,
+          "top": 684
+        },
+        ".catalog-grid": {
+          "width": 305,
+          "height": 3085.265625,
+          "top": 1907.171875
+        },
+        ".catalog-mode-toolbar": {
+          "width": 274.59375,
+          "height": 307.1875,
+          "top": 2072.34375
+        },
+        ".catalog-intro": {
+          "width": 305,
+          "height": 548.0625,
+          "top": 4992.4375
+        },
+        ".catalog-consultation": {
+          "width": 305,
+          "height": 780.640625,
+          "top": 5540.5
+        },
+        ".catalog-contact": {
+          "width": 305,
+          "height": 686.578125,
+          "top": 12338.515625
+        },
+        ".site-footer": {
+          "width": 305,
+          "height": 1700.875,
+          "top": 13025.09375
+        }
+      }
+    },
+    {
+      "entry": "index.html",
+      "width": 390,
+      "overflow": false,
+      "broken": [],
+      "geometry": {
+        ".catalog-hero": {
+          "width": 375,
+          "height": 684,
+          "top": 0
+        },
+        ".catalog-best-offers": {
+          "width": 375,
+          "height": 595.390625,
+          "top": 684
+        },
+        ".catalog-grid": {
+          "width": 375,
+          "height": 3191.0625,
+          "top": 1862.171875
+        },
+        ".catalog-mode-toolbar": {
+          "width": 341.84375,
+          "height": 307.1875,
+          "top": 2000.953125
+        },
+        ".catalog-intro": {
+          "width": 375,
+          "height": 543.796875,
+          "top": 5053.234375
+        },
+        ".catalog-consultation": {
+          "width": 375,
+          "height": 743.453125,
+          "top": 5597.03125
+        },
+        ".catalog-contact": {
+          "width": 375,
+          "height": 670.390625,
+          "top": 12191.734375
+        },
+        ".site-footer": {
+          "width": 375,
+          "height": 1681.28125,
+          "top": 12862.125
+        }
+      }
+    },
+    {
+      "entry": "index.html",
+      "width": 540,
+      "overflow": false,
+      "broken": [],
+      "geometry": {
+        ".catalog-hero": {
+          "width": 525,
+          "height": 684,
+          "top": 0
+        },
+        ".catalog-best-offers": {
+          "width": 525,
+          "height": 595.390625,
+          "top": 684
+        },
+        ".catalog-grid": {
+          "width": 525,
+          "height": 3731.34375,
+          "top": 1839.671875
+        },
+        ".catalog-mode-toolbar": {
+          "width": 485.96875,
+          "height": 307,
+          "top": 1978.453125
+        },
+        ".catalog-intro": {
+          "width": 525,
+          "height": 513.5625,
+          "top": 5571.015625
+        },
+        ".catalog-consultation": {
+          "width": 525,
+          "height": 743.453125,
+          "top": 6084.578125
+        },
+        ".catalog-contact": {
+          "width": 525,
+          "height": 670.390625,
+          "top": 12312.40625
+        },
+        ".site-footer": {
+          "width": 525,
+          "height": 1681.28125,
+          "top": 12982.796875
+        }
+      }
+    },
+    {
+      "entry": "index.html",
+      "width": 541,
+      "overflow": false,
+      "broken": [],
+      "geometry": {
+        ".catalog-hero": {
+          "width": 526,
+          "height": 644,
+          "top": 0
+        },
+        ".catalog-best-offers": {
+          "width": 526,
+          "height": 733.09375,
+          "top": 644
+        },
+        ".catalog-grid": {
+          "width": 526,
+          "height": 3794.234375,
+          "top": 2053.78125
+        },
+        ".catalog-mode-toolbar": {
+          "width": 486.90625,
+          "height": 320,
+          "top": 2300.0625
+        },
+        ".catalog-intro": {
+          "width": 526,
+          "height": 737.203125,
+          "top": 5848.015625
+        },
+        ".catalog-consultation": {
+          "width": 526,
+          "height": 797.96875,
+          "top": 6585.21875
+        },
+        ".catalog-contact": {
+          "width": 526,
+          "height": 1049.265625,
+          "top": 14088.40625
+        },
+        ".site-footer": {
+          "width": 526,
+          "height": 2039.34375,
+          "top": 15137.671875
+        }
+      }
+    },
+    {
+      "entry": "index.html",
+      "width": 768,
+      "overflow": false,
+      "broken": [],
+      "geometry": {
+        ".catalog-hero": {
+          "width": 753,
+          "height": 644,
+          "top": 0
+        },
+        ".catalog-best-offers": {
+          "width": 753,
+          "height": 733.09375,
+          "top": 644
+        },
+        ".catalog-grid": {
+          "width": 753,
+          "height": 3814.828125,
+          "top": 1987.78125
+        },
+        ".catalog-mode-toolbar": {
+          "width": 705.03125,
+          "height": 268,
+          "top": 2188.46875
+        },
+        ".catalog-intro": {
+          "width": 753,
+          "height": 836.09375,
+          "top": 5802.609375
+        },
+        ".catalog-consultation": {
+          "width": 753,
+          "height": 797.96875,
+          "top": 6638.703125
+        },
+        ".catalog-contact": {
+          "width": 753,
+          "height": 1049.265625,
+          "top": 13654.609375
+        },
+        ".site-footer": {
+          "width": 753,
+          "height": 2039.34375,
+          "top": 14703.875
+        }
+      }
+    },
+    {
+      "entry": "index.html",
+      "width": 1024,
+      "overflow": false,
+      "broken": [],
+      "geometry": {
+        ".catalog-hero": {
+          "width": 1009,
+          "height": 644,
+          "top": 0
+        },
+        ".catalog-best-offers": {
+          "width": 1009,
+          "height": 741.09375,
+          "top": 644
+        },
+        ".catalog-grid": {
+          "width": 1009,
+          "height": 4314.890625,
+          "top": 1962.78125
+        },
+        ".catalog-mode-toolbar": {
+          "width": 927.25,
+          "height": 268,
+          "top": 2163.46875
+        },
+        ".catalog-intro": {
+          "width": 1009,
+          "height": 759.984375,
+          "top": 6277.671875
+        },
+        ".catalog-consultation": {
+          "width": 1009,
+          "height": 797.96875,
+          "top": 7037.65625
+        },
+        ".catalog-contact": {
+          "width": 1009,
+          "height": 918,
+          "top": 13931.421875
+        },
+        ".site-footer": {
+          "width": 1009,
+          "height": 2039.34375,
+          "top": 14849.421875
+        }
+      }
+    },
+    {
+      "entry": "index.html",
+      "width": 1440,
+      "overflow": false,
+      "broken": [],
+      "geometry": {
+        ".catalog-hero": {
+          "width": 1425,
+          "height": 644,
+          "top": 0
+        },
+        ".catalog-best-offers": {
+          "width": 1425,
+          "height": 787.09375,
+          "top": 644
+        },
+        ".catalog-grid": {
+          "width": 1425,
+          "height": 2897.421875,
+          "top": 2005.78125
+        },
+        ".catalog-mode-toolbar": {
+          "width": 1288.34375,
+          "height": 127,
+          "top": 2229.46875
+        },
+        ".catalog-intro": {
+          "width": 1425,
+          "height": 497.109375,
+          "top": 4903.203125
+        },
+        ".catalog-consultation": {
+          "width": 1425,
+          "height": 845.96875,
+          "top": 5400.3125
+        },
+        ".catalog-contact": {
+          "width": 1425,
+          "height": 640,
+          "top": 10450.203125
+        },
+        ".site-footer": {
+          "width": 1425,
+          "height": 1218.5625,
+          "top": 11090.203125
+        }
+      }
+    },
+    {
+      "entry": "index.html",
+      "width": 1920,
+      "overflow": false,
+      "broken": [],
+      "geometry": {
+        ".catalog-hero": {
+          "width": 1905,
+          "height": 694,
+          "top": 0
+        },
+        ".catalog-best-offers": {
+          "width": 1905,
+          "height": 824.09375,
+          "top": 694
+        },
+        ".catalog-grid": {
+          "width": 1905,
+          "height": 3345.3125,
+          "top": 2132.984375
+        },
+        ".catalog-mode-toolbar": {
+          "width": 1705.03125,
+          "height": 127,
+          "top": 2371.875
+        },
+        ".catalog-intro": {
+          "width": 1905,
+          "height": 565.640625,
+          "top": 5478.296875
+        },
+        ".catalog-consultation": {
+          "width": 1905,
+          "height": 940,
+          "top": 6043.9375
+        },
+        ".catalog-contact": {
+          "width": 1905,
+          "height": 700,
+          "top": 11587.84375
+        },
+        ".site-footer": {
+          "width": 1905,
+          "height": 1271.15625,
+          "top": 12287.84375
+        }
+      }
+    },
+    {
+      "entry": "index.html",
+      "width": 2560,
+      "overflow": false,
+      "broken": [],
+      "geometry": {
+        ".catalog-hero": {
+          "width": 2545,
+          "height": 694,
+          "top": 0
+        },
+        ".catalog-best-offers": {
+          "width": 2545,
+          "height": 824.09375,
+          "top": 694
+        },
+        ".catalog-grid": {
+          "width": 2545,
+          "height": 3360.25,
+          "top": 2132.984375
+        },
+        ".catalog-mode-toolbar": {
+          "width": 1720,
+          "height": 127,
+          "top": 2371.875
+        },
+        ".catalog-intro": {
+          "width": 2545,
+          "height": 569.625,
+          "top": 5493.234375
+        },
+        ".catalog-consultation": {
+          "width": 2545,
+          "height": 940,
+          "top": 6062.859375
+        },
+        ".catalog-contact": {
+          "width": 2545,
+          "height": 700,
+          "top": 11611.28125
+        },
+        ".site-footer": {
+          "width": 2545,
+          "height": 1271.15625,
+          "top": 12311.28125
+        }
+      }
+    },
+    {
+      "entry": "blocks/header",
+      "width": 390,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "entry": "blocks/header",
+      "width": 1440,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "entry": "blocks/sticky-nav",
+      "width": 390,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "entry": "blocks/sticky-nav",
+      "width": 1440,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "entry": "blocks/hero",
+      "width": 390,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "entry": "blocks/hero",
+      "width": 1440,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "entry": "blocks/start-sales",
+      "width": 390,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "entry": "blocks/start-sales",
+      "width": 1440,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "entry": "blocks/map",
+      "width": 390,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "entry": "blocks/map",
+      "width": 1440,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "entry": "blocks/listing",
+      "width": 390,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "entry": "blocks/listing",
+      "width": 1440,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "entry": "blocks/brand-intro",
+      "width": 390,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "entry": "blocks/brand-intro",
+      "width": 1440,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "entry": "blocks/cta-central",
+      "width": 390,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "entry": "blocks/cta-central",
+      "width": 1440,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "entry": "blocks/directions",
+      "width": 390,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "entry": "blocks/directions",
+      "width": 1440,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "entry": "blocks/news",
+      "width": 390,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "entry": "blocks/news",
+      "width": 1440,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "entry": "blocks/faq",
+      "width": 390,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "entry": "blocks/faq",
+      "width": 1440,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "entry": "blocks/cta-bottom",
+      "width": 390,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "entry": "blocks/cta-bottom",
+      "width": 1440,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "entry": "blocks/footer",
+      "width": 390,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "entry": "blocks/footer",
+      "width": 1440,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "entry": "blocks/floating-expert",
+      "width": 390,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "entry": "blocks/floating-expert",
+      "width": 1440,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "entry": "blocks/request-modal",
+      "width": 390,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "entry": "blocks/request-modal",
+      "width": 1440,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "entry": "blocks/filters-modal",
+      "width": 390,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "entry": "blocks/filters-modal",
+      "width": 1440,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "entry": "blocks/quick-filter-dropdowns",
+      "width": 390,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "entry": "blocks/quick-filter-dropdowns",
+      "width": 1440,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "entry": "blocks/card-start-sales",
+      "width": 390,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "entry": "blocks/card-start-sales",
+      "width": 1440,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "entry": "blocks/card-project",
+      "width": 390,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "entry": "blocks/card-project",
+      "width": 1440,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "entry": "blocks/card-lot",
+      "width": 390,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "entry": "blocks/card-lot",
+      "width": 1440,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "entry": "blocks/map-panel",
+      "width": 390,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "entry": "blocks/map-panel",
+      "width": 1440,
+      "overflow": false,
+      "broken": []
+    }
+  ],
+  "errors": [],
+  "externalResources": [],
+  "missingResources": [],
+  "parity": []
+}

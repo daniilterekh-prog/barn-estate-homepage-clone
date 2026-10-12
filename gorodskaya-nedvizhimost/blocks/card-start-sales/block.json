@@ -1,0 +1,9 @@
+{
+  "id": "city-card-start-sales",
+  "desktop": "fragment.html",
+  "mobile": "mobile.html",
+  "styles": "styles.css",
+  "assets": "../../assets/",
+  "runtime": "../_shared/preview.js",
+  "data": "Moscow city snapshot; no API"
+}

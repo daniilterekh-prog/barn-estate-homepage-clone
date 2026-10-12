@@ -1,0 +1,89 @@
+{
+  "node": "city",
+  "blocks": [
+    {
+      "id": "city-header",
+      "path": "header"
+    },
+    {
+      "id": "city-sticky-nav",
+      "path": "sticky-nav"
+    },
+    {
+      "id": "city-hero",
+      "path": "hero"
+    },
+    {
+      "id": "city-start-sales",
+      "path": "start-sales"
+    },
+    {
+      "id": "city-map",
+      "path": "map"
+    },
+    {
+      "id": "city-listing",
+      "path": "listing"
+    },
+    {
+      "id": "city-brand-intro",
+      "path": "brand-intro"
+    },
+    {
+      "id": "city-cta-central",
+      "path": "cta-central"
+    },
+    {
+      "id": "city-directions",
+      "path": "directions"
+    },
+    {
+      "id": "city-news",
+      "path": "news"
+    },
+    {
+      "id": "city-faq",
+      "path": "faq"
+    },
+    {
+      "id": "city-cta-bottom",
+      "path": "cta-bottom"
+    },
+    {
+      "id": "city-footer",
+      "path": "footer"
+    },
+    {
+      "id": "city-floating-expert",
+      "path": "floating-expert"
+    },
+    {
+      "id": "city-request-modal",
+      "path": "request-modal"
+    },
+    {
+      "id": "city-filters-modal",
+      "path": "filters-modal"
+    },
+    {
+      "id": "city-quick-filter-dropdowns",
+      "path": "quick-filter-dropdowns"
+    },
+    {
+      "id": "city-card-start-sales",
+      "path": "card-start-sales"
+    },
+    {
+      "id": "city-card-project",
+      "path": "card-project"
+    },
+    {
+      "id": "city-card-lot",
+      "path": "card-lot"
+    },
+    {
+      "id": "city-map-panel",
+      "path": "map-panel"
+    }
+  ]
+}

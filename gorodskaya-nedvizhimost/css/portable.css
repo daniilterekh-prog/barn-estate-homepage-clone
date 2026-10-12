@@ -1,0 +1,14 @@
+/* Only plumbing for the packaged static map and native standalone controls. */
+.city-static-map {display:block;width:100%;height:100%;object-fit:cover;object-position:center;}
+.floating-expert[hidden] {display:none!important;}
+/* Native Splide no longer supplies its containing height after vendor removal. */
+.catalog-best-offers .splide__list {height:var(--start-sales-card-height,438px);}
+.catalog-best-offers .splide__track {height:auto;}
+.catalog-best-offers .splide__slide {height:auto;}
+.news-section__slider .splide__slide {width:calc(33.333333% - 26.666667px)!important;margin-right:40px!important;}
+@media (min-width:561px) and (max-width:1024px) {
+  .news-section__slider .splide__slide {width:calc(50% - 20px)!important;}
+}
+@media (max-width:560px) {
+  .news-section__slider .splide__slide {width:100%!important;margin-right:24px!important;}
+}

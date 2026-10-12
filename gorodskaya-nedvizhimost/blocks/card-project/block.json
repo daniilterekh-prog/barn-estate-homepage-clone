@@ -1,0 +1,9 @@
+{
+  "id": "city-card-project",
+  "desktop": "fragment.html",
+  "mobile": "mobile.html",
+  "styles": "styles.css",
+  "assets": "../../assets/",
+  "runtime": "../_shared/preview.js",
+  "data": "Moscow city snapshot; no API"
+}

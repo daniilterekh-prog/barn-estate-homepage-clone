@@ -6,7 +6,7 @@ const base=process.argv[2]||'http://127.0.0.1:4186';
   try {
     for(const width of [320,390,540,768,1024,1440,2560]){
       const page=await browser.newPage({viewport:{width,height:900}});
-      await page.goto(base+'/gorodskaya-nedvizhimost/',{waitUntil:'domcontentloaded'});
+      await page.goto(process.env.CITY_BASE_URL||base+'/gorodskaya-nedvizhimost/',{waitUntil:'domcontentloaded'});
       await page.waitForSelector('.city-reference-synced',{state:'attached'});
       await page.evaluate(()=>document.fonts.ready);
       for(const mode of ['project','lot']){
