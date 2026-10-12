@@ -30,6 +30,12 @@ const assert = require('node:assert/strict');
         return [captions[0].top - switchRect.bottom, checkboxText.top - Math.max(...captions.map(rect => rect.bottom))];
       });
       assert.ok(Math.abs(gaps[0] - gaps[1]) < 1, `Matching visible text gaps: ${gaps}`);
+      if (width <= 540) {
+        const bottom = (await listing.boundingBox()).y + (await listing.boundingBox()).height;
+        for (const selector of ['.catalog-grid__sort', '.catalog-mode-detailed-filters']) {
+          assert.ok((await page.locator(selector).boundingBox()).y >= bottom, 'Mobile sorting and detailed filters below checkboxes, no overlap');
+        }
+      }
       for (const label of await listing.locator('label').all()) {
         const box = await label.boundingBox();
         assert.ok(box.x >= 0 && box.x + box.width <= width, 'Label fits viewport');
