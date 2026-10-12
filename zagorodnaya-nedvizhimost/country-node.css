@@ -1,0 +1,39 @@
+/* Country data exceptions only. Design contracts are copied from /kurortnaya/. */
+.country-node-page .catalog-grid__item[hidden],
+.country-node-page .country-catalog-empty[hidden] { display:none!important; }
+.country-node-page .catalog-grid__list { align-items:stretch; }
+.country-node-page .apartment-card--catalog { height:100%; }
+.country-node-page .apartment-card--catalog .apartment-card__body { flex:1; }
+.country-node-page .apartment-card--catalog .apartment-card__address { order:0; }
+html body.country-node-page .apartment-card--catalog :is(.apartment-card__call-btn,.apartment-card__detail-btn)[class] {
+  font-family:"Tilda Sans","Tilda Sans Fallback",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  line-height:1;
+}
+.country-node-page .catalog-mode-filters .catalog-quick-filters__chevron {
+  border-right:1px solid #4f4d49; border-bottom:1px solid #4f4d49; width:10px; height:10px;
+}
+.country-node-page .catalog-best-offers__title { color:#1e1e1e; }
+.country-node-page .catalog-best-offers__slider-row { margin-top:0; }
+.country-node-page .catalog-contact__expert-photo img,
+.country-node-page .floating-expert__avatar img { object-fit:cover; object-position:center; }
+@media (min-width:769px) {
+  html body.country-node-page .catalog-consultation__image[class] {
+    object-fit:cover; object-position:right bottom;
+    mask-image:linear-gradient(90deg,#000 0%,#000 82%,transparent 100%);
+  }
+}
+@media (min-width:1025px) {
+  .country-node-page .departments-section__item:nth-child(1),
+  .country-node-page .departments-section__item:nth-child(2) { grid-column:span 3; }
+  .country-node-page .departments-section__item:nth-child(n+3) { grid-column:span 2; }
+}
+.country-filter-dialog { width:min(440px,calc(100vw - 32px)); padding:32px; border:1px solid #e4e4e4; border-radius:1px; font-family:inherit; color:#1e1e1e; }
+.country-filter-dialog::backdrop { background:#0008; }
+.country-filter-dialog h2 { margin:0 0 24px; font-size:24px; font-weight:300; }
+.country-filter-dialog label { display:grid; gap:8px; margin-bottom:20px; }
+.country-filter-dialog select { width:100%; min-height:50px; padding:10px; border:1px solid #e4e4e4; font:inherit; background:white; }
+.country-filter-dialog__actions { display:flex; gap:12px; }
+.country-filter-dialog__actions button { min-height:50px; padding:12px 20px; font:inherit; cursor:pointer; border:1px solid #e4e4e4; background:white; }
+.country-filter-dialog__actions button[type="submit"] { background:#8b1d25; color:white; border-color:#8b1d25; }
+.country-catalog-empty { padding:32px 0; color:#4f4d49; }
+.country-node-page :focus-visible { outline:2px solid #8b1d25; outline-offset:3px; }

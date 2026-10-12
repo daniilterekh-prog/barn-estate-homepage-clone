@@ -37,6 +37,7 @@
     carousel.on('mounted move updated', update);
     carousel.on('resize', () => requestAnimationFrame(() => carousel.refresh()));
     carousel.mount();
+    if (selector === '.catalog-best-offers__slider') window.countryBestCarousel = carousel;
     buttons[0]?.addEventListener('click', () => carousel.go('<'));
     buttons[1]?.addEventListener('click', () => carousel.go('>'));
     update();

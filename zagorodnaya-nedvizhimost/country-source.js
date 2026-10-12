@@ -22,6 +22,7 @@
     if (!list) return;
     let expanded = false;
     const update = () => list.querySelectorAll('.catalog-grid__item').forEach((item, index) => {
+      if (list.dataset.nodeReady) return;
       item.style.display = window.innerWidth < 768 && !expanded && index >= 5 ? 'none' : '';
     });
     document.querySelector('.catalog-grid__more')?.addEventListener('click', () => { expanded = true; update(); });
@@ -146,6 +147,7 @@
   const pageNav = document.querySelector('.catalog-page-nav');
   let pageNavWasVisible = false;
   const syncHeader = () => {
+    if (document.body.classList.contains('country-node-page')) return;
     header?.classList.toggle('site-header--scrolled', window.scrollY > 36);
     const visible = window.scrollY > 320;
     pageNav?.classList.toggle('catalog-page-nav--visible', visible);
@@ -181,6 +183,7 @@
     document.documentElement.style.setProperty('--catalog-sticky-nav-height', `${pageNav?.offsetHeight || 0}px`);
   };
   const syncPageNav = () => {
+    if (document.body.classList.contains('country-node-page')) return;
     if (navigating) return;
     measurePageNav();
     const marker = window.scrollY + navOffset();
@@ -250,5 +253,5 @@
   }));
   document.querySelectorAll('.apartment-card__favorite').forEach((button) => button.addEventListener('click', () => { const active = button.getAttribute('aria-pressed') !== 'true'; button.setAttribute('aria-pressed', String(active)); button.classList.toggle('is-active', active); }));
   document.querySelectorAll('.catalog-best-offers__nav-btn, .news-section__nav-btn').forEach((button) => button.addEventListener('click', () => button.closest('section')?.querySelector('.splide__track, .catalog-best-offers__slider-wrap')?.scrollBy({ left: button.classList.contains('catalog-best-offers__nav-btn--prev') ? -520 : 520, behavior: 'smooth' })));
-  document.querySelectorAll('.catalog-consultation__form, .catalog-contact__form').forEach((form) => form.addEventListener('submit', (event) => { event.preventDefault(); const submit = form.querySelector('button[type="submit"]'); if (submit) submit.textContent = 'Заявка отправлена'; }));
+  document.querySelectorAll('.catalog-consultation__form, .catalog-contact__form').forEach((form) => form.addEventListener('submit', (event) => { event.preventDefault(); if (!form.reportValidity()) return; let status = form.querySelector('[role="status"]'); if (!status) { status = document.createElement('p'); status.setAttribute('role', 'status'); form.append(status); } status.textContent = 'Онлайн-отправка пока не подключена. Свяжись с нами по телефону +7 (495) 182-50-79.'; }));
 })();
