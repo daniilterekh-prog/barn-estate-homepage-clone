@@ -42,6 +42,12 @@ CAPTURE_TOOLKIT=/path/to/web-capture-toolkit COUNTRY_LOCAL_URL=http://127.0.0.1:
 
 ## История исходной копии (до нового дизайна)
 
+### Белые подробные фильтры карты — 12 октября 2026
+
+Источник: https://front.barnes.vsavr.ru/zagorodnaya-nedvizhimost/ — DOM и CSS белой правой панели взяты из открытого состояния карты. `map-filter-template.js`, `map-filter-drawer.css` и `map-filter-drawer.js` изолированы от тёмных фильтров херо/листинга; значения общие. Новых библиотек нет. На ширинах 541–940 px панель занимает всю ширину: оригинальная формула `100% - 420px` обрезала поля на узких планшетах. На десктопе исходная ширина — 520 px. Карта остаётся открытой после крестика или применения фильтров; Escape в нативном fullscreen может также закрыть fullscreen средствами браузера.
+
+Проверка: `CAPTURE_TOOLKIT=/path/to/web-capture-toolkit node scripts/check-country-map-drawer.mjs`. Тест проверяет 9 ширин 320–2560 px, нативный fullscreen и резервный режим, возврат фокуса, размеры/шрифты и строгие снимки панели на 390/1440 px. Общие значения и клавиатура дополнительно проверяются `scripts/check-country-full-filters.mjs`.
+
 Ниже описан предыдущий этап. `verification/2026-10-12.json` — исторический отчёт сравнения с barn-estate.ru, не проверка текущего дизайна узла.
 
 Источник: https://barn-estate.ru/zagorodnaya-nedvizhimost/ . Повторная сверка: 12 октября 2026 года.

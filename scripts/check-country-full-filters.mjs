@@ -44,6 +44,7 @@ try {
         const modal=document.querySelector('.hero-filter-modal');
         return modal && ![...modal.classList].some(name=>name.includes('-enter-'));
       });
+      await reference.waitForTimeout(300);
       await reference.evaluate(()=>document.fonts.ready);
       const expectedRect=await reference.locator('.hero-filter-modal__dialog').evaluate(e=>e.getBoundingClientRect().toJSON());
       for (const key of ['x','y','width','height']) assert.ok(Math.abs(geometry.rect[key]-expectedRect[key])<0.01,`${width}px ${key} geometry differs`);
@@ -63,8 +64,8 @@ try {
     await page.keyboard.press('Escape');
     await page.locator('[data-country-mode="lot"]').click();
     await page.locator('.country-map-filters').click();
-    await page.locator('[name="priceMax"]').fill('100000000');
-    await page.locator('.hero-filter-modal__apply').click();
+    await page.locator('.hero-filter-modal:visible [name="priceMax"]').fill('100000000');
+    await page.locator('.hero-filter-modal:visible .hero-filter-modal__apply').click();
     assert.equal(await page.locator('.catalog-grid__item:not([hidden])').count(),4);
     await page.locator('.catalog-mode-toolbar > .catalog-mode-detailed-filters').click();
     assert.equal(await page.locator('[name="priceMax"]').inputValue(),'100000000');
