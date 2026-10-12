@@ -2,6 +2,13 @@
 (() => {
   const one = (selector, root = document) => root.querySelector(selector);
   const all = (selector, root = document) => [...root.querySelectorAll(selector)];
+  // Use the original portrait: the imported 360px thumbnail blurs when cropped.
+  all('.catalog-consultation__mobile-photo img, .catalog-contact__mobile-photo img, .catalog-contact__expert-photo img, .floating-expert__avatar img').forEach((portrait) => {
+    portrait.removeAttribute('srcset');
+    portrait.src = 'assets/alina-medvedeva-popup.png';
+    portrait.width = 1734;
+    portrait.height = 907;
+  });
   const consultationImage=one('.catalog-consultation__image');
   if(consultationImage){consultationImage.src='assets/cta-alina-unified-v2.png';consultationImage.width=1942;consultationImage.height=809;document.body.classList.add('commercial-unified-cta');}
   const heroImage = one('.catalog-hero__image');
