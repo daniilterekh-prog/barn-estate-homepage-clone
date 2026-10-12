@@ -5,6 +5,9 @@
   if(!list||!header||!sort)return;
   const facts=(entries,kind)=>{const dl=document.createElement('dl');dl.className='listing-card-facts listing-card-facts--'+kind;dl.setAttribute('aria-label','Основные характеристики');entries.forEach(([label,value])=>{const item=document.createElement('div');item.className='listing-card-fact';const dt=document.createElement('dt'),dd=document.createElement('dd');dt.className='listing-card-fact__label';dd.className='listing-card-fact__value';dt.textContent=label;dd.textContent=value||'По запросу';item.append(dt,dd);dl.append(item);});return dl;};
   const lots=all('.catalog-grid__item',list);
+  // Countries are tied to the existing objects, never guessed from descriptions.
+  const countriesByName={'Paris-75017':'Франция','Almis La Mer Dragos':'Турция','Marrakech':'Марокко','Lisboa':'Португалия','Saint-Maur-des-Fossés-94100':'Франция','Уникальная резиденция с прекрасным видом - Колонаки':'Греция','Luxembourg':'Люксембург','Megève-74120':'Франция','Benahavís':'Испания','Sciez-74140':'Франция'};
+  const countriesByCity={'Стамбул':'Турция','Дубай':'ОАЭ','Салала':'Оман','Ереван':'Армения'};
   const originalTemplate=lots[0].cloneNode(true);
   lots.forEach(item=>{
     item.dataset.listingMode='secondary';item.hidden=true;
@@ -12,7 +15,8 @@
     const stats=all('.apartment-card__stat',body).map(e=>[one('.apartment-card__stat-label',e)?.textContent.trim(),one('.apartment-card__stat-value',e)?.textContent.trim()]);
     const get=key=>stats.find(([label])=>label?.toLowerCase().includes(key))?.[1];
     one('.apartment-card__stats',body)?.remove();one('.apartment-card__topline',body)?.remove();
-    if(address)body.prepend(address);
+    const country=countriesByName[one('.apartment-card__name-text',name)?.textContent.trim()];
+    if(address){address.textContent=country||'';if(country){item.dataset.country=country;body.prepend(address);}else address.remove();}
     name.after(facts([['Комнаты',get('комнат')||get('спаль')],['Площадь',get('площад')],['Этаж',get('этаж')]],'lot'));
     if(price){const row=document.createElement('div');row.className='apartment-card__price-row listing-card-price-row';row.setAttribute('data-v-80c326fb','');row.append(price);if(id)row.append(id);body.append(row);}
   });
@@ -22,11 +26,14 @@
     const body=one('.apartment-card__body',item),name=one('.apartment-card__name',body),nameText=one('.apartment-card__name-text',name),price=one('.apartment-card__price',body),image=one('.apartment-card__image',item);
     const title=one('.apartment-card__name',offer)?.textContent.trim(),region=one('.apartment-card__address',offer)?.textContent.trim(),href=one('.apartment-card__link',offer)?.href,delivery=one('.apartment-card__delivery',offer)?.textContent.trim();
     nameText.textContent=title;all('a',item).forEach(a=>a.href=href);image.src=one('.apartment-card__image',offer).src;image.alt=title;image.removeAttribute('srcset');
-    one('.apartment-card__topline',body)?.remove();const address=one('.apartment-card__address',body);if(address){address.textContent=region||'';if(region)body.prepend(address);else address.remove();}one('.apartment-card__stats',body)?.remove();
+    const country=countriesByCity[region];item.dataset.country=country||'';
+    one('.apartment-card__topline',body)?.remove();const address=one('.apartment-card__address',body);if(address){address.textContent=country||'';if(country)body.prepend(address);else address.remove();}one('.apartment-card__stats',body)?.remove();
     name.after(facts([['Локация',region],['Срок сдачи',delivery],['Спальни','По запросу']],'project'));
     price.textContent=one('.apartment-card__price',offer)?.textContent.trim()||'Цена по запросу';
     list.prepend(item);
   });
+  // Launch cards use the same country eyebrow; project facts keep the city.
+  all('.catalog-best-offers .apartment-card__address').forEach(address=>{const country=countriesByCity[address.textContent.trim()];if(country)address.textContent=country;});
   one('.catalog-grid__inner > .catalog-quick-filters')?.remove();
   const toolbar=document.createElement('section');toolbar.className='catalog-mode-toolbar';toolbar.setAttribute('aria-label','Фильтры каталога');
   toolbar.innerHTML='<div class="catalog-mode-switch" role="group" aria-label="Тип недвижимости"><button class="catalog-mode-switch__button is-active" data-listing-mode="new-build" type="button" aria-pressed="true">Новостройки</button><button class="catalog-mode-switch__button" data-listing-mode="secondary" type="button" aria-pressed="false">Вторичная</button></div><div class="catalog-mode-filters catalog-quick-filters" data-v-6fd45cc6></div>';

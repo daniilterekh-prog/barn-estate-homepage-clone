@@ -38,7 +38,7 @@ const fs=require('node:fs/promises');
     html=html.replace('</head>',['node-ui.css','node-listing.css','node-start-sales.css','node-page.css','node-owner-footer.css'].map(file=>'<link rel="stylesheet" href="'+prefix+file+'?v=20261012-ref-sync-1">').join('')+'<link rel="stylesheet" href="'+prefix+'../shared/owner-header.css?v=20261012-owner-header-5"></head>');
     const sourceRuntime=html.match(/<script src="[^"]*source-runtime\.js[^"]*" defer=""><\/script>/)?.[0];
     if(!sourceRuntime)throw new Error('Missing source runtime: '+file);
-    html=html.replace(sourceRuntime,'<script src="'+prefix+'node-components.js?v=20261012-ref-sync-1" defer></script><script src="'+prefix+'node-catalog.js?v=20261012-ref-sync-1" defer></script>'+sourceRuntime.replace(/\?v=[^"]+/,'?v=20261012-ref-sync-1')+'<script src="'+prefix+'node-start-sales.js?v=20261012-ref-sync-1" defer></script>');
+    html=html.replace(sourceRuntime,'<script src="'+prefix+'node-components.js?v=20261012-ref-sync-1" defer></script><script src="'+prefix+'node-catalog.js?v=20261012-country-1" defer></script>'+sourceRuntime.replace(/\?v=[^"]+/,'?v=20261012-ref-sync-1')+'<script src="'+prefix+'node-start-sales.js?v=20261012-ref-sync-1" defer></script>');
     await fs.writeFile(target+'/'+file,html);
   }
   require('node:child_process').execFileSync(process.execPath,['scripts/build-international-map-browser.cjs']);
