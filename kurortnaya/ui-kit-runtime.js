@@ -34,10 +34,15 @@
   if (!document.querySelector('link[data-kurortnaya-ui-kit]')) {
     var stylesheet = document.createElement('link');
     stylesheet.rel = 'stylesheet';
-    stylesheet.href = 'ui-kit.css?v=20261012-sticky-request-button-1';
+    stylesheet.href = 'ui-kit.css?v=20261012-owner-footer-1';
     stylesheet.dataset.kurortnayaUiKit = 'true';
     document.head.appendChild(stylesheet);
   }
+
+  var footerStylesheet = document.createElement('link');
+  footerStylesheet.rel = 'stylesheet';
+  footerStylesheet.href = 'owner-footer.css?v=1';
+  document.head.appendChild(footerStylesheet);
 
   if (!document.querySelector('link[data-kurortnaya-listing-mode]')) {
     var listingStylesheet = document.createElement('link');
@@ -514,7 +519,7 @@
       }
     });
 
-    document.querySelectorAll('.catalog-contact__card-submit, .floating-expert__card').forEach(function (trigger) {
+    document.querySelectorAll('.catalog-contact__card-submit, .floating-expert__card, .site-footer__callback-btn').forEach(function (trigger) {
       trigger.addEventListener('click', function () {
         openContactModal(trigger);
       });
