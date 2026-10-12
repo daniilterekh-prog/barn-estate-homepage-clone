@@ -1,4 +1,9 @@
 /* City-specific data/layout exceptions to the FirstDegreeNode reference. */
+/* Older city source uses a different chevron primitive; match the resort's strokes. */
+html body.city-node-ready .catalog-mode-filters .catalog-quick-filters__chevron {
+  border-right:1px solid #4f4d49;
+  border-bottom:1px solid #4f4d49;
+}
 .city-map-filters svg { width:20px; height:20px; flex-shrink:0; }
 body.city-map-filter-open .hero-filter-modal { z-index:11000; }
 /* The current front original no longer shows this legacy link inside the modal. */
