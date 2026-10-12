@@ -140,3 +140,11 @@ html body.commercial-node .hero-filter-modal { z-index: 2200; }
     align-self: center;
   }
 }
+/* Keep the reference contact button reachable even when node links scroll. */
+@media (max-width: 900px) {
+  html body.commercial-node .catalog-sticky__inner { display: flex; gap: 12px; }
+  html body.commercial-node .catalog-sticky__list { flex: 1; min-width: 0; }
+  html body.commercial-node .catalog-sticky__contact-toggle { display: inline-flex; flex: 0 0 44px; }
+  html body.commercial-node .catalog-page-nav__brand,
+  html body.commercial-node .catalog-page-nav__logo { display: none; }
+}

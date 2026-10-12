@@ -9,6 +9,15 @@
   let returnFocus = null;
   const originalMenuIcon = menuButton?.innerHTML;
   let filterValues = null;
+  let contactToggle = null;
+  let contactPanel = null;
+  function closeContacts(restoreFocus = false) {
+    if (!contactPanel || contactPanel.hidden) return;
+    contactPanel.hidden = true;
+    contactToggle.setAttribute('aria-expanded', 'false');
+    contactToggle.setAttribute('aria-label', 'Показать способы связи');
+    if (restoreFocus) contactToggle.focus({preventScroll:true});
+  }
   one('.catalog-hero-filters__search-input')?.setAttribute('aria-label', 'Поиск по ID, названию ЖК, адресу');
   one('.catalog-projects-map__search-input')?.setAttribute('aria-label', 'Поиск в видимой области карты');
   const heroFilter = one('.catalog-hero-filters__filter-icon');
@@ -54,6 +63,46 @@
     const request = one('.catalog-page-nav__request', nav);
     if (request && brand) { request.classList.add('catalog-sticky__request'); brand.prepend(request); }
     one('.catalog-page-nav__phone', nav)?.classList.add('catalog-sticky__phone');
+    contactToggle = document.createElement('button');
+    contactToggle.className = 'catalog-sticky__contact-toggle';
+    contactToggle.type = 'button';
+    contactToggle.setAttribute('aria-expanded', 'false');
+    contactToggle.setAttribute('aria-controls', 'commercial-sticky-contacts');
+    contactToggle.setAttribute('aria-label', 'Показать способы связи');
+    contactToggle.innerHTML = '<svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.5 9.8 9.8 0 0 1-4-.9L3 21l1.7-4.6A8.4 8.4 0 1 1 21 11.5Z"></path><path d="M8 12h.01M12 12h.01M16 12h.01"></path></svg>';
+    contactPanel = document.createElement('div');
+    contactPanel.id = 'commercial-sticky-contacts';
+    contactPanel.className = 'catalog-sticky__contact-panel';
+    contactPanel.setAttribute('role', 'group');
+    contactPanel.setAttribute('aria-label', 'Способы связи');
+    contactPanel.hidden = true;
+    const messengers = all('.site-header__messenger', header);
+    for (const name of ['WhatsApp', 'MAX', 'Telegram']) {
+      const source = messengers.find(link => link.getAttribute('aria-label') === name);
+      if (!source) continue;
+      const link = source.cloneNode(true);
+      link.className = 'catalog-sticky__messenger';
+      link.setAttribute('aria-label', `Написать в ${name}`);
+      contactPanel.append(link);
+    }
+    const phone = one('.site-header__phone', header)?.cloneNode(true);
+    if (phone) {
+      phone.className = 'catalog-sticky__phone';
+      phone.setAttribute('aria-label', 'Позвонить по номеру +7 495 182-50-79');
+      one('span', phone)?.setAttribute('class', 'catalog-sticky__phone-icon');
+      contactPanel.append(phone);
+    }
+    one('.catalog-sticky__inner', nav).append(contactToggle, contactPanel);
+    contactToggle.addEventListener('click', () => {
+      const open = contactPanel.hidden;
+      contactPanel.hidden = !open;
+      contactToggle.setAttribute('aria-expanded', String(open));
+      contactToggle.setAttribute('aria-label', open ? 'Скрыть способы связи' : 'Показать способы связи');
+    });
+    document.addEventListener('click', event => {
+      if (!contactPanel.contains(event.target) && !contactToggle.contains(event.target)) closeContacts();
+    });
+    addEventListener('resize', () => { if (innerWidth > 900) closeContacts(); });
   }
   for (const [selector, text] of [
     ['.catalog-map__title', 'География'],
@@ -136,6 +185,7 @@
   }
 
   function openDialog(kind, trigger) {
+    closeContacts();
     closeDialog(); returnFocus = trigger || document.activeElement;
     const template = document.getElementById(`source-${kind}`);
     if (!template) return;
@@ -157,7 +207,10 @@
   }
 
   document.addEventListener('keydown', event => {
-    if (event.key === 'Escape') closeDialog();
+    if (event.key === 'Escape') {
+      if (dialog) closeDialog();
+      else closeContacts(true);
+    }
     if (event.key !== 'Tab' || !dialog) return;
     const focusable = all('button,a[href],input,select,textarea,[tabindex="0"]', dialog).filter(e => !e.disabled && e.getClientRects().length && !e.classList.contains('hero-filter-modal__backdrop'));
     if (dialog.classList.contains('site-menu') && menuButton) focusable.unshift(menuButton);
@@ -180,6 +233,7 @@
     nav?.classList.toggle('catalog-sticky--visible', visible);
     nav?.setAttribute('aria-hidden', String(!visible));
     nav?.toggleAttribute('inert', !visible);
+    if (!visible) closeContacts();
   }
   addEventListener('scroll', onScroll, { passive: true }); onScroll();
 
