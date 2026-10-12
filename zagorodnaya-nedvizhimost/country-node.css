@@ -1,4 +1,10 @@
 /* Country data exceptions only. Design contracts are copied from /kurortnaya/. */
+/* Give the country editorial heading two lines without shrinking its type. */
+@media (min-width:1280px) {
+  html body.country-node-page .catalog-intro__inner[class] {
+    grid-template-columns:minmax(660px,1.1fr) minmax(0,.9fr);
+  }
+}
 .country-node-page .catalog-grid__item[hidden],
 .country-node-page .country-catalog-empty[hidden] { display:none!important; }
 .country-node-page .catalog-grid__list { align-items:stretch; }
