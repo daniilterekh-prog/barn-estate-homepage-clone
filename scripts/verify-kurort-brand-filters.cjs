@@ -35,6 +35,11 @@ const assert = require('node:assert/strict');
         for (const selector of ['.catalog-grid__sort', '.catalog-mode-detailed-filters']) {
           assert.ok((await page.locator(selector).boundingBox()).y >= bottom, 'Mobile sorting and detailed filters below checkboxes, no overlap');
         }
+      } else {
+        const brand = await listing.boundingBox();
+        const sort = await page.locator('.catalog-grid__sort').boundingBox();
+        assert.ok(brand.x + brand.width <= sort.x, 'Checkboxes to the left of sorting');
+        assert.ok(Math.abs(brand.y + brand.height / 2 - sort.y - sort.height / 2) < 1, 'Checkboxes and sorting share row/center');
       }
       for (const label of await listing.locator('label').all()) {
         const box = await label.boundingBox();
