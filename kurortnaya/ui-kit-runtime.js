@@ -37,7 +37,7 @@
   if (!document.querySelector('link[data-kurortnaya-listing-mode]')) {
     var listingStylesheet = document.createElement('link');
     listingStylesheet.rel = 'stylesheet';
-    listingStylesheet.href = 'listing-mode.css?v=20261012-property-type-1';
+    listingStylesheet.href = 'listing-mode.css?v=20261012-mobile-arrow-align-1';
     listingStylesheet.dataset.kurortnayaListingMode = 'true';
     document.head.appendChild(listingStylesheet);
   }
