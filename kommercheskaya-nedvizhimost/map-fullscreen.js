@@ -49,7 +49,7 @@
   dialog.querySelector('.map-browser__market').remove();
   location.closest('label').remove();bedrooms.closest('label').remove();
   const areaField=document.createElement('label');areaField.className='map-browser__field map-browser__area';
-  areaField.innerHTML=parameterIcon+'<path d="M4 4h16v16H4zM8 4v3M12 4v3M16 4v3M4 8h3M4 12h3M4 16h3"/></svg><input aria-label="Площадь до, м²" type="number" min="0" data-filter="area" placeholder="Площадь до, м²">';
+  areaField.innerHTML=parameterIcon+'<path d="M4 4h16v16H4zM8 4v3M12 4v3M16 4v3M4 8h3M4 12h3M4 16h3M9 15l6-6M9 12v3h3M12 9h3v3"/></svg><input aria-label="Площадь до, м²" type="number" min="0" data-filter="area" placeholder="Площадь до, м²">';
   dialog.querySelector('.map-browser__extra').before(areaField);
   const area=areaField.querySelector('input');
   type.addEventListener('input',()=>window.BarnesFilters.patch({propertyTypes:type.value?[type.value]:[]}));

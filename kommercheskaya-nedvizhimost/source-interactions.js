@@ -164,7 +164,7 @@
     toolbar.setAttribute('aria-label', 'Фильтры коммерческой недвижимости');
     one('.catalog-quick-filters', toolbar)?.classList.add('catalog-mode-filters');
     const filterIcons = [
-      '<path d="M4 21V5l8-2v18M12 8h8v13M2 21h20M7 7h2M7 11h2M7 15h2M15 11h2M15 15h2"/>',
+      '<path d="M4 21V8l8-5 8 5v13M2 21h20M9 21v-6h6v6M8 9h1m6 0h1M8 12h1m6 0h1"/>',
       '<circle cx="12" cy="12" r="9"/><path d="M9 16V7.5h3.4a2.75 2.75 0 1 1 0 5.5H9m0 0h5.6m-5.6 2h4.6"/>',
       '<path d="M4 4h16v16H4zM8 4v3M12 4v3M16 4v3M4 8h3M4 12h3M4 16h3M9 15l6-6M9 12v3h3M12 9h3v3"/>'
     ];
