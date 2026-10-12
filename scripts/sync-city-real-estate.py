@@ -255,14 +255,14 @@ def inject_node_reference(html: str) -> str:
     html = re.sub(r'node-city\.css\?v=[\w-]+', 'node-city.css?v=20261012-cta-unified-1', html)
     html = html.replace('node-reference.js?v=20261012-1', 'node-reference.js?v=20261012-cta-unified-1')
     html = re.sub(r'node-reference\.js\?v=[\w-]+', 'node-reference.js?v=20261012-filter-icons-1', html)
-    html = re.sub(r'(node-(?:city|ui|listing|launch)\.css)\?v=[\w-]+', r'\1?v=20261012-filter-icons-1', html)
+    html = re.sub(r'(node-(?:city|ui|listing|launch)\.css)\?v=[\w-]+', r'\1?v=20261012-listing-titles-1', html)
     if 'node-modal.js?' not in html:
         html = html.replace('</body>', '<script src="node-modal.js?v=20261012-request-modal-1"></script></body>', 1)
     html = re.sub(r'node-modal\.js\?v=[\w-]+', 'node-modal.js?v=20261012-reference-sync-1', html)
     if 'data-city-node-design' in html:
         return html
     styles = ''.join(
-        f'<link rel="stylesheet" data-city-node-design href="{name}?v=20261012-filter-icons-1">'
+        f'<link rel="stylesheet" data-city-node-design href="{name}?v=20261012-listing-titles-1">'
         for name in ('node-ui.css', 'node-listing.css', 'node-launch.css', 'node-city.css')
     )
     styles += '<link rel="stylesheet" href="../shared/owner-header.css?v=20261012-owner-header-5">'
