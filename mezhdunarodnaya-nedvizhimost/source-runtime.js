@@ -3,14 +3,14 @@
   'use strict';
   const one = (s, root=document) => root.querySelector(s);
   const all = (s, root=document) => [...root.querySelectorAll(s)];
-  let dialog = null, returnFocus = null;
+  let dialog = null, returnFocus = null, filterState = [];
   const header = one('.site-header'), menuButton = one('.site-header__icon-btn');
   function closeDialog() {
     dialog?.remove(); dialog=null;
     document.body.style.removeProperty('overflow');
     header?.classList.remove('site-header--menu-open');
     menuButton?.setAttribute('aria-expanded','false');
-    one('.catalog-hero-filters__filter-icon')?.setAttribute('aria-expanded','false');
+    all('[data-international-filter]').forEach(button=>button.setAttribute('aria-expanded','false'));
     returnFocus?.focus({preventScroll:true});
   }
   function openDialog(kind, trigger) {
@@ -22,11 +22,23 @@
     document.body.append(dialog); document.body.style.overflow='hidden';
     all('.modal__close,.vfm__overlay,.hero-filter-modal__close,.hero-filter-modal__backdrop',dialog).forEach(e=>e.addEventListener('click',closeDialog));
     if(kind==='menu'){header?.classList.add('site-header--menu-open');menuButton?.setAttribute('aria-expanded','true');}
-    if(kind==='filters')one('.catalog-hero-filters__filter-icon')?.setAttribute('aria-expanded','true');
+    if(kind==='filters'){
+      trigger?.setAttribute('aria-expanded','true');
+      all('input',dialog).forEach((input,i)=>{const saved=filterState[i];if(saved){input.value=saved.value;input.checked=saved.checked;}input.closest('.ui-checkbox')?.classList.toggle('ui-checkbox--checked',input.checked);input.closest('.ui-switch')?.classList.toggle('ui-switch--checked',input.checked);});
+    }
     bindForms(dialog); bindFilters(dialog);
+    all('.hero-filter-panel-content__range-input',dialog).forEach(input=>input.setAttribute('aria-label',input.closest('.hero-filter-panel-content__group')?.querySelector('.hero-filter-panel-content__title')?.textContent.trim()+' — '+input.placeholder));
     one('input:not([tabindex="-1"]),button',dialog)?.focus({preventScroll:true});
   }
   window.BARNES_OPEN_FILTER=trigger=>openDialog('filters',trigger);
+  const mapSearch=one('.catalog-projects-map__search');
+  if(mapSearch){
+    const mapFilter=one('.catalog-hero-filters__filter-icon')?.cloneNode(true);
+    if(mapFilter){mapFilter.className='international-map-filter';mapFilter.setAttribute('aria-label','Открыть фильтры на карте');mapSearch.append(mapFilter);mapFilter.addEventListener('click',event=>{event.preventDefault();openDialog('filters',mapFilter);});}
+  }
+  all('.catalog-hero-filters__filter-icon,.catalog-mode-detailed-filters,.catalog-quick-filters__button,.international-map-filter').forEach(button=>{
+    button.dataset.internationalFilter='';button.setAttribute('aria-haspopup','dialog');button.setAttribute('aria-controls','catalog-hero-filters-panel');button.setAttribute('aria-expanded','false');
+  });
   document.addEventListener('keydown',event=>{
     if(event.key==='Escape'){closeDialog();one('.catalog-projects-map')?.classList.remove('source-map-expanded');}
     if(event.key!=='Tab'||!dialog)return;
@@ -70,11 +82,12 @@
   one('.catalog-hero-filters__submit')?.addEventListener('click',applySearch);
   one('.catalog-grid__more')?.addEventListener('click',()=>items.forEach(item=>item.classList.add('source-revealed')));
   function bindFilters(root){
-    all('input[type="checkbox"]',root).forEach(input=>input.addEventListener('change',()=>input.closest('.ui-checkbox')?.classList.toggle('ui-checkbox--checked',input.checked)));
-    all('.hero-filter-panel__reset',root).forEach(button=>button.addEventListener('click',()=>all('input',root).forEach(input=>{input.value='';input.checked=false;input.closest('.ui-checkbox')?.classList.remove('ui-checkbox--checked');})));
-    all('button',root).filter(e=>/показать.*объект/i.test(e.textContent)).forEach(button=>button.addEventListener('click',()=>{
+    all('input[type="checkbox"]',root).forEach(input=>input.addEventListener('change',()=>{input.closest('.ui-checkbox')?.classList.toggle('ui-checkbox--checked',input.checked);input.closest('.ui-switch')?.classList.toggle('ui-switch--checked',input.checked);}));
+    all('.hero-filter-panel__reset,.hero-filter-modal__reset',root).forEach(button=>button.addEventListener('click',()=>{filterState=[];all('input',root).forEach(input=>{if(input.type!=='checkbox')input.value='';input.checked=false;input.closest('.ui-checkbox')?.classList.remove('ui-checkbox--checked');input.closest('.ui-switch')?.classList.remove('ui-switch--checked');});}));
+    all('.hero-filter-modal__apply',root).forEach(button=>button.addEventListener('click',()=>{
+      filterState=all('input',root).map(input=>({value:input.value,checked:input.checked}));
       const selected=all('input[type="checkbox"]:checked',root).map(e=>e.closest('label')?.textContent.trim().toLowerCase()).filter(Boolean);
-      const ranges=all('input[type="number"]',root).map(e=>Number(e.value)||0);
+      const ranges=all('.hero-filter-panel-content__range-input',root).map(e=>number(e.value)||0);
       items.forEach(item=>{const text=item.textContent.toLowerCase();item.hidden=(list?.dataset.activeMode&&item.dataset.listingMode!==list.dataset.activeMode)||(selected.length>0&&!selected.some(label=>text.includes(label)))||(ranges[0]>0&&price(item)<ranges[0])||(ranges[1]>0&&price(item)>ranges[1]);});
       closeDialog();scrollToSection('.catalog-grid');
     }));

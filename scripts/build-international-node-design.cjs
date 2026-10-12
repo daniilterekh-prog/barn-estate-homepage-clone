@@ -28,10 +28,10 @@ const fs=require('node:fs/promises');
     html=html.replace(/src="[^"]+"(?= alt="Зарубежная недвижимость для жизни и инвестиций" class="catalog-intro__image")/, 'src="'+prefix+'../kurortnaya/assets/barnes-moscow-residence-v4.webp"');
     html=html.replaceAll(' Показать объекты </button>', ' Найти </button>');
     html=html.replace(/<link[^>]+href="[^"?]*node-[^"]*"[^>]*>/g,'').replace(/<script[^>]+src="[^"?]*node-[^"?]*\.js[^"]*"[^>]*><\/script>/g,'').replace(/<link[^>]+href="[^"]*shared\/owner-header\.css[^"]*"[^>]*>/g,'');
-    html=html.replace('</head>',['node-ui.css','node-listing.css','node-start-sales.css','node-page.css'].map(file=>'<link rel="stylesheet" href="'+prefix+file+(file==='node-page.css'?'?v=20261012-cta-1':'?v=20261012-node-1')+'">').join('')+'<link rel="stylesheet" href="'+prefix+'../shared/owner-header.css?v=20261012-owner-header-5"></head>');
+    html=html.replace('</head>',['node-ui.css','node-listing.css','node-start-sales.css','node-page.css'].map(file=>'<link rel="stylesheet" href="'+prefix+file+(file==='node-page.css'?'?v=20261012-filters-1':'?v=20261012-node-1')+'">').join('')+'<link rel="stylesheet" href="'+prefix+'../shared/owner-header.css?v=20261012-owner-header-5"></head>');
     const sourceRuntime=html.match(/<script src="[^"]*source-runtime\.js[^"]*" defer=""><\/script>/)?.[0];
     if(!sourceRuntime)throw new Error('Missing source runtime: '+file);
-    html=html.replace(sourceRuntime,'<script src="'+prefix+'node-components.js?v=20261012-node-1" defer></script><script src="'+prefix+'node-catalog.js?v=20261012-node-1" defer></script>'+sourceRuntime.replace(/\?v=[^"]+/,'?v=20261012-node-1')+'<script src="'+prefix+'node-start-sales.js?v=20261012-node-1" defer></script>');
+    html=html.replace(sourceRuntime,'<script src="'+prefix+'node-components.js?v=20261012-node-1" defer></script><script src="'+prefix+'node-catalog.js?v=20261012-node-1" defer></script>'+sourceRuntime.replace(/\?v=[^"]+/,'?v=20261012-filters-1')+'<script src="'+prefix+'node-start-sales.js?v=20261012-node-1" defer></script>');
     await fs.writeFile(target+'/'+file,html);
   }
 })().catch(e=>{console.error(e);process.exitCode=1;});
