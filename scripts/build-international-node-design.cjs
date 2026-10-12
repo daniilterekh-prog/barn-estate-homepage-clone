@@ -25,6 +25,7 @@ const fs=require('node:fs/promises');
   for(const file of ['index.html','standalone/index.html']){
     const prefix=file.startsWith('standalone/')?'../':'';
     let html=await fs.readFile(target+'/'+file,'utf8');
+    html=html.replaceAll(' Показать объекты </button>', ' Найти </button>');
     html=html.replace(/<link[^>]+href="[^"?]*node-[^"]*"[^>]*>/g,'').replace(/<script[^>]+src="[^"?]*node-[^"?]*\.js[^"]*"[^>]*><\/script>/g,'').replace(/<link[^>]+href="[^"]*shared\/owner-header\.css[^"]*"[^>]*>/g,'');
     html=html.replace('</head>',['node-ui.css','node-listing.css','node-start-sales.css','node-page.css'].map(file=>'<link rel="stylesheet" href="'+prefix+file+'?v=20261012-node-1">').join('')+'<link rel="stylesheet" href="'+prefix+'../shared/owner-header.css?v=20261012-owner-header-5"></head>');
     const sourceRuntime=html.match(/<script src="[^"]*source-runtime\.js[^"]*" defer=""><\/script>/)?.[0];
