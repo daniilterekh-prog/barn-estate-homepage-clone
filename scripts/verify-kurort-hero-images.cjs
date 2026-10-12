@@ -16,7 +16,7 @@ const base = process.argv[2] || 'http://127.0.0.1:8769/kurortnaya/';
         await img.decode();
         return { src: img.currentSrc, width: img.naturalWidth, height: img.naturalHeight };
       });
-      assert.ok(info.src.endsWith(width <= 540 ? 'hero-alpine-mobile.webp' : 'hero-alpine-desktop-dark.webp'), info.src);
+      assert.ok(info.src.endsWith(width <= 540 ? 'hero-alpine-mobile.webp' : 'hero-alpine-natural-desktop.webp'), info.src);
       if (width > 540) assert.equal(info.width * 9, info.height * 16, 'Desktop is exact 16:9');
       else assert.ok(info.height > info.width, 'Mobile keeps portrait composition');
       assert.equal(await page.locator('.catalog-hero__title').count(), 1);
