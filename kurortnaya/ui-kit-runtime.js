@@ -34,7 +34,7 @@
   if (!document.querySelector('link[data-kurortnaya-ui-kit]')) {
     var stylesheet = document.createElement('link');
     stylesheet.rel = 'stylesheet';
-    stylesheet.href = 'ui-kit.css?v=20261012-hero-header-axis-1';
+    stylesheet.href = 'ui-kit.css?v=20261012-sticky-request-button-1';
     stylesheet.dataset.kurortnayaUiKit = 'true';
     document.head.appendChild(stylesheet);
   }
@@ -171,11 +171,11 @@
     });
     var callback = document.createElement('button');
     callback.type = 'button';
-    callback.className = 'catalog-sticky__contact-toggle catalog-sticky__callback';
-    callback.setAttribute('aria-label', 'Заказать обратный звонок');
+    callback.className = 'catalog-sticky__request catalog-sticky__callback';
+    callback.setAttribute('aria-label', 'Оставить заявку');
     callback.setAttribute('aria-haspopup', 'dialog');
     callback.setAttribute('aria-controls', 'catalog-feedback-modal');
-    callback.innerHTML = sticky.querySelector('.catalog-sticky__phone-icon').innerHTML;
+    callback.textContent = 'Оставить заявку';
     callback.addEventListener('click', function () {
       panel.hidden = true;
       toggle.setAttribute('aria-expanded', 'false');
