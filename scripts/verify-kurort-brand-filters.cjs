@@ -29,7 +29,12 @@ const assert = require('node:assert/strict');
         const checkboxText = textRect(el.querySelector('label > span:last-child'));
         return [captions[0].top - switchRect.bottom, checkboxText.top - Math.max(...captions.map(rect => rect.bottom))];
       });
-      assert.ok(Math.abs(gaps[0] - gaps[1]) < 1, `Matching visible text gaps: ${gaps}`);
+      if (width <= 1024) assert.ok(Math.abs(gaps[0] - gaps[1]) < 1, `Matching visible text gaps: ${gaps}`);
+      else {
+        const market = await page.locator('.catalog-mode-switch').boundingBox();
+        const brands = await listing.boundingBox();
+        assert.ok(Math.abs(market.y + market.height / 2 - brands.y - brands.height / 2) < 1, 'Market and checkboxes share top row');
+      }
       if (width <= 540) {
         const bottom = (await listing.boundingBox()).y + (await listing.boundingBox()).height;
         for (const selector of ['.catalog-grid__sort', '.catalog-mode-detailed-filters']) {

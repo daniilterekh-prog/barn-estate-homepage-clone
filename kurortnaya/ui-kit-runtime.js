@@ -9,7 +9,7 @@
       quickScript.src = 'quick-filters.js?v=3';
       quickScript.onload = function () {
         var brandsScript = document.createElement('script');
-        brandsScript.src = 'brand-filters.js?v=6';
+        brandsScript.src = 'brand-filters.js?v=7';
         document.body.appendChild(brandsScript);
       };
       document.body.appendChild(quickScript);

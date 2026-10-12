@@ -220,7 +220,7 @@
 (function () {
   function startRuntime() {
     var uiKitRuntime = document.createElement('script');
-    uiKitRuntime.src = 'ui-kit-runtime.js?v=20261012-brand-adjacent-sort-1';
+    uiKitRuntime.src = 'ui-kit-runtime.js?v=20261012-brand-top-row-1';
     document.body.appendChild(uiKitRuntime);
   }
   // document.open replaces DOM/listeners but retains window.BarnesFilters.
@@ -235,7 +235,7 @@
       return response.text();
     })
     .then(function (markup) {
-      markup = markup.replace('</body>', '<script src="ui-kit-runtime.js?v=20261012-brand-adjacent-sort-1"><\/script></body>');
+      markup = markup.replace('</body>', '<script src="ui-kit-runtime.js?v=20261012-brand-top-row-1"><\/script></body>');
       document.open();
       document.write(markup);
       document.close();
