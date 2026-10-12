@@ -1,0 +1,175 @@
+/* Commercial data adapter for the approved Kurortnaya first-degree UI. */
+html body.commercial-node .catalog-page-nav__inner { max-width: none; }
+html body.commercial-node .catalog-page-nav__list { flex: 1; }
+html body.commercial-node .catalog-page-nav__brand { margin-left: 0; position: static; display: flex; gap: 28px; }
+html body.commercial-node .catalog-page-nav__request { position: static; transform: none; margin: 0; flex: none; }
+html body.commercial-node .catalog-page-nav__phone { position: static; width: auto; display: flex; flex: none; gap: 10px; }
+html body.commercial-node .catalog-page-nav__phone-number { position: static; width: auto; white-space: nowrap; }
+html body.commercial-node .catalog-sticky__request { background: transparent; border: 1px solid #8b1d25; border-radius: 1px; color: #8b1d25; height: 44px; padding: 0 20px; }
+html body.commercial-node .catalog-page-nav__logo { display: flex; }
+html body.commercial-node .catalog-page-nav__mobile-phone { display: none; }
+html body.commercial-node .catalog-page-nav__item--request { display: list-item; }
+html body.commercial-node .source-listing-filters.catalog-mode-toolbar {
+  display: grid;
+  align-items: center;
+  gap: 24px 20px;
+  grid-template-columns: minmax(0, 1fr) auto;
+  margin: 30px 0 32px;
+}
+html body.commercial-node .catalog-mode-toolbar .catalog-mode-filters {
+  grid-column: 1;
+  grid-row: 1;
+}
+html body.commercial-node .catalog-mode-toolbar .catalog-grid__sort {
+  grid-column: 2;
+  grid-row: 1;
+  align-self: start;
+  transform: translateY(-52px);
+}
+html body.commercial-node .catalog-mode-toolbar .catalog-mode-detailed-filters {
+  grid-column: 2;
+  grid-row: 1;
+}
+html body.commercial-node .catalog-grid__list {
+  gap: 24px;
+}
+html body.commercial-node .apartment-card__stats.listing-card-facts {
+  border: 0;
+  display: grid;
+  grid-template-columns: repeat(var(--facts-count, 2), minmax(0, 1fr));
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+}
+html body.commercial-node .listing-card-fact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 0;
+  padding: 0;
+}
+html body.commercial-node .listing-card-fact__label {
+  color: #656462;
+  display: block;
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: .08em;
+  line-height: 1.2;
+  margin: 0 0 5px;
+  text-transform: uppercase;
+}
+html body.commercial-node .listing-card-fact__value {
+  color: #1e1e1e;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.25;
+}
+html body.commercial-node .listing-card-price-row {
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+html body.commercial-node .listing-card-price-row .apartment-card__lotid {
+  white-space: nowrap;
+}
+html body.commercial-node .apartment-card__name-text {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  white-space: normal;
+}
+html body.commercial-node .apartment-card__name { min-height: 49.28px; }
+html body.commercial-node .apartment-card__address {
+  color: #656462;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.4;
+}
+html body.commercial-node .catalog-intro__text h2 {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+/* Preserve Alina and the commercial photography: no resort portrait/crop. */
+html body.commercial-node :is(.catalog-contact__mobile-photo,.catalog-contact__expert-photo,.floating-expert__avatar) img {
+  transform: scale(2.3);
+  transform-origin: 50% 0;
+  object-position: 100% 20%;
+}
+@media (min-width: 769px) {
+  html body.commercial-node .catalog-consultation__image { width: 50%; object-fit: cover; object-position: 100% 100%; }
+}
+html body.commercial-node .hero-filter-modal .ui-checkbox--chip .ui-checkbox__label,
+html body.commercial-node .hero-filter-modal .hero-filter-panel-content__range-input { font-size: 14px; font-weight: 400; }
+html body.commercial-node .hero-filter-modal__reset,
+html body.commercial-node .hero-filter-modal__apply { font-size: 16px; font-weight: 400; }
+html body.commercial-node .hero-filter-modal { z-index: 2200; }
+@media (min-width: 1025px) {
+  html body.commercial-node .listing-card-fact__label { font-size: 12px; }
+  html body.commercial-node .listing-card-fact__value { font-size: 16px; }
+}
+@media (max-width: 1024px) {
+  html body.commercial-node .source-listing-filters.catalog-mode-toolbar {
+    gap: 20px 16px;
+    margin-top: 22px;
+  }
+}
+@media (max-width: 540px) {
+  html body.commercial-node .apartment-card__name { min-height: 44.8px; }
+  html body.commercial-node .catalog-page-nav__brand { display: none; }
+  html body.commercial-node .catalog-page-nav__logo { display: none; }
+  html body.commercial-node .catalog-page-nav__inner { gap: 12px; }
+  html body.commercial-node .catalog-page-nav__link { font-size: 13px; }
+  html body.commercial-node .source-listing-filters.catalog-mode-toolbar {
+    gap: 10px 12px;
+    margin: 18px 0 28px;
+  }
+  html body.commercial-node .catalog-mode-toolbar .catalog-mode-filters {
+    grid-column: 1 / -1;
+    grid-row: 1;
+  }
+  html body.commercial-node .catalog-mode-toolbar .catalog-mode-detailed-filters {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  html body.commercial-node .catalog-mode-toolbar .catalog-grid__sort {
+    grid-column: 2;
+    grid-row: 2;
+    transform: none;
+    align-self: center;
+  }
+}
+/* Keep the reference contact button reachable even when node links scroll. */
+/* Central CTA: compact equal channel buttons, aligned to the form columns. */
+html body.commercial-node .catalog-consultation__methods[class] {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+html body.commercial-node .catalog-consultation__method[class] {
+  font-size: 16px;
+  gap: 6px;
+  padding-inline: 8px;
+  height: 44px;
+  min-height: 44px;
+}
+html body.commercial-node .catalog-consultation__method-icon[class] {
+  flex-basis: 16px;
+  width: 16px;
+  height: 16px;
+  font-size: 16px;
+}
+@media (min-width: 1280px) {
+  html body.commercial-node .catalog-consultation__methods[class] {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+@media (max-width: 900px) {
+  html body.commercial-node .catalog-sticky__inner { display: flex; gap: 12px; }
+  html body.commercial-node .catalog-sticky__list { flex: 1; min-width: 0; }
+  html body.commercial-node .catalog-sticky__contact-toggle { display: inline-flex; flex: 0 0 44px; }
+  html body.commercial-node .catalog-page-nav__brand,
+  html body.commercial-node .catalog-page-nav__logo { display: none; }
+}
+/* User-supplied hero artwork already includes its dark treatment. */
+html body.commercial-hero-art .catalog-hero__overlay { background: none; }

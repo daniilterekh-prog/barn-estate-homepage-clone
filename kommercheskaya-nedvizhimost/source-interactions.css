@@ -1,0 +1,21 @@
+/* Layout, typography and responsive rules come unchanged from the reference. */
+@import url("node-ui-kit.css");
+@import url("node-listing.css");
+@import url("node-header.css");
+@import url("selection-layout.css");
+@import url("selection-cards.css");
+@import url("node-adaptation.css");
+.news-section .splide__slide { flex-shrink: 0; margin-right: 40px; width: calc((100% - 80px) / 3); }
+@media (max-width: 1024px) { .news-section .splide__slide { width: calc((100% - 40px) / 2); } }
+@media (max-width: 560px) { .news-section .splide__slide { width: 100%; margin-right: 24px; } }
+@media (max-width: 767px) { .catalog-grid__item:nth-child(n+6) { display: none; } }
+[hidden] { display: none !important; }
+.source-form-status { margin-top: 12px; font-size: 14px; }
+.source-form-status:empty { display: none; }
+.source-listing-filters { display: flex; align-items: stretch; gap: 8px; }
+.source-listing-filters > .catalog-quick-filters { flex: 1; min-width: 0; }
+.catalog-hero-filters__filter-icon.source-filter-trigger { width: 46px; height: 46px; border: 1px solid rgba(30,30,30,.16); border-radius: 0; align-self: stretch; }
+.catalog-hero-filters__filter-icon.source-filter-trigger--map { height: auto; min-height: 42px; border: 0; border-radius: 8px; }
+[data-commercial-filters]:focus-visible { outline: 2px solid #8b1d25; outline-offset: 3px; }
+.hero-filter-modal__close:focus-visible { outline: 2px solid #fff; outline-offset: 3px; }
+@media (prefers-reduced-motion: reduce) { .splide__list { transition: none !important; } }

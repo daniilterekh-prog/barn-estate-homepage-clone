@@ -1,0 +1,50 @@
+{
+  "source": "https://front.barnes.vsavr.ru/kommercheskaya-nedvizhimost/",
+  "verifiedAt": "2026-10-12T08:14:25.827Z",
+  "settings": {
+    "height": 900,
+    "DPR": 1,
+    "threshold": 0,
+    "includeAA": true,
+    "browser": "155.0.8059.39",
+    "rendering": "software --disable-gpu",
+    "surface": "original filter dialog; added listing/map triggers are intentional page changes"
+  },
+  "results": [
+    {
+      "width": 320,
+      "panelWidth": 305,
+      "panelHeight": 900,
+      "changedPixels": 0,
+      "metricsMatched": true
+    },
+    {
+      "width": 390,
+      "panelWidth": 375,
+      "panelHeight": 900,
+      "changedPixels": 0,
+      "metricsMatched": true
+    },
+    {
+      "width": 768,
+      "panelWidth": 641,
+      "panelHeight": 852,
+      "changedPixels": 0,
+      "metricsMatched": true
+    },
+    {
+      "width": 1440,
+      "panelWidth": 641,
+      "panelHeight": 852,
+      "changedPixels": 0,
+      "metricsMatched": true
+    },
+    {
+      "width": 1920,
+      "panelWidth": 641,
+      "panelHeight": 852,
+      "changedPixels": 0,
+      "metricsMatched": true
+    }
+  ]
+}

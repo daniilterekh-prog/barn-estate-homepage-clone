@@ -1,0 +1,125 @@
+{
+  "source": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/kurortnaya/",
+  "sourceCommit": "ff101ce",
+  "verifiedAt": "2026-10-12T15:10:51.568Z",
+  "scope": "shared price dropdown computed typography/frame/colors; not whole-page pixel equality",
+  "results": [
+    {
+      "width": 390,
+      "matched": true,
+      "styles": [
+        {
+          "font": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, sans-serif",
+          "size": "16px",
+          "weight": "400",
+          "line": "16px",
+          "padding": "13px",
+          "border": "1px solid rgb(229, 229, 229)",
+          "background": "rgb(255, 255, 255)",
+          "shadow": "none",
+          "minHeight": "0px"
+        },
+        {
+          "font": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, sans-serif",
+          "size": "17px",
+          "weight": "400",
+          "line": "22.1px",
+          "padding": "0px",
+          "border": "0px none rgb(79, 77, 73)",
+          "background": "rgba(0, 0, 0, 0)",
+          "shadow": "none",
+          "minHeight": "0px"
+        },
+        {
+          "font": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, sans-serif",
+          "size": "17px",
+          "weight": "300",
+          "line": "22.1px",
+          "padding": "8px 10px",
+          "border": "0px none rgb(255, 255, 255)",
+          "background": "rgb(139, 29, 37)",
+          "shadow": "none",
+          "minHeight": "40px"
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "matched": true,
+      "styles": [
+        {
+          "font": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, sans-serif",
+          "size": "16px",
+          "weight": "400",
+          "line": "16px",
+          "padding": "13px",
+          "border": "1px solid rgb(229, 229, 229)",
+          "background": "rgb(255, 255, 255)",
+          "shadow": "none",
+          "minHeight": "0px"
+        },
+        {
+          "font": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, sans-serif",
+          "size": "17px",
+          "weight": "400",
+          "line": "22.1px",
+          "padding": "0px",
+          "border": "0px none rgb(79, 77, 73)",
+          "background": "rgba(0, 0, 0, 0)",
+          "shadow": "none",
+          "minHeight": "0px"
+        },
+        {
+          "font": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, sans-serif",
+          "size": "17px",
+          "weight": "300",
+          "line": "22.1px",
+          "padding": "8px 10px",
+          "border": "0px none rgb(255, 255, 255)",
+          "background": "rgb(139, 29, 37)",
+          "shadow": "none",
+          "minHeight": "40px"
+        }
+      ]
+    },
+    {
+      "width": 2560,
+      "matched": true,
+      "styles": [
+        {
+          "font": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, sans-serif",
+          "size": "16px",
+          "weight": "400",
+          "line": "16px",
+          "padding": "13px",
+          "border": "1px solid rgb(229, 229, 229)",
+          "background": "rgb(255, 255, 255)",
+          "shadow": "none",
+          "minHeight": "0px"
+        },
+        {
+          "font": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, sans-serif",
+          "size": "19px",
+          "weight": "400",
+          "line": "24.7px",
+          "padding": "0px",
+          "border": "0px none rgb(79, 77, 73)",
+          "background": "rgba(0, 0, 0, 0)",
+          "shadow": "none",
+          "minHeight": "0px"
+        },
+        {
+          "font": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, sans-serif",
+          "size": "19px",
+          "weight": "300",
+          "line": "24.7px",
+          "padding": "8px 10px",
+          "border": "0px none rgb(255, 255, 255)",
+          "background": "rgb(139, 29, 37)",
+          "shadow": "none",
+          "minHeight": "40px"
+        }
+      ]
+    }
+  ]
+}

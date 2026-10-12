@@ -1,0 +1,462 @@
+{
+  "reference": "https://front.barnes.vsavr.ru/kommercheskaya-nedvizhimost/",
+  "capturedAt": "2026-10-12T08:03:41.655Z",
+  "assets": [
+    {
+      "source": "https://core-renderer-tiles.maps.yandex.net/tiles?l=map&x=5&y=3&z=3&scale=1&lang=ru_RU&v=26.10.07-0%7Eb%3A261001132730%7Eia%3A26.09.28-0%7Eib%3A26.10.07-4",
+      "file": "assets/source/030a4f12c737.png",
+      "sha256": "6cce3a23164faea1d3f3b38b47c9ff627548441fc1e21464a5dc635d57303268",
+      "bytes": 26579
+    },
+    {
+      "source": "https://c15d3839-d361-4fb8-9615-0c7a980d0169.selstorage.ru/resize_cache/11174656/8f5ddbc1f811f957fe777caaf9cef323/iblock/48e/48e3fba91f6bfc920f2e2c77244dcf82/8b67d18cf8e818fb793c259ffb3fed78.png",
+      "file": "assets/source/20b70333976f.png",
+      "sha256": "4ee5443ab894e0ec53e28531186683f56d1322e082b88f7c0d163ac8e961abff",
+      "bytes": 1006841
+    },
+    {
+      "source": "https://core-renderer-tiles.maps.yandex.net/tiles?l=map&x=2&y=0&z=2&scale=1&lang=ru_RU&v=26.10.07-0%7Eb%3A261001132730%7Eia%3A26.09.28-0%7Eib%3A26.10.07-4",
+      "file": "assets/source/22adb6240a0a.png",
+      "sha256": "45392881cac4a6b2155a08df9294aa7317f5f54ef249d0e7f70596056df5a511",
+      "bytes": 10439
+    },
+    {
+      "source": "https://core-renderer-tiles.maps.yandex.net/tiles?l=map&x=3&y=0&z=2&scale=1&lang=ru_RU&v=26.10.07-0%7Eb%3A261001132730%7Eia%3A26.09.28-0%7Eib%3A26.10.07-4",
+      "file": "assets/source/23bc328bb8f3.png",
+      "sha256": "a7b21eb41a083acb39d8beaed6695169463357acc8c47a55893bcbee3d4de538",
+      "bytes": 7611
+    },
+    {
+      "source": "https://front.barnes.vsavr.ru/pictures/mock/contacts-background.webp",
+      "file": "assets/source/251b08b599f0.webp",
+      "sha256": "b576b3fccbbf31eda548004ebcba709297982e2113117d0c212cfc5b2ff953c4",
+      "bytes": 25782
+    },
+    {
+      "source": "https://core-renderer-tiles.maps.yandex.net/tiles?l=map&x=1240&y=642&z=11&scale=1&lang=ru_RU&v=26.10.07-0%7Eb%3A261001132730%7Eia%3A26.09.28-0%7Eib%3A26.10.07-4",
+      "file": "assets/source/2bd16de3ba49.png",
+      "sha256": "19ec48c38a579845bce57aca8e52298dc4e2a356b3bd184d534a66dd67adb580",
+      "bytes": 17301
+    },
+    {
+      "source": "https://c15d3839-d361-4fb8-9615-0c7a980d0169.selstorage.ru/resize_cache/11101932/d13733056f669deb3558a833a5d4f8f4/iblock/bad/bad6f5035f292128d7061ed56e17add9/9e87b3bd8835c62bc08bf19e412d51ee.png",
+      "file": "assets/source/2f79ec86a334.png",
+      "sha256": "15367b76bd61795f7551bc5e2e7cdb83ca1775500f84f9f3701eabfb94b64d5b",
+      "bytes": 765937
+    },
+    {
+      "source": "https://c15d3839-d361-4fb8-9615-0c7a980d0169.selstorage.ru/resize_cache/11087555/d13733056f669deb3558a833a5d4f8f4/iblock/0ba/0ba29ccc230ced4020120087a8695647/59ef6374978c42be50ae030b2b0c72c7.jpg",
+      "file": "assets/source/2fa11256c64e.jpg",
+      "sha256": "e386e79abaca68c5621ea90b2f05d650c72eff9ffd9e77ba7c7f1a01e35d7594",
+      "bytes": 82724
+    },
+    {
+      "source": "https://c15d3839-d361-4fb8-9615-0c7a980d0169.selstorage.ru/resize_cache/11138184/8f5ddbc1f811f957fe777caaf9cef323/iblock/090/0901ea8a8fe1ab26001aa935c0442cea/f19bce520e61659e0feb1844a98319ae.png",
+      "file": "assets/source/33c9955c39a6.png",
+      "sha256": "4eb608f9f16b5961601cd980dd5cb0e290909223fba1f390abb727f10c90be09",
+      "bytes": 262880
+    },
+    {
+      "source": "https://core-renderer-tiles.maps.yandex.net/tiles?l=map&x=4&y=2&z=3&scale=1&lang=ru_RU&v=26.10.07-0%7Eb%3A261001132730%7Eia%3A26.09.28-0%7Eib%3A26.10.07-4",
+      "file": "assets/source/34d4876429d0.png",
+      "sha256": "462cf010938c97e166a737bd5d267ce0f36cebd58a4e1fef810170163f7093d2",
+      "bytes": 23710
+    },
+    {
+      "source": "https://core-renderer-tiles.maps.yandex.net/tiles?l=map&x=7&y=3&z=3&scale=1&lang=ru_RU&v=26.10.07-0%7Eb%3A261001132730%7Eia%3A26.09.28-0%7Eib%3A26.10.07-4",
+      "file": "assets/source/39ea5e15e9a8.png",
+      "sha256": "0b28079ee750a0b75a3e0988a3946a0a69c2d26149b9238f60d6125dc9a9d7ef",
+      "bytes": 14447
+    },
+    {
+      "source": "https://front.barnes.vsavr.ru/favicon.ico",
+      "file": "assets/source/3b692b1f9b01.ico",
+      "sha256": "2f312a5f919c41bbc6bb97de56d67e6af8abedec12827a749c276e773160dddf",
+      "bytes": 59582
+    },
+    {
+      "source": "https://front.barnes.vsavr.ru/fonts/TildaSans-Light.woff2",
+      "file": "assets/source/4446da4485f2.woff2",
+      "sha256": "f0f2c165784c72343618a7c2cbde00e45dbb9b09af5149984792f280cac9642e",
+      "bytes": 63952
+    },
+    {
+      "source": "https://front.barnes.vsavr.ru/fonts/TildaSans-Bold.woff2",
+      "file": "assets/source/487d075df528.woff2",
+      "sha256": "a2690df6fe8348066df79e3a3421a3a9bc0b058cc536f3d846f782ea5337afec",
+      "bytes": 63216
+    },
+    {
+      "source": "https://core-renderer-tiles.maps.yandex.net/tiles?l=map&x=7&y=2&z=3&scale=1&lang=ru_RU&v=26.10.07-0%7Eb%3A261001132730%7Eia%3A26.09.28-0%7Eib%3A26.10.07-4",
+      "file": "assets/source/492799b0e689.png",
+      "sha256": "741de6f50d084e4cbbf11009ee81764a8db0127afd8cee214f43042022f2a3b9",
+      "bytes": 28645
+    },
+    {
+      "source": "https://core-renderer-tiles.maps.yandex.net/tiles?l=map&x=4&y=3&z=3&scale=1&lang=ru_RU&v=26.10.07-0%7Eb%3A261001132730%7Eia%3A26.09.28-0%7Eib%3A26.10.07-4",
+      "file": "assets/source/4aca6bc668ad.png",
+      "sha256": "535e54f4273ed0f08616eeea39a665e4cd25d21e7f0c3416861421fb357549db",
+      "bytes": 24657
+    },
+    {
+      "source": "https://core-renderer-tiles.maps.yandex.net/tiles?l=map&x=1237&y=642&z=11&scale=1&lang=ru_RU&v=26.10.07-0%7Eb%3A261001132730%7Eia%3A26.09.28-0%7Eib%3A26.10.07-4",
+      "file": "assets/source/4bce33e0cb4b.png",
+      "sha256": "a8187a37cfb6d76c804b1ba670419e2b7061e63f7b9e25a66d760b84eeb622ae",
+      "bytes": 23987
+    },
+    {
+      "source": "https://c15d3839-d361-4fb8-9615-0c7a980d0169.selstorage.ru/resize_cache/11088774/50c67a0738bb1843e93eec7710536d7b/iblock/335/335485a4b9acb18f60b1e1bd55ebfc72/37537bbcc39d4cd6cbbfa8bee57ccfe0.jpg",
+      "file": "assets/source/51f4e7a5474b.jpg",
+      "sha256": "7781fce4e8048ef743e425d296b2437674b6dc3e1d3684da098beb3afc695357",
+      "bytes": 374206
+    },
+    {
+      "source": "https://core-renderer-tiles.maps.yandex.net/tiles?l=map&x=1236&y=642&z=11&scale=1&lang=ru_RU&v=26.10.07-0%7Eb%3A261001132730%7Eia%3A26.09.28-0%7Eib%3A26.10.07-4",
+      "file": "assets/source/52d2869ea025.png",
+      "sha256": "ffe83924d04e5243c9c664dbf8e7e69fc69ceace02dc41091144f3c44fb5bfa5",
+      "bytes": 21506
+    },
+    {
+      "source": "https://yastatic.net/s3/front-maps-static/maps-front-jsapi-3/3.0.21527208/out/yandex/build/bundles/distribution.css",
+      "file": "assets/source/5322e4836c34.css",
+      "sha256": "9058f1778fffb49146c43b1b5f02e6ca6073d4756c34f2fc1f8b962cff909fd0",
+      "bytes": 757
+    },
+    {
+      "source": "https://core-renderer-tiles.maps.yandex.net/tiles?l=map&x=1235&y=642&z=11&scale=1&lang=ru_RU&v=26.10.07-0%7Eb%3A261001132730%7Eia%3A26.09.28-0%7Eib%3A26.10.07-4",
+      "file": "assets/source/5649ea5fd7a0.png",
+      "sha256": "2265332fe7991300acaaae45cf9aa3a11dd2a2c5169112aa98beedacd78a21aa",
+      "bytes": 20614
+    },
+    {
+      "source": "https://front.barnes.vsavr.ru/pictures/consultation/cta-alina-background.webp",
+      "file": "assets/source/585f2ba0b6df.webp",
+      "sha256": "b588034a1314b5f60b017e111916281c074f6305146f07295cc120581fc8f3e5",
+      "bytes": 49812
+    },
+    {
+      "source": "https://c15d3839-d361-4fb8-9615-0c7a980d0169.selstorage.ru/resize_cache/11226455/d13733056f669deb3558a833a5d4f8f4/iblock/c85/c852ceb21da6f9b12de9dea542c77714/93f5e824c187df013c515e8b876acb32.jpg",
+      "file": "assets/source/5f6ebe16fea8.jpg",
+      "sha256": "f41ba136e4554aa06aa9a408875cb040550435b9a78e16ebb11dbe5e722d2bbc",
+      "bytes": 96423
+    },
+    {
+      "source": "https://core-renderer-tiles.maps.yandex.net/tiles?l=map&x=6&y=3&z=3&scale=1&lang=ru_RU&v=26.10.07-0%7Eb%3A261001132730%7Eia%3A26.09.28-0%7Eib%3A26.10.07-4",
+      "file": "assets/source/685fd2b4e430.png",
+      "sha256": "89bdbfc93c9f9a8738b50de0128aeb63a396afe264c5c7c0cefbe2bc3efb6f38",
+      "bytes": 30238
+    },
+    {
+      "source": "https://c15d3839-d361-4fb8-9615-0c7a980d0169.selstorage.ru/resize_cache/10988187/d13733056f669deb3558a833a5d4f8f4/iblock/267/26746c9d29cdb07d85f6b61e5e464fca/c6ae82e038c40db2947403a80b29da76.jpg",
+      "file": "assets/source/68c2bde4de27.jpg",
+      "sha256": "c279820315fee12db4079f0371d513219bbc69181c85d940c0c63b0be7c67d78",
+      "bytes": 124037
+    },
+    {
+      "source": "https://front.barnes.vsavr.ru/pictures/office-contact/whatsapp.svg",
+      "file": "assets/source/68f39ab02777.svg",
+      "sha256": "3e197e0e1f3e679ee09823c75e1c7bad3a19da9bd1ba01df395268b9ae91816f",
+      "bytes": 1231
+    },
+    {
+      "source": "https://front.barnes.vsavr.ru/pictures/feedback-hero.webp",
+      "file": "assets/source/6cfef9bc5c75.webp",
+      "sha256": "b5b079b952ba93c6b91da8d51c241550ebcd9339af80e6afb52ef1165da228ac",
+      "bytes": 74680
+    },
+    {
+      "source": "https://front.barnes.vsavr.ru/_nuxt/style.CuVc76lh.css",
+      "file": "assets/source/6d6653a6d4c9.css",
+      "sha256": "c84fda6e989d28345511477d73b14dd846b5815c099ab249c1fde459bbf24dcb",
+      "bytes": 901881
+    },
+    {
+      "source": "https://core-renderer-tiles.maps.yandex.net/tiles?l=map&x=3&y=2&z=3&scale=1&lang=ru_RU&v=26.10.07-0%7Eb%3A261001132730%7Eia%3A26.09.28-0%7Eib%3A26.10.07-4",
+      "file": "assets/source/6f9fc45581df.png",
+      "sha256": "5c3493dd18f80bee0abdc507386b552a778277d4c2907161268485a496c26c42",
+      "bytes": 16345
+    },
+    {
+      "source": "https://core-renderer-tiles.maps.yandex.net/tiles?l=map&x=2&y=3&z=3&scale=1&lang=ru_RU&v=26.10.07-0%7Eb%3A261001132730%7Eia%3A26.09.28-0%7Eib%3A26.10.07-4",
+      "file": "assets/source/7378a04ec8e4.png",
+      "sha256": "b45a4f7759c9f6991633d0db37bc4ffcb2b9374d5533aaf10a6e464df05554a8",
+      "bytes": 18045
+    },
+    {
+      "source": "https://front.barnes.vsavr.ru/pictures/floating-expert/old-money-interior.webp",
+      "file": "assets/source/7695305458b7.webp",
+      "sha256": "9509f5dd4efa3674e55b1ca7c6689298da37c3ba47588c98f1a9e6f1420aeb88",
+      "bytes": 12644
+    },
+    {
+      "source": "https://c15d3839-d361-4fb8-9615-0c7a980d0169.selstorage.ru/iblock/c94/c94a65c5d2926068cc87f1b0e777d5fa/03ecbcc83ec38f8d71ac4cfbc268c98b.png",
+      "file": "assets/source/76f9c9ab0436.png",
+      "sha256": "e96b9a0a3753366df9788b1a79f0ac29295cd80dbbc901cf873731779e593327",
+      "bytes": 510085
+    },
+    {
+      "source": "https://core-renderer-tiles.maps.yandex.net/tiles?l=map&x=3&y=3&z=3&scale=1&lang=ru_RU&v=26.10.07-0%7Eb%3A261001132730%7Eia%3A26.09.28-0%7Eib%3A26.10.07-4",
+      "file": "assets/source/805f812d9f5f.png",
+      "sha256": "f3343ca94ffc4823440028ae44b53dd1fd5e21db6207b7889e8223bdc92d3c01",
+      "bytes": 16119
+    },
+    {
+      "source": "https://c15d3839-d361-4fb8-9615-0c7a980d0169.selstorage.ru/iblock/241/2415d7090d2b9ccbe858207a7a7f447a/7fbe570016207b60c4b87abce0359c2b.jpg",
+      "file": "assets/source/81a267c73922.jpg",
+      "sha256": "c5384c30d421ad705b43c8eb3dac7d16187ff87eb67392232fb15fa995980a7e",
+      "bytes": 264325
+    },
+    {
+      "source": "https://c15d3839-d361-4fb8-9615-0c7a980d0169.selstorage.ru/resize_cache/11124018/d13733056f669deb3558a833a5d4f8f4/iblock/fbe/fbea732cd3d0d7bc32770659eef2302a/d9570de2a278e58301a2272f50df6611.jpg",
+      "file": "assets/source/81c0c77c12fe.jpg",
+      "sha256": "81510a66cae68457b49327d519c22f56b2e78769c2c6b0ce5cfafda0704926e9",
+      "bytes": 102785
+    },
+    {
+      "source": "https://core-renderer-tiles.maps.yandex.net/tiles?l=map&x=2&y=2&z=3&scale=1&lang=ru_RU&v=26.10.07-0%7Eb%3A261001132730%7Eia%3A26.09.28-0%7Eib%3A26.10.07-4",
+      "file": "assets/source/8d4f040d9190.png",
+      "sha256": "66a364677499c3a4b081e5698a304edad719c21aef00d8232c71069bb1be1e24",
+      "bytes": 20564
+    },
+    {
+      "source": "https://front.barnes.vsavr.ru/pictures/office-contact/max.svg",
+      "file": "assets/source/8db2680a5926.svg",
+      "sha256": "5caa61a4b0731d0d89421b4fb24f41433025e5aea59155a14cf3a3fada6c9174",
+      "bytes": 72862
+    },
+    {
+      "source": "https://core-renderer-tiles.maps.yandex.net/tiles?l=map&x=0&y=2&z=3&scale=1&lang=ru_RU&v=26.10.07-0%7Eb%3A261001132730%7Eia%3A26.09.28-0%7Eib%3A26.10.07-4",
+      "file": "assets/source/93bb22193634.png",
+      "sha256": "68ede290b4535b2b94bf3414b78697cb79d82220696309db316b1975148632c9",
+      "bytes": 19158
+    },
+    {
+      "source": "https://front.barnes.vsavr.ru/fonts/TildaSans-Black.woff2",
+      "file": "assets/source/9b3c0b68f922.woff2",
+      "sha256": "73abed6708c43912dbd5c2760147f72462887ccd803522a1486209ca1e97031a",
+      "bytes": 57952
+    },
+    {
+      "source": "https://core-renderer-tiles.maps.yandex.net/tiles?l=map&x=1239&y=641&z=11&scale=1&lang=ru_RU&v=26.10.07-0%7Eb%3A261001132730%7Eia%3A26.09.28-0%7Eib%3A26.10.07-4",
+      "file": "assets/source/9ba38b6906f3.png",
+      "sha256": "a7af051fd1db80028abe99fb232c767ffd9356ccd31b23a3c789584176cfc4d4",
+      "bytes": 17587
+    },
+    {
+      "source": "https://core-renderer-tiles.maps.yandex.net/tiles?l=map&x=5&y=2&z=3&scale=1&lang=ru_RU&v=26.10.07-0%7Eb%3A261001132730%7Eia%3A26.09.28-0%7Eib%3A26.10.07-4",
+      "file": "assets/source/9d3810c9f2ec.png",
+      "sha256": "7d9ea41e6614da28e95571de8246a4b8b5910066461f2a20ff3f431965738a8c",
+      "bytes": 22539
+    },
+    {
+      "source": "https://front.barnes.vsavr.ru/fonts/TildaSans-Medium.woff2",
+      "file": "assets/source/9e58d5de2bbd.woff2",
+      "sha256": "f716269e361f466570f37bc920988c619ddc8a7828c5949c1c56a731a320ab47",
+      "bytes": 62556
+    },
+    {
+      "source": "https://c15d3839-d361-4fb8-9615-0c7a980d0169.selstorage.ru/resize_cache/11177242/8f5ddbc1f811f957fe777caaf9cef323/iblock/1d1/1d19c59186122a2d4c2b21fa848f77ac/32b04ebf9a2af2e54c68f782cb58f3f9.png",
+      "file": "assets/source/a461ef0bb959.png",
+      "sha256": "68f354994cc205b6a741596066e6ce86ec3a49b8fc00dd4cf9eeeb3780eb7787",
+      "bytes": 228335
+    },
+    {
+      "source": "https://front.barnes.vsavr.ru/pictures/for-banks/modal-request-img.webp",
+      "file": "assets/source/a80cefdb36fa.webp",
+      "sha256": "cb1ac940c0a5bc83fa9285b6fd4060c10d7ca2b177f73b4d9404a1e4c9210d17",
+      "bytes": 75360
+    },
+    {
+      "source": "https://core-renderer-tiles.maps.yandex.net/tiles?l=map&x=1235&y=641&z=11&scale=1&lang=ru_RU&v=26.10.07-0%7Eb%3A261001132730%7Eia%3A26.09.28-0%7Eib%3A26.10.07-4",
+      "file": "assets/source/a816c5096d2a.png",
+      "sha256": "4a3c450e35f32a35d9a213956ffc53b1a7793e6daf65db874a99e928dfa73565",
+      "bytes": 18722
+    },
+    {
+      "source": "https://c15d3839-d361-4fb8-9615-0c7a980d0169.selstorage.ru/resize_cache/11161971/d13733056f669deb3558a833a5d4f8f4/iblock/1a1/1a124d40525b4c8321c42928977710d4/9298af15424756b76dec385c74a67b93.png",
+      "file": "assets/source/af10a3eba521.png",
+      "sha256": "18bf8b0a895f79174d123dd95ea6873f7c4c527283e7802bc8968ecb06788f6a",
+      "bytes": 634598
+    },
+    {
+      "source": "https://core-renderer-tiles.maps.yandex.net/tiles?l=map&x=2&y=1&z=2&scale=1&lang=ru_RU&v=26.10.07-0%7Eb%3A261001132730%7Eia%3A26.09.28-0%7Eib%3A26.10.07-4",
+      "file": "assets/source/afd8eddf7f3b.png",
+      "sha256": "ad0ab10d9b8f420afebdce49cfcb420d74b6e6e70b9cc09b3dba146f1e6c748c",
+      "bytes": 17668
+    },
+    {
+      "source": "https://c15d3839-d361-4fb8-9615-0c7a980d0169.selstorage.ru/resize_cache/11174655/8f5ddbc1f811f957fe777caaf9cef323/iblock/9a9/9a9041c1611692076e767fdcd4a2fb6d/32bb1c09e2de90b389dcf4bd8cfa3802.png",
+      "file": "assets/source/b362b060621c.png",
+      "sha256": "1ded2e63e7c29cfa47ae49a4afec49f510e4069dc6b92a398e6610d5658c8436",
+      "bytes": 911339
+    },
+    {
+      "source": "https://c15d3839-d361-4fb8-9615-0c7a980d0169.selstorage.ru/resize_cache/11183306/8f5ddbc1f811f957fe777caaf9cef323/iblock/a3f/a3f9a05b430280e2897d887fbf6bfe12/764e3d4bccb6027b30366e2f2bf025d2.jpg",
+      "file": "assets/source/b3db829cd4ce.jpg",
+      "sha256": "1792fd049a30dde97c8c3b6ac3b1ed7dcab505bdc578542b3ab25357e9672fbb",
+      "bytes": 43053
+    },
+    {
+      "source": "https://front.barnes.vsavr.ru/fonts/TildaSans-ExtraBold.woff2",
+      "file": "assets/source/b5c8cc1256ed.woff2",
+      "sha256": "726a3a878465a590443308ea9e14459ab5943f699cff4887c844af4ed76ce577",
+      "bytes": 62820
+    },
+    {
+      "source": "https://front.barnes.vsavr.ru/fonts/TildaSans-Regular.woff2",
+      "file": "assets/source/b99a8d6d757b.woff2",
+      "sha256": "2670dad44ca6c2a1b9bbdbf1af6d8db9173f2dbe31604e80bdf9599b55047d41",
+      "bytes": 61636
+    },
+    {
+      "source": "https://core-renderer-tiles.maps.yandex.net/tiles?l=map&x=6&y=2&z=3&scale=1&lang=ru_RU&v=26.10.07-0%7Eb%3A261001132730%7Eia%3A26.09.28-0%7Eib%3A26.10.07-4",
+      "file": "assets/source/be5ff3c9cf24.png",
+      "sha256": "cd7514253da2202fd83328f5adc053a2f1e0ae2a52011bb1de1edfa7e2eea4e4",
+      "bytes": 35966
+    },
+    {
+      "source": "https://core-renderer-tiles.maps.yandex.net/tiles?l=map&x=1237&y=641&z=11&scale=1&lang=ru_RU&v=26.10.07-0%7Eb%3A261001132730%7Eia%3A26.09.28-0%7Eib%3A26.10.07-4",
+      "file": "assets/source/c0a2fb1a9415.png",
+      "sha256": "e80ccb6b22ecac9e341803ff14113f72288455ee906087813f74a02d2ba2d23a",
+      "bytes": 23172
+    },
+    {
+      "source": "https://c15d3839-d361-4fb8-9615-0c7a980d0169.selstorage.ru/resize_cache/11174654/8f5ddbc1f811f957fe777caaf9cef323/iblock/753/753a5fd832550d48dca46a89a654e6e9/f65d8dbc17c559c5df2fd4ac4d1c0c94.png",
+      "file": "assets/source/cee560c8a397.png",
+      "sha256": "fb2e3f1a53a0c7438f13a9b8fb96b3e01abfcc5c81747cad286cdbdfa85d5a03",
+      "bytes": 855034
+    },
+    {
+      "source": "https://c15d3839-d361-4fb8-9615-0c7a980d0169.selstorage.ru/resize_cache/11077216/d13733056f669deb3558a833a5d4f8f4/iblock/b14/b1458d8c7da4cb2373d44d148cf11cf1/e167fd1f2a4cf9008a52234ee204eb64.jpg",
+      "file": "assets/source/d100227df6a0.jpg",
+      "sha256": "0671f2a5ea79dac1b33ce39e1cdbb6896ee1d2af261942bce5a7cbc76f608baa",
+      "bytes": 82620
+    },
+    {
+      "source": "https://core-renderer-tiles.maps.yandex.net/tiles?l=map&x=1&y=0&z=2&scale=1&lang=ru_RU&v=26.10.07-0%7Eb%3A261001132730%7Eia%3A26.09.28-0%7Eib%3A26.10.07-4",
+      "file": "assets/source/d454a27b72e6.png",
+      "sha256": "4b213ea322ae11dfd52284d4ac25926e6ceb6234170e33a55d33f8e173d64e34",
+      "bytes": 10516
+    },
+    {
+      "source": "https://c15d3839-d361-4fb8-9615-0c7a980d0169.selstorage.ru/resize_cache/11116858/d13733056f669deb3558a833a5d4f8f4/iblock/5d5/5d56c368b7b90661984b35f84747a85c/7e21f16575f6c925b87a1ba5daae4a33.jpg",
+      "file": "assets/source/d5b716c8785b.jpg",
+      "sha256": "5a8c82e4b572a40ec987e51fbd2f9397bfb637f057b13a1e3d62b595b32f1dea",
+      "bytes": 68081
+    },
+    {
+      "source": "https://core-renderer-tiles.maps.yandex.net/tiles?l=map&x=1236&y=641&z=11&scale=1&lang=ru_RU&v=26.10.07-0%7Eb%3A261001132730%7Eia%3A26.09.28-0%7Eib%3A26.10.07-4",
+      "file": "assets/source/db731c1a7aae.png",
+      "sha256": "8e850b8546d4ec01faf4a0bc4f77172c50d35731375c4d329d3094f283dc982d",
+      "bytes": 22493
+    },
+    {
+      "source": "https://core-renderer-tiles.maps.yandex.net/tiles?l=map&x=3&y=1&z=2&scale=1&lang=ru_RU&v=26.10.07-0%7Eb%3A261001132730%7Eia%3A26.09.28-0%7Eib%3A26.10.07-4",
+      "file": "assets/source/dfc880404774.png",
+      "sha256": "d2978898935f50e192de555f3cc0f8718dc599d38ba4e53f1f6666c5e0424477",
+      "bytes": 20347
+    },
+    {
+      "source": "https://yastatic.net/s3/front-maps-static/maps-front-jsapi-3/3.0.21527208/out/yandex/build/bundles/main.css",
+      "file": "assets/source/e28230ec6c40.css",
+      "sha256": "559a68d0300d2fead8845e150926bfd8f53de31382c968ff5df9f47f09a4c5c6",
+      "bytes": 99631
+    },
+    {
+      "source": "https://c15d3839-d361-4fb8-9615-0c7a980d0169.selstorage.ru/resize_cache/11047313/b15fe9807ad882b4405a1355d53bd408/iblock/798/7986dcb4773a01a1da2c92d17250fc31/6d474725cd50dd0569c65be0bfc28276.jpg",
+      "file": "assets/source/e29de3bc99f1.jpg",
+      "sha256": "25e2ca0f8a0c417c62fc14f1a5a66f89ce762cf9ed1d6c9c403e34314cccfc69",
+      "bytes": 129612
+    },
+    {
+      "source": "https://core-renderer-tiles.maps.yandex.net/tiles?l=map&x=1239&y=642&z=11&scale=1&lang=ru_RU&v=26.10.07-0%7Eb%3A261001132730%7Eia%3A26.09.28-0%7Eib%3A26.10.07-4",
+      "file": "assets/source/e35c239c50c1.png",
+      "sha256": "a374cfd14943c8700815dfb775dc2fd34cc889a4829f2e1fcef6d18751de3554",
+      "bytes": 20396
+    },
+    {
+      "source": "https://core-renderer-tiles.maps.yandex.net/tiles?l=map&x=1238&y=642&z=11&scale=1&lang=ru_RU&v=26.10.07-0%7Eb%3A261001132730%7Eia%3A26.09.28-0%7Eib%3A26.10.07-4",
+      "file": "assets/source/e4fcf8d37df5.png",
+      "sha256": "95447307b0354404db506987f89cd1451bf8227afa394fe1b1251aee202cd2c2",
+      "bytes": 23107
+    },
+    {
+      "source": "https://core-renderer-tiles.maps.yandex.net/tiles?l=map&x=1240&y=641&z=11&scale=1&lang=ru_RU&v=26.10.07-0%7Eb%3A261001132730%7Eia%3A26.09.28-0%7Eib%3A26.10.07-4",
+      "file": "assets/source/e906f1b5fae2.png",
+      "sha256": "0c050ac172b8e68f1d795da93dce1770b20911201505f8e29df9b07de66bc359",
+      "bytes": 15833
+    },
+    {
+      "source": "https://c15d3839-d361-4fb8-9615-0c7a980d0169.selstorage.ru/resize_cache/11016384/d13733056f669deb3558a833a5d4f8f4/iblock/497/497d8a35d65b14da684b7318a08f2903/7b0f80c9fd74105f7afd9cb599dc6f32.jpeg",
+      "file": "assets/source/e9c8aa675761.jpeg",
+      "sha256": "695c2437ed35574d21e5491e9c71b07cd5f621e3a9ae169e9fd78ad5d9796728",
+      "bytes": 99520
+    },
+    {
+      "source": "https://front.barnes.vsavr.ru/fonts/TildaSans-Semibold.woff2",
+      "file": "assets/source/ec07a4d0adc8.woff2",
+      "sha256": "3814f8c444073262523050f3554c6f09cb49353e1f6fdc22a3561d354a231439",
+      "bytes": 63528
+    },
+    {
+      "source": "https://c15d3839-d361-4fb8-9615-0c7a980d0169.selstorage.ru/resize_cache/11062796/e03efc56e2af543e146e66d4d9bf1d3e/iblock/82d/82df60ef0e38ba387534e1f52b58fac4/7dbbcf346c4c192911fbfcbfa93729e3.jpg",
+      "file": "assets/source/ecd5335f18af.jpg",
+      "sha256": "48560092f9aed64a72c1040a03846daca31f759b1c33ef0fd7d7895ab8249e0f",
+      "bytes": 97566
+    },
+    {
+      "source": "https://core-renderer-tiles.maps.yandex.net/tiles?l=map&x=0&y=3&z=3&scale=1&lang=ru_RU&v=26.10.07-0%7Eb%3A261001132730%7Eia%3A26.09.28-0%7Eib%3A26.10.07-4",
+      "file": "assets/source/efb3841071c8.png",
+      "sha256": "bc812ad21f997766133520f63261c39b6e2dd7afddaf605f8c258de641e6cbf8",
+      "bytes": 7100
+    },
+    {
+      "source": "https://core-renderer-tiles.maps.yandex.net/tiles?l=map&x=1&y=1&z=2&scale=1&lang=ru_RU&v=26.10.07-0%7Eb%3A261001132730%7Eia%3A26.09.28-0%7Eib%3A26.10.07-4",
+      "file": "assets/source/f1a4bd916067.png",
+      "sha256": "76b4710f54484f45a071ac6ca6a10015bd731b8e9d92183a27042658e3d6185d",
+      "bytes": 17943
+    },
+    {
+      "source": "https://c15d3839-d361-4fb8-9615-0c7a980d0169.selstorage.ru/resize_cache/11240031/50c67a0738bb1843e93eec7710536d7b/iblock/c79/c792bc63b543cf460d204feb7435929a/72c763cc03eceb3f46094522d6bc039b.png",
+      "file": "assets/source/f42b2f83fe65.png",
+      "sha256": "606637ded9cc50a385f149341249a3d38da3790162e24230d1a3854318a3e33a",
+      "bytes": 2690321
+    },
+    {
+      "source": "https://yastatic.net/s3/front-maps-static/maps-front-jsapi-3/3.0.21527208/out/yandex/build/bundles/0-0-1/controls.css",
+      "file": "assets/source/f4563e28471c.css",
+      "sha256": "4a9143e5dd82acd28c1f4a20ae6f4188e9f7f57123e0ee6764febd105468344d",
+      "bytes": 4992
+    },
+    {
+      "source": "https://core-renderer-tiles.maps.yandex.net/tiles?l=map&x=1238&y=641&z=11&scale=1&lang=ru_RU&v=26.10.07-0%7Eb%3A261001132730%7Eia%3A26.09.28-0%7Eib%3A26.10.07-4",
+      "file": "assets/source/f50ea3e762de.png",
+      "sha256": "173d7730149920b8c19942ec8d4233cf7fd843314a48a1d13fede40afabbc71a",
+      "bytes": 18787
+    },
+    {
+      "source": "https://front.barnes.vsavr.ru/pictures/logo.svg",
+      "file": "assets/source/f8285279bd12.svg",
+      "sha256": "7aa20aa89b87356c503ea3ffeec8a7959aa0554968c5816e226a6254b0ed31d0",
+      "bytes": 10900
+    },
+    {
+      "source": "https://front.barnes.vsavr.ru/pictures/office-contact/telegram.svg",
+      "file": "assets/source/fb0c64d3cf85.svg",
+      "sha256": "4435c9a57e165a1c3b7f27e0b5b11b82b10d674ea4fff7f6748cb67b7fcb994e",
+      "bytes": 757
+    },
+    {
+      "source": "https://c15d3839-d361-4fb8-9615-0c7a980d0169.selstorage.ru/resize_cache/11184813/d13733056f669deb3558a833a5d4f8f4/iblock/db2/db24f191e08eee934c5cc60b9a802c09/89f313abfb1178fdb6326e94eaf10440.jpg",
+      "file": "assets/source/fbfb69732de9.jpg",
+      "sha256": "ff6f11903783209bc88fb7ddc1441572bea19838e6d66099ceca50c97b9dd841",
+      "bytes": 86367
+    },
+    {
+      "source": "https://front.barnes.vsavr.ru/pictures/floating-expert/alina-medvedeva.webp",
+      "file": "assets/source/fc29905fc494.webp",
+      "sha256": "3da03b866f487a335e07192a6d53e0992cadf15631cdea2e203155db19ce0fbf",
+      "bytes": 9372
+    }
+  ]
+}
