@@ -1,7 +1,7 @@
 /* Commercial adapter for the 12 October reference: no residential market row. */
 html body.commercial-node .resort-filters.hero-filter-modal { z-index:11000; }
 html body.commercial-node .catalog-mode-toolbar { grid-template-columns:minmax(0,1fr) auto; gap:24px 20px; }
-html body.commercial-node .catalog-mode-toolbar .barnes-brand-filters { grid-row:1;grid-column:1;justify-content:flex-start;margin:0; }
+html body.commercial-node .catalog-mode-toolbar .barnes-brand-filters { grid-row:1;grid-column:1;justify-content:flex-end;margin:0; }
 html body.commercial-node .catalog-mode-toolbar .catalog-grid__sort[class][class] { grid-row:1;grid-column:2;transform:none;margin:0; }
 html body.commercial-node .catalog-mode-toolbar .catalog-mode-filters.catalog-quick-filters { grid-row:2;grid-column:1;grid-template-columns:repeat(3,minmax(0,1fr)); }
 html body.commercial-node .catalog-mode-toolbar .catalog-mode-detailed-filters { grid-row:2;grid-column:2; }
