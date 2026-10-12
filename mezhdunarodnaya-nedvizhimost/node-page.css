@@ -1,4 +1,20 @@
 /* International content inside the approved node component contracts. */
+/* A title never adds another line to a listing card, including city variants. */
+html body .catalog-grid .apartment-card--catalog .apartment-card__name-text[class] {
+  display: block;
+  min-width: 0;
+  min-height: 0;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  -webkit-line-clamp: unset;
+}
+.international-node-design .map-browser__card h3 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
 .international-map-filter {
   align-items: center;
   background: transparent;
