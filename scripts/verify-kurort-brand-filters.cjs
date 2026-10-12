@@ -16,7 +16,15 @@ const assert = require('node:assert/strict');
       await listing.getByRole('checkbox', { name: 'Эксклюзив BARNES', exact: true }).focus();
       await page.keyboard.press('Space');
       assert.deepEqual(await page.evaluate(() => BarnesFilters.getState().brandFlags), ['selection', 'exclusive']);
-      assert.equal(await page.locator('.barnes-brand-filters__notice').isVisible(), true);
+      assert.equal(await page.locator('.barnes-brand-filters__notice').count(), 0, 'No technical description on checkbox selection');
+      const gaps = await listing.evaluate(el => {
+        const toolbar = el.closest('.catalog-mode-toolbar');
+        const switchRect = toolbar.querySelector('.catalog-mode-switch').getBoundingClientRect();
+        const filtersRect = toolbar.querySelector('.catalog-mode-filters').getBoundingClientRect();
+        const lastBottom = Math.max(...Array.from(toolbar.children).filter(child => child !== el).map(child => child.getBoundingClientRect().bottom));
+        return [filtersRect.top - switchRect.bottom, el.getBoundingClientRect().top - lastBottom];
+      });
+      assert.ok(Math.abs(gaps[0] - gaps[1]) < 1, `Matching toolbar row gaps: ${gaps}`);
       for (const label of await listing.locator('label').all()) {
         const box = await label.boundingBox();
         assert.ok(box.x >= 0 && box.x + box.width <= width, 'Label fits viewport');
@@ -27,7 +35,7 @@ const assert = require('node:assert/strict');
       if (width <= 540) await page.locator('.map-browser__handle').click();
       assert.equal(await map.getByRole('checkbox', { name: 'Выбор BARNES', exact: true }).isChecked(), true);
       assert.equal(await map.getByRole('checkbox', { name: 'Эксклюзив BARNES', exact: true }).isChecked(), true);
-      assert.match(await page.locator('.map-browser__metadata-notice').textContent(), /подборки BARNES/);
+      assert.equal(await page.locator('.map-browser__metadata-notice').isVisible(), false, 'No brand debug notice in map');
       const before = await page.locator('.map-browser__card').count();
       await map.getByRole('checkbox', { name: 'Выбор BARNES', exact: true }).uncheck();
       assert.equal(await page.locator('.map-browser__card').count(), before, 'Missing metadata must not invent results');
