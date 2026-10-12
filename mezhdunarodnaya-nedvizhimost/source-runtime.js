@@ -16,7 +16,8 @@
   function openDialog(kind, trigger) {
     if(kind==='callback'&&window.BARNES_OPEN_CONTACT){window.BARNES_OPEN_CONTACT(trigger);return;}
     closeDialog(); returnFocus=trigger || document.activeElement;
-    const template=one('#source-'+kind); if(!template)return;
+    const mapFilters=kind==='filters'&&trigger?.matches('.map-browser__filter-toggle,.international-map-filter');
+    const template=one(mapFilters?'#source-map-filters':'#source-'+kind); if(!template)return;
     dialog=template.content.firstElementChild.cloneNode(true);
     if(kind==='callback'&&trigger?.matches('.floating-expert__card,.catalog-contact__card-submit'))one('.feedback-modal__title',dialog).textContent='Обратная связь';
     document.body.append(dialog); document.body.style.overflow='hidden';
