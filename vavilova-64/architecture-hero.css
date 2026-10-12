@@ -156,6 +156,10 @@
   .catalog-detail .detail-hero .vavilova-hero-fact:not(:last-child) { padding-right: 10px; margin-right: 10px; }
   .catalog-detail .detail-hero .vavilova-hero-fact dt { font-size: 9px; }
 }
+/* Mobile has one CTA; hidden presentation action is also out of tab order. */
+@media (max-width:768px) {
+  .catalog-detail .detail-hero .detail-hero__actions .detail-hero__button--secondary { display: none; }
+}
 @media (prefers-reduced-motion:reduce) {
   .catalog-detail .detail-hero .detail-hero__button,
   .catalog-detail .detail-hero .architecture-hero-arrow { transition: none; }
