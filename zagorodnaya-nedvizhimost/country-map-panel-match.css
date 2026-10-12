@@ -18,7 +18,7 @@
   html body.country-node-page .country-map-expanded .catalog-projects-map__panel-filters .catalog-quick-filters__item[data-v-6fd45cc6] {height:58px;min-height:58px;padding:0;border:0;}
   html body.country-node-page .country-map-expanded .catalog-projects-map__panel-filters .catalog-quick-filters__button[data-v-6fd45cc6] {display:flex;align-items:center;gap:12px;width:100%;height:58px;min-height:58px;padding:4px 28px 0 8px;border:0;border-bottom:1px solid #e4e4e4;border-radius:0;background:#fff;color:#4f4d49;text-align:left;}
   html body.country-node-page .country-map-expanded .catalog-projects-map__panel-filters .catalog-quick-filters__button:is(:hover,.is-open,.is-active)[data-v-6fd45cc6] {border-bottom-color:#8b1d25;background:#fff;color:#8b1d25;}
-  html body.country-node-page .country-map-expanded .catalog-projects-map__panel-filters .catalog-quick-filters__value[data-v-6fd45cc6] {display:block;flex:1;min-width:0;margin:0;color:inherit;font-size:17px;font-weight:300;line-height:22px;}
+  html body.country-node-page .country-map-expanded .catalog-projects-map__panel-filters .catalog-quick-filters__value[data-v-6fd45cc6] {display:block;align-self:center;flex:1;min-width:0;margin:0;color:inherit;font-size:17px;font-weight:300;line-height:22px;}
   html body.country-node-page .country-map-expanded .catalog-projects-map__panel-filters .catalog-quick-filters__chevron[data-v-6fd45cc6] {width:10px;height:10px;right:8px;top:calc(50% - 3px);border-right:1px solid;border-bottom:1px solid;transform:rotate(45deg);}
   html body.country-node-page .country-map-expanded .catalog-projects-map__panel-filters .catalog-quick-filters__button.is-open .catalog-quick-filters__chevron[data-v-6fd45cc6] {transform:rotate(225deg);}
   html body.country-node-page .country-map-expanded .country-map-filter-icon {display:block;flex:0 0 22px;width:22px;height:22px;}
@@ -43,7 +43,34 @@
 }
 @media (max-width:540px) {
   html body.country-node-page .country-map-expanded .catalog-projects-map__panel:not(.catalog-projects-map__panel--expanded) .country-map-market {display:none;}
-  html body.country-node-page .country-map-expanded .country-map-market {margin:0 16px 12px;}
   html body.country-node-page .country-map-expanded .country-map-filter-icon {display:none;}
-  html body.country-node-page .country-map-expanded .country-map-reset {width:100%;padding:6px 8px;border:0;background:#fff;color:#8b1d25;text-align:left;font:300 17px/22px "Tilda Sans",sans-serif;cursor:pointer;}
+  html body.country-node-page .country-map-expanded .catalog-projects-map__panel--expanded .catalog-projects-map__panel-handle {min-height:32px;}
+  html body.country-node-page .country-map-expanded .catalog-projects-map__panel--expanded .catalog-projects-map__panel-header {padding-bottom:12px;}
+  html body.country-node-page .country-map-expanded .catalog-projects-map__panel--expanded .catalog-projects-map__panel-search-row {grid-template-columns:minmax(0,1fr) 48px;gap:16px;margin:0 16px 12px;}
+  html body.country-node-page .country-map-expanded .catalog-projects-map__panel--expanded .catalog-projects-map__panel-search,
+  html body.country-node-page .country-map-expanded .catalog-projects-map__panel--expanded .catalog-projects-map__panel-filter {min-height:58px;border:0;border-bottom:1px solid #e4e4e4;border-radius:0;background:#fff;color:#4f4d49;}
+  html body.country-node-page .country-map-expanded .catalog-projects-map__panel--expanded .catalog-projects-map__panel-search {padding:0 8px;gap:12px;}
+  html body.country-node-page .country-map-expanded .catalog-projects-map__panel--expanded .catalog-projects-map__panel-search-icon svg {width:22px;height:22px;}
+  html body.country-node-page .country-map-expanded .catalog-projects-map__panel--expanded .catalog-projects-map__panel-search-input {font-size:17px;font-weight:300;}
+  html body.country-node-page .country-map-expanded .catalog-projects-map__panel--expanded .catalog-projects-map__panel-filter {display:grid;place-items:center;padding:0;}
+  html body.country-node-page .country-map-expanded .catalog-projects-map__panel--expanded .catalog-projects-map__panel-filter-icon {width:22px;height:22px;}
+  html body.country-node-page .country-map-expanded .catalog-projects-map__panel--expanded .country-map-market {display:flex;gap:28px;height:40px;margin:0 16px 12px;flex:none;}
+  html body.country-node-page .country-map-expanded .catalog-projects-map__panel--expanded .country-map-market button {min-height:40px;padding:0 0 12px;border:0;border-bottom:1px solid transparent;flex:none;line-height:22px;}
+  html body.country-node-page .country-map-expanded .catalog-projects-map__panel--expanded .country-map-market button[aria-pressed="true"] {border-bottom-color:#8b1d25;}
+  html body.country-node-page .country-map-expanded .catalog-projects-map__panel--expanded .catalog-projects-map__panel-filters.catalog-quick-filters {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 16px;margin:0 16px 12px;flex:none;}
+  html body.country-node-page .country-map-expanded .catalog-projects-map__panel--expanded .catalog-projects-map__panel-filters .catalog-quick-filters__item[data-v-6fd45cc6] {height:58px;min-height:58px;padding:0;border:0;}
+  html body.country-node-page .country-map-expanded .catalog-projects-map__panel--expanded .catalog-projects-map__panel-filters .catalog-quick-filters__button[data-v-6fd45cc6] {display:flex;align-items:center;gap:12px;width:100%;height:58px;min-height:58px;padding:4px 28px 0 8px;border:0;border-bottom:1px solid #e4e4e4;border-radius:0;background:#fff;color:#4f4d49;text-align:left;}
+  html body.country-node-page .country-map-expanded .catalog-projects-map__panel--expanded .catalog-projects-map__panel-filters .catalog-quick-filters__button:is(:hover,.is-open,.is-active)[data-v-6fd45cc6] {border-bottom-color:#8b1d25;background:#fff;color:#8b1d25;}
+  html body.country-node-page .country-map-expanded .catalog-projects-map__panel--expanded .catalog-projects-map__panel-filters .catalog-quick-filters__value[data-v-6fd45cc6] {display:block;align-self:center;flex:1;min-width:0;margin:0;color:inherit;font-size:17px;font-weight:300;line-height:22px;}
+  html body.country-node-page .country-map-expanded .catalog-projects-map__panel--expanded .catalog-projects-map__panel-filters .catalog-quick-filters__chevron[data-v-6fd45cc6] {width:10px;height:10px;right:8px;top:calc(50% - 3px);border-right:1px solid;border-bottom:1px solid;transform:rotate(45deg);}
+  html body.country-node-page .country-map-expanded .catalog-projects-map__panel--expanded .catalog-projects-map__panel-filters .catalog-quick-filters__button.is-open .catalog-quick-filters__chevron[data-v-6fd45cc6] {transform:rotate(225deg);}
+  html body.country-node-page .country-map-expanded .catalog-projects-map__panel--expanded .country-map-filter-icon {display:block;flex:0 0 22px;width:22px;height:22px;}
+  html body.country-node-page .country-map-expanded .catalog-projects-map__panel--expanded .country-map-filter-icon svg {display:block;width:22px;height:22px;}
+  html body.country-node-page .country-map-expanded .catalog-projects-map__panel--expanded .country-map-reference {display:grid;gap:12px;margin:0 16px 12px;padding:0;border:0;flex:none;}
+  html body.country-node-page .country-map-expanded .catalog-projects-map__panel--expanded .country-map-sort {height:58px;border-bottom:1px solid #e4e4e4;position:relative;}
+  html body.country-node-page .country-map-expanded .catalog-projects-map__panel--expanded .country-map-sort .country-sort-trigger {height:58px;min-height:58px;padding:4px 28px 0 8px;font-size:17px;font-weight:300;line-height:22px;}
+  html body.country-node-page .country-map-expanded .catalog-projects-map__panel--expanded .country-map-sort::after {content:"";position:absolute;right:8px;top:calc(50% - 3px);width:10px;height:10px;border-right:1px solid #4f4d49;border-bottom:1px solid #4f4d49;transform:rotate(45deg);pointer-events:none;}
+  html body.country-node-page .country-map-expanded .catalog-projects-map__panel--expanded .country-map-reference .country-brand-filters {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;height:58px;margin:0;align-items:center;}
+  html body.country-node-page .country-map-expanded .catalog-projects-map__panel--expanded .country-map-reference .country-brand-filters label {padding-inline-start:8px;gap:10px;font-size:17px;line-height:22px;}
+  html body.country-node-page .country-map-expanded .catalog-projects-map__panel--expanded .country-map-reset {width:100%;min-height:34px;padding:6px 8px;border:0;background:#fff;color:#8b1d25;text-align:left;font:300 17px/22px "Tilda Sans",sans-serif;cursor:pointer;}
 }
