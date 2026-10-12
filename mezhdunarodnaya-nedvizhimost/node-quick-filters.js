@@ -4,7 +4,7 @@
   var base = new URL('.', document.currentScript.src);
   var stylesheet = document.createElement('link');
   stylesheet.rel = 'stylesheet';
-  stylesheet.href = new URL('node-quick-filters.css?v=20261012-ref-sync-1', base).href;
+  stylesheet.href = new URL('node-quick-filters.css?v=20261012-country-label-1', base).href;
   document.head.appendChild(stylesheet);
   var template=document.querySelector('#source-filters').content;
   function choices(title){
@@ -14,7 +14,7 @@
   }
   var countries=choices('Страны'),types=choices('Тип недвижимости'),prices=choices('Диапазоны');
   var configs=[
-    Object.assign({title:'Локация',key:'directions',reset:'Все страны'},countries),
+    Object.assign({title:'Страна',key:'directions',reset:'Все страны'},countries),
     Object.assign({title:'Тип',key:'propertyTypes',reset:'Любой тип'},types),
     Object.assign({title:'Стоимость',key:'priceRanges',reset:'Любая'},prices),
     {title:'Спальни',key:'bedrooms',reset:'Любые',choices:['1','2','3','Более 3'],values:['1','2','3','4+']}
