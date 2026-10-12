@@ -326,6 +326,95 @@ breakpoints            = 540, 640, 768, 1024, 1280, 1440, 1920
 - [ ] In a separate approved cleanup task, decide the fate of unused `kurortnaya.css` and `kurortnaya.js`; they were not changed or deleted by this audit.
 - [ ] Add a small audit smoke test that verifies title, canonical, `lang`, zero root overflow, form accessible names and no failed external runtime requests.
 
+## Visual Parity Audit — опубликованная копия vs live reference
+
+### Scope and method
+
+- Проверяемая копия: https://daniilterekh-prog.github.io/barn-estate-homepage-clone/kurortnaya/
+- Live reference: https://barn-estate.ru/kurortnaya/
+- Дата проверки: 2026-10-12.
+- Сравнение сделано в одинаковых viewport: `390`, `541`, `768`, `1024`, `1025`, `1440` и `1920 px`.
+- Смотрелись только UI/layout-свойства: DOM-состояния, computed styles, размеры, координаты, сетки, отступы, формы, интерактивные состояния и responsive-переходы. Тексты, значения объектов и художественное качество фотографий в этот раздел не включались.
+- Важно: live-страница динамическая. Если число карточек меняется из-за ответа API, это нужно повторить отдельным тестом данных; ниже отмечены только наблюдаемые визуальные состояния опубликованных страниц.
+
+### Итог
+
+Копия сейчас не является pixel-perfect относительно live reference. Hero по основной композиции близок, сетка карточек направлений совпадает, но каталог, обе CTA-секции, header, footer, фильтры и popup используют разные UI-контракты. Наиболее заметный эффект — копия становится примерно на `1.3–2.2 тыс. px` короче на разных ширинах, потому что в текущем published state видна только одна карточка лота, тогда как live показывает 5 карточек на mobile и 12 на desktop.
+
+### Master parity table
+
+| ID | Блок | Наблюдаемое расхождение | Масштаб | Приоритет |
+|---|---|---|---|---:|
+| PARITY-001 | Catalog toolbar | В копии есть `catalog-mode-toolbar`: режимы «Новостройки / Вторичная», quick filters, sort и detailed filter. В live остаётся только сортировка. На `1440` копия добавляет около `123 px` toolbar и ещё меняет начало списка. | mobile + desktop | P1 |
+| PARITY-002 | Lot grid state | В published copy из 12 `.catalog-grid__item` виден 1, остальные имеют `display:none`; live показывает 5 mobile / 12 desktop. Это меняет высоту каталога на тысячи пикселей и сдвигает все нижние блоки. | all tested widths | P1 |
+| PARITY-003 | Consultation CTA | На desktop live держит CTA-контент слева (`x=68.3` на 1440), копия — справа (`x=796.7`). В live каналы связи идут одной строкой (`h=34`), в копии — grid 2×2 (`h=100`). Секция: `734` vs `846 px` на 1440. | ≥1025 | P1 |
+| PARITY-004 | Contact CTA | Live: форма слева, карточка эксперта справа. Copy: форма справа, карточка слева. На 1440 секция: `918` vs `640 px`; на 1920: `666` vs `700 px`. | ≥1025 | P1 |
+| PARITY-005 | Floating expert / modal | В live на момент проверки плавающая карточка не рендерилась. В копии она появляется справа снизу (`360×110 px` desktop, `358×97 px` mobile), а по клику открывает дополнительный feedback modal. Это лишний визуальный блок относительно текущего reference state. | all tested widths | P1 |
+| PARITY-006 | Header | Mobile live содержит телефон `22×22`, copy его скрывает. Кнопка меню: live `29×29`/`33×33`, copy `44×44` и смещена на `~7 px` вверх. На desktop live показывает текст «Поиск» и номер телефона, copy — icon-only search и 4 social/phone icons. | all tested widths | P1 |
+| PARITY-007 | Footer | Live использует 8 колонок в первой строке + 1 группу во второй (`nav h=530`, footer `h=1048.6` на 1440). Copy использует 6 колонок и 2 строки (`nav h=700`, footer `h=1218.6`). | ≥1025 | P1 |
+| PARITY-008 | Hero filter / CTA | H1 и общая ширина hero совпадают, но у copy радиус filter bar `1 px` вместо `3 px`; mobile submit `58 px / 18 px` вместо `56 px / 16 px`, desktop font также крупнее. | all tested widths | P2 |
+| PARITY-009 | New starts cards | На 1440 активная карточка live: `384×418 px`, y=`848.4`; copy: `384×367.9 px`, y=`893.1`. На 390 live card/track `h=323.4`, copy wrapper доходит до `h≈462 px`. Высота изображения и внутренний card contract не совпадают. | all tested widths | P1 |
+| PARITY-010 | Map block | На 1440 map box live: `x=68.3, w=1288.3`; copy: `x=57.8, w=1149.5`. У copy сама map-секция выше на `≈79 px`, хотя canvas по высоте близок. | ≥541 | P2 |
+| PARITY-011 | Departments | Геометрия карточек совпадает: desktop `643.2×340` + три `428.1×340`, radius `4 px`. Но copy добавляет eyebrow «Направления»: header становится `86.7` вместо `45.6 px`, grid опускается на `≈126 px`, секция выше на `71.1 px`. | all tested widths | P2 |
+| PARITY-012 | FAQ | Ширина и двухколоночная раскладка совпадают, но высоты item отличаются: live обычно `71`/`85.8 px`, copy `79`/`105 px`. Это похоже на несовпадающие line-height/padding, а не на контентную разницу. | ≥541 | P2 |
+| PARITY-013 | Page rhythm | На 1440 после hero нижние блоки идут с разными стартами: map live y=`1432.8`, copy y=`1431.1`; catalog grid live y=`1961.8`, copy y=`2038.8`; departments live y=`5723.4`, copy y=`4513.6` из-за разного состояния каталога. | all tested widths | P1 |
+
+### Responsive checkpoints
+
+| Viewport | Live reference | Published copy | Главное расхождение |
+|---:|---|---|---|
+| `390` | Hero `684 px`; filter `343×124`; только sort в catalog header; catalog starts y≈`1101.5` | Hero тот же по высоте; filter на `2 px` выше; toolbar `246 px`; catalog starts y≈`1486.7` | copy добавляет toolbar, меняет CTA height и показывает floating card |
+| `541` | Inline hero filter; catalog header `125.4 px`; sort `210×44` | catalog header `132.3 px`; toolbar `119 px`; sort/detail filter по `160 px` | переход tablet-state уже содержит copy-only controls |
+| `1024` | Catalog header `44 px`, только sort `210×44` | Header `86.7 px`; toolbar `119 px`; sort/detail filter `160 px` | лишняя панель меняет начало grid примерно на `555 px` |
+| `1025` | 3-column grid и только sort | 3-column grid, но toolbar остаётся; 11 карточек скрыты | breakpoint не возвращает страницу к reference contract |
+| `1440` | 12 лотов; CTA form слева; 8+1 footer groups | 1 видимый лот; CTA form справа; 6-column footer | самый сильный desktop mismatch |
+| `1920` | consultation `837.4 px`; contact `666 px`; footer/list rhythm reference | consultation `940 px`; contact `700 px`; filters/buttons всё ещё copy-style | wide desktop не интерполирует reference spacing |
+
+### Headers, navigation and links
+
+Проверены global header, sticky catalog navigation, menu trigger, search/favorites/phone cluster и footer links. Главный mismatch не в цвете, а в составе и hit-area элементов:
+
+- На `390` live оставляет компактную кнопку меню `29×29` и отдельный mobile phone icon `22×22`; copy рисует только `44×44` menu button.
+- На `1024` live показывает menu `33×33`, favorite `22×22`, search `22×22`; copy menu `44×44`, favorite `22×22`, search `24×24`.
+- На `1440` live показывает search с текстом «Поиск» (`71.5×22`) и телефон `167.8×21`; copy показывает только search icon и четыре contact icons по `24×24`.
+- Footer содержит одинаковое число крупных групп, но copy раскладывает их в другую grid: `6×2` вместо reference `8+1`. Поэтому одинаковый список ссылок визуально занимает другой объём.
+- Menu open-state нужно отдельно довести до parity через реальный pointer click: DOM-вызов click для copy не дал надёжного результата, поэтому это оставлено как behavioral follow-up, а не отмечено как подтверждённая поломка.
+
+### Forms, CTA and popup states
+
+- Hero form: общая структура совпадает, но у copy другой border radius и размер submit на mobile; на wide desktop меняется размер текста CTA.
+- Consultation: live использует горизонтальный ряд каналов и левую колонку; copy — 2×2 grid каналов и правую колонку. Это не только styling, но и другая композиция блока.
+- Contact: та же проблема в зеркальном виде — form/card поменяны местами, а contact methods переходят в две строки.
+- Floating card/modal: copy добавляет fixed UI, которого нет в текущем live state. На 390 click открывает full-screen modal (`375×900`), на 1440 — centered two-column modal (`940×659`). Эти состояния нужно либо полностью повторить в reference, либо убрать из copy.
+- Визуальные размеры полей и общая ширина form-контейнера близки, поэтому исправлять нужно прежде всего раскладку CTA, методы связи и vertical rhythm, а не переписывать всю форму.
+
+### Cards and filters
+
+**Start-sales cards.** Reference на 1440 показывает активную карточку `384×418 px`; copy — `384×367.9 px` и начинает slider ниже. На mobile copy wrapper заметно выше из-за собственного card/strip contract. Нужен один источник правил для image ratio, card body padding, action row и slider vertical alignment.
+
+**Lot cards.** При одинаковой desktop ширине `413.4 px` и image `413.4×310.1 px` первая карточка близка по размеру: live `543.9 px`, copy `540.3 px`. Проблема не в базовом image ratio, а в количестве видимых items и дополнительной toolbar, которая меняет весь каталог.
+
+**Department / ЖК cards.** Сама сетка и card geometry совпадают (`643.2×340`, `428.1×340`, radius `4 px`). Расхождение находится выше — в добавленном copy eyebrow и изменённых section paddings. Карточки не нужно переписывать до исправления header/section rhythm.
+
+**Filters.** Это самый явный copy-only слой: quick filters «Локация / Стоимость / Спальни», mode switch и detailed filter отсутствуют в live reference. Их нельзя считать безобидным расширением — они меняют высоту, переносы и точку начала карточек на каждом breakpoint.
+
+### What already matches
+
+- Hero H1: на 390, 541, 1024, 1440 и 1920 совпадают основные размер и положение; расхождение сосредоточено в controls.
+- Общая высота hero совпадает на проверенных desktop и hybrid widths.
+- Department cards совпадают по сетке, размерам image и radius.
+- Lot card image ratio и desktop column width совпадают.
+- FAQ остаётся двухколоночным на tablet/desktop; различается в основном высота строк.
+
+### Recommended fix order
+
+1. Убрать или привести к live contract `catalog-mode-toolbar`; восстановить видимость карточек в соответствии с тем же render state, что у reference.
+2. Сверить desktop grid order CTA: consultation form/content слева, contact form слева, expert card справа; вернуть horizontal methods row.
+3. Сверить header composition по breakpoint: mobile phone, search label, desktop phone text и menu icon box.
+4. Привести footer к reference grid `8+1` на wide desktop и проверить переходы около `1024–1280 px`.
+5. Перенести exact spacing/radius для hero, map, start-sales strip и departments header.
+6. После layout parity повторить pointer-level проверки menu, filter, sort, cards, floating card и modal; затем снять overlay screenshots на `390`, `1024`, `1440` и `1920 px`.
+
 ## Audit History
 
 ### 2026-10-08 — перенос reference UI Kit
