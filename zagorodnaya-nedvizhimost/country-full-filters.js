@@ -79,14 +79,8 @@
   const hero = document.querySelector('.catalog-hero-filters__filter-icon');
   hero?.addEventListener('click', () => open(hero));
   const listing = document.querySelector('.catalog-mode-detailed-filters');
-  const mapButton = listing?.cloneNode(true);
-  if (mapButton) {
-    mapButton.classList.add('country-map-filters');
-    document.querySelector('.catalog-projects-map__controls').prepend(mapButton);
-    mapButton.addEventListener('click', () => document.dispatchEvent(new CustomEvent('country-map-filter-open',{detail:{trigger:mapButton}})));
-  }
-  [hero, listing, mapButton].filter(Boolean).forEach(button => {
-    button.setAttribute('aria-controls', button===mapButton?'country-map-filters-panel':modal.id);
+  [hero, listing].filter(Boolean).forEach(button => {
+    button.setAttribute('aria-controls', modal.id);
     button.setAttribute('aria-haspopup', 'dialog');
     button.setAttribute('aria-expanded', 'false');
   });

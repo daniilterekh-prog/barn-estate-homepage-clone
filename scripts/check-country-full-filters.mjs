@@ -15,8 +15,9 @@ try {
     const viewport = {width,height:900};
     await page.setViewportSize(viewport);
     await page.goto(localURL);
-    await page.waitForFunction(()=>window.countryMatchesFullFilter && document.querySelector('.country-map-filters'));
-    for (const selector of ['.catalog-hero-filters__filter-icon','.catalog-mode-toolbar > .catalog-mode-detailed-filters','.country-map-filters']) {
+    await page.waitForFunction(()=>window.countryMatchesFullFilter);
+    assert.equal(await page.locator('.country-map-filters').count(),0);
+    for (const selector of ['.catalog-hero-filters__filter-icon','.catalog-mode-toolbar > .catalog-mode-detailed-filters']) {
       await page.locator(selector).click();
       assert.equal(await page.locator('.hero-filter-modal:visible').count(),1);
       assert.equal(await page.locator(selector).getAttribute('aria-expanded'),'true');
@@ -63,9 +64,11 @@ try {
     }
     await page.keyboard.press('Escape');
     await page.locator('[data-country-mode="lot"]').click();
-    await page.locator('.country-map-filters').click();
+    await page.locator('.catalog-projects-map__fullscreen').click();
+    await page.locator('.catalog-projects-map__panel-filter').click();
     await page.locator('.hero-filter-modal:visible [name="priceMax"]').fill('100000000');
     await page.locator('.hero-filter-modal:visible .hero-filter-modal__apply').click();
+    await page.locator('.catalog-projects-map__exit').click();
     assert.equal(await page.locator('.catalog-grid__item:not([hidden])').count(),4);
     await page.locator('.catalog-mode-toolbar > .catalog-mode-detailed-filters').click();
     assert.equal(await page.locator('[name="priceMax"]').inputValue(),'100000000');
@@ -76,7 +79,7 @@ try {
     await page.locator('.hero-filter-modal__apply').click();
     assert.equal(await page.locator('.catalog-grid__item:not([hidden])').count(),12);
     assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false);
-    results.push({width,geometry,pixels,rawPixels,entryPoints:3,applyReset:true,keyboard:true});
+    results.push({width,geometry,pixels,rawPixels,pageEntryPoints:2,expandedMapFilter:true,applyReset:true,keyboard:true});
   }
   assert.deepEqual(errors,[]);
   console.log(JSON.stringify({pass:true,results},null,2));
