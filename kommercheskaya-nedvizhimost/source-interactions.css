@@ -1,0 +1,9 @@
+/* Layout, typography and responsive rules come unchanged from the reference. */
+.news-section .splide__slide { flex-shrink: 0; margin-right: 40px; width: calc((100% - 80px) / 3); }
+@media (max-width: 1024px) { .news-section .splide__slide { width: calc((100% - 40px) / 2); } }
+@media (max-width: 560px) { .news-section .splide__slide { width: 100%; margin-right: 24px; } }
+@media (max-width: 767px) { .catalog-grid__item:nth-child(n+6) { display: none; } }
+[hidden] { display: none !important; }
+.source-form-status { margin-top: 12px; font-size: 14px; }
+.source-form-status:empty { display: none; }
+@media (prefers-reduced-motion: reduce) { .splide__list { transition: none !important; } }
