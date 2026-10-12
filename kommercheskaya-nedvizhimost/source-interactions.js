@@ -2,6 +2,8 @@
 (() => {
   const one = (selector, root = document) => root.querySelector(selector);
   const all = (selector, root = document) => [...root.querySelectorAll(selector)];
+  const consultationImage=one('.catalog-consultation__image');
+  if(consultationImage){consultationImage.src='assets/cta-alina-unified-v2.png';consultationImage.width=1942;consultationImage.height=809;document.body.classList.add('commercial-unified-cta');}
   const heroImage = one('.catalog-hero__image');
   if (heroImage) {
     const mobileSource = document.createElement('source');

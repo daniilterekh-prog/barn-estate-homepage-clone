@@ -39,3 +39,10 @@ html body.commercial-node .catalog-feedback-modal .feedback-modal__hero-image--a
 html body.commercial-node .catalog-best-offers .launch-card .apartment-card__name { display:block;min-width:0;min-height:0;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;-webkit-line-clamp:unset; }
 /* Zoom out only Alina's bottom-right floating avatar, not the request form. */
 html body.commercial-node .floating-expert__avatar[class] img { transform:scale(1.9); }
+/* One generated room spans the whole CTA, including behind Alina. */
+html body.commercial-unified-cta .catalog-consultation__media::before { display:none; }
+html body.commercial-unified-cta .catalog-consultation__image[class] { width:100%;object-fit:cover;object-position:center; }
+@media(max-width:540px){
+ html body.commercial-unified-cta .catalog-consultation__media { background:#111 url("assets/cta-alina-unified-v2.png") right center / auto 100% no-repeat; }
+ html body.commercial-unified-cta .catalog-consultation__mobile-photo img { object-position:100% 20%;transform:scale(2.3);transform-origin:50% 0; }
+}
