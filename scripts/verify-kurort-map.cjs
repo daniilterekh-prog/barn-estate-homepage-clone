@@ -13,6 +13,15 @@ const assert = require('node:assert/strict');
       if (width < 541) await page.getByRole('button', { name: 'Развернуть список объектов' }).click();
       await page.locator('.map-browser__card').first().waitFor();
       assert.equal(await page.locator('.map-browser__card').count(), 32);
+      await dialog.getByRole('button',{name:'Увеличить карту',exact:true}).click();
+      assert.notEqual(await dialog.locator('.map-browser__backdrop img').evaluate(el=>getComputedStyle(el).transform),'none');
+      await dialog.getByRole('button',{name:'Уменьшить карту',exact:true}).click();
+      assert.equal(await dialog.getByRole('button',{name:'Уменьшить карту',exact:true}).isDisabled(),true);
+      const mapBounds=await dialog.evaluate(el=>el.getBoundingClientRect().toJSON());
+      assert.equal(mapBounds.top,0,'Fullscreen map stays at viewport top after zoom');
+      assert.equal(mapBounds.height,900,'Fullscreen map fills viewport after zoom');
+      assert.deepEqual(await dialog.getByLabel('Локация',{exact:true}).locator('option').allTextContents(),['Локация','Сочи','Анапа','Алтай','Архыз']);
+      assert.deepEqual(await dialog.getByLabel('Спальни',{exact:true}).locator('option').allTextContents(),['Спальни','1','2','3','Более 3']);
       assert.deepEqual(await dialog.getByLabel('Тип объекта',{exact:true}).locator('option').allTextContents(),['Тип объекта','Апартаменты','Квартира','Пентхаус']);
       assert.equal(await dialog.getByRole('button',{name:'Новостройки',exact:true}).count(),1);
       assert.equal(await dialog.getByRole('button',{name:'Вторичка',exact:true}).count(),1);
@@ -20,7 +29,7 @@ const assert = require('node:assert/strict');
         const s = getComputedStyle(el);
         return { size: s.fontSize, weight: s.fontWeight, color: s.color, family: s.fontFamily };
       });
-      for (const selector of ['.map-browser__search input', '[data-filter=type]', '[data-filter=price]', '[data-filter=sort]']) {
+      for (const selector of ['.map-browser__search input', '[data-filter=type]', '[data-filter=price]', '[data-filter=sort]', '[data-filter=location]', '[data-filter=bedrooms]']) {
         const actualFont = await dialog.locator(selector).evaluate(el => {
           const s = getComputedStyle(el);
           return { size: s.fontSize, weight: s.fontWeight, color: s.color, family: s.fontFamily };
@@ -75,9 +84,9 @@ const assert = require('node:assert/strict');
       await dialog.waitFor({ state: 'hidden' });
       // Controlled annotated data validates independent type/market filtering, not invented production facts.
       await page.evaluate(()=>window.BarnesMapProjects.splice(0,window.BarnesMapProjects.length,
-        {name:'Apartment new',href:'#',image:'map-preview.png',priceRub:10,price:'10 ₽',propertyTypes:['apartment'],market:'new-build'},
-        {name:'Apartment resale',href:'#',image:'map-preview.png',priceRub:20,price:'20 ₽',propertyTypes:['apartment'],market:'secondary'},
-        {name:'Penthouse resale',href:'#',image:'map-preview.png',priceRub:30,price:'30 ₽',propertyTypes:['penthouse'],market:'secondary'}));
+        {name:'Apartment new',href:'#',image:'map-preview.png',priceRub:10,price:'10 ₽',propertyTypes:['apartment'],market:'new-build',directions:['Сочи'],bedrooms:['1']},
+        {name:'Apartment resale',href:'#',image:'map-preview.png',priceRub:20,price:'20 ₽',propertyTypes:['apartment'],market:'secondary',directions:['Анапа'],bedrooms:['2']},
+        {name:'Penthouse resale',href:'#',image:'map-preview.png',priceRub:30,price:'30 ₽',propertyTypes:['penthouse'],market:'secondary',directions:['Сочи'],bedrooms:['4+']}));
       await page.locator('.catalog-projects-map__fullscreen').click();
       if(width<541) await dialog.getByRole('button',{name:'Развернуть список объектов'}).click();
       await dialog.getByLabel('Тип объекта',{exact:true}).selectOption('apartment');
@@ -86,6 +95,12 @@ const assert = require('node:assert/strict');
       assert.deepEqual(await dialog.locator('.map-browser__card h3').allTextContents(),['Apartment resale']);
       await dialog.getByRole('button',{name:'Новостройки',exact:true}).click();
       assert.deepEqual(await dialog.locator('.map-browser__card h3').allTextContents(),['Apartment new']);
+      await dialog.getByRole('button',{name:'Сбросить фильтры'}).click();
+      assert.equal(await dialog.locator('.map-browser__card').count(),3);
+      await dialog.getByLabel('Локация',{exact:true}).selectOption('Сочи');
+      assert.equal(await dialog.locator('.map-browser__card').count(),2);
+      await dialog.getByLabel('Спальни',{exact:true}).selectOption('4+');
+      assert.deepEqual(await dialog.locator('.map-browser__card h3').allTextContents(),['Penthouse resale']);
       await dialog.getByRole('button',{name:'Сбросить фильтры'}).click();
       assert.equal(await dialog.locator('.map-browser__card').count(),3);
       assert.equal(await dialog.getByRole('button',{name:'Новостройки',exact:true}).getAttribute('aria-pressed'),'false');
