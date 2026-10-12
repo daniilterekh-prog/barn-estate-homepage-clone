@@ -111,8 +111,8 @@
   .catalog-detail .detail-hero .detail-hero__inner { padding-top: 170px; padding-bottom: 52px; }
 }
 @media (max-width:768px) {
-  .catalog-detail .detail-hero { min-height: 690px; }
-  .catalog-detail .detail-hero .detail-hero__inner { padding-top: 160px; padding-bottom: 32px; }
+  .catalog-detail .detail-hero { height: auto; min-height: 560px; }
+  .catalog-detail .detail-hero .detail-hero__inner { height: auto; min-height: inherit; padding-top: 160px; padding-bottom: 32px; }
   .catalog-detail .detail-hero .detail-hero__body { max-width: none; }
   .catalog-detail .detail-hero .detail-hero__breadcrumbs { margin-bottom: 20px; }
   .catalog-detail .detail-hero .detail-hero__title { font-size: clamp(35px,6.7vw,49px); line-height: 1.09; }
@@ -136,7 +136,7 @@
   }
 }
 @media (max-width:540px) {
-  .catalog-detail .detail-hero { min-height: 650px; }
+  .catalog-detail .detail-hero { min-height: 520px; }
   .catalog-detail .detail-hero .detail-hero__inner { padding-top: 120px; padding-bottom: 28px; }
   .catalog-detail .detail-hero .detail-hero__title { font-size: clamp(32px,9.9vw,42px); }
   .catalog-detail .detail-hero .detail-hero__location { font-size: 16px; margin-top: 14px; }
