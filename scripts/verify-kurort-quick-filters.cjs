@@ -9,6 +9,8 @@ const assert = require('node:assert/strict');
       const buttons = page.locator('.catalog-mode-filters .catalog-quick-filters__button');
       await buttons.first().waitFor();
       assert.equal(await buttons.count(),4,'Four quick filters, including property type');
+      const widths=await buttons.evaluateAll(elements=>elements.map(el=>el.getBoundingClientRect().width));
+      assert.ok(Math.max(...widths)-Math.min(...widths)<1,'All quick filters must have equal widths');
       await buttons.nth(0).click();
       const dropdown = page.locator('.resort-quick-dropdown');
       await dropdown.waitFor({state:'visible',timeout:5000});
