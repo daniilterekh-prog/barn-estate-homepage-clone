@@ -5,7 +5,7 @@ const assert = require('node:assert/strict');
   try {
     for (const width of [320, 390, 540]) {
       const page = await browser.newPage({ ...devices['iPhone 13'], viewport: { width, height: 900 } });
-      await page.goto('http://127.0.0.1:8769/kurortnaya/');
+      await page.goto((process.env.KURORT_BASE_URL || 'http://127.0.0.1:8769/kurortnaya/'));
       const toggle = page.locator('.catalog-primary-call');
       await toggle.waitFor();
       assert.match(await toggle.getAttribute('href'), /^tel:/);

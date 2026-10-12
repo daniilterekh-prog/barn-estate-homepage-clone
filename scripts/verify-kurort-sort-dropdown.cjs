@@ -5,7 +5,7 @@ const assert = require('node:assert/strict');
   try {
     for (const width of [320,390,1440,2560]) {
       const page = await browser.newPage({ viewport:{width,height:1000} });
-      await page.goto('http://127.0.0.1:8769/kurortnaya/');
+      await page.goto((process.env.KURORT_BASE_URL || 'http://127.0.0.1:8769/kurortnaya/'));
       const popup = page.locator('.resort-quick-dropdown');
       const sort = page.locator('.catalog-grid__sort .resort-sort-trigger');
       await sort.waitFor();

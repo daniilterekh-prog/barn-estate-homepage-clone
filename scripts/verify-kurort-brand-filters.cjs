@@ -5,7 +5,7 @@ const assert = require('node:assert/strict');
   try {
     for (const width of [320, 390, 540, 768, 1440, 2560]) {
       const page = await browser.newPage({ viewport: { width, height: 1000 } });
-      await page.goto('http://127.0.0.1:8769/kurortnaya/');
+      await page.goto((process.env.KURORT_BASE_URL || 'http://127.0.0.1:8769/kurortnaya/'));
       const listing = page.locator('[data-brand-context=listing]');
       const map = page.locator('[data-brand-context=map]');
       await listing.waitFor();
@@ -103,7 +103,7 @@ const assert = require('node:assert/strict');
       { name: 'Exclusive fixture', href: '#b', image: '', priceRub: 2, market: 'new-build', brandFlags: ['exclusive'] },
       { name: 'Other fixture', href: '#c', image: '', priceRub: 3, market: 'new-build', brandFlags: [] }
     ]) }));
-    await page.goto('http://127.0.0.1:8769/kurortnaya/');
+    await page.goto((process.env.KURORT_BASE_URL || 'http://127.0.0.1:8769/kurortnaya/'));
     await page.locator('[data-brand-context=listing]').waitFor();
     await page.locator('.catalog-projects-map__fullscreen').click();
     const map = page.locator('[data-brand-context=map]');

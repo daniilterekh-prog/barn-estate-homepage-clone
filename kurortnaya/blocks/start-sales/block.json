@@ -1,0 +1,30 @@
+{
+  "id": "first-degree-start-sales",
+  "title": "Старты продаж",
+  "version": "1.0.0",
+  "source": {
+    "repo": "daniilterekh-prog/barn-estate-homepage-clone",
+    "commit": "14401c518b4a5f51e910121f1741d79efa164a80",
+    "route": "kurortnaya",
+    "selector": "#catalog-new-starts"
+  },
+  "entry": "fragment.html",
+  "mobileEntry": "mobile.html",
+  "preview": "index.html",
+  "styles": [
+    "styles.css"
+  ],
+  "runtime": "../_shared/runtime.js",
+  "contract": "../../UI-KIT.md",
+  "dependencies": [
+    "../_shared/",
+    "../../css/",
+    "../../js/",
+    "../../assets/"
+  ],
+  "hooks": [],
+  "assembly": true,
+  "scripts": [
+    "../../js/start-sales-cards.js"
+  ]
+}

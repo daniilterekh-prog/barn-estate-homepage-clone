@@ -1,0 +1,28 @@
+{
+  "id": "first-degree-card-lot",
+  "title": "Карточка лота",
+  "version": "1.0.0",
+  "source": {
+    "repo": "daniilterekh-prog/barn-estate-homepage-clone",
+    "commit": "14401c518b4a5f51e910121f1741d79efa164a80",
+    "route": "kurortnaya",
+    "selector": ".catalog-grid__item[data-listing-mode=\"secondary\"] .apartment-card"
+  },
+  "entry": "fragment.html",
+  "mobileEntry": "mobile.html",
+  "preview": "index.html",
+  "styles": [
+    "styles.css"
+  ],
+  "runtime": "../_shared/runtime.js",
+  "contract": "../../UI-KIT.md",
+  "dependencies": [
+    "../_shared/",
+    "../../css/",
+    "../../js/",
+    "../../assets/"
+  ],
+  "hooks": [],
+  "assembly": false,
+  "scripts": []
+}

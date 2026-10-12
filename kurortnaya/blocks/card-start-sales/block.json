@@ -1,0 +1,28 @@
+{
+  "id": "first-degree-card-start-sales",
+  "title": "Карточка старта продаж",
+  "version": "1.0.0",
+  "source": {
+    "repo": "daniilterekh-prog/barn-estate-homepage-clone",
+    "commit": "14401c518b4a5f51e910121f1741d79efa164a80",
+    "route": "kurortnaya",
+    "selector": ".catalog-best-offers .launch-card"
+  },
+  "entry": "fragment.html",
+  "mobileEntry": "mobile.html",
+  "preview": "index.html",
+  "styles": [
+    "styles.css"
+  ],
+  "runtime": "../_shared/runtime.js",
+  "contract": "../../UI-KIT.md",
+  "dependencies": [
+    "../_shared/",
+    "../../css/",
+    "../../js/",
+    "../../assets/"
+  ],
+  "hooks": [],
+  "assembly": false,
+  "scripts": []
+}

@@ -3,7 +3,7 @@ const fs = require('node:fs/promises');
 (async () => {
   const target = 'mezhdunarodnaya-nedvizhimost';
   const drawer = await fs.readFile(target + '/map-filters-template.html', 'utf8');
-  let code = await fs.readFile('kurortnaya/map-fullscreen.js', 'utf8');
+  let code = await fs.readFile('kurortnaya/js/map-fullscreen.js', 'utf8');
   code = code.replaceAll('Локация', 'Страна').replace("unavailable.push('локация')", "unavailable.push('страна')");
   code = code.replace("if (!trigger || !source || document.querySelector('.map-browser')) return;", "if (!trigger || !source || document.querySelector('.map-browser')) return;\n  source.dataset.nodeMapBrowser = 'true';");
   code = code.replace("source.dataset.nodeMapBrowser = 'true';", "source.dataset.nodeMapBrowser = 'true';\n  var filterTemplate=document.createElement('template');filterTemplate.id='source-map-filters';filterTemplate.innerHTML="+JSON.stringify(drawer)+";document.body.appendChild(filterTemplate);");
@@ -42,7 +42,7 @@ const fs = require('node:fs/promises');
   code = code.replace("[query, type, price, sort, location, bedrooms].forEach(function (input) { input.value = ''; });", "applied = null;\n    [query, type, price, sort, location, bedrooms].forEach(function (input) { input.value = ''; });");
   code = code.replace('window.BarnesFilters.patch({ brandFlags: [] })', 'window.BarnesFilters.patch({ brandFlags: [], directions: [], propertyTypes: [], priceRanges: [], bedrooms: \'\', priceMin: \'\', priceMax: \'\' })');
   code = code.replace('if (dialog.hidden) return;\n    if (event.key', "if (dialog.hidden || event.defaultPrevented || document.querySelector('.hero-filter-modal')) return;\n    if (event.key");
-  await fs.writeFile(target + '/node-map-browser.css', await fs.readFile('kurortnaya/map-fullscreen.css', 'utf8'));
+  await fs.writeFile(target + '/node-map-browser.css', await fs.readFile('kurortnaya/css/map-fullscreen.css', 'utf8'));
   await fs.writeFile(target + '/node-map-browser.js', code);
   for (const file of ['index.html', 'standalone/index.html']) {
     const prefix = file.startsWith('standalone/') ? '../' : '';

@@ -6,7 +6,7 @@ const assert = require('node:assert/strict');
   try {
     for (const width of [320, 390, 768, 1024, 1366, 1440, 1920, 2560]) {
       const page = await browser.newPage({ viewport: { width, height: 1000 } });
-      await page.goto('http://127.0.0.1:8769/kurortnaya/', { waitUntil: 'domcontentloaded' });
+      await page.goto((process.env.KURORT_BASE_URL || 'http://127.0.0.1:8769/kurortnaya/'), { waitUntil: 'domcontentloaded' });
       await page.locator('.catalog-contact__methods').waitFor();
       await page.waitForFunction(() => document.querySelector('link[href*="ui-kit.css"]')?.sheet);
       await page.evaluate(() => document.fonts.ready);

@@ -1,0 +1,31 @@
+{
+  "id": "first-degree-cta-central",
+  "title": "Центральный CTA с экспертом",
+  "version": "1.0.0",
+  "source": {
+    "repo": "daniilterekh-prog/barn-estate-homepage-clone",
+    "commit": "14401c518b4a5f51e910121f1741d79efa164a80",
+    "route": "kurortnaya",
+    "selector": "#catalog-consultation"
+  },
+  "entry": "fragment.html",
+  "mobileEntry": "mobile.html",
+  "preview": "index.html",
+  "styles": [
+    "styles.css"
+  ],
+  "runtime": "../_shared/runtime.js",
+  "contract": "../../UI-KIT.md",
+  "dependencies": [
+    "../_shared/",
+    "../../css/",
+    "../../js/",
+    "../../assets/"
+  ],
+  "hooks": [
+    "onSubmit",
+    "onRequest"
+  ],
+  "assembly": true,
+  "scripts": []
+}

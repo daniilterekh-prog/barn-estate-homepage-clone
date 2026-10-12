@@ -5,7 +5,7 @@ const assert = require('node:assert/strict');
   try {
     for (const width of [320, 390, 540, 1440, 2560]) {
       const page = await browser.newPage({ viewport: { width, height: 1000 } });
-      await page.goto('http://127.0.0.1:8769/kurortnaya/');
+      await page.goto((process.env.KURORT_BASE_URL || 'http://127.0.0.1:8769/kurortnaya/'));
       await page.waitForSelector('[data-brand-context=listing]');
       await page.waitForFunction(() => !!window.BarnesFilters);
       assert.equal(await page.evaluate(() => BarnesFilters.getState().market), 'new-build');
