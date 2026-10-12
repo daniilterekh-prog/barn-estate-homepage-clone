@@ -16,6 +16,22 @@ html body.country-node-page .catalog-hero__media .catalog-hero__image {object-po
 .country-node-page .catalog-grid__list { align-items:stretch; }
 .country-node-page .apartment-card--catalog { height:100%; }
 .country-node-page .apartment-card--catalog .apartment-card__body { flex:1; }
+/* Keep every catalogue card the same height when a title is long or loads late. */
+html body.country-node-page .catalog-grid .apartment-card__name[class] {
+  display:block;
+  min-width:0;
+  max-width:100%;
+}
+html body.country-node-page .catalog-grid .apartment-card__name-text[class] {
+  display:block;
+  min-width:0;
+  max-width:100%;
+  height:1.12em;
+  line-height:1.12;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+}
 .country-node-page .apartment-card--catalog .apartment-card__address { order:0; }
 html body.country-node-page .apartment-card--catalog :is(.apartment-card__call-btn,.apartment-card__detail-btn)[class] {
   font-family:"Tilda Sans","Tilda Sans Fallback",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
