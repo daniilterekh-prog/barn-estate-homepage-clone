@@ -21,7 +21,7 @@ const fs=require('node:fs/promises');
 `+js.slice(end);
  await fs.writeFile(target+'/node-quick-filters.js',js);
  await fs.writeFile(target+'/node-quick-filters.css',await fs.readFile('kurortnaya/quick-filters.css','utf8'));
- await fs.writeFile(target+'/node-listing.css',await fs.readFile('kurortnaya/listing-mode.css','utf8'));
+ await fs.writeFile(target+'/node-listing.css',await fs.readFile('kurortnaya/css/listing-mode.css','utf8'));
  for(const file of ['index.html','standalone/index.html']){
   const prefix=file.startsWith('standalone/')?'../':'';
   let html=await fs.readFile(target+'/'+file,'utf8');

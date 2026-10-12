@@ -12,7 +12,7 @@ const assert = require('node:assert/strict');
         await new Promise(resolve => setTimeout(resolve, 1500));
         await route.continue();
       });
-      await page.goto('http://127.0.0.1:8769/kurortnaya/', { waitUntil: 'domcontentloaded' });
+      await page.goto((process.env.KURORT_BASE_URL || 'http://127.0.0.1:8769/kurortnaya/'), { waitUntil: 'domcontentloaded' });
       await page.waitForTimeout(2200);
       assert.equal(runtimeRequests, 1, 'Initialize only the final document, not the replaced desktop document');
       const modal = page.locator('.resort-filters');

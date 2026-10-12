@@ -1,6 +1,6 @@
 const assert = require('node:assert/strict');
 const { chromium } = require(process.env.PLAYWRIGHT_PATH || '/home/daniil/Documents/Codex/2026-10-11/firecrawl/work/web-capture-toolkit/node_modules/playwright');
-const base = process.argv[2] || 'http://127.0.0.1:8769/kurortnaya/';
+const base = process.argv[2] || (process.env.KURORT_BASE_URL || 'http://127.0.0.1:8769/kurortnaya/');
 (async () => {
   const browser = await chromium.launch({ executablePath: '/usr/bin/google-chrome' });
   const errors = [];

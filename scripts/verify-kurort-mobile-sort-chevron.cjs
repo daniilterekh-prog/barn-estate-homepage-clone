@@ -5,7 +5,7 @@ const assert = require('node:assert/strict');
   try {
     for (const width of [320,390,540]) {
       const page = await browser.newPage({viewport:{width,height:900}});
-      await page.goto('http://127.0.0.1:8769/kurortnaya/',{waitUntil:'domcontentloaded'});
+      await page.goto((process.env.KURORT_BASE_URL || 'http://127.0.0.1:8769/kurortnaya/'),{waitUntil:'domcontentloaded'});
       const sort = page.locator('.catalog-mode-toolbar .catalog-grid__sort');
       await sort.waitFor();
       await page.locator('.catalog-mode-filters .catalog-quick-filters__button').first().scrollIntoViewIfNeeded();

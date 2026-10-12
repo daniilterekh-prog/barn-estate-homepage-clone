@@ -5,7 +5,7 @@ const assert = require('node:assert/strict');
   try {
     for(const width of [390,1440,2560]) {
       const page=await browser.newPage({viewport:{width,height:900}});
-      await page.goto('http://127.0.0.1:8769/kurortnaya/',{waitUntil:'domcontentloaded'});
+      await page.goto((process.env.KURORT_BASE_URL || 'http://127.0.0.1:8769/kurortnaya/'),{waitUntil:'domcontentloaded'});
       const project=page.locator('[data-listing-mode=new-build].catalog-grid__item');
       await project.waitFor();
       const address=project.locator('.apartment-card__address');

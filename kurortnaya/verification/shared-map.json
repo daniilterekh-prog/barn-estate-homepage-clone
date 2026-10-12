@@ -1,0 +1,22 @@
+{
+  "checks": [
+    {
+      "width": 390,
+      "localImages": 32,
+      "sharedControllers": true,
+      "filters": true
+    },
+    {
+      "width": 1440,
+      "localImages": 32,
+      "sharedControllers": true,
+      "filters": true
+    },
+    {
+      "width": 2560,
+      "localImages": 32,
+      "sharedControllers": true,
+      "filters": true
+    }
+  ]
+}

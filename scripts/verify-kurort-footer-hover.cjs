@@ -8,8 +8,11 @@ const properties = ['fontSize', 'fontWeight', 'lineHeight', 'color', 'background
     for (const width of [320, 390, 768, 1440, 1920, 2560]) {
       const page = await browser.newPage({ viewport: { width, height: 1000 } });
       const ref = await browser.newPage({ viewport: { width, height: 1000 } });
-      await Promise.all([page.goto('http://127.0.0.1:8769/kurortnaya/'), ref.goto('http://127.0.0.1:8769/prodazha_sobstvennikam/')]);
+      await Promise.all([page.goto((process.env.KURORT_BASE_URL || 'http://127.0.0.1:8769/kurortnaya/')), ref.goto(process.env.OWNER_BASE_URL || 'http://127.0.0.1:8769/prodazha_sobstvennikam/')]);
       await page.waitForFunction(() => document.querySelector('link[href*="owner-footer.css"]')?.sheet);
+      // The page injects several stylesheets. Measure after all requests and
+      // their short color transitions, not midway through the loading cascade.
+      await Promise.all([page.waitForLoadState('networkidle'), ref.waitForLoadState('networkidle')]);
       await page.addStyleTag({ content: 'html { scroll-behavior: auto !important; }' });
       await Promise.all([page.evaluate(() => document.fonts.ready), ref.evaluate(() => document.fonts.ready)]);
       const measure = async p => p.evaluate(({ selectors, properties }) => selectors.map(selector => {

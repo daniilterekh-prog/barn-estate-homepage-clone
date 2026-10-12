@@ -5,7 +5,7 @@ const assert = require('node:assert/strict');
   try {
     for (const width of [1440, 390, 2560]) {
       const page = await browser.newPage({ viewport: { width, height: 900 } });
-      await page.goto('http://127.0.0.1:8769/kurortnaya/', { waitUntil: 'domcontentloaded' });
+      await page.goto((process.env.KURORT_BASE_URL || 'http://127.0.0.1:8769/kurortnaya/'), { waitUntil: 'domcontentloaded' });
       const modal = page.locator('.resort-filters');
       await page.locator('.catalog-hero-filters__filter-icon').click();
       await modal.waitFor({ state: 'visible', timeout: 5000 });
