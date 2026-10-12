@@ -30,6 +30,22 @@
   await load('map-fullscreen.js');
   await load('quick-filters.js');
   await load('brand-filters.js');
+  // Purchase/rent replaces residential markets, sharing selection with the map.
+  function dealSwitch(context) {
+    const group=document.createElement('div');
+    group.className=context==='listing'?'catalog-mode-switch':'map-browser__market';
+    group.setAttribute('role','group');group.setAttribute('aria-label','Тип сделки');
+    for(const [value,label] of [['purchase','Покупка'],['rent','Аренда']]){
+      const button=document.createElement('button');button.type='button';button.textContent=label;
+      button.className='catalog-mode-switch__button';button.dataset.commercialDeal=value;
+      button.addEventListener('click',()=>window.BarnesFilters.patch({dealType:value}));group.append(button);
+    }
+    return group;
+  }
+  document.querySelector('.catalog-mode-toolbar').prepend(dealSwitch('listing'));
+  document.querySelector('.map-browser__filters').prepend(dealSwitch('map'));
+  function syncDeal(){const selected=window.BarnesFilters.getState().dealType||'purchase';document.querySelectorAll('[data-commercial-deal]').forEach(button=>{const active=button.dataset.commercialDeal===selected;button.setAttribute('aria-pressed',String(active));button.classList.toggle('is-active',active);});}
+  document.addEventListener('barnes:filters-apply',syncDeal);syncDeal();
   await styles('reference-sync.css');
   const request=document.createElement('button');request.type='button';request.className='catalog-sticky__request catalog-sticky__callback commercial-mobile-request';request.textContent='Оставить заявку';request.setAttribute('aria-haspopup','dialog');
   const desktopRequest=document.querySelector('.catalog-page-nav__request');

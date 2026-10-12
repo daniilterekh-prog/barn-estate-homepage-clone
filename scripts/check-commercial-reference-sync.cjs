@@ -11,6 +11,10 @@ const {chromium}=require('/home/daniil/Documents/Codex/2026-10-11/firecrawl/work
  for(const width of [320,390,540,768,1440,1920,2560]){
   console.log('Checking reference sync',width);
   await page.setViewportSize({width,height:900});
+  const deal=page.locator('.catalog-mode-switch');
+  assert.deepEqual(await deal.locator('button').allTextContents(),['Покупка','Аренда']);
+  await deal.getByRole('button',{name:'Аренда',exact:true}).click();
+  assert.equal(await page.evaluate(()=>BarnesFilters.getState().dealType),'rent');
   const buttons=page.locator('.catalog-mode-filters .catalog-quick-filters__button');
   await buttons.first().click();await popup.waitFor({state:'visible'});
   assert.equal(await popup.evaluate(e=>getComputedStyle(e).backgroundColor),'rgb(255, 255, 255)');
@@ -27,6 +31,9 @@ const {chromium}=require('/home/daniil/Documents/Codex/2026-10-11/firecrawl/work
   await page.locator('[data-brand-context=listing] label').first().click();
   await page.locator('.catalog-projects-map__fullscreen').click();await map.waitFor({state:'visible'});
   if(width<=540)await map.locator('.map-browser__handle').click();
+  assert.equal(await map.getByRole('button',{name:'Аренда',exact:true}).getAttribute('aria-pressed'),'true');
+  await map.getByRole('button',{name:'Покупка',exact:true}).click();
+  assert.equal(await deal.getByRole('button',{name:'Покупка',exact:true}).getAttribute('aria-pressed'),'true');
   assert.equal(await map.locator('[data-filter=type]').inputValue(),'ofice');
   assert.equal(await map.locator('[data-filter=area]').inputValue(),'500');
   const mapQuick=map.locator('.commercial-map-quick');
