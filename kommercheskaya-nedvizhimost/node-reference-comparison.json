@@ -1,0 +1,1421 @@
+{
+  "reference": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/kurortnaya/",
+  "verifiedAt": "2026-10-12T09:00:04.483Z",
+  "scope": "Shared typography, card controls/body geometry, map header spacing and grid columns; not whole-page pixel equality",
+  "results": [
+    {
+      "width": 390,
+      "reference": {
+        "hero": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "32px",
+          "fontWeight": "300",
+          "lineHeight": "33.6px",
+          "letterSpacing": "-1.44px",
+          "color": "rgb(255, 255, 255)"
+        },
+        "mapTitle": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "22px",
+          "fontWeight": "300",
+          "lineHeight": "26.4px",
+          "letterSpacing": "normal",
+          "color": "rgb(30, 30, 30)"
+        },
+        "listingTitle": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "22px",
+          "fontWeight": "300",
+          "lineHeight": "26.4px",
+          "letterSpacing": "normal",
+          "color": "rgb(30, 30, 30)"
+        },
+        "newsTitle": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "22px",
+          "fontWeight": "300",
+          "lineHeight": "22px",
+          "letterSpacing": "normal",
+          "color": "rgb(30, 30, 30)"
+        },
+        "faqTitle": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "22px",
+          "fontWeight": "300",
+          "lineHeight": "26.4px",
+          "letterSpacing": "normal",
+          "color": "rgb(30, 30, 30)"
+        },
+        "introTitle": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "22px",
+          "fontWeight": "300",
+          "lineHeight": "26.4px",
+          "letterSpacing": "-0.77px",
+          "color": "rgb(30, 30, 30)"
+        },
+        "eyebrow": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "12px",
+          "fontWeight": "400",
+          "lineHeight": "14.4px",
+          "letterSpacing": "1.44px",
+          "color": "rgb(79, 77, 73)"
+        },
+        "faqQuestion": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "18px",
+          "fontWeight": "400",
+          "lineHeight": "25.2px",
+          "letterSpacing": "normal",
+          "color": "rgb(38, 38, 38)"
+        },
+        "faqAnswer": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "300",
+          "lineHeight": "22.4px",
+          "letterSpacing": "normal",
+          "color": "rgb(38, 38, 38)"
+        },
+        "cardName": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "20px",
+          "fontWeight": "400",
+          "lineHeight": "22.4px",
+          "letterSpacing": "-0.4px",
+          "color": "rgb(30, 30, 30)"
+        },
+        "cardPrice": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "24px",
+          "fontWeight": "500",
+          "lineHeight": "28.8px",
+          "letterSpacing": "-0.48px",
+          "color": "rgb(30, 30, 30)"
+        },
+        "cardCall": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "15px",
+          "fontWeight": "400",
+          "lineHeight": "15px",
+          "letterSpacing": "normal",
+          "color": "rgb(30, 30, 30)",
+          "height": "50px",
+          "borderRadius": "0px"
+        },
+        "cardDetails": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "15px",
+          "fontWeight": "400",
+          "lineHeight": "15px",
+          "letterSpacing": "normal",
+          "color": "rgb(255, 255, 255)",
+          "height": "50px",
+          "borderRadius": "0px"
+        },
+        "filter": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "17px",
+          "fontWeight": "300",
+          "lineHeight": "22px",
+          "letterSpacing": "normal",
+          "color": "rgb(79, 77, 73)"
+        },
+        "sort": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "17px",
+          "fontWeight": "300",
+          "lineHeight": "22px",
+          "letterSpacing": "normal",
+          "color": "rgb(79, 77, 73)"
+        },
+        "cardBody": {
+          "padding": "20px 18px 0px",
+          "margin": "-35px 12px 0px"
+        },
+        "mapHeader": {
+          "marginBottom": "24px"
+        },
+        "listingGrid": {
+          "gap": "24px",
+          "gridTemplateColumns": "341.844px"
+        }
+      },
+      "local": {
+        "hero": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "32px",
+          "fontWeight": "300",
+          "lineHeight": "33.6px",
+          "letterSpacing": "-1.44px",
+          "color": "rgb(255, 255, 255)"
+        },
+        "mapTitle": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "22px",
+          "fontWeight": "300",
+          "lineHeight": "26.4px",
+          "letterSpacing": "normal",
+          "color": "rgb(30, 30, 30)"
+        },
+        "listingTitle": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "22px",
+          "fontWeight": "300",
+          "lineHeight": "26.4px",
+          "letterSpacing": "normal",
+          "color": "rgb(30, 30, 30)"
+        },
+        "newsTitle": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "22px",
+          "fontWeight": "300",
+          "lineHeight": "22px",
+          "letterSpacing": "normal",
+          "color": "rgb(30, 30, 30)"
+        },
+        "faqTitle": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "22px",
+          "fontWeight": "300",
+          "lineHeight": "26.4px",
+          "letterSpacing": "normal",
+          "color": "rgb(30, 30, 30)"
+        },
+        "introTitle": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "22px",
+          "fontWeight": "300",
+          "lineHeight": "26.4px",
+          "letterSpacing": "-0.77px",
+          "color": "rgb(30, 30, 30)"
+        },
+        "eyebrow": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "12px",
+          "fontWeight": "400",
+          "lineHeight": "14.4px",
+          "letterSpacing": "1.44px",
+          "color": "rgb(79, 77, 73)"
+        },
+        "faqQuestion": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "18px",
+          "fontWeight": "400",
+          "lineHeight": "25.2px",
+          "letterSpacing": "normal",
+          "color": "rgb(38, 38, 38)"
+        },
+        "faqAnswer": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "300",
+          "lineHeight": "22.4px",
+          "letterSpacing": "normal",
+          "color": "rgb(38, 38, 38)"
+        },
+        "cardName": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "20px",
+          "fontWeight": "400",
+          "lineHeight": "22.4px",
+          "letterSpacing": "-0.4px",
+          "color": "rgb(30, 30, 30)"
+        },
+        "cardPrice": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "24px",
+          "fontWeight": "500",
+          "lineHeight": "28.8px",
+          "letterSpacing": "-0.48px",
+          "color": "rgb(30, 30, 30)"
+        },
+        "cardCall": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "15px",
+          "fontWeight": "400",
+          "lineHeight": "15px",
+          "letterSpacing": "normal",
+          "color": "rgb(30, 30, 30)",
+          "height": "50px",
+          "borderRadius": "0px"
+        },
+        "cardDetails": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "15px",
+          "fontWeight": "400",
+          "lineHeight": "15px",
+          "letterSpacing": "normal",
+          "color": "rgb(255, 255, 255)",
+          "height": "50px",
+          "borderRadius": "0px"
+        },
+        "filter": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "17px",
+          "fontWeight": "300",
+          "lineHeight": "22px",
+          "letterSpacing": "normal",
+          "color": "rgb(79, 77, 73)"
+        },
+        "sort": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "17px",
+          "fontWeight": "300",
+          "lineHeight": "22px",
+          "letterSpacing": "normal",
+          "color": "rgb(79, 77, 73)"
+        },
+        "cardBody": {
+          "padding": "20px 18px 0px",
+          "margin": "-35px 12px 0px"
+        },
+        "mapHeader": {
+          "marginBottom": "24px"
+        },
+        "listingGrid": {
+          "gap": "24px",
+          "gridTemplateColumns": "341.844px"
+        }
+      },
+      "differences": [],
+      "cssSubpixelRounding": [],
+      "mismatches": []
+    },
+    {
+      "width": 768,
+      "reference": {
+        "hero": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "38px",
+          "fontWeight": "300",
+          "lineHeight": "39.9px",
+          "letterSpacing": "-1.71px",
+          "color": "rgb(255, 255, 255)"
+        },
+        "mapTitle": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "38px",
+          "fontWeight": "300",
+          "lineHeight": "45.6px",
+          "letterSpacing": "normal",
+          "color": "rgb(30, 30, 30)"
+        },
+        "listingTitle": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "38px",
+          "fontWeight": "300",
+          "lineHeight": "45.6px",
+          "letterSpacing": "normal",
+          "color": "rgb(30, 30, 30)"
+        },
+        "newsTitle": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "38px",
+          "fontWeight": "300",
+          "lineHeight": "38px",
+          "letterSpacing": "normal",
+          "color": "rgb(30, 30, 30)"
+        },
+        "faqTitle": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "38px",
+          "fontWeight": "300",
+          "lineHeight": "45.6px",
+          "letterSpacing": "normal",
+          "color": "rgb(30, 30, 30)"
+        },
+        "introTitle": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "44px",
+          "fontWeight": "300",
+          "lineHeight": "43.12px",
+          "letterSpacing": "-1.54px",
+          "color": "rgb(30, 30, 30)"
+        },
+        "eyebrow": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "14px",
+          "fontWeight": "400",
+          "lineHeight": "16.1px",
+          "letterSpacing": "1.68px",
+          "color": "rgb(79, 77, 73)"
+        },
+        "faqQuestion": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "18px",
+          "fontWeight": "400",
+          "lineHeight": "25.2px",
+          "letterSpacing": "normal",
+          "color": "rgb(38, 38, 38)"
+        },
+        "faqAnswer": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "300",
+          "lineHeight": "22.4px",
+          "letterSpacing": "normal",
+          "color": "rgb(38, 38, 38)"
+        },
+        "cardName": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "22px",
+          "fontWeight": "400",
+          "lineHeight": "24.64px",
+          "letterSpacing": "-0.44px",
+          "color": "rgb(30, 30, 30)"
+        },
+        "cardPrice": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "26px",
+          "fontWeight": "500",
+          "lineHeight": "31.2px",
+          "letterSpacing": "-0.52px",
+          "color": "rgb(30, 30, 30)"
+        },
+        "cardCall": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "15px",
+          "fontWeight": "400",
+          "lineHeight": "15px",
+          "letterSpacing": "normal",
+          "color": "rgb(30, 30, 30)",
+          "height": "54px",
+          "borderRadius": "0px"
+        },
+        "cardDetails": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "15px",
+          "fontWeight": "400",
+          "lineHeight": "15px",
+          "letterSpacing": "normal",
+          "color": "rgb(255, 255, 255)",
+          "height": "54px",
+          "borderRadius": "0px"
+        },
+        "filter": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "17px",
+          "fontWeight": "300",
+          "lineHeight": "22px",
+          "letterSpacing": "normal",
+          "color": "rgb(79, 77, 73)"
+        },
+        "sort": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, sans-serif",
+          "fontSize": "17px",
+          "fontWeight": "300",
+          "lineHeight": "20.4px",
+          "letterSpacing": "normal",
+          "color": "rgb(79, 77, 73)"
+        },
+        "cardBody": {
+          "padding": "20px 18px 0px",
+          "margin": "-35px 12px 0px"
+        },
+        "mapHeader": {
+          "marginBottom": "32px"
+        },
+        "listingGrid": {
+          "gap": "24px",
+          "gridTemplateColumns": "340.516px 340.516px"
+        }
+      },
+      "local": {
+        "hero": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "38px",
+          "fontWeight": "300",
+          "lineHeight": "39.9px",
+          "letterSpacing": "-1.71px",
+          "color": "rgb(255, 255, 255)"
+        },
+        "mapTitle": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "38px",
+          "fontWeight": "300",
+          "lineHeight": "45.6px",
+          "letterSpacing": "normal",
+          "color": "rgb(30, 30, 30)"
+        },
+        "listingTitle": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "38px",
+          "fontWeight": "300",
+          "lineHeight": "45.6px",
+          "letterSpacing": "normal",
+          "color": "rgb(30, 30, 30)"
+        },
+        "newsTitle": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "38px",
+          "fontWeight": "300",
+          "lineHeight": "38px",
+          "letterSpacing": "normal",
+          "color": "rgb(30, 30, 30)"
+        },
+        "faqTitle": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "38px",
+          "fontWeight": "300",
+          "lineHeight": "45.6px",
+          "letterSpacing": "normal",
+          "color": "rgb(30, 30, 30)"
+        },
+        "introTitle": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "44px",
+          "fontWeight": "300",
+          "lineHeight": "43.12px",
+          "letterSpacing": "-1.54px",
+          "color": "rgb(30, 30, 30)"
+        },
+        "eyebrow": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "14px",
+          "fontWeight": "400",
+          "lineHeight": "16.1px",
+          "letterSpacing": "1.68px",
+          "color": "rgb(79, 77, 73)"
+        },
+        "faqQuestion": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "18px",
+          "fontWeight": "400",
+          "lineHeight": "25.2px",
+          "letterSpacing": "normal",
+          "color": "rgb(38, 38, 38)"
+        },
+        "faqAnswer": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "300",
+          "lineHeight": "22.4px",
+          "letterSpacing": "normal",
+          "color": "rgb(38, 38, 38)"
+        },
+        "cardName": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "22px",
+          "fontWeight": "400",
+          "lineHeight": "24.64px",
+          "letterSpacing": "-0.44px",
+          "color": "rgb(30, 30, 30)"
+        },
+        "cardPrice": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "26px",
+          "fontWeight": "500",
+          "lineHeight": "31.2px",
+          "letterSpacing": "-0.52px",
+          "color": "rgb(30, 30, 30)"
+        },
+        "cardCall": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "15px",
+          "fontWeight": "400",
+          "lineHeight": "15px",
+          "letterSpacing": "normal",
+          "color": "rgb(30, 30, 30)",
+          "height": "54px",
+          "borderRadius": "0px"
+        },
+        "cardDetails": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "15px",
+          "fontWeight": "400",
+          "lineHeight": "15px",
+          "letterSpacing": "normal",
+          "color": "rgb(255, 255, 255)",
+          "height": "54px",
+          "borderRadius": "0px"
+        },
+        "filter": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "17px",
+          "fontWeight": "300",
+          "lineHeight": "22px",
+          "letterSpacing": "normal",
+          "color": "rgb(79, 77, 73)"
+        },
+        "sort": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, sans-serif",
+          "fontSize": "17px",
+          "fontWeight": "300",
+          "lineHeight": "20.4px",
+          "letterSpacing": "normal",
+          "color": "rgb(79, 77, 73)"
+        },
+        "cardBody": {
+          "padding": "20px 18px 0px",
+          "margin": "-35px 12px 0px"
+        },
+        "mapHeader": {
+          "marginBottom": "32px"
+        },
+        "listingGrid": {
+          "gap": "24px",
+          "gridTemplateColumns": "340.516px 340.516px"
+        }
+      },
+      "differences": [],
+      "cssSubpixelRounding": [],
+      "mismatches": []
+    },
+    {
+      "width": 1440,
+      "reference": {
+        "hero": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "57.6px",
+          "fontWeight": "300",
+          "lineHeight": "60.48px",
+          "letterSpacing": "-2.592px",
+          "color": "rgb(255, 255, 255)"
+        },
+        "mapTitle": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "38px",
+          "fontWeight": "300",
+          "lineHeight": "45.6px",
+          "letterSpacing": "normal",
+          "color": "rgb(30, 30, 30)"
+        },
+        "listingTitle": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "38px",
+          "fontWeight": "300",
+          "lineHeight": "45.6px",
+          "letterSpacing": "normal",
+          "color": "rgb(30, 30, 30)"
+        },
+        "newsTitle": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "38px",
+          "fontWeight": "300",
+          "lineHeight": "38px",
+          "letterSpacing": "normal",
+          "color": "rgb(30, 30, 30)"
+        },
+        "faqTitle": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "38px",
+          "fontWeight": "300",
+          "lineHeight": "45.6px",
+          "letterSpacing": "normal",
+          "color": "rgb(30, 30, 30)"
+        },
+        "introTitle": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "44px",
+          "fontWeight": "300",
+          "lineHeight": "43.12px",
+          "letterSpacing": "-1.54px",
+          "color": "rgb(30, 30, 30)"
+        },
+        "eyebrow": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "14px",
+          "fontWeight": "400",
+          "lineHeight": "16.1px",
+          "letterSpacing": "1.68px",
+          "color": "rgb(79, 77, 73)"
+        },
+        "faqQuestion": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "20px",
+          "fontWeight": "400",
+          "lineHeight": "28px",
+          "letterSpacing": "normal",
+          "color": "rgb(38, 38, 38)"
+        },
+        "faqAnswer": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "300",
+          "lineHeight": "22.4px",
+          "letterSpacing": "normal",
+          "color": "rgb(38, 38, 38)"
+        },
+        "cardName": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "22px",
+          "fontWeight": "400",
+          "lineHeight": "24.64px",
+          "letterSpacing": "-0.44px",
+          "color": "rgb(30, 30, 30)"
+        },
+        "cardPrice": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "26px",
+          "fontWeight": "500",
+          "lineHeight": "31.2px",
+          "letterSpacing": "-0.52px",
+          "color": "rgb(30, 30, 30)"
+        },
+        "cardCall": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "15px",
+          "fontWeight": "400",
+          "lineHeight": "15px",
+          "letterSpacing": "normal",
+          "color": "rgb(30, 30, 30)",
+          "height": "54px",
+          "borderRadius": "0px"
+        },
+        "cardDetails": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "15px",
+          "fontWeight": "400",
+          "lineHeight": "15px",
+          "letterSpacing": "normal",
+          "color": "rgb(255, 255, 255)",
+          "height": "54px",
+          "borderRadius": "0px"
+        },
+        "filter": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "17px",
+          "fontWeight": "300",
+          "lineHeight": "22px",
+          "letterSpacing": "normal",
+          "color": "rgb(79, 77, 73)"
+        },
+        "sort": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, sans-serif",
+          "fontSize": "17px",
+          "fontWeight": "300",
+          "lineHeight": "20.4px",
+          "letterSpacing": "normal",
+          "color": "rgb(79, 77, 73)"
+        },
+        "cardBody": {
+          "padding": "20px 18px 0px",
+          "margin": "-35px 12px 0px"
+        },
+        "mapHeader": {
+          "marginBottom": "32px"
+        },
+        "listingGrid": {
+          "gap": "24px",
+          "gridTemplateColumns": "413.438px 413.453px 413.453px"
+        }
+      },
+      "local": {
+        "hero": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "57.6px",
+          "fontWeight": "300",
+          "lineHeight": "60.48px",
+          "letterSpacing": "-2.592px",
+          "color": "rgb(255, 255, 255)"
+        },
+        "mapTitle": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "38px",
+          "fontWeight": "300",
+          "lineHeight": "45.6px",
+          "letterSpacing": "normal",
+          "color": "rgb(30, 30, 30)"
+        },
+        "listingTitle": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "38px",
+          "fontWeight": "300",
+          "lineHeight": "45.6px",
+          "letterSpacing": "normal",
+          "color": "rgb(30, 30, 30)"
+        },
+        "newsTitle": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "38px",
+          "fontWeight": "300",
+          "lineHeight": "38px",
+          "letterSpacing": "normal",
+          "color": "rgb(30, 30, 30)"
+        },
+        "faqTitle": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "38px",
+          "fontWeight": "300",
+          "lineHeight": "45.6px",
+          "letterSpacing": "normal",
+          "color": "rgb(30, 30, 30)"
+        },
+        "introTitle": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "44px",
+          "fontWeight": "300",
+          "lineHeight": "43.12px",
+          "letterSpacing": "-1.54px",
+          "color": "rgb(30, 30, 30)"
+        },
+        "eyebrow": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "14px",
+          "fontWeight": "400",
+          "lineHeight": "16.1px",
+          "letterSpacing": "1.68px",
+          "color": "rgb(79, 77, 73)"
+        },
+        "faqQuestion": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "20px",
+          "fontWeight": "400",
+          "lineHeight": "28px",
+          "letterSpacing": "normal",
+          "color": "rgb(38, 38, 38)"
+        },
+        "faqAnswer": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "300",
+          "lineHeight": "22.4px",
+          "letterSpacing": "normal",
+          "color": "rgb(38, 38, 38)"
+        },
+        "cardName": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "22px",
+          "fontWeight": "400",
+          "lineHeight": "24.64px",
+          "letterSpacing": "-0.44px",
+          "color": "rgb(30, 30, 30)"
+        },
+        "cardPrice": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "26px",
+          "fontWeight": "500",
+          "lineHeight": "31.2px",
+          "letterSpacing": "-0.52px",
+          "color": "rgb(30, 30, 30)"
+        },
+        "cardCall": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "15px",
+          "fontWeight": "400",
+          "lineHeight": "15px",
+          "letterSpacing": "normal",
+          "color": "rgb(30, 30, 30)",
+          "height": "54px",
+          "borderRadius": "0px"
+        },
+        "cardDetails": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "15px",
+          "fontWeight": "400",
+          "lineHeight": "15px",
+          "letterSpacing": "normal",
+          "color": "rgb(255, 255, 255)",
+          "height": "54px",
+          "borderRadius": "0px"
+        },
+        "filter": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "17px",
+          "fontWeight": "300",
+          "lineHeight": "22px",
+          "letterSpacing": "normal",
+          "color": "rgb(79, 77, 73)"
+        },
+        "sort": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, sans-serif",
+          "fontSize": "17px",
+          "fontWeight": "300",
+          "lineHeight": "20.4px",
+          "letterSpacing": "normal",
+          "color": "rgb(79, 77, 73)"
+        },
+        "cardBody": {
+          "padding": "20px 18px 0px",
+          "margin": "-35px 12px 0px"
+        },
+        "mapHeader": {
+          "marginBottom": "32px"
+        },
+        "listingGrid": {
+          "gap": "24px",
+          "gridTemplateColumns": "413.438px 413.453px 413.438px"
+        }
+      },
+      "differences": [
+        {
+          "role": "listingGrid",
+          "property": "gridTemplateColumns",
+          "reference": "413.438px 413.453px 413.453px",
+          "local": "413.438px 413.453px 413.438px"
+        }
+      ],
+      "cssSubpixelRounding": [
+        {
+          "role": "listingGrid",
+          "property": "gridTemplateColumns",
+          "reference": "413.438px 413.453px 413.453px",
+          "local": "413.438px 413.453px 413.438px"
+        }
+      ],
+      "mismatches": []
+    },
+    {
+      "width": 1920,
+      "reference": {
+        "hero": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "58px",
+          "fontWeight": "300",
+          "lineHeight": "60.9px",
+          "letterSpacing": "-2.61px",
+          "color": "rgb(255, 255, 255)"
+        },
+        "mapTitle": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "44px",
+          "fontWeight": "300",
+          "lineHeight": "52.8px",
+          "letterSpacing": "normal",
+          "color": "rgb(30, 30, 30)"
+        },
+        "listingTitle": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "44px",
+          "fontWeight": "300",
+          "lineHeight": "52.8px",
+          "letterSpacing": "normal",
+          "color": "rgb(30, 30, 30)"
+        },
+        "newsTitle": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "44px",
+          "fontWeight": "300",
+          "lineHeight": "44px",
+          "letterSpacing": "normal",
+          "color": "rgb(30, 30, 30)"
+        },
+        "faqTitle": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "44px",
+          "fontWeight": "300",
+          "lineHeight": "52.8px",
+          "letterSpacing": "normal",
+          "color": "rgb(30, 30, 30)"
+        },
+        "introTitle": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "44px",
+          "fontWeight": "300",
+          "lineHeight": "43.12px",
+          "letterSpacing": "-1.54px",
+          "color": "rgb(30, 30, 30)"
+        },
+        "eyebrow": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "14px",
+          "fontWeight": "400",
+          "lineHeight": "16.1px",
+          "letterSpacing": "1.68px",
+          "color": "rgb(79, 77, 73)"
+        },
+        "faqQuestion": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "22px",
+          "fontWeight": "400",
+          "lineHeight": "30.8px",
+          "letterSpacing": "normal",
+          "color": "rgb(38, 38, 38)"
+        },
+        "faqAnswer": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "300",
+          "lineHeight": "22.4px",
+          "letterSpacing": "normal",
+          "color": "rgb(38, 38, 38)"
+        },
+        "cardName": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "22px",
+          "fontWeight": "400",
+          "lineHeight": "24.64px",
+          "letterSpacing": "-0.44px",
+          "color": "rgb(30, 30, 30)"
+        },
+        "cardPrice": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "26px",
+          "fontWeight": "500",
+          "lineHeight": "31.2px",
+          "letterSpacing": "-0.52px",
+          "color": "rgb(30, 30, 30)"
+        },
+        "cardCall": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "15px",
+          "fontWeight": "400",
+          "lineHeight": "15px",
+          "letterSpacing": "normal",
+          "color": "rgb(30, 30, 30)",
+          "height": "54px",
+          "borderRadius": "0px"
+        },
+        "cardDetails": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "15px",
+          "fontWeight": "400",
+          "lineHeight": "15px",
+          "letterSpacing": "normal",
+          "color": "rgb(255, 255, 255)",
+          "height": "54px",
+          "borderRadius": "0px"
+        },
+        "filter": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "19px",
+          "fontWeight": "300",
+          "lineHeight": "22px",
+          "letterSpacing": "normal",
+          "color": "rgb(79, 77, 73)"
+        },
+        "sort": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, sans-serif",
+          "fontSize": "19px",
+          "fontWeight": "300",
+          "lineHeight": "22.8px",
+          "letterSpacing": "normal",
+          "color": "rgb(79, 77, 73)"
+        },
+        "cardBody": {
+          "padding": "20px 18px 0px",
+          "margin": "-35px 12px 0px"
+        },
+        "mapHeader": {
+          "marginBottom": "40px"
+        },
+        "listingGrid": {
+          "gap": "24px",
+          "gridTemplateColumns": "552.344px 552.344px 552.344px"
+        }
+      },
+      "local": {
+        "hero": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "58px",
+          "fontWeight": "300",
+          "lineHeight": "60.9px",
+          "letterSpacing": "-2.61px",
+          "color": "rgb(255, 255, 255)"
+        },
+        "mapTitle": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "44px",
+          "fontWeight": "300",
+          "lineHeight": "52.8px",
+          "letterSpacing": "normal",
+          "color": "rgb(30, 30, 30)"
+        },
+        "listingTitle": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "44px",
+          "fontWeight": "300",
+          "lineHeight": "52.8px",
+          "letterSpacing": "normal",
+          "color": "rgb(30, 30, 30)"
+        },
+        "newsTitle": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "44px",
+          "fontWeight": "300",
+          "lineHeight": "44px",
+          "letterSpacing": "normal",
+          "color": "rgb(30, 30, 30)"
+        },
+        "faqTitle": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "44px",
+          "fontWeight": "300",
+          "lineHeight": "52.8px",
+          "letterSpacing": "normal",
+          "color": "rgb(30, 30, 30)"
+        },
+        "introTitle": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "44px",
+          "fontWeight": "300",
+          "lineHeight": "43.12px",
+          "letterSpacing": "-1.54px",
+          "color": "rgb(30, 30, 30)"
+        },
+        "eyebrow": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "14px",
+          "fontWeight": "400",
+          "lineHeight": "16.1px",
+          "letterSpacing": "1.68px",
+          "color": "rgb(79, 77, 73)"
+        },
+        "faqQuestion": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "22px",
+          "fontWeight": "400",
+          "lineHeight": "30.8px",
+          "letterSpacing": "normal",
+          "color": "rgb(38, 38, 38)"
+        },
+        "faqAnswer": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "300",
+          "lineHeight": "22.4px",
+          "letterSpacing": "normal",
+          "color": "rgb(38, 38, 38)"
+        },
+        "cardName": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "22px",
+          "fontWeight": "400",
+          "lineHeight": "24.64px",
+          "letterSpacing": "-0.44px",
+          "color": "rgb(30, 30, 30)"
+        },
+        "cardPrice": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "26px",
+          "fontWeight": "500",
+          "lineHeight": "31.2px",
+          "letterSpacing": "-0.52px",
+          "color": "rgb(30, 30, 30)"
+        },
+        "cardCall": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "15px",
+          "fontWeight": "400",
+          "lineHeight": "15px",
+          "letterSpacing": "normal",
+          "color": "rgb(30, 30, 30)",
+          "height": "54px",
+          "borderRadius": "0px"
+        },
+        "cardDetails": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "15px",
+          "fontWeight": "400",
+          "lineHeight": "15px",
+          "letterSpacing": "normal",
+          "color": "rgb(255, 255, 255)",
+          "height": "54px",
+          "borderRadius": "0px"
+        },
+        "filter": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "19px",
+          "fontWeight": "300",
+          "lineHeight": "22px",
+          "letterSpacing": "normal",
+          "color": "rgb(79, 77, 73)"
+        },
+        "sort": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, sans-serif",
+          "fontSize": "19px",
+          "fontWeight": "300",
+          "lineHeight": "22.8px",
+          "letterSpacing": "normal",
+          "color": "rgb(79, 77, 73)"
+        },
+        "cardBody": {
+          "padding": "20px 18px 0px",
+          "margin": "-35px 12px 0px"
+        },
+        "mapHeader": {
+          "marginBottom": "40px"
+        },
+        "listingGrid": {
+          "gap": "24px",
+          "gridTemplateColumns": "552.344px 552.344px 552.344px"
+        }
+      },
+      "differences": [],
+      "cssSubpixelRounding": [],
+      "mismatches": []
+    },
+    {
+      "width": 2560,
+      "reference": {
+        "hero": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "58px",
+          "fontWeight": "300",
+          "lineHeight": "60.9px",
+          "letterSpacing": "-2.61px",
+          "color": "rgb(255, 255, 255)"
+        },
+        "mapTitle": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "44px",
+          "fontWeight": "300",
+          "lineHeight": "52.8px",
+          "letterSpacing": "normal",
+          "color": "rgb(30, 30, 30)"
+        },
+        "listingTitle": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "44px",
+          "fontWeight": "300",
+          "lineHeight": "52.8px",
+          "letterSpacing": "normal",
+          "color": "rgb(30, 30, 30)"
+        },
+        "newsTitle": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "44px",
+          "fontWeight": "300",
+          "lineHeight": "44px",
+          "letterSpacing": "normal",
+          "color": "rgb(30, 30, 30)"
+        },
+        "faqTitle": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "44px",
+          "fontWeight": "300",
+          "lineHeight": "52.8px",
+          "letterSpacing": "normal",
+          "color": "rgb(30, 30, 30)"
+        },
+        "introTitle": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "44px",
+          "fontWeight": "300",
+          "lineHeight": "43.12px",
+          "letterSpacing": "-1.54px",
+          "color": "rgb(30, 30, 30)"
+        },
+        "eyebrow": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "14px",
+          "fontWeight": "400",
+          "lineHeight": "16.1px",
+          "letterSpacing": "1.68px",
+          "color": "rgb(79, 77, 73)"
+        },
+        "faqQuestion": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "22px",
+          "fontWeight": "400",
+          "lineHeight": "30.8px",
+          "letterSpacing": "normal",
+          "color": "rgb(38, 38, 38)"
+        },
+        "faqAnswer": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "300",
+          "lineHeight": "22.4px",
+          "letterSpacing": "normal",
+          "color": "rgb(38, 38, 38)"
+        },
+        "cardName": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "22px",
+          "fontWeight": "400",
+          "lineHeight": "24.64px",
+          "letterSpacing": "-0.44px",
+          "color": "rgb(30, 30, 30)"
+        },
+        "cardPrice": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "26px",
+          "fontWeight": "500",
+          "lineHeight": "31.2px",
+          "letterSpacing": "-0.52px",
+          "color": "rgb(30, 30, 30)"
+        },
+        "cardCall": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "15px",
+          "fontWeight": "400",
+          "lineHeight": "15px",
+          "letterSpacing": "normal",
+          "color": "rgb(30, 30, 30)",
+          "height": "54px",
+          "borderRadius": "0px"
+        },
+        "cardDetails": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "15px",
+          "fontWeight": "400",
+          "lineHeight": "15px",
+          "letterSpacing": "normal",
+          "color": "rgb(255, 255, 255)",
+          "height": "54px",
+          "borderRadius": "0px"
+        },
+        "filter": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "19px",
+          "fontWeight": "300",
+          "lineHeight": "22px",
+          "letterSpacing": "normal",
+          "color": "rgb(79, 77, 73)"
+        },
+        "sort": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, sans-serif",
+          "fontSize": "19px",
+          "fontWeight": "300",
+          "lineHeight": "22.8px",
+          "letterSpacing": "normal",
+          "color": "rgb(79, 77, 73)"
+        },
+        "cardBody": {
+          "padding": "20px 18px 0px",
+          "margin": "-35px 12px 0px"
+        },
+        "mapHeader": {
+          "marginBottom": "40px"
+        },
+        "listingGrid": {
+          "gap": "24px",
+          "gridTemplateColumns": "557.328px 557.328px 557.328px"
+        }
+      },
+      "local": {
+        "hero": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "58px",
+          "fontWeight": "300",
+          "lineHeight": "60.9px",
+          "letterSpacing": "-2.61px",
+          "color": "rgb(255, 255, 255)"
+        },
+        "mapTitle": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "44px",
+          "fontWeight": "300",
+          "lineHeight": "52.8px",
+          "letterSpacing": "normal",
+          "color": "rgb(30, 30, 30)"
+        },
+        "listingTitle": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "44px",
+          "fontWeight": "300",
+          "lineHeight": "52.8px",
+          "letterSpacing": "normal",
+          "color": "rgb(30, 30, 30)"
+        },
+        "newsTitle": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "44px",
+          "fontWeight": "300",
+          "lineHeight": "44px",
+          "letterSpacing": "normal",
+          "color": "rgb(30, 30, 30)"
+        },
+        "faqTitle": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "44px",
+          "fontWeight": "300",
+          "lineHeight": "52.8px",
+          "letterSpacing": "normal",
+          "color": "rgb(30, 30, 30)"
+        },
+        "introTitle": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "44px",
+          "fontWeight": "300",
+          "lineHeight": "43.12px",
+          "letterSpacing": "-1.54px",
+          "color": "rgb(30, 30, 30)"
+        },
+        "eyebrow": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "14px",
+          "fontWeight": "400",
+          "lineHeight": "16.1px",
+          "letterSpacing": "1.68px",
+          "color": "rgb(79, 77, 73)"
+        },
+        "faqQuestion": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "22px",
+          "fontWeight": "400",
+          "lineHeight": "30.8px",
+          "letterSpacing": "normal",
+          "color": "rgb(38, 38, 38)"
+        },
+        "faqAnswer": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "16px",
+          "fontWeight": "300",
+          "lineHeight": "22.4px",
+          "letterSpacing": "normal",
+          "color": "rgb(38, 38, 38)"
+        },
+        "cardName": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "22px",
+          "fontWeight": "400",
+          "lineHeight": "24.64px",
+          "letterSpacing": "-0.44px",
+          "color": "rgb(30, 30, 30)"
+        },
+        "cardPrice": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "26px",
+          "fontWeight": "500",
+          "lineHeight": "31.2px",
+          "letterSpacing": "-0.52px",
+          "color": "rgb(30, 30, 30)"
+        },
+        "cardCall": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "15px",
+          "fontWeight": "400",
+          "lineHeight": "15px",
+          "letterSpacing": "normal",
+          "color": "rgb(30, 30, 30)",
+          "height": "54px",
+          "borderRadius": "0px"
+        },
+        "cardDetails": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "15px",
+          "fontWeight": "400",
+          "lineHeight": "15px",
+          "letterSpacing": "normal",
+          "color": "rgb(255, 255, 255)",
+          "height": "54px",
+          "borderRadius": "0px"
+        },
+        "filter": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "fontSize": "19px",
+          "fontWeight": "300",
+          "lineHeight": "22px",
+          "letterSpacing": "normal",
+          "color": "rgb(79, 77, 73)"
+        },
+        "sort": {
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, sans-serif",
+          "fontSize": "19px",
+          "fontWeight": "300",
+          "lineHeight": "22.8px",
+          "letterSpacing": "normal",
+          "color": "rgb(79, 77, 73)"
+        },
+        "cardBody": {
+          "padding": "20px 18px 0px",
+          "margin": "-35px 12px 0px"
+        },
+        "mapHeader": {
+          "marginBottom": "40px"
+        },
+        "listingGrid": {
+          "gap": "24px",
+          "gridTemplateColumns": "557.328px 557.328px 557.328px"
+        }
+      },
+      "differences": [],
+      "cssSubpixelRounding": [],
+      "mismatches": []
+    }
+  ]
+}

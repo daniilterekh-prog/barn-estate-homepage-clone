@@ -33,6 +33,96 @@
       mapSearch.after(button);
     }
   }
+  // Approved first-degree node design; commerce keeps its own data and routes.
+  document.body.classList.add('commercial-node', 'barnes-header-template');
+  header?.classList.add('site-header--no-nav');
+  if (nav) {
+    nav.classList.add('catalog-sticky');
+    one('.catalog-page-nav__inner', nav)?.classList.add('catalog-sticky__inner');
+    one('.catalog-page-nav__list', nav)?.classList.add('catalog-sticky__list');
+    const items = all('.catalog-page-nav__item', nav);
+    const last = items.at(-1)?.cloneNode(true);
+    if (last) one('.catalog-page-nav__list', nav).append(last);
+    all('.catalog-page-nav__link', nav).forEach((button, index) => {
+      button.classList.add('catalog-sticky__link');
+      button.textContent = ['Карта', 'Каталог', 'О BARNES', 'Вопросы'][index];
+    });
+    const brand = one('.catalog-page-nav__brand', nav);
+    const logo = one('.catalog-page-nav__logo', nav);
+    if (logo && brand) { logo.classList.add('catalog-sticky__logo'); brand.before(logo); }
+    brand?.classList.add('catalog-sticky__brand');
+    const request = one('.catalog-page-nav__request', nav);
+    if (request && brand) { request.classList.add('catalog-sticky__request'); brand.prepend(request); }
+    one('.catalog-page-nav__phone', nav)?.classList.add('catalog-sticky__phone');
+  }
+  for (const [selector, text] of [
+    ['.catalog-map__title', 'География'],
+    ['.catalog-grid__title', 'Каталог'],
+    ['.catalog-faq__title', 'Экспертиза BARNES']
+  ]) {
+    const heading = one(selector);
+    if (!heading || heading.previousElementSibling?.classList.contains('catalog-section-eyebrow')) continue;
+    const eyebrow = document.createElement('p');
+    eyebrow.className = 'catalog-section-eyebrow'; eyebrow.textContent = text;
+    heading.before(eyebrow);
+  }
+  const toolbar = one('.source-listing-filters');
+  if (toolbar) {
+    toolbar.classList.add('catalog-mode-toolbar');
+    toolbar.setAttribute('aria-label', 'Фильтры коммерческой недвижимости');
+    one('.catalog-quick-filters', toolbar)?.classList.add('catalog-mode-filters');
+    const filterIcons = [
+      '<path d="M4 21V5l8-2v18M12 8h8v13M2 21h20M7 7h2M7 11h2M7 15h2M15 11h2M15 15h2"/>',
+      '<circle cx="12" cy="12" r="9"/><path d="M9 16V7.5h3.4a2.75 2.75 0 1 1 0 5.5H9m0 0h5.6m-5.6 2h4.6"/>',
+      '<path d="M4 4h16v16H4zM8 4v3M12 4v3M16 4v3M4 8h3M4 12h3M4 16h3M9 15l6-6M9 12v3h3M12 9h3v3"/>'
+    ];
+    all('.catalog-quick-filters__button', toolbar).forEach((button, index) => {
+      const caption = ['Тип недвижимости', 'Стоимость', 'Площадь'][index];
+      button.innerHTML = `<span class="catalog-quick-filters__content"><span class="catalog-quick-filters__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${filterIcons[index]}</svg></span><span class="catalog-quick-filters__label" data-v-6fd45cc6><span class="catalog-quick-filters__caption">${caption}</span></span></span><span class="catalog-quick-filters__chevron" data-v-6fd45cc6 aria-hidden="true"></span>`;
+      button.setAttribute('aria-label', caption);
+      button.setAttribute('aria-haspopup', 'dialog');
+      button.addEventListener('click', () => {
+        openDialog('filters', button);
+        if (index) {
+          const input = all('.hero-filter-panel-content__range-input', dialog)[index === 1 ? 0 : 2];
+          input?.focus({preventScroll:true});
+          input?.closest('.hero-filter-panel-content__group')?.scrollIntoView({block:'nearest'});
+        }
+      });
+    });
+    const detailed = one('[data-commercial-filters="listing"]', toolbar);
+    detailed?.classList.remove('catalog-hero-filters__filter-icon', 'source-filter-trigger', 'source-filter-trigger--listing');
+    detailed?.classList.add('catalog-mode-detailed-filters');
+    if (detailed) detailed.innerHTML += '<span class="catalog-mode-detailed-filters__label catalog-mode-detailed-filters__label--desktop">Все фильтры</span><span class="catalog-mode-detailed-filters__label catalog-mode-detailed-filters__label--mobile">Фильтры</span>';
+    const sort = one('.catalog-grid__sort');
+    if (sort) toolbar.append(sort);
+  }
+  all('.apartment-card--catalog').forEach(card => {
+    const body = one('.apartment-card__body', card);
+    const address = one('.apartment-card__address', card);
+    const name = one('.apartment-card__name', card);
+    if (address && name) name.before(address);
+    const stats = one('.apartment-card__stats', card);
+    if (stats) {
+      stats.classList.add('listing-card-facts');
+      stats.style.setProperty('--facts-count', all('.apartment-card__stat', stats).length);
+      all('.apartment-card__stat', stats).forEach(stat => {
+        stat.classList.add('listing-card-fact');
+        const label = one('.apartment-card__stat-label', stat);
+        const value = one('.apartment-card__stat-value', stat);
+        label?.classList.add('listing-card-fact__label');
+        value?.classList.add('listing-card-fact__value');
+        if (label && value) value.before(label);
+      });
+    }
+    const price = one('.apartment-card__price', body);
+    const id = one('.apartment-card__lotid', body);
+    if (price && id) {
+      const row = document.createElement('div'); row.className = 'listing-card-price-row';
+      price.before(row); row.append(price, id);
+      one('.apartment-card__topline', body)?.remove();
+    }
+  });
   const filterTriggers = all('[data-commercial-filters]');
 
   function closeDialog() {
@@ -81,12 +171,15 @@
   one('.floating-expert__close')?.addEventListener('click', () => one('.floating-expert')?.remove());
 
   const scrollToSection = selector => one(selector)?.scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth' });
-  all('.catalog-page-nav__link').forEach((button, index) => button.addEventListener('click', () => scrollToSection(['.catalog-map', '.catalog-consultation', '.news-section'][index])));
+  all('.catalog-page-nav__link').forEach((button, index) => button.addEventListener('click', () => scrollToSection(['.catalog-map', '.catalog-grid', '.catalog-intro', '.catalog-faq'][index])));
   one('.catalog-page-nav__request')?.addEventListener('click', () => scrollToSection('.catalog-consultation'));
   function onScroll() {
-    const scrolled = scrollY > 100;
-    header?.classList.toggle('site-header--scrolled', scrolled);
-    nav?.classList.toggle('catalog-page-nav--visible', scrollY >= (one('.catalog-hero')?.offsetHeight || 644) - 110);
+    header?.classList.remove('site-header--scrolled');
+    const visible = scrollY >= (one('.catalog-hero')?.offsetHeight || 644) - 110;
+    nav?.classList.toggle('catalog-page-nav--visible', visible);
+    nav?.classList.toggle('catalog-sticky--visible', visible);
+    nav?.setAttribute('aria-hidden', String(!visible));
+    nav?.toggleAttribute('inert', !visible);
   }
   addEventListener('scroll', onScroll, { passive: true }); onScroll();
 

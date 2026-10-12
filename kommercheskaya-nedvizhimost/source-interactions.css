@@ -1,4 +1,8 @@
 /* Layout, typography and responsive rules come unchanged from the reference. */
+@import url("node-ui-kit.css");
+@import url("node-listing.css");
+@import url("node-header.css");
+@import url("node-adaptation.css");
 .news-section .splide__slide { flex-shrink: 0; margin-right: 40px; width: calc((100% - 80px) / 3); }
 @media (max-width: 1024px) { .news-section .splide__slide { width: calc((100% - 40px) / 2); } }
 @media (max-width: 560px) { .news-section .splide__slide { width: 100%; margin-right: 24px; } }
