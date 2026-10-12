@@ -15,7 +15,7 @@ const {chromium}=require('/home/daniil/Documents/Codex/2026-10-11/firecrawl/work
    }
    assert.deepEqual(pair[1],pair[0]);
    const buttons=page.locator('.catalog-mode-filters .catalog-quick-filters__button');
-   assert.deepEqual(await page.locator('.catalog-quick-filters__caption').allTextContents(),['Локация','Тип','Стоимость','Спальни']);
+   assert.deepEqual(await page.locator('.catalog-quick-filters__caption').allTextContents(),['Страна','Тип','Стоимость','Спальни']);
    for(let i=0;i<4;i++){
     await buttons.nth(i).click();assert.ok(await page.locator('.resort-quick-dropdown').isVisible());assert.equal(await page.locator('.hero-filter-modal').count(),0);
     assert.ok(await page.locator('.resort-quick-dropdown').evaluate(e=>{const r=e.getBoundingClientRect();return r.left>=0&&r.right<=innerWidth&&r.top>=0&&r.bottom<=innerHeight;}));

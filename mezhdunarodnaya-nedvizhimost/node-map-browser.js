@@ -8,7 +8,7 @@
   var assetsBase = new URL('.', document.currentScript.src);
   var style = document.createElement('link');
   style.rel = 'stylesheet';
-  style.href = new URL('node-map-browser.css?v=20261012-ref-sync-1', assetsBase).href;
+  style.href = new URL('node-map-browser.css?v=20261012-country-label-1', assetsBase).href;
   document.head.appendChild(style);
   var icon = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">';
   var parameterIcon = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">';
@@ -34,7 +34,7 @@
     '<button class="map-browser__filter-toggle" aria-label="Подробные фильтры" aria-expanded="false">' + filtersIcon + '</button></div>' +
     '<div class="map-browser__filters"><div class="map-browser__market" role="group" aria-label="Рынок недвижимости"><button type="button" data-map-market="new-build" aria-pressed="false">Новостройки</button><button type="button" data-map-market="secondary" aria-pressed="false">Вторичка</button></div><label class="map-browser__field map-browser__field--select"><span class="map-browser__sr-only">Тип объекта</span>' + buildingIcon + '<select aria-label="Тип объекта" data-filter="type"><option value="">Тип объекта</option><option value="apartment">Апартаменты</option><option value="flat">Квартира</option><option value="penthouse">Пентхаус</option></select><span class="map-browser__chevron" aria-hidden="true"></span></label>' +
     '<label class="map-browser__field"><span class="map-browser__sr-only">Цена до, ₽</span>' + priceIcon + '<input aria-label="Цена до, ₽" type="number" min="0" step="1000000" data-filter="price" placeholder="Стоимость"></label>' +
-    '<label class="map-browser__field map-browser__field--select"><span class="map-browser__sr-only">Локация</span>' + locationIcon + '<select aria-label="Локация" data-filter="location"><option value="">Локация</option><option>Сочи</option><option>Анапа</option><option>Алтай</option><option>Архыз</option></select><span class="map-browser__chevron" aria-hidden="true"></span></label>' +
+    '<label class="map-browser__field map-browser__field--select"><span class="map-browser__sr-only">Страна</span>' + locationIcon + '<select aria-label="Страна" data-filter="location"><option value="">Страна</option><option>Сочи</option><option>Анапа</option><option>Алтай</option><option>Архыз</option></select><span class="map-browser__chevron" aria-hidden="true"></span></label>' +
     '<label class="map-browser__field map-browser__field--select"><span class="map-browser__sr-only">Спальни</span>' + bedroomsIcon + '<select aria-label="Спальни" data-filter="bedrooms"><option value="">Спальни</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4+">Более 3</option></select><span class="map-browser__chevron" aria-hidden="true"></span></label>' +
     '<label class="map-browser__field map-browser__field--select map-browser__extra"><span class="map-browser__sr-only">Сортировка</span><select aria-label="Сортировка" data-filter="sort"><option value="">По релевантности</option><option value="asc">Сначала дешевле</option><option value="desc">Сначала дороже</option></select><span class="map-browser__chevron" aria-hidden="true"></span></label>' +
     '<button class="map-browser__reset">Сбросить фильтры</button></div><p class="map-browser__metadata-notice" role="status" hidden></p><div class="map-browser__list"></div></div>';
@@ -108,7 +108,7 @@
     var hasBrandFlags = items.some(function (item) { return Array.isArray(item.brandFlags); });
     var unavailable = [];
     if (type.value && !hasTypes) unavailable.push('тип объекта');
-    if (location.value && !hasLocations) unavailable.push('локация');
+    if (location.value && !hasLocations) unavailable.push('страна');
     if (bedrooms.value && !hasBedrooms) unavailable.push('число спален');
     metadataNotice.hidden = !unavailable.length;
     metadataNotice.textContent = unavailable.length ? 'Нет данных для параметров: ' + unavailable.join(', ') + '. Они пока не меняют выдачу.' : '';
