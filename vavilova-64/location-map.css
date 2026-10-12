@@ -1,0 +1,24 @@
+/* Restore the missing map column without changing page-wide containers. */
+#location .detail-location__content { min-width: 0; }
+#location .detail-location__title { white-space: normal; }
+#location .vavilova-location-map {
+  display: flex; flex-direction: column; min-width: 0; min-height: 560px;
+  border-radius: 1px; overflow: hidden; background: #eef1f4;
+}
+#location .vavilova-location-map__frame {
+  display: block; width: 100%; height: 520px; flex: 1 0 520px; border: 0;
+}
+#location .vavilova-location-map__link {
+  display: block; padding: 12px 16px; background: #fff; color: #656462;
+  font: 400 13px/18px "Tilda Sans",system-ui,sans-serif;
+  text-decoration: underline; text-underline-offset: 3px;
+}
+#location .vavilova-location-map__link:focus-visible { outline: 2px solid #8b1d25; outline-offset: -3px; }
+@media (max-width:1024px) {
+  #location .vavilova-location-map { min-height: 420px; }
+  #location .vavilova-location-map__frame { height: 380px; flex-basis: 380px; }
+}
+@media (max-width:540px) {
+  #location .vavilova-location-map { min-height: 320px; }
+  #location .vavilova-location-map__frame { height: 280px; flex-basis: 280px; }
+}
