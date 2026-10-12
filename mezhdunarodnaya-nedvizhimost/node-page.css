@@ -1,0 +1,19 @@
+/* International content inside the approved node component contracts. */
+.international-node-design .catalog-quick-links--hero { display: none; }
+.international-node-design .catalog-page-nav { display: none !important; }
+.international-node-design .catalog-best-offers__slider-row { margin-top: 0; }
+.international-node-design .catalog-mode-toolbar .catalog-grid__sort { width: 160px; height: 40px; }
+.international-node-design .catalog-consultation__image { object-fit: contain; }
+.international-node-design .catalog-feedback-modal { z-index: 1400; }
+.international-node-design .catalog-grid__item { display: list-item; }
+html body.international-node-design .catalog-contact__methods { max-width: none; }
+@media (min-width: 541px) and (max-width: 1024px) {
+  html body.international-node-design .catalog-contact__card { min-height: 457px; padding: clamp(26px, 4vw, 52px); }
+}
+.international-node-design .catalog-best-offers .splide__slide { width: calc((100% - 2 * var(--catalog-best-offers-gap)) / 3) !important; }
+.international-node-design .catalog-best-offers__slider-wrap { --catalog-best-offers-gap: 24px; }
+@media (min-width: 1441px) { .international-node-design .catalog-best-offers__slider-wrap { --catalog-best-offers-gap: 90px; } }
+@media (max-width: 1280px) { .international-node-design .catalog-best-offers__slider-wrap { --catalog-best-offers-gap: 20px; } }
+@media (max-width: 1024px) { .international-node-design .catalog-best-offers__slider-wrap { --catalog-best-offers-gap: 16px; } }
+@media (max-width: 768px) { .international-node-design .catalog-best-offers__slider-wrap { --catalog-best-offers-gap: 12px; } }
+@media (max-width: 540px) { .international-node-design .catalog-best-offers .splide__slide { width: 100% !important; } }
