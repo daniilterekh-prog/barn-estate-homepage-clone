@@ -4,7 +4,7 @@
   var base = new URL('.', document.currentScript.src);
   var stylesheet = document.createElement('link');
   stylesheet.rel = 'stylesheet';
-  stylesheet.href = new URL('node-quick-filters.css?v=20261012-quick-1', base).href;
+  stylesheet.href = new URL('node-quick-filters.css?v=20261012-ref-sync-1', base).href;
   document.head.appendChild(stylesheet);
   var template=document.querySelector('#source-filters').content;
   function choices(title){
@@ -15,7 +15,7 @@
   var countries=choices('Страны'),types=choices('Тип недвижимости'),prices=choices('Диапазоны');
   var configs=[
     Object.assign({title:'Локация',key:'directions',reset:'Все страны'},countries),
-    Object.assign({title:'Тип недвижимости',key:'propertyTypes',reset:'Любой тип'},types),
+    Object.assign({title:'Тип',key:'propertyTypes',reset:'Любой тип'},types),
     Object.assign({title:'Стоимость',key:'priceRanges',reset:'Любая'},prices),
     {title:'Спальни',key:'bedrooms',reset:'Любые',choices:['1','2','3','Более 3'],values:['1','2','3','4+']}
   ];
@@ -29,9 +29,44 @@
   document.body.appendChild(popup);
   var list = popup.querySelector('.catalog-quick-filters__options');
   var activeButton = null;
+  var savedPopupInert = false;
+  var selectConfigs = new Map();
+  function mountSelectDropdowns() {
+    document.querySelectorAll('.catalog-mode-toolbar .catalog-grid__sort select, .map-browser select[data-filter]').forEach(function (select) {
+      if (select.dataset.customDropdownReady) return;
+      select.dataset.customDropdownReady = 'true';
+      var button = document.createElement('button');
+      button.type = 'button';
+      var sorting = select.matches('.catalog-grid__sort-select, [data-filter="sort"]');
+      var title = sorting ? 'Сортировка' : select.getAttribute('aria-label');
+      button.className = select.className + (sorting ? ' resort-sort-trigger' : ' resort-select-trigger');
+      Array.from(select.attributes).filter(function (a) { return a.name.startsWith('data-v-'); }).forEach(function (a) { button.setAttribute(a.name, a.value); });
+      button.setAttribute('aria-haspopup','dialog');
+      button.setAttribute('aria-controls',popup.id);
+      button.setAttribute('aria-expanded','false');
+      select.before(button);
+      select.hidden = true;
+      select.setAttribute('aria-hidden','true');
+      select.tabIndex = -1;
+      var options = Array.from(select.options);
+      selectConfigs.set(button, { title:title, select:select, choices:options.map(function (o) { return o.textContent; }), values:options.map(function (o) { return o.value; }) });
+      function sync() {
+        button.textContent = select.selectedOptions[0].textContent;
+        button.setAttribute('aria-label',title + ': ' + button.textContent);
+      }
+      select.addEventListener('input',sync);
+      select.addEventListener('change',sync);
+      sync();
+    });
+    if (selectConfigs.size === 5 && selectObserver) selectObserver.disconnect();
+  }
+  var selectObserver = new MutationObserver(mountSelectDropdowns);
+  selectObserver.observe(document.body, { childList:true, subtree:true });
+  mountSelectDropdowns();
   function buttons() { return Array.from(document.querySelectorAll('.catalog-mode-filters .catalog-quick-filters__button')); }
   function state() { return window.BarnesFilters ? window.BarnesFilters.getState() : {}; }
   function selection(config, value) {
+    if (config.select) return [config.select.value];
     var current = value[config.key];
     return config.key === 'bedrooms' ? (current ? [current] : []) : current || [];
   }
@@ -63,6 +98,7 @@
     activeButton = null;
     popup.hidden = true;
     popup.style.display = 'none';
+    popup.inert = savedPopupInert;
     if (focus) previous.focus({preventScroll:true});
   }
   function place() {
@@ -86,9 +122,11 @@
     if (!window.BarnesFilters) return;
     if (button === activeButton) { close(true); return; }
     close(false);
-    var config = configs[index];
+    var config = typeof index === 'number' ? configs[index] : index;
     if (!config) return;
     activeButton = button;
+    savedPopupInert = popup.inert;
+    popup.inert = false; // The map isolates page siblings; this shared popup belongs to its active control.
     button.classList.add('is-open');
     button.setAttribute('aria-expanded','true');
     popup.setAttribute('aria-label',config.title);
@@ -96,17 +134,24 @@
     list.setAttribute('aria-label',config.title);
     list.replaceChildren();
     var selected = selection(config,state());
-    [config.reset].concat(config.choices).forEach(function (label,index) {
-      var value = index ? (config.values || config.choices)[index-1] : '';
+    (config.select ? config.choices : [config.reset].concat(config.choices)).forEach(function (label,index) {
+      var value = config.select ? config.values[index] : index ? (config.values || config.choices)[index-1] : '';
       var option = document.createElement('button');
       option.type = 'button';
       option.className = 'catalog-quick-filters__option';
       option.setAttribute('role','option');
-      var checked = value ? selected.includes(value) : !selected.length;
+      var checked = config.select ? selected.includes(value) : value ? selected.includes(value) : !selected.length;
       option.setAttribute('aria-selected',String(checked));
       option.classList.toggle('is-selected',checked);
       option.textContent = label;
       option.addEventListener('click',function () {
+        if (config.select) {
+          config.select.value = value;
+          config.select.dispatchEvent(new Event('input',{bubbles:true}));
+          config.select.dispatchEvent(new Event('change',{bubbles:true}));
+          close(true);
+          return;
+        }
         var fields = {};
         fields[config.key] = config.key === 'bedrooms' ? value : value ? [value] : [];
         if (config.key === 'priceRanges') { fields.priceMin = ''; fields.priceMax = ''; }
@@ -122,6 +167,8 @@
   }
   popup.querySelector('.catalog-quick-filters__dropdown-close').addEventListener('click',function () { close(true); });
   document.addEventListener('click',function (event) {
+    var sortButton = event.target.closest('.resort-sort-trigger, .resort-select-trigger');
+    if (sortButton) { event.preventDefault(); open(sortButton,selectConfigs.get(sortButton)); return; }
     var button = event.target.closest('.catalog-mode-filters .catalog-quick-filters__button');
     if (button) { event.preventDefault(); update(); open(button,buttons().indexOf(button)); }
     else if (!popup.contains(event.target)) close(false);
@@ -130,6 +177,7 @@
     var options = Array.from(list.children);
     var index = options.indexOf(document.activeElement);
     if (event.key === 'Escape') { event.preventDefault(); event.stopPropagation(); close(true); }
+    if (event.key === 'Tab') { event.preventDefault(); event.stopPropagation(); close(true); }
     if (['ArrowDown','ArrowUp','Home','End'].includes(event.key)) {
       event.preventDefault();
       var next = event.key === 'Home' ? 0 : event.key === 'End' ? options.length-1 : (index+(event.key==='ArrowDown'?1:-1)+options.length)%options.length;
@@ -147,6 +195,9 @@
   },true);
   window.addEventListener('resize',function () { close(false); });
   document.addEventListener('barnes:filters-apply',update);
+  document.addEventListener('barnes:filters-apply',function () {
+    selectConfigs.forEach(function (config,button) { button.textContent = config.select.selectedOptions[0].textContent; button.setAttribute('aria-label',config.title + ': ' + button.textContent); });
+  });
   document.addEventListener('barnes:filters-open',function () { close(false); });
   update();
 }());

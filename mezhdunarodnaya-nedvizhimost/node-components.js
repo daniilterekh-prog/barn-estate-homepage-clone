@@ -56,6 +56,11 @@ document.body.classList.add("barnes-header-template","international-node-design"
     phoneLink.setAttribute('aria-label', 'Позвонить по номеру +7 495 182-50-79');
     contacts.appendChild(phoneLink);
     rightColumn.appendChild(contacts);
+    var mobilePhone = header.querySelector('.site-header__mobile-phone');
+    if (mobilePhone) {
+      mobilePhone.classList.add('catalog-primary-call');
+      mobilePhone.setAttribute('aria-label', 'Позвонить по номеру +7 495 182-50-79');
+    }
   }
 
 
@@ -90,11 +95,6 @@ document.querySelector(".site-header__messengers")?.remove();
     var stickyLogo = sticky.querySelector('.catalog-sticky__logo img');
     if (sourceLogo && stickyLogo) stickyLogo.src = sourceLogo.currentSrc || sourceLogo.src;
 
-    var panel = sticky.querySelector('.catalog-sticky__messengers').cloneNode(true);
-    panel.id = 'international-sticky-contacts';
-    panel.className = 'catalog-sticky__contact-panel';
-    panel.hidden = true;
-    sticky.querySelector('.catalog-sticky__inner').appendChild(panel);
     page.insertBefore(sticky, page.firstChild);
 
     sticky.querySelector('.catalog-sticky__request').addEventListener('click', function () {
@@ -107,11 +107,47 @@ document.querySelector(".site-header__messengers")?.remove();
     });
 
     var toggle = sticky.querySelector('.catalog-sticky__contact-toggle');
+    var panel = sticky.querySelector('.catalog-sticky__messengers').cloneNode(true);
+    panel.id = 'international-sticky-contacts';
+    panel.className = 'catalog-sticky__contact-panel';
+    panel.hidden = true;
+    sticky.querySelector('.catalog-sticky__inner').appendChild(panel);
     toggle.addEventListener('click', function () {
-      var open = panel.hidden;
-      panel.hidden = !open;
-      toggle.setAttribute('aria-expanded', String(open));
-      toggle.setAttribute('aria-label', open ? 'Скрыть способы связи' : 'Показать способы связи');
+      panel.hidden = !panel.hidden;
+      toggle.setAttribute('aria-expanded', String(!panel.hidden));
+    });
+    var callback = document.createElement('button');
+    callback.type = 'button';
+    callback.className = 'catalog-sticky__request catalog-sticky__callback';
+    callback.setAttribute('aria-label', 'Оставить заявку');
+    callback.setAttribute('aria-haspopup', 'dialog');
+    callback.setAttribute('aria-controls', 'catalog-feedback-modal');
+    callback.textContent = 'Оставить заявку';
+    callback.addEventListener('click', function () {
+      panel.hidden = true;
+      toggle.setAttribute('aria-expanded', 'false');
+      if (openContactModal) {
+        openContactModal(callback);
+        document.querySelector('.catalog-feedback-modal [data-channel="Звонок"]').click();
+      }
+    });
+    var actions = document.createElement('div');
+    actions.className = 'catalog-sticky__mobile-actions';
+    actions.append(toggle, callback);
+    sticky.querySelector('.catalog-sticky__item--contacts').remove();
+    sticky.querySelector('.catalog-sticky__nav').appendChild(actions);
+    document.addEventListener('click', function (event) {
+      if (!panel.contains(event.target) && !toggle.contains(event.target)) {
+        panel.hidden = true;
+        toggle.setAttribute('aria-expanded', 'false');
+      }
+    });
+    document.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape' && !panel.hidden) {
+        panel.hidden = true;
+        toggle.setAttribute('aria-expanded', 'false');
+        toggle.focus();
+      }
     });
 
     document.addEventListener('keydown',function(event){if(event.key==='Escape'){panel.hidden=true;toggle.setAttribute('aria-expanded','false');}});
@@ -155,6 +191,7 @@ enhanceCatalogStickyHeader();
 
     var modal = document.createElement('div');
     modal.className = 'catalog-feedback-modal feedback-modal modal';
+    modal.id = 'catalog-feedback-modal';
     modal.hidden = true;
     modal.setAttribute('role', 'dialog');
     modal.setAttribute('aria-modal', 'true');
@@ -269,7 +306,7 @@ enhanceCatalogStickyHeader();
       }
     });
 
-    document.querySelectorAll('.catalog-contact__card-submit, .floating-expert__card').forEach(function (trigger) {
+    document.querySelectorAll('.catalog-contact__card-submit, .floating-expert__card, .site-footer__callback-btn').forEach(function (trigger) {
       trigger.addEventListener('click', function () {
         openContactModal(trigger);
       });
@@ -278,6 +315,37 @@ enhanceCatalogStickyHeader();
 
 
 enhanceContactModal();
+  function enhanceContactMethods() {
+    [
+      ['.catalog-consultation__methods', '.catalog-consultation__method'],
+      ['.catalog-contact__methods', '.catalog-contact__method']
+    ].forEach(function (entry) {
+      document.querySelectorAll(entry[0]).forEach(function (methods) {
+        if (methods.dataset.contactMethodsReady === 'true') return;
+        methods.dataset.contactMethodsReady = 'true';
+
+        var form = methods.closest('form');
+        var channelValue = document.createElement('input');
+        channelValue.type = 'hidden';
+        channelValue.name = 'preferredChannel';
+        var selected = methods.querySelector(entry[1] + '[aria-selected="true"]') || methods.querySelector(entry[1]);
+        channelValue.value = selected ? selected.textContent.trim() : 'Whatsapp';
+        if (form) form.appendChild(channelValue);
+
+        methods.addEventListener('click', function (event) {
+          var button = event.target.closest(entry[1]);
+          if (!button || !methods.contains(button)) return;
+          methods.querySelectorAll(entry[1]).forEach(function (item) {
+            item.setAttribute('aria-selected', String(item === button));
+          });
+          channelValue.value = button.textContent.trim();
+        });
+      });
+    });
+  }
+
+
+window.BARNES_ENHANCE_CONTACT_METHODS=enhanceContactMethods;
 window.BARNES_OPEN_CONTACT=openContactModal;
 var assetBase=new URL("../kurortnaya/assets/",document.currentScript.src);
 document.querySelectorAll("img[src^=\"../kurortnaya/assets/\"]").forEach(function(img){img.src=new URL(img.getAttribute("src").split("/").pop(),assetBase).href;});

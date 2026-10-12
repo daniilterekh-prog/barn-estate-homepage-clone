@@ -4,6 +4,7 @@
   const one = (s, root=document) => root.querySelector(s);
   const all = (s, root=document) => [...root.querySelectorAll(s)];
   let dialog = null, returnFocus = null, filterState = [];
+  let brandFlags = [], bedroomSelection = '';
   const header = one('.site-header'), menuButton = one('.site-header__icon-btn');
   function closeDialog() {
     dialog?.remove(); dialog=null;
@@ -90,8 +91,8 @@
     document.dispatchEvent(new Event('barnes:filters-apply'));window.dispatchEvent(new Event('international-filters-applied'));
   }
   window.BarnesFilters={
-    getState(){const root=savedFilterRoot(),checked=title=>all('input:checked',filterGroup(root,title)).map(input=>input.value),ranges=all('.hero-filter-panel-content__range-input',root);return{directions:checked('Страны'),propertyTypes:checked('Тип недвижимости'),priceRanges:checked('Диапазоны'),bedrooms:ranges[4].value===ranges[5].value?ranges[4].value:ranges[4].value==='4'&&!ranges[5].value?'4+':''};},
-    patch(fields){const root=savedFilterRoot();for(const [key,title]of [['directions','Страны'],['propertyTypes','Тип недвижимости'],['priceRanges','Диапазоны']])if(key in fields)all('input[type=checkbox]',filterGroup(root,title)).forEach(input=>input.checked=fields[key].includes(input.value));const ranges=all('.hero-filter-panel-content__range-input',root);if('priceMin'in fields)ranges[0].value=fields.priceMin;if('priceMax'in fields)ranges[1].value=fields.priceMax;if('bedrooms'in fields){ranges[4].value=fields.bedrooms==='4+'?'4':fields.bedrooms;ranges[5].value=fields.bedrooms==='4+'?'':fields.bedrooms;}applyLocalFilters(root);}
+    getState(){const root=savedFilterRoot(),checked=title=>all('input:checked',filterGroup(root,title)).map(input=>input.value);return{market:list.dataset.activeMode||'new-build',brandFlags:[...brandFlags],directions:checked('Страны'),propertyTypes:checked('Тип недвижимости'),priceRanges:checked('Диапазоны'),bedrooms:bedroomSelection};},
+    patch(fields){const root=savedFilterRoot();if(['new-build','secondary'].includes(fields.market)){one('.catalog-mode-switch__button[data-listing-mode="'+fields.market+'"]')?.click();}if('brandFlags'in fields)brandFlags=fields.brandFlags.filter(flag=>['selection','exclusive'].includes(flag));for(const [key,title]of [['directions','Страны'],['propertyTypes','Тип недвижимости'],['priceRanges','Диапазоны']])if(key in fields)all('input[type=checkbox]',filterGroup(root,title)).forEach(input=>input.checked=fields[key].includes(input.value));const ranges=all('.hero-filter-panel-content__range-input',root);if('priceMin'in fields)ranges[0].value=fields.priceMin;if('priceMax'in fields)ranges[1].value=fields.priceMax;if('bedrooms'in fields){bedroomSelection=fields.bedrooms;ranges[4].value=fields.bedrooms==='4+'?'4':fields.bedrooms;ranges[5].value=fields.bedrooms==='4+'?'':fields.bedrooms;}applyLocalFilters(root);}
   };
   all('.catalog-mode-switch__button').forEach(button=>button.addEventListener('click',()=>applyLocalFilters(savedFilterRoot())));
   function bindFilters(root){

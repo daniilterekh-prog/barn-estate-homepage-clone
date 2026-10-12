@@ -19,16 +19,6 @@ html body.international-node-design .hero-filter-modal--drawer { position: fixed
 .international-node-design .catalog-quick-links--hero { display: none; }
 .international-node-design .catalog-page-nav { display: none !important; }
 .international-node-design .catalog-best-offers__slider-row { margin-top: 0; }
-@media (max-width: 360px) {
-  html body.international-node-design .catalog-mode-toolbar .catalog-grid__sort {
-    grid-column: 1 / -1;
-    grid-row: 4;
-    width: 100%;
-  }
-  .international-node-design .catalog-mode-toolbar .catalog-mode-detailed-filters {
-    grid-column: 1 / -1;
-  }
-}
 .international-node-design .catalog-consultation__image { object-fit: contain; }
 .international-node-design .catalog-feedback-modal { z-index: 1400; }
 .international-node-design .catalog-grid__item { display: list-item; }

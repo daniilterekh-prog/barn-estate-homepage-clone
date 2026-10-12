@@ -6,7 +6,7 @@ const fs = require('node:fs/promises');
   let code = await fs.readFile('kurortnaya/map-fullscreen.js', 'utf8');
   code = code.replace("if (!trigger || !source || document.querySelector('.map-browser')) return;", "if (!trigger || !source || document.querySelector('.map-browser')) return;\n  source.dataset.nodeMapBrowser = 'true';");
   code = code.replace("source.dataset.nodeMapBrowser = 'true';", "source.dataset.nodeMapBrowser = 'true';\n  var filterTemplate=document.createElement('template');filterTemplate.id='source-map-filters';filterTemplate.innerHTML="+JSON.stringify(drawer)+";document.body.appendChild(filterTemplate);");
-  code = code.replace("new URL('map-fullscreen.css?v=2', assetsBase)", "new URL('node-map-browser.css?v=20261012-map-drawer-1', assetsBase)");
+  code = code.replace(/map-fullscreen\.css\?v=\d+/, 'node-map-browser.css?v=20261012-ref-sync-1');
   code = code.replace("new URL('map-preview.png', assetsBase)", "new URL('assets/map-browser-preview.png', assetsBase)");
   code = code.replace('var items = window.BarnesMapProjects || [];', `var cardElements = Array.from(document.querySelectorAll('.catalog-grid__item'));
   var items = cardElements.map(function (element) {
@@ -15,7 +15,7 @@ const fs = require('node:fs/promises');
     var link = element.querySelector('.apartment-card__media-link');
     var price = element.querySelector('.apartment-card__price').textContent.trim();
     return { name: name.textContent.trim(), href: link.href, image: photo ? photo.src : null, price: price,
-      type: element.dataset.listingMode === 'new-build' ? 'rc' : 'lot',
+      market: element.dataset.listingMode,
       priceRub: /₽/.test(price) ? Number(price.replace(/[^\\d]/g, '')) || null : null };
   });
   var applied = null;
@@ -26,11 +26,20 @@ const fs = require('node:fs/promises');
   code = code.replace("element !== dialog && !['SCRIPT'", "element !== dialog && !element.classList.contains('hero-filter-modal') && !['SCRIPT'");
   code = code.replace("var result = items.filter(function (item) {", "var result = items.filter(function (item, index) {\n      if (applied && !applied[index]) return false;");
   code = code.replace('image.src = item.image;', 'if (item.image) image.src = item.image;');
+  code = code.replace('var zoom = 1;', `['location','type'].forEach(function(key){
+    var title=key==='location'?'Страны':'Тип недвижимости';
+    var groups=Array.from(document.querySelector('#source-filters').content.querySelectorAll('.hero-filter-panel-content__group'));
+    var group=groups.find(function(g){return g.querySelector('.hero-filter-panel-content__title').textContent.trim()===title;});
+    var select=key==='location'?location:type;
+    if(group){select.length=1;Array.from(group.querySelectorAll('input[type=checkbox]')).forEach(function(input){select.add(new Option(input.closest('label').textContent.trim(),input.value));});}
+  });
+  var zoom = 1;`);
   code = code.replace('link.append(image, heading);', 'if (item.image) link.append(image);\n      link.append(heading);');
   code = code.replace("trigger.addEventListener('click', function () {", "window.BARNES_OPEN_MAP = function () {\n    if (!dialog.hidden) return;");
   code = code.replace("dialog.querySelector('.map-browser__close').focus();\n  });", "dialog.querySelector('.map-browser__close').focus();\n  };\n  trigger.addEventListener('click', window.BARNES_OPEN_MAP);");
   code = code.replace("var extra = dialog.querySelector('.map-browser__extra');\n    extra.hidden = !extra.hidden;\n    event.currentTarget.setAttribute('aria-expanded', String(!extra.hidden));\n    expand(true);", "window.BARNES_OPEN_FILTER(event.currentTarget);\n    expand(true);");
-  code = code.replace("[query, type, price, sort].forEach(function (input) { input.value = ''; });", "applied = null;\n    [query, type, price, sort].forEach(function (input) { input.value = ''; });");
+  code = code.replace("[query, type, price, sort, location, bedrooms].forEach(function (input) { input.value = ''; });", "applied = null;\n    [query, type, price, sort, location, bedrooms].forEach(function (input) { input.value = ''; });");
+  code = code.replace('window.BarnesFilters.patch({ brandFlags: [] })', 'window.BarnesFilters.patch({ brandFlags: [], directions: [], propertyTypes: [], priceRanges: [], bedrooms: \'\', priceMin: \'\', priceMax: \'\' })');
   code = code.replace('if (dialog.hidden) return;\n    if (event.key', "if (dialog.hidden || event.defaultPrevented || document.querySelector('.hero-filter-modal')) return;\n    if (event.key");
   await fs.writeFile(target + '/node-map-browser.css', await fs.readFile('kurortnaya/map-fullscreen.css', 'utf8'));
   await fs.writeFile(target + '/node-map-browser.js', code);
@@ -38,7 +47,7 @@ const fs = require('node:fs/promises');
     const prefix = file.startsWith('standalone/') ? '../' : '';
     let html = await fs.readFile(target + '/' + file, 'utf8');
     html = html.replace(/<script[^>]+src="[^"]*node-map-browser\.js[^"]*"[^>]*><\/script>/g, '');
-    html = html.replace(/(<script src="[^"]*source-runtime\.js[^>]+><\/script>)/, '<script src="' + prefix + 'node-map-browser.js?v=20261012-map-drawer-1" defer></script>$1');
+    html = html.replace(/(<script src="[^"]*source-runtime\.js[^>]+><\/script>)/, '<script src="' + prefix + 'node-map-browser.js?v=20261012-ref-sync-1" defer></script>$1');
     await fs.writeFile(target + '/' + file, html);
   }
 })().catch(error => { console.error(error); process.exitCode = 1; });
