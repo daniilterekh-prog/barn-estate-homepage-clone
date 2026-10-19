@@ -99,7 +99,7 @@
   $('[data-more]').addEventListener('click',()=>{const oldLimit=limit;limit+=6;render();list.children[oldLimit]?.querySelector('.apartment-card__name').focus({preventScroll:true});});
   function toggleFavorites(event){event.preventDefault();onlyFavorites=!onlyFavorites;limit=6;render();}
   $('[data-show-favorites]').addEventListener('click',toggleFavorites);
-  $('.site-header__favorites-btn').addEventListener('click',toggleFavorites);
+
   $('.catalog-header-search').href='#catalog-search';
   $('.catalog-header-search').addEventListener('click',event=>{event.preventDefault();$('#catalog-search').focus();});
   list.addEventListener('click',event=>{

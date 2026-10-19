@@ -1,0 +1,185 @@
+{
+  "passed": true,
+  "source": "4aa6ef04fe6b61105589b331a94fa003ea1b1487",
+  "exactSourceFiles": 23,
+  "widths": [
+    320,
+    390,
+    540,
+    768,
+    1024,
+    1440,
+    1920,
+    2560
+  ],
+  "checks": [
+    "numeric ID migration",
+    "lot and project tabs",
+    "custom sort dropdown",
+    "remove/undo",
+    "clear/undo",
+    "cross-tab persistence",
+    "preview isolation",
+    "contact dialog",
+    "menu keyboard",
+    "Escape/focus return",
+    "all visible images",
+    "no JS errors",
+    "source card computed-style parity",
+    "source file hashes"
+  ],
+  "computed": [
+    {
+      "width": 274.59375,
+      "title": {
+        "fontSize": "20px",
+        "fontWeight": "400",
+        "lineHeight": "22.4px"
+      },
+      "price": {
+        "fontSize": "24px",
+        "fontWeight": "500",
+        "lineHeight": "28.8px"
+      },
+      "action": {
+        "fontSize": "15px",
+        "fontWeight": "400",
+        "lineHeight": "15px"
+      },
+      "heart": true
+    },
+    {
+      "width": 341.84375,
+      "title": {
+        "fontSize": "20px",
+        "fontWeight": "400",
+        "lineHeight": "22.4px"
+      },
+      "price": {
+        "fontSize": "24px",
+        "fontWeight": "500",
+        "lineHeight": "28.8px"
+      },
+      "action": {
+        "fontSize": "15px",
+        "fontWeight": "400",
+        "lineHeight": "15px"
+      },
+      "heart": true
+    },
+    {
+      "width": 420,
+      "title": {
+        "fontSize": "20px",
+        "fontWeight": "400",
+        "lineHeight": "22.4px"
+      },
+      "price": {
+        "fontSize": "24px",
+        "fontWeight": "500",
+        "lineHeight": "28.8px"
+      },
+      "action": {
+        "fontSize": "15px",
+        "fontWeight": "400",
+        "lineHeight": "15px"
+      },
+      "heart": true
+    },
+    {
+      "width": 340.515625,
+      "title": {
+        "fontSize": "22px",
+        "fontWeight": "400",
+        "lineHeight": "24.64px"
+      },
+      "price": {
+        "fontSize": "26px",
+        "fontWeight": "500",
+        "lineHeight": "31.2px"
+      },
+      "action": {
+        "fontSize": "15px",
+        "fontWeight": "400",
+        "lineHeight": "15px"
+      },
+      "heart": true
+    },
+    {
+      "width": 420,
+      "title": {
+        "fontSize": "22px",
+        "fontWeight": "400",
+        "lineHeight": "24.64px"
+      },
+      "price": {
+        "fontSize": "26px",
+        "fontWeight": "500",
+        "lineHeight": "31.2px"
+      },
+      "action": {
+        "fontSize": "15px",
+        "fontWeight": "400",
+        "lineHeight": "15px"
+      },
+      "heart": true
+    },
+    {
+      "width": 413.4375,
+      "title": {
+        "fontSize": "22px",
+        "fontWeight": "400",
+        "lineHeight": "24.64px"
+      },
+      "price": {
+        "fontSize": "26px",
+        "fontWeight": "500",
+        "lineHeight": "31.2px"
+      },
+      "action": {
+        "fontSize": "15px",
+        "fontWeight": "400",
+        "lineHeight": "15px"
+      },
+      "heart": true
+    },
+    {
+      "width": 420,
+      "title": {
+        "fontSize": "22px",
+        "fontWeight": "400",
+        "lineHeight": "24.64px"
+      },
+      "price": {
+        "fontSize": "26px",
+        "fontWeight": "500",
+        "lineHeight": "31.2px"
+      },
+      "action": {
+        "fontSize": "15px",
+        "fontWeight": "400",
+        "lineHeight": "15px"
+      },
+      "heart": true
+    },
+    {
+      "width": 420,
+      "title": {
+        "fontSize": "22px",
+        "fontWeight": "400",
+        "lineHeight": "24.64px"
+      },
+      "price": {
+        "fontSize": "26px",
+        "fontWeight": "500",
+        "lineHeight": "31.2px"
+      },
+      "action": {
+        "fontSize": "15px",
+        "fontWeight": "400",
+        "lineHeight": "15px"
+      },
+      "heart": true
+    }
+  ]
+}

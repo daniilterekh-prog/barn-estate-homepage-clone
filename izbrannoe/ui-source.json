@@ -1,0 +1,116 @@
+{
+  "repository": "https://github.com/daniilterekh-prog/barnes-assets",
+  "commit": "4aa6ef04fe6b61105589b331a94fa003ea1b1487",
+  "files": {
+    "ui/source.css": {
+      "source": "blocks/nodes/first-degree/_shared/source.css",
+      "sha256": "71301870202aa1494201e7bb942e5ff796be3017f0ca58249d64c57772f3234a"
+    },
+    "ui/ui-kit.css": {
+      "source": "blocks/nodes/first-degree/_shared/ui-kit.css",
+      "sha256": "a30890c00e96f6bd9bd24960330f425978452a416e14c802f79b5d0f460ce89d"
+    },
+    "ui/listing-mode.css": {
+      "source": "blocks/nodes/first-degree/_shared/listing-mode.css",
+      "sha256": "aad90d91dc4ea719fa6cb4cd8dab6e056692824ca9331f26cbd45805e43e109c"
+    },
+    "ui/start-sales-cards.css": {
+      "source": "blocks/nodes/first-degree/_shared/start-sales-cards.css",
+      "sha256": "0922e432385e77b9bab6f4f52044d3929ec9266388e283dd6e9e4541c055bd88"
+    },
+    "ui/owner-header.css": {
+      "source": "blocks/nodes/first-degree/_shared/owner-header.css",
+      "sha256": "cc21406fd81a2ae9e395f89890a50427d363b6d0437f6ab5ee581f2c4b08f729"
+    },
+    "ui/owner-footer.css": {
+      "source": "blocks/nodes/first-degree/_shared/owner-footer.css",
+      "sha256": "b0f3b577d94fceea6c53627056d8456535bb2120d3a8b482568dfbb0fa9d7020"
+    },
+    "ui/quick-filters.js": {
+      "source": "blocks/nodes/first-degree/quick-filter-dropdowns/quick-filters.js",
+      "sha256": "2a323210ce2cc6dad803d65b8e178682c7668d8d6e52edd51ebf0467711e374a"
+    },
+    "ui/quick-filters.css": {
+      "source": "blocks/nodes/first-degree/quick-filter-dropdowns/quick-filters.css",
+      "sha256": "d98d8da8b8b267d72a6a2d3a6d14536a02e4578e25eb30a52bf2dffa96f925a2"
+    },
+    "ui/assets/3650e8e33aa7031c.woff2": {
+      "source": "blocks/nodes/first-degree/_shared/assets/3650e8e33aa7031c.woff2",
+      "sha256": "3814f8c444073262523050f3554c6f09cb49353e1f6fdc22a3561d354a231439"
+    },
+    "ui/assets/f8285279bd12648c.svg": {
+      "source": "blocks/nodes/first-degree/_shared/assets/f8285279bd12648c.svg",
+      "sha256": "7aa20aa89b87356c503ea3ffeec8a7959aa0554968c5816e226a6254b0ed31d0"
+    },
+    "ui/assets/7b0041f72131f767.woff2": {
+      "source": "blocks/nodes/first-degree/_shared/assets/7b0041f72131f767.woff2",
+      "sha256": "73abed6708c43912dbd5c2760147f72462887ccd803522a1486209ca1e97031a"
+    },
+    "ui/assets/02b7a36916692a36.svg": {
+      "source": "blocks/nodes/first-degree/_shared/assets/02b7a36916692a36.svg",
+      "sha256": "3e197e0e1f3e679ee09823c75e1c7bad3a19da9bd1ba01df395268b9ae91816f"
+    },
+    "ui/assets/11db92f726df02d6.webp": {
+      "source": "blocks/nodes/first-degree/_shared/assets/11db92f726df02d6.webp",
+      "sha256": "cc0622404bfda9fadbdf822971fddd5b95234e4ae4be4a9578b29e0b33198f10"
+    },
+    "ui/assets/86b8e2a4b34a061f.svg": {
+      "source": "blocks/nodes/first-degree/_shared/assets/86b8e2a4b34a061f.svg",
+      "sha256": "7aa20aa89b87356c503ea3ffeec8a7959aa0554968c5816e226a6254b0ed31d0"
+    },
+    "ui/assets/7f0243b306c649b7.webp": {
+      "source": "blocks/nodes/first-degree/_shared/assets/7f0243b306c649b7.webp",
+      "sha256": "709121d4e9a3cf0688a44fffccbfcb4703a725726487a4b56e45623ebc958ce8"
+    },
+    "ui/assets/e780567a5079a655.svg": {
+      "source": "blocks/nodes/first-degree/_shared/assets/e780567a5079a655.svg",
+      "sha256": "4435c9a57e165a1c3b7f27e0b5b11b82b10d674ea4fff7f6748cb67b7fcb994e"
+    },
+    "ui/assets/a9274ba2f8d830e5.woff2": {
+      "source": "blocks/nodes/first-degree/_shared/assets/a9274ba2f8d830e5.woff2",
+      "sha256": "f0f2c165784c72343618a7c2cbde00e45dbb9b09af5149984792f280cac9642e"
+    },
+    "ui/assets/48d1ef1db2cfec22.woff2": {
+      "source": "blocks/nodes/first-degree/_shared/assets/48d1ef1db2cfec22.woff2",
+      "sha256": "726a3a878465a590443308ea9e14459ab5943f699cff4887c844af4ed76ce577"
+    },
+    "ui/assets/2435433bcff3b967.woff2": {
+      "source": "blocks/nodes/first-degree/_shared/assets/2435433bcff3b967.woff2",
+      "sha256": "f716269e361f466570f37bc920988c619ddc8a7828c5949c1c56a731a320ab47"
+    },
+    "ui/assets/086cc9ca6e7ad9da.woff2": {
+      "source": "blocks/nodes/first-degree/_shared/assets/086cc9ca6e7ad9da.woff2",
+      "sha256": "2670dad44ca6c2a1b9bbdbf1af6d8db9173f2dbe31604e80bdf9599b55047d41"
+    },
+    "ui/assets/96011550f4b6e432.woff2": {
+      "source": "blocks/nodes/first-degree/_shared/assets/96011550f4b6e432.woff2",
+      "sha256": "a2690df6fe8348066df79e3a3421a3a9bc0b058cc536f3d846f782ea5337afec"
+    },
+    "ui/assets/bff2c0c9ecfe54d1.png": {
+      "source": "blocks/nodes/first-degree/_shared/assets/bff2c0c9ecfe54d1.png",
+      "sha256": "348dce92538cc2518d4adfea18bf7f9283ec1df8b67105238ba93cf22a8823f0"
+    },
+    "ui/assets/e4d43ddddae4bc89.svg": {
+      "source": "blocks/nodes/first-degree/_shared/assets/e4d43ddddae4bc89.svg",
+      "sha256": "5caa61a4b0731d0d89421b4fb24f41433025e5aea59155a14cf3a3fada6c9174"
+    }
+  },
+  "components": {
+    "header": {
+      "source": "blocks/nodes/first-degree/header/fragment.html",
+      "sha256": "2874755a34026d80935be2f460459a0c74ac12dafd3cfeca0421c38d8a76dec4"
+    },
+    "footer": {
+      "source": "blocks/nodes/first-degree/footer/fragment.html",
+      "sha256": "07a590658ef9120c45bbab3980626a7b98d710dabb885824f540d6c3a27c2fc2"
+    },
+    "card-lot": {
+      "source": "blocks/nodes/first-degree/card-lot/fragment.html",
+      "sha256": "0442a985febe33a256b64d4b322e27125ea057b00746d9f501268f4ea88c15cc"
+    },
+    "card-project": {
+      "source": "blocks/nodes/first-degree/card-project/fragment.html",
+      "sha256": "9f4d85db0a2bdc5f3cf1dec5517ecc7cc58d561211004da5d29583ee2a74ba34"
+    }
+  }
+}

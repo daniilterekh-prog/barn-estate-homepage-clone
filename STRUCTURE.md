@@ -11,6 +11,8 @@
 - `kommercheskaya-nedvizhimost/` — коммерческая недвижимость;
 - [`katalog-nedvizhimosti/`](katalog-nedvizhimosti/) — готовое превью общей выдачи на утверждённом BARNES UI-kit: карточки ЖК/лотов, фильтры, поиск и избранное; обновлено 19.10.2026.
 
+- [`izbrannoe/`](izbrannoe/) — опубликованное избранное на UI-ките сайта; общий ключ сохранения с каталогом. [Пример подборки](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/izbrannoe/?preview=1).
+
 ## Лендинги
 
 - `arenda_sobstvennikam/` — лендинг аренды для собственников;
