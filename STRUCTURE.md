@@ -9,7 +9,7 @@
 - `mezhdunarodnaya-nedvizhimost/` — зарубежная недвижимость;
 - `zagorodnaya-nedvizhimost/` — загородная недвижимость;
 - `kommercheskaya-nedvizhimost/` — коммерческая недвижимость;
-- `katalog-nedvizhimosti/` — каталог и листинг объектов.
+- [`katalog-nedvizhimosti/`](katalog-nedvizhimosti/) — готовое превью общей выдачи на утверждённом BARNES UI-kit: карточки ЖК/лотов, фильтры, поиск и избранное; обновлено 19.10.2026.
 
 ## Лендинги
 

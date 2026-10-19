@@ -1,0 +1,80 @@
+{
+  "repository": "https://github.com/daniilterekh-prog/barnes-assets",
+  "commit": "4aa6ef04fe6b61105589b331a94fa003ea1b1487",
+  "sourceReference": "14401c518b4a5f51e910121f1741d79efa164a80",
+  "files": [
+    {
+      "path": "blocks/nodes/first-degree/_shared/source.css",
+      "sha256": "71301870202aa1494201e7bb942e5ff796be3017f0ca58249d64c57772f3234a"
+    },
+    {
+      "path": "blocks/nodes/first-degree/_shared/ui-kit.css",
+      "sha256": "a30890c00e96f6bd9bd24960330f425978452a416e14c802f79b5d0f460ce89d"
+    },
+    {
+      "path": "blocks/nodes/first-degree/_shared/listing-mode.css",
+      "sha256": "aad90d91dc4ea719fa6cb4cd8dab6e056692824ca9331f26cbd45805e43e109c"
+    },
+    {
+      "path": "blocks/nodes/first-degree/_shared/owner-header.css",
+      "sha256": "cc21406fd81a2ae9e395f89890a50427d363b6d0437f6ab5ee581f2c4b08f729"
+    },
+    {
+      "path": "blocks/nodes/first-degree/_shared/owner-footer.css",
+      "sha256": "b0f3b577d94fceea6c53627056d8456535bb2120d3a8b482568dfbb0fa9d7020"
+    },
+    {
+      "path": "blocks/nodes/first-degree/_shared/brand-filters.css",
+      "sha256": "43f02a971520aed3434d02a861a4e6a71b15e0065522f8c233265a615736597a"
+    },
+    {
+      "path": "blocks/nodes/first-degree/quick-filter-dropdowns/quick-filters.js",
+      "sha256": "2a323210ce2cc6dad803d65b8e178682c7668d8d6e52edd51ebf0467711e374a"
+    },
+    {
+      "path": "blocks/nodes/first-degree/quick-filter-dropdowns/quick-filters.css",
+      "sha256": "d98d8da8b8b267d72a6a2d3a6d14536a02e4578e25eb30a52bf2dffa96f925a2"
+    },
+    {
+      "path": "blocks/nodes/first-degree/quick-filter-dropdowns/brand-filters.js",
+      "sha256": "c4bc208262cadd9fd71cf79cd357aa58809c2ca0ac9facfce6870c6ca209460d"
+    },
+    {
+      "path": "blocks/nodes/first-degree/quick-filter-dropdowns/brand-filters.css",
+      "sha256": "43f02a971520aed3434d02a861a4e6a71b15e0065522f8c233265a615736597a"
+    },
+    {
+      "path": "blocks/nodes/first-degree/filters-modal/filters-template.js",
+      "sha256": "9429c19e3ce221df489e86cce8c470e633b1b30bcc793afd78cd2ea22defc2eb"
+    },
+    {
+      "path": "blocks/nodes/first-degree/filters-modal/filters-modal.js",
+      "sha256": "3dcc8d4d3aaa391978f4283d695783c2c457f8687920024ff7a93e008e0c0e62"
+    },
+    {
+      "path": "blocks/nodes/first-degree/filters-modal/filters-modal.css",
+      "sha256": "0824dd6a6b0ec6b871f06acbc375864715e304d1eb5c0783b8f12cf8b5caf1cf"
+    },
+    {
+      "path": "blocks/nodes/first-degree/listing/fragment.html",
+      "sha256": "2cd389091b2f6795f61763ef24ba78865d51e014266e361dd1ae90a6a0a90858"
+    },
+    {
+      "path": "blocks/nodes/first-degree/card-project/fragment.html",
+      "sha256": "9f4d85db0a2bdc5f3cf1dec5517ecc7cc58d561211004da5d29583ee2a74ba34"
+    },
+    {
+      "path": "blocks/nodes/first-degree/card-lot/fragment.html",
+      "sha256": "0442a985febe33a256b64d4b322e27125ea057b00746d9f501268f4ea88c15cc"
+    },
+    {
+      "path": "blocks/nodes/first-degree/header/fragment.html",
+      "sha256": "2874755a34026d80935be2f460459a0c74ac12dafd3cfeca0421c38d8a76dec4"
+    },
+    {
+      "path": "blocks/nodes/first-degree/footer/fragment.html",
+      "sha256": "07a590658ef9120c45bbab3980626a7b98d710dabb885824f540d6c3a27c2fc2"
+    }
+  ],
+  "adaptation": "quick-filters.js: configs reads window.BarnesCatalogQuickConfig before canonical defaults; all other vendor sources copied unchanged."
+}

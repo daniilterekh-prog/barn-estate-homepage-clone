@@ -1,186 +1,126 @@
 (() => {
-  const dialog = document.querySelector('#filters-dialog')
-  const form = document.querySelector('[data-filters-form]')
-  const cards = [...document.querySelectorAll('[data-card]')]
-  const grid = document.querySelector('[data-listing-grid]')
-  const queryInput = document.querySelector('[data-query]')
-  const resultsCount = document.querySelector('[data-results-count]')
-  const emptyState = document.querySelector('[data-listing-empty]')
-  const activeFilters = document.querySelector('[data-active-filters]')
-  const badge = document.querySelector('[data-filter-badge]')
-  const toast = document.querySelector('[data-toast]')
-  const countrySelect = form.querySelector('[data-country-select]')
-  const citySelect = form.querySelector('[data-city-select]')
-  const districtSelect = form.querySelector('[data-district-select]')
-  const cityField = form.querySelector('[data-city-field]')
-  const districtField = form.querySelector('[data-district-field]')
-  const topDistrictControl = document.querySelector('[data-city-dependent]')
-  const locationData = {
-    russia: { label: 'Россия', cities: { moscow: { label: 'Москва', districts: { '': 'Любой район', хамовники: 'Хамовники', пресненский: 'Пресненский', хорошевский: 'Хорошевский' } }, spb: { label: 'Санкт-Петербург', districts: { '': 'Любой район', петроградский: 'Петроградский', центральный: 'Центральный' } }, sochi: { label: 'Сочи', districts: { '': 'Любой район', центр: 'Центральный' } } } },
-    france: { label: 'Франция', cities: { paris: { label: 'Париж', districts: { '': 'Любой район', восьмой: '8-й округ', шестнадцатый: '16-й округ' } }, nice: { label: 'Ницца', districts: { '': 'Любой район', центр: 'Центр' } } } },
-    italy: { label: 'Италия', cities: { milan: { label: 'Милан', districts: { '': 'Любой район', brera: 'Брера' } }, rome: { label: 'Рим', districts: { '': 'Любой район', центр: 'Центр' } } } },
-    uae: { label: 'ОАЭ', cities: { dubai: { label: 'Дубай', districts: { '': 'Любой район', palm: 'Palm Jumeirah', downtown: 'Downtown' } } } },
+  'use strict';
+  const $=selector=>document.querySelector(selector);
+  const list=$('.catalog-grid__list');
+  const money=new Intl.NumberFormat('ru-RU');
+  const STORAGE='barnes-catalog-favorites';
+  let objects=[],favorites=[],query='',sort='relevance',onlyFavorites=false,limit=6;
+  try{const saved=JSON.parse(localStorage.getItem(STORAGE)||'[]');if(Array.isArray(saved))favorites=[...new Set(saved)].filter(id=>typeof id==='string');}catch{}
+  const countLabel=(n,word='объект')=>`${n} ${word==='проект'?(n%100>=11&&n%100<=14?'проектов':n%10===1?'проект':n%10>=2&&n%10<=4?'проекта':'проектов'):(n%100>=11&&n%100<=14?'объектов':n%10===1?'объект':n%10>=2&&n%10<=4?'объекта':'объектов')}`;
+  const state=()=>window.BarnesFilters.getState();
+  function readURL(){
+    const params=new URLSearchParams(location.search),value={market:params.get('market')==='secondary'?'secondary':'new-build'};
+    for(const key of ['directions','propertyTypes','priceRanges','brandFlags'])value[key]=params.getAll(key);
+    for(const key of ['priceMin','priceMax','areaMin','areaMax','roomsMin','roomsMax','bedrooms']){const v=params.get(key);if(v&&/^(\d+|4\+)$/.test(v))value[key]=v;}
+    query=params.get('q')||'';$('#catalog-search').value=query;
+    const sorting=params.get('sort');if(['price_asc','price_desc','square_asc','square_desc'].includes(sorting))sort=sorting;
+    onlyFavorites=params.get('favorites')==='1';
+    $('.catalog-grid__sort select').value=sort;
+    $('.catalog-grid__sort select').dispatchEvent(new Event('change',{bubbles:true}));
+    window.BarnesFilters.patch(value);
   }
-  const state = { deal: 'buy', category: 'city', country: 'russia', city: 'moscow', minPrice: '', maxPrice: '', minArea: '', maxArea: '', rooms: [], district: '' }
-
-  const formatNumber = (value) => new Intl.NumberFormat('ru-RU').format(value)
-  const formatCount = (value) => {
-    const lastTwo = value % 100
-    const last = value % 10
-    if (lastTwo >= 11 && lastTwo <= 14) return `${value} объектов`
-    if (last === 1) return `${value} объект`
-    if (last >= 2 && last <= 4) return `${value} объекта`
-    return `${value} объектов`
+  function writeURL(){
+    const params=new URLSearchParams(),s=state();
+    if(s.market==='secondary')params.set('market',s.market);
+    for(const key of ['directions','propertyTypes','priceRanges','brandFlags'])for(const value of s[key]||[])params.append(key,value);
+    for(const key of ['priceMin','priceMax','areaMin','areaMax','roomsMin','roomsMax','bedrooms'])if(s[key])params.set(key,s[key]);
+    if(query)params.set('q',query);if(sort!=='relevance')params.set('sort',sort);if(onlyFavorites)params.set('favorites','1');
+    history.replaceState(null,'',location.pathname+(params.size?'?'+params:'')+location.hash);
   }
-
-  const showToast = (message) => {
-    toast.textContent = message
-    toast.classList.add('is-visible')
-    window.clearTimeout(showToast.timeout)
-    showToast.timeout = window.setTimeout(() => toast.classList.remove('is-visible'), 2300)
-  }
-
-  const openFilters = () => {
-    if (typeof dialog.showModal === 'function') dialog.showModal()
-    else dialog.setAttribute('open', '')
-  }
-  const closeFilters = () => dialog.close ? dialog.close() : dialog.removeAttribute('open')
-  document.querySelectorAll('[data-open-filters]').forEach((button) => button.addEventListener('click', openFilters))
-  document.querySelector('[data-close-filters]').addEventListener('click', closeFilters)
-  dialog.addEventListener('click', (event) => { if (event.target === dialog) closeFilters() })
-
-  const fillSelect = (select, options, selected = '') => {
-    const hasEmptyOption = Object.prototype.hasOwnProperty.call(options, '')
-    const placeholder = select === citySelect && !hasEmptyOption ? '<option value="">Выберите город</option>' : ''
-    select.innerHTML = placeholder + Object.entries(options).map(([value, label]) => `<option value="${value}">${label}</option>`).join('')
-    select.value = Object.prototype.hasOwnProperty.call(options, selected) ? selected : ''
-  }
-
-  const updateLocationFields = ({ country = countrySelect.value, city = citySelect.value, district = districtSelect.value } = {}) => {
-    const countryData = locationData[country]
-    const hasCountry = Boolean(countryData)
-    cityField.hidden = !hasCountry
-    if (!hasCountry) {
-      citySelect.innerHTML = ''
-      districtSelect.innerHTML = ''
-      districtField.hidden = true
-      return
+  const rangeMatch=(price,key)=>key==='50m'?price<50e6:key==='50-100m'?price>=50e6&&price<100e6:key==='100-200m'?price>=100e6&&price<200e6:key==='200m+'?price>=200e6:false;
+  function matches(item,s){
+    if(item.market!==s.market)return false;
+    if(onlyFavorites&&!favorites.includes(item.id))return false;
+    if(s.directions?.length&&!s.directions.some(value=>item.directions.includes(value)))return false;
+    if(s.propertyTypes?.length&&!s.propertyTypes.some(value=>item.propertyTypes.includes(value)))return false;
+    if(s.brandFlags?.length&&!s.brandFlags.some(value=>item.brandFlags.includes(value)))return false;
+    if(s.priceRanges?.length&&!s.priceRanges.some(value=>rangeMatch(item.price,value)))return false;
+    for(const [min,max,key] of [['priceMin','priceMax','price'],['areaMin','areaMax','area'],['roomsMin','roomsMax','rooms']]){
+      if((s[min]||s[max])&&item[key]==null)return false;
+      if(s[min]&&item[key]<Number(s[min]))return false;
+      if(s[max]&&item[key]>Number(s[max]))return false;
     }
-    fillSelect(citySelect, Object.fromEntries(Object.entries(countryData.cities).map(([value, data]) => [value, data.label])), city)
-    const cityData = countryData.cities[citySelect.value]
-    const hasCity = Boolean(cityData)
-    districtField.hidden = !hasCity
-    fillSelect(districtSelect, hasCity ? cityData.districts : { '': 'Сначала выберите город' }, hasCity ? district : '')
+    if(s.bedrooms){
+      const bedroom=Number(item.stats?.find(([,label])=>/^Спал/.test(label))?.[0]);
+      if(item.bedrooms){
+        const range=item.bedrooms.match(/\d+/g).map(Number),min=range[0],max=item.bedrooms.includes('+')?Infinity:range.at(-1);
+        if(!(s.bedrooms==='4+'?max>=4:Number(s.bedrooms)>=min&&Number(s.bedrooms)<=max))return false;
+      }else if(!bedroom||!(s.bedrooms==='4+'?bedroom>=4:bedroom===Number(s.bedrooms)))return false;
+    }
+    if(query.trim()&&!`${item.id} ${item.title} ${item.address}`.toLocaleLowerCase('ru').includes(query.trim().toLocaleLowerCase('ru')))return false;
+    return true;
   }
-
-  countrySelect.addEventListener('change', () => updateLocationFields({ country: countrySelect.value, city: '', district: '' }))
-  citySelect.addEventListener('change', () => updateLocationFields({ city: citySelect.value, district: '' }))
-
-  const readForm = () => ({
-    deal: form.elements.deal.value,
-    category: form.elements.category.value,
-    country: countrySelect.value,
-    city: citySelect.value,
-    minPrice: form.elements.minPrice.value,
-    maxPrice: form.elements.maxPrice.value,
-    minArea: form.elements.minArea.value,
-    maxArea: form.elements.maxArea.value,
-    rooms: [...form.querySelectorAll('input[name="rooms"]:checked')].map((input) => input.value),
-    district: districtSelect.value,
-  })
-
-  const syncForm = () => {
-    form.elements.deal.value = state.deal
-    form.elements.category.value = state.category
-    countrySelect.value = state.country
-    updateLocationFields({ country: state.country, city: state.city, district: state.district })
-    form.elements.minPrice.value = state.minPrice
-    form.elements.maxPrice.value = state.maxPrice
-    form.elements.minArea.value = state.minArea
-    form.elements.maxArea.value = state.maxArea
-    form.querySelectorAll('input[name="rooms"]').forEach((input) => { input.checked = state.rooms.includes(input.value) })
-    districtSelect.value = state.district
+  function card(item,index){
+    const article=$(item.market==='new-build'?'#card-project':'#card-lot').content.firstElementChild.cloneNode(true);
+    article.dataset.id=item.id;
+    const image=article.querySelector('img');image.src=item.image;image.alt=item.title;image.loading=index<3?'eager':'lazy';
+    for(const link of article.querySelectorAll('a'))link.href=item.url;
+    article.querySelector('.apartment-card__address').textContent=item.address||'Адрес уточняется';
+    article.querySelector('.apartment-card__name-text').textContent=item.title;
+    article.querySelector('.apartment-card__name').title=item.title;
+    const facts=item.market==='new-build'?[
+      ['Локация',item.locationLabel||item.directions.join(', ')||'По запросу'],['Срок сдачи',item.completion||'По запросу'],['Спальни',item.bedrooms||'По запросу']
+    ]:[['Комнаты',String(item.rooms)],['Площадь',money.format(item.area)+' м²'],['Этаж',item.stats.find(([,label])=>label==='Этаж')?.[0]||'По запросу']];
+    article.querySelectorAll('.listing-card-fact').forEach((fact,i)=>{fact.querySelector('dt').textContent=facts[i][0];fact.querySelector('dd').textContent=facts[i][1];});
+    article.querySelector('.apartment-card__price').textContent=(item.market==='new-build'?'от ':'')+money.format(item.price)+' ₽';
+    const lotID=article.querySelector('.apartment-card__lotid');if(lotID){lotID.textContent='ID '+item.id;lotID.setAttribute('aria-label','ID объекта '+item.id);}
+    const favorite=article.querySelector('.apartment-card__favorite');favorite.dataset.favorite=item.id;favorite.setAttribute('aria-pressed',String(favorites.includes(item.id)));favorite.setAttribute('aria-label',`${favorites.includes(item.id)?'Удалить из избранного':'Добавить в избранное'}: ${item.title}`);
+    const call=article.querySelector('.apartment-card__call-btn');const phone=document.createElement('a');for(const attr of call.attributes)if(attr.name!=='type')phone.setAttribute(attr.name,attr.value);phone.href='tel:+74951825079';phone.textContent='Позвонить';phone.setAttribute('aria-label','Позвонить по объекту '+item.title);call.replaceWith(phone);
+    const wrapper=document.createElement('li');wrapper.className='catalog-grid__item';wrapper.setAttribute('data-v-5a2b3b97','');wrapper.dataset.listingMode=item.market;wrapper.dataset.price=item.price;wrapper.dataset.area=item.area??'';wrapper.appendChild(article);return wrapper;
   }
-
-  const activeCount = () => [state.deal !== 'buy', state.category !== 'city', state.country !== 'russia', state.city !== 'moscow', state.minPrice, state.maxPrice, state.minArea, state.maxArea, state.rooms.length, state.district].filter(Boolean).length
-
-  const renderControlValues = () => {
-    const price = state.minPrice || state.maxPrice
-    const priceLabel = state.minPrice && state.maxPrice ? `${formatNumber(state.minPrice)}–${formatNumber(state.maxPrice)} ₽` : state.minPrice ? `от ${formatNumber(state.minPrice)} ₽` : state.maxPrice ? `до ${formatNumber(state.maxPrice)} ₽` : 'Любая'
-    document.querySelector('[data-control-value="deal"]').textContent = state.deal === 'rent' ? 'Снять' : 'Купить'
-    document.querySelector('[data-control-value="category"]').textContent = ({ city: 'Городская недвижимость', country: 'Загородная', resort: 'Курортная', commercial: 'Коммерческая' })[state.category]
-    document.querySelector('[data-control-value="country"]').textContent = locationData[state.country]?.label || 'Не выбрана'
-    document.querySelector('[data-control-value="city"]').textContent = locationData[state.country]?.cities[state.city]?.label || 'Выберите город'
-    document.querySelector('[data-control-value="district"]').textContent = state.district ? locationData[state.country]?.cities[state.city]?.districts[state.district] : 'Любой'
-    topDistrictControl.hidden = !state.city
-    document.querySelector('[data-control-value="price"]').textContent = price ? priceLabel : 'Любая'
-    badge.hidden = !activeCount()
-    badge.textContent = activeCount()
+  function render(){
+    const s=state();let visible=objects.filter(item=>matches(item,s));
+    const direction=sort.endsWith('_desc')?-1:1;
+    if(sort.startsWith('price_'))visible.sort((a,b)=>direction*(a.price-b.price));
+    if(sort.startsWith('square_'))visible.sort((a,b)=>a.area==null?(b.area==null?0:1):b.area==null?-1:direction*(a.area-b.area));
+    list.replaceChildren(...visible.slice(0,limit).map(card));list.setAttribute('aria-busy','false');
+    document.querySelectorAll('.catalog-mode-switch__button').forEach(button=>{const active=button.dataset.listingMode===s.market;button.classList.toggle('is-active',active);button.setAttribute('aria-pressed',String(active));});
+    $('#results-count').textContent=countLabel(visible.length,s.market==='new-build'?'проект':'объект');
+    $('.catalog-empty').hidden=visible.length>0;
+    $('.catalog-grid__footer').hidden=!visible.length;
+    $('[data-more]').hidden=limit>=visible.length;
+    $('[data-progress]').textContent=`Показано ${Math.min(limit,visible.length)} из ${visible.length}`;
+    const active=query||onlyFavorites||['directions','propertyTypes','priceRanges','brandFlags','priceMin','priceMax','areaMin','areaMax','roomsMin','roomsMax','bedrooms'].some(key=>s[key]?.length);
+    $('[data-reset]').hidden=!active;
+    $('[data-show-favorites]').setAttribute('aria-pressed',String(onlyFavorites));
+    document.querySelectorAll('[data-favorite-count],.site-header__favorites-count').forEach(el=>{el.textContent=favorites.length;});
+    writeURL();
   }
-
-  const renderChips = () => {
-    const chips = []
-    if (state.deal !== 'buy') chips.push(['Снять', () => { state.deal = 'buy' }])
-    if (state.category !== 'city') chips.push([({ country: 'Загородная', resort: 'Курортная', commercial: 'Коммерческая' })[state.category], () => { state.category = 'city' }])
-    if (state.country !== 'russia') chips.push([locationData[state.country]?.label || 'Страна', () => { state.country = 'russia'; state.city = 'moscow'; state.district = '' }])
-    if (state.city && state.city !== 'moscow') chips.push([locationData[state.country]?.cities[state.city]?.label || 'Город', () => { state.city = 'moscow'; state.district = '' }])
-    if (state.minPrice || state.maxPrice) chips.push([`Цена: ${state.minPrice ? `от ${formatNumber(state.minPrice)}` : ''}${state.minPrice && state.maxPrice ? ' — ' : ''}${state.maxPrice ? `до ${formatNumber(state.maxPrice)}` : ''} ₽`, () => { state.minPrice = ''; state.maxPrice = '' }])
-    if (state.minArea || state.maxArea) chips.push([`Площадь: ${state.minArea || '0'}–${state.maxArea || '∞'} м²`, () => { state.minArea = ''; state.maxArea = '' }])
-    if (state.rooms.length) chips.push([`Комнаты: ${state.rooms.join(', ')}`, () => { state.rooms = [] }])
-    if (state.district) chips.push([`Район: ${state.district[0].toUpperCase()}${state.district.slice(1)}`, () => { state.district = '' }])
-    activeFilters.innerHTML = chips.map(([label], index) => `<span class="active-filter">${label}<button type="button" aria-label="Убрать фильтр ${label}" data-remove-chip="${index}">×</button></span>`).join('')
-    activeFilters.querySelectorAll('[data-remove-chip]').forEach((button) => button.addEventListener('click', () => { chips[Number(button.dataset.removeChip)][1](); syncForm(); render(); }))
+  function reset(){
+    query='';onlyFavorites=false;limit=6;$('#catalog-search').value='';
+    window.BarnesFilters.patch({market:state().market,directions:[],propertyTypes:[],priceRanges:[],brandFlags:[],priceMin:'',priceMax:'',areaMin:'',areaMax:'',roomsMin:'',roomsMax:'',bedrooms:''});
   }
-
-  const cardMatches = (card) => {
-    const price = Number(card.dataset.price)
-    const area = Number(card.dataset.area)
-    const rooms = Number(card.dataset.rooms)
-    const query = queryInput.value.trim().toLocaleLowerCase('ru')
-    const searchText = card.textContent.toLocaleLowerCase('ru')
-    const roomMatches = !state.rooms.length || state.rooms.some((room) => room === '5' ? rooms >= 5 : rooms === Number(room))
-    return card.dataset.category === state.category && card.dataset.country === state.country && (!state.city || card.dataset.city === state.city) && (!state.minPrice || price >= Number(state.minPrice)) && (!state.maxPrice || price <= Number(state.maxPrice)) && (!state.minArea || area >= Number(state.minArea)) && (!state.maxArea || area <= Number(state.maxArea)) && roomMatches && (!state.district || card.dataset.district === state.district) && (!query || searchText.includes(query))
+  document.addEventListener('barnes:filters-apply',()=>{limit=6;if(objects.length)render();});
+  document.querySelectorAll('.catalog-mode-switch__button').forEach(button=>button.addEventListener('click',()=>window.BarnesFilters.patch({market:button.dataset.listingMode})));
+  $('.catalog-grid__sort select').addEventListener('change',event=>{sort=event.target.value;if(objects.length)render();});
+  $('#catalog-search').addEventListener('input',event=>{query=event.target.value;limit=6;render();});
+  $('#catalog-search').addEventListener('keydown',event=>{if(event.key==='Enter'){$('#results').focus();}});
+  document.querySelectorAll('[data-reset],[data-reset-empty]').forEach(button=>button.addEventListener('click',reset));
+  $('[data-more]').addEventListener('click',()=>{const oldLimit=limit;limit+=6;render();list.children[oldLimit]?.querySelector('.apartment-card__name').focus({preventScroll:true});});
+  function toggleFavorites(event){event.preventDefault();onlyFavorites=!onlyFavorites;limit=6;render();}
+  $('[data-show-favorites]').addEventListener('click',toggleFavorites);
+  $('.site-header__favorites-btn').addEventListener('click',toggleFavorites);
+  $('.catalog-header-search').href='#catalog-search';
+  $('.catalog-header-search').addEventListener('click',event=>{event.preventDefault();$('#catalog-search').focus();});
+  list.addEventListener('click',event=>{
+    const button=event.target.closest('[data-favorite]');if(!button)return;
+    const id=button.dataset.favorite,adding=!favorites.includes(id);
+    favorites=adding?[...favorites,id]:favorites.filter(value=>value!==id);
+    try{localStorage.setItem(STORAGE,JSON.stringify(favorites));}catch{}
+    render();(list.querySelector(`[data-favorite="${CSS.escape(id)}"]`)||$('[data-show-favorites]')).focus({preventScroll:true});
+    $('[data-announcement]').textContent=adding?'Объект добавлен в избранное':'Объект удалён из избранного';
+  });
+  const navigation=$('.catalog-navigation');
+  $('.site-header__icon-btn').addEventListener('click',()=>navigation.showModal());
+  $('[data-close-navigation]').addEventListener('click',()=>navigation.close());
+  navigation.addEventListener('click',event=>{if(event.target===navigation)navigation.close();});
+  for(const button of document.querySelectorAll('.site-footer button'))button.addEventListener('click',()=>{location.href='tel:+74951825079';});
+  window.addEventListener('popstate',()=>{readURL();render();});
+  async function load(){
+    $('.catalog-load-error').hidden=true;$('.catalog-empty').hidden=true;
+    try{const response=await fetch('objects.json');if(!response.ok)throw Error('load');const data=await response.json();if(!Array.isArray(data))throw Error('shape');objects=data;favorites=favorites.filter(id=>objects.some(item=>item.id===id));render();}
+    catch{list.setAttribute('aria-busy','false');$('.catalog-load-error').hidden=false;$('.catalog-grid__footer').hidden=true;$('#results-count').textContent='';}
   }
-
-  const render = () => {
-    const visible = cards.filter(cardMatches)
-    cards.forEach((card) => { card.hidden = !visible.includes(card) })
-    resultsCount.textContent = formatCount(visible.length)
-    emptyState.hidden = visible.length !== 0
-    renderControlValues()
-    renderChips()
-  }
-
-  form.addEventListener('submit', (event) => {
-    event.preventDefault()
-    Object.assign(state, readForm())
-    closeFilters()
-    render()
-  })
-  form.addEventListener('reset', () => window.setTimeout(() => { Object.assign(state, { deal: 'buy', category: 'city', country: 'russia', city: 'moscow', minPrice: '', maxPrice: '', minArea: '', maxArea: '', rooms: [], district: '' }); syncForm(); render() }, 0))
-  document.querySelector('[data-reset-filters]').addEventListener('click', () => { form.reset(); closeFilters() })
-  document.querySelector('[data-reset-empty]').addEventListener('click', () => { Object.assign(state, { deal: 'buy', category: 'city', country: 'russia', city: 'moscow', minPrice: '', maxPrice: '', minArea: '', maxArea: '', rooms: [], district: '' }); queryInput.value = ''; syncForm(); render() })
-  queryInput.addEventListener('input', render)
-
-  document.querySelector('[data-sort]').addEventListener('change', (event) => {
-    const order = event.target.value
-    const sorted = [...cards].sort((a, b) => {
-      if (order === 'price-asc') return Number(a.dataset.price) - Number(b.dataset.price)
-      if (order === 'price-desc') return Number(b.dataset.price) - Number(a.dataset.price)
-      if (order === 'area-desc') return Number(b.dataset.area) - Number(a.dataset.area)
-      return cards.indexOf(a) - cards.indexOf(b)
-    })
-    sorted.forEach((card) => grid.append(card))
-  })
-
-  document.querySelectorAll('.card__favorite').forEach((button) => button.addEventListener('click', () => {
-    const active = button.getAttribute('aria-pressed') === 'true'
-    button.setAttribute('aria-pressed', String(!active))
-    button.textContent = active ? '♡' : '♥'
-    button.setAttribute('aria-label', active ? 'Добавить в избранное' : 'Удалить из избранного')
-  }))
-  document.querySelectorAll('[data-request-call]').forEach((button) => button.addEventListener('click', () => showToast('Заявка на звонок отправлена')))
-
-  syncForm()
-  render()
-})()
+  $('[data-retry]').addEventListener('click',load);
+  readURL();load();
+})();
