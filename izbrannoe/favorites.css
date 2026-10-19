@@ -49,10 +49,14 @@ html body .favorites-sort{padding-bottom:8px}
 .favorites-dialog__phone{font-size:26px;line-height:1.4;text-decoration:none;color:#fff}
 .favorites-dialog__channels{display:flex;gap:24px;flex-wrap:wrap;padding-top:24px;font-size:17px;font-weight:300}
 .favorites-dialog a{color:inherit}
-.favorites-dialog__nav{display:flex;flex-direction:column;gap:24px;font-size:22px;font-weight:300}
 @media(min-width:1441px){.favorites-heading__text{font-size:22px}.favorites-bottom>a{font-size:19px}.favorites-eyebrow{font-size:14px}}
 @media(max-width:1024px){.favorites-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}.favorites-heading__text{font-size:17px}.favorites-heading{padding-block:40px 32px;gap:24px}.favorites-toolbar .catalog-mode-switch{gap:20px}}
 @media(max-width:700px){html body .favorites-toolbar.catalog-mode-toolbar{flex-wrap:wrap;gap:14px;padding-bottom:12px}.favorites-sort{margin-left:auto}.favorites-heading{display:block}.favorites-heading__text{margin-top:18px}.favorites-heading__text br{display:none}.favorites-preview{flex-direction:column;align-items:flex-start}.favorites-bottom{align-items:flex-start;flex-direction:column;gap:16px}.favorites-toast{width:max-content;gap:20px;font-size:14px}}
 @media(max-width:540px){.favorites-main{padding-top:22px;padding-bottom:40px;min-height:540px}.favorites-breadcrumbs{font-size:12px}.favorites-heading{padding-block:32px}.favorites-eyebrow{font-size:12px;line-height:1.2;margin-bottom:12px}.favorites-heading h1{font-size:32px;line-height:1.05}.favorites-heading h1 sup{font-size:14px;margin-left:10px}.favorites-heading__text{font-size:16px;line-height:1.4}.favorites-toolbar .catalog-mode-switch{width:100%;justify-content:space-between;gap:8px}.favorites-toolbar .catalog-mode-switch__button{font-size:16px}.favorites-toolbar .catalog-mode-switch__button span{margin-left:3px;font-size:12px}.favorites-grid{grid-template-columns:minmax(0,1fr);gap:26px}.favorites-summary{min-height:65px;font-size:13px}.favorites-clear{font-size:13px}.favorites-empty{padding:45px 18px}.favorites-empty h2{font-size:22px;line-height:1.2}.favorites-empty p{font-size:16px}.favorites-empty p br{display:none}.favorites-bottom{margin-top:24px;padding-top:24px}.favorites-dialog{padding:40px 24px}.favorites-dialog h2{font-size:26px}.favorites-dialog__phone{font-size:24px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
 html body .favorites-toolbar .resort-sort-trigger{white-space:nowrap;width:max-content}
+
+/* Standard ActionButton contract; the empty-state CTA opts into the current kit. */
+html body .favorites-catalog-button.ui-button{border-radius:1px;font-size:var(--kit-action-size);font-weight:400;line-height:1.1;height:var(--kit-action-height);min-height:var(--kit-action-height);padding:0 var(--kit-action-padding);width:auto;display:inline-flex;align-items:center;justify-content:center;gap:24px}
+html body .site-menu :is(a,button):focus-visible{outline:2px solid #8b1d25;outline-offset:3px}
+@media(prefers-reduced-motion:reduce){.site-menu,.site-menu *{transition:none!important;animation:none!important}}

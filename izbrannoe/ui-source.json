@@ -93,6 +93,24 @@
     "ui/assets/e4d43ddddae4bc89.svg": {
       "source": "blocks/nodes/first-degree/_shared/assets/e4d43ddddae4bc89.svg",
       "sha256": "5caa61a4b0731d0d89421b4fb24f41433025e5aea59155a14cf3a3fada6c9174"
+    },
+    "ui/owner-menu.css": {
+      "repository": "https://github.com/daniilterekh-prog/barn-estate-homepage-clone",
+      "commit": "f4781b3f56b5df951bcb6863ab63df894addec07",
+      "source": "prodazha_sobstvennikam/index.html inline style for data-v-6d1f991a",
+      "sha256": "a046be0b451e1e89942e3a588399617dd02b8e23465d2df84ed22a470e96e574"
+    },
+    "ui/assets/menu-featured-01.jpg": {
+      "repository": "https://github.com/daniilterekh-prog/barn-estate-homepage-clone",
+      "commit": "f4781b3f56b5df951bcb6863ab63df894addec07",
+      "source": "prodazha_sobstvennikam/assets/menu-featured-01.jpg",
+      "sha256": "c5384c30d421ad705b43c8eb3dac7d16187ff87eb67392232fb15fa995980a7e"
+    },
+    "ui/assets/menu-featured-02.jpg": {
+      "repository": "https://github.com/daniilterekh-prog/barn-estate-homepage-clone",
+      "commit": "f4781b3f56b5df951bcb6863ab63df894addec07",
+      "source": "prodazha_sobstvennikam/assets/menu-featured-02.jpg",
+      "sha256": "7781fce4e8048ef743e425d296b2437674b6dc3e1d3684da098beb3afc695357"
     }
   },
   "components": {
@@ -111,6 +129,15 @@
     "card-project": {
       "source": "blocks/nodes/first-degree/card-project/fragment.html",
       "sha256": "9f4d85db0a2bdc5f3cf1dec5517ecc7cc58d561211004da5d29583ee2a74ba34"
+    },
+    "menu": {
+      "repository": "https://github.com/daniilterekh-prog/barn-estate-homepage-clone",
+      "commit": "f4781b3f56b5df951bcb6863ab63df894addec07",
+      "source": "prodazha_sobstvennikam/index.html .site-menu",
+      "sha256": "961ca1bd078552f7fbad37edc61888abadcc7b20f5ae42a5268a38b42d1a7c82",
+      "adaptations": [
+        "Local navigation and image paths only; original classes, scoped attributes, content and layout preserved."
+      ]
     }
   }
 }

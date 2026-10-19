@@ -1,0 +1,207 @@
+{
+  "passed": true,
+  "source": "https://github.com/daniilterekh-prog/barn-estate-homepage-clone/blob/f4781b3/prodazha_sobstvennikam/index.html",
+  "checks": [
+    "source-exact burger and close SVG",
+    "44px touch area",
+    "source menu content and typography",
+    "two original featured images",
+    "menu anchored below header",
+    "resize position",
+    "scroll locking and restore",
+    "inert background",
+    "Tab wrap",
+    "Escape and focus return",
+    "toggle close",
+    "ActionButton tokens",
+    "no horizontal overflow",
+    "no JS errors"
+  ],
+  "results": [
+    {
+      "width": 320,
+      "burger": {
+        "width": 44,
+        "height": 44,
+        "svgWidth": "24",
+        "svgHeight": "24",
+        "stroke": "1.5",
+        "paths": [
+          "M5 7h14",
+          "M5 12h14",
+          "M5 17h14"
+        ]
+      },
+      "cta": {
+        "height": 58,
+        "size": 18,
+        "weight": "400",
+        "radius": "1px",
+        "line": 19.8,
+        "bg": "rgb(139, 29, 37)"
+      }
+    },
+    {
+      "width": 390,
+      "burger": {
+        "width": 44,
+        "height": 44,
+        "svgWidth": "24",
+        "svgHeight": "24",
+        "stroke": "1.5",
+        "paths": [
+          "M5 7h14",
+          "M5 12h14",
+          "M5 17h14"
+        ]
+      },
+      "cta": {
+        "height": 58,
+        "size": 18,
+        "weight": "400",
+        "radius": "1px",
+        "line": 19.8,
+        "bg": "rgb(139, 29, 37)"
+      }
+    },
+    {
+      "width": 540,
+      "burger": {
+        "width": 44,
+        "height": 44,
+        "svgWidth": "24",
+        "svgHeight": "24",
+        "stroke": "1.5",
+        "paths": [
+          "M5 7h14",
+          "M5 12h14",
+          "M5 17h14"
+        ]
+      },
+      "cta": {
+        "height": 58,
+        "size": 18,
+        "weight": "400",
+        "radius": "1px",
+        "line": 19.8,
+        "bg": "rgb(139, 29, 37)"
+      }
+    },
+    {
+      "width": 768,
+      "burger": {
+        "width": 44,
+        "height": 44,
+        "svgWidth": "24",
+        "svgHeight": "24",
+        "stroke": "1.5",
+        "paths": [
+          "M5 7h14",
+          "M5 12h14",
+          "M5 17h14"
+        ]
+      },
+      "cta": {
+        "height": 70,
+        "size": 17,
+        "weight": "400",
+        "radius": "1px",
+        "line": 18.7,
+        "bg": "rgb(139, 29, 37)"
+      }
+    },
+    {
+      "width": 1024,
+      "burger": {
+        "width": 44,
+        "height": 44,
+        "svgWidth": "24",
+        "svgHeight": "24",
+        "stroke": "1.5",
+        "paths": [
+          "M5 7h14",
+          "M5 12h14",
+          "M5 17h14"
+        ]
+      },
+      "cta": {
+        "height": 70,
+        "size": 17,
+        "weight": "400",
+        "radius": "1px",
+        "line": 18.7,
+        "bg": "rgb(139, 29, 37)"
+      }
+    },
+    {
+      "width": 1440,
+      "burger": {
+        "width": 44,
+        "height": 44,
+        "svgWidth": "24",
+        "svgHeight": "24",
+        "stroke": "1.5",
+        "paths": [
+          "M5 7h14",
+          "M5 12h14",
+          "M5 17h14"
+        ]
+      },
+      "cta": {
+        "height": 70,
+        "size": 17,
+        "weight": "400",
+        "radius": "1px",
+        "line": 18.7,
+        "bg": "rgb(139, 29, 37)"
+      }
+    },
+    {
+      "width": 1920,
+      "burger": {
+        "width": 44,
+        "height": 44,
+        "svgWidth": "24",
+        "svgHeight": "24",
+        "stroke": "1.5",
+        "paths": [
+          "M5 7h14",
+          "M5 12h14",
+          "M5 17h14"
+        ]
+      },
+      "cta": {
+        "height": 70,
+        "size": 19,
+        "weight": "400",
+        "radius": "1px",
+        "line": 20.9,
+        "bg": "rgb(139, 29, 37)"
+      }
+    },
+    {
+      "width": 2560,
+      "burger": {
+        "width": 44,
+        "height": 44,
+        "svgWidth": "24",
+        "svgHeight": "24",
+        "stroke": "1.5",
+        "paths": [
+          "M5 7h14",
+          "M5 12h14",
+          "M5 17h14"
+        ]
+      },
+      "cta": {
+        "height": 70,
+        "size": 19,
+        "weight": "400",
+        "radius": "1px",
+        "line": 20.9,
+        "bg": "rgb(139, 29, 37)"
+      }
+    }
+  ],
+  "reference_method": "Browser comparison against the synchronized source checkout, served locally"
+}

@@ -15,7 +15,6 @@
     const button = event.target.closest('button')
     if (!button) return
     if (button.matches('[data-contact-open]')) document.querySelector('#contact-dialog').showModal()
-    if (button.matches('[data-menu-open]')) document.querySelector('#menu-dialog').showModal()
     if (button.matches('[data-close-dialog]')) button.closest('dialog').close()
   })
   document.querySelectorAll('dialog').forEach(dialog => dialog.addEventListener('click', event => {
