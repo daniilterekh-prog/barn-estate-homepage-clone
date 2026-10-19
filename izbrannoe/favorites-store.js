@@ -75,7 +75,6 @@
     document.querySelector('[data-empty-title]').textContent = selectedCards.length ? 'В этом разделе пока ничего нет' : 'В избранном пока ничего нет'
     document.querySelector('[data-favorites-count]').textContent = countText(visible.length)
     document.querySelector('[data-favorites-clear]').hidden = selectedCards.length === 0
-    document.querySelector('[data-preview-notice]').hidden = !preview
     document.querySelector('[data-storage-note]').textContent = preview ? 'Режим просмотра: изменения не сохраняются.' : storageAvailable ? 'Подборка сохраняется в этом браузере.' : 'Хранилище недоступно. Подборка сохранится только до закрытия страницы.'
   }
   cards.forEach(card => card.querySelector('.apartment-card__favorite, .card__favorite').addEventListener('click', () => {
