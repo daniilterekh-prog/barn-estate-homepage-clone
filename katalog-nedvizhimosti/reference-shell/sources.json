@@ -1,0 +1,31 @@
+{
+  "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+  "commit": "f4781b3f56b5df951bcb6863ab63df894addec07",
+  "sources": [
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/header/fragment.html",
+      "sha256": "284e1687065401ef3de44aa5a42623732d9faafa809263485ab09f47d518ec55"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/js/menu-template.js",
+      "sha256": "1c90e389f1a1a35a3e954d2c88df2b3b2afa699c12c40ca82ee738a5d0f50081"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/js/footer-template.js",
+      "sha256": "6b0a7ca2dccc06846542ee9cb23fe9a9e2feb365a745b85f7dcd1ca9e5aac9f5"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/css/owner-header.css",
+      "sha256": "783ce11685c9c9f84d1b0db2b7c8240a28f5811533a2209703af2c2753bccb9c"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/css/owner-footer.css",
+      "sha256": "b0f3b577d94fceea6c53627056d8456535bb2120d3a8b482568dfbb0fa9d7020"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/css/document-desktop.css",
+      "sha256": "0be2d8cc1f4d7aca479ca5586ca195d46e8e0718c911f32821174c2c9997d5be"
+    }
+  ],
+  "adaptations": "relative asset rebasing; staging links replaced with barn-estate.ru; menu CSS extracted preserving selector and media rules"
+}

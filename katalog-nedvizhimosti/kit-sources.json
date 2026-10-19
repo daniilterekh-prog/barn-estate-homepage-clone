@@ -76,5 +76,5 @@
       "sha256": "07a590658ef9120c45bbab3980626a7b98d710dabb885824f540d6c3a27c2fc2"
     }
   ],
-  "adaptation": "quick-filters.js: configs reads window.BarnesCatalogQuickConfig before canonical defaults; all other vendor sources copied unchanged."
+  "adaptation": "quick-filters.js: page option array injected and updated in place; filters-modal.js: configure(callback) refreshes input references after context change, disabled inputs ignored, land range validation added, reset preserves deal as well as market. Card and original kit styling preserved; current site shell uses reference-shell/sources.json."
 }

@@ -16,7 +16,11 @@
     "bedrooms": "1–4+",
     "area": null,
     "rooms": null,
-    "locationLabel": "Сочи · Хоста"
+    "locationLabel": "Сочи · Хоста",
+    "direction": "resort",
+    "kind": "project",
+    "currency": "RUB",
+    "deal": "buy"
   },
   {
     "id": "marine-garden-hotels-spa-5",
@@ -32,7 +36,11 @@
     "completion": null,
     "bedrooms": null,
     "area": null,
-    "rooms": null
+    "rooms": null,
+    "direction": "resort",
+    "kind": "project",
+    "currency": "RUB",
+    "deal": "buy"
   },
   {
     "id": "livingston-sochi-grand-resort-spa",
@@ -48,7 +56,11 @@
     "completion": null,
     "bedrooms": null,
     "area": null,
-    "rooms": null
+    "rooms": null,
+    "direction": "resort",
+    "kind": "project",
+    "currency": "RUB",
+    "deal": "buy"
   },
   {
     "id": "neskuchnyy-sad",
@@ -64,7 +76,11 @@
     "completion": null,
     "bedrooms": null,
     "area": null,
-    "rooms": null
+    "rooms": null,
+    "direction": "resort",
+    "kind": "project",
+    "currency": "RUB",
+    "deal": "buy"
   },
   {
     "id": "polyana-pik",
@@ -80,7 +96,11 @@
     "completion": null,
     "bedrooms": null,
     "area": null,
-    "rooms": null
+    "rooms": null,
+    "direction": "resort",
+    "kind": "project",
+    "currency": "RUB",
+    "deal": "buy"
   },
   {
     "id": "mantera-residence",
@@ -96,7 +116,11 @@
     "completion": null,
     "bedrooms": null,
     "area": null,
-    "rooms": null
+    "rooms": null,
+    "direction": "resort",
+    "kind": "project",
+    "currency": "RUB",
+    "deal": "buy"
   },
   {
     "id": "skayvil-krasnaya-polyana",
@@ -112,7 +136,11 @@
     "completion": null,
     "bedrooms": null,
     "area": null,
-    "rooms": null
+    "rooms": null,
+    "direction": "resort",
+    "kind": "project",
+    "currency": "RUB",
+    "deal": "buy"
   },
   {
     "id": "loreto",
@@ -128,7 +156,11 @@
     "completion": null,
     "bedrooms": null,
     "area": null,
-    "rooms": null
+    "rooms": null,
+    "direction": "resort",
+    "kind": "project",
+    "currency": "RUB",
+    "deal": "buy"
   },
   {
     "id": "kottedzhnyy-poselok-esta",
@@ -144,7 +176,11 @@
     "completion": null,
     "bedrooms": null,
     "area": null,
-    "rooms": null
+    "rooms": null,
+    "direction": "resort",
+    "kind": "project",
+    "currency": "RUB",
+    "deal": "buy"
   },
   {
     "id": "luchezarnyy",
@@ -160,7 +196,11 @@
     "completion": null,
     "bedrooms": null,
     "area": null,
-    "rooms": null
+    "rooms": null,
+    "direction": "resort",
+    "kind": "project",
+    "currency": "RUB",
+    "deal": "buy"
   },
   {
     "id": "volna-residences",
@@ -176,7 +216,11 @@
     "completion": null,
     "bedrooms": null,
     "area": null,
-    "rooms": null
+    "rooms": null,
+    "direction": "resort",
+    "kind": "project",
+    "currency": "RUB",
+    "deal": "buy"
   },
   {
     "id": "marine-garden-sochi-hotels-resort-4",
@@ -192,7 +236,11 @@
     "completion": null,
     "bedrooms": null,
     "area": null,
-    "rooms": null
+    "rooms": null,
+    "direction": "resort",
+    "kind": "project",
+    "currency": "RUB",
+    "deal": "buy"
   },
   {
     "id": "595261",
@@ -231,9 +279,12 @@
       "Москва"
     ],
     "propertyTypes": [
-      "house"
+      "townhouse"
     ],
-    "brandFlags": []
+    "brandFlags": [],
+    "direction": "city",
+    "kind": "lot",
+    "currency": "RUB"
   },
   {
     "id": "588036",
@@ -274,7 +325,10 @@
     "propertyTypes": [
       "penthouse"
     ],
-    "brandFlags": []
+    "brandFlags": [],
+    "direction": "city",
+    "kind": "lot",
+    "currency": "RUB"
   },
   {
     "id": "586963",
@@ -315,6 +369,731 @@
     "propertyTypes": [
       "flat"
     ],
-    "brandFlags": []
+    "brandFlags": [],
+    "direction": "city",
+    "kind": "lot",
+    "currency": "RUB"
+  },
+  {
+    "id": "vavilova-64",
+    "title": "Вавилова 64",
+    "address": "Вавилова ул, 64",
+    "price": null,
+    "priceLabel": "Цена по запросу",
+    "image": "assets/node-city-7781fce4e8048ef7.jpg",
+    "url": "https://barn-estate.ru/zhilye-kompleksy/vavilova-64/",
+    "direction": "city",
+    "kind": "project",
+    "market": "new-build",
+    "currency": "RUB",
+    "deal": "buy",
+    "area": null,
+    "rooms": null,
+    "bedroomCount": null,
+    "completion": null,
+    "bedrooms": null,
+    "stats": [],
+    "brandFlags": [],
+    "propertyTypes": [
+      "new_build"
+    ],
+    "directions": [
+      "Москва"
+    ]
+  },
+  {
+    "id": "novaya-11",
+    "title": "Новая 11",
+    "address": "Новая Дорога ул, 11",
+    "price": 30000000.0,
+    "priceLabel": "от 30 000 000 ₽",
+    "image": "assets/node-city-040420c4b252e01e.jpg",
+    "url": "https://barn-estate.ru/zhilye-kompleksy/novaya-11/",
+    "direction": "city",
+    "kind": "project",
+    "market": "new-build",
+    "currency": "RUB",
+    "deal": "buy",
+    "area": null,
+    "rooms": null,
+    "bedroomCount": null,
+    "completion": "2 квартал 2029",
+    "bedrooms": null,
+    "stats": [],
+    "brandFlags": [],
+    "propertyTypes": [
+      "new_build"
+    ],
+    "directions": [
+      "Москва"
+    ]
+  },
+  {
+    "id": "start-prodazh-palashevskiy-11",
+    "title": "Палашевский 11",
+    "address": "Большой Палашёвский пер, 11",
+    "price": null,
+    "priceLabel": "Цена по запросу",
+    "image": "assets/node-city-084b2b6f06e71057.jpg",
+    "url": "https://barn-estate.ru/zhilye-kompleksy/start-prodazh-palashevskiy-11/",
+    "direction": "city",
+    "kind": "project",
+    "market": "new-build",
+    "currency": "RUB",
+    "deal": "buy",
+    "area": null,
+    "rooms": null,
+    "bedroomCount": null,
+    "completion": "2030",
+    "bedrooms": null,
+    "stats": [],
+    "brandFlags": [],
+    "propertyTypes": [
+      "new_build"
+    ],
+    "directions": [
+      "Москва"
+    ]
+  },
+  {
+    "id": "start-prodazh-obrucheva-27",
+    "title": "Татум",
+    "address": "Обручева ул, 27",
+    "price": 20500000.0,
+    "priceLabel": "от 20 500 000 ₽",
+    "image": "assets/node-city-c714d4a43087da62.jpg",
+    "url": "https://barn-estate.ru/zhilye-kompleksy/start-prodazh-obrucheva-27/",
+    "direction": "city",
+    "kind": "project",
+    "market": "new-build",
+    "currency": "RUB",
+    "deal": "buy",
+    "area": null,
+    "rooms": null,
+    "bedroomCount": null,
+    "completion": "2029",
+    "bedrooms": null,
+    "stats": [],
+    "brandFlags": [],
+    "propertyTypes": [
+      "new_build"
+    ],
+    "directions": [
+      "Москва"
+    ]
+  },
+  {
+    "id": "zhemchuzhina-stambula-v-kygytkhane",
+    "title": "Жемчужина Стамбула в Кыгытхане",
+    "address": "Стамбул",
+    "price": null,
+    "priceLabel": "Цена по запросу",
+    "image": "assets/node-international-e9fabafdd48b462b-2.3.jpeg",
+    "url": "https://barn-estate.ru/zhilye-kompleksy/zhemchuzhina-stambula-v-kygytkhane/",
+    "direction": "international",
+    "kind": "project",
+    "market": "new-build",
+    "currency": "RUB",
+    "deal": "buy",
+    "area": null,
+    "rooms": null,
+    "bedroomCount": null,
+    "completion": null,
+    "bedrooms": null,
+    "stats": [],
+    "brandFlags": [],
+    "propertyTypes": [],
+    "directions": [
+      "Турция"
+    ]
+  },
+  {
+    "id": "al-jurf-gardens-",
+    "title": "AL JURF GARDENS",
+    "address": "Дубай",
+    "price": null,
+    "priceLabel": "Цена по запросу",
+    "image": "assets/node-international-0b0a4fc0a38c1047-3a8b2f35f0f0ac0d0d647e54e043a3ed.jpeg",
+    "url": "https://barn-estate.ru/zhilye-kompleksy/al-jurf-gardens-/",
+    "direction": "international",
+    "kind": "project",
+    "market": "new-build",
+    "currency": "RUB",
+    "deal": "buy",
+    "area": null,
+    "rooms": null,
+    "bedroomCount": null,
+    "completion": null,
+    "bedrooms": null,
+    "stats": [],
+    "brandFlags": [],
+    "propertyTypes": [],
+    "directions": [
+      "ОАЭ"
+    ]
+  },
+  {
+    "id": "amazi-salalah",
+    "title": "AMAZI SALALAH",
+    "address": "Салала",
+    "price": null,
+    "priceLabel": "Цена по запросу",
+    "image": "assets/node-international-ba136ab747adee2c-7c727a309e816ccfe4aacda7f0347575.png",
+    "url": "https://barn-estate.ru/zhilye-kompleksy/amazi-salalah/",
+    "direction": "international",
+    "kind": "project",
+    "market": "new-build",
+    "currency": "RUB",
+    "deal": "buy",
+    "area": null,
+    "rooms": null,
+    "bedroomCount": null,
+    "completion": null,
+    "bedrooms": null,
+    "stats": [],
+    "brandFlags": [],
+    "propertyTypes": [],
+    "directions": [
+      "Оман"
+    ]
+  },
+  {
+    "id": "artlife-kempinski-residences",
+    "title": "ARTLIFE KEMPINSKI RESIDENCES",
+    "address": "Ереван",
+    "price": 400000.0,
+    "priceLabel": "от 400 000 ₽",
+    "image": "assets/node-international-f0cd941b817681f6-5a3e61b48390c8dcd6bfe320b01e86d1.jpg",
+    "url": "https://barn-estate.ru/zhilye-kompleksy/artlife-kempinski-residences/",
+    "direction": "international",
+    "kind": "project",
+    "market": "new-build",
+    "currency": "RUB",
+    "deal": "buy",
+    "area": null,
+    "rooms": null,
+    "bedroomCount": null,
+    "completion": null,
+    "bedrooms": null,
+    "stats": [],
+    "brandFlags": [],
+    "propertyTypes": [],
+    "directions": [
+      "Армения"
+    ]
+  },
+  {
+    "id": "586532",
+    "title": "Ивакино",
+    "address": "Ленинградское шоссе, 11 от мкад",
+    "price": 225000000.0,
+    "priceLabel": "225 000 000 ₽",
+    "image": "assets/node-country-reference-1a36d17521f2.jpg",
+    "url": "https://barn-estate.ru/zagorodnaya-nedvizhimost/586532/",
+    "direction": "country",
+    "kind": "lot",
+    "market": null,
+    "currency": "RUB",
+    "deal": "buy",
+    "area": 480.0,
+    "rooms": null,
+    "bedroomCount": 4.0,
+    "completion": null,
+    "bedrooms": null,
+    "stats": [
+      [
+        "480 м²",
+        "Площадь"
+      ],
+      [
+        "4",
+        "Спальни"
+      ]
+    ],
+    "brandFlags": [],
+    "propertyTypes": [
+      "house"
+    ],
+    "directions": [
+      "Ленинградское шоссе"
+    ],
+    "distance": 11.0
+  },
+  {
+    "id": "564554",
+    "title": "Райт Вилладж",
+    "address": "Киевское шоссе, 19 от мкад",
+    "price": 130000000.0,
+    "priceLabel": "130 000 000 ₽",
+    "image": "assets/node-country-reference-30f23f2af407.jpg",
+    "url": "https://barn-estate.ru/zagorodnaya-nedvizhimost/564554/",
+    "direction": "country",
+    "kind": "lot",
+    "market": null,
+    "currency": "RUB",
+    "deal": "buy",
+    "area": 427.0,
+    "rooms": null,
+    "bedroomCount": 4.0,
+    "completion": null,
+    "bedrooms": null,
+    "stats": [
+      [
+        "427 м²",
+        "Площадь"
+      ],
+      [
+        "4",
+        "Спальни"
+      ]
+    ],
+    "brandFlags": [],
+    "propertyTypes": [
+      "house"
+    ],
+    "directions": [
+      "Киевское шоссе"
+    ],
+    "distance": 19.0
+  },
+  {
+    "id": "593875",
+    "title": "Сосновый Бор",
+    "address": "Рублёво-Успенское шоссе, 23 от мкад",
+    "price": 330000000.0,
+    "priceLabel": "330 000 000 ₽",
+    "image": "assets/node-country-reference-f07d68578109.jpg",
+    "url": "https://barn-estate.ru/zagorodnaya-nedvizhimost/593875/",
+    "direction": "country",
+    "kind": "lot",
+    "market": null,
+    "currency": "RUB",
+    "deal": "buy",
+    "area": 550.0,
+    "rooms": null,
+    "bedroomCount": 3.0,
+    "completion": null,
+    "bedrooms": null,
+    "stats": [
+      [
+        "550 м²",
+        "Площадь"
+      ],
+      [
+        "3",
+        "Спальни"
+      ]
+    ],
+    "brandFlags": [],
+    "propertyTypes": [
+      "house"
+    ],
+    "directions": [
+      "Рублёво-Успенское шоссе"
+    ],
+    "distance": 23.0
+  },
+  {
+    "id": "585556",
+    "title": "Николино",
+    "address": "Можайское шоссе, 20 от мкад",
+    "price": 572740830.0,
+    "priceLabel": "572 740 830 ₽",
+    "image": "assets/node-country-reference-e853032ae786.jpg",
+    "url": "https://barn-estate.ru/zagorodnaya-nedvizhimost/585556/",
+    "direction": "country",
+    "kind": "lot",
+    "market": null,
+    "currency": "RUB",
+    "deal": "buy",
+    "area": 1050.0,
+    "rooms": null,
+    "bedroomCount": 10.0,
+    "completion": null,
+    "bedrooms": null,
+    "stats": [
+      [
+        "1 050 м²",
+        "Площадь"
+      ],
+      [
+        "10",
+        "Спален"
+      ]
+    ],
+    "brandFlags": [],
+    "propertyTypes": [
+      "house"
+    ],
+    "directions": [
+      "Можайское шоссе"
+    ],
+    "distance": 20.0
+  },
+  {
+    "id": "560396",
+    "title": "Семенково ГП-7",
+    "address": "Рублёво-Успенское шоссе, 21 от мкад",
+    "price": 150000000.0,
+    "priceLabel": "150 000 000 ₽",
+    "image": "assets/node-country-reference-5e2cbce10f06.jpeg",
+    "url": "https://barn-estate.ru/zagorodnaya-nedvizhimost/560396/",
+    "direction": "country",
+    "kind": "lot",
+    "market": null,
+    "currency": "RUB",
+    "deal": "buy",
+    "area": 1000.0,
+    "rooms": null,
+    "bedroomCount": 5.0,
+    "completion": null,
+    "bedrooms": null,
+    "stats": [
+      [
+        "1 000 м²",
+        "Площадь"
+      ],
+      [
+        "5",
+        "Спален"
+      ]
+    ],
+    "brandFlags": [],
+    "propertyTypes": [
+      "house"
+    ],
+    "directions": [
+      "Рублёво-Успенское шоссе"
+    ],
+    "distance": 21.0
+  },
+  {
+    "id": "588056",
+    "title": "Павловы озера",
+    "address": "Новорижское шоссе, 16 от мкад",
+    "price": 59000000.0,
+    "priceLabel": "59 000 000 ₽",
+    "image": "assets/node-country-reference-eba949f42e39.jpg",
+    "url": "https://barn-estate.ru/zagorodnaya-nedvizhimost/588056/",
+    "direction": "country",
+    "kind": "lot",
+    "market": null,
+    "currency": "RUB",
+    "deal": "buy",
+    "area": 244.5,
+    "rooms": null,
+    "bedroomCount": 4.0,
+    "completion": null,
+    "bedrooms": null,
+    "stats": [
+      [
+        "244,5 м²",
+        "Площадь"
+      ],
+      [
+        "4",
+        "Спальни"
+      ]
+    ],
+    "brandFlags": [],
+    "propertyTypes": [
+      "house"
+    ],
+    "directions": [
+      "Новорижское шоссе"
+    ],
+    "distance": 16.0
+  },
+  {
+    "id": "593724",
+    "title": "Аренда офиса 971.3 м² в особняке Красная Роза (Усадьба Всеволжских)",
+    "address": "Тимура Фрунзе ул, 11стр56",
+    "price": 8094146.0,
+    "priceLabel": "8 094 146 ₽",
+    "image": "assets/node-commercial-d5b716c8785b.jpg",
+    "url": "https://barn-estate.ru/kommercheskaya-nedvizhimost/593724/",
+    "direction": "commercial",
+    "kind": "lot",
+    "market": null,
+    "currency": "RUB",
+    "deal": "rent",
+    "area": 971.3,
+    "rooms": null,
+    "bedroomCount": null,
+    "completion": null,
+    "bedrooms": null,
+    "stats": [
+      [
+        "971,3 м²",
+        "Площадь"
+      ],
+      [
+        "1",
+        "Этаж"
+      ]
+    ],
+    "brandFlags": [],
+    "propertyTypes": [
+      "office"
+    ],
+    "directions": [
+      "Москва"
+    ]
+  },
+  {
+    "id": "584862",
+    "title": "Сдается помещение свободного назначения, 820 м² в офисном здании «на ул. Маросейка, 6-8с4»",
+    "address": "Маросейка ул, 6-8стр4",
+    "price": 3000000.0,
+    "priceLabel": "3 000 000 ₽",
+    "image": "assets/node-commercial-e29de3bc99f1.jpg",
+    "url": "https://barn-estate.ru/kommercheskaya-nedvizhimost/584862/",
+    "direction": "commercial",
+    "kind": "lot",
+    "market": null,
+    "currency": "RUB",
+    "deal": "rent",
+    "area": 820.0,
+    "rooms": null,
+    "bedroomCount": null,
+    "completion": null,
+    "bedrooms": null,
+    "stats": [
+      [
+        "820 м²",
+        "Площадь"
+      ],
+      [
+        "1",
+        "Этаж"
+      ]
+    ],
+    "brandFlags": [],
+    "propertyTypes": [
+      "free-purpose"
+    ],
+    "directions": [
+      "Москва"
+    ]
+  },
+  {
+    "id": "595200",
+    "title": "Аренда офиса 1000 м² в бизнес-центре Горизонт (Складочная 3)",
+    "address": "Складочная ул, 3стр1",
+    "price": 2416000.0,
+    "priceLabel": "2 416 000 ₽",
+    "image": "assets/node-commercial-fbfb69732de9.jpg",
+    "url": "https://barn-estate.ru/kommercheskaya-nedvizhimost/595200/",
+    "direction": "commercial",
+    "kind": "lot",
+    "market": null,
+    "currency": "RUB",
+    "deal": "rent",
+    "area": 1000.0,
+    "rooms": null,
+    "bedroomCount": null,
+    "completion": null,
+    "bedrooms": null,
+    "stats": [
+      [
+        "1 000 м²",
+        "Площадь"
+      ],
+      [
+        "2",
+        "Этаж"
+      ]
+    ],
+    "brandFlags": [],
+    "propertyTypes": [
+      "office"
+    ],
+    "directions": [
+      "Москва"
+    ]
+  },
+  {
+    "id": "587810",
+    "title": "Аренда офиса 275 м² в бизнес-центре Башня на Набережной (Блок А)",
+    "address": "Пресненская наб, 10А",
+    "price": 2516250.0,
+    "priceLabel": "2 516 250 ₽",
+    "image": "assets/node-commercial-d100227df6a0.jpg",
+    "url": "https://barn-estate.ru/kommercheskaya-nedvizhimost/587810/",
+    "direction": "commercial",
+    "kind": "lot",
+    "market": null,
+    "currency": "RUB",
+    "deal": "rent",
+    "area": 275.0,
+    "rooms": null,
+    "bedroomCount": null,
+    "completion": null,
+    "bedrooms": null,
+    "stats": [
+      [
+        "275 м²",
+        "Площадь"
+      ],
+      [
+        "8",
+        "Этаж"
+      ]
+    ],
+    "brandFlags": [],
+    "propertyTypes": [
+      "office"
+    ],
+    "directions": [
+      "Москва"
+    ]
+  },
+  {
+    "id": "prodazha_paris_75017_3503",
+    "title": "Paris-75017",
+    "address": "ПАРИЖ 75017 - Рю Тройон - Квартира 1 комната",
+    "price": 45727000.0,
+    "priceLabel": "45 727 000 ₽",
+    "image": "assets/node-international-a11d1657b8234502-15966406495f741fe0382aa9.36148629_0ddb33d60e_1920.jpg",
+    "url": "https://barn-estate.ru/mezhdunarodnaya-nedvizhimost/prodazha_paris_75017_3503/",
+    "direction": "international",
+    "kind": "lot",
+    "market": "secondary",
+    "currency": "RUB",
+    "deal": "buy",
+    "area": 32.0,
+    "rooms": null,
+    "bedroomCount": null,
+    "completion": null,
+    "bedrooms": null,
+    "stats": [
+      [
+        "32 м²",
+        "Площадь"
+      ]
+    ],
+    "brandFlags": [],
+    "propertyTypes": [
+      "flat"
+    ],
+    "directions": [
+      "Франция"
+    ]
+  },
+  {
+    "id": "561885",
+    "title": "Almis La Mer Dragos",
+    "address": "Вся инфраструктура",
+    "price": 22355872.0,
+    "priceLabel": "22 355 872 ₽",
+    "image": "assets/node-international-19de3829ff58c4f8-d0d5978e99581bc86d7f582e46645a32.png",
+    "url": "https://barn-estate.ru/mezhdunarodnaya-nedvizhimost/561885/",
+    "direction": "international",
+    "kind": "lot",
+    "market": "secondary",
+    "currency": "RUB",
+    "deal": "buy",
+    "area": 81.7,
+    "rooms": 2.0,
+    "bedroomCount": 1.0,
+    "completion": null,
+    "bedrooms": null,
+    "stats": [
+      [
+        "81,7 м²",
+        "Площадь"
+      ],
+      [
+        "1",
+        "Спальня"
+      ],
+      [
+        "2",
+        "Комнаты"
+      ]
+    ],
+    "brandFlags": [],
+    "propertyTypes": [],
+    "directions": [
+      "Турция"
+    ]
+  },
+  {
+    "id": "prodazha_marrakech_1372",
+    "title": "Marrakech",
+    "address": "Гостевой дом, 1000 m² жилой площади, 526 m² на первом этаже, 7 люксов, 7 ванных комнат, гостиная, столовая, терраса, бассейн / джакузи, хаммам.",
+    "price": 117715000.0,
+    "priceLabel": "117 715 000 ₽",
+    "image": "assets/node-international-82b95a666dc35706-20725795365c73b332ed7214.03809248_2a3b98b579_1276.jpg",
+    "url": "https://barn-estate.ru/mezhdunarodnaya-nedvizhimost/prodazha_marrakech_1372/",
+    "direction": "international",
+    "kind": "lot",
+    "market": "secondary",
+    "currency": "RUB",
+    "deal": "buy",
+    "area": 1000.0,
+    "rooms": 9.0,
+    "bedroomCount": 7.0,
+    "completion": null,
+    "bedrooms": null,
+    "stats": [
+      [
+        "1 000 м²",
+        "Площадь"
+      ],
+      [
+        "7",
+        "Спален"
+      ],
+      [
+        "9",
+        "Комнаты"
+      ]
+    ],
+    "brandFlags": [],
+    "propertyTypes": [
+      "house"
+    ],
+    "directions": [
+      "Марокко"
+    ]
+  },
+  {
+    "id": "prodazha_lisboa_5181",
+    "title": "Lisboa",
+    "address": "Дворец Сантьяго",
+    "price": 232714000.0,
+    "priceLabel": "232 714 000 ₽",
+    "image": "assets/node-international-614675d68e4cffe8-8311052985d7bb1536375a8.30505639_144d933eda_1920.jpg",
+    "url": "https://barn-estate.ru/mezhdunarodnaya-nedvizhimost/prodazha_lisboa_5181/",
+    "direction": "international",
+    "kind": "lot",
+    "market": "secondary",
+    "currency": "RUB",
+    "deal": "buy",
+    "area": 250.0,
+    "rooms": 4.0,
+    "bedroomCount": 3.0,
+    "completion": null,
+    "bedrooms": null,
+    "stats": [
+      [
+        "250 м²",
+        "Площадь"
+      ],
+      [
+        "3",
+        "Спальни"
+      ],
+      [
+        "4",
+        "Комнаты"
+      ]
+    ],
+    "brandFlags": [],
+    "propertyTypes": [],
+    "directions": [
+      "Португалия"
+    ]
   }
 ]

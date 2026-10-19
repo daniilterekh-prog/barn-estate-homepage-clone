@@ -1,0 +1,37 @@
+{
+  "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+  "commit": "f4781b3f56b5df951bcb6863ab63df894addec07",
+  "importedReferences": [
+    {
+      "path": "gorodskaya-nedvizhimost/index.html",
+      "blobSHA": "01c6bb277ed0f7ab8e402efb9349f1aa2bd6019b"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/index.html",
+      "blobSHA": "708d78b2fdfc3c9e696474a85f47c0c656c424e6"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/index.html",
+      "blobSHA": "d8ec187773a0b46369727202088bf0b45bd08600"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/index.html",
+      "blobSHA": "2288e1ba056fbad467ec3a949e8b870757d234f3"
+    }
+  ],
+  "existingResortRecords": "barnes-assets first-degree export recorded in kit-sources.json; no location or missing metadata invented",
+  "rules": [
+    "City projects extracted from deduplicated catalog-best-offers; original names, delivery labels, prices and addresses preserved.",
+    "Only saved country sale cards selected; road and distance parsed literally from address.",
+    "Only commercial cards explicitly saying Аренда or Сдается included; monthly units explicit. Free-purpose use takes precedence over the office building mentioned in its description.",
+    "International country mapped from explicit stable city names; currency and numbers copied as RUB without conversion. Types only from literal property nouns.",
+    "Market, transaction and property direction are independent; unknown price stays null and is excluded by a numeric budget filter."
+  ],
+  "counts": {
+    "city": 7,
+    "country": 6,
+    "commercial": 4,
+    "resort": 12,
+    "international": 8
+  }
+}

@@ -33,14 +33,6 @@ html body.catalog-listing-page .catalog-grid{padding-top:0;padding-bottom:78px}
 .catalog-empty,.catalog-load-error{text-align:center;padding:50px 20px;border-block:1px solid #e4e4e4}
 .catalog-empty h2{font:300 30px/1.2 'Tilda Sans',sans-serif;margin:0 0 15px}
 .catalog-empty p{font:300 17px/1.4 'Tilda Sans',sans-serif;color:#656462;margin:0 0 25px}
-.catalog-navigation{border:1px solid #e4e4e4;background:#fff;color:#1e1e1e;width:min(460px,calc(100% - 32px));padding:24px}
-.catalog-navigation::backdrop{background:rgb(0 0 0/.55)}
-.catalog-navigation__header{display:flex;align-items:center;justify-content:space-between;gap:20px;margin-bottom:20px}
-.catalog-navigation__header h2{font:300 26px/1.2 'Tilda Sans',sans-serif;margin:0}
-.catalog-navigation__header button{background:none;border:0;width:44px;height:44px;font-size:30px;cursor:pointer}
-.catalog-navigation nav{display:grid;gap:4px}
-.catalog-navigation nav a{padding:13px 0;color:#4f4d49;font:300 18px/1.3 'Tilda Sans',sans-serif;text-decoration:none}
-.catalog-navigation nav a:hover{color:#8b1d25}
 .catalog-listing-page :is(a,button,input):focus-visible{outline:2px solid #8b1d25;outline-offset:3px}
 .skip-link{position:fixed;top:8px;left:8px;z-index:2000;background:#fff;padding:12px;color:#8b1d25;transform:translateY(-150%)}
 .skip-link:focus{transform:none}
@@ -52,3 +44,14 @@ html body.catalog-listing-page .catalog-grid{padding-top:0;padding-bottom:78px}
 /* The source section spaces header/toolbar/list by a flex gap. This content-page
    composition includes search and a result count, so their explicit margins own spacing. */
 html body.catalog-listing-page .catalog-grid__inner{gap:0}
+/* Primary direction choice precedes the subordinate market/deal and quick filters. */
+.catalog-direction{--catalog-filter-font-size:21px;--catalog-filter-font-weight:300;--catalog-filter-wine:#8b1d25;--catalog-filter-muted:#656462;border:0;padding:0;margin:0 0 32px;min-width:0}
+.catalog-direction legend{padding:0;margin:0 0 20px;font:400 13px/1.2 'Tilda Sans',sans-serif;color:#656462;letter-spacing:.1em;text-transform:uppercase}
+.catalog-direction__options{display:flex;justify-content:space-between;gap:24px;border-bottom:1px solid #e4e4e4}
+.catalog-direction .catalog-mode-switch__button{min-height:54px;padding:0 0 18px}
+.catalog-price-period{display:block;color:#656462;font:300 13px/1.3 'Tilda Sans',sans-serif;margin-top:4px}
+html body.catalog-listing-page .site-header--menu-open{box-shadow:none}
+@media(max-width:1024px){.catalog-direction{--catalog-filter-font-size:18px}.catalog-direction__options{gap:14px}}
+@media(max-width:700px){.catalog-direction{--catalog-filter-font-size:17px;margin-bottom:26px}.catalog-direction legend{font-size:11px;margin-bottom:12px}.catalog-direction__options{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 20px;border:0}.catalog-direction .catalog-mode-switch__button{min-width:0;white-space:normal;text-align:left;padding:12px 0;border-bottom:1px solid #e4e4e4;min-height:48px}.catalog-direction .catalog-mode-switch__button:last-child{grid-column:1/-1}.catalog-direction .catalog-mode-switch__button.is-active::after{height:2px}}
+/* Use the kit's readable muted token for IDs on every lot variant. */
+html body.catalog-listing-page .listing-card-price-row .apartment-card__lotid{color:#656462}

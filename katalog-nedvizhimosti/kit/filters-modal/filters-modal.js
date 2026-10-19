@@ -117,6 +117,7 @@
     var draft = {};
     var invalid = null;
     inputs.forEach(function (input) {
+      if (input.disabled) return;
       input.removeAttribute('aria-invalid');
       if (input.type === 'checkbox') {
         if (!draft[input.name]) draft[input.name] = [];
@@ -127,7 +128,7 @@
         draft[input.name] = raw;
       }
     });
-    ['price','area','rooms'].forEach(function (key) {
+    ['price','area','rooms','land'].forEach(function (key) {
       if (draft[key+'Min'] && draft[key+'Max'] && Number(draft[key+'Min']) > Number(draft[key+'Max'])) {
         invalid = invalid || modal.querySelector('[name="'+key+'Min"]');
       }
@@ -139,7 +140,7 @@
       invalid.focus();
       return;
     }
-    state = Object.assign({}, resetPending ? { market: state.market } : state, draft);
+    state = Object.assign({}, resetPending ? { market: state.market, deal: state.deal } : state, draft);
     close();
     document.dispatchEvent(new CustomEvent('barnes:filters-apply', { detail:copy(state) }));
   });
@@ -166,6 +167,11 @@
     }
   }, true);
   window.BarnesFilters = {
+    configure:function (callback) {
+      if (!modal.hidden) return;
+      callback(modal);
+      inputs = Array.from(modal.querySelectorAll('input'));
+    },
     open:open,
     getState:function () { return copy(state); },
     patch:function (fields) {
