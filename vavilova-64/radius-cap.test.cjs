@@ -1,0 +1,12 @@
+const {test}=require('node:test')
+const assert=require('node:assert/strict')
+const fs=require('node:fs'),path=require('node:path')
+test('all page corners and pseudo-elements use the page-local 1px cap',()=>{
+ const css=fs.readFileSync(path.join(__dirname,'radius-cap.css'),'utf8')
+ for(const selector of ['body:has(.catalog-detail) *','*::before','*::after','::-webkit-slider-thumb','::-moz-range-thumb']) assert.ok(css.includes(selector))
+ const declarations=[...css.matchAll(/border-radius:\s*([^;]+);/g)].map(m=>m[1])
+ assert.equal(declarations.length,5)
+ assert.ok(declarations.every(v=>v==='1px !important'))
+ const html=fs.readFileSync(path.join(__dirname,'index.html'),'utf8')
+ assert.ok(html.includes('radius-cap.css?v=20261019'))
+})

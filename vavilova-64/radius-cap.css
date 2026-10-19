@@ -1,0 +1,23 @@
+/* Latest page-specific instruction: every authored corner is at most 1px.
+   Opt-in by the residential page root; never affects other site pages.
+   Cross-origin map contents are controlled by their provider. */
+body:has(.catalog-detail),
+body:has(.catalog-detail) *,
+body:has(.catalog-detail)::before,
+body:has(.catalog-detail)::after,
+body:has(.catalog-detail) *::before,
+body:has(.catalog-detail) *::after {
+  border-radius: 1px !important;
+}
+body:has(.catalog-detail) input[type="range"]::-webkit-slider-thumb {
+  border-radius: 1px !important;
+}
+body:has(.catalog-detail) input[type="range"]::-webkit-slider-runnable-track {
+  border-radius: 1px !important;
+}
+body:has(.catalog-detail) input[type="range"]::-moz-range-thumb {
+  border-radius: 1px !important;
+}
+body:has(.catalog-detail) input[type="range"]::-moz-range-track {
+  border-radius: 1px !important;
+}
