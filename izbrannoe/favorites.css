@@ -13,9 +13,7 @@ html body .favorites-layout :is(a,button,select):focus-visible,.favorites-dialog
 .favorites-breadcrumbs a:hover{color:#8b1d25}
 .favorites-heading{display:flex;justify-content:space-between;align-items:flex-end;gap:40px;padding-block:55px 38px}
 .favorites-eyebrow{font-size:14px;font-weight:400;letter-spacing:.12em;line-height:1.15;text-transform:uppercase;margin-bottom:25px;color:#656462}
-.favorites-heading h1{font-size:clamp(32px,4vw,58px);font-weight:300;letter-spacing:-.035em;line-height:1.05;margin:0}
-.favorites-heading h1 sup{display:inline-block;position:static;vertical-align:top;line-height:1.4;font-size:18px;font-weight:400;letter-spacing:0;margin-left:14px;color:#8b1d25}
-.favorites-heading__text{font-size:18px;line-height:1.5;font-weight:300;color:#4f4d49;padding-bottom:3px}
+.favorites-heading h1{font-size:clamp(38px,4vw,58px);font-weight:300;letter-spacing:-.045em;line-height:1.05;margin:0}
 html body .favorites-toolbar.catalog-mode-toolbar{display:flex;justify-content:space-between;gap:24px;border-bottom:1px solid #e4e4e4;margin:0;padding:0;align-items:center}
 .favorites-toolbar .catalog-mode-switch{gap:28px}
 .favorites-toolbar .catalog-mode-switch__button{font-weight:300}
@@ -64,3 +62,16 @@ html body .favorites-toolbar .favorites-sort{padding:0;min-height:44px;align-ite
 html body .favorites-toolbar .favorites-sort::after{content:none}
 html body .favorites-toolbar .favorites-sort .resort-sort-trigger{display:inline-flex;align-items:center;justify-content:flex-start;gap:16px;width:max-content;max-width:none;height:44px;min-height:44px;padding:8px 4px 8px 8px;line-height:22px;text-align:left;white-space:nowrap}
 html body .favorites-toolbar .resort-sort-trigger::after{content:"";display:block;position:static;box-sizing:border-box;flex:0 0 10px;width:10px;height:10px;margin:0;border-right:1px solid currentColor;border-bottom:1px solid currentColor;transform:translateY(-3px) rotate(45deg);pointer-events:none}
+
+/* Shared live header, adapted to the existing white favorites page. */
+html body.favorites-page .layout__header{--layout-header-offset-top:32px;color:#1e1e1e}
+html body.favorites-page .site-header__top{border-bottom-color:rgba(30,30,30,.14)}
+html body.favorites-page .site-header__logo img{filter:brightness(0)}
+@media(max-width:540px){html body.favorites-page .layout__header{--layout-header-offset-top:16px}}
+html body.favorites-page .layout__header .site-header .site-header__nav-link,
+html body.favorites-page .layout__header .site-header .site-header__icon--phone{color:#1e1e1e}
+html body.favorites-page .layout__header .site-header .site-header__nav-link:hover{color:#8b1d25}
+
+/* Typography roles from live gorodskaya-nedvizhimost; preserve the approved card layout. */
+html body .favorites-breadcrumbs{font-size:16px;line-height:1.4;font-weight:300}
+html body .favorites-sort .resort-sort-trigger{font-family:inherit}

@@ -9,7 +9,7 @@
   const footer = document.querySelector('.favorites-layout > .site-footer')
   const closedIcon = button.innerHTML
   // Exact close icon from prodazha_sobstvennikam/owner-sale.js.
-  const openIcon = '<span class="ui-icon ui-icon-current site-header__icon" data-v-7912d681 data-v-8bd2f545><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg></span>'
+  const openIcon = '<span class="ui-icon ui-icon-current site-header__icon" data-v-63dbb988 data-v-8bd2f545><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg></span>'
   let savedOverflow = '', savedPadding = ''
   let previousInert = []
   const isOpen = () => !menu.hidden

@@ -133,7 +133,7 @@
  document.querySelectorAll('[data-reset],[data-reset-empty]').forEach(button=>button.addEventListener('click',reset));
  $('[data-more]').addEventListener('click',()=>{const previous=limit;limit+=6;render();list.children[previous]?.querySelector('.apartment-card__name').focus({preventScroll:true});});
  function showFavorites(event){event.preventDefault();onlyFavorites=!onlyFavorites;limit=6;render();}
- $('[data-show-favorites]').addEventListener('click',showFavorites);$('.site-header__favorites-btn')?.addEventListener('click',showFavorites);
+ $('[data-show-favorites]').addEventListener('click',showFavorites);
  const search=$('.site-header__search-btn');if(search){search.href='#catalog-search';search.addEventListener('click',event=>{event.preventDefault();$('#catalog-search').focus();});}
  list.addEventListener('click',event=>{
   const button=event.target.closest('[data-favorite]');if(!button)return;const id=button.dataset.favorite,adding=!favorites.includes(id);favorites=adding?[...favorites,id]:favorites.filter(value=>value!==id);

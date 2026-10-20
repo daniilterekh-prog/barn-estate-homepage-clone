@@ -64,8 +64,12 @@
     const visible = selectedCards.filter(card => kind === 'all' || card.dataset.kind === kind)
     const order = sort.value
     visible.sort((a,b) => {
-      if (order === 'price-asc') return Number(a.dataset.price) - Number(b.dataset.price)
-      if (order === 'price-desc') return Number(b.dataset.price) - Number(a.dataset.price)
+      if (order === 'price-asc' || order === 'price-desc') {
+        const aPrice = Number(a.dataset.price), bPrice = Number(b.dataset.price)
+        if (!aPrice) return bPrice ? 1 : 0
+        if (!bPrice) return -1
+        return order === 'price-asc' ? aPrice - bPrice : bPrice - aPrice
+      }
       return ids.indexOf(b.dataset.favoriteId) - ids.indexOf(a.dataset.favoriteId)
     }).forEach(card => grid.append(card))
     document.querySelectorAll('[data-kind-count]').forEach(el => { el.textContent = el.dataset.kindCount === 'all' ? selectedCards.length : selectedCards.filter(card => card.dataset.kind === el.dataset.kindCount).length })
@@ -75,7 +79,9 @@
     document.querySelector('[data-empty-title]').textContent = selectedCards.length ? 'В этом разделе пока ничего нет' : 'В избранном пока ничего нет'
     document.querySelector('[data-favorites-count]').textContent = countText(visible.length)
     document.querySelector('[data-favorites-clear]').hidden = selectedCards.length === 0
-    document.querySelector('[data-storage-note]').textContent = preview ? 'Режим просмотра: изменения не сохраняются.' : storageAvailable ? 'Подборка сохраняется в этом браузере.' : 'Хранилище недоступно. Подборка сохранится только до закрытия страницы.'
+    const storageNote = document.querySelector('[data-storage-note]')
+    storageNote.hidden = preview
+    storageNote.textContent = preview ? '' : storageAvailable ? 'Подборка сохраняется в этом браузере.' : 'Хранилище недоступно. Подборка сохранится только до закрытия страницы.'
   }
   cards.forEach(card => card.querySelector('.apartment-card__favorite, .card__favorite').addEventListener('click', () => {
     const id = card.dataset.favoriteId

@@ -139,5 +139,38 @@
         "Local navigation and image paths only; original classes, scoped attributes, content and layout preserved."
       ]
     }
+  },
+  "liveHeader": {
+    "source": "https://barn-estate.ru/for-partners/",
+    "retrieved": "2026-10-20",
+    "css": "ui/partners-header.css",
+    "sha256": "2d589b6bf5adbfdefa701ae843db7a705ee0ffc3b362d9f70a407678fa9446d0",
+    "adaptations": [
+      "Home and favorites paths",
+      "Local messenger assets",
+      "Favorites counter and accessible menu hooks",
+      "Ink for white page background"
+    ]
+  },
+  "typographyReference": {
+    "source": "https://barn-estate.ru/gorodskaya-nedvizhimost/",
+    "headingWeight": 300,
+    "headingLetterSpacing": "-.045em",
+    "buttonWeight": 400,
+    "fontFilesIdentical": true,
+    "fonts": {
+      "Light": {
+        "source": "https://barn-estate.ru/fonts/TildaSans-Light.woff2",
+        "sha256": "f0f2c165784c72343618a7c2cbde00e45dbb9b09af5149984792f280cac9642e"
+      },
+      "Regular": {
+        "source": "https://barn-estate.ru/fonts/TildaSans-Regular.woff2",
+        "sha256": "2670dad44ca6c2a1b9bbdbf1af6d8db9173f2dbe31604e80bdf9599b55047d41"
+      },
+      "Medium": {
+        "source": "https://barn-estate.ru/fonts/TildaSans-Medium.woff2",
+        "sha256": "f716269e361f466570f37bc920988c619ddc8a7828c5949c1c56a731a320ab47"
+      }
+    }
   }
 }
