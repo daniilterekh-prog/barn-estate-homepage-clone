@@ -36,15 +36,23 @@
     "logo": "barnes-assets/brand/barn-estate/logo.svg@e1da541",
     "adaptation": "Dark icons and logo on white content-page background"
   },
-  "globalNavigation": {
-    "repository": "https://github.com/daniilterekh-prog/barnes-assets",
-    "commit": "e1da541",
-    "path": "blocks/header/sale/fragment.html",
-    "adaptations": [
-      "Москва label renamed Городская",
-      "Dark text and opaque white submenus on content page",
-      "Native keyboard links with Escape dismissal"
+  "currentLiveMenu": {
+    "date": "2026-10-20",
+    "header": "https://barn-estate.ru/gorodskaya-nedvizhimost/",
+    "globalNavigation": "https://barn-estate.ru/prodazha_sobstvennikam/",
+    "css": "https://barn-estate.ru/_nuxt/style.D01Ij5Qx.css",
+    "cssSHA256": "0ad1d0f40bfbf6b494ed731fb391f8c948775a09496f0ca1819b441c07de8544",
+    "scopes": [
+      "data-v-63dbb988",
+      "data-v-c7f48e7e"
     ],
-    "responsive": "Visible at all widths; wrapped links and full-width dropdowns at <=1280px; full burger remains available"
+    "responsive": "Global row above 1280px; full burger at all sizes",
+    "adaptations": [
+      "Dark header ink on white catalog background",
+      "Local versions of the same menu images",
+      "Accessible focus trap, Escape and focus restoration",
+      "Panel top anchored to the actual top-row bottom",
+      "Source base-container padding restored above 1920px for header/menu"
+    ]
   }
 }

@@ -1,5 +1,5 @@
 /* Content-page placement only. Cards, toolbar, popovers and modal use the canonical kit CSS. */
-html body.catalog-listing-page{background:#fff;color:#1e1e1e;min-width:320px}
+html body.catalog-listing-page{background:#fff;color:#1e1e1e;min-width:0}
 html body.catalog-listing-page .layout__header{position:relative;inset:auto;color:#1e1e1e;background:#fff;z-index:20}
 html body.catalog-listing-page .layout__header .site-header{color:#1e1e1e}
 html body.catalog-listing-page .site-header__top{border-bottom-color:#e4e4e4}
@@ -101,28 +101,13 @@ html body.catalog-listing-page .apartment-card__topline .apartment-card__lotid{c
 html body.catalog-listing-page .layout__header .catalog-header-contact .site-header__icon--phone{color:#1e1e1e}
 html body.catalog-listing-page .apartment-card__stats .apartment-card__stat-label{color:#656462}
 
-/* Shared site's global navigation, copied from the canonical sale header. */
-html body.catalog-listing-page .layout__header .catalog-global-nav{padding-bottom:26px}
-html body.catalog-listing-page .layout__header .catalog-global-nav .site-header__nav-link{color:#1e1e1e}
-html body.catalog-listing-page .layout__header .catalog-global-nav .site-header__nav-link:hover{color:#8b1d25}
-html body.catalog-listing-page .layout__header .catalog-global-nav .site-header__subnav{background:#fff;border:1px solid #e4e4e4;box-shadow:0 10px 30px #1e1e1e14;margin-top:0;padding:16px;min-width:190px}
-html body.catalog-listing-page .layout__header .catalog-global-nav .site-header__subnav-link{color:#4f4d49}
-html body.catalog-listing-page .layout__header .catalog-global-nav .site-header__subnav-link:hover,
-html body.catalog-listing-page .layout__header .catalog-global-nav .site-header__subnav-link:focus-visible{color:#8b1d25}
-html body.catalog-listing-page .catalog-global-nav .site-header__nav-item:last-child .site-header__subnav{left:auto;right:0}
-html body.catalog-listing-page .layout__header .catalog-global-nav .site-header__nav-item.is-subnav-dismissed .site-header__subnav{display:none}
-html body.catalog-listing-page .site-header--menu-open .catalog-global-nav{visibility:hidden;padding-bottom:0}
-/* Global links remain visible when the browser is beside the chat. */
-html body.catalog-listing-page .layout__header .catalog-global-nav{display:flex}
-@media(max-width:1280px){
- html body.catalog-listing-page .layout__header .catalog-global-nav{position:relative;margin-top:16px;padding-bottom:16px}
- html body.catalog-listing-page .catalog-global-nav .site-header__nav-list{gap:4px 20px}
- html body.catalog-listing-page .catalog-global-nav .site-header__nav-item{position:static}
- html body.catalog-listing-page .layout__header .catalog-global-nav .site-header__nav-link{display:flex;align-items:center;min-height:44px;font-size:16px}
- html body.catalog-listing-page .layout__header .catalog-global-nav .site-header__subnav{left:0;right:0;top:100%;max-height:55vh;overflow-y:auto}
- html body.catalog-listing-page .layout__header .catalog-global-nav .site-header__subnav-link{display:flex;align-items:center;min-height:36px;font-size:16px}
-}
-@media(max-width:540px){
- html body.catalog-listing-page .catalog-global-nav .site-header__nav-list{justify-content:flex-start;gap:0 16px}
- html body.catalog-listing-page .layout__header .catalog-global-nav .site-header__nav-link{font-size:14px;min-height:40px}
-}
+/* Live header/menu geometry is owned by the current reference component.
+   The catalog's white content background requires dark header ink. */
+html body.catalog-listing-page .layout__header .site-header{color:#1e1e1e}
+html body.catalog-listing-page .layout__header .site-header__top{border-bottom-color:#e4e4e4}
+html body.catalog-listing-page .layout__header .site-header__nav-link{color:#1e1e1e}
+html body.catalog-listing-page .layout__header .site-header__nav-link:hover{color:#8b1d25}
+html body.catalog-listing-page .layout__header .site-header--menu-open .site-header__nav{display:none}
+html body.catalog-listing-page .site-header--menu-open .site-header__logo img{filter:brightness(0)}
+
+@media(min-width:1921px){html body.catalog-listing-page :is(.site-header__inner,.site-menu__inner).base-container{padding-inline:0}}
