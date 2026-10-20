@@ -47,8 +47,8 @@
     var toolbar = document.querySelector('.catalog-mode-toolbar');
     if (toolbar && !document.querySelector('[data-brand-context=listing]')) {
       var row = group('listing');
-      var refinements = toolbar.querySelector('.catalog-refinements');
-      if (refinements) refinements.prepend(row);
+      var refinements = toolbar.querySelector('.catalog-toolbar__secondary');
+      if (refinements) refinements.append(row);
       else toolbar.appendChild(row);
     }
     var reset = document.querySelector('.map-browser__reset');

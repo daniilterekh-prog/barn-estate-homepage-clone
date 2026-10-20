@@ -44,15 +44,7 @@ html body.catalog-listing-page .catalog-grid{padding-top:0;padding-bottom:78px}
 /* The source section spaces header/toolbar/list by a flex gap. This content-page
    composition includes search and a result count, so their explicit margins own spacing. */
 html body.catalog-listing-page .catalog-grid__inner{gap:0}
-/* Primary direction choice precedes the subordinate market/deal and quick filters. */
-.catalog-direction{--catalog-filter-font-size:21px;--catalog-filter-font-weight:300;--catalog-filter-wine:#8b1d25;--catalog-filter-muted:#656462;border:0;padding:0;margin:0 0 32px;min-width:0}
-.catalog-direction legend:not(.visually-hidden){padding:0;margin:0 0 20px;font:400 13px/1.2 'Tilda Sans',sans-serif;color:#656462;letter-spacing:.1em;text-transform:uppercase}
-.catalog-direction__options{display:flex;justify-content:space-between;gap:24px;border-bottom:1px solid #e4e4e4}
-.catalog-direction .catalog-mode-switch__button{min-height:54px;padding:0 0 18px}
 .catalog-price-period{display:block;color:#656462;font:300 13px/1.3 'Tilda Sans',sans-serif;margin-top:4px}
-html body.catalog-listing-page .site-header--menu-open{box-shadow:none}
-@media(max-width:1024px){.catalog-direction{--catalog-filter-font-size:18px}.catalog-direction__options{gap:14px}}
-@media(max-width:700px){.catalog-direction{--catalog-filter-font-size:17px;margin-bottom:26px}.catalog-direction legend:not(.visually-hidden){font-size:11px;margin-bottom:12px}.catalog-direction__options{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 20px;border:0}.catalog-direction .catalog-mode-switch__button{min-width:0;white-space:normal;text-align:left;padding:12px 0;border-bottom:1px solid #e4e4e4;min-height:48px}.catalog-direction .catalog-mode-switch__button:last-child{grid-column:1/-1}.catalog-direction .catalog-mode-switch__button.is-active::after{height:2px}}
 /* Use the kit's readable muted token for IDs on every lot variant. */
 html body.catalog-listing-page .listing-card-price-row .apartment-card__lotid{color:#656462}
 
@@ -61,34 +53,6 @@ html body.catalog-listing-page .listing-card-price-row .apartment-card__lotid{co
 html body.catalog-listing-page .site-header__logo img{width:auto;height:48px;max-width:none}
 html body.catalog-listing-page .site-header__icon--phone{color:#1e1e1e}
 html body.catalog-listing-page .catalog-header-contact--phone{display:inline-flex}
-html body.catalog-listing-page .catalog-mode-toolbar{grid-template-columns:auto minmax(0,1fr) auto;gap:24px 20px;margin-bottom:24px}
-html body.catalog-listing-page .catalog-mode-toolbar>.catalog-mode-switch{grid-column:1;grid-row:1}
-html body.catalog-listing-page .catalog-mode-toolbar>.catalog-search-row{grid-column:2/-1;grid-row:1;justify-content:flex-end;margin:0}
-html body.catalog-listing-page .catalog-mode-toolbar>.catalog-mode-filters{grid-column:1/3;grid-row:2}
-html body.catalog-listing-page .catalog-mode-toolbar>.catalog-mode-detailed-filters[class][class]{grid-column:3;grid-row:2}
-html body.catalog-listing-page .catalog-refinements{grid-column:1/-1;grid-row:3;display:flex;align-items:center;gap:20px;min-width:0}
-html body.catalog-listing-page .catalog-refinements>.barnes-brand-filters{margin:0;justify-content:flex-start;flex:1}
-html body.catalog-listing-page .catalog-refinements>.catalog-grid__sort{margin:0;flex:none}
-html body.catalog-listing-page .catalog-refinements>[data-reset]{order:0}
-html body.catalog-listing-page .catalog-refinements>.catalog-grid__sort{order:1}
-@media(max-width:1024px){
- html body.catalog-listing-page .catalog-mode-toolbar{grid-template-columns:minmax(0,1fr) auto}
- html body.catalog-listing-page .catalog-mode-toolbar>.catalog-mode-switch{grid-column:1/-1;grid-row:1}
- html body.catalog-listing-page .catalog-mode-toolbar>.catalog-search-row{grid-column:1/-1;grid-row:2;justify-content:flex-start}
- html body.catalog-listing-page .catalog-text-search{max-width:none}
- html body.catalog-listing-page .catalog-mode-toolbar>.catalog-mode-filters{grid-column:1;grid-row:3}
- html body.catalog-listing-page .catalog-mode-toolbar>.catalog-mode-detailed-filters[class][class]{grid-column:2;grid-row:3}
- html body.catalog-listing-page .catalog-refinements{grid-row:4}
-}
-@media(max-width:540px){
- html body.catalog-listing-page .site-header__logo img{height:36px}
- html body.catalog-listing-page .catalog-mode-toolbar>.catalog-mode-filters{grid-column:1/-1;grid-row:3}
- html body.catalog-listing-page .catalog-mode-toolbar>.catalog-mode-detailed-filters[class][class]{grid-column:1/-1;grid-row:4;justify-self:stretch;width:100%}
- html body.catalog-listing-page .catalog-refinements{grid-row:5;flex-wrap:wrap;gap:12px}
- html body.catalog-listing-page .catalog-refinements>.barnes-brand-filters{flex-basis:100%;justify-content:flex-start}
- html body.catalog-listing-page .catalog-refinements>.catalog-grid__sort{margin-left:auto}
-}
-
 /* Grid lot typography and actions measured on the live city listing. */
 html body.catalog-listing-page .apartment-card--catalog .apartment-card__name-text[class]{font-size:23px;line-height:1.12}
 html body.catalog-listing-page .apartment-card--catalog .apartment-card__price[class]{font-size:28px;line-height:1.2}
@@ -111,3 +75,47 @@ html body.catalog-listing-page .layout__header .site-header--menu-open .site-hea
 html body.catalog-listing-page .site-header--menu-open .site-header__logo img{filter:brightness(0)}
 
 @media(min-width:1921px){html body.catalog-listing-page :is(.site-header__inner,.site-menu__inner).base-container{padding-inline:0}}
+
+/* Two aligned filter rows; one scale and height for primary controls. */
+html body.catalog-listing-page .catalog-mode-toolbar{--catalog-filter-font-size:19px;display:flex;flex-direction:column;align-items:stretch;gap:16px;margin:0 0 24px}
+.catalog-toolbar__primary,.catalog-toolbar__secondary{display:grid;gap:16px;align-items:center;min-width:0}
+.catalog-toolbar__primary{grid-template-columns:minmax(160px,1fr) minmax(230px,1.3fr) minmax(230px,2fr) minmax(170px,1fr)}
+.catalog-toolbar__secondary{grid-template-columns:minmax(0,1fr) 130px 180px}
+html body.catalog-listing-page .catalog-mode-toolbar :is(.catalog-toolbar__primary,.catalog-toolbar__secondary)>[class][class]{grid-area:auto;margin:0;min-width:0}
+.catalog-direction{position:relative;display:flex;align-items:center;height:64px;border-bottom:1px solid #e4e4e4;color:#4f4d49}
+.catalog-direction select{appearance:none;width:100%;height:100%;border:0;background:transparent;padding:0 32px 0 10px;font:300 var(--catalog-filter-font-size)/1.3 'Tilda Sans',sans-serif;color:inherit;cursor:pointer;border-radius:0}
+.catalog-direction>svg{position:absolute;right:10px;pointer-events:none}
+html body.catalog-listing-page .catalog-toolbar__primary .catalog-mode-switch{height:64px;gap:20px;border-bottom:1px solid #e4e4e4;align-items:stretch;justify-content:space-between}
+html body.catalog-listing-page .catalog-toolbar__primary .catalog-mode-switch__button{font-size:var(--catalog-filter-font-size);height:64px;min-height:64px;padding:0;line-height:1.3}
+html body.catalog-listing-page .catalog-toolbar__primary .catalog-search-row{height:64px;display:flex;gap:8px}
+html body.catalog-listing-page .catalog-text-search{height:64px;max-width:none}
+html body.catalog-listing-page .catalog-text-search input{height:62px;font-size:var(--catalog-filter-font-size);line-height:1.3}
+html body.catalog-listing-page .catalog-toolbar__primary .catalog-grid__sort[class][class]{height:64px;border-bottom:1px solid #e4e4e4;display:flex;align-items:center}
+html body.catalog-listing-page .catalog-toolbar__primary .resort-sort-trigger{width:100%;height:63px;justify-content:space-between;padding:0 8px;font-size:var(--catalog-filter-font-size)}
+html body.catalog-listing-page .catalog-toolbar__secondary .catalog-mode-filters{width:100%;gap:16px;grid-template-columns:repeat(4,minmax(0,1fr))}
+html body.catalog-listing-page .catalog-toolbar__secondary .catalog-quick-filters__item[class]{height:64px;min-height:64px}
+html body.catalog-listing-page .catalog-toolbar__secondary .catalog-quick-filters__button{height:63px;font-size:var(--catalog-filter-font-size);padding-inline:8px;gap:8px}
+html body.catalog-listing-page .catalog-toolbar__secondary .catalog-quick-filters__caption{white-space:normal;line-height:1.15}
+html body.catalog-listing-page .catalog-toolbar__secondary .catalog-mode-detailed-filters[class][class]{height:64px;min-height:64px;width:100%;padding-inline:6px;font-size:var(--catalog-filter-font-size);gap:8px}
+html body.catalog-listing-page .catalog-toolbar__secondary .barnes-brand-filters{display:flex;flex-direction:column;justify-content:center;align-items:flex-start;height:64px;width:180px;gap:0;font-size:15px}
+html body.catalog-listing-page .catalog-toolbar__secondary .barnes-brand-filters label{min-height:30px;padding:0;white-space:nowrap}
+.catalog-text-reset{flex:none}
+@media(max-width:1023px){
+ .catalog-toolbar__primary{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .catalog-toolbar__secondary{grid-template-columns:repeat(2,minmax(0,1fr))}
+ html body.catalog-listing-page .catalog-mode-toolbar .catalog-toolbar__secondary>.catalog-mode-filters[class][class]{grid-column:1/-1}
+ html body.catalog-listing-page .catalog-toolbar__secondary .barnes-brand-filters{width:auto;justify-self:end}
+}
+@media(max-width:540px){
+ html body.catalog-listing-page .catalog-mode-toolbar{--catalog-filter-font-size:17px;gap:12px}
+ .catalog-toolbar__primary,.catalog-toolbar__secondary{gap:12px}
+ html body.catalog-listing-page .catalog-mode-toolbar .catalog-toolbar__primary>.catalog-mode-switch[class][class],html body.catalog-listing-page .catalog-mode-toolbar .catalog-toolbar__primary>.catalog-search-row[class][class]{grid-column:1/-1}
+ html body.catalog-listing-page .catalog-mode-toolbar .catalog-toolbar__primary>.catalog-direction[class][class]{grid-column:1;grid-row:1}
+ html body.catalog-listing-page .catalog-mode-toolbar .catalog-toolbar__primary>.catalog-grid__sort[class][class]{grid-column:2;grid-row:1}
+ html body.catalog-listing-page .catalog-toolbar__secondary .catalog-mode-filters{grid-template-columns:repeat(2,minmax(0,1fr))}
+ html body.catalog-listing-page .catalog-toolbar__secondary .barnes-brand-filters{font-size:13px;width:auto}
+}
+
+html body.catalog-listing-page .catalog-toolbar__primary .resort-sort-trigger{display:block;text-align:left;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;padding-right:32px}
+html body.catalog-listing-page .catalog-search-row>[data-reset]{display:flex;align-items:center;justify-content:center;width:40px;height:64px;padding:0}
+.catalog-listing-page select:focus-visible{outline:2px solid #8b1d25;outline-offset:3px}

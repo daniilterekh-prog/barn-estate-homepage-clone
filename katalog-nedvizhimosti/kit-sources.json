@@ -88,5 +88,12 @@
       "Lot ID/name/address/stats/price order follows live city listing",
       "Search before quick filters; brand flags and sort after quick filters"
     ]
+  },
+  "twoRowToolbar": {
+    "date": "2026-10-21",
+    "department": "Native select, preserving all five direction profiles and URL state",
+    "desktop": "Two rows at >=1024px; primary controls 64px tall and 19px type",
+    "mobile": "Responsive wrapping, primary controls 17px",
+    "brandFilterIntegration": "Mount into catalog-toolbar__secondary after quick/detailed controls"
   }
 }

@@ -112,7 +112,7 @@
   const order=sort.endsWith('_desc')?-1:1,key=sort.startsWith('price_')?'price':sort.startsWith('square_')?'area':null;
   if(key)visible.sort((a,b)=>a[key]==null?(b[key]==null?0:1):b[key]==null?-1:order*(a[key]-b[key]));
   list.replaceChildren(...visible.slice(0,limit).map(card));list.setAttribute('aria-busy','false');
-  document.querySelectorAll('.catalog-direction [data-direction]').forEach(button=>{const active=button.dataset.direction===currentDirection;button.classList.toggle('is-active',active);button.setAttribute('aria-pressed',String(active));});
+  $('#catalog-direction-select').value=currentDirection;
   modeButtons().forEach((button,i)=>{const active=profile().mode==='deal'?effectiveDeal()===(i?'rent':'buy'):s.market===(i?'secondary':'new-build');button.classList.toggle('is-active',active);button.setAttribute('aria-pressed',String(active));});
   const n=visible.length,word=profile().mode==='market'&&s.market==='new-build'?'проект':'объект';
   $('#results-count').textContent=`${n} ${n%100>=11&&n%100<=14?word+'ов':n%10===1?word:n%10>=2&&n%10<=4?word+'а':word+'ов'}`;
@@ -123,7 +123,7 @@
  }
  function reset(){query='';onlyFavorites=false;limit=6;$('#catalog-search').value='';window.BarnesFilters.patch({...blank(),market:state().market,deal:effectiveDeal()});}
  document.addEventListener('barnes:filters-apply',()=>{limit=6;if(objects.length)render();});
- document.querySelectorAll('.catalog-direction [data-direction]').forEach(button=>button.addEventListener('click',()=>setDirection(button.dataset.direction)));
+ $('#catalog-direction-select').addEventListener('change',event=>setDirection(event.target.value));
  modeButtons().forEach((button,i)=>button.addEventListener('click',()=>{
   if(profile().mode==='deal'){const deal=i?'rent':'buy';window.BarnesCatalogConfigureContext(currentDirection,deal);window.BarnesFilters.patch({deal,priceRanges:[],priceMin:'',priceMax:''});}
   else window.BarnesFilters.patch({market:i?'secondary':'new-build'});
