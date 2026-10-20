@@ -65,7 +65,7 @@ html body.catalog-listing-page .catalog-mode-toolbar{grid-template-columns:auto 
 html body.catalog-listing-page .catalog-mode-toolbar>.catalog-mode-switch{grid-column:1;grid-row:1}
 html body.catalog-listing-page .catalog-mode-toolbar>.catalog-search-row{grid-column:2/-1;grid-row:1;justify-content:flex-end;margin:0}
 html body.catalog-listing-page .catalog-mode-toolbar>.catalog-mode-filters{grid-column:1/3;grid-row:2}
-html body.catalog-listing-page .catalog-mode-toolbar>.catalog-mode-detailed-filters{grid-column:3;grid-row:2}
+html body.catalog-listing-page .catalog-mode-toolbar>.catalog-mode-detailed-filters[class][class]{grid-column:3;grid-row:2}
 html body.catalog-listing-page .catalog-refinements{grid-column:1/-1;grid-row:3;display:flex;align-items:center;gap:20px;min-width:0}
 html body.catalog-listing-page .catalog-refinements>.barnes-brand-filters{margin:0;justify-content:flex-start;flex:1}
 html body.catalog-listing-page .catalog-refinements>.catalog-grid__sort{margin:0;flex:none}
@@ -77,13 +77,13 @@ html body.catalog-listing-page .catalog-refinements>.catalog-grid__sort{order:1}
  html body.catalog-listing-page .catalog-mode-toolbar>.catalog-search-row{grid-column:1/-1;grid-row:2;justify-content:flex-start}
  html body.catalog-listing-page .catalog-text-search{max-width:none}
  html body.catalog-listing-page .catalog-mode-toolbar>.catalog-mode-filters{grid-column:1;grid-row:3}
- html body.catalog-listing-page .catalog-mode-toolbar>.catalog-mode-detailed-filters{grid-column:2;grid-row:3}
+ html body.catalog-listing-page .catalog-mode-toolbar>.catalog-mode-detailed-filters[class][class]{grid-column:2;grid-row:3}
  html body.catalog-listing-page .catalog-refinements{grid-row:4}
 }
 @media(max-width:540px){
  html body.catalog-listing-page .site-header__logo img{height:36px}
  html body.catalog-listing-page .catalog-mode-toolbar>.catalog-mode-filters{grid-column:1/-1;grid-row:3}
- html body.catalog-listing-page .catalog-mode-toolbar>.catalog-mode-detailed-filters{grid-column:1/-1;grid-row:4;justify-self:stretch;width:100%}
+ html body.catalog-listing-page .catalog-mode-toolbar>.catalog-mode-detailed-filters[class][class]{grid-column:1/-1;grid-row:4;justify-self:stretch;width:100%}
  html body.catalog-listing-page .catalog-refinements{grid-row:5;flex-wrap:wrap;gap:12px}
  html body.catalog-listing-page .catalog-refinements>.barnes-brand-filters{flex-basis:100%;justify-content:flex-start}
  html body.catalog-listing-page .catalog-refinements>.catalog-grid__sort{margin-left:auto}
