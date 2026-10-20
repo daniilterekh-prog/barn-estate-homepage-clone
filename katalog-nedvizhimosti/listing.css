@@ -112,3 +112,17 @@ html body.catalog-listing-page .layout__header .catalog-global-nav .site-header_
 html body.catalog-listing-page .catalog-global-nav .site-header__nav-item:last-child .site-header__subnav{left:auto;right:0}
 html body.catalog-listing-page .layout__header .catalog-global-nav .site-header__nav-item.is-subnav-dismissed .site-header__subnav{display:none}
 html body.catalog-listing-page .site-header--menu-open .catalog-global-nav{visibility:hidden;padding-bottom:0}
+/* Global links remain visible when the browser is beside the chat. */
+html body.catalog-listing-page .layout__header .catalog-global-nav{display:flex}
+@media(max-width:1280px){
+ html body.catalog-listing-page .layout__header .catalog-global-nav{position:relative;margin-top:16px;padding-bottom:16px}
+ html body.catalog-listing-page .catalog-global-nav .site-header__nav-list{gap:4px 20px}
+ html body.catalog-listing-page .catalog-global-nav .site-header__nav-item{position:static}
+ html body.catalog-listing-page .layout__header .catalog-global-nav .site-header__nav-link{display:flex;align-items:center;min-height:44px;font-size:16px}
+ html body.catalog-listing-page .layout__header .catalog-global-nav .site-header__subnav{left:0;right:0;top:100%;max-height:55vh;overflow-y:auto}
+ html body.catalog-listing-page .layout__header .catalog-global-nav .site-header__subnav-link{display:flex;align-items:center;min-height:36px;font-size:16px}
+}
+@media(max-width:540px){
+ html body.catalog-listing-page .catalog-global-nav .site-header__nav-list{justify-content:flex-start;gap:0 16px}
+ html body.catalog-listing-page .layout__header .catalog-global-nav .site-header__nav-link{font-size:14px;min-height:40px}
+}

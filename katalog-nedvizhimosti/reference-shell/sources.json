@@ -45,6 +45,6 @@
       "Dark text and opaque white submenus on content page",
       "Native keyboard links with Escape dismissal"
     ],
-    "responsive": "Canonical header hides navigation at 1280px and below; full burger remains available"
+    "responsive": "Visible at all widths; wrapped links and full-width dropdowns at <=1280px; full burger remains available"
   }
 }
