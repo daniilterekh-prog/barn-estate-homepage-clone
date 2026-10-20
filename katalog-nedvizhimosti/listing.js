@@ -92,6 +92,14 @@
   if(item.direction==='commercial')facts=[['Назначение',item.propertyTypes.map(v=>window.BarnesCatalogTypes[v]).join(', ')||'По запросу'],['Площадь',money.format(item.area)+' м²'],['Этаж',stat(/^Этаж/)]];
   if(item.direction==='country')facts=[['Шоссе',item.directions[0]?.replace(/ шоссе$/,'')||'По запросу'],['Площадь дома',money.format(item.area)+' м²'],['Спальни',stat(/^Спал/)]];
   article.querySelectorAll('.listing-card-fact').forEach((fact,i)=>{fact.querySelector('dt').textContent=facts[i][0];fact.querySelector('dd').textContent=facts[i][1];fact.querySelector('dd').title=facts[i][1];});
+  if(!isProject){
+   const body=article.querySelector('.apartment-card__body'),name=article.querySelector('.apartment-card__name'),address=article.querySelector('.apartment-card__address'),id=article.querySelector('.apartment-card__lotid'),price=article.querySelector('.apartment-card__price');
+   const top=document.createElement('div');top.className='apartment-card__topline';top.setAttribute('data-v-80c326fb','');if(id)top.append(id);
+   const stats=document.createElement('div');stats.className='apartment-card__stats';stats.setAttribute('data-v-80c326fb','');stats.setAttribute('aria-label','Основные характеристики');
+   const values=item.stats?.length?item.stats.slice(0,4):facts.map(([label,value])=>[value,label]);stats.style.setProperty('--stats-count',values.length);
+   for(const [value,label] of values){const cell=document.createElement('div'),number=document.createElement('b'),caption=document.createElement('small');cell.className='apartment-card__stat';number.className='apartment-card__stat-value';caption.className='apartment-card__stat-label';for(const node of [cell,number,caption])node.setAttribute('data-v-80c326fb','');number.textContent=value;caption.textContent=label;cell.append(number,caption);stats.append(cell);}
+   body.replaceChildren(top,name,address,stats,price);
+  }
   const price=article.querySelector('.apartment-card__price');price.textContent=item.priceLabel||(item.price!=null?(isProject?'от ':'')+money.format(item.price)+' ₽':'Цена по запросу');
   if(item.deal==='rent'){const period=document.createElement('small');period.className='catalog-price-period';period.textContent='в месяц';price.append(period);}
   const lotID=article.querySelector('.apartment-card__lotid');if(lotID){if(/^\d+$/.test(item.id)){lotID.textContent='ID '+item.id;lotID.setAttribute('aria-label','ID объекта '+item.id);}else lotID.remove();}

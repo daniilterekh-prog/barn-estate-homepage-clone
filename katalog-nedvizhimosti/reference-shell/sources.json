@@ -27,5 +27,13 @@
       "sha256": "0be2d8cc1f4d7aca479ca5586ca195d46e8e0718c911f32821174c2c9997d5be"
     }
   ],
-  "adaptations": "relative asset rebasing; staging links replaced with barn-estate.ru; menu CSS extracted preserving selector and media rules"
+  "adaptations": "relative asset rebasing; staging links replaced with barn-estate.ru; menu CSS extracted preserving selector and media rules",
+  "liveHeaderUpdate": {
+    "url": "https://barn-estate.ru/gorodskaya-nedvizhimost/",
+    "capturedAt": "2026-10-20",
+    "snapshot": "header.html",
+    "scopedAttributeMapping": "data-v-63dbb988 -> data-v-7912d681 retains existing CSS hooks",
+    "logo": "barnes-assets/brand/barn-estate/logo.svg@e1da541",
+    "adaptation": "Dark icons and logo on white content-page background"
+  }
 }

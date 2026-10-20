@@ -76,5 +76,17 @@
       "sha256": "07a590658ef9120c45bbab3980626a7b98d710dabb885824f540d6c3a27c2fc2"
     }
   ],
-  "adaptation": "quick-filters.js: page option array injected and updated in place; filters-modal.js: configure(callback) refreshes input references after context change, disabled inputs ignored, land range validation added, reset preserves deal as well as market. Card and original kit styling preserved; current site shell uses reference-shell/sources.json."
+  "adaptation": "quick-filters.js: page option array injected and updated in place; filters-modal.js: configure(callback) refreshes input references after context change, disabled inputs ignored, land range validation added, reset preserves deal as well as market. Card and original kit styling preserved; current site shell uses reference-shell/sources.json.",
+  "liveReferenceAlignment": {
+    "date": "2026-10-20",
+    "url": "https://barn-estate.ru/gorodskaya-nedvizhimost/",
+    "logoRepositoryCommit": "e1da541",
+    "logoPath": "brand/barn-estate/logo.svg",
+    "changes": [
+      "Header DOM updated from live city reference; existing scoped CSS hooks retained; dark ink for white content-page background",
+      "Card width follows grid without former 420px cap; live name/price/action dimensions",
+      "Lot ID/name/address/stats/price order follows live city listing",
+      "Search before quick filters; brand flags and sort after quick filters"
+    ]
+  }
 }
