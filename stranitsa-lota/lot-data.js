@@ -54,7 +54,7 @@ window.BARNES_LOT_DATA = window.BARNES_LOT_DATA || {
         {
           "@id": "https://front.barnes.vsavr.ru/vtorichnaya-nedvizhimost/588036#/schema//1",
           "description": "Агентство элитной недвижимости BARNES в Москве.",
-          "logo": "/pictures/logo.svg",
+          "logo": "https://daniilterekh-prog.github.io/barnes-assets/brand/barn-estate/logo.svg",
           "name": "BARNES MOSCOW",
           "url": "https://front.barnes.vsavr.ru"
         },
@@ -63,7 +63,7 @@ window.BARNES_LOT_DATA = window.BARNES_LOT_DATA || {
           "description": "Агентство элитной недвижимости BARNES в Москве.",
           "email": "moscow@barn-estate.com",
           "jobTitle": "Real Estate Consultant",
-          "logo": "https://front.barnes.vsavr.ru/pictures/logo.svg",
+          "logo": "https://daniilterekh-prog.github.io/barnes-assets/brand/barn-estate/logo.svg",
           "name": "Vadim Chumak",
           "openingHours": "Mo-Fr 09:00-21:00",
           "telephone": "+7 (499) 272-48-72",

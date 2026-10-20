@@ -472,7 +472,7 @@ if (window.location.protocol !== 'file:') {
   }
   const legacyLocalAsset = (value) => {
     if (!value) return value
-    if (value.includes('/pictures/logo.svg')) return '/vavilova-64/assets/reference/remote-06.svg'
+    if (value.includes('/pictures/logo.svg')) return 'https://daniilterekh-prog.github.io/barnes-assets/brand/barn-estate/logo.svg'
     if (value.includes('8f5ddbc1f811f957fe777caaf9cef323')) return '/vavilova-64/assets/reference/expert-anastasia-shpak.jpg'
     if (value.includes('/pictures/consultation/cta-ruslan-pruss.webp')) return '/vavilova-64/assets/reference/cta-ruslan-pruss.webp'
     if (value.includes('/pictures/newsletter/subscribe-block-img.webp')) return '/vavilova-64/assets/reference/subscribe-block-img.webp'
