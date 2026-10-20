@@ -35,5 +35,16 @@
     "scopedAttributeMapping": "data-v-63dbb988 -> data-v-7912d681 retains existing CSS hooks",
     "logo": "barnes-assets/brand/barn-estate/logo.svg@e1da541",
     "adaptation": "Dark icons and logo on white content-page background"
+  },
+  "globalNavigation": {
+    "repository": "https://github.com/daniilterekh-prog/barnes-assets",
+    "commit": "e1da541",
+    "path": "blocks/header/sale/fragment.html",
+    "adaptations": [
+      "Москва label renamed Городская",
+      "Dark text and opaque white submenus on content page",
+      "Native keyboard links with Escape dismissal"
+    ],
+    "responsive": "Canonical header hides navigation at 1280px and below; full burger remains available"
   }
 }

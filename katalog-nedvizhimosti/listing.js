@@ -133,12 +133,19 @@
  document.querySelectorAll('[data-reset],[data-reset-empty]').forEach(button=>button.addEventListener('click',reset));
  $('[data-more]').addEventListener('click',()=>{const previous=limit;limit+=6;render();list.children[previous]?.querySelector('.apartment-card__name').focus({preventScroll:true});});
  function showFavorites(event){event.preventDefault();onlyFavorites=!onlyFavorites;limit=6;render();}
- $('[data-show-favorites]').addEventListener('click',showFavorites);
+ $('[data-show-favorites]').addEventListener('click',showFavorites);$('.site-header__favorites-btn')?.addEventListener('click',showFavorites);
  const search=$('.site-header__search-btn');if(search){search.href='#catalog-search';search.addEventListener('click',event=>{event.preventDefault();$('#catalog-search').focus();});}
  list.addEventListener('click',event=>{
   const button=event.target.closest('[data-favorite]');if(!button)return;const id=button.dataset.favorite,adding=!favorites.includes(id);favorites=adding?[...favorites,id]:favorites.filter(value=>value!==id);
   try{localStorage.setItem(STORAGE,JSON.stringify(favorites));}catch{}
   render();(list.querySelector(`[data-favorite="${CSS.escape(id)}"]`)||$('[data-show-favorites]')).focus({preventScroll:true});$('[data-announcement]').textContent=adding?'Объект добавлен в избранное':'Объект удалён из избранного';
+ });
+ // Native links retain their destinations; submenus support hover, Tab and Escape.
+ document.querySelectorAll('.catalog-global-nav .site-header__nav-item').forEach(item=>{
+  item.addEventListener('pointerenter',()=>item.classList.remove('is-subnav-dismissed'));
+  item.addEventListener('pointerleave',()=>item.classList.remove('is-subnav-dismissed'));
+  item.addEventListener('focusin',event=>{if(!item.contains(event.relatedTarget))item.classList.remove('is-subnav-dismissed');});
+  item.addEventListener('keydown',event=>{if(event.key==='Escape'){event.preventDefault();item.classList.add('is-subnav-dismissed');item.querySelector('.site-header__nav-link').focus();}});
  });
  // Original full site-menu from the city reference, with isolation and focus restoration.
  const toggle=$('.site-header__icon-btn'),header=$('.site-header'),headerHolder=$('.layout__header');

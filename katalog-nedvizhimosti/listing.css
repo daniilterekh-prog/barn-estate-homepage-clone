@@ -100,3 +100,15 @@ html body.catalog-listing-page .apartment-card__topline .apartment-card__lotid{c
 }
 html body.catalog-listing-page .layout__header .catalog-header-contact .site-header__icon--phone{color:#1e1e1e}
 html body.catalog-listing-page .apartment-card__stats .apartment-card__stat-label{color:#656462}
+
+/* Shared site's global navigation, copied from the canonical sale header. */
+html body.catalog-listing-page .layout__header .catalog-global-nav{padding-bottom:26px}
+html body.catalog-listing-page .layout__header .catalog-global-nav .site-header__nav-link{color:#1e1e1e}
+html body.catalog-listing-page .layout__header .catalog-global-nav .site-header__nav-link:hover{color:#8b1d25}
+html body.catalog-listing-page .layout__header .catalog-global-nav .site-header__subnav{background:#fff;border:1px solid #e4e4e4;box-shadow:0 10px 30px #1e1e1e14;margin-top:0;padding:16px;min-width:190px}
+html body.catalog-listing-page .layout__header .catalog-global-nav .site-header__subnav-link{color:#4f4d49}
+html body.catalog-listing-page .layout__header .catalog-global-nav .site-header__subnav-link:hover,
+html body.catalog-listing-page .layout__header .catalog-global-nav .site-header__subnav-link:focus-visible{color:#8b1d25}
+html body.catalog-listing-page .catalog-global-nav .site-header__nav-item:last-child .site-header__subnav{left:auto;right:0}
+html body.catalog-listing-page .layout__header .catalog-global-nav .site-header__nav-item.is-subnav-dismissed .site-header__subnav{display:none}
+html body.catalog-listing-page .site-header--menu-open .catalog-global-nav{visibility:hidden;padding-bottom:0}
