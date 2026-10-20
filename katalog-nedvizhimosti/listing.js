@@ -142,16 +142,24 @@
  });
  // Original full site-menu from the city reference, with isolation and focus restoration.
  const toggle=$('.site-header__icon-btn'),header=$('.site-header'),headerHolder=$('.layout__header');
- let menu=null,menuSaved=null;
+ let menu=null,menuSaved=null,menuClosing=false,menuMotionTimer=null;
+ const reduceMenuMotion=()=>matchMedia('(prefers-reduced-motion: reduce)').matches;
  function closeMenu(){
-  if(!menu)return;menu.remove();menu=null;header.classList.remove('site-header--menu-open');headerHolder.style.minHeight=menuSaved.height;document.body.style.overflow=menuSaved.overflow;
-  menuSaved.isolated.forEach(([el,inert])=>{el.inert=inert;});toggle.innerHTML=menuSaved.icon;toggle.setAttribute('aria-expanded','false');toggle.setAttribute('aria-label','Открыть меню');toggle.focus({preventScroll:true});
+  if(!menu||menuClosing)return;
+  clearTimeout(menuMotionTimer);
+  const finish=()=>{
+   menu.remove();menu=null;menuClosing=false;header.classList.remove('site-header--menu-open');headerHolder.style.minHeight=menuSaved.height;document.body.style.overflow=menuSaved.overflow;
+   menuSaved.isolated.forEach(([el,inert])=>{el.inert=inert;});toggle.innerHTML=menuSaved.icon;toggle.setAttribute('aria-expanded','false');toggle.setAttribute('aria-label','Открыть меню');toggle.focus({preventScroll:true});
+  };
+  if(reduceMenuMotion()){finish();return;}
+  menuClosing=true;menu.classList.remove('site-menu-fade-enter-active','site-menu-fade-enter-from','site-menu-fade-enter-to');menu.classList.add('site-menu-fade-leave-active');menu.getBoundingClientRect();menu.classList.add('site-menu-fade-leave-to');menuMotionTimer=setTimeout(finish,260);
  }
  function openMenu(){
   if(menu){closeMenu();return;}
   menuSaved={icon:toggle.innerHTML,overflow:document.body.style.overflow,height:headerHolder.style.minHeight,isolated:[]};
   headerHolder.style.minHeight=headerHolder.getBoundingClientRect().height+'px';header.classList.add('site-header--menu-open');
-  menu=$('#site-menu-template').content.firstElementChild.cloneNode(true);menu.id='catalog-site-menu';menu.style.setProperty('--site-menu-top',header.querySelector('.site-header__top').getBoundingClientRect().bottom+'px');document.body.append(menu);
+  menu=$('#site-menu-template').content.firstElementChild.cloneNode(true);menu.id='catalog-site-menu';menu.style.setProperty('--site-menu-top',header.querySelector('.site-header__top').getBoundingClientRect().bottom+'px');if(!reduceMenuMotion())menu.classList.add('site-menu-fade-enter-active','site-menu-fade-enter-from');document.body.append(menu);
+  if(!reduceMenuMotion()){const opening=menu;opening.getBoundingClientRect();requestAnimationFrame(()=>{if(menu!==opening||menuClosing)return;opening.classList.remove('site-menu-fade-enter-from');opening.classList.add('site-menu-fade-enter-to');menuMotionTimer=setTimeout(()=>opening.classList.remove('site-menu-fade-enter-active','site-menu-fade-enter-to'),260);});}
   const menuPath={city:'/gorodskaya-nedvizhimost/',country:'/zagorodnaya-nedvizhimost/',commercial:'/kommercheskaya-nedvizhimost/',resort:'/kurortnaya/',international:'/mezhdunarodnaya-nedvizhimost/'}[currentDirection];
   menu.querySelectorAll('.site-menu__nav-title').forEach(link=>link.classList.toggle('site-menu__nav-title--active',new URL(link.href).pathname===menuPath));
   for(const el of [...document.querySelectorAll('main,.site-footer'),...header.querySelectorAll('a,button')].filter(el=>el!==toggle)){menuSaved.isolated.push([el,el.inert]);el.inert=true;}
