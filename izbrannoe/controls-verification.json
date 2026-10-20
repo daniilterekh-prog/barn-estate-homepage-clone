@@ -1,0 +1,250 @@
+{
+  "passed": true,
+  "results": [
+    {
+      "width": 320,
+      "gap": [
+        24,
+        24
+      ],
+      "tabBottom": 306.984375,
+      "line": 307.984375,
+      "delta": 51.5,
+      "tabsX": 15.203125,
+      "mainX": 15.203125,
+      "overflow": false,
+      "continueButton": {
+        "x": 15.203125,
+        "y": 1372.03125,
+        "width": 274.59375,
+        "height": 58,
+        "top": 1372.03125,
+        "right": 289.796875,
+        "bottom": 1430.03125,
+        "left": 15.203125
+      },
+      "panel": {
+        "padding": "13px",
+        "border": "1px solid rgb(229, 229, 229)",
+        "background": "rgb(255, 255, 255)",
+        "radius": "0px",
+        "shadow": "none",
+        "rect": {
+          "x": 84,
+          "y": 260.984375,
+          "width": 220,
+          "height": 188,
+          "top": 260.984375,
+          "right": 304,
+          "bottom": 448.984375,
+          "left": 84
+        }
+      }
+    },
+    {
+      "width": 390,
+      "gap": [
+        24,
+        24
+      ],
+      "tabBottom": 306.984375,
+      "line": 307.984375,
+      "delta": 51.5,
+      "tabsX": 16.578125,
+      "mainX": 16.578125,
+      "overflow": false,
+      "continueButton": {
+        "x": 16.578125,
+        "y": 1436.90625,
+        "width": 341.84375,
+        "height": 58,
+        "top": 1436.90625,
+        "right": 358.421875,
+        "bottom": 1494.90625,
+        "left": 16.578125
+      },
+      "panel": {
+        "padding": "13px",
+        "border": "1px solid rgb(229, 229, 229)",
+        "background": "rgb(255, 255, 255)",
+        "radius": "0px",
+        "shadow": "none",
+        "rect": {
+          "x": 154,
+          "y": 260.984375,
+          "width": 220,
+          "height": 188,
+          "top": 260.984375,
+          "right": 374,
+          "bottom": 448.984375,
+          "left": 154
+        }
+      }
+    },
+    {
+      "width": 540,
+      "gap": [
+        24,
+        24
+      ],
+      "tabBottom": 306.984375,
+      "line": 307.984375,
+      "delta": 51.5,
+      "tabsX": 19.515625,
+      "mainX": 19.515625,
+      "overflow": false,
+      "continueButton": {
+        "x": 19.515625,
+        "y": 1554.15625,
+        "width": 485.96875,
+        "height": 58,
+        "top": 1554.15625,
+        "right": 505.484375,
+        "bottom": 1612.15625,
+        "left": 19.515625
+      },
+      "panel": {
+        "padding": "13px",
+        "border": "1px solid rgb(229, 229, 229)",
+        "background": "rgb(255, 255, 255)",
+        "radius": "0px",
+        "shadow": "none",
+        "rect": {
+          "x": 304,
+          "y": 260.984375,
+          "width": 220,
+          "height": 188,
+          "top": 260.984375,
+          "right": 524,
+          "bottom": 448.984375,
+          "left": 304
+        }
+      }
+    },
+    {
+      "width": 768,
+      "gap": [
+        20,
+        20
+      ],
+      "tabBottom": 319.28125,
+      "line": 320.28125,
+      "delta": 0,
+      "tabsX": 23.984375,
+      "mainX": 23.984375,
+      "overflow": false,
+      "continueButton": {
+        "x": 23.984375,
+        "y": 970.171875,
+        "width": 280,
+        "height": 70,
+        "top": 970.171875,
+        "right": 303.984375,
+        "bottom": 1040.171875,
+        "left": 23.984375
+      },
+      "panel": {
+        "padding": "13px",
+        "border": "1px solid rgb(229, 229, 229)",
+        "background": "rgb(255, 255, 255)",
+        "radius": "0px",
+        "shadow": "none",
+        "rect": {
+          "x": 532,
+          "y": 325.28125,
+          "width": 220,
+          "height": 188,
+          "top": 325.28125,
+          "right": 752,
+          "bottom": 513.28125,
+          "left": 532
+        }
+      }
+    },
+    {
+      "width": 1440,
+      "gap": [
+        28,
+        28
+      ],
+      "tabBottom": 402.859375,
+      "line": 403.859375,
+      "delta": 0,
+      "tabsX": 68.328125,
+      "mainX": 68.328125,
+      "overflow": false,
+      "continueButton": {
+        "x": 68.328125,
+        "y": 1114.59375,
+        "width": 280,
+        "height": 70,
+        "top": 1114.59375,
+        "right": 348.328125,
+        "bottom": 1184.59375,
+        "left": 68.328125
+      },
+      "panel": {
+        "padding": "13px",
+        "border": "1px solid rgb(229, 229, 229)",
+        "background": "rgb(255, 255, 255)",
+        "radius": "0px",
+        "shadow": "none",
+        "rect": {
+          "x": 1159.671875,
+          "y": 408.859375,
+          "width": 220,
+          "height": 188,
+          "top": 408.859375,
+          "right": 1379.671875,
+          "bottom": 596.859375,
+          "left": 1159.671875
+        }
+      }
+    },
+    {
+      "width": 1920,
+      "gap": [
+        28,
+        28
+      ],
+      "tabBottom": 405.28125,
+      "line": 406.28125,
+      "delta": 0,
+      "tabsX": 99.984375,
+      "mainX": 99.984375,
+      "overflow": false,
+      "continueButton": {
+        "x": 99.984375,
+        "y": 1121.9375,
+        "width": 298,
+        "height": 70,
+        "top": 1121.9375,
+        "right": 397.984375,
+        "bottom": 1191.9375,
+        "left": 99.984375
+      },
+      "panel": {
+        "padding": "13px",
+        "border": "1px solid rgb(229, 229, 229)",
+        "background": "rgb(255, 255, 255)",
+        "radius": "0px",
+        "shadow": "none",
+        "rect": {
+          "x": 1588.015625,
+          "y": 411.28125,
+          "width": 220,
+          "height": 214.75,
+          "top": 411.28125,
+          "right": 1808.015625,
+          "bottom": 626.03125,
+          "left": 1588.015625
+        }
+      }
+    }
+  ],
+  "scope": "Favorites dropdown appearance, toolbar alignment, mobile tab spacing and continue button.",
+  "legacyCatalogCheck": {
+    "passed": false,
+    "detail": "The old full release check failed at catalog -> favorites card count (0 versus 1). Catalog files are unchanged in this UI task; the focused controls and sort geometry checks passed."
+  }
+}

@@ -48,7 +48,7 @@ html body .favorites-toolbar.catalog-mode-toolbar{display:flex;justify-content:s
 @media(min-width:1441px){.favorites-heading__text{font-size:22px}.favorites-bottom>a{font-size:19px}.favorites-eyebrow{font-size:14px}}
 @media(max-width:1024px){.favorites-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}.favorites-heading__text{font-size:17px}.favorites-heading{padding-block:40px 32px;gap:24px}.favorites-toolbar .catalog-mode-switch{gap:20px}}
 @media(max-width:700px){html body .favorites-toolbar.catalog-mode-toolbar{flex-wrap:wrap;gap:14px;padding-bottom:12px}.favorites-sort{margin-left:auto}.favorites-heading{display:block}.favorites-heading__text{margin-top:18px}.favorites-heading__text br{display:none}.favorites-bottom{align-items:flex-start;flex-direction:column;gap:16px}.favorites-toast{width:max-content;gap:20px;font-size:14px}}
-@media(max-width:540px){.favorites-main{padding-top:22px;padding-bottom:40px;min-height:540px}.favorites-breadcrumbs{font-size:12px}.favorites-heading{padding-block:32px}.favorites-eyebrow{font-size:12px;line-height:1.2;margin-bottom:12px}.favorites-heading h1{font-size:32px;line-height:1.05}.favorites-heading h1 sup{font-size:14px;margin-left:10px}.favorites-heading__text{font-size:16px;line-height:1.4}.favorites-toolbar .catalog-mode-switch{width:100%;justify-content:space-between;gap:8px}.favorites-toolbar .catalog-mode-switch__button{font-size:16px}.favorites-toolbar .catalog-mode-switch__button span{margin-left:3px;font-size:12px}.favorites-grid{grid-template-columns:minmax(0,1fr);gap:26px}.favorites-summary{min-height:65px;font-size:13px}.favorites-clear{font-size:13px}.favorites-empty{padding:45px 18px}.favorites-empty h2{font-size:22px;line-height:1.2}.favorites-empty p{font-size:16px}.favorites-empty p br{display:none}.favorites-bottom{margin-top:24px;padding-top:24px}.favorites-dialog{padding:40px 24px}.favorites-dialog h2{font-size:26px}.favorites-dialog__phone{font-size:24px}}
+@media(max-width:540px){.favorites-main{padding-top:22px;padding-bottom:40px;min-height:540px}.favorites-breadcrumbs{font-size:12px}.favorites-heading{padding-block:32px}.favorites-eyebrow{font-size:12px;line-height:1.2;margin-bottom:12px}.favorites-heading h1{font-size:32px;line-height:1.05}.favorites-heading h1 sup{font-size:14px;margin-left:10px}.favorites-heading__text{font-size:16px;line-height:1.4}.favorites-toolbar .catalog-mode-switch{width:max-content;justify-content:flex-start;gap:24px}.favorites-toolbar .catalog-mode-switch__button{font-size:16px}.favorites-toolbar .catalog-mode-switch__button span{margin-left:3px;font-size:12px}.favorites-grid{grid-template-columns:minmax(0,1fr);gap:26px}.favorites-summary{min-height:65px;font-size:13px}.favorites-clear{font-size:13px}.favorites-empty{padding:45px 18px}.favorites-empty h2{font-size:22px;line-height:1.2}.favorites-empty p{font-size:16px}.favorites-empty p br{display:none}.favorites-bottom{margin-top:24px;padding-top:24px}.favorites-dialog{padding:40px 24px}.favorites-dialog h2{font-size:26px}.favorites-dialog__phone{font-size:24px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
 
 
@@ -58,9 +58,9 @@ html body .site-menu :is(a,button):focus-visible{outline:2px solid #8b1d25;outli
 @media(prefers-reduced-motion:reduce){.site-menu,.site-menu *{transition:none!important;animation:none!important}}
 
 /* Keep sort text and chevron in the same line; no inherited 190px mobile cap. */
-html body .favorites-toolbar .favorites-sort{padding:0;min-height:44px;align-items:center}
-html body .favorites-toolbar .favorites-sort::after{content:none}
-html body .favorites-toolbar .favorites-sort .resort-sort-trigger{display:inline-flex;align-items:center;justify-content:flex-start;gap:16px;width:max-content;max-width:none;height:44px;min-height:44px;padding:8px 4px 8px 8px;line-height:22px;text-align:left;white-space:nowrap}
+html body .favorites-layout .favorites-toolbar .favorites-sort{padding:0;min-height:44px;align-items:center}
+html body .favorites-layout .favorites-toolbar .favorites-sort::after{content:none}
+html body .favorites-layout .favorites-toolbar .favorites-sort .resort-sort-trigger{display:inline-flex;align-items:center;justify-content:flex-start;gap:16px;width:max-content;max-width:none;height:44px;min-height:44px;padding:8px 4px 8px 8px;line-height:22px;text-align:left;white-space:nowrap}
 html body .favorites-toolbar .resort-sort-trigger::after{content:"";display:block;position:static;box-sizing:border-box;flex:0 0 10px;width:10px;height:10px;margin:0;border-right:1px solid currentColor;border-bottom:1px solid currentColor;transform:translateY(-3px) rotate(45deg);pointer-events:none}
 
 /* Shared live header, adapted to the existing white favorites page. */
@@ -75,3 +75,21 @@ html body.favorites-page .layout__header .site-header .site-header__nav-link:hov
 /* Typography roles from live gorodskaya-nedvizhimost; preserve the approved card layout. */
 html body .favorites-breadcrumbs{font-size:16px;line-height:1.4;font-weight:300}
 html body .favorites-sort .resort-sort-trigger{font-family:inherit}
+
+/* Tabs and sorting share one 44px control row and text baseline. */
+html body .favorites-toolbar .catalog-mode-switch{align-items:center;justify-content:flex-start;flex:0 0 auto;width:max-content;max-width:100%}
+html body .favorites-toolbar .catalog-mode-switch__button{display:inline-flex;align-items:center;justify-content:flex-start;flex:0 0 auto;height:44px;min-height:44px;padding:0;line-height:22px}
+html body .favorites-toolbar .catalog-mode-switch__button :is(.favorites-tab-long,.favorites-tab-short){font:inherit;margin:0}
+html body .favorites-toolbar .favorites-tab-short{display:none}
+html body .favorites-bottom .favorites-continue{justify-content:space-between;min-width:280px;max-width:100%;text-decoration:none}
+html body .favorites-continue svg{display:block;flex:0 0 24px}
+@media(max-width:700px){
+ html body .favorites-toolbar.catalog-mode-toolbar{display:grid;grid-template-columns:minmax(0,1fr);gap:8px;padding-bottom:0}
+ html body .favorites-layout .favorites-toolbar .favorites-sort{grid-row:1;grid-column:1;justify-self:end;margin:0}
+ html body .favorites-toolbar .catalog-mode-switch{grid-row:2;grid-column:1;justify-self:start;gap:24px}
+}
+@media(max-width:540px){
+ html body .favorites-toolbar .favorites-tab-long{display:none}
+ html body .favorites-toolbar .favorites-tab-short{display:inline}
+ html body .favorites-bottom .favorites-continue{min-width:0;width:100%}
+}

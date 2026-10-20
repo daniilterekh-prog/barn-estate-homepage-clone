@@ -172,5 +172,12 @@
         "sha256": "f716269e361f466570f37bc920988c619ddc8a7828c5949c1c56a731a320ab47"
       }
     }
+  },
+  "liveSortDropdown": {
+    "source": "https://barn-estate.ru/gorodskaya-nedvizhimost/",
+    "retrieved": "2026-10-20",
+    "css": "ui/favorites-sort.css",
+    "sha256": "765f5a7b14d1e3f0a7827c36a9439eb2633f9d835c3b591dce9712505a9f08a0",
+    "adaptation": "Original dropdown rules; selectors scoped to favorites, existing three sorting choices retained."
   }
 }
