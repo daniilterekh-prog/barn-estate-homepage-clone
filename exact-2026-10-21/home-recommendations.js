@@ -1,4 +1,4 @@
-/* FirstDegree ListingLot presentation; original Nuxt nodes remain mounted. */
+/* FirstDegree LaunchCard / start-sales presentation; original Nuxt nodes remain mounted. */
 (() => {
  if(window.__barnesRecommendations)return;
  const records={
@@ -286,7 +286,7 @@
    if(!view){view=document.createElement('div');view.className='home-rec-card';card.append(view)}
    view.dataset.sourceKey=key;view.dataset.href=href;view.dataset.name=name;
    const area=record.square===null||record.square===undefined?'—':`${record.square.toLocaleString('ru-RU')} м²`;
-   view.innerHTML=`<div class="home-rec-media"><a href="${esc(href)}" aria-label="${esc(name)}"><img src="${esc(image.src)}" alt="${esc(name)}" width="720" height="540" loading="lazy"></a><button type="button" class="home-rec-favorite" aria-pressed="false" aria-label="Добавить в избранное">${heart}</button></div><div class="home-rec-body"><p class="home-rec-address" title="${esc(address)}">${esc(address)}</p><a class="home-rec-name" href="${esc(href)}" title="${esc(name)}">${esc(name)}</a><dl class="home-rec-facts" aria-label="Основные характеристики">${fact('Комнаты',known(record.rooms))}${fact('Площадь',area)}${fact('Этаж',known(record.floor))}</dl><div class="home-rec-price-row"><p class="home-rec-price">${esc(price)}</p><p class="home-rec-id">${esc(id)}</p></div></div><div class="home-rec-actions"><button type="button" class="home-rec-call" aria-label="Заказать звонок по объекту «${esc(name)}»">Заказать звонок</button><a class="home-rec-detail" href="${esc(href)}">Подробнее ${arrow}</a></div>`;
+   view.innerHTML=`<a class="home-rec-link" href="${esc(href)}" aria-label="${esc(name)}"><div class="home-rec-media"><img class="home-rec-image" src="${esc(image.src)}" alt="${esc(name)}" width="514" height="424" loading="lazy"></div><div class="home-rec-body"><p class="home-rec-address" title="${esc(address)}"><svg class="home-rec-region-icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 14s4.5-4.35 4.5-8A4.5 4.5 0 0 0 3.5 6c0 3.65 4.5 8 4.5 8Z"/><circle cx="8" cy="6" r="1.65"/></svg><span>${esc(address)}</span></p><p class="home-rec-name">${esc(name)}</p><div class="home-rec-details"><div class="home-rec-price-row"><p class="home-rec-price">${esc(price)}</p></div></div></div></a><button type="button" class="home-rec-favorite" aria-pressed="false" aria-label="Добавить в избранное">${heart}</button>`;
   }
   syncFavorites();
  }
