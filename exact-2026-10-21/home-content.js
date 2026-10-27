@@ -28,6 +28,8 @@
       eyebrow.classList.add('home-section-eyebrow');
       if (eyebrow.textContent !== text) eyebrow.textContent = text;
     }
+    const copyright = document.querySelector('.site-footer__copyright');
+    if (copyright && copyright.textContent !== '© 2026 BARN ESTATE') copyright.textContent = '© 2026 BARN ESTATE';
     document.body.dataset.homeSpacingReady = 'true';
     observer?.observe(document.querySelector('#__nuxt'), {childList:true, subtree:true});
   }

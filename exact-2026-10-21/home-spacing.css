@@ -7,13 +7,12 @@ body.barnes-home-typography {
   --home-card-padding: 32px;
   --home-eyebrow-gap: 25px;
 }
-body.barnes-home-typography :is(.services-section,.barnes-choice,.departments-section,
- .project-hero,.reviews-section,.video-section,.team-section,.partners-section,
+body.barnes-home-typography :is(.services-section,.barnes-choice,.departments-section,.reviews-section,.video-section,.team-section,.partners-section,
  .office-contact,.news-section) {
   padding-block: var(--home-section-space) !important;
   margin-block: 0 !important;
 }
-body.barnes-home-typography :is(.base-container,.services-section__inner,
+body.barnes-home-typography :is(.base-container:not(.project-hero__content):not(.site-footer__inner),.services-section__inner,
  .reviews-section__inner,.office-contact__inner,.newsletter-cta__inner,.news-section__inner) {
   box-sizing: border-box;
   width: 100%;
@@ -74,12 +73,8 @@ body.barnes-home-typography :is(.office-contact__socials,.newsletter-form) {
 body.barnes-home-typography .office-contact__socials { gap: 12px !important; }
 body.barnes-home-typography .newsletter-form__note { margin-top: 16px !important; }
 body.barnes-home-typography .news-section__content { padding-top: 16px !important; gap: 12px !important; }
-body.barnes-home-typography .project-hero__content { padding-block: 64px !important; }
-body.barnes-home-typography .project-hero__meta { margin-bottom: var(--home-eyebrow-gap) !important; }
-body.barnes-home-typography .project-hero__cta-text { margin-block: var(--home-copy-gap) !important; }
 /* Main actions use the same inset/height as the owner ActionButton. */
-body.barnes-home-typography :is(.home-hero-filters__submit,.barnes-choice__action,
- .project-hero__cta,.newsletter-form__row > button,.feedback-modal .ui-button,.office-contact__social) {
+body.barnes-home-typography :is(.home-hero-filters__submit,.barnes-choice__action,.newsletter-form__row > button,.feedback-modal .ui-button,.office-contact__social) {
   min-height: 70px !important;
   height: auto;
   padding-inline: 36px !important;
@@ -88,8 +83,7 @@ body.barnes-home-typography :is(.home-hero-filters__submit,.barnes-choice__actio
 body.barnes-home-typography .office-contact__social { padding-inline: 8px !important; }
 body.barnes-home-typography .feedback-modal__input { padding-block: 16px !important; }
 @media(min-width:1441px) {
-  body.barnes-home-typography :is(.home-hero-filters__submit,.barnes-choice__action,
-   .project-hero__cta,.newsletter-form__row > button,.feedback-modal .ui-button) { padding-inline: 47px !important; }
+  body.barnes-home-typography :is(.home-hero-filters__submit,.barnes-choice__action,.newsletter-form__row > button,.feedback-modal .ui-button) { padding-inline: 47px !important; }
 }
 @media(max-width:1024px) {
   body.barnes-home-typography { --home-card-padding: 24px; --home-eyebrow-gap: 12px; }
@@ -109,9 +103,7 @@ body.barnes-home-typography .feedback-modal__input { padding-block: 16px !import
   body.barnes-home-typography .newsletter-cta { padding-top: 48px !important; padding-bottom: 40px !important; }
   body.barnes-home-typography .newsletter-cta__copy { padding-inline: 0 !important; }
   body.barnes-home-typography .office-contact__copy { padding-inline: 0 !important; margin-bottom: 28px; }
-  body.barnes-home-typography .project-hero__content { padding-block: 40px !important; }
-  body.barnes-home-typography :is(.home-hero-filters__submit,.barnes-choice__action,
-   .project-hero__cta,.newsletter-form__row > button,.feedback-modal .ui-button,.office-contact__social) {
+    body.barnes-home-typography :is(.home-hero-filters__submit,.barnes-choice__action,.newsletter-form__row > button,.feedback-modal .ui-button,.office-contact__social) {
     min-height: 58px !important;
     padding-inline: 24px !important;
   }
@@ -129,4 +121,15 @@ body.barnes-home-typography .office-contact { padding-inline: 0 !important; }
 }
 @media(max-width:1279px) {
   body.barnes-home-typography .office-contact__socials { grid-template-columns: 1fr !important; }
+}
+
+/* Match the owner footer's desktop breakpoint and visual order. */
+@media(min-width:1200px) {
+  body.barnes-home-typography .site-footer__nav { grid-template-columns: repeat(6,minmax(0,1fr)) !important; }
+  body.barnes-home-typography .site-footer__column:nth-child(6) { grid-column: 4 !important; grid-row: 1 !important; }
+  body.barnes-home-typography .site-footer__column:nth-child(4) { grid-column: 5 !important; grid-row: 1 !important; }
+  body.barnes-home-typography .site-footer__column:nth-child(5) { grid-column: 6 !important; grid-row: 1 !important; }
+  body.barnes-home-typography .site-footer__column:nth-child(7) { grid-column: 1 !important; grid-row: 2 !important; }
+  body.barnes-home-typography .site-footer__column:nth-child(8) { grid-column: 2 !important; grid-row: 2 !important; }
+  body.barnes-home-typography .site-footer__column:nth-child(9) { grid-column: 3 !important; grid-row: 2 !important; }
 }

@@ -21,8 +21,7 @@ body.barnes-home-typography {
 }
 /* H1 and H2 deliberately share the same visual scale. */
 body.barnes-home-typography :is(.services-section__title, .services-section__subtitle,
- .departments-section__title, .barnes-choice__title, .reviews-section__title,
- .project-hero__title, .team-section__title, .partners-section__title,
+ .departments-section__title, .barnes-choice__title, .reviews-section__title, .team-section__title, .partners-section__title,
  .office-contact__copy, .news-section__title, .newsletter-cta__copy) {
   font-size: var(--home-heading) !important;
   font-weight: 300 !important;
@@ -32,26 +31,23 @@ body.barnes-home-typography :is(.services-section__title, .services-section__sub
 }
 body.barnes-home-typography :is(.barnes-choice__title, .team-section__title,
  .partners-section__title, .news-section__title) { line-height: 1 !important; }
-body.barnes-home-typography .project-hero__title { color: #fff !important; }
 body.barnes-home-typography :is(.services-section__eyebrow, .reviews-section__eyebrow,
- .news-section__eyebrow, .project-hero__badge) {
+ .news-section__eyebrow) {
   font-size: var(--home-eyebrow) !important;
   font-weight: 400 !important;
   line-height: var(--home-eyebrow-line) !important;
   letter-spacing: .12em !important;
   color: var(--home-secondary) !important;
 }
-body.barnes-home-typography .project-hero__badge { color: #fff !important; }
 body.barnes-home-typography :is(.services-section__description, .partners-section__description,
  .team-section__description, .reviews-section__text, .office-contact__lead,
- .newsletter-cta__lead, .project-hero__cta-text) {
+ .newsletter-cta__lead) {
   font-size: var(--home-lead) !important;
   font-weight: 300 !important;
   line-height: var(--home-lead-line) !important;
   letter-spacing: normal !important;
   color: var(--home-secondary) !important;
 }
-body.barnes-home-typography .project-hero__cta-text { color: #fff !important; }
 body.barnes-home-typography :is(.services-section__card-title, .department-card__title) {
   font-size: var(--home-card) !important;
   font-weight: 400 !important;
@@ -65,31 +61,23 @@ body.barnes-home-typography .apartment-card__name {
   line-height: 1.12 !important;
   color: var(--home-primary) !important;
 }
-body.barnes-home-typography :is(.apartment-card__price, .project-hero__price-prefix,
- .project-hero__price-value) {
+body.barnes-home-typography :is(.apartment-card__price) {
   font-size: var(--home-price) !important;
   font-weight: 500 !important;
   line-height: 1.2 !important;
   color: var(--home-primary) !important;
 }
-body.barnes-home-typography :is(.project-hero__price-prefix, .project-hero__price-value) { color: #fff !important; }
 body.barnes-home-typography :is(.apartment-card__address, .apartment-card__lotid) {
   font-size: 13px !important;
   font-weight: 300 !important;
   line-height: 18px !important;
   color: var(--home-muted) !important;
 }
-body.barnes-home-typography :is(.apartment-card__spec-value, .project-hero__spec-value) {
+body.barnes-home-typography :is(.apartment-card__spec-value) {
   font-size: 16px !important;
   line-height: 20px !important;
   font-weight: 400 !important;
   color: var(--home-primary) !important;
-}
-body.barnes-home-typography .project-hero__location {
-  font-size: 22px !important;
-  line-height: 1.28 !important;
-  font-weight: 300 !important;
-  color: #fff !important;
 }
 body.barnes-home-typography .team-member-card__name {
   font-size: 20px !important;
@@ -115,7 +103,7 @@ body.barnes-home-typography .news-section__category {
   font-weight: 400 !important;
   color: var(--home-primary) !important;
 }
-body.barnes-home-typography :is(.ui-button, .project-hero__cta,
+body.barnes-home-typography :is(.ui-button,
  .newsletter-form__row > button, .office-contact__social, .site-footer__callback-btn) {
   font-size: var(--home-action) !important;
   line-height: 1.1 !important;
@@ -175,8 +163,7 @@ body.barnes-home-typography .floating-expert__title { color: var(--home-brand) !
 }
 @media (max-width: 1024px) {
   body.barnes-home-typography { --home-card: 20px; }
-  body.barnes-home-typography .project-hero__location { font-size: 16px !important; line-height: 1.4 !important; }
-  body.barnes-home-typography .site-header__request { font-size: 15px !important; }
+    body.barnes-home-typography .site-header__request { font-size: 15px !important; }
 }
 @media (max-width: 540px) {
   body.barnes-home-typography {
@@ -190,8 +177,7 @@ body.barnes-home-typography .floating-expert__title { color: var(--home-brand) !
     --home-listing: 20px;
     --home-price: 24px;
   }
-  body.barnes-home-typography :is(.apartment-card__spec-value, .project-hero__spec-value) { font-size: 13px !important; line-height: 16.25px !important; }
+  body.barnes-home-typography :is(.apartment-card__spec-value) { font-size: 13px !important; line-height: 16.25px !important; }
   body.barnes-home-typography .site-footer__column-title { font-size: 14px !important; line-height: 1.2 !important; font-weight: 400 !important; }
-  body.barnes-home-typography :is(.site-footer__link, .site-footer__address,
-   .site-footer__email, .site-footer__hours, .site-footer__privacy) { font-size: 13px !important; line-height: 1.4 !important; font-weight: 400 !important; }
+  body.barnes-home-typography .site-footer__link { font-size: 13px !important; line-height: 1.4 !important; font-weight: 400 !important; }
 }
