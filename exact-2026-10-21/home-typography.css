@@ -184,3 +184,31 @@ body.barnes-home-typography .floating-expert__title { color: var(--home-brand) !
 
 /* Match the light direction label in its mobile option list. */
 body.barnes-home-typography .barnes-choice__select-option { font-weight:300 !important; }
+
+/* Lighter mobile contact actions, scoped to the page's contact block. */
+@media(max-width:540px) {
+ body.barnes-home-typography .office-contact .office-contact__social {
+  font-weight:300 !important;
+  color:#4f4d49;
+  border-color:#8b8986;
+  display:grid;
+  grid-template-columns:20px minmax(0,1fr) 16px;
+  align-items:center;
+  gap:12px;
+  padding-inline:18px !important;
+  text-align:left;
+ }
+ body.barnes-home-typography .office-contact .office-contact__social > :is(.contact-button__icon,.office-contact__brand-icon,.office-contact__phone-icon) {
+  width:20px;height:20px;margin:0;justify-self:center;
+ }
+ body.barnes-home-typography .office-contact .office-contact__arrow {
+  width:16px;height:16px;color:#656462;margin:0;
+ }
+ body.barnes-home-typography .office-contact .office-contact__social:focus-visible {outline:2px solid #8b1d25;outline-offset:3px;}
+}
+@media(max-width:540px) {
+ body.barnes-home-typography .office-contact .office-contact__social {padding-block:6px;}
+ body.barnes-home-typography .office-contact .office-contact__social > span:not(.office-contact__arrow) {
+  min-width:0;white-space:normal;overflow:visible;text-overflow:clip;line-height:1.2;
+ }
+}
