@@ -36,7 +36,7 @@
   const payload=document.createElement('input');payload.type='hidden';payload.name='quizAnswers';form.append(payload);
   const submit=form.querySelector('[type=submit]');
   function partner(){return answers.task==='Стать партнёром'}
-  function focus(){if(step==='contact'&&!window.matchMedia('(max-width:580px)').matches)name.focus({preventScroll:true});else title.focus({preventScroll:true})}
+  function focus(){if(step==='contact'&&!window.matchMedia('(max-width:580px), (pointer:coarse)').matches)name.focus({preventScroll:true});else title.focus({preventScroll:true})}
   function move(next){step=next;render();content.scrollTop=0;body.scrollTop=0;focus()}
   function options(values,key){const group=document.createElement('div');group.className='home-quiz__options';group.setAttribute('role','group');group.setAttribute('aria-labelledby',title.id);for(const value of values){const button=document.createElement('button');button.type='button';button.className='home-quiz__option';button.textContent=value;button.setAttribute('aria-pressed',String(answers[key]===value));button.addEventListener('click',()=>{if(key==='task'&&answers.task!==value){answers.detail='';answers.direction=''}answers[key]=value;for(const b of group.children)b.setAttribute('aria-pressed',String(b===button));panel.querySelector('[data-quiz-next]').disabled=false});group.append(button)}panel.append(group)}
   function nextButton(callback,disabled=false){const next=document.createElement('button');next.type='button';next.className='home-quiz__next';next.dataset.quizNext='';next.textContent=step==='detail'?'К контактам →':'Далее →';next.disabled=disabled;next.addEventListener('click',callback);panel.append(next)}
