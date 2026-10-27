@@ -5,7 +5,7 @@
   if (window.__barnesHomeContent) return;
   window.__barnesHomeContent = {pending: true};
   const roles = [
-    ['.services-section__header', '.services-section__titles', 'BARNES MOSCOW', '.services-section__eyebrow'],
+    ['.services-section__header', '.services-section__titles', 'BARN ESTATE', '.services-section__eyebrow'],
     ['.barnes-choice__heading', '.barnes-choice__title', 'Недвижимость по направлениям'],
     ['.departments-section__heading', '.departments-section__title', 'Выбрать направление'],
     ['.reviews-section__intro', '.reviews-section__title', 'Репутация BARNES', '.reviews-section__eyebrow'],

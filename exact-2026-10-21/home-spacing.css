@@ -12,16 +12,26 @@ body.barnes-home-typography :is(.services-section,.barnes-choice,.departments-se
   padding-block: var(--home-section-space) !important;
   margin-block: 0 !important;
 }
-body.barnes-home-typography :is(.base-container:not(.project-hero__content):not(.site-footer__inner),.services-section__inner,
- .reviews-section__inner,.office-contact__inner,.newsletter-cta__inner,.news-section__inner) {
+body.barnes-home-typography .base-container:not(.project-hero__content):not(.site-footer__inner) {
   box-sizing: border-box;
   width: 100%;
   max-width: 1920px !important;
   margin-inline: auto !important;
   padding-inline: var(--home-gutter) !important;
 }
-/* Several section inners already sit inside a base-container. No double gutter. */
-body.barnes-home-typography .base-container :is(.services-section__inner,.reviews-section__inner,.news-section__inner) { padding-inline: 0 !important; }
+/* Section inners inherit the outer container's width without a second gutter.
+ * Match the original homepage: above 1920px the 1920px container has no inset. */
+@media(min-width:1921px) {
+  body.barnes-home-typography { --home-gutter: 0px; }
+}
+@media(min-width:1025px) {
+  body.barnes-home-typography :is(.office-contact__inner,.newsletter-cta__inner) {
+    width: calc(100% - 2 * clamp(20px, 5.2vw, 100px));
+    max-width: 1920px;
+    margin-inline: auto;
+    padding-inline: 0;
+  }
+}
 body.barnes-home-typography .newsletter-cta {
   padding: var(--home-section-space) 0 40px !important;
   margin: 0 !important;
@@ -138,3 +148,13 @@ body.barnes-home-typography .site-footer :is(.site-footer__link,
  .site-footer__privacy):is(:hover,:focus-visible,:active) { color: #8b1d25 !important; }
 /* Show the full Prus portrait, matching the owner FloatingExpert variant. */
 body.barnes-home-typography .floating-expert__avatar img { transform: none !important; }
+
+@media(max-width:1024px) {
+  body.barnes-home-typography :is(.office-contact__inner,.newsletter-cta__inner) {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1920px !important;
+    margin-inline: auto !important;
+    padding-inline: var(--home-gutter) !important;
+  }
+}
