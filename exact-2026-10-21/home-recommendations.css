@@ -320,3 +320,8 @@ body.barnes-home-typography .barnes-choice .home-rec-address {max-width:100%;}
 body.barnes-home-typography .barnes-choice .home-rec-price {overflow-wrap:anywhere;}
 body.barnes-home-typography .barnes-choice .home-rec-link {outline-offset:-5px;}
 body.barnes-home-typography .barnes-choice .home-rec-address span {min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+
+/* More compact recommendation cards on phones. */
+@media(max-width:540px) {
+ body.barnes-home-typography .barnes-choice {--start-sales-card-height:360px;}
+}
