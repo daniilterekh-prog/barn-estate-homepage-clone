@@ -133,3 +133,6 @@ body.barnes-home-typography .office-contact { padding-inline: 0 !important; }
   body.barnes-home-typography .site-footer__column:nth-child(8) { grid-column: 2 !important; grid-row: 2 !important; }
   body.barnes-home-typography .site-footer__column:nth-child(9) { grid-column: 3 !important; grid-row: 2 !important; }
 }
+body.barnes-home-typography .site-footer :is(.site-footer__link,
+ .site-footer__column-title--link,.site-footer__phone,.site-footer__email,
+ .site-footer__privacy):is(:hover,:focus-visible,:active) { color: #8b1d25 !important; }
