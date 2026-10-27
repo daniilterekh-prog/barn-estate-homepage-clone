@@ -274,7 +274,7 @@ body.barnes-home-typography[data-home-footer-action-visible=true] .floating-expe
 /* Keep one dialog frame through every quiz step; only the body scrolls. */
 .barnes-template.owner-sale-reference-ui.home-quiz-host .home-owner-form--owner-sale .modal__content {
  height:min(820px,calc(100dvh - 32px));
- overflow:hidden;
+ overflow:clip;
 }
 .barnes-template.owner-sale-reference-ui.home-quiz-host .home-owner-form--owner-sale .home-owner-form__layout {
  height:100%;min-height:0;
