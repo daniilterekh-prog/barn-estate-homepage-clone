@@ -286,3 +286,19 @@ body.barnes-home-typography[data-home-footer-action-visible=true] .floating-expe
  .barnes-template.owner-sale-reference-ui.home-quiz-host .home-owner-form--owner-sale .modal__content {height:calc(100dvh - 16px);}
  .barnes-template.owner-sale-reference-ui.home-quiz-host .home-owner-form--owner-sale .home-owner-form__body {flex:1;}
 }
+
+/* Mobile quiz: readable channel targets without a cramped four-column row. */
+@media(max-width:580px) {
+ .barnes-template.owner-sale-reference-ui.home-quiz-host .home-owner-form--owner-sale .home-owner-form__channels {
+  grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 12px;border-bottom:0;margin-bottom:4px;
+ }
+ .barnes-template.owner-sale-reference-ui.home-quiz-host .home-owner-form--owner-sale .home-owner-form__channels button {
+  min-height:46px;border:1px solid #8b8986;border-radius:3px;margin:0;padding:10px 8px;white-space:nowrap;
+ }
+ .barnes-template.owner-sale-reference-ui.home-quiz-host .home-owner-form--owner-sale .home-owner-form__channels button[aria-pressed=true] {
+  border-color:#8b1d25;background:#f9f3f3;
+ }
+}
+@media(max-width:580px) and (max-height:480px) {
+ .barnes-template.owner-sale-reference-ui.home-quiz-host .home-owner-form--owner-sale .home-owner-form__hero {display:none;}
+}
