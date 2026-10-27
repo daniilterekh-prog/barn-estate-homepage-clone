@@ -1,0 +1,129 @@
+/* Owner/ambassador spacing roles. See spacing-alignment/README.md. */
+body.barnes-home-typography {
+  --home-section-space: clamp(72px, 6vw, 100px);
+  --home-gutter: clamp(24px, calc(-26.66667px + 6.59722vw), 100px);
+  --home-heading-content: 40px;
+  --home-copy-gap: 24px;
+  --home-card-padding: 32px;
+  --home-eyebrow-gap: 25px;
+}
+body.barnes-home-typography :is(.services-section,.barnes-choice,.departments-section,
+ .project-hero,.reviews-section,.video-section,.team-section,.partners-section,
+ .office-contact,.news-section) {
+  padding-block: var(--home-section-space) !important;
+  margin-block: 0 !important;
+}
+body.barnes-home-typography :is(.base-container,.services-section__inner,
+ .reviews-section__inner,.office-contact__inner,.newsletter-cta__inner,.news-section__inner) {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1920px !important;
+  margin-inline: auto !important;
+  padding-inline: var(--home-gutter) !important;
+}
+/* Several section inners already sit inside a base-container. No double gutter. */
+body.barnes-home-typography .base-container :is(.services-section__inner,.reviews-section__inner,.news-section__inner) { padding-inline: 0 !important; }
+body.barnes-home-typography .newsletter-cta {
+  padding: var(--home-section-space) 0 40px !important;
+  margin: 0 !important;
+}
+body.barnes-home-typography .home-section-eyebrow {
+  display: block;
+  flex: 0 0 auto;
+  margin: 0 0 var(--home-eyebrow-gap) !important;
+  padding: 0 !important;
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  line-height: 16.1px !important;
+  letter-spacing: .12em !important;
+  text-transform: uppercase !important;
+  color: #4f4d49 !important;
+}
+body.barnes-home-typography :is(.services-section__header,.departments-section__heading,
+ .reviews-section__intro,.team-section__intro,.partners-section__intro,.news-section__header) {
+  row-gap: 0 !important;
+  padding-block: 0 !important;
+}
+body.barnes-home-typography :is(.services-section__description,.team-section__description,
+ .partners-section__description,.office-contact__lead,.newsletter-cta__lead) {
+  margin: var(--home-copy-gap) 0 0 !important;
+}
+body.barnes-home-typography :is(.services-section__inner,.departments-section__inner,
+ .news-section__inner) { row-gap: var(--home-heading-content) !important; }
+body.barnes-home-typography .barnes-choice__header {
+  row-gap: 24px !important;
+  margin-bottom: var(--home-heading-content) !important;
+}
+body.barnes-home-typography .barnes-choice__heading .home-section-eyebrow { text-align: center; }
+body.barnes-home-typography :is(.team-section__inner,.reviews-section__inner,.partners-section__header) {
+  gap: var(--home-heading-content) !important;
+}
+body.barnes-home-typography .team-section__nav { margin-top: var(--home-copy-gap) !important; }
+body.barnes-home-typography :is(.services-section__content,.department-card__content) {
+  padding: var(--home-card-padding) !important;
+  gap: 16px !important;
+}
+body.barnes-home-typography .services-section__grid { gap: 2px !important; }
+body.barnes-home-typography .department-card__title { margin: 0 !important; }
+body.barnes-home-typography :is(.office-contact__copy,.newsletter-cta__copy) {
+  padding-block: 0 !important;
+}
+body.barnes-home-typography :is(.office-contact__socials,.newsletter-form) {
+  margin-top: var(--home-copy-gap) !important;
+}
+body.barnes-home-typography .office-contact__socials { gap: 12px !important; }
+body.barnes-home-typography .newsletter-form__note { margin-top: 16px !important; }
+body.barnes-home-typography .news-section__content { padding-top: 16px !important; gap: 12px !important; }
+body.barnes-home-typography .project-hero__content { padding-block: 64px !important; }
+body.barnes-home-typography .project-hero__meta { margin-bottom: var(--home-eyebrow-gap) !important; }
+body.barnes-home-typography .project-hero__cta-text { margin-block: var(--home-copy-gap) !important; }
+/* Main actions use the same inset/height as the owner ActionButton. */
+body.barnes-home-typography :is(.home-hero-filters__submit,.barnes-choice__action,
+ .project-hero__cta,.newsletter-form__row > button,.feedback-modal .ui-button,.office-contact__social) {
+  min-height: 70px !important;
+  height: auto;
+  padding-inline: 36px !important;
+  box-sizing: border-box;
+}
+body.barnes-home-typography .office-contact__social { padding-inline: 8px !important; }
+body.barnes-home-typography .feedback-modal__input { padding-block: 16px !important; }
+@media(min-width:1441px) {
+  body.barnes-home-typography :is(.home-hero-filters__submit,.barnes-choice__action,
+   .project-hero__cta,.newsletter-form__row > button,.feedback-modal .ui-button) { padding-inline: 47px !important; }
+}
+@media(max-width:1024px) {
+  body.barnes-home-typography { --home-card-padding: 24px; --home-eyebrow-gap: 12px; }
+  body.barnes-home-typography .home-section-eyebrow { font-size: 12px !important; line-height: 14.4px !important; }
+}
+@media(max-width:540px) {
+  body.barnes-home-typography {
+    --home-section-space: 48px;
+    --home-gutter: 22px;
+    --home-heading-content: 28px;
+    --home-copy-gap: 16px;
+    --home-card-padding: 20px;
+  }
+  body.barnes-home-typography .services-section__grid { gap: 12px !important; }
+  body.barnes-home-typography :is(.services-section__content,.department-card__content) { gap: 12px !important; }
+  body.barnes-home-typography .barnes-choice__header { row-gap: 16px !important; }
+  body.barnes-home-typography .newsletter-cta { padding-top: 48px !important; padding-bottom: 40px !important; }
+  body.barnes-home-typography .newsletter-cta__copy { padding-inline: 0 !important; }
+  body.barnes-home-typography .office-contact__copy { padding-inline: 0 !important; margin-bottom: 28px; }
+  body.barnes-home-typography .project-hero__content { padding-block: 40px !important; }
+  body.barnes-home-typography :is(.home-hero-filters__submit,.barnes-choice__action,
+   .project-hero__cta,.newsletter-form__row > button,.feedback-modal .ui-button,.office-contact__social) {
+    min-height: 58px !important;
+    padding-inline: 24px !important;
+  }
+}
+body.barnes-home-typography .barnes-choice__heading {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  gap: 0 !important;
+  min-width: 0;
+}
+body.barnes-home-typography .office-contact { padding-inline: 0 !important; }
+@media(max-width:540px) {
+  body.barnes-home-typography .barnes-choice__slider-wrap { padding-inline: var(--home-gutter) !important; }
+}

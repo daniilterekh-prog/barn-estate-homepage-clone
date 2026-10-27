@@ -13,3 +13,7 @@
 ## Источники типографики
 
 [Собственники](https://github.com/daniilterekh-prog/barnes-assets/blob/3065475f28b301cbe99c1255ddaaeb11d82a647c/ui-kit/owners.md) · [Амбассадоры](https://github.com/daniilterekh-prog/barnes-assets/blob/3065475f28b301cbe99c1255ddaaeb11d82a647c/ui-kit/partners.md) · [Базовые роли](https://github.com/daniilterekh-prog/barnes-assets/blob/3065475f28b301cbe99c1255ddaaeb11d82a647c/ui-kit/reference-ui.md). Шрифты оригинальные Tilda Sans 300/400/500; пакеты и компоненты не добавлялись. Равный размер главного заголовка и H2 сохранён намеренно. Проверены 10 ширин 390–2560 px, роли текста, переносы, меню, фильтры и окна; отправка форм остаётся отключена.
+
+## Отступы и брови — 27.10.2026
+
+`home-spacing.css` задаёт ритм секций и внутренние отступы по системе собственников/амбассадоров. `home-content.js` добавляет6 недостающих бровей и обновляет3 существующие по утверждённому ТЗ после Nuxt hydration. Бровь→заголовок25px desktop/12px до1024; max-width1920 и общие направляющие; mobile gutter22px. Проверены11 ширин390–2560px, меню, фильтры и окна; snapshot и исходные Nuxt-ассеты сохранены.
