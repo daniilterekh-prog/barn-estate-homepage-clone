@@ -30,6 +30,8 @@
     }
     const copyright = document.querySelector('.site-footer__copyright');
     if (copyright && copyright.textContent !== '© 2026 BARN ESTATE') copyright.textContent = '© 2026 BARN ESTATE';
+    const hours = document.querySelector('.site-footer__hours');
+    if (hours && hours.textContent !== 'Ежедневно с 09:00 до 21:00') hours.textContent = 'Ежедневно с 09:00 до 21:00';
     window.__barnesRecommendations?.refresh();
     window.__barnesOwnerForm?.refresh();
     document.body.dataset.homeSpacingReady = 'true';
