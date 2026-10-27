@@ -41,3 +41,5 @@
 ## Schema.org — 27.10.2026
 
 Старый граф заменён единственным JSON-LD: RealEstateAgent BARN Estate, WebSite, WebPage, логотип. Контакты соответствуют главной; ежедневный график09:00–21:00 подтверждён владельцем и уточнён в футере. Schema.org Validator:0ошибок/0предупреждений для экспортированного HTML. Превью сохраняет noindex,nofollow; боевой домен этим экспортом не обновляется.
+
+Контакты хедера приведены к [OwnerHeader страницы продажи собственникам](https://github.com/daniilterekh-prog/barnes-assets/blob/main/ui-kit/components/owner-header.md): SVG20px, компактный порядок каналов, мобильная панель контактов после прокрутки. home-header-contacts.css/js используют существующие локальные SVG и не требуют новых зависимостей.

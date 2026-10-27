@@ -1,0 +1,31 @@
+/* Contact controls from the owner-sale hero and sticky header. */
+body.barnes-home-typography .site-header .site-header__messengers {gap:14px;align-items:center;}
+body.barnes-home-typography .site-header :is(.site-header__messenger,.site-header__phone--icon) {width:24px;height:24px;min-width:24px;display:inline-flex;align-items:center;justify-content:center;}
+body.barnes-home-typography .site-header .site-header__messenger img {width:20px;height:20px;display:block;object-fit:contain;}
+body.barnes-home-typography .site-header .site-header__phone--icon :is(svg,.site-header__icon) {width:19px;height:19px;}
+.home-header-contacts-toggle,.home-header-contacts-panel {display:none;}
+.home-header-contacts-panel[hidden] {display:none!important;}
+@media(max-width:1024px) {
+ body.barnes-home-typography .site-header__top {position:relative;overflow:visible;}
+ body.barnes-home-typography .layout__header,body.barnes-home-typography .site-header--scrolled {overflow:visible;}
+ body.barnes-home-typography .site-header--scrolled .site-header__mobile-phone {display:none!important;}
+ body.barnes-home-typography .site-header--scrolled .home-header-contacts-toggle {
+  position:absolute;right:0;top:50%;transform:translateY(-50%);display:grid;place-items:center;
+  width:44px;height:44px;padding:0;border:1px solid #8b1d25;background:#fff;color:#8b1d25;cursor:pointer;border-radius:0;
+ }
+ .home-header-contacts-toggle svg {width:20px;height:20px;}
+ body.barnes-home-typography .site-header--scrolled .home-header-contacts-panel:not([hidden]) {
+  display:flex;align-items:center;gap:14px;padding:12px 14px;position:absolute;right:0;top:calc(100% + 8px);
+  background:#fff;border:1px solid #e4e4e4;box-shadow:0 10px 30px rgba(30,30,30,.12);z-index:10;box-sizing:border-box;
+ }
+ .home-header-contacts-panel a {display:inline-flex;align-items:center;justify-content:center;width:24px;height:24px;color:#1e1e1e;text-decoration:none;flex:none;}
+ .home-header-contacts-panel img {display:block;width:20px;height:20px;object-fit:contain;}
+ .home-header-contacts-panel svg {width:19px;height:19px;}
+ .home-header-contacts-panel :is(.site-header__icon,.site-header__icon--phone) {width:19px;height:19px;}
+ .home-header-contacts-panel :is(a,button):focus-visible,.home-header-contacts-toggle:focus-visible {outline:2px solid #8b1d25;outline-offset:3px;}
+}
+/* Match the reference's contact order in the compact desktop header. */
+body.barnes-home-typography .site-header--scrolled .site-header__messenger[aria-label="WhatsApp"] {order:1;}
+body.barnes-home-typography .site-header--scrolled .site-header__messenger[aria-label="MAX"] {order:2;}
+body.barnes-home-typography .site-header--scrolled .site-header__messenger[aria-label="Telegram"] {order:3;}
+body.barnes-home-typography .site-header--scrolled .site-header__phone--icon {order:4;}
