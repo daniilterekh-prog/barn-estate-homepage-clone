@@ -48,7 +48,8 @@ body.barnes-home-typography :is(.services-section__description, .partners-sectio
   letter-spacing: normal !important;
   color: var(--home-secondary) !important;
 }
-body.barnes-home-typography :is(.services-section__card-title, .department-card__title) {
+/* Service-card titles keep the original responsive scale: 42 / 35 / 26px. */
+body.barnes-home-typography .department-card__title {
   font-size: var(--home-card) !important;
   font-weight: 400 !important;
   line-height: 1.2 !important;
