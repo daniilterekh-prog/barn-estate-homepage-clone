@@ -127,3 +127,6 @@ body.barnes-home-typography .office-contact { padding-inline: 0 !important; }
 @media(max-width:540px) {
   body.barnes-home-typography .barnes-choice__slider-wrap { padding-inline: var(--home-gutter) !important; }
 }
+@media(max-width:1279px) {
+  body.barnes-home-typography .office-contact__socials { grid-template-columns: 1fr !important; }
+}
