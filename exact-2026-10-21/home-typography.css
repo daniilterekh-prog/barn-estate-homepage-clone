@@ -123,12 +123,12 @@ body.barnes-home-typography .site-header__nav-link { font-weight: 400 !important
 body.barnes-home-typography .barnes-choice__tab {
   font-size: 22px !important;
   line-height: 1.2 !important;
-  font-weight: 400 !important;
+  font-weight: 300 !important;
 }
 body.barnes-home-typography .barnes-choice__select-value {
   font-size: 18px !important;
   line-height: 1.2 !important;
-  font-weight: 400 !important;
+  font-weight: 300 !important;
 }
 body.barnes-home-typography :is(.feedback-modal__input, .newsletter-form__row > input) {
   font-size: var(--home-field) !important;
@@ -181,3 +181,6 @@ body.barnes-home-typography .floating-expert__title { color: var(--home-brand) !
   body.barnes-home-typography .site-footer__column-title { font-size: 14px !important; line-height: 1.2 !important; font-weight: 400 !important; }
   body.barnes-home-typography .site-footer__link { font-size: 13px !important; line-height: 1.4 !important; font-weight: 400 !important; }
 }
+
+/* Match the light direction label in its mobile option list. */
+body.barnes-home-typography .barnes-choice__select-option { font-weight:300 !important; }
