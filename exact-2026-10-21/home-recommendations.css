@@ -1,0 +1,60 @@
+/* ListingLot contract from the first-degree/Курортная node; scoped to recommendations. */
+body.barnes-home-typography .barnes-choice .apartment-card > .apartment-card__link { display:none !important; }
+body.barnes-home-typography .home-rec-card { color:#1e1e1e; min-width:0; display:flex; flex-direction:column; background:#fff; }
+.home-rec-media { position:relative; aspect-ratio:4/3; overflow:hidden; }
+.home-rec-media > a { display:block; width:100%; height:100%; }
+.home-rec-media img { display:block; width:100%; height:100%; object-fit:cover; }
+.home-rec-favorite { position:absolute; top:14px; right:14px; width:40px; height:40px; padding:0; border:1px solid #e4e4e4; border-radius:50%; background:#fff; color:#1e1e1e; display:grid; place-items:center; cursor:pointer; }
+.home-rec-favorite::before { content:''; position:absolute; inset:-2px; }
+.home-rec-favorite svg { width:18px; height:18px; }
+.home-rec-favorite[aria-pressed=true] { color:#8b1d25; }
+.home-rec-favorite[aria-pressed=true] svg { fill:currentColor; }
+.home-rec-body { position:relative; z-index:1; background:#fff; margin:-35px 12px 0; padding:20px 18px 0; min-width:0; }
+.home-rec-address { color:#656462; font-size:15px; font-weight:400; line-height:20.25px; height:20.25px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; margin:0; }
+.home-rec-name { display:block; color:#1e1e1e; font-size:22px; font-weight:400; line-height:1.12; letter-spacing:-.02em; text-transform:uppercase; height:24.64px; margin:10px 0 15px; text-decoration:none; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.home-rec-facts { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); align-items:end; gap:10px; margin:0; padding:0; }
+.home-rec-fact { text-align:center; min-width:0; }
+.home-rec-fact dt { color:#656462; font-size:12px; font-weight:400; line-height:14.4px; letter-spacing:.08em; text-transform:uppercase; margin:0 0 5px; }
+.home-rec-fact dd { color:#1e1e1e; font-size:16px; font-weight:400; line-height:20px; margin:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.home-rec-price-row { border-top:1px solid rgba(30,30,30,.18); padding-top:14px; margin-top:18px; display:flex; align-items:center; justify-content:space-between; gap:16px; min-width:0; }
+.home-rec-price { color:#1e1e1e; font-size:26px; font-weight:500; line-height:31.2px; letter-spacing:-.02em; margin:0; white-space:nowrap; }
+.home-rec-id { color:#656462; font-size:14px; font-weight:400; line-height:16.8px; margin:0; white-space:nowrap; }
+.home-rec-actions { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:8px; margin:0 12px; padding:20px 18px 0; }
+.home-rec-actions :is(a,button) { font-family:inherit; font-size:15px; font-weight:400; line-height:1.1; height:54px; min-width:0; padding:0 10px; border-radius:1px; display:flex; align-items:center; justify-content:center; gap:12px; text-decoration:none; cursor:pointer; box-sizing:border-box; white-space:nowrap; }
+.home-rec-call { border:1px solid #cfcfcf; color:#1e1e1e; background:#fff; }
+.home-rec-detail { border:1px solid #8b1d25; color:#fff; background:#8b1d25; }
+.home-rec-detail svg { width:16px; height:16px; flex:none; }
+.home-rec-call:hover { border-color:#8b1d25; color:#8b1d25; }
+.home-rec-detail:hover { opacity:.9; }
+.home-rec-name:hover { color:#8b1d25; }
+.home-rec-card :is(a,button):focus-visible { outline:2px solid #8b1d25; outline-offset:3px; }
+@media(max-width:1024px) {
+ .home-rec-fact dt { font-size:10px; line-height:12px; }
+ .home-rec-fact dd { font-size:13px; line-height:16.25px; }
+}
+@media(max-width:540px) {
+ .home-rec-name { font-size:20px; height:22.4px; }
+ .home-rec-price { font-size:24px; line-height:28.8px; }
+ .home-rec-actions :is(a,button) { height:50px; }
+}
+/* The label grew to18px; a fixed120px control no longer fits the long categories. */
+body.barnes-home-typography .barnes-choice__select { width:max-content !important; max-width:100%; }
+body.barnes-home-typography .barnes-choice__select-control { display:grid !important; grid-template-columns:minmax(0,1fr) 12px; align-items:center; gap:12px !important; width:100%; padding:10px 14px !important; }
+body.barnes-home-typography .barnes-choice__select-value { min-width:0; white-space:nowrap; }
+body.barnes-home-typography .barnes-choice__select-icon { position:static !important; width:12px; height:12px; transform:none !important; flex:none; }
+body.barnes-home-typography .barnes-choice__select-icon--open { transform:rotate(180deg) !important; }
+body.barnes-home-typography .barnes-choice__select-list { min-width:100%; width:max-content; max-width:calc(100vw - 44px); box-sizing:border-box; z-index:30; }
+/* Narrow-phone fallback: keep the full price/ID and readable actions. */
+@media(max-width:380px) {
+ .home-rec-price-row { display:grid; grid-template-columns:minmax(0,1fr); gap:6px; }
+ .home-rec-id { text-align:right; min-height:18px; }
+ .home-rec-actions { grid-template-columns:1fr; }
+}
+@media(min-width:541px) and (max-width:767px) {
+ body.barnes-home-typography .barnes-choice__slider .splide__slide { width:min(450px,calc(100% - 44px)) !important; max-width:none !important; }
+}
+@media(min-width:768px) and (max-width:1024px) {
+ body.barnes-home-typography .barnes-choice__slider .splide__slide { width:calc((100% - 24px)/2) !important; max-width:none !important; }
+}
+/* Adjacent carousel items may scale visually, but must not squeeze the card's text grid. */
+body.barnes-home-typography .barnes-choice .splide__slide .apartment-card { width:100% !important; max-width:none !important; }

@@ -30,6 +30,8 @@
     }
     const copyright = document.querySelector('.site-footer__copyright');
     if (copyright && copyright.textContent !== '© 2026 BARN ESTATE') copyright.textContent = '© 2026 BARN ESTATE';
+    window.__barnesRecommendations?.refresh();
+    window.__barnesOwnerForm?.refresh();
     document.body.dataset.homeSpacingReady = 'true';
     observer?.observe(document.querySelector('#__nuxt'), {childList:true, subtree:true});
   }
