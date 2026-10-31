@@ -266,28 +266,13 @@
  const favorites=new Set();
  const cityProjects=[
   {
-    "name": "OPUS",
-    "url": "https://barn-estate.ru/zhilye-kompleksy/zhk-opus/",
-    "address": "Москва",
-    "price": "от 62 000 000 ₽",
-    "sourceImage": "https://c15d3839-d361-4fb8-9615-0c7a980d0169.selstorage.ru/resize_cache/11011565/d459475776d7dcb85e27b36a9f4b2a81/iblock/748/7483c7ad6f2dd2b37c7d32050743ea0a/d89d264022a633f6e27eb698f016dc27.jpg",
-    "image": "home-city-zhk-opus.webp"
-  },
-  {
     "name": "Клубный дом DUO",
     "url": "https://barn-estate.ru/zhilye-kompleksy/klubnyy-dom-duo-duo/",
     "address": "Москва, Софийская наб, 34стр3",
     "price": "от 113 000 000 ₽",
     "sourceImage": "https://c15d3839-d361-4fb8-9615-0c7a980d0169.selstorage.ru/resize_cache/10984102/d459475776d7dcb85e27b36a9f4b2a81/iblock/9c9/9c9ec62df8a1eaeee42da723bb78b666/9b5402cab1ec89581ae298a277bcf736.jpg",
-    "image": "home-city-klubnyy-dom-duo-duo.webp"
-  },
-  {
-    "name": "Клубный квартал «Фрунзенский»",
-    "url": "https://barn-estate.ru/zhilye-kompleksy/zhk-frunzenskaya-naberezhnaya/",
-    "address": "Москва, Фрунзенская наб, 30",
-    "price": "от 139 590 000 ₽",
-    "sourceImage": "https://c15d3839-d361-4fb8-9615-0c7a980d0169.selstorage.ru/resize_cache/11011517/d459475776d7dcb85e27b36a9f4b2a81/iblock/937/93770b9d601616c32f05626567f69844/ce4250c7182f8da1b67f83a2bbdc7c42.jpg",
-    "image": "home-city-zhk-frunzenskaya-naberezhnaya.webp"
+    "image": "home-city-klubnyy-dom-duo-duo.webp",
+    "sourceSlot": "/vtorichnaya-nedvizhimost/585570/"
   },
   {
     "name": "Палашевский, 11",
@@ -295,7 +280,8 @@
     "address": "Москва, Большой Палашёвский пер, 11",
     "price": "Цена по запросу",
     "sourceImage": "https://c15d3839-d361-4fb8-9615-0c7a980d0169.selstorage.ru/resize_cache/11098495/b39711304c20a894a46b32e4842c20c7/iblock/a66/a66dc2782cd3baf887b27c3a5eb697b5/7e61da0b466c54e69065ec03ac1fa43d.jpg",
-    "image": "home-city-start-prodazh-palashevskiy-11.webp"
+    "image": "home-city-start-prodazh-palashevskiy-11.webp",
+    "sourceSlot": "/vtorichnaya-nedvizhimost/558610/"
   },
   {
     "name": "Вавилова, 64",
@@ -303,11 +289,11 @@
     "address": "Москва, Вавилова ул, 64",
     "price": "Цена по запросу",
     "sourceImage": "https://c15d3839-d361-4fb8-9615-0c7a980d0169.selstorage.ru/resize_cache/11088774/d459475776d7dcb85e27b36a9f4b2a81/iblock/335/335485a4b9acb18f60b1e1bd55ebfc72/37537bbcc39d4cd6cbbfa8bee57ccfe0.jpg",
-    "image": "home-city-vavilova-64.webp"
+    "image": "home-city-vavilova-64.webp",
+    "sourceSlot": "/vtorichnaya-nedvizhimost/558443/"
   }
 ];
  // Stable source slots also identify Splide loop clones. Other categories keep their captured listings.
- const citySlots=['/vtorichnaya-nedvizhimost/537017/','/vtorichnaya-nedvizhimost/585570/','/vtorichnaya-nedvizhimost/585978/','/vtorichnaya-nedvizhimost/558610/','/vtorichnaya-nedvizhimost/558443/'];
  const imageBase=new URL('assets/',document.currentScript.src);
  try{for(const value of JSON.parse(localStorage.getItem('barnes-preview-recommendation-favorites')||'[]'))favorites.add(value)}catch{}
  const esc=value=>String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -321,7 +307,7 @@
    const source=card.querySelector(':scope > .apartment-card__link');if(!source)continue;
    const image=source.querySelector('img');if(!image||!source.href)continue;
    const isCity=document.querySelector('.barnes-choice__tab[aria-selected="true"]')?.textContent.trim()==='Городская';
-   const project=isCity?cityProjects[citySlots.indexOf(new URL(source.href).pathname)]:null;
+   const project=isCity?cityProjects.find(project=>project.sourceSlot===new URL(source.href).pathname):null;
    const href=project?.url||source.href,imageSrc=project?new URL(project.image,imageBase).href:image.src;
    const name=project?.name||source.querySelector('.apartment-card__name')?.textContent.trim()||image.alt;
    const address=project?.address||source.querySelector('.apartment-card__address')?.textContent.trim()||'—';
