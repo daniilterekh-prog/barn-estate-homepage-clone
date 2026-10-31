@@ -206,3 +206,11 @@ body.barnes-home-typography .home-hero__overlay { background: rgba(0,0,0,.4) !im
 @media(min-width:1921px) {
   body.barnes-home-typography .home-hero__media { background-image: url("assets/home-hero-ultrawide.png"); }
 }
+
+/* Independently generated portrait composition for phones. */
+@media(max-width:767px) {
+  body.barnes-home-typography .home-hero__media {
+    background-image: url("assets/home-hero-mobile.webp");
+    background-position: center;
+  }
+}
