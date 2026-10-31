@@ -52,7 +52,7 @@
     }
     const saleImage = document.querySelector('.services-section__item--wide .services-section__image');
     const saleVariant = innerWidth > 1920 ? ['wide',2040,374] : innerWidth > 540 ? ['desktop',2040,488] : ['mobile',1220,729];
-    const saleServiceImage = saleImageBase + 'home-service-sale-evening-' + saleVariant[0] + '.webp?v=no-bouquet-20261031';
+    const saleServiceImage = saleImageBase + 'home-service-sale-evening-' + saleVariant[0] + '.webp?v=wall-20261031';
     if (saleImage && saleImage.src !== saleServiceImage) {
       saleImage.removeAttribute('srcset');
       saleImage.src = saleServiceImage;
