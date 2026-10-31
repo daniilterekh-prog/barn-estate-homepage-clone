@@ -194,7 +194,7 @@ body.barnes-home-typography .services-section__link {
 
 /* User-selected hero image; uniform 40% black overlay. */
 body.barnes-home-typography .home-hero__media {
-  background-image: url("assets/home-hero-selected.png");
+  background-image: url("assets/home-hero-cleaned.png");
   background-size: cover;
   background-position: center 25%;
   background-repeat: no-repeat;
