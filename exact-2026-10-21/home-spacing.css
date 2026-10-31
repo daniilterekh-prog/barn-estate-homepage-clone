@@ -171,3 +171,16 @@ body.barnes-home-typography .floating-expert__avatar img {
     padding-inline: var(--home-gutter) !important;
   }
 }
+
+/* Keep service-card titles slightly below centre with the CTA close beneath. */
+body.barnes-home-typography .services-section__content { gap: 20px !important; }
+body.barnes-home-typography .services-section__card-title,
+body.barnes-home-typography .services-section__link { transform: translateY(32px); }
+body.barnes-home-typography .services-section__link {
+  position: static;
+  inset: auto;
+  flex: 0 0 auto;
+}
+@media(max-width:540px) {
+  body.barnes-home-typography .services-section__content { gap: 16px !important; }
+}
