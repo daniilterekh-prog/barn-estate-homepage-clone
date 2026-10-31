@@ -375,3 +375,12 @@ body.barnes-home-typography .barnes-choice .home-rec-address span {min-width:0;o
     display: none;
   }
 }
+
+/* Let desktop recommendations follow the same outer grid as the other sections. */
+@media (min-width: 1025px) {
+  body.barnes-home-typography .barnes-choice__slider-wrap {
+    width: calc(100% - var(--home-gutter) * 2);
+    max-width: none;
+    --barnes-choice-slide-width: calc((100% - var(--barnes-choice-gap) * 2) / 3);
+  }
+}
