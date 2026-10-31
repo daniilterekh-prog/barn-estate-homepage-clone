@@ -303,6 +303,12 @@
  const known=value=>value===null||value===undefined||value===''?'—':value;
  function syncFavorites(){for(const view of document.querySelectorAll('.home-rec-card')){const button=view.querySelector('.home-rec-favorite'),selected=favorites.has(view.dataset.href);button.setAttribute('aria-pressed',String(selected));button.setAttribute('aria-label',selected?'Удалить из избранного':'Добавить в избранное')}}
  function refresh(){
+  const sliderRow=document.querySelector('.barnes-choice__slider-row');
+  const sliderWrap=sliderRow?.querySelector('.barnes-choice__slider-wrap');
+  if(sliderWrap){
+   const inset=Math.max(0,sliderWrap.getBoundingClientRect().left-sliderRow.getBoundingClientRect().left);
+   sliderRow.style.setProperty('--home-rec-nav-inset',`${inset}px`);
+  }
   for(const card of document.querySelectorAll('.barnes-choice .apartment-card')){
    const source=card.querySelector(':scope > .apartment-card__link');if(!source)continue;
    const image=source.querySelector('img');if(!image||!source.href)continue;
