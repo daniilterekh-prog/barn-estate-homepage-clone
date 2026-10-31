@@ -201,3 +201,8 @@ body.barnes-home-typography .home-hero__media {
 }
 body.barnes-home-typography .home-hero__video { display: none !important; }
 body.barnes-home-typography .home-hero__overlay { background: rgba(0,0,0,.4) !important; }
+
+/* Dedicated panoramic composition for viewports strictly wider than 1920px. */
+@media(min-width:1921px) {
+  body.barnes-home-typography .home-hero__media { background-image: url("assets/home-hero-ultrawide.png"); }
+}
