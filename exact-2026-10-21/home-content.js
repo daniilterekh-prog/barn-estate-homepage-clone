@@ -58,8 +58,8 @@
       heroVideo.load();
     }
     const saleImage = document.querySelector('.services-section__item--wide .services-section__image');
-    const saleVariant = innerWidth > 1920 ? ['wide',2040,374] : innerWidth > 540 ? ['desktop',2040,488] : ['mobile',1220,729];
-    const saleServiceImage = saleImageBase + 'home-service-sale-evening-' + saleVariant[0] + '.webp?v=wall-20261031';
+    const saleVariant = innerWidth > 1920 ? ['wide',2160,396] : innerWidth > 540 ? ['desktop',2160,517] : ['mobile',1212,724];
+    const saleServiceImage = saleImageBase + 'home-service-sale-gloss-' + saleVariant[0] + '.webp?v=gloss-20261031';
     if (saleImage && saleImage.src !== saleServiceImage) {
       saleImage.removeAttribute('srcset');
       saleImage.src = saleServiceImage;
