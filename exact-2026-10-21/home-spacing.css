@@ -191,3 +191,13 @@ body.barnes-home-typography .services-section__link {
     gap: 16px !important;
   }
 }
+
+/* User-selected hero image; uniform 40% black overlay. */
+body.barnes-home-typography .home-hero__media {
+  background-image: url("assets/home-hero-selected.png");
+  background-size: cover;
+  background-position: center 25%;
+  background-repeat: no-repeat;
+}
+body.barnes-home-typography .home-hero__video { display: none !important; }
+body.barnes-home-typography .home-hero__overlay { background: rgba(0,0,0,.4) !important; }

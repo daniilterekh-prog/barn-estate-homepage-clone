@@ -50,6 +50,13 @@
       eyebrow.classList.add('home-section-eyebrow');
       if (eyebrow.textContent !== text) eyebrow.textContent = text;
     }
+    const heroVideo = document.querySelector('.home-hero__video');
+    if (heroVideo?.hasAttribute('src')) {
+      heroVideo.pause();
+      heroVideo.removeAttribute('autoplay');
+      heroVideo.removeAttribute('src');
+      heroVideo.load();
+    }
     const saleImage = document.querySelector('.services-section__item--wide .services-section__image');
     const saleVariant = innerWidth > 1920 ? ['wide',2040,374] : innerWidth > 540 ? ['desktop',2040,488] : ['mobile',1220,729];
     const saleServiceImage = saleImageBase + 'home-service-sale-evening-' + saleVariant[0] + '.webp?v=wall-20261031';
