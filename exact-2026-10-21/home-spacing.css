@@ -214,3 +214,14 @@ body.barnes-home-typography .home-hero__overlay { background: rgba(0,0,0,.4) !im
     background-position: center;
   }
 }
+
+/* Neutralize the warm sale-card wall to match the neighboring editorial images. */
+body.barnes-home-typography .services-section__item--wide .services-section__image {
+  filter: saturate(.65);
+}
+body.barnes-home-typography .services-section__item--wide .services-section__overlay {
+  background: rgba(20,32,48,.45) !important;
+}
+body.barnes-home-typography .services-section__item--wide .services-section__card:is(:hover,:focus-visible) .services-section__overlay {
+  background: rgba(16,28,44,.52) !important;
+}
