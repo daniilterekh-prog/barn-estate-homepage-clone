@@ -4,7 +4,7 @@
 (() => {
   if (window.__barnesHomeContent) return;
   window.__barnesHomeContent = {pending: true};
-  const saleServiceImage = new URL('assets/home-service-sale-original.webp', document.currentScript.src).href;
+  const saleServiceImage = new URL('assets/home-service-sale-neutral.webp', document.currentScript.src).href;
   const floatingPortrait = new URL('assets/owner-modal-prus.webp', document.currentScript.src).href;
   const roles = [
     ['.services-section__header', '.services-section__titles', 'BARN ESTATE', '.services-section__eyebrow'],
@@ -54,8 +54,8 @@
     if (saleImage && saleImage.src !== saleServiceImage) {
       saleImage.removeAttribute('srcset');
       saleImage.src = saleServiceImage;
-      saleImage.width = 1823;
-      saleImage.height = 863;
+      saleImage.width = 1536;
+      saleImage.height = 1024;
     }
     const avatar = document.querySelector('.floating-expert__avatar img');
     if (avatar && avatar.src !== floatingPortrait) {
