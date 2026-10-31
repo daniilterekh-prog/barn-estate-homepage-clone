@@ -4,6 +4,7 @@
 (() => {
   if (window.__barnesHomeContent) return;
   window.__barnesHomeContent = {pending: true};
+  const saleServiceImage = new URL('assets/home-service-sale-original.webp', document.currentScript.src).href;
   const floatingPortrait = new URL('assets/owner-modal-prus.webp', document.currentScript.src).href;
   const roles = [
     ['.services-section__header', '.services-section__titles', 'BARN ESTATE', '.services-section__eyebrow'],
@@ -48,6 +49,13 @@
       if (!eyebrow) { eyebrow = document.createElement('p'); parent.insertBefore(eyebrow, heading); }
       eyebrow.classList.add('home-section-eyebrow');
       if (eyebrow.textContent !== text) eyebrow.textContent = text;
+    }
+    const saleImage = document.querySelector('.services-section__item--wide .services-section__image');
+    if (saleImage && saleImage.src !== saleServiceImage) {
+      saleImage.removeAttribute('srcset');
+      saleImage.src = saleServiceImage;
+      saleImage.width = 1823;
+      saleImage.height = 863;
     }
     const avatar = document.querySelector('.floating-expert__avatar img');
     if (avatar && avatar.src !== floatingPortrait) {
