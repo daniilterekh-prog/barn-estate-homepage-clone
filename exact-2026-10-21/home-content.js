@@ -4,6 +4,7 @@
 (() => {
   if (window.__barnesHomeContent) return;
   window.__barnesHomeContent = {pending: true};
+  const floatingPortrait = new URL('assets/owner-modal-prus.webp', document.currentScript.src).href;
   const roles = [
     ['.services-section__header', '.services-section__titles', 'BARN ESTATE', '.services-section__eyebrow'],
     ['.barnes-choice__heading', '.barnes-choice__title', 'Недвижимость по направлениям'],
@@ -27,6 +28,13 @@
       if (!eyebrow) { eyebrow = document.createElement('p'); parent.insertBefore(eyebrow, heading); }
       eyebrow.classList.add('home-section-eyebrow');
       if (eyebrow.textContent !== text) eyebrow.textContent = text;
+    }
+    const avatar = document.querySelector('.floating-expert__avatar img');
+    if (avatar && avatar.src !== floatingPortrait) {
+      avatar.removeAttribute('srcset');
+      avatar.src = floatingPortrait;
+      avatar.width = 1086;
+      avatar.height = 1448;
     }
     const copyright = document.querySelector('.site-footer__copyright');
     if (copyright && copyright.textContent !== '© 2026 BARN ESTATE') copyright.textContent = '© 2026 BARN ESTATE';

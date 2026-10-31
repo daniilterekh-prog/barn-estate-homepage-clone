@@ -146,8 +146,21 @@ body.barnes-home-typography .office-contact { padding-inline: 0 !important; }
 body.barnes-home-typography .site-footer :is(.site-footer__link,
  .site-footer__column-title--link,.site-footer__phone,.site-footer__email,
  .site-footer__privacy):is(:hover,:focus-visible,:active) { color: #8b1d25 !important; }
-/* Show the full Prus portrait, matching the owner FloatingExpert variant. */
-body.barnes-home-typography .floating-expert__avatar img { transform: none !important; }
+/* High-resolution library portrait: closer face with headroom in the round avatar.
+ * Uses the existing 1086x1448 source, without enlarging a low-resolution crop. */
+body.barnes-home-typography .floating-expert__avatar { position: relative; }
+body.barnes-home-typography .floating-expert__avatar img {
+  position: absolute;
+  width: 200% !important;
+  max-width: none;
+  height: auto !important;
+  left: -50%;
+  top: 0;
+  object-fit: cover !important;
+  object-position: center top !important;
+  transform: none !important;
+  filter: none;
+}
 
 @media(max-width:1024px) {
   body.barnes-home-typography :is(.office-contact__inner,.newsletter-cta__inner) {
