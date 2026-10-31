@@ -151,11 +151,11 @@ body.barnes-home-typography .site-footer :is(.site-footer__link,
 body.barnes-home-typography .floating-expert__avatar { position: relative; }
 body.barnes-home-typography .floating-expert__avatar img {
   position: absolute;
-  width: 200% !important;
+  width: 185% !important;
   max-width: none;
   height: auto !important;
-  left: -50%;
-  top: 0;
+  left: -42.5%;
+  top: -5%;
   object-fit: cover !important;
   object-position: center top !important;
   transform: none !important;
