@@ -172,15 +172,22 @@ body.barnes-home-typography .floating-expert__avatar img {
   }
 }
 
-/* Keep service-card titles slightly below centre with the CTA close beneath. */
-body.barnes-home-typography .services-section__content { gap: 20px !important; }
+/* Anchor the CTA at its original bottom inset; lower the title toward it. */
+body.barnes-home-typography .services-section__content {
+  justify-content: flex-end;
+  padding-bottom: 40px !important;
+  gap: 20px !important;
+}
 body.barnes-home-typography .services-section__card-title,
-body.barnes-home-typography .services-section__link { transform: translateY(32px); }
+body.barnes-home-typography .services-section__link { transform: none; }
 body.barnes-home-typography .services-section__link {
   position: static;
   inset: auto;
   flex: 0 0 auto;
 }
 @media(max-width:540px) {
-  body.barnes-home-typography .services-section__content { gap: 16px !important; }
+  body.barnes-home-typography .services-section__content {
+    padding-bottom: 20px !important;
+    gap: 16px !important;
+  }
 }
