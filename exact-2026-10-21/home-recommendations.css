@@ -348,16 +348,9 @@ body.barnes-home-typography .barnes-choice .home-rec-address span {min-width:0;o
     inset: auto;
     grid-row: 2;
     display: inline-flex;
-    width: 44px;
-    height: 44px;
     margin: 0;
     padding: 0;
-    border: 0;
-    border-radius: 0;
-    background: transparent;
-    color: #656462;
     transform: none;
-    transition: color 180ms ease, opacity 180ms ease;
   }
   body.barnes-home-typography .barnes-choice__nav-btn--prev {
     grid-column: 1;
@@ -369,25 +362,9 @@ body.barnes-home-typography .barnes-choice .home-rec-address span {min-width:0;o
     justify-self: end;
     margin-right: var(--home-rec-nav-inset, 24px);
   }
-  body.barnes-home-typography .barnes-choice__nav-btn:hover {
-    background: transparent;
-    color: #8b1d25;
-  }
   body.barnes-home-typography .barnes-choice__nav-btn:focus-visible {
     outline: 1px solid #8b1d25;
     outline-offset: 3px;
-  }
-  body.barnes-home-typography .barnes-choice__nav-icon {
-    width: 36px;
-    height: 24px;
-    background: currentColor;
-    mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 24'%3E%3Cpath d='M2 12h31M25 4l8 8-8 8' fill='none' stroke='black' stroke-width='1.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center / contain no-repeat;
-  }
-  body.barnes-home-typography .barnes-choice__nav-icon svg {
-    display: none;
-  }
-  body.barnes-home-typography .barnes-choice__nav-btn--prev .barnes-choice__nav-icon {
-    transform: rotate(180deg);
   }
   body.barnes-home-typography .barnes-choice__footer {
     padding-top: 24px;
