@@ -4,7 +4,7 @@
 (() => {
   if (window.__barnesHomeContent) return;
   window.__barnesHomeContent = {pending: true};
-  const saleServiceImage = new URL('assets/home-service-sale-neutral.webp', document.currentScript.src).href;
+  const saleImageBase = new URL('assets/', document.currentScript.src).href;
   const floatingPortrait = new URL('assets/owner-modal-prus.webp', document.currentScript.src).href;
   const roles = [
     ['.services-section__header', '.services-section__titles', 'BARN ESTATE', '.services-section__eyebrow'],
@@ -51,11 +51,13 @@
       if (eyebrow.textContent !== text) eyebrow.textContent = text;
     }
     const saleImage = document.querySelector('.services-section__item--wide .services-section__image');
+    const saleVariant = innerWidth > 1920 ? ['wide',2040,374] : innerWidth > 540 ? ['desktop',2040,488] : ['neutral',1536,1024];
+    const saleServiceImage = saleImageBase + 'home-service-sale-' + saleVariant[0] + '.webp';
     if (saleImage && saleImage.src !== saleServiceImage) {
       saleImage.removeAttribute('srcset');
       saleImage.src = saleServiceImage;
-      saleImage.width = 1536;
-      saleImage.height = 1024;
+      saleImage.width = saleVariant[1];
+      saleImage.height = saleVariant[2];
     }
     const avatar = document.querySelector('.floating-expert__avatar img');
     if (avatar && avatar.src !== floatingPortrait) {
@@ -86,6 +88,7 @@
     window.__barnesHomeContent = {refresh: apply};
     apply();
   }
+  window.addEventListener('resize', () => window.__barnesHomeContent?.refresh?.());
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', start, {once:true});
   else start();
 })();
