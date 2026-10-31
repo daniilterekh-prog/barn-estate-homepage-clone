@@ -120,7 +120,7 @@ body.barnes-home-typography :is(.services-section__link, .department-card__link,
 body.barnes-home-typography .news-section__read-more { color: var(--home-primary) !important; }
 body.barnes-home-typography .ui-more-link__label { color: var(--home-brand) !important; }
 body.barnes-home-typography .site-header__request { font-size: 16px !important; font-weight: 400 !important; }
-body.barnes-home-typography .site-header__nav-link { font-weight: 400 !important; }
+/* Header directions retain the original Tilda Sans Light (300). */
 body.barnes-home-typography .barnes-choice__tab {
   font-size: 22px !important;
   line-height: 1.2 !important;

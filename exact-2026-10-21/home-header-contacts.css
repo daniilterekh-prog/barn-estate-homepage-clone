@@ -1,7 +1,8 @@
 /* Contact controls from the owner-sale hero and sticky header. */
 body.barnes-home-typography .site-header .site-header__messengers {gap:14px;align-items:center;}
 body.barnes-home-typography .site-header :is(.site-header__messenger,.site-header__phone--icon) {width:24px;height:24px;min-width:24px;display:inline-flex;align-items:center;justify-content:center;}
-body.barnes-home-typography .site-header .site-header__messenger img {width:20px;height:20px;display:block;object-fit:contain;}
+/* Homepage messenger artwork is 24px, as on barn-estate.ru. */
+body.barnes-home-typography .site-header .site-header__messenger img {width:24px;height:24px;display:block;object-fit:contain;}
 body.barnes-home-typography .site-header .site-header__phone--icon :is(svg,.site-header__icon) {width:19px;height:19px;}
 .home-header-contacts-toggle,.home-header-contacts-panel {display:none;}
 .home-header-contacts-panel[hidden] {display:none!important;}
