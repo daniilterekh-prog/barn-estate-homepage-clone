@@ -51,8 +51,8 @@
       if (eyebrow.textContent !== text) eyebrow.textContent = text;
     }
     const saleImage = document.querySelector('.services-section__item--wide .services-section__image');
-    const saleVariant = innerWidth > 1920 ? ['wide',2040,374] : innerWidth > 540 ? ['desktop',2040,488] : ['neutral',1536,1024];
-    const saleServiceImage = saleImageBase + 'home-service-sale-' + saleVariant[0] + '.webp';
+    const saleVariant = innerWidth > 1920 ? ['wide',2040,374] : innerWidth > 540 ? ['desktop',2040,488] : ['mobile',1220,729];
+    const saleServiceImage = saleImageBase + 'home-service-sale-evening-' + saleVariant[0] + '.webp';
     if (saleImage && saleImage.src !== saleServiceImage) {
       saleImage.removeAttribute('srcset');
       saleImage.src = saleServiceImage;
