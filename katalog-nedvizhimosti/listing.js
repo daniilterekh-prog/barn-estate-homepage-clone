@@ -104,7 +104,7 @@
   if(item.deal==='rent'){const period=document.createElement('small');period.className='catalog-price-period';period.textContent='в месяц';price.append(period);}
   const lotID=article.querySelector('.apartment-card__lotid');if(lotID){if(/^\d+$/.test(item.id)){lotID.textContent='ID '+item.id;lotID.setAttribute('aria-label','ID объекта '+item.id);}else lotID.remove();}
   const favorite=article.querySelector('.apartment-card__favorite');favorite.dataset.favorite=item.id;favorite.setAttribute('aria-pressed',String(favorites.includes(item.id)));favorite.setAttribute('aria-label',`${favorites.includes(item.id)?'Удалить из избранного':'Добавить в избранное'}: ${item.title}`);
-  const call=article.querySelector('.apartment-card__call-btn'),phone=document.createElement('a');for(const attr of call.attributes)if(attr.name!=='type')phone.setAttribute(attr.name,attr.value);phone.href='tel:+74951825079';phone.textContent='Позвонить';phone.setAttribute('aria-label','Позвонить по объекту '+item.title);call.replaceWith(phone);
+  const call=article.querySelector('.apartment-card__call-btn');call.type='button';call.textContent='Заказать звонок';call.setAttribute('aria-label','Заказать звонок по объекту '+item.title);call.addEventListener('click',()=>{window.__barnesOwnerForm.open({trigger:call,channel:'Звонок',context:{name:item.title,href:item.url,address:item.address}});const form=document.querySelector('.home-owner-form form');for(const [name,value] of Object.entries({objectId:item.id,objectTitle:item.title,department:item.direction})){const field=document.createElement('input');field.type='hidden';field.name=name;field.value=value;form.append(field);}});
   const wrapper=document.createElement('li');wrapper.className='catalog-grid__item';wrapper.setAttribute('data-v-5a2b3b97','');wrapper.dataset.listingMode=item.market||item.deal;wrapper.dataset.price=item.price??'';wrapper.dataset.area=item.area??'';wrapper.append(article);return wrapper;
  }
  function render(){
@@ -112,7 +112,7 @@
   const order=sort.endsWith('_desc')?-1:1,key=sort.startsWith('price_')?'price':sort.startsWith('square_')?'area':null;
   if(key)visible.sort((a,b)=>a[key]==null?(b[key]==null?0:1):b[key]==null?-1:order*(a[key]-b[key]));
   list.replaceChildren(...visible.slice(0,limit).map(card));list.setAttribute('aria-busy','false');
-  $('#catalog-direction-select').value=currentDirection;
+  $('#catalog-direction-select').value=currentDirection;$('#catalog-direction-select').dispatchEvent(new Event('input'));
   modeButtons().forEach((button,i)=>{const active=profile().mode==='deal'?effectiveDeal()===(i?'rent':'buy'):s.market===(i?'secondary':'new-build');button.classList.toggle('is-active',active);button.setAttribute('aria-pressed',String(active));});
   const n=visible.length,word=profile().mode==='market'&&s.market==='new-build'?'проект':'объект';
   $('#results-count').textContent=`${n} ${n%100>=11&&n%100<=14?word+'ов':n%10===1?word:n%10>=2&&n%10<=4?word+'а':word+'ов'}`;
@@ -164,7 +164,7 @@
   menu.querySelectorAll('.site-menu__nav-title').forEach(link=>link.classList.toggle('site-menu__nav-title--active',new URL(link.href).pathname===menuPath));
   for(const el of [...document.querySelectorAll('main,.site-footer'),...header.querySelectorAll('a,button')].filter(el=>el!==toggle)){menuSaved.isolated.push([el,el.inert]);el.inert=true;}
   document.body.style.overflow='hidden';toggle.setAttribute('aria-expanded','true');toggle.setAttribute('aria-controls',menu.id);toggle.setAttribute('aria-label','Закрыть меню');toggle.innerHTML="<span class=\"ui-icon ui-icon-current site-header__icon\" data-v-63dbb988=\"\" data-v-8bd2f545=\"\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n  <path d=\"M18 6 6 18\"></path>\n  <path d=\"m6 6 12 12\"></path>\n</svg>\n</span>";
-  menu.querySelector('a,button')?.focus({preventScroll:true});menu.querySelector('.site-menu__panel').scrollTop=0;menu.querySelectorAll('button').forEach(button=>button.addEventListener('click',()=>{location.href='tel:+74951825079';}));
+  menu.querySelector('a,button')?.focus({preventScroll:true});menu.querySelector('.site-menu__panel').scrollTop=0;
  }
  toggle.setAttribute('aria-expanded','false');toggle.addEventListener('click',openMenu);
  document.addEventListener('keydown',event=>{
@@ -175,7 +175,7 @@
   }
  });
  window.addEventListener('resize',()=>{if(menu)menu.style.setProperty('--site-menu-top',header.querySelector('.site-header__top').getBoundingClientRect().bottom+'px');});
- document.querySelectorAll('.site-footer__callback-btn').forEach(button=>button.addEventListener('click',()=>{location.href='tel:+74951825079';}));
+
  window.addEventListener('popstate',()=>{readURL();render();});
  async function load(){
   $('.catalog-load-error').hidden=true;$('.catalog-empty').hidden=true;

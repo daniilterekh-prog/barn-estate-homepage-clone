@@ -1,0 +1,124 @@
+{
+  "version": "1.0.0",
+  "approved": "2026-11-01",
+  "repository": "https://github.com/daniilterekh-prog/barnes-sites",
+  "sourceRoot": "main-site/pages/home/exact-2026-10-21",
+  "sourceTag": "barn-estate-home-reference-v1.0.0",
+  "sourceCommit": "90f0bac40402751c546cba90160c09ed386e9c92",
+  "files": [
+    {
+      "local": "home-typography.css",
+      "source": "home-typography.css",
+      "sha256": "daf2a31c248d482abc6bfb513117b87832f846746f527edd40068f1eabb33024",
+      "copiedUnchanged": true
+    },
+    {
+      "local": "home-spacing.css",
+      "source": "home-spacing.css",
+      "sha256": "dc550d621f1f9f37b4dfd732e8bdfa7904b7162f8fb2519285b86f191a97180c",
+      "copiedUnchanged": true
+    },
+    {
+      "local": "home-buttons.css",
+      "source": "home-buttons.css",
+      "sha256": "e84e451a1d7f46adbb300557606af73b1ce081a2ce986ccd0368a206ce822b7a",
+      "copiedUnchanged": true
+    },
+    {
+      "local": "home-header-contacts.css",
+      "source": "home-header-contacts.css",
+      "sha256": "41f6bc970cdc98a665da7c286c16d7418660e8fedcedee23e0e7c84e4e46cabd",
+      "copiedUnchanged": true
+    },
+    {
+      "local": "home-header-contacts.js",
+      "source": "home-header-contacts.js",
+      "sha256": "ec87ed670d121d9a73ed9566db19c41818ac6d5628162464c1bfe3019c6cfaf5",
+      "copiedUnchanged": true
+    },
+    {
+      "local": "footer.css",
+      "source": "blocks/15-footer/block.css",
+      "sha256": "649f37e74259d18f4a2cf854a2901b7d923ad2d78d5367ea1c7f01b9163bbc05",
+      "copiedUnchanged": true
+    },
+    {
+      "local": "quiz.css",
+      "source": "blocks/17-quiz/block.css",
+      "sha256": "99f35ef45710c1a4cdd443fba0878f26a1be0be56c462e595a61aa85d0891066",
+      "copiedUnchanged": true
+    },
+    {
+      "local": "quiz.js",
+      "source": "blocks/17-quiz/block.js",
+      "sha256": "f538302644fbb4145b31000326c568c4b3bb48dada2d3a83a9ffbb6e7430e912",
+      "extraction": "Only Owner RequestModal IIFE; rebased portrait asset paths; excludes unrelated slider and standalone block runtimes."
+    }
+  ],
+  "html": [
+    "blocks/15-footer/block.html",
+    "blocks/16-expert/block.html"
+  ],
+  "assets": [
+    {
+      "path": "assets/9e76f26b05473907fc0031ca.woff2",
+      "sha256": "2670dad44ca6c2a1b9bbdbf1af6d8db9173f2dbe31604e80bdf9599b55047d41"
+    },
+    {
+      "path": "assets/SPLIDE-LICENSE.txt",
+      "sha256": "0ebc4cd9114647da9febbe8a2c17e847eca42631e9fcf8b273bc9306d0735f96"
+    },
+    {
+      "path": "assets/TildaSans-Black.woff2",
+      "sha256": "73abed6708c43912dbd5c2760147f72462887ccd803522a1486209ca1e97031a"
+    },
+    {
+      "path": "assets/TildaSans-Bold.woff2",
+      "sha256": "a2690df6fe8348066df79e3a3421a3a9bc0b058cc536f3d846f782ea5337afec"
+    },
+    {
+      "path": "assets/TildaSans-ExtraBold.woff2",
+      "sha256": "726a3a878465a590443308ea9e14459ab5943f699cff4887c844af4ed76ce577"
+    },
+    {
+      "path": "assets/TildaSans-Semibold.woff2",
+      "sha256": "3814f8c444073262523050f3554c6f09cb49353e1f6fdc22a3561d354a231439"
+    },
+    {
+      "path": "assets/a9f2b67f7136af9bde4f58b8.woff2",
+      "sha256": "f716269e361f466570f37bc920988c619ddc8a7828c5949c1c56a731a320ab47"
+    },
+    {
+      "path": "assets/c57d9b3c8de986fa0d618d09.svg",
+      "sha256": "9b2d8c1a7d4d213587828c6bdf6592a37113a388fedc1b58211534d8cb1e7123"
+    },
+    {
+      "path": "assets/de589af6ec6325d4b365d646.woff2",
+      "sha256": "f0f2c165784c72343618a7c2cbde00e45dbb9b09af5149984792f280cac9642e"
+    },
+    {
+      "path": "assets/material-icons-LICENSE.txt",
+      "sha256": "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd"
+    },
+    {
+      "path": "assets/owner-modal-prus.webp",
+      "sha256": "6bbaa8e1df83e7d5eda42c83d174e1f0177a8cbb5698bd5ec01ee3602e8f84aa"
+    },
+    {
+      "path": "assets/quiz-mobile-prus-magazine.webp",
+      "sha256": "8985649766af231100dd863db3e4fac10809a7b9f94bc2d38c6922c8e10b67c1"
+    }
+  ],
+  "adapters": [
+    "../catalog-kit-v1.css",
+    "../catalog-kit-v1.js",
+    "../listing.js",
+    "../kit/quick-filter-dropdowns/quick-filters.js"
+  ],
+  "catalogExceptions": [
+    "64px / 19px two-row desktop filters",
+    "detailed ListingCard instead of homepage LaunchCard",
+    "54px compact card actions; stacked in cards narrower than 340px"
+  ],
+  "forms": "Preview only. Cancellable barn:lead event. Without a backend integration the form explicitly says the data were not sent."
+}

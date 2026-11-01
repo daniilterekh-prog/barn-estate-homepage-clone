@@ -95,5 +95,11 @@
     "desktop": "Two rows at >=1024px; primary controls 64px tall and 19px type",
     "mobile": "Responsive wrapping, primary controls 17px",
     "brandFilterIntegration": "Mount into catalog-toolbar__secondary after quick/detailed controls"
+  },
+  "currentSharedKit": {
+    "manifest": "kit-v1/sources.json",
+    "version": "1.0.0",
+    "date": "2026-11-01",
+    "note": "Approved homepage shared roles supersede old footer, contact form, typography and CTA styles. Existing catalogue data/card/menu provenance retained."
   }
 }
