@@ -22,7 +22,7 @@ body.barnes-home-typography .about-company__brand {
   display: block;
   max-width: 440px;
   width: 100%;
-  margin-inline: auto;
+  margin-inline: 0;
 }
 body.barnes-home-typography .about-company__brand-logo { display: block; width:100%; height:auto; max-width:440px; }
 body.barnes-home-typography .about-company__content { min-width:0; }
