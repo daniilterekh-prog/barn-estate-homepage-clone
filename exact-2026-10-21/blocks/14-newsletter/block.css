@@ -638,7 +638,7 @@
 
 /* One geometry/type contract per button role. Preserve fill/outline/inverse colors. */
 .barnes-block.barnes-home-typography {
- --home-button-radius:3px;
+ --home-button-radius:1px;
  --home-button-weight:400;
  --home-button-font:17px;
  --home-button-height:70px;
@@ -671,7 +671,7 @@
  height:44px;min-height:44px;padding:0 18px;white-space:nowrap;
 }
 .barnes-block .barnes-template.owner-sale-reference-ui.home-quiz-host :is(.home-quiz__next,.home-owner-form__submit) {
- border-radius:3px!important;font-size:17px!important;font-weight:400!important;
+ border-radius:1px!important;font-size:17px!important;font-weight:400!important;
  line-height:1.1!important;letter-spacing:0!important;
  box-sizing:border-box;height:64px!important;min-height:64px!important;
  padding:0 36px!important;
@@ -680,7 +680,7 @@
  border-bottom:0;margin-bottom:16px;gap:8px;grid-template-columns:repeat(4,minmax(0,1fr));
 }
 .barnes-block .barnes-template.owner-sale-reference-ui.home-quiz-host .home-owner-form__channels button {
- border:1px solid #8b8986;border-radius:3px!important;margin:0;
+ border:1px solid #8b8986;border-radius:1px!important;margin:0;
  padding:10px 8px;min-height:46px;font-weight:400!important;
  font-size:17px!important;line-height:1.1!important;white-space:nowrap;
 }
@@ -700,8 +700,10 @@
 }
 /* Compact choices retain a smaller footprint, sharing radius and regular weight. */
 .barnes-block.barnes-home-typography :is(.home-hero-filters__modal-chip,.barnes-choice__select-control) {
- box-sizing:border-box;border-radius:3px!important;min-height:44px;
+ box-sizing:border-box;border-radius:1px!important;min-height:44px;
  font-weight:400!important;padding:10px 16px!important;
 }
 .barnes-block.barnes-home-typography .home-hero-filters__modal-chip {font-size:16px;}
 .barnes-block.barnes-home-typography :is(.barnes-choice__select-value,.barnes-choice__select-option) {font-weight:400!important;}
+
+.barnes-block .barnes-template.owner-sale-reference-ui.home-quiz-host :is(.home-quiz__option,.home-quiz__back){border-radius:1px!important;}

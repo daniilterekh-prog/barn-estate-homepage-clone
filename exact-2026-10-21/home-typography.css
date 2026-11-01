@@ -234,3 +234,11 @@ body.barnes-home-typography .office-contact .office-contact__social > :is(.conta
 @media(max-width:540px) {
  body.barnes-home-typography .office-contact .office-contact__social {grid-template-columns:26px minmax(0,1fr) 16px;}
 }
+
+/* Project descriptions share the body-description scale, retaining white contrast. */
+body.barnes-home-typography .project-hero__cta-text {
+ font-size:var(--home-lead)!important;
+ font-weight:300!important;
+ line-height:var(--home-lead-line)!important;
+ letter-spacing:normal!important;
+}
