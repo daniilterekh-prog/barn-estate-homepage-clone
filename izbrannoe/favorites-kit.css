@@ -1,0 +1,18 @@
+/* Integration of approved BARN Estate v1.0.0. Page-specific spacing and tabs remain in favorites.css. */
+html body .favorites-heading h1,html body .favorites-empty h2{font-size:38px;font-weight:300;line-height:1.2;letter-spacing:normal;color:#1e1e1e}
+html body .favorites-grid .apartment-card :is(.apartment-card__address,.apartment-card__lotid){font-size:13px;font-weight:300;line-height:18px;letter-spacing:normal;color:#656462}
+html body .favorites-layout>.layout__header{position:relative;color:#1e1e1e}
+html body .favorites-layout .barnes-block .site-header{color:#1e1e1e}
+html body .favorites-layout .barnes-block .site-header__logo img{filter:brightness(0)}
+html body .favorites-layout .barnes-block .site-header__top{border-bottom-color:rgba(30,30,30,.14)}
+html body .favorites-layout .barnes-block .site-header__nav-link{color:#1e1e1e}
+html body .favorites-layout .barnes-block .site-header__nav-link:hover{color:#8b1d25}
+html body .favorites-layout .barnes-block .site-header__request{color:#8b1d25;background:transparent}
+html body .favorites-layout .barnes-block .site-header__request:hover{color:#fff;background:#8b1d25}
+html body .favorites-layout .site-menu :is(a,button):focus-visible{outline:2px solid #8b1d25;outline-offset:3px}
+@media(min-width:1441px){html body .favorites-heading h1,html body .favorites-empty h2{font-size:44px}}
+@media(max-width:540px){html body .favorites-heading h1,html body .favorites-empty h2{font-size:22px}}
+
+/* Preserve visible keyboard focus in the portalled request form, including its custom checkbox. */
+html body [data-barn-modal] :is(input,button,a,select):focus-visible{outline:2px solid #8b1d25;outline-offset:3px}
+html body [data-barn-modal] .home-owner-form__consent-input:focus-visible + .home-owner-form__consent-box{outline:2px solid #8b1d25;outline-offset:3px}

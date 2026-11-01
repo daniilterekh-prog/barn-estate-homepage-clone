@@ -34,8 +34,9 @@ const {chromium}=require(process.env.PLAYWRIGHT_PATH||'playwright');
    await page.locator('[data-map-zoom=in]').click();assert.match(await page.locator('.map-browser__backdrop img').getAttribute('style'),/1.25/);
    await page.keyboard.press('Escape');assert.equal(await page.locator('.catalog-grid__item:not([hidden])').count(),4);
    await page.locator('.catalog-grid__sort .resort-sort-trigger').click();assert.ok(await page.locator('.resort-quick-dropdown').isVisible());await page.keyboard.press('Escape');
-   await page.locator('.catalog-grid__item:not([hidden]) .apartment-card__call-btn').first().click();assert.ok(await page.locator('.catalog-feedback-modal').isVisible());
-   await page.locator('.catalog-feedback-modal button[data-channel=MAX]').click();assert.equal(await page.locator('.catalog-feedback-modal [name=preferredChannel]').inputValue(),'MAX');await page.keyboard.press('Escape');
+   await page.locator('.catalog-grid__item:not([hidden]) .apartment-card__call-btn').first().click();assert.ok(await page.locator('.international-quiz-host').isVisible());
+   assert.equal(await page.locator('.international-quiz-host').getAttribute('data-quiz-step'),'contact');
+   await page.locator('.international-quiz-host button[data-channel=MAX]').click();assert.equal(await page.locator('.international-quiz-host [name=preferredChannel]').inputValue(),'MAX');await page.keyboard.press('Escape');
    const faq=page.locator('.catalog-faq__question').first();await faq.click();assert.equal(await faq.getAttribute('aria-expanded'),'true');
    rows.push({width,quickDropdown:true,threeFullFilterEntrances:true,marketSync:true,map:true,callback:true,channel:true,faq:true});
   }

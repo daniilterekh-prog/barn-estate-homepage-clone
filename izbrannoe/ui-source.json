@@ -115,12 +115,14 @@
   },
   "components": {
     "header": {
-      "source": "blocks/nodes/first-degree/header/fragment.html",
-      "sha256": "2874755a34026d80935be2f460459a0c74ac12dafd3cfeca0421c38d8a76dec4"
+      "source": "main-site/pages/home/exact-2026-10-21/blocks/01-header",
+      "cssSha256": "76f3f5d92dbf80463dca961c93ea69b8e12c914456c68b4228b37cbee14d2e51",
+      "htmlSha256": "41bfb481352f052c46907856e8568a26365f596aa2dc16aa8229bcf1e0d6a9d4"
     },
     "footer": {
-      "source": "blocks/nodes/first-degree/footer/fragment.html",
-      "sha256": "07a590658ef9120c45bbab3980626a7b98d710dabb885824f540d6c3a27c2fc2"
+      "source": "main-site/pages/home/exact-2026-10-21/blocks/15-footer",
+      "cssSha256": "649f37e74259d18f4a2cf854a2901b7d923ad2d78d5367ea1c7f01b9163bbc05",
+      "htmlSha256": "7349f9b72f930aacf922437a91e7d38ea73513f2f7a32348ca78861abaa719a1"
     },
     "card-lot": {
       "source": "blocks/nodes/first-degree/card-lot/fragment.html",
@@ -138,6 +140,11 @@
       "adaptations": [
         "Local navigation and image paths only; original classes, scoped attributes, content and layout preserved."
       ]
+    },
+    "quiz": {
+      "source": "main-site/pages/home/exact-2026-10-21/blocks/17-quiz",
+      "cssSha256": "99f35ef45710c1a4cdd443fba0878f26a1be0be56c462e595a61aa85d0891066",
+      "htmlSha256": "46e839b5ff44c8b22952bbcd705d7f546755c3a242cca3342f7ff34800aad431"
     }
   },
   "liveHeader": {
@@ -179,5 +186,46 @@
     "css": "ui/favorites-sort.css",
     "sha256": "765f5a7b14d1e3f0a7827c36a9439eb2633f9d835c3b591dce9712505a9f08a0",
     "adaptation": "Original dropdown rules; selectors scoped to favorites, existing three sorting choices retained."
+  },
+  "approvedKit": {
+    "version": "1.0.0",
+    "tag": "barn-estate-home-reference-v1.0.0",
+    "source": "https://github.com/daniilterekh-prog/barnes-sites/tree/barn-estate-home-reference-v1.0.0/main-site/pages/home/exact-2026-10-21",
+    "packages": {
+      "01-header": {
+        "source": "main-site/pages/home/exact-2026-10-21/blocks/01-header",
+        "cssSha256": "76f3f5d92dbf80463dca961c93ea69b8e12c914456c68b4228b37cbee14d2e51",
+        "htmlSha256": "41bfb481352f052c46907856e8568a26365f596aa2dc16aa8229bcf1e0d6a9d4"
+      },
+      "15-footer": {
+        "source": "main-site/pages/home/exact-2026-10-21/blocks/15-footer",
+        "cssSha256": "649f37e74259d18f4a2cf854a2901b7d923ad2d78d5367ea1c7f01b9163bbc05",
+        "htmlSha256": "7349f9b72f930aacf922437a91e7d38ea73513f2f7a32348ca78861abaa719a1"
+      },
+      "17-quiz": {
+        "source": "main-site/pages/home/exact-2026-10-21/blocks/17-quiz",
+        "cssSha256": "99f35ef45710c1a4cdd443fba0878f26a1be0be56c462e595a61aa85d0891066",
+        "htmlSha256": "46e839b5ff44c8b22952bbcd705d7f546755c3a242cca3342f7ff34800aad431"
+      }
+    },
+    "runtimeSha256": "64dd602e61c5625ea3ee0d459456353ef57216ddfaa5234f0abad7f282cc77f2",
+    "adaptations": [
+      "White internal-page header theme",
+      "Home/favorites relative routes and count binding",
+      "Existing favorite IDs passed to barn:lead",
+      "Accessible menu focus/inert integration",
+      "Page headings and card secondary type"
+    ],
+    "verifiedOn": "2026-11-01"
+  },
+  "historicalComponents": {
+    "header": {
+      "source": "blocks/nodes/first-degree/header/fragment.html",
+      "sha256": "2874755a34026d80935be2f460459a0c74ac12dafd3cfeca0421c38d8a76dec4"
+    },
+    "footer": {
+      "source": "blocks/nodes/first-degree/footer/fragment.html",
+      "sha256": "07a590658ef9120c45bbab3980626a7b98d710dabb885824f540d6c3a27c2fc2"
+    }
   }
 }

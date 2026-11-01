@@ -1,0 +1,38 @@
+{
+  "base": "http://127.0.0.1:8089/izbrannoe/",
+  "viewports": [
+    {
+      "width": 390,
+      "passed": true
+    },
+    {
+      "width": 768,
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "width": 1920,
+      "passed": true
+    },
+    {
+      "width": 2560,
+      "passed": true
+    }
+  ],
+  "persistence": true,
+  "checks": [
+    "new headings and footer CTA",
+    "mobile four-channel contacts and Escape",
+    "menu inert and focus",
+    "sticky header without content jump",
+    "price sort",
+    "card quiz context and selection",
+    "general quiz flow, currency and validation",
+    "remove/undo and preview isolation",
+    "saved state reload and empty state",
+    "no page errors or overflow"
+  ]
+}

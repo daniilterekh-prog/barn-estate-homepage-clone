@@ -12,14 +12,14 @@
     }
   })
   document.addEventListener('click', event => {
-    const button = event.target.closest('button')
+    const button = event.target.closest('[data-contact-open]')
     if (!button) return
-    if (button.matches('[data-contact-open]')) document.querySelector('#contact-dialog').showModal()
-    if (button.matches('[data-close-dialog]')) button.closest('dialog').close()
+    const card = button.closest('[data-favorite-id]')
+    const context = card ? {
+      id: card.dataset.favoriteId,
+      name: card.querySelector('.apartment-card__name-text').textContent.trim(),
+      href: card.querySelector('.apartment-card__media-link').href
+    } : null
+    window.__barnesOwnerForm?.open({trigger: button, context})
   })
-  document.querySelectorAll('dialog').forEach(dialog => dialog.addEventListener('click', event => {
-    if (event.target !== dialog) return
-    const rect = dialog.getBoundingClientRect()
-    if (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) dialog.close()
-  }))
 })()

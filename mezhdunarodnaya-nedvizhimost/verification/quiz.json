@@ -1,0 +1,128 @@
+{
+  "base": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/mezhdunarodnaya-nedvizhimost/",
+  "countries": [
+    "Таиланд",
+    "ОАЭ",
+    "Грузия",
+    "Турция",
+    "Азербайджан",
+    "Другие страны"
+  ],
+  "rows": [
+    {
+      "width": 320,
+      "height": 900,
+      "countries": true,
+      "stateAndCurrency": true,
+      "validation": true,
+      "objectContext": true,
+      "keyboard": true,
+      "frameStable": true
+    },
+    {
+      "width": 390,
+      "height": 900,
+      "countries": true,
+      "stateAndCurrency": true,
+      "validation": true,
+      "objectContext": true,
+      "keyboard": true,
+      "frameStable": true
+    },
+    {
+      "width": 540,
+      "height": 900,
+      "countries": true,
+      "stateAndCurrency": true,
+      "validation": true,
+      "objectContext": true,
+      "keyboard": true,
+      "frameStable": true
+    },
+    {
+      "width": 581,
+      "height": 900,
+      "countries": true,
+      "stateAndCurrency": true,
+      "validation": true,
+      "objectContext": true,
+      "keyboard": true,
+      "frameStable": true
+    },
+    {
+      "width": 768,
+      "height": 900,
+      "countries": true,
+      "stateAndCurrency": true,
+      "validation": true,
+      "objectContext": true,
+      "keyboard": true,
+      "frameStable": true
+    },
+    {
+      "width": 1024,
+      "height": 900,
+      "countries": true,
+      "stateAndCurrency": true,
+      "validation": true,
+      "objectContext": true,
+      "keyboard": true,
+      "frameStable": true
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "countries": true,
+      "stateAndCurrency": true,
+      "validation": true,
+      "objectContext": true,
+      "keyboard": true,
+      "frameStable": true
+    },
+    {
+      "width": 1920,
+      "height": 900,
+      "countries": true,
+      "stateAndCurrency": true,
+      "validation": true,
+      "objectContext": true,
+      "keyboard": true,
+      "frameStable": true
+    },
+    {
+      "width": 2560,
+      "height": 900,
+      "countries": true,
+      "stateAndCurrency": true,
+      "validation": true,
+      "objectContext": true,
+      "keyboard": true,
+      "frameStable": true
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "countries": true,
+      "stateAndCurrency": true,
+      "validation": true,
+      "objectContext": true,
+      "keyboard": true,
+      "frameStable": true
+    },
+    {
+      "width": 568,
+      "height": 320,
+      "countries": true,
+      "stateAndCurrency": true,
+      "validation": true,
+      "objectContext": true,
+      "keyboard": true,
+      "frameStable": true
+    }
+  ],
+  "allCountries": true,
+  "generalCtas": true,
+  "errors": [],
+  "posts": [],
+  "backend": "not connected"
+}

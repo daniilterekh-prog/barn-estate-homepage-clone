@@ -87,7 +87,7 @@
   var previousOverflow;
   var inertElements = [];
   function isolate(element) {
-    if (element !== dialog && !element.classList.contains('hero-filter-modal') && !['SCRIPT', 'LINK', 'STYLE'].includes(element.tagName) &&
+    if (element !== dialog && !element.classList.contains('hero-filter-modal') && !element.classList.contains('international-quiz-host') && !['SCRIPT', 'LINK', 'STYLE'].includes(element.tagName) &&
         !inertElements.some(function (entry) { return entry.element === element; })) {
       inertElements.push({ element: element, value: element.inert });
       element.inert = true;
