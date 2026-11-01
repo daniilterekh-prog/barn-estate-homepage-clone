@@ -1,319 +1,452 @@
 {
   "url": "http://127.0.0.1:8921/katalog-nedvizhimosti/",
-  "date": "2026-11-01T21:24:38.184Z",
+  "date": "2026-11-01T21:39:58.486Z",
   "results": [
     {
       "width": 320,
       "direction": "city",
-      "responsive": true
+      "twoRows": false,
+      "compact": true,
+      "panelHeight": 232,
+      "overflow": false
     },
     {
       "width": 320,
       "direction": "country",
-      "responsive": true
+      "twoRows": false,
+      "compact": true,
+      "panelHeight": 232,
+      "overflow": false
     },
     {
       "width": 320,
       "direction": "commercial",
-      "responsive": true
+      "twoRows": false,
+      "compact": true,
+      "panelHeight": 232,
+      "overflow": false
     },
     {
       "width": 320,
       "direction": "resort",
-      "responsive": true
+      "twoRows": false,
+      "compact": true,
+      "panelHeight": 232,
+      "overflow": false
     },
     {
       "width": 320,
       "direction": "international",
-      "responsive": true
+      "twoRows": false,
+      "compact": true,
+      "panelHeight": 232,
+      "overflow": false
     },
     {
       "width": 390,
       "direction": "city",
-      "responsive": true
+      "twoRows": false,
+      "compact": true,
+      "panelHeight": 232,
+      "overflow": false
     },
     {
       "width": 390,
       "direction": "country",
-      "responsive": true
+      "twoRows": false,
+      "compact": true,
+      "panelHeight": 232,
+      "overflow": false
     },
     {
       "width": 390,
       "direction": "commercial",
-      "responsive": true
+      "twoRows": false,
+      "compact": true,
+      "panelHeight": 232,
+      "overflow": false
     },
     {
       "width": 390,
       "direction": "resort",
-      "responsive": true
+      "twoRows": false,
+      "compact": true,
+      "panelHeight": 232,
+      "overflow": false
     },
     {
       "width": 390,
       "direction": "international",
-      "responsive": true
+      "twoRows": false,
+      "compact": true,
+      "panelHeight": 232,
+      "overflow": false
     },
     {
       "width": 540,
       "direction": "city",
-      "responsive": true
+      "twoRows": false,
+      "compact": true,
+      "panelHeight": 232,
+      "overflow": false
     },
     {
       "width": 540,
       "direction": "country",
-      "responsive": true
+      "twoRows": false,
+      "compact": true,
+      "panelHeight": 232,
+      "overflow": false
     },
     {
       "width": 540,
       "direction": "commercial",
-      "responsive": true
+      "twoRows": false,
+      "compact": true,
+      "panelHeight": 232,
+      "overflow": false
     },
     {
       "width": 540,
       "direction": "resort",
-      "responsive": true
+      "twoRows": false,
+      "compact": true,
+      "panelHeight": 232,
+      "overflow": false
     },
     {
       "width": 540,
       "direction": "international",
-      "responsive": true
+      "twoRows": false,
+      "compact": true,
+      "panelHeight": 232,
+      "overflow": false
+    },
+    {
+      "width": 541,
+      "direction": "city",
+      "twoRows": false,
+      "compact": true,
+      "panelHeight": 232,
+      "overflow": false
+    },
+    {
+      "width": 541,
+      "direction": "country",
+      "twoRows": false,
+      "compact": true,
+      "panelHeight": 232,
+      "overflow": false
+    },
+    {
+      "width": 541,
+      "direction": "commercial",
+      "twoRows": false,
+      "compact": true,
+      "panelHeight": 232,
+      "overflow": false
+    },
+    {
+      "width": 541,
+      "direction": "resort",
+      "twoRows": false,
+      "compact": true,
+      "panelHeight": 232,
+      "overflow": false
+    },
+    {
+      "width": 541,
+      "direction": "international",
+      "twoRows": false,
+      "compact": true,
+      "panelHeight": 232,
+      "overflow": false
+    },
+    {
+      "width": 767,
+      "direction": "city",
+      "twoRows": false,
+      "compact": true,
+      "panelHeight": 232,
+      "overflow": false
+    },
+    {
+      "width": 767,
+      "direction": "country",
+      "twoRows": false,
+      "compact": true,
+      "panelHeight": 232,
+      "overflow": false
+    },
+    {
+      "width": 767,
+      "direction": "commercial",
+      "twoRows": false,
+      "compact": true,
+      "panelHeight": 232,
+      "overflow": false
+    },
+    {
+      "width": 767,
+      "direction": "resort",
+      "twoRows": false,
+      "compact": true,
+      "panelHeight": 232,
+      "overflow": false
+    },
+    {
+      "width": 767,
+      "direction": "international",
+      "twoRows": false,
+      "compact": true,
+      "panelHeight": 232,
+      "overflow": false
     },
     {
       "width": 768,
       "direction": "city",
-      "responsive": true
+      "twoRows": false,
+      "compact": false,
+      "panelHeight": 266,
+      "overflow": false
     },
     {
       "width": 768,
       "direction": "country",
-      "responsive": true
+      "twoRows": false,
+      "compact": false,
+      "panelHeight": 266,
+      "overflow": false
     },
     {
       "width": 768,
       "direction": "commercial",
-      "responsive": true
+      "twoRows": false,
+      "compact": false,
+      "panelHeight": 266,
+      "overflow": false
     },
     {
       "width": 768,
       "direction": "resort",
-      "responsive": true
+      "twoRows": false,
+      "compact": false,
+      "panelHeight": 266,
+      "overflow": false
     },
     {
       "width": 768,
       "direction": "international",
-      "responsive": true
+      "twoRows": false,
+      "compact": false,
+      "panelHeight": 266,
+      "overflow": false
     },
     {
       "width": 1024,
       "direction": "city",
       "twoRows": true,
-      "height": 64,
-      "fontSize": 19
+      "compact": false,
+      "panelHeight": 186,
+      "overflow": false
     },
     {
       "width": 1024,
       "direction": "country",
       "twoRows": true,
-      "height": 64,
-      "fontSize": 19
+      "compact": false,
+      "panelHeight": 186,
+      "overflow": false
     },
     {
       "width": 1024,
       "direction": "commercial",
       "twoRows": true,
-      "height": 64,
-      "fontSize": 19
+      "compact": false,
+      "panelHeight": 186,
+      "overflow": false
     },
     {
       "width": 1024,
       "direction": "resort",
       "twoRows": true,
-      "height": 64,
-      "fontSize": 19
+      "compact": false,
+      "panelHeight": 186,
+      "overflow": false
     },
     {
       "width": 1024,
       "direction": "international",
       "twoRows": true,
-      "height": 64,
-      "fontSize": 19
+      "compact": false,
+      "panelHeight": 186,
+      "overflow": false
     },
     {
       "width": 1280,
       "direction": "city",
       "twoRows": true,
-      "height": 64,
-      "fontSize": 19
+      "compact": false,
+      "panelHeight": 194,
+      "overflow": false
     },
     {
       "width": 1280,
       "direction": "country",
       "twoRows": true,
-      "height": 64,
-      "fontSize": 19
+      "compact": false,
+      "panelHeight": 194,
+      "overflow": false
     },
     {
       "width": 1280,
       "direction": "commercial",
       "twoRows": true,
-      "height": 64,
-      "fontSize": 19
+      "compact": false,
+      "panelHeight": 194,
+      "overflow": false
     },
     {
       "width": 1280,
       "direction": "resort",
       "twoRows": true,
-      "height": 64,
-      "fontSize": 19
+      "compact": false,
+      "panelHeight": 194,
+      "overflow": false
     },
     {
       "width": 1280,
       "direction": "international",
       "twoRows": true,
-      "height": 64,
-      "fontSize": 19
-    },
-    {
-      "width": 1366,
-      "direction": "city",
-      "twoRows": true,
-      "height": 64,
-      "fontSize": 19
-    },
-    {
-      "width": 1366,
-      "direction": "country",
-      "twoRows": true,
-      "height": 64,
-      "fontSize": 19
-    },
-    {
-      "width": 1366,
-      "direction": "commercial",
-      "twoRows": true,
-      "height": 64,
-      "fontSize": 19
-    },
-    {
-      "width": 1366,
-      "direction": "resort",
-      "twoRows": true,
-      "height": 64,
-      "fontSize": 19
-    },
-    {
-      "width": 1366,
-      "direction": "international",
-      "twoRows": true,
-      "height": 64,
-      "fontSize": 19
+      "compact": false,
+      "panelHeight": 194,
+      "overflow": false
     },
     {
       "width": 1440,
       "direction": "city",
       "twoRows": true,
-      "height": 64,
-      "fontSize": 19
+      "compact": false,
+      "panelHeight": 194,
+      "overflow": false
     },
     {
       "width": 1440,
       "direction": "country",
       "twoRows": true,
-      "height": 64,
-      "fontSize": 19
+      "compact": false,
+      "panelHeight": 194,
+      "overflow": false
     },
     {
       "width": 1440,
       "direction": "commercial",
       "twoRows": true,
-      "height": 64,
-      "fontSize": 19
+      "compact": false,
+      "panelHeight": 194,
+      "overflow": false
     },
     {
       "width": 1440,
       "direction": "resort",
       "twoRows": true,
-      "height": 64,
-      "fontSize": 19
+      "compact": false,
+      "panelHeight": 194,
+      "overflow": false
     },
     {
       "width": 1440,
       "direction": "international",
       "twoRows": true,
-      "height": 64,
-      "fontSize": 19
+      "compact": false,
+      "panelHeight": 194,
+      "overflow": false
     },
     {
       "width": 1920,
       "direction": "city",
       "twoRows": true,
-      "height": 64,
-      "fontSize": 19
+      "compact": false,
+      "panelHeight": 194,
+      "overflow": false
     },
     {
       "width": 1920,
       "direction": "country",
       "twoRows": true,
-      "height": 64,
-      "fontSize": 19
+      "compact": false,
+      "panelHeight": 194,
+      "overflow": false
     },
     {
       "width": 1920,
       "direction": "commercial",
       "twoRows": true,
-      "height": 64,
-      "fontSize": 19
+      "compact": false,
+      "panelHeight": 194,
+      "overflow": false
     },
     {
       "width": 1920,
       "direction": "resort",
       "twoRows": true,
-      "height": 64,
-      "fontSize": 19
+      "compact": false,
+      "panelHeight": 194,
+      "overflow": false
     },
     {
       "width": 1920,
       "direction": "international",
       "twoRows": true,
-      "height": 64,
-      "fontSize": 19
+      "compact": false,
+      "panelHeight": 194,
+      "overflow": false
     },
     {
       "width": 2560,
       "direction": "city",
       "twoRows": true,
-      "height": 64,
-      "fontSize": 19
+      "compact": false,
+      "panelHeight": 194,
+      "overflow": false
     },
     {
       "width": 2560,
       "direction": "country",
       "twoRows": true,
-      "height": 64,
-      "fontSize": 19
+      "compact": false,
+      "panelHeight": 194,
+      "overflow": false
     },
     {
       "width": 2560,
       "direction": "commercial",
       "twoRows": true,
-      "height": 64,
-      "fontSize": 19
+      "compact": false,
+      "panelHeight": 194,
+      "overflow": false
     },
     {
       "width": 2560,
       "direction": "resort",
       "twoRows": true,
-      "height": 64,
-      "fontSize": 19
+      "compact": false,
+      "panelHeight": 194,
+      "overflow": false
     },
     {
       "width": 2560,
       "direction": "international",
       "twoRows": true,
-      "height": 64,
-      "fontSize": 19
+      "compact": false,
+      "panelHeight": 194,
+      "overflow": false
     }
   ],
   "customDepartmentDropdown": true,
+  "mobileModalAndCount": true,
   "searchAndReset": true,
+  "sortingAndCollections": true,
+  "accessibility": [],
   "errors": []
 }

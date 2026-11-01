@@ -113,10 +113,12 @@
     "../catalog-kit-v1.css",
     "../catalog-kit-v1.js",
     "../listing.js",
-    "../kit/quick-filter-dropdowns/quick-filters.js"
+    "../kit/quick-filter-dropdowns/quick-filters.js",
+    "../catalog-filters.css"
   ],
   "catalogExceptions": [
-    "64px / 19px two-row desktop filters",
+    "64px / 19px two-row desktop filters from 1024px",
+    "58px compact search and full-filter dialog up to 767px; tablet composition 768–1023px",
     "detailed ListingCard instead of homepage LaunchCard",
     "54px compact card actions; stacked in cards narrower than 340px"
   ],

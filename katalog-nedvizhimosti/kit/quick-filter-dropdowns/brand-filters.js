@@ -14,7 +14,7 @@
     fieldset.dataset.brandContext = context;
     var legend = document.createElement('legend');
     legend.className = 'barnes-brand-filters__legend';
-    legend.textContent = 'Подборки BARNES';
+    legend.textContent = 'Подборки BARN Estate';
     fieldset.appendChild(legend);
     choices.forEach(function (choice) {
       var label = document.createElement('label');
@@ -47,7 +47,7 @@
     var toolbar = document.querySelector('.catalog-mode-toolbar');
     if (toolbar && !document.querySelector('[data-brand-context=listing]')) {
       var row = group('listing');
-      var refinements = toolbar.querySelector('.catalog-toolbar__secondary');
+      var refinements = document.querySelector('[data-catalog-collections]') || toolbar.querySelector('.catalog-toolbar__secondary');
       if (refinements) refinements.append(row);
       else toolbar.appendChild(row);
     }

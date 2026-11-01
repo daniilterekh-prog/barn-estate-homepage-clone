@@ -1,0 +1,98 @@
+/* Catalogue composition using the approved homepage search, choice and spacing roles. */
+html body.catalog-listing-page .catalog-mode-toolbar {
+ --catalog-filter-font-size:19px;--catalog-filter-ink:#4f4d49;--catalog-filter-muted:#656462;
+ display:flex;flex-direction:column;align-items:stretch;gap:16px;
+ margin:0;padding:24px;border:1px solid #e4e4e4;border-radius:1px;background:#fff;
+}
+.catalog-toolbar__primary,.catalog-toolbar__secondary{display:grid;gap:16px;align-items:stretch;min-width:0}
+.catalog-toolbar__primary{grid-template-columns:minmax(170px,1fr) minmax(250px,1.15fr) minmax(240px,1.85fr)}
+.catalog-toolbar__secondary{grid-template-columns:minmax(0,1fr) 168px}
+html body.catalog-listing-page .catalog-mode-toolbar > :is(.catalog-toolbar__primary,.catalog-toolbar__secondary) > [class][class]{grid-area:auto;margin:0;min-width:0}
+html body.catalog-listing-page .catalog-direction{position:relative;display:flex;align-items:center;height:64px;border:1px solid #8b8986;border-radius:1px;background:#fff;color:#1e1e1e}
+html body.catalog-listing-page .catalog-direction>.resort-select-trigger{display:block;box-sizing:border-box;width:100%;height:62px;padding:0 44px 0 20px;border:0;background:transparent;color:inherit;font:400 var(--catalog-filter-font-size)/1.2 'Tilda Sans',sans-serif;text-align:left;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;cursor:pointer}
+.catalog-direction>svg{position:absolute;right:18px;width:14px;height:14px;pointer-events:none}
+html body.catalog-listing-page .catalog-toolbar__primary .catalog-mode-switch{box-sizing:border-box;display:flex;align-items:stretch;gap:0;height:64px;padding:4px;border:1px solid #8b8986;border-radius:1px;background:#fff}
+html body.catalog-listing-page .catalog-toolbar__primary .catalog-mode-switch__button{box-sizing:border-box;flex:1 1 0;min-width:0;height:54px;min-height:0;padding:0 6px;border:1px solid transparent;border-radius:1px;background:transparent;color:#4f4d49;font:400 var(--catalog-filter-font-size)/1.1 'Tilda Sans',sans-serif;text-align:center;white-space:nowrap}
+html body.catalog-listing-page .catalog-toolbar__primary .catalog-mode-switch__button.is-active{background:#f9f3f3;border-color:#8b1d25;color:#8b1d25}
+html body.catalog-listing-page .catalog-toolbar__primary .catalog-mode-switch__button.is-active::after{display:none}
+html body.catalog-listing-page .catalog-toolbar__primary .catalog-mode-switch__button:not(.is-active):hover{background:#f7f7f7;color:#1e1e1e}
+html body.catalog-listing-page .catalog-toolbar__primary .catalog-search-row{display:flex;height:64px;margin:0;min-width:0}
+html body.catalog-listing-page .catalog-text-search{box-sizing:border-box;display:flex;align-items:center;gap:14px;width:100%;max-width:none;min-width:0;height:64px;padding:0 20px;border:1px solid #8b8986;border-radius:1px;color:#656462;background:#fff}
+html body.catalog-listing-page .catalog-text-search svg{width:20px;height:20px;margin:0;flex:none}
+html body.catalog-listing-page .catalog-text-search input{width:100%;min-width:0;height:62px;padding:0;border:0;border-radius:0;background:transparent;color:#1e1e1e;font:300 var(--catalog-filter-font-size)/1.2 'Tilda Sans',sans-serif}
+html body.catalog-listing-page .catalog-text-search input::placeholder{color:#656462;opacity:1}
+html body.catalog-listing-page .catalog-text-search:focus-within{border-color:#8b1d25}
+/* One continuous strip echoes the homepage search bar; labels carry the hierarchy. */
+html body.catalog-listing-page .catalog-toolbar__secondary .catalog-mode-filters{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;width:100%;height:64px;border:1px solid #8b8986;border-radius:1px;background:#fff;box-sizing:border-box}
+html body.catalog-listing-page .catalog-toolbar__secondary .catalog-quick-filters__item[class]{min-width:0;height:62px;min-height:0;border:0}
+html body.catalog-listing-page .catalog-toolbar__secondary .catalog-quick-filters__item+.catalog-quick-filters__item{border-left:1px solid #e4e4e4}
+html body.catalog-listing-page .catalog-toolbar__secondary .catalog-quick-filters__button{display:flex;align-items:center;justify-content:space-between;gap:12px;width:100%;height:62px;min-height:0;padding:0 20px;border:0;border-radius:0;background:transparent;color:#4f4d49;font:300 var(--catalog-filter-font-size)/1.2 'Tilda Sans',sans-serif;text-align:left}
+html body.catalog-listing-page .catalog-toolbar__secondary .catalog-quick-filters__content{display:block;min-width:0;max-width:calc(100% - 24px)}
+html body.catalog-listing-page .catalog-toolbar__secondary .catalog-quick-filters__icon{display:none}
+html body.catalog-listing-page .catalog-toolbar__secondary .catalog-quick-filters__caption{display:block;white-space:normal;line-height:1.2;overflow:hidden;text-overflow:ellipsis}
+html body.catalog-listing-page .catalog-toolbar__secondary .catalog-quick-filters__chevron{flex:none;width:12px;height:12px}
+html body.catalog-listing-page .catalog-toolbar__secondary .catalog-quick-filters__button:is(:hover,.is-open){background:#f7f7f7}
+html body.catalog-listing-page .catalog-toolbar__secondary .catalog-quick-filters__button.is-active{background:#f9f3f3;color:#8b1d25}
+html body.catalog-listing-page .catalog-toolbar__secondary .catalog-mode-detailed-filters[class][class]{position:relative;display:flex;align-items:center;justify-content:center;gap:10px;width:100%;height:64px;min-height:64px;padding:0 16px;border:1px solid #8b1d25;border-radius:1px;background:#8b1d25;color:#fff;font:400 17px/1.1 'Tilda Sans',sans-serif;box-sizing:border-box}
+html body.catalog-listing-page .catalog-toolbar__secondary .catalog-mode-detailed-filters:hover{background:#75171e}
+html body.catalog-listing-page .catalog-mode-detailed-filters svg{flex:none;width:20px;height:20px}
+.catalog-filter-count{display:inline-grid;place-items:center;min-width:20px;height:20px;padding-inline:4px;border-radius:1px;background:#fff;color:#8b1d25;font:400 13px/1 'Tilda Sans',sans-serif}
+html body.catalog-listing-page .catalog-mode-toolbar :is(button,input):focus-visible{outline:2px solid #8b1d25;outline-offset:3px}
+html body.catalog-listing-page .catalog-mode-detailed-filters:focus-visible{outline-color:#1e1e1e}
+/* Optional collections sit between the search and the result controls. */
+html body.catalog-listing-page .catalog-collections-row{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:60px;padding:8px 0 12px;margin-bottom:12px;border-bottom:1px solid #e4e4e4}
+html body.catalog-listing-page .catalog-collections-row .barnes-brand-filters{display:flex;align-items:center;flex-wrap:wrap;gap:4px 28px;width:auto;margin:0;padding:0;font:300 15px/1.3 'Tilda Sans',sans-serif;color:#4f4d49}
+html body.catalog-listing-page .catalog-collections-row .barnes-brand-filters label{min-height:40px;gap:10px;padding:0;white-space:nowrap}
+html body.catalog-listing-page .catalog-collections-row .barnes-brand-filters__box{width:18px;height:18px;flex-basis:18px;border-color:#8b8986}
+html body.catalog-listing-page .catalog-collections-row .barnes-brand-filters input{width:18px;height:18px}
+html body.catalog-listing-page .catalog-collections-row .barnes-brand-filters input:checked+.barnes-brand-filters__box::after{left:5px;top:2px}
+html body.catalog-listing-page .catalog-reset-all{flex:none;padding:0;color:#8b1d25;font-size:15px;text-decoration:underline;text-underline-offset:4px}
+html body.catalog-listing-page .catalog-result-summary{display:flex;align-items:center;justify-content:space-between;gap:20px;margin:0 0 24px;min-height:44px;color:#656462;font:300 15px/1.3 'Tilda Sans',sans-serif}
+.catalog-result-actions{display:flex;align-items:center;gap:28px;min-width:0}
+html body.catalog-listing-page .catalog-result-summary [data-show-favorites]{min-height:44px;padding:0;font:300 15px/1.3 'Tilda Sans',sans-serif;color:#4f4d49;white-space:nowrap}
+html body.catalog-listing-page .catalog-result-summary [data-show-favorites][aria-pressed=true]{color:#8b1d25}
+html body.catalog-listing-page .catalog-result-summary .catalog-grid__sort{position:relative;display:flex;align-items:center;min-width:0;width:200px;height:44px;margin:0;padding:0;border:0;color:#4f4d49}
+html body.catalog-listing-page .catalog-result-summary .resort-sort-trigger{box-sizing:border-box;display:block;width:100%;height:44px;padding:0 24px 0 0;border:0;background:transparent;color:inherit;font:300 15px/1.3 'Tilda Sans',sans-serif;text-align:right;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.catalog-sort-chevron{position:absolute;right:0;top:15px;pointer-events:none}
+/* Dropdown choices use the quiet selected state from the kit's quiz choices. */
+html body.catalog-listing-page .resort-quick-dropdown{padding:8px;border:1px solid #8b8986;border-radius:1px;background:#fff;color:#4f4d49;box-shadow:0 8px 24px #1e1e1e0a}
+html body.catalog-listing-page .resort-quick-dropdown .catalog-quick-filters__dropdown-header{padding:8px 10px 12px;margin-bottom:4px;border-bottom:1px solid #e4e4e4;font:400 15px/1.3 'Tilda Sans',sans-serif}
+html body.catalog-listing-page .resort-quick-dropdown .catalog-quick-filters__dropdown-close{width:28px;height:28px;color:#4f4d49}
+html body.catalog-listing-page .resort-quick-dropdown [role=option]{padding:12px;min-height:44px;border:1px solid transparent;border-radius:1px;font:300 17px/1.3 'Tilda Sans',sans-serif}
+html body.catalog-listing-page .resort-quick-dropdown [role=option]:hover{background:#f7f7f7;color:#1e1e1e}
+html body.catalog-listing-page .resort-quick-dropdown [role=option].is-selected{background:#f9f3f3;color:#8b1d25;border-color:#8b1d25}
+@media(min-width:1441px){html body.catalog-listing-page .catalog-toolbar__secondary .catalog-mode-detailed-filters[class][class]{font-size:19px}}
+@media(max-width:1100px){html body.catalog-listing-page .catalog-mode-toolbar{padding:20px}.catalog-toolbar__primary{grid-template-columns:minmax(170px,1fr) minmax(240px,1.2fr) minmax(220px,1.6fr)}html body.catalog-listing-page .catalog-toolbar__secondary .catalog-quick-filters__button{padding-inline:14px}}
+@media(min-width:768px) and (max-width:1023px){
+ html body.catalog-listing-page .catalog-mode-toolbar{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+ .catalog-toolbar__primary,.catalog-toolbar__secondary{display:contents}
+ html body.catalog-listing-page .catalog-mode-toolbar>.catalog-toolbar__primary>:is(.catalog-direction,.catalog-mode-switch)[class][class]{grid-column:span 2}
+ html body.catalog-listing-page .catalog-mode-toolbar>.catalog-toolbar__primary>.catalog-search-row[class][class]{grid-column:1/4;grid-row:2}
+ html body.catalog-listing-page .catalog-mode-toolbar>.catalog-toolbar__secondary>.catalog-mode-filters[class][class]{grid-column:1/-1;grid-row:3}
+ html body.catalog-listing-page .catalog-mode-toolbar>.catalog-toolbar__secondary>.catalog-mode-detailed-filters[class][class]{grid-column:4;grid-row:2;padding-inline:10px;font-size:16px}
+}
+@media(max-width:767px){
+ html body.catalog-listing-page .catalog-mode-toolbar{--catalog-filter-font-size:17px;display:grid;grid-template-columns:minmax(0,1fr) 58px;gap:12px 0;padding:16px}
+ .catalog-toolbar__primary,.catalog-toolbar__secondary{display:contents}
+ html body.catalog-listing-page .catalog-mode-toolbar>.catalog-toolbar__primary>:is(.catalog-direction,.catalog-mode-switch)[class][class]{grid-column:1/-1;height:58px}
+ html body.catalog-listing-page .catalog-direction>.resort-select-trigger{height:56px;padding-left:16px;font-size:18px}
+ html body.catalog-listing-page .catalog-direction>svg{right:16px}
+ html body.catalog-listing-page .catalog-toolbar__primary .catalog-mode-switch__button{height:48px;font-size:17px}
+ html body.catalog-listing-page .catalog-mode-toolbar>.catalog-toolbar__primary>.catalog-search-row[class][class]{grid-column:1;grid-row:3;height:58px}
+ html body.catalog-listing-page .catalog-text-search{height:58px;padding-inline:14px;border-right:0}
+ html body.catalog-listing-page .catalog-text-search input{height:56px;font-size:17px}
+ html body.catalog-listing-page .catalog-text-search svg{display:none}
+ html body.catalog-listing-page .catalog-toolbar__secondary .catalog-mode-filters{display:none}
+ html body.catalog-listing-page .catalog-mode-toolbar>.catalog-toolbar__secondary>.catalog-mode-detailed-filters[class][class]{grid-column:2;grid-row:3;width:58px;height:58px;min-height:58px;padding:0;border-color:#8b8986;background:#fff;color:#1e1e1e}
+ html body.catalog-listing-page .catalog-mode-detailed-filters__label{display:none!important}
+ .catalog-filter-count{position:absolute;right:3px;top:3px;min-width:16px;height:16px;font-size:11px;background:#8b1d25;color:#fff}
+ html body.catalog-listing-page .catalog-collections-row{align-items:flex-start;gap:8px;flex-direction:column;padding:12px 0;margin-bottom:12px}
+ html body.catalog-listing-page .catalog-collections-row .barnes-brand-filters{display:flex;flex-wrap:wrap;gap:0 24px;font-size:15px}
+ html body.catalog-listing-page .catalog-collections-row .barnes-brand-filters label{min-height:36px}
+ html body.catalog-listing-page .catalog-reset-all{min-height:36px;font-size:14px}
+ html body.catalog-listing-page .catalog-result-summary{display:grid;grid-template-columns:auto minmax(0,1fr);gap:0 12px;margin-bottom:20px;font-size:14px}
+ .catalog-result-actions{display:contents}
+ html body.catalog-listing-page .catalog-result-summary .catalog-grid__sort{grid-column:2;grid-row:1;justify-self:end;width:180px;max-width:100%}
+ html body.catalog-listing-page .catalog-result-summary .resort-sort-trigger{font-size:14px}
+ html body.catalog-listing-page .catalog-result-summary [data-show-favorites]{grid-column:1/-1;grid-row:2;justify-self:start;font-size:14px;min-height:36px}
+}

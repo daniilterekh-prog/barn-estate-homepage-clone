@@ -10,6 +10,7 @@
  };
  window.addEventListener('scroll',()=>{if(!frame)frame=requestAnimationFrame(updateSticky)},{passive:true});updateSticky();
  window.__barnesHeaderContacts?.refresh();
+ const smallScreen=matchMedia('(max-width:767px)');const updateSearchHint=()=>document.querySelector('#catalog-search').placeholder=smallScreen.matches?'Название или ID':'Название ЖК, адрес или ID';smallScreen.addEventListener('change',updateSearchHint);updateSearchHint();
  document.querySelector('.floating-expert__close')?.addEventListener('click',event=>{event.currentTarget.closest('.barnes-block').hidden=true;});
  // Replace legacy reset copy without changing the filter reset behavior.
  const renameReset=()=>{const button=document.querySelector('.hero-filter-modal__reset');if(button){button.textContent='Сбросить';button.setAttribute('aria-label','Сбросить все фильтры');}};

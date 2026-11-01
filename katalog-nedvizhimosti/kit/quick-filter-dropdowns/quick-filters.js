@@ -25,7 +25,7 @@
   var savedPopupInert = false;
   var selectConfigs = new Map();
   function mountSelectDropdowns() {
-    document.querySelectorAll('.catalog-mode-toolbar .catalog-grid__sort select, .catalog-direction select, .map-browser select[data-filter]').forEach(function (select) {
+    document.querySelectorAll('.catalog-grid__sort select, .catalog-direction select, .map-browser select[data-filter]').forEach(function (select) {
       if (select.dataset.customDropdownReady) return;
       select.dataset.customDropdownReady = 'true';
       var button = document.createElement('button');
