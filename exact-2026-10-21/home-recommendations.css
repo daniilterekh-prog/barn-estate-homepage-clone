@@ -384,3 +384,10 @@ body.barnes-home-typography .barnes-choice .home-rec-address span {min-width:0;o
     --barnes-choice-slide-width: calc((100% - var(--barnes-choice-gap) * 2) / 3);
   }
 }
+
+/* Keep both recommendation controls together at the right edge. */
+@media (min-width:768px) {
+ body.barnes-home-typography .barnes-choice__slider-row {grid-template-columns:minmax(0,1fr) auto auto;column-gap:12px;}
+ body.barnes-home-typography .barnes-choice__nav-btn--prev {grid-column:2;justify-self:end;margin-left:0;}
+ body.barnes-home-typography .barnes-choice__nav-btn--next {grid-column:3;}
+}
