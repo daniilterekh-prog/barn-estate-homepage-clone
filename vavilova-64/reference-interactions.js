@@ -20,7 +20,7 @@
 })()
 
 ;(() => {
-  const referenceTitle = 'ЖК «Вавилова 64» — квартиры премиум-класса | BARNES'
+  const referenceTitle = 'ЖК «Вавилова 64» — квартиры премиум-класса | BARN Estate'
   const referenceDescription = 'ЖК «Вавилова 64» в Гагаринском районе Москвы: квартиры площадью от 29 до 120 м², два корпуса, приватная инфраструктура и панорамное остекление.'
 
   document.documentElement.lang = 'ru'

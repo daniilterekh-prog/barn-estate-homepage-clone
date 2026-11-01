@@ -1,0 +1,1615 @@
+{
+  "checkedAt": "2026-11-01T21:16:50.820Z",
+  "url": "http://127.0.0.1:4215/vavilova-64/#characteristics",
+  "measurements": [
+    {
+      "width": 320,
+      "overflow": false,
+      "container": {
+        "font": 16,
+        "line": "20.8px",
+        "weight": "400",
+        "color": "rgb(30, 30, 30)",
+        "height": 758.546875,
+        "width": 305,
+        "padding": "0px 22px",
+        "gap": "0px",
+        "overflow": false
+      },
+      "heading": {
+        "font": 22,
+        "line": "26.4px",
+        "weight": "300",
+        "color": "rgb(30, 30, 30)",
+        "height": 52.78125,
+        "width": 261,
+        "padding": "0px",
+        "gap": "normal",
+        "overflow": false
+      },
+      "eyebrow": {
+        "font": 12,
+        "line": "14.4px",
+        "weight": "400",
+        "color": "rgb(79, 77, 73)",
+        "height": 14.40625,
+        "width": 261,
+        "padding": "0px",
+        "gap": "normal",
+        "overflow": false
+      },
+      "section": {
+        "font": 16,
+        "line": "20.8px",
+        "weight": "400",
+        "color": "rgb(30, 30, 30)",
+        "height": 854.546875,
+        "width": 305,
+        "padding": "48px 0px",
+        "gap": "normal",
+        "overflow": false
+      },
+      "passport": {
+        "font": 18,
+        "line": "19.8px",
+        "weight": "400",
+        "color": "rgb(255, 255, 255)",
+        "height": 58,
+        "width": 261,
+        "padding": "0px 24px",
+        "gap": "12px",
+        "overflow": false
+      },
+      "footer": {
+        "font": 18,
+        "line": "19.8px",
+        "weight": "400",
+        "color": "rgb(255, 255, 255)",
+        "height": 58,
+        "width": 228.59375,
+        "padding": "0px 24px",
+        "gap": "normal",
+        "overflow": false
+      },
+      "copy": {
+        "font": 15,
+        "line": "21px",
+        "weight": "300",
+        "color": "rgb(79, 77, 73)",
+        "height": 504,
+        "width": 261,
+        "padding": "0px",
+        "gap": "normal",
+        "overflow": false
+      },
+      "readmore": {
+        "font": 12,
+        "line": "14.4px",
+        "weight": "400",
+        "color": "rgb(139, 29, 37)",
+        "height": 44,
+        "width": 125.90625,
+        "padding": "8px 0px",
+        "gap": "12px",
+        "overflow": false
+      },
+      "chip": {
+        "font": 16,
+        "line": "19.2px",
+        "weight": "400",
+        "color": "rgb(30, 30, 30)",
+        "height": 44,
+        "width": 107.578125,
+        "padding": "10px 16px",
+        "gap": "normal",
+        "overflow": false
+      },
+      "hero": {
+        "font": 16,
+        "line": "16px",
+        "weight": "400",
+        "color": "rgb(255, 255, 255)",
+        "height": 520,
+        "width": 305,
+        "padding": "0px",
+        "gap": "normal",
+        "overflow": false
+      },
+      "photo": {
+        "font": 16,
+        "line": "20.8px",
+        "weight": "400",
+        "color": "rgb(30, 30, 30)",
+        "height": 168,
+        "width": 261,
+        "padding": "0px",
+        "gap": "normal",
+        "overflow": false
+      },
+      "radiusViolations": 0,
+      "photoLoaded": true,
+      "heroActions": 1,
+      "rows": [
+        {
+          "overlaps": false,
+          "overflow": false
+        },
+        {
+          "overlaps": false,
+          "overflow": false
+        },
+        {
+          "overlaps": false,
+          "overflow": false
+        },
+        {
+          "overlaps": false,
+          "overflow": false
+        },
+        {
+          "overlaps": false,
+          "overflow": false
+        },
+        {
+          "overlaps": false,
+          "overflow": false
+        },
+        {
+          "overlaps": false,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "width": 360,
+      "overflow": false,
+      "container": {
+        "font": 16,
+        "line": "20.8px",
+        "weight": "400",
+        "color": "rgb(30, 30, 30)",
+        "height": 758.546875,
+        "width": 345,
+        "padding": "0px 22px",
+        "gap": "0px",
+        "overflow": false
+      },
+      "heading": {
+        "font": 22,
+        "line": "26.4px",
+        "weight": "300",
+        "color": "rgb(30, 30, 30)",
+        "height": 52.78125,
+        "width": 301,
+        "padding": "0px",
+        "gap": "normal",
+        "overflow": false
+      },
+      "eyebrow": {
+        "font": 12,
+        "line": "14.4px",
+        "weight": "400",
+        "color": "rgb(79, 77, 73)",
+        "height": 14.40625,
+        "width": 301,
+        "padding": "0px",
+        "gap": "normal",
+        "overflow": false
+      },
+      "section": {
+        "font": 16,
+        "line": "20.8px",
+        "weight": "400",
+        "color": "rgb(30, 30, 30)",
+        "height": 854.546875,
+        "width": 345,
+        "padding": "48px 0px",
+        "gap": "normal",
+        "overflow": false
+      },
+      "passport": {
+        "font": 18,
+        "line": "19.8px",
+        "weight": "400",
+        "color": "rgb(255, 255, 255)",
+        "height": 58,
+        "width": 301,
+        "padding": "0px 24px",
+        "gap": "12px",
+        "overflow": false
+      },
+      "footer": {
+        "font": 18,
+        "line": "19.8px",
+        "weight": "400",
+        "color": "rgb(255, 255, 255)",
+        "height": 58,
+        "width": 267.03125,
+        "padding": "0px 24px",
+        "gap": "normal",
+        "overflow": false
+      },
+      "copy": {
+        "font": 15,
+        "line": "21px",
+        "weight": "300",
+        "color": "rgb(79, 77, 73)",
+        "height": 462,
+        "width": 301,
+        "padding": "0px",
+        "gap": "normal",
+        "overflow": false
+      },
+      "readmore": {
+        "font": 12,
+        "line": "14.4px",
+        "weight": "400",
+        "color": "rgb(139, 29, 37)",
+        "height": 44,
+        "width": 125.90625,
+        "padding": "8px 0px",
+        "gap": "12px",
+        "overflow": false
+      },
+      "chip": {
+        "font": 16,
+        "line": "19.2px",
+        "weight": "400",
+        "color": "rgb(30, 30, 30)",
+        "height": 44,
+        "width": 107.578125,
+        "padding": "10px 16px",
+        "gap": "normal",
+        "overflow": false
+      },
+      "hero": {
+        "font": 16,
+        "line": "16px",
+        "weight": "400",
+        "color": "rgb(255, 255, 255)",
+        "height": 520,
+        "width": 345,
+        "padding": "0px",
+        "gap": "normal",
+        "overflow": false
+      },
+      "photo": {
+        "font": 16,
+        "line": "20.8px",
+        "weight": "400",
+        "color": "rgb(30, 30, 30)",
+        "height": 168,
+        "width": 301,
+        "padding": "0px",
+        "gap": "normal",
+        "overflow": false
+      },
+      "radiusViolations": 0,
+      "photoLoaded": true,
+      "heroActions": 1,
+      "rows": [
+        {
+          "overlaps": false,
+          "overflow": false
+        },
+        {
+          "overlaps": false,
+          "overflow": false
+        },
+        {
+          "overlaps": false,
+          "overflow": false
+        },
+        {
+          "overlaps": false,
+          "overflow": false
+        },
+        {
+          "overlaps": false,
+          "overflow": false
+        },
+        {
+          "overlaps": false,
+          "overflow": false
+        },
+        {
+          "overlaps": false,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "overflow": false,
+      "container": {
+        "font": 16,
+        "line": "20.8px",
+        "weight": "400",
+        "color": "rgb(30, 30, 30)",
+        "height": 732.15625,
+        "width": 375,
+        "padding": "0px 22px",
+        "gap": "0px",
+        "overflow": false
+      },
+      "heading": {
+        "font": 22,
+        "line": "26.4px",
+        "weight": "300",
+        "color": "rgb(30, 30, 30)",
+        "height": 26.390625,
+        "width": 331,
+        "padding": "0px",
+        "gap": "normal",
+        "overflow": false
+      },
+      "eyebrow": {
+        "font": 12,
+        "line": "14.4px",
+        "weight": "400",
+        "color": "rgb(79, 77, 73)",
+        "height": 14.40625,
+        "width": 331,
+        "padding": "0px",
+        "gap": "normal",
+        "overflow": false
+      },
+      "section": {
+        "font": 16,
+        "line": "20.8px",
+        "weight": "400",
+        "color": "rgb(30, 30, 30)",
+        "height": 828.15625,
+        "width": 375,
+        "padding": "48px 0px",
+        "gap": "normal",
+        "overflow": false
+      },
+      "passport": {
+        "font": 18,
+        "line": "19.8px",
+        "weight": "400",
+        "color": "rgb(255, 255, 255)",
+        "height": 58,
+        "width": 331,
+        "padding": "0px 24px",
+        "gap": "12px",
+        "overflow": false
+      },
+      "footer": {
+        "font": 18,
+        "line": "19.8px",
+        "weight": "400",
+        "color": "rgb(255, 255, 255)",
+        "height": 58,
+        "width": 295.84375,
+        "padding": "0px 24px",
+        "gap": "normal",
+        "overflow": false
+      },
+      "copy": {
+        "font": 15,
+        "line": "21px",
+        "weight": "300",
+        "color": "rgb(79, 77, 73)",
+        "height": 420,
+        "width": 331,
+        "padding": "0px",
+        "gap": "normal",
+        "overflow": false
+      },
+      "readmore": {
+        "font": 12,
+        "line": "14.4px",
+        "weight": "400",
+        "color": "rgb(139, 29, 37)",
+        "height": 44,
+        "width": 125.90625,
+        "padding": "8px 0px",
+        "gap": "12px",
+        "overflow": false
+      },
+      "chip": {
+        "font": 16,
+        "line": "19.2px",
+        "weight": "400",
+        "color": "rgb(30, 30, 30)",
+        "height": 44,
+        "width": 107.578125,
+        "padding": "10px 16px",
+        "gap": "normal",
+        "overflow": false
+      },
+      "hero": {
+        "font": 16,
+        "line": "16px",
+        "weight": "400",
+        "color": "rgb(255, 255, 255)",
+        "height": 520,
+        "width": 375,
+        "padding": "0px",
+        "gap": "normal",
+        "overflow": false
+      },
+      "photo": {
+        "font": 16,
+        "line": "20.8px",
+        "weight": "400",
+        "color": "rgb(30, 30, 30)",
+        "height": 168,
+        "width": 331,
+        "padding": "0px",
+        "gap": "normal",
+        "overflow": false
+      },
+      "radiusViolations": 0,
+      "photoLoaded": true,
+      "heroActions": 1,
+      "rows": [
+        {
+          "overlaps": false,
+          "overflow": false
+        },
+        {
+          "overlaps": false,
+          "overflow": false
+        },
+        {
+          "overlaps": false,
+          "overflow": false
+        },
+        {
+          "overlaps": false,
+          "overflow": false
+        },
+        {
+          "overlaps": false,
+          "overflow": false
+        },
+        {
+          "overlaps": false,
+          "overflow": false
+        },
+        {
+          "overlaps": false,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "width": 540,
+      "overflow": false,
+      "container": {
+        "font": 16,
+        "line": "20.8px",
+        "weight": "400",
+        "color": "rgb(30, 30, 30)",
+        "height": 732.15625,
+        "width": 525,
+        "padding": "0px 22px",
+        "gap": "0px",
+        "overflow": false
+      },
+      "heading": {
+        "font": 22,
+        "line": "26.4px",
+        "weight": "300",
+        "color": "rgb(30, 30, 30)",
+        "height": 26.390625,
+        "width": 370,
+        "padding": "0px",
+        "gap": "normal",
+        "overflow": false
+      },
+      "eyebrow": {
+        "font": 12,
+        "line": "14.4px",
+        "weight": "400",
+        "color": "rgb(79, 77, 73)",
+        "height": 14.40625,
+        "width": 481,
+        "padding": "0px",
+        "gap": "normal",
+        "overflow": false
+      },
+      "section": {
+        "font": 16,
+        "line": "20.8px",
+        "weight": "400",
+        "color": "rgb(30, 30, 30)",
+        "height": 828.15625,
+        "width": 525,
+        "padding": "48px 0px",
+        "gap": "normal",
+        "overflow": false
+      },
+      "passport": {
+        "font": 18,
+        "line": "19.8px",
+        "weight": "400",
+        "color": "rgb(255, 255, 255)",
+        "height": 58,
+        "width": 481,
+        "padding": "0px 24px",
+        "gap": "12px",
+        "overflow": false
+      },
+      "footer": {
+        "font": 18,
+        "line": "19.8px",
+        "weight": "400",
+        "color": "rgb(255, 255, 255)",
+        "height": 58,
+        "width": 439.96875,
+        "padding": "0px 24px",
+        "gap": "normal",
+        "overflow": false
+      },
+      "copy": {
+        "font": 15,
+        "line": "21px",
+        "weight": "300",
+        "color": "rgb(79, 77, 73)",
+        "height": 357,
+        "width": 481,
+        "padding": "0px",
+        "gap": "normal",
+        "overflow": false
+      },
+      "readmore": {
+        "font": 12,
+        "line": "14.4px",
+        "weight": "400",
+        "color": "rgb(139, 29, 37)",
+        "height": 44,
+        "width": 125.90625,
+        "padding": "8px 0px",
+        "gap": "12px",
+        "overflow": false
+      },
+      "chip": {
+        "font": 16,
+        "line": "19.2px",
+        "weight": "400",
+        "color": "rgb(30, 30, 30)",
+        "height": 44,
+        "width": 107.578125,
+        "padding": "10px 16px",
+        "gap": "normal",
+        "overflow": false
+      },
+      "hero": {
+        "font": 16,
+        "line": "16px",
+        "weight": "400",
+        "color": "rgb(255, 255, 255)",
+        "height": 520,
+        "width": 525,
+        "padding": "0px",
+        "gap": "normal",
+        "overflow": false
+      },
+      "photo": {
+        "font": 16,
+        "line": "20.8px",
+        "weight": "400",
+        "color": "rgb(30, 30, 30)",
+        "height": 168,
+        "width": 481,
+        "padding": "0px",
+        "gap": "normal",
+        "overflow": false
+      },
+      "radiusViolations": 0,
+      "photoLoaded": true,
+      "heroActions": 1,
+      "rows": [
+        {
+          "overlaps": false,
+          "overflow": false
+        },
+        {
+          "overlaps": false,
+          "overflow": false
+        },
+        {
+          "overlaps": false,
+          "overflow": false
+        },
+        {
+          "overlaps": false,
+          "overflow": false
+        },
+        {
+          "overlaps": false,
+          "overflow": false
+        },
+        {
+          "overlaps": false,
+          "overflow": false
+        },
+        {
+          "overlaps": false,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "overflow": false,
+      "container": {
+        "font": 16,
+        "line": "20.8px",
+        "weight": "400",
+        "color": "rgb(30, 30, 30)",
+        "height": 647.359375,
+        "width": 753,
+        "padding": "0px 24px",
+        "gap": "0px",
+        "overflow": false
+      },
+      "heading": {
+        "font": 38,
+        "line": "45.6px",
+        "weight": "300",
+        "color": "rgb(30, 30, 30)",
+        "height": 45.59375,
+        "width": 705,
+        "padding": "0px",
+        "gap": "normal",
+        "overflow": false
+      },
+      "eyebrow": {
+        "font": 12,
+        "line": "14.4px",
+        "weight": "400",
+        "color": "rgb(79, 77, 73)",
+        "height": 14.40625,
+        "width": 705,
+        "padding": "0px",
+        "gap": "normal",
+        "overflow": false
+      },
+      "section": {
+        "font": 16,
+        "line": "20.8px",
+        "weight": "400",
+        "color": "rgb(30, 30, 30)",
+        "height": 791.359375,
+        "width": 753,
+        "padding": "72px 0px",
+        "gap": "normal",
+        "overflow": false
+      },
+      "passport": {
+        "font": 17,
+        "line": "18.7px",
+        "weight": "400",
+        "color": "rgb(255, 255, 255)",
+        "height": 70,
+        "width": 286.03125,
+        "padding": "0px 36px",
+        "gap": "24px",
+        "overflow": false
+      },
+      "footer": {
+        "font": 17,
+        "line": "18.7px",
+        "weight": "400",
+        "color": "rgb(255, 255, 255)",
+        "height": 70,
+        "width": 705,
+        "padding": "0px 36px",
+        "gap": "normal",
+        "overflow": false
+      },
+      "copy": {
+        "font": 22,
+        "line": "33px",
+        "weight": "300",
+        "color": "rgb(79, 77, 73)",
+        "height": 561,
+        "width": 705,
+        "padding": "0px",
+        "gap": "normal",
+        "overflow": false
+      },
+      "readmore": {
+        "font": 14,
+        "line": "16.8px",
+        "weight": "400",
+        "color": "rgb(139, 29, 37)",
+        "height": 44,
+        "width": 142.390625,
+        "padding": "8px 0px",
+        "gap": "12px",
+        "overflow": false
+      },
+      "chip": {
+        "font": 16,
+        "line": "19.2px",
+        "weight": "400",
+        "color": "rgb(30, 30, 30)",
+        "height": 44,
+        "width": 107.578125,
+        "padding": "10px 16px",
+        "gap": "normal",
+        "overflow": false
+      },
+      "hero": {
+        "font": 16,
+        "line": "16px",
+        "weight": "400",
+        "color": "rgb(255, 255, 255)",
+        "height": 560,
+        "width": 753,
+        "padding": "0px",
+        "gap": "normal",
+        "overflow": false
+      },
+      "photo": {
+        "font": 16,
+        "line": "20.8px",
+        "weight": "400",
+        "color": "rgb(30, 30, 30)",
+        "height": 433.359375,
+        "width": 289.28125,
+        "padding": "0px",
+        "gap": "normal",
+        "overflow": false
+      },
+      "radiusViolations": 0,
+      "photoLoaded": true,
+      "heroActions": 1,
+      "rows": [
+        {
+          "overlaps": false,
+          "overflow": false
+        },
+        {
+          "overlaps": false,
+          "overflow": false
+        },
+        {
+          "overlaps": false,
+          "overflow": false
+        },
+        {
+          "overlaps": false,
+          "overflow": false
+        },
+        {
+          "overlaps": false,
+          "overflow": false
+        },
+        {
+          "overlaps": false,
+          "overflow": false
+        },
+        {
+          "overlaps": false,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "width": 1024,
+      "overflow": false,
+      "container": {
+        "font": 16,
+        "line": "20.8px",
+        "weight": "400",
+        "color": "rgb(30, 30, 30)",
+        "height": 672.1875,
+        "width": 1009,
+        "padding": "0px 40.8889px",
+        "gap": "0px",
+        "overflow": false
+      },
+      "heading": {
+        "font": 38,
+        "line": "45.6px",
+        "weight": "300",
+        "color": "rgb(30, 30, 30)",
+        "height": 45.59375,
+        "width": 927.25,
+        "padding": "0px",
+        "gap": "normal",
+        "overflow": false
+      },
+      "eyebrow": {
+        "font": 12,
+        "line": "14.4px",
+        "weight": "400",
+        "color": "rgb(79, 77, 73)",
+        "height": 14.40625,
+        "width": 927.25,
+        "padding": "0px",
+        "gap": "normal",
+        "overflow": false
+      },
+      "section": {
+        "font": 16,
+        "line": "20.8px",
+        "weight": "400",
+        "color": "rgb(30, 30, 30)",
+        "height": 816.1875,
+        "width": 1009,
+        "padding": "72px 0px",
+        "gap": "normal",
+        "overflow": false
+      },
+      "passport": {
+        "font": 17,
+        "line": "18.7px",
+        "weight": "400",
+        "color": "rgb(255, 255, 255)",
+        "height": 70,
+        "width": 286.03125,
+        "padding": "0px 36px",
+        "gap": "24px",
+        "overflow": false
+      },
+      "footer": {
+        "font": 17,
+        "line": "18.7px",
+        "weight": "400",
+        "color": "rgb(255, 255, 255)",
+        "height": 70,
+        "width": 927.25,
+        "padding": "0px 36px",
+        "gap": "normal",
+        "overflow": false
+      },
+      "copy": {
+        "font": 22,
+        "line": "33px",
+        "weight": "300",
+        "color": "rgb(79, 77, 73)",
+        "height": 495,
+        "width": 927.25,
+        "padding": "0px",
+        "gap": "normal",
+        "overflow": false
+      },
+      "readmore": {
+        "font": 14,
+        "line": "16.8px",
+        "weight": "400",
+        "color": "rgb(139, 29, 37)",
+        "height": 44,
+        "width": 142.390625,
+        "padding": "8px 0px",
+        "gap": "12px",
+        "overflow": false
+      },
+      "chip": {
+        "font": 16,
+        "line": "19.2px",
+        "weight": "400",
+        "color": "rgb(30, 30, 30)",
+        "height": 44,
+        "width": 107.578125,
+        "padding": "10px 16px",
+        "gap": "normal",
+        "overflow": false
+      },
+      "hero": {
+        "font": 16,
+        "line": "16px",
+        "weight": "400",
+        "color": "rgb(255, 255, 255)",
+        "height": 640,
+        "width": 1009,
+        "padding": "0px",
+        "gap": "normal",
+        "overflow": false
+      },
+      "photo": {
+        "font": 16,
+        "line": "20.8px",
+        "weight": "400",
+        "color": "rgb(30, 30, 30)",
+        "height": 458.1875,
+        "width": 370.203125,
+        "padding": "0px",
+        "gap": "normal",
+        "overflow": false
+      },
+      "radiusViolations": 0,
+      "photoLoaded": true,
+      "heroActions": 2,
+      "rows": [
+        {
+          "overlaps": false,
+          "overflow": false
+        },
+        {
+          "overlaps": false,
+          "overflow": false
+        },
+        {
+          "overlaps": false,
+          "overflow": false
+        },
+        {
+          "overlaps": false,
+          "overflow": false
+        },
+        {
+          "overlaps": false,
+          "overflow": false
+        },
+        {
+          "overlaps": false,
+          "overflow": false
+        },
+        {
+          "overlaps": false,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "overflow": false,
+      "container": {
+        "font": 16,
+        "line": "20.8px",
+        "weight": "400",
+        "color": "rgb(30, 30, 30)",
+        "height": 686.875,
+        "width": 1425,
+        "padding": "0px 68.3333px",
+        "gap": "0px",
+        "overflow": false
+      },
+      "heading": {
+        "font": 38,
+        "line": "45.6px",
+        "weight": "300",
+        "color": "rgb(30, 30, 30)",
+        "height": 45.59375,
+        "width": 1288.34375,
+        "padding": "0px",
+        "gap": "normal",
+        "overflow": false
+      },
+      "eyebrow": {
+        "font": 14,
+        "line": "16.1px",
+        "weight": "400",
+        "color": "rgb(79, 77, 73)",
+        "height": 16.09375,
+        "width": 1288.34375,
+        "padding": "0px",
+        "gap": "normal",
+        "overflow": false
+      },
+      "section": {
+        "font": 16,
+        "line": "20.8px",
+        "weight": "400",
+        "color": "rgb(30, 30, 30)",
+        "height": 859.65625,
+        "width": 1425,
+        "padding": "86.4px 0px",
+        "gap": "normal",
+        "overflow": false
+      },
+      "passport": {
+        "font": 17,
+        "line": "18.7px",
+        "weight": "400",
+        "color": "rgb(255, 255, 255)",
+        "height": 70,
+        "width": 286.03125,
+        "padding": "0px 36px",
+        "gap": "24px",
+        "overflow": false
+      },
+      "footer": {
+        "font": 17,
+        "line": "18.7px",
+        "weight": "400",
+        "color": "rgb(255, 255, 255)",
+        "height": 70,
+        "width": 293.875,
+        "padding": "0px 36px",
+        "gap": "normal",
+        "overflow": false
+      },
+      "copy": {
+        "font": 22,
+        "line": "33px",
+        "weight": "300",
+        "color": "rgb(79, 77, 73)",
+        "height": 660,
+        "width": 527.15625,
+        "padding": "0px",
+        "gap": "normal",
+        "overflow": false
+      },
+      "readmore": {
+        "font": 14,
+        "line": "16.8px",
+        "weight": "400",
+        "color": "rgb(139, 29, 37)",
+        "height": 44,
+        "width": 142.390625,
+        "padding": "8px 0px",
+        "gap": "12px",
+        "overflow": false
+      },
+      "chip": {
+        "font": 16,
+        "line": "19.2px",
+        "weight": "400",
+        "color": "rgb(30, 30, 30)",
+        "height": 44,
+        "width": 107.578125,
+        "padding": "10px 16px",
+        "gap": "normal",
+        "overflow": false
+      },
+      "hero": {
+        "font": 16,
+        "line": "16px",
+        "weight": "400",
+        "color": "rgb(255, 255, 255)",
+        "height": 900,
+        "width": 1425,
+        "padding": "0px",
+        "gap": "normal",
+        "overflow": false
+      },
+      "photo": {
+        "font": 16,
+        "line": "20.8px",
+        "weight": "400",
+        "color": "rgb(30, 30, 30)",
+        "height": 458.1875,
+        "width": 522.25,
+        "padding": "0px",
+        "gap": "normal",
+        "overflow": false
+      },
+      "radiusViolations": 0,
+      "photoLoaded": true,
+      "heroActions": 2,
+      "rows": [
+        {
+          "overlaps": false,
+          "overflow": false
+        },
+        {
+          "overlaps": false,
+          "overflow": false
+        },
+        {
+          "overlaps": false,
+          "overflow": false
+        },
+        {
+          "overlaps": false,
+          "overflow": false
+        },
+        {
+          "overlaps": false,
+          "overflow": false
+        },
+        {
+          "overlaps": false,
+          "overflow": false
+        },
+        {
+          "overlaps": false,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "overflow": false,
+      "container": {
+        "font": 16,
+        "line": "20.8px",
+        "weight": "400",
+        "color": "rgb(30, 30, 30)",
+        "height": 694.078125,
+        "width": 1905,
+        "padding": "0px 100px",
+        "gap": "0px",
+        "overflow": false
+      },
+      "heading": {
+        "font": 44,
+        "line": "52.8px",
+        "weight": "300",
+        "color": "rgb(30, 30, 30)",
+        "height": 52.796875,
+        "width": 1705.03125,
+        "padding": "0px",
+        "gap": "normal",
+        "overflow": false
+      },
+      "eyebrow": {
+        "font": 14,
+        "line": "16.1px",
+        "weight": "400",
+        "color": "rgb(79, 77, 73)",
+        "height": 16.09375,
+        "width": 1705.03125,
+        "padding": "0px",
+        "gap": "normal",
+        "overflow": false
+      },
+      "section": {
+        "font": 16,
+        "line": "20.8px",
+        "weight": "400",
+        "color": "rgb(30, 30, 30)",
+        "height": 894.078125,
+        "width": 1905,
+        "padding": "100px 0px",
+        "gap": "normal",
+        "overflow": false
+      },
+      "passport": {
+        "font": 19,
+        "line": "20.9px",
+        "weight": "400",
+        "color": "rgb(255, 255, 255)",
+        "height": 70,
+        "width": 328.515625,
+        "padding": "0px 47px",
+        "gap": "24px",
+        "overflow": false
+      },
+      "footer": {
+        "font": 19,
+        "line": "20.9px",
+        "weight": "400",
+        "color": "rgb(255, 255, 255)",
+        "height": 70,
+        "width": 330.609375,
+        "padding": "0px 47px",
+        "gap": "normal",
+        "overflow": false
+      },
+      "copy": {
+        "font": 22,
+        "line": "33px",
+        "weight": "300",
+        "color": "rgb(79, 77, 73)",
+        "height": 561,
+        "width": 667.703125,
+        "padding": "0px",
+        "gap": "normal",
+        "overflow": false
+      },
+      "readmore": {
+        "font": 14,
+        "line": "16.8px",
+        "weight": "400",
+        "color": "rgb(139, 29, 37)",
+        "height": 44,
+        "width": 142.390625,
+        "padding": "8px 0px",
+        "gap": "12px",
+        "overflow": false
+      },
+      "chip": {
+        "font": 16,
+        "line": "19.2px",
+        "weight": "400",
+        "color": "rgb(30, 30, 30)",
+        "height": 44,
+        "width": 107.578125,
+        "padding": "10px 16px",
+        "gap": "normal",
+        "overflow": false
+      },
+      "hero": {
+        "font": 16,
+        "line": "16px",
+        "weight": "400",
+        "color": "rgb(255, 255, 255)",
+        "height": 1040,
+        "width": 1905,
+        "padding": "0px",
+        "gap": "normal",
+        "overflow": false
+      },
+      "photo": {
+        "font": 16,
+        "line": "20.8px",
+        "weight": "400",
+        "color": "rgb(30, 30, 30)",
+        "height": 458.1875,
+        "width": 697.6875,
+        "padding": "0px",
+        "gap": "normal",
+        "overflow": false
+      },
+      "radiusViolations": 0,
+      "photoLoaded": true,
+      "heroActions": 2,
+      "rows": [
+        {
+          "overlaps": false,
+          "overflow": false
+        },
+        {
+          "overlaps": false,
+          "overflow": false
+        },
+        {
+          "overlaps": false,
+          "overflow": false
+        },
+        {
+          "overlaps": false,
+          "overflow": false
+        },
+        {
+          "overlaps": false,
+          "overflow": false
+        },
+        {
+          "overlaps": false,
+          "overflow": false
+        },
+        {
+          "overlaps": false,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "width": 2560,
+      "overflow": false,
+      "container": {
+        "font": 16,
+        "line": "20.8px",
+        "weight": "400",
+        "color": "rgb(30, 30, 30)",
+        "height": 694.078125,
+        "width": 1920,
+        "padding": "0px",
+        "gap": "0px",
+        "overflow": false
+      },
+      "heading": {
+        "font": 44,
+        "line": "52.8px",
+        "weight": "300",
+        "color": "rgb(30, 30, 30)",
+        "height": 52.796875,
+        "width": 1920,
+        "padding": "0px",
+        "gap": "normal",
+        "overflow": false
+      },
+      "eyebrow": {
+        "font": 14,
+        "line": "16.1px",
+        "weight": "400",
+        "color": "rgb(79, 77, 73)",
+        "height": 16.09375,
+        "width": 1920,
+        "padding": "0px",
+        "gap": "normal",
+        "overflow": false
+      },
+      "section": {
+        "font": 16,
+        "line": "20.8px",
+        "weight": "400",
+        "color": "rgb(30, 30, 30)",
+        "height": 894.078125,
+        "width": 2545,
+        "padding": "100px 0px",
+        "gap": "normal",
+        "overflow": false
+      },
+      "passport": {
+        "font": 19,
+        "line": "20.9px",
+        "weight": "400",
+        "color": "rgb(255, 255, 255)",
+        "height": 70,
+        "width": 328.515625,
+        "padding": "0px 47px",
+        "gap": "24px",
+        "overflow": false
+      },
+      "footer": {
+        "font": 19,
+        "line": "20.9px",
+        "weight": "400",
+        "color": "rgb(255, 255, 255)",
+        "height": 70,
+        "width": 330.609375,
+        "padding": "0px 47px",
+        "gap": "normal",
+        "overflow": false
+      },
+      "copy": {
+        "font": 22,
+        "line": "33px",
+        "weight": "300",
+        "color": "rgb(79, 77, 73)",
+        "height": 561,
+        "width": 759.0625,
+        "padding": "0px",
+        "gap": "normal",
+        "overflow": false
+      },
+      "readmore": {
+        "font": 14,
+        "line": "16.8px",
+        "weight": "400",
+        "color": "rgb(139, 29, 37)",
+        "height": 44,
+        "width": 142.390625,
+        "padding": "8px 0px",
+        "gap": "12px",
+        "overflow": false
+      },
+      "chip": {
+        "font": 16,
+        "line": "19.2px",
+        "weight": "400",
+        "color": "rgb(30, 30, 30)",
+        "height": 44,
+        "width": 107.578125,
+        "padding": "10px 16px",
+        "gap": "normal",
+        "overflow": false
+      },
+      "hero": {
+        "font": 16,
+        "line": "16px",
+        "weight": "400",
+        "color": "rgb(255, 255, 255)",
+        "height": 1040,
+        "width": 2545,
+        "padding": "0px",
+        "gap": "normal",
+        "overflow": false
+      },
+      "photo": {
+        "font": 16,
+        "line": "20.8px",
+        "weight": "400",
+        "color": "rgb(30, 30, 30)",
+        "height": 458.1875,
+        "width": 788.203125,
+        "padding": "0px",
+        "gap": "normal",
+        "overflow": false
+      },
+      "radiusViolations": 0,
+      "photoLoaded": true,
+      "heroActions": 2,
+      "rows": [
+        {
+          "overlaps": false,
+          "overflow": false
+        },
+        {
+          "overlaps": false,
+          "overflow": false
+        },
+        {
+          "overlaps": false,
+          "overflow": false
+        },
+        {
+          "overlaps": false,
+          "overflow": false
+        },
+        {
+          "overlaps": false,
+          "overflow": false
+        },
+        {
+          "overlaps": false,
+          "overflow": false
+        },
+        {
+          "overlaps": false,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "width": 3840,
+      "overflow": false,
+      "container": {
+        "font": 16,
+        "line": "20.8px",
+        "weight": "400",
+        "color": "rgb(30, 30, 30)",
+        "height": 694.078125,
+        "width": 1920,
+        "padding": "0px",
+        "gap": "0px",
+        "overflow": false
+      },
+      "heading": {
+        "font": 44,
+        "line": "52.8px",
+        "weight": "300",
+        "color": "rgb(30, 30, 30)",
+        "height": 52.796875,
+        "width": 1920,
+        "padding": "0px",
+        "gap": "normal",
+        "overflow": false
+      },
+      "eyebrow": {
+        "font": 14,
+        "line": "16.1px",
+        "weight": "400",
+        "color": "rgb(79, 77, 73)",
+        "height": 16.09375,
+        "width": 1920,
+        "padding": "0px",
+        "gap": "normal",
+        "overflow": false
+      },
+      "section": {
+        "font": 16,
+        "line": "20.8px",
+        "weight": "400",
+        "color": "rgb(30, 30, 30)",
+        "height": 894.078125,
+        "width": 3825,
+        "padding": "100px 0px",
+        "gap": "normal",
+        "overflow": false
+      },
+      "passport": {
+        "font": 19,
+        "line": "20.9px",
+        "weight": "400",
+        "color": "rgb(255, 255, 255)",
+        "height": 70,
+        "width": 328.515625,
+        "padding": "0px 47px",
+        "gap": "24px",
+        "overflow": false
+      },
+      "footer": {
+        "font": 19,
+        "line": "20.9px",
+        "weight": "400",
+        "color": "rgb(255, 255, 255)",
+        "height": 70,
+        "width": 330.609375,
+        "padding": "0px 47px",
+        "gap": "normal",
+        "overflow": false
+      },
+      "copy": {
+        "font": 22,
+        "line": "33px",
+        "weight": "300",
+        "color": "rgb(79, 77, 73)",
+        "height": 561,
+        "width": 759.0625,
+        "padding": "0px",
+        "gap": "normal",
+        "overflow": false
+      },
+      "readmore": {
+        "font": 14,
+        "line": "16.8px",
+        "weight": "400",
+        "color": "rgb(139, 29, 37)",
+        "height": 44,
+        "width": 142.390625,
+        "padding": "8px 0px",
+        "gap": "12px",
+        "overflow": false
+      },
+      "chip": {
+        "font": 16,
+        "line": "19.2px",
+        "weight": "400",
+        "color": "rgb(30, 30, 30)",
+        "height": 44,
+        "width": 107.578125,
+        "padding": "10px 16px",
+        "gap": "normal",
+        "overflow": false
+      },
+      "hero": {
+        "font": 16,
+        "line": "16px",
+        "weight": "400",
+        "color": "rgb(255, 255, 255)",
+        "height": 1040,
+        "width": 3825,
+        "padding": "0px",
+        "gap": "normal",
+        "overflow": false
+      },
+      "photo": {
+        "font": 16,
+        "line": "20.8px",
+        "weight": "400",
+        "color": "rgb(30, 30, 30)",
+        "height": 458.1875,
+        "width": 788.203125,
+        "padding": "0px",
+        "gap": "normal",
+        "overflow": false
+      },
+      "radiusViolations": 0,
+      "photoLoaded": true,
+      "heroActions": 2,
+      "rows": [
+        {
+          "overlaps": false,
+          "overflow": false
+        },
+        {
+          "overlaps": false,
+          "overflow": false
+        },
+        {
+          "overlaps": false,
+          "overflow": false
+        },
+        {
+          "overlaps": false,
+          "overflow": false
+        },
+        {
+          "overlaps": false,
+          "overflow": false
+        },
+        {
+          "overlaps": false,
+          "overflow": false
+        },
+        {
+          "overlaps": false,
+          "overflow": false
+        }
+      ]
+    }
+  ],
+  "interactions": [
+    {
+      "width": 390,
+      "consultation": true,
+      "channels": true,
+      "fieldFocus": true,
+      "expandCollapse": true,
+      "faqKeyboard": true,
+      "gallery": true,
+      "ctaFocus": true,
+      "staticArrow": true,
+      "anchor": true
+    },
+    {
+      "width": 1440,
+      "consultation": true,
+      "channels": true,
+      "fieldFocus": true,
+      "expandCollapse": true,
+      "faqKeyboard": true,
+      "gallery": true,
+      "ctaFocus": true,
+      "staticArrow": true,
+      "anchor": true
+    }
+  ],
+  "errors": [],
+  "failedLocal": [],
+  "limitation": "No real submission or CRM/analytics verification. Cross-origin map internals excluded."
+}

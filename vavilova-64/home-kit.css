@@ -1,0 +1,134 @@
+/* BARN Estate homepage UI-KIT v1.0.0, 01.11.2026.
+ * Source: barnes-sites/main-site/pages/home/exact-2026-10-21/UI-KIT.md.
+ * Page-local integration; hero, LaunchCard and third-party map keep their roles. */
+body.vavilova-home-kit {
+  --vav-home-space: clamp(72px, 6vw, 100px);
+  --vav-home-gutter: clamp(24px, calc(-26.66667px + 6.59722vw), 100px);
+  --vav-home-heading: 38px;
+  --vav-home-copy: 22px;
+  --vav-home-copy-line: 33px;
+  --vav-home-content-gap: 40px;
+  --vav-home-copy-gap: 24px;
+  --vav-home-eyebrow: 14px;
+  --vav-home-eyebrow-line: 16.1px;
+  --vav-home-eyebrow-gap: 25px;
+}
+body.vavilova-home-kit .catalog-detail { --vav-ui-section-space: var(--vav-home-space); }
+body.vavilova-home-kit :is(.catalog-detail,.newsletter-cta,.site-footer) .base-container {
+  box-sizing: border-box;
+  width: 100%; max-width: 1920px;
+  margin-inline: auto;
+  padding-inline: var(--vav-home-gutter) !important;
+}
+body.vavilova-home-kit .catalog-detail > :is(.detail-characteristics,.detail-about,.detail-location,
+  .mortgage,.detail-architecture,.lot-developer,.detail-infrastructure,.construction,.documents,
+  .reviews-section,.detail-similar,.catalog-faq) {
+  padding-block: var(--vav-home-space) !important;
+  margin-block: 0 !important;
+}
+body.vavilova-home-kit .catalog-detail .detail-gallery { padding-top: var(--vav-home-space); }
+body.vavilova-home-kit .catalog-detail h2,
+body.vavilova-home-kit .newsletter-cta h2,
+body.vavilova-home-kit #characteristics.vavilova-passport .vp-title {
+  font-family: 'Tilda Sans','Tilda Sans Fallback',system-ui,sans-serif;
+  font-size: var(--vav-home-heading) !important;
+  font-weight: 300 !important;
+  line-height: 1.2 !important;
+  letter-spacing: normal !important;
+  margin: 0 !important;
+}
+body.vavilova-home-kit .catalog-detail .vavilova-section-heading { gap: var(--vav-home-eyebrow-gap); }
+body.vavilova-home-kit :is(.catalog-detail,.newsletter-cta) :is(.vavilova-section-eyebrow,
+  .detail-about__eyebrow,.reviews-section__eyebrow,.lot-developer__label),
+body.vavilova-home-kit #characteristics.vavilova-passport .vp-eyebrow {
+  font-size: var(--vav-home-eyebrow) !important;
+  line-height: var(--vav-home-eyebrow-line) !important;
+  font-weight: 400 !important;
+  letter-spacing: .12em !important;
+  text-transform: uppercase;
+  color: #4f4d49 !important;
+}
+body.vavilova-home-kit #characteristics.vavilova-passport .vp-eyebrow,
+body.vavilova-home-kit .newsletter-cta .vavilova-section-eyebrow {
+  margin: 0 0 var(--vav-home-eyebrow-gap) !important;
+}
+body.vavilova-home-kit #characteristics.vavilova-passport .vp-heading,
+body.vavilova-home-kit .catalog-detail :is(.detail-about__inner > .vavilova-section-heading,.vavilova-gallery-heading) {
+  margin-bottom: var(--vav-home-content-gap) !important;
+}
+body.vavilova-home-kit :is(.catalog-detail,.newsletter-cta) :is(.detail-about__text,
+  .detail-architecture__text,.lot-developer__text,.reviews-section__text,.catalog-contact__subtitle,
+  .catalog-contact__card-text,.newsletter-cta__lead) {
+  font-family: 'Tilda Sans','Tilda Sans Fallback',system-ui,sans-serif;
+  font-size: var(--vav-home-copy) !important;
+  line-height: var(--vav-home-copy-line) !important;
+  font-weight: 300 !important;
+  color: #4f4d49 !important;
+}
+/* The consultation is deliberately inverse: keep legible copy over the dark photo. */
+body.vavilova-home-kit .catalog-detail .catalog-contact :is(.vavilova-section-eyebrow,
+  .catalog-contact__subtitle,.catalog-contact__card-text) { color: rgb(255 255 255 / 85%) !important; }
+body.vavilova-home-kit .catalog-detail .catalog-contact { padding-block: var(--vav-home-space) !important; }
+body.vavilova-home-kit .catalog-detail :is(.detail-about__toggle,.detail-architecture__more,.lot-developer__toggle) {
+  box-sizing: border-box; display: inline-flex; align-items: center;
+  width: max-content; max-width: 100%; min-height: 44px; height: auto;
+  padding: 8px 0 !important; border: 0; border-bottom: 1px solid currentColor;
+  background: transparent; color: #8b1d25 !important;
+  font: 400 14px/1.2 'Tilda Sans',system-ui,sans-serif !important;
+  letter-spacing: .12em; text-decoration: none;
+}
+body.vavilova-home-kit .catalog-detail .detail-location__category {
+  box-sizing: border-box; min-height: 44px; height: auto;
+  padding: 10px 16px; font-size: 16px; font-weight: 400; line-height: 1.2;
+}
+body.vavilova-home-kit #characteristics.vavilova-passport .vp-cta,
+body.vavilova-home-kit .site-footer .site-footer__callback-btn {
+  box-sizing: border-box;
+  height: var(--vav-action-height) !important; min-height: var(--vav-action-height) !important;
+  padding: 0 var(--vav-action-padding) !important;
+  font-family: 'Tilda Sans','Tilda Sans Fallback',system-ui,sans-serif;
+  font-size: var(--vav-action-size) !important; font-weight: 400; line-height: 1.1;
+  letter-spacing: 0;
+}
+body.vavilova-home-kit #characteristics.vavilova-passport .vp-cta {
+  width: max-content; max-width: 100%; gap: 24px;
+}
+body.vavilova-home-kit #characteristics.vavilova-passport .vp-cta:active { transform: none; }
+body.vavilova-home-kit .newsletter-cta {
+  padding: var(--vav-home-space) 0 40px !important;
+  margin: 0 !important;
+}
+body.vavilova-home-kit .newsletter-cta__copy { padding-block: 0 !important; }
+body.vavilova-home-kit .newsletter-cta__lead { margin: var(--vav-home-copy-gap) 0 0 !important; }
+body.vavilova-home-kit .newsletter-form { margin-top: var(--vav-home-copy-gap) !important; }
+body.vavilova-home-kit .newsletter-form__note {
+  font: 300 13px/18px 'Tilda Sans',system-ui,sans-serif;
+  color: #656462; margin-top: 16px;
+}
+body.vavilova-home-kit :is(.detail-about__toggle,.detail-architecture__more,.lot-developer__toggle,
+  .detail-location__category,.vp-cta):focus-visible { outline: 2px solid #8b1d25; outline-offset: 3px; }
+@media (min-width: 1441px) {
+  body.vavilova-home-kit { --vav-home-heading: 44px; }
+}
+@media (min-width: 1921px) {
+  body.vavilova-home-kit { --vav-home-gutter: 0px; }
+}
+@media (max-width: 1024px) {
+  body.vavilova-home-kit {
+    --vav-home-eyebrow: 12px; --vav-home-eyebrow-line: 14.4px; --vav-home-eyebrow-gap: 12px;
+  }
+}
+@media (max-width: 600px) {
+  body.vavilova-home-kit #characteristics.vavilova-passport .vp-cta { width: 100%; gap: 12px; }
+}
+@media (max-width: 540px) {
+  body.vavilova-home-kit {
+    --vav-home-space: 48px; --vav-home-gutter: 22px; --vav-home-heading: 22px;
+    --vav-home-copy: 15px; --vav-home-copy-line: 21px;
+    --vav-home-content-gap: 28px; --vav-home-copy-gap: 16px;
+  }
+  body.vavilova-home-kit .catalog-detail :is(.detail-about__toggle,.detail-architecture__more,.lot-developer__toggle) {
+    font-size: 12px !important;
+  }
+  body.vavilova-home-kit .site-footer .site-footer__callback-btn { width: 100%; }
+}
