@@ -88,7 +88,7 @@ document.querySelector(".site-header__messengers")?.remove();
     sticky.setAttribute('inert', '');
     sticky.innerHTML = '<div class="catalog-sticky__inner base-container"><nav class="catalog-sticky__nav" aria-label="Навигация по странице"><ul class="catalog-sticky__list">' + sections.map(function (item) {
       return '<li class="catalog-sticky__item"><a class="catalog-sticky__link" href="#' + item[1] + '">' + item[0] + '</a></li>';
-    }).join('') + '<li class="catalog-sticky__item catalog-sticky__item--contacts"><button class="catalog-sticky__contact-toggle" type="button" aria-expanded="false" aria-controls="international-sticky-contacts" aria-label="Показать способы связи"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.5 9.8 9.8 0 0 1-4-.9L3 21l1.7-4.6A8.4 8.4 0 1 1 21 11.5Z"></path><path d="M8 12h.01M12 12h.01M16 12h.01"></path></svg></button></li></ul></nav><a class="catalog-sticky__logo" aria-label="BARN Estate — на главную" href="https://barn-estate.ru/"><img alt="BARN Estate" width="220" height="30" src="https://daniilterekh-prog.github.io/barnes-assets/brand/barn-estate/logo.svg" style="object-fit:contain;aspect-ratio:220 / 30"></a><div class="catalog-sticky__brand"><button class="catalog-sticky__request" type="button">Оставить заявку</button><nav class="catalog-sticky__messengers" aria-label="Способы связи"><a class="catalog-sticky__messenger" href="https://wa.me/79252621650" target="_blank" rel="noopener noreferrer" aria-label="Написать в WhatsApp"><img src="assets/header-whatsapp.svg" alt=""></a><a class="catalog-sticky__messenger" href="https://max.ru/join/AWj8ibiCtAPOJOlulMGNkykKGz_prXVWg-IQK1KpUG8" target="_blank" rel="noopener noreferrer" aria-label="Написать в MAX"><img src="assets/header-max.svg" alt=""></a><a class="catalog-sticky__messenger" href="https://t.me/art_de_vivre_barnes" target="_blank" rel="noopener noreferrer" aria-label="Написать в Telegram"><img src="assets/header-telegram.svg" alt=""></a><a class="catalog-sticky__phone" href="tel:74951825079" aria-label="Позвонить по номеру +7 495 182-50-79"><span class="catalog-sticky__phone-number">+7 (495) 182-50-79</span><span class="catalog-sticky__phone-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg></span></a></nav></div></div>';
+    }).join('') + '<li class="catalog-sticky__item catalog-sticky__item--contacts"><button class="catalog-sticky__contact-toggle" type="button" aria-expanded="false" aria-controls="international-sticky-contacts" aria-label="Показать способы связи"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.5 9.8 9.8 0 0 1-4-.9L3 21l1.7-4.6A8.4 8.4 0 1 1 21 11.5Z"></path><path d="M8 12h.01M12 12h.01M16 12h.01"></path></svg></button></li></ul></nav><a class="catalog-sticky__logo" aria-label="BARN Estate — на главную" href="https://barn-estate.ru/"><img alt="BARN Estate" width="220" height="30" src="assets/brand-logo.svg" style="object-fit:contain;aspect-ratio:220 / 30"></a><div class="catalog-sticky__brand"><button class="catalog-sticky__request" type="button">Оставить заявку</button><nav class="catalog-sticky__messengers" aria-label="Способы связи"><a class="catalog-sticky__messenger" href="https://wa.me/79252621650" target="_blank" rel="noopener noreferrer" aria-label="Написать в WhatsApp"><img src="assets/header-whatsapp.svg" alt=""></a><a class="catalog-sticky__messenger" href="https://max.ru/join/AWj8ibiCtAPOJOlulMGNkykKGz_prXVWg-IQK1KpUG8" target="_blank" rel="noopener noreferrer" aria-label="Написать в MAX"><img src="assets/header-max.svg" alt=""></a><a class="catalog-sticky__messenger" href="https://t.me/art_de_vivre_barnes" target="_blank" rel="noopener noreferrer" aria-label="Написать в Telegram"><img src="assets/header-telegram.svg" alt=""></a><a class="catalog-sticky__phone" href="tel:74951825079" aria-label="Позвонить по номеру +7 495 182-50-79"><span class="catalog-sticky__phone-number">+7 (495) 182-50-79</span><span class="catalog-sticky__phone-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg></span></a></nav></div></div>';
 
     sticky.addEventListener('click', function(event) { var link=event.target.closest('.catalog-sticky__link'); if(!link)return; event.preventDefault(); var section=document.querySelector(link.getAttribute('href')); if(section) window.scrollTo({top:section.getBoundingClientRect().top+window.scrollY-sticky.offsetHeight-12,behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'}); });
     var sourceLogo = header.querySelector('.site-header__logo img');
@@ -121,14 +121,13 @@ document.querySelector(".site-header__messengers")?.remove();
     callback.className = 'catalog-sticky__request catalog-sticky__callback';
     callback.setAttribute('aria-label', 'Оставить заявку');
     callback.setAttribute('aria-haspopup', 'dialog');
-    callback.setAttribute('aria-controls', 'catalog-feedback-modal');
+    callback.setAttribute('aria-controls', 'international-quiz-dialog');
     callback.textContent = 'Оставить заявку';
     callback.addEventListener('click', function () {
       panel.hidden = true;
       toggle.setAttribute('aria-expanded', 'false');
       if (openContactModal) {
         openContactModal(callback);
-        document.querySelector('.catalog-feedback-modal [data-channel="Звонок"]').click();
       }
     });
     var actions = document.createElement('div');
@@ -186,135 +185,9 @@ document.querySelector(".site-header__messengers")?.remove();
 
 
 enhanceCatalogStickyHeader();
-  function enhanceContactModal() {
-    if (document.querySelector('.catalog-feedback-modal')) return;
-
-    var modal = document.createElement('div');
-    modal.className = 'catalog-feedback-modal feedback-modal modal';
-    modal.id = 'catalog-feedback-modal';
-    modal.hidden = true;
-    modal.setAttribute('role', 'dialog');
-    modal.setAttribute('aria-modal', 'true');
-    modal.setAttribute('aria-labelledby', 'catalog-feedback-modal-title');
-    modal.innerHTML = [
-      '<div class="modal__content" tabindex="-1">',
-      '  <button class="modal__close" type="button" aria-label="Закрыть форму" data-catalog-modal-close>',
-      '    <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M5 5l14 14M19 5L5 19"></path></svg>',
-      '  </button>',
-      '  <div class="feedback-modal__layout">',
-      '    <div class="feedback-modal__body">',
-      '      <h2 class="feedback-modal__title" id="catalog-feedback-modal-title">Поможем найти подходящий объект</h2>',
-      '      <p class="feedback-modal__intro">Эксперт BARNES уточнит задачу и подберёт лучшие варианты.</p>',
-      '      <form class="feedback-modal__form" novalidate>',
-      '        <div class="feedback-modal__channels" role="group" aria-label="Предпочтительный способ связи">',
-      '          <button type="button" data-channel="Telegram" aria-pressed="true">Telegram</button>',
-      '          <button type="button" data-channel="WhatsApp" aria-pressed="false">WhatsApp</button>',
-      '          <button type="button" data-channel="MAX" aria-pressed="false">MAX</button>',
-      '          <button type="button" data-channel="Звонок" aria-pressed="false">Звонок</button>',
-      '        </div>',
-      '        <input type="hidden" name="preferredChannel" value="Telegram">',
-      '        <label class="feedback-modal__field"><span class="visually-hidden">Ваше имя</span><input class="feedback-modal__input" name="name" type="text" autocomplete="name" placeholder="Ваше имя" required></label>',
-      '        <label class="feedback-modal__field"><span class="visually-hidden">Номер телефона</span><input class="feedback-modal__input" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="Номер телефона в Telegram" required></label>',
-      '        <label class="feedback-modal__field"><span class="visually-hidden">Комментарий</span><textarea class="feedback-modal__input feedback-modal__textarea" name="comment" rows="3" placeholder="Опишите, какой объект вы ищете"></textarea></label>',
-      '        <button class="feedback-modal__submit" type="submit">Получить подборку</button>',
-      '        <label class="feedback-modal__consent">',
-      '          <input class="feedback-modal__consent-input" name="consent" type="checkbox" required>',
-      '          <span class="feedback-modal__consent-box" aria-hidden="true"></span>',
-      '          <span class="feedback-modal__consent-text">Я даю согласие на обработку <a class="feedback-modal__consent-link" href="https://front.barnes.vsavr.ru/legal_notices/yuridicheskie-uvedomleniya/" target="_blank" rel="noopener noreferrer">персональных данных</a></span>',
-      '        </label>',
-      '        <p class="feedback-modal__status" role="status" aria-live="polite"></p>',
-      '      </form>',
-      '    </div>',
-      '    <div class="feedback-modal__hero">',
-      '      <img class="feedback-modal__hero-image" src="assets/denis-perkovsky-cutout.png" alt="Денис Перковский — руководитель департамента международной недвижимости BARNES" width="1024" height="1536">',
-      '    </div>',
-      '  </div>',
-      '</div>'
-    ].join('');
-    document.body.appendChild(modal);
-
-    var content = modal.querySelector('.modal__content');
-    var form = modal.querySelector('.feedback-modal__form');
-    var phone = form.querySelector('[name="phone"]');
-    var channelValue = form.querySelector('[name="preferredChannel"]');
-    var status = form.querySelector('.feedback-modal__status');
-    var previousFocus = null;
-
-    function closeModal() {
-      if (modal.hidden) return;
-      modal.hidden = true;
-      document.body.classList.remove('catalog-modal-open');
-      if (previousFocus && document.contains(previousFocus)) previousFocus.focus();
-    }
-
-    openContactModal = function (trigger) {
-      previousFocus = trigger || document.activeElement;
-      modal.hidden = false;
-      document.body.classList.add('catalog-modal-open');
-      window.requestAnimationFrame(function () {
-        content.focus();
-      });
-    };
-
-    modal.addEventListener('click', function (event) {
-      if (event.target === modal || event.target.closest('[data-catalog-modal-close]')) closeModal();
-    });
-
-    modal.querySelector('.feedback-modal__channels').addEventListener('click', function (event) {
-      var button = event.target.closest('button[data-channel]');
-      if (!button) return;
-      modal.querySelectorAll('.feedback-modal__channels button').forEach(function (item) {
-        item.setAttribute('aria-pressed', String(item === button));
-      });
-      channelValue.value = button.dataset.channel;
-      phone.placeholder = button.dataset.channel === 'Звонок' ? 'Номер телефона' : 'Номер телефона в ' + button.dataset.channel;
-    });
-
-    form.addEventListener('submit', function (event) {
-      event.preventDefault();
-      if (!form.checkValidity()) {
-        form.reportValidity();
-        return;
-      }
-      status.textContent = 'Для отправки заявки свяжитесь с BARNES: +7 (495) 182-50-79.';
-
-      channelValue.value = 'Telegram';
-      modal.querySelectorAll('.feedback-modal__channels button').forEach(function (item) {
-        item.setAttribute('aria-pressed', String(item.dataset.channel === 'Telegram'));
-      });
-    });
-
-    document.addEventListener('keydown', function (event) {
-      if (modal.hidden) return;
-      if (event.key === 'Escape') {
-        closeModal();
-        return;
-      }
-      if (event.key !== 'Tab') return;
-      var focusable = Array.from(modal.querySelectorAll('button, input, textarea, a[href]')).filter(function (item) {
-        return !item.disabled && item.offsetParent !== null;
-      });
-      if (!focusable.length) return;
-      var first = focusable[0];
-      var last = focusable[focusable.length - 1];
-      if (event.shiftKey && document.activeElement === first) {
-        event.preventDefault();
-        last.focus();
-      } else if (!event.shiftKey && document.activeElement === last) {
-        event.preventDefault();
-        first.focus();
-      }
-    });
-
-    document.querySelectorAll('.catalog-contact__card-submit, .floating-expert__card, .site-footer__callback-btn').forEach(function (trigger) {
-      trigger.addEventListener('click', function () {
-        openContactModal(trigger);
-      });
-    });
-  }
-
-
-enhanceContactModal();
+  openContactModal = function (trigger) {
+    window.BarnesInternationalQuiz.open({trigger: trigger});
+  };
   function enhanceContactMethods() {
     [
       ['.catalog-consultation__methods', '.catalog-consultation__method'],
