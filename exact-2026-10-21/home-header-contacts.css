@@ -48,9 +48,14 @@ body.barnes-home-typography .site-header :is(.site-header__phone--icon,.site-hea
 body.barnes-home-typography .home-header-contacts-panel a[href^="tel:"] svg {width:20px;height:20px;}
 body.barnes-home-typography .site-header__phone--icon:focus-visible {outline:2px solid #8b1d25;outline-offset:3px;}
 
-/* Outlined header request CTA, including hover and keyboard focus. */
+/* Outlined header request CTA at rest. */
 body.barnes-home-typography .site-header .site-header__request {
  background:transparent!important;
  border:1px solid #8b1d25!important;
  color:#8b1d25!important;
+}
+
+/* Fill the outlined header CTA on pointer hover. */
+@media (hover:hover) and (pointer:fine) {
+ body.barnes-home-typography .site-header .site-header__request:hover {background:#8b1d25!important;color:#fff!important;}
 }

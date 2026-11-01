@@ -967,3 +967,8 @@
  border:1px solid #8b1d25!important;
  color:#8b1d25!important;
 }
+
+/* Fill the outlined header CTA on pointer hover. */
+@media (hover:hover) and (pointer:fine) {
+ .barnes-block.barnes-home-typography .site-header .site-header__request:hover {background:#8b1d25!important;color:#fff!important;}
+}
