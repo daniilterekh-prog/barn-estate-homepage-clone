@@ -225,3 +225,19 @@ body.barnes-home-typography .services-section__item--wide .services-section__ove
 body.barnes-home-typography .services-section__item--wide .services-section__card:is(:hover,:focus-visible) .services-section__overlay {
   background: rgba(0,0,0,.38) !important;
 }
+
+/* Match the existing header logo's 48px / 36px height and intrinsic proportions. */
+body.barnes-home-typography .site-footer__logo {
+  width: max-content;
+  max-width: 100%;
+  margin-inline: auto;
+}
+body.barnes-home-typography .site-footer__logo img {
+  display: block;
+  width: auto;
+  height: 48px;
+  object-fit: contain;
+}
+@media (max-width: 540px) {
+  body.barnes-home-typography .site-footer__logo img { height: 36px; }
+}
