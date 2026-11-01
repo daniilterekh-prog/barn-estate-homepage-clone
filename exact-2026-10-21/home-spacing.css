@@ -263,3 +263,6 @@ body.barnes-home-typography .office-contact__visual img { height:auto; aspect-ra
     object-position: right center;
   }
 }
+
+/* The country hub hero already contains its evening treatment. */
+body.barnes-home-typography .department-card--country-clear .department-card__overlay {display:none!important;}

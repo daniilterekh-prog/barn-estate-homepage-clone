@@ -69,6 +69,7 @@
       saleImage.height = saleVariant[2];
     }
     const countryCard=[...document.querySelectorAll('.department-card')].find(card=>card.querySelector('.department-card__title')?.textContent.trim()==='Загородная');
+    countryCard?.classList.add('department-card--country-clear');
     const countryImage=countryCard?.querySelector('.department-card__image');
     const countryPhoto=saleImageBase+'home-direction-country.webp';
     if(countryImage && countryImage.src!==countryPhoto){
