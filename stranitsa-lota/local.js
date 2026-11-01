@@ -32,6 +32,7 @@
     }
   }
   qa('.lot-hero__media-hit,.lot-hero__action').forEach(b=>b.addEventListener('click',()=>open('gallery')));
+  qa('[data-lot-modal]').forEach(b=>b.addEventListener('click',()=>open(b.dataset.lotModal)));
   qa('.construction__card').forEach((b,index)=>b.addEventListener('click',()=>{open('construction');const stage=q('.construction-gallery-modal__stage',overlay);if(stage)stage.scrollTo({top:Math.floor(index/2)*stage.clientHeight});const period=q('.construction-gallery-modal__period',overlay);if(period)period.textContent=q('.construction__year',b)?.textContent||''}));
   qa('.site-footer__callback-btn,.lot-complex-bar__consult,.lot-complex-bar__action,.mortgage__action,.floating-expert__card').forEach(b=>b.addEventListener('click',()=>open(b.textContent.includes('Смотреть обзор')?'gallery':'callback')));
   function scrollBar(){const bar=q('.lot-complex-bar'),hero=q('.lot-hero');if(!bar||!hero)return;const show=hero.getBoundingClientRect().bottom<header.getBoundingClientRect().height;bar.classList.toggle('lot-complex-bar--visible',show);bar.setAttribute('aria-hidden',String(!show))}
@@ -41,7 +42,7 @@
   q('.floating-expert__close')?.addEventListener('click',()=>q('.floating-expert')?.remove());
   function initForms(root){
     qa('.catalog-consultation__method,.catalog-contact__method,.callback-modal__method',root).forEach(b=>b.addEventListener('click',()=>{const group=b.parentElement;qa('button',group).forEach(t=>{[...t.classList].filter(c=>c.endsWith('--active')).forEach(c=>t.classList.remove(c));t.setAttribute('aria-pressed',String(t===b))});const base=[...b.classList].find(c=>c.endsWith('__method'));if(base)b.classList.add(base+'--active')}));
-    qa('form',root).forEach(f=>{qa('input:not([type="hidden"])',f).forEach(i=>{if(i.type==='checkbox'||i.type==='tel'||i.type==='email')i.required=true});f.addEventListener('submit',e=>{e.preventDefault();if(!f.reportValidity())return;let msg=q('.local-form-feedback',f);if(!msg){msg=document.createElement('p');msg.className='local-form-feedback';msg.setAttribute('role','status');f.append(msg)}msg.textContent='Для отправки заявки свяжитесь с BARNES по телефону '+(window.BARNES_LOT_DATA.broker?.phone||'+7 (495) 182-50-79')+'.'})});
+    qa('form',root).forEach(f=>{qa('input:not([type="hidden"])',f).forEach(i=>{if(i.type==='checkbox'||i.type==='tel'||i.type==='email')i.required=true});f.addEventListener('submit',e=>{e.preventDefault();if(!f.reportValidity())return;let msg=q('.local-form-feedback',f);if(!msg){msg=document.createElement('p');msg.className='local-form-feedback';msg.setAttribute('role','status');f.append(msg)}msg.textContent=f.classList.contains('newsletter-form')?'Подписка в предпросмотре не подключена. Данные не отправлены.':'Отправка в предпросмотре не подключена. Свяжитесь с BARN Estate по телефону '+(window.BARNES_LOT_DATA.broker?.phone||'+7 (495) 182-50-79')+'.'})});
   }
   initForms(document);
   qa('.reviews-section__nav-btn').forEach((b,i)=>b.addEventListener('click',()=>{reviewIndex=Math.max(0,Math.min(data.reviews.length-1,reviewIndex+(i?1:-1)));q('.reviews-section__content').innerHTML=data.reviews[reviewIndex];qa('.reviews-section__nav-btn').forEach((t,j)=>t.disabled=j?reviewIndex===data.reviews.length-1:reviewIndex===0)}));

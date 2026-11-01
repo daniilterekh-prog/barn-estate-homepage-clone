@@ -1,19 +1,19 @@
-/* Reference fixture. A data provider may set BARNES_LOT_DATA before this script. */
+/* Demo fixture captured 2026-10-12; provider may override before initialization. */
 window.BARNES_LOT_DATA = window.BARNES_LOT_DATA || {
   "id": "588036",
   "source": "https://front.barnes.vsavr.ru/vtorichnaya-nedvizhimost/588036/",
-  "title": "Пентхаус в Москва, 6-комн., 501 м², ID588036",
-  "description": "Уникальный 2-уровневый пентхаус с террасой - Ваш личный оазис в сердце Патриарших прудов.",
+  "title": "Пентхаус в Москве, 6-комн., 501 м², ID588036",
+  "description": "Двухуровневый пентхаус с террасой в районе Патриарших прудов.",
   "priceRub": 1254177000,
   "displayPrice": "1 254 177 000 ₽",
   "cover": {
     "src": "assets/source/033e8fa88f8a.jpg",
-    "alt": "Пентхаус в Москва, 6-комн., 501 м², ID588036"
+    "alt": "Пентхаус в Москве, 6-комн., 501 м², ID588036"
   },
   "seo": {
-    "description": "В продаже Пентхаус 501 м2 стоимостью 1254177000 рублей. BARNES Moscow — лучшие предложения для самого взыскательного клиента. Оказываем полный спектр услуг по работе с элитной недвижимостью.",
-    "ogTitle": "Недвижимость - BARNES",
-    "ogDescription": "В продаже Пентхаус 501 м2 стоимостью 1254177000 рублей. BARNES Moscow — лучшие предложения для самого взыскательного клиента. Оказываем полный спектр услуг по работе с элитной недвижимостью.",
+    "description": "В продаже Пентхаус 501 м2 стоимостью 1254177000 рублей. BARN Estate — лучшие предложения для самого взыскательного клиента. Оказываем полный спектр услуг по работе с элитной недвижимостью.",
+    "ogTitle": "Недвижимость - BARN Estate",
+    "ogDescription": "В продаже Пентхаус 501 м2 стоимостью 1254177000 рублей. BARN Estate — лучшие предложения для самого взыскательного клиента. Оказываем полный спектр услуг по работе с элитной недвижимостью.",
     "structuredData": {
       "@context": "https://schema.org",
       "@graph": [
@@ -102,8 +102,8 @@ window.BARNES_LOT_DATA = window.BARNES_LOT_DATA || {
         {
           "@id": "https://front.barnes.vsavr.ru/vtorichnaya-nedvizhimost/588036#product",
           "@type": "Product",
-          "description": "Уникальный 2-уровневый пентхаус с террасой - Ваш личный оазис в сердце Патриарших прудов.",
-          "name": "Пентхаус в Москва, 6-комн., 501 м², ID588036",
+          "description": "Двухуровневый пентхаус с террасой в районе Патриарших прудов.",
+          "name": "Пентхаус в Москве, 6-комн., 501 м², ID588036",
           "sku": "588036",
           "url": "https://front.barnes.vsavr.ru/vtorichnaya-nedvizhimost/588036/",
           "additionalProperty": [
@@ -138,10 +138,6 @@ window.BARNES_LOT_DATA = window.BARNES_LOT_DATA || {
               "value": "Пентхаус"
             }
           ],
-          "brand": {
-            "@type": "Brand",
-            "name": "СЗ 5 ДОНСКОЙ"
-          },
           "image": [
             "https://c15d3839-d361-4fb8-9615-0c7a980d0169.selstorage.ru/resize_cache/11205401/9540270520019373f25d4c66cccf20c1/iblock/d00/d0046080deae4f3926d34c87f544797d/bf27c20c21fc353582173b0bdbedc4e4.jpg",
             "https://c15d3839-d361-4fb8-9615-0c7a980d0169.selstorage.ru/resize_cache/11205402/9540270520019373f25d4c66cccf20c1/iblock/19e/19e577cda18c3293affd85645a36347d/dc4c5ee362abbad120cb066edd46503b.jpg",
@@ -324,11 +320,10 @@ window.BARNES_LOT_DATA = window.BARNES_LOT_DATA || {
   "highlights": [
     "С отделкой",
     "6 этаж из 6",
-    "Сдан 1912"
+    "1912 год постройки"
   ],
   "badges": [
-    "2 503 347 ₽/м²",
-    "в ипотеку от 16 233 633 ₽/мес"
+    "2 503 347 ₽/м²"
   ],
   "gallery": [
     {
@@ -485,174 +480,8 @@ window.BARNES_LOT_DATA = window.BARNES_LOT_DATA || {
     }
   ],
   "galleryBadges": [
-    "2 503 347 ₽/м",
-    "в ипотеку от 16 233 633 ₽/мес"
+    "2 503 347 ₽/м²"
   ],
-  "complex": {
-    "cards": [
-      {
-        "label": "Архитектура",
-        "image": {
-          "src": "assets/source/033e8fa88f8a.jpg",
-          "alt": "Архитектура"
-        },
-        "span": "half"
-      },
-      {
-        "label": "Комплекс",
-        "image": {
-          "src": "assets/source/25ef40907208.jpg",
-          "alt": "Комплекс"
-        },
-        "span": "half"
-      },
-      {
-        "label": "Интерьеры",
-        "image": {
-          "src": "assets/source/f711759ac121.jpg",
-          "alt": "Интерьеры"
-        },
-        "span": "third"
-      },
-      {
-        "label": "Лобби",
-        "image": {
-          "src": "assets/source/5eab3be7ef65.jpg",
-          "alt": "Лобби"
-        },
-        "span": "third"
-      },
-      {
-        "label": "Территория",
-        "image": {
-          "src": "assets/source/e310f7c020f8.jpg",
-          "alt": "Территория"
-        },
-        "span": "third"
-      },
-      {
-        "label": "Виды",
-        "image": {
-          "src": "assets/source/3b38fa56bea4.jpg",
-          "alt": "Виды"
-        },
-        "span": "half"
-      },
-      {
-        "label": "Благоустройство",
-        "image": {
-          "src": "assets/source/89c6d33ed3ab.jpg",
-          "alt": "Благоустройство"
-        },
-        "span": "half"
-      }
-    ]
-  },
-  "developer": {
-    "name": "«СЗ 5 ДОНСКОЙ»",
-    "description": "СЗ 5 Донской — московский специализированный застройщик, зарегистрированный в 2003 году. Компания работает в сегменте премиальной жилой недвижимости и реализует проект FIVE TOWERS. Этот ЖК станет самым высоким жилым зданием Москвы за пределами делового кластера «Москва-Сити». Компания входит в структуру ООО «АРГО» и ведет деятельность в рамках требований 214-ФЗ.",
-    "logo": {
-      "src": "assets/source/4960a01f7e5b.jpg",
-      "alt": "СЗ 5 ДОНСКОЙ"
-    },
-    "url": "https://front.barnes.vsavr.ru/zastroyshchiki/sz-5-donskoy/"
-  },
-  "construction": {
-    "cards": [
-      {
-        "period": "08 2026 Г.",
-        "image": {
-          "src": "assets/source/060fa110f599.jpg",
-          "alt": "08 2026 Г."
-        },
-        "span": "half"
-      },
-      {
-        "period": "05 2026 Г.",
-        "image": {
-          "src": "assets/source/f23846b27119.jpg",
-          "alt": "05 2026 Г."
-        },
-        "span": "half"
-      },
-      {
-        "period": "07 2025 Г.",
-        "image": {
-          "src": "assets/source/8dbd1ddb9bb1.jpg",
-          "alt": "07 2025 Г."
-        },
-        "span": "third"
-      },
-      {
-        "period": "01 2026 Г.",
-        "image": {
-          "src": "assets/source/a0bee3b2f782.jpg",
-          "alt": "01 2026 Г."
-        },
-        "span": "third"
-      }
-    ],
-    "photos": [
-      {
-        "src": "assets/source/060fa110f599.jpg",
-        "alt": "08 2026 Г. — фото 1"
-      },
-      {
-        "src": "assets/source/f23846b27119.jpg",
-        "alt": "05 2026 Г. — фото 2"
-      },
-      {
-        "src": "assets/source/8dbd1ddb9bb1.jpg",
-        "alt": "07 2025 Г. — фото 3"
-      },
-      {
-        "src": "assets/source/a0bee3b2f782.jpg",
-        "alt": "01 2026 Г. — фото 4"
-      }
-    ]
-  },
-  "mortgage": {
-    "fields": [
-      {
-        "min": 501700000,
-        "max": 2508400000,
-        "value": 1254177000,
-        "displayValue": "1 254 177 000 ₽ "
-      },
-      {
-        "min": 125400000,
-        "max": 1128750000,
-        "value": 376250000,
-        "displayValue": "376 250 000 ₽ "
-      },
-      {
-        "min": 1,
-        "max": 30,
-        "value": 20,
-        "displayValue": "20 лет"
-      }
-    ],
-    "offers": [
-      [
-        "СберБанк",
-        "21,9%",
-        "250 835 400 ₽",
-        "16 233 690 ₽"
-      ],
-      [
-        "ВТБ-Банк",
-        "26,7%",
-        "250 835 400 ₽",
-        "19 633 713 ₽"
-      ],
-      [
-        "Альфа-Банк",
-        "25,69%",
-        "250 835 400 ₽",
-        "18 912 142 ₽"
-      ]
-    ]
-  },
   "map": {
     "views": [
       {
@@ -5231,5 +5060,48 @@ window.BARNES_LOT_DATA = window.BARNES_LOT_DATA || {
       }
     ],
     "galleryMarkup": "<div data-v-7681786d=\"\" class=\"__ymap\" style=\"width: 100%; height: 100%; z-index: 0;\"><div class=\"__ymap_container\"><ymaps3 class=\"ymaps3--map-container\"><ymaps3 class=\"ymaps3--map\" style=\"width: 860px; height: 788px; touch-action: none;\"><ymaps3 class=\"ymaps3--main-engine-container\"><ymaps3><ymaps3 class=\"ymaps3--layer ymaps3--tile-layer\" style=\"opacity: 1; perspective: 1470.43px;\"><ymaps3 class=\"ymaps3--tile-layer__container\" data-z=\"14\" style=\"transform: rotateX(0rad) translate3d(0px, 0px, 0px) rotateZ(0rad) translate3d(0px, 0px, 0px); z-index: 14;\"><img src=\"assets/source/f73d77026280.png\" loading=\"eager\" style=\"width: 256px; height: 256px; opacity: 1; left: 195px; top: 21px;\"><img src=\"assets/source/4379c78de82f.png\" loading=\"eager\" style=\"width: 256px; height: 256px; opacity: 1; left: 195px; top: 277px;\"><img src=\"assets/source/b23583331b3c.png\" loading=\"eager\" style=\"width: 256px; height: 256px; opacity: 1; left: 451px; top: 277px;\"><img src=\"assets/source/03834c46f5b3.png\" loading=\"eager\" style=\"width: 256px; height: 256px; opacity: 1; left: 451px; top: 21px;\"><img src=\"assets/source/87df4eea4ba1.png\" loading=\"eager\" style=\"width: 256px; height: 256px; opacity: 1; left: -61px; top: 277px;\"><img src=\"assets/source/3df060242a5b.png\" loading=\"eager\" style=\"width: 256px; height: 256px; opacity: 1; left: 195px; top: 533px;\"><img src=\"assets/source/fb4eab72a112.png\" loading=\"eager\" style=\"width: 256px; height: 256px; opacity: 1; left: 451px; top: 533px;\"><img src=\"assets/source/a7418ee93a3d.png\" loading=\"eager\" style=\"width: 256px; height: 256px; opacity: 1; left: -61px; top: 21px;\"><img src=\"assets/source/7f07e3d145ee.png\" loading=\"eager\" style=\"width: 256px; height: 256px; opacity: 1; left: 707px; top: 277px;\"><img src=\"assets/source/041b6f22eb70.png\" loading=\"eager\" style=\"width: 256px; height: 256px; opacity: 1; left: -61px; top: 533px;\"><img src=\"assets/source/464b7fbf1226.png\" loading=\"eager\" style=\"width: 256px; height: 256px; opacity: 1; left: 707px; top: 533px;\"><img src=\"assets/source/a88e8a37621a.png\" loading=\"eager\" style=\"width: 256px; height: 256px; opacity: 1; left: 707px; top: 21px;\"><img src=\"assets/source/dcf3acee897e.png\" loading=\"eager\" style=\"width: 256px; height: 256px; opacity: 1; left: -61px; top: -235px;\"><img src=\"assets/source/3f03fb0deef9.png\" loading=\"eager\" style=\"width: 256px; height: 256px; opacity: 1; left: 195px; top: -235px;\"><img src=\"assets/source/a26c5ea8b5b2.png\" loading=\"eager\" style=\"width: 256px; height: 256px; opacity: 1; left: 451px; top: -235px;\"><img src=\"assets/source/42b3913967fd.png\" loading=\"eager\" style=\"width: 256px; height: 256px; opacity: 1; left: 707px; top: -235px;\"></ymaps3></ymaps3></ymaps3></ymaps3><ymaps3 class=\"ymaps3--top-engine-container\"><ymaps3><ymaps3 class=\"ymaps3--layer ymaps3--graphics-layer\" style=\"opacity: 1; perspective: 1470.43px;\"></ymaps3><ymaps3 class=\"ymaps3--layer ymaps3--marker-layer\" style=\"opacity: 1; transform-origin: 430px 394px;\"><ymaps3 class=\"ymaps3--marker\" style=\"transform: translate(430px, 394px); z-index: 0;\"><div class=\"__ymap-marker\" style=\"width: 0px; height: 0px;\"><div class=\"__ymap-marker_wrapper\" style=\"transform: translate(-50%, -100%); width: fit-content;\"><div data-v-7681786d=\"\" class=\"lot-gallery-modal__pin\"></div></div></div></ymaps3></ymaps3></ymaps3></ymaps3></ymaps3><ymaps3 class=\"ymaps3--controls ymaps3--controls_center ymaps3--controls_right ymaps3--controls_vertical\"><ymaps3 class=\"ymaps3--control ymaps3--control__background\"><ymaps3 class=\"ymaps3--zoom-control ymaps3--zoom-control_vertical\"><button class=\"ymaps3--button ymaps3--control-button\" type=\"button\"><ymaps3 class=\"ymaps3--zoom-control__in\"></ymaps3></button><button class=\"ymaps3--button ymaps3--control-button\" type=\"button\"><ymaps3 class=\"ymaps3--zoom-control__out\"></ymaps3></button></ymaps3></ymaps3></ymaps3><ymaps3 class=\"ymaps3--map-copyrights ymaps3--map-copyrights_bottom ymaps3--map-copyrights_right\"><ymaps3 class=\"ymaps3--map-copyrights__container\"><ymaps3 class=\"ymaps3--map-copyrights__text\" title=\"© Яндекс\">© Яндекс</ymaps3><a class=\"ymaps3--map-copyrights__user-agreements\" target=\"_blank\" href=\"https://yandex.ru/legal/maps_termsofuse/?lang=ru_RU\">Условия использования</a></ymaps3><a class=\"ymaps3--map-copyrights__logo ymaps3--icon-logo-ru-black\" href=\"https://yandex.ru/maps/?from=api-maps&amp;utm_source=jsapi&amp;ll=37.59342519999996%2C55.7641866999937&amp;origin=jsapi_3&amp;z=14&amp;l=map\"></a><ymaps3 class=\"ymaps3--map-copyrights__scale\" style=\"bottom: 40px;\"></ymaps3></ymaps3><ymaps3 class=\"ymaps3--controls ymaps3--controls_bottom ymaps3--controls_left ymaps3--controls_horizontal\"><ymaps3 class=\"ymaps3--control ymaps3--control__background\"><button class=\"ymaps3--button ymaps3--control-button\" type=\"button\"><ymaps3 class=\"ymaps3--open-maps-button\">Открыть Яндекс Карты</ymaps3></button></ymaps3></ymaps3></ymaps3></div><div class=\"__ymap_slots\" style=\"display: none;\"><!----><!----><!----></div></div>"
+  },
+  "pageTitle": "Пентхаус в Москве, 6-комн., 501 м², ID588036 — BARN Estate",
+  "descriptionParagraphs": [
+    "Двухуровневый пентхаус с террасой в районе Патриарших прудов."
+  ],
+  "locationLabel": "Москва, Патриаршие пруды",
+  "facts": [
+    {
+      "label": "Тип объекта",
+      "value": "Пентхаус"
+    },
+    {
+      "label": "Площадь",
+      "value": "501 м²"
+    },
+    {
+      "label": "Комнат",
+      "value": "6"
+    },
+    {
+      "label": "Спален",
+      "value": "5"
+    },
+    {
+      "label": "Санузлов",
+      "value": "4"
+    },
+    {
+      "label": "Этаж",
+      "value": "6 из 6"
+    },
+    {
+      "label": "Отделка",
+      "value": "С отделкой"
+    },
+    {
+      "label": "Год постройки",
+      "value": "1912"
+    }
+  ],
+  "demo": {
+    "capturedAt": "2026-10-12",
+    "notice": "Сохранённый пример, не подтверждение текущей цены и наличия."
   }
 };

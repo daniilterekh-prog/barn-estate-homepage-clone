@@ -1,5 +1,7 @@
 # BARN Estate — страницы основного сайта
 
+- [Актуальный общий лот: UI-кит главной v1.0.0](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/stranitsa-lota/) — экспорт01.11.2026 из barnes-sites, источник `b80dd67`; отдельный тип страницы, без изменения главной.
+
 - [Коммерческая: UI-кит главной v1.0.0, 01.11.2026](kommercheskaya-nedvizhimost/HOME-KIT.md) — синхронизированное самодостаточное превью; рабочие исходники в barnes-sites/main-site/pages/commercial.
 
 [Курортная — кит главной от01.11.2026, с исключениями H1/FAQ](kurortnaya/README.md) · [контракт1.1.0](kurortnaya/UI-KIT.md) · [отдельные блоки](kurortnaya/blocks/catalog.html).
