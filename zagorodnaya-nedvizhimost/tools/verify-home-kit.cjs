@@ -95,7 +95,7 @@ const near = (actual, expected, label, tolerance = 1) => assert.ok(Math.abs(actu
         await page.keyboard.press('Escape');
       }
       const cardStyles = await page.evaluate(() => {
-        const kit = document.querySelector('link[href="css/home-kit-v1.css"]');
+        const kit = document.querySelector('link[href^="css/home-kit-v1.css"]');
         const selectors = ['.apartment-card__name', '.apartment-card__address', '.apartment-card__lotid', '.listing-card-fact__value', '.department-card__title'];
         const properties = ['fontSize', 'fontWeight', 'lineHeight', 'letterSpacing', 'color', 'backgroundColor', 'borderColor', 'borderRadius', 'padding', 'margin'];
         const snapshot = () => Object.fromEntries(selectors.map(selector => {
