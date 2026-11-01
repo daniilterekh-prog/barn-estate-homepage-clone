@@ -960,3 +960,10 @@
 .barnes-block .barn-block-select button:hover,.barnes-block .barn-block-select button:focus-visible{background:#f9f3f3;color:#8b1d25;}
 .barnes-block .barn-filter-open{opacity:1!important;transform:none!important;visibility:visible!important;}
 .barnes-block .standalone-quiz-launch{padding:60px 24px;text-align:center}.barnes-block .standalone-quiz-launch h2{font-size:32px;font-weight:300;margin:24px 0}.barnes-block .standalone-quiz-launch button{background:#8b1d25;border:0;padding:20px 32px;color:white;font:400 17px "Tilda Sans";cursor:pointer;}
+
+/* Outlined header request CTA, including hover and keyboard focus. */
+.barnes-block.barnes-home-typography .site-header .site-header__request {
+ background:transparent!important;
+ border:1px solid #8b1d25!important;
+ color:#8b1d25!important;
+}

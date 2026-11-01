@@ -47,3 +47,10 @@ body.barnes-home-typography .site-header :is(.site-header__phone--icon,.site-hea
 }
 body.barnes-home-typography .home-header-contacts-panel a[href^="tel:"] svg {width:20px;height:20px;}
 body.barnes-home-typography .site-header__phone--icon:focus-visible {outline:2px solid #8b1d25;outline-offset:3px;}
+
+/* Outlined header request CTA, including hover and keyboard focus. */
+body.barnes-home-typography .site-header .site-header__request {
+ background:transparent!important;
+ border:1px solid #8b1d25!important;
+ color:#8b1d25!important;
+}
