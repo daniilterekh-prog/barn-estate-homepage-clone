@@ -68,6 +68,16 @@
       saleImage.width = saleVariant[1];
       saleImage.height = saleVariant[2];
     }
+    const countryCard=[...document.querySelectorAll('.department-card')].find(card=>card.querySelector('.department-card__title')?.textContent.trim()==='Загородная');
+    const countryImage=countryCard?.querySelector('.department-card__image');
+    const countryPhoto=saleImageBase+'home-direction-country.webp';
+    if(countryImage && countryImage.src!==countryPhoto){
+      countryImage.removeAttribute('srcset');
+      countryImage.src=countryPhoto;
+      countryImage.width=1920;
+      countryImage.height=526;
+      countryImage.style.objectPosition='right center';
+    }
     const recommendationTitle=document.querySelector('.barnes-choice__title');
     if(recommendationTitle && recommendationTitle.textContent!=='По рекомендации BARN\u00a0Estate')recommendationTitle.textContent='По рекомендации BARN\u00a0Estate';
     const contactTitle=document.querySelector('.office-contact__copy h2');
