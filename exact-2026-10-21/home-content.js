@@ -68,6 +68,14 @@
       saleImage.width = saleVariant[1];
       saleImage.height = saleVariant[2];
     }
+    const officeImage=document.querySelector('.office-contact__visual img');
+    const officePhoto=saleImageBase+'home-office-estate.webp';
+    if(officeImage && officeImage.src!==officePhoto){
+      officeImage.removeAttribute('srcset');
+      officeImage.src=officePhoto;
+      officeImage.width=1563;
+      officeImage.height=1006;
+    }
     const avatar = document.querySelector('.floating-expert__avatar img');
     if (avatar && avatar.src !== floatingPortrait) {
       avatar.removeAttribute('srcset');

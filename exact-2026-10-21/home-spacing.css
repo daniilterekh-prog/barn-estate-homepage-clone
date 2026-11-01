@@ -241,3 +241,7 @@ body.barnes-home-typography .site-footer__logo img {
 @media (max-width: 540px) {
   body.barnes-home-typography .site-footer__logo img { height: 36px; }
 }
+
+/* Edited office image: retain its shallower native frame without stretching or cover crops. */
+body.barnes-home-typography .office-contact__visual { min-height:0; }
+body.barnes-home-typography .office-contact__visual img { height:auto; aspect-ratio:1563 / 1006; object-fit:contain; }
