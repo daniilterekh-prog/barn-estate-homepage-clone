@@ -214,9 +214,14 @@
       "Home/favorites relative routes and count binding",
       "Existing favorite IDs passed to barn:lead",
       "Accessible menu focus/inert integration",
-      "Page headings and card secondary type"
+      "Page headings; original card typography preserved"
     ],
-    "verifiedOn": "2026-11-01"
+    "verifiedOn": "2026-11-01",
+    "cardException": {
+      "requested": "2026-11-01",
+      "baseline": "797cda2",
+      "rule": "Preserve original card markup and typography; no approved-kit override for card address or ID."
+    }
   },
   "historicalComponents": {
     "header": {
