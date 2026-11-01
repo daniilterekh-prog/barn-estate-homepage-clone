@@ -50,10 +50,10 @@ body.barnes-home-typography :is(.services-section__description, .partners-sectio
 }
 /* Service-card titles keep the original responsive scale: 42 / 35 / 26px. */
 body.barnes-home-typography .department-card__title {
-  font-size: var(--home-card) !important;
-  font-weight: 400 !important;
-  line-height: 1.2 !important;
-  letter-spacing: normal !important;
+  font-size: var(--home-direction-title) !important;
+  font-weight: 300 !important;
+  line-height: 1.15 !important;
+  letter-spacing: .08em !important;
   color: #fff !important;
 }
 body.barnes-home-typography .apartment-card__name {
@@ -226,7 +226,7 @@ body.barnes-home-typography .departments-section__item:nth-child(-n+2) .departme
 body.barnes-home-typography .departments-section__item:nth-child(-n+2) .department-card__title {
   max-width:none;
   white-space:nowrap;
-  font-size:min(var(--home-card),7cqw) !important;
+  font-size:min(var(--home-direction-title),7cqw) !important;
 }
 
 /* Equal, slightly larger leading contact icons; arrows retain their own size. */
@@ -242,3 +242,8 @@ body.barnes-home-typography .project-hero__cta-text {
  line-height:var(--home-lead-line)!important;
  letter-spacing:normal!important;
 }
+
+/* Original direction-card typography, verified on barn-estate.ru 2026-11-01. */
+body.barnes-home-typography {--home-direction-title:25px;}
+@media(max-width:1440px) {body.barnes-home-typography {--home-direction-title:22px;}}
+@media(max-width:540px) {body.barnes-home-typography {--home-direction-title:20px;}}

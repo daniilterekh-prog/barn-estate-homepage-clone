@@ -709,3 +709,9 @@
 .barnes-block.barnes-home-typography :is(.barnes-choice__select-value,.barnes-choice__select-option) {font-weight:400!important;}
 
 .barnes-block .barnes-template.owner-sale-reference-ui.home-quiz-host :is(.home-quiz__option,.home-quiz__back){border-radius:1px!important;}
+
+.barnes-block.barnes-home-typography {--home-direction-title:25px;}
+@media(max-width:1440px){.barnes-block.barnes-home-typography {--home-direction-title:22px;}}
+@media(max-width:540px){.barnes-block.barnes-home-typography {--home-direction-title:20px;}}
+.barnes-block.barnes-home-typography .department-card__title{font-size:var(--home-direction-title)!important;font-weight:300!important;line-height:1.15!important;letter-spacing:.08em!important;}
+.barnes-block.barnes-home-typography .departments-section__item:nth-child(-n+2) .department-card__title{font-size:min(var(--home-direction-title),7cqw)!important;}
