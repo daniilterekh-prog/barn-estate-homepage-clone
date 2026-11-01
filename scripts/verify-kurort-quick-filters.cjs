@@ -6,6 +6,9 @@ const assert = require('node:assert/strict');
     for (const width of [1440,390,768,2560]) {
       const page = await browser.newPage({ viewport:{width,height:900} });
       await page.goto((process.env.KURORT_BASE_URL || 'http://127.0.0.1:8769/kurortnaya/'), {waitUntil:'domcontentloaded'});
+      // Controls are rendered before the asynchronously loaded shared controller.
+      await page.waitForLoadState('networkidle');
+      await page.evaluate(() => document.fonts.ready);
       const buttons = page.locator('.catalog-mode-filters .catalog-quick-filters__button');
       await buttons.first().waitFor();
       assert.equal(await buttons.count(),4,'Four quick filters, including property type');

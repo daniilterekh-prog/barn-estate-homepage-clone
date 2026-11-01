@@ -116,6 +116,46 @@
     phoneLink.setAttribute('aria-label', 'Позвонить по номеру +7 495 182-50-79');
     contacts.appendChild(phoneLink);
     rightColumn.appendChild(contacts);
+    var request = document.createElement('button');
+    request.type = 'button';
+    request.className = 'catalog-header-request';
+    request.textContent = 'Оставить заявку';
+    request.setAttribute('aria-haspopup', 'dialog');
+    request.addEventListener('click', function () {
+      if (openContactModal) openContactModal(request);
+    });
+    contacts.before(request);
+
+    var top = header.querySelector('.site-header__top');
+    var contactToggle = document.createElement('button');
+    contactToggle.type = 'button';
+    contactToggle.className = 'catalog-header-mobile-toggle';
+    contactToggle.setAttribute('aria-label', 'Показать способы связи');
+    contactToggle.setAttribute('aria-expanded', 'false');
+    contactToggle.setAttribute('aria-controls', 'kurortnaya-hero-contacts');
+    contactToggle.innerHTML = '<svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.5 9.8 9.8 0 0 1-4-.9L3 21l1.7-4.6A8.4 8.4 0 1 1 21 11.5Z"/><path d="M8 12h.01M12 12h.01M16 12h.01"/></svg>';
+    var heroPanel = contacts.cloneNode(true);
+    heroPanel.id = 'kurortnaya-hero-contacts';
+    heroPanel.className = 'catalog-header-mobile-panel';
+    heroPanel.hidden = true;
+    top.append(contactToggle, heroPanel);
+    function closeHeroContacts(restoreFocus) {
+      var wasOpen = !heroPanel.hidden;
+      heroPanel.hidden = true;
+      contactToggle.setAttribute('aria-expanded', 'false');
+      if (wasOpen && restoreFocus) contactToggle.focus();
+    }
+    contactToggle.addEventListener('click', function () {
+      heroPanel.hidden = !heroPanel.hidden;
+      contactToggle.setAttribute('aria-expanded', String(!heroPanel.hidden));
+    });
+    document.addEventListener('click', function (event) {
+      if (!heroPanel.contains(event.target) && !contactToggle.contains(event.target)) closeHeroContacts(false);
+    });
+    document.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape') closeHeroContacts(true);
+    });
+    window.addEventListener('resize', function () { closeHeroContacts(false); });
     var mobilePhone = header.querySelector('.site-header__mobile-phone');
     if (mobilePhone) {
       mobilePhone.classList.add('catalog-primary-call');
@@ -147,7 +187,7 @@
     sticky.setAttribute('inert', '');
     sticky.innerHTML = '<div class="catalog-sticky__inner base-container"><nav class="catalog-sticky__nav" aria-label="Навигация по странице"><ul class="catalog-sticky__list">' + sections.map(function (item) {
       return '<li class="catalog-sticky__item"><a class="catalog-sticky__link" href="#' + item[1] + '">' + item[0] + '</a></li>';
-    }).join('') + '<li class="catalog-sticky__item catalog-sticky__item--contacts"><button class="catalog-sticky__contact-toggle" type="button" aria-expanded="false" aria-controls="kurortnaya-sticky-contacts" aria-label="Показать способы связи"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.5 9.8 9.8 0 0 1-4-.9L3 21l1.7-4.6A8.4 8.4 0 1 1 21 11.5Z"></path><path d="M8 12h.01M12 12h.01M16 12h.01"></path></svg></button></li></ul></nav><a class="catalog-sticky__logo" aria-label="BARN Estate — на главную" href="https://barn-estate.ru/"><img alt="BARN Estate" width="220" height="30" src="https://daniilterekh-prog.github.io/barnes-assets/brand/barn-estate/logo.svg" style="object-fit:contain;aspect-ratio:220 / 30"></a><div class="catalog-sticky__brand"><button class="catalog-sticky__request" type="button">Оставить заявку</button><nav class="catalog-sticky__messengers" aria-label="Способы связи"><a class="catalog-sticky__messenger" href="https://wa.me/79252621650" target="_blank" rel="noopener noreferrer" aria-label="Написать в WhatsApp"><img src="assets/header-whatsapp.svg" alt=""></a><a class="catalog-sticky__messenger" href="https://max.ru/join/AWj8ibiCtAPOJOlulMGNkykKGz_prXVWg-IQK1KpUG8" target="_blank" rel="noopener noreferrer" aria-label="Написать в MAX"><img src="assets/header-max.svg" alt=""></a><a class="catalog-sticky__messenger" href="https://t.me/art_de_vivre_barnes" target="_blank" rel="noopener noreferrer" aria-label="Написать в Telegram"><img src="assets/header-telegram.svg" alt=""></a><a class="catalog-sticky__phone" href="tel:74951825079" aria-label="Позвонить по номеру +7 495 182-50-79"><span class="catalog-sticky__phone-number">+7 (495) 182-50-79</span><span class="catalog-sticky__phone-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg></span></a></nav></div></div>';
+    }).join('') + '<li class="catalog-sticky__item catalog-sticky__item--contacts"><button class="catalog-sticky__contact-toggle" type="button" aria-expanded="false" aria-controls="kurortnaya-sticky-contacts" aria-label="Показать способы связи"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.5 9.8 9.8 0 0 1-4-.9L3 21l1.7-4.6A8.4 8.4 0 1 1 21 11.5Z"></path><path d="M8 12h.01M12 12h.01M16 12h.01"></path></svg></button></li></ul></nav><a class="catalog-sticky__logo" aria-label="BARN Estate — на главную" href="https://barn-estate.ru/"><img alt="BARN Estate" width="220" height="30" src="assets/barn-estate-logo.svg" style="object-fit:contain;aspect-ratio:220 / 30"></a><div class="catalog-sticky__brand"><button class="catalog-sticky__request" type="button">Оставить заявку</button><nav class="catalog-sticky__messengers" aria-label="Способы связи"><a class="catalog-sticky__messenger" href="https://wa.me/79252621650" target="_blank" rel="noopener noreferrer" aria-label="Написать в WhatsApp"><img src="assets/header-whatsapp.svg" alt=""></a><a class="catalog-sticky__messenger" href="https://max.ru/join/AWj8ibiCtAPOJOlulMGNkykKGz_prXVWg-IQK1KpUG8" target="_blank" rel="noopener noreferrer" aria-label="Написать в MAX"><img src="assets/header-max.svg" alt=""></a><a class="catalog-sticky__messenger" href="https://t.me/art_de_vivre_barnes" target="_blank" rel="noopener noreferrer" aria-label="Написать в Telegram"><img src="assets/header-telegram.svg" alt=""></a><a class="catalog-sticky__phone" href="tel:74951825079" aria-label="Позвонить по номеру +7 495 182-50-79"><span class="catalog-sticky__phone-number">+7 (495) 182-50-79</span><span class="catalog-sticky__phone-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg></span></a></nav></div></div>';
 
     var sourceLogo = header.querySelector('.site-header__logo img');
     var stickyLogo = sticky.querySelector('.catalog-sticky__logo img');
@@ -242,6 +282,16 @@
   }
 
   enhanceCatalogStickyHeader();
+
+  // Approved Material Call artwork from the current homepage. Telephone links
+  // remain native; only the visual asset changes (Apache-2.0 licence in assets).
+  document.querySelectorAll('.catalog-header-contact--phone, .catalog-sticky__phone').forEach(function (phone) {
+    var artwork = document.createElement('img');
+    artwork.src = 'assets/header-phone.svg';
+    artwork.alt = '';
+    artwork.setAttribute('aria-hidden', 'true');
+    phone.replaceChildren(artwork);
+  });
 
   function addExplicitLabel(control, id) {
     if (!control) return;
@@ -528,6 +578,12 @@
 
   enhanceContactMethods();
   enhanceContactModal();
+
+  var expertClose = document.querySelector('.floating-expert__close');
+  if (expertClose) expertClose.addEventListener('click', function (event) {
+    event.stopPropagation();
+    expertClose.closest('.floating-expert').hidden = true;
+  });
 
   if (!document.querySelector('script[data-kurortnaya-listing-mode]')) {
     var listingScript = document.createElement('script');

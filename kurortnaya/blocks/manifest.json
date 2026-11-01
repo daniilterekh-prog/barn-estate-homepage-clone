@@ -1,15 +1,15 @@
 {
-  "version": "1.0.0",
+  "version": "1.1.0",
   "reference": "kurortnaya",
-  "sourceCommit": "14401c518b4a5f51e910121f1741d79efa164a80",
+  "sourceCommit": "797cda2692e0ef369f12a760102322c711a20f18",
   "blocks": [
     {
       "id": "first-degree-header",
       "title": "Хэдер hero",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "source": {
         "repo": "daniilterekh-prog/barn-estate-homepage-clone",
-        "commit": "14401c518b4a5f51e910121f1741d79efa164a80",
+        "commit": "797cda2692e0ef369f12a760102322c711a20f18",
         "route": "kurortnaya",
         "selector": ".layout__header"
       },
@@ -32,15 +32,23 @@
         "onSearch"
       ],
       "assembly": true,
-      "scripts": []
+      "scripts": [],
+      "referenceKit": {
+        "version": "home-1.0.0",
+        "date": "2026-11-01",
+        "exceptions": [
+          "hero H1",
+          "FAQ"
+        ]
+      }
     },
     {
       "id": "first-degree-sticky-nav",
       "title": "Хэдер после hero",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "source": {
         "repo": "daniilterekh-prog/barn-estate-homepage-clone",
-        "commit": "14401c518b4a5f51e910121f1741d79efa164a80",
+        "commit": "797cda2692e0ef369f12a760102322c711a20f18",
         "route": "kurortnaya",
         "selector": ".catalog-sticky"
       },
@@ -60,15 +68,23 @@
       ],
       "hooks": [],
       "assembly": true,
-      "scripts": []
+      "scripts": [],
+      "referenceKit": {
+        "version": "home-1.0.0",
+        "date": "2026-11-01",
+        "exceptions": [
+          "hero H1",
+          "FAQ"
+        ]
+      }
     },
     {
       "id": "first-degree-hero",
       "title": "Первый экран и поиск",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "source": {
         "repo": "daniilterekh-prog/barn-estate-homepage-clone",
-        "commit": "14401c518b4a5f51e910121f1741d79efa164a80",
+        "commit": "797cda2692e0ef369f12a760102322c711a20f18",
         "route": "kurortnaya",
         "selector": "#catalog-hero"
       },
@@ -91,15 +107,23 @@
         "onSearch"
       ],
       "assembly": true,
-      "scripts": []
+      "scripts": [],
+      "referenceKit": {
+        "version": "home-1.0.0",
+        "date": "2026-11-01",
+        "exceptions": [
+          "hero H1",
+          "FAQ"
+        ]
+      }
     },
     {
       "id": "first-degree-start-sales",
       "title": "Старты продаж",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "source": {
         "repo": "daniilterekh-prog/barn-estate-homepage-clone",
-        "commit": "14401c518b4a5f51e910121f1741d79efa164a80",
+        "commit": "797cda2692e0ef369f12a760102322c711a20f18",
         "route": "kurortnaya",
         "selector": "#catalog-new-starts"
       },
@@ -121,15 +145,23 @@
       "assembly": true,
       "scripts": [
         "../../js/start-sales-cards.js"
-      ]
+      ],
+      "referenceKit": {
+        "version": "home-1.0.0",
+        "date": "2026-11-01",
+        "exceptions": [
+          "hero H1",
+          "FAQ"
+        ]
+      }
     },
     {
       "id": "first-degree-map",
       "title": "Карта проектов",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "source": {
         "repo": "daniilterekh-prog/barn-estate-homepage-clone",
-        "commit": "14401c518b4a5f51e910121f1741d79efa164a80",
+        "commit": "797cda2692e0ef369f12a760102322c711a20f18",
         "route": "kurortnaya",
         "selector": "#catalog-map"
       },
@@ -151,15 +183,23 @@
         "onMap"
       ],
       "assembly": true,
-      "scripts": []
+      "scripts": [],
+      "referenceKit": {
+        "version": "home-1.0.0",
+        "date": "2026-11-01",
+        "exceptions": [
+          "hero H1",
+          "FAQ"
+        ]
+      }
     },
     {
       "id": "first-degree-listing",
       "title": "Фильтры и листинг ЖК / лотов",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "source": {
         "repo": "daniilterekh-prog/barn-estate-homepage-clone",
-        "commit": "14401c518b4a5f51e910121f1741d79efa164a80",
+        "commit": "797cda2692e0ef369f12a760102322c711a20f18",
         "route": "kurortnaya",
         "selector": "#catalog-grid"
       },
@@ -182,15 +222,23 @@
         "onSort"
       ],
       "assembly": true,
-      "scripts": []
+      "scripts": [],
+      "referenceKit": {
+        "version": "home-1.0.0",
+        "date": "2026-11-01",
+        "exceptions": [
+          "hero H1",
+          "FAQ"
+        ]
+      }
     },
     {
       "id": "first-degree-brand-intro",
       "title": "BARNES Moscow / вводный блок",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "source": {
         "repo": "daniilterekh-prog/barn-estate-homepage-clone",
-        "commit": "14401c518b4a5f51e910121f1741d79efa164a80",
+        "commit": "797cda2692e0ef369f12a760102322c711a20f18",
         "route": "kurortnaya",
         "selector": "#catalog-intro"
       },
@@ -210,15 +258,23 @@
       ],
       "hooks": [],
       "assembly": true,
-      "scripts": []
+      "scripts": [],
+      "referenceKit": {
+        "version": "home-1.0.0",
+        "date": "2026-11-01",
+        "exceptions": [
+          "hero H1",
+          "FAQ"
+        ]
+      }
     },
     {
       "id": "first-degree-cta-central",
       "title": "Центральный CTA с экспертом",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "source": {
         "repo": "daniilterekh-prog/barn-estate-homepage-clone",
-        "commit": "14401c518b4a5f51e910121f1741d79efa164a80",
+        "commit": "797cda2692e0ef369f12a760102322c711a20f18",
         "route": "kurortnaya",
         "selector": "#catalog-consultation"
       },
@@ -241,15 +297,23 @@
         "onRequest"
       ],
       "assembly": true,
-      "scripts": []
+      "scripts": [],
+      "referenceKit": {
+        "version": "home-1.0.0",
+        "date": "2026-11-01",
+        "exceptions": [
+          "hero H1",
+          "FAQ"
+        ]
+      }
     },
     {
       "id": "first-degree-directions",
       "title": "Направления",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "source": {
         "repo": "daniilterekh-prog/barn-estate-homepage-clone",
-        "commit": "14401c518b4a5f51e910121f1741d79efa164a80",
+        "commit": "797cda2692e0ef369f12a760102322c711a20f18",
         "route": "kurortnaya",
         "selector": "#catalog-departments"
       },
@@ -269,15 +333,23 @@
       ],
       "hooks": [],
       "assembly": true,
-      "scripts": []
+      "scripts": [],
+      "referenceKit": {
+        "version": "home-1.0.0",
+        "date": "2026-11-01",
+        "exceptions": [
+          "hero H1",
+          "FAQ"
+        ]
+      }
     },
     {
       "id": "first-degree-news",
       "title": "Новости",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "source": {
         "repo": "daniilterekh-prog/barn-estate-homepage-clone",
-        "commit": "14401c518b4a5f51e910121f1741d79efa164a80",
+        "commit": "797cda2692e0ef369f12a760102322c711a20f18",
         "route": "kurortnaya",
         "selector": "#catalog-news"
       },
@@ -297,15 +369,23 @@
       ],
       "hooks": [],
       "assembly": true,
-      "scripts": []
+      "scripts": [],
+      "referenceKit": {
+        "version": "home-1.0.0",
+        "date": "2026-11-01",
+        "exceptions": [
+          "hero H1",
+          "FAQ"
+        ]
+      }
     },
     {
       "id": "first-degree-faq",
       "title": "Вопросы и ответы",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "source": {
         "repo": "daniilterekh-prog/barn-estate-homepage-clone",
-        "commit": "14401c518b4a5f51e910121f1741d79efa164a80",
+        "commit": "797cda2692e0ef369f12a760102322c711a20f18",
         "route": "kurortnaya",
         "selector": "#catalog-faq"
       },
@@ -325,15 +405,23 @@
       ],
       "hooks": [],
       "assembly": true,
-      "scripts": []
+      "scripts": [],
+      "referenceKit": {
+        "version": "home-1.0.0",
+        "date": "2026-11-01",
+        "exceptions": [
+          "hero H1",
+          "FAQ"
+        ]
+      }
     },
     {
       "id": "first-degree-cta-bottom",
       "title": "Нижний CTA",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "source": {
         "repo": "daniilterekh-prog/barn-estate-homepage-clone",
-        "commit": "14401c518b4a5f51e910121f1741d79efa164a80",
+        "commit": "797cda2692e0ef369f12a760102322c711a20f18",
         "route": "kurortnaya",
         "selector": "#catalog-contact"
       },
@@ -356,15 +444,23 @@
         "onRequest"
       ],
       "assembly": true,
-      "scripts": []
+      "scripts": [],
+      "referenceKit": {
+        "version": "home-1.0.0",
+        "date": "2026-11-01",
+        "exceptions": [
+          "hero H1",
+          "FAQ"
+        ]
+      }
     },
     {
       "id": "first-degree-footer",
       "title": "Футер",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "source": {
         "repo": "daniilterekh-prog/barn-estate-homepage-clone",
-        "commit": "14401c518b4a5f51e910121f1741d79efa164a80",
+        "commit": "797cda2692e0ef369f12a760102322c711a20f18",
         "route": "kurortnaya",
         "selector": ".site-footer"
       },
@@ -384,15 +480,23 @@
       ],
       "hooks": [],
       "assembly": true,
-      "scripts": []
+      "scripts": [],
+      "referenceKit": {
+        "version": "home-1.0.0",
+        "date": "2026-11-01",
+        "exceptions": [
+          "hero H1",
+          "FAQ"
+        ]
+      }
     },
     {
       "id": "first-degree-floating-expert",
       "title": "Плавающий эксперт",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "source": {
         "repo": "daniilterekh-prog/barn-estate-homepage-clone",
-        "commit": "14401c518b4a5f51e910121f1741d79efa164a80",
+        "commit": "797cda2692e0ef369f12a760102322c711a20f18",
         "route": "kurortnaya",
         "selector": ".floating-expert"
       },
@@ -415,15 +519,23 @@
         "onRequest"
       ],
       "assembly": true,
-      "scripts": []
+      "scripts": [],
+      "referenceKit": {
+        "version": "home-1.0.0",
+        "date": "2026-11-01",
+        "exceptions": [
+          "hero H1",
+          "FAQ"
+        ]
+      }
     },
     {
       "id": "first-degree-request-modal",
       "title": "Попап заявки",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "source": {
         "repo": "daniilterekh-prog/barn-estate-homepage-clone",
-        "commit": "14401c518b4a5f51e910121f1741d79efa164a80",
+        "commit": "797cda2692e0ef369f12a760102322c711a20f18",
         "route": "kurortnaya",
         "selector": ".catalog-feedback-modal"
       },
@@ -446,15 +558,23 @@
         "onRequest"
       ],
       "assembly": false,
-      "scripts": []
+      "scripts": [],
+      "referenceKit": {
+        "version": "home-1.0.0",
+        "date": "2026-11-01",
+        "exceptions": [
+          "hero H1",
+          "FAQ"
+        ]
+      }
     },
     {
       "id": "first-degree-card-start-sales",
       "title": "Карточка старта продаж",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "source": {
         "repo": "daniilterekh-prog/barn-estate-homepage-clone",
-        "commit": "14401c518b4a5f51e910121f1741d79efa164a80",
+        "commit": "797cda2692e0ef369f12a760102322c711a20f18",
         "route": "kurortnaya",
         "selector": ".catalog-best-offers .launch-card"
       },
@@ -474,15 +594,23 @@
       ],
       "hooks": [],
       "assembly": false,
-      "scripts": []
+      "scripts": [],
+      "referenceKit": {
+        "version": "home-1.0.0",
+        "date": "2026-11-01",
+        "exceptions": [
+          "hero H1",
+          "FAQ"
+        ]
+      }
     },
     {
       "id": "first-degree-card-project",
       "title": "Карточка ЖК",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "source": {
         "repo": "daniilterekh-prog/barn-estate-homepage-clone",
-        "commit": "14401c518b4a5f51e910121f1741d79efa164a80",
+        "commit": "797cda2692e0ef369f12a760102322c711a20f18",
         "route": "kurortnaya",
         "selector": ".catalog-grid__item[data-listing-mode=\"new-build\"] .apartment-card"
       },
@@ -502,15 +630,23 @@
       ],
       "hooks": [],
       "assembly": false,
-      "scripts": []
+      "scripts": [],
+      "referenceKit": {
+        "version": "home-1.0.0",
+        "date": "2026-11-01",
+        "exceptions": [
+          "hero H1",
+          "FAQ"
+        ]
+      }
     },
     {
       "id": "first-degree-card-lot",
       "title": "Карточка лота",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "source": {
         "repo": "daniilterekh-prog/barn-estate-homepage-clone",
-        "commit": "14401c518b4a5f51e910121f1741d79efa164a80",
+        "commit": "797cda2692e0ef369f12a760102322c711a20f18",
         "route": "kurortnaya",
         "selector": ".catalog-grid__item[data-listing-mode=\"secondary\"] .apartment-card"
       },
@@ -530,7 +666,15 @@
       ],
       "hooks": [],
       "assembly": false,
-      "scripts": []
+      "scripts": [],
+      "referenceKit": {
+        "version": "home-1.0.0",
+        "date": "2026-11-01",
+        "exceptions": [
+          "hero H1",
+          "FAQ"
+        ]
+      }
     }
   ]
 }
