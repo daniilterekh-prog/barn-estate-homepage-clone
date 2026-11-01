@@ -242,6 +242,22 @@ body.barnes-home-typography .site-footer__logo img {
   body.barnes-home-typography .site-footer__logo img { height: 36px; }
 }
 
-/* Edited office image: retain its shallower native frame without stretching or cover crops. */
+/* Native office image defaults; shared desktop-row alignment is defined below. */
 body.barnes-home-typography .office-contact__visual { min-height:0; }
 body.barnes-home-typography .office-contact__visual img { height:auto; aspect-ratio:1563 / 1006; object-fit:contain; }
+
+/* Let the contact copy determine the shared row height and both lower edges. */
+@media (min-width: 861px) {
+  body.barnes-home-typography .office-contact__inner,
+  body.barnes-home-typography .office-contact__grid { min-height: 0; }
+  body.barnes-home-typography .office-contact__visual { align-self: stretch; }
+  body.barnes-home-typography .office-contact__visual img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    aspect-ratio: auto;
+    object-fit: cover;
+    object-position: right center;
+  }
+}
