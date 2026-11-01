@@ -68,6 +68,8 @@
       saleImage.width = saleVariant[1];
       saleImage.height = saleVariant[2];
     }
+    const recommendationTitle=document.querySelector('.barnes-choice__title');
+    if(recommendationTitle && recommendationTitle.textContent!=='По рекомендации BARN\u00a0Estate')recommendationTitle.textContent='По рекомендации BARN\u00a0Estate';
     const contactTitle=document.querySelector('.office-contact__copy h2');
     if(contactTitle && contactTitle.textContent!=='СПОСОБЫ СВЯЗИ С BARN ESTATE')contactTitle.textContent='СПОСОБЫ СВЯЗИ С BARN ESTATE';
     const officeImage=document.querySelector('.office-contact__visual img');
