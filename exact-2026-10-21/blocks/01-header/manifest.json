@@ -1,0 +1,143 @@
+{
+  "id": "01-header",
+  "title": "Хедер",
+  "sourceCommit": "3b8f2fb715bdf1840df0ed6450226414b028ebe0",
+  "source": "http://127.0.0.1:8802",
+  "capturedAt": "2026-11-01T12:42:16.163Z",
+  "selector": ".site-header",
+  "files": [
+    {
+      "file": "README.md",
+      "bytes": 4722,
+      "sha256": "ff8d55cc82a227f635538b0fd1a3d7a64fe1dc18f0cfc56d5ef42e58ac290cef"
+    },
+    {
+      "file": "block.css",
+      "bytes": 93953,
+      "sha256": "20bd14ccc773a8129933b4ccff1e850d05335a7b2916432c246b140fbf22b7c7"
+    },
+    {
+      "file": "block.html",
+      "bytes": 26552,
+      "sha256": "41bfb481352f052c46907856e8568a26365f596aa2dc16aa8229bcf1e0d6a9d4"
+    },
+    {
+      "file": "block.js",
+      "bytes": 69197,
+      "sha256": "bca9c3ca5552345dadc7e03cc955bf9667cd0e6643a28f6ef1b858705c329d8f"
+    },
+    {
+      "file": "content.json",
+      "bytes": 19910,
+      "sha256": "24009965d3a214c462dd53a23ce06a8ceb4521bad654e7c9836c01ff5ea24f81"
+    },
+    {
+      "file": "design.json",
+      "bytes": 370,
+      "sha256": "9e570280f1be19cfbf99b8473ce1526f565aadbd93388e17e21f919a600501bf"
+    },
+    {
+      "file": "index.html",
+      "bytes": 27011,
+      "sha256": "73ebc03495bbddcb9b2f14a383f5ce31b310e14f01559087766b802cedbbc6f3"
+    },
+    {
+      "file": "paste.html",
+      "bytes": 2318271,
+      "sha256": "140c438c5fd739d08c9d63bce84506ece0b374c1bb672aa01da45bca285c215c"
+    }
+  ],
+  "assets": [
+    {
+      "file": "assets/5f9a5f75aa9de0fd5d980437.svg",
+      "bytes": 72862,
+      "sha256": "5caa61a4b0731d0d89421b4fb24f41433025e5aea59155a14cf3a3fada6c9174",
+      "source": "https://barn-estate.ru/pictures/office-contact/max.svg"
+    },
+    {
+      "file": "assets/d98028a12bc9366262f97604.svg",
+      "bytes": 757,
+      "sha256": "4435c9a57e165a1c3b7f27e0b5b11b82b10d674ea4fff7f6748cb67b7fcb994e",
+      "source": "https://barn-estate.ru/pictures/office-contact/telegram.svg"
+    },
+    {
+      "file": "assets/29bbe9068117f193bae0f419.svg",
+      "bytes": 1231,
+      "sha256": "3e197e0e1f3e679ee09823c75e1c7bad3a19da9bd1ba01df395268b9ae91816f",
+      "source": "https://barn-estate.ru/pictures/office-contact/whatsapp.svg"
+    },
+    {
+      "file": "assets/45166ee6283659ea6541abd2.jpg",
+      "bytes": 232013,
+      "sha256": "5b10e2286da52d333e30561ce0f29ce392401a8f34fd8ca9efc2fd06553acfd4",
+      "source": "/assets/45166ee6283659ea6541abd2.jpg"
+    },
+    {
+      "file": "assets/d77b3a703b03cd404472d2c4.jpg",
+      "bytes": 193690,
+      "sha256": "b558020c3e4b76d7de5cdf7e298f14e8d01c9484f2aca0693e4608c200d7632d",
+      "source": "/assets/d77b3a703b03cd404472d2c4.jpg"
+    },
+    {
+      "file": "assets/owner-modal-prus.webp",
+      "bytes": 210000,
+      "sha256": "6bbaa8e1df83e7d5eda42c83d174e1f0177a8cbb5698bd5ec01ee3602e8f84aa",
+      "source": "/assets/owner-modal-prus.webp"
+    },
+    {
+      "file": "assets/quiz-mobile-prus-magazine.webp",
+      "bytes": 105912,
+      "sha256": "8985649766af231100dd863db3e4fac10809a7b9f94bc2d38c6922c8e10b67c1",
+      "source": "/assets/quiz-mobile-prus-magazine.webp"
+    },
+    {
+      "file": "assets/c57d9b3c8de986fa0d618d09.svg",
+      "bytes": 6644,
+      "sha256": "9b2d8c1a7d4d213587828c6bdf6592a37113a388fedc1b58211534d8cb1e7123",
+      "source": "https://barn-estate.ru/pictures/logo.svg"
+    },
+    {
+      "file": "assets/TildaSans-Black.woff2",
+      "bytes": 57952,
+      "sha256": "73abed6708c43912dbd5c2760147f72462887ccd803522a1486209ca1e97031a",
+      "source": "https://barn-estate.ru/fonts/TildaSans-Black.woff2"
+    },
+    {
+      "file": "assets/TildaSans-ExtraBold.woff2",
+      "bytes": 62820,
+      "sha256": "726a3a878465a590443308ea9e14459ab5943f699cff4887c844af4ed76ce577",
+      "source": "https://barn-estate.ru/fonts/TildaSans-ExtraBold.woff2"
+    },
+    {
+      "file": "assets/TildaSans-Bold.woff2",
+      "bytes": 63216,
+      "sha256": "a2690df6fe8348066df79e3a3421a3a9bc0b058cc536f3d846f782ea5337afec",
+      "source": "https://barn-estate.ru/fonts/TildaSans-Bold.woff2"
+    },
+    {
+      "file": "assets/TildaSans-Semibold.woff2",
+      "bytes": 63528,
+      "sha256": "3814f8c444073262523050f3554c6f09cb49353e1f6fdc22a3561d354a231439",
+      "source": "https://barn-estate.ru/fonts/TildaSans-Semibold.woff2"
+    },
+    {
+      "file": "assets/a9f2b67f7136af9bde4f58b8.woff2",
+      "bytes": 62556,
+      "sha256": "f716269e361f466570f37bc920988c619ddc8a7828c5949c1c56a731a320ab47",
+      "source": "https://barn-estate.ru/fonts/TildaSans-Medium.woff2"
+    },
+    {
+      "file": "assets/9e76f26b05473907fc0031ca.woff2",
+      "bytes": 61636,
+      "sha256": "2670dad44ca6c2a1b9bbdbf1af6d8db9173f2dbe31604e80bdf9599b55047d41",
+      "source": "https://barn-estate.ru/fonts/TildaSans-Regular.woff2"
+    },
+    {
+      "file": "assets/de589af6ec6325d4b365d646.woff2",
+      "bytes": 63952,
+      "sha256": "f0f2c165784c72343618a7c2cbde00e45dbb9b09af5149984792f280cac9642e",
+      "source": "https://barn-estate.ru/fonts/TildaSans-Light.woff2"
+    }
+  ],
+  "behavior": "Бургер, меню, липкое состояние при прокрутке, выбор четырёх способов связи на мобильном; SVG звонка зелёный."
+}

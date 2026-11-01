@@ -1,0 +1,119 @@
+{
+  "id": "07-project-month",
+  "title": "Проект месяца",
+  "sourceCommit": "3b8f2fb715bdf1840df0ed6450226414b028ebe0",
+  "source": "http://127.0.0.1:8802",
+  "capturedAt": "2026-11-01T12:42:16.163Z",
+  "selector": ".project-hero",
+  "files": [
+    {
+      "file": "README.md",
+      "bytes": 4716,
+      "sha256": "e3639efb6e68e32184bb1d28e6b8ed0716c14be93ea4e7adba1f4b92844a7445"
+    },
+    {
+      "file": "block.css",
+      "bytes": 75933,
+      "sha256": "ed16652941b293cdc56e5b2069d3da3b43051ad7b3a8b3abcef92f1130e8e2a0"
+    },
+    {
+      "file": "block.html",
+      "bytes": 14943,
+      "sha256": "33d1c9770e3e6b68fbd0697186d5d08b46355df3556e3ee0b00e9109d4a22455"
+    },
+    {
+      "file": "block.js",
+      "bytes": 69197,
+      "sha256": "bca9c3ca5552345dadc7e03cc955bf9667cd0e6643a28f6ef1b858705c329d8f"
+    },
+    {
+      "file": "content.json",
+      "bytes": 1531,
+      "sha256": "06bb63e72e6d288951278673635699aedcfa9ce9839af0f5127a15b099a3d45b"
+    },
+    {
+      "file": "design.json",
+      "bytes": 7904,
+      "sha256": "97cf68c4ae2db00ec1eb6888fa92ca6f04940889d6b5f8106beda1b4a4775b97"
+    },
+    {
+      "file": "index.html",
+      "bytes": 15351,
+      "sha256": "240270c3cf9dc175211991e41d1f891bad28a4e2cd89cfe5e436432ba328324f"
+    },
+    {
+      "file": "paste.html",
+      "bytes": 1980448,
+      "sha256": "7e8078bc04a8737484caeb9ea36d588329e2f5590ce75e6698d16e55f4aae47f"
+    }
+  ],
+  "assets": [
+    {
+      "file": "assets/owner-modal-prus.webp",
+      "bytes": 210000,
+      "sha256": "6bbaa8e1df83e7d5eda42c83d174e1f0177a8cbb5698bd5ec01ee3602e8f84aa",
+      "source": "/assets/owner-modal-prus.webp"
+    },
+    {
+      "file": "assets/quiz-mobile-prus-magazine.webp",
+      "bytes": 105912,
+      "sha256": "8985649766af231100dd863db3e4fac10809a7b9f94bc2d38c6922c8e10b67c1",
+      "source": "/assets/quiz-mobile-prus-magazine.webp"
+    },
+    {
+      "file": "assets/45166ee6283659ea6541abd2.jpg",
+      "bytes": 232013,
+      "sha256": "5b10e2286da52d333e30561ce0f29ce392401a8f34fd8ca9efc2fd06553acfd4",
+      "source": "/assets/45166ee6283659ea6541abd2.jpg"
+    },
+    {
+      "file": "assets/d77b3a703b03cd404472d2c4.jpg",
+      "bytes": 193690,
+      "sha256": "b558020c3e4b76d7de5cdf7e298f14e8d01c9484f2aca0693e4608c200d7632d",
+      "source": "/assets/d77b3a703b03cd404472d2c4.jpg"
+    },
+    {
+      "file": "assets/TildaSans-Black.woff2",
+      "bytes": 57952,
+      "sha256": "73abed6708c43912dbd5c2760147f72462887ccd803522a1486209ca1e97031a",
+      "source": "https://barn-estate.ru/fonts/TildaSans-Black.woff2"
+    },
+    {
+      "file": "assets/TildaSans-ExtraBold.woff2",
+      "bytes": 62820,
+      "sha256": "726a3a878465a590443308ea9e14459ab5943f699cff4887c844af4ed76ce577",
+      "source": "https://barn-estate.ru/fonts/TildaSans-ExtraBold.woff2"
+    },
+    {
+      "file": "assets/TildaSans-Bold.woff2",
+      "bytes": 63216,
+      "sha256": "a2690df6fe8348066df79e3a3421a3a9bc0b058cc536f3d846f782ea5337afec",
+      "source": "https://barn-estate.ru/fonts/TildaSans-Bold.woff2"
+    },
+    {
+      "file": "assets/TildaSans-Semibold.woff2",
+      "bytes": 63528,
+      "sha256": "3814f8c444073262523050f3554c6f09cb49353e1f6fdc22a3561d354a231439",
+      "source": "https://barn-estate.ru/fonts/TildaSans-Semibold.woff2"
+    },
+    {
+      "file": "assets/a9f2b67f7136af9bde4f58b8.woff2",
+      "bytes": 62556,
+      "sha256": "f716269e361f466570f37bc920988c619ddc8a7828c5949c1c56a731a320ab47",
+      "source": "https://barn-estate.ru/fonts/TildaSans-Medium.woff2"
+    },
+    {
+      "file": "assets/9e76f26b05473907fc0031ca.woff2",
+      "bytes": 61636,
+      "sha256": "2670dad44ca6c2a1b9bbdbf1af6d8db9173f2dbe31604e80bdf9599b55047d41",
+      "source": "https://barn-estate.ru/fonts/TildaSans-Regular.woff2"
+    },
+    {
+      "file": "assets/de589af6ec6325d4b365d646.woff2",
+      "bytes": 63952,
+      "sha256": "f0f2c165784c72343618a7c2cbde00e45dbb9b09af5149984792f280cac9642e",
+      "source": "https://barn-estate.ru/fonts/TildaSans-Light.woff2"
+    }
+  ],
+  "behavior": "Два проекта, fade-переключение, стрелки и мобильная пагинация, ссылки на проекты."
+}

@@ -1,0 +1,107 @@
+{
+  "id": "16-expert",
+  "title": "Плавающий эксперт",
+  "sourceCommit": "3b8f2fb715bdf1840df0ed6450226414b028ebe0",
+  "source": "http://127.0.0.1:8802",
+  "capturedAt": "2026-11-01T12:42:16.163Z",
+  "selector": ".floating-expert",
+  "files": [
+    {
+      "file": "README.md",
+      "bytes": 4726,
+      "sha256": "f2422ba30aecb895f39333432f16e228ac8bda202901b4e5c95f8b64279b3f35"
+    },
+    {
+      "file": "block.css",
+      "bytes": 64617,
+      "sha256": "792e542bd70ea694b556a63548edad536f386972761d2beda339e58e83e9dee6"
+    },
+    {
+      "file": "block.html",
+      "bytes": 1144,
+      "sha256": "a7db5267679c4d48b768af523e3a2f1dba0c86f7424aede07638b573fc4248d6"
+    },
+    {
+      "file": "block.js",
+      "bytes": 69197,
+      "sha256": "bca9c3ca5552345dadc7e03cc955bf9667cd0e6643a28f6ef1b858705c329d8f"
+    },
+    {
+      "file": "content.json",
+      "bytes": 316,
+      "sha256": "eb93673b6d4b769cc629489ebf8c9933111815c44787dd599f4d91de5318056d"
+    },
+    {
+      "file": "design.json",
+      "bytes": 352,
+      "sha256": "b69d83b83ed9726b49864009fce1a4529cd971c5bc54ac888443e907aab66505"
+    },
+    {
+      "file": "index.html",
+      "bytes": 1560,
+      "sha256": "2f9a0b84c902cdf944fc9dd3fece7d827ee7da713375665674a6fceb29aee976"
+    },
+    {
+      "file": "paste.html",
+      "bytes": 1667744,
+      "sha256": "7862ed3eb25088cb0d258fadb69a3d1d9ad745b996a74c8ba2383a0a14229fcf"
+    }
+  ],
+  "assets": [
+    {
+      "file": "assets/owner-modal-prus.webp",
+      "bytes": 210000,
+      "sha256": "6bbaa8e1df83e7d5eda42c83d174e1f0177a8cbb5698bd5ec01ee3602e8f84aa",
+      "source": "/assets/owner-modal-prus.webp"
+    },
+    {
+      "file": "assets/quiz-mobile-prus-magazine.webp",
+      "bytes": 105912,
+      "sha256": "8985649766af231100dd863db3e4fac10809a7b9f94bc2d38c6922c8e10b67c1",
+      "source": "/assets/quiz-mobile-prus-magazine.webp"
+    },
+    {
+      "file": "assets/TildaSans-Black.woff2",
+      "bytes": 57952,
+      "sha256": "73abed6708c43912dbd5c2760147f72462887ccd803522a1486209ca1e97031a",
+      "source": "https://barn-estate.ru/fonts/TildaSans-Black.woff2"
+    },
+    {
+      "file": "assets/TildaSans-ExtraBold.woff2",
+      "bytes": 62820,
+      "sha256": "726a3a878465a590443308ea9e14459ab5943f699cff4887c844af4ed76ce577",
+      "source": "https://barn-estate.ru/fonts/TildaSans-ExtraBold.woff2"
+    },
+    {
+      "file": "assets/TildaSans-Bold.woff2",
+      "bytes": 63216,
+      "sha256": "a2690df6fe8348066df79e3a3421a3a9bc0b058cc536f3d846f782ea5337afec",
+      "source": "https://barn-estate.ru/fonts/TildaSans-Bold.woff2"
+    },
+    {
+      "file": "assets/TildaSans-Semibold.woff2",
+      "bytes": 63528,
+      "sha256": "3814f8c444073262523050f3554c6f09cb49353e1f6fdc22a3561d354a231439",
+      "source": "https://barn-estate.ru/fonts/TildaSans-Semibold.woff2"
+    },
+    {
+      "file": "assets/a9f2b67f7136af9bde4f58b8.woff2",
+      "bytes": 62556,
+      "sha256": "f716269e361f466570f37bc920988c619ddc8a7828c5949c1c56a731a320ab47",
+      "source": "https://barn-estate.ru/fonts/TildaSans-Medium.woff2"
+    },
+    {
+      "file": "assets/9e76f26b05473907fc0031ca.woff2",
+      "bytes": 61636,
+      "sha256": "2670dad44ca6c2a1b9bbdbf1af6d8db9173f2dbe31604e80bdf9599b55047d41",
+      "source": "https://barn-estate.ru/fonts/TildaSans-Regular.woff2"
+    },
+    {
+      "file": "assets/de589af6ec6325d4b365d646.woff2",
+      "bytes": 63952,
+      "sha256": "f0f2c165784c72343618a7c2cbde00e45dbb9b09af5149984792f280cac9642e",
+      "source": "https://barn-estate.ru/fonts/TildaSans-Light.woff2"
+    }
+  ],
+  "behavior": "Плавающий эксперт с исходным увеличенным качественным портретом; открывает актуальный квиз."
+}

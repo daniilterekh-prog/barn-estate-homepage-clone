@@ -1,0 +1,191 @@
+{
+  "id": "11-partners",
+  "title": "Наши партнёры",
+  "sourceCommit": "3b8f2fb715bdf1840df0ed6450226414b028ebe0",
+  "source": "http://127.0.0.1:8802",
+  "capturedAt": "2026-11-01T12:42:16.163Z",
+  "selector": ".partners-section",
+  "files": [
+    {
+      "file": "README.md",
+      "bytes": 4671,
+      "sha256": "0bbb1eb7ab5a62b3377de901730256d1bfad8285648814d8b0ee223469627e54"
+    },
+    {
+      "file": "block.css",
+      "bytes": 67981,
+      "sha256": "93fcbb231ecc9c0e9cb2952875e3f013d079336d99d1a4653f7b603ed849ecbc"
+    },
+    {
+      "file": "block.html",
+      "bytes": 15351,
+      "sha256": "e7c9cfc02f90aed6124354189c334a705509890a9b7819eb7f067a975cb350e6"
+    },
+    {
+      "file": "block.js",
+      "bytes": 69197,
+      "sha256": "bca9c3ca5552345dadc7e03cc955bf9667cd0e6643a28f6ef1b858705c329d8f"
+    },
+    {
+      "file": "content.json",
+      "bytes": 5451,
+      "sha256": "b0f92f0ae62dcceb9fade7720d124ae3a0c9b47f721c89a488403c412b254c74"
+    },
+    {
+      "file": "design.json",
+      "bytes": 5270,
+      "sha256": "c95a705574033e38c74e5ec30d46e3d62185f50452c34f6a8bd050457cbcc5cf"
+    },
+    {
+      "file": "index.html",
+      "bytes": 15759,
+      "sha256": "a07a2a41e3a14710cd29fded951fb5681f15959b928ccca7ee192f0526ffe294"
+    },
+    {
+      "file": "paste.html",
+      "bytes": 2778800,
+      "sha256": "4b04f22a7c79c3a2ccd82e6378d0dddb5d367187d0b4cc8ac4fe1b6fe43c5185"
+    }
+  ],
+  "assets": [
+    {
+      "file": "assets/owner-modal-prus.webp",
+      "bytes": 210000,
+      "sha256": "6bbaa8e1df83e7d5eda42c83d174e1f0177a8cbb5698bd5ec01ee3602e8f84aa",
+      "source": "/assets/owner-modal-prus.webp"
+    },
+    {
+      "file": "assets/quiz-mobile-prus-magazine.webp",
+      "bytes": 105912,
+      "sha256": "8985649766af231100dd863db3e4fac10809a7b9f94bc2d38c6922c8e10b67c1",
+      "source": "/assets/quiz-mobile-prus-magazine.webp"
+    },
+    {
+      "file": "assets/910a6c059306c2da72402f48.svg",
+      "bytes": 4557,
+      "sha256": "981be49239329477774ae72574aa4fa498098dc36145153fad90fc9875e9c3e1",
+      "source": "/assets/910a6c059306c2da72402f48.svg"
+    },
+    {
+      "file": "assets/8a1cfe8f5620f188115bcba8.svg",
+      "bytes": 8950,
+      "sha256": "688993a108b69c35264c5779a4f3fe08a04a805f65b5a20481c70d8e834164d1",
+      "source": "/assets/8a1cfe8f5620f188115bcba8.svg"
+    },
+    {
+      "file": "assets/1203e601bc39306b8030eab5.svg",
+      "bytes": 10216,
+      "sha256": "827b2ed8ba410d82199935ecc3aa4599147a5a06c4948956a41bf7895895800f",
+      "source": "/assets/1203e601bc39306b8030eab5.svg"
+    },
+    {
+      "file": "assets/76b3eaa901c71dcdec3fbebb.svg",
+      "bytes": 638,
+      "sha256": "169eb3f940f64835c36474b2d2b9d74c7681f068af96f78d0004ecaa66031042",
+      "source": "/assets/76b3eaa901c71dcdec3fbebb.svg"
+    },
+    {
+      "file": "assets/256739184643c8a59ea2d95c.svg",
+      "bytes": 6629,
+      "sha256": "996a69816f82c3a2684ae99eb7d0942a2c6e6446d4c51defc8ded1312e00bf9f",
+      "source": "/assets/256739184643c8a59ea2d95c.svg"
+    },
+    {
+      "file": "assets/7e1d3274487906d5dbdc0908.svg",
+      "bytes": 1964,
+      "sha256": "01f0e6050bde3c94d4f5ff9b1982aeeb259a33fd29c717cd29e358e5f9b5b343",
+      "source": "/assets/7e1d3274487906d5dbdc0908.svg"
+    },
+    {
+      "file": "assets/93d8f9169ce58218b5e9ad91.svg",
+      "bytes": 1190,
+      "sha256": "71d6c75042649a43808279709718938521f44173db7d97d0a505dc756503871f",
+      "source": "/assets/93d8f9169ce58218b5e9ad91.svg"
+    },
+    {
+      "file": "assets/dbe86663de2e66fe6c7e73f8.svg",
+      "bytes": 5438,
+      "sha256": "d2fcc8d05010200db76767504255b2594ec7fc94bed7aa8f38b0e12fa7ac73ca",
+      "source": "/assets/dbe86663de2e66fe6c7e73f8.svg"
+    },
+    {
+      "file": "assets/764479c3e7e1f41d81a0f02d.svg",
+      "bytes": 3977,
+      "sha256": "8a8a2fcef7b4919f876dd47c9f52b85859ad45bcbfb09fd6e91a93aef62f1886",
+      "source": "/assets/764479c3e7e1f41d81a0f02d.svg"
+    },
+    {
+      "file": "assets/bd50209efd9c42725c2e361e.svg",
+      "bytes": 1167,
+      "sha256": "3dc5dbae81ea4d16ed74bcf78672316a31639f639f7f094429b332ff7c73311d",
+      "source": "/assets/bd50209efd9c42725c2e361e.svg"
+    },
+    {
+      "file": "assets/2070652af80c99d00a1c2355.svg",
+      "bytes": 988,
+      "sha256": "774f522ba53c035b550c9b17a7655a5f183738f507eb51c71d7bb664bfd0490e",
+      "source": "/assets/2070652af80c99d00a1c2355.svg"
+    },
+    {
+      "file": "assets/c52b96a92cb0f04c755c14ae.svg",
+      "bytes": 5809,
+      "sha256": "b643357eddc27985ef1b4e735aac9e4c92ff86cb49ef65d0deb7648dda190eb5",
+      "source": "/assets/c52b96a92cb0f04c755c14ae.svg"
+    },
+    {
+      "file": "assets/9ea9bb28f941cf235c7fd8ad.svg",
+      "bytes": 202019,
+      "sha256": "8c3ffc6b48305ecea2f974cf0263ef1261b6a0e46cf6eced511c51618591f035",
+      "source": "/assets/9ea9bb28f941cf235c7fd8ad.svg"
+    },
+    {
+      "file": "assets/87e5a0a2a2a73b3d72e87648.svg",
+      "bytes": 4064,
+      "sha256": "68ebd64f4b2d04c0a3ceeb17dfcc6e2109c397ab06292b18fdb8aa19431eba85",
+      "source": "/assets/87e5a0a2a2a73b3d72e87648.svg"
+    },
+    {
+      "file": "assets/TildaSans-Black.woff2",
+      "bytes": 57952,
+      "sha256": "73abed6708c43912dbd5c2760147f72462887ccd803522a1486209ca1e97031a",
+      "source": "https://barn-estate.ru/fonts/TildaSans-Black.woff2"
+    },
+    {
+      "file": "assets/TildaSans-ExtraBold.woff2",
+      "bytes": 62820,
+      "sha256": "726a3a878465a590443308ea9e14459ab5943f699cff4887c844af4ed76ce577",
+      "source": "https://barn-estate.ru/fonts/TildaSans-ExtraBold.woff2"
+    },
+    {
+      "file": "assets/TildaSans-Bold.woff2",
+      "bytes": 63216,
+      "sha256": "a2690df6fe8348066df79e3a3421a3a9bc0b058cc536f3d846f782ea5337afec",
+      "source": "https://barn-estate.ru/fonts/TildaSans-Bold.woff2"
+    },
+    {
+      "file": "assets/TildaSans-Semibold.woff2",
+      "bytes": 63528,
+      "sha256": "3814f8c444073262523050f3554c6f09cb49353e1f6fdc22a3561d354a231439",
+      "source": "https://barn-estate.ru/fonts/TildaSans-Semibold.woff2"
+    },
+    {
+      "file": "assets/a9f2b67f7136af9bde4f58b8.woff2",
+      "bytes": 62556,
+      "sha256": "f716269e361f466570f37bc920988c619ddc8a7828c5949c1c56a731a320ab47",
+      "source": "https://barn-estate.ru/fonts/TildaSans-Medium.woff2"
+    },
+    {
+      "file": "assets/9e76f26b05473907fc0031ca.woff2",
+      "bytes": 61636,
+      "sha256": "2670dad44ca6c2a1b9bbdbf1af6d8db9173f2dbe31604e80bdf9599b55047d41",
+      "source": "https://barn-estate.ru/fonts/TildaSans-Regular.woff2"
+    },
+    {
+      "file": "assets/de589af6ec6325d4b365d646.woff2",
+      "bytes": 63952,
+      "sha256": "f0f2c165784c72343618a7c2cbde00e45dbb9b09af5149984792f280cac9642e",
+      "source": "https://barn-estate.ru/fonts/TildaSans-Light.woff2"
+    }
+  ],
+  "behavior": "Логотипы партнёров и исходная адаптивная композиция/анимация."
+}

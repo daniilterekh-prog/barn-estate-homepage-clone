@@ -1,3 +1,7 @@
+# Актуальная главная BARN Estate
+
+[Каталог17отдельных блоков](blocks/index.html) · [ТЗ и перенос](blocks/README.md) · [Актуальное состояние](CURRENT.md) · [Скачать все блоки](blocks/downloads/homepage-blocks.zip).
+
 # Главная BARN Estate — типографика по UI-киту
 
 [Открыть страницу](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/)

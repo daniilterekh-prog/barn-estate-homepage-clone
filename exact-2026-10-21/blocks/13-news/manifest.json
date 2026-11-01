@@ -1,0 +1,167 @@
+{
+  "id": "13-news",
+  "title": "Новости",
+  "sourceCommit": "3b8f2fb715bdf1840df0ed6450226414b028ebe0",
+  "source": "http://127.0.0.1:8802",
+  "capturedAt": "2026-11-01T12:42:16.163Z",
+  "selector": ".news-section",
+  "files": [
+    {
+      "file": "README.md",
+      "bytes": 4650,
+      "sha256": "f9a3e08e2c964980a1b5f1906ab865d22d0bce6cde2633bbf550366005577838"
+    },
+    {
+      "file": "block.css",
+      "bytes": 72867,
+      "sha256": "bcddcc4504dccf8bb696163ec9c89e7d35ca7cb8fea27265688683a833903941"
+    },
+    {
+      "file": "block.html",
+      "bytes": 11966,
+      "sha256": "05e7127f4c87db0e8565c3b72d550bb4a598628498664ab39cadaf48f4ca8476"
+    },
+    {
+      "file": "block.js",
+      "bytes": 69197,
+      "sha256": "bca9c3ca5552345dadc7e03cc955bf9667cd0e6643a28f6ef1b858705c329d8f"
+    },
+    {
+      "file": "content.json",
+      "bytes": 6957,
+      "sha256": "0c0b115b12378004c5e766c0447870a2727be999dbe51df8f86484636bfa456a"
+    },
+    {
+      "file": "design.json",
+      "bytes": 17427,
+      "sha256": "eb50e902f8300a649a66c33556515c3a6ef6986cbec156e88c54bd790b70b164"
+    },
+    {
+      "file": "index.html",
+      "bytes": 12363,
+      "sha256": "87fa461a3a3a150eb825d91bdd7f5869771e8c174697a2fdbe22d6d5c8e642fd"
+    },
+    {
+      "file": "paste.html",
+      "bytes": 8329620,
+      "sha256": "8471be40928e926dc40717de886e7120b9436e7b302266573f3732a4bda765ef"
+    }
+  ],
+  "assets": [
+    {
+      "file": "assets/owner-modal-prus.webp",
+      "bytes": 210000,
+      "sha256": "6bbaa8e1df83e7d5eda42c83d174e1f0177a8cbb5698bd5ec01ee3602e8f84aa",
+      "source": "/assets/owner-modal-prus.webp"
+    },
+    {
+      "file": "assets/quiz-mobile-prus-magazine.webp",
+      "bytes": 105912,
+      "sha256": "8985649766af231100dd863db3e4fac10809a7b9f94bc2d38c6922c8e10b67c1",
+      "source": "/assets/quiz-mobile-prus-magazine.webp"
+    },
+    {
+      "file": "assets/70ae8e588fd6d296fbeb9475.png",
+      "bytes": 887968,
+      "sha256": "39f1b4294178b0f60f212f5a1db5acd0590aaf3fb5d3ac16dd303eb402cf3733",
+      "source": "https://barn-estate.ru/upload/resize_cache/iblock/64b/860_860_1/qw2z66afvbtz1ibpi42ie80l9res952o.png"
+    },
+    {
+      "file": "assets/08372dc2136e4b180d843f73.png",
+      "bytes": 253024,
+      "sha256": "8fb33835c497eec74fa31ffdf79513899e298f7d2918f98dcbda4ab36b049b83",
+      "source": "/assets/08372dc2136e4b180d843f73.png"
+    },
+    {
+      "file": "assets/a88ccd8d029aefb9b01634a0.png",
+      "bytes": 554467,
+      "sha256": "70d5c4fff6f75660c2f9b4b3508f38b9e904bee22cafaae07018bfd3ce98b887",
+      "source": "/assets/a88ccd8d029aefb9b01634a0.png"
+    },
+    {
+      "file": "assets/105c96639ff388f661acbad2.png",
+      "bytes": 215035,
+      "sha256": "67a78ebeeeebf0a74b46a6d2c77dfb9575a4873a4ff7a411eb4c54d31e595825",
+      "source": "/assets/105c96639ff388f661acbad2.png"
+    },
+    {
+      "file": "assets/a461ef0bb9597a98337a8b1d.png",
+      "bytes": 228335,
+      "sha256": "68f354994cc205b6a741596066e6ce86ec3a49b8fc00dd4cf9eeeb3780eb7787",
+      "source": "/assets/a461ef0bb9597a98337a8b1d.png"
+    },
+    {
+      "file": "assets/b3db829cd4ce561e76de09cc.jpg",
+      "bytes": 43053,
+      "sha256": "1792fd049a30dde97c8c3b6ac3b1ed7dcab505bdc578542b3ab25357e9672fbb",
+      "source": "/assets/b3db829cd4ce561e76de09cc.jpg"
+    },
+    {
+      "file": "assets/33c9955c39a65d9cb0219b56.png",
+      "bytes": 262880,
+      "sha256": "4eb608f9f16b5961601cd980dd5cb0e290909223fba1f390abb727f10c90be09",
+      "source": "/assets/33c9955c39a65d9cb0219b56.png"
+    },
+    {
+      "file": "assets/c0794823ca1f1fe82787456b.png",
+      "bytes": 935869,
+      "sha256": "aadc6ef122e4ed66d6b042b9982ae82335a5ccdb79dd610e49d861c1cafbf3a2",
+      "source": "https://barn-estate.ru/upload/resize_cache/iblock/8c8/860_860_1/5dpr0nyiv36c534c75ewni7drye9ak6q.png"
+    },
+    {
+      "file": "assets/5fb738b9b9961a801fca5055.png",
+      "bytes": 931314,
+      "sha256": "aad277f54abe09a49c5f0e3167e7df4283be61ee2d762da5cdb65a61a65966cb",
+      "source": "https://barn-estate.ru/upload/resize_cache/iblock/899/860_860_1/3n1gzmiz10rp34resll04sy7kssqfrk1.png"
+    },
+    {
+      "file": "assets/6e988d73b47da9c8a91af06c.png",
+      "bytes": 880238,
+      "sha256": "e6b3f0ba93f3059402795c04eabd52acdda642811d0491fdb3ddc1436236c4a5",
+      "source": "https://barn-estate.ru/upload/resize_cache/iblock/a51/860_860_1/zergyx0yf6fmpiqo2ac79aynn0ps3g35.png"
+    },
+    {
+      "file": "assets/TildaSans-Black.woff2",
+      "bytes": 57952,
+      "sha256": "73abed6708c43912dbd5c2760147f72462887ccd803522a1486209ca1e97031a",
+      "source": "https://barn-estate.ru/fonts/TildaSans-Black.woff2"
+    },
+    {
+      "file": "assets/TildaSans-ExtraBold.woff2",
+      "bytes": 62820,
+      "sha256": "726a3a878465a590443308ea9e14459ab5943f699cff4887c844af4ed76ce577",
+      "source": "https://barn-estate.ru/fonts/TildaSans-ExtraBold.woff2"
+    },
+    {
+      "file": "assets/TildaSans-Bold.woff2",
+      "bytes": 63216,
+      "sha256": "a2690df6fe8348066df79e3a3421a3a9bc0b058cc536f3d846f782ea5337afec",
+      "source": "https://barn-estate.ru/fonts/TildaSans-Bold.woff2"
+    },
+    {
+      "file": "assets/TildaSans-Semibold.woff2",
+      "bytes": 63528,
+      "sha256": "3814f8c444073262523050f3554c6f09cb49353e1f6fdc22a3561d354a231439",
+      "source": "https://barn-estate.ru/fonts/TildaSans-Semibold.woff2"
+    },
+    {
+      "file": "assets/a9f2b67f7136af9bde4f58b8.woff2",
+      "bytes": 62556,
+      "sha256": "f716269e361f466570f37bc920988c619ddc8a7828c5949c1c56a731a320ab47",
+      "source": "https://barn-estate.ru/fonts/TildaSans-Medium.woff2"
+    },
+    {
+      "file": "assets/9e76f26b05473907fc0031ca.woff2",
+      "bytes": 61636,
+      "sha256": "2670dad44ca6c2a1b9bbdbf1af6d8db9173f2dbe31604e80bdf9599b55047d41",
+      "source": "https://barn-estate.ru/fonts/TildaSans-Regular.woff2"
+    },
+    {
+      "file": "assets/de589af6ec6325d4b365d646.woff2",
+      "bytes": 63952,
+      "sha256": "f0f2c165784c72343618a7c2cbde00e45dbb9b09af5149984792f280cac9642e",
+      "source": "https://barn-estate.ru/fonts/TildaSans-Light.woff2"
+    }
+  ],
+  "behavior": "Карточки новостей, slider3/2/1, стрелки и свайп, реальные исходные ссылки."
+}

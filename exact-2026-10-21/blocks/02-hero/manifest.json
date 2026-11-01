@@ -1,0 +1,131 @@
+{
+  "id": "02-hero",
+  "title": "Херо и поиск",
+  "sourceCommit": "3b8f2fb715bdf1840df0ed6450226414b028ebe0",
+  "source": "http://127.0.0.1:8802",
+  "capturedAt": "2026-11-01T12:42:16.163Z",
+  "selector": ".home-hero",
+  "files": [
+    {
+      "file": "README.md",
+      "bytes": 4864,
+      "sha256": "f34f9b721733dc4ff043554ee5529c10d26967d05d1939b8b1d3a478340f451b"
+    },
+    {
+      "file": "block.css",
+      "bytes": 111436,
+      "sha256": "9d168b907994d7dd5b342865ac58f48f5fc915d64388dbde9f8f4619312ec6b2"
+    },
+    {
+      "file": "block.html",
+      "bytes": 56923,
+      "sha256": "631e15133bc686437892da30b199809c37bf476fbdcb668b96ccfb5041525e1b"
+    },
+    {
+      "file": "block.js",
+      "bytes": 69197,
+      "sha256": "bca9c3ca5552345dadc7e03cc955bf9667cd0e6643a28f6ef1b858705c329d8f"
+    },
+    {
+      "file": "content.json",
+      "bytes": 47536,
+      "sha256": "57cd55ab25f96b56cd78e4d10d4c96ff8ef0139d4cd05c1e85194dcc4bffd6f2"
+    },
+    {
+      "file": "design.json",
+      "bytes": 339,
+      "sha256": "98c28ba7a81ce3cd7dbacd31537179f6b8530b94a329f59c2e07ac0747440fa3"
+    },
+    {
+      "file": "index.html",
+      "bytes": 57328,
+      "sha256": "621ffcad3ccf7c9d140f1ebab45ab16e1da5bf1f0e6409045f213fb00f0efda8"
+    },
+    {
+      "file": "paste.html",
+      "bytes": 9340452,
+      "sha256": "4e57958fc86f0ccdf78be1c1c71fdbb6c4d339f8e89678b51ab2856d3d227a08"
+    }
+  ],
+  "assets": [
+    {
+      "file": "assets/owner-modal-prus.webp",
+      "bytes": 210000,
+      "sha256": "6bbaa8e1df83e7d5eda42c83d174e1f0177a8cbb5698bd5ec01ee3602e8f84aa",
+      "source": "/assets/owner-modal-prus.webp"
+    },
+    {
+      "file": "assets/quiz-mobile-prus-magazine.webp",
+      "bytes": 105912,
+      "sha256": "8985649766af231100dd863db3e4fac10809a7b9f94bc2d38c6922c8e10b67c1",
+      "source": "/assets/quiz-mobile-prus-magazine.webp"
+    },
+    {
+      "file": "assets/253d5fe322d4d1862f6598f1.jpg",
+      "bytes": 103514,
+      "sha256": "882968a84f1bd55145024c004a377e64cff70114c733cc1044f2756a7dfafa9e",
+      "source": "/assets/253d5fe322d4d1862f6598f1.jpg"
+    },
+    {
+      "file": "assets/home-hero-mobile.webp",
+      "bytes": 440590,
+      "sha256": "be1f1432dd5ff56cb1aab5239eb6913957dd46400f5d0e1fa30bb03d451315f7",
+      "source": "/assets/home-hero-mobile.webp"
+    },
+    {
+      "file": "assets/home-hero-ultrawide.png",
+      "bytes": 2871261,
+      "sha256": "b87b98c25910ca0a59bd95453c30a330cdf78d9e668a0b73db98e3e4721e1ce6",
+      "source": "/assets/home-hero-ultrawide.png"
+    },
+    {
+      "file": "assets/home-hero-cleaned.png",
+      "bytes": 2472234,
+      "sha256": "3bee2f050d87ea14b8110c098f9c416141b84c5778b9495db25c57b225c052f9",
+      "source": "/assets/home-hero-cleaned.png"
+    },
+    {
+      "file": "assets/TildaSans-Black.woff2",
+      "bytes": 57952,
+      "sha256": "73abed6708c43912dbd5c2760147f72462887ccd803522a1486209ca1e97031a",
+      "source": "https://barn-estate.ru/fonts/TildaSans-Black.woff2"
+    },
+    {
+      "file": "assets/TildaSans-ExtraBold.woff2",
+      "bytes": 62820,
+      "sha256": "726a3a878465a590443308ea9e14459ab5943f699cff4887c844af4ed76ce577",
+      "source": "https://barn-estate.ru/fonts/TildaSans-ExtraBold.woff2"
+    },
+    {
+      "file": "assets/TildaSans-Bold.woff2",
+      "bytes": 63216,
+      "sha256": "a2690df6fe8348066df79e3a3421a3a9bc0b058cc536f3d846f782ea5337afec",
+      "source": "https://barn-estate.ru/fonts/TildaSans-Bold.woff2"
+    },
+    {
+      "file": "assets/TildaSans-Semibold.woff2",
+      "bytes": 63528,
+      "sha256": "3814f8c444073262523050f3554c6f09cb49353e1f6fdc22a3561d354a231439",
+      "source": "https://barn-estate.ru/fonts/TildaSans-Semibold.woff2"
+    },
+    {
+      "file": "assets/a9f2b67f7136af9bde4f58b8.woff2",
+      "bytes": 62556,
+      "sha256": "f716269e361f466570f37bc920988c619ddc8a7828c5949c1c56a731a320ab47",
+      "source": "https://barn-estate.ru/fonts/TildaSans-Medium.woff2"
+    },
+    {
+      "file": "assets/9e76f26b05473907fc0031ca.woff2",
+      "bytes": 61636,
+      "sha256": "2670dad44ca6c2a1b9bbdbf1af6d8db9173f2dbe31604e80bdf9599b55047d41",
+      "source": "https://barn-estate.ru/fonts/TildaSans-Regular.woff2"
+    },
+    {
+      "file": "assets/de589af6ec6325d4b365d646.woff2",
+      "bytes": 63952,
+      "sha256": "f0f2c165784c72343618a7c2cbde00e45dbb9b09af5149984792f280cac9642e",
+      "source": "https://barn-estate.ru/fonts/TildaSans-Light.woff2"
+    }
+  ],
+  "behavior": "Табы типа сделки и направления, выпадающие тип/бюджет, мобильные/дополнительные фильтры; выбранные поля передаются событием barn:search. Фон херо меняется по исходным breakpoint, затемнение40%."
+}

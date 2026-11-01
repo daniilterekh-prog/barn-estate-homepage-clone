@@ -1,0 +1,103 @@
+{
+  "threshold": 0.1,
+  "includeAA": true,
+  "normalizedElementPixelOrigin": true,
+  "results": [
+    {
+      "id": "03-services",
+      "width": 390,
+      "w": 375,
+      "h": 1074,
+      "changed": 1106,
+      "percent": 0.27461204220980756
+    },
+    {
+      "id": "05-directions",
+      "width": 390,
+      "w": 375,
+      "h": 1816,
+      "changed": 24064,
+      "percent": 3.533627019089574
+    },
+    {
+      "id": "06-about",
+      "width": 390,
+      "w": 375,
+      "h": 688,
+      "changed": 2292,
+      "percent": 0.8883720930232558
+    },
+    {
+      "id": "08-reviews",
+      "width": 390,
+      "w": 375,
+      "h": 616,
+      "changed": 0,
+      "percent": 0
+    },
+    {
+      "id": "12-contacts",
+      "width": 390,
+      "w": 375,
+      "h": 659,
+      "changed": 10234,
+      "percent": 4.141224076884168
+    },
+    {
+      "id": "14-newsletter",
+      "width": 390,
+      "w": 375,
+      "h": 495,
+      "changed": 2582,
+      "percent": 1.390976430976431
+    },
+    {
+      "id": "03-services",
+      "width": 1440,
+      "w": 1425,
+      "h": 1198,
+      "changed": 1129,
+      "percent": 0.066133614503705
+    },
+    {
+      "id": "05-directions",
+      "width": 1440,
+      "w": 1425,
+      "h": 1324,
+      "changed": 3041,
+      "percent": 0.16118089786399534
+    },
+    {
+      "id": "06-about",
+      "width": 1440,
+      "w": 1425,
+      "h": 577,
+      "changed": 8904,
+      "percent": 1.0829152604214174
+    },
+    {
+      "id": "08-reviews",
+      "width": 1440,
+      "w": 1425,
+      "h": 561,
+      "changed": 23645,
+      "percent": 2.9577508834474777
+    },
+    {
+      "id": "12-contacts",
+      "width": 1440,
+      "w": 1425,
+      "h": 638,
+      "changed": 26690,
+      "percent": 2.9357091789033714
+    },
+    {
+      "id": "14-newsletter",
+      "width": 1440,
+      "w": 1425,
+      "h": 667,
+      "changed": 1633,
+      "percent": 0.17180883242589232
+    }
+  ]
+}

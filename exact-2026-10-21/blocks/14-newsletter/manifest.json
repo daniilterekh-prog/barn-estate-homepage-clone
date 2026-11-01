@@ -1,0 +1,119 @@
+{
+  "id": "14-newsletter",
+  "title": "Рассылка",
+  "sourceCommit": "3b8f2fb715bdf1840df0ed6450226414b028ebe0",
+  "source": "http://127.0.0.1:8802",
+  "capturedAt": "2026-11-01T12:42:16.163Z",
+  "selector": ".newsletter-cta",
+  "files": [
+    {
+      "file": "README.md",
+      "bytes": 4689,
+      "sha256": "54f6aaca415bc583fc7cc0ab721ac05bda6d4c240e3a542e97ed390faa59978b"
+    },
+    {
+      "file": "block.css",
+      "bytes": 73340,
+      "sha256": "f55433f92079f61b0d5e975d058a7ac038c7bda7f09a693feacb2b5d1565e89b"
+    },
+    {
+      "file": "block.html",
+      "bytes": 2302,
+      "sha256": "cbe662a8f0f639218fad834c00b051e0cd14ae271da44cdd49ca786c08c30f39"
+    },
+    {
+      "file": "block.js",
+      "bytes": 69197,
+      "sha256": "bca9c3ca5552345dadc7e03cc955bf9667cd0e6643a28f6ef1b858705c329d8f"
+    },
+    {
+      "file": "content.json",
+      "bytes": 870,
+      "sha256": "283348a337719ec534e19a48399be5fe1d9b1441d095cfbfc1e561de8e61c293"
+    },
+    {
+      "file": "design.json",
+      "bytes": 7198,
+      "sha256": "b35fe2c1ff87338c4966e517537837d7d48606699a07b068c5ed7e0c5fe30a7f"
+    },
+    {
+      "file": "index.html",
+      "bytes": 2701,
+      "sha256": "fcd20d8a69aa94d88d3e0ee5c17fed31a1e77d8fa65ea16d687efaa3e57f440b"
+    },
+    {
+      "file": "paste.html",
+      "bytes": 1569548,
+      "sha256": "05da21542081edce0437ad7fea69b30c8a659685e25a64e47721a6d989a04545"
+    }
+  ],
+  "assets": [
+    {
+      "file": "assets/owner-modal-prus.webp",
+      "bytes": 210000,
+      "sha256": "6bbaa8e1df83e7d5eda42c83d174e1f0177a8cbb5698bd5ec01ee3602e8f84aa",
+      "source": "/assets/owner-modal-prus.webp"
+    },
+    {
+      "file": "assets/quiz-mobile-prus-magazine.webp",
+      "bytes": 105912,
+      "sha256": "8985649766af231100dd863db3e4fac10809a7b9f94bc2d38c6922c8e10b67c1",
+      "source": "/assets/quiz-mobile-prus-magazine.webp"
+    },
+    {
+      "file": "assets/8a78978e0423f444f2adbe1f.webp",
+      "bytes": 113252,
+      "sha256": "a59b66d0d7fdeda1b0b0726fc2b9f0f23450da792c5cff66bba1482a09d8774f",
+      "source": "https://barn-estate.ru/pictures/newsletter/subscribe-block-img-main.webp"
+    },
+    {
+      "file": "assets/f6f65669dc22ef4fe836335c.webp",
+      "bytes": 15704,
+      "sha256": "3285d219f1845deb8887ba3bc04b8e79ce8d3bec99dd568d8a51b8c5fa8bf9af",
+      "source": "https://barn-estate.ru/pictures/newsletter/subscribe-block-img-mob.webp"
+    },
+    {
+      "file": "assets/TildaSans-Black.woff2",
+      "bytes": 57952,
+      "sha256": "73abed6708c43912dbd5c2760147f72462887ccd803522a1486209ca1e97031a",
+      "source": "https://barn-estate.ru/fonts/TildaSans-Black.woff2"
+    },
+    {
+      "file": "assets/TildaSans-ExtraBold.woff2",
+      "bytes": 62820,
+      "sha256": "726a3a878465a590443308ea9e14459ab5943f699cff4887c844af4ed76ce577",
+      "source": "https://barn-estate.ru/fonts/TildaSans-ExtraBold.woff2"
+    },
+    {
+      "file": "assets/TildaSans-Bold.woff2",
+      "bytes": 63216,
+      "sha256": "a2690df6fe8348066df79e3a3421a3a9bc0b058cc536f3d846f782ea5337afec",
+      "source": "https://barn-estate.ru/fonts/TildaSans-Bold.woff2"
+    },
+    {
+      "file": "assets/TildaSans-Semibold.woff2",
+      "bytes": 63528,
+      "sha256": "3814f8c444073262523050f3554c6f09cb49353e1f6fdc22a3561d354a231439",
+      "source": "https://barn-estate.ru/fonts/TildaSans-Semibold.woff2"
+    },
+    {
+      "file": "assets/a9f2b67f7136af9bde4f58b8.woff2",
+      "bytes": 62556,
+      "sha256": "f716269e361f466570f37bc920988c619ddc8a7828c5949c1c56a731a320ab47",
+      "source": "https://barn-estate.ru/fonts/TildaSans-Medium.woff2"
+    },
+    {
+      "file": "assets/9e76f26b05473907fc0031ca.woff2",
+      "bytes": 61636,
+      "sha256": "2670dad44ca6c2a1b9bbdbf1af6d8db9173f2dbe31604e80bdf9599b55047d41",
+      "source": "https://barn-estate.ru/fonts/TildaSans-Regular.woff2"
+    },
+    {
+      "file": "assets/de589af6ec6325d4b365d646.woff2",
+      "bytes": 63952,
+      "sha256": "f0f2c165784c72343618a7c2cbde00e45dbb9b09af5149984792f280cac9642e",
+      "source": "https://barn-estate.ru/fonts/TildaSans-Light.woff2"
+    }
+  ],
+  "behavior": "Email, обязательное согласие, нативная валидация. Подписка вызывает barn:subscribe."
+}

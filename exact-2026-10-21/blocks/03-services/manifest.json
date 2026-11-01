@@ -1,0 +1,137 @@
+{
+  "id": "03-services",
+  "title": "Услуги",
+  "sourceCommit": "3b8f2fb715bdf1840df0ed6450226414b028ebe0",
+  "source": "http://127.0.0.1:8802",
+  "capturedAt": "2026-11-01T12:42:16.163Z",
+  "selector": ".services-section",
+  "files": [
+    {
+      "file": "README.md",
+      "bytes": 4867,
+      "sha256": "956b0b753ef4c606f0b4b23821bd081d7c77063f67bff4be01161822e9ba13e3"
+    },
+    {
+      "file": "block.css",
+      "bytes": 72480,
+      "sha256": "a1eac9bbab2c2d2fd543090e858f70b17142b0c78ac411dd18daed05e42d75a2"
+    },
+    {
+      "file": "block.html",
+      "bytes": 5080,
+      "sha256": "446c7004027492c13fc69fd8ffbb613555efa6eff864ac0dc92ed7178c9759da"
+    },
+    {
+      "file": "block.js",
+      "bytes": 69197,
+      "sha256": "bca9c3ca5552345dadc7e03cc955bf9667cd0e6643a28f6ef1b858705c329d8f"
+    },
+    {
+      "file": "content.json",
+      "bytes": 2165,
+      "sha256": "9ca2457a87edea7e6d45df0769e4a64b2bbc7f18a26aea2a96b0811345ce5c96"
+    },
+    {
+      "file": "design.json",
+      "bytes": 7562,
+      "sha256": "ae8c9c17a83233a40aa6e4916935a5160ed6bce1fe95a2fc3b4c3e689ec94b29"
+    },
+    {
+      "file": "index.html",
+      "bytes": 5475,
+      "sha256": "5566c85157f2bc66821d58092ceb8cfd8776e49a1e7222fa0e384bcea9bd76dc"
+    },
+    {
+      "file": "paste.html",
+      "bytes": 3198612,
+      "sha256": "a11e087c177447998ee8a830caeb0937cbd4d7564c4970b72bc59ec728b5140d"
+    }
+  ],
+  "assets": [
+    {
+      "file": "assets/home-service-sale-gloss-wide.webp",
+      "bytes": 120460,
+      "sha256": "e9ba67a738eba89e6d0644cd9c2d05a6eeeb28f67ff4693b9e58b2b6c2b3f56a",
+      "source": "/assets/home-service-sale-gloss-wide.webp"
+    },
+    {
+      "file": "assets/home-service-sale-gloss-desktop.webp",
+      "bytes": 158568,
+      "sha256": "ba55698ffffd3fb9d0d74fe2eb0a62a63d7e26d24c6aac560de1c1f1b7e7393d",
+      "source": "/assets/home-service-sale-gloss-desktop.webp"
+    },
+    {
+      "file": "assets/home-service-sale-gloss-mobile.webp",
+      "bytes": 113998,
+      "sha256": "30cc96e685294bce3e2bae9a13333439b4dc8bff07c3daef2fc689d0ef391e3b",
+      "source": "/assets/home-service-sale-gloss-mobile.webp"
+    },
+    {
+      "file": "assets/owner-modal-prus.webp",
+      "bytes": 210000,
+      "sha256": "6bbaa8e1df83e7d5eda42c83d174e1f0177a8cbb5698bd5ec01ee3602e8f84aa",
+      "source": "/assets/owner-modal-prus.webp"
+    },
+    {
+      "file": "assets/quiz-mobile-prus-magazine.webp",
+      "bytes": 105912,
+      "sha256": "8985649766af231100dd863db3e4fac10809a7b9f94bc2d38c6922c8e10b67c1",
+      "source": "/assets/quiz-mobile-prus-magazine.webp"
+    },
+    {
+      "file": "assets/5ed61b512d466511a5ef8d4e.jpg",
+      "bytes": 545180,
+      "sha256": "0d06c1c97ec1c5456166f1caf24da4f6977836da6574e31306a97f58f52c20cf",
+      "source": "/assets/5ed61b512d466511a5ef8d4e.jpg"
+    },
+    {
+      "file": "assets/06fe07ec2e85156f83d1e378.jpg",
+      "bytes": 252592,
+      "sha256": "ab588d0aa45489b00e4dc9c4b290d75cdaecca0880cf7d6c4585b43e7fffafc0",
+      "source": "/assets/06fe07ec2e85156f83d1e378.jpg"
+    },
+    {
+      "file": "assets/TildaSans-Black.woff2",
+      "bytes": 57952,
+      "sha256": "73abed6708c43912dbd5c2760147f72462887ccd803522a1486209ca1e97031a",
+      "source": "https://barn-estate.ru/fonts/TildaSans-Black.woff2"
+    },
+    {
+      "file": "assets/TildaSans-ExtraBold.woff2",
+      "bytes": 62820,
+      "sha256": "726a3a878465a590443308ea9e14459ab5943f699cff4887c844af4ed76ce577",
+      "source": "https://barn-estate.ru/fonts/TildaSans-ExtraBold.woff2"
+    },
+    {
+      "file": "assets/TildaSans-Bold.woff2",
+      "bytes": 63216,
+      "sha256": "a2690df6fe8348066df79e3a3421a3a9bc0b058cc536f3d846f782ea5337afec",
+      "source": "https://barn-estate.ru/fonts/TildaSans-Bold.woff2"
+    },
+    {
+      "file": "assets/TildaSans-Semibold.woff2",
+      "bytes": 63528,
+      "sha256": "3814f8c444073262523050f3554c6f09cb49353e1f6fdc22a3561d354a231439",
+      "source": "https://barn-estate.ru/fonts/TildaSans-Semibold.woff2"
+    },
+    {
+      "file": "assets/a9f2b67f7136af9bde4f58b8.woff2",
+      "bytes": 62556,
+      "sha256": "f716269e361f466570f37bc920988c619ddc8a7828c5949c1c56a731a320ab47",
+      "source": "https://barn-estate.ru/fonts/TildaSans-Medium.woff2"
+    },
+    {
+      "file": "assets/9e76f26b05473907fc0031ca.woff2",
+      "bytes": 61636,
+      "sha256": "2670dad44ca6c2a1b9bbdbf1af6d8db9173f2dbe31604e80bdf9599b55047d41",
+      "source": "https://barn-estate.ru/fonts/TildaSans-Regular.woff2"
+    },
+    {
+      "file": "assets/de589af6ec6325d4b365d646.woff2",
+      "bytes": 63952,
+      "sha256": "f0f2c165784c72343618a7c2cbde00e45dbb9b09af5149984792f280cac9642e",
+      "source": "https://barn-estate.ru/fonts/TildaSans-Light.woff2"
+    }
+  ],
+  "behavior": "Три навигационные карточки услуг. Продажа — глянцевый интерьер без панорамы/цветов; отдельные изображения для телефона, desktop и >1920px. Вес заголовков300, сокращённый интервал до CTA."
+}
