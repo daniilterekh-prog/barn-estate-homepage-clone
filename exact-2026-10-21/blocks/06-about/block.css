@@ -202,8 +202,8 @@
 .barnes-block.barnes-home-typography .about-company__brand-logo{width: 100%; max-width: none; height: auto;}
 }
 @media (min-width: 1921px) {
-.barnes-block.barnes-home-typography .about-company__inner{grid-template-columns: 440px minmax(0px, 1fr);}
-.barnes-block.barnes-home-typography .about-company__brand{width: 100%;}
+.barnes-block.barnes-home-typography .about-company__inner{grid-template-columns: minmax(0px, 0.8fr) minmax(0px, 1.45fr);}
+.barnes-block.barnes-home-typography .about-company__brand{width: 100%; max-width: 440px;}
 }
 .barnes-block.barnes-home-typography{--home-primary: #1e1e1e; --home-secondary: #4f4d49; --home-muted: #656462; --home-brand: #8b1d25; --home-heading: 38px; --home-lead: 22px; --home-lead-line: 33px; --home-eyebrow: 14px; --home-eyebrow-line: 16.1px; --home-action: 17px; --home-field: 18px; --home-card: 24px; --home-listing: 22px; --home-price: 26px; font-synthesis: none;}
 @media (min-width: 1441px) {

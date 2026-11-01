@@ -73,8 +73,8 @@ body.barnes-home-typography .about-company__read-more:focus-visible { outline:2p
  body.barnes-home-typography .about-company__brand-logo { width:100%;max-width:none;height:auto; }
 }
 
-/* Keep the large-screen brand column compact within the shared 1920px grid. */
+/* Preserve the desktop column proportions on the shared 1920px wide-screen grid. */
 @media(min-width:1921px) {
- body.barnes-home-typography .about-company__inner { grid-template-columns:440px minmax(0,1fr); }
- body.barnes-home-typography .about-company__brand { width:100%; }
+ body.barnes-home-typography .about-company__inner { grid-template-columns:minmax(0,.8fr) minmax(0,1.45fr); }
+ body.barnes-home-typography .about-company__brand { width:100%;max-width:440px; }
 }
