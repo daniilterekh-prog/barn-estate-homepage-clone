@@ -263,3 +263,20 @@ body.barnes-home-typography .office-contact__visual img { height:auto; aspect-ra
     object-position: right center;
   }
 }
+
+/* Mobile section introductions share one centered alignment. */
+@media(max-width:540px) {
+ body.barnes-home-typography :is(.services-section__header,.departments-section__heading,
+  .barnes-choice__heading,.reviews-section__intro,.team-section__intro,.partners-section__intro,
+  .news-section__header) {text-align:center;align-items:center;}
+ body.barnes-home-typography :is(.home-section-eyebrow,.services-section__title,.services-section__subtitle,
+  .services-section__description,.departments-section__title,.barnes-choice__title,
+  .reviews-section__title,.team-section__title,.team-section__description,
+  .partners-section__title,.partners-section__description,.news-section__title,
+  .about-company__title,.about-company__intro,.office-contact__copy h2,.office-contact__lead,
+  .newsletter-cta__copy h2,.newsletter-cta__lead,.project-hero__title,.project-hero__cta-text) {
+  text-align:center!important;margin-inline:auto;
+ }
+ body.barnes-home-typography .project-hero__meta {justify-content:center;margin-inline:auto;}
+ body.barnes-home-typography .about-company__brand {justify-self:center;}
+}
