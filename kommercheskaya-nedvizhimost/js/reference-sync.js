@@ -99,5 +99,20 @@
     if(phone){phone.classList.add('catalog-header-contact','catalog-header-contact--phone');heroContacts.append(phone);}
   }
   header.querySelector('.site-header__mobile-phone')?.classList.add('catalog-primary-call');
+  // Approved homepage kit: presentation only, never reset commercial state/data.
+  document.querySelectorAll('.site-header__logo img,.catalog-sticky__logo img,img[src*="f8285279bd12.svg"], .site-footer__logo img').forEach(img=>{
+    img.src='assets/barn-estate-logo.svg';img.alt='BARN Estate';
+    img.width=327;img.height=91;img.style.removeProperty('aspect-ratio');
+    img.removeAttribute('srcset');
+  });
+  document.querySelectorAll('.catalog-sticky__link,.catalog-best-offers__title,.catalog-consultation__subtitle,.catalog-consultation__mobile-title,.catalog-consultation__lead,.catalog-consultation__mobile-description,.catalog-contact__title').forEach(el=>{
+    for(const node of el.childNodes)if(node.nodeType===Node.TEXT_NODE)node.textContent=node.textContent.replace(/BARNES/g,'BARN Estate');
+  });
+  const phoneArtwork='<circle cx="12" cy="12" r="12" fill="#2BB673"/><g transform="translate(3 3) scale(.75)" fill="white"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/></g>';
+  document.querySelectorAll('.site-header a[href^="tel:"] svg,.catalog-sticky a[href^="tel:"] svg').forEach(svg=>{
+    svg.setAttribute('viewBox','0 0 24 24');svg.setAttribute('stroke','none');svg.setAttribute('aria-hidden','true');svg.innerHTML=phoneArtwork;
+  });
+  await styles('css/home-kit.css');
+  document.body.dataset.commercialHomeKit='1.0.0';
   document.body.dataset.commercialReferenceReady='true';
 })().catch(error=>console.error('Commercial reference initialization failed:',error));

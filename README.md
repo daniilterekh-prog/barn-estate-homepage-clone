@@ -1,5 +1,7 @@
 # BARN Estate — страницы основного сайта
 
+- [Коммерческая: UI-кит главной v1.0.0, 01.11.2026](kommercheskaya-nedvizhimost/HOME-KIT.md) — синхронизированное самодостаточное превью; рабочие исходники в barnes-sites/main-site/pages/commercial.
+
 [16 отдельных блоков главной — превью, копирование HTML, ZIP и ТЗ](exact-2026-10-21/blocks/index.html) · [Текущее состояние главной](exact-2026-10-21/CURRENT.md).
 
 ## Логотип BARN Estate — 20.10.2026
