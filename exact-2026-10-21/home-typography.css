@@ -229,3 +229,9 @@ body.barnes-home-typography .departments-section__item:nth-child(-n+2) .departme
   white-space:nowrap;
   font-size:min(var(--home-card),7cqw) !important;
 }
+
+/* Equal, slightly larger leading contact icons; arrows retain their own size. */
+body.barnes-home-typography .office-contact .office-contact__social > :is(.contact-button__icon,.office-contact__brand-icon,.office-contact__phone-icon) {width:26px!important;height:26px!important;min-width:26px;flex-shrink:0;object-fit:contain;}
+@media(max-width:540px) {
+ body.barnes-home-typography .office-contact .office-contact__social {grid-template-columns:26px minmax(0,1fr) 16px;}
+}

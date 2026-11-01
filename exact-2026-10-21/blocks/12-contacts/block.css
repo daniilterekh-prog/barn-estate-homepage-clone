@@ -672,3 +672,9 @@
 
 /* 01.11.2026: collapse the reserved office-photo row when the image is hidden. */
 @media(max-width:860px){.barnes-block.barnes-home-typography :is(.office-contact__inner,.office-contact__grid,.office-contact__copy){min-height:0!important;}.barnes-block.barnes-home-typography .office-contact__copy{justify-content:flex-start!important;}}
+
+/* Equal, slightly larger leading contact icons; arrows retain their own size. */
+.barnes-block.barnes-home-typography .office-contact .office-contact__social > :is(.contact-button__icon,.office-contact__brand-icon,.office-contact__phone-icon) {width:26px!important;height:26px!important;min-width:26px;flex-shrink:0;object-fit:contain;}
+@media(max-width:540px) {
+ .barnes-block.barnes-home-typography .office-contact .office-contact__social {grid-template-columns:26px minmax(0,1fr) 16px;}
+}

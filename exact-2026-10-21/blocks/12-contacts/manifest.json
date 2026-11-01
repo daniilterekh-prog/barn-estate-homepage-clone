@@ -8,18 +8,18 @@
   "files": [
     {
       "file": "README.md",
-      "bytes": 5866,
-      "sha256": "d7456dc18eb9327b4ecd27a01305be5c465be3fc7559f66e89bf39111a9dfb12"
+      "bytes": 6365,
+      "sha256": "46486e023e197341b5bc4cb83d43ef0dbc5075eeff2983dc457a05836fb01c17"
     },
     {
       "file": "block.css",
-      "bytes": 72853,
-      "sha256": "bf203e4659626195cf3347d0aaaea7ff5f1aa264ba7592e2029cafb39d79ad62"
+      "bytes": 73347,
+      "sha256": "09be17fc1321cc6a30ffe341faf4aca8af4601555d824f62586b4130166e1d64"
     },
     {
       "file": "block.html",
-      "bytes": 5575,
-      "sha256": "2bba2a6644b1677e2562ca691d62219bb95e85182a529281b6e1cc7b6db673c2"
+      "bytes": 6004,
+      "sha256": "28e6e56281fd91fd0e22ae83c2c385078d3f8eb24c3a71230f490fcf7f07eee6"
     },
     {
       "file": "block.js",
@@ -28,23 +28,23 @@
     },
     {
       "file": "content.json",
-      "bytes": 1370,
-      "sha256": "7bbe402cbaee635ebc2ee47a67c2539cbf4b9a1c6559a76e44cb710a51873049"
+      "bytes": 1288,
+      "sha256": "fd9091ac142dc21e03c88884fd99d379a361faf09b1339229ec1a62055ee986e"
     },
     {
       "file": "design.json",
-      "bytes": 4249,
-      "sha256": "259a48c1a553f5b7491af4848cd08cf4bb0f07f4a7a1a65e13cfb950466c489b"
+      "bytes": 4241,
+      "sha256": "7a7bc15b8058bd649e26f3b32240e73c777e2d8b4dc591d079e37a63308e612a"
     },
     {
       "file": "index.html",
-      "bytes": 5983,
-      "sha256": "cc023e1696f99c377a99d8864b9f9cca77b86e3a9fb25a7838361f423649e3dc"
+      "bytes": 6412,
+      "sha256": "7c006003fcd5351465ba74e9b57875c62fd9262edfa992836966276f6cefcbc7"
     },
     {
       "file": "paste.html",
-      "bytes": 1852206,
-      "sha256": "0a233244186f631d76499cadf6878f79b0386fd6aa981fe9f0e21d00997bcd02"
+      "bytes": 1853132,
+      "sha256": "011c3df0dcb27cb2789a03037b520512f220ae7dae3d682df9eb38d51769325e"
     }
   ],
   "assets": [
@@ -125,6 +125,12 @@
       "bytes": 63952,
       "sha256": "f0f2c165784c72343618a7c2cbde00e45dbb9b09af5149984792f280cac9642e",
       "source": "https://barn-estate.ru/fonts/TildaSans-Light.woff2"
+    },
+    {
+      "file": "assets/material-icons-LICENSE.txt",
+      "bytes": 11357,
+      "sha256": "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd",
+      "source": "https://github.com/google/material-design-icons/blob/master/LICENSE"
     }
   ],
   "behavior": "Контактная бровь и заголовок, ссылки на email/маршрут/мессенджеры/звонок. Фото офиса с новым логотипом, без водяного знака, нижняя граница по левому контенту; телефон без фото.",
