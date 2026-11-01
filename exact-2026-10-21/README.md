@@ -1,6 +1,6 @@
 # Актуальная главная BARN Estate
 
-[Каталог17отдельных блоков](blocks/index.html) · [ТЗ и перенос](blocks/README.md) · [Актуальное состояние](CURRENT.md) · [Скачать все блоки](blocks/downloads/homepage-blocks.zip).
+[Каталог16отдельных блоков](blocks/index.html) · [ТЗ и перенос](blocks/README.md) · [Актуальное состояние](CURRENT.md) · [Скачать все блоки](blocks/downloads/homepage-blocks.zip).
 
 # Главная BARN Estate — типографика по UI-киту
 

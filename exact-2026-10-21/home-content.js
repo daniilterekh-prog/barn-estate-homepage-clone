@@ -79,6 +79,15 @@
   let observer, scheduled = false;
   function apply() {
     observer?.disconnect();
+    // The standalone video section is no longer part of the homepage.
+    for (const section of document.querySelectorAll('.video-section')) {
+      for (const video of section.querySelectorAll('video')) {
+        video.pause();
+        video.removeAttribute('src');
+        video.load();
+      }
+      section.remove();
+    }
     window.__barnesHomeAbout?.refresh();
     for (const [parentSelector, headingSelector, text, existingSelector] of roles) {
       const parent = document.querySelector(parentSelector);

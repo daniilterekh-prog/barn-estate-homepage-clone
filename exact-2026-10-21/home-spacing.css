@@ -279,3 +279,6 @@ body.barnes-home-typography .newsletter-cta__copy {justify-content:flex-start!im
  body.barnes-home-typography :is(.office-contact__inner,.office-contact__grid,.office-contact__copy) {min-height:0!important;}
  body.barnes-home-typography .office-contact__copy {justify-content:flex-start!important;}
 }
+
+/* Prevent the archived video section flashing before the hydrated content update. */
+body.barnes-home-typography .video-section {display:none!important;}

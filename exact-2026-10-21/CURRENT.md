@@ -1,6 +1,6 @@
 # Актуальная главная BARN Estate — 01.11.2026
 
-[Опубликованная главная](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/) · [17 отдельных блоков](blocks/README.md) · [Каталог превью](blocks/index.html) · [Страница из блоков](blocks/page.html).
+[Опубликованная главная](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/) · [16 отдельных блоков](blocks/README.md) · [Каталог превью](blocks/index.html) · [Страница из блоков](blocks/page.html).
 
 [Открыть живой каталог блоков](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/blocks/) · [Скачать все блоки ZIP](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/blocks/downloads/homepage-blocks.zip).
 
@@ -59,3 +59,7 @@
 Все прямоугольные CTA, компактные варианты и кнопки квиза: скругление1px. Круглая навигация и иконки сохраняют форму. Описания обоих проектов месяца используют общий --home-lead/--home-lead-line:22/33px на десктопе,15/21px до540px, вес300. Белый цвет над фотографией сохранён.
 
 Заголовки внутри карточек направлений: Tilda Sans Light300,разрядка0.08em,line-height1.15,белые;25px /22px до1440px /20px до540px,как в оригинале barn-estate.ru. Первые два московских названия сохраняют адаптивное уменьшение на узких карточках для одной строки. [Сверка](directions-light-2026-11-01/README.md).
+
+## Видеоблок удалён — 01.11.2026
+
+Отдельная секция с видеоплеером убрана с главной и из сборки блоков. После отзывов идёт команда. В текущей библиотеке16пакетов;09-video и его ZIP исключены. Видеоролики внутри отзывов сохранены. Исходный архив21.10 остаётся историческим снимком.
