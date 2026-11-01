@@ -266,3 +266,16 @@ body.barnes-home-typography .office-contact__visual img { height:auto; aspect-ra
 
 /* The country hub hero already contains its evening treatment. */
 body.barnes-home-typography .department-card--country-clear .department-card__overlay {display:none!important;}
+
+/* Keep image-led project spacing on the same section rhythm as the eyebrows. */
+body.barnes-home-typography .project-hero {padding-block:var(--home-section-space)!important;margin-block:0!important;}
+body.barnes-home-typography .newsletter-cta__copy {justify-content:flex-start!important;}
+@media(min-width:1025px) {
+ body.barnes-home-typography :is(.project-hero,.project-hero__slide,.project-hero__content) {min-height:840px!important;}
+ body.barnes-home-typography .project-hero__content {padding-block:80px!important;}
+}
+/* Below the office-photo breakpoint, do not reserve the old 600px photo row. */
+@media(max-width:860px) {
+ body.barnes-home-typography :is(.office-contact__inner,.office-contact__grid,.office-contact__copy) {min-height:0!important;}
+ body.barnes-home-typography .office-contact__copy {justify-content:flex-start!important;}
+}

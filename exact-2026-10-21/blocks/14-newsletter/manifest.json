@@ -8,13 +8,13 @@
   "files": [
     {
       "file": "README.md",
-      "bytes": 4689,
-      "sha256": "54f6aaca415bc583fc7cc0ab721ac05bda6d4c240e3a542e97ed390faa59978b"
+      "bytes": 5031,
+      "sha256": "19a9d118394cdbf2c211bc28e7daf9af2f554ac37dc47acbfee6b48e4ea09fb0"
     },
     {
       "file": "block.css",
-      "bytes": 73340,
-      "sha256": "f55433f92079f61b0d5e975d058a7ac038c7bda7f09a693feacb2b5d1565e89b"
+      "bytes": 73501,
+      "sha256": "05fd264f538341aae3343bd4ae6eef3fa00c5ea6b9246c4a221c7130d2ec2a87"
     },
     {
       "file": "block.html",
@@ -43,8 +43,8 @@
     },
     {
       "file": "paste.html",
-      "bytes": 1569548,
-      "sha256": "05da21542081edce0437ad7fea69b30c8a659685e25a64e47721a6d989a04545"
+      "bytes": 1569709,
+      "sha256": "b39d71bde96eb2325ecaa7d33f98d62d118236ffc32947e741978f6371d2cff8"
     }
   ],
   "assets": [
@@ -115,5 +115,6 @@
       "source": "https://barn-estate.ru/fonts/TildaSans-Light.woff2"
     }
   ],
-  "behavior": "Email, обязательное согласие, нативная валидация. Подписка вызывает barn:subscribe."
+  "behavior": "Email, обязательное согласие, нативная валидация. Подписка вызывает barn:subscribe.",
+  "spacingUpdate": "2026-11-01"
 }

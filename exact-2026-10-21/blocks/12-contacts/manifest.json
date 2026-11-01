@@ -8,13 +8,13 @@
   "files": [
     {
       "file": "README.md",
-      "bytes": 4870,
-      "sha256": "afcf0e9d6cda301c736ed21bebfd6fe2a3b2cf971e71bbb608aa7d6979eb53a4"
+      "bytes": 5226,
+      "sha256": "71e6971d6695bf7dd91f2340c91f8c8572772539f661610b1ff1cdaaebd25952"
     },
     {
       "file": "block.css",
-      "bytes": 72513,
-      "sha256": "d059899285bd948e650e5d884c12d4d48fd35f03aeffb03d70fc653422d6f6d8"
+      "bytes": 72853,
+      "sha256": "bf203e4659626195cf3347d0aaaea7ff5f1aa264ba7592e2029cafb39d79ad62"
     },
     {
       "file": "block.html",
@@ -43,8 +43,8 @@
     },
     {
       "file": "paste.html",
-      "bytes": 1849206,
-      "sha256": "6d7a728641e06734aae31299550b7defa1d519632ac3b6fe236320cd02cf1a12"
+      "bytes": 1849546,
+      "sha256": "58966e5e047dfbc9b829cac0bcc53eccdeb3fd21de8a80c04553f940d57a4ead"
     }
   ],
   "assets": [
@@ -127,5 +127,6 @@
       "source": "https://barn-estate.ru/fonts/TildaSans-Light.woff2"
     }
   ],
-  "behavior": "Контактная бровь и заголовок, ссылки на email/маршрут/мессенджеры/звонок. Фото офиса с новым логотипом, без водяного знака, нижняя граница по левому контенту; телефон без фото."
+  "behavior": "Контактная бровь и заголовок, ссылки на email/маршрут/мессенджеры/звонок. Фото офиса с новым логотипом, без водяного знака, нижняя граница по левому контенту; телефон без фото.",
+  "spacingUpdate": "2026-11-01"
 }

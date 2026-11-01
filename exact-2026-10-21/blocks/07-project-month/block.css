@@ -765,3 +765,7 @@
 .barnes-block .barn-block-select button:hover,.barnes-block .barn-block-select button:focus-visible{background:#f9f3f3;color:#8b1d25;}
 .barnes-block .barn-filter-open{opacity:1!important;transform:none!important;visibility:visible!important;}
 .barnes-block .standalone-quiz-launch{padding:60px 24px;text-align:center}.barnes-block .standalone-quiz-launch h2{font-size:32px;font-weight:300;margin:24px 0}.barnes-block .standalone-quiz-launch button{background:#8b1d25;border:0;padding:20px 32px;color:white;font:400 17px "Tilda Sans";cursor:pointer;}
+
+/* 01.11.2026: compact desktop project and shared outer spacing. */
+.barnes-block.barnes-home-typography .project-hero{padding-block:var(--home-section-space)!important;margin-block:0!important;}
+@media(min-width:1025px){.barnes-block.barnes-home-typography :is(.project-hero,.project-hero__slide,.project-hero__content){min-height:840px!important;}.barnes-block.barnes-home-typography .project-hero__content{padding-block:80px!important;}}

@@ -8,13 +8,13 @@
   "files": [
     {
       "file": "README.md",
-      "bytes": 4716,
-      "sha256": "e3639efb6e68e32184bb1d28e6b8ed0716c14be93ea4e7adba1f4b92844a7445"
+      "bytes": 5053,
+      "sha256": "c2a1eac820250dda8d4d5bba23a76c61c4fd6c39e0ce1681aa2cf8a2dcd51aed"
     },
     {
       "file": "block.css",
-      "bytes": 75933,
-      "sha256": "ed16652941b293cdc56e5b2069d3da3b43051ad7b3a8b3abcef92f1130e8e2a0"
+      "bytes": 76375,
+      "sha256": "a42027cf5e95d492b03c673e865bdd30fcd30aab2762b1cc6a2b2a6dadd263bb"
     },
     {
       "file": "block.html",
@@ -33,8 +33,8 @@
     },
     {
       "file": "design.json",
-      "bytes": 7904,
-      "sha256": "97cf68c4ae2db00ec1eb6888fa92ca6f04940889d6b5f8106beda1b4a4775b97"
+      "bytes": 7913,
+      "sha256": "0094ec3d301a1fcbe21bf1dbd32487ac5b4f2f3cd9105e9570d67febe0815381"
     },
     {
       "file": "index.html",
@@ -43,8 +43,8 @@
     },
     {
       "file": "paste.html",
-      "bytes": 1980448,
-      "sha256": "7e8078bc04a8737484caeb9ea36d588329e2f5590ce75e6698d16e55f4aae47f"
+      "bytes": 1980890,
+      "sha256": "c2bf914ad10b3440d6d2fb4864dc3e3648ab1edb45c46a4094b30bb274b51bc1"
     }
   ],
   "assets": [
@@ -115,5 +115,6 @@
       "source": "https://barn-estate.ru/fonts/TildaSans-Light.woff2"
     }
   ],
-  "behavior": "Два проекта, fade-переключение, стрелки и мобильная пагинация, ссылки на проекты."
+  "behavior": "Два проекта, fade-переключение, стрелки и мобильная пагинация, ссылки на проекты.",
+  "spacingUpdate": "2026-11-01"
 }
