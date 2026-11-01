@@ -43,6 +43,7 @@ body.barnes-home-typography .about-company__intro {
   line-height:var(--home-lead-line);
 }
 body.barnes-home-typography .about-company__copy { margin-top:24px; color:var(--home-secondary); font-size:var(--home-lead); font-weight:300; line-height:var(--home-lead-line); }
+body.barnes-home-typography .about-company__copy-text { font-size:18px;line-height:1.5; }
 body.barnes-home-typography .about-company__copy-text[hidden] { display:none; }
 body.barnes-home-typography .about-company__copy p { margin:0 0 var(--home-copy-gap); }
 body.barnes-home-typography .about-company__read-more {
@@ -59,6 +60,7 @@ body.barnes-home-typography .about-company__read-more:focus-visible { outline:2p
 }
 @media(max-width:540px) {
  body.barnes-home-typography .about-company__brand { max-width:220px; }
+ body.barnes-home-typography .about-company__copy-text { font-size:14px; }
 }
 
 /* Size the square logo to the visible right column, including the read-more button. */
