@@ -1,0 +1,35 @@
+{
+  "verifiedAt": "2026-11-01T20:57:19.438871+00:00",
+  "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/katalog-nedvizhimosti/",
+  "runtimeCommit": "b52bd3b6aa0a90830799352538125824564f3c05",
+  "deploymentRun": "https://github.com/daniilterekh-prog/barn-estate-homepage-clone/actions/runs/41349237592",
+  "deploymentConclusion": "success",
+  "sourceKit": {
+    "version": "1.0.0",
+    "commit": "90f0bac40402751c546cba90160c09ed386e9c92"
+  },
+  "catalogChecks": 34,
+  "toolbarCombinations": 50,
+  "kitChecks": 10,
+  "widths": [
+    320,
+    375,
+    390,
+    540,
+    541,
+    768,
+    769,
+    1024,
+    1025,
+    1280,
+    1281,
+    1366,
+    1440,
+    1920,
+    2560
+  ],
+  "formAccessibilityStates": 7,
+  "accessibilityViolations": 0,
+  "scriptAndHttpErrors": 0,
+  "submission": "Preview only; synthetic test data; no lead sent."
+}
