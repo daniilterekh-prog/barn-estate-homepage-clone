@@ -39,6 +39,26 @@
     const title = brandText(document.title);
     if (document.title !== title) document.title = title;
   }
+  function refreshLinks() {
+    const destinations = new Map([
+      ['НОВОСТРОЙКИ МОСКВЫ', 'https://barn-estate.ru/novostroyki/'],
+      ['ВТОРИЧНАЯ НЕДВИЖИМОСТЬ', 'https://barn-estate.ru/vtorichnaya-nedvizhimost/']
+    ]);
+    for (const card of document.querySelectorAll('.department-card')) {
+      const href = destinations.get(card.querySelector('.department-card__title')?.textContent.trim());
+      if (href && card.tagName === 'A') { card.href = href; card.dataset.homeOriginalLink = ''; }
+    }
+    for (const link of document.querySelectorAll('a[href^="/"]:not([href^="//"])')) {
+      const href = link.getAttribute('href');
+      if (href === '/') continue;
+      link.href = new URL(href, 'https://barn-estate.ru').href;
+      link.dataset.homeOriginalLink = '';
+    }
+  }
+  // Keep the archived Vue router from intercepting corrected external links.
+  document.addEventListener('click', event => {
+    if (event.target.closest('a[data-home-original-link]')) event.stopImmediatePropagation();
+  }, true);
   let observer, scheduled = false;
   function apply() {
     observer?.disconnect();
@@ -102,6 +122,7 @@
     if (copyright && copyright.textContent !== '© 2026 BARN ESTATE') copyright.textContent = '© 2026 BARN ESTATE';
     const hours = document.querySelector('.site-footer__hours');
     if (hours && hours.textContent !== 'Ежедневно с 09:00 до 21:00') hours.textContent = 'Ежедневно с 09:00 до 21:00';
+    refreshLinks();
     refreshBrand();
     window.__barnesHomeAbout?.fitLogo();
     window.__barnesHeaderContacts?.refresh();

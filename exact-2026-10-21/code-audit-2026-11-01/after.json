@@ -1,0 +1,1236 @@
+[
+  {
+    "width": 390,
+    "errors": [],
+    "bad": [],
+    "states": [
+      {
+        "tab": "Городская",
+        "cards": 3,
+        "oldCards": 0,
+        "broken": []
+      },
+      {
+        "tab": "Загородная",
+        "cards": 5,
+        "oldCards": 0,
+        "broken": []
+      },
+      {
+        "tab": "Коммерческая",
+        "cards": 4,
+        "oldCards": 0,
+        "broken": []
+      },
+      {
+        "tab": "Курортная",
+        "cards": 0,
+        "oldCards": 0,
+        "broken": []
+      },
+      {
+        "tab": "Зарубежная",
+        "cards": 5,
+        "oldCards": 0,
+        "broken": []
+      }
+    ],
+    "scripts": [
+      "http://localhost:8804/_nuxt/BX-jYKJN.js",
+      "http://localhost:8804/home-about.js",
+      "http://localhost:8804/home-content.js",
+      "http://localhost:8804/home-recommendations.js",
+      "http://localhost:8804/home-owner-form.js",
+      "http://localhost:8804/home-header-contacts.js"
+    ],
+    "brokenImages": [],
+    "emptyLinks": [],
+    "buttons": [
+      {
+        "text": "",
+        "label": "Открыть меню",
+        "class": "site-header__icon-btn"
+      },
+      {
+        "text": "",
+        "label": "Показать способы связи",
+        "class": "home-header-contacts-toggle"
+      },
+      {
+        "text": "",
+        "label": "Открыть фильтры",
+        "class": "home-hero-filters__filter-icon"
+      },
+      {
+        "text": "Показать объекты",
+        "label": null,
+        "class": "ui-button ui-button--primary ui-button--medium home-hero-filters__submit"
+      },
+      {
+        "text": "Зарубежная",
+        "label": "Категории недвижимости",
+        "class": "barnes-choice__select-control"
+      },
+      {
+        "text": "",
+        "label": "Добавить в избранное",
+        "class": "home-rec-favorite"
+      },
+      {
+        "text": "",
+        "label": "Добавить в избранное",
+        "class": "home-rec-favorite"
+      },
+      {
+        "text": "",
+        "label": "Добавить в избранное",
+        "class": "home-rec-favorite"
+      },
+      {
+        "text": "",
+        "label": "Добавить в избранное",
+        "class": "home-rec-favorite"
+      },
+      {
+        "text": "",
+        "label": "Добавить в избранное",
+        "class": "home-rec-favorite"
+      },
+      {
+        "text": "",
+        "label": "Go to slide 1",
+        "class": "splide__pagination__page is-active"
+      },
+      {
+        "text": "",
+        "label": "Go to slide 2",
+        "class": "splide__pagination__page"
+      },
+      {
+        "text": "",
+        "label": "Go to slide 3",
+        "class": "splide__pagination__page"
+      },
+      {
+        "text": "",
+        "label": "Go to slide 4",
+        "class": "splide__pagination__page"
+      },
+      {
+        "text": "",
+        "label": "Go to slide 5",
+        "class": "splide__pagination__page"
+      },
+      {
+        "text": "Читать далее",
+        "label": null,
+        "class": "about-company__read-more"
+      },
+      {
+        "text": "",
+        "label": "Go to slide 1",
+        "class": "splide__pagination__page is-active"
+      },
+      {
+        "text": "",
+        "label": "Go to slide 2",
+        "class": "splide__pagination__page"
+      },
+      {
+        "text": "",
+        "label": "Предыдущий отзыв",
+        "class": "reviews-section__nav-btn"
+      },
+      {
+        "text": "",
+        "label": "Следующий отзыв",
+        "class": "reviews-section__nav-btn"
+      },
+      {
+        "text": "",
+        "label": "Go to slide 1",
+        "class": "splide__pagination__page is-active"
+      },
+      {
+        "text": "",
+        "label": "Go to slide 2",
+        "class": "splide__pagination__page"
+      },
+      {
+        "text": "",
+        "label": "Go to slide 3",
+        "class": "splide__pagination__page"
+      },
+      {
+        "text": "",
+        "label": "Go to slide 4",
+        "class": "splide__pagination__page"
+      },
+      {
+        "text": "",
+        "label": "Go to slide 5",
+        "class": "splide__pagination__page"
+      },
+      {
+        "text": "",
+        "label": "Go to slide 6",
+        "class": "splide__pagination__page"
+      },
+      {
+        "text": "",
+        "label": "Go to slide 7",
+        "class": "splide__pagination__page"
+      },
+      {
+        "text": "",
+        "label": "Go to slide 8",
+        "class": "splide__pagination__page"
+      },
+      {
+        "text": "",
+        "label": "Go to slide 9",
+        "class": "splide__pagination__page"
+      },
+      {
+        "text": "",
+        "label": "Go to slide 10",
+        "class": "splide__pagination__page"
+      },
+      {
+        "text": "",
+        "label": "Go to slide 11",
+        "class": "splide__pagination__page"
+      },
+      {
+        "text": "",
+        "label": "Go to slide 12",
+        "class": "splide__pagination__page"
+      },
+      {
+        "text": "",
+        "label": "Go to slide 13",
+        "class": "splide__pagination__page"
+      },
+      {
+        "text": "",
+        "label": "Go to slide 14",
+        "class": "splide__pagination__page"
+      },
+      {
+        "text": "",
+        "label": "Go to slide 15",
+        "class": "splide__pagination__page"
+      },
+      {
+        "text": "",
+        "label": "Go to slide 16",
+        "class": "splide__pagination__page"
+      },
+      {
+        "text": "",
+        "label": "Go to slide 17",
+        "class": "splide__pagination__page"
+      },
+      {
+        "text": "",
+        "label": "Go to slide 18",
+        "class": "splide__pagination__page"
+      },
+      {
+        "text": "",
+        "label": "Go to slide 19",
+        "class": "splide__pagination__page"
+      },
+      {
+        "text": "",
+        "label": "Go to slide 20",
+        "class": "splide__pagination__page"
+      },
+      {
+        "text": "",
+        "label": "Go to slide 21",
+        "class": "splide__pagination__page"
+      },
+      {
+        "text": "",
+        "label": "Go to slide 22",
+        "class": "splide__pagination__page"
+      },
+      {
+        "text": "",
+        "label": "Go to slide 23",
+        "class": "splide__pagination__page"
+      },
+      {
+        "text": "",
+        "label": "Go to slide 24",
+        "class": "splide__pagination__page"
+      },
+      {
+        "text": "",
+        "label": "Go to slide 1",
+        "class": "splide__pagination__page is-active"
+      },
+      {
+        "text": "",
+        "label": "Go to slide 2",
+        "class": "splide__pagination__page"
+      },
+      {
+        "text": "",
+        "label": "Go to slide 3",
+        "class": "splide__pagination__page"
+      },
+      {
+        "text": "",
+        "label": "Go to slide 4",
+        "class": "splide__pagination__page"
+      },
+      {
+        "text": "",
+        "label": "Go to slide 5",
+        "class": "splide__pagination__page"
+      },
+      {
+        "text": "",
+        "label": "Go to slide 6",
+        "class": "splide__pagination__page"
+      },
+      {
+        "text": "",
+        "label": "Go to slide 7",
+        "class": "splide__pagination__page"
+      },
+      {
+        "text": "",
+        "label": "Go to slide 8",
+        "class": "splide__pagination__page"
+      },
+      {
+        "text": "",
+        "label": "Go to slide 9",
+        "class": "splide__pagination__page"
+      },
+      {
+        "text": "",
+        "label": "Go to slide 10",
+        "class": "splide__pagination__page"
+      },
+      {
+        "text": "Подписаться ↗",
+        "label": null,
+        "class": ""
+      },
+      {
+        "text": "Обратная связь",
+        "label": null,
+        "class": "site-footer__callback-btn"
+      },
+      {
+        "text": "Руководитель департамента городской недвижимостиЗадать вопрос экспертуРуслан Прус",
+        "label": null,
+        "class": "floating-expert__card"
+      },
+      {
+        "text": "",
+        "label": "Скрыть карточку Руслан Прус",
+        "class": "floating-expert__close"
+      }
+    ],
+    "overflow": false,
+    "missingFragments": []
+  },
+  {
+    "width": 768,
+    "errors": [],
+    "bad": [],
+    "states": [
+      {
+        "tab": "Городская",
+        "cards": 9,
+        "oldCards": 0,
+        "broken": []
+      },
+      {
+        "tab": "Загородная",
+        "cards": 15,
+        "oldCards": 0,
+        "broken": []
+      },
+      {
+        "tab": "Коммерческая",
+        "cards": 12,
+        "oldCards": 0,
+        "broken": []
+      },
+      {
+        "tab": "Курортная",
+        "cards": 0,
+        "oldCards": 0,
+        "broken": []
+      },
+      {
+        "tab": "Зарубежная",
+        "cards": 15,
+        "oldCards": 0,
+        "broken": []
+      }
+    ],
+    "scripts": [
+      "http://localhost:8804/_nuxt/BX-jYKJN.js",
+      "http://localhost:8804/home-about.js",
+      "http://localhost:8804/home-content.js",
+      "http://localhost:8804/home-recommendations.js",
+      "http://localhost:8804/home-owner-form.js",
+      "http://localhost:8804/home-header-contacts.js"
+    ],
+    "brokenImages": [],
+    "emptyLinks": [],
+    "buttons": [
+      {
+        "text": "",
+        "label": "Открыть меню",
+        "class": "site-header__icon-btn"
+      },
+      {
+        "text": "",
+        "label": "Показать способы связи",
+        "class": "home-header-contacts-toggle"
+      },
+      {
+        "text": "Купить",
+        "label": null,
+        "class": "home-hero-filters__tab--active home-hero-filters__tab"
+      },
+      {
+        "text": "Арендовать",
+        "label": null,
+        "class": "home-hero-filters__tab"
+      },
+      {
+        "text": "Городская",
+        "label": null,
+        "class": "home-hero-filters__tab--active home-hero-filters__tab"
+      },
+      {
+        "text": "Загородная",
+        "label": null,
+        "class": "home-hero-filters__tab"
+      },
+      {
+        "text": "Зарубежная",
+        "label": null,
+        "class": "home-hero-filters__tab"
+      },
+      {
+        "text": "Коммерческая",
+        "label": null,
+        "class": "home-hero-filters__tab"
+      },
+      {
+        "text": "Тип недвижимости",
+        "label": null,
+        "class": "hero-filter-field"
+      },
+      {
+        "text": "Бюджет",
+        "label": null,
+        "class": "hero-filter-field"
+      },
+      {
+        "text": "Еще фильтры",
+        "label": null,
+        "class": "home-hero-filters__more"
+      },
+      {
+        "text": "Показать объекты",
+        "label": null,
+        "class": "ui-button ui-button--primary ui-button--medium home-hero-filters__submit"
+      },
+      {
+        "text": "Городская",
+        "label": null,
+        "class": "barnes-choice__tab"
+      },
+      {
+        "text": "Загородная",
+        "label": null,
+        "class": "barnes-choice__tab"
+      },
+      {
+        "text": "Коммерческая",
+        "label": null,
+        "class": "barnes-choice__tab"
+      },
+      {
+        "text": "Курортная",
+        "label": null,
+        "class": "barnes-choice__tab"
+      },
+      {
+        "text": "Зарубежная",
+        "label": null,
+        "class": "barnes-choice__tab barnes-choice__tab--active"
+      },
+      {
+        "text": "Санкт-Петербург",
+        "label": null,
+        "class": "barnes-choice__tab"
+      },
+      {
+        "text": "",
+        "label": "Предыдущий объект",
+        "class": "barnes-choice__nav-btn barnes-choice__nav-btn--prev"
+      },
+      {
+        "text": "",
+        "label": "Добавить в избранное",
+        "class": "home-rec-favorite"
+      },
+      {
+        "text": "",
+        "label": "Добавить в избранное",
+        "class": "home-rec-favorite"
+      },
+      {
+        "text": "",
+        "label": "Добавить в избранное",
+        "class": "home-rec-favorite"
+      },
+      {
+        "text": "",
+        "label": "Добавить в избранное",
+        "class": "home-rec-favorite"
+      },
+      {
+        "text": "",
+        "label": "Добавить в избранное",
+        "class": "home-rec-favorite"
+      },
+      {
+        "text": "",
+        "label": "Добавить в избранное",
+        "class": "home-rec-favorite"
+      },
+      {
+        "text": "",
+        "label": "Добавить в избранное",
+        "class": "home-rec-favorite"
+      },
+      {
+        "text": "",
+        "label": "Добавить в избранное",
+        "class": "home-rec-favorite"
+      },
+      {
+        "text": "",
+        "label": "Добавить в избранное",
+        "class": "home-rec-favorite"
+      },
+      {
+        "text": "",
+        "label": "Добавить в избранное",
+        "class": "home-rec-favorite"
+      },
+      {
+        "text": "",
+        "label": "Добавить в избранное",
+        "class": "home-rec-favorite"
+      },
+      {
+        "text": "",
+        "label": "Добавить в избранное",
+        "class": "home-rec-favorite"
+      },
+      {
+        "text": "",
+        "label": "Добавить в избранное",
+        "class": "home-rec-favorite"
+      },
+      {
+        "text": "",
+        "label": "Добавить в избранное",
+        "class": "home-rec-favorite"
+      },
+      {
+        "text": "",
+        "label": "Добавить в избранное",
+        "class": "home-rec-favorite"
+      },
+      {
+        "text": "",
+        "label": "Следующий объект",
+        "class": "barnes-choice__nav-btn barnes-choice__nav-btn--next"
+      },
+      {
+        "text": "Читать далее",
+        "label": null,
+        "class": "about-company__read-more"
+      },
+      {
+        "text": "",
+        "label": "Предыдущий проект",
+        "class": "project-hero__nav-btn"
+      },
+      {
+        "text": "",
+        "label": "Следующий проект",
+        "class": "project-hero__nav-btn"
+      },
+      {
+        "text": "",
+        "label": "Предыдущий проект",
+        "class": "project-hero__nav-btn"
+      },
+      {
+        "text": "",
+        "label": "Следующий проект",
+        "class": "project-hero__nav-btn"
+      },
+      {
+        "text": "",
+        "label": "Предыдущий отзыв",
+        "class": "reviews-section__nav-btn"
+      },
+      {
+        "text": "",
+        "label": "Следующий отзыв",
+        "class": "reviews-section__nav-btn"
+      },
+      {
+        "text": "",
+        "label": "Предыдущий слайд",
+        "class": "team-section__nav-btn"
+      },
+      {
+        "text": "",
+        "label": "Следующий слайд",
+        "class": "team-section__nav-btn"
+      },
+      {
+        "text": "",
+        "label": "Предыдущие новости",
+        "class": "news-section__nav-btn"
+      },
+      {
+        "text": "",
+        "label": "Следующие новости",
+        "class": "news-section__nav-btn"
+      },
+      {
+        "text": "Подписаться ↗",
+        "label": null,
+        "class": ""
+      },
+      {
+        "text": "Обратная связь",
+        "label": null,
+        "class": "site-footer__callback-btn"
+      },
+      {
+        "text": "Руководитель департамента городской недвижимостиЗадать вопрос экспертуРуслан Прус",
+        "label": null,
+        "class": "floating-expert__card"
+      },
+      {
+        "text": "",
+        "label": "Скрыть карточку Руслан Прус",
+        "class": "floating-expert__close"
+      }
+    ],
+    "overflow": false,
+    "missingFragments": []
+  },
+  {
+    "width": 1440,
+    "errors": [],
+    "bad": [],
+    "states": [
+      {
+        "tab": "Городская",
+        "cards": 9,
+        "oldCards": 0,
+        "broken": []
+      },
+      {
+        "tab": "Загородная",
+        "cards": 15,
+        "oldCards": 0,
+        "broken": []
+      },
+      {
+        "tab": "Коммерческая",
+        "cards": 12,
+        "oldCards": 0,
+        "broken": []
+      },
+      {
+        "tab": "Курортная",
+        "cards": 0,
+        "oldCards": 0,
+        "broken": []
+      },
+      {
+        "tab": "Зарубежная",
+        "cards": 15,
+        "oldCards": 0,
+        "broken": []
+      }
+    ],
+    "scripts": [
+      "http://localhost:8804/_nuxt/BX-jYKJN.js",
+      "http://localhost:8804/home-about.js",
+      "http://localhost:8804/home-content.js",
+      "http://localhost:8804/home-recommendations.js",
+      "http://localhost:8804/home-owner-form.js",
+      "http://localhost:8804/home-header-contacts.js"
+    ],
+    "brokenImages": [],
+    "emptyLinks": [],
+    "buttons": [
+      {
+        "text": "",
+        "label": "Открыть меню",
+        "class": "site-header__icon-btn"
+      },
+      {
+        "text": "Купить",
+        "label": null,
+        "class": "home-hero-filters__tab--active home-hero-filters__tab"
+      },
+      {
+        "text": "Арендовать",
+        "label": null,
+        "class": "home-hero-filters__tab"
+      },
+      {
+        "text": "Городская",
+        "label": null,
+        "class": "home-hero-filters__tab--active home-hero-filters__tab"
+      },
+      {
+        "text": "Загородная",
+        "label": null,
+        "class": "home-hero-filters__tab"
+      },
+      {
+        "text": "Зарубежная",
+        "label": null,
+        "class": "home-hero-filters__tab"
+      },
+      {
+        "text": "Коммерческая",
+        "label": null,
+        "class": "home-hero-filters__tab"
+      },
+      {
+        "text": "Тип недвижимости",
+        "label": null,
+        "class": "hero-filter-field"
+      },
+      {
+        "text": "Бюджет",
+        "label": null,
+        "class": "hero-filter-field"
+      },
+      {
+        "text": "Еще фильтры",
+        "label": null,
+        "class": "home-hero-filters__more"
+      },
+      {
+        "text": "Показать объекты",
+        "label": null,
+        "class": "ui-button ui-button--primary ui-button--medium home-hero-filters__submit"
+      },
+      {
+        "text": "Городская",
+        "label": null,
+        "class": "barnes-choice__tab"
+      },
+      {
+        "text": "Загородная",
+        "label": null,
+        "class": "barnes-choice__tab"
+      },
+      {
+        "text": "Коммерческая",
+        "label": null,
+        "class": "barnes-choice__tab"
+      },
+      {
+        "text": "Курортная",
+        "label": null,
+        "class": "barnes-choice__tab"
+      },
+      {
+        "text": "Зарубежная",
+        "label": null,
+        "class": "barnes-choice__tab barnes-choice__tab--active"
+      },
+      {
+        "text": "Санкт-Петербург",
+        "label": null,
+        "class": "barnes-choice__tab"
+      },
+      {
+        "text": "",
+        "label": "Предыдущий объект",
+        "class": "barnes-choice__nav-btn barnes-choice__nav-btn--prev"
+      },
+      {
+        "text": "",
+        "label": "Добавить в избранное",
+        "class": "home-rec-favorite"
+      },
+      {
+        "text": "",
+        "label": "Добавить в избранное",
+        "class": "home-rec-favorite"
+      },
+      {
+        "text": "",
+        "label": "Добавить в избранное",
+        "class": "home-rec-favorite"
+      },
+      {
+        "text": "",
+        "label": "Добавить в избранное",
+        "class": "home-rec-favorite"
+      },
+      {
+        "text": "",
+        "label": "Добавить в избранное",
+        "class": "home-rec-favorite"
+      },
+      {
+        "text": "",
+        "label": "Добавить в избранное",
+        "class": "home-rec-favorite"
+      },
+      {
+        "text": "",
+        "label": "Добавить в избранное",
+        "class": "home-rec-favorite"
+      },
+      {
+        "text": "",
+        "label": "Добавить в избранное",
+        "class": "home-rec-favorite"
+      },
+      {
+        "text": "",
+        "label": "Добавить в избранное",
+        "class": "home-rec-favorite"
+      },
+      {
+        "text": "",
+        "label": "Добавить в избранное",
+        "class": "home-rec-favorite"
+      },
+      {
+        "text": "",
+        "label": "Добавить в избранное",
+        "class": "home-rec-favorite"
+      },
+      {
+        "text": "",
+        "label": "Добавить в избранное",
+        "class": "home-rec-favorite"
+      },
+      {
+        "text": "",
+        "label": "Добавить в избранное",
+        "class": "home-rec-favorite"
+      },
+      {
+        "text": "",
+        "label": "Добавить в избранное",
+        "class": "home-rec-favorite"
+      },
+      {
+        "text": "",
+        "label": "Добавить в избранное",
+        "class": "home-rec-favorite"
+      },
+      {
+        "text": "",
+        "label": "Следующий объект",
+        "class": "barnes-choice__nav-btn barnes-choice__nav-btn--next"
+      },
+      {
+        "text": "Читать далее",
+        "label": null,
+        "class": "about-company__read-more"
+      },
+      {
+        "text": "",
+        "label": "Предыдущий проект",
+        "class": "project-hero__nav-btn"
+      },
+      {
+        "text": "",
+        "label": "Следующий проект",
+        "class": "project-hero__nav-btn"
+      },
+      {
+        "text": "",
+        "label": "Предыдущий проект",
+        "class": "project-hero__nav-btn"
+      },
+      {
+        "text": "",
+        "label": "Следующий проект",
+        "class": "project-hero__nav-btn"
+      },
+      {
+        "text": "",
+        "label": "Предыдущий отзыв",
+        "class": "reviews-section__nav-btn"
+      },
+      {
+        "text": "",
+        "label": "Следующий отзыв",
+        "class": "reviews-section__nav-btn"
+      },
+      {
+        "text": "",
+        "label": "Предыдущий слайд",
+        "class": "team-section__nav-btn"
+      },
+      {
+        "text": "",
+        "label": "Следующий слайд",
+        "class": "team-section__nav-btn"
+      },
+      {
+        "text": "",
+        "label": "Предыдущие новости",
+        "class": "news-section__nav-btn"
+      },
+      {
+        "text": "",
+        "label": "Следующие новости",
+        "class": "news-section__nav-btn"
+      },
+      {
+        "text": "Подписаться ↗",
+        "label": null,
+        "class": ""
+      },
+      {
+        "text": "Обратная связь",
+        "label": null,
+        "class": "site-footer__callback-btn"
+      },
+      {
+        "text": "Руководитель департамента городской недвижимостиЗадать вопрос экспертуРуслан Прус",
+        "label": null,
+        "class": "floating-expert__card"
+      },
+      {
+        "text": "",
+        "label": "Скрыть карточку Руслан Прус",
+        "class": "floating-expert__close"
+      }
+    ],
+    "overflow": false,
+    "missingFragments": []
+  },
+  {
+    "width": 2560,
+    "errors": [],
+    "bad": [],
+    "states": [
+      {
+        "tab": "Городская",
+        "cards": 9,
+        "oldCards": 0,
+        "broken": []
+      },
+      {
+        "tab": "Загородная",
+        "cards": 15,
+        "oldCards": 0,
+        "broken": []
+      },
+      {
+        "tab": "Коммерческая",
+        "cards": 12,
+        "oldCards": 0,
+        "broken": []
+      },
+      {
+        "tab": "Курортная",
+        "cards": 0,
+        "oldCards": 0,
+        "broken": []
+      },
+      {
+        "tab": "Зарубежная",
+        "cards": 15,
+        "oldCards": 0,
+        "broken": []
+      }
+    ],
+    "scripts": [
+      "http://localhost:8804/_nuxt/BX-jYKJN.js",
+      "http://localhost:8804/home-about.js",
+      "http://localhost:8804/home-content.js",
+      "http://localhost:8804/home-recommendations.js",
+      "http://localhost:8804/home-owner-form.js",
+      "http://localhost:8804/home-header-contacts.js"
+    ],
+    "brokenImages": [],
+    "emptyLinks": [],
+    "buttons": [
+      {
+        "text": "",
+        "label": "Открыть меню",
+        "class": "site-header__icon-btn"
+      },
+      {
+        "text": "Купить",
+        "label": null,
+        "class": "home-hero-filters__tab--active home-hero-filters__tab"
+      },
+      {
+        "text": "Арендовать",
+        "label": null,
+        "class": "home-hero-filters__tab"
+      },
+      {
+        "text": "Городская",
+        "label": null,
+        "class": "home-hero-filters__tab--active home-hero-filters__tab"
+      },
+      {
+        "text": "Загородная",
+        "label": null,
+        "class": "home-hero-filters__tab"
+      },
+      {
+        "text": "Зарубежная",
+        "label": null,
+        "class": "home-hero-filters__tab"
+      },
+      {
+        "text": "Коммерческая",
+        "label": null,
+        "class": "home-hero-filters__tab"
+      },
+      {
+        "text": "Тип недвижимости",
+        "label": null,
+        "class": "hero-filter-field"
+      },
+      {
+        "text": "Бюджет",
+        "label": null,
+        "class": "hero-filter-field"
+      },
+      {
+        "text": "Еще фильтры",
+        "label": null,
+        "class": "home-hero-filters__more"
+      },
+      {
+        "text": "Показать объекты",
+        "label": null,
+        "class": "ui-button ui-button--primary ui-button--medium home-hero-filters__submit"
+      },
+      {
+        "text": "Городская",
+        "label": null,
+        "class": "barnes-choice__tab"
+      },
+      {
+        "text": "Загородная",
+        "label": null,
+        "class": "barnes-choice__tab"
+      },
+      {
+        "text": "Коммерческая",
+        "label": null,
+        "class": "barnes-choice__tab"
+      },
+      {
+        "text": "Курортная",
+        "label": null,
+        "class": "barnes-choice__tab"
+      },
+      {
+        "text": "Зарубежная",
+        "label": null,
+        "class": "barnes-choice__tab barnes-choice__tab--active"
+      },
+      {
+        "text": "Санкт-Петербург",
+        "label": null,
+        "class": "barnes-choice__tab"
+      },
+      {
+        "text": "",
+        "label": "Предыдущий объект",
+        "class": "barnes-choice__nav-btn barnes-choice__nav-btn--prev"
+      },
+      {
+        "text": "",
+        "label": "Добавить в избранное",
+        "class": "home-rec-favorite"
+      },
+      {
+        "text": "",
+        "label": "Добавить в избранное",
+        "class": "home-rec-favorite"
+      },
+      {
+        "text": "",
+        "label": "Добавить в избранное",
+        "class": "home-rec-favorite"
+      },
+      {
+        "text": "",
+        "label": "Добавить в избранное",
+        "class": "home-rec-favorite"
+      },
+      {
+        "text": "",
+        "label": "Добавить в избранное",
+        "class": "home-rec-favorite"
+      },
+      {
+        "text": "",
+        "label": "Добавить в избранное",
+        "class": "home-rec-favorite"
+      },
+      {
+        "text": "",
+        "label": "Добавить в избранное",
+        "class": "home-rec-favorite"
+      },
+      {
+        "text": "",
+        "label": "Добавить в избранное",
+        "class": "home-rec-favorite"
+      },
+      {
+        "text": "",
+        "label": "Добавить в избранное",
+        "class": "home-rec-favorite"
+      },
+      {
+        "text": "",
+        "label": "Добавить в избранное",
+        "class": "home-rec-favorite"
+      },
+      {
+        "text": "",
+        "label": "Добавить в избранное",
+        "class": "home-rec-favorite"
+      },
+      {
+        "text": "",
+        "label": "Добавить в избранное",
+        "class": "home-rec-favorite"
+      },
+      {
+        "text": "",
+        "label": "Добавить в избранное",
+        "class": "home-rec-favorite"
+      },
+      {
+        "text": "",
+        "label": "Добавить в избранное",
+        "class": "home-rec-favorite"
+      },
+      {
+        "text": "",
+        "label": "Добавить в избранное",
+        "class": "home-rec-favorite"
+      },
+      {
+        "text": "",
+        "label": "Следующий объект",
+        "class": "barnes-choice__nav-btn barnes-choice__nav-btn--next"
+      },
+      {
+        "text": "Читать далее",
+        "label": null,
+        "class": "about-company__read-more"
+      },
+      {
+        "text": "",
+        "label": "Предыдущий проект",
+        "class": "project-hero__nav-btn"
+      },
+      {
+        "text": "",
+        "label": "Следующий проект",
+        "class": "project-hero__nav-btn"
+      },
+      {
+        "text": "",
+        "label": "Предыдущий проект",
+        "class": "project-hero__nav-btn"
+      },
+      {
+        "text": "",
+        "label": "Следующий проект",
+        "class": "project-hero__nav-btn"
+      },
+      {
+        "text": "",
+        "label": "Предыдущий отзыв",
+        "class": "reviews-section__nav-btn"
+      },
+      {
+        "text": "",
+        "label": "Следующий отзыв",
+        "class": "reviews-section__nav-btn"
+      },
+      {
+        "text": "",
+        "label": "Предыдущий слайд",
+        "class": "team-section__nav-btn"
+      },
+      {
+        "text": "",
+        "label": "Следующий слайд",
+        "class": "team-section__nav-btn"
+      },
+      {
+        "text": "",
+        "label": "Предыдущие новости",
+        "class": "news-section__nav-btn"
+      },
+      {
+        "text": "",
+        "label": "Следующие новости",
+        "class": "news-section__nav-btn"
+      },
+      {
+        "text": "Подписаться ↗",
+        "label": null,
+        "class": ""
+      },
+      {
+        "text": "Обратная связь",
+        "label": null,
+        "class": "site-footer__callback-btn"
+      },
+      {
+        "text": "Руководитель департамента городской недвижимостиЗадать вопрос экспертуРуслан Прус",
+        "label": null,
+        "class": "floating-expert__card"
+      },
+      {
+        "text": "",
+        "label": "Скрыть карточку Руслан Прус",
+        "class": "floating-expert__close"
+      }
+    ],
+    "overflow": false,
+    "missingFragments": []
+  }
+]

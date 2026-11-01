@@ -727,13 +727,13 @@
 .barnes-block.barnes-home-typography .barnes-choice{--start-sales-card-height: 410px;}
 }
 @media (min-width: 768px) {
-.barnes-block.barnes-home-typography .barnes-choice__slider-row{display: grid; grid-template-columns: repeat(2, minmax(0px, 1fr)); row-gap: 24px;}
+.barnes-block.barnes-home-typography .barnes-choice__slider-row{display: grid; grid-template-columns: minmax(0px, 1fr) auto auto; column-gap: 12px; row-gap: 24px;}
 .barnes-block.barnes-home-typography .barnes-choice__slider-wrap{grid-area: 1 / 1 / auto / -1;}
 .barnes-block.barnes-home-typography .barnes-choice__slider{padding-bottom: var(--barnes-choice-hover-pad-y);}
 .barnes-block.barnes-home-typography .barnes-choice__slider .splide__track{padding-bottom: 0px;}
 .barnes-block.barnes-home-typography .barnes-choice__nav-btn{position: relative; inset: auto; grid-row: 2; display: inline-flex; margin: 0px; padding: 0px; transform: none;}
-.barnes-block.barnes-home-typography .barnes-choice__nav-btn--prev{grid-column: 1; justify-self: start; margin-left: var(--home-rec-nav-inset, 24px);}
-.barnes-block.barnes-home-typography .barnes-choice__nav-btn--next{grid-column: 2; justify-self: end; margin-right: var(--home-rec-nav-inset, 24px);}
+.barnes-block.barnes-home-typography .barnes-choice__nav-btn--prev{grid-column: 2; justify-self: end; margin-left: 0px;}
+.barnes-block.barnes-home-typography .barnes-choice__nav-btn--next{grid-column: 3; justify-self: end; margin-right: var(--home-rec-nav-inset, 24px);}
 .barnes-block.barnes-home-typography .barnes-choice__nav-btn:focus-visible{outline: rgb(139, 29, 37) solid 1px; outline-offset: 3px;}
 .barnes-block.barnes-home-typography .barnes-choice__footer{padding-top: 24px;}
 }
@@ -1024,10 +1024,3 @@
 .barnes-block .barn-block-select button:hover,.barnes-block .barn-block-select button:focus-visible{background:#f9f3f3;color:#8b1d25;}
 .barnes-block .barn-filter-open{opacity:1!important;transform:none!important;visibility:visible!important;}
 .barnes-block .standalone-quiz-launch{padding:60px 24px;text-align:center}.barnes-block .standalone-quiz-launch h2{font-size:32px;font-weight:300;margin:24px 0}.barnes-block .standalone-quiz-launch button{background:#8b1d25;border:0;padding:20px 32px;color:white;font:400 17px "Tilda Sans";cursor:pointer;}
-
-/* Keep both recommendation controls together at the right edge. */
-@media (min-width:768px) {
- .barnes-block.barnes-home-typography .barnes-choice__slider-row {grid-template-columns:minmax(0,1fr) auto auto;column-gap:12px;}
- .barnes-block.barnes-home-typography .barnes-choice__nav-btn--prev {grid-column:2;justify-self:end;margin-left:0;}
- .barnes-block.barnes-home-typography .barnes-choice__nav-btn--next {grid-column:3;}
-}
