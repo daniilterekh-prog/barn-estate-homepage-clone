@@ -41,6 +41,7 @@
   let observer, scheduled = false;
   function apply() {
     observer?.disconnect();
+    window.__barnesHomeAbout?.refresh();
     for (const [parentSelector, headingSelector, text, existingSelector] of roles) {
       const parent = document.querySelector(parentSelector);
       const heading = parent?.querySelector(headingSelector);
