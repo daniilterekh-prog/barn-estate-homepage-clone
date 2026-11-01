@@ -53,10 +53,20 @@ body.barnes-home-typography .about-company__read-more {
 body.barnes-home-typography .about-company__read-more-icon { display:inline-flex;width:16px;height:16px; }
 body.barnes-home-typography .about-company__read-more-icon svg { width:100%;height:100%; }
 body.barnes-home-typography .about-company__read-more:focus-visible { outline:2px solid var(--home-brand);outline-offset:5px; }
-@media(max-width:1024px) {
+@media(max-width:1279px) {
  body.barnes-home-typography .about-company__inner { grid-template-columns:1fr;gap:32px; }
  body.barnes-home-typography .about-company__brand { position:static;max-width:280px; }
 }
 @media(max-width:540px) {
  body.barnes-home-typography .about-company__brand { max-width:220px; }
+}
+
+/* Size the square logo to the visible right column, including the read-more button. */
+@media(min-width:1280px) {
+ body.barnes-home-typography .about-company__brand {
+   position:static;
+   width:var(--home-about-logo-size,100%);
+   max-width:none;
+ }
+ body.barnes-home-typography .about-company__brand-logo { width:100%;max-width:none;height:auto; }
 }

@@ -80,6 +80,7 @@
     const hours = document.querySelector('.site-footer__hours');
     if (hours && hours.textContent !== 'Ежедневно с 09:00 до 21:00') hours.textContent = 'Ежедневно с 09:00 до 21:00';
     refreshBrand();
+    window.__barnesHomeAbout?.fitLogo();
     window.__barnesHeaderContacts?.refresh();
     window.__barnesRecommendations?.refresh();
     window.__barnesOwnerForm?.refresh();

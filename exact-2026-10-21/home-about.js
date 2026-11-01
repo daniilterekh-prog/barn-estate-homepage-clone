@@ -9,8 +9,21 @@
   const wrapper=document.createElement('div');wrapper.innerHTML=template.replace('__ABOUT_LOGO__',logo);
   const section=wrapper.firstElementChild;before.before(section);
   const button=section.querySelector('.about-company__read-more'),copy=section.querySelector('.about-company__copy-text');
+  const observer=new ResizeObserver(fitLogo);
+  observer.observe(section.querySelector('.about-company__title'));
+  observer.observe(section.querySelector('.about-company__intro'));
+  document.fonts?.ready.then(fitLogo);
   button.addEventListener('click',()=>{const open=button.getAttribute('aria-expanded')!=='true';button.setAttribute('aria-expanded',String(open));copy.hidden=!open;button.firstChild.textContent=open?'Свернуть':'Читать далее';if(!open)button.scrollIntoView({block:'nearest'})});
  }
- window.__barnesHomeAbout={refresh};
+ function fitLogo(){
+  const section=document.querySelector('.about-company');if(!section)return;
+  if(innerWidth<1280){section.style.removeProperty('--home-about-logo-size');return;}
+  const content=section.querySelector('.about-company__content'),intro=section.querySelector('.about-company__intro'),copy=section.querySelector('.about-company__copy'),button=section.querySelector('.about-company__read-more');
+  // Match the collapsed right column, even while the long copy is expanded.
+  const size=intro.getBoundingClientRect().bottom-content.getBoundingClientRect().top+parseFloat(getComputedStyle(copy).marginTop)+button.getBoundingClientRect().height;
+  const value=`${size}px`;
+  if(section.style.getPropertyValue('--home-about-logo-size')!==value)section.style.setProperty('--home-about-logo-size',value);
+ }
+ window.__barnesHomeAbout={refresh,fitLogo};
  window.__barnesHomeContent?.refresh?.();
 })();
