@@ -1,7 +1,7 @@
 {
   "390": {
     "width": 375,
-    "height": 780,
+    "height": 780.640625,
     "padding": "48px 0px",
     "margin": "0px",
     "text": [
@@ -26,7 +26,7 @@
         "align": "center"
       },
       {
-        "text": "Imperial Club",
+        "text": "Роскошная 3-комнатная квартира в клубном ЖК «Green Plaza» рядом с Кремлем",
         "selector": "apartment-card__name",
         "font": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
         "size": "20px",
@@ -36,7 +36,7 @@
         "align": "start"
       },
       {
-        "text": "Косая линия, 16",
+        "text": "Хлыновский туп, 4",
         "selector": "apartment-card__address",
         "font": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
         "size": "13px",
@@ -46,7 +46,7 @@
         "align": "start"
       },
       {
-        "text": "23 855 040 ₽",
+        "text": "350 000 000 ₽",
         "selector": "apartment-card__price",
         "font": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
         "size": "24px",
@@ -56,7 +56,7 @@
         "align": "start"
       },
       {
-        "text": "Косая линия, 16",
+        "text": "Москва, Софийская наб, 34стр3",
         "selector": "home-rec-address",
         "font": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
         "size": "13px",
@@ -66,7 +66,7 @@
         "align": "left"
       },
       {
-        "text": "Imperial Club",
+        "text": "Клубный дом DUO",
         "selector": "home-rec-name",
         "font": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
         "size": "29px",
@@ -76,7 +76,127 @@
         "align": "start"
       },
       {
-        "text": "23 855 040 ₽",
+        "text": "от 113 000 000 ₽",
+        "selector": "home-rec-price",
+        "font": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "size": "21px",
+        "weight": "400",
+        "line": "26.25px",
+        "color": "rgb(255, 255, 255)",
+        "align": "start"
+      },
+      {
+        "text": "Роскошный видовой 3-комнатный апартамент в башне «Москва» ЖК «Город Столиц»",
+        "selector": "apartment-card__name",
+        "font": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "size": "20px",
+        "weight": "400",
+        "line": "22.4px",
+        "color": "rgb(30, 30, 30)",
+        "align": "start"
+      },
+      {
+        "text": "Пресненская наб, 8стр1",
+        "selector": "apartment-card__address",
+        "font": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "size": "13px",
+        "weight": "300",
+        "line": "18px",
+        "color": "rgb(101, 100, 98)",
+        "align": "start"
+      },
+      {
+        "text": "434 781 360 ₽",
+        "selector": "apartment-card__price",
+        "font": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "size": "24px",
+        "weight": "500",
+        "line": "28.8px",
+        "color": "rgb(30, 30, 30)",
+        "align": "start"
+      },
+      {
+        "text": "Москва, Большой Палашёвский пер, 11",
+        "selector": "home-rec-address",
+        "font": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "size": "13px",
+        "weight": "500",
+        "line": "15.6px",
+        "color": "rgba(255, 255, 255, 0.96)",
+        "align": "left"
+      },
+      {
+        "text": "Палашевский, 11",
+        "selector": "home-rec-name",
+        "font": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "size": "29px",
+        "weight": "400",
+        "line": "32.48px",
+        "color": "rgb(255, 255, 255)",
+        "align": "start"
+      },
+      {
+        "text": "Цена по запросу",
+        "selector": "home-rec-price",
+        "font": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "size": "21px",
+        "weight": "400",
+        "line": "26.25px",
+        "color": "rgb(255, 255, 255)",
+        "align": "start"
+      },
+      {
+        "text": "Хилл 8",
+        "selector": "apartment-card__name",
+        "font": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "size": "20px",
+        "weight": "400",
+        "line": "22.4px",
+        "color": "rgb(30, 30, 30)",
+        "align": "start"
+      },
+      {
+        "text": "Мира (дублёр), 95 с2",
+        "selector": "apartment-card__address",
+        "font": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "size": "13px",
+        "weight": "300",
+        "line": "18px",
+        "color": "rgb(101, 100, 98)",
+        "align": "start"
+      },
+      {
+        "text": "55 214 251 ₽",
+        "selector": "apartment-card__price",
+        "font": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "size": "24px",
+        "weight": "500",
+        "line": "28.8px",
+        "color": "rgb(30, 30, 30)",
+        "align": "start"
+      },
+      {
+        "text": "Москва, Вавилова ул, 64",
+        "selector": "home-rec-address",
+        "font": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "size": "13px",
+        "weight": "500",
+        "line": "15.6px",
+        "color": "rgba(255, 255, 255, 0.96)",
+        "align": "left"
+      },
+      {
+        "text": "Вавилова, 64",
+        "selector": "home-rec-name",
+        "font": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "size": "29px",
+        "weight": "400",
+        "line": "32.48px",
+        "color": "rgb(255, 255, 255)",
+        "align": "start"
+      },
+      {
+        "text": "Цена по запросу",
         "selector": "home-rec-price",
         "font": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
         "size": "21px",
@@ -89,7 +209,7 @@
   },
   "1440": {
     "width": 1425,
-    "height": 1008.265625,
+    "height": 1088.265625,
     "padding": "86.4px 0px",
     "margin": "0px",
     "text": [
@@ -114,7 +234,7 @@
         "align": "center"
       },
       {
-        "text": "Imperial Club",
+        "text": "Роскошная 3-комнатная квартира в клубном ЖК «Green Plaza» рядом с Кремлем",
         "selector": "apartment-card__name",
         "font": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
         "size": "22px",
@@ -124,7 +244,7 @@
         "align": "start"
       },
       {
-        "text": "Косая линия, 16",
+        "text": "Хлыновский туп, 4",
         "selector": "apartment-card__address",
         "font": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
         "size": "13px",
@@ -134,7 +254,7 @@
         "align": "start"
       },
       {
-        "text": "23 855 040 ₽",
+        "text": "350 000 000 ₽",
         "selector": "apartment-card__price",
         "font": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
         "size": "26px",
@@ -144,7 +264,7 @@
         "align": "start"
       },
       {
-        "text": "Косая линия, 16",
+        "text": "Москва, Софийская наб, 34стр3",
         "selector": "home-rec-address",
         "font": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
         "size": "14px",
@@ -154,7 +274,7 @@
         "align": "left"
       },
       {
-        "text": "Imperial Club",
+        "text": "Клубный дом DUO",
         "selector": "home-rec-name",
         "font": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
         "size": "31px",
@@ -164,7 +284,127 @@
         "align": "start"
       },
       {
-        "text": "23 855 040 ₽",
+        "text": "от 113 000 000 ₽",
+        "selector": "home-rec-price",
+        "font": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "size": "21px",
+        "weight": "400",
+        "line": "26.25px",
+        "color": "rgb(255, 255, 255)",
+        "align": "start"
+      },
+      {
+        "text": "Роскошный видовой 3-комнатный апартамент в башне «Москва» ЖК «Город Столиц»",
+        "selector": "apartment-card__name",
+        "font": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "size": "22px",
+        "weight": "400",
+        "line": "24.64px",
+        "color": "rgb(30, 30, 30)",
+        "align": "start"
+      },
+      {
+        "text": "Пресненская наб, 8стр1",
+        "selector": "apartment-card__address",
+        "font": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "size": "13px",
+        "weight": "300",
+        "line": "18px",
+        "color": "rgb(101, 100, 98)",
+        "align": "start"
+      },
+      {
+        "text": "434 781 360 ₽",
+        "selector": "apartment-card__price",
+        "font": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "size": "26px",
+        "weight": "500",
+        "line": "31.2px",
+        "color": "rgb(30, 30, 30)",
+        "align": "start"
+      },
+      {
+        "text": "Москва, Большой Палашёвский пер, 11",
+        "selector": "home-rec-address",
+        "font": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "size": "14px",
+        "weight": "500",
+        "line": "16.8px",
+        "color": "rgba(255, 255, 255, 0.96)",
+        "align": "left"
+      },
+      {
+        "text": "Палашевский, 11",
+        "selector": "home-rec-name",
+        "font": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "size": "31px",
+        "weight": "400",
+        "line": "34.72px",
+        "color": "rgb(255, 255, 255)",
+        "align": "start"
+      },
+      {
+        "text": "Цена по запросу",
+        "selector": "home-rec-price",
+        "font": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "size": "21px",
+        "weight": "400",
+        "line": "26.25px",
+        "color": "rgb(255, 255, 255)",
+        "align": "start"
+      },
+      {
+        "text": "Хилл 8",
+        "selector": "apartment-card__name",
+        "font": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "size": "22px",
+        "weight": "400",
+        "line": "24.64px",
+        "color": "rgb(30, 30, 30)",
+        "align": "start"
+      },
+      {
+        "text": "Мира (дублёр), 95 с2",
+        "selector": "apartment-card__address",
+        "font": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "size": "13px",
+        "weight": "300",
+        "line": "18px",
+        "color": "rgb(101, 100, 98)",
+        "align": "start"
+      },
+      {
+        "text": "55 214 251 ₽",
+        "selector": "apartment-card__price",
+        "font": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "size": "26px",
+        "weight": "500",
+        "line": "31.2px",
+        "color": "rgb(30, 30, 30)",
+        "align": "start"
+      },
+      {
+        "text": "Москва, Вавилова ул, 64",
+        "selector": "home-rec-address",
+        "font": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "size": "14px",
+        "weight": "500",
+        "line": "16.8px",
+        "color": "rgba(255, 255, 255, 0.96)",
+        "align": "left"
+      },
+      {
+        "text": "Вавилова, 64",
+        "selector": "home-rec-name",
+        "font": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "size": "31px",
+        "weight": "400",
+        "line": "34.72px",
+        "color": "rgb(255, 255, 255)",
+        "align": "start"
+      },
+      {
+        "text": "Цена по запросу",
         "selector": "home-rec-price",
         "font": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
         "size": "21px",
@@ -177,7 +417,7 @@
   },
   "2560": {
     "width": 2545,
-    "height": 1053.484375,
+    "height": 1145.484375,
     "padding": "100px 0px",
     "margin": "0px",
     "text": [
@@ -202,7 +442,7 @@
         "align": "center"
       },
       {
-        "text": "Imperial Club",
+        "text": "Роскошная 3-комнатная квартира в клубном ЖК «Green Plaza» рядом с Кремлем",
         "selector": "apartment-card__name",
         "font": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
         "size": "22px",
@@ -212,7 +452,7 @@
         "align": "start"
       },
       {
-        "text": "Косая линия, 16",
+        "text": "Хлыновский туп, 4",
         "selector": "apartment-card__address",
         "font": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
         "size": "13px",
@@ -222,7 +462,7 @@
         "align": "start"
       },
       {
-        "text": "23 855 040 ₽",
+        "text": "350 000 000 ₽",
         "selector": "apartment-card__price",
         "font": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
         "size": "26px",
@@ -232,7 +472,7 @@
         "align": "start"
       },
       {
-        "text": "Косая линия, 16",
+        "text": "Москва, Софийская наб, 34стр3",
         "selector": "home-rec-address",
         "font": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
         "size": "14px",
@@ -242,7 +482,7 @@
         "align": "left"
       },
       {
-        "text": "Imperial Club",
+        "text": "Клубный дом DUO",
         "selector": "home-rec-name",
         "font": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
         "size": "31px",
@@ -252,7 +492,127 @@
         "align": "start"
       },
       {
-        "text": "23 855 040 ₽",
+        "text": "от 113 000 000 ₽",
+        "selector": "home-rec-price",
+        "font": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "size": "21px",
+        "weight": "400",
+        "line": "26.25px",
+        "color": "rgb(255, 255, 255)",
+        "align": "start"
+      },
+      {
+        "text": "Роскошный видовой 3-комнатный апартамент в башне «Москва» ЖК «Город Столиц»",
+        "selector": "apartment-card__name",
+        "font": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "size": "22px",
+        "weight": "400",
+        "line": "24.64px",
+        "color": "rgb(30, 30, 30)",
+        "align": "start"
+      },
+      {
+        "text": "Пресненская наб, 8стр1",
+        "selector": "apartment-card__address",
+        "font": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "size": "13px",
+        "weight": "300",
+        "line": "18px",
+        "color": "rgb(101, 100, 98)",
+        "align": "start"
+      },
+      {
+        "text": "434 781 360 ₽",
+        "selector": "apartment-card__price",
+        "font": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "size": "26px",
+        "weight": "500",
+        "line": "31.2px",
+        "color": "rgb(30, 30, 30)",
+        "align": "start"
+      },
+      {
+        "text": "Москва, Большой Палашёвский пер, 11",
+        "selector": "home-rec-address",
+        "font": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "size": "14px",
+        "weight": "500",
+        "line": "16.8px",
+        "color": "rgba(255, 255, 255, 0.96)",
+        "align": "left"
+      },
+      {
+        "text": "Палашевский, 11",
+        "selector": "home-rec-name",
+        "font": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "size": "31px",
+        "weight": "400",
+        "line": "34.72px",
+        "color": "rgb(255, 255, 255)",
+        "align": "start"
+      },
+      {
+        "text": "Цена по запросу",
+        "selector": "home-rec-price",
+        "font": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "size": "21px",
+        "weight": "400",
+        "line": "26.25px",
+        "color": "rgb(255, 255, 255)",
+        "align": "start"
+      },
+      {
+        "text": "Хилл 8",
+        "selector": "apartment-card__name",
+        "font": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "size": "22px",
+        "weight": "400",
+        "line": "24.64px",
+        "color": "rgb(30, 30, 30)",
+        "align": "start"
+      },
+      {
+        "text": "Мира (дублёр), 95 с2",
+        "selector": "apartment-card__address",
+        "font": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "size": "13px",
+        "weight": "300",
+        "line": "18px",
+        "color": "rgb(101, 100, 98)",
+        "align": "start"
+      },
+      {
+        "text": "55 214 251 ₽",
+        "selector": "apartment-card__price",
+        "font": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "size": "26px",
+        "weight": "500",
+        "line": "31.2px",
+        "color": "rgb(30, 30, 30)",
+        "align": "start"
+      },
+      {
+        "text": "Москва, Вавилова ул, 64",
+        "selector": "home-rec-address",
+        "font": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "size": "14px",
+        "weight": "500",
+        "line": "16.8px",
+        "color": "rgba(255, 255, 255, 0.96)",
+        "align": "left"
+      },
+      {
+        "text": "Вавилова, 64",
+        "selector": "home-rec-name",
+        "font": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "size": "31px",
+        "weight": "400",
+        "line": "34.72px",
+        "color": "rgb(255, 255, 255)",
+        "align": "start"
+      },
+      {
+        "text": "Цена по запросу",
         "selector": "home-rec-price",
         "font": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
         "size": "21px",

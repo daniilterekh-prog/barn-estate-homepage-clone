@@ -186,10 +186,9 @@ body.barnes-home-typography .floating-expert__title { color: var(--home-brand) !
 /* Match the light direction label in its mobile option list. */
 body.barnes-home-typography .barnes-choice__select-option { font-weight:300 !important; }
 
-/* Lighter mobile contact actions, scoped to the page's contact block. */
+/* Mobile contact layout, scoped to the page's contact block. */
 @media(max-width:540px) {
  body.barnes-home-typography .office-contact .office-contact__social {
-  font-weight:300 !important;
   color:#4f4d49;
   border-color:#8b8986;
   display:grid;

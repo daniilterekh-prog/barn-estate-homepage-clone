@@ -638,3 +638,73 @@
 .barnes-block .barn-block-select button:hover,.barnes-block .barn-block-select button:focus-visible{background:#f9f3f3;color:#8b1d25;}
 .barnes-block .barn-filter-open{opacity:1!important;transform:none!important;visibility:visible!important;}
 .barnes-block .standalone-quiz-launch{padding:60px 24px;text-align:center}.barnes-block .standalone-quiz-launch h2{font-size:32px;font-weight:300;margin:24px 0}.barnes-block .standalone-quiz-launch button{background:#8b1d25;border:0;padding:20px 32px;color:white;font:400 17px "Tilda Sans";cursor:pointer;}
+
+/* One geometry/type contract per button role. Preserve fill/outline/inverse colors. */
+.barnes-block.barnes-home-typography {
+ --home-button-radius:3px;
+ --home-button-weight:400;
+ --home-button-font:17px;
+ --home-button-height:70px;
+ --home-button-pad:36px;
+}
+@media(min-width:1441px) {
+ .barnes-block.barnes-home-typography {--home-button-font:19px;--home-button-pad:47px;}
+}
+@media(max-width:540px) {
+ .barnes-block.barnes-home-typography {--home-button-font:18px;--home-button-height:58px;--home-button-pad:24px;}
+}
+.barnes-block.barnes-home-typography :is(.home-hero-filters__submit,.barnes-choice__action,.project-hero__cta,.office-contact__social,.newsletter-form__row>button,.site-footer__callback-btn,.hero-filter-modal__apply,.standalone-quiz-launch .site-header__request) {
+ box-sizing:border-box;
+ border-radius:var(--home-button-radius)!important;
+ height:var(--home-button-height)!important;
+ min-height:var(--home-button-height)!important;
+ padding-block:0!important;
+ padding-inline:var(--home-button-pad)!important;
+ font-family:"Tilda Sans","Tilda Sans Fallback",system-ui,sans-serif!important;
+ font-size:var(--home-button-font)!important;
+ font-weight:var(--home-button-weight)!important;
+ line-height:1.1!important;
+ letter-spacing:0!important;
+ white-space:nowrap;
+}
+.barnes-block.barnes-home-typography .site-footer__callback-btn {width:max-content;max-width:100%;}
+.barnes-block.barnes-home-typography .site-header .site-header__request {
+ border-radius:var(--home-button-radius)!important;
+ font-size:16px!important;font-weight:400!important;
+ height:44px;min-height:44px;padding:0 18px;white-space:nowrap;
+}
+.barnes-block .barnes-template.owner-sale-reference-ui.home-quiz-host :is(.home-quiz__next,.home-owner-form__submit) {
+ border-radius:3px!important;font-size:17px!important;font-weight:400!important;
+ line-height:1.1!important;letter-spacing:0!important;
+ box-sizing:border-box;height:64px!important;min-height:64px!important;
+ padding:0 36px!important;
+}
+.barnes-block .barnes-template.owner-sale-reference-ui.home-quiz-host .home-owner-form__channels {
+ border-bottom:0;margin-bottom:16px;gap:8px;grid-template-columns:repeat(4,minmax(0,1fr));
+}
+.barnes-block .barnes-template.owner-sale-reference-ui.home-quiz-host .home-owner-form__channels button {
+ border:1px solid #8b8986;border-radius:3px!important;margin:0;
+ padding:10px 8px;min-height:46px;font-weight:400!important;
+ font-size:17px!important;line-height:1.1!important;white-space:nowrap;
+}
+.barnes-block .barnes-template.owner-sale-reference-ui.home-quiz-host .home-owner-form__channels button[aria-pressed=true] {
+ border-color:#8b1d25;background:#f9f3f3;color:#8b1d25;
+}
+@media(min-width:1441px) {
+ .barnes-block .barnes-template.owner-sale-reference-ui.home-quiz-host :is(.home-quiz__next,.home-owner-form__submit) {font-size:19px!important;padding-inline:47px!important;}
+}
+@media(max-width:1024px),(max-height:650px) {
+ .barnes-block .barnes-template.owner-sale-reference-ui.home-quiz-host .home-owner-form__channels {grid-template-columns:repeat(2,minmax(0,1fr));}
+}
+@media(max-width:540px) {
+ .barnes-block.barnes-home-typography .site-footer__callback-btn {width:100%;}
+ .barnes-block .barnes-template.owner-sale-reference-ui.home-quiz-host :is(.home-quiz__next,.home-owner-form__submit) {font-size:18px!important;height:58px!important;min-height:58px!important;padding-inline:24px!important;}
+ .barnes-block .barnes-template.owner-sale-reference-ui.home-quiz-host .home-owner-form__channels button {font-size:18px!important;}
+}
+/* Compact choices retain a smaller footprint, sharing radius and regular weight. */
+.barnes-block.barnes-home-typography :is(.home-hero-filters__modal-chip,.barnes-choice__select-control) {
+ box-sizing:border-box;border-radius:3px!important;min-height:44px;
+ font-weight:400!important;padding:10px 16px!important;
+}
+.barnes-block.barnes-home-typography .home-hero-filters__modal-chip {font-size:16px;}
+.barnes-block.barnes-home-typography :is(.barnes-choice__select-value,.barnes-choice__select-option) {font-weight:400!important;}

@@ -59,3 +59,9 @@ body.barnes-home-typography .site-header .site-header__request {
 @media (hover:hover) and (pointer:fine) {
  body.barnes-home-typography .site-header .site-header__request:hover {background:#8b1d25!important;color:#fff!important;}
 }
+
+/* The 18px navigation labels must fit the first desktop font breakpoint. */
+@media(min-width:1281px) {
+ body.barnes-home-typography .site-header__nav-list {flex-wrap:nowrap;column-gap:clamp(16px,calc(5vw - 48px),36px);}
+ body.barnes-home-typography :is(.site-header__nav-item,.site-header__nav-link) {white-space:nowrap;flex-shrink:0;}
+}
