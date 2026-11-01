@@ -24,11 +24,12 @@
     const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
     let node;
     while ((node = walker.nextNode())) {
-      if (node.parentElement?.closest('script,style,textarea')) continue;
+      if (node.parentElement?.closest('script,style,textarea,[data-preserve-brand]')) continue;
       const text = brandText(node.nodeValue);
       if (text !== node.nodeValue) node.nodeValue = text;
     }
     for (const el of document.querySelectorAll('[alt],[title],[aria-label],[placeholder],meta[content]')) {
+      if (el.closest('[data-preserve-brand]')) continue;
       for (const attr of ['alt','title','aria-label','placeholder', ...(el.tagName === 'META' ? ['content'] : [])]) {
         if (!el.hasAttribute(attr)) continue;
         const text = el.getAttribute(attr), updated = brandText(text);

@@ -19,11 +19,10 @@ body.barnes-home-typography .about-company__brand {
   align-self: start;
   position: sticky;
   top: 140px;
-  display: grid;
-  place-items: center;
-  min-height: 320px;
-  border: 1px solid rgba(30,30,30,.14);
-  padding: 40px;
+  display: block;
+  max-width: 440px;
+  width: 100%;
+  margin-inline: auto;
 }
 body.barnes-home-typography .about-company__brand-logo { display: block; width:100%; height:auto; max-width:440px; }
 body.barnes-home-typography .about-company__content { min-width:0; }
@@ -43,25 +42,7 @@ body.barnes-home-typography .about-company__intro {
   font-weight:300;
   line-height:var(--home-lead-line);
 }
-body.barnes-home-typography .about-company__facts {
-  display:grid;
-  grid-template-columns:repeat(6,minmax(0,1fr));
-  gap:12px;
-  margin:32px 0;
-  padding:0;
-  list-style:none;
-}
-body.barnes-home-typography .about-company__fact {
-  grid-column:span 2;
-  min-width:0;
-  border:1px solid rgba(30,30,30,.18);
-  padding:24px 16px;
-}
-body.barnes-home-typography .about-company__fact:nth-child(4) { grid-column:2 / span 2; }
-body.barnes-home-typography .about-company__fact:nth-child(5) { grid-column:4 / span 2; }
-body.barnes-home-typography .about-company__fact-value { margin:0 0 12px; color:var(--home-brand); font-size:clamp(26px,2.3vw,44px); font-weight:300; line-height:1; white-space:nowrap; }
-body.barnes-home-typography .about-company__fact-label { margin:0; color:var(--home-secondary); font-size:12px; font-weight:400; letter-spacing:.08em; line-height:1.4; text-transform:uppercase; }
-body.barnes-home-typography .about-company__copy { color:var(--home-secondary); font-size:var(--home-lead); font-weight:300; line-height:var(--home-lead-line); }
+body.barnes-home-typography .about-company__copy { margin-top:24px; color:var(--home-secondary); font-size:var(--home-lead); font-weight:300; line-height:var(--home-lead-line); }
 body.barnes-home-typography .about-company__copy-text[hidden] { display:none; }
 body.barnes-home-typography .about-company__copy p { margin:0 0 var(--home-copy-gap); }
 body.barnes-home-typography .about-company__read-more {
@@ -74,14 +55,8 @@ body.barnes-home-typography .about-company__read-more-icon svg { width:100%;heig
 body.barnes-home-typography .about-company__read-more:focus-visible { outline:2px solid var(--home-brand);outline-offset:5px; }
 @media(max-width:1024px) {
  body.barnes-home-typography .about-company__inner { grid-template-columns:1fr;gap:32px; }
- body.barnes-home-typography .about-company__brand { position:static;min-height:160px;max-width:440px;width:100%;margin-inline:auto; }
+ body.barnes-home-typography .about-company__brand { position:static;max-width:280px; }
 }
 @media(max-width:540px) {
- body.barnes-home-typography .about-company__brand { min-height:132px;padding:28px; }
- body.barnes-home-typography .about-company__facts { grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:28px 0; }
- body.barnes-home-typography .about-company__fact,
- body.barnes-home-typography .about-company__fact:nth-child(4),
- body.barnes-home-typography .about-company__fact:nth-child(5) { grid-column:auto;padding:20px 14px; }
- body.barnes-home-typography .about-company__fact-value { font-size:30px; }
- body.barnes-home-typography .about-company__fact-label { font-size:11px; }
+ body.barnes-home-typography .about-company__brand { max-width:220px; }
 }
