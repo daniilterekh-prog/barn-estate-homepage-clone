@@ -13,7 +13,7 @@
     ['.reviews-section__intro', '.reviews-section__title', 'Репутация BARN Estate', '.reviews-section__eyebrow'],
     ['.team-section__intro', '.team-section__title', 'Эксперты по недвижимости'],
     ['.partners-section__intro', '.partners-section__title', 'Международная сеть'],
-    ['.office-contact__copy', 'h2', 'Связь с BARN Estate'],
+    ['.office-contact__copy', 'h2', 'Контакт'],
     ['.news-section__header', '.news-section__title', 'Медиа BARN Estate', '.news-section__eyebrow'],
     ['.newsletter-cta__copy', 'h2', 'Рассылка BARN Estate'],
     ['.about-company__content', '.about-company__title', 'О компании']
@@ -68,6 +68,8 @@
       saleImage.width = saleVariant[1];
       saleImage.height = saleVariant[2];
     }
+    const contactTitle=document.querySelector('.office-contact__copy h2');
+    if(contactTitle && contactTitle.textContent!=='СПОСОБЫ СВЯЗИ С BARN ESTATE')contactTitle.textContent='СПОСОБЫ СВЯЗИ С BARN ESTATE';
     const officeImage=document.querySelector('.office-contact__visual img');
     const officePhoto=saleImageBase+'home-office-estate.webp';
     if(officeImage && officeImage.src!==officePhoto){
