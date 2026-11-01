@@ -1,6 +1,6 @@
 /* LaunchCard: canonical start-sales cards immediately below the Курортная hero. */
 body.barnes-home-typography .barnes-choice {
-  --start-sales-card-height: 438px;
+  --start-sales-card-height: 500px;
   --start-sales-card-pad: 24px;
   --start-sales-accent: #8b1d25;
 }
@@ -323,7 +323,7 @@ body.barnes-home-typography .barnes-choice .home-rec-address span {min-width:0;o
 
 /* More compact recommendation cards on phones. */
 @media(max-width:540px) {
- body.barnes-home-typography .barnes-choice {--start-sales-card-height:360px;}
+ body.barnes-home-typography .barnes-choice {--start-sales-card-height:410px;}
 }
 
 /* Keep carousel controls below the photographs; preserve the native Splide actions. */
