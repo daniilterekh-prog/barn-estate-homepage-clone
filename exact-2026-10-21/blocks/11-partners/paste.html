@@ -657,7 +657,7 @@
   if(host){host.querySelector('input[name=name]')?.focus();return}
   trigger=source;const holder=document.createElement('div');holder.innerHTML=template.replaceAll('__PORTRAIT__',asset);host=holder.firstElementChild;
   const dialog=host.querySelector('[role=dialog]'),title=host.querySelector('.home-owner-form__title'),form=host.querySelector('form'),phone=form.querySelector('[name=phone]'),name=form.querySelector('[name=name]'),consent=form.querySelector('[type=checkbox]');
-  name.required=true;phone.required=true;consent.required=true;
+  name.required=true;phone.required=true;phone.type='tel';consent.required=true;
   title.id='home-owner-form-title';dialog.setAttribute('aria-labelledby',title.id);dialog.setAttribute('tabindex','-1');
   const status=document.createElement('p');status.dataset.ownerStatus='';status.id='home-owner-form-status';status.setAttribute('role','status');status.setAttribute('aria-live','polite');form.append(status);form.setAttribute('aria-describedby',status.id);
   if(context){const hidden=document.createElement('input');hidden.type='hidden';hidden.name='objectUrl';hidden.value=context.href;form.append(hidden)}
@@ -665,8 +665,8 @@
   select(channel);
   host.addEventListener('click',event=>{const button=event.target.closest('[data-channel]');if(button){select(button.dataset.channel);return}if(event.target.closest('.modal__close')||(event.target===host||event.target===dialog||event.target.classList.contains('vfm__overlay')))close()});
   host.addEventListener('keydown',event=>{if(event.key==='Escape'){event.preventDefault();close();return}if(event.key!=='Tab')return;const items=[...host.querySelectorAll('button,a[href],input:not([type=hidden])')].filter(e=>!e.disabled&&e.tabIndex!==-1&&e.getClientRects().length&&!e.closest('[aria-hidden=true]'));const first=items[0],last=items.at(-1);if(event.shiftKey&&document.activeElement===first){event.preventDefault();last.focus()}else if(!event.shiftKey&&document.activeElement===last){event.preventDefault();first.focus()}});
-  form.addEventListener('input',()=>{name.removeAttribute('aria-invalid');phone.removeAttribute('aria-invalid')});
-  form.addEventListener('submit',event=>{event.preventDefault();if(!name.value.trim()){name.setAttribute('aria-invalid','true');status.textContent='Укажите ваше имя.';name.focus();return}if(phone.value.replace(/\D/g,'').length<7){phone.setAttribute('aria-invalid','true');status.textContent='Укажите корректный номер телефона.';phone.focus();return}if(!consent.checked){status.textContent='Подтвердите согласие на обработку персональных данных.';consent.focus();return}if(form.dispatchEvent(new CustomEvent('barn:lead',{bubbles:true,cancelable:true,detail:{data:Object.fromEntries(new FormData(form)),form,status}})))status.textContent='В превью отправка заявок не подключена. Данные не отправлены.'});
+  form.addEventListener('input',event=>{if(event.target.getAttribute('aria-invalid')==='true'){event.target.removeAttribute('aria-invalid');status.textContent=''}});
+  form.addEventListener('submit',event=>{event.preventDefault();for(const field of[name,phone,consent])field.removeAttribute('aria-invalid');if(!name.value.trim()){name.setAttribute('aria-invalid','true');status.textContent='Укажите ваше имя.';name.focus();return}if(phone.value.replace(/\D/g,'').length<7){phone.setAttribute('aria-invalid','true');status.textContent='Укажите корректный номер телефона.';phone.focus();return}if(!consent.checked){consent.setAttribute('aria-invalid','true');status.textContent='Подтвердите согласие на обработку персональных данных.';consent.focus();return}if(form.dispatchEvent(new CustomEvent('barn:lead',{bubbles:true,cancelable:true,detail:{data:Object.fromEntries(new FormData(form)),form,status}})))status.textContent='В превью отправка заявок не подключена. Данные не отправлены.'});
   const quiz=setupQuiz({host,form,title,name,context,intent});
   const inert=[...document.body.children].filter(e=>e instanceof HTMLElement&&!['SCRIPT','STYLE'].includes(e.tagName)).map(e=>[e,e.inert]);const root=document.documentElement,overflow=root.style.overflow,gutter=root.style.scrollbarGutter;const wrapper=document.createElement("div");wrapper.className="barnes-block barnes-home-typography";wrapper.dataset.barnModal="true";wrapper.append(host);document.body.append(wrapper);for(const[e]of inert)e.inert=true;root.style.scrollbarGutter='stable';root.style.overflow='hidden';restore=()=>{for(const[e,value]of inert)e.inert=value;root.style.overflow=overflow;root.style.scrollbarGutter=gutter};
   dialog.focus({preventScroll:true});requestAnimationFrame(()=>{if(dialog.isConnected)quiz.focus()});
@@ -813,5 +813,37 @@
  function start(){document.body.dataset.homeSpacingReady='true';document.querySelectorAll('.barnes-block').forEach(init);syncFavorites();const footer=document.querySelector('.site-footer__callback-btn');if(footer&&!footer.dataset.barnObserved){footer.dataset.barnObserved='true';new IntersectionObserver(([entry])=>document.querySelectorAll('.barnes-block').forEach(r=>r.dataset.homeFooterActionVisible=String(entry.isIntersecting))).observe(footer);}}
  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',start,{once:true});else start();
  window.BarnBlocks={init:start,sliders};
+})();
+
+/* Shared semantic/form annotations; no layout changes and no submission backend. */
+(()=>{
+ if(window.__barnesSemantics)return;
+ const set=(el,name,value)=>{if(el&&el.getAttribute(name)!==value)el.setAttribute(name,value)};
+ function refresh(){
+  if(document.body.classList.contains('barnes-home-typography')||document.body.hasAttribute('data-barn-home-page'))set(document.documentElement,'lang','ru');
+  for(const list of document.querySelectorAll('.splide__list'))set(list,'role','list');
+  for(const slide of document.querySelectorAll('.splide__slide')){
+   set(slide,'role','listitem');
+   const hidden=slide.getAttribute('aria-hidden')==='true';if(slide.inert!==hidden)slide.inert=hidden;
+  }
+  for(const form of document.querySelectorAll('.home-hero-filters__bar')){
+   set(form,'role','search');set(form,'aria-label','Подбор недвижимости');
+   const input=form.querySelector('input[type=search]');set(input,'aria-label','Поиск по ID, названию ЖК или адресу');set(input,'name','query');
+  }
+  for(const form of document.querySelectorAll('.newsletter-form')){
+   set(form,'aria-label','Подписка на новости BARN Estate');
+   const email=form.querySelector('input[type=email]');if(email){email.required=true;set(email,'autocomplete','email')}
+  }
+  for(const form of document.querySelectorAll('.home-owner-form__form')){
+   set(form,'aria-labelledby','home-owner-form-title');
+   for(const name of['name','phone']){const input=form.querySelector('[name="'+name+'"]');if(!input)continue;set(input,'id','home-owner-'+name);set(input,'aria-describedby','home-owner-form-status');set(input.closest('label'),'for',input.id)}
+   const consent=form.querySelector('input[type=checkbox]');if(consent){set(consent,'id','home-owner-consent');set(consent,'name','consent');set(consent,'value','yes');set(consent,'aria-describedby','home-owner-form-status');set(consent.closest('label'),'for',consent.id)}
+  }
+ }
+ let pending=false;
+ const observer=new MutationObserver(()=>{if(pending)return;pending=true;requestAnimationFrame(()=>{pending=false;refresh()})});
+ function start(){refresh();observer.observe(document.body,{subtree:true,childList:true,attributes:true,attributeFilter:['aria-hidden','role']})}
+ window.__barnesSemantics={refresh};
+ if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',start,{once:true});else start();
 })();
 </script>

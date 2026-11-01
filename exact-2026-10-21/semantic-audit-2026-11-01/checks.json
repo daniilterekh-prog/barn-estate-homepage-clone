@@ -1,0 +1,58 @@
+[
+  {
+    "url": "http://localhost:8805",
+    "width": 390,
+    "h1": true,
+    "schema": true,
+    "pageAxe": [],
+    "modalAxe": [],
+    "fieldsLabelled": true,
+    "required": true,
+    "validation": true,
+    "focusTrap": true,
+    "focusReturn": true,
+    "errors": []
+  },
+  {
+    "url": "http://localhost:8805",
+    "width": 1440,
+    "h1": true,
+    "schema": true,
+    "pageAxe": [],
+    "modalAxe": [],
+    "fieldsLabelled": true,
+    "required": true,
+    "validation": true,
+    "focusTrap": true,
+    "focusReturn": true,
+    "errors": []
+  },
+  {
+    "url": "http://localhost:8810/page.html",
+    "width": 390,
+    "h1": true,
+    "schema": true,
+    "pageAxe": [],
+    "modalAxe": [],
+    "fieldsLabelled": true,
+    "required": true,
+    "validation": true,
+    "focusTrap": true,
+    "focusReturn": true,
+    "errors": []
+  },
+  {
+    "url": "http://localhost:8810/page.html",
+    "width": 1440,
+    "h1": true,
+    "schema": true,
+    "pageAxe": [],
+    "modalAxe": [],
+    "fieldsLabelled": true,
+    "required": true,
+    "validation": true,
+    "focusTrap": true,
+    "focusReturn": true,
+    "errors": []
+  }
+]
