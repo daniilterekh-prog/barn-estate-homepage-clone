@@ -8,13 +8,13 @@
   "files": [
     {
       "file": "README.md",
-      "bytes": 4726,
-      "sha256": "f2422ba30aecb895f39333432f16e228ac8bda202901b4e5c95f8b64279b3f35"
+      "bytes": 4928,
+      "sha256": "b5698b71b1247a2995b2754f52cb86d520645bcf72d9d07f22cba08b78f11219"
     },
     {
       "file": "block.css",
-      "bytes": 64617,
-      "sha256": "792e542bd70ea694b556a63548edad536f386972761d2beda339e58e83e9dee6"
+      "bytes": 64615,
+      "sha256": "90416b9fecabfde68434cf4656daa17963579bf268d97db9602eaed584354f26"
     },
     {
       "file": "block.html",
@@ -43,8 +43,8 @@
     },
     {
       "file": "paste.html",
-      "bytes": 1667744,
-      "sha256": "7862ed3eb25088cb0d258fadb69a3d1d9ad745b996a74c8ba2383a0a14229fcf"
+      "bytes": 1667742,
+      "sha256": "e45ecd1999acca25f22c40e55446d35687f44db8dbd75b58256f0530b8808dd5"
     }
   ],
   "assets": [
@@ -103,5 +103,10 @@
       "source": "https://barn-estate.ru/fonts/TildaSans-Light.woff2"
     }
   ],
-  "behavior": "Плавающий эксперт с исходным увеличенным качественным портретом; открывает актуальный квиз."
+  "behavior": "Плавающий эксперт с исходным увеличенным качественным портретом; открывает актуальный квиз.",
+  "avatarCrop": {
+    "width": "170%",
+    "left": "-35%",
+    "top": "-5%"
+  }
 }
