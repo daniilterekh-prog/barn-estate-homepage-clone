@@ -69,7 +69,7 @@
       saleImage.height = saleVariant[2];
     }
     const contactTitle=document.querySelector('.office-contact__copy h2');
-    if(contactTitle && contactTitle.textContent!=='СПОСОБЫ СВЯЗИ С BARN ESTATE')contactTitle.textContent='СПОСОБЫ СВЯЗИ С BARN ESTATE';
+    if(contactTitle && contactTitle.textContent!=='СПОСОБЫ СВЯЗИ С BARN ESTATE')contactTitle.textContent='СПОСОБЫ СВЯЗИ С BARN ESTATE';
     const officeImage=document.querySelector('.office-contact__visual img');
     const officePhoto=saleImageBase+'home-office-estate.webp';
     if(officeImage && officeImage.src!==officePhoto){
