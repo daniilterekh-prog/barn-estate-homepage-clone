@@ -74,6 +74,8 @@ body.barnes-home-typography :is(.services-section__content,.department-card__con
 }
 body.barnes-home-typography .services-section__grid { gap: 2px !important; }
 body.barnes-home-typography .department-card__title { margin: 0 !important; }
+/* Use the content gap once; the captured link added another 15px. */
+body.barnes-home-typography .department-card__link { margin-top: 0 !important; }
 body.barnes-home-typography :is(.office-contact__copy,.newsletter-cta__copy) {
   padding-block: 0 !important;
 }
