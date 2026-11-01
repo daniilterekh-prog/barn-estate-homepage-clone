@@ -1,5 +1,5 @@
 {
-  "base": "http://127.0.0.1:4187/",
+  "base": "http://127.0.0.1:4191/",
   "checks": [
     {
       "entry": "index.html",
@@ -14,38 +14,38 @@
         },
         ".catalog-best-offers": {
           "width": 305,
-          "height": 595.390625,
+          "height": 653.40625,
           "top": 684
         },
         ".catalog-grid": {
           "width": 305,
-          "height": 3085.265625,
-          "top": 1907.171875
+          "height": 3072.4375,
+          "top": 1972.203125
         },
         ".catalog-mode-toolbar": {
-          "width": 274.59375,
-          "height": 307.1875,
-          "top": 2072.34375
+          "width": 261,
+          "height": 329.28125,
+          "top": 2145.390625
         },
         ".catalog-intro": {
           "width": 305,
-          "height": 548.0625,
-          "top": 4992.4375
+          "height": 646.046875,
+          "top": 5044.640625
         },
         ".catalog-consultation": {
           "width": 305,
-          "height": 780.640625,
-          "top": 5540.5
+          "height": 839.03125,
+          "top": 5690.6875
         },
         ".catalog-contact": {
           "width": 305,
-          "height": 686.578125,
-          "top": 12338.515625
+          "height": 746.96875,
+          "top": 12727.015625
         },
         ".site-footer": {
           "width": 305,
-          "height": 1700.875,
-          "top": 13025.09375
+          "height": 1685.484375,
+          "top": 13473.984375
         }
       }
     },
@@ -62,38 +62,38 @@
         },
         ".catalog-best-offers": {
           "width": 375,
-          "height": 595.390625,
+          "height": 653.40625,
           "top": 684
         },
         ".catalog-grid": {
           "width": 375,
-          "height": 3191.0625,
-          "top": 1862.171875
+          "height": 3166.453125,
+          "top": 1930.203125
         },
         ".catalog-mode-toolbar": {
-          "width": 341.84375,
+          "width": 331,
           "height": 307.1875,
-          "top": 2000.953125
+          "top": 2077
         },
         ".catalog-intro": {
           "width": 375,
-          "height": 543.796875,
-          "top": 5053.234375
+          "height": 616.9375,
+          "top": 5096.65625
         },
         ".catalog-consultation": {
           "width": 375,
-          "height": 743.453125,
-          "top": 5597.03125
+          "height": 775.453125,
+          "top": 5713.59375
         },
         ".catalog-contact": {
           "width": 375,
-          "height": 670.390625,
-          "top": 12191.734375
+          "height": 720.578125,
+          "top": 12497.53125
         },
         ".site-footer": {
           "width": 375,
-          "height": 1681.28125,
-          "top": 12862.125
+          "height": 1685.484375,
+          "top": 13218.109375
         }
       }
     },
@@ -110,38 +110,38 @@
         },
         ".catalog-best-offers": {
           "width": 525,
-          "height": 595.390625,
+          "height": 653.40625,
           "top": 684
         },
         ".catalog-grid": {
           "width": 525,
-          "height": 3731.34375,
-          "top": 1839.671875
+          "height": 3728.765625,
+          "top": 1909.203125
         },
         ".catalog-mode-toolbar": {
-          "width": 485.96875,
+          "width": 481,
           "height": 307,
-          "top": 1978.453125
+          "top": 2056
         },
         ".catalog-intro": {
           "width": 525,
-          "height": 513.5625,
-          "top": 5571.015625
+          "height": 592.78125,
+          "top": 5637.96875
         },
         ".catalog-consultation": {
           "width": 525,
-          "height": 743.453125,
-          "top": 6084.578125
+          "height": 775.453125,
+          "top": 6230.75
         },
         ".catalog-contact": {
           "width": 525,
-          "height": 670.390625,
-          "top": 12312.40625
+          "height": 704.390625,
+          "top": 12653.125
         },
         ".site-footer": {
           "width": 525,
-          "height": 1681.28125,
-          "top": 12982.796875
+          "height": 1685.484375,
+          "top": 13357.515625
         }
       }
     },
@@ -158,38 +158,38 @@
         },
         ".catalog-best-offers": {
           "width": 526,
-          "height": 733.09375,
+          "height": 808.40625,
           "top": 644
         },
         ".catalog-grid": {
           "width": 526,
-          "height": 3794.234375,
-          "top": 2053.78125
+          "height": 3803.546875,
+          "top": 2142.40625
         },
         ".catalog-mode-toolbar": {
           "width": 486.90625,
           "height": 320,
-          "top": 2300.0625
+          "top": 2386
         },
         ".catalog-intro": {
           "width": 526,
-          "height": 737.203125,
-          "top": 5848.015625
+          "height": 827.578125,
+          "top": 5945.953125
         },
         ".catalog-consultation": {
           "width": 526,
-          "height": 797.96875,
-          "top": 6585.21875
+          "height": 895.5625,
+          "top": 6773.53125
         },
         ".catalog-contact": {
           "width": 526,
-          "height": 1049.265625,
-          "top": 14088.40625
+          "height": 1242.859375,
+          "top": 14481.25
         },
         ".site-footer": {
           "width": 526,
-          "height": 2039.34375,
-          "top": 15137.671875
+          "height": 2053.34375,
+          "top": 15724.109375
         }
       }
     },
@@ -206,38 +206,38 @@
         },
         ".catalog-best-offers": {
           "width": 753,
-          "height": 733.09375,
+          "height": 888.40625,
           "top": 644
         },
         ".catalog-grid": {
           "width": 753,
-          "height": 3814.828125,
-          "top": 1987.78125
+          "height": 3824.140625,
+          "top": 2156.40625
         },
         ".catalog-mode-toolbar": {
           "width": 705.03125,
           "height": 268,
-          "top": 2188.46875
+          "top": 2354.40625
         },
         ".catalog-intro": {
           "width": 753,
-          "height": 836.09375,
-          "top": 5802.609375
+          "height": 925.578125,
+          "top": 5980.546875
         },
         ".catalog-consultation": {
           "width": 753,
-          "height": 797.96875,
-          "top": 6638.703125
+          "height": 849.96875,
+          "top": 6906.125
         },
         ".catalog-contact": {
           "width": 753,
-          "height": 1049.265625,
-          "top": 13654.609375
+          "height": 1197.265625,
+          "top": 14080.96875
         },
         ".site-footer": {
           "width": 753,
-          "height": 2039.34375,
-          "top": 14703.875
+          "height": 2053.34375,
+          "top": 15278.234375
         }
       }
     },
@@ -254,38 +254,38 @@
         },
         ".catalog-best-offers": {
           "width": 1009,
-          "height": 741.09375,
+          "height": 888.40625,
           "top": 644
         },
         ".catalog-grid": {
           "width": 1009,
-          "height": 4314.890625,
-          "top": 1962.78125
+          "height": 4324.203125,
+          "top": 2123.40625
         },
         ".catalog-mode-toolbar": {
           "width": 927.25,
           "height": 268,
-          "top": 2163.46875
+          "top": 2321.40625
         },
         ".catalog-intro": {
           "width": 1009,
-          "height": 759.984375,
-          "top": 6277.671875
+          "height": 846.984375,
+          "top": 6447.609375
         },
         ".catalog-consultation": {
           "width": 1009,
-          "height": 797.96875,
-          "top": 7037.65625
+          "height": 849.96875,
+          "top": 7294.59375
         },
         ".catalog-contact": {
           "width": 1009,
           "height": 918,
-          "top": 13931.421875
+          "top": 14347.296875
         },
         ".site-footer": {
           "width": 1009,
-          "height": 2039.34375,
-          "top": 14849.421875
+          "height": 2053.34375,
+          "top": 15265.296875
         }
       }
     },
@@ -302,38 +302,38 @@
         },
         ".catalog-best-offers": {
           "width": 1425,
-          "height": 787.09375,
+          "height": 931.875,
           "top": 644
         },
         ".catalog-grid": {
           "width": 1425,
-          "height": 2897.421875,
-          "top": 2005.78125
+          "height": 2920.203125,
+          "top": 2177.34375
         },
         ".catalog-mode-toolbar": {
           "width": 1288.34375,
           "height": 127,
-          "top": 2229.46875
+          "top": 2412.421875
         },
         ".catalog-intro": {
           "width": 1425,
-          "height": 497.109375,
-          "top": 4903.203125
+          "height": 608.0625,
+          "top": 5097.546875
         },
         ".catalog-consultation": {
           "width": 1425,
-          "height": 845.96875,
-          "top": 5400.3125
+          "height": 878.75,
+          "top": 5705.609375
         },
         ".catalog-contact": {
           "width": 1425,
-          "height": 640,
-          "top": 10450.203125
+          "height": 727.046875,
+          "top": 10976.625
         },
         ".site-footer": {
           "width": 1425,
           "height": 1218.5625,
-          "top": 11090.203125
+          "top": 11703.671875
         }
       }
     },
@@ -350,38 +350,38 @@
         },
         ".catalog-best-offers": {
           "width": 1905,
-          "height": 824.09375,
+          "height": 984.09375,
           "top": 694
         },
         ".catalog-grid": {
           "width": 1905,
-          "height": 3345.3125,
-          "top": 2132.984375
+          "height": 3395.3125,
+          "top": 2346.984375
         },
         ".catalog-mode-toolbar": {
           "width": 1705.03125,
           "height": 127,
-          "top": 2371.875
+          "top": 2610.875
         },
         ".catalog-intro": {
           "width": 1905,
-          "height": 565.640625,
-          "top": 5478.296875
+          "height": 631.640625,
+          "top": 5742.296875
         },
         ".catalog-consultation": {
           "width": 1905,
-          "height": 940,
-          "top": 6043.9375
+          "height": 1020,
+          "top": 6373.9375
         },
         ".catalog-contact": {
           "width": 1905,
-          "height": 700,
-          "top": 11587.84375
+          "height": 786.796875,
+          "top": 12267.84375
         },
         ".site-footer": {
           "width": 1905,
           "height": 1271.15625,
-          "top": 12287.84375
+          "top": 13054.640625
         }
       }
     },
@@ -398,38 +398,38 @@
         },
         ".catalog-best-offers": {
           "width": 2545,
-          "height": 824.09375,
+          "height": 984.09375,
           "top": 694
         },
         ".catalog-grid": {
           "width": 2545,
-          "height": 3360.25,
-          "top": 2132.984375
+          "height": 3610.3125,
+          "top": 2346.984375
         },
         ".catalog-mode-toolbar": {
-          "width": 1720,
+          "width": 1920,
           "height": 127,
-          "top": 2371.875
+          "top": 2610.875
         },
         ".catalog-intro": {
           "width": 2545,
-          "height": 569.625,
-          "top": 5493.234375
+          "height": 688.75,
+          "top": 5957.296875
         },
         ".catalog-consultation": {
           "width": 2545,
-          "height": 940,
-          "top": 6062.859375
+          "height": 1020,
+          "top": 6646.046875
         },
         ".catalog-contact": {
           "width": 2545,
-          "height": 700,
-          "top": 11611.28125
+          "height": 786.796875,
+          "top": 12543.25
         },
         ".site-footer": {
           "width": 2545,
           "height": 1271.15625,
-          "top": 12311.28125
+          "top": 13330.046875
         }
       }
     },

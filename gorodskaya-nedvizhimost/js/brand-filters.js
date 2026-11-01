@@ -6,7 +6,7 @@
   css.dataset.barnesBrandFilters = '';
   css.href = new URL('../css/brand-filters.css', document.currentScript.src).href;
   document.head.appendChild(css);
-  var choices = [['selection', 'Выбор BARNES'], ['exclusive', 'Эксклюзив BARNES']];
+  var choices = [['selection', 'Выбор BARN Estate'], ['exclusive', 'Эксклюзив BARN Estate']];
   function flags() { return window.BarnesFilters.getState().brandFlags || []; }
   function group(context) {
     var fieldset = document.createElement('fieldset');

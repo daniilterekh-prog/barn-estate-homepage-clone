@@ -55,7 +55,7 @@
     document.body.classList.add('city-node-ready','barnes-header-template');
     const consultationImage=q('.catalog-consultation__image');
     if(consultationImage) consultationImage.src=new URL('assets/cta-ruslan-unified-v1.webp',document.baseURI).href;
-    [['.catalog-best-offers__title','Новые проекты'],['.catalog-map__title','География'],['.catalog-grid__title','Каталог'],['.departments-section__title','Направления'],['.catalog-faq__title','Экспертиза BARNES']].forEach(([s,t])=>eyebrow(s,t));
+    [['.catalog-best-offers__title','Новые проекты'],['.catalog-map__title','География'],['.catalog-grid__title','Каталог'],['.departments-section__title','Направления'],['.catalog-faq__title','Экспертиза BARN Estate']].forEach(([s,t])=>eyebrow(s,t));
     q('.catalog-grid__title').textContent='Актуальные проекты и лоты';
     all('.catalog-grid .apartment-card').forEach(enhanceLot);
     const template=q('.catalog-grid .apartment-card').closest('.catalog-grid__item');
@@ -110,7 +110,7 @@
   }
   async function setupSharedFilters() {
     for(const file of ['filters-template.js','filters-modal.js','quick-filters.js','brand-filters.js','city-reference-extras.js']) {
-      await new Promise((resolve,reject)=>{const script=document.createElement('script');script.src=new URL('js/'+file,document.baseURI);script.onload=resolve;script.onerror=reject;document.body.append(script)});
+      await new Promise((resolve,reject)=>{const script=document.createElement('script');script.src=new URL('js/'+file+'?v=20261101-home-kit-1',document.baseURI);script.onload=resolve;script.onerror=reject;document.body.append(script)});
     }
     document.body.classList.add('city-reference-synced');
   }
@@ -134,15 +134,15 @@
   function setupSticky() {
     const hero=q('.catalog-hero'),header=q('.layout__header .site-header');if(!hero || !header)return;
     const nav=document.createElement('div');nav.className='catalog-sticky';nav.setAttribute('aria-hidden','true');nav.setAttribute('inert','');
-    const entries=[['Проекты','catalog-new-starts'],['Каталог','catalog-grid'],['О BARNES','catalog-intro'],['Вопросы','catalog-faq']];
-    nav.innerHTML='<div class="catalog-sticky__inner base-container"><nav class="catalog-sticky__nav" aria-label="Навигация по странице"><ul class="catalog-sticky__list"></ul></nav><a class="catalog-sticky__logo" href="https://barn-estate.ru/" aria-label="BARN Estate — на главную"><img alt="BARN Estate" src="https://daniilterekh-prog.github.io/barnes-assets/brand/barn-estate/logo.svg" style="object-fit:contain"></a><div class="catalog-sticky__brand"><button class="catalog-sticky__request" type="button">Оставить заявку</button><nav class="catalog-sticky__messengers" aria-label="Способы связи"></nav></div></div>';
+    const entries=[['Проекты','catalog-new-starts'],['Каталог','catalog-grid'],['О BARN Estate','catalog-intro'],['Вопросы','catalog-faq']];
+    nav.innerHTML='<div class="catalog-sticky__inner base-container"><nav class="catalog-sticky__nav" aria-label="Навигация по странице"><ul class="catalog-sticky__list"></ul></nav><a class="catalog-sticky__logo" href="https://barn-estate.ru/" aria-label="BARN Estate — на главную"><img alt="BARN Estate" src="assets/barn-estate-logo.svg" style="object-fit:contain"></a><div class="catalog-sticky__brand"><button class="catalog-sticky__request" type="button">Оставить заявку</button><nav class="catalog-sticky__messengers" aria-label="Способы связи"></nav></div></div>';
     entries.forEach(([label,id])=>{const li=document.createElement('li');li.className='catalog-sticky__item';const a=document.createElement('a');a.className='catalog-sticky__link';a.href='#'+id;a.textContent=label;li.append(a);q('.catalog-sticky__list',nav).append(li)});
     q('.catalog-sticky__logo img',nav).src=q('.site-header__logo img',header).src;
     all('.catalog-header-contacts a',header).forEach(link=>{const a=link.cloneNode(true);a.className=link.classList.contains('catalog-header-contact--phone')?'catalog-sticky__phone':'catalog-sticky__messenger';q('.site-header__phone-number',a)?.classList.add('catalog-sticky__phone-number');q('.site-header__icon',a)?.classList.add('catalog-sticky__phone-icon');q('.catalog-sticky__messengers',nav).append(a)});
     const panel=q('.catalog-sticky__messengers',nav).cloneNode(true);panel.className='catalog-sticky__contact-panel';panel.id='city-sticky-contacts';panel.hidden=true;q('.catalog-sticky__inner',nav).append(panel);
     const li=document.createElement('li');li.className='catalog-sticky__item catalog-sticky__item--contacts';li.innerHTML='<button class="catalog-sticky__contact-toggle" type="button" aria-label="Показать способы связи" aria-expanded="false" aria-controls="city-sticky-contacts"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.5 9.8 9.8 0 0 1-4-.9L3 21l1.7-4.6A8.4 8.4 0 1 1 21 11.5Z"/><path d="M8 12h.01M12 12h.01M16 12h.01"/></svg></button>';q('.catalog-sticky__list',nav).append(li);
     q('button',li).addEventListener('click',e=>{panel.hidden=!panel.hidden;e.currentTarget.setAttribute('aria-expanded',String(!panel.hidden))});
-    q('.catalog-sticky__request',nav).addEventListener('click',()=>q('.catalog-grid__item[data-listing-mode="lot"] .apartment-card__call-btn')?.click());
+    q('.catalog-sticky__request',nav).setAttribute('aria-haspopup','dialog');
     hero.closest('main').prepend(nav);
     const update=()=>{const visible=scrollY>hero.offsetTop+hero.offsetHeight-120;nav.classList.toggle('catalog-sticky--visible',visible);nav.setAttribute('aria-hidden',String(!visible));nav.toggleAttribute('inert',!visible);header.classList.remove('site-header--scrolled');let active=entries[0][1];entries.forEach(([,id])=>{if(q('#'+id).getBoundingClientRect().top<=140)active=id});all('.catalog-sticky__link',nav).forEach(a=>a.classList.toggle('catalog-sticky__link--active',a.hash==='#'+active))};
     addEventListener('scroll',update,{passive:true});addEventListener('resize',update);update();

@@ -38,7 +38,7 @@ async function images(page){
    await page.locator('[data-map-market=secondary]').click();assert.equal(await page.locator('.map-browser__card').count(),12);
    await page.locator('.map-browser__filter-toggle').click();await page.locator('.hero-filter-modal--drawer').waitFor({state:'visible'});
    await page.keyboard.press('Escape');assert.equal(await page.locator('.map-browser').isVisible(),true);await page.keyboard.press('Escape');
-   await page.locator('.floating-expert__card').click();await page.locator('.catalog-feedback-modal').waitFor({state:'visible'});
+   await page.locator('.floating-expert__card').click();await page.locator('.home-owner-host').waitFor({state:'visible'});
    assert.deepEqual((await images(page)).broken,[]);await page.keyboard.press('Escape');
    const geometry=await page.evaluate(()=>Object.fromEntries(['.catalog-hero','.catalog-best-offers','.catalog-grid','.catalog-mode-toolbar','.catalog-intro','.catalog-consultation','.catalog-contact','.site-footer'].map(s=>{const e=document.querySelector(s),r=e.getBoundingClientRect();return[s,{width:r.width,height:r.height,top:r.y+scrollY}]})));
    report.checks.push({entry:'index.html',width,...data,geometry});

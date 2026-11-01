@@ -6,7 +6,7 @@
   css.rel = 'stylesheet'; css.href = new URL('../css/owner-footer.css', base);
   document.head.append(css);
   var footerScript = document.createElement('script');
-  footerScript.src = new URL('footer-template.js?v=20261012-reference-sync-1', base);
+  footerScript.src = new URL('footer-template.js?v=20261101-home-kit-1', base);
   footerScript.onload = function () {
     var old = document.querySelector('.site-footer'), template = document.createElement('template');
     template.innerHTML = window.BarnesCityFooterTemplate;
@@ -26,7 +26,7 @@
     var callback = document.createElement('button'); callback.type = 'button';
     callback.className = 'catalog-sticky__request catalog-sticky__callback';
     callback.textContent = 'Оставить заявку';
-    callback.setAttribute('aria-haspopup','dialog'); callback.setAttribute('aria-controls','catalog-feedback-modal');
+    callback.setAttribute('aria-haspopup','dialog'); callback.setAttribute('aria-controls','city-request-modal');
     var holder = toggle.closest('li'); actions.append(toggle,callback); holder.remove(); nav.append(actions);
     document.addEventListener('click',function(event){
       var panel=document.querySelector('.catalog-sticky__contact-panel');

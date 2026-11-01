@@ -1,11 +1,12 @@
 /* Component previews expose UI state/events, never pretend to call a production API. */
 (async()=>{
  const host=document.querySelector('#preview'),id=document.body.dataset.cityPreview;
+ document.body.classList.add('city-home-kit');
  const root=new URL('../../',location.href);
- const load=file=>new Promise((resolve,reject)=>{const script=document.createElement('script');script.src=new URL('js/'+file,root);script.onload=resolve;script.onerror=reject;document.body.append(script)});
+ const load=file=>new Promise((resolve,reject)=>{const script=document.createElement('script');script.src=new URL('js/'+file+'?v=20261101-home-kit-1',root);script.onload=resolve;script.onerror=reject;document.body.append(script)});
  if(id==='request-modal'){
    await load('node-modal.js');
-   const button=document.createElement('button');button.className='catalog-sticky__request';button.textContent='Открыть форму';host.append(button);button.click();
+   const button=document.createElement('button');button.className='catalog-sticky__request';button.textContent='Оставить заявку';host.append(button);button.click();
  }else if(id==='filters-modal'){
    await load('filters-template.js');await load('filters-modal.js');
    const button=document.createElement('button');button.className='catalog-mode-detailed-filters';button.textContent='Открыть фильтры';host.append(button);button.click();
@@ -24,11 +25,17 @@
      await load('filters-template.js');await load('filters-modal.js');await load('quick-filters.js');await load('brand-filters.js');
    }
    if(id==='news')await load('news-slider.js');
+   if(id==='start-sales'){
+     host.querySelector('.catalog-best-offers__slider').id='splide01';
+     await load('node-launch.js');
+   }
    if(id==='map'){
      await load('city-map-projects.js');await load('city-map-fullscreen.js');await load('filters-template.js');await load('filters-modal.js');await load('quick-filters.js');await load('brand-filters.js');
    }
    if(['cta-bottom','floating-expert','sticky-nav','card-project','card-lot'].includes(id))await load('node-modal.js');
+   await load('home-kit.js');
  }
  if(id.startsWith('card-')){host.style.maxWidth='440px';host.style.margin='24px auto'}
+ if(id==='card-start-sales')host.classList.add('catalog-best-offers');
  document.body.dataset.previewReady='true';
 })().catch(error=>{document.body.dataset.previewError=error.message;console.error(error)});

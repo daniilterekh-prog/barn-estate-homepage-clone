@@ -74,7 +74,7 @@ const base = process.argv[2] || 'http://127.0.0.1:4186';
       assert.equal(await page.locator('[data-mode=project]').getAttribute('aria-pressed'),'true');
       await page.locator('.floating-expert__close').click();
       await page.locator('.site-footer__callback-btn').click();
-      assert.equal(await page.locator('.catalog-feedback-modal').isVisible(),true);
+      assert.equal(await page.locator('.home-owner-host').isVisible(),true);
       await page.keyboard.press('Escape');
       assert.deepEqual(errors,[]);
       console.log('PASS',width);
