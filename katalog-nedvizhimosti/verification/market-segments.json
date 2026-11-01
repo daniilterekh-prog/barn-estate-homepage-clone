@@ -1,0 +1,178 @@
+{
+  "url": "http://127.0.0.1:8921/katalog-nedvizhimosti/?direction=city",
+  "date": "2026-11-01T21:24:29.308Z",
+  "widths": [
+    {
+      "width": 320,
+      "h": 64,
+      "border": "1px",
+      "gap": "0px",
+      "children": [
+        {
+          "w": 126,
+          "sw": 126,
+          "bg": "rgb(139, 29, 37)"
+        },
+        {
+          "w": 126,
+          "sw": 126,
+          "bg": "rgba(0, 0, 0, 0)"
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "h": 64,
+      "border": "1px",
+      "gap": "0px",
+      "children": [
+        {
+          "w": 161,
+          "sw": 161,
+          "bg": "rgb(139, 29, 37)"
+        },
+        {
+          "w": 161,
+          "sw": 161,
+          "bg": "rgba(0, 0, 0, 0)"
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "width": 540,
+      "h": 64,
+      "border": "1px",
+      "gap": "0px",
+      "children": [
+        {
+          "w": 236,
+          "sw": 236,
+          "bg": "rgb(139, 29, 37)"
+        },
+        {
+          "w": 236,
+          "sw": 236,
+          "bg": "rgba(0, 0, 0, 0)"
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "h": 64,
+      "border": "1px",
+      "gap": "0px",
+      "children": [
+        {
+          "w": 167,
+          "sw": 167,
+          "bg": "rgb(139, 29, 37)"
+        },
+        {
+          "w": 167,
+          "sw": 167,
+          "bg": "rgba(0, 0, 0, 0)"
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "width": 1024,
+      "h": 64,
+      "border": "1px",
+      "gap": "0px",
+      "children": [
+        {
+          "w": 110,
+          "sw": 110,
+          "bg": "rgb(139, 29, 37)"
+        },
+        {
+          "w": 110,
+          "sw": 110,
+          "bg": "rgba(0, 0, 0, 0)"
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "width": 1280,
+      "h": 64,
+      "border": "1px",
+      "gap": "0px",
+      "children": [
+        {
+          "w": 130,
+          "sw": 130,
+          "bg": "rgb(139, 29, 37)"
+        },
+        {
+          "w": 130,
+          "sw": 130,
+          "bg": "rgba(0, 0, 0, 0)"
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "h": 64,
+      "border": "1px",
+      "gap": "0px",
+      "children": [
+        {
+          "w": 147,
+          "sw": 147,
+          "bg": "rgb(139, 29, 37)"
+        },
+        {
+          "w": 147,
+          "sw": 147,
+          "bg": "rgba(0, 0, 0, 0)"
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "width": 1920,
+      "h": 64,
+      "border": "1px",
+      "gap": "0px",
+      "children": [
+        {
+          "w": 198,
+          "sw": 198,
+          "bg": "rgb(139, 29, 37)"
+        },
+        {
+          "w": 198,
+          "sw": 198,
+          "bg": "rgba(0, 0, 0, 0)"
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "width": 2560,
+      "h": 64,
+      "border": "1px",
+      "gap": "0px",
+      "children": [
+        {
+          "w": 225,
+          "sw": 225,
+          "bg": "rgb(139, 29, 37)"
+        },
+        {
+          "w": 225,
+          "sw": 225,
+          "bg": "rgba(0, 0, 0, 0)"
+        }
+      ],
+      "overflow": false
+    }
+  ],
+  "clickAndKeyboard": true
+}
