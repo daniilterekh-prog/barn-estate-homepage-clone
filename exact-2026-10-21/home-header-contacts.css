@@ -30,3 +30,34 @@ body.barnes-home-typography .site-header--scrolled .site-header__messenger[aria-
 body.barnes-home-typography .site-header--scrolled .site-header__messenger[aria-label="MAX"] {order:2;}
 body.barnes-home-typography .site-header--scrolled .site-header__messenger[aria-label="Telegram"] {order:3;}
 body.barnes-home-typography .site-header--scrolled .site-header__phone--icon {order:4;}
+
+/* Give the existing phone glyph the same round 24px footprint as the messengers. */
+body.barnes-home-typography .site-header :is(.site-header__phone--icon,.site-header__mobile-phone),
+body.barnes-home-typography .home-header-contacts-panel a[href^="tel:"] {
+  width:24px;
+  height:24px;
+  min-width:24px;
+  padding:0;
+  border-radius:50%;
+  background:#1e1e1e;
+  color:#fff !important;
+}
+body.barnes-home-typography .site-header :is(.site-header__phone--icon,.site-header__mobile-phone) :is(svg,.site-header__icon),
+body.barnes-home-typography .home-header-contacts-panel a[href^="tel:"] svg {
+  width:14px;
+  height:14px;
+}
+body.barnes-home-typography .site-header :is(.site-header__phone--icon,.site-header__mobile-phone) svg path,
+body.barnes-home-typography .home-header-contacts-panel a[href^="tel:"] svg path {
+  stroke:#fff;
+}
+body.barnes-home-typography .site-header__phone--icon:focus-visible {
+  outline:2px solid #8b1d25;
+  outline-offset:3px;
+}
+/* The compact panel keeps a 24px link target around its existing 20px artwork. */
+body.barnes-home-typography .home-header-contacts-panel a[href^="tel:"] {
+  box-sizing:border-box;
+  padding:2px;
+  background-clip:content-box;
+}
