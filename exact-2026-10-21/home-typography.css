@@ -218,3 +218,14 @@ body.barnes-home-typography .barnes-choice__select-option { font-weight:300 !imp
 body.barnes-home-typography .services-section__card :is(.services-section__card-title,.services-section__link) {
   font-weight: 300 !important;
 }
+
+/* Keep the two Moscow direction labels on one line within their own card padding. */
+body.barnes-home-typography .departments-section__item:nth-child(-n+2) { min-width:0; }
+body.barnes-home-typography .departments-section__item:nth-child(-n+2) .department-card__content {
+  container-type:inline-size;
+}
+body.barnes-home-typography .departments-section__item:nth-child(-n+2) .department-card__title {
+  max-width:none;
+  white-space:nowrap;
+  font-size:min(var(--home-card),7cqw) !important;
+}
