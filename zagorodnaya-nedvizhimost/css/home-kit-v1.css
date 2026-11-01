@@ -124,22 +124,6 @@ html body.country-node-page .catalog-feedback-modal .feedback-modal__submit {
   line-height: 1.1;
 }
 
-html body.country-node-page .catalog-grid .apartment-card__address[class],
-html body.country-node-page .catalog-grid .apartment-card__lotid[class] {
-  color: #656462;
-  font-size: 13px;
-  font-weight: 300;
-  line-height: 18px;
-}
-html body.country-node-page .catalog-grid .listing-card-fact__value {
-  font-size: 16px;
-  line-height: 20px;
-}
-html body.country-node-page .department-card__title[class] {
-  font-weight: 300;
-  letter-spacing: .08em;
-}
-
 @media (min-width: 1441px) {
   html body.country-node-page { --home-action-size: 19px; --home-action-pad: 47px; }
   html body.country-node-page .catalog-intro__title[class] { font-size: 44px; }
@@ -205,5 +189,4 @@ html body.country-node-page .department-card__title[class] {
     min-height: 58px;
     padding-inline: 24px;
   }
-  html body.country-node-page .catalog-grid .listing-card-fact__value { font-size: 13px; line-height: 16.25px; }
 }

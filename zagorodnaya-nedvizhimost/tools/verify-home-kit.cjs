@@ -42,7 +42,7 @@ const near = (actual, expected, label, tolerance = 1) => assert.ok(Math.abs(actu
           introTitle: style('.catalog-intro__title'), introText: style('.catalog-intro__text p'),
           introToggle: style('.catalog-intro__toggle'), mapText: style('.catalog-map__text'),
           footerCTA: style('.site-footer__callback-btn'), channel: style('.catalog-consultation__method'),
-          direction: style('.department-card__title'), overflow: document.documentElement.scrollWidth > innerWidth + 1
+          overflow: document.documentElement.scrollWidth > innerWidth + 1
         };
       });
       const targetGutter = width <= 540 ? 22 : width >= 1921 ? 0 : Math.max(24, Math.min(-26.66667 + width * 0.0659722, 100));
@@ -69,19 +69,9 @@ const near = (actual, expected, label, tolerance = 1) => assert.ok(Math.abs(actu
       near(result.footerCTA.height, width <= 540 ? 58 : 70, `${width}px footer CTA height`);
       near(result.channel.height, 46, `${width}px CTA channel height`);
       near(result.channel.size, width <= 540 ? 18 : 17, `${width}px CTA channel font`);
-      near(result.direction.weight, 300, `${width}px direction title weight`);
       assert.equal(result.overflow, false, `${width}px horizontal overflow`);
 
       await page.locator('[data-country-mode="lot"]').click();
-      const card = await page.locator('.catalog-grid__item:not([hidden]) .apartment-card').first().evaluate(element => {
-        const read = selector => { const css = getComputedStyle(element.querySelector(selector)); return { size: parseFloat(css.fontSize), weight: +css.fontWeight, line: parseFloat(css.lineHeight), color: css.color }; };
-        return { address: read('.apartment-card__address'), fact: read('.listing-card-fact__value') };
-      });
-      near(card.address.size, 13, `${width}px card address size`);
-      near(card.address.weight, 300, `${width}px card address weight`);
-      near(card.address.line, 18, `${width}px card address line`);
-      assert.equal(card.address.color, 'rgb(101, 100, 98)');
-      near(card.fact.size, width <= 540 ? 13 : 16, `${width}px card fact`);
 
       await page.locator('.catalog-mode-toolbar > .catalog-mode-detailed-filters').click();
       const filter = await page.locator('.hero-filter-modal__apply').evaluate(button => ({ height: button.getBoundingClientRect().height, size: parseFloat(getComputedStyle(button).fontSize), radius: parseFloat(getComputedStyle(button).borderRadius) }));
@@ -104,7 +94,23 @@ const near = (actual, expected, label, tolerance = 1) => assert.ok(Math.abs(actu
         near(popup.submit.height, width <= 540 ? 58 : 64, `${width}px popup submit height`);
         await page.keyboard.press('Escape');
       }
-      report.widths.push({ width, gutter: result.gutter, sectionSpace, eyebrowGaps: result.eyebrowGaps.length, card, filter });
+      const cardStyles = await page.evaluate(() => {
+        const kit = document.querySelector('link[href="css/home-kit-v1.css"]');
+        const selectors = ['.apartment-card__name', '.apartment-card__address', '.apartment-card__lotid', '.listing-card-fact__value', '.department-card__title'];
+        const properties = ['fontSize', 'fontWeight', 'lineHeight', 'letterSpacing', 'color', 'backgroundColor', 'borderColor', 'borderRadius', 'padding', 'margin'];
+        const snapshot = () => Object.fromEntries(selectors.map(selector => {
+          const element = document.querySelector(selector);
+          const css = getComputedStyle(element);
+          return [selector, Object.fromEntries(properties.map(property => [property, css[property]]))];
+        }));
+        const withKit = snapshot();
+        kit.disabled = true;
+        const withoutKit = snapshot();
+        kit.disabled = false;
+        return { withKit, withoutKit };
+      });
+      assert.deepEqual(cardStyles.withKit, cardStyles.withoutKit, `${width}px card styles changed by home kit`);
+      report.widths.push({ width, gutter: result.gutter, sectionSpace, eyebrowGaps: result.eyebrowGaps.length, cardsUnchanged: true, filter });
       console.log(`PASS home kit roles ${width}px`);
       await page.close();
     }
