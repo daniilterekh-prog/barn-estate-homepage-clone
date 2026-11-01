@@ -39,8 +39,7 @@ html body.commercial-node .catalog-sticky__request[class]:hover {background:#8b1
 html body.commercial-node :is(.catalog-sticky__request,.feedback-modal__channels button,.hero-filter-modal__apply):focus-visible {outline:2px solid #8b1d25;outline-offset:3px;}
 html body.commercial-node :is(.catalog-header-contact,.site-header__mobile-phone,.catalog-sticky__phone-icon) svg {width:24px;height:24px;}
 html body.commercial-node .catalog-sticky__contact-toggle {border:0;background:transparent;}
-html body.commercial-node .catalog-grid .apartment-card__address[class] {font-size:13px!important;line-height:18px!important;font-weight:300!important;color:#656462!important;}
-@media(min-width:541px){html body.commercial-node .listing-card-fact__value {font-size:16px;line-height:20px;}}
+/* Cards retain their approved pre-kit styling, including addresses and facts. */
 @media(min-width:1441px){body.commercial-node {--commercial-heading:44px;--commercial-action-size:19px;--commercial-action-pad:47px;}}
 @media(min-width:1921px){body.commercial-node {--commercial-gutter:0px;}}
 @media(max-width:1024px){body.commercial-node {--commercial-eyebrow:12px;--commercial-eyebrow-gap:12px;}}
