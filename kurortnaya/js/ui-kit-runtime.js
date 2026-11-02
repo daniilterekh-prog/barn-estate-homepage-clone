@@ -62,6 +62,51 @@
 
   document.head.appendChild(ownerHeaderStyles);
 
+  function makeHeaderContactPanel(contacts, id, className) {
+    var panel = document.createElement('nav');
+    panel.id = id;
+    panel.className = className;
+    panel.hidden = true;
+    panel.setAttribute('aria-label', 'Способы связи');
+    ['wa.me', 'max.ru', 't.me', 'tel:'].forEach(function (channel) {
+      var source = Array.from(contacts.querySelectorAll('a')).find(function (a) {
+        return (a.getAttribute('href') || '').indexOf(channel) !== -1;
+      });
+      if (!source) return;
+      var link = source.cloneNode(true);
+      link.removeAttribute('class');
+      link.querySelectorAll('[class]').forEach(function (child) { child.removeAttribute('class'); });
+      link.querySelectorAll('img').forEach(function (img) { img.alt = ''; img.setAttribute('aria-hidden', 'true'); });
+      panel.appendChild(link);
+    });
+    return panel;
+  }
+
+  function bindHeaderContactPanel(toggle, panel, owner) {
+    function close(restoreFocus) {
+      var wasOpen = !panel.hidden;
+      panel.hidden = true;
+      toggle.setAttribute('aria-expanded', 'false');
+      toggle.setAttribute('aria-label', 'Показать способы связи');
+      if (restoreFocus && wasOpen) toggle.focus({ preventScroll: true });
+    }
+    toggle.addEventListener('click', function () {
+      var opening = panel.hidden;
+      panel.hidden = !opening;
+      toggle.setAttribute('aria-expanded', String(opening));
+      toggle.setAttribute('aria-label', opening ? 'Скрыть способы связи' : 'Показать способы связи');
+    });
+    document.addEventListener('click', function (event) {
+      if (!panel.contains(event.target) && !toggle.contains(event.target) || panel.contains(event.target) && event.target.closest('a')) close(false);
+    });
+    document.addEventListener('keydown', function (event) { if (event.key === 'Escape') close(true); });
+    window.addEventListener('resize', function () { close(false); });
+    new MutationObserver(function () {
+      if (owner.classList.contains('site-header--menu-open') || owner.getAttribute('aria-hidden') === 'true') close(false);
+    }).observe(owner, { attributes: true, attributeFilter: ['class', 'aria-hidden'] });
+    return close;
+  }
+
   function enhanceSiteHeader() {
     var header = document.querySelector('.layout__header .site-header');
     if (!header) return;
@@ -134,28 +179,9 @@
     contactToggle.setAttribute('aria-expanded', 'false');
     contactToggle.setAttribute('aria-controls', 'kurortnaya-hero-contacts');
     contactToggle.innerHTML = '<svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.5 9.8 9.8 0 0 1-4-.9L3 21l1.7-4.6A8.4 8.4 0 1 1 21 11.5Z"/><path d="M8 12h.01M12 12h.01M16 12h.01"/></svg>';
-    var heroPanel = contacts.cloneNode(true);
-    heroPanel.id = 'kurortnaya-hero-contacts';
-    heroPanel.className = 'catalog-header-mobile-panel';
-    heroPanel.hidden = true;
+    var heroPanel = makeHeaderContactPanel(contacts, 'kurortnaya-hero-contacts', 'catalog-header-mobile-panel');
     top.append(contactToggle, heroPanel);
-    function closeHeroContacts(restoreFocus) {
-      var wasOpen = !heroPanel.hidden;
-      heroPanel.hidden = true;
-      contactToggle.setAttribute('aria-expanded', 'false');
-      if (wasOpen && restoreFocus) contactToggle.focus();
-    }
-    contactToggle.addEventListener('click', function () {
-      heroPanel.hidden = !heroPanel.hidden;
-      contactToggle.setAttribute('aria-expanded', String(!heroPanel.hidden));
-    });
-    document.addEventListener('click', function (event) {
-      if (!heroPanel.contains(event.target) && !contactToggle.contains(event.target)) closeHeroContacts(false);
-    });
-    document.addEventListener('keydown', function (event) {
-      if (event.key === 'Escape') closeHeroContacts(true);
-    });
-    window.addEventListener('resize', function () { closeHeroContacts(false); });
+    bindHeaderContactPanel(contactToggle, heroPanel, header);
     var mobilePhone = header.querySelector('.site-header__mobile-phone');
     if (mobilePhone) {
       mobilePhone.classList.add('catalog-primary-call');
@@ -205,15 +231,9 @@
     });
 
     var toggle = sticky.querySelector('.catalog-sticky__contact-toggle');
-    var panel = sticky.querySelector('.catalog-sticky__messengers').cloneNode(true);
-    panel.id = 'kurortnaya-sticky-contacts';
-    panel.className = 'catalog-sticky__contact-panel';
-    panel.hidden = true;
+    var panel = makeHeaderContactPanel(sticky.querySelector('.catalog-sticky__messengers'), 'kurortnaya-sticky-contacts', 'catalog-sticky__contact-panel');
     sticky.querySelector('.catalog-sticky__inner').appendChild(panel);
-    toggle.addEventListener('click', function () {
-      panel.hidden = !panel.hidden;
-      toggle.setAttribute('aria-expanded', String(!panel.hidden));
-    });
+    var closeStickyContacts = bindHeaderContactPanel(toggle, panel, sticky);
     var callback = document.createElement('button');
     callback.type = 'button';
     callback.className = 'catalog-sticky__request catalog-sticky__callback';
@@ -222,8 +242,7 @@
     callback.setAttribute('aria-controls', 'catalog-feedback-modal');
     callback.textContent = 'Оставить заявку';
     callback.addEventListener('click', function () {
-      panel.hidden = true;
-      toggle.setAttribute('aria-expanded', 'false');
+      closeStickyContacts(false);
       if (openContactModal) {
         openContactModal(callback);
         document.querySelector('.catalog-feedback-modal [data-channel="Звонок"]').click();
@@ -234,20 +253,6 @@
     actions.append(toggle, callback);
     sticky.querySelector('.catalog-sticky__item--contacts').remove();
     sticky.querySelector('.catalog-sticky__nav').appendChild(actions);
-    document.addEventListener('click', function (event) {
-      if (!panel.contains(event.target) && !toggle.contains(event.target)) {
-        panel.hidden = true;
-        toggle.setAttribute('aria-expanded', 'false');
-      }
-    });
-    document.addEventListener('keydown', function (event) {
-      if (event.key === 'Escape' && !panel.hidden) {
-        panel.hidden = true;
-        toggle.setAttribute('aria-expanded', 'false');
-        toggle.focus();
-      }
-    });
-
     var frameRequested = false;
 
     function updateStickyHeader() {

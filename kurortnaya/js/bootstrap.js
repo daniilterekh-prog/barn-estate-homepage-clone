@@ -2,7 +2,7 @@
 (function () {
   function startRuntime() {
     var uiKitRuntime = document.createElement('script');
-    uiKitRuntime.src = 'js/ui-kit-runtime.js?v=20261102-brand-intro-3';
+    uiKitRuntime.src = 'js/ui-kit-runtime.js?v=20261102-header-actions-4';
     document.body.appendChild(uiKitRuntime);
   }
   // document.open replaces DOM/listeners but retains window.BarnesFilters.
@@ -17,7 +17,7 @@
       return response.text();
     })
     .then(function (markup) {
-      markup = markup.replace('</body>', '<script src="js/ui-kit-runtime.js?v=20261102-brand-intro-3"><\/script></body>');
+      markup = markup.replace('</body>', '<script src="js/ui-kit-runtime.js?v=20261102-header-actions-4"><\/script></body>');
       document.open();
       document.write(markup);
       document.close();

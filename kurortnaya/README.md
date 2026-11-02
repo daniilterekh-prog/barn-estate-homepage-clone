@@ -56,6 +56,8 @@ node tools/build-page.cjs --check
 
 02.11.2026: исправлена кнопка «Читать далее», полный текст сверен с оригиналом; видимые названия обновлены на BARN Estate, включая отдельные блоки. [Проверка раскрытия и бренда](verification/intro-brand-2026-11-02.json), [источник текста](verification/intro-source-2026-11-02.json).
 
+02.11.2026: блок связи и контурная заявка перенесены с главной в общий `css/header-actions.css`; [прямая сверка9ширин](verification/header-actions-2026-11-02.json). Исправлены скрытый телефон панели, перекрытие бургера и SVG закреплённого хедера.
+
 ## Проверки
 
 `node tools/build-page.cjs --check` сверяет сборку. `node tools/verify-package.cjs http://127.0.0.1:8785/` проверяет папку, отдельно обслуживаемую HTTP-сервером: 8 ширин страницы, 36 превью, изображения, overflow, 404, JS-ошибки и внешние render-зависимости. Playwright задаётся через `PLAYWRIGHT_PATH`; используется существующий Chrome. Отчёт: `verification/package.json`.
