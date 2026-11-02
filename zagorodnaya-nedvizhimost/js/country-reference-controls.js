@@ -60,7 +60,7 @@
       const select=active.nextElementSibling;select.value=value;select.dispatchEvent(new Event('change',{bubbles:true}));active.textContent=select.selectedOptions[0].textContent;active.setAttribute('aria-label',`Сортировка: ${active.textContent}`);
     }else if(key==='type')document.dispatchEvent(new CustomEvent('country-filter-set',{detail:{types:value?[value]:[]}}));
     else if(key==='price')document.dispatchEvent(new CustomEvent('country-filter-set',{detail:{bands:value?[value]:[],priceMin:null,priceMax:null}}));
-    else listing.setSelection(key,value);
+    else { listing.setSelection(key,value); if(key==='bedrooms')document.dispatchEvent(new CustomEvent('country-filter-set',{detail:{bedrooms:value}})); }
     sync();close(true);
   }
   function open(button){
@@ -88,7 +88,7 @@
     for(const [value,label] of [['selection','Выбор BARNES'],['exclusive','Эксклюзив BARNES']]){
       const wrap=document.createElement('label'),input=document.createElement('input'),box=document.createElement('span');
       input.type='checkbox';input.value=value;input.name='brandFlags';box.className='country-brand-filters__box';box.setAttribute('aria-hidden','true');
-      input.addEventListener('change',()=>{state.brandFlags=input.checked?[...new Set([...state.brandFlags,value])]:state.brandFlags.filter(flag=>flag!==value);sync();});
+      input.addEventListener('change',()=>{state.brandFlags=input.checked?[...new Set([...state.brandFlags,value])]:state.brandFlags.filter(flag=>flag!==value);sync();document.dispatchEvent(new CustomEvent('country-brand-change'));});
       wrap.append(input,box,document.createTextNode(label));fieldset.append(wrap);
     }
     return fieldset;
@@ -96,10 +96,10 @@
   function resetMapFilters(){
     close();
     const search=$('.catalog-projects-map__panel-search-input');if(search)search.value='';
-    document.dispatchEvent(new CustomEvent('country-filter-set',{detail:{types:[],bands:[],districts:[],priceMin:null,priceMax:null,areaMin:null,areaMax:null,roomsMin:null,roomsMax:null}}));
-    listing.setSelection('location','');listing.setSelection('bedrooms','');
+    document.dispatchEvent(new CustomEvent('country-filter-set',{detail:{types:[],bands:[],districts:[],bedrooms:'',priceMin:null,priceMax:null,areaMin:null,areaMax:null,roomsMin:null,roomsMax:null}}));
+    listing.setSelection('location','');listing.setSelection('bedrooms','');listing.setSelection('price','');listing.setSelection('query','');
     const sort=listing.getSort();sort.value=sort.options[0].value;sort.dispatchEvent(new Event('change',{bubbles:true}));
-    state.brandFlags=[];sync();
+    state.brandFlags=[];sync();document.dispatchEvent(new CustomEvent('country-brand-change'));
   }
   function mount(){
     const toolbar=$('.catalog-mode-toolbar');
@@ -159,9 +159,9 @@
   });
   document.addEventListener('country-filter-apply',event=>{Object.assign(state,event.detail);sync();});
   document.addEventListener('country-market-change',sync);
-  document.addEventListener('country-map-filter-open',()=>close());
   document.addEventListener('country-filter-open',()=>close());
   document.addEventListener('country-quick-change',event=>{selections[event.detail.key]=event.detail.value;sync();});
+  window.countryReferenceControls={getBrandFlags:()=>[...state.brandFlags],setBrandFlags:flags=>{state.brandFlags=[...flags];sync();document.dispatchEvent(new CustomEvent('country-brand-change'));},reset:resetMapFilters};
   document.addEventListener('scroll',()=>{if(active){const rect=active.getBoundingClientRect();if(rect.bottom<0||rect.top>innerHeight)close();else position();}},true);
   addEventListener('resize',()=>close());
 })();

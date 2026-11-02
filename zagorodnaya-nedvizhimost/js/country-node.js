@@ -77,22 +77,26 @@
   detailed.addEventListener('click', () => document.dispatchEvent(new CustomEvent('country-filter-open', {detail: {trigger: detailed}}))); toolbar.append(detailed); header.after(toolbar);
   const empty = document.createElement('p'); empty.className = 'country-catalog-empty'; empty.setAttribute('role', 'status'); empty.textContent = 'Объектов с такими параметрами нет. Измени фильтры.'; list.after(empty);
   let mode = 'project', expanded = false;
-  const selection = {location: '', price: '', bedrooms: ''};
+  const selection = {location: '', price: '', bedrooms: '', query: ''};
   const more = q('.catalog-grid__more');
   const render = () => {
     let count = 0;
     all(':scope > .catalog-grid__item', list).forEach(item => {
       item.style.display = '';
-      const match = item.dataset.listingMode === mode && (!selection.location || item.dataset.location === selection.location) && (!selection.price || (Number(item.dataset.price) > 0 && Number(item.dataset.price) <= Number(selection.price))) && (!selection.bedrooms || Number.parseInt(item.dataset.bedrooms) >= Number(selection.bedrooms)) && (!window.countryMatchesFullFilter || window.countryMatchesFullFilter(item));
+      const query = selection.query.trim().toLocaleLowerCase('ru');
+      const searchable = [q('.apartment-card__name',item)?.textContent, item.dataset.location, q('.apartment-card__lotid',item)?.textContent].join(' ').toLocaleLowerCase('ru');
+      const match = item.dataset.listingMode === mode && (!selection.location || item.dataset.location === selection.location) && (!selection.price || (Number(item.dataset.price) > 0 && Number(item.dataset.price) <= Number(selection.price))) && (!selection.bedrooms || Number.parseInt(item.dataset.bedrooms) >= Number(selection.bedrooms)) && (!query || searchable.includes(query)) && (!window.countryMatchesFullFilter || window.countryMatchesFullFilter(item));
       item.hidden = !match || (innerWidth < 768 && !expanded && count >= 5);
       if (match) count++;
     });
     empty.hidden = count > 0;
     if (more) more.hidden = expanded || count <= (innerWidth < 768 ? 5 : 100);
     all('[data-country-mode]', toolbar).forEach(b => { const active = b.dataset.countryMode === mode; b.classList.toggle('is-active', active); b.setAttribute('aria-pressed', String(active)); });
+    document.dispatchEvent(new CustomEvent('country-listing-render',{detail:{count,mode}}));
   };
   document.addEventListener('country-filter-apply', event => {
     const s = event.detail;
+    selection.bedrooms = s.bedrooms ?? selection.bedrooms;
     empty.textContent = s.types?.length || s.districts?.length || s.roomsMin != null || s.roomsMax != null
       ? 'В локальных карточках нет данных о типе объекта, районе и количестве комнат. Для поиска по этим параметрам используй расширенный поиск на оригинальном сайте.'
       : 'Объектов с такими параметрами нет. Измени фильтры.';

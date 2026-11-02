@@ -1,0 +1,342 @@
+{
+  "source": "kurortnaya filters 02.11.2026",
+  "widths": [
+    {
+      "width": 320,
+      "layout": {
+        "direction": {
+          "x": 22,
+          "y": 2095.390625,
+          "width": 261,
+          "height": 58,
+          "visible": true
+        },
+        "market": {
+          "x": 22,
+          "y": 2165.390625,
+          "width": 261,
+          "height": 58,
+          "visible": true
+        },
+        "quick": {
+          "x": 22,
+          "y": 2235.390625,
+          "width": 261,
+          "height": 116,
+          "visible": true
+        },
+        "search": {
+          "x": 22,
+          "y": 2363.390625,
+          "width": 203,
+          "height": 58,
+          "visible": true
+        },
+        "detailed": {
+          "x": 225,
+          "y": 2363.390625,
+          "width": 58,
+          "height": 58,
+          "visible": true
+        },
+        "overflow": false,
+        "quickVisible": 4
+      }
+    },
+    {
+      "width": 390,
+      "layout": {
+        "direction": {
+          "x": 22,
+          "y": 2048,
+          "width": 331,
+          "height": 58,
+          "visible": true
+        },
+        "market": {
+          "x": 22,
+          "y": 2118,
+          "width": 331,
+          "height": 58,
+          "visible": true
+        },
+        "quick": {
+          "x": 22,
+          "y": 2188,
+          "width": 331,
+          "height": 116,
+          "visible": true
+        },
+        "search": {
+          "x": 22,
+          "y": 2316,
+          "width": 273,
+          "height": 58,
+          "visible": true
+        },
+        "detailed": {
+          "x": 295,
+          "y": 2316,
+          "width": 58,
+          "height": 58,
+          "visible": true
+        },
+        "overflow": false,
+        "quickVisible": 4
+      }
+    },
+    {
+      "width": 541,
+      "layout": {
+        "direction": {
+          "x": 24,
+          "y": 2327,
+          "width": 478,
+          "height": 58,
+          "visible": true
+        },
+        "market": {
+          "x": 24,
+          "y": 2397,
+          "width": 478,
+          "height": 58,
+          "visible": true
+        },
+        "quick": {
+          "x": 24,
+          "y": 2467,
+          "width": 478,
+          "height": 116,
+          "visible": true
+        },
+        "search": {
+          "x": 24,
+          "y": 2595,
+          "width": 420,
+          "height": 58,
+          "visible": true
+        },
+        "detailed": {
+          "x": 444,
+          "y": 2595,
+          "width": 58,
+          "height": 58,
+          "visible": true
+        },
+        "overflow": false,
+        "quickVisible": 4
+      }
+    },
+    {
+      "width": 768,
+      "layout": {
+        "direction": {
+          "x": 24,
+          "y": 2215.40625,
+          "width": 344.5,
+          "height": 64,
+          "visible": true
+        },
+        "market": {
+          "x": 384.5,
+          "y": 2215.40625,
+          "width": 344.5,
+          "height": 64,
+          "visible": true
+        },
+        "quick": {
+          "x": 24,
+          "y": 2375.40625,
+          "width": 164.25,
+          "height": 64,
+          "visible": true
+        },
+        "search": {
+          "x": 24,
+          "y": 2295.40625,
+          "width": 524.75,
+          "height": 64,
+          "visible": true
+        },
+        "detailed": {
+          "x": 564.75,
+          "y": 2295.40625,
+          "width": 164.25,
+          "height": 64,
+          "visible": true
+        },
+        "overflow": false,
+        "quickVisible": 2
+      }
+    },
+    {
+      "width": 1024,
+      "layout": {
+        "direction": {
+          "x": 40.875,
+          "y": 2190.40625,
+          "width": 223.8125,
+          "height": 64,
+          "visible": true
+        },
+        "market": {
+          "x": 280.6875,
+          "y": 2190.40625,
+          "width": 257.375,
+          "height": 64,
+          "visible": true
+        },
+        "quick": {
+          "x": 40.875,
+          "y": 2270.40625,
+          "width": 723.25,
+          "height": 64,
+          "visible": true
+        },
+        "search": {
+          "x": 554.0625,
+          "y": 2190.40625,
+          "width": 414.0625,
+          "height": 64,
+          "visible": true
+        },
+        "detailed": {
+          "x": 780.125,
+          "y": 2270.40625,
+          "width": 188,
+          "height": 64,
+          "visible": true
+        },
+        "overflow": false,
+        "quickVisible": 2
+      }
+    },
+    {
+      "width": 1440,
+      "layout": {
+        "direction": {
+          "x": 68.328125,
+          "y": 2289.421875,
+          "width": 314.078125,
+          "height": 64,
+          "visible": true
+        },
+        "market": {
+          "x": 398.40625,
+          "y": 2289.421875,
+          "width": 361.203125,
+          "height": 64,
+          "visible": true
+        },
+        "quick": {
+          "x": 68.328125,
+          "y": 2369.421875,
+          "width": 1084.34375,
+          "height": 64,
+          "visible": true
+        },
+        "search": {
+          "x": 775.609375,
+          "y": 2289.421875,
+          "width": 581.0625,
+          "height": 64,
+          "visible": true
+        },
+        "detailed": {
+          "x": 1168.671875,
+          "y": 2369.421875,
+          "width": 188,
+          "height": 64,
+          "visible": true
+        },
+        "overflow": false,
+        "quickVisible": 2
+      }
+    },
+    {
+      "width": 1920,
+      "layout": {
+        "direction": {
+          "x": 99.984375,
+          "y": 2459.875,
+          "width": 418.25,
+          "height": 64,
+          "visible": true
+        },
+        "market": {
+          "x": 534.234375,
+          "y": 2459.875,
+          "width": 481,
+          "height": 64,
+          "visible": true
+        },
+        "quick": {
+          "x": 99.984375,
+          "y": 2539.875,
+          "width": 1501.03125,
+          "height": 64,
+          "visible": true
+        },
+        "search": {
+          "x": 1031.234375,
+          "y": 2459.875,
+          "width": 773.78125,
+          "height": 64,
+          "visible": true
+        },
+        "detailed": {
+          "x": 1617.015625,
+          "y": 2539.875,
+          "width": 188,
+          "height": 64,
+          "visible": true
+        },
+        "overflow": false,
+        "quickVisible": 2
+      }
+    },
+    {
+      "width": 3840,
+      "layout": {
+        "direction": {
+          "x": 952.5,
+          "y": 2459.875,
+          "width": 472,
+          "height": 64,
+          "visible": true
+        },
+        "market": {
+          "x": 1440.5,
+          "y": 2459.875,
+          "width": 542.796875,
+          "height": 64,
+          "visible": true
+        },
+        "quick": {
+          "x": 952.5,
+          "y": 2539.875,
+          "width": 1716,
+          "height": 64,
+          "visible": true
+        },
+        "search": {
+          "x": 1999.296875,
+          "y": 2459.875,
+          "width": 873.203125,
+          "height": 64,
+          "visible": true
+        },
+        "detailed": {
+          "x": 2684.5,
+          "y": 2539.875,
+          "width": 188,
+          "height": 64,
+          "visible": true
+        },
+        "overflow": false,
+        "quickVisible": 2
+      }
+    }
+  ],
+  "errors": []
+}

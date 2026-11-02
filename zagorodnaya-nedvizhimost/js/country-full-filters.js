@@ -23,14 +23,17 @@
   const number = value => value === '' ? null : Number(value.replace(/[^\d.,]/g, '').replace(',', '.'));
   const read = () => Object.fromEntries([
     ...ranges.map(name => [name, number(q(`[name="${name}"]`).value)]),
-    ...['types', 'bands', 'districts'].map(name => [name, all(`[name="${name}"]:checked`).map(input => input.value)])
+    ...['types', 'bands', 'districts'].map(name => [name, all(`[name="${name}"]:checked`).map(input => input.value)]),
+    ['bedrooms', q('[name="bedrooms"]:checked')?.value || '']
   ]);
   const restore = state => {
     ranges.forEach(name => q(`[name="${name}"]`).value = state[name] ?? '');
     ['types', 'bands', 'districts'].forEach(name => all(`[name="${name}"]`).forEach(input => input.checked = (state[name] || []).includes(input.value)));
+    all('[name="bedrooms"]').forEach(input => input.checked = input.value === (state.bedrooms || ''));
   };
   function close() {
     modal.hidden = true;
+    modal.classList.remove('hero-filter-modal--drawer');
     document.body.style.overflow = previousOverflow;
     opener?.setAttribute('aria-expanded', 'false');
     opener?.classList.remove('catalog-hero-filters__filter-icon--active');
@@ -41,6 +44,7 @@
     opener = trigger;
     previousOverflow = document.body.style.overflow;
     restore(applied);
+    modal.classList.toggle('hero-filter-modal--drawer', !!trigger?.closest('.catalog-projects-map'));
     (document.fullscreenElement || document.body).append(modal);
     modal.hidden = false;
     document.body.style.overflow = 'hidden';
@@ -76,6 +80,7 @@
     applied = {...applied, ...event.detail};
     document.dispatchEvent(new CustomEvent('country-filter-apply',{detail:applied}));
   });
+  window.countryFullFilters={getState:()=>({...applied}),reset:()=>document.dispatchEvent(new CustomEvent('country-filter-set',{detail:{types:[],bands:[],districts:[],bedrooms:'',priceMin:null,priceMax:null,areaMin:null,areaMax:null,roomsMin:null,roomsMax:null}}))};
   const hero = document.querySelector('.catalog-hero-filters__filter-icon');
   hero?.addEventListener('click', () => open(hero));
   const listing = document.querySelector('.catalog-mode-detailed-filters');

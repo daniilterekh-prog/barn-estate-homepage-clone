@@ -73,7 +73,7 @@ const near = (actual, expected, label, tolerance = 1) => assert.ok(Math.abs(actu
 
       await page.locator('[data-country-mode="lot"]').click();
 
-      await page.locator('.catalog-mode-toolbar > .catalog-mode-detailed-filters').click();
+      await page.locator('.catalog-mode-toolbar .catalog-mode-detailed-filters').click();
       const filter = await page.locator('.hero-filter-modal__apply').evaluate(button => ({ height: button.getBoundingClientRect().height, size: parseFloat(getComputedStyle(button).fontSize), radius: parseFloat(getComputedStyle(button).borderRadius) }));
       near(filter.height, width <= 540 ? 58 : 70, `${width}px filter apply height`);
       near(filter.size, width <= 540 ? 18 : width <= 1440 ? 17 : 19, `${width}px filter apply font`);

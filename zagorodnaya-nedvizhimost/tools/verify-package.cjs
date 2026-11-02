@@ -68,7 +68,7 @@ for (const match of fs.readFileSync(path.join(root, 'index.html'), 'utf8').match
       await page.locator('[data-country-mode="lot"]').click();
       const lots = width < 768 ? 5 : 12;
       assert.equal(await page.locator('.catalog-grid__item:not([hidden])').count(), lots, `${width}px initial lot count`);
-      await page.locator('.catalog-mode-toolbar > .catalog-mode-detailed-filters').click();
+      await page.locator('.catalog-mode-toolbar .catalog-mode-detailed-filters').click();
       assert.equal(await page.locator('.hero-filter-modal:visible').count(), 1, `${width}px full filters`);
       await page.keyboard.press('Escape');
       assert.equal(await page.locator('.hero-filter-modal:visible').count(), 0, `${width}px filter close`);
