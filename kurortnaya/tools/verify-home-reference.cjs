@@ -23,6 +23,8 @@ try{for(const width of [320,390,540,768,1024,1440,1441,1920,2560,3840]){
   const gap=await page.locator(selector).evaluate(e=>{const prev=e.previousElementSibling;return e.getBoundingClientRect().top-prev.getBoundingClientRect().bottom});near(gap,width<=1024?12:25,'Eyebrow '+selector);
  }
  const container=await get('.catalog-grid__inner');if(width>1920){near(container.width,1920,'Wide container');assert.equal(container.padding,'0px');}if(mobile)assert.ok(container.padding.endsWith('22px'));
+ const listingGap=await page.locator('.catalog-mode-toolbar').evaluate(e=>e.getBoundingClientRect().top-document.querySelector('.catalog-grid__header').getBoundingClientRect().bottom);near(listingGap,mobile?28:40,'Listing heading/content gap');
+ const slider=await get('.catalog-best-offers__slider');near(parseFloat(slider.padding),mobile?28:40,'Start-sales heading/content gap');
  const text=await get('.catalog-intro__text p');assert.equal(text.size,(mobile?14:18)+'px');assert.equal(text.color,'rgb(79, 77, 73)');
  for(const selector of ['.catalog-hero-filters__submit','.catalog-consultation__submit','.catalog-contact__submit','.site-footer__callback-btn']){
   const action=await get(selector);assert.equal(action.size,(mobile?18:wide?19:17)+'px');assert.equal(action.weight,'400');assert.equal(action.radius,'1px');near(action.height,mobile?58:70,'Action '+selector);
@@ -48,7 +50,7 @@ try{for(const width of [320,390,540,768,1024,1440,1441,1920,2560,3840]){
  const modalChannel=await get('.feedback-modal__channels button');assert.equal(modalChannel.size,(mobile?18:17)+'px');assert.equal(modalChannel.radius,'1px');assert.ok(modalChannel.height>=46);
  await page.keyboard.press('Escape');
  await page.evaluate(()=>{document.documentElement.style.scrollBehavior='auto';scrollTo(0,document.querySelector('.catalog-hero').offsetHeight+300)});await page.locator('.catalog-sticky--visible').waitFor();
- if(width>1024){const logo=await get('.catalog-sticky__logo img');near(logo.height,64,'Logo height');near(logo.width,64*327/91.11,'Logo ratio');const request=await get('.catalog-sticky__request');assert.equal(request.background,'rgba(0, 0, 0, 0)');assert.equal(request.radius,'1px');}
+ if(width>1024){const logo=await get('.catalog-sticky__logo img');near(logo.height,48,'Logo height');near(logo.width,48*327/91.11,'Logo ratio');const request=await get('.catalog-sticky__request');assert.equal(request.background,'rgba(0, 0, 0, 0)');assert.equal(request.radius,'1px');}
  assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+1),false,'No overflow');
  if([390,1440,2560,3840].includes(width))await page.screenshot({path:'/tmp/resort-home-kit-'+width+'.png'});
  report.checks.push({width,kit:true,exceptionsPreserved:true,overflow:false});console.log('PASS home kit '+width);await page.close();
