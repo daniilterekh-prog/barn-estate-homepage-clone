@@ -1,0 +1,787 @@
+{
+  "base": "http://127.0.0.1:8921/katalog-nedvizhimosti/",
+  "measurements": [
+    {
+      "width": 320,
+      "direction": "city",
+      "fields": [
+        {
+          "text": "Локация",
+          "captionOffset": 0,
+          "arrowOffset": 3,
+          "contentTop": "0px"
+        },
+        {
+          "text": "Тип",
+          "captionOffset": 0,
+          "arrowOffset": 3,
+          "contentTop": "0px"
+        },
+        {
+          "text": "Стоимость",
+          "captionOffset": 0,
+          "arrowOffset": 3,
+          "contentTop": "0px"
+        },
+        {
+          "text": "Спальни",
+          "captionOffset": 0,
+          "arrowOffset": 3,
+          "contentTop": "0px"
+        }
+      ]
+    },
+    {
+      "width": 320,
+      "direction": "country",
+      "fields": [
+        {
+          "text": "Шоссе",
+          "captionOffset": 0,
+          "arrowOffset": 3,
+          "contentTop": "0px"
+        },
+        {
+          "text": "Тип",
+          "captionOffset": 0,
+          "arrowOffset": 3,
+          "contentTop": "0px"
+        },
+        {
+          "text": "Стоимость",
+          "captionOffset": 0,
+          "arrowOffset": 3,
+          "contentTop": "0px"
+        },
+        {
+          "text": "Площадь дома",
+          "captionOffset": 0,
+          "arrowOffset": 3,
+          "contentTop": "0px"
+        }
+      ]
+    },
+    {
+      "width": 320,
+      "direction": "commercial",
+      "fields": [
+        {
+          "text": "Локация",
+          "captionOffset": 0,
+          "arrowOffset": 3,
+          "contentTop": "0px"
+        },
+        {
+          "text": "Назначение",
+          "captionOffset": 0,
+          "arrowOffset": 3,
+          "contentTop": "0px"
+        },
+        {
+          "text": "Стоимость / месяц",
+          "captionOffset": 0,
+          "arrowOffset": 3,
+          "contentTop": "0px"
+        },
+        {
+          "text": "Площадь",
+          "captionOffset": 0,
+          "arrowOffset": 3,
+          "contentTop": "0px"
+        }
+      ]
+    },
+    {
+      "width": 320,
+      "direction": "resort",
+      "fields": [
+        {
+          "text": "Регион",
+          "captionOffset": 0,
+          "arrowOffset": 3,
+          "contentTop": "0px"
+        },
+        {
+          "text": "Тип",
+          "captionOffset": 0,
+          "arrowOffset": 3,
+          "contentTop": "0px"
+        },
+        {
+          "text": "Стоимость",
+          "captionOffset": 0,
+          "arrowOffset": 3,
+          "contentTop": "0px"
+        },
+        {
+          "text": "Спальни",
+          "captionOffset": 0,
+          "arrowOffset": 3,
+          "contentTop": "0px"
+        }
+      ]
+    },
+    {
+      "width": 320,
+      "direction": "international",
+      "fields": [
+        {
+          "text": "Страна",
+          "captionOffset": 0,
+          "arrowOffset": 3,
+          "contentTop": "0px"
+        },
+        {
+          "text": "Тип",
+          "captionOffset": 0,
+          "arrowOffset": 3,
+          "contentTop": "0px"
+        },
+        {
+          "text": "Стоимость",
+          "captionOffset": 0,
+          "arrowOffset": 3,
+          "contentTop": "0px"
+        },
+        {
+          "text": "Спальни",
+          "captionOffset": 0,
+          "arrowOffset": 3,
+          "contentTop": "0px"
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "direction": "city",
+      "fields": [
+        {
+          "text": "Локация",
+          "captionOffset": 0,
+          "arrowOffset": 3,
+          "contentTop": "0px"
+        },
+        {
+          "text": "Тип",
+          "captionOffset": 0,
+          "arrowOffset": 3,
+          "contentTop": "0px"
+        },
+        {
+          "text": "Стоимость",
+          "captionOffset": 0,
+          "arrowOffset": 3,
+          "contentTop": "0px"
+        },
+        {
+          "text": "Спальни",
+          "captionOffset": 0,
+          "arrowOffset": 3,
+          "contentTop": "0px"
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "direction": "country",
+      "fields": [
+        {
+          "text": "Шоссе",
+          "captionOffset": 0,
+          "arrowOffset": 3,
+          "contentTop": "0px"
+        },
+        {
+          "text": "Тип",
+          "captionOffset": 0,
+          "arrowOffset": 3,
+          "contentTop": "0px"
+        },
+        {
+          "text": "Стоимость",
+          "captionOffset": 0,
+          "arrowOffset": 3,
+          "contentTop": "0px"
+        },
+        {
+          "text": "Площадь дома",
+          "captionOffset": 0,
+          "arrowOffset": 3,
+          "contentTop": "0px"
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "direction": "commercial",
+      "fields": [
+        {
+          "text": "Локация",
+          "captionOffset": 0,
+          "arrowOffset": 3,
+          "contentTop": "0px"
+        },
+        {
+          "text": "Назначение",
+          "captionOffset": 0,
+          "arrowOffset": 3,
+          "contentTop": "0px"
+        },
+        {
+          "text": "Стоимость / месяц",
+          "captionOffset": 0,
+          "arrowOffset": 3,
+          "contentTop": "0px"
+        },
+        {
+          "text": "Площадь",
+          "captionOffset": 0,
+          "arrowOffset": 3,
+          "contentTop": "0px"
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "direction": "resort",
+      "fields": [
+        {
+          "text": "Регион",
+          "captionOffset": 0,
+          "arrowOffset": 3,
+          "contentTop": "0px"
+        },
+        {
+          "text": "Тип",
+          "captionOffset": 0,
+          "arrowOffset": 3,
+          "contentTop": "0px"
+        },
+        {
+          "text": "Стоимость",
+          "captionOffset": 0,
+          "arrowOffset": 3,
+          "contentTop": "0px"
+        },
+        {
+          "text": "Спальни",
+          "captionOffset": 0,
+          "arrowOffset": 3,
+          "contentTop": "0px"
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "direction": "international",
+      "fields": [
+        {
+          "text": "Страна",
+          "captionOffset": 0,
+          "arrowOffset": 3,
+          "contentTop": "0px"
+        },
+        {
+          "text": "Тип",
+          "captionOffset": 0,
+          "arrowOffset": 3,
+          "contentTop": "0px"
+        },
+        {
+          "text": "Стоимость",
+          "captionOffset": 0,
+          "arrowOffset": 3,
+          "contentTop": "0px"
+        },
+        {
+          "text": "Спальни",
+          "captionOffset": 0,
+          "arrowOffset": 3,
+          "contentTop": "0px"
+        }
+      ]
+    },
+    {
+      "width": 540,
+      "direction": "city",
+      "fields": [
+        {
+          "text": "Локация",
+          "captionOffset": 0,
+          "arrowOffset": 3,
+          "contentTop": "0px"
+        },
+        {
+          "text": "Тип",
+          "captionOffset": 0,
+          "arrowOffset": 3,
+          "contentTop": "0px"
+        },
+        {
+          "text": "Стоимость",
+          "captionOffset": 0,
+          "arrowOffset": 3,
+          "contentTop": "0px"
+        },
+        {
+          "text": "Спальни",
+          "captionOffset": 0,
+          "arrowOffset": 3,
+          "contentTop": "0px"
+        }
+      ]
+    },
+    {
+      "width": 540,
+      "direction": "country",
+      "fields": [
+        {
+          "text": "Шоссе",
+          "captionOffset": 0,
+          "arrowOffset": 3,
+          "contentTop": "0px"
+        },
+        {
+          "text": "Тип",
+          "captionOffset": 0,
+          "arrowOffset": 3,
+          "contentTop": "0px"
+        },
+        {
+          "text": "Стоимость",
+          "captionOffset": 0,
+          "arrowOffset": 3,
+          "contentTop": "0px"
+        },
+        {
+          "text": "Площадь дома",
+          "captionOffset": 0,
+          "arrowOffset": 3,
+          "contentTop": "0px"
+        }
+      ]
+    },
+    {
+      "width": 540,
+      "direction": "commercial",
+      "fields": [
+        {
+          "text": "Локация",
+          "captionOffset": 0,
+          "arrowOffset": 3,
+          "contentTop": "0px"
+        },
+        {
+          "text": "Назначение",
+          "captionOffset": 0,
+          "arrowOffset": 3,
+          "contentTop": "0px"
+        },
+        {
+          "text": "Стоимость / месяц",
+          "captionOffset": 0,
+          "arrowOffset": 3,
+          "contentTop": "0px"
+        },
+        {
+          "text": "Площадь",
+          "captionOffset": 0,
+          "arrowOffset": 3,
+          "contentTop": "0px"
+        }
+      ]
+    },
+    {
+      "width": 540,
+      "direction": "resort",
+      "fields": [
+        {
+          "text": "Регион",
+          "captionOffset": 0,
+          "arrowOffset": 3,
+          "contentTop": "0px"
+        },
+        {
+          "text": "Тип",
+          "captionOffset": 0,
+          "arrowOffset": 3,
+          "contentTop": "0px"
+        },
+        {
+          "text": "Стоимость",
+          "captionOffset": 0,
+          "arrowOffset": 3,
+          "contentTop": "0px"
+        },
+        {
+          "text": "Спальни",
+          "captionOffset": 0,
+          "arrowOffset": 3,
+          "contentTop": "0px"
+        }
+      ]
+    },
+    {
+      "width": 540,
+      "direction": "international",
+      "fields": [
+        {
+          "text": "Страна",
+          "captionOffset": 0,
+          "arrowOffset": 3,
+          "contentTop": "0px"
+        },
+        {
+          "text": "Тип",
+          "captionOffset": 0,
+          "arrowOffset": 3,
+          "contentTop": "0px"
+        },
+        {
+          "text": "Стоимость",
+          "captionOffset": 0,
+          "arrowOffset": 3,
+          "contentTop": "0px"
+        },
+        {
+          "text": "Спальни",
+          "captionOffset": 0,
+          "arrowOffset": 3,
+          "contentTop": "0px"
+        }
+      ]
+    },
+    {
+      "width": 767,
+      "direction": "city",
+      "fields": [
+        {
+          "text": "Локация",
+          "captionOffset": 0,
+          "arrowOffset": 5,
+          "contentTop": "0px"
+        },
+        {
+          "text": "Тип",
+          "captionOffset": 0,
+          "arrowOffset": 5,
+          "contentTop": "0px"
+        },
+        {
+          "text": "Стоимость",
+          "captionOffset": 0,
+          "arrowOffset": 5,
+          "contentTop": "0px"
+        },
+        {
+          "text": "Спальни",
+          "captionOffset": 0,
+          "arrowOffset": 5,
+          "contentTop": "0px"
+        }
+      ]
+    },
+    {
+      "width": 767,
+      "direction": "country",
+      "fields": [
+        {
+          "text": "Шоссе",
+          "captionOffset": 0,
+          "arrowOffset": 5,
+          "contentTop": "0px"
+        },
+        {
+          "text": "Тип",
+          "captionOffset": 0,
+          "arrowOffset": 5,
+          "contentTop": "0px"
+        },
+        {
+          "text": "Стоимость",
+          "captionOffset": 0,
+          "arrowOffset": 5,
+          "contentTop": "0px"
+        },
+        {
+          "text": "Площадь дома",
+          "captionOffset": 0,
+          "arrowOffset": 5,
+          "contentTop": "0px"
+        }
+      ]
+    },
+    {
+      "width": 767,
+      "direction": "commercial",
+      "fields": [
+        {
+          "text": "Локация",
+          "captionOffset": 0,
+          "arrowOffset": 5,
+          "contentTop": "0px"
+        },
+        {
+          "text": "Назначение",
+          "captionOffset": 0,
+          "arrowOffset": 5,
+          "contentTop": "0px"
+        },
+        {
+          "text": "Стоимость / месяц",
+          "captionOffset": 0,
+          "arrowOffset": 5,
+          "contentTop": "0px"
+        },
+        {
+          "text": "Площадь",
+          "captionOffset": 0,
+          "arrowOffset": 5,
+          "contentTop": "0px"
+        }
+      ]
+    },
+    {
+      "width": 767,
+      "direction": "resort",
+      "fields": [
+        {
+          "text": "Регион",
+          "captionOffset": 0,
+          "arrowOffset": 5,
+          "contentTop": "0px"
+        },
+        {
+          "text": "Тип",
+          "captionOffset": 0,
+          "arrowOffset": 5,
+          "contentTop": "0px"
+        },
+        {
+          "text": "Стоимость",
+          "captionOffset": 0,
+          "arrowOffset": 5,
+          "contentTop": "0px"
+        },
+        {
+          "text": "Спальни",
+          "captionOffset": 0,
+          "arrowOffset": 5,
+          "contentTop": "0px"
+        }
+      ]
+    },
+    {
+      "width": 767,
+      "direction": "international",
+      "fields": [
+        {
+          "text": "Страна",
+          "captionOffset": 0,
+          "arrowOffset": 5,
+          "contentTop": "0px"
+        },
+        {
+          "text": "Тип",
+          "captionOffset": 0,
+          "arrowOffset": 5,
+          "contentTop": "0px"
+        },
+        {
+          "text": "Стоимость",
+          "captionOffset": 0,
+          "arrowOffset": 5,
+          "contentTop": "0px"
+        },
+        {
+          "text": "Спальни",
+          "captionOffset": 0,
+          "arrowOffset": 5,
+          "contentTop": "0px"
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "direction": "city",
+      "fields": [
+        {
+          "text": "Локация",
+          "captionOffset": 5,
+          "arrowOffset": 5,
+          "contentTop": "5px"
+        },
+        {
+          "text": "Стоимость",
+          "captionOffset": 5,
+          "arrowOffset": 5,
+          "contentTop": "5px"
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "direction": "country",
+      "fields": [
+        {
+          "text": "Шоссе",
+          "captionOffset": 5,
+          "arrowOffset": 5,
+          "contentTop": "5px"
+        },
+        {
+          "text": "Стоимость",
+          "captionOffset": 5,
+          "arrowOffset": 5,
+          "contentTop": "5px"
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "direction": "commercial",
+      "fields": [
+        {
+          "text": "Локация",
+          "captionOffset": 5,
+          "arrowOffset": 5,
+          "contentTop": "5px"
+        },
+        {
+          "text": "Стоимость / месяц",
+          "captionOffset": 5,
+          "arrowOffset": 5,
+          "contentTop": "5px"
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "direction": "resort",
+      "fields": [
+        {
+          "text": "Регион",
+          "captionOffset": 5,
+          "arrowOffset": 5,
+          "contentTop": "5px"
+        },
+        {
+          "text": "Стоимость",
+          "captionOffset": 5,
+          "arrowOffset": 5,
+          "contentTop": "5px"
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "direction": "international",
+      "fields": [
+        {
+          "text": "Страна",
+          "captionOffset": 5,
+          "arrowOffset": 5,
+          "contentTop": "5px"
+        },
+        {
+          "text": "Стоимость",
+          "captionOffset": 5,
+          "arrowOffset": 5,
+          "contentTop": "5px"
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "direction": "city",
+      "fields": [
+        {
+          "text": "Локация",
+          "captionOffset": 5,
+          "arrowOffset": 5,
+          "contentTop": "5px"
+        },
+        {
+          "text": "Стоимость",
+          "captionOffset": 5,
+          "arrowOffset": 5,
+          "contentTop": "5px"
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "direction": "country",
+      "fields": [
+        {
+          "text": "Шоссе",
+          "captionOffset": 5,
+          "arrowOffset": 5,
+          "contentTop": "5px"
+        },
+        {
+          "text": "Стоимость",
+          "captionOffset": 5,
+          "arrowOffset": 5,
+          "contentTop": "5px"
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "direction": "commercial",
+      "fields": [
+        {
+          "text": "Локация",
+          "captionOffset": 5,
+          "arrowOffset": 5,
+          "contentTop": "5px"
+        },
+        {
+          "text": "Стоимость / месяц",
+          "captionOffset": 5,
+          "arrowOffset": 5,
+          "contentTop": "5px"
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "direction": "resort",
+      "fields": [
+        {
+          "text": "Регион",
+          "captionOffset": 5,
+          "arrowOffset": 5,
+          "contentTop": "5px"
+        },
+        {
+          "text": "Стоимость",
+          "captionOffset": 5,
+          "arrowOffset": 5,
+          "contentTop": "5px"
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "direction": "international",
+      "fields": [
+        {
+          "text": "Страна",
+          "captionOffset": 5,
+          "arrowOffset": 5,
+          "contentTop": "5px"
+        },
+        {
+          "text": "Стоимость",
+          "captionOffset": 5,
+          "arrowOffset": 5,
+          "contentTop": "5px"
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "passed": true
+}
