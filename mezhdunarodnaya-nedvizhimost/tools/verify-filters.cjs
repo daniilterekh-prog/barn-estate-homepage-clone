@@ -24,4 +24,4 @@ async function styles(page,selector,keys=props){return page.locator(selector).fi
   await p.locator('.catalog-collections-row [data-catalog-reset]').click();assert.equal(await p.locator('.catalog-mode-switch__button[aria-pressed=true]').count(),1);
  }
  assert.deepEqual(errors,[]);assert.deepEqual(missing,[]);assert.equal(await p.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false);checks.push({width,referenceRoles:true,visibleQuickFields:width<768?4:2,overflow:false,interactions:width===390||width===1440});console.log('PASS catalogue filters',width);await p.close();await ref.close();
- }}finally{await browser.close()}fs.writeFileSync(path.resolve(__dirname,'../verification/filters-resort-2026-11-02.json'),JSON.stringify({reference,checks},null,2)+'\n')})().catch(e=>{console.error(e);process.exitCode=1});
+ }}finally{await browser.close()}fs.writeFileSync(path.resolve(__dirname,'../verification/filters-resort-2026-11-02.json'),JSON.stringify({base,reference,checks},null,2)+'\n')})().catch(e=>{console.error(e);process.exitCode=1});
