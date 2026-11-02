@@ -1,0 +1,19 @@
+/* Commercial differences only; card rules deliberately absent. */
+body.commercial-node{--resort-content-gap:var(--commercial-content-gap,40px)}
+html body.commercial-node .catalog-mode-toolbar[class][class]{display:flex!important;flex-direction:column;align-items:stretch;gap:16px}
+@media(min-width:768px) and (max-width:1023px){html body.commercial-node .catalog-mode-toolbar[class][class]{display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}}
+html body.commercial-node .catalog-toolbar__secondary .catalog-mode-filters[class][class]{grid-template-columns:repeat(4,minmax(0,1fr))}
+html body.commercial-node .catalog-mode-filters>.catalog-quick-filters__item[class]{display:block!important;order:0!important}
+html body.commercial-node .catalog-toolbar__secondary .catalog-mode-filters>.catalog-quick-filters__item{border-left:1px solid #e4e4e4}
+html body.commercial-node .catalog-toolbar__secondary .catalog-mode-filters>.catalog-quick-filters__item:first-child{border-left:0}
+html body.commercial-node .catalog-mode-filters[class][class]{width:100%}
+html body.commercial-node .catalog-result-summary .catalog-grid__sort[class]{grid-area:auto;transform:none;margin:0}
+html body.commercial-node .catalog-toolbar__secondary .catalog-mode-filters[class][class]{grid-area:auto}
+html body.commercial-node .catalog-mode-toolbar .catalog-direction{min-width:0}
+@media(max-width:767px){
+ html body.commercial-node .catalog-mode-toolbar[class][class]{display:grid!important;grid-template-columns:minmax(0,1fr) 58px;gap:12px 0}
+ html body.commercial-node .catalog-toolbar__secondary .catalog-mode-filters[class][class]{grid-template-columns:repeat(2,minmax(0,1fr));grid-column:1/-1!important;grid-row:3!important}
+ html body.commercial-node .catalog-toolbar__secondary .catalog-mode-filters>.catalog-quick-filters__item:nth-child(odd){border-left:0}
+ html body.commercial-node .catalog-toolbar__secondary .catalog-search-row{grid-column:1!important;grid-row:4!important}
+ html body.commercial-node .catalog-toolbar__secondary .catalog-mode-detailed-filters[class][class]{grid-column:2!important;grid-row:4!important}
+}

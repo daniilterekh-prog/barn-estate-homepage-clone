@@ -1,0 +1,89 @@
+{
+  "base": "http://127.0.0.1:8793/",
+  "reference": "http://127.0.0.1:8794/",
+  "checks": [
+    {
+      "width": 320,
+      "dialog": {
+        "width": 320,
+        "bg": "rgb(255, 255, 255)"
+      },
+      "cardsUnchanged": true,
+      "quickStyleMatchesResort": true
+    },
+    {
+      "width": 390,
+      "dialog": {
+        "width": 390,
+        "bg": "rgb(255, 255, 255)"
+      },
+      "cardsUnchanged": true,
+      "quickStyleMatchesResort": true
+    },
+    {
+      "width": 540,
+      "dialog": {
+        "width": 540,
+        "bg": "rgb(255, 255, 255)"
+      },
+      "cardsUnchanged": true,
+      "quickStyleMatchesResort": true
+    },
+    {
+      "width": 768,
+      "dialog": {
+        "width": 640,
+        "bg": "rgb(255, 255, 255)"
+      },
+      "cardsUnchanged": true,
+      "quickStyleMatchesResort": true
+    },
+    {
+      "width": 1024,
+      "dialog": {
+        "width": 640,
+        "bg": "rgb(255, 255, 255)"
+      },
+      "cardsUnchanged": true,
+      "quickStyleMatchesResort": true
+    },
+    {
+      "width": 1440,
+      "dialog": {
+        "width": 640,
+        "bg": "rgb(255, 255, 255)"
+      },
+      "cardsUnchanged": true,
+      "quickStyleMatchesResort": true
+    },
+    {
+      "width": 1920,
+      "dialog": {
+        "width": 640,
+        "bg": "rgb(255, 255, 255)"
+      },
+      "cardsUnchanged": true,
+      "quickStyleMatchesResort": true
+    },
+    {
+      "width": 2560,
+      "dialog": {
+        "width": 640,
+        "bg": "rgb(255, 255, 255)"
+      },
+      "cardsUnchanged": true,
+      "quickStyleMatchesResort": true
+    },
+    {
+      "width": 3840,
+      "dialog": {
+        "width": 640,
+        "bg": "rgb(255, 255, 255)"
+      },
+      "cardsUnchanged": true,
+      "quickStyleMatchesResort": true
+    }
+  ],
+  "errors": [],
+  "passed": true
+}

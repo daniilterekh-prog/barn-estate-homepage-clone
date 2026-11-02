@@ -50,7 +50,7 @@
     }
   });
   function mountSelectDropdowns() {
-    document.querySelectorAll('.catalog-mode-toolbar .catalog-grid__sort select, .map-browser select[data-filter]').forEach(function (select) {
+    document.querySelectorAll('.catalog-grid__sort select, .catalog-department select, .map-browser select[data-filter]').forEach(function (select) {
       if (select.dataset.customDropdownReady || select.dataset.sharedMapQuick) return;
       select.dataset.customDropdownReady = 'true';
       var button = document.createElement('button');
@@ -201,7 +201,7 @@
     var sortButton = event.target.closest('.resort-sort-trigger, .resort-select-trigger');
     if (sortButton) { event.preventDefault(); open(sortButton,selectConfigs.get(sortButton)); return; }
     var button = event.target.closest('.catalog-mode-filters .catalog-quick-filters__button');
-    if (button) { event.preventDefault(); update(); open(button,buttons().indexOf(button)); }
+    if (button) { event.preventDefault(); update(); open(button,button.dataset.quickIndex===undefined?buttons().indexOf(button):Number(button.dataset.quickIndex)); }
     else if (!popup.contains(event.target)) close(false);
   });
   popup.addEventListener('keydown',function (event) {

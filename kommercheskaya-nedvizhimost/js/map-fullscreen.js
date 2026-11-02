@@ -159,9 +159,16 @@
     document.body.style.overflow = previousOverflow;
     inertElements.forEach(function (entry) { entry.element.inert = entry.value; });
     inertElements = [];
-    trigger.focus({ preventScroll: true });
+    returnFocus.setAttribute('aria-expanded','false');
+    returnFocus.focus({ preventScroll: true });
   }
-  trigger.addEventListener('click', function () {
+  var returnFocus=trigger;
+  function open(opener) {
+    if(!dialog.hidden)return;
+    returnFocus=opener||trigger;
+    if(!dialog.id)dialog.id='commercial-map-browser';
+    returnFocus.setAttribute('aria-controls',dialog.id);
+    returnFocus.setAttribute('aria-expanded','true');
     previousOverflow = document.body.style.overflow;
     Array.from(document.body.children).forEach(isolate);
     observer.observe(document.body, { childList: true });
@@ -171,7 +178,9 @@
     expand(false);
     render();
     dialog.querySelector('.map-browser__close').focus();
-  });
+  }
+  trigger.addEventListener('click',function(){open(trigger);});
+  window.BarnesMapBrowser={open:open,close:close};
   dialog.querySelector('.map-browser__close').addEventListener('click', close);
   handle.addEventListener('click', function () { expand(handle.getAttribute('aria-expanded') !== 'true'); });
   query.addEventListener('focus', function () { if (window.innerWidth <= 540) expand(true); });
