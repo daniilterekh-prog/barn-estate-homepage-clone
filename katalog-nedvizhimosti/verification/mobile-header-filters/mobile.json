@@ -1,0 +1,249 @@
+{
+  "base": "http://127.0.0.1:8921/katalog-nedvizhimosti/",
+  "date": "2026-11-02T15:45:46.865Z",
+  "checks": [
+    "five widths match homepage header; 48px threshold, menu/contact focus, hit testing, resize and Escape",
+    "25 direction/width cases: all four touch quick dropdowns, 2x2 grid, state and overflow",
+    "phone DOM/Tab order follows four quick fields, search and contextual full form",
+    "767/768 layout/DOM boundary returns to desktop composition without duplication"
+  ],
+  "measurements": [
+    {
+      "width": 320,
+      "header": {
+        "x": 0,
+        "y": 0,
+        "width": 320,
+        "height": 77,
+        "top": 0,
+        "right": 320,
+        "bottom": 77,
+        "left": 0
+      },
+      "logo": {
+        "x": 95.390625,
+        "y": 20,
+        "width": 129.203125,
+        "height": 36,
+        "top": 20,
+        "right": 224.59375,
+        "bottom": 56,
+        "left": 95.390625
+      },
+      "burger": {
+        "x": 22,
+        "y": 16,
+        "width": 44,
+        "height": 44,
+        "top": 16,
+        "right": 66,
+        "bottom": 60,
+        "left": 22
+      },
+      "top": {
+        "x": 22,
+        "y": 16,
+        "width": 276,
+        "height": 61,
+        "top": 16,
+        "right": 298,
+        "bottom": 77,
+        "left": 22
+      },
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "header": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 77,
+        "top": 0,
+        "right": 390,
+        "bottom": 77,
+        "left": 0
+      },
+      "logo": {
+        "x": 130.390625,
+        "y": 20,
+        "width": 129.203125,
+        "height": 36,
+        "top": 20,
+        "right": 259.59375,
+        "bottom": 56,
+        "left": 130.390625
+      },
+      "burger": {
+        "x": 22,
+        "y": 16,
+        "width": 44,
+        "height": 44,
+        "top": 16,
+        "right": 66,
+        "bottom": 60,
+        "left": 22
+      },
+      "top": {
+        "x": 22,
+        "y": 16,
+        "width": 346,
+        "height": 61,
+        "top": 16,
+        "right": 368,
+        "bottom": 77,
+        "left": 22
+      },
+      "overflow": false
+    },
+    {
+      "width": 540,
+      "header": {
+        "x": 0,
+        "y": 0,
+        "width": 540,
+        "height": 77,
+        "top": 0,
+        "right": 540,
+        "bottom": 77,
+        "left": 0
+      },
+      "logo": {
+        "x": 205.390625,
+        "y": 20,
+        "width": 129.203125,
+        "height": 36,
+        "top": 20,
+        "right": 334.59375,
+        "bottom": 56,
+        "left": 205.390625
+      },
+      "burger": {
+        "x": 22,
+        "y": 16,
+        "width": 44,
+        "height": 44,
+        "top": 16,
+        "right": 66,
+        "bottom": 60,
+        "left": 22
+      },
+      "top": {
+        "x": 22,
+        "y": 16,
+        "width": 496,
+        "height": 61,
+        "top": 16,
+        "right": 518,
+        "bottom": 77,
+        "left": 22
+      },
+      "overflow": false
+    },
+    {
+      "width": 547,
+      "header": {
+        "x": 0,
+        "y": 0,
+        "width": 541,
+        "height": 111,
+        "top": 0,
+        "right": 541,
+        "bottom": 111,
+        "left": 0
+      },
+      "logo": {
+        "x": 184.359375,
+        "y": 32,
+        "width": 172.265625,
+        "height": 48,
+        "top": 32,
+        "right": 356.625,
+        "bottom": 80,
+        "left": 184.359375
+      },
+      "burger": {
+        "x": 24,
+        "y": 34,
+        "width": 44,
+        "height": 44,
+        "top": 34,
+        "right": 68,
+        "bottom": 78,
+        "left": 24
+      },
+      "top": {
+        "x": 24,
+        "y": 32,
+        "width": 493,
+        "height": 79,
+        "top": 32,
+        "right": 517,
+        "bottom": 111,
+        "left": 24
+      },
+      "overflow": false
+    },
+    {
+      "width": 773,
+      "header": {
+        "x": 0,
+        "y": 0,
+        "width": 767,
+        "height": 111,
+        "top": 0,
+        "right": 767,
+        "bottom": 111,
+        "left": 0
+      },
+      "logo": {
+        "x": 297.359375,
+        "y": 32,
+        "width": 172.265625,
+        "height": 48,
+        "top": 32,
+        "right": 469.625,
+        "bottom": 80,
+        "left": 297.359375
+      },
+      "burger": {
+        "x": 24,
+        "y": 34,
+        "width": 44,
+        "height": 44,
+        "top": 34,
+        "right": 68,
+        "bottom": 78,
+        "left": 24
+      },
+      "top": {
+        "x": 24,
+        "y": 32,
+        "width": 719,
+        "height": 79,
+        "top": 32,
+        "right": 743,
+        "bottom": 111,
+        "left": 24
+      },
+      "overflow": false
+    }
+  ],
+  "axe": [
+    {
+      "name": "menu contacts 390",
+      "violations": []
+    },
+    {
+      "name": "mobile filters 390",
+      "violations": []
+    },
+    {
+      "name": "mobile filters 767",
+      "violations": []
+    }
+  ],
+  "errors": [],
+  "http": [],
+  "passed": true
+}

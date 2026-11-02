@@ -115,3 +115,16 @@ html body.catalog-listing-page .catalog-mode-detailed-filters__label{white-space
 
 @media(max-width:767px){.catalog-active-filters{width:100%;flex:none}}
 html body.catalog-listing-page .resort-filters .ui-checkbox--chip:has(input:checked):hover .ui-checkbox__label{color:#fff!important}
+
+/* Restore all four quick parameters on phones in a shared 2x2 grid. */
+@media(max-width:767px){
+ html body.catalog-listing-page .catalog-mode-toolbar>.catalog-toolbar__secondary>.catalog-mode-filters[class][class]{display:grid;grid-column:1/-1;grid-row:3;grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:repeat(2,minmax(0,1fr));height:116px}
+ html body.catalog-listing-page .catalog-toolbar__secondary .catalog-mode-filters>.catalog-quick-filters__item[class]{display:block;height:auto;min-height:0;border:0}
+ html body.catalog-listing-page .catalog-toolbar__secondary .catalog-mode-filters>.catalog-quick-filters__item:nth-child(even){border-left:1px solid #e4e4e4}
+ html body.catalog-listing-page .catalog-toolbar__secondary .catalog-mode-filters>.catalog-quick-filters__item:nth-child(n+3){border-top:1px solid #e4e4e4}
+ html body.catalog-listing-page .catalog-toolbar__secondary .catalog-mode-filters .catalog-quick-filters__button{height:100%;padding:0 12px;gap:8px}
+ html body.catalog-listing-page .catalog-toolbar__secondary .catalog-mode-filters .catalog-quick-filters__content{max-width:calc(100% - 20px)}
+ html body.catalog-listing-page .catalog-toolbar__secondary .catalog-mode-filters .catalog-quick-filters__caption{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden}
+ html body.catalog-listing-page .catalog-mode-toolbar>.catalog-toolbar__secondary>.catalog-search-row[class][class]{display:flex;grid-column:1;grid-row:4;height:58px;min-width:0;margin:0}
+ html body.catalog-listing-page .catalog-mode-toolbar>.catalog-toolbar__secondary>.catalog-mode-detailed-filters[class][class]{grid-row:4}
+}

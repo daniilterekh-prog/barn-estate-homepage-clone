@@ -70,5 +70,17 @@
       "Hover/focus, arrow keys, Escape, outside click, touch and resize handling",
       "Removed the extra bottom border below the navigation row"
     ]
+  },
+  "mobileHeaderUpdate": {
+    "date": "2026-11-02",
+    "source": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/",
+    "measurements": "../verification/mobile-header-filters/home-reference.json",
+    "scope": "Up to 767px: single header row; up to540px logo36/header77, 541–767 logo48/header111",
+    "adaptations": [
+      "Dark ink on the white catalogue page",
+      "Same 48px contact threshold and contacts available in the full menu",
+      "Full menu offset follows top-row resize; contact popover above menu with keyboard/focus support",
+      "Desktop section navigation preserved"
+    ]
   }
 }
