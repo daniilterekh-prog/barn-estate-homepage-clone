@@ -217,12 +217,15 @@
     const footerColumns = [...document.querySelectorAll('.site-footer__column')]
     if (!header || !inner || !footerColumns.length) return
 
+    // Sibling previews retain the current site prefix, including GitHub Pages.
+    // Media/about/owners have no local page here: keep their real destinations.
+    const siblingPage = path => new URL(`../${path}/`, document.currentScript.src).href
     const topLevelLinks = {
-      'Москва': 'https://barn-estate.ru/gorodskaya-nedvizhimost/',
-      'Загородная': 'https://barn-estate.ru/zagorodnaya-nedvizhimost/',
-      'Коммерческая': 'https://barn-estate.ru/kommercheskaya-nedvizhimost/',
-      'Курортная': 'https://barn-estate.ru/kurortnaya/',
-      'Зарубежная': 'https://barn-estate.ru/mezhdunarodnaya-nedvizhimost/',
+      'Москва': siblingPage('gorodskaya-nedvizhimost'),
+      'Загородная': siblingPage('zagorodnaya-nedvizhimost'),
+      'Коммерческая': siblingPage('kommercheskaya-nedvizhimost'),
+      'Курортная': siblingPage('kurortnaya'),
+      'Зарубежная': siblingPage('mezhdunarodnaya-nedvizhimost'),
       'Санкт-Петербург': 'https://barnes-spb.ru/',
       'Медиа': 'https://barn-estate.ru/media/',
       'О BARNES': 'https://barn-estate.ru/mir-barnes/',

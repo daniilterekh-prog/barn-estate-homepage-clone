@@ -107,6 +107,33 @@ body.vavilova-home-kit .newsletter-form__note {
 }
 body.vavilova-home-kit :is(.detail-about__toggle,.detail-architecture__more,.lot-developer__toggle,
   .detail-location__category,.vp-cta):focus-visible { outline: 2px solid #8b1d25; outline-offset: 3px; }
+/* The hero header must expose section links on laptop widths as well.
+ * Retain the existing compact/sticky and mobile-menu behavior. */
+@media (min-width: 1025px) {
+  body.vavilova-home-kit .site-header .site-header__nav { display: flex; }
+  body.vavilova-home-kit .site-header .site-header__nav-list {
+    column-gap: clamp(10px, calc(5vw - 40px), 28px);
+    row-gap: 8px;
+  }
+  body.vavilova-home-kit .site-header .site-header__nav-link {
+    display: inline-flex; align-items: center; min-height: 44px; white-space: nowrap;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1200px) {
+  body.vavilova-home-kit .site-header__nav-link { font-size: 12px; }
+}
+/* A plain superscript count beside the heart, without a filled badge.
+ * No radius exception is needed: remove the badge itself. */
+body.vavilova-home-kit .site-header .site-header__favorites-count {
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  color: inherit;
+  min-width: 0; width: auto; height: auto;
+  padding: 0;
+  font-size: 11px; line-height: 1;
+  top: -4px; right: -6px;
+}
 @media (min-width: 1441px) {
   body.vavilova-home-kit { --vav-home-heading: 44px; }
 }
