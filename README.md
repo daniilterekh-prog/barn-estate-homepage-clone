@@ -1,5 +1,7 @@
 # BARN Estate — страницы основного сайта
 
+- [Медиа — визуальное превью](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/media/) — точная копия, экспорт 02.11.2026 из barnes-sites; без отправки форм.
+
 - [Актуальный общий лот: UI-кит главной v1.0.0](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/stranitsa-lota/) — экспорт01.11.2026 из barnes-sites, источник `b80dd67`; отдельный тип страницы, без изменения главной.
 
 - [Коммерческая: UI-кит главной v1.0.0, 01.11.2026](kommercheskaya-nedvizhimost/HOME-KIT.md) — синхронизированное самодостаточное превью; рабочие исходники в barnes-sites/main-site/pages/commercial.
