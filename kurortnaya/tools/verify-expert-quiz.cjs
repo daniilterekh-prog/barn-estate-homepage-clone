@@ -1,0 +1,40 @@
+const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
+const {chromium}=require(process.env.PLAYWRIGHT_PATH||'/home/daniil/Documents/Codex/2026-10-11/firecrawl/work/web-capture-toolkit/node_modules/playwright');
+const root=path.resolve(__dirname,'..'),base=process.argv[2]||'http://127.0.0.1:8875/kurortnaya/';
+(async()=>{const browser=await chromium.launch({executablePath:'/usr/bin/google-chrome'}),checks=[],errors=[],posts=[];try{
+ for(const [width,height] of [[320,640],[390,844],[540,900],[768,900],[1024,900],[1440,1000],[1920,1080],[2560,1440],[3840,1600],[844,390]]){
+  const p=await browser.newPage({viewport:{width,height}});p.on('pageerror',e=>errors.push(e.message));p.on('request',r=>{if(r.method()==='POST')posts.push(r.url())});
+  await p.goto(base,{waitUntil:'networkidle'});await p.locator('[data-brand-context=listing]').waitFor();
+  const trigger=p.locator('.floating-expert__card');await trigger.click();const m=p.locator('.catalog-feedback-modal'),next=m.locator('[data-quiz-next]'),back=m.locator('.resort-quiz__back');
+  await m.waitFor({state:'visible'});assert.equal(await m.getAttribute('data-quiz-step'),'goal');assert.equal(await next.isDisabled(),true);
+  assert.equal(await m.locator('.feedback-modal__title').evaluate(e=>e===document.activeElement),true);
+  assert.equal(await p.locator('#__nuxt').evaluate(e=>e.inert),true,'Background inert');
+  const h=await m.locator('.modal__content').evaluate(e=>e.getBoundingClientRect().height);
+  await m.getByRole('button',{name:'Для инвестиций',exact:true}).click();await next.click();assert.equal(await next.isDisabled(),true);
+  await m.getByRole('button',{name:'Алтай',exact:true}).click();await next.click();assert.equal(await next.isDisabled(),true);
+  assert.deepEqual(await m.locator('[name=quizCurrency] option').allTextContents(),['₽','$','€']);
+  await m.locator('[name=quizBudget]').fill('30–50 млн');await m.locator('[name=quizCurrency]').selectOption('€');await next.click();
+  assert.equal(await m.getAttribute('data-quiz-step'),'contact');assert.match(await m.locator('.resort-quiz__summary').innerText(),/Для инвестиций · Алтай · 30–50 млн €/);
+  assert.ok(Math.abs(await m.locator('.modal__content').evaluate(e=>e.getBoundingClientRect().height)-h)<1,'Stable dialog height');
+  await back.click();assert.equal(await m.locator('[name=quizBudget]').inputValue(),'30–50 млн');assert.equal(await m.locator('[name=quizCurrency]').inputValue(),'€');
+  await back.click();assert.equal(await m.getByRole('button',{name:'Алтай',exact:true}).getAttribute('aria-pressed'),'true');
+  await back.click();assert.equal(await m.getByRole('button',{name:'Для инвестиций',exact:true}).getAttribute('aria-pressed'),'true');
+  await next.click();await next.click();await next.click();
+  await m.locator('.feedback-modal__submit').click();assert.equal(await m.locator('[name=name]').getAttribute('aria-invalid'),'true');
+  await m.locator('[name=name]').fill('Тест');await m.locator('[name=phone]').fill('12');await m.locator('.feedback-modal__submit').click();assert.equal(await m.locator('[name=phone]').getAttribute('aria-invalid'),'true');
+  assert.ok(await m.locator('[name=phone]').getAttribute('aria-describedby'));
+  await m.locator('[name=phone]').fill('+7 900 000-00-00');await m.locator('.feedback-modal__submit').click();assert.equal(await m.locator('[name=consent]').getAttribute('aria-invalid'),'true');
+  await m.locator('.feedback-modal__consent-box').click();assert.equal(await m.locator('[name=consent]').isChecked(),true);await m.locator('.feedback-modal__submit').click();assert.match(await m.locator('.feedback-modal__status').innerText(),/Данные не отправлены/);
+  await p.evaluate(()=>document.addEventListener('barn:lead',e=>{window.__testLead=e.detail.data;e.preventDefault();},{once:true}));await m.locator('.feedback-modal__submit').click();
+  const answers=await p.evaluate(()=>JSON.parse(window.__testLead.quizAnswers));assert.deepEqual(answers,{goal:'Для инвестиций',location:'Алтай',budget:'30–50 млн',currency:'€'});
+  const first=m.locator('.modal__close');await first.focus();await p.keyboard.press('Shift+Tab');assert.equal(await p.evaluate(()=>document.activeElement.closest('.catalog-feedback-modal')!==null),true,'Focus stays in dialog');
+  await p.keyboard.press('Escape');assert.equal(await m.isVisible(),false);assert.equal(await trigger.evaluate(e=>e===document.activeElement),true);assert.equal(await p.locator('#__nuxt').evaluate(e=>e.inert),false);
+  await trigger.click();assert.equal(await m.getAttribute('data-quiz-step'),'goal');assert.equal(await next.isDisabled(),true);await m.getByRole('button',{name:'Сразу задать вопрос эксперту',exact:true}).click();
+  assert.equal(await m.getAttribute('data-quiz-step'),'contact');assert.deepEqual(JSON.parse(await m.locator('[name=quizAnswers]').inputValue()),{goal:'Нужна консультация',location:'',budget:'',currency:'₽'});
+  await p.keyboard.press('Escape');
+  await p.locator('.floating-expert__close').click();await p.locator('.site-footer__callback-btn').click();assert.equal(await m.evaluate(e=>e.classList.contains('resort-quiz-active')),false);assert.equal(await m.locator('.feedback-modal__form').isVisible(),true);assert.equal(await m.locator('[name=quizAnswers]').isDisabled(),true);await p.keyboard.press('Escape');
+  assert.equal(await p.evaluate(()=>document.documentElement.scrollWidth>innerWidth+1),false);
+  checks.push({width,height,fullFlow:true,back:true,skip:true,payload:true,validation:true,focus:true,directForm:true,noPost:true});console.log('PASS expert quiz',width,height);await p.close();
+ }
+ assert.deepEqual(errors,[]);assert.deepEqual(posts,[]);
+}finally{await browser.close()}fs.writeFileSync(path.join(root,'verification/expert-quiz-2026-11-02.json'),JSON.stringify({checks,errors,posts},null,2)+'\n')})().catch(e=>{console.error(e);process.exitCode=1});

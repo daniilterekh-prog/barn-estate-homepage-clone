@@ -527,6 +527,22 @@
           "hero H1",
           "FAQ"
         ]
+      },
+      "expertQuiz": {
+        "controller": "../../js/expert-quiz.js",
+        "styles": "../../css/expert-quiz.css",
+        "steps": [
+          "goal",
+          "location",
+          "budget",
+          "contact"
+        ],
+        "payload": "quizAnswers",
+        "triggers": [
+          "floating-expert",
+          "data-expert-quiz"
+        ],
+        "directFormPreserved": true
       }
     },
     {
@@ -566,6 +582,22 @@
           "hero H1",
           "FAQ"
         ]
+      },
+      "expertQuiz": {
+        "controller": "../../js/expert-quiz.js",
+        "styles": "../../css/expert-quiz.css",
+        "steps": [
+          "goal",
+          "location",
+          "budget",
+          "contact"
+        ],
+        "payload": "quizAnswers",
+        "triggers": [
+          "floating-expert",
+          "data-expert-quiz"
+        ],
+        "directFormPreserved": true
       }
     },
     {

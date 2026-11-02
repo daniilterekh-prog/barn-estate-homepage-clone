@@ -524,21 +524,32 @@
     var channelValue = form.querySelector('[name="preferredChannel"]');
     var status = form.querySelector('.feedback-modal__status');
     var previousFocus = null;
+    var quiz = window.BarnEstateExpertQuiz.mount(modal);
+    var backgroundState = [];
 
     function closeModal() {
       if (modal.hidden) return;
       modal.hidden = true;
       document.body.classList.remove('catalog-modal-open');
+      backgroundState.forEach(function (entry) { entry[0].inert = entry[1]; });
+      backgroundState = [];
       if (previousFocus && document.contains(previousFocus)) previousFocus.focus();
     }
 
     openContactModal = function (trigger) {
       previousFocus = trigger || document.activeElement;
+      if (trigger && trigger.matches('.floating-expert__card,[data-expert-quiz]')) quiz.start();
+      else quiz.stop();
       modal.hidden = false;
       document.body.classList.add('catalog-modal-open');
-      window.requestAnimationFrame(function () {
-        content.focus();
-      });
+      if (!backgroundState.length) {
+        Array.from(document.body.children).forEach(function (element) {
+          if (element !== modal && !element.contains(modal) && !/^(SCRIPT|STYLE|LINK)$/.test(element.tagName)) {
+            backgroundState.push([element, element.inert]); element.inert = true;
+          }
+        });
+      }
+      window.requestAnimationFrame(function () { if (quiz.active) quiz.focus(); else content.focus(); });
     };
 
     modal.addEventListener('click', function (event) {
@@ -557,16 +568,12 @@
 
     form.addEventListener('submit', function (event) {
       event.preventDefault();
-      if (!form.checkValidity()) {
-        form.reportValidity();
-        return;
-      }
-      status.textContent = 'Спасибо! Мы свяжемся с вами в ближайшее время.';
-      form.reset();
-      channelValue.value = 'Telegram';
-      modal.querySelectorAll('.feedback-modal__channels button').forEach(function (item) {
-        item.setAttribute('aria-pressed', String(item.dataset.channel === 'Telegram'));
+      if (!window.BarnEstateExpertQuiz.validate(form, status)) return;
+      var lead = new CustomEvent('barn:lead', {
+        bubbles: true, cancelable: true,
+        detail: { data: Object.fromEntries(new FormData(form)), form: form, status: status }
       });
+      if (form.dispatchEvent(lead)) status.textContent = 'В превью отправка заявок не подключена. Данные не отправлены.';
     });
 
     document.addEventListener('keydown', function (event) {
@@ -591,7 +598,7 @@
       }
     });
 
-    document.querySelectorAll('.catalog-contact__card-submit, .floating-expert__card, .site-footer__callback-btn').forEach(function (trigger) {
+    document.querySelectorAll('.catalog-contact__card-submit, .floating-expert__card, .site-footer__callback-btn, [data-expert-quiz]').forEach(function (trigger) {
       trigger.addEventListener('click', function () {
         openContactModal(trigger);
       });
