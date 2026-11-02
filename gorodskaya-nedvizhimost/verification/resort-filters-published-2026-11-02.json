@@ -1,0 +1,65 @@
+{
+  "base": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/gorodskaya-nedvizhimost/?v=0de424f",
+  "reference": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/kurortnaya/",
+  "date": "2026-11-02",
+  "checks": [
+    {
+      "width": 320,
+      "rolesMatch": true,
+      "moscow": true,
+      "interactions": false
+    },
+    {
+      "width": 390,
+      "rolesMatch": true,
+      "moscow": true,
+      "interactions": true
+    },
+    {
+      "width": 540,
+      "rolesMatch": true,
+      "moscow": true,
+      "interactions": false
+    },
+    {
+      "width": 768,
+      "rolesMatch": true,
+      "moscow": true,
+      "interactions": false
+    },
+    {
+      "width": 1024,
+      "rolesMatch": true,
+      "moscow": true,
+      "interactions": false
+    },
+    {
+      "width": 1440,
+      "rolesMatch": true,
+      "moscow": true,
+      "interactions": true
+    },
+    {
+      "width": 1920,
+      "rolesMatch": true,
+      "moscow": true,
+      "interactions": false
+    },
+    {
+      "width": 2560,
+      "rolesMatch": true,
+      "moscow": true,
+      "interactions": false
+    },
+    {
+      "width": 3840,
+      "rolesMatch": true,
+      "moscow": true,
+      "interactions": false
+    }
+  ],
+  "errors": [],
+  "missing": [],
+  "publishedCommit": "0de424fed50acda4e3a769d20b682c10a9625dc8",
+  "deployment": "https://github.com/daniilterekh-prog/barn-estate-homepage-clone/actions/runs/41531033253"
+}
