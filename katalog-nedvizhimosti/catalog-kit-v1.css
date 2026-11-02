@@ -20,7 +20,16 @@ html body.catalog-listing-page .site-header .site-header__messenger img{width:24
 html body.catalog-listing-page .site-header .site-header__phone--icon{margin:0;width:24px;height:24px;display:inline-flex;align-items:center;justify-content:center}
 html body.catalog-listing-page .site-header .site-header__phone--icon :is(svg,.site-header__icon){height:24px;width:24px}
 html body.catalog-listing-page .site-header .home-header-contacts-toggle{color:#1e1e1e}
-html body.catalog-listing-page .site-header .site-header__nav-list{flex-wrap:nowrap;column-gap:clamp(16px,calc(5vw - 48px),36px)}
+/* Page links keep their own row at every width and while the header is sticky.
+   Overflow belongs to the navigation, never to the page or the logo row. */
+html body.catalog-listing-page .layout__header .site-header__top{margin-bottom:0}
+html body.catalog-listing-page .layout__header .site-header:not(.site-header--menu-open) .catalog-global-nav{display:block;width:100%;min-width:0;max-height:none;margin:0;padding-block:4px;opacity:1;pointer-events:auto;overflow-x:auto;overflow-y:hidden;overscroll-behavior-x:contain;scroll-padding-inline:4px;scrollbar-width:thin;scrollbar-color:#c7c4c0 transparent;transition:none;border-bottom:1px solid #e4e4e4}
+html body.catalog-listing-page .catalog-global-nav::-webkit-scrollbar{height:3px}
+html body.catalog-listing-page .catalog-global-nav::-webkit-scrollbar-thumb{background:#c7c4c0}
+html body.catalog-listing-page .site-header .site-header__nav-list{width:max-content;min-width:100%;box-sizing:border-box;flex-wrap:nowrap;justify-content:center;column-gap:clamp(20px,calc(5vw - 48px),36px);padding-inline:4px}
+html body.catalog-listing-page .catalog-global-nav .site-header__nav-item{flex:none}
+html body.catalog-listing-page .catalog-global-nav .site-header__nav-link{display:flex;align-items:center;min-height:44px;white-space:nowrap;line-height:1.2}
+html body.catalog-listing-page .catalog-global-nav .site-header__nav-link:focus-visible{outline:2px solid #8b1d25;outline-offset:2px}
 @media(max-width:1024px){
  html body.catalog-listing-page .site-header .site-header__top{position:relative;display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);column-gap:0;align-items:center}
  html body.catalog-listing-page .site-header .site-header__left{position:static;transform:none;width:auto;height:44px;grid-column:1;grid-row:1;justify-self:start}

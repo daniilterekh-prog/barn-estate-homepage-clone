@@ -10,6 +10,10 @@
  };
  window.addEventListener('scroll',()=>{if(!frame)frame=requestAnimationFrame(updateSticky)},{passive:true});updateSticky();
  window.__barnesHeaderContacts?.refresh();
+ // Keep the complete focused link visible inside the narrow navigation strip.
+ header.querySelector('.catalog-global-nav').addEventListener('focusin',event=>{
+  if(event.target.matches('.site-header__nav-link'))event.target.scrollIntoView({block:'nearest',inline:'nearest'});
+ });
  const smallScreen=matchMedia('(max-width:767px)');const updateSearchHint=()=>document.querySelector('#catalog-search').placeholder=smallScreen.matches?'Название или ID':'Название ЖК, адрес или ID';smallScreen.addEventListener('change',updateSearchHint);updateSearchHint();
  document.querySelector('.floating-expert__close')?.addEventListener('click',event=>{event.currentTarget.closest('.barnes-block').hidden=true;});
  // Replace legacy reset copy without changing the filter reset behavior.
