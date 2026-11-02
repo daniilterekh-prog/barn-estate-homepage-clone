@@ -2,7 +2,7 @@
 (function () {
   function startRuntime() {
     var uiKitRuntime = document.createElement('script');
-    uiKitRuntime.src = 'js/ui-kit-runtime.js?v=20261102-catalog-filters-12';
+    uiKitRuntime.src = 'js/ui-kit-runtime.js?v=20261102-cta-contact-13';
     document.body.appendChild(uiKitRuntime);
   }
   // document.open replaces DOM/listeners but retains window.BarnesFilters.
@@ -17,7 +17,7 @@
       return response.text();
     })
     .then(function (markup) {
-      markup = markup.replace('</body>', '<script src="js/ui-kit-runtime.js?v=20261102-catalog-filters-12"><\/script></body>');
+      markup = markup.replace('</body>', '<script src="js/ui-kit-runtime.js?v=20261102-cta-contact-13"><\/script></body>');
       document.open();
       document.write(markup);
       document.close();

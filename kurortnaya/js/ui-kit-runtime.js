@@ -465,6 +465,7 @@
           if (!button || !methods.contains(button)) return;
           methods.querySelectorAll(entry[1]).forEach(function (item) {
             item.setAttribute('aria-selected', String(item === button));
+            item.classList.toggle(entry[1].slice(1) + '--active', item === button);
           });
           channelValue.value = button.textContent.trim();
         });
