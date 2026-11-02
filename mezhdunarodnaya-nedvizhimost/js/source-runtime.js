@@ -33,7 +33,7 @@
     all('.hero-filter-panel-content__range-input',dialog).forEach(input=>input.setAttribute('aria-label',input.closest('.hero-filter-panel-content__group')?.querySelector('.hero-filter-panel-content__title')?.textContent.trim()+' — '+input.placeholder));
     one('input:not([tabindex="-1"]),button',dialog)?.focus({preventScroll:true});
   }
-  window.BARNES_OPEN_FILTER=trigger=>openDialog('filters',trigger);
+  window.BARNES_OPEN_FILTER=trigger=>window.BarnesFilters?.open(trigger);
   all('.catalog-hero-filters__filter-icon,.catalog-mode-detailed-filters,.catalog-quick-filters__button,.international-map-filter').forEach(button=>{
     button.dataset.internationalFilter='';button.setAttribute('aria-haspopup','dialog');button.setAttribute('aria-controls','catalog-hero-filters-panel');button.setAttribute('aria-expanded','false');
   });
@@ -46,7 +46,7 @@
     else if(!event.shiftKey&&document.activeElement===items.at(-1)){event.preventDefault();items[0].focus();}
   });
   menuButton?.addEventListener('click',()=>dialog?.classList.contains('site-menu')?closeDialog():openDialog('menu',menuButton));
-  one('.catalog-hero-filters__filter-icon')?.addEventListener('click',e=>openDialog('filters',e.currentTarget));
+  one('.catalog-hero-filters__filter-icon')?.addEventListener('click',e=>window.BARNES_OPEN_FILTER(e.currentTarget));
   all('.apartment-card__call-btn,.site-footer__callback-btn,.catalog-contact__card-submit,.floating-expert__card').forEach(e=>e.addEventListener('click',()=>openDialog('callback',e)));
   one('.floating-expert__close')?.addEventListener('click',()=>one('.floating-expert')?.remove());
   const scrollToSection=s=>one(s)?.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion:reduce)').matches?'instant':'smooth'});
@@ -75,33 +75,11 @@
   const area=e=>number(one('.apartment-card__stat-value',e)?.textContent||'0');
   one('.catalog-grid__sort-select')?.addEventListener('change',e=>{const order=e.target.value,read=order.startsWith('price')?price:area;const sorted=order==='relevance'?[...items]:[...items].sort((a,b)=>(read(a)-read(b))*(order.endsWith('desc')?-1:1));sorted.forEach(item=>list.append(item));});
   all('.apartment-card__favorite').forEach(button=>button.addEventListener('click',()=>{const active=button.getAttribute('aria-pressed')!=='true';button.setAttribute('aria-pressed',String(active));button.setAttribute('aria-label',active?'Удалить из избранного':'Добавить в избранное');button.classList.toggle('apartment-card__favorite--active',active);}));
-  function applySearch(){const query=one('.catalog-hero-filters__search-input')?.value.trim().toLowerCase()||'';items.forEach(item=>item.hidden=(list?.dataset.activeMode&&item.dataset.listingMode!==list.dataset.activeMode)||(!!query&&!item.textContent.toLowerCase().includes(query)));scrollToSection('.catalog-grid');}
+  function applySearch(){window.BarnesFilters?.patch({query:one('.catalog-hero-filters__search-input')?.value.trim()||''});scrollToSection('.catalog-grid');}
   one('.catalog-hero-filters__bar')?.addEventListener('submit',e=>{e.preventDefault();applySearch();});
   one('.catalog-hero-filters__submit')?.addEventListener('click',applySearch);
   one('.catalog-grid__more')?.addEventListener('click',()=>items.forEach(item=>item.classList.add('source-revealed')));
-  const filterGroup=(root,title)=>all('.hero-filter-panel-content__group',root).find(group=>one('.hero-filter-panel-content__title',group)?.textContent.trim()===title);
-  const savedFilterRoot=()=>{const root=one('#source-filters').content.cloneNode(true);all('input',root).forEach((input,i)=>{if(filterState[i]){input.value=filterState[i].value;input.checked=filterState[i].checked;}});return root;};
-  function applyLocalFilters(root){
-    filterState=all('input',root).map(input=>({value:input.value,checked:input.checked}));
-    const priceChoices=all('input:checked',filterGroup(root,'Диапазоны'));
-    const selected=all('input[type="checkbox"]:checked',root).filter(input=>!priceChoices.includes(input)).map(input=>input.closest('label')?.textContent.trim().toLowerCase()).filter(Boolean);
-    const ranges=all('.hero-filter-panel-content__range-input',root).map(input=>number(input.value)||0);
-    const brackets={'50m':[0,50000000],'50-100m':[50000000,100000000],'100-200m':[100000000,200000000],'200m+':[200000000,Infinity]};
-    items.forEach(item=>{const text=item.textContent.toLowerCase(),cost=price(item);const fact=label=>{const entry=all('.listing-card-fact',item).find(e=>one('dt',e)?.textContent.trim()===label);return number(one('dd',entry||item)?.textContent||'0');};const square=fact('Площадь'),rooms=fact('Комнаты')||fact('Спальни');item.hidden=(list?.dataset.activeMode&&item.dataset.listingMode!==list.dataset.activeMode)||(selected.length>0&&!selected.some(label=>text.includes(label)))||(ranges[0]>0&&cost<ranges[0])||(ranges[1]>0&&cost>ranges[1])||(ranges[2]>0&&square<ranges[2])||(ranges[3]>0&&square>ranges[3])||(ranges[4]>0&&rooms<ranges[4])||(ranges[5]>0&&rooms>ranges[5])||(priceChoices.length>0&&!priceChoices.some(input=>{const range=brackets[input.value];return range&&cost>0&&cost>=range[0]&&cost<=range[1];}));});
-    document.dispatchEvent(new Event('barnes:filters-apply'));window.dispatchEvent(new Event('international-filters-applied'));
-  }
-  window.BarnesFilters={
-    getState(){const root=savedFilterRoot(),checked=title=>all('input:checked',filterGroup(root,title)).map(input=>input.value);return{market:list.dataset.activeMode||'new-build',brandFlags:[...brandFlags],directions:checked('Страны'),propertyTypes:checked('Тип недвижимости'),priceRanges:checked('Диапазоны'),bedrooms:bedroomSelection};},
-    patch(fields){const root=savedFilterRoot();if(['new-build','secondary'].includes(fields.market)){one('.catalog-mode-switch__button[data-listing-mode="'+fields.market+'"]')?.click();}if('brandFlags'in fields)brandFlags=fields.brandFlags.filter(flag=>['selection','exclusive'].includes(flag));for(const [key,title]of [['directions','Страны'],['propertyTypes','Тип недвижимости'],['priceRanges','Диапазоны']])if(key in fields)all('input[type=checkbox]',filterGroup(root,title)).forEach(input=>input.checked=fields[key].includes(input.value));const ranges=all('.hero-filter-panel-content__range-input',root);if('priceMin'in fields)ranges[0].value=fields.priceMin;if('priceMax'in fields)ranges[1].value=fields.priceMax;if('bedrooms'in fields){bedroomSelection=fields.bedrooms;ranges[4].value=fields.bedrooms==='4+'?'4':fields.bedrooms;ranges[5].value=fields.bedrooms==='4+'?'':fields.bedrooms;}applyLocalFilters(root);}
-  };
-  all('.catalog-mode-switch__button').forEach(button=>button.addEventListener('click',()=>applyLocalFilters(savedFilterRoot())));
-  function bindFilters(root){
-    all('input[type="checkbox"]',root).forEach(input=>input.addEventListener('change',()=>{input.closest('.ui-checkbox')?.classList.toggle('ui-checkbox--checked',input.checked);input.closest('.ui-switch')?.classList.toggle('ui-switch--checked',input.checked);}));
-    all('.hero-filter-panel__reset,.hero-filter-modal__reset',root).forEach(button=>button.addEventListener('click',()=>{filterState=[];all('input',root).forEach(input=>{if(input.type!=='checkbox')input.value='';input.checked=false;input.closest('.ui-checkbox')?.classList.remove('ui-checkbox--checked');input.closest('.ui-switch')?.classList.remove('ui-switch--checked');});}));
-    all('.hero-filter-modal__apply',root).forEach(button=>button.addEventListener('click',()=>{
-      applyLocalFilters(root);closeDialog();if(!one('.map-browser:not([hidden])'))scrollToSection('.catalog-grid');
-    }));
-  }
+  function bindFilters() {}
   function bindForms(root){all('form:not(.catalog-hero-filters__bar)',root).forEach(form=>{
     if(form.closest('.catalog-feedback-modal'))return;
     all('input:not([tabindex="-1"]),textarea',form).forEach(input=>{if(!input.getAttribute('aria-label'))input.setAttribute('aria-label',input.type==='checkbox'?'Согласие на обработку персональных данных':input.placeholder||'Комментарий');});

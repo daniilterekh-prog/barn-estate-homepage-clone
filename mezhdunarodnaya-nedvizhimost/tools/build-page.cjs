@@ -7,7 +7,7 @@ else fs.writeFileSync(mapFile,map);
 const quiz=fs.readFileSync(path.join(root,'blocks/international-quiz/template.html'),'utf8').trim();
 const html=fs.readFileSync(path.join(root,'templates/page.html'),'utf8').replace(/<!-- BARNES:([\w-]+) -->/g,(_,id)=>fs.readFileSync(path.join(root,'blocks',id,'page.html'),'utf8').trim())
  .replace(/js\/node-components\.js\?v=[^"]+/, 'js/node-components.js?v=20261101-quiz-1')
- .replace(/js\/node-map-browser\.js\?v=[^"]+/, 'js/node-map-browser.js?v=20261101-quiz-1')
+ .replace(/js\/node-map-browser\.js\?v=[^"]+/, 'js/node-map-browser.js?v=20261102-filters-1')
  .replace('</head>','<link rel="stylesheet" href="css/international-quiz.css?v=20261101-1"></head>')
  .replace('</body>','<template id="international-quiz-template">'+quiz+'</template><script src="js/international-quiz.js?v=20261101-1" defer></script></body>');
 for(const name of ['index.html','mobile.html']){
