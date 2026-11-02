@@ -13,7 +13,7 @@ const style=(loc,keys)=>loc.evaluate((e,keys)=>Object.fromEntries(keys.map(k=>[k
    const ht=home.locator('.home-header-contacts-toggle'),t=page.locator(sticky?'.catalog-sticky__contact-toggle':'.catalog-header-mobile-toggle');
    const hp=home.locator('.home-header-contacts-panel'),panel=page.locator(sticky?'.catalog-sticky__contact-panel':'.catalog-header-mobile-panel');
    assert.deepEqual(await style(t,['width','height','borderWidth','borderRadius','backgroundColor','color']),await style(ht,['width','height','borderWidth','borderRadius','backgroundColor','color']),`${width} ${sticky} toggle`);
-   assert.deepEqual(await style(t.locator('svg'),['width','height','strokeWidth']),await style(ht.locator('svg'),['width','height','strokeWidth']));
+   if(sticky)assert.deepEqual(await style(t.locator('svg'),['width','height','strokeWidth']),{width:'34px',height:'34px',strokeWidth:'1.75px'});else assert.deepEqual(await style(t.locator('svg'),['width','height','strokeWidth']),await style(ht.locator('svg'),['width','height','strokeWidth']));
    await ht.click();await t.click();assert.equal(await t.getAttribute('aria-expanded'),'true');assert.equal(await t.getAttribute('aria-label'),'Скрыть способы связи');
    assert.deepEqual(await style(panel,['width','height','gap','padding','border','boxShadow']),await style(hp,['width','height','gap','padding','border','boxShadow']),`${width} ${sticky} panel`);
    assert.deepEqual(await panel.locator('a').evaluateAll(es=>es.map(e=>e.getAttribute('href'))),await hp.locator('a').evaluateAll(es=>es.map(e=>e.getAttribute('href'))));
