@@ -2,7 +2,7 @@
 (function () {
   function startRuntime() {
     var uiKitRuntime = document.createElement('script');
-    uiKitRuntime.src = 'js/ui-kit-runtime.js?v=20261102-faq-6';
+    uiKitRuntime.src = 'js/ui-kit-runtime.js?v=20261102-navigation-7';
     document.body.appendChild(uiKitRuntime);
   }
   // document.open replaces DOM/listeners but retains window.BarnesFilters.
@@ -17,7 +17,7 @@
       return response.text();
     })
     .then(function (markup) {
-      markup = markup.replace('</body>', '<script src="js/ui-kit-runtime.js?v=20261102-faq-6"><\/script></body>');
+      markup = markup.replace('</body>', '<script src="js/ui-kit-runtime.js?v=20261102-navigation-7"><\/script></body>');
       document.open();
       document.write(markup);
       document.close();

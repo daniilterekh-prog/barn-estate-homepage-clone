@@ -76,6 +76,8 @@ node tools/build-page.cjs --check
 
 ## Происхождение
 
-Основа: [фронт Курортной](https://front.barnes.vsavr.ru/kurortnaya/) и действующая согласованная адаптация. Библиотека блоков: `barnes-assets`, commit `7000ede`. Хэдер/футер — наш шаблон собственников продажи, без направлений. [Происхождение херо](assets/hero-alpine-natural.md): одобренный desktop, неизменный mobile.
+Основа: [фронт Курортной](https://front.barnes.vsavr.ru/kurortnaya/) и действующая согласованная адаптация. Библиотека блоков: `barnes-assets`, commit `7000ede`. Хэдер/футер — наш общий шаблон; меню первого экрана и способы связи приведены к утверждённой главной. [Происхождение херо](assets/hero-alpine-natural.md): одобренный desktop, неизменный mobile.
 
 Frontend-памятка проверена: HyperUI доступен бесплатно по MIT, но здесь сохранены утверждённые компоненты BARNES, новые библиотеки не добавлены.
+
+02.11.2026: крошки перенесены над линией hero-хедера, под линией добавлено меню главной. [Источник ссылок](verification/header-navigation-source-2026-11-02.json), [проверка адаптива](verification/header-navigation-2026-11-02.json).

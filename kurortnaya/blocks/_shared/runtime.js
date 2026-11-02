@@ -1,3 +1,4 @@
+import '../../js/header-layout.js?v=20261102-navigation-7';
 import '../../js/faq.js?v=20261102-faq-6';
 import '../../js/expert-quiz.js?v=20261102-expert-quiz-5';
 /** Reusable interactions. Production data arrives through options or bubbling events. */
