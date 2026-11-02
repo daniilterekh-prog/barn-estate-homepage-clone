@@ -1,15 +1,15 @@
 (function () {
   var filtersTemplate = document.createElement('script');
-  filtersTemplate.src = 'js/filters-template.js?v=1';
+  filtersTemplate.src = 'js/filters-template.js?v=20261102-brand-intro-3';
   filtersTemplate.onload = function () {
     var filtersScript = document.createElement('script');
-    filtersScript.src = 'js/filters-modal.js?v=4';
+    filtersScript.src = 'js/filters-modal.js?v=20261102-brand-intro-3';
     filtersScript.onload = function () {
       var quickScript = document.createElement('script');
-      quickScript.src = 'js/quick-filters.js?v=6';
+      quickScript.src = 'js/quick-filters.js?v=20261102-brand-intro-3';
       quickScript.onload = function () {
         var brandsScript = document.createElement('script');
-        brandsScript.src = 'js/brand-filters.js?v=12';
+        brandsScript.src = 'js/brand-filters.js?v=20261102-brand-intro-3';
         document.body.appendChild(brandsScript);
       };
       document.body.appendChild(quickScript);
@@ -21,7 +21,7 @@
   mapDataScript.src = 'js/map-projects.js?v=2';
   mapDataScript.onload = function () {
     var mapScript = document.createElement('script');
-    mapScript.src = 'js/map-fullscreen.js?v=8';
+    mapScript.src = 'js/map-fullscreen.js?v=20261102-brand-intro-3';
     document.body.appendChild(mapScript);
   };
   document.body.appendChild(mapDataScript);
@@ -175,7 +175,7 @@
     var sections = [
       ['Проекты', 'catalog-new-starts'],
       ['Каталог', 'catalog-grid'],
-      ['О BARNES', 'catalog-intro'],
+      ['О BARN Estate', 'catalog-intro'],
       ['Вопросы', 'catalog-faq']
     ].filter(function (item) {
       return document.getElementById(item[1]);
@@ -352,13 +352,30 @@
     ['.catalog-map__title', 'География'],
     ['.catalog-grid__title', 'Каталог'],
     ['.departments-section__title', 'Направления'],
-    ['.catalog-faq__title', 'Экспертиза BARNES']
+    ['.catalog-faq__title', 'Экспертиза BARN Estate']
   ].forEach(function (entry) {
     addSectionEyebrow(entry[0], entry[1], entry[2]);
   });
 
   var introDetails = document.querySelector('.catalog-intro__details');
   if (introDetails) {
+    var introToggle = document.querySelector('.catalog-intro__toggle');
+    if (introToggle) {
+      var introLabel = introToggle.querySelector('.ui-more-link__label');
+      function setIntroExpanded(open) {
+        introToggle.setAttribute('aria-expanded', String(open));
+        introDetails.setAttribute('aria-hidden', String(!open));
+        introDetails.hidden = !open;
+        introDetails.inert = !open;
+        // Natural height keeps the full copy visible after wrapping/resizing.
+        introDetails.style.maxHeight = open ? 'none' : '0px';
+        if (introLabel) introLabel.textContent = open ? 'свернуть' : 'читать далее';
+      }
+      setIntroExpanded(introToggle.getAttribute('aria-expanded') === 'true');
+      introToggle.addEventListener('click', function () {
+        setIntroExpanded(introToggle.getAttribute('aria-expanded') !== 'true');
+      });
+    }
     Array.from(introDetails.querySelectorAll('h3')).forEach(function (heading) {
       var replacement = document.createElement('h4');
       Array.from(heading.attributes).forEach(function (attribute) {
@@ -467,7 +484,7 @@
       '  <div class="feedback-modal__layout">',
       '    <div class="feedback-modal__body">',
       '      <h2 class="feedback-modal__title" id="catalog-feedback-modal-title">Поможем найти подходящий объект</h2>',
-      '      <p class="feedback-modal__intro">Эксперт BARNES уточнит задачу и подберёт лучшие варианты.</p>',
+      '      <p class="feedback-modal__intro">Эксперт BARN Estate уточнит задачу и подберёт лучшие варианты.</p>',
       '      <form class="feedback-modal__form" novalidate>',
       '        <div class="feedback-modal__channels" role="group" aria-label="Предпочтительный способ связи">',
       '          <button type="button" data-channel="Telegram" aria-pressed="true">Telegram</button>',
@@ -489,7 +506,7 @@
       '      </form>',
       '    </div>',
       '    <div class="feedback-modal__hero">',
-      '      <img class="feedback-modal__hero-image" src="assets/denis-perkovsky-cutout.png" alt="Денис Перковский — руководитель департамента курортной недвижимости BARNES" width="1024" height="1536">',
+      '      <img class="feedback-modal__hero-image" src="assets/denis-perkovsky-cutout.png" alt="Денис Перковский — руководитель департамента курортной недвижимости BARN Estate" width="1024" height="1536">',
       '    </div>',
       '  </div>',
       '</div>'
@@ -587,7 +604,7 @@
 
   if (!document.querySelector('script[data-kurortnaya-listing-mode]')) {
     var listingScript = document.createElement('script');
-    listingScript.src = 'js/listing-mode.js?v=20261012-shared-map-menus-1';
+    listingScript.src = 'js/listing-mode.js?v=20261102-brand-intro-3';
     listingScript.dataset.kurortnayaListingMode = 'true';
     document.body.appendChild(listingScript);
   }

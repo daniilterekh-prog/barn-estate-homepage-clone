@@ -1,0 +1,66 @@
+{
+  "source": "https://barn-estate.ru/kurortnaya/",
+  "checks": [
+    {
+      "width": 320,
+      "keyboard": true,
+      "completeCopy": true,
+      "resize": true,
+      "collapse": true,
+      "brand": true
+    },
+    {
+      "width": 390,
+      "keyboard": true,
+      "completeCopy": true,
+      "resize": true,
+      "collapse": true,
+      "brand": true
+    },
+    {
+      "width": 768,
+      "keyboard": true,
+      "completeCopy": true,
+      "resize": true,
+      "collapse": true,
+      "brand": true
+    },
+    {
+      "width": 1440,
+      "keyboard": true,
+      "completeCopy": true,
+      "resize": true,
+      "collapse": true,
+      "brand": true
+    },
+    {
+      "width": 1920,
+      "keyboard": true,
+      "completeCopy": true,
+      "resize": true,
+      "collapse": true,
+      "brand": true
+    },
+    {
+      "width": 3840,
+      "keyboard": true,
+      "completeCopy": true,
+      "resize": true,
+      "collapse": true,
+      "brand": true
+    },
+    {
+      "block": "brand-intro",
+      "width": 390,
+      "disclosure": true,
+      "completeCopy": true
+    },
+    {
+      "block": "brand-intro",
+      "width": 1440,
+      "disclosure": true,
+      "completeCopy": true
+    }
+  ],
+  "errors": []
+}

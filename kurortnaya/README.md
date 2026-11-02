@@ -54,6 +54,8 @@ node tools/build-page.cjs --check
 
 После `capture-first-degree.cjs` из канонической библиотеки запускай `node kurortnaya/tools/sync-blocks.cjs` из корня репозитория: все18фрагментов обновятся из DOM, пути медиа перебазируются один раз, `page-*` исходники сохранятся. Затем проверь отдельные превью. `node tools/verify-home-reference.cjs URL` проверяет нормы сегодняшнего кита и неизменность H1/FAQ; `verify-package.cjs` — комплект и превью.
 
+02.11.2026: исправлена кнопка «Читать далее», полный текст сверен с оригиналом; видимые названия обновлены на BARN Estate, включая отдельные блоки. [Проверка раскрытия и бренда](verification/intro-brand-2026-11-02.json), [источник текста](verification/intro-source-2026-11-02.json).
+
 ## Проверки
 
 `node tools/build-page.cjs --check` сверяет сборку. `node tools/verify-package.cjs http://127.0.0.1:8785/` проверяет папку, отдельно обслуживаемую HTTP-сервером: 8 ширин страницы, 36 превью, изображения, overflow, 404, JS-ошибки и внешние render-зависимости. Playwright задаётся через `PLAYWRIGHT_PATH`; используется существующий Chrome. Отчёт: `verification/package.json`.
