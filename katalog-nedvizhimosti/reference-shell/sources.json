@@ -54,5 +54,21 @@
       "Panel top anchored to the actual top-row bottom",
       "Source base-container padding restored above 1920px for header/menu"
     ]
+  },
+  "headerDropdownUpdate": {
+    "date": "2026-11-02",
+    "source": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/",
+    "package": "Approved homepage header v1.0.0",
+    "referenceSnapshot": "../verification/dropdowns/homepage-reference.json",
+    "sections": 9,
+    "links": 56,
+    "runtime": "../header-navigation.js",
+    "adaptations": [
+      "City parent label remains Городская",
+      "White dropdown surface for the catalogue content background",
+      "Viewport-constrained panel outside the horizontal scroller",
+      "Hover/focus, arrow keys, Escape, outside click, touch and resize handling",
+      "Removed the extra bottom border below the navigation row"
+    ]
   }
 }
