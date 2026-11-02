@@ -3,7 +3,7 @@ const fs=require('node:fs'),path=require('node:path');
 const {chromium}=require(process.env.PLAYWRIGHT_PATH||'/home/daniil/Documents/Codex/2026-10-11/firecrawl/work/web-capture-toolkit/node_modules/playwright');
 const root=path.resolve(__dirname,'..'),base=process.argv[2]||'http://127.0.0.1:4187/';
 const blocks=[['header','.layout__header'],['sticky-nav','.catalog-sticky'],['hero','.catalog-hero'],['start-sales','.catalog-best-offers'],['map','.catalog-map'],['listing','.catalog-grid'],['brand-intro','.catalog-intro'],['cta-central','.catalog-consultation'],['directions','.departments-section'],['news','.news-section'],['faq','.catalog-faq'],['cta-bottom','.catalog-contact'],['footer','.site-footer'],['floating-expert','.floating-expert'],['request-modal','.catalog-feedback-modal'],['filters-modal','.resort-filters'],['quick-filter-dropdowns','.resort-quick-dropdown'],['card-start-sales','.launch-card'],['card-project','[data-listing-mode=project] .apartment-card'],['card-lot','[data-listing-mode=lot] .apartment-card'],['map-panel','.map-browser']];
-const write=(file,text)=>{if(file.endsWith('/index.html'))text=text.replace('href="styles.css"','href="styles.css?v=20261101-home-kit-1"').replace('src="../_shared/preview.js"','src="../_shared/preview.js?v=20261101-home-kit-1"');fs.mkdirSync(path.dirname(path.join(root,file)),{recursive:true});fs.writeFileSync(path.join(root,file),text)};
+const write=(file,text)=>{if(file.endsWith('/index.html'))text=text.replace('href="styles.css"','href="styles.css?v=20261102-city-filters-1"').replace('src="../_shared/preview.js"','src="../_shared/preview.js?v=20261102-city-filters-1"');fs.mkdirSync(path.dirname(path.join(root,file)),{recursive:true});fs.writeFileSync(path.join(root,file),text)};
 (async()=>{
  const browser=await chromium.launch({executablePath:'/usr/bin/google-chrome'});
  try{
@@ -15,7 +15,7 @@ const write=(file,text)=>{if(file.endsWith('/index.html'))text=text.replace('hre
    await page.locator('.floating-expert__card').click();
    const modalHTML=await page.locator('.home-owner-host').evaluate(e=>e.outerHTML);
    await page.keyboard.press('Escape');
-   await page.locator('.catalog-mode-filters button').nth(1).click();
+   await page.locator('.catalog-mode-filters button').first().click();
    const fragments=await page.evaluate(({blocks,modalHTML})=>{
      function normalize(node){
        const el=node.cloneNode(true);
@@ -34,7 +34,7 @@ const write=(file,text)=>{if(file.endsWith('/index.html'))text=text.replace('hre
    for(const block of fragments){if(!block.html)throw Error('Missing block '+block.id);write('blocks/'+block.id+'/'+view+'.html',block.html)}
    await page.close();
   }
-  const css=['document-desktop','node-ui','node-listing','node-launch','node-city','owner-header','owner-footer','filters-source','filters-modal','quick-filters','brand-filters','city-map-fullscreen','portable','request-quiz','quiz-buttons','home-kit'];
+  const css=['document-desktop','node-ui','node-listing','node-launch','node-city','owner-header','owner-footer','filters-source','filters-modal','quick-filters','brand-filters','city-map-fullscreen','portable','request-quiz','quiz-buttons','home-kit','catalog-filters'];
   for(const [id]of blocks){
    write('blocks/'+id+'/styles.css',css.map(file=>'@import url("../../css/'+file+'.css");').join('\n')+'\n');
    write('blocks/'+id+'/block.json',JSON.stringify({id:'city-'+id,desktop:'fragment.html',mobile:'mobile.html',styles:'styles.css',assets:'../../assets/',runtime:'../_shared/preview.js',data:'Moscow city snapshot; no API'},null,2)+'\n');

@@ -4,7 +4,7 @@
   var css = document.createElement('link');
   css.rel = 'stylesheet';
   css.dataset.barnesBrandFilters = '';
-  css.href = new URL('../css/brand-filters.css', document.currentScript.src).href;
+  css.href = new URL('../css/brand-filters.css?v=12', document.currentScript.src).href;
   document.head.appendChild(css);
   var choices = [['selection', 'Выбор BARN Estate'], ['exclusive', 'Эксклюзив BARN Estate']];
   function flags() { return window.BarnesFilters.getState().brandFlags || []; }
@@ -14,7 +14,7 @@
     fieldset.dataset.brandContext = context;
     var legend = document.createElement('legend');
     legend.className = 'barnes-brand-filters__legend';
-    legend.textContent = 'Подборки BARNES';
+    legend.textContent = 'Подборки BARN Estate';
     fieldset.appendChild(legend);
     choices.forEach(function (choice) {
       var label = document.createElement('label');
@@ -47,7 +47,7 @@
     var toolbar = document.querySelector('.catalog-mode-toolbar');
     if (toolbar && !document.querySelector('[data-brand-context=listing]')) {
       var row = group('listing');
-      toolbar.appendChild(row);
+      (toolbar.closest('.catalog-grid').querySelector('.catalog-collections-row') || toolbar).prepend(row);
     }
     var reset = document.querySelector('.map-browser__reset');
     if (reset && !document.querySelector('[data-brand-context=map]')) {

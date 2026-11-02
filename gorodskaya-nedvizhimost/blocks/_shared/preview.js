@@ -3,7 +3,7 @@
  const host=document.querySelector('#preview'),id=document.body.dataset.cityPreview;
  document.body.classList.add('city-home-kit');
  const root=new URL('../../',location.href);
- const load=file=>new Promise((resolve,reject)=>{const script=document.createElement('script');script.src=new URL('js/'+file+'?v=20261101-home-kit-1',root);script.onload=resolve;script.onerror=reject;document.body.append(script)});
+ const load=file=>new Promise((resolve,reject)=>{const script=document.createElement('script');script.src=new URL('js/'+file+'?v=20261102-city-filters-1',root);script.onload=resolve;script.onerror=reject;document.body.append(script)});
  if(id==='request-modal'){
    await load('node-modal.js');
    const button=document.createElement('button');button.className='catalog-sticky__request';button.textContent='Оставить заявку';host.append(button);button.click();
@@ -23,6 +23,7 @@
    host.querySelectorAll('form').forEach(form=>form.addEventListener('submit',e=>{e.preventDefault();form.dispatchEvent(new CustomEvent('barnes:request',{bubbles:true}))}));
    if(id==='listing'){
      await load('filters-template.js');await load('filters-modal.js');await load('quick-filters.js');await load('brand-filters.js');
+     await load('catalog-filters.js');window.BarnEstateCatalogFilters.mount(document);
    }
    if(id==='news')await load('news-slider.js');
    if(id==='start-sales'){

@@ -1,6 +1,6 @@
 /* Autonomous desktop/mobile bootstrap. No Nuxt runtime or remote render resources. */
 (function(){
-  function load(file){return new Promise((resolve,reject)=>{const s=document.createElement('script');s.src='js/'+file+'?v=20261101-home-kit-1';s.onload=resolve;s.onerror=reject;document.body.append(s)})}
+  function load(file){return new Promise((resolve,reject)=>{const s=document.createElement('script');s.src='js/'+file+'?v=20261102-city-filters-1';s.onload=resolve;s.onerror=reject;document.body.append(s)})}
   function nativeControls(){
     const toggle=document.querySelector('.site-header__icon-btn');
     let menu=null,overflow='';
@@ -36,6 +36,7 @@
     document.querySelector('.floating-expert__close')?.addEventListener('click',()=>document.querySelector('.floating-expert').hidden=true);
     document.querySelector('.catalog-hero-filters__bar')?.addEventListener('submit',event=>{
       event.preventDefault();const query=document.querySelector('.catalog-hero-filters__search-input').value.trim().toLocaleLowerCase('ru');
+      if(window.BarnesFilters)window.BarnesFilters.patch({query});
       document.querySelectorAll('.catalog-grid__item').forEach(item=>{if(query&&!item.textContent.toLocaleLowerCase('ru').includes(query))item.hidden=true});
       document.querySelector('.catalog-grid')?.scrollIntoView({behavior:'smooth'});
     });
@@ -57,7 +58,7 @@
     document.dispatchEvent(new CustomEvent('barnes:node-ready'));
   }
   if(matchMedia('(max-width:540px)').matches&&!document.documentElement.dataset.cityMobile){
-    fetch('mobile.html?v=20261101-home-kit-1').then(r=>{if(!r.ok)throw Error('mobile snapshot');return r.text()}).then(html=>{
+    fetch('mobile.html?v=20261102-city-filters-1').then(r=>{if(!r.ok)throw Error('mobile snapshot');return r.text()}).then(html=>{
       document.open();document.write(html);document.close();
     }).catch(start);
   }else start();

@@ -1,4 +1,7 @@
 /* Approved homepage UI-kit v1.0.0, 2026-11-01. City data/cards/H1 stay city-specific. */
+body.city-home-kit {--resort-content-gap:var(--city-header-gap,40px);}
+html body.city-home-kit .catalog-mode-filters .catalog-quick-filters__chevron {border:0!important;}
+html body.city-home-kit .catalog-grid .city-catalog-empty {display:none!important;}
 body.city-home-kit {
   --city-section-space:clamp(72px,6vw,100px);
   --city-heading:38px;

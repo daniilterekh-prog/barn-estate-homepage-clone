@@ -2,20 +2,17 @@
   'use strict';
   if (window.BarnesFilters || !window.BarnesFilterTemplate) return;
   var base = new URL('.', document.currentScript.src);
-  var sourceCSS = document.createElement('link');
-  sourceCSS.rel = 'stylesheet';
-  sourceCSS.href = new URL('../css/filters-source.css', base).href;
-  document.head.appendChild(sourceCSS);
+  var sourceCSS=document.createElement('link');sourceCSS.rel='stylesheet';sourceCSS.href=new URL('../css/filters-source.css',base).href;document.head.append(sourceCSS);
   var css = document.createElement('link');
   css.rel = 'stylesheet';
-  css.href = new URL('../css/filters-modal.css', base).href;
+  css.href = new URL('../css/filters-modal.css?v=2', base).href;
   document.head.appendChild(css);
   var template = document.createElement('template');
   template.innerHTML = window.BarnesFilterTemplate;
   var modal = template.content.firstElementChild;
   modal.style.display = 'none'; // Prevent a flash before the override stylesheet loads.
   document.body.appendChild(modal);
-  var triggerSelector = '.catalog-hero-filters__filter-icon, .catalog-mode-detailed-filters, .map-browser__filter-toggle, .city-map-filters';
+  var triggerSelector = '.catalog-hero-filters__filter-icon, .catalog-mode-detailed-filters, .map-browser__filter-toggle';
   var selectedMarket = document.querySelector('[data-listing-mode][aria-pressed="true"]');
   var state = { market: selectedMarket ? selectedMarket.dataset.listingMode : 'new-build' };
   var resetPending = false;
@@ -25,6 +22,7 @@
   var savedGutter;
   var savedModalInert;
   var isolated = [];
+  modal.querySelector('.hero-filter-modal__reset').textContent = 'Сбросить';
   var inputs = Array.from(modal.querySelectorAll('input'));
   var chips = Array.from(modal.querySelectorAll('.ui-checkbox--chip'));
   chips.forEach(function (label) {
@@ -35,9 +33,9 @@
   var chipGroups = Array.from(modal.querySelectorAll('.hero-filter-panel-content__checkboxes--chips'));
   // Share one form/state, switching only the map entry to the source's white drawer.
   var darkClasses = ['hero-filter-modal--dark','hero-filter-panel--dark','hero-filter-panel-content--dark','ui-checkbox--dark','ui-switch--dark'];
-  var themedNodes = [modal].concat(Array.from(modal.querySelectorAll('[class]'))).map(function (el) {
-    return { el:el, classes:darkClasses.filter(function (name) { return el.classList.contains(name); }) };
-  }).filter(function (entry) { return entry.classes.length; });
+  [modal].concat(Array.from(modal.querySelectorAll('[class]'))).forEach(function(el) {
+    darkClasses.forEach(function(name) { el.classList.remove(name); });
+  });
   var error = document.createElement('p');
   error.className = 'resort-filters__error';
   error.hidden = true;
@@ -46,7 +44,8 @@
   function copy(value) { return JSON.parse(JSON.stringify(value)); }
   function restore(value) {
     inputs.forEach(function (input) {
-      if (input.type === 'checkbox') input.checked = (value[input.name] || []).includes(input.value);
+      if (input.type === 'radio') input.checked = (value[input.name] || '') === input.value;
+      else if (input.type === 'checkbox') input.checked = (value[input.name] || []).includes(input.value);
       else input.value = value[input.name] || '';
       input.removeAttribute('aria-invalid');
     });
@@ -82,9 +81,6 @@
     opener = trigger;
     var drawer = trigger.matches('.map-browser__filter-toggle');
     modal.classList.toggle('hero-filter-modal--drawer',drawer);
-    themedNodes.forEach(function (entry) {
-      entry.classes.forEach(function (name) { entry.el.classList.toggle(name,!drawer); });
-    });
     chips.forEach(function (label) {
       label.classList.toggle('ui-checkbox--chip',!drawer);
       label.classList.toggle('ui-checkbox--default',drawer);
@@ -122,7 +118,8 @@
     var invalid = null;
     inputs.forEach(function (input) {
       input.removeAttribute('aria-invalid');
-      if (input.type === 'checkbox') {
+      if (input.type === 'radio') { if (input.checked) draft[input.name] = input.value; }
+      else if (input.type === 'checkbox') {
         if (!draft[input.name]) draft[input.name] = [];
         if (input.checked) draft[input.name].push(input.value);
       } else {
@@ -171,6 +168,7 @@
   }, true);
   window.BarnesFilters = {
     open:open,
+    reset:function () { if (!modal.hidden) return; state = { market:state.market }; document.dispatchEvent(new CustomEvent('barnes:filters-apply', { detail:copy(state) })); },
     getState:function () { return copy(state); },
     patch:function (fields) {
       if (!modal.hidden) return;

@@ -16,6 +16,8 @@
   var bedroomsIcon = parameterIcon + '<path d="M3 18v-7.5M21 18v-5.5a2 2 0 0 0-2-2h-7.5A2.5 2.5 0 0 0 9 13v2M3 15h18M5.5 10.5h2A1.5 1.5 0 0 1 9 12v3H4v-3a1.5 1.5 0 0 1 1.5-1.5Z"/></svg>';
   var filtersIcon = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.15" stroke-linecap="round" aria-hidden="true"><path d="M4 6h3m4 0h9M4 12h8m4 0h4M4 18h4m4 0h8"/><circle cx="9" cy="6" r="2"/><circle cx="14" cy="12" r="2"/><circle cx="10" cy="18" r="2"/></svg>';
   var dialog = document.createElement('section');
+  var returnFocus=trigger;
+  dialog.id='city-map-browser';
   dialog.className = 'map-browser';
   dialog.hidden = true;
   dialog.setAttribute('role', 'dialog');
@@ -78,7 +80,10 @@
     });
   });
   function render() {
-    if (window.BarnesFilters) market = window.BarnesFilters.getState().market || 'new-build';
+    var shared=window.BarnesFilters?window.BarnesFilters.getState():{};
+    market=shared.market||market;
+    query.value=shared.query||'';type.value=(shared.propertyTypes||[])[0]||'';location.value=(shared.directions||[])[0]||'';bedrooms.value=shared.bedrooms||'';price.value=shared.priceMax||'';sort.value=shared.sort==='price_asc'?'asc':shared.sort==='price_desc'?'desc':'';
+    [type,location,bedrooms,sort].forEach(function(el){el.dispatchEvent(new Event('change'))});
     var term = query.value.trim().toLocaleLowerCase('ru');
     var hasTypes = items.some(function (item) { return Array.isArray(item.propertyTypes) && item.propertyTypes.length; });
     var hasLocations = items.some(function (item) { return Array.isArray(item.directions) && item.directions.length; });
@@ -99,7 +104,9 @@
         (!location.value || !hasLocations || (item.directions || []).includes(location.value)) &&
         (!bedrooms.value || !hasBedrooms || (item.bedrooms || []).includes(bedrooms.value)) &&
         (!brandFlags.length || !hasBrandFlags || brandFlags.some(function (flag) { return (item.brandFlags || []).includes(flag); })) &&
-        (!price.value || (item.priceRub !== null && item.priceRub <= Number(price.value)));
+        (!price.value || (item.priceRub !== null && item.priceRub <= Number(price.value))) &&
+        (!shared.priceMin || (item.priceRub!==null && item.priceRub>=Number(shared.priceMin))) &&
+        (!(shared.priceRanges||[]).length || (item.priceRub!==null && shared.priceRanges.some(function(v){var r={'50m':[0,50000000],'50-100m':[50000000,100000000],'100-200m':[100000000,200000000],'200m+':[200000000,Infinity]}[v];return r&&item.priceRub>=r[0]&&item.priceRub<=r[1]})));
     });
     if (sort.value) result.sort(function (a, b) {
       if (a.priceRub === null) return b.priceRub === null ? 0 : 1;
@@ -145,10 +152,11 @@
     document.body.style.overflow = previousOverflow;
     inertElements.forEach(function (entry) { entry.element.inert = entry.value; });
     inertElements = [];
-    trigger.focus({ preventScroll: true });
+    returnFocus.setAttribute('aria-expanded','false');returnFocus.focus({ preventScroll: true });
   }
-  trigger.addEventListener('click', function (event) {
-    event.preventDefault(); event.stopImmediatePropagation();
+  function open(opener) {
+    if(!dialog.hidden)return;
+    returnFocus=opener||trigger;returnFocus.setAttribute('aria-expanded','true');
     previousOverflow = document.body.style.overflow;
     Array.from(document.body.children).forEach(isolate);
     observer.observe(document.body, { childList: true });
@@ -158,7 +166,9 @@
     expand(false);
     render();
     dialog.querySelector('.map-browser__close').focus();
-  }, true);
+  }
+  trigger.addEventListener('click', function(event){event.preventDefault();event.stopImmediatePropagation();open(trigger)},true);
+  window.BarnesMapBrowser={open:open,close:close};
   dialog.querySelector('.map-browser__close').addEventListener('click', close);
   handle.addEventListener('click', function () { expand(handle.getAttribute('aria-expanded') !== 'true'); });
   query.addEventListener('focus', function () { if (window.innerWidth <= 540) expand(true); });
@@ -168,7 +178,7 @@
     event.currentTarget.setAttribute('aria-expanded', String(!extra.hidden));
     expand(true);
   });
-  [query, type, price, sort, location, bedrooms].forEach(function (input) { input.addEventListener('input', render); });
+  [query,type,price,sort,location,bedrooms].forEach(function(input){input.addEventListener('input',function(){var fields=input===query?{query:query.value}:input===type?{propertyTypes:type.value?[type.value]:[]}:input===location?{directions:location.value?[location.value]:[]}:input===bedrooms?{bedrooms:bedrooms.value}:input===price?{priceMax:price.value}:{sort:sort.value==='asc'?'price_asc':sort.value==='desc'?'price_desc':'relevance'};window.BarnesFilters.patch(fields);render()})});
   marketButtons.forEach(function (button) {
     button.addEventListener('click',function () {
       market = button.dataset.mapMarket;
@@ -178,7 +188,7 @@
   });
   dialog.querySelector('.map-browser__reset').addEventListener('click', function () {
     [query, type, price, sort, location, bedrooms].forEach(function (input) { input.value = ''; });
-    if (window.BarnesFilters) window.BarnesFilters.patch({ brandFlags: [] });
+    if (window.BarnesFilters) window.BarnesFilters.reset();
     render();
   });
   document.addEventListener('barnes:filters-apply', function () { if (!dialog.hidden) render(); });
