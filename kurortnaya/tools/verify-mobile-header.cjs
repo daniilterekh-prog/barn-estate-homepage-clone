@@ -5,7 +5,7 @@ const base=process.argv[2]||'http://127.0.0.1:8875/kurortnaya/',reference='https
  const box=async(page,selector)=>page.locator(selector).first().evaluate(e=>{const r=e.getBoundingClientRect();return{x:r.x,y:r.y,width:r.width,height:r.height}});
  for(const sel of ['.site-header__icon-btn','.site-header__icon-btn svg','.site-header__logo img'])assert.deepEqual(await box(p,sel),await box(home,sel),width+' '+sel);
  assert.deepEqual(await box(p,'.catalog-header-mobile-toggle'),await box(home,'.home-header-contacts-toggle'));
- assert.equal(await p.locator('.catalog-site-nav').isVisible(),false);assert.equal(await p.locator('.catalog-header-breadcrumbs').isVisible(),true);
+ assert.equal(await p.locator('.catalog-site-nav').isVisible(),true);assert.equal(await p.locator('.catalog-header-breadcrumbs').isVisible(),true);
  await p.locator('.catalog-header-mobile-toggle').click();assert.equal(await p.locator('.catalog-header-mobile-panel a:visible').count(),4);await p.keyboard.press('Escape');assert.equal(await p.locator('.catalog-header-mobile-panel').isVisible(),false);
  await p.evaluate(()=>{document.documentElement.style.scrollBehavior='auto';scrollTo(0,1200)});await p.waitForFunction(()=>document.querySelector('.catalog-sticky').getBoundingClientRect().top===0);
  const button=await box(p,'.catalog-sticky__callback'),toggle=await box(p,'.catalog-sticky__contact-toggle'),svg=await box(p,'.catalog-sticky__contact-toggle svg'),first=await box(p,'.catalog-sticky__link');
