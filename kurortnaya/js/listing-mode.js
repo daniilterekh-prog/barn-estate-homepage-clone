@@ -187,4 +187,5 @@
 
   delete list.dataset.modeInitializing;
   list.dataset.modeReady = 'true';
+  window.BarnEstateCatalogFilters.mount(document);
 }());

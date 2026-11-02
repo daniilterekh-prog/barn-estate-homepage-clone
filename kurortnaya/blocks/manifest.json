@@ -1,5 +1,5 @@
 {
-  "version": "1.2.0",
+  "version": "1.3.0",
   "reference": "kurortnaya",
   "sourceCommit": "62aee9e62e2fae669028433ffe411e2f18a01d84",
   "blocks": [
@@ -88,7 +88,7 @@
     {
       "id": "first-degree-hero",
       "title": "Первый экран и поиск",
-      "version": "1.2.0",
+      "version": "1.3.0",
       "source": {
         "repo": "daniilterekh-prog/barn-estate-homepage-clone",
         "commit": "62aee9e62e2fae669028433ffe411e2f18a01d84",
@@ -129,6 +129,16 @@
         "breadcrumbs": "above separator in header",
         "sections": "below separator; horizontal scrolling <=1024",
         "layoutController": "BarnEstateHeaderLayout.mount(parent)"
+      },
+      "filterReference": {
+        "version": "1.3.0",
+        "date": "2026-11-02",
+        "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/katalog-nedvizhimosti/?direction=international",
+        "state": "BarnesFilters",
+        "exceptions": [
+          "resort data",
+          "exclusive new-build/secondary"
+        ]
       }
     },
     {
@@ -184,7 +194,7 @@
     {
       "id": "first-degree-map",
       "title": "Карта проектов",
-      "version": "1.1.0",
+      "version": "1.3.0",
       "source": {
         "repo": "daniilterekh-prog/barn-estate-homepage-clone",
         "commit": "62aee9e62e2fae669028433ffe411e2f18a01d84",
@@ -217,12 +227,22 @@
           "hero H1",
           "FAQ"
         ]
+      },
+      "filterReference": {
+        "version": "1.3.0",
+        "date": "2026-11-02",
+        "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/katalog-nedvizhimosti/?direction=international",
+        "state": "BarnesFilters",
+        "exceptions": [
+          "resort data",
+          "exclusive new-build/secondary"
+        ]
       }
     },
     {
       "id": "first-degree-listing",
       "title": "Фильтры и листинг ЖК / лотов",
-      "version": "1.1.0",
+      "version": "1.3.0",
       "source": {
         "repo": "daniilterekh-prog/barn-estate-homepage-clone",
         "commit": "62aee9e62e2fae669028433ffe411e2f18a01d84",
@@ -255,6 +275,16 @@
         "exceptions": [
           "hero H1",
           "FAQ"
+        ]
+      },
+      "filterReference": {
+        "version": "1.3.0",
+        "date": "2026-11-02",
+        "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/katalog-nedvizhimosti/?direction=international",
+        "state": "BarnesFilters",
+        "exceptions": [
+          "resort data",
+          "exclusive new-build/secondary"
         ]
       }
     },
@@ -755,5 +785,6 @@
         ]
       }
     }
-  ]
+  ],
+  "updated": "2026-11-02"
 }
