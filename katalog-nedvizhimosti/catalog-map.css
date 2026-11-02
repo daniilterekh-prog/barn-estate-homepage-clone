@@ -10,8 +10,10 @@ html body.catalog-listing-page .catalog-map-trigger:disabled{opacity:.45;cursor:
 .catalog-map-browser .map-browser__market{gap:24px}
 .catalog-map-browser .map-browser__list[aria-busy=true]{opacity:.5}
 @media(max-width:767px){
- html body.catalog-listing-page .catalog-result-summary [data-show-favorites]{grid-column:1;grid-row:2}
- html body.catalog-listing-page .catalog-result-summary .catalog-map-trigger{grid-column:2;grid-row:2;justify-self:end;font-size:14px;padding-inline:12px}
+ html body.catalog-listing-page .catalog-result-summary [data-show-favorites]{display:none}
+ html body.catalog-listing-page .catalog-result-summary #results-count{grid-column:2;grid-row:1;justify-self:end;text-align:right}
+ html body.catalog-listing-page .catalog-result-summary .catalog-grid__sort{grid-column:2;grid-row:2}
+ html body.catalog-listing-page .catalog-result-summary .catalog-map-trigger{grid-column:1;grid-row:1/span 2;justify-self:start;align-self:center;font-size:14px;padding-inline:12px}
 }
 /* Short screens scroll the entire drawer rather than squeezing the project list to zero. */
 @media(max-height:700px){

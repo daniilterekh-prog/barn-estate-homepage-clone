@@ -1,0 +1,1120 @@
+{
+  "base": "http://127.0.0.1:8921/katalog-nedvizhimosti/",
+  "date": "2026-11-02T16:11:16.059Z",
+  "measurements": [
+    {
+      "direction": "city",
+      "width": 320,
+      "display": "grid",
+      "count": {
+        "x": 224.3125,
+        "y": 563.78125,
+        "width": 58.6875,
+        "height": 18.1875,
+        "top": 563.78125,
+        "right": 283,
+        "bottom": 581.96875,
+        "left": 224.3125
+      },
+      "sort": {
+        "x": 145.78125,
+        "y": 581.96875,
+        "width": 137.21875,
+        "height": 44,
+        "top": 581.96875,
+        "right": 283,
+        "bottom": 625.96875,
+        "left": 145.78125
+      },
+      "map": {
+        "x": 22,
+        "y": 572.875,
+        "width": 111.78125,
+        "height": 44,
+        "top": 572.875,
+        "right": 133.78125,
+        "bottom": 616.875,
+        "left": 22
+      },
+      "favorites": false,
+      "overflow": false
+    },
+    {
+      "direction": "country",
+      "width": 320,
+      "display": "grid",
+      "count": {
+        "x": 218.28125,
+        "y": 563.78125,
+        "width": 64.71875,
+        "height": 18.1875,
+        "top": 563.78125,
+        "right": 283,
+        "bottom": 581.96875,
+        "left": 218.28125
+      },
+      "sort": {
+        "x": 145.78125,
+        "y": 581.96875,
+        "width": 137.21875,
+        "height": 44,
+        "top": 581.96875,
+        "right": 283,
+        "bottom": 625.96875,
+        "left": 145.78125
+      },
+      "map": {
+        "x": 22,
+        "y": 572.875,
+        "width": 111.78125,
+        "height": 44,
+        "top": 572.875,
+        "right": 133.78125,
+        "bottom": 616.875,
+        "left": 22
+      },
+      "favorites": false,
+      "overflow": false
+    },
+    {
+      "direction": "commercial",
+      "width": 320,
+      "display": "grid",
+      "count": {
+        "x": 224.078125,
+        "y": 563.78125,
+        "width": 58.921875,
+        "height": 18.1875,
+        "top": 563.78125,
+        "right": 283,
+        "bottom": 581.96875,
+        "left": 224.078125
+      },
+      "sort": {
+        "x": 145.78125,
+        "y": 581.96875,
+        "width": 137.21875,
+        "height": 44,
+        "top": 581.96875,
+        "right": 283,
+        "bottom": 625.96875,
+        "left": 145.78125
+      },
+      "map": {
+        "x": 22,
+        "y": 572.875,
+        "width": 111.78125,
+        "height": 44,
+        "top": 572.875,
+        "right": 133.78125,
+        "bottom": 616.875,
+        "left": 22
+      },
+      "favorites": false,
+      "overflow": false
+    },
+    {
+      "direction": "resort",
+      "width": 320,
+      "display": "grid",
+      "count": {
+        "x": 213.0625,
+        "y": 563.78125,
+        "width": 69.9375,
+        "height": 18.1875,
+        "top": 563.78125,
+        "right": 283,
+        "bottom": 581.96875,
+        "left": 213.0625
+      },
+      "sort": {
+        "x": 145.78125,
+        "y": 581.96875,
+        "width": 137.21875,
+        "height": 44,
+        "top": 581.96875,
+        "right": 283,
+        "bottom": 625.96875,
+        "left": 145.78125
+      },
+      "map": {
+        "x": 22,
+        "y": 572.875,
+        "width": 111.78125,
+        "height": 44,
+        "top": 572.875,
+        "right": 133.78125,
+        "bottom": 616.875,
+        "left": 22
+      },
+      "favorites": false,
+      "overflow": false
+    },
+    {
+      "direction": "international",
+      "width": 320,
+      "display": "grid",
+      "count": {
+        "x": 224.3125,
+        "y": 563.78125,
+        "width": 58.6875,
+        "height": 18.1875,
+        "top": 563.78125,
+        "right": 283,
+        "bottom": 581.96875,
+        "left": 224.3125
+      },
+      "sort": {
+        "x": 145.78125,
+        "y": 581.96875,
+        "width": 137.21875,
+        "height": 44,
+        "top": 581.96875,
+        "right": 283,
+        "bottom": 625.96875,
+        "left": 145.78125
+      },
+      "map": {
+        "x": 22,
+        "y": 572.875,
+        "width": 111.78125,
+        "height": 44,
+        "top": 572.875,
+        "right": 133.78125,
+        "bottom": 616.875,
+        "left": 22
+      },
+      "favorites": false,
+      "overflow": false
+    },
+    {
+      "direction": "city",
+      "width": 390,
+      "display": "grid",
+      "count": {
+        "x": 294.3125,
+        "y": 537.390625,
+        "width": 58.6875,
+        "height": 18.1875,
+        "top": 537.390625,
+        "right": 353,
+        "bottom": 555.578125,
+        "left": 294.3125
+      },
+      "sort": {
+        "x": 173,
+        "y": 555.578125,
+        "width": 180,
+        "height": 44,
+        "top": 555.578125,
+        "right": 353,
+        "bottom": 599.578125,
+        "left": 173
+      },
+      "map": {
+        "x": 22,
+        "y": 546.484375,
+        "width": 111.78125,
+        "height": 44,
+        "top": 546.484375,
+        "right": 133.78125,
+        "bottom": 590.484375,
+        "left": 22
+      },
+      "favorites": false,
+      "overflow": false
+    },
+    {
+      "direction": "country",
+      "width": 390,
+      "display": "grid",
+      "count": {
+        "x": 288.28125,
+        "y": 537.390625,
+        "width": 64.71875,
+        "height": 18.1875,
+        "top": 537.390625,
+        "right": 353,
+        "bottom": 555.578125,
+        "left": 288.28125
+      },
+      "sort": {
+        "x": 173,
+        "y": 555.578125,
+        "width": 180,
+        "height": 44,
+        "top": 555.578125,
+        "right": 353,
+        "bottom": 599.578125,
+        "left": 173
+      },
+      "map": {
+        "x": 22,
+        "y": 546.484375,
+        "width": 111.78125,
+        "height": 44,
+        "top": 546.484375,
+        "right": 133.78125,
+        "bottom": 590.484375,
+        "left": 22
+      },
+      "favorites": false,
+      "overflow": false
+    },
+    {
+      "direction": "commercial",
+      "width": 390,
+      "display": "grid",
+      "count": {
+        "x": 294.078125,
+        "y": 537.390625,
+        "width": 58.921875,
+        "height": 18.1875,
+        "top": 537.390625,
+        "right": 353,
+        "bottom": 555.578125,
+        "left": 294.078125
+      },
+      "sort": {
+        "x": 173,
+        "y": 555.578125,
+        "width": 180,
+        "height": 44,
+        "top": 555.578125,
+        "right": 353,
+        "bottom": 599.578125,
+        "left": 173
+      },
+      "map": {
+        "x": 22,
+        "y": 546.484375,
+        "width": 111.78125,
+        "height": 44,
+        "top": 546.484375,
+        "right": 133.78125,
+        "bottom": 590.484375,
+        "left": 22
+      },
+      "favorites": false,
+      "overflow": false
+    },
+    {
+      "direction": "resort",
+      "width": 390,
+      "display": "grid",
+      "count": {
+        "x": 283.0625,
+        "y": 537.390625,
+        "width": 69.9375,
+        "height": 18.1875,
+        "top": 537.390625,
+        "right": 353,
+        "bottom": 555.578125,
+        "left": 283.0625
+      },
+      "sort": {
+        "x": 173,
+        "y": 555.578125,
+        "width": 180,
+        "height": 44,
+        "top": 555.578125,
+        "right": 353,
+        "bottom": 599.578125,
+        "left": 173
+      },
+      "map": {
+        "x": 22,
+        "y": 546.484375,
+        "width": 111.78125,
+        "height": 44,
+        "top": 546.484375,
+        "right": 133.78125,
+        "bottom": 590.484375,
+        "left": 22
+      },
+      "favorites": false,
+      "overflow": false
+    },
+    {
+      "direction": "international",
+      "width": 390,
+      "display": "grid",
+      "count": {
+        "x": 294.3125,
+        "y": 537.390625,
+        "width": 58.6875,
+        "height": 18.1875,
+        "top": 537.390625,
+        "right": 353,
+        "bottom": 555.578125,
+        "left": 294.3125
+      },
+      "sort": {
+        "x": 173,
+        "y": 555.578125,
+        "width": 180,
+        "height": 44,
+        "top": 555.578125,
+        "right": 353,
+        "bottom": 599.578125,
+        "left": 173
+      },
+      "map": {
+        "x": 22,
+        "y": 546.484375,
+        "width": 111.78125,
+        "height": 44,
+        "top": 546.484375,
+        "right": 133.78125,
+        "bottom": 590.484375,
+        "left": 22
+      },
+      "favorites": false,
+      "overflow": false
+    },
+    {
+      "direction": "city",
+      "width": 540,
+      "display": "grid",
+      "count": {
+        "x": 444.3125,
+        "y": 537.390625,
+        "width": 58.6875,
+        "height": 18.1875,
+        "top": 537.390625,
+        "right": 503,
+        "bottom": 555.578125,
+        "left": 444.3125
+      },
+      "sort": {
+        "x": 323,
+        "y": 555.578125,
+        "width": 180,
+        "height": 44,
+        "top": 555.578125,
+        "right": 503,
+        "bottom": 599.578125,
+        "left": 323
+      },
+      "map": {
+        "x": 22,
+        "y": 546.484375,
+        "width": 111.78125,
+        "height": 44,
+        "top": 546.484375,
+        "right": 133.78125,
+        "bottom": 590.484375,
+        "left": 22
+      },
+      "favorites": false,
+      "overflow": false
+    },
+    {
+      "direction": "country",
+      "width": 540,
+      "display": "grid",
+      "count": {
+        "x": 438.28125,
+        "y": 537.390625,
+        "width": 64.71875,
+        "height": 18.1875,
+        "top": 537.390625,
+        "right": 503,
+        "bottom": 555.578125,
+        "left": 438.28125
+      },
+      "sort": {
+        "x": 323,
+        "y": 555.578125,
+        "width": 180,
+        "height": 44,
+        "top": 555.578125,
+        "right": 503,
+        "bottom": 599.578125,
+        "left": 323
+      },
+      "map": {
+        "x": 22,
+        "y": 546.484375,
+        "width": 111.78125,
+        "height": 44,
+        "top": 546.484375,
+        "right": 133.78125,
+        "bottom": 590.484375,
+        "left": 22
+      },
+      "favorites": false,
+      "overflow": false
+    },
+    {
+      "direction": "commercial",
+      "width": 540,
+      "display": "grid",
+      "count": {
+        "x": 444.078125,
+        "y": 537.390625,
+        "width": 58.921875,
+        "height": 18.1875,
+        "top": 537.390625,
+        "right": 503,
+        "bottom": 555.578125,
+        "left": 444.078125
+      },
+      "sort": {
+        "x": 323,
+        "y": 555.578125,
+        "width": 180,
+        "height": 44,
+        "top": 555.578125,
+        "right": 503,
+        "bottom": 599.578125,
+        "left": 323
+      },
+      "map": {
+        "x": 22,
+        "y": 546.484375,
+        "width": 111.78125,
+        "height": 44,
+        "top": 546.484375,
+        "right": 133.78125,
+        "bottom": 590.484375,
+        "left": 22
+      },
+      "favorites": false,
+      "overflow": false
+    },
+    {
+      "direction": "resort",
+      "width": 540,
+      "display": "grid",
+      "count": {
+        "x": 433.0625,
+        "y": 537.390625,
+        "width": 69.9375,
+        "height": 18.1875,
+        "top": 537.390625,
+        "right": 503,
+        "bottom": 555.578125,
+        "left": 433.0625
+      },
+      "sort": {
+        "x": 323,
+        "y": 555.578125,
+        "width": 180,
+        "height": 44,
+        "top": 555.578125,
+        "right": 503,
+        "bottom": 599.578125,
+        "left": 323
+      },
+      "map": {
+        "x": 22,
+        "y": 546.484375,
+        "width": 111.78125,
+        "height": 44,
+        "top": 546.484375,
+        "right": 133.78125,
+        "bottom": 590.484375,
+        "left": 22
+      },
+      "favorites": false,
+      "overflow": false
+    },
+    {
+      "direction": "international",
+      "width": 540,
+      "display": "grid",
+      "count": {
+        "x": 444.3125,
+        "y": 537.390625,
+        "width": 58.6875,
+        "height": 18.1875,
+        "top": 537.390625,
+        "right": 503,
+        "bottom": 555.578125,
+        "left": 444.3125
+      },
+      "sort": {
+        "x": 323,
+        "y": 555.578125,
+        "width": 180,
+        "height": 44,
+        "top": 555.578125,
+        "right": 503,
+        "bottom": 599.578125,
+        "left": 323
+      },
+      "map": {
+        "x": 22,
+        "y": 546.484375,
+        "width": 111.78125,
+        "height": 44,
+        "top": 546.484375,
+        "right": 133.78125,
+        "bottom": 590.484375,
+        "left": 22
+      },
+      "favorites": false,
+      "overflow": false
+    },
+    {
+      "direction": "city",
+      "width": 767,
+      "display": "grid",
+      "count": {
+        "x": 669.3125,
+        "y": 612.59375,
+        "width": 58.6875,
+        "height": 18.1875,
+        "top": 612.59375,
+        "right": 728,
+        "bottom": 630.78125,
+        "left": 669.3125
+      },
+      "sort": {
+        "x": 548,
+        "y": 630.78125,
+        "width": 180,
+        "height": 44,
+        "top": 630.78125,
+        "right": 728,
+        "bottom": 674.78125,
+        "left": 548
+      },
+      "map": {
+        "x": 24,
+        "y": 621.6875,
+        "width": 111.78125,
+        "height": 44,
+        "top": 621.6875,
+        "right": 135.78125,
+        "bottom": 665.6875,
+        "left": 24
+      },
+      "favorites": false,
+      "overflow": false
+    },
+    {
+      "direction": "country",
+      "width": 767,
+      "display": "grid",
+      "count": {
+        "x": 663.28125,
+        "y": 612.59375,
+        "width": 64.71875,
+        "height": 18.1875,
+        "top": 612.59375,
+        "right": 728,
+        "bottom": 630.78125,
+        "left": 663.28125
+      },
+      "sort": {
+        "x": 548,
+        "y": 630.78125,
+        "width": 180,
+        "height": 44,
+        "top": 630.78125,
+        "right": 728,
+        "bottom": 674.78125,
+        "left": 548
+      },
+      "map": {
+        "x": 24,
+        "y": 621.6875,
+        "width": 111.78125,
+        "height": 44,
+        "top": 621.6875,
+        "right": 135.78125,
+        "bottom": 665.6875,
+        "left": 24
+      },
+      "favorites": false,
+      "overflow": false
+    },
+    {
+      "direction": "commercial",
+      "width": 767,
+      "display": "grid",
+      "count": {
+        "x": 669.078125,
+        "y": 612.59375,
+        "width": 58.921875,
+        "height": 18.1875,
+        "top": 612.59375,
+        "right": 728,
+        "bottom": 630.78125,
+        "left": 669.078125
+      },
+      "sort": {
+        "x": 548,
+        "y": 630.78125,
+        "width": 180,
+        "height": 44,
+        "top": 630.78125,
+        "right": 728,
+        "bottom": 674.78125,
+        "left": 548
+      },
+      "map": {
+        "x": 24,
+        "y": 621.6875,
+        "width": 111.78125,
+        "height": 44,
+        "top": 621.6875,
+        "right": 135.78125,
+        "bottom": 665.6875,
+        "left": 24
+      },
+      "favorites": false,
+      "overflow": false
+    },
+    {
+      "direction": "resort",
+      "width": 767,
+      "display": "grid",
+      "count": {
+        "x": 658.0625,
+        "y": 612.59375,
+        "width": 69.9375,
+        "height": 18.1875,
+        "top": 612.59375,
+        "right": 728,
+        "bottom": 630.78125,
+        "left": 658.0625
+      },
+      "sort": {
+        "x": 548,
+        "y": 630.78125,
+        "width": 180,
+        "height": 44,
+        "top": 630.78125,
+        "right": 728,
+        "bottom": 674.78125,
+        "left": 548
+      },
+      "map": {
+        "x": 24,
+        "y": 621.6875,
+        "width": 111.78125,
+        "height": 44,
+        "top": 621.6875,
+        "right": 135.78125,
+        "bottom": 665.6875,
+        "left": 24
+      },
+      "favorites": false,
+      "overflow": false
+    },
+    {
+      "direction": "international",
+      "width": 767,
+      "display": "grid",
+      "count": {
+        "x": 669.3125,
+        "y": 612.59375,
+        "width": 58.6875,
+        "height": 18.1875,
+        "top": 612.59375,
+        "right": 728,
+        "bottom": 630.78125,
+        "left": 669.3125
+      },
+      "sort": {
+        "x": 548,
+        "y": 630.78125,
+        "width": 180,
+        "height": 44,
+        "top": 630.78125,
+        "right": 728,
+        "bottom": 674.78125,
+        "left": 548
+      },
+      "map": {
+        "x": 24,
+        "y": 621.6875,
+        "width": 111.78125,
+        "height": 44,
+        "top": 621.6875,
+        "right": 135.78125,
+        "bottom": 665.6875,
+        "left": 24
+      },
+      "favorites": false,
+      "overflow": false
+    },
+    {
+      "direction": "city",
+      "width": 768,
+      "display": "flex",
+      "count": {
+        "x": 24,
+        "y": 574.84375,
+        "width": 62.875,
+        "height": 19.5,
+        "top": 574.84375,
+        "right": 86.875,
+        "bottom": 594.34375,
+        "left": 24
+      },
+      "sort": {
+        "x": 529,
+        "y": 562.59375,
+        "width": 200,
+        "height": 44,
+        "top": 562.59375,
+        "right": 729,
+        "bottom": 606.59375,
+        "left": 529
+      },
+      "map": {
+        "x": 373.25,
+        "y": 562.59375,
+        "width": 127.75,
+        "height": 44,
+        "top": 562.59375,
+        "right": 501,
+        "bottom": 606.59375,
+        "left": 373.25
+      },
+      "favorites": true,
+      "overflow": false
+    },
+    {
+      "direction": "country",
+      "width": 768,
+      "display": "flex",
+      "count": {
+        "x": 24,
+        "y": 574.84375,
+        "width": 69.34375,
+        "height": 19.5,
+        "top": 574.84375,
+        "right": 93.34375,
+        "bottom": 594.34375,
+        "left": 24
+      },
+      "sort": {
+        "x": 529,
+        "y": 562.59375,
+        "width": 200,
+        "height": 44,
+        "top": 562.59375,
+        "right": 729,
+        "bottom": 606.59375,
+        "left": 529
+      },
+      "map": {
+        "x": 373.25,
+        "y": 562.59375,
+        "width": 127.75,
+        "height": 44,
+        "top": 562.59375,
+        "right": 501,
+        "bottom": 606.59375,
+        "left": 373.25
+      },
+      "favorites": true,
+      "overflow": false
+    },
+    {
+      "direction": "commercial",
+      "width": 768,
+      "display": "flex",
+      "count": {
+        "x": 24,
+        "y": 574.84375,
+        "width": 63.125,
+        "height": 19.5,
+        "top": 574.84375,
+        "right": 87.125,
+        "bottom": 594.34375,
+        "left": 24
+      },
+      "sort": {
+        "x": 529,
+        "y": 562.59375,
+        "width": 200,
+        "height": 44,
+        "top": 562.59375,
+        "right": 729,
+        "bottom": 606.59375,
+        "left": 529
+      },
+      "map": {
+        "x": 373.25,
+        "y": 562.59375,
+        "width": 127.75,
+        "height": 44,
+        "top": 562.59375,
+        "right": 501,
+        "bottom": 606.59375,
+        "left": 373.25
+      },
+      "favorites": true,
+      "overflow": false
+    },
+    {
+      "direction": "resort",
+      "width": 768,
+      "display": "flex",
+      "count": {
+        "x": 24,
+        "y": 574.84375,
+        "width": 74.9375,
+        "height": 19.5,
+        "top": 574.84375,
+        "right": 98.9375,
+        "bottom": 594.34375,
+        "left": 24
+      },
+      "sort": {
+        "x": 529,
+        "y": 562.59375,
+        "width": 200,
+        "height": 44,
+        "top": 562.59375,
+        "right": 729,
+        "bottom": 606.59375,
+        "left": 529
+      },
+      "map": {
+        "x": 373.25,
+        "y": 562.59375,
+        "width": 127.75,
+        "height": 44,
+        "top": 562.59375,
+        "right": 501,
+        "bottom": 606.59375,
+        "left": 373.25
+      },
+      "favorites": true,
+      "overflow": false
+    },
+    {
+      "direction": "international",
+      "width": 768,
+      "display": "flex",
+      "count": {
+        "x": 24,
+        "y": 574.84375,
+        "width": 62.875,
+        "height": 19.5,
+        "top": 574.84375,
+        "right": 86.875,
+        "bottom": 594.34375,
+        "left": 24
+      },
+      "sort": {
+        "x": 529,
+        "y": 562.59375,
+        "width": 200,
+        "height": 44,
+        "top": 562.59375,
+        "right": 729,
+        "bottom": 606.59375,
+        "left": 529
+      },
+      "map": {
+        "x": 373.25,
+        "y": 562.59375,
+        "width": 127.75,
+        "height": 44,
+        "top": 562.59375,
+        "right": 501,
+        "bottom": 606.59375,
+        "left": 373.25
+      },
+      "favorites": true,
+      "overflow": false
+    },
+    {
+      "direction": "city",
+      "width": 1440,
+      "display": "flex",
+      "count": {
+        "x": 68.328125,
+        "y": 500.84375,
+        "width": 62.875,
+        "height": 19.5,
+        "top": 500.84375,
+        "right": 131.203125,
+        "bottom": 520.34375,
+        "left": 68.328125
+      },
+      "sort": {
+        "x": 1156.671875,
+        "y": 488.59375,
+        "width": 200,
+        "height": 44,
+        "top": 488.59375,
+        "right": 1356.671875,
+        "bottom": 532.59375,
+        "left": 1156.671875
+      },
+      "map": {
+        "x": 1000.921875,
+        "y": 488.59375,
+        "width": 127.75,
+        "height": 44,
+        "top": 488.59375,
+        "right": 1128.671875,
+        "bottom": 532.59375,
+        "left": 1000.921875
+      },
+      "favorites": true,
+      "overflow": false
+    },
+    {
+      "direction": "country",
+      "width": 1440,
+      "display": "flex",
+      "count": {
+        "x": 68.328125,
+        "y": 500.84375,
+        "width": 69.34375,
+        "height": 19.5,
+        "top": 500.84375,
+        "right": 137.671875,
+        "bottom": 520.34375,
+        "left": 68.328125
+      },
+      "sort": {
+        "x": 1156.671875,
+        "y": 488.59375,
+        "width": 200,
+        "height": 44,
+        "top": 488.59375,
+        "right": 1356.671875,
+        "bottom": 532.59375,
+        "left": 1156.671875
+      },
+      "map": {
+        "x": 1000.921875,
+        "y": 488.59375,
+        "width": 127.75,
+        "height": 44,
+        "top": 488.59375,
+        "right": 1128.671875,
+        "bottom": 532.59375,
+        "left": 1000.921875
+      },
+      "favorites": true,
+      "overflow": false
+    },
+    {
+      "direction": "commercial",
+      "width": 1440,
+      "display": "flex",
+      "count": {
+        "x": 68.328125,
+        "y": 500.84375,
+        "width": 63.125,
+        "height": 19.5,
+        "top": 500.84375,
+        "right": 131.453125,
+        "bottom": 520.34375,
+        "left": 68.328125
+      },
+      "sort": {
+        "x": 1156.671875,
+        "y": 488.59375,
+        "width": 200,
+        "height": 44,
+        "top": 488.59375,
+        "right": 1356.671875,
+        "bottom": 532.59375,
+        "left": 1156.671875
+      },
+      "map": {
+        "x": 1000.921875,
+        "y": 488.59375,
+        "width": 127.75,
+        "height": 44,
+        "top": 488.59375,
+        "right": 1128.671875,
+        "bottom": 532.59375,
+        "left": 1000.921875
+      },
+      "favorites": true,
+      "overflow": false
+    },
+    {
+      "direction": "resort",
+      "width": 1440,
+      "display": "flex",
+      "count": {
+        "x": 68.328125,
+        "y": 500.84375,
+        "width": 74.9375,
+        "height": 19.5,
+        "top": 500.84375,
+        "right": 143.265625,
+        "bottom": 520.34375,
+        "left": 68.328125
+      },
+      "sort": {
+        "x": 1156.671875,
+        "y": 488.59375,
+        "width": 200,
+        "height": 44,
+        "top": 488.59375,
+        "right": 1356.671875,
+        "bottom": 532.59375,
+        "left": 1156.671875
+      },
+      "map": {
+        "x": 1000.921875,
+        "y": 488.59375,
+        "width": 127.75,
+        "height": 44,
+        "top": 488.59375,
+        "right": 1128.671875,
+        "bottom": 532.59375,
+        "left": 1000.921875
+      },
+      "favorites": true,
+      "overflow": false
+    },
+    {
+      "direction": "international",
+      "width": 1440,
+      "display": "flex",
+      "count": {
+        "x": 68.328125,
+        "y": 500.84375,
+        "width": 62.875,
+        "height": 19.5,
+        "top": 500.84375,
+        "right": 131.203125,
+        "bottom": 520.34375,
+        "left": 68.328125
+      },
+      "sort": {
+        "x": 1156.671875,
+        "y": 488.59375,
+        "width": 200,
+        "height": 44,
+        "top": 488.59375,
+        "right": 1356.671875,
+        "bottom": 532.59375,
+        "left": 1156.671875
+      },
+      "map": {
+        "x": 1000.921875,
+        "y": 488.59375,
+        "width": 127.75,
+        "height": 44,
+        "top": 488.59375,
+        "right": 1128.671875,
+        "bottom": 532.59375,
+        "left": 1000.921875
+      },
+      "favorites": true,
+      "overflow": false
+    }
+  ],
+  "errors": [],
+  "http": [],
+  "axe": [],
+  "passed": true
+}
