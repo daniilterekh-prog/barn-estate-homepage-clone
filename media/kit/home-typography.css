@@ -1,0 +1,249 @@
+/* BARNES owner/ambassador role contracts, 2026-10-27.
+ * Provenance and intentional component exceptions: typography-alignment/README.md.
+ * The captured HTML and compiled Nuxt assets remain immutable.
+ */
+body.barnes-home-typography {
+  --home-primary: #1e1e1e;
+  --home-secondary: #4f4d49;
+  --home-muted: #656462;
+  --home-brand: #8b1d25;
+  --home-heading: 38px;
+  --home-lead: 22px;
+  --home-lead-line: 33px;
+  --home-eyebrow: 14px;
+  --home-eyebrow-line: 16.1px;
+  --home-action: 17px;
+  --home-field: 18px;
+  --home-card: 24px;
+  --home-listing: 22px;
+  --home-price: 26px;
+  font-synthesis: none;
+}
+/* H1 and H2 deliberately share the same visual scale. */
+body.barnes-home-typography :is(.services-section__title, .services-section__subtitle,
+ .departments-section__title, .barnes-choice__title, .reviews-section__title, .team-section__title, .partners-section__title,
+ .office-contact__copy, .news-section__title, .newsletter-cta__copy) {
+  font-size: var(--home-heading) !important;
+  font-weight: 300 !important;
+  line-height: 1.2 !important;
+  letter-spacing: normal !important;
+  color: var(--home-primary) !important;
+}
+body.barnes-home-typography :is(.barnes-choice__title, .team-section__title,
+ .partners-section__title, .news-section__title) { line-height: 1 !important; }
+body.barnes-home-typography :is(.services-section__eyebrow, .reviews-section__eyebrow,
+ .news-section__eyebrow) {
+  font-size: var(--home-eyebrow) !important;
+  font-weight: 400 !important;
+  line-height: var(--home-eyebrow-line) !important;
+  letter-spacing: .12em !important;
+  color: var(--home-secondary) !important;
+}
+body.barnes-home-typography :is(.services-section__description, .partners-section__description,
+ .team-section__description, .reviews-section__text, .office-contact__lead,
+ .newsletter-cta__lead) {
+  font-size: var(--home-lead) !important;
+  font-weight: 300 !important;
+  line-height: var(--home-lead-line) !important;
+  letter-spacing: normal !important;
+  color: var(--home-secondary) !important;
+}
+/* Service-card titles keep the original responsive scale: 42 / 35 / 26px. */
+body.barnes-home-typography .department-card__title {
+  font-size: var(--home-direction-title) !important;
+  font-weight: 300 !important;
+  line-height: 1.15 !important;
+  letter-spacing: .08em !important;
+  color: #fff !important;
+}
+body.barnes-home-typography .apartment-card__name {
+  font-size: var(--home-listing) !important;
+  font-weight: 400 !important;
+  line-height: 1.12 !important;
+  color: var(--home-primary) !important;
+}
+body.barnes-home-typography :is(.apartment-card__price) {
+  font-size: var(--home-price) !important;
+  font-weight: 500 !important;
+  line-height: 1.2 !important;
+  color: var(--home-primary) !important;
+}
+body.barnes-home-typography :is(.apartment-card__address, .apartment-card__lotid) {
+  font-size: 13px !important;
+  font-weight: 300 !important;
+  line-height: 18px !important;
+  color: var(--home-muted) !important;
+}
+body.barnes-home-typography :is(.apartment-card__spec-value) {
+  font-size: 16px !important;
+  line-height: 20px !important;
+  font-weight: 400 !important;
+  color: var(--home-primary) !important;
+}
+body.barnes-home-typography .team-member-card__name {
+  font-size: 20px !important;
+  line-height: 24px !important;
+  font-weight: 400 !important;
+  color: #fff !important;
+}
+body.barnes-home-typography .team-member-card__role {
+  font-size: 13px !important;
+  line-height: 18px !important;
+  font-weight: 300 !important;
+  color: rgba(255,255,255,.8) !important;
+}
+body.barnes-home-typography .reviews-section__author {
+  font-size: 13px !important;
+  line-height: 18px !important;
+  font-weight: 400 !important;
+  color: var(--home-muted) !important;
+}
+body.barnes-home-typography .news-section__category {
+  font-size: 18px !important;
+  line-height: 1.35 !important;
+  font-weight: 400 !important;
+  color: var(--home-primary) !important;
+}
+body.barnes-home-typography :is(.ui-button,
+ .newsletter-form__row > button, .office-contact__social, .site-footer__callback-btn) {
+  font-size: var(--home-action) !important;
+  line-height: 1.1 !important;
+  font-weight: 400 !important;
+}
+/* Text links and header controls have their own compact contracts. */
+body.barnes-home-typography :is(.services-section__link, .department-card__link,
+ .team-member-card__link, .news-section__read-more, .ui-more-link__label) {
+  font-size: 14px !important;
+  line-height: 1.2 !important;
+  font-weight: 400 !important;
+}
+body.barnes-home-typography .news-section__read-more { color: var(--home-primary) !important; }
+body.barnes-home-typography .ui-more-link__label { color: var(--home-brand) !important; }
+body.barnes-home-typography .site-header__request { font-size: 16px !important; font-weight: 400 !important; }
+/* Header directions retain the original Tilda Sans Light (300). */
+body.barnes-home-typography .barnes-choice__tab {
+  font-size: 22px !important;
+  line-height: 1.2 !important;
+  font-weight: 300 !important;
+}
+body.barnes-home-typography .barnes-choice__select-value {
+  font-size: 18px !important;
+  line-height: 1.2 !important;
+  font-weight: 300 !important;
+}
+body.barnes-home-typography :is(.feedback-modal__input, .newsletter-form__row > input) {
+  font-size: var(--home-field) !important;
+  font-weight: 300 !important;
+  line-height: 1.4 !important;
+  color: var(--home-primary) !important;
+}
+body.barnes-home-typography :is(.feedback-modal__input, .newsletter-form__row > input)::placeholder {
+  font-size: inherit !important;
+  font-weight: inherit !important;
+  color: var(--home-muted) !important;
+  opacity: 1;
+}
+body.barnes-home-typography .feedback-modal__title {
+  font-size: var(--home-card) !important;
+  font-weight: 400 !important;
+  line-height: 1.2 !important;
+  color: var(--home-primary) !important;
+}
+body.barnes-home-typography :is(.newsletter-form__note, .newsletter-form__note-link,
+ .feedback-modal__consent-text, .feedback-modal__consent-link) {
+  font-size: 13px !important;
+  line-height: 18px !important;
+  font-weight: 300 !important;
+  color: var(--home-muted) !important;
+}
+/* FloatingExpert retains its approved compact snapshot type sizes. */
+body.barnes-home-typography :is(.floating-expert__label, .floating-expert__name) { color: var(--home-muted) !important; }
+body.barnes-home-typography .floating-expert__title { color: var(--home-brand) !important; font-weight: 400 !important; }
+@media (min-width: 1441px) {
+  body.barnes-home-typography { --home-heading: 44px; --home-action: 19px; --home-field: 20px; }
+}
+@media (max-width: 1024px) {
+  body.barnes-home-typography { --home-card: 20px; }
+    body.barnes-home-typography .site-header__request { font-size: 15px !important; }
+}
+@media (max-width: 540px) {
+  body.barnes-home-typography {
+    --home-heading: 22px;
+    --home-lead: 15px;
+    --home-lead-line: 21px;
+    --home-eyebrow: 12px;
+    --home-eyebrow-line: 14.4px;
+    --home-action: 18px;
+    --home-field: 17px;
+    --home-listing: 20px;
+    --home-price: 24px;
+  }
+  body.barnes-home-typography :is(.apartment-card__spec-value) { font-size: 13px !important; line-height: 16.25px !important; }
+  body.barnes-home-typography .site-footer__column-title { font-size: 14px !important; line-height: 1.2 !important; font-weight: 400 !important; }
+  body.barnes-home-typography .site-footer__link { font-size: 13px !important; line-height: 1.4 !important; font-weight: 400 !important; }
+}
+
+/* Match the light direction label in its mobile option list. */
+body.barnes-home-typography .barnes-choice__select-option { font-weight:300 !important; }
+
+/* Mobile contact layout, scoped to the page's contact block. */
+@media(max-width:540px) {
+ body.barnes-home-typography .office-contact .office-contact__social {
+  color:#4f4d49;
+  border-color:#8b8986;
+  display:grid;
+  grid-template-columns:20px minmax(0,1fr) 16px;
+  align-items:center;
+  gap:12px;
+  padding-inline:18px !important;
+  text-align:left;
+ }
+ body.barnes-home-typography .office-contact .office-contact__social > :is(.contact-button__icon,.office-contact__brand-icon,.office-contact__phone-icon) {
+  width:20px;height:20px;margin:0;justify-self:center;
+ }
+ body.barnes-home-typography .office-contact .office-contact__arrow {
+  width:16px;height:16px;color:#656462;margin:0;
+ }
+ body.barnes-home-typography .office-contact .office-contact__social:focus-visible {outline:2px solid #8b1d25;outline-offset:3px;}
+}
+@media(max-width:540px) {
+ body.barnes-home-typography .office-contact .office-contact__social {padding-block:6px;}
+ body.barnes-home-typography .office-contact .office-contact__social > span:not(.office-contact__arrow) {
+  min-width:0;white-space:normal;overflow:visible;text-overflow:clip;line-height:1.2;
+ }
+}
+
+/* Service cards: light titles and text links, per user refinement 2026-10-31. */
+body.barnes-home-typography .services-section__card :is(.services-section__card-title,.services-section__link) {
+  font-weight: 300 !important;
+}
+
+/* Keep the two Moscow direction labels on one line within their own card padding. */
+body.barnes-home-typography .departments-section__item:nth-child(-n+2) { min-width:0; }
+body.barnes-home-typography .departments-section__item:nth-child(-n+2) .department-card__content {
+  container-type:inline-size;
+}
+body.barnes-home-typography .departments-section__item:nth-child(-n+2) .department-card__title {
+  max-width:none;
+  white-space:nowrap;
+  font-size:min(var(--home-direction-title),7cqw) !important;
+}
+
+/* Equal, slightly larger leading contact icons; arrows retain their own size. */
+body.barnes-home-typography .office-contact .office-contact__social > :is(.contact-button__icon,.office-contact__brand-icon,.office-contact__phone-icon) {width:26px!important;height:26px!important;min-width:26px;flex-shrink:0;object-fit:contain;}
+@media(max-width:540px) {
+ body.barnes-home-typography .office-contact .office-contact__social {grid-template-columns:26px minmax(0,1fr) 16px;}
+}
+
+/* Project descriptions share the body-description scale, retaining white contrast. */
+body.barnes-home-typography .project-hero__cta-text {
+ font-size:var(--home-lead)!important;
+ font-weight:300!important;
+ line-height:var(--home-lead-line)!important;
+ letter-spacing:normal!important;
+}
+
+/* Original direction-card typography, verified on barn-estate.ru 2026-11-01. */
+body.barnes-home-typography {--home-direction-title:25px;}
+@media(max-width:1440px) {body.barnes-home-typography {--home-direction-title:22px;}}
+@media(max-width:540px) {body.barnes-home-typography {--home-direction-title:20px;}}

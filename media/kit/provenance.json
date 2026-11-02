@@ -1,0 +1,31 @@
+{
+  "reference": "barn-estate-home-reference-v1.0.0",
+  "sourceCommit": "ed93d2cc02ab4c1887e0a46807f506b14b076fcd",
+  "files": [
+    {
+      "file": "home-typography.css",
+      "source": "main-site/pages/home/exact-2026-10-21/source/home-typography.css",
+      "sha256": "daf2a31c248d482abc6bfb513117b87832f846746f527edd40068f1eabb33024"
+    },
+    {
+      "file": "home-spacing.css",
+      "source": "main-site/pages/home/exact-2026-10-21/source/home-spacing.css",
+      "sha256": "dc550d621f1f9f37b4dfd732e8bdfa7904b7162f8fb2519285b86f191a97180c"
+    },
+    {
+      "file": "home-buttons.css",
+      "source": "main-site/pages/home/exact-2026-10-21/source/home-buttons.css",
+      "sha256": "e84e451a1d7f46adbb300557606af73b1ce081a2ce986ccd0368a206ce822b7a"
+    },
+    {
+      "file": "home-header-contacts.css",
+      "source": "main-site/pages/home/exact-2026-10-21/source/home-header-contacts.css",
+      "sha256": "41f6bc970cdc98a665da7c286c16d7418660e8fedcedee23e0e7c84e4e46cabd"
+    },
+    {
+      "file": "home-header-contacts.js",
+      "source": "main-site/pages/home/exact-2026-10-21/source/home-header-contacts.js",
+      "sha256": "ec87ed670d121d9a73ed9566db19c41818ac6d5628162464c1bfe3019c6cfaf5"
+    }
+  ]
+}
