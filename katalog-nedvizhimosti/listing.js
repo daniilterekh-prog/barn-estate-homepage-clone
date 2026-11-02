@@ -7,6 +7,7 @@
  const profile=()=>profiles[currentDirection],state=()=>window.BarnesFilters.getState();
  const effectiveDeal=()=>state().deal||profile().defaultDeal||'buy';
  const blank=()=>({directions:[],propertyTypes:[],priceRanges:[],areaRanges:[],brandFlags:[],priceMin:'',priceMax:'',areaMin:'',areaMax:'',landMin:'',landMax:'',roomsMin:'',roomsMax:'',bedrooms:''});
+ let resultSnapshot={items:[],ready:false,error:false},catalogReady=false;
  const arrayKeys=['directions','propertyTypes','priceRanges','areaRanges','brandFlags'];
  const numericKeys=['priceMin','priceMax','areaMin','areaMax','landMin','landMax','roomsMin','roomsMax'];
  const modeButtons=()=>[...document.querySelectorAll('.catalog-mode-switch > .catalog-mode-switch__button')];
@@ -123,6 +124,8 @@
   $('.catalog-mode-detailed-filters').setAttribute('aria-label',filterGroups?`Все фильтры: выбрано групп — ${filterGroups}`:'Все фильтры');
   $('[data-show-favorites]').setAttribute('aria-pressed',String(onlyFavorites));document.querySelectorAll('[data-favorite-count],.site-header__favorites-count').forEach(el=>{el.textContent=favorites.length;});
   writeURL();
+  resultSnapshot={items:visible.slice(),ready:catalogReady,error:false,direction:currentDirection,query,sort,onlyFavorites,filters:s};
+  document.dispatchEvent(new CustomEvent('barn:catalog-results',{detail:resultSnapshot}));
  }
  function reset(){query='';onlyFavorites=false;limit=6;$('#catalog-search').value='';window.BarnesFilters.patch({...blank(),market:state().market,deal:effectiveDeal()});}
  document.addEventListener('barnes:filters-apply',()=>{limit=6;if(objects.length)render();});
@@ -135,6 +138,15 @@
  $('#catalog-search').addEventListener('input',event=>{query=event.target.value;limit=6;render();});$('#catalog-search').addEventListener('keydown',event=>{if(event.key==='Enter')$('#results').focus();});
  document.querySelectorAll('[data-reset],[data-reset-empty]').forEach(button=>button.addEventListener('click',reset));
  $('[data-more]').addEventListener('click',()=>{const previous=limit;limit+=6;render();list.children[previous]?.querySelector('.apartment-card__name').focus({preventScroll:true});});
+ // The map consumes the complete filtered/sorted result, including cards beyond page one.
+ window.BarnesCatalogListing={
+  getSnapshot:()=>({...resultSnapshot,items:resultSnapshot.items.slice()}),
+  setQuery(value){query=String(value);$('#catalog-search').value=query;limit=6;render();},
+  setDirection(value){if(profiles[value])setDirection(value);},
+  setMode(index){modeButtons()[index===1?1:0].click();},
+  setSort(value){const select=$('.catalog-grid__sort select');if([...select.options].some(option=>option.value===value)){select.value=value;select.dispatchEvent(new Event('change',{bubbles:true}));}},
+  reset
+ };
  function showFavorites(event){event.preventDefault();onlyFavorites=!onlyFavorites;limit=6;render();}
  $('[data-show-favorites]').addEventListener('click',showFavorites);$('.site-header__favorites-btn')?.addEventListener('click',showFavorites);
  const search=$('.site-header__search-btn');if(search){search.href='#catalog-search';search.addEventListener('click',event=>{event.preventDefault();$('#catalog-search').focus();});}
@@ -182,8 +194,8 @@
  window.addEventListener('popstate',()=>{readURL();render();});
  async function load(){
   $('.catalog-load-error').hidden=true;$('.catalog-empty').hidden=true;
-  try{const response=await fetch('objects.json');if(!response.ok)throw Error('load');objects=await response.json();if(!Array.isArray(objects))throw Error('shape');favorites=favorites.filter(id=>objects.some(item=>item.id===id));render();}
-  catch{list.setAttribute('aria-busy','false');$('.catalog-load-error').hidden=false;$('.catalog-grid__footer').hidden=true;$('#results-count').textContent='';}
+  try{const response=await fetch('objects.json');if(!response.ok)throw Error('load');objects=await response.json();if(!Array.isArray(objects))throw Error('shape');catalogReady=true;favorites=favorites.filter(id=>objects.some(item=>item.id===id));render();}
+  catch{catalogReady=false;list.setAttribute('aria-busy','false');$('.catalog-load-error').hidden=false;$('.catalog-grid__footer').hidden=true;$('#results-count').textContent='';resultSnapshot={items:[],ready:false,error:true};document.dispatchEvent(new CustomEvent('barn:catalog-results',{detail:resultSnapshot}));}
  }
  $('[data-retry]').addEventListener('click',load);readURL();load();
 })();
