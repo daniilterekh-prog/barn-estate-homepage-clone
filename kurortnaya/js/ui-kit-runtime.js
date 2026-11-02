@@ -362,6 +362,8 @@
     addSectionEyebrow(entry[0], entry[1], entry[2]);
   });
 
+  window.BarnEstateFaq.mount(document);
+
   var introDetails = document.querySelector('.catalog-intro__details');
   if (introDetails) {
     var introToggle = document.querySelector('.catalog-intro__toggle');

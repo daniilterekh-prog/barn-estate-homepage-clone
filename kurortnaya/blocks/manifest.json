@@ -413,6 +413,15 @@
           "hero H1",
           "FAQ"
         ]
+      },
+      "disclosure": {
+        "controller": "../../js/faq.js",
+        "independentItems": true,
+        "keyboard": [
+          "Enter",
+          "Space"
+        ],
+        "approvedTypographyUnchanged": true
       }
     },
     {
