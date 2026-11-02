@@ -1,0 +1,866 @@
+{
+  "date": "2026-11-02",
+  "desktopHeight": 64,
+  "mobileHeight": 48,
+  "rows": [
+    {
+      "width": 320,
+      "states": [
+        {
+          "sticky": false,
+          "nodes": [
+            {
+              "class": "site-header__logo",
+              "rect": {
+                "x": 86,
+                "y": 16,
+                "width": 133,
+                "height": 48,
+                "top": 16,
+                "right": 219,
+                "bottom": 64,
+                "left": 86
+              }
+            }
+          ],
+          "logoHeight": 48,
+          "overflow": false
+        },
+        {
+          "sticky": true,
+          "nodes": [
+            {
+              "class": "catalog-sticky__nav",
+              "rect": {
+                "x": 22,
+                "y": -53.326148986816406,
+                "width": 261,
+                "height": 44,
+                "top": -53.326148986816406,
+                "right": 283,
+                "bottom": -9.326148986816406,
+                "left": 22
+              }
+            }
+          ],
+          "logoHeight": 0,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "states": [
+        {
+          "sticky": false,
+          "nodes": [
+            {
+              "class": "site-header__logo",
+              "rect": {
+                "x": 101.359375,
+                "y": 16,
+                "width": 172.265625,
+                "height": 48,
+                "top": 16,
+                "right": 273.625,
+                "bottom": 64,
+                "left": 101.359375
+              }
+            }
+          ],
+          "logoHeight": 48,
+          "overflow": false
+        },
+        {
+          "sticky": true,
+          "nodes": [
+            {
+              "class": "catalog-sticky__nav",
+              "rect": {
+                "x": 22,
+                "y": -57,
+                "width": 331,
+                "height": 44,
+                "top": -57,
+                "right": 353,
+                "bottom": -13,
+                "left": 22
+              }
+            }
+          ],
+          "logoHeight": 0,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "width": 540,
+      "states": [
+        {
+          "sticky": false,
+          "nodes": [
+            {
+              "class": "site-header__logo",
+              "rect": {
+                "x": 176.359375,
+                "y": 16,
+                "width": 172.265625,
+                "height": 48,
+                "top": 16,
+                "right": 348.625,
+                "bottom": 64,
+                "left": 176.359375
+              }
+            }
+          ],
+          "logoHeight": 48,
+          "overflow": false
+        },
+        {
+          "sticky": true,
+          "nodes": [
+            {
+              "class": "catalog-sticky__nav",
+              "rect": {
+                "x": 22,
+                "y": -57,
+                "width": 481,
+                "height": 44,
+                "top": -57,
+                "right": 503,
+                "bottom": -13,
+                "left": 22
+              }
+            }
+          ],
+          "logoHeight": 0,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "states": [
+        {
+          "sticky": false,
+          "nodes": [
+            {
+              "class": "site-header__logo",
+              "rect": {
+                "x": 261.65625,
+                "y": 32,
+                "width": 229.6875,
+                "height": 64,
+                "top": 32,
+                "right": 491.34375,
+                "bottom": 96,
+                "left": 261.65625
+              }
+            }
+          ],
+          "logoHeight": 64,
+          "overflow": false
+        },
+        {
+          "sticky": true,
+          "nodes": [
+            {
+              "class": "catalog-sticky__nav",
+              "rect": {
+                "x": 24,
+                "y": -72.5,
+                "width": 217.65625,
+                "height": 44,
+                "top": -72.5,
+                "right": 241.65625,
+                "bottom": -28.5,
+                "left": 24
+              }
+            },
+            {
+              "class": "catalog-sticky__logo",
+              "rect": {
+                "x": 261.65625,
+                "y": -82.5,
+                "width": 229.6875,
+                "height": 64,
+                "top": -82.5,
+                "right": 491.34375,
+                "bottom": -18.5,
+                "left": 261.65625
+              }
+            },
+            {
+              "class": "catalog-sticky__brand",
+              "rect": {
+                "x": 438.4375,
+                "y": -72.5,
+                "width": 290.5625,
+                "height": 44,
+                "top": -72.5,
+                "right": 729,
+                "bottom": -28.5,
+                "left": 438.4375
+              }
+            }
+          ],
+          "logoHeight": 64,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "width": 1024,
+      "states": [
+        {
+          "sticky": false,
+          "nodes": [
+            {
+              "class": "site-header__logo",
+              "rect": {
+                "x": 389.65625,
+                "y": 32,
+                "width": 229.6875,
+                "height": 64,
+                "top": 32,
+                "right": 619.34375,
+                "bottom": 96,
+                "left": 389.65625
+              }
+            }
+          ],
+          "logoHeight": 64,
+          "overflow": false
+        },
+        {
+          "sticky": true,
+          "nodes": [
+            {
+              "class": "catalog-sticky__nav",
+              "rect": {
+                "x": 40.875,
+                "y": -72.5,
+                "width": 328.78125,
+                "height": 44,
+                "top": -72.5,
+                "right": 369.65625,
+                "bottom": -28.5,
+                "left": 40.875
+              }
+            },
+            {
+              "class": "catalog-sticky__logo",
+              "rect": {
+                "x": 389.65625,
+                "y": -82.5,
+                "width": 229.6875,
+                "height": 64,
+                "top": -82.5,
+                "right": 619.34375,
+                "bottom": -18.5,
+                "left": 389.65625
+              }
+            },
+            {
+              "class": "catalog-sticky__brand",
+              "rect": {
+                "x": 677.5625,
+                "y": -72.5,
+                "width": 290.5625,
+                "height": 44,
+                "top": -72.5,
+                "right": 968.125,
+                "bottom": -28.5,
+                "left": 677.5625
+              }
+            }
+          ],
+          "logoHeight": 64,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "width": 1025,
+      "states": [
+        {
+          "sticky": false,
+          "nodes": [
+            {
+              "class": "site-header__left",
+              "rect": {
+                "x": 40.953125,
+                "y": 42,
+                "width": 329.203125,
+                "height": 44,
+                "top": 42,
+                "right": 370.15625,
+                "bottom": 86,
+                "left": 40.953125
+              }
+            },
+            {
+              "class": "site-header__logo",
+              "rect": {
+                "x": 390.15625,
+                "y": 32,
+                "width": 229.6875,
+                "height": 64,
+                "top": 32,
+                "right": 619.84375,
+                "bottom": 96,
+                "left": 390.15625
+              }
+            },
+            {
+              "class": "site-header__right",
+              "rect": {
+                "x": 658.484375,
+                "y": 42,
+                "width": 310.5625,
+                "height": 44,
+                "top": 42,
+                "right": 969.046875,
+                "bottom": 86,
+                "left": 658.484375
+              }
+            }
+          ],
+          "logoHeight": 64,
+          "overflow": false
+        },
+        {
+          "sticky": true,
+          "nodes": [
+            {
+              "class": "catalog-sticky__nav",
+              "rect": {
+                "x": 40.953125,
+                "y": -78.3061294555664,
+                "width": 317.203125,
+                "height": 44,
+                "top": -78.3061294555664,
+                "right": 358.15625,
+                "bottom": -34.306129455566406,
+                "left": 40.953125
+              }
+            },
+            {
+              "class": "catalog-sticky__logo",
+              "rect": {
+                "x": 390.15625,
+                "y": -88.3061294555664,
+                "width": 229.6875,
+                "height": 64,
+                "top": -88.3061294555664,
+                "right": 619.84375,
+                "bottom": -24.306129455566406,
+                "left": 390.15625
+              }
+            },
+            {
+              "class": "catalog-sticky__brand",
+              "rect": {
+                "x": 650.484375,
+                "y": -78.3061294555664,
+                "width": 318.5625,
+                "height": 44,
+                "top": -78.3061294555664,
+                "right": 969.046875,
+                "bottom": -34.306129455566406,
+                "left": 650.484375
+              }
+            }
+          ],
+          "logoHeight": 64,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "width": 1280,
+      "states": [
+        {
+          "sticky": false,
+          "nodes": [
+            {
+              "class": "site-header__left",
+              "rect": {
+                "x": 57.765625,
+                "y": 42,
+                "width": 439.890625,
+                "height": 44,
+                "top": 42,
+                "right": 497.65625,
+                "bottom": 86,
+                "left": 57.765625
+              }
+            },
+            {
+              "class": "site-header__logo",
+              "rect": {
+                "x": 517.65625,
+                "y": 32,
+                "width": 229.6875,
+                "height": 64,
+                "top": 32,
+                "right": 747.34375,
+                "bottom": 96,
+                "left": 517.65625
+              }
+            },
+            {
+              "class": "site-header__right",
+              "rect": {
+                "x": 896.671875,
+                "y": 42,
+                "width": 310.5625,
+                "height": 44,
+                "top": 42,
+                "right": 1207.234375,
+                "bottom": 86,
+                "left": 896.671875
+              }
+            }
+          ],
+          "logoHeight": 64,
+          "overflow": false
+        },
+        {
+          "sticky": true,
+          "nodes": [
+            {
+              "class": "catalog-sticky__nav",
+              "rect": {
+                "x": 57.765625,
+                "y": -78.3030776977539,
+                "width": 427.890625,
+                "height": 44,
+                "top": -78.3030776977539,
+                "right": 485.65625,
+                "bottom": -34.303077697753906,
+                "left": 57.765625
+              }
+            },
+            {
+              "class": "catalog-sticky__logo",
+              "rect": {
+                "x": 517.65625,
+                "y": -88.3030776977539,
+                "width": 229.6875,
+                "height": 64,
+                "top": -88.3030776977539,
+                "right": 747.34375,
+                "bottom": -24.303077697753906,
+                "left": 517.65625
+              }
+            },
+            {
+              "class": "catalog-sticky__brand",
+              "rect": {
+                "x": 888.671875,
+                "y": -78.3030776977539,
+                "width": 318.5625,
+                "height": 44,
+                "top": -78.3030776977539,
+                "right": 1207.234375,
+                "bottom": -34.303077697753906,
+                "left": 888.671875
+              }
+            }
+          ],
+          "logoHeight": 64,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "states": [
+        {
+          "sticky": false,
+          "nodes": [
+            {
+              "class": "site-header__left",
+              "rect": {
+                "x": 68.328125,
+                "y": 42,
+                "width": 509.328125,
+                "height": 44,
+                "top": 42,
+                "right": 577.65625,
+                "bottom": 86,
+                "left": 68.328125
+              }
+            },
+            {
+              "class": "site-header__logo",
+              "rect": {
+                "x": 597.65625,
+                "y": 32,
+                "width": 229.6875,
+                "height": 64,
+                "top": 32,
+                "right": 827.34375,
+                "bottom": 96,
+                "left": 597.65625
+              }
+            },
+            {
+              "class": "site-header__right",
+              "rect": {
+                "x": 1046.109375,
+                "y": 42,
+                "width": 310.5625,
+                "height": 44,
+                "top": 42,
+                "right": 1356.671875,
+                "bottom": 86,
+                "left": 1046.109375
+              }
+            }
+          ],
+          "logoHeight": 64,
+          "overflow": false
+        },
+        {
+          "sticky": true,
+          "nodes": [
+            {
+              "class": "catalog-sticky__nav",
+              "rect": {
+                "x": 68.328125,
+                "y": -78.3073501586914,
+                "width": 497.328125,
+                "height": 44,
+                "top": -78.3073501586914,
+                "right": 565.65625,
+                "bottom": -34.307350158691406,
+                "left": 68.328125
+              }
+            },
+            {
+              "class": "catalog-sticky__logo",
+              "rect": {
+                "x": 597.65625,
+                "y": -88.3073501586914,
+                "width": 229.6875,
+                "height": 64,
+                "top": -88.3073501586914,
+                "right": 827.34375,
+                "bottom": -24.307350158691406,
+                "left": 597.65625
+              }
+            },
+            {
+              "class": "catalog-sticky__brand",
+              "rect": {
+                "x": 1038.109375,
+                "y": -78.3073501586914,
+                "width": 318.5625,
+                "height": 44,
+                "top": -78.3073501586914,
+                "right": 1356.671875,
+                "bottom": -34.307350158691406,
+                "left": 1038.109375
+              }
+            }
+          ],
+          "logoHeight": 64,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "states": [
+        {
+          "sticky": false,
+          "nodes": [
+            {
+              "class": "site-header__left",
+              "rect": {
+                "x": 99.984375,
+                "y": 42,
+                "width": 717.671875,
+                "height": 44,
+                "top": 42,
+                "right": 817.65625,
+                "bottom": 86,
+                "left": 99.984375
+              }
+            },
+            {
+              "class": "site-header__logo",
+              "rect": {
+                "x": 837.65625,
+                "y": 32,
+                "width": 229.6875,
+                "height": 64,
+                "top": 32,
+                "right": 1067.34375,
+                "bottom": 96,
+                "left": 837.65625
+              }
+            },
+            {
+              "class": "site-header__right",
+              "rect": {
+                "x": 1494.453125,
+                "y": 42,
+                "width": 310.5625,
+                "height": 44,
+                "top": 42,
+                "right": 1805.015625,
+                "bottom": 86,
+                "left": 1494.453125
+              }
+            }
+          ],
+          "logoHeight": 64,
+          "overflow": false
+        },
+        {
+          "sticky": true,
+          "nodes": [
+            {
+              "class": "catalog-sticky__nav",
+              "rect": {
+                "x": 99.984375,
+                "y": -78.33231353759766,
+                "width": 705.671875,
+                "height": 44,
+                "top": -78.33231353759766,
+                "right": 805.65625,
+                "bottom": -34.332313537597656,
+                "left": 99.984375
+              }
+            },
+            {
+              "class": "catalog-sticky__logo",
+              "rect": {
+                "x": 837.65625,
+                "y": -88.33231353759766,
+                "width": 229.6875,
+                "height": 64,
+                "top": -88.33231353759766,
+                "right": 1067.34375,
+                "bottom": -24.332313537597656,
+                "left": 837.65625
+              }
+            },
+            {
+              "class": "catalog-sticky__brand",
+              "rect": {
+                "x": 1486.453125,
+                "y": -78.33231353759766,
+                "width": 318.5625,
+                "height": 44,
+                "top": -78.33231353759766,
+                "right": 1805.015625,
+                "bottom": -34.332313537597656,
+                "left": 1486.453125
+              }
+            }
+          ],
+          "logoHeight": 64,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "width": 2560,
+      "states": [
+        {
+          "sticky": false,
+          "nodes": [
+            {
+              "class": "site-header__left",
+              "rect": {
+                "x": 312.5,
+                "y": 42,
+                "width": 825.15625,
+                "height": 44,
+                "top": 42,
+                "right": 1137.65625,
+                "bottom": 86,
+                "left": 312.5
+              }
+            },
+            {
+              "class": "site-header__logo",
+              "rect": {
+                "x": 1157.65625,
+                "y": 32,
+                "width": 229.6875,
+                "height": 64,
+                "top": 32,
+                "right": 1387.34375,
+                "bottom": 96,
+                "left": 1157.65625
+              }
+            },
+            {
+              "class": "site-header__right",
+              "rect": {
+                "x": 1921.9375,
+                "y": 42,
+                "width": 310.5625,
+                "height": 44,
+                "top": 42,
+                "right": 2232.5,
+                "bottom": 86,
+                "left": 1921.9375
+              }
+            }
+          ],
+          "logoHeight": 64,
+          "overflow": false
+        },
+        {
+          "sticky": true,
+          "nodes": [
+            {
+              "class": "catalog-sticky__nav",
+              "rect": {
+                "x": 312.5,
+                "y": -85,
+                "width": 813.15625,
+                "height": 44,
+                "top": -85,
+                "right": 1125.65625,
+                "bottom": -41,
+                "left": 312.5
+              }
+            },
+            {
+              "class": "catalog-sticky__logo",
+              "rect": {
+                "x": 1157.65625,
+                "y": -95,
+                "width": 229.6875,
+                "height": 64,
+                "top": -95,
+                "right": 1387.34375,
+                "bottom": -31,
+                "left": 1157.65625
+              }
+            },
+            {
+              "class": "catalog-sticky__brand",
+              "rect": {
+                "x": 1913.9375,
+                "y": -85,
+                "width": 318.5625,
+                "height": 44,
+                "top": -85,
+                "right": 2232.5,
+                "bottom": -41,
+                "left": 1913.9375
+              }
+            }
+          ],
+          "logoHeight": 64,
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "width": 3840,
+      "states": [
+        {
+          "sticky": false,
+          "nodes": [
+            {
+              "class": "site-header__left",
+              "rect": {
+                "x": 952.5,
+                "y": 42,
+                "width": 825.15625,
+                "height": 44,
+                "top": 42,
+                "right": 1777.65625,
+                "bottom": 86,
+                "left": 952.5
+              }
+            },
+            {
+              "class": "site-header__logo",
+              "rect": {
+                "x": 1797.65625,
+                "y": 32,
+                "width": 229.6875,
+                "height": 64,
+                "top": 32,
+                "right": 2027.34375,
+                "bottom": 96,
+                "left": 1797.65625
+              }
+            },
+            {
+              "class": "site-header__right",
+              "rect": {
+                "x": 2561.9375,
+                "y": 42,
+                "width": 310.5625,
+                "height": 44,
+                "top": 42,
+                "right": 2872.5,
+                "bottom": 86,
+                "left": 2561.9375
+              }
+            }
+          ],
+          "logoHeight": 64,
+          "overflow": false
+        },
+        {
+          "sticky": true,
+          "nodes": [
+            {
+              "class": "catalog-sticky__nav",
+              "rect": {
+                "x": 952.5,
+                "y": -85,
+                "width": 813.15625,
+                "height": 44,
+                "top": -85,
+                "right": 1765.65625,
+                "bottom": -41,
+                "left": 952.5
+              }
+            },
+            {
+              "class": "catalog-sticky__logo",
+              "rect": {
+                "x": 1797.65625,
+                "y": -95,
+                "width": 229.6875,
+                "height": 64,
+                "top": -95,
+                "right": 2027.34375,
+                "bottom": -31,
+                "left": 1797.65625
+              }
+            },
+            {
+              "class": "catalog-sticky__brand",
+              "rect": {
+                "x": 2553.9375,
+                "y": -85,
+                "width": 318.5625,
+                "height": 44,
+                "top": -85,
+                "right": 2872.5,
+                "bottom": -41,
+                "left": 2553.9375
+              }
+            }
+          ],
+          "logoHeight": 64,
+          "overflow": false
+        }
+      ]
+    }
+  ]
+}

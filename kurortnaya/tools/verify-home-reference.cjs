@@ -48,7 +48,7 @@ try{for(const width of [320,390,540,768,1024,1440,1441,1920,2560,3840]){
  const modalChannel=await get('.feedback-modal__channels button');assert.equal(modalChannel.size,(mobile?18:17)+'px');assert.equal(modalChannel.radius,'1px');assert.ok(modalChannel.height>=46);
  await page.keyboard.press('Escape');
  await page.evaluate(()=>{document.documentElement.style.scrollBehavior='auto';scrollTo(0,document.querySelector('.catalog-hero').offsetHeight+300)});await page.locator('.catalog-sticky--visible').waitFor();
- if(width>1024){const logo=await get('.catalog-sticky__logo img');near(logo.height,48,'Logo height');near(logo.width,48*327/91.11,'Logo ratio');const request=await get('.catalog-sticky__request');assert.equal(request.background,'rgba(0, 0, 0, 0)');assert.equal(request.radius,'1px');}
+ if(width>1024){const logo=await get('.catalog-sticky__logo img');near(logo.height,64,'Logo height');near(logo.width,64*327/91.11,'Logo ratio');const request=await get('.catalog-sticky__request');assert.equal(request.background,'rgba(0, 0, 0, 0)');assert.equal(request.radius,'1px');}
  assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+1),false,'No overflow');
  if([390,1440,2560,3840].includes(width))await page.screenshot({path:'/tmp/resort-home-kit-'+width+'.png'});
  report.checks.push({width,kit:true,exceptionsPreserved:true,overflow:false});console.log('PASS home kit '+width);await page.close();
