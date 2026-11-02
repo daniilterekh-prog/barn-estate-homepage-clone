@@ -1,0 +1,33 @@
+{
+  "base": "http://127.0.0.1:8921/katalog-nedvizhimosti/",
+  "date": "2026-11-02T15:13:14.561Z",
+  "checks": [
+    "default layer: no outer frame, two quick fields, no collections/selected row",
+    "URL conditions, independent removal, remaining state and focus",
+    "4+ single-choice value, collections Apply/Cancel/restore, clearing bedrooms and reset",
+    "same advanced bedrooms update map, catalogue, URL and removable condition",
+    "desktop/mobile full form and selected-row accessibility",
+    "long labels at 320px, radio arrow keys and URL reload"
+  ],
+  "axe": [
+    {
+      "name": "full form 1440",
+      "violations": []
+    },
+    {
+      "name": "selected conditions 1440",
+      "violations": []
+    },
+    {
+      "name": "full form 390",
+      "violations": []
+    },
+    {
+      "name": "selected conditions 390",
+      "violations": []
+    }
+  ],
+  "errors": [],
+  "http": [],
+  "passed": true
+}

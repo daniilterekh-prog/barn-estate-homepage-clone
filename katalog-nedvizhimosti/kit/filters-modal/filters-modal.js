@@ -43,6 +43,7 @@
   function restore(value) {
     inputs.forEach(function (input) {
       if (input.type === 'checkbox') input.checked = (value[input.name] || []).includes(input.value);
+      else if (input.type === 'radio') input.checked = (value[input.name] || '') === input.value;
       else input.value = value[input.name] || '';
       input.removeAttribute('aria-invalid');
     });
@@ -122,6 +123,8 @@
       if (input.type === 'checkbox') {
         if (!draft[input.name]) draft[input.name] = [];
         if (input.checked) draft[input.name].push(input.value);
+      } else if (input.type === 'radio') {
+        if (input.checked) draft[input.name] = input.value;
       } else {
         var raw = input.value.trim().replace(/[\s\u00a0]/g,'');
         if (raw && !/^\d+$/.test(raw)) invalid = invalid || input;

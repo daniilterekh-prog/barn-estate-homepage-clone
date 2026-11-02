@@ -6,6 +6,20 @@
  const land=areaGroup.cloneNode(true);land.dataset.contextGroup='land';land.querySelector('.hero-filter-panel-content__title').textContent='Площадь участка, сотки';
  land.querySelector('[name=areaMin]').name='landMin';land.querySelector('[name=areaMax]').name='landMax';
  land.querySelectorAll('input').forEach(input=>{input.disabled=true;input.setAttribute('aria-label',input.name==='landMin'?'Площадь участка от, сотки':'Площадь участка до, сотки');});land.hidden=true;areaGroup.after(land);
+ // Advanced controls stay in the same draft/apply form instead of the initial toolbar.
+ const typeGroup=source.content.querySelector('[name=propertyTypes]').closest('.hero-filter-panel-content__group');
+ function choicesGroup(name,title,choices,radio=false){
+  const group=typeGroup.cloneNode(true);group.dataset.contextGroup=name;
+  group.querySelector('.hero-filter-panel-content__title').textContent=title;
+  const options=group.querySelector('.hero-filter-panel-content__checkboxes'),template=options.firstElementChild;
+  options.replaceChildren(...choices.map(([value,label])=>{const node=template.cloneNode(true),input=node.querySelector('input');input.name=name;input.type=radio?'radio':'checkbox';input.value=value;node.querySelector('.ui-checkbox__label').textContent=label;return node;}));
+  if(radio){options.setAttribute('role','radiogroup');options.setAttribute('aria-label',title);}
+  return group;
+ }
+ const beds=choicesGroup('bedrooms','Спальни',[['','Любые'],['1','1'],['2','2'],['3','3'],['4+','4+']],true);typeGroup.after(beds);
+ const collections=choicesGroup('brandFlags','Подборки BARN Estate',[['selection','Выбор BARN Estate'],['exclusive','Эксклюзив BARN Estate']]);
+ const collectionsWrapper=typeGroup.parentElement.cloneNode(false);collectionsWrapper.append(collections);source.content.querySelector('.catalog-hero-filters__panel-sections').append(collectionsWrapper);
+ const areaRanges=choicesGroup('areaRanges','Площадь',[['area-200','до 200 м²'],['area-200-500','200 – 500 м²'],['area-500+','от 500 м²']]).querySelector('.hero-filter-panel-content__checkboxes');areaRanges.dataset.contextChoices='areaRanges';areaGroup.append(areaRanges);
  window.BarnesFilterTemplate=source.innerHTML;
  window.BarnesCatalogConfigureContext=(key,deal)=>{
   const profile=window.BarnesCatalogProfiles[key],configs=window.BarnesCatalogConfigs(key,deal);
@@ -26,6 +40,8 @@
     container.replaceChildren(...options.map(([value,label])=>{const node=original.cloneNode(true);node.querySelector('input').value=value;node.querySelector('input').checked=false;node.querySelector('.ui-checkbox__label').textContent=label;return node;}));
     container.closest('.hero-filter-panel-content__group').querySelector('.hero-filter-panel-content__title').textContent=title;
    }
+   const beds=modal.querySelector('[data-context-group=bedrooms]');beds.hidden=!profile.bedrooms;beds.querySelectorAll('input').forEach(input=>input.disabled=!profile.bedrooms);
+   const areaRanges=modal.querySelector('[data-context-choices=areaRanges]');areaRanges.hidden=!!profile.bedrooms;areaRanges.querySelectorAll('input').forEach(input=>input.disabled=!!profile.bedrooms);
    const rooms=modal.querySelector('[name=roomsMin]').closest('.hero-filter-panel-content__group');rooms.hidden=!profile.rooms;rooms.querySelectorAll('input').forEach(input=>input.disabled=!profile.rooms);
    const land=modal.querySelector('[data-context-group=land]');land.hidden=!profile.land;land.querySelectorAll('input').forEach(input=>input.disabled=!profile.land);
    const area=modal.querySelector('[name=areaMin]').closest('.hero-filter-panel-content__group');area.querySelector('.hero-filter-panel-content__title').textContent=(profile.areaTitle||'Общая площадь')+', м²';
