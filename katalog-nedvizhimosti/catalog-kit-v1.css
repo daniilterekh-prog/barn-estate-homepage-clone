@@ -102,7 +102,6 @@ html body.catalog-listing-page .catalog-global-nav .site-header__nav-link[aria-e
 /* Mobile header follows the approved homepage geometry; section links live in the burger. */
 @media(max-width:767px){
  html body.catalog-listing-page .layout__header .site-header .catalog-global-nav{display:none!important}
- html body.catalog-listing-page .site-header:not(.site-header--scrolled):not(.site-header--menu-open) .home-header-contacts-toggle{display:none}
 }
 @media(max-width:540px){html body.catalog-listing-page .site-header .site-header__logo img{height:36px;width:auto}}
 /* The header's contact popover must sit above the full menu, including across resize. */
