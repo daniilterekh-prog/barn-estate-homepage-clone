@@ -9,7 +9,7 @@ html body.catalog-listing-page .catalog-mode-toolbar {
 .catalog-toolbar__secondary{grid-template-columns:minmax(0,1fr) 188px}
 html body.catalog-listing-page .catalog-mode-toolbar > :is(.catalog-toolbar__primary,.catalog-toolbar__secondary) > [class][class]{grid-area:auto;margin:0;min-width:0}
 html body.catalog-listing-page .catalog-direction{position:relative;display:flex;align-items:center;height:64px;border:1px solid #8b8986;border-radius:1px;background:#fff;color:#1e1e1e}
-html body.catalog-listing-page .catalog-direction>.resort-select-trigger{display:block;box-sizing:border-box;width:100%;height:62px;padding:0 44px 0 20px;border:0;background:transparent;color:inherit;font:400 var(--catalog-filter-font-size)/1.2 'Tilda Sans',sans-serif;text-align:left;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;cursor:pointer}
+html body.catalog-listing-page .catalog-direction>.resort-select-trigger{display:block;box-sizing:border-box;width:100%;height:62px;padding:0 44px 0 20px;border:0;background:transparent;color:inherit;font:300 var(--catalog-filter-font-size)/1.2 'Tilda Sans',sans-serif;text-align:left;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;cursor:pointer}
 html body.catalog-listing-page .catalog-direction:not(.catalog-market)>.resort-select-trigger{font-weight:300}
 .catalog-direction>svg{position:absolute;right:18px;width:14px;height:14px;pointer-events:none}
 html body.catalog-listing-page .catalog-toolbar__primary .catalog-mode-switch{box-sizing:border-box;display:flex;align-items:stretch;gap:0;height:64px;padding:0;border:1px solid #8b8986;border-radius:1px;background:#fff}
