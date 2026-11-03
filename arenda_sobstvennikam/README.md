@@ -15,3 +15,9 @@
 media-header.css/js:логотип, лупа и контакты как на Медиа, адаптивные контакты и штатные меню/формы. У амбассадоров и собственников в закреплённом хедере сохранена левая навигация. [Контракт, исходники и проверки](https://github.com/daniilterekh-prog/barnes-sites/tree/main/main-site/pages/header-media-2026-11-03).
 
 Hero приведён к Медиа: `hero-media-parity.css`; [контракт и проверки](https://github.com/daniilterekh-prog/barnes-sites/tree/main/main-site/pages/hero-media-parity-2026-11-03).
+
+## Техническая очистка ·03.11.2026
+
+Удалены доказанные повторные CSS/SSR-декларации; исходные версии примитивов сохранены в provenance, текущие хэши обновлены. Геометрия, цвета, контент и действия проверяются сравнением до/после. [Единый реестр страниц](https://github.com/daniilterekh-prog/barnes-sites/blob/main/main-site/current-pages.json) · [Метод и отчёты](https://github.com/daniilterekh-prog/barnes-sites/tree/main/main-site/maintenance/2026-11-03-cleanup).
+
+Текущий hero.css собирается из общего main-site/shared/hero-media/hero.css; старые hero-height.css/hero-media-parity.css заменены этим компонентом. Оформление херо не меняется.

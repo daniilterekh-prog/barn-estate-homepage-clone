@@ -13,8 +13,8 @@
     },
     {
       "file": "block.css",
-      "bytes": 77078,
-      "sha256": "c22ff112de397cc855eb51a39dc67cfff8dc3b46ee8b9413095ab6efafa90999"
+      "bytes": 59817,
+      "sha256": "6b8eccc305d59bb1f56e284213315ae4c75f5bd05f42186cea4f99fdf234ca4a"
     },
     {
       "file": "block.html",
@@ -38,13 +38,13 @@
     },
     {
       "file": "index.html",
-      "bytes": 12363,
-      "sha256": "87fa461a3a3a150eb825d91bdd7f5869771e8c174697a2fdbe22d6d5c8e642fd"
+      "bytes": 12378,
+      "sha256": "cde78241c1224a5f0be7a5fdad381326d5d04f38b7dff2169cb3035784fe014c"
     },
     {
       "file": "paste.html",
-      "bytes": 8336490,
-      "sha256": "ecc07dbb1505793f14ec6dd9f0fd98ebb4357cfa97ecfa850d4bba8fd61c8be1"
+      "bytes": 8319229,
+      "sha256": "fd5c7ddea568ce7d48f1b8df5d590e7c44b0050a12198af35f6987a4ececd79a"
     }
   ],
   "assets": [
@@ -163,5 +163,11 @@
       "source": "https://barn-estate.ru/fonts/TildaSans-Light.woff2"
     }
   ],
-  "behavior": "Карточки новостей, slider3/2/1, стрелки и свайп, реальные исходные ссылки."
+  "behavior": "Карточки новостей, slider3/2/1, стрелки и свайп, реальные исходные ссылки.",
+  "maintenance": {
+    "kitVersion": "1.0.2",
+    "method": "exact CSS duplicate cleanup",
+    "originalCssSha256": "c22ff112de397cc855eb51a39dc67cfff8dc3b46ee8b9413095ab6efafa90999",
+    "date": "2026-11-03"
+  }
 }

@@ -13,8 +13,8 @@
     },
     {
       "file": "block.css",
-      "bytes": 77529,
-      "sha256": "0a6ed0f9563da11c46b3f81fcf129b4206102e281350f644a68c70b7212f28c0"
+      "bytes": 61249,
+      "sha256": "4d2b8d2bcab23cc18472323794fc7057a876b3bc7e76e5544cef4aeeb7faf197"
     },
     {
       "file": "block.html",
@@ -38,13 +38,13 @@
     },
     {
       "file": "index.html",
-      "bytes": 6861,
-      "sha256": "0d3b8621497da65705a2658be418729cd8ee2d4c0768e530f569dbf952028871"
+      "bytes": 6876,
+      "sha256": "ba3c56981d8885b0505ea67f8eebecdcbaa33232dd9883c54f9566a7f90c2817"
     },
     {
       "file": "paste.html",
-      "bytes": 1857762,
-      "sha256": "fe0f9db4db370238d1d538661af3419bfc541b413260d45231d0866d846caee1"
+      "bytes": 1841482,
+      "sha256": "17c369003f782430a73a9fbcdb18f8714f4a3aa6de3872942dbb85dd1b030f1e"
     }
   ],
   "assets": [
@@ -134,5 +134,11 @@
     }
   ],
   "behavior": "Контактная бровь и заголовок, ссылки на email/маршрут/мессенджеры/звонок. Фото офиса с новым логотипом, без водяного знака, нижняя граница по левому контенту; телефон без фото.",
-  "spacingUpdate": "2026-11-01"
+  "spacingUpdate": "2026-11-01",
+  "maintenance": {
+    "kitVersion": "1.0.2",
+    "method": "exact CSS duplicate cleanup",
+    "originalCssSha256": "0a6ed0f9563da11c46b3f81fcf129b4206102e281350f644a68c70b7212f28c0",
+    "date": "2026-11-03"
+  }
 }

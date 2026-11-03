@@ -7,6 +7,8 @@
 }
 
 /* Sale valuation popup — matched to the approved owner-rent form. */
+/* The static popup has no VueFinalModal stack manager. */
+.owner-sale-reference-ui .feedback-modal--owner-sale { z-index:2000; }
 .owner-sale-reference-ui .feedback-modal--owner-sale .modal__content {
   background: #fff;
   border: 1px solid #e5e5e5;
@@ -382,36 +384,8 @@
   background: linear-gradient(180deg, rgb(0 0 0 / 42%) 0%, rgb(0 0 0 / 18%) 44%, rgb(0 0 0 / 58%) 100%);
 }
 
-.owner-sale-reference-ui .owner-sale-hero__inner {
-  min-height: inherit;
-  padding-bottom: clamp(64px, 6vw, 110px);
-  padding-top: 190px;
-}
-
 .owner-sale-reference-ui .owner-sale-hero__breadcrumbs {
   margin-bottom: 24px;
-}
-
-.owner-sale-reference-ui .owner-sale-hero__body {
-  align-items: end;
-  gap: clamp(32px, 5vw, 80px);
-}
-
-.owner-sale-reference-ui .owner-sale-hero__copy {
-  max-width: 980px;
-}
-
-.owner-sale-reference-ui .owner-sale-hero__title {
-  font-size: clamp(48px, 5.2vw, 75px);
-  line-height: .98;
-}
-
-.owner-sale-reference-ui .owner-sale-hero__text {
-  color: rgb(255 255 255 / 75%);
-  font-size: 22px;
-  line-height: 1.5;
-  margin-top: 24px;
-  max-width: 800px;
 }
 
 body.owner-sale-reference-ui .owner-sale-hero .breadcrumbs__link {
@@ -1173,10 +1147,6 @@ body.owner-sale-reference-ui .owner-sale-hero .breadcrumbs__link {
     min-height: 680px;
   }
 
-  .owner-sale-reference-ui .owner-sale-hero__inner {
-    padding-top: 130px;
-  }
-
   .owner-sale-reference-ui .owner-sale-stages__body {
     grid-template-columns: 1fr;
   }
@@ -1200,24 +1170,8 @@ body.owner-sale-reference-ui .owner-sale-hero .breadcrumbs__link {
 
 @media (max-width: 540px) {
 
-  .owner-sale-reference-ui .owner-sale-hero__inner {
-    gap: 16px;
-    padding-bottom: 28px;
-  }
-
   .owner-sale-reference-ui .owner-sale-hero__breadcrumbs {
     margin-bottom: 16px;
-  }
-
-  .owner-sale-reference-ui .owner-sale-hero__title {
-    font-size: 35px;
-    line-height: 35px;
-  }
-
-  .owner-sale-reference-ui .owner-sale-hero__text {
-    font-size: 15px;
-    line-height: 1.28;
-    margin-top: 14px;
   }
 
   .owner-sale-reference-ui :is(
@@ -1897,59 +1851,23 @@ body.owner-sale-reference-ui .owner-sale-hero .breadcrumbs__link {
     linear-gradient(90deg, rgb(0 0 0 / 45%), rgb(0 0 0 / 15%) 55%, rgb(0 0 0 / 25%));
 }
 
-.owner-sale-reference-ui .owner-sale-hero__inner {
-  gap: 36px;
-  justify-content: flex-end;
-  padding-bottom: 56px;
-  padding-top: 210px;
-}
-
 .owner-sale-reference-ui .owner-sale-hero__body {
-  align-items: start;
-  column-gap: 48px;
   grid-template-columns: minmax(0, 925px);
-  row-gap: 20px;
-}
-
-.owner-sale-reference-ui .owner-sale-hero__copy {
-  max-width: 925px;
-  width: 100%;
 }
 
 .owner-sale-reference-ui .owner-sale-hero__breadcrumbs {
   margin-bottom: 0;
 }
 
-.owner-sale-reference-ui .owner-sale-hero__text {
-  line-height: 28.16px;
-  margin-top: 16px;
-  max-width: 925px;
-}
-
 .owner-sale-reference-ui .owner-sale-hero__actions {
-  align-self: start;
   grid-column: 1;
   grid-row: 2;
   justify-self: start;
-  margin-top: 0;
-}
-
-.owner-sale-reference-ui .owner-sale-hero__button {
-  gap: 24px;
 }
 
 @media (min-width: 1441px) {
   .owner-sale-reference-ui .owner-sale-hero {
     min-height: 1040px;
-  }
-
-  .owner-sale-reference-ui .owner-sale-hero__inner {
-    gap: 48px;
-    padding-bottom: 72px;
-  }
-
-  .owner-sale-reference-ui .owner-sale-hero__text {
-    margin-top: 20px;
   }
 }
 
@@ -1960,10 +1878,6 @@ body.owner-sale-reference-ui .owner-sale-hero .breadcrumbs__link {
 }
 
 @media (min-width: 1921px) {
-  .owner-sale-reference-ui .owner-sale-hero__title {
-    font-size: 85px;
-    line-height: 85px;
-  }
 
   .owner-sale-reference-ui .catalog-consultation__image {
     object-position: center top;
@@ -1994,26 +1908,13 @@ body.owner-sale-reference-ui .owner-sale-hero .breadcrumbs__link {
     min-height: 640px;
   }
 
-  .owner-sale-reference-ui .owner-sale-hero__inner {
-    gap: 32px;
-    padding-bottom: 48px;
-    padding-top: 110px;
-  }
-
   .owner-sale-reference-ui .owner-sale-hero__body {
-    gap: 32px;
     grid-template-columns: 1fr;
   }
 
   .owner-sale-reference-ui .owner-sale-hero__actions {
     grid-column: auto;
     grid-row: auto;
-    max-width: none;
-    width: 100%;
-  }
-
-  .owner-sale-reference-ui .owner-sale-hero__button {
-    width: 100%;
   }
 }
 
@@ -2026,30 +1927,13 @@ body.owner-sale-reference-ui .owner-sale-hero .breadcrumbs__link {
     min-height: 560px;
   }
 
-  .owner-sale-reference-ui .owner-sale-hero__inner {
-    gap: 28px;
-    padding-bottom: 40px;
-    padding-top: 100px;
-  }
-
   .owner-sale-reference-ui .owner-sale-hero__body {
-    gap: 32px;
     grid-template-columns: 1fr;
   }
 
   .owner-sale-reference-ui .owner-sale-hero__actions {
     grid-column: auto;
     grid-row: auto;
-    max-width: none;
-    width: 100%;
-  }
-
-  .owner-sale-reference-ui .owner-sale-hero__button {
-    width: 100%;
-  }
-
-  .owner-sale-reference-ui .owner-sale-hero__text {
-    margin-top: 14px;
   }
 }
 
@@ -2067,34 +1951,17 @@ body.owner-sale-reference-ui .owner-sale-hero .breadcrumbs__link {
     min-height: 520px;
   }
 
-  .owner-sale-reference-ui .owner-sale-hero__inner {
-    gap: 24px;
-    padding-bottom: 32px;
-    padding-top: 88px;
-  }
-
   .owner-sale-reference-ui .owner-sale-hero__body {
-    gap: 32px;
     grid-template-columns: 1fr;
   }
 
   .owner-sale-reference-ui .owner-sale-hero__actions {
     grid-column: auto;
     grid-row: auto;
-    max-width: none;
-    width: 100%;
   }
 
   .owner-sale-reference-ui .owner-sale-hero__button {
-    gap: 24px;
     padding-block: 16px;
-    width: 100%;
-  }
-
-  .owner-sale-reference-ui .owner-sale-hero__text {
-    display: none;
-    line-height: 19.2px;
-    margin-top: 12px;
   }
 }
 
@@ -2216,16 +2083,6 @@ body.owner-sale-reference-ui .owner-sale-hero .breadcrumbs__link {
   .owner-sale-reference-ui .owner-sale-types__section-title {
     font-size: 44px;
     line-height: 52.8px;
-  }
-}
-
-@media (min-width: 541px) and (max-width: 1024px) {
-  .owner-sale-reference-ui .owner-sale-hero__actions {
-    max-width: 420px;
-  }
-
-  .owner-sale-reference-ui .owner-sale-hero__button {
-    width: 420px;
   }
 }
 

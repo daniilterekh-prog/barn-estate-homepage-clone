@@ -13,8 +13,8 @@
     },
     {
       "file": "block.css",
-      "bytes": 64421,
-      "sha256": "a35e8d4ffd44ab593387eb0bc8b2c59c098c68ac052317f123f61f5bf5af36b6"
+      "bytes": 53613,
+      "sha256": "3094250e7b010d31f588b989b2a28fb2a92a77cedec55978a2fad84ec846cdd7"
     },
     {
       "file": "block.html",
@@ -38,13 +38,13 @@
     },
     {
       "file": "index.html",
-      "bytes": 6164,
-      "sha256": "efb93bc5f5df46bd5bec0c2ec73181586331a753a7c64ae62fff067eea5596f8"
+      "bytes": 6179,
+      "sha256": "fe8e3ef1c265f92c9cbb40a82adabb308a45190e7f7924441d3bf5e829516762"
     },
     {
       "file": "paste.html",
-      "bytes": 1447873,
-      "sha256": "a0e49c925dde322163865e8062cb400458ec9fe9f82030d36700492b6d736e19"
+      "bytes": 1437065,
+      "sha256": "d3f6488787904a9c45df2c5ffb75a819d90befc8f4d503cab5bc1a87ddf26fbd"
     }
   ],
   "assets": [
@@ -109,5 +109,11 @@
       "source": "https://barn-estate.ru/fonts/TildaSans-Light.woff2"
     }
   ],
-  "behavior": "Вводный абзац и восемь раскрываемых. «Читать далее»/«Свернуть», aria-expanded. Раскрываемый текст14px на телефоне/18px выше. Исторический бренд BARNES сохранён. До1920px логотип по высоте правой части; выше1920px440px; телефон220px."
+  "behavior": "Вводный абзац и восемь раскрываемых. «Читать далее»/«Свернуть», aria-expanded. Раскрываемый текст14px на телефоне/18px выше. Исторический бренд BARNES сохранён. До1920px логотип по высоте правой части; выше1920px440px; телефон220px.",
+  "maintenance": {
+    "kitVersion": "1.0.2",
+    "method": "exact CSS duplicate cleanup",
+    "originalCssSha256": "a35e8d4ffd44ab593387eb0bc8b2c59c098c68ac052317f123f61f5bf5af36b6",
+    "date": "2026-11-03"
+  }
 }

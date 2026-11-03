@@ -1,0 +1,119 @@
+[
+  {
+    "key": "home",
+    "title": "Главная",
+    "public": "exact-2026-10-21",
+    "private": "main-site/pages/home/exact-2026-10-21/source",
+    "entry": "index.html",
+    "preview": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/",
+    "mode": "archived-home-with-current-layers"
+  },
+  {
+    "key": "media",
+    "title": "Медиа",
+    "public": "media",
+    "private": "main-site/pages/media",
+    "entry": "index.html",
+    "preview": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/media/",
+    "mode": "current-static-package"
+  },
+  {
+    "key": "partners",
+    "title": "Амбассадоры",
+    "public": "for-partners",
+    "private": "main-site/pages/partners",
+    "entry": "index.html",
+    "preview": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/for-partners/",
+    "mode": "current-static-package"
+  },
+  {
+    "key": "owner-rent",
+    "title": "Собственникам — аренда",
+    "public": "arenda_sobstvennikam",
+    "private": "main-site/pages/owner-rent",
+    "entry": "index.html",
+    "preview": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/arenda_sobstvennikam/",
+    "mode": "current-static-package"
+  },
+  {
+    "key": "owner-sale",
+    "title": "Собственникам — продажа",
+    "public": "prodazha_sobstvennikam",
+    "private": "main-site/pages/owner-sale",
+    "entry": "index.html",
+    "preview": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/prodazha_sobstvennikam/",
+    "mode": "current-static-package"
+  },
+  {
+    "key": "city",
+    "title": "Городская",
+    "public": "gorodskaya-nedvizhimost",
+    "private": "main-site/pages/city",
+    "entry": "index.html",
+    "preview": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/gorodskaya-nedvizhimost/",
+    "mode": "current-static-package"
+  },
+  {
+    "key": "country",
+    "title": "Загородная",
+    "public": "zagorodnaya-nedvizhimost",
+    "private": "main-site/pages/country",
+    "entry": "index.html",
+    "preview": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/zagorodnaya-nedvizhimost/",
+    "mode": "current-static-package"
+  },
+  {
+    "key": "international",
+    "title": "Зарубежная",
+    "public": "mezhdunarodnaya-nedvizhimost",
+    "private": "main-site/pages/international",
+    "entry": "index.html",
+    "preview": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/mezhdunarodnaya-nedvizhimost/",
+    "mode": "current-static-package"
+  },
+  {
+    "key": "commercial",
+    "title": "Коммерческая",
+    "public": "kommercheskaya-nedvizhimost",
+    "private": "main-site/pages/commercial",
+    "entry": "index.html",
+    "preview": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/kommercheskaya-nedvizhimost/",
+    "mode": "current-static-package"
+  },
+  {
+    "key": "resort",
+    "title": "Курортная",
+    "public": "kurortnaya",
+    "private": "main-site/pages/resort/kit-2026-11-01",
+    "entry": "index.html",
+    "preview": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/kurortnaya/",
+    "mode": "current-static-package"
+  },
+  {
+    "key": "catalog",
+    "title": "Каталог",
+    "public": "katalog-nedvizhimosti",
+    "private": "main-site/pages/catalog",
+    "entry": "index.html",
+    "preview": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/katalog-nedvizhimosti/",
+    "mode": "current-static-package"
+  },
+  {
+    "key": "favorites",
+    "title": "Избранное",
+    "public": "izbrannoe",
+    "private": "main-site/pages/favorites",
+    "entry": "index.html",
+    "preview": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/izbrannoe/",
+    "mode": "current-static-package"
+  },
+  {
+    "key": "lot",
+    "title": "Страница лота",
+    "public": "stranitsa-lota",
+    "private": "main-site/pages/lot",
+    "entry": "index.html",
+    "preview": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/stranitsa-lota/",
+    "mode": "current-static-package"
+  }
+]

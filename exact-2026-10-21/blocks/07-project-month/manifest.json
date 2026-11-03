@@ -13,8 +13,8 @@
     },
     {
       "file": "block.css",
-      "bytes": 80789,
-      "sha256": "385206faedd5949a274a00c7cd928ac53e659d2204fea2e75097a12291598cb3"
+      "bytes": 60539,
+      "sha256": "99d07c7a1e22a776ca11986dc25ef2c6a37b19362b87ac4d0f467e78785dcbb8"
     },
     {
       "file": "block.html",
@@ -38,13 +38,13 @@
     },
     {
       "file": "index.html",
-      "bytes": 15351,
-      "sha256": "240270c3cf9dc175211991e41d1f891bad28a4e2cd89cfe5e436432ba328324f"
+      "bytes": 15366,
+      "sha256": "0efe3ed043b34d2f8fdff57b299ab476b75c97579cc448afd4d6a03a94cf312f"
     },
     {
       "file": "paste.html",
-      "bytes": 1987963,
-      "sha256": "1fbcde21d3fea2a041c3d4f03cc529d1e77c156663e744ead71bff15585d354b"
+      "bytes": 1967713,
+      "sha256": "95a31b9643126433968a49e197091e2dc7fdeb870bb8bf21779c79b6fa6861bd"
     }
   ],
   "assets": [
@@ -116,5 +116,11 @@
     }
   ],
   "behavior": "Два проекта, fade-переключение, стрелки и мобильная пагинация, ссылки на проекты.",
-  "spacingUpdate": "2026-11-01"
+  "spacingUpdate": "2026-11-01",
+  "maintenance": {
+    "kitVersion": "1.0.2",
+    "method": "exact CSS duplicate cleanup",
+    "originalCssSha256": "385206faedd5949a274a00c7cd928ac53e659d2204fea2e75097a12291598cb3",
+    "date": "2026-11-03"
+  }
 }

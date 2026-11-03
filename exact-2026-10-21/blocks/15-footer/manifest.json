@@ -13,8 +13,8 @@
     },
     {
       "file": "block.css",
-      "bytes": 84257,
-      "sha256": "649f37e74259d18f4a2cf854a2901b7d923ad2d78d5367ea1c7f01b9163bbc05"
+      "bytes": 62355,
+      "sha256": "94161c31bf3889513861e395e34ec5292ce4fd6275605dc27cafcd319472f1a7"
     },
     {
       "file": "block.html",
@@ -38,13 +38,13 @@
     },
     {
       "file": "index.html",
-      "bytes": 17096,
-      "sha256": "ef0b63e208d4534fd49ed9db96fa9cf44ba8a05628268f13279476d2851d20b0"
+      "bytes": 17111,
+      "sha256": "b0d9c749acb180b04a7c58f7d3028fd57b733697fbf39651f7474310dd13b47f"
     },
     {
       "file": "paste.html",
-      "bytes": 1434458,
-      "sha256": "f8e24be5d7e312709fd16f2af9b93c1725cc9bba4161f894ffdf136873b2c53d"
+      "bytes": 1412556,
+      "sha256": "c0e600ae5f54b294f065dce73999b2ca088d6d863d4903d60270c860bf15f947"
     }
   ],
   "assets": [
@@ -109,5 +109,11 @@
       "source": "https://barn-estate.ru/fonts/TildaSans-Light.woff2"
     }
   ],
-  "behavior": "Навигация, контакты, часы ежедневно09:00–21:00, логотип той же высоты, что в хедере, кнопка квиза."
+  "behavior": "Навигация, контакты, часы ежедневно09:00–21:00, логотип той же высоты, что в хедере, кнопка квиза.",
+  "maintenance": {
+    "kitVersion": "1.0.2",
+    "method": "exact CSS duplicate cleanup",
+    "originalCssSha256": "649f37e74259d18f4a2cf854a2901b7d923ad2d78d5367ea1c7f01b9163bbc05",
+    "date": "2026-11-03"
+  }
 }

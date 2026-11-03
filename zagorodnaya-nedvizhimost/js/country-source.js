@@ -156,7 +156,7 @@
   };
   window.addEventListener('scroll', syncHeader, { passive: true });
   syncHeader();
-  document.querySelectorAll('.site-header__icon-btn').forEach((button) => button.addEventListener('click', () => header?.classList.toggle('site-header--menu-open')));
+
 
   const filterButton = document.querySelector('.catalog-hero-filters__filter-icon');
   filterButton?.addEventListener('click', () => {

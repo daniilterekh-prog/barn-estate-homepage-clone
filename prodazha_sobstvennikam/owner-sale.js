@@ -51,6 +51,14 @@
     document.body.style.overflow = '';
   };
 
+  let feedbackReturnFocus = null;
+  const closeFeedbackDialog = function () {
+    const modal = document.querySelector('.feedback-modal');
+    if (modal) modal.setAttribute('hidden', '');
+    unlockBodyScroll();
+    if (feedbackReturnFocus && feedbackReturnFocus.isConnected) feedbackReturnFocus.focus();
+  };
+
   const syncMenuState = function () {
     if (!menuButton) return;
     const menuId = 'owner-sale-site-menu';
@@ -563,11 +571,8 @@
 
     feedbackLayout.insertBefore(feedbackBody, feedbackHero);
 
-    const closeFeedback = function () {
-      feedbackModal.setAttribute('hidden', '');
-      unlockBodyScroll();
-    };
     const openFeedback = function () {
+      feedbackReturnFocus = document.activeElement;
       feedbackModal.removeAttribute('hidden');
       lockBodyScroll();
       feedbackModal.querySelector('.feedback-modal__input')?.focus();
@@ -579,8 +584,6 @@
       event.stopPropagation();
       expert.remove();
     });
-    feedbackModal.querySelector('.modal__close').addEventListener('click', closeFeedback);
-    feedbackModal.querySelector('.vfm__overlay').addEventListener('click', closeFeedback);
 
     [['.owner-sale-hero__button', 'Получить консультацию'], ['.owner-sale-sticky__request', 'Оставить заявку'], ['.owner-sale-stages__offer-btn', 'Отправить заявку'], ['.owner-sale-strategy__button', 'Обсудить стратегию'], ['.catalog-contact__card-submit', 'ПОЛУЧИТЕ ПРЕДВАРИТЕЛЬНУЮ ОЦЕНКУ ОБЪЕКТА'], ['.site-footer__callback-btn', 'Обратная связь']].forEach(function (item) {
       document.querySelectorAll(item[0]).forEach(function (button) {
@@ -593,15 +596,22 @@
 
   const liveFeedbackModal = document.querySelector('.feedback-modal');
   if (liveFeedbackModal) {
-    const closeLiveFeedback = function () {
-      liveFeedbackModal.setAttribute('hidden', '');
-      unlockBodyScroll();
-    };
+    const closeLiveFeedback = closeFeedbackDialog;
     liveFeedbackModal.querySelectorAll('.modal__close, .vfm__overlay').forEach(function (control) {
       control.addEventListener('click', closeLiveFeedback);
     });
     document.addEventListener('keydown', function (event) {
-      if (event.key === 'Escape' && !liveFeedbackModal.hasAttribute('hidden')) closeLiveFeedback();
+      if (liveFeedbackModal.hasAttribute('hidden')) return;
+      if (event.key === 'Escape') {
+        event.preventDefault();
+        closeLiveFeedback();
+      } else if (event.key === 'Tab') {
+        const items = Array.from(liveFeedbackModal.querySelectorAll('button,input,a[href],select,textarea,[tabindex]'))
+          .filter(function (element) { return element.tabIndex >= 0 && !element.disabled && !element.closest('[aria-hidden="true"]') && element.getBoundingClientRect().width > 0; });
+        const first = items[0], last = items[items.length - 1];
+        if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last?.focus(); }
+        else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first?.focus(); }
+      }
     });
   }
 

@@ -6,114 +6,135 @@
       "id": "01-header",
       "title": "Хедер",
       "assets": 16,
-      "cssBytes": 109374,
-      "htmlBytes": 26402
+      "cssBytes": 81104,
+      "htmlBytes": 26402,
+      "cssSha256": "bcb202bb7b56fc69a1f1d355e17e1d0440ad0d5bcf2a193f5ed1c231859c53d3"
     },
     {
       "id": "02-hero",
       "title": "Херо и поиск",
       "assets": 13,
-      "cssBytes": 115647,
-      "htmlBytes": 56923
+      "cssBytes": 82949,
+      "htmlBytes": 56923,
+      "cssSha256": "42d5f843a94b255af162f91ee00da5ff49e10f8f91da67f4af601aff6e82b5f1"
     },
     {
       "id": "03-services",
       "title": "Услуги",
       "assets": 14,
-      "cssBytes": 76691,
-      "htmlBytes": 5080
+      "cssBytes": 59992,
+      "htmlBytes": 5080,
+      "cssSha256": "a58be2e541d037267b7f01ea274e0b2b1c2ba243edb665f0219a52967d7a05f2"
     },
     {
       "id": "04-recommendations",
       "title": "По рекомендации BARN Estate",
       "assets": 26,
-      "cssBytes": 111952,
-      "htmlBytes": 44292
+      "cssBytes": 84685,
+      "htmlBytes": 44292,
+      "cssSha256": "71ec9b60c0bf5d5eb562743c809511fa206143f9120ffa731d9e00d241cd41b6"
     },
     {
       "id": "05-directions",
       "title": "Выбрать направление",
       "assets": 16,
-      "cssBytes": 73766,
-      "htmlBytes": 8110
+      "cssBytes": 58285,
+      "htmlBytes": 8110,
+      "cssSha256": "cd27a30064dba822ec3038d6054d3bc141f1efcc1520d0ae80a4e06787916185"
     },
     {
       "id": "06-about",
       "title": "О BARN Estate",
       "assets": 10,
-      "cssBytes": 64421,
-      "htmlBytes": 5767
+      "cssBytes": 53613,
+      "htmlBytes": 5767,
+      "cssSha256": "3094250e7b010d31f588b989b2a28fb2a92a77cedec55978a2fad84ec846cdd7"
     },
     {
       "id": "07-project-month",
       "title": "Проект месяца",
       "assets": 11,
-      "cssBytes": 80789,
-      "htmlBytes": 14943
+      "cssBytes": 60539,
+      "htmlBytes": 14943,
+      "cssSha256": "99d07c7a1e22a776ca11986dc25ef2c6a37b19362b87ac4d0f467e78785dcbb8"
     },
     {
       "id": "08-reviews",
       "title": "Отзывы",
       "assets": 9,
-      "cssBytes": 74813,
-      "htmlBytes": 6337
+      "cssBytes": 58174,
+      "htmlBytes": 6337,
+      "cssSha256": "d3b45b37ae3a4e96246023a443f4c40ec07f794518580f7dc5474532299a469f"
     },
     {
       "id": "10-team",
       "title": "Наша команда",
       "assets": 33,
-      "cssBytes": 74872,
-      "htmlBytes": 20030
+      "cssBytes": 59985,
+      "htmlBytes": 20030,
+      "cssSha256": "97601b21dc6f4440a26474e03ef75a9331a94e0c483f8b1e43102f597d53d2a1"
     },
     {
       "id": "11-partners",
       "title": "Наши партнёры",
       "assets": 23,
-      "cssBytes": 72192,
-      "htmlBytes": 15351
+      "cssBytes": 56825,
+      "htmlBytes": 15351,
+      "cssSha256": "75088b70119144ce27b7fe3201339eed1990f6cb6d323de124f6f6a1173d4e5f"
     },
     {
       "id": "12-contacts",
       "title": "Способы связи",
       "assets": 14,
-      "cssBytes": 77529,
-      "htmlBytes": 6453
+      "cssBytes": 61249,
+      "htmlBytes": 6453,
+      "cssSha256": "4d2b8d2bcab23cc18472323794fc7057a876b3bc7e76e5544cef4aeeb7faf197"
     },
     {
       "id": "13-news",
       "title": "Новости",
       "assets": 19,
-      "cssBytes": 77078,
-      "htmlBytes": 11966
+      "cssBytes": 59817,
+      "htmlBytes": 11966,
+      "cssSha256": "6b8eccc305d59bb1f56e284213315ae4c75f5bd05f42186cea4f99fdf234ca4a"
     },
     {
       "id": "14-newsletter",
       "title": "Рассылка",
       "assets": 11,
-      "cssBytes": 77712,
-      "htmlBytes": 2302
+      "cssBytes": 60381,
+      "htmlBytes": 2302,
+      "cssSha256": "79d50d7f012ec7c47eada833b94ec2b3dccc7d96e29bbff4411e887e2787263d"
     },
     {
       "id": "15-footer",
       "title": "Футер",
       "assets": 10,
-      "cssBytes": 84257,
-      "htmlBytes": 16703
+      "cssBytes": 62355,
+      "htmlBytes": 16703,
+      "cssSha256": "94161c31bf3889513861e395e34ec5292ce4fd6275605dc27cafcd319472f1a7"
     },
     {
       "id": "16-expert",
       "title": "Плавающий эксперт",
       "assets": 9,
-      "cssBytes": 68826,
-      "htmlBytes": 1144
+      "cssBytes": 54032,
+      "htmlBytes": 1144,
+      "cssSha256": "19a5e2a5956220e77d520a90fac1393a0a6b55fda78303b3a639a7fa9f948f15"
     },
     {
       "id": "17-quiz",
       "title": "Квиз обращения к эксперту",
       "assets": 9,
-      "cssBytes": 60725,
-      "htmlBytes": 411
+      "cssBytes": 49917,
+      "htmlBytes": 411,
+      "cssSha256": "91f8388adbc9aee69c2c5b550c26b4b74c5dafec91d48b6242e4e55144be142d"
     }
   ],
-  "headerUpdatedAt": "2026-11-03T19:05:51.145Z"
+  "headerUpdatedAt": "2026-11-03T19:05:51.145Z",
+  "maintenance": {
+    "version": "1.0.2",
+    "date": "2026-11-03",
+    "kind": "CSS cleanup, unchanged design"
+  }
 }

@@ -13,8 +13,8 @@
     },
     {
       "file": "block.css",
-      "bytes": 72192,
-      "sha256": "376902e7b9a682cf307c8fa637cfdff4797fdbea0d7ff2fe0607634278cd0e7f"
+      "bytes": 56825,
+      "sha256": "75088b70119144ce27b7fe3201339eed1990f6cb6d323de124f6f6a1173d4e5f"
     },
     {
       "file": "block.html",
@@ -38,13 +38,13 @@
     },
     {
       "file": "index.html",
-      "bytes": 15759,
-      "sha256": "a07a2a41e3a14710cd29fded951fb5681f15959b928ccca7ee192f0526ffe294"
+      "bytes": 15774,
+      "sha256": "285bdf07e3b6790b18d042487a607c5ebf0b5a23deca73417a19912bda27e680"
     },
     {
       "file": "paste.html",
-      "bytes": 2785670,
-      "sha256": "53021f04d8bf3e05758a5c4e8769ac7dd9cd1b9b78d36adae0d255bb8df3df2c"
+      "bytes": 2770303,
+      "sha256": "e870222891b59dbd2247460db8aec5ce7f393acbabe5d2a727f8042d4c33adf3"
     }
   ],
   "assets": [
@@ -187,5 +187,11 @@
       "source": "https://barn-estate.ru/fonts/TildaSans-Light.woff2"
     }
   ],
-  "behavior": "Логотипы партнёров и исходная адаптивная композиция/анимация."
+  "behavior": "Логотипы партнёров и исходная адаптивная композиция/анимация.",
+  "maintenance": {
+    "kitVersion": "1.0.2",
+    "method": "exact CSS duplicate cleanup",
+    "originalCssSha256": "376902e7b9a682cf307c8fa637cfdff4797fdbea0d7ff2fe0607634278cd0e7f",
+    "date": "2026-11-03"
+  }
 }

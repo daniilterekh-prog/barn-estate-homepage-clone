@@ -13,8 +13,8 @@
     },
     {
       "file": "block.css",
-      "bytes": 77712,
-      "sha256": "57d1b9165304fda05ef2e2be8952c0025cd79ed4aafc79513fd25ddc3bb7fb87"
+      "bytes": 60381,
+      "sha256": "79d50d7f012ec7c47eada833b94ec2b3dccc7d96e29bbff4411e887e2787263d"
     },
     {
       "file": "block.html",
@@ -38,13 +38,13 @@
     },
     {
       "file": "index.html",
-      "bytes": 2701,
-      "sha256": "fcd20d8a69aa94d88d3e0ee5c17fed31a1e77d8fa65ea16d687efaa3e57f440b"
+      "bytes": 2716,
+      "sha256": "0d8c151511c3c3c12bd636125bb440055102fb4a98cfed01e36d71271f95a5d6"
     },
     {
       "file": "paste.html",
-      "bytes": 1576579,
-      "sha256": "4a15f854d3494ce2b6aeea57774523c9a7221243cbabee4be08ffbc0d958af20"
+      "bytes": 1559248,
+      "sha256": "d1911e80c053fef1443d4e49b353a0ee7496faf4b857b1cc5b9ae70300fa2778"
     }
   ],
   "assets": [
@@ -116,5 +116,11 @@
     }
   ],
   "behavior": "Email, обязательное согласие, нативная валидация. Подписка вызывает barn:subscribe.",
-  "spacingUpdate": "2026-11-01"
+  "spacingUpdate": "2026-11-01",
+  "maintenance": {
+    "kitVersion": "1.0.2",
+    "method": "exact CSS duplicate cleanup",
+    "originalCssSha256": "57d1b9165304fda05ef2e2be8952c0025cd79ed4aafc79513fd25ddc3bb7fb87",
+    "date": "2026-11-03"
+  }
 }

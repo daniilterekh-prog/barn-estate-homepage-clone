@@ -13,8 +13,8 @@
     },
     {
       "file": "block.css",
-      "bytes": 109374,
-      "sha256": "435f6db46dc77897117c5d9223a9ecfa92eb495836479d4d1b134372c7ea1570"
+      "bytes": 81104,
+      "sha256": "bcb202bb7b56fc69a1f1d355e17e1d0440ad0d5bcf2a193f5ed1c231859c53d3"
     },
     {
       "file": "block.html",
@@ -38,13 +38,13 @@
     },
     {
       "file": "index.html",
-      "bytes": 26861,
-      "sha256": "95a39ddcdb43279371a06805651d6348de3ba46a7dcd416a08378fe239e85c65"
+      "bytes": 26876,
+      "sha256": "5d6299f1fc8e2d6eb0ee41bddaecb4fdb792ca31993e6470e79c26751b761739"
     },
     {
       "file": "paste.html",
-      "bytes": 2461572,
-      "sha256": "160b423647dbdc1b7f30c36f172bf2e93ff3bbce7b2a32d072bb811b849a8f36"
+      "bytes": 2433302,
+      "sha256": "6e0168f8061fc126bcb0977fc6596e8620175cf9033d369a3022d3ff22d7b3fa"
     }
   ],
   "assets": [
@@ -145,5 +145,11 @@
       "source": "https://github.com/google/material-design-icons/blob/master/LICENSE"
     }
   ],
-  "behavior": "Бургер, меню, липкое состояние при прокрутке, выбор четырёх способов связи на мобильном; SVG звонка зелёный."
+  "behavior": "Бургер, меню, липкое состояние при прокрутке, выбор четырёх способов связи на мобильном; SVG звонка зелёный.",
+  "maintenance": {
+    "kitVersion": "1.0.2",
+    "method": "exact CSS duplicate cleanup",
+    "originalCssSha256": "435f6db46dc77897117c5d9223a9ecfa92eb495836479d4d1b134372c7ea1570",
+    "date": "2026-11-03"
+  }
 }

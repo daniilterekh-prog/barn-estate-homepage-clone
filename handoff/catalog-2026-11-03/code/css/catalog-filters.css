@@ -41,7 +41,7 @@ html body.catalog-listing-page .catalog-mode-detailed-filters svg{flex:none;widt
 html body.catalog-listing-page .catalog-mode-toolbar :is(button,input):focus-visible{outline:2px solid #8b1d25;outline-offset:3px}
 html body.catalog-listing-page .catalog-mode-detailed-filters:focus-visible{outline-color:#1e1e1e}
 /* Optional collections sit between the search and the result controls. */
-html body.catalog-listing-page .catalog-collections-row{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:60px;padding:8px 0 12px;margin-bottom:12px;border-bottom:1px solid #e4e4e4}
+html body.catalog-listing-page .catalog-collections-row{display:flex;justify-content:space-between;gap:16px;min-height:60px;padding:8px 0 12px;border-bottom:1px solid #e4e4e4}
 html body.catalog-listing-page .catalog-collections-row .barnes-brand-filters{display:flex;align-items:center;flex-wrap:wrap;gap:4px 28px;width:auto;margin:0;padding:0;font:300 15px/1.3 'Tilda Sans',sans-serif;color:#4f4d49}
 html body.catalog-listing-page .catalog-collections-row .barnes-brand-filters label{min-height:40px;gap:10px;padding:0;white-space:nowrap}
 html body.catalog-listing-page .catalog-collections-row .barnes-brand-filters__box{width:18px;height:18px;flex-basis:18px;border-color:#8b8986}
@@ -86,7 +86,7 @@ html body.catalog-listing-page .resort-quick-dropdown [role=option].is-selected{
  html body.catalog-listing-page .catalog-mode-toolbar>.catalog-toolbar__secondary>.catalog-mode-detailed-filters[class][class]{grid-column:2;grid-row:3;width:58px;height:58px;min-height:58px;padding:0;border-color:#8b8986;background:#fff;color:#1e1e1e}
  html body.catalog-listing-page .catalog-mode-detailed-filters__label{display:none!important}
  .catalog-filter-count{position:absolute;right:3px;top:3px;min-width:16px;height:16px;font-size:11px;background:#8b1d25;color:#fff}
- html body.catalog-listing-page .catalog-collections-row{align-items:flex-start;gap:8px;flex-direction:column;padding:12px 0;margin-bottom:12px}
+ html body.catalog-listing-page .catalog-collections-row{gap:8px;flex-direction:column;padding:12px 0;margin-bottom:12px}
  html body.catalog-listing-page .catalog-collections-row .barnes-brand-filters{display:flex;flex-wrap:wrap;gap:0 24px;font-size:15px}
  html body.catalog-listing-page .catalog-collections-row .barnes-brand-filters label{min-height:36px}
  html body.catalog-listing-page .catalog-reset-all{min-height:36px;font-size:14px}
@@ -99,7 +99,7 @@ html body.catalog-listing-page .resort-quick-dropdown [role=option].is-selected{
 /* Two quick choices; advanced criteria stay in the shared full form. */
 html body.catalog-listing-page .catalog-mode-filters>.catalog-quick-filters__item:nth-child(even){display:block}
 html body.catalog-listing-page .catalog-mode-filters>.catalog-quick-filters__item:nth-child(3){border-left:1px solid #e4e4e4}
-html body.catalog-listing-page .catalog-collections-row{min-height:0;padding:0;margin:0 0 20px;border:0;gap:12px;align-items:center;flex-wrap:wrap}
+html body.catalog-listing-page .catalog-collections-row{min-height:0;padding:0;margin:0 0 20px;border:0;gap:12px;flex-wrap:wrap}
 .catalog-active-filters{display:flex;flex:1;flex-wrap:wrap;gap:8px;min-width:0;max-width:100%}
 .catalog-active-filter{display:inline-flex;align-items:center;gap:12px;max-width:100%;min-height:36px;padding:6px 12px;border:1px solid transparent;border-radius:1px;background:#f9f3f3;color:#8b1d25;font:400 16px/1.2 'Tilda Sans',sans-serif;cursor:pointer}
 .catalog-active-filter span{min-width:0;max-width:270px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}

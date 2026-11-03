@@ -13,8 +13,8 @@
     },
     {
       "file": "block.css",
-      "bytes": 60725,
-      "sha256": "99f35ef45710c1a4cdd443fba0878f26a1be0be56c462e595a61aa85d0891066"
+      "bytes": 49917,
+      "sha256": "91f8388adbc9aee69c2c5b550c26b4b74c5dafec91d48b6242e4e55144be142d"
     },
     {
       "file": "block.html",
@@ -38,13 +38,13 @@
     },
     {
       "file": "index.html",
-      "bytes": 841,
-      "sha256": "674a07f44eab8ce88a23235f7768d2c2f5ec7523a8ba91bffa67a23171ebd094"
+      "bytes": 856,
+      "sha256": "74c606bc61c778271cb4eeedb97298de7a1b8739384cd3a606059a7bab56d1cb"
     },
     {
       "file": "paste.html",
-      "bytes": 1385783,
-      "sha256": "16eb654e3f7d69bc8e04bdd1c10b4605be3e2b6ddfc2f91d5f357b66282b27b6"
+      "bytes": 1374975,
+      "sha256": "143c266cabe4a222fa092580bd7403fa12c55b2917750626f7ce54e85808092f"
     }
   ],
   "assets": [
@@ -103,5 +103,11 @@
       "source": "https://barn-estate.ru/fonts/TildaSans-Light.woff2"
     }
   ],
-  "behavior": "Автономный запуск актуальной формы: вопросы о задаче/направлении/деталях, ветка амбассадоров, каналы Telegram/WhatsApp/MAX/Звонок. На мобильном Руслан по пояс с журналом, голова целиком. Валюты только ₽/$/€."
+  "behavior": "Автономный запуск актуальной формы: вопросы о задаче/направлении/деталях, ветка амбассадоров, каналы Telegram/WhatsApp/MAX/Звонок. На мобильном Руслан по пояс с журналом, голова целиком. Валюты только ₽/$/€.",
+  "maintenance": {
+    "kitVersion": "1.0.2",
+    "method": "exact CSS duplicate cleanup",
+    "originalCssSha256": "99f35ef45710c1a4cdd443fba0878f26a1be0be56c462e595a61aa85d0891066",
+    "date": "2026-11-03"
+  }
 }

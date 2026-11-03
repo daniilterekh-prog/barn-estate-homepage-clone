@@ -1,4 +1,7 @@
 (function () {
+  var navigation = document.createElement('script');
+  navigation.src = '../shared/node-menu.js';
+  document.body.appendChild(navigation);
   var filtersTemplate = document.createElement('script');
   filtersTemplate.src = 'js/filters-template.js?v=20261103-controls-row-22';
   filtersTemplate.onload = function () {

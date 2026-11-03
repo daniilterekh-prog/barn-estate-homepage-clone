@@ -75,3 +75,7 @@ https://github.com/daniilterekh-prog/barnes-assets.
 Происхождение фона — assets/cta-alina-unified-v2.md.
 Frontend-памятка проверена: HyperUI — бесплатный MIT-ресурс; сохранены
 существующие компоненты BARNES, новые библиотеки не добавлены.
+
+## Техническая очистка ·03.11.2026
+
+Удалены доказанные повторные CSS/SSR-декларации; исходные версии примитивов сохранены в provenance, текущие хэши обновлены. Геометрия, цвета, контент и действия проверяются сравнением до/после. [Единый реестр страниц](https://github.com/daniilterekh-prog/barnes-sites/blob/main/main-site/current-pages.json) · [Метод и отчёты](https://github.com/daniilterekh-prog/barnes-sites/tree/main/main-site/maintenance/2026-11-03-cleanup).

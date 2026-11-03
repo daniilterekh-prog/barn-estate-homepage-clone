@@ -45,3 +45,7 @@ node tools/verify-catalog-filters.cjs http://127.0.0.1:8786/
 - Слайдер — локальный [Splide 4.1.4](https://splidejs.com/), лицензия: `vendor/SPLIDE-LICENSE`. Другие frontend-пакеты не добавлялись. Бесплатные ресурсы сверены с [frontend-памяткой](https://github.com/daniilterekh-prog/codex-knowledge-base/blob/main/knowledge/frontend-playbook.md); утверждённый дизайн сохранён.
 - Карта — локальный снимок с тайлами, не живой API Яндекс. Лоты и фильтры работают по сохранённым данным. Телефон, мессенджеры, политики, статьи и карточки объектов остаются внешними ссылками. Форма не подключена к backend; демонстрация окна не означает отправку заявки.
 - Перечень удалённых устаревших файлов — `verification/cleanup.json`; восстановление возможно из истории Git. Библиотеку переносимых блоков, как в `kurortnaya/blocks/`, эта упаковка не создаёт: загородный узел хранит собственную целую страницу и данные.
+
+## Техническая очистка ·03.11.2026
+
+Удалены доказанные повторные CSS/SSR-декларации; исходные версии примитивов сохранены в provenance, текущие хэши обновлены. Геометрия, цвета, контент и действия проверяются сравнением до/после. [Единый реестр страниц](https://github.com/daniilterekh-prog/barnes-sites/blob/main/main-site/current-pages.json) · [Метод и отчёты](https://github.com/daniilterekh-prog/barnes-sites/tree/main/main-site/maintenance/2026-11-03-cleanup).

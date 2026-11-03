@@ -1,5 +1,7 @@
 # BARN Estate — страницы основного сайта
 
+**[Актуальные13страниц и их рабочие исходники](PAGES.md)** · [Техническая очистка03.11.2026](https://github.com/daniilterekh-prog/barnes-sites/tree/main/main-site/maintenance/2026-11-03-cleanup). Главная и переносимые блоки — технический выпуск UI-кита1.0.2; дизайн сохранён.
+
 - [Полная сверка hero по Медиа: амбассадоры, аренда и продажа ·03.11.2026](https://github.com/daniilterekh-prog/barnes-sites/tree/main/main-site/pages/hero-media-parity-2026-11-03).
 
 - [Общий хедер Медиа для главной, амбассадоров, аренды и продажи ·03.11.2026](https://github.com/daniilterekh-prog/barnes-sites/tree/main/main-site/pages/header-media-2026-11-03). Главная — UI-кит1.0.1, блок01 и ZIP обновлены.

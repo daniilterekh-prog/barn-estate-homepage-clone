@@ -39,14 +39,18 @@
     {
       "local": "footer.css",
       "source": "blocks/15-footer/block.css",
-      "sha256": "649f37e74259d18f4a2cf854a2901b7d923ad2d78d5367ea1c7f01b9163bbc05",
-      "copiedUnchanged": true
+      "sha256": "94161c31bf3889513861e395e34ec5292ce4fd6275605dc27cafcd319472f1a7",
+      "copiedUnchanged": false,
+      "sourceSha256": "649f37e74259d18f4a2cf854a2901b7d923ad2d78d5367ea1c7f01b9163bbc05",
+      "maintenance": "Exact CSS duplicate cleanup; original source tag retained"
     },
     {
       "local": "quiz.css",
       "source": "blocks/17-quiz/block.css",
-      "sha256": "99f35ef45710c1a4cdd443fba0878f26a1be0be56c462e595a61aa85d0891066",
-      "copiedUnchanged": true
+      "sha256": "91f8388adbc9aee69c2c5b550c26b4b74c5dafec91d48b6242e4e55144be142d",
+      "copiedUnchanged": false,
+      "sourceSha256": "99f35ef45710c1a4cdd443fba0878f26a1be0be56c462e595a61aa85d0891066",
+      "maintenance": "Exact CSS duplicate cleanup; original source tag retained"
     },
     {
       "local": "quiz.js",
@@ -122,5 +126,9 @@
     "detailed ListingCard instead of homepage LaunchCard",
     "54px compact card actions; stacked in cards narrower than 340px"
   ],
-  "forms": "Preview only. Cancellable barn:lead event. Without a backend integration the form explicitly says the data were not sent."
+  "forms": "Preview only. Cancellable barn:lead event. Without a backend integration the form explicitly says the data were not sent.",
+  "maintenance": {
+    "date": "2026-11-03",
+    "kind": "CSS deduplication, preserved sourceTag"
+  }
 }

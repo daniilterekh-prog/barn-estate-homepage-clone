@@ -246,5 +246,9 @@
     "date": "2026-11-03",
     "order": "most recently saved first",
     "reason": "explicit user request"
+  },
+  "maintenance": {
+    "date": "2026-11-03",
+    "report": "main-site/maintenance/2026-11-03-cleanup"
   }
 }

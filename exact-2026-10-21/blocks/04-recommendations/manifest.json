@@ -13,8 +13,8 @@
     },
     {
       "file": "block.css",
-      "bytes": 111952,
-      "sha256": "d0dd891f1a95dcb3cc5fcaa8236680c38a849adce8cb9922efa0482d6ed000ed"
+      "bytes": 84685,
+      "sha256": "71ec9b60c0bf5d5eb562743c809511fa206143f9120ffa731d9e00d241cd41b6"
     },
     {
       "file": "block.html",
@@ -38,13 +38,13 @@
     },
     {
       "file": "index.html",
-      "bytes": 44716,
-      "sha256": "0293d64816350ee099de9917f022f74a654cd6d7f10c0340c80bf50ec61d5c51"
+      "bytes": 44731,
+      "sha256": "afd9667f10f685a177104cee47d91ac3121bc5814dcba4d8d0ee86aef36b4369"
     },
     {
       "file": "paste.html",
-      "bytes": 6573502,
-      "sha256": "1e6ab1413804277659f03957545d03715dca21ebfef9fa82b87a8dcd7204099c"
+      "bytes": 6546235,
+      "sha256": "9b2f84363c21bff52a3b4c4e875b7f70dad46d0cd283f8a8761a7787f8091ada"
     }
   ],
   "assets": [
@@ -205,5 +205,11 @@
       "source": "https://barn-estate.ru/fonts/TildaSans-Light.woff2"
     }
   ],
-  "behavior": "Шесть направлений, desktop табы/мобильный список, карточки и локальное избранное, оригинальный Splide со swipe и навигацией. Городские проекты: DUO, Палашевский11, Вавилова64; OPUS и Фрунзенская исключены."
+  "behavior": "Шесть направлений, desktop табы/мобильный список, карточки и локальное избранное, оригинальный Splide со swipe и навигацией. Городские проекты: DUO, Палашевский11, Вавилова64; OPUS и Фрунзенская исключены.",
+  "maintenance": {
+    "kitVersion": "1.0.2",
+    "method": "exact CSS duplicate cleanup",
+    "originalCssSha256": "d0dd891f1a95dcb3cc5fcaa8236680c38a849adce8cb9922efa0482d6ed000ed",
+    "date": "2026-11-03"
+  }
 }

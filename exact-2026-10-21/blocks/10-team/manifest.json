@@ -13,8 +13,8 @@
     },
     {
       "file": "block.css",
-      "bytes": 74872,
-      "sha256": "3c534828f3ca85f6de025afc3d435f55cbb3c6f0abe2ca9c42181e9cdacecc09"
+      "bytes": 59985,
+      "sha256": "97601b21dc6f4440a26474e03ef75a9331a94e0c483f8b1e43102f597d53d2a1"
     },
     {
       "file": "block.html",
@@ -38,13 +38,13 @@
     },
     {
       "file": "index.html",
-      "bytes": 20436,
-      "sha256": "0b473b32f6e5e122d422f99ce0743a878b8d7ff1b353cfbc0a9242b3064ba58f"
+      "bytes": 20451,
+      "sha256": "81a3fa7bf3e19654372c184ebb9661e297ea463bea977a48a18611841ae72025"
     },
     {
       "file": "paste.html",
-      "bytes": 6332141,
-      "sha256": "0a9b591783de5fe3c670ba5982fbc4b4a4981418533d5952c05cbaecd29a69f7"
+      "bytes": 6317254,
+      "sha256": "27ea60313fbf5b8426100afb67b6ababb47757e1f990038de4da0ea4216225e9"
     }
   ],
   "assets": [
@@ -247,5 +247,11 @@
       "source": "https://barn-estate.ru/fonts/TildaSans-Light.woff2"
     }
   ],
-  "behavior": "Карточки команды, слайдер3/2/1 на desktop/tablet/mobile, навигация и свайп."
+  "behavior": "Карточки команды, слайдер3/2/1 на desktop/tablet/mobile, навигация и свайп.",
+  "maintenance": {
+    "kitVersion": "1.0.2",
+    "method": "exact CSS duplicate cleanup",
+    "originalCssSha256": "3c534828f3ca85f6de025afc3d435f55cbb3c6f0abe2ca9c42181e9cdacecc09",
+    "date": "2026-11-03"
+  }
 }

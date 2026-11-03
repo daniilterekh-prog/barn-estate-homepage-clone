@@ -13,8 +13,8 @@
     },
     {
       "file": "block.css",
-      "bytes": 76691,
-      "sha256": "3f008a357b17eb45124591fb363b304bea1240d6b802237a8c492ec57a9a7a89"
+      "bytes": 59992,
+      "sha256": "a58be2e541d037267b7f01ea274e0b2b1c2ba243edb665f0219a52967d7a05f2"
     },
     {
       "file": "block.html",
@@ -38,13 +38,13 @@
     },
     {
       "file": "index.html",
-      "bytes": 5475,
-      "sha256": "5566c85157f2bc66821d58092ceb8cfd8776e49a1e7222fa0e384bcea9bd76dc"
+      "bytes": 5490,
+      "sha256": "4255f8e3695bc7133fa6589cf8efacf55d7ca79c3c56d07dc1a4fde954528087"
     },
     {
       "file": "paste.html",
-      "bytes": 3205482,
-      "sha256": "e054f90822ba2e85d2af5bfc910d1e448f55f1bd4a6ad4819724a13f9e1efce6"
+      "bytes": 3188783,
+      "sha256": "482b59f2acb9359f7e7857f854ee73c298b936a66cc8ab167d15a2f8008f55f6"
     }
   ],
   "assets": [
@@ -133,5 +133,11 @@
       "source": "https://barn-estate.ru/fonts/TildaSans-Light.woff2"
     }
   ],
-  "behavior": "Три навигационные карточки услуг. Продажа — глянцевый интерьер без панорамы/цветов; отдельные изображения для телефона, desktop и >1920px. Вес заголовков300, сокращённый интервал до CTA."
+  "behavior": "Три навигационные карточки услуг. Продажа — глянцевый интерьер без панорамы/цветов; отдельные изображения для телефона, desktop и >1920px. Вес заголовков300, сокращённый интервал до CTA.",
+  "maintenance": {
+    "kitVersion": "1.0.2",
+    "method": "exact CSS duplicate cleanup",
+    "originalCssSha256": "3f008a357b17eb45124591fb363b304bea1240d6b802237a8c492ec57a9a7a89",
+    "date": "2026-11-03"
+  }
 }

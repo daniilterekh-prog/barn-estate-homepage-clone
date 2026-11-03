@@ -1,3 +1,8 @@
+/* Current hero component: Media geometry/type, shared by owner and partner pages. */
+body.barnes-media-reference {--reference-hero-height:820px;}
+@media(min-width:1441px) {body.barnes-media-reference {--reference-hero-height:960px;}}
+@media(max-width:540px) {body.barnes-media-reference {--reference-hero-height:560px;}}
+body.barnes-media-reference :is(.owner-sale-hero,.owner-sale-hero__inner,.ambassadors-hero,.ambassadors-hero__inner) {box-sizing:border-box!important;min-height:var(--reference-hero-height)!important;height:auto!important;}
 /* Hero parity with Media, 2026-11-03. Existing page copy/actions/photos retained. */
 body.barnes-media-reference {
  --media-hero-gutter:calc(-26.66667px + 6.59722vw);

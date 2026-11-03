@@ -13,8 +13,8 @@
     },
     {
       "file": "block.css",
-      "bytes": 74813,
-      "sha256": "f7ec9a243526f2f99a60b0a5dc4db0a6db394a16041f5b8ed30653179f7b6366"
+      "bytes": 58174,
+      "sha256": "d3b45b37ae3a4e96246023a443f4c40ec07f794518580f7dc5474532299a469f"
     },
     {
       "file": "block.html",
@@ -38,13 +38,13 @@
     },
     {
       "file": "index.html",
-      "bytes": 6732,
-      "sha256": "416eee95bd77b5443e2d28a962695a2e31086e2324719befb8a5104f28e743c9"
+      "bytes": 6747,
+      "sha256": "00f6c356796f69eeea64bc5727d8e2c03965897d8acf13017e594cd241b529db"
     },
     {
       "file": "paste.html",
-      "bytes": 1405797,
-      "sha256": "067d41db93f256ca2ada286f2430d88cbb101218834130458362b88b6ad4b83c"
+      "bytes": 1389158,
+      "sha256": "000bc9516cff493b5efb9c56cc2a3d653caf02f74ef2e0c26bd172899c50fe27"
     }
   ],
   "assets": [
@@ -103,5 +103,11 @@
       "source": "https://barn-estate.ru/fonts/TildaSans-Light.woff2"
     }
   ],
-  "behavior": "Три исходных отзыва, переключение стрелками, disabled на границах."
+  "behavior": "Три исходных отзыва, переключение стрелками, disabled на границах.",
+  "maintenance": {
+    "kitVersion": "1.0.2",
+    "method": "exact CSS duplicate cleanup",
+    "originalCssSha256": "f7ec9a243526f2f99a60b0a5dc4db0a6db394a16041f5b8ed30653179f7b6366",
+    "date": "2026-11-03"
+  }
 }

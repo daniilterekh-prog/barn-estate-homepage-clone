@@ -13,8 +13,8 @@
     },
     {
       "file": "block.css",
-      "bytes": 115647,
-      "sha256": "2716c39f55d7da2a62ecbf460ee46c87a6f49a1406634d270cf0215d0f8cfde7"
+      "bytes": 82949,
+      "sha256": "42d5f843a94b255af162f91ee00da5ff49e10f8f91da67f4af601aff6e82b5f1"
     },
     {
       "file": "block.html",
@@ -38,13 +38,13 @@
     },
     {
       "file": "index.html",
-      "bytes": 57328,
-      "sha256": "621ffcad3ccf7c9d140f1ebab45ab16e1da5bf1f0e6409045f213fb00f0efda8"
+      "bytes": 57343,
+      "sha256": "e00a12319f2298d1d34d28814c7ef75487be4fc86a9b091bcf641e1b7613e8c0"
     },
     {
       "file": "paste.html",
-      "bytes": 9347322,
-      "sha256": "75429bee58d38329f66a949589faa68cfbd41591eb11c58d038808769a7dea2b"
+      "bytes": 9314624,
+      "sha256": "de47a212dd9944f355527009a723ed1b84beb5ca04f73c0b96d9819ca9593db1"
     }
   ],
   "assets": [
@@ -127,5 +127,11 @@
       "source": "https://barn-estate.ru/fonts/TildaSans-Light.woff2"
     }
   ],
-  "behavior": "Табы типа сделки и направления, выпадающие тип/бюджет, мобильные/дополнительные фильтры; выбранные поля передаются событием barn:search. Фон херо меняется по исходным breakpoint, затемнение40%."
+  "behavior": "Табы типа сделки и направления, выпадающие тип/бюджет, мобильные/дополнительные фильтры; выбранные поля передаются событием barn:search. Фон херо меняется по исходным breakpoint, затемнение40%.",
+  "maintenance": {
+    "kitVersion": "1.0.2",
+    "method": "exact CSS duplicate cleanup",
+    "originalCssSha256": "2716c39f55d7da2a62ecbf460ee46c87a6f49a1406634d270cf0215d0f8cfde7",
+    "date": "2026-11-03"
+  }
 }

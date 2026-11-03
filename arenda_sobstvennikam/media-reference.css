@@ -14,7 +14,7 @@ body.barnes-media-reference :is(.base-container:not(.site-footer__inner),.about-
  margin-inline:auto!important;padding-inline:var(--reference-gutter)!important;
 }
 body.barnes-media-reference :is(.about-company,.catalog-consultation) {padding-inline:0!important;}
-body.barnes-media-reference :is(.site-header__inner.base-container,.owner-sale-hero__inner.base-container,.ambassadors-hero__inner.base-container) {
+body.barnes-media-reference :is(.site-header__inner.base-container) {
  padding-inline:var(--reference-hero-gutter)!important;
 }
 body.barnes-media-reference .owner-sale-services {
@@ -28,9 +28,6 @@ body.barnes-media-reference .newsletter-cta__inner {
  max-width:1920px!important;margin-inline:auto!important;padding-inline:0!important;
 }
 /* H1: Media hero. H2: Media section heading. Keep original colour/case and fonts. */
-body.barnes-media-reference :is(.owner-sale-hero__title,.ambassadors-hero__title) {
- font-size:clamp(38px,4vw,58px)!important;line-height:1.05!important;font-weight:300!important;
-}
 body.barnes-media-reference :is(main h2,.newsletter-cta h2,.owner-sale-types__section-title,
  .ambassadors-conditions__section-title,.catalog-consultation__mobile-title,.catalog-consultation__subtitle) {
  font-size:var(--reference-heading)!important;line-height:1.2!important;font-weight:300!important;
@@ -48,7 +45,6 @@ body.barnes-media-reference :is(
  .bd-direction-description,.bd-label,.bd-words,.bd-price small,#why-barnes .be-body,#why-barnes .be-lead) {
  font-size:var(--reference-lead)!important;line-height:var(--reference-lead-line)!important;font-weight:300!important;
 }
-body.barnes-media-reference :is(.owner-sale-hero__text,.ambassadors-hero__text) {line-height:1.28!important;}
 /* Compact card-title role from Media news cards. */
 body.barnes-media-reference :is(main h3,.ambassadors-conditions__title,
  .ambassadors-advantages__card-title,.owner-sale-presentation__featured-title,
@@ -67,7 +63,7 @@ body.barnes-media-reference :is(.feedback-modal__title,.modal__title) {
  font-size:var(--reference-dialog)!important;line-height:1.2!important;font-weight:400!important;
 }
 /* Primary CTA / field roles. Navigation and icon-only controls retain their size. */
-body.barnes-media-reference :is(.ui-button,.owner-sale-hero__button,.ambassadors-hero__button,
+body.barnes-media-reference :is(.ui-button:not(.owner-sale-hero__button):not(.ambassadors-hero__button),
  .newsletter-form__row>button,.catalog-contact__submit,.catalog-consultation__button,
  .owner-sale-strategy__button,.bd-cta,.feedback-modal__submit,#why-barnes .be-cta) {
  font-size:var(--reference-action)!important;line-height:1.1!important;font-weight:400!important;
@@ -99,7 +95,6 @@ body.barnes-media-reference :is(input,textarea)::placeholder {font-size:inherit;
   --reference-gutter:22px;--reference-heading:22px;--reference-lead:15px;
   --reference-lead-line:21px;--reference-action:18px;--reference-field:17px;
  }
- body.barnes-media-reference :is(.owner-sale-hero__title,.ambassadors-hero__title) {font-size:32px!important;}
  body.barnes-media-reference .newsletter-cta h2 {line-height:1.2!important;}
  body.barnes-media-reference .newsletter-cta__copy {padding-inline:0!important;}
 }
