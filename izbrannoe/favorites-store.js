@@ -6,7 +6,6 @@
   const grid = document.querySelector('[data-favorites-grid]')
   if (grid) grid.append(document.querySelector('#favorites-card-templates').content.cloneNode(true))
   const cards = [...document.querySelectorAll('[data-favorite-id]')]
-  const sort = document.querySelector('[data-favorites-sort]')
   const toast = document.querySelector('.favorites-toast')
   const fallbackImage = new URL('photo-unavailable.svg', document.currentScript.src).href
   let storageAvailable = true, kind = 'all', undo = null, timer
@@ -62,16 +61,8 @@
     if (!page) return
     const selectedCards = cards.filter(card => ids.includes(card.dataset.favoriteId))
     const visible = selectedCards.filter(card => kind === 'all' || card.dataset.kind === kind)
-    const order = sort.value
-    visible.sort((a,b) => {
-      if (order === 'price-asc' || order === 'price-desc') {
-        const aPrice = Number(a.dataset.price), bPrice = Number(b.dataset.price)
-        if (!aPrice) return bPrice ? 1 : 0
-        if (!bPrice) return -1
-        return order === 'price-asc' ? aPrice - bPrice : bPrice - aPrice
-      }
-      return ids.indexOf(b.dataset.favoriteId) - ids.indexOf(a.dataset.favoriteId)
-    }).forEach(card => grid.append(card))
+    // Saved items retain the default order: most recently added first.
+    visible.sort((a,b) => ids.indexOf(b.dataset.favoriteId) - ids.indexOf(a.dataset.favoriteId)).forEach(card => grid.append(card))
     document.querySelectorAll('[data-kind-count]').forEach(el => { el.textContent = el.dataset.kindCount === 'all' ? selectedCards.length : selectedCards.filter(card => card.dataset.kind === el.dataset.kindCount).length })
     document.querySelectorAll('[data-favorites-kind]').forEach(button => { const active = button.dataset.favoritesKind === kind; button.classList.toggle('is-active', active); button.setAttribute('aria-pressed', String(active)) })
     grid.hidden = visible.length === 0
@@ -102,7 +93,6 @@
     ids=undo;undo=null;persist();clearTimeout(timer);toast.hidden=true
     cards.find(card => !card.hidden)?.querySelector('.apartment-card__favorite').focus({preventScroll:true})
   })
-  sort?.addEventListener('change',render)
   window.addEventListener('storage',event => {
     if (!preview && (event.key === KEY || event.key === null)) {ids=read();undo=null;if(toast)toast.hidden=true;render()}
   })

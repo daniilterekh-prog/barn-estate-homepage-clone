@@ -1,0 +1,10 @@
+/* The dropdown sits outside the horizontally scrolling row so it cannot be clipped. */
+html body.favorites-page .catalog-header-dropdown[hidden]{display:none!important}
+html body.favorites-page .catalog-header-dropdown{position:fixed;z-index:110;min-width:220px;width:max-content;max-width:calc(100vw - 44px);max-height:calc(100dvh - var(--catalog-dropdown-top) - 16px);box-sizing:border-box;overflow:auto;overscroll-behavior:contain;background:#fff;border:1px solid #e4e4e4;border-radius:1px;box-shadow:0 8px 24px #00000014;padding:30px 18px 8px}
+html body.favorites-page .catalog-header-dropdown__list{display:grid;gap:12px;list-style:none;margin:0;padding:0}
+html body.favorites-page .catalog-header-dropdown__link{display:flex;align-items:center;box-sizing:border-box;min-height:0;padding-block:0;color:#1e1e1e;font:inherit;font-size:16px;font-weight:300;line-height:1;text-decoration:none;white-space:normal;overflow-wrap:break-word}
+html body.favorites-page .catalog-header-dropdown__link:hover{color:#8b1d25;font-weight:400}
+html body.favorites-page .catalog-header-dropdown__link:focus-visible{outline:2px solid #8b1d25;outline-offset:2px}
+html body.favorites-page .catalog-global-nav .site-header__nav-link[aria-expanded=true]{color:#8b1d25}
+@media(min-width:1441px){html body.favorites-page .catalog-header-dropdown__link{font-size:18px}}
+

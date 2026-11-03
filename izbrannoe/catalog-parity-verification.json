@@ -1,0 +1,45 @@
+{
+  "report": [
+    {
+      "width": 320,
+      "passed": true
+    },
+    {
+      "width": 390,
+      "passed": true
+    },
+    {
+      "width": 540,
+      "passed": true
+    },
+    {
+      "width": 768,
+      "passed": true
+    },
+    {
+      "width": 1024,
+      "passed": true
+    },
+    {
+      "width": 1280,
+      "passed": true
+    },
+    {
+      "width": 1281,
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "width": 1920,
+      "passed": true
+    },
+    {
+      "width": 2560,
+      "passed": true
+    }
+  ],
+  "errors": []
+}

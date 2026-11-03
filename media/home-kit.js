@@ -6,8 +6,8 @@
  let counter=0;
  function annotate(root){
   const moscow=root.querySelector('.media-market__featured-image');
-  const moscowSrc=new URL('pictures/media/moscow-focus-sunlight-20261103.webp',pageRoot).href;
-  if(moscow&&moscow.src!==moscowSrc){moscow.removeAttribute('srcset');moscow.src=moscowSrc;moscow.width=1536;moscow.height=1024;}
+  const moscowSrc=new URL('pictures/media/moscow-editorial-20261103.webp',pageRoot).href;
+  if(moscow&&moscow.src!==moscowSrc){moscow.removeAttribute('srcset');moscow.src=moscowSrc;moscow.width=1774;moscow.height=887;}
   // Apply the generated publication after hydration without changing Nuxt chunks.
   const publication=root.querySelector('.media-library__image');
   const publicationSrc=new URL('pictures/media/library-editorial-20261103.webp',pageRoot).href;

@@ -11,6 +11,40 @@ body.barnes-media-kit :is(.media-intents__action,.media-weekly__action,.media-fr
  text-decoration:none!important;border-bottom:1px solid currentColor;
 }
 body.barnes-media-kit .ui-more-link {min-height:44px;padding-block:8px;}
+/* Decorative arrows stay visible on touch screens; only their motion is hover-only. */
+body.barnes-media-kit :is(.media-intents__action,.media-weekly__action,.media-fresh__action,.media-market__featured-action,.team-member-card__link) {
+ position:relative;gap:12px;padding-right:5px!important;border-bottom:0;
+ opacity:1!important;
+}
+body.barnes-media-kit :is(.media-intents__action,.media-weekly__action,.media-fresh__action,.media-market__featured-action,.team-member-card__link)::before {
+ content:"";position:absolute;left:0;right:5px;bottom:0;height:1px;
+ background:currentColor;transform:scaleX(.45);transform-origin:left;
+ transition:transform 180ms ease-out;pointer-events:none;
+}
+body.barnes-media-kit :is(.media-intents__action,.media-weekly__action,.media-fresh__action,.media-market__featured-action,.team-member-card__link)::after {
+ content:"";display:block;flex:0 0 20px;width:20px;height:12px;
+ background:currentColor;
+ mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 12'%3E%3Cpath d='M1 6h17m-5-4 5 4-5 4' fill='none' stroke='black' stroke-width='1.3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/contain no-repeat;
+ transition:transform 180ms ease-out;pointer-events:none;
+}
+body.barnes-media-kit :is(a,button):focus-visible :is(.media-intents__action,.media-weekly__action,.media-fresh__action,.media-market__featured-action,.team-member-card__link)::after,
+body.barnes-media-kit .team-member-card__link:focus-visible::after {transform:translateX(5px);}
+body.barnes-media-kit :is(a,button):focus-visible :is(.media-intents__action,.media-weekly__action,.media-fresh__action,.media-market__featured-action,.team-member-card__link)::before,
+body.barnes-media-kit .team-member-card__link:focus-visible::before {transform:scaleX(1);}
+body.barnes-media-kit .ui-more-link__icon {transition:transform 180ms ease-out;}
+body.barnes-media-kit .ui-more-link:focus-visible .ui-more-link__icon {transform:translate(3px,-3px);}
+@media(hover:hover) and (pointer:fine) {
+ body.barnes-media-kit :is(a,button):hover :is(.media-intents__action,.media-weekly__action,.media-fresh__action,.media-market__featured-action,.team-member-card__link)::after,
+ body.barnes-media-kit .team-member-card__link:hover::after {transform:translateX(5px);}
+ body.barnes-media-kit :is(a,button):hover :is(.media-intents__action,.media-weekly__action,.media-fresh__action,.media-market__featured-action,.team-member-card__link)::before,
+ body.barnes-media-kit .team-member-card__link:hover::before {transform:scaleX(1);}
+ body.barnes-media-kit .ui-more-link:hover .ui-more-link__icon {transform:translate(3px,-3px);}
+}
+@media(prefers-reduced-motion:reduce) {
+ body.barnes-media-kit :is(.media-intents__action,.media-weekly__action,.media-fresh__action,.media-market__featured-action,.team-member-card__link)::after,
+ body.barnes-media-kit .ui-more-link__icon {transform:none!important;transition:none!important;}
+ body.barnes-media-kit :is(.media-intents__action,.media-weekly__action,.media-fresh__action,.media-market__featured-action,.team-member-card__link)::before {transition:none!important;}
+}
 /* Match the editorial card rhythm of the homepage news carousel. */
 body.barnes-media-kit :is(.media-weekly__layout,.media-weekly__grid,.media-fresh__grid,.media-market__layout,.media-analytics__grid,.media-analytics__side) {gap:var(--media-card-gap)!important;}
 body.barnes-media-kit .media-weekly__card-body {padding:16px!important;gap:12px!important;}
@@ -34,3 +68,21 @@ body.barnes-media-kit :is(h1,h2,h3,h4,h5,h6):not(.media-hero__title) {text-trans
 
 /* Keep every category reachable when its intrinsic row is wider than a tablet. */
 body.barnes-media-kit :is(.media-fresh__filters,.media-analytics__filters) {min-width:0;max-width:100%;overflow-x:auto;}
+
+/* Quiet architectural Moscow image, with a continuous text-protection mask. */
+body.barnes-media-kit .media-market__featured-media::after {
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(90deg,rgba(16,19,18,.82) 0%,rgba(16,19,18,.72) 24%,rgba(16,19,18,.48) 45%,rgba(16,19,18,.18) 66%,rgba(16,19,18,0) 90%);
+}
+body.barnes-media-kit .media-market__featured-content {background:transparent!important;}
+body.barnes-media-kit .media-market__featured :is(.media-market__featured-name,.media-market__featured-text,.media-market__featured-action) {color:#fff!important;}
+body.barnes-media-kit .media-market__featured .media-market__featured-badge {color:rgba(255,255,255,.8)!important;}
+
+/* Page-specific user override. Layered !important rules also cap shared-kit
+ * controls, teleported dialogs and generated pseudo-elements at every width. */
+@layer media-radius-limit {
+  body.barnes-media-kit,
+  body.barnes-media-kit *,
+  body.barnes-media-kit *::before,
+  body.barnes-media-kit *::after {border-radius:1px!important;}
+}

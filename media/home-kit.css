@@ -53,7 +53,7 @@ body.barnes-media-kit :is(.media-hero__button,.media-cta-banner__button,.media-a
 body.barnes-media-kit :is(.media-hero__button,.media-cta-banner__button) .ui-button__text {min-width:0;white-space:normal;}
 body.barnes-media-kit .media-cta-banner__actions {flex-wrap:wrap;}
 body.barnes-media-kit .media-hero__body {grid-template-columns:minmax(0,1fr) minmax(0,400px);}
-body.barnes-media-kit .media-market__featured-image {object-position:right top;}
+body.barnes-media-kit .media-market__featured-image {object-position:right center;}
 body.barnes-media-kit .media-library__content {min-width:0;padding-inline:var(--home-card-padding)!important;}
 body.barnes-media-kit .media-library__title {white-space:normal!important;}
 /* Keep the single publication clear of the copy at tablet widths. */
