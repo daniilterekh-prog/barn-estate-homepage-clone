@@ -220,3 +220,10 @@ Pixelmatch используется только для проверки, из �
 В «Покупка / Аренда» убраны внутренний padding группы и рамка активного варианта. Две равные половины заполняют всю внутреннюю область общей рамки; активная половина имеет сплошную мягкую заливку #f9f3f3 и бордовый текст. Сохраняются внешние размеры 58/64px, общая рамка, начертание 300, доступный фокус и обработчики выбора. Новых зависимостей нет.
 
 [Проверка](verification/deal-halves/halves.json): 24 состояния Москвы/загородной, покупка/аренда, 320/390/768/1024/1440/1920px. Половины равны, нет внутренних рамок/зазоров, заливка занимает всю высоту, URL и клавиатура работают, axe без нарушений. Снимки: [покупка 390px](verification/deal-halves/deal-buy-390.png), [аренда 390px](verification/deal-halves/deal-rent-390.png), [покупка 1440px](verification/deal-halves/deal-buy-1440.png), [аренда 1440px](verification/deal-halves/deal-rent-1440.png).
+
+
+## Хлебные крошки по странице собственников — 03.11.2026
+
+Размеры сверены с [живым референсом](https://barn-estate.ru/prodazha_sobstvennikam/). Текст: 12px/16px до 540px, 13px/18px на 541–768px, 17px/18px от 769px; везде Tilda Sans 300. Разделитель «/»: 14/16/18/20/25px с границами 540/768/1024/1440px, line-height 1.4. Промежутки 4/6/8px. Сохранены цвет для белого фона каталога, содержание, ссылки и отступы от соседних блоков. Новых зависимостей нет.
+
+[Проверка](verification/owner-breadcrumbs/breadcrumbs.json): 20 ширин 320–3840px, включая обе стороны границ 540/768/1024/1440. Сравнивались итоговые стили двух подписей и разделителя, интервалы и высота строки; совпадение точное, переполнения и ошибок JavaScript нет. [Исходные отличия](verification/owner-breadcrumbs/before.json), [правила референса](verification/owner-breadcrumbs/reference-rules.json). Снимки: [390px](verification/owner-breadcrumbs/breadcrumbs-390.png), [1440px](verification/owner-breadcrumbs/breadcrumbs-1440.png), [1920px](verification/owner-breadcrumbs/breadcrumbs-1920.png).
