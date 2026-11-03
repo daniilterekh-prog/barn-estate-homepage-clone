@@ -1,0 +1,12 @@
+{
+  "version": "1.4.2",
+  "assets": "20261103-clean-load-18",
+  "entry": "index.html",
+  "mobileEntry": "mobile.html",
+  "listingSource": [
+    "blocks/listing/page-desktop.html",
+    "blocks/listing/page-mobile.html"
+  ],
+  "stylesAtFirstPaint": true,
+  "legacyListingBuilder": false
+}

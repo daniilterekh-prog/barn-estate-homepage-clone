@@ -1,7 +1,7 @@
 {
   "id": "first-degree-map",
   "title": "Карта проектов",
-  "version": "1.4.1",
+  "version": "1.4.2",
   "source": {
     "repo": "daniilterekh-prog/barn-estate-homepage-clone",
     "commit": "62aee9e62e2fae669028433ffe411e2f18a01d84",
@@ -54,5 +54,11 @@
       "sort"
     ],
     "responsive": "compact layout below 768"
+  },
+  "loadingContract": {
+    "release": "20261103-clean-load-18",
+    "staticListing": true,
+    "initialPageStyles": true,
+    "legacyListingBuilder": false
   }
 }

@@ -1,5 +1,5 @@
 {
-  "version": "1.4.1",
+  "version": "1.4.2",
   "reference": "kurortnaya",
   "sourceCommit": "62aee9e62e2fae669028433ffe411e2f18a01d84",
   "blocks": [
@@ -800,5 +800,11 @@
       }
     }
   ],
-  "updated": "2026-11-03"
+  "updated": "2026-11-03",
+  "loadingContract": {
+    "release": "20261103-clean-load-18",
+    "staticListing": true,
+    "initialPageStyles": true,
+    "legacyListingBuilder": false
+  }
 }

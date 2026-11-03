@@ -1,15 +1,15 @@
 (function () {
   var filtersTemplate = document.createElement('script');
-  filtersTemplate.src = 'js/filters-template.js?v=20261102-catalog-filters-12';
+  filtersTemplate.src = 'js/filters-template.js?v=20261103-clean-load-18';
   filtersTemplate.onload = function () {
     var filtersScript = document.createElement('script');
-    filtersScript.src = 'js/filters-modal.js?v=20261103-map-controls-17';
+    filtersScript.src = 'js/filters-modal.js?v=20261103-clean-load-18';
     filtersScript.onload = function () {
       var quickScript = document.createElement('script');
-      quickScript.src = 'js/quick-filters.js?v=20261103-map-controls-17';
+      quickScript.src = 'js/quick-filters.js?v=20261103-clean-load-18';
       quickScript.onload = function () {
         var brandsScript = document.createElement('script');
-        brandsScript.src = 'js/brand-filters.js?v=20261103-map-controls-17';
+        brandsScript.src = 'js/brand-filters.js?v=20261103-clean-load-18';
         document.body.appendChild(brandsScript);
       };
       document.body.appendChild(quickScript);
@@ -18,50 +18,15 @@
   };
   document.body.appendChild(filtersTemplate);
   var mapDataScript = document.createElement('script');
-  mapDataScript.src = 'js/map-projects.js?v=2';
+  mapDataScript.src = 'js/map-projects.js?v=20261103-clean-load-18';
   mapDataScript.onload = function () {
     var mapScript = document.createElement('script');
-    mapScript.src = 'js/map-fullscreen.js?v=20261103-map-controls-17';
+    mapScript.src = 'js/map-fullscreen.js?v=20261103-clean-load-18';
     document.body.appendChild(mapScript);
   };
   document.body.appendChild(mapDataScript);
   var openContactModal = null;
   document.body.classList.add('barnes-header-template');
-  var ownerHeaderStyles = document.createElement('link');
-  ownerHeaderStyles.rel = 'stylesheet';
-  ownerHeaderStyles.href = 'css/owner-header.css?v=20261012-owner-header-5';
-
-  if (!document.querySelector('link[data-kurortnaya-ui-kit]')) {
-    var stylesheet = document.createElement('link');
-    stylesheet.rel = 'stylesheet';
-    stylesheet.href = 'css/ui-kit.css?v=20261012-hero-baked-dark-1';
-    stylesheet.dataset.kurortnayaUiKit = 'true';
-    document.head.appendChild(stylesheet);
-  }
-
-  var footerStylesheet = document.createElement('link');
-  footerStylesheet.rel = 'stylesheet';
-  footerStylesheet.href = 'css/owner-footer.css?v=1';
-  document.head.appendChild(footerStylesheet);
-
-  if (!document.querySelector('link[data-kurortnaya-listing-mode]')) {
-    var listingStylesheet = document.createElement('link');
-    listingStylesheet.rel = 'stylesheet';
-    listingStylesheet.href = 'css/listing-mode.css?v=20261012-sort-text-gap-1';
-    listingStylesheet.dataset.kurortnayaListingMode = 'true';
-    document.head.appendChild(listingStylesheet);
-  }
-
-  if (!document.querySelector('link[data-kurortnaya-start-sales]')) {
-    var startSalesStylesheet = document.createElement('link');
-    startSalesStylesheet.rel = 'stylesheet';
-    startSalesStylesheet.href = 'css/start-sales-cards.css?v=20261102-home-choice-9';
-    startSalesStylesheet.dataset.kurortnayaStartSales = 'true';
-    document.head.appendChild(startSalesStylesheet);
-  }
-
-  document.head.appendChild(ownerHeaderStyles);
-
   function makeHeaderContactPanel(contacts, id, className) {
     var panel = document.createElement('nav');
     panel.id = id;
@@ -616,16 +581,11 @@
     expertClose.closest('.floating-expert').hidden = true;
   });
 
-  if (!document.querySelector('script[data-kurortnaya-listing-mode]')) {
-    var listingScript = document.createElement('script');
-    listingScript.src = 'js/listing-mode.js?v=20261103-map-controls-17';
-    listingScript.dataset.kurortnayaListingMode = 'true';
-    document.body.appendChild(listingScript);
-  }
+  window.BarnEstateCatalogFilters.mount(document);
 
   if (!document.querySelector('script[data-kurortnaya-start-sales]')) {
     var startSalesScript = document.createElement('script');
-    startSalesScript.src = 'js/start-sales-cards.js?v=20261102-home-choice-9';
+    startSalesScript.src = 'js/start-sales-cards.js?v=20261103-clean-load-18';
     startSalesScript.dataset.kurortnayaStartSales = 'true';
     document.body.appendChild(startSalesScript);
   }
