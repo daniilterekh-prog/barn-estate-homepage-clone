@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "base": "http://127.0.0.1:8934/code/html/index.html",
+  "checks": [
+    "37 records and all object images available locally",
+    "320: five departments, one header, approved fonts, four quick fields, no overflow",
+    "390: five departments, one header, approved fonts, four quick fields, no overflow",
+    "768: five departments, one header, approved fonts, four quick fields, no overflow",
+    "1440: five departments, one header, approved fonts, four quick fields, no overflow",
+    "1920: five departments, one header, approved fonts, four quick fields, no overflow",
+    "load-more above count; 6 to 12 cards",
+    "search, empty results, draft cancel, apply, URL, reset",
+    "full filtered map list and rental department restrictions",
+    "favorites persist; object contact context; quiz opens; no submissions",
+    "desktop hover and mobile burger"
+  ],
+  "externalResources": [],
+  "httpErrors": [],
+  "errors": []
+}

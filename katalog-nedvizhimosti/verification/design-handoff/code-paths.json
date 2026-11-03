@@ -1,0 +1,442 @@
+[
+  {
+    "source": "katalog-nedvizhimosti/direction-profiles.js",
+    "target": "handoff/catalog-2026-11-03/code/js/direction-profiles.js"
+  },
+  {
+    "source": "katalog-nedvizhimosti/catalog-kit-v1.js",
+    "target": "handoff/catalog-2026-11-03/code/js/catalog-kit-v1.js"
+  },
+  {
+    "source": "katalog-nedvizhimosti/header-navigation.js",
+    "target": "handoff/catalog-2026-11-03/code/js/header-navigation.js"
+  },
+  {
+    "source": "katalog-nedvizhimosti/listing.css",
+    "target": "handoff/catalog-2026-11-03/code/css/listing.css"
+  },
+  {
+    "source": "katalog-nedvizhimosti/listing.js",
+    "target": "handoff/catalog-2026-11-03/code/js/listing.js"
+  },
+  {
+    "source": "katalog-nedvizhimosti/objects.json",
+    "target": "handoff/catalog-2026-11-03/code/data/objects.json"
+  },
+  {
+    "source": "katalog-nedvizhimosti/catalog-map.css",
+    "target": "handoff/catalog-2026-11-03/code/css/catalog-map.css"
+  },
+  {
+    "source": "katalog-nedvizhimosti/catalog-kit-v1.css",
+    "target": "handoff/catalog-2026-11-03/code/css/catalog-kit-v1.css"
+  },
+  {
+    "source": "katalog-nedvizhimosti/catalog-active-filters.js",
+    "target": "handoff/catalog-2026-11-03/code/js/catalog-active-filters.js"
+  },
+  {
+    "source": "katalog-nedvizhimosti/catalog-map.js",
+    "target": "handoff/catalog-2026-11-03/code/js/catalog-map.js"
+  },
+  {
+    "source": "katalog-nedvizhimosti/catalog-filters.css",
+    "target": "handoff/catalog-2026-11-03/code/css/catalog-filters.css"
+  },
+  {
+    "source": "katalog-nedvizhimosti/filter-adapter.js",
+    "target": "handoff/catalog-2026-11-03/code/js/filter-adapter.js"
+  },
+  {
+    "source": "katalog-nedvizhimosti/index.html",
+    "target": "handoff/catalog-2026-11-03/code/html/index.html"
+  },
+  {
+    "source": "katalog-nedvizhimosti/kit-v1/footer.css",
+    "target": "handoff/catalog-2026-11-03/code/css/kit-v1/footer.css"
+  },
+  {
+    "source": "katalog-nedvizhimosti/kit-v1/home-buttons.css",
+    "target": "handoff/catalog-2026-11-03/code/css/kit-v1/home-buttons.css"
+  },
+  {
+    "source": "katalog-nedvizhimosti/kit-v1/quiz.css",
+    "target": "handoff/catalog-2026-11-03/code/css/kit-v1/quiz.css"
+  },
+  {
+    "source": "katalog-nedvizhimosti/kit-v1/home-spacing.css",
+    "target": "handoff/catalog-2026-11-03/code/css/kit-v1/home-spacing.css"
+  },
+  {
+    "source": "katalog-nedvizhimosti/kit-v1/quiz.js",
+    "target": "handoff/catalog-2026-11-03/code/js/kit-v1/quiz.js"
+  },
+  {
+    "source": "katalog-nedvizhimosti/kit-v1/home-header-contacts.js",
+    "target": "handoff/catalog-2026-11-03/code/js/kit-v1/home-header-contacts.js"
+  },
+  {
+    "source": "katalog-nedvizhimosti/kit-v1/home-header-contacts.css",
+    "target": "handoff/catalog-2026-11-03/code/css/kit-v1/home-header-contacts.css"
+  },
+  {
+    "source": "katalog-nedvizhimosti/kit-v1/home-typography.css",
+    "target": "handoff/catalog-2026-11-03/code/css/kit-v1/home-typography.css"
+  },
+  {
+    "source": "katalog-nedvizhimosti/map-view/LICENSE.md",
+    "target": "handoff/catalog-2026-11-03/code/assets/licenses/map-LICENSE.md"
+  },
+  {
+    "source": "katalog-nedvizhimosti/map-view/map-preview.png",
+    "target": "handoff/catalog-2026-11-03/code/assets/images/map-view/map-preview.png"
+  },
+  {
+    "source": "katalog-nedvizhimosti/map-view/reference-map.css",
+    "target": "handoff/catalog-2026-11-03/code/css/map-view/reference-map.css"
+  },
+  {
+    "source": "katalog-nedvizhimosti/reference-shell/owner-header.css",
+    "target": "handoff/catalog-2026-11-03/code/css/reference-shell/owner-header.css"
+  },
+  {
+    "source": "katalog-nedvizhimosti/reference-shell/owner-footer.css",
+    "target": "handoff/catalog-2026-11-03/code/css/reference-shell/owner-footer.css"
+  },
+  {
+    "source": "katalog-nedvizhimosti/reference-shell/live-header.css",
+    "target": "handoff/catalog-2026-11-03/code/css/reference-shell/live-header.css"
+  },
+  {
+    "source": "katalog-nedvizhimosti/reference-shell/menu.css",
+    "target": "handoff/catalog-2026-11-03/code/css/reference-shell/menu.css"
+  },
+  {
+    "source": "katalog-nedvizhimosti/assets/project-8a11dda83f6df50d.jpg",
+    "target": "handoff/catalog-2026-11-03/code/assets/images/assets/project-8a11dda83f6df50d.jpg"
+  },
+  {
+    "source": "katalog-nedvizhimosti/assets/node-country-reference-eba949f42e39.jpg",
+    "target": "handoff/catalog-2026-11-03/code/assets/images/assets/node-country-reference-eba949f42e39.jpg"
+  },
+  {
+    "source": "katalog-nedvizhimosti/assets/node-international-ba136ab747adee2c-7c727a309e816ccfe4aacda7f0347575.png",
+    "target": "handoff/catalog-2026-11-03/code/assets/images/assets/node-international-ba136ab747adee2c-7c727a309e816ccfe4aacda7f0347575.png"
+  },
+  {
+    "source": "katalog-nedvizhimosti/assets/595261.jpeg",
+    "target": "handoff/catalog-2026-11-03/code/assets/images/assets/595261.jpeg"
+  },
+  {
+    "source": "katalog-nedvizhimosti/assets/node-commercial-d5b716c8785b.jpg",
+    "target": "handoff/catalog-2026-11-03/code/assets/images/assets/node-commercial-d5b716c8785b.jpg"
+  },
+  {
+    "source": "katalog-nedvizhimosti/assets/node-country-reference-30f23f2af407.jpg",
+    "target": "handoff/catalog-2026-11-03/code/assets/images/assets/node-country-reference-30f23f2af407.jpg"
+  },
+  {
+    "source": "katalog-nedvizhimosti/assets/node-country-reference-e853032ae786.jpg",
+    "target": "handoff/catalog-2026-11-03/code/assets/images/assets/node-country-reference-e853032ae786.jpg"
+  },
+  {
+    "source": "katalog-nedvizhimosti/assets/project-f17300db9185a4db.jpeg",
+    "target": "handoff/catalog-2026-11-03/code/assets/images/assets/project-f17300db9185a4db.jpeg"
+  },
+  {
+    "source": "katalog-nedvizhimosti/assets/node-country-reference-f07d68578109.jpg",
+    "target": "handoff/catalog-2026-11-03/code/assets/images/assets/node-country-reference-f07d68578109.jpg"
+  },
+  {
+    "source": "katalog-nedvizhimosti/assets/node-country-reference-5e2cbce10f06.jpeg",
+    "target": "handoff/catalog-2026-11-03/code/assets/images/assets/node-country-reference-5e2cbce10f06.jpeg"
+  },
+  {
+    "source": "katalog-nedvizhimosti/assets/project-82a3957a0bfcc357.jpeg",
+    "target": "handoff/catalog-2026-11-03/code/assets/images/assets/project-82a3957a0bfcc357.jpeg"
+  },
+  {
+    "source": "katalog-nedvizhimosti/assets/node-city-7781fce4e8048ef7.jpg",
+    "target": "handoff/catalog-2026-11-03/code/assets/images/assets/node-city-7781fce4e8048ef7.jpg"
+  },
+  {
+    "source": "katalog-nedvizhimosti/assets/project-91221eb30b488577.jpg",
+    "target": "handoff/catalog-2026-11-03/code/assets/images/assets/project-91221eb30b488577.jpg"
+  },
+  {
+    "source": "katalog-nedvizhimosti/assets/node-international-f0cd941b817681f6-5a3e61b48390c8dcd6bfe320b01e86d1.jpg",
+    "target": "handoff/catalog-2026-11-03/code/assets/images/assets/node-international-f0cd941b817681f6-5a3e61b48390c8dcd6bfe320b01e86d1.jpg"
+  },
+  {
+    "source": "katalog-nedvizhimosti/assets/node-international-82b95a666dc35706-20725795365c73b332ed7214.03809248_2a3b98b579_1276.jpg",
+    "target": "handoff/catalog-2026-11-03/code/assets/images/assets/node-international-82b95a666dc35706-20725795365c73b332ed7214.03809248_2a3b98b579_1276.jpg"
+  },
+  {
+    "source": "katalog-nedvizhimosti/assets/project-4b7c3c10af05d775.jpg",
+    "target": "handoff/catalog-2026-11-03/code/assets/images/assets/project-4b7c3c10af05d775.jpg"
+  },
+  {
+    "source": "katalog-nedvizhimosti/assets/project-107b1d61c541ddd3.jpg",
+    "target": "handoff/catalog-2026-11-03/code/assets/images/assets/project-107b1d61c541ddd3.jpg"
+  },
+  {
+    "source": "katalog-nedvizhimosti/assets/node-city-040420c4b252e01e.jpg",
+    "target": "handoff/catalog-2026-11-03/code/assets/images/assets/node-city-040420c4b252e01e.jpg"
+  },
+  {
+    "source": "katalog-nedvizhimosti/assets/project-b23d24c94cfe61c0.jpeg",
+    "target": "handoff/catalog-2026-11-03/code/assets/images/assets/project-b23d24c94cfe61c0.jpeg"
+  },
+  {
+    "source": "katalog-nedvizhimosti/assets/node-country-reference-1a36d17521f2.jpg",
+    "target": "handoff/catalog-2026-11-03/code/assets/images/assets/node-country-reference-1a36d17521f2.jpg"
+  },
+  {
+    "source": "katalog-nedvizhimosti/assets/node-city-c714d4a43087da62.jpg",
+    "target": "handoff/catalog-2026-11-03/code/assets/images/assets/node-city-c714d4a43087da62.jpg"
+  },
+  {
+    "source": "katalog-nedvizhimosti/assets/project-e60210b294be536a.jpg",
+    "target": "handoff/catalog-2026-11-03/code/assets/images/assets/project-e60210b294be536a.jpg"
+  },
+  {
+    "source": "katalog-nedvizhimosti/assets/node-international-0b0a4fc0a38c1047-3a8b2f35f0f0ac0d0d647e54e043a3ed.jpeg",
+    "target": "handoff/catalog-2026-11-03/code/assets/images/assets/node-international-0b0a4fc0a38c1047-3a8b2f35f0f0ac0d0d647e54e043a3ed.jpeg"
+  },
+  {
+    "source": "katalog-nedvizhimosti/assets/node-international-614675d68e4cffe8-8311052985d7bb1536375a8.30505639_144d933eda_1920.jpg",
+    "target": "handoff/catalog-2026-11-03/code/assets/images/assets/node-international-614675d68e4cffe8-8311052985d7bb1536375a8.30505639_144d933eda_1920.jpg"
+  },
+  {
+    "source": "katalog-nedvizhimosti/assets/node-city-084b2b6f06e71057.jpg",
+    "target": "handoff/catalog-2026-11-03/code/assets/images/assets/node-city-084b2b6f06e71057.jpg"
+  },
+  {
+    "source": "katalog-nedvizhimosti/assets/node-commercial-e29de3bc99f1.jpg",
+    "target": "handoff/catalog-2026-11-03/code/assets/images/assets/node-commercial-e29de3bc99f1.jpg"
+  },
+  {
+    "source": "katalog-nedvizhimosti/assets/project-d000369966411287.jpeg",
+    "target": "handoff/catalog-2026-11-03/code/assets/images/assets/project-d000369966411287.jpeg"
+  },
+  {
+    "source": "katalog-nedvizhimosti/assets/586963.png",
+    "target": "handoff/catalog-2026-11-03/code/assets/images/assets/586963.png"
+  },
+  {
+    "source": "katalog-nedvizhimosti/assets/588036.jpg",
+    "target": "handoff/catalog-2026-11-03/code/assets/images/assets/588036.jpg"
+  },
+  {
+    "source": "katalog-nedvizhimosti/assets/node-international-19de3829ff58c4f8-d0d5978e99581bc86d7f582e46645a32.png",
+    "target": "handoff/catalog-2026-11-03/code/assets/images/assets/node-international-19de3829ff58c4f8-d0d5978e99581bc86d7f582e46645a32.png"
+  },
+  {
+    "source": "katalog-nedvizhimosti/assets/project-55bf4ebdafb15af9.png",
+    "target": "handoff/catalog-2026-11-03/code/assets/images/assets/project-55bf4ebdafb15af9.png"
+  },
+  {
+    "source": "katalog-nedvizhimosti/assets/node-commercial-fbfb69732de9.jpg",
+    "target": "handoff/catalog-2026-11-03/code/assets/images/assets/node-commercial-fbfb69732de9.jpg"
+  },
+  {
+    "source": "katalog-nedvizhimosti/assets/project-bff2c0c9ecfe54d1.png",
+    "target": "handoff/catalog-2026-11-03/code/assets/images/assets/project-bff2c0c9ecfe54d1.png"
+  },
+  {
+    "source": "katalog-nedvizhimosti/assets/node-international-a11d1657b8234502-15966406495f741fe0382aa9.36148629_0ddb33d60e_1920.jpg",
+    "target": "handoff/catalog-2026-11-03/code/assets/images/assets/node-international-a11d1657b8234502-15966406495f741fe0382aa9.36148629_0ddb33d60e_1920.jpg"
+  },
+  {
+    "source": "katalog-nedvizhimosti/assets/node-international-e9fabafdd48b462b-2.3.jpeg",
+    "target": "handoff/catalog-2026-11-03/code/assets/images/assets/node-international-e9fabafdd48b462b-2.3.jpeg"
+  },
+  {
+    "source": "katalog-nedvizhimosti/assets/project-27765be220f1b2f9.jpeg",
+    "target": "handoff/catalog-2026-11-03/code/assets/images/assets/project-27765be220f1b2f9.jpeg"
+  },
+  {
+    "source": "katalog-nedvizhimosti/assets/node-commercial-d100227df6a0.jpg",
+    "target": "handoff/catalog-2026-11-03/code/assets/images/assets/node-commercial-d100227df6a0.jpg"
+  },
+  {
+    "source": "katalog-nedvizhimosti/reference-shell/assets/7aa20aa89b87356c.svg",
+    "target": "handoff/catalog-2026-11-03/code/assets/images/reference-shell/assets/7aa20aa89b87356c.svg"
+  },
+  {
+    "source": "katalog-nedvizhimosti/reference-shell/assets/7781fce4e8048ef7.jpg",
+    "target": "handoff/catalog-2026-11-03/code/assets/images/reference-shell/assets/7781fce4e8048ef7.jpg"
+  },
+  {
+    "source": "katalog-nedvizhimosti/reference-shell/assets/barn-estate-logo.svg",
+    "target": "handoff/catalog-2026-11-03/code/assets/images/reference-shell/assets/barn-estate-logo.svg"
+  },
+  {
+    "source": "katalog-nedvizhimosti/reference-shell/assets/5caa61a4b0731d0d.svg",
+    "target": "handoff/catalog-2026-11-03/code/assets/images/reference-shell/assets/5caa61a4b0731d0d.svg"
+  },
+  {
+    "source": "katalog-nedvizhimosti/reference-shell/assets/c5384c30d421ad70.jpg",
+    "target": "handoff/catalog-2026-11-03/code/assets/images/reference-shell/assets/c5384c30d421ad70.jpg"
+  },
+  {
+    "source": "katalog-nedvizhimosti/reference-shell/assets/3e197e0e1f3e679e.svg",
+    "target": "handoff/catalog-2026-11-03/code/assets/images/reference-shell/assets/3e197e0e1f3e679e.svg"
+  },
+  {
+    "source": "katalog-nedvizhimosti/reference-shell/assets/4435c9a57e165a1c.svg",
+    "target": "handoff/catalog-2026-11-03/code/assets/images/reference-shell/assets/4435c9a57e165a1c.svg"
+  },
+  {
+    "source": "katalog-nedvizhimosti/kit-v1/assets/a9f2b67f7136af9bde4f58b8.woff2",
+    "target": "handoff/catalog-2026-11-03/code/assets/fonts/a9f2b67f7136af9bde4f58b8.woff2"
+  },
+  {
+    "source": "katalog-nedvizhimosti/kit-v1/assets/TildaSans-ExtraBold.woff2",
+    "target": "handoff/catalog-2026-11-03/code/assets/fonts/TildaSans-ExtraBold.woff2"
+  },
+  {
+    "source": "katalog-nedvizhimosti/kit-v1/assets/TildaSans-Semibold.woff2",
+    "target": "handoff/catalog-2026-11-03/code/assets/fonts/TildaSans-Semibold.woff2"
+  },
+  {
+    "source": "katalog-nedvizhimosti/kit-v1/assets/SPLIDE-LICENSE.txt",
+    "target": "handoff/catalog-2026-11-03/code/assets/licenses/SPLIDE-LICENSE.txt"
+  },
+  {
+    "source": "katalog-nedvizhimosti/kit-v1/assets/quiz-mobile-prus-magazine.webp",
+    "target": "handoff/catalog-2026-11-03/code/assets/images/kit-v1/assets/quiz-mobile-prus-magazine.webp"
+  },
+  {
+    "source": "katalog-nedvizhimosti/kit-v1/assets/de589af6ec6325d4b365d646.woff2",
+    "target": "handoff/catalog-2026-11-03/code/assets/fonts/de589af6ec6325d4b365d646.woff2"
+  },
+  {
+    "source": "katalog-nedvizhimosti/kit-v1/assets/9e76f26b05473907fc0031ca.woff2",
+    "target": "handoff/catalog-2026-11-03/code/assets/fonts/9e76f26b05473907fc0031ca.woff2"
+  },
+  {
+    "source": "katalog-nedvizhimosti/kit-v1/assets/material-icons-LICENSE.txt",
+    "target": "handoff/catalog-2026-11-03/code/assets/licenses/material-icons-LICENSE.txt"
+  },
+  {
+    "source": "katalog-nedvizhimosti/kit-v1/assets/TildaSans-Black.woff2",
+    "target": "handoff/catalog-2026-11-03/code/assets/fonts/TildaSans-Black.woff2"
+  },
+  {
+    "source": "katalog-nedvizhimosti/kit-v1/assets/TildaSans-Bold.woff2",
+    "target": "handoff/catalog-2026-11-03/code/assets/fonts/TildaSans-Bold.woff2"
+  },
+  {
+    "source": "katalog-nedvizhimosti/kit-v1/assets/c57d9b3c8de986fa0d618d09.svg",
+    "target": "handoff/catalog-2026-11-03/code/assets/images/kit-v1/assets/c57d9b3c8de986fa0d618d09.svg"
+  },
+  {
+    "source": "katalog-nedvizhimosti/kit-v1/assets/owner-modal-prus.webp",
+    "target": "handoff/catalog-2026-11-03/code/assets/images/kit-v1/assets/owner-modal-prus.webp"
+  },
+  {
+    "source": "katalog-nedvizhimosti/kit/filters-modal/filters-modal.js",
+    "target": "handoff/catalog-2026-11-03/code/js/kit/filters-modal/filters-modal.js"
+  },
+  {
+    "source": "katalog-nedvizhimosti/kit/filters-modal/filters-modal.css",
+    "target": "handoff/catalog-2026-11-03/code/css/kit/filters-modal/filters-modal.css"
+  },
+  {
+    "source": "katalog-nedvizhimosti/kit/filters-modal/filters-template.js",
+    "target": "handoff/catalog-2026-11-03/code/js/kit/filters-modal/filters-template.js"
+  },
+  {
+    "source": "katalog-nedvizhimosti/kit/quick-filter-dropdowns/quick-filters.js",
+    "target": "handoff/catalog-2026-11-03/code/js/kit/quick-filter-dropdowns/quick-filters.js"
+  },
+  {
+    "source": "katalog-nedvizhimosti/kit/quick-filter-dropdowns/quick-filters.css",
+    "target": "handoff/catalog-2026-11-03/code/css/kit/quick-filter-dropdowns/quick-filters.css"
+  },
+  {
+    "source": "katalog-nedvizhimosti/kit/quick-filter-dropdowns/brand-filters.js",
+    "target": "handoff/catalog-2026-11-03/code/js/kit/quick-filter-dropdowns/brand-filters.js"
+  },
+  {
+    "source": "katalog-nedvizhimosti/kit/quick-filter-dropdowns/brand-filters.css",
+    "target": "handoff/catalog-2026-11-03/code/css/kit/quick-filter-dropdowns/brand-filters.css"
+  },
+  {
+    "source": "katalog-nedvizhimosti/kit/_shared/owner-header.css",
+    "target": "handoff/catalog-2026-11-03/code/css/kit/_shared/owner-header.css"
+  },
+  {
+    "source": "katalog-nedvizhimosti/kit/_shared/owner-footer.css",
+    "target": "handoff/catalog-2026-11-03/code/css/kit/_shared/owner-footer.css"
+  },
+  {
+    "source": "katalog-nedvizhimosti/kit/_shared/listing-mode.css",
+    "target": "handoff/catalog-2026-11-03/code/css/kit/_shared/listing-mode.css"
+  },
+  {
+    "source": "katalog-nedvizhimosti/kit/_shared/ui-kit.css",
+    "target": "handoff/catalog-2026-11-03/code/css/kit/_shared/ui-kit.css"
+  },
+  {
+    "source": "katalog-nedvizhimosti/kit/_shared/brand-filters.css",
+    "target": "handoff/catalog-2026-11-03/code/css/kit/_shared/brand-filters.css"
+  },
+  {
+    "source": "katalog-nedvizhimosti/kit/_shared/source.css",
+    "target": "handoff/catalog-2026-11-03/code/css/kit/_shared/source.css"
+  },
+  {
+    "source": "katalog-nedvizhimosti/kit/_shared/assets/e780567a5079a655.svg",
+    "target": "handoff/catalog-2026-11-03/code/assets/images/kit/_shared/assets/e780567a5079a655.svg"
+  },
+  {
+    "source": "katalog-nedvizhimosti/kit/_shared/assets/086cc9ca6e7ad9da.woff2",
+    "target": "handoff/catalog-2026-11-03/code/assets/fonts/086cc9ca6e7ad9da.woff2"
+  },
+  {
+    "source": "katalog-nedvizhimosti/kit/_shared/assets/7f0243b306c649b7.webp",
+    "target": "handoff/catalog-2026-11-03/code/assets/images/kit/_shared/assets/7f0243b306c649b7.webp"
+  },
+  {
+    "source": "katalog-nedvizhimosti/kit/_shared/assets/2435433bcff3b967.woff2",
+    "target": "handoff/catalog-2026-11-03/code/assets/fonts/2435433bcff3b967.woff2"
+  },
+  {
+    "source": "katalog-nedvizhimosti/kit/_shared/assets/02b7a36916692a36.svg",
+    "target": "handoff/catalog-2026-11-03/code/assets/images/kit/_shared/assets/02b7a36916692a36.svg"
+  },
+  {
+    "source": "katalog-nedvizhimosti/kit/_shared/assets/86b8e2a4b34a061f.svg",
+    "target": "handoff/catalog-2026-11-03/code/assets/images/kit/_shared/assets/86b8e2a4b34a061f.svg"
+  },
+  {
+    "source": "katalog-nedvizhimosti/kit/_shared/assets/f8285279bd12648c.svg",
+    "target": "handoff/catalog-2026-11-03/code/assets/images/kit/_shared/assets/f8285279bd12648c.svg"
+  },
+  {
+    "source": "katalog-nedvizhimosti/kit/_shared/assets/3650e8e33aa7031c.woff2",
+    "target": "handoff/catalog-2026-11-03/code/assets/fonts/3650e8e33aa7031c.woff2"
+  },
+  {
+    "source": "katalog-nedvizhimosti/kit/_shared/assets/96011550f4b6e432.woff2",
+    "target": "handoff/catalog-2026-11-03/code/assets/fonts/96011550f4b6e432.woff2"
+  },
+  {
+    "source": "katalog-nedvizhimosti/kit/_shared/assets/48d1ef1db2cfec22.woff2",
+    "target": "handoff/catalog-2026-11-03/code/assets/fonts/48d1ef1db2cfec22.woff2"
+  },
+  {
+    "source": "katalog-nedvizhimosti/kit/_shared/assets/a9274ba2f8d830e5.woff2",
+    "target": "handoff/catalog-2026-11-03/code/assets/fonts/a9274ba2f8d830e5.woff2"
+  },
+  {
+    "source": "katalog-nedvizhimosti/kit/_shared/assets/e4d43ddddae4bc89.svg",
+    "target": "handoff/catalog-2026-11-03/code/assets/images/kit/_shared/assets/e4d43ddddae4bc89.svg"
+  },
+  {
+    "source": "katalog-nedvizhimosti/kit/_shared/assets/7b0041f72131f767.woff2",
+    "target": "handoff/catalog-2026-11-03/code/assets/fonts/7b0041f72131f767.woff2"
+  }
+]
