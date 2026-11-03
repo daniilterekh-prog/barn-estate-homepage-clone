@@ -62,3 +62,8 @@ body.barnes-media-kit :is(h1,h2,h3,h4,h5,h6) {text-transform:uppercase!important
 
 /* Material and analytics categories: one step lighter in every state. */
 body.barnes-media-kit :is(.media-fresh__filter,.media-analytics__filter) {font-weight:300!important;}
+
+/* Visible checked state for the imported quiz consent control. */
+.home-owner-host .home-owner-form__consent-box {position:relative;}
+.home-owner-host .home-owner-form__consent-input:checked + .home-owner-form__consent-box {background:#8b1d25;border-color:#8b1d25;}
+.home-owner-host .home-owner-form__consent-input:checked + .home-owner-form__consent-box::after {content:"";position:absolute;left:4px;top:0;width:5px;height:9px;border:solid #fff;border-width:0 2px 2px 0;transform:rotate(45deg);}

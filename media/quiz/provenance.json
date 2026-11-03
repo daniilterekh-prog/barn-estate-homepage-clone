@@ -1,0 +1,37 @@
+{
+  "sourceRepository": "daniilterekh-prog/barnes-sites",
+  "sourceCommit": "b54bed8ac37d207d101c041fc9f231e4b1e9a816",
+  "approvedReference": "barn-estate-home-reference-v1.0.0",
+  "date": "2026-11-03",
+  "adaptations": [
+    "Click interception limited to floating expert widget on Media.",
+    "Global SVG overflow selector scoped to quiz host; other reference styles preserved.",
+    "Existing Media uppercase heading rule and shared button tokens apply."
+  ],
+  "files": [
+    {
+      "path": "home-owner-form.js",
+      "source": "main-site/pages/home/exact-2026-10-21/source/home-owner-form.js",
+      "sourceSha256": "54cc5577fe5daa00ff323ed26605eaadc2ec42e7e4b0e3180c7e42a2a2b602f9",
+      "mediaSha256": "9c0d1e60ef77eca571110362ac3fe7b93b3eb65584e0af22aed67ea17eb04919"
+    },
+    {
+      "path": "home-owner-form.css",
+      "source": "main-site/pages/home/exact-2026-10-21/source/home-owner-form.css",
+      "sourceSha256": "4ba37ce5802dea79b59043557dbe31de7d8c00d8718cfa20aa073ce5cda41378",
+      "mediaSha256": "57986259ad5eb2dd68290ae9b0605915b583e2e49136759b51b781d954b54f45"
+    },
+    {
+      "path": "assets/owner-modal-prus.webp",
+      "source": "main-site/pages/home/exact-2026-10-21/source/assets/owner-modal-prus.webp",
+      "sourceSha256": "6bbaa8e1df83e7d5eda42c83d174e1f0177a8cbb5698bd5ec01ee3602e8f84aa",
+      "mediaSha256": "6bbaa8e1df83e7d5eda42c83d174e1f0177a8cbb5698bd5ec01ee3602e8f84aa"
+    },
+    {
+      "path": "assets/quiz-mobile-prus-magazine.webp",
+      "source": "main-site/pages/home/exact-2026-10-21/source/assets/quiz-mobile-prus-magazine.webp",
+      "sourceSha256": "8985649766af231100dd863db3e4fac10809a7b9f94bc2d38c6922c8e10b67c1",
+      "mediaSha256": "8985649766af231100dd863db3e4fac10809a7b9f94bc2d38c6922c8e10b67c1"
+    }
+  ]
+}
