@@ -1,7 +1,7 @@
 {
   "id": "first-degree-hero",
   "title": "Первый экран и поиск",
-  "version": "1.3.0",
+  "version": "1.3.1",
   "source": {
     "repo": "daniilterekh-prog/barn-estate-homepage-clone",
     "commit": "62aee9e62e2fae669028433ffe411e2f18a01d84",
@@ -52,5 +52,6 @@
       "resort data",
       "exclusive new-build/secondary"
     ]
-  }
+  },
+  "headerRevision": "hero-breadcrumbs-2026-11-03"
 }

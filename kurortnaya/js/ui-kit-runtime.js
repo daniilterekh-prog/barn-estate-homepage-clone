@@ -111,7 +111,7 @@
     var header = document.querySelector('.layout__header .site-header');
     if (!header) return;
 
-    header.classList.remove('site-header--no-nav');
+    header.classList.add('site-header--no-nav');
     header.classList.add('catalog-header-ready');
 
     var pageNavigation = document.querySelector('.catalog-page-nav');
