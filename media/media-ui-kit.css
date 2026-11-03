@@ -53,3 +53,6 @@ body.barnes-media-kit .media-analytics__card-body {gap:24px!important;}
  body.barnes-media-kit :is(.media-intents__action,.media-weekly__action,.media-fresh__action,.media-market__featured-action,.team-member-card__link) {font-size:12px!important;}
  body.barnes-media-kit .ui-more-link__label {font-size:12px!important;}
 }
+
+/* Removed by user request; hide before hydration to avoid a flash or blank gap. */
+.media-subscribe { display: none !important; }

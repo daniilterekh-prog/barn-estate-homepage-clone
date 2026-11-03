@@ -54,6 +54,11 @@
  function ready(){
   const nuxt=document.querySelector('#__nuxt')?.__vue_app__?.config.globalProperties.$nuxt;
   if(!nuxt||nuxt.isHydrating){setTimeout(ready,30);return;}
+  // Remove the redundant digest block after Nuxt hydration. Keep the hero
+  // subscription shortcut pointing to the shared newsletter below the page.
+  document.querySelector('.media-subscribe')?.remove();
+  const newsletter=document.querySelector('.newsletter-cta');
+  if(newsletter)newsletter.id='subscribe';
   const header=document.querySelector('.site-header');
   if(header&&!header.querySelector('.media-reference-nav')){
    const nav=document.createElement('nav');nav.className='media-reference-nav';nav.setAttribute('aria-label','Направления BARN Estate');
@@ -80,8 +85,7 @@
    ['.media-fresh__title','Медиа BARN Estate'],
    ['.media-analytics__title','Аналитика BARN Estate'],
    ['.media-cta-banner__title','Консультация BARN Estate'],
-   ['.media-library__title','Издания BARN Estate'],
-   ['.media-subscribe__title','Дайджест BARN Estate']
+   ['.media-library__title','Издания BARN Estate']
   ];
   for(const [selector,text] of headings){
    const heading=document.querySelector(selector);if(!heading||heading.closest('.media-kit-heading'))continue;
