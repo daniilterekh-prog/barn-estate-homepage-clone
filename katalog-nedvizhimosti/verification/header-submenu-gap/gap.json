@@ -1,0 +1,981 @@
+{
+  "passed": true,
+  "reference": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/",
+  "checks": [
+    {
+      "width": 1281,
+      "label": "Москва",
+      "gap": 31,
+      "textGap": 28,
+      "alignment": 0,
+      "popup": {
+        "x": 89.625,
+        "y": 153,
+        "width": 220,
+        "height": 252,
+        "top": 153,
+        "right": 309.625,
+        "bottom": 405,
+        "left": 89.625
+      },
+      "overflow": false
+    },
+    {
+      "width": 1281,
+      "label": "Загородная",
+      "gap": 31,
+      "textGap": 28,
+      "alignment": 0,
+      "popup": {
+        "x": 171.953125,
+        "y": 153,
+        "width": 220,
+        "height": 112,
+        "top": 153,
+        "right": 391.953125,
+        "bottom": 265,
+        "left": 171.953125
+      },
+      "overflow": false
+    },
+    {
+      "width": 1281,
+      "label": "Коммерческая",
+      "gap": 31,
+      "textGap": 28,
+      "alignment": 0,
+      "popup": {
+        "x": 289.671875,
+        "y": 153,
+        "width": 220,
+        "height": 196,
+        "top": 153,
+        "right": 509.671875,
+        "bottom": 349,
+        "left": 289.671875
+      },
+      "overflow": false
+    },
+    {
+      "width": 1281,
+      "label": "Курортная",
+      "gap": 31,
+      "textGap": 28,
+      "alignment": 0,
+      "popup": {
+        "x": 430.984375,
+        "y": 153,
+        "width": 220,
+        "height": 140,
+        "top": 153,
+        "right": 650.984375,
+        "bottom": 293,
+        "left": 430.984375
+      },
+      "overflow": false
+    },
+    {
+      "width": 1281,
+      "label": "Зарубежная",
+      "gap": 31,
+      "textGap": 28,
+      "alignment": 0,
+      "popup": {
+        "x": 535.0625,
+        "y": 153,
+        "width": 220,
+        "height": 308,
+        "top": 153,
+        "right": 755.0625,
+        "bottom": 461,
+        "left": 535.0625
+      },
+      "overflow": false
+    },
+    {
+      "width": 1281,
+      "label": "Санкт-Петербург",
+      "gap": 31,
+      "textGap": 28,
+      "alignment": 0,
+      "popup": {
+        "x": 648.953125,
+        "y": 153,
+        "width": 220,
+        "height": 224,
+        "top": 153,
+        "right": 868.953125,
+        "bottom": 377,
+        "left": 648.953125
+      },
+      "overflow": false
+    },
+    {
+      "width": 1281,
+      "label": "Медиа",
+      "gap": 31,
+      "textGap": 28,
+      "alignment": 0,
+      "popup": {
+        "x": 800.859375,
+        "y": 153,
+        "width": 220,
+        "height": 224,
+        "top": 153,
+        "right": 1020.859375,
+        "bottom": 377,
+        "left": 800.859375
+      },
+      "overflow": false
+    },
+    {
+      "width": 1281,
+      "label": "О BARN Estate",
+      "gap": 31,
+      "textGap": 28,
+      "alignment": 0,
+      "popup": {
+        "x": 872.15625,
+        "y": 153,
+        "width": 220,
+        "height": 252,
+        "top": 153,
+        "right": 1092.15625,
+        "bottom": 405,
+        "left": 872.15625
+      },
+      "overflow": false
+    },
+    {
+      "width": 1281,
+      "label": "Собственникам",
+      "gap": 31,
+      "textGap": 28,
+      "alignment": 0,
+      "popup": {
+        "x": 999.5625,
+        "y": 153,
+        "width": 220,
+        "height": 112,
+        "top": 153,
+        "right": 1219.5625,
+        "bottom": 265,
+        "left": 999.5625
+      },
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "label": "Москва",
+      "gap": 31,
+      "textGap": 28,
+      "alignment": 0,
+      "popup": {
+        "x": 137.3125,
+        "y": 153,
+        "width": 220,
+        "height": 252,
+        "top": 153,
+        "right": 357.3125,
+        "bottom": 405,
+        "left": 137.3125
+      },
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "label": "Загородная",
+      "gap": 31,
+      "textGap": 28,
+      "alignment": 0,
+      "popup": {
+        "x": 227.59375,
+        "y": 153,
+        "width": 220,
+        "height": 112,
+        "top": 153,
+        "right": 447.59375,
+        "bottom": 265,
+        "left": 227.59375
+      },
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "label": "Коммерческая",
+      "gap": 31,
+      "textGap": 28,
+      "alignment": 0,
+      "popup": {
+        "x": 353.265625,
+        "y": 153,
+        "width": 220,
+        "height": 196,
+        "top": 153,
+        "right": 573.265625,
+        "bottom": 349,
+        "left": 353.265625
+      },
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "label": "Курортная",
+      "gap": 31,
+      "textGap": 28,
+      "alignment": 0,
+      "popup": {
+        "x": 502.53125,
+        "y": 153,
+        "width": 220,
+        "height": 140,
+        "top": 153,
+        "right": 722.53125,
+        "bottom": 293,
+        "left": 502.53125
+      },
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "label": "Зарубежная",
+      "gap": 31,
+      "textGap": 28,
+      "alignment": 0,
+      "popup": {
+        "x": 614.5625,
+        "y": 153,
+        "width": 220,
+        "height": 308,
+        "top": 153,
+        "right": 834.5625,
+        "bottom": 461,
+        "left": 614.5625
+      },
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "label": "Санкт-Петербург",
+      "gap": 31,
+      "textGap": 28,
+      "alignment": 0,
+      "popup": {
+        "x": 736.40625,
+        "y": 153,
+        "width": 220,
+        "height": 224,
+        "top": 153,
+        "right": 956.40625,
+        "bottom": 377,
+        "left": 736.40625
+      },
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "label": "Медиа",
+      "gap": 31,
+      "textGap": 28,
+      "alignment": 0,
+      "popup": {
+        "x": 896.265625,
+        "y": 153,
+        "width": 220,
+        "height": 224,
+        "top": 153,
+        "right": 1116.265625,
+        "bottom": 377,
+        "left": 896.265625
+      },
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "label": "О BARN Estate",
+      "gap": 31,
+      "textGap": 28,
+      "alignment": 0,
+      "popup": {
+        "x": 975.515625,
+        "y": 153,
+        "width": 220,
+        "height": 252,
+        "top": 153,
+        "right": 1195.515625,
+        "bottom": 405,
+        "left": 975.515625
+      },
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "label": "Собственникам",
+      "gap": 31,
+      "textGap": 28,
+      "alignment": 0,
+      "popup": {
+        "x": 1110.875,
+        "y": 153,
+        "width": 220,
+        "height": 112,
+        "top": 153,
+        "right": 1330.875,
+        "bottom": 265,
+        "left": 1110.875
+      },
+      "overflow": false
+    },
+    {
+      "width": 1441,
+      "label": "Москва",
+      "gap": 31,
+      "textGap": 28,
+      "alignment": 0,
+      "popup": {
+        "x": 80.109375,
+        "y": 155,
+        "width": 220,
+        "height": 268,
+        "top": 155,
+        "right": 300.109375,
+        "bottom": 423,
+        "left": 80.109375
+      },
+      "overflow": false
+    },
+    {
+      "width": 1441,
+      "label": "Загородная",
+      "gap": 31,
+      "textGap": 28,
+      "alignment": 0,
+      "popup": {
+        "x": 178.71875,
+        "y": 155,
+        "width": 220,
+        "height": 118,
+        "top": 155,
+        "right": 398.71875,
+        "bottom": 273,
+        "left": 178.71875
+      },
+      "overflow": false
+    },
+    {
+      "width": 1441,
+      "label": "Коммерческая",
+      "gap": 31,
+      "textGap": 28,
+      "alignment": 0,
+      "popup": {
+        "x": 317.140625,
+        "y": 155,
+        "width": 220,
+        "height": 208,
+        "top": 155,
+        "right": 537.140625,
+        "bottom": 363,
+        "left": 317.140625
+      },
+      "overflow": false
+    },
+    {
+      "width": 1441,
+      "label": "Курортная",
+      "gap": 31,
+      "textGap": 28,
+      "alignment": 0,
+      "popup": {
+        "x": 482.109375,
+        "y": 155,
+        "width": 220,
+        "height": 148,
+        "top": 155,
+        "right": 702.109375,
+        "bottom": 303,
+        "left": 482.109375
+      },
+      "overflow": false
+    },
+    {
+      "width": 1441,
+      "label": "Зарубежная",
+      "gap": 31,
+      "textGap": 28,
+      "alignment": 0,
+      "popup": {
+        "x": 605.1875,
+        "y": 155,
+        "width": 220,
+        "height": 328,
+        "top": 155,
+        "right": 825.1875,
+        "bottom": 483,
+        "left": 605.1875
+      },
+      "overflow": false
+    },
+    {
+      "width": 1441,
+      "label": "Санкт-Петербург",
+      "gap": 31,
+      "textGap": 28,
+      "alignment": 0,
+      "popup": {
+        "x": 739.3125,
+        "y": 155,
+        "width": 220,
+        "height": 238,
+        "top": 155,
+        "right": 959.3125,
+        "bottom": 393,
+        "left": 739.3125
+      },
+      "overflow": false
+    },
+    {
+      "width": 1441,
+      "label": "Медиа",
+      "gap": 31,
+      "textGap": 28,
+      "alignment": 0,
+      "popup": {
+        "x": 916.203125,
+        "y": 155,
+        "width": 220,
+        "height": 238,
+        "top": 155,
+        "right": 1136.203125,
+        "bottom": 393,
+        "left": 916.203125
+      },
+      "overflow": false
+    },
+    {
+      "width": 1441,
+      "label": "О BARN Estate",
+      "gap": 31,
+      "textGap": 28,
+      "alignment": 0,
+      "popup": {
+        "x": 1002.40625,
+        "y": 155,
+        "width": 220,
+        "height": 268,
+        "top": 155,
+        "right": 1222.40625,
+        "bottom": 423,
+        "left": 1002.40625
+      },
+      "overflow": false
+    },
+    {
+      "width": 1441,
+      "label": "Собственникам",
+      "gap": 31,
+      "textGap": 28,
+      "alignment": 0,
+      "popup": {
+        "x": 1151.71875,
+        "y": 155,
+        "width": 220,
+        "height": 118,
+        "top": 155,
+        "right": 1371.71875,
+        "bottom": 273,
+        "left": 1151.71875
+      },
+      "overflow": false
+    },
+    {
+      "width": 1920,
+      "label": "Москва",
+      "gap": 31,
+      "textGap": 28,
+      "alignment": 0,
+      "popup": {
+        "x": 271.796875,
+        "y": 155,
+        "width": 220,
+        "height": 268,
+        "top": 155,
+        "right": 491.796875,
+        "bottom": 423,
+        "left": 271.796875
+      },
+      "overflow": false
+    },
+    {
+      "width": 1920,
+      "label": "Загородная",
+      "gap": 31,
+      "textGap": 28,
+      "alignment": 0,
+      "popup": {
+        "x": 382.359375,
+        "y": 155,
+        "width": 220,
+        "height": 118,
+        "top": 155,
+        "right": 602.359375,
+        "bottom": 273,
+        "left": 382.359375
+      },
+      "overflow": false
+    },
+    {
+      "width": 1920,
+      "label": "Коммерческая",
+      "gap": 31,
+      "textGap": 28,
+      "alignment": 0,
+      "popup": {
+        "x": 532.734375,
+        "y": 155,
+        "width": 220,
+        "height": 208,
+        "top": 155,
+        "right": 752.734375,
+        "bottom": 363,
+        "left": 532.734375
+      },
+      "overflow": false
+    },
+    {
+      "width": 1920,
+      "label": "Курортная",
+      "gap": 31,
+      "textGap": 28,
+      "alignment": 0,
+      "popup": {
+        "x": 709.65625,
+        "y": 155,
+        "width": 220,
+        "height": 148,
+        "top": 155,
+        "right": 929.65625,
+        "bottom": 303,
+        "left": 709.65625
+      },
+      "overflow": false
+    },
+    {
+      "width": 1920,
+      "label": "Зарубежная",
+      "gap": 31,
+      "textGap": 28,
+      "alignment": 0,
+      "popup": {
+        "x": 844.6875,
+        "y": 155,
+        "width": 220,
+        "height": 328,
+        "top": 155,
+        "right": 1064.6875,
+        "bottom": 483,
+        "left": 844.6875
+      },
+      "overflow": false
+    },
+    {
+      "width": 1920,
+      "label": "Санкт-Петербург",
+      "gap": 31,
+      "textGap": 28,
+      "alignment": 0,
+      "popup": {
+        "x": 990.765625,
+        "y": 155,
+        "width": 220,
+        "height": 238,
+        "top": 155,
+        "right": 1210.765625,
+        "bottom": 393,
+        "left": 990.765625
+      },
+      "overflow": false
+    },
+    {
+      "width": 1920,
+      "label": "Медиа",
+      "gap": 31,
+      "textGap": 28,
+      "alignment": 0,
+      "popup": {
+        "x": 1179.609375,
+        "y": 155,
+        "width": 220,
+        "height": 238,
+        "top": 155,
+        "right": 1399.609375,
+        "bottom": 393,
+        "left": 1179.609375
+      },
+      "overflow": false
+    },
+    {
+      "width": 1920,
+      "label": "О BARN Estate",
+      "gap": 31,
+      "textGap": 28,
+      "alignment": 0,
+      "popup": {
+        "x": 1277.765625,
+        "y": 155,
+        "width": 220,
+        "height": 268,
+        "top": 155,
+        "right": 1497.765625,
+        "bottom": 423,
+        "left": 1277.765625
+      },
+      "overflow": false
+    },
+    {
+      "width": 1920,
+      "label": "Собственникам",
+      "gap": 31,
+      "textGap": 28,
+      "alignment": 0,
+      "popup": {
+        "x": 1439.03125,
+        "y": 155,
+        "width": 220,
+        "height": 118,
+        "top": 155,
+        "right": 1659.03125,
+        "bottom": 273,
+        "left": 1439.03125
+      },
+      "overflow": false
+    },
+    {
+      "width": 2560,
+      "label": "Москва",
+      "gap": 31,
+      "textGap": 28,
+      "alignment": 0,
+      "popup": {
+        "x": 591.796875,
+        "y": 155,
+        "width": 220,
+        "height": 268,
+        "top": 155,
+        "right": 811.796875,
+        "bottom": 423,
+        "left": 591.796875
+      },
+      "overflow": false
+    },
+    {
+      "width": 2560,
+      "label": "Загородная",
+      "gap": 31,
+      "textGap": 28,
+      "alignment": 0,
+      "popup": {
+        "x": 702.359375,
+        "y": 155,
+        "width": 220,
+        "height": 118,
+        "top": 155,
+        "right": 922.359375,
+        "bottom": 273,
+        "left": 702.359375
+      },
+      "overflow": false
+    },
+    {
+      "width": 2560,
+      "label": "Коммерческая",
+      "gap": 31,
+      "textGap": 28,
+      "alignment": 0,
+      "popup": {
+        "x": 852.734375,
+        "y": 155,
+        "width": 220,
+        "height": 208,
+        "top": 155,
+        "right": 1072.734375,
+        "bottom": 363,
+        "left": 852.734375
+      },
+      "overflow": false
+    },
+    {
+      "width": 2560,
+      "label": "Курортная",
+      "gap": 31,
+      "textGap": 28,
+      "alignment": 0,
+      "popup": {
+        "x": 1029.65625,
+        "y": 155,
+        "width": 220,
+        "height": 148,
+        "top": 155,
+        "right": 1249.65625,
+        "bottom": 303,
+        "left": 1029.65625
+      },
+      "overflow": false
+    },
+    {
+      "width": 2560,
+      "label": "Зарубежная",
+      "gap": 31,
+      "textGap": 28,
+      "alignment": 0,
+      "popup": {
+        "x": 1164.6875,
+        "y": 155,
+        "width": 220,
+        "height": 328,
+        "top": 155,
+        "right": 1384.6875,
+        "bottom": 483,
+        "left": 1164.6875
+      },
+      "overflow": false
+    },
+    {
+      "width": 2560,
+      "label": "Санкт-Петербург",
+      "gap": 31,
+      "textGap": 28,
+      "alignment": 0,
+      "popup": {
+        "x": 1310.765625,
+        "y": 155,
+        "width": 220,
+        "height": 238,
+        "top": 155,
+        "right": 1530.765625,
+        "bottom": 393,
+        "left": 1310.765625
+      },
+      "overflow": false
+    },
+    {
+      "width": 2560,
+      "label": "Медиа",
+      "gap": 31,
+      "textGap": 28,
+      "alignment": 0,
+      "popup": {
+        "x": 1499.609375,
+        "y": 155,
+        "width": 220,
+        "height": 238,
+        "top": 155,
+        "right": 1719.609375,
+        "bottom": 393,
+        "left": 1499.609375
+      },
+      "overflow": false
+    },
+    {
+      "width": 2560,
+      "label": "О BARN Estate",
+      "gap": 31,
+      "textGap": 28,
+      "alignment": 0,
+      "popup": {
+        "x": 1597.765625,
+        "y": 155,
+        "width": 220,
+        "height": 268,
+        "top": 155,
+        "right": 1817.765625,
+        "bottom": 423,
+        "left": 1597.765625
+      },
+      "overflow": false
+    },
+    {
+      "width": 2560,
+      "label": "Собственникам",
+      "gap": 31,
+      "textGap": 28,
+      "alignment": 0,
+      "popup": {
+        "x": 1759.03125,
+        "y": 155,
+        "width": 220,
+        "height": 118,
+        "top": 155,
+        "right": 1979.03125,
+        "bottom": 273,
+        "left": 1759.03125
+      },
+      "overflow": false
+    },
+    {
+      "width": 3840,
+      "label": "Москва",
+      "gap": 31,
+      "textGap": 28,
+      "alignment": 0,
+      "popup": {
+        "x": 1231.796875,
+        "y": 155,
+        "width": 220,
+        "height": 268,
+        "top": 155,
+        "right": 1451.796875,
+        "bottom": 423,
+        "left": 1231.796875
+      },
+      "overflow": false
+    },
+    {
+      "width": 3840,
+      "label": "Загородная",
+      "gap": 31,
+      "textGap": 28,
+      "alignment": 0,
+      "popup": {
+        "x": 1342.359375,
+        "y": 155,
+        "width": 220,
+        "height": 118,
+        "top": 155,
+        "right": 1562.359375,
+        "bottom": 273,
+        "left": 1342.359375
+      },
+      "overflow": false
+    },
+    {
+      "width": 3840,
+      "label": "Коммерческая",
+      "gap": 31,
+      "textGap": 28,
+      "alignment": 0,
+      "popup": {
+        "x": 1492.734375,
+        "y": 155,
+        "width": 220,
+        "height": 208,
+        "top": 155,
+        "right": 1712.734375,
+        "bottom": 363,
+        "left": 1492.734375
+      },
+      "overflow": false
+    },
+    {
+      "width": 3840,
+      "label": "Курортная",
+      "gap": 31,
+      "textGap": 28,
+      "alignment": 0,
+      "popup": {
+        "x": 1669.65625,
+        "y": 155,
+        "width": 220,
+        "height": 148,
+        "top": 155,
+        "right": 1889.65625,
+        "bottom": 303,
+        "left": 1669.65625
+      },
+      "overflow": false
+    },
+    {
+      "width": 3840,
+      "label": "Зарубежная",
+      "gap": 31,
+      "textGap": 28,
+      "alignment": 0,
+      "popup": {
+        "x": 1804.6875,
+        "y": 155,
+        "width": 220,
+        "height": 328,
+        "top": 155,
+        "right": 2024.6875,
+        "bottom": 483,
+        "left": 1804.6875
+      },
+      "overflow": false
+    },
+    {
+      "width": 3840,
+      "label": "Санкт-Петербург",
+      "gap": 31,
+      "textGap": 28,
+      "alignment": 0,
+      "popup": {
+        "x": 1950.765625,
+        "y": 155,
+        "width": 220,
+        "height": 238,
+        "top": 155,
+        "right": 2170.765625,
+        "bottom": 393,
+        "left": 1950.765625
+      },
+      "overflow": false
+    },
+    {
+      "width": 3840,
+      "label": "Медиа",
+      "gap": 31,
+      "textGap": 28,
+      "alignment": 0,
+      "popup": {
+        "x": 2139.609375,
+        "y": 155,
+        "width": 220,
+        "height": 238,
+        "top": 155,
+        "right": 2359.609375,
+        "bottom": 393,
+        "left": 2139.609375
+      },
+      "overflow": false
+    },
+    {
+      "width": 3840,
+      "label": "О BARN Estate",
+      "gap": 31,
+      "textGap": 28,
+      "alignment": 0,
+      "popup": {
+        "x": 2237.765625,
+        "y": 155,
+        "width": 220,
+        "height": 268,
+        "top": 155,
+        "right": 2457.765625,
+        "bottom": 423,
+        "left": 2237.765625
+      },
+      "overflow": false
+    },
+    {
+      "width": 3840,
+      "label": "Собственникам",
+      "gap": 31,
+      "textGap": 28,
+      "alignment": 0,
+      "popup": {
+        "x": 2399.03125,
+        "y": 155,
+        "width": 220,
+        "height": 118,
+        "top": 155,
+        "right": 2619.03125,
+        "bottom": 273,
+        "left": 2399.03125
+      },
+      "overflow": false
+    }
+  ],
+  "errors": [],
+  "keyboard": true,
+  "mobileBurger": true
+}
