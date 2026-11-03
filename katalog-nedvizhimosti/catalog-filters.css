@@ -12,9 +12,9 @@ html body.catalog-listing-page .catalog-direction{position:relative;display:flex
 html body.catalog-listing-page .catalog-direction>.resort-select-trigger{display:block;box-sizing:border-box;width:100%;height:62px;padding:0 44px 0 20px;border:0;background:transparent;color:inherit;font:400 var(--catalog-filter-font-size)/1.2 'Tilda Sans',sans-serif;text-align:left;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;cursor:pointer}
 html body.catalog-listing-page .catalog-direction:not(.catalog-market)>.resort-select-trigger{font-weight:300}
 .catalog-direction>svg{position:absolute;right:18px;width:14px;height:14px;pointer-events:none}
-html body.catalog-listing-page .catalog-toolbar__primary .catalog-mode-switch{box-sizing:border-box;display:flex;align-items:stretch;gap:0;height:64px;padding:4px;border:1px solid #8b8986;border-radius:1px;background:#fff}
-html body.catalog-listing-page .catalog-toolbar__primary .catalog-mode-switch__button{box-sizing:border-box;flex:1 1 0;min-width:0;height:54px;min-height:0;padding:0 6px;border:1px solid transparent;border-radius:1px;background:transparent;color:#4f4d49;font:300 var(--catalog-filter-font-size)/1.1 'Tilda Sans',sans-serif;text-align:center;white-space:nowrap}
-html body.catalog-listing-page .catalog-toolbar__primary .catalog-mode-switch__button.is-active{background:#f9f3f3;border-color:#8b1d25;color:#8b1d25}
+html body.catalog-listing-page .catalog-toolbar__primary .catalog-mode-switch{box-sizing:border-box;display:flex;align-items:stretch;gap:0;height:64px;padding:0;border:1px solid #8b8986;border-radius:1px;background:#fff}
+html body.catalog-listing-page .catalog-toolbar__primary .catalog-mode-switch__button{box-sizing:border-box;flex:1 1 0;min-width:0;height:100%;min-height:0;padding:0 6px;border:0;border-radius:0;background:transparent;color:#4f4d49;font:300 var(--catalog-filter-font-size)/1.1 'Tilda Sans',sans-serif;text-align:center;white-space:nowrap}
+html body.catalog-listing-page .catalog-toolbar__primary .catalog-mode-switch__button.is-active{background:#f9f3f3;color:#8b1d25}
 html body.catalog-listing-page .catalog-toolbar__primary .catalog-mode-switch__button.is-active::after{display:none}
 html body.catalog-listing-page .catalog-toolbar__primary .catalog-mode-switch__button:not(.is-active):hover{background:#f7f7f7;color:#1e1e1e}
 html body.catalog-listing-page .catalog-toolbar__primary .catalog-search-row{display:flex;height:64px;margin:0;min-width:0}
@@ -78,7 +78,6 @@ html body.catalog-listing-page .resort-quick-dropdown [role=option].is-selected{
  html body.catalog-listing-page .catalog-mode-toolbar>.catalog-toolbar__primary>:is(.catalog-direction,.catalog-mode-switch)[class][class]{grid-column:1/-1;height:58px}
  html body.catalog-listing-page .catalog-direction>.resort-select-trigger{height:56px;padding-left:16px}
  html body.catalog-listing-page .catalog-direction>svg{right:16px}
- html body.catalog-listing-page .catalog-toolbar__primary .catalog-mode-switch__button{height:48px}
  html body.catalog-listing-page .catalog-mode-toolbar>.catalog-toolbar__primary>.catalog-search-row[class][class]{grid-column:1;grid-row:3;height:58px}
  html body.catalog-listing-page .catalog-text-search{height:58px;padding-inline:14px;border-right:0}
  html body.catalog-listing-page .catalog-text-search input{height:56px}
