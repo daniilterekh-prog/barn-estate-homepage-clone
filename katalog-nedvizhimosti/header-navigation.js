@@ -16,7 +16,7 @@
  function position(){
   if(!active)return;
   const row=nav.getBoundingClientRect(),anchor=active.getBoundingClientRect();
-  if(anchor.right<=row.left||anchor.left>=row.right){close();return;}
+  if(!nav.checkVisibility()||row.height===0||anchor.right<=row.left||anchor.left>=row.right){close();return;}
   const gutter=22,viewport=document.documentElement.clientWidth;
   dropdown.style.maxWidth=Math.max(0,viewport-gutter*2)+'px';
   dropdown.style.setProperty('--catalog-dropdown-top',row.bottom+'px');dropdown.style.top=row.bottom+'px';

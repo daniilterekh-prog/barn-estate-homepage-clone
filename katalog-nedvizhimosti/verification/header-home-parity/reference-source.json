@@ -1,0 +1,45 @@
+{
+  "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/",
+  "commit": "797cda2692e0ef369f12a760102322c711a20f18",
+  "files": [
+    {
+      "path": "exact-2026-10-21/index.html",
+      "sha256": "8c6125ff6c733dcb71bfd55d7573bc8578b1552799559674c4b6eeff1ac7f9dd"
+    },
+    {
+      "path": "exact-2026-10-21/home-header-contacts.css",
+      "sha256": "41f6bc970cdc98a665da7c286c16d7418660e8fedcedee23e0e7c84e4e46cabd"
+    },
+    {
+      "path": "exact-2026-10-21/home-header-contacts.js",
+      "sha256": "ec87ed670d121d9a73ed9566db19c41818ac6d5628162464c1bfe3019c6cfaf5"
+    }
+  ],
+  "identicalAssets": [
+    {
+      "home": "exact-2026-10-21/assets/29bbe9068117f193bae0f419.svg",
+      "catalog": "katalog-nedvizhimosti/reference-shell/assets/3e197e0e1f3e679e.svg",
+      "sha256": "3e197e0e1f3e679ee09823c75e1c7bad3a19da9bd1ba01df395268b9ae91816f"
+    },
+    {
+      "home": "exact-2026-10-21/assets/d98028a12bc9366262f97604.svg",
+      "catalog": "katalog-nedvizhimosti/reference-shell/assets/4435c9a57e165a1c.svg",
+      "sha256": "4435c9a57e165a1c3b7f27e0b5b11b82b10d674ea4fff7f6748cb67b7fcb994e"
+    },
+    {
+      "home": "exact-2026-10-21/assets/5f9a5f75aa9de0fd5d980437.svg",
+      "catalog": "katalog-nedvizhimosti/reference-shell/assets/5caa61a4b0731d0d.svg",
+      "sha256": "5caa61a4b0731d0d89421b4fb24f41433025e5aea59155a14cf3a3fada6c9174"
+    },
+    {
+      "home": "exact-2026-10-21/assets/de589af6ec6325d4b365d646.woff2",
+      "catalog": "katalog-nedvizhimosti/kit/_shared/assets/a9274ba2f8d830e5.woff2",
+      "sha256": "f0f2c165784c72343618a7c2cbde00e45dbb9b09af5149984792f280cac9642e"
+    },
+    {
+      "home": "exact-2026-10-21/assets/9e76f26b05473907fc0031ca.woff2",
+      "catalog": "katalog-nedvizhimosti/kit/_shared/assets/086cc9ca6e7ad9da.woff2",
+      "sha256": "2670dad44ca6c2a1b9bbdbf1af6d8db9173f2dbe31604e80bdf9599b55047d41"
+    }
+  ]
+}

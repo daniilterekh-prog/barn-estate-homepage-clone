@@ -6,7 +6,7 @@
  const request=document.createElement('button');request.type='button';request.className='site-header__request';request.textContent='Оставить заявку';request.setAttribute('aria-haspopup','dialog');request.hidden=true;right.prepend(request);
  let frame=0;
  const updateSticky=()=>{
-  frame=0;const on=compactScreen.matches||window.scrollY>40;header.classList.toggle('site-header--scrolled',on);request.hidden=!on;
+  frame=0;const on=compactScreen.matches||window.scrollY>48;header.classList.toggle('site-header--scrolled',on);request.hidden=!on;
   const panel=document.querySelector('.site-menu');if(panel)panel.style.setProperty('--site-menu-top',header.querySelector('.site-header__top').getBoundingClientRect().bottom+'px');
  };
  window.addEventListener('scroll',()=>{if(!frame)frame=requestAnimationFrame(updateSticky)},{passive:true});updateSticky();
