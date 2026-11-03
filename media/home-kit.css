@@ -8,10 +8,11 @@ body.barnes-media-kit .newsletter-cta h2,
 body.barnes-media-kit :is(.media-weekly__title,.media-market__title,.media-fresh__title,.media-analytics__title,.media-cta-banner__title,.media-library__title) {margin:0!important;}
 body.barnes-media-kit :is(.media-hero__text,.media-library__text,.media-subscribe__text) {margin:var(--home-copy-gap) 0 0!important;}
 body.barnes-media-kit .media-hero__text {color:#fff!important;}
-/* Keep the favourites count, without a badge behind the digit. */
+/* Match the Resort hub's heart counter, including its circular badge. */
 body.barnes-media-kit .site-header__favorites-count {
-  background:transparent!important;border:0!important;box-shadow:none!important;
-  color:var(--home-brand)!important;
+  background:#8b1d25!important;border:0!important;box-shadow:none!important;
+  color:#fff!important;font-size:11px;font-weight:500;line-height:18px;
+  height:18px;min-width:18px;padding:0 5px;top:-6px;right:-8px;
 }
 body.barnes-media-kit .media-hero__inner {padding-bottom:var(--home-section-space)!important;}
 body.barnes-media-kit :is(.media-weekly__inner,.media-market__inner) {gap:var(--home-heading-content)!important;}
