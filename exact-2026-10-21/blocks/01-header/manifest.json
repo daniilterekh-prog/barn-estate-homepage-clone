@@ -1,7 +1,7 @@
 {
   "id": "01-header",
   "title": "Хедер",
-  "sourceCommit": "6b43fb3db5066280a102d0ff748f7363b20449f4",
+  "sourceCommit": "d8c7628b34cca3a43b258359dfa1bb1eeedf9016",
   "source": "http://127.0.0.1:8802",
   "capturedAt": "2026-11-01T12:42:16.163Z",
   "selector": ".site-header",
@@ -137,6 +137,12 @@
       "bytes": 63952,
       "sha256": "f0f2c165784c72343618a7c2cbde00e45dbb9b09af5149984792f280cac9642e",
       "source": "https://barn-estate.ru/fonts/TildaSans-Light.woff2"
+    },
+    {
+      "file": "assets/material-icons-LICENSE.txt",
+      "bytes": 11357,
+      "sha256": "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd",
+      "source": "https://github.com/google/material-design-icons/blob/master/LICENSE"
     }
   ],
   "behavior": "Бургер, меню, липкое состояние при прокрутке, выбор четырёх способов связи на мобильном; SVG звонка зелёный."
