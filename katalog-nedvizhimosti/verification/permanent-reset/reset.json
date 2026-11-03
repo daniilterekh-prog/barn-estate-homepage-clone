@@ -1,0 +1,169 @@
+{
+  "base": "http://127.0.0.1:8921/katalog-nedvizhimosti/",
+  "cases": [
+    {
+      "width": 320,
+      "direction": "city",
+      "deal": "buy",
+      "market": "secondary",
+      "buttonVisible": true,
+      "resetVerified": true
+    },
+    {
+      "width": 320,
+      "direction": "country",
+      "deal": "buy",
+      "market": "new-build",
+      "buttonVisible": true,
+      "resetVerified": true
+    },
+    {
+      "width": 320,
+      "direction": "commercial",
+      "deal": "rent",
+      "market": "new-build",
+      "buttonVisible": true,
+      "resetVerified": true
+    },
+    {
+      "width": 320,
+      "direction": "resort",
+      "deal": "buy",
+      "market": "new-build",
+      "buttonVisible": true,
+      "resetVerified": true
+    },
+    {
+      "width": 320,
+      "direction": "international",
+      "deal": "buy",
+      "market": "new-build",
+      "buttonVisible": true,
+      "resetVerified": true
+    },
+    {
+      "width": 390,
+      "direction": "city",
+      "deal": "buy",
+      "market": "secondary",
+      "buttonVisible": true,
+      "resetVerified": true
+    },
+    {
+      "width": 390,
+      "direction": "country",
+      "deal": "buy",
+      "market": "new-build",
+      "buttonVisible": true,
+      "resetVerified": true
+    },
+    {
+      "width": 390,
+      "direction": "commercial",
+      "deal": "rent",
+      "market": "new-build",
+      "buttonVisible": true,
+      "resetVerified": true
+    },
+    {
+      "width": 390,
+      "direction": "resort",
+      "deal": "buy",
+      "market": "new-build",
+      "buttonVisible": true,
+      "resetVerified": true
+    },
+    {
+      "width": 390,
+      "direction": "international",
+      "deal": "buy",
+      "market": "new-build",
+      "buttonVisible": true,
+      "resetVerified": true
+    },
+    {
+      "width": 768,
+      "direction": "city",
+      "deal": "buy",
+      "market": "secondary",
+      "buttonVisible": true,
+      "resetVerified": true
+    },
+    {
+      "width": 768,
+      "direction": "country",
+      "deal": "buy",
+      "market": "new-build",
+      "buttonVisible": true,
+      "resetVerified": true
+    },
+    {
+      "width": 768,
+      "direction": "commercial",
+      "deal": "rent",
+      "market": "new-build",
+      "buttonVisible": true,
+      "resetVerified": true
+    },
+    {
+      "width": 768,
+      "direction": "resort",
+      "deal": "buy",
+      "market": "new-build",
+      "buttonVisible": true,
+      "resetVerified": true
+    },
+    {
+      "width": 768,
+      "direction": "international",
+      "deal": "buy",
+      "market": "new-build",
+      "buttonVisible": true,
+      "resetVerified": true
+    },
+    {
+      "width": 1440,
+      "direction": "city",
+      "deal": "buy",
+      "market": "secondary",
+      "buttonVisible": true,
+      "resetVerified": true
+    },
+    {
+      "width": 1440,
+      "direction": "country",
+      "deal": "buy",
+      "market": "new-build",
+      "buttonVisible": true,
+      "resetVerified": true
+    },
+    {
+      "width": 1440,
+      "direction": "commercial",
+      "deal": "rent",
+      "market": "new-build",
+      "buttonVisible": true,
+      "resetVerified": true
+    },
+    {
+      "width": 1440,
+      "direction": "resort",
+      "deal": "buy",
+      "market": "new-build",
+      "buttonVisible": true,
+      "resetVerified": true
+    },
+    {
+      "width": 1440,
+      "direction": "international",
+      "deal": "buy",
+      "market": "new-build",
+      "buttonVisible": true,
+      "resetVerified": true
+    }
+  ],
+  "errors": [],
+  "map": true,
+  "axe": [],
+  "passed": true
+}

@@ -24,7 +24,6 @@
    button.insertAdjacentHTML('beforeend','<svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="m4 4 8 8M12 4l-8 8"/></svg>');
    button.addEventListener('click',()=>{const index=[...container.children].indexOf(button);remove();(container.children[Math.min(index,container.children.length-1)]||document.querySelector('.catalog-mode-detailed-filters')).focus({preventScroll:true});});return button;
   }));
-  row.hidden=conditions.length===0;
  }
  document.addEventListener('barn:catalog-results',event=>render(event.detail));render();
 })();

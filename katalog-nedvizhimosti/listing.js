@@ -120,7 +120,6 @@
   const n=visible.length,word=profile().mode==='market'&&effectiveDeal()==='buy'&&s.market==='new-build'?'проект':'объект';
   $('#results-count').textContent=`${n} ${n%100>=11&&n%100<=14?word+'ов':n%10===1?word:n%10>=2&&n%10<=4?word+'а':word+'ов'}`;
   $('.catalog-empty').hidden=n>0;$('.catalog-grid__footer').hidden=!n;$('[data-more]').hidden=limit>=n;$('[data-progress]').textContent=`Показано ${Math.min(limit,n)} из ${n}`;
-  $('[data-reset]').hidden=!(query||onlyFavorites||[...arrayKeys,...numericKeys,'bedrooms'].some(key=>s[key]?.length));
   const filterGroups=[s.directions?.length,s.propertyTypes?.length,s.priceRanges?.length||s.priceMin||s.priceMax,s.areaRanges?.length||s.areaMin||s.areaMax,s.bedrooms,s.roomsMin||s.roomsMax,s.landMin||s.landMax,s.brandFlags?.length].filter(Boolean).length;
   const filterBadge=$('[data-filter-count]');filterBadge.textContent=filterGroups;filterBadge.hidden=!filterGroups;
   $('.catalog-mode-detailed-filters').setAttribute('aria-label',filterGroups?`Все фильтры: выбрано групп — ${filterGroups}`:'Все фильтры');

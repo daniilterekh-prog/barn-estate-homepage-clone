@@ -152,3 +152,10 @@ html body.catalog-listing-page .catalog-toolbar__secondary .catalog-mode-filters
 
 /* Quick-field labels already name the popup; show options directly. */
 html body.catalog-listing-page .resort-quick-dropdown .catalog-quick-filters__dropdown-header[hidden]{display:none!important}
+
+/* Reset is always available beneath the filters; empty condition chips take no room. */
+html body.catalog-listing-page .catalog-mode-toolbar{margin-bottom:8px}
+html body.catalog-listing-page .catalog-collections-row{flex-direction:row;align-items:center;min-height:36px;gap:8px;margin-bottom:12px}
+html body.catalog-listing-page .catalog-active-filters:empty{display:none}
+html body.catalog-listing-page .catalog-collections-row .catalog-reset-all{margin-inline-start:auto}
+html body.catalog-listing-page .catalog-collections-row .catalog-reset-all:focus-visible{outline:2px solid #8b1d25;outline-offset:3px}
