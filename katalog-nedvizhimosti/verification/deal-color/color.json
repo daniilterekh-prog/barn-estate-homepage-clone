@@ -1,0 +1,144 @@
+{
+  "passed": true,
+  "results": [
+    {
+      "width": 390,
+      "direction": "country",
+      "deal": "buy",
+      "w": 331,
+      "h": 58,
+      "padding": "0px",
+      "border": 1,
+      "buttons": [
+        {
+          "x": 1,
+          "y": 1,
+          "w": 164.5,
+          "h": 56,
+          "border": "0px",
+          "background": "rgb(139, 29, 37)",
+          "color": "rgb(255, 255, 255)",
+          "weight": "300",
+          "active": "true"
+        },
+        {
+          "x": 165.5,
+          "y": 1,
+          "w": 164.5,
+          "h": 56,
+          "border": "0px",
+          "background": "rgba(0, 0, 0, 0)",
+          "color": "rgb(79, 77, 73)",
+          "weight": "300",
+          "active": "false"
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "direction": "country",
+      "deal": "rent",
+      "w": 331,
+      "h": 58,
+      "padding": "0px",
+      "border": 1,
+      "buttons": [
+        {
+          "x": 1,
+          "y": 1,
+          "w": 164.5,
+          "h": 56,
+          "border": "0px",
+          "background": "rgba(0, 0, 0, 0)",
+          "color": "rgb(79, 77, 73)",
+          "weight": "300",
+          "active": "false"
+        },
+        {
+          "x": 165.5,
+          "y": 1,
+          "w": 164.5,
+          "h": 56,
+          "border": "0px",
+          "background": "rgb(139, 29, 37)",
+          "color": "rgb(255, 255, 255)",
+          "weight": "300",
+          "active": "true"
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "direction": "country",
+      "deal": "buy",
+      "w": 297.15625,
+      "h": 64,
+      "padding": "0px",
+      "border": 1,
+      "buttons": [
+        {
+          "x": 1,
+          "y": 1,
+          "w": 147.578125,
+          "h": 62,
+          "border": "0px",
+          "background": "rgb(139, 29, 37)",
+          "color": "rgb(255, 255, 255)",
+          "weight": "300",
+          "active": "true"
+        },
+        {
+          "x": 148.578125,
+          "y": 1,
+          "w": 147.578125,
+          "h": 62,
+          "border": "0px",
+          "background": "rgba(0, 0, 0, 0)",
+          "color": "rgb(79, 77, 73)",
+          "weight": "300",
+          "active": "false"
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "direction": "country",
+      "deal": "rent",
+      "w": 297.15625,
+      "h": 64,
+      "padding": "0px",
+      "border": 1,
+      "buttons": [
+        {
+          "x": 1,
+          "y": 1,
+          "w": 147.578125,
+          "h": 62,
+          "border": "0px",
+          "background": "rgba(0, 0, 0, 0)",
+          "color": "rgb(79, 77, 73)",
+          "weight": "300",
+          "active": "false"
+        },
+        {
+          "x": 148.578125,
+          "y": 1,
+          "w": 147.578125,
+          "h": 62,
+          "border": "0px",
+          "background": "rgb(139, 29, 37)",
+          "color": "rgb(255, 255, 255)",
+          "weight": "300",
+          "active": "true"
+        }
+      ],
+      "overflow": false
+    }
+  ],
+  "keyboard": true,
+  "violations": [],
+  "errors": []
+}
