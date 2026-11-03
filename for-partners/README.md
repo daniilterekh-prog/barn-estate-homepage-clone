@@ -43,3 +43,5 @@
 ## Общий хедер Медиа ·03.11.2026
 
 media-header.css/js:логотип, лупа и контакты как на Медиа, адаптивные контакты и штатные меню/формы. У амбассадоров и собственников в закреплённом хедере сохранена левая навигация. [Контракт, исходники и проверки](https://github.com/daniilterekh-prog/barnes-sites/tree/main/main-site/pages/header-media-2026-11-03).
+
+Hero приведён к Медиа: `hero-media-parity.css`; [контракт и проверки](https://github.com/daniilterekh-prog/barnes-sites/tree/main/main-site/pages/hero-media-parity-2026-11-03).

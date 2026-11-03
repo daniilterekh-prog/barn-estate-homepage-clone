@@ -37,7 +37,7 @@ body.barnes-media-reference :is(main h2,.newsletter-cta h2,.owner-sale-types__se
 }
 body.barnes-media-reference .newsletter-cta h2 {line-height:1!important;letter-spacing:-.04em!important;}
 /* Descriptions, including revealed cards and dynamically selected directions. */
-body.barnes-media-reference :is(.owner-sale-hero__text,.ambassadors-hero__text,
+body.barnes-media-reference :is(
  .owner-sale-presentation__reveal-text,.owner-sale-presentation__caption,
  .owner-sale-services__text,.owner-sale-services__text span,.about-company__intro,
  .about-company__description,.owner-sale-stages__intro,.owner-sale-stages__item-text,

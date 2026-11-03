@@ -66,10 +66,11 @@
   function enhanceHeroSection() {
     var button = document.querySelector('.owner-sale-hero__button');
     var breadcrumbs = document.querySelector('.owner-sale-hero__breadcrumbs');
-    var copy = document.querySelector('.owner-sale-hero__copy');
+    var inner = document.querySelector('.owner-sale-hero__inner');
 
-    if (breadcrumbs && copy && breadcrumbs.parentElement !== copy) {
-      copy.insertBefore(breadcrumbs, copy.firstChild);
+    // Match Media: breadcrumbs precede the body, outside the copy.
+    if (breadcrumbs && inner && breadcrumbs.parentElement !== inner) {
+      inner.insertBefore(breadcrumbs, inner.firstChild);
     }
 
     if (!button || button.querySelector('.owner-sale-hero__button-arrow')) return;
