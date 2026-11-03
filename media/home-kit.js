@@ -6,7 +6,7 @@
  let counter=0;
  function annotate(root){
   // One article appears in both editorial choice and the analytics section.
-  const analyticsSrc=new URL('pictures/media/moscow-q1-2026-editorial.webp',pageRoot).href;
+  const analyticsSrc=new URL('pictures/media/moscow-q1-2026-river.webp',pageRoot).href;
   for(const image of root.querySelectorAll('img[src*="ac08b5bc4b40.png"]')){
    image.removeAttribute('srcset');image.src=analyticsSrc;image.width=1672;image.height=941;
   }
