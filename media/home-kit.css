@@ -54,6 +54,13 @@ body.barnes-media-kit :is(.media-hero__button,.media-cta-banner__button) .ui-but
 body.barnes-media-kit .media-cta-banner__actions {flex-wrap:wrap;}
 body.barnes-media-kit .media-hero__body {grid-template-columns:minmax(0,1fr) minmax(0,400px);}
 body.barnes-media-kit .media-library__content {min-width:0;padding-inline:var(--home-card-padding)!important;}
+body.barnes-media-kit .media-library__title {white-space:normal!important;}
+/* Keep the single publication clear of the copy at tablet widths. */
+@media (min-width:541px) and (max-width:1439px) {
+  body.barnes-media-kit .media-library__frame {height:auto;}
+  body.barnes-media-kit .media-library__image {height:clamp(280px,40vw,440px);object-position:right center;}
+  body.barnes-media-kit .media-library__content {position:relative;width:100%;max-width:none;padding:var(--home-card-padding)!important;background:#f4f2ef;}
+}
 body.barnes-media-kit .media-library__button {align-self:flex-start;max-width:100%;white-space:normal;}
 body.barnes-media-kit .site-footer__callback-btn {white-space:normal!important;}
 body.barnes-media-kit :is(a,button,input):focus-visible {outline:2px solid #8b1d25;outline-offset:4px;}
