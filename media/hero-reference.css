@@ -30,8 +30,8 @@ body.barnes-home-typography.barnes-media-kit .media-hero__body {
 }
 body.barnes-home-typography.barnes-media-kit .media-hero__copy {width:100%;max-width:925px;min-width:0;}
 body.barnes-home-typography.barnes-media-kit .media-hero__title {
- font-size:clamp(48px,5.2vw,75px)!important;line-height:.98!important;font-weight:300!important;
- margin:0!important;letter-spacing:normal!important;text-transform:uppercase!important;color:#fff!important;
+ font-size:clamp(38px,4vw,58px)!important;line-height:1.05!important;font-weight:300!important;
+ margin:0!important;letter-spacing:-.045em!important;text-transform:none!important;color:#fff!important;
  max-width:none!important;
 }
 body.barnes-home-typography.barnes-media-kit .media-hero__text {
@@ -68,7 +68,6 @@ body.barnes-home-typography.barnes-media-kit .media-hero__button .ui-icon {flex-
 }
 @media(min-width:1921px) {
  body.barnes-media-kit {--media-hero-gutter:0px;}
- body.barnes-home-typography.barnes-media-kit .media-hero__title {font-size:85px!important;line-height:85px!important;}
 }
 @media(max-width:1024px) {
  body.barnes-media-kit {--media-hero-height:640px;--media-hero-gap:32px;--media-hero-bottom:48px;--media-hero-top:128px;}
@@ -84,7 +83,7 @@ body.barnes-home-typography.barnes-media-kit .media-hero__button .ui-icon {flex-
 }
 @media(max-width:540px) {
  body.barnes-media-kit {--media-hero-height:520px;--media-hero-gap:24px;--media-hero-bottom:32px;--media-hero-top:96px;}
- body.barnes-home-typography.barnes-media-kit .media-hero__title {font-size:35px!important;line-height:35px!important;}
+ body.barnes-home-typography.barnes-media-kit .media-hero__title {font-size:32px!important;line-height:1.05!important;}
  body.barnes-home-typography.barnes-media-kit .media-hero__text {display:none!important;}
  body.barnes-home-typography.barnes-media-kit .media-hero__actions {max-width:none!important;gap:12px!important;}
  body.barnes-home-typography.barnes-media-kit .media-hero__button {min-height:58px!important;font-size:18px!important;line-height:19.8px!important;padding:16px 24px!important;}

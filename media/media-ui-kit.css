@@ -23,8 +23,8 @@ body.barnes-media-kit .media-analytics__card-body {gap:24px!important;}
 /* Removed by user request; hide before hydration to avoid a flash or blank gap. */
 .media-subscribe { display: none !important; }
 
-/* User-approved Media typography: every heading, including cards and dialogs. */
-body.barnes-media-kit :is(h1,h2,h3,h4,h5,h6) {text-transform:uppercase!important;}
+/* User-approved Media typography: headings except hero H1, including cards and dialogs. */
+body.barnes-media-kit :is(h1,h2,h3,h4,h5,h6):not(.media-hero__title) {text-transform:uppercase!important;}
 
 
 /* Visible checked state for the imported quiz consent control. */
