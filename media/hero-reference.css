@@ -1,0 +1,93 @@
+/* Owner-sale hero reference, measured 2026-11-03. Page content/actions retained.
+ * The user requested a hidden mobile description and both CTAs below the copy. */
+body.barnes-media-kit {
+ --media-hero-gutter:calc(-26.66667px + 6.59722vw);
+ --media-hero-gap:36px;
+ --media-hero-bottom:56px;
+ --media-hero-top:210px;
+ --media-hero-height:900px;
+}
+body.barnes-home-typography.barnes-media-kit :is(.media-hero__inner,.site-header__inner).base-container {
+ padding-inline:var(--media-hero-gutter)!important;
+}
+body.barnes-home-typography.barnes-media-kit .media-hero {
+ min-height:var(--media-hero-height)!important;
+ height:auto!important;
+}
+body.barnes-home-typography.barnes-media-kit .media-hero__inner {
+ display:flex!important;flex-direction:column!important;justify-content:flex-end!important;
+ min-height:inherit!important;height:auto!important;gap:var(--media-hero-gap)!important;
+ padding-top:var(--media-hero-top)!important;padding-bottom:var(--media-hero-bottom)!important;
+}
+body.barnes-home-typography.barnes-media-kit .media-hero__breadcrumbs {margin:0!important;width:100%;}
+body.barnes-home-typography.barnes-media-kit .media-hero__breadcrumbs .breadcrumbs__link {
+ font-size:17px!important;line-height:18px!important;font-weight:300!important;
+}
+body.barnes-home-typography.barnes-media-kit .media-hero__breadcrumbs .breadcrumbs__separator {font-size:28px;line-height:1;}
+body.barnes-home-typography.barnes-media-kit .media-hero__body {
+ display:flex!important;flex-direction:column!important;align-items:flex-start!important;
+ gap:20px!important;width:100%;min-width:0;
+}
+body.barnes-home-typography.barnes-media-kit .media-hero__copy {width:100%;max-width:925px;min-width:0;}
+body.barnes-home-typography.barnes-media-kit .media-hero__title {
+ font-size:clamp(48px,5.2vw,75px)!important;line-height:.98!important;font-weight:300!important;
+ margin:0!important;letter-spacing:normal!important;text-transform:none!important;color:#fff!important;
+ max-width:none!important;
+}
+body.barnes-home-typography.barnes-media-kit .media-hero__text {
+ font-size:22px!important;line-height:28.16px!important;font-weight:300!important;
+ color:rgba(255,255,255,.75)!important;margin:16px 0 0!important;max-width:925px!important;
+}
+body.barnes-home-typography.barnes-media-kit .media-hero__actions {
+ display:flex!important;flex-direction:row!important;flex-wrap:wrap!important;
+ align-items:stretch!important;align-self:flex-start!important;gap:16px!important;
+ width:100%!important;max-width:925px!important;min-width:0!important;margin:0!important;
+}
+body.barnes-home-typography.barnes-media-kit .media-hero__button {
+ display:inline-flex!important;align-items:center;justify-content:center;gap:24px!important;
+ width:428px;max-width:100%!important;min-width:0!important;flex:0 1 428px;
+ height:auto!important;min-height:70px!important;padding:16px 36px!important;
+ font-size:17px!important;line-height:1.1!important;font-weight:400!important;border-radius:1px!important;
+ white-space:normal!important;
+}
+body.barnes-home-typography.barnes-media-kit .media-hero__button .ui-icon {flex-shrink:0;}
+/* Native Vue menu/contacts remain responsible for their own state. */
+.media-reference-nav {display:none;}
+@media(min-width:1281px) {
+ body.barnes-media-kit .site-header:not(.site-header--scrolled):not(.site-header--menu-open) .site-header__top {margin-bottom:26px!important;}
+ body.barnes-media-kit .site-header:not(.site-header--scrolled):not(.site-header--menu-open) .media-reference-nav {display:flex;justify-content:center;}
+ .media-reference-nav ul {display:flex;align-items:center;justify-content:center;gap:clamp(16px,calc(5vw - 48px),36px);list-style:none;padding:0;margin:0;}
+ .media-reference-nav a {display:block;font-family:"Tilda Sans",sans-serif;font-size:16px;line-height:1;font-weight:300;text-transform:uppercase;color:#fff;white-space:nowrap;text-decoration:none;}
+}
+@media(min-width:1441px) {
+ body.barnes-media-kit {--media-hero-height:1040px;--media-hero-gap:48px;--media-hero-bottom:72px;}
+ body.barnes-home-typography.barnes-media-kit .media-hero__text {margin-top:20px!important;}
+ body.barnes-home-typography.barnes-media-kit .media-hero__button {font-size:19px!important;padding-inline:47px!important;}
+ body.barnes-home-typography.barnes-media-kit .media-hero__breadcrumbs .breadcrumbs__separator {font-size:35px;}
+ .media-reference-nav a {font-size:18px;}
+}
+@media(min-width:1921px) {
+ body.barnes-media-kit {--media-hero-gutter:0px;}
+ body.barnes-home-typography.barnes-media-kit .media-hero__title {font-size:85px!important;line-height:85px!important;}
+}
+@media(max-width:1024px) {
+ body.barnes-media-kit {--media-hero-height:640px;--media-hero-gap:32px;--media-hero-bottom:48px;--media-hero-top:128px;}
+ body.barnes-home-typography.barnes-media-kit .media-hero__body {gap:32px!important;}
+ body.barnes-home-typography.barnes-media-kit .media-hero__text {margin-top:14px!important;}
+ body.barnes-home-typography.barnes-media-kit .media-hero__actions {flex-direction:column!important;max-width:420px!important;}
+ body.barnes-home-typography.barnes-media-kit .media-hero__button {flex:none;width:100%;}
+ body.barnes-home-typography.barnes-media-kit .media-hero__breadcrumbs .breadcrumbs__link {font-size:13px!important;line-height:18px!important;}
+ body.barnes-home-typography.barnes-media-kit .media-hero__breadcrumbs .breadcrumbs__separator {font-size:18px;}
+}
+@media(max-width:768px) {
+ body.barnes-media-kit {--media-hero-gutter:calc(8.94118px + 1.96078vw);--media-hero-height:560px;--media-hero-gap:28px;--media-hero-bottom:40px;--media-hero-top:128px;}
+}
+@media(max-width:540px) {
+ body.barnes-media-kit {--media-hero-height:520px;--media-hero-gap:24px;--media-hero-bottom:32px;--media-hero-top:96px;}
+ body.barnes-home-typography.barnes-media-kit .media-hero__title {font-size:35px!important;line-height:35px!important;}
+ body.barnes-home-typography.barnes-media-kit .media-hero__text {display:none!important;}
+ body.barnes-home-typography.barnes-media-kit .media-hero__actions {max-width:none!important;gap:12px!important;}
+ body.barnes-home-typography.barnes-media-kit .media-hero__button {min-height:58px!important;font-size:18px!important;line-height:19.8px!important;padding:16px 24px!important;}
+ body.barnes-home-typography.barnes-media-kit .media-hero__breadcrumbs .breadcrumbs__link {font-size:12px!important;line-height:16px!important;}
+ body.barnes-home-typography.barnes-media-kit .media-hero__breadcrumbs .breadcrumbs__separator {font-size:16px;}
+}

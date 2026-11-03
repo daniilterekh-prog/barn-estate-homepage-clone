@@ -24,7 +24,7 @@
   const p=profiles[direction];query='';$('#catalog-search').value='';limit=6;
   configure(direction,p.defaultDeal||'buy');
   window.BarnesFilters.patch({...blank(),market:p.defaultMarket||'secondary',deal:p.defaultDeal||'buy'});
-  $('[data-announcement]').textContent=`${p.label} недвижимость. Фильтры обновлены.`;
+  $('[data-announcement]').textContent=`Департамент: ${p.label}. Фильтры обновлены.`;
  }
  function readURL(){
   const params=new URLSearchParams(location.search),direction=profiles[params.get('direction')]?params.get('direction'):'city',p=profiles[direction];

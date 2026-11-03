@@ -5,7 +5,7 @@
  const monthly={choices:['до 1 млн ₽/мес.','1 – 3 млн ₽/мес.','3 – 5 млн ₽/мес.','от 5 млн ₽/мес.'],values:['rent-1m','rent-1-3m','rent-3-5m','rent-5m+']};
  const area={title:'Площадь',key:'areaRanges',reset:'Любая площадь',choices:['до 200 м²','200 – 500 м²','от 500 м²'],values:['area-200','area-200-500','area-500+']};
  window.BarnesCatalogProfiles={
-  city:{label:'Городская',mode:'market',defaultMarket:'new-build',location:'Локация',locations:['Москва'],types:['flat','apartment','new_build','penthouse','townhouse'],bedrooms:true,rooms:true},
+  city:{label:'Москва',mode:'market',defaultMarket:'new-build',location:'Локация',locations:['Москва'],types:['flat','apartment','new_build','penthouse','townhouse'],bedrooms:true,rooms:true},
   country:{label:'Загородная',mode:'deal',defaultDeal:'buy',location:'Шоссе',locations:['Ленинградское шоссе','Киевское шоссе','Рублёво-Успенское шоссе','Можайское шоссе'],types:['house','townhouse','land'],areaTitle:'Площадь дома',land:true},
   commercial:{label:'Коммерческая',mode:'deal',defaultDeal:'rent',location:'Локация',locations:['Москва'],types:['office','free-purpose','retail','warehouse'],typeTitle:'Назначение',areaTitle:'Площадь'},
   resort:{label:'Курортная',mode:'market',defaultMarket:'new-build',location:'Регион',locations:['Сочи','Анапа','Алтай','Архыз'],types:['apartment','flat','house','villa'],bedrooms:true,rooms:true},

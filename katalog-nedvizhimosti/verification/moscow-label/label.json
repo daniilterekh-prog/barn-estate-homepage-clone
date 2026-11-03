@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "results": [
+    {
+      "width": 390,
+      "label": "Москва",
+      "department": "city",
+      "dropdown": true,
+      "map": true,
+      "url": true
+    },
+    {
+      "width": 1440,
+      "label": "Москва",
+      "department": "city",
+      "dropdown": true,
+      "map": true,
+      "url": true
+    }
+  ],
+  "errors": []
+}
