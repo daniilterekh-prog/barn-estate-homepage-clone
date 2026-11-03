@@ -19,9 +19,9 @@
   }
 
   // One article appears in both editorial choice and the analytics section.
-  const analyticsSrc=new URL('pictures/media/moscow-q1-2026-river.webp',pageRoot).href;
+  const analyticsSrc=new URL('pictures/media/moscow-q1-2026-photo.webp',pageRoot).href;
   for(const image of root.querySelectorAll('img[src*="ac08b5bc4b40.png"]')){
-   image.removeAttribute('srcset');image.src=analyticsSrc;image.width=1672;image.height=941;
+   image.removeAttribute('srcset');image.src=analyticsSrc;image.width=1920;image.height=1280;
   }
   const moscow=root.querySelector('.media-market__featured-image');
   const moscowSrc=new URL('pictures/media/moscow-editorial-20261103.webp',pageRoot).href;

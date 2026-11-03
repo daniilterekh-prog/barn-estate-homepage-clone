@@ -107,3 +107,12 @@ body.barnes-media-kit .media-market__featured .media-market__featured-badge {col
   }
   body.barnes-media-kit .media-weekly__featured-panel {background:transparent;z-index:2;}
 }
+
+/* Keep the hotel visible when the real panoramic photograph is cropped narrowly. */
+body.barnes-media-kit img[src$="/moscow-q1-2026-photo.webp"] {object-position:80% 30%;}
+@media (min-width:541px) and (max-width:1024px) {
+  /* Retain the previous tablet image frame despite the photograph's 3:2 ratio. */
+  body.barnes-media-kit .media-weekly__featured-image[src$="/moscow-q1-2026-photo.webp"] {
+    height:auto;aspect-ratio:1672 / 941;
+  }
+}
