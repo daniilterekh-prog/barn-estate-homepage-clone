@@ -232,5 +232,14 @@
       "source": "blocks/nodes/first-degree/footer/fragment.html",
       "sha256": "07a590658ef9120c45bbab3980626a7b98d710dabb885824f540d6c3a27c2fc2"
     }
+  },
+  "catalogParity": {
+    "date": "2026-11-03",
+    "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+    "commit": "f113d827c24267166d8d6dbe7c156cbae5e96f0b",
+    "navigation": "katalog-nedvizhimosti/header-navigation.js (byte-exact), index.html nav + section data, scoped dropdown CSS from catalog-kit-v1.css",
+    "headerNavigationSha256": "9d1c3a1f39c04b0814b6eb077ed7150f33ec9835240325017c6135fc6e3a7e8c",
+    "pageRoles": "H1, breadcrumbs, main container and spacing, tab/sort typography, summary text",
+    "exceptions": "Original cards preserved; favorites mobile tabs remain left aligned with constant 24px gap; sort popup title remains hidden."
   }
 }

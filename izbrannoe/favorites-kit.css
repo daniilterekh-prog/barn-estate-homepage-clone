@@ -1,5 +1,5 @@
 /* Integration of approved BARN Estate v1.0.0. Page-specific spacing and tabs remain in favorites.css. */
-html body .favorites-heading h1,html body .favorites-empty h2{font-size:38px;font-weight:300;line-height:1.2;letter-spacing:normal;color:#1e1e1e}
+html body .favorites-empty h2{font-size:38px;font-weight:300;line-height:1.2;letter-spacing:normal;color:#1e1e1e}
 html body .favorites-layout>.layout__header{position:relative;color:#1e1e1e}
 html body .favorites-layout .barnes-block .site-header{color:#1e1e1e}
 html body .favorites-layout .barnes-block .site-header__logo img{filter:brightness(0)}
@@ -9,18 +9,29 @@ html body .favorites-layout .barnes-block .site-header__nav-link:hover{color:#8b
 html body .favorites-layout .barnes-block .site-header__request{color:#8b1d25;background:transparent}
 html body .favorites-layout .barnes-block .site-header__request:hover{color:#fff;background:#8b1d25}
 html body .favorites-layout .site-menu :is(a,button):focus-visible{outline:2px solid #8b1d25;outline-offset:3px}
-@media(min-width:1441px){html body .favorites-heading h1,html body .favorites-empty h2{font-size:44px}}
-@media(max-width:540px){html body .favorites-heading h1,html body .favorites-empty h2{font-size:22px}}
+@media(min-width:1441px){html body .favorites-empty h2{font-size:44px}}
+@media(max-width:540px){html body .favorites-empty h2{font-size:22px}}
 
 /* Preserve visible keyboard focus in the portalled request form, including its custom checkbox. */
 html body [data-barn-modal] :is(input,button,a,select):focus-visible{outline:2px solid #8b1d25;outline-offset:3px}
 html body [data-barn-modal] .home-owner-form__consent-input:focus-visible + .home-owner-form__consent-box{outline:2px solid #8b1d25;outline-offset:3px}
 
-/* Desktop submenus share links with the approved burger; the padded wrapper bridges the pointer path. */
-html body .favorites-nav-dropdown{position:absolute;top:100%;left:0;z-index:1300;padding-top:16px;min-width:240px;width:max-content;max-width:calc(100vw - 32px);white-space:normal}
-html body .favorites-nav-dropdown[hidden]{display:none}
-html body .favorites-nav-dropdown ul{list-style:none;margin:0;padding:12px 0;background:#fff;border:1px solid rgba(30,30,30,.12);box-shadow:0 12px 28px rgba(30,30,30,.09);max-height:calc(100dvh - 180px);overflow-y:auto}
-html body .favorites-nav-dropdown a{display:block;padding:10px 22px;color:#1e1e1e;font-size:18px;font-weight:300;line-height:1.3;text-decoration:none;white-space:normal}
-html body .favorites-nav-dropdown a:hover{color:#8b1d25;background:#f7f6f4}
-html body .favorites-layout .site-header__nav :is(a,button):focus-visible{outline:2px solid #8b1d25;outline-offset:2px}
-@media(max-width:1280px){html body .favorites-nav-dropdown{display:none}}
+/* Page typography and spacing copied from the current general catalogue; cards keep their original contract. */
+html body .favorites-main{padding-top:40px;max-width:1920px;margin-inline:auto;box-sizing:border-box;padding-inline:clamp(24px,calc(-26.66667px + 6.59722vw),100px)}
+html body .favorites-breadcrumbs{gap:8px;font-size:17px;font-weight:300;line-height:18px;letter-spacing:normal;flex-wrap:wrap}
+html body .favorites-breadcrumbs [aria-hidden]{font-size:25px;font-weight:300;line-height:1.4}
+html body .favorites-heading{padding-block:28px 40px}
+html body .favorites-heading h1{font-size:clamp(38px,4vw,58px);font-weight:300;line-height:1.05;letter-spacing:-.045em;color:#1e1e1e;text-transform:none}
+html body .favorites-toolbar :is(.catalog-mode-switch__button,.resort-sort-trigger){font-size:18px;font-weight:300;line-height:1.3}
+html body .favorites-summary,html body .favorites-clear{font-size:15px;font-weight:300;line-height:1.3}
+@media(min-width:1441px){html body .favorites-toolbar :is(.catalog-mode-switch__button,.resort-sort-trigger){font-size:20px}}
+@media(max-width:1440px){html body .favorites-breadcrumbs [aria-hidden]{font-size:20px}}
+@media(max-width:1024px){html body .favorites-main{padding-top:32px}html body .favorites-breadcrumbs [aria-hidden]{font-size:18px}}
+@media(max-width:768px){html body .favorites-breadcrumbs{gap:6px;font-size:13px}html body .favorites-breadcrumbs [aria-hidden]{font-size:16px}}
+@media(max-width:767px){html body .favorites-summary,html body .favorites-clear{font-size:14px}}
+@media(max-width:540px){html body .favorites-main{padding-top:28px;padding-inline:22px}html body .favorites-breadcrumbs{gap:4px;font-size:12px;line-height:16px}html body .favorites-breadcrumbs [aria-hidden]{font-size:14px}html body .favorites-heading{padding-block:22px 28px}html body .favorites-heading h1{font-size:32px}html body .favorites-toolbar :is(.catalog-mode-switch__button,.resort-sort-trigger){font-size:17px}}
+@media(min-width:1921px){html body .favorites-main{padding-inline:0}}
+html body .favorites-toolbar .catalog-mode-switch__button{line-height:1.1}
+html body .favorites-layout .favorites-toolbar .favorites-sort .resort-sort-trigger{font-size:18px;font-weight:300;line-height:1.3}
+@media(min-width:1441px){html body .favorites-layout .favorites-toolbar .favorites-sort .resort-sort-trigger{font-size:20px}}
+@media(max-width:540px){html body .favorites-layout .favorites-toolbar .favorites-sort .resort-sort-trigger{font-size:17px;line-height:1.2}}
