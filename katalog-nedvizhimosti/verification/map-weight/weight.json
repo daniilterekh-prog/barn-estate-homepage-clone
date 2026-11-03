@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "rows": [
+    {
+      "viewport": 390,
+      "weight": "300",
+      "textWeight": "300",
+      "fontSize": "17px",
+      "height": 44,
+      "color": "rgb(139, 29, 37)",
+      "overflow": false
+    },
+    {
+      "viewport": 1440,
+      "weight": "300",
+      "textWeight": "300",
+      "fontSize": "18px",
+      "height": 44,
+      "color": "rgb(139, 29, 37)",
+      "overflow": false
+    }
+  ],
+  "mapOpenClose": true,
+  "errors": []
+}

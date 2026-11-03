@@ -1,5 +1,5 @@
-/* Entry control uses the homepage header-button role; fullscreen geometry comes from resort. */
-html body.catalog-listing-page .catalog-map-trigger{display:inline-flex;align-items:center;justify-content:center;gap:10px;flex:none;min-height:44px;padding:0 16px;border:1px solid #8b1d25;border-radius:1px;background:#fff;color:#8b1d25;font:400 var(--home-field)/1.1 'Tilda Sans',sans-serif;white-space:nowrap;cursor:pointer}
+/* Entry control uses the catalogue field typography; fullscreen geometry comes from resort. */
+html body.catalog-listing-page .catalog-map-trigger{display:inline-flex;align-items:center;justify-content:center;gap:10px;flex:none;min-height:44px;padding:0 16px;border:1px solid #8b1d25;border-radius:1px;background:#fff;color:#8b1d25;font:300 var(--home-field)/1.1 'Tilda Sans',sans-serif;white-space:nowrap;cursor:pointer}
 html body.catalog-listing-page .catalog-map-trigger svg{width:20px;height:20px;flex:none}
 html body.catalog-listing-page .catalog-map-trigger:hover{background:#8b1d25;color:#fff}
 html body.catalog-listing-page .catalog-map-trigger:focus-visible{outline:2px solid #8b1d25;outline-offset:3px}
