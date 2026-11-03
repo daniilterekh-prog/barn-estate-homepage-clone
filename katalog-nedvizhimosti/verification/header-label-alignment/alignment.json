@@ -1,0 +1,3178 @@
+{
+  "passed": true,
+  "results": [
+    {
+      "width": 1281,
+      "label": "Москва",
+      "parentLeft": 108.625,
+      "frameLeft": 89.625,
+      "frameRight": 309.625,
+      "frameWidth": 220,
+      "top": 153,
+      "navBottom": 153,
+      "links": [
+        {
+          "text": "Вторичная",
+          "left": 108.625,
+          "right": 178,
+          "height": 19
+        },
+        {
+          "text": "Арендовать",
+          "left": 108.625,
+          "right": 187.125,
+          "height": 19
+        },
+        {
+          "text": "Новостройки",
+          "left": 108.625,
+          "right": 196.421875,
+          "height": 19
+        },
+        {
+          "text": "Жилые комплексы",
+          "left": 108.625,
+          "right": 227.28125,
+          "height": 19
+        },
+        {
+          "text": "Квартиры",
+          "left": 108.625,
+          "right": 173.328125,
+          "height": 19
+        },
+        {
+          "text": "Апартаменты",
+          "left": 108.625,
+          "right": 197.453125,
+          "height": 19
+        },
+        {
+          "text": "Пентхаусы",
+          "left": 108.625,
+          "right": 179.8125,
+          "height": 19
+        },
+        {
+          "text": "Застройщики",
+          "left": 108.625,
+          "right": 197.1875,
+          "height": 19
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "width": 1281,
+      "label": "Загородная",
+      "parentLeft": 190.953125,
+      "frameLeft": 171.953125,
+      "frameRight": 391.953125,
+      "frameWidth": 220,
+      "top": 153,
+      "navBottom": 153,
+      "links": [
+        {
+          "text": "Купить",
+          "left": 190.953125,
+          "right": 234.765625,
+          "height": 19
+        },
+        {
+          "text": "Снять",
+          "left": 190.953125,
+          "right": 230.0625,
+          "height": 19
+        },
+        {
+          "text": "Коттеджные поселки",
+          "left": 190.953125,
+          "right": 327.328125,
+          "height": 19
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "width": 1281,
+      "label": "Коммерческая",
+      "parentLeft": 308.671875,
+      "frameLeft": 289.671875,
+      "frameRight": 509.671875,
+      "frameWidth": 220,
+      "top": 153,
+      "navBottom": 153,
+      "links": [
+        {
+          "text": "Купить",
+          "left": 308.671875,
+          "right": 352.484375,
+          "height": 19
+        },
+        {
+          "text": "Снять",
+          "left": 308.671875,
+          "right": 347.78125,
+          "height": 19
+        },
+        {
+          "text": "Здания",
+          "left": 308.671875,
+          "right": 356.234375,
+          "height": 19
+        },
+        {
+          "text": "Бизнес-центры",
+          "left": 308.671875,
+          "right": 408.78125,
+          "height": 19
+        },
+        {
+          "text": "Особняки",
+          "left": 308.671875,
+          "right": 375.078125,
+          "height": 19
+        },
+        {
+          "text": "Арендный бизнес",
+          "left": 308.671875,
+          "right": 425.875,
+          "height": 19
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "width": 1281,
+      "label": "Курортная",
+      "parentLeft": 449.984375,
+      "frameLeft": 430.984375,
+      "frameRight": 650.984375,
+      "frameWidth": 220,
+      "top": 153,
+      "navBottom": 153,
+      "links": [
+        {
+          "text": "Инвестиции",
+          "left": 449.984375,
+          "right": 529.390625,
+          "height": 19
+        },
+        {
+          "text": "Алтай",
+          "left": 449.984375,
+          "right": 489.375,
+          "height": 19
+        },
+        {
+          "text": "Архыз",
+          "left": 449.984375,
+          "right": 490.578125,
+          "height": 19
+        },
+        {
+          "text": "Сочи",
+          "left": 449.984375,
+          "right": 483.96875,
+          "height": 19
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "width": 1281,
+      "label": "Зарубежная",
+      "parentLeft": 554.0625,
+      "frameLeft": 535.0625,
+      "frameRight": 755.0625,
+      "frameWidth": 220,
+      "top": 153,
+      "navBottom": 153,
+      "links": [
+        {
+          "text": "ОАЭ",
+          "left": 554.0625,
+          "right": 587.5625,
+          "height": 19
+        },
+        {
+          "text": "Турция",
+          "left": 554.0625,
+          "right": 599.125,
+          "height": 19
+        },
+        {
+          "text": "Таиланд",
+          "left": 554.0625,
+          "right": 607.78125,
+          "height": 19
+        },
+        {
+          "text": "Бали",
+          "left": 554.0625,
+          "right": 586.25,
+          "height": 19
+        },
+        {
+          "text": "Испания",
+          "left": 554.0625,
+          "right": 612.046875,
+          "height": 19
+        },
+        {
+          "text": "Италия",
+          "left": 554.0625,
+          "right": 602.390625,
+          "height": 19
+        },
+        {
+          "text": "Португалия",
+          "left": 554.0625,
+          "right": 630.609375,
+          "height": 19
+        },
+        {
+          "text": "Франция",
+          "left": 554.0625,
+          "right": 614.90625,
+          "height": 19
+        },
+        {
+          "text": "Оман",
+          "left": 554.0625,
+          "right": 592.171875,
+          "height": 19
+        },
+        {
+          "text": "Жилые комплексы",
+          "left": 554.0625,
+          "right": 672.71875,
+          "height": 19
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "width": 1281,
+      "label": "Санкт-Петербург",
+      "parentLeft": 667.953125,
+      "frameLeft": 648.953125,
+      "frameRight": 868.953125,
+      "frameWidth": 220,
+      "top": 153,
+      "navBottom": 153,
+      "links": [
+        {
+          "text": "Вторичная",
+          "left": 667.953125,
+          "right": 737.328125,
+          "height": 19
+        },
+        {
+          "text": "Новостройки",
+          "left": 667.953125,
+          "right": 755.75,
+          "height": 19
+        },
+        {
+          "text": "Загородная",
+          "left": 667.953125,
+          "right": 746.578125,
+          "height": 19
+        },
+        {
+          "text": "Коммерческая",
+          "left": 667.953125,
+          "right": 765.1875,
+          "height": 19
+        },
+        {
+          "text": "Эксклюзив",
+          "left": 667.953125,
+          "right": 738.875,
+          "height": 19
+        },
+        {
+          "text": "Апартаменты",
+          "left": 667.953125,
+          "right": 756.78125,
+          "height": 19
+        },
+        {
+          "text": "Пентхаус",
+          "left": 667.953125,
+          "right": 729.984375,
+          "height": 19
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "width": 1281,
+      "label": "Медиа",
+      "parentLeft": 819.859375,
+      "frameLeft": 800.859375,
+      "frameRight": 1020.859375,
+      "frameWidth": 220,
+      "top": 153,
+      "navBottom": 153,
+      "links": [
+        {
+          "text": "Блог",
+          "left": 819.859375,
+          "right": 849.9375,
+          "height": 19
+        },
+        {
+          "text": "Новости",
+          "left": 819.859375,
+          "right": 876.28125,
+          "height": 19
+        },
+        {
+          "text": "Вебинары и видео",
+          "left": 819.859375,
+          "right": 941.765625,
+          "height": 19
+        },
+        {
+          "text": "Аналитика рынка",
+          "left": 819.859375,
+          "right": 934.390625,
+          "height": 19
+        },
+        {
+          "text": "Искусство жить",
+          "left": 819.859375,
+          "right": 923.125,
+          "height": 19
+        },
+        {
+          "text": "Кейсы",
+          "left": 819.859375,
+          "right": 861.65625,
+          "height": 19
+        },
+        {
+          "text": "Журнал",
+          "left": 819.859375,
+          "right": 870.234375,
+          "height": 19
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "width": 1281,
+      "label": "О BARN Estate",
+      "parentLeft": 891.15625,
+      "frameLeft": 872.15625,
+      "frameRight": 1092.15625,
+      "frameWidth": 220,
+      "top": 153,
+      "navBottom": 153,
+      "links": [
+        {
+          "text": "Контакты",
+          "left": 891.15625,
+          "right": 953.0625,
+          "height": 19
+        },
+        {
+          "text": "Партнерам",
+          "left": 891.15625,
+          "right": 967.359375,
+          "height": 19
+        },
+        {
+          "text": "BARN Estate Club",
+          "left": 891.15625,
+          "right": 1010.40625,
+          "height": 19
+        },
+        {
+          "text": "СМИ о нас",
+          "left": 891.15625,
+          "right": 968.703125,
+          "height": 19
+        },
+        {
+          "text": "Мероприятия",
+          "left": 891.15625,
+          "right": 981.859375,
+          "height": 19
+        },
+        {
+          "text": "Команда",
+          "left": 891.15625,
+          "right": 950.046875,
+          "height": 19
+        },
+        {
+          "text": "Вакансии",
+          "left": 891.15625,
+          "right": 954.515625,
+          "height": 19
+        },
+        {
+          "text": "Стиль жизни",
+          "left": 891.15625,
+          "right": 973.515625,
+          "height": 19
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "width": 1281,
+      "label": "Собственникам",
+      "parentLeft": 1018.5625,
+      "frameLeft": 999.5625,
+      "frameRight": 1219.5625,
+      "frameWidth": 220,
+      "top": 153,
+      "navBottom": 153,
+      "links": [
+        {
+          "text": "Амбассадоры",
+          "left": 1018.5625,
+          "right": 1111.640625,
+          "height": 19
+        },
+        {
+          "text": "Продажа",
+          "left": 1018.5625,
+          "right": 1079.796875,
+          "height": 19
+        },
+        {
+          "text": "Аренда",
+          "left": 1018.5625,
+          "right": 1069.015625,
+          "height": 19
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "width": 1366,
+      "label": "Москва",
+      "parentLeft": 134.125,
+      "frameLeft": 115.125,
+      "frameRight": 335.125,
+      "frameWidth": 220,
+      "top": 153,
+      "navBottom": 153,
+      "links": [
+        {
+          "text": "Вторичная",
+          "left": 134.125,
+          "right": 203.5,
+          "height": 19
+        },
+        {
+          "text": "Арендовать",
+          "left": 134.125,
+          "right": 212.625,
+          "height": 19
+        },
+        {
+          "text": "Новостройки",
+          "left": 134.125,
+          "right": 221.921875,
+          "height": 19
+        },
+        {
+          "text": "Жилые комплексы",
+          "left": 134.125,
+          "right": 252.78125,
+          "height": 19
+        },
+        {
+          "text": "Квартиры",
+          "left": 134.125,
+          "right": 198.828125,
+          "height": 19
+        },
+        {
+          "text": "Апартаменты",
+          "left": 134.125,
+          "right": 222.953125,
+          "height": 19
+        },
+        {
+          "text": "Пентхаусы",
+          "left": 134.125,
+          "right": 205.3125,
+          "height": 19
+        },
+        {
+          "text": "Застройщики",
+          "left": 134.125,
+          "right": 222.6875,
+          "height": 19
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "width": 1366,
+      "label": "Загородная",
+      "parentLeft": 220.703125,
+      "frameLeft": 201.703125,
+      "frameRight": 421.703125,
+      "frameWidth": 220,
+      "top": 153,
+      "navBottom": 153,
+      "links": [
+        {
+          "text": "Купить",
+          "left": 220.703125,
+          "right": 264.515625,
+          "height": 19
+        },
+        {
+          "text": "Снять",
+          "left": 220.703125,
+          "right": 259.8125,
+          "height": 19
+        },
+        {
+          "text": "Коттеджные поселки",
+          "left": 220.703125,
+          "right": 357.078125,
+          "height": 19
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "width": 1366,
+      "label": "Коммерческая",
+      "parentLeft": 342.671875,
+      "frameLeft": 323.671875,
+      "frameRight": 543.671875,
+      "frameWidth": 220,
+      "top": 153,
+      "navBottom": 153,
+      "links": [
+        {
+          "text": "Купить",
+          "left": 342.671875,
+          "right": 386.484375,
+          "height": 19
+        },
+        {
+          "text": "Снять",
+          "left": 342.671875,
+          "right": 381.78125,
+          "height": 19
+        },
+        {
+          "text": "Здания",
+          "left": 342.671875,
+          "right": 390.234375,
+          "height": 19
+        },
+        {
+          "text": "Бизнес-центры",
+          "left": 342.671875,
+          "right": 442.78125,
+          "height": 19
+        },
+        {
+          "text": "Особняки",
+          "left": 342.671875,
+          "right": 409.078125,
+          "height": 19
+        },
+        {
+          "text": "Арендный бизнес",
+          "left": 342.671875,
+          "right": 459.875,
+          "height": 19
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "width": 1366,
+      "label": "Курортная",
+      "parentLeft": 488.234375,
+      "frameLeft": 469.234375,
+      "frameRight": 689.234375,
+      "frameWidth": 220,
+      "top": 153,
+      "navBottom": 153,
+      "links": [
+        {
+          "text": "Инвестиции",
+          "left": 488.234375,
+          "right": 567.640625,
+          "height": 19
+        },
+        {
+          "text": "Алтай",
+          "left": 488.234375,
+          "right": 527.625,
+          "height": 19
+        },
+        {
+          "text": "Архыз",
+          "left": 488.234375,
+          "right": 528.828125,
+          "height": 19
+        },
+        {
+          "text": "Сочи",
+          "left": 488.234375,
+          "right": 522.21875,
+          "height": 19
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "width": 1366,
+      "label": "Зарубежная",
+      "parentLeft": 596.5625,
+      "frameLeft": 577.5625,
+      "frameRight": 797.5625,
+      "frameWidth": 220,
+      "top": 153,
+      "navBottom": 153,
+      "links": [
+        {
+          "text": "ОАЭ",
+          "left": 596.5625,
+          "right": 630.0625,
+          "height": 19
+        },
+        {
+          "text": "Турция",
+          "left": 596.5625,
+          "right": 641.625,
+          "height": 19
+        },
+        {
+          "text": "Таиланд",
+          "left": 596.5625,
+          "right": 650.28125,
+          "height": 19
+        },
+        {
+          "text": "Бали",
+          "left": 596.5625,
+          "right": 628.75,
+          "height": 19
+        },
+        {
+          "text": "Испания",
+          "left": 596.5625,
+          "right": 654.546875,
+          "height": 19
+        },
+        {
+          "text": "Италия",
+          "left": 596.5625,
+          "right": 644.890625,
+          "height": 19
+        },
+        {
+          "text": "Португалия",
+          "left": 596.5625,
+          "right": 673.109375,
+          "height": 19
+        },
+        {
+          "text": "Франция",
+          "left": 596.5625,
+          "right": 657.40625,
+          "height": 19
+        },
+        {
+          "text": "Оман",
+          "left": 596.5625,
+          "right": 634.671875,
+          "height": 19
+        },
+        {
+          "text": "Жилые комплексы",
+          "left": 596.5625,
+          "right": 715.21875,
+          "height": 19
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "width": 1366,
+      "label": "Санкт-Петербург",
+      "parentLeft": 714.703125,
+      "frameLeft": 695.703125,
+      "frameRight": 915.703125,
+      "frameWidth": 220,
+      "top": 153,
+      "navBottom": 153,
+      "links": [
+        {
+          "text": "Вторичная",
+          "left": 714.703125,
+          "right": 784.078125,
+          "height": 19
+        },
+        {
+          "text": "Новостройки",
+          "left": 714.703125,
+          "right": 802.5,
+          "height": 19
+        },
+        {
+          "text": "Загородная",
+          "left": 714.703125,
+          "right": 793.328125,
+          "height": 19
+        },
+        {
+          "text": "Коммерческая",
+          "left": 714.703125,
+          "right": 811.9375,
+          "height": 19
+        },
+        {
+          "text": "Эксклюзив",
+          "left": 714.703125,
+          "right": 785.625,
+          "height": 19
+        },
+        {
+          "text": "Апартаменты",
+          "left": 714.703125,
+          "right": 803.53125,
+          "height": 19
+        },
+        {
+          "text": "Пентхаус",
+          "left": 714.703125,
+          "right": 776.734375,
+          "height": 19
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "width": 1366,
+      "label": "Медиа",
+      "parentLeft": 870.859375,
+      "frameLeft": 851.859375,
+      "frameRight": 1071.859375,
+      "frameWidth": 220,
+      "top": 153,
+      "navBottom": 153,
+      "links": [
+        {
+          "text": "Блог",
+          "left": 870.859375,
+          "right": 900.9375,
+          "height": 19
+        },
+        {
+          "text": "Новости",
+          "left": 870.859375,
+          "right": 927.28125,
+          "height": 19
+        },
+        {
+          "text": "Вебинары и видео",
+          "left": 870.859375,
+          "right": 992.765625,
+          "height": 19
+        },
+        {
+          "text": "Аналитика рынка",
+          "left": 870.859375,
+          "right": 985.390625,
+          "height": 19
+        },
+        {
+          "text": "Искусство жить",
+          "left": 870.859375,
+          "right": 974.125,
+          "height": 19
+        },
+        {
+          "text": "Кейсы",
+          "left": 870.859375,
+          "right": 912.65625,
+          "height": 19
+        },
+        {
+          "text": "Журнал",
+          "left": 870.859375,
+          "right": 921.234375,
+          "height": 19
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "width": 1366,
+      "label": "О BARN Estate",
+      "parentLeft": 946.40625,
+      "frameLeft": 927.40625,
+      "frameRight": 1147.40625,
+      "frameWidth": 220,
+      "top": 153,
+      "navBottom": 153,
+      "links": [
+        {
+          "text": "Контакты",
+          "left": 946.40625,
+          "right": 1008.3125,
+          "height": 19
+        },
+        {
+          "text": "Партнерам",
+          "left": 946.40625,
+          "right": 1022.609375,
+          "height": 19
+        },
+        {
+          "text": "BARN Estate Club",
+          "left": 946.40625,
+          "right": 1065.65625,
+          "height": 19
+        },
+        {
+          "text": "СМИ о нас",
+          "left": 946.40625,
+          "right": 1023.953125,
+          "height": 19
+        },
+        {
+          "text": "Мероприятия",
+          "left": 946.40625,
+          "right": 1037.109375,
+          "height": 19
+        },
+        {
+          "text": "Команда",
+          "left": 946.40625,
+          "right": 1005.296875,
+          "height": 19
+        },
+        {
+          "text": "Вакансии",
+          "left": 946.40625,
+          "right": 1009.765625,
+          "height": 19
+        },
+        {
+          "text": "Стиль жизни",
+          "left": 946.40625,
+          "right": 1028.765625,
+          "height": 19
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "width": 1366,
+      "label": "Собственникам",
+      "parentLeft": 1078.0625,
+      "frameLeft": 1059.0625,
+      "frameRight": 1279.0625,
+      "frameWidth": 220,
+      "top": 153,
+      "navBottom": 153,
+      "links": [
+        {
+          "text": "Амбассадоры",
+          "left": 1078.0625,
+          "right": 1171.140625,
+          "height": 19
+        },
+        {
+          "text": "Продажа",
+          "left": 1078.0625,
+          "right": 1139.296875,
+          "height": 19
+        },
+        {
+          "text": "Аренда",
+          "left": 1078.0625,
+          "right": 1128.515625,
+          "height": 19
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "label": "Москва",
+      "parentLeft": 156.3125,
+      "frameLeft": 137.3125,
+      "frameRight": 357.3125,
+      "frameWidth": 220,
+      "top": 153,
+      "navBottom": 153,
+      "links": [
+        {
+          "text": "Вторичная",
+          "left": 156.3125,
+          "right": 225.6875,
+          "height": 19
+        },
+        {
+          "text": "Арендовать",
+          "left": 156.3125,
+          "right": 234.8125,
+          "height": 19
+        },
+        {
+          "text": "Новостройки",
+          "left": 156.3125,
+          "right": 244.109375,
+          "height": 19
+        },
+        {
+          "text": "Жилые комплексы",
+          "left": 156.3125,
+          "right": 274.96875,
+          "height": 19
+        },
+        {
+          "text": "Квартиры",
+          "left": 156.3125,
+          "right": 221.015625,
+          "height": 19
+        },
+        {
+          "text": "Апартаменты",
+          "left": 156.3125,
+          "right": 245.140625,
+          "height": 19
+        },
+        {
+          "text": "Пентхаусы",
+          "left": 156.3125,
+          "right": 227.5,
+          "height": 19
+        },
+        {
+          "text": "Застройщики",
+          "left": 156.3125,
+          "right": 244.875,
+          "height": 19
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "label": "Загородная",
+      "parentLeft": 246.59375,
+      "frameLeft": 227.59375,
+      "frameRight": 447.59375,
+      "frameWidth": 220,
+      "top": 153,
+      "navBottom": 153,
+      "links": [
+        {
+          "text": "Купить",
+          "left": 246.59375,
+          "right": 290.40625,
+          "height": 19
+        },
+        {
+          "text": "Снять",
+          "left": 246.59375,
+          "right": 285.703125,
+          "height": 19
+        },
+        {
+          "text": "Коттеджные поселки",
+          "left": 246.59375,
+          "right": 382.96875,
+          "height": 19
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "label": "Коммерческая",
+      "parentLeft": 372.265625,
+      "frameLeft": 353.265625,
+      "frameRight": 573.265625,
+      "frameWidth": 220,
+      "top": 153,
+      "navBottom": 153,
+      "links": [
+        {
+          "text": "Купить",
+          "left": 372.265625,
+          "right": 416.078125,
+          "height": 19
+        },
+        {
+          "text": "Снять",
+          "left": 372.265625,
+          "right": 411.375,
+          "height": 19
+        },
+        {
+          "text": "Здания",
+          "left": 372.265625,
+          "right": 419.828125,
+          "height": 19
+        },
+        {
+          "text": "Бизнес-центры",
+          "left": 372.265625,
+          "right": 472.375,
+          "height": 19
+        },
+        {
+          "text": "Особняки",
+          "left": 372.265625,
+          "right": 438.671875,
+          "height": 19
+        },
+        {
+          "text": "Арендный бизнес",
+          "left": 372.265625,
+          "right": 489.46875,
+          "height": 19
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "label": "Курортная",
+      "parentLeft": 521.53125,
+      "frameLeft": 502.53125,
+      "frameRight": 722.53125,
+      "frameWidth": 220,
+      "top": 153,
+      "navBottom": 153,
+      "links": [
+        {
+          "text": "Инвестиции",
+          "left": 521.53125,
+          "right": 600.9375,
+          "height": 19
+        },
+        {
+          "text": "Алтай",
+          "left": 521.53125,
+          "right": 560.921875,
+          "height": 19
+        },
+        {
+          "text": "Архыз",
+          "left": 521.53125,
+          "right": 562.125,
+          "height": 19
+        },
+        {
+          "text": "Сочи",
+          "left": 521.53125,
+          "right": 555.515625,
+          "height": 19
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "label": "Зарубежная",
+      "parentLeft": 633.5625,
+      "frameLeft": 614.5625,
+      "frameRight": 834.5625,
+      "frameWidth": 220,
+      "top": 153,
+      "navBottom": 153,
+      "links": [
+        {
+          "text": "ОАЭ",
+          "left": 633.5625,
+          "right": 667.0625,
+          "height": 19
+        },
+        {
+          "text": "Турция",
+          "left": 633.5625,
+          "right": 678.625,
+          "height": 19
+        },
+        {
+          "text": "Таиланд",
+          "left": 633.5625,
+          "right": 687.28125,
+          "height": 19
+        },
+        {
+          "text": "Бали",
+          "left": 633.5625,
+          "right": 665.75,
+          "height": 19
+        },
+        {
+          "text": "Испания",
+          "left": 633.5625,
+          "right": 691.546875,
+          "height": 19
+        },
+        {
+          "text": "Италия",
+          "left": 633.5625,
+          "right": 681.890625,
+          "height": 19
+        },
+        {
+          "text": "Португалия",
+          "left": 633.5625,
+          "right": 710.109375,
+          "height": 19
+        },
+        {
+          "text": "Франция",
+          "left": 633.5625,
+          "right": 694.40625,
+          "height": 19
+        },
+        {
+          "text": "Оман",
+          "left": 633.5625,
+          "right": 671.671875,
+          "height": 19
+        },
+        {
+          "text": "Жилые комплексы",
+          "left": 633.5625,
+          "right": 752.21875,
+          "height": 19
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "label": "Санкт-Петербург",
+      "parentLeft": 755.40625,
+      "frameLeft": 736.40625,
+      "frameRight": 956.40625,
+      "frameWidth": 220,
+      "top": 153,
+      "navBottom": 153,
+      "links": [
+        {
+          "text": "Вторичная",
+          "left": 755.40625,
+          "right": 824.78125,
+          "height": 19
+        },
+        {
+          "text": "Новостройки",
+          "left": 755.40625,
+          "right": 843.203125,
+          "height": 19
+        },
+        {
+          "text": "Загородная",
+          "left": 755.40625,
+          "right": 834.03125,
+          "height": 19
+        },
+        {
+          "text": "Коммерческая",
+          "left": 755.40625,
+          "right": 852.640625,
+          "height": 19
+        },
+        {
+          "text": "Эксклюзив",
+          "left": 755.40625,
+          "right": 826.328125,
+          "height": 19
+        },
+        {
+          "text": "Апартаменты",
+          "left": 755.40625,
+          "right": 844.234375,
+          "height": 19
+        },
+        {
+          "text": "Пентхаус",
+          "left": 755.40625,
+          "right": 817.4375,
+          "height": 19
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "label": "Медиа",
+      "parentLeft": 915.265625,
+      "frameLeft": 896.265625,
+      "frameRight": 1116.265625,
+      "frameWidth": 220,
+      "top": 153,
+      "navBottom": 153,
+      "links": [
+        {
+          "text": "Блог",
+          "left": 915.265625,
+          "right": 945.34375,
+          "height": 19
+        },
+        {
+          "text": "Новости",
+          "left": 915.265625,
+          "right": 971.6875,
+          "height": 19
+        },
+        {
+          "text": "Вебинары и видео",
+          "left": 915.265625,
+          "right": 1037.171875,
+          "height": 19
+        },
+        {
+          "text": "Аналитика рынка",
+          "left": 915.265625,
+          "right": 1029.796875,
+          "height": 19
+        },
+        {
+          "text": "Искусство жить",
+          "left": 915.265625,
+          "right": 1018.53125,
+          "height": 19
+        },
+        {
+          "text": "Кейсы",
+          "left": 915.265625,
+          "right": 957.0625,
+          "height": 19
+        },
+        {
+          "text": "Журнал",
+          "left": 915.265625,
+          "right": 965.640625,
+          "height": 19
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "label": "О BARN Estate",
+      "parentLeft": 994.515625,
+      "frameLeft": 975.515625,
+      "frameRight": 1195.515625,
+      "frameWidth": 220,
+      "top": 153,
+      "navBottom": 153,
+      "links": [
+        {
+          "text": "Контакты",
+          "left": 994.515625,
+          "right": 1056.421875,
+          "height": 19
+        },
+        {
+          "text": "Партнерам",
+          "left": 994.515625,
+          "right": 1070.71875,
+          "height": 19
+        },
+        {
+          "text": "BARN Estate Club",
+          "left": 994.515625,
+          "right": 1113.765625,
+          "height": 19
+        },
+        {
+          "text": "СМИ о нас",
+          "left": 994.515625,
+          "right": 1072.0625,
+          "height": 19
+        },
+        {
+          "text": "Мероприятия",
+          "left": 994.515625,
+          "right": 1085.21875,
+          "height": 19
+        },
+        {
+          "text": "Команда",
+          "left": 994.515625,
+          "right": 1053.40625,
+          "height": 19
+        },
+        {
+          "text": "Вакансии",
+          "left": 994.515625,
+          "right": 1057.875,
+          "height": 19
+        },
+        {
+          "text": "Стиль жизни",
+          "left": 994.515625,
+          "right": 1076.875,
+          "height": 19
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "label": "Собственникам",
+      "parentLeft": 1129.875,
+      "frameLeft": 1110.875,
+      "frameRight": 1330.875,
+      "frameWidth": 220,
+      "top": 153,
+      "navBottom": 153,
+      "links": [
+        {
+          "text": "Амбассадоры",
+          "left": 1129.875,
+          "right": 1222.953125,
+          "height": 19
+        },
+        {
+          "text": "Продажа",
+          "left": 1129.875,
+          "right": 1191.109375,
+          "height": 19
+        },
+        {
+          "text": "Аренда",
+          "left": 1129.875,
+          "right": 1180.328125,
+          "height": 19
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "width": 1441,
+      "label": "Москва",
+      "parentLeft": 99.109375,
+      "frameLeft": 80.109375,
+      "frameRight": 300.109375,
+      "frameWidth": 220,
+      "top": 155,
+      "navBottom": 155,
+      "links": [
+        {
+          "text": "Вторичная",
+          "left": 99.109375,
+          "right": 177.140625,
+          "height": 21
+        },
+        {
+          "text": "Арендовать",
+          "left": 99.109375,
+          "right": 187.421875,
+          "height": 21
+        },
+        {
+          "text": "Новостройки",
+          "left": 99.109375,
+          "right": 197.875,
+          "height": 21
+        },
+        {
+          "text": "Жилые комплексы",
+          "left": 99.109375,
+          "right": 232.609375,
+          "height": 21
+        },
+        {
+          "text": "Квартиры",
+          "left": 99.109375,
+          "right": 171.890625,
+          "height": 21
+        },
+        {
+          "text": "Апартаменты",
+          "left": 99.109375,
+          "right": 199.03125,
+          "height": 21
+        },
+        {
+          "text": "Пентхаусы",
+          "left": 99.109375,
+          "right": 179.203125,
+          "height": 21
+        },
+        {
+          "text": "Застройщики",
+          "left": 99.109375,
+          "right": 198.75,
+          "height": 21
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "width": 1441,
+      "label": "Загородная",
+      "parentLeft": 197.71875,
+      "frameLeft": 178.71875,
+      "frameRight": 398.71875,
+      "frameWidth": 220,
+      "top": 155,
+      "navBottom": 155,
+      "links": [
+        {
+          "text": "Купить",
+          "left": 197.71875,
+          "right": 247.015625,
+          "height": 21
+        },
+        {
+          "text": "Снять",
+          "left": 197.71875,
+          "right": 241.71875,
+          "height": 21
+        },
+        {
+          "text": "Коттеджные поселки",
+          "left": 197.71875,
+          "right": 351.140625,
+          "height": 21
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "width": 1441,
+      "label": "Коммерческая",
+      "parentLeft": 336.140625,
+      "frameLeft": 317.140625,
+      "frameRight": 537.140625,
+      "frameWidth": 220,
+      "top": 155,
+      "navBottom": 155,
+      "links": [
+        {
+          "text": "Купить",
+          "left": 336.140625,
+          "right": 385.4375,
+          "height": 21
+        },
+        {
+          "text": "Снять",
+          "left": 336.140625,
+          "right": 380.140625,
+          "height": 21
+        },
+        {
+          "text": "Здания",
+          "left": 336.140625,
+          "right": 389.640625,
+          "height": 21
+        },
+        {
+          "text": "Бизнес-центры",
+          "left": 336.140625,
+          "right": 448.75,
+          "height": 21
+        },
+        {
+          "text": "Особняки",
+          "left": 336.140625,
+          "right": 410.84375,
+          "height": 21
+        },
+        {
+          "text": "Арендный бизнес",
+          "left": 336.140625,
+          "right": 468,
+          "height": 21
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "width": 1441,
+      "label": "Курортная",
+      "parentLeft": 501.109375,
+      "frameLeft": 482.109375,
+      "frameRight": 702.109375,
+      "frameWidth": 220,
+      "top": 155,
+      "navBottom": 155,
+      "links": [
+        {
+          "text": "Инвестиции",
+          "left": 501.109375,
+          "right": 590.4375,
+          "height": 21
+        },
+        {
+          "text": "Алтай",
+          "left": 501.109375,
+          "right": 545.421875,
+          "height": 21
+        },
+        {
+          "text": "Архыз",
+          "left": 501.109375,
+          "right": 546.78125,
+          "height": 21
+        },
+        {
+          "text": "Сочи",
+          "left": 501.109375,
+          "right": 539.34375,
+          "height": 21
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "width": 1441,
+      "label": "Зарубежная",
+      "parentLeft": 624.1875,
+      "frameLeft": 605.1875,
+      "frameRight": 825.1875,
+      "frameWidth": 220,
+      "top": 155,
+      "navBottom": 155,
+      "links": [
+        {
+          "text": "ОАЭ",
+          "left": 624.1875,
+          "right": 661.875,
+          "height": 21
+        },
+        {
+          "text": "Турция",
+          "left": 624.1875,
+          "right": 674.890625,
+          "height": 21
+        },
+        {
+          "text": "Таиланд",
+          "left": 624.1875,
+          "right": 684.625,
+          "height": 21
+        },
+        {
+          "text": "Бали",
+          "left": 624.1875,
+          "right": 660.390625,
+          "height": 21
+        },
+        {
+          "text": "Испания",
+          "left": 624.1875,
+          "right": 689.421875,
+          "height": 21
+        },
+        {
+          "text": "Италия",
+          "left": 624.1875,
+          "right": 678.5625,
+          "height": 21
+        },
+        {
+          "text": "Португалия",
+          "left": 624.1875,
+          "right": 710.3125,
+          "height": 21
+        },
+        {
+          "text": "Франция",
+          "left": 624.1875,
+          "right": 692.625,
+          "height": 21
+        },
+        {
+          "text": "Оман",
+          "left": 624.1875,
+          "right": 667.046875,
+          "height": 21
+        },
+        {
+          "text": "Жилые комплексы",
+          "left": 624.1875,
+          "right": 757.6875,
+          "height": 21
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "width": 1441,
+      "label": "Санкт-Петербург",
+      "parentLeft": 758.3125,
+      "frameLeft": 739.3125,
+      "frameRight": 959.3125,
+      "frameWidth": 220,
+      "top": 155,
+      "navBottom": 155,
+      "links": [
+        {
+          "text": "Вторичная",
+          "left": 758.3125,
+          "right": 836.34375,
+          "height": 21
+        },
+        {
+          "text": "Новостройки",
+          "left": 758.3125,
+          "right": 857.078125,
+          "height": 21
+        },
+        {
+          "text": "Загородная",
+          "left": 758.3125,
+          "right": 846.765625,
+          "height": 21
+        },
+        {
+          "text": "Коммерческая",
+          "left": 758.3125,
+          "right": 867.703125,
+          "height": 21
+        },
+        {
+          "text": "Эксклюзив",
+          "left": 758.3125,
+          "right": 838.09375,
+          "height": 21
+        },
+        {
+          "text": "Апартаменты",
+          "left": 758.3125,
+          "right": 858.234375,
+          "height": 21
+        },
+        {
+          "text": "Пентхаус",
+          "left": 758.3125,
+          "right": 828.09375,
+          "height": 21
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "width": 1441,
+      "label": "Медиа",
+      "parentLeft": 935.203125,
+      "frameLeft": 916.203125,
+      "frameRight": 1136.203125,
+      "frameWidth": 220,
+      "top": 155,
+      "navBottom": 155,
+      "links": [
+        {
+          "text": "Блог",
+          "left": 935.203125,
+          "right": 969.03125,
+          "height": 21
+        },
+        {
+          "text": "Новости",
+          "left": 935.203125,
+          "right": 998.671875,
+          "height": 21
+        },
+        {
+          "text": "Вебинары и видео",
+          "left": 935.203125,
+          "right": 1072.359375,
+          "height": 21
+        },
+        {
+          "text": "Аналитика рынка",
+          "left": 935.203125,
+          "right": 1064.046875,
+          "height": 21
+        },
+        {
+          "text": "Искусство жить",
+          "left": 935.203125,
+          "right": 1051.375,
+          "height": 21
+        },
+        {
+          "text": "Кейсы",
+          "left": 935.203125,
+          "right": 982.234375,
+          "height": 21
+        },
+        {
+          "text": "Журнал",
+          "left": 935.203125,
+          "right": 991.875,
+          "height": 21
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "width": 1441,
+      "label": "О BARN Estate",
+      "parentLeft": 1021.40625,
+      "frameLeft": 1002.40625,
+      "frameRight": 1222.40625,
+      "frameWidth": 220,
+      "top": 155,
+      "navBottom": 155,
+      "links": [
+        {
+          "text": "Контакты",
+          "left": 1021.40625,
+          "right": 1091.0625,
+          "height": 21
+        },
+        {
+          "text": "Партнерам",
+          "left": 1021.40625,
+          "right": 1107.125,
+          "height": 21
+        },
+        {
+          "text": "BARN Estate Club",
+          "left": 1021.40625,
+          "right": 1155.5625,
+          "height": 21
+        },
+        {
+          "text": "СМИ о нас",
+          "left": 1021.40625,
+          "right": 1108.640625,
+          "height": 21
+        },
+        {
+          "text": "Мероприятия",
+          "left": 1021.40625,
+          "right": 1123.4375,
+          "height": 21
+        },
+        {
+          "text": "Команда",
+          "left": 1021.40625,
+          "right": 1087.65625,
+          "height": 21
+        },
+        {
+          "text": "Вакансии",
+          "left": 1021.40625,
+          "right": 1092.671875,
+          "height": 21
+        },
+        {
+          "text": "Стиль жизни",
+          "left": 1021.40625,
+          "right": 1114.0625,
+          "height": 21
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "width": 1441,
+      "label": "Собственникам",
+      "parentLeft": 1170.71875,
+      "frameLeft": 1151.71875,
+      "frameRight": 1371.71875,
+      "frameWidth": 220,
+      "top": 155,
+      "navBottom": 155,
+      "links": [
+        {
+          "text": "Амбассадоры",
+          "left": 1170.71875,
+          "right": 1275.4375,
+          "height": 21
+        },
+        {
+          "text": "Продажа",
+          "left": 1170.71875,
+          "right": 1239.609375,
+          "height": 21
+        },
+        {
+          "text": "Аренда",
+          "left": 1170.71875,
+          "right": 1227.484375,
+          "height": 21
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "width": 1920,
+      "label": "Москва",
+      "parentLeft": 290.796875,
+      "frameLeft": 271.796875,
+      "frameRight": 491.796875,
+      "frameWidth": 220,
+      "top": 155,
+      "navBottom": 155,
+      "links": [
+        {
+          "text": "Вторичная",
+          "left": 290.796875,
+          "right": 368.828125,
+          "height": 21
+        },
+        {
+          "text": "Арендовать",
+          "left": 290.796875,
+          "right": 379.109375,
+          "height": 21
+        },
+        {
+          "text": "Новостройки",
+          "left": 290.796875,
+          "right": 389.5625,
+          "height": 21
+        },
+        {
+          "text": "Жилые комплексы",
+          "left": 290.796875,
+          "right": 424.296875,
+          "height": 21
+        },
+        {
+          "text": "Квартиры",
+          "left": 290.796875,
+          "right": 363.578125,
+          "height": 21
+        },
+        {
+          "text": "Апартаменты",
+          "left": 290.796875,
+          "right": 390.71875,
+          "height": 21
+        },
+        {
+          "text": "Пентхаусы",
+          "left": 290.796875,
+          "right": 370.890625,
+          "height": 21
+        },
+        {
+          "text": "Застройщики",
+          "left": 290.796875,
+          "right": 390.4375,
+          "height": 21
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "width": 1920,
+      "label": "Загородная",
+      "parentLeft": 401.359375,
+      "frameLeft": 382.359375,
+      "frameRight": 602.359375,
+      "frameWidth": 220,
+      "top": 155,
+      "navBottom": 155,
+      "links": [
+        {
+          "text": "Купить",
+          "left": 401.359375,
+          "right": 450.65625,
+          "height": 21
+        },
+        {
+          "text": "Снять",
+          "left": 401.359375,
+          "right": 445.359375,
+          "height": 21
+        },
+        {
+          "text": "Коттеджные поселки",
+          "left": 401.359375,
+          "right": 554.78125,
+          "height": 21
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "width": 1920,
+      "label": "Коммерческая",
+      "parentLeft": 551.734375,
+      "frameLeft": 532.734375,
+      "frameRight": 752.734375,
+      "frameWidth": 220,
+      "top": 155,
+      "navBottom": 155,
+      "links": [
+        {
+          "text": "Купить",
+          "left": 551.734375,
+          "right": 601.03125,
+          "height": 21
+        },
+        {
+          "text": "Снять",
+          "left": 551.734375,
+          "right": 595.734375,
+          "height": 21
+        },
+        {
+          "text": "Здания",
+          "left": 551.734375,
+          "right": 605.234375,
+          "height": 21
+        },
+        {
+          "text": "Бизнес-центры",
+          "left": 551.734375,
+          "right": 664.34375,
+          "height": 21
+        },
+        {
+          "text": "Особняки",
+          "left": 551.734375,
+          "right": 626.4375,
+          "height": 21
+        },
+        {
+          "text": "Арендный бизнес",
+          "left": 551.734375,
+          "right": 683.59375,
+          "height": 21
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "width": 1920,
+      "label": "Курортная",
+      "parentLeft": 728.65625,
+      "frameLeft": 709.65625,
+      "frameRight": 929.65625,
+      "frameWidth": 220,
+      "top": 155,
+      "navBottom": 155,
+      "links": [
+        {
+          "text": "Инвестиции",
+          "left": 728.65625,
+          "right": 817.984375,
+          "height": 21
+        },
+        {
+          "text": "Алтай",
+          "left": 728.65625,
+          "right": 772.96875,
+          "height": 21
+        },
+        {
+          "text": "Архыз",
+          "left": 728.65625,
+          "right": 774.328125,
+          "height": 21
+        },
+        {
+          "text": "Сочи",
+          "left": 728.65625,
+          "right": 766.890625,
+          "height": 21
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "width": 1920,
+      "label": "Зарубежная",
+      "parentLeft": 863.6875,
+      "frameLeft": 844.6875,
+      "frameRight": 1064.6875,
+      "frameWidth": 220,
+      "top": 155,
+      "navBottom": 155,
+      "links": [
+        {
+          "text": "ОАЭ",
+          "left": 863.6875,
+          "right": 901.375,
+          "height": 21
+        },
+        {
+          "text": "Турция",
+          "left": 863.6875,
+          "right": 914.390625,
+          "height": 21
+        },
+        {
+          "text": "Таиланд",
+          "left": 863.6875,
+          "right": 924.125,
+          "height": 21
+        },
+        {
+          "text": "Бали",
+          "left": 863.6875,
+          "right": 899.890625,
+          "height": 21
+        },
+        {
+          "text": "Испания",
+          "left": 863.6875,
+          "right": 928.921875,
+          "height": 21
+        },
+        {
+          "text": "Италия",
+          "left": 863.6875,
+          "right": 918.0625,
+          "height": 21
+        },
+        {
+          "text": "Португалия",
+          "left": 863.6875,
+          "right": 949.8125,
+          "height": 21
+        },
+        {
+          "text": "Франция",
+          "left": 863.6875,
+          "right": 932.125,
+          "height": 21
+        },
+        {
+          "text": "Оман",
+          "left": 863.6875,
+          "right": 906.546875,
+          "height": 21
+        },
+        {
+          "text": "Жилые комплексы",
+          "left": 863.6875,
+          "right": 997.1875,
+          "height": 21
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "width": 1920,
+      "label": "Санкт-Петербург",
+      "parentLeft": 1009.765625,
+      "frameLeft": 990.765625,
+      "frameRight": 1210.765625,
+      "frameWidth": 220,
+      "top": 155,
+      "navBottom": 155,
+      "links": [
+        {
+          "text": "Вторичная",
+          "left": 1009.765625,
+          "right": 1087.796875,
+          "height": 21
+        },
+        {
+          "text": "Новостройки",
+          "left": 1009.765625,
+          "right": 1108.53125,
+          "height": 21
+        },
+        {
+          "text": "Загородная",
+          "left": 1009.765625,
+          "right": 1098.21875,
+          "height": 21
+        },
+        {
+          "text": "Коммерческая",
+          "left": 1009.765625,
+          "right": 1119.15625,
+          "height": 21
+        },
+        {
+          "text": "Эксклюзив",
+          "left": 1009.765625,
+          "right": 1089.546875,
+          "height": 21
+        },
+        {
+          "text": "Апартаменты",
+          "left": 1009.765625,
+          "right": 1109.6875,
+          "height": 21
+        },
+        {
+          "text": "Пентхаус",
+          "left": 1009.765625,
+          "right": 1079.546875,
+          "height": 21
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "width": 1920,
+      "label": "Медиа",
+      "parentLeft": 1198.609375,
+      "frameLeft": 1179.609375,
+      "frameRight": 1399.609375,
+      "frameWidth": 220,
+      "top": 155,
+      "navBottom": 155,
+      "links": [
+        {
+          "text": "Блог",
+          "left": 1198.609375,
+          "right": 1232.4375,
+          "height": 21
+        },
+        {
+          "text": "Новости",
+          "left": 1198.609375,
+          "right": 1262.078125,
+          "height": 21
+        },
+        {
+          "text": "Вебинары и видео",
+          "left": 1198.609375,
+          "right": 1335.765625,
+          "height": 21
+        },
+        {
+          "text": "Аналитика рынка",
+          "left": 1198.609375,
+          "right": 1327.453125,
+          "height": 21
+        },
+        {
+          "text": "Искусство жить",
+          "left": 1198.609375,
+          "right": 1314.78125,
+          "height": 21
+        },
+        {
+          "text": "Кейсы",
+          "left": 1198.609375,
+          "right": 1245.640625,
+          "height": 21
+        },
+        {
+          "text": "Журнал",
+          "left": 1198.609375,
+          "right": 1255.28125,
+          "height": 21
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "width": 1920,
+      "label": "О BARN Estate",
+      "parentLeft": 1296.765625,
+      "frameLeft": 1277.765625,
+      "frameRight": 1497.765625,
+      "frameWidth": 220,
+      "top": 155,
+      "navBottom": 155,
+      "links": [
+        {
+          "text": "Контакты",
+          "left": 1296.765625,
+          "right": 1366.421875,
+          "height": 21
+        },
+        {
+          "text": "Партнерам",
+          "left": 1296.765625,
+          "right": 1382.484375,
+          "height": 21
+        },
+        {
+          "text": "BARN Estate Club",
+          "left": 1296.765625,
+          "right": 1430.921875,
+          "height": 21
+        },
+        {
+          "text": "СМИ о нас",
+          "left": 1296.765625,
+          "right": 1384,
+          "height": 21
+        },
+        {
+          "text": "Мероприятия",
+          "left": 1296.765625,
+          "right": 1398.796875,
+          "height": 21
+        },
+        {
+          "text": "Команда",
+          "left": 1296.765625,
+          "right": 1363.015625,
+          "height": 21
+        },
+        {
+          "text": "Вакансии",
+          "left": 1296.765625,
+          "right": 1368.03125,
+          "height": 21
+        },
+        {
+          "text": "Стиль жизни",
+          "left": 1296.765625,
+          "right": 1389.421875,
+          "height": 21
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "width": 1920,
+      "label": "Собственникам",
+      "parentLeft": 1458.03125,
+      "frameLeft": 1439.03125,
+      "frameRight": 1659.03125,
+      "frameWidth": 220,
+      "top": 155,
+      "navBottom": 155,
+      "links": [
+        {
+          "text": "Амбассадоры",
+          "left": 1458.03125,
+          "right": 1562.75,
+          "height": 21
+        },
+        {
+          "text": "Продажа",
+          "left": 1458.03125,
+          "right": 1526.921875,
+          "height": 21
+        },
+        {
+          "text": "Аренда",
+          "left": 1458.03125,
+          "right": 1514.796875,
+          "height": 21
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "width": 2560,
+      "label": "Москва",
+      "parentLeft": 610.796875,
+      "frameLeft": 591.796875,
+      "frameRight": 811.796875,
+      "frameWidth": 220,
+      "top": 155,
+      "navBottom": 155,
+      "links": [
+        {
+          "text": "Вторичная",
+          "left": 610.796875,
+          "right": 688.828125,
+          "height": 21
+        },
+        {
+          "text": "Арендовать",
+          "left": 610.796875,
+          "right": 699.109375,
+          "height": 21
+        },
+        {
+          "text": "Новостройки",
+          "left": 610.796875,
+          "right": 709.5625,
+          "height": 21
+        },
+        {
+          "text": "Жилые комплексы",
+          "left": 610.796875,
+          "right": 744.296875,
+          "height": 21
+        },
+        {
+          "text": "Квартиры",
+          "left": 610.796875,
+          "right": 683.578125,
+          "height": 21
+        },
+        {
+          "text": "Апартаменты",
+          "left": 610.796875,
+          "right": 710.71875,
+          "height": 21
+        },
+        {
+          "text": "Пентхаусы",
+          "left": 610.796875,
+          "right": 690.890625,
+          "height": 21
+        },
+        {
+          "text": "Застройщики",
+          "left": 610.796875,
+          "right": 710.4375,
+          "height": 21
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "width": 2560,
+      "label": "Загородная",
+      "parentLeft": 721.359375,
+      "frameLeft": 702.359375,
+      "frameRight": 922.359375,
+      "frameWidth": 220,
+      "top": 155,
+      "navBottom": 155,
+      "links": [
+        {
+          "text": "Купить",
+          "left": 721.359375,
+          "right": 770.65625,
+          "height": 21
+        },
+        {
+          "text": "Снять",
+          "left": 721.359375,
+          "right": 765.359375,
+          "height": 21
+        },
+        {
+          "text": "Коттеджные поселки",
+          "left": 721.359375,
+          "right": 874.78125,
+          "height": 21
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "width": 2560,
+      "label": "Коммерческая",
+      "parentLeft": 871.734375,
+      "frameLeft": 852.734375,
+      "frameRight": 1072.734375,
+      "frameWidth": 220,
+      "top": 155,
+      "navBottom": 155,
+      "links": [
+        {
+          "text": "Купить",
+          "left": 871.734375,
+          "right": 921.03125,
+          "height": 21
+        },
+        {
+          "text": "Снять",
+          "left": 871.734375,
+          "right": 915.734375,
+          "height": 21
+        },
+        {
+          "text": "Здания",
+          "left": 871.734375,
+          "right": 925.234375,
+          "height": 21
+        },
+        {
+          "text": "Бизнес-центры",
+          "left": 871.734375,
+          "right": 984.34375,
+          "height": 21
+        },
+        {
+          "text": "Особняки",
+          "left": 871.734375,
+          "right": 946.4375,
+          "height": 21
+        },
+        {
+          "text": "Арендный бизнес",
+          "left": 871.734375,
+          "right": 1003.59375,
+          "height": 21
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "width": 2560,
+      "label": "Курортная",
+      "parentLeft": 1048.65625,
+      "frameLeft": 1029.65625,
+      "frameRight": 1249.65625,
+      "frameWidth": 220,
+      "top": 155,
+      "navBottom": 155,
+      "links": [
+        {
+          "text": "Инвестиции",
+          "left": 1048.65625,
+          "right": 1137.984375,
+          "height": 21
+        },
+        {
+          "text": "Алтай",
+          "left": 1048.65625,
+          "right": 1092.96875,
+          "height": 21
+        },
+        {
+          "text": "Архыз",
+          "left": 1048.65625,
+          "right": 1094.328125,
+          "height": 21
+        },
+        {
+          "text": "Сочи",
+          "left": 1048.65625,
+          "right": 1086.890625,
+          "height": 21
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "width": 2560,
+      "label": "Зарубежная",
+      "parentLeft": 1183.6875,
+      "frameLeft": 1164.6875,
+      "frameRight": 1384.6875,
+      "frameWidth": 220,
+      "top": 155,
+      "navBottom": 155,
+      "links": [
+        {
+          "text": "ОАЭ",
+          "left": 1183.6875,
+          "right": 1221.375,
+          "height": 21
+        },
+        {
+          "text": "Турция",
+          "left": 1183.6875,
+          "right": 1234.390625,
+          "height": 21
+        },
+        {
+          "text": "Таиланд",
+          "left": 1183.6875,
+          "right": 1244.125,
+          "height": 21
+        },
+        {
+          "text": "Бали",
+          "left": 1183.6875,
+          "right": 1219.890625,
+          "height": 21
+        },
+        {
+          "text": "Испания",
+          "left": 1183.6875,
+          "right": 1248.921875,
+          "height": 21
+        },
+        {
+          "text": "Италия",
+          "left": 1183.6875,
+          "right": 1238.0625,
+          "height": 21
+        },
+        {
+          "text": "Португалия",
+          "left": 1183.6875,
+          "right": 1269.8125,
+          "height": 21
+        },
+        {
+          "text": "Франция",
+          "left": 1183.6875,
+          "right": 1252.125,
+          "height": 21
+        },
+        {
+          "text": "Оман",
+          "left": 1183.6875,
+          "right": 1226.546875,
+          "height": 21
+        },
+        {
+          "text": "Жилые комплексы",
+          "left": 1183.6875,
+          "right": 1317.1875,
+          "height": 21
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "width": 2560,
+      "label": "Санкт-Петербург",
+      "parentLeft": 1329.765625,
+      "frameLeft": 1310.765625,
+      "frameRight": 1530.765625,
+      "frameWidth": 220,
+      "top": 155,
+      "navBottom": 155,
+      "links": [
+        {
+          "text": "Вторичная",
+          "left": 1329.765625,
+          "right": 1407.796875,
+          "height": 21
+        },
+        {
+          "text": "Новостройки",
+          "left": 1329.765625,
+          "right": 1428.53125,
+          "height": 21
+        },
+        {
+          "text": "Загородная",
+          "left": 1329.765625,
+          "right": 1418.21875,
+          "height": 21
+        },
+        {
+          "text": "Коммерческая",
+          "left": 1329.765625,
+          "right": 1439.15625,
+          "height": 21
+        },
+        {
+          "text": "Эксклюзив",
+          "left": 1329.765625,
+          "right": 1409.546875,
+          "height": 21
+        },
+        {
+          "text": "Апартаменты",
+          "left": 1329.765625,
+          "right": 1429.6875,
+          "height": 21
+        },
+        {
+          "text": "Пентхаус",
+          "left": 1329.765625,
+          "right": 1399.546875,
+          "height": 21
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "width": 2560,
+      "label": "Медиа",
+      "parentLeft": 1518.609375,
+      "frameLeft": 1499.609375,
+      "frameRight": 1719.609375,
+      "frameWidth": 220,
+      "top": 155,
+      "navBottom": 155,
+      "links": [
+        {
+          "text": "Блог",
+          "left": 1518.609375,
+          "right": 1552.4375,
+          "height": 21
+        },
+        {
+          "text": "Новости",
+          "left": 1518.609375,
+          "right": 1582.078125,
+          "height": 21
+        },
+        {
+          "text": "Вебинары и видео",
+          "left": 1518.609375,
+          "right": 1655.765625,
+          "height": 21
+        },
+        {
+          "text": "Аналитика рынка",
+          "left": 1518.609375,
+          "right": 1647.453125,
+          "height": 21
+        },
+        {
+          "text": "Искусство жить",
+          "left": 1518.609375,
+          "right": 1634.78125,
+          "height": 21
+        },
+        {
+          "text": "Кейсы",
+          "left": 1518.609375,
+          "right": 1565.640625,
+          "height": 21
+        },
+        {
+          "text": "Журнал",
+          "left": 1518.609375,
+          "right": 1575.28125,
+          "height": 21
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "width": 2560,
+      "label": "О BARN Estate",
+      "parentLeft": 1616.765625,
+      "frameLeft": 1597.765625,
+      "frameRight": 1817.765625,
+      "frameWidth": 220,
+      "top": 155,
+      "navBottom": 155,
+      "links": [
+        {
+          "text": "Контакты",
+          "left": 1616.765625,
+          "right": 1686.421875,
+          "height": 21
+        },
+        {
+          "text": "Партнерам",
+          "left": 1616.765625,
+          "right": 1702.484375,
+          "height": 21
+        },
+        {
+          "text": "BARN Estate Club",
+          "left": 1616.765625,
+          "right": 1750.921875,
+          "height": 21
+        },
+        {
+          "text": "СМИ о нас",
+          "left": 1616.765625,
+          "right": 1704,
+          "height": 21
+        },
+        {
+          "text": "Мероприятия",
+          "left": 1616.765625,
+          "right": 1718.796875,
+          "height": 21
+        },
+        {
+          "text": "Команда",
+          "left": 1616.765625,
+          "right": 1683.015625,
+          "height": 21
+        },
+        {
+          "text": "Вакансии",
+          "left": 1616.765625,
+          "right": 1688.03125,
+          "height": 21
+        },
+        {
+          "text": "Стиль жизни",
+          "left": 1616.765625,
+          "right": 1709.421875,
+          "height": 21
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "width": 2560,
+      "label": "Собственникам",
+      "parentLeft": 1778.03125,
+      "frameLeft": 1759.03125,
+      "frameRight": 1979.03125,
+      "frameWidth": 220,
+      "top": 155,
+      "navBottom": 155,
+      "links": [
+        {
+          "text": "Амбассадоры",
+          "left": 1778.03125,
+          "right": 1882.75,
+          "height": 21
+        },
+        {
+          "text": "Продажа",
+          "left": 1778.03125,
+          "right": 1846.921875,
+          "height": 21
+        },
+        {
+          "text": "Аренда",
+          "left": 1778.03125,
+          "right": 1834.796875,
+          "height": 21
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "width": 3840,
+      "label": "Москва",
+      "parentLeft": 1250.796875,
+      "frameLeft": 1231.796875,
+      "frameRight": 1451.796875,
+      "frameWidth": 220,
+      "top": 155,
+      "navBottom": 155,
+      "links": [
+        {
+          "text": "Вторичная",
+          "left": 1250.796875,
+          "right": 1328.828125,
+          "height": 21
+        },
+        {
+          "text": "Арендовать",
+          "left": 1250.796875,
+          "right": 1339.109375,
+          "height": 21
+        },
+        {
+          "text": "Новостройки",
+          "left": 1250.796875,
+          "right": 1349.5625,
+          "height": 21
+        },
+        {
+          "text": "Жилые комплексы",
+          "left": 1250.796875,
+          "right": 1384.296875,
+          "height": 21
+        },
+        {
+          "text": "Квартиры",
+          "left": 1250.796875,
+          "right": 1323.578125,
+          "height": 21
+        },
+        {
+          "text": "Апартаменты",
+          "left": 1250.796875,
+          "right": 1350.71875,
+          "height": 21
+        },
+        {
+          "text": "Пентхаусы",
+          "left": 1250.796875,
+          "right": 1330.890625,
+          "height": 21
+        },
+        {
+          "text": "Застройщики",
+          "left": 1250.796875,
+          "right": 1350.4375,
+          "height": 21
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "width": 3840,
+      "label": "Загородная",
+      "parentLeft": 1361.359375,
+      "frameLeft": 1342.359375,
+      "frameRight": 1562.359375,
+      "frameWidth": 220,
+      "top": 155,
+      "navBottom": 155,
+      "links": [
+        {
+          "text": "Купить",
+          "left": 1361.359375,
+          "right": 1410.65625,
+          "height": 21
+        },
+        {
+          "text": "Снять",
+          "left": 1361.359375,
+          "right": 1405.359375,
+          "height": 21
+        },
+        {
+          "text": "Коттеджные поселки",
+          "left": 1361.359375,
+          "right": 1514.78125,
+          "height": 21
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "width": 3840,
+      "label": "Коммерческая",
+      "parentLeft": 1511.734375,
+      "frameLeft": 1492.734375,
+      "frameRight": 1712.734375,
+      "frameWidth": 220,
+      "top": 155,
+      "navBottom": 155,
+      "links": [
+        {
+          "text": "Купить",
+          "left": 1511.734375,
+          "right": 1561.03125,
+          "height": 21
+        },
+        {
+          "text": "Снять",
+          "left": 1511.734375,
+          "right": 1555.734375,
+          "height": 21
+        },
+        {
+          "text": "Здания",
+          "left": 1511.734375,
+          "right": 1565.234375,
+          "height": 21
+        },
+        {
+          "text": "Бизнес-центры",
+          "left": 1511.734375,
+          "right": 1624.34375,
+          "height": 21
+        },
+        {
+          "text": "Особняки",
+          "left": 1511.734375,
+          "right": 1586.4375,
+          "height": 21
+        },
+        {
+          "text": "Арендный бизнес",
+          "left": 1511.734375,
+          "right": 1643.59375,
+          "height": 21
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "width": 3840,
+      "label": "Курортная",
+      "parentLeft": 1688.65625,
+      "frameLeft": 1669.65625,
+      "frameRight": 1889.65625,
+      "frameWidth": 220,
+      "top": 155,
+      "navBottom": 155,
+      "links": [
+        {
+          "text": "Инвестиции",
+          "left": 1688.65625,
+          "right": 1777.984375,
+          "height": 21
+        },
+        {
+          "text": "Алтай",
+          "left": 1688.65625,
+          "right": 1732.96875,
+          "height": 21
+        },
+        {
+          "text": "Архыз",
+          "left": 1688.65625,
+          "right": 1734.328125,
+          "height": 21
+        },
+        {
+          "text": "Сочи",
+          "left": 1688.65625,
+          "right": 1726.890625,
+          "height": 21
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "width": 3840,
+      "label": "Зарубежная",
+      "parentLeft": 1823.6875,
+      "frameLeft": 1804.6875,
+      "frameRight": 2024.6875,
+      "frameWidth": 220,
+      "top": 155,
+      "navBottom": 155,
+      "links": [
+        {
+          "text": "ОАЭ",
+          "left": 1823.6875,
+          "right": 1861.375,
+          "height": 21
+        },
+        {
+          "text": "Турция",
+          "left": 1823.6875,
+          "right": 1874.390625,
+          "height": 21
+        },
+        {
+          "text": "Таиланд",
+          "left": 1823.6875,
+          "right": 1884.125,
+          "height": 21
+        },
+        {
+          "text": "Бали",
+          "left": 1823.6875,
+          "right": 1859.890625,
+          "height": 21
+        },
+        {
+          "text": "Испания",
+          "left": 1823.6875,
+          "right": 1888.921875,
+          "height": 21
+        },
+        {
+          "text": "Италия",
+          "left": 1823.6875,
+          "right": 1878.0625,
+          "height": 21
+        },
+        {
+          "text": "Португалия",
+          "left": 1823.6875,
+          "right": 1909.8125,
+          "height": 21
+        },
+        {
+          "text": "Франция",
+          "left": 1823.6875,
+          "right": 1892.125,
+          "height": 21
+        },
+        {
+          "text": "Оман",
+          "left": 1823.6875,
+          "right": 1866.546875,
+          "height": 21
+        },
+        {
+          "text": "Жилые комплексы",
+          "left": 1823.6875,
+          "right": 1957.1875,
+          "height": 21
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "width": 3840,
+      "label": "Санкт-Петербург",
+      "parentLeft": 1969.765625,
+      "frameLeft": 1950.765625,
+      "frameRight": 2170.765625,
+      "frameWidth": 220,
+      "top": 155,
+      "navBottom": 155,
+      "links": [
+        {
+          "text": "Вторичная",
+          "left": 1969.765625,
+          "right": 2047.796875,
+          "height": 21
+        },
+        {
+          "text": "Новостройки",
+          "left": 1969.765625,
+          "right": 2068.53125,
+          "height": 21
+        },
+        {
+          "text": "Загородная",
+          "left": 1969.765625,
+          "right": 2058.21875,
+          "height": 21
+        },
+        {
+          "text": "Коммерческая",
+          "left": 1969.765625,
+          "right": 2079.15625,
+          "height": 21
+        },
+        {
+          "text": "Эксклюзив",
+          "left": 1969.765625,
+          "right": 2049.546875,
+          "height": 21
+        },
+        {
+          "text": "Апартаменты",
+          "left": 1969.765625,
+          "right": 2069.6875,
+          "height": 21
+        },
+        {
+          "text": "Пентхаус",
+          "left": 1969.765625,
+          "right": 2039.546875,
+          "height": 21
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "width": 3840,
+      "label": "Медиа",
+      "parentLeft": 2158.609375,
+      "frameLeft": 2139.609375,
+      "frameRight": 2359.609375,
+      "frameWidth": 220,
+      "top": 155,
+      "navBottom": 155,
+      "links": [
+        {
+          "text": "Блог",
+          "left": 2158.609375,
+          "right": 2192.4375,
+          "height": 21
+        },
+        {
+          "text": "Новости",
+          "left": 2158.609375,
+          "right": 2222.078125,
+          "height": 21
+        },
+        {
+          "text": "Вебинары и видео",
+          "left": 2158.609375,
+          "right": 2295.765625,
+          "height": 21
+        },
+        {
+          "text": "Аналитика рынка",
+          "left": 2158.609375,
+          "right": 2287.453125,
+          "height": 21
+        },
+        {
+          "text": "Искусство жить",
+          "left": 2158.609375,
+          "right": 2274.78125,
+          "height": 21
+        },
+        {
+          "text": "Кейсы",
+          "left": 2158.609375,
+          "right": 2205.640625,
+          "height": 21
+        },
+        {
+          "text": "Журнал",
+          "left": 2158.609375,
+          "right": 2215.28125,
+          "height": 21
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "width": 3840,
+      "label": "О BARN Estate",
+      "parentLeft": 2256.765625,
+      "frameLeft": 2237.765625,
+      "frameRight": 2457.765625,
+      "frameWidth": 220,
+      "top": 155,
+      "navBottom": 155,
+      "links": [
+        {
+          "text": "Контакты",
+          "left": 2256.765625,
+          "right": 2326.421875,
+          "height": 21
+        },
+        {
+          "text": "Партнерам",
+          "left": 2256.765625,
+          "right": 2342.484375,
+          "height": 21
+        },
+        {
+          "text": "BARN Estate Club",
+          "left": 2256.765625,
+          "right": 2390.921875,
+          "height": 21
+        },
+        {
+          "text": "СМИ о нас",
+          "left": 2256.765625,
+          "right": 2344,
+          "height": 21
+        },
+        {
+          "text": "Мероприятия",
+          "left": 2256.765625,
+          "right": 2358.796875,
+          "height": 21
+        },
+        {
+          "text": "Команда",
+          "left": 2256.765625,
+          "right": 2323.015625,
+          "height": 21
+        },
+        {
+          "text": "Вакансии",
+          "left": 2256.765625,
+          "right": 2328.03125,
+          "height": 21
+        },
+        {
+          "text": "Стиль жизни",
+          "left": 2256.765625,
+          "right": 2349.421875,
+          "height": 21
+        }
+      ],
+      "overflow": false
+    },
+    {
+      "width": 3840,
+      "label": "Собственникам",
+      "parentLeft": 2418.03125,
+      "frameLeft": 2399.03125,
+      "frameRight": 2619.03125,
+      "frameWidth": 220,
+      "top": 155,
+      "navBottom": 155,
+      "links": [
+        {
+          "text": "Амбассадоры",
+          "left": 2418.03125,
+          "right": 2522.75,
+          "height": 21
+        },
+        {
+          "text": "Продажа",
+          "left": 2418.03125,
+          "right": 2486.921875,
+          "height": 21
+        },
+        {
+          "text": "Аренда",
+          "left": 2418.03125,
+          "right": 2474.796875,
+          "height": 21
+        }
+      ],
+      "overflow": false
+    }
+  ],
+  "failures": [],
+  "errors": []
+}

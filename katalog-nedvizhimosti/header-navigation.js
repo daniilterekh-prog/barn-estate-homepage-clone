@@ -20,7 +20,11 @@
   const gutter=22,viewport=document.documentElement.clientWidth;
   dropdown.style.maxWidth=Math.max(0,viewport-gutter*2)+'px';
   dropdown.style.setProperty('--catalog-dropdown-top',row.bottom+'px');dropdown.style.top=row.bottom+'px';
-  dropdown.style.left=Math.max(gutter,Math.min(anchor.left,viewport-dropdown.getBoundingClientRect().width-gutter))+'px';
+  const text=document.createRange();text.selectNodeContents(active);
+  const surface=getComputedStyle(dropdown);
+  const inset=parseFloat(surface.paddingLeft)+parseFloat(surface.borderLeftWidth);
+  const alignedLeft=text.getBoundingClientRect().left-inset;
+  dropdown.style.left=Math.max(gutter,Math.min(alignedLeft,viewport-dropdown.getBoundingClientRect().width-gutter))+'px';
  }
  function open(trigger){
   cancelClose();if(header.classList.contains('site-header--menu-open'))return;
