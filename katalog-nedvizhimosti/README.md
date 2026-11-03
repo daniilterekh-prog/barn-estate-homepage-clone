@@ -144,3 +144,20 @@ node katalog-nedvizhimosti/tools/check_catalog_deal_market.cjs
 ```sh
 node katalog-nedvizhimosti/tools/check_header_hover.cjs
 ```
+
+
+## Хэдер по главной — 03.11.2026
+
+Отступ между линией и направлениями26px; строка меню16/18px вместо растянутых44px. Восстановлены исходные desktop-burger33px, подпись «Москва», ширины/интервалы, компактное состояние после48px и tablet-бургер до1280px. Логотип48/36px, контакты24px, мобильный toggle44px/иконка29px и CTA44px сверены с главной. Цвета взяты из белого состояния главной; геометрия бургера и панели контактов совпадает. В полном меню исправлена подпись BARN Estate Club. На мобильном остаётся один ранее выбранный компактный вариант. [Разбор, размеры и границы сравнения](HEADER-HOME-PARITY.md). Этот раздел заменяет старое описание постоянной строки направлений на tablet и при прокрутке.
+
+[Проверка](verification/header-home-parity/parity.json): 28 состояний14ширин320–3840px, геометрия/типографика/ссылки и белая палитра главной, порог48/49, отсутствие сдвигов scroll anchor, CTA/квиз/Escape, доступность фильтров под прозрачным резервом высоты, все9подменю, полный бургер/контакты390/1024/1440px и axe. [Наведение мышью и гибридный ввод](verification/header-home-parity/hover.json):72сочетания. [До исправления](verification/header-home-parity/before-summary.json), [источник и SHA](verification/header-home-parity/reference-source.json).
+
+[Строгий Pixelmatch](verification/header-home-parity/pixels/pixel.json): для воспроизводимости выключен LCD text, динамический счётчик маскирован, top-white нормализован к белому фону каталога. Пять из6снимков совпали полностью; на1440px top-white остаётся45пикселей сглаживания Telegram при идентичных SVG. Это сохранено как ненулевой результат, без заявления о полном raw-pixel совпадении с фотографическим hero. [Каталог1440](verification/header-home-parity/catalog-top-1440.png), [компактный390](verification/header-home-parity/catalog-scrolled-390.png), [нормализованный референс](verification/header-home-parity/pixels/home-top-white-1440.png), [diff](verification/header-home-parity/pixels/diff-top-white-1440.png).
+
+```sh
+node katalog-nedvizhimosti/tools/check_header_home_parity.cjs
+node katalog-nedvizhimosti/tools/check_header_hover.cjs
+node katalog-nedvizhimosti/tools/check_header_pixels.cjs
+```
+
+Pixelmatch используется только для проверки, из установленного Toolkit; [источник](https://github.com/mapbox/pixelmatch), фактическая версия записана в pixel.json. Новых UI-библиотек/зависимостей нет.

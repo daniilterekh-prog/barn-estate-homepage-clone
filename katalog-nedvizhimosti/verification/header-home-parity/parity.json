@@ -1,0 +1,756 @@
+{
+  "base": "http://127.0.0.1:8921/katalog-nedvizhimosti/",
+  "reference": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/",
+  "date": "2026-11-03T09:08:59.118Z",
+  "layouts": [
+    {
+      "width": 320,
+      "state": "top",
+      "headerHeight": 77,
+      "navVisible": false,
+      "top": [
+        22,
+        16,
+        261,
+        61
+      ],
+      "logo": [
+        87.890625,
+        20,
+        129.203125,
+        36
+      ],
+      "burger": [
+        22,
+        16,
+        44,
+        44
+      ],
+      "gap": "0px",
+      "referenceHeaderHeight": 77
+    },
+    {
+      "width": 320,
+      "state": "scrolled",
+      "headerHeight": 77,
+      "navVisible": false,
+      "top": [
+        22,
+        16,
+        261,
+        61
+      ],
+      "logo": [
+        87.890625,
+        20,
+        129.203125,
+        36
+      ],
+      "burger": [
+        22,
+        16,
+        44,
+        44
+      ],
+      "gap": "0px",
+      "referenceHeaderHeight": 77
+    },
+    {
+      "width": 390,
+      "state": "top",
+      "headerHeight": 77,
+      "navVisible": false,
+      "top": [
+        22,
+        16,
+        331,
+        61
+      ],
+      "logo": [
+        122.890625,
+        20,
+        129.203125,
+        36
+      ],
+      "burger": [
+        22,
+        16,
+        44,
+        44
+      ],
+      "gap": "0px",
+      "referenceHeaderHeight": 77
+    },
+    {
+      "width": 390,
+      "state": "scrolled",
+      "headerHeight": 77,
+      "navVisible": false,
+      "top": [
+        22,
+        16,
+        331,
+        61
+      ],
+      "logo": [
+        122.890625,
+        20,
+        129.203125,
+        36
+      ],
+      "burger": [
+        22,
+        16,
+        44,
+        44
+      ],
+      "gap": "0px",
+      "referenceHeaderHeight": 77
+    },
+    {
+      "width": 540,
+      "state": "top",
+      "headerHeight": 77,
+      "navVisible": false,
+      "top": [
+        22,
+        16,
+        481,
+        61
+      ],
+      "logo": [
+        197.890625,
+        20,
+        129.203125,
+        36
+      ],
+      "burger": [
+        22,
+        16,
+        44,
+        44
+      ],
+      "gap": "0px",
+      "referenceHeaderHeight": 77
+    },
+    {
+      "width": 540,
+      "state": "scrolled",
+      "headerHeight": 77,
+      "navVisible": false,
+      "top": [
+        22,
+        16,
+        481,
+        61
+      ],
+      "logo": [
+        197.890625,
+        20,
+        129.203125,
+        36
+      ],
+      "burger": [
+        22,
+        16,
+        44,
+        44
+      ],
+      "gap": "0px",
+      "referenceHeaderHeight": 77
+    },
+    {
+      "width": 541,
+      "state": "top",
+      "headerHeight": 111,
+      "navVisible": false,
+      "top": [
+        24,
+        32,
+        478,
+        79
+      ],
+      "logo": [
+        176.859375,
+        32,
+        172.265625,
+        48
+      ],
+      "burger": [
+        24,
+        34,
+        44,
+        44
+      ],
+      "gap": "0px",
+      "referenceHeaderHeight": 111
+    },
+    {
+      "width": 541,
+      "state": "scrolled",
+      "headerHeight": 111,
+      "navVisible": false,
+      "top": [
+        24,
+        32,
+        478,
+        79
+      ],
+      "logo": [
+        176.859375,
+        32,
+        172.265625,
+        48
+      ],
+      "burger": [
+        24,
+        34,
+        44,
+        44
+      ],
+      "gap": "0px",
+      "referenceHeaderHeight": 111
+    },
+    {
+      "width": 767,
+      "state": "top",
+      "headerHeight": 111,
+      "navVisible": false,
+      "top": [
+        24,
+        32,
+        704,
+        79
+      ],
+      "logo": [
+        289.859375,
+        32,
+        172.265625,
+        48
+      ],
+      "burger": [
+        24,
+        34,
+        44,
+        44
+      ],
+      "gap": "0px",
+      "referenceHeaderHeight": 111
+    },
+    {
+      "width": 767,
+      "state": "scrolled",
+      "headerHeight": 111,
+      "navVisible": false,
+      "top": [
+        24,
+        32,
+        704,
+        79
+      ],
+      "logo": [
+        289.859375,
+        32,
+        172.265625,
+        48
+      ],
+      "burger": [
+        24,
+        34,
+        44,
+        44
+      ],
+      "gap": "0px",
+      "referenceHeaderHeight": 111
+    },
+    {
+      "width": 768,
+      "state": "top",
+      "headerHeight": 111,
+      "navVisible": false,
+      "top": [
+        24,
+        32,
+        705,
+        79
+      ],
+      "logo": [
+        290.359375,
+        32,
+        172.265625,
+        48
+      ],
+      "burger": [
+        24,
+        34,
+        44,
+        44
+      ],
+      "gap": "0px",
+      "referenceHeaderHeight": 111
+    },
+    {
+      "width": 768,
+      "state": "scrolled",
+      "headerHeight": 111,
+      "navVisible": false,
+      "top": [
+        24,
+        32,
+        705,
+        79
+      ],
+      "logo": [
+        290.359375,
+        32,
+        172.265625,
+        48
+      ],
+      "burger": [
+        24,
+        34,
+        44,
+        44
+      ],
+      "gap": "0px",
+      "referenceHeaderHeight": 111
+    },
+    {
+      "width": 1024,
+      "state": "top",
+      "headerHeight": 111,
+      "navVisible": false,
+      "top": [
+        40.875,
+        32,
+        927.25,
+        79
+      ],
+      "logo": [
+        418.359375,
+        32,
+        172.265625,
+        48
+      ],
+      "burger": [
+        40.875,
+        34,
+        44,
+        44
+      ],
+      "gap": "0px",
+      "referenceHeaderHeight": 111
+    },
+    {
+      "width": 1024,
+      "state": "scrolled",
+      "headerHeight": 111,
+      "navVisible": false,
+      "top": [
+        40.875,
+        32,
+        927.25,
+        79
+      ],
+      "logo": [
+        418.359375,
+        32,
+        172.265625,
+        48
+      ],
+      "burger": [
+        40.875,
+        34,
+        44,
+        44
+      ],
+      "gap": "0px",
+      "referenceHeaderHeight": 111
+    },
+    {
+      "width": 1280,
+      "state": "top",
+      "headerHeight": 111,
+      "navVisible": false,
+      "top": [
+        57.765625,
+        32,
+        1149.46875,
+        79
+      ],
+      "logo": [
+        546.359375,
+        32,
+        172.265625,
+        48
+      ],
+      "burger": [
+        57.765625,
+        39.5,
+        33,
+        33
+      ],
+      "gap": "0px",
+      "referenceHeaderHeight": 111
+    },
+    {
+      "width": 1280,
+      "state": "scrolled",
+      "headerHeight": 111,
+      "navVisible": false,
+      "top": [
+        57.765625,
+        32,
+        1149.46875,
+        79
+      ],
+      "logo": [
+        546.359375,
+        32,
+        172.265625,
+        48
+      ],
+      "burger": [
+        57.765625,
+        39.5,
+        33,
+        33
+      ],
+      "gap": "0px",
+      "referenceHeaderHeight": 111
+    },
+    {
+      "width": 1281,
+      "state": "top",
+      "headerHeight": 153,
+      "navVisible": true,
+      "top": [
+        57.828125,
+        32,
+        1150.34375,
+        79
+      ],
+      "logo": [
+        546.859375,
+        32,
+        172.265625,
+        48
+      ],
+      "burger": [
+        57.828125,
+        39.5,
+        33,
+        33
+      ],
+      "gap": "0px 0px 26px",
+      "referenceHeaderHeight": 153
+    },
+    {
+      "width": 1281,
+      "state": "scrolled",
+      "headerHeight": 111,
+      "navVisible": false,
+      "top": [
+        57.828125,
+        32,
+        1150.34375,
+        79
+      ],
+      "logo": [
+        546.859375,
+        32,
+        172.265625,
+        48
+      ],
+      "burger": [
+        57.828125,
+        39.5,
+        33,
+        33
+      ],
+      "gap": "0px",
+      "referenceHeaderHeight": 111
+    },
+    {
+      "width": 1440,
+      "state": "top",
+      "headerHeight": 153,
+      "navVisible": true,
+      "top": [
+        68.328125,
+        32,
+        1288.34375,
+        79
+      ],
+      "logo": [
+        626.359375,
+        32,
+        172.265625,
+        48
+      ],
+      "burger": [
+        68.328125,
+        39.5,
+        33,
+        33
+      ],
+      "gap": "0px 0px 26px",
+      "referenceHeaderHeight": 153
+    },
+    {
+      "width": 1440,
+      "state": "scrolled",
+      "headerHeight": 111,
+      "navVisible": false,
+      "top": [
+        68.328125,
+        32,
+        1288.34375,
+        79
+      ],
+      "logo": [
+        626.359375,
+        32,
+        172.265625,
+        48
+      ],
+      "burger": [
+        68.328125,
+        39.5,
+        33,
+        33
+      ],
+      "gap": "0px",
+      "referenceHeaderHeight": 111
+    },
+    {
+      "width": 1441,
+      "state": "top",
+      "headerHeight": 155,
+      "navVisible": true,
+      "top": [
+        68.390625,
+        32,
+        1289.21875,
+        79
+      ],
+      "logo": [
+        626.859375,
+        32,
+        172.265625,
+        48
+      ],
+      "burger": [
+        68.390625,
+        39.5,
+        33,
+        33
+      ],
+      "gap": "0px 0px 26px",
+      "referenceHeaderHeight": 155
+    },
+    {
+      "width": 1441,
+      "state": "scrolled",
+      "headerHeight": 111,
+      "navVisible": false,
+      "top": [
+        68.390625,
+        32,
+        1289.21875,
+        79
+      ],
+      "logo": [
+        626.859375,
+        32,
+        172.265625,
+        48
+      ],
+      "burger": [
+        68.390625,
+        39.5,
+        33,
+        33
+      ],
+      "gap": "0px",
+      "referenceHeaderHeight": 111
+    },
+    {
+      "width": 1920,
+      "state": "top",
+      "headerHeight": 155,
+      "navVisible": true,
+      "top": [
+        99.984375,
+        32,
+        1705.03125,
+        79
+      ],
+      "logo": [
+        866.359375,
+        32,
+        172.265625,
+        48
+      ],
+      "burger": [
+        99.984375,
+        39.5,
+        33,
+        33
+      ],
+      "gap": "0px 0px 26px",
+      "referenceHeaderHeight": 155
+    },
+    {
+      "width": 1920,
+      "state": "scrolled",
+      "headerHeight": 111,
+      "navVisible": false,
+      "top": [
+        99.984375,
+        32,
+        1705.03125,
+        79
+      ],
+      "logo": [
+        866.359375,
+        32,
+        172.265625,
+        48
+      ],
+      "burger": [
+        99.984375,
+        39.5,
+        33,
+        33
+      ],
+      "gap": "0px",
+      "referenceHeaderHeight": 111
+    },
+    {
+      "width": 2560,
+      "state": "top",
+      "headerHeight": 155,
+      "navVisible": true,
+      "top": [
+        312.5,
+        32,
+        1920,
+        79
+      ],
+      "logo": [
+        1186.359375,
+        32,
+        172.265625,
+        48
+      ],
+      "burger": [
+        312.5,
+        39.5,
+        33,
+        33
+      ],
+      "gap": "0px 0px 26px",
+      "referenceHeaderHeight": 155
+    },
+    {
+      "width": 2560,
+      "state": "scrolled",
+      "headerHeight": 111,
+      "navVisible": false,
+      "top": [
+        312.5,
+        32,
+        1920,
+        79
+      ],
+      "logo": [
+        1186.359375,
+        32,
+        172.265625,
+        48
+      ],
+      "burger": [
+        312.5,
+        39.5,
+        33,
+        33
+      ],
+      "gap": "0px",
+      "referenceHeaderHeight": 111
+    },
+    {
+      "width": 3840,
+      "state": "top",
+      "headerHeight": 155,
+      "navVisible": true,
+      "top": [
+        952.5,
+        32,
+        1920,
+        79
+      ],
+      "logo": [
+        1826.359375,
+        32,
+        172.265625,
+        48
+      ],
+      "burger": [
+        952.5,
+        39.5,
+        33,
+        33
+      ],
+      "gap": "0px 0px 26px",
+      "referenceHeaderHeight": 155
+    },
+    {
+      "width": 3840,
+      "state": "scrolled",
+      "headerHeight": 111,
+      "navVisible": false,
+      "top": [
+        952.5,
+        32,
+        1920,
+        79
+      ],
+      "logo": [
+        1826.359375,
+        32,
+        172.265625,
+        48
+      ],
+      "burger": [
+        952.5,
+        39.5,
+        33,
+        33
+      ],
+      "gap": "0px",
+      "referenceHeaderHeight": 111
+    }
+  ],
+  "checks": [
+    "28 states across 14 widths: homepage rectangles, type, gap, labels, links and white palette match; one header",
+    "desktop compact state uses the same 48px threshold",
+    "request still opens the quiz; transparent reserved space never blocks controls below the compact header",
+    "all nine hover submenus use the homepage texts, URLs and type roles",
+    "menu, content/brand labels, contact popover, nested Escape and return focus match at 390/1024/1440",
+    "mobile/desktop axe; no runtime or HTTP errors"
+  ],
+  "errors": [],
+  "http": [],
+  "axe": [
+    {
+      "width": 390,
+      "violations": []
+    },
+    {
+      "width": 1440,
+      "violations": []
+    }
+  ],
+  "passed": true
+}

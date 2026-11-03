@@ -1,0 +1,68 @@
+{
+  "reference": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/",
+  "base": "http://127.0.0.1:8921/katalog-nedvizhimosti/",
+  "settings": {
+    "viewportHeight": 1000,
+    "deviceScaleFactor": 1,
+    "reducedMotion": "reduce",
+    "chromeArgs": [
+      "--disable-lcd-text"
+    ],
+    "mask": "dynamic favorites badge",
+    "normalization": "top-white uses the white content-page palette; excludes hero photo",
+    "threshold": 0,
+    "includeAA": true,
+    "pixelmatch": "8.0.0"
+  },
+  "samples": [
+    {
+      "width": 390,
+      "state": "scrolled",
+      "pixels": 0,
+      "total": 28875,
+      "threshold": 0,
+      "includeAA": true
+    },
+    {
+      "width": 768,
+      "state": "scrolled",
+      "pixels": 0,
+      "total": 83583,
+      "threshold": 0,
+      "includeAA": true
+    },
+    {
+      "width": 1440,
+      "state": "scrolled",
+      "pixels": 0,
+      "total": 158175,
+      "threshold": 0,
+      "includeAA": true
+    },
+    {
+      "width": 1440,
+      "state": "top-white",
+      "pixels": 45,
+      "total": 218025,
+      "threshold": 0,
+      "includeAA": true
+    },
+    {
+      "width": 2560,
+      "state": "scrolled",
+      "pixels": 0,
+      "total": 282495,
+      "threshold": 0,
+      "includeAA": true
+    },
+    {
+      "width": 2560,
+      "state": "top-white",
+      "pixels": 0,
+      "total": 394475,
+      "threshold": 0,
+      "includeAA": true
+    }
+  ],
+  "allPixelsIdentical": false
+}

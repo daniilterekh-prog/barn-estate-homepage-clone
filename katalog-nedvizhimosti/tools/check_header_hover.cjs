@@ -14,7 +14,7 @@ const proof=process.env.BARNES_PROOF_DIR||'/tmp/catalog-header-hover';fs.mkdirSy
    const go=async()=>{await page.goto(base+'?direction=international');await page.waitForFunction(()=>window.BarnesCatalogListing?.getSnapshot().ready);await page.evaluate(()=>document.fonts.ready)};
    await go();const sections=await page.locator('#catalog-header-navigation').textContent().then(JSON.parse);
    const popup=page.locator('#catalog-header-dropdown'),nav=page.locator('.catalog-global-nav');
-   for(const width of [768,1024,1440,1920]){
+   for(const width of [1281,1440,1920,2560]){
     await page.setViewportSize({width,height:1000});await go();
     for(let i=0;i<sections.length;i++){
      const trigger=nav.locator('.site-header__nav-link').nth(i);await trigger.hover();
@@ -34,9 +34,9 @@ const proof=process.env.BARNES_PROOF_DIR||'/tmp/catalog-header-hover';fs.mkdirSy
    await page.keyboard.press('End');assert.ok(await popup.locator('a').last().evaluate(e=>e===document.activeElement));await page.keyboard.press('Escape');
    assert.equal(await popup.isVisible(),false);assert.ok(await first.evaluate(e=>e===document.activeElement));pass(`${hasTouch?'hybrid':'mouse'}: keyboard open, navigation, Escape and focus`);
    await page.evaluate(()=>scrollTo(0,120));await page.waitForFunction(()=>document.querySelector('.site-header--scrolled'));
-   await nav.locator('.site-header__nav-link').nth(6).hover();assert.ok(await popup.isVisible());
+   assert.equal(await nav.isVisible(),false);assert.equal(await popup.isVisible(),false);
    await page.locator('.site-header__icon-btn').click();assert.equal(await popup.isVisible(),false);await page.keyboard.press('Escape');
-   pass(`${hasTouch?'hybrid':'mouse'}: sticky header hover and burger close`);
+   pass(`${hasTouch?'hybrid':'mouse'}: homepage compact sticky header and burger close`);
    // Intercept top-level navigation so the test never visits the external site.
    await page.route('https://barn-estate.ru/**',r=>r.fulfill({status:200,contentType:'text/html',body:'<p>Navigation fixture</p>'}));
    await go();await first.hover();await first.click();await page.waitForURL(sections[0].href);pass(`${hasTouch?'hybrid':'mouse'}: mouse click still follows the section URL`);
