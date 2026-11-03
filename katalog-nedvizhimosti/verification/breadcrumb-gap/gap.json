@@ -1,0 +1,60 @@
+{
+  "rows": [
+    {
+      "width": 320,
+      "padding": "28px",
+      "gap": 28,
+      "breadcrumbFont": "12px",
+      "headingFont": "22px",
+      "overlap": false,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "padding": "28px",
+      "gap": 28,
+      "breadcrumbFont": "12px",
+      "headingFont": "22px",
+      "overlap": false,
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "padding": "32px",
+      "gap": 32,
+      "breadcrumbFont": "13px",
+      "headingFont": "38px",
+      "overlap": false,
+      "overflow": false
+    },
+    {
+      "width": 1024,
+      "padding": "32px",
+      "gap": 32,
+      "breadcrumbFont": "17px",
+      "headingFont": "38px",
+      "overlap": false,
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "padding": "40px",
+      "gap": 40,
+      "breadcrumbFont": "17px",
+      "headingFont": "38px",
+      "overlap": false,
+      "overflow": false
+    },
+    {
+      "width": 1920,
+      "padding": "40px",
+      "gap": 40,
+      "breadcrumbFont": "17px",
+      "headingFont": "44px",
+      "overlap": false,
+      "overflow": false
+    }
+  ],
+  "errors": [],
+  "passed": true
+}

@@ -5,7 +5,7 @@ html body.catalog-listing-page .layout__header .site-header{color:#1e1e1e}
 html body.catalog-listing-page .site-header__top{border-bottom-color:#e4e4e4}
 html body.catalog-listing-page .site-header__logo img{filter:brightness(0)}
 html body.catalog-listing-page .catalog-grid{padding-top:0;padding-bottom:78px}
-.catalog-page-intro{padding-top:30px}
+.catalog-page-intro{padding-top:40px}
 .catalog-breadcrumbs{display:flex;align-items:center;flex-wrap:wrap;gap:12px;color:#656462;font-size:13px;font-weight:300;line-height:18px;margin-bottom:28px}
 .catalog-breadcrumbs a{color:inherit;text-decoration:none}
 .catalog-page-title{font-size:clamp(44px,4vw,58px);line-height:1.05;font-weight:300;letter-spacing:-.035em;margin:0 0 44px}
@@ -38,8 +38,8 @@ html body.catalog-listing-page .catalog-grid{padding-top:0;padding-bottom:78px}
 .skip-link:focus{transform:none}
 [hidden]{display:none!important}
 @media(min-width:1441px){.catalog-text-search input,.catalog-text-reset{font-size:17px}}
-@media(max-width:1024px){.catalog-page-title{font-size:44px;margin-bottom:34px}.catalog-page-intro{padding-top:24px}}
-@media(max-width:540px){.catalog-page-intro{padding-top:20px}.catalog-breadcrumbs{font-size:12px;gap:9px;margin-bottom:22px}.catalog-page-title{font-size:32px;line-height:1.05;max-width:330px;margin-bottom:26px}.catalog-search-row{gap:8px;flex-wrap:wrap;margin-bottom:15px}.catalog-text-search{max-width:none}.catalog-text-search input{font-size:15px}.catalog-result-summary{font-size:13px;margin-bottom:20px}.catalog-result-summary .catalog-text-reset{font-size:13px}.catalog-listing-page .catalog-grid{padding-bottom:48px}.catalog-empty h2{font-size:24px}}
+@media(max-width:1024px){.catalog-page-title{font-size:44px;margin-bottom:34px}.catalog-page-intro{padding-top:32px}}
+@media(max-width:540px){.catalog-page-intro{padding-top:28px}.catalog-breadcrumbs{font-size:12px;gap:9px;margin-bottom:22px}.catalog-page-title{font-size:32px;line-height:1.05;max-width:330px;margin-bottom:26px}.catalog-search-row{gap:8px;flex-wrap:wrap;margin-bottom:15px}.catalog-text-search{max-width:none}.catalog-text-search input{font-size:15px}.catalog-result-summary{font-size:13px;margin-bottom:20px}.catalog-result-summary .catalog-text-reset{font-size:13px}.catalog-listing-page .catalog-grid{padding-bottom:48px}.catalog-empty h2{font-size:24px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}}
 /* The source section spaces header/toolbar/list by a flex gap. This content-page
    composition includes search and a result count, so their explicit margins own spacing. */
