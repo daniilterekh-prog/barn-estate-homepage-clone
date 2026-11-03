@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "results": [
+    {
+      "width": 390,
+      "departmentHeaderHidden": true,
+      "options": 5,
+      "selection": true,
+      "escapeFocus": true,
+      "outsideClick": true,
+      "otherHeadersPreserved": true
+    },
+    {
+      "width": 1440,
+      "departmentHeaderHidden": true,
+      "options": 5,
+      "selection": true,
+      "escapeFocus": true,
+      "outsideClick": true,
+      "otherHeadersPreserved": true
+    }
+  ],
+  "errors": []
+}

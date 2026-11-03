@@ -1,0 +1,2153 @@
+{
+  "reference": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/",
+  "date": "2026-11-03T09:52:02.805Z",
+  "widths": [
+    {
+      "width": 320,
+      "tokens": {
+        "--home-heading": "22px",
+        "--home-action": "18px",
+        "--home-field": "17px",
+        "--home-listing": "20px",
+        "--home-price": "24px"
+      },
+      "roles": {
+        "title": {
+          "text": "КАТАЛОГ НЕДВИЖИМОСТИ",
+          "visible": true,
+          "size": "22px",
+          "weight": "300",
+          "line": "26.4px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(30, 30, 30)"
+        },
+        "deal": {
+          "text": "Покупка",
+          "visible": true,
+          "size": "17px",
+          "weight": "300",
+          "line": "18.7px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", sans-serif",
+          "color": "rgb(139, 29, 37)"
+        },
+        "department": {
+          "text": "Москва",
+          "visible": true,
+          "size": "18px",
+          "weight": "300",
+          "line": "21.6px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", sans-serif",
+          "color": "rgb(30, 30, 30)"
+        },
+        "market": {
+          "text": "Новостройки",
+          "visible": true,
+          "size": "18px",
+          "weight": "400",
+          "line": "21.6px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", sans-serif",
+          "color": "rgb(30, 30, 30)"
+        },
+        "search": {
+          "text": "",
+          "visible": true,
+          "size": "17px",
+          "weight": "300",
+          "line": "20.4px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", sans-serif",
+          "color": "rgb(30, 30, 30)"
+        },
+        "quick": {
+          "text": "Локация",
+          "visible": true,
+          "size": "17px",
+          "weight": "300",
+          "line": "20.4px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", sans-serif",
+          "color": "rgb(79, 77, 73)"
+        },
+        "name": {
+          "text": "Вавилова 64",
+          "visible": true,
+          "size": "20px",
+          "weight": "400",
+          "line": "22.4px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(30, 30, 30)"
+        },
+        "price": {
+          "text": "Цена по запросу",
+          "visible": true,
+          "size": "24px",
+          "weight": "500",
+          "line": "28.8px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(30, 30, 30)"
+        },
+        "address": {
+          "text": "Вавилова ул, 64",
+          "visible": true,
+          "size": "13px",
+          "weight": "300",
+          "line": "18px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(101, 100, 98)"
+        },
+        "call": {
+          "text": "Заказать звонок",
+          "visible": true,
+          "size": "18px",
+          "weight": "400",
+          "line": "19.8px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(30, 30, 30)"
+        },
+        "details": {
+          "text": "Подробнее",
+          "visible": true,
+          "size": "18px",
+          "weight": "400",
+          "line": "19.8px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(255, 255, 255)"
+        }
+      }
+    },
+    {
+      "width": 390,
+      "tokens": {
+        "--home-heading": "22px",
+        "--home-action": "18px",
+        "--home-field": "17px",
+        "--home-listing": "20px",
+        "--home-price": "24px"
+      },
+      "roles": {
+        "title": {
+          "text": "КАТАЛОГ НЕДВИЖИМОСТИ",
+          "visible": true,
+          "size": "22px",
+          "weight": "300",
+          "line": "26.4px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(30, 30, 30)"
+        },
+        "deal": {
+          "text": "Покупка",
+          "visible": true,
+          "size": "17px",
+          "weight": "300",
+          "line": "18.7px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", sans-serif",
+          "color": "rgb(139, 29, 37)"
+        },
+        "department": {
+          "text": "Москва",
+          "visible": true,
+          "size": "18px",
+          "weight": "300",
+          "line": "21.6px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", sans-serif",
+          "color": "rgb(30, 30, 30)"
+        },
+        "market": {
+          "text": "Новостройки",
+          "visible": true,
+          "size": "18px",
+          "weight": "400",
+          "line": "21.6px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", sans-serif",
+          "color": "rgb(30, 30, 30)"
+        },
+        "search": {
+          "text": "",
+          "visible": true,
+          "size": "17px",
+          "weight": "300",
+          "line": "20.4px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", sans-serif",
+          "color": "rgb(30, 30, 30)"
+        },
+        "quick": {
+          "text": "Локация",
+          "visible": true,
+          "size": "17px",
+          "weight": "300",
+          "line": "20.4px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", sans-serif",
+          "color": "rgb(79, 77, 73)"
+        },
+        "name": {
+          "text": "Вавилова 64",
+          "visible": true,
+          "size": "20px",
+          "weight": "400",
+          "line": "22.4px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(30, 30, 30)"
+        },
+        "price": {
+          "text": "Цена по запросу",
+          "visible": true,
+          "size": "24px",
+          "weight": "500",
+          "line": "28.8px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(30, 30, 30)"
+        },
+        "address": {
+          "text": "Вавилова ул, 64",
+          "visible": true,
+          "size": "13px",
+          "weight": "300",
+          "line": "18px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(101, 100, 98)"
+        },
+        "call": {
+          "text": "Заказать звонок",
+          "visible": true,
+          "size": "18px",
+          "weight": "400",
+          "line": "19.8px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(30, 30, 30)"
+        },
+        "details": {
+          "text": "Подробнее",
+          "visible": true,
+          "size": "18px",
+          "weight": "400",
+          "line": "19.8px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(255, 255, 255)"
+        }
+      }
+    },
+    {
+      "width": 540,
+      "tokens": {
+        "--home-heading": "22px",
+        "--home-action": "18px",
+        "--home-field": "17px",
+        "--home-listing": "20px",
+        "--home-price": "24px"
+      },
+      "roles": {
+        "title": {
+          "text": "КАТАЛОГ НЕДВИЖИМОСТИ",
+          "visible": true,
+          "size": "22px",
+          "weight": "300",
+          "line": "26.4px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(30, 30, 30)"
+        },
+        "deal": {
+          "text": "Покупка",
+          "visible": true,
+          "size": "17px",
+          "weight": "300",
+          "line": "18.7px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", sans-serif",
+          "color": "rgb(139, 29, 37)"
+        },
+        "department": {
+          "text": "Москва",
+          "visible": true,
+          "size": "18px",
+          "weight": "300",
+          "line": "21.6px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", sans-serif",
+          "color": "rgb(30, 30, 30)"
+        },
+        "market": {
+          "text": "Новостройки",
+          "visible": true,
+          "size": "18px",
+          "weight": "400",
+          "line": "21.6px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", sans-serif",
+          "color": "rgb(30, 30, 30)"
+        },
+        "search": {
+          "text": "",
+          "visible": true,
+          "size": "17px",
+          "weight": "300",
+          "line": "20.4px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", sans-serif",
+          "color": "rgb(30, 30, 30)"
+        },
+        "quick": {
+          "text": "Локация",
+          "visible": true,
+          "size": "17px",
+          "weight": "300",
+          "line": "20.4px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", sans-serif",
+          "color": "rgb(79, 77, 73)"
+        },
+        "name": {
+          "text": "Вавилова 64",
+          "visible": true,
+          "size": "20px",
+          "weight": "400",
+          "line": "22.4px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(30, 30, 30)"
+        },
+        "price": {
+          "text": "Цена по запросу",
+          "visible": true,
+          "size": "24px",
+          "weight": "500",
+          "line": "28.8px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(30, 30, 30)"
+        },
+        "address": {
+          "text": "Вавилова ул, 64",
+          "visible": true,
+          "size": "13px",
+          "weight": "300",
+          "line": "18px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(101, 100, 98)"
+        },
+        "call": {
+          "text": "Заказать звонок",
+          "visible": true,
+          "size": "18px",
+          "weight": "400",
+          "line": "19.8px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(30, 30, 30)"
+        },
+        "details": {
+          "text": "Подробнее",
+          "visible": true,
+          "size": "18px",
+          "weight": "400",
+          "line": "19.8px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(255, 255, 255)"
+        }
+      }
+    },
+    {
+      "width": 541,
+      "tokens": {
+        "--home-heading": "38px",
+        "--home-action": "17px",
+        "--home-field": "18px",
+        "--home-listing": "22px",
+        "--home-price": "26px"
+      },
+      "roles": {
+        "title": {
+          "text": "КАТАЛОГ НЕДВИЖИМОСТИ",
+          "visible": true,
+          "size": "38px",
+          "weight": "300",
+          "line": "45.6px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(30, 30, 30)"
+        },
+        "deal": {
+          "text": "Покупка",
+          "visible": true,
+          "size": "17px",
+          "weight": "300",
+          "line": "18.7px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", sans-serif",
+          "color": "rgb(139, 29, 37)"
+        },
+        "department": {
+          "text": "Москва",
+          "visible": true,
+          "size": "18px",
+          "weight": "300",
+          "line": "21.6px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", sans-serif",
+          "color": "rgb(30, 30, 30)"
+        },
+        "market": {
+          "text": "Новостройки",
+          "visible": true,
+          "size": "18px",
+          "weight": "400",
+          "line": "21.6px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", sans-serif",
+          "color": "rgb(30, 30, 30)"
+        },
+        "search": {
+          "text": "",
+          "visible": true,
+          "size": "17px",
+          "weight": "300",
+          "line": "20.4px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", sans-serif",
+          "color": "rgb(30, 30, 30)"
+        },
+        "quick": {
+          "text": "Локация",
+          "visible": true,
+          "size": "17px",
+          "weight": "300",
+          "line": "20.4px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", sans-serif",
+          "color": "rgb(79, 77, 73)"
+        },
+        "name": {
+          "text": "Вавилова 64",
+          "visible": true,
+          "size": "22px",
+          "weight": "400",
+          "line": "24.64px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(30, 30, 30)"
+        },
+        "price": {
+          "text": "Цена по запросу",
+          "visible": true,
+          "size": "26px",
+          "weight": "500",
+          "line": "31.2px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(30, 30, 30)"
+        },
+        "address": {
+          "text": "Вавилова ул, 64",
+          "visible": true,
+          "size": "13px",
+          "weight": "300",
+          "line": "18px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(101, 100, 98)"
+        },
+        "call": {
+          "text": "Заказать звонок",
+          "visible": true,
+          "size": "17px",
+          "weight": "400",
+          "line": "18.7px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(30, 30, 30)"
+        },
+        "details": {
+          "text": "Подробнее",
+          "visible": true,
+          "size": "17px",
+          "weight": "400",
+          "line": "18.7px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(255, 255, 255)"
+        }
+      }
+    },
+    {
+      "width": 768,
+      "tokens": {
+        "--home-heading": "38px",
+        "--home-action": "17px",
+        "--home-field": "18px",
+        "--home-listing": "22px",
+        "--home-price": "26px"
+      },
+      "roles": {
+        "title": {
+          "text": "КАТАЛОГ НЕДВИЖИМОСТИ",
+          "visible": true,
+          "size": "38px",
+          "weight": "300",
+          "line": "45.6px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(30, 30, 30)"
+        },
+        "deal": {
+          "text": "Покупка",
+          "visible": true,
+          "size": "19px",
+          "weight": "300",
+          "line": "20.9px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", sans-serif",
+          "color": "rgb(139, 29, 37)"
+        },
+        "department": {
+          "text": "Москва",
+          "visible": true,
+          "size": "19px",
+          "weight": "300",
+          "line": "22.8px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", sans-serif",
+          "color": "rgb(30, 30, 30)"
+        },
+        "market": {
+          "text": "Новостройки",
+          "visible": true,
+          "size": "17px",
+          "weight": "400",
+          "line": "20.4px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", sans-serif",
+          "color": "rgb(30, 30, 30)"
+        },
+        "search": {
+          "text": "",
+          "visible": true,
+          "size": "19px",
+          "weight": "300",
+          "line": "22.8px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", sans-serif",
+          "color": "rgb(30, 30, 30)"
+        },
+        "quick": {
+          "text": "Локация",
+          "visible": true,
+          "size": "19px",
+          "weight": "300",
+          "line": "22.8px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", sans-serif",
+          "color": "rgb(79, 77, 73)"
+        },
+        "name": {
+          "text": "Вавилова 64",
+          "visible": true,
+          "size": "22px",
+          "weight": "400",
+          "line": "24.64px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(30, 30, 30)"
+        },
+        "price": {
+          "text": "Цена по запросу",
+          "visible": true,
+          "size": "26px",
+          "weight": "500",
+          "line": "31.2px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(30, 30, 30)"
+        },
+        "address": {
+          "text": "Вавилова ул, 64",
+          "visible": true,
+          "size": "13px",
+          "weight": "300",
+          "line": "18px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(101, 100, 98)"
+        },
+        "call": {
+          "text": "Заказать звонок",
+          "visible": true,
+          "size": "17px",
+          "weight": "400",
+          "line": "18.7px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(30, 30, 30)"
+        },
+        "details": {
+          "text": "Подробнее",
+          "visible": true,
+          "size": "17px",
+          "weight": "400",
+          "line": "18.7px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(255, 255, 255)"
+        }
+      }
+    },
+    {
+      "width": 1024,
+      "tokens": {
+        "--home-heading": "38px",
+        "--home-action": "17px",
+        "--home-field": "18px",
+        "--home-listing": "22px",
+        "--home-price": "26px"
+      },
+      "roles": {
+        "title": {
+          "text": "КАТАЛОГ НЕДВИЖИМОСТИ",
+          "visible": true,
+          "size": "38px",
+          "weight": "300",
+          "line": "45.6px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(30, 30, 30)"
+        },
+        "deal": {
+          "text": "Покупка",
+          "visible": true,
+          "size": "19px",
+          "weight": "300",
+          "line": "20.9px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", sans-serif",
+          "color": "rgb(139, 29, 37)"
+        },
+        "department": {
+          "text": "Москва",
+          "visible": true,
+          "size": "19px",
+          "weight": "300",
+          "line": "22.8px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", sans-serif",
+          "color": "rgb(30, 30, 30)"
+        },
+        "market": {
+          "text": "Новостройки",
+          "visible": true,
+          "size": "19px",
+          "weight": "400",
+          "line": "22.8px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", sans-serif",
+          "color": "rgb(30, 30, 30)"
+        },
+        "search": {
+          "text": "",
+          "visible": true,
+          "size": "19px",
+          "weight": "300",
+          "line": "22.8px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", sans-serif",
+          "color": "rgb(30, 30, 30)"
+        },
+        "quick": {
+          "text": "Локация",
+          "visible": true,
+          "size": "19px",
+          "weight": "300",
+          "line": "22.8px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", sans-serif",
+          "color": "rgb(79, 77, 73)"
+        },
+        "name": {
+          "text": "Вавилова 64",
+          "visible": true,
+          "size": "22px",
+          "weight": "400",
+          "line": "24.64px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(30, 30, 30)"
+        },
+        "price": {
+          "text": "Цена по запросу",
+          "visible": true,
+          "size": "26px",
+          "weight": "500",
+          "line": "31.2px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(30, 30, 30)"
+        },
+        "address": {
+          "text": "Вавилова ул, 64",
+          "visible": true,
+          "size": "13px",
+          "weight": "300",
+          "line": "18px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(101, 100, 98)"
+        },
+        "call": {
+          "text": "Заказать звонок",
+          "visible": true,
+          "size": "17px",
+          "weight": "400",
+          "line": "18.7px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(30, 30, 30)"
+        },
+        "details": {
+          "text": "Подробнее",
+          "visible": true,
+          "size": "17px",
+          "weight": "400",
+          "line": "18.7px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(255, 255, 255)"
+        }
+      }
+    },
+    {
+      "width": 1280,
+      "tokens": {
+        "--home-heading": "38px",
+        "--home-action": "17px",
+        "--home-field": "18px",
+        "--home-listing": "22px",
+        "--home-price": "26px"
+      },
+      "roles": {
+        "title": {
+          "text": "КАТАЛОГ НЕДВИЖИМОСТИ",
+          "visible": true,
+          "size": "38px",
+          "weight": "300",
+          "line": "45.6px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(30, 30, 30)"
+        },
+        "deal": {
+          "text": "Покупка",
+          "visible": true,
+          "size": "19px",
+          "weight": "300",
+          "line": "20.9px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", sans-serif",
+          "color": "rgb(139, 29, 37)"
+        },
+        "department": {
+          "text": "Москва",
+          "visible": true,
+          "size": "19px",
+          "weight": "300",
+          "line": "22.8px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", sans-serif",
+          "color": "rgb(30, 30, 30)"
+        },
+        "market": {
+          "text": "Новостройки",
+          "visible": true,
+          "size": "19px",
+          "weight": "400",
+          "line": "22.8px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", sans-serif",
+          "color": "rgb(30, 30, 30)"
+        },
+        "search": {
+          "text": "",
+          "visible": true,
+          "size": "19px",
+          "weight": "300",
+          "line": "22.8px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", sans-serif",
+          "color": "rgb(30, 30, 30)"
+        },
+        "quick": {
+          "text": "Локация",
+          "visible": true,
+          "size": "19px",
+          "weight": "300",
+          "line": "22.8px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", sans-serif",
+          "color": "rgb(79, 77, 73)"
+        },
+        "name": {
+          "text": "Вавилова 64",
+          "visible": true,
+          "size": "22px",
+          "weight": "400",
+          "line": "24.64px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(30, 30, 30)"
+        },
+        "price": {
+          "text": "Цена по запросу",
+          "visible": true,
+          "size": "26px",
+          "weight": "500",
+          "line": "31.2px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(30, 30, 30)"
+        },
+        "address": {
+          "text": "Вавилова ул, 64",
+          "visible": true,
+          "size": "13px",
+          "weight": "300",
+          "line": "18px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(101, 100, 98)"
+        },
+        "call": {
+          "text": "Заказать звонок",
+          "visible": true,
+          "size": "17px",
+          "weight": "400",
+          "line": "18.7px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(30, 30, 30)"
+        },
+        "details": {
+          "text": "Подробнее",
+          "visible": true,
+          "size": "17px",
+          "weight": "400",
+          "line": "18.7px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(255, 255, 255)"
+        }
+      }
+    },
+    {
+      "width": 1440,
+      "tokens": {
+        "--home-heading": "38px",
+        "--home-action": "17px",
+        "--home-field": "18px",
+        "--home-listing": "22px",
+        "--home-price": "26px"
+      },
+      "roles": {
+        "title": {
+          "text": "КАТАЛОГ НЕДВИЖИМОСТИ",
+          "visible": true,
+          "size": "38px",
+          "weight": "300",
+          "line": "45.6px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(30, 30, 30)"
+        },
+        "deal": {
+          "text": "Покупка",
+          "visible": true,
+          "size": "19px",
+          "weight": "300",
+          "line": "20.9px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", sans-serif",
+          "color": "rgb(139, 29, 37)"
+        },
+        "department": {
+          "text": "Москва",
+          "visible": true,
+          "size": "19px",
+          "weight": "300",
+          "line": "22.8px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", sans-serif",
+          "color": "rgb(30, 30, 30)"
+        },
+        "market": {
+          "text": "Новостройки",
+          "visible": true,
+          "size": "19px",
+          "weight": "400",
+          "line": "22.8px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", sans-serif",
+          "color": "rgb(30, 30, 30)"
+        },
+        "search": {
+          "text": "",
+          "visible": true,
+          "size": "19px",
+          "weight": "300",
+          "line": "22.8px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", sans-serif",
+          "color": "rgb(30, 30, 30)"
+        },
+        "quick": {
+          "text": "Локация",
+          "visible": true,
+          "size": "19px",
+          "weight": "300",
+          "line": "22.8px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", sans-serif",
+          "color": "rgb(79, 77, 73)"
+        },
+        "name": {
+          "text": "Вавилова 64",
+          "visible": true,
+          "size": "22px",
+          "weight": "400",
+          "line": "24.64px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(30, 30, 30)"
+        },
+        "price": {
+          "text": "Цена по запросу",
+          "visible": true,
+          "size": "26px",
+          "weight": "500",
+          "line": "31.2px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(30, 30, 30)"
+        },
+        "address": {
+          "text": "Вавилова ул, 64",
+          "visible": true,
+          "size": "13px",
+          "weight": "300",
+          "line": "18px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(101, 100, 98)"
+        },
+        "call": {
+          "text": "Заказать звонок",
+          "visible": true,
+          "size": "17px",
+          "weight": "400",
+          "line": "18.7px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(30, 30, 30)"
+        },
+        "details": {
+          "text": "Подробнее",
+          "visible": true,
+          "size": "17px",
+          "weight": "400",
+          "line": "18.7px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(255, 255, 255)"
+        }
+      }
+    },
+    {
+      "width": 1441,
+      "tokens": {
+        "--home-heading": "44px",
+        "--home-action": "19px",
+        "--home-field": "20px",
+        "--home-listing": "22px",
+        "--home-price": "26px"
+      },
+      "roles": {
+        "title": {
+          "text": "КАТАЛОГ НЕДВИЖИМОСТИ",
+          "visible": true,
+          "size": "44px",
+          "weight": "300",
+          "line": "52.8px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(30, 30, 30)"
+        },
+        "deal": {
+          "text": "Покупка",
+          "visible": true,
+          "size": "19px",
+          "weight": "300",
+          "line": "20.9px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", sans-serif",
+          "color": "rgb(139, 29, 37)"
+        },
+        "department": {
+          "text": "Москва",
+          "visible": true,
+          "size": "19px",
+          "weight": "300",
+          "line": "22.8px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", sans-serif",
+          "color": "rgb(30, 30, 30)"
+        },
+        "market": {
+          "text": "Новостройки",
+          "visible": true,
+          "size": "19px",
+          "weight": "400",
+          "line": "22.8px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", sans-serif",
+          "color": "rgb(30, 30, 30)"
+        },
+        "search": {
+          "text": "",
+          "visible": true,
+          "size": "19px",
+          "weight": "300",
+          "line": "22.8px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", sans-serif",
+          "color": "rgb(30, 30, 30)"
+        },
+        "quick": {
+          "text": "Локация",
+          "visible": true,
+          "size": "19px",
+          "weight": "300",
+          "line": "22.8px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", sans-serif",
+          "color": "rgb(79, 77, 73)"
+        },
+        "name": {
+          "text": "Вавилова 64",
+          "visible": true,
+          "size": "22px",
+          "weight": "400",
+          "line": "24.64px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(30, 30, 30)"
+        },
+        "price": {
+          "text": "Цена по запросу",
+          "visible": true,
+          "size": "26px",
+          "weight": "500",
+          "line": "31.2px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(30, 30, 30)"
+        },
+        "address": {
+          "text": "Вавилова ул, 64",
+          "visible": true,
+          "size": "13px",
+          "weight": "300",
+          "line": "18px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(101, 100, 98)"
+        },
+        "call": {
+          "text": "Заказать звонок",
+          "visible": true,
+          "size": "19px",
+          "weight": "400",
+          "line": "20.9px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(30, 30, 30)"
+        },
+        "details": {
+          "text": "Подробнее",
+          "visible": true,
+          "size": "19px",
+          "weight": "400",
+          "line": "20.9px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(255, 255, 255)"
+        }
+      }
+    },
+    {
+      "width": 1920,
+      "tokens": {
+        "--home-heading": "44px",
+        "--home-action": "19px",
+        "--home-field": "20px",
+        "--home-listing": "22px",
+        "--home-price": "26px"
+      },
+      "roles": {
+        "title": {
+          "text": "КАТАЛОГ НЕДВИЖИМОСТИ",
+          "visible": true,
+          "size": "44px",
+          "weight": "300",
+          "line": "52.8px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(30, 30, 30)"
+        },
+        "deal": {
+          "text": "Покупка",
+          "visible": true,
+          "size": "19px",
+          "weight": "300",
+          "line": "20.9px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", sans-serif",
+          "color": "rgb(139, 29, 37)"
+        },
+        "department": {
+          "text": "Москва",
+          "visible": true,
+          "size": "19px",
+          "weight": "300",
+          "line": "22.8px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", sans-serif",
+          "color": "rgb(30, 30, 30)"
+        },
+        "market": {
+          "text": "Новостройки",
+          "visible": true,
+          "size": "19px",
+          "weight": "400",
+          "line": "22.8px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", sans-serif",
+          "color": "rgb(30, 30, 30)"
+        },
+        "search": {
+          "text": "",
+          "visible": true,
+          "size": "19px",
+          "weight": "300",
+          "line": "22.8px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", sans-serif",
+          "color": "rgb(30, 30, 30)"
+        },
+        "quick": {
+          "text": "Локация",
+          "visible": true,
+          "size": "19px",
+          "weight": "300",
+          "line": "22.8px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", sans-serif",
+          "color": "rgb(79, 77, 73)"
+        },
+        "name": {
+          "text": "Вавилова 64",
+          "visible": true,
+          "size": "22px",
+          "weight": "400",
+          "line": "24.64px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(30, 30, 30)"
+        },
+        "price": {
+          "text": "Цена по запросу",
+          "visible": true,
+          "size": "26px",
+          "weight": "500",
+          "line": "31.2px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(30, 30, 30)"
+        },
+        "address": {
+          "text": "Вавилова ул, 64",
+          "visible": true,
+          "size": "13px",
+          "weight": "300",
+          "line": "18px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(101, 100, 98)"
+        },
+        "call": {
+          "text": "Заказать звонок",
+          "visible": true,
+          "size": "19px",
+          "weight": "400",
+          "line": "20.9px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(30, 30, 30)"
+        },
+        "details": {
+          "text": "Подробнее",
+          "visible": true,
+          "size": "19px",
+          "weight": "400",
+          "line": "20.9px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(255, 255, 255)"
+        }
+      }
+    },
+    {
+      "width": 2560,
+      "tokens": {
+        "--home-heading": "44px",
+        "--home-action": "19px",
+        "--home-field": "20px",
+        "--home-listing": "22px",
+        "--home-price": "26px"
+      },
+      "roles": {
+        "title": {
+          "text": "КАТАЛОГ НЕДВИЖИМОСТИ",
+          "visible": true,
+          "size": "44px",
+          "weight": "300",
+          "line": "52.8px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(30, 30, 30)"
+        },
+        "deal": {
+          "text": "Покупка",
+          "visible": true,
+          "size": "19px",
+          "weight": "300",
+          "line": "20.9px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", sans-serif",
+          "color": "rgb(139, 29, 37)"
+        },
+        "department": {
+          "text": "Москва",
+          "visible": true,
+          "size": "19px",
+          "weight": "300",
+          "line": "22.8px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", sans-serif",
+          "color": "rgb(30, 30, 30)"
+        },
+        "market": {
+          "text": "Новостройки",
+          "visible": true,
+          "size": "19px",
+          "weight": "400",
+          "line": "22.8px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", sans-serif",
+          "color": "rgb(30, 30, 30)"
+        },
+        "search": {
+          "text": "",
+          "visible": true,
+          "size": "19px",
+          "weight": "300",
+          "line": "22.8px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", sans-serif",
+          "color": "rgb(30, 30, 30)"
+        },
+        "quick": {
+          "text": "Локация",
+          "visible": true,
+          "size": "19px",
+          "weight": "300",
+          "line": "22.8px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", sans-serif",
+          "color": "rgb(79, 77, 73)"
+        },
+        "name": {
+          "text": "Вавилова 64",
+          "visible": true,
+          "size": "22px",
+          "weight": "400",
+          "line": "24.64px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(30, 30, 30)"
+        },
+        "price": {
+          "text": "Цена по запросу",
+          "visible": true,
+          "size": "26px",
+          "weight": "500",
+          "line": "31.2px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(30, 30, 30)"
+        },
+        "address": {
+          "text": "Вавилова ул, 64",
+          "visible": true,
+          "size": "13px",
+          "weight": "300",
+          "line": "18px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(101, 100, 98)"
+        },
+        "call": {
+          "text": "Заказать звонок",
+          "visible": true,
+          "size": "19px",
+          "weight": "400",
+          "line": "20.9px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(30, 30, 30)"
+        },
+        "details": {
+          "text": "Подробнее",
+          "visible": true,
+          "size": "19px",
+          "weight": "400",
+          "line": "20.9px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(255, 255, 255)"
+        }
+      }
+    },
+    {
+      "width": 3840,
+      "tokens": {
+        "--home-heading": "44px",
+        "--home-action": "19px",
+        "--home-field": "20px",
+        "--home-listing": "22px",
+        "--home-price": "26px"
+      },
+      "roles": {
+        "title": {
+          "text": "КАТАЛОГ НЕДВИЖИМОСТИ",
+          "visible": true,
+          "size": "44px",
+          "weight": "300",
+          "line": "52.8px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(30, 30, 30)"
+        },
+        "deal": {
+          "text": "Покупка",
+          "visible": true,
+          "size": "19px",
+          "weight": "300",
+          "line": "20.9px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", sans-serif",
+          "color": "rgb(139, 29, 37)"
+        },
+        "department": {
+          "text": "Москва",
+          "visible": true,
+          "size": "19px",
+          "weight": "300",
+          "line": "22.8px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", sans-serif",
+          "color": "rgb(30, 30, 30)"
+        },
+        "market": {
+          "text": "Новостройки",
+          "visible": true,
+          "size": "19px",
+          "weight": "400",
+          "line": "22.8px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", sans-serif",
+          "color": "rgb(30, 30, 30)"
+        },
+        "search": {
+          "text": "",
+          "visible": true,
+          "size": "19px",
+          "weight": "300",
+          "line": "22.8px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", sans-serif",
+          "color": "rgb(30, 30, 30)"
+        },
+        "quick": {
+          "text": "Локация",
+          "visible": true,
+          "size": "19px",
+          "weight": "300",
+          "line": "22.8px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", sans-serif",
+          "color": "rgb(79, 77, 73)"
+        },
+        "name": {
+          "text": "Вавилова 64",
+          "visible": true,
+          "size": "22px",
+          "weight": "400",
+          "line": "24.64px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(30, 30, 30)"
+        },
+        "price": {
+          "text": "Цена по запросу",
+          "visible": true,
+          "size": "26px",
+          "weight": "500",
+          "line": "31.2px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(30, 30, 30)"
+        },
+        "address": {
+          "text": "Вавилова ул, 64",
+          "visible": true,
+          "size": "13px",
+          "weight": "300",
+          "line": "18px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(101, 100, 98)"
+        },
+        "call": {
+          "text": "Заказать звонок",
+          "visible": true,
+          "size": "19px",
+          "weight": "400",
+          "line": "20.9px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(30, 30, 30)"
+        },
+        "details": {
+          "text": "Подробнее",
+          "visible": true,
+          "size": "19px",
+          "weight": "400",
+          "line": "20.9px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(255, 255, 255)"
+        }
+      }
+    }
+  ],
+  "states": [
+    {
+      "width": 390,
+      "state": "full-filters",
+      "roles": {
+        "title": {
+          "text": "Фильтры",
+          "visible": true,
+          "size": "24px",
+          "weight": "400",
+          "line": "28.8px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(30, 30, 30)"
+        },
+        "group": {
+          "text": "Тип недвижимости",
+          "visible": true,
+          "size": "18px",
+          "weight": "400",
+          "line": "24.3px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(30, 30, 30)"
+        },
+        "chip": {
+          "text": "Квартира",
+          "visible": true,
+          "size": "15px",
+          "weight": "400",
+          "line": "17.25px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(30, 30, 30)"
+        },
+        "label": null,
+        "input": null,
+        "apply": {
+          "text": "Применить",
+          "visible": true,
+          "size": "18px",
+          "weight": "400",
+          "line": "19.8px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, sans-serif",
+          "color": "rgb(255, 255, 255)"
+        },
+        "reset": {
+          "text": "Сбросить",
+          "visible": true,
+          "size": "18px",
+          "weight": "400",
+          "line": "19.8px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", sans-serif",
+          "color": "rgb(79, 77, 73)"
+        },
+        "checkbox": {
+          "text": "Москва",
+          "visible": true,
+          "size": "15px",
+          "weight": "400",
+          "line": "15px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(30, 30, 30)"
+        }
+      }
+    },
+    {
+      "width": 390,
+      "state": "quick-options",
+      "roles": {
+        "option": {
+          "text": "Все локации",
+          "visible": true,
+          "size": "17px",
+          "weight": "300",
+          "line": "22.1px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", sans-serif",
+          "color": "rgb(139, 29, 37)"
+        }
+      }
+    },
+    {
+      "width": 390,
+      "state": "map",
+      "roles": {
+        "heading": {
+          "text": "Найдено объектов: 4",
+          "visible": false,
+          "size": "18px",
+          "weight": "500",
+          "line": "23.4px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(30, 30, 30)"
+        },
+        "search": {
+          "text": "",
+          "visible": true,
+          "size": "17px",
+          "weight": "300",
+          "line": "22px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(79, 77, 73)"
+        },
+        "department": {
+          "text": "МоскваЗагороднаяКоммерческаяКурортнаяЗарубежная",
+          "visible": false,
+          "size": "17px",
+          "weight": "300",
+          "line": "22px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(79, 77, 73)"
+        },
+        "deal": {
+          "text": "Покупка",
+          "visible": false,
+          "size": "17px",
+          "weight": "300",
+          "line": "22px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(139, 29, 37)"
+        },
+        "card": {
+          "text": "Вавилова 64",
+          "visible": false,
+          "size": "18px",
+          "weight": "400",
+          "line": "24.3px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(30, 30, 30)"
+        },
+        "price": {
+          "text": "Цена по запросу",
+          "visible": false,
+          "size": "16px",
+          "weight": "400",
+          "line": "22.4px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(30, 30, 30)"
+        },
+        "address": {
+          "text": "Вавилова ул, 64",
+          "visible": false,
+          "size": "13px",
+          "weight": "400",
+          "line": "18.2px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(101, 100, 98)"
+        },
+        "notice": {
+          "text": "Предпросмотр: карта статична, панель объектов работает.",
+          "visible": true,
+          "size": "12px",
+          "weight": "400",
+          "line": "16.8px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(30, 30, 30)"
+        },
+        "attribution": {
+          "text": "© OpenStreetMap contributors",
+          "visible": true,
+          "size": "12px",
+          "weight": "400",
+          "line": "12px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(30, 30, 30)"
+        }
+      }
+    },
+    {
+      "width": 390,
+      "state": "quiz",
+      "roles": {
+        "title": {
+          "text": "Чем мы можем вам помочь?",
+          "visible": true,
+          "size": "31px",
+          "weight": "300",
+          "line": "32.55px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", system-ui, sans-serif",
+          "color": "rgb(30, 30, 30)"
+        },
+        "question": null,
+        "option": {
+          "text": "Купить",
+          "visible": true,
+          "size": "16px",
+          "weight": "400",
+          "line": "19.2px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", sans-serif",
+          "color": "rgb(30, 30, 30)"
+        },
+        "next": {
+          "text": "Далее →",
+          "visible": true,
+          "size": "18px",
+          "weight": "400",
+          "line": "19.8px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", sans-serif",
+          "color": "rgb(101, 100, 98)"
+        },
+        "skip": {
+          "text": "Сразу задать вопрос эксперту",
+          "visible": true,
+          "size": "14px",
+          "weight": "400",
+          "line": "19.6px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", sans-serif",
+          "color": "rgb(101, 100, 98)"
+        }
+      }
+    },
+    {
+      "width": 1440,
+      "state": "full-filters",
+      "roles": {
+        "title": {
+          "text": "Фильтры",
+          "visible": true,
+          "size": "24px",
+          "weight": "400",
+          "line": "28.8px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(30, 30, 30)"
+        },
+        "group": {
+          "text": "Тип недвижимости",
+          "visible": true,
+          "size": "18px",
+          "weight": "400",
+          "line": "24.3px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(30, 30, 30)"
+        },
+        "chip": {
+          "text": "Квартира",
+          "visible": true,
+          "size": "15px",
+          "weight": "400",
+          "line": "17.25px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(30, 30, 30)"
+        },
+        "label": null,
+        "input": null,
+        "apply": {
+          "text": "Применить",
+          "visible": true,
+          "size": "17px",
+          "weight": "400",
+          "line": "18.7px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, sans-serif",
+          "color": "rgb(255, 255, 255)"
+        },
+        "reset": {
+          "text": "Сбросить",
+          "visible": true,
+          "size": "17px",
+          "weight": "400",
+          "line": "18.7px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", sans-serif",
+          "color": "rgb(79, 77, 73)"
+        },
+        "checkbox": {
+          "text": "Москва",
+          "visible": true,
+          "size": "15px",
+          "weight": "400",
+          "line": "15px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(30, 30, 30)"
+        }
+      }
+    },
+    {
+      "width": 1440,
+      "state": "quick-options",
+      "roles": {
+        "option": {
+          "text": "Все локации",
+          "visible": true,
+          "size": "17px",
+          "weight": "300",
+          "line": "22.1px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", sans-serif",
+          "color": "rgb(139, 29, 37)"
+        }
+      }
+    },
+    {
+      "width": 1440,
+      "state": "map",
+      "roles": {
+        "heading": {
+          "text": "Найдено объектов: 4",
+          "visible": true,
+          "size": "18px",
+          "weight": "500",
+          "line": "23.4px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(30, 30, 30)"
+        },
+        "search": {
+          "text": "",
+          "visible": true,
+          "size": "17px",
+          "weight": "300",
+          "line": "22px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(79, 77, 73)"
+        },
+        "department": {
+          "text": "Москва\nЗагородная\nКоммерческая\nКурортная\nЗарубежная",
+          "visible": true,
+          "size": "17px",
+          "weight": "300",
+          "line": "22px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(79, 77, 73)"
+        },
+        "deal": {
+          "text": "Покупка",
+          "visible": true,
+          "size": "17px",
+          "weight": "300",
+          "line": "22px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(139, 29, 37)"
+        },
+        "card": {
+          "text": "Вавилова 64",
+          "visible": true,
+          "size": "18px",
+          "weight": "400",
+          "line": "24.3px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(30, 30, 30)"
+        },
+        "price": {
+          "text": "Цена по запросу",
+          "visible": true,
+          "size": "16px",
+          "weight": "400",
+          "line": "22.4px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(30, 30, 30)"
+        },
+        "address": {
+          "text": "Вавилова ул, 64",
+          "visible": true,
+          "size": "13px",
+          "weight": "400",
+          "line": "18.2px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(101, 100, 98)"
+        },
+        "notice": {
+          "text": "Предпросмотр: карта статична, панель объектов работает.",
+          "visible": true,
+          "size": "13px",
+          "weight": "400",
+          "line": "18.2px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(30, 30, 30)"
+        },
+        "attribution": {
+          "text": "© OpenStreetMap contributors",
+          "visible": true,
+          "size": "12px",
+          "weight": "400",
+          "line": "12px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(30, 30, 30)"
+        }
+      }
+    },
+    {
+      "width": 1440,
+      "state": "quiz",
+      "roles": {
+        "title": {
+          "text": "Чем мы можем вам помочь?",
+          "visible": true,
+          "size": "34px",
+          "weight": "300",
+          "line": "37.4px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", system-ui, sans-serif",
+          "color": "rgb(30, 30, 30)"
+        },
+        "question": null,
+        "option": {
+          "text": "Купить",
+          "visible": true,
+          "size": "17px",
+          "weight": "400",
+          "line": "20.4px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", sans-serif",
+          "color": "rgb(30, 30, 30)"
+        },
+        "next": {
+          "text": "Далее →",
+          "visible": true,
+          "size": "17px",
+          "weight": "400",
+          "line": "18.7px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", sans-serif",
+          "color": "rgb(101, 100, 98)"
+        },
+        "skip": {
+          "text": "Сразу задать вопрос эксперту",
+          "visible": true,
+          "size": "14px",
+          "weight": "400",
+          "line": "19.6px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", sans-serif",
+          "color": "rgb(101, 100, 98)"
+        }
+      }
+    },
+    {
+      "width": 1920,
+      "state": "full-filters",
+      "roles": {
+        "title": {
+          "text": "Фильтры",
+          "visible": true,
+          "size": "24px",
+          "weight": "400",
+          "line": "28.8px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(30, 30, 30)"
+        },
+        "group": {
+          "text": "Тип недвижимости",
+          "visible": true,
+          "size": "18px",
+          "weight": "400",
+          "line": "24.3px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(30, 30, 30)"
+        },
+        "chip": {
+          "text": "Квартира",
+          "visible": true,
+          "size": "15px",
+          "weight": "400",
+          "line": "17.25px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(30, 30, 30)"
+        },
+        "label": null,
+        "input": null,
+        "apply": {
+          "text": "Применить",
+          "visible": true,
+          "size": "19px",
+          "weight": "400",
+          "line": "20.9px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, sans-serif",
+          "color": "rgb(255, 255, 255)"
+        },
+        "reset": {
+          "text": "Сбросить",
+          "visible": true,
+          "size": "19px",
+          "weight": "400",
+          "line": "20.9px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", sans-serif",
+          "color": "rgb(79, 77, 73)"
+        },
+        "checkbox": {
+          "text": "Москва",
+          "visible": true,
+          "size": "15px",
+          "weight": "400",
+          "line": "15px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(30, 30, 30)"
+        }
+      }
+    },
+    {
+      "width": 1920,
+      "state": "quick-options",
+      "roles": {
+        "option": {
+          "text": "Все локации",
+          "visible": true,
+          "size": "17px",
+          "weight": "300",
+          "line": "22.1px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", sans-serif",
+          "color": "rgb(139, 29, 37)"
+        }
+      }
+    },
+    {
+      "width": 1920,
+      "state": "map",
+      "roles": {
+        "heading": {
+          "text": "Найдено объектов: 4",
+          "visible": true,
+          "size": "18px",
+          "weight": "500",
+          "line": "23.4px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(30, 30, 30)"
+        },
+        "search": {
+          "text": "",
+          "visible": true,
+          "size": "19px",
+          "weight": "300",
+          "line": "22px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(79, 77, 73)"
+        },
+        "department": {
+          "text": "Москва\nЗагородная\nКоммерческая\nКурортная\nЗарубежная",
+          "visible": true,
+          "size": "19px",
+          "weight": "300",
+          "line": "22px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(79, 77, 73)"
+        },
+        "deal": {
+          "text": "Покупка",
+          "visible": true,
+          "size": "19px",
+          "weight": "300",
+          "line": "22px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(139, 29, 37)"
+        },
+        "card": {
+          "text": "Вавилова 64",
+          "visible": true,
+          "size": "18px",
+          "weight": "400",
+          "line": "24.3px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(30, 30, 30)"
+        },
+        "price": {
+          "text": "Цена по запросу",
+          "visible": true,
+          "size": "16px",
+          "weight": "400",
+          "line": "22.4px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(30, 30, 30)"
+        },
+        "address": {
+          "text": "Вавилова ул, 64",
+          "visible": true,
+          "size": "13px",
+          "weight": "400",
+          "line": "18.2px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(101, 100, 98)"
+        },
+        "notice": {
+          "text": "Предпросмотр: карта статична, панель объектов работает.",
+          "visible": true,
+          "size": "13px",
+          "weight": "400",
+          "line": "18.2px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(30, 30, 30)"
+        },
+        "attribution": {
+          "text": "© OpenStreetMap contributors",
+          "visible": true,
+          "size": "12px",
+          "weight": "400",
+          "line": "12px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(30, 30, 30)"
+        }
+      }
+    },
+    {
+      "width": 1920,
+      "state": "quiz",
+      "roles": {
+        "title": {
+          "text": "Чем мы можем вам помочь?",
+          "visible": true,
+          "size": "34px",
+          "weight": "300",
+          "line": "37.4px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", system-ui, sans-serif",
+          "color": "rgb(30, 30, 30)"
+        },
+        "question": null,
+        "option": {
+          "text": "Купить",
+          "visible": true,
+          "size": "17px",
+          "weight": "400",
+          "line": "20.4px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", sans-serif",
+          "color": "rgb(30, 30, 30)"
+        },
+        "next": {
+          "text": "Далее →",
+          "visible": true,
+          "size": "19px",
+          "weight": "400",
+          "line": "20.9px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", sans-serif",
+          "color": "rgb(101, 100, 98)"
+        },
+        "skip": {
+          "text": "Сразу задать вопрос эксперту",
+          "visible": true,
+          "size": "14px",
+          "weight": "400",
+          "line": "19.6px",
+          "tracking": "normal",
+          "family": "\"Tilda Sans\", sans-serif",
+          "color": "rgb(101, 100, 98)"
+        }
+      }
+    }
+  ]
+}

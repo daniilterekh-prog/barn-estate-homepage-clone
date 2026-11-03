@@ -1,6 +1,6 @@
 /* Catalogue composition using the approved homepage search, choice and spacing roles. */
 html body.catalog-listing-page .catalog-mode-toolbar {
- --catalog-filter-font-size:19px;--catalog-filter-ink:#4f4d49;--catalog-filter-muted:#656462;
+ --catalog-filter-font-size:var(--home-field);--catalog-filter-ink:#4f4d49;--catalog-filter-muted:#656462;
  display:flex;flex-direction:column;align-items:stretch;gap:16px;
  margin:0 0 20px;padding:0;border:0;border-radius:0;background:#fff;
 }
@@ -59,7 +59,7 @@ html body.catalog-listing-page .catalog-result-summary .resort-sort-trigger{box-
 html body.catalog-listing-page .resort-quick-dropdown{padding:8px;border:1px solid #8b8986;border-radius:1px;background:#fff;color:#4f4d49;box-shadow:0 8px 24px #1e1e1e0a}
 html body.catalog-listing-page .resort-quick-dropdown .catalog-quick-filters__dropdown-header{padding:8px 10px 12px;margin-bottom:4px;border-bottom:1px solid #e4e4e4;font:400 15px/1.3 'Tilda Sans',sans-serif}
 html body.catalog-listing-page .resort-quick-dropdown .catalog-quick-filters__dropdown-close{width:28px;height:28px;color:#4f4d49}
-html body.catalog-listing-page .resort-quick-dropdown [role=option]{padding:12px;min-height:44px;border:1px solid transparent;border-radius:1px;font:300 17px/1.3 'Tilda Sans',sans-serif}
+html body.catalog-listing-page .resort-quick-dropdown [role=option]{padding:12px;min-height:44px;border:1px solid transparent;border-radius:1px;font:300 18px/1.3 'Tilda Sans',sans-serif}
 html body.catalog-listing-page .resort-quick-dropdown [role=option]:hover{background:#f7f7f7;color:#1e1e1e}
 html body.catalog-listing-page .resort-quick-dropdown [role=option].is-selected{background:#f9f3f3;color:#8b1d25;border-color:#8b1d25}
 @media(min-width:1441px){html body.catalog-listing-page .catalog-toolbar__secondary .catalog-mode-detailed-filters[class][class]{font-size:19px}}
@@ -73,15 +73,15 @@ html body.catalog-listing-page .resort-quick-dropdown [role=option].is-selected{
  html body.catalog-listing-page .catalog-mode-toolbar>.catalog-toolbar__secondary>.catalog-mode-detailed-filters[class][class]{grid-column:4;grid-row:2;padding-inline:10px;font-size:16px}
 }
 @media(max-width:767px){
- html body.catalog-listing-page .catalog-mode-toolbar{--catalog-filter-font-size:17px;display:grid;grid-template-columns:minmax(0,1fr) 58px;gap:12px 0;padding:0}
+ html body.catalog-listing-page .catalog-mode-toolbar{--catalog-filter-font-size:var(--home-field);display:grid;grid-template-columns:minmax(0,1fr) 58px;gap:12px 0;padding:0}
  .catalog-toolbar__primary,.catalog-toolbar__secondary{display:contents}
  html body.catalog-listing-page .catalog-mode-toolbar>.catalog-toolbar__primary>:is(.catalog-direction,.catalog-mode-switch)[class][class]{grid-column:1/-1;height:58px}
- html body.catalog-listing-page .catalog-direction>.resort-select-trigger{height:56px;padding-left:16px;font-size:18px}
+ html body.catalog-listing-page .catalog-direction>.resort-select-trigger{height:56px;padding-left:16px}
  html body.catalog-listing-page .catalog-direction>svg{right:16px}
- html body.catalog-listing-page .catalog-toolbar__primary .catalog-mode-switch__button{height:48px;font-size:17px}
+ html body.catalog-listing-page .catalog-toolbar__primary .catalog-mode-switch__button{height:48px}
  html body.catalog-listing-page .catalog-mode-toolbar>.catalog-toolbar__primary>.catalog-search-row[class][class]{grid-column:1;grid-row:3;height:58px}
  html body.catalog-listing-page .catalog-text-search{height:58px;padding-inline:14px;border-right:0}
- html body.catalog-listing-page .catalog-text-search input{height:56px;font-size:17px}
+ html body.catalog-listing-page .catalog-text-search input{height:56px}
  html body.catalog-listing-page .catalog-text-search svg{display:none}
  html body.catalog-listing-page .catalog-toolbar__secondary .catalog-mode-filters{display:none}
  html body.catalog-listing-page .catalog-mode-toolbar>.catalog-toolbar__secondary>.catalog-mode-detailed-filters[class][class]{grid-column:2;grid-row:3;width:58px;height:58px;min-height:58px;padding:0;border-color:#8b8986;background:#fff;color:#1e1e1e}
@@ -103,7 +103,7 @@ html body.catalog-listing-page .catalog-mode-filters>.catalog-quick-filters__ite
 html body.catalog-listing-page .catalog-mode-filters>.catalog-quick-filters__item:nth-child(3){border-left:1px solid #e4e4e4}
 html body.catalog-listing-page .catalog-collections-row{min-height:0;padding:0;margin:0 0 20px;border:0;gap:12px;align-items:center;flex-wrap:wrap}
 .catalog-active-filters{display:flex;flex:1;flex-wrap:wrap;gap:8px;min-width:0;max-width:100%}
-.catalog-active-filter{display:inline-flex;align-items:center;gap:12px;max-width:100%;min-height:36px;padding:6px 12px;border:1px solid transparent;border-radius:1px;background:#f9f3f3;color:#8b1d25;font:400 14px/1.2 'Tilda Sans',sans-serif;cursor:pointer}
+.catalog-active-filter{display:inline-flex;align-items:center;gap:12px;max-width:100%;min-height:36px;padding:6px 12px;border:1px solid transparent;border-radius:1px;background:#f9f3f3;color:#8b1d25;font:400 16px/1.2 'Tilda Sans',sans-serif;cursor:pointer}
 .catalog-active-filter span{min-width:0;max-width:270px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .catalog-active-filter svg{flex:none}
 .catalog-active-filter:hover{border-color:#8b1d25}
@@ -139,7 +139,7 @@ html body.catalog-listing-page .catalog-market[hidden],html body.catalog-listing
 }
 @media(min-width:768px) and (max-width:1023px){
  html body.catalog-listing-page .catalog-mode-toolbar>.catalog-toolbar__primary>.catalog-market[class][class]{grid-column:1;grid-row:2}
- html body.catalog-listing-page .catalog-market>.resort-select-trigger{padding-inline:12px 28px;font-size:17px}
+ html body.catalog-listing-page .catalog-market>.resort-select-trigger{padding-inline:12px 28px}
  html body.catalog-listing-page .catalog-market>svg{right:10px}
  html body.catalog-listing-page[data-market-available=true] .catalog-mode-toolbar>.catalog-toolbar__primary>.catalog-search-row[class][class]{grid-column:2/4}
 }
