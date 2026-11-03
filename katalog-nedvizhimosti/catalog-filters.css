@@ -132,7 +132,7 @@ html body.catalog-listing-page .resort-filters .ui-checkbox--chip:has(input:chec
 /* Independent deal and market controls; all contextual quick fields stay visible. */
 html body.catalog-listing-page .catalog-market[hidden],html body.catalog-listing-page .catalog-result-summary [data-show-favorites]{display:none!important}
 @media(min-width:1024px){
- html body.catalog-listing-page[data-market-available=true] .catalog-toolbar__primary{grid-template-columns:minmax(160px,1fr) minmax(200px,1.15fr) minmax(180px,1fr) minmax(210px,1.65fr)}
+ html body.catalog-listing-page[data-market-available=true] .catalog-toolbar__primary{grid-template-columns:minmax(200px,1.15fr) minmax(160px,1fr) minmax(180px,1fr) minmax(210px,1.65fr)}
  html body.catalog-listing-page .catalog-toolbar__secondary .catalog-quick-filters__button{padding-inline:14px}
 }
 @media(min-width:768px) and (max-width:1023px){
@@ -143,3 +143,9 @@ html body.catalog-listing-page .catalog-market[hidden],html body.catalog-listing
  html body.catalog-listing-page .catalog-mode-toolbar>.catalog-toolbar__primary>.catalog-market[class][class]{grid-column:1/-1;height:58px}
  html body.catalog-listing-page .catalog-mode-toolbar>.catalog-toolbar__secondary>:is(.catalog-mode-filters,.catalog-search-row,.catalog-mode-detailed-filters)[class][class]{grid-row:auto}
 }
+
+/* Text and chevrons share the button's vertical center, including wrapped labels. */
+html body.catalog-listing-page .catalog-toolbar__secondary .catalog-mode-filters .catalog-quick-filters__content{height:auto;top:0}
+html body.catalog-listing-page .catalog-mode-toolbar .catalog-mode-filters .catalog-quick-filters__label[class]{height:auto;line-height:1.2}
+html body.catalog-listing-page .catalog-toolbar__secondary .catalog-mode-filters .catalog-quick-filters__caption{height:auto;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2}
+html body.catalog-listing-page .catalog-toolbar__secondary .catalog-mode-filters .catalog-quick-filters__chevron[class]{position:static;top:auto;right:auto;margin:0;transform:rotate(45deg);align-self:center}

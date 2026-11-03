@@ -13,7 +13,7 @@ const proof=process.env.BARNES_PROOF_DIR||'katalog-nedvizhimosti/verification';f
   assert.equal(await page.locator('.catalog-collections-row .barnes-brand-filters').count(),1);
   assert.equal(await page.locator('.catalog-collections-row').isVisible(),false);
   assert.equal(await page.locator('.catalog-result-summary .resort-sort-trigger').count(),1);
-  assert.equal(await page.locator('.catalog-toolbar__primary').evaluate(e=>e.firstElementChild.matches('.catalog-direction')),true);
+  assert.equal(await page.locator('.catalog-toolbar__primary').evaluate(e=>e.firstElementChild.matches('.catalog-mode-switch')),true);
   for(const width of [320,390,540,541,767,768,1024,1280,1440,1920,2560]){
    await page.setViewportSize({width,height:1000});
    for(const direction of ['city','country','commercial','resort','international']){

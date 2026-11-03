@@ -18,7 +18,7 @@ const proof=process.env.BARNES_PROOF_DIR||'katalog-nedvizhimosti/verification';f
  };
 
  await go();assert.equal(await page.locator('h1').count(),1);assert.equal(await page.locator('#catalog-direction-select option').count(),5);
- assert.equal(await page.evaluate(()=>document.querySelector('.catalog-toolbar__primary').firstElementChild.matches('.catalog-direction')),true);await count(4);passed('direction is the first filter in layout and DOM; default city has four real projects');
+ assert.equal(await page.evaluate(()=>document.querySelector('.catalog-toolbar__primary').firstElementChild.matches('.catalog-mode-switch')),true);await count(4);passed('deal is the first filter in layout and DOM; default city has four real projects');
  const expected={city:['Локация','Тип','Стоимость','Спальни'],country:['Шоссе','Тип','Стоимость','Площадь дома'],commercial:['Локация','Назначение','Стоимость / месяц','Площадь'],resort:['Регион','Тип','Стоимость','Спальни'],international:['Страна','Тип','Стоимость','Спальни']};
  for(const [key,captions] of Object.entries(expected)){
   await direction(key);assert.deepEqual(await page.locator('.catalog-quick-filters__caption').allTextContents(),captions);assert.equal(await page.locator('#catalog-direction-select').inputValue(),key);assert.equal(await page.locator('.apartment-card').evaluateAll((es,key)=>es.every(e=>e.dataset.direction===key),key),true);
