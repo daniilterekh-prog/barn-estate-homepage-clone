@@ -56,15 +56,15 @@ body.barnes-home-typography.barnes-media-kit .media-hero__button .ui-icon {flex-
 @media(min-width:1281px) {
  body.barnes-media-kit .site-header:not(.site-header--scrolled):not(.site-header--menu-open) .site-header__top {margin-bottom:26px!important;}
  body.barnes-media-kit .site-header:not(.site-header--scrolled):not(.site-header--menu-open) .media-reference-nav {display:flex;justify-content:center;}
- .media-reference-nav ul {display:flex;align-items:center;justify-content:center;gap:clamp(16px,calc(5vw - 48px),36px);list-style:none;padding:0;margin:0;}
- .media-reference-nav a {display:block;font-family:"Tilda Sans",sans-serif;font-size:16px;line-height:1;font-weight:300;text-transform:uppercase;color:#fff;white-space:nowrap;text-decoration:none;}
+ .media-reference-nav > ul {display:flex;align-items:center;justify-content:center;gap:clamp(16px,calc(5vw - 48px),36px);list-style:none;padding:0;margin:0;}
+ .media-reference-nav > ul > li > a {display:block;font-family:"Tilda Sans",sans-serif;font-size:16px;line-height:1;font-weight:300;text-transform:uppercase;color:#fff;white-space:nowrap;text-decoration:none;}
 }
 @media(min-width:1441px) {
  body.barnes-media-kit {--media-hero-height:1040px;--media-hero-gap:48px;--media-hero-bottom:72px;}
  body.barnes-home-typography.barnes-media-kit .media-hero__text {margin-top:20px!important;}
  body.barnes-home-typography.barnes-media-kit .media-hero__button {font-size:19px!important;padding-inline:47px!important;}
  body.barnes-home-typography.barnes-media-kit .media-hero__breadcrumbs .breadcrumbs__separator {font-size:35px;}
- .media-reference-nav a {font-size:18px;}
+ .media-reference-nav > ul > li > a {font-size:18px;}
 }
 @media(min-width:1921px) {
  body.barnes-media-kit {--media-hero-gutter:0px;}
@@ -91,3 +91,22 @@ body.barnes-home-typography.barnes-media-kit .media-hero__button .ui-icon {flex-
  body.barnes-home-typography.barnes-media-kit .media-hero__breadcrumbs .breadcrumbs__link {font-size:12px!important;line-height:16px!important;}
  body.barnes-home-typography.barnes-media-kit .media-hero__breadcrumbs .breadcrumbs__separator {font-size:16px;}
 }
+/* Homepage subnavigation: transparent surface, light top rule and regular case. */
+.media-reference-item {position:relative;}
+.media-reference-nav .media-reference-subnav {
+ position:absolute;top:100%;left:0;z-index:10;
+ display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-start;
+ gap:12px;min-width:140px;width:max-content;list-style:none;
+ margin:15px 0 0;padding:15px 0 0;border-top:1px solid rgba(255,255,255,.3);
+ background:transparent;
+}
+.media-reference-nav .media-reference-subnav[hidden] {display:none!important;}
+/* Keep the pointer path between the top link and its floating list connected. */
+.media-reference-subnav::before {content:"";position:absolute;top:-16px;left:0;right:0;height:16px;}
+.media-reference-nav .media-reference-subnav a {
+ display:inline-block;font-family:"Tilda Sans",sans-serif;font-size:16px;font-weight:300;line-height:1;
+ color:rgba(255,255,255,.8);text-transform:none;text-decoration:none;white-space:nowrap;
+ transition:color .2s,font-weight .2s;
+}
+.media-reference-nav .media-reference-subnav a:is(:hover,:focus-visible) {color:#fff;font-weight:400;}
+@media(min-width:1441px) {.media-reference-nav .media-reference-subnav a {font-size:18px;}}
