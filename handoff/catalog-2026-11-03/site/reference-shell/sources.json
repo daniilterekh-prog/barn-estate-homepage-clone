@@ -1,0 +1,86 @@
+{
+  "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+  "commit": "f4781b3f56b5df951bcb6863ab63df894addec07",
+  "sources": [
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/header/fragment.html",
+      "sha256": "284e1687065401ef3de44aa5a42623732d9faafa809263485ab09f47d518ec55"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/js/menu-template.js",
+      "sha256": "1c90e389f1a1a35a3e954d2c88df2b3b2afa699c12c40ca82ee738a5d0f50081"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/js/footer-template.js",
+      "sha256": "6b0a7ca2dccc06846542ee9cb23fe9a9e2feb365a745b85f7dcd1ca9e5aac9f5"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/css/owner-header.css",
+      "sha256": "783ce11685c9c9f84d1b0db2b7c8240a28f5811533a2209703af2c2753bccb9c"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/css/owner-footer.css",
+      "sha256": "b0f3b577d94fceea6c53627056d8456535bb2120d3a8b482568dfbb0fa9d7020"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/css/document-desktop.css",
+      "sha256": "0be2d8cc1f4d7aca479ca5586ca195d46e8e0718c911f32821174c2c9997d5be"
+    }
+  ],
+  "adaptations": "relative asset rebasing; staging links replaced with barn-estate.ru; menu CSS extracted preserving selector and media rules",
+  "liveHeaderUpdate": {
+    "url": "https://barn-estate.ru/gorodskaya-nedvizhimost/",
+    "capturedAt": "2026-10-20",
+    "snapshot": "header.html",
+    "scopedAttributeMapping": "data-v-63dbb988 -> data-v-7912d681 retains existing CSS hooks",
+    "logo": "barnes-assets/brand/barn-estate/logo.svg@e1da541",
+    "adaptation": "Dark icons and logo on white content-page background"
+  },
+  "currentLiveMenu": {
+    "date": "2026-10-20",
+    "header": "https://barn-estate.ru/gorodskaya-nedvizhimost/",
+    "globalNavigation": "https://barn-estate.ru/prodazha_sobstvennikam/",
+    "css": "https://barn-estate.ru/_nuxt/style.D01Ij5Qx.css",
+    "cssSHA256": "0ad1d0f40bfbf6b494ed731fb391f8c948775a09496f0ca1819b441c07de8544",
+    "scopes": [
+      "data-v-63dbb988",
+      "data-v-c7f48e7e"
+    ],
+    "responsive": "Global row above 1280px; full burger at all sizes",
+    "adaptations": [
+      "Dark header ink on white catalog background",
+      "Local versions of the same menu images",
+      "Accessible focus trap, Escape and focus restoration",
+      "Panel top anchored to the actual top-row bottom",
+      "Source base-container padding restored above 1920px for header/menu"
+    ]
+  },
+  "headerDropdownUpdate": {
+    "date": "2026-11-02",
+    "source": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/",
+    "package": "Approved homepage header v1.0.0",
+    "referenceSnapshot": "../verification/dropdowns/homepage-reference.json",
+    "sections": 9,
+    "links": 56,
+    "runtime": "../header-navigation.js",
+    "adaptations": [
+      "City parent label remains Городская",
+      "White dropdown surface for the catalogue content background",
+      "Viewport-constrained panel outside the horizontal scroller",
+      "Hover/focus, arrow keys, Escape, outside click, touch and resize handling",
+      "Removed the extra bottom border below the navigation row"
+    ]
+  },
+  "mobileHeaderUpdate": {
+    "date": "2026-11-02",
+    "source": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/",
+    "measurements": "../verification/mobile-header-filters/home-reference.json",
+    "scope": "Up to 767px: single header row; up to540px logo36/header77, 541–767 logo48/header111",
+    "adaptations": [
+      "Dark ink on the white catalogue page",
+      "Same 48px contact threshold and contacts available in the full menu",
+      "Full menu offset follows top-row resize; contact popover above menu with keyboard/focus support",
+      "Desktop section navigation preserved"
+    ]
+  }
+}

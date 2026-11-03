@@ -1,0 +1,46 @@
+/* Entry control uses the catalogue field typography; fullscreen geometry comes from resort. */
+html body.catalog-listing-page .catalog-map-trigger{display:inline-flex;align-items:center;justify-content:center;gap:10px;flex:none;min-height:44px;padding:0 16px;border:1px solid #8b1d25;border-radius:1px;background:#fff;color:#8b1d25;font:300 var(--home-field)/1.1 'Tilda Sans',sans-serif;white-space:nowrap;cursor:pointer}
+html body.catalog-listing-page .catalog-map-trigger svg{width:20px;height:20px;flex:none}
+html body.catalog-listing-page .catalog-map-trigger:hover{background:#8b1d25;color:#fff}
+html body.catalog-listing-page .catalog-map-trigger:focus-visible{outline:2px solid #8b1d25;outline-offset:3px}
+html body.catalog-listing-page .catalog-map-trigger:disabled{opacity:.45;cursor:wait}
+.catalog-map-browser .catalog-map-context{grid-column:1/-1}
+.catalog-map-browser .catalog-map-favorites{grid-column:1/-1;margin:0;padding-inline:8px;font-size:14px;color:#8b1d25}
+.catalog-map-browser .map-browser__card address{margin:8px 0;color:#656462;font-size:13px;line-height:1.4;font-style:normal}
+.catalog-map-browser .map-browser__market{gap:24px}
+.catalog-map-browser .map-browser__list[aria-busy=true]{opacity:.5}
+/* Only the mobile control strip has its own grid; desktop keeps the original boxes. */
+.catalog-results-toolbar{display:contents}
+@media(max-width:767px){
+ html body.catalog-listing-page .catalog-results-toolbar{display:grid;grid-template-columns:max-content minmax(0,1fr);grid-template-areas:"reset sort" "map count";gap:8px 12px;align-items:center;margin-bottom:20px}
+ html body.catalog-listing-page .catalog-results-toolbar:has(.catalog-active-filters:not(:empty)){grid-template-areas:"chips chips" "reset sort" "map count"}
+ html body.catalog-listing-page .catalog-results-toolbar>.catalog-collections-row,
+ html body.catalog-listing-page .catalog-results-toolbar>.catalog-result-summary{display:contents}
+ html body.catalog-listing-page .catalog-results-toolbar .catalog-result-actions{display:contents}
+ html body.catalog-listing-page .catalog-results-toolbar .catalog-active-filters{grid-area:chips;width:100%;margin:0}
+ html body.catalog-listing-page .catalog-results-toolbar .catalog-reset-all{grid-area:reset;justify-self:start;margin:0;min-height:44px;white-space:nowrap}
+ html body.catalog-listing-page .catalog-result-summary .catalog-grid__sort{grid-area:sort;justify-self:end;width:100%;max-width:100%}
+ html body.catalog-listing-page .catalog-result-summary .resort-sort-trigger{height:44px;min-height:44px;line-height:1.2;white-space:normal;text-overflow:clip}
+ html body.catalog-listing-page .catalog-result-summary .catalog-map-trigger{grid-area:map;grid-column:1/-1;justify-self:start;align-self:center;padding-inline:12px}
+ html body.catalog-listing-page .catalog-result-summary #results-count{grid-area:count;justify-self:end;margin:0;text-align:right}
+ html body.catalog-listing-page .catalog-result-summary [data-show-favorites]{display:none}
+}
+@media(max-width:359px){
+ html body.catalog-listing-page .catalog-results-toolbar{column-gap:6px}
+ html body.catalog-listing-page .catalog-result-summary .resort-sort-trigger{padding-right:16px}
+}
+/* Short screens scroll the entire drawer rather than squeezing the project list to zero. */
+@media(max-height:700px){
+ .catalog-map-browser .map-browser__panel{overflow-y:auto;overscroll-behavior:contain}
+ .catalog-map-browser .map-browser__panel>:is(.map-browser__heading,.map-browser__search-row,.map-browser__filters,.map-browser__handle){flex-shrink:0}
+ .catalog-map-browser .map-browser__list{flex:none;overflow:visible}
+}
+@media(max-width:540px){
+ .catalog-map-browser .map-browser__attribution{top:72px;bottom:auto;left:16px;right:auto}
+ .catalog-map-browser .map-browser__notice{top:104px}
+ .catalog-map-browser .map-browser__panel--expanded{height:min(85dvh,calc(100dvh - 104px));max-height:min(85dvh,calc(100dvh - 104px))}
+ .catalog-map-browser:has(.map-browser__panel--expanded) .map-browser__notice{display:none}
+}
+
+html body.catalog-listing-page .catalog-map-trigger svg{display:block;align-self:center;transform:translateY(-1px)}
+.catalog-map-browser .catalog-map-market[hidden]{display:none!important}

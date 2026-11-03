@@ -1,5 +1,7 @@
 # Каталог недвижимости — UI-kit v1.0.0
 
+[Папка для передачи разработчику и ZIP от 03.11.2026](../handoff/catalog-2026-11-03/README.md). Зафиксирована версия с возвращёнными размерами фильтров; инструкция и контракты интеграции включены.
+
 [Готовая страница](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/katalog-nedvizhimosti/?direction=city).
 
 [Итоговые размеры всех шрифтов: 83роли, адаптив и насыщенность](FONT-SIZES.md).

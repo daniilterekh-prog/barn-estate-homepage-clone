@@ -1,0 +1,873 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-03",
+  "sourceRepository": "daniilterekh-prog/barn-estate-homepage-clone",
+  "canonicalRepository": "daniilterekh-prog/barnes-sites",
+  "sourceCommit": "44fffa4960aad57bfa36c2433459acb961c8411b",
+  "sourcePath": "katalog-nedvizhimosti/",
+  "canonicalPath": "main-site/pages/catalog/",
+  "runtimeCopiedUnchanged": true,
+  "files": [
+    {
+      "path": "site/assets/586963.png",
+      "source": "katalog-nedvizhimosti/assets/586963.png",
+      "bytes": 620205,
+      "sha256": "f6b69a68d3dc5b8493ce1ae68843eb866ec497b92da945da92966c8518b681a9",
+      "gitBlob": "74f5a8921b9a301d5c635dae6085119401ad9ccf"
+    },
+    {
+      "path": "site/assets/588036.jpg",
+      "source": "katalog-nedvizhimosti/assets/588036.jpg",
+      "bytes": 59889,
+      "sha256": "1e2dd8c5d60e6a8cfbf6fbd74b3782ca91c103273923d7f8f11e31a2dbaea7ad",
+      "gitBlob": "ef3770276a11c0f6d1a7883db2d03e9ee75db3d0"
+    },
+    {
+      "path": "site/assets/595261.jpeg",
+      "source": "katalog-nedvizhimosti/assets/595261.jpeg",
+      "bytes": 45014,
+      "sha256": "e10d5cf935dc2e4c04f0d928cdf939af06187ee4c19e026b9e6486335da444b6",
+      "gitBlob": "7fa7666350c4e5a5fefb23046f5a47f688ef323c"
+    },
+    {
+      "path": "site/assets/node-city-040420c4b252e01e.jpg",
+      "source": "katalog-nedvizhimosti/assets/node-city-040420c4b252e01e.jpg",
+      "bytes": 113958,
+      "sha256": "040420c4b252e01eaddca2e4248187392c5424a4090e637fa788b87ee9795bf0",
+      "gitBlob": "0babe0673a448e121ee32c31c5b8071af3941712"
+    },
+    {
+      "path": "site/assets/node-city-084b2b6f06e71057.jpg",
+      "source": "katalog-nedvizhimosti/assets/node-city-084b2b6f06e71057.jpg",
+      "bytes": 135235,
+      "sha256": "084b2b6f06e71057f8d4fbb993436c17fb586f526261f01302e09eee75ecccdf",
+      "gitBlob": "bf5c5435c05a3e336939bcd844cdd9f8a997c12a"
+    },
+    {
+      "path": "site/assets/node-city-7781fce4e8048ef7.jpg",
+      "source": "katalog-nedvizhimosti/assets/node-city-7781fce4e8048ef7.jpg",
+      "bytes": 374206,
+      "sha256": "7781fce4e8048ef743e425d296b2437674b6dc3e1d3684da098beb3afc695357",
+      "gitBlob": "a0efcc64633ac5052dc49fb29df0b9a7e03f9889"
+    },
+    {
+      "path": "site/assets/node-city-c714d4a43087da62.jpg",
+      "source": "katalog-nedvizhimosti/assets/node-city-c714d4a43087da62.jpg",
+      "bytes": 1387817,
+      "sha256": "c714d4a43087da62578d1a6fe8ae9802cf97836f8361960446a31a60bb7a0dd8",
+      "gitBlob": "89006746713c5cba786316ec1c93b4889370d90a"
+    },
+    {
+      "path": "site/assets/node-commercial-d100227df6a0.jpg",
+      "source": "katalog-nedvizhimosti/assets/node-commercial-d100227df6a0.jpg",
+      "bytes": 82620,
+      "sha256": "0671f2a5ea79dac1b33ce39e1cdbb6896ee1d2af261942bce5a7cbc76f608baa",
+      "gitBlob": "a2db275f922a74628a173569fa4da3fcbd3d7471"
+    },
+    {
+      "path": "site/assets/node-commercial-d5b716c8785b.jpg",
+      "source": "katalog-nedvizhimosti/assets/node-commercial-d5b716c8785b.jpg",
+      "bytes": 68081,
+      "sha256": "5a8c82e4b572a40ec987e51fbd2f9397bfb637f057b13a1e3d62b595b32f1dea",
+      "gitBlob": "c14bf1a6f000d6ab14943d900ce1ff80c08cdc60"
+    },
+    {
+      "path": "site/assets/node-commercial-e29de3bc99f1.jpg",
+      "source": "katalog-nedvizhimosti/assets/node-commercial-e29de3bc99f1.jpg",
+      "bytes": 129612,
+      "sha256": "25e2ca0f8a0c417c62fc14f1a5a66f89ce762cf9ed1d6c9c403e34314cccfc69",
+      "gitBlob": "be02dbaca15d856ac656a4c1c72afe8d899f7980"
+    },
+    {
+      "path": "site/assets/node-commercial-fbfb69732de9.jpg",
+      "source": "katalog-nedvizhimosti/assets/node-commercial-fbfb69732de9.jpg",
+      "bytes": 86367,
+      "sha256": "ff6f11903783209bc88fb7ddc1441572bea19838e6d66099ceca50c97b9dd841",
+      "gitBlob": "d4656240ad4cda854dd915421cedaf30d614c582"
+    },
+    {
+      "path": "site/assets/node-country-reference-1a36d17521f2.jpg",
+      "source": "katalog-nedvizhimosti/assets/node-country-reference-1a36d17521f2.jpg",
+      "bytes": 76305,
+      "sha256": "1a36d17521f2c4cd3844b1a8248c354f0e74313d05f1ad879a7a5d2e88da06bf",
+      "gitBlob": "3acb2f6cd87c7e0b7c25ad4d3e23f67860500f29"
+    },
+    {
+      "path": "site/assets/node-country-reference-30f23f2af407.jpg",
+      "source": "katalog-nedvizhimosti/assets/node-country-reference-30f23f2af407.jpg",
+      "bytes": 101657,
+      "sha256": "30f23f2af40799fb7f221c2cf7190a406a74ad40f7ab13f1a5e0e772dd4a80b2",
+      "gitBlob": "0ea661348a718eeaf80fa27b6a7616aa30022f55"
+    },
+    {
+      "path": "site/assets/node-country-reference-5e2cbce10f06.jpeg",
+      "source": "katalog-nedvizhimosti/assets/node-country-reference-5e2cbce10f06.jpeg",
+      "bytes": 104062,
+      "sha256": "5e2cbce10f0660d29113835627c1982924f89cc06fec35e2b907b711dce80bb2",
+      "gitBlob": "ff48403535832d23e5d38223a7efa39db075f226"
+    },
+    {
+      "path": "site/assets/node-country-reference-e853032ae786.jpg",
+      "source": "katalog-nedvizhimosti/assets/node-country-reference-e853032ae786.jpg",
+      "bytes": 129137,
+      "sha256": "e853032ae7866170483e4c385fe599efeabb690b52be22d60b5513d694a44d67",
+      "gitBlob": "4ac77d54b13e9ea81d2ebc5efcc45bb92b05dc8b"
+    },
+    {
+      "path": "site/assets/node-country-reference-eba949f42e39.jpg",
+      "source": "katalog-nedvizhimosti/assets/node-country-reference-eba949f42e39.jpg",
+      "bytes": 110196,
+      "sha256": "eba949f42e39ef9c1789be67cd3818537a7517194b3e1cc857f3b14191daeba0",
+      "gitBlob": "835f0bfecc5dff7e6fb0571f653abad3b1e57d7f"
+    },
+    {
+      "path": "site/assets/node-country-reference-f07d68578109.jpg",
+      "source": "katalog-nedvizhimosti/assets/node-country-reference-f07d68578109.jpg",
+      "bytes": 183240,
+      "sha256": "f07d68578109a825885cc7d5aa37180ead7f8589753087c49e6190c6690517ed",
+      "gitBlob": "be60a7c68ffb987511e9d3043b3192ba5866f4fe"
+    },
+    {
+      "path": "site/assets/node-international-0b0a4fc0a38c1047-3a8b2f35f0f0ac0d0d647e54e043a3ed.jpeg",
+      "source": "katalog-nedvizhimosti/assets/node-international-0b0a4fc0a38c1047-3a8b2f35f0f0ac0d0d647e54e043a3ed.jpeg",
+      "bytes": 198024,
+      "sha256": "9bf1c262a11cd3099cfb4980d47c0ed570985de3e2138becb5b9d1302b483b1e",
+      "gitBlob": "ce948faa49447610f6c8d992021c4b3af4f73cff"
+    },
+    {
+      "path": "site/assets/node-international-19de3829ff58c4f8-d0d5978e99581bc86d7f582e46645a32.png",
+      "source": "katalog-nedvizhimosti/assets/node-international-19de3829ff58c4f8-d0d5978e99581bc86d7f582e46645a32.png",
+      "bytes": 1003249,
+      "sha256": "84a729327d2307c041c4441b0b03c9d141d9fb0dddaeee8585ed762d23b7a25f",
+      "gitBlob": "9ca4857c95c099db5210afbcdd6ab4bfc72a25e7"
+    },
+    {
+      "path": "site/assets/node-international-614675d68e4cffe8-8311052985d7bb1536375a8.30505639_144d933eda_1920.jpg",
+      "source": "katalog-nedvizhimosti/assets/node-international-614675d68e4cffe8-8311052985d7bb1536375a8.30505639_144d933eda_1920.jpg",
+      "bytes": 105665,
+      "sha256": "9bfe7dd7a7e6e1d189f17dfbca8300a7543d68a66dfbbef030273d8e15481d76",
+      "gitBlob": "1026864cc926cc062bbe7ab5af708cda12d91e66"
+    },
+    {
+      "path": "site/assets/node-international-82b95a666dc35706-20725795365c73b332ed7214.03809248_2a3b98b579_1276.jpg",
+      "source": "katalog-nedvizhimosti/assets/node-international-82b95a666dc35706-20725795365c73b332ed7214.03809248_2a3b98b579_1276.jpg",
+      "bytes": 131873,
+      "sha256": "fd7f0be57800b53acff42ef9e33fece069eacde2b37dd489c5928dcf75197a96",
+      "gitBlob": "0006ec7adb84542ee438d4821c267023869c87c3"
+    },
+    {
+      "path": "site/assets/node-international-a11d1657b8234502-15966406495f741fe0382aa9.36148629_0ddb33d60e_1920.jpg",
+      "source": "katalog-nedvizhimosti/assets/node-international-a11d1657b8234502-15966406495f741fe0382aa9.36148629_0ddb33d60e_1920.jpg",
+      "bytes": 77077,
+      "sha256": "e2b59701757371553f59a38071efe622381e5745481d2cd5c2cbf37aec2e1f98",
+      "gitBlob": "a1f5505f3e2651f640755a3c5c95fcfaaced05c6"
+    },
+    {
+      "path": "site/assets/node-international-ba136ab747adee2c-7c727a309e816ccfe4aacda7f0347575.png",
+      "source": "katalog-nedvizhimosti/assets/node-international-ba136ab747adee2c-7c727a309e816ccfe4aacda7f0347575.png",
+      "bytes": 2405337,
+      "sha256": "06d90d9a0cf6f4a2acc66a3ba79288919a861f05e654bdad7ba90c2f5af6cbd2",
+      "gitBlob": "0ec7bfeac99715e0a1e34ede4c6c31ff4958b2d7"
+    },
+    {
+      "path": "site/assets/node-international-e9fabafdd48b462b-2.3.jpeg",
+      "source": "katalog-nedvizhimosti/assets/node-international-e9fabafdd48b462b-2.3.jpeg",
+      "bytes": 446561,
+      "sha256": "b3d7a8ddd7feaefd0368cc6d0f15d6f51240c3a8670424be6d7af92e4af4d250",
+      "gitBlob": "619539b152719eb1e517d1dc4ab55febdf62f89d"
+    },
+    {
+      "path": "site/assets/node-international-f0cd941b817681f6-5a3e61b48390c8dcd6bfe320b01e86d1.jpg",
+      "source": "katalog-nedvizhimosti/assets/node-international-f0cd941b817681f6-5a3e61b48390c8dcd6bfe320b01e86d1.jpg",
+      "bytes": 1604392,
+      "sha256": "015f1adb2e0d3f8bd27d16913bc56bcf8f7c8c02734d1679176d87aaebf10722",
+      "gitBlob": "8b6efbcd4eb935b3a345fcc26eb9f21f8e757ab1"
+    },
+    {
+      "path": "site/assets/project-107b1d61c541ddd3.jpg",
+      "source": "katalog-nedvizhimosti/assets/project-107b1d61c541ddd3.jpg",
+      "bytes": 669927,
+      "sha256": "11bfedb4392ea30f2dfd55cf4426b78a3b826b04d12537e4f3dca5fb8caec307",
+      "gitBlob": "afec09ad6e7ba85a6a850a11e058f82bfa6677ad"
+    },
+    {
+      "path": "site/assets/project-27765be220f1b2f9.jpeg",
+      "source": "katalog-nedvizhimosti/assets/project-27765be220f1b2f9.jpeg",
+      "bytes": 307920,
+      "sha256": "9564eb9bc6c707783b6f4001c86beb4a6a3944b5b12addaed370a02c15c86f10",
+      "gitBlob": "21bbf743dfa3557c62e2264e8de0964974d62a02"
+    },
+    {
+      "path": "site/assets/project-4b7c3c10af05d775.jpg",
+      "source": "katalog-nedvizhimosti/assets/project-4b7c3c10af05d775.jpg",
+      "bytes": 744662,
+      "sha256": "cf4862e5074839a59d8b88d80b3ea8d773838a86a2d75a96fa1322d635427638",
+      "gitBlob": "2f21868c3ba8b0c3ac5eea66ac16258b840b5041"
+    },
+    {
+      "path": "site/assets/project-55bf4ebdafb15af9.png",
+      "source": "katalog-nedvizhimosti/assets/project-55bf4ebdafb15af9.png",
+      "bytes": 5021294,
+      "sha256": "5ee4a6bee3f319d2e333e76c48ead0f5b92781996437b9db956fc1e94fc1d866",
+      "gitBlob": "9908cd9cd870dea4cd4a9493ea5853e3e8b7d6c3"
+    },
+    {
+      "path": "site/assets/project-82a3957a0bfcc357.jpeg",
+      "source": "katalog-nedvizhimosti/assets/project-82a3957a0bfcc357.jpeg",
+      "bytes": 407624,
+      "sha256": "8f7e70f4430c39a59a323d6f7c05d7e2bc264548e89610fee49868f472ee2a29",
+      "gitBlob": "42640f826d36dfc3be9df34b602ba181b4836f61"
+    },
+    {
+      "path": "site/assets/project-8a11dda83f6df50d.jpg",
+      "source": "katalog-nedvizhimosti/assets/project-8a11dda83f6df50d.jpg",
+      "bytes": 520550,
+      "sha256": "ed693dc6b28ad244a0c2120329dd18e8c390bf1b7473ca0298ca5bb34453771b",
+      "gitBlob": "7d9b5efe9a3a0d82e663cfaeef87044fecf37eae"
+    },
+    {
+      "path": "site/assets/project-91221eb30b488577.jpg",
+      "source": "katalog-nedvizhimosti/assets/project-91221eb30b488577.jpg",
+      "bytes": 793153,
+      "sha256": "4f49b81257ce8b96139033a3f12c67856278f3466172d95ba363df82e79647f1",
+      "gitBlob": "c755399056c5d69c4537b282c6607af30aa2f51b"
+    },
+    {
+      "path": "site/assets/project-b23d24c94cfe61c0.jpeg",
+      "source": "katalog-nedvizhimosti/assets/project-b23d24c94cfe61c0.jpeg",
+      "bytes": 347432,
+      "sha256": "70f7ab0aee27fb2d04a59fc87b34a43baf898e06b82d245707bc0d3a316cb07e",
+      "gitBlob": "a3167ac615579b220629e80492a0e37e07dac2db"
+    },
+    {
+      "path": "site/assets/project-bff2c0c9ecfe54d1.png",
+      "source": "katalog-nedvizhimosti/assets/project-bff2c0c9ecfe54d1.png",
+      "bytes": 2032030,
+      "sha256": "348dce92538cc2518d4adfea18bf7f9283ec1df8b67105238ba93cf22a8823f0",
+      "gitBlob": "c79d6c1855c0fff083eaff906d5a13110d7f5b3d"
+    },
+    {
+      "path": "site/assets/project-d000369966411287.jpeg",
+      "source": "katalog-nedvizhimosti/assets/project-d000369966411287.jpeg",
+      "bytes": 562701,
+      "sha256": "8789490ee49ac89360b073907f42854d835158add5c2f558ea3f8d7bc453ab19",
+      "gitBlob": "3ef4370543788aa903475482cb70014863a2d8c7"
+    },
+    {
+      "path": "site/assets/project-e60210b294be536a.jpg",
+      "source": "katalog-nedvizhimosti/assets/project-e60210b294be536a.jpg",
+      "bytes": 710608,
+      "sha256": "fe27def9092398e2ac9c3a9a685afe2cfd5ee07b4069e69e150e3fcb88c4ba9e",
+      "gitBlob": "3fdc5208cd4e5cceaef365d03221af13166060aa"
+    },
+    {
+      "path": "site/assets/project-f17300db9185a4db.jpeg",
+      "source": "katalog-nedvizhimosti/assets/project-f17300db9185a4db.jpeg",
+      "bytes": 393430,
+      "sha256": "15358c144022a9ce742f568e817b5a71c17225942ada0f3852cbe93771eba7fd",
+      "gitBlob": "8bce8ed26a40c3669eae9f149addc2b36e83c696"
+    },
+    {
+      "path": "site/catalog-active-filters.js",
+      "source": "katalog-nedvizhimosti/catalog-active-filters.js",
+      "bytes": 2866,
+      "sha256": "cc5621293e252cb1536d453a6caa109d4256b4a7111f0dbb4a192083fdbab301",
+      "gitBlob": "58d89dbd1598d60f8c4f42fff546ec027d4c1e14"
+    },
+    {
+      "path": "site/catalog-filters.css",
+      "source": "katalog-nedvizhimosti/catalog-filters.css",
+      "bytes": 20338,
+      "sha256": "84f7e281a876eb12f54942a1e88b09c037ded87b53780869e124f3b9923857d2",
+      "gitBlob": "2f7139ccef47ae9f55f7fb162ec02fc6ac1ab412"
+    },
+    {
+      "path": "site/catalog-kit-v1.css",
+      "source": "katalog-nedvizhimosti/catalog-kit-v1.css",
+      "bytes": 14624,
+      "sha256": "f3c1a2a04b55d882aedf4315b0ef7855aee697ce537ffe251776d45268786cc6",
+      "gitBlob": "98a8ff6b4935b8897e6c94036bab2b6ab59e8c94"
+    },
+    {
+      "path": "site/catalog-kit-v1.js",
+      "source": "katalog-nedvizhimosti/catalog-kit-v1.js",
+      "bytes": 3055,
+      "sha256": "8dc4f68d7bfca74f7751283f6e3230537ba516e89ee5db0064ff13443c3444a9",
+      "gitBlob": "56b91e37bfb2a3cef096e1284c87812cefed165c"
+    },
+    {
+      "path": "site/catalog-map.css",
+      "source": "katalog-nedvizhimosti/catalog-map.css",
+      "bytes": 4209,
+      "sha256": "c9a7bc955375b06e1d78e079d14366a4b8cb883dac4ba6c7d6bb3fc145d411aa",
+      "gitBlob": "fb45059d14fa6474f21d8cd2a11ab13b2b08a77e"
+    },
+    {
+      "path": "site/catalog-map.js",
+      "source": "katalog-nedvizhimosti/catalog-map.js",
+      "bytes": 6797,
+      "sha256": "34733e977d496cdd18c5034b86523a4a255bcf0d314df18554a66db68d73a361",
+      "gitBlob": "24a823d75d0011f1292e9ded9d647e00fcd89654"
+    },
+    {
+      "path": "site/data-sources.json",
+      "source": "katalog-nedvizhimosti/data-sources.json",
+      "bytes": 1661,
+      "sha256": "9abe902231e40e67a5069852e2ef5b6e8011a52520a92bd8a954b812e468e0df",
+      "gitBlob": "84356d06fb1b3f61544e0abad363bd3ea484e999"
+    },
+    {
+      "path": "site/direction-profiles.js",
+      "source": "katalog-nedvizhimosti/direction-profiles.js",
+      "bytes": 3751,
+      "sha256": "918abdebfe13b670b79e451bff4077e0832ecf4416ec5eb9feef54cd890d34b5",
+      "gitBlob": "4b1bb76e8ca54c3e2133be4b2a571e8014f7ecc8"
+    },
+    {
+      "path": "site/filter-adapter.js",
+      "source": "katalog-nedvizhimosti/filter-adapter.js",
+      "bytes": 6110,
+      "sha256": "b1b25665a297f686cc560b71b5fde31b78f133a7bbb5ad659ef3ac1d3d8ebf03",
+      "gitBlob": "f35cb43d46a609a3a276187d9860c219a4a291da"
+    },
+    {
+      "path": "site/header-navigation.js",
+      "source": "katalog-nedvizhimosti/header-navigation.js",
+      "bytes": 5487,
+      "sha256": "9d1c3a1f39c04b0814b6eb077ed7150f33ec9835240325017c6135fc6e3a7e8c",
+      "gitBlob": "21138a7b76bd7508c10c6bbd3afd4ceaf2a0ab68"
+    },
+    {
+      "path": "site/index.html",
+      "source": "katalog-nedvizhimosti/index.html",
+      "bytes": 66917,
+      "sha256": "313de811fd1d4df45d59813418dfbb5b850a2ca82ff664b206ded938cf0847da",
+      "gitBlob": "ab156ee42075bf0b0b29cbcd730e14fee5091e06"
+    },
+    {
+      "path": "site/kit/_shared/assets/02b7a36916692a36.svg",
+      "source": "katalog-nedvizhimosti/kit/_shared/assets/02b7a36916692a36.svg",
+      "bytes": 1231,
+      "sha256": "3e197e0e1f3e679ee09823c75e1c7bad3a19da9bd1ba01df395268b9ae91816f",
+      "gitBlob": "529fdfb0ef6bb6034fd07b14a9476eea0b0e4ed9"
+    },
+    {
+      "path": "site/kit/_shared/assets/086cc9ca6e7ad9da.woff2",
+      "source": "katalog-nedvizhimosti/kit/_shared/assets/086cc9ca6e7ad9da.woff2",
+      "bytes": 61636,
+      "sha256": "2670dad44ca6c2a1b9bbdbf1af6d8db9173f2dbe31604e80bdf9599b55047d41",
+      "gitBlob": "eca2361b9e48b96633f3a494624756b7902679de"
+    },
+    {
+      "path": "site/kit/_shared/assets/2435433bcff3b967.woff2",
+      "source": "katalog-nedvizhimosti/kit/_shared/assets/2435433bcff3b967.woff2",
+      "bytes": 62556,
+      "sha256": "f716269e361f466570f37bc920988c619ddc8a7828c5949c1c56a731a320ab47",
+      "gitBlob": "b349bb91b1ef8668e3f99f10210e8fdc123e0853"
+    },
+    {
+      "path": "site/kit/_shared/assets/3650e8e33aa7031c.woff2",
+      "source": "katalog-nedvizhimosti/kit/_shared/assets/3650e8e33aa7031c.woff2",
+      "bytes": 63528,
+      "sha256": "3814f8c444073262523050f3554c6f09cb49353e1f6fdc22a3561d354a231439",
+      "gitBlob": "9adfc61d562d7c9a54dfc5a017687d4277dfd2ea"
+    },
+    {
+      "path": "site/kit/_shared/assets/48d1ef1db2cfec22.woff2",
+      "source": "katalog-nedvizhimosti/kit/_shared/assets/48d1ef1db2cfec22.woff2",
+      "bytes": 62820,
+      "sha256": "726a3a878465a590443308ea9e14459ab5943f699cff4887c844af4ed76ce577",
+      "gitBlob": "036c66f44b651d3e7854a010d43b5cd51b6aef06"
+    },
+    {
+      "path": "site/kit/_shared/assets/7b0041f72131f767.woff2",
+      "source": "katalog-nedvizhimosti/kit/_shared/assets/7b0041f72131f767.woff2",
+      "bytes": 57952,
+      "sha256": "73abed6708c43912dbd5c2760147f72462887ccd803522a1486209ca1e97031a",
+      "gitBlob": "c66e067bacd10c2fbae714fdb68bda0ed2efaddb"
+    },
+    {
+      "path": "site/kit/_shared/assets/7f0243b306c649b7.webp",
+      "source": "katalog-nedvizhimosti/kit/_shared/assets/7f0243b306c649b7.webp",
+      "bytes": 104972,
+      "sha256": "709121d4e9a3cf0688a44fffccbfcb4703a725726487a4b56e45623ebc958ce8",
+      "gitBlob": "faf3f5ef1ef072329877e453036a58b050f3be13"
+    },
+    {
+      "path": "site/kit/_shared/assets/86b8e2a4b34a061f.svg",
+      "source": "katalog-nedvizhimosti/kit/_shared/assets/86b8e2a4b34a061f.svg",
+      "bytes": 10900,
+      "sha256": "7aa20aa89b87356c503ea3ffeec8a7959aa0554968c5816e226a6254b0ed31d0",
+      "gitBlob": "8e58f464a17d964692e2f3c3b9ace808640fdb8c"
+    },
+    {
+      "path": "site/kit/_shared/assets/96011550f4b6e432.woff2",
+      "source": "katalog-nedvizhimosti/kit/_shared/assets/96011550f4b6e432.woff2",
+      "bytes": 63216,
+      "sha256": "a2690df6fe8348066df79e3a3421a3a9bc0b058cc536f3d846f782ea5337afec",
+      "gitBlob": "9bc1cea0d9cd5d2482e7402ae8da35d273dec073"
+    },
+    {
+      "path": "site/kit/_shared/assets/a9274ba2f8d830e5.woff2",
+      "source": "katalog-nedvizhimosti/kit/_shared/assets/a9274ba2f8d830e5.woff2",
+      "bytes": 63952,
+      "sha256": "f0f2c165784c72343618a7c2cbde00e45dbb9b09af5149984792f280cac9642e",
+      "gitBlob": "59c22538cb38ed583a9be508537e71f52abe1e9a"
+    },
+    {
+      "path": "site/kit/_shared/assets/e4d43ddddae4bc89.svg",
+      "source": "katalog-nedvizhimosti/kit/_shared/assets/e4d43ddddae4bc89.svg",
+      "bytes": 72862,
+      "sha256": "5caa61a4b0731d0d89421b4fb24f41433025e5aea59155a14cf3a3fada6c9174",
+      "gitBlob": "a19c0577708a9dd615881b9fb07dddaa38638931"
+    },
+    {
+      "path": "site/kit/_shared/assets/e780567a5079a655.svg",
+      "source": "katalog-nedvizhimosti/kit/_shared/assets/e780567a5079a655.svg",
+      "bytes": 757,
+      "sha256": "4435c9a57e165a1c3b7f27e0b5b11b82b10d674ea4fff7f6748cb67b7fcb994e",
+      "gitBlob": "b637cb5160934ed0ae000909bd88753f2107910c"
+    },
+    {
+      "path": "site/kit/_shared/assets/f8285279bd12648c.svg",
+      "source": "katalog-nedvizhimosti/kit/_shared/assets/f8285279bd12648c.svg",
+      "bytes": 10900,
+      "sha256": "7aa20aa89b87356c503ea3ffeec8a7959aa0554968c5816e226a6254b0ed31d0",
+      "gitBlob": "8e58f464a17d964692e2f3c3b9ace808640fdb8c"
+    },
+    {
+      "path": "site/kit/_shared/brand-filters.css",
+      "source": "katalog-nedvizhimosti/kit/_shared/brand-filters.css",
+      "bytes": 3732,
+      "sha256": "43f02a971520aed3434d02a861a4e6a71b15e0065522f8c233265a615736597a",
+      "gitBlob": "f6aa270560a28ec83547019857af2406a1244958"
+    },
+    {
+      "path": "site/kit/_shared/listing-mode.css",
+      "source": "katalog-nedvizhimosti/kit/_shared/listing-mode.css",
+      "bytes": 10920,
+      "sha256": "aad90d91dc4ea719fa6cb4cd8dab6e056692824ca9331f26cbd45805e43e109c",
+      "gitBlob": "4274ee688a23fdfce3342ca9917a3b62657d6777"
+    },
+    {
+      "path": "site/kit/_shared/owner-footer.css",
+      "source": "katalog-nedvizhimosti/kit/_shared/owner-footer.css",
+      "bytes": 2150,
+      "sha256": "b0f3b577d94fceea6c53627056d8456535bb2120d3a8b482568dfbb0fa9d7020",
+      "gitBlob": "0ea24a1446487c7ce9165e5ad374d824f39a51e0"
+    },
+    {
+      "path": "site/kit/_shared/owner-header.css",
+      "source": "katalog-nedvizhimosti/kit/_shared/owner-header.css",
+      "bytes": 45335,
+      "sha256": "cc21406fd81a2ae9e395f89890a50427d363b6d0437f6ab5ee581f2c4b08f729",
+      "gitBlob": "ede0b209cf2afe9adc18307293f678e6086216ae"
+    },
+    {
+      "path": "site/kit/_shared/source.css",
+      "source": "katalog-nedvizhimosti/kit/_shared/source.css",
+      "bytes": 683349,
+      "sha256": "71301870202aa1494201e7bb942e5ff796be3017f0ca58249d64c57772f3234a",
+      "gitBlob": "67e2a3b39e1fec86da86d6fcbce6f291ff47e5e7"
+    },
+    {
+      "path": "site/kit/_shared/ui-kit.css",
+      "source": "katalog-nedvizhimosti/kit/_shared/ui-kit.css",
+      "bytes": 37309,
+      "sha256": "a30890c00e96f6bd9bd24960330f425978452a416e14c802f79b5d0f460ce89d",
+      "gitBlob": "13d98605d05145e6d4bd3a80fb283df4338b5d88"
+    },
+    {
+      "path": "site/kit/card-lot/fragment.html",
+      "source": "katalog-nedvizhimosti/kit/card-lot/fragment.html",
+      "bytes": 3092,
+      "sha256": "0442a985febe33a256b64d4b322e27125ea057b00746d9f501268f4ea88c15cc",
+      "gitBlob": "eeba9723aa612fcf3bbee0d95d6ea7cf5660aab8"
+    },
+    {
+      "path": "site/kit/card-project/fragment.html",
+      "source": "katalog-nedvizhimosti/kit/card-project/fragment.html",
+      "bytes": 3139,
+      "sha256": "9f4d85db0a2bdc5f3cf1dec5517ecc7cc58d561211004da5d29583ee2a74ba34",
+      "gitBlob": "a90c50b649b9d59b286ba9d534edf911e790c4ab"
+    },
+    {
+      "path": "site/kit/filters-modal/filters-modal.css",
+      "source": "katalog-nedvizhimosti/kit/filters-modal/filters-modal.css",
+      "bytes": 2121,
+      "sha256": "0824dd6a6b0ec6b871f06acbc375864715e304d1eb5c0783b8f12cf8b5caf1cf",
+      "gitBlob": "2265d879e748a263dc59ad491f0ebf09aae0398d"
+    },
+    {
+      "path": "site/kit/filters-modal/filters-modal.js",
+      "source": "katalog-nedvizhimosti/kit/filters-modal/filters-modal.js",
+      "bytes": 9149,
+      "sha256": "0a938b279ea888e85630ecc622e8934cf10dbf9fe3c2c1433388efc09f72f350",
+      "gitBlob": "e204830d7a483852277b4967808231d1a8f037ca"
+    },
+    {
+      "path": "site/kit/filters-modal/filters-template.js",
+      "source": "katalog-nedvizhimosti/kit/filters-modal/filters-template.js",
+      "bytes": 11921,
+      "sha256": "9429c19e3ce221df489e86cce8c470e633b1b30bcc793afd78cd2ea22defc2eb",
+      "gitBlob": "c70a4755a17dd5a9b18d8ae8629a39c25e1fa832"
+    },
+    {
+      "path": "site/kit/footer/fragment.html",
+      "source": "katalog-nedvizhimosti/kit/footer/fragment.html",
+      "bytes": 16887,
+      "sha256": "07a590658ef9120c45bbab3980626a7b98d710dabb885824f540d6c3a27c2fc2",
+      "gitBlob": "5430b2d63880ec8a1fcf4126cbd9b1cdaef1a074"
+    },
+    {
+      "path": "site/kit/header/fragment.html",
+      "source": "katalog-nedvizhimosti/kit/header/fragment.html",
+      "bytes": 4831,
+      "sha256": "2874755a34026d80935be2f460459a0c74ac12dafd3cfeca0421c38d8a76dec4",
+      "gitBlob": "bf09be39009587a2a776c032c8d8f0135f3331f4"
+    },
+    {
+      "path": "site/kit/listing/fragment.html",
+      "source": "katalog-nedvizhimosti/kit/listing/fragment.html",
+      "bytes": 42320,
+      "sha256": "2cd389091b2f6795f61763ef24ba78865d51e014266e361dd1ae90a6a0a90858",
+      "gitBlob": "3a7b4a1bea606bb38efd7fbd0a482e87a2a78089"
+    },
+    {
+      "path": "site/kit/quick-filter-dropdowns/brand-filters.css",
+      "source": "katalog-nedvizhimosti/kit/quick-filter-dropdowns/brand-filters.css",
+      "bytes": 3732,
+      "sha256": "43f02a971520aed3434d02a861a4e6a71b15e0065522f8c233265a615736597a",
+      "gitBlob": "f6aa270560a28ec83547019857af2406a1244958"
+    },
+    {
+      "path": "site/kit/quick-filter-dropdowns/brand-filters.js",
+      "source": "katalog-nedvizhimosti/kit/quick-filter-dropdowns/brand-filters.js",
+      "bytes": 2893,
+      "sha256": "106dec94dc125734690ac1aa13d38367317674c149c1c6ab319ab03685b4fd0e",
+      "gitBlob": "c56957ae17450f4babe9282f308d7ee5bcdfe8fd"
+    },
+    {
+      "path": "site/kit/quick-filter-dropdowns/quick-filters.css",
+      "source": "katalog-nedvizhimosti/kit/quick-filter-dropdowns/quick-filters.css",
+      "bytes": 2398,
+      "sha256": "d98d8da8b8b267d72a6a2d3a6d14536a02e4578e25eb30a52bf2dffa96f925a2",
+      "gitBlob": "865f394ddb45bf127bdeaf724fcd31e97132106b"
+    },
+    {
+      "path": "site/kit/quick-filter-dropdowns/quick-filters.js",
+      "source": "katalog-nedvizhimosti/kit/quick-filter-dropdowns/quick-filters.js",
+      "bytes": 12531,
+      "sha256": "6c594c6e66ed22d9aea21e3a16878b7b29dc7204070c701632b7a5af7ef1ffd2",
+      "gitBlob": "ba4950e7ac36d76bdfa7c46122eed791ecd0d08a"
+    },
+    {
+      "path": "site/kit-sources.json",
+      "source": "katalog-nedvizhimosti/kit-sources.json",
+      "bytes": 4858,
+      "sha256": "f37bc29a6885bc8ee5a118e2c863b65c1be523a6c95f208b2fa57929e843e5e7",
+      "gitBlob": "31e1762b46bb3e4986c50003bd533e049fdeda25"
+    },
+    {
+      "path": "site/kit-v1/assets/9e76f26b05473907fc0031ca.woff2",
+      "source": "katalog-nedvizhimosti/kit-v1/assets/9e76f26b05473907fc0031ca.woff2",
+      "bytes": 61636,
+      "sha256": "2670dad44ca6c2a1b9bbdbf1af6d8db9173f2dbe31604e80bdf9599b55047d41",
+      "gitBlob": "eca2361b9e48b96633f3a494624756b7902679de"
+    },
+    {
+      "path": "site/kit-v1/assets/SPLIDE-LICENSE.txt",
+      "source": "katalog-nedvizhimosti/kit-v1/assets/SPLIDE-LICENSE.txt",
+      "bytes": 1081,
+      "sha256": "0ebc4cd9114647da9febbe8a2c17e847eca42631e9fcf8b273bc9306d0735f96",
+      "gitBlob": "d2f800dd7dd363959544cb0adc001319202e8254"
+    },
+    {
+      "path": "site/kit-v1/assets/TildaSans-Black.woff2",
+      "source": "katalog-nedvizhimosti/kit-v1/assets/TildaSans-Black.woff2",
+      "bytes": 57952,
+      "sha256": "73abed6708c43912dbd5c2760147f72462887ccd803522a1486209ca1e97031a",
+      "gitBlob": "c66e067bacd10c2fbae714fdb68bda0ed2efaddb"
+    },
+    {
+      "path": "site/kit-v1/assets/TildaSans-Bold.woff2",
+      "source": "katalog-nedvizhimosti/kit-v1/assets/TildaSans-Bold.woff2",
+      "bytes": 63216,
+      "sha256": "a2690df6fe8348066df79e3a3421a3a9bc0b058cc536f3d846f782ea5337afec",
+      "gitBlob": "9bc1cea0d9cd5d2482e7402ae8da35d273dec073"
+    },
+    {
+      "path": "site/kit-v1/assets/TildaSans-ExtraBold.woff2",
+      "source": "katalog-nedvizhimosti/kit-v1/assets/TildaSans-ExtraBold.woff2",
+      "bytes": 62820,
+      "sha256": "726a3a878465a590443308ea9e14459ab5943f699cff4887c844af4ed76ce577",
+      "gitBlob": "036c66f44b651d3e7854a010d43b5cd51b6aef06"
+    },
+    {
+      "path": "site/kit-v1/assets/TildaSans-Semibold.woff2",
+      "source": "katalog-nedvizhimosti/kit-v1/assets/TildaSans-Semibold.woff2",
+      "bytes": 63528,
+      "sha256": "3814f8c444073262523050f3554c6f09cb49353e1f6fdc22a3561d354a231439",
+      "gitBlob": "9adfc61d562d7c9a54dfc5a017687d4277dfd2ea"
+    },
+    {
+      "path": "site/kit-v1/assets/a9f2b67f7136af9bde4f58b8.woff2",
+      "source": "katalog-nedvizhimosti/kit-v1/assets/a9f2b67f7136af9bde4f58b8.woff2",
+      "bytes": 62556,
+      "sha256": "f716269e361f466570f37bc920988c619ddc8a7828c5949c1c56a731a320ab47",
+      "gitBlob": "b349bb91b1ef8668e3f99f10210e8fdc123e0853"
+    },
+    {
+      "path": "site/kit-v1/assets/c57d9b3c8de986fa0d618d09.svg",
+      "source": "katalog-nedvizhimosti/kit-v1/assets/c57d9b3c8de986fa0d618d09.svg",
+      "bytes": 6644,
+      "sha256": "9b2d8c1a7d4d213587828c6bdf6592a37113a388fedc1b58211534d8cb1e7123",
+      "gitBlob": "4a68fae5eb75034891f86a42bd6dbc64caeee4d1"
+    },
+    {
+      "path": "site/kit-v1/assets/de589af6ec6325d4b365d646.woff2",
+      "source": "katalog-nedvizhimosti/kit-v1/assets/de589af6ec6325d4b365d646.woff2",
+      "bytes": 63952,
+      "sha256": "f0f2c165784c72343618a7c2cbde00e45dbb9b09af5149984792f280cac9642e",
+      "gitBlob": "59c22538cb38ed583a9be508537e71f52abe1e9a"
+    },
+    {
+      "path": "site/kit-v1/assets/material-icons-LICENSE.txt",
+      "source": "katalog-nedvizhimosti/kit-v1/assets/material-icons-LICENSE.txt",
+      "bytes": 11357,
+      "sha256": "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd",
+      "gitBlob": "7a4a3ea2424c09fbe48d455aed1eaa94d9124835"
+    },
+    {
+      "path": "site/kit-v1/assets/owner-modal-prus.webp",
+      "source": "katalog-nedvizhimosti/kit-v1/assets/owner-modal-prus.webp",
+      "bytes": 210000,
+      "sha256": "6bbaa8e1df83e7d5eda42c83d174e1f0177a8cbb5698bd5ec01ee3602e8f84aa",
+      "gitBlob": "c0aa21b08c1705c28e1b9f702216a766748a525c"
+    },
+    {
+      "path": "site/kit-v1/assets/quiz-mobile-prus-magazine.webp",
+      "source": "katalog-nedvizhimosti/kit-v1/assets/quiz-mobile-prus-magazine.webp",
+      "bytes": 105912,
+      "sha256": "8985649766af231100dd863db3e4fac10809a7b9f94bc2d38c6922c8e10b67c1",
+      "gitBlob": "5cdab60c4dca66d4624cffa35bdea4687cdb2f1e"
+    },
+    {
+      "path": "site/kit-v1/footer.css",
+      "source": "katalog-nedvizhimosti/kit-v1/footer.css",
+      "bytes": 84257,
+      "sha256": "649f37e74259d18f4a2cf854a2901b7d923ad2d78d5367ea1c7f01b9163bbc05",
+      "gitBlob": "2a3836724149f5d4239d6f390f18b4da3af783b3"
+    },
+    {
+      "path": "site/kit-v1/home-buttons.css",
+      "source": "katalog-nedvizhimosti/kit-v1/home-buttons.css",
+      "bytes": 4070,
+      "sha256": "e84e451a1d7f46adbb300557606af73b1ce081a2ce986ccd0368a206ce822b7a",
+      "gitBlob": "983d64e9c66966deb7e96b761bd609a9f2f23bbc"
+    },
+    {
+      "path": "site/kit-v1/home-header-contacts.css",
+      "source": "katalog-nedvizhimosti/kit-v1/home-header-contacts.css",
+      "bytes": 4928,
+      "sha256": "41f6bc970cdc98a665da7c286c16d7418660e8fedcedee23e0e7c84e4e46cabd",
+      "gitBlob": "7e5ef793aba4448ac285741e89c9dbc0c78008ee"
+    },
+    {
+      "path": "site/kit-v1/home-header-contacts.js",
+      "source": "katalog-nedvizhimosti/kit-v1/home-header-contacts.js",
+      "bytes": 4323,
+      "sha256": "ec87ed670d121d9a73ed9566db19c41818ac6d5628162464c1bfe3019c6cfaf5",
+      "gitBlob": "a3456f68fce0ab1906d37119c3b1049199394cce"
+    },
+    {
+      "path": "site/kit-v1/home-spacing.css",
+      "source": "katalog-nedvizhimosti/kit-v1/home-spacing.css",
+      "bytes": 12891,
+      "sha256": "dc550d621f1f9f37b4dfd732e8bdfa7904b7162f8fb2519285b86f191a97180c",
+      "gitBlob": "f9d70811a63dafc66ca4d582f98aacce15c36b9d"
+    },
+    {
+      "path": "site/kit-v1/home-typography.css",
+      "source": "katalog-nedvizhimosti/kit-v1/home-typography.css",
+      "bytes": 10511,
+      "sha256": "daf2a31c248d482abc6bfb513117b87832f846746f527edd40068f1eabb33024",
+      "gitBlob": "04fecc4195d7c467e88fe481fea083079534ca0f"
+    },
+    {
+      "path": "site/kit-v1/quiz.css",
+      "source": "katalog-nedvizhimosti/kit-v1/quiz.css",
+      "bytes": 60725,
+      "sha256": "99f35ef45710c1a4cdd443fba0878f26a1be0be56c462e595a61aa85d0891066",
+      "gitBlob": "a9ecfa986e0f843c4be9ccd1c67f9c60cf46b1ae"
+    },
+    {
+      "path": "site/kit-v1/quiz.js",
+      "source": "katalog-nedvizhimosti/kit-v1/quiz.js",
+      "bytes": 19090,
+      "sha256": "f538302644fbb4145b31000326c568c4b3bb48dada2d3a83a9ffbb6e7430e912",
+      "gitBlob": "68568a671447ce18ed9c802f9793258af6e8862f"
+    },
+    {
+      "path": "site/kit-v1/sources.json",
+      "source": "katalog-nedvizhimosti/kit-v1/sources.json",
+      "bytes": 4527,
+      "sha256": "0c580732eaef638b411ad1888f99c7b9616508a30e44d98428545c064cba50a4",
+      "gitBlob": "e8cb1b1bda448ef2e4291a717dea265bcdde2321"
+    },
+    {
+      "path": "site/listing.css",
+      "source": "katalog-nedvizhimosti/listing.css",
+      "bytes": 7132,
+      "sha256": "90a4d155adce572188cdf1cfb0fbbdca06a3f125f5496518a0f3de2f58474d12",
+      "gitBlob": "69c91f4c4b30f9a37b2eb49d7cbf2215245242bb"
+    },
+    {
+      "path": "site/listing.js",
+      "source": "katalog-nedvizhimosti/listing.js",
+      "bytes": 22707,
+      "sha256": "4197fb1cc7010c4de1ab3bfc849c3d12bdca00ee7c82a82500441c179ed33141",
+      "gitBlob": "b5f68533b53ac122a96983fa738593e89a2baf2d"
+    },
+    {
+      "path": "site/map-view/LICENSE.md",
+      "source": "katalog-nedvizhimosti/map-view/LICENSE.md",
+      "bytes": 1252,
+      "sha256": "409af2d8be31582d569d29d9e5d743e08ba80012a9d0aacd636a1988e07dd6e8",
+      "gitBlob": "2490aedb50fba4cc3e6ec0a675586a1fc65641c1"
+    },
+    {
+      "path": "site/map-view/map-preview.png",
+      "source": "katalog-nedvizhimosti/map-view/map-preview.png",
+      "bytes": 831945,
+      "sha256": "a0f6e45ee0d9dac807fa6cb7d8b3d344bd6857a69ad2b5dfb1391e7b73c8c2a9",
+      "gitBlob": "5a5908ad432d690ab5a51f7c07e0701693c0b9cc"
+    },
+    {
+      "path": "site/map-view/reference-map.css",
+      "source": "katalog-nedvizhimosti/map-view/reference-map.css",
+      "bytes": 8227,
+      "sha256": "2eb98620aebbee6754a9d4637c10d7e7ffce64563cef0eb82445661dc418df26",
+      "gitBlob": "6c23e692784afd11505f50b6270309e72cdd2033"
+    },
+    {
+      "path": "site/map-view/sources.json",
+      "source": "katalog-nedvizhimosti/map-view/sources.json",
+      "bytes": 1409,
+      "sha256": "94189fa89cf3fc7718b0daf1789b2d2156a48c9cd3d29a6e3c88a4f8d38271f2",
+      "gitBlob": "423d8bb0795f5f1f6ca7ce910fa5d487b47db957"
+    },
+    {
+      "path": "site/objects.json",
+      "source": "katalog-nedvizhimosti/objects.json",
+      "bytes": 27233,
+      "sha256": "20734d6aa24799ce4b6bf630161cfb0ccd00cab3aad265410b92a6b9577fbff2",
+      "gitBlob": "4c1155e6093aa9e0be99df25a89e25751f494f9b"
+    },
+    {
+      "path": "site/reference-shell/assets/3e197e0e1f3e679e.svg",
+      "source": "katalog-nedvizhimosti/reference-shell/assets/3e197e0e1f3e679e.svg",
+      "bytes": 1231,
+      "sha256": "3e197e0e1f3e679ee09823c75e1c7bad3a19da9bd1ba01df395268b9ae91816f",
+      "gitBlob": "529fdfb0ef6bb6034fd07b14a9476eea0b0e4ed9"
+    },
+    {
+      "path": "site/reference-shell/assets/4435c9a57e165a1c.svg",
+      "source": "katalog-nedvizhimosti/reference-shell/assets/4435c9a57e165a1c.svg",
+      "bytes": 757,
+      "sha256": "4435c9a57e165a1c3b7f27e0b5b11b82b10d674ea4fff7f6748cb67b7fcb994e",
+      "gitBlob": "b637cb5160934ed0ae000909bd88753f2107910c"
+    },
+    {
+      "path": "site/reference-shell/assets/5caa61a4b0731d0d.svg",
+      "source": "katalog-nedvizhimosti/reference-shell/assets/5caa61a4b0731d0d.svg",
+      "bytes": 72862,
+      "sha256": "5caa61a4b0731d0d89421b4fb24f41433025e5aea59155a14cf3a3fada6c9174",
+      "gitBlob": "a19c0577708a9dd615881b9fb07dddaa38638931"
+    },
+    {
+      "path": "site/reference-shell/assets/7781fce4e8048ef7.jpg",
+      "source": "katalog-nedvizhimosti/reference-shell/assets/7781fce4e8048ef7.jpg",
+      "bytes": 374206,
+      "sha256": "7781fce4e8048ef743e425d296b2437674b6dc3e1d3684da098beb3afc695357",
+      "gitBlob": "a0efcc64633ac5052dc49fb29df0b9a7e03f9889"
+    },
+    {
+      "path": "site/reference-shell/assets/7aa20aa89b87356c.svg",
+      "source": "katalog-nedvizhimosti/reference-shell/assets/7aa20aa89b87356c.svg",
+      "bytes": 10900,
+      "sha256": "7aa20aa89b87356c503ea3ffeec8a7959aa0554968c5816e226a6254b0ed31d0",
+      "gitBlob": "8e58f464a17d964692e2f3c3b9ace808640fdb8c"
+    },
+    {
+      "path": "site/reference-shell/assets/barn-estate-logo.svg",
+      "source": "katalog-nedvizhimosti/reference-shell/assets/barn-estate-logo.svg",
+      "bytes": 6644,
+      "sha256": "9b2d8c1a7d4d213587828c6bdf6592a37113a388fedc1b58211534d8cb1e7123",
+      "gitBlob": "4a68fae5eb75034891f86a42bd6dbc64caeee4d1"
+    },
+    {
+      "path": "site/reference-shell/assets/c5384c30d421ad70.jpg",
+      "source": "katalog-nedvizhimosti/reference-shell/assets/c5384c30d421ad70.jpg",
+      "bytes": 264325,
+      "sha256": "c5384c30d421ad705b43c8eb3dac7d16187ff87eb67392232fb15fa995980a7e",
+      "gitBlob": "8808c2e2516e95e9c9ae2372fde64e1443ffd3d4"
+    },
+    {
+      "path": "site/reference-shell/footer.html",
+      "source": "katalog-nedvizhimosti/reference-shell/footer.html",
+      "bytes": 16541,
+      "sha256": "c23a560228224fcec304a06d0d1fb684d3ff81c6dbd25eb731cdeb3f10e652e6",
+      "gitBlob": "f43f35dd5a60b4db5d93c09d6f1827dac3506360"
+    },
+    {
+      "path": "site/reference-shell/header.html",
+      "source": "katalog-nedvizhimosti/reference-shell/header.html",
+      "bytes": 6561,
+      "sha256": "ed8b9074237a3f0fe55abfe310d6b409c7419f299ed80f13cd0da6700bdfc7d6",
+      "gitBlob": "a9a625ebbf48beb9029c54fe0fb3defc814f23b8"
+    },
+    {
+      "path": "site/reference-shell/live-header.css",
+      "source": "katalog-nedvizhimosti/reference-shell/live-header.css",
+      "bytes": 13799,
+      "sha256": "7af9cc404ad5906005ff55163ba30bf0ee29b70a6f47027a23d64a403fc4141d",
+      "gitBlob": "a7caa17910a7c67a35c0535bad16b3dd25ecbf39"
+    },
+    {
+      "path": "site/reference-shell/menu.css",
+      "source": "katalog-nedvizhimosti/reference-shell/menu.css",
+      "bytes": 8479,
+      "sha256": "783176d085d4645b3bd6d56b6ff8fcd9ba67287f95b7c1741af6902f4e3e4db1",
+      "gitBlob": "9d3563f3bcafff4c1ec063ca9013cd7caefbfb37"
+    },
+    {
+      "path": "site/reference-shell/menu.html",
+      "source": "katalog-nedvizhimosti/reference-shell/menu.html",
+      "bytes": 12843,
+      "sha256": "567291e01732844f2f0208970212102e596d66fdf4ee7513cf12d1331b7730e0",
+      "gitBlob": "e9e429cebc38c7ebc8923d16afa2cf316040eaa6"
+    },
+    {
+      "path": "site/reference-shell/owner-footer.css",
+      "source": "katalog-nedvizhimosti/reference-shell/owner-footer.css",
+      "bytes": 2150,
+      "sha256": "b0f3b577d94fceea6c53627056d8456535bb2120d3a8b482568dfbb0fa9d7020",
+      "gitBlob": "0ea24a1446487c7ce9165e5ad374d824f39a51e0"
+    },
+    {
+      "path": "site/reference-shell/owner-header.css",
+      "source": "katalog-nedvizhimosti/reference-shell/owner-header.css",
+      "bytes": 45334,
+      "sha256": "783ce11685c9c9f84d1b0db2b7c8240a28f5811533a2209703af2c2753bccb9c",
+      "gitBlob": "f5da404d930dc716b169b2fdcd9699d76b16e842"
+    },
+    {
+      "path": "site/reference-shell/sources.json",
+      "source": "katalog-nedvizhimosti/reference-shell/sources.json",
+      "bytes": 3804,
+      "sha256": "05915ce8266249a1dc5347736aaf0645be604ade95c81f1a1213240325b35b55",
+      "gitBlob": "6e6c2d06fdd6cff038d2deeab2b10c7b9425d77f"
+    }
+  ]
+}

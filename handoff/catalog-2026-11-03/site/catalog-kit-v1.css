@@ -1,0 +1,123 @@
+/* Approved homepage v1.0.0 roles adapted to the catalogue's own composition. */
+html body.catalog-listing-page{--catalog-filter-font-size:var(--home-field);--catalog-filter-muted:#656462;--kit-font:'Tilda Sans','Tilda Sans Fallback',system-ui,sans-serif;font-synthesis:none}
+/* H1 uses the node-page display scale; shared section tokens stay unchanged. */
+html body.catalog-listing-page .catalog-page-title{font-size:clamp(38px,4vw,58px);line-height:1.05;font-weight:300;letter-spacing:-.045em;text-transform:none;margin-bottom:40px;max-width:none}
+/* Breadcrumb scale measured on barn-estate.ru/prodazha_sobstvennikam/. */
+html body.catalog-listing-page .catalog-breadcrumbs{color:#656462;gap:8px;font-family:'Tilda Sans',system-ui,sans-serif;font-size:17px;font-weight:300;line-height:18px;letter-spacing:normal}
+html body.catalog-listing-page .catalog-breadcrumbs [aria-hidden]{font-size:25px;font-weight:300;line-height:1.4}
+@media(max-width:1440px){html body.catalog-listing-page .catalog-breadcrumbs [aria-hidden]{font-size:20px}}
+@media(max-width:1024px){html body.catalog-listing-page .catalog-breadcrumbs [aria-hidden]{font-size:18px}}
+@media(max-width:768px){html body.catalog-listing-page .catalog-breadcrumbs{gap:6px;font-size:13px}html body.catalog-listing-page .catalog-breadcrumbs [aria-hidden]{font-size:16px}}
+@media(max-width:540px){html body.catalog-listing-page .catalog-breadcrumbs{gap:4px;font-size:12px;line-height:16px}html body.catalog-listing-page .catalog-breadcrumbs [aria-hidden]{font-size:14px}}
+@media(max-width:540px){html body.catalog-listing-page .catalog-page-title{font-size:32px;margin-bottom:28px}}
+/* Main containers share the approved gutter, including the footer and ultrawide grid. */
+html body.catalog-listing-page .base-container{max-width:1920px;box-sizing:border-box;padding-inline:var(--home-gutter)}
+html body.catalog-listing-page .site-footer__inner{padding-inline:var(--home-gutter)}
+/* One sticky header reserves its normal height so the compact state cannot move the scroll anchor. */
+html body.catalog-listing-page .layout__header{position:sticky;top:0;inset-inline:0;z-index:100;background:transparent;overflow:visible;pointer-events:none;height:var(--catalog-header-slot-height,155px)}
+html body.catalog-listing-page .site-header.site-header--scrolled:not(.site-header--menu-open){position:relative;inset:auto;box-shadow:0 4px 24px #00000014}
+html body.catalog-listing-page .site-header__right{align-items:center}
+html body.catalog-listing-page .site-header__request[hidden]{display:none!important}
+html body.catalog-listing-page .site-header .site-header__request{display:inline-flex;align-items:center;justify-content:center;min-height:44px;height:44px;padding:0 18px;border-radius:1px;font:inherit;font-size:16px;font-weight:400;line-height:1;cursor:pointer}
+html body.catalog-listing-page .site-header .site-header__messengers{display:flex;gap:14px;align-items:center}
+html body.catalog-listing-page .site-header .site-header__messenger{width:24px;height:24px;min-width:24px;display:inline-flex;align-items:center;justify-content:center}
+html body.catalog-listing-page .site-header .site-header__messenger img{width:24px;height:24px}
+html body.catalog-listing-page .site-header .site-header__phone--icon{margin:0;width:24px;height:24px;display:inline-flex;align-items:center;justify-content:center}
+html body.catalog-listing-page .site-header .site-header__phone--icon :is(svg,.site-header__icon){height:24px;width:24px}
+html body.catalog-listing-page .site-header .home-header-contacts-toggle{color:#1e1e1e}
+/* Navigation uses the homepage's original row geometry and responsive visibility. */
+html body.catalog-listing-page .catalog-global-nav .site-header__nav-link:focus-visible{outline:2px solid #8b1d25;outline-offset:2px}
+@media(max-width:1024px){
+ html body.catalog-listing-page .site-header .site-header__top{position:relative;display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);column-gap:0;align-items:center}
+ html body.catalog-listing-page .site-header .site-header__left{position:static;transform:none;width:auto;height:44px;grid-column:1;grid-row:1;justify-self:start}
+ html body.catalog-listing-page .site-header .site-header__logo{grid-column:2;grid-row:1;justify-self:center;margin:0}
+ html body.catalog-listing-page .site-header .site-header__right{display:none}
+ html body.catalog-listing-page .site-header .site-header__mobile-phone{display:none!important}
+ html body.catalog-listing-page .site-header .site-header__icon-btn{width:44px;height:44px}
+}
+/* ListingCard retains its informative layout and compact 54px actions. */
+html body.catalog-listing-page .apartment-card--catalog .apartment-card__name-text[class]{font-size:22px;line-height:1.12;font-weight:400;letter-spacing:normal}
+html body.catalog-listing-page .apartment-card--catalog .apartment-card__price[class]{font-size:26px;line-height:1.2;font-weight:500;letter-spacing:normal}
+html body.catalog-listing-page .apartment-card--catalog :is(.apartment-card__address,.apartment-card__lotid)[class]{font-size:13px;line-height:18px;font-weight:300;color:#656462;letter-spacing:normal}
+html body.catalog-listing-page .apartment-card--catalog .apartment-card__actions[data-v-80c326fb] :is(.apartment-card__call-btn,.apartment-card__detail-btn)[class]{height:54px!important;min-height:54px!important;border-radius:1px!important;font-size:17px!important;line-height:1.1;letter-spacing:0;font-weight:400;padding:0 8px}
+html body.catalog-listing-page .listing-card-fact__label{color:#656462}
+@media(min-width:1441px){html body.catalog-listing-page .apartment-card--catalog .apartment-card__actions[data-v-80c326fb] :is(.apartment-card__call-btn,.apartment-card__detail-btn)[class]{font-size:19px!important}}
+@media(max-width:540px){
+ html body.catalog-listing-page .apartment-card--catalog .apartment-card__name-text[class]{font-size:20px}
+ html body.catalog-listing-page .apartment-card--catalog .apartment-card__price[class]{font-size:24px}
+ html body.catalog-listing-page .apartment-card--catalog .apartment-card__actions[data-v-80c326fb] :is(.apartment-card__call-btn,.apartment-card__detail-btn)[class]{font-size:18px!important}
+}
+/* Adapt the full filter form to the light form roles and regular primary action. */
+html body.catalog-listing-page .resort-filters .hero-filter-modal__dialog{background:#fff;color:#1e1e1e;border-radius:1px}
+html body.catalog-listing-page .resort-filters :is(.hero-filter-modal__header,.hero-filter-modal__footer){background:#fff;color:#1e1e1e;border-color:#e4e4e4}
+html body.catalog-listing-page .resort-filters :is(.hero-filter-panel-content__group,.hero-filter-modal__body){border-color:#e4e4e4;color:#1e1e1e}
+html body.catalog-listing-page .resort-filters :is(.hero-filter-panel-content__title,.hero-filter-modal__title,.ui-checkbox__label,.ui-input__label){color:#1e1e1e!important}
+html body.catalog-listing-page .resort-filters .ui-input__control{color:#1e1e1e;background:#fff;border:1px solid #8b8986;border-radius:1px;font:300 var(--home-field)/1.4 'Tilda Sans',sans-serif}
+html body.catalog-listing-page .resort-filters .ui-input__control::placeholder{color:#656462;opacity:1}
+html body.catalog-listing-page .resort-filters .ui-checkbox--chip{border:1px solid #8b8986;border-radius:1px;background:#fff;min-height:44px;font-weight:400;color:#4f4d49}
+html body.catalog-listing-page .resort-filters .ui-checkbox--chip:has(input:checked){border-color:#8b1d25;background:#f9f3f3;color:#8b1d25}
+html body.catalog-listing-page .resort-filters .ui-checkbox--chip:has(input:checked) .ui-checkbox__label{background:transparent;color:#8b1d25!important}
+html body.catalog-listing-page .resort-filters .hero-filter-modal__close{color:#1e1e1e}
+html body.catalog-listing-page .resort-filters .hero-filter-modal__footer{gap:12px}
+html body.catalog-listing-page .resort-filters :is(.hero-filter-modal__apply,.hero-filter-modal__reset){border-radius:1px!important;height:70px;min-height:70px;padding:0 36px;font:400 17px/1.1 'Tilda Sans',sans-serif;letter-spacing:0}
+html body.catalog-listing-page .resort-filters .hero-filter-modal__apply{background:#8b1d25!important;color:#fff!important;border:1px solid #8b1d25}
+html body.catalog-listing-page .resort-filters .hero-filter-modal__reset{background:#fff;color:#4f4d49;border:1px solid #8b8986}
+html body.catalog-listing-page .resort-filters__error{color:#8b1d25}
+@media(min-width:1441px){html body.catalog-listing-page .resort-filters :is(.hero-filter-modal__apply,.hero-filter-modal__reset){font-size:19px;padding-inline:47px}}
+@media(max-width:540px){html body.catalog-listing-page .resort-filters :is(.hero-filter-modal__apply,.hero-filter-modal__reset){height:58px;min-height:58px;font-size:18px;padding-inline:24px}}
+@media(max-width:400px){html body.catalog-listing-page .resort-filters .hero-filter-modal__footer{flex-direction:column}html body.catalog-listing-page .resort-filters :is(.hero-filter-modal__apply,.hero-filter-modal__reset){width:100%;flex:none}}
+html body.catalog-listing-page .resort-filters input:focus-visible{outline:2px solid #8b1d25;outline-offset:2px}
+/* Footer/meta and generic inquiry controls use the approved shared role. */
+html body.catalog-listing-page .site-footer__logo img{height:48px;width:auto;object-fit:contain}
+@media(max-width:540px){html body.catalog-listing-page .site-footer__logo img{height:36px}}
+html body.catalog-listing-page[data-home-footer-action-visible=true] .floating-expert,
+html body.catalog-listing-page:has(.site-header--menu-open) .floating-expert,
+html body.catalog-listing-page:has(.resort-filters:not([hidden])) .floating-expert,
+html body.catalog-listing-page:has([data-barn-modal]) .floating-expert{visibility:hidden;pointer-events:none}
+@media(prefers-reduced-motion:reduce){.catalog-listing-page .floating-expert{animation:none;opacity:1;transform:none}}
+html body.catalog-listing-page .resort-filters input:not([type=checkbox]):not([type=radio]):not([type=hidden]){background:#fff;color:#1e1e1e;border:1px solid #8b8986;border-radius:1px;font:300 var(--home-field)/1.4 'Tilda Sans',sans-serif}
+html body.catalog-listing-page .resort-filters input::placeholder{color:#656462;opacity:1}
+html body.catalog-listing-page .resort-filters .ui-checkbox--chip:hover .ui-checkbox__label{color:#fff!important}
+html body.catalog-listing-page .resort-quick-dropdown [role=option]{font-size:18px;font-weight:400;min-height:44px}
+html body.catalog-listing-page .catalog-grid__item{container-type:inline-size}
+@container(max-width:340px){html body.catalog-listing-page .apartment-card__actions{display:grid;grid-template-columns:1fr;gap:8px}}
+html body.catalog-listing-page .resort-filters .ui-checkbox__box{border-color:#8b8986!important;border-radius:1px}
+html body.catalog-listing-page .resort-filters .ui-checkbox__input:checked+.ui-checkbox__box{background:#8b1d25!important;border-color:#8b1d25!important;box-shadow:none!important}
+html body.catalog-listing-page .resort-filters .ui-checkbox__input:checked+.ui-checkbox__box .ui-checkbox__icon{display:block!important;color:#fff}
+
+/* The dropdown sits outside the horizontally scrolling row so it cannot be clipped. */
+html body.catalog-listing-page .catalog-header-dropdown[hidden]{display:none!important}
+html body.catalog-listing-page .catalog-header-dropdown{position:fixed;z-index:110;min-width:220px;width:max-content;max-width:calc(100vw - 44px);max-height:calc(100dvh - var(--catalog-dropdown-top) - 16px);box-sizing:border-box;overflow:auto;overscroll-behavior:contain;background:#fff;border:1px solid #e4e4e4;border-radius:1px;box-shadow:0 8px 24px #00000014;padding:30px 18px 8px}
+html body.catalog-listing-page .catalog-header-dropdown__list{display:grid;gap:12px;list-style:none;margin:0;padding:0}
+html body.catalog-listing-page .catalog-header-dropdown__link{display:flex;align-items:center;box-sizing:border-box;min-height:0;padding-block:0;color:#1e1e1e;font:inherit;font-size:16px;font-weight:300;line-height:1;text-decoration:none;white-space:normal;overflow-wrap:break-word}
+html body.catalog-listing-page .catalog-header-dropdown__link:hover{color:#8b1d25;font-weight:400}
+html body.catalog-listing-page .catalog-header-dropdown__link:focus-visible{outline:2px solid #8b1d25;outline-offset:2px}
+html body.catalog-listing-page .catalog-global-nav .site-header__nav-link[aria-expanded=true]{color:#8b1d25}
+@media(min-width:1441px){html body.catalog-listing-page .catalog-header-dropdown__link{font-size:18px}}
+
+/* Mobile header follows the approved homepage geometry; section links live in the burger. */
+@media(max-width:767px){
+ html body.catalog-listing-page .layout__header .site-header .catalog-global-nav{display:none!important}
+}
+@media(max-width:540px){html body.catalog-listing-page .site-header .site-header__logo img{height:36px;width:auto}}
+/* The header's contact popover must sit above the full menu, including across resize. */
+html body.catalog-listing-page .layout__header:has(.site-header--menu-open){z-index:1300;background:transparent;pointer-events:none}
+html body.catalog-listing-page .site-header--menu-open{pointer-events:auto}
+
+/* The white content-page header takes its divider from the homepage's white state. */
+html body.catalog-listing-page .layout__header .site-header__top{border-bottom-color:rgba(30,30,30,.1)}
+html body.catalog-listing-page .layout__header .site-header--menu-open .site-header__top{border-bottom-color:rgba(30,30,30,.12)}
+@media(min-width:1025px){html body.catalog-listing-page .site-header .site-header__icon-btn{width:33px;height:33px;min-width:0;min-height:0}}
+
+html body.catalog-listing-page .site-header{background:#fff;pointer-events:auto}
+@media(max-width:1440px){html body.catalog-listing-page{--catalog-header-slot-height:153px}}
+@media(max-width:1280px){html body.catalog-listing-page{--catalog-header-slot-height:111px}}
+@media(max-width:540px){html body.catalog-listing-page{--catalog-header-slot-height:77px}}
+
+/* Full-form titles and chips follow the homepage's compact dialog roles. */
+html body.catalog-listing-page .resort-filters .hero-filter-modal__title{font-size:var(--home-card);line-height:1.2;font-weight:400}
+html body.catalog-listing-page .resort-filters .ui-checkbox--chip .ui-checkbox__label{font-size:16px;line-height:1.2}
+
+/* Empty/error messages share the compact heading and body-description roles. */
+html body.catalog-listing-page .catalog-empty h2{font-size:var(--home-card);line-height:1.2;letter-spacing:normal}
+html body.catalog-listing-page :is(.catalog-empty,.catalog-load-error)>p{font-size:var(--home-lead);font-weight:300;line-height:var(--home-lead-line);color:#4f4d49}
