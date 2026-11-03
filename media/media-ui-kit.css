@@ -59,3 +59,6 @@ body.barnes-media-kit .media-analytics__card-body {gap:24px!important;}
 
 /* User-approved Media typography: every heading, including cards and dialogs. */
 body.barnes-media-kit :is(h1,h2,h3,h4,h5,h6) {text-transform:uppercase!important;}
+
+/* Fresh-material categories: one step lighter, including active/hover states. */
+body.barnes-media-kit .media-fresh__filter {font-weight:300!important;}
