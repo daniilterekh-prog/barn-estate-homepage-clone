@@ -92,3 +92,18 @@ body.barnes-media-kit .media-market__featured .media-market__featured-badge {col
   /* The Resort hub uses a pill-shaped favourites counter, not a square badge. */
   body.barnes-media-kit .site-header__favorites-count {border-radius:999px!important;}
 }
+
+/* A column-sized white veil ended at 20% opacity and left a visible vertical
+ * seam. Paint the veil across the complete desktop card, fading fully to zero. */
+@media (min-width:1025px) {
+  body.barnes-media-kit .media-weekly__featured-link {isolation:isolate;}
+  body.barnes-media-kit .media-weekly__featured-link::before {
+    content:"";position:absolute;inset:0;z-index:1;pointer-events:none;
+    background:linear-gradient(90deg,
+      rgba(255,255,255,.96) 0%,rgba(255,255,255,.92) 20%,
+      rgba(255,255,255,.84) 30%,rgba(255,255,255,.70) 40%,
+      rgba(255,255,255,.46) 48%,rgba(255,255,255,.20) 56%,
+      rgba(255,255,255,.05) 64%,rgba(255,255,255,0) 72%);
+  }
+  body.barnes-media-kit .media-weekly__featured-panel {background:transparent;z-index:2;}
+}
