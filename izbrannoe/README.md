@@ -138,3 +138,5 @@ https://daniilterekh-prog.github.io/barn-estate-homepage-clone/izbrannoe/ — с
 Playwright:10ширин320–2560px, совпадение вычисленных шрифтов H1/крошек/вкладок/сортировки с общей выдачей; все9подменю наdesktop, выравнивание текста с точностью1px, hover/клавиатура/Escape, мобильный бургер и сортировка. Переполнения и ошибок JS нет.
 
 [Результат сверки с выдачей](catalog-parity-verification.json).
+
+[Папка для разработчика: дизайн и отдельные HTML/CSS/JS](../handoff/favorites-2026-11-03/README.md).

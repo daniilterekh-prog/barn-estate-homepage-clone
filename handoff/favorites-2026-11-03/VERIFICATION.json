@@ -1,0 +1,21 @@
+{
+  "date": "2026-11-03",
+  "states": 27,
+  "widths": 16,
+  "errors": [],
+  "failed": [],
+  "comparisons": [
+    {
+      "width": 390,
+      "pixelIdentical": true
+    },
+    {
+      "width": 1440,
+      "pixelIdentical": true
+    },
+    {
+      "width": 1920,
+      "pixelIdentical": true
+    }
+  ]
+}
