@@ -1,0 +1,1359 @@
+{
+  "passed": true,
+  "rows": [
+    {
+      "width": 320,
+      "sort": "relevance",
+      "label": "По релевантности",
+      "sortFont": "17px",
+      "mapFont": "17px",
+      "quickFont": "17px",
+      "countFont": "14px",
+      "resetFont": "14px",
+      "rect": {
+        "x": 63,
+        "y": 653.375,
+        "right": 283,
+        "bottom": 697.375
+      },
+      "mapRect": {
+        "x": 22,
+        "y": 609.375,
+        "right": 145.734375,
+        "bottom": 653.375
+      },
+      "position": "static",
+      "transform": "none",
+      "clipped": false,
+      "overlap": false,
+      "overflow": false
+    },
+    {
+      "width": 320,
+      "sort": "price_asc",
+      "label": "Цена меньше",
+      "sortFont": "17px",
+      "mapFont": "17px",
+      "quickFont": "17px",
+      "countFont": "14px",
+      "resetFont": "14px",
+      "rect": {
+        "x": 63,
+        "y": 653.375,
+        "right": 283,
+        "bottom": 697.375
+      },
+      "mapRect": {
+        "x": 22,
+        "y": 609.375,
+        "right": 145.734375,
+        "bottom": 653.375
+      },
+      "position": "static",
+      "transform": "none",
+      "clipped": false,
+      "overlap": false,
+      "overflow": false
+    },
+    {
+      "width": 320,
+      "sort": "price_desc",
+      "label": "Цена больше",
+      "sortFont": "17px",
+      "mapFont": "17px",
+      "quickFont": "17px",
+      "countFont": "14px",
+      "resetFont": "14px",
+      "rect": {
+        "x": 63,
+        "y": 653.375,
+        "right": 283,
+        "bottom": 697.375
+      },
+      "mapRect": {
+        "x": 22,
+        "y": 609.375,
+        "right": 145.734375,
+        "bottom": 653.375
+      },
+      "position": "static",
+      "transform": "none",
+      "clipped": false,
+      "overlap": false,
+      "overflow": false
+    },
+    {
+      "width": 320,
+      "sort": "square_asc",
+      "label": "Площадь меньше",
+      "sortFont": "17px",
+      "mapFont": "17px",
+      "quickFont": "17px",
+      "countFont": "14px",
+      "resetFont": "14px",
+      "rect": {
+        "x": 63,
+        "y": 653.375,
+        "right": 283,
+        "bottom": 697.375
+      },
+      "mapRect": {
+        "x": 22,
+        "y": 609.375,
+        "right": 145.734375,
+        "bottom": 653.375
+      },
+      "position": "static",
+      "transform": "none",
+      "clipped": false,
+      "overlap": false,
+      "overflow": false
+    },
+    {
+      "width": 320,
+      "sort": "square_desc",
+      "label": "Площадь больше",
+      "sortFont": "17px",
+      "mapFont": "17px",
+      "quickFont": "17px",
+      "countFont": "14px",
+      "resetFont": "14px",
+      "rect": {
+        "x": 63,
+        "y": 653.375,
+        "right": 283,
+        "bottom": 697.375
+      },
+      "mapRect": {
+        "x": 22,
+        "y": 609.375,
+        "right": 145.734375,
+        "bottom": 653.375
+      },
+      "position": "static",
+      "transform": "none",
+      "clipped": false,
+      "overlap": false,
+      "overflow": false
+    },
+    {
+      "width": 360,
+      "sort": "relevance",
+      "label": "По релевантности",
+      "sortFont": "17px",
+      "mapFont": "17px",
+      "quickFont": "17px",
+      "countFont": "14px",
+      "resetFont": "14px",
+      "rect": {
+        "x": 157.734375,
+        "y": 601.171875,
+        "right": 323,
+        "bottom": 645.171875
+      },
+      "mapRect": {
+        "x": 22,
+        "y": 592.078125,
+        "right": 145.734375,
+        "bottom": 636.078125
+      },
+      "position": "static",
+      "transform": "none",
+      "clipped": false,
+      "overlap": false,
+      "overflow": false
+    },
+    {
+      "width": 360,
+      "sort": "price_asc",
+      "label": "Цена меньше",
+      "sortFont": "17px",
+      "mapFont": "17px",
+      "quickFont": "17px",
+      "countFont": "14px",
+      "resetFont": "14px",
+      "rect": {
+        "x": 157.734375,
+        "y": 601.171875,
+        "right": 323,
+        "bottom": 645.171875
+      },
+      "mapRect": {
+        "x": 22,
+        "y": 592.078125,
+        "right": 145.734375,
+        "bottom": 636.078125
+      },
+      "position": "static",
+      "transform": "none",
+      "clipped": false,
+      "overlap": false,
+      "overflow": false
+    },
+    {
+      "width": 360,
+      "sort": "price_desc",
+      "label": "Цена больше",
+      "sortFont": "17px",
+      "mapFont": "17px",
+      "quickFont": "17px",
+      "countFont": "14px",
+      "resetFont": "14px",
+      "rect": {
+        "x": 157.734375,
+        "y": 601.171875,
+        "right": 323,
+        "bottom": 645.171875
+      },
+      "mapRect": {
+        "x": 22,
+        "y": 592.078125,
+        "right": 145.734375,
+        "bottom": 636.078125
+      },
+      "position": "static",
+      "transform": "none",
+      "clipped": false,
+      "overlap": false,
+      "overflow": false
+    },
+    {
+      "width": 360,
+      "sort": "square_asc",
+      "label": "Площадь меньше",
+      "sortFont": "17px",
+      "mapFont": "17px",
+      "quickFont": "17px",
+      "countFont": "14px",
+      "resetFont": "14px",
+      "rect": {
+        "x": 157.734375,
+        "y": 601.171875,
+        "right": 323,
+        "bottom": 645.171875
+      },
+      "mapRect": {
+        "x": 22,
+        "y": 592.078125,
+        "right": 145.734375,
+        "bottom": 636.078125
+      },
+      "position": "static",
+      "transform": "none",
+      "clipped": false,
+      "overlap": false,
+      "overflow": false
+    },
+    {
+      "width": 360,
+      "sort": "square_desc",
+      "label": "Площадь больше",
+      "sortFont": "17px",
+      "mapFont": "17px",
+      "quickFont": "17px",
+      "countFont": "14px",
+      "resetFont": "14px",
+      "rect": {
+        "x": 157.734375,
+        "y": 601.171875,
+        "right": 323,
+        "bottom": 645.171875
+      },
+      "mapRect": {
+        "x": 22,
+        "y": 592.078125,
+        "right": 145.734375,
+        "bottom": 636.078125
+      },
+      "position": "static",
+      "transform": "none",
+      "clipped": false,
+      "overlap": false,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "sort": "relevance",
+      "label": "По релевантности",
+      "sortFont": "17px",
+      "mapFont": "17px",
+      "quickFont": "17px",
+      "countFont": "14px",
+      "resetFont": "14px",
+      "rect": {
+        "x": 173,
+        "y": 601.171875,
+        "right": 353,
+        "bottom": 645.171875
+      },
+      "mapRect": {
+        "x": 22,
+        "y": 592.078125,
+        "right": 145.734375,
+        "bottom": 636.078125
+      },
+      "position": "static",
+      "transform": "none",
+      "clipped": false,
+      "overlap": false,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "sort": "price_asc",
+      "label": "Цена меньше",
+      "sortFont": "17px",
+      "mapFont": "17px",
+      "quickFont": "17px",
+      "countFont": "14px",
+      "resetFont": "14px",
+      "rect": {
+        "x": 173,
+        "y": 601.171875,
+        "right": 353,
+        "bottom": 645.171875
+      },
+      "mapRect": {
+        "x": 22,
+        "y": 592.078125,
+        "right": 145.734375,
+        "bottom": 636.078125
+      },
+      "position": "static",
+      "transform": "none",
+      "clipped": false,
+      "overlap": false,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "sort": "price_desc",
+      "label": "Цена больше",
+      "sortFont": "17px",
+      "mapFont": "17px",
+      "quickFont": "17px",
+      "countFont": "14px",
+      "resetFont": "14px",
+      "rect": {
+        "x": 173,
+        "y": 601.171875,
+        "right": 353,
+        "bottom": 645.171875
+      },
+      "mapRect": {
+        "x": 22,
+        "y": 592.078125,
+        "right": 145.734375,
+        "bottom": 636.078125
+      },
+      "position": "static",
+      "transform": "none",
+      "clipped": false,
+      "overlap": false,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "sort": "square_asc",
+      "label": "Площадь меньше",
+      "sortFont": "17px",
+      "mapFont": "17px",
+      "quickFont": "17px",
+      "countFont": "14px",
+      "resetFont": "14px",
+      "rect": {
+        "x": 173,
+        "y": 601.171875,
+        "right": 353,
+        "bottom": 645.171875
+      },
+      "mapRect": {
+        "x": 22,
+        "y": 592.078125,
+        "right": 145.734375,
+        "bottom": 636.078125
+      },
+      "position": "static",
+      "transform": "none",
+      "clipped": false,
+      "overlap": false,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "sort": "square_desc",
+      "label": "Площадь больше",
+      "sortFont": "17px",
+      "mapFont": "17px",
+      "quickFont": "17px",
+      "countFont": "14px",
+      "resetFont": "14px",
+      "rect": {
+        "x": 173,
+        "y": 601.171875,
+        "right": 353,
+        "bottom": 645.171875
+      },
+      "mapRect": {
+        "x": 22,
+        "y": 592.078125,
+        "right": 145.734375,
+        "bottom": 636.078125
+      },
+      "position": "static",
+      "transform": "none",
+      "clipped": false,
+      "overlap": false,
+      "overflow": false
+    },
+    {
+      "width": 540,
+      "sort": "relevance",
+      "label": "По релевантности",
+      "sortFont": "17px",
+      "mapFont": "17px",
+      "quickFont": "17px",
+      "countFont": "14px",
+      "resetFont": "14px",
+      "rect": {
+        "x": 323,
+        "y": 601.171875,
+        "right": 503,
+        "bottom": 645.171875
+      },
+      "mapRect": {
+        "x": 22,
+        "y": 592.078125,
+        "right": 145.734375,
+        "bottom": 636.078125
+      },
+      "position": "static",
+      "transform": "none",
+      "clipped": false,
+      "overlap": false,
+      "overflow": false
+    },
+    {
+      "width": 540,
+      "sort": "price_asc",
+      "label": "Цена меньше",
+      "sortFont": "17px",
+      "mapFont": "17px",
+      "quickFont": "17px",
+      "countFont": "14px",
+      "resetFont": "14px",
+      "rect": {
+        "x": 323,
+        "y": 601.171875,
+        "right": 503,
+        "bottom": 645.171875
+      },
+      "mapRect": {
+        "x": 22,
+        "y": 592.078125,
+        "right": 145.734375,
+        "bottom": 636.078125
+      },
+      "position": "static",
+      "transform": "none",
+      "clipped": false,
+      "overlap": false,
+      "overflow": false
+    },
+    {
+      "width": 540,
+      "sort": "price_desc",
+      "label": "Цена больше",
+      "sortFont": "17px",
+      "mapFont": "17px",
+      "quickFont": "17px",
+      "countFont": "14px",
+      "resetFont": "14px",
+      "rect": {
+        "x": 323,
+        "y": 601.171875,
+        "right": 503,
+        "bottom": 645.171875
+      },
+      "mapRect": {
+        "x": 22,
+        "y": 592.078125,
+        "right": 145.734375,
+        "bottom": 636.078125
+      },
+      "position": "static",
+      "transform": "none",
+      "clipped": false,
+      "overlap": false,
+      "overflow": false
+    },
+    {
+      "width": 540,
+      "sort": "square_asc",
+      "label": "Площадь меньше",
+      "sortFont": "17px",
+      "mapFont": "17px",
+      "quickFont": "17px",
+      "countFont": "14px",
+      "resetFont": "14px",
+      "rect": {
+        "x": 323,
+        "y": 601.171875,
+        "right": 503,
+        "bottom": 645.171875
+      },
+      "mapRect": {
+        "x": 22,
+        "y": 592.078125,
+        "right": 145.734375,
+        "bottom": 636.078125
+      },
+      "position": "static",
+      "transform": "none",
+      "clipped": false,
+      "overlap": false,
+      "overflow": false
+    },
+    {
+      "width": 540,
+      "sort": "square_desc",
+      "label": "Площадь больше",
+      "sortFont": "17px",
+      "mapFont": "17px",
+      "quickFont": "17px",
+      "countFont": "14px",
+      "resetFont": "14px",
+      "rect": {
+        "x": 323,
+        "y": 601.171875,
+        "right": 503,
+        "bottom": 645.171875
+      },
+      "mapRect": {
+        "x": 22,
+        "y": 592.078125,
+        "right": 145.734375,
+        "bottom": 636.078125
+      },
+      "position": "static",
+      "transform": "none",
+      "clipped": false,
+      "overlap": false,
+      "overflow": false
+    },
+    {
+      "width": 541,
+      "sort": "relevance",
+      "label": "По релевантности",
+      "sortFont": "18px",
+      "mapFont": "18px",
+      "quickFont": "18px",
+      "countFont": "14px",
+      "resetFont": "14px",
+      "rect": {
+        "x": 322,
+        "y": 724.765625,
+        "right": 532,
+        "bottom": 768.765625
+      },
+      "mapRect": {
+        "x": 24,
+        "y": 715.671875,
+        "right": 151.71875,
+        "bottom": 759.671875
+      },
+      "position": "static",
+      "transform": "none",
+      "clipped": false,
+      "overlap": false,
+      "overflow": false
+    },
+    {
+      "width": 541,
+      "sort": "price_asc",
+      "label": "Цена меньше",
+      "sortFont": "18px",
+      "mapFont": "18px",
+      "quickFont": "18px",
+      "countFont": "14px",
+      "resetFont": "14px",
+      "rect": {
+        "x": 322,
+        "y": 724.765625,
+        "right": 532,
+        "bottom": 768.765625
+      },
+      "mapRect": {
+        "x": 24,
+        "y": 715.671875,
+        "right": 151.71875,
+        "bottom": 759.671875
+      },
+      "position": "static",
+      "transform": "none",
+      "clipped": false,
+      "overlap": false,
+      "overflow": false
+    },
+    {
+      "width": 541,
+      "sort": "price_desc",
+      "label": "Цена больше",
+      "sortFont": "18px",
+      "mapFont": "18px",
+      "quickFont": "18px",
+      "countFont": "14px",
+      "resetFont": "14px",
+      "rect": {
+        "x": 322,
+        "y": 724.765625,
+        "right": 532,
+        "bottom": 768.765625
+      },
+      "mapRect": {
+        "x": 24,
+        "y": 715.671875,
+        "right": 151.71875,
+        "bottom": 759.671875
+      },
+      "position": "static",
+      "transform": "none",
+      "clipped": false,
+      "overlap": false,
+      "overflow": false
+    },
+    {
+      "width": 541,
+      "sort": "square_asc",
+      "label": "Площадь меньше",
+      "sortFont": "18px",
+      "mapFont": "18px",
+      "quickFont": "18px",
+      "countFont": "14px",
+      "resetFont": "14px",
+      "rect": {
+        "x": 322,
+        "y": 724.765625,
+        "right": 532,
+        "bottom": 768.765625
+      },
+      "mapRect": {
+        "x": 24,
+        "y": 715.671875,
+        "right": 151.71875,
+        "bottom": 759.671875
+      },
+      "position": "static",
+      "transform": "none",
+      "clipped": false,
+      "overlap": false,
+      "overflow": false
+    },
+    {
+      "width": 541,
+      "sort": "square_desc",
+      "label": "Площадь больше",
+      "sortFont": "18px",
+      "mapFont": "18px",
+      "quickFont": "18px",
+      "countFont": "14px",
+      "resetFont": "14px",
+      "rect": {
+        "x": 322,
+        "y": 724.765625,
+        "right": 532,
+        "bottom": 768.765625
+      },
+      "mapRect": {
+        "x": 24,
+        "y": 715.671875,
+        "right": 151.71875,
+        "bottom": 759.671875
+      },
+      "position": "static",
+      "transform": "none",
+      "clipped": false,
+      "overlap": false,
+      "overflow": false
+    },
+    {
+      "width": 767,
+      "sort": "relevance",
+      "label": "По релевантности",
+      "sortFont": "18px",
+      "mapFont": "18px",
+      "quickFont": "18px",
+      "countFont": "14px",
+      "resetFont": "14px",
+      "rect": {
+        "x": 548,
+        "y": 679.171875,
+        "right": 758,
+        "bottom": 723.171875
+      },
+      "mapRect": {
+        "x": 24,
+        "y": 670.078125,
+        "right": 151.71875,
+        "bottom": 714.078125
+      },
+      "position": "static",
+      "transform": "none",
+      "clipped": false,
+      "overlap": false,
+      "overflow": false
+    },
+    {
+      "width": 767,
+      "sort": "price_asc",
+      "label": "Цена меньше",
+      "sortFont": "18px",
+      "mapFont": "18px",
+      "quickFont": "18px",
+      "countFont": "14px",
+      "resetFont": "14px",
+      "rect": {
+        "x": 548,
+        "y": 679.171875,
+        "right": 758,
+        "bottom": 723.171875
+      },
+      "mapRect": {
+        "x": 24,
+        "y": 670.078125,
+        "right": 151.71875,
+        "bottom": 714.078125
+      },
+      "position": "static",
+      "transform": "none",
+      "clipped": false,
+      "overlap": false,
+      "overflow": false
+    },
+    {
+      "width": 767,
+      "sort": "price_desc",
+      "label": "Цена больше",
+      "sortFont": "18px",
+      "mapFont": "18px",
+      "quickFont": "18px",
+      "countFont": "14px",
+      "resetFont": "14px",
+      "rect": {
+        "x": 548,
+        "y": 679.171875,
+        "right": 758,
+        "bottom": 723.171875
+      },
+      "mapRect": {
+        "x": 24,
+        "y": 670.078125,
+        "right": 151.71875,
+        "bottom": 714.078125
+      },
+      "position": "static",
+      "transform": "none",
+      "clipped": false,
+      "overlap": false,
+      "overflow": false
+    },
+    {
+      "width": 767,
+      "sort": "square_asc",
+      "label": "Площадь меньше",
+      "sortFont": "18px",
+      "mapFont": "18px",
+      "quickFont": "18px",
+      "countFont": "14px",
+      "resetFont": "14px",
+      "rect": {
+        "x": 548,
+        "y": 679.171875,
+        "right": 758,
+        "bottom": 723.171875
+      },
+      "mapRect": {
+        "x": 24,
+        "y": 670.078125,
+        "right": 151.71875,
+        "bottom": 714.078125
+      },
+      "position": "static",
+      "transform": "none",
+      "clipped": false,
+      "overlap": false,
+      "overflow": false
+    },
+    {
+      "width": 767,
+      "sort": "square_desc",
+      "label": "Площадь больше",
+      "sortFont": "18px",
+      "mapFont": "18px",
+      "quickFont": "18px",
+      "countFont": "14px",
+      "resetFont": "14px",
+      "rect": {
+        "x": 548,
+        "y": 679.171875,
+        "right": 758,
+        "bottom": 723.171875
+      },
+      "mapRect": {
+        "x": 24,
+        "y": 670.078125,
+        "right": 151.71875,
+        "bottom": 714.078125
+      },
+      "position": "static",
+      "transform": "none",
+      "clipped": false,
+      "overlap": false,
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "sort": "relevance",
+      "label": "По релевантности",
+      "sortFont": "18px",
+      "mapFont": "18px",
+      "quickFont": "18px",
+      "countFont": "15px",
+      "resetFont": "14px",
+      "rect": {
+        "x": 529,
+        "y": 558.984375,
+        "right": 739,
+        "bottom": 602.984375
+      },
+      "mapRect": {
+        "x": 365.28125,
+        "y": 558.984375,
+        "right": 501,
+        "bottom": 602.984375
+      },
+      "position": "static",
+      "transform": "none",
+      "clipped": false,
+      "overlap": false,
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "sort": "price_asc",
+      "label": "Цена меньше",
+      "sortFont": "18px",
+      "mapFont": "18px",
+      "quickFont": "18px",
+      "countFont": "15px",
+      "resetFont": "14px",
+      "rect": {
+        "x": 529,
+        "y": 558.984375,
+        "right": 739,
+        "bottom": 602.984375
+      },
+      "mapRect": {
+        "x": 365.28125,
+        "y": 558.984375,
+        "right": 501,
+        "bottom": 602.984375
+      },
+      "position": "static",
+      "transform": "none",
+      "clipped": false,
+      "overlap": false,
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "sort": "price_desc",
+      "label": "Цена больше",
+      "sortFont": "18px",
+      "mapFont": "18px",
+      "quickFont": "18px",
+      "countFont": "15px",
+      "resetFont": "14px",
+      "rect": {
+        "x": 529,
+        "y": 558.984375,
+        "right": 739,
+        "bottom": 602.984375
+      },
+      "mapRect": {
+        "x": 365.28125,
+        "y": 558.984375,
+        "right": 501,
+        "bottom": 602.984375
+      },
+      "position": "static",
+      "transform": "none",
+      "clipped": false,
+      "overlap": false,
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "sort": "square_asc",
+      "label": "Площадь меньше",
+      "sortFont": "18px",
+      "mapFont": "18px",
+      "quickFont": "18px",
+      "countFont": "15px",
+      "resetFont": "14px",
+      "rect": {
+        "x": 529,
+        "y": 558.984375,
+        "right": 739,
+        "bottom": 602.984375
+      },
+      "mapRect": {
+        "x": 365.28125,
+        "y": 558.984375,
+        "right": 501,
+        "bottom": 602.984375
+      },
+      "position": "static",
+      "transform": "none",
+      "clipped": false,
+      "overlap": false,
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "sort": "square_desc",
+      "label": "Площадь больше",
+      "sortFont": "18px",
+      "mapFont": "18px",
+      "quickFont": "18px",
+      "countFont": "15px",
+      "resetFont": "14px",
+      "rect": {
+        "x": 529,
+        "y": 558.984375,
+        "right": 739,
+        "bottom": 602.984375
+      },
+      "mapRect": {
+        "x": 365.28125,
+        "y": 558.984375,
+        "right": 501,
+        "bottom": 602.984375
+      },
+      "position": "static",
+      "transform": "none",
+      "clipped": false,
+      "overlap": false,
+      "overflow": false
+    },
+    {
+      "width": 1024,
+      "sort": "relevance",
+      "label": "По релевантности",
+      "sortFont": "18px",
+      "mapFont": "18px",
+      "quickFont": "18px",
+      "countFont": "15px",
+      "resetFont": "14px",
+      "rect": {
+        "x": 768.125,
+        "y": 481.78125,
+        "right": 978.125,
+        "bottom": 525.78125
+      },
+      "mapRect": {
+        "x": 604.40625,
+        "y": 481.78125,
+        "right": 740.125,
+        "bottom": 525.78125
+      },
+      "position": "static",
+      "transform": "none",
+      "clipped": false,
+      "overlap": false,
+      "overflow": false
+    },
+    {
+      "width": 1024,
+      "sort": "price_asc",
+      "label": "Цена меньше",
+      "sortFont": "18px",
+      "mapFont": "18px",
+      "quickFont": "18px",
+      "countFont": "15px",
+      "resetFont": "14px",
+      "rect": {
+        "x": 768.125,
+        "y": 481.78125,
+        "right": 978.125,
+        "bottom": 525.78125
+      },
+      "mapRect": {
+        "x": 604.40625,
+        "y": 481.78125,
+        "right": 740.125,
+        "bottom": 525.78125
+      },
+      "position": "static",
+      "transform": "none",
+      "clipped": false,
+      "overlap": false,
+      "overflow": false
+    },
+    {
+      "width": 1024,
+      "sort": "price_desc",
+      "label": "Цена больше",
+      "sortFont": "18px",
+      "mapFont": "18px",
+      "quickFont": "18px",
+      "countFont": "15px",
+      "resetFont": "14px",
+      "rect": {
+        "x": 768.125,
+        "y": 481.78125,
+        "right": 978.125,
+        "bottom": 525.78125
+      },
+      "mapRect": {
+        "x": 604.40625,
+        "y": 481.78125,
+        "right": 740.125,
+        "bottom": 525.78125
+      },
+      "position": "static",
+      "transform": "none",
+      "clipped": false,
+      "overlap": false,
+      "overflow": false
+    },
+    {
+      "width": 1024,
+      "sort": "square_asc",
+      "label": "Площадь меньше",
+      "sortFont": "18px",
+      "mapFont": "18px",
+      "quickFont": "18px",
+      "countFont": "15px",
+      "resetFont": "14px",
+      "rect": {
+        "x": 768.125,
+        "y": 481.78125,
+        "right": 978.125,
+        "bottom": 525.78125
+      },
+      "mapRect": {
+        "x": 604.40625,
+        "y": 481.78125,
+        "right": 740.125,
+        "bottom": 525.78125
+      },
+      "position": "static",
+      "transform": "none",
+      "clipped": false,
+      "overlap": false,
+      "overflow": false
+    },
+    {
+      "width": 1024,
+      "sort": "square_desc",
+      "label": "Площадь больше",
+      "sortFont": "18px",
+      "mapFont": "18px",
+      "quickFont": "18px",
+      "countFont": "15px",
+      "resetFont": "14px",
+      "rect": {
+        "x": 768.125,
+        "y": 481.78125,
+        "right": 978.125,
+        "bottom": 525.78125
+      },
+      "mapRect": {
+        "x": 604.40625,
+        "y": 481.78125,
+        "right": 740.125,
+        "bottom": 525.78125
+      },
+      "position": "static",
+      "transform": "none",
+      "clipped": false,
+      "overlap": false,
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "sort": "relevance",
+      "label": "По релевантности",
+      "sortFont": "18px",
+      "mapFont": "18px",
+      "quickFont": "18px",
+      "countFont": "15px",
+      "resetFont": "14px",
+      "rect": {
+        "x": 1156.671875,
+        "y": 534.59375,
+        "right": 1366.671875,
+        "bottom": 578.59375
+      },
+      "mapRect": {
+        "x": 992.953125,
+        "y": 534.59375,
+        "right": 1128.671875,
+        "bottom": 578.59375
+      },
+      "position": "static",
+      "transform": "none",
+      "clipped": false,
+      "overlap": false,
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "sort": "price_asc",
+      "label": "Цена меньше",
+      "sortFont": "18px",
+      "mapFont": "18px",
+      "quickFont": "18px",
+      "countFont": "15px",
+      "resetFont": "14px",
+      "rect": {
+        "x": 1156.671875,
+        "y": 534.59375,
+        "right": 1366.671875,
+        "bottom": 578.59375
+      },
+      "mapRect": {
+        "x": 992.953125,
+        "y": 534.59375,
+        "right": 1128.671875,
+        "bottom": 578.59375
+      },
+      "position": "static",
+      "transform": "none",
+      "clipped": false,
+      "overlap": false,
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "sort": "price_desc",
+      "label": "Цена больше",
+      "sortFont": "18px",
+      "mapFont": "18px",
+      "quickFont": "18px",
+      "countFont": "15px",
+      "resetFont": "14px",
+      "rect": {
+        "x": 1156.671875,
+        "y": 534.59375,
+        "right": 1366.671875,
+        "bottom": 578.59375
+      },
+      "mapRect": {
+        "x": 992.953125,
+        "y": 534.59375,
+        "right": 1128.671875,
+        "bottom": 578.59375
+      },
+      "position": "static",
+      "transform": "none",
+      "clipped": false,
+      "overlap": false,
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "sort": "square_asc",
+      "label": "Площадь меньше",
+      "sortFont": "18px",
+      "mapFont": "18px",
+      "quickFont": "18px",
+      "countFont": "15px",
+      "resetFont": "14px",
+      "rect": {
+        "x": 1156.671875,
+        "y": 534.59375,
+        "right": 1366.671875,
+        "bottom": 578.59375
+      },
+      "mapRect": {
+        "x": 992.953125,
+        "y": 534.59375,
+        "right": 1128.671875,
+        "bottom": 578.59375
+      },
+      "position": "static",
+      "transform": "none",
+      "clipped": false,
+      "overlap": false,
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "sort": "square_desc",
+      "label": "Площадь больше",
+      "sortFont": "18px",
+      "mapFont": "18px",
+      "quickFont": "18px",
+      "countFont": "15px",
+      "resetFont": "14px",
+      "rect": {
+        "x": 1156.671875,
+        "y": 534.59375,
+        "right": 1366.671875,
+        "bottom": 578.59375
+      },
+      "mapRect": {
+        "x": 992.953125,
+        "y": 534.59375,
+        "right": 1128.671875,
+        "bottom": 578.59375
+      },
+      "position": "static",
+      "transform": "none",
+      "clipped": false,
+      "overlap": false,
+      "overflow": false
+    },
+    {
+      "width": 1920,
+      "sort": "relevance",
+      "label": "По релевантности",
+      "sortFont": "20px",
+      "mapFont": "20px",
+      "quickFont": "20px",
+      "countFont": "15px",
+      "resetFont": "14px",
+      "rect": {
+        "x": 1605.015625,
+        "y": 550.796875,
+        "right": 1815.015625,
+        "bottom": 594.796875
+      },
+      "mapRect": {
+        "x": 1433.328125,
+        "y": 550.796875,
+        "right": 1577.015625,
+        "bottom": 594.796875
+      },
+      "position": "static",
+      "transform": "none",
+      "clipped": false,
+      "overlap": false,
+      "overflow": false
+    },
+    {
+      "width": 1920,
+      "sort": "price_asc",
+      "label": "Цена меньше",
+      "sortFont": "20px",
+      "mapFont": "20px",
+      "quickFont": "20px",
+      "countFont": "15px",
+      "resetFont": "14px",
+      "rect": {
+        "x": 1605.015625,
+        "y": 550.796875,
+        "right": 1815.015625,
+        "bottom": 594.796875
+      },
+      "mapRect": {
+        "x": 1433.328125,
+        "y": 550.796875,
+        "right": 1577.015625,
+        "bottom": 594.796875
+      },
+      "position": "static",
+      "transform": "none",
+      "clipped": false,
+      "overlap": false,
+      "overflow": false
+    },
+    {
+      "width": 1920,
+      "sort": "price_desc",
+      "label": "Цена больше",
+      "sortFont": "20px",
+      "mapFont": "20px",
+      "quickFont": "20px",
+      "countFont": "15px",
+      "resetFont": "14px",
+      "rect": {
+        "x": 1605.015625,
+        "y": 550.796875,
+        "right": 1815.015625,
+        "bottom": 594.796875
+      },
+      "mapRect": {
+        "x": 1433.328125,
+        "y": 550.796875,
+        "right": 1577.015625,
+        "bottom": 594.796875
+      },
+      "position": "static",
+      "transform": "none",
+      "clipped": false,
+      "overlap": false,
+      "overflow": false
+    },
+    {
+      "width": 1920,
+      "sort": "square_asc",
+      "label": "Площадь меньше",
+      "sortFont": "20px",
+      "mapFont": "20px",
+      "quickFont": "20px",
+      "countFont": "15px",
+      "resetFont": "14px",
+      "rect": {
+        "x": 1605.015625,
+        "y": 550.796875,
+        "right": 1815.015625,
+        "bottom": 594.796875
+      },
+      "mapRect": {
+        "x": 1433.328125,
+        "y": 550.796875,
+        "right": 1577.015625,
+        "bottom": 594.796875
+      },
+      "position": "static",
+      "transform": "none",
+      "clipped": false,
+      "overlap": false,
+      "overflow": false
+    },
+    {
+      "width": 1920,
+      "sort": "square_desc",
+      "label": "Площадь больше",
+      "sortFont": "20px",
+      "mapFont": "20px",
+      "quickFont": "20px",
+      "countFont": "15px",
+      "resetFont": "14px",
+      "rect": {
+        "x": 1605.015625,
+        "y": 550.796875,
+        "right": 1815.015625,
+        "bottom": 594.796875
+      },
+      "mapRect": {
+        "x": 1433.328125,
+        "y": 550.796875,
+        "right": 1577.015625,
+        "bottom": 594.796875
+      },
+      "position": "static",
+      "transform": "none",
+      "clipped": false,
+      "overlap": false,
+      "overflow": false
+    }
+  ],
+  "problems": [],
+  "errors": [],
+  "sortingInteraction": true,
+  "mapOpenClose": true
+}

@@ -1,5 +1,5 @@
 /* Entry control uses the homepage header-button role; fullscreen geometry comes from resort. */
-html body.catalog-listing-page .catalog-map-trigger{display:inline-flex;align-items:center;justify-content:center;gap:10px;flex:none;min-height:44px;padding:0 16px;border:1px solid #8b1d25;border-radius:1px;background:#fff;color:#8b1d25;font:400 16px/1.1 'Tilda Sans',sans-serif;white-space:nowrap;cursor:pointer}
+html body.catalog-listing-page .catalog-map-trigger{display:inline-flex;align-items:center;justify-content:center;gap:10px;flex:none;min-height:44px;padding:0 16px;border:1px solid #8b1d25;border-radius:1px;background:#fff;color:#8b1d25;font:400 var(--home-field)/1.1 'Tilda Sans',sans-serif;white-space:nowrap;cursor:pointer}
 html body.catalog-listing-page .catalog-map-trigger svg{width:20px;height:20px;flex:none}
 html body.catalog-listing-page .catalog-map-trigger:hover{background:#8b1d25;color:#fff}
 html body.catalog-listing-page .catalog-map-trigger:focus-visible{outline:2px solid #8b1d25;outline-offset:3px}
@@ -13,7 +13,7 @@ html body.catalog-listing-page .catalog-map-trigger:disabled{opacity:.45;cursor:
  html body.catalog-listing-page .catalog-result-summary [data-show-favorites]{display:none}
  html body.catalog-listing-page .catalog-result-summary #results-count{grid-column:2;grid-row:1;justify-self:end;text-align:right}
  html body.catalog-listing-page .catalog-result-summary .catalog-grid__sort{grid-column:2;grid-row:2}
- html body.catalog-listing-page .catalog-result-summary .catalog-map-trigger{grid-column:1;grid-row:1/span 2;justify-self:start;align-self:center;font-size:14px;padding-inline:12px}
+ html body.catalog-listing-page .catalog-result-summary .catalog-map-trigger{grid-column:1;grid-row:1/span 2;justify-self:start;align-self:center;padding-inline:12px}
 }
 /* Short screens scroll the entire drawer rather than squeezing the project list to zero. */
 @media(max-height:700px){
@@ -30,3 +30,9 @@ html body.catalog-listing-page .catalog-map-trigger:disabled{opacity:.45;cursor:
 
 html body.catalog-listing-page .catalog-map-trigger svg{display:block;align-self:center;transform:translateY(-1px)}
 .catalog-map-browser .catalog-map-market[hidden]{display:none!important}
+
+/* Result actions share the field scale; narrow phones give sorting a full row. */
+@media(max-width:359px){
+ html body.catalog-listing-page .catalog-result-summary .catalog-map-trigger{grid-row:1}
+ html body.catalog-listing-page .catalog-result-summary .catalog-grid__sort{grid-column:1/-1;width:220px}
+}

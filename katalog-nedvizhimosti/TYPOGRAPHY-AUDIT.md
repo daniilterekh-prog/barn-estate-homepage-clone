@@ -36,3 +36,5 @@
 Повторная проверка: `node katalog-nedvizhimosti/tools/check_catalog_typography.cjs`. URL каталога и каталог отчёта задаются BARNES_CATALOG_URL и BARNES_PROOF_DIR. Используется существующий Playwright/Chrome, новых пакетов/шрифтов не установлено.
 
 Уточнение от 03.11.2026: по отдельному запросу хлебные крошки перенесены на шкалу [страницы продажи собственникам](https://barn-estate.ru/prodazha_sobstvennikam/): 12/13/17px и отдельный адаптивный размер разделителя. [Замеры 20 ширин](verification/owner-breadcrumbs/breadcrumbs.json). Остальные роли этого аудита сохранены.
+
+По уточнению пользователя сортировка и «На карте» также переведены на --home-field (17/18/20px), [проверены 50 сочетаний](verification/result-type/typography.json). Счётчик и сброс остаются компактными.
