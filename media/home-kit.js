@@ -72,7 +72,23 @@
   }
   document.body.dataset.homeSpacingReady='true';
   window.__barnesHeaderContacts?.refresh();
-  // Eyebrows of the shared team/newsletter sections, verbatim from the approved kit.
+  // Explicit section-heading roles from the homepage kit. A single wrapper
+  // prevents the section gap being added between the eyebrow and its H2.
+  const headings=[
+   ['.media-weekly__title','Редакционный выбор'],
+   ['.media-market__title','Направления BARN Estate'],
+   ['.media-fresh__title','Медиа BARN Estate'],
+   ['.media-analytics__title','Аналитика BARN Estate'],
+   ['.media-cta-banner__title','Консультация BARN Estate'],
+   ['.media-library__title','Издания BARN Estate'],
+   ['.media-subscribe__title','Дайджест BARN Estate']
+  ];
+  for(const [selector,text] of headings){
+   const heading=document.querySelector(selector);if(!heading||heading.closest('.media-kit-heading'))continue;
+   const group=document.createElement('div');group.className='media-kit-heading';
+   const eyebrow=document.createElement('p');eyebrow.className='home-section-eyebrow';eyebrow.textContent=text;
+   heading.before(group);group.append(eyebrow,heading);
+  }
   for(const [selector,headingSelector,text] of [
    ['.team-section__intro','.team-section__title','Эксперты по недвижимости'],
    ['.newsletter-cta__copy','h2','Рассылка BARN Estate']

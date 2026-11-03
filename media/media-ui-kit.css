@@ -1,0 +1,55 @@
+/* Complete semantic mapping to the approved homepage UI-kit v1.0.0.
+ * Header/hero retain their separately approved composition and typography. */
+body.barnes-media-kit {--media-card-gap:40px;}
+body.barnes-media-kit .media-kit-heading {display:flex;flex-direction:column;gap:0!important;min-width:0;width:100%;margin:0;padding:0;}
+body.barnes-media-kit :is(.media-weekly__inner,.media-market__inner,.media-fresh__header,.media-analytics__header) > .media-kit-heading {align-items:center;text-align:center;}
+body.barnes-media-kit :is(.media-weekly__title,.media-fresh__title) {line-height:1!important;}
+body.barnes-media-kit .media-cta-banner__inner > .media-kit-heading {align-items:center;text-align:center;}
+body.barnes-media-kit .media-cta-banner .home-section-eyebrow {color:rgba(255,255,255,.8)!important;}
+/* Body/card roles: regular article titles; light descriptions and quiet metadata. */
+body.barnes-media-kit :is(.media-intents__title,.media-weekly__card-title,.media-fresh__card-title) {
+ font-size:18px!important;line-height:24.3px!important;font-weight:400!important;
+ color:#1e1e1e!important;letter-spacing:normal!important;text-transform:none!important;
+}
+body.barnes-media-kit .media-intents__text {font-size:13px!important;line-height:18px!important;font-weight:300!important;color:#656462!important;}
+body.barnes-media-kit .media-weekly__featured-title {font-size:24px!important;line-height:28.8px!important;font-weight:400!important;color:#1e1e1e!important;}
+body.barnes-media-kit .media-market__featured-name {font-size:35px!important;line-height:1.3!important;font-weight:300!important;color:#1e1e1e!important;}
+body.barnes-media-kit .media-market__featured-text {font-size:15px!important;line-height:21px!important;font-weight:300!important;color:#4f4d49!important;}
+body.barnes-media-kit .media-market__item-name {font-size:16px!important;line-height:21.6px!important;font-weight:400!important;color:#1e1e1e!important;}
+body.barnes-media-kit :is(.media-weekly__badge,.media-fresh__badge,.media-analytics__badge) {
+ font-size:13px!important;line-height:18px!important;font-weight:400!important;color:#4f4d49!important;
+}
+body.barnes-media-kit :is(.media-weekly__date,.media-fresh__date,.media-analytics__date) {font-size:13px!important;line-height:18px!important;font-weight:300!important;color:#656462!important;}
+body.barnes-media-kit .media-market__featured-badge {
+ font-size:14px!important;line-height:16.1px!important;font-weight:400!important;letter-spacing:.12em!important;color:#4f4d49!important;text-transform:uppercase;
+}
+body.barnes-media-kit .media-analytics__featured-title {font-size:30px!important;line-height:36px!important;font-weight:400!important;color:#fff!important;letter-spacing:normal!important;text-transform:none!important;}
+body.barnes-media-kit .media-analytics__card-title {font-size:18px!important;line-height:24.3px!important;font-weight:400!important;color:#fff!important;letter-spacing:normal!important;text-transform:none!important;}
+/* Use the text-action role, rather than a mixture of 15/16px light labels. */
+body.barnes-media-kit :is(.media-intents__action,.media-weekly__action,.media-fresh__action,.media-market__featured-action,.team-member-card__link) {
+ box-sizing:border-box;display:inline-flex!important;align-items:center;align-self:flex-start;
+ width:max-content;max-width:100%;min-height:44px;padding:8px 0!important;
+ font-size:14px!important;line-height:1.2!important;font-weight:400!important;letter-spacing:.12em!important;
+ color:#8b1d25!important;text-decoration:none!important;border-bottom:1px solid currentColor;
+}
+body.barnes-media-kit .team-member-card__link {color:#fff!important;}
+body.barnes-media-kit .ui-more-link {min-height:44px;padding-block:8px;}
+/* Match the editorial card rhythm of the homepage news carousel. */
+body.barnes-media-kit :is(.media-weekly__layout,.media-weekly__grid,.media-fresh__grid,.media-market__layout,.media-analytics__grid,.media-analytics__side) {gap:var(--media-card-gap)!important;}
+body.barnes-media-kit .media-weekly__card-body {padding:16px!important;gap:12px!important;}
+body.barnes-media-kit .media-fresh__body {gap:12px!important;}
+/* Reserve a separate badge row above the featured analytic title. */
+body.barnes-media-kit :is(.media-analytics__featured-body,.media-analytics__card-body) {padding-top:64px!important;}
+body.barnes-media-kit .media-analytics__card-body {gap:24px!important;}
+@media(min-width:1441px) {body.barnes-media-kit .media-market__featured-name {font-size:42px!important;}}
+@media(max-width:1024px) {
+ body.barnes-media-kit .media-market__featured-badge {font-size:12px!important;line-height:14.4px!important;}
+}
+@media(max-width:540px) {
+ body.barnes-media-kit {--media-card-gap:24px;}
+ body.barnes-media-kit .media-weekly__featured-title {font-size:20px!important;line-height:24px!important;}
+ body.barnes-media-kit .media-market__featured-name {font-size:26px!important;}
+ body.barnes-media-kit .media-analytics__featured-title {font-size:22px!important;line-height:26.4px!important;}
+ body.barnes-media-kit :is(.media-intents__action,.media-weekly__action,.media-fresh__action,.media-market__featured-action,.team-member-card__link) {font-size:12px!important;}
+ body.barnes-media-kit .ui-more-link__label {font-size:12px!important;}
+}
