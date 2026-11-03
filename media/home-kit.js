@@ -32,6 +32,9 @@
    if(bounds.right>limit)entry.panel.style.left=(limit-bounds.right)+'px';
   }
   for(const entry of entries){
+   let touchPending=false,touchWasOpen=false;
+   entry.trigger.addEventListener('pointerdown',event=>{if(event.pointerType==='touch'){touchPending=true;touchWasOpen=!entry.panel.hidden;}});
+   entry.trigger.addEventListener('pointercancel',()=>{touchPending=false;});
    entry.item.addEventListener('pointerenter',event=>{if(event.pointerType!=='touch')open(entry);});
    entry.item.addEventListener('pointerleave',()=>{if(!entry.item.contains(document.activeElement))entry.timer=setTimeout(()=>close(entry),140);});
    entry.item.addEventListener('focusin',()=>{if(!suppressFocus)open(entry);});
@@ -43,7 +46,7 @@
      event.preventDefault();open(entry);const next=index<0?(event.key==='ArrowDown'?0:links.length-1):(index+(event.key==='ArrowDown'?1:-1)+links.length)%links.length;links[next]?.focus();
     }
    });
-   entry.trigger.addEventListener('click',event=>{if(matchMedia('(hover:none)').matches&&entry.panel.hidden){event.preventDefault();open(entry);}});
+   entry.trigger.addEventListener('click',event=>{if(touchPending){touchPending=false;if(!touchWasOpen){event.preventDefault();open(entry);}}});
   }
   document.addEventListener('pointerdown',event=>{if(!nav.contains(event.target))closeAll();});
   window.addEventListener('resize',closeAll);window.addEventListener('scroll',closeAll,{passive:true});
