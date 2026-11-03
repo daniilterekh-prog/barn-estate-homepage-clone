@@ -1,4 +1,4 @@
-import '../../js/catalog-filters.js?v=20261103-current-listing-15';
+import '../../js/catalog-filters.js?v=20261103-current-listing-16';
 import '../../js/start-sales-cards.js?v=20261102-home-choice-9';
 import '../../js/header-layout.js?v=20261103-hero-breadcrumbs-14';
 import '../../js/faq.js?v=20261102-faq-6';

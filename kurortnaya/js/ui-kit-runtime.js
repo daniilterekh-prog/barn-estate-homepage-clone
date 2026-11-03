@@ -3,10 +3,10 @@
   filtersTemplate.src = 'js/filters-template.js?v=20261102-catalog-filters-12';
   filtersTemplate.onload = function () {
     var filtersScript = document.createElement('script');
-    filtersScript.src = 'js/filters-modal.js?v=20261103-current-listing-15';
+    filtersScript.src = 'js/filters-modal.js?v=20261103-current-listing-16';
     filtersScript.onload = function () {
       var quickScript = document.createElement('script');
-      quickScript.src = 'js/quick-filters.js?v=20261103-current-listing-15';
+      quickScript.src = 'js/quick-filters.js?v=20261103-current-listing-16';
       quickScript.onload = function () {
         var brandsScript = document.createElement('script');
         brandsScript.src = 'js/brand-filters.js?v=20261102-catalog-filters-12';
@@ -618,7 +618,7 @@
 
   if (!document.querySelector('script[data-kurortnaya-listing-mode]')) {
     var listingScript = document.createElement('script');
-    listingScript.src = 'js/listing-mode.js?v=20261103-current-listing-15';
+    listingScript.src = 'js/listing-mode.js?v=20261103-current-listing-16';
     listingScript.dataset.kurortnayaListingMode = 'true';
     document.body.appendChild(listingScript);
   }
