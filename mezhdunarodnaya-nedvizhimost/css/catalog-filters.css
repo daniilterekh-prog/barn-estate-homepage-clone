@@ -40,7 +40,7 @@ html body.barnes-header-template .catalog-mode-detailed-filters svg{flex:none;wi
 html body.barnes-header-template .catalog-mode-toolbar :is(button,input):focus-visible{outline:2px solid #8b1d25;outline-offset:3px}
 html body.barnes-header-template .catalog-mode-detailed-filters:focus-visible{outline-color:#1e1e1e}
 /* Optional collections sit between the search and the result controls. */
-html body.barnes-header-template .catalog-collections-row{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:60px;padding:8px 0 12px;margin-bottom:12px;border-bottom:1px solid #e4e4e4}
+html body.barnes-header-template .catalog-collections-row{display:flex;justify-content:space-between;gap:16px;min-height:60px;padding:8px 0 12px;margin-bottom:12px;border-bottom:1px solid #e4e4e4}
 html body.barnes-header-template .catalog-collections-row .barnes-brand-filters{display:flex;align-items:center;flex-wrap:wrap;gap:4px 28px;width:auto;margin:0;padding:0;font:300 15px/1.3 'Tilda Sans',sans-serif;color:#4f4d49}
 html body.barnes-header-template .catalog-collections-row .barnes-brand-filters label{min-height:40px;gap:10px;padding:0;white-space:nowrap}
 html body.barnes-header-template .catalog-collections-row .barnes-brand-filters__box{width:18px;height:18px;flex-basis:18px;border-color:#8b8986}
@@ -58,7 +58,7 @@ html body.barnes-header-template .catalog-result-summary .resort-sort-trigger{bo
 html body.barnes-header-template .resort-quick-dropdown{padding:8px;border:1px solid #8b8986;border-radius:1px;background:#fff;color:#4f4d49;box-shadow:0 8px 24px #1e1e1e0a}
 html body.barnes-header-template .resort-quick-dropdown .catalog-quick-filters__dropdown-header{padding:8px 10px 12px;margin-bottom:4px;border-bottom:1px solid #e4e4e4;font:400 15px/1.3 'Tilda Sans',sans-serif}
 html body.barnes-header-template .resort-quick-dropdown .catalog-quick-filters__dropdown-close{width:28px;height:28px;color:#4f4d49}
-html body.barnes-header-template .resort-quick-dropdown [role=option]{padding:12px;min-height:44px;border:1px solid transparent;border-radius:1px;font:300 17px/1.3 'Tilda Sans',sans-serif}
+html body.barnes-header-template .resort-quick-dropdown [role=option]{padding:12px;border:1px solid transparent;border-radius:1px;font:300 17px/1.3 'Tilda Sans',sans-serif}
 html body.barnes-header-template .resort-quick-dropdown [role=option]:hover{background:#f7f7f7;color:#1e1e1e}
 html body.barnes-header-template .resort-quick-dropdown [role=option].is-selected{background:#f9f3f3;color:#8b1d25;border-color:#8b1d25}
 @media(min-width:1441px){html body.barnes-header-template .catalog-toolbar__secondary .catalog-mode-detailed-filters[class][class]{font-size:19px}}
@@ -86,11 +86,11 @@ html body.barnes-header-template .resort-quick-dropdown [role=option].is-selecte
  html body.barnes-header-template .catalog-mode-toolbar>.catalog-toolbar__secondary>.catalog-mode-detailed-filters[class][class]{grid-column:2;grid-row:3;width:58px;height:58px;min-height:58px;padding:0;border-color:#8b8986;background:#fff;color:#1e1e1e}
  html body.barnes-header-template .catalog-mode-detailed-filters__label{display:none!important}
  .catalog-filter-count{position:absolute;right:3px;top:3px;min-width:16px;height:16px;font-size:11px;background:#8b1d25;color:#fff}
- html body.barnes-header-template .catalog-collections-row{align-items:flex-start;gap:8px;flex-direction:column;padding:12px 0;margin-bottom:12px}
+ html body.barnes-header-template .catalog-collections-row{gap:8px;flex-direction:column;padding:12px 0;margin-bottom:12px}
  html body.barnes-header-template .catalog-collections-row .barnes-brand-filters{display:flex;flex-wrap:wrap;gap:0 24px;font-size:15px}
  html body.barnes-header-template .catalog-collections-row .barnes-brand-filters label{min-height:36px}
  html body.barnes-header-template .catalog-reset-all{min-height:36px;font-size:14px}
- html body.barnes-header-template .catalog-result-summary{display:grid;grid-template-columns:auto minmax(0,1fr);gap:0 12px;margin-bottom:20px;font-size:14px}
+ html body.barnes-header-template .catalog-result-summary{grid-template-columns:auto minmax(0,1fr);margin-bottom:20px;font-size:14px}
  .catalog-result-actions{display:contents}
  html body.barnes-header-template .catalog-result-summary .catalog-grid__sort{grid-column:2;grid-row:1;justify-self:end;width:180px;max-width:100%}
  html body.barnes-header-template .catalog-result-summary .resort-sort-trigger{font-size:14px}
@@ -167,7 +167,6 @@ html body.barnes-header-template .catalog-department select { width:100%; height
  html body.barnes-header-template .catalog-collections-row .barnes-brand-filters label { flex:1; min-width:0; white-space:normal; }
  html body.barnes-header-template .catalog-result-summary { align-items:flex-start; margin-bottom:12px; }
  html body.barnes-header-template .catalog-result-actions { justify-content:flex-end; flex-wrap:wrap; gap:8px 16px; }
- html body.barnes-header-template .catalog-result-summary .catalog-grid__sort { width:100%; }
 }
 
 /* Light full form copied from catalogue role overrides. */
@@ -177,7 +176,7 @@ html body.barnes-header-template .resort-filters :is(.hero-filter-panel-content_
 html body.barnes-header-template .resort-filters :is(.hero-filter-panel-content__title,.hero-filter-modal__title,.ui-checkbox__label,.ui-input__label){color:#1e1e1e!important}
 html body.barnes-header-template .resort-filters .ui-input__control{color:#1e1e1e;background:#fff;border:1px solid #8b8986;border-radius:1px;font:300 18px/1.4 'Tilda Sans',sans-serif}
 html body.barnes-header-template .resort-filters .ui-input__control::placeholder{color:#656462;opacity:1}
-html body.barnes-header-template .resort-filters .ui-checkbox--chip{border:1px solid #8b8986;border-radius:1px;background:#fff;min-height:44px;font-weight:400;color:#4f4d49}
+html body.barnes-header-template .resort-filters .ui-checkbox--chip{border:1px solid #8b8986;border-radius:1px;background:#fff;font-weight:400;color:#4f4d49}
 html body.barnes-header-template .resort-filters .ui-checkbox--chip:has(input:checked){border-color:#8b1d25;background:#f9f3f3;color:#8b1d25}
 html body.barnes-header-template .resort-filters .ui-checkbox--chip:has(input:checked) .ui-checkbox__label{color:#8b1d25!important}
 html body.barnes-header-template .resort-filters .hero-filter-modal__close{color:#1e1e1e}

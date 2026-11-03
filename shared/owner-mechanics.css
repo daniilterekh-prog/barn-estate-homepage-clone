@@ -41,7 +41,6 @@ body.owner-rent-reference-ui .owner-sale-exclusive .owner-sale-exclusive__inner 
 body.owner-rent-reference-ui .owner-sale-exclusive .owner-sale-exclusive__header {
   align-self: start;
   display: block;
-  grid-column: 1;
   width: 100%;
 }
 

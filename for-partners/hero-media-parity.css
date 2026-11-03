@@ -41,8 +41,7 @@ body.barnes-media-reference.barnes-media-reference :is(.owner-sale-hero__actions
  align-items:stretch!important;align-self:flex-start!important;gap:16px!important;
  width:100%!important;max-width:925px!important;min-width:0!important;margin:0!important;
 }
-body.barnes-media-reference.barnes-media-reference :is(.owner-sale-hero__button,.ambassadors-hero__button) {
- display:inline-flex!important;align-items:center;justify-content:center;gap:24px!important;
+body.barnes-media-reference.barnes-media-reference :is(.owner-sale-hero__button,.ambassadors-hero__button) {align-items:center;justify-content:center;gap:24px!important;
  width:428px;max-width:100%!important;min-width:0!important;flex:0 1 428px;
  height:auto!important;min-height:70px!important;padding:16px 36px!important;
  font-size:17px!important;line-height:1.1!important;font-weight:400!important;border-radius:1px!important;

@@ -69,7 +69,6 @@
 
 .owner-rent-reference-ui .owner-sale-hero__text {
   color: #fff;
-  font-size: 22px;
   font-weight: var(--owner-rent-ui-heading-weight);
   line-height: 33px;
 }
@@ -971,10 +970,6 @@ body.owner-rent-reference-ui .owner-sale-hero .breadcrumbs__link {
   .owner-rent-reference-ui .owner-sale-presentation__card--featured .owner-sale-presentation__featured-text {
     text-align: center !important;
   }
-
-  .owner-rent-reference-ui .owner-sale-presentation__card--featured .owner-sale-presentation__featured {
-    align-items: center;
-  }
 }
 
 @media (min-width: 769px) {
@@ -1868,7 +1863,6 @@ body.owner-rent-reference-ui .owner-sale-hero .breadcrumbs__link {
 
   .owner-rent-reference-ui .newsletter-cta h2 {
     font-size: var(--owner-rent-ui-h2-mobile-size);
-    line-height: var(--owner-rent-ui-h2-mobile-line);
   }
 
   .owner-rent-reference-ui :is(
@@ -1888,10 +1882,6 @@ body.owner-rent-reference-ui .owner-sale-hero .breadcrumbs__link {
   .owner-rent-reference-ui :is(.ui-button--primary.ui-button--medium, .catalog-contact__submit, .catalog-contact__card-submit) {
     min-height: 58px;
     padding-inline: 24px;
-  }
-
-  .owner-rent-reference-ui .newsletter-form button {
-    min-height: 58px;
   }
 
   .owner-rent-reference-ui .newsletter-cta {
