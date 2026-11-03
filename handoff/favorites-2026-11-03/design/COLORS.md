@@ -18,12 +18,12 @@
 | color | `rgb(102, 102, 102)` | `.home-owner-form input`, `.home-owner-form__consent` |
 | color | `rgb(120, 128, 138)` | `.apartment-card__lotid` |
 | color | `rgb(139, 29, 37)` | `.catalog-mode-switch__button`, `.catalog-mode-switch__button span`, `.site-header__nav-link`, `.site-header__request` |
-| color | `rgb(255, 255, 255)` | `.apartment-card__detail-btn`, `.catalog-quick-filters__option`, `.favorites-empty a`, `.home-owner-form__submit`, `.site-footer` |
+| color | `rgb(255, 255, 255)` | `.apartment-card__detail-btn`, `.favorites-empty a`, `.home-owner-form__submit`, `.site-footer`, `.site-footer__callback-btn` |
 | color | `rgb(30, 30, 30)` | `.apartment-card`, `.apartment-card__body`, `.apartment-card__call-btn`, `.apartment-card__image`, `.apartment-card__name-text` |
-| color | `rgb(79, 77, 73)` | `.catalog-quick-filters__option`, `.favorites-empty p`, `.resort-quick-dropdown`, `.resort-sort-trigger` |
+| color | `rgb(79, 77, 73)` | `.favorites-empty p` |
 | color | `rgba(255, 255, 255, 0.8)` | `.site-footer__copyright` |
 | backgroundColor | `rgb(117, 23, 30)` | `.home-owner-form__submit` |
-| backgroundColor | `rgb(139, 29, 37)` | `.apartment-card__detail-btn`, `.catalog-quick-filters__option`, `.favorites-empty a`, `.home-owner-form__submit`, `[data-favorites-total]` |
+| backgroundColor | `rgb(139, 29, 37)` | `.apartment-card__detail-btn`, `.favorites-empty a`, `.home-owner-form__submit`, `[data-favorites-total]` |
 | backgroundColor | `rgb(255, 255, 255)` | `.apartment-card`, `.apartment-card__body`, `.apartment-card__call-btn`, `.catalog-header-dropdown`, `.catalog-mode-switch` |
 | backgroundColor | `rgb(38, 38, 38)` | `.site-footer` |
 | backgroundColor | `rgba(0, 0, 0, 0)` | `.apartment-card__address`, `.apartment-card__image`, `.apartment-card__lotid`, `.apartment-card__name-text`, `.apartment-card__price` |
@@ -33,15 +33,14 @@
 | border | `0px none rgb(102, 102, 102)` | `.home-owner-form input`, `.home-owner-form__consent` |
 | border | `0px none rgb(120, 128, 138)` | `.apartment-card__lotid` |
 | border | `0px none rgb(139, 29, 37)` | `.catalog-mode-switch__button`, `.catalog-mode-switch__button span`, `.site-header__nav-link` |
-| border | `0px none rgb(255, 255, 255)` | `.catalog-quick-filters__option`, `.site-footer`, `.site-footer__inner`, `[data-favorites-total]` |
+| border | `0px none rgb(255, 255, 255)` | `.site-footer`, `.site-footer__inner`, `[data-favorites-total]` |
 | border | `0px none rgb(30, 30, 30)` | `.apartment-card`, `.apartment-card__body`, `.apartment-card__image`, `.apartment-card__name-text`, `.apartment-card__price` |
-| border | `0px none rgb(79, 77, 73)` | `.catalog-quick-filters__option`, `.favorites-empty p`, `.resort-sort-trigger` |
+| border | `0px none rgb(79, 77, 73)` | `.favorites-empty p` |
 | border | `0px none rgba(255, 255, 255, 0.8)` | `.site-footer__copyright` |
 | border | `1px solid rgb(117, 23, 30)` | `.home-owner-form__submit` |
 | border | `1px solid rgb(139, 29, 37)` | `.apartment-card__detail-btn`, `.favorites-empty a`, `.home-owner-form__submit`, `.site-header__request` |
 | border | `1px solid rgb(183, 181, 178)` | `.home-quiz__option` |
 | border | `1px solid rgb(228, 228, 228)` | `.catalog-header-dropdown`, `.favorites-empty` |
-| border | `1px solid rgb(229, 229, 229)` | `.resort-quick-dropdown` |
 | border | `1px solid rgba(255, 255, 255, 0.7)` | `.site-footer__callback-btn` |
 | border | `1px solid rgba(30, 30, 30, 0.12)` | `.favorites-continue` |
 | border | `1px solid rgba(30, 30, 30, 0.22)` | `.apartment-card__call-btn` |

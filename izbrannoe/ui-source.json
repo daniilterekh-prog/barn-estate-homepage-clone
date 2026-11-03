@@ -241,5 +241,10 @@
     "headerNavigationSha256": "9d1c3a1f39c04b0814b6eb077ed7150f33ec9835240325017c6135fc6e3a7e8c",
     "pageRoles": "H1, breadcrumbs, main container and spacing, tab/sort typography, summary text",
     "exceptions": "Original cards preserved; favorites mobile tabs remain left aligned with constant 24px gap; sort popup title remains hidden."
+  },
+  "sortingRemoved": {
+    "date": "2026-11-03",
+    "order": "most recently saved first",
+    "reason": "explicit user request"
   }
 }

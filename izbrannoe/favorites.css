@@ -86,7 +86,7 @@ html body .favorites-continue svg{display:block;flex:0 0 24px}
 @media(max-width:700px){
  html body .favorites-toolbar.catalog-mode-toolbar{display:grid;grid-template-columns:minmax(0,1fr);gap:8px;padding-bottom:0}
  html body .favorites-layout .favorites-toolbar .favorites-sort{grid-row:1;grid-column:1;justify-self:end;margin:0}
- html body .favorites-toolbar .catalog-mode-switch{grid-row:2;grid-column:1;justify-self:start;gap:24px}
+ html body .favorites-toolbar .catalog-mode-switch{grid-row:1;grid-column:1;justify-self:start;gap:24px}
 }
 @media(max-width:540px){
  html body .favorites-toolbar .favorites-tab-long{display:none}

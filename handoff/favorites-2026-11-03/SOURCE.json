@@ -1,14 +1,14 @@
 {
   "date": "2026-11-03",
-  "sourceCommit": "05690256c8b46267f0164dca15e0e6008ae2ed84",
+  "sourceCommit": "b7b6a151200ab9f46495979bc13d5e32949f0f04",
   "source": "izbrannoe/",
   "transform": "Only local resource paths rebased to html/css/js/assets folders; external page links point to published main-site pages. Visual styles and behavior preserved.",
   "files": [
     {
       "source": "izbrannoe/index.html",
       "destination": "code/html/index.html",
-      "sourceSha256": "8ecdac56e170d58a0df92bffd2817d0cb206714213e67f94d160fbc9b84d21ee",
-      "exportSha256": "74a92b57f60ade72f4307af33598f4a76e7649ab3804a8f52cf05fc6565bd106"
+      "sourceSha256": "cbc5bb9c1eb7b8aa50951b2ffa3a85da30ba289231c622cb7fb7ae40c6141364",
+      "exportSha256": "4ed61de736f656ecc2d274210950ac00ef9f2c82511ca971dcb1211de2c83ee6"
     },
     {
       "source": "izbrannoe/favorites-kit.js",
@@ -31,20 +31,20 @@
     {
       "source": "izbrannoe/favorites.css",
       "destination": "code/css/favorites.css",
-      "sourceSha256": "e88281e28e3bf028fcd333059927d3a64bda8ae656fe644e83c7a895d5856a47",
-      "exportSha256": "e88281e28e3bf028fcd333059927d3a64bda8ae656fe644e83c7a895d5856a47"
+      "sourceSha256": "0f318a52651be968ab76e6ec820c394af150bc2055990f4f4921d131838cb5a7",
+      "exportSha256": "0f318a52651be968ab76e6ec820c394af150bc2055990f4f4921d131838cb5a7"
     },
     {
       "source": "izbrannoe/favorites-store.js",
       "destination": "code/js/favorites-store.js",
-      "sourceSha256": "9fd04aab9ec8fb3551444ce14d57c29170dd6452c5abab3be41274713ed5a437",
-      "exportSha256": "771962b9cc26c86f8dbd5a436435c3cada4deb85dfa0e66f80374887e518a85e"
+      "sourceSha256": "936314eb32bb0e255ff8e1f0e645eb959485b547605185aedd75f2be3a68dc33",
+      "exportSha256": "fa72dbf78bd3cd38485ee1471cb54b891dd185dc73646c15d7e6d3ac8738dd04"
     },
     {
       "source": "izbrannoe/favorites-page.js",
       "destination": "code/js/favorites-page.js",
-      "sourceSha256": "c9a0444b4b30dafc01cdda6503f72b2a887a4363049a415666eaefabbcf467d3",
-      "exportSha256": "c9a0444b4b30dafc01cdda6503f72b2a887a4363049a415666eaefabbcf467d3"
+      "sourceSha256": "bbf26c4e61af84e953e40d3185860b65022d867ae556fb2eeea8bea4c7cd2080",
+      "exportSha256": "bbf26c4e61af84e953e40d3185860b65022d867ae556fb2eeea8bea4c7cd2080"
     },
     {
       "source": "izbrannoe/ui/header-navigation.js",
@@ -77,28 +77,10 @@
       "exportSha256": "e49b4d4d80daa02e686e187b5291163d89e70b47005b54179e13706edcef9a2a"
     },
     {
-      "source": "izbrannoe/ui/quick-filters.js",
-      "destination": "code/js/ui/quick-filters.js",
-      "sourceSha256": "2a323210ce2cc6dad803d65b8e178682c7668d8d6e52edd51ebf0467711e374a",
-      "exportSha256": "c360eaf1a4ccba94e5466633ed4347b037b205413171b5d737c8ed15783bf803"
-    },
-    {
-      "source": "izbrannoe/ui/quick-filters.css",
-      "destination": "code/css/ui/quick-filters.css",
-      "sourceSha256": "d98d8da8b8b267d72a6a2d3a6d14536a02e4578e25eb30a52bf2dffa96f925a2",
-      "exportSha256": "d98d8da8b8b267d72a6a2d3a6d14536a02e4578e25eb30a52bf2dffa96f925a2"
-    },
-    {
       "source": "izbrannoe/ui/listing-mode.css",
       "destination": "code/css/ui/listing-mode.css",
       "sourceSha256": "aad90d91dc4ea719fa6cb4cd8dab6e056692824ca9331f26cbd45805e43e109c",
       "exportSha256": "aad90d91dc4ea719fa6cb4cd8dab6e056692824ca9331f26cbd45805e43e109c"
-    },
-    {
-      "source": "izbrannoe/ui/favorites-sort.css",
-      "destination": "code/css/ui/favorites-sort.css",
-      "sourceSha256": "b341d41fddafba658ef06c5967002bc8de153163de077ad083b0f0d99f6bc90f",
-      "exportSha256": "b341d41fddafba658ef06c5967002bc8de153163de077ad083b0f0d99f6bc90f"
     },
     {
       "source": "izbrannoe/ui/approved-kit/runtime.js",

@@ -7,9 +7,9 @@
 - От крошек до H1:22px на телефоне,28px выше. Под H1:28/40px.
 - Хэдер:77px до540px,111px до1280px,153/155px наdesktop. Логотип36/48px.
 - Подменю хедера: padding30px18px8px, рамка1px, gap12px. Текст выровнен по названию родителя, поверхность сдвинута левее на19px.
-- Вкладки и сортировка:44px. До700px сортировка выше вкладок; вкладки всегда слева, gap24px на мобильном, без растягивания.
+- Вкладки:44px, всегда слева; gap24px на мобильном, без растягивания. Сортировка отсутствует.
 - Сетка:3колонки, до1024px2, до540px1; ширина исходной карточки ограничена420px.
-- Отмена удаления доступна15секунд. Меню, сортировка и квиз закрываются поEscape с возвратом фокуса.
+- Отмена удаления доступна15секунд. Меню и квиз закрываются поEscape с возвратом фокуса.
 
 ## Фактическая геометрия
 
@@ -17,10 +17,10 @@
 | --- | --- | --- | --- | --- | --- | --- |
 | 320 | page | `.site-header` | 305.00 × 77.00 | 16px 0px 0px | 0px | normal |
 | 320 | page | `.site-header__logo img` | 129.20 × 36.00 | 0px | 0px | normal |
-| 320 | page | `.favorites-main` | 305.00 × 1369.86 | 28px 22px 40px | 0px | normal |
+| 320 | page | `.favorites-main` | 305.00 × 1317.86 | 28px 22px 40px | 0px | normal |
 | 320 | page | `.favorites-breadcrumbs` | 261.00 × 19.59 | 0px | 0px | 4px |
 | 320 | page | `.favorites-heading` | 261.00 × 83.59 | 22px 0px 28px | 0px | 24px |
-| 320 | page | `.favorites-toolbar` | 261.00 × 97.00 | 0px | 0px | 8px |
+| 320 | page | `.favorites-toolbar` | 261.00 × 45.00 | 0px | 0px | 8px |
 | 320 | page | `.catalog-mode-switch` | 161.00 × 44.00 | 0px | 0px | 24px |
 | 320 | page | `.favorites-summary` | 261.00 × 65.00 | 0px | 0px | 16px |
 | 320 | page | `.favorites-grid` | 261.00 × 929.67 | 0px | 0px | 26px |
@@ -32,10 +32,10 @@
 | 320 | page | `.site-footer__inner` | 274.59 × 1675.72 | 32px 23px 28px | 0px | normal |
 | 390 | page | `.site-header` | 375.00 × 77.00 | 16px 0px 0px | 0px | normal |
 | 390 | page | `.site-header__logo img` | 129.20 × 36.00 | 0px | 0px | normal |
-| 390 | page | `.favorites-main` | 375.00 × 1438.86 | 28px 22px 40px | 0px | normal |
+| 390 | page | `.favorites-main` | 375.00 × 1386.86 | 28px 22px 40px | 0px | normal |
 | 390 | page | `.favorites-breadcrumbs` | 331.00 × 19.59 | 0px | 0px | 4px |
 | 390 | page | `.favorites-heading` | 331.00 × 83.59 | 22px 0px 28px | 0px | 24px |
-| 390 | page | `.favorites-toolbar` | 331.00 × 97.00 | 0px | 0px | 8px |
+| 390 | page | `.favorites-toolbar` | 331.00 × 45.00 | 0px | 0px | 8px |
 | 390 | page | `.catalog-mode-switch` | 161.00 × 44.00 | 0px | 0px | 24px |
 | 390 | page | `.favorites-summary` | 331.00 × 65.00 | 0px | 0px | 16px |
 | 390 | page | `.favorites-grid` | 331.00 × 998.67 | 0px | 0px | 26px |
@@ -47,10 +47,10 @@
 | 390 | page | `.site-footer__inner` | 341.84 × 1675.72 | 32px 23px 28px | 0px | normal |
 | 540 | page | `.site-header` | 525.00 × 77.00 | 16px 0px 0px | 0px | normal |
 | 540 | page | `.site-header__logo img` | 129.20 × 36.00 | 0px | 0px | normal |
-| 540 | page | `.favorites-main` | 525.00 × 1572.36 | 28px 22px 40px | 0px | normal |
+| 540 | page | `.favorites-main` | 525.00 × 1520.36 | 28px 22px 40px | 0px | normal |
 | 540 | page | `.favorites-breadcrumbs` | 481.00 × 19.59 | 0px | 0px | 4px |
 | 540 | page | `.favorites-heading` | 481.00 × 83.59 | 22px 0px 28px | 0px | 24px |
-| 540 | page | `.favorites-toolbar` | 481.00 × 97.00 | 0px | 0px | 8px |
+| 540 | page | `.favorites-toolbar` | 481.00 × 45.00 | 0px | 0px | 8px |
 | 540 | page | `.catalog-mode-switch` | 161.00 × 44.00 | 0px | 0px | 24px |
 | 540 | page | `.favorites-summary` | 481.00 × 65.00 | 0px | 0px | 16px |
 | 540 | page | `.favorites-grid` | 481.00 × 1132.17 | 0px | 0px | 26px |
@@ -62,10 +62,10 @@
 | 540 | page | `.site-footer__inner` | 485.97 × 1675.72 | 32px 23px 28px | 0px | normal |
 | 541 | page | `.site-header` | 526.00 × 111.00 | 32px 0px 0px | 0px | normal |
 | 541 | page | `.site-header__logo img` | 172.27 × 48.00 | 0px | 0px | normal |
-| 541 | page | `.favorites-main` | 526.00 × 1010.28 | 32px 24px 70px | 0px | normal |
+| 541 | page | `.favorites-main` | 526.00 × 958.28 | 32px 24px 70px | 0px | normal |
 | 541 | page | `.favorites-breadcrumbs` | 478.00 × 22.39 | 0px | 0px | 6px |
 | 541 | page | `.favorites-heading` | 478.00 × 107.89 | 28px 0px 40px | 0px | 24px |
-| 541 | page | `.favorites-toolbar` | 478.00 × 97.00 | 0px | 0px | 8px |
+| 541 | page | `.favorites-toolbar` | 478.00 × 45.00 | 0px | 0px | 8px |
 | 541 | page | `.catalog-mode-switch` | 284.00 × 44.00 | 0px | 0px | 24px |
 | 541 | page | `.favorites-summary` | 478.00 × 76.00 | 0px | 0px | 16px |
 | 541 | page | `.favorites-grid` | 478.00 × 466.00 | 0px | 0px | 24px |
@@ -77,10 +77,10 @@
 | 541 | page | `.site-footer__inner` | 526.00 × 2044.34 | 40px 19.549px 28px | 0px | normal |
 | 700 | page | `.site-header` | 685.00 × 111.00 | 32px 0px 0px | 0px | normal |
 | 700 | page | `.site-header__logo img` | 172.27 × 48.00 | 0px | 0px | normal |
-| 700 | page | `.favorites-main` | 685.00 × 1023.67 | 32px 24px 70px | 0px | normal |
+| 700 | page | `.favorites-main` | 685.00 × 971.67 | 32px 24px 70px | 0px | normal |
 | 700 | page | `.favorites-breadcrumbs` | 637.00 × 22.39 | 0px | 0px | 6px |
 | 700 | page | `.favorites-heading` | 637.00 × 107.89 | 28px 0px 40px | 0px | 24px |
-| 700 | page | `.favorites-toolbar` | 637.00 × 97.00 | 0px | 0px | 8px |
+| 700 | page | `.favorites-toolbar` | 637.00 × 45.00 | 0px | 0px | 8px |
 | 700 | page | `.catalog-mode-switch` | 284.00 × 44.00 | 0px | 0px | 24px |
 | 700 | page | `.favorites-summary` | 637.00 × 76.00 | 0px | 0px | 16px |
 | 700 | page | `.favorites-grid` | 637.00 × 479.39 | 0px | 0px | 24px |
@@ -257,10 +257,10 @@
 | 3840 | page | `.site-footer__inner` | 1920.00 × 1262.16 | 55px 100px 50px | 0px 952.5px | normal |
 | 390 | burger | `.site-header` | 375.00 × 77.00 | 16px 0px 0px | 0px | normal |
 | 390 | burger | `.site-header__logo img` | 129.20 × 36.00 | 0px | 0px | normal |
-| 390 | burger | `.favorites-main` | 375.00 × 1438.86 | 28px 22px 40px | 0px | normal |
+| 390 | burger | `.favorites-main` | 375.00 × 1386.86 | 28px 22px 40px | 0px | normal |
 | 390 | burger | `.favorites-breadcrumbs` | 331.00 × 19.59 | 0px | 0px | 4px |
 | 390 | burger | `.favorites-heading` | 331.00 × 83.59 | 22px 0px 28px | 0px | 24px |
-| 390 | burger | `.favorites-toolbar` | 331.00 × 97.00 | 0px | 0px | 8px |
+| 390 | burger | `.favorites-toolbar` | 331.00 × 45.00 | 0px | 0px | 8px |
 | 390 | burger | `.catalog-mode-switch` | 161.00 × 44.00 | 0px | 0px | 24px |
 | 390 | burger | `.favorites-summary` | 331.00 × 65.00 | 0px | 0px | 16px |
 | 390 | burger | `.favorites-grid` | 331.00 × 998.67 | 0px | 0px | 26px |
@@ -270,28 +270,12 @@
 | 390 | burger | `.favorites-bottom` | 331.00 × 83.00 | 24px 0px 0px | 24px 0px 0px | 16px |
 | 390 | burger | `.favorites-continue` | 331.00 × 58.00 | 0px 24px | 0px | 24px |
 | 390 | burger | `.site-footer__inner` | 341.84 × 1675.72 | 32px 23px 28px | 0px | normal |
-| 390 | sort | `.site-header` | 375.00 × 77.00 | 16px 0px 0px | 0px | normal |
-| 390 | sort | `.site-header__logo img` | 129.20 × 36.00 | 0px | 0px | normal |
-| 390 | sort | `.favorites-main` | 375.00 × 1438.86 | 28px 22px 40px | 0px | normal |
-| 390 | sort | `.favorites-breadcrumbs` | 331.00 × 19.59 | 0px | 0px | 4px |
-| 390 | sort | `.favorites-heading` | 331.00 × 83.59 | 22px 0px 28px | 0px | 24px |
-| 390 | sort | `.favorites-toolbar` | 331.00 × 97.00 | 0px | 0px | 8px |
-| 390 | sort | `.catalog-mode-switch` | 161.00 × 44.00 | 0px | 0px | 24px |
-| 390 | sort | `.favorites-summary` | 331.00 × 65.00 | 0px | 0px | 16px |
-| 390 | sort | `.favorites-grid` | 331.00 × 998.67 | 0px | 0px | 26px |
-| 390 | sort | `.apartment-card` | 331.00 × 483.94 | 0px 0px 18px | 0px | normal |
-| 390 | sort | `.apartment-card__image` | 331.00 × 248.25 | 0px | 0px | normal |
-| 390 | sort | `.apartment-card__body` | 307.00 × 182.69 | 20px 18px 0px | -35px 12px 0px | normal |
-| 390 | sort | `.favorites-bottom` | 331.00 × 83.00 | 24px 0px 0px | 24px 0px 0px | 16px |
-| 390 | sort | `.favorites-continue` | 331.00 × 58.00 | 0px 24px | 0px | 24px |
-| 390 | sort | `.resort-quick-dropdown` | 220.00 × 158.00 | 13px | 0px | normal |
-| 390 | sort | `.site-footer__inner` | 341.84 × 1675.72 | 32px 23px 28px | 0px | normal |
 | 390 | quiz-task | `.site-header` | 375.00 × 77.00 | 16px 0px 0px | 0px | normal |
 | 390 | quiz-task | `.site-header__logo img` | 129.20 × 36.00 | 0px | 0px | normal |
-| 390 | quiz-task | `.favorites-main` | 375.00 × 1438.86 | 28px 22px 40px | 0px | normal |
+| 390 | quiz-task | `.favorites-main` | 375.00 × 1386.86 | 28px 22px 40px | 0px | normal |
 | 390 | quiz-task | `.favorites-breadcrumbs` | 331.00 × 19.59 | 0px | 0px | 4px |
 | 390 | quiz-task | `.favorites-heading` | 331.00 × 83.59 | 22px 0px 28px | 0px | 24px |
-| 390 | quiz-task | `.favorites-toolbar` | 331.00 × 97.00 | 0px | 0px | 8px |
+| 390 | quiz-task | `.favorites-toolbar` | 331.00 × 45.00 | 0px | 0px | 8px |
 | 390 | quiz-task | `.catalog-mode-switch` | 161.00 × 44.00 | 0px | 0px | 24px |
 | 390 | quiz-task | `.favorites-summary` | 331.00 × 65.00 | 0px | 0px | 16px |
 | 390 | quiz-task | `.favorites-grid` | 331.00 × 998.67 | 0px | 0px | 26px |
@@ -303,10 +287,10 @@
 | 390 | quiz-task | `.site-footer__inner` | 341.84 × 1675.72 | 32px 23px 28px | 0px | normal |
 | 390 | quiz-contact | `.site-header` | 375.00 × 77.00 | 16px 0px 0px | 0px | normal |
 | 390 | quiz-contact | `.site-header__logo img` | 129.20 × 36.00 | 0px | 0px | normal |
-| 390 | quiz-contact | `.favorites-main` | 375.00 × 1438.86 | 28px 22px 40px | 0px | normal |
+| 390 | quiz-contact | `.favorites-main` | 375.00 × 1386.86 | 28px 22px 40px | 0px | normal |
 | 390 | quiz-contact | `.favorites-breadcrumbs` | 331.00 × 19.59 | 0px | 0px | 4px |
 | 390 | quiz-contact | `.favorites-heading` | 331.00 × 83.59 | 22px 0px 28px | 0px | 24px |
-| 390 | quiz-contact | `.favorites-toolbar` | 331.00 × 97.00 | 0px | 0px | 8px |
+| 390 | quiz-contact | `.favorites-toolbar` | 331.00 × 45.00 | 0px | 0px | 8px |
 | 390 | quiz-contact | `.catalog-mode-switch` | 161.00 × 44.00 | 0px | 0px | 24px |
 | 390 | quiz-contact | `.favorites-summary` | 331.00 × 65.00 | 0px | 0px | 16px |
 | 390 | quiz-contact | `.favorites-grid` | 331.00 × 998.67 | 0px | 0px | 26px |
@@ -318,10 +302,10 @@
 | 390 | quiz-contact | `.site-footer__inner` | 341.84 × 1675.72 | 32px 23px 28px | 0px | normal |
 | 390 | empty | `.site-header` | 375.00 × 77.00 | 16px 0px 0px | 0px | normal |
 | 390 | empty | `.site-header__logo img` | 129.20 × 36.00 | 0px | 0px | normal |
-| 390 | empty | `.favorites-main` | 375.00 × 841.77 | 28px 22px 40px | 0px | normal |
+| 390 | empty | `.favorites-main` | 375.00 × 789.77 | 28px 22px 40px | 0px | normal |
 | 390 | empty | `.favorites-breadcrumbs` | 331.00 × 19.59 | 0px | 0px | 4px |
 | 390 | empty | `.favorites-heading` | 331.00 × 83.59 | 22px 0px 28px | 0px | 24px |
-| 390 | empty | `.favorites-toolbar` | 331.00 × 97.00 | 0px | 0px | 8px |
+| 390 | empty | `.favorites-toolbar` | 331.00 × 45.00 | 0px | 0px | 8px |
 | 390 | empty | `.catalog-mode-switch` | 165.00 × 44.00 | 0px | 0px | 24px |
 | 390 | empty | `.favorites-summary` | 331.00 × 65.00 | 0px | 0px | 16px |
 | 390 | empty | `.favorites-bottom` | 331.00 × 117.19 | 24px 0px 0px | 24px 0px 0px | 16px |
@@ -343,22 +327,6 @@
 | 1440 | burger | `.favorites-bottom` | 1288.34 × 99.00 | 28px 0px 0px | 40px 0px 0px | 24px |
 | 1440 | burger | `.favorites-continue` | 280.00 × 70.00 | 0px 36px | 0px | 24px |
 | 1440 | burger | `.site-footer__inner` | 1425.00 × 1209.56 | 55px 68.3333px 50px | 0px | normal |
-| 1440 | sort | `.site-header` | 1425.00 × 153.00 | 32px 0px 0px | 0px | normal |
-| 1440 | sort | `.site-header__logo img` | 172.27 × 48.00 | 0px | 0px | normal |
-| 1440 | sort | `.favorites-main` | 1425.00 × 1092.20 | 40px 68.3333px 70px | 0px | normal |
-| 1440 | sort | `.favorites-breadcrumbs` | 1288.34 × 28.00 | 0px | 0px | 8px |
-| 1440 | sort | `.favorites-heading` | 1288.34 × 128.47 | 28px 0px 40px | 0px | 40px |
-| 1440 | sort | `.favorites-toolbar` | 1288.34 × 45.00 | 0px | 0px | 24px |
-| 1440 | sort | `.catalog-mode-switch` | 292.00 × 44.00 | 0px | 0px | 28px |
-| 1440 | sort | `.favorites-summary` | 1288.34 × 76.00 | 0px | 0px | 16px |
-| 1440 | sort | `.favorites-grid` | 1288.34 × 565.73 | 0px | 0px | 40px 24px |
-| 1440 | sort | `.apartment-card` | 413.44 × 565.73 | 0px 0px 18px | 0px | normal |
-| 1440 | sort | `.apartment-card__image` | 413.44 × 310.08 | 0px | 0px | normal |
-| 1440 | sort | `.apartment-card__body` | 389.44 × 198.66 | 20px 18px 0px | -35px 12px 0px | normal |
-| 1440 | sort | `.favorites-bottom` | 1288.34 × 99.00 | 28px 0px 0px | 40px 0px 0px | 24px |
-| 1440 | sort | `.favorites-continue` | 280.00 × 70.00 | 0px 36px | 0px | 24px |
-| 1440 | sort | `.resort-quick-dropdown` | 220.00 × 158.00 | 13px | 0px | normal |
-| 1440 | sort | `.site-footer__inner` | 1425.00 × 1209.56 | 55px 68.3333px 50px | 0px | normal |
 | 1440 | quiz-task | `.site-header` | 1425.00 × 111.00 | 32px 0px 0px | 0px | normal |
 | 1440 | quiz-task | `.site-header__logo img` | 172.27 × 48.00 | 0px | 0px | normal |
 | 1440 | quiz-task | `.favorites-main` | 1425.00 × 1092.20 | 40px 68.3333px 70px | 0px | normal |

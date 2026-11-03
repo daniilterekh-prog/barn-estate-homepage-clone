@@ -1,6 +1,6 @@
 # Шрифты и насыщенность
 
-Фактические computed styles Chrome. Основной шрифт — локальный Tilda Sans. 300 — Light, 400 — Regular, 500 — Medium. Карточки сохраняют собственную исходную типографику. Полные значения для 16 ширин и 27 состояний — в [MEASUREMENTS.json](MEASUREMENTS.json).
+Фактические computed styles Chrome. Основной шрифт — локальный Tilda Sans. 300 — Light, 400 — Regular, 500 — Medium. Карточки сохраняют собственную исходную типографику. Полные значения для 16 ширин и 25 состояний — в [MEASUREMENTS.json](MEASUREMENTS.json).
 
 | Элемент / селектор | 390px | 768px | 1440px | 1920px |
 | --- | --- | --- | --- | --- |
@@ -19,7 +19,6 @@
 | `.catalog-mode-switch` | 16px / 400 / 16px | 16px / 400 / 16px | 16px / 400 / 16px | 16px / 400 / 16px |
 | `.catalog-mode-switch__button` | 17px / 300 / 18.7px | 18px / 300 / 19.8px | 18px / 300 / 19.8px | 20px / 300 / 22px |
 | `.catalog-mode-switch__button span` | 12px / 300 / 13.2px | 13px / 300 / 14.3px | 13px / 300 / 14.3px | 13px / 300 / 14.3px |
-| `.catalog-quick-filters__option` | 17px / 300 / 22.1px | — | 17px / 300 / 22.1px | — |
 | `.favorites-bottom` | 16px / 400 / 16px | 16px / 400 / 16px | 16px / 400 / 16px | 16px / 400 / 16px |
 | `.favorites-bottom>p` | 13px / 300 / 18.2px | — | 13px / 300 / 18.2px | — |
 | `.favorites-breadcrumbs` | 12px / 300 / 16px | 13px / 300 / 18px | 17px / 300 / 18px | 17px / 300 / 18px |
@@ -43,8 +42,6 @@
 | `.home-owner-form__title` | 31px / 300 / 32.55px | — | 34px / 300 / 37.4px | — |
 | `.home-quiz__option` | 16px / 400 / 19.2px | — | 17px / 400 / 20.4px | — |
 | `.home-quiz__skip` | 14px / 400 / 19.6px | — | 14px / 400 / 19.6px | — |
-| `.resort-quick-dropdown` | 16px / 400 / 16px | — | 16px / 400 / 16px | — |
-| `.resort-sort-trigger` | 17px / 300 / 20.4px | 18px / 300 / 23.4px | 18px / 300 / 23.4px | 20px / 300 / 26px |
 | `.site-footer` | 16px / 400 / 16px | 16px / 400 / 16px | 16px / 400 / 16px | 16px / 400 / 16px |
 | `.site-footer__callback-btn` | 18px / 400 / 19.8px | 17px / 400 / 18.7px | 17px / 400 / 18.7px | 19px / 400 / 20.9px |
 | `.site-footer__copyright` | 14px / 300 / 19.6px | 16px / 300 / 22.4px | 16px / 300 / 22.4px | 18px / 300 / 25.2px |
@@ -65,4 +62,4 @@
 
 Формат ячеек: размер / насыщенность / межстрочный интервал. «—» означает, что элемент не виден или соответствующее состояние не снималось на этой ширине. Для скрытых окон размеры не выдумывались. Разрядка и регистр для каждого элемента сохранены в JSON.
 
-H1: 32px до540px; выше clamp(38px,4vw,58px),300,line-height1.05,letter-spacing−.045em. Верхнее меню и его подпункты:16px до1440px,18px выше,300; hover подпункта400. Сортировка и вкладки:17/18/20px.
+H1: 32px до540px; выше clamp(38px,4vw,58px),300,line-height1.05,letter-spacing−.045em. Верхнее меню и его подпункты:16px до1440px,18px выше,300; hover подпункта400. Вкладки:17/18/20px. Сортировка удалена.
