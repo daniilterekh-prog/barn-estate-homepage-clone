@@ -1,0 +1,382 @@
+{
+  "base": "http://127.0.0.1:8921/katalog-nedvizhimosti/",
+  "checks": [
+    "mouse: 36 section/width hovers open correct links without a click",
+    "mouse: pointer can enter the list; leaving closes it",
+    "mouse: keyboard open, navigation, Escape and focus",
+    "mouse: sticky header hover and burger close",
+    "mouse: mouse click still follows the section URL",
+    "hybrid: 36 section/width hovers open correct links without a click",
+    "hybrid: pointer can enter the list; leaving closes it",
+    "hybrid: keyboard open, navigation, Escape and focus",
+    "hybrid: sticky header hover and burger close",
+    "hybrid: mouse click still follows the section URL",
+    "touch: first tap opens, second tap follows the section URL",
+    "phone burger and Escape remain functional"
+  ],
+  "layouts": [
+    {
+      "hasTouch": false,
+      "width": 768,
+      "section": "Городская"
+    },
+    {
+      "hasTouch": false,
+      "width": 768,
+      "section": "Загородная"
+    },
+    {
+      "hasTouch": false,
+      "width": 768,
+      "section": "Коммерческая"
+    },
+    {
+      "hasTouch": false,
+      "width": 768,
+      "section": "Курортная"
+    },
+    {
+      "hasTouch": false,
+      "width": 768,
+      "section": "Зарубежная"
+    },
+    {
+      "hasTouch": false,
+      "width": 768,
+      "section": "Санкт-Петербург"
+    },
+    {
+      "hasTouch": false,
+      "width": 768,
+      "section": "Медиа"
+    },
+    {
+      "hasTouch": false,
+      "width": 768,
+      "section": "О BARN Estate"
+    },
+    {
+      "hasTouch": false,
+      "width": 768,
+      "section": "Собственникам"
+    },
+    {
+      "hasTouch": false,
+      "width": 1024,
+      "section": "Городская"
+    },
+    {
+      "hasTouch": false,
+      "width": 1024,
+      "section": "Загородная"
+    },
+    {
+      "hasTouch": false,
+      "width": 1024,
+      "section": "Коммерческая"
+    },
+    {
+      "hasTouch": false,
+      "width": 1024,
+      "section": "Курортная"
+    },
+    {
+      "hasTouch": false,
+      "width": 1024,
+      "section": "Зарубежная"
+    },
+    {
+      "hasTouch": false,
+      "width": 1024,
+      "section": "Санкт-Петербург"
+    },
+    {
+      "hasTouch": false,
+      "width": 1024,
+      "section": "Медиа"
+    },
+    {
+      "hasTouch": false,
+      "width": 1024,
+      "section": "О BARN Estate"
+    },
+    {
+      "hasTouch": false,
+      "width": 1024,
+      "section": "Собственникам"
+    },
+    {
+      "hasTouch": false,
+      "width": 1440,
+      "section": "Городская"
+    },
+    {
+      "hasTouch": false,
+      "width": 1440,
+      "section": "Загородная"
+    },
+    {
+      "hasTouch": false,
+      "width": 1440,
+      "section": "Коммерческая"
+    },
+    {
+      "hasTouch": false,
+      "width": 1440,
+      "section": "Курортная"
+    },
+    {
+      "hasTouch": false,
+      "width": 1440,
+      "section": "Зарубежная"
+    },
+    {
+      "hasTouch": false,
+      "width": 1440,
+      "section": "Санкт-Петербург"
+    },
+    {
+      "hasTouch": false,
+      "width": 1440,
+      "section": "Медиа"
+    },
+    {
+      "hasTouch": false,
+      "width": 1440,
+      "section": "О BARN Estate"
+    },
+    {
+      "hasTouch": false,
+      "width": 1440,
+      "section": "Собственникам"
+    },
+    {
+      "hasTouch": false,
+      "width": 1920,
+      "section": "Городская"
+    },
+    {
+      "hasTouch": false,
+      "width": 1920,
+      "section": "Загородная"
+    },
+    {
+      "hasTouch": false,
+      "width": 1920,
+      "section": "Коммерческая"
+    },
+    {
+      "hasTouch": false,
+      "width": 1920,
+      "section": "Курортная"
+    },
+    {
+      "hasTouch": false,
+      "width": 1920,
+      "section": "Зарубежная"
+    },
+    {
+      "hasTouch": false,
+      "width": 1920,
+      "section": "Санкт-Петербург"
+    },
+    {
+      "hasTouch": false,
+      "width": 1920,
+      "section": "Медиа"
+    },
+    {
+      "hasTouch": false,
+      "width": 1920,
+      "section": "О BARN Estate"
+    },
+    {
+      "hasTouch": false,
+      "width": 1920,
+      "section": "Собственникам"
+    },
+    {
+      "hasTouch": true,
+      "width": 768,
+      "section": "Городская"
+    },
+    {
+      "hasTouch": true,
+      "width": 768,
+      "section": "Загородная"
+    },
+    {
+      "hasTouch": true,
+      "width": 768,
+      "section": "Коммерческая"
+    },
+    {
+      "hasTouch": true,
+      "width": 768,
+      "section": "Курортная"
+    },
+    {
+      "hasTouch": true,
+      "width": 768,
+      "section": "Зарубежная"
+    },
+    {
+      "hasTouch": true,
+      "width": 768,
+      "section": "Санкт-Петербург"
+    },
+    {
+      "hasTouch": true,
+      "width": 768,
+      "section": "Медиа"
+    },
+    {
+      "hasTouch": true,
+      "width": 768,
+      "section": "О BARN Estate"
+    },
+    {
+      "hasTouch": true,
+      "width": 768,
+      "section": "Собственникам"
+    },
+    {
+      "hasTouch": true,
+      "width": 1024,
+      "section": "Городская"
+    },
+    {
+      "hasTouch": true,
+      "width": 1024,
+      "section": "Загородная"
+    },
+    {
+      "hasTouch": true,
+      "width": 1024,
+      "section": "Коммерческая"
+    },
+    {
+      "hasTouch": true,
+      "width": 1024,
+      "section": "Курортная"
+    },
+    {
+      "hasTouch": true,
+      "width": 1024,
+      "section": "Зарубежная"
+    },
+    {
+      "hasTouch": true,
+      "width": 1024,
+      "section": "Санкт-Петербург"
+    },
+    {
+      "hasTouch": true,
+      "width": 1024,
+      "section": "Медиа"
+    },
+    {
+      "hasTouch": true,
+      "width": 1024,
+      "section": "О BARN Estate"
+    },
+    {
+      "hasTouch": true,
+      "width": 1024,
+      "section": "Собственникам"
+    },
+    {
+      "hasTouch": true,
+      "width": 1440,
+      "section": "Городская"
+    },
+    {
+      "hasTouch": true,
+      "width": 1440,
+      "section": "Загородная"
+    },
+    {
+      "hasTouch": true,
+      "width": 1440,
+      "section": "Коммерческая"
+    },
+    {
+      "hasTouch": true,
+      "width": 1440,
+      "section": "Курортная"
+    },
+    {
+      "hasTouch": true,
+      "width": 1440,
+      "section": "Зарубежная"
+    },
+    {
+      "hasTouch": true,
+      "width": 1440,
+      "section": "Санкт-Петербург"
+    },
+    {
+      "hasTouch": true,
+      "width": 1440,
+      "section": "Медиа"
+    },
+    {
+      "hasTouch": true,
+      "width": 1440,
+      "section": "О BARN Estate"
+    },
+    {
+      "hasTouch": true,
+      "width": 1440,
+      "section": "Собственникам"
+    },
+    {
+      "hasTouch": true,
+      "width": 1920,
+      "section": "Городская"
+    },
+    {
+      "hasTouch": true,
+      "width": 1920,
+      "section": "Загородная"
+    },
+    {
+      "hasTouch": true,
+      "width": 1920,
+      "section": "Коммерческая"
+    },
+    {
+      "hasTouch": true,
+      "width": 1920,
+      "section": "Курортная"
+    },
+    {
+      "hasTouch": true,
+      "width": 1920,
+      "section": "Зарубежная"
+    },
+    {
+      "hasTouch": true,
+      "width": 1920,
+      "section": "Санкт-Петербург"
+    },
+    {
+      "hasTouch": true,
+      "width": 1920,
+      "section": "Медиа"
+    },
+    {
+      "hasTouch": true,
+      "width": 1920,
+      "section": "О BARN Estate"
+    },
+    {
+      "hasTouch": true,
+      "width": 1920,
+      "section": "Собственникам"
+    }
+  ],
+  "errors": [],
+  "http": [],
+  "passed": true
+}

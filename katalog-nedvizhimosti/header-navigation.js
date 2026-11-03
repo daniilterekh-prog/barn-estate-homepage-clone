@@ -6,7 +6,7 @@
  const triggers=[...nav.querySelectorAll('.site-header__nav-link')];
  const dropdown=document.createElement('nav');dropdown.id='catalog-header-dropdown';dropdown.className='catalog-header-dropdown';dropdown.hidden=true;
  const list=document.createElement('ul');list.className='catalog-header-dropdown__list';dropdown.append(list);header.append(dropdown);
- let active=null,closeTimer=0,suppressFocus=false,touchWasOpen=false;
+ let active=null,closeTimer=0,suppressFocus=false,touchWasOpen=false,touchInteraction=false;
  const cancelClose=()=>clearTimeout(closeTimer);
  function close(restoreFocus=false){
   cancelClose();const previous=active;active=null;dropdown.hidden=true;
@@ -36,10 +36,10 @@
   // URL normalization also matches the homepage's slash on barnes-spb.ru.
   const section=sections.find(section=>new URL(section.href).href===trigger.href);if(!section)return;
   trigger.id='catalog-header-nav-'+index;trigger.setAttribute('aria-controls',dropdown.id);trigger.setAttribute('aria-expanded','false');
-  trigger.addEventListener('mouseenter',()=>{if(matchMedia('(hover:hover)').matches)open(trigger);});
+  trigger.addEventListener('pointerenter',event=>{if(event.pointerType!=='touch')open(trigger);});
   trigger.addEventListener('focus',()=>{trigger.scrollIntoView({block:'nearest',inline:'nearest'});if(!suppressFocus)open(trigger);});
-  trigger.addEventListener('pointerdown',event=>{if(event.pointerType==='touch')touchWasOpen=active===trigger&&!dropdown.hidden;});
-  trigger.addEventListener('click',event=>{if(matchMedia('(hover:none)').matches&&!touchWasOpen){event.preventDefault();open(trigger);}touchWasOpen=false;});
+  trigger.addEventListener('pointerdown',event=>{touchInteraction=event.pointerType==='touch';touchWasOpen=touchInteraction&&active===trigger&&!dropdown.hidden;});
+  trigger.addEventListener('click',event=>{if(event.detail>0&&touchInteraction&&!touchWasOpen){event.preventDefault();open(trigger);}touchInteraction=false;touchWasOpen=false;});
   trigger.addEventListener('keydown',event=>{
    if(event.key==='ArrowDown'||event.key==='ArrowUp'||(event.key==='Tab'&&!event.shiftKey&&active===trigger)){
     event.preventDefault();open(trigger);const links=list.querySelectorAll('a');(event.key==='ArrowUp'?links[links.length-1]:links[0])?.focus();
