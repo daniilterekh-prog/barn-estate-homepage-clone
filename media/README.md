@@ -7,3 +7,7 @@ UI-кит главной BARN Estate v1.0.0 применён к отступам
 ## Высота hero по barn-estate.ru · 03.11.2026
 
 `hero-height.css` задаёт высоты из живой главной: 560 px до 540 px, 820 px от 541 до 1440 px, 960 px от 1441 px. Остальные параметры первого экрана сохраняются. [Замеры и проверка всех четырёх страниц](https://github.com/daniilterekh-prog/barnes-sites/tree/main/main-site/pages/media-reference-2026-11-03/hero-height).
+
+## Поиск в хедере · 03.11.2026
+
+Лупа20px расположена сразу справа от избранного, использует текущие SVG/цвет/отступы хедера и ведёт в опубликованный каталог с поиском недвижимости. На телефоне скрывается вместе с избранным. Вставка в home-kit.js идемпотентна и сохраняется после гидратации Nuxt. [Проверки](https://github.com/daniilterekh-prog/barnes-sites/tree/main/main-site/pages/media/verification/header-search-2026-11-03).
