@@ -87,4 +87,6 @@ body.barnes-media-kit .media-market__featured .media-market__featured-badge {col
   body.barnes-media-kit *::after {border-radius:1px!important;}
   /* The expert portrait is a circular avatar, not a rectangular UI surface. */
   body.barnes-media-kit .floating-expert__avatar {border-radius:50%!important;overflow:hidden;}
+  /* Carousel navigation keeps the circular geometry of the homepage kit. */
+  body.barnes-media-kit .team-section__nav-btn {border-radius:50%!important;}
 }
