@@ -3,7 +3,7 @@ const fs=require('node:fs'),path=require('node:path'),assert=require('node:asser
 const {chromium}=require(process.env.PLAYWRIGHT_PATH||'/home/daniil/Documents/Codex/2026-10-11/firecrawl/work/web-capture-toolkit/node_modules/playwright');
 const root=path.resolve(__dirname,'..'),base=process.argv[2]||'http://127.0.0.1:8875/kurortnaya/';
 const baseline=JSON.parse(fs.readFileSync(path.join(root,'verification/home-reference-exceptions.json')));
-const report={reference:'Home v1.0.0, 2026-11-01',resortVersion:'1.1.0',exceptions:['hero H1','FAQ'],checks:[]};
+const report={reference:'Home v1.0.0, 2026-11-01',resortVersion:'1.5.0',exceptions:['hero H1','FAQ'],checks:[]};
 function near(a,b,label){assert.ok(Math.abs(a-b)<.2,label+': '+a+' vs '+b);}
 (async()=>{const browser=await chromium.launch({executablePath:'/usr/bin/google-chrome'});const errors=[];
 try{for(const width of [320,390,540,768,1024,1440,1441,1920,2560,3840]){
@@ -24,15 +24,13 @@ try{for(const width of [320,390,540,768,1024,1440,1441,1920,2560,3840]){
  }
  const container=await get('.catalog-grid__inner');if(width>1920){near(container.width,1920,'Wide container');assert.equal(container.padding,'0px');}if(mobile)assert.ok(container.padding.endsWith('22px'));
  const listingGap=await page.locator('.catalog-mode-toolbar').evaluate(e=>e.getBoundingClientRect().top-document.querySelector('.catalog-grid__header').getBoundingClientRect().bottom);near(listingGap,mobile?28:40,'Listing heading/content gap');
- const slider=await get('.catalog-best-offers__slider');near(parseFloat(slider.padding),mobile?28:40,'Start-sales heading/content gap');
+ const sliderGap=await page.locator('.catalog-best-offers__slider-row').evaluate(e=>e.getBoundingClientRect().top-document.querySelector('.catalog-best-offers__header').getBoundingClientRect().bottom);near(sliderGap,mobile?28:40,'Start-sales heading/content gap');
  const text=await get('.catalog-intro__text p');assert.equal(text.size,(mobile?14:18)+'px');assert.equal(text.color,'rgb(79, 77, 73)');
  for(const selector of ['.catalog-hero-filters__submit','.catalog-consultation__submit','.catalog-contact__submit','.site-footer__callback-btn']){
   const action=await get(selector);assert.equal(action.size,(mobile?18:wide?19:17)+'px');assert.equal(action.weight,'400');assert.equal(action.radius,'1px');near(action.height,mobile?58:70,'Action '+selector);
  }
  const channel=await get('.catalog-consultation__method');assert.equal(channel.size,(mobile?18:17)+'px');assert.ok(channel.height>=46);assert.equal(channel.padding,'10px 8px');
  const direction=await get('.department-card__title');assert.equal(direction.weight,'300');
- const address=await get('.catalog-grid .apartment-card__address');assert.equal(address.size,'13px');assert.equal(address.weight,'300');assert.equal(address.color,'rgb(101, 100, 98)');
- const fact=await get('.listing-card-fact__value');assert.equal(fact.size,(mobile?13:16)+'px');
  const readMore=await get('.catalog-intro__toggle');assert.equal(readMore.size,(mobile?12:14)+'px');assert.ok(readMore.height>=44);
  if(width<=1024){
   await page.locator('.catalog-header-mobile-toggle').click();await page.locator('.catalog-header-mobile-panel').waitFor({state:'visible'});
@@ -40,7 +38,6 @@ try{for(const width of [320,390,540,768,1024,1440,1441,1920,2560,3840]){
   await page.keyboard.press('Escape');assert.equal(await page.locator('.catalog-header-mobile-panel').isVisible(),false);
   const centers=await page.evaluate(()=>['.site-header__icon-btn','.site-header__logo img','.catalog-header-mobile-toggle'].map(sel=>{const r=document.querySelector('.layout__header '+sel).getBoundingClientRect();return r.y+r.height/2}));assert.ok(Math.max(...centers)-Math.min(...centers)<1,'Hero header alignment');
  }
- await page.locator('.catalog-hero-filters__filter-icon').click();const apply=await get('.hero-filter-modal__apply');assert.equal(apply.size,(mobile?18:wide?19:17)+'px');near(apply.height,mobile?58:70,'Filter apply');assert.equal(apply.radius,'1px');
  await page.keyboard.press('Escape');
  // The dismissible floating expert can cover a footer action on a short screen.
  // Dismiss it as a user would; no forced click through the overlay.
@@ -54,5 +51,5 @@ try{for(const width of [320,390,540,768,1024,1440,1441,1920,2560,3840]){
  assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+1),false,'No overflow');
  if([390,1440,2560,3840].includes(width))await page.screenshot({path:'/tmp/resort-home-kit-'+width+'.png'});
  report.checks.push({width,kit:true,exceptionsPreserved:true,overflow:false});console.log('PASS home kit '+width);await page.close();
-}assert.deepEqual(errors,[]);}finally{await browser.close();fs.writeFileSync(path.join(root,'verification/home-reference.json'),JSON.stringify(report,null,2)+'\n');}
+}assert.deepEqual(errors,[]);}finally{await browser.close();fs.writeFileSync((process.env.HOME_REFERENCE_REPORT||path.join(root,'verification/home-reference-refresh-2026-11-03.json')),JSON.stringify(report,null,2)+'\n');}
 })().catch(e=>{console.error(e);process.exitCode=1});

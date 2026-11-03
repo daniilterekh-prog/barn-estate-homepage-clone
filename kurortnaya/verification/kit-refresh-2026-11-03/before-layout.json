@@ -1,0 +1,1178 @@
+[
+  {
+    "width": 390,
+    "data": {
+      ".catalog-best-offers": {
+        "padding": "48px 0px",
+        "margin": "0px",
+        "gap": "normal",
+        "width": 375
+      },
+      ".catalog-map": {
+        "padding": "48px 0px",
+        "margin": "0px",
+        "gap": "normal",
+        "width": 375
+      },
+      ".catalog-grid": {
+        "padding": "48px 0px",
+        "margin": "0px",
+        "gap": "normal",
+        "width": 375
+      },
+      ".catalog-intro": {
+        "padding": "48px 0px",
+        "margin": "0px",
+        "gap": "normal",
+        "width": 375
+      },
+      ".departments-section": {
+        "padding": "48px 0px",
+        "margin": "0px",
+        "gap": "normal",
+        "width": 375
+      },
+      ".news-section": {
+        "padding": "48px 0px",
+        "margin": "0px",
+        "gap": "normal",
+        "width": 375
+      },
+      ".department-card__content": {
+        "padding": "20px",
+        "margin": "0px",
+        "gap": "2px",
+        "width": 331
+      },
+      ".news-section__content": {
+        "padding": "12px 0px 0px",
+        "margin": "0px",
+        "gap": "8px",
+        "width": 331
+      },
+      ".catalog-consultation__subtitle": {
+        "padding": "0px",
+        "margin": "0px",
+        "gap": "normal",
+        "width": 0
+      },
+      ".catalog-consultation__lead": {
+        "padding": "0px",
+        "margin": "16px 0px 0px",
+        "gap": "normal",
+        "width": 0
+      },
+      ".catalog-contact__title": {
+        "padding": "0px",
+        "margin": "0px",
+        "gap": "normal",
+        "width": 331
+      },
+      ".catalog-contact__card-title": {
+        "padding": "0px",
+        "margin": "0px",
+        "gap": "normal",
+        "width": 0
+      },
+      ".catalog-contact__card-text": {
+        "padding": "0px",
+        "margin": "0px",
+        "gap": "normal",
+        "width": 0
+      },
+      ".site-footer__inner": {
+        "padding": "32px 22px 28px",
+        "margin": "0px",
+        "gap": "normal",
+        "width": 341.84375
+      },
+      ".catalog-consultation__content": {
+        "padding": "0px",
+        "margin": "0px",
+        "gap": "normal",
+        "width": 341.84375
+      },
+      ".catalog-contact__content": {
+        "padding": "0px",
+        "margin": "0px",
+        "gap": "normal",
+        "width": 331
+      }
+    },
+    "details": [
+      {
+        "tag": "H3",
+        "text": "Наша экспертиза в сфере курортной не",
+        "size": "20px",
+        "line": "24px",
+        "weight": "400",
+        "color": "rgb(30, 30, 30)",
+        "margin": "0px"
+      },
+      {
+        "tag": "P",
+        "text": "\n\t Мы проводим закрытые встречи и би",
+        "size": "14px",
+        "line": "21px",
+        "weight": "300",
+        "color": "rgb(79, 77, 73)",
+        "margin": "0px 0px 16px"
+      },
+      {
+        "tag": "P",
+        "text": "\n\t Наши брокеры обладают специализир",
+        "size": "14px",
+        "line": "21px",
+        "weight": "300",
+        "color": "rgb(79, 77, 73)",
+        "margin": "0px 0px 16px"
+      },
+      {
+        "tag": "H4",
+        "text": "Глубокое знание рынка ",
+        "size": "18px",
+        "line": "21.6px",
+        "weight": "400",
+        "color": "rgb(30, 30, 30)",
+        "margin": "0px"
+      },
+      {
+        "tag": "P",
+        "text": "\n\t Мы фокусируемся на перспективных ",
+        "size": "14px",
+        "line": "21px",
+        "weight": "300",
+        "color": "rgb(79, 77, 73)",
+        "margin": "0px 0px 16px"
+      },
+      {
+        "tag": "H4",
+        "text": "Доступ к проверенным объектам",
+        "size": "18px",
+        "line": "21.6px",
+        "weight": "400",
+        "color": "rgb(30, 30, 30)",
+        "margin": "0px"
+      },
+      {
+        "tag": "P",
+        "text": "\n\t  В нашей базе представлены тщател",
+        "size": "14px",
+        "line": "21px",
+        "weight": "300",
+        "color": "rgb(79, 77, 73)",
+        "margin": "0px 0px 16px"
+      },
+      {
+        "tag": "LI",
+        "text": "\n\t\n\t\t Современные апартаменты и пент",
+        "size": "14px",
+        "line": "21px",
+        "weight": "300",
+        "color": "rgb(79, 77, 73)",
+        "margin": "0px 0px 16px"
+      }
+    ],
+    "popup": [
+      {
+        "class": "modal__close",
+        "size": "16px",
+        "line": "16px",
+        "weight": "400",
+        "color": "rgb(30, 30, 30)",
+        "height": 36,
+        "padding": "8px"
+      },
+      {
+        "class": "feedback-modal__title",
+        "size": "20px",
+        "line": "24px",
+        "weight": "400",
+        "color": "rgb(30, 30, 30)",
+        "height": 24,
+        "padding": "0px"
+      },
+      {
+        "class": "feedback-modal__intro",
+        "size": "15px",
+        "line": "19.2px",
+        "weight": "300",
+        "color": "rgb(85, 85, 85)",
+        "height": 38.375,
+        "padding": "0px"
+      },
+      {
+        "class": "",
+        "size": "18px",
+        "line": "19.8px",
+        "weight": "400",
+        "color": "rgb(139, 29, 37)",
+        "height": 46,
+        "padding": "10px 8px"
+      },
+      {
+        "class": "",
+        "size": "18px",
+        "line": "19.8px",
+        "weight": "400",
+        "color": "rgb(85, 85, 85)",
+        "height": 46,
+        "padding": "10px 8px"
+      },
+      {
+        "class": "",
+        "size": "18px",
+        "line": "19.8px",
+        "weight": "400",
+        "color": "rgb(85, 85, 85)",
+        "height": 46,
+        "padding": "10px 8px"
+      },
+      {
+        "class": "",
+        "size": "18px",
+        "line": "19.8px",
+        "weight": "400",
+        "color": "rgb(85, 85, 85)",
+        "height": 46,
+        "padding": "10px 8px"
+      },
+      {
+        "class": "feedback-modal__input",
+        "size": "17px",
+        "line": "23.8px",
+        "weight": "300",
+        "color": "rgb(30, 30, 30)",
+        "height": 56,
+        "padding": "15px 0px 12px"
+      },
+      {
+        "class": "feedback-modal__input",
+        "size": "17px",
+        "line": "23.8px",
+        "weight": "300",
+        "color": "rgb(30, 30, 30)",
+        "height": 56,
+        "padding": "15px 0px 12px"
+      },
+      {
+        "class": "feedback-modal__input feedback-modal__textarea",
+        "size": "17px",
+        "line": "23.8px",
+        "weight": "300",
+        "color": "rgb(30, 30, 30)",
+        "height": 76,
+        "padding": "15px 0px 12px"
+      },
+      {
+        "class": "feedback-modal__submit",
+        "size": "18px",
+        "line": "19.8px",
+        "weight": "400",
+        "color": "rgb(255, 255, 255)",
+        "height": 58,
+        "padding": "0px 24px"
+      },
+      {
+        "class": "feedback-modal__consent-input",
+        "size": "13px",
+        "line": "normal",
+        "weight": "300",
+        "color": "rgb(102, 102, 102)",
+        "height": 13,
+        "padding": "0px"
+      },
+      {
+        "class": "feedback-modal__status",
+        "size": "14px",
+        "line": "18.9px",
+        "weight": "400",
+        "color": "rgb(139, 29, 37)",
+        "height": 19,
+        "padding": "0px"
+      }
+    ]
+  },
+  {
+    "width": 900,
+    "data": {
+      ".catalog-best-offers": {
+        "padding": "72px 0px",
+        "margin": "0px",
+        "gap": "normal",
+        "width": 885
+      },
+      ".catalog-map": {
+        "padding": "72px 0px",
+        "margin": "0px",
+        "gap": "normal",
+        "width": 885
+      },
+      ".catalog-grid": {
+        "padding": "72px 0px",
+        "margin": "0px",
+        "gap": "normal",
+        "width": 885
+      },
+      ".catalog-intro": {
+        "padding": "72px 0px",
+        "margin": "0px",
+        "gap": "normal",
+        "width": 885
+      },
+      ".departments-section": {
+        "padding": "72px 0px",
+        "margin": "0px",
+        "gap": "normal",
+        "width": 885
+      },
+      ".news-section": {
+        "padding": "72px 0px",
+        "margin": "0px",
+        "gap": "normal",
+        "width": 885
+      },
+      ".department-card__content": {
+        "padding": "28px",
+        "margin": "0px",
+        "gap": "2px",
+        "width": 819.59375
+      },
+      ".news-section__content": {
+        "padding": "18px 0px 0px",
+        "margin": "0px",
+        "gap": "10px",
+        "width": 246.515625
+      },
+      ".catalog-consultation__subtitle": {
+        "padding": "0px",
+        "margin": "0px",
+        "gap": "normal",
+        "width": 560
+      },
+      ".catalog-consultation__lead": {
+        "padding": "0px",
+        "margin": "16px 0px 0px",
+        "gap": "normal",
+        "width": 560
+      },
+      ".catalog-contact__title": {
+        "padding": "0px",
+        "margin": "0px",
+        "gap": "normal",
+        "width": 530.375
+      },
+      ".catalog-contact__card-title": {
+        "padding": "0px",
+        "margin": "0px",
+        "gap": "normal",
+        "width": 215.21875
+      },
+      ".catalog-contact__card-text": {
+        "padding": "0px",
+        "margin": "0px",
+        "gap": "normal",
+        "width": 215.21875
+      },
+      ".site-footer__inner": {
+        "padding": "40px 32.7083px 28px",
+        "margin": "0px",
+        "gap": "normal",
+        "width": 885
+      },
+      ".catalog-consultation__content": {
+        "padding": "0px",
+        "margin": "0px 0px 0px 259.594px",
+        "gap": "normal",
+        "width": 560
+      },
+      ".catalog-contact__content": {
+        "padding": "14px 0px",
+        "margin": "0px",
+        "gap": "normal",
+        "width": 530.375
+      }
+    },
+    "details": [
+      {
+        "tag": "H3",
+        "text": "Наша экспертиза в сфере курортной не",
+        "size": "20px",
+        "line": "24px",
+        "weight": "400",
+        "color": "rgb(30, 30, 30)",
+        "margin": "0px"
+      },
+      {
+        "tag": "P",
+        "text": "\n\t Мы проводим закрытые встречи и би",
+        "size": "18px",
+        "line": "27px",
+        "weight": "300",
+        "color": "rgb(79, 77, 73)",
+        "margin": "0px 0px 24px"
+      },
+      {
+        "tag": "P",
+        "text": "\n\t Наши брокеры обладают специализир",
+        "size": "18px",
+        "line": "27px",
+        "weight": "300",
+        "color": "rgb(79, 77, 73)",
+        "margin": "0px 0px 24px"
+      },
+      {
+        "tag": "H4",
+        "text": "Глубокое знание рынка ",
+        "size": "18px",
+        "line": "22.5px",
+        "weight": "400",
+        "color": "rgb(30, 30, 30)",
+        "margin": "0px"
+      },
+      {
+        "tag": "P",
+        "text": "\n\t Мы фокусируемся на перспективных ",
+        "size": "18px",
+        "line": "27px",
+        "weight": "300",
+        "color": "rgb(79, 77, 73)",
+        "margin": "0px 0px 24px"
+      },
+      {
+        "tag": "H4",
+        "text": "Доступ к проверенным объектам",
+        "size": "18px",
+        "line": "22.5px",
+        "weight": "400",
+        "color": "rgb(30, 30, 30)",
+        "margin": "0px"
+      },
+      {
+        "tag": "P",
+        "text": "\n\t  В нашей базе представлены тщател",
+        "size": "18px",
+        "line": "27px",
+        "weight": "300",
+        "color": "rgb(79, 77, 73)",
+        "margin": "0px 0px 24px"
+      },
+      {
+        "tag": "LI",
+        "text": "\n\t\n\t\t Современные апартаменты и пент",
+        "size": "18px",
+        "line": "27px",
+        "weight": "300",
+        "color": "rgb(79, 77, 73)",
+        "margin": "0px 0px 24px"
+      }
+    ],
+    "popup": [
+      {
+        "class": "modal__close",
+        "size": "16px",
+        "line": "16px",
+        "weight": "400",
+        "color": "rgb(30, 30, 30)",
+        "height": 36,
+        "padding": "8px"
+      },
+      {
+        "class": "feedback-modal__title",
+        "size": "20px",
+        "line": "24px",
+        "weight": "400",
+        "color": "rgb(30, 30, 30)",
+        "height": 24,
+        "padding": "0px"
+      },
+      {
+        "class": "feedback-modal__intro",
+        "size": "22px",
+        "line": "28.16px",
+        "weight": "300",
+        "color": "rgb(85, 85, 85)",
+        "height": 56.3125,
+        "padding": "0px"
+      },
+      {
+        "class": "",
+        "size": "17px",
+        "line": "18.7px",
+        "weight": "400",
+        "color": "rgb(139, 29, 37)",
+        "height": 46,
+        "padding": "10px 8px"
+      },
+      {
+        "class": "",
+        "size": "17px",
+        "line": "18.7px",
+        "weight": "400",
+        "color": "rgb(85, 85, 85)",
+        "height": 46,
+        "padding": "10px 8px"
+      },
+      {
+        "class": "",
+        "size": "17px",
+        "line": "18.7px",
+        "weight": "400",
+        "color": "rgb(85, 85, 85)",
+        "height": 46,
+        "padding": "10px 8px"
+      },
+      {
+        "class": "",
+        "size": "17px",
+        "line": "18.7px",
+        "weight": "400",
+        "color": "rgb(85, 85, 85)",
+        "height": 46,
+        "padding": "10px 8px"
+      },
+      {
+        "class": "feedback-modal__input",
+        "size": "18px",
+        "line": "25.2px",
+        "weight": "300",
+        "color": "rgb(30, 30, 30)",
+        "height": 56,
+        "padding": "15px 0px 12px"
+      },
+      {
+        "class": "feedback-modal__input",
+        "size": "18px",
+        "line": "25.2px",
+        "weight": "300",
+        "color": "rgb(30, 30, 30)",
+        "height": 56,
+        "padding": "15px 0px 12px"
+      },
+      {
+        "class": "feedback-modal__input feedback-modal__textarea",
+        "size": "18px",
+        "line": "25.2px",
+        "weight": "300",
+        "color": "rgb(30, 30, 30)",
+        "height": 76,
+        "padding": "15px 0px 12px"
+      },
+      {
+        "class": "feedback-modal__submit",
+        "size": "17px",
+        "line": "18.7px",
+        "weight": "400",
+        "color": "rgb(255, 255, 255)",
+        "height": 64,
+        "padding": "0px 36px"
+      },
+      {
+        "class": "feedback-modal__consent-input",
+        "size": "13px",
+        "line": "normal",
+        "weight": "300",
+        "color": "rgb(102, 102, 102)",
+        "height": 13,
+        "padding": "0px"
+      },
+      {
+        "class": "feedback-modal__status",
+        "size": "14px",
+        "line": "18.9px",
+        "weight": "400",
+        "color": "rgb(139, 29, 37)",
+        "height": 19,
+        "padding": "0px"
+      }
+    ]
+  },
+  {
+    "width": 1440,
+    "data": {
+      ".catalog-best-offers": {
+        "padding": "86.4px 0px",
+        "margin": "0px",
+        "gap": "normal",
+        "width": 1425
+      },
+      ".catalog-map": {
+        "padding": "86.4px 0px",
+        "margin": "0px",
+        "gap": "normal",
+        "width": 1425
+      },
+      ".catalog-grid": {
+        "padding": "86.4px 0px",
+        "margin": "0px",
+        "gap": "normal",
+        "width": 1425
+      },
+      ".catalog-intro": {
+        "padding": "86.4px 0px",
+        "margin": "0px",
+        "gap": "normal",
+        "width": 1425
+      },
+      ".departments-section": {
+        "padding": "86.4px 0px",
+        "margin": "0px",
+        "gap": "normal",
+        "width": 1425
+      },
+      ".news-section": {
+        "padding": "86.4px 0px",
+        "margin": "0px",
+        "gap": "normal",
+        "width": 1425
+      },
+      ".department-card__content": {
+        "padding": "28px",
+        "margin": "0px",
+        "gap": "2px",
+        "width": 643.171875
+      },
+      ".news-section__content": {
+        "padding": "18px 0px 0px",
+        "margin": "0px",
+        "gap": "10px",
+        "width": 402.765625
+      },
+      ".catalog-consultation__subtitle": {
+        "padding": "0px",
+        "margin": "0px",
+        "gap": "normal",
+        "width": 560
+      },
+      ".catalog-consultation__lead": {
+        "padding": "0px",
+        "margin": "16px 0px 0px",
+        "gap": "normal",
+        "width": 560
+      },
+      ".catalog-contact__title": {
+        "padding": "0px",
+        "margin": "0px",
+        "gap": "normal",
+        "width": 552.90625
+      },
+      ".catalog-contact__card-title": {
+        "padding": "0px",
+        "margin": "0px",
+        "gap": "normal",
+        "width": 543.046875
+      },
+      ".catalog-contact__card-text": {
+        "padding": "0px",
+        "margin": "0px",
+        "gap": "normal",
+        "width": 543.046875
+      },
+      ".site-footer__inner": {
+        "padding": "55px 68.3333px 50px",
+        "margin": "0px",
+        "gap": "normal",
+        "width": 1425
+      },
+      ".catalog-consultation__content": {
+        "padding": "0px",
+        "margin": "0px 0px 0px 728.344px",
+        "gap": "normal",
+        "width": 560
+      },
+      ".catalog-contact__content": {
+        "padding": "0px",
+        "margin": "0px",
+        "gap": "normal",
+        "width": 552.90625
+      }
+    },
+    "details": [
+      {
+        "tag": "H3",
+        "text": "Наша экспертиза в сфере курортной не",
+        "size": "20px",
+        "line": "24px",
+        "weight": "400",
+        "color": "rgb(30, 30, 30)",
+        "margin": "0px"
+      },
+      {
+        "tag": "P",
+        "text": "\n\t Мы проводим закрытые встречи и би",
+        "size": "18px",
+        "line": "27px",
+        "weight": "300",
+        "color": "rgb(79, 77, 73)",
+        "margin": "0px 0px 24px"
+      },
+      {
+        "tag": "P",
+        "text": "\n\t Наши брокеры обладают специализир",
+        "size": "18px",
+        "line": "27px",
+        "weight": "300",
+        "color": "rgb(79, 77, 73)",
+        "margin": "0px 0px 24px"
+      },
+      {
+        "tag": "H4",
+        "text": "Глубокое знание рынка ",
+        "size": "18px",
+        "line": "22.5px",
+        "weight": "400",
+        "color": "rgb(30, 30, 30)",
+        "margin": "0px"
+      },
+      {
+        "tag": "P",
+        "text": "\n\t Мы фокусируемся на перспективных ",
+        "size": "18px",
+        "line": "27px",
+        "weight": "300",
+        "color": "rgb(79, 77, 73)",
+        "margin": "0px 0px 24px"
+      },
+      {
+        "tag": "H4",
+        "text": "Доступ к проверенным объектам",
+        "size": "18px",
+        "line": "22.5px",
+        "weight": "400",
+        "color": "rgb(30, 30, 30)",
+        "margin": "0px"
+      },
+      {
+        "tag": "P",
+        "text": "\n\t  В нашей базе представлены тщател",
+        "size": "18px",
+        "line": "27px",
+        "weight": "300",
+        "color": "rgb(79, 77, 73)",
+        "margin": "0px 0px 24px"
+      },
+      {
+        "tag": "LI",
+        "text": "\n\t\n\t\t Современные апартаменты и пент",
+        "size": "18px",
+        "line": "27px",
+        "weight": "300",
+        "color": "rgb(79, 77, 73)",
+        "margin": "0px 0px 24px"
+      }
+    ],
+    "popup": [
+      {
+        "class": "modal__close",
+        "size": "16px",
+        "line": "16px",
+        "weight": "400",
+        "color": "rgb(30, 30, 30)",
+        "height": 36,
+        "padding": "8px"
+      },
+      {
+        "class": "feedback-modal__title",
+        "size": "24px",
+        "line": "28.8px",
+        "weight": "400",
+        "color": "rgb(30, 30, 30)",
+        "height": 28.796875,
+        "padding": "0px"
+      },
+      {
+        "class": "feedback-modal__intro",
+        "size": "22px",
+        "line": "28.16px",
+        "weight": "300",
+        "color": "rgb(85, 85, 85)",
+        "height": 56.3125,
+        "padding": "0px"
+      },
+      {
+        "class": "",
+        "size": "17px",
+        "line": "18.7px",
+        "weight": "400",
+        "color": "rgb(139, 29, 37)",
+        "height": 46,
+        "padding": "10px 8px"
+      },
+      {
+        "class": "",
+        "size": "17px",
+        "line": "18.7px",
+        "weight": "400",
+        "color": "rgb(85, 85, 85)",
+        "height": 46,
+        "padding": "10px 8px"
+      },
+      {
+        "class": "",
+        "size": "17px",
+        "line": "18.7px",
+        "weight": "400",
+        "color": "rgb(85, 85, 85)",
+        "height": 46,
+        "padding": "10px 8px"
+      },
+      {
+        "class": "",
+        "size": "17px",
+        "line": "18.7px",
+        "weight": "400",
+        "color": "rgb(85, 85, 85)",
+        "height": 46,
+        "padding": "10px 8px"
+      },
+      {
+        "class": "feedback-modal__input",
+        "size": "18px",
+        "line": "25.2px",
+        "weight": "300",
+        "color": "rgb(30, 30, 30)",
+        "height": 56,
+        "padding": "15px 0px 12px"
+      },
+      {
+        "class": "feedback-modal__input",
+        "size": "18px",
+        "line": "25.2px",
+        "weight": "300",
+        "color": "rgb(30, 30, 30)",
+        "height": 56,
+        "padding": "15px 0px 12px"
+      },
+      {
+        "class": "feedback-modal__input feedback-modal__textarea",
+        "size": "18px",
+        "line": "25.2px",
+        "weight": "300",
+        "color": "rgb(30, 30, 30)",
+        "height": 76,
+        "padding": "15px 0px 12px"
+      },
+      {
+        "class": "feedback-modal__submit",
+        "size": "17px",
+        "line": "18.7px",
+        "weight": "400",
+        "color": "rgb(255, 255, 255)",
+        "height": 64,
+        "padding": "0px 36px"
+      },
+      {
+        "class": "feedback-modal__consent-input",
+        "size": "13px",
+        "line": "normal",
+        "weight": "300",
+        "color": "rgb(102, 102, 102)",
+        "height": 13,
+        "padding": "0px"
+      },
+      {
+        "class": "feedback-modal__status",
+        "size": "14px",
+        "line": "18.9px",
+        "weight": "400",
+        "color": "rgb(139, 29, 37)",
+        "height": 19,
+        "padding": "0px"
+      }
+    ]
+  },
+  {
+    "width": 2560,
+    "data": {
+      ".catalog-best-offers": {
+        "padding": "100px 0px",
+        "margin": "0px",
+        "gap": "normal",
+        "width": 2545
+      },
+      ".catalog-map": {
+        "padding": "100px 0px",
+        "margin": "0px",
+        "gap": "normal",
+        "width": 2545
+      },
+      ".catalog-grid": {
+        "padding": "100px 0px",
+        "margin": "0px",
+        "gap": "normal",
+        "width": 2545
+      },
+      ".catalog-intro": {
+        "padding": "100px 0px",
+        "margin": "0px",
+        "gap": "normal",
+        "width": 2545
+      },
+      ".departments-section": {
+        "padding": "100px 0px",
+        "margin": "0px",
+        "gap": "normal",
+        "width": 2545
+      },
+      ".news-section": {
+        "padding": "100px 0px",
+        "margin": "0px",
+        "gap": "normal",
+        "width": 2545
+      },
+      ".department-card__content": {
+        "padding": "40px",
+        "margin": "0px",
+        "gap": "2px",
+        "width": 959
+      },
+      ".news-section__content": {
+        "padding": "18px 0px 0px",
+        "margin": "0px",
+        "gap": "10px",
+        "width": 613.328125
+      },
+      ".catalog-consultation__subtitle": {
+        "padding": "0px",
+        "margin": "0px",
+        "gap": "normal",
+        "width": 690
+      },
+      ".catalog-consultation__lead": {
+        "padding": "0px",
+        "margin": "16px 0px 0px",
+        "gap": "normal",
+        "width": 560
+      },
+      ".catalog-contact__title": {
+        "padding": "0px",
+        "margin": "0px",
+        "gap": "normal",
+        "width": 841.8125
+      },
+      ".catalog-contact__card-title": {
+        "padding": "0px",
+        "margin": "0px",
+        "gap": "normal",
+        "width": 882.1875
+      },
+      ".catalog-contact__card-text": {
+        "padding": "0px",
+        "margin": "0px",
+        "gap": "normal",
+        "width": 882.1875
+      },
+      ".site-footer__inner": {
+        "padding": "55px 0px 50px",
+        "margin": "0px 312.5px",
+        "gap": "normal",
+        "width": 1920
+      },
+      ".catalog-consultation__content": {
+        "padding": "0px",
+        "margin": "0px 0px 0px 1030px",
+        "gap": "normal",
+        "width": 690
+      },
+      ".catalog-contact__content": {
+        "padding": "0px",
+        "margin": "0px",
+        "gap": "normal",
+        "width": 841.8125
+      }
+    },
+    "details": [
+      {
+        "tag": "H3",
+        "text": "Наша экспертиза в сфере курортной не",
+        "size": "20px",
+        "line": "24px",
+        "weight": "400",
+        "color": "rgb(30, 30, 30)",
+        "margin": "0px"
+      },
+      {
+        "tag": "P",
+        "text": "\n\t Мы проводим закрытые встречи и би",
+        "size": "18px",
+        "line": "27px",
+        "weight": "300",
+        "color": "rgb(79, 77, 73)",
+        "margin": "0px 0px 24px"
+      },
+      {
+        "tag": "P",
+        "text": "\n\t Наши брокеры обладают специализир",
+        "size": "18px",
+        "line": "27px",
+        "weight": "300",
+        "color": "rgb(79, 77, 73)",
+        "margin": "0px 0px 24px"
+      },
+      {
+        "tag": "H4",
+        "text": "Глубокое знание рынка ",
+        "size": "18px",
+        "line": "22.5px",
+        "weight": "400",
+        "color": "rgb(30, 30, 30)",
+        "margin": "0px"
+      },
+      {
+        "tag": "P",
+        "text": "\n\t Мы фокусируемся на перспективных ",
+        "size": "18px",
+        "line": "27px",
+        "weight": "300",
+        "color": "rgb(79, 77, 73)",
+        "margin": "0px 0px 24px"
+      },
+      {
+        "tag": "H4",
+        "text": "Доступ к проверенным объектам",
+        "size": "18px",
+        "line": "22.5px",
+        "weight": "400",
+        "color": "rgb(30, 30, 30)",
+        "margin": "0px"
+      },
+      {
+        "tag": "P",
+        "text": "\n\t  В нашей базе представлены тщател",
+        "size": "18px",
+        "line": "27px",
+        "weight": "300",
+        "color": "rgb(79, 77, 73)",
+        "margin": "0px 0px 24px"
+      },
+      {
+        "tag": "LI",
+        "text": "\n\t\n\t\t Современные апартаменты и пент",
+        "size": "18px",
+        "line": "27px",
+        "weight": "300",
+        "color": "rgb(79, 77, 73)",
+        "margin": "0px 0px 24px"
+      }
+    ],
+    "popup": [
+      {
+        "class": "modal__close",
+        "size": "16px",
+        "line": "16px",
+        "weight": "400",
+        "color": "rgb(30, 30, 30)",
+        "height": 36,
+        "padding": "8px"
+      },
+      {
+        "class": "feedback-modal__title",
+        "size": "24px",
+        "line": "28.8px",
+        "weight": "400",
+        "color": "rgb(30, 30, 30)",
+        "height": 28.796875,
+        "padding": "0px"
+      },
+      {
+        "class": "feedback-modal__intro",
+        "size": "22px",
+        "line": "28.16px",
+        "weight": "300",
+        "color": "rgb(85, 85, 85)",
+        "height": 56.3125,
+        "padding": "0px"
+      },
+      {
+        "class": "",
+        "size": "17px",
+        "line": "18.7px",
+        "weight": "400",
+        "color": "rgb(139, 29, 37)",
+        "height": 46,
+        "padding": "10px 8px"
+      },
+      {
+        "class": "",
+        "size": "17px",
+        "line": "18.7px",
+        "weight": "400",
+        "color": "rgb(85, 85, 85)",
+        "height": 46,
+        "padding": "10px 8px"
+      },
+      {
+        "class": "",
+        "size": "17px",
+        "line": "18.7px",
+        "weight": "400",
+        "color": "rgb(85, 85, 85)",
+        "height": 46,
+        "padding": "10px 8px"
+      },
+      {
+        "class": "",
+        "size": "17px",
+        "line": "18.7px",
+        "weight": "400",
+        "color": "rgb(85, 85, 85)",
+        "height": 46,
+        "padding": "10px 8px"
+      },
+      {
+        "class": "feedback-modal__input",
+        "size": "20px",
+        "line": "28px",
+        "weight": "300",
+        "color": "rgb(30, 30, 30)",
+        "height": 56,
+        "padding": "15px 0px 12px"
+      },
+      {
+        "class": "feedback-modal__input",
+        "size": "20px",
+        "line": "28px",
+        "weight": "300",
+        "color": "rgb(30, 30, 30)",
+        "height": 56,
+        "padding": "15px 0px 12px"
+      },
+      {
+        "class": "feedback-modal__input feedback-modal__textarea",
+        "size": "20px",
+        "line": "28px",
+        "weight": "300",
+        "color": "rgb(30, 30, 30)",
+        "height": 76,
+        "padding": "15px 0px 12px"
+      },
+      {
+        "class": "feedback-modal__submit",
+        "size": "19px",
+        "line": "20.9px",
+        "weight": "400",
+        "color": "rgb(255, 255, 255)",
+        "height": 64,
+        "padding": "0px 47px"
+      },
+      {
+        "class": "feedback-modal__consent-input",
+        "size": "13px",
+        "line": "normal",
+        "weight": "300",
+        "color": "rgb(102, 102, 102)",
+        "height": 13,
+        "padding": "0px"
+      },
+      {
+        "class": "feedback-modal__status",
+        "size": "14px",
+        "line": "18.9px",
+        "weight": "400",
+        "color": "rgb(139, 29, 37)",
+        "height": 19,
+        "padding": "0px"
+      }
+    ]
+  }
+]

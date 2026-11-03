@@ -1,15 +1,15 @@
 (function () {
   var filtersTemplate = document.createElement('script');
-  filtersTemplate.src = 'js/filters-template.js?v=20261103-breadcrumbs-19';
+  filtersTemplate.src = 'js/filters-template.js?v=20261103-kit-filters-20';
   filtersTemplate.onload = function () {
     var filtersScript = document.createElement('script');
-    filtersScript.src = 'js/filters-modal.js?v=20261103-breadcrumbs-19';
+    filtersScript.src = 'js/filters-modal.js?v=20261103-kit-filters-20';
     filtersScript.onload = function () {
       var quickScript = document.createElement('script');
-      quickScript.src = 'js/quick-filters.js?v=20261103-breadcrumbs-19';
+      quickScript.src = 'js/quick-filters.js?v=20261103-kit-filters-20';
       quickScript.onload = function () {
         var brandsScript = document.createElement('script');
-        brandsScript.src = 'js/brand-filters.js?v=20261103-breadcrumbs-19';
+        brandsScript.src = 'js/brand-filters.js?v=20261103-kit-filters-20';
         document.body.appendChild(brandsScript);
       };
       document.body.appendChild(quickScript);
@@ -18,10 +18,10 @@
   };
   document.body.appendChild(filtersTemplate);
   var mapDataScript = document.createElement('script');
-  mapDataScript.src = 'js/map-projects.js?v=20261103-breadcrumbs-19';
+  mapDataScript.src = 'js/map-projects.js?v=20261103-kit-filters-20';
   mapDataScript.onload = function () {
     var mapScript = document.createElement('script');
-    mapScript.src = 'js/map-fullscreen.js?v=20261103-breadcrumbs-19';
+    mapScript.src = 'js/map-fullscreen.js?v=20261103-kit-filters-20';
     document.body.appendChild(mapScript);
   };
   document.body.appendChild(mapDataScript);
@@ -585,7 +585,7 @@
 
   if (!document.querySelector('script[data-kurortnaya-start-sales]')) {
     var startSalesScript = document.createElement('script');
-    startSalesScript.src = 'js/start-sales-cards.js?v=20261103-breadcrumbs-19';
+    startSalesScript.src = 'js/start-sales-cards.js?v=20261103-kit-filters-20';
     startSalesScript.dataset.kurortnayaStartSales = 'true';
     document.body.appendChild(startSalesScript);
   }

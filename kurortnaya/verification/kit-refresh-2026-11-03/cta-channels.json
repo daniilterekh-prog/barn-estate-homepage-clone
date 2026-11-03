@@ -1,0 +1,47 @@
+{
+  "base": "http://127.0.0.1:8875/kurortnaya/",
+  "checks": [
+    {
+      "width": 390,
+      "selector": ".catalog-consultation__methods",
+      "active": "wine",
+      "staleHighlight": false,
+      "keyboard": true
+    },
+    {
+      "width": 390,
+      "selector": ".catalog-contact__methods",
+      "active": "wine",
+      "staleHighlight": false,
+      "keyboard": true
+    },
+    {
+      "width": 1440,
+      "selector": ".catalog-consultation__methods",
+      "active": "wine",
+      "staleHighlight": false,
+      "keyboard": true
+    },
+    {
+      "width": 1440,
+      "selector": ".catalog-contact__methods",
+      "active": "wine",
+      "staleHighlight": false,
+      "keyboard": true
+    },
+    {
+      "width": 2560,
+      "selector": ".catalog-consultation__methods",
+      "active": "wine",
+      "staleHighlight": false,
+      "keyboard": true
+    },
+    {
+      "width": 2560,
+      "selector": ".catalog-contact__methods",
+      "active": "wine",
+      "staleHighlight": false,
+      "keyboard": true
+    }
+  ]
+}

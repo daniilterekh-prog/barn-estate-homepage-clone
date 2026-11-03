@@ -1,7 +1,7 @@
 {
   "id": "first-degree-listing",
   "title": "Фильтры и листинг ЖК / лотов",
-  "version": "1.4.2",
+  "version": "1.5.0",
   "source": {
     "repo": "daniilterekh-prog/barn-estate-homepage-clone",
     "commit": "62aee9e62e2fae669028433ffe411e2f18a01d84",
@@ -48,7 +48,7 @@
     "scope": "listing UI; shared purchase-only state"
   },
   "loadingContract": {
-    "release": "20261103-breadcrumbs-19",
+    "release": "20261103-kit-filters-20",
     "staticListing": true,
     "initialPageStyles": true,
     "legacyListingBuilder": false
