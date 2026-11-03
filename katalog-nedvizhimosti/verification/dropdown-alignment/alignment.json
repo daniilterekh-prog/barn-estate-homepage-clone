@@ -1,0 +1,1338 @@
+{
+  "passed": true,
+  "results": [
+    {
+      "width": 320,
+      "selector": ".catalog-direction:not(.catalog-market) .resort-select-trigger",
+      "trigger": 39,
+      "popupLeft": 23,
+      "popupWidth": 259,
+      "popupPadding": "8px",
+      "viewportOverflow": false,
+      "headerLeft": null,
+      "options": [
+        {
+          "label": "Москва",
+          "left": 39,
+          "alignment": "left",
+          "padding": "12px 12px 12px 6px"
+        },
+        {
+          "label": "Загородная",
+          "left": 39,
+          "alignment": "left",
+          "padding": "12px 12px 12px 6px"
+        },
+        {
+          "label": "Коммерческая",
+          "left": 39,
+          "alignment": "left",
+          "padding": "12px 12px 12px 6px"
+        },
+        {
+          "label": "Курортная",
+          "left": 39,
+          "alignment": "left",
+          "padding": "12px 12px 12px 6px"
+        },
+        {
+          "label": "Зарубежная",
+          "left": 39,
+          "alignment": "left",
+          "padding": "12px 12px 12px 6px"
+        }
+      ]
+    },
+    {
+      "width": 320,
+      "selector": ".catalog-market .resort-select-trigger",
+      "trigger": 39,
+      "popupLeft": 23,
+      "popupWidth": 259,
+      "popupPadding": "8px",
+      "viewportOverflow": false,
+      "headerLeft": 39,
+      "options": [
+        {
+          "label": "Новостройки",
+          "left": 39,
+          "alignment": "left",
+          "padding": "12px 12px 12px 6px"
+        },
+        {
+          "label": "Вторичная",
+          "left": 39,
+          "alignment": "left",
+          "padding": "12px 12px 12px 6px"
+        }
+      ]
+    },
+    {
+      "width": 320,
+      "selector": ".catalog-mode-filters .catalog-quick-filters__item:nth-child(1) .catalog-quick-filters__button",
+      "trigger": 35,
+      "popupLeft": 23,
+      "popupWidth": 220,
+      "popupPadding": "8px",
+      "viewportOverflow": false,
+      "headerLeft": null,
+      "options": [
+        {
+          "label": "Все локации",
+          "left": 35,
+          "alignment": "left",
+          "padding": "12px 12px 12px 2px"
+        },
+        {
+          "label": "Москва",
+          "left": 35,
+          "alignment": "left",
+          "padding": "12px 12px 12px 2px"
+        }
+      ]
+    },
+    {
+      "width": 320,
+      "selector": ".catalog-mode-filters .catalog-quick-filters__item:nth-child(2) .catalog-quick-filters__button",
+      "trigger": 165.5,
+      "popupLeft": 84,
+      "popupWidth": 220,
+      "popupPadding": "8px",
+      "viewportOverflow": false,
+      "headerLeft": null,
+      "options": [
+        {
+          "label": "Любой тип",
+          "left": 165.5,
+          "alignment": "left",
+          "padding": "12px 12px 12px 71.5px"
+        },
+        {
+          "label": "Квартира",
+          "left": 165.5,
+          "alignment": "left",
+          "padding": "12px 12px 12px 71.5px"
+        },
+        {
+          "label": "Апартаменты",
+          "left": 165.5,
+          "alignment": "left",
+          "padding": "12px 12px 12px 71.5px"
+        },
+        {
+          "label": "Квартира в новостройке",
+          "left": 165.5,
+          "alignment": "left",
+          "padding": "12px 12px 12px 71.5px"
+        },
+        {
+          "label": "Пентхаус",
+          "left": 165.5,
+          "alignment": "left",
+          "padding": "12px 12px 12px 71.5px"
+        },
+        {
+          "label": "Таунхаус",
+          "left": 165.5,
+          "alignment": "left",
+          "padding": "12px 12px 12px 71.5px"
+        }
+      ]
+    },
+    {
+      "width": 320,
+      "selector": ".catalog-mode-filters .catalog-quick-filters__item:nth-child(3) .catalog-quick-filters__button",
+      "trigger": 35,
+      "popupLeft": 23,
+      "popupWidth": 220,
+      "popupPadding": "8px",
+      "viewportOverflow": false,
+      "headerLeft": null,
+      "options": [
+        {
+          "label": "Любая стоимость",
+          "left": 35,
+          "alignment": "left",
+          "padding": "12px 12px 12px 2px"
+        },
+        {
+          "label": "до 50 млн ₽",
+          "left": 35,
+          "alignment": "left",
+          "padding": "12px 12px 12px 2px"
+        },
+        {
+          "label": "50 – 100 млн ₽",
+          "left": 35,
+          "alignment": "left",
+          "padding": "12px 12px 12px 2px"
+        },
+        {
+          "label": "100 – 200 млн ₽",
+          "left": 35,
+          "alignment": "left",
+          "padding": "12px 12px 12px 2px"
+        },
+        {
+          "label": "от 200 млн ₽",
+          "left": 35,
+          "alignment": "left",
+          "padding": "12px 12px 12px 2px"
+        }
+      ]
+    },
+    {
+      "width": 320,
+      "selector": ".catalog-mode-filters .catalog-quick-filters__item:nth-child(4) .catalog-quick-filters__button",
+      "trigger": 165.5,
+      "popupLeft": 84,
+      "popupWidth": 220,
+      "popupPadding": "8px",
+      "viewportOverflow": false,
+      "headerLeft": null,
+      "options": [
+        {
+          "label": "Любые",
+          "left": 165.5,
+          "alignment": "left",
+          "padding": "12px 12px 12px 71.5px"
+        },
+        {
+          "label": "1",
+          "left": 165.5,
+          "alignment": "left",
+          "padding": "12px 12px 12px 71.5px"
+        },
+        {
+          "label": "2",
+          "left": 165.5,
+          "alignment": "left",
+          "padding": "12px 12px 12px 71.5px"
+        },
+        {
+          "label": "3",
+          "left": 165.5,
+          "alignment": "left",
+          "padding": "12px 12px 12px 71.5px"
+        },
+        {
+          "label": "Более 3",
+          "left": 165.5,
+          "alignment": "left",
+          "padding": "12px 12px 12px 71.5px"
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "selector": ".catalog-direction:not(.catalog-market) .resort-select-trigger",
+      "trigger": 39,
+      "popupLeft": 23,
+      "popupWidth": 329,
+      "popupPadding": "8px",
+      "viewportOverflow": false,
+      "headerLeft": null,
+      "options": [
+        {
+          "label": "Москва",
+          "left": 39,
+          "alignment": "left",
+          "padding": "12px 12px 12px 6px"
+        },
+        {
+          "label": "Загородная",
+          "left": 39,
+          "alignment": "left",
+          "padding": "12px 12px 12px 6px"
+        },
+        {
+          "label": "Коммерческая",
+          "left": 39,
+          "alignment": "left",
+          "padding": "12px 12px 12px 6px"
+        },
+        {
+          "label": "Курортная",
+          "left": 39,
+          "alignment": "left",
+          "padding": "12px 12px 12px 6px"
+        },
+        {
+          "label": "Зарубежная",
+          "left": 39,
+          "alignment": "left",
+          "padding": "12px 12px 12px 6px"
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "selector": ".catalog-market .resort-select-trigger",
+      "trigger": 39,
+      "popupLeft": 23,
+      "popupWidth": 329,
+      "popupPadding": "8px",
+      "viewportOverflow": false,
+      "headerLeft": 39,
+      "options": [
+        {
+          "label": "Новостройки",
+          "left": 39,
+          "alignment": "left",
+          "padding": "12px 12px 12px 6px"
+        },
+        {
+          "label": "Вторичная",
+          "left": 39,
+          "alignment": "left",
+          "padding": "12px 12px 12px 6px"
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "selector": ".catalog-mode-filters .catalog-quick-filters__item:nth-child(1) .catalog-quick-filters__button",
+      "trigger": 35,
+      "popupLeft": 23,
+      "popupWidth": 220,
+      "popupPadding": "8px",
+      "viewportOverflow": false,
+      "headerLeft": null,
+      "options": [
+        {
+          "label": "Все локации",
+          "left": 35,
+          "alignment": "left",
+          "padding": "12px 12px 12px 2px"
+        },
+        {
+          "label": "Москва",
+          "left": 35,
+          "alignment": "left",
+          "padding": "12px 12px 12px 2px"
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "selector": ".catalog-mode-filters .catalog-quick-filters__item:nth-child(2) .catalog-quick-filters__button",
+      "trigger": 200.5,
+      "popupLeft": 154,
+      "popupWidth": 220,
+      "popupPadding": "8px",
+      "viewportOverflow": false,
+      "headerLeft": null,
+      "options": [
+        {
+          "label": "Любой тип",
+          "left": 200.5,
+          "alignment": "left",
+          "padding": "12px 12px 12px 36.5px"
+        },
+        {
+          "label": "Квартира",
+          "left": 200.5,
+          "alignment": "left",
+          "padding": "12px 12px 12px 36.5px"
+        },
+        {
+          "label": "Апартаменты",
+          "left": 200.5,
+          "alignment": "left",
+          "padding": "12px 12px 12px 36.5px"
+        },
+        {
+          "label": "Квартира в новостройке",
+          "left": 200.5,
+          "alignment": "left",
+          "padding": "12px 12px 12px 36.5px"
+        },
+        {
+          "label": "Пентхаус",
+          "left": 200.5,
+          "alignment": "left",
+          "padding": "12px 12px 12px 36.5px"
+        },
+        {
+          "label": "Таунхаус",
+          "left": 200.5,
+          "alignment": "left",
+          "padding": "12px 12px 12px 36.5px"
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "selector": ".catalog-mode-filters .catalog-quick-filters__item:nth-child(3) .catalog-quick-filters__button",
+      "trigger": 35,
+      "popupLeft": 23,
+      "popupWidth": 220,
+      "popupPadding": "8px",
+      "viewportOverflow": false,
+      "headerLeft": null,
+      "options": [
+        {
+          "label": "Любая стоимость",
+          "left": 35,
+          "alignment": "left",
+          "padding": "12px 12px 12px 2px"
+        },
+        {
+          "label": "до 50 млн ₽",
+          "left": 35,
+          "alignment": "left",
+          "padding": "12px 12px 12px 2px"
+        },
+        {
+          "label": "50 – 100 млн ₽",
+          "left": 35,
+          "alignment": "left",
+          "padding": "12px 12px 12px 2px"
+        },
+        {
+          "label": "100 – 200 млн ₽",
+          "left": 35,
+          "alignment": "left",
+          "padding": "12px 12px 12px 2px"
+        },
+        {
+          "label": "от 200 млн ₽",
+          "left": 35,
+          "alignment": "left",
+          "padding": "12px 12px 12px 2px"
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "selector": ".catalog-mode-filters .catalog-quick-filters__item:nth-child(4) .catalog-quick-filters__button",
+      "trigger": 200.5,
+      "popupLeft": 154,
+      "popupWidth": 220,
+      "popupPadding": "8px",
+      "viewportOverflow": false,
+      "headerLeft": null,
+      "options": [
+        {
+          "label": "Любые",
+          "left": 200.5,
+          "alignment": "left",
+          "padding": "12px 12px 12px 36.5px"
+        },
+        {
+          "label": "1",
+          "left": 200.5,
+          "alignment": "left",
+          "padding": "12px 12px 12px 36.5px"
+        },
+        {
+          "label": "2",
+          "left": 200.5,
+          "alignment": "left",
+          "padding": "12px 12px 12px 36.5px"
+        },
+        {
+          "label": "3",
+          "left": 200.5,
+          "alignment": "left",
+          "padding": "12px 12px 12px 36.5px"
+        },
+        {
+          "label": "Более 3",
+          "left": 200.5,
+          "alignment": "left",
+          "padding": "12px 12px 12px 36.5px"
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "selector": ".catalog-direction:not(.catalog-market) .resort-select-trigger",
+      "trigger": 405.5,
+      "popupLeft": 385.5,
+      "popupWidth": 342.5,
+      "popupPadding": "8px",
+      "viewportOverflow": false,
+      "headerLeft": null,
+      "options": [
+        {
+          "label": "Москва",
+          "left": 405.5,
+          "alignment": "left",
+          "padding": "12px 12px 12px 10px"
+        },
+        {
+          "label": "Загородная",
+          "left": 405.5,
+          "alignment": "left",
+          "padding": "12px 12px 12px 10px"
+        },
+        {
+          "label": "Коммерческая",
+          "left": 405.5,
+          "alignment": "left",
+          "padding": "12px 12px 12px 10px"
+        },
+        {
+          "label": "Курортная",
+          "left": 405.5,
+          "alignment": "left",
+          "padding": "12px 12px 12px 10px"
+        },
+        {
+          "label": "Зарубежная",
+          "left": 405.5,
+          "alignment": "left",
+          "padding": "12px 12px 12px 10px"
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "selector": ".catalog-market .resort-select-trigger",
+      "trigger": 37,
+      "popupLeft": 25,
+      "popupWidth": 220,
+      "popupPadding": "8px",
+      "viewportOverflow": false,
+      "headerLeft": 37,
+      "options": [
+        {
+          "label": "Новостройки",
+          "left": 37,
+          "alignment": "left",
+          "padding": "12px 12px 12px 2px"
+        },
+        {
+          "label": "Вторичная",
+          "left": 37,
+          "alignment": "left",
+          "padding": "12px 12px 12px 2px"
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "selector": ".catalog-mode-filters .catalog-quick-filters__item:nth-child(1) .catalog-quick-filters__button",
+      "trigger": 39,
+      "popupLeft": 25,
+      "popupWidth": 220,
+      "popupPadding": "8px",
+      "viewportOverflow": false,
+      "headerLeft": null,
+      "options": [
+        {
+          "label": "Все локации",
+          "left": 39,
+          "alignment": "left",
+          "padding": "12px 12px 12px 4px"
+        },
+        {
+          "label": "Москва",
+          "left": 39,
+          "alignment": "left",
+          "padding": "12px 12px 12px 4px"
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "selector": ".catalog-mode-filters .catalog-quick-filters__item:nth-child(2) .catalog-quick-filters__button",
+      "trigger": 215.75,
+      "popupLeft": 201.75,
+      "popupWidth": 220,
+      "popupPadding": "8px",
+      "viewportOverflow": false,
+      "headerLeft": null,
+      "options": [
+        {
+          "label": "Любой тип",
+          "left": 215.75,
+          "alignment": "left",
+          "padding": "12px 12px 12px 4px"
+        },
+        {
+          "label": "Квартира",
+          "left": 215.75,
+          "alignment": "left",
+          "padding": "12px 12px 12px 4px"
+        },
+        {
+          "label": "Апартаменты",
+          "left": 215.75,
+          "alignment": "left",
+          "padding": "12px 12px 12px 4px"
+        },
+        {
+          "label": "Квартира в новостройке",
+          "left": 215.75,
+          "alignment": "left",
+          "padding": "12px 12px 12px 4px"
+        },
+        {
+          "label": "Пентхаус",
+          "left": 215.75,
+          "alignment": "left",
+          "padding": "12px 12px 12px 4px"
+        },
+        {
+          "label": "Таунхаус",
+          "left": 215.75,
+          "alignment": "left",
+          "padding": "12px 12px 12px 4px"
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "selector": ".catalog-mode-filters .catalog-quick-filters__item:nth-child(3) .catalog-quick-filters__button",
+      "trigger": 391.5,
+      "popupLeft": 377.5,
+      "popupWidth": 220,
+      "popupPadding": "8px",
+      "viewportOverflow": false,
+      "headerLeft": null,
+      "options": [
+        {
+          "label": "Любая стоимость",
+          "left": 391.5,
+          "alignment": "left",
+          "padding": "12px 12px 12px 4px"
+        },
+        {
+          "label": "до 50 млн ₽",
+          "left": 391.5,
+          "alignment": "left",
+          "padding": "12px 12px 12px 4px"
+        },
+        {
+          "label": "50 – 100 млн ₽",
+          "left": 391.5,
+          "alignment": "left",
+          "padding": "12px 12px 12px 4px"
+        },
+        {
+          "label": "100 – 200 млн ₽",
+          "left": 391.5,
+          "alignment": "left",
+          "padding": "12px 12px 12px 4px"
+        },
+        {
+          "label": "от 200 млн ₽",
+          "left": 391.5,
+          "alignment": "left",
+          "padding": "12px 12px 12px 4px"
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "selector": ".catalog-mode-filters .catalog-quick-filters__item:nth-child(4) .catalog-quick-filters__button",
+      "trigger": 567.25,
+      "popupLeft": 532,
+      "popupWidth": 220,
+      "popupPadding": "8px",
+      "viewportOverflow": false,
+      "headerLeft": null,
+      "options": [
+        {
+          "label": "Любые",
+          "left": 567.25,
+          "alignment": "left",
+          "padding": "12px 12px 12px 25.25px"
+        },
+        {
+          "label": "1",
+          "left": 567.25,
+          "alignment": "left",
+          "padding": "12px 12px 12px 25.25px"
+        },
+        {
+          "label": "2",
+          "left": 567.25,
+          "alignment": "left",
+          "padding": "12px 12px 12px 25.25px"
+        },
+        {
+          "label": "3",
+          "left": 567.25,
+          "alignment": "left",
+          "padding": "12px 12px 12px 25.25px"
+        },
+        {
+          "label": "Более 3",
+          "left": 567.25,
+          "alignment": "left",
+          "padding": "12px 12px 12px 25.25px"
+        }
+      ]
+    },
+    {
+      "width": 1024,
+      "selector": ".catalog-direction:not(.catalog-market) .resort-select-trigger",
+      "trigger": 282.921875,
+      "popupLeft": 262.921875,
+      "popupWidth": 220,
+      "popupPadding": "8px",
+      "viewportOverflow": false,
+      "headerLeft": null,
+      "options": [
+        {
+          "label": "Москва",
+          "left": 282.921875,
+          "alignment": "left",
+          "padding": "12px 12px 12px 10px"
+        },
+        {
+          "label": "Загородная",
+          "left": 282.921875,
+          "alignment": "left",
+          "padding": "12px 12px 12px 10px"
+        },
+        {
+          "label": "Коммерческая",
+          "left": 282.921875,
+          "alignment": "left",
+          "padding": "12px 12px 12px 10px"
+        },
+        {
+          "label": "Курортная",
+          "left": 282.921875,
+          "alignment": "left",
+          "padding": "12px 12px 12px 10px"
+        },
+        {
+          "label": "Зарубежная",
+          "left": 282.921875,
+          "alignment": "left",
+          "padding": "12px 12px 12px 10px"
+        }
+      ]
+    },
+    {
+      "width": 1024,
+      "selector": ".catalog-market .resort-select-trigger",
+      "trigger": 498.921875,
+      "popupLeft": 478.921875,
+      "popupWidth": 220,
+      "popupPadding": "8px",
+      "viewportOverflow": false,
+      "headerLeft": 498.921875,
+      "options": [
+        {
+          "label": "Новостройки",
+          "left": 498.921875,
+          "alignment": "left",
+          "padding": "12px 12px 12px 10px"
+        },
+        {
+          "label": "Вторичная",
+          "left": 498.921875,
+          "alignment": "left",
+          "padding": "12px 12px 12px 10px"
+        }
+      ]
+    },
+    {
+      "width": 1024,
+      "selector": ".catalog-mode-filters .catalog-quick-filters__item:nth-child(1) .catalog-quick-filters__button",
+      "trigger": 55.875,
+      "popupLeft": 41.875,
+      "popupWidth": 220,
+      "popupPadding": "8px",
+      "viewportOverflow": false,
+      "headerLeft": null,
+      "options": [
+        {
+          "label": "Все локации",
+          "left": 55.875,
+          "alignment": "left",
+          "padding": "12px 12px 12px 4px"
+        },
+        {
+          "label": "Москва",
+          "left": 55.875,
+          "alignment": "left",
+          "padding": "12px 12px 12px 4px"
+        }
+      ]
+    },
+    {
+      "width": 1024,
+      "selector": ".catalog-mode-filters .catalog-quick-filters__item:nth-child(2) .catalog-quick-filters__button",
+      "trigger": 237.1875,
+      "popupLeft": 223.1875,
+      "popupWidth": 220,
+      "popupPadding": "8px",
+      "viewportOverflow": false,
+      "headerLeft": null,
+      "options": [
+        {
+          "label": "Любой тип",
+          "left": 237.1875,
+          "alignment": "left",
+          "padding": "12px 12px 12px 4px"
+        },
+        {
+          "label": "Квартира",
+          "left": 237.1875,
+          "alignment": "left",
+          "padding": "12px 12px 12px 4px"
+        },
+        {
+          "label": "Апартаменты",
+          "left": 237.1875,
+          "alignment": "left",
+          "padding": "12px 12px 12px 4px"
+        },
+        {
+          "label": "Квартира в новостройке",
+          "left": 237.1875,
+          "alignment": "left",
+          "padding": "12px 12px 12px 4px"
+        },
+        {
+          "label": "Пентхаус",
+          "left": 237.1875,
+          "alignment": "left",
+          "padding": "12px 12px 12px 4px"
+        },
+        {
+          "label": "Таунхаус",
+          "left": 237.1875,
+          "alignment": "left",
+          "padding": "12px 12px 12px 4px"
+        }
+      ]
+    },
+    {
+      "width": 1024,
+      "selector": ".catalog-mode-filters .catalog-quick-filters__item:nth-child(3) .catalog-quick-filters__button",
+      "trigger": 417.5,
+      "popupLeft": 403.5,
+      "popupWidth": 220,
+      "popupPadding": "8px",
+      "viewportOverflow": false,
+      "headerLeft": null,
+      "options": [
+        {
+          "label": "Любая стоимость",
+          "left": 417.5,
+          "alignment": "left",
+          "padding": "12px 12px 12px 4px"
+        },
+        {
+          "label": "до 50 млн ₽",
+          "left": 417.5,
+          "alignment": "left",
+          "padding": "12px 12px 12px 4px"
+        },
+        {
+          "label": "50 – 100 млн ₽",
+          "left": 417.5,
+          "alignment": "left",
+          "padding": "12px 12px 12px 4px"
+        },
+        {
+          "label": "100 – 200 млн ₽",
+          "left": 417.5,
+          "alignment": "left",
+          "padding": "12px 12px 12px 4px"
+        },
+        {
+          "label": "от 200 млн ₽",
+          "left": 417.5,
+          "alignment": "left",
+          "padding": "12px 12px 12px 4px"
+        }
+      ]
+    },
+    {
+      "width": 1024,
+      "selector": ".catalog-mode-filters .catalog-quick-filters__item:nth-child(4) .catalog-quick-filters__button",
+      "trigger": 597.8125,
+      "popupLeft": 583.8125,
+      "popupWidth": 220,
+      "popupPadding": "8px",
+      "viewportOverflow": false,
+      "headerLeft": null,
+      "options": [
+        {
+          "label": "Любые",
+          "left": 597.8125,
+          "alignment": "left",
+          "padding": "12px 12px 12px 4px"
+        },
+        {
+          "label": "1",
+          "left": 597.8125,
+          "alignment": "left",
+          "padding": "12px 12px 12px 4px"
+        },
+        {
+          "label": "2",
+          "left": 597.8125,
+          "alignment": "left",
+          "padding": "12px 12px 12px 4px"
+        },
+        {
+          "label": "3",
+          "left": 597.8125,
+          "alignment": "left",
+          "padding": "12px 12px 12px 4px"
+        },
+        {
+          "label": "Более 3",
+          "left": 597.8125,
+          "alignment": "left",
+          "padding": "12px 12px 12px 4px"
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "selector": ".catalog-direction:not(.catalog-market) .resort-select-trigger",
+      "trigger": 402.484375,
+      "popupLeft": 382.484375,
+      "popupWidth": 256.40625,
+      "popupPadding": "8px",
+      "viewportOverflow": false,
+      "headerLeft": null,
+      "options": [
+        {
+          "label": "Москва",
+          "left": 402.484375,
+          "alignment": "left",
+          "padding": "12px 12px 12px 10px"
+        },
+        {
+          "label": "Загородная",
+          "left": 402.484375,
+          "alignment": "left",
+          "padding": "12px 12px 12px 10px"
+        },
+        {
+          "label": "Коммерческая",
+          "left": 402.484375,
+          "alignment": "left",
+          "padding": "12px 12px 12px 10px"
+        },
+        {
+          "label": "Курортная",
+          "left": 402.484375,
+          "alignment": "left",
+          "padding": "12px 12px 12px 10px"
+        },
+        {
+          "label": "Зарубежная",
+          "left": 402.484375,
+          "alignment": "left",
+          "padding": "12px 12px 12px 10px"
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "selector": ".catalog-market .resort-select-trigger",
+      "trigger": 676.890625,
+      "popupLeft": 656.890625,
+      "popupWidth": 256.40625,
+      "popupPadding": "8px",
+      "viewportOverflow": false,
+      "headerLeft": 676.890625,
+      "options": [
+        {
+          "label": "Новостройки",
+          "left": 676.890625,
+          "alignment": "left",
+          "padding": "12px 12px 12px 10px"
+        },
+        {
+          "label": "Вторичная",
+          "left": 676.890625,
+          "alignment": "left",
+          "padding": "12px 12px 12px 10px"
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "selector": ".catalog-mode-filters .catalog-quick-filters__item:nth-child(1) .catalog-quick-filters__button",
+      "trigger": 83.328125,
+      "popupLeft": 69.328125,
+      "popupWidth": 270.578125,
+      "popupPadding": "8px",
+      "viewportOverflow": false,
+      "headerLeft": null,
+      "options": [
+        {
+          "label": "Все локации",
+          "left": 83.328125,
+          "alignment": "left",
+          "padding": "12px 12px 12px 4px"
+        },
+        {
+          "label": "Москва",
+          "left": 83.328125,
+          "alignment": "left",
+          "padding": "12px 12px 12px 4px"
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "selector": ".catalog-mode-filters .catalog-quick-filters__item:nth-child(2) .catalog-quick-filters__button",
+      "trigger": 354.90625,
+      "popupLeft": 340.90625,
+      "popupWidth": 269.59375,
+      "popupPadding": "8px",
+      "viewportOverflow": false,
+      "headerLeft": null,
+      "options": [
+        {
+          "label": "Любой тип",
+          "left": 354.90625,
+          "alignment": "left",
+          "padding": "12px 12px 12px 4px"
+        },
+        {
+          "label": "Квартира",
+          "left": 354.90625,
+          "alignment": "left",
+          "padding": "12px 12px 12px 4px"
+        },
+        {
+          "label": "Апартаменты",
+          "left": 354.90625,
+          "alignment": "left",
+          "padding": "12px 12px 12px 4px"
+        },
+        {
+          "label": "Квартира в новостройке",
+          "left": 354.90625,
+          "alignment": "left",
+          "padding": "12px 12px 12px 4px"
+        },
+        {
+          "label": "Пентхаус",
+          "left": 354.90625,
+          "alignment": "left",
+          "padding": "12px 12px 12px 4px"
+        },
+        {
+          "label": "Таунхаус",
+          "left": 354.90625,
+          "alignment": "left",
+          "padding": "12px 12px 12px 4px"
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "selector": ".catalog-mode-filters .catalog-quick-filters__item:nth-child(3) .catalog-quick-filters__button",
+      "trigger": 625.5,
+      "popupLeft": 611.5,
+      "popupWidth": 269.578125,
+      "popupPadding": "8px",
+      "viewportOverflow": false,
+      "headerLeft": null,
+      "options": [
+        {
+          "label": "Любая стоимость",
+          "left": 625.5,
+          "alignment": "left",
+          "padding": "12px 12px 12px 4px"
+        },
+        {
+          "label": "до 50 млн ₽",
+          "left": 625.5,
+          "alignment": "left",
+          "padding": "12px 12px 12px 4px"
+        },
+        {
+          "label": "50 – 100 млн ₽",
+          "left": 625.5,
+          "alignment": "left",
+          "padding": "12px 12px 12px 4px"
+        },
+        {
+          "label": "100 – 200 млн ₽",
+          "left": 625.5,
+          "alignment": "left",
+          "padding": "12px 12px 12px 4px"
+        },
+        {
+          "label": "от 200 млн ₽",
+          "left": 625.5,
+          "alignment": "left",
+          "padding": "12px 12px 12px 4px"
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "selector": ".catalog-mode-filters .catalog-quick-filters__item:nth-child(4) .catalog-quick-filters__button",
+      "trigger": 896.078125,
+      "popupLeft": 882.078125,
+      "popupWidth": 269.59375,
+      "popupPadding": "8px",
+      "viewportOverflow": false,
+      "headerLeft": null,
+      "options": [
+        {
+          "label": "Любые",
+          "left": 896.078125,
+          "alignment": "left",
+          "padding": "12px 12px 12px 4px"
+        },
+        {
+          "label": "1",
+          "left": 896.078125,
+          "alignment": "left",
+          "padding": "12px 12px 12px 4px"
+        },
+        {
+          "label": "2",
+          "left": 896.078125,
+          "alignment": "left",
+          "padding": "12px 12px 12px 4px"
+        },
+        {
+          "label": "3",
+          "left": 896.078125,
+          "alignment": "left",
+          "padding": "12px 12px 12px 4px"
+        },
+        {
+          "label": "Более 3",
+          "left": 896.078125,
+          "alignment": "left",
+          "padding": "12px 12px 12px 4px"
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "selector": ".catalog-direction:not(.catalog-market) .resort-select-trigger",
+      "trigger": 533.96875,
+      "popupLeft": 513.96875,
+      "popupWidth": 343.21875,
+      "popupPadding": "8px",
+      "viewportOverflow": false,
+      "headerLeft": null,
+      "options": [
+        {
+          "label": "Москва",
+          "left": 533.96875,
+          "alignment": "left",
+          "padding": "12px 12px 12px 10px"
+        },
+        {
+          "label": "Загородная",
+          "left": 533.96875,
+          "alignment": "left",
+          "padding": "12px 12px 12px 10px"
+        },
+        {
+          "label": "Коммерческая",
+          "left": 533.96875,
+          "alignment": "left",
+          "padding": "12px 12px 12px 10px"
+        },
+        {
+          "label": "Курортная",
+          "left": 533.96875,
+          "alignment": "left",
+          "padding": "12px 12px 12px 10px"
+        },
+        {
+          "label": "Зарубежная",
+          "left": 533.96875,
+          "alignment": "left",
+          "padding": "12px 12px 12px 10px"
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "selector": ".catalog-market .resort-select-trigger",
+      "trigger": 895.1875,
+      "popupLeft": 875.1875,
+      "popupWidth": 343.21875,
+      "popupPadding": "8px",
+      "viewportOverflow": false,
+      "headerLeft": 895.1875,
+      "options": [
+        {
+          "label": "Новостройки",
+          "left": 895.1875,
+          "alignment": "left",
+          "padding": "12px 12px 12px 10px"
+        },
+        {
+          "label": "Вторичная",
+          "left": 895.1875,
+          "alignment": "left",
+          "padding": "12px 12px 12px 10px"
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "selector": ".catalog-mode-filters .catalog-quick-filters__item:nth-child(1) .catalog-quick-filters__button",
+      "trigger": 114.984375,
+      "popupLeft": 100.984375,
+      "popupWidth": 374.75,
+      "popupPadding": "8px",
+      "viewportOverflow": false,
+      "headerLeft": null,
+      "options": [
+        {
+          "label": "Все локации",
+          "left": 114.984375,
+          "alignment": "left",
+          "padding": "12px 12px 12px 4px"
+        },
+        {
+          "label": "Москва",
+          "left": 114.984375,
+          "alignment": "left",
+          "padding": "12px 12px 12px 4px"
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "selector": ".catalog-mode-filters .catalog-quick-filters__item:nth-child(2) .catalog-quick-filters__button",
+      "trigger": 490.734375,
+      "popupLeft": 476.734375,
+      "popupWidth": 373.765625,
+      "popupPadding": "8px",
+      "viewportOverflow": false,
+      "headerLeft": null,
+      "options": [
+        {
+          "label": "Любой тип",
+          "left": 490.734375,
+          "alignment": "left",
+          "padding": "12px 12px 12px 4px"
+        },
+        {
+          "label": "Квартира",
+          "left": 490.734375,
+          "alignment": "left",
+          "padding": "12px 12px 12px 4px"
+        },
+        {
+          "label": "Апартаменты",
+          "left": 490.734375,
+          "alignment": "left",
+          "padding": "12px 12px 12px 4px"
+        },
+        {
+          "label": "Квартира в новостройке",
+          "left": 490.734375,
+          "alignment": "left",
+          "padding": "12px 12px 12px 4px"
+        },
+        {
+          "label": "Пентхаус",
+          "left": 490.734375,
+          "alignment": "left",
+          "padding": "12px 12px 12px 4px"
+        },
+        {
+          "label": "Таунхаус",
+          "left": 490.734375,
+          "alignment": "left",
+          "padding": "12px 12px 12px 4px"
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "selector": ".catalog-mode-filters .catalog-quick-filters__item:nth-child(3) .catalog-quick-filters__button",
+      "trigger": 865.5,
+      "popupLeft": 851.5,
+      "popupWidth": 373.75,
+      "popupPadding": "8px",
+      "viewportOverflow": false,
+      "headerLeft": null,
+      "options": [
+        {
+          "label": "Любая стоимость",
+          "left": 865.5,
+          "alignment": "left",
+          "padding": "12px 12px 12px 4px"
+        },
+        {
+          "label": "до 50 млн ₽",
+          "left": 865.5,
+          "alignment": "left",
+          "padding": "12px 12px 12px 4px"
+        },
+        {
+          "label": "50 – 100 млн ₽",
+          "left": 865.5,
+          "alignment": "left",
+          "padding": "12px 12px 12px 4px"
+        },
+        {
+          "label": "100 – 200 млн ₽",
+          "left": 865.5,
+          "alignment": "left",
+          "padding": "12px 12px 12px 4px"
+        },
+        {
+          "label": "от 200 млн ₽",
+          "left": 865.5,
+          "alignment": "left",
+          "padding": "12px 12px 12px 4px"
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "selector": ".catalog-mode-filters .catalog-quick-filters__item:nth-child(4) .catalog-quick-filters__button",
+      "trigger": 1240.25,
+      "popupLeft": 1226.25,
+      "popupWidth": 373.765625,
+      "popupPadding": "8px",
+      "viewportOverflow": false,
+      "headerLeft": null,
+      "options": [
+        {
+          "label": "Любые",
+          "left": 1240.25,
+          "alignment": "left",
+          "padding": "12px 12px 12px 4px"
+        },
+        {
+          "label": "1",
+          "left": 1240.25,
+          "alignment": "left",
+          "padding": "12px 12px 12px 4px"
+        },
+        {
+          "label": "2",
+          "left": 1240.25,
+          "alignment": "left",
+          "padding": "12px 12px 12px 4px"
+        },
+        {
+          "label": "3",
+          "left": 1240.25,
+          "alignment": "left",
+          "padding": "12px 12px 12px 4px"
+        },
+        {
+          "label": "Более 3",
+          "left": 1240.25,
+          "alignment": "left",
+          "padding": "12px 12px 12px 4px"
+        }
+      ]
+    }
+  ],
+  "errors": []
+}

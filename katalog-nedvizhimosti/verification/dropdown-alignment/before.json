@@ -1,0 +1,510 @@
+{
+  "passed": false,
+  "results": [
+    {
+      "width": 320,
+      "selector": ".catalog-direction:not(.catalog-market) .resort-select-trigger",
+      "trigger": 39,
+      "popupLeft": 23,
+      "popupWidth": 259,
+      "popupPadding": "8px",
+      "options": [
+        {
+          "label": "Москва",
+          "left": 45,
+          "alignment": "left",
+          "padding": "12px"
+        },
+        {
+          "label": "Загородная",
+          "left": 45,
+          "alignment": "left",
+          "padding": "12px"
+        },
+        {
+          "label": "Коммерческая",
+          "left": 45,
+          "alignment": "left",
+          "padding": "12px"
+        },
+        {
+          "label": "Курортная",
+          "left": 45,
+          "alignment": "left",
+          "padding": "12px"
+        },
+        {
+          "label": "Зарубежная",
+          "left": 45,
+          "alignment": "left",
+          "padding": "12px"
+        }
+      ]
+    },
+    {
+      "width": 320,
+      "selector": ".catalog-market .resort-select-trigger",
+      "trigger": 39,
+      "popupLeft": 23,
+      "popupWidth": 259,
+      "popupPadding": "8px",
+      "options": [
+        {
+          "label": "Новостройки",
+          "left": 45,
+          "alignment": "left",
+          "padding": "12px"
+        },
+        {
+          "label": "Вторичная",
+          "left": 45,
+          "alignment": "left",
+          "padding": "12px"
+        }
+      ]
+    },
+    {
+      "width": 320,
+      "selector": ".catalog-mode-filters .catalog-quick-filters__button",
+      "trigger": 35,
+      "popupLeft": 23,
+      "popupWidth": 220,
+      "popupPadding": "8px",
+      "options": [
+        {
+          "label": "Все локации",
+          "left": 45,
+          "alignment": "left",
+          "padding": "12px"
+        },
+        {
+          "label": "Москва",
+          "left": 45,
+          "alignment": "left",
+          "padding": "12px"
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "selector": ".catalog-direction:not(.catalog-market) .resort-select-trigger",
+      "trigger": 39,
+      "popupLeft": 23,
+      "popupWidth": 329,
+      "popupPadding": "8px",
+      "options": [
+        {
+          "label": "Москва",
+          "left": 45,
+          "alignment": "left",
+          "padding": "12px"
+        },
+        {
+          "label": "Загородная",
+          "left": 45,
+          "alignment": "left",
+          "padding": "12px"
+        },
+        {
+          "label": "Коммерческая",
+          "left": 45,
+          "alignment": "left",
+          "padding": "12px"
+        },
+        {
+          "label": "Курортная",
+          "left": 45,
+          "alignment": "left",
+          "padding": "12px"
+        },
+        {
+          "label": "Зарубежная",
+          "left": 45,
+          "alignment": "left",
+          "padding": "12px"
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "selector": ".catalog-market .resort-select-trigger",
+      "trigger": 39,
+      "popupLeft": 23,
+      "popupWidth": 329,
+      "popupPadding": "8px",
+      "options": [
+        {
+          "label": "Новостройки",
+          "left": 45,
+          "alignment": "left",
+          "padding": "12px"
+        },
+        {
+          "label": "Вторичная",
+          "left": 45,
+          "alignment": "left",
+          "padding": "12px"
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "selector": ".catalog-mode-filters .catalog-quick-filters__button",
+      "trigger": 35,
+      "popupLeft": 23,
+      "popupWidth": 220,
+      "popupPadding": "8px",
+      "options": [
+        {
+          "label": "Все локации",
+          "left": 45,
+          "alignment": "left",
+          "padding": "12px"
+        },
+        {
+          "label": "Москва",
+          "left": 45,
+          "alignment": "left",
+          "padding": "12px"
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "selector": ".catalog-direction:not(.catalog-market) .resort-select-trigger",
+      "trigger": 405.5,
+      "popupLeft": 385.5,
+      "popupWidth": 342.5,
+      "popupPadding": "8px",
+      "options": [
+        {
+          "label": "Москва",
+          "left": 407.5,
+          "alignment": "left",
+          "padding": "12px"
+        },
+        {
+          "label": "Загородная",
+          "left": 407.5,
+          "alignment": "left",
+          "padding": "12px"
+        },
+        {
+          "label": "Коммерческая",
+          "left": 407.5,
+          "alignment": "left",
+          "padding": "12px"
+        },
+        {
+          "label": "Курортная",
+          "left": 407.5,
+          "alignment": "left",
+          "padding": "12px"
+        },
+        {
+          "label": "Зарубежная",
+          "left": 407.5,
+          "alignment": "left",
+          "padding": "12px"
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "selector": ".catalog-market .resort-select-trigger",
+      "trigger": 37,
+      "popupLeft": 25,
+      "popupWidth": 220,
+      "popupPadding": "8px",
+      "options": [
+        {
+          "label": "Новостройки",
+          "left": 47,
+          "alignment": "left",
+          "padding": "12px"
+        },
+        {
+          "label": "Вторичная",
+          "left": 47,
+          "alignment": "left",
+          "padding": "12px"
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "selector": ".catalog-mode-filters .catalog-quick-filters__button",
+      "trigger": 39,
+      "popupLeft": 25,
+      "popupWidth": 220,
+      "popupPadding": "8px",
+      "options": [
+        {
+          "label": "Все локации",
+          "left": 47,
+          "alignment": "left",
+          "padding": "12px"
+        },
+        {
+          "label": "Москва",
+          "left": 47,
+          "alignment": "left",
+          "padding": "12px"
+        }
+      ]
+    },
+    {
+      "width": 1024,
+      "selector": ".catalog-direction:not(.catalog-market) .resort-select-trigger",
+      "trigger": 282.921875,
+      "popupLeft": 262.921875,
+      "popupWidth": 220,
+      "popupPadding": "8px",
+      "options": [
+        {
+          "label": "Москва",
+          "left": 284.921875,
+          "alignment": "left",
+          "padding": "12px"
+        },
+        {
+          "label": "Загородная",
+          "left": 284.921875,
+          "alignment": "left",
+          "padding": "12px"
+        },
+        {
+          "label": "Коммерческая",
+          "left": 284.921875,
+          "alignment": "left",
+          "padding": "12px"
+        },
+        {
+          "label": "Курортная",
+          "left": 284.921875,
+          "alignment": "left",
+          "padding": "12px"
+        },
+        {
+          "label": "Зарубежная",
+          "left": 284.921875,
+          "alignment": "left",
+          "padding": "12px"
+        }
+      ]
+    },
+    {
+      "width": 1024,
+      "selector": ".catalog-market .resort-select-trigger",
+      "trigger": 498.921875,
+      "popupLeft": 478.921875,
+      "popupWidth": 220,
+      "popupPadding": "8px",
+      "options": [
+        {
+          "label": "Новостройки",
+          "left": 500.921875,
+          "alignment": "left",
+          "padding": "12px"
+        },
+        {
+          "label": "Вторичная",
+          "left": 500.921875,
+          "alignment": "left",
+          "padding": "12px"
+        }
+      ]
+    },
+    {
+      "width": 1024,
+      "selector": ".catalog-mode-filters .catalog-quick-filters__button",
+      "trigger": 55.875,
+      "popupLeft": 41.875,
+      "popupWidth": 220,
+      "popupPadding": "8px",
+      "options": [
+        {
+          "label": "Все локации",
+          "left": 63.875,
+          "alignment": "left",
+          "padding": "12px"
+        },
+        {
+          "label": "Москва",
+          "left": 63.875,
+          "alignment": "left",
+          "padding": "12px"
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "selector": ".catalog-direction:not(.catalog-market) .resort-select-trigger",
+      "trigger": 402.484375,
+      "popupLeft": 382.484375,
+      "popupWidth": 256.40625,
+      "popupPadding": "8px",
+      "options": [
+        {
+          "label": "Москва",
+          "left": 404.484375,
+          "alignment": "left",
+          "padding": "12px"
+        },
+        {
+          "label": "Загородная",
+          "left": 404.484375,
+          "alignment": "left",
+          "padding": "12px"
+        },
+        {
+          "label": "Коммерческая",
+          "left": 404.484375,
+          "alignment": "left",
+          "padding": "12px"
+        },
+        {
+          "label": "Курортная",
+          "left": 404.484375,
+          "alignment": "left",
+          "padding": "12px"
+        },
+        {
+          "label": "Зарубежная",
+          "left": 404.484375,
+          "alignment": "left",
+          "padding": "12px"
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "selector": ".catalog-market .resort-select-trigger",
+      "trigger": 676.890625,
+      "popupLeft": 656.890625,
+      "popupWidth": 256.40625,
+      "popupPadding": "8px",
+      "options": [
+        {
+          "label": "Новостройки",
+          "left": 678.890625,
+          "alignment": "left",
+          "padding": "12px"
+        },
+        {
+          "label": "Вторичная",
+          "left": 678.890625,
+          "alignment": "left",
+          "padding": "12px"
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "selector": ".catalog-mode-filters .catalog-quick-filters__button",
+      "trigger": 83.328125,
+      "popupLeft": 69.328125,
+      "popupWidth": 270.578125,
+      "popupPadding": "8px",
+      "options": [
+        {
+          "label": "Все локации",
+          "left": 91.328125,
+          "alignment": "left",
+          "padding": "12px"
+        },
+        {
+          "label": "Москва",
+          "left": 91.328125,
+          "alignment": "left",
+          "padding": "12px"
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "selector": ".catalog-direction:not(.catalog-market) .resort-select-trigger",
+      "trigger": 533.96875,
+      "popupLeft": 513.96875,
+      "popupWidth": 343.21875,
+      "popupPadding": "8px",
+      "options": [
+        {
+          "label": "Москва",
+          "left": 535.96875,
+          "alignment": "left",
+          "padding": "12px"
+        },
+        {
+          "label": "Загородная",
+          "left": 535.96875,
+          "alignment": "left",
+          "padding": "12px"
+        },
+        {
+          "label": "Коммерческая",
+          "left": 535.96875,
+          "alignment": "left",
+          "padding": "12px"
+        },
+        {
+          "label": "Курортная",
+          "left": 535.96875,
+          "alignment": "left",
+          "padding": "12px"
+        },
+        {
+          "label": "Зарубежная",
+          "left": 535.96875,
+          "alignment": "left",
+          "padding": "12px"
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "selector": ".catalog-market .resort-select-trigger",
+      "trigger": 895.1875,
+      "popupLeft": 875.1875,
+      "popupWidth": 343.21875,
+      "popupPadding": "8px",
+      "options": [
+        {
+          "label": "Новостройки",
+          "left": 897.1875,
+          "alignment": "left",
+          "padding": "12px"
+        },
+        {
+          "label": "Вторичная",
+          "left": 897.1875,
+          "alignment": "left",
+          "padding": "12px"
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "selector": ".catalog-mode-filters .catalog-quick-filters__button",
+      "trigger": 114.984375,
+      "popupLeft": 100.984375,
+      "popupWidth": 374.75,
+      "popupPadding": "8px",
+      "options": [
+        {
+          "label": "Все локации",
+          "left": 122.984375,
+          "alignment": "left",
+          "padding": "12px"
+        },
+        {
+          "label": "Москва",
+          "left": 122.984375,
+          "alignment": "left",
+          "padding": "12px"
+        }
+      ]
+    }
+  ],
+  "errors": []
+}

@@ -57,9 +57,9 @@ html body.catalog-listing-page .catalog-result-summary .resort-sort-trigger{box-
 .catalog-sort-chevron{position:absolute;right:0;top:15px;pointer-events:none}
 /* Dropdown choices use the quiet selected state from the kit's quiz choices. */
 html body.catalog-listing-page .resort-quick-dropdown{padding:8px;border:1px solid #8b8986;border-radius:1px;background:#fff;color:#4f4d49;box-shadow:0 8px 24px #1e1e1e0a}
-html body.catalog-listing-page .resort-quick-dropdown .catalog-quick-filters__dropdown-header{padding:8px 10px 12px;margin-bottom:4px;border-bottom:1px solid #e4e4e4;font:400 15px/1.3 'Tilda Sans',sans-serif}
+html body.catalog-listing-page .resort-quick-dropdown .catalog-quick-filters__dropdown-header{padding:8px 10px 12px;margin-bottom:4px;border-bottom:1px solid #e4e4e4;font:400 15px/1.3 'Tilda Sans',sans-serif;padding-left:var(--catalog-dropdown-header-inset,10px)}
 html body.catalog-listing-page .resort-quick-dropdown .catalog-quick-filters__dropdown-close{width:28px;height:28px;color:#4f4d49}
-html body.catalog-listing-page .resort-quick-dropdown [role=option]{padding:12px;min-height:44px;border:1px solid transparent;border-radius:1px;font:300 18px/1.3 'Tilda Sans',sans-serif}
+html body.catalog-listing-page .resort-quick-dropdown [role=option]{padding:12px;min-height:44px;border:1px solid transparent;border-radius:1px;font:300 18px/1.3 'Tilda Sans',sans-serif;padding-left:var(--catalog-dropdown-option-inset,12px);text-align:left;overflow-wrap:anywhere}
 html body.catalog-listing-page .resort-quick-dropdown [role=option]:hover{background:#f7f7f7;color:#1e1e1e}
 html body.catalog-listing-page .resort-quick-dropdown [role=option].is-selected{background:#f9f3f3;color:#8b1d25;border-color:#8b1d25}
 @media(min-width:1441px){html body.catalog-listing-page .catalog-toolbar__secondary .catalog-mode-detailed-filters[class][class]{font-size:19px}}
