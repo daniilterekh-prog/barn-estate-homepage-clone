@@ -1,6 +1,7 @@
 /* Connect the approved header contact control after the preserved Nuxt hydration. */
 (()=>{
  'use strict';
+ const pageRoot=new URL('./',document.currentScript.src);
  let counter=0;
  function annotate(root){
   for(const dialog of root.querySelectorAll('[role="dialog"]')){
@@ -17,6 +18,26 @@
  function ready(){
   const nuxt=document.querySelector('#__nuxt')?.__vue_app__?.config.globalProperties.$nuxt;
   if(!nuxt||nuxt.isHydrating){setTimeout(ready,30);return;}
+  const header=document.querySelector('.site-header');
+  if(header&&!header.querySelector('.media-reference-nav')){
+   const nav=document.createElement('nav');nav.className='media-reference-nav';nav.setAttribute('aria-label','Направления BARN Estate');
+   const list=document.createElement('ul');
+   for(const [label,url] of [
+    ['Москва','https://barn-estate.ru/gorodskaya-nedvizhimost/'],
+    ['Загородная','https://barn-estate.ru/zagorodnaya-nedvizhimost/'],
+    ['Коммерческая','https://barn-estate.ru/kommercheskaya-nedvizhimost/'],
+    ['Курортная','https://barn-estate.ru/kurortnaya/'],
+    ['Зарубежная','https://barn-estate.ru/mezhdunarodnaya-nedvizhimost/'],
+    ['Санкт-Петербург','https://barnes-spb.ru/'],
+    ['Медиа',pageRoot.href],
+    ['О BARN Estate','https://barn-estate.ru/mir-barn-estate/'],
+    ['Собственникам','https://barn-estate.ru/sobstvennikam/']
+   ]){
+    const item=document.createElement('li'),link=document.createElement('a');link.textContent=label;link.href=url;
+    if(label==='Медиа')link.setAttribute('aria-current','page');item.append(link);list.append(item);
+   }
+   nav.append(list);header.querySelector('.site-header__inner').append(nav);
+  }
   document.body.dataset.homeSpacingReady='true';
   window.__barnesHeaderContacts?.refresh();
   // Eyebrows of the shared team/newsletter sections, verbatim from the approved kit.
