@@ -17,14 +17,16 @@ const proof=process.env.BARNES_PROOF_DIR||'katalog-nedvizhimosti/verification';f
   for(const width of [320,390,540,541,767,768,1024,1280,1440,1920,2560]){
    await page.setViewportSize({width,height:1000});
    for(const direction of ['city','country','commercial','resort','international']){
+    await page.evaluate(()=>window.BarnesCatalogListing.setMode(0));
     await page.locator('#catalog-direction-select').selectOption(direction,{force:true});
+    assert.ok(await page.locator('.apartment-card').count(),JSON.stringify({width,direction,snapshot:await page.evaluate(()=>window.BarnesCatalogListing.getSnapshot())}));
     const m=await page.evaluate(()=>{
      const rect=e=>{const r=e.getBoundingClientRect();return{x:r.x,y:r.y,w:r.width,h:r.height,right:r.right}},groups=[...document.querySelectorAll('.catalog-toolbar__primary,.catalog-toolbar__secondary')].map(e=>[...e.children].filter(e=>e.checkVisibility()).map(rect));
      return{overflow:document.documentElement.scrollWidth>innerWidth,groups,fieldFont:getComputedStyle(document.querySelector('#catalog-search')).fontSize,modeClipped:[...document.querySelectorAll('.catalog-mode-switch__button')].some(e=>e.scrollWidth>e.clientWidth+1),card:rect(document.querySelector('.apartment-card')),panel:rect(document.querySelector('.catalog-mode-toolbar'))};
     });
     assert.equal(m.overflow,false,`${direction} ${width}`);assert.equal(await page.locator('.catalog-mode-filters .catalog-quick-filters__button:visible').count(),4);assert.equal(m.modeClipped,false,`market clipped ${width}`);
-    if(width>=1024){for(const row of m.groups){assert.ok(row.every(r=>Math.abs(r.y-row[0].y)<1&&r.h===64));for(let i=1;i<row.length;i++)assert.ok(row[i].x>=row[i-1].right)}assert.ok(m.groups[1][0].y>m.groups[0][0].y);assert.equal(m.fieldFont,(width<=1440?'18px':'20px'))}
-    if(width<=767){assert.equal(await page.locator('.catalog-mode-filters').isVisible(),true);assert.equal(await page.locator('.catalog-mode-detailed-filters').isVisible(),true);assert.ok(m.panel.h<=410);assert.equal(m.fieldFont,(width<=540?'17px':'18px'));await page.locator('.catalog-mode-detailed-filters').click();assert.ok(await page.locator('.hero-filter-modal').isVisible());assert.equal(await page.locator('.hero-filter-modal [name=landMin]').isVisible(),direction==='country');await page.keyboard.press('Escape')}
+    if(width>=1024){for(const row of m.groups){assert.ok(row.every(r=>Math.abs(r.y-row[0].y)<1&&r.h===64));for(let i=1;i<row.length;i++)assert.ok(row[i].x>=row[i-1].right)}assert.ok(m.groups[1][0].y>m.groups[0][0].y);assert.equal(m.fieldFont,(width<=1440?'16px':'18px'))}
+    if(width<=767){assert.equal(await page.locator('.catalog-mode-filters').isVisible(),true);assert.equal(await page.locator('.catalog-mode-detailed-filters').isVisible(),true);assert.ok(m.panel.h<=410);assert.equal(m.fieldFont,'16px');await page.locator('.catalog-mode-detailed-filters').click();assert.ok(await page.locator('.hero-filter-modal').isVisible());assert.equal(await page.locator('.hero-filter-modal [name=landMin]').isVisible(),direction==='country');await page.keyboard.press('Escape')}
     results.push({width,direction,twoRows:width>=1024,compact:width<=767,panelHeight:m.panel.h,overflow:m.overflow});
    }
    await page.locator('#catalog-direction-select').selectOption('city',{force:true});

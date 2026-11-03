@@ -1,5 +1,5 @@
 /* Entry control uses the catalogue field typography; fullscreen geometry comes from resort. */
-html body.catalog-listing-page .catalog-map-trigger{display:inline-flex;align-items:center;justify-content:center;gap:10px;flex:none;min-height:44px;padding:0 16px;border:1px solid #8b1d25;border-radius:1px;background:#fff;color:#8b1d25;font:300 var(--home-field)/1.1 'Tilda Sans',sans-serif;white-space:nowrap;cursor:pointer}
+html body.catalog-listing-page .catalog-map-trigger{display:inline-flex;align-items:center;justify-content:center;gap:10px;flex:none;min-height:44px;padding:0 16px;border:1px solid #8b1d25;border-radius:1px;background:#fff;color:#8b1d25;font:300 var(--catalog-filter-font-size)/1.1 'Tilda Sans',sans-serif;white-space:nowrap;cursor:pointer}
 html body.catalog-listing-page .catalog-map-trigger svg{width:20px;height:20px;flex:none}
 html body.catalog-listing-page .catalog-map-trigger:hover{background:#8b1d25;color:#fff}
 html body.catalog-listing-page .catalog-map-trigger:focus-visible{outline:2px solid #8b1d25;outline-offset:3px}
@@ -44,3 +44,6 @@ html body.catalog-listing-page .catalog-map-trigger:disabled{opacity:.45;cursor:
 
 html body.catalog-listing-page .catalog-map-trigger svg{display:block;align-self:center;transform:translateY(-1px)}
 .catalog-map-browser .catalog-map-market[hidden]{display:none!important}
+
+/* Filter controls share the live homepage hero scale; map cards retain their own type. */
+html body.catalog-listing-page .catalog-map-browser{--map-filter-size:var(--catalog-filter-font-size)}

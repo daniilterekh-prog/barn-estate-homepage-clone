@@ -1,5 +1,5 @@
 /* Approved homepage v1.0.0 roles adapted to the catalogue's own composition. */
-html body.catalog-listing-page{--catalog-filter-font-size:var(--home-field);--catalog-filter-muted:#656462;--kit-font:'Tilda Sans','Tilda Sans Fallback',system-ui,sans-serif;font-synthesis:none}
+html body.catalog-listing-page{--catalog-control-font-size:16px;--catalog-filter-font-size:var(--catalog-control-font-size);--catalog-range-font-size:18px;--catalog-filter-muted:#656462;--kit-font:'Tilda Sans','Tilda Sans Fallback',system-ui,sans-serif;font-synthesis:none}
 /* H1 uses the node-page display scale; shared section tokens stay unchanged. */
 html body.catalog-listing-page .catalog-page-title{font-size:clamp(38px,4vw,58px);line-height:1.05;font-weight:300;letter-spacing:-.045em;text-transform:none;margin-bottom:40px;max-width:none}
 /* Breadcrumb scale measured on barn-estate.ru/prodazha_sobstvennikam/. */
@@ -52,7 +52,7 @@ html body.catalog-listing-page .resort-filters .hero-filter-modal__dialog{backgr
 html body.catalog-listing-page .resort-filters :is(.hero-filter-modal__header,.hero-filter-modal__footer){background:#fff;color:#1e1e1e;border-color:#e4e4e4}
 html body.catalog-listing-page .resort-filters :is(.hero-filter-panel-content__group,.hero-filter-modal__body){border-color:#e4e4e4;color:#1e1e1e}
 html body.catalog-listing-page .resort-filters :is(.hero-filter-panel-content__title,.hero-filter-modal__title,.ui-checkbox__label,.ui-input__label){color:#1e1e1e!important}
-html body.catalog-listing-page .resort-filters .ui-input__control{color:#1e1e1e;background:#fff;border:1px solid #8b8986;border-radius:1px;font:300 var(--home-field)/1.4 'Tilda Sans',sans-serif}
+html body.catalog-listing-page .resort-filters .ui-input__control{color:#1e1e1e;background:#fff;border:1px solid #8b8986;border-radius:1px;font:300 var(--catalog-range-font-size)/1.4 'Tilda Sans',sans-serif}
 html body.catalog-listing-page .resort-filters .ui-input__control::placeholder{color:#656462;opacity:1}
 html body.catalog-listing-page .resort-filters .ui-checkbox--chip{border:1px solid #8b8986;border-radius:1px;background:#fff;min-height:44px;font-weight:400;color:#4f4d49}
 html body.catalog-listing-page .resort-filters .ui-checkbox--chip:has(input:checked){border-color:#8b1d25;background:#f9f3f3;color:#8b1d25}
@@ -75,7 +75,7 @@ html body.catalog-listing-page:has(.site-header--menu-open) .floating-expert,
 html body.catalog-listing-page:has(.resort-filters:not([hidden])) .floating-expert,
 html body.catalog-listing-page:has([data-barn-modal]) .floating-expert{visibility:hidden;pointer-events:none}
 @media(prefers-reduced-motion:reduce){.catalog-listing-page .floating-expert{animation:none;opacity:1;transform:none}}
-html body.catalog-listing-page .resort-filters input:not([type=checkbox]):not([type=radio]):not([type=hidden]){background:#fff;color:#1e1e1e;border:1px solid #8b8986;border-radius:1px;font:300 var(--home-field)/1.4 'Tilda Sans',sans-serif}
+html body.catalog-listing-page .resort-filters input:not([type=checkbox]):not([type=radio]):not([type=hidden]){background:#fff;color:#1e1e1e;border:1px solid #8b8986;border-radius:1px;font:300 var(--catalog-range-font-size)/1.4 'Tilda Sans',sans-serif}
 html body.catalog-listing-page .resort-filters input::placeholder{color:#656462;opacity:1}
 html body.catalog-listing-page .resort-filters .ui-checkbox--chip:hover .ui-checkbox__label{color:#fff!important}
 html body.catalog-listing-page .resort-quick-dropdown [role=option]{font-size:18px;font-weight:400;min-height:44px}
@@ -121,3 +121,7 @@ html body.catalog-listing-page .resort-filters .ui-checkbox--chip .ui-checkbox__
 /* Empty/error messages share the compact heading and body-description roles. */
 html body.catalog-listing-page .catalog-empty h2{font-size:var(--home-card);line-height:1.2;letter-spacing:normal}
 html body.catalog-listing-page :is(.catalog-empty,.catalog-load-error)>p{font-size:var(--home-lead);font-weight:300;line-height:var(--home-lead-line);color:#4f4d49}
+
+/* Match the live homepage hero controls, separately from contact-form/card tokens. */
+@media(min-width:1441px){html body.catalog-listing-page{--catalog-control-font-size:18px}}
+@media(max-width:540px){html body.catalog-listing-page{--catalog-range-font-size:16px}}

@@ -1,0 +1,816 @@
+{
+  "passed": true,
+  "cardStates": 90,
+  "rows": [
+    {
+      "width": 320,
+      "direction": "city",
+      "market": "new-build",
+      "deal": "buy",
+      "elements": 112,
+      "mapElements": 24,
+      "sha256": "7e92702e09fe4fe07ad76b0a5700484650b0cfe66495f020226c7bbdcc9cb16a"
+    },
+    {
+      "width": 320,
+      "direction": "city",
+      "market": "secondary",
+      "deal": "buy",
+      "elements": 99,
+      "mapElements": 18,
+      "sha256": "e260497dae96a648032f2233de205a60acc7252601beaaf42d2d750689f69412"
+    },
+    {
+      "width": 320,
+      "direction": "country",
+      "market": "secondary",
+      "deal": "buy",
+      "elements": 162,
+      "mapElements": 36,
+      "sha256": "81d561aed8eeba1db88ba48fa05462098a67ef498f5eac2cb52bc1b3c2caee40"
+    },
+    {
+      "width": 320,
+      "direction": "commercial",
+      "market": "secondary",
+      "deal": "rent",
+      "elements": 112,
+      "mapElements": 24,
+      "sha256": "8d2274099ca7196f4b0b7f6b3e253bf6f805abc4278ceaea1557700c43b0d6e3"
+    },
+    {
+      "width": 320,
+      "direction": "resort",
+      "market": "new-build",
+      "deal": "buy",
+      "elements": 168,
+      "mapElements": 61,
+      "sha256": "117bf43b9b41257d2208caff51c1918c4910b8bf2c515a2c9d6201a616c4a915"
+    },
+    {
+      "width": 320,
+      "direction": "international",
+      "market": "new-build",
+      "deal": "buy",
+      "elements": 112,
+      "mapElements": 24,
+      "sha256": "9beb1ecb7fa88eae4a8754e7e4b19e84df558d40e1aa97f59ef1f59be1db7b0e"
+    },
+    {
+      "width": 390,
+      "direction": "city",
+      "market": "new-build",
+      "deal": "buy",
+      "elements": 112,
+      "mapElements": 24,
+      "sha256": "7e92702e09fe4fe07ad76b0a5700484650b0cfe66495f020226c7bbdcc9cb16a"
+    },
+    {
+      "width": 390,
+      "direction": "city",
+      "market": "secondary",
+      "deal": "buy",
+      "elements": 99,
+      "mapElements": 18,
+      "sha256": "e260497dae96a648032f2233de205a60acc7252601beaaf42d2d750689f69412"
+    },
+    {
+      "width": 390,
+      "direction": "country",
+      "market": "secondary",
+      "deal": "buy",
+      "elements": 162,
+      "mapElements": 36,
+      "sha256": "81d561aed8eeba1db88ba48fa05462098a67ef498f5eac2cb52bc1b3c2caee40"
+    },
+    {
+      "width": 390,
+      "direction": "commercial",
+      "market": "secondary",
+      "deal": "rent",
+      "elements": 112,
+      "mapElements": 24,
+      "sha256": "8d2274099ca7196f4b0b7f6b3e253bf6f805abc4278ceaea1557700c43b0d6e3"
+    },
+    {
+      "width": 390,
+      "direction": "resort",
+      "market": "new-build",
+      "deal": "buy",
+      "elements": 168,
+      "mapElements": 61,
+      "sha256": "117bf43b9b41257d2208caff51c1918c4910b8bf2c515a2c9d6201a616c4a915"
+    },
+    {
+      "width": 390,
+      "direction": "international",
+      "market": "new-build",
+      "deal": "buy",
+      "elements": 112,
+      "mapElements": 24,
+      "sha256": "9beb1ecb7fa88eae4a8754e7e4b19e84df558d40e1aa97f59ef1f59be1db7b0e"
+    },
+    {
+      "width": 540,
+      "direction": "city",
+      "market": "new-build",
+      "deal": "buy",
+      "elements": 112,
+      "mapElements": 24,
+      "sha256": "7e92702e09fe4fe07ad76b0a5700484650b0cfe66495f020226c7bbdcc9cb16a"
+    },
+    {
+      "width": 540,
+      "direction": "city",
+      "market": "secondary",
+      "deal": "buy",
+      "elements": 99,
+      "mapElements": 18,
+      "sha256": "e260497dae96a648032f2233de205a60acc7252601beaaf42d2d750689f69412"
+    },
+    {
+      "width": 540,
+      "direction": "country",
+      "market": "secondary",
+      "deal": "buy",
+      "elements": 162,
+      "mapElements": 36,
+      "sha256": "81d561aed8eeba1db88ba48fa05462098a67ef498f5eac2cb52bc1b3c2caee40"
+    },
+    {
+      "width": 540,
+      "direction": "commercial",
+      "market": "secondary",
+      "deal": "rent",
+      "elements": 112,
+      "mapElements": 24,
+      "sha256": "8d2274099ca7196f4b0b7f6b3e253bf6f805abc4278ceaea1557700c43b0d6e3"
+    },
+    {
+      "width": 540,
+      "direction": "resort",
+      "market": "new-build",
+      "deal": "buy",
+      "elements": 168,
+      "mapElements": 61,
+      "sha256": "117bf43b9b41257d2208caff51c1918c4910b8bf2c515a2c9d6201a616c4a915"
+    },
+    {
+      "width": 540,
+      "direction": "international",
+      "market": "new-build",
+      "deal": "buy",
+      "elements": 112,
+      "mapElements": 24,
+      "sha256": "9beb1ecb7fa88eae4a8754e7e4b19e84df558d40e1aa97f59ef1f59be1db7b0e"
+    },
+    {
+      "width": 541,
+      "direction": "city",
+      "market": "new-build",
+      "deal": "buy",
+      "elements": 112,
+      "mapElements": 24,
+      "sha256": "9b8fa26d1f55087e8a6b3fb03d955cdb5dcb56dafa639c3b14564be25b8d7768"
+    },
+    {
+      "width": 541,
+      "direction": "city",
+      "market": "secondary",
+      "deal": "buy",
+      "elements": 99,
+      "mapElements": 18,
+      "sha256": "fef00053598621b9622ca646b0ea57a2f8ececdcda9176e1890e5e182a083057"
+    },
+    {
+      "width": 541,
+      "direction": "country",
+      "market": "secondary",
+      "deal": "buy",
+      "elements": 162,
+      "mapElements": 36,
+      "sha256": "3ae2bafc366e9dbfd0a3b37e5d4017dc2d7057e6994a463c1705b77862d20eac"
+    },
+    {
+      "width": 541,
+      "direction": "commercial",
+      "market": "secondary",
+      "deal": "rent",
+      "elements": 112,
+      "mapElements": 24,
+      "sha256": "75d8ddfeecc9386a7bebad61575938bcf703b068d92f31e282ea26084b0c42b4"
+    },
+    {
+      "width": 541,
+      "direction": "resort",
+      "market": "new-build",
+      "deal": "buy",
+      "elements": 168,
+      "mapElements": 61,
+      "sha256": "04307706eb1f34927353a8e6fba8e2850c8d4ea8436c5a3ccdfb2d7c48383abe"
+    },
+    {
+      "width": 541,
+      "direction": "international",
+      "market": "new-build",
+      "deal": "buy",
+      "elements": 112,
+      "mapElements": 24,
+      "sha256": "cf8d55b876fe62f20b54cef6ddb4d4b19f5c5c309c94aac5f4857aa24cbe124f"
+    },
+    {
+      "width": 767,
+      "direction": "city",
+      "market": "new-build",
+      "deal": "buy",
+      "elements": 112,
+      "mapElements": 24,
+      "sha256": "9b8fa26d1f55087e8a6b3fb03d955cdb5dcb56dafa639c3b14564be25b8d7768"
+    },
+    {
+      "width": 767,
+      "direction": "city",
+      "market": "secondary",
+      "deal": "buy",
+      "elements": 99,
+      "mapElements": 18,
+      "sha256": "fef00053598621b9622ca646b0ea57a2f8ececdcda9176e1890e5e182a083057"
+    },
+    {
+      "width": 767,
+      "direction": "country",
+      "market": "secondary",
+      "deal": "buy",
+      "elements": 162,
+      "mapElements": 36,
+      "sha256": "3ae2bafc366e9dbfd0a3b37e5d4017dc2d7057e6994a463c1705b77862d20eac"
+    },
+    {
+      "width": 767,
+      "direction": "commercial",
+      "market": "secondary",
+      "deal": "rent",
+      "elements": 112,
+      "mapElements": 24,
+      "sha256": "75d8ddfeecc9386a7bebad61575938bcf703b068d92f31e282ea26084b0c42b4"
+    },
+    {
+      "width": 767,
+      "direction": "resort",
+      "market": "new-build",
+      "deal": "buy",
+      "elements": 168,
+      "mapElements": 61,
+      "sha256": "04307706eb1f34927353a8e6fba8e2850c8d4ea8436c5a3ccdfb2d7c48383abe"
+    },
+    {
+      "width": 767,
+      "direction": "international",
+      "market": "new-build",
+      "deal": "buy",
+      "elements": 112,
+      "mapElements": 24,
+      "sha256": "cf8d55b876fe62f20b54cef6ddb4d4b19f5c5c309c94aac5f4857aa24cbe124f"
+    },
+    {
+      "width": 768,
+      "direction": "city",
+      "market": "new-build",
+      "deal": "buy",
+      "elements": 112,
+      "mapElements": 24,
+      "sha256": "9b8fa26d1f55087e8a6b3fb03d955cdb5dcb56dafa639c3b14564be25b8d7768"
+    },
+    {
+      "width": 768,
+      "direction": "city",
+      "market": "secondary",
+      "deal": "buy",
+      "elements": 99,
+      "mapElements": 18,
+      "sha256": "fef00053598621b9622ca646b0ea57a2f8ececdcda9176e1890e5e182a083057"
+    },
+    {
+      "width": 768,
+      "direction": "country",
+      "market": "secondary",
+      "deal": "buy",
+      "elements": 162,
+      "mapElements": 36,
+      "sha256": "3ae2bafc366e9dbfd0a3b37e5d4017dc2d7057e6994a463c1705b77862d20eac"
+    },
+    {
+      "width": 768,
+      "direction": "commercial",
+      "market": "secondary",
+      "deal": "rent",
+      "elements": 112,
+      "mapElements": 24,
+      "sha256": "75d8ddfeecc9386a7bebad61575938bcf703b068d92f31e282ea26084b0c42b4"
+    },
+    {
+      "width": 768,
+      "direction": "resort",
+      "market": "new-build",
+      "deal": "buy",
+      "elements": 168,
+      "mapElements": 61,
+      "sha256": "04307706eb1f34927353a8e6fba8e2850c8d4ea8436c5a3ccdfb2d7c48383abe"
+    },
+    {
+      "width": 768,
+      "direction": "international",
+      "market": "new-build",
+      "deal": "buy",
+      "elements": 112,
+      "mapElements": 24,
+      "sha256": "cf8d55b876fe62f20b54cef6ddb4d4b19f5c5c309c94aac5f4857aa24cbe124f"
+    },
+    {
+      "width": 1024,
+      "direction": "city",
+      "market": "new-build",
+      "deal": "buy",
+      "elements": 112,
+      "mapElements": 24,
+      "sha256": "9b8fa26d1f55087e8a6b3fb03d955cdb5dcb56dafa639c3b14564be25b8d7768"
+    },
+    {
+      "width": 1024,
+      "direction": "city",
+      "market": "secondary",
+      "deal": "buy",
+      "elements": 99,
+      "mapElements": 18,
+      "sha256": "fef00053598621b9622ca646b0ea57a2f8ececdcda9176e1890e5e182a083057"
+    },
+    {
+      "width": 1024,
+      "direction": "country",
+      "market": "secondary",
+      "deal": "buy",
+      "elements": 162,
+      "mapElements": 36,
+      "sha256": "3ae2bafc366e9dbfd0a3b37e5d4017dc2d7057e6994a463c1705b77862d20eac"
+    },
+    {
+      "width": 1024,
+      "direction": "commercial",
+      "market": "secondary",
+      "deal": "rent",
+      "elements": 112,
+      "mapElements": 24,
+      "sha256": "75d8ddfeecc9386a7bebad61575938bcf703b068d92f31e282ea26084b0c42b4"
+    },
+    {
+      "width": 1024,
+      "direction": "resort",
+      "market": "new-build",
+      "deal": "buy",
+      "elements": 168,
+      "mapElements": 61,
+      "sha256": "04307706eb1f34927353a8e6fba8e2850c8d4ea8436c5a3ccdfb2d7c48383abe"
+    },
+    {
+      "width": 1024,
+      "direction": "international",
+      "market": "new-build",
+      "deal": "buy",
+      "elements": 112,
+      "mapElements": 24,
+      "sha256": "cf8d55b876fe62f20b54cef6ddb4d4b19f5c5c309c94aac5f4857aa24cbe124f"
+    },
+    {
+      "width": 1025,
+      "direction": "city",
+      "market": "new-build",
+      "deal": "buy",
+      "elements": 112,
+      "mapElements": 24,
+      "sha256": "241af8e3ffe9daa7e899d29df7ac22723f3f158b9f90df5dfa42ee3fdf410724"
+    },
+    {
+      "width": 1025,
+      "direction": "city",
+      "market": "secondary",
+      "deal": "buy",
+      "elements": 99,
+      "mapElements": 18,
+      "sha256": "fef00053598621b9622ca646b0ea57a2f8ececdcda9176e1890e5e182a083057"
+    },
+    {
+      "width": 1025,
+      "direction": "country",
+      "market": "secondary",
+      "deal": "buy",
+      "elements": 162,
+      "mapElements": 36,
+      "sha256": "3ae2bafc366e9dbfd0a3b37e5d4017dc2d7057e6994a463c1705b77862d20eac"
+    },
+    {
+      "width": 1025,
+      "direction": "commercial",
+      "market": "secondary",
+      "deal": "rent",
+      "elements": 112,
+      "mapElements": 24,
+      "sha256": "75d8ddfeecc9386a7bebad61575938bcf703b068d92f31e282ea26084b0c42b4"
+    },
+    {
+      "width": 1025,
+      "direction": "resort",
+      "market": "new-build",
+      "deal": "buy",
+      "elements": 168,
+      "mapElements": 61,
+      "sha256": "3d007846ccd47604579539ec3e6b2fec906522ce0d6dba8706cff6f4e86d0569"
+    },
+    {
+      "width": 1025,
+      "direction": "international",
+      "market": "new-build",
+      "deal": "buy",
+      "elements": 112,
+      "mapElements": 24,
+      "sha256": "fcf3b6f85870b87c45e13144fbbd754e74da1161a1b4fc8ac14640f76e8d2315"
+    },
+    {
+      "width": 1280,
+      "direction": "city",
+      "market": "new-build",
+      "deal": "buy",
+      "elements": 112,
+      "mapElements": 24,
+      "sha256": "241af8e3ffe9daa7e899d29df7ac22723f3f158b9f90df5dfa42ee3fdf410724"
+    },
+    {
+      "width": 1280,
+      "direction": "city",
+      "market": "secondary",
+      "deal": "buy",
+      "elements": 99,
+      "mapElements": 18,
+      "sha256": "fef00053598621b9622ca646b0ea57a2f8ececdcda9176e1890e5e182a083057"
+    },
+    {
+      "width": 1280,
+      "direction": "country",
+      "market": "secondary",
+      "deal": "buy",
+      "elements": 162,
+      "mapElements": 36,
+      "sha256": "3ae2bafc366e9dbfd0a3b37e5d4017dc2d7057e6994a463c1705b77862d20eac"
+    },
+    {
+      "width": 1280,
+      "direction": "commercial",
+      "market": "secondary",
+      "deal": "rent",
+      "elements": 112,
+      "mapElements": 24,
+      "sha256": "75d8ddfeecc9386a7bebad61575938bcf703b068d92f31e282ea26084b0c42b4"
+    },
+    {
+      "width": 1280,
+      "direction": "resort",
+      "market": "new-build",
+      "deal": "buy",
+      "elements": 168,
+      "mapElements": 61,
+      "sha256": "3d007846ccd47604579539ec3e6b2fec906522ce0d6dba8706cff6f4e86d0569"
+    },
+    {
+      "width": 1280,
+      "direction": "international",
+      "market": "new-build",
+      "deal": "buy",
+      "elements": 112,
+      "mapElements": 24,
+      "sha256": "fcf3b6f85870b87c45e13144fbbd754e74da1161a1b4fc8ac14640f76e8d2315"
+    },
+    {
+      "width": 1281,
+      "direction": "city",
+      "market": "new-build",
+      "deal": "buy",
+      "elements": 112,
+      "mapElements": 24,
+      "sha256": "241af8e3ffe9daa7e899d29df7ac22723f3f158b9f90df5dfa42ee3fdf410724"
+    },
+    {
+      "width": 1281,
+      "direction": "city",
+      "market": "secondary",
+      "deal": "buy",
+      "elements": 99,
+      "mapElements": 18,
+      "sha256": "fef00053598621b9622ca646b0ea57a2f8ececdcda9176e1890e5e182a083057"
+    },
+    {
+      "width": 1281,
+      "direction": "country",
+      "market": "secondary",
+      "deal": "buy",
+      "elements": 162,
+      "mapElements": 36,
+      "sha256": "3ae2bafc366e9dbfd0a3b37e5d4017dc2d7057e6994a463c1705b77862d20eac"
+    },
+    {
+      "width": 1281,
+      "direction": "commercial",
+      "market": "secondary",
+      "deal": "rent",
+      "elements": 112,
+      "mapElements": 24,
+      "sha256": "75d8ddfeecc9386a7bebad61575938bcf703b068d92f31e282ea26084b0c42b4"
+    },
+    {
+      "width": 1281,
+      "direction": "resort",
+      "market": "new-build",
+      "deal": "buy",
+      "elements": 168,
+      "mapElements": 61,
+      "sha256": "3d007846ccd47604579539ec3e6b2fec906522ce0d6dba8706cff6f4e86d0569"
+    },
+    {
+      "width": 1281,
+      "direction": "international",
+      "market": "new-build",
+      "deal": "buy",
+      "elements": 112,
+      "mapElements": 24,
+      "sha256": "fcf3b6f85870b87c45e13144fbbd754e74da1161a1b4fc8ac14640f76e8d2315"
+    },
+    {
+      "width": 1440,
+      "direction": "city",
+      "market": "new-build",
+      "deal": "buy",
+      "elements": 112,
+      "mapElements": 24,
+      "sha256": "241af8e3ffe9daa7e899d29df7ac22723f3f158b9f90df5dfa42ee3fdf410724"
+    },
+    {
+      "width": 1440,
+      "direction": "city",
+      "market": "secondary",
+      "deal": "buy",
+      "elements": 99,
+      "mapElements": 18,
+      "sha256": "fef00053598621b9622ca646b0ea57a2f8ececdcda9176e1890e5e182a083057"
+    },
+    {
+      "width": 1440,
+      "direction": "country",
+      "market": "secondary",
+      "deal": "buy",
+      "elements": 162,
+      "mapElements": 36,
+      "sha256": "3ae2bafc366e9dbfd0a3b37e5d4017dc2d7057e6994a463c1705b77862d20eac"
+    },
+    {
+      "width": 1440,
+      "direction": "commercial",
+      "market": "secondary",
+      "deal": "rent",
+      "elements": 112,
+      "mapElements": 24,
+      "sha256": "75d8ddfeecc9386a7bebad61575938bcf703b068d92f31e282ea26084b0c42b4"
+    },
+    {
+      "width": 1440,
+      "direction": "resort",
+      "market": "new-build",
+      "deal": "buy",
+      "elements": 168,
+      "mapElements": 61,
+      "sha256": "3d007846ccd47604579539ec3e6b2fec906522ce0d6dba8706cff6f4e86d0569"
+    },
+    {
+      "width": 1440,
+      "direction": "international",
+      "market": "new-build",
+      "deal": "buy",
+      "elements": 112,
+      "mapElements": 24,
+      "sha256": "fcf3b6f85870b87c45e13144fbbd754e74da1161a1b4fc8ac14640f76e8d2315"
+    },
+    {
+      "width": 1441,
+      "direction": "city",
+      "market": "new-build",
+      "deal": "buy",
+      "elements": 112,
+      "mapElements": 24,
+      "sha256": "d31fddfd47f4c03a62a57a1a8ef8f7a9dda50811a33fd9cfe5580f5e0c8b8af3"
+    },
+    {
+      "width": 1441,
+      "direction": "city",
+      "market": "secondary",
+      "deal": "buy",
+      "elements": 99,
+      "mapElements": 18,
+      "sha256": "c654fc9b546aaff6fe09384e1ff489d583de856d43aee8edc99a7677667d48c3"
+    },
+    {
+      "width": 1441,
+      "direction": "country",
+      "market": "secondary",
+      "deal": "buy",
+      "elements": 162,
+      "mapElements": 36,
+      "sha256": "ba32d6c9524e8f63923eb8687d20aa6f64fdc798790b23b0f956f7e0b881a316"
+    },
+    {
+      "width": 1441,
+      "direction": "commercial",
+      "market": "secondary",
+      "deal": "rent",
+      "elements": 112,
+      "mapElements": 24,
+      "sha256": "0f7539c464df339fbbfd46392ea5b570cc4f2829b52960f03c0185bb5a614e38"
+    },
+    {
+      "width": 1441,
+      "direction": "resort",
+      "market": "new-build",
+      "deal": "buy",
+      "elements": 168,
+      "mapElements": 61,
+      "sha256": "c55f831865edbf96943493b6209a0e071ac9212d55b88f992a16123918236b29"
+    },
+    {
+      "width": 1441,
+      "direction": "international",
+      "market": "new-build",
+      "deal": "buy",
+      "elements": 112,
+      "mapElements": 24,
+      "sha256": "a348c5c1ea5bb658eae047b806a5d1b6cf32460e98adbe17976057e870734a08"
+    },
+    {
+      "width": 1920,
+      "direction": "city",
+      "market": "new-build",
+      "deal": "buy",
+      "elements": 112,
+      "mapElements": 24,
+      "sha256": "d31fddfd47f4c03a62a57a1a8ef8f7a9dda50811a33fd9cfe5580f5e0c8b8af3"
+    },
+    {
+      "width": 1920,
+      "direction": "city",
+      "market": "secondary",
+      "deal": "buy",
+      "elements": 99,
+      "mapElements": 18,
+      "sha256": "c654fc9b546aaff6fe09384e1ff489d583de856d43aee8edc99a7677667d48c3"
+    },
+    {
+      "width": 1920,
+      "direction": "country",
+      "market": "secondary",
+      "deal": "buy",
+      "elements": 162,
+      "mapElements": 36,
+      "sha256": "ba32d6c9524e8f63923eb8687d20aa6f64fdc798790b23b0f956f7e0b881a316"
+    },
+    {
+      "width": 1920,
+      "direction": "commercial",
+      "market": "secondary",
+      "deal": "rent",
+      "elements": 112,
+      "mapElements": 24,
+      "sha256": "0f7539c464df339fbbfd46392ea5b570cc4f2829b52960f03c0185bb5a614e38"
+    },
+    {
+      "width": 1920,
+      "direction": "resort",
+      "market": "new-build",
+      "deal": "buy",
+      "elements": 168,
+      "mapElements": 61,
+      "sha256": "c55f831865edbf96943493b6209a0e071ac9212d55b88f992a16123918236b29"
+    },
+    {
+      "width": 1920,
+      "direction": "international",
+      "market": "new-build",
+      "deal": "buy",
+      "elements": 112,
+      "mapElements": 24,
+      "sha256": "a348c5c1ea5bb658eae047b806a5d1b6cf32460e98adbe17976057e870734a08"
+    },
+    {
+      "width": 2560,
+      "direction": "city",
+      "market": "new-build",
+      "deal": "buy",
+      "elements": 112,
+      "mapElements": 24,
+      "sha256": "d31fddfd47f4c03a62a57a1a8ef8f7a9dda50811a33fd9cfe5580f5e0c8b8af3"
+    },
+    {
+      "width": 2560,
+      "direction": "city",
+      "market": "secondary",
+      "deal": "buy",
+      "elements": 99,
+      "mapElements": 18,
+      "sha256": "c654fc9b546aaff6fe09384e1ff489d583de856d43aee8edc99a7677667d48c3"
+    },
+    {
+      "width": 2560,
+      "direction": "country",
+      "market": "secondary",
+      "deal": "buy",
+      "elements": 162,
+      "mapElements": 36,
+      "sha256": "ba32d6c9524e8f63923eb8687d20aa6f64fdc798790b23b0f956f7e0b881a316"
+    },
+    {
+      "width": 2560,
+      "direction": "commercial",
+      "market": "secondary",
+      "deal": "rent",
+      "elements": 112,
+      "mapElements": 24,
+      "sha256": "0f7539c464df339fbbfd46392ea5b570cc4f2829b52960f03c0185bb5a614e38"
+    },
+    {
+      "width": 2560,
+      "direction": "resort",
+      "market": "new-build",
+      "deal": "buy",
+      "elements": 168,
+      "mapElements": 61,
+      "sha256": "c55f831865edbf96943493b6209a0e071ac9212d55b88f992a16123918236b29"
+    },
+    {
+      "width": 2560,
+      "direction": "international",
+      "market": "new-build",
+      "deal": "buy",
+      "elements": 112,
+      "mapElements": 24,
+      "sha256": "a348c5c1ea5bb658eae047b806a5d1b6cf32460e98adbe17976057e870734a08"
+    },
+    {
+      "width": 3840,
+      "direction": "city",
+      "market": "new-build",
+      "deal": "buy",
+      "elements": 112,
+      "mapElements": 24,
+      "sha256": "d31fddfd47f4c03a62a57a1a8ef8f7a9dda50811a33fd9cfe5580f5e0c8b8af3"
+    },
+    {
+      "width": 3840,
+      "direction": "city",
+      "market": "secondary",
+      "deal": "buy",
+      "elements": 99,
+      "mapElements": 18,
+      "sha256": "c654fc9b546aaff6fe09384e1ff489d583de856d43aee8edc99a7677667d48c3"
+    },
+    {
+      "width": 3840,
+      "direction": "country",
+      "market": "secondary",
+      "deal": "buy",
+      "elements": 162,
+      "mapElements": 36,
+      "sha256": "ba32d6c9524e8f63923eb8687d20aa6f64fdc798790b23b0f956f7e0b881a316"
+    },
+    {
+      "width": 3840,
+      "direction": "commercial",
+      "market": "secondary",
+      "deal": "rent",
+      "elements": 112,
+      "mapElements": 24,
+      "sha256": "0f7539c464df339fbbfd46392ea5b570cc4f2829b52960f03c0185bb5a614e38"
+    },
+    {
+      "width": 3840,
+      "direction": "resort",
+      "market": "new-build",
+      "deal": "buy",
+      "elements": 168,
+      "mapElements": 61,
+      "sha256": "c55f831865edbf96943493b6209a0e071ac9212d55b88f992a16123918236b29"
+    },
+    {
+      "width": 3840,
+      "direction": "international",
+      "market": "new-build",
+      "deal": "buy",
+      "elements": 112,
+      "mapElements": 24,
+      "sha256": "a348c5c1ea5bb658eae047b806a5d1b6cf32460e98adbe17976057e870734a08"
+    }
+  ]
+}

@@ -1,0 +1,2082 @@
+[
+  {
+    "width": 320,
+    "home": {
+      "deal": {
+        "size": "14px",
+        "weight": "400",
+        "line": "14px",
+        "visible": false,
+        "text": "Купить",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "spacing": "normal"
+      },
+      "field": {
+        "size": "14px",
+        "weight": "300",
+        "line": "19.6px",
+        "visible": false,
+        "text": "Тип недвижимости",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "spacing": "normal"
+      },
+      "search": {
+        "size": "16px",
+        "weight": "400",
+        "line": "17.6px",
+        "visible": true,
+        "text": "Поиск по ID, названию ЖК, адресу",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "spacing": "normal"
+      },
+      "all": {
+        "size": "14px",
+        "weight": "300",
+        "line": "15.4px",
+        "visible": false,
+        "text": "Еще фильтры",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "spacing": "normal"
+      },
+      "more": {
+        "size": "14px",
+        "weight": "400",
+        "line": "16.8px",
+        "visible": false,
+        "text": "Читать все новости",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "spacing": "1.68px"
+      },
+      "choice": {
+        "size": "18px",
+        "weight": "400",
+        "line": "21.6px",
+        "visible": true,
+        "text": "Городская",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "spacing": "normal"
+      }
+    },
+    "catalog": {
+      "deal": {
+        "size": "17px",
+        "weight": "300",
+        "line": "18.7px",
+        "visible": true,
+        "text": "Покупка",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "department": {
+        "size": "17px",
+        "weight": "300",
+        "line": "20.4px",
+        "visible": true,
+        "text": "Москва",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "market": {
+        "size": "17px",
+        "weight": "300",
+        "line": "20.4px",
+        "visible": true,
+        "text": "Новостройки",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "search": {
+        "size": "17px",
+        "weight": "300",
+        "line": "20.4px",
+        "visible": true,
+        "text": "Название или ID",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "quick": {
+        "size": "17px",
+        "weight": "300",
+        "line": "20.4px",
+        "visible": true,
+        "text": "Локация",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "all": {
+        "size": "17px",
+        "weight": "300",
+        "line": "18.7px",
+        "visible": false,
+        "text": "Все фильтры",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "sort": {
+        "size": "17px",
+        "weight": "300",
+        "line": "20.4px",
+        "visible": true,
+        "text": "По релевантности",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "map": {
+        "size": "17px",
+        "weight": "300",
+        "line": "18.7px",
+        "visible": true,
+        "text": "На карте",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "reset": {
+        "size": "14px",
+        "weight": "300",
+        "line": "18.2px",
+        "visible": true,
+        "text": "Сбросить фильтры",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "count": {
+        "size": "14px",
+        "weight": "300",
+        "line": "18.2px",
+        "visible": true,
+        "text": "4 проекта",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "more": {
+        "size": "14px",
+        "weight": "400",
+        "line": "16.8px",
+        "visible": false,
+        "text": "Смотреть больше",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "spacing": "1.68px"
+      }
+    }
+  },
+  {
+    "width": 390,
+    "home": {
+      "deal": {
+        "size": "14px",
+        "weight": "400",
+        "line": "14px",
+        "visible": false,
+        "text": "Купить",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "spacing": "normal"
+      },
+      "field": {
+        "size": "14px",
+        "weight": "300",
+        "line": "19.6px",
+        "visible": false,
+        "text": "Тип недвижимости",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "spacing": "normal"
+      },
+      "search": {
+        "size": "16px",
+        "weight": "400",
+        "line": "17.6px",
+        "visible": true,
+        "text": "Поиск по ID, названию ЖК, адресу",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "spacing": "normal"
+      },
+      "all": {
+        "size": "14px",
+        "weight": "300",
+        "line": "15.4px",
+        "visible": false,
+        "text": "Еще фильтры",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "spacing": "normal"
+      },
+      "more": {
+        "size": "14px",
+        "weight": "400",
+        "line": "16.8px",
+        "visible": false,
+        "text": "Читать все новости",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "spacing": "1.68px"
+      },
+      "choice": {
+        "size": "18px",
+        "weight": "400",
+        "line": "21.6px",
+        "visible": true,
+        "text": "Городская",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "spacing": "normal"
+      }
+    },
+    "catalog": {
+      "deal": {
+        "size": "17px",
+        "weight": "300",
+        "line": "18.7px",
+        "visible": true,
+        "text": "Покупка",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "department": {
+        "size": "17px",
+        "weight": "300",
+        "line": "20.4px",
+        "visible": true,
+        "text": "Москва",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "market": {
+        "size": "17px",
+        "weight": "300",
+        "line": "20.4px",
+        "visible": true,
+        "text": "Новостройки",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "search": {
+        "size": "17px",
+        "weight": "300",
+        "line": "20.4px",
+        "visible": true,
+        "text": "Название или ID",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "quick": {
+        "size": "17px",
+        "weight": "300",
+        "line": "20.4px",
+        "visible": true,
+        "text": "Локация",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "all": {
+        "size": "17px",
+        "weight": "300",
+        "line": "18.7px",
+        "visible": false,
+        "text": "Все фильтры",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "sort": {
+        "size": "17px",
+        "weight": "300",
+        "line": "20.4px",
+        "visible": true,
+        "text": "По релевантности",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "map": {
+        "size": "17px",
+        "weight": "300",
+        "line": "18.7px",
+        "visible": true,
+        "text": "На карте",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "reset": {
+        "size": "14px",
+        "weight": "300",
+        "line": "18.2px",
+        "visible": true,
+        "text": "Сбросить фильтры",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "count": {
+        "size": "14px",
+        "weight": "300",
+        "line": "18.2px",
+        "visible": true,
+        "text": "4 проекта",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "more": {
+        "size": "14px",
+        "weight": "400",
+        "line": "16.8px",
+        "visible": false,
+        "text": "Смотреть больше",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "spacing": "1.68px"
+      }
+    }
+  },
+  {
+    "width": 540,
+    "home": {
+      "deal": {
+        "size": "14px",
+        "weight": "400",
+        "line": "14px",
+        "visible": false,
+        "text": "Купить",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "spacing": "normal"
+      },
+      "field": {
+        "size": "14px",
+        "weight": "300",
+        "line": "19.6px",
+        "visible": false,
+        "text": "Тип недвижимости",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "spacing": "normal"
+      },
+      "search": {
+        "size": "16px",
+        "weight": "400",
+        "line": "17.6px",
+        "visible": true,
+        "text": "Поиск по ID, названию ЖК, адресу",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "spacing": "normal"
+      },
+      "all": {
+        "size": "14px",
+        "weight": "300",
+        "line": "15.4px",
+        "visible": false,
+        "text": "Еще фильтры",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "spacing": "normal"
+      },
+      "more": {
+        "size": "14px",
+        "weight": "400",
+        "line": "16.8px",
+        "visible": false,
+        "text": "Читать все новости",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "spacing": "1.68px"
+      },
+      "choice": {
+        "size": "18px",
+        "weight": "400",
+        "line": "21.6px",
+        "visible": true,
+        "text": "Городская",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "spacing": "normal"
+      }
+    },
+    "catalog": {
+      "deal": {
+        "size": "17px",
+        "weight": "300",
+        "line": "18.7px",
+        "visible": true,
+        "text": "Покупка",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "department": {
+        "size": "17px",
+        "weight": "300",
+        "line": "20.4px",
+        "visible": true,
+        "text": "Москва",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "market": {
+        "size": "17px",
+        "weight": "300",
+        "line": "20.4px",
+        "visible": true,
+        "text": "Новостройки",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "search": {
+        "size": "17px",
+        "weight": "300",
+        "line": "20.4px",
+        "visible": true,
+        "text": "Название или ID",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "quick": {
+        "size": "17px",
+        "weight": "300",
+        "line": "20.4px",
+        "visible": true,
+        "text": "Локация",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "all": {
+        "size": "17px",
+        "weight": "300",
+        "line": "18.7px",
+        "visible": false,
+        "text": "Все фильтры",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "sort": {
+        "size": "17px",
+        "weight": "300",
+        "line": "20.4px",
+        "visible": true,
+        "text": "По релевантности",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "map": {
+        "size": "17px",
+        "weight": "300",
+        "line": "18.7px",
+        "visible": true,
+        "text": "На карте",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "reset": {
+        "size": "14px",
+        "weight": "300",
+        "line": "18.2px",
+        "visible": true,
+        "text": "Сбросить фильтры",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "count": {
+        "size": "14px",
+        "weight": "300",
+        "line": "18.2px",
+        "visible": true,
+        "text": "4 проекта",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "more": {
+        "size": "14px",
+        "weight": "400",
+        "line": "16.8px",
+        "visible": false,
+        "text": "Смотреть больше",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "spacing": "1.68px"
+      }
+    }
+  },
+  {
+    "width": 541,
+    "home": {
+      "deal": {
+        "size": "16px",
+        "weight": "400",
+        "line": "16px",
+        "visible": true,
+        "text": "Купить",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "spacing": "normal"
+      },
+      "field": {
+        "size": "16px",
+        "weight": "300",
+        "line": "22.4px",
+        "visible": true,
+        "text": "Тип недвижимости",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "spacing": "normal"
+      },
+      "search": {
+        "size": "16px",
+        "weight": "400",
+        "line": "17.6px",
+        "visible": true,
+        "text": "Поиск по ID, названию ЖК, адресу",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "spacing": "normal"
+      },
+      "all": {
+        "size": "16px",
+        "weight": "300",
+        "line": "17.6px",
+        "visible": true,
+        "text": "Еще фильтры",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "spacing": "normal"
+      },
+      "more": {
+        "size": "14px",
+        "weight": "400",
+        "line": "16.8px",
+        "visible": false,
+        "text": "Читать все новости",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "spacing": "1.68px"
+      },
+      "choice": {
+        "size": "18px",
+        "weight": "400",
+        "line": "21.6px",
+        "visible": false,
+        "text": "Городская",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "spacing": "normal"
+      }
+    },
+    "catalog": {
+      "deal": {
+        "size": "18px",
+        "weight": "300",
+        "line": "19.8px",
+        "visible": true,
+        "text": "Покупка",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "department": {
+        "size": "18px",
+        "weight": "300",
+        "line": "21.6px",
+        "visible": true,
+        "text": "Москва",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "market": {
+        "size": "18px",
+        "weight": "300",
+        "line": "21.6px",
+        "visible": true,
+        "text": "Новостройки",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "search": {
+        "size": "18px",
+        "weight": "300",
+        "line": "21.6px",
+        "visible": true,
+        "text": "Название или ID",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "quick": {
+        "size": "18px",
+        "weight": "300",
+        "line": "21.6px",
+        "visible": true,
+        "text": "Локация",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "all": {
+        "size": "18px",
+        "weight": "300",
+        "line": "19.8px",
+        "visible": false,
+        "text": "Все фильтры",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "sort": {
+        "size": "18px",
+        "weight": "300",
+        "line": "21.6px",
+        "visible": true,
+        "text": "По релевантности",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "map": {
+        "size": "18px",
+        "weight": "300",
+        "line": "19.8px",
+        "visible": true,
+        "text": "На карте",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "reset": {
+        "size": "14px",
+        "weight": "300",
+        "line": "18.2px",
+        "visible": true,
+        "text": "Сбросить фильтры",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "count": {
+        "size": "14px",
+        "weight": "300",
+        "line": "18.2px",
+        "visible": true,
+        "text": "4 проекта",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "more": {
+        "size": "14px",
+        "weight": "400",
+        "line": "16.8px",
+        "visible": false,
+        "text": "Смотреть больше",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "spacing": "1.68px"
+      }
+    }
+  },
+  {
+    "width": 767,
+    "home": {
+      "deal": {
+        "size": "16px",
+        "weight": "400",
+        "line": "16px",
+        "visible": true,
+        "text": "Купить",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "spacing": "normal"
+      },
+      "field": {
+        "size": "16px",
+        "weight": "300",
+        "line": "22.4px",
+        "visible": true,
+        "text": "Тип недвижимости",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "spacing": "normal"
+      },
+      "search": {
+        "size": "16px",
+        "weight": "400",
+        "line": "17.6px",
+        "visible": true,
+        "text": "Поиск по ID, названию ЖК, адресу",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "spacing": "normal"
+      },
+      "all": {
+        "size": "16px",
+        "weight": "300",
+        "line": "17.6px",
+        "visible": true,
+        "text": "Еще фильтры",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "spacing": "normal"
+      },
+      "more": {
+        "size": "14px",
+        "weight": "400",
+        "line": "16.8px",
+        "visible": false,
+        "text": "Читать все новости",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "spacing": "1.68px"
+      },
+      "choice": {
+        "size": "18px",
+        "weight": "400",
+        "line": "21.6px",
+        "visible": false,
+        "text": "Городская",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "spacing": "normal"
+      }
+    },
+    "catalog": {
+      "deal": {
+        "size": "18px",
+        "weight": "300",
+        "line": "19.8px",
+        "visible": true,
+        "text": "Покупка",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "department": {
+        "size": "18px",
+        "weight": "300",
+        "line": "21.6px",
+        "visible": true,
+        "text": "Москва",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "market": {
+        "size": "18px",
+        "weight": "300",
+        "line": "21.6px",
+        "visible": true,
+        "text": "Новостройки",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "search": {
+        "size": "18px",
+        "weight": "300",
+        "line": "21.6px",
+        "visible": true,
+        "text": "Название или ID",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "quick": {
+        "size": "18px",
+        "weight": "300",
+        "line": "21.6px",
+        "visible": true,
+        "text": "Локация",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "all": {
+        "size": "18px",
+        "weight": "300",
+        "line": "19.8px",
+        "visible": false,
+        "text": "Все фильтры",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "sort": {
+        "size": "18px",
+        "weight": "300",
+        "line": "21.6px",
+        "visible": true,
+        "text": "По релевантности",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "map": {
+        "size": "18px",
+        "weight": "300",
+        "line": "19.8px",
+        "visible": true,
+        "text": "На карте",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "reset": {
+        "size": "14px",
+        "weight": "300",
+        "line": "18.2px",
+        "visible": true,
+        "text": "Сбросить фильтры",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "count": {
+        "size": "14px",
+        "weight": "300",
+        "line": "18.2px",
+        "visible": true,
+        "text": "4 проекта",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "more": {
+        "size": "14px",
+        "weight": "400",
+        "line": "16.8px",
+        "visible": false,
+        "text": "Смотреть больше",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "spacing": "1.68px"
+      }
+    }
+  },
+  {
+    "width": 768,
+    "home": {
+      "deal": {
+        "size": "16px",
+        "weight": "400",
+        "line": "16px",
+        "visible": true,
+        "text": "Купить",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "spacing": "normal"
+      },
+      "field": {
+        "size": "16px",
+        "weight": "300",
+        "line": "22.4px",
+        "visible": true,
+        "text": "Тип недвижимости",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "spacing": "normal"
+      },
+      "search": {
+        "size": "16px",
+        "weight": "400",
+        "line": "17.6px",
+        "visible": true,
+        "text": "Поиск по ID, названию ЖК, адресу",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "spacing": "normal"
+      },
+      "all": {
+        "size": "16px",
+        "weight": "300",
+        "line": "17.6px",
+        "visible": true,
+        "text": "Еще фильтры",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "spacing": "normal"
+      },
+      "more": {
+        "size": "14px",
+        "weight": "400",
+        "line": "16.8px",
+        "visible": false,
+        "text": "Читать все новости",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "spacing": "1.68px"
+      },
+      "choice": {
+        "size": "18px",
+        "weight": "400",
+        "line": "21.6px",
+        "visible": false,
+        "text": "Городская",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "spacing": "normal"
+      }
+    },
+    "catalog": {
+      "deal": {
+        "size": "18px",
+        "weight": "300",
+        "line": "19.8px",
+        "visible": true,
+        "text": "Покупка",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "department": {
+        "size": "18px",
+        "weight": "300",
+        "line": "21.6px",
+        "visible": true,
+        "text": "Москва",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "market": {
+        "size": "18px",
+        "weight": "300",
+        "line": "21.6px",
+        "visible": true,
+        "text": "Новостройки",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "search": {
+        "size": "18px",
+        "weight": "300",
+        "line": "21.6px",
+        "visible": true,
+        "text": "Название ЖК, адрес или ID",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "quick": {
+        "size": "18px",
+        "weight": "300",
+        "line": "21.6px",
+        "visible": true,
+        "text": "Локация",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "all": {
+        "size": "18px",
+        "weight": "300",
+        "line": "19.8px",
+        "visible": true,
+        "text": "Все фильтры",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "sort": {
+        "size": "18px",
+        "weight": "300",
+        "line": "23.4px",
+        "visible": true,
+        "text": "По релевантности",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "map": {
+        "size": "18px",
+        "weight": "300",
+        "line": "19.8px",
+        "visible": true,
+        "text": "На карте",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "reset": {
+        "size": "14px",
+        "weight": "300",
+        "line": "18.2px",
+        "visible": true,
+        "text": "Сбросить фильтры",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "count": {
+        "size": "15px",
+        "weight": "300",
+        "line": "19.5px",
+        "visible": true,
+        "text": "4 проекта",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "more": {
+        "size": "14px",
+        "weight": "400",
+        "line": "16.8px",
+        "visible": false,
+        "text": "Смотреть больше",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "spacing": "1.68px"
+      }
+    }
+  },
+  {
+    "width": 1024,
+    "home": {
+      "deal": {
+        "size": "16px",
+        "weight": "400",
+        "line": "16px",
+        "visible": true,
+        "text": "Купить",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "spacing": "normal"
+      },
+      "field": {
+        "size": "16px",
+        "weight": "300",
+        "line": "22.4px",
+        "visible": true,
+        "text": "Тип недвижимости",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "spacing": "normal"
+      },
+      "search": {
+        "size": "16px",
+        "weight": "400",
+        "line": "17.6px",
+        "visible": true,
+        "text": "Поиск по ID, названию ЖК, адресу",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "spacing": "normal"
+      },
+      "all": {
+        "size": "16px",
+        "weight": "300",
+        "line": "17.6px",
+        "visible": true,
+        "text": "Еще фильтры",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "spacing": "normal"
+      },
+      "more": {
+        "size": "14px",
+        "weight": "400",
+        "line": "16.8px",
+        "visible": true,
+        "text": "Читать все новости",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "spacing": "1.68px"
+      },
+      "choice": {
+        "size": "18px",
+        "weight": "400",
+        "line": "21.6px",
+        "visible": false,
+        "text": "Городская",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "spacing": "normal"
+      }
+    },
+    "catalog": {
+      "deal": {
+        "size": "18px",
+        "weight": "300",
+        "line": "19.8px",
+        "visible": true,
+        "text": "Покупка",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "department": {
+        "size": "18px",
+        "weight": "300",
+        "line": "21.6px",
+        "visible": true,
+        "text": "Москва",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "market": {
+        "size": "18px",
+        "weight": "300",
+        "line": "21.6px",
+        "visible": true,
+        "text": "Новостройки",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "search": {
+        "size": "18px",
+        "weight": "300",
+        "line": "21.6px",
+        "visible": true,
+        "text": "Название ЖК, адрес или ID",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "quick": {
+        "size": "18px",
+        "weight": "300",
+        "line": "21.6px",
+        "visible": true,
+        "text": "Локация",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "all": {
+        "size": "18px",
+        "weight": "300",
+        "line": "19.8px",
+        "visible": true,
+        "text": "Все фильтры",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "sort": {
+        "size": "18px",
+        "weight": "300",
+        "line": "23.4px",
+        "visible": true,
+        "text": "По релевантности",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "map": {
+        "size": "18px",
+        "weight": "300",
+        "line": "19.8px",
+        "visible": true,
+        "text": "На карте",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "reset": {
+        "size": "14px",
+        "weight": "300",
+        "line": "18.2px",
+        "visible": true,
+        "text": "Сбросить фильтры",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "count": {
+        "size": "15px",
+        "weight": "300",
+        "line": "19.5px",
+        "visible": true,
+        "text": "4 проекта",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "more": {
+        "size": "14px",
+        "weight": "400",
+        "line": "16.8px",
+        "visible": false,
+        "text": "Смотреть больше",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "spacing": "1.68px"
+      }
+    }
+  },
+  {
+    "width": 1280,
+    "home": {
+      "deal": {
+        "size": "16px",
+        "weight": "400",
+        "line": "16px",
+        "visible": true,
+        "text": "Купить",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "spacing": "normal"
+      },
+      "field": {
+        "size": "16px",
+        "weight": "300",
+        "line": "22.4px",
+        "visible": true,
+        "text": "Тип недвижимости",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "spacing": "normal"
+      },
+      "search": {
+        "size": "16px",
+        "weight": "400",
+        "line": "17.6px",
+        "visible": true,
+        "text": "Поиск по ID, названию ЖК, адресу",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "spacing": "normal"
+      },
+      "all": {
+        "size": "16px",
+        "weight": "300",
+        "line": "17.6px",
+        "visible": true,
+        "text": "Еще фильтры",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "spacing": "normal"
+      },
+      "more": {
+        "size": "14px",
+        "weight": "400",
+        "line": "16.8px",
+        "visible": true,
+        "text": "Читать все новости",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "spacing": "1.68px"
+      },
+      "choice": {
+        "size": "18px",
+        "weight": "400",
+        "line": "21.6px",
+        "visible": false,
+        "text": "Городская",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "spacing": "normal"
+      }
+    },
+    "catalog": {
+      "deal": {
+        "size": "18px",
+        "weight": "300",
+        "line": "19.8px",
+        "visible": true,
+        "text": "Покупка",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "department": {
+        "size": "18px",
+        "weight": "300",
+        "line": "21.6px",
+        "visible": true,
+        "text": "Москва",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "market": {
+        "size": "18px",
+        "weight": "300",
+        "line": "21.6px",
+        "visible": true,
+        "text": "Новостройки",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "search": {
+        "size": "18px",
+        "weight": "300",
+        "line": "21.6px",
+        "visible": true,
+        "text": "Название ЖК, адрес или ID",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "quick": {
+        "size": "18px",
+        "weight": "300",
+        "line": "21.6px",
+        "visible": true,
+        "text": "Локация",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "all": {
+        "size": "18px",
+        "weight": "300",
+        "line": "19.8px",
+        "visible": true,
+        "text": "Все фильтры",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "sort": {
+        "size": "18px",
+        "weight": "300",
+        "line": "23.4px",
+        "visible": true,
+        "text": "По релевантности",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "map": {
+        "size": "18px",
+        "weight": "300",
+        "line": "19.8px",
+        "visible": true,
+        "text": "На карте",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "reset": {
+        "size": "14px",
+        "weight": "300",
+        "line": "18.2px",
+        "visible": true,
+        "text": "Сбросить фильтры",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "count": {
+        "size": "15px",
+        "weight": "300",
+        "line": "19.5px",
+        "visible": true,
+        "text": "4 проекта",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "more": {
+        "size": "14px",
+        "weight": "400",
+        "line": "16.8px",
+        "visible": false,
+        "text": "Смотреть больше",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "spacing": "1.68px"
+      }
+    }
+  },
+  {
+    "width": 1440,
+    "home": {
+      "deal": {
+        "size": "16px",
+        "weight": "400",
+        "line": "16px",
+        "visible": true,
+        "text": "Купить",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "spacing": "normal"
+      },
+      "field": {
+        "size": "16px",
+        "weight": "300",
+        "line": "22.4px",
+        "visible": true,
+        "text": "Тип недвижимости",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "spacing": "normal"
+      },
+      "search": {
+        "size": "16px",
+        "weight": "400",
+        "line": "17.6px",
+        "visible": true,
+        "text": "Поиск по ID, названию ЖК, адресу",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "spacing": "normal"
+      },
+      "all": {
+        "size": "16px",
+        "weight": "300",
+        "line": "17.6px",
+        "visible": true,
+        "text": "Еще фильтры",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "spacing": "normal"
+      },
+      "more": {
+        "size": "14px",
+        "weight": "400",
+        "line": "16.8px",
+        "visible": true,
+        "text": "Читать все новости",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "spacing": "1.68px"
+      },
+      "choice": {
+        "size": "18px",
+        "weight": "400",
+        "line": "21.6px",
+        "visible": false,
+        "text": "Городская",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "spacing": "normal"
+      }
+    },
+    "catalog": {
+      "deal": {
+        "size": "18px",
+        "weight": "300",
+        "line": "19.8px",
+        "visible": true,
+        "text": "Покупка",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "department": {
+        "size": "18px",
+        "weight": "300",
+        "line": "21.6px",
+        "visible": true,
+        "text": "Москва",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "market": {
+        "size": "18px",
+        "weight": "300",
+        "line": "21.6px",
+        "visible": true,
+        "text": "Новостройки",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "search": {
+        "size": "18px",
+        "weight": "300",
+        "line": "21.6px",
+        "visible": true,
+        "text": "Название ЖК, адрес или ID",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "quick": {
+        "size": "18px",
+        "weight": "300",
+        "line": "21.6px",
+        "visible": true,
+        "text": "Локация",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "all": {
+        "size": "18px",
+        "weight": "300",
+        "line": "19.8px",
+        "visible": true,
+        "text": "Все фильтры",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "sort": {
+        "size": "18px",
+        "weight": "300",
+        "line": "23.4px",
+        "visible": true,
+        "text": "По релевантности",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "map": {
+        "size": "18px",
+        "weight": "300",
+        "line": "19.8px",
+        "visible": true,
+        "text": "На карте",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "reset": {
+        "size": "14px",
+        "weight": "300",
+        "line": "18.2px",
+        "visible": true,
+        "text": "Сбросить фильтры",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "count": {
+        "size": "15px",
+        "weight": "300",
+        "line": "19.5px",
+        "visible": true,
+        "text": "4 проекта",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "more": {
+        "size": "14px",
+        "weight": "400",
+        "line": "16.8px",
+        "visible": false,
+        "text": "Смотреть больше",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "spacing": "1.68px"
+      }
+    }
+  },
+  {
+    "width": 1441,
+    "home": {
+      "deal": {
+        "size": "18px",
+        "weight": "400",
+        "line": "18px",
+        "visible": true,
+        "text": "Купить",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "spacing": "normal"
+      },
+      "field": {
+        "size": "18px",
+        "weight": "300",
+        "line": "25.2px",
+        "visible": true,
+        "text": "Тип недвижимости",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "spacing": "normal"
+      },
+      "search": {
+        "size": "18px",
+        "weight": "400",
+        "line": "19.8px",
+        "visible": true,
+        "text": "Поиск по ID, названию ЖК, адресу",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "spacing": "normal"
+      },
+      "all": {
+        "size": "18px",
+        "weight": "300",
+        "line": "19.8px",
+        "visible": true,
+        "text": "Еще фильтры",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "spacing": "normal"
+      },
+      "more": {
+        "size": "14px",
+        "weight": "400",
+        "line": "16.8px",
+        "visible": true,
+        "text": "Читать все новости",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "spacing": "1.68px"
+      },
+      "choice": {
+        "size": "18px",
+        "weight": "400",
+        "line": "21.6px",
+        "visible": false,
+        "text": "Городская",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "spacing": "normal"
+      }
+    },
+    "catalog": {
+      "deal": {
+        "size": "20px",
+        "weight": "300",
+        "line": "22px",
+        "visible": true,
+        "text": "Покупка",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "department": {
+        "size": "20px",
+        "weight": "300",
+        "line": "24px",
+        "visible": true,
+        "text": "Москва",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "market": {
+        "size": "20px",
+        "weight": "300",
+        "line": "24px",
+        "visible": true,
+        "text": "Новостройки",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "search": {
+        "size": "20px",
+        "weight": "300",
+        "line": "24px",
+        "visible": true,
+        "text": "Название ЖК, адрес или ID",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "quick": {
+        "size": "20px",
+        "weight": "300",
+        "line": "24px",
+        "visible": true,
+        "text": "Локация",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "all": {
+        "size": "20px",
+        "weight": "300",
+        "line": "22px",
+        "visible": true,
+        "text": "Все фильтры",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "sort": {
+        "size": "20px",
+        "weight": "300",
+        "line": "26px",
+        "visible": true,
+        "text": "По релевантности",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "map": {
+        "size": "20px",
+        "weight": "300",
+        "line": "22px",
+        "visible": true,
+        "text": "На карте",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "reset": {
+        "size": "14px",
+        "weight": "300",
+        "line": "18.2px",
+        "visible": true,
+        "text": "Сбросить фильтры",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "count": {
+        "size": "15px",
+        "weight": "300",
+        "line": "19.5px",
+        "visible": true,
+        "text": "4 проекта",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "more": {
+        "size": "14px",
+        "weight": "400",
+        "line": "16.8px",
+        "visible": false,
+        "text": "Смотреть больше",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "spacing": "1.68px"
+      }
+    }
+  },
+  {
+    "width": 1920,
+    "home": {
+      "deal": {
+        "size": "18px",
+        "weight": "400",
+        "line": "18px",
+        "visible": true,
+        "text": "Купить",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "spacing": "normal"
+      },
+      "field": {
+        "size": "18px",
+        "weight": "300",
+        "line": "25.2px",
+        "visible": true,
+        "text": "Тип недвижимости",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "spacing": "normal"
+      },
+      "search": {
+        "size": "18px",
+        "weight": "400",
+        "line": "19.8px",
+        "visible": true,
+        "text": "Поиск по ID, названию ЖК, адресу",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "spacing": "normal"
+      },
+      "all": {
+        "size": "18px",
+        "weight": "300",
+        "line": "19.8px",
+        "visible": true,
+        "text": "Еще фильтры",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "spacing": "normal"
+      },
+      "more": {
+        "size": "14px",
+        "weight": "400",
+        "line": "16.8px",
+        "visible": true,
+        "text": "Читать все новости",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "spacing": "1.68px"
+      },
+      "choice": {
+        "size": "18px",
+        "weight": "400",
+        "line": "21.6px",
+        "visible": false,
+        "text": "Городская",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "spacing": "normal"
+      }
+    },
+    "catalog": {
+      "deal": {
+        "size": "20px",
+        "weight": "300",
+        "line": "22px",
+        "visible": true,
+        "text": "Покупка",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "department": {
+        "size": "20px",
+        "weight": "300",
+        "line": "24px",
+        "visible": true,
+        "text": "Москва",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "market": {
+        "size": "20px",
+        "weight": "300",
+        "line": "24px",
+        "visible": true,
+        "text": "Новостройки",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "search": {
+        "size": "20px",
+        "weight": "300",
+        "line": "24px",
+        "visible": true,
+        "text": "Название ЖК, адрес или ID",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "quick": {
+        "size": "20px",
+        "weight": "300",
+        "line": "24px",
+        "visible": true,
+        "text": "Локация",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "all": {
+        "size": "20px",
+        "weight": "300",
+        "line": "22px",
+        "visible": true,
+        "text": "Все фильтры",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "sort": {
+        "size": "20px",
+        "weight": "300",
+        "line": "26px",
+        "visible": true,
+        "text": "По релевантности",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "map": {
+        "size": "20px",
+        "weight": "300",
+        "line": "22px",
+        "visible": true,
+        "text": "На карте",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "reset": {
+        "size": "14px",
+        "weight": "300",
+        "line": "18.2px",
+        "visible": true,
+        "text": "Сбросить фильтры",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "count": {
+        "size": "15px",
+        "weight": "300",
+        "line": "19.5px",
+        "visible": true,
+        "text": "4 проекта",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "more": {
+        "size": "14px",
+        "weight": "400",
+        "line": "16.8px",
+        "visible": false,
+        "text": "Смотреть больше",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "spacing": "1.68px"
+      }
+    }
+  },
+  {
+    "width": 2560,
+    "home": {
+      "deal": {
+        "size": "18px",
+        "weight": "400",
+        "line": "18px",
+        "visible": true,
+        "text": "Купить",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "spacing": "normal"
+      },
+      "field": {
+        "size": "18px",
+        "weight": "300",
+        "line": "25.2px",
+        "visible": true,
+        "text": "Тип недвижимости",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "spacing": "normal"
+      },
+      "search": {
+        "size": "18px",
+        "weight": "400",
+        "line": "19.8px",
+        "visible": true,
+        "text": "Поиск по ID, названию ЖК, адресу",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "spacing": "normal"
+      },
+      "all": {
+        "size": "18px",
+        "weight": "300",
+        "line": "19.8px",
+        "visible": true,
+        "text": "Еще фильтры",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "spacing": "normal"
+      },
+      "more": {
+        "size": "14px",
+        "weight": "400",
+        "line": "16.8px",
+        "visible": true,
+        "text": "Читать все новости",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "spacing": "1.68px"
+      },
+      "choice": {
+        "size": "18px",
+        "weight": "400",
+        "line": "21.6px",
+        "visible": false,
+        "text": "Городская",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "spacing": "normal"
+      }
+    },
+    "catalog": {
+      "deal": {
+        "size": "20px",
+        "weight": "300",
+        "line": "22px",
+        "visible": true,
+        "text": "Покупка",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "department": {
+        "size": "20px",
+        "weight": "300",
+        "line": "24px",
+        "visible": true,
+        "text": "Москва",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "market": {
+        "size": "20px",
+        "weight": "300",
+        "line": "24px",
+        "visible": true,
+        "text": "Новостройки",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "search": {
+        "size": "20px",
+        "weight": "300",
+        "line": "24px",
+        "visible": true,
+        "text": "Название ЖК, адрес или ID",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "quick": {
+        "size": "20px",
+        "weight": "300",
+        "line": "24px",
+        "visible": true,
+        "text": "Локация",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "all": {
+        "size": "20px",
+        "weight": "300",
+        "line": "22px",
+        "visible": true,
+        "text": "Все фильтры",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "sort": {
+        "size": "20px",
+        "weight": "300",
+        "line": "26px",
+        "visible": true,
+        "text": "По релевантности",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "map": {
+        "size": "20px",
+        "weight": "300",
+        "line": "22px",
+        "visible": true,
+        "text": "На карте",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "reset": {
+        "size": "14px",
+        "weight": "300",
+        "line": "18.2px",
+        "visible": true,
+        "text": "Сбросить фильтры",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "count": {
+        "size": "15px",
+        "weight": "300",
+        "line": "19.5px",
+        "visible": true,
+        "text": "4 проекта",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "more": {
+        "size": "14px",
+        "weight": "400",
+        "line": "16.8px",
+        "visible": false,
+        "text": "Смотреть больше",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "spacing": "1.68px"
+      }
+    }
+  },
+  {
+    "width": 3840,
+    "home": {
+      "deal": {
+        "size": "18px",
+        "weight": "400",
+        "line": "18px",
+        "visible": true,
+        "text": "Купить",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "spacing": "normal"
+      },
+      "field": {
+        "size": "18px",
+        "weight": "300",
+        "line": "25.2px",
+        "visible": true,
+        "text": "Тип недвижимости",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "spacing": "normal"
+      },
+      "search": {
+        "size": "18px",
+        "weight": "400",
+        "line": "19.8px",
+        "visible": true,
+        "text": "Поиск по ID, названию ЖК, адресу",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "spacing": "normal"
+      },
+      "all": {
+        "size": "18px",
+        "weight": "300",
+        "line": "19.8px",
+        "visible": true,
+        "text": "Еще фильтры",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "spacing": "normal"
+      },
+      "more": {
+        "size": "14px",
+        "weight": "400",
+        "line": "16.8px",
+        "visible": true,
+        "text": "Читать все новости",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "spacing": "1.68px"
+      },
+      "choice": {
+        "size": "18px",
+        "weight": "400",
+        "line": "21.6px",
+        "visible": false,
+        "text": "Городская",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "spacing": "normal"
+      }
+    },
+    "catalog": {
+      "deal": {
+        "size": "20px",
+        "weight": "300",
+        "line": "22px",
+        "visible": true,
+        "text": "Покупка",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "department": {
+        "size": "20px",
+        "weight": "300",
+        "line": "24px",
+        "visible": true,
+        "text": "Москва",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "market": {
+        "size": "20px",
+        "weight": "300",
+        "line": "24px",
+        "visible": true,
+        "text": "Новостройки",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "search": {
+        "size": "20px",
+        "weight": "300",
+        "line": "24px",
+        "visible": true,
+        "text": "Название ЖК, адрес или ID",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "quick": {
+        "size": "20px",
+        "weight": "300",
+        "line": "24px",
+        "visible": true,
+        "text": "Локация",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "all": {
+        "size": "20px",
+        "weight": "300",
+        "line": "22px",
+        "visible": true,
+        "text": "Все фильтры",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "sort": {
+        "size": "20px",
+        "weight": "300",
+        "line": "26px",
+        "visible": true,
+        "text": "По релевантности",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "map": {
+        "size": "20px",
+        "weight": "300",
+        "line": "22px",
+        "visible": true,
+        "text": "На карте",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "reset": {
+        "size": "14px",
+        "weight": "300",
+        "line": "18.2px",
+        "visible": true,
+        "text": "Сбросить фильтры",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "count": {
+        "size": "15px",
+        "weight": "300",
+        "line": "19.5px",
+        "visible": true,
+        "text": "4 проекта",
+        "family": "\"Tilda Sans\", sans-serif",
+        "spacing": "normal"
+      },
+      "more": {
+        "size": "14px",
+        "weight": "400",
+        "line": "16.8px",
+        "visible": false,
+        "text": "Смотреть больше",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "spacing": "1.68px"
+      }
+    }
+  }
+]
