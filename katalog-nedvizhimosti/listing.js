@@ -156,7 +156,7 @@
  list.addEventListener('click',event=>{
   const button=event.target.closest('[data-favorite]');if(!button)return;const id=button.dataset.favorite,adding=!favorites.includes(id);favorites=adding?[...favorites,id]:favorites.filter(value=>value!==id);
   try{localStorage.setItem(STORAGE,JSON.stringify(favorites));}catch{}
-  render();(list.querySelector(`[data-favorite="${CSS.escape(id)}"]`)||$('[data-show-favorites]')).focus({preventScroll:true});$('[data-announcement]').textContent=adding?'Объект добавлен в избранное':'Объект удалён из избранного';
+  render();(list.querySelector(`[data-favorite="${CSS.escape(id)}"]`)||$('.catalog-mode-detailed-filters')).focus({preventScroll:true});$('[data-announcement]').textContent=adding?'Объект добавлен в избранное':'Объект удалён из избранного';
  });
  // Original full site-menu from the city reference, with isolation and focus restoration.
  const toggle=$('.site-header__icon-btn'),header=$('.site-header'),headerHolder=$('.layout__header');
