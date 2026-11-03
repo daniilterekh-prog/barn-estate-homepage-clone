@@ -1,67 +1,67 @@
 {
   "id": "01-header",
   "title": "Хедер",
-  "sourceCommit": "3b8f2fb715bdf1840df0ed6450226414b028ebe0",
+  "sourceCommit": "6b43fb3db5066280a102d0ff748f7363b20449f4",
   "source": "http://127.0.0.1:8802",
   "capturedAt": "2026-11-01T12:42:16.163Z",
   "selector": ".site-header",
   "files": [
     {
       "file": "README.md",
-      "bytes": 6187,
-      "sha256": "7ea6dc507ec5f60fd74fae07a57d7fe92b5f58ce41ac343a801cc94dcd0c9f81"
+      "bytes": 1004,
+      "sha256": "0afcf2296b3f58812fca5f95a125d460951d24fcfb46daa65d63284675f108d1"
     },
     {
       "file": "block.css",
-      "bytes": 98998,
-      "sha256": "76f3f5d92dbf80463dca961c93ea69b8e12c914456c68b4228b37cbee14d2e51"
+      "bytes": 109374,
+      "sha256": "435f6db46dc77897117c5d9223a9ecfa92eb495836479d4d1b134372c7ea1570"
     },
     {
       "file": "block.html",
-      "bytes": 26552,
-      "sha256": "41bfb481352f052c46907856e8568a26365f596aa2dc16aa8229bcf1e0d6a9d4"
+      "bytes": 26402,
+      "sha256": "b5472f39e5e5a5ed14d88d1955308f3ddd650d81c490e148b0632e265796bdbc"
     },
     {
       "file": "block.js",
-      "bytes": 71857,
-      "sha256": "64dd602e61c5625ea3ee0d459456353ef57216ddfaa5234f0abad7f282cc77f2"
+      "bytes": 196997,
+      "sha256": "5b2a8edadcb1c2ffdf762f743795f3a379118d7ba275706fcd1b72b6003d137d"
     },
     {
       "file": "content.json",
-      "bytes": 19910,
-      "sha256": "24009965d3a214c462dd53a23ce06a8ceb4521bad654e7c9836c01ff5ea24f81"
+      "bytes": 19766,
+      "sha256": "ebc7852ce2f853beaed81f7bb1ce69c724214d96acf10ea4fece41c8904b2152"
     },
     {
       "file": "design.json",
-      "bytes": 371,
-      "sha256": "7d4042b3e8a1a706dd10a880f8a72e51c52eba653a2462ca1edac3c72d06ba88"
+      "bytes": 370,
+      "sha256": "3a0ef4ca80ca2a2a9ac80ac43df7277d8c1387562841e24fda1645ff12c3e397"
     },
     {
       "file": "index.html",
-      "bytes": 27011,
-      "sha256": "73ebc03495bbddcb9b2f14a383f5ce31b310e14f01559087766b802cedbbc6f3"
+      "bytes": 26861,
+      "sha256": "95a39ddcdb43279371a06805651d6348de3ba46a7dcd416a08378fe239e85c65"
     },
     {
       "file": "paste.html",
-      "bytes": 2325975,
-      "sha256": "0b1990767adaa52c009552295387f835fc751b9786028a600a74f8f9d10bc364"
+      "bytes": 2461572,
+      "sha256": "160b423647dbdc1b7f30c36f172bf2e93ff3bbce7b2a32d072bb811b849a8f36"
     }
   ],
   "assets": [
     {
-      "file": "assets/5f9a5f75aa9de0fd5d980437.svg",
+      "file": "assets/max.svg",
       "bytes": 72862,
       "sha256": "5caa61a4b0731d0d89421b4fb24f41433025e5aea59155a14cf3a3fada6c9174",
       "source": "https://barn-estate.ru/pictures/office-contact/max.svg"
     },
     {
-      "file": "assets/d98028a12bc9366262f97604.svg",
+      "file": "assets/telegram.svg",
       "bytes": 757,
       "sha256": "4435c9a57e165a1c3b7f27e0b5b11b82b10d674ea4fff7f6748cb67b7fcb994e",
       "source": "https://barn-estate.ru/pictures/office-contact/telegram.svg"
     },
     {
-      "file": "assets/29bbe9068117f193bae0f419.svg",
+      "file": "assets/whatsapp.svg",
       "bytes": 1231,
       "sha256": "3e197e0e1f3e679ee09823c75e1c7bad3a19da9bd1ba01df395268b9ae91816f",
       "source": "https://barn-estate.ru/pictures/office-contact/whatsapp.svg"
@@ -70,28 +70,28 @@
       "file": "assets/45166ee6283659ea6541abd2.jpg",
       "bytes": 232013,
       "sha256": "5b10e2286da52d333e30561ce0f29ce392401a8f34fd8ca9efc2fd06553acfd4",
-      "source": "/assets/45166ee6283659ea6541abd2.jpg"
+      "source": "https://barn-estate.ru/assets/45166ee6283659ea6541abd2.jpg"
     },
     {
       "file": "assets/d77b3a703b03cd404472d2c4.jpg",
       "bytes": 193690,
       "sha256": "b558020c3e4b76d7de5cdf7e298f14e8d01c9484f2aca0693e4608c200d7632d",
-      "source": "/assets/d77b3a703b03cd404472d2c4.jpg"
+      "source": "https://barn-estate.ru/assets/d77b3a703b03cd404472d2c4.jpg"
     },
     {
       "file": "assets/owner-modal-prus.webp",
       "bytes": 210000,
       "sha256": "6bbaa8e1df83e7d5eda42c83d174e1f0177a8cbb5698bd5ec01ee3602e8f84aa",
-      "source": "/assets/owner-modal-prus.webp"
+      "source": "https://barn-estate.ru/assets/owner-modal-prus.webp"
     },
     {
       "file": "assets/quiz-mobile-prus-magazine.webp",
       "bytes": 105912,
       "sha256": "8985649766af231100dd863db3e4fac10809a7b9f94bc2d38c6922c8e10b67c1",
-      "source": "/assets/quiz-mobile-prus-magazine.webp"
+      "source": "https://barn-estate.ru/assets/quiz-mobile-prus-magazine.webp"
     },
     {
-      "file": "assets/c57d9b3c8de986fa0d618d09.svg",
+      "file": "assets/logo.svg",
       "bytes": 6644,
       "sha256": "9b2d8c1a7d4d213587828c6bdf6592a37113a388fedc1b58211534d8cb1e7123",
       "source": "https://barn-estate.ru/pictures/logo.svg"
@@ -121,19 +121,19 @@
       "source": "https://barn-estate.ru/fonts/TildaSans-Semibold.woff2"
     },
     {
-      "file": "assets/a9f2b67f7136af9bde4f58b8.woff2",
+      "file": "assets/TildaSans-Medium.woff2",
       "bytes": 62556,
       "sha256": "f716269e361f466570f37bc920988c619ddc8a7828c5949c1c56a731a320ab47",
       "source": "https://barn-estate.ru/fonts/TildaSans-Medium.woff2"
     },
     {
-      "file": "assets/9e76f26b05473907fc0031ca.woff2",
+      "file": "assets/TildaSans-Regular.woff2",
       "bytes": 61636,
       "sha256": "2670dad44ca6c2a1b9bbdbf1af6d8db9173f2dbe31604e80bdf9599b55047d41",
       "source": "https://barn-estate.ru/fonts/TildaSans-Regular.woff2"
     },
     {
-      "file": "assets/de589af6ec6325d4b365d646.woff2",
+      "file": "assets/TildaSans-Light.woff2",
       "bytes": 63952,
       "sha256": "f0f2c165784c72343618a7c2cbde00e45dbb9b09af5149984792f280cac9642e",
       "source": "https://barn-estate.ru/fonts/TildaSans-Light.woff2"
