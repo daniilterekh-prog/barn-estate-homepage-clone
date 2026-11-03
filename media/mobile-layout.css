@@ -1,0 +1,124 @@
+/* Composition from the supplied mobile reference; typography and tokens remain
+ * the approved BARN Estate homepage kit. No rule applies above 540 CSS pixels. */
+@media (max-width:540px) {
+  body.barnes-media-kit {
+    --media-mobile-rule:#deddda;
+    --media-mobile-arrow:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 12'%3E%3Cpath d='M1 6h17m-5-4 5 4-5 4' fill='none' stroke='black' stroke-width='1.3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  }
+
+  /* Scenarios: the complete row remains the original accessible link. */
+  body.barnes-media-kit .media-intents__grid {display:flex;flex-direction:column;gap:0;}
+  body.barnes-media-kit .media-intents__card {
+    position:relative;display:flex;flex-direction:column;align-items:flex-start;
+    min-height:0;gap:8px;padding:20px 36px 20px 0!important;
+    border:0;border-bottom:1px solid var(--media-mobile-rule);background:transparent;
+  }
+  body.barnes-media-kit .media-intents__card:first-child {padding-top:0!important;}
+  body.barnes-media-kit .media-intents__card::after {
+    content:"";position:absolute;right:0;top:50%;width:20px;height:12px;
+    background:var(--home-brand);mask:var(--media-mobile-arrow) center/contain no-repeat;
+    transform:translateY(-50%);
+  }
+  body.barnes-media-kit :is(.media-intents__icon,.media-intents__action) {display:none!important;}
+  body.barnes-media-kit :is(.media-intents__title,.media-intents__text) {margin:0;}
+
+  /* Editorial lead: photo, full headline and original date, without a frame. */
+  body.barnes-media-kit .media-weekly__featured {border:0;background:transparent;}
+  body.barnes-media-kit .media-weekly__featured-link {position:relative;display:flex;flex-direction:column;}
+  body.barnes-media-kit .media-weekly__featured-media {height:auto;aspect-ratio:1.6;}
+  body.barnes-media-kit .media-weekly__featured-image {width:100%;height:100%;object-fit:cover;}
+  body.barnes-media-kit .media-weekly__featured-panel {position:static;padding:16px 0 0;gap:12px;}
+  body.barnes-media-kit .media-weekly__badge--panel {position:absolute;top:16px;left:16px;margin:0;background:#fff;}
+  body.barnes-media-kit .media-weekly__featured-title {
+    display:block;-webkit-line-clamp:unset;max-height:none;overflow:visible;margin:0;
+  }
+  body.barnes-media-kit .media-weekly__meta {margin:0;}
+  body.barnes-media-kit .media-weekly__action {display:none!important;}
+
+  /* Both lists use the same two-column rhythm, with metadata in the text column.
+   * display:contents keeps the source badge/content order and Vue ownership. */
+  body.barnes-media-kit :is(.media-weekly__grid,.media-fresh__grid) {display:flex;flex-direction:column;gap:0!important;}
+  body.barnes-media-kit :is(.media-weekly__card,.media-fresh__card) {
+    border:0;border-top:1px solid var(--media-mobile-rule);background:transparent;
+    padding:20px 0;margin:0;aspect-ratio:auto;min-height:0;height:auto;
+  }
+  body.barnes-media-kit .media-fresh__card:first-child {padding-top:0;border-top:0;}
+  body.barnes-media-kit :is(.media-weekly__card-link,.media-fresh__card-link) {
+    display:grid;grid-template-columns:minmax(0,44%) minmax(0,1fr);
+    grid-template-rows:auto 1fr;column-gap:16px;row-gap:8px;align-items:start;
+    height:auto;min-height:0;
+  }
+  body.barnes-media-kit :is(.media-weekly__card-media,.media-fresh__media) {display:contents;}
+  body.barnes-media-kit :is(.media-weekly__card-image,.media-fresh__image) {
+    grid-column:1;grid-row:1 / 3;position:static;width:100%;height:100%;
+    min-height:144px;max-height:220px;object-fit:cover;align-self:start;
+  }
+  body.barnes-media-kit :is(.media-weekly__card-media .media-weekly__badge,.media-fresh__badge) {
+    grid-column:2;grid-row:1;position:static;inset:auto;justify-self:start;
+    max-width:100%;margin:0;padding:2px 8px;border:1px solid var(--media-mobile-rule);background:#fff;
+  }
+  body.barnes-media-kit :is(.media-weekly__card-body,.media-fresh__body) {
+    grid-column:2;grid-row:2;display:flex;flex-direction:column;justify-content:flex-start;
+    min-width:0;gap:8px!important;padding:0!important;border:0;
+  }
+  body.barnes-media-kit :is(.media-weekly__card-title,.media-fresh__card-title) {
+    margin:0;min-height:0;max-height:none;-webkit-line-clamp:4;
+    overflow-wrap:anywhere;text-overflow:clip;
+  }
+  body.barnes-media-kit .media-weekly__meta--spread {display:block;}
+  body.barnes-media-kit .media-fresh__action {margin-top:0;}
+
+  /* Market directions: all current destinations stay reachable, including Moscow.
+   * Only the phone image-led presentation becomes a compact direction control. */
+  body.barnes-media-kit .media-market__layout {display:flex;flex-wrap:wrap;gap:12px!important;}
+  body.barnes-media-kit :is(.media-market__list,.media-market__column,.media-market__featured-content) {display:contents;}
+  body.barnes-media-kit .media-market__list {border:0;padding:0;}
+  body.barnes-media-kit :is(.media-market__featured-media,.media-market__featured-badge,.media-market__featured-line,.media-market__featured-text,.media-market__featured-action,.media-market__item-arrow) {display:none!important;}
+  body.barnes-media-kit :is(.media-market__featured,.media-market__item) {
+    box-sizing:border-box;position:relative;display:inline-flex;align-items:center;
+    width:auto;max-width:100%;height:auto;min-height:44px;
+    padding:10px 16px;border:1px solid var(--media-mobile-rule);background:transparent;
+    flex:0 1 auto;
+  }
+  body.barnes-media-kit .media-market__featured .media-market__featured-name {
+    margin:0;font-size:18px!important;font-weight:400!important;line-height:1.2!important;
+    color:var(--home-primary)!important;
+  }
+  body.barnes-media-kit .media-market__item-name {white-space:normal;}
+
+  /* Analytics: one image-led feature followed by compact white rows. */
+  body.barnes-media-kit :is(.media-analytics__side,.media-analytics__more-grid) {display:flex;flex-direction:column;gap:0!important;}
+  body.barnes-media-kit .media-analytics__card {
+    position:relative;display:grid;grid-template-columns:minmax(0,44%) minmax(0,1fr);
+    gap:16px;min-height:0;height:auto;padding:20px 0;
+    border:0;background:transparent;
+  }
+  body.barnes-media-kit .media-analytics__card + .media-analytics__card {border-top:1px solid var(--media-mobile-rule);}
+  body.barnes-media-kit .media-analytics__card:first-child {padding-top:0;}
+  body.barnes-media-kit .media-analytics__card-media {position:relative;inset:auto;height:100%;min-height:144px;max-height:220px;}
+  body.barnes-media-kit .media-analytics__card-image {width:100%;height:100%;object-fit:cover;}
+  body.barnes-media-kit :is(.media-analytics__card-overlay,.media-analytics__card .media-analytics__badge) {display:none;}
+  body.barnes-media-kit .media-analytics__card-body {
+    position:static;inset:auto;display:flex;flex-direction:column;justify-content:center;
+    gap:8px!important;padding:0!important;min-width:0;
+  }
+  body.barnes-media-kit .media-analytics__card-title {
+    color:var(--home-primary)!important;margin:0;max-height:none;-webkit-line-clamp:4;
+    overflow-wrap:anywhere;text-overflow:clip;
+  }
+  /* The existing link gets the homepage text-action role in compact rows. */
+  body.barnes-media-kit .media-analytics__card .media-analytics__button {
+    position:static;display:inline-flex;align-items:center;align-self:flex-start;justify-content:flex-start;
+    width:max-content;max-width:100%;gap:12px;background:transparent!important;
+    color:var(--home-primary)!important;font-size:14px!important;font-weight:400!important;
+    line-height:1.2!important;min-height:44px!important;height:auto!important;
+    padding:8px 0!important;border:0;border-bottom:1px solid currentColor;
+  }
+  body.barnes-media-kit .media-analytics__card .media-analytics__button-icon {display:none;}
+  body.barnes-media-kit .media-analytics__card .media-analytics__button::before {content:"";position:absolute;inset:0;}
+  body.barnes-media-kit .media-analytics__card .media-analytics__button::after {
+    content:"";display:block;flex:0 0 20px;width:20px;height:12px;
+    background:currentColor;mask:var(--media-mobile-arrow) center/contain no-repeat;
+  }
+  body.barnes-media-kit .media-analytics__card:focus-within {outline:2px solid var(--home-brand);outline-offset:4px;}
+}
