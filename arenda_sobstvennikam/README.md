@@ -1,3 +1,7 @@
 # Лендинг — аренда для собственников
 
 Самостоятельный лендинг BARNES Moscow со своей страницей, ассетами, шрифтами и runtime-файлами.
+
+## Сетка и размеры текста по Медиа · 03.11.2026
+
+`media-reference.css` — общий scoped-контракт боковых полей и размеров шрифтов по [Медиа](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/media/#subscribe). Использует существующие CSS-роли кита BARN Estate, без новых зависимостей. [Рабочие исходники, контракт и проверки](https://github.com/daniilterekh-prog/barnes-sites/blob/main/main-site/pages/media-reference-2026-11-03/README.md). Проверены32ширины320–3840px для всех трёх страниц.

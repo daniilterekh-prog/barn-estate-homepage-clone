@@ -1,0 +1,105 @@
+/* Media reference, 2026-11-03. Source: /media/ kit/home-spacing.css,
+ * kit/home-typography.css, media-typography.css and hero-reference.css.
+ * Scoped contract: no changes to content, image layouts or interactions. */
+body.barnes-media-reference {
+ --reference-gutter:clamp(24px,calc(-26.66667px + 6.59722vw),100px);
+ --reference-hero-gutter:calc(-26.66667px + 6.59722vw);
+ --reference-heading:38px;--reference-lead:22px;--reference-lead-line:33px;
+ --reference-dialog:24px;--reference-action:17px;--reference-field:18px;--reference-eyebrow:14px;
+ font-synthesis:none;
+}
+/* A single inset per section; full-width backgrounds remain on the outer section. */
+body.barnes-media-reference :is(.base-container:not(.site-footer__inner),.about-company__inner,.catalog-consultation__inner,.owner-sale-services__slider) {
+ box-sizing:border-box!important;width:100%!important;max-width:1920px!important;
+ margin-inline:auto!important;padding-inline:var(--reference-gutter)!important;
+}
+body.barnes-media-reference :is(.about-company,.catalog-consultation) {padding-inline:0!important;}
+body.barnes-media-reference :is(.site-header__inner.base-container,.owner-sale-hero__inner.base-container,.ambassadors-hero__inner.base-container) {
+ padding-inline:var(--reference-hero-gutter)!important;
+}
+body.barnes-media-reference .owner-sale-services {
+ --owner-sale-services-gutter:var(--reference-gutter)!important;
+ --owner-rent-services-gutter:var(--reference-gutter)!important;
+}
+body.barnes-media-reference #why-barnes .be-section {padding-inline:var(--reference-gutter)!important;}
+body.barnes-media-reference .newsletter-cta {padding-inline:0!important;}
+body.barnes-media-reference .newsletter-cta__inner {
+ box-sizing:border-box!important;width:calc(100% - 2 * clamp(20px,5.2vw,100px))!important;
+ max-width:1920px!important;margin-inline:auto!important;padding-inline:0!important;
+}
+/* H1: Media hero. H2: Media section heading. Keep original colour/case and fonts. */
+body.barnes-media-reference :is(.owner-sale-hero__title,.ambassadors-hero__title) {
+ font-size:clamp(38px,4vw,58px)!important;line-height:1.05!important;font-weight:300!important;
+}
+body.barnes-media-reference :is(main h2,.newsletter-cta h2,.owner-sale-types__section-title,
+ .ambassadors-conditions__section-title,.catalog-consultation__mobile-title,.catalog-consultation__subtitle) {
+ font-size:var(--reference-heading)!important;line-height:1.2!important;font-weight:300!important;
+}
+body.barnes-media-reference .newsletter-cta h2 {line-height:1!important;letter-spacing:-.04em!important;}
+/* Descriptions, including revealed cards and dynamically selected directions. */
+body.barnes-media-reference :is(.owner-sale-hero__text,.ambassadors-hero__text,
+ .owner-sale-presentation__reveal-text,.owner-sale-presentation__caption,
+ .owner-sale-services__text,.owner-sale-services__text span,.about-company__intro,
+ .about-company__description,.owner-sale-stages__intro,.owner-sale-stages__item-text,
+ .owner-sale-exclusive__intro,.owner-sale-exclusive__text,.owner-sale-strategy__text,
+ .ambassadors-conditions__description,.ambassadors-advantages__text,.ambassadors-advantages__description,
+ .catalog-contact__subtitle,.catalog-consultation__lead,.catalog-consultation__mobile-lead,
+ .newsletter-cta__lead,.catalog-faq__answer,.catalog-faq__answer p,.bd-intro,
+ .bd-direction-description,.bd-label,.bd-words,.bd-price small,#why-barnes .be-body,#why-barnes .be-lead) {
+ font-size:var(--reference-lead)!important;line-height:var(--reference-lead-line)!important;font-weight:300!important;
+}
+body.barnes-media-reference :is(.owner-sale-hero__text,.ambassadors-hero__text) {line-height:1.28!important;}
+/* Compact card-title role from Media news cards. */
+body.barnes-media-reference :is(main h3,.ambassadors-conditions__title,
+ .ambassadors-advantages__card-title,.owner-sale-presentation__featured-title,
+ .owner-sale-types__title,.catalog-contact__card-title,#why-barnes h3) {
+ font-size:18px!important;line-height:1.35!important;font-weight:400!important;
+}
+/* Eyebrows and legal/meta text use distinct roles. */
+body.barnes-media-reference :is(.owner-rent-section-eyebrow,.owner-sale-section-eyebrow,
+ .partners-section-eyebrow,.bd-eyebrow,#why-barnes .be-eyebrow) {
+ font-size:var(--reference-eyebrow)!important;line-height:1.15!important;font-weight:400!important;
+}
+body.barnes-media-reference :is(.newsletter-form__note,.newsletter-form__note-link,
+ .catalog-contact__consent,.catalog-contact__consent-text,.feedback-modal__consent-text,
+ .feedback-modal__consent-link) {font-size:13px!important;line-height:18px!important;font-weight:300!important;}
+body.barnes-media-reference :is(.feedback-modal__title,.modal__title) {
+ font-size:var(--reference-dialog)!important;line-height:1.2!important;font-weight:400!important;
+}
+/* Primary CTA / field roles. Navigation and icon-only controls retain their size. */
+body.barnes-media-reference :is(.ui-button,.owner-sale-hero__button,.ambassadors-hero__button,
+ .newsletter-form__row>button,.catalog-contact__submit,.catalog-consultation__button,
+ .owner-sale-strategy__button,.bd-cta,.feedback-modal__submit,#why-barnes .be-cta) {
+ font-size:var(--reference-action)!important;line-height:1.1!important;font-weight:400!important;
+ max-width:100%;white-space:normal;
+}
+body.barnes-media-reference :is(.newsletter-form__row>input,.feedback-modal__input,
+ .catalog-contact__input,.catalog-contact__textarea,.catalog-consultation__input) {
+ font-size:var(--reference-field)!important;line-height:1.4!important;font-weight:300!important;
+ min-width:0;
+}
+body.barnes-media-reference :is(input,textarea)::placeholder {font-size:inherit;}
+@media(min-width:1441px) {
+ body.barnes-media-reference {--reference-heading:44px;--reference-action:19px;--reference-field:20px;}
+}
+@media(min-width:1921px) {
+ body.barnes-media-reference {--reference-gutter:0px;--reference-hero-gutter:0px;}
+}
+@media(max-width:1024px) {
+ body.barnes-media-reference {--reference-eyebrow:12px;--reference-dialog:20px;}
+ body.barnes-media-reference .newsletter-cta__inner {
+  width:100%!important;padding-inline:var(--reference-gutter)!important;
+ }
+}
+@media(max-width:768px) {
+ body.barnes-media-reference {--reference-hero-gutter:calc(8.94118px + 1.96078vw);}
+}
+@media(max-width:540px) {
+ body.barnes-media-reference {
+  --reference-gutter:22px;--reference-heading:22px;--reference-lead:15px;
+  --reference-lead-line:21px;--reference-action:18px;--reference-field:17px;
+ }
+ body.barnes-media-reference :is(.owner-sale-hero__title,.ambassadors-hero__title) {font-size:32px!important;}
+ body.barnes-media-reference .newsletter-cta h2 {line-height:1.2!important;}
+ body.barnes-media-reference .newsletter-cta__copy {padding-inline:0!important;}
+}
