@@ -1,0 +1,208 @@
+{
+  "base": "http://127.0.0.1:8921/katalog-nedvizhimosti/",
+  "cases": [
+    {
+      "width": 390,
+      "direction": "city",
+      "field": "Локация"
+    },
+    {
+      "width": 390,
+      "direction": "city",
+      "field": "Тип"
+    },
+    {
+      "width": 390,
+      "direction": "city",
+      "field": "Стоимость"
+    },
+    {
+      "width": 390,
+      "direction": "city",
+      "field": "Спальни"
+    },
+    {
+      "width": 390,
+      "direction": "country",
+      "field": "Шоссе"
+    },
+    {
+      "width": 390,
+      "direction": "country",
+      "field": "Тип"
+    },
+    {
+      "width": 390,
+      "direction": "country",
+      "field": "Стоимость"
+    },
+    {
+      "width": 390,
+      "direction": "country",
+      "field": "Площадь дома"
+    },
+    {
+      "width": 390,
+      "direction": "commercial",
+      "field": "Локация"
+    },
+    {
+      "width": 390,
+      "direction": "commercial",
+      "field": "Назначение"
+    },
+    {
+      "width": 390,
+      "direction": "commercial",
+      "field": "Стоимость / месяц"
+    },
+    {
+      "width": 390,
+      "direction": "commercial",
+      "field": "Площадь"
+    },
+    {
+      "width": 390,
+      "direction": "resort",
+      "field": "Регион"
+    },
+    {
+      "width": 390,
+      "direction": "resort",
+      "field": "Тип"
+    },
+    {
+      "width": 390,
+      "direction": "resort",
+      "field": "Стоимость"
+    },
+    {
+      "width": 390,
+      "direction": "resort",
+      "field": "Спальни"
+    },
+    {
+      "width": 390,
+      "direction": "international",
+      "field": "Страна"
+    },
+    {
+      "width": 390,
+      "direction": "international",
+      "field": "Тип"
+    },
+    {
+      "width": 390,
+      "direction": "international",
+      "field": "Стоимость"
+    },
+    {
+      "width": 390,
+      "direction": "international",
+      "field": "Спальни"
+    },
+    {
+      "width": 1440,
+      "direction": "city",
+      "field": "Локация"
+    },
+    {
+      "width": 1440,
+      "direction": "city",
+      "field": "Тип"
+    },
+    {
+      "width": 1440,
+      "direction": "city",
+      "field": "Стоимость"
+    },
+    {
+      "width": 1440,
+      "direction": "city",
+      "field": "Спальни"
+    },
+    {
+      "width": 1440,
+      "direction": "country",
+      "field": "Шоссе"
+    },
+    {
+      "width": 1440,
+      "direction": "country",
+      "field": "Тип"
+    },
+    {
+      "width": 1440,
+      "direction": "country",
+      "field": "Стоимость"
+    },
+    {
+      "width": 1440,
+      "direction": "country",
+      "field": "Площадь дома"
+    },
+    {
+      "width": 1440,
+      "direction": "commercial",
+      "field": "Локация"
+    },
+    {
+      "width": 1440,
+      "direction": "commercial",
+      "field": "Назначение"
+    },
+    {
+      "width": 1440,
+      "direction": "commercial",
+      "field": "Стоимость / месяц"
+    },
+    {
+      "width": 1440,
+      "direction": "commercial",
+      "field": "Площадь"
+    },
+    {
+      "width": 1440,
+      "direction": "resort",
+      "field": "Регион"
+    },
+    {
+      "width": 1440,
+      "direction": "resort",
+      "field": "Тип"
+    },
+    {
+      "width": 1440,
+      "direction": "resort",
+      "field": "Стоимость"
+    },
+    {
+      "width": 1440,
+      "direction": "resort",
+      "field": "Спальни"
+    },
+    {
+      "width": 1440,
+      "direction": "international",
+      "field": "Страна"
+    },
+    {
+      "width": 1440,
+      "direction": "international",
+      "field": "Тип"
+    },
+    {
+      "width": 1440,
+      "direction": "international",
+      "field": "Стоимость"
+    },
+    {
+      "width": 1440,
+      "direction": "international",
+      "field": "Спальни"
+    }
+  ],
+  "errors": [],
+  "axe": [],
+  "passed": true
+}
