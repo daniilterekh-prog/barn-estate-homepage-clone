@@ -31,7 +31,7 @@ body.barnes-home-typography.barnes-media-kit .media-hero__body {
 body.barnes-home-typography.barnes-media-kit .media-hero__copy {width:100%;max-width:925px;min-width:0;}
 body.barnes-home-typography.barnes-media-kit .media-hero__title {
  font-size:clamp(48px,5.2vw,75px)!important;line-height:.98!important;font-weight:300!important;
- margin:0!important;letter-spacing:normal!important;text-transform:none!important;color:#fff!important;
+ margin:0!important;letter-spacing:normal!important;text-transform:uppercase!important;color:#fff!important;
  max-width:none!important;
 }
 body.barnes-home-typography.barnes-media-kit .media-hero__text {

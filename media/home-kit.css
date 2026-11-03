@@ -11,7 +11,7 @@ body.barnes-media-kit :is(.media-hero__title,.media-weekly__title,.media-market_
   font-weight:300!important;
   line-height:1.2!important;
   letter-spacing:normal!important;
-  text-transform:none!important;
+  text-transform:uppercase!important;
   color:var(--home-primary)!important;
 }
 body.barnes-media-kit :is(.media-hero__title,.media-cta-banner__title) {color:#fff!important;}

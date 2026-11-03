@@ -9,7 +9,7 @@ body.barnes-media-kit .media-cta-banner .home-section-eyebrow {color:rgba(255,25
 /* Body/card roles: regular article titles; light descriptions and quiet metadata. */
 body.barnes-media-kit :is(.media-intents__title,.media-weekly__card-title,.media-fresh__card-title) {
  font-size:18px!important;line-height:24.3px!important;font-weight:400!important;
- color:#1e1e1e!important;letter-spacing:normal!important;text-transform:none!important;
+ color:#1e1e1e!important;letter-spacing:normal!important;text-transform:uppercase!important;
 }
 body.barnes-media-kit .media-intents__text {font-size:13px!important;line-height:18px!important;font-weight:300!important;color:#656462!important;}
 body.barnes-media-kit .media-weekly__featured-title {font-size:24px!important;line-height:28.8px!important;font-weight:400!important;color:#1e1e1e!important;}
@@ -23,8 +23,8 @@ body.barnes-media-kit :is(.media-weekly__date,.media-fresh__date,.media-analytic
 body.barnes-media-kit .media-market__featured-badge {
  font-size:14px!important;line-height:16.1px!important;font-weight:400!important;letter-spacing:.12em!important;color:#4f4d49!important;text-transform:uppercase;
 }
-body.barnes-media-kit .media-analytics__featured-title {font-size:30px!important;line-height:36px!important;font-weight:400!important;color:#fff!important;letter-spacing:normal!important;text-transform:none!important;}
-body.barnes-media-kit .media-analytics__card-title {font-size:18px!important;line-height:24.3px!important;font-weight:400!important;color:#fff!important;letter-spacing:normal!important;text-transform:none!important;}
+body.barnes-media-kit .media-analytics__featured-title {font-size:30px!important;line-height:36px!important;font-weight:400!important;color:#fff!important;letter-spacing:normal!important;text-transform:uppercase!important;}
+body.barnes-media-kit .media-analytics__card-title {font-size:18px!important;line-height:24.3px!important;font-weight:400!important;color:#fff!important;letter-spacing:normal!important;text-transform:uppercase!important;}
 /* Use the text-action role, rather than a mixture of 15/16px light labels. */
 body.barnes-media-kit :is(.media-intents__action,.media-weekly__action,.media-fresh__action,.media-market__featured-action,.team-member-card__link) {
  box-sizing:border-box;display:inline-flex!important;align-items:center;align-self:flex-start;
@@ -56,3 +56,6 @@ body.barnes-media-kit .media-analytics__card-body {gap:24px!important;}
 
 /* Removed by user request; hide before hydration to avoid a flash or blank gap. */
 .media-subscribe { display: none !important; }
+
+/* User-approved Media typography: every heading, including cards and dialogs. */
+body.barnes-media-kit :is(h1,h2,h3,h4,h5,h6) {text-transform:uppercase!important;}
