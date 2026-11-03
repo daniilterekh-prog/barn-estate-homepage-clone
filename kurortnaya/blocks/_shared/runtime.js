@@ -1,8 +1,8 @@
-import '../../js/catalog-filters.js?v=20261103-home-quiz-21';
-import '../../js/start-sales-cards.js?v=20261103-home-quiz-21';
-import '../../js/header-layout.js?v=20261103-home-quiz-21';
-import '../../js/faq.js?v=20261103-home-quiz-21';
-import '../../js/expert-quiz.js?v=20261103-home-quiz-21';
+import '../../js/catalog-filters.js?v=20261103-controls-row-22';
+import '../../js/start-sales-cards.js?v=20261103-controls-row-22';
+import '../../js/header-layout.js?v=20261103-controls-row-22';
+import '../../js/faq.js?v=20261103-controls-row-22';
+import '../../js/expert-quiz.js?v=20261103-controls-row-22';
 /** Reusable interactions. Production data arrives through options or bubbling events. */
 export async function mountNode(host, folder, options = {}) {
   const base = new URL(folder, location.href);
