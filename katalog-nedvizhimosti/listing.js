@@ -14,21 +14,28 @@
  function configure(direction,deal){
   currentDirection=direction;document.body.dataset.direction=direction;
   window.BarnesCatalogConfigureContext(direction,deal);
+  window.BarnesCatalogUpdateDirections($('#catalog-direction-select'),deal);
   const buttons=modeButtons();
   buttons[0].textContent='Покупка';buttons[1].textContent='Аренда';
   $('.catalog-mode-switch').setAttribute('aria-label','Сделка');
   const available=profile().mode==='market'&&deal!=='rent';document.body.dataset.marketAvailable=String(available);$('.catalog-market').hidden=!available;
  }
- function setDirection(direction){
-  if(direction===currentDirection)return;
-  const p=profiles[direction];query='';$('#catalog-search').value='';limit=6;
-  configure(direction,p.defaultDeal||'buy');
-  window.BarnesFilters.patch({...blank(),market:p.defaultMarket||'secondary',deal:p.defaultDeal||'buy'});
+ function setDirection(direction,deal){
+  const p=profiles[direction];
+  if(!p)return;
+  deal=deal||(effectiveDeal()==='rent'?'rent':p.defaultDeal||'buy');
+  if(!window.BarnesCatalogDirectionAvailable(direction,deal)||direction===currentDirection)return;
+  query='';$('#catalog-search').value='';limit=6;
+  configure(direction,deal);
+  window.BarnesFilters.patch({...blank(),market:p.defaultMarket||'secondary',deal});
   $('[data-announcement]').textContent=`Департамент: ${p.label}. Фильтры обновлены.`;
  }
  function readURL(){
-  const params=new URLSearchParams(location.search),direction=profiles[params.get('direction')]?params.get('direction'):'city',p=profiles[direction];
-  const deal=['buy','rent'].includes(params.get('deal'))?params.get('deal'):p.defaultDeal||'buy';
+  const params=new URLSearchParams(location.search);
+  let direction=profiles[params.get('direction')]?params.get('direction'):'city';
+  const deal=['buy','rent'].includes(params.get('deal'))?params.get('deal'):profiles[direction].defaultDeal||'buy';
+  if(!window.BarnesCatalogDirectionAvailable(direction,deal))direction='city';
+  const p=profiles[direction];
   const fields={...blank(),deal,market:params.get('market')==='secondary'?'secondary':p.defaultMarket||'new-build'};
   configure(direction,deal);
   const configs=window.BarnesCatalogQuickConfig;
@@ -132,7 +139,9 @@
  document.addEventListener('barnes:filters-apply',()=>{limit=6;if(objects.length)render();});
  $('#catalog-direction-select').addEventListener('change',event=>setDirection(event.target.value));
  modeButtons().forEach((button,i)=>button.addEventListener('click',()=>{
-  const deal=i?'rent':'buy';configure(currentDirection,deal);window.BarnesFilters.patch({deal,priceRanges:[],priceMin:'',priceMax:''});
+  const deal=i?'rent':'buy';
+  if(!window.BarnesCatalogDirectionAvailable(currentDirection,deal)){setDirection('city',deal);return;}
+  configure(currentDirection,deal);window.BarnesFilters.patch({deal,priceRanges:[],priceMin:'',priceMax:''});
  }));
  $('#catalog-market-select').addEventListener('change',event=>window.BarnesFilters.patch({market:event.target.value}));
  $('.catalog-grid__sort select').addEventListener('change',event=>{sort=event.target.value;if(objects.length)render();});

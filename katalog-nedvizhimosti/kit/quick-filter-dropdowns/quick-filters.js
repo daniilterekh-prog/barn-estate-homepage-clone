@@ -139,6 +139,10 @@
     close(false);
     var config = typeof index === 'number' ? configs[index] : index;
     if (!config) return;
+    if (config.select) {
+      var available = Array.from(config.select.options).filter(function (option) { return !option.hidden && !option.disabled; });
+      config = Object.assign({},config,{choices:available.map(function (option) { return option.textContent; }),values:available.map(function (option) { return option.value; })});
+    }
     activeButton = button;
     savedPopupInert = popup.inert;
     popup.inert = false; // The map isolates page siblings; this shared popup belongs to its active control.

@@ -286,3 +286,9 @@ Pixelmatch используется только для проверки, из �
 «Каталог недвижимости» выведен обычным регистром. H1 перенесён со шкалы заголовков секций 22/38/44px на контракт узлов: 32px до 540px, от 541px — clamp(38px,4vw,58px). Насыщенность 300, line-height 1.05, letter-spacing −0.045em. Примеры: 38px на 768px; 40,96px на 1024px; 51,2px на 1280px; 57,6px на 1440px; 58px от 1450px. Обновлена [ведомость шрифтов](FONT-SIZES.md). Отступы и остальные текстовые роли сохранены.
 
 [Сравнение](verification/node-h1/h1.json) с [городской](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/gorodskaya-nedvizhimost/) и [загородной](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/zagorodnaya-nedvizhimost/): 14 ширин 320–3840px, одинаковые размеры/интерлиньяж/насыщенность/разрядка, отсутствие капса, обрезания/пересечений. [Общие проверки кита](verification/node-h1/kit-contracts.json), [axe](verification/node-h1/kit-accessibility.json), [типографика 12 ширин и 24 открытых состояния](verification/node-h1/typography.json) прошли. Снимки: [390px](verification/node-h1/h1-390.png), [1440px](verification/node-h1/h1-1440.png), [1920px](verification/node-h1/h1-1920.png). Новых зависимостей нет.
+
+## Департаменты аренды — 03.11.2026
+
+В аренде доступны Москва, Загородная и Коммерческая. Курортная и Зарубежная остаются в покупке; ограничения заданы в профилях и одинаково применяются к основному dropdown и карте. При переключении этих двух направлений на аренду и при прямом URL с недоступным сочетанием выбирается Москва. Переход между доступными департаментами сохраняет аренду.
+
+Использован существующий dropdown без новых библиотек. Проверка `node katalog-nedvizhimosti/tools/check_catalog_rental_departments.cjs`: 320/390/1440 px, все пять прямых rental URL, состав списков, выбор в карте, сохранение аренды, возврат пяти направлений при покупке и переключение недоступных направлений. [Отчёт](verification/rental-departments/rental-departments.json).

@@ -8,8 +8,18 @@
   city:{label:'Москва',mode:'market',defaultMarket:'new-build',location:'Локация',locations:['Москва'],types:['flat','apartment','new_build','penthouse','townhouse'],bedrooms:true,rooms:true},
   country:{label:'Загородная',mode:'deal',defaultDeal:'buy',location:'Шоссе',locations:['Ленинградское шоссе','Киевское шоссе','Рублёво-Успенское шоссе','Можайское шоссе'],types:['house','townhouse','land'],areaTitle:'Площадь дома',land:true},
   commercial:{label:'Коммерческая',mode:'deal',defaultDeal:'rent',location:'Локация',locations:['Москва'],types:['office','free-purpose','retail','warehouse'],typeTitle:'Назначение',areaTitle:'Площадь'},
-  resort:{label:'Курортная',mode:'market',defaultMarket:'new-build',location:'Регион',locations:['Сочи','Анапа','Алтай','Архыз'],types:['apartment','flat','house','villa'],bedrooms:true,rooms:true},
-  international:{label:'Зарубежная',mode:'market',defaultMarket:'new-build',location:'Страна',locations:['Турция','ОАЭ','Оман','Армения','Франция','Марокко','Португалия'],types:['apartment','flat','house','villa','penthouse'],bedrooms:true,rooms:true}
+  resort:{deals:['buy'],label:'Курортная',mode:'market',defaultMarket:'new-build',location:'Регион',locations:['Сочи','Анапа','Алтай','Архыз'],types:['apartment','flat','house','villa'],bedrooms:true,rooms:true},
+  international:{deals:['buy'],label:'Зарубежная',mode:'market',defaultMarket:'new-build',location:'Страна',locations:['Турция','ОАЭ','Оман','Армения','Франция','Марокко','Португалия'],types:['apartment','flat','house','villa','penthouse'],bedrooms:true,rooms:true}
+ };
+ window.BarnesCatalogDirectionAvailable=(direction,deal)=>{
+  const profile=window.BarnesCatalogProfiles[direction];
+  return !!profile&&(!profile.deals||profile.deals.includes(deal));
+ };
+ window.BarnesCatalogUpdateDirections=(select,deal)=>{
+  for(const option of select.options){
+   const available=window.BarnesCatalogDirectionAvailable(option.value,deal);
+   option.hidden=!available;option.disabled=!available;
+  }
  };
  window.BarnesCatalogTypes=types;
  window.BarnesCatalogConfigs=(key,deal)=>{

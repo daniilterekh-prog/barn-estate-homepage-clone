@@ -1,0 +1,112 @@
+{
+  "passed": true,
+  "base": "http://127.0.0.1:8921/katalog-nedvizhimosti/",
+  "checks": [
+    {
+      "width": 320,
+      "scenario": "rental URL",
+      "requested": "city",
+      "direction": "city"
+    },
+    {
+      "width": 320,
+      "scenario": "rental URL",
+      "requested": "country",
+      "direction": "country"
+    },
+    {
+      "width": 320,
+      "scenario": "rental URL",
+      "requested": "commercial",
+      "direction": "commercial"
+    },
+    {
+      "width": 320,
+      "scenario": "rental URL",
+      "requested": "resort",
+      "direction": "city"
+    },
+    {
+      "width": 320,
+      "scenario": "rental URL",
+      "requested": "international",
+      "direction": "city"
+    },
+    {
+      "width": 320,
+      "scenario": "dropdown, map, buy restoration, unsupported rental transitions",
+      "passed": true
+    },
+    {
+      "width": 390,
+      "scenario": "rental URL",
+      "requested": "city",
+      "direction": "city"
+    },
+    {
+      "width": 390,
+      "scenario": "rental URL",
+      "requested": "country",
+      "direction": "country"
+    },
+    {
+      "width": 390,
+      "scenario": "rental URL",
+      "requested": "commercial",
+      "direction": "commercial"
+    },
+    {
+      "width": 390,
+      "scenario": "rental URL",
+      "requested": "resort",
+      "direction": "city"
+    },
+    {
+      "width": 390,
+      "scenario": "rental URL",
+      "requested": "international",
+      "direction": "city"
+    },
+    {
+      "width": 390,
+      "scenario": "dropdown, map, buy restoration, unsupported rental transitions",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "scenario": "rental URL",
+      "requested": "city",
+      "direction": "city"
+    },
+    {
+      "width": 1440,
+      "scenario": "rental URL",
+      "requested": "country",
+      "direction": "country"
+    },
+    {
+      "width": 1440,
+      "scenario": "rental URL",
+      "requested": "commercial",
+      "direction": "commercial"
+    },
+    {
+      "width": 1440,
+      "scenario": "rental URL",
+      "requested": "resort",
+      "direction": "city"
+    },
+    {
+      "width": 1440,
+      "scenario": "rental URL",
+      "requested": "international",
+      "direction": "city"
+    },
+    {
+      "width": 1440,
+      "scenario": "dropdown, map, buy restoration, unsupported rental transitions",
+      "passed": true
+    }
+  ],
+  "errors": []
+}

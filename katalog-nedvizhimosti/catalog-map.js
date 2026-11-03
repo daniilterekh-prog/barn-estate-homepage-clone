@@ -19,6 +19,7 @@
  function expand(value){panel.classList.toggle('map-browser__panel--expanded',value);handle.setAttribute('aria-expanded',String(value));handle.setAttribute('aria-label',value?'Свернуть список объектов':'Развернуть список объектов');}
  function render(snapshot=api.getSnapshot()){
   trigger.disabled=!snapshot.ready;
+  if(snapshot.ready)window.BarnesCatalogUpdateDirections(direction,snapshot.filters.deal);
   if(!snapshot.ready||dialog.hidden)return;
   const profile=profiles[snapshot.direction],state=snapshot.filters;
   $('.map-browser__heading').textContent=`Найдено объектов: ${snapshot.items.length}`;
