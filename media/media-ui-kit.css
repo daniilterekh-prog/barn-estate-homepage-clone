@@ -34,3 +34,21 @@ body.barnes-media-kit :is(h1,h2,h3,h4,h5,h6):not(.media-hero__title) {text-trans
 
 /* Keep every category reachable when its intrinsic row is wider than a tablet. */
 body.barnes-media-kit :is(.media-fresh__filters,.media-analytics__filters) {min-width:0;max-width:100%;overflow-x:auto;}
+
+/* Quiet architectural Moscow image, with a continuous text-protection mask. */
+body.barnes-media-kit .media-market__featured-media::after {
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(90deg,rgba(16,19,18,.82) 0%,rgba(16,19,18,.72) 24%,rgba(16,19,18,.48) 45%,rgba(16,19,18,.18) 66%,rgba(16,19,18,0) 90%);
+}
+body.barnes-media-kit .media-market__featured-content {background:transparent!important;}
+body.barnes-media-kit .media-market__featured :is(.media-market__featured-name,.media-market__featured-text,.media-market__featured-action) {color:#fff!important;}
+body.barnes-media-kit .media-market__featured .media-market__featured-badge {color:rgba(255,255,255,.8)!important;}
+
+/* Page-specific user override. Layered !important rules also cap shared-kit
+ * controls, teleported dialogs and generated pseudo-elements at every width. */
+@layer media-radius-limit {
+  body.barnes-media-kit,
+  body.barnes-media-kit *,
+  body.barnes-media-kit *::before,
+  body.barnes-media-kit *::after {border-radius:1px!important;}
+}
