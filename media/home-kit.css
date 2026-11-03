@@ -5,24 +5,8 @@ body.barnes-media-kit :is(.media-intents,.media-weekly,.media-market,.media-fres
   margin-block:0!important;
 }
 body.barnes-media-kit .newsletter-cta h2,
-body.barnes-media-kit :is(.media-hero__title,.media-weekly__title,.media-market__title,.media-fresh__title,.media-analytics__title,.media-cta-banner__title,.media-library__title,.media-subscribe__title) {
-  margin:0!important;
-  font-size:var(--home-heading)!important;
-  font-weight:300!important;
-  line-height:1.2!important;
-  letter-spacing:normal!important;
-  text-transform:uppercase!important;
-  color:var(--home-primary)!important;
-}
-body.barnes-media-kit :is(.media-hero__title,.media-cta-banner__title) {color:#fff!important;}
-body.barnes-media-kit :is(.media-hero__text,.media-library__text,.media-subscribe__text) {
-  font-size:var(--home-lead)!important;
-  font-weight:300!important;
-  line-height:var(--home-lead-line)!important;
-  letter-spacing:normal!important;
-  margin:var(--home-copy-gap) 0 0!important;
-  color:var(--home-secondary)!important;
-}
+body.barnes-media-kit :is(.media-weekly__title,.media-market__title,.media-fresh__title,.media-analytics__title,.media-cta-banner__title,.media-library__title) {margin:0!important;}
+body.barnes-media-kit :is(.media-hero__text,.media-library__text,.media-subscribe__text) {margin:var(--home-copy-gap) 0 0!important;}
 body.barnes-media-kit .media-hero__text {color:#fff!important;}
 body.barnes-media-kit .media-hero__inner {padding-bottom:var(--home-section-space)!important;}
 body.barnes-media-kit :is(.media-weekly__inner,.media-market__inner) {gap:var(--home-heading-content)!important;}
@@ -55,9 +39,6 @@ body.barnes-media-kit :is(.media-fresh__filter,.media-analytics__filter) {
   min-height:44px!important;
   border-radius:1px!important;
   padding:10px 16px!important;
-  font-size:16px!important;
-  font-weight:400!important;
-  line-height:1.2!important;
 }
 body.barnes-media-kit :is(.media-fresh__filter--active,.media-analytics__filter--active) {color:#8b1d25!important;border-color:#8b1d25!important;}
 body.barnes-media-kit :is(.media-subscribe__note,.media-subscribe__note a,.feedback-modal__consent-text,.feedback-modal__consent-link) {

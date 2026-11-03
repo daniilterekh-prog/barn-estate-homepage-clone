@@ -1,0 +1,69 @@
+/* Media typography: explicit aliases to approved homepage components.
+ * No editorial-only type scale. Geometry and the approved hero are separate.
+ * Sources and exact selector comparisons: TYPOGRAPHY.md and typography-roles.json.
+ */
+body.barnes-media-kit {font-synthesis:none;--media-filter-label:16px;}
+/* Homepage services H2. News and team retain their homepage leading of 1.0. */
+body.barnes-media-kit .newsletter-cta h2,
+body.barnes-media-kit :is(.media-weekly__title,.media-market__title,.media-fresh__title,.media-analytics__title,.media-cta-banner__title,.media-library__title,.media-market__featured-name) {
+ font-size:var(--home-heading)!important;font-weight:300!important;line-height:1.2!important;
+ color:var(--home-primary)!important;letter-spacing:normal!important;
+}
+body.barnes-media-kit :is(.media-weekly__title,.media-fresh__title) {line-height:1!important;}
+body.barnes-media-kit .newsletter-cta h2 {letter-spacing:-.04em!important;line-height:1!important;}
+@media(max-width:540px) {body.barnes-media-kit .newsletter-cta h2 {line-height:1.2!important;}}
+/* White variants use the homepage's image-card palette, preserving contrast. */
+body.barnes-media-kit .media-cta-banner__title {color:#fff!important;}
+body.barnes-media-kit .media-cta-banner .home-section-eyebrow {color:rgba(255,255,255,.8)!important;}
+/* All article and intent titles use the homepage news-card heading, including
+ * the previously independent 24/30px featured titles. */
+body.barnes-media-kit :is(.media-intents__title,.media-weekly__featured-title,.media-weekly__card-title,.media-fresh__card-title,.media-analytics__featured-title,.media-analytics__card-title) {
+ font-size:18px!important;font-weight:400!important;line-height:1.35!important;
+ letter-spacing:normal!important;color:var(--home-primary)!important;
+}
+body.barnes-media-kit :is(.media-analytics__featured-title,.media-analytics__card-title) {color:#fff!important;}
+/* Homepage description, legal-note and author-metadata roles. */
+body.barnes-media-kit :is(.media-market__featured-text,.media-library__text) {
+ font-size:var(--home-lead)!important;font-weight:300!important;line-height:var(--home-lead-line)!important;
+ color:var(--home-secondary)!important;letter-spacing:normal!important;
+}
+body.barnes-media-kit :is(.media-intents__text,.media-weekly__date,.media-fresh__date,.media-analytics__date) {
+ font-size:13px!important;font-weight:300!important;line-height:18px!important;
+ color:var(--home-muted)!important;letter-spacing:normal!important;text-transform:none!important;
+}
+body.barnes-media-kit :is(.media-weekly__badge,.media-fresh__badge,.media-analytics__badge,.media-market__item-count) {
+ font-size:13px!important;font-weight:400!important;line-height:18px!important;
+ color:var(--home-muted)!important;letter-spacing:normal!important;text-transform:uppercase!important;
+}
+body.barnes-media-kit .media-market__featured-badge {
+ font-size:14px!important;font-weight:400!important;line-height:16.1px!important;
+ color:var(--home-secondary)!important;letter-spacing:.12em!important;
+}
+/* Compact homepage direction selector. The requested light weight of the
+ * category filters is the homepage filter-label role, not a new 16/19.2 style. */
+body.barnes-media-kit .media-market__item-name {
+ font-size:18px!important;font-weight:400!important;line-height:1.2!important;
+ color:var(--home-primary)!important;letter-spacing:normal!important;
+}
+body.barnes-media-kit :is(.media-fresh__filter,.media-analytics__filter) {
+ font-size:var(--media-filter-label)!important;font-weight:300!important;line-height:1.4!important;
+ color:var(--home-primary)!important;letter-spacing:normal!important;text-transform:none!important;
+}
+body.barnes-media-kit :is(.media-fresh__filter--active,.media-analytics__filter--active) {color:var(--home-brand)!important;}
+/* Exact homepage news links: 14px on both phone and desktop, no tracking.
+ * The news overview link alone has the homepage .12em brand-link role. */
+body.barnes-media-kit :is(.media-intents__action,.media-weekly__action,.media-fresh__action,.media-market__featured-action,.team-member-card__link) {
+ font-size:14px!important;font-weight:400!important;line-height:1.2!important;
+ color:var(--home-primary)!important;letter-spacing:normal!important;
+}
+body.barnes-media-kit .team-member-card__link {color:#fff!important;}
+body.barnes-media-kit .ui-more-link__label {
+ font-size:14px!important;font-weight:400!important;line-height:1.2!important;
+ color:var(--home-brand)!important;letter-spacing:.12em!important;
+}
+@media(max-width:1024px) {
+ body.barnes-media-kit .media-market__featured-badge {font-size:12px!important;line-height:14.4px!important;}
+}
+
+@media(max-width:540px) {body.barnes-media-kit {--media-filter-label:14px;}}
+@media(min-width:1441px) {body.barnes-media-kit {--media-filter-label:18px;}}
