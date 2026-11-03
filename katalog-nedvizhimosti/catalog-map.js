@@ -6,6 +6,7 @@
  dialog.id='catalog-map-dialog';document.body.append(dialog);trigger.setAttribute('aria-controls',dialog.id);
  const $=selector=>dialog.querySelector(selector),panel=$('.map-browser__panel'),handle=$('.map-browser__handle');
  const query=$('input[type=search]'),direction=$('[data-map-direction]'),sort=$('[data-map-sort]'),list=$('.map-browser__list');
+ const market=$('[data-map-market]');
  const modes=[...dialog.querySelectorAll('[data-map-mode]')],profiles=window.BarnesCatalogProfiles;
  for(const [value,profile] of Object.entries(profiles)){const option=document.createElement('option');option.value=value;option.textContent=profile.label;direction.append(option);}
  sort.replaceChildren(...[...document.querySelector('.catalog-grid__sort select').options].map(option=>option.cloneNode(true)));
@@ -19,11 +20,12 @@
  function render(snapshot=api.getSnapshot()){
   trigger.disabled=!snapshot.ready;
   if(!snapshot.ready||dialog.hidden)return;
-  const profile=profiles[snapshot.direction],deal=profile.mode==='deal',state=snapshot.filters;
+  const profile=profiles[snapshot.direction],state=snapshot.filters;
   $('.map-browser__heading').textContent=`Найдено объектов: ${snapshot.items.length}`;
   direction.value=snapshot.direction;if(query.value!==snapshot.query)query.value=snapshot.query;sort.value=snapshot.sort;
-  $('.map-browser__market').setAttribute('aria-label',deal?'Сделка':'Рынок недвижимости');
-  modes.forEach((button,index)=>{button.textContent=deal?(index?'Снять':'Купить'):(index?'Вторичная':'Новостройки');button.setAttribute('aria-pressed',String(deal?(state.deal||profile.defaultDeal)===(index?'rent':'buy'):state.market===(index?'secondary':'new-build')));});
+  $('.map-browser__market').setAttribute('aria-label','Сделка');
+  market.value=state.market;market.dispatchEvent(new Event('input'));market.closest('label').hidden=profile.mode!=='market'||state.deal==='rent';
+  modes.forEach((button,index)=>{button.textContent=index?'Аренда':'Покупка';button.setAttribute('aria-pressed',String((state.deal||profile.defaultDeal||'buy')===(index?'rent':'buy')));});
   $('.catalog-map-favorites').hidden=!snapshot.onlyFavorites;
   list.replaceChildren(...snapshot.items.map(item=>{
    const card=document.createElement('article'),link=document.createElement('a'),image=document.createElement('img'),title=document.createElement('h3'),address=document.createElement('address'),price=document.createElement('p');
@@ -52,6 +54,7 @@
  $('[data-map-zoom=in]').addEventListener('click',()=>setZoom(zoom+.25));$('[data-map-zoom=out]').addEventListener('click',()=>setZoom(zoom-.25));
  handle.addEventListener('click',()=>expand(handle.getAttribute('aria-expanded')!=='true'));
  query.addEventListener('focus',()=>{if(innerWidth<=540)expand(true);});query.addEventListener('input',()=>api.setQuery(query.value));
+ market.addEventListener('change',()=>api.setMarket(market.value));
  direction.addEventListener('change',()=>api.setDirection(direction.value));modes.forEach((button,index)=>button.addEventListener('click',()=>api.setMode(index)));
  sort.addEventListener('change',()=>api.setSort(sort.value));$('.map-browser__reset').addEventListener('click',()=>api.reset());
  document.addEventListener('barn:catalog-results',event=>render(event.detail));

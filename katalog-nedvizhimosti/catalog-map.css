@@ -27,3 +27,6 @@ html body.catalog-listing-page .catalog-map-trigger:disabled{opacity:.45;cursor:
  .catalog-map-browser .map-browser__panel--expanded{height:min(85dvh,calc(100dvh - 104px));max-height:min(85dvh,calc(100dvh - 104px))}
  .catalog-map-browser:has(.map-browser__panel--expanded) .map-browser__notice{display:none}
 }
+
+html body.catalog-listing-page .catalog-map-trigger svg{display:block;align-self:center;transform:translateY(-1px)}
+.catalog-map-browser .catalog-map-market[hidden]{display:none!important}

@@ -15,8 +15,9 @@
   currentDirection=direction;document.body.dataset.direction=direction;
   window.BarnesCatalogConfigureContext(direction,deal);
   const buttons=modeButtons();
-  buttons[0].textContent=profile().mode==='deal'?'Купить':'Новостройки';buttons[1].textContent=profile().mode==='deal'?'Снять':'Вторичная';
-  $('.catalog-mode-switch').setAttribute('aria-label',profile().mode==='deal'?'Сделка':'Рынок недвижимости');
+  buttons[0].textContent='Покупка';buttons[1].textContent='Аренда';
+  $('.catalog-mode-switch').setAttribute('aria-label','Сделка');
+  const available=profile().mode==='market'&&deal!=='rent';document.body.dataset.marketAvailable=String(available);$('.catalog-market').hidden=!available;
  }
  function setDirection(direction){
   if(direction===currentDirection)return;
@@ -48,7 +49,7 @@
  function writeURL(){
   const params=new URLSearchParams(),s=state();params.set('direction',currentDirection);
   if(profile().mode==='market'&&s.market==='secondary')params.set('market','secondary');
-  if(profile().mode==='deal')params.set('deal',effectiveDeal());
+  params.set('deal',effectiveDeal());
   for(const key of arrayKeys)for(const value of s[key]||[])params.append(key,value);
   for(const key of [...numericKeys,'bedrooms'])if(s[key])params.set(key,s[key]);
   if(query)params.set('q',query);if(sort!=='relevance')params.set('sort',sort);if(onlyFavorites)params.set('favorites','1');
@@ -66,8 +67,8 @@
  }
  function matches(item,s){
   if(item.direction!==currentDirection)return false;
-  if(profile().mode==='market'&&item.market!==s.market)return false;
-  if(profile().mode==='deal'&&item.deal!==effectiveDeal())return false;
+  if(item.deal!==effectiveDeal())return false;
+  if(profile().mode==='market'&&effectiveDeal()==='buy'&&item.market!==s.market)return false;
   if(onlyFavorites&&!favorites.includes(item.id))return false;
   for(const key of ['directions','propertyTypes','brandFlags'])if(s[key]?.length&&!s[key].some(value=>item[key]?.includes(value)))return false;
   if(s.priceRanges?.length&&!s.priceRanges.some(value=>rangeMatch(item.price,value)))return false;
@@ -114,8 +115,9 @@
   if(key)visible.sort((a,b)=>a[key]==null?(b[key]==null?0:1):b[key]==null?-1:order*(a[key]-b[key]));
   list.replaceChildren(...visible.slice(0,limit).map(card));list.setAttribute('aria-busy','false');
   $('#catalog-direction-select').value=currentDirection;$('#catalog-direction-select').dispatchEvent(new Event('input'));
-  modeButtons().forEach((button,i)=>{const active=profile().mode==='deal'?effectiveDeal()===(i?'rent':'buy'):s.market===(i?'secondary':'new-build');button.classList.toggle('is-active',active);button.setAttribute('aria-pressed',String(active));});
-  const n=visible.length,word=profile().mode==='market'&&s.market==='new-build'?'проект':'объект';
+  modeButtons().forEach((button,i)=>{const active=effectiveDeal()===(i?'rent':'buy');button.classList.toggle('is-active',active);button.setAttribute('aria-pressed',String(active));});
+  $('#catalog-market-select').value=s.market;$('#catalog-market-select').dispatchEvent(new Event('input'));
+  const n=visible.length,word=profile().mode==='market'&&effectiveDeal()==='buy'&&s.market==='new-build'?'проект':'объект';
   $('#results-count').textContent=`${n} ${n%100>=11&&n%100<=14?word+'ов':n%10===1?word:n%10>=2&&n%10<=4?word+'а':word+'ов'}`;
   $('.catalog-empty').hidden=n>0;$('.catalog-grid__footer').hidden=!n;$('[data-more]').hidden=limit>=n;$('[data-progress]').textContent=`Показано ${Math.min(limit,n)} из ${n}`;
   $('[data-reset]').hidden=!(query||onlyFavorites||[...arrayKeys,...numericKeys,'bedrooms'].some(key=>s[key]?.length));
@@ -131,9 +133,9 @@
  document.addEventListener('barnes:filters-apply',()=>{limit=6;if(objects.length)render();});
  $('#catalog-direction-select').addEventListener('change',event=>setDirection(event.target.value));
  modeButtons().forEach((button,i)=>button.addEventListener('click',()=>{
-  if(profile().mode==='deal'){const deal=i?'rent':'buy';window.BarnesCatalogConfigureContext(currentDirection,deal);window.BarnesFilters.patch({deal,priceRanges:[],priceMin:'',priceMax:''});}
-  else window.BarnesFilters.patch({market:i?'secondary':'new-build'});
+  const deal=i?'rent':'buy';configure(currentDirection,deal);window.BarnesFilters.patch({deal,priceRanges:[],priceMin:'',priceMax:''});
  }));
+ $('#catalog-market-select').addEventListener('change',event=>window.BarnesFilters.patch({market:event.target.value}));
  $('.catalog-grid__sort select').addEventListener('change',event=>{sort=event.target.value;if(objects.length)render();});
  $('#catalog-search').addEventListener('input',event=>{query=event.target.value;limit=6;render();});$('#catalog-search').addEventListener('keydown',event=>{if(event.key==='Enter')$('#results').focus();});
  document.querySelectorAll('[data-reset],[data-reset-empty]').forEach(button=>button.addEventListener('click',reset));
@@ -143,6 +145,7 @@
   getSnapshot:()=>({...resultSnapshot,items:resultSnapshot.items.slice()}),
   setQuery(value){query=String(value);$('#catalog-search').value=query;limit=6;render();},
   setDirection(value){if(profiles[value])setDirection(value);},
+  setMarket(value){if(['new-build','secondary'].includes(value))window.BarnesFilters.patch({market:value});},
   setMode(index){modeButtons()[index===1?1:0].click();},
   setSort(value){const select=$('.catalog-grid__sort select');if([...select.options].some(option=>option.value===value)){select.value=value;select.dispatchEvent(new Event('change',{bubbles:true}));}},
   reset

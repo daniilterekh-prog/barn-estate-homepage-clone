@@ -1,0 +1,355 @@
+{
+  "base": "http://127.0.0.1:8921/katalog-nedvizhimosti/",
+  "checks": [
+    "all five directions use real deal data, monthly price context and deal URL",
+    "market popup, type, bedrooms, reload and price reset are independent of deal",
+    "map shares deal, separate market popup, real IDs, empty state and return focus",
+    "55 direction/width layouts: four fields, hidden result favorites, no collisions or overflow",
+    "keyboard popup and focus restoration; axe on mobile and desktop"
+  ],
+  "layouts": [
+    {
+      "direction": "city",
+      "width": 320,
+      "overflow": false,
+      "overlaps": 0
+    },
+    {
+      "direction": "country",
+      "width": 320,
+      "overflow": false,
+      "overlaps": 0
+    },
+    {
+      "direction": "commercial",
+      "width": 320,
+      "overflow": false,
+      "overlaps": 0
+    },
+    {
+      "direction": "resort",
+      "width": 320,
+      "overflow": false,
+      "overlaps": 0
+    },
+    {
+      "direction": "international",
+      "width": 320,
+      "overflow": false,
+      "overlaps": 0
+    },
+    {
+      "direction": "city",
+      "width": 390,
+      "overflow": false,
+      "overlaps": 0
+    },
+    {
+      "direction": "country",
+      "width": 390,
+      "overflow": false,
+      "overlaps": 0
+    },
+    {
+      "direction": "commercial",
+      "width": 390,
+      "overflow": false,
+      "overlaps": 0
+    },
+    {
+      "direction": "resort",
+      "width": 390,
+      "overflow": false,
+      "overlaps": 0
+    },
+    {
+      "direction": "international",
+      "width": 390,
+      "overflow": false,
+      "overlaps": 0
+    },
+    {
+      "direction": "city",
+      "width": 540,
+      "overflow": false,
+      "overlaps": 0
+    },
+    {
+      "direction": "country",
+      "width": 540,
+      "overflow": false,
+      "overlaps": 0
+    },
+    {
+      "direction": "commercial",
+      "width": 540,
+      "overflow": false,
+      "overlaps": 0
+    },
+    {
+      "direction": "resort",
+      "width": 540,
+      "overflow": false,
+      "overlaps": 0
+    },
+    {
+      "direction": "international",
+      "width": 540,
+      "overflow": false,
+      "overlaps": 0
+    },
+    {
+      "direction": "city",
+      "width": 767,
+      "overflow": false,
+      "overlaps": 0
+    },
+    {
+      "direction": "country",
+      "width": 767,
+      "overflow": false,
+      "overlaps": 0
+    },
+    {
+      "direction": "commercial",
+      "width": 767,
+      "overflow": false,
+      "overlaps": 0
+    },
+    {
+      "direction": "resort",
+      "width": 767,
+      "overflow": false,
+      "overlaps": 0
+    },
+    {
+      "direction": "international",
+      "width": 767,
+      "overflow": false,
+      "overlaps": 0
+    },
+    {
+      "direction": "city",
+      "width": 768,
+      "overflow": false,
+      "overlaps": 0
+    },
+    {
+      "direction": "country",
+      "width": 768,
+      "overflow": false,
+      "overlaps": 0
+    },
+    {
+      "direction": "commercial",
+      "width": 768,
+      "overflow": false,
+      "overlaps": 0
+    },
+    {
+      "direction": "resort",
+      "width": 768,
+      "overflow": false,
+      "overlaps": 0
+    },
+    {
+      "direction": "international",
+      "width": 768,
+      "overflow": false,
+      "overlaps": 0
+    },
+    {
+      "direction": "city",
+      "width": 1024,
+      "overflow": false,
+      "overlaps": 0
+    },
+    {
+      "direction": "country",
+      "width": 1024,
+      "overflow": false,
+      "overlaps": 0
+    },
+    {
+      "direction": "commercial",
+      "width": 1024,
+      "overflow": false,
+      "overlaps": 0
+    },
+    {
+      "direction": "resort",
+      "width": 1024,
+      "overflow": false,
+      "overlaps": 0
+    },
+    {
+      "direction": "international",
+      "width": 1024,
+      "overflow": false,
+      "overlaps": 0
+    },
+    {
+      "direction": "city",
+      "width": 1280,
+      "overflow": false,
+      "overlaps": 0
+    },
+    {
+      "direction": "country",
+      "width": 1280,
+      "overflow": false,
+      "overlaps": 0
+    },
+    {
+      "direction": "commercial",
+      "width": 1280,
+      "overflow": false,
+      "overlaps": 0
+    },
+    {
+      "direction": "resort",
+      "width": 1280,
+      "overflow": false,
+      "overlaps": 0
+    },
+    {
+      "direction": "international",
+      "width": 1280,
+      "overflow": false,
+      "overlaps": 0
+    },
+    {
+      "direction": "city",
+      "width": 1440,
+      "overflow": false,
+      "overlaps": 0
+    },
+    {
+      "direction": "country",
+      "width": 1440,
+      "overflow": false,
+      "overlaps": 0
+    },
+    {
+      "direction": "commercial",
+      "width": 1440,
+      "overflow": false,
+      "overlaps": 0
+    },
+    {
+      "direction": "resort",
+      "width": 1440,
+      "overflow": false,
+      "overlaps": 0
+    },
+    {
+      "direction": "international",
+      "width": 1440,
+      "overflow": false,
+      "overlaps": 0
+    },
+    {
+      "direction": "city",
+      "width": 1920,
+      "overflow": false,
+      "overlaps": 0
+    },
+    {
+      "direction": "country",
+      "width": 1920,
+      "overflow": false,
+      "overlaps": 0
+    },
+    {
+      "direction": "commercial",
+      "width": 1920,
+      "overflow": false,
+      "overlaps": 0
+    },
+    {
+      "direction": "resort",
+      "width": 1920,
+      "overflow": false,
+      "overlaps": 0
+    },
+    {
+      "direction": "international",
+      "width": 1920,
+      "overflow": false,
+      "overlaps": 0
+    },
+    {
+      "direction": "city",
+      "width": 2560,
+      "overflow": false,
+      "overlaps": 0
+    },
+    {
+      "direction": "country",
+      "width": 2560,
+      "overflow": false,
+      "overlaps": 0
+    },
+    {
+      "direction": "commercial",
+      "width": 2560,
+      "overflow": false,
+      "overlaps": 0
+    },
+    {
+      "direction": "resort",
+      "width": 2560,
+      "overflow": false,
+      "overlaps": 0
+    },
+    {
+      "direction": "international",
+      "width": 2560,
+      "overflow": false,
+      "overlaps": 0
+    },
+    {
+      "direction": "city",
+      "width": 3840,
+      "overflow": false,
+      "overlaps": 0
+    },
+    {
+      "direction": "country",
+      "width": 3840,
+      "overflow": false,
+      "overlaps": 0
+    },
+    {
+      "direction": "commercial",
+      "width": 3840,
+      "overflow": false,
+      "overlaps": 0
+    },
+    {
+      "direction": "resort",
+      "width": 3840,
+      "overflow": false,
+      "overlaps": 0
+    },
+    {
+      "direction": "international",
+      "width": 3840,
+      "overflow": false,
+      "overlaps": 0
+    }
+  ],
+  "errors": [],
+  "http": [],
+  "axe": [
+    {
+      "width": 390,
+      "violations": []
+    },
+    {
+      "width": 1440,
+      "violations": []
+    }
+  ],
+  "passed": true
+}

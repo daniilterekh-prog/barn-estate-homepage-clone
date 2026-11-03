@@ -51,7 +51,7 @@
       select.addEventListener('change',sync);
       sync();
     });
-    if (selectConfigs.size === 5 && selectObserver) selectObserver.disconnect();
+    // Keep observing: the map is mounted after the initial catalogue controls.
   }
   var selectObserver = new MutationObserver(mountSelectDropdowns);
   selectObserver.observe(document.body, { childList:true, subtree:true });
