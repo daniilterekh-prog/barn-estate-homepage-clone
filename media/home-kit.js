@@ -92,7 +92,7 @@
   // Explicit section-heading roles from the homepage kit. A single wrapper
   // prevents the section gap being added between the eyebrow and its H2.
   const headings=[
-   ['.media-weekly__title','Редакционный выбор'],
+   ['.media-weekly__title','Выбор редакции'],
    ['.media-market__title','Направления BARN Estate'],
    ['.media-fresh__title','Медиа BARN Estate'],
    ['.media-analytics__title','Аналитика BARN Estate'],
