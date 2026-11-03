@@ -1,6 +1,6 @@
 /* Catalogue composition using the approved homepage search, choice and spacing roles. */
 html body.catalog-listing-page .catalog-mode-toolbar {
- --catalog-filter-font-size:var(--catalog-control-font-size);--catalog-filter-ink:#4f4d49;--catalog-filter-muted:#656462;
+ --catalog-filter-font-size:var(--home-field);--catalog-filter-ink:#4f4d49;--catalog-filter-muted:#656462;
  display:flex;flex-direction:column;align-items:stretch;gap:16px;
  margin:0 0 20px;padding:0;border:0;border-radius:0;background:#fff;
 }
@@ -34,7 +34,7 @@ html body.catalog-listing-page .catalog-toolbar__secondary .catalog-quick-filter
 html body.catalog-listing-page .catalog-toolbar__secondary .catalog-quick-filters__chevron{flex:none;width:12px;height:12px}
 html body.catalog-listing-page .catalog-toolbar__secondary .catalog-quick-filters__button:is(:hover,.is-open){background:#f7f7f7}
 html body.catalog-listing-page .catalog-toolbar__secondary .catalog-quick-filters__button.is-active{background:#f9f3f3;color:#8b1d25}
-html body.catalog-listing-page .catalog-toolbar__secondary .catalog-mode-detailed-filters[class][class]{position:relative;display:flex;align-items:center;justify-content:center;gap:10px;width:100%;height:64px;min-height:64px;padding:0 16px;border:1px solid #8b1d25;border-radius:1px;background:#fff;color:#8b1d25;font:300 var(--catalog-filter-font-size)/1.1 'Tilda Sans',sans-serif;box-sizing:border-box}
+html body.catalog-listing-page .catalog-toolbar__secondary .catalog-mode-detailed-filters[class][class]{position:relative;display:flex;align-items:center;justify-content:center;gap:10px;width:100%;height:64px;min-height:64px;padding:0 16px;border:1px solid #8b1d25;border-radius:1px;background:#fff;color:#8b1d25;font:400 17px/1.1 'Tilda Sans',sans-serif;box-sizing:border-box}
 html body.catalog-listing-page .catalog-toolbar__secondary .catalog-mode-detailed-filters:hover{background:#8b1d25;color:#fff}
 html body.catalog-listing-page .catalog-mode-detailed-filters svg{flex:none;width:20px;height:20px}
 .catalog-filter-count{display:inline-grid;place-items:center;min-width:20px;height:20px;padding-inline:4px;border-radius:1px;background:#fff;color:#8b1d25;font:400 13px/1 'Tilda Sans',sans-serif}
@@ -53,7 +53,7 @@ html body.catalog-listing-page .catalog-result-summary{display:flex;align-items:
 html body.catalog-listing-page .catalog-result-summary [data-show-favorites]{min-height:44px;padding:0;font:300 15px/1.3 'Tilda Sans',sans-serif;color:#4f4d49;white-space:nowrap}
 html body.catalog-listing-page .catalog-result-summary [data-show-favorites][aria-pressed=true]{color:#8b1d25}
 html body.catalog-listing-page .catalog-result-summary .catalog-grid__sort{position:relative;display:flex;align-items:center;min-width:0;width:200px;height:44px;margin:0;padding:0;border:0;color:#4f4d49}
-html body.catalog-listing-page .catalog-result-summary .resort-sort-trigger{box-sizing:border-box;display:block;width:100%;height:44px;min-height:44px;padding:0 24px 0 0;border:0;background:transparent;color:inherit;font:300 var(--catalog-filter-font-size)/1.3 'Tilda Sans',sans-serif;text-align:right;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+html body.catalog-listing-page .catalog-result-summary .resort-sort-trigger{box-sizing:border-box;display:block;width:100%;height:44px;min-height:44px;padding:0 24px 0 0;border:0;background:transparent;color:inherit;font:300 var(--home-field)/1.3 'Tilda Sans',sans-serif;text-align:right;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .catalog-sort-chevron{position:absolute;right:0;top:15px;pointer-events:none}
 /* Dropdown choices use the quiet selected state from the kit's quiz choices. */
 html body.catalog-listing-page .resort-quick-dropdown{padding:8px;border:1px solid #8b8986;border-radius:1px;background:#fff;color:#4f4d49;box-shadow:0 8px 24px #1e1e1e0a}
@@ -62,6 +62,7 @@ html body.catalog-listing-page .resort-quick-dropdown .catalog-quick-filters__dr
 html body.catalog-listing-page .resort-quick-dropdown [role=option]{padding:12px;min-height:44px;border:1px solid transparent;border-radius:1px;font:300 18px/1.3 'Tilda Sans',sans-serif;padding-left:var(--catalog-dropdown-option-inset,12px);text-align:left;overflow-wrap:anywhere}
 html body.catalog-listing-page .resort-quick-dropdown [role=option]:hover{background:#f7f7f7;color:#1e1e1e}
 html body.catalog-listing-page .resort-quick-dropdown [role=option].is-selected{background:#f9f3f3;color:#8b1d25;border-color:#8b1d25}
+@media(min-width:1441px){html body.catalog-listing-page .catalog-toolbar__secondary .catalog-mode-detailed-filters[class][class]{font-size:19px}}
 @media(max-width:1100px){html body.catalog-listing-page .catalog-mode-toolbar{padding:0}.catalog-toolbar__primary{grid-template-columns:minmax(170px,1fr) minmax(240px,1.2fr) minmax(220px,1.6fr)}html body.catalog-listing-page .catalog-toolbar__secondary .catalog-quick-filters__button{padding-inline:14px}}
 @media(min-width:768px) and (max-width:1023px){
  html body.catalog-listing-page .catalog-mode-toolbar{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
@@ -72,7 +73,7 @@ html body.catalog-listing-page .resort-quick-dropdown [role=option].is-selected{
  html body.catalog-listing-page .catalog-mode-toolbar>.catalog-toolbar__secondary>.catalog-mode-detailed-filters[class][class]{grid-column:4;grid-row:2;padding-inline:10px;font-size:16px}
 }
 @media(max-width:767px){
- html body.catalog-listing-page .catalog-mode-toolbar{display:grid;grid-template-columns:minmax(0,1fr) 58px;gap:12px 0;padding:0}
+ html body.catalog-listing-page .catalog-mode-toolbar{--catalog-filter-font-size:var(--home-field);display:grid;grid-template-columns:minmax(0,1fr) 58px;gap:12px 0;padding:0}
  .catalog-toolbar__primary,.catalog-toolbar__secondary{display:contents}
  html body.catalog-listing-page .catalog-mode-toolbar>.catalog-toolbar__primary>:is(.catalog-direction,.catalog-mode-switch)[class][class]{grid-column:1/-1;height:58px}
  html body.catalog-listing-page .catalog-direction>.resort-select-trigger{height:56px;padding-left:16px}
@@ -109,7 +110,7 @@ html body.catalog-listing-page .catalog-collections-row .catalog-reset-all{min-h
 @media(max-width:767px){html body.catalog-listing-page .catalog-collections-row{align-items:flex-start}.catalog-active-filter{min-height:40px}}
 
 @media(hover:hover){html body.catalog-listing-page .catalog-toolbar__secondary .catalog-mode-detailed-filters[class][class]:hover{background:#8b1d25;color:#fff}}
-html body.catalog-listing-page .catalog-mode-detailed-filters__label{white-space:nowrap;font-size:var(--catalog-filter-font-size);font-weight:300;line-height:1.2}
+html body.catalog-listing-page .catalog-mode-detailed-filters__label{white-space:nowrap}
 
 @media(max-width:767px){.catalog-active-filters{width:100%;flex:none}}
 html body.catalog-listing-page .resort-filters .ui-checkbox--chip:has(input:checked):hover .ui-checkbox__label{color:#fff!important}

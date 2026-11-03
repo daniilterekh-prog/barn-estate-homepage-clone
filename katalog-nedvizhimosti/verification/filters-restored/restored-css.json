@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "reference": "a61a896^",
+  "checks": [
+    {
+      "file": "catalog-kit-v1.css",
+      "matchesBeforeUnification": true,
+      "sha256": "f3c1a2a04b55d882aedf4315b0ef7855aee697ce537ffe251776d45268786cc6"
+    },
+    {
+      "file": "catalog-filters.css",
+      "matchesBeforeUnification": true,
+      "sha256": "84f7e281a876eb12f54942a1e88b09c037ded87b53780869e124f3b9923857d2"
+    },
+    {
+      "file": "catalog-map.css",
+      "matchesBeforeUnification": true,
+      "sha256": "c9a7bc955375b06e1d78e079d14366a4b8cb883dac4ba6c7d6bb3fc145d411aa"
+    }
+  ]
+}
