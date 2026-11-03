@@ -1,0 +1,826 @@
+[
+  {
+    "route": "media/",
+    "width": 390,
+    "data": {
+      "className": "breadcrumbs breadcrumbs--dark media-hero__breadcrumbs",
+      "text": "Главная/ Медиа",
+      "elements": [
+        {
+          "tag": "NAV",
+          "text": "Главная/ Медиа",
+          "className": "breadcrumbs breadcrumbs--dark media-hero__breadcrumbs",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "16px",
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(255, 255, 255)",
+          "gap": "normal"
+        },
+        {
+          "tag": "LI",
+          "text": "Главная/",
+          "className": "breadcrumbs__item",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "16px",
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(255, 255, 255)",
+          "gap": "4px"
+        },
+        {
+          "tag": "A",
+          "text": "Главная",
+          "className": "breadcrumbs__link",
+          "fontSize": "12px",
+          "fontWeight": "300",
+          "lineHeight": "16px",
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgba(255, 255, 255, 0.72)",
+          "gap": "4px"
+        },
+        {
+          "tag": "SPAN",
+          "text": "/",
+          "className": "breadcrumbs__separator",
+          "fontSize": "16px",
+          "fontWeight": "300",
+          "lineHeight": "16px",
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgba(255, 255, 255, 0.45)",
+          "gap": "normal"
+        },
+        {
+          "tag": "LI",
+          "text": "Медиа",
+          "className": "breadcrumbs__item",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "16px",
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(255, 255, 255)",
+          "gap": "4px"
+        },
+        {
+          "tag": "SPAN",
+          "text": "Медиа",
+          "className": "breadcrumbs__link breadcrumbs__link--active",
+          "fontSize": "12px",
+          "fontWeight": "300",
+          "lineHeight": "16px",
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(255, 255, 255)",
+          "gap": "4px"
+        }
+      ]
+    }
+  },
+  {
+    "route": "katalog-nedvizhimosti/?direction=international",
+    "width": 390,
+    "data": {
+      "className": "catalog-breadcrumbs",
+      "text": "Главная/Каталог недвижимости",
+      "elements": [
+        {
+          "tag": "NAV",
+          "text": "Главная/Каталог недвижимости",
+          "className": "catalog-breadcrumbs",
+          "fontSize": "12px",
+          "fontWeight": "300",
+          "lineHeight": "16px",
+          "fontFamily": "\"Tilda Sans\", system-ui, sans-serif",
+          "color": "rgb(101, 100, 98)",
+          "gap": "4px"
+        },
+        {
+          "tag": "A",
+          "text": "Главная",
+          "className": "",
+          "fontSize": "12px",
+          "fontWeight": "300",
+          "lineHeight": "16px",
+          "fontFamily": "\"Tilda Sans\", system-ui, sans-serif",
+          "color": "rgb(101, 100, 98)",
+          "gap": "normal"
+        },
+        {
+          "tag": "SPAN",
+          "text": "/",
+          "className": "",
+          "fontSize": "14px",
+          "fontWeight": "300",
+          "lineHeight": "19.6px",
+          "fontFamily": "\"Tilda Sans\", system-ui, sans-serif",
+          "color": "rgb(101, 100, 98)",
+          "gap": "normal"
+        },
+        {
+          "tag": "SPAN",
+          "text": "Каталог недвижимости",
+          "className": "",
+          "fontSize": "12px",
+          "fontWeight": "300",
+          "lineHeight": "16px",
+          "fontFamily": "\"Tilda Sans\", system-ui, sans-serif",
+          "color": "rgb(101, 100, 98)",
+          "gap": "normal"
+        }
+      ]
+    }
+  },
+  {
+    "route": "kurortnaya/",
+    "width": 390,
+    "data": {
+      "className": "catalog-hero__breadcrumbs-wrap base-container",
+      "text": "Главная/ Курортная недвижимость",
+      "elements": [
+        {
+          "tag": "DIV",
+          "text": "Главная/ Курортная недвижимость",
+          "className": "catalog-hero__breadcrumbs-wrap base-container",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "16px",
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(255, 255, 255)",
+          "gap": "normal"
+        },
+        {
+          "tag": "LI",
+          "text": "Главная/",
+          "className": "breadcrumbs__item",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "16px",
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(255, 255, 255)",
+          "gap": "4px"
+        },
+        {
+          "tag": "A",
+          "text": "Главная",
+          "className": "breadcrumbs__link",
+          "fontSize": "12px",
+          "fontWeight": "300",
+          "lineHeight": "16px",
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgba(255, 255, 255, 0.72)",
+          "gap": "4px"
+        },
+        {
+          "tag": "SPAN",
+          "text": "/",
+          "className": "breadcrumbs__separator",
+          "fontSize": "12px",
+          "fontWeight": "300",
+          "lineHeight": "16px",
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgba(255, 255, 255, 0.45)",
+          "gap": "normal"
+        },
+        {
+          "tag": "LI",
+          "text": "Курортная недвижимость",
+          "className": "breadcrumbs__item",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "16px",
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(255, 255, 255)",
+          "gap": "4px"
+        },
+        {
+          "tag": "SPAN",
+          "text": "Курортная недвижимость",
+          "className": "breadcrumbs__link breadcrumbs__link--active",
+          "fontSize": "12px",
+          "fontWeight": "300",
+          "lineHeight": "16px",
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(255, 255, 255)",
+          "gap": "4px"
+        }
+      ]
+    }
+  },
+  {
+    "route": "katalog-nedvizhimosti/?direction=international",
+    "width": 768,
+    "data": {
+      "className": "catalog-breadcrumbs",
+      "text": "Главная/Каталог недвижимости",
+      "elements": [
+        {
+          "tag": "NAV",
+          "text": "Главная/Каталог недвижимости",
+          "className": "catalog-breadcrumbs",
+          "fontSize": "13px",
+          "fontWeight": "300",
+          "lineHeight": "18px",
+          "fontFamily": "\"Tilda Sans\", system-ui, sans-serif",
+          "color": "rgb(101, 100, 98)",
+          "gap": "6px"
+        },
+        {
+          "tag": "A",
+          "text": "Главная",
+          "className": "",
+          "fontSize": "13px",
+          "fontWeight": "300",
+          "lineHeight": "18px",
+          "fontFamily": "\"Tilda Sans\", system-ui, sans-serif",
+          "color": "rgb(101, 100, 98)",
+          "gap": "normal"
+        },
+        {
+          "tag": "SPAN",
+          "text": "/",
+          "className": "",
+          "fontSize": "16px",
+          "fontWeight": "300",
+          "lineHeight": "22.4px",
+          "fontFamily": "\"Tilda Sans\", system-ui, sans-serif",
+          "color": "rgb(101, 100, 98)",
+          "gap": "normal"
+        },
+        {
+          "tag": "SPAN",
+          "text": "Каталог недвижимости",
+          "className": "",
+          "fontSize": "13px",
+          "fontWeight": "300",
+          "lineHeight": "18px",
+          "fontFamily": "\"Tilda Sans\", system-ui, sans-serif",
+          "color": "rgb(101, 100, 98)",
+          "gap": "normal"
+        }
+      ]
+    }
+  },
+  {
+    "route": "media/",
+    "width": 768,
+    "data": {
+      "className": "breadcrumbs breadcrumbs--dark media-hero__breadcrumbs",
+      "text": "Главная/ Медиа",
+      "elements": [
+        {
+          "tag": "NAV",
+          "text": "Главная/ Медиа",
+          "className": "breadcrumbs breadcrumbs--dark media-hero__breadcrumbs",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "16px",
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(255, 255, 255)",
+          "gap": "normal"
+        },
+        {
+          "tag": "LI",
+          "text": "Главная/",
+          "className": "breadcrumbs__item",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "16px",
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(255, 255, 255)",
+          "gap": "6px"
+        },
+        {
+          "tag": "A",
+          "text": "Главная",
+          "className": "breadcrumbs__link",
+          "fontSize": "13px",
+          "fontWeight": "300",
+          "lineHeight": "18px",
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgba(255, 255, 255, 0.72)",
+          "gap": "4px"
+        },
+        {
+          "tag": "SPAN",
+          "text": "/",
+          "className": "breadcrumbs__separator",
+          "fontSize": "18px",
+          "fontWeight": "300",
+          "lineHeight": "18px",
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgba(255, 255, 255, 0.45)",
+          "gap": "normal"
+        },
+        {
+          "tag": "LI",
+          "text": "Медиа",
+          "className": "breadcrumbs__item",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "16px",
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(255, 255, 255)",
+          "gap": "6px"
+        },
+        {
+          "tag": "SPAN",
+          "text": "Медиа",
+          "className": "breadcrumbs__link breadcrumbs__link--active",
+          "fontSize": "13px",
+          "fontWeight": "300",
+          "lineHeight": "18px",
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(255, 255, 255)",
+          "gap": "4px"
+        }
+      ]
+    }
+  },
+  {
+    "route": "kurortnaya/",
+    "width": 768,
+    "data": {
+      "className": "catalog-hero__breadcrumbs-wrap base-container",
+      "text": "Главная/ Курортная недвижимость",
+      "elements": [
+        {
+          "tag": "DIV",
+          "text": "Главная/ Курортная недвижимость",
+          "className": "catalog-hero__breadcrumbs-wrap base-container",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "16px",
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(255, 255, 255)",
+          "gap": "normal"
+        },
+        {
+          "tag": "LI",
+          "text": "Главная/",
+          "className": "breadcrumbs__item",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "16px",
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(255, 255, 255)",
+          "gap": "6px"
+        },
+        {
+          "tag": "A",
+          "text": "Главная",
+          "className": "breadcrumbs__link",
+          "fontSize": "13px",
+          "fontWeight": "300",
+          "lineHeight": "18.2px",
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgba(255, 255, 255, 0.72)",
+          "gap": "4px"
+        },
+        {
+          "tag": "SPAN",
+          "text": "/",
+          "className": "breadcrumbs__separator",
+          "fontSize": "13px",
+          "fontWeight": "300",
+          "lineHeight": "18.2px",
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgba(255, 255, 255, 0.45)",
+          "gap": "normal"
+        },
+        {
+          "tag": "LI",
+          "text": "Курортная недвижимость",
+          "className": "breadcrumbs__item",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "16px",
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(255, 255, 255)",
+          "gap": "6px"
+        },
+        {
+          "tag": "SPAN",
+          "text": "Курортная недвижимость",
+          "className": "breadcrumbs__link breadcrumbs__link--active",
+          "fontSize": "13px",
+          "fontWeight": "300",
+          "lineHeight": "18.2px",
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(255, 255, 255)",
+          "gap": "4px"
+        }
+      ]
+    }
+  },
+  {
+    "route": "katalog-nedvizhimosti/?direction=international",
+    "width": 1440,
+    "data": {
+      "className": "catalog-breadcrumbs",
+      "text": "Главная/Каталог недвижимости",
+      "elements": [
+        {
+          "tag": "NAV",
+          "text": "Главная/Каталог недвижимости",
+          "className": "catalog-breadcrumbs",
+          "fontSize": "17px",
+          "fontWeight": "300",
+          "lineHeight": "18px",
+          "fontFamily": "\"Tilda Sans\", system-ui, sans-serif",
+          "color": "rgb(101, 100, 98)",
+          "gap": "8px"
+        },
+        {
+          "tag": "A",
+          "text": "Главная",
+          "className": "",
+          "fontSize": "17px",
+          "fontWeight": "300",
+          "lineHeight": "18px",
+          "fontFamily": "\"Tilda Sans\", system-ui, sans-serif",
+          "color": "rgb(101, 100, 98)",
+          "gap": "normal"
+        },
+        {
+          "tag": "SPAN",
+          "text": "/",
+          "className": "",
+          "fontSize": "20px",
+          "fontWeight": "300",
+          "lineHeight": "28px",
+          "fontFamily": "\"Tilda Sans\", system-ui, sans-serif",
+          "color": "rgb(101, 100, 98)",
+          "gap": "normal"
+        },
+        {
+          "tag": "SPAN",
+          "text": "Каталог недвижимости",
+          "className": "",
+          "fontSize": "17px",
+          "fontWeight": "300",
+          "lineHeight": "18px",
+          "fontFamily": "\"Tilda Sans\", system-ui, sans-serif",
+          "color": "rgb(101, 100, 98)",
+          "gap": "normal"
+        }
+      ]
+    }
+  },
+  {
+    "route": "kurortnaya/",
+    "width": 1440,
+    "data": {
+      "className": "catalog-hero__breadcrumbs-wrap base-container",
+      "text": "Главная/ Курортная недвижимость",
+      "elements": [
+        {
+          "tag": "DIV",
+          "text": "Главная/ Курортная недвижимость",
+          "className": "catalog-hero__breadcrumbs-wrap base-container",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "16px",
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(255, 255, 255)",
+          "gap": "normal"
+        },
+        {
+          "tag": "LI",
+          "text": "Главная/",
+          "className": "breadcrumbs__item",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "16px",
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(255, 255, 255)",
+          "gap": "8px"
+        },
+        {
+          "tag": "A",
+          "text": "Главная",
+          "className": "breadcrumbs__link",
+          "fontSize": "16px",
+          "fontWeight": "300",
+          "lineHeight": "22.4px",
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgba(255, 255, 255, 0.72)",
+          "gap": "4px"
+        },
+        {
+          "tag": "SPAN",
+          "text": "/",
+          "className": "breadcrumbs__separator",
+          "fontSize": "16px",
+          "fontWeight": "300",
+          "lineHeight": "22.4px",
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgba(255, 255, 255, 0.45)",
+          "gap": "normal"
+        },
+        {
+          "tag": "LI",
+          "text": "Курортная недвижимость",
+          "className": "breadcrumbs__item",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "16px",
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(255, 255, 255)",
+          "gap": "8px"
+        },
+        {
+          "tag": "SPAN",
+          "text": "Курортная недвижимость",
+          "className": "breadcrumbs__link breadcrumbs__link--active",
+          "fontSize": "16px",
+          "fontWeight": "300",
+          "lineHeight": "22.4px",
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(255, 255, 255)",
+          "gap": "4px"
+        }
+      ]
+    }
+  },
+  {
+    "route": "media/",
+    "width": 1440,
+    "data": {
+      "className": "breadcrumbs breadcrumbs--dark media-hero__breadcrumbs",
+      "text": "Главная/ Медиа",
+      "elements": [
+        {
+          "tag": "NAV",
+          "text": "Главная/ Медиа",
+          "className": "breadcrumbs breadcrumbs--dark media-hero__breadcrumbs",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "16px",
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(255, 255, 255)",
+          "gap": "normal"
+        },
+        {
+          "tag": "LI",
+          "text": "Главная/",
+          "className": "breadcrumbs__item",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "16px",
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(255, 255, 255)",
+          "gap": "8px"
+        },
+        {
+          "tag": "A",
+          "text": "Главная",
+          "className": "breadcrumbs__link",
+          "fontSize": "17px",
+          "fontWeight": "300",
+          "lineHeight": "18px",
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgba(255, 255, 255, 0.72)",
+          "gap": "4px"
+        },
+        {
+          "tag": "SPAN",
+          "text": "/",
+          "className": "breadcrumbs__separator",
+          "fontSize": "28px",
+          "fontWeight": "300",
+          "lineHeight": "28px",
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgba(255, 255, 255, 0.45)",
+          "gap": "normal"
+        },
+        {
+          "tag": "LI",
+          "text": "Медиа",
+          "className": "breadcrumbs__item",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "16px",
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(255, 255, 255)",
+          "gap": "8px"
+        },
+        {
+          "tag": "SPAN",
+          "text": "Медиа",
+          "className": "breadcrumbs__link breadcrumbs__link--active",
+          "fontSize": "17px",
+          "fontWeight": "300",
+          "lineHeight": "18px",
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(255, 255, 255)",
+          "gap": "4px"
+        }
+      ]
+    }
+  },
+  {
+    "route": "katalog-nedvizhimosti/?direction=international",
+    "width": 2560,
+    "data": {
+      "className": "catalog-breadcrumbs",
+      "text": "Главная/Каталог недвижимости",
+      "elements": [
+        {
+          "tag": "NAV",
+          "text": "Главная/Каталог недвижимости",
+          "className": "catalog-breadcrumbs",
+          "fontSize": "17px",
+          "fontWeight": "300",
+          "lineHeight": "18px",
+          "fontFamily": "\"Tilda Sans\", system-ui, sans-serif",
+          "color": "rgb(101, 100, 98)",
+          "gap": "8px"
+        },
+        {
+          "tag": "A",
+          "text": "Главная",
+          "className": "",
+          "fontSize": "17px",
+          "fontWeight": "300",
+          "lineHeight": "18px",
+          "fontFamily": "\"Tilda Sans\", system-ui, sans-serif",
+          "color": "rgb(101, 100, 98)",
+          "gap": "normal"
+        },
+        {
+          "tag": "SPAN",
+          "text": "/",
+          "className": "",
+          "fontSize": "25px",
+          "fontWeight": "300",
+          "lineHeight": "35px",
+          "fontFamily": "\"Tilda Sans\", system-ui, sans-serif",
+          "color": "rgb(101, 100, 98)",
+          "gap": "normal"
+        },
+        {
+          "tag": "SPAN",
+          "text": "Каталог недвижимости",
+          "className": "",
+          "fontSize": "17px",
+          "fontWeight": "300",
+          "lineHeight": "18px",
+          "fontFamily": "\"Tilda Sans\", system-ui, sans-serif",
+          "color": "rgb(101, 100, 98)",
+          "gap": "normal"
+        }
+      ]
+    }
+  },
+  {
+    "route": "kurortnaya/",
+    "width": 2560,
+    "data": {
+      "className": "catalog-hero__breadcrumbs-wrap base-container",
+      "text": "Главная/ Курортная недвижимость",
+      "elements": [
+        {
+          "tag": "DIV",
+          "text": "Главная/ Курортная недвижимость",
+          "className": "catalog-hero__breadcrumbs-wrap base-container",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "16px",
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(255, 255, 255)",
+          "gap": "normal"
+        },
+        {
+          "tag": "LI",
+          "text": "Главная/",
+          "className": "breadcrumbs__item",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "16px",
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(255, 255, 255)",
+          "gap": "8px"
+        },
+        {
+          "tag": "A",
+          "text": "Главная",
+          "className": "breadcrumbs__link",
+          "fontSize": "21px",
+          "fontWeight": "300",
+          "lineHeight": "29.4px",
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgba(255, 255, 255, 0.72)",
+          "gap": "4px"
+        },
+        {
+          "tag": "SPAN",
+          "text": "/",
+          "className": "breadcrumbs__separator",
+          "fontSize": "21px",
+          "fontWeight": "300",
+          "lineHeight": "29.4px",
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgba(255, 255, 255, 0.45)",
+          "gap": "normal"
+        },
+        {
+          "tag": "LI",
+          "text": "Курортная недвижимость",
+          "className": "breadcrumbs__item",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "16px",
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(255, 255, 255)",
+          "gap": "8px"
+        },
+        {
+          "tag": "SPAN",
+          "text": "Курортная недвижимость",
+          "className": "breadcrumbs__link breadcrumbs__link--active",
+          "fontSize": "21px",
+          "fontWeight": "300",
+          "lineHeight": "29.4px",
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(255, 255, 255)",
+          "gap": "4px"
+        }
+      ]
+    }
+  },
+  {
+    "route": "media/",
+    "width": 2560,
+    "data": {
+      "className": "breadcrumbs breadcrumbs--dark media-hero__breadcrumbs",
+      "text": "Главная/ Медиа",
+      "elements": [
+        {
+          "tag": "NAV",
+          "text": "Главная/ Медиа",
+          "className": "breadcrumbs breadcrumbs--dark media-hero__breadcrumbs",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "16px",
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(255, 255, 255)",
+          "gap": "normal"
+        },
+        {
+          "tag": "LI",
+          "text": "Главная/",
+          "className": "breadcrumbs__item",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "16px",
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(255, 255, 255)",
+          "gap": "8px"
+        },
+        {
+          "tag": "A",
+          "text": "Главная",
+          "className": "breadcrumbs__link",
+          "fontSize": "17px",
+          "fontWeight": "300",
+          "lineHeight": "18px",
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgba(255, 255, 255, 0.72)",
+          "gap": "4px"
+        },
+        {
+          "tag": "SPAN",
+          "text": "/",
+          "className": "breadcrumbs__separator",
+          "fontSize": "35px",
+          "fontWeight": "300",
+          "lineHeight": "35px",
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgba(255, 255, 255, 0.45)",
+          "gap": "normal"
+        },
+        {
+          "tag": "LI",
+          "text": "Медиа",
+          "className": "breadcrumbs__item",
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "16px",
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(255, 255, 255)",
+          "gap": "8px"
+        },
+        {
+          "tag": "SPAN",
+          "text": "Медиа",
+          "className": "breadcrumbs__link breadcrumbs__link--active",
+          "fontSize": "17px",
+          "fontWeight": "300",
+          "lineHeight": "18px",
+          "fontFamily": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+          "color": "rgb(255, 255, 255)",
+          "gap": "4px"
+        }
+      ]
+    }
+  }
+]

@@ -4,12 +4,12 @@ export async function bootReferenceFilters() {
   window.BarnesReferenceFiltersReady=true;
   const base=new URL('../../js/',import.meta.url);
   async function script(file){await new Promise((resolve,reject)=>{const el=document.createElement('script');el.src=new URL(file,base);el.onload=resolve;el.onerror=()=>reject(new Error(`Cannot load ${file}`));document.body.append(el);});}
-  await script('filters-template.js?v=20261103-clean-load-18');
-  await script('filters-modal.js?v=20261103-clean-load-18');
+  await script('filters-template.js?v=20261103-breadcrumbs-19');
+  await script('filters-modal.js?v=20261103-breadcrumbs-19');
   if(document.querySelector('.catalog-projects-map__fullscreen,[data-open-resort-map]')){
-    await script('map-projects.js?v=20261103-clean-load-18');
-    await script('map-fullscreen.js?v=20261103-clean-load-18');
+    await script('map-projects.js?v=20261103-breadcrumbs-19');
+    await script('map-fullscreen.js?v=20261103-breadcrumbs-19');
   }
-  await script('quick-filters.js?v=20261103-clean-load-18');
-  await script('brand-filters.js?v=20261103-clean-load-18');
+  await script('quick-filters.js?v=20261103-breadcrumbs-19');
+  await script('brand-filters.js?v=20261103-breadcrumbs-19');
 }
