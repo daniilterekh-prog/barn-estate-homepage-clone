@@ -22,6 +22,7 @@
  document.addEventListener('click', event => {
   const anchor = event.target.closest('a[href]');
   if (!anchor || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+  if (anchor.hasAttribute('data-media-header-search')) return;
   const url = new URL(anchor.href, location.href);
   if (url.origin === location.origin && url.pathname !== '/barn-estate-homepage-clone/media/' && !url.pathname.startsWith('/barn-estate-homepage-clone/media/pictures/') && !url.pathname.startsWith('/barn-estate-homepage-clone/media/assets/')) {
    event.preventDefault(); event.stopImmediatePropagation();

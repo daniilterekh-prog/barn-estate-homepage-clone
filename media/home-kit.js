@@ -10,6 +10,7 @@
   if(favorites&&!favorites.parentElement.querySelector('.site-header__search-btn')){
    const search=document.createElement('a');
    search.className='site-header__search-btn';
+   search.setAttribute('data-media-header-search','');
    search.href='https://daniilterekh-prog.github.io/barn-estate-homepage-clone/katalog-nedvizhimosti/';
    search.setAttribute('aria-label','Поиск недвижимости');
    search.setAttribute('data-v-63dbb988','');
