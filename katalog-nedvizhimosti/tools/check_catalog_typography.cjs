@@ -11,8 +11,8 @@ for(const row of report.widths){
  const c=row.catalog,t=row.tokens,w=row.width;
  for(const k of ['deal','department','market','search','quick']){assert.equal(c[k].size,t['--home-field'],w+'/'+k);assert.ok(c[k].family.includes('Tilda Sans'));}
  for(const k of ['deal','department'])assert.equal(c[k].weight,'300');
- for(const [key,token] of [['title','--home-heading'],['name','--home-listing'],['price','--home-price'],['call','--home-action'],['details','--home-action']])assert.equal(c[key].size,t[token],w+'/'+key);
- assert.equal(c.title.weight,'300');assert.equal(c.name.weight,'400');assert.equal(c.price.weight,'500');assert.equal(c.address.size,'13px');assert.equal(c.address.line,'18px');
+ for(const [key,token] of [['name','--home-listing'],['price','--home-price'],['call','--home-action'],['details','--home-action']])assert.equal(c[key].size,t[token],w+'/'+key);
+ assert.ok(Math.abs(parseFloat(c.title.size)-(w<=540?32:Math.max(38,Math.min(58,w*.04))))<.05);assert.equal(c.title.weight,'300');assert.equal(c.name.weight,'400');assert.equal(c.price.weight,'500');assert.equal(c.address.size,'13px');assert.equal(c.address.line,'18px');
  for(const k of ['headerLink','footerTitle','footerLink','footerAddress','footerButton','expertTitle','expertName']){assert.ok(row.home[k]&&c[k],k+' source role missing');assert.deepEqual(signature(c[k]),signature(row.home[k]),w+'/'+k+' differs from home');}
  report.comparisons.push({width:w,fieldsMatchHomeTokens:true,titleCardsActionsMatchTokens:true,sharedRolesMatchHome:true});
 }

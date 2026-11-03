@@ -8,7 +8,7 @@
 
 ## Что перенесено
 
-- Типографика Tilda Sans, роли H1 22/38/44 px, метаданные карточки 13/18 px, цвета, отступы, контейнер 1920 px и gutter 22 px на телефоне.
+- Типографика Tilda Sans, H1 каталога 32 px / clamp(38px, 4vw, 58px), метаданные карточки 13/18 px, цвета, отступы, контейнер 1920 px и gutter 22 px на телефоне.
 - Кнопки: радиус 1 px, обычное начертание, общие CTA 70/58 px. Подробные карточки сохраняют компактные действия 54 px; в карточках уже 340 px действия стоят друг под другом.
 - Sticky-хэдер с заявкой при прокрутке, логотип по центру на телефоне/планшете, панель WhatsApp/MAX/Telegram/звонок. Полное выдвижное меню с направлениями, собственниками и нижними ссылками сохранено.
 - Новый footer BARN Estate, актуальный режим работы, плавающий эксперт, общий квиз и контактный шаг с контекстом объекта.
@@ -154,7 +154,7 @@ node katalog-nedvizhimosti/tools/check_header_hover.cjs
 
 [Проверка](verification/header-home-parity/parity.json): 28 состояний14ширин320–3840px, геометрия/типографика/ссылки и белая палитра главной, порог48/49, отсутствие сдвигов scroll anchor, CTA/квиз/Escape, доступность фильтров под прозрачным резервом высоты, все9подменю, полный бургер/контакты390/1024/1440px и axe. [Наведение мышью и гибридный ввод](verification/header-home-parity/hover.json):72сочетания. [До исправления](verification/header-home-parity/before-summary.json), [источник и SHA](verification/header-home-parity/reference-source.json).
 
-[Строгий Pixelmatch](verification/header-home-parity/pixels/pixel.json): для воспроизводимости выключен LCD text, динамический счётчик маскирован, top-white нормализован к белому фону каталога. Пять из6снимков совпали полностью; на1440px top-white остаётся45пикселей сглаживания Telegram при идентичных SVG. Это сохранено как ненулевой результат, без заявления о полном raw-pixel совпадении с фотографическим hero. [Каталог1440](verification/header-home-parity/catalog-top-1440.png), [компактный390](verification/header-home-parity/catalog-scrolled-390.png), [нормализованный референс](verification/header-home-parity/pixels/home-top-white-1440.png), [diff](verification/header-home-parity/pixels/diff-top-white-1440.png).
+[Строгий Pixelmatch](verification/header-home-parity/pixels/pixel.json): для воспроизводимости выключен LCD text, динамический счётчик маскирован, top-white нормализован к белому фону каталога. Пять из6снимков совпали полностью; на 1440px top-white остаётся45пикселей сглаживания Telegram при идентичных SVG. Это сохранено как ненулевой результат, без заявления о полном raw-pixel совпадении с фотографическим hero. [Каталог1440](verification/header-home-parity/catalog-top-1440.png), [компактный390](verification/header-home-parity/catalog-scrolled-390.png), [нормализованный референс](verification/header-home-parity/pixels/home-top-white-1440.png), [diff](verification/header-home-parity/pixels/diff-top-white-1440.png).
 
 ```sh
 node katalog-nedvizhimosti/tools/check_header_home_parity.cjs
@@ -279,3 +279,10 @@ Pixelmatch используется только для проверки, из �
 ## Итоговая ведомость размеров шрифтов — 03.11.2026
 
 [Полная таблица 83текстовых ролей](FONT-SIZES.md) и [вычисленные стили](verification/font-sizes/computed.json). Зафиксирован 291набор замеров на 17 ширинах 320–3840px и в состояниях страницы, проектов/лотов/аренды, раскрытых списков, меню, полной формы, карты, квиза/контакта и ошибок. Указаны точные границы, насыщенность, размеры внутри самих текстовых span; отличаются характеристики проектов и отдельных объектов. Кнопка «Смотреть больше» измерена на 12 проектах Курортной. Изменений дизайна, HTML/CSS/JS и отправки контактных данных нет.
+
+
+## H1 по узловым страницам, без капса — 03.11.2026
+
+«Каталог недвижимости» выведен обычным регистром. H1 перенесён со шкалы заголовков секций 22/38/44px на контракт узлов: 32px до 540px, от 541px — clamp(38px,4vw,58px). Насыщенность 300, line-height 1.05, letter-spacing −0.045em. Примеры: 38px на 768px; 40,96px на 1024px; 51,2px на 1280px; 57,6px на 1440px; 58px от 1450px. Обновлена [ведомость шрифтов](FONT-SIZES.md). Отступы и остальные текстовые роли сохранены.
+
+[Сравнение](verification/node-h1/h1.json) с [городской](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/gorodskaya-nedvizhimost/) и [загородной](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/zagorodnaya-nedvizhimost/): 14 ширин 320–3840px, одинаковые размеры/интерлиньяж/насыщенность/разрядка, отсутствие капса, обрезания/пересечений. [Общие проверки кита](verification/node-h1/kit-contracts.json), [axe](verification/node-h1/kit-accessibility.json), [типографика 12 ширин и 24 открытых состояния](verification/node-h1/typography.json) прошли. Снимки: [390px](verification/node-h1/h1-390.png), [1440px](verification/node-h1/h1-1440.png), [1920px](verification/node-h1/h1-1920.png). Новых зависимостей нет.

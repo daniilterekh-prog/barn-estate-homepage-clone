@@ -1,6 +1,7 @@
 /* Approved homepage v1.0.0 roles adapted to the catalogue's own composition. */
 html body.catalog-listing-page{--catalog-filter-font-size:var(--home-field);--catalog-filter-muted:#656462;--kit-font:'Tilda Sans','Tilda Sans Fallback',system-ui,sans-serif;font-synthesis:none}
-html body.catalog-listing-page .catalog-page-title{font-size:38px;line-height:1.2;font-weight:300;letter-spacing:normal;margin-bottom:40px;max-width:none}
+/* H1 uses the node-page display scale; shared section tokens stay unchanged. */
+html body.catalog-listing-page .catalog-page-title{font-size:clamp(38px,4vw,58px);line-height:1.05;font-weight:300;letter-spacing:-.045em;text-transform:none;margin-bottom:40px;max-width:none}
 /* Breadcrumb scale measured on barn-estate.ru/prodazha_sobstvennikam/. */
 html body.catalog-listing-page .catalog-breadcrumbs{color:#656462;gap:8px;font-family:'Tilda Sans',system-ui,sans-serif;font-size:17px;font-weight:300;line-height:18px;letter-spacing:normal}
 html body.catalog-listing-page .catalog-breadcrumbs [aria-hidden]{font-size:25px;font-weight:300;line-height:1.4}
@@ -8,8 +9,7 @@ html body.catalog-listing-page .catalog-breadcrumbs [aria-hidden]{font-size:25px
 @media(max-width:1024px){html body.catalog-listing-page .catalog-breadcrumbs [aria-hidden]{font-size:18px}}
 @media(max-width:768px){html body.catalog-listing-page .catalog-breadcrumbs{gap:6px;font-size:13px}html body.catalog-listing-page .catalog-breadcrumbs [aria-hidden]{font-size:16px}}
 @media(max-width:540px){html body.catalog-listing-page .catalog-breadcrumbs{gap:4px;font-size:12px;line-height:16px}html body.catalog-listing-page .catalog-breadcrumbs [aria-hidden]{font-size:14px}}
-@media(min-width:1441px){html body.catalog-listing-page .catalog-page-title{font-size:44px}}
-@media(max-width:540px){html body.catalog-listing-page .catalog-page-title{font-size:22px;line-height:1.2;margin-bottom:28px}}
+@media(max-width:540px){html body.catalog-listing-page .catalog-page-title{font-size:32px;margin-bottom:28px}}
 /* Main containers share the approved gutter, including the footer and ultrawide grid. */
 html body.catalog-listing-page .base-container{max-width:1920px;box-sizing:border-box;padding-inline:var(--home-gutter)}
 html body.catalog-listing-page .site-footer__inner{padding-inline:var(--home-gutter)}
