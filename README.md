@@ -1,5 +1,7 @@
 # BARN Estate — страницы основного сайта
 
+- [Высота hero четырёх страниц по живой главной barn-estate.ru: 560/820/960 px, 03.11.2026](https://github.com/daniilterekh-prog/barnes-sites/tree/main/main-site/pages/media-reference-2026-11-03/hero-height) — Медиа, амбассадоры, аренда и продажа.
+
 - Сетка и размеры шрифтов по «Медиа»,03.11.2026: [амбассадоры](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/for-partners/), [аренда](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/arenda_sobstvennikam/), [продажа](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/prodazha_sobstvennikam/). [Контракт и проверки](https://github.com/daniilterekh-prog/barnes-sites/blob/main/main-site/pages/media-reference-2026-11-03/README.md).
 
 - [Каталог недвижимости: пакет для разработчика, 03.11.2026](handoff/catalog-2026-11-03/README.md) — размеры, отступы, шрифты, цвета и код в отдельных папках HTML/CSS/JS.
