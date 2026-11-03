@@ -105,3 +105,7 @@ Frontend-памятка проверена: HyperUI доступен беспл�
 03.11.2026: фильтры1.4.0 по свежей общей выдаче — dropdown рынка вместо двух кнопок, все четыре быстрых поля на desktop, покупка без аренды. Общий catalog-filters.js/css, shared dropdown/state; карточки и хедер сохранены. Проверки10ширин320–3840px и отдельных блоков.
 
 [Актуальная панель03.11](filters-current-catalog-2026-11-03.md) · [Сверка с общей выдачей](verification/catalog-filters-2026-11-03.json) · [Переносимые фильтры](verification/catalog-filter-blocks-2026-11-03.json).
+
+03.11.2026: подборки и сортировка полной карты собраны в один ряд на desktop; compact-раскладка сохранена. Контракт MapControlsRow и проверка map-controls-row-2026-11-03.json.
+
+[Проверка строки карты](verification/map-controls-row-2026-11-03.json).

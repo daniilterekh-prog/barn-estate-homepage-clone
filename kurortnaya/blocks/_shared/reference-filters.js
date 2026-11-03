@@ -5,11 +5,11 @@ export async function bootReferenceFilters() {
   const base=new URL('../../js/',import.meta.url);
   async function script(file){await new Promise((resolve,reject)=>{const el=document.createElement('script');el.src=new URL(file,base);el.onload=resolve;el.onerror=()=>reject(new Error(`Cannot load ${file}`));document.body.append(el);});}
   await script('filters-template.js?v=20261102-catalog-filters-12');
-  await script('filters-modal.js?v=20261103-current-listing-16');
+  await script('filters-modal.js?v=20261103-map-controls-17');
   if(document.querySelector('.catalog-projects-map__fullscreen,[data-open-resort-map]')){
     await script('map-projects.js');
-    await script('map-fullscreen.js?v=20261102-catalog-filters-12');
+    await script('map-fullscreen.js?v=20261103-map-controls-17');
   }
-  await script('quick-filters.js?v=20261103-current-listing-16');
-  await script('brand-filters.js?v=20261102-catalog-filters-12');
+  await script('quick-filters.js?v=20261103-map-controls-17');
+  await script('brand-filters.js?v=20261103-map-controls-17');
 }

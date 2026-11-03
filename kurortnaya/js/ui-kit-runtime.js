@@ -3,13 +3,13 @@
   filtersTemplate.src = 'js/filters-template.js?v=20261102-catalog-filters-12';
   filtersTemplate.onload = function () {
     var filtersScript = document.createElement('script');
-    filtersScript.src = 'js/filters-modal.js?v=20261103-current-listing-16';
+    filtersScript.src = 'js/filters-modal.js?v=20261103-map-controls-17';
     filtersScript.onload = function () {
       var quickScript = document.createElement('script');
-      quickScript.src = 'js/quick-filters.js?v=20261103-current-listing-16';
+      quickScript.src = 'js/quick-filters.js?v=20261103-map-controls-17';
       quickScript.onload = function () {
         var brandsScript = document.createElement('script');
-        brandsScript.src = 'js/brand-filters.js?v=20261102-catalog-filters-12';
+        brandsScript.src = 'js/brand-filters.js?v=20261103-map-controls-17';
         document.body.appendChild(brandsScript);
       };
       document.body.appendChild(quickScript);
@@ -21,7 +21,7 @@
   mapDataScript.src = 'js/map-projects.js?v=2';
   mapDataScript.onload = function () {
     var mapScript = document.createElement('script');
-    mapScript.src = 'js/map-fullscreen.js?v=20261102-catalog-filters-12';
+    mapScript.src = 'js/map-fullscreen.js?v=20261103-map-controls-17';
     document.body.appendChild(mapScript);
   };
   document.body.appendChild(mapDataScript);
@@ -618,7 +618,7 @@
 
   if (!document.querySelector('script[data-kurortnaya-listing-mode]')) {
     var listingScript = document.createElement('script');
-    listingScript.src = 'js/listing-mode.js?v=20261103-current-listing-16';
+    listingScript.src = 'js/listing-mode.js?v=20261103-map-controls-17';
     listingScript.dataset.kurortnayaListingMode = 'true';
     document.body.appendChild(listingScript);
   }
