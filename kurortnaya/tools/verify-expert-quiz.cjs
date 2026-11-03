@@ -26,15 +26,16 @@ const root=path.resolve(__dirname,'..'),base=process.argv[2]||'http://127.0.0.1:
   await m.locator('[name=phone]').fill('+7 900 000-00-00');await m.locator('.feedback-modal__submit').click();assert.equal(await m.locator('[name=consent]').getAttribute('aria-invalid'),'true');
   await m.locator('.feedback-modal__consent-box').click();assert.equal(await m.locator('[name=consent]').isChecked(),true);await m.locator('.feedback-modal__submit').click();assert.match(await m.locator('.feedback-modal__status').innerText(),/Данные не отправлены/);
   await p.evaluate(()=>document.addEventListener('barn:lead',e=>{window.__testLead=e.detail.data;e.preventDefault();},{once:true}));await m.locator('.feedback-modal__submit').click();
+  assert.equal(await m.locator('[name=comment]').isVisible(),false);assert.equal(await p.evaluate(()=>Object.hasOwn(window.__testLead,'comment')),false);
   const answers=await p.evaluate(()=>JSON.parse(window.__testLead.quizAnswers));assert.deepEqual(answers,{goal:'Для инвестиций',location:'Алтай',budget:'30–50 млн',currency:'€'});
   const first=m.locator('.modal__close');await first.focus();await p.keyboard.press('Shift+Tab');assert.equal(await p.evaluate(()=>document.activeElement.closest('.catalog-feedback-modal')!==null),true,'Focus stays in dialog');
   await p.keyboard.press('Escape');assert.equal(await m.isVisible(),false);assert.equal(await trigger.evaluate(e=>e===document.activeElement),true);assert.equal(await p.locator('#__nuxt').evaluate(e=>e.inert),false);
   await trigger.click();assert.equal(await m.getAttribute('data-quiz-step'),'goal');assert.equal(await next.isDisabled(),true);await m.getByRole('button',{name:'Сразу задать вопрос эксперту',exact:true}).click();
   assert.equal(await m.getAttribute('data-quiz-step'),'contact');assert.deepEqual(JSON.parse(await m.locator('[name=quizAnswers]').inputValue()),{goal:'Нужна консультация',location:'',budget:'',currency:'₽'});
   await p.keyboard.press('Escape');
-  await p.locator('.floating-expert__close').click();await p.locator('.site-footer__callback-btn').click();assert.equal(await m.evaluate(e=>e.classList.contains('resort-quiz-active')),false);assert.equal(await m.locator('.feedback-modal__form').isVisible(),true);assert.equal(await m.locator('[name=quizAnswers]').isDisabled(),true);await p.keyboard.press('Escape');
+  await p.locator('.floating-expert__close').click();await p.locator('.site-footer__callback-btn').click();assert.equal(await m.evaluate(e=>e.classList.contains('resort-quiz-active')),false);assert.equal(await m.locator('.feedback-modal__form').isVisible(),true);assert.equal(await m.locator('[name=quizAnswers]').isDisabled(),true);assert.equal(await m.locator('[name=comment]').isDisabled(),false);assert.equal(await m.locator('[name=comment]').isVisible(),true);await p.keyboard.press('Escape');
   assert.equal(await p.evaluate(()=>document.documentElement.scrollWidth>innerWidth+1),false);
   checks.push({width,height,fullFlow:true,back:true,skip:true,payload:true,validation:true,focus:true,directForm:true,noPost:true});console.log('PASS expert quiz',width,height);await p.close();
  }
  assert.deepEqual(errors,[]);assert.deepEqual(posts,[]);
-}finally{await browser.close()}fs.writeFileSync(path.join(root,'verification/expert-quiz-2026-11-02.json'),JSON.stringify({checks,errors,posts},null,2)+'\n')})().catch(e=>{console.error(e);process.exitCode=1});
+}finally{await browser.close()}fs.writeFileSync(path.join(root,'verification/expert-quiz-2026-11-03.json'),JSON.stringify({checks,errors,posts},null,2)+'\n')})().catch(e=>{console.error(e);process.exitCode=1});

@@ -1,7 +1,7 @@
 {
   "id": "first-degree-request-modal",
   "title": "Попап заявки",
-  "version": "1.5.0",
+  "version": "1.5.1",
   "source": {
     "repo": "daniilterekh-prog/barn-estate-homepage-clone",
     "commit": "62aee9e62e2fae669028433ffe411e2f18a01d84",
@@ -50,6 +50,8 @@
       "floating-expert",
       "data-expert-quiz"
     ],
-    "directFormPreserved": true
+    "directFormPreserved": true,
+    "questionList": "questions.json",
+    "layoutReference": "homepage 17-quiz; 2026-11-03"
   }
 }
