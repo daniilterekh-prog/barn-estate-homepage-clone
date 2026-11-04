@@ -4,11 +4,6 @@
   var page = document.querySelector('.ambassadors-page');
   if (!page) return;
 
-  var stagesStylesheet = document.createElement('link');
-  stagesStylesheet.rel = 'stylesheet';
-  stagesStylesheet.href = 'assets/how-it-works.css?v=343fe6f58205';
-  document.head.appendChild(stagesStylesheet);
-
   var conditionsStylesheet = document.createElement('link');
   conditionsStylesheet.rel = 'stylesheet';
   conditionsStylesheet.href = 'assets/conditions-heading.css?v=bbade4cf86ea';
@@ -72,7 +67,15 @@
   document.body.classList.add('partners-owner-shell');
 
   function enhanceOwnerHeader() {
-    var header = document.querySelector('.site-header');
+    var pauseLogos = document.querySelector('.ap-marquee-toggle');
+  if (pauseLogos) pauseLogos.addEventListener('click', function () {
+    var paused = pauseLogos.getAttribute('aria-pressed') !== 'true';
+    document.getElementById('program-partners').classList.toggle('is-paused', paused);
+    pauseLogos.setAttribute('aria-pressed', String(paused));
+    pauseLogos.textContent = paused ? 'Продолжить движение' : 'Приостановить логотипы';
+  });
+
+  var header = document.querySelector('.site-header');
     var inner = header && header.querySelector('.site-header__inner');
     if (!header || !inner) return;
 
@@ -248,10 +251,10 @@
       if (lastTrigger) lastTrigger.focus();
     }
     function openModal(trigger) {
-      var partnership = trigger && trigger.matches('.catalog-contact__card-submit, .floating-expert__card, .site-footer__callback-btn');
-      modal.querySelector('.feedback-modal__title').textContent = partnership ? 'Обсудить партнёрство' : 'Рекомендовать клиента';
+      var partnership = trigger && trigger.matches('.catalog-contact__card-submit, .floating-expert__card, .site-footer__callback-btn, [data-partner-intent="consultation"]');
+      modal.querySelector('.feedback-modal__title').textContent = partnership ? 'Задать вопрос эксперту' : 'Рекомендовать клиента';
       modal.querySelector('.feedback-modal__intro').textContent = partnership ? 'Расскажите о вашей рекомендации или задайте вопрос об амбассадорской программе. Начнём с удобного для вас способа связи.' : 'Оставьте свой контакт — обсудим рекомендацию клиента, его закрепление и условия вознаграждения.';
-      modal.querySelector('.feedback-modal__submit').textContent = partnership ? 'Обсудить партнёрство' : 'Рекомендовать клиента';
+      modal.querySelector('.feedback-modal__submit').textContent = partnership ? 'Задать вопрос эксперту' : 'Рекомендовать клиента';
       directionId.value = '';
       directionName.value = '';
       directionSummary.hidden = true;
@@ -284,7 +287,7 @@
     form.addEventListener('submit', function (event) {
       event.preventDefault();
       if (!form.reportValidity()) return;
-      status.textContent = 'Отправка заявок пока не подключена. Позвоните в BARNES: +7 (495) 182-50-79.';
+      status.textContent = 'Отправка заявок пока не подключена. Позвоните в BARN Estate: +7 (495) 182-50-79.';
     });
     document.addEventListener('keydown', function (event) {
       if (event.key === 'Escape' && !modal.hidden) closeModal();
@@ -298,49 +301,22 @@
         event.preventDefault(); first.focus();
       }
     });
-    document.querySelectorAll('.ambassadors-hero__button--primary, .owner-sale-stages__offer-btn, .ambassadors-requests__button, .catalog-contact__card-submit, .site-footer__callback-btn, .floating-expert__card').forEach(function (button) {
+    document.querySelectorAll('.ambassadors-hero__button--primary, .catalog-contact__card-submit, .site-footer__callback-btn, .floating-expert__card, [data-partner-intent]').forEach(function (button) {
       button.addEventListener('click', function (event) {
         event.preventDefault();
         event.stopImmediatePropagation();
         openModal(button);
+        if (button.dataset.serviceDirection) {
+          directionId.value = button.dataset.serviceDirection;
+          directionName.value = button.dataset.serviceName;
+          directionSummary.textContent = 'Услуга: ' + button.dataset.serviceName;
+          directionSummary.hidden = false;
+        }
       }, true);
     });
   }
 
   enhancePartnerModal();
-
-  function enhanceHowItWorks() {
-    var section = page.querySelector('#how-it-works');
-    var aside = section && section.querySelector('.owner-sale-stages__aside');
-    var title = section && section.querySelector('.owner-sale-stages__title');
-    var offer = section && section.querySelector('.owner-sale-stages__offer');
-    var offerTitle = offer && offer.querySelector('.owner-sale-stages__offer-title');
-    var offerText = offer && offer.querySelector('.owner-sale-stages__offer-text');
-    var offerButton = offer && offer.querySelector('.owner-sale-stages__offer-btn');
-    if (!section || !aside || !title) return;
-
-    title.id = 'partners-stages-title';
-    section.setAttribute('aria-labelledby', title.id);
-    section.removeAttribute('aria-label');
-    aside.classList.add('owner-sale-stages__header');
-
-    if (offerTitle) {
-      offerTitle.className = 'partners-stages__lead';
-      aside.appendChild(offerTitle);
-    }
-    if (offerText) {
-      offerText.className = 'owner-sale-stages__intro';
-      aside.appendChild(offerText);
-    }
-    if (offerButton) {
-      offerButton.classList.add('owner-sale-stages__cta');
-      aside.appendChild(offerButton);
-    }
-
-    if (offer) offer.remove();
-  }
-
-  enhanceHowItWorks();
 
   function enhanceConditionsHeading() {
     var section = page.querySelector('#conditions');
@@ -365,8 +341,6 @@
   function enhanceSectionEyebrows() {
     [
       ['.ambassadors-conditions__section-title', 'ПАРТНЁРСКАЯ ПРОГРАММА'],
-      ['.owner-sale-stages__title', 'МЕХАНИКА ПАРТНЁРСТВА'],
-      ['.ambassadors-advantages__title', 'ПАРТНЁРСТВО С BARN Estate'],
       ['.catalog-faq__title', 'ПАРТНЁРСКАЯ ПРОГРАММА'],
       ['.newsletter-cta h2', 'BARN Estate / АНАЛИТИКА']
     ].forEach(function (item) {
@@ -382,71 +356,6 @@
   }
 
   enhanceSectionEyebrows();
-
-  var stagesScrollFrame = null;
-  function updateStagesScrollState() {
-    var section = page.querySelector('#how-it-works');
-    var items = section ? Array.prototype.slice.call(section.querySelectorAll('.owner-sale-stages__item')) : [];
-    var headerBlock = section && section.querySelector('.owner-sale-stages__header');
-    var desktop = window.matchMedia('(min-width: 901px)').matches;
-    if (!section || !items.length) return;
-
-    if (!desktop) {
-      section.classList.remove('owner-sale-stages--scroll-ready');
-      items.forEach(function (item) {
-        item.classList.remove('is-active', 'is-past');
-        item.style.removeProperty('--partners-stages-last-offset');
-      });
-      return;
-    }
-
-    var alignmentLine = headerBlock ? parseFloat(window.getComputedStyle(headerBlock).top) : 120;
-    if (!Number.isFinite(alignmentLine)) alignmentLine = 120;
-
-    var lastItem = items[items.length - 1];
-    var currentLastOffset = parseFloat(lastItem.style.getPropertyValue('--partners-stages-last-offset')) || 0;
-    var naturalLastTop = lastItem.getBoundingClientRect().top - currentLastOffset;
-    var headerTop = headerBlock ? headerBlock.getBoundingClientRect().top : alignmentLine;
-    var lastOffset = Math.max(0, headerTop - naturalLastTop);
-    lastItem.style.setProperty('--partners-stages-last-offset', lastOffset + 'px');
-
-    var activeIndex = 0;
-    var closestDistance = Infinity;
-    items.forEach(function (item, index) {
-      var distance = Math.abs(item.getBoundingClientRect().top - alignmentLine);
-      if (distance < closestDistance) {
-        closestDistance = distance;
-        activeIndex = index;
-      }
-    });
-
-    section.classList.add('owner-sale-stages--scroll-ready');
-    items.forEach(function (item, index) {
-      item.classList.toggle('is-active', index === activeIndex);
-      item.classList.toggle('is-past', index < activeIndex);
-    });
-  }
-
-  function requestStagesScrollUpdate() {
-    if (stagesScrollFrame) return;
-    stagesScrollFrame = window.requestAnimationFrame(function () {
-      stagesScrollFrame = null;
-      updateStagesScrollState();
-    });
-  }
-
-  window.addEventListener('scroll', requestStagesScrollUpdate, { passive: true });
-  window.addEventListener('resize', requestStagesScrollUpdate, { passive: true });
-  window.addEventListener('load', requestStagesScrollUpdate, { once: true });
-  requestStagesScrollUpdate();
-
-  var sliderStyle = document.createElement('style');
-  sliderStyle.textContent = [
-    '@media (max-width: 768px) { .ambassadors-advantages__slider .splide__slide { margin-right: 12px !important; width: calc(100% + 0px) !important; } }',
-    '@media (min-width: 769px) and (max-width: 1024px) { .ambassadors-advantages__slider .splide__slide { margin-right: 16px !important; width: calc(50% - 8px) !important; } }',
-    '@media (min-width: 1025px) { .ambassadors-advantages__slider .splide__slide { margin-right: 20px !important; width: calc(33.3333% - 13.3333px) !important; } }'
-  ].join('');
-  document.head.appendChild(sliderStyle);
 
   var header = document.querySelector('.site-header');
   var menuButton = document.querySelector('.site-header__icon-btn');
@@ -466,9 +375,6 @@
     if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
 
-  document.querySelectorAll('.ambassadors-hero__button--primary, .owner-sale-stages__offer-btn, .catalog-contact__card-submit').forEach(function (button) {
-    button.addEventListener('click', function () { scrollToTarget('.catalog-contact'); });
-  });
   document.querySelectorAll('.ambassadors-hero__button--secondary').forEach(function (button) {
     button.addEventListener('click', function () { scrollToTarget('#conditions'); });
   });
@@ -496,143 +402,6 @@
   });
 
 
-  var advantages = document.querySelector('.ambassadors-advantages__slider');
-  var previous = document.querySelector('.ambassadors-advantages__nav-btn[aria-label*="Предыдущее"]');
-  var next = document.querySelector('.ambassadors-advantages__nav-btn[aria-label*="Следующее"]');
-  var advantageIndex = 0;
-  var advantagesList = advantages && advantages.querySelector('.splide__list');
-  var advantagesTrack = advantages && advantages.querySelector('.splide__track');
-  var advantageCards = advantagesList ? Array.prototype.slice.call(advantagesList.querySelectorAll('.splide__slide')) : [];
-  var advantageDragStart = null;
-  var advantageDragOffset = 0;
-
-  function visibleAdvantageCount() {
-    if (window.matchMedia('(max-width: 768px)').matches) return 1;
-    if (window.matchMedia('(max-width: 1024px)').matches) return 2;
-    return 3;
-  }
-
-  function advantageStep() {
-    if (!advantageCards.length) return 0;
-    var cardStyle = window.getComputedStyle(advantageCards[0]);
-    return advantageCards[0].getBoundingClientRect().width + (parseFloat(cardStyle.marginRight) || 0);
-  }
-
-  function updateAdvantages(animate) {
-    if (!advantagesList || !advantageCards.length) return;
-    var visibleCount = visibleAdvantageCount();
-    var maxIndex = Math.max(0, advantageCards.length - visibleCount);
-    advantageIndex = Math.max(0, Math.min(advantageIndex, maxIndex));
-    advantageDragOffset = -advantageIndex * advantageStep();
-
-    advantagesList.style.transition = animate && !window.matchMedia('(prefers-reduced-motion: reduce)').matches
-      ? 'transform 400ms cubic-bezier(.25, 1, .5, 1)'
-      : 'none';
-    advantagesList.style.transform = 'translateX(' + advantageDragOffset + 'px)';
-
-    advantageCards.forEach(function (card, index) {
-      var visible = index >= advantageIndex && index < advantageIndex + visibleCount;
-      card.classList.toggle('is-active', index === advantageIndex);
-      card.classList.toggle('is-next', index === advantageIndex + 1);
-      card.classList.toggle('is-visible', visible);
-      var reveal = card.querySelector('.ambassadors-advantages__reveal');
-      if (reveal) reveal.tabIndex = visible ? 0 : -1;
-      if (visible) card.removeAttribute('aria-hidden');
-      else card.setAttribute('aria-hidden', 'true');
-    });
-
-    if (previous) previous.disabled = advantageIndex === 0;
-    if (next) next.disabled = advantageIndex === maxIndex;
-    var progress = document.querySelector('.ambassadors-advantages__progress');
-    if (progress) progress.textContent = String(advantageIndex + 1).padStart(2, '0') +
-      (visibleCount > 1 ? '–' + String(Math.min(advantageIndex + visibleCount, advantageCards.length)).padStart(2, '0') : '') +
-      ' / ' + advantageCards.length;
-  }
-
-  function moveAdvantages(direction) {
-    advantageIndex += direction;
-    updateAdvantages(true);
-  }
-
-  if (previous) previous.addEventListener('click', function () { moveAdvantages(-1); });
-  if (next) next.addEventListener('click', function () { moveAdvantages(1); });
-
-  if (advantagesTrack && advantagesList && advantageCards.length) {
-    advantageCards.forEach(function (slide, index) {
-      var card = slide.querySelector('.ambassadors-advantages__card');
-      var description = card.querySelector('.ambassadors-advantages__description');
-      description.id = 'advantage-description-' + index;
-      var reveal = document.createElement('button');
-      reveal.type = 'button';
-      reveal.className = 'ambassadors-advantages__reveal';
-      reveal.setAttribute('aria-label', 'Описание: ' + card.querySelector('h3').textContent);
-      reveal.setAttribute('aria-controls', description.id);
-      reveal.setAttribute('aria-expanded', 'false');
-      card.addEventListener('pointerenter', function (event) {
-        if (event.pointerType !== 'mouse') return;
-        card.classList.add('is-hovered');
-      });
-      card.addEventListener('pointerleave', function (event) {
-        if (event.pointerType !== 'mouse') return;
-        card.classList.remove('is-hovered', 'is-revealed');
-        reveal.setAttribute('aria-expanded', 'false');
-      });
-      reveal.addEventListener('click', function (event) {
-        if (event.detail && event.pointerType !== 'touch' && window.matchMedia('(any-hover: hover)').matches) return;
-        var open = card.classList.toggle('is-revealed');
-        reveal.setAttribute('aria-expanded', String(open));
-      });
-      reveal.addEventListener('keydown', function (event) {
-        if (event.key !== 'Escape') return;
-        card.classList.remove('is-revealed');
-        reveal.setAttribute('aria-expanded', 'false');
-        reveal.blur();
-      });
-      card.appendChild(reveal);
-    });
-    advantagesTrack.addEventListener('keydown', function (event) {
-      if (event.key === 'ArrowRight' || event.key === 'ArrowLeft') {
-        event.preventDefault();
-        moveAdvantages(event.key === 'ArrowRight' ? 1 : -1);
-      } else if (event.key === 'Home' || event.key === 'End') {
-        event.preventDefault();
-        advantageIndex = event.key === 'Home' ? 0 : advantageCards.length;
-        updateAdvantages(true);
-      }
-    });
-    advantagesTrack.addEventListener('pointerdown', function (event) {
-      if (event.button !== undefined && event.button !== 0) return;
-      advantageDragStart = event.clientX;
-      advantagesList.style.transition = 'none';
-      advantagesTrack.classList.add('is-dragging');
-    });
-
-    advantagesTrack.addEventListener('pointermove', function (event) {
-      if (advantageDragStart === null) return;
-      var delta = event.clientX - advantageDragStart;
-      if (Math.abs(delta) > 8 && advantagesTrack.setPointerCapture && !advantagesTrack.hasPointerCapture(event.pointerId)) {
-        advantagesTrack.setPointerCapture(event.pointerId);
-      }
-      advantagesList.style.transform = 'translateX(' + (advantageDragOffset + delta) + 'px)';
-    });
-
-    function finishAdvantagesDrag(event) {
-      if (advantageDragStart === null) return;
-      var delta = event.clientX - advantageDragStart;
-      var threshold = Math.min(72, Math.max(36, advantageStep() * .16));
-      advantageDragStart = null;
-      advantagesTrack.classList.remove('is-dragging');
-      if (Math.abs(delta) >= threshold) advantageIndex += delta < 0 ? 1 : -1;
-      updateAdvantages(true);
-    }
-
-    advantagesTrack.addEventListener('pointerup', finishAdvantagesDrag);
-    advantagesTrack.addEventListener('pointercancel', finishAdvantagesDrag);
-    window.addEventListener('resize', function () { updateAdvantages(false); }, { passive: true });
-  }
-
-  updateAdvantages(false);
-
   document.querySelectorAll('.catalog-contact__form, .newsletter-form').forEach(function (form) {
     if (form.classList.contains('catalog-contact__form')) {
       var channel = document.createElement('input');
@@ -643,7 +412,7 @@
       event.preventDefault();
       if (form.classList.contains('catalog-contact__form')) {
         if (!form.reportValidity()) return;
-        form.querySelector('.catalog-contact__status').textContent = 'Отправка заявок пока не подключена. Позвоните в BARNES: +7 (495) 182-50-79.';
+        form.querySelector('.catalog-contact__status').textContent = 'Отправка заявок пока не подключена. Позвоните в BARN Estate: +7 (495) 182-50-79.';
         return;
       }
       var required = form.querySelectorAll('[required]');

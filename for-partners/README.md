@@ -30,3 +30,7 @@ media-header.css/js приводят первичный хедер к Медиа
 
 Обновление 04.11.2026: плавающая карточка Руслана использует тот же портрет и круглый крупный кадр, что Медиа, через общие `expert-avatar.css/js`.
 Новый hero: `assets/ambassadors-premium-residence-20261104.webp`; оригинал и происхождение в [barnes-assets](https://github.com/daniilterekh-prog/barnes-assets/tree/main/partners/hero/2026-11-04). Размеры и отступы hero сохранены.
+
+## Правки Насти ·04.11.2026
+
+[Реализация и проверки](https://github.com/daniilterekh-prog/barnes-sites/blob/main/for-partners/revision-2026-11-04/README.md): компактные этапы, открытые преимущества, ответственность, услуги/партнёры, клуб, форма перед компанией и разные CTA. Бегущие строки из главной, без новых библиотек. `assets/program.css` заменяет снятые `how-it-works.css`/`advantages-enhanced.css`; живой runtime — `for-partners.js`. SVG и их происхождение — `assets/partners/`; реальные фото — `assets/community/`, каноническая библиотека barnes-assets.
