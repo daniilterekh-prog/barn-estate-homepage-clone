@@ -18,7 +18,7 @@ body#partners-kit-page.barnes-media-reference.partners-owner-shell{
 #partners-kit-page.barnes-media-reference.partners-owner-shell .ap-trust .ap-header{margin:0!important}
 #partners-kit-page.barnes-media-reference.partners-owner-shell #requests h2{margin:0 0 var(--pk-content-gap)!important}
 #partners-kit-page.barnes-media-reference.partners-owner-shell .catalog-faq__inner{row-gap:0!important}
-#partners-kit-page.barnes-media-reference.partners-owner-shell .catalog-faq__list{margin-top:var(--pk-content-gap)!important}
+#partners-kit-page.barnes-media-reference.partners-owner-shell .catalog-faq__grid{margin-top:var(--pk-content-gap)!important}
 /* Standard headings; newsletter/partner headings retain their homepage component line-height. */
 #partners-kit-page.barnes-media-reference.partners-owner-shell :is(.ap-header h2,.ambassadors-conditions__section-title,#requests h2,.catalog-contact__title,.about-company__title,.catalog-faq__title){font-family:"Tilda Sans",system-ui,sans-serif!important;font-size:var(--reference-heading)!important;font-weight:300!important;line-height:1.2!important;letter-spacing:0!important;margin-block:0!important;text-transform:uppercase!important}
 #partners-kit-page.barnes-media-reference.partners-owner-shell #program-partners h2{line-height:1!important}
@@ -28,7 +28,7 @@ body#partners-kit-page.barnes-media-reference.partners-owner-shell{
 #partners-kit-page.barnes-media-reference.partners-owner-shell :is(.ap-eyebrow,.partners-section-eyebrow,.bd-eyebrow,.owner-rent-section-eyebrow){font-family:"Tilda Sans",system-ui,sans-serif!important;font-size:var(--reference-eyebrow)!important;line-height:var(--pk-brow-line)!important;font-weight:400!important;letter-spacing:.12em!important;text-transform:uppercase!important;color:var(--pk-secondary)!important;margin:0 0 var(--pk-brow-gap)!important;padding:0!important}
 #partners-kit-page.barnes-media-reference.partners-owner-shell .newsletter-cta .partners-section-eyebrow{color:var(--pk-secondary)!important}
 #partners-kit-page.barnes-media-reference.partners-owner-shell :is(.ap-lead,.ap-steps li>div>p,.ap-benefit-grid p,.ap-who-grid p,.ap-community-grid article>div>p:not(.ap-eyebrow),.catalog-contact__subtitle,.about-company__intro,.newsletter-cta__lead){font-family:"Tilda Sans",system-ui,sans-serif!important;font-size:var(--reference-lead)!important;line-height:var(--reference-lead-line)!important;font-weight:300!important;letter-spacing:0!important;color:var(--pk-secondary)!important}
-#partners-kit-page.barnes-media-reference.partners-owner-shell .catalog-contact__subtitle{color:#e7e7e7!important;margin-top:var(--pk-copy-gap)!important}
+#partners-kit-page.barnes-media-reference.partners-owner-shell #partner-contact .catalog-contact__subtitle{color:rgba(255,255,255,.75)!important;margin-top:var(--pk-copy-gap)!important}
 #partners-kit-page.barnes-media-reference.partners-owner-shell .ap-header .ap-lead{margin-top:var(--pk-copy-gap)!important}
 #partners-kit-page.barnes-media-reference.partners-owner-shell .ap-number{font:400 var(--reference-eyebrow)/1.15 "Tilda Sans",sans-serif;letter-spacing:.12em;color:var(--pk-brand)}
 /* Text benefits and photo conditions use the registered Benefit/Card role, not Media caption sizing. */
@@ -88,3 +88,8 @@ body#partners-kit-page.barnes-media-reference.partners-owner-shell{
 #partners-kit-page.barnes-media-reference.partners-owner-shell .about-company__fact-label{font-size:13px!important;line-height:18px!important;font-weight:300!important;color:var(--pk-muted)!important}
 #partners-kit-page.barnes-media-reference.partners-owner-shell :is(.catalog-faq__answer-content,.catalog-faq__answer-content p){font-size:var(--reference-lead)!important;line-height:var(--reference-lead-line)!important;font-weight:300!important;color:var(--pk-secondary)!important}
 #partners-kit-page.barnes-media-reference.partners-owner-shell .feedback-modal__close{width:44px;height:44px}
+
+/* FAQ uses __grid; mobile primary actions follow the owner contact button alignment. */
+@media(max-width:540px){
+ #partners-kit-page.barnes-media-reference.partners-owner-shell :is(.ap-action,.bd-cta){display:flex;width:100%!important;max-width:none;justify-content:center;text-align:center;gap:8px}
+}
