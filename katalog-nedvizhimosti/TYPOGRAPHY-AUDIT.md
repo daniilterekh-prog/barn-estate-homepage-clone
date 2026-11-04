@@ -25,21 +25,21 @@
 
 Расхождения исправлены. Заголовок пустой выдачи использует компактную роль --home-card, описание пустой выдачи/ошибки — --home-lead и --home-lead-line. У выбранных чипов очищен фон самого текстового span: исходная тёмная тема окрашивала его в #464646 поверх светлого выбранного контейнера, снижая контраст. Фон теперь задаёт только контейнер; обычное и наведённое состояния прошли axe.
 
-- [Исходные замеры](https://github.com/daniilterekh-prog/barnes-sites/blob/main/katalog-nedvizhimosti/verification/typography-kit/before.json).
-- [Итоговая типографика](https://github.com/daniilterekh-prog/barnes-sites/blob/main/katalog-nedvizhimosti/verification/typography-kit/audit.json): 12 ширин 320–3840px, 24 раскрытых состояния, сравнение с референсом меню/квиза/хедера/футера, название/цена/ID карточки, выбранные чипы и пустая выдача.
-- [Геометрия](https://github.com/daniilterekh-prog/barnes-sites/blob/main/katalog-nedvizhimosti/verification/typography-kit/geometry.json): 130 состояний, размеры общих полей совпадают между направлениями и сделками; нет переполнения и обрезанных названий департаментов/рынка.
-- [Панель](https://github.com/daniilterekh-prog/barnes-sites/blob/main/katalog-nedvizhimosti/verification/typography-kit/toolbar.json): 55 сочетаний, форма/поиск/сброс/сортировка, axe.
-- [Кит и формы](https://github.com/daniilterekh-prog/barnes-sites/blob/main/katalog-nedvizhimosti/verification/typography-kit/kit-contracts.json), [axe](https://github.com/daniilterekh-prog/barnes-sites/blob/main/katalog-nedvizhimosti/verification/typography-kit/kit-accessibility.json): 15 ширин, карточки, хэдер, контакты, квиз, валидация, клавиатура, возврат фокуса и отсутствие ошибок загрузки/JavaScript. Заявки не отправлялись.
-- [Выбранные условия](https://github.com/daniilterekh-prog/barnes-sites/blob/main/katalog-nedvizhimosti/verification/typography-kit/active-filters.json): длинные подписи 320px, radio/клавиатура, URL, карта, применение/отмена/сброс и доступность.
-- Снимки: [390px](https://github.com/daniilterekh-prog/barnes-sites/blob/main/katalog-nedvizhimosti/verification/typography-kit/typography-390.png), [1440px](https://github.com/daniilterekh-prog/barnes-sites/blob/main/katalog-nedvizhimosti/verification/typography-kit/typography-1440.png), [1920px](https://github.com/daniilterekh-prog/barnes-sites/blob/main/katalog-nedvizhimosti/verification/typography-kit/typography-1920.png).
+- [Исходные замеры](https://github.com/daniilterekh-prog/barnes-sites/blob/main/main-site/pages/catalog/verification/typography-kit/before.json).
+- [Итоговая типографика](https://github.com/daniilterekh-prog/barnes-sites/blob/main/main-site/pages/catalog/verification/typography-kit/audit.json): 12 ширин 320–3840px, 24 раскрытых состояния, сравнение с референсом меню/квиза/хедера/футера, название/цена/ID карточки, выбранные чипы и пустая выдача.
+- [Геометрия](https://github.com/daniilterekh-prog/barnes-sites/blob/main/main-site/pages/catalog/verification/typography-kit/geometry.json): 130 состояний, размеры общих полей совпадают между направлениями и сделками; нет переполнения и обрезанных названий департаментов/рынка.
+- [Панель](https://github.com/daniilterekh-prog/barnes-sites/blob/main/main-site/pages/catalog/verification/typography-kit/toolbar.json): 55 сочетаний, форма/поиск/сброс/сортировка, axe.
+- [Кит и формы](https://github.com/daniilterekh-prog/barnes-sites/blob/main/main-site/pages/catalog/verification/typography-kit/kit-contracts.json), [axe](https://github.com/daniilterekh-prog/barnes-sites/blob/main/main-site/pages/catalog/verification/typography-kit/kit-accessibility.json): 15 ширин, карточки, хэдер, контакты, квиз, валидация, клавиатура, возврат фокуса и отсутствие ошибок загрузки/JavaScript. Заявки не отправлялись.
+- [Выбранные условия](https://github.com/daniilterekh-prog/barnes-sites/blob/main/main-site/pages/catalog/verification/typography-kit/active-filters.json): длинные подписи 320px, radio/клавиатура, URL, карта, применение/отмена/сброс и доступность.
+- Снимки: [390px](https://github.com/daniilterekh-prog/barnes-sites/blob/main/main-site/pages/catalog/verification/typography-kit/typography-390.png), [1440px](https://github.com/daniilterekh-prog/barnes-sites/blob/main/main-site/pages/catalog/verification/typography-kit/typography-1440.png), [1920px](https://github.com/daniilterekh-prog/barnes-sites/blob/main/main-site/pages/catalog/verification/typography-kit/typography-1920.png).
 
 Повторная проверка: `node katalog-nedvizhimosti/tools/check_catalog_typography.cjs`. URL каталога и каталог отчёта задаются BARNES_CATALOG_URL и BARNES_PROOF_DIR. Используется существующий Playwright/Chrome, новых пакетов/шрифтов не установлено.
 
-Уточнение от 03.11.2026: по отдельному запросу хлебные крошки перенесены на шкалу [страницы продажи собственникам](https://barn-estate.ru/prodazha_sobstvennikam/): 12/13/17px и отдельный адаптивный размер разделителя. [Замеры 20 ширин](https://github.com/daniilterekh-prog/barnes-sites/blob/main/katalog-nedvizhimosti/verification/owner-breadcrumbs/breadcrumbs.json). Остальные роли этого аудита сохранены.
+Уточнение от 03.11.2026: по отдельному запросу хлебные крошки перенесены на шкалу [страницы продажи собственникам](https://barn-estate.ru/prodazha_sobstvennikam/): 12/13/17px и отдельный адаптивный размер разделителя. [Замеры 20 ширин](https://github.com/daniilterekh-prog/barnes-sites/blob/main/main-site/pages/catalog/verification/owner-breadcrumbs/breadcrumbs.json). Остальные роли этого аудита сохранены.
 
-По уточнению пользователя сортировка и «На карте» также переведены на --home-field (17/18/20px), [проверены 50 сочетаний](https://github.com/daniilterekh-prog/barnes-sites/blob/main/katalog-nedvizhimosti/verification/result-type/typography.json). Счётчик и сброс остаются компактными.
+По уточнению пользователя сортировка и «На карте» также переведены на --home-field (17/18/20px), [проверены 50 сочетаний](https://github.com/daniilterekh-prog/barnes-sites/blob/main/main-site/pages/catalog/verification/result-type/typography.json). Счётчик и сброс остаются компактными.
 
-Уточнение H1: по запросу пользователя используется шкала узловых страниц — 32px до 540px и clamp(38px,4vw,58px) выше, 300/1.05/−0.045em. Регистр обычный: «Каталог недвижимости». [Сравнение с городской/загородной на 14 ширинах](https://github.com/daniilterekh-prog/barnes-sites/blob/main/katalog-nedvizhimosti/verification/node-h1/h1.json). Эта роль заменяет прежние 22/38/44px только у H1 каталога.
+Уточнение H1: по запросу пользователя используется шкала узловых страниц — 32px до 540px и clamp(38px,4vw,58px) выше, 300/1.05/−0.045em. Регистр обычный: «Каталог недвижимости». [Сравнение с городской/загородной на 14 ширинах](https://github.com/daniilterekh-prog/barnes-sites/blob/main/main-site/pages/catalog/verification/node-h1/h1.json). Эта роль заменяет прежние 22/38/44px только у H1 каталога.
 
 ## Финальная сверка с фактической главной, без изменений карточек — 03.11.2026
 
@@ -59,13 +59,13 @@
 
 Доказательства:
 
-- [Замеры фактической главной и каталога до правки](https://github.com/daniilterekh-prog/barnes-sites/blob/main/katalog-nedvizhimosti/verification/final-fonts/before-pairs.json).
-- [Итоговая сверка: 15 ширин 320–3840px и 24 состояния](https://github.com/daniilterekh-prog/barnes-sites/blob/main/katalog-nedvizhimosti/verification/final-fonts/audit.json).
-- [Неизменность карточек и мини-карточек карты](https://github.com/daniilterekh-prog/barnes-sites/blob/main/katalog-nedvizhimosti/verification/final-fonts/cards-unchanged.json).
-- [Панель, ввод, применение, сброс, сортировка, доступность](https://github.com/daniilterekh-prog/barnes-sites/blob/main/katalog-nedvizhimosti/verification/final-fonts/two-row-toolbar.json).
+- [Замеры фактической главной и каталога до правки](https://github.com/daniilterekh-prog/barnes-sites/blob/main/main-site/pages/catalog/verification/final-fonts/before-pairs.json).
+- [Итоговая сверка: 15 ширин 320–3840px и 24 состояния](https://github.com/daniilterekh-prog/barnes-sites/blob/main/main-site/pages/catalog/verification/final-fonts/audit.json).
+- [Неизменность карточек и мини-карточек карты](https://github.com/daniilterekh-prog/barnes-sites/blob/main/main-site/pages/catalog/verification/final-fonts/cards-unchanged.json).
+- [Панель, ввод, применение, сброс, сортировка, доступность](https://github.com/daniilterekh-prog/barnes-sites/blob/main/main-site/pages/catalog/verification/final-fonts/two-row-toolbar.json).
 
 Новых зависимостей и шрифтов нет. Изменения ограничены локальными адаптерами каталога; канонические слои кита и селекторы карточек сохранены.
 
 ### Уточнение: вернуть фильтры как было — 03.11.2026
 
-По следующему сообщению пользователя унификация управляющих размеров отменена. Актуальны прежние 17/18/20px для панели, поиска, сортировки и кнопки карты; 17/18/20px для диапазонов полной формы и 17/19px для управления внутри карты. Три CSS-адаптера восстановлены побайтно из версии до унификации. Остальные результаты сравнения общих компонентов с главной и неизменность карточек сохраняются. Таблица выше описывает исторический вариант, текущая шкала — в [FONT-SIZES.md](FONT-SIZES.md). [Повторная проверка](https://github.com/daniilterekh-prog/barnes-sites/blob/main/katalog-nedvizhimosti/verification/filters-restored/audit.json).
+По следующему сообщению пользователя унификация управляющих размеров отменена. Актуальны прежние 17/18/20px для панели, поиска, сортировки и кнопки карты; 17/18/20px для диапазонов полной формы и 17/19px для управления внутри карты. Три CSS-адаптера восстановлены побайтно из версии до унификации. Остальные результаты сравнения общих компонентов с главной и неизменность карточек сохраняются. Таблица выше описывает исторический вариант, текущая шкала — в [FONT-SIZES.md](FONT-SIZES.md). [Повторная проверка](https://github.com/daniilterekh-prog/barnes-sites/blob/main/main-site/pages/catalog/verification/filters-restored/audit.json).

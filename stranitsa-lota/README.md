@@ -1,6 +1,6 @@
 # Общий шаблон лота BARNES
 
-[Открыть последнюю опубликованную версию в GitHub Pages](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/stranitsa-lota/?v=b01bcd4). Публичный экспорт исходника `b80dd67` — commit `369625429bfdb7185911aee9b8c303ca8d9983b8`, защита CSS/JS от старого кэша — `b01bcd4c495e59ea1f80aa2dd83e894e074097e9` в `barn-estate-homepage-clone`. [Проверка опубликованной страницы](https://github.com/daniilterekh-prog/barnes-sites/blob/main/stranitsa-lota/verification/pages.json). Это превью, не установка на рабочий домен агентства.
+[Открыть последнюю опубликованную версию в GitHub Pages](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/stranitsa-lota/?v=b01bcd4). Публичный экспорт исходника `b80dd67` — commit `369625429bfdb7185911aee9b8c303ca8d9983b8`, защита CSS/JS от старого кэша — `b01bcd4c495e59ea1f80aa2dd83e894e074097e9` в `barn-estate-homepage-clone`. [Проверка опубликованной страницы](https://github.com/daniilterekh-prog/barnes-sites/blob/main/main-site/pages/lot/verification/pages.json). Это превью, не установка на рабочий домен агентства.
 
 ## Текущее оформление · 01.11.2026
 
@@ -8,19 +8,19 @@
 
 `home-kit.css` — единые роли типографики, сетки и кнопок; `home-kit.js` — контакты хедера и доступные подписи форм. Сохранены H1 объекта, цена, галерея, характеристики, условные секции, брокер и обращение по конкретному лоту. Страница не превращена в главную или лендинг ЖК. Формы по-прежнему локальные, CRM не подключена.
 
-[Новые проверки и снимки](https://github.com/daniilterekh-prog/barnes-sites/blob/main/stranitsa-lota/verification/home-kit.json) · [390 px](https://github.com/daniilterekh-prog/barnes-sites/blob/main/stranitsa-lota/verification/page-390.png) · [1440 px](https://github.com/daniilterekh-prog/barnes-sites/blob/main/stranitsa-lota/verification/page-1440.png) · [2560 px](https://github.com/daniilterekh-prog/barnes-sites/blob/main/stranitsa-lota/verification/page-2560.png) · [план переноса](https://github.com/daniilterekh-prog/barnes-sites/blob/main/stranitsa-lota/IMPLEMENTATION.md).
+[Новые проверки и снимки](https://github.com/daniilterekh-prog/barnes-sites/blob/main/main-site/pages/lot/verification/home-kit.json) · [390 px](https://github.com/daniilterekh-prog/barnes-sites/blob/main/main-site/pages/lot/verification/page-390.png) · [1440 px](https://github.com/daniilterekh-prog/barnes-sites/blob/main/main-site/pages/lot/verification/page-1440.png) · [2560 px](https://github.com/daniilterekh-prog/barnes-sites/blob/main/main-site/pages/lot/verification/page-2560.png) · [план переноса](https://github.com/daniilterekh-prog/barnes-sites/blob/main/main-site/pages/lot/IMPLEMENTATION.md).
 
 Проверка кита: сервер на4194 и `PLAYWRIGHT_MODULE=/путь/к/playwright node main-site/pages/lot/verify-home-kit.cjs` из корня. Проверяет12 ширин320–3840 px, фактические токены, новые общие блоки, подписи/контекст формы, валидацию, меню, мобильные контакты, галерею, материалы, футер и Escape.
 
 Исторические `preview-desktop.png`, `preview-mobile.png` и сравнение конкурентов ниже относятся к структуре до визуального переноса; для актуального вида использовать снимки из `verification/`.
 
-Рабочая страница: `/stranitsa-lota/`. Один тип страницы для всех лотов, без папок по ID. Главная и страница ЖК независимы. На живой домен эта версия не установлена.
+Рабочая страница: `/main-site/pages/lot/`. Один тип страницы для всех лотов, без папок по ID. Главная и страница ЖК независимы. На живой домен эта версия не установлена.
 
 Фото, цена и брокер → описание и характеристики → планировка при наличии → расположение → компактная справка о доме при подтверждённой связи → реальные похожие предложения при наличии → контакт.
 
-[Анализ конкурентов и решение](https://github.com/daniilterekh-prog/barnes-sites/blob/main/stranitsa-lota/STRUCTURE-ANALYSIS.md) · [Проверка новой структуры](https://github.com/daniilterekh-prog/barnes-sites/blob/main/stranitsa-lota/structure-verification.json).
+[Анализ конкурентов и решение](https://github.com/daniilterekh-prog/barnes-sites/blob/main/main-site/pages/lot/STRUCTURE-ANALYSIS.md) · [Проверка новой структуры](https://github.com/daniilterekh-prog/barnes-sites/blob/main/main-site/pages/lot/structure-verification.json).
 
-Проверенные снимки новой версии: [1440 px](https://github.com/daniilterekh-prog/barnes-sites/blob/main/stranitsa-lota/preview-desktop.png), [390 px](https://github.com/daniilterekh-prog/barnes-sites/blob/main/stranitsa-lota/preview-mobile.png).
+Проверенные снимки новой версии: [1440 px](https://github.com/daniilterekh-prog/barnes-sites/blob/main/main-site/pages/lot/preview-desktop.png), [390 px](https://github.com/daniilterekh-prog/barnes-sites/blob/main/main-site/pages/lot/preview-mobile.png).
 
 ## Данные
 
@@ -42,6 +42,6 @@
 
 `verification.json`, `interaction-verification.json`, `data-binding-verification.json`, `PLAN.md` — исторические проверки/план копии **до** изменения структуры, не доказательство соответствия текущей страницы оригиналу пиксель в пиксель.
 
-Превью из корня: `python3 tools/preview.py --port 4192`, открыть `http://127.0.0.1:4192/stranitsa-lota/`.
+Превью из корня: `python3 tools/preview.py --port 4192`, открыть `http://127.0.0.1:4192/main-site/pages/lot/`.
 
 Проверка: `PLAYWRIGHT_MODULE=/путь/к/playwright node main-site/pages/lot/verify.cjs`. Использует уже установленный Playwright и Chrome; ничего не устанавливает. Семь ширин 320–1920 px, overflow, изображения, якоря, три диалога, Escape и три варианта данных. Снимки — `/tmp`, отчёт — рядом. Тестовая картинка планировки проверяет только условный рендер, не попадает в демонстрационное наполнение.

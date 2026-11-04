@@ -1,4 +1,4 @@
-/* Media header v1.0.0. Only headers opt into this component. */
+/* Media header v1.1.0, mobile sticky menu 2026-11-04. Only headers opt into this component. */
 html body.barnes-media-header {--mh-gutter:calc(-26.66667px + 6.59722vw);--mh-pad:32px;--mh-logo:48px;--mh-panel-offset:41px;--mh-ink:#1e1e1e;}
 html body.barnes-media-header .site-header {display:flex;flex-direction:column;padding-top:var(--mh-pad)!important;}
 html body.barnes-media-header .site-header__inner.base-container {box-sizing:border-box!important;width:100%!important;max-width:1920px!important;margin-inline:auto!important;padding-inline:var(--mh-gutter)!important;}
@@ -85,3 +85,22 @@ html body.barnes-media-header :is(.site-header--scrolled,.owner-sale-sticky) .mh
 html body.barnes-media-header .owner-sale-sticky__nav {overflow-x:auto!important;overflow-y:hidden!important;}
 
 html body.barnes-media-header .owner-sale-sticky {border-bottom:1px solid rgba(30,30,30,.1)!important;}
+
+/* One mobile row: menu / logo / contacts. Page anchors remain available on desktop. */
+html body.barnes-media-header .mh-sticky-menu{display:none}
+@media(max-width:1024px){
+ html body.barnes-media-header .owner-sale-sticky__nav{display:none!important}
+ html body.barnes-media-header .owner-sale-sticky__inner.base-container{column-gap:0!important;min-height:110px!important}
+ html body.barnes-media-header .mh-sticky-menu{display:flex;align-items:center;justify-content:flex-start;grid-column:1;grid-row:1;justify-self:start;width:44px;height:44px;padding:0;border:0;background:transparent;color:inherit;cursor:pointer}
+ html body.barnes-media-header .mh-sticky-menu .site-header__icon{display:flex;width:33px;height:33px}
+ html body.barnes-media-header .mh-sticky-menu svg{width:100%;height:100%}
+ html body.barnes-media-header:has(.site-header--menu-open) .owner-sale-sticky{visibility:hidden!important;pointer-events:none!important}
+}
+@media(max-width:540px){
+ html body.barnes-media-header .owner-sale-sticky__inner.base-container{min-height:76px!important}
+ html body.barnes-media-header .mh-sticky-menu .site-header__icon{width:29px;height:29px}
+}
+
+/* Identical glyph inset on Media and owner/partner headers; retain the 44px touch target. */
+html body.barnes-media-header .site-header__left > .site-header__icon-btn{justify-content:flex-start!important}
+@media(min-width:1025px){html body.barnes-media-header .site-header__left > .site-header__icon-btn{width:33px!important;height:33px!important;min-width:33px!important;min-height:33px!important;flex:0 0 33px!important}}

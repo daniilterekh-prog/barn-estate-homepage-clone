@@ -2,7 +2,7 @@
 
 Точка входа: `index.html`. Для проверки заполненного состояния: `index.html?preview=1`. Превью содержит исходные демонстрационные карточки UI-кита и не записывает их в localStorage. Обычная страница показывает только сохранённые объекты.
 
-Запуск: `python3 tools/preview.py --port 8018` из корня репозитория. Адрес `/izbrannoe/`.
+Запуск: `python3 tools/preview.py --port 8018` из корня репозитория. Адрес `/main-site/pages/favorites/`.
 
 ## UI: канонические компоненты
 
@@ -29,7 +29,7 @@
 
 `NODE_PATH=<путь к установленному Playwright> node tools/check-favorites.cjs` при работающем сервере 8018. Порт можно изменить через `BARNES_PREVIEW_URL`.
 
-[Проверенный результат](https://github.com/daniilterekh-prog/barnes-sites/blob/main/izbrannoe/verification.json): 320, 390, 540, 768, 1024, 1440, 1920 и 2560 px. Проверены сохранение и миграция ID, вкладки лотов/ЖК, сортировка через канонический dropdown, удаление/отмена, очистка/отмена, синхронизация вкладок, изоляция демонстрационного состояния, контактное окно, меню, Escape/возврат фокуса, загрузка фотографий/логотипов, отсутствие ошибок JS и горизонтального переполнения.
+[Проверенный результат](https://github.com/daniilterekh-prog/barnes-sites/blob/main/main-site/pages/favorites/verification.json): 320, 390, 540, 768, 1024, 1440, 1920 и 2560 px. Проверены сохранение и миграция ID, вкладки лотов/ЖК, сортировка через канонический dropdown, удаление/отмена, очистка/отмена, синхронизация вкладок, изоляция демонстрационного состояния, контактное окно, меню, Escape/возврат фокуса, загрузка фотографий/логотипов, отсутствие ошибок JS и горизонтального переполнения.
 
 Типографика, размеры кнопок, фактов и SVG-сердечек дополнительно сопоставлены по computed styles с исходной карточкой, без стилей композиции страницы: `tools/favorites-reference.html` на 390 и 1440 px. Все перенесённые файлы сверены с SHA-256 источника.
 
@@ -40,7 +40,7 @@
 
 [Страница избранного](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/izbrannoe/) · [Заполненный пример](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/izbrannoe/?preview=1).
 
-Публичная копия: `barn-estate-homepage-clone/izbrannoe`, master, commit `b84fd37`. [Подтверждение сборки и живых проверок](https://github.com/daniilterekh-prog/barnes-sites/blob/main/izbrannoe/pages-release.json). К существующему публичному каталогу применены только ссылка хедера и снятие прежнего перехвата клика; его новое оформление и фильтры сохранены.
+Публичная копия: `barn-estate-homepage-clone/izbrannoe`, master, commit `b84fd37`. [Подтверждение сборки и живых проверок](https://github.com/daniilterekh-prog/barnes-sites/blob/main/main-site/pages/favorites/pages-release.json). К существующему публичному каталогу применены только ссылка хедера и снятие прежнего перехвата клика; его новое оформление и фильтры сохранены.
 
 Публичный релиз использует все 15 объектов текущего `katalog-nedvizhimosti/objects.json` и общий ключ `barnes-catalog-favorites`. Карточки формируются при экспорте, CSS UI-кита остаётся неизменным. Пути меню адаптированы под публичную структуру. Исходные демонстрационные карточки доступны только в помеченном режиме просмотра.
 
@@ -55,18 +55,18 @@
 
 У стандартного CTA «Перейти в каталог» устранены унаследованные значения 500/3 px: используется ActionButton из текущего UI-кита — weight 400, radius 1 px, mobile height 58 px и font 18 px; desktop height 70 px/font 17 px; от 1441 px font 19 px. Стили карточных компактных кнопок и футера этим исправлением не заменяются.
 
-Регрессия: `NODE_PATH=<Playwright> node tools/check-favorites-menu.cjs`. URL страницы и эталона можно задать `FAVORITES_MENU_URL` и `OWNER_REFERENCE_URL`. Проверка сравнивает computed styles и SVG с настоящей страницей собственников; не с копией собственного компонента. [Результат](https://github.com/daniilterekh-prog/barnes-sites/blob/main/izbrannoe/menu-verification.json).
+Регрессия: `NODE_PATH=<Playwright> node tools/check-favorites-menu.cjs`. URL страницы и эталона можно задать `FAVORITES_MENU_URL` и `OWNER_REFERENCE_URL`. Проверка сравнивает computed styles и SVG с настоящей страницей собственников; не с копией собственного компонента. [Результат](https://github.com/daniilterekh-prog/barnes-sites/blob/main/main-site/pages/favorites/menu-verification.json).
 
-Публичное обновление меню: commit `009583d`, [успешная сборка Pages](https://github.com/daniilterekh-prog/barn-estate-homepage-clone/actions/runs/39326323714). На живой странице проверены 390/1440/1920 px: [результат](https://github.com/daniilterekh-prog/barnes-sites/blob/main/izbrannoe/menu-live-verification.json).
+Публичное обновление меню: commit `009583d`, [успешная сборка Pages](https://github.com/daniilterekh-prog/barn-estate-homepage-clone/actions/runs/39326323714). На живой странице проверены 390/1440/1920 px: [результат](https://github.com/daniilterekh-prog/barnes-sites/blob/main/main-site/pages/favorites/menu-live-verification.json).
 
 
 ## Выравнивание сортировки — 19.10.2026
 
 Убран наследованный mobile max-width 190 px. У кнопки подпись и chevron находятся в одном inline-flex ряду с gap 16 px; стрелка привязана к кнопке, а прежняя абсолютная стрелка контейнера отключена. Шрифт и геометрия бордового dropdown UI-кита сохранены. Touch-зона — 44 px.
 
-`NODE_PATH=<Playwright> node tools/check-favorites-sort.cjs` проверяет реальную геометрию нарисованных сторон стрелки через Chrome DevTools: зазор до текста не меньше 12 px и смещение от центра текста не больше 2.5 px. Проверены все три варианта сортировки на 320/390/540/768/1024/1440/1920/2560 px, одна строка, отсутствие переполнения, Escape и возврат фокуса. До исправления воспроизведено перекрытие 5 px на ширине 320. [Результат](https://github.com/daniilterekh-prog/barnes-sites/blob/main/izbrannoe/sort-verification.json).
+`NODE_PATH=<Playwright> node tools/check-favorites-sort.cjs` проверяет реальную геометрию нарисованных сторон стрелки через Chrome DevTools: зазор до текста не меньше 12 px и смещение от центра текста не больше 2.5 px. Проверены все три варианта сортировки на 320/390/540/768/1024/1440/1920/2560 px, одна строка, отсутствие переполнения, Escape и возврат фокуса. До исправления воспроизведено перекрытие 5 px на ширине 320. [Результат](https://github.com/daniilterekh-prog/barnes-sites/blob/main/main-site/pages/favorites/sort-verification.json).
 
-Сортировка опубликована: commit `023c11d`, Pages run `39326973479`. [Проверка живой страницы](https://github.com/daniilterekh-prog/barnes-sites/blob/main/izbrannoe/sort-live-verification.json): все три подписи на 390 и 1440 px.
+Сортировка опубликована: commit `023c11d`, Pages run `39326973479`. [Проверка живой страницы](https://github.com/daniilterekh-prog/barnes-sites/blob/main/main-site/pages/favorites/sort-live-verification.json): все три подписи на 390 и 1440 px.
 
 19.10.2026: по просьбе пользователя удалены верхняя подпись «Пример подборки · карточки из UI-кита BARNES» и ссылка «Открыть моё избранное». Удалены разметка, неиспользуемые стили и обращение JS к этому блоку; режим просмотра и изоляция localStorage сохранены.
 
@@ -82,7 +82,7 @@
 
 Удалены счётчик из H1, «Ваша подборка», вступительное описание и видимое сообщение о режиме просмотра. Сам режим просмотра по-прежнему не меняет сохранённое избранное.
 
-Актуальная проверка хедера: `NODE_PATH=<Playwright> node tools/check-favorites-live-ui.cjs` (переменная `FAVORITES_UI_URL` задаёт URL страницы). Она сравнивает стили с живыми эталонами и заменяет старое сравнение хедера со снимком собственников. [Результат](https://github.com/daniilterekh-prog/barnes-sites/blob/main/izbrannoe/live-ui-verification.json). Дополнительно проверены 390/768/1440/1920 px, меню и сортировка. Источник и хэш перенесённых правил записаны в `ui-source.json`.
+Актуальная проверка хедера: `NODE_PATH=<Playwright> node tools/check-favorites-live-ui.cjs` (переменная `FAVORITES_UI_URL` задаёт URL страницы). Она сравнивает стили с живыми эталонами и заменяет старое сравнение хедера со снимком собственников. [Результат](https://github.com/daniilterekh-prog/barnes-sites/blob/main/main-site/pages/favorites/live-ui-verification.json). Дополнительно проверены 390/768/1440/1920 px, меню и сортировка. Источник и хэш перенесённых правил записаны в `ui-source.json`.
 
 
 ## Публичный релиз
@@ -99,7 +99,7 @@ https://daniilterekh-prog.github.io/barn-estate-homepage-clone/izbrannoe/ — с
 
 На больших экранах вкладки и сортировка имеют высоту 44 px и совпадающие базовые линии текста. Мобильные вкладки закреплены слева с зазором 24 px; подпись ЖК сокращена на телефоне. Сортировка расположена строкой выше, активная вкладка примыкает к разделительной линии. «Продолжить поиск» оформлено вторичной ActionButton с SVG-стрелкой.
 
-Проверка: `NODE_PATH=<Playwright> node tools/check-favorites-controls.cjs`; `FAVORITES_CONTROLS_URL` задаёт проверяемую страницу. [Результаты](https://github.com/daniilterekh-prog/barnes-sites/blob/main/izbrannoe/controls-verification.json): 320/390/540/768/1440/1920 px, неизменные мобильные зазоры, положение у линии, совпадение текста на десктопе, оформление списка, выбор клавиатурой, Escape и отсутствие переполнения. Дополнительно прежняя проверка стрелки прошла для всех трёх вариантов сортировки.
+Проверка: `NODE_PATH=<Playwright> node tools/check-favorites-controls.cjs`; `FAVORITES_CONTROLS_URL` задаёт проверяемую страницу. [Результаты](https://github.com/daniilterekh-prog/barnes-sites/blob/main/main-site/pages/favorites/controls-verification.json): 320/390/540/768/1440/1920 px, неизменные мобильные зазоры, положение у линии, совпадение текста на десктопе, оформление списка, выбор клавиатурой, Escape и отсутствие переполнения. Дополнительно прежняя проверка стрелки прошла для всех трёх вариантов сортировки.
 
 ## Отступ под хэдером — 21.10.2026
 
@@ -115,7 +115,7 @@ https://daniilterekh-prog.github.io/barn-estate-homepage-clone/izbrannoe/ — с
 
 Актуальные рабочие исходники теперь находятся в `barnes-sites/main-site/pages/favorites` в **main**; прежняя ветка `codex/favorites-page` — история, не источник для перезаписи этой версии.
 
-[Проверки](https://github.com/daniilterekh-prog/barnes-sites/blob/main/izbrannoe/kit-verification.json): 390/768/1440/1920/2560 px; новый хэдер/футер, меню/Escape/фокус, контакты, отсутствие скачка страницы при липком хэдере, сортировка, контекст объекта в квизе, валюты/каналы/валидация/согласие, сохранение после reload, удаление и отмена, изоляция превью, отсутствие ошибок JS и переполнения.
+[Проверки](https://github.com/daniilterekh-prog/barnes-sites/blob/main/main-site/pages/favorites/kit-verification.json): 390/768/1440/1920/2560 px; новый хэдер/футер, меню/Escape/фокус, контакты, отсутствие скачка страницы при липком хэдере, сортировка, контекст объекта в квизе, валюты/каналы/валидация/согласие, сохранение после reload, удаление и отмена, изоляция превью, отсутствие ошибок JS и переполнения.
 
 ### Уточнение пользователя · 01.11.2026
 
@@ -139,7 +139,7 @@ https://daniilterekh-prog.github.io/barn-estate-homepage-clone/izbrannoe/ — с
 
 Playwright:10ширин320–2560px, совпадение вычисленных шрифтов H1/крошек/вкладок/сортировки с общей выдачей; все9подменю наdesktop, выравнивание текста с точностью1px, hover/клавиатура/Escape, мобильный бургер и сортировка. Переполнения и ошибок JS нет.
 
-[Результат сверки с выдачей](https://github.com/daniilterekh-prog/barnes-sites/blob/main/izbrannoe/catalog-parity-verification.json).
+[Результат сверки с выдачей](https://github.com/daniilterekh-prog/barnes-sites/blob/main/main-site/pages/favorites/catalog-parity-verification.json).
 
 Проверка опубликованной версии `9d3055c`: те же10ширин и сценарии прошли успешно. [Сборка Pages](https://github.com/daniilterekh-prog/barn-estate-homepage-clone/actions/runs/41638018051) завершена успешно.
 
