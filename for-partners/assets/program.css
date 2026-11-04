@@ -70,3 +70,10 @@
 @keyframes ap-logo-right{from{transform:translateX(calc(-50% - var(--ap-logo-shift)))}to{transform:translateX(0)}}
 @media(max-width:1440px){.ambassadors-page .ap-partners{--ap-logo-gap:20px;--ap-logo-shift:10px}.ambassadors-page .partners-section__card{width:240px;height:140px;padding:24px 20px}}
 @media(max-width:540px){.ambassadors-page .ap-partners{--ap-logo-gap:12px;--ap-logo-shift:6px}.ambassadors-page .partners-section__card{width:180px;height:100px;padding:16px 12px}}
+
+/* Shared eyebrow spacing previously lived in the retired mechanics stylesheet. */
+.partners-owner-shell .partners-section-eyebrow{color:currentColor;font-size:14px;font-weight:400;letter-spacing:.12em;line-height:1.15;margin:0 0 25px;text-align:left;text-transform:uppercase}
+.partners-owner-shell :is(.catalog-contact,.newsletter-cta) .partners-section-eyebrow{color:inherit}
+.partners-owner-shell .catalog-faq__inner>.partners-section-eyebrow{margin-bottom:-7px}
+@media(max-width:900px){.partners-owner-shell .partners-section-eyebrow{margin-bottom:12px}.partners-owner-shell .catalog-faq__inner>.partners-section-eyebrow{margin-bottom:-20px}}
+@media(max-width:540px){.partners-owner-shell .partners-section-eyebrow{font-size:12px;line-height:1.2}.partners-owner-shell .catalog-faq__inner>.partners-section-eyebrow{margin-bottom:-12px}}
