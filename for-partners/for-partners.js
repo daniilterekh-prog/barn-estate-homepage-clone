@@ -6,12 +6,12 @@
 
   var stagesStylesheet = document.createElement('link');
   stagesStylesheet.rel = 'stylesheet';
-  stagesStylesheet.href = 'assets/how-it-works.css?v=20261008-7';
+  stagesStylesheet.href = 'assets/how-it-works.css?v=343fe6f58205';
   document.head.appendChild(stagesStylesheet);
 
   var conditionsStylesheet = document.createElement('link');
   conditionsStylesheet.rel = 'stylesheet';
-  conditionsStylesheet.href = 'assets/conditions-heading.css?v=20261009-pointer-hover';
+  conditionsStylesheet.href = 'assets/conditions-heading.css?v=bbade4cf86ea';
   document.head.appendChild(conditionsStylesheet);
 
   page.querySelectorAll('.ambassadors-conditions__reveal').forEach(function (button) {
@@ -51,22 +51,22 @@
 
   var ownerShellStylesheet = document.createElement('link');
   ownerShellStylesheet.rel = 'stylesheet';
-  ownerShellStylesheet.href = 'assets/owner-shell.css?v=20261009-newsletter-width';
+  ownerShellStylesheet.href = 'assets/owner-shell.css?v=ee74ae468179';
   document.head.appendChild(ownerShellStylesheet);
 
   var modalStylesheet = document.createElement('link');
   modalStylesheet.rel = 'stylesheet';
-  modalStylesheet.href = 'assets/partner-modal.css?v=20261008-2';
+  modalStylesheet.href = 'assets/partner-modal.css?v=faa6a38e5a69';
   document.head.appendChild(modalStylesheet);
 
   var faqStylesheet = document.createElement('link');
   faqStylesheet.rel = 'stylesheet';
-  faqStylesheet.href = 'assets/faq-typography.css?v=20261008-2';
+  faqStylesheet.href = 'assets/faq-typography.css?v=588ee8d9d463';
   document.head.appendChild(faqStylesheet);
 
   var buttonStylesheet = document.createElement('link');
   buttonStylesheet.rel = 'stylesheet';
-  buttonStylesheet.href = 'assets/button-kit.css?v=20261008-2';
+  buttonStylesheet.href = 'assets/button-kit.css?v=98f549e5b1f0';
   document.head.appendChild(buttonStylesheet);
 
   document.body.classList.add('partners-owner-shell');

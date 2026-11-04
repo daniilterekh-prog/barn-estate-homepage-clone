@@ -6,10 +6,10 @@
 | Цвета, рамки и состояния | [design/COLORS.md](design/COLORS.md) |
 | Размеры блоков, отступы, сетка и адаптив | [design/SPACING.md](design/SPACING.md) |
 | Фактические параметры на разных ширинах | [design/MEASUREMENTS.json](design/MEASUREMENTS.json) |
-| HTML | [code/html/](code/html/) |
-| CSS | [code/css/](code/css/) |
-| JavaScript | [code/js/](code/js/) |
-| Изображения, иконки, шрифты и лицензии | [code/assets/](code/assets/) |
+| HTML | [code/html/](https://github.com/daniilterekh-prog/barnes-sites/blob/main/izbrannoe/developer-handoff-2026-11-03/code/html) |
+| CSS | [code/css/](https://github.com/daniilterekh-prog/barnes-sites/blob/main/izbrannoe/developer-handoff-2026-11-03/code/css) |
+| JavaScript | [code/js/](https://github.com/daniilterekh-prog/barnes-sites/blob/main/izbrannoe/developer-handoff-2026-11-03/code/js) |
+| Изображения, иконки, шрифты и лицензии | [code/assets/](https://github.com/daniilterekh-prog/barnes-sites/blob/main/izbrannoe/developer-handoff-2026-11-03/code/assets) |
 | Источники и контрольные суммы | [SOURCE.json](SOURCE.json) |
 
 [Открыть вёрстку с двумя примерами](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/handoff/favorites-2026-11-03/code/html/index.html?preview=1).
@@ -18,7 +18,7 @@
 
 `?preview=1` показывает два примера и не меняет сохранённое избранное. Без параметра используется общий ключ `barnes-catalog-favorites` в localStorage; на том же origin это та же подборка, что на основной странице. Формы — фронтенд-превью, CRM и отправка заявок не подключены. Внешние ссылки на разделы сайта ведут в опубликованный основной сайт.
 
-Снимок03.11.2026. Навигация и типографика соответствуют общей выдаче, карточки сохранены по отдельному указанию пользователя. Канонические рабочие исходники: `barnes-sites/main-site/pages/favorites/`; пакет является отдельной передачей разработчику и не подменяет исходники страницы.
+Снимок03.11.2026. Навигация и типографика соответствуют общей выдаче, карточки сохранены по отдельному указанию пользователя. Канонические рабочие исходники: `barnes-sites/izbrannoe/`; пакет является отдельной передачей разработчику и не подменяет исходники страницы.
 
 Спецификация:16ширин320–3840px,25состояний. [Проверки](VERIFICATION.json): самостоятельная загрузка ассетов, отсутствие ошибок JS, побайтово одинаковые снимки оригинала и экспорта на390/1440/1920px. Штатные сценарии избранного дополнительно прошли на5ширинах. `tools/measure.cjs` использует установленный Playwright; BASE задаёт корень опубликованного или локального превью.
 

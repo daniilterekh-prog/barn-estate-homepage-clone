@@ -6,10 +6,10 @@
 | Цвета, рамки и состояния | [design/COLORS.md](design/COLORS.md) |
 | Размеры блоков, отступы, сетка и адаптив | [design/SPACING.md](design/SPACING.md) |
 | Точные параметры элементов на разных ширинах | [design/MEASUREMENTS.json](design/MEASUREMENTS.json) |
-| HTML | [code/html/](code/html/) |
-| CSS | [code/css/](code/css/) |
-| JavaScript | [code/js/](code/js/) |
-| Картинки, иконки и локальные шрифты | [code/assets/](code/assets/) |
+| HTML | [code/html/](https://github.com/daniilterekh-prog/barnes-sites/blob/main/katalog-nedvizhimosti/developer-handoff-2026-11-03/code/html) |
+| CSS | [code/css/](https://github.com/daniilterekh-prog/barnes-sites/blob/main/katalog-nedvizhimosti/developer-handoff-2026-11-03/code/css) |
+| JavaScript | [code/js/](https://github.com/daniilterekh-prog/barnes-sites/blob/main/katalog-nedvizhimosti/developer-handoff-2026-11-03/code/js) |
+| Картинки, иконки и локальные шрифты | [code/assets/](https://github.com/daniilterekh-prog/barnes-sites/blob/main/katalog-nedvizhimosti/developer-handoff-2026-11-03/code/assets) |
 
 В спецификации: 15 ширин 320–3840px, 75 состояний интерфейса, 213 текстовых стилей и таблицы геометрии компонентов.
 

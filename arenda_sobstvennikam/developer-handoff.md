@@ -3,7 +3,7 @@
 **Страница:** `/arenda_sobstvennikam/`  
 **Статус:** актуальная зафиксированная версия локального клона  
 **Дата:** 7 октября 2026  
-**Reference:** [`../reference-ui.md`](../reference-ui.md)
+**Reference:** [`../reference-ui.md`](https://github.com/daniilterekh-prog/barnes-sites/blob/main/main-site/pages/reference-ui.md)
 
 Этот документ фиксирует согласованные изменения страницы для последующего переноса на живой сайт. Обновлять его вместе с каждой новой правкой страницы.
 

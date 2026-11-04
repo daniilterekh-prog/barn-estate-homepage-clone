@@ -2,7 +2,7 @@
 
 Дата:01.11.2026. Основа — **утверждённый UI-кит главной BARN Estate v1.0.0 от01.11.2026**, [неизменная метка](https://github.com/daniilterekh-prog/barnes-sites/tree/barn-estate-home-reference-v1.0.0/main-site/pages/home/exact-2026-10-21). Это версия производной Курортной, не перезапись кита главной.
 
-**Исключения пользователя: H1 hero и весь FAQ сохраняют прежние правила.** Их собственные CSS, интервалы, текст и исходники не унифицируются. [Зафиксированные значения](verification/home-reference-exceptions.json), [проверка](verification/home-reference.json).
+**Исключения пользователя: H1 hero и весь FAQ сохраняют прежние правила.** Их собственные CSS, интервалы, текст и исходники не унифицируются. [Зафиксированные значения](https://github.com/daniilterekh-prog/barnes-sites/blob/main/kurortnaya/verification/home-reference-exceptions.json), [проверка](https://github.com/daniilterekh-prog/barnes-sites/blob/main/kurortnaya/verification/home-reference.json).
 
 ## Общие роли
 
@@ -53,7 +53,7 @@ Tilda Sans. Цвет заголовков#1e1e1e, описаний#4f4d49, пр�
 
 ## Перенос и проверка
 
-[Страница и структура](README.md) · [15 блоков и3карточки](blocks/README.md) · [Проверка переносимости](verification/package.json) · [План и происхождение](kit-2026-11-01.md).
+[Страница и структура](README.md) · [15 блоков и3карточки](blocks/README.md) · [Проверка переносимости](https://github.com/daniilterekh-prog/barnes-sites/blob/main/kurortnaya/verification/package.json) · [План и происхождение](kit-2026-11-01.md).
 
 H1 и FAQ — явные исключения этой версии, не незавершённые исправления. Картинки hero, затемнение и содержимое каталога не менялись. Прежние параметры доступны в Git-истории, а не являются параллельной актуальной версией кита.
 
@@ -114,7 +114,7 @@ Splide скопирован из существующего автономног
 
 03.11.2026: окончательное расположение крошек и отсутствие меню под линией описаны в текущем контракте первого экрана выше.
 
-02.11.2026: в обоих тёмных CTA активный ContactAction — фон/рамка#8b1d25, белые текст и иконка. Неактивные прозрачные; выбран ровно один способ, aria-selected и --active синхронны. Светлая заливка отменена. [Проверка](verification/cta-contact-active-2026-11-02.json).
+02.11.2026: в обоих тёмных CTA активный ContactAction — фон/рамка#8b1d25, белые текст и иконка. Неактивные прозрачные; выбран ровно один способ, aria-selected и --active синхронны. Светлая заливка отменена. [Проверка](https://github.com/daniilterekh-prog/barnes-sites/blob/main/kurortnaya/verification/cta-contact-active-2026-11-02.json).
 
 ## Подборки и сортировка в полной карте ·03.11.2026
 

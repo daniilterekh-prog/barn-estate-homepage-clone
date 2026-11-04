@@ -8,13 +8,13 @@
 
 Границы адаптива: **540, 767/768, 1024, 1280 и 1440 px**. Диапазон замеров — 320–3840 px; дополнительно проверены пограничные значения 540/541, 767/768/769, 1024/1025, 1280/1281, 1440/1441.
 
-[Полный набор замеров: размеры, начертание, межстрочные интервалы, разрядка, font-family, селекторы и примеры текста](verification/font-sizes/computed.json).
+[Полный набор замеров: размеры, начертание, межстрочные интервалы, разрядка, font-family, селекторы и примеры текста](https://github.com/daniilterekh-prog/barnes-sites/blob/main/katalog-nedvizhimosti/verification/font-sizes/computed.json).
 
 Насыщенность: **300 — Light, 400 — Regular, 500 — Medium, 700 — Bold**.
 
-**Уточнение H1 от 03.11.2026:** размер изменён по узловым страницам: 32px на телефоне, далее clamp(38px,4vw,58px), line-height 1.05, letter-spacing −0.045em. Текст «Каталог недвижимости» — обычным регистром. [Актуальные замеры H1](verification/node-h1/h1.json), [сверка с узлами](verification/node-h1/reference.json). В исходном computed.json сохранён первоначальный снимок до этого уточнения; остальные строки таблицы не менялись.
+**Уточнение H1 от 03.11.2026:** размер изменён по узловым страницам: 32px на телефоне, далее clamp(38px,4vw,58px), line-height 1.05, letter-spacing −0.045em. Текст «Каталог недвижимости» — обычным регистром. [Актуальные замеры H1](https://github.com/daniilterekh-prog/barnes-sites/blob/main/katalog-nedvizhimosti/verification/node-h1/h1.json), [сверка с узлами](https://github.com/daniilterekh-prog/barnes-sites/blob/main/katalog-nedvizhimosti/verification/node-h1/reference.json). В исходном computed.json сохранён первоначальный снимок до этого уточнения; остальные строки таблицы не менялись.
 
-**Актуальное уточнение от 03.11.2026:** по запросу «фильтры верни как было» возвращены размеры до финальной унификации. Панель — 17/18/20px, управление внутри карты — 17/19px. Таблица ниже отражает возвращённые размеры. [Проверка](verification/filters-restored/audit.json).
+**Актуальное уточнение от 03.11.2026:** по запросу «фильтры верни как было» возвращены размеры до финальной унификации. Панель — 17/18/20px, управление внутри карты — 17/19px. Таблица ниже отражает возвращённые размеры. [Проверка](https://github.com/daniilterekh-prog/barnes-sites/blob/main/katalog-nedvizhimosti/verification/filters-restored/audit.json).
 
 ## Страница и быстрые фильтры
 

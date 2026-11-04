@@ -4,7 +4,7 @@
   var base = new URL('.', document.currentScript.src);
   var stylesheet = document.createElement('link');
   stylesheet.rel = 'stylesheet';
-  stylesheet.href = new URL('../css/quick-filters.css?v=4', base).href;
+  stylesheet.href = new URL('../css/quick-filters.css?v=3778ffbedf7d', base).href;
   document.head.appendChild(stylesheet);
   var configs = [
     { title:'Район', key:'directions', reset:'Все районы', choices:[...new Set(Array.from(document.querySelectorAll('.catalog-grid__item[data-location]'), item => item.dataset.location).filter(Boolean))] },

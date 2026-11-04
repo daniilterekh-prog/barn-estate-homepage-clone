@@ -2,7 +2,7 @@
 
 02.11.2026: размер логотипа и контур кнопки сверены с главной:48/36px, кнопка44px, border1px #8b1d25, padding0 18px, line-height1. Увеличение64/48 отменено.
 
-**01.11.2026 · контракт1.1.0:** общие роли приведены к сегодняшнему утверждённому киту главной v1.0.0. **H1 hero и FAQ — исключения пользователя, сохранены без изменений.** [Актуальный контракт](UI-KIT.md), [происхождение и план](kit-2026-11-01.md), [проверка10ширин](verification/home-reference.json). Общий слой страницы и блоков — `css/home-reference.css`. Новые логотип/зелёный телефон сохранены локально.
+**01.11.2026 · контракт1.1.0:** общие роли приведены к сегодняшнему утверждённому киту главной v1.0.0. **H1 hero и FAQ — исключения пользователя, сохранены без изменений.** [Актуальный контракт](UI-KIT.md), [происхождение и план](kit-2026-11-01.md), [проверка10ширин](https://github.com/daniilterekh-prog/barnes-sites/blob/main/kurortnaya/verification/home-reference.json). Общий слой страницы и блоков — `css/home-reference.css`. Новые логотип/зелёный телефон сохранены локально.
 
 Актуальная страница целиком, редактируемые блоки, отдельные превью, весь CSS/JS, изображения, SVG и Tilda Sans находятся **в этой папке**. Копируй всю `kurortnaya/`: соседние папки сайта не нужны. Для работы страницы не нужно устанавливать npm-пакеты.
 
@@ -54,13 +54,13 @@ node tools/build-page.cjs --check
 
 После `capture-first-degree.cjs` из канонической библиотеки запускай `node kurortnaya/tools/sync-blocks.cjs` из корня репозитория: все18фрагментов обновятся из DOM, пути медиа перебазируются один раз, `page-*` исходники сохранятся. Затем проверь отдельные превью. `node tools/verify-home-reference.cjs URL` проверяет нормы сегодняшнего кита и неизменность H1/FAQ; `verify-package.cjs` — комплект и превью.
 
-02.11.2026: исправлена кнопка «Читать далее», полный текст сверен с оригиналом; видимые названия обновлены на BARN Estate, включая отдельные блоки. [Проверка раскрытия и бренда](verification/intro-brand-2026-11-02.json), [источник текста](verification/intro-source-2026-11-02.json).
+02.11.2026: исправлена кнопка «Читать далее», полный текст сверен с оригиналом; видимые названия обновлены на BARN Estate, включая отдельные блоки. [Проверка раскрытия и бренда](https://github.com/daniilterekh-prog/barnes-sites/blob/main/kurortnaya/verification/intro-brand-2026-11-02.json), [источник текста](https://github.com/daniilterekh-prog/barnes-sites/blob/main/kurortnaya/verification/intro-source-2026-11-02.json).
 
-02.11.2026: блок связи и контурная заявка перенесены с главной в общий `css/header-actions.css`; [прямая сверка9ширин](verification/header-actions-2026-11-02.json). Исправлены скрытый телефон панели, перекрытие бургера и SVG закреплённого хедера.
+02.11.2026: блок связи и контурная заявка перенесены с главной в общий `css/header-actions.css`; [прямая сверка9ширин](https://github.com/daniilterekh-prog/barnes-sites/blob/main/kurortnaya/verification/header-actions-2026-11-02.json). Исправлены скрытый телефон панели, перекрытие бургера и SVG закреплённого хедера.
 
-02.11.2026: [микро-квиз эксперта](expert-quiz-2026-11-02.md) — цель/курорт/бюджет и контакты, возможность сразу задать вопрос; другие кнопки открывают прямую форму. [Проверки10экранов](verification/expert-quiz-2026-11-02.json). Отправка требует обработчика barn:lead; в превью данные не отправляются.
+02.11.2026: [микро-квиз эксперта](expert-quiz-2026-11-02.md) — цель/курорт/бюджет и контакты, возможность сразу задать вопрос; другие кнопки открывают прямую форму. [Проверки10экранов](https://github.com/daniilterekh-prog/barnes-sites/blob/main/kurortnaya/verification/expert-quiz-2026-11-02.json). Отправка требует обработчика barn:lead; в превью данные не отправляются.
 
-02.11.2026: подключено раскрытие FAQ, все10ответов полностью сверены с опубликованным сайтом; [источник](verification/faq-source-2026-11-02.json), [проверки страницы/блока](verification/faq-2026-11-02.json). Типографика и отступы FAQ сохранены.
+02.11.2026: подключено раскрытие FAQ, все10ответов полностью сверены с опубликованным сайтом; [источник](https://github.com/daniilterekh-prog/barnes-sites/blob/main/kurortnaya/verification/faq-source-2026-11-02.json), [проверки страницы/блока](https://github.com/daniilterekh-prog/barnes-sites/blob/main/kurortnaya/verification/faq-2026-11-02.json). Типографика и отступы FAQ сохранены.
 
 ## Проверки
 
@@ -80,13 +80,13 @@ node tools/build-page.cjs --check
 
 Frontend-памятка проверена: HyperUI доступен бесплатно по MIT, но здесь сохранены утверждённые компоненты BARNES, новые библиотеки не добавлены.
 
-02.11.2026: крошки перенесены над линией hero-хедера, под линией добавлено меню главной. [Источник ссылок](verification/header-navigation-source-2026-11-02.json), [проверка адаптива](verification/header-navigation-2026-11-02.json).
+02.11.2026: крошки перенесены над линией hero-хедера, под линией добавлено меню главной. [Источник ссылок](https://github.com/daniilterekh-prog/barnes-sites/blob/main/kurortnaya/verification/header-navigation-source-2026-11-02.json), [проверка адаптива](https://github.com/daniilterekh-prog/barnes-sites/blob/main/kurortnaya/verification/header-navigation-2026-11-02.json).
 
-Мобильные хедеры02.11: верхний ряд — геометрия главной, направления на мобильном скрыты; после hero — заявка36px и контактыSVG34px по центру ряда. [Замеры и проверка](verification/mobile-header-2026-11-02.json).
+Мобильные хедеры02.11: верхний ряд — геометрия главной, направления на мобильном скрыты; после hero — заявка36px и контактыSVG34px по центру ряда. [Замеры и проверка](https://github.com/daniilterekh-prog/barnes-sites/blob/main/kurortnaya/verification/mobile-header-2026-11-02.json).
 
-02.11.2026: старты продаж используют компоновку блока выбора главной без направлений; карточки500/410px, стрелки снизу и CTA каталога. [План/источник](start-sales-home-reference-2026-11-02.md), [прямая сверка](verification/start-sales-home-2026-11-02.json).
+02.11.2026: старты продаж используют компоновку блока выбора главной без направлений; карточки500/410px, стрелки снизу и CTA каталога. [План/источник](start-sales-home-reference-2026-11-02.md), [прямая сверка](https://github.com/daniilterekh-prog/barnes-sites/blob/main/kurortnaya/verification/start-sales-home-2026-11-02.json).
 
-Актуальное уточнение03.11: строка направлений под линией удалена на всех ширинах, крошки возвращены в hero. [Проверка](verification/header-breadcrumbs-2026-11-03.json).
+Актуальное уточнение03.11: строка направлений под линией удалена на всех ширинах, крошки возвращены в hero. [Проверка](https://github.com/daniilterekh-prog/barnes-sites/blob/main/kurortnaya/verification/header-breadcrumbs-2026-11-03.json).
 
 ## Фильтры по общему каталогу ·02.11.2026
 
@@ -94,36 +94,38 @@ Frontend-памятка проверена: HyperUI доступен беспл�
 
 `catalog-filters.js` и `catalog-filters.css` — общий адаптер страницы и блоков. Исходные карточки и H1/FAQ сохранены. Проверки:9ширин320–3840px, прямое сравнение computed styles с референсом, применение/сброс/рынки/поиск/карта/сортировка, валидация/клавиатура/возврат фокуса и самостоятельные блоки. Ограничение snapshot-данных и контракт — в UI-kit; API каталога отдельно.
 
-[План и источник](filters-catalog-reference-2026-11-02.md) · [Замеры/сценарии](verification/catalog-filters-2026-11-02.json) · [Переносимые блоки](verification/catalog-filter-blocks-2026-11-02.json).
+[План и источник](filters-catalog-reference-2026-11-02.md) · [Замеры/сценарии](https://github.com/daniilterekh-prog/barnes-sites/blob/main/kurortnaya/verification/catalog-filters-2026-11-02.json) · [Переносимые блоки](https://github.com/daniilterekh-prog/barnes-sites/blob/main/kurortnaya/verification/catalog-filter-blocks-2026-11-02.json).
 
-02.11.2026: убрана светлая заливка выбранного способа связи в обоих CTA; активный канал бордовый. Исправлен оставшийся на WhatsApp класс --active после переключения. [Проверка каналов и клавиатуры](verification/cta-contact-active-2026-11-02.json).
+02.11.2026: убрана светлая заливка выбранного способа связи в обоих CTA; активный канал бордовый. Исправлен оставшийся на WhatsApp класс --active после переключения. [Проверка каналов и клавиатуры](https://github.com/daniilterekh-prog/barnes-sites/blob/main/kurortnaya/verification/cta-contact-active-2026-11-02.json).
 
 03.11.2026: меню направлений под линией удалено на всех разрешениях, крошки возвращены в hero. Заголовок и поиск чуть ниже:16px mobile/24px desktop. Это уточнение отменяет прежние правила меню от02.11.2026. Контакты и хедер после hero сохранены.
 
-[Расположение крошек и отступ херо03.11](hero-breadcrumbs-2026-11-03.md) · [Замеры12экранов](verification/header-breadcrumbs-2026-11-03.json) · [Отдельные блоки](verification/header-blocks-2026-11-03.json) · [Мобильная шапка](verification/mobile-header-2026-11-03.json).
+[Расположение крошек и отступ херо03.11](hero-breadcrumbs-2026-11-03.md) · [Замеры12экранов](https://github.com/daniilterekh-prog/barnes-sites/blob/main/kurortnaya/verification/header-breadcrumbs-2026-11-03.json) · [Отдельные блоки](https://github.com/daniilterekh-prog/barnes-sites/blob/main/kurortnaya/verification/header-blocks-2026-11-03.json) · [Мобильная шапка](https://github.com/daniilterekh-prog/barnes-sites/blob/main/kurortnaya/verification/mobile-header-2026-11-03.json).
 
 03.11.2026: фильтры1.4.0 по свежей общей выдаче — dropdown рынка вместо двух кнопок, все четыре быстрых поля на desktop, покупка без аренды. Общий catalog-filters.js/css, shared dropdown/state; карточки и хедер сохранены. Проверки10ширин320–3840px и отдельных блоков.
 
-[Актуальная панель03.11](filters-current-catalog-2026-11-03.md) · [Сверка с общей выдачей](verification/catalog-filters-2026-11-03.json) · [Переносимые фильтры](verification/catalog-filter-blocks-2026-11-03.json).
+[Актуальная панель03.11](filters-current-catalog-2026-11-03.md) · [Сверка с общей выдачей](https://github.com/daniilterekh-prog/barnes-sites/blob/main/kurortnaya/verification/catalog-filters-2026-11-03.json) · [Переносимые фильтры](https://github.com/daniilterekh-prog/barnes-sites/blob/main/kurortnaya/verification/catalog-filter-blocks-2026-11-03.json).
 
 03.11.2026: подборки и сортировка полной карты собраны в один ряд на desktop; compact-раскладка сохранена. Контракт MapControlsRow и проверка map-controls-row-2026-11-03.json.
 
-[Проверка строки карты](verification/map-controls-row-2026-11-03.json).
+[Проверка строки карты](https://github.com/daniilterekh-prog/barnes-sites/blob/main/kurortnaya/verification/map-controls-row-2026-11-03.json).
 
 ## Актуальная загрузка ·03.11.2026
 
 Старая разметка фильтров и JS-пересборка листинга удалены. HTML сразу содержит актуальную панель и обе карточки с раздельными рынками; CSS страницы загружается в head до первого показа. Удалены прежние правила нижних линий и скрытия листинга. Все локальные CSS/JS-подключения страницы и превью используют выпуск `20261103-clean-load-18`; отдельные движки не дублируют уже загруженные стили. История доступна в Git, старые исполняемые варианты в текущей папке не нужны.
 
-[Проверка загрузки](verification/current-load-2026-11-03.json) · [Описание очистки](current-load-2026-11-03.md).
+[Проверка загрузки](https://github.com/daniilterekh-prog/barnes-sites/blob/main/kurortnaya/verification/current-load-2026-11-03.json) · [Описание очистки](current-load-2026-11-03.md).
 
-03.11.2026 · крошки приведены к общей выдаче:17px выше768px,13px до768px,12px до540px; weight300, line-height18/16px. В медиа на769–1024px текст13px, в выдаче17px; на остальных проверенных ширинах текст совпадает. Расположение и цвета Курортной сохранены. Выпуск20261103-breadcrumbs-19. [Замеры трёх страниц](verification/breadcrumb-sizes-2026-11-03.json).
+03.11.2026 · крошки приведены к общей выдаче:17px выше768px,13px до768px,12px до540px; weight300, line-height18/16px. В медиа на769–1024px текст13px, в выдаче17px; на остальных проверенных ширинах текст совпадает. Расположение и цвета Курортной сохранены. Выпуск20261103-breadcrumbs-19. [Замеры трёх страниц](https://github.com/daniilterekh-prog/barnes-sites/blob/main/kurortnaya/verification/breadcrumb-sizes-2026-11-03.json).
 
 03.11.2026 ·1.5.0: [актуальные фильтры и полный повторный проход по киту](kit-refresh-2026-11-03.md). Панель/dropdown/full-form сверены с текущей общей выдачей. Карточки объектов исключены, H1/FAQ сохранены; исправлены роли и интервалы CTA/форм, направлений и новостей. Действующий выпуск20261103-kit-filters-20.
 
-03.11.2026 ·1.5.1: [квиз эксперта по форме главной](quiz-home-parity-2026-11-03.md): точные размеры/интервалы, Денис и собственные курортные вопросы. Прямая форма сохранена.
+Опубликованная версия проверена03.11: страница900/2560px и отдельный блок карты1024px — выравнивание, чекбоксы, сортировка, клавиатура и сброс. [Проверка после публикации](https://github.com/daniilterekh-prog/barnes-sites/blob/main/kurortnaya/verification/map-controls-row-published-2026-11-03.json).
+Опубликованная очистка проверена03.11: 4ширины страницы, desktop/mobile без JS и 6проверок канонических блоков. [Результат после публикации](https://github.com/daniilterekh-prog/barnes-sites/blob/main/kurortnaya/verification/current-load-published-2026-11-03.json).
+Крошки после публикации проверены390/900/1440/2560px; [замеры и совпадение CSS библиотеки](https://github.com/daniilterekh-prog/barnes-sites/blob/main/kurortnaya/verification/breadcrumb-sizes-published-2026-11-03.json).
 
-03.11.2026 ·1.5.2: [подборки, карта и сортировка в одном ряду](listing-controls-row-2026-11-03.md); подпись второй подборки — exclusive.
+Публикация1.5.0 проверена:11ширин общих ролей,4ширины popup/полной формы против выдачи, контрольные суммы CSS/JS канонических блоков. [Итоговые замеры](https://github.com/daniilterekh-prog/barnes-sites/blob/main/kurortnaya/verification/kit-refresh-2026-11-03/published.json).
 
-## Техническая очистка ·03.11.2026
+03.11.2026 ·1.5.1: [экспертный квиз по главной](quiz-home-parity-2026-11-03.md), Денис и курортные вопросы. Публичный core d5c5ecf; shared-блоки синхронизированы.
 
-Удалены доказанные повторные CSS/SSR-декларации; исходные версии примитивов сохранены в provenance, текущие хэши обновлены. Геометрия, цвета, контент и действия проверяются сравнением до/после. [Единый реестр страниц](https://github.com/daniilterekh-prog/barnes-sites/blob/main/main-site/current-pages.json) · [Метод и отчёты](https://github.com/daniilterekh-prog/barnes-sites/tree/main/main-site/maintenance/2026-11-03-cleanup).
+03.11.2026 ·1.5.2: [ряд подборок/карты/сортировки](listing-controls-row-2026-11-03.md); подпись второй подборки — exclusive. Публичный core c848727.

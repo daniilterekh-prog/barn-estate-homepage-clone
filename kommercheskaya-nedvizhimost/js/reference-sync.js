@@ -114,8 +114,8 @@
   });
   await styles('css/home-kit.css');
   await load('js/catalog-filters.js');
-  await styles('css/catalog-filters.css?v=20261102');
-  await styles('css/commercial-filter-layout.css?v=20261102');
+  await styles('css/catalog-filters.css?v=e725d8c23703');
+  await styles('css/commercial-filter-layout.css?v=01ab9832829e');
   document.body.dataset.commercialHomeKit='1.0.0';
   document.body.dataset.commercialReferenceReady='true';
 })().catch(error=>console.error('Commercial reference initialization failed:',error));

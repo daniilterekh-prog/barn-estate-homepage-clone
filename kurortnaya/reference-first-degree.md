@@ -1,6 +1,6 @@
 # Референс узлов первой степени
 
-«Курортная» — утверждённый референс. [Целая страница и структура](README.md), [каталог 15 блоков и 3 карточек](blocks/catalog.html), [локальный контракт](UI-KIT.md), [проверка переносимости](verification/package.json).
+«Курортная» — утверждённый референс. [Целая страница и структура](README.md), [каталог 15 блоков и 3 карточек](blocks/catalog.html), [локальный контракт](UI-KIT.md), [проверка переносимости](https://github.com/daniilterekh-prog/barnes-sites/blob/main/kurortnaya/verification/package.json).
 
 Каноническая библиотека — [barnes-assets / first-degree](https://github.com/daniilterekh-prog/barnes-assets/tree/main/blocks/nodes/first-degree). В этом узле сохранён полный переносимый комплект, без зависимости от соседних папок сайта. Исторические варианты находятся в Git, а не в рабочей папке.
 

@@ -8,7 +8,7 @@
   document.body.classList.add('barnes-header-template');
   const headerStyles = document.createElement('link');
   headerStyles.rel = 'stylesheet';
-  headerStyles.href = '../shared/owner-header.css?v=20261012-owner-header-5';
+  headerStyles.href = '../shared/owner-header.css?v=840ead018f62';
   document.head.appendChild(headerStyles);
 
   page.querySelectorAll('.catalog-consultation__subtitle, .catalog-consultation__mobile-title').forEach(function (title) {

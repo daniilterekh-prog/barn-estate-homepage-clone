@@ -37,8 +37,8 @@
     if (event.key === 'Escape') { event.preventDefault(); close(); return; }
     if (event.key !== 'Tab') return;
     const items = [toggle, ...menu.querySelectorAll('a[href],button,[tabindex="0"]')].filter(el => el.getClientRects().length);
-    const first = items[0], last = items.at(-1);
-    if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); }
-    else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
+    event.preventDefault();
+    const index = items.indexOf(document.activeElement);
+    items[(index + (event.shiftKey ? -1 : 1) + items.length) % items.length].focus();
   });
 })();
