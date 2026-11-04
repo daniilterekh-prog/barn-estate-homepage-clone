@@ -306,12 +306,6 @@
         event.preventDefault();
         event.stopImmediatePropagation();
         openModal(button);
-        if (button.dataset.serviceDirection) {
-          directionId.value = button.dataset.serviceDirection;
-          directionName.value = button.dataset.serviceName;
-          directionSummary.textContent = 'Услуга: ' + button.dataset.serviceName;
-          directionSummary.hidden = false;
-        }
       }, true);
     });
   }

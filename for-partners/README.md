@@ -33,4 +33,6 @@ media-header.css/js приводят первичный хедер к Медиа
 
 ## Правки Насти ·04.11.2026
 
-[Реализация и проверки](https://github.com/daniilterekh-prog/barnes-sites/blob/main/for-partners/revision-2026-11-04/README.md): компактные этапы, открытые преимущества, ответственность, услуги/партнёры, клуб, форма перед компанией и разные CTA. Бегущие строки из главной, без новых библиотек. `assets/program.css` заменяет снятые `how-it-works.css`/`advantages-enhanced.css`; живой runtime — `for-partners.js`. SVG и их происхождение — `assets/partners/`; реальные фото — `assets/community/`, каноническая библиотека barnes-assets.
+[Реализация и проверки](https://github.com/daniilterekh-prog/barnes-sites/blob/main/for-partners/revision-2026-11-04/README.md): компактные этапы, открытые преимущества, ответственность, направления/партнёры, клуб, форма перед компанией и разные CTA. Бегущие строки из главной, без новых библиотек. `assets/program.css` заменяет снятые `how-it-works.css`/`advantages-enhanced.css`; живой runtime — `for-partners.js`. SVG и их происхождение — `assets/partners/`; реальные фото — `assets/community/`, каноническая библиотека barnes-assets.
+
+Уточнение пользователя: отдельный блок «Для вашего клиента / Наши услуги» удалён как дубль направлений. Во всех текстовых действиях, переключаемых направлениях и подписке стрелки — SVG16×16 из кита главной, без Unicode/emoji. Удалены связанные CSS и обработчик услуг.

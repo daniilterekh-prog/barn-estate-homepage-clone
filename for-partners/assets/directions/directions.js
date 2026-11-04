@@ -21,7 +21,7 @@
         <div class="bd-budget"><div class="bd-price-label">${d.label}</div><div class="bd-price ${d.words ? 'bd-words' : ''}">${d.price}</div></div>
         <div class="${d.metrics ? 'bd-metrics' : 'bd-textfacts'}">${stats}</div>
         <div class="bd-commission ${negotiated ? 'bd-commission-negotiated' : 'bd-commission-primary'}"><span class="bd-label">Комиссия BARN Estate</span><strong>${negotiated ? 'Условия оговариваются' : d.last[1]}</strong>${negotiated ? `<span class="bd-commission-note">${d.last[0]}: ${d.last[1]}</span>` : ''}</div>
-        <button type="button" class="bd-cta" data-request="${i}">Рекомендовать клиента <span aria-hidden="true">↗</span></button>
+        <button type="button" class="bd-cta" data-request="${i}">Рекомендовать клиента <svg class="ap-arrow" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 13 13 3M5 3h8v8" stroke="currentColor" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
       </div>
     </div>`;
   }
