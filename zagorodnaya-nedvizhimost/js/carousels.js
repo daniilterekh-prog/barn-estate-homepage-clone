@@ -1,5 +1,5 @@
 (() => {
-  // Same Splide 4.1.4 options as the live BARNES reference.
+  // Same Splide 4.1.4 options as the live BARN Estate reference.
   const initialize = (selector, options, previous, next) => {
     const old = document.querySelector(selector);
     if (!old || !window.Splide) return;

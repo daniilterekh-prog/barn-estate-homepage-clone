@@ -6,7 +6,7 @@
   css.dataset.barnesBrandFilters = '';
   css.href = new URL('css/brand-filters.css?v=43f02a971520', new URL('../', document.currentScript.src)).href;
   document.head.appendChild(css);
-  var choices = [['selection', 'Выбор BARNES'], ['exclusive', 'Эксклюзив BARNES']];
+  var choices = [['selection', 'Выбор BARN Estate'], ['exclusive', 'Эксклюзив BARN Estate']];
   function flags() { return window.BarnesFilters.getState().brandFlags || []; }
   function group(context) {
     var fieldset = document.createElement('fieldset');
@@ -14,7 +14,7 @@
     fieldset.dataset.brandContext = context;
     var legend = document.createElement('legend');
     legend.className = 'barnes-brand-filters__legend';
-    legend.textContent = 'Подборки BARNES';
+    legend.textContent = 'Подборки BARN Estate';
     fieldset.appendChild(legend);
     choices.forEach(function (choice) {
       var label = document.createElement('label');

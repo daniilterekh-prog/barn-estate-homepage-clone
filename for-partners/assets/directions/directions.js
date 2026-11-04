@@ -20,7 +20,7 @@
         <div class="bd-heading"><h3>${d.title}</h3><p class="bd-intro">${d.intro}</p></div>
         <div class="bd-budget"><div class="bd-price-label">${d.label}</div><div class="bd-price ${d.words ? 'bd-words' : ''}">${d.price}</div></div>
         <div class="${d.metrics ? 'bd-metrics' : 'bd-textfacts'}">${stats}</div>
-        <div class="bd-commission ${negotiated ? 'bd-commission-negotiated' : 'bd-commission-primary'}"><span class="bd-label">Комиссия BARNES</span><strong>${negotiated ? 'Условия оговариваются' : d.last[1]}</strong>${negotiated ? `<span class="bd-commission-note">${d.last[0]}: ${d.last[1]}</span>` : ''}</div>
+        <div class="bd-commission ${negotiated ? 'bd-commission-negotiated' : 'bd-commission-primary'}"><span class="bd-label">Комиссия BARN Estate</span><strong>${negotiated ? 'Условия оговариваются' : d.last[1]}</strong>${negotiated ? `<span class="bd-commission-note">${d.last[0]}: ${d.last[1]}</span>` : ''}</div>
         <button type="button" class="bd-cta" data-request="${i}">Отправить заявку <span aria-hidden="true">↗</span></button>
       </div>
     </div>`;
@@ -29,7 +29,7 @@
   const content = root.querySelector('.bd-content');
   let activeIndex = 0;
   content.innerHTML = `
-    <nav class="bd-horizontal" role="tablist" aria-label="Направления BARNES">
+    <nav class="bd-horizontal" role="tablist" aria-label="Направления BARN Estate">
       ${data.map((d, i) => `<button type="button" class="bd-navbtn" role="tab" id="direction-tab-${d.id}" aria-controls="direction-panel" aria-selected="${i === 0}" tabindex="${i === 0 ? 0 : -1}" data-pick="${i}">${d.name}</button>`).join('')}
     </nav>
     <label class="bd-picker-label" for="barnes-direction-picker">Выберите направление</label>

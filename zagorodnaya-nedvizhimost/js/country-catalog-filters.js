@@ -113,7 +113,7 @@
     for (const key of ['price', 'area', 'rooms']) if (full[`${key}Min`] != null || full[`${key}Max`] != null) {
       addChip(`${{price:'Цена',area:'Площадь',rooms:'Комнаты'}[key]}: ${full[`${key}Min`] ?? 'от'}–${full[`${key}Max`] ?? 'до'}`, () => document.dispatchEvent(new CustomEvent('country-filter-set', {detail:{[`${key}Min`]:null,[`${key}Max`]:null}})));
     }
-    for (const flag of flags) addChip(flag === 'selection' ? 'Выбор BARNES' : 'Эксклюзив BARNES', () => window.countryReferenceControls?.setBrandFlags(flags.filter(item => item !== flag)));
+    for (const flag of flags) addChip(flag === 'selection' ? 'Выбор BARN Estate' : 'Эксклюзив BARN Estate', () => window.countryReferenceControls?.setBrandFlags(flags.filter(item => item !== flag)));
     badge.hidden = chips.childElementCount === 0;
     badge.textContent = String(chips.childElementCount);
     reset.hidden = chips.childElementCount === 0;

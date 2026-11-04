@@ -70,7 +70,7 @@
   inner.prepend(navigation);navigation.append(list,actions);
   const targets=['#commercial-selection','.catalog-grid','.catalog-intro','.catalog-faq'];
   const links=[...list.querySelectorAll('.catalog-sticky__link')].map((old,index)=>{
-    const link=document.createElement('a');link.className='catalog-sticky__link';link.textContent=['Проекты','Каталог','О BARNES','Вопросы'][index];
+    const link=document.createElement('a');link.className='catalog-sticky__link';link.textContent=['Проекты','Каталог','О BARN Estate','Вопросы'][index];
     const section=document.querySelector(targets[index]);
     if(section){if(!section.id)section.id=['catalog-new-starts','catalog-grid','catalog-intro','catalog-faq'][index];link.href='#'+section.id;}
     link.addEventListener('click',event=>{event.preventDefault();section?.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'});});

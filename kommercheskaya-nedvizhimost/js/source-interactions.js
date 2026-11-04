@@ -41,7 +41,7 @@
         <div class="feedback-modal__layout">
           <div class="feedback-modal__body">
             <h2 class="feedback-modal__title" id="catalog-feedback-modal-title">Поможем найти подходящий объект</h2>
-            <p class="feedback-modal__intro">Эксперт BARNES уточнит задачу и подберёт лучшие варианты.</p>
+            <p class="feedback-modal__intro">Эксперт BARN Estate уточнит задачу и подберёт лучшие варианты.</p>
             <form class="feedback-modal__form" novalidate>
               <div class="feedback-modal__channels" role="group" aria-label="Предпочтительный способ связи">
                 <button type="button" data-channel="Telegram" aria-pressed="true">Telegram</button>
@@ -62,7 +62,7 @@
               <p class="feedback-modal__status" role="status" aria-live="polite"></p>
             </form>
           </div>
-          <div class="feedback-modal__hero"><img class="feedback-modal__hero-image feedback-modal__hero-image--alina" src="assets/alina-medvedeva-popup.png" alt="Алина Медведева — руководитель департамента коммерческой недвижимости BARNES" width="1734" height="907"></div>
+          <div class="feedback-modal__hero"><img class="feedback-modal__hero-image feedback-modal__hero-image--alina" src="assets/alina-medvedeva-popup.png" alt="Алина Медведева — руководитель департамента коммерческой недвижимости BARN Estate" width="1734" height="907"></div>
         </div>
       </div>
     </div>`;
@@ -106,7 +106,7 @@
     if (last) one('.catalog-page-nav__list', nav).append(last);
     all('.catalog-page-nav__link', nav).forEach((button, index) => {
       button.classList.add('catalog-sticky__link');
-      button.textContent = ['Карта', 'Каталог', 'О BARNES', 'Вопросы'][index];
+      button.textContent = ['Карта', 'Каталог', 'О BARN Estate', 'Вопросы'][index];
     });
     const brand = one('.catalog-page-nav__brand', nav);
     const logo = one('.catalog-page-nav__logo', nav);
@@ -159,7 +159,7 @@
   for (const [selector, text] of [
     ['.catalog-map__title', 'География'],
     ['.catalog-grid__title', 'Каталог'],
-    ['.catalog-faq__title', 'Экспертиза BARNES']
+    ['.catalog-faq__title', 'Экспертиза BARN Estate']
   ]) {
     const heading = one(selector);
     if (!heading || heading.previousElementSibling?.classList.contains('catalog-section-eyebrow')) continue;
@@ -398,7 +398,7 @@
         if (!form.reportValidity()) return;
         let status = one('.feedback-modal__status,.source-form-status', form);
         if (!status) { status = document.createElement('p'); status.className = 'source-form-status'; status.setAttribute('role', 'status'); form.append(status); }
-        status.textContent = 'Для отправки заявки свяжитесь с BARNES: +7 (495) 182-50-79.';
+        status.textContent = 'Для отправки заявки свяжитесь с BARN Estate: +7 (495) 182-50-79.';
       });
     });
   }

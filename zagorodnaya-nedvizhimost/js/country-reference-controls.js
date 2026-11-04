@@ -84,8 +84,8 @@
   const keyReset=key=>({location:'Все шоссе',type:'Любой тип',price:'Любая стоимость',bedrooms:'Любые спальни'}[key]||'Любые');
   function makeBrands(context){
     const fieldset=document.createElement('fieldset');fieldset.className='country-brand-filters';fieldset.dataset.brandContext=context;
-    const legend=document.createElement('legend');legend.textContent='Подборки BARNES';fieldset.append(legend);
-    for(const [value,label] of [['selection','Выбор BARNES'],['exclusive','Эксклюзив BARNES']]){
+    const legend=document.createElement('legend');legend.textContent='Подборки BARN Estate';fieldset.append(legend);
+    for(const [value,label] of [['selection','Выбор BARN Estate'],['exclusive','Эксклюзив BARN Estate']]){
       const wrap=document.createElement('label'),input=document.createElement('input'),box=document.createElement('span');
       input.type='checkbox';input.value=value;input.name='brandFlags';box.className='country-brand-filters__box';box.setAttribute('aria-hidden','true');
       input.addEventListener('change',()=>{state.brandFlags=input.checked?[...new Set([...state.brandFlags,value])]:state.brandFlags.filter(flag=>flag!==value);sync();document.dispatchEvent(new CustomEvent('country-brand-change'));});

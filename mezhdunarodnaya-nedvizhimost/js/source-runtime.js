@@ -1,4 +1,4 @@
-/* Local behaviour for the original public BARNES components. */
+/* Local behaviour for the original public BARN Estate components. */
 (() => {
   'use strict';
   const one = (s, root=document) => root.querySelector(s);
@@ -87,7 +87,7 @@
       e.preventDefault();const name=one('input[autocomplete="name"]',form),phone=one('input[autocomplete="tel"],input[type="tel"],input[inputmode="tel"]',form),consent=one('input[type="checkbox"]',form);
       if(name)name.required=true;if(phone){phone.required=true;phone.setCustomValidity(phone.dataset.method==='Email'?(/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(phone.value)?'':'Введите Email'):(phone.value.replace(/\D/g,'').length<10?'Введите номер телефона':''));}if(consent)consent.required=true;
       if(!form.reportValidity())return;
-      let status=one('.source-form-status',form);if(!status){status=document.createElement('p');status.className='source-form-status';status.setAttribute('role','status');form.append(status);}status.textContent='Для отправки заявки свяжитесь с BARNES: +7 (495) 182-50-79.';
+      let status=one('.source-form-status',form);if(!status){status=document.createElement('p');status.className='source-form-status';status.setAttribute('role','status');form.append(status);}status.textContent='Для отправки заявки свяжитесь с BARN Estate: +7 (495) 182-50-79.';
     });
   });}
   bindForms(document);

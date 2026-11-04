@@ -20,8 +20,8 @@ window.BARNES_LOT_DATA = window.BARNES_LOT_DATA || {
         {
           "@id": "https://front.barnes.vsavr.ru/#website",
           "@type": "WebSite",
-          "description": "Агентство элитной недвижимости BARNES в Москве.",
-          "name": "BARNES MOSCOW",
+          "description": "Агентство элитной недвижимости BARN Estate в Москве.",
+          "name": "BARN Estate",
           "url": "https://front.barnes.vsavr.ru/",
           "publisher": {
             "@id": "https://front.barnes.vsavr.ru/#identity"
@@ -30,8 +30,8 @@ window.BARNES_LOT_DATA = window.BARNES_LOT_DATA || {
         {
           "@id": "https://front.barnes.vsavr.ru/vtorichnaya-nedvizhimost/588036#webpage",
           "@type": "WebPage",
-          "description": "Агентство элитной недвижимости BARNES в Москве.",
-          "name": "Недвижимость - BARNES",
+          "description": "Агентство элитной недвижимости BARN Estate в Москве.",
+          "name": "Недвижимость - BARN Estate",
           "url": "https://front.barnes.vsavr.ru/vtorichnaya-nedvizhimost/588036",
           "about": {
             "@id": "https://front.barnes.vsavr.ru/#identity"
@@ -53,14 +53,14 @@ window.BARNES_LOT_DATA = window.BARNES_LOT_DATA || {
         },
         {
           "@id": "https://front.barnes.vsavr.ru/vtorichnaya-nedvizhimost/588036#/schema//1",
-          "description": "Агентство элитной недвижимости BARNES в Москве.",
+          "description": "Агентство элитной недвижимости BARN Estate в Москве.",
           "logo": "https://daniilterekh-prog.github.io/barnes-assets/brand/barn-estate/logo.svg",
-          "name": "BARNES MOSCOW",
+          "name": "BARN Estate",
           "url": "https://front.barnes.vsavr.ru"
         },
         {
           "@id": "https://front.barnes.vsavr.ru/#identity",
-          "description": "Агентство элитной недвижимости BARNES в Москве.",
+          "description": "Агентство элитной недвижимости BARN Estate в Москве.",
           "email": "moscow@barn-estate.com",
           "jobTitle": "Real Estate Consultant",
           "logo": "https://daniilterekh-prog.github.io/barnes-assets/brand/barn-estate/logo.svg",
@@ -95,7 +95,7 @@ window.BARNES_LOT_DATA = window.BARNES_LOT_DATA || {
           "worksFor": {
             "@type": "RealEstateAgent",
             "@id": "#identity",
-            "name": "BARNES MOSCOW",
+            "name": "BARN Estate",
             "url": "https://front.barnes.vsavr.ru/"
           }
         },

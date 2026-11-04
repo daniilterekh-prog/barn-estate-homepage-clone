@@ -76,7 +76,7 @@ document.querySelector(".site-header__messengers")?.remove();
     var sections = [
       ['Проекты', 'catalog-new-starts'],
       ['Каталог', 'catalog-grid'],
-      ['О BARNES', 'catalog-intro'],
+      ['О BARN Estate', 'catalog-intro'],
       ['Вопросы', 'catalog-faq']
     ].filter(function (item) {
       return document.getElementById(item[1]);

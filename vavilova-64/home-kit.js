@@ -5,7 +5,7 @@
   let node
   while ((node = walker.nextNode())) {
     if (node.parentElement.closest('script,style,textarea,input,[data-legal-name]')) continue
-    if (/BARNES INTERNATIONAL REALTY|BARNES International Realty/.test(node.nodeValue)) continue
+    if (/BARNES INTERNATIONAL REALTY|BARN Estate Realty/.test(node.nodeValue)) continue
     node.nodeValue = node.nodeValue.replace(/\bBARNES\b/g, 'BARN Estate')
   }
   document.querySelectorAll('img[alt],a[aria-label],button[aria-label]').forEach(element => {

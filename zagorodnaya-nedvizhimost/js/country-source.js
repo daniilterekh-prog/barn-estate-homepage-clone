@@ -12,7 +12,7 @@
     ['https://barn-estate.ru/media/blog/top-5-kottedzhnykh-poselkov-dlya-vtorogo-doma-v-podmoskove/', 'assets/news-1.png', 'Топ-5 коттеджных поселков для второго дома в Подмосковье'],
     ['https://barn-estate.ru/media/novosti/rossiya-voshla-v-top-10-stran-po-rostu-tsen-na-zhiluyu-nedvizhimost/', 'assets/news-2.jpg', 'Россия вошла в топ-10 стран по росту цен на жилую недвижимость'],
     ['https://barn-estate.ru/media/novosti/tri-proekta-za-230-mlrd-rubley-kak-izmenyatsya-dorogi-ot-moskva-siti-do-novoy-rigi/', 'assets/news-3.jpg', 'Три проекта за 230 млрд рублей: как изменятся дороги от Москва-Сити до Новой Риги'],
-    ['https://barn-estate.ru/media/analitika/analiz-rynka-elitnoy-zagorodnoy-nedvizhimosti-podmoskovya-za-2025-god-ot-barnes/', 'assets/news-4.png', 'Анализ рынка элитной загородной недвижимости Подмосковья за 2025 год от BARNES'],
+    ['https://barn-estate.ru/media/analitika/analiz-rynka-elitnoy-zagorodnoy-nedvizhimosti-podmoskovya-za-2025-god-ot-barnes/', 'assets/news-4.png', 'Анализ рынка элитной загородной недвижимости Подмосковья за 2025 год от BARN Estate'],
     ['https://barn-estate.ru/media/novosti/novye-pravila-stroitelstva-chastnykh-domov-v-podmoskove-v-2026-godu/', 'assets/news-5.jpg', 'Новые правила строительства частных домов в Подмосковье в 2026 году'],
     ['https://barn-estate.ru/media/novosti/za-chto-mogut-oshtrafovat-vladeltsev-dach-i-uchastkov-/', 'assets/news-6.png', 'За что могут оштрафовать владельцев дач и участков в 2026 году'],
   ];

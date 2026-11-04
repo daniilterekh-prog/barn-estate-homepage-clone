@@ -99,7 +99,7 @@
     var sections = [
       ['Проекты', 'catalog-new-starts'],
       ['Каталог', 'catalog-grid'],
-      ['О BARNES', 'catalog-intro'],
+      ['О BARN Estate', 'catalog-intro'],
       ['Вопросы', 'catalog-faq']
     ].filter(function (item) {
       return document.getElementById(item[1]);
@@ -264,7 +264,7 @@
     ['.catalog-map__title', 'География'],
     ['.catalog-grid__title', 'Каталог'],
     ['.departments-section__title', 'Направления'],
-    ['.catalog-faq__title', 'Экспертиза BARNES']
+    ['.catalog-faq__title', 'Экспертиза BARN Estate']
   ].forEach(function (entry) {
     addSectionEyebrow(entry[0], entry[1], entry[2]);
   });
@@ -337,7 +337,7 @@
       '  <div class="feedback-modal__layout">',
       '    <div class="feedback-modal__body">',
       '      <h2 class="feedback-modal__title" id="catalog-feedback-modal-title">Поможем найти подходящий объект</h2>',
-      '      <p class="feedback-modal__intro">Эксперт BARNES уточнит задачу и подберёт лучшие варианты.</p>',
+      '      <p class="feedback-modal__intro">Эксперт BARN Estate уточнит задачу и подберёт лучшие варианты.</p>',
       '      <form class="feedback-modal__form" novalidate>',
       '        <div class="feedback-modal__channels" role="group" aria-label="Предпочтительный способ связи">',
       '          <button type="button" data-channel="Telegram" aria-pressed="true">Telegram</button>',
@@ -359,7 +359,7 @@
       '      </form>',
       '    </div>',
       '    <div class="feedback-modal__hero">',
-      '      <img class="feedback-modal__hero-image" src="assets/expert-dolgov.webp" alt="Михаил Долгов — руководитель департамента загородной недвижимости BARNES" width="1024" height="1536">',
+      '      <img class="feedback-modal__hero-image" src="assets/expert-dolgov.webp" alt="Михаил Долгов — руководитель департамента загородной недвижимости BARN Estate" width="1024" height="1536">',
       '    </div>',
       '  </div>',
       '</div>'

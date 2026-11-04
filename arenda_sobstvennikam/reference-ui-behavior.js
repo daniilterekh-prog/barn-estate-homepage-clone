@@ -35,7 +35,7 @@
     if (!headerWrap.querySelector('.owner-sale-services__eyebrow')) {
       var eyebrow = document.createElement('p');
       eyebrow.className = 'owner-sale-services__eyebrow';
-      eyebrow.textContent = 'ЕДИНАЯ КОМАНДА BARNES';
+      eyebrow.textContent = 'ЕДИНАЯ КОМАНДА BARN Estate';
       headerWrap.insertBefore(eyebrow, headerWrap.firstChild);
     }
 
@@ -106,7 +106,7 @@
       ['Зарубежная', 'https://barn-estate.ru/mezhdunarodnaya-nedvizhimost/', [['ОАЭ', 'https://barn-estate.ru/oae/'], ['Турция', 'https://barn-estate.ru/mezhdunarodnaya-nedvizhimost/turtsiya/'], ['Таиланд', 'https://barn-estate.ru/tailand/'], ['Бали', 'https://barn-estate.ru/zhilye-kompleksy-indonesia/'], ['Испания', 'https://barn-estate.ru/ispaniya/'], ['Италия', 'https://barn-estate.ru/italiya/'], ['Португалия', 'https://barn-estate.ru/portugaliya/'], ['Франция', 'https://barn-estate.ru/frantsiya/'], ['Оман', 'https://barn-estate.ru/oman/'], ['Жилые комплексы', 'https://barn-estate.ru/mezhdunarodnaya-nedvizhimost-zhilye-kompleksy/']]],
       ['Санкт-Петербург', 'https://barnes-spb.ru', [['Вторичная', 'https://barnes-spb.ru/gorodskaya-nedvizhimost/vtorichnaya-nedvizhimost/'], ['Новостройки', 'https://barnes-spb.ru/gorodskaya-nedvizhimost/novostroyki/'], ['Загородная', 'https://barnes-spb.ru/zagorodnaya-nedvizhimost/'], ['Коммерческая', 'https://barnes-spb.ru/kommercheskaya-nedvizhimost/'], ['Эксклюзив', 'https://barnes-spb.ru/exclusive/'], ['Апартаменты', 'https://barnes-spb.ru/gorodskaya-nedvizhimost/filter/type_immovables-is-apartamenty/'], ['Пентхаус', 'https://barnes-spb.ru/gorodskaya-nedvizhimost/filter/type_immovables-is-penthausy/']]],
       ['Медиа', 'https://barn-estate.ru/media/', [['Блог', 'https://barn-estate.ru/media/blog/'], ['Новости', 'https://barn-estate.ru/media/novosti/'], ['Вебинары и видео', 'https://barn-estate.ru/media/vebinary-i-video/'], ['Аналитика рынка', 'https://barn-estate.ru/media/analitika/'], ['Искусство жить', 'https://barn-estate.ru/media/stil-zhizni/'], ['Кейсы', 'https://barn-estate.ru/media/cases/'], ['Журнал', 'https://barn-estate.ru/zhurnaly/']]],
-      ['О BARNES', 'https://barn-estate.ru/mir-barnes/', [['Контакты', 'https://barn-estate.ru/contacts/'], ['Партнерам', 'https://barn-estate.ru/for-partners/'], ['Barnes Club', 'https://barn-estate.ru/barnes-club/'], ['СМИ о нас', 'https://barn-estate.ru/novosti/smi-o-nas/'], ['Мероприятия', 'https://barn-estate.ru/novosti/meropriyatiya/'], ['Команда', 'https://barn-estate.ru/team/'], ['Вакансии', 'https://barn-estate.ru/vacancies/'], ['Стиль жизни', 'https://barn-estate.ru/stily-zhizni/']]],
+      ['О BARN Estate', 'https://barn-estate.ru/mir-barnes/', [['Контакты', 'https://barn-estate.ru/contacts/'], ['Партнерам', 'https://barn-estate.ru/for-partners/'], ['BARN Estate Club', 'https://barn-estate.ru/barnes-club/'], ['СМИ о нас', 'https://barn-estate.ru/novosti/smi-o-nas/'], ['Мероприятия', 'https://barn-estate.ru/novosti/meropriyatiya/'], ['Команда', 'https://barn-estate.ru/team/'], ['Вакансии', 'https://barn-estate.ru/vacancies/'], ['Стиль жизни', 'https://barn-estate.ru/stily-zhizni/']]],
       ['Собственникам', 'https://barn-estate.ru/sobstvennikam/', [['Продажа', 'https://barn-estate.ru/prodazha_sobstvennikam/'], ['Аренда', 'https://barn-estate.ru/arenda_sobstvennikam/']]]
     ];
     var nav = document.createElement('nav');
@@ -328,7 +328,7 @@
       image.parentNode.insertBefore(picture, image);
       picture.append(source, image);
       image.src = source.srcset;
-      image.alt = 'Руслан Прус — руководитель департамента городской недвижимости BARNES';
+      image.alt = 'Руслан Прус — руководитель департамента городской недвижимости BARN Estate';
     }
 
     var channels = document.createElement('div');
@@ -406,7 +406,7 @@
     if (!inner.querySelector('.owner-sale-exclusive__eyebrow')) {
       var eyebrow = document.createElement('p');
       eyebrow.className = 'owner-sale-exclusive__eyebrow';
-      eyebrow.textContent = 'BARNES / ЭКСКЛЮЗИВ';
+      eyebrow.textContent = 'BARN Estate / ЭКСКЛЮЗИВ';
       inner.insertBefore(eyebrow, title);
     }
 
@@ -421,11 +421,11 @@
     if (!title.querySelector('.owner-sale-exclusive__title-line')) {
       title.setAttribute(
         'aria-label',
-        'Преимущества эксклюзивной работы с BARNES'
+        'Преимущества эксклюзивной работы с BARN Estate'
       );
       title.innerHTML = [
         'ПРЕИМУЩЕСТВА ЭКСКЛЮЗИВНОЙ',
-        'РАБОТЫ С BARNES'
+        'РАБОТЫ С BARN Estate'
       ].map(function (line) {
         return '<span class="owner-sale-exclusive__title-line" aria-hidden="true">' + line + '</span>';
       }).join('');
@@ -519,8 +519,8 @@
                 <div class="catalog-consultation__mobile-photo"><img src="/barn-estate-homepage-clone/assets/city-real-estate/source-assets/17-23350d2829-cta-ruslan-pruss.webp" alt="Руслан Прус" width="68" height="68"></div>
                 <div><p class="catalog-consultation__mobile-role">Руководитель департамента городской недвижимости</p><p class="catalog-consultation__mobile-name">Руслан Прус</p></div>
               </div>
-              <div class="catalog-consultation__mobile-header"><h2 class="catalog-consultation__mobile-title">Эксперты BARNES подскажут</h2><p class="catalog-consultation__mobile-lead">Поможем подготовить объект, найти надёжного арендатора и сдать недвижимость на выгодных условиях</p></div>
-              <div class="catalog-consultation__header"><h2 class="catalog-consultation__subtitle">Эксперты BARNES подскажут</h2><p class="catalog-consultation__lead">Поможем подготовить объект, найти надёжного арендатора и сдать недвижимость на выгодных условиях</p></div>
+              <div class="catalog-consultation__mobile-header"><h2 class="catalog-consultation__mobile-title">Эксперты BARN Estate подскажут</h2><p class="catalog-consultation__mobile-lead">Поможем подготовить объект, найти надёжного арендатора и сдать недвижимость на выгодных условиях</p></div>
+              <div class="catalog-consultation__header"><h2 class="catalog-consultation__subtitle">Эксперты BARN Estate подскажут</h2><p class="catalog-consultation__lead">Поможем подготовить объект, найти надёжного арендатора и сдать недвижимость на выгодных условиях</p></div>
               <div class="catalog-consultation__methods" role="tablist" aria-label="Способ связи">
                 <button type="button" role="tab" class="catalog-consultation__method" aria-selected="false" data-method="call"><svg class="catalog-consultation__method-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span>Звонок</span></button>
                 <button type="button" role="tab" class="catalog-consultation__method" aria-selected="false" data-method="max"><svg class="catalog-consultation__method-icon catalog-consultation__method-icon--max" aria-hidden="true" viewBox="0 0 42 42"><path d="M21.47 41.88c-4.11 0-6.02-.6-9.34-3-2.1 2.7-8.75 4.81-9.04 1.2 0-2.71-.6-5-1.28-7.5C1 29.5.08 26.07.08 21.1.08 9.23 9.82.3 21.36.3c11.55 0 20.6 9.37 20.6 20.91a20.6 20.6 0 0 1-20.49 20.67m.17-31.32c-5.62-.29-10 3.6-10.97 9.7-.8 5.05.62 11.2 1.83 11.52.58.14 2.04-1.04 2.95-1.95a10.4 10.4 0 0 0 5.08 1.81 10.7 10.7 0 0 0 11.19-9.97 10.7 10.7 0 0 0-10.08-11.1Z" fill="currentColor"/></svg><span>MAX</span></button>
@@ -710,12 +710,12 @@
       },
       {
         selector: '.about-company__title',
-        eyebrow: 'BARNES / МОСКВА',
+        eyebrow: 'BARN Estate / МОСКВА',
         id: 'owner-rent-about-title'
       },
       {
         selector: '.newsletter-cta h2',
-        eyebrow: 'BARNES / АНАЛИТИКА',
+        eyebrow: 'BARN Estate / АНАЛИТИКА',
         id: 'owner-rent-newsletter-title'
       }
     ];
@@ -781,7 +781,7 @@
       header = document.createElement('header');
       header.className = 'owner-sale-types__header';
       header.innerHTML = [
-        '<p class="owner-sale-types__eyebrow owner-rent-section-eyebrow">НАПРАВЛЕНИЯ BARNES</p>',
+        '<p class="owner-sale-types__eyebrow owner-rent-section-eyebrow">НАПРАВЛЕНИЯ BARN Estate</p>',
         '<h2 class="owner-sale-types__section-title" id="owner-rent-types-title">ПОМОЖЕМ СДАТЬ ВАШУ НЕДВИЖИМОСТЬ</h2>'
       ].join('');
       inner.insertBefore(header, inner.firstChild);
