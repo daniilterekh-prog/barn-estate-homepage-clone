@@ -67,14 +67,6 @@
   document.body.classList.add('partners-owner-shell');
 
   function enhanceOwnerHeader() {
-    var pauseLogos = document.querySelector('.ap-marquee-toggle');
-  if (pauseLogos) pauseLogos.addEventListener('click', function () {
-    var paused = pauseLogos.getAttribute('aria-pressed') !== 'true';
-    document.getElementById('program-partners').classList.toggle('is-paused', paused);
-    pauseLogos.setAttribute('aria-pressed', String(paused));
-    pauseLogos.textContent = paused ? 'Продолжить движение' : 'Приостановить логотипы';
-  });
-
   var header = document.querySelector('.site-header');
     var inner = header && header.querySelector('.site-header__inner');
     if (!header || !inner) return;

@@ -42,7 +42,7 @@
 .ambassadors-page .ap-partners{--ap-logo-gap:26px;--ap-logo-shift:13px;overflow:hidden;background:#f4f3f0}
 .ambassadors-page .ap-logo-header{display:flex;justify-content:space-between;gap:40px;align-items:flex-start}
 .ambassadors-page .ap-logo-header .ap-header{max-width:900px}
-.ambassadors-page .ap-marquee-toggle{flex-shrink:0;border:1px solid #9b9893;border-radius:1px;padding:12px 16px;min-height:44px;background:transparent;color:var(--ap-ink);cursor:pointer}
+
 .ambassadors-page .partners-section__marquees{display:flex;flex-direction:column;gap:var(--ap-logo-gap)}
 .ambassadors-page .partners-section__marquee{width:100%;overflow:hidden;mask-image:linear-gradient(90deg,transparent,#000 4%,#000 96%,transparent)}
 .ambassadors-page .partners-section__track{display:flex;width:max-content;gap:var(--ap-logo-gap);animation-timing-function:linear;animation-iteration-count:infinite}
@@ -51,16 +51,16 @@
 .ambassadors-page .partners-section__logo{display:block;width:100%;height:100%;max-width:200px;object-fit:contain}
 .ambassadors-page .partners-section__track--left{animation-name:ap-logo-left}
 .ambassadors-page .partners-section__track--right{animation-name:ap-logo-right}
-.ambassadors-page .ap-partners.is-paused .partners-section__track,.ambassadors-page .partners-section__marquee:hover .partners-section__track{animation-play-state:paused}
+.ambassadors-page .partners-section__marquee:hover .partners-section__track{animation-play-state:paused}
 
 
 @media(min-width:1441px){.ambassadors-page .ap-header h2{}}
-@media(max-width:1024px){.ambassadors-page .ap-eyebrow{margin-bottom:12px!important}.ambassadors-page .ap-steps{grid-template-columns:repeat(3,minmax(0,1fr))}.ambassadors-page .ap-benefit-grid,.ambassadors-page .ap-who-grid{gap:28px}.ambassadors-page .ap-trust>.base-container{grid-template-columns:1fr;gap:32px}.ambassadors-page .ap-logo-header{display:block}.ambassadors-page .ap-logo-header .ap-header{margin-bottom:24px}.ambassadors-page .ap-marquee-toggle{margin-bottom:32px}}
+@media(max-width:1024px){.ambassadors-page .ap-eyebrow{margin-bottom:12px!important}.ambassadors-page .ap-steps{grid-template-columns:repeat(3,minmax(0,1fr))}.ambassadors-page .ap-benefit-grid,.ambassadors-page .ap-who-grid{gap:28px}.ambassadors-page .ap-trust>.base-container{grid-template-columns:1fr;gap:32px}.ambassadors-page .ap-logo-header{display:block}.ambassadors-page .ap-logo-header .ap-header{margin-bottom:24px}}
 @media(max-width:768px){.ambassadors-page .ap-section :is(li,article)>p,.ambassadors-page .ap-steps li>div>p,.ambassadors-page .ap-community-grid article>div>p:not(.ap-eyebrow){}.ambassadors-page .ap-benefit-grid,.ambassadors-page .ap-who-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.ambassadors-page .ap-community-grid{grid-template-columns:1fr;gap:40px}.ambassadors-page .ap-section h3{}}
 @media(max-width:540px){.ambassadors-page .ap-section{--ap-space:48px;scroll-margin-top:90px}.ambassadors-page .ap-header{margin-bottom:28px}.ambassadors-page .ap-header h2{}.ambassadors-page .ap-lead{}.ambassadors-page .ap-header .ap-lead{margin-top:16px}.ambassadors-page .ap-steps{display:block}.ambassadors-page .ap-steps li{display:grid;grid-template-columns:28px minmax(0,1fr);gap:16px;padding:14px 0}.ambassadors-page .ap-steps li>div>p{margin-top:6px;}.ambassadors-page .ap-steps .ap-number{margin:3px 0 0}.ambassadors-page .ap-mechanics .ap-action{margin-top:20px;width:100%}.ambassadors-page .ap-action{min-height:58px;padding:18px 24px}.ambassadors-page .ap-benefit-grid{gap:24px 20px}.ambassadors-page .ap-benefit-grid li{padding-top:16px}.ambassadors-page .ap-benefit-grid .ap-number{margin-bottom:12px}.ambassadors-page .ap-section :is(li,article)>p,.ambassadors-page .ap-community-grid article>div>p:not(.ap-eyebrow){margin-top:12px}.ambassadors-page .ap-who-grid{grid-template-columns:1fr;gap:24px}.ambassadors-page .ap-who-grid li{padding-top:16px}.ambassadors-page .ap-text-action{}.ambassadors-page .ap-community-grid article>div{padding-top:24px}.ambassadors-page .ap-trust>.base-container{gap:24px}.ambassadors-page .ap-trust .ap-header{margin:0}}
 
 
-@media(prefers-reduced-motion:reduce){.ambassadors-page .partners-section__track{animation:none!important;transform:none!important}.ambassadors-page .partners-section__marquee{overflow-x:auto;mask-image:none}.ambassadors-page .ap-marquee-toggle{display:none}}
+@media(prefers-reduced-motion:reduce){.ambassadors-page .partners-section__track{animation:none!important;transform:none!important}.ambassadors-page .partners-section__marquee{overflow-x:auto;mask-image:none}}
 
 /* Homepage logo cards and seamless two-row movement, with the page's 1px corner rule. */
 .ambassadors-page .partners-section__card{display:flex;align-items:center;justify-content:center;flex-shrink:0;background:#fff;width:280px;height:159px;padding:30px 20px;border:1px solid #e5e2dd;border-radius:1px}
