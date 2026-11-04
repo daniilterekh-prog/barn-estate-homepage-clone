@@ -50,3 +50,7 @@ media-header.css/js приводят первичный хедер к Медиа
 ## Общий UI и мобильный бургер ·04.11.2026
 
 [Изменения и проверки](https://github.com/daniilterekh-prog/barnes-sites/blob/main/main-site/pages/ui-parity-2026-11-04/README.md). Хедер1.1.0 и общий `page-kit.css`; исходники в `main-site/shared`, синхронизация по `current-components.json`. Новых библиотек нет. Основные роли — UI-кит главной1.0.2, зарегистрированные варианты карточек/форм сохранены.
+
+## CTA по собственникам ·05.11.2026
+
+[Оформление и проверки](https://github.com/daniilterekh-prog/barnes-sites/blob/main/main-site/pages/partners/contact-owner-2026-11-04/README.md). `assets/contact-owner.css` применяет дизайн нижнего CTA продажи к партнёрскому блоку; исходные фото и слова сохранены.
