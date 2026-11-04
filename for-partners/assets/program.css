@@ -24,10 +24,8 @@
 .ambassadors-page .ap-benefit-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px 40px}
 .ambassadors-page .ap-benefit-grid li{min-width:0;border-top:1px solid var(--ap-line);padding-top:24px}
 .ambassadors-page .ap-benefit-grid .ap-number{margin-bottom:16px}
-.ambassadors-page .ap-trust{background:#303536;color:#fff}
 .ambassadors-page .ap-trust>.base-container{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
 .ambassadors-page .ap-trust .ap-header{margin:0}
-.ambassadors-page .ap-trust :is(.ap-eyebrow,.ap-lead){color:#fff}
 
 
 
