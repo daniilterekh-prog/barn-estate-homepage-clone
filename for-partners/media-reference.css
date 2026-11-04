@@ -98,13 +98,3 @@ body.barnes-media-reference :is(input,textarea)::placeholder {font-size:inherit;
  body.barnes-media-reference .newsletter-cta h2 {line-height:1.2!important;}
  body.barnes-media-reference .newsletter-cta__copy {padding-inline:0!important;}
 }
-
-/* Media's desktop burger is 33px; page-level 44px touch minima must not shift the left icons. */
-@media(min-width:1025px) {
- html body.barnes-media-reference.barnes-media-header .site-header__left > .site-header__icon-btn {
-  width:33px!important;height:33px!important;min-width:33px!important;min-height:33px!important;flex:0 0 33px!important;
- }
-}
-
-/* Match Media's glyph alignment while keeping the mobile 44px hit area. */
-html body.barnes-media-reference.barnes-media-header .site-header__left > .site-header__icon-btn {justify-content:flex-start!important;}

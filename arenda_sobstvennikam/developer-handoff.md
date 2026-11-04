@@ -1,6 +1,6 @@
 # BARNES — handoff страницы «Собственникам аренды»
 
-**Страница:** `/arenda_sobstvennikam/`  
+**Страница:** `/main-site/pages/owner-rent/`  
 **Статус:** актуальная зафиксированная версия локального клона  
 **Дата:** 7 октября 2026  
 **Reference:** [`../reference-ui.md`](https://github.com/daniilterekh-prog/barnes-sites/blob/main/main-site/pages/reference-ui.md)
