@@ -38,4 +38,19 @@ html body .catalog-consultation .catalog-consultation__media {
   padding-inline:max(var(--barn-page-gutter), calc((100% - 1920px) / 2))!important;
 }
 
+/* Mobile newsletter photography spans the canvas; only the copy owns gutters. */
+@media(max-width:540px) {
+ html body:is(.barnes-home-typography,.owner-sale-reference-ui,.owner-rent-reference-ui,.partners-owner-shell) .newsletter-cta__grid {
+  width:calc(100% + 2 * var(--barn-page-gutter))!important;
+  margin-inline:calc(-1 * var(--barn-page-gutter))!important;
+ }
+ html body:is(.barnes-home-typography,.owner-sale-reference-ui,.owner-rent-reference-ui,.partners-owner-shell) .newsletter-cta__copy {
+  box-sizing:border-box!important;padding-inline:var(--barn-page-gutter)!important;
+ }
+ html body:is(.barnes-home-typography,.owner-sale-reference-ui,.owner-rent-reference-ui,.partners-owner-shell) .newsletter-cta__visual {
+  inset-inline:0!important;width:100%!important;max-width:none!important;
+  height:calc(100% + 40px)!important;
+ }
+}
+
 }
