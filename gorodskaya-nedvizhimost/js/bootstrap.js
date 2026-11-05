@@ -58,7 +58,7 @@
     document.dispatchEvent(new CustomEvent('barnes:node-ready'));
   }
   if(matchMedia('(max-width:540px)').matches&&!document.documentElement.dataset.cityMobile){
-    fetch('mobile.html?v=brand-nowrap-20261104').then(r=>{if(!r.ok)throw Error('mobile snapshot');return r.text()}).then(html=>{
+    fetch('mobile.html?v=cta-bleed-20261105').then(r=>{if(!r.ok)throw Error('mobile snapshot');return r.text()}).then(html=>{
       document.open();document.write(html);document.close();
     }).catch(start);
   }else start();
