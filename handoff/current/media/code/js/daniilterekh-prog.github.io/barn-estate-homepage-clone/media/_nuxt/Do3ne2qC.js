@@ -1,0 +1,1 @@
+const s={name:"BARN Estate MOSCOW",description:"Агентство элитной недвижимости BARN Estate в Москве.",logo:"/barn-estate-homepage-clone/media/pictures/logo.svg",openingHours:"Mo-Fr 09:00-21:00",address:{streetAddress:"улица Петровка, 19с1",addressLocality:"Москва",addressCountry:"RU"},geo:{latitude:55.7625,longitude:37.6164}},t="#identity";export{s as B,t as a};

@@ -1,0 +1,1 @@
+const e={hero:"/pictures/placeholders/hero.svg",landscape:"/pictures/placeholders/landscape.svg",portrait:"/pictures/placeholders/portrait.svg",wide:"/pictures/placeholders/wide.svg",card:"/pictures/placeholders/card.svg"};export{e as P};

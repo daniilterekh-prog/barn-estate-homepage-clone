@@ -1,5 +1,7 @@
 # BARN Estate — страницы основного сайта
 
+[Пять актуальных страниц: передача разработчику по блокам ·05.11.2026](handoff/current/README.md) — 77 блоков, раздельные HTML/CSS/JS, превью и единый ZIP.
+
 - [Единый первый экран пяти узлов по продаже собственникам ·05.11.2026](https://github.com/daniilterekh-prog/barnes-sites/tree/main/main-site/shared/node-shell).
 
 **[Актуальные13страниц и их рабочие исходники](PAGES.md)** · [Техническая очистка03.11.2026](https://github.com/daniilterekh-prog/barnes-sites/tree/main/main-site/maintenance/2026-11-03-cleanup). Главная и переносимые блоки — технический выпуск UI-кита1.0.2; дизайн сохранён.
@@ -22,7 +24,7 @@
 
 [Курортная — кит главной от01.11.2026, с исключениями H1/FAQ](kurortnaya/README.md) · [контракт1.5.2](kurortnaya/UI-KIT.md) · [отдельные блоки](kurortnaya/blocks/catalog.html).
 
-[16 отдельных блоков главной — превью, копирование HTML, ZIP и ТЗ](exact-2026-10-21/blocks/index.html) · [Текущее состояние главной](exact-2026-10-21/CURRENT.md).
+[Актуальные блоки главной](handoff/current/home/blocks/) · [Текущее состояние главной](exact-2026-10-21/CURRENT.md).
 
 ## Логотип BARN Estate — 20.10.2026
 

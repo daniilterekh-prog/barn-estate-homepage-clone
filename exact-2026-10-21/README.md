@@ -1,23 +1,9 @@
-# Главная BARN Estate — утверждённый референс
+# Передача разработчику ·05.11.2026
 
-**Текущая техническая версия — v1.0.2:** очищены повторные стили, синхронизированы пакеты. Дизайн сохранён. [Отчёт](../../../maintenance/2026-11-03-cleanup/README.md).
+[Актуальные HTML/CSS/JS и блоки](../handoff/current/home/README.md). Прежние комплекты заменены; история исходной главной ниже.
 
-**Референс v1.0.0 утверждён пользователем 01.11.2026.** Основные правила — в [UI-KIT.md](UI-KIT.md). [Зафиксированная версия](https://github.com/daniilterekh-prog/barnes-sites/tree/barn-estate-home-reference-v1.0.0/main-site/pages/home/exact-2026-10-21).
+# Главная — актуальная страница
 
-[Посмотреть главную](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/) · [Посмотреть отдельные блоки](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/blocks/)
+[Открыть страницу](./) · [Передача разработчику](../handoff/current/home/README.md) · [Отдельные блоки](../handoff/current/home/blocks/)
 
-| Что нужно | Куда открыть |
-|---|---|
-| Понять, что и как добавить на основной сайт | **[INSTALL.md](INSTALL.md)** |
-| Вставить отдельный блок: HTML, CSS, JS и изображения | **[blocks/](blocks/README.md)** |
-| Скачать все 16 блоков | **[homepage-blocks.zip](blocks/downloads/homepage-blocks.zip)** |
-| Проверить шрифты, цвета, размеры, отступы и кнопки | **[UI-KIT.md](UI-KIT.md)** |
-| Работать с исходниками всей главной и собрать превью | **[source/](https://github.com/daniilterekh-prog/barnes-sites/blob/main/main-site/pages/home/exact-2026-10-21/source/README.md)** |
-
-**Для переноса начинайте с INSTALL.md и blocks/.** У каждого блока есть готовый `paste.html` для вставки одним фрагментом и отдельные `block.html`, `block.css`, `block.js`, `assets/`.
-
-В комплекте 16 пакетов, отдельного видеоблока нет. После отзывов идёт команда. В библиотеке сохранены номера блоков, поэтому после `08-reviews` следует `10-team`.
-
-Формы, поиск и избранное нужно подключить к рабочей логике основного сайта. Подробности — в инструкции.
-
-Предыдущие проверки и варианты собраны в одной папке [_archive/](https://github.com/daniilterekh-prog/barnes-sites/blob/main/main-site/pages/home/exact-2026-10-21/_archive/README.md); для переноса они не нужны.
+Пакет от05.11.2026: HTML, CSS, JS, изображения, шрифты и инструкции. Предыдущие комплекты заменены. Используемые runtime-ассеты сохранены. Формы в превью не отправляют заявки.

@@ -1,0 +1,99 @@
+/* BARN Estate homepage v1.0.2 + registered partner component roles.
+   Page-scoped adapter for archived CSS; shared Media header/hero remain authoritative. */
+body#partners-kit-page.barnes-media-reference.partners-owner-shell{
+ --pk-space:clamp(72px,6vw,100px);--pk-copy-gap:24px;--pk-content-gap:40px;--pk-brow-gap:25px;
+ --pk-card:24px;--pk-expert:22px;--pk-action-height:70px;--pk-action-pad:36px;--pk-text-action:14px;
+ --pk-brow-line:16.1px;--pk-expanded:18px;--pk-expanded-line:27px;--pk-primary:#1e1e1e;--pk-secondary:#4f4d49;--pk-muted:#656462;--pk-brand:#8b1d25;
+}
+@media(min-width:1441px){body#partners-kit-page.barnes-media-reference.partners-owner-shell{--pk-action-pad:47px}}
+@media(max-width:1024px){body#partners-kit-page.barnes-media-reference.partners-owner-shell{--pk-brow-gap:12px;--pk-brow-line:14.4px;--pk-card:20px;--pk-expert:20px}}
+@media(max-width:540px){body#partners-kit-page.barnes-media-reference.partners-owner-shell{--pk-space:48px;--pk-copy-gap:16px;--pk-content-gap:28px;--pk-action-height:58px;--pk-action-pad:24px;--pk-text-action:12px;--pk-expanded:14px;--pk-expanded-line:21px}}
+/* One section rhythm and one gutter. Photo contact remains full bleed. */
+#partners-kit-page.barnes-media-reference.partners-owner-shell :is(.ap-section,.ambassadors-conditions,.about-company,.catalog-contact,.catalog-faq){padding-block:var(--pk-space)!important;margin-block:0!important}
+#partners-kit-page.barnes-media-reference.partners-owner-shell #barnes-directions .bd-section{padding-block:var(--pk-space)!important}
+#partners-kit-page.barnes-media-reference.partners-owner-shell :is(.ap-who,.ap-partners){background:#fff!important}
+#partners-kit-page.barnes-media-reference.partners-owner-shell .newsletter-cta{padding-block:var(--pk-space) 40px!important}
+#partners-kit-page.barnes-media-reference.partners-owner-shell .newsletter-cta__inner{box-sizing:border-box!important;width:100%!important;max-width:1920px!important;margin-inline:auto!important;padding-inline:var(--reference-gutter)!important}
+#partners-kit-page.barnes-media-reference.partners-owner-shell :is(.ap-header,.ambassadors-conditions__header){margin-bottom:var(--pk-content-gap)!important}
+#partners-kit-page.barnes-media-reference.partners-owner-shell .ap-trust .ap-header{margin:0!important}
+#partners-kit-page.barnes-media-reference.partners-owner-shell #requests h2{margin:0 0 var(--pk-content-gap)!important}
+#partners-kit-page.barnes-media-reference.partners-owner-shell .catalog-faq__inner{row-gap:0!important}
+#partners-kit-page.barnes-media-reference.partners-owner-shell .catalog-faq__grid{margin-top:var(--pk-content-gap)!important}
+/* Standard headings; newsletter/partner headings retain their homepage component line-height. */
+#partners-kit-page.barnes-media-reference.partners-owner-shell :is(.ap-header h2,.ambassadors-conditions__section-title,#requests h2,.catalog-contact__title,.about-company__title,.catalog-faq__title){font-family:"Tilda Sans",system-ui,sans-serif!important;font-size:var(--reference-heading)!important;font-weight:300!important;line-height:1.2!important;letter-spacing:0!important;margin-block:0!important;text-transform:uppercase!important}
+#partners-kit-page.barnes-media-reference.partners-owner-shell #program-partners h2{line-height:1!important}
+#partners-kit-page.barnes-media-reference.partners-owner-shell .newsletter-cta h2{font-size:var(--reference-heading)!important;font-weight:300!important;line-height:1!important;letter-spacing:-.04em!important;margin:0!important}
+@media(max-width:540px){#partners-kit-page.barnes-media-reference.partners-owner-shell .newsletter-cta h2{line-height:1.2!important}}
+/* Eyebrow and body typography from the current homepage contract. */
+#partners-kit-page.barnes-media-reference.partners-owner-shell :is(.ap-eyebrow,.partners-section-eyebrow,.bd-eyebrow,.owner-rent-section-eyebrow){font-family:"Tilda Sans",system-ui,sans-serif!important;font-size:var(--reference-eyebrow)!important;line-height:var(--pk-brow-line)!important;font-weight:400!important;letter-spacing:.12em!important;text-transform:uppercase!important;color:var(--pk-secondary)!important;margin:0 0 var(--pk-brow-gap)!important;padding:0!important}
+#partners-kit-page.barnes-media-reference.partners-owner-shell .newsletter-cta .partners-section-eyebrow{color:var(--pk-secondary)!important}
+#partners-kit-page.barnes-media-reference.partners-owner-shell :is(.ap-lead,.ap-steps li>div>p,.ap-benefit-grid p,.ap-who-grid p,.ap-community-grid article>div>p:not(.ap-eyebrow),.catalog-contact__subtitle,.about-company__intro,.newsletter-cta__lead){font-family:"Tilda Sans",system-ui,sans-serif!important;font-size:var(--reference-lead)!important;line-height:var(--reference-lead-line)!important;font-weight:300!important;letter-spacing:0!important;color:var(--pk-secondary)!important}
+#partners-kit-page.barnes-media-reference.partners-owner-shell #partner-contact .catalog-contact__subtitle{color:rgba(255,255,255,.75)!important;margin-top:var(--pk-copy-gap)!important}
+#partners-kit-page.barnes-media-reference.partners-owner-shell .ap-header .ap-lead{margin-top:var(--pk-copy-gap)!important}
+#partners-kit-page.barnes-media-reference.partners-owner-shell .ap-number{font:400 var(--reference-eyebrow)/1.15 "Tilda Sans",sans-serif;letter-spacing:.12em;color:var(--pk-brand)}
+/* Text benefits and photo conditions use the registered Benefit/Card role, not Media caption sizing. */
+#partners-kit-page.barnes-media-reference.partners-owner-shell .ap-section h3{font-family:"Tilda Sans",system-ui,sans-serif!important;font-size:var(--pk-card)!important;line-height:1.2!important;font-weight:400!important;letter-spacing:0!important}
+#partners-kit-page.barnes-media-reference.partners-owner-shell .ambassadors-conditions__copy .ambassadors-conditions__title{font-family:"Tilda Sans",system-ui,sans-serif!important;font-size:var(--pk-card)!important;line-height:1.2!important;font-weight:300!important;letter-spacing:0!important}
+#partners-kit-page.barnes-media-reference.partners-owner-shell :is(.bd-heading h3,.catalog-contact__card-title,.catalog-contact__expert-name){font-size:var(--pk-expert)!important;line-height:1.2!important;font-weight:400!important;letter-spacing:0!important}
+#partners-kit-page.barnes-media-reference.partners-owner-shell .catalog-contact__card-text{font-size:var(--reference-lead)!important;line-height:var(--reference-lead-line)!important;font-weight:300!important}
+#partners-kit-page.barnes-media-reference.partners-owner-shell .ambassadors-conditions__description{font-size:22px!important;line-height:28.16px!important;font-weight:300!important}
+@media(max-width:1024px){#partners-kit-page.barnes-media-reference.partners-owner-shell .ambassadors-conditions__description{font-size:16px!important;line-height:22.4px!important;font-weight:300!important}}
+/* Facts/numerals keep the direction component scale; narrative facts use the body line-height. */
+#partners-kit-page.barnes-media-reference.partners-owner-shell :is(.bd-intro,.bd-facttext,.bd-label,.bd-price-label,.bd-words,.bd-commission-note){font-size:var(--reference-lead)!important;line-height:var(--reference-lead-line)!important;font-weight:300!important}
+#partners-kit-page.barnes-media-reference.partners-owner-shell .bd-navbtn{font:400 16px/1.4 "Tilda Sans",sans-serif;min-height:44px;padding-block:10px}
+#partners-kit-page.barnes-media-reference.partners-owner-shell .bd-mobile-picker{font:400 18px/24px "Tilda Sans",sans-serif;min-height:46px;padding-block:10px;background-color:#f9f3f3}
+/* Main rectangular actions; header and hero have distinct, later approved contracts. */
+#partners-kit-page.barnes-media-reference.partners-owner-shell :is(.ap-action,.bd-cta,.catalog-contact__submit,.catalog-contact__card-submit,.newsletter-form__row>button,.feedback-modal__submit,.site-footer__callback-btn){box-sizing:border-box!important;font-family:"Tilda Sans",system-ui,sans-serif!important;font-size:var(--reference-action)!important;font-weight:400!important;line-height:1.1!important;letter-spacing:0!important;min-height:var(--pk-action-height)!important;height:var(--pk-action-height)!important;padding:0 var(--pk-action-pad)!important;border-radius:1px!important}
+#partners-kit-page.barnes-media-reference.partners-owner-shell :is(.ap-text-action,.ui-more-link){display:inline-flex!important;align-items:center;min-height:44px!important;padding:8px 0!important;font-family:"Tilda Sans",system-ui,sans-serif!important;font-size:var(--pk-text-action)!important;font-weight:400!important;line-height:1.2!important;letter-spacing:.12em!important;color:var(--pk-brand)!important;text-transform:uppercase;border-bottom:1px solid var(--pk-brand);border-radius:0;max-width:100%}
+#partners-kit-page.barnes-media-reference.partners-owner-shell .ui-more-link__label{font:inherit!important;letter-spacing:inherit!important}
+/* Homepage About geometry and expanded-text role, preserving the existing copy/reveal handler. */
+#partners-kit-page.barnes-media-reference.partners-owner-shell .about-company{color:var(--pk-primary)!important;background:#fff!important}
+#partners-kit-page.barnes-media-reference.partners-owner-shell .about-company::before{display:none!important}
+#partners-kit-page.barnes-media-reference.partners-owner-shell .about-company__inner{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.45fr);gap:clamp(48px,7vw,120px);max-width:1920px}
+#partners-kit-page.barnes-media-reference.partners-owner-shell .about-company__brand{position:static;align-self:start;width:100%;max-width:440px;min-height:0;padding:0;margin:0}
+#partners-kit-page.barnes-media-reference.partners-owner-shell .about-company__brand-logo{display:block;max-width:440px;width:100%;height:auto;aspect-ratio:1;margin:0!important;object-fit:contain}
+#partners-kit-page.barnes-media-reference.partners-owner-shell .about-company__intro{margin:var(--pk-content-gap) 0 0!important;padding-top:var(--pk-copy-gap)!important;border-top:1px solid rgba(30,30,30,.18)}
+#partners-kit-page.barnes-media-reference.partners-owner-shell .about-company__copy{margin-top:24px!important;font-size:var(--pk-expanded)!important;line-height:var(--pk-expanded-line)!important;color:var(--pk-secondary)!important;max-width:none}
+#partners-kit-page.barnes-media-reference.partners-owner-shell .about-company__copy p{font-size:var(--pk-expanded)!important;line-height:var(--pk-expanded-line)!important;font-weight:300!important;margin:0 0 var(--pk-copy-gap)!important}
+#partners-kit-page.barnes-media-reference.partners-owner-shell .about-company .ui-more-link{margin-top:0!important}
+@media(max-width:1279px){#partners-kit-page.barnes-media-reference.partners-owner-shell .about-company__inner{grid-template-columns:1fr;gap:32px}#partners-kit-page.barnes-media-reference.partners-owner-shell .about-company__brand{max-width:280px}}
+@media(max-width:540px){#partners-kit-page.barnes-media-reference.partners-owner-shell .about-company__brand{max-width:220px}#partners-kit-page.barnes-media-reference.partners-owner-shell .about-company__title{text-align:left!important}}
+/* Newsletter is the same section/description/form rhythm as the approved homepage. */
+#partners-kit-page.barnes-media-reference.partners-owner-shell .newsletter-cta__copy{display:block;padding-block:0!important}
+#partners-kit-page.barnes-media-reference.partners-owner-shell .newsletter-cta__lead{margin:var(--pk-copy-gap) 0 0!important}
+#partners-kit-page.barnes-media-reference.partners-owner-shell .newsletter-form{margin-top:24px!important}
+#partners-kit-page.barnes-media-reference.partners-owner-shell .newsletter-form__note{margin-top:16px!important;font:300 13px/18px "Tilda Sans",sans-serif;color:var(--pk-muted)!important}
+/* White fields and form typography; over-photo contact fields intentionally keep light foregrounds. */
+#partners-kit-page.barnes-media-reference.partners-owner-shell :is(.newsletter-form__row>input,.feedback-modal__input,.catalog-contact__input,.catalog-contact__textarea){font-size:var(--reference-field)!important;line-height:1.4!important;font-weight:300!important;border-radius:1px}
+#partners-kit-page.barnes-media-reference.partners-owner-shell :is(.newsletter-form__row>input,.feedback-modal__input){color:var(--pk-primary)!important}
+#partners-kit-page.barnes-media-reference.partners-owner-shell :is(.newsletter-form__row>input,.feedback-modal__input)::placeholder{color:var(--pk-muted)!important}
+/* Footer typography follows the same homepage responsive roles; background is unchanged. */
+#partners-kit-page.barnes-media-reference.partners-owner-shell .site-footer__column-title{font-size:18px;font-weight:400;line-height:1;margin-bottom:30px}
+#partners-kit-page.barnes-media-reference.partners-owner-shell .site-footer__link{font-size:16px;font-weight:300;line-height:1}
+@media(min-width:1441px){#partners-kit-page.barnes-media-reference.partners-owner-shell .site-footer__column-title{font-size:20px}#partners-kit-page.barnes-media-reference.partners-owner-shell .site-footer__link{font-size:18px}}
+@media(max-width:540px){#partners-kit-page.barnes-media-reference.partners-owner-shell .site-footer__column-title{font-size:14px;line-height:1.2;font-weight:400;margin-bottom:16px}#partners-kit-page.barnes-media-reference.partners-owner-shell .site-footer__link{font-size:13px;line-height:1.4;font-weight:400}}
+
+#partners-kit-page.barnes-media-reference.partners-owner-shell #requests h2{margin-bottom:var(--pk-content-gap)!important}
+
+/* Registered metadata and expanded states omitted by the earlier Media caption layer. */
+#partners-kit-page.barnes-media-reference.partners-owner-shell .owner-rent-section-eyebrow{text-align:left!important}
+#partners-kit-page.barnes-media-reference.partners-owner-shell :is(.ap-header h2,.ambassadors-conditions__section-title,.catalog-contact__title,.about-company__title,.catalog-faq__title){text-align:left!important}
+#partners-kit-page.barnes-media-reference.partners-owner-shell .ambassadors-conditions__header .partners-section-eyebrow{text-align:left!important}
+#partners-kit-page.barnes-media-reference.partners-owner-shell .about-company__fact-label{font-size:13px!important;line-height:18px!important;font-weight:300!important;color:var(--pk-muted)!important}
+#partners-kit-page.barnes-media-reference.partners-owner-shell :is(.catalog-faq__answer-content,.catalog-faq__answer-content p){font-size:var(--reference-lead)!important;line-height:var(--reference-lead-line)!important;font-weight:300!important;color:var(--pk-secondary)!important}
+
+/* FAQ uses __grid; mobile primary actions follow the owner contact button alignment. */
+@media(max-width:540px){
+ #partners-kit-page.barnes-media-reference.partners-owner-shell :is(.ap-action,.bd-cta){display:flex;width:100%!important;max-width:none;justify-content:center;text-align:center;gap:8px}
+}
+
+/* Sticky header uses the shared owner header: desktop contents, mobile menu.
+ * Match owner anchor typography and spacing; retain partner section labels. */
+html body#partners-kit-page.barnes-media-header .owner-sale-sticky__list{gap:28px}
+html body#partners-kit-page.barnes-media-header .owner-sale-sticky__item{flex-shrink:0}
+html body#partners-kit-page.barnes-media-header .owner-sale-sticky__link{font-size:16px;line-height:1.2;padding-bottom:4px;border-bottom:1px solid transparent}
+html body#partners-kit-page.barnes-media-header .owner-sale-sticky__link--active{border-bottom-color:#8b1d25}
+@media(max-width:1440px){html body#partners-kit-page.barnes-media-header .owner-sale-sticky__list{gap:22px}html body#partners-kit-page.barnes-media-header .owner-sale-sticky__link{font-size:15px}}
+
+/* Preserve the existing mobile About action role. */
+@media(max-width:540px){#partners-kit-page.barnes-media-reference.partners-owner-shell .about-company__read-more{font-size:11px}}

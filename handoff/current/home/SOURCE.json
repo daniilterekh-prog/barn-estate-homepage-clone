@@ -1,0 +1,845 @@
+{
+  "page": "home",
+  "title": "Главная",
+  "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/",
+  "sourceCommit": "4a7d54fd3fbef9ba7ab60750b1803d7b6dffbd21",
+  "date": "2026-11-05",
+  "blocks": 16,
+  "resources": [
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/_nuxt/D6ir4HU1.js",
+      "file": "home/code/js/daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/_nuxt/D6ir4HU1.js",
+      "sha256": "e74517450f5cc418a0582de26f53e1593b0f6bd50b18c769073715a093f56cb1"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/_nuxt/rEwJxLht.js",
+      "file": "home/code/js/daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/_nuxt/rEwJxLht.js",
+      "sha256": "65b2eb59a0fe23a949c3fa0afd1a008c4839fb9050dd201d63b17ec5ac3a8a53"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/_nuxt/CPY-UiRS.js",
+      "file": "home/code/js/daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/_nuxt/CPY-UiRS.js",
+      "sha256": "501da68581d173fb301850405c6c16045f4e10440c45fced821a4bc9e89b0ea4"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/_nuxt/UCfuchvY.js",
+      "file": "home/code/js/daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/_nuxt/UCfuchvY.js",
+      "sha256": "674d659d0df14ec11fedeae62edaecd3412c2c0ce99dc2084549c2e049cc6a88"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/home-spacing.css",
+      "file": "home/code/css/daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/home-spacing.css",
+      "sha256": "dc550d621f1f9f37b4dfd732e8bdfa7904b7162f8fb2519285b86f191a97180c"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/home-about.css",
+      "file": "home/code/css/daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/home-about.css",
+      "sha256": "3d5e858e6a93dd79d469fe7df27ef7bf7021b40845c7b2085a66b9f3f6f47927"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/home-buttons.css",
+      "file": "home/code/css/daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/home-buttons.css",
+      "sha256": "e84e451a1d7f46adbb300557606af73b1ce081a2ce986ccd0368a206ce822b7a"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/shared/page-breadcrumbs.css",
+      "file": "home/code/css/daniilterekh-prog.github.io/barn-estate-homepage-clone/shared/page-breadcrumbs.css",
+      "sha256": "7a58ed93dc94357053343f42781a513a93b66b3f6c61f0f9a6c0e26bcaef7d30"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/_nuxt/zUqhjCEr.js",
+      "file": "home/code/js/daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/_nuxt/zUqhjCEr.js",
+      "sha256": "39d6ca757af9a97cae6290470e9ff260ae9fe00ff6ab8fa3237e3df2bb1f2719"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/home-owner-form.css",
+      "file": "home/code/css/daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/home-owner-form.css",
+      "sha256": "5312ef62e68fefcb95a3c1f7c4cc6eba0b4fcf34cbe71ebeefd06fecb9a6a408"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/home-typography.css",
+      "file": "home/code/css/daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/home-typography.css",
+      "sha256": "daf2a31c248d482abc6bfb513117b87832f846746f527edd40068f1eabb33024"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/_nuxt/CAfYF27t.js",
+      "file": "home/code/js/daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/_nuxt/CAfYF27t.js",
+      "sha256": "9fc73bfb79a4dd9125717ec3bcede15acb5f5ca938499180aa887651f77e4e15"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/_nuxt/B7un9_wk.js",
+      "file": "home/code/js/daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/_nuxt/B7un9_wk.js",
+      "sha256": "0259f4e2eb2e6e6df94d0ab3902e9f1e8764870d422d710b5ac31f11f99bde1e"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/brand-nowrap.js",
+      "file": "home/code/js/daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/brand-nowrap.js",
+      "sha256": "55c3b91fbb6c5069fa49ee63c7cf5967d85ab5d48006fbe006609f46355ed5fa"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/_nuxt/CiFaaw8W.js",
+      "file": "home/code/js/daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/_nuxt/CiFaaw8W.js",
+      "sha256": "e239a678b253f0060431e1bfc373443b5a79bf506fe732085d524bb1e05fc3b6"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/_nuxt/DG0aNqvh.js",
+      "file": "home/code/js/daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/_nuxt/DG0aNqvh.js",
+      "sha256": "73efbe1903a8acd7b932ea556cd3a446d7faf1a2817330999f550eda7873f042"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/home-header-contacts.css",
+      "file": "home/code/css/daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/home-header-contacts.css",
+      "sha256": "41f6bc970cdc98a665da7c286c16d7418660e8fedcedee23e0e7c84e4e46cabd"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/home-about.js",
+      "file": "home/code/js/daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/home-about.js",
+      "sha256": "6038cef03cc3e4ef902730bdec76fba6972b63bcb7e792b262b0914292f48081"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/_nuxt/C--UN0YB.js",
+      "file": "home/code/js/daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/_nuxt/C--UN0YB.js",
+      "sha256": "3e23d8bdd4df3c732944b8689221afd6ecfee733b833ee5ae62215a58ca78caa"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/_nuxt/CGpiMgXT.js",
+      "file": "home/code/js/daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/_nuxt/CGpiMgXT.js",
+      "sha256": "c8890fb33bc4b2cc9964da9ac07c4df8850b3d6facb322cbd93357386362e06d"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/_nuxt/style.D01Ij5Qx.css",
+      "file": "home/code/css/daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/_nuxt/style.D01Ij5Qx.css",
+      "sha256": "e898c80f2a6a26a0254421a20a291cc6171310c3f5dac3bc00f64d2d24c1ca9b"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/brand-nowrap.css",
+      "file": "home/code/css/daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/brand-nowrap.css",
+      "sha256": "09ea8dedc25f5cbc24540b51aba46a441634eb410cec1d4c49a8b2fc479f7967"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/assets/dbe86663de2e66fe6c7e73f8.svg",
+      "file": "shared/assets/d2fcc8d05010200d.svg",
+      "sha256": "d2fcc8d05010200db76767504255b2594ec7fc94bed7aa8f38b0e12fa7ac73ca"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/home-recommendations.css",
+      "file": "home/code/css/daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/home-recommendations.css",
+      "sha256": "03aa61bb4cbd623f5a7e0ffaf672034199272906ece3619845d4f247aef2c2e2"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/hero-laptop.css",
+      "file": "home/code/css/daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/hero-laptop.css",
+      "sha256": "01b3ae051e2b1991600d753f6c0746c677be6d771965554517378bbb3495e7d0"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/assets/2070652af80c99d00a1c2355.svg",
+      "file": "shared/assets/774f522ba53c035b.svg",
+      "sha256": "774f522ba53c035b550c9b17a7655a5f183738f507eb51c71d7bb664bfd0490e"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/assets/9ea9bb28f941cf235c7fd8ad.svg",
+      "file": "shared/assets/8c3ffc6b48305ece.svg",
+      "sha256": "8c3ffc6b48305ecea2f974cf0263ef1261b6a0e46cf6eced511c51618591f035"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/assets/bd50209efd9c42725c2e361e.svg",
+      "file": "shared/assets/3dc5dbae81ea4d16.svg",
+      "sha256": "3dc5dbae81ea4d16ed74bcf78672316a31639f639f7f094429b332ff7c73311d"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/assets/253d5fe322d4d1862f6598f1.jpg",
+      "file": "shared/assets/882968a84f1bd551.jpg",
+      "sha256": "882968a84f1bd55145024c004a377e64cff70114c733cc1044f2756a7dfafa9e"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/assets/87e5a0a2a2a73b3d72e87648.svg",
+      "file": "shared/assets/68ebd64f4b2d04c0.svg",
+      "sha256": "68ebd64f4b2d04c0a3ceeb17dfcc6e2109c397ab06292b18fdb8aa19431eba85"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/assets/256739184643c8a59ea2d95c.svg",
+      "file": "shared/assets/996a69816f82c3a2.svg",
+      "sha256": "996a69816f82c3a2684ae99eb7d0942a2c6e6446d4c51defc8ded1312e00bf9f"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/assets/7e1d3274487906d5dbdc0908.svg",
+      "file": "shared/assets/01f0e6050bde3c94.svg",
+      "sha256": "01f0e6050bde3c94d4f5ff9b1982aeeb259a33fd29c717cd29e358e5f9b5b343"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/assets/8a1cfe8f5620f188115bcba8.svg",
+      "file": "shared/assets/688993a108b69c35.svg",
+      "sha256": "688993a108b69c35264c5779a4f3fe08a04a805f65b5a20481c70d8e834164d1"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/media-header.css",
+      "file": "home/code/css/daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/media-header.css",
+      "sha256": "624a948bf7ac9eb36554a38148fd2820d98d8d659acb8237d9bada7fa1924709"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/assets/764479c3e7e1f41d81a0f02d.svg",
+      "file": "shared/assets/8a8a2fcef7b4919f.svg",
+      "sha256": "8a8a2fcef7b4919f876dd47c9f52b85859ad45bcbfb09fd6e91a93aef62f1886"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/assets/5f9a5f75aa9de0fd5d980437.svg",
+      "file": "shared/assets/5caa61a4b0731d0d.svg",
+      "sha256": "5caa61a4b0731d0d89421b4fb24f41433025e5aea59155a14cf3a3fada6c9174"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/shared/layout-gutters.css",
+      "file": "home/code/css/daniilterekh-prog.github.io/barn-estate-homepage-clone/shared/layout-gutters.css",
+      "sha256": "9c7ccfabdd5541cf007cac9a40fe23131f1fb2f28964c529d9e6f7bac9851bb1"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/shared/cta-bleed.css",
+      "file": "home/code/css/daniilterekh-prog.github.io/barn-estate-homepage-clone/shared/cta-bleed.css",
+      "sha256": "d892ba286df8056cbf94809a56c7c03339ab9b88495612d67019ec893dfb804e"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/assets/c57d9b3c8de986fa0d618d09.svg",
+      "file": "shared/assets/9b2d8c1a7d4d2135.svg",
+      "sha256": "9b2d8c1a7d4d213587828c6bdf6592a37113a388fedc1b58211534d8cb1e7123"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/assets/910a6c059306c2da72402f48.svg",
+      "file": "shared/assets/981be49239329477.svg",
+      "sha256": "981be49239329477774ae72574aa4fa498098dc36145153fad90fc9875e9c3e1"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/assets/29bbe9068117f193bae0f419.svg",
+      "file": "shared/assets/3e197e0e1f3e679e.svg",
+      "sha256": "3e197e0e1f3e679ee09823c75e1c7bad3a19da9bd1ba01df395268b9ae91816f"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/assets/c52b96a92cb0f04c755c14ae.svg",
+      "file": "shared/assets/b643357eddc27985.svg",
+      "sha256": "b643357eddc27985ef1b4e735aac9e4c92ff86cb49ef65d0deb7648dda190eb5"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/assets/76b3eaa901c71dcdec3fbebb.svg",
+      "file": "shared/assets/169eb3f940f64835.svg",
+      "sha256": "169eb3f940f64835c36474b2d2b9d74c7681f068af96f78d0004ecaa66031042"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/assets/93d8f9169ce58218b5e9ad91.svg",
+      "file": "shared/assets/71d6c75042649a43.svg",
+      "sha256": "71d6c75042649a43808279709718938521f44173db7d97d0a505dc756503871f"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/assets/a62ce011abf91ea1a632fbf9.png",
+      "file": "shared/assets/785a9f3fd13966ac.png",
+      "sha256": "785a9f3fd13966acf2723fe5c68b7661e48018dfbccafbc214667dbf1ccb32c4"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/assets/d98028a12bc9366262f97604.svg",
+      "file": "shared/assets/4435c9a57e165a1c.svg",
+      "sha256": "4435c9a57e165a1c3b7f27e0b5b11b82b10d674ea4fff7f6748cb67b7fcb994e"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/assets/1203e601bc39306b8030eab5.svg",
+      "file": "shared/assets/827b2ed8ba410d82.svg",
+      "sha256": "827b2ed8ba410d82199935ecc3aa4599147a5a06c4948956a41bf7895895800f"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/assets/home-hero-cleaned.png",
+      "file": "shared/assets/3bee2f050d87ea14.png",
+      "sha256": "3bee2f050d87ea14b8110c098f9c416141b84c5778b9495db25c57b225c052f9"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/_nuxt/DIWoDaId.js",
+      "file": "home/code/js/daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/_nuxt/DIWoDaId.js",
+      "sha256": "0c54b17c321d13998012c5af6199c8188932d95b9fb5e14ae82823dfb8f5380c"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/home-header-contacts.js",
+      "file": "home/code/js/daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/home-header-contacts.js",
+      "sha256": "ec87ed670d121d9a73ed9566db19c41818ac6d5628162464c1bfe3019c6cfaf5"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/_nuxt/cr5LBAdK.js",
+      "file": "home/code/js/daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/_nuxt/cr5LBAdK.js",
+      "sha256": "ef1780c011bf010a8d85faab11e4b09d439ae6be39af7bfec5e314d810fbbc69"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/_nuxt/BX-jYKJN.js",
+      "file": "home/code/js/daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/_nuxt/BX-jYKJN.js",
+      "sha256": "2003e039cba1c4bc683613acbb106789e953b82f4463c18c5c8d4bafd1993d0d"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/home-recommendations.js",
+      "file": "home/code/js/daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/home-recommendations.js",
+      "sha256": "340c89999647af435c2821d67c40127e696584cb6e497ec46f03925b3f235e92"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/_nuxt/VNfaeIID.js",
+      "file": "home/code/js/daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/_nuxt/VNfaeIID.js",
+      "sha256": "ddfb29ae3ec2efae6697510774c63628641635ca5b3fae65a9eafc1bb544693f"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/_nuxt/fvivtoIx.js",
+      "file": "home/code/js/daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/_nuxt/fvivtoIx.js",
+      "sha256": "78a9cac63fcec2f1228f4783f7585b185a23171946f43c6d80e3b74e737f1e1d"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/home-semantics.js",
+      "file": "home/code/js/daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/home-semantics.js",
+      "sha256": "a0fb852de45ec17de2fbd0530ce78defb7cd7bebd9a68b4f54bd3b95645bcde5"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/shared/page-breadcrumbs.js",
+      "file": "home/code/js/daniilterekh-prog.github.io/barn-estate-homepage-clone/shared/page-breadcrumbs.js",
+      "sha256": "08614c85a2909924b971b750853a7c21341b1e2bc96249a1c17e2de953eecbb5"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/_nuxt/DKHrHuc5.js",
+      "file": "home/code/js/daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/_nuxt/DKHrHuc5.js",
+      "sha256": "21eedc896a42a6667b3bc988e87c6dbd492e686f9a14fb9f7dafb48c4663712e"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/_nuxt/Ba5uL_-n.js",
+      "file": "home/code/js/daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/_nuxt/Ba5uL_-n.js",
+      "sha256": "868a98d9ee6cbd7fb495adbfa3fac720db8ef11b826fcf1c946b988d29c7c717"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/_nuxt/ndjwFeYD.js",
+      "file": "home/code/js/daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/_nuxt/ndjwFeYD.js",
+      "sha256": "ebad1c383e80175084c77e2048c2677c0d8b13f5a3bb3cc2e93cf288e30a6f60"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/_nuxt/CnYOdFEB.js",
+      "file": "home/code/js/daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/_nuxt/CnYOdFEB.js",
+      "sha256": "6e7cffac8dce3421134bc2816a147600dfaf1e4f50eb29c8f70c620f4f34e979"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/_nuxt/NpqsAeEz.js",
+      "file": "home/code/js/daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/_nuxt/NpqsAeEz.js",
+      "sha256": "43e00b4bcb7ac4ddd165454acf30815334c1f095856350790cd7860473396784"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/_nuxt/DxKB-mLv.js",
+      "file": "home/code/js/daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/_nuxt/DxKB-mLv.js",
+      "sha256": "f7f5c37e6b12b93c9c2a3b97f67aefee670c15b27d59e8f94eb98d56de28f4f2"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/_nuxt/C5y2Uo83.js",
+      "file": "home/code/js/daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/_nuxt/C5y2Uo83.js",
+      "sha256": "f7a18e4521dcbe4bb2e76d3aa28936fe30ec78b14faa1606c97402d631db183e"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/_nuxt/CYcK18ld.js",
+      "file": "home/code/js/daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/_nuxt/CYcK18ld.js",
+      "sha256": "f6f8f0b8d7b128220784868fbfd0aa4d2564b7e1498719709905aee3bc00b125"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/_nuxt/DJKG-Wuj.js",
+      "file": "home/code/js/daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/_nuxt/DJKG-Wuj.js",
+      "sha256": "995831c1842b2dc3ee47a936aaaac722aaf049ab42a422d8fc88be2562667c4a"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/_nuxt/CWHGrljz.js",
+      "file": "home/code/js/daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/_nuxt/CWHGrljz.js",
+      "sha256": "82ed7017e6e8ba38a4ed64353aadc6e169bac62eaaad92274b95f6494809304b"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/media-header.js",
+      "file": "home/code/js/daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/media-header.js",
+      "sha256": "811c378ca83e1a960c49963c8b5365f784d6b2b455320fc660d7d22dbff942a9"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/home-content.js",
+      "file": "home/code/js/daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/home-content.js",
+      "sha256": "a3477d3ede584cffb2734b040f02b24de4582af14465e30c90c6c20f99344526"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/_nuxt/BvjfbHVV.js",
+      "file": "home/code/js/daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/_nuxt/BvjfbHVV.js",
+      "sha256": "c02d3a6ae856040f202f322e22aebc0ac02c2fcf0414c890e5f03f60639d45dc"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/shared/cta-bleed.js",
+      "file": "home/code/js/daniilterekh-prog.github.io/barn-estate-homepage-clone/shared/cta-bleed.js",
+      "sha256": "45d164865450e12665bf787ca4941858a46d653483c5e8244fb5d01c41e87b98"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/_nuxt/Db45dF55.js",
+      "file": "home/code/js/daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/_nuxt/Db45dF55.js",
+      "sha256": "cc32a92e7c7706f05d5ed2a341675b801e8550b8b52ec96b05184b4a17e0d24a"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/_nuxt/CFZN_xYQ.js",
+      "file": "home/code/js/daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/_nuxt/CFZN_xYQ.js",
+      "sha256": "8e640903e7f00e4fbab14ee51167f2f5184299672c8cf214d26c9fd9fc25df4e"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/_nuxt/C_5gkgve.js",
+      "file": "home/code/js/daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/_nuxt/C_5gkgve.js",
+      "sha256": "2e19eaf5e1ecf1b19b13dc2f06477d7eab97b9a94f692d92f1e86fd451b67ab1"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/home-owner-form.js",
+      "file": "home/code/js/daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/home-owner-form.js",
+      "sha256": "4b707a92042afff3add2a7eb07fb20b21bfd2d9ab4ae4454135a2590f5a1b7e0"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/assets/06fe07ec2e85156f83d1e378.jpg",
+      "file": "shared/assets/ab588d0aa45489b0.jpg",
+      "sha256": "ab588d0aa45489b00e4dc9c4b290d75cdaecca0880cf7d6c4585b43e7fffafc0"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/assets/de589af6ec6325d4b365d646.woff2",
+      "file": "shared/assets/f0f2c165784c7234.woff2",
+      "sha256": "f0f2c165784c72343618a7c2cbde00e45dbb9b09af5149984792f280cac9642e"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/assets/9e76f26b05473907fc0031ca.woff2",
+      "file": "shared/assets/2670dad44ca6c2a1.woff2",
+      "sha256": "2670dad44ca6c2a1b9bbdbf1af6d8db9173f2dbe31604e80bdf9599b55047d41"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/assets/a9f2b67f7136af9bde4f58b8.woff2",
+      "file": "shared/assets/f716269e361f4665.woff2",
+      "sha256": "f716269e361f466570f37bc920988c619ddc8a7828c5949c1c56a731a320ab47"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/assets/27f7c104cd5777b692d5e57a.webp",
+      "file": "shared/assets/b6cd893d7b085958.webp",
+      "sha256": "b6cd893d7b085958acbb3084d8eccaafe4f3425d946197c560dd605c4dd6dc47"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/assets/5ed61b512d466511a5ef8d4e.jpg",
+      "file": "shared/assets/0d06c1c97ec1c545.jpg",
+      "sha256": "0d06c1c97ec1c5456166f1caf24da4f6977836da6574e31306a97f58f52c20cf"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/assets/193c750550b2f9ac887e11eb.json",
+      "file": "home/code/data/daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/assets/193c750550b2f9ac887e11eb.json",
+      "sha256": "11e711d526e22e649f8bc1c5db81bfc3cbb97bf38ca5a5209c875abb688236cd"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/assets/fd56c5efa038173cf0f522db.json",
+      "file": "home/code/data/daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/assets/fd56c5efa038173cf0f522db.json",
+      "sha256": "faca7d28bf6a901d24a7618c306d52e112eecb1f059a7cae7f1462511af6f82a"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/assets/45166ee6283659ea6541abd2.jpg",
+      "file": "shared/assets/5b10e2286da52d33.jpg",
+      "sha256": "5b10e2286da52d333e30561ce0f29ce392401a8f34fd8ca9efc2fd06553acfd4"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/assets/8a78978e0423f444f2adbe1f.webp",
+      "file": "shared/assets/a59b66d0d7fdeda1.webp",
+      "sha256": "a59b66d0d7fdeda1b0b0726fc2b9f0f23450da792c5cff66bba1482a09d8774f"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/assets/d77b3a703b03cd404472d2c4.jpg",
+      "file": "shared/assets/b558020c3e4b76d7.jpg",
+      "sha256": "b558020c3e4b76d7de5cdf7e298f14e8d01c9484f2aca0693e4608c200d7632d"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/assets/12c6831abd8b4baa8115675d.png",
+      "file": "shared/assets/8f6594ac2f7bdf97.png",
+      "sha256": "8f6594ac2f7bdf97ee4f9be02073f2594d46dbd979f357ef8eafb8e2b830e90f"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/assets/home-about-logo-round-red.png",
+      "file": "shared/assets/abb141124e76fe4c.png",
+      "sha256": "abb141124e76fe4cdc5d4c036160eb1fadcf2a61484bb8bd78b40c756c631395"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/assets/eb3fad26931139369e327446.webp",
+      "file": "shared/assets/4464b6998f60131d.webp",
+      "sha256": "4464b6998f60131d99ee19b3887a776b896162ce4cbbf1cefd4bb7dcbf7a3986"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/assets/owner-modal-prus.webp",
+      "file": "shared/assets/6bbaa8e1df83e7d5.webp",
+      "sha256": "6bbaa8e1df83e7d5eda42c83d174e1f0177a8cbb5698bd5ec01ee3602e8f84aa"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/assets/home-service-sale-gloss-desktop.webp",
+      "file": "shared/assets/ba55698ffffd3fb9.webp",
+      "sha256": "ba55698ffffd3fb9d0d74fe2eb0a62a63d7e26d24c6aac560de1c1f1b7e7393d"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/assets/home-office-estate.webp",
+      "file": "shared/assets/3d791eedb91f6ed9.webp",
+      "sha256": "3d791eedb91f6ed9edc2f2179190a8a780b7c784d6d2f3b729882957496eb4ff"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/assets/home-city-klubnyy-dom-duo-duo.webp",
+      "file": "shared/assets/334bcfd37ecdcda3.webp",
+      "sha256": "334bcfd37ecdcda3edd94939a92e34290090a603280110cbc0c138c942f51685"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/assets/home-city-start-prodazh-palashevskiy-11.webp",
+      "file": "shared/assets/8662793daed8bb9c.webp",
+      "sha256": "8662793daed8bb9c9e16915154422162173c67a6cabe67300389e70e03bcafc7"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/assets/home-city-vavilova-64.webp",
+      "file": "shared/assets/dbffb63dbef0efc5.webp",
+      "sha256": "dbffb63dbef0efc58733953349f40deccbb92cf4edcd3ca72e99377a3c5196d9"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/assets/fafc0b2803f934e0a62ad181.webp",
+      "file": "shared/assets/3c0d62353261052f.webp",
+      "sha256": "3c0d62353261052f7c3249932d2e5ec8ea65c89902e166a33c53b425ee1c590f"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/assets/3933ef99c2b507a4112cebb1.jpg",
+      "file": "shared/assets/12cc8187cb2a42d1.jpg",
+      "sha256": "12cc8187cb2a42d189ac4e114458342f3cb0fc58fc4327ac22fc81fa3c3cd25b"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/assets/44924ae04beac3a542fbbac3.jpg",
+      "file": "shared/assets/9fac1aeebc941d32.jpg",
+      "sha256": "9fac1aeebc941d324e0bb4c5518549fc84395626e8ed8678f3acbe168b5fdb7b"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/assets/7000afc1a60de3e76de77dde.jpg",
+      "file": "shared/assets/3d5514fce00fe91f.jpg",
+      "sha256": "3d5514fce00fe91fa5e5df68608f3cb1e8ac48c2f1977fe8d64e246aa10cb14e"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/assets/af90d2d2ac76e4759316c0f5.jpg",
+      "file": "shared/assets/4bc2583933457ca7.jpg",
+      "sha256": "4bc2583933457ca746b052fe0a80d70773c6e2dfd1e0fe95100359f850f6b668"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/assets/c190ed19c8c71dd6275836b0.jpg",
+      "file": "shared/assets/33fd8debdb6f7180.jpg",
+      "sha256": "33fd8debdb6f7180687e31eaa7bc88d9d8a5ad1c64e6f18c4cf4fb6da46d309a"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/assets/home-direction-country.webp",
+      "file": "shared/assets/a9c7a7daec9e65f9.webp",
+      "sha256": "a9c7a7daec9e65f90901c80a070d97a05833af8b7044cca1432ebfc36daedb01"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/assets/4346a828fbae5e179c5006b4.jpg",
+      "file": "shared/assets/77fa1b51a11ee1ae.jpg",
+      "sha256": "77fa1b51a11ee1aeaa37c8713af694bbeada628ec787913c5ece6226b0a8bc30"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/assets/21d45ce642ab8440d67b68aa.jpg",
+      "file": "shared/assets/0eb3bdb5509e475a.jpg",
+      "sha256": "0eb3bdb5509e475a3f8aeb83f515b812338a1f44964e624f649082e2a08c72d9"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/assets/157721d8fc3bedac7fa28dcc.png",
+      "file": "shared/assets/a7deb1a4d67e0eaf.png",
+      "sha256": "a7deb1a4d67e0eaf41384a3eb9ed5749c2d0f702a118e11d68656a98fd5c22bc"
+    },
+    {
+      "url": "https://c15d3839-d361-4fb8-9615-0c7a980d0169.selstorage.ru/iblock/2d5/%D0%9F%D0%B5%D1%80%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B9%20%D0%94%D0%B5%D0%BD%D0%B8%D1%81_%D1%87%D0%B1.jpg",
+      "file": "shared/assets/7d679ff802e8948a.jpg",
+      "sha256": "7d679ff802e8948a5380c9715803b6e61ab233859ed66ef36e8e053ffbe2c019"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/assets/6e988d73b47da9c8a91af06c.png",
+      "file": "shared/assets/e6b3f0ba93f30594.png",
+      "sha256": "e6b3f0ba93f3059402795c04eabd52acdda642811d0491fdb3ddc1436236c4a5"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/assets/33c9955c39a65d9cb0219b56.png",
+      "file": "shared/assets/4eb608f9f16b5961.png",
+      "sha256": "4eb608f9f16b5961601cd980dd5cb0e290909223fba1f390abb727f10c90be09"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/assets/c0794823ca1f1fe82787456b.png",
+      "file": "shared/assets/aadc6ef122e4ed66.png",
+      "sha256": "aadc6ef122e4ed66d6b042b9982ae82335a5ccdb79dd610e49d861c1cafbf3a2"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/assets/5fb738b9b9961a801fca5055.png",
+      "file": "shared/assets/aad277f54abe09a4.png",
+      "sha256": "aad277f54abe09a49c5f0e3167e7df4283be61ee2d762da5cdb65a61a65966cb"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/assets/bcf87097309cad9dc08eba16.jpg",
+      "file": "shared/assets/79b3e6498e65c022.jpg",
+      "sha256": "79b3e6498e65c022fadefe4e8823dc006d97dd887301d7cd1641ba2c546c496f"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/assets/749940f2058f9a5a31733be1.jpg",
+      "file": "shared/assets/e59f77d7b73731b9.jpg",
+      "sha256": "e59f77d7b73731b995dea13a54842698f809e884e968931957c54e18a7184b0c"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/assets/7dedcb9c895a3e6a2732517b.png",
+      "file": "shared/assets/ef08974fa6946be2.png",
+      "sha256": "ef08974fa6946be2d1b4bac447722e9dbcbeb8186f785e94d532727e46bc1cf7"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/assets/75859cfe1063432902eeefa5.jpg",
+      "file": "shared/assets/aa20e8f552d686b7.jpg",
+      "sha256": "aa20e8f552d686b7521b5fd1cc4704a522fe5fefd199f3af4a0e05824de40aaa"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/assets/22cb20ee563e1cee3fe1348f.jpg",
+      "file": "shared/assets/136a3a13844ff804.jpg",
+      "sha256": "136a3a13844ff804e55b86f20a21682f7e4fec5e079938e98ae77e4831f3cfc8"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/assets/b3db829cd4ce561e76de09cc.jpg",
+      "file": "shared/assets/1792fd049a30dde9.jpg",
+      "sha256": "1792fd049a30dde97c8c3b6ac3b1ed7dcab505bdc578542b3ab25357e9672fbb"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/assets/f6f65669dc22ef4fe836335c.webp",
+      "file": "shared/assets/3285d219f1845deb.webp",
+      "sha256": "3285d219f1845deb8887ba3bc04b8e79ce8d3bec99dd568d8a51b8c5fa8bf9af"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/assets/1d6c1a73821838fb37296a81.jpeg",
+      "file": "shared/assets/cc35e66d52061180.jpeg",
+      "sha256": "cc35e66d52061180dcd291cc3b3092cb944064251a7d7ad05231d036a465df1d"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/assets/13c90a427adaa6df176b0b80.jpg",
+      "file": "shared/assets/3da8cf406076050e.jpg",
+      "sha256": "3da8cf406076050e737b8b53336afb2044876eb9f41eec9bfe4a4de0b71782d9"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/assets/8da206f6cfe4ac657bf70238.jpg",
+      "file": "shared/assets/d57b197b45c0dd78.jpg",
+      "sha256": "d57b197b45c0dd78ab861df9bd47f29e3f15466eb4dc7630e6bae6eed753805c"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/assets/8a7326ea61634df2bc549072.jpg",
+      "file": "shared/assets/9c296813f93d8b0d.jpg",
+      "sha256": "9c296813f93d8b0ded77af00b6acbd68b9d0d19fcaae17e850141a3a0a7cd012"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/assets/4424c8ec49d45189540113f1.jpg",
+      "file": "shared/assets/c77446b52e3497ae.jpg",
+      "sha256": "c77446b52e3497ae0cc0b8be489f792c5430c7c846d60673bce986d4a54db9a7"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/assets/aa6705b3d316b762288f3a70.jpg",
+      "file": "shared/assets/2bd299f21a133e4e.jpg",
+      "sha256": "2bd299f21a133e4e4c87c65cc840a92eb4a365631a61a879f01c65d5e7e58e5a"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/assets/d1117f3c68a6aeffdf1cd1a8.jpg",
+      "file": "shared/assets/f5b87360589b7b52.jpg",
+      "sha256": "f5b87360589b7b5278d9cf2732b3dffe2fe3fb9f2919bb512e96786ec71b01ce"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/assets/25abc73f3cb756eb5c329ab3.jpg",
+      "file": "shared/assets/6cfab912c4dc7d70.jpg",
+      "sha256": "6cfab912c4dc7d7055c8842bb45132fa9843f34c4fa91a7cece8a21cf458de78"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/assets/eab7fd5f28eadba783b22aee.jpg",
+      "file": "shared/assets/12f8913e24f4efde.jpg",
+      "sha256": "12f8913e24f4efde2c405d8a0dc2feb3c8680e0944829746ed572572e7025420"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/assets/87f6a517949d4b41717a872a.jpeg",
+      "file": "shared/assets/7ae5cfb573c530a4.jpeg",
+      "sha256": "7ae5cfb573c530a469f4454a91fcb1494ba0c7615a4e3f1dd6d82b7e11ee5a35"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/assets/d31d86ee6fc14d2b4ad1ca13.jpg",
+      "file": "shared/assets/39289f4369092cb7.jpg",
+      "sha256": "39289f4369092cb71db49b71d793ab15399bdc19affa1fb2c9eec8ad6cc674d5"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/assets/711ab05e541550941cc08741.jpg",
+      "file": "shared/assets/46377944c20bda69.jpg",
+      "sha256": "46377944c20bda698b6aed7d796ba6b310b97cd5cabca940f757d00c92359a93"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/assets/a461ef0bb9597a98337a8b1d.png",
+      "file": "shared/assets/68f354994cc205b6.png",
+      "sha256": "68f354994cc205b6a741596066e6ce86ec3a49b8fc00dd4cf9eeeb3780eb7787"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/assets/08372dc2136e4b180d843f73.png",
+      "file": "shared/assets/8fb33835c497eec7.png",
+      "sha256": "8fb33835c497eec74fa31ffdf79513899e298f7d2918f98dcbda4ab36b049b83"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/assets/105c96639ff388f661acbad2.png",
+      "file": "shared/assets/67a78ebeeeebf0a7.png",
+      "sha256": "67a78ebeeeebf0a74b46a6d2c77dfb9575a4873a4ff7a411eb4c54d31e595825"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/assets/76698502505e70a6c8801062.jpg",
+      "file": "shared/assets/19bf96bedf47ffd7.jpg",
+      "sha256": "19bf96bedf47ffd7bda62ed56c5cca529a8dc2cff2f64b6c00e82b7ab9eddd2a"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/assets/a2643f0349625f02be2ff45d.png",
+      "file": "shared/assets/9417bdec41a87684.png",
+      "sha256": "9417bdec41a87684c5d03dacdf22fa0b8a6a02d9aaa3bbdfdff8093050adb47a"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/assets/70ae8e588fd6d296fbeb9475.png",
+      "file": "shared/assets/39f1b4294178b0f6.png",
+      "sha256": "39f1b4294178b0f60f212f5a1db5acd0590aaf3fb5d3ac16dd303eb402cf3733"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/assets/38f578496d3201a21cfb7d97.jpg",
+      "file": "shared/assets/fafee407a724ad40.jpg",
+      "sha256": "fafee407a724ad40a9b225243c9d7818d62e81c25a4317066b8634fd6362b9c5"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/assets/home-hero-mobile.webp",
+      "file": "shared/assets/be1f1432dd5ff56c.webp",
+      "sha256": "be1f1432dd5ff56cb1aab5239eb6913957dd46400f5d0e1fa30bb03d451315f7"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/assets/home-service-sale-gloss-mobile.webp",
+      "file": "shared/assets/30cc96e685294bce.webp",
+      "sha256": "30cc96e685294bce3e2bae9a13333439b4dc8bff07c3daef2fc689d0ef391e3b"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/assets/a88ccd8d029aefb9b01634a0.png",
+      "file": "shared/assets/70d5c4fff6f75660.png",
+      "sha256": "70d5c4fff6f75660c2f9b4b3508f38b9e904bee22cafaae07018bfd3ce98b887"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/assets/e07715f31b9f79839e19c38f.png",
+      "file": "shared/assets/c4aa1bd8162d6c0c.png",
+      "sha256": "c4aa1bd8162d6c0c777c02722f58aa8605eb090a08b874c942a17a65b8fb7e5b"
+    },
+    {
+      "url": "https://c15d3839-d361-4fb8-9615-0c7a980d0169.selstorage.ru/resize_cache/10080051/8f5ddbc1f811f957fe777caaf9cef323/iblock/f4c/v0aqbxrqtorg2gpkknogab23a5tfuhph/marina%20aslanyan.jpg",
+      "file": "shared/assets/2a8ed8f4bb3125be.jpg",
+      "sha256": "2a8ed8f4bb3125be7699ccc7f5deb35cf2e98b1e484551821e6333e42483f7a9"
+    },
+    {
+      "url": "https://c15d3839-d361-4fb8-9615-0c7a980d0169.selstorage.ru/iblock/00b/%D0%90%D0%BB%D0%BB%D0%B0%20%D0%A4%D1%80%D1%83%D0%BD%D0%B4%D0%B6%D0%B0%D0%BD_%D1%87%D0%B1.jpg",
+      "file": "shared/assets/24d2523d9eaccb1b.jpg",
+      "sha256": "24d2523d9eaccb1bc236f5ed56ae14e2a544e451b70e9f58c36b1cf74ff497e8"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/_nuxt/builds/meta/ceeca7b6-3bab-4d30-9841-e8078050b09d.json",
+      "file": "home/code/data/daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/_nuxt/builds/meta/ceeca7b6-3bab-4d30-9841-e8078050b09d.json",
+      "sha256": "6719d7f374f21a4a5fd0ce37d90812d34f07d0f833f405095a4fcbe285f32360"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/assets/home-property-photo-unavailable.svg",
+      "file": "shared/assets/8195dd510949a157.svg",
+      "sha256": "8195dd510949a15716d34021e7bf78dc8f006d718f77c6324ece302324d8e970"
+    },
+    {
+      "url": "https://c15d3839-d361-4fb8-9615-0c7a980d0169.selstorage.ru/resize_cache/11058062/d13733056f669deb3558a833a5d4f8f4/iblock/38b/38b2cf21178de4a15d8f27ff0d2b9c68/704c47db8203e52b64c5eb911c80071a.jpg",
+      "file": "shared/assets/8836e57a4982a0f7.jpg",
+      "sha256": "8836e57a4982a0f7289abe69e031fd56665a4c642b02d04e83c97c784cfdd5a0"
+    },
+    {
+      "url": "https://c15d3839-d361-4fb8-9615-0c7a980d0169.selstorage.ru/resize_cache/10963987/d13733056f669deb3558a833a5d4f8f4/iblock/38f/38fad0ddad3f383b27645ad12f53b073/82fbe0d7c21a5a80a89c9d135ec37d26.jpg",
+      "file": "shared/assets/a2c27a734cd340ea.jpg",
+      "sha256": "a2c27a734cd340ea23c1ac4966f1fee6f87b1f931ee44cfda41dd00fdfc20742"
+    },
+    {
+      "url": "https://c15d3839-d361-4fb8-9615-0c7a980d0169.selstorage.ru/resize_cache/11043511/d13733056f669deb3558a833a5d4f8f4/iblock/8f3/8f393f1fa4622dd708c36c8d04fdfb55/cc6f4f4d40512a4de11947563e389837.jpg",
+      "file": "shared/assets/11972b648c016c15.jpg",
+      "sha256": "11972b648c016c15fc980bfc3b1b828fd159fa9f4b53194b1e949c52986bc523"
+    },
+    {
+      "url": "https://c15d3839-d361-4fb8-9615-0c7a980d0169.selstorage.ru/resize_cache/11072418/d13733056f669deb3558a833a5d4f8f4/iblock/7d8/7d899eaf19c78c12dad20d74ef2b450d/503ea07a5757874e11c050e1e8e8f9ff.jpg",
+      "file": "shared/assets/aa64c0fafab96d44.jpg",
+      "sha256": "aa64c0fafab96d44fd670b7245a2cbde74bee9c9afac0c081b5425e1b8a5fb13"
+    },
+    {
+      "url": "https://c15d3839-d361-4fb8-9615-0c7a980d0169.selstorage.ru/resize_cache/11115477/d13733056f669deb3558a833a5d4f8f4/iblock/570/570e5ae1199c9f597958089dfca642e7/c6586653c215be080a893f69eaeb772a.png",
+      "file": "shared/assets/aae64a5b06778266.png",
+      "sha256": "aae64a5b06778266c5ef4302b7e7ac7fcfdb34aeb925ba7a6a7a9322ab0bff90"
+    },
+    {
+      "url": "https://c15d3839-d361-4fb8-9615-0c7a980d0169.selstorage.ru/resize_cache/11135262/d13733056f669deb3558a833a5d4f8f4/iblock/964/96410d537ba25ed97b9342c7e4cce6bf/e71c1aa6b8fcbc87b4af17429f5f3672.png",
+      "file": "shared/assets/ca5cbe7095426e6d.png",
+      "sha256": "ca5cbe7095426e6d95040e9dd2ffab3e26c5e24917b307f69b8be9c35c048a4c"
+    },
+    {
+      "url": "https://c15d3839-d361-4fb8-9615-0c7a980d0169.selstorage.ru/resize_cache/63914/d13733056f669deb3558a833a5d4f8f4/iblock/bcc/19898235385dfa48164daba7.00734888_6c1684377a_1200.jpg",
+      "file": "shared/assets/6c6485eeba255d91.jpg",
+      "sha256": "6c6485eeba255d91f466d1054526e562dff113b90cd26b3582d9ba6b8002d039"
+    },
+    {
+      "url": "https://c15d3839-d361-4fb8-9615-0c7a980d0169.selstorage.ru/resize_cache/11056929/d13733056f669deb3558a833a5d4f8f4/iblock/3ac/3ac3d964d1b6bb95535ed1b5334c6854/98f4978adf81e2750cc824bb5032abd5.jpg",
+      "file": "shared/assets/1ee7a69fdcfc9523.jpg",
+      "sha256": "1ee7a69fdcfc95231793720b690561d643ac61d65f7d8a1d958f08c73d130ef1"
+    },
+    {
+      "url": "https://c15d3839-d361-4fb8-9615-0c7a980d0169.selstorage.ru/resize_cache/10993427/d13733056f669deb3558a833a5d4f8f4/iblock/517/517a6897e6fe87dff7216edf937b07e1/05c6508929b6037898331059e40d6130.jpg",
+      "file": "shared/assets/c8014ce8b28c0da2.jpg",
+      "sha256": "c8014ce8b28c0da21aefa15cf18fcb2b3c32459cef5dc17daab306a8ec57cbfb"
+    },
+    {
+      "url": "https://c15d3839-d361-4fb8-9615-0c7a980d0169.selstorage.ru/resize_cache/10881134/d13733056f669deb3558a833a5d4f8f4/iblock/cd9/cd9bdfb842ff8fe1f7d46e6f3b189077/a0f8f512d7339c168c51f6fa2c0e8cbe.jpg",
+      "file": "shared/assets/457006c74015c833.jpg",
+      "sha256": "457006c74015c833af3b3659e987f43f39a0ff90bdd0f312eb0eea366e233a9d"
+    },
+    {
+      "url": "https://c15d3839-d361-4fb8-9615-0c7a980d0169.selstorage.ru/resize_cache/63996/d13733056f669deb3558a833a5d4f8f4/iblock/f36/13663541075de87d2e8e8800.53576959_bd601d2555_1920.jpg",
+      "file": "shared/assets/7fedbac6a7cffe05.jpg",
+      "sha256": "7fedbac6a7cffe053d5903bf1248d93a68511fccd813e37096d72af831bbdfb9"
+    },
+    {
+      "url": "https://c15d3839-d361-4fb8-9615-0c7a980d0169.selstorage.ru/resize_cache/11025452/d13733056f669deb3558a833a5d4f8f4/iblock/d91/d915f8b1533c2614c70b73d45474e441/0915cad8633d1b16f1f1b025614d93ef.jpg",
+      "file": "shared/assets/7d911b87b5b3d2b0.jpg",
+      "sha256": "7d911b87b5b3d2b0f941671ca0d3806a2b3461ba1f256bfe87b34482d1efc2e8"
+    },
+    {
+      "url": "https://c15d3839-d361-4fb8-9615-0c7a980d0169.selstorage.ru/resize_cache/10982663/d13733056f669deb3558a833a5d4f8f4/iblock/f5d/f5df5c63730c69c981d5bc95a71bc071/094a6fcef8a1cec772a6822cb3c059f7.jpg",
+      "file": "shared/assets/ca24c8cce5cf4f4b.jpg",
+      "sha256": "ca24c8cce5cf4f4baedcce6e0f9b41e5c0ac5492e87a652b4fec171436821c05"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/assets/hero.mp4",
+      "file": "shared/assets/da8542ccd361721f.mp4",
+      "sha256": "da8542ccd361721f3d08365e7a60cca68fcf1e83394710fa82c36ef4030e2c12"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/assets/4c9bbf74b6f086fc1c1aa134.jpg",
+      "file": "shared/assets/ecaaef4b5d16ecf8.jpg",
+      "sha256": "ecaaef4b5d16ecf8c007549cabc35c0b89136a1457edb52075c2fbe104bcfc85"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/assets/quiz-mobile-prus-magazine.webp",
+      "file": "shared/assets/8985649766af2311.webp",
+      "sha256": "8985649766af231100dd863db3e4fac10809a7b9f94bc2d38c6922c8e10b67c1"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/assets/21bb36844bd446728aa01a62.webp",
+      "file": "shared/assets/b5b079b952ba93c6.webp",
+      "sha256": "b5b079b952ba93c6b91da8d51c241550ebcd9339af80e6afb52ef1165da228ac"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/assets/home-hero-ultrawide.png",
+      "file": "shared/assets/b87b98c25910ca0a.png",
+      "sha256": "b87b98c25910ca0a59bd95453c30a330cdf78d9e668a0b73db98e3e4721e1ce6"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/assets/hero-mobile.mp4",
+      "file": "shared/assets/56c0541c5d92791c.mp4",
+      "sha256": "56c0541c5d92791cea73d136a7e8d51584c8636b009e34fc8b4b8a68285029e0"
+    },
+    {
+      "url": "https://c15d3839-d361-4fb8-9615-0c7a980d0169.selstorage.ru/resize_cache/11088774/d459475776d7dcb85e27b36a9f4b2a81/iblock/335/335485a4b9acb18f60b1e1bd55ebfc72/37537bbcc39d4cd6cbbfa8bee57ccfe0.jpg",
+      "file": "shared/assets/29ea6fbb5b20afbc.jpg",
+      "sha256": "29ea6fbb5b20afbcf612dc00bcdb9c21148a085a2c708f8db4b51e4410eb7c4e"
+    },
+    {
+      "url": "https://c15d3839-d361-4fb8-9615-0c7a980d0169.selstorage.ru/resize_cache/10984102/d459475776d7dcb85e27b36a9f4b2a81/iblock/9c9/9c9ec62df8a1eaeee42da723bb78b666/9b5402cab1ec89581ae298a277bcf736.jpg",
+      "file": "shared/assets/d46abbd8ac1c3b49.jpg",
+      "sha256": "d46abbd8ac1c3b49612c7cc115e0e5051ea1ceda016dba99af36f7e3fdb1ca3b"
+    },
+    {
+      "url": "https://c15d3839-d361-4fb8-9615-0c7a980d0169.selstorage.ru/resize_cache/11098495/b39711304c20a894a46b32e4842c20c7/iblock/a66/a66dc2782cd3baf887b27c3a5eb697b5/7e61da0b466c54e69065ec03ac1fa43d.jpg",
+      "file": "shared/assets/36e04222ac3dc70e.jpg",
+      "sha256": "36e04222ac3dc70edf3d48cd521ddf07256b58c5680235fd267cc9d88a477a2a"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/",
+      "file": "home/code/html/index.html"
+    }
+  ],
+  "optionalDormantReferences": 152
+}

@@ -1,0 +1,226 @@
+[
+  {
+    "id": "01-site-header",
+    "title": "Хедер",
+    "kind": "site-header",
+    "html": "block.html",
+    "css": "block.css",
+    "js": "block.js",
+    "preview": "index.html",
+    "dependencies": [
+      "../../code/css/page.css",
+      "../../code/css/blocks-runtime.css",
+      "../../code/js/blocks-runtime.js",
+      "../../../shared/js/home-quiz.js",
+      "../../../shared/assets/"
+    ]
+  },
+  {
+    "id": "02-media-hero",
+    "title": "Медиа BARN Estate",
+    "kind": "media-hero",
+    "html": "block.html",
+    "css": "block.css",
+    "js": "block.js",
+    "preview": "index.html",
+    "dependencies": [
+      "../../code/css/page.css",
+      "../../code/css/blocks-runtime.css",
+      "../../code/js/blocks-runtime.js",
+      "../../../shared/js/home-quiz.js",
+      "../../../shared/assets/"
+    ]
+  },
+  {
+    "id": "03-media-intents",
+    "title": "Покупаю для жизни",
+    "kind": "media-intents",
+    "html": "block.html",
+    "css": "block.css",
+    "js": "block.js",
+    "preview": "index.html",
+    "dependencies": [
+      "../../code/css/page.css",
+      "../../code/css/blocks-runtime.css",
+      "../../code/js/blocks-runtime.js",
+      "../../../shared/js/home-quiz.js",
+      "../../../shared/assets/"
+    ]
+  },
+  {
+    "id": "04-media-weekly",
+    "title": "В фокусе",
+    "kind": "media-weekly",
+    "html": "block.html",
+    "css": "block.css",
+    "js": "block.js",
+    "preview": "index.html",
+    "dependencies": [
+      "../../code/css/page.css",
+      "../../code/css/blocks-runtime.css",
+      "../../code/js/blocks-runtime.js",
+      "../../../shared/js/home-quiz.js",
+      "../../../shared/assets/"
+    ]
+  },
+  {
+    "id": "05-media-market",
+    "title": "Что сейчас важно на рынке",
+    "kind": "media-market",
+    "html": "block.html",
+    "css": "block.css",
+    "js": "block.js",
+    "preview": "index.html",
+    "dependencies": [
+      "../../code/css/page.css",
+      "../../code/css/blocks-runtime.css",
+      "../../code/js/blocks-runtime.js",
+      "../../../shared/js/home-quiz.js",
+      "../../../shared/assets/"
+    ]
+  },
+  {
+    "id": "06-media-fresh",
+    "title": "Свежие материалы",
+    "kind": "media-fresh",
+    "html": "block.html",
+    "css": "block.css",
+    "js": "block.js",
+    "preview": "index.html",
+    "dependencies": [
+      "../../code/css/page.css",
+      "../../code/css/blocks-runtime.css",
+      "../../code/js/blocks-runtime.js",
+      "../../../shared/js/home-quiz.js",
+      "../../../shared/assets/"
+    ]
+  },
+  {
+    "id": "07-media-analytics",
+    "title": "Аналитика и исследования",
+    "kind": "media-analytics",
+    "html": "block.html",
+    "css": "block.css",
+    "js": "block.js",
+    "preview": "index.html",
+    "dependencies": [
+      "../../code/css/page.css",
+      "../../code/css/blocks-runtime.css",
+      "../../code/js/blocks-runtime.js",
+      "../../../shared/js/home-quiz.js",
+      "../../../shared/assets/"
+    ]
+  },
+  {
+    "id": "08-media-cta-banner",
+    "title": "Хотите обсудить рынок или подобрать объект?",
+    "kind": "media-cta-banner",
+    "html": "block.html",
+    "css": "block.css",
+    "js": "block.js",
+    "preview": "index.html",
+    "dependencies": [
+      "../../code/css/page.css",
+      "../../code/css/blocks-runtime.css",
+      "../../code/js/blocks-runtime.js",
+      "../../../shared/js/home-quiz.js",
+      "../../../shared/assets/"
+    ]
+  },
+  {
+    "id": "09-team-section",
+    "title": "Эксперты BARN Estate",
+    "kind": "team-section",
+    "html": "block.html",
+    "css": "block.css",
+    "js": "block.js",
+    "preview": "index.html",
+    "dependencies": [
+      "../../code/css/page.css",
+      "../../code/css/blocks-runtime.css",
+      "../../code/js/blocks-runtime.js",
+      "../../../shared/js/home-quiz.js",
+      "../../../shared/assets/"
+    ]
+  },
+  {
+    "id": "10-media-library",
+    "title": "Библиотека BARN Estate",
+    "kind": "media-library",
+    "html": "block.html",
+    "css": "block.css",
+    "js": "block.js",
+    "preview": "index.html",
+    "dependencies": [
+      "../../code/css/page.css",
+      "../../code/css/blocks-runtime.css",
+      "../../code/js/blocks-runtime.js",
+      "../../../shared/js/home-quiz.js",
+      "../../../shared/assets/"
+    ]
+  },
+  {
+    "id": "11-subscribe",
+    "title": "В центре событий рынка недвижимости",
+    "kind": "newsletter-cta",
+    "html": "block.html",
+    "css": "block.css",
+    "js": "block.js",
+    "preview": "index.html",
+    "dependencies": [
+      "../../code/css/page.css",
+      "../../code/css/blocks-runtime.css",
+      "../../code/js/blocks-runtime.js",
+      "../../../shared/js/home-quiz.js",
+      "../../../shared/assets/"
+    ]
+  },
+  {
+    "id": "12-site-footer",
+    "title": "Футер",
+    "kind": "site-footer",
+    "html": "block.html",
+    "css": "block.css",
+    "js": "block.js",
+    "preview": "index.html",
+    "dependencies": [
+      "../../code/css/page.css",
+      "../../code/css/blocks-runtime.css",
+      "../../code/js/blocks-runtime.js",
+      "../../../shared/js/home-quiz.js",
+      "../../../shared/assets/"
+    ]
+  },
+  {
+    "id": "13-floating-expert",
+    "title": "Плавающий эксперт",
+    "kind": "floating-expert",
+    "html": "block.html",
+    "css": "block.css",
+    "js": "block.js",
+    "preview": "index.html",
+    "dependencies": [
+      "../../code/css/page.css",
+      "../../code/css/blocks-runtime.css",
+      "../../code/js/blocks-runtime.js",
+      "../../../shared/js/home-quiz.js",
+      "../../../shared/assets/"
+    ]
+  },
+  {
+    "id": "14-handoff-dialog",
+    "title": "Квиз обращения к эксперту",
+    "kind": "handoff-dialog",
+    "html": "block.html",
+    "css": "block.css",
+    "js": "block.js",
+    "preview": "index.html",
+    "dependencies": [
+      "../../code/css/page.css",
+      "../../code/css/blocks-runtime.css",
+      "../../code/js/blocks-runtime.js",
+      "../../../shared/js/home-quiz.js",
+      "../../../shared/assets/"
+    ]
+  }
+]

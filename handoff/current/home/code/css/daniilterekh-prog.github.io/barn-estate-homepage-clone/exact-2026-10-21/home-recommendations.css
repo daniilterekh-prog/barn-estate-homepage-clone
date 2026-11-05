@@ -1,0 +1,367 @@
+/* LaunchCard: canonical start-sales cards immediately below the Курортная hero. */
+body.barnes-home-typography .barnes-choice {
+  --start-sales-card-height: 500px;
+  --start-sales-card-pad: 24px;
+  --start-sales-accent: #8b1d25;
+}
+
+body.barnes-home-typography .barnes-choice .home-rec-card {
+  position: relative;
+  isolation: isolate;
+  height: var(--start-sales-card-height);
+  min-width: 0;
+  overflow: hidden;
+  border-radius: 1px;
+  background: #252525;
+  color: #fff;
+  transition: width 700ms cubic-bezier(0.22, 1, 0.36, 1),
+    height 700ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+body.barnes-home-typography .barnes-choice .splide__slide.is-prev .home-rec-card,
+body.barnes-home-typography .barnes-choice .splide__slide.is-next .home-rec-card {
+  height: calc(var(--start-sales-card-height) * 0.84);
+  margin-block: auto;
+}
+
+body.barnes-home-typography .barnes-choice .splide__slide.is-active .home-rec-card {
+  height: var(--start-sales-card-height);
+}
+
+body.barnes-home-typography .barnes-choice #splide01 > .splide__pagination {
+  display: none;
+}
+
+body.barnes-home-typography .barnes-choice .home-rec-card *,
+body.barnes-home-typography .barnes-choice .home-rec-card *::before,
+body.barnes-home-typography .barnes-choice .home-rec-card *::after {
+  box-sizing: border-box;
+}
+
+body.barnes-home-typography .barnes-choice .home-rec-link {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: var(--start-sales-card-pad);
+  color: #fff;
+  text-decoration: none;
+}
+
+body.barnes-home-typography .barnes-choice .home-rec-media {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: auto;
+  overflow: hidden;
+  border-radius: 0;
+  background: #252525;
+  transition: none;
+}
+
+body.barnes-home-typography .barnes-choice .home-rec-media::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.05) 28%,
+    rgba(0, 0, 0, 0.13) 48%,
+    rgba(0, 0, 0, 0.88) 100%
+  );
+  pointer-events: none;
+}
+
+body.barnes-home-typography .barnes-choice .home-rec-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: var(--start-sales-image-position, center);
+  transform: scale(1);
+  transition: transform 550ms ease;
+}
+
+body.barnes-home-typography .barnes-choice .home-rec-body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0;
+  color: #fff;
+}
+
+body.barnes-home-typography .barnes-choice .home-rec-name {
+  order: 1;
+  display: -webkit-box;
+  min-height: 35px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  color: #fff;
+  font-size: 31px;
+  font-weight: 400;
+  line-height: 1.12;
+  letter-spacing: -0.6px;
+  overflow-wrap: anywhere;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+body.barnes-home-typography .barnes-choice .home-rec-details {
+  order: 2;
+  display: block;
+  margin: 18px 0 0;
+}
+
+body.barnes-home-typography .barnes-choice .home-rec-price-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-height: 55px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(255, 255, 255, 0.35);
+}
+
+body.barnes-home-typography .barnes-choice .home-rec-price {
+  min-width: 0;
+  min-height: 0;
+  margin: 0;
+  color: #fff;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 1.25;
+  letter-spacing: -0.5px;
+}
+
+body.barnes-home-typography .barnes-choice .home-rec-address {
+  order: 0;
+  align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  flex: 0 1 auto;
+  min-width: 0;
+  margin: 0 0 10px;
+  overflow: hidden;
+  color: rgba(255, 255, 255, 0.96);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.08em;
+  text-align: left;
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+body.barnes-home-typography .barnes-choice .home-rec-region-icon {
+  flex: 0 0 16px;
+  width: 16px;
+  height: 16px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.25;
+}
+
+body.barnes-home-typography .barnes-choice .home-rec-favorite {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 3;
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.94);
+  color: #333;
+  cursor: pointer;
+}
+
+body.barnes-home-typography .barnes-choice .home-rec-favorite svg {
+  width: 21px;
+  height: 21px;
+  fill: transparent;
+  stroke: currentColor;
+  transition: fill 180ms ease, color 180ms ease;
+}
+
+body.barnes-home-typography .barnes-choice .home-rec-favorite[aria-pressed="true"] {
+  color: var(--start-sales-accent);
+}
+
+body.barnes-home-typography .barnes-choice .home-rec-favorite[aria-pressed="true"] svg {
+  fill: currentColor;
+}
+
+body.barnes-home-typography .barnes-choice .home-rec-link:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: -5px;
+}
+
+body.barnes-home-typography .barnes-choice .home-rec-favorite:focus-visible {
+  outline: 2px solid var(--start-sales-accent);
+  outline-offset: 3px;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  body.barnes-home-typography .barnes-choice .home-rec-card:hover .home-rec-image {
+    transform: scale(1.025);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  body.barnes-home-typography .barnes-choice {
+    --start-sales-card-pad: 22px;
+  }
+
+  body.barnes-home-typography .barnes-choice .home-rec-name {
+    font-size: 29px;
+  }
+
+  body.barnes-home-typography .barnes-choice .home-rec-details {
+    margin-top: 16px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  body.barnes-home-typography .barnes-choice #splide01 > .splide__pagination {
+    display: flex;
+  }
+
+  body.barnes-home-typography .barnes-choice .splide__slide.is-prev .home-rec-card,
+  body.barnes-home-typography .barnes-choice .splide__slide.is-next .home-rec-card,
+  body.barnes-home-typography .barnes-choice .splide__slide.is-active .home-rec-card {
+    height: var(--start-sales-card-height);
+    margin-block: 0;
+  }
+
+  body.barnes-home-typography .barnes-choice .home-rec-address {
+    gap: 7px;
+    margin-bottom: 9px;
+    font-size: 13px;
+  }
+
+  body.barnes-home-typography .barnes-choice .home-rec-region-icon {
+    flex-basis: 15px;
+    width: 15px;
+    height: 15px;
+  }
+}
+
+@media screen and (max-width: 359px) {
+  body.barnes-home-typography .barnes-choice {
+    --start-sales-card-pad: 20px;
+  }
+
+  body.barnes-home-typography .barnes-choice .home-rec-price {
+    font-size: 20px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body.barnes-home-typography .barnes-choice .home-rec-image,
+  body.barnes-home-typography .barnes-choice .home-rec-card,
+  body.barnes-home-typography .barnes-choice .home-rec-favorite svg {
+    transition: none;
+  }
+
+  body.barnes-home-typography .barnes-choice .home-rec-card:hover .home-rec-image {
+    transform: none;
+  }
+}
+
+/* The label grew to18px; a fixed120px control no longer fits the long categories. */
+body.barnes-home-typography .barnes-choice__select { width:max-content !important; max-width:100%; }
+body.barnes-home-typography .barnes-choice__select-control { display:grid !important; grid-template-columns:minmax(0,1fr) 12px; align-items:center; gap:12px !important; width:100%; padding:10px 14px !important; }
+body.barnes-home-typography .barnes-choice__select-value { min-width:0; white-space:nowrap; }
+body.barnes-home-typography .barnes-choice__select-icon { position:static !important; width:12px; height:12px; transform:none !important; flex:none; }
+body.barnes-home-typography .barnes-choice__select-icon--open { transform:rotate(180deg) !important; }
+body.barnes-home-typography .barnes-choice__select-list { min-width:100%; width:max-content; max-width:calc(100vw - 44px); box-sizing:border-box; z-index:30; }
+@media(min-width:541px) and (max-width:767px) {
+ body.barnes-home-typography .barnes-choice__slider .splide__slide { width:min(450px,calc(100% - 44px)) !important; max-width:none !important; }
+}
+@media(min-width:768px) and (max-width:1024px) {
+ body.barnes-home-typography .barnes-choice__slider .splide__slide { width:calc((100% - 24px)/2) !important; max-width:none !important; }
+}
+/* Adjacent carousel items may scale visually, but must not squeeze the card's text grid. */
+body.barnes-home-typography .barnes-choice .splide__slide .apartment-card { width:100% !important; max-width:none !important; }
+
+body.barnes-home-typography .barnes-choice .apartment-card > .apartment-card__link {display:none!important;}
+body.barnes-home-typography .barnes-choice .home-rec-card {width:100%;}
+body.barnes-home-typography .barnes-choice .splide__list {align-items:center;}
+body.barnes-home-typography .barnes-choice .home-rec-address {max-width:100%;}
+body.barnes-home-typography .barnes-choice .home-rec-price {overflow-wrap:anywhere;}
+body.barnes-home-typography .barnes-choice .home-rec-link {outline-offset:-5px;}
+body.barnes-home-typography .barnes-choice .home-rec-address span {min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+
+/* More compact recommendation cards on phones. */
+@media(max-width:540px) {
+ body.barnes-home-typography .barnes-choice {--start-sales-card-height:410px;}
+}
+
+/* Keep carousel controls below the photographs; preserve the native Splide actions. */
+@media (min-width: 768px) {
+  body.barnes-home-typography .barnes-choice__slider-row {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto auto;
+    column-gap: 12px;
+    row-gap: 24px;
+  }
+  body.barnes-home-typography .barnes-choice__slider-wrap {
+    grid-column: 1 / -1;
+    grid-row: 1;
+  }
+  body.barnes-home-typography .barnes-choice__slider {
+    padding-bottom: var(--barnes-choice-hover-pad-y);
+  }
+  body.barnes-home-typography .barnes-choice__slider .splide__track {
+    padding-bottom: 0;
+  }
+  body.barnes-home-typography .barnes-choice__nav-btn {
+    position: relative;
+    inset: auto;
+    grid-row: 2;
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    transform: none;
+  }
+  body.barnes-home-typography .barnes-choice__nav-btn--prev {
+    grid-column: 2;
+    justify-self: end;
+    margin-left: 0;
+  }
+  body.barnes-home-typography .barnes-choice__nav-btn--next {
+    grid-column: 3;
+    justify-self: end;
+    margin-right: var(--home-rec-nav-inset, 24px);
+  }
+  body.barnes-home-typography .barnes-choice__nav-btn:focus-visible {
+    outline: 1px solid #8b1d25;
+    outline-offset: 3px;
+  }
+  body.barnes-home-typography .barnes-choice__footer {
+    padding-top: 24px;
+  }
+}
+@media (max-width: 767px) {
+  body.barnes-home-typography .barnes-choice__nav-btn {
+    display: none;
+  }
+}
+
+/* Let desktop recommendations follow the same outer grid as the other sections. */
+@media (min-width: 1025px) {
+  body.barnes-home-typography .barnes-choice__slider-wrap {
+    width: calc(100% - var(--home-gutter) * 2);
+    max-width: none;
+    --barnes-choice-slide-width: calc((100% - var(--barnes-choice-gap) * 2) / 3);
+  }
+}

@@ -1,8 +1,12 @@
+# Передача разработчику ·05.11.2026
+
+[Актуальные HTML/CSS/JS и блоки](../handoff/current/home/README.md). Прежние комплекты заменены; история исходной главной ниже.
+
 # Актуальная главная BARN Estate — 01.11.2026
 
-[Опубликованная главная](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/) · [16 отдельных блоков](blocks/README.md) · [Каталог превью](blocks/index.html) · [Страница из блоков](blocks/page.html).
+[Опубликованная главная](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/) · [16 отдельных блоков](blocks/README.md) · [Каталог превью](blocks/index.html) · [Страница из блоков](../handoff/current/home/code/html/).
 
-[Открыть живой каталог блоков](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/blocks/) · [Скачать все блоки ZIP](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/blocks/downloads/homepage-blocks.zip).
+[Открыть живой каталог блоков](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/blocks/) · [Скачать все блоки ZIP](../handoff/current/home/../barn-estate-five-pages-2026-11-05.zip).
 
 Рабочее состояние — исходный архив плюс home-*.css/js и инструменты tools/. Архивный index.html21.10 не переписывается: сервер и экспорт подключают актуальные изменения. Для переноса отдельной секции используй blocks/, а не фрагмент старого архивного HTML.
 

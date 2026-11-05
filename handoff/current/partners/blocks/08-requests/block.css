@@ -1,0 +1,187 @@
+@font-face { font-family: "Tilda Sans Fallback"; src: local("Arial"), local("Helvetica Neue"), local("Helvetica"); size-adjust: 92.84%; ascent-override: 102.43%; descent-override: 26.82%; line-gap-override: 0%; }
+@font-face { font-family: "Tilda Sans"; src: url("../../../shared/assets/f0f2c165784c7234.woff2") format("woff2"); font-weight: 300; font-style: normal; font-display: swap; }
+@font-face { font-family: "Tilda Sans"; src: url("../../../shared/assets/2670dad44ca6c2a1.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "Tilda Sans"; src: url("../../../shared/assets/f716269e361f4665.woff2") format("woff2"); font-weight: 500; font-style: normal; font-display: swap; }
+@keyframes floating-expert-enter-cd0a1259 { 
+  100% { opacity: 1; transform: translateY(0px); }
+}
+@keyframes floating-expert-pulse-cd0a1259 { 
+  0%, 100% { box-shadow: rgba(18, 18, 18, 0.2) 0px 22px 62px; }
+  42% { box-shadow: rgba(18, 18, 18, 0.2) 0px 22px 62px, rgba(18, 18, 18, 0.08) 0px 0px 0px 12px; }
+  58% { box-shadow: rgba(18, 18, 18, 0.24) 0px 26px 74px, rgba(18, 18, 18, 0) 0px 0px 0px 22px; }
+}
+@font-face { font-display: swap; font-family: "Tilda Sans"; font-style: normal; font-weight: 300; src: url("../../../shared/assets/f0f2c165784c7234.woff2") format("woff2"); }
+@font-face { font-display: swap; font-family: "Tilda Sans"; font-style: normal; font-weight: 400; src: url("../../../shared/assets/2670dad44ca6c2a1.woff2") format("woff2"); }
+@font-face { font-display: swap; font-family: "Tilda Sans"; font-style: normal; font-weight: 500; src: url("../../../shared/assets/f716269e361f4665.woff2") format("woff2"); }
+@font-face { font-display: swap; font-family: "Tilda Sans"; font-style: normal; font-weight: 600; src: url("../../../shared/assets/3814f8c444073262.woff2") format("woff2"); }
+@font-face { font-display: swap; font-family: "Tilda Sans"; font-style: normal; font-weight: 700; src: url("../../../shared/assets/a2690df6fe834806.woff2") format("woff2"); }
+@font-face { font-display: swap; font-family: "Tilda Sans"; font-style: normal; font-weight: 800; src: url("../../../shared/assets/726a3a878465a590.woff2") format("woff2"); }
+@font-face { font-display: swap; font-family: "Tilda Sans"; font-style: normal; font-weight: 900; src: url("../../../shared/assets/73abed6708c43912.woff2") format("woff2"); }
+@font-face { ascent-override: 102.43%; descent-override: 26.82%; font-family: "Tilda Sans Fallback"; line-gap-override: 0%; size-adjust: 92.84%; src: local("Arial"), local("Helvetica Neue"), local("Helvetica"); }
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary { display: block; }
+b, strong { font-weight: 700; }
+small { font-size: 80%; }
+img { border: 0px; }
+svg:not(:root) { overflow: hidden; }
+button, input, optgroup, select, textarea { color: inherit; font: inherit; margin: 0px; }
+button { overflow: visible; }
+button, select { text-transform: none; }
+button, html input[type="button"], input[type="reset"], input[type="submit"] { appearance: button; cursor: pointer; }
+* { -webkit-tap-highlight-color: rgba(0, 0, 0, 0); outline: none; }
+input:not([type="checkbox"]):not([type="radio"]), select, textarea { appearance: none; }
+.base-container { margin: 0px auto; max-width: 1920px; padding-inline: 100px; width: 100%; }
+@media (max-width: 1920px) {.base-container { padding-inline: calc(-26.6667px + 6.59722vw); }}
+@media (max-width: 768px) {.base-container { padding-inline: calc(8.94118px + 1.96078vw); }}
+h1, h2, h3, h4, h5, p { margin: 0px; }
+button, input, textarea { font-family: inherit; }
+img { height: auto; max-width: 100%; }
+input:not([type="checkbox"]):not([type="radio"]):not([type="number"]), select, textarea { appearance: none; }
+button:not(:disabled) { cursor: pointer; }
+a:focus-visible, button:focus-visible { outline: rgba(20, 71, 230, 0.45) solid 2px; outline-offset: 2px; }
+@keyframes splide-loading { 
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(1turn); }
+}
+@keyframes fade-in { 
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes fade-out { 
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+@keyframes fadeOut { 
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+@keyframes fadeInDown { 
+  0% { opacity: 0; transform: translate3d(0px, -100%, 0px); }
+  100% { opacity: 1; transform: none; }
+}
+@keyframes fadeInUp { 
+  0% { opacity: 0; transform: translate3d(0px, 100%, 0px); }
+  100% { opacity: 1; transform: none; }
+}
+@keyframes partners-marquee-right-923dc07c { 
+  0% { transform: translate3d(-50%, 0px, 0px); }
+  100% { transform: translateZ(0px); }
+}
+@keyframes partners-marquee-left-923dc07c { 
+  0% { transform: translateZ(0px); }
+  100% { transform: translate3d(-50%, 0px, 0px); }
+}
+@keyframes floating-expert-enter-cd0a1259 { 
+  100% { opacity: 1; transform: translateY(0px); }
+}
+@keyframes floating-expert-pulse-cd0a1259 { 
+  0%, 100% { box-shadow: rgba(18, 18, 18, 0.2) 0px 22px 62px; }
+  42% { box-shadow: rgba(18, 18, 18, 0.2) 0px 22px 62px, rgba(18, 18, 18, 0.08) 0px 0px 0px 12px; }
+  58% { box-shadow: rgba(18, 18, 18, 0.24) 0px 26px 74px, rgba(18, 18, 18, 0) 0px 0px 0px 22px; }
+}
+#partners-kit-page.barnes-media-reference.partners-owner-shell #barnes-directions .bd-section { padding-block: var(--pk-space) !important; }
+#partners-kit-page.barnes-media-reference.partners-owner-shell #requests h2 { margin: 0 0 var(--pk-content-gap) !important; }
+#partners-kit-page.barnes-media-reference.partners-owner-shell :is(.ap-header h2, .ambassadors-conditions__section-title, #requests h2, .catalog-contact__title, .about-company__title, .catalog-faq__title) { font-family: "Tilda Sans", system-ui, sans-serif !important; font-size: var(--reference-heading) !important; font-weight: 300 !important; line-height: 1.2 !important; letter-spacing: 0px !important; margin-block: 0px !important; text-transform: uppercase !important; }
+#partners-kit-page.barnes-media-reference.partners-owner-shell :is(.ap-eyebrow, .partners-section-eyebrow, .bd-eyebrow, .owner-rent-section-eyebrow) { font-family: "Tilda Sans", system-ui, sans-serif !important; font-size: var(--reference-eyebrow) !important; line-height: var(--pk-brow-line) !important; font-weight: 400 !important; letter-spacing: 0.12em !important; text-transform: uppercase !important; color: var(--pk-secondary) !important; margin: 0 0 var(--pk-brow-gap) !important; padding: 0px !important; }
+#partners-kit-page.barnes-media-reference.partners-owner-shell :is(.bd-heading h3, .catalog-contact__card-title, .catalog-contact__expert-name) { font-size: var(--pk-expert) !important; line-height: 1.2 !important; font-weight: 400 !important; letter-spacing: 0px !important; }
+#partners-kit-page.barnes-media-reference.partners-owner-shell :is(.bd-intro, .bd-facttext, .bd-label, .bd-price-label, .bd-words, .bd-commission-note) { font-size: var(--reference-lead) !important; line-height: var(--reference-lead-line) !important; font-weight: 300 !important; }
+#partners-kit-page.barnes-media-reference.partners-owner-shell .bd-navbtn { font: 400 16px / 1.4 "Tilda Sans", sans-serif; min-height: 44px; padding-block: 10px; }
+#partners-kit-page.barnes-media-reference.partners-owner-shell .bd-mobile-picker { font: 400 18px / 24px "Tilda Sans", sans-serif; min-height: 46px; padding-block: 10px; background-color: rgb(249, 243, 243); }
+#partners-kit-page.barnes-media-reference.partners-owner-shell :is(.ap-action, .bd-cta, .catalog-contact__submit, .catalog-contact__card-submit, .newsletter-form__row > button, .feedback-modal__submit, .site-footer__callback-btn) { box-sizing: border-box !important; font-family: "Tilda Sans", system-ui, sans-serif !important; font-size: var(--reference-action) !important; font-weight: 400 !important; line-height: 1.1 !important; letter-spacing: 0px !important; min-height: var(--pk-action-height) !important; height: var(--pk-action-height) !important; padding: 0 var(--pk-action-pad) !important; border-radius: 1px !important; }
+#partners-kit-page.barnes-media-reference.partners-owner-shell #requests h2 { margin-bottom: var(--pk-content-gap) !important; }
+@media (max-width: 540px) {#partners-kit-page.barnes-media-reference.partners-owner-shell :is(.ap-action, .bd-cta) { display: flex; max-width: none; justify-content: center; text-align: center; gap: 8px; width: 100% !important; }}
+html body.barnes-page-kit[data-page-kit]:is(#partners-kit-page, #ui-kit-page) :is(main .base-container:not(.owner-sale-sticky__inner):not(.owner-sale-hero__inner):not(.ambassadors-hero__inner):not(.media-hero__inner), .about-company__inner, .catalog-contact__inner, .catalog-consultation__inner, .newsletter-cta__inner, .site-footer__inner) { box-sizing: border-box !important; width: 100% !important; max-width: 1920px !important; margin-inline: auto !important; padding-inline: var(--uk-gutter) !important; }
+html body.barnes-page-kit[data-page-kit]:is(#partners-kit-page, #ui-kit-page) :is(main h2, .catalog-contact__title, .about-company__title, .catalog-faq__title) { font-family: "Tilda Sans", system-ui, sans-serif !important; font-size: var(--uk-heading) !important; font-weight: 300 !important; line-height: 1.2 !important; letter-spacing: 0px !important; margin-block: 0px !important; }
+html body.barnes-page-kit[data-page-kit]:is(#partners-kit-page, #ui-kit-page) :is(.home-section-eyebrow, .owner-rent-section-eyebrow, .owner-sale-section-eyebrow, .partners-section-eyebrow, .bd-eyebrow) { font-family: "Tilda Sans", system-ui, sans-serif !important; font-size: var(--uk-brow) !important; line-height: var(--uk-brow-line) !important; font-weight: 400 !important; letter-spacing: 0.12em !important; margin: 0 0 var(--uk-brow-gap) !important; padding: 0px !important; color: rgb(79, 77, 73) !important; }
+html body.barnes-page-kit[data-page-kit]:is(#partners-kit-page, #ui-kit-page) :is(.ui-button:not(.owner-sale-hero__button):not(.ambassadors-hero__button):not(.media-hero__button):not(.media-analytics__button--compact), .be-cta, .ap-action, .bd-cta, .newsletter-form__row > button, .catalog-contact__submit, .catalog-contact__card-submit, .catalog-consultation__button, .owner-sale-strategy__button, .feedback-modal__submit, .site-footer__callback-btn) { box-sizing: border-box !important; min-height: var(--uk-height) !important; height: var(--uk-height) !important; padding: 0 var(--uk-pad) !important; border-radius: 1px !important; font-family: "Tilda Sans", system-ui, sans-serif !important; font-size: var(--uk-action) !important; line-height: 1.1 !important; font-weight: 400 !important; letter-spacing: 0px !important; }
+@media (max-width: 540px) {html body.barnes-page-kit[data-page-kit]:is(#partners-kit-page, #ui-kit-page) :is(.ap-action, .bd-cta, .catalog-contact__submit, .catalog-consultation__button, .newsletter-form__row > button, .site-footer__callback-btn) { width: 100% !important; justify-content: center !important; text-align: center !important; }}
+.barn-estate-name { overflow-wrap: normal !important; word-break: normal !important; hyphens: none !important; }
+.partners-owner-shell :is(#conditions, #how-it-works, #requests, #advantages) { scroll-margin-top: 112px; }
+#requests { scroll-margin-top: 112px; }
+#barnes-directions { --bd-ink: #1e1e1e; --bd-gray: #656462; --bd-red: #8b1d25; --bd-line: #e4e4e4; font-family: "Tilda Sans", system-ui, sans-serif; }
+#barnes-directions * { box-sizing: border-box; }
+#barnes-directions .bd-window { width: 100%; max-width: none; color: var(--bd-ink); }
+#barnes-directions .bd-section { padding: 64px 0px; }
+#barnes-directions :is(h2, h3, p) { margin: 0px; }
+#barnes-directions .bd-eyebrow { font-size: 14px; line-height: 16.1px; font-weight: 400; letter-spacing: 0.12em; color: var(--bd-gray); text-align: left; margin-bottom: 25px; }
+#barnes-directions h2 { font-size: 38px; line-height: 45.6px; font-weight: 300; text-align: left; margin-bottom: 40px; }
+#barnes-directions .bd-horizontal { display: flex; flex-wrap: wrap; gap: 0px 24px; border-bottom: 1px solid var(--bd-line); margin-bottom: 40px; }
+#barnes-directions .bd-navbtn { font: 400 17px / 23.8px "Tilda Sans", system-ui, sans-serif; padding: 16px 0px; color: var(--bd-gray); background: none; border-width: 0px 0px 2px; border-style: none none solid; border-color: currentcolor currentcolor transparent; border-image: none; text-align: left; cursor: pointer; }
+#barnes-directions .bd-navbtn[aria-selected="true"] { color: var(--bd-red); border-bottom-color: var(--bd-red); }
+#barnes-directions .bd-mobile-picker { display: none; font: 400 18px / 24px "Tilda Sans", system-ui, sans-serif; }
+#barnes-directions .bd-picker-label { display: none; }
+#barnes-directions .bd-feature { display: grid; grid-template-columns: minmax(0px, 0.85fr) minmax(0px, 1.15fr); gap: 48px; align-items: start; }
+#barnes-directions .bd-imagewrap { position: relative; width: 100%; min-height: 0px; align-self: stretch; overflow: hidden; border-radius: 1px; background: rgb(241, 241, 241); }
+#barnes-directions .bd-photo { position: absolute; inset: 0px; display: block; width: 100%; height: 100%; object-fit: cover; object-position: center center; }
+#barnes-directions .bd-copy { min-width: 0px; display: grid; grid-template-rows: auto minmax(88px, auto) minmax(176px, auto) minmax(128px, auto) 70px; gap: 24px; }
+#barnes-directions .bd-heading { display: flex; flex-direction: column; gap: 8px; }
+#barnes-directions .bd-heading h3 { font-size: 22px; line-height: 26.4px; font-weight: 400; margin: 0px; }
+#barnes-directions .bd-intro { font-size: 22px; line-height: 28.16px; font-weight: 300; color: rgb(79, 77, 73); max-width: 48ch; }
+#barnes-directions .bd-label { font-size: 22px; line-height: 28.16px; font-weight: 300; color: var(--bd-gray); }
+#barnes-directions :is(.bd-price-label, .bd-commission > .bd-label) { font-size: 22px; line-height: 28.16px; font-weight: 300; color: var(--bd-gray); }
+#barnes-directions .bd-budget { display: flex; flex-direction: column; gap: 12px; }
+#barnes-directions .bd-price-label { margin: 0px; }
+#barnes-directions .bd-price { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; font-size: 38px; line-height: 45.6px; font-weight: 300; }
+#barnes-directions .bd-price small { font-size: 22px; line-height: 28.16px; font-weight: 300; white-space: nowrap; }
+#barnes-directions :is(.bd-metrics, .bd-textfacts) { display: grid; grid-template-columns: repeat(2, minmax(0px, 1fr)); gap: 24px; border-block: 1px solid var(--bd-line); padding: 24px 0px; align-content: center; }
+#barnes-directions :is(.bd-metrics, .bd-textfacts) > div { display: flex; flex-direction: column; gap: 12px; }
+#barnes-directions .bd-num { font-size: 38px; line-height: 45.6px; font-weight: 300; }
+#barnes-directions .bd-commission { display: flex; flex-direction: column; align-items: flex-start; justify-content: center; gap: 12px; }
+#barnes-directions .bd-commission strong { font-size: 48px; line-height: 52.8px; font-weight: 400; color: var(--bd-red); }
+#barnes-directions .bd-cta { display: inline-flex; align-items: center; justify-content: center; justify-self: start; gap: 16px; width: fit-content; max-width: 100%; height: 70px; padding: 0px 36px; margin: 0px; font: 400 17px / 18.7px "Tilda Sans", system-ui, sans-serif; border: 1px solid var(--bd-red); border-radius: 1px; background: var(--bd-red); color: white; cursor: pointer; }
+#barnes-directions .bd-cta:hover { background: rgb(111, 23, 30); }
+#barnes-directions :is(button, select):focus-visible { outline: 2px solid var(--bd-red); outline-offset: 3px; }
+@media (min-width: 1441px) {#barnes-directions h2 { font-size: 44px; line-height: 52.8px; }
+#barnes-directions .bd-cta { font-size: 19px; line-height: 20.9px; padding-inline: 47px; }}
+@media (max-width: 1024px) {#barnes-directions .bd-section { padding: 48px 0px; }
+#barnes-directions .bd-eyebrow { font-size: 12px; line-height: 14.4px; margin-bottom: 12px; }
+#barnes-directions h2 { font-size: 22px; line-height: 26.4px; margin-bottom: 32px; }
+#barnes-directions .bd-feature { gap: 32px; }
+#barnes-directions .bd-heading h3 { font-size: 20px; line-height: 24px; }
+#barnes-directions .bd-intro { font-size: 15px; line-height: 19.2px; }
+#barnes-directions :is(.bd-label, .bd-facttext, .bd-price-label, .bd-commission > .bd-label, .bd-commission-note, .bd-price small, .bd-words) { font-size: 16px; line-height: 22.4px; font-weight: 300; }}
+@media (max-width: 900px) {#barnes-directions .bd-horizontal { display: none; }
+#barnes-directions .bd-mobile-picker { display: block; width: 100%; min-height: 58px; padding: 14px 0px; margin: 0px 0px 24px; font: 400 18px / 24px "Tilda Sans", system-ui, sans-serif; border-top: 0px; border-right: 0px; border-left: 0px; border-image: none; border-bottom: 1px solid var(--bd-line); border-radius: 1px; color: var(--bd-red); background: white; }
+#barnes-directions .bd-feature { grid-template-columns: 1fr; gap: 32px; }
+#barnes-directions .bd-imagewrap { height: 320px; min-height: 0px; }
+#barnes-directions .bd-copy { grid-template-rows: auto minmax(84px, auto) minmax(176px, auto) minmax(128px, auto) 70px; gap: 24px; }}
+@media (max-width: 540px) {#barnes-directions :is(.bd-eyebrow, h2) { text-align: center; }
+#barnes-directions .bd-picker-label { display: block; margin-bottom: 10px; font-size: 15px; line-height: 19.2px; color: var(--bd-gray); }
+#barnes-directions .bd-mobile-picker { appearance: none; padding: 16px 44px 16px 16px; border: 1px solid var(--bd-red); font-size: 16px; line-height: 24px; cursor: pointer; background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20'%3E%3Cpath d='m5 7.5 5 5 5-5' fill='none' stroke='%238b1d25' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") right 16px center no-repeat rgb(250, 245, 245); }
+#barnes-directions .bd-imagewrap { height: 290px; }
+#barnes-directions .bd-section { padding: 36px 0px; }
+#barnes-directions .bd-copy { grid-template-columns: repeat(2, minmax(0px, 1fr)); grid-template-rows: auto minmax(84px, auto) minmax(176px, auto) 58px; grid-template-areas: "heading heading" "budget commission" "metrics metrics" "cta cta"; }
+#barnes-directions .bd-heading { grid-area: heading; }
+#barnes-directions .bd-budget { grid-area: budget; }
+#barnes-directions .bd-commission { grid-area: commission; justify-content: flex-start; }
+#barnes-directions .bd-commission strong { font-size: 32px; line-height: 38.4px; }
+#barnes-directions :is(.bd-metrics, .bd-textfacts) { grid-area: metrics; }
+#barnes-directions .bd-cta { grid-area: cta; }
+#barnes-directions .bd-num { font-size: 32px; line-height: 38.4px; }
+#barnes-directions .bd-cta { height: 58px; padding-inline: 24px; font-size: 18px; line-height: 19.8px; }}
+@media (min-width: 901px) {#barnes-directions .bd-copy { grid-template-columns: repeat(2, minmax(0px, 1fr)); grid-template-rows: minmax(var(--bd-heading-height,64px),auto) minmax(var(--bd-facts-height,176px),auto) minmax(max(var(--bd-budget-height,88px),var(--bd-commission-height,128px)),auto) 70px; grid-template-areas: "heading heading" "metrics metrics" "commission budget" "cta cta"; }
+#barnes-directions .bd-heading { grid-area: heading; }
+#barnes-directions :is(.bd-metrics, .bd-textfacts) { grid-area: metrics; }
+#barnes-directions .bd-commission { grid-area: commission; justify-content: flex-start; }
+#barnes-directions .bd-budget { grid-area: budget; }
+#barnes-directions .bd-cta { grid-area: cta; }
+#barnes-directions :is(.bd-budget, .bd-commission) { min-width: 0px; overflow-wrap: anywhere; }
+#barnes-directions .bd-copy :is(.bd-price, .bd-words, .bd-num, .bd-facttext) { font-size: 38px; line-height: 45.6px; font-weight: 300; }
+#barnes-directions .bd-commission strong { font-size: 38px; line-height: 45.6px; font-weight: 400; }}
+#barnes-directions :is(.bd-budget, .bd-commission, .bd-metrics > div, .bd-textfacts > div) > :is(.bd-label, .bd-price-label, .bd-num, .bd-facttext, strong) { flex: 0 0 auto; min-height: 0px; height: auto; margin: 0px; padding: 0px; }
+@keyframes ap-logo-left { 
+  0% { transform: translateX(0px); }
+  100% { transform: translateX(calc(-50% - var(--ap-logo-shift))); }
+}
+@keyframes ap-logo-right { 
+  0% { transform: translateX(calc(-50% - var(--ap-logo-shift))); }
+  100% { transform: translateX(0px); }
+}
+.partners-owner-shell .ap-arrow { display: inline-block; flex: 0 0 16px; width: 16px; height: 16px; vertical-align: middle; fill: none; }
+svg:not(.partners-brand-block) { overflow: hidden; }
+body.barnes-media-reference :is(.base-container:not(.site-footer__inner), .about-company__inner, .catalog-consultation__inner, .owner-sale-services__slider) { box-sizing: border-box !important; width: 100% !important; max-width: 1920px !important; margin-inline: auto !important; padding-inline: var(--reference-gutter) !important; }
+body.barnes-media-reference :is(main h2, .newsletter-cta h2, .owner-sale-types__section-title, .ambassadors-conditions__section-title, .catalog-consultation__mobile-title, .catalog-consultation__subtitle) { font-size: var(--reference-heading) !important; line-height: 1.2 !important; font-weight: 300 !important; }
+body.barnes-media-reference :is(.owner-sale-presentation__reveal-text, .owner-sale-presentation__caption, .owner-sale-services__text, .owner-sale-services__text span, .about-company__intro, .about-company__description, .owner-sale-stages__intro, .owner-sale-stages__item-text, .owner-sale-exclusive__intro, .owner-sale-exclusive__text, .owner-sale-strategy__text, .ambassadors-conditions__description, .ambassadors-advantages__text, .ambassadors-advantages__description, .catalog-contact__subtitle, .catalog-consultation__lead, .catalog-consultation__mobile-lead, .newsletter-cta__lead, .catalog-faq__answer, .catalog-faq__answer p, .bd-intro, .bd-direction-description, .bd-label, .bd-words, .bd-price small, #why-barnes .be-body, #why-barnes .be-lead) { font-size: var(--reference-lead) !important; line-height: var(--reference-lead-line) !important; font-weight: 300 !important; }
+body.barnes-media-reference :is(main h3, .ambassadors-conditions__title, .ambassadors-advantages__card-title, .owner-sale-presentation__featured-title, .owner-sale-types__title, .catalog-contact__card-title, #why-barnes h3) { font-size: 18px !important; line-height: 1.35 !important; font-weight: 400 !important; }
+body.barnes-media-reference :is(.owner-rent-section-eyebrow, .owner-sale-section-eyebrow, .partners-section-eyebrow, .bd-eyebrow, #why-barnes .be-eyebrow) { font-size: var(--reference-eyebrow) !important; line-height: 1.15 !important; font-weight: 400 !important; }
+body.barnes-media-reference :is(.ui-button:not(.owner-sale-hero__button):not(.ambassadors-hero__button), .newsletter-form__row > button, .catalog-contact__submit, .catalog-consultation__button, .owner-sale-strategy__button, .bd-cta, .feedback-modal__submit, #why-barnes .be-cta) { max-width: 100%; white-space: normal; font-size: var(--reference-action) !important; line-height: 1.1 !important; font-weight: 400 !important; }
+svg:not(.barnes-template) { overflow: hidden; }

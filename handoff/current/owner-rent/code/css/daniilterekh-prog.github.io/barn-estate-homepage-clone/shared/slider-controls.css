@@ -1,0 +1,3 @@
+/* Only the navigation row moves; native slider buttons and handlers are preserved. */
+.barn-slider-footer{display:flex;align-items:center;justify-content:flex-end;gap:12px;box-sizing:border-box;min-width:0;grid-column:1/-1}
+[data-slider-counter]{display:none!important}

@@ -1,0 +1,70 @@
+#conditions .ambassadors-conditions__header {
+  margin-bottom: 48px;
+}
+
+#conditions .ambassadors-conditions__title {
+  max-width: 100%;
+}
+
+#conditions .ambassadors-conditions__copy { position:absolute; z-index:1; inset:auto 0 0; padding:32px; color:#fff; }
+#conditions .ambassadors-conditions__card { min-height:360px; }
+#conditions .ambassadors-conditions__copy .ambassadors-conditions__title { display:block; height:auto; width:100%; padding:0; margin:0; font:400 24px/28.8px "Tilda Sans",sans-serif; letter-spacing:0; }
+#conditions .ambassadors-conditions__description { margin:0; max-height:0; opacity:0; visibility:hidden; overflow:hidden; font:300 22px/28.16px "Tilda Sans",sans-serif; letter-spacing:0; text-transform:none; transition:max-height 240ms ease,opacity 240ms ease,margin-top 240ms ease,visibility 240ms; }
+#conditions .ambassadors-conditions__overlay { transition:background 240ms ease; }
+#conditions .ambassadors-conditions__card:is(:has(button:focus-visible),.is-revealed,.is-hovered) .ambassadors-conditions__overlay { background:rgba(0,0,0,.72); }
+#conditions .ambassadors-conditions__card:is(:has(button:focus-visible),.is-revealed,.is-hovered) .ambassadors-conditions__description { margin-top:12px; max-height:180px; opacity:1; visibility:visible; }
+#conditions .ambassadors-conditions__reveal { position:absolute; z-index:2; inset:0; display:block; width:100%; height:100%; padding:0; border:0; border-radius:1px; background:transparent; color:transparent; font-size:0; cursor:pointer; }
+#conditions .ambassadors-conditions__reveal:focus-visible { outline:2px solid #fff; outline-offset:-4px; }
+@media(hover:hover) and (pointer:fine) {
+  #conditions .ambassadors-conditions__reveal { opacity:0; pointer-events:none; }
+  #conditions .ambassadors-conditions__reveal:focus-visible { opacity:1; pointer-events:auto; }
+  #conditions .ambassadors-conditions__card:hover .ambassadors-conditions__overlay { background:rgba(0,0,0,.72); }
+  #conditions .ambassadors-conditions__card:hover .ambassadors-conditions__description { margin-top:12px; max-height:180px; opacity:1; visibility:visible; }
+}
+@media(max-width:1440px) { #conditions .ambassadors-conditions__copy { padding:24px; } }
+@media(max-width:1024px) { #conditions .ambassadors-conditions__copy .ambassadors-conditions__title { font-size:20px; line-height:24px; } #conditions .ambassadors-conditions__description { font:400 16px/22.4px "Tilda Sans",sans-serif; } #conditions .ambassadors-conditions__card { min-height:260px; } }
+@media(max-width:540px) { #conditions .ambassadors-conditions__copy { padding:20px; } #conditions .ambassadors-conditions__card { min-height:260px; } }
+@media(prefers-reduced-motion:reduce) { #conditions :is(.ambassadors-conditions__description,.ambassadors-conditions__overlay) { transition:none; } }
+
+#conditions .ambassadors-conditions__section-title {
+  color: #1e1e1e;
+  font-size: 38px;
+  font-weight: 300;
+  line-height: 45.6px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+@media (min-width: 1441px) {
+  #conditions .ambassadors-conditions__section-title {
+    font-size: 44px;
+    line-height: 52.8px;
+  }
+}
+
+@media (max-width: 1024px) {
+  #conditions .ambassadors-conditions__header {
+    margin-bottom: 32px;
+  }
+
+  #conditions .partners-section-eyebrow {
+    font-size: 12px;
+    line-height: 14.4px;
+  }
+
+  #conditions .ambassadors-conditions__section-title {
+    font-size: 22px;
+    line-height: 26.4px;
+  }
+}
+
+@media (max-width: 540px) {
+  #conditions .ambassadors-conditions__header {
+    margin-bottom: 28px;
+    text-align: center;
+  }
+
+  #conditions .partners-section-eyebrow {
+    text-align: center;
+  }
+}

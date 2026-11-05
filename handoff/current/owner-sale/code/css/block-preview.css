@@ -1,0 +1,10 @@
+/* Preview-only page shell; insertion fragments retain their original classes. */
+@layer handoff-preview {
+ html body[data-block-preview] {margin:0!important;min-height:0!important;}
+ body[data-block-preview] [hidden] {display:none!important;}
+ body[data-block-preview] .handoff-block :is(.layout,.layout__main) {min-height:0!important;}
+ body[data-block-preview] .handoff-block[data-block-kind=site-header] {background:#262626;min-height:190px;}
+ body[data-block-preview] .handoff-block[data-block-kind=site-header] .layout__header {position:relative!important;}
+ body[data-block-preview] .handoff-block[data-block-kind=owner-sale-sticky] .owner-sale-sticky {position:relative!important;inset:auto!important;opacity:1!important;visibility:visible!important;transform:none!important;pointer-events:auto!important;}
+ body[data-block-preview] .handoff-block[data-block-kind=floating-expert] {min-height:220px;}
+}

@@ -1,0 +1,226 @@
+[
+  {
+    "id": "01-site-header",
+    "title": "Хедер",
+    "kind": "site-header",
+    "html": "block.html",
+    "css": "block.css",
+    "js": "block.js",
+    "preview": "index.html",
+    "dependencies": [
+      "../../code/css/page.css",
+      "../../code/css/blocks-runtime.css",
+      "../../code/js/blocks-runtime.js",
+      "../../../shared/js/expert-dialog.js",
+      "../../../shared/assets/"
+    ]
+  },
+  {
+    "id": "02-owner-sale-sticky",
+    "title": "Закреплённый хедер",
+    "kind": "owner-sale-sticky",
+    "html": "block.html",
+    "css": "block.css",
+    "js": "block.js",
+    "preview": "index.html",
+    "dependencies": [
+      "../../code/css/page.css",
+      "../../code/css/blocks-runtime.css",
+      "../../code/js/blocks-runtime.js",
+      "../../../shared/js/expert-dialog.js",
+      "../../../shared/assets/"
+    ]
+  },
+  {
+    "id": "03-owner-sale-hero",
+    "title": "Сдать премиальную недвижимость с BARN Estate",
+    "kind": "owner-sale-hero",
+    "html": "block.html",
+    "css": "block.css",
+    "js": "block.js",
+    "preview": "index.html",
+    "dependencies": [
+      "../../code/css/page.css",
+      "../../code/css/blocks-runtime.css",
+      "../../code/js/blocks-runtime.js",
+      "../../../shared/js/expert-dialog.js",
+      "../../../shared/assets/"
+    ]
+  },
+  {
+    "id": "04-about",
+    "title": "ИСКУССТВО ПРАВИЛЬНОГО ПРЕДСТАВЛЕНИЯ",
+    "kind": "owner-sale-presentation",
+    "html": "block.html",
+    "css": "block.css",
+    "js": "block.js",
+    "preview": "index.html",
+    "dependencies": [
+      "../../code/css/page.css",
+      "../../code/css/blocks-runtime.css",
+      "../../code/js/blocks-runtime.js",
+      "../../../shared/js/expert-dialog.js",
+      "../../../shared/assets/"
+    ]
+  },
+  {
+    "id": "05-team",
+    "title": "ОДИН ОБЪЕКТ — ОДНА СТРАТЕГИЯ И ОДИН ОТВЕТСТВЕННЫЙ ПАРТНЁР",
+    "kind": "owner-sale-services",
+    "html": "block.html",
+    "css": "block.css",
+    "js": "block.js",
+    "preview": "index.html",
+    "dependencies": [
+      "../../code/css/page.css",
+      "../../code/css/blocks-runtime.css",
+      "../../code/js/blocks-runtime.js",
+      "../../../shared/js/expert-dialog.js",
+      "../../../shared/assets/"
+    ]
+  },
+  {
+    "id": "06-about-company",
+    "title": "Агентство элитной недвижимости BARN Estate",
+    "kind": "about-company",
+    "html": "block.html",
+    "css": "block.css",
+    "js": "block.js",
+    "preview": "index.html",
+    "dependencies": [
+      "../../code/css/page.css",
+      "../../code/css/blocks-runtime.css",
+      "../../code/js/blocks-runtime.js",
+      "../../../shared/js/expert-dialog.js",
+      "../../../shared/assets/"
+    ]
+  },
+  {
+    "id": "07-exclusive",
+    "title": "ПРЕИМУЩЕСТВА ЭКСКЛЮЗИВНОЙРАБОТЫ С BARN Estate",
+    "kind": "owner-sale-exclusive",
+    "html": "block.html",
+    "css": "block.css",
+    "js": "block.js",
+    "preview": "index.html",
+    "dependencies": [
+      "../../code/css/page.css",
+      "../../code/css/blocks-runtime.css",
+      "../../code/js/blocks-runtime.js",
+      "../../../shared/js/expert-dialog.js",
+      "../../../shared/assets/"
+    ]
+  },
+  {
+    "id": "08-why-barnes",
+    "title": "ПОЧЕМУ СОБСТВЕННИКИ ВЫБИРАЮТ BARN Estate",
+    "kind": "",
+    "html": "block.html",
+    "css": "block.css",
+    "js": "block.js",
+    "preview": "index.html",
+    "dependencies": [
+      "../../code/css/page.css",
+      "../../code/css/blocks-runtime.css",
+      "../../code/js/blocks-runtime.js",
+      "../../../shared/js/expert-dialog.js",
+      "../../../shared/assets/"
+    ]
+  },
+  {
+    "id": "10-request",
+    "title": "Эксперты BARN Estate подскажут",
+    "kind": "catalog-consultation",
+    "html": "block.html",
+    "css": "block.css",
+    "js": "block.js",
+    "preview": "index.html",
+    "dependencies": [
+      "../../code/css/page.css",
+      "../../code/css/blocks-runtime.css",
+      "../../code/js/blocks-runtime.js",
+      "../../../shared/js/expert-dialog.js",
+      "../../../shared/assets/"
+    ]
+  },
+  {
+    "id": "11-property-types",
+    "title": "ПОМОЖЕМ СДАТЬ ВАШУ НЕДВИЖИМОСТЬ",
+    "kind": "owner-sale-types",
+    "html": "block.html",
+    "css": "block.css",
+    "js": "block.js",
+    "preview": "index.html",
+    "dependencies": [
+      "../../code/css/page.css",
+      "../../code/css/blocks-runtime.css",
+      "../../code/js/blocks-runtime.js",
+      "../../../shared/js/expert-dialog.js",
+      "../../../shared/assets/"
+    ]
+  },
+  {
+    "id": "12-newsletter-cta",
+    "title": "В центре событий рынка недвижимости",
+    "kind": "newsletter-cta",
+    "html": "block.html",
+    "css": "block.css",
+    "js": "block.js",
+    "preview": "index.html",
+    "dependencies": [
+      "../../code/css/page.css",
+      "../../code/css/blocks-runtime.css",
+      "../../code/js/blocks-runtime.js",
+      "../../../shared/js/expert-dialog.js",
+      "../../../shared/assets/"
+    ]
+  },
+  {
+    "id": "13-site-footer",
+    "title": "Футер",
+    "kind": "site-footer",
+    "html": "block.html",
+    "css": "block.css",
+    "js": "block.js",
+    "preview": "index.html",
+    "dependencies": [
+      "../../code/css/page.css",
+      "../../code/css/blocks-runtime.css",
+      "../../code/js/blocks-runtime.js",
+      "../../../shared/js/expert-dialog.js",
+      "../../../shared/assets/"
+    ]
+  },
+  {
+    "id": "14-floating-expert",
+    "title": "Плавающий эксперт",
+    "kind": "floating-expert",
+    "html": "block.html",
+    "css": "block.css",
+    "js": "block.js",
+    "preview": "index.html",
+    "dependencies": [
+      "../../code/css/page.css",
+      "../../code/css/blocks-runtime.css",
+      "../../code/js/blocks-runtime.js",
+      "../../../shared/js/expert-dialog.js",
+      "../../../shared/assets/"
+    ]
+  },
+  {
+    "id": "15-handoff-dialog",
+    "title": "Форма обращения к эксперту",
+    "kind": "handoff-dialog",
+    "html": "block.html",
+    "css": "block.css",
+    "js": "block.js",
+    "preview": "index.html",
+    "dependencies": [
+      "../../code/css/page.css",
+      "../../code/css/blocks-runtime.css",
+      "../../code/js/blocks-runtime.js",
+      "../../../shared/js/expert-dialog.js",
+      "../../../shared/assets/"
+    ]
+  }
+]

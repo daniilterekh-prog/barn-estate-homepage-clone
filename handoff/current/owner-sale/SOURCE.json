@@ -1,0 +1,405 @@
+{
+  "page": "owner-sale",
+  "title": "Собственникам — продажа",
+  "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/prodazha_sobstvennikam/",
+  "sourceCommit": "4a7d54fd3fbef9ba7ab60750b1803d7b6dffbd21",
+  "date": "2026-11-05",
+  "blocks": 15,
+  "resources": [
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/shared/owner-mechanics.css",
+      "file": "owner-sale/code/css/daniilterekh-prog.github.io/barn-estate-homepage-clone/shared/owner-mechanics.css",
+      "sha256": "eb7ed42c9009917b5eae82bc7168219f4090ad28c6c752e1c6c9c88bc7513428"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/shared/owner-panorama.css",
+      "file": "owner-sale/code/css/daniilterekh-prog.github.io/barn-estate-homepage-clone/shared/owner-panorama.css",
+      "sha256": "7dea4e54a3538d40f1164ae25eb5f74355f0cdfaf51b25aec0450678f79f7c5e"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/shared/presentation-mobile.css",
+      "file": "owner-sale/code/css/daniilterekh-prog.github.io/barn-estate-homepage-clone/shared/presentation-mobile.css",
+      "sha256": "2aae5b3df68322229738c1a50ab41cb0ad005da467bfae2438cc1c6bf66e110e"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/shared/expert-avatar.css",
+      "file": "owner-sale/code/css/daniilterekh-prog.github.io/barn-estate-homepage-clone/shared/expert-avatar.css",
+      "sha256": "7a84fccb7131d4c9d8cf387e6b1e14333c4c5e371ccbe2222f7a239e34336ce2"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/shared/anchor-navigation.css",
+      "file": "owner-sale/code/css/daniilterekh-prog.github.io/barn-estate-homepage-clone/shared/anchor-navigation.css",
+      "sha256": "fddf6c892c5be3414dc22056fe00df3b6cfc329e034fb29428f77cb5ab1705ea"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/shared/services-layout.css",
+      "file": "owner-sale/code/css/daniilterekh-prog.github.io/barn-estate-homepage-clone/shared/services-layout.css",
+      "sha256": "d187a06f1b490b1c50647a95cda77d9e9e0bf026ecfb65de3ef05212c279bf04"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/shared/newsletter-home.css",
+      "file": "owner-sale/code/css/daniilterekh-prog.github.io/barn-estate-homepage-clone/shared/newsletter-home.css",
+      "sha256": "14e3d47b57b96ed37c4dab0d8f9c833ea1a32f7b0f2357e33230e77189247cf3"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/shared/about-home.css",
+      "file": "owner-sale/code/css/daniilterekh-prog.github.io/barn-estate-homepage-clone/shared/about-home.css",
+      "sha256": "7a557a16b6602dc9505d6e0e68607e5f5671ae7be16828b911f841279a8831d5"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/shared/cta-resort.css",
+      "file": "owner-sale/code/css/daniilterekh-prog.github.io/barn-estate-homepage-clone/shared/cta-resort.css",
+      "sha256": "0fbe5b5ac5d2676858a15505195fa8a353d8952f61cdd155fd2eac327ba18eae"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barnes-assets/brand/barn-estate/logo.svg",
+      "file": "shared/assets/9b2d8c1a7d4d2135.svg",
+      "sha256": "9b2d8c1a7d4d213587828c6bdf6592a37113a388fedc1b58211534d8cb1e7123"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/shared/expert-dialog.css",
+      "file": "owner-sale/code/css/daniilterekh-prog.github.io/barn-estate-homepage-clone/shared/expert-dialog.css",
+      "sha256": "59427a1afb5c95f9eb477aa6c69aa38564f4c2e9439c85e31b57f86cf42af483"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/shared/anchor-navigation.js",
+      "file": "owner-sale/code/js/daniilterekh-prog.github.io/barn-estate-homepage-clone/shared/anchor-navigation.js",
+      "sha256": "d42478c6de2973d4261daac172ae08634f4a3ba39bf8cd3ce617ad1f719e1ca9"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/shared/expert-avatar.js",
+      "file": "owner-sale/code/js/daniilterekh-prog.github.io/barn-estate-homepage-clone/shared/expert-avatar.js",
+      "sha256": "2ded60e46b61ebe4a22970a0aef24000cb471e0f8e1cb3dde3e7dfccfae62597"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/shared/newsletter-home.js",
+      "file": "owner-sale/code/js/daniilterekh-prog.github.io/barn-estate-homepage-clone/shared/newsletter-home.js",
+      "sha256": "afe05469860975a5fa8b5dd1b7a6f57abca080abb33d61f2217f5f6939604128"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/shared/owner-panorama.js",
+      "file": "owner-sale/code/js/daniilterekh-prog.github.io/barn-estate-homepage-clone/shared/owner-panorama.js",
+      "sha256": "b4f295693aa1bc4ae7f7d0ac60eaaaaf697936ab2eab2a8734da1abbbb725e0f"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/shared/cta-resort.js",
+      "file": "owner-sale/code/js/daniilterekh-prog.github.io/barn-estate-homepage-clone/shared/cta-resort.js",
+      "sha256": "2252a1787aa3d465fc521e87b3181d9b9f9d6818c9b52dd5588a9e917e83e3fb"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/shared/expert-dialog.js",
+      "file": "owner-sale/code/js/daniilterekh-prog.github.io/barn-estate-homepage-clone/shared/expert-dialog.js",
+      "sha256": "f83b9b5e61151f3864dbfd85441462c9c65d5bbf1ca16749da0cfbab2b8867e8"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/shared/about-home.js",
+      "file": "owner-sale/code/js/daniilterekh-prog.github.io/barn-estate-homepage-clone/shared/about-home.js",
+      "sha256": "6254541df8e7aebf8d14ba323d7f1754881956e707f5e0192cd8e99e107bf5f0"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/shared/cta-bleed.css",
+      "file": "owner-sale/code/css/daniilterekh-prog.github.io/barn-estate-homepage-clone/shared/cta-bleed.css",
+      "sha256": "d892ba286df8056cbf94809a56c7c03339ab9b88495612d67019ec893dfb804e"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/shared/slider-controls.css",
+      "file": "owner-sale/code/css/daniilterekh-prog.github.io/barn-estate-homepage-clone/shared/slider-controls.css",
+      "sha256": "a9d6b5ec1e88e1f25f7fbee31b237064357124f96258faf81b1601b7d26dd6d8"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/shared/card-gaps.css",
+      "file": "owner-sale/code/css/daniilterekh-prog.github.io/barn-estate-homepage-clone/shared/card-gaps.css",
+      "sha256": "efb542f53c1aa677a28f3cf4f8eac15b1ffa0267c209a553465bb7249bb401bc"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/prodazha_sobstvennikam/page-kit.css",
+      "file": "owner-sale/code/css/daniilterekh-prog.github.io/barn-estate-homepage-clone/prodazha_sobstvennikam/page-kit.css",
+      "sha256": "49bc6097d1dad04271ffc2fa917400c312b9604432f9c94cde774a84ce35663c"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/shared/layout-gutters.css",
+      "file": "owner-sale/code/css/daniilterekh-prog.github.io/barn-estate-homepage-clone/shared/layout-gutters.css",
+      "sha256": "9c7ccfabdd5541cf007cac9a40fe23131f1fb2f28964c529d9e6f7bac9851bb1"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/prodazha_sobstvennikam/brand-nowrap.css",
+      "file": "owner-sale/code/css/daniilterekh-prog.github.io/barn-estate-homepage-clone/prodazha_sobstvennikam/brand-nowrap.css",
+      "sha256": "09ea8dedc25f5cbc24540b51aba46a441634eb410cec1d4c49a8b2fc479f7967"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/prodazha_sobstvennikam/owner-sale.css",
+      "file": "owner-sale/code/css/daniilterekh-prog.github.io/barn-estate-homepage-clone/prodazha_sobstvennikam/owner-sale.css",
+      "sha256": "66d7d1042786b8bc83c2b71e700257bb3603e34bc4eefd4603b60c04211d58d8"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/shared/page-breadcrumbs.css",
+      "file": "owner-sale/code/css/daniilterekh-prog.github.io/barn-estate-homepage-clone/shared/page-breadcrumbs.css",
+      "sha256": "7a58ed93dc94357053343f42781a513a93b66b3f6c61f0f9a6c0e26bcaef7d30"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/prodazha_sobstvennikam/hero-laptop.css",
+      "file": "owner-sale/code/css/daniilterekh-prog.github.io/barn-estate-homepage-clone/prodazha_sobstvennikam/hero-laptop.css",
+      "sha256": "01b3ae051e2b1991600d753f6c0746c677be6d771965554517378bbb3495e7d0"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/prodazha_sobstvennikam/media-reference.css",
+      "file": "owner-sale/code/css/daniilterekh-prog.github.io/barn-estate-homepage-clone/prodazha_sobstvennikam/media-reference.css",
+      "sha256": "108763d774ad2bd6cf0275acb84fc8dead0a15afc908015758f8ed1e37771355"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/shared/slider-controls.js",
+      "file": "owner-sale/code/js/daniilterekh-prog.github.io/barn-estate-homepage-clone/shared/slider-controls.js",
+      "sha256": "dce5bdecd97ff41e7e21efe56e5a22942f080f99ba1dac9081cf00f98de7ef03"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/shared/page-breadcrumbs.js",
+      "file": "owner-sale/code/js/daniilterekh-prog.github.io/barn-estate-homepage-clone/shared/page-breadcrumbs.js",
+      "sha256": "4903adc489eaf61d57e25c9ac33a6c84e3838606fd73f44c05bb76fd1bd2e663"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/prodazha_sobstvennikam/brand-nowrap.js",
+      "file": "owner-sale/code/js/daniilterekh-prog.github.io/barn-estate-homepage-clone/prodazha_sobstvennikam/brand-nowrap.js",
+      "sha256": "55c3b91fbb6c5069fa49ee63c7cf5967d85ab5d48006fbe006609f46355ed5fa"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/shared/cta-bleed.js",
+      "file": "owner-sale/code/js/daniilterekh-prog.github.io/barn-estate-homepage-clone/shared/cta-bleed.js",
+      "sha256": "45d164865450e12665bf787ca4941858a46d653483c5e8244fb5d01c41e87b98"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/prodazha_sobstvennikam/assets/ruslan.webp",
+      "file": "shared/assets/4464b6998f60131d.webp",
+      "sha256": "4464b6998f60131d99ee19b3887a776b896162ce4cbbf1cefd4bb7dcbf7a3986"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/prodazha_sobstvennikam/media-header.css",
+      "file": "owner-sale/code/css/daniilterekh-prog.github.io/barn-estate-homepage-clone/prodazha_sobstvennikam/media-header.css",
+      "sha256": "624a948bf7ac9eb36554a38148fd2820d98d8d659acb8237d9bada7fa1924709"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/prodazha_sobstvennikam/media-header.js",
+      "file": "owner-sale/code/js/daniilterekh-prog.github.io/barn-estate-homepage-clone/prodazha_sobstvennikam/media-header.js",
+      "sha256": "811c378ca83e1a960c49963c8b5365f784d6b2b455320fc660d7d22dbff942a9"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/prodazha_sobstvennikam/owner-sale.js",
+      "file": "owner-sale/code/js/daniilterekh-prog.github.io/barn-estate-homepage-clone/prodazha_sobstvennikam/owner-sale.js",
+      "sha256": "9c036a2a62ff071a534e01f1234a6233075f5060da31916ca747f58ca8ffbfaf"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/prodazha_sobstvennikam/hero.css",
+      "file": "owner-sale/code/css/daniilterekh-prog.github.io/barn-estate-homepage-clone/prodazha_sobstvennikam/hero.css",
+      "sha256": "002bf2d2c75f7ec115686583aaf4c007c82f0a93884dcef8ef52570cf22ae81d"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/prodazha_sobstvennikam/assets/hero.png",
+      "file": "shared/assets/615bfa6ae8972761.png",
+      "sha256": "615bfa6ae8972761221388580bfeb060addcb74d39b71fa629d972f7b502a396"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/home-owner-form.css",
+      "file": "owner-sale/code/css/daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/home-owner-form.css",
+      "sha256": "5312ef62e68fefcb95a3c1f7c4cc6eba0b4fcf34cbe71ebeefd06fecb9a6a408"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/prodazha_sobstvennikam/source.css",
+      "file": "owner-sale/code/css/daniilterekh-prog.github.io/barn-estate-homepage-clone/prodazha_sobstvennikam/source.css",
+      "sha256": "3c6aab569051fd135ece39698d875f1dd83edc05580c9b7d3a7cb379906819e9"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/prodazha_sobstvennikam/assets/fonts/TildaSans-Light.woff2",
+      "file": "shared/assets/f0f2c165784c7234.woff2",
+      "sha256": "f0f2c165784c72343618a7c2cbde00e45dbb9b09af5149984792f280cac9642e"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/shared/assets/presentation-v3/object-detail.webp",
+      "file": "shared/assets/fe53b29e285ed19e.webp",
+      "sha256": "fe53b29e285ed19e672b043e9c993c576d8a3060c1e5ed120d394c368b081532"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/shared/assets/presentation-v3/viewing.webp",
+      "file": "shared/assets/5d852247fa02f311.webp",
+      "sha256": "5d852247fa02f311596b86476a82b70f705c8169c79f24ed1999f71062beaeae"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/blocks/14-newsletter/assets/8a78978e0423f444f2adbe1f.webp",
+      "file": "shared/assets/a59b66d0d7fdeda1.webp",
+      "sha256": "a59b66d0d7fdeda1b0b0726fc2b9f0f23450da792c5cff66bba1482a09d8774f"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/shared/assets/presentation-v3/legal.webp",
+      "file": "shared/assets/ec539a2263ccb105.webp",
+      "sha256": "ec539a2263ccb105caf68061423f13eea78a2c81d1f36ea8a8b08558cad85cd5"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/shared/assets/presentation-v3/positioning.webp",
+      "file": "shared/assets/925883abb16a4b93.webp",
+      "sha256": "925883abb16a4b93ae655c635be8f18ddad40e68570b5ad96a1b9d013131b22b"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/prodazha_sobstvennikam/assets/fonts/TildaSans-Regular.woff2",
+      "file": "shared/assets/2670dad44ca6c2a1.woff2",
+      "sha256": "2670dad44ca6c2a1b9bbdbf1af6d8db9173f2dbe31604e80bdf9599b55047d41"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/shared/owner-header.css",
+      "file": "owner-sale/code/css/daniilterekh-prog.github.io/barn-estate-homepage-clone/shared/owner-header.css",
+      "sha256": "840ead018f62f399165a9146de64244d0192349f38060de2d69232cccff97daa"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/prodazha_sobstvennikam/assets/fonts/TildaSans-Medium.woff2",
+      "file": "shared/assets/f716269e361f4665.woff2",
+      "sha256": "f716269e361f466570f37bc920988c619ddc8a7828c5949c1c56a731a320ab47"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/prodazha_sobstvennikam/assets/stages.png",
+      "file": "shared/assets/718abf0b246fe187.png",
+      "sha256": "718abf0b246fe187705050a7ab4cfc65d94986ee14e6b10b2072cb29801f71fb"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/shared/assets/presentation-v3/privacy.webp",
+      "file": "shared/assets/cc27430018adaa0a.webp",
+      "sha256": "cc27430018adaa0a598303e63cffe601f9788af56a265c1e6103efd78fdbd3b6"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/prodazha_sobstvennikam/assets/types-04.png",
+      "file": "shared/assets/398e4b6d8ad61632.png",
+      "sha256": "398e4b6d8ad616325eaeeaeebc4c250875a0940d6bc1049971951151f96975e5"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/prodazha_sobstvennikam/assets/strategy.png",
+      "file": "shared/assets/362c3f5453ecc581.png",
+      "sha256": "362c3f5453ecc58175a45c51247c07c9a8b652bd23d68313f1cc6b5b5e5d4a8d"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/prodazha_sobstvennikam/assets/types-03.png",
+      "file": "shared/assets/7e10e0bd72639a4b.png",
+      "sha256": "7e10e0bd72639a4bb0848c048c667642d5945399ebb3402636ddc92e6064df52"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/shared/assets/presentation-v3/negotiation.webp",
+      "file": "shared/assets/a8167d8f84ef0eca.webp",
+      "sha256": "a8167d8f84ef0ecab92bafc1e25a45db3106c0e259ee9a0f48d9ac857dd05a41"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/pictures/office-contact/telegram.svg",
+      "file": "shared/assets/4435c9a57e165a1c.svg",
+      "sha256": "4435c9a57e165a1c3b7f27e0b5b11b82b10d674ea4fff7f6748cb67b7fcb994e"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/shared/assets/ruslan-floating-media.webp",
+      "file": "shared/assets/6bbaa8e1df83e7d5.webp",
+      "sha256": "6bbaa8e1df83e7d5eda42c83d174e1f0177a8cbb5698bd5ec01ee3602e8f84aa"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/pictures/office-contact/whatsapp.svg",
+      "file": "shared/assets/3e197e0e1f3e679e.svg",
+      "sha256": "3e197e0e1f3e679ee09823c75e1c7bad3a19da9bd1ba01df395268b9ae91816f"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/prodazha_sobstvennikam/assets/consultation-bg.webp",
+      "file": "shared/assets/963872afd408bd77.webp",
+      "sha256": "963872afd408bd77fca71e32647e7617d1c526fc33f8c25b582dc1d1a17c1700"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/prodazha_sobstvennikam/assets/types-01.png",
+      "file": "shared/assets/f780a9179fd099d0.png",
+      "sha256": "f780a9179fd099d091dd37d51667d38a78c62aa490e8cd96b8997f793665d628"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/shared/assets/home-about-logo-round-red.png",
+      "file": "shared/assets/abb141124e76fe4c.png",
+      "sha256": "abb141124e76fe4cdc5d4c036160eb1fadcf2a61484bb8bd78b40c756c631395"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/prodazha_sobstvennikam/assets/types-02.png",
+      "file": "shared/assets/f1cefa66d4f8cc2a.png",
+      "sha256": "f1cefa66d4f8cc2a5c25c8e526cec309ad3abbc39f87703f30b8857877a3069d"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/pictures/office-contact/max.svg",
+      "file": "shared/assets/5caa61a4b0731d0d.svg",
+      "sha256": "5caa61a4b0731d0d89421b4fb24f41433025e5aea59155a14cf3a3fada6c9174"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/shared/assets/barnes-private-salon.webp",
+      "file": "shared/assets/ffab11f9222a5a3d.webp",
+      "sha256": "ffab11f9222a5a3d9133c9c95a3e81d9e5f9fb02531ec2f84e3ad9f557223cbc"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/blocks/14-newsletter/assets/f6f65669dc22ef4fe836335c.webp",
+      "file": "shared/assets/3285d219f1845deb.webp",
+      "sha256": "3285d219f1845deb8887ba3bc04b8e79ce8d3bec99dd568d8a51b8c5fa8bf9af"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/prodazha_sobstvennikam/assets/menu-featured-02.jpg",
+      "file": "shared/assets/7781fce4e8048ef7.jpg",
+      "sha256": "7781fce4e8048ef743e425d296b2437674b6dc3e1d3684da098beb3afc695357"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/prodazha_sobstvennikam/assets/menu-featured-01.jpg",
+      "file": "shared/assets/c5384c30d421ad70.jpg",
+      "sha256": "c5384c30d421ad705b43c8eb3dac7d16187ff87eb67392232fb15fa995980a7e"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/shared/assets/modal-ruslan-organic.webp",
+      "file": "shared/assets/6bbaa8e1df83e7d5.webp",
+      "sha256": "6bbaa8e1df83e7d5eda42c83d174e1f0177a8cbb5698bd5ec01ee3602e8f84aa"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/prodazha_sobstvennikam/assets/services-bg.png",
+      "file": "shared/assets/a1f881f235a834e6.png",
+      "sha256": "a1f881f235a834e68dcadb17dfd08223f94b37f8916a1cf3a7f32b98164978b2"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/fonts/TildaSans-Light.woff2",
+      "file": "shared/assets/f0f2c165784c7234.woff2",
+      "sha256": "f0f2c165784c72343618a7c2cbde00e45dbb9b09af5149984792f280cac9642e"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/fonts/TildaSans-Regular.woff2",
+      "file": "shared/assets/2670dad44ca6c2a1.woff2",
+      "sha256": "2670dad44ca6c2a1b9bbdbf1af6d8db9173f2dbe31604e80bdf9599b55047d41"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/fonts/TildaSans-Medium.woff2",
+      "file": "shared/assets/f716269e361f4665.woff2",
+      "sha256": "f716269e361f466570f37bc920988c619ddc8a7828c5949c1c56a731a320ab47"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/prodazha_sobstvennikam/assets/fonts/TildaSans-Semibold.woff2",
+      "file": "shared/assets/3814f8c444073262.woff2",
+      "sha256": "3814f8c444073262523050f3554c6f09cb49353e1f6fdc22a3561d354a231439"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/prodazha_sobstvennikam/assets/fonts/TildaSans-Bold.woff2",
+      "file": "shared/assets/a2690df6fe834806.woff2",
+      "sha256": "a2690df6fe8348066df79e3a3421a3a9bc0b058cc536f3d846f782ea5337afec"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/prodazha_sobstvennikam/assets/fonts/TildaSans-ExtraBold.woff2",
+      "file": "shared/assets/726a3a878465a590.woff2",
+      "sha256": "726a3a878465a590443308ea9e14459ab5943f699cff4887c844af4ed76ce577"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/prodazha_sobstvennikam/assets/fonts/TildaSans-Black.woff2",
+      "file": "shared/assets/73abed6708c43912.woff2",
+      "sha256": "73abed6708c43912dbd5c2760147f72462887ccd803522a1486209ca1e97031a"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/prodazha_sobstvennikam/assets/modal-request.webp",
+      "file": "shared/assets/cb1ac940c0a5bc83.webp",
+      "sha256": "cb1ac940c0a5bc83fa9285b6fd4060c10d7ca2b177f73b4d9404a1e4c9210d17"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/prodazha_sobstvennikam/assets/floating-expert-bg.webp",
+      "file": "shared/assets/9509f5dd4efa3674.webp",
+      "sha256": "9509f5dd4efa3674e55b1ca7c6689298da37c3ba47588c98f1a9e6f1420aeb88"
+    },
+    {
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/prodazha_sobstvennikam/",
+      "file": "owner-sale/code/html/index.html"
+    }
+  ],
+  "optionalDormantReferences": 31
+}

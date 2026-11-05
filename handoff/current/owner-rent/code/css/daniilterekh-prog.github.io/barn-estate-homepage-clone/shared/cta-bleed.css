@@ -1,0 +1,6 @@
+/* CTA background layers span the section; form layout stays on its existing grid. */
+html body [data-cta-bleed]{position:relative!important;isolation:isolate;overflow:hidden!important}
+html body [data-cta-bleed]>.cta-bleed-backdrop{position:absolute;inset:0;z-index:-1;overflow:hidden;pointer-events:none;background-position:center;background-size:cover}
+html body [data-cta-bleed]>.cta-bleed-backdrop>div{position:absolute;inset:0;pointer-events:none;background-position:center;background-repeat:no-repeat;background-size:cover}
+html body [data-cta-bleed] .cta-bleed-clear{background-image:none!important;background-color:transparent!important}
+html body [data-cta-bleed] .cta-bleed-hide{opacity:0!important}

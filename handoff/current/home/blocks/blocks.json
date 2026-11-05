@@ -1,0 +1,258 @@
+[
+  {
+    "id": "01-site-header",
+    "title": "Хедер",
+    "kind": "site-header",
+    "html": "block.html",
+    "css": "block.css",
+    "js": "block.js",
+    "preview": "index.html",
+    "dependencies": [
+      "../../code/css/page.css",
+      "../../code/css/blocks-runtime.css",
+      "../../code/js/blocks-runtime.js",
+      "../../../shared/js/home-quiz.js",
+      "../../../shared/assets/"
+    ]
+  },
+  {
+    "id": "02-home-hero",
+    "title": "home-hero",
+    "kind": "home-hero",
+    "html": "block.html",
+    "css": "block.css",
+    "js": "block.js",
+    "preview": "index.html",
+    "dependencies": [
+      "../../code/css/page.css",
+      "../../code/css/blocks-runtime.css",
+      "../../code/js/blocks-runtime.js",
+      "../../../shared/js/home-quiz.js",
+      "../../../shared/assets/"
+    ]
+  },
+  {
+    "id": "03-services-section",
+    "title": "Элитная недвижимость",
+    "kind": "services-section",
+    "html": "block.html",
+    "css": "block.css",
+    "js": "block.js",
+    "preview": "index.html",
+    "dependencies": [
+      "../../code/css/page.css",
+      "../../code/css/blocks-runtime.css",
+      "../../code/js/blocks-runtime.js",
+      "../../../shared/js/home-quiz.js",
+      "../../../shared/assets/"
+    ]
+  },
+  {
+    "id": "04-barnes-choice",
+    "title": "По рекомендации BARN Estate",
+    "kind": "barnes-choice",
+    "html": "block.html",
+    "css": "block.css",
+    "js": "block.js",
+    "preview": "index.html",
+    "dependencies": [
+      "../../code/css/page.css",
+      "../../code/css/blocks-runtime.css",
+      "../../code/js/blocks-runtime.js",
+      "../../../shared/js/home-quiz.js",
+      "../../../shared/assets/"
+    ]
+  },
+  {
+    "id": "05-departments-section",
+    "title": "Недвижимость для жизни и инвестиций",
+    "kind": "departments-section",
+    "html": "block.html",
+    "css": "block.css",
+    "js": "block.js",
+    "preview": "index.html",
+    "dependencies": [
+      "../../code/css/page.css",
+      "../../code/css/blocks-runtime.css",
+      "../../code/js/blocks-runtime.js",
+      "../../../shared/js/home-quiz.js",
+      "../../../shared/assets/"
+    ]
+  },
+  {
+    "id": "06-about-company",
+    "title": "Агентство элитной недвижимости BARN Estate",
+    "kind": "about-company",
+    "html": "block.html",
+    "css": "block.css",
+    "js": "block.js",
+    "preview": "index.html",
+    "dependencies": [
+      "../../code/css/page.css",
+      "../../code/css/blocks-runtime.css",
+      "../../code/js/blocks-runtime.js",
+      "../../../shared/js/home-quiz.js",
+      "../../../shared/assets/"
+    ]
+  },
+  {
+    "id": "07-project-hero",
+    "title": "Quartier d'Or",
+    "kind": "project-hero",
+    "html": "block.html",
+    "css": "block.css",
+    "js": "block.js",
+    "preview": "index.html",
+    "dependencies": [
+      "../../code/css/page.css",
+      "../../code/css/blocks-runtime.css",
+      "../../code/js/blocks-runtime.js",
+      "../../../shared/js/home-quiz.js",
+      "../../../shared/assets/"
+    ]
+  },
+  {
+    "id": "08-reviews-section",
+    "title": "Отзывы",
+    "kind": "reviews-section",
+    "html": "block.html",
+    "css": "block.css",
+    "js": "block.js",
+    "preview": "index.html",
+    "dependencies": [
+      "../../code/css/page.css",
+      "../../code/css/blocks-runtime.css",
+      "../../code/js/blocks-runtime.js",
+      "../../../shared/js/home-quiz.js",
+      "../../../shared/assets/"
+    ]
+  },
+  {
+    "id": "09-team-section",
+    "title": "Наша команда",
+    "kind": "team-section",
+    "html": "block.html",
+    "css": "block.css",
+    "js": "block.js",
+    "preview": "index.html",
+    "dependencies": [
+      "../../code/css/page.css",
+      "../../code/css/blocks-runtime.css",
+      "../../code/js/blocks-runtime.js",
+      "../../../shared/js/home-quiz.js",
+      "../../../shared/assets/"
+    ]
+  },
+  {
+    "id": "10-partners-section",
+    "title": "Наши партнёры",
+    "kind": "partners-section",
+    "html": "block.html",
+    "css": "block.css",
+    "js": "block.js",
+    "preview": "index.html",
+    "dependencies": [
+      "../../code/css/page.css",
+      "../../code/css/blocks-runtime.css",
+      "../../code/js/blocks-runtime.js",
+      "../../../shared/js/home-quiz.js",
+      "../../../shared/assets/"
+    ]
+  },
+  {
+    "id": "11-office-contact",
+    "title": "СПОСОБЫ СВЯЗИ BARN ESTATE",
+    "kind": "office-contact",
+    "html": "block.html",
+    "css": "block.css",
+    "js": "block.js",
+    "preview": "index.html",
+    "dependencies": [
+      "../../code/css/page.css",
+      "../../code/css/blocks-runtime.css",
+      "../../code/js/blocks-runtime.js",
+      "../../../shared/js/home-quiz.js",
+      "../../../shared/assets/"
+    ]
+  },
+  {
+    "id": "12-news-section",
+    "title": "Наши новости",
+    "kind": "news-section",
+    "html": "block.html",
+    "css": "block.css",
+    "js": "block.js",
+    "preview": "index.html",
+    "dependencies": [
+      "../../code/css/page.css",
+      "../../code/css/blocks-runtime.css",
+      "../../code/js/blocks-runtime.js",
+      "../../../shared/js/home-quiz.js",
+      "../../../shared/assets/"
+    ]
+  },
+  {
+    "id": "13-newsletter-cta",
+    "title": "В центре событий рынка недвижимости",
+    "kind": "newsletter-cta",
+    "html": "block.html",
+    "css": "block.css",
+    "js": "block.js",
+    "preview": "index.html",
+    "dependencies": [
+      "../../code/css/page.css",
+      "../../code/css/blocks-runtime.css",
+      "../../code/js/blocks-runtime.js",
+      "../../../shared/js/home-quiz.js",
+      "../../../shared/assets/"
+    ]
+  },
+  {
+    "id": "14-site-footer",
+    "title": "Футер",
+    "kind": "site-footer",
+    "html": "block.html",
+    "css": "block.css",
+    "js": "block.js",
+    "preview": "index.html",
+    "dependencies": [
+      "../../code/css/page.css",
+      "../../code/css/blocks-runtime.css",
+      "../../code/js/blocks-runtime.js",
+      "../../../shared/js/home-quiz.js",
+      "../../../shared/assets/"
+    ]
+  },
+  {
+    "id": "15-floating-expert",
+    "title": "Плавающий эксперт",
+    "kind": "floating-expert",
+    "html": "block.html",
+    "css": "block.css",
+    "js": "block.js",
+    "preview": "index.html",
+    "dependencies": [
+      "../../code/css/page.css",
+      "../../code/css/blocks-runtime.css",
+      "../../code/js/blocks-runtime.js",
+      "../../../shared/js/home-quiz.js",
+      "../../../shared/assets/"
+    ]
+  },
+  {
+    "id": "16-handoff-dialog",
+    "title": "Квиз обращения к эксперту",
+    "kind": "handoff-dialog",
+    "html": "block.html",
+    "css": "block.css",
+    "js": "block.js",
+    "preview": "index.html",
+    "dependencies": [
+      "../../code/css/page.css",
+      "../../code/css/blocks-runtime.css",
+      "../../code/js/blocks-runtime.js",
+      "../../../shared/js/home-quiz.js",
+      "../../../shared/assets/"
+    ]
+  }
+]

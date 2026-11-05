@@ -1,0 +1,125 @@
+(function () {
+  "use strict";
+  const root = document.getElementById("barnes-directions");
+  if (!root || root.dataset.initialized) return;
+  const data = window.BarnesDirectionsData;
+  if (!Array.isArray(data) || !data.length) throw new Error("BarnesDirectionsData is missing");
+  root.dataset.initialized = "true";
+  const assetBase = root.dataset.assetBase || "./assets/images/";
+  const photos = data.map(d => assetBase + d.image);
+  function feature(i) {
+    const d = data[i];
+    const negotiated = d.last[0] !== 'Комиссия';
+    const capitalize = text => text.charAt(0).toLocaleUpperCase('ru-RU') + text.slice(1);
+    const stats = d.metrics
+      ? d.metrics.map(m => `<div><div class="bd-label">${capitalize(m[1])}</div><div class="bd-num">${m[0]}</div></div>`).join('')
+      : d.facts.map(f => `<div><div class="bd-label">${capitalize(f[0])}</div><div class="bd-facttext">${f[1]}</div></div>`).join('');
+    return `<div class="bd-feature">
+      <div class="bd-imagewrap"><img class="bd-photo" src="${photos[i]}" alt="${d.imageAlt || d.name}" decoding="async"></div>
+      <div class="bd-copy">
+        <div class="bd-heading"><h3>${d.title}</h3><p class="bd-intro">${d.intro}</p></div>
+        <div class="bd-budget"><div class="bd-price-label">${d.label}</div><div class="bd-price ${d.words ? 'bd-words' : ''}">${d.price}</div></div>
+        <div class="${d.metrics ? 'bd-metrics' : 'bd-textfacts'}">${stats}</div>
+        <div class="bd-commission ${negotiated ? 'bd-commission-negotiated' : 'bd-commission-primary'}"><span class="bd-label">Комиссия BARN Estate</span><strong>${negotiated ? 'Условия оговариваются' : d.last[1]}</strong>${negotiated ? `<span class="bd-commission-note">${d.last[0]}: ${d.last[1]}</span>` : ''}</div>
+        <button type="button" class="bd-cta" data-request="${i}">Рекомендовать клиента <svg class="ap-arrow" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 13 13 3M5 3h8v8" stroke="currentColor" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      </div>
+    </div>`;
+  }
+
+  const content = root.querySelector('.bd-content');
+  let activeIndex = 0;
+  content.innerHTML = `
+    <nav class="bd-horizontal" role="tablist" aria-label="Направления BARN Estate">
+      ${data.map((d, i) => `<button type="button" class="bd-navbtn" role="tab" id="direction-tab-${d.id}" aria-controls="direction-panel" aria-selected="${i === 0}" tabindex="${i === 0 ? 0 : -1}" data-pick="${i}">${d.name}</button>`).join('')}
+    </nav>
+    <label class="bd-picker-label" for="barnes-direction-picker">Выберите направление</label>
+    <select id="barnes-direction-picker" class="bd-mobile-picker" aria-label="Выберите направление">
+      ${data.map((d, i) => `<option value="${i}">${d.name}</option>`).join('')}
+    </select>
+    <div id="direction-panel" class="bd-fixed-panel" role="tabpanel" aria-labelledby="direction-tab-city" aria-live="polite"></div>`;
+  const panel = content.querySelector('.bd-fixed-panel');
+  const picker = content.querySelector('.bd-mobile-picker');
+  const buttons = Array.from(content.querySelectorAll('[data-pick]'));
+
+  function alignDesktopRows() {
+    const properties = ['--bd-heading-height', '--bd-budget-height', '--bd-facts-height', '--bd-commission-height'];
+    if (!window.matchMedia('(min-width: 901px)').matches) {
+      properties.forEach(name => root.style.removeProperty(name));
+      return;
+    }
+    const copy = panel.querySelector('.bd-copy');
+    if (!copy) return;
+    const measure = document.createElement('div');
+    measure.className = 'bd-copy';
+    measure.setAttribute('aria-hidden', 'true');
+    measure.inert = true;
+    Object.assign(measure.style, {
+      position: 'fixed', visibility: 'hidden', pointerEvents: 'none',
+      left: '0', top: '0', width: copy.getBoundingClientRect().width + 'px',
+      gridTemplateRows: 'auto auto auto 70px'
+    });
+    root.appendChild(measure);
+    const heights = [64, 88, 176, 128];
+    data.forEach((direction, index) => {
+      const template = document.createElement('template');
+      template.innerHTML = feature(index);
+      measure.replaceChildren(...template.content.querySelector('.bd-copy').children);
+      heights.forEach((height, row) => {
+        heights[row] = Math.max(height, Math.ceil(measure.children[row].getBoundingClientRect().height));
+      });
+    });
+    measure.remove();
+    properties.forEach((name, index) => root.style.setProperty(name, heights[index] + 'px'));
+  }
+
+  let sizingFrame;
+  window.addEventListener('resize', () => {
+    cancelAnimationFrame(sizingFrame);
+    sizingFrame = requestAnimationFrame(alignDesktopRows);
+  });
+  if (document.fonts) document.fonts.ready.then(alignDesktopRows);
+
+  function render(index) {
+    if (!Number.isInteger(index) || !data[index]) return;
+    activeIndex = index;
+    buttons.forEach((button, i) => {
+      button.setAttribute('aria-selected', String(i === index));
+      button.tabIndex = i === index ? 0 : -1;
+    });
+    picker.value = String(index);
+    panel.setAttribute('aria-labelledby', buttons[index].id);
+    panel.innerHTML = feature(index);
+    const img = panel.querySelector('img');
+    img.alt = data[index].imageAlt || 'Интерьер с видом на Москву';
+  }
+
+  root.addEventListener('click', event => {
+    const tab = event.target.closest('[data-pick]');
+    if (tab && root.contains(tab)) render(Number(tab.dataset.pick));
+    const request = event.target.closest('[data-request]');
+    if (request && root.contains(request)) {
+      const selected = data[activeIndex];
+      // Connect this event to the existing application form. No network request here.
+      root.dispatchEvent(new CustomEvent('barnes:request', {
+        bubbles: true,
+        detail: { directionId: selected.id, directionName: selected.name }
+      }));
+    }
+  });
+  picker.addEventListener('change', () => render(Number(picker.value)));
+  content.querySelector('[role="tablist"]').addEventListener('keydown', event => {
+    const tab = event.target.closest('[data-pick]');
+    if (!tab) return;
+    const current = Number(tab.dataset.pick);
+    const target = event.key === 'ArrowRight' ? (current + 1) % data.length
+      : event.key === 'ArrowLeft' ? (current + data.length - 1) % data.length
+      : event.key === 'Home' ? 0
+      : event.key === 'End' ? data.length - 1 : null;
+    if (target === null) return;
+    event.preventDefault();
+    render(target);
+    buttons[target].focus();
+  });
+  render(0);
+  alignDesktopRows();
+})();

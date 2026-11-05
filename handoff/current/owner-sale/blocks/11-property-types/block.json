@@ -1,0 +1,16 @@
+{
+  "id": "11-property-types",
+  "title": "ПОМОЖЕМ ПРОДАТЬ ВАШУ НЕДВИЖИМОСТЬ",
+  "kind": "owner-sale-types",
+  "html": "block.html",
+  "css": "block.css",
+  "js": "block.js",
+  "preview": "index.html",
+  "dependencies": [
+    "../../code/css/page.css",
+    "../../code/css/blocks-runtime.css",
+    "../../code/js/blocks-runtime.js",
+    "../../../shared/js/expert-dialog.js",
+    "../../../shared/assets/"
+  ]
+}
