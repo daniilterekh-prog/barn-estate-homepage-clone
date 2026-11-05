@@ -4,7 +4,7 @@
 
 Пользователь утвердил текущую главную и этот UI-кит как наш референс. Это базис для главной и общих UI-компонентов BARN Estate. В следующих задачах сохранять его и менять только запрошенные параметры; старые варианты из `_archive` не заменяют утверждённую версию. Специальные ранее утверждённые правила отдельных страниц учитываются отдельно.
 
-[Зафиксированный комплект v1.0.0](https://github.com/daniilterekh-prog/barnes-sites/tree/barn-estate-home-reference-v1.0.0/main-site/pages/home/exact-2026-10-21) · [Параметры и контрольные суммы](https://github.com/daniilterekh-prog/barnes-sites/blob/main/main-site/pages/home/exact-2026-10-21/source/reference.json) · [Как перенести](INSTALL.md)
+[Зафиксированный комплект v1.0.0](https://github.com/daniilterekh-prog/barnes-sites/tree/barn-estate-home-reference-v1.0.0/main-site/pages/home/exact-2026-10-21) · [Параметры и контрольные суммы](source/reference.json) · [Как перенести](INSTALL.md)
 
 Git-метка v1.0.0 сохраняется неизменной. При дальнейших согласованных изменениях обновлять UI-кит и параметры, выпуская следующую версию.
 
@@ -44,6 +44,22 @@ Git-метка v1.0.0 сохраняется неизменной. При дал
 Описания обоих проектов месяца используют 15/21 px или 22/33 px, вес 300, но **цвет белый #fff**, поскольку находятся над фотографией.
 
 Это роли секций. Название ЖК в проекте месяца, названия внутри карточек и элементы каталога имеют отдельный масштаб. Например, заголовок проекта месяца на проверенных 390/1440/2560 px:48/84/104 px, вес 300, line-height 1.0, белый. Это не стандартный H2 секции.
+
+## Горизонтальная сетка · сверка 05.11.2026
+
+Единый контракт текущих 13 страниц: [layout-gutters.css](https://github.com/daniilterekh-prog/barnes-sites/blob/main/main-site/shared/shared/layout-gutters.css). Источник значений — утверждённый home-spacing.css, а не новая шкала.
+
+| Ширина окна | Внутреннее поле контейнера с каждой стороны |
+|---|---|
+| До 540 px включительно |22 px|
+| 541–1920 px |clamp(24px, calc(-26.66667px + 6.59722vw), 100px)|
+| От 1921 px |0 px внутри центрированного контейнера шириной не более1920px|
+
+Примеры:768px →24px,1024px →40.89px,1440px →68.33px,1920px →100px. На широком экране добавляются автоматические внешние поля; они считаются от доступной ширины страницы без полосы прокрутки. В футере применяется один отступ контейнера; второй внешний отступ секции не добавляется. Хедеры, обычные секции, контент hero и текст над фото проекта используют эту же сетку.
+
+У полноширинных CTA фон/медиа не имеют боковых белых полей, а контент консультации ограничен общей сеткой. Внутренние размеры и расположение полей/контактных колонок не заменяются полями всей страницы. У спаренных office-contact/newsletter на главной и рассылки лота сохраняется утверждённая композиция рамки из home-spacing.css (собственный calc(100% - 2 * clamp(20px,5.2vw,100px)), max-width1920px от1025px). Центрированные быстрые ссылки hero сохраняют собственную ширину. FAQ Курортной сохраняет ранее явно согласованные контейнер и поля.
+
+Общий слой подключается центральным экспортом к каждому текущему входу; архивный снимок главной и самостоятельные пакеты блоков не переписываются.
 
 ## Вертикальные отступы
 
@@ -106,7 +122,7 @@ Tilda Sans Light **300**, цвет **#fff**, uppercase, межбуквенный
 
 ## Файлы стилей
 
-Текущие контракты: [типографика](https://github.com/daniilterekh-prog/barnes-sites/blob/main/main-site/pages/home/exact-2026-10-21/source/home-typography.css), [отступы](https://github.com/daniilterekh-prog/barnes-sites/blob/main/main-site/pages/home/exact-2026-10-21/source/home-spacing.css), [о компании](https://github.com/daniilterekh-prog/barnes-sites/blob/main/main-site/pages/home/exact-2026-10-21/source/home-about.css), [кнопки](https://github.com/daniilterekh-prog/barnes-sites/blob/main/main-site/pages/home/exact-2026-10-21/source/home-buttons.css), [контакты хедера](https://github.com/daniilterekh-prog/barnes-sites/blob/main/main-site/pages/home/exact-2026-10-21/source/home-header-contacts.css). `home-buttons.css` подключается последним.
+Текущие контракты: [типографика](source/home-typography.css), [отступы](source/home-spacing.css), [о компании](source/home-about.css), [кнопки](source/home-buttons.css), [контакты хедера](source/home-header-contacts.css). `home-buttons.css` подключается последним.
 
 ## Заголовки внутри карточек услуг
 
