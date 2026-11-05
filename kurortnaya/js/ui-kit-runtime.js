@@ -589,7 +589,7 @@
 
   if (!document.querySelector('script[data-kurortnaya-start-sales]')) {
     var startSalesScript = document.createElement('script');
-    startSalesScript.src = 'js/start-sales-cards.js?v=20261103-controls-row-22';
+    startSalesScript.src = 'js/start-sales-cards.js?v=node-recommendations-20261105';
     startSalesScript.dataset.kurortnayaStartSales = 'true';
     document.body.appendChild(startSalesScript);
   }

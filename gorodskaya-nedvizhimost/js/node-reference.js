@@ -96,7 +96,7 @@
     render();
     all('.catalog-best-offers .apartment-card__name').forEach(name=>{name.textContent=name.textContent.replace(/^Старт\s+Продаж[.\s]*/i,'')});
     all('.catalog-best-offers .apartment-card').forEach(card=>{if(!q('.apartment-card__delivery',card)){const badge=document.createElement('span');badge.className='apartment-card__delivery';badge.textContent='Старт продаж';q('.apartment-card__media',card)?.append(badge)}});
-    const script=document.createElement('script');script.src=new URL('js/node-launch.js',document.baseURI);document.body.append(script);
+    const script=document.createElement('script');script.src=new URL('js/node-launch.js?v=node-recommendations-20261105',document.baseURI);document.body.append(script);
     setupHeader();
     setupSticky();
     setupFullFilters();

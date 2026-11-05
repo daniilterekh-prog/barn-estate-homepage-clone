@@ -404,7 +404,7 @@
   }
   bindForms(document);
   const selectionScript = document.createElement('script');
-  selectionScript.src = 'js/selection-carousel.js';
+  selectionScript.src = 'js/selection-carousel.js?v=node-recommendations-20261105';
   document.body.append(selectionScript);
   const nodeSync=document.createElement('script');nodeSync.src='js/reference-sync.js';document.body.append(nodeSync);
 
