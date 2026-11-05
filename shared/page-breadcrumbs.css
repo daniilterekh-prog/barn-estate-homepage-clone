@@ -1,0 +1,20 @@
+/* Shared page navigation; deliberately outside the header and normal flow. */
+html body .page-breadcrumbs {
+  position:absolute;z-index:20;box-sizing:border-box;right:auto;margin:0;
+  padding:0 var(--barn-page-gutter,22px);border:0;background:transparent;
+  color:rgba(255,255,255,.75);font:300 17px/18px 'Tilda Sans',sans-serif;
+  letter-spacing:normal;text-transform:none;text-align:left;
+}
+html body .page-breadcrumbs[data-tone=light] {color:#656462;}
+html body .page-breadcrumbs ol {display:flex;align-items:center;gap:8px;min-width:0;margin:0;padding:0;list-style:none;}
+html body .page-breadcrumbs li {display:flex;align-items:center;gap:8px;min-width:0;margin:0;padding:0;}
+html body .page-breadcrumbs li:last-child {flex:1;}
+html body .page-breadcrumbs :is(a,[aria-current]) {display:block;min-width:0;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:inherit;font:inherit;text-transform:none;letter-spacing:normal;}
+html body .page-breadcrumbs a {text-decoration:none;}
+html body .page-breadcrumbs a:hover {text-decoration:underline;text-underline-offset:3px;}
+html body .page-breadcrumbs a:focus-visible {outline:2px solid currentColor;outline-offset:3px;}
+html body .page-breadcrumbs__separator {opacity:.6;flex-shrink:0;}
+/* Keep the original footprint so neither hero content nor the header moves. */
+html body [data-barn-crumb-source],html body [data-barn-crumb-source] * {visibility:hidden!important;pointer-events:none!important;}
+@media(min-width:541px) and (max-width:1024px) {html body .page-breadcrumbs {display:none!important;}}
+@media(max-width:540px) {html body .page-breadcrumbs {font-size:12px;line-height:16px;}}
