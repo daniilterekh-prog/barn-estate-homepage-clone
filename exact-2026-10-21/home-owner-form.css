@@ -250,3 +250,6 @@ body.barnes-home-typography[data-home-footer-action-visible=true] .floating-expe
 /* Component boundaries: page-wide input/button rules must not change dialog geometry. */
 .barnes-template.owner-sale-reference-ui.home-owner-host .home-owner-form__input{border-radius:1px!important}
 .barnes-template.owner-sale-reference-ui.home-owner-host :is(.modal__content,.home-owner-form__submit,.home-owner-form__channels button,.home-quiz__option,.home-quiz__next){border-radius:1px!important}
+
+.barnes-template.owner-sale-reference-ui.home-owner-host .home-owner-form__title{text-transform:none!important}
+.barnes-template.owner-sale-reference-ui.home-owner-host .modal__close{border-radius:50%!important}

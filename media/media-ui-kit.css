@@ -79,12 +79,12 @@ body.barnes-media-kit .media-market__featured :is(.media-market__featured-name,.
 body.barnes-media-kit .media-market__featured .media-market__featured-badge {color:rgba(255,255,255,.8)!important;}
 
 /* Page-specific user override. Layered !important rules also cap shared-kit
- * controls, teleported dialogs and generated pseudo-elements at every width. */
+ * controls and pseudo-elements; the shared dialog owns its own geometry. */
 @layer media-radius-limit {
   body.barnes-media-kit,
-  body.barnes-media-kit *,
-  body.barnes-media-kit *::before,
-  body.barnes-media-kit *::after {border-radius:1px!important;}
+  body.barnes-media-kit *:not(.home-owner-host,.home-owner-host *),
+  body.barnes-media-kit *:not(.home-owner-host,.home-owner-host *)::before,
+  body.barnes-media-kit *:not(.home-owner-host,.home-owner-host *)::after {border-radius:1px!important;}
   /* The expert portrait is a circular avatar, not a rectangular UI surface. */
   body.barnes-media-kit .floating-expert__avatar {border-radius:50%!important;overflow:hidden;}
   /* Carousel navigation keeps the circular geometry of the homepage kit. */
