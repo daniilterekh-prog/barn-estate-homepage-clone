@@ -3,240 +3,240 @@
     "id": "01-site-header",
     "title": "Хедер",
     "kind": "site-header",
-    "html": "block.html",
-    "css": "block.css",
-    "js": "block.js",
+    "html": "../../html/01-site-header.html",
+    "css": "../../css/01-site-header.css",
+    "js": "../../js/01-site-header.js",
     "preview": "index.html",
     "dependencies": [
-      "../../code/css/page.css",
-      "../../code/css/blocks-runtime.css",
-      "../../code/js/blocks-runtime.js",
+      "../../css/page.css",
+      "../../css/blocks-runtime.css",
+      "../../js/blocks-runtime.js",
       "../../../shared/js/expert-dialog.js",
-      "../../../shared/assets/"
+      "../../assets/"
     ]
   },
   {
     "id": "02-owner-sale-sticky",
     "title": "Закреплённый хедер",
     "kind": "owner-sale-sticky",
-    "html": "block.html",
-    "css": "block.css",
-    "js": "block.js",
+    "html": "../../html/02-owner-sale-sticky.html",
+    "css": "../../css/02-owner-sale-sticky.css",
+    "js": "../../js/02-owner-sale-sticky.js",
     "preview": "index.html",
     "dependencies": [
-      "../../code/css/page.css",
-      "../../code/css/blocks-runtime.css",
-      "../../code/js/blocks-runtime.js",
+      "../../css/page.css",
+      "../../css/blocks-runtime.css",
+      "../../js/blocks-runtime.js",
       "../../../shared/js/expert-dialog.js",
-      "../../../shared/assets/"
+      "../../assets/"
     ]
   },
   {
     "id": "03-owner-sale-hero",
     "title": "Продать недвижимость с BARN Estate",
     "kind": "owner-sale-hero",
-    "html": "block.html",
-    "css": "block.css",
-    "js": "block.js",
+    "html": "../../html/03-owner-sale-hero.html",
+    "css": "../../css/03-owner-sale-hero.css",
+    "js": "../../js/03-owner-sale-hero.js",
     "preview": "index.html",
     "dependencies": [
-      "../../code/css/page.css",
-      "../../code/css/blocks-runtime.css",
-      "../../code/js/blocks-runtime.js",
+      "../../css/page.css",
+      "../../css/blocks-runtime.css",
+      "../../js/blocks-runtime.js",
       "../../../shared/js/expert-dialog.js",
-      "../../../shared/assets/"
+      "../../assets/"
     ]
   },
   {
     "id": "04-presentation",
     "title": "Искусство правильного представления",
     "kind": "owner-sale-presentation",
-    "html": "block.html",
-    "css": "block.css",
-    "js": "block.js",
+    "html": "../../html/04-presentation.html",
+    "css": "../../css/04-presentation.css",
+    "js": "../../js/04-presentation.js",
     "preview": "index.html",
     "dependencies": [
-      "../../code/css/page.css",
-      "../../code/css/blocks-runtime.css",
-      "../../code/js/blocks-runtime.js",
+      "../../css/page.css",
+      "../../css/blocks-runtime.css",
+      "../../js/blocks-runtime.js",
       "../../../shared/js/expert-dialog.js",
-      "../../../shared/assets/"
+      "../../assets/"
     ]
   },
   {
     "id": "05-services",
     "title": "ИНСТРУМЕНТЫ ПРОДАЖИ И ПРОДВИЖЕНИЯ В BARN Estate",
     "kind": "owner-sale-services",
-    "html": "block.html",
-    "css": "block.css",
-    "js": "block.js",
+    "html": "../../html/05-services.html",
+    "css": "../../css/05-services.css",
+    "js": "../../js/05-services.js",
     "preview": "index.html",
     "dependencies": [
-      "../../code/css/page.css",
-      "../../code/css/blocks-runtime.css",
-      "../../code/js/blocks-runtime.js",
+      "../../css/page.css",
+      "../../css/blocks-runtime.css",
+      "../../js/blocks-runtime.js",
       "../../../shared/js/expert-dialog.js",
-      "../../../shared/assets/"
+      "../../assets/"
     ]
   },
   {
     "id": "06-team",
     "title": "Агентство элитной недвижимости BARN Estate",
     "kind": "about-company",
-    "html": "block.html",
-    "css": "block.css",
-    "js": "block.js",
+    "html": "../../html/06-team.html",
+    "css": "../../css/06-team.css",
+    "js": "../../js/06-team.js",
     "preview": "index.html",
     "dependencies": [
-      "../../code/css/page.css",
-      "../../code/css/blocks-runtime.css",
-      "../../code/js/blocks-runtime.js",
+      "../../css/page.css",
+      "../../css/blocks-runtime.css",
+      "../../js/blocks-runtime.js",
       "../../../shared/js/expert-dialog.js",
-      "../../../shared/assets/"
+      "../../assets/"
     ]
   },
   {
     "id": "07-stages",
     "title": "Этапы продажи",
     "kind": "owner-sale-stages",
-    "html": "block.html",
-    "css": "block.css",
-    "js": "block.js",
+    "html": "../../html/07-stages.html",
+    "css": "../../css/07-stages.css",
+    "js": "../../js/07-stages.js",
     "preview": "index.html",
     "dependencies": [
-      "../../code/css/page.css",
-      "../../code/css/blocks-runtime.css",
-      "../../code/js/blocks-runtime.js",
+      "../../css/page.css",
+      "../../css/blocks-runtime.css",
+      "../../js/blocks-runtime.js",
       "../../../shared/js/expert-dialog.js",
-      "../../../shared/assets/"
+      "../../assets/"
     ]
   },
   {
     "id": "08-why-barnes",
     "title": "ПОЧЕМУ СОБСТВЕННИКИ ВЫБИРАЮТ BARN Estate",
     "kind": "",
-    "html": "block.html",
-    "css": "block.css",
-    "js": "block.js",
+    "html": "../../html/08-why-barnes.html",
+    "css": "../../css/08-why-barnes.css",
+    "js": "../../js/08-why-barnes.js",
     "preview": "index.html",
     "dependencies": [
-      "../../code/css/page.css",
-      "../../code/css/blocks-runtime.css",
-      "../../code/js/blocks-runtime.js",
+      "../../css/page.css",
+      "../../css/blocks-runtime.css",
+      "../../js/blocks-runtime.js",
       "../../../shared/js/expert-dialog.js",
-      "../../../shared/assets/"
+      "../../assets/"
     ]
   },
   {
     "id": "09-owner-sale-strategy",
     "title": "ДЛЯ КАЖДОГО ОБЪЕКТА — СВОЙ СЦЕНАРИЙ ПРОДАЖИ",
     "kind": "owner-sale-strategy",
-    "html": "block.html",
-    "css": "block.css",
-    "js": "block.js",
+    "html": "../../html/09-owner-sale-strategy.html",
+    "css": "../../css/09-owner-sale-strategy.css",
+    "js": "../../js/09-owner-sale-strategy.js",
     "preview": "index.html",
     "dependencies": [
-      "../../code/css/page.css",
-      "../../code/css/blocks-runtime.css",
-      "../../code/js/blocks-runtime.js",
+      "../../css/page.css",
+      "../../css/blocks-runtime.css",
+      "../../js/blocks-runtime.js",
       "../../../shared/js/expert-dialog.js",
-      "../../../shared/assets/"
+      "../../assets/"
     ]
   },
   {
     "id": "10-request",
     "title": "Расскажите об объекте эксперту BARN Estate",
     "kind": "catalog-consultation",
-    "html": "block.html",
-    "css": "block.css",
-    "js": "block.js",
+    "html": "../../html/10-request.html",
+    "css": "../../css/10-request.css",
+    "js": "../../js/10-request.js",
     "preview": "index.html",
     "dependencies": [
-      "../../code/css/page.css",
-      "../../code/css/blocks-runtime.css",
-      "../../code/js/blocks-runtime.js",
+      "../../css/page.css",
+      "../../css/blocks-runtime.css",
+      "../../js/blocks-runtime.js",
       "../../../shared/js/expert-dialog.js",
-      "../../../shared/assets/"
+      "../../assets/"
     ]
   },
   {
     "id": "11-property-types",
     "title": "ПОМОЖЕМ ПРОДАТЬ ВАШУ НЕДВИЖИМОСТЬ",
     "kind": "owner-sale-types",
-    "html": "block.html",
-    "css": "block.css",
-    "js": "block.js",
+    "html": "../../html/11-property-types.html",
+    "css": "../../css/11-property-types.css",
+    "js": "../../js/11-property-types.js",
     "preview": "index.html",
     "dependencies": [
-      "../../code/css/page.css",
-      "../../code/css/blocks-runtime.css",
-      "../../code/js/blocks-runtime.js",
+      "../../css/page.css",
+      "../../css/blocks-runtime.css",
+      "../../js/blocks-runtime.js",
       "../../../shared/js/expert-dialog.js",
-      "../../../shared/assets/"
+      "../../assets/"
     ]
   },
   {
     "id": "12-newsletter-cta",
     "title": "В центре событий рынка недвижимости",
     "kind": "newsletter-cta",
-    "html": "block.html",
-    "css": "block.css",
-    "js": "block.js",
+    "html": "../../html/12-newsletter-cta.html",
+    "css": "../../css/12-newsletter-cta.css",
+    "js": "../../js/12-newsletter-cta.js",
     "preview": "index.html",
     "dependencies": [
-      "../../code/css/page.css",
-      "../../code/css/blocks-runtime.css",
-      "../../code/js/blocks-runtime.js",
+      "../../css/page.css",
+      "../../css/blocks-runtime.css",
+      "../../js/blocks-runtime.js",
       "../../../shared/js/expert-dialog.js",
-      "../../../shared/assets/"
+      "../../assets/"
     ]
   },
   {
     "id": "13-site-footer",
     "title": "Футер",
     "kind": "site-footer",
-    "html": "block.html",
-    "css": "block.css",
-    "js": "block.js",
+    "html": "../../html/13-site-footer.html",
+    "css": "../../css/13-site-footer.css",
+    "js": "../../js/13-site-footer.js",
     "preview": "index.html",
     "dependencies": [
-      "../../code/css/page.css",
-      "../../code/css/blocks-runtime.css",
-      "../../code/js/blocks-runtime.js",
+      "../../css/page.css",
+      "../../css/blocks-runtime.css",
+      "../../js/blocks-runtime.js",
       "../../../shared/js/expert-dialog.js",
-      "../../../shared/assets/"
+      "../../assets/"
     ]
   },
   {
     "id": "14-floating-expert",
     "title": "Плавающий эксперт",
     "kind": "floating-expert",
-    "html": "block.html",
-    "css": "block.css",
-    "js": "block.js",
+    "html": "../../html/14-floating-expert.html",
+    "css": "../../css/14-floating-expert.css",
+    "js": "../../js/14-floating-expert.js",
     "preview": "index.html",
     "dependencies": [
-      "../../code/css/page.css",
-      "../../code/css/blocks-runtime.css",
-      "../../code/js/blocks-runtime.js",
+      "../../css/page.css",
+      "../../css/blocks-runtime.css",
+      "../../js/blocks-runtime.js",
       "../../../shared/js/expert-dialog.js",
-      "../../../shared/assets/"
+      "../../assets/"
     ]
   },
   {
     "id": "15-handoff-dialog",
     "title": "Форма обращения к эксперту",
     "kind": "handoff-dialog",
-    "html": "block.html",
-    "css": "block.css",
-    "js": "block.js",
+    "html": "../../html/15-handoff-dialog.html",
+    "css": "../../css/15-handoff-dialog.css",
+    "js": "../../js/15-handoff-dialog.js",
     "preview": "index.html",
     "dependencies": [
-      "../../code/css/page.css",
-      "../../code/css/blocks-runtime.css",
-      "../../code/js/blocks-runtime.js",
+      "../../css/page.css",
+      "../../css/blocks-runtime.css",
+      "../../js/blocks-runtime.js",
       "../../../shared/js/expert-dialog.js",
-      "../../../shared/assets/"
+      "../../assets/"
     ]
   }
 ]

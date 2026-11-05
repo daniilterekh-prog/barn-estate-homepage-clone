@@ -2,15 +2,15 @@
   "id": "12-site-footer",
   "title": "Футер",
   "kind": "site-footer",
-  "html": "block.html",
-  "css": "block.css",
-  "js": "block.js",
+  "html": "../../html/12-site-footer.html",
+  "css": "../../css/12-site-footer.css",
+  "js": "../../js/12-site-footer.js",
   "preview": "index.html",
   "dependencies": [
-    "../../code/css/page.css",
-    "../../code/css/blocks-runtime.css",
-    "../../code/js/blocks-runtime.js",
+    "../../css/page.css",
+    "../../css/blocks-runtime.css",
+    "../../js/blocks-runtime.js",
     "../../../shared/js/home-quiz.js",
-    "../../../shared/assets/"
+    "../../assets/"
   ]
 }

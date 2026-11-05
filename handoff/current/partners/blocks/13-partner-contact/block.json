@@ -2,15 +2,15 @@
   "id": "13-partner-contact",
   "title": "Начните с вашей рекомендации",
   "kind": "catalog-contact",
-  "html": "block.html",
-  "css": "block.css",
-  "js": "block.js",
+  "html": "../../html/13-partner-contact.html",
+  "css": "../../css/13-partner-contact.css",
+  "js": "../../js/13-partner-contact.js",
   "preview": "index.html",
   "dependencies": [
-    "../../code/css/page.css",
-    "../../code/css/blocks-runtime.css",
-    "../../code/js/blocks-runtime.js",
+    "../../css/page.css",
+    "../../css/blocks-runtime.css",
+    "../../js/blocks-runtime.js",
     "../../../shared/js/expert-dialog.js",
-    "../../../shared/assets/"
+    "../../assets/"
   ]
 }

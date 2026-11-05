@@ -2,15 +2,15 @@
   "id": "06-media-fresh",
   "title": "Свежие материалы",
   "kind": "media-fresh",
-  "html": "block.html",
-  "css": "block.css",
-  "js": "block.js",
+  "html": "../../html/06-media-fresh.html",
+  "css": "../../css/06-media-fresh.css",
+  "js": "../../js/06-media-fresh.js",
   "preview": "index.html",
   "dependencies": [
-    "../../code/css/page.css",
-    "../../code/css/blocks-runtime.css",
-    "../../code/js/blocks-runtime.js",
+    "../../css/page.css",
+    "../../css/blocks-runtime.css",
+    "../../js/blocks-runtime.js",
     "../../../shared/js/home-quiz.js",
-    "../../../shared/assets/"
+    "../../assets/"
   ]
 }

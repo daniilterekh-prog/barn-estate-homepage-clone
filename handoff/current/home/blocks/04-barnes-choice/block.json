@@ -2,15 +2,15 @@
   "id": "04-barnes-choice",
   "title": "По рекомендации BARN Estate",
   "kind": "barnes-choice",
-  "html": "block.html",
-  "css": "block.css",
-  "js": "block.js",
+  "html": "../../html/04-barnes-choice.html",
+  "css": "../../css/04-barnes-choice.css",
+  "js": "../../js/04-barnes-choice.js",
   "preview": "index.html",
   "dependencies": [
-    "../../code/css/page.css",
-    "../../code/css/blocks-runtime.css",
-    "../../code/js/blocks-runtime.js",
+    "../../css/page.css",
+    "../../css/blocks-runtime.css",
+    "../../js/blocks-runtime.js",
     "../../../shared/js/home-quiz.js",
-    "../../../shared/assets/"
+    "../../assets/"
   ]
 }

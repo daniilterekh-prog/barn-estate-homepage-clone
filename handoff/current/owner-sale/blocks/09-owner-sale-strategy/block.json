@@ -2,15 +2,15 @@
   "id": "09-owner-sale-strategy",
   "title": "ДЛЯ КАЖДОГО ОБЪЕКТА — СВОЙ СЦЕНАРИЙ ПРОДАЖИ",
   "kind": "owner-sale-strategy",
-  "html": "block.html",
-  "css": "block.css",
-  "js": "block.js",
+  "html": "../../html/09-owner-sale-strategy.html",
+  "css": "../../css/09-owner-sale-strategy.css",
+  "js": "../../js/09-owner-sale-strategy.js",
   "preview": "index.html",
   "dependencies": [
-    "../../code/css/page.css",
-    "../../code/css/blocks-runtime.css",
-    "../../code/js/blocks-runtime.js",
+    "../../css/page.css",
+    "../../css/blocks-runtime.css",
+    "../../js/blocks-runtime.js",
     "../../../shared/js/expert-dialog.js",
-    "../../../shared/assets/"
+    "../../assets/"
   ]
 }

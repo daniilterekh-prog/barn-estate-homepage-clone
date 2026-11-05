@@ -4,7 +4,7 @@
 
 # Актуальная главная BARN Estate — 01.11.2026
 
-[Опубликованная главная](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/) · [16 отдельных блоков](blocks/README.md) · [Каталог превью](blocks/index.html) · [Страница из блоков](../handoff/current/home/code/html/).
+[Опубликованная главная](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/) · [16 отдельных блоков](blocks/README.md) · [Каталог превью](blocks/index.html) · [Страница из блоков](../handoff/current/home/html/).
 
 [Открыть живой каталог блоков](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/blocks/) · [Скачать все блоки ZIP](../handoff/current/home/../barn-estate-five-pages-2026-11-05.zip).
 

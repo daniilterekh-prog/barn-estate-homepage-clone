@@ -3,288 +3,288 @@
     "id": "01-site-header",
     "title": "Хедер",
     "kind": "site-header",
-    "html": "block.html",
-    "css": "block.css",
-    "js": "block.js",
+    "html": "../../html/01-site-header.html",
+    "css": "../../css/01-site-header.css",
+    "js": "../../js/01-site-header.js",
     "preview": "index.html",
     "dependencies": [
-      "../../code/css/page.css",
-      "../../code/css/blocks-runtime.css",
-      "../../code/js/blocks-runtime.js",
+      "../../css/page.css",
+      "../../css/blocks-runtime.css",
+      "../../js/blocks-runtime.js",
       "../../../shared/js/expert-dialog.js",
-      "../../../shared/assets/"
+      "../../assets/"
     ]
   },
   {
     "id": "02-owner-sale-sticky",
     "title": "Закреплённый хедер",
     "kind": "owner-sale-sticky",
-    "html": "block.html",
-    "css": "block.css",
-    "js": "block.js",
+    "html": "../../html/02-owner-sale-sticky.html",
+    "css": "../../css/02-owner-sale-sticky.css",
+    "js": "../../js/02-owner-sale-sticky.js",
     "preview": "index.html",
     "dependencies": [
-      "../../code/css/page.css",
-      "../../code/css/blocks-runtime.css",
-      "../../code/js/blocks-runtime.js",
+      "../../css/page.css",
+      "../../css/blocks-runtime.css",
+      "../../js/blocks-runtime.js",
       "../../../shared/js/expert-dialog.js",
-      "../../../shared/assets/"
+      "../../assets/"
     ]
   },
   {
     "id": "03-ambassadors-hero",
     "title": "Рекомендуйте клиентов BARN Estate",
     "kind": "ambassadors-hero",
-    "html": "block.html",
-    "css": "block.css",
-    "js": "block.js",
+    "html": "../../html/03-ambassadors-hero.html",
+    "css": "../../css/03-ambassadors-hero.css",
+    "js": "../../js/03-ambassadors-hero.js",
     "preview": "index.html",
     "dependencies": [
-      "../../code/css/page.css",
-      "../../code/css/blocks-runtime.css",
-      "../../code/js/blocks-runtime.js",
+      "../../css/page.css",
+      "../../css/blocks-runtime.css",
+      "../../js/blocks-runtime.js",
       "../../../shared/js/expert-dialog.js",
-      "../../../shared/assets/"
+      "../../assets/"
     ]
   },
   {
     "id": "04-conditions",
     "title": "УСЛОВИЯ СОТРУДНИЧЕСТВА",
     "kind": "ambassadors-conditions",
-    "html": "block.html",
-    "css": "block.css",
-    "js": "block.js",
+    "html": "../../html/04-conditions.html",
+    "css": "../../css/04-conditions.css",
+    "js": "../../js/04-conditions.js",
     "preview": "index.html",
     "dependencies": [
-      "../../code/css/page.css",
-      "../../code/css/blocks-runtime.css",
-      "../../code/js/blocks-runtime.js",
+      "../../css/page.css",
+      "../../css/blocks-runtime.css",
+      "../../js/blocks-runtime.js",
       "../../../shared/js/expert-dialog.js",
-      "../../../shared/assets/"
+      "../../assets/"
     ]
   },
   {
     "id": "05-how-it-works",
     "title": "Как это работает",
     "kind": "ap-section",
-    "html": "block.html",
-    "css": "block.css",
-    "js": "block.js",
+    "html": "../../html/05-how-it-works.html",
+    "css": "../../css/05-how-it-works.css",
+    "js": "../../js/05-how-it-works.js",
     "preview": "index.html",
     "dependencies": [
-      "../../code/css/page.css",
-      "../../code/css/blocks-runtime.css",
-      "../../code/js/blocks-runtime.js",
+      "../../css/page.css",
+      "../../css/blocks-runtime.css",
+      "../../js/blocks-runtime.js",
       "../../../shared/js/expert-dialog.js",
-      "../../../shared/assets/"
+      "../../assets/"
     ]
   },
   {
     "id": "06-about-company",
     "title": "Агентство элитной недвижимости BARN Estate",
     "kind": "about-company",
-    "html": "block.html",
-    "css": "block.css",
-    "js": "block.js",
+    "html": "../../html/06-about-company.html",
+    "css": "../../css/06-about-company.css",
+    "js": "../../js/06-about-company.js",
     "preview": "index.html",
     "dependencies": [
-      "../../code/css/page.css",
-      "../../code/css/blocks-runtime.css",
-      "../../code/js/blocks-runtime.js",
+      "../../css/page.css",
+      "../../css/blocks-runtime.css",
+      "../../js/blocks-runtime.js",
       "../../../shared/js/expert-dialog.js",
-      "../../../shared/assets/"
+      "../../assets/"
     ]
   },
   {
     "id": "07-responsibility",
     "title": "Ваша рекомендация — наша ответственность",
     "kind": "ap-section",
-    "html": "block.html",
-    "css": "block.css",
-    "js": "block.js",
+    "html": "../../html/07-responsibility.html",
+    "css": "../../css/07-responsibility.css",
+    "js": "../../js/07-responsibility.js",
     "preview": "index.html",
     "dependencies": [
-      "../../code/css/page.css",
-      "../../code/css/blocks-runtime.css",
-      "../../code/js/blocks-runtime.js",
+      "../../css/page.css",
+      "../../css/blocks-runtime.css",
+      "../../js/blocks-runtime.js",
       "../../../shared/js/expert-dialog.js",
-      "../../../shared/assets/"
+      "../../assets/"
     ]
   },
   {
     "id": "08-requests",
     "title": "ПО КАКИМ НАПРАВЛЕНИЯММЫ РАБОТАЕМ",
     "kind": "base-container",
-    "html": "block.html",
-    "css": "block.css",
-    "js": "block.js",
+    "html": "../../html/08-requests.html",
+    "css": "../../css/08-requests.css",
+    "js": "../../js/08-requests.js",
     "preview": "index.html",
     "dependencies": [
-      "../../code/css/page.css",
-      "../../code/css/blocks-runtime.css",
-      "../../code/js/blocks-runtime.js",
+      "../../css/page.css",
+      "../../css/blocks-runtime.css",
+      "../../js/blocks-runtime.js",
       "../../../shared/js/expert-dialog.js",
-      "../../../shared/assets/"
+      "../../assets/"
     ]
   },
   {
     "id": "09-who-we-work-with",
     "title": "С кем работаем",
     "kind": "ap-section",
-    "html": "block.html",
-    "css": "block.css",
-    "js": "block.js",
+    "html": "../../html/09-who-we-work-with.html",
+    "css": "../../css/09-who-we-work-with.css",
+    "js": "../../js/09-who-we-work-with.js",
     "preview": "index.html",
     "dependencies": [
-      "../../code/css/page.css",
-      "../../code/css/blocks-runtime.css",
-      "../../code/js/blocks-runtime.js",
+      "../../css/page.css",
+      "../../css/blocks-runtime.css",
+      "../../js/blocks-runtime.js",
       "../../../shared/js/expert-dialog.js",
-      "../../../shared/assets/"
+      "../../assets/"
     ]
   },
   {
     "id": "10-advantages",
     "title": "Преимущества партнёрства",
     "kind": "ap-section",
-    "html": "block.html",
-    "css": "block.css",
-    "js": "block.js",
+    "html": "../../html/10-advantages.html",
+    "css": "../../css/10-advantages.css",
+    "js": "../../js/10-advantages.js",
     "preview": "index.html",
     "dependencies": [
-      "../../code/css/page.css",
-      "../../code/css/blocks-runtime.css",
-      "../../code/js/blocks-runtime.js",
+      "../../css/page.css",
+      "../../css/blocks-runtime.css",
+      "../../js/blocks-runtime.js",
       "../../../shared/js/expert-dialog.js",
-      "../../../shared/assets/"
+      "../../assets/"
     ]
   },
   {
     "id": "11-partner-community",
     "title": "Партнёрство за пределами сделки",
     "kind": "ap-section",
-    "html": "block.html",
-    "css": "block.css",
-    "js": "block.js",
+    "html": "../../html/11-partner-community.html",
+    "css": "../../css/11-partner-community.css",
+    "js": "../../js/11-partner-community.js",
     "preview": "index.html",
     "dependencies": [
-      "../../code/css/page.css",
-      "../../code/css/blocks-runtime.css",
-      "../../code/js/blocks-runtime.js",
+      "../../css/page.css",
+      "../../css/blocks-runtime.css",
+      "../../js/blocks-runtime.js",
       "../../../shared/js/expert-dialog.js",
-      "../../../shared/assets/"
+      "../../assets/"
     ]
   },
   {
     "id": "12-program-partners",
     "title": "Наши партнёры",
     "kind": "ap-section",
-    "html": "block.html",
-    "css": "block.css",
-    "js": "block.js",
+    "html": "../../html/12-program-partners.html",
+    "css": "../../css/12-program-partners.css",
+    "js": "../../js/12-program-partners.js",
     "preview": "index.html",
     "dependencies": [
-      "../../code/css/page.css",
-      "../../code/css/blocks-runtime.css",
-      "../../code/js/blocks-runtime.js",
+      "../../css/page.css",
+      "../../css/blocks-runtime.css",
+      "../../js/blocks-runtime.js",
       "../../../shared/js/expert-dialog.js",
-      "../../../shared/assets/"
+      "../../assets/"
     ]
   },
   {
     "id": "13-partner-contact",
     "title": "Начните с вашей рекомендации",
     "kind": "catalog-contact",
-    "html": "block.html",
-    "css": "block.css",
-    "js": "block.js",
+    "html": "../../html/13-partner-contact.html",
+    "css": "../../css/13-partner-contact.css",
+    "js": "../../js/13-partner-contact.js",
     "preview": "index.html",
     "dependencies": [
-      "../../code/css/page.css",
-      "../../code/css/blocks-runtime.css",
-      "../../code/js/blocks-runtime.js",
+      "../../css/page.css",
+      "../../css/blocks-runtime.css",
+      "../../js/blocks-runtime.js",
       "../../../shared/js/expert-dialog.js",
-      "../../../shared/assets/"
+      "../../assets/"
     ]
   },
   {
     "id": "14-catalog-faq",
     "title": "Актуальные вопросы и ответы",
     "kind": "catalog-faq",
-    "html": "block.html",
-    "css": "block.css",
-    "js": "block.js",
+    "html": "../../html/14-catalog-faq.html",
+    "css": "../../css/14-catalog-faq.css",
+    "js": "../../js/14-catalog-faq.js",
     "preview": "index.html",
     "dependencies": [
-      "../../code/css/page.css",
-      "../../code/css/blocks-runtime.css",
-      "../../code/js/blocks-runtime.js",
+      "../../css/page.css",
+      "../../css/blocks-runtime.css",
+      "../../js/blocks-runtime.js",
       "../../../shared/js/expert-dialog.js",
-      "../../../shared/assets/"
+      "../../assets/"
     ]
   },
   {
     "id": "15-newsletter-cta",
     "title": "Оставайтесь впереди рынка",
     "kind": "newsletter-cta",
-    "html": "block.html",
-    "css": "block.css",
-    "js": "block.js",
+    "html": "../../html/15-newsletter-cta.html",
+    "css": "../../css/15-newsletter-cta.css",
+    "js": "../../js/15-newsletter-cta.js",
     "preview": "index.html",
     "dependencies": [
-      "../../code/css/page.css",
-      "../../code/css/blocks-runtime.css",
-      "../../code/js/blocks-runtime.js",
+      "../../css/page.css",
+      "../../css/blocks-runtime.css",
+      "../../js/blocks-runtime.js",
       "../../../shared/js/expert-dialog.js",
-      "../../../shared/assets/"
+      "../../assets/"
     ]
   },
   {
     "id": "16-site-footer",
     "title": "Футер",
     "kind": "site-footer",
-    "html": "block.html",
-    "css": "block.css",
-    "js": "block.js",
+    "html": "../../html/16-site-footer.html",
+    "css": "../../css/16-site-footer.css",
+    "js": "../../js/16-site-footer.js",
     "preview": "index.html",
     "dependencies": [
-      "../../code/css/page.css",
-      "../../code/css/blocks-runtime.css",
-      "../../code/js/blocks-runtime.js",
+      "../../css/page.css",
+      "../../css/blocks-runtime.css",
+      "../../js/blocks-runtime.js",
       "../../../shared/js/expert-dialog.js",
-      "../../../shared/assets/"
+      "../../assets/"
     ]
   },
   {
     "id": "17-floating-expert",
     "title": "Плавающий эксперт",
     "kind": "floating-expert",
-    "html": "block.html",
-    "css": "block.css",
-    "js": "block.js",
+    "html": "../../html/17-floating-expert.html",
+    "css": "../../css/17-floating-expert.css",
+    "js": "../../js/17-floating-expert.js",
     "preview": "index.html",
     "dependencies": [
-      "../../code/css/page.css",
-      "../../code/css/blocks-runtime.css",
-      "../../code/js/blocks-runtime.js",
+      "../../css/page.css",
+      "../../css/blocks-runtime.css",
+      "../../js/blocks-runtime.js",
       "../../../shared/js/expert-dialog.js",
-      "../../../shared/assets/"
+      "../../assets/"
     ]
   },
   {
     "id": "18-handoff-dialog",
     "title": "Форма обращения к эксперту",
     "kind": "handoff-dialog",
-    "html": "block.html",
-    "css": "block.css",
-    "js": "block.js",
+    "html": "../../html/18-handoff-dialog.html",
+    "css": "../../css/18-handoff-dialog.css",
+    "js": "../../js/18-handoff-dialog.js",
     "preview": "index.html",
     "dependencies": [
-      "../../code/css/page.css",
-      "../../code/css/blocks-runtime.css",
-      "../../code/js/blocks-runtime.js",
+      "../../css/page.css",
+      "../../css/blocks-runtime.css",
+      "../../js/blocks-runtime.js",
       "../../../shared/js/expert-dialog.js",
-      "../../../shared/assets/"
+      "../../assets/"
     ]
   }
 ]

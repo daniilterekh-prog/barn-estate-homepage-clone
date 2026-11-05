@@ -2,15 +2,15 @@
   "id": "03-ambassadors-hero",
   "title": "Рекомендуйте клиентов BARN Estate",
   "kind": "ambassadors-hero",
-  "html": "block.html",
-  "css": "block.css",
-  "js": "block.js",
+  "html": "../../html/03-ambassadors-hero.html",
+  "css": "../../css/03-ambassadors-hero.css",
+  "js": "../../js/03-ambassadors-hero.js",
   "preview": "index.html",
   "dependencies": [
-    "../../code/css/page.css",
-    "../../code/css/blocks-runtime.css",
-    "../../code/js/blocks-runtime.js",
+    "../../css/page.css",
+    "../../css/blocks-runtime.css",
+    "../../js/blocks-runtime.js",
     "../../../shared/js/expert-dialog.js",
-    "../../../shared/assets/"
+    "../../assets/"
   ]
 }

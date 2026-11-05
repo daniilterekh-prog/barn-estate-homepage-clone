@@ -3,256 +3,256 @@
     "id": "01-site-header",
     "title": "Хедер",
     "kind": "site-header",
-    "html": "block.html",
-    "css": "block.css",
-    "js": "block.js",
+    "html": "../../html/01-site-header.html",
+    "css": "../../css/01-site-header.css",
+    "js": "../../js/01-site-header.js",
     "preview": "index.html",
     "dependencies": [
-      "../../code/css/page.css",
-      "../../code/css/blocks-runtime.css",
-      "../../code/js/blocks-runtime.js",
+      "../../css/page.css",
+      "../../css/blocks-runtime.css",
+      "../../js/blocks-runtime.js",
       "../../../shared/js/home-quiz.js",
-      "../../../shared/assets/"
+      "../../assets/"
     ]
   },
   {
     "id": "02-home-hero",
     "title": "home-hero",
     "kind": "home-hero",
-    "html": "block.html",
-    "css": "block.css",
-    "js": "block.js",
+    "html": "../../html/02-home-hero.html",
+    "css": "../../css/02-home-hero.css",
+    "js": "../../js/02-home-hero.js",
     "preview": "index.html",
     "dependencies": [
-      "../../code/css/page.css",
-      "../../code/css/blocks-runtime.css",
-      "../../code/js/blocks-runtime.js",
+      "../../css/page.css",
+      "../../css/blocks-runtime.css",
+      "../../js/blocks-runtime.js",
       "../../../shared/js/home-quiz.js",
-      "../../../shared/assets/"
+      "../../assets/"
     ]
   },
   {
     "id": "03-services-section",
     "title": "Элитная недвижимость",
     "kind": "services-section",
-    "html": "block.html",
-    "css": "block.css",
-    "js": "block.js",
+    "html": "../../html/03-services-section.html",
+    "css": "../../css/03-services-section.css",
+    "js": "../../js/03-services-section.js",
     "preview": "index.html",
     "dependencies": [
-      "../../code/css/page.css",
-      "../../code/css/blocks-runtime.css",
-      "../../code/js/blocks-runtime.js",
+      "../../css/page.css",
+      "../../css/blocks-runtime.css",
+      "../../js/blocks-runtime.js",
       "../../../shared/js/home-quiz.js",
-      "../../../shared/assets/"
+      "../../assets/"
     ]
   },
   {
     "id": "04-barnes-choice",
     "title": "По рекомендации BARN Estate",
     "kind": "barnes-choice",
-    "html": "block.html",
-    "css": "block.css",
-    "js": "block.js",
+    "html": "../../html/04-barnes-choice.html",
+    "css": "../../css/04-barnes-choice.css",
+    "js": "../../js/04-barnes-choice.js",
     "preview": "index.html",
     "dependencies": [
-      "../../code/css/page.css",
-      "../../code/css/blocks-runtime.css",
-      "../../code/js/blocks-runtime.js",
+      "../../css/page.css",
+      "../../css/blocks-runtime.css",
+      "../../js/blocks-runtime.js",
       "../../../shared/js/home-quiz.js",
-      "../../../shared/assets/"
+      "../../assets/"
     ]
   },
   {
     "id": "05-departments-section",
     "title": "Недвижимость для жизни и инвестиций",
     "kind": "departments-section",
-    "html": "block.html",
-    "css": "block.css",
-    "js": "block.js",
+    "html": "../../html/05-departments-section.html",
+    "css": "../../css/05-departments-section.css",
+    "js": "../../js/05-departments-section.js",
     "preview": "index.html",
     "dependencies": [
-      "../../code/css/page.css",
-      "../../code/css/blocks-runtime.css",
-      "../../code/js/blocks-runtime.js",
+      "../../css/page.css",
+      "../../css/blocks-runtime.css",
+      "../../js/blocks-runtime.js",
       "../../../shared/js/home-quiz.js",
-      "../../../shared/assets/"
+      "../../assets/"
     ]
   },
   {
     "id": "06-about-company",
     "title": "Агентство элитной недвижимости BARN Estate",
     "kind": "about-company",
-    "html": "block.html",
-    "css": "block.css",
-    "js": "block.js",
+    "html": "../../html/06-about-company.html",
+    "css": "../../css/06-about-company.css",
+    "js": "../../js/06-about-company.js",
     "preview": "index.html",
     "dependencies": [
-      "../../code/css/page.css",
-      "../../code/css/blocks-runtime.css",
-      "../../code/js/blocks-runtime.js",
+      "../../css/page.css",
+      "../../css/blocks-runtime.css",
+      "../../js/blocks-runtime.js",
       "../../../shared/js/home-quiz.js",
-      "../../../shared/assets/"
+      "../../assets/"
     ]
   },
   {
     "id": "07-project-hero",
     "title": "Quartier d'Or",
     "kind": "project-hero",
-    "html": "block.html",
-    "css": "block.css",
-    "js": "block.js",
+    "html": "../../html/07-project-hero.html",
+    "css": "../../css/07-project-hero.css",
+    "js": "../../js/07-project-hero.js",
     "preview": "index.html",
     "dependencies": [
-      "../../code/css/page.css",
-      "../../code/css/blocks-runtime.css",
-      "../../code/js/blocks-runtime.js",
+      "../../css/page.css",
+      "../../css/blocks-runtime.css",
+      "../../js/blocks-runtime.js",
       "../../../shared/js/home-quiz.js",
-      "../../../shared/assets/"
+      "../../assets/"
     ]
   },
   {
     "id": "08-reviews-section",
     "title": "Отзывы",
     "kind": "reviews-section",
-    "html": "block.html",
-    "css": "block.css",
-    "js": "block.js",
+    "html": "../../html/08-reviews-section.html",
+    "css": "../../css/08-reviews-section.css",
+    "js": "../../js/08-reviews-section.js",
     "preview": "index.html",
     "dependencies": [
-      "../../code/css/page.css",
-      "../../code/css/blocks-runtime.css",
-      "../../code/js/blocks-runtime.js",
+      "../../css/page.css",
+      "../../css/blocks-runtime.css",
+      "../../js/blocks-runtime.js",
       "../../../shared/js/home-quiz.js",
-      "../../../shared/assets/"
+      "../../assets/"
     ]
   },
   {
     "id": "09-team-section",
     "title": "Наша команда",
     "kind": "team-section",
-    "html": "block.html",
-    "css": "block.css",
-    "js": "block.js",
+    "html": "../../html/09-team-section.html",
+    "css": "../../css/09-team-section.css",
+    "js": "../../js/09-team-section.js",
     "preview": "index.html",
     "dependencies": [
-      "../../code/css/page.css",
-      "../../code/css/blocks-runtime.css",
-      "../../code/js/blocks-runtime.js",
+      "../../css/page.css",
+      "../../css/blocks-runtime.css",
+      "../../js/blocks-runtime.js",
       "../../../shared/js/home-quiz.js",
-      "../../../shared/assets/"
+      "../../assets/"
     ]
   },
   {
     "id": "10-partners-section",
     "title": "Наши партнёры",
     "kind": "partners-section",
-    "html": "block.html",
-    "css": "block.css",
-    "js": "block.js",
+    "html": "../../html/10-partners-section.html",
+    "css": "../../css/10-partners-section.css",
+    "js": "../../js/10-partners-section.js",
     "preview": "index.html",
     "dependencies": [
-      "../../code/css/page.css",
-      "../../code/css/blocks-runtime.css",
-      "../../code/js/blocks-runtime.js",
+      "../../css/page.css",
+      "../../css/blocks-runtime.css",
+      "../../js/blocks-runtime.js",
       "../../../shared/js/home-quiz.js",
-      "../../../shared/assets/"
+      "../../assets/"
     ]
   },
   {
     "id": "11-office-contact",
     "title": "СПОСОБЫ СВЯЗИ BARN ESTATE",
     "kind": "office-contact",
-    "html": "block.html",
-    "css": "block.css",
-    "js": "block.js",
+    "html": "../../html/11-office-contact.html",
+    "css": "../../css/11-office-contact.css",
+    "js": "../../js/11-office-contact.js",
     "preview": "index.html",
     "dependencies": [
-      "../../code/css/page.css",
-      "../../code/css/blocks-runtime.css",
-      "../../code/js/blocks-runtime.js",
+      "../../css/page.css",
+      "../../css/blocks-runtime.css",
+      "../../js/blocks-runtime.js",
       "../../../shared/js/home-quiz.js",
-      "../../../shared/assets/"
+      "../../assets/"
     ]
   },
   {
     "id": "12-news-section",
     "title": "Наши новости",
     "kind": "news-section",
-    "html": "block.html",
-    "css": "block.css",
-    "js": "block.js",
+    "html": "../../html/12-news-section.html",
+    "css": "../../css/12-news-section.css",
+    "js": "../../js/12-news-section.js",
     "preview": "index.html",
     "dependencies": [
-      "../../code/css/page.css",
-      "../../code/css/blocks-runtime.css",
-      "../../code/js/blocks-runtime.js",
+      "../../css/page.css",
+      "../../css/blocks-runtime.css",
+      "../../js/blocks-runtime.js",
       "../../../shared/js/home-quiz.js",
-      "../../../shared/assets/"
+      "../../assets/"
     ]
   },
   {
     "id": "13-newsletter-cta",
     "title": "В центре событий рынка недвижимости",
     "kind": "newsletter-cta",
-    "html": "block.html",
-    "css": "block.css",
-    "js": "block.js",
+    "html": "../../html/13-newsletter-cta.html",
+    "css": "../../css/13-newsletter-cta.css",
+    "js": "../../js/13-newsletter-cta.js",
     "preview": "index.html",
     "dependencies": [
-      "../../code/css/page.css",
-      "../../code/css/blocks-runtime.css",
-      "../../code/js/blocks-runtime.js",
+      "../../css/page.css",
+      "../../css/blocks-runtime.css",
+      "../../js/blocks-runtime.js",
       "../../../shared/js/home-quiz.js",
-      "../../../shared/assets/"
+      "../../assets/"
     ]
   },
   {
     "id": "14-site-footer",
     "title": "Футер",
     "kind": "site-footer",
-    "html": "block.html",
-    "css": "block.css",
-    "js": "block.js",
+    "html": "../../html/14-site-footer.html",
+    "css": "../../css/14-site-footer.css",
+    "js": "../../js/14-site-footer.js",
     "preview": "index.html",
     "dependencies": [
-      "../../code/css/page.css",
-      "../../code/css/blocks-runtime.css",
-      "../../code/js/blocks-runtime.js",
+      "../../css/page.css",
+      "../../css/blocks-runtime.css",
+      "../../js/blocks-runtime.js",
       "../../../shared/js/home-quiz.js",
-      "../../../shared/assets/"
+      "../../assets/"
     ]
   },
   {
     "id": "15-floating-expert",
     "title": "Плавающий эксперт",
     "kind": "floating-expert",
-    "html": "block.html",
-    "css": "block.css",
-    "js": "block.js",
+    "html": "../../html/15-floating-expert.html",
+    "css": "../../css/15-floating-expert.css",
+    "js": "../../js/15-floating-expert.js",
     "preview": "index.html",
     "dependencies": [
-      "../../code/css/page.css",
-      "../../code/css/blocks-runtime.css",
-      "../../code/js/blocks-runtime.js",
+      "../../css/page.css",
+      "../../css/blocks-runtime.css",
+      "../../js/blocks-runtime.js",
       "../../../shared/js/home-quiz.js",
-      "../../../shared/assets/"
+      "../../assets/"
     ]
   },
   {
     "id": "16-handoff-dialog",
     "title": "Квиз обращения к эксперту",
     "kind": "handoff-dialog",
-    "html": "block.html",
-    "css": "block.css",
-    "js": "block.js",
+    "html": "../../html/16-handoff-dialog.html",
+    "css": "../../css/16-handoff-dialog.css",
+    "js": "../../js/16-handoff-dialog.js",
     "preview": "index.html",
     "dependencies": [
-      "../../code/css/page.css",
-      "../../code/css/blocks-runtime.css",
-      "../../code/js/blocks-runtime.js",
+      "../../css/page.css",
+      "../../css/blocks-runtime.css",
+      "../../js/blocks-runtime.js",
       "../../../shared/js/home-quiz.js",
-      "../../../shared/assets/"
+      "../../assets/"
     ]
   }
 ]

@@ -2,15 +2,15 @@
   "id": "01-site-header",
   "title": "Хедер",
   "kind": "site-header",
-  "html": "block.html",
-  "css": "block.css",
-  "js": "block.js",
+  "html": "../../html/01-site-header.html",
+  "css": "../../css/01-site-header.css",
+  "js": "../../js/01-site-header.js",
   "preview": "index.html",
   "dependencies": [
-    "../../code/css/page.css",
-    "../../code/css/blocks-runtime.css",
-    "../../code/js/blocks-runtime.js",
+    "../../css/page.css",
+    "../../css/blocks-runtime.css",
+    "../../js/blocks-runtime.js",
     "../../../shared/js/expert-dialog.js",
-    "../../../shared/assets/"
+    "../../assets/"
   ]
 }

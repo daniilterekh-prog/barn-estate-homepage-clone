@@ -1,7 +1,13 @@
-# BARN Estate — передача пяти актуальных страниц
+# BARN Estate — пять страниц для разработчика
 
-Дата:05.11.2026. [Открыть каталог](index.html). В каждом разделе отдельно HTML/CSS/JS, полный клиентский runtime и переносимые блоки. Общие ассеты находятся только в shared/assets.
+| Страница | HTML | CSS | JS | Ассеты | Блоки |
+|---|---|---|---|---|---|
+| [Главная](home/) | [html](home/html/) | [css](home/css/) | [js](home/js/) | [assets](home/assets/) | [blocks](home/blocks/) |
+| [Медиа](media/) | [html](media/html/) | [css](media/css/) | [js](media/js/) | [assets](media/assets/) | [blocks](media/blocks/) |
+| [Амбассадоры](partners/) | [html](partners/html/) | [css](partners/css/) | [js](partners/js/) | [assets](partners/assets/) | [blocks](partners/blocks/) |
+| [Собственникам — аренда](owner-rent/) | [html](owner-rent/html/) | [css](owner-rent/css/) | [js](owner-rent/js/) | [assets](owner-rent/assets/) | [blocks](owner-rent/blocks/) |
+| [Собственникам — продажа](owner-sale/) | [html](owner-sale/html/) | [css](owner-sale/css/) | [js](owner-sale/js/) | [assets](owner-sale/assets/) | [blocks](owner-sale/blocks/) |
 
-Для просмотра: python3 -m http.server 8080 из этой папки → http://localhost:8080/. Полные страницы открывай как папку code/html/. Это клиентское превью без подключения CRM. Формы данные не отправляют.
+Каждая страница сразу разделена по типам файлов, без вложенной папки code. HTML, CSS и JS каждого блока находятся в соответствующих папках страницы и имеют одинаковое имя. В blocks/ — превью и метаданные. Общие формы — shared/js/. Для просмотра запусти python3 -m http.server 8080 из этой папки. Формы в превью не отправляются.
 
-[Скачать единый ZIP](barn-estate-five-pages-2026-11-05.zip). Внутри пять папок страниц и общие ассеты.
+[Каталог превью](index.html) · [Скачать комплект](barn-estate-five-pages-2026-11-05.zip).

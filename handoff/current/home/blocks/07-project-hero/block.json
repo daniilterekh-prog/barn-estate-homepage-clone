@@ -2,15 +2,15 @@
   "id": "07-project-hero",
   "title": "Quartier d'Or",
   "kind": "project-hero",
-  "html": "block.html",
-  "css": "block.css",
-  "js": "block.js",
+  "html": "../../html/07-project-hero.html",
+  "css": "../../css/07-project-hero.css",
+  "js": "../../js/07-project-hero.js",
   "preview": "index.html",
   "dependencies": [
-    "../../code/css/page.css",
-    "../../code/css/blocks-runtime.css",
-    "../../code/js/blocks-runtime.js",
+    "../../css/page.css",
+    "../../css/blocks-runtime.css",
+    "../../js/blocks-runtime.js",
     "../../../shared/js/home-quiz.js",
-    "../../../shared/assets/"
+    "../../assets/"
   ]
 }

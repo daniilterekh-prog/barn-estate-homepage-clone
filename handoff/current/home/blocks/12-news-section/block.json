@@ -2,15 +2,15 @@
   "id": "12-news-section",
   "title": "Наши новости",
   "kind": "news-section",
-  "html": "block.html",
-  "css": "block.css",
-  "js": "block.js",
+  "html": "../../html/12-news-section.html",
+  "css": "../../css/12-news-section.css",
+  "js": "../../js/12-news-section.js",
   "preview": "index.html",
   "dependencies": [
-    "../../code/css/page.css",
-    "../../code/css/blocks-runtime.css",
-    "../../code/js/blocks-runtime.js",
+    "../../css/page.css",
+    "../../css/blocks-runtime.css",
+    "../../js/blocks-runtime.js",
     "../../../shared/js/home-quiz.js",
-    "../../../shared/assets/"
+    "../../assets/"
   ]
 }

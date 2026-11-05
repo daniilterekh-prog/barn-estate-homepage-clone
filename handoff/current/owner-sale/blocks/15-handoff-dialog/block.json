@@ -2,15 +2,15 @@
   "id": "15-handoff-dialog",
   "title": "Форма обращения к эксперту",
   "kind": "handoff-dialog",
-  "html": "block.html",
-  "css": "block.css",
-  "js": "block.js",
+  "html": "../../html/15-handoff-dialog.html",
+  "css": "../../css/15-handoff-dialog.css",
+  "js": "../../js/15-handoff-dialog.js",
   "preview": "index.html",
   "dependencies": [
-    "../../code/css/page.css",
-    "../../code/css/blocks-runtime.css",
-    "../../code/js/blocks-runtime.js",
+    "../../css/page.css",
+    "../../css/blocks-runtime.css",
+    "../../js/blocks-runtime.js",
     "../../../shared/js/expert-dialog.js",
-    "../../../shared/assets/"
+    "../../assets/"
   ]
 }

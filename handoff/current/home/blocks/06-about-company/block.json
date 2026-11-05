@@ -2,15 +2,15 @@
   "id": "06-about-company",
   "title": "Агентство элитной недвижимости BARN Estate",
   "kind": "about-company",
-  "html": "block.html",
-  "css": "block.css",
-  "js": "block.js",
+  "html": "../../html/06-about-company.html",
+  "css": "../../css/06-about-company.css",
+  "js": "../../js/06-about-company.js",
   "preview": "index.html",
   "dependencies": [
-    "../../code/css/page.css",
-    "../../code/css/blocks-runtime.css",
-    "../../code/js/blocks-runtime.js",
+    "../../css/page.css",
+    "../../css/blocks-runtime.css",
+    "../../js/blocks-runtime.js",
     "../../../shared/js/home-quiz.js",
-    "../../../shared/assets/"
+    "../../assets/"
   ]
 }

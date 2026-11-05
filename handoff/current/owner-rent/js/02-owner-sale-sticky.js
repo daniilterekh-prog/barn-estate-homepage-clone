@@ -1,0 +1,2 @@
+import {initBlock} from './blocks-runtime.js';
+initBlock(document.querySelector('[data-handoff-block="02-owner-sale-sticky"]'),{page:"owner-rent",kind:"owner-sale-sticky",preview:document.body.hasAttribute('data-block-preview')});

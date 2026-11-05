@@ -2,15 +2,15 @@
   "id": "04-presentation",
   "title": "Искусство правильного представления",
   "kind": "owner-sale-presentation",
-  "html": "block.html",
-  "css": "block.css",
-  "js": "block.js",
+  "html": "../../html/04-presentation.html",
+  "css": "../../css/04-presentation.css",
+  "js": "../../js/04-presentation.js",
   "preview": "index.html",
   "dependencies": [
-    "../../code/css/page.css",
-    "../../code/css/blocks-runtime.css",
-    "../../code/js/blocks-runtime.js",
+    "../../css/page.css",
+    "../../css/blocks-runtime.css",
+    "../../js/blocks-runtime.js",
     "../../../shared/js/expert-dialog.js",
-    "../../../shared/assets/"
+    "../../assets/"
   ]
 }

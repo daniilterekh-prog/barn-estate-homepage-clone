@@ -1,0 +1,284 @@
+/* Owner/ambassador spacing roles. See spacing-alignment/README.md. */
+body.barnes-home-typography {
+  --home-section-space: clamp(72px, 6vw, 100px);
+  --home-gutter: clamp(24px, calc(-26.66667px + 6.59722vw), 100px);
+  --home-heading-content: 40px;
+  --home-copy-gap: 24px;
+  --home-card-padding: 32px;
+  --home-eyebrow-gap: 25px;
+}
+body.barnes-home-typography :is(.services-section,.barnes-choice,.departments-section,.reviews-section,.video-section,.team-section,.partners-section,
+ .office-contact,.news-section) {
+  padding-block: var(--home-section-space) !important;
+  margin-block: 0 !important;
+}
+body.barnes-home-typography .base-container:not(.project-hero__content):not(.site-footer__inner) {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1920px !important;
+  margin-inline: auto !important;
+  padding-inline: var(--home-gutter) !important;
+}
+/* Section inners inherit the outer container's width without a second gutter.
+ * Match the original homepage: above 1920px the 1920px container has no inset. */
+@media(min-width:1921px) {
+  body.barnes-home-typography { --home-gutter: 0px; }
+}
+@media(min-width:1025px) {
+  body.barnes-home-typography :is(.office-contact__inner,.newsletter-cta__inner) {
+    width: calc(100% - 2 * clamp(20px, 5.2vw, 100px));
+    max-width: 1920px;
+    margin-inline: auto;
+    padding-inline: 0;
+  }
+}
+body.barnes-home-typography .newsletter-cta {
+  padding: var(--home-section-space) 0 40px !important;
+  margin: 0 !important;
+}
+body.barnes-home-typography .home-section-eyebrow {
+  display: block;
+  flex: 0 0 auto;
+  margin: 0 0 var(--home-eyebrow-gap) !important;
+  padding: 0 !important;
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  line-height: 16.1px !important;
+  letter-spacing: .12em !important;
+  text-transform: uppercase !important;
+  color: #4f4d49 !important;
+}
+body.barnes-home-typography :is(.services-section__header,.departments-section__heading,
+ .reviews-section__intro,.team-section__intro,.partners-section__intro,.news-section__header) {
+  row-gap: 0 !important;
+  padding-block: 0 !important;
+}
+body.barnes-home-typography :is(.services-section__description,.team-section__description,
+ .partners-section__description,.office-contact__lead,.newsletter-cta__lead) {
+  margin: var(--home-copy-gap) 0 0 !important;
+}
+body.barnes-home-typography :is(.services-section__inner,.departments-section__inner,
+ .news-section__inner) { row-gap: var(--home-heading-content) !important; }
+body.barnes-home-typography .barnes-choice__header {
+  row-gap: 24px !important;
+  margin-bottom: var(--home-heading-content) !important;
+}
+body.barnes-home-typography .barnes-choice__heading .home-section-eyebrow { text-align: center; }
+body.barnes-home-typography :is(.team-section__inner,.reviews-section__inner,.partners-section__header) {
+  gap: var(--home-heading-content) !important;
+}
+body.barnes-home-typography .team-section__nav { margin-top: var(--home-copy-gap) !important; }
+body.barnes-home-typography :is(.services-section__content,.department-card__content) {
+  padding: var(--home-card-padding) !important;
+  gap: 16px !important;
+}
+body.barnes-home-typography .services-section__grid { gap: 2px !important; }
+body.barnes-home-typography .department-card__title { margin: 0 !important; }
+/* Use the content gap once; the captured link added another 15px. */
+body.barnes-home-typography .department-card__link { margin-top: 0 !important; }
+body.barnes-home-typography :is(.office-contact__copy,.newsletter-cta__copy) {
+  padding-block: 0 !important;
+}
+body.barnes-home-typography :is(.office-contact__socials,.newsletter-form) {
+  margin-top: var(--home-copy-gap) !important;
+}
+body.barnes-home-typography .office-contact__socials { gap: 12px !important; }
+body.barnes-home-typography .newsletter-form__note { margin-top: 16px !important; }
+body.barnes-home-typography .news-section__content { padding-top: 16px !important; gap: 12px !important; }
+/* Main actions use the same inset/height as the owner ActionButton. */
+body.barnes-home-typography :is(.home-hero-filters__submit,.barnes-choice__action,.newsletter-form__row > button,.feedback-modal .ui-button,.office-contact__social) {
+  min-height: 70px !important;
+  height: auto;
+  padding-inline: 36px !important;
+  box-sizing: border-box;
+}
+body.barnes-home-typography .office-contact__social { padding-inline: 8px !important; }
+body.barnes-home-typography .feedback-modal__input { padding-block: 16px !important; }
+@media(min-width:1441px) {
+  body.barnes-home-typography :is(.home-hero-filters__submit,.barnes-choice__action,.newsletter-form__row > button,.feedback-modal .ui-button) { padding-inline: 47px !important; }
+}
+@media(max-width:1024px) {
+  body.barnes-home-typography { --home-card-padding: 24px; --home-eyebrow-gap: 12px; }
+  body.barnes-home-typography .home-section-eyebrow { font-size: 12px !important; line-height: 14.4px !important; }
+}
+@media(max-width:540px) {
+  body.barnes-home-typography {
+    --home-section-space: 48px;
+    --home-gutter: 22px;
+    --home-heading-content: 28px;
+    --home-copy-gap: 16px;
+    --home-card-padding: 20px;
+  }
+  body.barnes-home-typography .services-section__grid { gap: 12px !important; }
+  body.barnes-home-typography :is(.services-section__content,.department-card__content) { gap: 12px !important; }
+  body.barnes-home-typography .barnes-choice__header { row-gap: 16px !important; }
+  body.barnes-home-typography .newsletter-cta { padding-top: 48px !important; padding-bottom: 40px !important; }
+  body.barnes-home-typography .newsletter-cta__copy { padding-inline: 0 !important; }
+  body.barnes-home-typography .office-contact__copy { padding-inline: 0 !important; margin-bottom: 28px; }
+    body.barnes-home-typography :is(.home-hero-filters__submit,.barnes-choice__action,.newsletter-form__row > button,.feedback-modal .ui-button,.office-contact__social) {
+    min-height: 58px !important;
+    padding-inline: 24px !important;
+  }
+}
+body.barnes-home-typography .barnes-choice__heading {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  gap: 0 !important;
+  min-width: 0;
+}
+body.barnes-home-typography .office-contact { padding-inline: 0 !important; }
+@media(max-width:540px) {
+  body.barnes-home-typography .barnes-choice__slider-wrap { padding-inline: var(--home-gutter) !important; }
+}
+@media(max-width:1279px) {
+  body.barnes-home-typography .office-contact__socials { grid-template-columns: 1fr !important; }
+}
+
+/* Match the owner footer's desktop breakpoint and visual order. */
+@media(min-width:1200px) {
+  body.barnes-home-typography .site-footer__nav { grid-template-columns: repeat(6,minmax(0,1fr)) !important; }
+  body.barnes-home-typography .site-footer__column:nth-child(6) { grid-column: 4 !important; grid-row: 1 !important; }
+  body.barnes-home-typography .site-footer__column:nth-child(4) { grid-column: 5 !important; grid-row: 1 !important; }
+  body.barnes-home-typography .site-footer__column:nth-child(5) { grid-column: 6 !important; grid-row: 1 !important; }
+  body.barnes-home-typography .site-footer__column:nth-child(7) { grid-column: 1 !important; grid-row: 2 !important; }
+  body.barnes-home-typography .site-footer__column:nth-child(8) { grid-column: 2 !important; grid-row: 2 !important; }
+  body.barnes-home-typography .site-footer__column:nth-child(9) { grid-column: 3 !important; grid-row: 2 !important; }
+}
+body.barnes-home-typography .site-footer :is(.site-footer__link,
+ .site-footer__column-title--link,.site-footer__phone,.site-footer__email,
+ .site-footer__privacy):is(:hover,:focus-visible,:active) { color: #8b1d25 !important; }
+/* High-resolution library portrait: closer face with headroom in the round avatar.
+ * Uses the existing 1086x1448 source, without enlarging a low-resolution crop. */
+body.barnes-home-typography .floating-expert__avatar { position: relative; }
+body.barnes-home-typography .floating-expert__avatar img {
+  position: absolute;
+  width: 170% !important;
+  max-width: none;
+  height: auto !important;
+  left: -35%;
+  top: -5%;
+  object-fit: cover !important;
+  object-position: center top !important;
+  transform: none !important;
+  filter: none;
+}
+
+@media(max-width:1024px) {
+  body.barnes-home-typography :is(.office-contact__inner,.newsletter-cta__inner) {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1920px !important;
+    margin-inline: auto !important;
+    padding-inline: var(--home-gutter) !important;
+  }
+}
+
+/* Anchor the CTA at its original bottom inset; lower the title toward it. */
+body.barnes-home-typography .services-section__content {
+  justify-content: flex-end;
+  padding-bottom: 40px !important;
+  gap: 20px !important;
+}
+body.barnes-home-typography .services-section__card-title,
+body.barnes-home-typography .services-section__link { transform: none; }
+body.barnes-home-typography .services-section__link {
+  position: static;
+  inset: auto;
+  flex: 0 0 auto;
+}
+@media(max-width:540px) {
+  body.barnes-home-typography .services-section__content {
+    padding-bottom: 20px !important;
+    gap: 16px !important;
+  }
+}
+
+/* User-selected hero image; uniform 40% black overlay. */
+body.barnes-home-typography .home-hero__media {
+  background-image: url("../../../../assets/3bee2f050d87ea14.png");
+  background-size: cover;
+  background-position: center 25%;
+  background-repeat: no-repeat;
+}
+body.barnes-home-typography .home-hero__video { display: none !important; }
+body.barnes-home-typography .home-hero__overlay { background: rgba(0,0,0,.4) !important; }
+
+/* Dedicated panoramic composition for viewports strictly wider than 1920px. */
+@media(min-width:1921px) {
+  body.barnes-home-typography .home-hero__media { background-image: url("../../../../assets/b87b98c25910ca0a.png"); }
+}
+
+/* Independently generated portrait composition for phones. */
+@media(max-width:767px) {
+  body.barnes-home-typography .home-hero__media {
+    background-image: url("../../../../assets/be1f1432dd5ff56c.webp");
+    background-position: center;
+  }
+}
+
+/* Keep the polished sale interior in the same photographic treatment as its neighbors. */
+body.barnes-home-typography .services-section__item--wide .services-section__image {
+  filter: none;
+}
+body.barnes-home-typography .services-section__item--wide .services-section__overlay {
+  background: rgba(0,0,0,.28) !important;
+}
+body.barnes-home-typography .services-section__item--wide .services-section__card:is(:hover,:focus-visible) .services-section__overlay {
+  background: rgba(0,0,0,.38) !important;
+}
+
+/* Match the existing header logo's 48px / 36px height and intrinsic proportions. */
+body.barnes-home-typography .site-footer__logo {
+  width: max-content;
+  max-width: 100%;
+  margin-inline: auto;
+}
+body.barnes-home-typography .site-footer__logo img {
+  display: block;
+  width: auto;
+  height: 48px;
+  object-fit: contain;
+}
+@media (max-width: 540px) {
+  body.barnes-home-typography .site-footer__logo img { height: 36px; }
+}
+
+/* Native office image defaults; shared desktop-row alignment is defined below. */
+body.barnes-home-typography .office-contact__visual { min-height:0; }
+body.barnes-home-typography .office-contact__visual img { height:auto; aspect-ratio:1563 / 1006; object-fit:contain; }
+
+/* Let the contact copy determine the shared row height and both lower edges. */
+@media (min-width: 861px) {
+  body.barnes-home-typography .office-contact__inner,
+  body.barnes-home-typography .office-contact__grid { min-height: 0; }
+  body.barnes-home-typography .office-contact__visual { align-self: stretch; }
+  body.barnes-home-typography .office-contact__visual img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    aspect-ratio: auto;
+    object-fit: cover;
+    object-position: right center;
+  }
+}
+
+/* The country hub hero already contains its evening treatment. */
+body.barnes-home-typography .department-card--country-clear .department-card__overlay {display:none!important;}
+
+/* Keep image-led project spacing on the same section rhythm as the eyebrows. */
+body.barnes-home-typography .project-hero {padding-block:var(--home-section-space)!important;margin-block:0!important;}
+body.barnes-home-typography .newsletter-cta__copy {justify-content:flex-start!important;}
+@media(min-width:1025px) {
+ body.barnes-home-typography :is(.project-hero,.project-hero__slide,.project-hero__content) {min-height:840px!important;}
+ body.barnes-home-typography .project-hero__content {padding-block:80px!important;}
+}
+/* Below the office-photo breakpoint, do not reserve the old 600px photo row. */
+@media(max-width:860px) {
+ body.barnes-home-typography :is(.office-contact__inner,.office-contact__grid,.office-contact__copy) {min-height:0!important;}
+ body.barnes-home-typography .office-contact__copy {justify-content:flex-start!important;}
+}
+
+/* Prevent the archived video section flashing before the hydrated content update. */
+body.barnes-home-typography .video-section {display:none!important;}

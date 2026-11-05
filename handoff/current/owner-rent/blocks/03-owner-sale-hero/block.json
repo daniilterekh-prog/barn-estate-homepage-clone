@@ -2,15 +2,15 @@
   "id": "03-owner-sale-hero",
   "title": "Сдать премиальную недвижимость с BARN Estate",
   "kind": "owner-sale-hero",
-  "html": "block.html",
-  "css": "block.css",
-  "js": "block.js",
+  "html": "../../html/03-owner-sale-hero.html",
+  "css": "../../css/03-owner-sale-hero.css",
+  "js": "../../js/03-owner-sale-hero.js",
   "preview": "index.html",
   "dependencies": [
-    "../../code/css/page.css",
-    "../../code/css/blocks-runtime.css",
-    "../../code/js/blocks-runtime.js",
+    "../../css/page.css",
+    "../../css/blocks-runtime.css",
+    "../../js/blocks-runtime.js",
     "../../../shared/js/expert-dialog.js",
-    "../../../shared/assets/"
+    "../../assets/"
   ]
 }

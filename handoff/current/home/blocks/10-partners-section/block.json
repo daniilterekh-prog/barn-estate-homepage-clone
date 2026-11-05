@@ -2,15 +2,15 @@
   "id": "10-partners-section",
   "title": "Наши партнёры",
   "kind": "partners-section",
-  "html": "block.html",
-  "css": "block.css",
-  "js": "block.js",
+  "html": "../../html/10-partners-section.html",
+  "css": "../../css/10-partners-section.css",
+  "js": "../../js/10-partners-section.js",
   "preview": "index.html",
   "dependencies": [
-    "../../code/css/page.css",
-    "../../code/css/blocks-runtime.css",
-    "../../code/js/blocks-runtime.js",
+    "../../css/page.css",
+    "../../css/blocks-runtime.css",
+    "../../js/blocks-runtime.js",
     "../../../shared/js/home-quiz.js",
-    "../../../shared/assets/"
+    "../../assets/"
   ]
 }

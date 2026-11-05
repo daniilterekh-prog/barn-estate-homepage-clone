@@ -2,15 +2,15 @@
   "id": "08-requests",
   "title": "ПО КАКИМ НАПРАВЛЕНИЯММЫ РАБОТАЕМ",
   "kind": "base-container",
-  "html": "block.html",
-  "css": "block.css",
-  "js": "block.js",
+  "html": "../../html/08-requests.html",
+  "css": "../../css/08-requests.css",
+  "js": "../../js/08-requests.js",
   "preview": "index.html",
   "dependencies": [
-    "../../code/css/page.css",
-    "../../code/css/blocks-runtime.css",
-    "../../code/js/blocks-runtime.js",
+    "../../css/page.css",
+    "../../css/blocks-runtime.css",
+    "../../js/blocks-runtime.js",
     "../../../shared/js/expert-dialog.js",
-    "../../../shared/assets/"
+    "../../assets/"
   ]
 }

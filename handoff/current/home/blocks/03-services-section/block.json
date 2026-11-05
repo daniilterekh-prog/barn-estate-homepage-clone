@@ -2,15 +2,15 @@
   "id": "03-services-section",
   "title": "Элитная недвижимость",
   "kind": "services-section",
-  "html": "block.html",
-  "css": "block.css",
-  "js": "block.js",
+  "html": "../../html/03-services-section.html",
+  "css": "../../css/03-services-section.css",
+  "js": "../../js/03-services-section.js",
   "preview": "index.html",
   "dependencies": [
-    "../../code/css/page.css",
-    "../../code/css/blocks-runtime.css",
-    "../../code/js/blocks-runtime.js",
+    "../../css/page.css",
+    "../../css/blocks-runtime.css",
+    "../../js/blocks-runtime.js",
     "../../../shared/js/home-quiz.js",
-    "../../../shared/assets/"
+    "../../assets/"
   ]
 }

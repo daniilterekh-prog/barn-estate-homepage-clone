@@ -2,15 +2,15 @@
   "id": "07-responsibility",
   "title": "Ваша рекомендация — наша ответственность",
   "kind": "ap-section",
-  "html": "block.html",
-  "css": "block.css",
-  "js": "block.js",
+  "html": "../../html/07-responsibility.html",
+  "css": "../../css/07-responsibility.css",
+  "js": "../../js/07-responsibility.js",
   "preview": "index.html",
   "dependencies": [
-    "../../code/css/page.css",
-    "../../code/css/blocks-runtime.css",
-    "../../code/js/blocks-runtime.js",
+    "../../css/page.css",
+    "../../css/blocks-runtime.css",
+    "../../js/blocks-runtime.js",
     "../../../shared/js/expert-dialog.js",
-    "../../../shared/assets/"
+    "../../assets/"
   ]
 }

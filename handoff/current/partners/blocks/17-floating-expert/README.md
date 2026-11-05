@@ -1,9 +1,9 @@
 # Плавающий эксперт
 
-[Превью](index.html) · [HTML](block.html) · [CSS](block.css) · [JS](block.js)
+[Превью](index.html) · [HTML](../../html/17-floating-expert.html) · [CSS](../../css/17-floating-expert.css) · [JS](../../js/17-floating-expert.js)
 
-block.html содержит только компонент с его адаптером/данными, без повторных body/main/layout. Используй общую оболочку [page-shell.html](../../code/html/page-shell.html) или такие же классы/атрибуты body и родителей на целевой странице. Общий контекст CSS: ../../code/css/page.css.
+../../html/17-floating-expert.html содержит только компонент с его адаптером/данными, без повторных body/main/layout. Используй общую оболочку [page-shell.html](../../html/page-shell.html) или такие же классы/атрибуты body и родителей на целевой странице. Общий контекст CSS: ../../css/page.css.
 
-Подключи block.css и block.js. Зависимости и описание — block.json. Исходные имена классов и data-v-* входят в CSS-контракт: сохраняй их при переносе. Если монтируешь в SPA — вызови initBlock после вставки и cleanup при удалении.
+Подключи ../../css/17-floating-expert.css и ../../js/17-floating-expert.js. Зависимости и описание — ../../js/17-floating-expert.json. Исходные имена классов и data-v-* входят в CSS-контракт: сохраняй их при переносе. Если монтируешь в SPA — вызови initBlock после вставки и cleanup при удалении.
 
 Формы используют один общий компонент: shared/js/home-quiz.js для главной/Медиа, shared/js/expert-dialog.js для собственников/амбассадоров. Меняются только текст/картинка. Поиск, отправка и подписка передаются событиями barn:search, barn:submit, barn:subscribe; backend здесь не подключён. Глобальные URL и якоря адаптируй к целевому сайту.

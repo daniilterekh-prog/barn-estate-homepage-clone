@@ -2,15 +2,15 @@
   "id": "07-media-analytics",
   "title": "Аналитика и исследования",
   "kind": "media-analytics",
-  "html": "block.html",
-  "css": "block.css",
-  "js": "block.js",
+  "html": "../../html/07-media-analytics.html",
+  "css": "../../css/07-media-analytics.css",
+  "js": "../../js/07-media-analytics.js",
   "preview": "index.html",
   "dependencies": [
-    "../../code/css/page.css",
-    "../../code/css/blocks-runtime.css",
-    "../../code/js/blocks-runtime.js",
+    "../../css/page.css",
+    "../../css/blocks-runtime.css",
+    "../../js/blocks-runtime.js",
     "../../../shared/js/home-quiz.js",
-    "../../../shared/assets/"
+    "../../assets/"
   ]
 }

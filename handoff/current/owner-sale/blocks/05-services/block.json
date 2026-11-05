@@ -2,15 +2,15 @@
   "id": "05-services",
   "title": "ИНСТРУМЕНТЫ ПРОДАЖИ И ПРОДВИЖЕНИЯ В BARN Estate",
   "kind": "owner-sale-services",
-  "html": "block.html",
-  "css": "block.css",
-  "js": "block.js",
+  "html": "../../html/05-services.html",
+  "css": "../../css/05-services.css",
+  "js": "../../js/05-services.js",
   "preview": "index.html",
   "dependencies": [
-    "../../code/css/page.css",
-    "../../code/css/blocks-runtime.css",
-    "../../code/js/blocks-runtime.js",
+    "../../css/page.css",
+    "../../css/blocks-runtime.css",
+    "../../js/blocks-runtime.js",
     "../../../shared/js/expert-dialog.js",
-    "../../../shared/assets/"
+    "../../assets/"
   ]
 }

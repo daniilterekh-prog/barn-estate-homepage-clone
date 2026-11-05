@@ -2,15 +2,15 @@
   "id": "08-media-cta-banner",
   "title": "Хотите обсудить рынок или подобрать объект?",
   "kind": "media-cta-banner",
-  "html": "block.html",
-  "css": "block.css",
-  "js": "block.js",
+  "html": "../../html/08-media-cta-banner.html",
+  "css": "../../css/08-media-cta-banner.css",
+  "js": "../../js/08-media-cta-banner.js",
   "preview": "index.html",
   "dependencies": [
-    "../../code/css/page.css",
-    "../../code/css/blocks-runtime.css",
-    "../../code/js/blocks-runtime.js",
+    "../../css/page.css",
+    "../../css/blocks-runtime.css",
+    "../../js/blocks-runtime.js",
     "../../../shared/js/home-quiz.js",
-    "../../../shared/assets/"
+    "../../assets/"
   ]
 }
