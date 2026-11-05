@@ -104,3 +104,6 @@ html body.barnes-media-header .mh-sticky-menu{display:none}
 /* Identical glyph inset on Media and owner/partner headers; retain the 44px touch target. */
 html body.barnes-media-header .site-header__left > .site-header__icon-btn{justify-content:flex-start!important}
 @media(min-width:1025px){html body.barnes-media-header .site-header__left > .site-header__icon-btn{width:33px!important;height:33px!important;min-width:33px!important;min-height:33px!important;flex:0 0 33px!important}}
+
+/* Direction pages use the burger only, without a second navigation row. */
+html body[data-node-shell].barnes-media-header .site-header__top {margin-bottom:0!important;}
