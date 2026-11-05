@@ -6,7 +6,7 @@
 
   var conditionsStylesheet = document.createElement('link');
   conditionsStylesheet.rel = 'stylesheet';
-  conditionsStylesheet.href = 'assets/conditions-heading.css?v=bbade4cf86ea';
+  conditionsStylesheet.href = 'assets/conditions-heading.css?v=20261009-pointer-hover';
   document.head.appendChild(conditionsStylesheet);
 
   page.querySelectorAll('.ambassadors-conditions__reveal').forEach(function (button) {
@@ -34,34 +34,71 @@
     });
   });
 
-  var brandCopy = document.querySelector('.partners-brand-block .about-company__copy');
-  var brandMoreButton = brandCopy && brandCopy.querySelector('.ui-more-link');
-  if (brandMoreButton) {
-    brandMoreButton.addEventListener('click', function () {
-      var expanded = brandCopy.classList.toggle('is-expanded');
-      brandMoreButton.setAttribute('aria-expanded', String(expanded));
-      brandMoreButton.querySelector('.ui-more-link__label').textContent = expanded ? 'Свернуть' : 'Читать далее';
+  // Same expandable About copy and logo sizing as the approved homepage.
+  var about = document.querySelector('.partners-brand-block .about-company');
+  if (about) {
+    var more = about.querySelector('.about-company__read-more');
+    var copy = about.querySelector('.about-company__copy-text');
+    var fitLogo = function () {
+      if (window.innerWidth < 1280) { about.style.removeProperty('--home-about-logo-size'); return; }
+      var content = about.querySelector('.about-company__content');
+      var intro = about.querySelector('.about-company__intro');
+      var wrapper = about.querySelector('.about-company__copy');
+      var size = intro.getBoundingClientRect().bottom - content.getBoundingClientRect().top + parseFloat(getComputedStyle(wrapper).marginTop) + more.getBoundingClientRect().height;
+      about.style.setProperty('--home-about-logo-size', size + 'px');
+    };
+    more.addEventListener('click', function () {
+      var open = more.getAttribute('aria-expanded') !== 'true';
+      more.setAttribute('aria-expanded', String(open)); copy.hidden = !open;
+      more.firstChild.textContent = open ? 'Свернуть' : 'Читать далее';
+      if (!open) more.scrollIntoView({ block: 'nearest' });
     });
+    var aboutResize = new ResizeObserver(fitLogo);
+    aboutResize.observe(about.querySelector('.about-company__title'));
+    aboutResize.observe(about.querySelector('.about-company__intro'));
+    window.addEventListener('resize', fitLogo, { passive: true });
+    document.fonts.ready.then(fitLogo); fitLogo();
+  }
+
+  // Native scrolling retains touch gestures; controls follow the slide list.
+  var benefits = document.querySelector('#partner-benefit-slides');
+  if (benefits) {
+    var benefitPrevious = document.querySelector('.ap-benefit-prev');
+    var benefitNext = document.querySelector('.ap-benefit-next');
+    var syncBenefits = function () {
+      benefitPrevious.disabled = benefits.scrollLeft < 2;
+      benefitNext.disabled = benefits.scrollLeft >= benefits.scrollWidth - benefits.clientWidth - 2;
+    };
+    var moveBenefits = function (direction) {
+      benefits.scrollBy({ left: direction * benefits.clientWidth, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth' });
+    };
+    benefitPrevious.addEventListener('click', function () { moveBenefits(-1); });
+    benefitNext.addEventListener('click', function () { moveBenefits(1); });
+    benefits.addEventListener('scroll', syncBenefits, { passive: true });
+    benefits.addEventListener('keydown', function (event) {
+      if (event.key === 'ArrowLeft' || event.key === 'ArrowRight') { event.preventDefault(); moveBenefits(event.key === 'ArrowLeft' ? -1 : 1); }
+    });
+    new ResizeObserver(syncBenefits).observe(benefits); syncBenefits();
   }
 
   var ownerShellStylesheet = document.createElement('link');
   ownerShellStylesheet.rel = 'stylesheet';
-  ownerShellStylesheet.href = 'assets/owner-shell.css?v=ee74ae468179';
+  ownerShellStylesheet.href = 'assets/owner-shell.css?v=20261009-newsletter-width';
   document.head.appendChild(ownerShellStylesheet);
 
   var modalStylesheet = document.createElement('link');
   modalStylesheet.rel = 'stylesheet';
-  modalStylesheet.href = 'assets/partner-modal.css?v=faa6a38e5a69';
+  modalStylesheet.href = 'assets/partner-modal.css?v=20261008-2';
   document.head.appendChild(modalStylesheet);
 
   var faqStylesheet = document.createElement('link');
   faqStylesheet.rel = 'stylesheet';
-  faqStylesheet.href = 'assets/faq-typography.css?v=588ee8d9d463';
+  faqStylesheet.href = 'assets/faq-typography.css?v=20261008-2';
   document.head.appendChild(faqStylesheet);
 
   var buttonStylesheet = document.createElement('link');
   buttonStylesheet.rel = 'stylesheet';
-  buttonStylesheet.href = 'assets/button-kit.css?v=98f549e5b1f0';
+  buttonStylesheet.href = 'assets/button-kit.css?v=20261008-2';
   document.head.appendChild(buttonStylesheet);
 
   document.body.classList.add('partners-owner-shell');
@@ -124,7 +161,7 @@
     var contacts = document.createElement('nav');
     contacts.className = 'owner-sale-hero-contacts';
     contacts.setAttribute('aria-label', 'Способы связи');
-    [['WhatsApp', 'https://wa.me/79252621650', '../pictures/office-contact/whatsapp.svg'], ['MAX', 'https://max.ru/join/AWj8ibiCtAPOJOlulMGNkykKGz_prXVWg-IQK1KpUG8', '../pictures/office-contact/max.svg'], ['Telegram', 'https://t.me/art_de_vivre_barnes', '../pictures/office-contact/telegram.svg']].forEach(function (item) {
+    [['WhatsApp', 'https://wa.me/79252621650', '../../shared/pictures/office-contact/whatsapp.svg'], ['MAX', 'https://max.ru/join/AWj8ibiCtAPOJOlulMGNkykKGz_prXVWg-IQK1KpUG8', '../../shared/pictures/office-contact/max.svg'], ['Telegram', 'https://t.me/art_de_vivre_barnes', '../../shared/pictures/office-contact/telegram.svg']].forEach(function (item) {
       var link = document.createElement('a');
       link.className = 'owner-sale-hero-contact';
       link.href = item[1];
@@ -166,7 +203,7 @@
     sticky.setAttribute('inert', '');
     sticky.innerHTML = '<div class="owner-sale-sticky__inner base-container"><nav class="owner-sale-sticky__nav" aria-label="Навигация по странице"><ul class="owner-sale-sticky__list">' + sections.map(function (item) {
       return '<li class="owner-sale-sticky__item"><a class="owner-sale-sticky__link" href="#' + item[1] + '">' + item[0] + '</a></li>';
-    }).join('') + '<li class="owner-sale-sticky__item owner-sale-sticky__item--contacts"><button class="owner-sale-sticky__contact-toggle" type="button" aria-expanded="false" aria-controls="partners-sticky-contacts" aria-label="Показать способы связи"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.5 9.8 9.8 0 0 1-4-.9L3 21l1.7-4.6A8.4 8.4 0 1 1 21 11.5Z"></path><path d="M8 12h.01M12 12h.01M16 12h.01"></path></svg></button></li></ul></nav><a class="owner-sale-sticky__logo" aria-label="BARN Estate — на главную" href="https://barn-estate.ru/"><img src="https://daniilterekh-prog.github.io/barnes-assets/brand/barn-estate/logo.svg" alt="BARN Estate" width="220" height="30" style="object-fit:contain;aspect-ratio:220 / 30"></a><div class="owner-sale-sticky__brand"><button class="owner-sale-sticky__request" type="button">Направить клиента</button><nav class="owner-sale-sticky__messengers" aria-label="Способы связи"><a class="owner-sale-sticky__messenger" href="https://wa.me/79252621650" target="_blank" rel="noopener noreferrer" aria-label="Написать в WhatsApp"><img src="../pictures/office-contact/whatsapp.svg" alt=""></a><a class="owner-sale-sticky__messenger" href="https://max.ru/join/AWj8ibiCtAPOJOlulMGNkykKGz_prXVWg-IQK1KpUG8" target="_blank" rel="noopener noreferrer" aria-label="Написать в MAX"><img src="../pictures/office-contact/max.svg" alt=""></a><a class="owner-sale-sticky__messenger" href="https://t.me/art_de_vivre_barnes" target="_blank" rel="noopener noreferrer" aria-label="Написать в Telegram"><img src="../pictures/office-contact/telegram.svg" alt=""></a><a class="owner-sale-sticky__phone" href="tel:74951825079" aria-label="Позвонить по номеру +7 495 182-50-79"><span class="owner-sale-sticky__phone-number">+7 (495) 182-50-79</span><span class="owner-sale-sticky__phone-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg></span></a></nav></div></div>';
+    }).join('') + '<li class="owner-sale-sticky__item owner-sale-sticky__item--contacts"><button class="owner-sale-sticky__contact-toggle" type="button" aria-expanded="false" aria-controls="partners-sticky-contacts" aria-label="Показать способы связи"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.5 9.8 9.8 0 0 1-4-.9L3 21l1.7-4.6A8.4 8.4 0 1 1 21 11.5Z"></path><path d="M8 12h.01M12 12h.01M16 12h.01"></path></svg></button></li></ul></nav><a class="owner-sale-sticky__logo" aria-label="BARN Estate — на главную" href="https://barn-estate.ru/"><img src="https://daniilterekh-prog.github.io/barnes-assets/brand/barn-estate/logo.svg" alt="BARN Estate" width="220" height="30" style="object-fit:contain;aspect-ratio:220 / 30"></a><div class="owner-sale-sticky__brand"><button class="owner-sale-sticky__request" type="button">Направить клиента</button><nav class="owner-sale-sticky__messengers" aria-label="Способы связи"><a class="owner-sale-sticky__messenger" href="https://wa.me/79252621650" target="_blank" rel="noopener noreferrer" aria-label="Написать в WhatsApp"><img src="../../shared/pictures/office-contact/whatsapp.svg" alt=""></a><a class="owner-sale-sticky__messenger" href="https://max.ru/join/AWj8ibiCtAPOJOlulMGNkykKGz_prXVWg-IQK1KpUG8" target="_blank" rel="noopener noreferrer" aria-label="Написать в MAX"><img src="../../shared/pictures/office-contact/max.svg" alt=""></a><a class="owner-sale-sticky__messenger" href="https://t.me/art_de_vivre_barnes" target="_blank" rel="noopener noreferrer" aria-label="Написать в Telegram"><img src="../../shared/pictures/office-contact/telegram.svg" alt=""></a><a class="owner-sale-sticky__phone" href="tel:74951825079" aria-label="Позвонить по номеру +7 495 182-50-79"><span class="owner-sale-sticky__phone-number">+7 (495) 182-50-79</span><span class="owner-sale-sticky__phone-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg></span></a></nav></div></div>';
     var panel = sticky.querySelector('.owner-sale-sticky__messengers').cloneNode(true);
     panel.id = 'partners-sticky-contacts';
     panel.className = 'owner-sale-sticky__contact-panel';
