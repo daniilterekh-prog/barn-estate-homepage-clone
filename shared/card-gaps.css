@@ -1,0 +1,6 @@
+/* Card spacing follows ambassador conditions; keep each block's grid/swipe layout. */
+html body#ui-kit-page {--barn-card-gap:47px;}
+html body#ui-kit-page :is(.owner-sale-presentation__grid,.media-weekly__layout,.media-weekly__grid) {gap:var(--barn-card-gap)!important;}
+@media(max-width:1440px){html body#ui-kit-page{--barn-card-gap:20px;}}
+@media(max-width:1024px){html body#ui-kit-page{--barn-card-gap:16px;}}
+@media(max-width:768px){html body#ui-kit-page{--barn-card-gap:12px;}}
