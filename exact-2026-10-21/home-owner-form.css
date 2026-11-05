@@ -246,3 +246,7 @@ body.barnes-home-typography[data-home-footer-action-visible=true] .floating-expe
 @media(max-width:580px) and (max-height:480px) {
  .barnes-template.owner-sale-reference-ui.home-quiz-host .home-owner-form--owner-sale .home-owner-form__hero {display:none;}
 }
+
+/* Component boundaries: page-wide input/button rules must not change dialog geometry. */
+.barnes-template.owner-sale-reference-ui.home-owner-host .home-owner-form__input{border-radius:1px!important}
+.barnes-template.owner-sale-reference-ui.home-owner-host :is(.modal__content,.home-owner-form__submit,.home-owner-form__channels button,.home-quiz__option,.home-quiz__next){border-radius:1px!important}

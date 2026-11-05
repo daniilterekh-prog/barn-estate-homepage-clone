@@ -297,93 +297,6 @@
     }
   }
 
-  function enhanceFeedbackModal() {
-    var modal = document.querySelector('.feedback-modal');
-    var layout = modal && modal.querySelector('.feedback-modal__layout');
-    var hero = modal && modal.querySelector('.feedback-modal__hero');
-    var body = modal && modal.querySelector('.feedback-modal__body');
-    var form = modal && modal.querySelector('.feedback-modal__form');
-    var title = modal && modal.querySelector('.feedback-modal__title');
-
-    if (!modal || !layout || !hero || !body || !form || !title) return;
-    if (modal.dataset.ownerRentModal === 'true') return;
-    modal.dataset.ownerRentModal = 'true';
-    modal.classList.add('feedback-modal--owner-rent');
-
-    title.textContent = 'За сколько можно сдать вашу недвижимость?';
-    var intro = document.createElement('p');
-    intro.className = 'feedback-modal__intro';
-    intro.textContent = 'Поможем определить арендную ставку и найти подходящего арендатора.';
-    title.insertAdjacentElement('afterend', intro);
-
-    hero.querySelectorAll('.feedback-modal__hero-overlay, .feedback-modal__brand').forEach(function (node) {
-      node.remove();
-    });
-    var image = hero.querySelector('.feedback-modal__hero-image');
-    if (image) {
-      var picture = document.createElement('picture');
-      var source = document.createElement('source');
-      source.media = '(max-width: 580px)';
-      source.srcset = new URL('../shared/assets/modal-ruslan-organic.webp', window.location.href).href;
-      image.parentNode.insertBefore(picture, image);
-      picture.append(source, image);
-      image.src = source.srcset;
-      image.alt = 'Руслан Прус — руководитель департамента городской недвижимости BARN Estate';
-    }
-
-    var channels = document.createElement('div');
-    channels.className = 'feedback-modal__channels';
-    channels.setAttribute('role', 'group');
-    channels.setAttribute('aria-label', 'Способ связи');
-    var channelValue = document.createElement('input');
-    channelValue.type = 'hidden';
-    channelValue.name = 'preferredChannel';
-    channelValue.value = 'Telegram';
-    ['Telegram', 'WhatsApp', 'MAX', 'Звонок'].forEach(function (channel, index) {
-      var button = document.createElement('button');
-      button.type = 'button';
-      button.textContent = channel;
-      button.dataset.channel = channel;
-      button.setAttribute('aria-pressed', index === 0 ? 'true' : 'false');
-      channels.appendChild(button);
-    });
-
-    var fields = form.querySelectorAll('.feedback-modal__input');
-    var firstField = fields[0] && fields[0].closest('.feedback-modal__field');
-    if (firstField) form.insertBefore(channels, firstField);
-    form.appendChild(channelValue);
-
-    if (fields[0]) {
-      fields[0].name = fields[0].name || 'name';
-      fields[0].placeholder = 'Ваше имя';
-      fields[0].setAttribute('aria-label', 'Ваше имя');
-    }
-    if (fields[1]) {
-      fields[1].name = fields[1].name || 'phone';
-      fields[1].placeholder = 'Номер телефона в Telegram';
-      fields[1].setAttribute('aria-label', 'Номер телефона в Telegram');
-    }
-
-    var submit = form.querySelector('.feedback-modal__submit');
-    if (submit) submit.textContent = 'Получить оценку';
-
-    channels.addEventListener('click', function (event) {
-      var button = event.target.closest('button[data-channel]');
-      if (!button) return;
-      channels.querySelectorAll('button').forEach(function (item) {
-        item.setAttribute('aria-pressed', String(item === button));
-      });
-      channelValue.value = button.dataset.channel;
-      if (fields[1]) {
-        var label = button.dataset.channel === 'Звонок' ? 'Номер телефона' : 'Номер телефона в ' + button.dataset.channel;
-        fields[1].placeholder = label;
-        fields[1].setAttribute('aria-label', label);
-      }
-    });
-
-    layout.insertBefore(body, hero);
-  }
-
   function enhanceExclusiveSection() {
     var section = document.querySelector('.owner-sale-exclusive');
     var inner = section && section.querySelector('.owner-sale-exclusive__inner');
@@ -804,7 +717,6 @@
       enhanceAmbassadorsLinks();
       enhanceHeroSection();
       enhanceStickyHeader();
-      enhanceFeedbackModal();
       enhanceServicesSection();
       enhanceExclusiveSection();
       enhanceSectionHeadings();
@@ -847,7 +759,6 @@
 
   new MutationObserver(function () {
     syncMenuState();
-    enhanceFeedbackModal();
     scheduleServicesEnhancement();
   }).observe(document.documentElement, {
     childList: true,

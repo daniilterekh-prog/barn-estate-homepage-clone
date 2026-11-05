@@ -51,14 +51,6 @@
     document.body.style.overflow = '';
   };
 
-  let feedbackReturnFocus = null;
-  const closeFeedbackDialog = function () {
-    const modal = document.querySelector('.feedback-modal');
-    if (modal) modal.setAttribute('hidden', '');
-    unlockBodyScroll();
-    if (feedbackReturnFocus && feedbackReturnFocus.isConnected) feedbackReturnFocus.focus();
-  };
-
   const syncMenuState = function () {
     if (!menuButton) return;
     const menuId = 'owner-sale-site-menu';
@@ -490,129 +482,7 @@
     expert.setAttribute('data-v-cd0a1259', '');
     document.body.appendChild(expert);
 
-    const feedbackModal = document.createElement('div');
-    feedbackModal.className = 'modal feedback-modal vfm vfm--fixed vfm--inset';
-    feedbackModal.setAttribute('role', 'dialog');
-    feedbackModal.setAttribute('aria-modal', 'true');
-    feedbackModal.setAttribute('hidden', '');
-    feedbackModal.innerHTML = '<div class="vfm__overlay vfm--overlay vfm--absolute vfm--inset vfm--prevent-none" aria-hidden="true"></div><div class="vfm__content vfm--outline-none modal__content" tabindex="0"><button type="button" class="modal__close" aria-label="Закрыть"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg></button><div class="feedback-modal__layout"><div class="feedback-modal__hero"><img src="assets/feedback-hero.webp" alt="" class="feedback-modal__hero-image" width="840" height="360" loading="lazy"><div class="feedback-modal__hero-overlay" aria-hidden="true"></div><div class="feedback-modal__brand"><img src="https://daniilterekh-prog.github.io/barnes-assets/brand/barn-estate/logo.svg" alt="BARN Estate" class="feedback-modal__logo" width="220" height="30" style="object-fit:contain;aspect-ratio:220 / 30"></div></div><div class="feedback-modal__body"><h2 class="feedback-modal__title">Обратная связь</h2><form class="feedback-modal__form" novalidate><div class="feedback-modal__honeypot" aria-hidden="true"><input type="text" tabindex="-1" autocomplete="off"></div><label class="feedback-modal__field"><input type="text" class="feedback-modal__input" autocomplete="name" placeholder="Введите Ваше Имя:"></label><label class="feedback-modal__field"><input type="text" inputmode="tel" class="feedback-modal__input" autocomplete="tel" placeholder="Ваш номер телефона:"></label><button formnovalidate type="submit" class="ui-button ui-button--primary ui-button--large ui-button--full feedback-modal__submit">Отправить заявку</button><label class="feedback-modal__consent"><input type="checkbox" class="feedback-modal__consent-input"><span class="feedback-modal__consent-box" aria-hidden="true"></span><span class="feedback-modal__consent-text"> Я даю согласие на обработку <a class="feedback-modal__consent-link" target="_blank" href="https://front.barnes.vsavr.ru/legal_notices/yuridicheskie-uvedomleniya/"> персональных данных </a></span></label></form></div></div></div>';
-    feedbackModal.querySelector('.modal__close').setAttribute('data-v-fd466e7b', '');
-    feedbackModal.querySelectorAll('.feedback-modal__layout, .feedback-modal__layout *').forEach(function (element) {
-      element.setAttribute('data-v-231b17b3', '');
-    });
-    feedbackModal.querySelector('.feedback-modal__submit').setAttribute('data-v-0abc262e', '');
-    document.body.appendChild(feedbackModal);
-
-    feedbackModal.classList.add('feedback-modal--owner-sale');
-    const feedbackLayout = feedbackModal.querySelector('.feedback-modal__layout');
-    const feedbackHero = feedbackModal.querySelector('.feedback-modal__hero');
-    const feedbackBody = feedbackModal.querySelector('.feedback-modal__body');
-    const feedbackForm = feedbackModal.querySelector('.feedback-modal__form');
-    const feedbackTitle = feedbackModal.querySelector('.feedback-modal__title');
-    const feedbackImage = feedbackModal.querySelector('.feedback-modal__hero-image');
-
-    feedbackTitle.textContent = 'Узнайте рыночную стоимость вашей недвижимости';
-    const feedbackIntro = document.createElement('p');
-    feedbackIntro.className = 'feedback-modal__intro';
-    feedbackIntro.textContent = 'Поможем определить рыночную стоимость и подготовить эффективную стратегию продажи.';
-    feedbackTitle.insertAdjacentElement('afterend', feedbackIntro);
-
-    feedbackHero.querySelectorAll('.feedback-modal__hero-overlay, .feedback-modal__brand').forEach(function (node) {
-      node.remove();
-    });
-    const feedbackPicture = document.createElement('picture');
-    const feedbackSource = document.createElement('source');
-    feedbackSource.media = '(max-width: 580px)';
-    feedbackSource.srcset = '../shared/assets/modal-ruslan-organic.webp';
-    feedbackImage.parentNode.insertBefore(feedbackPicture, feedbackImage);
-    feedbackPicture.append(feedbackSource, feedbackImage);
-    feedbackImage.src = feedbackSource.srcset;
-    feedbackImage.alt = 'Руслан Прус — руководитель департамента городской недвижимости BARN Estate';
-
-    const feedbackChannels = document.createElement('div');
-    feedbackChannels.className = 'feedback-modal__channels';
-    feedbackChannels.setAttribute('role', 'group');
-    feedbackChannels.setAttribute('aria-label', 'Способ связи');
-    const feedbackChannelValue = document.createElement('input');
-    feedbackChannelValue.type = 'hidden';
-    feedbackChannelValue.name = 'preferredChannel';
-    feedbackChannelValue.value = 'Telegram';
-    ['Telegram', 'WhatsApp', 'MAX', 'Звонок'].forEach(function (channel, index) {
-      const button = document.createElement('button');
-      button.type = 'button';
-      button.textContent = channel;
-      button.dataset.channel = channel;
-      button.setAttribute('aria-pressed', index === 0 ? 'true' : 'false');
-      feedbackChannels.appendChild(button);
-    });
-
-    const feedbackFields = feedbackForm.querySelectorAll('.feedback-modal__input');
-    feedbackForm.insertBefore(feedbackChannels, feedbackFields[0].closest('.feedback-modal__field'));
-    feedbackForm.appendChild(feedbackChannelValue);
-    feedbackFields[0].name = 'name';
-    feedbackFields[0].placeholder = 'Ваше имя';
-    feedbackFields[0].setAttribute('aria-label', 'Ваше имя');
-    feedbackFields[1].name = 'phone';
-    feedbackFields[1].placeholder = 'Номер телефона в Telegram';
-    feedbackFields[1].setAttribute('aria-label', 'Номер телефона в Telegram');
-    feedbackModal.querySelector('.feedback-modal__submit').textContent = 'Получить оценку';
-
-    feedbackChannels.addEventListener('click', function (event) {
-      const button = event.target.closest('button[data-channel]');
-      if (!button) return;
-      feedbackChannels.querySelectorAll('button').forEach(function (item) {
-        item.setAttribute('aria-pressed', String(item === button));
-      });
-      feedbackChannelValue.value = button.dataset.channel;
-      const phoneLabel = button.dataset.channel === 'Звонок' ? 'Номер телефона' : 'Номер телефона в ' + button.dataset.channel;
-      feedbackFields[1].placeholder = phoneLabel;
-      feedbackFields[1].setAttribute('aria-label', phoneLabel);
-    });
-
-    feedbackLayout.insertBefore(feedbackBody, feedbackHero);
-
-    const openFeedback = function () {
-      feedbackReturnFocus = document.activeElement;
-      feedbackModal.removeAttribute('hidden');
-      lockBodyScroll();
-      feedbackModal.querySelector('.feedback-modal__input')?.focus();
-    };
-    expert.querySelector('.floating-expert__card').addEventListener('click', function () {
-      openFeedback('Обратная связь');
-    });
-    expert.querySelector('.floating-expert__close').addEventListener('click', function (event) {
-      event.stopPropagation();
-      expert.remove();
-    });
-
-    [['.owner-sale-hero__button', 'Получить консультацию'], ['.owner-sale-sticky__request', 'Оставить заявку'], ['.owner-sale-stages__offer-btn', 'Отправить заявку'], ['.owner-sale-strategy__button', 'Обсудить стратегию'], ['.catalog-contact__card-submit', 'ПОЛУЧИТЕ ПРЕДВАРИТЕЛЬНУЮ ОЦЕНКУ ОБЪЕКТА'], ['.site-footer__callback-btn', 'Обратная связь']].forEach(function (item) {
-      document.querySelectorAll(item[0]).forEach(function (button) {
-        button.addEventListener('click', function () {
-          openFeedback(item[1]);
-        });
-      });
-    });
-  }
-
-  const liveFeedbackModal = document.querySelector('.feedback-modal');
-  if (liveFeedbackModal) {
-    const closeLiveFeedback = closeFeedbackDialog;
-    liveFeedbackModal.querySelectorAll('.modal__close, .vfm__overlay').forEach(function (control) {
-      control.addEventListener('click', closeLiveFeedback);
-    });
-    document.addEventListener('keydown', function (event) {
-      if (liveFeedbackModal.hasAttribute('hidden')) return;
-      if (event.key === 'Escape') {
-        event.preventDefault();
-        closeLiveFeedback();
-      } else if (event.key === 'Tab') {
-        const items = Array.from(liveFeedbackModal.querySelectorAll('button,input,a[href],select,textarea,[tabindex]'))
-          .filter(function (element) { return element.tabIndex >= 0 && !element.disabled && !element.closest('[aria-hidden="true"]') && element.getBoundingClientRect().width > 0; });
-        const first = items[0], last = items[items.length - 1];
-        if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last?.focus(); }
-        else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first?.focus(); }
-      }
-    });
+    expert.querySelector('.floating-expert__close').addEventListener('click',function(event){event.stopPropagation();expert.remove();});
   }
 
   page.querySelectorAll('.owner-sale-services__slider-wrap').forEach(function (wrap) {
