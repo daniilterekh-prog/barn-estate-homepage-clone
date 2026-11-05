@@ -1,0 +1,48 @@
+/* Vertical roles from the approved home-spacing.css / UI-kit v1.0.3.
+ * Scope: five direction nodes. Each interval is owned once, never margin + gap. */
+@layer barn-node-spacing {
+ html body[data-node-shell] {
+  --node-section-space:clamp(72px,6vw,100px);
+  --node-brow-gap:25px;--node-heading-content:40px;--node-copy-gap:24px;
+ }
+ @media(max-width:1024px){html body[data-node-shell]{--node-brow-gap:12px;}}
+ @media(max-width:540px){html body[data-node-shell]{--node-section-space:48px;--node-heading-content:28px;--node-copy-gap:16px;}}
+ html body[data-node-shell] :is(.catalog-best-offers,.catalog-map,.catalog-grid,.catalog-intro,.catalog-consultation,.departments-section,.news-section,.catalog-seo-links,.catalog-faq,.catalog-contact) {
+  padding-block:var(--node-section-space)!important;margin-block:0!important;
+ }
+ html body[data-node-shell] :is(.catalog-section-eyebrow,.catalog-intro__eyebrow,.news-section__eyebrow) {
+  display:block!important;flex-shrink:0!important;padding:0!important;margin:0 0 var(--node-brow-gap)!important;
+ }
+ html body[data-node-shell] :is(.catalog-best-offers__title,.catalog-map__title,.catalog-grid__title,.catalog-intro__title,.departments-section__title,.news-section__title,.catalog-faq__title,.catalog-consultation__subtitle,.catalog-consultation__mobile-title,.catalog-contact__title) {margin-block:0!important;}
+ html body[data-node-shell] :is(.catalog-best-offers__header,.catalog-map__header,.catalog-grid__header,.catalog-intro__content,.departments-section__heading,.news-section__header,.catalog-faq__inner) {
+  row-gap:0!important;padding-block:0!important;
+ }
+ html body[data-node-shell] :is(.catalog-best-offers__container,.catalog-grid__inner,.catalog-intro__inner,.departments-section__inner,.news-section__inner,.catalog-faq__inner) {padding-block:0!important;}
+ /* Start-sales: the slider is a sibling of the heading container. */
+ html body[data-node-shell] .catalog-best-offers {row-gap:0!important;}
+ html body[data-node-shell] .catalog-best-offers__container {row-gap:0!important;margin-block:0!important;}
+ html body[data-node-shell] .catalog-best-offers__header {margin-block:0!important;}
+ html body[data-node-shell] .catalog-best-offers__slider-row {margin-top:var(--node-heading-content)!important;}
+ /* Map: description belongs to the heading, then one content interval. */
+ html body[data-node-shell] .catalog-map>.base-container {row-gap:0!important;}
+ html body[data-node-shell] .catalog-map__header {margin:0 0 var(--node-heading-content)!important;}
+ html body[data-node-shell] .catalog-map__text {margin:var(--node-copy-gap) 0 0!important;}
+ html body[data-node-shell] .catalog-projects-map {margin-top:0!important;}
+ /* Catalog controls keep their own existing internal intervals. */
+ html body[data-node-shell] .catalog-grid__inner {row-gap:0!important;}
+ html body[data-node-shell] .catalog-grid__header {margin:0 0 var(--node-heading-content)!important;}
+ html body[data-node-shell] .catalog-mode-toolbar {margin-top:0!important;}
+ /* Editorial intro: eyebrow -> H2 -> description, without a second flex gap. */
+ html body[data-node-shell] .catalog-intro__text-block {margin-top:var(--node-copy-gap)!important;}
+ html body[data-node-shell] .catalog-intro__text-block>.catalog-intro__lead {margin-top:0!important;}
+ @media(max-width:540px){html body[data-node-shell] .catalog-intro__inner{row-gap:var(--node-heading-content)!important;}}
+ /* Directions/news: the parent gap owns heading -> cards. */
+ html body[data-node-shell] :is(.departments-section__inner,.news-section__inner) {row-gap:var(--node-heading-content)!important;}
+ html body[data-node-shell] :is(.departments-section__header,.news-section__header) {margin-block:0!important;}
+ /* FAQ has no separate heading wrapper: margin belongs to the answer grid. */
+ html body[data-node-shell] .catalog-faq__grid {margin-top:var(--node-heading-content)!important;}
+ /* Photo CTA: retain the card's inner grid, normalize heading and form spacing. */
+ html body[data-node-shell] :is(.catalog-consultation__header,.catalog-consultation__mobile-header,.catalog-contact__header) {row-gap:0!important;margin:0 0 var(--node-heading-content)!important;}
+ html body[data-node-shell] :is(.catalog-consultation__lead,.catalog-consultation__mobile-lead,.catalog-contact__subtitle) {margin:var(--node-copy-gap) 0 0!important;}
+ html body[data-node-shell] :is(.catalog-consultation__methods,.catalog-contact__methods) {margin-bottom:var(--node-copy-gap)!important;}
+}
