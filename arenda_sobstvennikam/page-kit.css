@@ -50,7 +50,7 @@ html body.barnes-page-kit[data-page-kit]:is(#partners-kit-page,#ui-kit-page) .si
 @media(max-width:1279px){html body.barnes-page-kit[data-page-kit]:is(#partners-kit-page,#ui-kit-page) .catalog-contact__methods{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:540px){
  /* Owner presentation cards share ambassador conditions' mobile text sizes. */
- html body#ui-kit-page.barnes-page-kit[data-page-kit] .owner-sale-presentation :is(.owner-sale-presentation__caption,.owner-sale-presentation__featured-title){font-size:20px!important;line-height:24px!important}
+ html body#ui-kit-page.barnes-page-kit[data-page-kit] .owner-sale-presentation :is(.owner-sale-presentation__caption,.owner-sale-presentation__featured-title){font-size:20px!important;line-height:24px!important;overflow-wrap:anywhere}
  html body#ui-kit-page.barnes-page-kit[data-page-kit] .owner-sale-presentation :is(.owner-sale-presentation__reveal-text,.owner-sale-presentation__featured-text){font-size:16px!important;line-height:22.4px!important}
  html body.barnes-page-kit[data-page-kit]:is(#partners-kit-page,#ui-kit-page) .newsletter-cta h2{line-height:1.2!important}
  html body.barnes-page-kit[data-page-kit]:is(#partners-kit-page,#ui-kit-page) :is(.ap-action,.bd-cta,.catalog-contact__submit,.catalog-consultation__button,.newsletter-form__row>button,.site-footer__callback-btn){width:100%!important;justify-content:center!important;text-align:center!important}
