@@ -67,13 +67,6 @@ body#partners-kit-page.barnes-media-reference.partners-owner-shell{
 #partners-kit-page.barnes-media-reference.partners-owner-shell :is(.newsletter-form__row>input,.feedback-modal__input,.catalog-contact__input,.catalog-contact__textarea){font-size:var(--reference-field)!important;line-height:1.4!important;font-weight:300!important;border-radius:1px}
 #partners-kit-page.barnes-media-reference.partners-owner-shell :is(.newsletter-form__row>input,.feedback-modal__input){color:var(--pk-primary)!important}
 #partners-kit-page.barnes-media-reference.partners-owner-shell :is(.newsletter-form__row>input,.feedback-modal__input)::placeholder{color:var(--pk-muted)!important}
-#partners-kit-page.barnes-media-reference.partners-owner-shell .feedback-modal__title{font-size:var(--pk-card)!important;line-height:1.2!important;font-weight:400!important;letter-spacing:0!important}
-#partners-kit-page.barnes-media-reference.partners-owner-shell .feedback-modal__intro{font-size:var(--reference-lead)!important;line-height:var(--reference-lead-line)!important;font-weight:300!important;color:var(--pk-secondary)!important}
-#partners-kit-page.barnes-media-reference.partners-owner-shell .feedback-modal__consent{font-size:13px!important;line-height:18px!important;font-weight:300!important;color:var(--pk-muted)!important}
-#partners-kit-page.barnes-media-reference.partners-owner-shell .feedback-modal__channels{gap:12px;border:0;grid-template-columns:repeat(4,minmax(0,1fr))}
-#partners-kit-page.barnes-media-reference.partners-owner-shell .feedback-modal__channels button{font:400 var(--reference-action)/1.1 "Tilda Sans",sans-serif;min-height:46px;padding:10px 8px;border:1px solid #8b8986;border-radius:1px;margin:0;white-space:nowrap}
-#partners-kit-page.barnes-media-reference.partners-owner-shell .feedback-modal__channels button[aria-pressed=true]{background:#f9f3f3;border-color:var(--pk-brand);color:var(--pk-brand)}
-@media(max-width:1024px){#partners-kit-page.barnes-media-reference.partners-owner-shell .feedback-modal__channels{grid-template-columns:repeat(2,minmax(0,1fr))}}
 /* Footer typography follows the same homepage responsive roles; background is unchanged. */
 #partners-kit-page.barnes-media-reference.partners-owner-shell .site-footer__column-title{font-size:18px;font-weight:400;line-height:1;margin-bottom:30px}
 #partners-kit-page.barnes-media-reference.partners-owner-shell .site-footer__link{font-size:16px;font-weight:300;line-height:1}
@@ -88,7 +81,6 @@ body#partners-kit-page.barnes-media-reference.partners-owner-shell{
 #partners-kit-page.barnes-media-reference.partners-owner-shell .ambassadors-conditions__header .partners-section-eyebrow{text-align:left!important}
 #partners-kit-page.barnes-media-reference.partners-owner-shell .about-company__fact-label{font-size:13px!important;line-height:18px!important;font-weight:300!important;color:var(--pk-muted)!important}
 #partners-kit-page.barnes-media-reference.partners-owner-shell :is(.catalog-faq__answer-content,.catalog-faq__answer-content p){font-size:var(--reference-lead)!important;line-height:var(--reference-lead-line)!important;font-weight:300!important;color:var(--pk-secondary)!important}
-#partners-kit-page.barnes-media-reference.partners-owner-shell .feedback-modal__close{width:44px;height:44px}
 
 /* FAQ uses __grid; mobile primary actions follow the owner contact button alignment. */
 @media(max-width:540px){

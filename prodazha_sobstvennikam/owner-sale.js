@@ -18,25 +18,6 @@
     lead.hidden = true;
   });
 
-  const lowerContact = page.querySelector('.catalog-contact');
-  if (lowerContact) {
-    const contactTitle = lowerContact.querySelector('.catalog-contact__title');
-    const cardTitle = lowerContact.querySelector('.catalog-contact__card-title');
-    if (contactTitle) contactTitle.textContent = 'Получите персональную консультацию';
-    if (cardTitle) cardTitle.textContent = 'Получите предварительную оценку объекта';
-
-    lowerContact.querySelectorAll('.catalog-contact__expert-photo img, .catalog-contact__mobile-photo img').forEach(function (image) {
-      image.src = 'assets/ruslan.webp';
-      image.alt = 'Руслан Прус';
-    });
-    lowerContact.querySelectorAll('.catalog-contact__expert-name, .catalog-contact__mobile-name').forEach(function (name) {
-      name.textContent = 'Руслан Прус';
-    });
-    lowerContact.querySelectorAll('.catalog-contact__expert-role, .catalog-contact__mobile-role').forEach(function (role) {
-      role.textContent = 'Руководитель департамента городской недвижимости';
-    });
-  }
-
   const menuButton = document.querySelector('[aria-label="Открыть меню"]');
   let menu = document.querySelector('.site-menu');
   const sticky = page.querySelector('.owner-sale-sticky');
@@ -163,7 +144,6 @@
       ['.owner-sale-strategy__title', 'СТРАТЕГИЯ BARN Estate'],
       ['.owner-sale-presentation__title', 'СТРАТЕГИЯ ПРЕЗЕНТАЦИИ'],
       ['.about-company__title', 'BARN Estate / МОСКВА'],
-      ['.newsletter-cta h2', 'BARN Estate / АНАЛИТИКА']
     ].forEach(function (item) {
       const title = document.querySelector(item[0]);
       const container = title && title.parentElement;
@@ -201,7 +181,6 @@
   const enhanceFormAccessibility = function () {
     const fieldMap = [
       ['.catalog-consultation__input', ['Ваше имя', 'Номер телефона']],
-      ['.catalog-contact__input', ['Ваше имя', 'Номер телефона']]
     ];
 
     fieldMap.forEach(function (item) {
@@ -213,11 +192,11 @@
       });
     });
 
-    page.querySelectorAll('.catalog-consultation__textarea, .catalog-contact__textarea').forEach(function (field) {
+    page.querySelectorAll('.catalog-consultation__textarea').forEach(function (field) {
       if (!field.hasAttribute('aria-label')) field.setAttribute('aria-label', 'Комментарий');
     });
 
-    page.querySelectorAll('.catalog-consultation__consent-input, .catalog-contact__consent-input').forEach(function (field) {
+    page.querySelectorAll('.catalog-consultation__consent-input').forEach(function (field) {
       if (!field.hasAttribute('aria-label')) field.setAttribute('aria-label', 'Согласие на обработку персональных данных');
     });
 
@@ -605,7 +584,6 @@
     '.owner-sale-presentation img',
     '.catalog-consultation img',
     '.owner-sale-types img',
-    '.catalog-contact img',
     '.newsletter-cta img'
   ].join(',')).forEach(function (image) {
     image.setAttribute('loading', 'eager');

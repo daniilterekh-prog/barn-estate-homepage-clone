@@ -625,11 +625,6 @@
         selector: '.about-company__title',
         eyebrow: 'BARN Estate / МОСКВА',
         id: 'owner-rent-about-title'
-      },
-      {
-        selector: '.newsletter-cta h2',
-        eyebrow: 'BARN Estate / АНАЛИТИКА',
-        id: 'owner-rent-newsletter-title'
       }
     ];
 
