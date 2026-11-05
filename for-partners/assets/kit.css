@@ -32,11 +32,12 @@ body#partners-kit-page.barnes-media-reference.partners-owner-shell{
 #partners-kit-page.barnes-media-reference.partners-owner-shell .ap-header .ap-lead{margin-top:var(--pk-copy-gap)!important}
 #partners-kit-page.barnes-media-reference.partners-owner-shell .ap-number{font:400 var(--reference-eyebrow)/1.15 "Tilda Sans",sans-serif;letter-spacing:.12em;color:var(--pk-brand)}
 /* Text benefits and photo conditions use the registered Benefit/Card role, not Media caption sizing. */
-#partners-kit-page.barnes-media-reference.partners-owner-shell :is(.ap-section h3,.ambassadors-conditions__copy .ambassadors-conditions__title){font-family:"Tilda Sans",system-ui,sans-serif!important;font-size:var(--pk-card)!important;line-height:1.2!important;font-weight:400!important;letter-spacing:0!important}
+#partners-kit-page.barnes-media-reference.partners-owner-shell .ap-section h3{font-family:"Tilda Sans",system-ui,sans-serif!important;font-size:var(--pk-card)!important;line-height:1.2!important;font-weight:400!important;letter-spacing:0!important}
+#partners-kit-page.barnes-media-reference.partners-owner-shell .ambassadors-conditions__copy .ambassadors-conditions__title{font-family:"Tilda Sans",system-ui,sans-serif!important;font-size:var(--pk-card)!important;line-height:1.2!important;font-weight:300!important;letter-spacing:0!important}
 #partners-kit-page.barnes-media-reference.partners-owner-shell :is(.bd-heading h3,.catalog-contact__card-title,.catalog-contact__expert-name){font-size:var(--pk-expert)!important;line-height:1.2!important;font-weight:400!important;letter-spacing:0!important}
 #partners-kit-page.barnes-media-reference.partners-owner-shell .catalog-contact__card-text{font-size:var(--reference-lead)!important;line-height:var(--reference-lead-line)!important;font-weight:300!important}
 #partners-kit-page.barnes-media-reference.partners-owner-shell .ambassadors-conditions__description{font-size:22px!important;line-height:28.16px!important;font-weight:300!important}
-@media(max-width:1024px){#partners-kit-page.barnes-media-reference.partners-owner-shell .ambassadors-conditions__description{font-size:16px!important;line-height:22.4px!important;font-weight:400!important}}
+@media(max-width:1024px){#partners-kit-page.barnes-media-reference.partners-owner-shell .ambassadors-conditions__description{font-size:16px!important;line-height:22.4px!important;font-weight:300!important}}
 /* Facts/numerals keep the direction component scale; narrative facts use the body line-height. */
 #partners-kit-page.barnes-media-reference.partners-owner-shell :is(.bd-intro,.bd-facttext,.bd-label,.bd-price-label,.bd-words,.bd-commission-note){font-size:var(--reference-lead)!important;line-height:var(--reference-lead-line)!important;font-weight:300!important}
 #partners-kit-page.barnes-media-reference.partners-owner-shell .bd-navbtn{font:400 16px/1.4 "Tilda Sans",sans-serif;min-height:44px;padding-block:10px}
