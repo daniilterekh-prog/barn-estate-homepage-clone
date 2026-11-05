@@ -31,7 +31,7 @@
  }, true);
  document.addEventListener('submit', event => {
   // The imported homepage quiz validates locally and never sends a request.
-  if(event.target.matches('.home-owner-form__form')&&event.target.closest('.home-quiz-host'))return;
+  if(event.target.matches('.home-quiz__contact')&&event.target.closest('.homepage-quiz-host'))return;
   event.preventDefault(); event.stopImmediatePropagation();
   alert('Это локальная копия. Отправка формы не подключена.');
  }, true);
