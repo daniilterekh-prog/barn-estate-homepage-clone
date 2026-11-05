@@ -29,7 +29,7 @@
   const footerTemplate=document.createElement('template');footerTemplate.innerHTML=window.CommercialReferenceFooter;
   document.querySelector('.site-footer').replaceWith(footerTemplate.content.firstElementChild);
   document.querySelector('.site-footer__callback-btn').addEventListener('click',event=>window.CommercialOpenCallback(event.currentTarget));
-  await load('js/filters-modal.js');
+  await load('js/filters-modal.js?v=20261105-node-filters-2');
   document.querySelectorAll('[data-commercial-filters]').forEach(button=>button.setAttribute('aria-controls',modal.id));
   // Preserve the front commercial zero-results capture; do not borrow resort projects.
   window.BarnesMapProjects=[];
@@ -37,7 +37,7 @@
   const districtField=document.createElement('label');districtField.className='map-browser__field commercial-district';
   districtField.innerHTML=districtIcon+'<input data-filter="district" aria-label="Район" type="text">';
   document.querySelector('.map-browser__filters').prepend(districtField);
-  await load('js/quick-filters.js');
+  await load('js/quick-filters.js?v=20261105-node-filters-2');
   await load('js/brand-filters.js');
   // Purchase/rent replaces residential markets, sharing selection with the map.
   function dealSwitch(context) {
@@ -113,7 +113,7 @@
     svg.setAttribute('viewBox','0 0 24 24');svg.setAttribute('stroke','none');svg.setAttribute('aria-hidden','true');svg.innerHTML=phoneArtwork;
   });
   await styles('css/home-kit.css');
-  await load('js/catalog-filters.js');
+  await load('js/catalog-filters.js?v=20261105-node-filters-2');
   await styles('css/catalog-filters.css?v=e725d8c23703');
   await styles('css/commercial-filter-layout.css?v=01ab9832829e');
   document.body.dataset.commercialHomeKit='1.0.0';
