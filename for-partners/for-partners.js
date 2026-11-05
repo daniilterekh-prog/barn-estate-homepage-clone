@@ -34,32 +34,6 @@
     });
   });
 
-  // Same expandable About copy and logo sizing as the approved homepage.
-  var about = document.querySelector('.partners-brand-block .about-company');
-  if (about) {
-    var more = about.querySelector('.about-company__read-more');
-    var copy = about.querySelector('.about-company__copy-text');
-    var fitLogo = function () {
-      if (window.innerWidth < 1280) { about.style.removeProperty('--home-about-logo-size'); return; }
-      var content = about.querySelector('.about-company__content');
-      var intro = about.querySelector('.about-company__intro');
-      var wrapper = about.querySelector('.about-company__copy');
-      var size = intro.getBoundingClientRect().bottom - content.getBoundingClientRect().top + parseFloat(getComputedStyle(wrapper).marginTop) + more.getBoundingClientRect().height;
-      about.style.setProperty('--home-about-logo-size', size + 'px');
-    };
-    more.addEventListener('click', function () {
-      var open = more.getAttribute('aria-expanded') !== 'true';
-      more.setAttribute('aria-expanded', String(open)); copy.hidden = !open;
-      more.firstChild.textContent = open ? 'Свернуть' : 'Читать далее';
-      if (!open) more.scrollIntoView({ block: 'nearest' });
-    });
-    var aboutResize = new ResizeObserver(fitLogo);
-    aboutResize.observe(about.querySelector('.about-company__title'));
-    aboutResize.observe(about.querySelector('.about-company__intro'));
-    window.addEventListener('resize', fitLogo, { passive: true });
-    document.fonts.ready.then(fitLogo); fitLogo();
-  }
-
   // Native scrolling retains touch gestures; controls follow the slide list.
   var benefits = document.querySelector('#partner-benefit-slides');
   if (benefits) {
