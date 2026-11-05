@@ -1,0 +1,88 @@
+name: Publish Pages package
+
+on:
+  push:
+    branches: [master]
+    paths-ignore:
+      - 'README.md'
+      - 'PAGES.md'
+      - 'STRUCTURE.md'
+      - 'docs/**'
+      - 'tests/**'
+      - '**/verification/**'
+      - '**/audit/**'
+      - '**/screenshots/**'
+      - '**/*-audit-*/**'
+      - '**/*.cjs'
+      - 'scripts/audit-*'
+      - 'scripts/capture-*'
+      - 'scripts/check-*'
+      - 'scripts/verify-*'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    permissions:
+      contents: read
+      pages: read
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - name: Test package and retention boundaries
+        run: python3 -m unittest discover -s tests -v
+      - name: Stage public package
+        run: python3 scripts/build-pages-package.py --output "$RUNNER_TEMP/pages-site" --report "$RUNNER_TEMP/pages-package.json"
+      - name: Record package sizes
+        run: |
+          python3 - <<'PY'
+          import json, os
+          from pathlib import Path
+          report = json.loads((Path(os.environ['RUNNER_TEMP']) / 'pages-package.json').read_text())
+          with open(os.environ['GITHUB_STEP_SUMMARY'], 'a') as summary:
+              summary.write(f"Public package: {report['package_bytes']} bytes / {report['included_count']} files. Excluded diagnostics: {report['excluded_bytes']} bytes / {report['excluded_count']} files. All copied files verified by SHA-256.\n")
+          PY
+      - name: Configure Pages
+        uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5
+      - name: Upload public files
+        uses: actions/upload-pages-artifact@7b1f4a764d45c48632c6b24a0339c27f5614fb0b # v4
+        with:
+          path: ${{ runner.temp }}/pages-site
+          retention-days: 1
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy Pages
+        id: deployment
+        uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e # v4
+
+  retain-packages:
+    needs: deploy
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      actions: write
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - name: Keep current and previous successful package
+        run: python3 scripts/retain-pages-artifacts.py
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
