@@ -16,5 +16,4 @@ html body .page-breadcrumbs a:focus-visible {outline:2px solid currentColor;outl
 html body .page-breadcrumbs__separator {opacity:.6;flex-shrink:0;}
 /* Keep the original footprint so neither hero content nor the header moves. */
 html body [data-barn-crumb-source],html body [data-barn-crumb-source] * {visibility:hidden!important;pointer-events:none!important;}
-@media(min-width:541px) and (max-width:1024px) {html body .page-breadcrumbs {display:none!important;}}
-@media(max-width:540px) {html body .page-breadcrumbs {font-size:12px;line-height:16px;}}
+@media(max-width:1024px) {html body .page-breadcrumbs {display:none!important;}}
