@@ -14,9 +14,9 @@
   stylesheet.href = new URL('../css/quick-filters.css?v=d98d8da8b8b2', base).href;
   if (!hasStylesheet(stylesheet.href)) document.head.appendChild(stylesheet);
   var configs = [
-    { title:'Локация', key:'directions', reset:'Все направления', choices:['Сочи','Анапа','Алтай','Архыз'] },
+    { title:'Регион', key:'directions', reset:'Все локации', choices:['Сочи','Анапа','Алтай','Архыз'] },
     { title:'Тип', key:'propertyTypes', reset:'Любой тип', choices:['Апартаменты','Квартира','Квартира в новостройке','Пентхаус'], values:['apartment','flat','new_build','penthouse'] },
-    { title:'Стоимость', key:'priceRanges', reset:'Любая', choices:['до 50 млн ₽','50 – 100 млн ₽','100 – 200 млн ₽','от 200 млн ₽'], values:['50m','50-100m','100-200m','200m+'] },
+    { title:'Стоимость', key:'priceRanges', reset:'Любая стоимость', choices:['до 50 млн ₽','50 – 100 млн ₽','100 – 200 млн ₽','от 200 млн ₽'], values:['50m','50-100m','100-200m','200m+'] },
     { title:'Спальни', key:'bedrooms', reset:'Любые', choices:['1','2','3','Более 3'], values:['1','2','3','4+'] }
   ];
   var popup = document.createElement('div');
@@ -166,6 +166,7 @@
     var selected = selection(config,state());
     (config.select ? config.choices : [config.reset].concat(config.choices)).forEach(function (label,index) {
       var value = config.select ? config.values[index] : index ? (config.values || config.choices)[index-1] : '';
+      if(config.select&&(config.select.options[index].disabled||config.select.options[index].hidden))return;
       var option = document.createElement('button');
       option.type = 'button';
       option.className = 'catalog-quick-filters__option';

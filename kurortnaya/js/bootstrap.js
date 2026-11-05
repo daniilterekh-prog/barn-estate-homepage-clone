@@ -2,7 +2,7 @@
 (function () {
   function startRuntime() {
     var uiKitRuntime = document.createElement('script');
-    uiKitRuntime.src = 'js/ui-kit-runtime.js?v=20261105-node-recommendations-1';
+    uiKitRuntime.src = 'js/ui-kit-runtime.js?v=20261105-node-filters-1';
     document.body.appendChild(uiKitRuntime);
   }
   // document.open replaces DOM/listeners but retains window.BarnesFilters.
@@ -11,13 +11,13 @@
     startRuntime();
     return;
   }
-  fetch('mobile.html?v=node-recommendations-20261105', { cache: 'no-store' })
+  fetch('mobile.html?v=node-filters-20261105', { cache: 'no-store' })
     .then(function (response) {
       if (!response.ok) throw new Error('Mobile snapshot unavailable');
       return response.text();
     })
     .then(function (markup) {
-      markup = markup.replace('</body>', '<script src="js/ui-kit-runtime.js?v=20261105-node-recommendations-1"><\/script></body>');
+      markup = markup.replace('</body>', '<script src="js/ui-kit-runtime.js?v=20261105-node-filters-1"><\/script></body>');
       document.open();
       document.write(markup);
       document.close();

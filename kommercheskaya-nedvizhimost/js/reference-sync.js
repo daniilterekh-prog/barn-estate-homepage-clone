@@ -14,10 +14,10 @@
   const types=chips.slice(0,11).map(input=>({value:input.value,label:input.closest('label').textContent.trim()}));
   window.BarnesCommercialTypes=types;
   window.BarnesQuickConfig=[
-    {title:'Тип',key:'propertyTypes',reset:'Любой тип',choices:types.map(t=>t.label),values:types.map(t=>t.value)},
-    {title:'Стоимость',key:'priceRanges',reset:'Любая',choices:['до 50 млн ₽','50 – 100 млн ₽','100 – 200 млн ₽','от 200 млн ₽'],values:['50m','50-100m','100-200m','200m+']},
+    {title:'Назначение',key:'propertyTypes',reset:'Любой тип',choices:types.map(t=>t.label),values:types.map(t=>t.value)},
+    {title:'Стоимость',key:'priceRanges',reset:'Любая стоимость',choices:['до 50 млн ₽','50 – 100 млн ₽','100 – 200 млн ₽','от 200 млн ₽'],values:['50m','50-100m','100-200m','200m+']},
     {title:'Площадь',key:'areaMax',reset:'Любая',range:{min:'areaMin',max:'areaMax',unit:'м²'}},
-    {title:'Район',key:'districts',reset:'Все районы',choices:['Академический','Алексеевский','Арбат','Аэропорт','Басманный','Беговой','Бутырский','Войковский','Гагаринский','Головинский','Даниловский','Донской','Дорогомилово','Замоскворечье','Западное Дегунино','Красносельский','Крылатское','Кунцево','Левобережный','Ломоносовский','Марфино','Марьина Роща','Мещанский','Митино','Можайский','Обручевский','Отрадное','Очаково-матвеевское','Покровское-Стрешнево','Пресненский','Проспект Вернадского','Раменки','Савёловский','Свиблово','Сокол','Сокольники','Строгино','Таганский','Тверской','Тропарёво-Никулино','Филевский парк','Фили-Давыдково','Хамовники','Ховрино','Хорошёво-Мнёвники','Хорошёвский','Щукино','Южнопортовый','Якиманка']}
+    {title:'Локация',key:'districts',reset:'Все локации',choices:['Академический','Алексеевский','Арбат','Аэропорт','Басманный','Беговой','Бутырский','Войковский','Гагаринский','Головинский','Даниловский','Донской','Дорогомилово','Замоскворечье','Западное Дегунино','Красносельский','Крылатское','Кунцево','Левобережный','Ломоносовский','Марфино','Марьина Роща','Мещанский','Митино','Можайский','Обручевский','Отрадное','Очаково-матвеевское','Покровское-Стрешнево','Пресненский','Проспект Вернадского','Раменки','Савёловский','Свиблово','Сокол','Сокольники','Строгино','Таганский','Тверской','Тропарёво-Никулино','Филевский парк','Фили-Давыдково','Хамовники','Ховрино','Хорошёво-Мнёвники','Хорошёвский','Щукино','Южнопортовый','Якиманка']}
   ];
   const districtIcon='<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 21s6-5.4 6-11a6 6 0 1 0-12 0c0 5.6 6 11 6 11Z" stroke="currentColor" stroke-width="1.35"/><circle cx="12" cy="10" r="2.25" stroke="currentColor" stroke-width="1.35"/></svg>';
   const quickList=document.querySelector('.catalog-mode-filters');
@@ -47,14 +47,14 @@
     for(const [value,label] of [['purchase','Покупка'],['rent','Аренда']]){
       const button=document.createElement('button');button.type='button';button.textContent=label;
       button.className='catalog-mode-switch__button';button.dataset.commercialDeal=value;
-      button.addEventListener('click',()=>window.BarnesFilters.patch({dealType:value}));group.append(button);
+      button.addEventListener('click',()=>window.BarnesFilters.patch({dealType:value,priceRanges:[],priceMin:'',priceMax:''}));group.append(button);
     }
     return group;
   }
   document.querySelector('.catalog-mode-toolbar').prepend(dealSwitch('listing'));
   document.querySelector('.map-browser__filters').prepend(dealSwitch('map'));
-  function syncDeal(){const selected=window.BarnesFilters.getState().dealType||'purchase';document.querySelectorAll('[data-commercial-deal]').forEach(button=>{const active=button.dataset.commercialDeal===selected;button.setAttribute('aria-pressed',String(active));button.classList.toggle('is-active',active);});}
-  document.addEventListener('barnes:filters-apply',syncDeal);syncDeal();
+  function syncDeal(){const selected=window.BarnesFilters.getState().dealType||'purchase';const monthly=selected==='rent',config=window.BarnesQuickConfig.find(c=>c.key==='priceRanges');config.title=monthly?'Стоимость / месяц':'Стоимость';config.choices=monthly?['до 1 млн ₽/мес.','1 – 3 млн ₽/мес.','3 – 5 млн ₽/мес.','от 5 млн ₽/мес.']:['до 50 млн ₽','50 – 100 млн ₽','100 – 200 млн ₽','от 200 млн ₽'];config.values=monthly?['rent-1m','rent-1-3m','rent-3-5m','rent-5m+']:['50m','50-100m','100-200m','200m+'];document.querySelectorAll('.resort-filters input[name=priceRanges]').forEach((input,i)=>{if(!config.values[i])return;input.value=config.values[i];const label=input.closest('label').querySelector('.ui-checkbox__label');if(label)label.textContent=config.choices[i];});document.querySelectorAll('[data-commercial-deal]').forEach(button=>{const active=button.dataset.commercialDeal===selected;button.setAttribute('aria-pressed',String(active));button.classList.toggle('is-active',active);});}
+  document.addEventListener('barnes:filters-apply',syncDeal,true);syncDeal();
   await styles('css/reference-sync.css');
   const request=document.createElement('button');request.type='button';request.className='catalog-sticky__request catalog-sticky__callback commercial-mobile-request';request.textContent='Оставить заявку';request.setAttribute('aria-haspopup','dialog');
   const desktopRequest=document.querySelector('.catalog-page-nav__request');

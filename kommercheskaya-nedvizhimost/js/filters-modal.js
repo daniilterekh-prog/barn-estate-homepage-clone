@@ -143,7 +143,7 @@
       invalid.focus();
       return;
     }
-    state = Object.assign({}, resetPending ? {} : state, draft);
+    state = Object.assign({}, resetPending ? {dealType:state.dealType||'rent'} : state, draft);
     close();
     document.dispatchEvent(new CustomEvent('barnes:filters-apply', { detail:copy(state) }));
   });

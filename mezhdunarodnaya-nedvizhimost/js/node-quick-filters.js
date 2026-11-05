@@ -111,6 +111,28 @@
     var width = Math.min(Math.max(rect.width,220),vw-32);
     popup.style.width = width + 'px';
     popup.style.left = Math.max(16,Math.min(rect.left,vw-width-16)) + 'px';
+    // Match the field's text edge, including viewport clamping and responsive padding.
+    if (!activeButton.classList.contains('resort-sort-trigger')) {
+      var label = activeButton.querySelector('.catalog-quick-filters__caption') || activeButton;
+      var range = document.createRange();
+      range.selectNodeContents(label);
+      var textLeft = range.getBoundingClientRect().left;
+      var option = list.querySelector('[role=option]');
+      if (option) {
+        range.selectNodeContents(option);
+        var inset = parseFloat(getComputedStyle(option).paddingLeft) + textLeft - range.getBoundingClientRect().left;
+        popup.style.setProperty('--catalog-dropdown-option-inset', Math.max(0,inset) + 'px');
+      }
+      var header = popup.querySelector('.catalog-quick-filters__dropdown-header');
+      if (!header.hidden) {
+        range.selectNodeContents(header.querySelector('span'));
+        var headerInset = parseFloat(getComputedStyle(header).paddingLeft) + textLeft - range.getBoundingClientRect().left;
+        popup.style.setProperty('--catalog-dropdown-header-inset', Math.max(0,headerInset) + 'px');
+      }
+    } else {
+      popup.style.removeProperty('--catalog-dropdown-option-inset');
+      popup.style.removeProperty('--catalog-dropdown-header-inset');
+    }
     list.style.maxHeight = '240px';
     var height = popup.getBoundingClientRect().height;
     var availableBelow = window.innerHeight-rect.bottom-16;
@@ -133,12 +155,14 @@
     button.classList.add('is-open');
     button.setAttribute('aria-expanded','true');
     popup.setAttribute('aria-label',config.title);
+    popup.querySelector('.catalog-quick-filters__dropdown-header').hidden = !config.select || !!config.select.closest('.catalog-department');
     popup.querySelector('.catalog-quick-filters__dropdown-header > span').textContent = config.title;
     list.setAttribute('aria-label',config.title);
     list.replaceChildren();
     var selected = selection(config,state());
     (config.select ? config.choices : [config.reset].concat(config.choices)).forEach(function (label,index) {
       var value = config.select ? config.values[index] : index ? (config.values || config.choices)[index-1] : '';
+      if(config.select&&(config.select.options[index].disabled||config.select.options[index].hidden))return;
       var option = document.createElement('button');
       option.type = 'button';
       option.className = 'catalog-quick-filters__option';

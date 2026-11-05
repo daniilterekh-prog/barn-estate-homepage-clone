@@ -44,7 +44,7 @@
   secondary.className = 'catalog-toolbar__secondary';
   const direction = document.createElement('label');
   direction.className = 'catalog-direction';
-  direction.innerHTML = '<span class="visually-hidden">Департамент недвижимости</span><select aria-label="Департамент недвижимости"><option value="zagorodnaya-nedvizhimost" selected>Загородная</option><option value="gorodskaya-nedvizhimost">Городская</option><option value="kommercheskaya-nedvizhimost">Коммерческая</option><option value="kurortnaya">Курортная</option></select><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="m3 6 5 5 5-5" stroke="currentColor" stroke-width="1.2"/></svg>';
+  direction.innerHTML = '<span class="visually-hidden">Департамент недвижимости</span><select aria-label="Департамент недвижимости"><option value="zagorodnaya-nedvizhimost" selected>Загородная</option><option value="gorodskaya-nedvizhimost">Москва</option><option value="kommercheskaya-nedvizhimost">Коммерческая</option><option value="kurortnaya">Курортная</option><option value="mezhdunarodnaya-nedvizhimost">Зарубежная</option></select><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="m3 6 5 5 5-5" stroke="currentColor" stroke-width="1.2"/></svg>';
   direction.querySelector('select').addEventListener('change', event => {
     location.href = `../${event.target.value}/`;
   });

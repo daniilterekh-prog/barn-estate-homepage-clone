@@ -116,9 +116,9 @@
   }
   async function setupSharedFilters() {
     for(const file of ['filters-template.js','filters-modal.js','quick-filters.js','brand-filters.js','city-reference-extras.js']) {
-      await new Promise((resolve,reject)=>{const script=document.createElement('script');script.src=new URL('js/'+file+'?v=20261102-city-filters-1',document.baseURI);script.onload=resolve;script.onerror=reject;document.body.append(script)});
+      await new Promise((resolve,reject)=>{const script=document.createElement('script');script.src=new URL('js/'+file+'?v=20261105-node-filters-1',document.baseURI);script.onload=resolve;script.onerror=reject;document.body.append(script)});
     }
-    const adapter=document.createElement('script');adapter.src=new URL('js/catalog-filters.js?v=20261102-city-filters-1',document.baseURI);adapter.onload=()=>{window.BarnEstateCatalogFilters.mount(document);document.body.classList.add('city-reference-synced')};document.body.append(adapter);
+    const adapter=document.createElement('script');adapter.src=new URL('js/catalog-filters.js?v=20261105-node-filters-1',document.baseURI);adapter.onload=()=>{window.BarnEstateCatalogFilters.mount(document);document.body.classList.add('city-reference-synced')};document.body.append(adapter);
   }
   function setupMapResults() {
     const data=document.createElement('script');

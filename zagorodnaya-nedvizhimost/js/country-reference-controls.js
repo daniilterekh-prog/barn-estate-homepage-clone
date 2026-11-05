@@ -23,6 +23,7 @@
     if(key==='location')return {title:'Шоссе',values:listing.getLocations().map(value=>[value,value]),selected:()=>listing.getSelection().location};
     if(key==='type')return {title:button.closest('.catalog-projects-map__panel')?'Тип объекта':'Тип',values:typeOptions,selected:()=>state.types[0]||''};
     if(key==='price')return {title:'Стоимость',values:priceOptions,selected:()=>state.bands[0]||''};
+    if(key==='area')return {title:'Площадь дома',values:[['area-200','до 200 м²'],['area-200-500','200 – 500 м²'],['area-500+','от 500 м²']],selected:()=>{const v=window.countryFullFilters.getState();return v.areaMax===200?'area-200':v.areaMin===200&&v.areaMax===500?'area-200-500':v.areaMin===500?'area-500+':'';}};
     if(key==='bedrooms')return {title:'Спальни',values:bedroomOptions,selected:()=>listing.getSelection().bedrooms};
     return null;
   };
@@ -45,20 +46,52 @@
     button.classList.remove('is-open');button.setAttribute('aria-expanded','false');
     if(focus&&button.isConnected)button.focus({preventScroll:true});
   }
-  function position(){
-    if(!active)return;
-    const rect=active.getBoundingClientRect(),width=Math.min(Math.max(rect.width,220),innerWidth-32);
-    popup.style.width=`${width}px`;popup.style.left=`${Math.max(16,Math.min(rect.left,innerWidth-width-16))}px`;
-    list.style.maxHeight='240px';
-    const height=popup.getBoundingClientRect().height,below=innerHeight-rect.bottom-16;
-    popup.style.top=`${Math.max(16,Math.min(height>below&&rect.top-16>below?rect.top-6-height:rect.bottom+6,innerHeight-height-16))}px`;
+  function position() {
+    if (!active) return;
+    var rect = active.getBoundingClientRect();
+    var vw = document.documentElement.clientWidth;
+    var width = Math.min(Math.max(rect.width,220),vw-32);
+    popup.style.width = width + 'px';
+    popup.style.left = Math.max(16,Math.min(rect.left,vw-width-16)) + 'px';
+    // Match the field's text edge, including viewport clamping and responsive padding.
+    if (!active.classList.contains('resort-sort-trigger')&&!active.classList.contains('country-sort-trigger')) {
+      var label = active.querySelector('.catalog-quick-filters__caption') || active;
+      var range = document.createRange();
+      range.selectNodeContents(label);
+      var textLeft = range.getBoundingClientRect().left;
+      var option = list.querySelector('[role=option]');
+      if (option) {
+        range.selectNodeContents(option);
+        var inset = parseFloat(getComputedStyle(option).paddingLeft) + textLeft - range.getBoundingClientRect().left;
+        popup.style.setProperty('--catalog-dropdown-option-inset', Math.max(0,inset) + 'px');
+      }
+      var header = popup.querySelector('.catalog-quick-filters__dropdown-header');
+      if (!header.hidden) {
+        range.selectNodeContents(header.querySelector('span'));
+        var headerInset = parseFloat(getComputedStyle(header).paddingLeft) + textLeft - range.getBoundingClientRect().left;
+        popup.style.setProperty('--catalog-dropdown-header-inset', Math.max(0,headerInset) + 'px');
+      }
+    } else {
+      popup.style.removeProperty('--catalog-dropdown-option-inset');
+      popup.style.removeProperty('--catalog-dropdown-header-inset');
+    }
+    list.style.maxHeight = '240px';
+    var height = popup.getBoundingClientRect().height;
+    var availableBelow = window.innerHeight-rect.bottom-16;
+    var above = rect.top-16;
+    var top = rect.bottom+6;
+    if (height > availableBelow && above > availableBelow) top = rect.top-6-height;
+    top = Math.max(16,Math.min(top,window.innerHeight-height-16));
+    popup.style.top = top + 'px';
+    list.style.maxHeight = Math.max(48,Math.min(240,window.innerHeight-top-80)) + 'px';
   }
   function select(value){
     if(!active)return;
     const key=active.dataset.countryQuick||active.dataset.countrySelect;
     if(key==='sort'){
       const select=active.nextElementSibling;select.value=value;select.dispatchEvent(new Event('change',{bubbles:true}));active.textContent=select.selectedOptions[0].textContent;active.setAttribute('aria-label',`Сортировка: ${active.textContent}`);
-    }else if(key==='type')document.dispatchEvent(new CustomEvent('country-filter-set',{detail:{types:value?[value]:[]}}));
+    }else if(key==='area'){const ranges={'area-200':[null,200],'area-200-500':[200,500],'area-500+':[500,null]},range=ranges[value]||[null,null];document.dispatchEvent(new CustomEvent('country-filter-set',{detail:{areaMin:range[0],areaMax:range[1]}}));}
+    else if(key==='type')document.dispatchEvent(new CustomEvent('country-filter-set',{detail:{types:value?[value]:[]}}));
     else if(key==='price')document.dispatchEvent(new CustomEvent('country-filter-set',{detail:{bands:value?[value]:[],priceMin:null,priceMax:null}}));
     else { listing.setSelection(key,value); if(key==='bedrooms')document.dispatchEvent(new CustomEvent('country-filter-set',{detail:{bedrooms:value}})); }
     sync();close(true);
@@ -70,6 +103,7 @@
     if(parent!==lastParent){parent.append(popup);lastParent=parent;}
     popup.inert=false;
     button.classList.add('is-open');button.setAttribute('aria-expanded','true');
+    $('.catalog-quick-filters__dropdown-header',popup).hidden=button.dataset.countrySelect!=='sort';
     $('.catalog-quick-filters__dropdown-header > span',popup).textContent=config.title;
     popup.setAttribute('aria-label',config.title);list.setAttribute('aria-label',config.title);list.replaceChildren();
     const options=button.dataset.countrySelect==='sort'?config.values:[['',keyReset(button.dataset.countryQuick)] ,...config.values];
@@ -81,7 +115,7 @@
     popup.hidden=false;popup.style.display='block';position();
     (list.querySelector('[aria-selected=true]')||list.firstElementChild)?.focus({preventScroll:true});
   }
-  const keyReset=key=>({location:'Все шоссе',type:'Любой тип',price:'Любая стоимость',bedrooms:'Любые спальни'}[key]||'Любые');
+  const keyReset=key=>({location:'Любое шоссе',type:'Любой тип',price:'Любая стоимость',bedrooms:'Любые спальни',area:'Любая площадь'}[key]||'Любые');
   function makeBrands(context){
     const fieldset=document.createElement('fieldset');fieldset.className='country-brand-filters';fieldset.dataset.brandContext=context;
     const legend=document.createElement('legend');legend.textContent='Подборки BARN Estate';fieldset.append(legend);
@@ -114,9 +148,9 @@
         bedrooms:'<path d="M3 18v-7.5M21 18v-5.5a2 2 0 0 0-2-2h-7.5A2.5 2.5 0 0 0 9 13v2M3 15h18M5.5 10.5h2A1.5 1.5 0 0 1 9 12v3H4v-3a1.5 1.5 0 0 1 1.5-1.5Z"/>'
       };
       all('.catalog-quick-filters__button',panel).forEach((button,index)=>{
-        const key=['type','price','location','bedrooms'][index];button.dataset.countryQuick=key;
-        const label=$('.catalog-quick-filters__label',button);if(label)label.textContent=({location:'Шоссе',type:'Тип объекта',price:'Стоимость',bedrooms:'Спальни'})[key];
-        button.insertAdjacentHTML('afterbegin',`<span class="country-map-filter-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round">${iconPaths[key]}</svg></span>`);
+        const key=['type','price','location','area'][index];button.dataset.countryQuick=key;
+        const label=$('.catalog-quick-filters__label',button);if(label)label.textContent=({location:'Шоссе',type:'Тип объекта',price:'Стоимость',bedrooms:'Спальни',area:'Площадь дома'})[key];
+        button.insertAdjacentHTML('afterbegin',`<span class="country-map-filter-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round">${iconPaths[key]||iconPaths.type}</svg></span>`);
       });
       const heading=$('.catalog-projects-map__panel-title',panel);if(heading)heading.textContent='Найдено объектов: 0';
       const search=$('.catalog-projects-map__panel-search-input',panel);if(search)search.placeholder='Поиск объектов';
