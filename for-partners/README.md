@@ -53,4 +53,6 @@ media-header.css/js приводят первичный хедер к Медиа
 
 ## CTA по собственникам ·05.11.2026
 
-[Оформление и проверки](https://github.com/daniilterekh-prog/barnes-sites/blob/main/main-site/pages/partners/contact-owner-2026-11-04/README.md). `assets/contact-owner.css` применяет дизайн нижнего CTA продажи к партнёрскому блоку; исходные фото и слова сохранены.
+[Оформление и проверки](https://github.com/daniilterekh-prog/barnes-sites/blob/main/main-site/pages/partners/contact-owner-2026-11-04/README.md). `assets/contact-owner.css` применяет только оформление кнопок связи нижнего CTA продажи; исходный фон, карточка, типографика, фото и слова сохранены.
+
+Уточнение 05.11.2026: `contact-owner.css` переносит только оформление кнопок связи; исходный фон, карточка и типографика CTA восстановлены.
