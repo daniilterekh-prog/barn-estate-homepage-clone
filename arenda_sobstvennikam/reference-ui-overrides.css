@@ -2525,3 +2525,10 @@ body.owner-rent-reference-ui .owner-sale-hero .breadcrumbs__link {
     line-height: 19.2px;
   }
 }
+
+/* Featured presentation card shares the caption role with its neighbours. */
+html body#ui-kit-page.owner-rent-reference-ui.barnes-media-reference .owner-sale-presentation__featured-title {
+  font-size:var(--reference-lead)!important;
+  line-height:var(--reference-lead-line)!important;
+  font-weight:300!important;
+}
