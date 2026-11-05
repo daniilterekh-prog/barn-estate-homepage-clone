@@ -53,3 +53,8 @@ node tools/verify-catalog-filters.cjs http://127.0.0.1:8786/
 ## Техническая очистка ·03.11.2026
 
 Удалены доказанные повторные CSS/SSR-декларации; исходные версии примитивов сохранены в provenance, текущие хэши обновлены. Геометрия, цвета, контент и действия проверяются сравнением до/после. [Единый реестр страниц](https://github.com/daniilterekh-prog/barnes-sites/blob/main/main-site/current-pages.json) · [Метод и отчёты](https://github.com/daniilterekh-prog/barnes-sites/tree/main/main-site/maintenance/2026-11-03-cleanup).
+
+
+## Первый экран пяти узлов ·05.11.2026
+
+По поручению пользователя хедер, высота hero, размеры H1 и десктопные крошки соответствуют текущей продаже собственникам. Общий компонент `main-site/shared/node-shell`; все пять узлов правятся одновременно. Прежнее исключение H1 Курортной заменено этим правилом. Тексты, РОПы, фотографии, объекты и предметные параметры поиска сохранены. [Контракт и сборка](https://github.com/daniilterekh-prog/barnes-sites/tree/main/main-site/shared/node-shell). Новых runtime-зависимостей нет.

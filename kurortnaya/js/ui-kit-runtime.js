@@ -76,6 +76,7 @@
   }
 
   function enhanceSiteHeader() {
+    if(document.querySelector('script[src*="node-shell.js"]'))return;
     var header = document.querySelector('.layout__header .site-header');
     if (!header) return;
 

@@ -1,7 +1,7 @@
 /* One breadcrumb component for the current pages. It never edits the header. */
 (()=>{
  'use strict';
- if(window.BarnPageBreadcrumbs)return;
+ if(window.BarnPageBreadcrumbs?.document===document.body)return;
  const script=document.currentScript,key=script.dataset.page;
  const root=new URL('../',script.src),home=new URL('exact-2026-10-21/',root).href;
  const titles={home:'Главная',media:'Медиа',partners:'Амбассадорам','owner-rent':'Собственникам — аренда','owner-sale':'Собственникам — продажа',city:'Городская недвижимость Москвы',country:'Загородная недвижимость Москвы',international:'Зарубежная недвижимость',commercial:'Коммерческая недвижимость',resort:'Курортная недвижимость',catalog:'Каталог недвижимости',favorites:'Избранное',lot:'Лот'};
@@ -42,5 +42,5 @@
  // Normal breadcrumb navigation precedes archived preview-router click guards.
  // Modified clicks keep the browser's native new-tab/window behaviour.
  addEventListener('click',event=>{const anchor=event.target.closest?.('.page-breadcrumbs a[href]');if(!anchor||event.button!==0||event.metaKey||event.ctrlKey||event.shiftKey||event.altKey)return;event.preventDefault();event.stopImmediatePropagation();location.assign(anchor.href)},true);
- window.BarnPageBreadcrumbs={refresh};refresh();
+ window.BarnPageBreadcrumbs={refresh,document:document.body};refresh();
 })();

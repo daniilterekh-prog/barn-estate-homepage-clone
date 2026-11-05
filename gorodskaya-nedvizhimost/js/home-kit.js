@@ -14,6 +14,7 @@
   }
  }
  function contacts(){
+    if(document.querySelector('script[src*="node-shell.js"]'))return;
   for(const svg of document.querySelectorAll('.catalog-header-contact--phone svg,.catalog-sticky__phone svg')){
    svg.setAttribute('viewBox','0 0 24 24');svg.setAttribute('stroke','none');svg.innerHTML=phoneArtwork;
   }

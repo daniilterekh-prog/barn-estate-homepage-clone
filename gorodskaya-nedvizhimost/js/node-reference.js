@@ -131,6 +131,7 @@
     document.body.append(data);
   }
   function setupHeader() {
+    if(document.querySelector('script[src*="node-shell.js"]'))return;
     const header=q('.layout__header .site-header');if(!header)return;
     header.classList.add('site-header--no-nav','catalog-header-ready');q('.site-header__nav',header)?.remove();q('.catalog-page-nav')?.setAttribute('hidden','');
     const contacts=document.createElement('nav');contacts.className='catalog-header-contacts';contacts.setAttribute('aria-label','Способы связи');
