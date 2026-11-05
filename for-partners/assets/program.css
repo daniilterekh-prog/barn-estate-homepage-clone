@@ -24,8 +24,8 @@
 .ambassadors-page .ap-benefit-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px 40px}
 .ambassadors-page .ap-benefit-grid li{min-width:0;border-top:1px solid var(--ap-line);padding-top:24px}
 .ambassadors-page .ap-benefit-grid .ap-number{margin-bottom:16px}
-.ambassadors-page .ap-trust>.base-container{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
-.ambassadors-page .ap-trust .ap-header{margin:0}
+
+
 
 
 
@@ -55,9 +55,9 @@
 
 
 @media(min-width:1441px){.ambassadors-page .ap-header h2{}}
-@media(max-width:1024px){.ambassadors-page .ap-eyebrow{margin-bottom:12px!important}.ambassadors-page .ap-steps{grid-template-columns:repeat(3,minmax(0,1fr))}.ambassadors-page .ap-benefit-grid,.ambassadors-page .ap-who-grid{gap:28px}.ambassadors-page .ap-trust>.base-container{grid-template-columns:1fr;gap:32px}.ambassadors-page .ap-logo-header{display:block}.ambassadors-page .ap-logo-header .ap-header{margin-bottom:24px}}
+@media(max-width:1024px){.ambassadors-page .ap-eyebrow{margin-bottom:12px!important}.ambassadors-page .ap-steps{grid-template-columns:repeat(3,minmax(0,1fr))}.ambassadors-page .ap-benefit-grid,.ambassadors-page .ap-who-grid{gap:28px}.ambassadors-page .ap-logo-header{display:block}.ambassadors-page .ap-logo-header .ap-header{margin-bottom:24px}}
 @media(max-width:768px){.ambassadors-page .ap-section :is(li,article)>p,.ambassadors-page .ap-steps li>div>p,.ambassadors-page .ap-community-grid article>div>p:not(.ap-eyebrow){}.ambassadors-page .ap-benefit-grid,.ambassadors-page .ap-who-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.ambassadors-page .ap-community-grid{grid-template-columns:1fr;gap:40px}.ambassadors-page .ap-section h3{}}
-@media(max-width:540px){.ambassadors-page .ap-section{--ap-space:48px;scroll-margin-top:90px}.ambassadors-page .ap-header{margin-bottom:28px}.ambassadors-page .ap-header h2{}.ambassadors-page .ap-lead{}.ambassadors-page .ap-header .ap-lead{margin-top:16px}.ambassadors-page .ap-steps{display:block}.ambassadors-page .ap-steps li{display:grid;grid-template-columns:28px minmax(0,1fr);gap:16px;padding:14px 0}.ambassadors-page .ap-steps li>div>p{margin-top:6px;}.ambassadors-page .ap-steps .ap-number{margin:3px 0 0}.ambassadors-page .ap-mechanics .ap-action{margin-top:20px;width:100%}.ambassadors-page .ap-action{min-height:58px;padding:18px 24px}.ambassadors-page .ap-benefit-grid{gap:24px 20px}.ambassadors-page .ap-benefit-grid li{padding-top:16px}.ambassadors-page .ap-benefit-grid .ap-number{margin-bottom:12px}.ambassadors-page .ap-section :is(li,article)>p,.ambassadors-page .ap-community-grid article>div>p:not(.ap-eyebrow){margin-top:12px}.ambassadors-page .ap-who-grid{grid-template-columns:1fr;gap:24px}.ambassadors-page .ap-who-grid li{padding-top:16px}.ambassadors-page .ap-text-action{}.ambassadors-page .ap-community-grid article>div{padding-top:24px}.ambassadors-page .ap-trust>.base-container{gap:24px}.ambassadors-page .ap-trust .ap-header{margin:0}}
+@media(max-width:540px){.ambassadors-page .ap-section{--ap-space:48px;scroll-margin-top:90px}.ambassadors-page .ap-header{margin-bottom:28px}.ambassadors-page .ap-header h2{}.ambassadors-page .ap-lead{}.ambassadors-page .ap-header .ap-lead{margin-top:16px}.ambassadors-page .ap-steps{display:block}.ambassadors-page .ap-steps li{display:grid;grid-template-columns:28px minmax(0,1fr);gap:16px;padding:14px 0}.ambassadors-page .ap-steps li>div>p{margin-top:6px;}.ambassadors-page .ap-steps .ap-number{margin:3px 0 0}.ambassadors-page .ap-mechanics .ap-action{margin-top:20px;width:100%}.ambassadors-page .ap-action{min-height:58px;padding:18px 24px}.ambassadors-page .ap-benefit-grid{gap:24px 20px}.ambassadors-page .ap-benefit-grid li{padding-top:16px}.ambassadors-page .ap-benefit-grid .ap-number{margin-bottom:12px}.ambassadors-page .ap-section :is(li,article)>p,.ambassadors-page .ap-community-grid article>div>p:not(.ap-eyebrow){margin-top:12px}.ambassadors-page .ap-who-grid{grid-template-columns:1fr;gap:24px}.ambassadors-page .ap-who-grid li{padding-top:16px}.ambassadors-page .ap-text-action{}.ambassadors-page .ap-community-grid article>div{padding-top:24px}}
 
 
 @media(prefers-reduced-motion:reduce){.ambassadors-page .partners-section__track{animation:none!important;transform:none!important}.ambassadors-page .partners-section__marquee{overflow-x:auto;mask-image:none}}
@@ -78,3 +78,17 @@
 
 /* Same vector arrow as the approved homepage kit; no platform emoji glyphs. */
 .partners-owner-shell .ap-arrow{display:inline-block;flex:0 0 16px;width:16px;height:16px;vertical-align:middle;fill:none}
+
+/* Trust: aligned editorial introduction and specific programme commitments. */
+html body#partners-kit-page #responsibility>.base-container{display:block}
+html body#partners-kit-page #responsibility .ap-trust__header{max-width:none;margin:0!important}
+html body#partners-kit-page #responsibility .ap-trust__intro{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:60px;align-items:start}
+html body#partners-kit-page #responsibility .ap-trust__intro>*{min-width:0}
+html body#partners-kit-page #responsibility .ap-trust__intro h2{text-wrap:balance}
+html body#partners-kit-page #responsibility .ap-trust__intro>.ap-lead{margin:0!important;max-width:none}
+html body#partners-kit-page #responsibility .ap-trust__principles{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:40px;margin:40px 0 0!important;padding:0;list-style:none}
+html body#partners-kit-page #responsibility .ap-trust__principles>li{min-width:0;border-top:1px solid var(--ap-line);padding-top:24px}
+html body#partners-kit-page #responsibility .ap-trust__principles h3{margin:0!important;color:var(--ap-ink)}
+html body#partners-kit-page #responsibility .ap-trust__principles li>p{margin:12px 0 0!important;font-family:"Tilda Sans",system-ui,sans-serif!important;font-size:var(--reference-lead)!important;line-height:var(--reference-lead-line)!important;font-weight:300!important;color:var(--ap-muted)}
+@media(max-width:1024px){html body#partners-kit-page #responsibility .ap-trust__intro{grid-template-columns:1fr;gap:24px}html body#partners-kit-page #responsibility .ap-trust__principles{grid-template-columns:1fr;gap:24px;margin-top:32px!important}html body#partners-kit-page #responsibility .ap-trust__principles>li{padding-top:20px}}
+@media(max-width:540px){html body#partners-kit-page #responsibility .ap-trust__intro{gap:20px}html body#partners-kit-page #responsibility .ap-trust__principles{gap:24px;margin-top:28px!important}html body#partners-kit-page #responsibility .ap-trust__principles>li{padding-top:16px}}
