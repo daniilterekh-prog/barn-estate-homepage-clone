@@ -34,27 +34,6 @@
     });
   });
 
-  // Native scrolling retains touch gestures; controls follow the slide list.
-  var benefits = document.querySelector('#partner-benefit-slides');
-  if (benefits) {
-    var benefitPrevious = document.querySelector('.ap-benefit-prev');
-    var benefitNext = document.querySelector('.ap-benefit-next');
-    var syncBenefits = function () {
-      benefitPrevious.disabled = benefits.scrollLeft < 2;
-      benefitNext.disabled = benefits.scrollLeft >= benefits.scrollWidth - benefits.clientWidth - 2;
-    };
-    var moveBenefits = function (direction) {
-      benefits.scrollBy({ left: direction * benefits.clientWidth, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth' });
-    };
-    benefitPrevious.addEventListener('click', function () { moveBenefits(-1); });
-    benefitNext.addEventListener('click', function () { moveBenefits(1); });
-    benefits.addEventListener('scroll', syncBenefits, { passive: true });
-    benefits.addEventListener('keydown', function (event) {
-      if (event.key === 'ArrowLeft' || event.key === 'ArrowRight') { event.preventDefault(); moveBenefits(event.key === 'ArrowLeft' ? -1 : 1); }
-    });
-    new ResizeObserver(syncBenefits).observe(benefits); syncBenefits();
-  }
-
   var ownerShellStylesheet = document.createElement('link');
   ownerShellStylesheet.rel = 'stylesheet';
   ownerShellStylesheet.href = 'assets/owner-shell.css?v=20261009-newsletter-width';

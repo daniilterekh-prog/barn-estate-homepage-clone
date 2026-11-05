@@ -103,14 +103,5 @@ html body#partners-kit-page.barnes-media-header .owner-sale-sticky__link{font-si
 html body#partners-kit-page.barnes-media-header .owner-sale-sticky__link--active{border-bottom-color:#8b1d25}
 @media(max-width:1440px){html body#partners-kit-page.barnes-media-header .owner-sale-sticky__list{gap:22px}html body#partners-kit-page.barnes-media-header .owner-sale-sticky__link{font-size:15px}}
 
-/* Benefit navigation is below the track; no visible slide count. */
-#partners-kit-page .ap-benefit-grid{display:grid;grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:calc((100% - 80px)/3);gap:40px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;overscroll-behavior-x:contain;padding-bottom:4px}
-#partners-kit-page .ap-benefit-grid::-webkit-scrollbar{display:none}
-#partners-kit-page .ap-benefit-grid>li{scroll-snap-align:start}
-#partners-kit-page .ap-benefit-controls{display:flex;justify-content:flex-end;gap:12px;margin-top:28px}
-#partners-kit-page .ap-benefit-controls button{display:flex;align-items:center;justify-content:center;width:44px;height:44px;padding:10px;border:1px solid rgba(30,30,30,.3);border-radius:50%;background:transparent;color:#1e1e1e;cursor:pointer}
-#partners-kit-page .ap-benefit-controls button:disabled{opacity:.35;cursor:default}
-#partners-kit-page .ap-benefit-controls svg{display:block;width:22px;height:22px}
-#partners-kit-page .ap-benefit-prev svg{transform:rotate(180deg)}
-@media(max-width:1024px){#partners-kit-page .ap-benefit-grid{grid-auto-columns:calc((100% - 32px)/2);gap:32px}}
-@media(max-width:540px){#partners-kit-page .ap-benefit-grid{grid-auto-columns:100%;gap:20px}#partners-kit-page .ap-benefit-controls{margin-top:24px}#partners-kit-page.barnes-media-reference.partners-owner-shell .about-company__read-more{font-size:11px}}
+/* Preserve the existing mobile About action role. */
+@media(max-width:540px){#partners-kit-page.barnes-media-reference.partners-owner-shell .about-company__read-more{font-size:11px}}
