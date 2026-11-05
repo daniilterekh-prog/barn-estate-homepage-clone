@@ -18,7 +18,13 @@
   scheduled=false;if(!nav.isConnected)return;
   const canvas=document.body.getBoundingClientRect(),header=document.querySelector('.site-header');
   nav.style.width=Math.min(1920,canvas.width)+'px';nav.style.left=(canvas.left+Math.max(0,(canvas.width-1920)/2))+'px';
-  if(header){if(observedHeader!==header){resize.disconnect();resize.observe(header);observedHeader=header}if(scrollY<4){lastTop=header.getBoundingClientRect().bottom+16;}else if(!nav.style.top){lastTop=header.getBoundingClientRect().height+16;}}
+  const mobile=innerWidth<=540;
+  nav.style.visibility=mobile&&scrollY>4?'hidden':'';
+  let headerLayer=0;
+  if(mobile)for(let node=header;node&&node!==document.body;node=node.parentElement)headerLayer=Math.max(headerLayer,parseInt(getComputedStyle(node).zIndex,10)||0);
+  nav.style.zIndex=mobile?String(headerLayer+1):'';
+  const offset=mobile?-nav.offsetHeight-1:16;
+  if(header){if(observedHeader!==header){resize.disconnect();resize.observe(header);observedHeader=header}if(scrollY<4){lastTop=header.getBoundingClientRect().bottom+offset;}else if(!nav.style.top){lastTop=header.getBoundingClientRect().height+offset;}}
   nav.style.top=lastTop+'px';
  }
  function schedule(){if(!scheduled){scheduled=true;requestAnimationFrame(position)}}
@@ -33,7 +39,7 @@
  }
  document.body.append(nav);
  const mutations=new MutationObserver(refresh);mutations.observe(document.body,{childList:true,subtree:true});
- addEventListener('resize',schedule,{passive:true});addEventListener('scroll',()=>{if(scrollY<4)schedule()},{passive:true});
+ addEventListener('resize',schedule,{passive:true});addEventListener('scroll',()=>{if(scrollY<4||innerWidth<=540)schedule()},{passive:true});
  // Normal breadcrumb navigation precedes archived preview-router click guards.
  // Modified clicks keep the browser's native new-tab/window behaviour.
  addEventListener('click',event=>{const anchor=event.target.closest?.('.page-breadcrumbs a[href]');if(!anchor||event.button!==0||event.metaKey||event.ctrlKey||event.shiftKey||event.altKey)return;event.preventDefault();event.stopImmediatePropagation();location.assign(anchor.href)},true);
