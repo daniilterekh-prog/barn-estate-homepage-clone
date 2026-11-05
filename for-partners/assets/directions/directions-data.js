@@ -22,8 +22,10 @@ window.BarnesDirectionsData = [
     ],
     "id": "city",
     "details": [["Типы объектов", "Квартиры, пентхаусы, дуплексы и особняки."], ["Рынок", "Новостройки и вторичная недвижимость Москвы."], ["Предложения", "В том числе эксклюзивные резиденции от застройщиков."], ["Просмотры", "Презентации объектов и онлайн- или видеопоказы."]],
-    "image": "city.webp",
-    "sourceImage": "media-06.png",
+    "image": "moscow-purchase-20261105.webp",
+    "imageAlt": "Интерьер квартиры в Москве — иллюстрация",
+    "imageIsGenerated": true,
+    "sourceImage": "barnes-assets/partners/directions/moscow-purchase/2026-11-05/original.png",
     "imageIsPlaceholder": false
   },
   {
