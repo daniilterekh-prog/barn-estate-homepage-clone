@@ -13,6 +13,7 @@
   body[data-node-shell]{--hero-laptop-node:var(--hero-laptop-main);}
   section.catalog-hero{height:var(--hero-laptop-node)!important;min-height:var(--hero-laptop-node)!important;max-height:none!important;}
   .catalog-hero__inner{box-sizing:border-box!important;height:100%!important;min-height:0!important;padding-top:150px!important;padding-bottom:16px!important;row-gap:16px!important;}
+  body[data-node-shell] .catalog-hero__inner{padding-block:0!important;justify-content:center!important;row-gap:24px!important;}
   .catalog-hero-filters{margin-top:0!important;}
   .catalog-quick-links--hero{margin-top:0!important;}
   section.lot-hero{height:var(--hero-laptop-lot)!important;min-height:var(--hero-laptop-lot)!important;max-height:var(--hero-laptop-lot)!important;}

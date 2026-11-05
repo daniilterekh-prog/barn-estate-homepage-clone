@@ -31,7 +31,7 @@
  function navigation(header){
   if(header.querySelector('.mh-reference-nav'))return;
   const nav=document.createElement('nav');nav.className='mh-reference-nav';nav.setAttribute('aria-label','Направления BARN Estate');const list=document.createElement('ul');
-  for(const item of navItems){const li=document.createElement('li');li.className='mh-nav-item';const a=document.createElement('a');a.href=item.label==='Медиа'?'https://daniilterekh-prog.github.io/barn-estate-homepage-clone/media/':item.url;a.textContent=item.label;a.setAttribute('aria-expanded','false');const panel=document.createElement('ul');panel.className='mh-subnav';panel.hidden=true;panel.id='mh-subnav-'+(++id);a.setAttribute('aria-controls',panel.id);
+  for(const item of navItems){const li=document.createElement('li');li.className='mh-nav-item';const a=document.createElement('a');a.href=item.label==='Медиа'?'https://daniilterekh-prog.github.io/barn-estate-homepage-clone/media/':item.url;a.textContent=item.label;if(document.body.dataset.nodeShell){li.append(a);list.append(li);continue;}a.setAttribute('aria-expanded','false');const panel=document.createElement('ul');panel.className='mh-subnav';panel.hidden=true;panel.id='mh-subnav-'+(++id);a.setAttribute('aria-controls',panel.id);
    for(const child of item.children){const row=document.createElement('li'),link=document.createElement('a');link.textContent=child.label;link.href=child.url;row.append(link);panel.append(row);}li.append(a,panel);list.append(li);
    let timer,touch=false,wasOpen=false,suppress=false;
    const close=(restore=false)=>{clearTimeout(timer);panel.hidden=true;a.setAttribute('aria-expanded','false');if(restore){suppress=true;a.focus({preventScroll:true});suppress=false;}};
