@@ -70,7 +70,8 @@ body.barnes-media-kit .media-library__title {white-space:normal!important;}
 }
 body.barnes-media-kit .media-library__button {align-self:flex-start;max-width:100%;white-space:normal;}
 /* Edge-to-edge backgrounds, with the copy still following the homepage grid. */
-body.barnes-home-typography.barnes-media-kit :is(.media-cta-banner,.media-library) > .base-container {
+/* Override the shared page-kit container cap for these two background frames. */
+html body#ui-kit-page.barnes-page-kit[data-page-kit].barnes-home-typography.barnes-media-kit main section:is(.media-cta-banner,.media-library) > .base-container[class] {
   width:100%!important;max-width:none!important;padding-inline:0!important;
 }
 body.barnes-media-kit .media-cta-banner .media-cta-banner__inner {
@@ -84,12 +85,8 @@ body.barnes-media-kit .media-library .media-library__content {
     left:0;padding-inline:var(--home-gutter)!important;
   }
 }
-@media(min-width:1921px) {
-  body.barnes-media-kit .media-library__frame {background:linear-gradient(90deg,#eddfd3,#e6d6c8);}
-  body.barnes-media-kit .media-library__image {
-    max-width:1920px;margin-inline:auto;object-fit:contain;
-    mask-image:linear-gradient(90deg,transparent,#000 6%,#000 96%,transparent);
-  }
+body.barnes-media-kit .media-library__image {
+  width:100%;max-width:none;margin-inline:0;object-fit:cover;mask-image:none;
 }
 body.barnes-media-kit .site-footer__callback-btn {white-space:normal!important;}
 body.barnes-media-kit :is(a,button,input):focus-visible {outline:2px solid #8b1d25;outline-offset:4px;}
