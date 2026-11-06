@@ -60,7 +60,11 @@
     const list=q('.catalog-grid__list'),header=q('.catalog-grid__header');if(!list || !header || q('.city-node-ready'))return;
     document.body.classList.add('city-node-ready','barnes-header-template');
     const consultationImage=q('.catalog-consultation__image');
-    if(consultationImage) consultationImage.src=new URL('assets/cta-ruslan-unified-v1.webp',document.baseURI).href;
+    if(consultationImage){
+      const portraitMedia=matchMedia('(min-width:769px)');
+      const syncPortrait=()=>{const src=new URL(portraitMedia.matches?'assets/cta-ruslan-cutout.png':'assets/cta-ruslan-unified-v1.webp',document.baseURI).href;if(consultationImage.src!==src)consultationImage.src=src;};
+      portraitMedia.addEventListener('change',syncPortrait);syncPortrait();
+    }
     [['.catalog-best-offers__title','Новые проекты'],['.catalog-map__title','География'],['.catalog-grid__title','Каталог'],['.departments-section__title','Направления'],['.catalog-faq__title','Экспертиза BARN Estate']].forEach(([s,t])=>eyebrow(s,t));
     q('.catalog-grid__title').textContent='Актуальные проекты и лоты';
     all('.catalog-grid .apartment-card').forEach(enhanceLot);

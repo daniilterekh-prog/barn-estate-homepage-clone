@@ -68,3 +68,14 @@
 @layer barn-node-spacing {
  html body[data-node-shell] .catalog-intro--with-media .catalog-intro__content {width:100%!important;max-width:100%!important;height:auto!important;min-height:0!important;}
 }
+
+/* Match apparent portrait distance; the office background still reaches every CTA edge. */
+@layer barn-node-spacing {
+ @media(min-width:769px){
+  html body[data-node-shell] .catalog-consultation__image {top:auto!important;bottom:0!important;max-height:800px!important;}
+  html body[data-node-shell] .catalog-consultation__image[src*="cta-ruslan-cutout"] {left:0!important;right:auto!important;width:50%!important;height:82%!important;max-height:640px!important;object-fit:contain!important;object-position:center bottom!important;}
+  html body[data-node-shell].city-node-ready .catalog-consultation__media::before {content:""!important;background-image:url("assets/709121d4e9a3cf06.webp")!important;}
+  html body[data-node-shell] .catalog-consultation:has(.catalog-consultation__image:is([src*="consultation-background"],[src*="cta-alina-unified"]))>.cta-bleed-backdrop {background-image:url("assets/cta-consultation-interior.webp")!important;}
+  html body[data-node-shell] .catalog-consultation__image:is([src*="consultation-background"],[src*="cta-alina-unified"]) {height:100%!important;max-height:700px!important;mask-image:linear-gradient(to bottom,transparent,#000 4%),linear-gradient(90deg,#000 80%,transparent)!important;mask-composite:intersect!important;}
+ }
+}
