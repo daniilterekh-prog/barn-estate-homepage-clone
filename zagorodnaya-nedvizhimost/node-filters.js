@@ -113,6 +113,29 @@
   document.addEventListener('click',e=>{if(!popup.contains(e.target)&&!button.contains(e.target))close(false);});window.addEventListener('resize',()=>close(false));document.addEventListener('barnes:filters-open',()=>close(false));
  }
 
+ function mountMapParameters(root,controls,sort){
+  const commercial=direction==='commercial',country=direction==='country';
+  const state=()=>country?{...window.countryFullFilters.getState(),bedrooms:window.countryListing.getSelection().bedrooms,location:window.countryListing.getSelection().location}:window.BarnesFilters.getState();
+  function patch(fields){if(country)document.dispatchEvent(new CustomEvent('country-filter-set',{detail:fields}));else window.BarnesFilters.patch(fields);}
+  const wrapper=document.createElement('div');wrapper.className='node-map-parameters';sort.closest('label').before(wrapper);
+  function selectField(key,title,options){const label=document.createElement('label');label.className='map-browser__field map-browser__field--select catalog-map-context node-map-parameter';label.dataset.nodeMapParameter=key;const sr=document.createElement('span');sr.className='map-browser__sr-only';sr.textContent=title;const select=document.createElement('select');select.setAttribute('aria-label',title);select.dataset.nodeMapParameter=key;select.append(new Option(title,''),...options.map(([value,text])=>new Option(text,value)));const arrow=document.createElement('span');arrow.className='map-browser__chevron';arrow.setAttribute('aria-hidden','true');label.append(sr,select,arrow);wrapper.append(label);upgradeSelect(select);return select;}
+  function inputChoices(name){return [...document.querySelectorAll('.hero-filter-modal input[name="'+name+'"]')].filter(e=>e.type==='checkbox').map(e=>[e.value,e.closest('label').textContent.trim()]);}
+  const locationTitle={city:'Район / адрес',country:'Шоссе',commercial:'Район',international:'Страна',resort:'Регион'}[direction];
+  const locations=country?window.countryListing.getLocations().filter(v=>!v.trim().startsWith(',')).map(v=>[v,v]):commercial?(window.BarnesQuickConfig.find(c=>c.key==='districts')?.choices||[]).map(v=>[v,v]):direction==='city'?[...new Set([...document.querySelectorAll('.catalog-grid__list>.catalog-grid__item')].map(e=>e.dataset.location).filter(Boolean))].map(v=>[v,v]):inputChoices('directions');
+  const location=selectField('location',locationTitle,locations);location.closest('label').classList.add('node-map-parameter--wide');
+  location.addEventListener('change',()=>{if(country)window.countryListing.setSelection('location',location.value);else patch({[commercial?'districts':'directions']:location.value?[location.value]:[]});});
+  function rangeField(key,title){const field=document.createElement('fieldset');field.className='node-map-range node-map-parameter--wide';field.dataset.nodeMapParameter=key;const legend=document.createElement('legend');legend.textContent=title;const pair=document.createElement('div');pair.className='node-map-range__inputs';const error=document.createElement('p');error.className='node-map-range__error';error.hidden=true;error.setAttribute('role','alert');const id='node-map-range-'+key+'-'+document.querySelectorAll('.node-map-range').length;error.id=id;const inputs=['Min','Max'].map((end,i)=>{const input=document.createElement('input');input.type='number';input.min='0';input.step='any';input.inputMode='decimal';input.placeholder=i?'До':'От';input.dataset.nodeMapRange=key+end;input.setAttribute('aria-label',title+' '+(i?'до':'от'));input.setAttribute('aria-describedby',id);pair.append(input);return input;});field.append(legend,pair,error);wrapper.append(field);
+   inputs.forEach(input=>input.addEventListener('input',()=>{const [min,max]=inputs.map(e=>e.value),invalid=inputs.some(e=>e.value!==''&&Number(e.value)<0)||(min!==''&&max!==''&&Number(min)>Number(max));error.hidden=!invalid;error.textContent=invalid?'Укажи диапазон от меньшего значения к большему.':'';inputs.forEach(e=>e.setAttribute('aria-invalid',String(invalid)));if(invalid)return;const fields={[key+'Min']:country?(min===''?null:Number(min)):min,[key+'Max']:country?(max===''?null:Number(max)):max};if(key==='price')fields[country?'bands':'priceRanges']=[];patch(fields);}));
+   return{sync(value,newTitle){if(!field.contains(document.activeElement)){error.hidden=true;if(error.textContent)error.textContent='';}if(legend.textContent!==(newTitle||title))legend.textContent=newTitle||title;inputs.forEach((input,i)=>{const v=value[key+(i?'Max':'Min')]??'';if(!error.hidden&&document.activeElement===input)return;if(input.value!==String(v))input.value=v;input.setAttribute('aria-label',(newTitle||title)+' '+(i?'до':'от'));});if(error.hidden)inputs.forEach(e=>e.removeAttribute('aria-invalid'));}};
+  }
+  const price=rangeField('price','Стоимость');
+  let bedrooms=null,area=null;
+  if(commercial)area=rangeField('area','Площадь, м²');else bedrooms=selectField('bedrooms','Спальни',country?[['1','От 1 спальни'],['2','От 2 спален'],['3','От 3 спален'],['4','От 4 спален']]:[['1','1 спальня'],['2','2 спальни'],['3','3 спальни'],['4+','4+ спальни']]);
+  if(bedrooms)bedrooms.addEventListener('change',()=>patch({bedrooms:bedrooms.value}));
+  if(commercial)sort.closest('label').classList.add('node-map-parameter--wide');wrapper.append(sort.closest('label'));
+  return{sync(){const value=state(),loc=country?value.location:(value[commercial?'districts':'directions']||[])[0]||'';for(const [select,v]of [[location,loc],[bedrooms,value.bedrooms||'']])if(select&&select.value!==v){select.value=v;select.dispatchEvent(new Event('input'));}price.sync(value,document.body.dataset.nodeDeal==='rent'?'Стоимость / месяц':'Стоимость');area?.sync(value);}};
+ }
+
  function mountMaps(){
   const toolbar=document.querySelector('.catalog-mode-toolbar[data-node-filters-ready]');if(!toolbar)return;
   const mainDirection=toolbar.querySelector('.catalog-direction:not(.catalog-market):not(.node-filter-market) select');
@@ -141,6 +164,7 @@
    dept.replaceChildren(...[...mainDirection.options].map(o=>o.cloneNode(true)));dept.value=mainDirection.value;
    sort.replaceChildren(...[...mainSort.options].map(o=>o.cloneNode(true)));sort.value=mainSort.value;
    market.closest('label').hidden=!mainMarket;
+   const parameters=mountMapParameters(root,controls,sort),dealGroup=controls.querySelector('.map-browser__market');dealGroup.classList.add('catalog-mode-switch','node-map-deal');dealGroup.setAttribute('aria-label','Сделка');dealGroup.querySelectorAll('button').forEach(e=>e.classList.add('catalog-mode-switch__button'));
    dept.addEventListener('change',()=>{const value=dept.value;const url=new URL('../katalog-nedvizhimosti/',location.href);const aliases={'zagorodnaya-nedvizhimost':'country','gorodskaya-nedvizhimost':'city','kommercheskaya-nedvizhimost':'commercial','kurortnaya':'resort','mezhdunarodnaya-nedvizhimost':'international'};url.searchParams.set('direction',aliases[value]||value);url.searchParams.set('deal',document.body.dataset.nodeDeal==='rent'?'rent':'buy');const event=new CustomEvent('barnes:department',{bubbles:true,cancelable:true,detail:{direction:aliases[value]||value,url:url.href}});if(toolbar.dispatchEvent(event))location.href=url.href;});
    market.addEventListener('change',()=>{mainMarket.value=market.value;mainMarket.dispatchEvent(new Event('change',{bubbles:true}));});
    sort.addEventListener('change',()=>{mainSort.value=sort.value;mainSort.dispatchEvent(new Event('change',{bubbles:true}));});
@@ -154,11 +178,11 @@
     const brands=(root.classList.contains('node-country-map-controls')?root.parentElement:root).querySelector('[data-brand-context=map]');if(brands&&!controls.contains(brands))controls.querySelector('.map-browser__reset').before(brands);
     if(brands){brands.hidden=true;brands.inert=true;brands.classList.add('node-map-brands-hidden','barnes-brand-filters');brands.querySelectorAll('.country-brand-filters__box').forEach(e=>e.classList.add('barnes-brand-filters__box'));}
     const rental=document.body.dataset.nodeDeal==='rent';market.closest('label').hidden=!mainMarket||rental;
-    controls.querySelector('[data-node-map-mode="1"]').hidden=['resort','international'].includes(direction);
+    dealGroup.hidden=['resort','international'].includes(direction);dealGroup.inert=dealGroup.hidden;
     if(mainMarket&&market.value!==mainMarket.value){market.value=mainMarket.value;market.dispatchEvent(new Event('input'));}
     if(sort.value!==mainSort.value){sort.value=mainSort.value;sort.dispatchEvent(new Event('input'));}
     const dealButtons=toolbar.querySelectorAll('.catalog-toolbar__primary>.catalog-mode-switch button');
-    controls.querySelectorAll('[data-node-map-mode]').forEach((button,i)=>button.setAttribute('aria-pressed',dealButtons[i]?.getAttribute('aria-pressed')||'false'));
+    controls.querySelectorAll('[data-node-map-mode]').forEach((button,i)=>{const active=dealButtons[i]?.getAttribute('aria-pressed')==='true';button.setAttribute('aria-pressed',String(active));button.classList.toggle('is-active',active);});parameters.sync();
    }
    const owner=root.classList.contains('node-country-map-controls')?root.closest('.catalog-projects-map'):root;let savedViewport=null;
    function viewport(){const open=owner===root?!root.hidden:owner.classList.contains('country-map-expanded');if(open&&!savedViewport){savedViewport={overflow:document.documentElement.style.overflow,gutter:document.documentElement.style.scrollbarGutter};document.documentElement.style.overflow='hidden';document.documentElement.style.scrollbarGutter=innerWidth<=540?'auto':'stable';}else if(!open&&savedViewport){document.documentElement.style.overflow=savedViewport.overflow;document.documentElement.style.scrollbarGutter=savedViewport.gutter;savedViewport=null;}}
@@ -169,6 +193,24 @@
 
  // Reuse each node's listing card, never another direction's object facts.
  window.addEventListener('click',event=>{const button=event.target.closest?.('[data-node-map-listing-card] .apartment-card__call-btn');if(button?.nodeMapRequest){event.preventDefault();event.stopImmediatePropagation();button.nodeMapRequest();}},true);
+ function filterMapParameters(root,list){
+  if(['country','commercial'].includes(direction)||!window.BarnesFilters)return;
+  const state=window.BarnesFilters.getState(),controls=root.querySelector('.map-browser__filters:not([data-node-map-source])'),location=controls?.querySelector('select[data-node-map-parameter=location]');
+  const locationText=location?.value?location.selectedOptions[0]?.textContent.trim().toLocaleLowerCase('ru'):'';
+  const active=state.priceMin!==''&&state.priceMin!=null||state.priceMax!==''&&state.priceMax!=null||state.bedrooms||locationText;
+  let count=0;const rows=[...list.querySelectorAll(':scope>.map-browser__card')];
+  for(const row of rows){const card=row.querySelector('.apartment-card');if(!card)continue;let match=true;
+   const text=card.querySelector('.apartment-card__price')?.textContent||'',price=Number(text.replace(/[^\d,.-]/g,'').replace(',','.'));
+   if(state.priceMin!==''&&state.priceMin!=null)match=price>0&&price>=Number(state.priceMin);
+   if(state.priceMax!==''&&state.priceMax!=null)match=match&&price>0&&price<=Number(state.priceMax);
+   if(state.bedrooms){const fact=[...card.querySelectorAll('.listing-card-fact,.apartment-card__stat')].find(e=>/спальн/i.test(e.querySelector('dt,small,.listing-card-fact__label')?.textContent||''));const bedrooms=fact?.querySelector('dd,b,.listing-card-fact__value')?.textContent||'';const values=bedrooms.match(/\d+/g)?.map(Number)||[];const min=values[0],max=/\+/.test(bedrooms)?Infinity:values.at(-1);const wanted=Number.parseInt(state.bedrooms);match=match&&!!values.length&&(state.bedrooms==='4+'?max>=4:wanted>=min&&wanted<=max);}
+   if(locationText){const facts=[...card.querySelectorAll('.listing-card-fact')].filter(e=>/локац|страна|район/i.test(e.querySelector('dt,small,.listing-card-fact__label')?.textContent||'')).map(e=>e.querySelector('dd,b,.listing-card-fact__value')?.textContent||'');const where=[card.querySelector('.apartment-card__address')?.textContent||'',...facts].join(' ').toLocaleLowerCase('ru');match=match&&where.includes(locationText);}
+   if(row.hidden!==!match)row.hidden=!match;if(match)count++;
+  }
+  if(rows.length){const heading=root.querySelector('.map-browser__heading'),text='Найдено объектов: '+count;if(heading.textContent!==text)heading.textContent=text;let empty=list.querySelector('.node-map-parameter-empty');if(!count&&!empty){empty=document.createElement('p');empty.className='map-browser__empty node-map-parameter-empty';empty.textContent='Ничего не найдено. Измени запрос или сбрось фильтры.';list.append(empty);}else if(count&&empty)empty.remove();}
+  if(active){const notice=root.querySelector('.map-browser__metadata-notice');if(notice)notice.hidden=true;}
+ }
+
  function enhanceMapCards(){
   const cards=[...document.querySelectorAll('.catalog-grid__list>.catalog-grid__item>.apartment-card')];if(!cards.length)return;
   const path=url=>{try{return new URL(url,location.href).pathname.replace(/\/$/,'');}catch{return url;}};
@@ -212,6 +254,7 @@
     const source=cards.find(c=>path(href(c))===path(record.href));
     row.dataset.nodeMapCard=source?'listing':'record';row.replaceChildren(copyCard(source||cards[0],root,source?null:record));
    }
+   filterMapParameters(root,list);
   }
  }
 
