@@ -1,0 +1,835 @@
+[
+  {
+    "id": "01",
+    "title": "Вторичная недвижимость Москвы",
+    "parent": "city",
+    "route": "vtorichnaya-nedvizhimost",
+    "file": "content/01-vtorichnaya-nedvizhimost.json",
+    "source": "https://front.barnes.vsavr.ru/vtorichnaya-nedvizhimost/",
+    "sourceStatus": 200,
+    "blocks": [
+      "hero",
+      "listing",
+      "consultation",
+      "directions",
+      "news",
+      "faq",
+      "contact"
+    ],
+    "notes": [],
+    "preview": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/vtorichnaya-nedvizhimost/",
+    "html": "pages/vtorichnaya-nedvizhimost/index.html",
+    "parentSource": "main-site/pages/city",
+    "parentHtmlSha256": "6e6a6db627aec737c068cdebe79071ca4ede6a735d42f179cd864aec604a3b5f",
+    "sha256": "0ce95d3a0904c882192734b92a36ca1ca506459f1d0039a49fec00d4d6d3806f"
+  },
+  {
+    "id": "02",
+    "title": "Новостройки",
+    "parent": "city",
+    "route": "novostroyki",
+    "file": "content/02-novostroyki.json",
+    "source": "https://front.barnes.vsavr.ru/novostroyki/",
+    "sourceStatus": 200,
+    "blocks": [
+      "hero",
+      "listing",
+      "consultation",
+      "directions",
+      "news",
+      "faq",
+      "contact"
+    ],
+    "notes": [],
+    "preview": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/novostroyki/",
+    "html": "pages/novostroyki/index.html",
+    "parentSource": "main-site/pages/city",
+    "parentHtmlSha256": "6e6a6db627aec737c068cdebe79071ca4ede6a735d42f179cd864aec604a3b5f",
+    "sha256": "e19c03881fe3da5c0038feb8004670830f3daf55c5672bd33cda67c00edadebc"
+  },
+  {
+    "id": "03",
+    "title": "Аренда недвижимости в Москве",
+    "parent": "city",
+    "route": "arendovat",
+    "file": "content/03-arendovat.json",
+    "source": "https://front.barnes.vsavr.ru/arendovat/",
+    "sourceStatus": 200,
+    "blocks": [
+      "hero",
+      "listing",
+      "consultation",
+      "directions",
+      "news",
+      "faq",
+      "contact"
+    ],
+    "notes": [],
+    "preview": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/arendovat/",
+    "html": "pages/arendovat/index.html",
+    "parentSource": "main-site/pages/city",
+    "parentHtmlSha256": "6e6a6db627aec737c068cdebe79071ca4ede6a735d42f179cd864aec604a3b5f",
+    "sha256": "2b758d752de19d047bcdce0fd46175d0bbbc8bbb11a47f9c5feb81d55f672789"
+  },
+  {
+    "id": "04",
+    "title": "Жилые комплексы Москвы",
+    "parent": "city",
+    "route": "zhilye-kompleksy",
+    "file": "content/04-zhilye-kompleksy.json",
+    "source": "https://front.barnes.vsavr.ru/zhilye-kompleksy/",
+    "sourceStatus": 200,
+    "blocks": [
+      "hero",
+      "listing",
+      "consultation",
+      "directions",
+      "news",
+      "faq",
+      "contact"
+    ],
+    "notes": [],
+    "preview": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/zhilye-kompleksy/",
+    "html": "pages/zhilye-kompleksy/index.html",
+    "parentSource": "main-site/pages/city",
+    "parentHtmlSha256": "6e6a6db627aec737c068cdebe79071ca4ede6a735d42f179cd864aec604a3b5f",
+    "sha256": "95f3a2811854fd7d22d17dc6ffdcb04782c8598b6d1706ba09886f176dc46394"
+  },
+  {
+    "id": "05",
+    "title": "Квартиры",
+    "parent": "city",
+    "route": "gorodskaya-nedvizhimost/kvartiry",
+    "file": "content/05-gorodskaya-nedvizhimost__kvartiry.json",
+    "source": "https://front.barnes.vsavr.ru/gorodskaya-nedvizhimost/kvartiry/",
+    "sourceStatus": 200,
+    "blocks": [
+      "hero",
+      "listing",
+      "contact"
+    ],
+    "notes": [],
+    "preview": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/gorodskaya-nedvizhimost/kvartiry/",
+    "html": "pages/gorodskaya-nedvizhimost/kvartiry/index.html",
+    "parentSource": "main-site/pages/city",
+    "parentHtmlSha256": "6e6a6db627aec737c068cdebe79071ca4ede6a735d42f179cd864aec604a3b5f",
+    "sha256": "329fea5fe70c6bd261db2fdf323db61ac0d16e6e9158b846e48ca3ed2ca8bec7"
+  },
+  {
+    "id": "06",
+    "title": "Апартаменты",
+    "parent": "city",
+    "route": "gorodskaya-nedvizhimost/apartamenty",
+    "file": "content/06-gorodskaya-nedvizhimost__apartamenty.json",
+    "source": "https://front.barnes.vsavr.ru/gorodskaya-nedvizhimost/apartamenty/",
+    "sourceStatus": 200,
+    "blocks": [
+      "hero",
+      "listing",
+      "contact"
+    ],
+    "notes": [],
+    "preview": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/gorodskaya-nedvizhimost/apartamenty/",
+    "html": "pages/gorodskaya-nedvizhimost/apartamenty/index.html",
+    "parentSource": "main-site/pages/city",
+    "parentHtmlSha256": "6e6a6db627aec737c068cdebe79071ca4ede6a735d42f179cd864aec604a3b5f",
+    "sha256": "01683ff9ef3195176686495ca8acba9d6784c2c739977714c09409e111803983"
+  },
+  {
+    "id": "07",
+    "title": "Пентхаусы",
+    "parent": "city",
+    "route": "kupit-penthausy-v-moskve",
+    "file": "content/07-kupit-penthausy-v-moskve.json",
+    "source": "https://front.barnes.vsavr.ru/kupit-penthausy-v-moskve/",
+    "sourceStatus": 200,
+    "blocks": [
+      "hero",
+      "listing",
+      "consultation",
+      "directions",
+      "news",
+      "faq",
+      "contact"
+    ],
+    "notes": [],
+    "preview": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/kupit-penthausy-v-moskve/",
+    "html": "pages/kupit-penthausy-v-moskve/index.html",
+    "parentSource": "main-site/pages/city",
+    "parentHtmlSha256": "6e6a6db627aec737c068cdebe79071ca4ede6a735d42f179cd864aec604a3b5f",
+    "sha256": "e1e0535278054d723c2bb9a66e4020d28710a38b8063b9a0e695c09969e79d2d"
+  },
+  {
+    "id": "08",
+    "title": "Аренда коммерческой недвижимости",
+    "parent": "commercial",
+    "route": "kommercheskaya-nedvizhimost/arendovat",
+    "file": "content/08-kommercheskaya-nedvizhimost__arendovat.json",
+    "source": "https://front.barnes.vsavr.ru/kommercheskaya-nedvizhimost/arendovat/",
+    "sourceStatus": 200,
+    "blocks": [
+      "hero",
+      "listing",
+      "contact"
+    ],
+    "notes": [],
+    "preview": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/kommercheskaya-nedvizhimost/arendovat/",
+    "html": "pages/kommercheskaya-nedvizhimost/arendovat/index.html",
+    "parentSource": "main-site/pages/commercial",
+    "parentHtmlSha256": "c8769cddd2cd8c53db3712712d9abb8c5350487fc03d5292e78439b16f96d916",
+    "sha256": "f19ec2ab64844f3ab9e51665875f85f58a01f01ba906f4892c32cf0d741b5fdc"
+  },
+  {
+    "id": "09",
+    "title": "Готовый арендный бизнес (ГАБ)",
+    "parent": "commercial",
+    "route": "kommercheskaya-nedvizhimost/arendnyj-biznes",
+    "file": "content/09-kommercheskaya-nedvizhimost__arendnyj-biznes.json",
+    "source": "https://front.barnes.vsavr.ru/kommercheskaya-nedvizhimost/arendnyj-biznes/",
+    "sourceStatus": 200,
+    "blocks": [
+      "hero",
+      "listing",
+      "contact"
+    ],
+    "notes": [],
+    "preview": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/kommercheskaya-nedvizhimost/arendnyj-biznes/",
+    "html": "pages/kommercheskaya-nedvizhimost/arendnyj-biznes/index.html",
+    "parentSource": "main-site/pages/commercial",
+    "parentHtmlSha256": "c8769cddd2cd8c53db3712712d9abb8c5350487fc03d5292e78439b16f96d916",
+    "sha256": "368c1ba30ec61df5cbf45130bf78e199541de549e5c60364cb627650e6189a82"
+  },
+  {
+    "id": "10",
+    "title": "Здания",
+    "parent": "commercial",
+    "route": "kommercheskaya-nedvizhimost/zdanie",
+    "file": "content/10-kommercheskaya-nedvizhimost__zdanie.json",
+    "source": "https://front.barnes.vsavr.ru/kommercheskaya-nedvizhimost/zdanie/",
+    "sourceStatus": 200,
+    "blocks": [
+      "hero",
+      "listing",
+      "contact"
+    ],
+    "notes": [],
+    "preview": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/kommercheskaya-nedvizhimost/zdanie/",
+    "html": "pages/kommercheskaya-nedvizhimost/zdanie/index.html",
+    "parentSource": "main-site/pages/commercial",
+    "parentHtmlSha256": "c8769cddd2cd8c53db3712712d9abb8c5350487fc03d5292e78439b16f96d916",
+    "sha256": "fc3fe2168df2ca074d1beb77d04de9ff80290888f2abed9bae02e945a9c90547"
+  },
+  {
+    "id": "11",
+    "title": "Особняки",
+    "parent": "commercial",
+    "route": "kommercheskaya-nedvizhimost/osobnyak",
+    "file": "content/11-kommercheskaya-nedvizhimost__osobnyak.json",
+    "source": "https://front.barnes.vsavr.ru/kommercheskaya-nedvizhimost/osobnyak/",
+    "sourceStatus": 200,
+    "blocks": [
+      "hero",
+      "listing",
+      "contact"
+    ],
+    "notes": [],
+    "preview": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/kommercheskaya-nedvizhimost/osobnyak/",
+    "html": "pages/kommercheskaya-nedvizhimost/osobnyak/index.html",
+    "parentSource": "main-site/pages/commercial",
+    "parentHtmlSha256": "c8769cddd2cd8c53db3712712d9abb8c5350487fc03d5292e78439b16f96d916",
+    "sha256": "b560767a5238e67ba7051dac64571a8e79395a08ca51eefc5ede30081d15bfa8"
+  },
+  {
+    "id": "12",
+    "title": "Бизнес-центры",
+    "parent": "commercial",
+    "route": "kommercheskaya-nedvizhimost/business-center",
+    "file": "content/12-kommercheskaya-nedvizhimost__business-center.json",
+    "source": "https://front.barnes.vsavr.ru/kommercheskaya-nedvizhimost/business-center/",
+    "sourceStatus": 200,
+    "blocks": [
+      "hero",
+      "listing",
+      "contact"
+    ],
+    "notes": [],
+    "preview": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/kommercheskaya-nedvizhimost/business-center/",
+    "html": "pages/kommercheskaya-nedvizhimost/business-center/index.html",
+    "parentSource": "main-site/pages/commercial",
+    "parentHtmlSha256": "c8769cddd2cd8c53db3712712d9abb8c5350487fc03d5292e78439b16f96d916",
+    "sha256": "84c14bb13ad451fa3eb508a0fa7f15dc6ede32b2a51b6a3f37de6d8bc75483a9"
+  },
+  {
+    "id": "13",
+    "title": "Продажа офисов в Москве",
+    "parent": "commercial",
+    "route": "kommercheskaya-nedvizhimost/ofice",
+    "file": "content/13-kommercheskaya-nedvizhimost__ofice.json",
+    "source": "https://front.barnes.vsavr.ru/kommercheskaya-nedvizhimost/ofice/",
+    "sourceStatus": 200,
+    "blocks": [
+      "hero",
+      "listing",
+      "contact"
+    ],
+    "notes": [],
+    "preview": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/kommercheskaya-nedvizhimost/ofice/",
+    "html": "pages/kommercheskaya-nedvizhimost/ofice/index.html",
+    "parentSource": "main-site/pages/commercial",
+    "parentHtmlSha256": "c8769cddd2cd8c53db3712712d9abb8c5350487fc03d5292e78439b16f96d916",
+    "sha256": "9b73d25c86f160424b1e112b87b76b19221103dc2371512e7e2a220a066fa093"
+  },
+  {
+    "id": "14",
+    "title": "Продажа складов в Москве",
+    "parent": "commercial",
+    "route": "kommercheskaya-nedvizhimost/sklad",
+    "file": "content/14-kommercheskaya-nedvizhimost__sklad.json",
+    "source": "https://front.barnes.vsavr.ru/kommercheskaya-nedvizhimost/sklad/",
+    "sourceStatus": 200,
+    "blocks": [
+      "hero",
+      "listing",
+      "contact"
+    ],
+    "notes": [],
+    "preview": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/kommercheskaya-nedvizhimost/sklad/",
+    "html": "pages/kommercheskaya-nedvizhimost/sklad/index.html",
+    "parentSource": "main-site/pages/commercial",
+    "parentHtmlSha256": "c8769cddd2cd8c53db3712712d9abb8c5350487fc03d5292e78439b16f96d916",
+    "sha256": "5427b2ab7f21f4cbaac272ef8bd9962b161708636d4df036ed4b2a807da23a77"
+  },
+  {
+    "id": "15",
+    "title": "Продажа стрит ритейла",
+    "parent": "commercial",
+    "route": "kommercheskaya-nedvizhimost/retail",
+    "file": "content/15-kommercheskaya-nedvizhimost__retail.json",
+    "source": "https://front.barnes.vsavr.ru/kommercheskaya-nedvizhimost/retail/",
+    "sourceStatus": 200,
+    "blocks": [
+      "hero",
+      "listing",
+      "contact"
+    ],
+    "notes": [],
+    "preview": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/kommercheskaya-nedvizhimost/retail/",
+    "html": "pages/kommercheskaya-nedvizhimost/retail/index.html",
+    "parentSource": "main-site/pages/commercial",
+    "parentHtmlSha256": "c8769cddd2cd8c53db3712712d9abb8c5350487fc03d5292e78439b16f96d916",
+    "sha256": "327c5d0054f7dd272df305cf963cabe54aee63c836973dea00a485b7b4bec63f"
+  },
+  {
+    "id": "16",
+    "title": "Продажа торговых центров",
+    "parent": "commercial",
+    "route": "kommercheskaya-nedvizhimost/tc",
+    "file": "content/16-kommercheskaya-nedvizhimost__tc.json",
+    "source": "https://front.barnes.vsavr.ru/kommercheskaya-nedvizhimost/tc/",
+    "sourceStatus": 200,
+    "blocks": [
+      "hero",
+      "listing",
+      "contact"
+    ],
+    "notes": [],
+    "preview": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/kommercheskaya-nedvizhimost/tc/",
+    "html": "pages/kommercheskaya-nedvizhimost/tc/index.html",
+    "parentSource": "main-site/pages/commercial",
+    "parentHtmlSha256": "c8769cddd2cd8c53db3712712d9abb8c5350487fc03d5292e78439b16f96d916",
+    "sha256": "7de1599106bb403374711f1f406f7a0c598f37b61fcdb44496591683cc5f2bf8"
+  },
+  {
+    "id": "17",
+    "title": "Продажа ресторанов",
+    "parent": "commercial",
+    "route": "kommercheskaya-nedvizhimost/restaurant",
+    "file": "content/17-kommercheskaya-nedvizhimost__restaurant.json",
+    "source": "https://front.barnes.vsavr.ru/kommercheskaya-nedvizhimost/restaurant/",
+    "sourceStatus": 200,
+    "blocks": [
+      "hero",
+      "listing",
+      "contact"
+    ],
+    "notes": [],
+    "preview": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/kommercheskaya-nedvizhimost/restaurant/",
+    "html": "pages/kommercheskaya-nedvizhimost/restaurant/index.html",
+    "parentSource": "main-site/pages/commercial",
+    "parentHtmlSha256": "c8769cddd2cd8c53db3712712d9abb8c5350487fc03d5292e78439b16f96d916",
+    "sha256": "0f3176a055b0e0961be6cd1bf43048d4182ceeb7375749211badb641b8ef20fb"
+  },
+  {
+    "id": "18",
+    "title": "Продажа земли свободного назначения",
+    "parent": "commercial",
+    "route": "kommercheskaya-nedvizhimost/free-land",
+    "file": "content/18-kommercheskaya-nedvizhimost__free-land.json",
+    "source": "https://front.barnes.vsavr.ru/kommercheskaya-nedvizhimost/free-land/",
+    "sourceStatus": 200,
+    "blocks": [
+      "hero",
+      "listing",
+      "contact"
+    ],
+    "notes": [],
+    "preview": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/kommercheskaya-nedvizhimost/free-land/",
+    "html": "pages/kommercheskaya-nedvizhimost/free-land/index.html",
+    "parentSource": "main-site/pages/commercial",
+    "parentHtmlSha256": "c8769cddd2cd8c53db3712712d9abb8c5350487fc03d5292e78439b16f96d916",
+    "sha256": "954f6df42d5a9e3b975c39bd8ecfaf0f8dba26a1ceca02b067a898dfbb2d837c"
+  },
+  {
+    "id": "19",
+    "title": "Продажа земли коммерческого назначения",
+    "parent": "commercial",
+    "route": "kommercheskaya-nedvizhimost/filter/type_object-is-t2/type_buy-is-buy/type_immovables-is-commercial-land",
+    "file": "content/19-kommercheskaya-nedvizhimost__filter__type_object-is-t2__type_buy-is-buy__type_immovables-is-commercial-land.json",
+    "source": "https://front.barnes.vsavr.ru/kommercheskaya-nedvizhimost/filter/type_object-is-t2/type_buy-is-buy/type_immovables-is-commercial-land/",
+    "sourceStatus": 200,
+    "blocks": [
+      "hero",
+      "listing",
+      "contact"
+    ],
+    "notes": [],
+    "preview": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/kommercheskaya-nedvizhimost/filter/type_object-is-t2/type_buy-is-buy/type_immovables-is-commercial-land/",
+    "html": "pages/kommercheskaya-nedvizhimost/filter/type_object-is-t2/type_buy-is-buy/type_immovables-is-commercial-land/index.html",
+    "parentSource": "main-site/pages/commercial",
+    "parentHtmlSha256": "c8769cddd2cd8c53db3712712d9abb8c5350487fc03d5292e78439b16f96d916",
+    "sha256": "451b89f1c3653d2d7aab03d11653ced6a41e064949016c1fc63d5b8f3c762688"
+  },
+  {
+    "id": "20",
+    "title": "Коттеджные поселки",
+    "parent": "country",
+    "route": "kottedzhnye-poselki",
+    "file": "content/20-kottedzhnye-poselki.json",
+    "source": "https://front.barnes.vsavr.ru/kottedzhnye-poselki/",
+    "sourceStatus": 200,
+    "blocks": [
+      "hero",
+      "listing",
+      "consultation",
+      "directions",
+      "news",
+      "faq",
+      "contact"
+    ],
+    "notes": [],
+    "preview": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/kottedzhnye-poselki/",
+    "html": "pages/kottedzhnye-poselki/index.html",
+    "parentSource": "main-site/pages/country",
+    "parentHtmlSha256": "f5355eff74a0d9315ad9983c2dfb16839c3b87f22e3d8b6a025911b23278dc3f",
+    "sha256": "397c9acf37384f1ad07c4d9568ff730eee689b83af93e1a9ecf928f5f75791bb"
+  },
+  {
+    "id": "21",
+    "title": "Таунхаусы",
+    "parent": "country",
+    "route": "kupit-taunhaus-v-podmoskove",
+    "file": "content/21-kupit-taunhaus-v-podmoskove.json",
+    "source": "https://front.barnes.vsavr.ru/kupit-taunhaus-v-podmoskove/",
+    "sourceStatus": 404,
+    "blocks": [
+      "hero",
+      "listing",
+      "contact"
+    ],
+    "notes": [
+      "Источник отдаёт 404. По согласованию: название из документа, короткий шаблон загородного узла; отсутствующая редакция не придумана."
+    ],
+    "preview": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/kupit-taunhaus-v-podmoskove/",
+    "html": "pages/kupit-taunhaus-v-podmoskove/index.html",
+    "parentSource": "main-site/pages/country",
+    "parentHtmlSha256": "f5355eff74a0d9315ad9983c2dfb16839c3b87f22e3d8b6a025911b23278dc3f",
+    "sha256": "6bb0a884718392307964c9f1607c9f1bdf5aa73bd47e0e8ae941b28a95d4e1af"
+  },
+  {
+    "id": "22",
+    "title": "Аренда загородной недвижимости",
+    "parent": "country",
+    "route": "snyat-zagorodnuyu-nedvizhimost",
+    "file": "content/22-snyat-zagorodnuyu-nedvizhimost.json",
+    "source": "https://front.barnes.vsavr.ru/snyat-zagorodnuyu-nedvizhimost/",
+    "sourceStatus": 200,
+    "blocks": [
+      "hero",
+      "listing",
+      "consultation",
+      "directions",
+      "news",
+      "faq",
+      "contact"
+    ],
+    "notes": [],
+    "preview": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/snyat-zagorodnuyu-nedvizhimost/",
+    "html": "pages/snyat-zagorodnuyu-nedvizhimost/index.html",
+    "parentSource": "main-site/pages/country",
+    "parentHtmlSha256": "f5355eff74a0d9315ad9983c2dfb16839c3b87f22e3d8b6a025911b23278dc3f",
+    "sha256": "7d4807d8d1bb7f517140bcf1dbc9ca50d73d852dc1d9ee633adadfb7bf9c4317"
+  },
+  {
+    "id": "23",
+    "title": "Дома",
+    "parent": "country",
+    "route": "zagorodnaya-nedvizhimost/doma",
+    "file": "content/23-zagorodnaya-nedvizhimost__doma.json",
+    "source": "https://front.barnes.vsavr.ru/zagorodnaya-nedvizhimost/doma/",
+    "sourceStatus": 200,
+    "blocks": [
+      "hero",
+      "listing",
+      "contact"
+    ],
+    "notes": [],
+    "preview": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/zagorodnaya-nedvizhimost/doma/",
+    "html": "pages/zagorodnaya-nedvizhimost/doma/index.html",
+    "parentSource": "main-site/pages/country",
+    "parentHtmlSha256": "f5355eff74a0d9315ad9983c2dfb16839c3b87f22e3d8b6a025911b23278dc3f",
+    "sha256": "8d16e84cd4905826c6f3c29a5505d06a374fe35d4722b6ec14ac16ee8658b3f5"
+  },
+  {
+    "id": "24",
+    "title": "Земельные участки",
+    "parent": "country",
+    "route": "zagorodnaya-nedvizhimost/uchastki",
+    "file": "content/24-zagorodnaya-nedvizhimost__uchastki.json",
+    "source": "https://front.barnes.vsavr.ru/zagorodnaya-nedvizhimost/uchastki/",
+    "sourceStatus": 200,
+    "blocks": [
+      "hero",
+      "listing",
+      "contact"
+    ],
+    "notes": [],
+    "preview": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/zagorodnaya-nedvizhimost/uchastki/",
+    "html": "pages/zagorodnaya-nedvizhimost/uchastki/index.html",
+    "parentSource": "main-site/pages/country",
+    "parentHtmlSha256": "f5355eff74a0d9315ad9983c2dfb16839c3b87f22e3d8b6a025911b23278dc3f",
+    "sha256": "304af8b271ba0d28179d42027c0b8a8963cd794b9f889c2729c79a0f07f16d81"
+  },
+  {
+    "id": "25",
+    "title": "Курортная недвижимость Алтая",
+    "parent": "resort",
+    "route": "altai",
+    "file": "content/25-altai.json",
+    "source": "https://front.barnes.vsavr.ru/altai/",
+    "sourceStatus": 200,
+    "blocks": [
+      "hero",
+      "listing",
+      "intro",
+      "consultation",
+      "directions",
+      "news",
+      "faq",
+      "contact"
+    ],
+    "notes": [],
+    "preview": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/altai/",
+    "html": "pages/altai/index.html",
+    "parentSource": "main-site/pages/resort/kit-2026-11-01",
+    "parentHtmlSha256": "fac7db593692c413b8951fca6a8ebdd5a4db62aaf6718fc3551f56aac9db09b9",
+    "sha256": "83b50dd2f438e20f15e416bd1cb28df0f5568b5483cf333b5498ae48133227bd"
+  },
+  {
+    "id": "26",
+    "title": "Курортная недвижимость Архыза",
+    "parent": "resort",
+    "route": "arhyz",
+    "file": "content/26-arhyz.json",
+    "source": "https://front.barnes.vsavr.ru/arhyz/",
+    "sourceStatus": 200,
+    "blocks": [
+      "hero",
+      "listing",
+      "intro",
+      "consultation",
+      "directions",
+      "news",
+      "faq",
+      "contact"
+    ],
+    "notes": [],
+    "preview": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/arhyz/",
+    "html": "pages/arhyz/index.html",
+    "parentSource": "main-site/pages/resort/kit-2026-11-01",
+    "parentHtmlSha256": "fac7db593692c413b8951fca6a8ebdd5a4db62aaf6718fc3551f56aac9db09b9",
+    "sha256": "d64a2033d951fa60a61632c62d7f610f8f5fa6bcdfe29195dc3a6f9f5f747191"
+  },
+  {
+    "id": "27",
+    "title": "Курортная недвижимость Сочи",
+    "parent": "resort",
+    "route": "sochi",
+    "file": "content/27-sochi.json",
+    "source": "https://front.barnes.vsavr.ru/sochi/",
+    "sourceStatus": 200,
+    "blocks": [
+      "hero",
+      "listing",
+      "consultation",
+      "directions",
+      "news",
+      "faq",
+      "contact"
+    ],
+    "notes": [],
+    "preview": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/sochi/",
+    "html": "pages/sochi/index.html",
+    "parentSource": "main-site/pages/resort/kit-2026-11-01",
+    "parentHtmlSha256": "fac7db593692c413b8951fca6a8ebdd5a4db62aaf6718fc3551f56aac9db09b9",
+    "sha256": "ea6368063fc80a237334925eba6909bc65f6496f7b021ddc3241b1e24d812aa4"
+  },
+  {
+    "id": "28",
+    "title": "Курортная недвижимость Шерегеша",
+    "parent": "resort",
+    "route": "kurortnaya/sheregesh",
+    "file": "content/28-kurortnaya__sheregesh.json",
+    "source": "https://front.barnes.vsavr.ru/kurortnaya/sheregesh/",
+    "sourceStatus": 200,
+    "blocks": [
+      "hero",
+      "listing",
+      "contact"
+    ],
+    "notes": [],
+    "preview": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/kurortnaya/sheregesh/",
+    "html": "pages/kurortnaya/sheregesh/index.html",
+    "parentSource": "main-site/pages/resort/kit-2026-11-01",
+    "parentHtmlSha256": "fac7db593692c413b8951fca6a8ebdd5a4db62aaf6718fc3551f56aac9db09b9",
+    "sha256": "692f07e1a68b2b40b5b75cc0dd94438067ffd23e1f6e5c06b3c9a090b1c2b31c"
+  },
+  {
+    "id": "29",
+    "title": "Жилые комплексы",
+    "parent": "international",
+    "route": "mezhdunarodnaya-nedvizhimost-zhilye-kompleksy",
+    "file": "content/29-mezhdunarodnaya-nedvizhimost-zhilye-kompleksy.json",
+    "source": "https://front.barnes.vsavr.ru/mezhdunarodnaya-nedvizhimost-zhilye-kompleksy/",
+    "sourceStatus": 200,
+    "blocks": [
+      "hero",
+      "listing",
+      "consultation",
+      "news",
+      "contact"
+    ],
+    "notes": [],
+    "preview": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/mezhdunarodnaya-nedvizhimost-zhilye-kompleksy/",
+    "html": "pages/mezhdunarodnaya-nedvizhimost-zhilye-kompleksy/index.html",
+    "parentSource": "main-site/pages/international",
+    "parentHtmlSha256": "8cbe60da790b511bf54e5f803e605c41105e36c39c1e6a7b7b9fb4255b25a025",
+    "sha256": "27f2303b5361af10752afb426f4423d75e3bf9ade6c840f541a75eb8ac9b64b3"
+  },
+  {
+    "id": "30",
+    "title": "ОАЭ",
+    "parent": "international",
+    "route": "oae",
+    "file": "content/30-oae.json",
+    "source": "https://front.barnes.vsavr.ru/mezhdunarodnaya-nedvizhimost/oae/",
+    "sourceStatus": 200,
+    "blocks": [
+      "hero",
+      "listing",
+      "contact"
+    ],
+    "notes": [],
+    "preview": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/oae/",
+    "html": "pages/oae/index.html",
+    "parentSource": "main-site/pages/international",
+    "parentHtmlSha256": "8cbe60da790b511bf54e5f803e605c41105e36c39c1e6a7b7b9fb4255b25a025",
+    "sha256": "2e9f57227a5653885e0cdeddd1f755fc61991f3ae3c58adfeea113f451651600"
+  },
+  {
+    "id": "31",
+    "title": "Турция",
+    "parent": "international",
+    "route": "turkey",
+    "file": "content/31-turkey.json",
+    "source": "https://front.barnes.vsavr.ru/mezhdunarodnaya-nedvizhimost/turtsiya/",
+    "sourceStatus": 200,
+    "blocks": [
+      "hero",
+      "listing",
+      "contact"
+    ],
+    "notes": [],
+    "preview": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/turkey/",
+    "html": "pages/turkey/index.html",
+    "parentSource": "main-site/pages/international",
+    "parentHtmlSha256": "8cbe60da790b511bf54e5f803e605c41105e36c39c1e6a7b7b9fb4255b25a025",
+    "sha256": "403957b08f86841b26022c3a5b62efad5bd8304d8f2e96955691c8d74a052692"
+  },
+  {
+    "id": "32",
+    "title": "Таиланд",
+    "parent": "international",
+    "route": "tailand",
+    "file": "content/32-tailand.json",
+    "source": "https://front.barnes.vsavr.ru/mezhdunarodnaya-nedvizhimost/tailand/",
+    "sourceStatus": 200,
+    "blocks": [
+      "hero",
+      "listing",
+      "contact"
+    ],
+    "notes": [],
+    "preview": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/tailand/",
+    "html": "pages/tailand/index.html",
+    "parentSource": "main-site/pages/international",
+    "parentHtmlSha256": "8cbe60da790b511bf54e5f803e605c41105e36c39c1e6a7b7b9fb4255b25a025",
+    "sha256": "d324966d304c56960c26114a1740371077dc1799751bcfc66dc93b612eca159c"
+  },
+  {
+    "id": "33",
+    "title": "Бали",
+    "parent": "international",
+    "route": "zhilye-kompleksy-indonesia",
+    "file": "content/33-zhilye-kompleksy-indonesia.json",
+    "source": "https://front.barnes.vsavr.ru/zhilye-kompleksy-indonesia/",
+    "sourceStatus": 200,
+    "blocks": [
+      "hero",
+      "listing",
+      "consultation",
+      "news",
+      "contact"
+    ],
+    "notes": [],
+    "preview": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/zhilye-kompleksy-indonesia/",
+    "html": "pages/zhilye-kompleksy-indonesia/index.html",
+    "parentSource": "main-site/pages/international",
+    "parentHtmlSha256": "8cbe60da790b511bf54e5f803e605c41105e36c39c1e6a7b7b9fb4255b25a025",
+    "sha256": "388976f4f36d4a1db1b13e4407fbb5e96daaa7d6b7762a41668ba10d51f0697e"
+  },
+  {
+    "id": "34",
+    "title": "Испания",
+    "parent": "international",
+    "route": "ispaniya",
+    "file": "content/34-ispaniya.json",
+    "source": "https://front.barnes.vsavr.ru/mezhdunarodnaya-nedvizhimost/ispaniya/",
+    "sourceStatus": 200,
+    "blocks": [
+      "hero",
+      "listing",
+      "contact"
+    ],
+    "notes": [
+      "H1 из документа по согласованию: исходный заголовок общий или содержит техническую подстановку. Исходный H1: Элитная зарубежная недвижимость в BARN Estate"
+    ],
+    "preview": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/ispaniya/",
+    "html": "pages/ispaniya/index.html",
+    "parentSource": "main-site/pages/international",
+    "parentHtmlSha256": "8cbe60da790b511bf54e5f803e605c41105e36c39c1e6a7b7b9fb4255b25a025",
+    "sha256": "0d3e0d6d7651202dbca13bce6d7157cae6a0b947142236839045a3c02e501ca8"
+  },
+  {
+    "id": "35",
+    "title": "Италия",
+    "parent": "international",
+    "route": "italiya",
+    "file": "content/35-italiya.json",
+    "source": "https://front.barnes.vsavr.ru/mezhdunarodnaya-nedvizhimost/italiya/",
+    "sourceStatus": 200,
+    "blocks": [
+      "hero",
+      "listing",
+      "contact"
+    ],
+    "notes": [],
+    "preview": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/italiya/",
+    "html": "pages/italiya/index.html",
+    "parentSource": "main-site/pages/international",
+    "parentHtmlSha256": "8cbe60da790b511bf54e5f803e605c41105e36c39c1e6a7b7b9fb4255b25a025",
+    "sha256": "166d3b87d9f8d08b4974695e299c702f507914f7ff0e3f8e82500877b2f13a6e"
+  },
+  {
+    "id": "36",
+    "title": "Португалия",
+    "parent": "international",
+    "route": "portugaliya",
+    "file": "content/36-portugaliya.json",
+    "source": "https://front.barnes.vsavr.ru/mezhdunarodnaya-nedvizhimost/portugaliya/",
+    "sourceStatus": 200,
+    "blocks": [
+      "hero",
+      "listing",
+      "contact"
+    ],
+    "notes": [
+      "H1 из документа по согласованию: исходный заголовок общий или содержит техническую подстановку. Исходный H1: Элитная зарубежная недвижимость в BARN Estate"
+    ],
+    "preview": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/portugaliya/",
+    "html": "pages/portugaliya/index.html",
+    "parentSource": "main-site/pages/international",
+    "parentHtmlSha256": "8cbe60da790b511bf54e5f803e605c41105e36c39c1e6a7b7b9fb4255b25a025",
+    "sha256": "ee634cc0dd8a94abf74c3990ced462c1e127d89b2a2dff86ae08df299a149ca9"
+  },
+  {
+    "id": "37",
+    "title": "Франция",
+    "parent": "international",
+    "route": "frantsiya",
+    "file": "content/37-frantsiya.json",
+    "source": "https://front.barnes.vsavr.ru/mezhdunarodnaya-nedvizhimost/frantsiya/",
+    "sourceStatus": 200,
+    "blocks": [
+      "hero",
+      "listing",
+      "contact"
+    ],
+    "notes": [
+      "H1 из документа по согласованию: исходный заголовок общий или содержит техническую подстановку. Исходный H1: Квартиры и другая недвижимость во *#Франция,##ПР#*"
+    ],
+    "preview": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/frantsiya/",
+    "html": "pages/frantsiya/index.html",
+    "parentSource": "main-site/pages/international",
+    "parentHtmlSha256": "8cbe60da790b511bf54e5f803e605c41105e36c39c1e6a7b7b9fb4255b25a025",
+    "sha256": "b7d8673c9d44950adce0b8b62f5ad326d274497594706527d0b159250e52fcc1"
+  },
+  {
+    "id": "38",
+    "title": "Оман",
+    "parent": "international",
+    "route": "oman",
+    "file": "content/38-oman.json",
+    "source": "https://front.barnes.vsavr.ru/mezhdunarodnaya-nedvizhimost/oman/",
+    "sourceStatus": 200,
+    "blocks": [
+      "hero",
+      "listing",
+      "contact"
+    ],
+    "notes": [],
+    "preview": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/oman/",
+    "html": "pages/oman/index.html",
+    "parentSource": "main-site/pages/international",
+    "parentHtmlSha256": "8cbe60da790b511bf54e5f803e605c41105e36c39c1e6a7b7b9fb4255b25a025",
+    "sha256": "2e0c34034956426407b19d81c4a1f84818e21e9f63048daaa22cc517887ad5e0"
+  },
+  {
+    "id": "39",
+    "title": "Застройщики",
+    "parent": "city",
+    "route": "zastroyshchiki",
+    "file": "content/39-zastroyshchiki.json",
+    "source": "https://front.barnes.vsavr.ru/zastroyshchiki/",
+    "sourceStatus": 200,
+    "blocks": [
+      "hero",
+      "developers"
+    ],
+    "notes": [],
+    "preview": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/zastroyshchiki/",
+    "html": "pages/zastroyshchiki/index.html",
+    "parentSource": "main-site/pages/city",
+    "parentHtmlSha256": "6e6a6db627aec737c068cdebe79071ca4ede6a735d42f179cd864aec604a3b5f",
+    "sha256": "556adb7db9cc57570ffb9a50703545b8e3aa46ecaf2cdaef9eeeb490da95f93c"
+  }
+]

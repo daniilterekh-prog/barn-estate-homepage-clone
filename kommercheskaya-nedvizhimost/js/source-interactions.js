@@ -345,9 +345,9 @@
   }
   bindForms(document);
   const selectionScript = document.createElement('script');
-  selectionScript.src = 'js/selection-carousel.js?v=125d97c136c8';
+  selectionScript.src = 'js/selection-carousel.js?v=73ad3a38f4e7';
   document.body.append(selectionScript);
-  const nodeSync=document.createElement('script');nodeSync.src='js/reference-sync.js?v=125d97c136c8';document.body.append(nodeSync);
+  const nodeSync=document.createElement('script');nodeSync.src='js/reference-sync.js?v=73ad3a38f4e7';document.body.append(nodeSync);
 
 
 

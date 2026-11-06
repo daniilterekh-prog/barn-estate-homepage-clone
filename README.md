@@ -1,5 +1,7 @@
 # BARN Estate — страницы основного сайта
 
+- [39 внутренних страниц — общий каталог и ссылки](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/internal-pages/) · [HTML, редакция и порядок блоков](https://github.com/daniilterekh-prog/barnes-sites/tree/main/main-site/internal-pages).
+
 [Пять актуальных страниц: передача разработчику по блокам ·05.11.2026](handoff/current/README.md) — 77 блоков, раздельные HTML/CSS/JS, превью и единый ZIP.
 
 - [Единый первый экран пяти узлов по продаже собственникам ·05.11.2026](https://github.com/daniilterekh-prog/barnes-sites/tree/main/main-site/shared/node-shell).

@@ -8,8 +8,9 @@
   // Countries are tied to the existing objects, never guessed from descriptions.
   const countriesByName={'Paris-75017':'Франция','Almis La Mer Dragos':'Турция','Marrakech':'Марокко','Lisboa':'Португалия','Saint-Maur-des-Fossés-94100':'Франция','Уникальная резиденция с прекрасным видом - Колонаки':'Греция','Luxembourg':'Люксембург','Megève-74120':'Франция','Benahavís':'Испания','Sciez-74140':'Франция'};
   const countriesByCity={'Стамбул':'Турция','Дубай':'ОАЭ','Салала':'Оман','Ереван':'Армения'};
-  const originalTemplate=lots[0].cloneNode(true);
+  const originalTemplate=lots[0]?.cloneNode(true);
   lots.forEach(item=>{
+    if(item.dataset.internalCard)return; // Editorial child pages supply normalized cards.
     item.dataset.listingMode='secondary';item.hidden=true;
     const card=one('.apartment-card',item),body=one('.apartment-card__body',card),name=one('.apartment-card__name',body),id=one('.apartment-card__lotid',body),price=one('.apartment-card__price',body),address=one('.apartment-card__address',body);
     const stats=all('.apartment-card__stat',body).map(e=>[one('.apartment-card__stat-label',e)?.textContent.trim(),one('.apartment-card__stat-value',e)?.textContent.trim()]);
