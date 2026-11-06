@@ -140,7 +140,7 @@
       invalid.focus();
       return;
     }
-    state = Object.assign({}, resetPending ? { market: state.market } : state, draft);
+    state = Object.assign({}, resetPending ? { market: state.market, deal:state.deal } : state, draft);
     close();
     document.dispatchEvent(new CustomEvent('barnes:filters-apply', { detail:copy(state) }));
   });
@@ -168,7 +168,7 @@
   }, true);
   window.BarnesFilters = {
     open:open,
-    reset:function () { if (!modal.hidden) return; state = { market:state.market }; document.dispatchEvent(new CustomEvent('barnes:filters-apply', { detail:copy(state) })); },
+    reset:function () { if (!modal.hidden) return; state = { market:state.market, deal:state.deal }; document.dispatchEvent(new CustomEvent('barnes:filters-apply', { detail:copy(state) })); },
     getState:function () { return copy(state); },
     patch:function (fields) {
       if (!modal.hidden) return;

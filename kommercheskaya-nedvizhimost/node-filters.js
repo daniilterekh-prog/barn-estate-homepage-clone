@@ -28,10 +28,18 @@
   if(!deal){
    if(!available&&oldSwitch){const hidden=document.createElement('div');hidden.dataset.nodeMarketSource='';hidden.hidden=true;oldSwitch.replaceWith(hidden);hidden.append(oldSwitch);toolbar.append(hidden);sourceButtons=[...oldSwitch.querySelectorAll('button')];}
    deal=document.createElement('div');deal.className='catalog-mode-switch';deal.setAttribute('role','group');deal.setAttribute('aria-label','Сделка');deal.innerHTML='<button class="catalog-mode-switch__button is-active" type="button" aria-pressed="true" data-node-deal="buy">Покупка</button><button class="catalog-mode-switch__button" type="button" aria-pressed="false" data-node-deal="rent">Аренда</button>';
-   deal.addEventListener('click',e=>{const button=e.target.closest('[data-node-deal]');if(!button)return;if(button.dataset.nodeDeal==='rent')openRental();else if(direction==='country')sourceButtons[0]?.click();});
+   deal.addEventListener('click',e=>{const button=e.target.closest('[data-node-deal]');if(!button)return;setDeal(button.dataset.nodeDeal);});
   }
-  function rentalURL(){const dir=['resort','international'].includes(direction)?'city':direction;const url=new URL('../katalog-nedvizhimosti/',location.href);url.searchParams.set('direction',dir);url.searchParams.set('deal','rent');return url;}
-  function openRental(){const url=rentalURL();const event=new CustomEvent('barnes:node-rental',{bubbles:true,cancelable:true,detail:{direction:['resort','international'].includes(direction)?'city':direction,url:url.href}});if(toolbar.dispatchEvent(event))location.href=url.href;}
+  const rentalAvailable=['city','country','commercial'].includes(direction);
+  function currentDeal(){return direction==='country'?(window.countryListing.getDeal?.()||'buy'):direction==='commercial'?(window.BarnesFilters.getState().dealType==='rent'?'rent':'buy'):(window.BarnesFilters.getState().deal||'buy');}
+  function setDeal(value){
+   if(value==='rent'&&!rentalAvailable)return;
+   if(direction==='country'){window.countryListing.setDeal(value);document.dispatchEvent(new CustomEvent('country-filter-set',{detail:{bands:[],priceMin:null,priceMax:null}}));}
+   else if(direction==='commercial'){deal.querySelectorAll('button')[value==='rent'?1:0]?.click();}
+   else window.BarnesFilters.patch({deal:value,priceMin:'',priceMax:'',priceRanges:[]});
+   sync();document.dispatchEvent(new CustomEvent('barnes:node-deal-change'));
+  }
+  if(!rentalAvailable)deal.querySelector('[data-node-deal="rent"]')?.remove();
   primary.prepend(deal);if(department)deal.after(department);if(market)department.after(market);
   if(direction==='country'){upgradeSelect(department.querySelector('select'));const area=toolbar.querySelectorAll('.catalog-mode-filters button')[3];if(area){area.dataset.countryQuick='area';area.querySelector('.catalog-quick-filters__caption').textContent='Площадь дома';}}
   if(market?.classList.contains('node-filter-market'))upgradeSelect(market.querySelector('select'));
@@ -42,11 +50,15 @@
    if(collections)resultTools.append(collections);resultTools.append(summary);input.placeholder=small.matches?'Название или ID':'Название ЖК, адрес или ID';
    if(focused===input&&document.activeElement!==input)input.focus({preventScroll:true});
   }
-  function sync(){if(direction==='commercial'){const rental=window.BarnesFilters.getState().dealType==='rent';for(const option of department.querySelector('select').options){option.hidden=option.disabled=rental&&['resort','international'].includes(option.value);}}if(direction!=='commercial')deal.querySelectorAll('button').forEach((b,i)=>{b.classList.toggle('is-active',i===0);b.setAttribute('aria-pressed',String(i===0));});if(market&&sourceButtons.length){const value=window.BarnesFilters?.getState()?.market||'new-build',select=market.querySelector('select');if(select.value!==value){select.value=value;select.dispatchEvent(new Event('input'));}}
+  function sync(){const rental=currentDeal()==='rent';document.body.dataset.nodeDeal=rental?'rent':'buy';document.body.dataset.marketAvailable=String(available&&!rental);
+   for(const option of department.querySelector('select').options){const key=paths[option.value]||option.value;option.hidden=option.disabled=rental&&['resort','international'].includes(key);}
+   if(direction!=='commercial')deal.querySelectorAll('button').forEach(b=>{const active=b.dataset.nodeDeal===currentDeal();b.classList.toggle('is-active',active);b.setAttribute('aria-pressed',String(active));});
+   if(market)market.hidden=rental;
+   if(market&&sourceButtons.length){const value=window.BarnesFilters?.getState()?.market||'new-build',select=market.querySelector('select');if(select.value!==value){select.value=value;select.dispatchEvent(new Event('input'));}}
    if(collections){const reset=collections.querySelector('.catalog-reset-all');if(reset)reset.hidden=false;}
   }
-  layout();sync();small.addEventListener('change',layout);document.addEventListener('barnes:filters-apply',sync);document.addEventListener('country-listing-render',sync);
-  if(direction==='country')document.addEventListener('click',e=>{if(e.target.closest('[data-country-market="lot"]')){e.preventDefault();e.stopImmediatePropagation();openRental();}},true);
+  layout();sync();small.addEventListener('change',layout);document.addEventListener('barnes:filters-apply',sync);document.addEventListener('country-listing-render',sync);document.addEventListener('barnes:node-deal-change',sync);
+  if(direction==='country')document.addEventListener('click',e=>{const button=e.target.closest('[data-country-market]');if(button){e.preventDefault();e.stopImmediatePropagation();setDeal(button.dataset.countryMarket==='lot'?'rent':'buy');}},true);
   document.dispatchEvent(new CustomEvent('barnes:node-filters-ready'));
  }
  // This helper is used only where the old node has no department/market dropdown controller.
@@ -127,7 +139,7 @@
    dept.replaceChildren(...[...mainDirection.options].map(o=>o.cloneNode(true)));dept.value=mainDirection.value;
    sort.replaceChildren(...[...mainSort.options].map(o=>o.cloneNode(true)));sort.value=mainSort.value;
    market.closest('label').hidden=!mainMarket;
-   dept.addEventListener('change',()=>{const value=dept.value;const url=new URL('../katalog-nedvizhimosti/',location.href);const aliases={'zagorodnaya-nedvizhimost':'country','gorodskaya-nedvizhimost':'city','kommercheskaya-nedvizhimost':'commercial','kurortnaya':'resort','mezhdunarodnaya-nedvizhimost':'international'};url.searchParams.set('direction',aliases[value]||value);url.searchParams.set('deal',direction==='commercial'&&window.BarnesFilters.getState().dealType==='rent'?'rent':'buy');const event=new CustomEvent('barnes:department',{bubbles:true,cancelable:true,detail:{direction:aliases[value]||value,url:url.href}});if(toolbar.dispatchEvent(event))location.href=url.href;});
+   dept.addEventListener('change',()=>{const value=dept.value;const url=new URL('../katalog-nedvizhimosti/',location.href);const aliases={'zagorodnaya-nedvizhimost':'country','gorodskaya-nedvizhimost':'city','kommercheskaya-nedvizhimost':'commercial','kurortnaya':'resort','mezhdunarodnaya-nedvizhimost':'international'};url.searchParams.set('direction',aliases[value]||value);url.searchParams.set('deal',document.body.dataset.nodeDeal==='rent'?'rent':'buy');const event=new CustomEvent('barnes:department',{bubbles:true,cancelable:true,detail:{direction:aliases[value]||value,url:url.href}});if(toolbar.dispatchEvent(event))location.href=url.href;});
    market.addEventListener('change',()=>{mainMarket.value=market.value;mainMarket.dispatchEvent(new Event('change',{bubbles:true}));});
    sort.addEventListener('change',()=>{mainSort.value=sort.value;mainSort.dispatchEvent(new Event('change',{bubbles:true}));});
    controls.querySelectorAll('[data-node-map-mode]').forEach((button,i)=>button.addEventListener('click',()=>toolbar.querySelectorAll('.catalog-toolbar__primary>.catalog-mode-switch button')[i]?.click()));
@@ -137,6 +149,8 @@
     for(let i=0;i<dept.options.length;i++){dept.options[i].disabled=mainDirection.options[i].disabled;dept.options[i].hidden=mainDirection.options[i].hidden;}
     const brands=(root.classList.contains('node-country-map-controls')?root.parentElement:root).querySelector('[data-brand-context=map]');if(brands&&!controls.contains(brands))controls.querySelector('.map-browser__reset').before(brands);
     if(brands){brands.classList.add('barnes-brand-filters');brands.querySelectorAll('.country-brand-filters__box').forEach(e=>e.classList.add('barnes-brand-filters__box'));}
+    const rental=document.body.dataset.nodeDeal==='rent';market.closest('label').hidden=!mainMarket||rental;
+    controls.querySelector('[data-node-map-mode="1"]').hidden=['resort','international'].includes(direction);
     if(mainMarket&&market.value!==mainMarket.value){market.value=mainMarket.value;market.dispatchEvent(new Event('input'));}
     if(sort.value!==mainSort.value){sort.value=mainSort.value;sort.dispatchEvent(new Event('input'));}
     const dealButtons=toolbar.querySelectorAll('.catalog-toolbar__primary>.catalog-mode-switch button');
@@ -145,7 +159,7 @@
    const owner=root.classList.contains('node-country-map-controls')?root.closest('.catalog-projects-map'):root;let savedViewport=null;
    function viewport(){const open=owner===root?!root.hidden:owner.classList.contains('country-map-expanded');if(open&&!savedViewport){savedViewport={overflow:document.documentElement.style.overflow,gutter:document.documentElement.style.scrollbarGutter};document.documentElement.style.overflow='hidden';document.documentElement.style.scrollbarGutter=innerWidth<=540?'auto':'stable';}else if(!open&&savedViewport){document.documentElement.style.overflow=savedViewport.overflow;document.documentElement.style.scrollbarGutter=savedViewport.gutter;savedViewport=null;}}
    new MutationObserver(viewport).observe(owner,{attributes:true,attributeFilter:owner===root?['hidden']:['class']});document.addEventListener('fullscreenchange',viewport);viewport();
-   root.nodeFilterSync=sync;sync();document.addEventListener('barnes:filters-apply',sync);document.addEventListener('country-listing-render',sync);
+   root.nodeFilterSync=sync;sync();document.addEventListener('barnes:filters-apply',sync);document.addEventListener('country-listing-render',sync);document.addEventListener('barnes:node-deal-change',sync);
   }
  }
 

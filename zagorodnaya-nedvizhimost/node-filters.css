@@ -854,7 +854,7 @@ html body[data-node-shell] .catalog-map-browser .catalog-map-market[hidden]{disp
  @media(max-width:540px){html body[data-node-shell]{--node-filter-size:17px;}}
  html body[data-node-shell] .catalog-mode-toolbar {--catalog-filter-font-size:var(--node-filter-size)!important;}
  html body[data-node-shell] .catalog-mode-toolbar [data-node-market-source] {display:none!important;}
- html body[data-node-shell] .catalog-mode-toolbar .catalog-market[hidden] {display:none!important;}
+ html body[data-node-shell] .catalog-mode-toolbar :is(.catalog-market,.node-filter-market)[hidden] {display:none!important;}
  html body[data-node-shell] .catalog-mode-toolbar .catalog-mode-switch__button {cursor:pointer!important;}
  html body[data-node-shell] .catalog-mode-toolbar .catalog-direction {box-sizing:border-box!important;}
  html body[data-node-shell] .catalog-mode-toolbar .catalog-search-row {box-sizing:border-box!important;}
@@ -932,4 +932,8 @@ html body[data-node-shell] .catalog-map-browser .catalog-map-market[hidden]{disp
 @layer barn-node-filters {
  html body[data-node-shell] .catalog-mode-toolbar .catalog-quick-filters__chevron::before,
  html body[data-node-shell] .catalog-mode-toolbar .catalog-quick-filters__chevron::after {content:none!important;}
+}
+
+@layer barn-node-filters {
+ html body[data-node-shell] .catalog-map-browser [data-node-map-mode][hidden] {display:none!important;}
 }

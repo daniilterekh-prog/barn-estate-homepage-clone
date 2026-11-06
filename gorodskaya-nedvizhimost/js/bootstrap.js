@@ -1,6 +1,6 @@
 /* Autonomous desktop/mobile bootstrap. No Nuxt runtime or remote render resources. */
 (function(){
-  function load(file){return new Promise((resolve,reject)=>{const s=document.createElement('script');s.src='js/'+file+'?v=20261105-node-filters-1';s.onload=resolve;s.onerror=reject;document.body.append(s)})}
+  function load(file){return new Promise((resolve,reject)=>{const s=document.createElement('script');s.src='js/'+file+'?v=20261106-node-deals-1';s.onload=resolve;s.onerror=reject;document.body.append(s)})}
   function nativeControls(){
     const toggle=document.querySelector('.site-header__icon-btn');
     let menu=null,overflow='';
@@ -58,7 +58,7 @@
     document.dispatchEvent(new CustomEvent('barnes:node-ready'));
   }
   if(matchMedia('(max-width:540px)').matches&&!document.documentElement.dataset.cityMobile){
-    fetch('mobile.html?v=node-filters-20261105').then(r=>{if(!r.ok)throw Error('mobile snapshot');return r.text()}).then(html=>{
+    fetch('mobile.html?v=node-deals-20261106').then(r=>{if(!r.ok)throw Error('mobile snapshot');return r.text()}).then(html=>{
       document.open();document.write(html);document.close();
     }).catch(start);
   }else start();

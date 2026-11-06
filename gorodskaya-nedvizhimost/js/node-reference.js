@@ -44,7 +44,7 @@
     all(':scope > .catalog-grid__item',list).forEach(item=>{
       const amount=Number(item.dataset.price), beds=Number(item.dataset.bedrooms);
       const ranges={'50m':[0,50000000],'50-100m':[50000000,100000000],'100-200m':[100000000,200000000],'200m+':[200000000,Infinity]};
-      const visible=item.dataset.listingMode===mode && (!state.query || item.textContent.toLocaleLowerCase('ru').includes(state.query.toLocaleLowerCase('ru'))) && (!(state.directions||[]).length || state.directions.includes(item.dataset.location)) && (!state.priceMin || amount>=Number(state.priceMin)) && (!state.priceMax || amount<=Number(state.priceMax)) && (!(state.priceRanges||[]).length || state.priceRanges.some(key=>ranges[key] && amount>=ranges[key][0] && amount<=ranges[key][1])) && (!state.bedrooms || (state.bedrooms==='4+'?beds>3:beds===Number(state.bedrooms)));
+      const visible=(state.deal!=='rent'||item.dataset.deal==='rent') && item.dataset.listingMode===mode && (!state.query || item.textContent.toLocaleLowerCase('ru').includes(state.query.toLocaleLowerCase('ru'))) && (!(state.directions||[]).length || state.directions.includes(item.dataset.location)) && (!state.priceMin || amount>=Number(state.priceMin)) && (!state.priceMax || amount<=Number(state.priceMax)) && (!(state.priceRanges||[]).length || state.priceRanges.some(key=>ranges[key] && amount>=ranges[key][0] && amount<=ranges[key][1])) && (!state.bedrooms || (state.bedrooms==='4+'?beds>3:beds===Number(state.bedrooms)));
       item.hidden=!visible;if(visible)count++;
     });
     q('.city-catalog-empty').hidden=Boolean(count);
@@ -54,7 +54,7 @@
       const sorted=items.slice().sort((a,b)=>sign*(Number(a.dataset[key])-Number(b.dataset[key])));
       if(sorted.some((e,i)=>e!==items[i]))sorted.forEach(e=>list.append(e));
     }
-    all('.catalog-mode-switch__button').forEach(b=>{const active=b.dataset.mode===mode;b.classList.toggle('is-active',active);b.setAttribute('aria-pressed',String(active))});
+    all('.catalog-mode-switch__button[data-mode]').forEach(b=>{const active=b.dataset.mode===mode;b.classList.toggle('is-active',active);b.setAttribute('aria-pressed',String(active))});
   }
   function initialize() {
     const list=q('.catalog-grid__list'),header=q('.catalog-grid__header');if(!list || !header || q('.city-node-ready'))return;
@@ -116,16 +116,16 @@
   }
   async function setupSharedFilters() {
     for(const file of ['filters-template.js','filters-modal.js','quick-filters.js','brand-filters.js','city-reference-extras.js']) {
-      await new Promise((resolve,reject)=>{const script=document.createElement('script');script.src=new URL('js/'+file+'?v=20261105-node-filters-1',document.baseURI);script.onload=resolve;script.onerror=reject;document.body.append(script)});
+      await new Promise((resolve,reject)=>{const script=document.createElement('script');script.src=new URL('js/'+file+'?v=20261106-node-deals-1',document.baseURI);script.onload=resolve;script.onerror=reject;document.body.append(script)});
     }
-    const adapter=document.createElement('script');adapter.src=new URL('js/catalog-filters.js?v=20261105-node-filters-1',document.baseURI);adapter.onload=()=>{window.BarnEstateCatalogFilters.mount(document);document.body.classList.add('city-reference-synced')};document.body.append(adapter);
+    const adapter=document.createElement('script');adapter.src=new URL('js/catalog-filters.js?v=20261106-node-deals-1',document.baseURI);adapter.onload=()=>{window.BarnEstateCatalogFilters.mount(document);document.body.classList.add('city-reference-synced')};document.body.append(adapter);
   }
   function setupMapResults() {
     const data=document.createElement('script');
     data.src=new URL('js/city-map-projects.js',document.baseURI).href;
     data.onload=()=>{
       const script=document.createElement('script');
-      script.src=new URL('js/city-map-fullscreen.js',document.baseURI).href;
+      script.src=new URL('js/city-map-fullscreen.js?v=20261106-node-deals-1',document.baseURI).href;
       document.body.append(script);
     };
     document.body.append(data);

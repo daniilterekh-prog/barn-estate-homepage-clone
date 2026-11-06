@@ -59,11 +59,11 @@
       var visible=0,term=(value.query||'').trim().toLocaleLowerCase('ru'),mode=value.market==='secondary'?'lot':'project';
       list.querySelectorAll(':scope > .catalog-grid__item').forEach(function(item){
         var amount=Number(item.dataset.price),beds=Number(item.dataset.bedrooms);
-        var show=item.dataset.listingMode===mode&&(!term||item.textContent.toLocaleLowerCase('ru').includes(term))&&(!(value.directions||[]).length||value.directions.includes(item.dataset.location))&&(!value.priceMin||amount>=Number(value.priceMin))&&(!value.priceMax||amount<=Number(value.priceMax))&&(!(value.priceRanges||[]).length||value.priceRanges.some(function(k){return ranges[k]&&amount>=ranges[k][0]&&amount<=ranges[k][1]}))&&(!value.bedrooms||(value.bedrooms==='4+'?beds>3:beds===Number(value.bedrooms)));
+        var show=(value.deal!=='rent'||item.dataset.deal==='rent')&&item.dataset.listingMode===mode&&(!term||item.textContent.toLocaleLowerCase('ru').includes(term))&&(!(value.directions||[]).length||value.directions.includes(item.dataset.location))&&(!value.priceMin||amount>=Number(value.priceMin))&&(!value.priceMax||amount<=Number(value.priceMax))&&(!(value.priceRanges||[]).length||value.priceRanges.some(function(k){return ranges[k]&&amount>=ranges[k][0]&&amount<=ranges[k][1]}))&&(!value.bedrooms||(value.bedrooms==='4+'?beds>3:beds===Number(value.bedrooms)));
         item.hidden=!show;if(show)visible++;
       });
       toolbar.querySelectorAll('[data-mode]').forEach(function(button){var active=button.dataset.mode===mode;button.classList.toggle('is-active',active);button.setAttribute('aria-pressed',String(active))});
-      var forms=value.market==='secondary'?['объект','объекта','объектов']:['проект','проекта','проектов'];var plural=visible%100>=11&&visible%100<=14?2:visible%10===1?0:visible%10>=2&&visible%10<=4?1:2;summary.querySelector('.catalog-result-count').textContent=visible+' '+forms[plural];
+      var forms=value.deal==='rent'||value.market==='secondary'?['объект','объекта','объектов']:['проект','проекта','проектов'];var plural=visible%100>=11&&visible%100<=14?2:visible%10===1?0:visible%10>=2&&visible%10<=4?1:2;summary.querySelector('.catalog-result-count').textContent=visible+' '+forms[plural];
       grid.querySelector('.catalog-filter-empty').hidden=!!visible;var footer=grid.querySelector('.catalog-grid__footer');if(footer)footer.hidden=!visible;
     }
     listen(input,'input',function(){patch({query:input.value});});

@@ -98,7 +98,7 @@
     metadataNotice.textContent = unavailable.length ? 'Нет данных для параметров: ' + unavailable.join(', ') + '. Они пока не меняют выдачу.' : '';
     marketButtons.forEach(function (button) { button.setAttribute('aria-pressed',String(button.dataset.mapMarket === market)); });
     var result = items.filter(function (item) {
-      return (!term || item.name.toLocaleLowerCase('ru').includes(term)) &&
+      return (shared.deal!=='rent'||item.deal==='rent') && (!term || item.name.toLocaleLowerCase('ru').includes(term)) &&
         (!type.value || !hasTypes || (item.propertyTypes || []).includes(type.value)) &&
         (item.market === market) &&
         (!location.value || !hasLocations || (item.directions || []).includes(location.value)) &&

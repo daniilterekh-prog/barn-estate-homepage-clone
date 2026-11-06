@@ -76,7 +76,7 @@
   detailed.innerHTML = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M4 6h3m4 0h9M4 12h8m4 0h4M4 18h4m4 0h8" stroke="currentColor" stroke-width="1.15" stroke-linecap="round"/><circle cx="9" cy="6" r="2" stroke="currentColor" stroke-width="1.15"/><circle cx="14" cy="12" r="2" stroke="currentColor" stroke-width="1.15"/><circle cx="10" cy="18" r="2" stroke="currentColor" stroke-width="1.15"/></svg><span class="catalog-mode-detailed-filters__label catalog-mode-detailed-filters__label--desktop">Все фильтры</span><span class="catalog-mode-detailed-filters__label catalog-mode-detailed-filters__label--mobile">Фильтры</span>';
   detailed.addEventListener('click', () => document.dispatchEvent(new CustomEvent('country-filter-open', {detail: {trigger: detailed}}))); toolbar.append(detailed); header.after(toolbar);
   const empty = document.createElement('p'); empty.className = 'country-catalog-empty'; empty.setAttribute('role', 'status'); empty.textContent = 'Объектов с такими параметрами нет. Измени фильтры.'; list.after(empty);
-  let mode = 'project', expanded = false;
+  let mode = 'project', deal = 'buy', expanded = false;
   const selection = {location: '', price: '', bedrooms: '', query: ''};
   const more = q('.catalog-grid__more');
   const render = () => {
@@ -85,7 +85,7 @@
       item.style.display = '';
       const query = selection.query.trim().toLocaleLowerCase('ru');
       const searchable = [q('.apartment-card__name',item)?.textContent, item.dataset.location, q('.apartment-card__lotid',item)?.textContent].join(' ').toLocaleLowerCase('ru');
-      const match = item.dataset.listingMode === mode && (!selection.location || item.dataset.location === selection.location) && (!selection.price || (Number(item.dataset.price) > 0 && Number(item.dataset.price) <= Number(selection.price))) && (!selection.bedrooms || Number.parseInt(item.dataset.bedrooms) >= Number(selection.bedrooms)) && (!query || searchable.includes(query)) && (!window.countryMatchesFullFilter || window.countryMatchesFullFilter(item));
+      const match = (deal !== 'rent' || item.dataset.deal === 'rent') && item.dataset.listingMode === mode && (!selection.location || item.dataset.location === selection.location) && (!selection.price || (Number(item.dataset.price) > 0 && Number(item.dataset.price) <= Number(selection.price))) && (!selection.bedrooms || Number.parseInt(item.dataset.bedrooms) >= Number(selection.bedrooms)) && (!query || searchable.includes(query)) && (!window.countryMatchesFullFilter || window.countryMatchesFullFilter(item));
       item.hidden = !match || (innerWidth < 768 && !expanded && count >= 5);
       if (match) count++;
     });
@@ -110,6 +110,8 @@
   all('[data-country-mode]', toolbar).forEach(button => button.addEventListener('click', () => setMarket(button.dataset.countryMode)));
   window.countryListing = {
     getMarket:()=>mode,
+    getDeal:()=>deal,
+    setDeal:value=>{if(!['buy','rent'].includes(value))return;deal=value;selection.price='';expanded=false;render();},
     setMarket,
     getSelection:()=>({...selection}),
     setSelection:(key,value)=>{if(!(key in selection))return;selection[key]=value;expanded=true;render();document.dispatchEvent(new CustomEvent('country-quick-change',{detail:{key,value}}));},
