@@ -107,3 +107,10 @@ html body.barnes-media-header .site-header__left > .site-header__icon-btn{justif
 
 /* Direction pages use the burger only, without a second navigation row. */
 html body[data-node-shell].barnes-media-header .site-header__top {margin-bottom:0!important;}
+
+/* The sticky mobile bar owns its centered logo, even when legacy node CSS hid it. */
+@layer barn-node-shell-header {
+ @media(max-width:1024px){
+  html body.barnes-media-header .owner-sale-sticky .owner-sale-sticky__inner > .owner-sale-sticky__logo {display:flex!important;}
+ }
+}
