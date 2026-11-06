@@ -70,5 +70,13 @@
  collections.querySelector('[data-catalog-reset]').addEventListener('click',()=>{const v=window.BarnesFilters.getState(),clear={};Object.keys(v).filter(k=>k!=='dealType').forEach(k=>clear[k]=Array.isArray(v[k])?[]:'');clear.sort='relevance';patch(clear);});
  summary.querySelector('.catalog-map-trigger').addEventListener('click',e=>window.BarnesMapBrowser.open(e.currentTarget));
  primary.querySelector('select').addEventListener('change',e=>{const direction=e.target.value;if(direction==='commercial')return;const url=new URL('https://daniilterekh-prog.github.io/barn-estate-homepage-clone/katalog-nedvizhimosti/');url.searchParams.set('direction',direction);url.searchParams.set('deal',window.BarnesFilters.getState().dealType==='rent'?'rent':'buy');const event=new CustomEvent('barnes:department',{bubbles:true,cancelable:true,detail:{direction,url:url.href}});if(toolbar.dispatchEvent(event))location.href=url.href;});
- grid.querySelector('.catalog-grid__sort select').addEventListener('change',()=>{const value=grid.querySelector('.catalog-grid__sort select').value;if(window.BarnesFilters.getState().sort!==value)patch({sort:value});});document.addEventListener('barnes:filters-apply',sync);small.addEventListener('change',layout);layout();patch({dealType:'rent'});sync();
+ grid.querySelector('.catalog-grid__sort select').addEventListener('change',()=>{const value=grid.querySelector('.catalog-grid__sort select').value;if(window.BarnesFilters.getState().sort!==value)patch({sort:value});});document.addEventListener('barnes:filters-apply',sync);small.addEventListener('change',layout);layout();
+ // Department cards keep ordinary, shareable links into this node's existing filters.
+ const params=new URLSearchParams(location.search),initial={dealType:'rent'};
+ const allowedTypes=new Set(window.BarnesQuickConfig[0].values||[]);
+ const types=params.getAll('propertyTypes').filter(v=>allowedTypes.has(v));
+ const flags=params.getAll('brandFlags').filter(v=>['selection','exclusive'].includes(v));
+ if(types.length)initial.propertyTypes=types;if(flags.length)initial.brandFlags=flags;
+ patch(initial);sync();
+ if(types.length||flags.length)requestAnimationFrame(()=>document.querySelector('#catalog-grid')?.scrollIntoView({block:'start'}));
 })();

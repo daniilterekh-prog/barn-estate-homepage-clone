@@ -403,7 +403,7 @@
   const selectionScript = document.createElement('script');
   selectionScript.src = 'js/selection-carousel.js?v=node-recommendations-20261105';
   document.body.append(selectionScript);
-  const nodeSync=document.createElement('script');nodeSync.src='js/reference-sync.js?v=20261106-commercial-more-1';document.body.append(nodeSync);
+  const nodeSync=document.createElement('script');nodeSync.src='js/reference-sync.js?v=20261106-directions-1';document.body.append(nodeSync);
 
   const slider = one('.news-section .splide__list');
   const slides = slider ? all('.splide__slide', slider) : [];
