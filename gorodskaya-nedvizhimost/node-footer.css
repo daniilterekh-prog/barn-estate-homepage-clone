@@ -110,7 +110,7 @@ html body[data-node-shell] .node-footer {
 }
 html body[data-node-shell] :where(.site-footer :is(.site-footer__link,
  .site-footer__column-title--link,.site-footer__phone,.site-footer__email,
- .site-footer__privacy):is()) { color: #8b1d25 !important; }
+ .site-footer__privacy):is(:hover,:focus-visible,:active)) { color: #8b1d25 !important; }
 html body[data-node-shell] :where(.site-footer__logo) {
   width: max-content !important;
   max-width: 100% !important;
