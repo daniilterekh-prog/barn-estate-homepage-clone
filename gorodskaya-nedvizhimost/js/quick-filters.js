@@ -4,7 +4,7 @@
   var base = new URL('.', document.currentScript.src);
   var stylesheet = document.createElement('link');
   stylesheet.rel = 'stylesheet';
-  stylesheet.href = new URL('../css/quick-filters.css?v=3778ffbedf7d', base).href;
+  stylesheet.href = new URL('../css/quick-filters.css?v=8dd0c634468e', base).href;
   document.head.appendChild(stylesheet);
   var configs = [
     { title:'Локация', key:'directions', reset:'Все локации', choices:[...new Set(Array.from(document.querySelectorAll('.catalog-grid__item[data-location]'), item => item.dataset.location).filter(Boolean))] },

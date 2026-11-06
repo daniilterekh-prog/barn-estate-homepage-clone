@@ -97,14 +97,7 @@
     one('.splide',root).append(ul);
     return ()=>{ul.hidden=innerWidth>540;all('button',ul).forEach((b,i)=>{const active=i===getIndex();b.classList.toggle('is-active',active);b.setAttribute('aria-selected',String(active));b.tabIndex=active?0:-1;});};
   }
-  function newsSlider(){
-    const root=one('.news-section'),track=one('.splide__list',root);if(!track)return;
-    const slides=all('.splide__slide',track);let index=0;
-    let updatePagination=()=>{};
-    const render=()=>{const count=innerWidth<=560?1:innerWidth<=1024?2:3;index=Math.max(0,Math.min(index,slides.length-count));const gap=innerWidth<=560?24:40;track.style.transform='translateX('+(-index*(slides[0].getBoundingClientRect().width+gap))+'px)';updatePagination();};
-    updatePagination=pagination(root,slides,()=>index,i=>{index=i;render();});
-    const buttons=all('.news-section__nav-btn',root);buttons[0]?.addEventListener('click',()=>{index--;render();});buttons[1]?.addEventListener('click',()=>{index++;render();});addEventListener('resize',render);render();
-  }
+
   function offerSlider(){
     const root=one('.catalog-best-offers'),track=one('.splide__list',root);if(!track)return;
     all('.splide__slide--clone',track).forEach(e=>e.remove());const originals=all('.splide__slide',track);
@@ -123,7 +116,7 @@
     const buttons=all('.catalog-best-offers__nav-btn',root);buttons[0]?.addEventListener('click',()=>move(-1));buttons[1]?.addEventListener('click',()=>move(1));
     let touch=0;track.addEventListener('touchstart',e=>touch=e.touches[0].clientX,{passive:true});track.addEventListener('touchend',e=>{if(Math.abs(touch-e.changedTouches[0].clientX)>30)move(touch>e.changedTouches[0].clientX?1:-1);},{passive:true});addEventListener('resize',render);render();
   }
-  newsSlider(); if(!document.body.classList.contains('international-node-design'))offerSlider();
+   if(!document.body.classList.contains('international-node-design'))offerSlider();
   const map=one('.catalog-projects-map');
   if(map){
     const engine=one('.ymaps3--map',map),tiles=one('.ymaps3--tile-layer__container',map),markers=one('.ymaps3--marker-layer',map);

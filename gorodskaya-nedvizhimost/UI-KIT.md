@@ -21,7 +21,7 @@
 
 Источник: [FirstDegreeNode](https://github.com/daniilterekh-prog/barnes-assets/blob/main/ui-kit/first-degree.md) и собственные адаптеры Курортной. Городские данные и ссылки не заменяются курортными.
 
-- TildaSans локален в `assets/fonts/`; исходные responsive scoped-правила сохранены в `css/document-desktop.css` и `document-mobile.css`.
+- TildaSans локален в `assets/fonts/`; исходные responsive scoped-правила сохранены в едином `css/document-desktop.css`.
 - Название карточки листинга: одна строка, ellipsis, высота `1.12em`; длинное/пустое имя не двигает характеристики и цену.
 - Быстрые фильтры: «Район / Тип / Стоимость / Спальни», desktop4 колонки, tablet/mobile2×2; SVG, chevron и белые popover соответствуют референсу.
 - Ровно один рынок new-build/secondary; карта и листинг синхронизируются через BarnesFilters. Чекбоксы BARNES независимы.

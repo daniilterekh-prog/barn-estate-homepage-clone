@@ -2,27 +2,6 @@
 (() => {
   const one = (selector, root = document) => root.querySelector(selector);
   const all = (selector, root = document) => [...root.querySelectorAll(selector)];
-  // Use the original portrait: the imported 360px thumbnail blurs when cropped.
-  all('.catalog-consultation__mobile-photo img, .catalog-contact__mobile-photo img, .catalog-contact__expert-photo img, .floating-expert__avatar img').forEach((portrait) => {
-    portrait.removeAttribute('srcset');
-    portrait.src = 'assets/alina-medvedeva-popup.png';
-    portrait.width = 1734;
-    portrait.height = 907;
-  });
-  const consultationImage=one('.catalog-consultation__image');
-  if(consultationImage){consultationImage.src='assets/cta-alina-unified-v2.png';consultationImage.width=1942;consultationImage.height=809;document.body.classList.add('commercial-unified-cta');}
-  const heroImage = one('.catalog-hero__image');
-  if (heroImage) {
-    const mobileSource = document.createElement('source');
-    mobileSource.media = '(max-width: 540px)';
-    mobileSource.srcset = 'assets/hero-commercial-mobile.png';
-    heroImage.before(mobileSource);
-    heroImage.src = 'assets/hero-commercial-desktop.png';
-    heroImage.width = 2111;
-    heroImage.height = 745;
-    heroImage.setAttribute('fetchpriority', 'high');
-    document.body.classList.add('commercial-hero-art');
-  }
   const header = one('.site-header');
   const menuButton = one('.site-header__icon-btn');
   const nav = one('.catalog-page-nav');
@@ -401,52 +380,11 @@
   }
   bindForms(document);
   const selectionScript = document.createElement('script');
-  selectionScript.src = 'js/selection-carousel.js?v=node-recommendations-20261105';
+  selectionScript.src = 'js/selection-carousel.js?v=9accd9d0a924';
   document.body.append(selectionScript);
-  const nodeSync=document.createElement('script');nodeSync.src='js/reference-sync.js?v=20261106-directions-1';document.body.append(nodeSync);
+  const nodeSync=document.createElement('script');nodeSync.src='js/reference-sync.js?v=9accd9d0a924';document.body.append(nodeSync);
 
-  const slider = one('.news-section .splide__list');
-  const slides = slider ? all('.splide__slide', slider) : [];
-  const newsButtons = all('.news-section__nav-btn');
-  let slideIndex = 0;
-  const pagination = document.createElement('ul');
-  pagination.className = 'splide__pagination splide__pagination--ltr';
-  pagination.setAttribute('role', 'tablist');
-  pagination.setAttribute('aria-label', 'Выберите слайд');
-  slides.forEach((slide, index) => {
-    const item = document.createElement('li'); item.setAttribute('role', 'presentation');
-    const button = document.createElement('button'); button.type = 'button';
-    button.className = 'splide__pagination__page'; button.setAttribute('role', 'tab');
-    button.setAttribute('aria-controls', slide.id); button.setAttribute('aria-label', `Перейти к слайду ${index + 1}`);
-    button.addEventListener('click', () => { slideIndex = index; renderSlider(); });
-    item.append(button); pagination.append(item);
-  });
-  one('.news-section .splide')?.append(pagination);
-  function renderSlider() {
-    if (!slider || !slides.length) return;
-    const count = innerWidth <= 560 ? 1 : innerWidth <= 1024 ? 2 : 3;
-    const gap = innerWidth <= 560 ? 24 : 40;
-    slideIndex = Math.min(Math.max(0, slideIndex), slides.length - count);
-    const step = slides[0].getBoundingClientRect().width + gap;
-    slider.style.transform = `translateX(${-slideIndex * step}px)`;
-    slides.forEach((slide, i) => {
-      slide.classList.toggle('is-visible', i >= slideIndex && i < slideIndex + count);
-      slide.setAttribute('aria-hidden', String(i < slideIndex || i >= slideIndex + count));
-    });
-    pagination.hidden = innerWidth > 540;
-    all('button', pagination).forEach((button, i) => {
-      button.classList.toggle('is-active', i === slideIndex);
-      button.setAttribute('aria-selected', String(i === slideIndex));
-      button.tabIndex = i === slideIndex ? 0 : -1;
-    });
-    if (newsButtons[0]) newsButtons[0].disabled = slideIndex === 0;
-    if (newsButtons[1]) newsButtons[1].disabled = slideIndex === slides.length - count;
-  }
-  newsButtons[0]?.addEventListener('click', () => { slideIndex--; renderSlider(); });
-  newsButtons[1]?.addEventListener('click', () => { slideIndex++; renderSlider(); });
-  let touchX = 0;
-  slider?.addEventListener('touchstart', event => { touchX = event.touches[0].clientX; }, { passive: true });
-  slider?.addEventListener('touchend', event => { const delta = touchX - event.changedTouches[0].clientX; if (Math.abs(delta) > 30) { slideIndex += delta > 0 ? 1 : -1; renderSlider(); } }, { passive: true });
+
 
   const map = one('.catalog-projects-map');
   const mapPositions = map ? all('.ymaps3--tile-layer__container img,.ymaps3--marker', map).map(element => ({ element, left: parseFloat(element.style.left), top: parseFloat(element.style.top), transform: element.style.transform })) : [];
@@ -500,6 +438,6 @@
       else element.style.transform = transform.replace(/translate\(([-\d.]+)px, ([-\d.]+)px\)/, (_, x, y) => `translate(${Number(x) + dx}px, ${Number(y) + dy}px)`);
     });
   }
-  addEventListener('resize', () => { renderSlider(); resizeMap(); });
-  renderSlider(); resizeMap();
+  addEventListener('resize', () => { resizeMap(); });
+  resizeMap();
 })();

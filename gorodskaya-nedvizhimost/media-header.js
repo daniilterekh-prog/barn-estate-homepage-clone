@@ -17,15 +17,22 @@
  function contacts(className){const nav=document.createElement('nav');nav.className=className;nav.setAttribute('aria-label','Способы связи');for(const [label,href]of destinations){const a=document.createElement('a');a.href=href;a.target='_blank';a.rel='noopener noreferrer';a.setAttribute('aria-label',label);const img=new Image(24,24);img.src=art[label];img.alt='';a.append(img);nav.append(a);}const call=document.createElement('a');call.href='tel:74951825079';call.setAttribute('aria-label','Позвонить');call.innerHTML=phone;nav.append(call);return nav;}
  function request(trigger){const owner=trigger.closest('.owner-sale-sticky');const original=owner?.querySelector('.owner-sale-sticky__request:not(.mh-request)')||document.querySelector('.site-header__right > .site-header__request');if(original){original.click();return;}const hero=document.querySelector('.ambassadors-hero__button--primary,.owner-sale-hero__button');if(hero){hero.click();return;}window.__barnesOwnerForm?.open({trigger});}
  function right(container,sticky){
-  if(container.querySelector(':scope > .mh-content'))return;
-  const box=document.createElement('div');box.className='mh-content';
-  const desktop=document.createElement('div');desktop.className='mh-desktop';
-  const button=document.createElement('button');button.type='button';button.className='site-header__request mh-request';button.textContent='Оставить заявку';button.addEventListener('click',()=>request(button));
-  desktop.append(button,contacts('mh-messengers'));box.append(desktop);
-  const toggle=document.createElement('button');toggle.type='button';toggle.className='mh-contact-toggle';toggle.id='mh-contact-toggle-'+(++id);toggle.setAttribute('aria-label','Показать способы связи');toggle.setAttribute('aria-expanded','false');toggle.innerHTML=chat;
-  const panel=contacts('mh-contact-panel');panel.id='mh-contact-panel-'+id;panel.hidden=true;panel.dataset.toggle=toggle.id;toggle.setAttribute('aria-controls',panel.id);panels.add(panel);
+  let box=container.querySelector(':scope > .mh-content');
+  if(box?.__mhBound)return;
+  if(!box){
+   box=document.createElement('div');box.className='mh-content';
+   const desktop=document.createElement('div');desktop.className='mh-desktop';
+   const button=document.createElement('button');button.type='button';button.className='site-header__request mh-request';button.textContent='Оставить заявку';
+   desktop.append(button,contacts('mh-messengers'));box.append(desktop);
+   const toggle=document.createElement('button');toggle.type='button';toggle.className='mh-contact-toggle';toggle.innerHTML=chat;
+   box.append(toggle,contacts('mh-contact-panel'));container.append(box);
+  }
+  box.__mhBound=true;container.classList.add('mh-right');
+  const button=box.querySelector('.mh-request'),toggle=box.querySelector('.mh-contact-toggle'),panel=box.querySelector('.mh-contact-panel');
+  button.addEventListener('click',()=>request(button));
+  toggle.id='mh-contact-toggle-'+(++id);toggle.setAttribute('aria-label','Показать способы связи');toggle.setAttribute('aria-expanded','false');
+  panel.id='mh-contact-panel-'+id;panel.hidden=true;panel.dataset.toggle=toggle.id;toggle.setAttribute('aria-controls',panel.id);panels.add(panel);
   toggle.addEventListener('click',()=>{const opening=panel.hidden;for(const p of panels)closePanel(p);panel.hidden=!opening;toggle.setAttribute('aria-expanded',String(opening));toggle.setAttribute('aria-label',opening?'Скрыть способы связи':'Показать способы связи');});
-  box.append(toggle,panel);container.classList.add('mh-right');container.append(box);
  }
  function logo(anchor){if(!anchor)return;const img=anchor.querySelector('img');if(!img)return;if(img.getAttribute('src')!==art.logo){img.src=art.logo;img.removeAttribute('srcset');img.setAttribute('width','172');img.setAttribute('height','48');img.alt='BARN Estate';}}
  function navigation(header){

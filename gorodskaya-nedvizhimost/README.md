@@ -31,9 +31,9 @@ node main-site/pages/city/tools/export-public.cjs /absolute/path/to/public-repo/
 
 ## Структура
 
-- `index.html`, `mobile.html` — собранные desktop/mobile документы.
+- `index.html` — единственный адаптивный документ; `mobile.html` — совместимый переход на него.
 - `templates/` — оболочки документов с маркерами блоков.
-- `blocks/*/page-desktop.html`, `page-mobile.html` — редактируемые секции исходной страницы.
+- `blocks/*/page-desktop.html`, `page-mobile.html` — сохранённые источники отдельных компонентов, не сборка действующей страницы.
 - `blocks/*/fragment.html`, `mobile.html` — итоговый DOM компонентов, не источник сборки страницы.
 - `blocks/catalog.html` — каталог21 компонента с отдельными превью.
 - `css/`, `js/` — собственные стили и контроллеры.
@@ -75,3 +75,5 @@ node tools/clean-package.cjs
 ## Первый экран пяти узлов ·05.11.2026
 
 По поручению пользователя хедер, высота hero, размеры H1 и десктопные крошки соответствуют текущей продаже собственникам. Общий компонент `main-site/shared/node-shell`; все пять узлов правятся одновременно. Прежнее исключение H1 Курортной заменено этим правилом. Тексты, РОПы, фотографии, объекты и предметные параметры поиска сохранены. [Контракт и сборка](https://github.com/daniilterekh-prog/barnes-sites/tree/main/main-site/shared/node-shell). Новых runtime-зависимостей нет.
+
+06.11.2026: `index.html` — единственная редактируемая адаптивная страница. `mobile.html` — только переход на неё. Удалены мобильная подмена документа, дублирующая CSS-копия и старые шаблоны сборки. `tools/build-page.cjs` компилирует текущую разметку, `--check` проверяет её. [Очистка загрузки всех текущих страниц](https://github.com/daniilterekh-prog/barnes-sites/blob/main/main-site/maintenance/2026-11-06-current-startup/README.md).

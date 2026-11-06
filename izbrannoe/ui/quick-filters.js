@@ -4,7 +4,7 @@
   var base = new URL('.', document.currentScript.src);
   var stylesheet = document.createElement('link');
   stylesheet.rel = 'stylesheet';
-  stylesheet.href = new URL('quick-filters.css?v=d98d8da8b8b2', base).href;
+  stylesheet.href = new URL('quick-filters.css?v=e68feda385e6', base).href;
   document.head.appendChild(stylesheet);
   var configs = [
     { title:'Локация', key:'directions', reset:'Все направления', choices:['Сочи','Анапа','Алтай','Архыз'] },

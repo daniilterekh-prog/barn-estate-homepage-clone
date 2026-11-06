@@ -1,6 +1,6 @@
-/* Autonomous desktop/mobile bootstrap. No Nuxt runtime or remote render resources. */
+/* One responsive document; no mobile document replacement. No Nuxt runtime or remote render resources. */
 (function(){
-  function load(file){return new Promise((resolve,reject)=>{const s=document.createElement('script');s.src='js/'+file+'?v=20261106-node-deals-1';s.onload=resolve;s.onerror=reject;document.body.append(s)})}
+  function load(file){return new Promise((resolve,reject)=>{const s=document.createElement('script');s.src='js/'+file+'?v=8dd0c634468e';s.onload=resolve;s.onerror=reject;document.body.append(s)})}
   function nativeControls(){
     const toggle=document.querySelector('.site-header__icon-btn');
     let menu=null,overflow='';
@@ -54,12 +54,8 @@
     });
   }
   async function start(){
-    await load('menu-template.js');await load('node-reference.js');await load('node-modal.js');await load('news-slider.js');await load('home-kit.js');nativeControls();
+    await load('menu-template.js');await load('node-reference.js');await load('node-modal.js');await load('home-kit.js');nativeControls();
     document.dispatchEvent(new CustomEvent('barnes:node-ready'));
   }
-  if(matchMedia('(max-width:540px)').matches&&!document.documentElement.dataset.cityMobile){
-    fetch('mobile.html?v=node-maps-20261106', { cache:'no-store' }).then(r=>{if(!r.ok)throw Error('mobile snapshot');return r.text()}).then(html=>{
-      document.open();document.write(html);document.close();
-    }).catch(start);
-  }else start();
+  start();
 }());

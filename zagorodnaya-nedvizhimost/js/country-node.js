@@ -38,17 +38,17 @@
   const seen = new Set();
   const projectItems = [];
   all('.catalog-best-offers .splide__slide:not(.splide__slide--clone) .apartment-card').forEach(source => {
-    const link = q('.apartment-card__link', source); if (!link || seen.has(link.getAttribute('href'))) return;
+    const link = q('.home-rec-link', source); if (!link || seen.has(link.getAttribute('href'))) return;
     seen.add(link.getAttribute('href'));
     link.href = new URL(link.getAttribute('href'), 'https://barn-estate.ru/').href;
     const item = originals[0].cloneNode(true), card = q('.apartment-card', item), body = q('.apartment-card__body', card);
     item.dataset.listingMode = 'project'; card.dataset.nodeCard = 'project';
-    item.dataset.location = text('.apartment-card__address', source); item.dataset.bedrooms = ''; item.dataset.square = ''; item.dataset.price = text('.apartment-card__price', source).replace(/\D/g, '');
+    item.dataset.location = text('.home-rec-address', source); item.dataset.bedrooms = ''; item.dataset.square = ''; item.dataset.price = text('.home-rec-price', source).replace(/\D/g, '');
     item.style.display = '';
-    const image = q('.apartment-card__image', card), sourceImage = q('.apartment-card__image', source); image.src = sourceImage.src; image.alt = sourceImage.alt;
+    const image = q('.apartment-card__image', card), sourceImage = q('.home-rec-image', source); image.src = sourceImage.src; image.alt = sourceImage.alt;
     all('a', card).forEach(a => a.href = link.getAttribute('href'));
-    const name = q('.apartment-card__name', card); q('.apartment-card__name-text', name).textContent = text('.apartment-card__name', source);
-    const price = q('.apartment-card__price', card); price.textContent = text('.apartment-card__price', source);
+    const name = q('.apartment-card__name', card); q('.apartment-card__name-text', name).textContent = text('.home-rec-name', source);
+    const price = q('.apartment-card__price', card); price.textContent = text('.home-rec-price', source);
     body.replaceChildren(name, facts([['Локация', item.dataset.location], ['Срок сдачи', 'По запросу'], ['Спальни', 'По запросу']], 'project'), price);
     projectItems.push(item);
   });
@@ -151,15 +151,5 @@
   all('.catalog-grid .apartment-card__call-btn').forEach(old => { const button = old.cloneNode(true); old.replaceWith(button); });
   all('.catalog-grid .apartment-card__favorite').forEach(old => { const button = old.cloneNode(true); old.replaceWith(button); button.addEventListener('click', () => { const active = button.getAttribute('aria-pressed') !== 'true'; button.setAttribute('aria-pressed', String(active)); button.classList.toggle('is-active', active); }); });
   const floating = q('.floating-expert__card'); if (floating) floating.replaceWith(floating.cloneNode(true));
-  // The reference owns launch-card geometry and gestures; avoid two carousel engines.
-  window.countryBestCarousel?.destroy(true);
-  const oldSlider = q('.catalog-best-offers__slider'), slider = oldSlider.cloneNode(true); oldSlider.replaceWith(slider); slider.id = 'splide01'; slider.tabIndex = 0; slider.className = 'splide catalog-best-offers__slider splide--loop splide--ltr is-active is-initialized';
-  const track = q('.splide__track', slider); track.className = 'splide__track splide__track--loop splide__track--ltr'; track.style.paddingLeft = '0px'; track.style.paddingRight = '0px';
-  const slideList = q('.splide__list', slider); const slides = all(':scope > .splide__slide', slideList); const n = slides.length;
-  slides.forEach((slide, i) => { slide.style.cssText = ''; slide.className = 'splide__slide'; slide.setAttribute('aria-label', `${i + 1} of ${n}`); const badge = document.createElement('span'); badge.className = 'apartment-card__delivery'; badge.setAttribute('data-v-80c326fb', ''); badge.textContent = 'Срок по запросу'; q('.apartment-card__media', slide).append(badge); });
-  slides[0]?.classList.add('is-active');
-  const clones = () => slides.map(slide => { const copy = slide.cloneNode(true); copy.removeAttribute('id'); all('[id]', copy).forEach(e => e.removeAttribute('id')); copy.classList.add('splide__slide--clone'); return copy; });
-  slideList.prepend(...clones()); slideList.append(...clones());
-  all('.catalog-best-offers__nav-btn').forEach(button => button.replaceWith(button.cloneNode(true)));
   render();
 })();

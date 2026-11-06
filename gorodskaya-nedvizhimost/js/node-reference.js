@@ -57,29 +57,23 @@
     all('.catalog-mode-switch__button[data-mode]').forEach(b=>{const active=b.dataset.mode===mode;b.classList.toggle('is-active',active);b.setAttribute('aria-pressed',String(active))});
   }
   function initialize() {
-    const list=q('.catalog-grid__list'),header=q('.catalog-grid__header');if(!list || !header || q('.city-node-ready'))return;
-    document.body.classList.add('city-node-ready','barnes-header-template');
-    const consultationImage=q('.catalog-consultation__image');
-    if(consultationImage){
-      const portraitMedia=matchMedia('(min-width:769px)');
-      const syncPortrait=()=>{const src=new URL(portraitMedia.matches?'assets/cta-ruslan-cutout.png':'assets/cta-ruslan-unified-v1.webp',document.baseURI).href;if(consultationImage.src!==src)consultationImage.src=src;};
-      portraitMedia.addEventListener('change',syncPortrait);syncPortrait();
-    }
+    const list=q('.catalog-grid__list'),header=q('.catalog-grid__header');if(!list || !header || document.body.dataset.cityNodeMounted)return;
+    document.body.dataset.cityNodeMounted='true';document.body.classList.add('city-node-ready','barnes-header-template');
     [['.catalog-best-offers__title','Новые проекты'],['.catalog-map__title','География'],['.catalog-grid__title','Каталог'],['.departments-section__title','Направления'],['.catalog-faq__title','Экспертиза BARN Estate']].forEach(([s,t])=>eyebrow(s,t));
     q('.catalog-grid__title').textContent='Актуальные проекты и лоты';
     all('.catalog-grid .apartment-card').forEach(enhanceLot);
     const template=q('.catalog-grid .apartment-card').closest('.catalog-grid__item');
     const keys=new Set();
     all('.catalog-best-offers .apartment-card').forEach(launch=>{
-      const link=q('.apartment-card__link',launch);if(!link || keys.has(link.href))return;keys.add(link.href);
+      const link=q('.home-rec-link',launch);if(!link || keys.has(link.href))return;keys.add(link.href);
       const item=template.cloneNode(true), card=q('.apartment-card',item), body=q('.apartment-card__body',card);
-      item.dataset.listingMode='project';item.dataset.location=text('.apartment-card__address',launch);item.dataset.bedrooms='';item.dataset.square='';item.dataset.price=text('.apartment-card__price',launch).replace(/\D/g,'')||'0';card.dataset.nodeCard='project';
-      const image=q('.apartment-card__image',card),src=q('.apartment-card__image',launch);image.src=src.currentSrc||src.src;image.alt=src.alt;
-      const name=q('.apartment-card__name',card);q('.apartment-card__name-text',name).textContent=text('.apartment-card__name',launch).replace(/^Старт\s+Продаж[.\s]*/i,'');
+      item.dataset.listingMode='project';item.dataset.location=launch.dataset.projectLocation||text('.home-rec-address',launch);item.dataset.bedrooms='';item.dataset.square='';item.dataset.price=text('.home-rec-price',launch).replace(/\D/g,'')||'0';card.dataset.nodeCard='project';
+      const image=q('.apartment-card__image',card),src=q('.home-rec-image',launch);image.src=src.currentSrc||src.src;image.alt=src.alt;
+      const name=q('.apartment-card__name',card);q('.apartment-card__name-text',name).textContent=text('.home-rec-name',launch).replace(/^Старт\s+Продаж[.\s]*/i,'');
       all('a',card).forEach(a=>a.href=link.href);
-      const price=q('.apartment-card__price',card);price.textContent=text('.apartment-card__price',launch);
+      const price=q('.apartment-card__price',card);price.textContent=text('.home-rec-price',launch);
       const address=document.createElement('p');address.className='apartment-card__address';address.textContent=item.dataset.location;
-      body.replaceChildren(address,name,facts([['Локация',item.dataset.location],['Срок сдачи',text('.apartment-card__delivery',launch)],['Спальни','По запросу']],'project'),price);
+      body.replaceChildren(address,name,facts([['Локация',item.dataset.location],['Срок сдачи',launch.dataset.projectDelivery||'По запросу'],['Спальни','По запросу']],'project'),price);
       q('.apartment-card__favorite',card).addEventListener('click',e=>{const b=e.currentTarget;b.setAttribute('aria-pressed',String(b.getAttribute('aria-pressed')!=='true'))});
       q('.apartment-card__call-btn',card).addEventListener('click',()=>q('.catalog-grid__item[data-listing-mode="lot"] .apartment-card__call-btn')?.click());
       list.prepend(item);
@@ -98,9 +92,7 @@
     const empty=document.createElement('p');empty.className='city-catalog-empty';empty.textContent='Объектов с такими параметрами нет. Измени фильтры.';list.after(empty);
     document.addEventListener('barnes:filters-apply',render);
     render();
-    all('.catalog-best-offers .apartment-card__name').forEach(name=>{name.textContent=name.textContent.replace(/^Старт\s+Продаж[.\s]*/i,'')});
-    all('.catalog-best-offers .apartment-card').forEach(card=>{if(!q('.apartment-card__delivery',card)){const badge=document.createElement('span');badge.className='apartment-card__delivery';badge.textContent='Старт продаж';q('.apartment-card__media',card)?.append(badge)}});
-    const script=document.createElement('script');script.src=new URL('js/node-launch.js?v=node-recommendations-20261105',document.baseURI);document.body.append(script);
+    const script=document.createElement('script');script.src=new URL('js/node-launch.js?v=8dd0c634468e',document.baseURI);document.body.append(script);
     setupHeader();
     setupSticky();
     setupFullFilters();
@@ -120,16 +112,16 @@
   }
   async function setupSharedFilters() {
     for(const file of ['filters-template.js','filters-modal.js','quick-filters.js','brand-filters.js','city-reference-extras.js']) {
-      await new Promise((resolve,reject)=>{const script=document.createElement('script');script.src=new URL('js/'+file+'?v=20261106-node-deals-1',document.baseURI);script.onload=resolve;script.onerror=reject;document.body.append(script)});
+      await new Promise((resolve,reject)=>{const script=document.createElement('script');script.src=new URL('js/'+file+'?v=8dd0c634468e',document.baseURI);script.onload=resolve;script.onerror=reject;document.body.append(script)});
     }
-    const adapter=document.createElement('script');adapter.src=new URL('js/catalog-filters.js?v=20261106-node-deals-1',document.baseURI);adapter.onload=()=>{window.BarnEstateCatalogFilters.mount(document);document.body.classList.add('city-reference-synced')};document.body.append(adapter);
+    const adapter=document.createElement('script');adapter.src=new URL('js/catalog-filters.js?v=8dd0c634468e',document.baseURI);adapter.onload=()=>{window.BarnEstateCatalogFilters.mount(document);document.body.classList.add('city-reference-synced')};document.body.append(adapter);
   }
   function setupMapResults() {
     const data=document.createElement('script');
-    data.src=new URL('js/city-map-projects.js',document.baseURI).href;
+    data.src=new URL('js/city-map-projects.js?v=8dd0c634468e',document.baseURI).href;
     data.onload=()=>{
       const script=document.createElement('script');
-      script.src=new URL('js/city-map-fullscreen.js?v=20261106-node-deals-1',document.baseURI).href;
+      script.src=new URL('js/city-map-fullscreen.js?v=8dd0c634468e',document.baseURI).href;
       document.body.append(script);
     };
     document.body.append(data);

@@ -42,7 +42,7 @@
  function apply(){
   document.body.classList.add('city-home-kit');
   brand(document.body);
-  for(const image of document.querySelectorAll('.site-header__logo img,.catalog-sticky__logo img,.site-footer__logo img')){
+  for(const image of document.querySelectorAll('.site-header__logo img,.catalog-sticky__logo img')){
    image.src=new URL('barn-estate-logo.svg',assets);image.alt='BARN Estate';
   }
   const portrait=document.querySelector('.floating-expert--ruslan .floating-expert__avatar img');

@@ -24,12 +24,12 @@
   offers.forEach(offer=>{
     const item=originalTemplate.cloneNode(true);item.dataset.listingMode='new-build';item.hidden=false;
     const body=one('.apartment-card__body',item),name=one('.apartment-card__name',body),nameText=one('.apartment-card__name-text',name),price=one('.apartment-card__price',body),image=one('.apartment-card__image',item);
-    const title=one('.apartment-card__name',offer)?.textContent.trim(),region=one('.apartment-card__address',offer)?.textContent.trim(),href=one('.apartment-card__link',offer)?.href,delivery=one('.apartment-card__delivery',offer)?.textContent.trim();
-    nameText.textContent=title;all('a',item).forEach(a=>a.href=href);image.src=one('.apartment-card__image',offer).src;image.alt=title;image.removeAttribute('srcset');
+    const title=one('.home-rec-name',offer)?.textContent.trim(),region=offer.dataset.projectLocation||one('.home-rec-address',offer)?.textContent.trim(),href=one('.home-rec-link',offer)?.href,delivery=offer.dataset.projectDelivery||'По запросу';
+    nameText.textContent=title;all('a',item).forEach(a=>a.href=href);image.src=one('.home-rec-image',offer).src;image.alt=title;image.removeAttribute('srcset');
     const country=countriesByCity[region];item.dataset.country=country||'';
     one('.apartment-card__topline',body)?.remove();const address=one('.apartment-card__address',body);if(address){address.textContent=country||'';if(country)body.prepend(address);else address.remove();}one('.apartment-card__stats',body)?.remove();
     name.after(facts([['Локация',region],['Срок сдачи',delivery],['Спальни','По запросу']],'project'));
-    price.textContent=one('.apartment-card__price',offer)?.textContent.trim()||'Цена по запросу';
+    price.textContent=one('.home-rec-price',offer)?.textContent.trim()||'Цена по запросу';
     list.prepend(item);
   });
   // Launch cards use the same country eyebrow; project facts keep the city.
@@ -50,11 +50,10 @@
   const setMode=mode=>{list.dataset.activeMode=mode;all('.catalog-mode-switch__button',toolbar).forEach(b=>{const active=b.dataset.listingMode===mode;b.classList.toggle('is-active',active);b.setAttribute('aria-pressed',String(active));});all('.catalog-grid__item',list).forEach(item=>item.hidden=item.dataset.listingMode!==mode);};
   all('.catalog-mode-switch__button',toolbar).forEach(b=>b.addEventListener('click',()=>setMode(b.dataset.listingMode)));setMode('new-build');list.dataset.modeReady='true';
   document.addEventListener('barnes:filters-apply',()=>{const market=window.BarnesFilters?.getState().market;if(market&&market!==list.dataset.activeMode)setMode(market);});
-  [['.catalog-best-offers__title','Новые проекты'],['.catalog-map__title','География'],['.catalog-grid__title','Каталог'],['.departments-section__title','Направления'],['.catalog-faq__title','Экспертиза BARN Estate']].forEach(([selector,text])=>{const heading=one(selector);if(!heading)return;const p=document.createElement('p');p.className='catalog-section-eyebrow';p.textContent=text;heading.before(p);});
+  [['.catalog-best-offers__title','Новые проекты'],['.catalog-map__title','География'],['.catalog-grid__title','Каталог'],['.departments-section__title','Направления'],['.catalog-faq__title','Экспертиза BARN Estate']].forEach(([selector,text])=>{const heading=one(selector);if(!heading||heading.previousElementSibling?.classList.contains('catalog-section-eyebrow'))return;const p=document.createElement('p');p.className='catalog-section-eyebrow';p.textContent=text;heading.before(p);});
   all('.catalog-intro__details h3').forEach(h=>{const e=document.createElement('h4');e.innerHTML=h.innerHTML;h.replaceWith(e);});all('.catalog-intro__details h2').forEach(h=>{const e=document.createElement('h3');e.innerHTML=h.innerHTML;h.replaceWith(e);});
   const base=new URL('../assets/',document.currentScript.src);
   const change=(selector,file)=>all(selector).forEach(img=>{img.src=new URL(file,base).href;img.removeAttribute('srcset');});
-  change('.catalog-consultation__image','denis-perkovsky-cutout.png');
   change('.catalog-contact__image','cta-contact-resort-lounge.webp');
   ['consultation','contact'].forEach(prefix=>{const form=one('.catalog-'+prefix+'__form'),methods=one('.catalog-'+prefix+'__methods');if(form&&methods)form.prepend(methods);});
   window.BARNES_ENHANCE_CONTACT_METHODS?.();
