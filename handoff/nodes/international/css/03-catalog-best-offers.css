@@ -1,0 +1,1028 @@
+@font-face { font-family: "Tilda Sans Fallback"; src: local("Arial"), local("Helvetica Neue"), local("Helvetica"); size-adjust: 92.84%; ascent-override: 102.43%; descent-override: 26.82%; line-gap-override: 0%; }
+@font-face { font-family: "Tilda Sans"; src: url("../assets/f0f2c165784c7234.woff2") format("woff2"); font-weight: 300; font-style: normal; font-display: swap; }
+@font-face { font-family: "Tilda Sans"; src: url("../assets/2670dad44ca6c2a1.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "Tilda Sans"; src: url("../assets/f716269e361f4665.woff2") format("woff2"); font-weight: 500; font-style: normal; font-display: swap; }
+html, body { font-family: "Tilda Sans", "Tilda Sans Fallback", system-ui, sans-serif; }
+@keyframes floating-expert-enter-cd0a1259 {
+  100% { opacity: 1; transform: translateY(0px); }
+}
+@keyframes floating-expert-pulse-cd0a1259 {
+  0%, 100% { box-shadow: rgba(18, 18, 18, 0.2) 0px 22px 62px; }
+  42% { box-shadow: rgba(18, 18, 18, 0.2) 0px 22px 62px, rgba(18, 18, 18, 0.08) 0px 0px 0px 12px; }
+  58% { box-shadow: rgba(18, 18, 18, 0.24) 0px 26px 74px, rgba(18, 18, 18, 0) 0px 0px 0px 22px; }
+}
+@font-face { font-display: swap; font-family: "Tilda Sans"; font-style: normal; font-weight: 300; src: url("../assets/f0f2c165784c7234.woff2") format("woff2"); }
+@font-face { font-display: swap; font-family: "Tilda Sans"; font-style: normal; font-weight: 400; src: url("../assets/2670dad44ca6c2a1.woff2") format("woff2"); }
+@font-face { font-display: swap; font-family: "Tilda Sans"; font-style: normal; font-weight: 500; src: url("../assets/f716269e361f4665.woff2") format("woff2"); }
+@font-face { font-display: swap; font-family: "Tilda Sans"; font-style: normal; font-weight: 600; src: url("../assets/3814f8c444073262.woff2") format("woff2"); }
+@font-face { font-display: swap; font-family: "Tilda Sans"; font-style: normal; font-weight: 700; src: url("../assets/a2690df6fe834806.woff2") format("woff2"); }
+@font-face { font-display: swap; font-family: "Tilda Sans"; font-style: normal; font-weight: 800; src: url("../assets/726a3a878465a590.woff2") format("woff2"); }
+@font-face { font-display: swap; font-family: "Tilda Sans"; font-style: normal; font-weight: 900; src: url("../assets/73abed6708c43912.woff2") format("woff2"); }
+@font-face { ascent-override: 102.43%; descent-override: 26.82%; font-family: "Tilda Sans Fallback"; line-gap-override: 0%; size-adjust: 92.84%; src: local("Arial"), local("Helvetica Neue"), local("Helvetica"); }
+html { font-family: sans-serif; text-size-adjust: 100%; }
+body { margin: 0px; }
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary { display: block; }
+a { background-color: transparent; }
+a:active, a:hover { outline: 0px; }
+img { border: 0px; }
+svg:not(:root) { overflow: hidden; }
+button, input, optgroup, select, textarea { color: inherit; font: inherit; margin: 0px; }
+button { overflow: visible; }
+button, select { text-transform: none; }
+button, html input[type="button"], input[type="reset"], input[type="submit"] { appearance: button; cursor: pointer; }
+html { color: rgb(30, 30, 30); font-size: 16px; font-weight: 400; line-height: 1; scroll-behavior: smooth; scrollbar-gutter: stable; }
+html, html body { font-family: "Tilda Sans", "Tilda Sans Fallback", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+html body { height: 100%; margin: 0px; text-rendering: optimizelegibility; width: 100%; -webkit-font-smoothing: antialiased; background-color: rgb(255, 255, 255); }
+* { -webkit-tap-highlight-color: rgba(0, 0, 0, 0); outline: none; }
+ul { list-style: none; margin: 0px; padding: 0px; }
+.page { margin-bottom: 80px; }
+main { min-width: 0px; }
+.base-container { margin: 0px auto; max-width: 1920px; padding-inline: 100px; width: 100%; }
+@media (max-width: 1920px) {
+  .base-container { padding-inline: calc(-26.6667px + 6.59722vw); }
+}
+@media (max-width: 768px) {
+  .base-container { padding-inline: calc(8.94118px + 1.96078vw); }
+}
+h1, h2, h3, h4, h5, p { margin: 0px; }
+button, input, textarea { font-family: inherit; }
+img { height: auto; max-width: 100%; }
+button:not(:disabled) { cursor: pointer; }
+a { color: currentcolor; text-decoration: none; }
+a, a:active, a:focus { outline: none; }
+a:focus-visible, button:focus-visible { outline: rgba(20, 71, 230, 0.45) solid 2px; outline-offset: 2px; }
+@keyframes splide-loading {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(1turn); }
+}
+.splide__track--draggable { user-select: none; }
+.splide__list { backface-visibility: hidden; display: flex; height: 100%; margin: 0px !important; padding: 0px !important; }
+.splide { position: relative; visibility: hidden; }
+.splide.is-initialized, .splide.is-rendered { visibility: visible; }
+.splide__slide { backface-visibility: hidden; box-sizing: border-box; flex-shrink: 0; margin: 0px; position: relative; list-style-type: none !important; }
+.splide__slide img { vertical-align: bottom; }
+.splide__track { overflow: hidden; position: relative; z-index: 0; }
+@keyframes fade-in {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes fade-out {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+@keyframes fadeInDown {
+  0% { opacity: 0; transform: translate3d(0px, -100%, 0px); }
+  100% { opacity: 1; transform: none; }
+}
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translate3d(0px, 100%, 0px); }
+  100% { opacity: 1; transform: none; }
+}
+@keyframes partners-marquee-right-923dc07c {
+  0% { transform: translate3d(-50%, 0px, 0px); }
+  100% { transform: translateZ(0px); }
+}
+@keyframes partners-marquee-left-923dc07c {
+  0% { transform: translateZ(0px); }
+  100% { transform: translate3d(-50%, 0px, 0px); }
+}
+.catalog-best-offers[data-v-08286baa] { background: rgb(255, 255, 255); overflow: visible; padding-block: 75px; }
+@media screen and (max-width: 1440px) {
+  .catalog-best-offers[data-v-08286baa] { padding-block: 60px; }
+}
+@media screen and (max-width: 540px) {
+  .catalog-best-offers[data-v-08286baa] { overflow-x: clip; padding-block: 35px; }
+}
+.catalog-best-offers__container[data-v-08286baa] { display: flex; flex-direction: column; gap: 40px; }
+@media screen and (max-width: 1440px) {
+  .catalog-best-offers__container[data-v-08286baa] { gap: 28px; }
+}
+@media screen and (max-width: 540px) {
+  .catalog-best-offers__container[data-v-08286baa] { gap: 20px; }
+}
+.catalog-best-offers__header[data-v-08286baa] { align-items: center; display: flex; flex-direction: column; gap: 35px; padding-inline: 40px; text-align: center; }
+@media screen and (max-width: 1440px) {
+  .catalog-best-offers__header[data-v-08286baa] { gap: 28px; padding-inline: 28px; }
+}
+@media screen and (max-width: 768px) {
+  .catalog-best-offers__header[data-v-08286baa] { padding-inline: 20px; }
+}
+@media screen and (max-width: 540px) {
+  .catalog-best-offers__header[data-v-08286baa] { gap: 15px; margin-bottom: 15px; }
+}
+.catalog-best-offers__title[data-v-08286baa] { color: rgb(30, 30, 30); font-size: 44px; font-weight: 300; line-height: 1; margin: 0px; text-transform: uppercase; }
+@media screen and (max-width: 1440px) {
+  .catalog-best-offers__title[data-v-08286baa] { font-size: 38px; }
+}
+@media screen and (max-width: 540px) {
+  .catalog-best-offers__title[data-v-08286baa] { font-size: 30px; }
+}
+.page[data-v-f0be9abb] { background: rgb(255, 255, 255); margin-bottom: 0px; min-height: 100%; }
+.catalog-page-section[data-v-f0be9abb] { scroll-margin-top: calc(var(--catalog-sticky-nav-top, 112px) + var(--catalog-sticky-nav-height, 56px) + 16px); }
+:root { --owner-rent-ui-brand: #8b1d25; --owner-rent-ui-brand-accent: #8b1d25; --owner-rent-ui-background: #fff; --owner-rent-ui-surface: #f1f1f1; --owner-rent-ui-dark-surface: #262626; --owner-rent-ui-text-primary: #1e1e1e; --owner-rent-ui-text-secondary: #4f4d49; --owner-rent-ui-text-muted: #656462; --owner-rent-ui-border: #e4e4e4; --owner-rent-ui-error: #ef4444; --owner-rent-ui-heading-weight: 300; --owner-rent-ui-body-weight: 400; --owner-rent-ui-h2-size: 38px; --owner-rent-ui-h2-line: 45.6px; --owner-rent-ui-h2-compact-line: 38px; --owner-rent-ui-h2-wide-size: 44px; --owner-rent-ui-h2-wide-line: 52.8px; --owner-rent-ui-h2-compact-wide-line: 44px; --owner-rent-ui-h2-mobile-size: 22px; --owner-rent-ui-h2-mobile-line: 26.4px; --owner-rent-ui-control-radius: 1px; --owner-rent-ui-focus-width: 2px; --owner-rent-ui-focus-offset: 3px; --owner-rent-ui-motion: .2s ease; }
+@keyframes floating-expert-enter-cd0a1259 {
+  100% { opacity: 1; transform: translateY(0px); }
+}
+@keyframes floating-expert-pulse-cd0a1259 {
+  0%, 100% { box-shadow: rgba(18, 18, 18, 0.2) 0px 22px 62px; }
+  42% { box-shadow: rgba(18, 18, 18, 0.2) 0px 22px 62px, rgba(18, 18, 18, 0.08) 0px 0px 0px 12px; }
+  58% { box-shadow: rgba(18, 18, 18, 0.24) 0px 26px 74px, rgba(18, 18, 18, 0) 0px 0px 0px 22px; }
+}
+.layout[data-v-47bd53e9] { display: flex; flex-direction: column; max-width: 100%; min-height: 100vh; min-width: 0px; overflow-x: clip; position: relative; }
+.layout__content[data-v-47bd53e9] { flex: 1 1 0%; max-width: 100%; min-width: 0px; overflow-x: clip; --layout-header-offset-top: 32px; }
+@media screen and (max-width: 540px) {
+  .layout__content[data-v-47bd53e9] { --layout-header-offset-top: 16px; }
+}
+@keyframes ymaps3--controls-spinner-spin{0%{transform:rotate(0deg)}to{transform:rotate(1turn)}}
+
+/* Only runtime state and captured carousel sizing; source design stays in source.css. */
+.catalog-best-offers .splide__list { transition: transform .35s; }
+.catalog-best-offers .splide__slide { flex-shrink: 0; }
+@media (prefers-reduced-motion: reduce) { .splide__list { transition: none !important; } }
+
+/*
+ * BARNES transferable UI layer for the Kurortnaya page.
+ * Baseline: ../reference-ui.md (2026-10-07).
+ * Project/offer cards are intentionally outside this layer.
+ */
+
+:root {
+  --kit-font: "Tilda Sans", "Tilda Sans Fallback", system-ui, sans-serif;
+  --kit-text: #1e1e1e;
+  --kit-text-secondary: #4f4d49;
+  --kit-text-muted: #656462;
+  --kit-burgundy: #8b1d25;
+  --kit-focus-accent: var(--kit-burgundy);
+  --kit-border: #e4e4e4;
+  --kit-h2-standard-size: 38px;
+  --kit-h2-standard-leading: 1.2;
+  --kit-h2-compact-size: 38px;
+  --kit-h2-compact-leading: 1;
+  --kit-h2-editorial-size: 44px;
+  --kit-h2-editorial-leading: 0.98;
+  --kit-eyebrow-size: 14px;
+  --kit-eyebrow-leading: 1.15;
+  --kit-eyebrow-gap: 25px;
+  --kit-action-height: 70px;
+  --kit-action-size: 17px;
+  --kit-action-padding: 36px;
+}
+
+html,
+body {
+  color: var(--kit-text);
+  font-family: var(--kit-font);
+}
+
+/* Headings outside the project-card component family. */
+
+/* Catalog content-page display follows the approved content H1 contract. */
+
+/* Long-form BARNES copy uses heading roles without introducing bold weights. */
+
+/* CTA portraits: Denis stays natural; the layout, not the photograph, is mirrored. */
+
+/* FloatingExpert contract. */
+
+/* Mobile hero contacts remain distinct from the sticky request-form button. */
+
+/* Compact ContactAction used as a channel selector inside both forms. */
+
+/* FAQ body typography follows the shared text roles at every breakpoint. */
+
+html body .catalog-section-eyebrow[class] {
+  color: var(--kit-text-secondary);
+  font-size: var(--kit-eyebrow-size);
+  font-weight: 400;
+  letter-spacing: 0.12em;
+  line-height: var(--kit-eyebrow-leading);
+  margin: 0 0 var(--kit-eyebrow-gap);
+  text-transform: uppercase;
+}
+
+/* Parent layouts already contribute their own row gaps. Offset those gaps so
+   the visible eyebrow-to-title rhythm matches the approved 25px contract. */
+html body .catalog-best-offers__header[class] > .catalog-section-eyebrow[class] {
+  margin-bottom: -3px;
+}
+
+@media (max-width: 540px) {
+  html body .catalog-best-offers__header[class] > .catalog-section-eyebrow[class] {
+    margin-bottom: -3px;
+  }
+}
+
+/* Shared rectangular action contract. Card actions are deliberately excluded. */
+
+/* Filter controls: the UI kit defines these separately from rectangular CTAs. */
+
+@media (min-width: 1441px) {
+  :root {
+    --kit-h2-standard-size: 44px;
+    --kit-h2-compact-size: 44px;
+    --kit-action-size: 19px;
+    --kit-action-padding: 47px;
+  }
+}
+
+@media (max-width: 540px) {
+  :root {
+    --kit-h2-standard-size: 22px;
+    --kit-h2-compact-size: 22px;
+    --kit-h2-editorial-size: 22px;
+    --kit-h2-editorial-leading: 1.2;
+    --kit-eyebrow-size: 12px;
+    --kit-eyebrow-leading: 1.2;
+    --kit-eyebrow-gap: 12px;
+    --kit-action-height: 58px;
+    --kit-action-size: 18px;
+    --kit-action-padding: 24px;
+  }
+}
+
+/* Header contract: compact owner-style navigation with direct contact channels. */
+
+@media (hover: hover) and (pointer: fine) {
+
+  /* Interactive accents are burgundy; yellow and gold are prohibited. */
+}
+
+/* Secondary header: copied from the approved partners-page contract. */
+
+html body :is(
+  #catalog-new-starts,
+  #catalog-grid,
+  #catalog-intro,
+  #catalog-faq,
+  #catalog-contact
+) {
+  scroll-margin-top: 112px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
+
+/* ListingCard contract: shared geometry for project and secondary-lot modes. */
+
+/* Filter layout: "lower lines" design from the approved mobile reference. */
+
+/* One chevron treatment at every breakpoint, matching the filter controls. */
+
+@media (max-width: 540px) {
+
+  /* Anchor every mobile arrow to its control, independently of text/padding. */
+}
+
+.catalog-best-offers {
+  --start-sales-card-height: 438px;
+  --start-sales-card-pad: 24px;
+  --start-sales-accent: #8b1d25;
+}
+
+@media screen and (max-width: 767px) {
+  .catalog-best-offers {
+    --start-sales-card-pad: 22px;
+  }
+}
+
+@media screen and (max-width: 359px) {
+  .catalog-best-offers {
+    --start-sales-card-pad: 20px;
+  }
+}
+
+/* International content inside the approved node component contracts. */
+/* A title never adds another line to a listing card, including city variants. */
+.international-node-design .catalog-best-offers__slider-row { margin-top: 0; }
+.international-node-design .catalog-best-offers .splide__slide { width: calc((100% - 2 * var(--catalog-best-offers-gap)) / 3) !important; }
+.international-node-design .catalog-best-offers__slider-wrap { --catalog-best-offers-gap: 24px; }
+@media (min-width: 1441px) { .international-node-design .catalog-best-offers__slider-wrap { --catalog-best-offers-gap: 90px; } }
+@media (max-width: 1280px) { .international-node-design .catalog-best-offers__slider-wrap { --catalog-best-offers-gap: 20px; } }
+@media (max-width: 1024px) { .international-node-design .catalog-best-offers__slider-wrap { --catalog-best-offers-gap: 16px; } }
+@media (max-width: 768px) { .international-node-design .catalog-best-offers__slider-wrap { --catalog-best-offers-gap: 12px; } }
+@media (max-width: 540px) { .international-node-design .catalog-best-offers .splide__slide { width: 100% !important; } }
+
+/* Footer contract from prodazha_sobstvennikam/owner-sale.css.
+   Base snapshot rules use the same data-v-6eb18211 scope on both pages. */
+
+/* Shared owner header template. Source: prodazha_sobstvennikam, 2026-10-12.
+ * Opt in with body.barnes-header-template. Only page anchors/content differ.
+ * Kurortnaya deliberately retains site-header--no-nav (no directions row).
+ */
+body.barnes-header-template { --owner-sale-ink: #1e1e1e; --owner-sale-brand: #8b1d25; --owner-sale-border: rgba(30,30,30,.14); }
+@media (max-width:540px) {
+  /* Keep the contact dropdown clickable; only the anchor list scrolls. */
+}
+
+/* Catalogue composition using the approved homepage search, choice and spacing roles. */
+/* One continuous strip echoes the homepage search bar; labels carry the hierarchy. */
+/* Optional collections sit between the search and the result controls. */
+/* Dropdown choices use the quiet selected state from the kit's quiz choices. */
+
+/* Two quick choices; advanced criteria stay in the shared full form. */
+
+/* Restore all four quick parameters on phones in a shared 2x2 grid. */
+
+/* Resort integration: same reference geometry, isolated from cards and headers. */
+
+/* Light full form copied from catalogue role overrides. */
+/* Map quick controls share the same boxed geometry; the map itself is unchanged. */
+/* Measured full-dialog geometry and typography from the reference. */
+/* Legacy chip labels must not paint a second dark rectangle over the selection. */
+
+/* Keep the two-word brand together without preventing the rest of a sentence from wrapping. */
+.barn-estate-name{overflow-wrap:normal!important;word-break:normal!important;hyphens:none!important}
+
+/* CTA background layers span the section; form layout stays on its existing grid. */
+
+/* Shared laptop hero policy. Primary heroes are 200px shorter; typography stays in the page kit. */
+@layer barn-hero-laptop {
+ @media (min-width:1025px) and (max-width:1919px), (min-width:1920px) and (max-height:1000px) {
+  body {--hero-laptop-main:620px;--hero-laptop-node:444px;--hero-laptop-lot:520px;}
+  @media(min-width:1441px){body{--hero-laptop-main:760px;--hero-laptop-node:494px;--hero-laptop-lot:650px;}}
+  body[data-node-shell]{--hero-laptop-node:var(--hero-laptop-main);}
+ }
+}
+
+/* Header derived from owner-sale; regenerate with main-site/tools/sync-node-shell.cjs. */
+@layer barn-node-shell-header {
+
+}
+
+/* Media header v1.1.0, mobile sticky menu 2026-11-04. Only headers opt into this component. */
+html body.barnes-media-header {--mh-gutter:calc(-26.66667px + 6.59722vw);--mh-pad:32px;--mh-logo:48px;--mh-panel-offset:41px;--mh-ink:#1e1e1e;}
+/* Owner/ambassador anchors retain their nodes, text and handlers. Only center/right change. */
+@media(min-width:1921px) {html body.barnes-media-header {--mh-gutter:0px;}}
+@media(max-width:768px) {html body.barnes-media-header {--mh-gutter:calc(8.94118px + 1.96078vw);}}
+@media(max-width:540px) {
+ html body.barnes-media-header {--mh-pad:16px;--mh-logo:36px;--mh-panel-offset:25px;}
+}
+
+/* Media has WA / Telegram / MAX above hero, WA / MAX / Telegram after hero. */
+
+/* One mobile row: menu / logo / contacts. Page anchors remain available on desktop. */
+
+/* Identical glyph inset on Media and owner/partner headers; retain the 44px touch target. */
+
+/* Direction pages use the burger only, without a second navigation row. */
+
+/* The sticky mobile bar owns its centered logo, even when legacy node CSS hid it. */
+@layer barn-node-shell-header {
+}
+
+/* Five direction pages share owner-sale header/hero metrics. Page data stays local. */
+@layer barn-node-shell {
+ html body[data-node-shell] {--node-hero-height:820px;--node-title-lines:1;}
+ @media(min-width:1441px){html body[data-node-shell]{--node-hero-height:960px;}}
+ @media(max-width:767px){html body[data-node-shell]{--node-title-lines:2;}}
+ @media(max-width:540px){html body[data-node-shell]{--node-hero-height:560px;}}
+ @media(max-width:389px){html body[data-node-shell]{--node-title-lines:3;}}
+ /* The international page already suppresses its legacy quick-link content. */
+}
+
+/* Vertical roles from the approved home-spacing.css / UI-kit v1.0.3.
+ * Scope: five direction nodes. Each interval is owned once, never margin + gap. */
+@layer barn-node-spacing {
+ html body[data-node-shell] {
+  --node-section-space:clamp(72px,6vw,100px);
+  --node-brow-gap:25px;--node-heading-content:40px;--node-copy-gap:24px;
+ }
+ @media(max-width:1024px){html body[data-node-shell]{--node-brow-gap:12px;}}
+ @media(max-width:540px){html body[data-node-shell]{--node-section-space:48px;--node-heading-content:28px;--node-copy-gap:16px;}}
+ /* Start-sales: the slider is a sibling of the heading container. */
+ html body[data-node-shell] .catalog-best-offers {row-gap:0!important;}
+ html body[data-node-shell] .catalog-best-offers__container {row-gap:0!important;margin-block:0!important;}
+ html body[data-node-shell] .catalog-best-offers__header {margin-block:0!important;}
+ html body[data-node-shell] .catalog-best-offers__slider-row {margin-top:var(--node-heading-content)!important;}
+ /* Map: description belongs to the heading, then one content interval. */
+ /* Catalog controls keep their own existing internal intervals. */
+ /* Editorial intro: eyebrow -> H2 -> description, without a second flex gap. */
+ /* Directions/news: the parent gap owns heading -> cards. */
+ /* FAQ has no separate heading wrapper: margin belongs to the answer grid. */
+ /* Consultation owns its spacing inside the photo. Outer padding exposes dark bands. */
+ /* Photo CTA: retain the card's inner grid, normalize heading and form spacing. */
+}
+/* Editorial images use one frame and end at the introductory copy, above its action. */
+@layer barn-node-spacing {
+}
+
+/* Match apparent portrait distance; the office background still reaches every CTA edge. */
+@layer barn-node-spacing {
+}
+
+/* FAQ columns share question/answer tracks, so wrapping and expansion keep paired rows aligned. */
+@layer barn-node-spacing {
+}
+
+/* Final contact CTA: city layout/fields, shared by all five nodes.
+ * Original source: city/css/document-desktop.css; local backgrounds remain untouched. */
+@layer barn-node-spacing {
+}
+@layer barn-node-spacing {
+}
+
+/* Generated from the approved home reference by sync-node-recommendations.cjs. */
+@layer barn-node-recommendations {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+html body[data-node-shell] .catalog-best-offers{background:#fff !important;overflow:visible !important;padding-block:75px !important}@media screen and (max-width:1440px){html body[data-node-shell] .catalog-best-offers{padding-block:60px !important}}@media screen and (max-width:540px){html body[data-node-shell] .catalog-best-offers{overflow-x:clip !important;padding-block:35px !important}}html body[data-node-shell] .catalog-best-offers__container{display:flex !important;flex-direction:column !important;gap:40px !important}@media screen and (max-width:1440px){html body[data-node-shell] .catalog-best-offers__container{gap:28px !important}}@media screen and (max-width:540px){html body[data-node-shell] .catalog-best-offers__container{gap:20px !important}}html body[data-node-shell] .catalog-best-offers__header{align-items:center !important;display:flex !important;flex-direction:column !important;gap:35px !important;padding-inline:40px !important;text-align:center !important}@media screen and (max-width:1440px){html body[data-node-shell] .catalog-best-offers__header{gap:28px !important;padding-inline:28px !important}}@media screen and (max-width:768px){html body[data-node-shell] .catalog-best-offers__header{padding-inline:20px !important}}@media screen and (max-width:540px){html body[data-node-shell] .catalog-best-offers__header{gap:15px !important;margin-bottom:15px !important}}html body[data-node-shell] .catalog-best-offers__title{color:#1e1e1e !important;font-size:44px !important;font-weight:300 !important;line-height:1 !important;margin:0 !important;text-transform:uppercase !important}@media screen and (max-width:1440px){html body[data-node-shell] .catalog-best-offers__title{font-size:38px !important}}@media screen and (max-width:540px){html body[data-node-shell] .catalog-best-offers__title{font-size:22px !important}}html body[data-node-shell] .catalog-best-offers__nav-btn{align-items:center !important;background-color:transparent !important;border:1px solid #656462 !important;border-radius:50% !important;color:inherit !important;color:#656462 !important;cursor:pointer !important;display:inline-flex !important;font:inherit !important;height:68px !important;justify-content:center !important;outline:none !important;padding:0 !important;transition:border-color .2s ease,background-color .2s ease,opacity .2s ease !important;width:68px !important}@media screen and (max-width:1440px){html body[data-node-shell] .catalog-best-offers__nav-btn{height:56px !important;width:56px !important}}@media screen and (max-width:540px){html body[data-node-shell] .catalog-best-offers__nav-btn{height:48px !important;width:48px !important}}@media(min-width:1025px){html body[data-node-shell] .catalog-best-offers__nav-btn:hover{background:#f7f7f7 !important;border-color:#1e1e1e59 !important}}html body[data-node-shell] .catalog-best-offers__nav-btn{background:#fff !important;flex-shrink:0 !important;position:absolute !important;top:50% !important;transform:translateY(-50%) !important;z-index:5 !important}@media(max-width:1920px){html body[data-node-shell] .catalog-best-offers__nav-btn--prev{left:calc(-26.66667px + 6.59722vw) !important}}@media(max-width:768px){html body[data-node-shell] .catalog-best-offers__nav-btn--prev{left:calc(8.94118px + 1.96078vw) !important}}@media(max-width:1920px){html body[data-node-shell] .catalog-best-offers__nav-btn--next{right:calc(-26.66667px + 6.59722vw) !important}}@media(max-width:768px){html body[data-node-shell] .catalog-best-offers__nav-btn--next{right:calc(8.94118px + 1.96078vw) !important}}@media screen and (max-width:540px){html body[data-node-shell] .catalog-best-offers__nav-btn{display:none !important}}html body[data-node-shell] .catalog-best-offers__slider-row{align-items:center !important;display:flex !important;gap:0 !important;justify-content:center !important;margin-inline:auto !important;max-width:1920px !important;overflow:visible !important;position:relative !important;width:100% !important}@media screen and (max-width:540px){html body[data-node-shell] .catalog-best-offers__slider-row{display:block !important}}html body[data-node-shell] .catalog-best-offers__slider-wrap{--barnes-choice-gap:90px !important;--barnes-choice-slide-width:min(411px,calc(33.33333vw - 16px - var(--barnes-choice-gap)*2/3)) !important;--barnes-choice-inactive-width:min(352px,calc(var(--barnes-choice-slide-width)*.86)) !important;--barnes-choice-hover-pad-y:28px !important;--barnes-choice-hover-pad-x:28px !important;flex:0 1 auto !important;margin-inline:auto !important;max-width:calc(var(--barnes-choice-slide-width)*3 + var(--barnes-choice-gap)*2) !important;min-width:0 !important;overflow:visible !important;position:relative !important;width:100% !important}@media screen and (max-width:1440px){html body[data-node-shell] .catalog-best-offers__slider-wrap{--barnes-choice-gap:24px !important;--barnes-choice-slide-width:min(384px,calc(33.33333vw - 16px - var(--barnes-choice-gap)*2/3)) !important;--barnes-choice-inactive-width:min(320px,calc(var(--barnes-choice-slide-width)*.86)) !important}}@media screen and (max-width:1280px){html body[data-node-shell] .catalog-best-offers__slider-wrap{--barnes-choice-gap:20px !important;--barnes-choice-slide-width:min(340px,calc(33.33333vw - 16px - var(--barnes-choice-gap)*2/3)) !important;--barnes-choice-inactive-width:min(292px,calc(var(--barnes-choice-slide-width)*.86)) !important;--barnes-choice-hover-pad-x:20px !important}}@media screen and (max-width:1024px){html body[data-node-shell] .catalog-best-offers__slider-wrap{--barnes-choice-gap:16px !important;--barnes-choice-slide-width:min(300px,calc(33.33333vw - 16px - var(--barnes-choice-gap)*2/3)) !important;--barnes-choice-inactive-width:min(256px,calc(var(--barnes-choice-slide-width)*.86)) !important;--barnes-choice-hover-pad-y:20px !important;--barnes-choice-hover-pad-x:16px !important}}@media screen and (max-width:768px){html body[data-node-shell] .catalog-best-offers__slider-wrap{--barnes-choice-gap:12px !important;--barnes-choice-slide-width:min(256px,calc(33.33333vw - 10.66667px - var(--barnes-choice-gap)*2/3)) !important;--barnes-choice-inactive-width:min(219px,calc(var(--barnes-choice-slide-width)*.86)) !important;--barnes-choice-hover-pad-y:16px !important;--barnes-choice-hover-pad-x:12px !important}}@media screen and (max-width:540px){html body[data-node-shell] .catalog-best-offers__slider-wrap{--barnes-choice-gap:0px !important;--barnes-choice-slide-width:100% !important;--barnes-choice-inactive-width:100% !important;--barnes-choice-hover-pad-y:0px !important;--barnes-choice-hover-pad-x:0px !important;margin-inline:auto !important;max-width:1920px !important;overflow:hidden !important}}@media screen and (max-width:540px)and (max-width:1920px){html body[data-node-shell] .catalog-best-offers__slider-wrap{padding-inline:calc(-26.66667px + 6.59722vw) !important}}@media screen and (max-width:540px)and (max-width:768px){html body[data-node-shell] .catalog-best-offers__slider-wrap{padding-inline:calc(8.94118px + 1.96078vw) !important}}html body[data-node-shell] .catalog-best-offers__slider{overflow:visible !important;padding-block:calc(44px + var(--barnes-choice-hover-pad-y)) !important;padding-inline:var(--barnes-choice-hover-pad-x) !important;width:100% !important}@media screen and (max-width:1440px){html body[data-node-shell] .catalog-best-offers__slider{padding-block:calc(32px + var(--barnes-choice-hover-pad-y)) !important}}@media screen and (max-width:540px){html body[data-node-shell] .catalog-best-offers__slider{overflow:hidden !important;padding-block:0 !important;padding-inline:0 !important}}html body[data-node-shell] .catalog-best-offers__slider .splide__track{margin-block:calc(var(--barnes-choice-hover-pad-y)*-1) !important;margin-inline:calc(var(--barnes-choice-hover-pad-x)*-1) !important;overflow:hidden !important;padding-block:var(--barnes-choice-hover-pad-y) !important;padding-inline:var(--barnes-choice-hover-pad-x) !important}html body[data-node-shell] .catalog-best-offers__slider .splide__list{align-items:center !important}html body[data-node-shell] .catalog-best-offers__slider .splide__slide{flex-shrink:0 !important;max-width:var(--barnes-choice-slide-width) !important;overflow:visible !important;visibility:visible !important;width:var(--barnes-choice-slide-width) !important}@media screen and (max-width:768px){html body[data-node-shell] .catalog-best-offers__slider .splide__slide.is-active .apartment-card{transform:none !important}}@media screen and (max-width:540px){html body[data-node-shell] .catalog-best-offers__slider .splide,html body[data-node-shell] .catalog-best-offers__slider .splide__track{margin:0 !important;overflow:hidden !important;padding:0 !important}html body[data-node-shell] .catalog-best-offers__slider .splide__list{align-items:stretch !important}html body[data-node-shell] .catalog-best-offers__slider .splide__slide{flex-shrink:0 !important;max-width:100%!important;width:100%!important}}html body[data-node-shell] .catalog-best-offers__slider .apartment-card{opacity:1 !important;transition:opacity .7s cubic-bezier(.22,1,.36,1),width .7s cubic-bezier(.22,1,.36,1) !important}@media(min-width:1025px){html body[data-node-shell] .catalog-best-offers__slider .apartment-card:hover{transform:none !important}}@media screen and (max-width:540px){html body[data-node-shell] .catalog-best-offers__slider .apartment-card{margin-inline:0 !important;max-width:none !important;transition:none !important;width:100% !important}}html body[data-node-shell] .catalog-best-offers__slider .splide__slide.is-next .apartment-card,html body[data-node-shell] .catalog-best-offers__slider .splide__slide.is-prev .apartment-card{margin-inline:auto !important;max-width:100% !important;opacity:1 !important;width:var(--barnes-choice-inactive-width) !important}@media(min-width:1025px){html body[data-node-shell] .catalog-best-offers__slider .splide__slide.is-next .apartment-card:hover,html body[data-node-shell] .catalog-best-offers__slider .splide__slide.is-prev .apartment-card:hover{z-index:3 !important}}@media screen and (max-width:540px){html body[data-node-shell] .catalog-best-offers__slider .splide__slide.is-next .apartment-card,html body[data-node-shell] .catalog-best-offers__slider .splide__slide.is-prev .apartment-card{margin-inline:0 !important;width:100% !important}}html body[data-node-shell] .catalog-best-offers__slider .splide__slide.is-active .apartment-card{opacity:1 !important;position:relative !important;width:100% !important;z-index:2 !important}@media(min-width:1025px){html body[data-node-shell] .catalog-best-offers__slider .splide__slide.is-active .apartment-card:hover{z-index:4 !important}}html body[data-node-shell] .catalog-best-offers__footer{display:flex !important;justify-content:center !important;padding-top:20px !important;padding-inline:40px !important}@media screen and (max-width:1440px){html body[data-node-shell] .catalog-best-offers__footer{padding-top:16px !important;padding-inline:28px !important}}@media screen and (max-width:768px){html body[data-node-shell] .catalog-best-offers__footer{padding-inline:20px !important}}@media screen and (max-width:540px){html body[data-node-shell] .catalog-best-offers__footer{padding-top:34px !important;padding-inline:0 !important}}html body[data-node-shell] .catalog-best-offers__action{min-width:min(100%,320px) !important}@media screen and (max-width:540px){html body[data-node-shell] .catalog-best-offers__action{min-width:100% !important}}
+
+
+
+
+
+
+
+
+
+
+
+html body[data-node-shell] :is( .catalog-best-offers__title) {
+  font-size: var(--home-heading) !important;
+  font-weight: 300 !important;
+  line-height: 1.2 !important;
+  letter-spacing: normal !important;
+  color: var(--home-primary) !important;
+}
+html body[data-node-shell] :is(.catalog-best-offers__title) { line-height: 1 !important; }
+
+html body[data-node-shell] :is(.catalog-best-offers) {
+  padding-block: var(--home-section-space) !important;
+  margin-block: 0 !important;
+}
+html body[data-node-shell] .catalog-best-offers__header {
+  row-gap: 24px !important;
+  margin-bottom: var(--home-heading-content) !important;
+}
+html body[data-node-shell] :is(.catalog-best-offers__action) {
+  min-height: 70px !important;
+  height: auto !important;
+  padding-inline: 36px !important;
+  box-sizing: border-box !important;
+}
+@media(min-width:1441px) {
+  html body[data-node-shell] :is(.catalog-best-offers__action) { padding-inline: 47px !important; }
+}
+@media(max-width:540px) {
+  html body[data-node-shell] .catalog-best-offers__header { row-gap: 16px !important; }
+    html body[data-node-shell] :is(.catalog-best-offers__action) {
+    min-height: 58px !important;
+    padding-inline: 24px !important;
+  }
+}
+@media(max-width:540px) {
+  html body[data-node-shell] .catalog-best-offers__slider-wrap { padding-inline: var(--home-gutter) !important; }
+}
+
+html body[data-node-shell] .catalog-best-offers {
+  --start-sales-card-height: 500px !important;
+  --start-sales-card-pad: 24px !important;
+  --start-sales-accent: #8b1d25 !important;
+}
+
+html body[data-node-shell] .catalog-best-offers .home-rec-card {
+  position: relative !important;
+  isolation: isolate !important;
+  height: var(--start-sales-card-height) !important;
+  min-width: 0 !important;
+  overflow: hidden !important;
+  border-radius: 1px !important;
+  background: #252525 !important;
+  color: #fff !important;
+  transition: width 700ms cubic-bezier(0.22, 1, 0.36, 1),
+    height 700ms cubic-bezier(0.22, 1, 0.36, 1) !important;
+}
+
+html body[data-node-shell] .catalog-best-offers .splide__slide.is-prev .home-rec-card,html body[data-node-shell] .catalog-best-offers .splide__slide.is-next .home-rec-card {
+  height: calc(var(--start-sales-card-height) * 0.84) !important;
+  margin-block: auto !important;
+}
+
+html body[data-node-shell] .catalog-best-offers .splide__slide.is-active .home-rec-card {
+  height: var(--start-sales-card-height) !important;
+}
+
+html body[data-node-shell] .catalog-best-offers .home-rec-card *,html body[data-node-shell] .catalog-best-offers .home-rec-card *::before,html body[data-node-shell] .catalog-best-offers .home-rec-card *::after {
+  box-sizing: border-box !important;
+}
+
+html body[data-node-shell] .catalog-best-offers .home-rec-link {
+  position: absolute !important;
+  inset: 0 !important;
+  z-index: 1 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: flex-end !important;
+  padding: var(--start-sales-card-pad) !important;
+  color: #fff !important;
+  text-decoration: none !important;
+}
+
+html body[data-node-shell] .catalog-best-offers .home-rec-media {
+  position: absolute !important;
+  inset: 0 !important;
+  z-index: -1 !important;
+  width: 100% !important;
+  height: 100% !important;
+  aspect-ratio: auto !important;
+  overflow: hidden !important;
+  border-radius: 0 !important;
+  background: #252525 !important;
+  transition: none !important;
+}
+
+html body[data-node-shell] .catalog-best-offers .home-rec-media::after {
+  content: "" !important;
+  position: absolute !important;
+  inset: 0 !important;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.05) 28%,
+    rgba(0, 0, 0, 0.13) 48%,
+    rgba(0, 0, 0, 0.88) 100%
+  ) !important;
+  pointer-events: none !important;
+}
+
+html body[data-node-shell] .catalog-best-offers .home-rec-image {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: var(--start-sales-image-position, center) !important;
+  transform: scale(1) !important;
+  transition: transform 550ms ease !important;
+}
+
+html body[data-node-shell] .catalog-best-offers .home-rec-body {
+  display: flex !important;
+  flex-direction: column !important;
+  width: 100% !important;
+  padding: 0 !important;
+  color: #fff !important;
+}
+
+html body[data-node-shell] .catalog-best-offers .home-rec-name {
+  order: 1 !important;
+  display: -webkit-box !important;
+  min-height: 35px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  color: #fff !important;
+  font-size: 31px !important;
+  font-weight: 400 !important;
+  line-height: 1.12 !important;
+  letter-spacing: -0.6px !important;
+  overflow-wrap: anywhere !important;
+  -webkit-box-orient: vertical !important;
+  -webkit-line-clamp: 2 !important;
+}
+
+html body[data-node-shell] .catalog-best-offers .home-rec-details {
+  order: 2 !important;
+  display: block !important;
+  margin: 18px 0 0 !important;
+}
+
+html body[data-node-shell] .catalog-best-offers .home-rec-price-row {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 12px !important;
+  min-height: 55px !important;
+  padding-top: 18px !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.35) !important;
+}
+
+html body[data-node-shell] .catalog-best-offers .home-rec-price {
+  min-width: 0 !important;
+  min-height: 0 !important;
+  margin: 0 !important;
+  color: #fff !important;
+  font-size: 21px !important;
+  font-weight: 400 !important;
+  line-height: 1.25 !important;
+  letter-spacing: -0.5px !important;
+}
+
+html body[data-node-shell] .catalog-best-offers .home-rec-address {
+  order: 0 !important;
+  align-self: flex-start !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  flex: 0 1 auto !important;
+  min-width: 0 !important;
+  margin: 0 0 10px !important;
+  overflow: hidden !important;
+  color: rgba(255, 255, 255, 0.96) !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  line-height: 1.2 !important;
+  letter-spacing: 0.08em !important;
+  text-align: left !important;
+  text-overflow: ellipsis !important;
+  text-transform: uppercase !important;
+  white-space: nowrap !important;
+}
+
+html body[data-node-shell] .catalog-best-offers .home-rec-region-icon {
+  flex: 0 0 16px !important;
+  width: 16px !important;
+  height: 16px !important;
+  fill: none !important;
+  stroke: currentColor !important;
+  stroke-width: 1.25 !important;
+}
+
+html body[data-node-shell] .catalog-best-offers .home-rec-favorite {
+  position: absolute !important;
+  top: 12px !important;
+  right: 12px !important;
+  z-index: 3 !important;
+  display: grid !important;
+  place-items: center !important;
+  width: 44px !important;
+  height: 44px !important;
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 50% !important;
+  background: rgba(255, 255, 255, 0.94) !important;
+  color: #333 !important;
+  cursor: pointer !important;
+}
+
+html body[data-node-shell] .catalog-best-offers .home-rec-favorite svg {
+  width: 21px !important;
+  height: 21px !important;
+  fill: transparent !important;
+  stroke: currentColor !important;
+  transition: fill 180ms ease, color 180ms ease !important;
+}
+
+html body[data-node-shell] .catalog-best-offers .home-rec-link:focus-visible {
+  outline: 2px solid #fff !important;
+  outline-offset: -5px !important;
+}
+
+html body[data-node-shell] .catalog-best-offers .home-rec-favorite:focus-visible {
+  outline: 2px solid var(--start-sales-accent) !important;
+  outline-offset: 3px !important;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  html body[data-node-shell] .catalog-best-offers .home-rec-card:hover .home-rec-image {
+    transform: scale(1.025) !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  html body[data-node-shell] .catalog-best-offers {
+    --start-sales-card-pad: 22px !important;
+  }
+
+  html body[data-node-shell] .catalog-best-offers .home-rec-name {
+    font-size: 29px !important;
+  }
+
+  html body[data-node-shell] .catalog-best-offers .home-rec-details {
+    margin-top: 16px !important;
+  }
+}
+
+@media screen and (max-width: 540px) {
+
+  html body[data-node-shell] .catalog-best-offers .splide__slide.is-prev .home-rec-card,html body[data-node-shell] .catalog-best-offers .splide__slide.is-next .home-rec-card,html body[data-node-shell] .catalog-best-offers .splide__slide.is-active .home-rec-card {
+    height: var(--start-sales-card-height) !important;
+    margin-block: 0 !important;
+  }
+
+  html body[data-node-shell] .catalog-best-offers .home-rec-address {
+    gap: 7px !important;
+    margin-bottom: 9px !important;
+    font-size: 13px !important;
+  }
+
+  html body[data-node-shell] .catalog-best-offers .home-rec-region-icon {
+    flex-basis: 15px !important;
+    width: 15px !important;
+    height: 15px !important;
+  }
+}
+
+@media screen and (max-width: 359px) {
+  html body[data-node-shell] .catalog-best-offers {
+    --start-sales-card-pad: 20px !important;
+  }
+
+  html body[data-node-shell] .catalog-best-offers .home-rec-price {
+    font-size: 20px !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html body[data-node-shell] .catalog-best-offers .home-rec-image,html body[data-node-shell] .catalog-best-offers .home-rec-card,html body[data-node-shell] .catalog-best-offers .home-rec-favorite svg {
+    transition: none !important;
+  }
+
+  html body[data-node-shell] .catalog-best-offers .home-rec-card:hover .home-rec-image {
+    transform: none !important;
+  }
+}
+@media(min-width:541px) and (max-width:767px) {
+ html body[data-node-shell] .catalog-best-offers__slider .splide__slide { width:min(450px,calc(100% - 44px)) !important; max-width:none !important; }
+}
+@media(min-width:768px) and (max-width:1024px) {
+ html body[data-node-shell] .catalog-best-offers__slider .splide__slide { width:calc((100% - 24px)/2) !important; max-width:none !important; }
+}
+html body[data-node-shell] .catalog-best-offers .splide__slide .apartment-card { width:100% !important; max-width:none !important; }
+html body[data-node-shell] .catalog-best-offers .home-rec-card {width:100% !important;}
+html body[data-node-shell] .catalog-best-offers .splide__list {align-items:center !important;}
+html body[data-node-shell] .catalog-best-offers .home-rec-address {max-width:100% !important;}
+html body[data-node-shell] .catalog-best-offers .home-rec-price {overflow-wrap:anywhere !important;}
+html body[data-node-shell] .catalog-best-offers .home-rec-link {outline-offset:-5px !important;}
+html body[data-node-shell] .catalog-best-offers .home-rec-address span {min-width:0 !important;overflow:hidden !important;text-overflow:ellipsis !important;white-space:nowrap !important;}
+@media(max-width:540px) {
+ html body[data-node-shell] .catalog-best-offers {--start-sales-card-height:410px !important;}
+}
+@media (min-width: 768px) {
+  html body[data-node-shell] .catalog-best-offers__slider-row {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) auto auto !important;
+    column-gap: 12px !important;
+    row-gap: 24px !important;
+  }
+  html body[data-node-shell] .catalog-best-offers__slider-wrap {
+    grid-column: 1 / -1 !important;
+    grid-row: 1 !important;
+  }
+  html body[data-node-shell] .catalog-best-offers__slider {
+    padding-bottom: var(--barnes-choice-hover-pad-y) !important;
+  }
+  html body[data-node-shell] .catalog-best-offers__slider .splide__track {
+    padding-bottom: 0 !important;
+  }
+  html body[data-node-shell] .catalog-best-offers__nav-btn {
+    position: relative !important;
+    inset: auto !important;
+    grid-row: 2 !important;
+    display: inline-flex !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    transform: none !important;
+  }
+  html body[data-node-shell] .catalog-best-offers__nav-btn--prev {
+    grid-column: 2 !important;
+    justify-self: end !important;
+    margin-left: 0 !important;
+  }
+  html body[data-node-shell] .catalog-best-offers__nav-btn--next {
+    grid-column: 3 !important;
+    justify-self: end !important;
+    margin-right: var(--home-rec-nav-inset, 24px) !important;
+  }
+  html body[data-node-shell] .catalog-best-offers__nav-btn:focus-visible {
+    outline: 1px solid #8b1d25 !important;
+    outline-offset: 3px !important;
+  }
+  html body[data-node-shell] .catalog-best-offers__footer {
+    padding-top: 24px !important;
+  }
+}
+@media (max-width: 767px) {
+  html body[data-node-shell] .catalog-best-offers__nav-btn {
+    display: none !important;
+  }
+}
+@media (min-width: 1025px) {
+  html body[data-node-shell] .catalog-best-offers__slider-wrap {
+    width: calc(100% - var(--home-gutter) * 2) !important;
+    max-width: none !important;
+    --barnes-choice-slide-width: calc((100% - var(--barnes-choice-gap) * 2) / 3) !important;
+  }
+}
+
+}
+/* Only node-specific integration. Card presentation is generated from the home source. */
+@layer barn-node-recommendations {
+ html body[data-node-shell] .catalog-best-offers {
+  --home-gutter:clamp(24px,calc(-26.66667px + 6.59722vw),100px);
+  --home-heading:38px;--home-primary:#1e1e1e;--home-brand:#8b1d25;
+  --home-heading-content:40px;--home-section-space:var(--node-section-space);--home-copy-gap:24px;
+  overflow-x:clip!important;
+ }
+ html body[data-node-shell] .catalog-best-offers__container {width:100%!important;max-width:1920px!important;padding-inline:var(--home-gutter)!important;margin-inline:auto!important;}
+ html body[data-node-shell] .catalog-best-offers__header {padding:0!important;margin:0!important;gap:0!important;}
+ html body[data-node-shell] .catalog-best-offers__slider-row {width:100%!important;max-width:1920px!important;left:auto!important;right:auto!important;transform:none!important;align-self:auto!important;}
+ html body[data-node-shell] .catalog-best-offers__slider-wrap {grid-column:1/-1!important;grid-row:1!important;}
+ html body[data-node-shell] .catalog-best-offers__slider {height:auto!important;min-width:0!important;box-sizing:border-box!important;visibility:visible!important;}
+ html body[data-node-shell] .catalog-best-offers .apartment-card {box-sizing:border-box!important;display:block!important;padding:0!important;border:0!important;background:transparent!important;min-height:0!important;height:auto!important;max-width:none!important;transform:none!important;}
+ html body[data-node-shell] .catalog-best-offers .splide__list {display:flex!important;list-style:none!important;padding:0!important;margin:0!important;height:auto!important;}
+ html body[data-node-shell] .catalog-best-offers .splide__slide {box-sizing:border-box!important;flex-shrink:0!important;list-style:none!important;padding:0!important;border:0!important;height:auto!important;}
+ html body[data-node-shell] .catalog-best-offers .home-rec-card {font-family:'Tilda Sans','Tilda Sans Fallback',system-ui,sans-serif!important;}
+ html body[data-node-shell] .catalog-best-offers .home-rec-link {box-sizing:border-box!important;}
+ html body[data-node-shell] .catalog-best-offers .home-rec-price-row {border-bottom:0!important;}
+ html body[data-node-shell] .catalog-best-offers__nav-btn {box-sizing:border-box!important;}
+ html body[data-node-shell] .catalog-best-offers__action {display:inline-flex!important;align-items:center!important;justify-content:center!important;box-sizing:border-box!important;min-height:70px!important;padding:0 36px!important;border:1px solid #8b1d25!important;border-radius:1px!important;background:#8b1d25!important;color:#fff!important;font:400 17px/1.1 'Tilda Sans',sans-serif!important;letter-spacing:0!important;text-decoration:none!important;transition:background .2s!important;}
+ html body[data-node-shell] .catalog-best-offers__action:hover {background:#73161d!important;}
+ html body[data-node-shell] .catalog-best-offers__action:focus-visible {outline:2px solid #8b1d25!important;outline-offset:4px!important;}
+ @media(min-width:1441px){html body[data-node-shell] .catalog-best-offers{--home-heading:44px;}html body[data-node-shell] .catalog-best-offers__action{padding-inline:47px!important;}}
+ @media(min-width:1921px){html body[data-node-shell] .catalog-best-offers{--home-gutter:0px;}}
+ @media(max-width:767px){html body[data-node-shell] .catalog-best-offers__slider-row{display:block!important;}}
+ @media(max-width:540px){
+  html body[data-node-shell] .catalog-best-offers{--home-gutter:22px;--home-heading:22px;--home-heading-content:28px;--home-copy-gap:16px;}
+  html body[data-node-shell] .catalog-best-offers__action{min-height:58px!important;padding-inline:24px!important;font-size:16px!important;}
+ }
+}
+@layer barn-node-recommendations {
+ html body[data-node-shell] .catalog-best-offers {display:block!important;}
+ html body[data-node-shell] .catalog-best-offers__slider-wrap {padding:0!important;}
+ @media(max-width:540px){html body[data-node-shell] .catalog-best-offers__slider-wrap{padding-inline:22px!important;}}
+}
+@layer barn-node-recommendations {
+ /* Splide's live horizontal track padding is zero in the home instance. */
+ html body[data-node-shell] .catalog-best-offers__slider .splide__track {padding-inline:0!important;}
+}
+
+/* Generated from the current katalog-nedvizhimosti filter sources; see sync-node-filters.cjs. */
+@layer barn-node-filters {
+/* kit/_shared/source.css */
+
+/* kit/_shared/ui-kit.css */
+
+/* kit/_shared/listing-mode.css */
+
+/* listing.css */
+
+/* kit-v1/home-typography.css */
+
+
+/* kit-v1/home-spacing.css */
+
+
+/* kit-v1/home-buttons.css */
+
+
+/* catalog-kit-v1.css */
+
+/* kit/filters-modal/filters-modal.css */
+
+/* kit/quick-filter-dropdowns/quick-filters.css */
+
+/* catalog-filters.css */
+
+/* kit/quick-filter-dropdowns/brand-filters.css */
+
+/* map-view/reference-map.css */
+
+/* catalog-map.css */
+
+}
+/* Integration with existing node data/controllers; shared catalogue presentation above. */
+@layer barn-node-filters {
+ html body[data-node-shell] {--node-filter-size:18px;}
+ @media(min-width:1441px){html body[data-node-shell]{--node-filter-size:20px;}}
+ @media(max-width:540px){html body[data-node-shell]{--node-filter-size:17px;}}
+}
+@layer barn-node-filters {
+}
+@layer barn-node-filters {
+}
+@layer barn-node-filters {
+}
+@layer barn-node-filters {
+}
+/* Map shell follows the Resort overlay; filter captions share the same left edge. */
+@layer barn-node-filters {
+}
+@layer barn-node-filters {
+}
+@layer barn-node-filters {
+}
+/* Give the desktop listing sort its own room inside the right page gutter. */
+@layer barn-node-filters {
+}
+/* Map parameters share listing state; the deal uses the listing's segmented control. */
+@layer barn-node-filters {
+}
+
+/* Small decorative up/down SVG for sorting; kept outside mutable button captions. */
+@layer barn-node-filters {
+}
+/* Mobile count is a real grid item; native nodes use a class instead of #results-count. */
+@layer barn-node-filters {
+}
+@layer barn-node-filters {
+}
+
+@layer barn-layout-grid {
+/* Horizontal grid from the approved homepage home-spacing.css, UI-kit v1.0.3.
+ * One inset per content frame. Full-bleed photos/CTA, split-form interiors and
+ * the resort FAQ's explicitly retained composition are separate contracts. */
+:root {
+  --barn-page-gutter: clamp(24px, calc(-26.66667px + 6.59722vw), 100px);
+}
+@media(max-width:540px) { :root { --barn-page-gutter:22px; } }
+@media(min-width:1921px) { :root { --barn-page-gutter:0px; } }
+/* Hero and header must follow the same grid as the page content. */
+html body.barnes-media-header { --mh-gutter:var(--barn-page-gutter)!important; }
+/* The footer used to add a section gutter and a second container gutter. */
+/* City/international exports still carried older container breakpoints. */
+html body:is(.international-source-page,.city-home-kit) .base-container {
+  box-sizing:border-box!important;width:100%!important;max-width:1920px!important;
+  margin-inline:auto!important;padding-inline:var(--barn-page-gutter)!important;
+}
+/* These two lot-page frames were missing the shared content cap. */
+/* Keep text over project photos on the common grid; photos stay full bleed. */
+
+/* The photographic consultation keeps its full-bleed media; only its content
+ * inset follows the page grid. A named layer also isolates the old generated
+ * CTA adapter's high-specificity padding rules. */
+
+/* Mobile newsletter photography spans the canvas; only the copy owns gutters. */
+
+}
+
+/* Shared page navigation; deliberately outside the header and normal flow. */
+/* Keep the original footprint so neither hero content nor the header moves. */
+
+/* Canonical footer text-link states for all thirteen current BARN Estate pages. */
+
+/* Geometry, colors and markup come from the original css/source.css modal contract. */
+
+/* Dropdown markup/geometry follow front.barnes.vsavr.ru's catalog quick filters. */
+
+/* Native checkbox semantics; BARNES inline-filter typography and wine state. */
+/* Account for text centering inside different-height controls, not only grid-gap. */
+
+/* UI-kit 1.0.3 compact chips and existing node section/heading roles. */
+@layer barn-node-spacing {
+}
+
+/* Generated from approved home NewsSection by sync-node-news.cjs. */
+@layer barn-node-spacing {
+}
+
+/* City quiz styles, shared once across five nodes. */
+/* Use the canonical semantic grays, rather than legacy low-opacity placeholders. */
+/* Keep the footer's primary action reachable while its button is on screen. */
+
+/* Homepage quiz: new controls inherit the owner/ambassador reference palette. */
+
+/* Keep one dialog frame through every quiz step; only the body scrolls. */
+
+/* Narrow quiz column: keep channel labels readable, including phone landscape. */
+
+/* One geometry/type contract per button role. Preserve fill/outline/inverse colors. */
+/* Compact choices retain a smaller footprint, sharing radius and regular weight. */
+
+/* Rectangular quiz choices use the same 1px corner as all CTA buttons. */
+
+/* Shared expert dialog, based on the approved homepage quiz geometry. */
+@layer barn-node-spacing {
+}
+@layer barn-node-spacing {
+ /* Explicit grid tracks prevent legacy flex alignment from shrinking different dialogs. */
+}
+
+/* Generated by sync-node-footer.cjs from approved homepage. */
+@layer barn-node-spacing {
+}
+
+/* Shared page navigation; deliberately outside the header and normal flow. */
+/* Keep the original footprint so neither hero content nor the header moves. */
+
+/* Geometry, colors and markup come from the original css/source.css modal contract. */
+
+/* Dropdown markup/geometry follow front.barnes.vsavr.ru's catalog quick filters. */
+
+/* Native checkbox semantics; BARNES inline-filter typography and wine state. */
+/* Account for text centering inside different-height controls, not only grid-gap. */

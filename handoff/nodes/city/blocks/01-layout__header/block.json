@@ -1,0 +1,17 @@
+{
+  "id": "01-layout__header",
+  "title": "Хедер",
+  "kind": "layout__header",
+  "html": "../../html/01-layout__header.html",
+  "css": "../../css/01-layout__header.css",
+  "js": "../../js/01-layout__header.js",
+  "preview": "index.html",
+  "dependencies": [
+    "../../css/page.css",
+    "../../js/blocks-runtime.js",
+    "../../assets/",
+    "../../js/expert-quiz.js"
+  ],
+  "assets": "assets.json",
+  "integrationMode": "portable-adapter"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "03-catalog-best-offers",
+  "title": "По рекомендации BARN Estate",
+  "kind": "catalog-best-offers",
+  "html": "../../html/03-catalog-best-offers.html",
+  "css": "../../css/03-catalog-best-offers.css",
+  "js": "../../js/03-catalog-best-offers.js",
+  "preview": "index.html",
+  "dependencies": [
+    "../../css/page.css",
+    "../../js/blocks-runtime.js",
+    "../../assets/",
+    "../../js/expert-quiz.js"
+  ],
+  "assets": "assets.json",
+  "integrationMode": "portable-adapter"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "07-node-section-1",
+  "title": "Эксперты BARN Estate подскажут",
+  "kind": "catalog-consultation",
+  "html": "../../html/07-node-section-1.html",
+  "css": "../../css/07-node-section-1.css",
+  "js": "../../js/07-node-section-1.js",
+  "preview": "index.html",
+  "dependencies": [
+    "../../css/page.css",
+    "../../js/blocks-runtime.js",
+    "../../assets/",
+    "../../js/expert-quiz.js"
+  ],
+  "assets": "assets.json",
+  "integrationMode": "portable-adapter"
+}

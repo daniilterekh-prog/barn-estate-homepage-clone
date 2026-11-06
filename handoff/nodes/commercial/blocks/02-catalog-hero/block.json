@@ -1,0 +1,17 @@
+{
+  "id": "02-catalog-hero",
+  "title": "Коммерческая недвижимость",
+  "kind": "catalog-hero",
+  "html": "../../html/02-catalog-hero.html",
+  "css": "../../css/02-catalog-hero.css",
+  "js": "../../js/02-catalog-hero.js",
+  "preview": "index.html",
+  "dependencies": [
+    "../../css/page.css",
+    "../../js/blocks-runtime.js",
+    "../../assets/",
+    "../../js/expert-quiz.js"
+  ],
+  "assets": "assets.json",
+  "integrationMode": "portable-adapter"
+}

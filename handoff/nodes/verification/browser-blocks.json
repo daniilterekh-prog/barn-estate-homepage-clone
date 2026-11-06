@@ -1,0 +1,728 @@
+[
+  {
+    "key": "city",
+    "id": "01-layout__header",
+    "bootstrap": false,
+    "broken": [],
+    "height": 200,
+    "root": true
+  },
+  {
+    "key": "city",
+    "id": "02-catalog-hero",
+    "bootstrap": false,
+    "broken": [],
+    "height": 620,
+    "root": true
+  },
+  {
+    "key": "city",
+    "id": "03-catalog-best-offers",
+    "bootstrap": false,
+    "broken": [],
+    "height": 1004.875,
+    "root": true
+  },
+  {
+    "key": "city",
+    "id": "04-node-section-1",
+    "bootstrap": false,
+    "broken": [],
+    "height": 621.46875,
+    "root": true
+  },
+  {
+    "key": "city",
+    "id": "05-catalog-grid",
+    "bootstrap": false,
+    "broken": [],
+    "height": 1655.390625,
+    "root": true
+  },
+  {
+    "key": "city",
+    "id": "06-catalog-intro",
+    "bootstrap": false,
+    "broken": [],
+    "height": 539.0625,
+    "root": true
+  },
+  {
+    "key": "city",
+    "id": "07-node-section-2",
+    "bootstrap": false,
+    "broken": [],
+    "height": 737.96875,
+    "root": true
+  },
+  {
+    "key": "city",
+    "id": "08-departments-section",
+    "bootstrap": false,
+    "broken": [],
+    "height": 1986.46875,
+    "root": true
+  },
+  {
+    "key": "city",
+    "id": "09-node-news",
+    "bootstrap": false,
+    "broken": [],
+    "height": 795.734375,
+    "root": true
+  },
+  {
+    "key": "city",
+    "id": "10-node-catalog-links",
+    "bootstrap": false,
+    "broken": [],
+    "height": 908.46875,
+    "root": true
+  },
+  {
+    "key": "city",
+    "id": "11-catalog-faq",
+    "bootstrap": false,
+    "broken": [],
+    "height": 699.46875,
+    "root": true
+  },
+  {
+    "key": "city",
+    "id": "12-catalog-contact",
+    "bootstrap": false,
+    "broken": [],
+    "height": 773.640625,
+    "root": true
+  },
+  {
+    "key": "city",
+    "id": "13-site-footer",
+    "bootstrap": false,
+    "broken": [],
+    "height": 1209.5625,
+    "root": true
+  },
+  {
+    "key": "city",
+    "id": "14-floating-expert",
+    "bootstrap": false,
+    "broken": [],
+    "height": 220,
+    "root": true
+  },
+  {
+    "key": "city",
+    "id": "15-owner-sale-sticky",
+    "bootstrap": false,
+    "broken": [],
+    "height": 130,
+    "root": true
+  },
+  {
+    "key": "city",
+    "id": "16-filters-panel",
+    "bootstrap": false,
+    "broken": [],
+    "height": 0,
+    "overlayHeight": 720,
+    "root": true
+  },
+  {
+    "key": "city",
+    "id": "17-expanded-map",
+    "bootstrap": false,
+    "broken": [],
+    "height": 720,
+    "root": true
+  },
+  {
+    "key": "city",
+    "id": "18-handoff-dialog",
+    "bootstrap": false,
+    "broken": [],
+    "height": 22,
+    "root": true
+  },
+  {
+    "key": "country",
+    "id": "01-layout__header",
+    "bootstrap": false,
+    "broken": [],
+    "height": 200,
+    "root": true
+  },
+  {
+    "key": "country",
+    "id": "02-catalog-hero",
+    "bootstrap": false,
+    "broken": [],
+    "height": 620,
+    "root": true
+  },
+  {
+    "key": "country",
+    "id": "03-catalog-best-offers",
+    "bootstrap": false,
+    "broken": [],
+    "height": 1004.875,
+    "root": true
+  },
+  {
+    "key": "country",
+    "id": "04-node-section-1",
+    "bootstrap": false,
+    "broken": [],
+    "height": 621.46875,
+    "root": true
+  },
+  {
+    "key": "country",
+    "id": "05-catalog-grid",
+    "bootstrap": false,
+    "broken": [],
+    "height": 1598.59375,
+    "root": true
+  },
+  {
+    "key": "country",
+    "id": "06-catalog-intro",
+    "bootstrap": false,
+    "broken": [],
+    "height": 518.65625,
+    "root": true
+  },
+  {
+    "key": "country",
+    "id": "07-node-section-2",
+    "bootstrap": false,
+    "broken": [],
+    "height": 737.96875,
+    "root": true
+  },
+  {
+    "key": "country",
+    "id": "08-departments-section",
+    "bootstrap": false,
+    "broken": [],
+    "height": 1644.46875,
+    "root": true
+  },
+  {
+    "key": "country",
+    "id": "09-node-news",
+    "bootstrap": false,
+    "broken": [],
+    "height": 795.734375,
+    "root": true
+  },
+  {
+    "key": "country",
+    "id": "10-node-catalog-links",
+    "bootstrap": false,
+    "broken": [],
+    "height": 852.46875,
+    "root": true
+  },
+  {
+    "key": "country",
+    "id": "11-catalog-faq",
+    "bootstrap": false,
+    "broken": [],
+    "height": 647.46875,
+    "root": true
+  },
+  {
+    "key": "country",
+    "id": "12-catalog-contact",
+    "bootstrap": false,
+    "broken": [],
+    "height": 773.640625,
+    "root": true
+  },
+  {
+    "key": "country",
+    "id": "13-site-footer",
+    "bootstrap": false,
+    "broken": [],
+    "height": 1209.5625,
+    "root": true
+  },
+  {
+    "key": "country",
+    "id": "14-floating-expert",
+    "bootstrap": false,
+    "broken": [],
+    "height": 220,
+    "root": true
+  },
+  {
+    "key": "country",
+    "id": "15-owner-sale-sticky",
+    "bootstrap": false,
+    "broken": [],
+    "height": 130,
+    "root": true
+  },
+  {
+    "key": "country",
+    "id": "16-filters-panel",
+    "bootstrap": false,
+    "broken": [],
+    "height": 0,
+    "overlayHeight": 720,
+    "root": true
+  },
+  {
+    "key": "country",
+    "id": "17-expanded-map",
+    "bootstrap": false,
+    "broken": [],
+    "height": 0,
+    "overlayHeight": 720,
+    "root": true
+  },
+  {
+    "key": "country",
+    "id": "18-handoff-dialog",
+    "bootstrap": false,
+    "broken": [],
+    "height": 22,
+    "root": true
+  },
+  {
+    "key": "international",
+    "id": "01-layout__header",
+    "bootstrap": false,
+    "broken": [],
+    "height": 200,
+    "root": true
+  },
+  {
+    "key": "international",
+    "id": "02-catalog-hero",
+    "bootstrap": false,
+    "broken": [],
+    "height": 620,
+    "root": true
+  },
+  {
+    "key": "international",
+    "id": "03-catalog-best-offers",
+    "bootstrap": false,
+    "broken": [],
+    "height": 1004.875,
+    "root": true
+  },
+  {
+    "key": "international",
+    "id": "04-node-section-1",
+    "bootstrap": false,
+    "broken": [],
+    "height": 621.46875,
+    "root": true
+  },
+  {
+    "key": "international",
+    "id": "05-catalog-grid",
+    "bootstrap": false,
+    "broken": [],
+    "height": 1663.890625,
+    "root": true
+  },
+  {
+    "key": "international",
+    "id": "06-catalog-intro",
+    "bootstrap": false,
+    "broken": [],
+    "height": 558,
+    "root": true
+  },
+  {
+    "key": "international",
+    "id": "07-node-section-2",
+    "bootstrap": false,
+    "broken": [],
+    "height": 739.96875,
+    "root": true
+  },
+  {
+    "key": "international",
+    "id": "08-departments-section",
+    "bootstrap": false,
+    "broken": [],
+    "height": 1986.46875,
+    "root": true
+  },
+  {
+    "key": "international",
+    "id": "09-node-news",
+    "bootstrap": false,
+    "broken": [],
+    "height": 795.734375,
+    "root": true
+  },
+  {
+    "key": "international",
+    "id": "10-node-catalog-links",
+    "bootstrap": false,
+    "broken": [],
+    "height": 736.46875,
+    "root": true
+  },
+  {
+    "key": "international",
+    "id": "11-catalog-faq",
+    "bootstrap": false,
+    "broken": [],
+    "height": 804.46875,
+    "root": true
+  },
+  {
+    "key": "international",
+    "id": "12-catalog-contact",
+    "bootstrap": false,
+    "broken": [],
+    "height": 773.640625,
+    "root": true
+  },
+  {
+    "key": "international",
+    "id": "13-site-footer",
+    "bootstrap": false,
+    "broken": [],
+    "height": 1209.5625,
+    "root": true
+  },
+  {
+    "key": "international",
+    "id": "14-floating-expert",
+    "bootstrap": false,
+    "broken": [],
+    "height": 220,
+    "root": true
+  },
+  {
+    "key": "international",
+    "id": "15-owner-sale-sticky",
+    "bootstrap": false,
+    "broken": [],
+    "height": 130,
+    "root": true
+  },
+  {
+    "key": "international",
+    "id": "16-filters-panel",
+    "bootstrap": false,
+    "broken": [],
+    "height": 0,
+    "overlayHeight": 720,
+    "root": true
+  },
+  {
+    "key": "international",
+    "id": "17-expanded-map",
+    "bootstrap": false,
+    "broken": [],
+    "height": 720,
+    "root": true
+  },
+  {
+    "key": "international",
+    "id": "18-handoff-dialog",
+    "bootstrap": false,
+    "broken": [],
+    "height": 22,
+    "root": true
+  },
+  {
+    "key": "commercial",
+    "id": "01-layout__header",
+    "bootstrap": false,
+    "broken": [],
+    "height": 200,
+    "root": true
+  },
+  {
+    "key": "commercial",
+    "id": "02-catalog-hero",
+    "bootstrap": false,
+    "broken": [],
+    "height": 620,
+    "root": true
+  },
+  {
+    "key": "commercial",
+    "id": "03-commercial-selection",
+    "bootstrap": false,
+    "broken": [],
+    "height": 1004.875,
+    "root": true
+  },
+  {
+    "key": "commercial",
+    "id": "04-node-section-0",
+    "bootstrap": false,
+    "broken": [],
+    "height": 613.875,
+    "root": true
+  },
+  {
+    "key": "commercial",
+    "id": "05-catalog-grid",
+    "bootstrap": false,
+    "broken": [],
+    "height": 1719.25,
+    "root": true
+  },
+  {
+    "key": "commercial",
+    "id": "06-catalog-intro",
+    "bootstrap": false,
+    "broken": [],
+    "height": 606.0625,
+    "root": true
+  },
+  {
+    "key": "commercial",
+    "id": "07-node-section-1",
+    "bootstrap": false,
+    "broken": [],
+    "height": 665.140625,
+    "root": true
+  },
+  {
+    "key": "commercial",
+    "id": "08-departments-section",
+    "bootstrap": false,
+    "broken": [],
+    "height": 1302.46875,
+    "root": true
+  },
+  {
+    "key": "commercial",
+    "id": "09-node-news",
+    "bootstrap": false,
+    "broken": [],
+    "height": 795.734375,
+    "root": true
+  },
+  {
+    "key": "commercial",
+    "id": "10-node-catalog-links",
+    "bootstrap": false,
+    "broken": [],
+    "height": 732.46875,
+    "root": true
+  },
+  {
+    "key": "commercial",
+    "id": "11-catalog-faq",
+    "bootstrap": false,
+    "broken": [],
+    "height": 678.8125,
+    "root": true
+  },
+  {
+    "key": "commercial",
+    "id": "12-catalog-contact",
+    "bootstrap": false,
+    "broken": [],
+    "height": 918,
+    "root": true
+  },
+  {
+    "key": "commercial",
+    "id": "13-site-footer",
+    "bootstrap": false,
+    "broken": [],
+    "height": 1209.5625,
+    "root": true
+  },
+  {
+    "key": "commercial",
+    "id": "14-floating-expert",
+    "bootstrap": false,
+    "broken": [],
+    "height": 220,
+    "root": true
+  },
+  {
+    "key": "commercial",
+    "id": "15-owner-sale-sticky",
+    "bootstrap": false,
+    "broken": [],
+    "height": 130,
+    "root": true
+  },
+  {
+    "key": "commercial",
+    "id": "16-filters-panel",
+    "bootstrap": false,
+    "broken": [],
+    "height": 0,
+    "overlayHeight": 720,
+    "root": true
+  },
+  {
+    "key": "commercial",
+    "id": "17-expanded-map",
+    "bootstrap": false,
+    "broken": [],
+    "height": 720,
+    "root": true
+  },
+  {
+    "key": "commercial",
+    "id": "18-handoff-dialog",
+    "bootstrap": false,
+    "broken": [],
+    "height": 22,
+    "root": true
+  },
+  {
+    "key": "resort",
+    "id": "01-layout__header",
+    "bootstrap": false,
+    "broken": [],
+    "height": 200,
+    "root": true
+  },
+  {
+    "key": "resort",
+    "id": "02-catalog-hero",
+    "bootstrap": false,
+    "broken": [],
+    "height": 620,
+    "root": true
+  },
+  {
+    "key": "resort",
+    "id": "03-catalog-best-offers",
+    "bootstrap": false,
+    "broken": [],
+    "height": 1004.875,
+    "root": true
+  },
+  {
+    "key": "resort",
+    "id": "04-node-section-1",
+    "bootstrap": false,
+    "broken": [],
+    "height": 621.46875,
+    "root": true
+  },
+  {
+    "key": "resort",
+    "id": "05-catalog-grid",
+    "bootstrap": false,
+    "broken": [],
+    "height": 1131.328125,
+    "root": true
+  },
+  {
+    "key": "resort",
+    "id": "06-catalog-intro",
+    "bootstrap": false,
+    "broken": [],
+    "height": 596.0625,
+    "root": true
+  },
+  {
+    "key": "resort",
+    "id": "07-node-section-2",
+    "bootstrap": false,
+    "broken": [],
+    "height": 743.34375,
+    "root": true
+  },
+  {
+    "key": "resort",
+    "id": "08-departments-section",
+    "bootstrap": false,
+    "broken": [],
+    "height": 960.46875,
+    "root": true
+  },
+  {
+    "key": "resort",
+    "id": "09-node-news",
+    "bootstrap": false,
+    "broken": [],
+    "height": 795.734375,
+    "root": true
+  },
+  {
+    "key": "resort",
+    "id": "10-node-catalog-links",
+    "bootstrap": false,
+    "broken": [],
+    "height": 736.46875,
+    "root": true
+  },
+  {
+    "key": "resort",
+    "id": "11-catalog-faq",
+    "bootstrap": false,
+    "broken": [],
+    "height": 804.46875,
+    "root": true
+  },
+  {
+    "key": "resort",
+    "id": "12-catalog-contact",
+    "bootstrap": false,
+    "broken": [],
+    "height": 773.640625,
+    "root": true
+  },
+  {
+    "key": "resort",
+    "id": "13-site-footer",
+    "bootstrap": false,
+    "broken": [],
+    "height": 1209.5625,
+    "root": true
+  },
+  {
+    "key": "resort",
+    "id": "14-floating-expert",
+    "bootstrap": false,
+    "broken": [],
+    "height": 220,
+    "root": true
+  },
+  {
+    "key": "resort",
+    "id": "15-owner-sale-sticky",
+    "bootstrap": false,
+    "broken": [],
+    "height": 130,
+    "root": true
+  },
+  {
+    "key": "resort",
+    "id": "16-filters-panel",
+    "bootstrap": false,
+    "broken": [],
+    "height": 0,
+    "overlayHeight": 720,
+    "root": true
+  },
+  {
+    "key": "resort",
+    "id": "17-expanded-map",
+    "bootstrap": false,
+    "broken": [],
+    "height": 720,
+    "root": true
+  },
+  {
+    "key": "resort",
+    "id": "18-handoff-dialog",
+    "bootstrap": false,
+    "broken": [],
+    "height": 22,
+    "root": true
+  }
+]

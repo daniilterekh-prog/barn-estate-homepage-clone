@@ -1,0 +1,17 @@
+{
+  "id": "11-catalog-faq",
+  "title": "Вопросы и ответы по коммерческой недвижимости",
+  "kind": "catalog-faq",
+  "html": "../../html/11-catalog-faq.html",
+  "css": "../../css/11-catalog-faq.css",
+  "js": "../../js/11-catalog-faq.js",
+  "preview": "index.html",
+  "dependencies": [
+    "../../css/page.css",
+    "../../js/blocks-runtime.js",
+    "../../assets/",
+    "../../js/expert-quiz.js"
+  ],
+  "assets": "assets.json",
+  "integrationMode": "portable-adapter"
+}

@@ -1,0 +1,192 @@
+/* Shared roles from the approved BARN Estate home UI-kit v1.0.0 (2026-11-01).
+   Keep country-specific hero art, map, filters, card geometry and CTA composition. */
+html body.country-node-page {
+  --home-section-space: clamp(72px, 6vw, 100px);
+  --home-gutter: clamp(24px, calc(-26.66667px + 6.59722vw), 100px);
+  --home-action-size: 17px;
+  --home-action-height: 70px;
+  --home-action-pad: 36px;
+}
+
+html body.country-node-page .base-container:not(.site-footer__inner) {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1920px;
+  margin-inline: auto;
+  padding-inline: var(--home-gutter) !important;
+}
+
+html body.country-node-page :is(
+  .catalog-best-offers, .catalog-map, .catalog-grid, .catalog-intro,
+  .departments-section, .news-section, .catalog-faq
+) {
+  padding-block: var(--home-section-space) !important;
+}
+
+html body.country-node-page .catalog-intro__title[class] {
+  font-size: 38px;
+  line-height: 1.2;
+  letter-spacing: normal;
+}
+html body.country-node-page .catalog-intro__text[class] :is(p, li) {
+  color: #4f4d49;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 27px;
+  letter-spacing: normal;
+}
+html body.country-node-page .catalog-intro__text[class] p {
+  margin-block: 0 24px;
+}
+html body.country-node-page .catalog-intro__text[class] p:last-child { margin-bottom: 0; }
+html body.country-node-page .catalog-map__text[class] {
+  color: #4f4d49;
+  line-height: 33px;
+}
+
+html body.country-node-page :is(
+  .site-footer__callback-btn, .hero-filter-modal__apply
+)[class] {
+  box-sizing: border-box;
+  border-radius: 1px;
+  height: var(--home-action-height);
+  min-height: var(--home-action-height);
+  padding-block: 0;
+  padding-inline: var(--home-action-pad);
+  font-family: "Tilda Sans", "Tilda Sans Fallback", system-ui, sans-serif;
+  font-size: var(--home-action-size);
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+html body.country-node-page .site-footer__callback-btn[class] {
+  width: max-content;
+  max-width: 100%;
+}
+html body.country-node-page :is(
+  .catalog-consultation__submit, .catalog-contact__submit
+)[class] { padding-block: 0; }
+html body.country-node-page .catalog-intro__toggle[class] {
+  box-sizing: border-box;
+  min-height: 44px;
+  padding: 8px 0;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: .12em;
+  color: #8b1d25;
+}
+
+html body.country-node-page :is(
+  .catalog-consultation__method, .catalog-contact__method
+)[class] {
+  box-sizing: border-box;
+  border-radius: 1px;
+  min-height: 46px;
+  height: 46px;
+  padding: 10px 8px;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+html body.country-node-page .catalog-feedback-modal .feedback-modal__channels {
+  border-bottom: 0;
+  gap: 8px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+html body.country-node-page .catalog-feedback-modal .feedback-modal__channels button {
+  box-sizing: border-box;
+  border: 1px solid #8b8986;
+  border-radius: 1px;
+  margin: 0;
+  min-height: 46px;
+  height: 46px;
+  padding: 10px 8px;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.1;
+  white-space: nowrap;
+}
+html body.country-node-page .catalog-feedback-modal .feedback-modal__channels button[aria-pressed="true"] {
+  background: #f9f3f3;
+  border-color: #8b1d25;
+  color: #8b1d25;
+}
+html body.country-node-page .catalog-feedback-modal .feedback-modal__submit {
+  box-sizing: border-box;
+  border-radius: 1px;
+  height: 64px;
+  min-height: 64px;
+  padding: 0 36px;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+@media (min-width: 1441px) {
+  html body.country-node-page { --home-action-size: 19px; --home-action-pad: 47px; }
+  html body.country-node-page .catalog-intro__title[class] { font-size: 44px; }
+  html body.country-node-page .catalog-feedback-modal .feedback-modal__submit {
+    font-size: 19px;
+    padding-inline: 47px;
+  }
+  html body.country-node-page .catalog-consultation__method[class],
+  html body.country-node-page .catalog-contact__method[class] { font-size: 17px; }
+  html body.country-node-page .catalog-best-offers__header[class] > .catalog-section-eyebrow[class] { margin-bottom: -10px; }
+  html body.country-node-page .catalog-faq__inner[class] > .catalog-section-eyebrow[class] { margin-bottom: -15px; }
+}
+
+@media (min-width: 1921px) {
+  html body.country-node-page { --home-gutter: 0px; }
+}
+
+@media (max-width: 1024px) {
+  html body.country-node-page { --kit-eyebrow-size: 12px; --kit-eyebrow-gap: 12px; }
+  html body.country-node-page :is(.catalog-section-eyebrow, .catalog-intro__eyebrow, .news-section__eyebrow)[class] {
+    font-size: 12px;
+    line-height: 14.4px;
+  }
+  html body.country-node-page .catalog-feedback-modal .feedback-modal__channels {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 541px) and (max-width: 1024px) {
+  html body.country-node-page .catalog-best-offers__header[class] > .catalog-section-eyebrow[class] { margin-bottom: -16px; }
+  html body.country-node-page .catalog-intro__content[class] > .catalog-intro__eyebrow[class] { margin-bottom: -12px; }
+  html body.country-node-page .departments-section__heading[class] > .catalog-section-eyebrow[class] { margin-bottom: 0; }
+  html body.country-node-page .news-section__header[class] > .news-section__eyebrow[class] { margin-bottom: -3px; }
+  html body.country-node-page .catalog-faq__inner[class] > .catalog-section-eyebrow[class] { margin-bottom: -20px; }
+}
+
+@media (min-width: 541px) and (max-width: 640px) {
+  html body.country-node-page .catalog-intro__content[class] > .catalog-intro__eyebrow[class] { margin-bottom: -4px; }
+}
+
+@media (max-width: 540px) {
+  html body.country-node-page {
+    --home-section-space: 48px;
+    --home-gutter: 22px;
+    --home-action-size: 18px;
+    --home-action-height: 58px;
+    --home-action-pad: 24px;
+  }
+  html body.country-node-page .catalog-intro__title[class] { font-size: 22px; }
+  html body.country-node-page .catalog-intro__text[class] :is(p, li) {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  html body.country-node-page .catalog-intro__text[class] p { margin-bottom: 16px; }
+  html body.country-node-page .catalog-map__text[class] { line-height: 21px; }
+  html body.country-node-page .catalog-intro__toggle[class] { font-size: 12px; }
+  html body.country-node-page :is(.catalog-consultation__method, .catalog-contact__method)[class] { font-size: 18px; }
+  html body.country-node-page .site-footer__callback-btn[class] { width: 100%; }
+  html body.country-node-page .catalog-feedback-modal .feedback-modal__channels button { font-size: 18px; }
+  html body.country-node-page .catalog-feedback-modal .feedback-modal__submit {
+    font-size: 18px;
+    height: 58px;
+    min-height: 58px;
+    padding-inline: 24px;
+  }
+}

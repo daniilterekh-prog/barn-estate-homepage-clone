@@ -1,0 +1,17 @@
+{
+  "id": "09-node-news",
+  "title": "Наши новости",
+  "kind": "node-news",
+  "html": "../../html/09-node-news.html",
+  "css": "../../css/09-node-news.css",
+  "js": "../../js/09-node-news.js",
+  "preview": "index.html",
+  "dependencies": [
+    "../../css/page.css",
+    "../../js/blocks-runtime.js",
+    "../../assets/",
+    "../../js/expert-quiz.js"
+  ],
+  "assets": "assets.json",
+  "integrationMode": "portable-adapter"
+}

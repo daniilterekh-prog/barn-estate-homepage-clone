@@ -1,0 +1,432 @@
+@font-face{font-family:'Tilda Sans Fallback';src:local('Arial'),local('Helvetica Neue'),local('Helvetica');size-adjust:92.84%;ascent-override:102.43%;descent-override:26.82%;line-gap-override:0%}@font-face{font-family:'Tilda Sans';src:url("../assets/f0f2c165784c7234.woff2") format('woff2');font-weight:300;font-style:normal;font-display:swap}@font-face{font-family:'Tilda Sans';src:url("../assets/2670dad44ca6c2a1.woff2") format('woff2');font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:'Tilda Sans';src:url("../assets/f716269e361f4665.woff2") format('woff2');font-weight:500;font-style:normal;font-display:swap}html,body{font-family:'Tilda Sans','Tilda Sans Fallback',system-ui,sans-serif}@keyframes floating-expert-enter-553bd346{to{opacity:1;transform:translateY(0)}}@keyframes floating-expert-pulse-553bd346{0%,to{box-shadow:0 22px 62px #12121233}42%{box-shadow:0 22px 62px #12121233,0 0 0 12px #12121214}58%{box-shadow:0 26px 74px #1212123d,0 0 0 22px #12121200}}
+@charset "UTF-8";
+@charset "UTF-8";@font-face{font-display:swap;font-family:Tilda Sans;font-style:normal;font-weight:300;src:url("../assets/f0f2c165784c7234.woff2") format("woff2")}@font-face{font-display:swap;font-family:Tilda Sans;font-style:normal;font-weight:400;src:url("../assets/2670dad44ca6c2a1.woff2") format("woff2")}@font-face{font-display:swap;font-family:Tilda Sans;font-style:normal;font-weight:500;src:url("../assets/f716269e361f4665.woff2") format("woff2")}@font-face{font-display:swap;font-family:Tilda Sans;font-style:normal;font-weight:600;src:url("../assets/3814f8c444073262.woff2") format("woff2")}@font-face{font-display:swap;font-family:Tilda Sans;font-style:normal;font-weight:700;src:url("../assets/a2690df6fe834806.woff2") format("woff2")}@font-face{font-display:swap;font-family:Tilda Sans;font-style:normal;font-weight:800;src:url("../assets/726a3a878465a590.woff2") format("woff2")}@font-face{font-display:swap;font-family:Tilda Sans;font-style:normal;font-weight:900;src:url("../assets/73abed6708c43912.woff2") format("woff2")}@font-face{ascent-override:102.43%;descent-override:26.82%;font-family:Tilda Sans Fallback;line-gap-override:0%;size-adjust:92.84%;src:local("Arial"),local("Helvetica Neue"),local("Helvetica")}html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}a{background-color:transparent}a:active,a:hover{outline:0}img{border:0}svg:not(:root){overflow:hidden}html{color:#1e1e1e;font-size:16px;font-weight:400;line-height:1;scroll-behavior:smooth;scrollbar-gutter:stable}html,html body{font-family:Tilda Sans,Tilda Sans Fallback,system-ui,-apple-system,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif}html body{height:100%;margin:0;text-rendering:optimizeLegibility;width:100%;-webkit-font-smoothing:antialiased;background-color:#fff}*,:after,:before{box-sizing:border-box}*{-webkit-tap-highlight-color:rgba(0,0,0,0);outline:none}ul{list-style:none;margin:0;padding:0}.page{margin-bottom:80px}main{min-width:0}.base-container{margin:0 auto;max-width:1920px;padding-inline:100px;width:100%}@media(max-width:1920px){.base-container{padding-inline:calc(-26.66667px + 6.59722vw)}}@media(max-width:768px){.base-container{padding-inline:calc(8.94118px + 1.96078vw)}}h1,h2,h3,h4,h5,p{margin:0}img{height:auto;max-width:100%}a{color:currentColor;text-decoration:none}a,a:active,a:focus{outline:none}a:focus-visible,button:focus-visible{outline:2px solid rgba(20,71,230,.45);outline-offset:2px}@keyframes splide-loading{0%{transform:rotate(0)}to{transform:rotate(1turn)}}@keyframes fade-in{0%{opacity:0}to{opacity:1}}@keyframes fade-out{0%{opacity:1}to{opacity:0}}@keyframes fadeOut{0%{opacity:1}to{opacity:0}}@keyframes fadeInDown{0%{opacity:0;transform:translate3d(0,-100%,0)}to{opacity:1;transform:none}}@keyframes fadeInUp{0%{opacity:0;transform:translate3d(0,100%,0)}to{opacity:1;transform:none}}.department-card[data-v-46ed93c9]{border-radius:4px;color:#fff;display:block;height:100%;min-height:399px;overflow:hidden;position:relative;text-decoration:none}@media screen and (max-width:1440px){.department-card[data-v-46ed93c9]{min-height:340px}}@media screen and (max-width:1024px){.department-card[data-v-46ed93c9]{min-height:280px}}@media screen and (max-width:540px){.department-card[data-v-46ed93c9]{min-height:220px}}@media(min-width:1025px){.department-card:hover .department-card__image[data-v-46ed93c9]{transform:scale(1.04)}.department-card:hover .department-card__overlay[data-v-46ed93c9]{background:#0000005c}}.department-card__image[data-v-46ed93c9]{display:block;height:100%;inset:0;-o-object-fit:cover;object-fit:cover;-o-object-position:center;object-position:center;position:absolute;transition:transform .6s ease;width:100%}.department-card__overlay[data-v-46ed93c9]{background:#00000047;inset:0;position:absolute;transition:background-color .35s ease}.department-card__content[data-v-46ed93c9]{align-items:center;display:flex;flex-direction:column;gap:2px;justify-content:flex-end;min-height:inherit;padding:40px;position:relative;z-index:1}@media screen and (max-width:1440px){.department-card__content[data-v-46ed93c9]{padding:28px}}@media screen and (max-width:540px){.department-card__content[data-v-46ed93c9]{padding:20px}}.department-card__title[data-v-46ed93c9]{font-size:25px;font-weight:300;letter-spacing:.08em;line-height:1.15;margin:0;max-width:18ch;text-align:center;text-transform:uppercase}@media screen and (max-width:1440px){.department-card__title[data-v-46ed93c9]{font-size:22px}}@media screen and (max-width:540px){.department-card__title[data-v-46ed93c9]{font-size:20px}}.department-card__link[data-v-46ed93c9]{align-items:center;border-bottom:1px solid #fff;color:#fff;display:inline-flex;font-size:14px;letter-spacing:.12em;line-height:1.4;margin-top:15px;opacity:.92;padding-bottom:7px;text-decoration:none;text-transform:uppercase}.department-card__link-icon[data-v-46ed93c9]{display:inline-flex;flex:none;height:15px;margin-left:12px;width:15px}.department-card__link-icon svg[data-v-46ed93c9]{display:block;height:100%;width:100%}.departments-section[data-v-959976f2]{background:#fff;padding-block:75px}@media screen and (max-width:1440px){.departments-section[data-v-959976f2]{padding-block:60px}}@media screen and (max-width:540px){.departments-section[data-v-959976f2]{padding-block:35px}}.departments-section__inner[data-v-959976f2]{display:flex;flex-direction:column;gap:50px}@media screen and (max-width:1440px){.departments-section__inner[data-v-959976f2]{gap:40px}}@media screen and (max-width:540px){.departments-section__inner[data-v-959976f2]{gap:24px}}@media screen and (max-width:768px){.departments-section__inner[data-v-959976f2]{padding-inline:20px}}.departments-section__header[data-v-959976f2]{align-items:center;display:flex;gap:20px;justify-content:center}.departments-section__heading[data-v-959976f2]{align-items:center;display:flex;flex-direction:column;gap:12px;text-align:center}.departments-section__title[data-v-959976f2]{color:#1e1e1e;font-size:44px;font-weight:300;line-height:1.2;margin:0;text-transform:uppercase}@media screen and (max-width:1440px){.departments-section__title[data-v-959976f2]{font-size:38px}}@media screen and (max-width:540px){.departments-section__title[data-v-959976f2]{font-size:22px}}.departments-section__grid[data-v-959976f2]{display:grid;gap:2px;grid-template-columns:repeat(6,minmax(0,1fr));list-style:none;margin:0;padding:0}@media screen and (max-width:1024px){.departments-section__grid[data-v-959976f2]{gap:12px;grid-template-columns:1fr}}.departments-section__item[data-v-959976f2]{grid-column:span var(--departments-item-span,3)}@media screen and (max-width:1024px){.departments-section__item[data-v-959976f2]{grid-column:auto}}@keyframes partners-marquee-right-923dc07c{0%{transform:translate3d(-50%,0,0)}to{transform:translateZ(0)}}@keyframes partners-marquee-left-923dc07c{0%{transform:translateZ(0)}to{transform:translate3d(-50%,0,0)}}.page[data-v-b844e3a0]{background:#fff;margin-bottom:0;min-height:100%}.catalog-page-section[data-v-b844e3a0]{scroll-margin-top:calc(var(--catalog-sticky-nav-top, 112px) + var(--catalog-sticky-nav-height, 56px) + 16px)}@keyframes floating-expert-enter-553bd346{to{opacity:1;transform:translateY(0)}}@keyframes floating-expert-pulse-553bd346{0%,to{box-shadow:0 22px 62px #12121233}42%{box-shadow:0 22px 62px #12121233,0 0 0 12px #12121214}58%{box-shadow:0 26px 74px #1212123d,0 0 0 22px #12121200}}.layout[data-v-47bd53e9]{display:flex;flex-direction:column;max-width:100%;min-height:100vh;min-width:0;overflow-x:clip;position:relative}.layout__content[data-v-47bd53e9]{flex:1;max-width:100%;min-width:0;overflow-x:clip;--layout-header-offset-top:32px}@media screen and (max-width:540px){.layout__content[data-v-47bd53e9]{--layout-header-offset-top:16px}}
+
+/*
+ * BARNES transferable UI layer for the Kurortnaya page.
+ * Baseline: ../reference-ui.md (2026-10-07).
+ * Project/offer cards are intentionally outside this layer.
+ */
+
+:root {
+  --kit-font: "Tilda Sans", "Tilda Sans Fallback", system-ui, sans-serif;
+  --kit-text: #1e1e1e;
+  --kit-text-secondary: #4f4d49;
+  --kit-text-muted: #656462;
+  --kit-burgundy: #8b1d25;
+  --kit-focus-accent: var(--kit-burgundy);
+  --kit-border: #e4e4e4;
+  --kit-h2-standard-size: 38px;
+  --kit-h2-standard-leading: 1.2;
+  --kit-h2-compact-size: 38px;
+  --kit-h2-compact-leading: 1;
+  --kit-h2-editorial-size: 44px;
+  --kit-h2-editorial-leading: 0.98;
+  --kit-eyebrow-size: 14px;
+  --kit-eyebrow-leading: 1.15;
+  --kit-eyebrow-gap: 25px;
+  --kit-action-height: 70px;
+  --kit-action-size: 17px;
+  --kit-action-padding: 36px;
+}
+
+html,
+body {
+  color: var(--kit-text);
+  font-family: var(--kit-font);
+}
+
+/* Headings outside the project-card component family. */
+
+/* Catalog content-page display follows the approved content H1 contract. */
+
+/* Long-form BARNES copy uses heading roles without introducing bold weights. */
+
+/* CTA portraits: Denis stays natural; the layout, not the photograph, is mirrored. */
+
+/* FloatingExpert contract. */
+
+/* Mobile hero contacts remain distinct from the sticky request-form button. */
+
+/* Compact ContactAction used as a channel selector inside both forms. */
+
+/* FAQ body typography follows the shared text roles at every breakpoint. */
+
+html body .department-card__title[class] {
+  font-weight: 400;
+}
+
+html body .department-card__link[class] {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+html body .catalog-section-eyebrow[class] {
+  color: var(--kit-text-secondary);
+  font-size: var(--kit-eyebrow-size);
+  font-weight: 400;
+  letter-spacing: 0.12em;
+  line-height: var(--kit-eyebrow-leading);
+  margin: 0 0 var(--kit-eyebrow-gap);
+  text-transform: uppercase;
+}
+
+/* Parent layouts already contribute their own row gaps. Offset those gaps so
+   the visible eyebrow-to-title rhythm matches the approved 25px contract. */
+
+html body .departments-section__heading[class] > .catalog-section-eyebrow[class] {
+  margin-bottom: 13px;
+}
+
+@media (max-width: 540px) {
+
+  html body .departments-section__heading[class] > .catalog-section-eyebrow[class] {
+    margin-bottom: 0;
+  }
+}
+
+/* Shared rectangular action contract. Card actions are deliberately excluded. */
+
+/* Filter controls: the UI kit defines these separately from rectangular CTAs. */
+
+@media (min-width: 1441px) {
+  :root {
+    --kit-h2-standard-size: 44px;
+    --kit-h2-compact-size: 44px;
+    --kit-action-size: 19px;
+    --kit-action-padding: 47px;
+  }
+}
+
+@media (max-width: 540px) {
+  :root {
+    --kit-h2-standard-size: 22px;
+    --kit-h2-compact-size: 22px;
+    --kit-h2-editorial-size: 22px;
+    --kit-h2-editorial-leading: 1.2;
+    --kit-eyebrow-size: 12px;
+    --kit-eyebrow-leading: 1.2;
+    --kit-eyebrow-gap: 12px;
+    --kit-action-height: 58px;
+    --kit-action-size: 18px;
+    --kit-action-padding: 24px;
+  }
+}
+
+/* Header contract: compact owner-style navigation with direct contact channels. */
+
+@media (hover: hover) and (pointer: fine) {
+
+  /* Interactive accents are burgundy; yellow and gold are prohibited. */
+}
+
+/* Secondary header: copied from the approved partners-page contract. */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
+
+/* ListingCard contract: shared geometry for project and secondary-lot modes. */
+
+/* Filter layout: "lower lines" design from the approved mobile reference. */
+
+/* One chevron treatment at every breakpoint, matching the filter controls. */
+
+@media (max-width: 540px) {
+
+  /* Anchor every mobile arrow to its control, independently of text/padding. */
+}
+
+/* City-specific data/layout exceptions to the FirstDegreeNode reference. */
+/* Reserve exactly one title line in both listing modes; leave launch cards alone. */
+/* Older city source uses a different chevron primitive; match the resort's strokes. */
+/* The current front original no longer shows this legacy link inside the modal. */
+/* Align the visible photograph, not only its contain-sized image box. */
+/* City source portraits are composed photographs, not the resort's cutout. */
+/* The one-column tablet form sits over the quiet interior, not the portrait. */
+/* RequestModal keeps the reference geometry; crop the city portrait from its own photograph. */
+
+/* Shared owner header template. Source: prodazha_sobstvennikam, 2026-10-12.
+ * Opt in with body.barnes-header-template. Only page anchors/content differ.
+ * Kurortnaya deliberately retains site-header--no-nav (no directions row).
+ */
+body.barnes-header-template { --owner-sale-ink: #1e1e1e; --owner-sale-brand: #8b1d25; --owner-sale-border: rgba(30,30,30,.14); }
+@media (max-width:540px) {
+  /* Keep the contact dropdown clickable; only the anchor list scrolls. */
+}
+
+/* Catalogue composition using the approved homepage search, choice and spacing roles. */
+/* One continuous strip echoes the homepage search bar; labels carry the hierarchy. */
+/* Optional collections sit between the search and the result controls. */
+/* Dropdown choices use the quiet selected state from the kit's quiz choices. */
+
+/* Two quick choices; advanced criteria stay in the shared full form. */
+
+/* Restore all four quick parameters on phones in a shared 2x2 grid. */
+
+/* Resort integration: same reference geometry, isolated from cards and headers. */
+
+/* Light full form copied from catalogue role overrides. */
+/* Map quick controls share the same boxed geometry; the map itself is unchanged. */
+/* Measured full-dialog geometry and typography from the reference. */
+/* Legacy chip labels must not paint a second dark rectangle over the selection. */
+
+/* Only plumbing for the packaged static map and native standalone controls. */
+/* Native Splide no longer supplies its containing height after vendor removal. */
+
+/* Approved homepage UI-kit v1.0.0, 2026-11-01. City data/cards/H1 stay city-specific. */
+body.city-home-kit {--resort-content-gap:var(--city-header-gap,40px);}
+body.city-home-kit {
+  --city-section-space:clamp(72px,6vw,100px);
+  --city-heading:38px;
+  --city-eyebrow:14px;
+  --city-eyebrow-line:16.1px;
+  --city-eyebrow-gap:25px;
+  --city-action-size:17px;
+  --city-action-pad:36px;
+  --city-action-height:70px;
+  --city-header-gap:40px;
+}
+html body.city-home-kit :is(.catalog-best-offers__header,.news-section__header,.departments-section__header)[class] {margin-bottom:var(--city-header-gap);}
+html body.city-home-kit .department-card__title[class] {font-weight:300!important;}
+@media(min-width:1441px) {
+ body.city-home-kit {--city-heading:44px;--city-action-size:19px;--city-action-pad:47px;}
+}
+@media(min-width:1921px) {
+ html body.city-home-kit .base-container[class] {max-width:1920px;padding-inline:0!important;}
+}
+@media(max-width:1024px) {
+ body.city-home-kit {--city-eyebrow:12px;--city-eyebrow-line:14.4px;--city-eyebrow-gap:12px;}
+}
+@media(max-width:540px) {
+ body.city-home-kit {
+   --city-section-space:48px;--city-heading:22px;--city-action-height:58px;
+   --city-action-size:18px;--city-action-pad:24px;--city-header-gap:28px;
+ }
+ html body.city-home-kit .base-container[class] {padding-inline:22px!important;}
+}
+html body.city-home-kit :is(button,a,input,select,textarea):focus-visible {outline:2px solid #8b1d25;outline-offset:3px;}
+@media(prefers-reduced-motion:reduce) {
+ html body.city-home-kit *,html body.city-home-kit *::before,html body.city-home-kit *::after {
+   scroll-behavior:auto!important;transition-duration:.01ms!important;animation-duration:.01ms!important;
+ }
+}
+
+/* Keep the two-word brand together without preventing the rest of a sentence from wrapping. */
+
+/* CTA background layers span the section; form layout stays on its existing grid. */
+
+/* Shared laptop hero policy. Primary heroes are 200px shorter; typography stays in the page kit. */
+@layer barn-hero-laptop {
+ @media (min-width:1025px) and (max-width:1919px), (min-width:1920px) and (max-height:1000px) {
+  body {--hero-laptop-main:620px;--hero-laptop-node:444px;--hero-laptop-lot:520px;}
+  @media(min-width:1441px){body{--hero-laptop-main:760px;--hero-laptop-node:494px;--hero-laptop-lot:650px;}}
+  body[data-node-shell]{--hero-laptop-node:var(--hero-laptop-main);}
+ }
+}
+
+/* Header derived from owner-sale; regenerate with main-site/tools/sync-node-shell.cjs. */
+
+/* Media header v1.1.0, mobile sticky menu 2026-11-04. Only headers opt into this component. */
+html body.barnes-media-header {--mh-gutter:calc(-26.66667px + 6.59722vw);--mh-pad:32px;--mh-logo:48px;--mh-panel-offset:41px;--mh-ink:#1e1e1e;}
+/* Owner/ambassador anchors retain their nodes, text and handlers. Only center/right change. */
+@media(min-width:1921px) {html body.barnes-media-header {--mh-gutter:0px;}}
+@media(max-width:768px) {html body.barnes-media-header {--mh-gutter:calc(8.94118px + 1.96078vw);}}
+@media(max-width:540px) {
+ html body.barnes-media-header {--mh-pad:16px;--mh-logo:36px;--mh-panel-offset:25px;}
+}
+
+/* Media has WA / Telegram / MAX above hero, WA / MAX / Telegram after hero. */
+
+/* One mobile row: menu / logo / contacts. Page anchors remain available on desktop. */
+
+/* Identical glyph inset on Media and owner/partner headers; retain the 44px touch target. */
+
+/* Direction pages use the burger only, without a second navigation row. */
+
+/* The sticky mobile bar owns its centered logo, even when legacy node CSS hid it. */
+
+/* Five direction pages share owner-sale header/hero metrics. Page data stays local. */
+@layer barn-node-shell {
+ html body[data-node-shell] {--node-hero-height:820px;--node-title-lines:1;}
+ @media(min-width:1441px){html body[data-node-shell]{--node-hero-height:960px;}}
+ @media(max-width:767px){html body[data-node-shell]{--node-title-lines:2;}}
+ @media(max-width:540px){html body[data-node-shell]{--node-hero-height:560px;}}
+ @media(max-width:389px){html body[data-node-shell]{--node-title-lines:3;}}
+ /* The international page already suppresses its legacy quick-link content. */
+}
+
+/* Vertical roles from the approved home-spacing.css / UI-kit v1.0.3.
+ * Scope: five direction nodes. Each interval is owned once, never margin + gap. */
+@layer barn-node-spacing {
+ html body[data-node-shell] {
+  --node-section-space:clamp(72px,6vw,100px);
+  --node-brow-gap:25px;--node-heading-content:40px;--node-copy-gap:24px;
+ }
+ @media(max-width:1024px){html body[data-node-shell]{--node-brow-gap:12px;}}
+ @media(max-width:540px){html body[data-node-shell]{--node-section-space:48px;--node-heading-content:28px;--node-copy-gap:16px;}}
+ /* Start-sales: the slider is a sibling of the heading container. */
+ /* Map: description belongs to the heading, then one content interval. */
+ /* Catalog controls keep their own existing internal intervals. */
+ /* Editorial intro: eyebrow -> H2 -> description, without a second flex gap. */
+ /* Directions/news: the parent gap owns heading -> cards. */
+ /* FAQ has no separate heading wrapper: margin belongs to the answer grid. */
+ /* Consultation owns its spacing inside the photo. Outer padding exposes dark bands. */
+ /* Photo CTA: retain the card's inner grid, normalize heading and form spacing. */
+}
+/* Editorial images use one frame and end at the introductory copy, above its action. */
+
+/* Match apparent portrait distance; the office background still reaches every CTA edge. */
+
+/* FAQ columns share question/answer tracks, so wrapping and expansion keep paired rows aligned. */
+
+/* Final contact CTA: city layout/fields, shared by all five nodes.
+ * Original source: city/css/document-desktop.css; local backgrounds remain untouched. */
+
+/* Generated from the approved home reference by sync-node-recommendations.cjs. */
+/* Only node-specific integration. Card presentation is generated from the home source. */
+@layer barn-node-recommendations {
+ /* Splide's live horizontal track padding is zero in the home instance. */
+}
+
+/* Generated from the current katalog-nedvizhimosti filter sources; see sync-node-filters.cjs. */
+@layer barn-node-filters {
+/* kit/_shared/source.css */
+
+/* kit/_shared/ui-kit.css */
+
+/* kit/_shared/listing-mode.css */
+
+/* listing.css */
+
+/* kit-v1/home-typography.css */
+
+
+/* kit-v1/home-spacing.css */
+
+
+/* kit-v1/home-buttons.css */
+
+
+/* catalog-kit-v1.css */
+
+/* kit/filters-modal/filters-modal.css */
+
+/* kit/quick-filter-dropdowns/quick-filters.css */
+
+/* catalog-filters.css */
+
+/* kit/quick-filter-dropdowns/brand-filters.css */
+
+/* map-view/reference-map.css */
+
+/* catalog-map.css */
+
+}
+/* Integration with existing node data/controllers; shared catalogue presentation above. */
+@layer barn-node-filters {
+ html body[data-node-shell] {--node-filter-size:18px;}
+ @media(min-width:1441px){html body[data-node-shell]{--node-filter-size:20px;}}
+ @media(max-width:540px){html body[data-node-shell]{--node-filter-size:17px;}}
+}
+/* Map shell follows the Resort overlay; filter captions share the same left edge. */
+/* Give the desktop listing sort its own room inside the right page gutter. */
+/* Map parameters share listing state; the deal uses the listing's segmented control. */
+
+/* Small decorative up/down SVG for sorting; kept outside mutable button captions. */
+/* Mobile count is a real grid item; native nodes use a class instead of #results-count. */
+
+@layer barn-layout-grid {
+/* Horizontal grid from the approved homepage home-spacing.css, UI-kit v1.0.3.
+ * One inset per content frame. Full-bleed photos/CTA, split-form interiors and
+ * the resort FAQ's explicitly retained composition are separate contracts. */
+:root {
+  --barn-page-gutter: clamp(24px, calc(-26.66667px + 6.59722vw), 100px);
+}
+@media(max-width:540px) { :root { --barn-page-gutter:22px; } }
+@media(min-width:1921px) { :root { --barn-page-gutter:0px; } }
+/* Hero and header must follow the same grid as the page content. */
+html body.barnes-media-header { --mh-gutter:var(--barn-page-gutter)!important; }
+/* The footer used to add a section gutter and a second container gutter. */
+/* City/international exports still carried older container breakpoints. */
+html body:is(.international-source-page,.city-home-kit) .base-container {
+  box-sizing:border-box!important;width:100%!important;max-width:1920px!important;
+  margin-inline:auto!important;padding-inline:var(--barn-page-gutter)!important;
+}
+/* These two lot-page frames were missing the shared content cap. */
+/* Keep text over project photos on the common grid; photos stay full bleed. */
+
+/* The photographic consultation keeps its full-bleed media; only its content
+ * inset follows the page grid. A named layer also isolates the old generated
+ * CTA adapter's high-specificity padding rules. */
+
+/* Mobile newsletter photography spans the canvas; only the copy owns gutters. */
+
+}
+
+/* Shared page navigation; deliberately outside the header and normal flow. */
+/* Keep the original footprint so neither hero content nor the header moves. */
+
+/* Canonical footer text-link states for all thirteen current BARN Estate pages. */
+
+/* UI-kit 1.0.3 compact chips and existing node section/heading roles. */
+
+/* Generated from approved home NewsSection by sync-node-news.cjs. */
+
+/* City quiz styles, shared once across five nodes. */
+/* Use the canonical semantic grays, rather than legacy low-opacity placeholders. */
+/* Keep the footer's primary action reachable while its button is on screen. */
+
+/* Homepage quiz: new controls inherit the owner/ambassador reference palette. */
+
+/* Keep one dialog frame through every quiz step; only the body scrolls. */
+
+/* Narrow quiz column: keep channel labels readable, including phone landscape. */
+
+/* One geometry/type contract per button role. Preserve fill/outline/inverse colors. */
+/* Compact choices retain a smaller footprint, sharing radius and regular weight. */
+
+/* Rectangular quiz choices use the same 1px corner as all CTA buttons. */
+
+/* Shared expert dialog, based on the approved homepage quiz geometry. */
+@layer barn-node-spacing {
+ /* Explicit grid tracks prevent legacy flex alignment from shrinking different dialogs. */
+}
+
+/* Generated by sync-node-footer.cjs from approved homepage. */
+
+
+/* Filter-only source rules from approved Kurortnaya, 2026-10-12. */
+
+/* Geometry, colors and markup come from the original source.css modal contract. */
+
+/* Dropdown markup/geometry follow front.barnes.vsavr.ru's catalog quick filters. */
+/* Unscoped source popup primitives are absent from the older city snapshot. */
+
+/* Native checkbox semantics; BARNES inline-filter typography and wine state. */
+/* Account for text centering inside different-height controls, not only grid-gap. */
+
+/* Footer contract from prodazha_sobstvennikam/owner-sale.css.
+   Base snapshot rules use the same data-v-6eb18211 scope on both pages. */
+
+/* Shared page navigation; deliberately outside the header and normal flow. */
+/* Keep the original footprint so neither hero content nor the header moves. */
+
+
+/* Filter-only source rules from approved Kurortnaya, 2026-10-12. */
+
+/* Geometry, colors and markup come from the original source.css modal contract. */
+
+/* Dropdown markup/geometry follow front.barnes.vsavr.ru's catalog quick filters. */
+/* Unscoped source popup primitives are absent from the older city snapshot. */
+
+/* Native checkbox semantics; BARNES inline-filter typography and wine state. */
+/* Account for text centering inside different-height controls, not only grid-gap. */

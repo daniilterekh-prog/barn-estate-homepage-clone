@@ -1,0 +1,17 @@
+{
+  "id": "06-catalog-intro",
+  "title": "Зарубежная недвижимость для жизни и инвестиций",
+  "kind": "catalog-intro",
+  "html": "../../html/06-catalog-intro.html",
+  "css": "../../css/06-catalog-intro.css",
+  "js": "../../js/06-catalog-intro.js",
+  "preview": "index.html",
+  "dependencies": [
+    "../../css/page.css",
+    "../../js/blocks-runtime.js",
+    "../../assets/",
+    "../../js/expert-quiz.js"
+  ],
+  "assets": "assets.json",
+  "integrationMode": "portable-adapter"
+}

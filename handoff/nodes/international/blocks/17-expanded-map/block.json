@@ -1,0 +1,17 @@
+{
+  "id": "17-expanded-map",
+  "title": "Карта с фильтрами и карточками",
+  "kind": "expanded-map",
+  "html": "../../html/17-expanded-map.html",
+  "css": "../../css/17-expanded-map.css",
+  "js": "../../js/17-expanded-map.js",
+  "preview": "index.html",
+  "dependencies": [
+    "../../css/page.css",
+    "../../js/blocks-runtime.js",
+    "../../assets/",
+    "../../js/expert-quiz.js"
+  ],
+  "assets": "assets.json",
+  "integrationMode": "coupled-page-state"
+}

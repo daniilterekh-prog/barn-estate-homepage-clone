@@ -1,0 +1,117 @@
+/* Kurortnaya's four-field quick-filter rhythm, adapted to country values. */
+html body.country-node-page .catalog-mode-toolbar .catalog-mode-filters.catalog-quick-filters {
+  grid-template-columns:repeat(4,minmax(0,1fr));
+}
+html body.country-node-page .catalog-mode-toolbar .catalog-mode-filters .catalog-quick-filters__item[class] {
+  grid-column:auto;
+  grid-row:auto;
+  min-width:0;
+}
+html body.country-node-page .catalog-mode-toolbar .catalog-quick-filters__button {
+  min-width:0;
+  position:relative;
+}
+html body.country-node-page .catalog-mode-toolbar .catalog-quick-filters__chevron {
+  box-sizing:border-box;
+  height:10px;
+  margin:0;
+  position:absolute;
+  right:16px;
+  top:calc(50% - 3px);
+  transform:rotate(45deg);
+  width:10px;
+}
+html body.country-node-page .catalog-mode-toolbar .catalog-grid__sort::after {
+  top:50%;transform:translateY(-50%) rotate(45deg);
+}
+html body.country-node-page .catalog-mode-toolbar .catalog-grid__sort-select.country-sort-trigger {
+  border:0;
+  background:transparent;
+  padding:8px 48px 8px 8px;
+  min-height:40px;
+  font:inherit;
+  color:#4f4d49;
+  text-align:center;
+  cursor:pointer;
+}
+html body.country-node-page select[data-country-enhanced][hidden] { display:none!important; }
+.country-reference-dropdown[hidden] { display:none!important; }
+html body.country-node-page .country-reference-dropdown {
+  position:fixed;
+  z-index:10050;
+  box-sizing:border-box;
+  max-width:calc(100vw - 32px);
+  box-shadow:none;
+  color:#4f4d49;
+  font-family:"Tilda Sans",sans-serif;
+  background:#fff;
+  border:1px solid #e5e5e5;
+  padding:13px;
+}
+html body.country-node-page .country-reference-dropdown .catalog-quick-filters__dropdown-header {
+  display:flex;align-items:center;justify-content:space-between;min-height:30px;
+  font-family:inherit;font-size:17px;font-weight:400;line-height:1.3;
+}
+html body.country-node-page .country-reference-dropdown .catalog-quick-filters__dropdown-close {background:transparent;border:0;color:#1e1e1e;cursor:pointer;font:300 24px "Tilda Sans",sans-serif;}
+html body.country-node-page .country-reference-dropdown .catalog-quick-filters__options {display:flex;flex-direction:column;overflow-y:auto;overscroll-behavior:contain;}
+html body.country-node-page .country-reference-dropdown .catalog-quick-filters__option {
+  font-family:inherit;font-size:17px;font-weight:300;line-height:1.3;
+  display:block;width:100%;border:0;background:#fff;color:#4f4d49;text-align:left;cursor:pointer;
+  min-height:40px;padding:8px 10px;white-space:normal;
+}
+html body.country-node-page .country-reference-dropdown .catalog-quick-filters__option:is(.is-selected,:hover) {
+  background:#8b1d25;color:#fff;
+}
+html body.country-node-page .country-reference-dropdown :focus-visible {outline:2px solid #8b1d25;outline-offset:-2px;}
+html body.country-node-page .catalog-mode-toolbar .catalog-quick-filters__button.is-active .catalog-quick-filters__caption {color:#8b1d25;}
+html body.country-node-page .catalog-mode-toolbar .catalog-quick-filters__content {max-width:calc(100% - 24px);}
+html body.country-node-page .catalog-mode-toolbar .catalog-quick-filters__caption {white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+html body.country-node-page .country-brand-filters {
+  display:flex;flex-wrap:wrap;gap:8px 28px;border:0;padding:0;min-width:0;
+  margin:20px 0 0;color:#4f4d49;font-family:"Tilda Sans",sans-serif;font-size:17px;
+  font-weight:300;line-height:1.3;
+}
+.country-brand-filters legend {position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);}
+html body.country-node-page .country-brand-filters label {position:relative;display:inline-flex;align-items:center;gap:10px;min-height:44px;cursor:pointer;}
+html body.country-node-page .country-brand-filters input {position:absolute;opacity:0;width:20px;height:20px;margin:0;}
+html body.country-node-page .country-brand-filters__box {position:relative;pointer-events:none;flex:0 0 20px;width:20px;height:20px;border:1px solid #767470;box-sizing:border-box;}
+.country-brand-filters input:checked + .country-brand-filters__box {background:#8b1d25;border-color:#8b1d25;}
+.country-brand-filters input:checked + .country-brand-filters__box::after {content:"";position:absolute;left:6px;top:3px;width:5px;height:9px;border:solid #fff;border-width:0 1.5px 1.5px 0;transform:rotate(45deg);}
+.country-brand-filters input:focus-visible + .country-brand-filters__box {outline:2px solid #8b1d25;outline-offset:3px;}
+html body.country-node-page .country-brand-filters label:hover {color:#8b1d25;}
+html body.country-node-page .catalog-mode-toolbar .country-brand-filters {grid-column:1/-1;grid-row:3;margin:8px 0 0;}
+@media (min-width:541px) {
+  html body.country-node-page .catalog-mode-toolbar .country-brand-filters {grid-column:1;justify-content:flex-end;}
+  html body.country-node-page .catalog-mode-toolbar .catalog-grid__sort[class] {grid-row:3;grid-column:2;margin-top:8px;}
+}
+@media (min-width:1025px) {
+  html body.country-node-page .catalog-mode-toolbar {grid-template-columns:auto minmax(0,1fr) auto;}
+  html body.country-node-page .catalog-mode-toolbar .catalog-mode-switch {grid-column:1;grid-row:1;}
+  html body.country-node-page .catalog-mode-toolbar .country-brand-filters {grid-column:2;grid-row:1;margin:0;}
+  html body.country-node-page .catalog-mode-toolbar .catalog-grid__sort[class] {grid-column:3;grid-row:1;margin:0;}
+  html body.country-node-page .catalog-mode-toolbar .catalog-mode-filters.catalog-quick-filters {grid-column:1/3;grid-row:2;}
+  html body.country-node-page .catalog-mode-toolbar .catalog-mode-detailed-filters {grid-column:3;grid-row:2;}
+}
+html body.country-node-page .country-map-reference {display:grid;gap:6px 14px;padding:12px 20px 18px;border-top:1px solid #e4e4e4;}
+html body.country-node-page .country-map-expanded .catalog-projects-map__panel [data-country-quick] .catalog-quick-filters__label[data-v-6fd45cc6] {display:none;}
+html body.country-node-page .country-map-expanded .catalog-projects-map__panel [data-country-quick] .catalog-quick-filters__value[data-v-6fd45cc6] {color:#4f4d49;font-size:17px;font-weight:300;line-height:1.3;margin:0;}
+html body.country-node-page .country-map-market {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;}
+html body.country-node-page .country-map-market button {background:#fff;border:0;border-bottom:1px solid #e4e4e4;color:#4f4d49;min-height:48px;padding:8px;text-align:left;font:300 17px "Tilda Sans",sans-serif;cursor:pointer;}
+html body.country-node-page .country-map-market button[aria-pressed="true"] {border-color:#8b1d25;color:#8b1d25;}
+html body.country-node-page .country-map-sort {border-bottom:1px solid #e4e4e4;}
+html body.country-node-page .country-map-sort .country-sort-trigger {background:#fff;border:0;color:#4f4d49;cursor:pointer;min-height:48px;padding:8px;font:300 17px "Tilda Sans",sans-serif;text-align:left;width:100%;}
+html body.country-node-page .country-map-reference .country-brand-filters {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:4px 16px;margin:0;}
+html body.country-node-page .country-map-reference .country-brand-filters label {padding-inline-start:8px;min-width:0;}
+@media (min-width:1441px) {
+  html body.country-node-page .country-reference-dropdown .catalog-quick-filters__dropdown-header,
+  html body.country-node-page .country-reference-dropdown .catalog-quick-filters__option,
+  html body.country-node-page .country-brand-filters {font-size:19px;}
+}
+@media (max-width:540px) {
+  html body.country-node-page .catalog-projects-map__panel:not(.catalog-projects-map__panel--expanded) .country-map-reference {display:none;}
+  html body.country-node-page .catalog-mode-toolbar .catalog-mode-filters.catalog-quick-filters {grid-template-columns:repeat(2,minmax(0,1fr));}
+  html body.country-node-page .catalog-mode-toolbar .catalog-grid__sort[class] {grid-row:3;grid-column:2;margin:0;}
+  html body.country-node-page .catalog-mode-toolbar .catalog-mode-detailed-filters {grid-row:3;grid-column:1;}
+  html body.country-node-page .catalog-mode-toolbar .country-brand-filters {grid-row:4;grid-column:1/-1;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:4px 12px;margin:7px 0 0;}
+  html body.country-node-page .catalog-mode-toolbar .country-brand-filters label {min-width:0;padding-inline-start:8px;}
+}

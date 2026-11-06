@@ -1,0 +1,473 @@
+@charset "UTF-8";@font-face{font-display:swap;font-family:Tilda Sans;font-style:normal;font-weight:300;src:url("../assets/f0f2c165784c7234.woff2") format("woff2")}@font-face{font-display:swap;font-family:Tilda Sans;font-style:normal;font-weight:400;src:url("../assets/2670dad44ca6c2a1.woff2") format("woff2")}@font-face{font-display:swap;font-family:Tilda Sans;font-style:normal;font-weight:500;src:url("../assets/f716269e361f4665.woff2") format("woff2")}@font-face{font-display:swap;font-family:Tilda Sans;font-style:normal;font-weight:600;src:url("../assets/3814f8c444073262.woff2") format("woff2")}@font-face{font-display:swap;font-family:Tilda Sans;font-style:normal;font-weight:700;src:url("../assets/a2690df6fe834806.woff2") format("woff2")}@font-face{font-display:swap;font-family:Tilda Sans;font-style:normal;font-weight:800;src:url("../assets/726a3a878465a590.woff2") format("woff2")}@font-face{font-display:swap;font-family:Tilda Sans;font-style:normal;font-weight:900;src:url("../assets/73abed6708c43912.woff2") format("woff2")}@font-face{ascent-override:102.43%;descent-override:26.82%;font-family:Tilda Sans Fallback;line-gap-override:0%;size-adjust:92.84%;src:local("Arial"),local("Helvetica Neue"),local("Helvetica")}html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}a{background-color:transparent}a:active,a:hover{outline:0}h1{font-size:2em;margin:.67em 0}img{border:0}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type=search]{-webkit-appearance:textfield;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}html{color:#1e1e1e;font-size:16px;font-weight:400;line-height:1;scroll-behavior:smooth;scrollbar-gutter:stable}html,html body{font-family:Tilda Sans,Tilda Sans Fallback,system-ui,-apple-system,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif}html body{height:100%;margin:0;text-rendering:optimizeLegibility;width:100%;-webkit-font-smoothing:antialiased;background-color:#fff}*,:after,:before{box-sizing:border-box}*{-webkit-tap-highlight-color:rgba(0,0,0,0);outline:none}input:not([type=checkbox]):not([type=radio]),select,textarea{-webkit-appearance:none;-moz-appearance:none;appearance:none}ul{list-style:none;margin:0;padding:0}.page{margin-bottom:80px}main{min-width:0}.base-container{margin:0 auto;max-width:1920px;padding-inline:100px;width:100%}@media(max-width:1920px){.base-container{padding-inline:calc(-26.66667px + 6.59722vw)}}@media(max-width:768px){.base-container{padding-inline:calc(8.94118px + 1.96078vw)}}h1,h2,h3,h4,h5,p{margin:0}button,input,textarea{font-family:inherit}img{height:auto;max-width:100%}input:not([type=checkbox]):not([type=radio]):not([type=number]),select,textarea{-webkit-appearance:none;-moz-appearance:none;appearance:none}button:not(:disabled){cursor:pointer}a{color:currentColor;text-decoration:none}a,a:active,a:focus{outline:none}a:focus-visible,button:focus-visible{outline:2px solid rgba(20,71,230,.45);outline-offset:2px}@keyframes splide-loading{0%{transform:rotate(0)}to{transform:rotate(1turn)}}@keyframes fade-in{0%{opacity:0}to{opacity:1}}@keyframes fade-out{0%{opacity:1}to{opacity:0}}@keyframes fadeOut{0%{opacity:1}to{opacity:0}}@keyframes fadeInDown{0%{opacity:0;transform:translate3d(0,-100%,0)}to{opacity:1;transform:none}}@keyframes fadeInUp{0%{opacity:0;transform:translate3d(0,100%,0)}to{opacity:1;transform:none}}.ui-icon.ui-icon-current[data-v-8bd2f545]{color:inherit;display:block;flex-shrink:0;line-height:0}.ui-icon.ui-icon-current[data-v-8bd2f545] svg{height:1em;margin-bottom:0;width:1em}@keyframes partners-marquee-right-923dc07c{0%{transform:translate3d(-50%,0,0)}to{transform:translateZ(0)}}@keyframes partners-marquee-left-923dc07c{0%{transform:translateZ(0)}to{transform:translate3d(-50%,0,0)}}.breadcrumbs[data-v-b0b48dd9]{margin:0;padding:0}.breadcrumbs__list[data-v-b0b48dd9]{align-items:center;display:flex;flex-wrap:nowrap;gap:.5rem;list-style:none;margin:0;min-width:0;padding:0}@media screen and (max-width:768px){.breadcrumbs__list[data-v-b0b48dd9]{gap:.375rem}}@media screen and (max-width:540px){.breadcrumbs__list[data-v-b0b48dd9]{gap:.25rem}}.breadcrumbs__item[data-v-b0b48dd9]{align-items:center;display:flex;flex-shrink:0;gap:.5rem}@media screen and (max-width:768px){.breadcrumbs__item[data-v-b0b48dd9]{gap:.375rem}}@media screen and (max-width:540px){.breadcrumbs__item[data-v-b0b48dd9]{gap:.25rem}}.breadcrumbs__item[data-v-b0b48dd9]:last-child{flex:1 1 auto;min-width:0;overflow:hidden}.breadcrumbs__link[data-v-b0b48dd9]{align-items:center;color:#1e1e1eb8;display:inline-flex;font-size:16px;font-weight:400;gap:.25rem;line-height:1.4;text-decoration:none;transition:color .2s ease}@media screen and (max-width:540px){.breadcrumbs__link[data-v-b0b48dd9]{font-size:13px}}.breadcrumbs__link--active[data-v-b0b48dd9]{color:#1e1e1e;cursor:default;display:block;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.breadcrumbs__separator[data-v-b0b48dd9]{color:#1e1e1e66;font-size:16px;font-weight:400;line-height:1.4;-webkit-user-select:none;-moz-user-select:none;user-select:none}@media screen and (max-width:540px){.breadcrumbs__separator[data-v-b0b48dd9]{font-size:13px}}.breadcrumbs--dark .breadcrumbs__list[data-v-b0b48dd9]{flex-wrap:wrap}.breadcrumbs--dark .breadcrumbs__item[data-v-b0b48dd9]:last-child{flex:none;overflow:visible}.breadcrumbs--dark .breadcrumbs__link[data-v-b0b48dd9]{color:#ffffffb8;font-size:25px;font-weight:300}@media screen and (max-width:1440px){.breadcrumbs--dark .breadcrumbs__link[data-v-b0b48dd9]{font-size:20px}}@media screen and (max-width:1024px){.breadcrumbs--dark .breadcrumbs__link[data-v-b0b48dd9]{font-size:18px}}@media screen and (max-width:768px){.breadcrumbs--dark .breadcrumbs__link[data-v-b0b48dd9]{font-size:16px}}@media screen and (max-width:540px){.breadcrumbs--dark .breadcrumbs__link[data-v-b0b48dd9]{font-size:14px}}.breadcrumbs--dark .breadcrumbs__link--active[data-v-b0b48dd9]{color:#fff;display:inline-flex;overflow:visible;text-overflow:unset;white-space:normal}.breadcrumbs--dark .breadcrumbs__separator[data-v-b0b48dd9]{color:#ffffff73;font-size:25px;font-weight:300}@media screen and (max-width:1440px){.breadcrumbs--dark .breadcrumbs__separator[data-v-b0b48dd9]{font-size:20px}}@media screen and (max-width:1024px){.breadcrumbs--dark .breadcrumbs__separator[data-v-b0b48dd9]{font-size:18px}}@media screen and (max-width:768px){.breadcrumbs--dark .breadcrumbs__separator[data-v-b0b48dd9]{font-size:16px}}@media screen and (max-width:540px){.breadcrumbs--dark .breadcrumbs__separator[data-v-b0b48dd9]{font-size:14px}}.catalog-hero-filters[data-v-85bd9b18]{max-width:982px;width:100%}.catalog-hero-filters__bar[data-v-85bd9b18]{background:#fff;border-radius:3px;box-shadow:0 6px 22px #0000001f;display:flex;height:70px;overflow:hidden;width:100%}@media screen and (max-width:540px){.catalog-hero-filters__bar[data-v-85bd9b18]{background:transparent;box-shadow:none;flex-wrap:wrap;gap:10px 0;height:auto;overflow:visible}}.catalog-hero-filters__search[data-v-85bd9b18]{align-items:center;color:#1e1e1e;display:flex;flex:1;min-width:0;padding:0 22px}@media screen and (max-width:540px){.catalog-hero-filters__search[data-v-85bd9b18]{background:#fff;border-radius:3px 0 0 3px;flex:1 1 calc(100% - 60px);height:58px;padding:0 16px}}.catalog-hero-filters__search-icon[data-v-85bd9b18]{color:#1e1e1e;flex-shrink:0;font-size:20px;margin-right:13px}.catalog-hero-filters__search-input[data-v-85bd9b18]{background:transparent;border:0;color:#1e1e1e;font:inherit;font-size:18px;font-weight:300;line-height:1.1;min-width:0;outline:0;width:100%}@media screen and (max-width:540px){.catalog-hero-filters__search-input[data-v-85bd9b18]{font-size:15px}}.catalog-hero-filters__search-input[data-v-85bd9b18]::-moz-placeholder{color:#696969;opacity:1}.catalog-hero-filters__search-input[data-v-85bd9b18]::placeholder{color:#696969;opacity:1}.catalog-hero-filters__filter-icon[data-v-85bd9b18],.catalog-hero-filters__submit[data-v-85bd9b18]{background-color:transparent;border:none;color:inherit;cursor:pointer;flex:none;font:inherit;outline:none;padding:0;transition:background-color .2s ease,border-color .2s ease,color .2s ease}.catalog-hero-filters__filter-icon[data-v-85bd9b18]{background:#fff;border:0;border-left:1px solid #e0e0e0;color:#1e1e1e;display:grid;place-items:center;width:64px}@media(min-width:1025px){.catalog-hero-filters__filter-icon[data-v-85bd9b18]:hover{background:#f7f7f7}}@media screen and (max-width:540px){.catalog-hero-filters__filter-icon[data-v-85bd9b18]{border-radius:0 3px 3px 0;height:58px;width:60px}}.catalog-hero-filters__filter-icon--active[data-v-85bd9b18]{background:#f7f7f7}.catalog-hero-filters__filters-svg[data-v-85bd9b18]{display:block}.catalog-hero-filters__submit[data-v-85bd9b18]{background:#8b1d25;border:1px solid #8b1d25;color:#fff;font-size:16px;font-weight:400;line-height:1;width:181px}@media(min-width:1025px){.catalog-hero-filters__submit[data-v-85bd9b18]:hover{background:#801b22;border-color:#801b22}}@media screen and (max-width:540px){.catalog-hero-filters__submit[data-v-85bd9b18]{border-radius:3px;height:56px;width:100%}}.catalog-quick-links[data-v-04e860be]{background:#fff;padding-block:36px 20px}@media screen and (max-width:1440px){.catalog-quick-links[data-v-04e860be]{padding-block:32px 16px}}@media screen and (max-width:540px){.catalog-quick-links[data-v-04e860be]{padding-block:24px 16px}}.catalog-quick-links--hero[data-v-04e860be]{background:transparent;margin-top:12px;padding-block:0;width:min(100%,982px)}@media screen and (max-width:540px){.catalog-quick-links--hero[data-v-04e860be]{margin-top:12px;width:100%}}.catalog-quick-links__inner[data-v-04e860be]{align-items:flex-start;display:flex;flex-direction:column;gap:12px}.catalog-quick-links--hero .catalog-quick-links__inner[data-v-04e860be]{gap:0}.catalog-quick-links__list[data-v-04e860be]{-moz-column-gap:6px;column-gap:6px;display:flex;flex-wrap:wrap;list-style:none;margin:0;padding:0;row-gap:8px}.catalog-quick-links--hero .catalog-quick-links__list[data-v-04e860be]{gap:8px}.catalog-quick-links--hero .catalog-quick-links__list li[data-v-04e860be]{display:block}.catalog-quick-links__pill[data-v-04e860be]{align-items:center;background:#fff;border:1px solid rgba(30,30,30,.18);border-radius:999px;color:#1e1e1e;display:inline-flex;font-size:14px;font-weight:400;line-height:1.25;padding:4px 10px;text-decoration:none;transition:border-color .2s ease,color .2s ease,background-color .2s ease}@media screen and (max-width:1440px){.catalog-quick-links__pill[data-v-04e860be]{font-size:13px;padding:4px 9px}}@media screen and (max-width:540px){.catalog-quick-links__pill[data-v-04e860be]{font-size:12px;padding:3px 8px}}@media(min-width:1025px){.catalog-quick-links__pill[data-v-04e860be]:hover{border-color:#1e1e1e59;color:#8b1d25}}.catalog-quick-links--hero .catalog-quick-links__pill[data-v-04e860be]{background:#0000001f;border-color:#ffffffa3;color:#fff;font-size:15px;line-height:1.15;min-height:34px;padding:6px 14px}@media screen and (max-width:540px){.catalog-quick-links--hero .catalog-quick-links__pill[data-v-04e860be]{font-size:14px;min-height:32px;padding:6px 11px}}@media(min-width:1025px){.catalog-quick-links--hero .catalog-quick-links__pill[data-v-04e860be]:hover{background:#ffffff24;border-color:#fff;color:#fff}}.catalog-hero[data-v-aca24971]{color:#fff;isolation:isolate;min-height:694px;position:relative;width:100%}@media screen and (max-width:1440px){.catalog-hero[data-v-aca24971]{min-height:644px}}@media screen and (max-width:1024px){.catalog-hero[data-v-aca24971]{min-height:644px}}@media screen and (max-width:540px){.catalog-hero[data-v-aca24971]{min-height:684px}}.catalog-hero__media[data-v-aca24971]{background:#303030;inset:0;position:absolute;z-index:-1}.catalog-hero__image[data-v-aca24971]{display:block;height:100%;-o-object-fit:cover;object-fit:cover;-o-object-position:center;object-position:center;width:100%}.catalog-hero__overlay[data-v-aca24971]{background:linear-gradient(180deg,#0000004d,#00000014 50%,#0000006b);inset:0;position:absolute}.catalog-hero__inner[data-v-aca24971]{align-items:center;display:flex;flex-direction:column;gap:0;min-height:inherit;padding-bottom:24px;padding-top:220px;position:relative;width:100%;z-index:1}@media screen and (max-width:1440px){.catalog-hero__inner[data-v-aca24971]{padding-top:170px}}@media screen and (max-width:1024px){.catalog-hero__inner[data-v-aca24971]{justify-content:space-around;padding-bottom:32px;padding-top:0}}@media screen and (max-width:540px){.catalog-hero__inner[data-v-aca24971]{justify-content:space-around;padding:0 16px 24px}}.catalog-hero__stack[data-v-aca24971]{align-items:center;display:flex;flex-direction:column;max-width:982px;width:min(100%,982px)}@media screen and (max-width:1024px){.catalog-hero__stack[data-v-aca24971]{max-width:none;width:100%}}.catalog-hero__search-block[data-v-aca24971]{align-items:center;display:flex;flex-direction:column;width:100%}.catalog-hero__quick-links[data-v-aca24971]{margin-top:28px;width:100%}@media screen and (max-width:540px){.catalog-hero__quick-links[data-v-aca24971]{margin-top:20px}}.catalog-hero__breadcrumbs-wrap[data-v-aca24971]{left:0;position:absolute;right:0;top:140px;z-index:2}@media screen and (max-width:1440px){.catalog-hero__breadcrumbs-wrap[data-v-aca24971]{top:120px}}@media screen and (max-width:1024px){.catalog-hero__breadcrumbs-wrap[data-v-aca24971]{top:110px}}@media screen and (max-width:768px){.catalog-hero__breadcrumbs-wrap[data-v-aca24971]{top:100px}}@media screen and (max-width:540px){.catalog-hero__breadcrumbs-wrap[data-v-aca24971]{top:88px}}.catalog-hero__breadcrumbs[data-v-aca24971] .breadcrumbs__link,.catalog-hero__breadcrumbs[data-v-aca24971] .breadcrumbs__separator{font-size:21px}@media screen and (max-width:1440px){.catalog-hero__breadcrumbs[data-v-aca24971] .breadcrumbs__link,.catalog-hero__breadcrumbs[data-v-aca24971] .breadcrumbs__separator{font-size:16px}}@media screen and (max-width:1024px){.catalog-hero__breadcrumbs[data-v-aca24971] .breadcrumbs__link,.catalog-hero__breadcrumbs[data-v-aca24971] .breadcrumbs__separator{font-size:14px}}@media screen and (max-width:768px){.catalog-hero__breadcrumbs[data-v-aca24971] .breadcrumbs__link,.catalog-hero__breadcrumbs[data-v-aca24971] .breadcrumbs__separator{font-size:13px}}@media screen and (max-width:540px){.catalog-hero__breadcrumbs[data-v-aca24971] .breadcrumbs__link,.catalog-hero__breadcrumbs[data-v-aca24971] .breadcrumbs__separator{font-size:11px}}.catalog-hero__title[data-v-aca24971]{font-size:clamp(38px,4vw,58px);font-weight:300;letter-spacing:-.045em;line-height:1.05;margin:0 0 39px;text-align:center}@media screen and (max-width:540px){.catalog-hero__title[data-v-aca24971]{font-size:32px;margin-bottom:31px}}.page[data-v-b844e3a0]{background:#fff;margin-bottom:0;min-height:100%}.catalog-page-section[data-v-b844e3a0]{scroll-margin-top:calc(var(--catalog-sticky-nav-top, 112px) + var(--catalog-sticky-nav-height, 56px) + 16px)}@keyframes floating-expert-enter-553bd346{to{opacity:1;transform:translateY(0)}}@keyframes floating-expert-pulse-553bd346{0%,to{box-shadow:0 22px 62px #12121233}42%{box-shadow:0 22px 62px #12121233,0 0 0 12px #12121214}58%{box-shadow:0 26px 74px #1212123d,0 0 0 22px #12121200}}.layout[data-v-47bd53e9]{display:flex;flex-direction:column;max-width:100%;min-height:100vh;min-width:0;overflow-x:clip;position:relative}.layout__content[data-v-47bd53e9]{flex:1;max-width:100%;min-width:0;overflow-x:clip;--layout-header-offset-top:32px}@media screen and (max-width:540px){.layout__content[data-v-47bd53e9]{--layout-header-offset-top:16px}}
+@keyframes ymaps3--controls-spinner-spin{0%{transform:rotate(0deg)}to{transform:rotate(1turn)}}
+
+/* Reference raster tiles at zoom 11; positions use the same pixel snapping. */
+
+/*
+ * BARNES transferable UI layer for the Kurortnaya page.
+ * Baseline: ../reference-ui.md (2026-10-07).
+ * Project/offer cards are intentionally outside this layer.
+ */
+
+:root {
+  --kit-font: "Tilda Sans", "Tilda Sans Fallback", system-ui, sans-serif;
+  --kit-text: #1e1e1e;
+  --kit-text-secondary: #4f4d49;
+  --kit-text-muted: #656462;
+  --kit-burgundy: #8b1d25;
+  --kit-focus-accent: var(--kit-burgundy);
+  --kit-border: #e4e4e4;
+  --kit-h2-standard-size: 38px;
+  --kit-h2-standard-leading: 1.2;
+  --kit-h2-compact-size: 38px;
+  --kit-h2-compact-leading: 1;
+  --kit-h2-editorial-size: 44px;
+  --kit-h2-editorial-leading: 0.98;
+  --kit-eyebrow-size: 14px;
+  --kit-eyebrow-leading: 1.15;
+  --kit-eyebrow-gap: 25px;
+  --kit-action-height: 70px;
+  --kit-action-size: 17px;
+  --kit-action-padding: 36px;
+}
+
+html,
+body {
+  color: var(--kit-text);
+  font-family: var(--kit-font);
+}
+
+/* Headings outside the project-card component family. */
+
+/* Catalog content-page display follows the approved content H1 contract. */
+html body .catalog-hero__title[class] {
+  font-size: clamp(38px, 4vw, 58px);
+  font-weight: 300;
+  letter-spacing: -0.045em;
+  line-height: 1.05;
+}
+
+/* Long-form BARNES copy uses heading roles without introducing bold weights. */
+
+/* CTA portraits: Denis stays natural; the layout, not the photograph, is mirrored. */
+
+/* FloatingExpert contract. */
+
+/* Compact ContactAction used as a channel selector inside both forms. */
+
+/* FAQ body typography follows the shared text roles at every breakpoint. */
+
+/* Parent layouts already contribute their own row gaps. Offset those gaps so
+   the visible eyebrow-to-title rhythm matches the approved 25px contract. */
+
+/* Shared rectangular action contract. Card actions are deliberately excluded. */
+
+/* Filter controls: the UI kit defines these separately from rectangular CTAs. */
+html body .catalog-hero-filters__bar[class] {
+  border-radius: 1px;
+}
+
+html body .catalog-hero-filters__search[class] {
+  border-radius: 1px 0 0 1px;
+  padding-inline: 24px;
+}
+
+html body .catalog-hero-filters__search-input[class] {
+  color: var(--kit-text);
+  font-family: var(--kit-font);
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+html body .catalog-hero-filters__search-input[class]::placeholder {
+  color: var(--kit-text-muted);
+  opacity: 1;
+}
+
+@media (min-width: 1441px) {
+  :root {
+    --kit-h2-standard-size: 44px;
+    --kit-h2-compact-size: 44px;
+    --kit-action-size: 19px;
+    --kit-action-padding: 47px;
+  }
+}
+
+@media (max-width: 540px) {
+  :root {
+    --kit-h2-standard-size: 22px;
+    --kit-h2-compact-size: 22px;
+    --kit-h2-editorial-size: 22px;
+    --kit-h2-editorial-leading: 1.2;
+    --kit-eyebrow-size: 12px;
+    --kit-eyebrow-leading: 1.2;
+    --kit-eyebrow-gap: 12px;
+    --kit-action-height: 58px;
+    --kit-action-size: 18px;
+    --kit-action-padding: 24px;
+  }
+
+  html body .catalog-hero__title[class] {
+    font-size: 32px;
+    letter-spacing: -0.045em;
+    line-height: 1.05;
+  }
+
+  html body .catalog-hero-filters__search[class] {
+    border-radius: 1px;
+    padding-inline: 18px;
+  }
+
+  html body .catalog-hero-filters__search-input[class] {
+    font-size: 16px;
+  }
+}
+
+/* Header contract: compact owner-style navigation with direct contact channels. */
+
+@media (hover: hover) and (pointer: fine) {
+
+  /* The BARNES interaction accent is always burgundy, never gold. */
+}
+
+/* Secondary header: copied from the approved partners-page contract. */
+
+@media (max-width: 540px) {
+
+  html body .catalog-hero__breadcrumbs[class] :is(.breadcrumbs__link, .breadcrumbs__separator) {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
+
+/* ListingCard contract: shared geometry for project and secondary-lot modes. */
+
+/* Filter layout: "lower lines" design from the approved mobile reference. */
+
+/* One chevron treatment at every breakpoint, matching the filter controls. */
+
+/* Country data exceptions only. Design contracts are copied from /kurortnaya/. */
+/* Keep both art-directed hero images inside the existing cover-sized media box. */
+html body.country-node-page .catalog-hero__media picture {display:block;width:100%;height:100%;}
+html body.country-node-page .catalog-hero__media .catalog-hero__image {object-position:60% center;}
+@media (max-width:540px) {
+  html body.country-node-page .catalog-hero__media .catalog-hero__image {object-position:center;}
+}
+/* Give the country editorial heading two lines without shrinking its type. */
+/* Keep every catalogue card the same height when a title is long or loads late. */
+/* Shared contact controls and mobile sticky header from the Kurortnaya node. */
+/* Channel selectors share the form's 610px cap, including wide CTA content. */
+.country-node-page :focus-visible { outline:2px solid #8b1d25; outline-offset:3px; }
+
+/* Kurortnaya's four-field quick-filter rhythm, adapted to country values. */
+
+/* Shared owner-page footer geometry, scoped to this route. */
+
+/* Scoped original front map/panel rules, captured 2026-10-12. */
+
+/* Desktop fullscreen map panel follows the Kurortnaya node's 420px rhythm. */
+
+/* Shared roles from the approved BARN Estate home UI-kit v1.0.0 (2026-11-01).
+   Keep country-specific hero art, map, filters, card geometry and CTA composition. */
+html body.country-node-page {
+  --home-section-space: clamp(72px, 6vw, 100px);
+  --home-gutter: clamp(24px, calc(-26.66667px + 6.59722vw), 100px);
+  --home-action-size: 17px;
+  --home-action-height: 70px;
+  --home-action-pad: 36px;
+}
+
+@media (min-width: 1441px) {
+  html body.country-node-page { --home-action-size: 19px; --home-action-pad: 47px; }
+}
+
+@media (min-width: 1921px) {
+  html body.country-node-page { --home-gutter: 0px; }
+}
+
+@media (max-width: 1024px) {
+  html body.country-node-page { --kit-eyebrow-size: 12px; --kit-eyebrow-gap: 12px; }
+}
+
+@media (max-width: 540px) {
+  html body.country-node-page {
+    --home-section-space: 48px;
+    --home-gutter: 22px;
+    --home-action-size: 18px;
+    --home-action-height: 58px;
+    --home-action-pad: 24px;
+  }
+}
+
+/* Filter controls from the resort catalogue layout (02.11.2026).
+   Only filter surfaces are scoped here; country cards keep their own styles. */
+
+/* The same light popovers and full filter surface as the resort node. */
+
+/* The open map keeps its established panel layout, with the same boxed controls. */
+
+/* Keep the two-word brand together without preventing the rest of a sentence from wrapping. */
+
+/* CTA background layers span the section; form layout stays on its existing grid. */
+
+/* Shared laptop hero policy. Primary heroes are 200px shorter; typography stays in the page kit. */
+@layer barn-hero-laptop {
+ @media (min-width:1025px) and (max-width:1919px), (min-width:1920px) and (max-height:1000px) {
+  body {--hero-laptop-main:620px;--hero-laptop-node:444px;--hero-laptop-lot:520px;}
+  @media(min-width:1441px){body{--hero-laptop-main:760px;--hero-laptop-node:494px;--hero-laptop-lot:650px;}}
+  body[data-node-shell]{--hero-laptop-node:var(--hero-laptop-main);}
+  section.catalog-hero{height:var(--hero-laptop-node)!important;min-height:var(--hero-laptop-node)!important;max-height:none!important;}
+  .catalog-hero__inner{box-sizing:border-box!important;height:100%!important;min-height:0!important;padding-top:150px!important;padding-bottom:16px!important;row-gap:16px!important;}
+  body[data-node-shell] .catalog-hero__inner{padding-block:0!important;justify-content:center!important;row-gap:24px!important;}
+  .catalog-hero-filters{margin-top:0!important;}
+  .catalog-quick-links--hero{margin-top:0!important;}
+ }
+}
+
+/* Header derived from owner-sale; regenerate with main-site/tools/sync-node-shell.cjs. */
+
+/* Media header v1.1.0, mobile sticky menu 2026-11-04. Only headers opt into this component. */
+html body.barnes-media-header {--mh-gutter:calc(-26.66667px + 6.59722vw);--mh-pad:32px;--mh-logo:48px;--mh-panel-offset:41px;--mh-ink:#1e1e1e;}
+/* Owner/ambassador anchors retain their nodes, text and handlers. Only center/right change. */
+@media(min-width:1921px) {html body.barnes-media-header {--mh-gutter:0px;}}
+@media(max-width:768px) {html body.barnes-media-header {--mh-gutter:calc(8.94118px + 1.96078vw);}}
+@media(max-width:540px) {
+ html body.barnes-media-header {--mh-pad:16px;--mh-logo:36px;--mh-panel-offset:25px;}
+}
+
+/* Media has WA / Telegram / MAX above hero, WA / MAX / Telegram after hero. */
+
+/* One mobile row: menu / logo / contacts. Page anchors remain available on desktop. */
+
+/* Identical glyph inset on Media and owner/partner headers; retain the 44px touch target. */
+
+/* Direction pages use the burger only, without a second navigation row. */
+
+/* The sticky mobile bar owns its centered logo, even when legacy node CSS hid it. */
+
+/* Five direction pages share owner-sale header/hero metrics. Page data stays local. */
+@layer barn-node-shell {
+ html body[data-node-shell] {--node-hero-height:820px;--node-title-lines:1;}
+ @media(min-width:1441px){html body[data-node-shell]{--node-hero-height:960px;}}
+ @media(max-width:767px){html body[data-node-shell]{--node-title-lines:2;}}
+ @media(max-width:767px){
+  html body[data-node-shell] .catalog-quick-links--hero .catalog-quick-links__list {flex:1 1 0%!important;width:100%!important;max-width:100%!important;flex-wrap:wrap!important;justify-content:center!important;overflow:hidden!important;max-height:72px!important;padding:0!important;gap:8px!important;}
+  html body[data-node-shell] .catalog-quick-links--hero li {flex:0 1 auto!important;min-width:0!important;max-width:100%!important;}
+  html body[data-node-shell] .catalog-quick-links--hero .catalog-quick-links__pill {box-sizing:border-box!important;display:block!important;height:32px!important;max-width:100%!important;line-height:30px!important;padding:0 12px!important;white-space:nowrap!important;overflow:hidden!important;text-overflow:ellipsis!important;}
+ }
+ @media(max-width:540px){html body[data-node-shell]{--node-hero-height:560px;}}
+ @media(max-width:389px){html body[data-node-shell]{--node-title-lines:3;}}
+ html body[data-node-shell] .catalog-hero {
+  box-sizing:border-box!important;height:var(--node-hero-height)!important;min-height:var(--node-hero-height)!important;max-height:none!important;
+ }
+ html body[data-node-shell] .catalog-hero__inner {
+  box-sizing:border-box!important;display:flex!important;flex-direction:column!important;justify-content:center!important;align-items:center!important;
+  width:100%!important;max-width:1920px!important;margin-inline:auto!important;height:100%!important;min-height:0!important;
+  padding:0 var(--barn-page-gutter,24px)!important;gap:24px!important;
+ }
+ html body[data-node-shell] :is(.catalog-hero__stack,.catalog-hero__search-block) {
+  display:flex!important;flex-direction:column!important;align-items:center!important;gap:24px!important;
+  width:100%!important;min-width:0!important;height:auto!important;min-height:0!important;margin:0!important;
+ }
+ html body[data-node-shell] .catalog-hero__stack {position:relative!important;max-width:982px!important;}
+ html body[data-node-shell] .catalog-hero__search-block {max-width:982px!important;}
+ html body[data-node-shell] .catalog-hero__quick-links {position:absolute!important;top:calc(100% + 24px)!important;inset-inline:0!important;width:100%!important;max-width:982px!important;margin:0 auto!important;}
+ /* The international page already suppresses its legacy quick-link content. */
+ html body[data-node-shell] .catalog-quick-links--hero {width:100%!important;max-width:982px!important;}
+ html body[data-node-shell] .catalog-quick-links--hero .catalog-quick-links__inner {width:100%!important;}
+ html body[data-node-shell] .catalog-quick-links--hero .catalog-quick-links__list {
+  display:flex!important;flex-direction:row!important;flex-wrap:wrap!important;justify-content:center!important;
+  gap:8px!important;margin:0!important;padding:0!important;list-style:none!important;min-width:0!important;
+ }
+ html body[data-node-shell] .catalog-hero__title {
+  box-sizing:border-box!important;display:block!important;width:100%!important;padding:0!important;flex:none!important;
+  height:calc(1.05em * var(--node-title-lines))!important;min-height:calc(1.05em * var(--node-title-lines))!important;
+  font-family:'Tilda Sans','Tilda Sans Fallback',system-ui,sans-serif!important;
+  font-size:clamp(38px,4vw,58px)!important;line-height:1.05!important;font-weight:300!important;
+  letter-spacing:-.045em!important;text-transform:none!important;text-align:center!important;margin:0!important;max-width:100%!important;
+ }
+ html body[data-node-shell] .catalog-hero-filters {margin-top:0!important;flex-shrink:0!important;}
+ html body[data-node-shell] .catalog-quick-links--hero {margin:0!important;}
+ html body[data-node-shell] .catalog-hero .breadcrumbs {display:none!important;}
+ @media(max-width:767px){
+  html body[data-node-shell] .catalog-quick-links--hero .catalog-quick-links__list {flex:1 1 0%!important;width:100%!important;max-width:100%!important;flex-wrap:wrap!important;justify-content:center!important;overflow:hidden!important;max-height:72px!important;padding:0!important;gap:8px!important;}
+  html body[data-node-shell] .catalog-quick-links--hero li {flex:0 1 auto!important;min-width:0!important;max-width:100%!important;}
+  html body[data-node-shell] .catalog-quick-links--hero .catalog-quick-links__pill {box-sizing:border-box!important;display:block!important;height:32px!important;max-width:100%!important;line-height:30px!important;padding:0 12px!important;white-space:nowrap!important;overflow:hidden!important;text-overflow:ellipsis!important;}
+ }
+ @media(max-width:540px){
+  html body[data-node-shell] .catalog-hero__inner{gap:20px!important;}
+  html body[data-node-shell] .catalog-hero__quick-links{top:calc(100% + 20px)!important;}
+  html body[data-node-shell] :is(.catalog-hero__stack,.catalog-hero__search-block){gap:20px!important;}
+  html body[data-node-shell] .catalog-hero__title{font-size:32px!important;}
+ }
+}
+
+/* Vertical roles from the approved home-spacing.css / UI-kit v1.0.3.
+ * Scope: five direction nodes. Each interval is owned once, never margin + gap. */
+@layer barn-node-spacing {
+ html body[data-node-shell] {
+  --node-section-space:clamp(72px,6vw,100px);
+  --node-brow-gap:25px;--node-heading-content:40px;--node-copy-gap:24px;
+ }
+ @media(max-width:1024px){html body[data-node-shell]{--node-brow-gap:12px;}}
+ @media(max-width:540px){html body[data-node-shell]{--node-section-space:48px;--node-heading-content:28px;--node-copy-gap:16px;}}
+ /* Start-sales: the slider is a sibling of the heading container. */
+ /* Map: description belongs to the heading, then one content interval. */
+ /* Catalog controls keep their own existing internal intervals. */
+ /* Editorial intro: eyebrow -> H2 -> description, without a second flex gap. */
+ /* Directions/news: the parent gap owns heading -> cards. */
+ /* FAQ has no separate heading wrapper: margin belongs to the answer grid. */
+ /* Consultation owns its spacing inside the photo. Outer padding exposes dark bands. */
+ /* Photo CTA: retain the card's inner grid, normalize heading and form spacing. */
+}
+/* Editorial images use one frame and end at the introductory copy, above its action. */
+
+/* Match apparent portrait distance; the office background still reaches every CTA edge. */
+
+/* FAQ columns share question/answer tracks, so wrapping and expansion keep paired rows aligned. */
+
+/* Final contact CTA: city layout/fields, shared by all five nodes.
+ * Original source: city/css/document-desktop.css; local backgrounds remain untouched. */
+
+/* Generated from the approved home reference by sync-node-recommendations.cjs. */
+/* Only node-specific integration. Card presentation is generated from the home source. */
+@layer barn-node-recommendations {
+ /* Splide's live horizontal track padding is zero in the home instance. */
+}
+
+/* Generated from the current katalog-nedvizhimosti filter sources; see sync-node-filters.cjs. */
+@layer barn-node-filters {
+/* kit/_shared/source.css */
+
+/* kit/_shared/ui-kit.css */
+
+/* kit/_shared/listing-mode.css */
+
+/* listing.css */
+
+/* kit-v1/home-typography.css */
+
+
+/* kit-v1/home-spacing.css */
+
+
+/* kit-v1/home-buttons.css */
+
+
+/* catalog-kit-v1.css */
+
+/* kit/filters-modal/filters-modal.css */
+
+/* kit/quick-filter-dropdowns/quick-filters.css */
+
+/* catalog-filters.css */
+
+/* kit/quick-filter-dropdowns/brand-filters.css */
+
+/* map-view/reference-map.css */
+
+/* catalog-map.css */
+
+}
+/* Integration with existing node data/controllers; shared catalogue presentation above. */
+@layer barn-node-filters {
+ html body[data-node-shell] {--node-filter-size:18px;}
+ @media(min-width:1441px){html body[data-node-shell]{--node-filter-size:20px;}}
+ @media(max-width:540px){html body[data-node-shell]{--node-filter-size:17px;}}
+}
+/* Map shell follows the Resort overlay; filter captions share the same left edge. */
+/* Give the desktop listing sort its own room inside the right page gutter. */
+/* Map parameters share listing state; the deal uses the listing's segmented control. */
+
+/* Small decorative up/down SVG for sorting; kept outside mutable button captions. */
+/* Mobile count is a real grid item; native nodes use a class instead of #results-count. */
+
+@layer barn-layout-grid {
+/* Horizontal grid from the approved homepage home-spacing.css, UI-kit v1.0.3.
+ * One inset per content frame. Full-bleed photos/CTA, split-form interiors and
+ * the resort FAQ's explicitly retained composition are separate contracts. */
+:root {
+  --barn-page-gutter: clamp(24px, calc(-26.66667px + 6.59722vw), 100px);
+}
+@media(max-width:540px) { :root { --barn-page-gutter:22px; } }
+@media(min-width:1921px) { :root { --barn-page-gutter:0px; } }
+/* Hero and header must follow the same grid as the page content. */
+html body.barnes-media-header { --mh-gutter:var(--barn-page-gutter)!important; }
+/* The footer used to add a section gutter and a second container gutter. */
+/* City/international exports still carried older container breakpoints. */
+/* These two lot-page frames were missing the shared content cap. */
+/* Keep text over project photos on the common grid; photos stay full bleed. */
+
+/* The photographic consultation keeps its full-bleed media; only its content
+ * inset follows the page grid. A named layer also isolates the old generated
+ * CTA adapter's high-specificity padding rules. */
+
+/* Mobile newsletter photography spans the canvas; only the copy owns gutters. */
+
+}
+
+/* Shared page navigation; deliberately outside the header and normal flow. */
+/* Keep the original footprint so neither hero content nor the header moves. */
+html body [data-barn-crumb-source],html body [data-barn-crumb-source] * {visibility:hidden!important;pointer-events:none!important;}
+
+/* Canonical footer text-link states for all thirteen current BARN Estate pages. */
+
+/* Shared owner header template. Source: prodazha_sobstvennikam, 2026-10-12.
+ * Opt in with body.barnes-header-template. Only page anchors/content differ.
+ * Kurortnaya deliberately retains site-header--no-nav (no directions row).
+ */
+body.barnes-header-template { --owner-sale-ink: #1e1e1e; --owner-sale-brand: #8b1d25; --owner-sale-border: rgba(30,30,30,.14); }
+@media (max-width:540px) {
+  /* Keep the contact dropdown clickable; only the anchor list scrolls. */
+}
+
+/* UI-kit 1.0.3 compact chips and existing node section/heading roles. */
+
+/* City quiz styles, shared once across five nodes. */
+/* Use the canonical semantic grays, rather than legacy low-opacity placeholders. */
+/* Keep the footer's primary action reachable while its button is on screen. */
+
+/* Homepage quiz: new controls inherit the owner/ambassador reference palette. */
+
+/* Keep one dialog frame through every quiz step; only the body scrolls. */
+
+/* Narrow quiz column: keep channel labels readable, including phone landscape. */
+
+/* One geometry/type contract per button role. Preserve fill/outline/inverse colors. */
+/* Compact choices retain a smaller footprint, sharing radius and regular weight. */
+
+/* Rectangular quiz choices use the same 1px corner as all CTA buttons. */
+
+/* Shared expert dialog, based on the approved homepage quiz geometry. */
+@layer barn-node-spacing {
+ /* Explicit grid tracks prevent legacy flex alignment from shrinking different dialogs. */
+}
+
+/* Generated from approved home NewsSection by sync-node-news.cjs. */
+
+/* Generated by sync-node-footer.cjs from approved homepage. */
+
+/* Shared page navigation; deliberately outside the header and normal flow. */
+/* Keep the original footprint so neither hero content nor the header moves. */
+html body [data-barn-crumb-source],html body [data-barn-crumb-source] * {visibility:hidden!important;pointer-events:none!important;}
+
+/* Shared owner header template. Source: prodazha_sobstvennikam, 2026-10-12.
+ * Opt in with body.barnes-header-template. Only page anchors/content differ.
+ * Kurortnaya deliberately retains site-header--no-nav (no directions row).
+ */
+body.barnes-header-template { --owner-sale-ink: #1e1e1e; --owner-sale-brand: #8b1d25; --owner-sale-border: rgba(30,30,30,.14); }
+@media (max-width:540px) {
+  /* Keep the contact dropdown clickable; only the anchor list scrolls. */
+}

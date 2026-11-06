@@ -1,0 +1,27 @@
+{
+  "city": {
+    "title": "Городская недвижимость",
+    "blocks": 18,
+    "resources": 112
+  },
+  "country": {
+    "title": "Загородная недвижимость",
+    "blocks": 18,
+    "resources": 173
+  },
+  "international": {
+    "title": "Зарубежная недвижимость",
+    "blocks": 18,
+    "resources": 129
+  },
+  "commercial": {
+    "title": "Коммерческая недвижимость",
+    "blocks": 18,
+    "resources": 123
+  },
+  "resort": {
+    "title": "Курортная недвижимость",
+    "blocks": 18,
+    "resources": 125
+  }
+}

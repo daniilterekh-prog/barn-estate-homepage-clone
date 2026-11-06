@@ -1,0 +1,17 @@
+{
+  "id": "16-filters-panel",
+  "title": "Все фильтры",
+  "kind": "filters-panel",
+  "html": "../../html/16-filters-panel.html",
+  "css": "../../css/16-filters-panel.css",
+  "js": "../../js/16-filters-panel.js",
+  "preview": "index.html",
+  "dependencies": [
+    "../../css/page.css",
+    "../../js/blocks-runtime.js",
+    "../../assets/",
+    "../../js/expert-quiz.js"
+  ],
+  "assets": "assets.json",
+  "integrationMode": "coupled-page-state"
+}

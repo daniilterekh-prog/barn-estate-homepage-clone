@@ -1,0 +1,406 @@
+@font-face { font-family: "Tilda Sans Fallback"; src: local("Arial"), local("Helvetica Neue"), local("Helvetica"); size-adjust: 92.84%; ascent-override: 102.43%; descent-override: 26.82%; line-gap-override: 0%; }
+@font-face { font-family: "Tilda Sans"; src: url("../assets/f0f2c165784c7234.woff2") format("woff2"); font-weight: 300; font-style: normal; font-display: swap; }
+@font-face { font-family: "Tilda Sans"; src: url("../assets/2670dad44ca6c2a1.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "Tilda Sans"; src: url("../assets/f716269e361f4665.woff2") format("woff2"); font-weight: 500; font-style: normal; font-display: swap; }
+html, body { font-family: "Tilda Sans", "Tilda Sans Fallback", system-ui, sans-serif; }
+@keyframes floating-expert-enter-cd0a1259 {
+  100% { opacity: 1; transform: translateY(0px); }
+}
+@keyframes floating-expert-pulse-cd0a1259 {
+  0%, 100% { box-shadow: rgba(18, 18, 18, 0.2) 0px 22px 62px; }
+  42% { box-shadow: rgba(18, 18, 18, 0.2) 0px 22px 62px, rgba(18, 18, 18, 0.08) 0px 0px 0px 12px; }
+  58% { box-shadow: rgba(18, 18, 18, 0.24) 0px 26px 74px, rgba(18, 18, 18, 0) 0px 0px 0px 22px; }
+}
+@charset "UTF-8";@font-face{font-display:swap;font-family:Tilda Sans;font-style:normal;font-weight:300;src:url("../assets/f0f2c165784c7234.woff2") format("woff2")}@font-face{font-display:swap;font-family:Tilda Sans;font-style:normal;font-weight:400;src:url("../assets/2670dad44ca6c2a1.woff2") format("woff2")}@font-face{font-display:swap;font-family:Tilda Sans;font-style:normal;font-weight:500;src:url("../assets/f716269e361f4665.woff2") format("woff2")}@font-face{font-display:swap;font-family:Tilda Sans;font-style:normal;font-weight:600;src:url("../assets/3814f8c444073262.woff2") format("woff2")}@font-face{font-display:swap;font-family:Tilda Sans;font-style:normal;font-weight:700;src:url("../assets/a2690df6fe834806.woff2") format("woff2")}@font-face{font-display:swap;font-family:Tilda Sans;font-style:normal;font-weight:800;src:url("../assets/726a3a878465a590.woff2") format("woff2")}@font-face{font-display:swap;font-family:Tilda Sans;font-style:normal;font-weight:900;src:url("../assets/73abed6708c43912.woff2") format("woff2")}@font-face{ascent-override:102.43%;descent-override:26.82%;font-family:Tilda Sans Fallback;line-gap-override:0%;size-adjust:92.84%;src:local("Arial"),local("Helvetica Neue"),local("Helvetica")}html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}a{background-color:transparent}a:active,a:hover{outline:0}img{border:0}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}textarea{overflow:auto}html{color:#1e1e1e;font-size:16px;font-weight:400;line-height:1;scroll-behavior:smooth;scrollbar-gutter:stable}html,html body{font-family:Tilda Sans,Tilda Sans Fallback,system-ui,-apple-system,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif}html body{height:100%;margin:0;text-rendering:optimizeLegibility;width:100%;-webkit-font-smoothing:antialiased;background-color:#fff}*,:after,:before{box-sizing:border-box}*{-webkit-tap-highlight-color:rgba(0,0,0,0);outline:none}input:not([type=checkbox]):not([type=radio]),select,textarea{-webkit-appearance:none;-moz-appearance:none;appearance:none}.page{margin-bottom:80px}main{min-width:0}.base-container{margin:0 auto;max-width:1920px;padding-inline:100px;width:100%}@media(max-width:1920px){.base-container{padding-inline:calc(-26.66667px + 6.59722vw)}}@media(max-width:768px){.base-container{padding-inline:calc(8.94118px + 1.96078vw)}}h1,h2,h3,h4,h5,p{margin:0}button,input,textarea{font-family:inherit}img{height:auto;max-width:100%}input:not([type=checkbox]):not([type=radio]):not([type=number]),select,textarea{-webkit-appearance:none;-moz-appearance:none;appearance:none}button:not(:disabled){cursor:pointer}a{color:currentColor;text-decoration:none}a,a:active,a:focus{outline:none}a:focus-visible,button:focus-visible{outline:2px solid rgba(20,71,230,.45);outline-offset:2px}@keyframes splide-loading{0%{transform:rotate(0)}to{transform:rotate(1turn)}}@keyframes fade-in{0%{opacity:0}to{opacity:1}}@keyframes fade-out{0%{opacity:1}to{opacity:0}}@keyframes fadeOut{0%{opacity:1}to{opacity:0}}@keyframes fadeInDown{0%{opacity:0;transform:translate3d(0,-100%,0)}to{opacity:1;transform:none}}@keyframes fadeInUp{0%{opacity:0;transform:translate3d(0,100%,0)}to{opacity:1;transform:none}}.ui-button[data-v-0abc262e]{align-items:center;background-color:transparent;border:1px solid transparent;border-radius:3px;color:inherit;cursor:pointer;display:inline-flex;font:inherit;font-family:inherit;font-size:20px;font-weight:500;gap:8px;height:70px;justify-content:center;line-height:1;min-height:70px;outline:none;padding:0 28px;text-decoration:none;transition:background-color .2s ease,border-color .2s ease,color .2s ease;-webkit-user-select:none;-moz-user-select:none;user-select:none;white-space:nowrap}@media screen and (max-width:1024px){.ui-button[data-v-0abc262e]{font-size:16px;height:auto;min-height:40px;padding:10px 24px}}@media screen and (max-width:540px){.ui-button[data-v-0abc262e]{font-size:15px;height:auto;min-height:38px;padding:10px 20px}}.ui-button--large[data-v-0abc262e]{height:70px;min-height:70px;padding:0 68px}@media screen and (max-width:1024px){.ui-button--large[data-v-0abc262e]{font-size:16px;height:auto;min-height:56px;padding:16px 40px}}@media screen and (max-width:540px){.ui-button--large[data-v-0abc262e]{font-size:16px;height:auto;min-height:68px;padding:14px 24px}}.ui-button--full[data-v-0abc262e]{width:100%}.ui-button[data-v-0abc262e]:focus-visible{outline:2px solid rgba(139,29,37,.35);outline-offset:2px}.ui-button--primary[data-v-0abc262e]{background:#8b1d25;border-color:#8b1d25;color:#fff}.ui-button--primary[data-v-0abc262e]:hover:not(:disabled){background:#801b22;border-color:#801b22}.ui-button--secondary[data-v-0abc262e]{background:#fff;border-color:#1e1e1e1f;color:#1e1e1e}.ui-button--secondary[data-v-0abc262e]:hover:not(:disabled){background:#f7f7f7;border-color:#1e1e1e3d}@keyframes partners-marquee-right-923dc07c{0%{transform:translate3d(-50%,0,0)}to{transform:translateZ(0)}}@keyframes partners-marquee-left-923dc07c{0%{transform:translateZ(0)}to{transform:translate3d(-50%,0,0)}}.catalog-contact[data-v-458f0115]{align-items:center;background:#262626;color:#fff;display:flex;max-width:100%;min-width:0;overflow-x:clip;padding-block:56px;position:relative}@media screen and (max-width:1440px){.catalog-contact[data-v-458f0115]{min-height:918px;padding-block:0}}@media screen and (max-width:540px){.catalog-contact[data-v-458f0115]{min-height:0;padding-block:32px 30px}}.catalog-contact__media[data-v-458f0115]{inset:0;isolation:isolate;overflow:hidden;position:absolute}.catalog-contact__image[data-v-458f0115]{display:block;height:100%;inset:0;-o-object-fit:cover;object-fit:cover;-o-object-position:center;object-position:center;position:absolute;width:100%}.catalog-contact__overlay[data-v-458f0115]{background:#0000002e;inset:0;pointer-events:none;position:absolute;z-index:1}.catalog-contact__inner[data-v-458f0115]{padding-block:14px 0;position:relative;width:100%;z-index:1}.catalog-contact__grid[data-v-458f0115]{align-items:center;display:grid;gap:clamp(34px,6vw,90px);grid-template-columns:minmax(0,1.08fr) minmax(300px,.92fr)}@media screen and (max-width:1024px){.catalog-contact__grid[data-v-458f0115]{gap:0;grid-template-columns:1fr}}.catalog-contact__content[data-v-458f0115]{max-width:none;padding:14px 0}@media screen and (max-width:540px){.catalog-contact__content[data-v-458f0115]{padding:0}}.catalog-contact__mobile-expert[data-v-458f0115]{display:none}@media screen and (max-width:540px){.catalog-contact__mobile-expert[data-v-458f0115]{align-items:center;display:flex;gap:12px;margin-bottom:20px}}.catalog-contact__mobile-photo[data-v-458f0115]{background:#242424;border:1px solid #fff;border-radius:50%;flex:0 0 68px;height:68px;overflow:hidden;width:68px}.catalog-contact__mobile-photo img[data-v-458f0115]{display:block;height:100%;-o-object-fit:cover;object-fit:cover;-o-object-position:center;object-position:center;width:100%}.catalog-contact__mobile-role[data-v-458f0115]{color:#ffffff8c;font-size:11px;letter-spacing:.1em;line-height:1.2;margin:0 0 4px;text-transform:uppercase}.catalog-contact__mobile-name[data-v-458f0115]{color:#fff;font-size:21px;font-weight:300;line-height:1.1;margin:0}.catalog-contact__header[data-v-458f0115]{margin:0 0 22px;padding:0}@media screen and (max-width:540px){.catalog-contact__header[data-v-458f0115]{margin-bottom:20px}}.catalog-contact__title[data-v-458f0115]{color:#fff;font-size:40px;font-weight:300;line-height:1.1;margin:0}@media screen and (max-width:1440px){.catalog-contact__title[data-v-458f0115]{font-size:34px}}@media screen and (max-width:540px){.catalog-contact__title[data-v-458f0115]{font-size:31px;letter-spacing:-.05em;line-height:1.05}}.catalog-contact__methods[data-v-458f0115]{display:flex;flex-wrap:wrap;gap:12px;margin:0 0 24px}@media screen and (max-width:1440px){.catalog-contact__methods[data-v-458f0115]{gap:10px;margin-bottom:20px}}@media screen and (max-width:540px){.catalog-contact__methods[data-v-458f0115]{margin-bottom:16px}}.catalog-contact__method[data-v-458f0115]{align-items:center;background-color:transparent;border:none;border:1px solid hsla(0,0%,100%,.4);border-radius:0;color:inherit;color:#fff;cursor:pointer;display:inline-flex;font:inherit;font-size:18px;font-weight:300;gap:7px;line-height:1;min-height:38px;outline:none;padding:7px 17px;transition:background-color .2s ease,color .2s ease,border-color .2s ease}@media screen and (max-width:1440px){.catalog-contact__method[data-v-458f0115]{font-size:16px;min-height:34px;padding:6px 15px}}@media screen and (max-width:540px){.catalog-contact__method[data-v-458f0115]{flex:0 0 calc(50% - 5px);justify-content:center}}@media(min-width:1025px){.catalog-contact__method[data-v-458f0115]:hover{background:#fff;border-color:#fff;color:#1e1e1e}}.catalog-contact__method--active[data-v-458f0115]{background:#fff;border-color:#fff;color:#1e1e1e}.catalog-contact__method-icon[data-v-458f0115]{display:block;flex:0 0 15px;height:15px;width:15px}.catalog-contact__method-icon[data-v-458f0115] svg{display:block;height:100%;width:100%}.catalog-contact__method-icon--max[data-v-458f0115]{flex-basis:14px;height:14px;width:14px}.catalog-contact__form[data-v-458f0115]{display:flex;flex-direction:column;gap:6px;max-width:610px;width:100%}.catalog-contact__honeypot[data-v-458f0115]{height:1px;left:-9999px;opacity:0;overflow:hidden;pointer-events:none;position:absolute;width:1px}.catalog-contact__field[data-v-458f0115]{display:flex;flex-direction:column;padding-bottom:12px;position:relative}.catalog-contact__input[data-v-458f0115]{background:transparent;border:0;border-bottom:1px solid hsla(0,0%,100%,.42);border-radius:0;color:#fff;font-size:20px;font-weight:300;line-height:1.3;outline:none;padding:16px 0 12px;transition:border-color .2s ease,box-shadow .2s ease;width:100%}@media screen and (max-width:1440px){.catalog-contact__input[data-v-458f0115]{font-size:18px;padding:14px 0 10px}}@media screen and (max-width:540px){.catalog-contact__input[data-v-458f0115]{font-size:17px}}.catalog-contact__input[data-v-458f0115]::-moz-placeholder{color:#ffffff8c;font-size:inherit;opacity:1}.catalog-contact__input[data-v-458f0115]::placeholder{color:#ffffff8c;font-size:inherit;opacity:1}.catalog-contact__input[data-v-458f0115]:focus{border-bottom-color:#fff;box-shadow:0 1px #fff}.catalog-contact__textarea[data-v-458f0115]{background:transparent;border:1px solid hsla(0,0%,100%,.42);border-radius:0;color:#fff;font-family:inherit;font-size:20px;font-weight:300;line-height:1.35;max-height:120px;min-height:72px;outline:none;padding:14px 16px;resize:vertical;transition:border-color .2s ease;width:100%}@media screen and (max-width:1440px){.catalog-contact__textarea[data-v-458f0115]{font-size:18px}}@media screen and (max-width:540px){.catalog-contact__textarea[data-v-458f0115]{font-size:17px;min-height:64px;padding:12px 14px}}.catalog-contact__textarea[data-v-458f0115]::-moz-placeholder{color:#ffffff8c;font-size:inherit;opacity:1}.catalog-contact__textarea[data-v-458f0115]::placeholder{color:#ffffff8c;font-size:inherit;opacity:1}.catalog-contact__textarea[data-v-458f0115]:focus{border-color:#fff}.catalog-contact__submit[data-v-458f0115]{border-radius:0;font-size:16px;font-weight:400;letter-spacing:normal;margin-top:6px;min-height:58px;text-transform:none}@media screen and (max-width:1440px){.catalog-contact__submit[data-v-458f0115]{font-size:15px;min-height:54px}}.catalog-contact__consent-wrap[data-v-458f0115]{padding:4px 0 0;position:relative}.catalog-contact__consent[data-v-458f0115]{align-items:flex-start;cursor:pointer;display:flex;gap:12px}.catalog-contact__consent-input[data-v-458f0115]{height:1px;margin:0;opacity:0;pointer-events:none;position:absolute;width:1px}.catalog-contact__consent-input:focus-visible+.catalog-contact__consent-box[data-v-458f0115]{outline:2px solid hsla(0,0%,100%,.45);outline-offset:2px}.catalog-contact__consent-box[data-v-458f0115]{background:transparent;border:1px solid hsla(0,0%,100%,.42);flex:0 0 22px;height:22px;margin-top:1px;position:relative;transition:background-color .2s ease,border-color .2s ease;width:22px}.catalog-contact__consent-text[data-v-458f0115]{color:#ffffffb3;font-size:15px;font-weight:300;line-height:1.4}@media screen and (max-width:540px){.catalog-contact__consent-text[data-v-458f0115]{font-size:14px}}.catalog-contact__consent-link[data-v-458f0115]{color:inherit;text-decoration:underline;text-underline-offset:3px;transition:color .2s ease}@media(min-width:1025px){.catalog-contact__consent-link[data-v-458f0115]:hover{color:#fff}}.catalog-contact__card[data-v-458f0115]{align-self:center;background:#ffffff0d;border:1px solid hsla(0,0%,100%,.25);border-radius:0;color:#fff;display:flex;flex-direction:column;gap:18px;min-height:457px;padding:clamp(26px,4vw,52px)}@media screen and (max-width:540px){.catalog-contact__card[data-v-458f0115]{display:none}}.catalog-contact__expert[data-v-458f0115]{align-items:center;display:flex;gap:12px}.catalog-contact__expert-photo[data-v-458f0115]{border:1px solid #fff;border-radius:50%;flex-shrink:0;height:96px;overflow:hidden;width:96px}@media screen and (max-width:1440px){.catalog-contact__expert-photo[data-v-458f0115]{height:56px;width:56px}}.catalog-contact__expert-photo img[data-v-458f0115]{display:block;height:100%;-o-object-fit:cover;object-fit:cover;-o-object-position:center;object-position:center;width:100%}.catalog-contact__expert-info[data-v-458f0115]{display:flex;flex-direction:column;gap:1px}.catalog-contact__expert-role[data-v-458f0115]{color:#ffffffb3;font-size:17px;line-height:1.2;margin:0;text-transform:none}.catalog-contact__expert-name[data-v-458f0115]{font-size:24px;font-weight:400;line-height:1.1;margin:0}@media screen and (max-width:1440px){.catalog-contact__expert-name[data-v-458f0115]{font-size:20px}}.catalog-contact__card-title[data-v-458f0115]{color:#fff;font-size:clamp(30px,3.2vw,46px);font-weight:300;letter-spacing:-.04em;line-height:1;margin:0;text-transform:none}.catalog-contact__card-text[data-v-458f0115]{color:#ffffffb3;font-size:24px;font-weight:300;line-height:1.3;margin:0}@media screen and (max-width:1440px){.catalog-contact__card-text[data-v-458f0115]{font-size:20px}}@media screen and (max-width:540px){.catalog-contact__card-text[data-v-458f0115]{font-size:15px}}.catalog-contact__card-submit[data-v-458f0115]{background:transparent!important;border-color:#fff!important;border-radius:0;color:#fff!important;font-size:16px;font-weight:400;letter-spacing:normal;margin-top:auto;min-height:58px;text-transform:none}@media screen and (max-width:1440px){.catalog-contact__card-submit[data-v-458f0115]{font-size:15px;min-height:54px}}@media(min-width:1025px){.catalog-contact__card-submit[data-v-458f0115]:hover{background:#fff!important;border-color:#fff!important;color:#1e1e1e!important}}.page[data-v-f0be9abb]{background:#fff;margin-bottom:0;min-height:100%}.catalog-page-section[data-v-f0be9abb]{scroll-margin-top:calc(var(--catalog-sticky-nav-top, 112px) + var(--catalog-sticky-nav-height, 56px) + 16px)}.catalog-contact .catalog-contact__expert-photo img,.floating-expert__avatar img{height:100%;-o-object-fit:cover;object-fit:cover;-o-object-position:center 22%;object-position:center 22%;transform:scale(1.65);transform-origin:50% 24%;width:100%}.catalog-contact .catalog-contact__title{font:300 38px/45.6px Tilda Sans,sans-serif}.catalog-contact .catalog-contact__card-title{font:400 22px/26.4px Tilda Sans,sans-serif;letter-spacing:0}.catalog-contact .catalog-contact__card-text{color:#e7e7e7;font:300 22px/28.16px Tilda Sans,sans-serif}.catalog-contact .catalog-contact__overlay{background:linear-gradient(90deg,#000000c7,#0000008c 55%,#0000007a)}.catalog-contact .catalog-contact__card{background:#00000073;border-color:#ffffff80;border-radius:1px;gap:24px;min-height:0;padding:40px}.catalog-contact .catalog-contact__expert{gap:16px}.catalog-contact .catalog-contact__expert-name{font:400 22px/26.4px Tilda Sans,sans-serif}.catalog-contact .catalog-contact__expert-role{color:#e7e7e7;font:300 13px/18px Tilda Sans,sans-serif}.catalog-contact .catalog-contact__expert-info{gap:8px}.catalog-contact .catalog-contact__methods{display:grid;gap:16px 12px;grid-template-columns:repeat(4,minmax(0,1fr));max-width:610px}.catalog-contact .catalog-contact__method{border-color:#ffffffa6;border-radius:1px;display:flex;flex:none;font:400 17px/18.7px Tilda Sans,sans-serif;gap:12px;height:35px;justify-content:center;min-height:35px;padding:0 8px;position:relative;width:100%}.catalog-contact .catalog-contact__method-icon{flex:0 0 18px;height:18px;width:18px}.catalog-contact .catalog-contact__method-icon svg{display:block;height:100%;width:100%}.catalog-contact :is(.catalog-contact__method,.catalog-contact__card-submit):focus-visible{outline:2px solid #fff;outline-offset:4px}.catalog-contact .catalog-contact__textarea{border-radius:1px}.catalog-contact .catalog-contact__card-submit{border-radius:1px;margin-top:8px}.catalog-contact :is(.catalog-contact__input,.catalog-contact__textarea)::-moz-placeholder{color:#d8d8d8;opacity:1}.catalog-contact :is(.catalog-contact__input,.catalog-contact__textarea)::placeholder{color:#d8d8d8;opacity:1}@media(min-width:1441px){.catalog-contact .catalog-contact__title{font-size:44px;line-height:52.8px}.catalog-contact .catalog-contact__method{font-size:19px;line-height:20.9px}}@media(max-width:1279px){.catalog-contact .catalog-contact__methods{grid-template-columns:repeat(2,minmax(0,1fr))}.catalog-contact .catalog-contact__card{padding:32px}}@media(max-width:1024px){.catalog-contact .catalog-contact__card-title{font-size:20px;line-height:24px}.catalog-contact .catalog-contact__title{font-size:22px;line-height:26.4px}.catalog-contact .catalog-contact__card-text{font-size:15px;line-height:19.2px}}@media(max-width:540px){.catalog-contact .catalog-contact__method{font-size:18px;height:29px;line-height:19.8px;min-height:29px}.catalog-contact .catalog-contact__method-icon{flex-basis:22px;height:22px;width:22px}.catalog-contact .catalog-contact__overlay{background:#000000bf}.catalog-contact .catalog-contact__mobile-name{font:400 20px/24px Tilda Sans,sans-serif}.catalog-contact .catalog-contact__mobile-role{color:#e7e7e7;font:300 13px/18px Tilda Sans,sans-serif;letter-spacing:0;text-transform:none}}@media(prefers-reduced-motion:reduce){.catalog-contact .catalog-contact__method{transition:none}}:root{--owner-rent-ui-brand:#8b1d25;--owner-rent-ui-brand-accent:#8b1d25;--owner-rent-ui-background:#fff;--owner-rent-ui-surface:#f1f1f1;--owner-rent-ui-dark-surface:#262626;--owner-rent-ui-text-primary:#1e1e1e;--owner-rent-ui-text-secondary:#4f4d49;--owner-rent-ui-text-muted:#656462;--owner-rent-ui-border:#e4e4e4;--owner-rent-ui-error:#ef4444;--owner-rent-ui-heading-weight:300;--owner-rent-ui-body-weight:400;--owner-rent-ui-h2-size:38px;--owner-rent-ui-h2-line:45.6px;--owner-rent-ui-h2-compact-line:38px;--owner-rent-ui-h2-wide-size:44px;--owner-rent-ui-h2-wide-line:52.8px;--owner-rent-ui-h2-compact-wide-line:44px;--owner-rent-ui-h2-mobile-size:22px;--owner-rent-ui-h2-mobile-line:26.4px;--owner-rent-ui-control-radius:1px;--owner-rent-ui-focus-width:2px;--owner-rent-ui-focus-offset:3px;--owner-rent-ui-motion:.2s ease}@keyframes floating-expert-enter-cd0a1259{to{opacity:1;transform:translateY(0)}}@keyframes floating-expert-pulse-cd0a1259{0%,to{box-shadow:0 22px 62px #12121233}42%{box-shadow:0 22px 62px #12121233,0 0 0 12px #12121214}58%{box-shadow:0 26px 74px #1212123d,0 0 0 22px #12121200}}.layout[data-v-47bd53e9]{display:flex;flex-direction:column;max-width:100%;min-height:100vh;min-width:0;overflow-x:clip;position:relative}.layout__content[data-v-47bd53e9]{flex:1;max-width:100%;min-width:0;overflow-x:clip;--layout-header-offset-top:32px}@media screen and (max-width:540px){.layout__content[data-v-47bd53e9]{--layout-header-offset-top:16px}}
+@keyframes ymaps3--controls-spinner-spin{0%{transform:rotate(0deg)}to{transform:rotate(1turn)}}
+
+/* Layout, typography and responsive rules come unchanged from the reference. */
+@import url("./daniilterekh-prog.github.io/barn-estate-homepage-clone/kommercheskaya-nedvizhimost/css/node-ui-kit.css");
+@import url("./daniilterekh-prog.github.io/barn-estate-homepage-clone/kommercheskaya-nedvizhimost/css/node-listing.css");
+@import url("./daniilterekh-prog.github.io/barn-estate-homepage-clone/kommercheskaya-nedvizhimost/css/node-header.css");
+@import url("./daniilterekh-prog.github.io/barn-estate-homepage-clone/kommercheskaya-nedvizhimost/css/selection-layout.css");
+@import url("./daniilterekh-prog.github.io/barn-estate-homepage-clone/kommercheskaya-nedvizhimost/css/selection-cards.css");
+@import url("./daniilterekh-prog.github.io/barn-estate-homepage-clone/kommercheskaya-nedvizhimost/css/node-adaptation.css");
+
+/* Keep the two-word brand together without preventing the rest of a sentence from wrapping. */
+.barn-estate-name{overflow-wrap:normal!important;word-break:normal!important;hyphens:none!important}
+
+/* CTA background layers span the section; form layout stays on its existing grid. */
+html body [data-cta-bleed]{position:relative!important;isolation:isolate;overflow:hidden!important}
+
+/* Shared laptop hero policy. Primary heroes are 200px shorter; typography stays in the page kit. */
+@layer barn-hero-laptop {
+ @media (min-width:1025px) and (max-width:1919px), (min-width:1920px) and (max-height:1000px) {
+  body {--hero-laptop-main:620px;--hero-laptop-node:444px;--hero-laptop-lot:520px;}
+  @media(min-width:1441px){body{--hero-laptop-main:760px;--hero-laptop-node:494px;--hero-laptop-lot:650px;}}
+  body[data-node-shell]{--hero-laptop-node:var(--hero-laptop-main);}
+ }
+}
+
+/* Header derived from owner-sale; regenerate with main-site/tools/sync-node-shell.cjs. */
+@layer barn-node-shell-header {
+
+}
+
+/* Media header v1.1.0, mobile sticky menu 2026-11-04. Only headers opt into this component. */
+html body.barnes-media-header {--mh-gutter:calc(-26.66667px + 6.59722vw);--mh-pad:32px;--mh-logo:48px;--mh-panel-offset:41px;--mh-ink:#1e1e1e;}
+/* Owner/ambassador anchors retain their nodes, text and handlers. Only center/right change. */
+@media(min-width:1921px) {html body.barnes-media-header {--mh-gutter:0px;}}
+@media(max-width:768px) {html body.barnes-media-header {--mh-gutter:calc(8.94118px + 1.96078vw);}}
+@media(max-width:540px) {
+ html body.barnes-media-header {--mh-pad:16px;--mh-logo:36px;--mh-panel-offset:25px;}
+}
+
+/* Media has WA / Telegram / MAX above hero, WA / MAX / Telegram after hero. */
+
+/* One mobile row: menu / logo / contacts. Page anchors remain available on desktop. */
+
+/* Identical glyph inset on Media and owner/partner headers; retain the 44px touch target. */
+
+/* Direction pages use the burger only, without a second navigation row. */
+
+/* The sticky mobile bar owns its centered logo, even when legacy node CSS hid it. */
+@layer barn-node-shell-header {
+}
+
+/* Five direction pages share owner-sale header/hero metrics. Page data stays local. */
+@layer barn-node-shell {
+ html body[data-node-shell] {--node-hero-height:820px;--node-title-lines:1;}
+ @media(min-width:1441px){html body[data-node-shell]{--node-hero-height:960px;}}
+ @media(max-width:767px){html body[data-node-shell]{--node-title-lines:2;}}
+ @media(max-width:540px){html body[data-node-shell]{--node-hero-height:560px;}}
+ @media(max-width:389px){html body[data-node-shell]{--node-title-lines:3;}}
+ /* The international page already suppresses its legacy quick-link content. */
+}
+
+/* Vertical roles from the approved home-spacing.css / UI-kit v1.0.3.
+ * Scope: five direction nodes. Each interval is owned once, never margin + gap. */
+@layer barn-node-spacing {
+ html body[data-node-shell] {
+  --node-section-space:clamp(72px,6vw,100px);
+  --node-brow-gap:25px;--node-heading-content:40px;--node-copy-gap:24px;
+ }
+ @media(max-width:1024px){html body[data-node-shell]{--node-brow-gap:12px;}}
+ @media(max-width:540px){html body[data-node-shell]{--node-section-space:48px;--node-heading-content:28px;--node-copy-gap:16px;}}
+ html body[data-node-shell] :is(.catalog-best-offers,.catalog-map,.catalog-grid:not(.node-map-listing),.catalog-intro,.departments-section,.news-section,.catalog-seo-links,.catalog-faq,.catalog-contact) {
+  padding-block:var(--node-section-space)!important;margin-block:0!important;
+ }
+ html body[data-node-shell] :is(.catalog-best-offers__title,.catalog-map__title,.catalog-grid__title,.catalog-intro__title,.departments-section__title,.news-section__title,.catalog-faq__title,.catalog-consultation__subtitle,.catalog-consultation__mobile-title,.catalog-contact__title) {margin-block:0!important;}
+ /* Start-sales: the slider is a sibling of the heading container. */
+ /* Map: description belongs to the heading, then one content interval. */
+ /* Catalog controls keep their own existing internal intervals. */
+ /* Editorial intro: eyebrow -> H2 -> description, without a second flex gap. */
+ /* Directions/news: the parent gap owns heading -> cards. */
+ /* FAQ has no separate heading wrapper: margin belongs to the answer grid. */
+ /* Consultation owns its spacing inside the photo. Outer padding exposes dark bands. */
+ /* Photo CTA: retain the card's inner grid, normalize heading and form spacing. */
+ html body[data-node-shell] :is(.catalog-consultation__header,.catalog-consultation__mobile-header,.catalog-contact__header) {row-gap:0!important;margin:0 0 var(--node-heading-content)!important;}
+ html body[data-node-shell] :is(.catalog-consultation__methods,.catalog-contact__methods) {margin-bottom:var(--node-copy-gap)!important;}
+}
+/* Editorial images use one frame and end at the introductory copy, above its action. */
+@layer barn-node-spacing {
+}
+
+/* Match apparent portrait distance; the office background still reaches every CTA edge. */
+@layer barn-node-spacing {
+}
+
+/* FAQ columns share question/answer tracks, so wrapping and expansion keep paired rows aligned. */
+@layer barn-node-spacing {
+}
+
+/* Final contact CTA: city layout/fields, shared by all five nodes.
+ * Original source: city/css/document-desktop.css; local backgrounds remain untouched. */
+@layer barn-node-spacing {html body[data-node-shell] .catalog-contact__mobile-expert{display:none !important}@media screen and (max-width:540px){html body[data-node-shell] .catalog-contact__mobile-expert{align-items:center !important;display:flex !important;gap:12px !important;margin-bottom:20px !important}}html body[data-node-shell] .catalog-contact__mobile-photo{background:#242424 !important;border:1px solid #fff !important;border-radius:50% !important;flex:0 0 68px !important;height:68px !important;overflow:hidden !important;width:68px !important}html body[data-node-shell] .catalog-contact__mobile-photo img{display:block !important;height:100% !important;-o-object-fit:cover !important;object-fit:cover !important;-o-object-position:center !important;object-position:center !important;width:100% !important}html body[data-node-shell] .catalog-contact__mobile-role{color:#ffffff8c !important;font-size:11px !important;letter-spacing:.1em !important;line-height:1.2 !important;margin:0 0 4px !important;text-transform:uppercase !important}html body[data-node-shell] .catalog-contact__mobile-name{color:#fff !important;font-size:21px !important;font-weight:300 !important;line-height:1.1 !important;margin:0 !important}html body[data-node-shell] .catalog-contact__form{display:flex !important;flex-direction:column !important;gap:6px !important;max-width:610px !important;width:100% !important}html body[data-node-shell] .catalog-contact__honeypot{height:1px !important;left:-9999px !important;opacity:0 !important;overflow:hidden !important;pointer-events:none !important;position:absolute !important;width:1px !important}html body[data-node-shell] .catalog-contact__field{display:flex !important;flex-direction:column !important;padding-bottom:12px !important;position:relative !important}html body[data-node-shell] .catalog-contact__input{background:transparent !important;border:0 !important;border-bottom:1px solid hsla(0,0%,100%,.42) !important;border-radius:0 !important;color:#fff !important;font-size:20px !important;font-weight:300 !important;line-height:1.3 !important;outline:none !important;padding:16px 0 12px !important;transition:border-color .2s ease,box-shadow .2s ease !important;width:100% !important}@media screen and (max-width:1440px){html body[data-node-shell] .catalog-contact__input{font-size:18px !important;padding:14px 0 10px !important}}@media screen and (max-width:540px){html body[data-node-shell] .catalog-contact__input{font-size:17px !important}}html body[data-node-shell] .catalog-contact__input::-moz-placeholder{color:#ffffff8c !important;font-size:inherit !important;opacity:1 !important}html body[data-node-shell] .catalog-contact__input::placeholder{color:#ffffff8c !important;font-size:inherit !important;opacity:1 !important}html body[data-node-shell] .catalog-contact__input:focus{border-bottom-color:#fff !important;box-shadow:0 1px #fff !important}html body[data-node-shell] .catalog-contact__textarea{background:transparent !important;border:1px solid hsla(0,0%,100%,.42) !important;border-radius:0 !important;color:#fff !important;font-family:inherit !important;font-size:20px !important;font-weight:300 !important;line-height:1.35 !important;max-height:120px !important;min-height:72px !important;outline:none !important;padding:14px 16px !important;resize:vertical !important;transition:border-color .2s ease !important;width:100% !important}@media screen and (max-width:1440px){html body[data-node-shell] .catalog-contact__textarea{font-size:18px !important}}@media screen and (max-width:540px){html body[data-node-shell] .catalog-contact__textarea{font-size:17px !important;min-height:64px !important;padding:12px 14px !important}}html body[data-node-shell] .catalog-contact__textarea::-moz-placeholder{color:#ffffff8c !important;font-size:inherit !important;opacity:1 !important}html body[data-node-shell] .catalog-contact__textarea::placeholder{color:#ffffff8c !important;font-size:inherit !important;opacity:1 !important}html body[data-node-shell] .catalog-contact__textarea:focus{border-color:#fff !important}html body[data-node-shell] .catalog-contact__consent-wrap{padding:4px 0 0 !important;position:relative !important}html body[data-node-shell] .catalog-contact__consent{align-items:flex-start !important;cursor:pointer !important;display:flex !important;gap:12px !important}html body[data-node-shell] .catalog-contact__consent-input{height:1px !important;margin:0 !important;opacity:0 !important;pointer-events:none !important;position:absolute !important;width:1px !important}html body[data-node-shell] .catalog-contact__consent-input:focus-visible+.catalog-contact__consent-box{outline:2px solid hsla(0,0%,100%,.45) !important;outline-offset:2px !important}html body[data-node-shell] .catalog-contact__consent-box{background:transparent !important;border:1px solid hsla(0,0%,100%,.42) !important;flex:0 0 22px !important;height:22px !important;margin-top:1px !important;position:relative !important;transition:background-color .2s ease,border-color .2s ease !important;width:22px !important}html body[data-node-shell] .catalog-contact__consent-text{color:#ffffffb3 !important;font-size:15px !important;font-weight:300 !important;line-height:1.4 !important}@media screen and (max-width:540px){html body[data-node-shell] .catalog-contact__consent-text{font-size:14px !important}}html body[data-node-shell] .catalog-contact__consent-link{color:inherit !important;text-decoration:underline !important;text-underline-offset:3px !important;transition:color .2s ease !important}@media(min-width:1025px){html body[data-node-shell] .catalog-contact__consent-link:hover{color:#fff !important}}html body[data-node-shell] .catalog-contact__card{align-self:center !important;background:#ffffff0d !important;border:1px solid hsla(0,0%,100%,.25) !important;border-radius:0 !important;color:#fff !important;display:flex !important;flex-direction:column !important;gap:18px !important;min-height:457px !important;padding:clamp(26px,4vw,52px) !important}@media screen and (max-width:540px){html body[data-node-shell] .catalog-contact__card{display:none !important}}html body[data-node-shell] .catalog-contact__expert{align-items:center !important;display:flex !important;gap:12px !important}html body[data-node-shell] .catalog-contact__expert-photo{border:1px solid #fff !important;border-radius:50% !important;flex-shrink:0 !important;height:96px !important;overflow:hidden !important;width:96px !important}@media screen and (max-width:1440px){html body[data-node-shell] .catalog-contact__expert-photo{height:56px !important;width:56px !important}}html body[data-node-shell] .catalog-contact__expert-photo img{display:block !important;height:100% !important;-o-object-fit:cover !important;object-fit:cover !important;-o-object-position:center !important;object-position:center !important;width:100% !important}html body[data-node-shell] .catalog-contact__expert-info{display:flex !important;flex-direction:column !important;gap:1px !important}html body[data-node-shell] .catalog-contact__expert-role{color:#ffffffb3 !important;font-size:17px !important;line-height:1.2 !important;margin:0 !important;text-transform:none !important}html body[data-node-shell] .catalog-contact__expert-name{font-size:24px !important;font-weight:400 !important;line-height:1.1 !important;margin:0 !important}@media screen and (max-width:1440px){html body[data-node-shell] .catalog-contact__expert-name{font-size:20px !important}}
+}
+@layer barn-node-spacing {
+ html body[data-node-shell] .catalog-contact__card {background:rgba(8,10,13,.52)!important;border-color:rgba(255,255,255,.3)!important;}
+ html body[data-node-shell] .catalog-contact__card-submit {margin-top:auto!important;}
+ html body[data-node-shell] :is(.catalog-contact__mobile-photo,.catalog-contact__expert-photo) {position:relative!important;background:transparent!important;border:0!important;outline:0!important;box-shadow:none!important;isolation:isolate;}
+ html body[data-node-shell] :is(.catalog-contact__mobile-photo,.catalog-contact__expert-photo) img {position:absolute!important;inset:0!important;max-width:none!important;width:100%!important;height:100%!important;object-fit:cover!important;object-position:var(--node-contact-position,50% 0)!important;transform:scale(var(--node-contact-zoom,1.35))!important;transform-origin:50% 0!important;border:0!important;outline:0!important;box-shadow:none!important;}
+ html body[data-node-shell] .catalog-contact__method {background:transparent!important;color:#fff!important;}
+ html body[data-node-shell] .catalog-contact__method:is(.catalog-contact__method--active,[aria-selected="true"],[aria-pressed="true"]) {background:#fff!important;border-color:#fff!important;color:#1e1e1e!important;}
+ html body[data-node-shell] .catalog-contact__input:focus-visible,html body[data-node-shell] .catalog-contact__textarea:focus-visible {outline:2px solid var(--kit-focus-accent)!important;outline-offset:3px!important;}
+}
+
+@layer barn-node-spacing {
+ html body[data-node-shell] .catalog-contact__card-text {color:rgba(255,255,255,.7)!important;}
+ html body[data-node-shell] .catalog-contact__method {box-sizing:border-box!important;height:46px!important;min-height:46px!important;padding:10px 8px!important;}
+ html body[data-node-shell] .catalog-contact__mobile-photo {flex-shrink:0!important;}
+}
+@layer barn-node-spacing {
+ @media(max-width:360px){html body[data-node-shell] .catalog-contact__mobile-expert {min-height:80px!important;}}
+}
+
+/* Generated from the approved home reference by sync-node-recommendations.cjs. */
+@layer barn-node-recommendations {
+
+}
+/* Only node-specific integration. Card presentation is generated from the home source. */
+@layer barn-node-recommendations {
+}
+@layer barn-node-recommendations {
+}
+@layer barn-node-recommendations {
+ /* Splide's live horizontal track padding is zero in the home instance. */
+}
+
+/* Generated from the current katalog-nedvizhimosti filter sources; see sync-node-filters.cjs. */
+@layer barn-node-filters {
+/* kit/_shared/source.css */
+
+/* kit/_shared/ui-kit.css */
+
+/* kit/_shared/listing-mode.css */
+
+/* listing.css */
+
+/* kit-v1/home-typography.css */
+
+
+/* kit-v1/home-spacing.css */
+
+
+/* kit-v1/home-buttons.css */
+
+
+/* catalog-kit-v1.css */
+
+/* kit/filters-modal/filters-modal.css */
+
+/* kit/quick-filter-dropdowns/quick-filters.css */
+
+/* catalog-filters.css */
+
+/* kit/quick-filter-dropdowns/brand-filters.css */
+
+/* map-view/reference-map.css */
+
+/* catalog-map.css */
+
+}
+/* Integration with existing node data/controllers; shared catalogue presentation above. */
+@layer barn-node-filters {
+ html body[data-node-shell] {--node-filter-size:18px;}
+ @media(min-width:1441px){html body[data-node-shell]{--node-filter-size:20px;}}
+ @media(max-width:540px){html body[data-node-shell]{--node-filter-size:17px;}}
+}
+@layer barn-node-filters {
+}
+@layer barn-node-filters {
+}
+@layer barn-node-filters {
+}
+@layer barn-node-filters {
+}
+/* Map shell follows the Resort overlay; filter captions share the same left edge. */
+@layer barn-node-filters {
+}
+@layer barn-node-filters {
+}
+@layer barn-node-filters {
+}
+/* Give the desktop listing sort its own room inside the right page gutter. */
+@layer barn-node-filters {
+}
+/* Map parameters share listing state; the deal uses the listing's segmented control. */
+@layer barn-node-filters {
+}
+
+/* Small decorative up/down SVG for sorting; kept outside mutable button captions. */
+@layer barn-node-filters {
+}
+/* Mobile count is a real grid item; native nodes use a class instead of #results-count. */
+@layer barn-node-filters {
+}
+@layer barn-node-filters {
+}
+
+@layer barn-layout-grid {
+/* Horizontal grid from the approved homepage home-spacing.css, UI-kit v1.0.3.
+ * One inset per content frame. Full-bleed photos/CTA, split-form interiors and
+ * the resort FAQ's explicitly retained composition are separate contracts. */
+:root {
+  --barn-page-gutter: clamp(24px, calc(-26.66667px + 6.59722vw), 100px);
+}
+@media(max-width:540px) { :root { --barn-page-gutter:22px; } }
+@media(min-width:1921px) { :root { --barn-page-gutter:0px; } }
+/* Hero and header must follow the same grid as the page content. */
+html body.barnes-media-header { --mh-gutter:var(--barn-page-gutter)!important; }
+/* The footer used to add a section gutter and a second container gutter. */
+/* City/international exports still carried older container breakpoints. */
+/* These two lot-page frames were missing the shared content cap. */
+/* Keep text over project photos on the common grid; photos stay full bleed. */
+
+/* The photographic consultation keeps its full-bleed media; only its content
+ * inset follows the page grid. A named layer also isolates the old generated
+ * CTA adapter's high-specificity padding rules. */
+
+/* Mobile newsletter photography spans the canvas; only the copy owns gutters. */
+
+}
+
+/* Shared page navigation; deliberately outside the header and normal flow. */
+/* Keep the original footprint so neither hero content nor the header moves. */
+
+/* Canonical footer text-link states for all thirteen current BARN Estate pages. */
+
+/* UI-kit 1.0.3 compact chips and existing node section/heading roles. */
+@layer barn-node-spacing {
+}
+
+/* Generated from approved home NewsSection by sync-node-news.cjs. */
+@layer barn-node-spacing {
+}
+
+/* City quiz styles, shared once across five nodes. */
+/* Use the canonical semantic grays, rather than legacy low-opacity placeholders. */
+/* Keep the footer's primary action reachable while its button is on screen. */
+
+/* Homepage quiz: new controls inherit the owner/ambassador reference palette. */
+
+/* Keep one dialog frame through every quiz step; only the body scrolls. */
+
+/* Narrow quiz column: keep channel labels readable, including phone landscape. */
+
+/* One geometry/type contract per button role. Preserve fill/outline/inverse colors. */
+/* Compact choices retain a smaller footprint, sharing radius and regular weight. */
+
+/* Rectangular quiz choices use the same 1px corner as all CTA buttons. */
+
+/* Shared expert dialog, based on the approved homepage quiz geometry. */
+@layer barn-node-spacing {
+}
+@layer barn-node-spacing {
+ /* Explicit grid tracks prevent legacy flex alignment from shrinking different dialogs. */
+}
+
+/* Generated by sync-node-footer.cjs from approved homepage. */
+@layer barn-node-spacing {
+}
+
+/* Footer contract from prodazha_sobstvennikam/owner-sale.css.
+   Base snapshot rules use the same data-v-6eb18211 scope on both pages. */
+
+/* Geometry, colors and markup come from the original source.css modal contract. */
+
+/* Dropdown markup/geometry follow front.barnes.vsavr.ru's catalog quick filters. */
+
+/* Native checkbox semantics; BARNES inline-filter typography and wine state. */
+/* Account for text centering inside different-height controls, not only grid-gap. */
+
+/* Commercial adapter for the 12 October reference: no residential market row. */
+/* Listing titles occupy one stable line; keep the full text in the DOM. */
+/* Selection carousel keeps its geometry while long names use one line. */
+
+/* One generated room spans the whole CTA, including behind Alina. */
+/* Keep the portrait at desktop scale instead of enlarging/cropping it on ultrawide screens. */
+
+/* Match Alina's circle framing to the final CTA: centered face, more room around it. */
+
+/* Approved BARN Estate home reference v1.0.0, 2026-11-01.
+ * Commercial hero, portraits, 2x2 channels and catalog state remain exceptions. */
+body.commercial-node {
+ --commercial-section-space:clamp(72px,6vw,100px);
+ --commercial-gutter:clamp(24px,calc(-26.66667px + 6.59722vw),100px);
+ --commercial-heading:38px;--commercial-action-size:17px;--commercial-action-pad:36px;
+ --commercial-action-height:70px;--commercial-eyebrow:14px;--commercial-eyebrow-gap:25px;--commercial-content-gap:40px;
+}
+html body.commercial-node .base-container[class] {box-sizing:border-box;width:100%;max-width:1920px!important;margin-inline:auto;padding-inline:var(--commercial-gutter)!important;}
+html body.commercial-node :is(.catalog-consultation__subtitle,.catalog-consultation__mobile-title,.catalog-contact__title)[class] {letter-spacing:normal!important;}
+html body.commercial-node :is(.catalog-consultation__methods,.catalog-contact__methods)[class] {grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;}
+html body.commercial-node :is(.catalog-consultation__method,.catalog-contact__method)[class] {
+ --contact-icon-size:18px;font-size:17px!important;font-weight:400;line-height:1.1;box-sizing:border-box;
+ min-height:46px;height:46px;padding:10px 8px!important;border-radius:1px;grid-template-columns:18px 4.8em;
+}
+html body.commercial-node :is(.catalog-consultation__method-icon,.catalog-contact__method-icon)[class] {width:18px;height:18px;flex-basis:18px;}
+/* Cards retain their approved pre-kit styling, including addresses and facts. */
+@media(min-width:1441px){body.commercial-node {--commercial-heading:44px;--commercial-action-size:19px;--commercial-action-pad:47px;}}
+@media(min-width:1921px){body.commercial-node {--commercial-gutter:0px;}}
+@media(max-width:1024px){body.commercial-node {--commercial-eyebrow:12px;--commercial-eyebrow-gap:12px;}}
+@media(max-width:540px){
+ body.commercial-node {--commercial-section-space:48px;--commercial-gutter:22px;--commercial-heading:22px;--commercial-action-size:18px;--commercial-action-pad:24px;--commercial-action-height:58px;--commercial-content-gap:28px;}
+ html body.commercial-node :is(.catalog-consultation__method,.catalog-contact__method)[class],html body.commercial-node .catalog-feedback-modal .feedback-modal__channels button {font-size:18px!important;}
+}
+
+/* Catalogue composition using the approved homepage search, choice and spacing roles. */
+/* One continuous strip echoes the homepage search bar; labels carry the hierarchy. */
+/* Optional collections sit between the search and the result controls. */
+/* Dropdown choices use the quiet selected state from the kit's quiz choices. */
+
+/* Two quick choices; advanced criteria stay in the shared full form. */
+
+/* Restore all four quick parameters on phones in a shared 2x2 grid. */
+
+/* Resort integration: same reference geometry, isolated from cards and headers. */
+
+/* Light full form copied from catalogue role overrides. */
+/* Map quick controls share the same boxed geometry; the map itself is unchanged. */
+/* Measured full-dialog geometry and typography from the reference. */
+/* Legacy chip labels must not paint a second dark rectangle over the selection. */
+
+/* Commercial differences only; card rules deliberately absent. */
+body.commercial-node{--resort-content-gap:var(--commercial-content-gap,40px)}
+
+/* Shared page navigation; deliberately outside the header and normal flow. */
+/* Keep the original footprint so neither hero content nor the header moves. */
+
+/* Geometry, colors and markup come from the original source.css modal contract. */
+
+/* Dropdown markup/geometry follow front.barnes.vsavr.ru's catalog quick filters. */
+
+/* Native checkbox semantics; BARNES inline-filter typography and wine state. */
+/* Account for text centering inside different-height controls, not only grid-gap. */
+
+/* Commercial adapter for the 12 October reference: no residential market row. */
+/* Listing titles occupy one stable line; keep the full text in the DOM. */
+/* Selection carousel keeps its geometry while long names use one line. */
+
+/* One generated room spans the whole CTA, including behind Alina. */
+/* Keep the portrait at desktop scale instead of enlarging/cropping it on ultrawide screens. */
+
+/* Match Alina's circle framing to the final CTA: centered face, more room around it. */
+
+/* Approved BARN Estate home reference v1.0.0, 2026-11-01.
+ * Commercial hero, portraits, 2x2 channels and catalog state remain exceptions. */
+body.commercial-node {
+ --commercial-section-space:clamp(72px,6vw,100px);
+ --commercial-gutter:clamp(24px,calc(-26.66667px + 6.59722vw),100px);
+ --commercial-heading:38px;--commercial-action-size:17px;--commercial-action-pad:36px;
+ --commercial-action-height:70px;--commercial-eyebrow:14px;--commercial-eyebrow-gap:25px;--commercial-content-gap:40px;
+}
+html body.commercial-node .base-container[class] {box-sizing:border-box;width:100%;max-width:1920px!important;margin-inline:auto;padding-inline:var(--commercial-gutter)!important;}
+html body.commercial-node :is(.catalog-consultation__subtitle,.catalog-consultation__mobile-title,.catalog-contact__title)[class] {letter-spacing:normal!important;}
+html body.commercial-node :is(.catalog-consultation__methods,.catalog-contact__methods)[class] {grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;}
+html body.commercial-node :is(.catalog-consultation__method,.catalog-contact__method)[class] {
+ --contact-icon-size:18px;font-size:17px!important;font-weight:400;line-height:1.1;box-sizing:border-box;
+ min-height:46px;height:46px;padding:10px 8px!important;border-radius:1px;grid-template-columns:18px 4.8em;
+}
+html body.commercial-node :is(.catalog-consultation__method-icon,.catalog-contact__method-icon)[class] {width:18px;height:18px;flex-basis:18px;}
+/* Cards retain their approved pre-kit styling, including addresses and facts. */
+@media(min-width:1441px){body.commercial-node {--commercial-heading:44px;--commercial-action-size:19px;--commercial-action-pad:47px;}}
+@media(min-width:1921px){body.commercial-node {--commercial-gutter:0px;}}
+@media(max-width:1024px){body.commercial-node {--commercial-eyebrow:12px;--commercial-eyebrow-gap:12px;}}
+@media(max-width:540px){
+ body.commercial-node {--commercial-section-space:48px;--commercial-gutter:22px;--commercial-heading:22px;--commercial-action-size:18px;--commercial-action-pad:24px;--commercial-action-height:58px;--commercial-content-gap:28px;}
+ html body.commercial-node :is(.catalog-consultation__method,.catalog-contact__method)[class],html body.commercial-node .catalog-feedback-modal .feedback-modal__channels button {font-size:18px!important;}
+}
+
+/* Catalogue composition using the approved homepage search, choice and spacing roles. */
+/* One continuous strip echoes the homepage search bar; labels carry the hierarchy. */
+/* Optional collections sit between the search and the result controls. */
+/* Dropdown choices use the quiet selected state from the kit's quiz choices. */
+
+/* Two quick choices; advanced criteria stay in the shared full form. */
+
+/* Restore all four quick parameters on phones in a shared 2x2 grid. */
+
+/* Resort integration: same reference geometry, isolated from cards and headers. */
+
+/* Light full form copied from catalogue role overrides. */
+/* Map quick controls share the same boxed geometry; the map itself is unchanged. */
+/* Measured full-dialog geometry and typography from the reference. */
+/* Legacy chip labels must not paint a second dark rectangle over the selection. */
+
+/* Commercial differences only; card rules deliberately absent. */
+body.commercial-node{--resort-content-gap:var(--commercial-content-gap,40px)}

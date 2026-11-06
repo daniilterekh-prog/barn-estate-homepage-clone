@@ -1,0 +1,11 @@
+/* Only runtime state and captured carousel sizing; source design stays in source.css. */
+[hidden] { display: none !important; }
+.source-form-status { margin-top: 12px; font-size: 14px; line-height: 1.4; }
+.news-section .splide__slide { flex-shrink: 0; margin-right: 40px; width: calc((100% - 80px) / 3) !important; }
+.catalog-best-offers .splide__list { transition: transform .35s; }
+.catalog-best-offers .splide__slide { flex-shrink: 0; }
+.source-map-expanded { position: fixed !important; inset: 0 !important; width: 100vw !important; height: 100dvh !important; z-index: 1200 !important; }
+@media (max-width: 1024px) { .news-section .splide__slide { width: calc((100% - 40px) / 2) !important; } }
+@media (max-width: 560px) { .news-section .splide__slide { width: 100% !important; margin-right: 24px; } }
+@media (max-width: 767px) { .catalog-grid__item:nth-child(n+6):not(.source-revealed) { display: none; } }
+@media (prefers-reduced-motion: reduce) { .splide__list { transition: none !important; } }

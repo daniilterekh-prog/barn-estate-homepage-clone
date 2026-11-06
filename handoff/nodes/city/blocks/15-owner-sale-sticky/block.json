@@ -1,0 +1,17 @@
+{
+  "id": "15-owner-sale-sticky",
+  "title": "Закреплённый хедер",
+  "kind": "owner-sale-sticky",
+  "html": "../../html/15-owner-sale-sticky.html",
+  "css": "../../css/15-owner-sale-sticky.css",
+  "js": "../../js/15-owner-sale-sticky.js",
+  "preview": "index.html",
+  "dependencies": [
+    "../../css/page.css",
+    "../../js/blocks-runtime.js",
+    "../../assets/",
+    "../../js/expert-quiz.js"
+  ],
+  "assets": "assets.json",
+  "integrationMode": "portable-adapter"
+}

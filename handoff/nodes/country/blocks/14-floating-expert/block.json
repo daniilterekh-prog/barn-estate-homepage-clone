@@ -1,0 +1,17 @@
+{
+  "id": "14-floating-expert",
+  "title": "Михаил Долгов",
+  "kind": "floating-expert",
+  "html": "../../html/14-floating-expert.html",
+  "css": "../../css/14-floating-expert.css",
+  "js": "../../js/14-floating-expert.js",
+  "preview": "index.html",
+  "dependencies": [
+    "../../css/page.css",
+    "../../js/blocks-runtime.js",
+    "../../assets/",
+    "../../js/expert-quiz.js"
+  ],
+  "assets": "assets.json",
+  "integrationMode": "portable-adapter"
+}

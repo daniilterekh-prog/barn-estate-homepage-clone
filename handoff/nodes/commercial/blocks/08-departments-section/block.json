@@ -1,0 +1,17 @@
+{
+  "id": "08-departments-section",
+  "title": "Недвижимость для жизни и инвестиций",
+  "kind": "departments-section",
+  "html": "../../html/08-departments-section.html",
+  "css": "../../css/08-departments-section.css",
+  "js": "../../js/08-departments-section.js",
+  "preview": "index.html",
+  "dependencies": [
+    "../../css/page.css",
+    "../../js/blocks-runtime.js",
+    "../../assets/",
+    "../../js/expert-quiz.js"
+  ],
+  "assets": "assets.json",
+  "integrationMode": "portable-adapter"
+}

@@ -1,0 +1,129 @@
+/* Country data exceptions only. Design contracts are copied from /kurortnaya/. */
+/* Keep both art-directed hero images inside the existing cover-sized media box. */
+html body.country-node-page .catalog-hero__media picture {display:block;width:100%;height:100%;}
+html body.country-node-page .catalog-hero__media .catalog-hero__image {object-position:60% center;}
+@media (max-width:540px) {
+  html body.country-node-page .catalog-hero__media .catalog-hero__image {object-position:center;}
+}
+/* Give the country editorial heading two lines without shrinking its type. */
+@media (min-width:1280px) {
+  html body.country-node-page .catalog-intro__inner[class] {
+    grid-template-columns:minmax(660px,1.1fr) minmax(0,.9fr);
+  }
+}
+.country-node-page .catalog-grid__item[hidden],
+.country-node-page .country-catalog-empty[hidden] { display:none!important; }
+.country-node-page .catalog-grid__list { align-items:stretch; }
+.country-node-page .apartment-card--catalog { height:100%; }
+.country-node-page .apartment-card--catalog .apartment-card__body { flex:1; }
+/* Keep every catalogue card the same height when a title is long or loads late. */
+html body.country-node-page .catalog-grid .apartment-card__name[class] {
+  display:block;
+  min-width:0;
+  max-width:100%;
+}
+html body.country-node-page .catalog-grid .apartment-card__name-text[class] {
+  display:block;
+  min-width:0;
+  max-width:100%;
+  height:1.12em;
+  line-height:1.12;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+}
+.country-node-page .apartment-card--catalog .apartment-card__address { order:0; }
+html body.country-node-page .apartment-card--catalog :is(.apartment-card__call-btn,.apartment-card__detail-btn)[class] {
+  font-family:"Tilda Sans","Tilda Sans Fallback",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  line-height:1;
+}
+.country-node-page .catalog-mode-filters .catalog-quick-filters__chevron {
+  border-right:1px solid #4f4d49; border-bottom:1px solid #4f4d49; width:10px; height:10px;
+}
+.country-node-page .catalog-best-offers__title { color:#1e1e1e; }
+.country-node-page .catalog-best-offers__slider-row { margin-top:0; }
+/* Shared contact controls and mobile sticky header from the Kurortnaya node. */
+html body.country-node-page :is(.catalog-consultation__method,.catalog-contact__method)[class] {
+  --contact-icon-size:18px;
+  display:grid;
+  grid-template-columns:var(--contact-icon-size) 4.8em;
+  gap:8px;
+  text-align:left;
+}
+html body.country-node-page :is(.catalog-consultation__method-icon,.catalog-contact__method-icon)[class] {
+  width:var(--contact-icon-size);
+  height:var(--contact-icon-size);
+}
+html body.country-node-page .catalog-sticky__mobile-actions { display:none; }
+@media (max-width:540px) {
+  html body.country-node-page .catalog-header-ready .site-header__top {display:grid;grid-template-columns:44px minmax(0,1fr) 44px;align-items:center;}
+  html body.country-node-page .catalog-header-ready .site-header__left {display:contents;transform:none;}
+  html body.country-node-page .catalog-header-ready .site-header__mobile-phone {display:flex;align-items:center;justify-content:center;grid-column:1;grid-row:1;width:44px;height:44px;}
+  html body.country-node-page .catalog-header-ready .site-header__logo {grid-column:2;grid-row:1;justify-self:center;}
+  html body.country-node-page .catalog-header-ready .site-header__icon-btn {grid-column:3;grid-row:1;display:grid;place-items:center;width:44px;height:44px;padding:0;}
+  html body.country-node-page .catalog-header-ready .site-header__right {display:none;}
+  html body.country-node-page .catalog-sticky__nav {display:flex;align-items:center;gap:12px;}
+  html body.country-node-page .catalog-sticky__list {flex:1;min-width:0;}
+  html body.country-node-page .catalog-sticky__mobile-actions {display:flex;flex:0 0 auto;gap:8px;}
+  html body.country-node-page .catalog-sticky__mobile-actions .catalog-sticky__callback {width:auto;min-height:44px;padding-inline:12px;font-size:15px;white-space:nowrap;flex:0 0 auto;}
+  html body.country-node-page :is(.catalog-consultation__method,.catalog-contact__method)[class] {--contact-icon-size:20px;}
+}
+.country-node-page .catalog-contact__expert-photo img,
+.country-node-page .floating-expert__avatar img { object-fit:cover; object-position:center; }
+/* Channel selectors share the form's 610px cap, including wide CTA content. */
+html body.country-node-page :is(.catalog-consultation__methods,.catalog-contact__methods)[class] {
+  width:100%;
+  max-width:610px;
+}
+@media (min-width:769px) {
+  html body.country-node-page .catalog-consultation__media[class]::before {
+    /* Reuse the approved Denis CTA interior; keep Mikhail's foreground intact. */
+    background-image:url("../../../../../assets/709121d4e9a3cf06.webp");
+    background-position:center;
+    background-size:cover;
+    filter:brightness(.72);
+  }
+  html body.country-node-page .catalog-consultation__image[class] {
+    width:100%; left:-50%; right:auto;
+    object-fit:contain; object-position:right bottom;
+    mask-image:linear-gradient(90deg,#000 0%,#000 90%,transparent 100%);
+  }
+}
+@media (min-width:769px) and (max-width:1024px) {
+  html body.country-node-page .catalog-consultation__image[class] {
+    left:-25%; object-fit:cover;
+    mask-image:linear-gradient(90deg,#000 0%,#000 80%,transparent 100%);
+  }
+  html body.country-node-page .catalog-consultation__content[class] {
+    width:calc(50% - 24px); max-width:none;
+  }
+}
+@media (min-width:1025px) {
+  .country-node-page .departments-section__item:nth-child(1),
+  .country-node-page .departments-section__item:nth-child(2) { grid-column:span 3; }
+  .country-node-page .departments-section__item:nth-child(n+3) { grid-column:span 2; }
+}
+.country-filter-dialog { width:min(440px,calc(100vw - 32px)); padding:32px; border:1px solid #e4e4e4; border-radius:1px; font-family:inherit; color:#1e1e1e; }
+.country-filter-dialog::backdrop { background:#0008; }
+.country-filter-dialog h2 { margin:0 0 24px; font-size:24px; font-weight:300; }
+.country-filter-dialog label { display:grid; gap:8px; margin-bottom:20px; }
+.country-filter-dialog select { width:100%; min-height:50px; padding:10px; border:1px solid #e4e4e4; font:inherit; background:white; }
+.country-filter-dialog__actions { display:flex; gap:12px; }
+.country-filter-dialog__actions button { min-height:50px; padding:12px 20px; font:inherit; cursor:pointer; border:1px solid #e4e4e4; background:white; }
+.country-filter-dialog__actions button[type="submit"] { background:#8b1d25; color:white; border-color:#8b1d25; }
+.country-catalog-empty { padding:32px 0; color:#4f4d49; }
+.country-node-page :focus-visible { outline:2px solid #8b1d25; outline-offset:3px; }
+.country-node-page .hero-filter-modal[hidden] { display:none!important; }
+.country-node-page .hero-filter-modal { z-index:2000; }
+.country-node-page .hero-filter-modal :focus-visible { outline-color:#fff; }
+.country-node-page .country-map-filters {
+  display:inline-flex; align-items:center; justify-content:center; gap:8px;
+  height:58px; padding:0 18px; background:#fff; border:1px solid #e4e4e4;
+  color:#4f4d49; border-radius:1px; font:300 17px "Tilda Sans",sans-serif;
+  cursor:pointer; white-space:nowrap;
+}
+.country-node-page .country-map-filters svg { width:18px; height:18px; flex:none; }
+@media (max-width:540px) {
+  .country-node-page .country-map-filters { height:44px; padding:0 12px; }
+  .country-node-page .country-map-filters .catalog-mode-detailed-filters__label--desktop { display:none; }
+}

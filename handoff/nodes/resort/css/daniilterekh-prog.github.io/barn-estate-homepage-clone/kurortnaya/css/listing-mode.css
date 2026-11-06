@@ -1,0 +1,89 @@
+.listing-card-facts {
+  align-items: end;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin: 0;
+}
+
+.listing-card-fact {
+  min-width: 0;
+  text-align: center;
+}
+
+.listing-card-fact__label {
+  color: #656462;
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  line-height: 1.2;
+  margin: 0 0 5px;
+  text-transform: uppercase;
+}
+
+.listing-card-fact__value {
+  color: #1e1e1e;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.25;
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.listing-card-price-row {
+  align-items: center;
+  border-top: 1px solid rgba(30, 30, 30, 0.18);
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
+  margin-top: 18px;
+  min-width: 0;
+  padding-top: 14px;
+}
+
+@media (min-width: 1025px) {
+  .listing-card-fact__label {
+    font-size: 12px;
+    line-height: 1.2;
+  }
+
+  .listing-card-fact__value {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+
+.apartment-card--catalog .listing-card-price-row .apartment-card__price[data-v-80c326fb] {
+  border-top: 0;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.listing-card-price-row .apartment-card__lotid {
+  margin: 0;
+}
+
+/* ListingCard contract: shared geometry for project and secondary-lot modes. */
+html body .apartment-card--catalog .apartment-card__name-text[class] {
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  line-height: 1.12;
+}
+
+html body .apartment-card--catalog .apartment-card__price[class] {
+  font-size: 26px;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+html body .apartment-card--catalog :is(.apartment-card__call-btn, .apartment-card__detail-btn)[class] {
+  border-radius: 1px;
+  font-size: 15px;
+  font-weight: 400;
+  height: 54px;
+  min-height: 54px;
+}

@@ -1,0 +1,67 @@
+[
+  {
+    "key": "city",
+    "search": {
+      "count": "0 проектов",
+      "resets": 1
+    },
+    "map": {
+      "broken": [],
+      "cards": 8,
+      "filters": 15,
+      "open": true
+    }
+  },
+  {
+    "key": "country",
+    "search": {
+      "count": "0 объектов",
+      "resets": 1
+    },
+    "map": {
+      "broken": [],
+      "cards": 5,
+      "filters": 10,
+      "open": true
+    }
+  },
+  {
+    "key": "international",
+    "search": {
+      "count": "0 проектов",
+      "resets": 1
+    },
+    "map": {
+      "broken": [],
+      "cards": 8,
+      "filters": 15,
+      "open": true
+    }
+  },
+  {
+    "key": "commercial",
+    "search": {
+      "count": "0 объектов",
+      "resets": 1
+    },
+    "map": {
+      "broken": [],
+      "cards": 8,
+      "filters": 16,
+      "open": true
+    }
+  },
+  {
+    "key": "resort",
+    "search": {
+      "count": "0 проектов",
+      "resets": 1
+    },
+    "map": {
+      "broken": [],
+      "cards": 64,
+      "filters": 15,
+      "open": true
+    }
+  }
+]

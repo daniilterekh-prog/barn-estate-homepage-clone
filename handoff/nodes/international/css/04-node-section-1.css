@@ -1,0 +1,617 @@
+@font-face { font-family: "Tilda Sans Fallback"; src: local("Arial"), local("Helvetica Neue"), local("Helvetica"); size-adjust: 92.84%; ascent-override: 102.43%; descent-override: 26.82%; line-gap-override: 0%; }
+@font-face { font-family: "Tilda Sans"; src: url("../assets/f0f2c165784c7234.woff2") format("woff2"); font-weight: 300; font-style: normal; font-display: swap; }
+@font-face { font-family: "Tilda Sans"; src: url("../assets/2670dad44ca6c2a1.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "Tilda Sans"; src: url("../assets/f716269e361f4665.woff2") format("woff2"); font-weight: 500; font-style: normal; font-display: swap; }
+html, body { font-family: "Tilda Sans", "Tilda Sans Fallback", system-ui, sans-serif; }
+@keyframes floating-expert-enter-cd0a1259 {
+  100% { opacity: 1; transform: translateY(0px); }
+}
+@keyframes floating-expert-pulse-cd0a1259 {
+  0%, 100% { box-shadow: rgba(18, 18, 18, 0.2) 0px 22px 62px; }
+  42% { box-shadow: rgba(18, 18, 18, 0.2) 0px 22px 62px, rgba(18, 18, 18, 0.08) 0px 0px 0px 12px; }
+  58% { box-shadow: rgba(18, 18, 18, 0.24) 0px 26px 74px, rgba(18, 18, 18, 0) 0px 0px 0px 22px; }
+}
+@font-face { font-display: swap; font-family: "Tilda Sans"; font-style: normal; font-weight: 300; src: url("../assets/f0f2c165784c7234.woff2") format("woff2"); }
+@font-face { font-display: swap; font-family: "Tilda Sans"; font-style: normal; font-weight: 400; src: url("../assets/2670dad44ca6c2a1.woff2") format("woff2"); }
+@font-face { font-display: swap; font-family: "Tilda Sans"; font-style: normal; font-weight: 500; src: url("../assets/f716269e361f4665.woff2") format("woff2"); }
+@font-face { font-display: swap; font-family: "Tilda Sans"; font-style: normal; font-weight: 600; src: url("../assets/3814f8c444073262.woff2") format("woff2"); }
+@font-face { font-display: swap; font-family: "Tilda Sans"; font-style: normal; font-weight: 700; src: url("../assets/a2690df6fe834806.woff2") format("woff2"); }
+@font-face { font-display: swap; font-family: "Tilda Sans"; font-style: normal; font-weight: 800; src: url("../assets/726a3a878465a590.woff2") format("woff2"); }
+@font-face { font-display: swap; font-family: "Tilda Sans"; font-style: normal; font-weight: 900; src: url("../assets/73abed6708c43912.woff2") format("woff2"); }
+@font-face { ascent-override: 102.43%; descent-override: 26.82%; font-family: "Tilda Sans Fallback"; line-gap-override: 0%; size-adjust: 92.84%; src: local("Arial"), local("Helvetica Neue"), local("Helvetica"); }
+html { font-family: sans-serif; text-size-adjust: 100%; }
+body { margin: 0px; }
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary { display: block; }
+a { background-color: transparent; }
+a:active, a:hover { outline: 0px; }
+img { border: 0px; }
+svg:not(:root) { overflow: hidden; }
+button, input, optgroup, select, textarea { color: inherit; font: inherit; margin: 0px; }
+button { overflow: visible; }
+button, select { text-transform: none; }
+button, html input[type="button"], input[type="reset"], input[type="submit"] { appearance: button; cursor: pointer; }
+input { line-height: normal; }
+input[type="search"] { appearance: textfield; box-sizing: content-box; }
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration { appearance: none; }
+html { color: rgb(30, 30, 30); font-size: 16px; font-weight: 400; line-height: 1; scroll-behavior: smooth; scrollbar-gutter: stable; }
+html, html body { font-family: "Tilda Sans", "Tilda Sans Fallback", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+html body { height: 100%; margin: 0px; text-rendering: optimizelegibility; width: 100%; -webkit-font-smoothing: antialiased; background-color: rgb(255, 255, 255); }
+* { -webkit-tap-highlight-color: rgba(0, 0, 0, 0); outline: none; }
+input:not([type="checkbox"]):not([type="radio"]), select, textarea { appearance: none; }
+.page { margin-bottom: 80px; }
+main { min-width: 0px; }
+.base-container { margin: 0px auto; max-width: 1920px; padding-inline: 100px; width: 100%; }
+@media (max-width: 1920px) {
+  .base-container { padding-inline: calc(-26.6667px + 6.59722vw); }
+}
+@media (max-width: 768px) {
+  .base-container { padding-inline: calc(8.94118px + 1.96078vw); }
+}
+h1, h2, h3, h4, h5, p { margin: 0px; }
+button, input, textarea { font-family: inherit; }
+img { height: auto; max-width: 100%; }
+input:not([type="checkbox"]):not([type="radio"]):not([type="number"]), select, textarea { appearance: none; }
+button:not(:disabled) { cursor: pointer; }
+a { color: currentcolor; text-decoration: none; }
+a, a:active, a:focus { outline: none; }
+a:focus-visible, button:focus-visible { outline: rgba(20, 71, 230, 0.45) solid 2px; outline-offset: 2px; }
+@keyframes splide-loading {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(1turn); }
+}
+@keyframes fade-in {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes fade-out {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+@keyframes fadeInDown {
+  0% { opacity: 0; transform: translate3d(0px, -100%, 0px); }
+  100% { opacity: 1; transform: none; }
+}
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translate3d(0px, 100%, 0px); }
+  100% { opacity: 1; transform: none; }
+}
+.ui-icon.ui-icon-current[data-v-8bd2f545] { color: inherit; display: block; flex-shrink: 0; line-height: 0; }
+.ui-icon.ui-icon-current[data-v-8bd2f545] svg { height: 1em; margin-bottom: 0px; width: 1em; }
+@keyframes partners-marquee-right-923dc07c {
+  0% { transform: translate3d(-50%, 0px, 0px); }
+  100% { transform: translateZ(0px); }
+}
+@keyframes partners-marquee-left-923dc07c {
+  0% { transform: translateZ(0px); }
+  100% { transform: translate3d(-50%, 0px, 0px); }
+}
+.__ymap { color: rgb(0, 0, 0); position: relative; }
+.__ymap_container { height: 100%; width: 100%; }
+.__ymap_slots { display: none; }
+.__ymap [class$="graphics-layer"] { text-align: left; }
+.catalog-projects-map[data-v-25437794] { background: rgb(241, 241, 241); height: 245px; overflow: hidden; position: relative; }
+@media screen and (max-width: 1440px) {
+  .catalog-projects-map[data-v-25437794] { height: 220px; }
+}
+@media screen and (max-width: 540px) {
+  .catalog-projects-map[data-v-25437794] { height: 320px; }
+}
+.catalog-projects-map__canvas[data-v-25437794] { inset: 0px; position: absolute; }
+.catalog-projects-map__controls[data-v-25437794] { align-items: center; bottom: 24px; display: flex; gap: 12px; position: absolute; right: 24px; z-index: 2; }
+@media screen and (max-width: 1440px) {
+  .catalog-projects-map__controls[data-v-25437794] { bottom: 20px; gap: 10px; right: 20px; }
+}
+@media screen and (max-width: 540px) {
+  .catalog-projects-map__controls[data-v-25437794] { align-items: stretch; bottom: 16px; flex-direction: column; right: 16px; width: min(100% - 32px, 320px); }
+}
+.catalog-projects-map__search[data-v-25437794] { align-items: center; background: rgb(255, 255, 255); border: 1px solid rgb(222, 222, 222); border-radius: 3px; display: flex; gap: 10px; min-height: 54px; min-width: 395px; padding: 0px 16px; }
+@media screen and (max-width: 1440px) {
+  .catalog-projects-map__search[data-v-25437794] { min-height: 48px; min-width: 340px; }
+}
+@media screen and (max-width: 540px) {
+  .catalog-projects-map__search[data-v-25437794] { min-width: 0px; width: 100%; }
+}
+.catalog-projects-map__search-icon[data-v-25437794] { color: rgba(30, 30, 30, 0.55); flex-shrink: 0; font-size: 24px; }
+.catalog-projects-map__search-input[data-v-25437794] { background: transparent; border: 0px; color: rgb(30, 30, 30); font-family: inherit; font-size: 16px; font-weight: 400; line-height: 1.4; width: 100%; }
+.catalog-projects-map__search-input[data-v-25437794]::placeholder { color: rgb(51, 51, 51); }
+.catalog-projects-map__search-input[data-v-25437794]:focus { outline: none; }
+.catalog-projects-map__fullscreen[data-v-25437794] { align-items: center; background: rgb(255, 255, 255); border: 1px solid rgb(222, 222, 222); border-radius: 3px; color: rgb(30, 30, 30); cursor: pointer; display: inline-flex; font-style: inherit; font-variant: inherit; font-stretch: inherit; font-family: inherit; font-optical-sizing: inherit; font-size-adjust: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; font-language-override: inherit; font-size: 16px; font-weight: 400; gap: 10px; line-height: 1.4; min-height: 53px; outline: none; padding: 0px 16px; transition: color 0.2s; white-space: nowrap; }
+@media (min-width: 1025px) {
+  .catalog-projects-map__fullscreen[data-v-25437794]:hover { color: rgb(139, 29, 37); }
+}
+@media screen and (max-width: 540px) {
+  .catalog-projects-map__fullscreen[data-v-25437794] { align-self: flex-end; font-size: 13px; gap: 6px; min-height: 40px; padding: 0px 12px; width: auto; }
+}
+.catalog-projects-map__fullscreen-icon[data-v-25437794] { flex-shrink: 0; height: 27px; width: 27px; }
+@media screen and (max-width: 540px) {
+  .catalog-projects-map__fullscreen-icon[data-v-25437794] { height: 18px; width: 18px; }
+}
+.catalog-map[data-v-4e8b332d] { background: rgb(255, 255, 255); padding-block: 75px; }
+@media screen and (max-width: 1440px) {
+  .catalog-map[data-v-4e8b332d] { padding-block: 60px; }
+}
+@media screen and (max-width: 540px) {
+  .catalog-map[data-v-4e8b332d] { padding-block: 40px; }
+}
+.catalog-map__header[data-v-4e8b332d] { margin-bottom: 40px; }
+@media screen and (max-width: 1440px) {
+  .catalog-map__header[data-v-4e8b332d] { margin-bottom: 32px; }
+}
+@media screen and (max-width: 540px) {
+  .catalog-map__header[data-v-4e8b332d] { margin-bottom: 24px; }
+}
+.catalog-map__title[data-v-4e8b332d] { color: rgb(30, 30, 30); font-size: 44px; font-weight: 300; line-height: 1; margin: 0px; text-transform: uppercase; }
+@media screen and (max-width: 1440px) {
+  .catalog-map__title[data-v-4e8b332d] { font-size: 38px; }
+}
+@media screen and (max-width: 540px) {
+  .catalog-map__title[data-v-4e8b332d] { font-size: 30px; }
+}
+.catalog-map__text[data-v-4e8b332d] { font-size: 22px; margin: 20px 0px 0px; max-width: 70%; }
+@media screen and (max-width: 540px) {
+  .catalog-map__text[data-v-4e8b332d] { font-size: 18px; }
+}
+.catalog-map__text[data-v-4e8b332d] { font-weight: 300; line-height: 1.5; }
+@media screen and (max-width: 540px) {
+  .catalog-map__text[data-v-4e8b332d] { font-size: 15px; margin-top: 16px; max-width: none; }
+}
+.page[data-v-f0be9abb] { background: rgb(255, 255, 255); margin-bottom: 0px; min-height: 100%; }
+.catalog-page-section[data-v-f0be9abb] { scroll-margin-top: calc(var(--catalog-sticky-nav-top, 112px) + var(--catalog-sticky-nav-height, 56px) + 16px); }
+:root { --owner-rent-ui-brand: #8b1d25; --owner-rent-ui-brand-accent: #8b1d25; --owner-rent-ui-background: #fff; --owner-rent-ui-surface: #f1f1f1; --owner-rent-ui-dark-surface: #262626; --owner-rent-ui-text-primary: #1e1e1e; --owner-rent-ui-text-secondary: #4f4d49; --owner-rent-ui-text-muted: #656462; --owner-rent-ui-border: #e4e4e4; --owner-rent-ui-error: #ef4444; --owner-rent-ui-heading-weight: 300; --owner-rent-ui-body-weight: 400; --owner-rent-ui-h2-size: 38px; --owner-rent-ui-h2-line: 45.6px; --owner-rent-ui-h2-compact-line: 38px; --owner-rent-ui-h2-wide-size: 44px; --owner-rent-ui-h2-wide-line: 52.8px; --owner-rent-ui-h2-compact-wide-line: 44px; --owner-rent-ui-h2-mobile-size: 22px; --owner-rent-ui-h2-mobile-line: 26.4px; --owner-rent-ui-control-radius: 1px; --owner-rent-ui-focus-width: 2px; --owner-rent-ui-focus-offset: 3px; --owner-rent-ui-motion: .2s ease; }
+@keyframes floating-expert-enter-cd0a1259 {
+  100% { opacity: 1; transform: translateY(0px); }
+}
+@keyframes floating-expert-pulse-cd0a1259 {
+  0%, 100% { box-shadow: rgba(18, 18, 18, 0.2) 0px 22px 62px; }
+  42% { box-shadow: rgba(18, 18, 18, 0.2) 0px 22px 62px, rgba(18, 18, 18, 0.08) 0px 0px 0px 12px; }
+  58% { box-shadow: rgba(18, 18, 18, 0.24) 0px 26px 74px, rgba(18, 18, 18, 0) 0px 0px 0px 22px; }
+}
+.layout[data-v-47bd53e9] { display: flex; flex-direction: column; max-width: 100%; min-height: 100vh; min-width: 0px; overflow-x: clip; position: relative; }
+.layout__content[data-v-47bd53e9] { flex: 1 1 0%; max-width: 100%; min-width: 0px; overflow-x: clip; --layout-header-offset-top: 32px; }
+@media screen and (max-width: 540px) {
+  .layout__content[data-v-47bd53e9] { --layout-header-offset-top: 16px; }
+}.ymaps3--icon-logo-ru-black{background:url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTMwIiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSI5IDggMTUwIDMwIiBmaWxsPSJub25lIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWluWU1pbiBzbGljZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTU4LjAyNSAxOC4yNzU1QzU4LjQwMDcgMTguMjgyNyA1OC43MDgyIDE4LjM3MTMgNTguOTU3NCAxOC41MjYxQzU5LjA4OTMgMTguNjA3OSA1OS4yMDQ4IDE4LjcwODMgNTkuMzA1NSAxOC44MjVDNTkuNzM0IDE5LjMyMTQgNTkuODk0MiAyMC4xMTIzIDU5Ljg5OTggMjEuMDI1TDU5LjkgMjEuMDc1VjIxLjMyNUg1NS43NUM1NS43NTM4IDIxLjIyMjUgNTUuNzU5NCAyMS4xMjI1IDU1Ljc2NjYgMjEuMDI1QzU1Ljg0MTUgMjAuMDIwNCA1Ni4wOTgzIDE5LjI4MjIgNTYuNTQ0NSAxOC44MjVDNTYuNTg1NCAxOC43ODMxIDU2LjYyOCAxOC43NDM1IDU2LjY3MjEgMTguNzA2MkM1Ny4wMTEyIDE4LjQyMDUgNTcuNDQ0NiAxOC4yNzUgNTcuOTc1IDE4LjI3NUM1Ny45OTE4IDE4LjI3NSA1OC4wMDg0IDE4LjI3NTIgNTguMDI1IDE4LjI3NTVaIiBmaWxsPSJ3aGl0ZSIgZmlsbC1vcGFjaXR5PSIwLjYiLz4KPHBhdGggZD0iTTQ3LjY1IDE4LjUyNVYyNi40SDQzLjQ1QzQzLjQ3MTMgMjYuMzUxIDQzLjQ5MjEgMjYuMzAxIDQzLjUxMjYgMjYuMjVDNDMuNzc2NSAyNS41OTMyIDQzLjk3NTMgMjQuNzc1OSA0NC4xMjI2IDIzLjlDNDQuNDA3MiAyMi4yMDc2IDQ0LjUgMjAuMjk2MyA0NC41IDE4LjlWMTguNTI1SDQ3LjY1WiIgZmlsbD0id2hpdGUiIGZpbGwtb3BhY2l0eT0iMC42Ii8+CjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMjcuMzUgMzAuOTE1NkMyNi45ODIzIDMxLjEyODMgMjYuNTU1NCAzMS4yNSAyNi4xMDAxIDMxLjI1SDIzLjA3NTFDMjEuODEzIDMxLjI1IDIwLjc2OTMgMzAuMzE0OCAyMC41OTkzIDI5LjA5OTVMMTkuOTAyNyAzMC4xNDA0QzE5LjQzODcgMzAuODMzOCAxOC42NTk0IDMxLjI1IDE3LjgyNTEgMzEuMjVIMTQuNTUwMUMxMy42MjYzIDMxLjI1IDEyLjc3NzggMzAuNzQwNiAxMi4zNDM2IDI5LjkyNTNDMTEuOTA5MyAyOS4xMSAxMS45NiAyOC4xMjE3IDEyLjQ3NTQgMjcuMzU1MUwxNS4xNjA4IDIzLjM2MUMxNC42NDQzIDIyLjg1NzkgMTQuMTcyOSAyMi4zMDY5IDEzLjc3MzYgMjEuNjkwM0MxMi44ODU4IDIwLjMxOTUgMTIuNDUwMSAxOC43NzY2IDEyLjQ1MDEgMTdDMTIuNDUwMSAxNC43MTU1IDEzLjI2NDIgMTIuNTc3OCAxNS4wMjQyIDExLjA0NTZDMTYuNzQzNCA5LjU0OTA0IDE5LjA4MTggOC44NzUwMSAyMS43MDAxIDguODc1MDFIMjYuMTAwMUMyNy40ODA4IDguODc1MDEgMjguNjAwMSA5Ljk5NDMgMjguNjAwMSAxMS4zNzVWMTMuNjc1SDMxLjU3NUMzMi4zODUzIDEzLjY3NSAzMy4xMDU3IDE0LjA2MDYgMzMuNTYyNSAxNC42NTgzQzM0LjAxOTMgMTQuMDYwNiAzNC43Mzk2IDEzLjY3NSAzNS41NSAxMy42NzVIMzguNTI1QzM5LjE4NzYgMTMuNjc1IDM5Ljc5MDEgMTMuOTMyOCA0MC4yMzc1IDE0LjM1MzZDNDAuNjg0OSAxMy45MzI4IDQxLjI4NzMgMTMuNjc1IDQxLjk1IDEzLjY3NUg1MC42MjVDNTEuNjc3OCAxMy42NzUgNTIuNTc4NiAxNC4zMjU4IDUyLjk0NzEgMTUuMjQ3QzU0LjI3NjkgMTQuMDYxOCA1Ni4wMTYzIDEzLjQyNSA1OC4wMjUgMTMuNDI1QzU5LjY3MjIgMTMuNDI1IDYxLjM2ODggMTMuODIxIDYyLjc0NTUgMTQuOTQ5NUM2My4xNzQxIDE0LjE4ODggNjMuOTg5NiAxMy42NzUgNjQuOTI1IDEzLjY3NUg2Ny45QzY4Ljc3OTIgMTMuNjc1IDY5LjU1MjQgMTQuMTI4OSA2OS45OTgxIDE0LjgxNTFMNzAuMDc1MSAxNC43MDg3QzcwLjU0NTMgMTQuMDU5NSA3MS4yOTgzIDEzLjY3NSA3Mi4xIDEzLjY3NUg3NS4xQzc1LjgyNzkgMTMuNjc1IDc2LjUwODMgMTMuOTkxMyA3Ni45NzY0IDE0LjUyMjlDNzguMjExNiAxMy43OTg1IDc5LjY3MDggMTMuNDI1IDgxLjI3NSAxMy40MjVDODIuOTQ3IDEzLjQyNSA4NC41Mzg2IDEzLjY5NTMgODUuNjk2NSAxNC4zNDM3Qzg2LjQ4NiAxNC43ODU5IDg2Ljk3NSAxNS42MjAxIDg2Ljk3NSAxNi41MjVWMTkuMDVDODYuOTc1IDE5Ljk1ODggODYuNDgxOCAyMC43OTYxIDg1LjY4NjkgMjEuMjM2NkM4NC44OTIgMjEuNjc3MiA4My45MjA3IDIxLjY1MTcgODMuMTUgMjEuMTdDODMuMDc3MiAyMS4xMjQ1IDgyLjg2MjggMjEuMDE1NiA4Mi41MzkxIDIwLjkyMDVDODIuMjI1MyAyMC44MjgzIDgxLjg5NTcgMjAuNzc1IDgxLjYgMjAuNzc1QzgxLjQ2NDggMjAuNzc1IDgxLjM5MzkgMjAuNzkyMSA4MS4zNjc2IDIwLjgwMDRMODEuMzYzOCAyMC44MDU0QzgxLjMwMDkgMjAuODkwMiA4MS4wNzUgMjEuMzA1IDgxLjA3NSAyMi40QzgxLjA3NSAyMy40OTU0IDgxLjI3MjggMjMuOTgzMSA4MS4zNjc3IDI0LjEyNzZMODEuMzcwNSAyNC4xMzE4QzgxLjQwMzUgMjQuMTM5NiA4MS40NjgxIDI0LjE1IDgxLjU3NSAyNC4xNUM4Mi4zMzE0IDI0LjE1IDgyLjcyNzEgMjMuOTcxOSA4My4wNDEzIDIzLjc1MTlDODMuODA1IDIzLjIxNzQgODQuODAyNyAyMy4xNTIxIDg1LjYyOTUgMjMuNTgyNkM4Ni40NTYzIDI0LjAxMzEgODYuOTc1IDI0Ljg2NzggODYuOTc1IDI1LjhWMjguMjI1Qzg2Ljk3NSAyOS4wMjY3IDg2LjU5MDUgMjkuNzc5NyA4NS45NDEzIDMwLjI0OTlDODQuNjIyOCAzMS4yMDQ2IDgzLjA0OTEgMzEuNSA4MS40IDMxLjVDNzkuOTIxOSAzMS41IDc4LjUyNjIgMzEuMjM2OCA3Ny4zMDQ3IDMwLjY0NThDNzYuODU4NyAzMS4wMjkxIDc2LjI4MzQgMzEuMjUgNzUuNjc1IDMxLjI1SDcyLjNDNzEuNDkxNiAzMS4yNSA3MC43MzMxIDMwLjg1OTEgNzAuMjY0IDMwLjIwMDhMNzAuMDkgMjkuOTU2N0M2OS42NjQzIDMwLjcyNzggNjguODQzMSAzMS4yNSA2Ny45IDMxLjI1SDY0LjkyNUM2NC4yNTEgMzEuMjUgNjMuNjM5NCAzMC45ODMzIDYzLjE4OTggMzAuNTQ5OEM2MS45NTg2IDMxLjEzNzkgNjAuNDE1NSAzMS41IDU4LjYyNSAzMS41QzU3LjE0NTggMzEuNSA1NS43MTMxIDMxLjIzNjcgNTQuNDUgMzAuNjE0VjMxLjYyNUM1NC40NSAzMy4wMDU3IDUzLjMzMDcgMzQuMTI1IDUxLjk1IDM0LjEyNUg0OS4yQzQ3LjgxOTMgMzQuMTI1IDQ2LjcgMzMuMDA1NyA0Ni43IDMxLjYyNVYzMS4yNUg0NS4wMjVWMzEuNjI1QzQ1LjAyNSAzMy4wMDU3IDQzLjkwNTcgMzQuMTI1IDQyLjUyNSAzNC4xMjVIMzkuNzc1QzM4LjM5NDMgMzQuMTI1IDM3LjI3NSAzMy4wMDU3IDM3LjI3NSAzMS42MjVWMzEuMjVIMzUuNTVDMzQuNzM5NiAzMS4yNSAzNC4wMTkzIDMwLjg2NDQgMzMuNTYyNSAzMC4yNjY4QzMzLjEwNTcgMzAuODY0NCAzMi4zODUzIDMxLjI1IDMxLjU3NSAzMS4yNUgyOC42QzI4LjE0NDYgMzEuMjUgMjcuNzE3NyAzMS4xMjgzIDI3LjM1IDMwLjkxNTZaTTIwLjcwMDEgMjEuMTVMMjIuMjI1MSAyMi4xNzVMMTcuODI1MSAyOC43NUgxNC41NTAxTDE4LjUwMDEgMjIuODc1QzE2LjIyNTEgMjEuMjUgMTQuOTUwMSAxOS42NzUgMTQuOTUwMSAxN0MxNC45NTAxIDE0LjUzMzEgMTYuMjEwOSAxMi42NDkxIDE4LjY0MjYgMTEuODI3M0MxOS41MTMxIDExLjUzMzEgMjAuNTMzNiAxMS4zNzUgMjEuNzAwMSAxMS4zNzVIMjYuMTAwMVYxNi4xNTVDMjYuMSAxNi4xNjE3IDI2LjEgMTYuMTY4MyAyNi4xIDE2LjE3NVYyOC43NUwyMy4wNzUxIDI4Ljc1VjEzLjcyNUgyMS43MjUxTDIxLjcwMDEgMTMuNzI1MUMyMS4yOTI4IDEzLjcyNjQgMjAuOTE3NyAxMy43NjE4IDIwLjU3NTEgMTMuODI4M0MyMC4xOTc3IDEzLjkwMTUgMTkuODU5OSAxNC4wMTI0IDE5LjU2MjMgMTQuMTU3MUMxOC40OTg5IDE0LjY3NDIgMTcuOTUwMSAxNS42MjI5IDE3Ljk1MDEgMTYuODI1QzE3Ljk1MDEgMTguODc3MiAxOC44MDk1IDE5Ljg1NSAyMC41NzUxIDIxLjA2NUMyMC42MTYyIDIxLjA5MzIgMjAuNjU3OSAyMS4xMjE1IDIwLjcwMDEgMjEuMTVaTTI4LjYwMDEgMjguNzVMMzEuNTc1IDI4Ljc1VjIzLjVIMzUuNTVWMjguNzVIMzguNTI1VjE2LjE3NUgzNS41NVYyMS4xNUgzMS41NzVWMTYuMTc1SDI4LjYwMDFWMjguNzVaTTY3LjkgMjguNzVINjQuOTI1VjE2LjE3NUg2Ny45VjIxLjk3NUw3Mi4xIDE2LjE3NUg3NS4xTDcwLjkgMjEuOTc1TDc1LjY3NSAyOC43NUg3Mi4zTDY3LjkgMjIuNTc1VjI4Ljc1Wk02Mi44OTM4IDIxLjAyNUM2Mi45MTQ1IDIxLjMxODggNjIuOTI1IDIxLjYyNyA2Mi45MjUgMjEuOTVWMjMuNTI1SDU1Ljc1QzU1Ljc1NjEgMjMuNjI3NiA1NS43NjM5IDIzLjcyNzYgNTUuNzczNCAyMy44MjVDNTUuODcxMiAyNC44MjY1IDU2LjE1MzQgMjUuNTU3NyA1Ni43MDIyIDI2LjAyNUM1Ni44MzMzIDI2LjEzNjYgNTYuOTc5NiAyNi4yMzMyIDU3LjE0MjMgMjYuMzE0OEM1Ny41MzU3IDI2LjUxMjIgNTguMDI0NiAyNi42MjE5IDU4LjYyNSAyNi42NDUzQzU4LjcwNjMgMjYuNjQ4NCA1OC43ODk2IDI2LjY1IDU4Ljg3NSAyNi42NUM1OS4zNDc3IDI2LjY1IDU5LjgzMTEgMjYuNTkxNiA2MC4zIDI2LjQ5MTFDNjAuNzQzNiAyNi4zOTYgNjEuMTc0MiAyNi4yNjM0IDYxLjU3MDYgMjYuMTA3MUM2MS42MzgzIDI2LjA4MDQgNjEuNzA1IDI2LjA1MyA2MS43NzA2IDI2LjAyNUM2Mi4wMDQzIDI1LjkyNTIgNjIuMjI0MSAyNS44MTc1IDYyLjQyNSAyNS43MDUxQzYyLjU1ODggMjUuNjMwMiA2Mi42ODQzIDI1LjU1MzIgNjIuOCAyNS40NzVWMjcuOUM2Mi42ODQyIDI3Ljk3OTQgNjIuNTU5MSAyOC4wNTcxIDYyLjQyNSAyOC4xMzIxQzYxLjU5MDYgMjguNTk4NSA2MC40MDI2IDI4Ljk2MTIgNTguODc1IDI4Ljk5NzFDNTguNzkyNiAyOC45OTkgNTguNzA5MyAyOSA1OC42MjUgMjlDNTcuNzI5MiAyOSA1Ni45MjUxIDI4Ljg4MTkgNTYuMjE5MyAyOC42NDQxQzU1LjUzNTMgMjguNDEzNyA1NC45NDM1IDI4LjA3MDggNTQuNDUgMjcuNjE0QzU0LjA4MTYgMjcuMjczIDUzLjc2NzkgMjYuODY4NiA1My41MTE0IDI2LjRDNTMuMzYzNCAyNi4xMjk2IDUzLjIzNDQgMjUuODM3OSA1My4xMjUgMjUuNTI0N0M1Mi45Njc1IDI1LjA3NDIgNTIuODUwNSAyNC41NzkyIDUyLjc3NTMgMjQuMDM5NUM1Mi43MDg4IDIzLjU2MTUgNTIuNjc1IDIzLjA0ODQgNTIuNjc1IDIyLjVDNTIuNjc1IDIxLjM4NSA1Mi44MjM1IDIwLjM1ODIgNTMuMTI1IDE5LjQ2MzlDNTMuNTQzNyAxOC4yMjE3IDU0LjI1NzUgMTcuMjM1MiA1NS4yNzgxIDE2LjYyMjZDNTYuMDE1NCAxNi4xODAxIDU2LjkxMjkgMTUuOTMyNyA1Ny45NzUgMTUuOTI1Mkw1OC4wMjUgMTUuOTI1QzU4LjcxOTggMTUuOTI1IDU5LjM1NzQgMTYuMDE1IDU5LjkyNjYgMTYuMjA4OEM2MS4wNjAzIDE2LjU5NDYgNjEuOTIyNCAxNy4zOTIgNjIuNDI1IDE4LjcwOTFDNjIuNjcwNiAxOS4zNTI3IDYyLjgzMDMgMjAuMTIwNSA2Mi44OTM4IDIxLjAyNVpNNDAuNyAyNi40QzQwLjgxODkgMjYuMTYyMiA0MC45MjY5IDI1LjkwMDMgNDEuMDI1IDI1LjYxODRDNDEuNzkyNyAyMy40MTEyIDQxLjk1IDE5Ljk3NjcgNDEuOTUgMTcuMjVWMTYuMTc1SDUwLjYyNVYyNi40SDUxLjk1VjMxLjYyNUg0OS4yVjI4Ljc1SDQyLjUyNVYzMS42MjVIMzkuNzc1VjI2LjRINDAuN1pNNzkuNjE5OCAyOC44MTY4Qzc5LjA2NDggMjguNjkxOCA3OC41NjY4IDI4LjUwMzUgNzguMTI1MyAyOC4yNTRDNzcuODEwNiAyOC4wNzYxIDc3LjUyNDYgMjcuODY3MiA3Ny4yNjcgMjcuNjI3OUM3Ni40MzQyIDI2Ljg1NDIgNzUuODk5MSAyNS43NjM1IDc1LjY1NDcgMjQuMzgxN0M3NS41NTE0IDIzLjc5NzUgNzUuNSAyMy4xNjEzIDc1LjUgMjIuNDc1Qzc1LjUgMjEuMDc4NyA3NS43NjMyIDE5LjgyODkgNzYuMjgyMyAxOC44MDQ4Qzc2LjUwNTEgMTguMzY1MyA3Ni43NzUgMTcuOTY3MyA3Ny4wOTE1IDE3LjYxNzJDNzcuMTQzNiAxNy41NTk2IDc3LjE5NjkgMTcuNTAzMyA3Ny4yNTE1IDE3LjQ0ODNDNzcuODY4OSAxNi44MjYzIDc4LjY0NzEgMTYuMzczNSA3OS41ODI1IDE2LjEzQzgwLjA5OSAxNS45OTU2IDgwLjY2MzMgMTUuOTI1IDgxLjI3NSAxNS45MjVDODEuMzg1NCAxNS45MjUgODEuNDkzOCAxNS45MjY0IDgxLjYgMTUuOTI5MkM4Mi45MTIgMTUuOTYzIDgzLjg5NjggMTYuMjAxMiA4NC40NzUgMTYuNTI1VjE5LjA1Qzg0LjE5NDUgMTguODc0NyA4My43OTkyIDE4LjY5MzkgODMuMzQwNCAxOC41NTExQzgyLjkyNDggMTguNDIxOCA4Mi40NTcgMTguMzIzNiA4MS45NzUgMTguMjg4OEM4MS44NTA3IDE4LjI3OTggODEuNzI1NSAxOC4yNzUgODEuNiAxOC4yNzVDODEuNDg4OCAxOC4yNzUgODEuMzgwNCAxOC4yNzk2IDgxLjI3NSAxOC4yODg3QzgwLjkzNjMgMTguMzE3OCA4MC42Mjc0IDE4LjM5MzggODAuMzQ5NCAxOC41MTYxQzc5LjE5NTcgMTkuMDIzNyA3OC41NzUgMjAuMzI5MyA3OC41NzUgMjIuNEM3OC41NzUgMjQuNDIyOCA3OS4xMDQ2IDI1Ljg3MDYgODAuMzQwNSAyNi40MTM3QzgwLjY0ODggMjYuNTQ5MiA4MS4wMDEgMjYuNjI4NCA4MS40IDI2LjY0NjJDODEuNDU3MyAyNi42NDg3IDgxLjUxNTcgMjYuNjUgODEuNTc1IDI2LjY1QzgxLjcxMjUgMjYuNjUgODEuODQ1NyAyNi42NDYxIDgxLjk3NSAyNi42Mzg0QzgyLjQxODkgMjYuNjEyIDgyLjgxNiAyNi41NDExIDgzLjE3NzEgMjYuNDMyN0M4My42NjcgMjYuMjg1NSA4NC4wOTA3IDI2LjA2OSA4NC40NzUgMjUuOFYyOC4yMjVDODMuNzgxMSAyOC43Mjc1IDgyLjg1ODMgMjguOTc4IDgxLjU3NSAyOC45OTg2QzgxLjUxNzQgMjguOTk5NiA4MS40NTkgMjkgODEuNCAyOUM4MC43NTI0IDI5IDgwLjE1OTEgMjguOTM4MyA3OS42MTk4IDI4LjgxNjhaIiBmaWxsPSJ3aGl0ZSIgZmlsbC1vcGFjaXR5PSIwLjYiLz4KPHBhdGggZD0iTTExMC42NzEgMjIuODc1VjI1Ljc1QzExMC42MzMgMjUuODA2MiAxMTAuNTkxIDI1Ljg2MTIgMTEwLjU0NiAyNS45MTQ5QzExMC4yOCAyNi4yMzEzIDEwOS44OTYgMjYuNDk4NSAxMDkuMzg4IDI2LjY0MDVDMTA5LjEzOCAyNi43MTA1IDEwOC44NTcgMjYuNzUgMTA4LjU0NiAyNi43NUMxMDguMTEzIDI2Ljc1IDEwNy43NTQgMjYuNjU5OCAxMDcuNDcxIDI2LjQ5NUMxMDcuNDMyIDI2LjQ3MjQgMTA3LjM5NSAyNi40NDg0IDEwNy4zNTkgMjYuNDIzQzEwNi45IDI2LjEgMTA2LjY3MSAyNS41NTYzIDEwNi42NzEgMjQuODc1QzEwNi42NzEgMjQuNDgxOCAxMDYuNzQ0IDI0LjE1NjEgMTA2Ljg5OSAyMy44ODk5QzEwNy4xMyAyMy40OTM0IDEwNy41NDQgMjMuMjI4OCAxMDguMTcxIDIzLjA2OTVDMTA4LjY5MiAyMi45MzcxIDEwOS4zNjEgMjIuODc3MyAxMTAuMTk2IDIyLjg3NUgxMTAuNjcxWiIgZmlsbD0id2hpdGUiIGZpbGwtb3BhY2l0eT0iMC42Ii8+CjxwYXRoIGQ9Ik0xMTkuMDEzIDIyLjQ3NUMxMTkuMDEzIDIzLjQxMTIgMTE5LjA5NiAyNC4xNzgxIDExOS4yNjIgMjQuNzg3M0MxMTkuNDc5IDI1LjU4MzQgMTE5LjgzNyAyNi4xMTA0IDEyMC4zMzMgMjYuMzk0N0MxMjAuNjM0IDI2LjU2NjkgMTIwLjk4NiAyNi42NSAxMjEuMzg4IDI2LjY1QzEyMS42NiAyNi42NSAxMjEuOTEgMjYuNjE4NCAxMjIuMTM4IDI2LjU1MzdDMTIyLjE5OSAyNi41MzYzIDEyMi4yNTkgMjYuNTE2NiAxMjIuMzE3IDI2LjQ5NDRDMTIzLjQxOSAyNi4wNzQ5IDEyMy45NjMgMjQuNzkwOCAxMjMuOTYzIDIyLjQ1QzEyMy45NjMgMjAuMTI0NCAxMjMuNDQ5IDE4Ljg0MzggMTIyLjQwNyAxOC40Mjc4QzEyMi4zNjggMTguNDEyMyAxMjIuMzI4IDE4LjM5OCAxMjIuMjg4IDE4LjM4NDlDMTIyLjA2MSAxOC4zMTExIDEyMS44MTEgMTguMjc1IDEyMS41MzggMTguMjc1QzEyMS4wMjUgMTguMjc1IDEyMC41ODkgMTguMzk0NyAxMjAuMjMyIDE4LjY0NDhDMTE5Ljc3MSAxOC45NjY3IDExOS40NDEgMTkuNTA0NyAxMTkuMjQxIDIwLjI4MTdDMTE5LjA4OSAyMC44NzE3IDExOS4wMTMgMjEuNTk5NCAxMTkuMDEzIDIyLjQ3NVoiIGZpbGw9IndoaXRlIiBmaWxsLW9wYWNpdHk9IjAuNiIvPgo8cGF0aCBkPSJNMTQzLjYwNiAyNi40SDE0Mi4yMzFWMjIuMzc1SDE0My42ODFDMTQzLjczMiAyMi4zNzUgMTQzLjc4MiAyMi4zNzU5IDE0My44MzEgMjIuMzc3OEMxNDQuMTc0IDIyLjM5MDcgMTQ0LjQ3NSAyMi40NDkgMTQ0LjczMSAyMi41NTkyQzE0NC43NjYgMjIuNTc0NCAxNDQuODAxIDIyLjU5MDYgMTQ0LjgzNCAyMi42MDc5QzE0NS4zOTUgMjIuODk2MyAxNDUuNzA2IDIzLjQ2NyAxNDUuNzA2IDI0LjRDMTQ1LjcwNiAyNS4yOTI0IDE0NS4zOTMgMjUuODQ0IDE0NC44NTYgMjYuMTM2MkMxNDQuODE1IDI2LjE1ODEgMTQ0Ljc3NCAyNi4xNzg2IDE0NC43MzEgMjYuMTk3NkMxNDQuNDYgMjYuMzE3OSAxNDQuMTQgMjYuMzgxMyAxNDMuNzgxIDI2LjM5NjRDMTQzLjcyNCAyNi4zOTg4IDE0My42NjUgMjYuNCAxNDMuNjA2IDI2LjRaIiBmaWxsPSJ3aGl0ZSIgZmlsbC1vcGFjaXR5PSIwLjYiLz4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik05Ny45MzAyIDMwLjE0ODVDOTguMzk1IDMwLjgzNzIgOTkuMTcxNiAzMS4yNSAxMDAuMDAzIDMxLjI1SDEwMy41MjhDMTAzLjk3OCAzMS4yNSAxMDQuNDEgMzEuMTI4OSAxMDQuNzg2IDMwLjkxMDRDMTA1LjYzMSAzMS4yNjM5IDEwNi41NDggMzEuNDI1IDEwNy40NzEgMzEuNDI1QzEwOC4zODYgMzEuNDI1IDEwOS4yIDMxLjMwNTEgMTA5LjkzMiAzMS4wNTY4QzExMC4yMzIgMzEuMTgyMSAxMTAuNTU4IDMxLjI1IDExMC44OTYgMzEuMjVIMTEzLjUzOFYzMi4zNzVDMTEzLjUzOCAzMy43NTU3IDExNC42NTcgMzQuODc1IDExNi4wMzggMzQuODc1SDExOS4wMTNDMTIwLjM5NCAzNC44NzUgMTIxLjUxMyAzMy43NTU3IDEyMS41MTMgMzIuMzc1VjMxLjQ2OTlDMTIxLjcxOCAzMS40ODk5IDEyMS45MjcgMzEuNSAxMjIuMTM4IDMxLjVDMTI0LjMyMyAzMS41IDEyNi4yOTEgMzAuNTkxIDEyNy42NDkgMjguODQzOUMxMjcuOTg3IDI4LjQwOTYgMTI4LjI3NiAyNy45MzggMTI4LjUyIDI3LjQzNDZWMjguNzVDMTI4LjUyIDMwLjEzMDcgMTI5LjYzOSAzMS4yNSAxMzEuMDIgMzEuMjVIMTMzLjk5NUMxMzUuMzc1IDMxLjI1IDEzNi40OTUgMzAuMTMwNyAxMzYuNDk1IDI4Ljc1SDEzNi43NTZDMTM2Ljc1NiAzMC4xMzA3IDEzNy44NzUgMzEuMjUgMTM5LjI1NiAzMS4yNUgxNDMuNzgxQzE0NS4yMDggMzEuMjUgMTQ2LjY1MSAzMC45Njk5IDE0Ny45MDYgMzAuMjgyN0MxNDguMzYzIDMwLjg3MTMgMTQ5LjA3OCAzMS4yNSAxNDkuODgxIDMxLjI1SDE1Mi44NTZDMTU0LjIzNyAzMS4yNSAxNTUuMzU2IDMwLjEzMDcgMTU1LjM1NiAyOC43NVYxNi4xNzVDMTU1LjM1NiAxNC43OTQzIDE1NC4yMzcgMTMuNjc1IDE1Mi44NTYgMTMuNjc1SDE0OS44ODFDMTQ4LjUgMTMuNjc1IDE0Ny4zODEgMTQuNzk0MyAxNDcuMzgxIDE2LjE3NVYxOC4xNzE3QzE0Ni41NDkgMTcuODI0NCAxNDUuNjUgMTcuNjMyOSAxNDQuNzMxIDE3LjU1OTlWMTYuMTc1QzE0NC43MzEgMTQuNzk0MyAxNDMuNjEyIDEzLjY3NSAxNDIuMjMxIDEzLjY3NUgxMzkuMjU2QzEzOC45NDYgMTMuNjc1IDEzOC42NDkgMTMuNzMxNCAxMzguMzc1IDEzLjgzNDVDMTM4LjEwMSAxMy43MzE0IDEzNy44MDQgMTMuNjc1IDEzNy40OTUgMTMuNjc1SDEyNy41MkMxMjYuODQ5IDEzLjY3NSAxMjYuMjM5IDEzLjkzOTMgMTI1Ljc5IDE0LjM2OTVDMTI0Ljc1NSAxMy43NDg1IDEyMy41NjIgMTMuNDI1IDEyMi4yODggMTMuNDI1QzEyMS40MDUgMTMuNDI1IDEyMC41OCAxMy41OTA2IDExOS44MjggMTMuOTAxMUMxMTkuNTEgMTMuNzU1NyAxMTkuMTU4IDEzLjY3NSAxMTguNzg4IDEzLjY3NUgxMTYuMDM4QzExNS4xMzUgMTMuNjc1IDExNC4zNDUgMTQuMTUzNCAxMTMuOTA1IDE0Ljg3MDRDMTEyLjQ3NCAxMy43NTY2IDExMC42NTQgMTMuNDc1IDEwOC45NDYgMTMuNDc1QzEwNi44NDQgMTMuNDc1IDEwNS4xMDggMTQuMDMyNCAxMDMuODkzIDE0LjYyOEwxMDUuMTcxIDEyLjgxNTdDMTA1LjcwOSAxMi4wNTI3IDEwNS43NzcgMTEuMDUzMyAxMDUuMzQ3IDEwLjIyNDNDMTA0LjkxNyA5LjM5NTM3IDEwNC4wNjEgOC44NzUwMiAxMDMuMTI4IDguODc1MDJIMTAwLjEyOEM5OS4zMTM2IDguODc1MDIgOTguNTUwNiA5LjI3MTI1IDk4LjA4MjQgOS45MzcwN0w5Ny4wMDI1IDExLjQ3M1YxMS4zNzVDOTcuMDAyNSA5Ljk5NDMgOTUuODgzMiA4Ljg3NTAyIDk0LjUwMjUgOC44NzUwMkg5MS40Nzc1QzkwLjA5NjggOC44NzUwMiA4OC45Nzc1IDkuOTk0MyA4OC45Nzc1IDExLjM3NVYyOC43NUM4OC45Nzc1IDMwLjEzMDcgOTAuMDk2OCAzMS4yNSA5MS40Nzc1IDMxLjI1SDk0LjUwMjVDOTUuODc1NCAzMS4yNSA5Ni45ODk3IDMwLjE0MzQgOTcuMDAyNCAyOC43NzM2TDk3LjkzMDIgMzAuMTQ4NVpNMTAwLjAwMyAyOC43NUgxMDMuNTI4TDk3LjMyNzUgMTkuNkwxMDMuMTI4IDExLjM3NUgxMDAuMTI4TDk0LjUwMjUgMTkuMzc1VjExLjM3NUg5MS40Nzc1VjI4Ljc1SDk0LjUwMjVWMjAuNkwxMDAuMDAzIDI4Ljc1Wk0xMDMuNjIxIDI0Ljk1QzEwMy42MjEgMjQuNzg1MiAxMDMuNjMgMjQuNjI0OSAxMDMuNjQ3IDI0LjQ2OUMxMDMuNzU4IDIzLjQ1MzQgMTA0LjIzMyAyMi42MjkgMTA1LjExMSAyMi4wMjk1QzEwNS4xNTkgMjEuOTk2OCAxMDUuMjA4IDIxLjk2NDggMTA1LjI1OCAyMS45MzM1QzEwNS40NzkgMjEuNzk1NyAxMDUuNzIzIDIxLjY3MDkgMTA1Ljk5MSAyMS41NTk2QzEwNi4wODIgMjEuNTIxNyAxMDYuMTc2IDIxLjQ4NTQgMTA2LjI3MiAyMS40NTA2QzEwNy4yNzUgMjEuMDkwMyAxMDguNTc1IDIwLjkgMTEwLjE5NiAyMC45SDExMC42NzFWMjAuMkMxMTAuNjcxIDE5LjU0MzkgMTEwLjUxOCAxOS4wODg1IDExMC4xOTYgMTguNzkzOEMxMTAuMDY0IDE4LjY3MjQgMTA5LjkwMyAxOC41NzgyIDEwOS43MTIgMTguNTA4NUMxMDkuNjA4IDE4LjQ3MDMgMTA5LjQ5NSAxOC40Mzk0IDEwOS4zNzIgMTguNDE1NEMxMDkuMjQxIDE4LjM4OTYgMTA5LjA5OSAxOC4zNzE3IDEwOC45NDYgMTguMzYxM0MxMDguODM1IDE4LjM1MzcgMTA4LjcxOCAxOC4zNSAxMDguNTk2IDE4LjM1QzEwOC4wODIgMTguMzUgMTA3LjU0MiAxOC40MjQgMTA3LjAyMSAxOC41NDVDMTA2LjUyMSAxOC42NjEzIDEwNi4wMzkgMTguODIxMSAxMDUuNjE1IDE5LjAwMDRDMTA1LjQ5OCAxOS4wNDk5IDEwNS4zODUgMTkuMTAwOSAxMDUuMjc4IDE5LjE1MjlDMTA0Ljk3OSAxOS4yOTc4IDEwNC43MiAxOS40NTA1IDEwNC41MjEgMTkuNlYxNy4xMjVDMTA1LjM2NyAxNi42MzE0IDEwNi43ODggMTYuMDQ5NSAxMDguNTk2IDE1Ljk4MTZDMTA4LjcxMSAxNS45NzczIDEwOC44MjggMTUuOTc1IDEwOC45NDYgMTUuOTc1QzEwOS40MSAxNS45NzUgMTA5Ljg0IDE2IDExMC4yMzUgMTYuMDUyNEMxMTIuMTExIDE2LjMwMTIgMTEzLjIwNyAxNy4xNjgyIDExMy41MzggMTguOTExMUMxMTMuNjEgMTkuMjkwMSAxMTMuNjQ2IDE5LjcxMDUgMTEzLjY0NiAyMC4xNzVWMjUuNjc1QzExMy42NDYgMjUuODY2NyAxMTMuNjQ4IDI2LjA1ODMgMTEzLjY1MSAyNi4yNUMxMTMuNjY3IDI3LjA4MzQgMTEzLjcxNSAyNy45MTY3IDExMy43OTYgMjguNzVIMTEwLjg5NkwxMTAuODkxIDI4LjczNjNDMTEwLjgwNiAyOC41MTg0IDExMC43MjIgMjguMTc3NSAxMTAuNjg1IDI3Ljg4MjhDMTEwLjY3OSAyNy44MzcyIDExMC42NzQgMjcuNzkyOCAxMTAuNjcxIDI3Ljc1SDExMC41NDZMMTEwLjUzNiAyNy43NjA0QzExMC4wOTcgMjguMjE2MyAxMDkuNTU1IDI4LjY1NTkgMTA4LjU0NiAyOC44Mzc2QzEwOC40NzUgMjguODUwMyAxMDguNDAyIDI4Ljg2MTggMTA4LjMyNyAyOC44NzE5QzEwOC4wNzEgMjguOTA2MiAxMDcuNzg3IDI4LjkyNSAxMDcuNDcxIDI4LjkyNUMxMDcuMTYyIDI4LjkyNSAxMDYuODY3IDI4Ljg5OTMgMTA2LjU4NyAyOC44NDg2QzEwNi4zOTMgMjguODEzNCAxMDYuMjA2IDI4Ljc2NjMgMTA2LjAyNyAyOC43MDczQzEwNS41MjUgMjguNTQxNiAxMDUuMDg3IDI4LjI4MyAxMDQuNzI4IDI3LjkzNjlDMTA0LjAyNSAyNy4yNjE0IDEwMy42MjEgMjYuMjUyNCAxMDMuNjIxIDI0Ljk1Wk0xMTguNzg4IDE2LjE3NUgxMTYuMDM4VjMyLjM3NUgxMTkuMDEzVjI3LjI3NUMxMTkuNjEyIDI4LjE3MjcgMTIwLjQzMyAyOC43MzYxIDEyMS4zODggMjguOTI3MUMxMjEuNDI5IDI4LjkzNTQgMTIxLjQ3MSAyOC45NDMgMTIxLjUxMyAyOC45NDk5QzEyMS43MTYgMjguOTgzMiAxMjEuOTI1IDI5IDEyMi4xMzggMjlDMTIyLjM3NyAyOSAxMjIuNjExIDI4Ljk4NDIgMTIyLjgzNyAyOC45NTI4QzEyNS4zNTUgMjguNjAzNCAxMjcuMDM4IDI2LjMyNjQgMTI3LjAzOCAyMi40NUMxMjcuMDM4IDIxLjkyMzQgMTI3LjAwNyAyMS40MjYyIDEyNi45NDggMjAuOTU5NUMxMjYuODMgMjAuMDIzNSAxMjYuNTk3IDE5LjIwOTYgMTI2LjI2NiAxOC41MjVDMTI1Ljk0IDE3Ljg0ODMgMTI1LjUxOSAxNy4yOTc4IDEyNS4wMiAxNi44ODA1QzEyNC40MjUgMTYuMzgzOSAxMjMuNzIxIDE2LjA3NiAxMjIuOTM1IDE1Ljk2ODNDMTIyLjcyNSAxNS45Mzk1IDEyMi41MDkgMTUuOTI1IDEyMi4yODggMTUuOTI1QzEyMi4wMjkgMTUuOTI1IDEyMS43NzkgMTUuOTQ3MiAxMjEuNTM4IDE1Ljk5MTJDMTIxLjQ1MyAxNi4wMDY2IDEyMS4zNjkgMTYuMDI0OCAxMjEuMjg3IDE2LjA0NTdDMTIwLjMzNSAxNi4yODU5IDExOS41MzggMTYuODgxMiAxMTguOTM4IDE3LjhMMTE4Ljc4OCAxNi4xNzVaTTEzMy45OTUgMjguNzVIMTMxLjAyVjE4LjUyNUgxMjcuNTJWMTYuMTc1SDEzNy40OTVWMTguNTI1SDEzMy45OTVWMjguNzVaTTE0My43ODEgMjguNzVIMTM5LjI1NlYxNi4xNzVIMTQyLjIzMVYyMC4wMjVIMTQzLjgzMUMxNDQuNDgzIDIwLjAyNSAxNDUuMDggMjAuMDkwNCAxNDUuNjE3IDIwLjIxOTdDMTQ2LjMxMSAyMC4zODcxIDE0Ni45MDMgMjAuNjYxOSAxNDcuMzgxIDIxLjA0MDhDMTQ4LjI4NyAyMS43NTk0IDE0OC43ODEgMjIuODUyNyAxNDguNzgxIDI0LjNDMTQ4Ljc4MSAyNS43NzMzIDE0OC4yNjMgMjYuODg0OSAxNDcuMzgxIDI3LjYyODZDMTQ2LjkyMyAyOC4wMTQ2IDE0Ni4zNjcgMjguMzAxNSAxNDUuNzMzIDI4LjQ4ODVDMTQ1LjE0NCAyOC42NjI2IDE0NC40ODcgMjguNzUgMTQzLjc4MSAyOC43NVpNMTUyLjg1NiAyOC43NUgxNDkuODgxVjE2LjE3NUgxNTIuODU2VjI4Ljc1WiIgZmlsbD0id2hpdGUiIGZpbGwtb3BhY2l0eT0iMC42Ii8+CjxwYXRoIGQ9Ik02Mi43OTk3IDI3LjlWMjUuNDc1QzYxLjg3NDcgMjYuMSA2MC4zMjQ3IDI2LjY1IDU4Ljg3NDcgMjYuNjVDNTYuNjk5NyAyNi42NSA1NS44NzQ3IDI1LjYyNSA1NS43NDk3IDIzLjUyNUg2Mi45MjQ3VjIxLjk1QzYyLjkyNDcgMTcuNTc1IDYwLjk5OTcgMTUuOTI1IDU4LjAyNDcgMTUuOTI1QzU0LjM5OTcgMTUuOTI1IDUyLjY3NDcgMTguNyA1Mi42NzQ3IDIyLjVDNTIuNjc0NyAyNi44NzUgNTQuODI0NyAyOSA1OC42MjQ3IDI5QzYwLjUyNDcgMjkgNjEuOTI0NyAyOC41IDYyLjc5OTcgMjcuOVpNODEuMzk5NyAyOUM4Mi43NzQ3IDI5IDgzLjc0OTcgMjguNzUgODQuNDc0NyAyOC4yMjVWMjUuOEM4My43MjQ3IDI2LjMyNSA4Mi44MjQ3IDI2LjY1IDgxLjU3NDcgMjYuNjVDNzkuNDQ5NyAyNi42NSA3OC41NzQ3IDI1IDc4LjU3NDcgMjIuNEM3OC41NzQ3IDE5LjY3NSA3OS42NDk3IDE4LjI3NSA4MS41OTk3IDE4LjI3NUM4Mi43NDk3IDE4LjI3NSA4My44NzQ3IDE4LjY3NSA4NC40NzQ3IDE5LjA1VjE2LjUyNUM4My44NDk3IDE2LjE3NSA4Mi43NDk3IDE1LjkyNSA4MS4yNzQ3IDE1LjkyNUM3Ny40NzQ3IDE1LjkyNSA3NS40OTk3IDE4LjY1IDc1LjQ5OTcgMjIuNDc1Qzc1LjQ5OTcgMjYuNjc1IDc3LjQyNDcgMjkgODEuMzk5NyAyOVpNMzUuNTQ5NyAxNi4xNzVWMjEuMTVIMzEuNTc0N1YxNi4xNzVIMjguNTk5N1YyOC43NUgzMS41NzQ3VjIzLjVIMzUuNTQ5N1YyOC43NUgzOC41MjQ3VjE2LjE3NUgzNS41NDk3Wk01MS45NDk3IDI2LjRINTAuNjI0N1YxNi4xNzVINDEuOTQ5N1YxNy4yNUM0MS45NDk3IDIwLjMyNSA0MS43NDk3IDI0LjMgNDAuNjk5NyAyNi40SDM5Ljc3NDdWMzEuNjI1SDQyLjUyNDdWMjguNzVINDkuMTk5N1YzMS42MjVINTEuOTQ5N1YyNi40Wk03Mi4yOTk3IDI4Ljc1SDc1LjY3NDdMNzAuODk5NyAyMS45NzVMNzUuMDk5NyAxNi4xNzVINzIuMDk5N0w2Ny44OTk3IDIxLjk3NVYxNi4xNzVINjQuOTI0N1YyOC43NUg2Ny44OTk3VjIyLjU3NUw3Mi4yOTk3IDI4Ljc1Wk01Ny45NzQ3IDE4LjI3NUM1OS40NDk3IDE4LjI3NSA1OS44OTk3IDE5LjUgNTkuODk5NyAyMS4wNzVWMjEuMzI1SDU1Ljc0OTdDNTUuODI0NyAxOS4zMjUgNTYuNTQ5NyAxOC4yNzUgNTcuOTc0NyAxOC4yNzVaTTQ3LjY0OTcgMjYuNEg0My40NDk3QzQ0LjI3NDcgMjQuNSA0NC40OTk3IDIxLjA3NSA0NC40OTk3IDE4LjlWMTguNTI1SDQ3LjY0OTdWMjYuNFoiIGZpbGw9ImJsYWNrIi8+CjxwYXRoIGQ9Ik0xMDAuMDAyIDI4Ljc1SDEwMy41MjdMOTcuMzI3MyAxOS42TDEwMy4xMjcgMTEuMzc1SDEwMC4xMjdMOTQuNTAyMyAxOS4zNzVWMTEuMzc1SDkxLjQ3NzNWMjguNzVIOTQuNTAyM1YyMC42TDEwMC4wMDIgMjguNzVaIiBmaWxsPSJibGFjayIvPgo8cGF0aCBkPSJNMTEzLjY0NiAyMC4xNzVDMTEzLjY0NiAxNy4xMjUgMTEyLjA5NiAxNS45NzUgMTA4Ljk0NiAxNS45NzVDMTA2Ljk3MSAxNS45NzUgMTA1LjQyMSAxNi42IDEwNC41MjEgMTcuMTI1VjE5LjZDMTA1LjMyMSAxOSAxMDcuMDcxIDE4LjM1IDEwOC41OTYgMTguMzVDMTEwLjAyMSAxOC4zNSAxMTAuNjcxIDE4Ljg1IDExMC42NzEgMjAuMlYyMC45SDExMC4xOTZDMTA1LjY0NiAyMC45IDEwMy42MjEgMjIuNCAxMDMuNjIxIDI0Ljk1QzEwMy42MjEgMjcuNSAxMDUuMTcxIDI4LjkyNSAxMDcuNDcxIDI4LjkyNUMxMDkuMjIxIDI4LjkyNSAxMDkuOTcxIDI4LjM1IDExMC41NDYgMjcuNzVIMTEwLjY3MUMxMTAuNjk2IDI4LjA3NSAxMTAuNzk2IDI4LjUgMTEwLjg5NiAyOC43NUgxMTMuNzk2QzExMy42OTYgMjcuNzI1IDExMy42NDYgMjYuNyAxMTMuNjQ2IDI1LjY3NVYyMC4xNzVaTTExMC42NzEgMjUuNzVDMTEwLjI5NiAyNi4zIDEwOS41OTYgMjYuNzUgMTA4LjU0NiAyNi43NUMxMDcuMjk2IDI2Ljc1IDEwNi42NzEgMjYgMTA2LjY3MSAyNC44NzVDMTA2LjY3MSAyMy40IDEwNy42OTYgMjIuODc1IDExMC4yNDYgMjIuODc1SDExMC42NzFWMjUuNzVaIiBmaWxsPSJibGFjayIvPgo8cGF0aCBkPSJNMTE4Ljc4OCAxNi4xNzVIMTE2LjAzOFYzMi4zNzVIMTE5LjAxM1YyNy4yNzVDMTE5Ljc2MyAyOC40IDEyMC44NjMgMjkgMTIyLjEzOCAyOUMxMjUuMDM4IDI5IDEyNy4wMzggMjYuNjc1IDEyNy4wMzggMjIuNDVDMTI3LjAzOCAxOC4yNSAxMjUuMDg4IDE1LjkyNSAxMjIuMjg4IDE1LjkyNUMxMjAuODg4IDE1LjkyNSAxMTkuNzM4IDE2LjU3NSAxMTguOTM4IDE3LjhMMTE4Ljc4OCAxNi4xNzVaTTEyMS4zODggMjYuNjVDMTE5LjgxMyAyNi42NSAxMTkuMDEzIDI1LjM3NSAxMTkuMDEzIDIyLjQ3NUMxMTkuMDEzIDE5LjU1IDExOS44NjMgMTguMjc1IDEyMS41MzggMTguMjc1QzEyMy4xNjMgMTguMjc1IDEyMy45NjMgMTkuNTUgMTIzLjk2MyAyMi40NUMxMjMuOTYzIDI1LjM3NSAxMjMuMTEzIDI2LjY1IDEyMS4zODggMjYuNjVaIiBmaWxsPSJibGFjayIvPgo8cGF0aCBkPSJNMTM3LjQ5NCAxOC41MjVWMTYuMTc1SDEyNy41MTlWMTguNTI1SDEzMS4wMTlWMjguNzVIMTMzLjk5NFYxOC41MjVIMTM3LjQ5NFoiIGZpbGw9ImJsYWNrIi8+CjxwYXRoIGQ9Ik0xMzkuMjU2IDE2LjE3NVYyOC43NUgxNDMuNzgxQzE0Ni43MDYgMjguNzUgMTQ4Ljc4MSAyNy4yNSAxNDguNzgxIDI0LjNDMTQ4Ljc4MSAyMS41IDE0Ni45MzEgMjAuMDI1IDE0My44MzEgMjAuMDI1SDE0Mi4yMzFWMTYuMTc1SDEzOS4yNTZaTTE0OS44ODEgMTYuMTc1VjI4Ljc1SDE1Mi44NTZWMTYuMTc1SDE0OS44ODFaTTE0My42MDYgMjYuNEgxNDIuMjMxVjIyLjM3NUgxNDMuNjgxQzE0NC45NTYgMjIuMzc1IDE0NS43MDYgMjIuOTUgMTQ1LjcwNiAyNC40QzE0NS43MDYgMjUuODUgMTQ0Ljg4MSAyNi40IDE0My42MDYgMjYuNFoiIGZpbGw9ImJsYWNrIi8+CjxwYXRoIGQ9Ik0yNi4xIDI4Ljc1SDIzLjA3NVYxMy43MjVIMjEuNzI1QzE5LjI1IDEzLjcyNSAxNy45NSAxNC45NzUgMTcuOTUgMTYuODI1QzE3Ljk1IDE4LjkyNSAxOC44NSAxOS45IDIwLjcgMjEuMTVMMjIuMjI1IDIyLjE3NUwxNy44MjUgMjguNzVIMTQuNTVMMTguNSAyMi44NzVDMTYuMjI1IDIxLjI1IDE0Ljk1IDE5LjY3NSAxNC45NSAxN0MxNC45NSAxMy42NSAxNy4yNzUgMTEuMzc1IDIxLjcgMTEuMzc1SDI2LjFWMjguNzVaIiBmaWxsPSIjRkYwMDAwIi8+Cjwvc3ZnPgo=") 50%/cover no-repeat;height:24px;width:130px}
+.ymaps3--map-copyrights{align-items:center;box-sizing:border-box;display:flex;justify-content:flex-end;margin:10px;position:absolute}.ymaps3--map-copyrights_bottom{bottom:0}.ymaps3--map-copyrights_right{right:0}.ymaps3--map-copyrights__container{background-color:#ffffffbf;border-radius:3px;box-sizing:border-box;color:#000;font:11px/14px Verdana,Arial,sans-serif;padding:0 4px 1px;white-space:nowrap}.ymaps3--map-copyrights__text{box-sizing:border-box;margin-right:5px}.ymaps3--map-copyrights__user-agreements{box-sizing:border-box;color:inherit;text-decoration:underline}.ymaps3--map-copyrights__logo{box-sizing:border-box;flex:0 0 auto;margin-left:5px}.ymaps3--map-copyrights__scale{position:absolute}.ymaps3--map-copyrights_right>.ymaps3--map-copyrights__scale{right:0}
+.ymaps3--controls{box-sizing:border-box;display:flex;padding:12px;pointer-events:none;position:absolute;z-index:1000}.ymaps3--controls_vertical{flex-direction:column}.ymaps3--controls_horizontal{flex-direction:row}.ymaps3--controls_left{align-items:flex-start;left:0}.ymaps3--controls_bottom{align-items:flex-end;bottom:0}.ymaps3--controls_right{align-items:flex-end;right:0}.ymaps3--controls_left.ymaps3--controls_center,.ymaps3--controls_right.ymaps3--controls_center{height:100%;justify-content:center;top:0}
+.ymaps3--map-container{box-sizing:border-box;direction:ltr;display:block;height:100%;margin:0;overflow:hidden;padding:0;position:relative;width:100%}
+.ymaps3--map{height:0;position:relative;touch-action:none;-webkit-user-select:none;user-select:none;width:0}.ymaps3--layer,.ymaps3--map{display:block;overflow:hidden}.ymaps3--layer{height:100%;left:0;position:absolute;top:0;width:100%;z-index:0}.ymaps3--tile-layer{-webkit-touch-callout:none;overflow:visible;pointer-events:none;transform-origin:center;-webkit-user-select:none;user-select:none}.ymaps3--tile-layer__container{display:block;height:100%;left:0;opacity:1;overflow:visible;top:0;transform:translateZ(0);transform-origin:center;transform-style:preserve-3d;transition:opacity .1s ease-in-out;width:100%}.ymaps3--tile-layer__container,.ymaps3--tile-layer__container>canvas,.ymaps3--tile-layer__container>img{background:#0000;position:absolute}.ymaps3--tile-layer__container>img::selection{background:#0000}.ymaps3--marker-layer{background:#0000;height:0;overflow:visible;width:0}.ymaps3--graphics-layer,.ymaps3--marker{transform:translateZ(0);-webkit-user-select:none;user-select:none}.ymaps3--graphics-layer{pointer-events:none}.ymaps3--main-engine-container,.ymaps3--top-engine-container{display:block;height:100%;overflow:hidden;width:100%}.ymaps3--main-engine-container{left:0;position:absolute;top:0}
+.ymaps3--control{box-sizing:border-box;pointer-events:all}.ymaps3--control__background{background-color:#fff;border-radius:8px;box-shadow:0 2px 6px 0 #0003}.ymaps3--controls_vertical>.ymaps3--control{margin-bottom:8px}.ymaps3--controls_horizontal>.ymaps3--control{margin-right:8px}.ymaps3--controls_vertical>.ymaps3--control:last-child{margin-bottom:0}.ymaps3--controls_horizontal>.ymaps3--control:last-child{margin-right:0}
+.ymaps3--button{background-image:none;border:0;box-sizing:border-box;cursor:pointer;display:inline-block;margin:0;outline:0;padding:0;position:relative;text-align:left;-webkit-user-select:none;user-select:none;vertical-align:middle;white-space:nowrap}.ymaps3--control-button{background-color:#fff;border-radius:8px;box-sizing:border-box;display:block;padding:8px}
+
+.ymaps3--zoom-control{display:flex}.ymaps3--zoom-control_vertical{flex-direction:column}.ymaps3--zoom-control__in{background:url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMSA1Ljk5MmMwLS41MzcuNDQ4LS45OTIgMS0uOTkyLjU1NiAwIDEgLjQ0NCAxIC45OTJWMTFoNS4wMDhjLjUzNyAwIC45OTIuNDQ4Ljk5MiAxIDAgLjU1Ni0uNDQ0IDEtLjk5MiAxSDEzdjUuMDA4YzAgLjUzNy0uNDQ4Ljk5Mi0xIC45OTItLjU1NiAwLTEtLjQ0NC0xLS45OTJWMTNINS45OTJDNS40NTUgMTMgNSAxMi41NTIgNSAxMmMwLS41NTYuNDQ0LTEgLjk5Mi0xSDExVjUuOTkyeiIgZmlsbD0iIzRkNGQ0ZCIvPjwvc3ZnPgo=") 50% no-repeat;border-bottom-left-radius:0;border-bottom-right-radius:0;display:block;height:24px;width:24px}.ymaps3--zoom-control__out{background:url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik01IDEyYTEgMSAwIDAgMSAxLTFoMTJhMSAxIDAgMSAxIDAgMkg2YTEgMSAwIDAgMS0xLTF6IiBmaWxsPSIjNGQ0ZDRkIi8+PC9zdmc+Cg==") 50% no-repeat;border-top-left-radius:0;border-top-right-radius:0;display:block;height:24px;width:24px}
+@keyframes ymaps3--controls-spinner-spin{0%{transform:rotate(0deg)}to{transform:rotate(1turn)}}
+
+/* Only runtime state and captured carousel sizing; source design stays in source.css. */
+
+/*
+ * BARNES transferable UI layer for the Kurortnaya page.
+ * Baseline: ../reference-ui.md (2026-10-07).
+ * Project/offer cards are intentionally outside this layer.
+ */
+
+:root {
+  --kit-font: "Tilda Sans", "Tilda Sans Fallback", system-ui, sans-serif;
+  --kit-text: #1e1e1e;
+  --kit-text-secondary: #4f4d49;
+  --kit-text-muted: #656462;
+  --kit-burgundy: #8b1d25;
+  --kit-focus-accent: var(--kit-burgundy);
+  --kit-border: #e4e4e4;
+  --kit-h2-standard-size: 38px;
+  --kit-h2-standard-leading: 1.2;
+  --kit-h2-compact-size: 38px;
+  --kit-h2-compact-leading: 1;
+  --kit-h2-editorial-size: 44px;
+  --kit-h2-editorial-leading: 0.98;
+  --kit-eyebrow-size: 14px;
+  --kit-eyebrow-leading: 1.15;
+  --kit-eyebrow-gap: 25px;
+  --kit-action-height: 70px;
+  --kit-action-size: 17px;
+  --kit-action-padding: 36px;
+}
+
+html,
+body {
+  color: var(--kit-text);
+  font-family: var(--kit-font);
+}
+
+/* Headings outside the project-card component family. */
+
+/* Catalog content-page display follows the approved content H1 contract. */
+
+/* Long-form BARNES copy uses heading roles without introducing bold weights. */
+
+/* CTA portraits: Denis stays natural; the layout, not the photograph, is mirrored. */
+
+/* FloatingExpert contract. */
+
+/* Mobile hero contacts remain distinct from the sticky request-form button. */
+
+/* Compact ContactAction used as a channel selector inside both forms. */
+
+/* FAQ body typography follows the shared text roles at every breakpoint. */
+
+html body .catalog-section-eyebrow[class] {
+  color: var(--kit-text-secondary);
+  font-size: var(--kit-eyebrow-size);
+  font-weight: 400;
+  letter-spacing: 0.12em;
+  line-height: var(--kit-eyebrow-leading);
+  margin: 0 0 var(--kit-eyebrow-gap);
+  text-transform: uppercase;
+}
+
+/* Parent layouts already contribute their own row gaps. Offset those gaps so
+   the visible eyebrow-to-title rhythm matches the approved 25px contract. */
+
+/* Shared rectangular action contract. Card actions are deliberately excluded. */
+
+/* Filter controls: the UI kit defines these separately from rectangular CTAs. */
+
+@media (min-width: 1441px) {
+  :root {
+    --kit-h2-standard-size: 44px;
+    --kit-h2-compact-size: 44px;
+    --kit-action-size: 19px;
+    --kit-action-padding: 47px;
+  }
+}
+
+@media (max-width: 540px) {
+  :root {
+    --kit-h2-standard-size: 22px;
+    --kit-h2-compact-size: 22px;
+    --kit-h2-editorial-size: 22px;
+    --kit-h2-editorial-leading: 1.2;
+    --kit-eyebrow-size: 12px;
+    --kit-eyebrow-leading: 1.2;
+    --kit-eyebrow-gap: 12px;
+    --kit-action-height: 58px;
+    --kit-action-size: 18px;
+    --kit-action-padding: 24px;
+  }
+}
+
+/* Header contract: compact owner-style navigation with direct contact channels. */
+
+@media (hover: hover) and (pointer: fine) {
+
+  /* Interactive accents are burgundy; yellow and gold are prohibited. */
+}
+
+/* Secondary header: copied from the approved partners-page contract. */
+
+@media (max-width: 540px) {
+
+  html body .catalog-projects-map .catalog-projects-map__controls {
+    bottom: 12px;
+  }
+
+  html body .catalog-projects-map .catalog-projects-map__fullscreen {
+    padding-inline: 8px;
+  }
+
+  html body .catalog-projects-map .ymaps3--controls_bottom .ymaps3--control-button {
+    height: 40px;
+    min-height: 40px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
+
+/* ListingCard contract: shared geometry for project and secondary-lot modes. */
+
+/* Filter layout: "lower lines" design from the approved mobile reference. */
+
+/* One chevron treatment at every breakpoint, matching the filter controls. */
+
+@media (max-width: 540px) {
+
+  /* Anchor every mobile arrow to its control, independently of text/padding. */
+}
+
+/* International content inside the approved node component contracts. */
+/* A title never adds another line to a listing card, including city variants. */
+.international-node-design .catalog-projects-map__search-input { min-width: 0; }
+
+/* Footer contract from prodazha_sobstvennikam/owner-sale.css.
+   Base snapshot rules use the same data-v-6eb18211 scope on both pages. */
+
+/* Shared owner header template. Source: prodazha_sobstvennikam, 2026-10-12.
+ * Opt in with body.barnes-header-template. Only page anchors/content differ.
+ * Kurortnaya deliberately retains site-header--no-nav (no directions row).
+ */
+body.barnes-header-template { --owner-sale-ink: #1e1e1e; --owner-sale-brand: #8b1d25; --owner-sale-border: rgba(30,30,30,.14); }
+@media (max-width:540px) {
+  /* Keep the contact dropdown clickable; only the anchor list scrolls. */
+}
+
+/* Catalogue composition using the approved homepage search, choice and spacing roles. */
+/* One continuous strip echoes the homepage search bar; labels carry the hierarchy. */
+/* Optional collections sit between the search and the result controls. */
+/* Dropdown choices use the quiet selected state from the kit's quiz choices. */
+
+/* Two quick choices; advanced criteria stay in the shared full form. */
+
+/* Restore all four quick parameters on phones in a shared 2x2 grid. */
+
+/* Resort integration: same reference geometry, isolated from cards and headers. */
+
+/* Light full form copied from catalogue role overrides. */
+/* Map quick controls share the same boxed geometry; the map itself is unchanged. */
+/* Measured full-dialog geometry and typography from the reference. */
+/* Legacy chip labels must not paint a second dark rectangle over the selection. */
+
+/* Keep the two-word brand together without preventing the rest of a sentence from wrapping. */
+.barn-estate-name{overflow-wrap:normal!important;word-break:normal!important;hyphens:none!important}
+
+/* CTA background layers span the section; form layout stays on its existing grid. */
+
+/* Shared laptop hero policy. Primary heroes are 200px shorter; typography stays in the page kit. */
+@layer barn-hero-laptop {
+ @media (min-width:1025px) and (max-width:1919px), (min-width:1920px) and (max-height:1000px) {
+  body {--hero-laptop-main:620px;--hero-laptop-node:444px;--hero-laptop-lot:520px;}
+  @media(min-width:1441px){body{--hero-laptop-main:760px;--hero-laptop-node:494px;--hero-laptop-lot:650px;}}
+  body[data-node-shell]{--hero-laptop-node:var(--hero-laptop-main);}
+ }
+}
+
+/* Header derived from owner-sale; regenerate with main-site/tools/sync-node-shell.cjs. */
+@layer barn-node-shell-header {
+
+}
+
+/* Media header v1.1.0, mobile sticky menu 2026-11-04. Only headers opt into this component. */
+html body.barnes-media-header {--mh-gutter:calc(-26.66667px + 6.59722vw);--mh-pad:32px;--mh-logo:48px;--mh-panel-offset:41px;--mh-ink:#1e1e1e;}
+/* Owner/ambassador anchors retain their nodes, text and handlers. Only center/right change. */
+@media(min-width:1921px) {html body.barnes-media-header {--mh-gutter:0px;}}
+@media(max-width:768px) {html body.barnes-media-header {--mh-gutter:calc(8.94118px + 1.96078vw);}}
+@media(max-width:540px) {
+ html body.barnes-media-header {--mh-pad:16px;--mh-logo:36px;--mh-panel-offset:25px;}
+}
+
+/* Media has WA / Telegram / MAX above hero, WA / MAX / Telegram after hero. */
+
+/* One mobile row: menu / logo / contacts. Page anchors remain available on desktop. */
+
+/* Identical glyph inset on Media and owner/partner headers; retain the 44px touch target. */
+
+/* Direction pages use the burger only, without a second navigation row. */
+
+/* The sticky mobile bar owns its centered logo, even when legacy node CSS hid it. */
+@layer barn-node-shell-header {
+}
+
+/* Five direction pages share owner-sale header/hero metrics. Page data stays local. */
+@layer barn-node-shell {
+ html body[data-node-shell] {--node-hero-height:820px;--node-title-lines:1;}
+ @media(min-width:1441px){html body[data-node-shell]{--node-hero-height:960px;}}
+ @media(max-width:767px){html body[data-node-shell]{--node-title-lines:2;}}
+ @media(max-width:540px){html body[data-node-shell]{--node-hero-height:560px;}}
+ @media(max-width:389px){html body[data-node-shell]{--node-title-lines:3;}}
+ /* The international page already suppresses its legacy quick-link content. */
+}
+
+/* Vertical roles from the approved home-spacing.css / UI-kit v1.0.3.
+ * Scope: five direction nodes. Each interval is owned once, never margin + gap. */
+@layer barn-node-spacing {
+ html body[data-node-shell] {
+  --node-section-space:clamp(72px,6vw,100px);
+  --node-brow-gap:25px;--node-heading-content:40px;--node-copy-gap:24px;
+ }
+ @media(max-width:1024px){html body[data-node-shell]{--node-brow-gap:12px;}}
+ @media(max-width:540px){html body[data-node-shell]{--node-section-space:48px;--node-heading-content:28px;--node-copy-gap:16px;}}
+ /* Start-sales: the slider is a sibling of the heading container. */
+ /* Map: description belongs to the heading, then one content interval. */
+ html body[data-node-shell] .catalog-map>.base-container {row-gap:0!important;}
+ html body[data-node-shell] .catalog-map__header {margin:0 0 var(--node-heading-content)!important;}
+ html body[data-node-shell] .catalog-map__text {margin:var(--node-copy-gap) 0 0!important;}
+ html body[data-node-shell] .catalog-projects-map {margin-top:0!important;}
+ /* Catalog controls keep their own existing internal intervals. */
+ /* Editorial intro: eyebrow -> H2 -> description, without a second flex gap. */
+ /* Directions/news: the parent gap owns heading -> cards. */
+ /* FAQ has no separate heading wrapper: margin belongs to the answer grid. */
+ /* Consultation owns its spacing inside the photo. Outer padding exposes dark bands. */
+ /* Photo CTA: retain the card's inner grid, normalize heading and form spacing. */
+}
+/* Editorial images use one frame and end at the introductory copy, above its action. */
+@layer barn-node-spacing {
+}
+
+/* Match apparent portrait distance; the office background still reaches every CTA edge. */
+@layer barn-node-spacing {
+}
+
+/* FAQ columns share question/answer tracks, so wrapping and expansion keep paired rows aligned. */
+@layer barn-node-spacing {
+}
+
+/* Final contact CTA: city layout/fields, shared by all five nodes.
+ * Original source: city/css/document-desktop.css; local backgrounds remain untouched. */
+@layer barn-node-spacing {
+}
+@layer barn-node-spacing {
+}
+
+/* Generated from the approved home reference by sync-node-recommendations.cjs. */
+@layer barn-node-recommendations {
+
+}
+/* Only node-specific integration. Card presentation is generated from the home source. */
+@layer barn-node-recommendations {
+}
+@layer barn-node-recommendations {
+}
+@layer barn-node-recommendations {
+ /* Splide's live horizontal track padding is zero in the home instance. */
+}
+
+/* Generated from the current katalog-nedvizhimosti filter sources; see sync-node-filters.cjs. */
+@layer barn-node-filters {
+/* kit/_shared/source.css */
+
+/* kit/_shared/ui-kit.css */
+
+/* kit/_shared/listing-mode.css */
+
+/* listing.css */
+
+/* kit-v1/home-typography.css */
+
+
+/* kit-v1/home-spacing.css */
+
+
+/* kit-v1/home-buttons.css */
+
+
+/* catalog-kit-v1.css */
+
+/* kit/filters-modal/filters-modal.css */
+
+/* kit/quick-filter-dropdowns/quick-filters.css */
+
+/* catalog-filters.css */
+
+/* kit/quick-filter-dropdowns/brand-filters.css */
+
+/* map-view/reference-map.css */
+
+/* catalog-map.css */
+
+}
+/* Integration with existing node data/controllers; shared catalogue presentation above. */
+@layer barn-node-filters {
+ html body[data-node-shell] {--node-filter-size:18px;}
+ @media(min-width:1441px){html body[data-node-shell]{--node-filter-size:20px;}}
+ @media(max-width:540px){html body[data-node-shell]{--node-filter-size:17px;}}
+}
+@layer barn-node-filters {
+}
+@layer barn-node-filters {
+}
+@layer barn-node-filters {
+}
+@layer barn-node-filters {
+}
+/* Map shell follows the Resort overlay; filter captions share the same left edge. */
+@layer barn-node-filters {
+}
+@layer barn-node-filters {
+}
+@layer barn-node-filters {
+}
+/* Give the desktop listing sort its own room inside the right page gutter. */
+@layer barn-node-filters {
+}
+/* Map parameters share listing state; the deal uses the listing's segmented control. */
+@layer barn-node-filters {
+}
+
+/* Small decorative up/down SVG for sorting; kept outside mutable button captions. */
+@layer barn-node-filters {
+}
+/* Mobile count is a real grid item; native nodes use a class instead of #results-count. */
+@layer barn-node-filters {
+}
+@layer barn-node-filters {
+}
+
+@layer barn-layout-grid {
+/* Horizontal grid from the approved homepage home-spacing.css, UI-kit v1.0.3.
+ * One inset per content frame. Full-bleed photos/CTA, split-form interiors and
+ * the resort FAQ's explicitly retained composition are separate contracts. */
+:root {
+  --barn-page-gutter: clamp(24px, calc(-26.66667px + 6.59722vw), 100px);
+}
+@media(max-width:540px) { :root { --barn-page-gutter:22px; } }
+@media(min-width:1921px) { :root { --barn-page-gutter:0px; } }
+/* Hero and header must follow the same grid as the page content. */
+html body.barnes-media-header { --mh-gutter:var(--barn-page-gutter)!important; }
+/* The footer used to add a section gutter and a second container gutter. */
+/* City/international exports still carried older container breakpoints. */
+html body:is(.international-source-page,.city-home-kit) .base-container {
+  box-sizing:border-box!important;width:100%!important;max-width:1920px!important;
+  margin-inline:auto!important;padding-inline:var(--barn-page-gutter)!important;
+}
+/* These two lot-page frames were missing the shared content cap. */
+/* Keep text over project photos on the common grid; photos stay full bleed. */
+
+/* The photographic consultation keeps its full-bleed media; only its content
+ * inset follows the page grid. A named layer also isolates the old generated
+ * CTA adapter's high-specificity padding rules. */
+
+/* Mobile newsletter photography spans the canvas; only the copy owns gutters. */
+
+}
+
+/* Shared page navigation; deliberately outside the header and normal flow. */
+/* Keep the original footprint so neither hero content nor the header moves. */
+
+/* Canonical footer text-link states for all thirteen current BARN Estate pages. */
+
+/* Geometry, colors and markup come from the original css/source.css modal contract. */
+
+/* Dropdown markup/geometry follow front.barnes.vsavr.ru's catalog quick filters. */
+
+/* Native checkbox semantics; BARNES inline-filter typography and wine state. */
+/* Account for text centering inside different-height controls, not only grid-gap. */
+
+/* UI-kit 1.0.3 compact chips and existing node section/heading roles. */
+@layer barn-node-spacing {
+}
+
+/* Generated from approved home NewsSection by sync-node-news.cjs. */
+@layer barn-node-spacing {
+}
+
+/* City quiz styles, shared once across five nodes. */
+/* Use the canonical semantic grays, rather than legacy low-opacity placeholders. */
+/* Keep the footer's primary action reachable while its button is on screen. */
+
+/* Homepage quiz: new controls inherit the owner/ambassador reference palette. */
+
+/* Keep one dialog frame through every quiz step; only the body scrolls. */
+
+/* Narrow quiz column: keep channel labels readable, including phone landscape. */
+
+/* One geometry/type contract per button role. Preserve fill/outline/inverse colors. */
+/* Compact choices retain a smaller footprint, sharing radius and regular weight. */
+
+/* Rectangular quiz choices use the same 1px corner as all CTA buttons. */
+
+/* Shared expert dialog, based on the approved homepage quiz geometry. */
+@layer barn-node-spacing {
+}
+@layer barn-node-spacing {
+ /* Explicit grid tracks prevent legacy flex alignment from shrinking different dialogs. */
+}
+
+/* Generated by sync-node-footer.cjs from approved homepage. */
+@layer barn-node-spacing {
+}
+
+/* Shared page navigation; deliberately outside the header and normal flow. */
+/* Keep the original footprint so neither hero content nor the header moves. */
+
+/* Geometry, colors and markup come from the original css/source.css modal contract. */
+
+/* Dropdown markup/geometry follow front.barnes.vsavr.ru's catalog quick filters. */
+
+/* Native checkbox semantics; BARNES inline-filter typography and wine state. */
+/* Account for text centering inside different-height controls, not only grid-gap. */

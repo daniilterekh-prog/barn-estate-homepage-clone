@@ -1,0 +1,17 @@
+{
+  "id": "18-handoff-dialog",
+  "title": "Квиз обращения к эксперту",
+  "kind": "handoff-dialog",
+  "html": "../../html/18-handoff-dialog.html",
+  "css": "../../css/18-handoff-dialog.css",
+  "js": "../../js/18-handoff-dialog.js",
+  "preview": "index.html",
+  "dependencies": [
+    "../../css/page.css",
+    "../../js/blocks-runtime.js",
+    "../../assets/",
+    "../../js/expert-quiz.js"
+  ],
+  "assets": "assets.json",
+  "integrationMode": "portable-adapter"
+}

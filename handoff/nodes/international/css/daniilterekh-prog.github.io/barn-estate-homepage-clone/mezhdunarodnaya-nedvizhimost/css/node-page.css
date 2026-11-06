@@ -1,0 +1,54 @@
+/* International content inside the approved node component contracts. */
+/* A title never adds another line to a listing card, including city variants. */
+html body .catalog-grid .apartment-card--catalog .apartment-card__name-text[class] {
+  display: block;
+  min-width: 0;
+  min-height: 0;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  -webkit-line-clamp: unset;
+}
+.international-node-design .map-browser__card h3 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.international-map-filter {
+  align-items: center;
+  background: transparent;
+  border: 0;
+  color: #333;
+  cursor: pointer;
+  display: inline-flex;
+  flex: 0 0 36px;
+  justify-content: center;
+  height: 36px;
+  padding: 8px;
+  width: 36px;
+}
+.international-map-filter:focus-visible { outline: 2px solid #821c2a; outline-offset: 2px; }
+.international-node-design .hero-filter-modal { z-index: 11000; }
+html body.international-node-design .hero-filter-modal--drawer { position: fixed; }
+.international-node-design .catalog-projects-map__search-input { min-width: 0; }
+.international-node-design .catalog-quick-links--hero { display: none; }
+.international-node-design .catalog-page-nav { display: none !important; }
+.international-node-design .catalog-best-offers__slider-row { margin-top: 0; }
+.international-node-design .catalog-consultation__image { object-fit: contain; }
+.international-node-design .catalog-feedback-modal { z-index: 1400; }
+.international-node-design .catalog-grid__item { display: list-item; }
+html body.international-node-design :is(.catalog-consultation__methods, .catalog-contact__methods) {
+  width: 100%;
+  max-width: 610px;
+}
+@media (min-width: 541px) and (max-width: 1024px) {
+  html body.international-node-design .catalog-contact__card { min-height: 457px; padding: clamp(26px, 4vw, 52px); }
+}
+.international-node-design .catalog-best-offers .splide__slide { width: calc((100% - 2 * var(--catalog-best-offers-gap)) / 3) !important; }
+.international-node-design .catalog-best-offers__slider-wrap { --catalog-best-offers-gap: 24px; }
+@media (min-width: 1441px) { .international-node-design .catalog-best-offers__slider-wrap { --catalog-best-offers-gap: 90px; } }
+@media (max-width: 1280px) { .international-node-design .catalog-best-offers__slider-wrap { --catalog-best-offers-gap: 20px; } }
+@media (max-width: 1024px) { .international-node-design .catalog-best-offers__slider-wrap { --catalog-best-offers-gap: 16px; } }
+@media (max-width: 768px) { .international-node-design .catalog-best-offers__slider-wrap { --catalog-best-offers-gap: 12px; } }
+@media (max-width: 540px) { .international-node-design .catalog-best-offers .splide__slide { width: 100% !important; } }

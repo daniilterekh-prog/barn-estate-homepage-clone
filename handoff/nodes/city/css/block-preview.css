@@ -1,0 +1,21 @@
+/* Preview-only page shell; insertion fragments retain their original classes. */
+@layer handoff-preview {
+ html body[data-block-preview] {margin:0!important;min-height:0!important;}
+ body[data-block-preview] [hidden] {display:none!important;}
+ body[data-block-preview] .handoff-block :is(.layout,.layout__main) {min-height:0!important;}
+ body[data-block-preview] .handoff-block[data-block-kind=site-header] {background:#262626;min-height:190px;}
+ body[data-block-preview] .handoff-block[data-block-kind=site-header] .layout__header {position:relative!important;}
+ body[data-block-preview] .handoff-block[data-block-kind=owner-sale-sticky] .owner-sale-sticky {position:relative!important;inset:auto!important;opacity:1!important;visibility:visible!important;transform:none!important;pointer-events:auto!important;}
+ body[data-block-preview] .handoff-block[data-block-kind=floating-expert] {min-height:220px;}
+}
+
+/* Preview-only positioning. Does not change the portable fragment styles. */
+body[data-block-preview] .handoff-block[data-block-kind=layout__header] {background:#292624;min-height:200px;}
+body[data-block-preview] .handoff-block[data-block-kind=layout__header] .layout__header {position:relative!important;}
+body[data-block-preview] .handoff-block[data-block-kind=owner-sale-sticky] {min-height:130px;}
+body[data-block-preview] .handoff-block[data-block-kind=owner-sale-sticky] .owner-sale-sticky {position:relative!important;opacity:1!important;visibility:visible!important;transform:none!important;pointer-events:auto!important;}
+body[data-block-preview] .handoff-block[data-block-kind=floating-expert] {min-height:220px;}
+body[data-block-preview] .handoff-block[data-block-kind=floating-expert] .floating-expert {position:relative!important;inset:auto!important;opacity:1!important;transform:none!important;margin:24px!important;}
+body[data-block-preview] .handoff-block[data-block-kind=filters-panel] .hero-filter-modal {position:relative!important;inset:auto!important;}
+body[data-block-preview] .handoff-block[data-block-kind=expanded-map] .map-browser {position:relative!important;inset:auto!important;height:100dvh!important;}
+body[data-block-preview] .handoff-block[data-block-kind=expanded-map] .map-browser__backdrop {display:none!important;}

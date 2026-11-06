@@ -1,0 +1,17 @@
+{
+  "id": "05-catalog-grid",
+  "title": "Актуальные проекты и лоты",
+  "kind": "catalog-grid",
+  "html": "../../html/05-catalog-grid.html",
+  "css": "../../css/05-catalog-grid.css",
+  "js": "../../js/05-catalog-grid.js",
+  "preview": "index.html",
+  "dependencies": [
+    "../../css/page.css",
+    "../../js/blocks-runtime.js",
+    "../../assets/",
+    "../../js/expert-quiz.js"
+  ],
+  "assets": "assets.json",
+  "integrationMode": "coupled-page-state"
+}

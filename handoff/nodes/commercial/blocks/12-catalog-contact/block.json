@@ -1,0 +1,17 @@
+{
+  "id": "12-catalog-contact",
+  "title": "Эксперты BARN Estate подскажут",
+  "kind": "catalog-contact",
+  "html": "../../html/12-catalog-contact.html",
+  "css": "../../css/12-catalog-contact.css",
+  "js": "../../js/12-catalog-contact.js",
+  "preview": "index.html",
+  "dependencies": [
+    "../../css/page.css",
+    "../../js/blocks-runtime.js",
+    "../../assets/",
+    "../../js/expert-quiz.js"
+  ],
+  "assets": "assets.json",
+  "integrationMode": "portable-adapter"
+}

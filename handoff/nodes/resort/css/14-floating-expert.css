@@ -1,0 +1,504 @@
+@font-face{font-family:'Tilda Sans Fallback';src:local('Arial'),local('Helvetica Neue'),local('Helvetica');size-adjust:92.84%;ascent-override:102.43%;descent-override:26.82%;line-gap-override:0%}@font-face{font-family:'Tilda Sans';src:url("../assets/f0f2c165784c7234.woff2") format('woff2');font-weight:300;font-style:normal;font-display:swap}@font-face{font-family:'Tilda Sans';src:url("../assets/2670dad44ca6c2a1.woff2") format('woff2');font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:'Tilda Sans';src:url("../assets/f716269e361f4665.woff2") format('woff2');font-weight:500;font-style:normal;font-display:swap}html,body{font-family:'Tilda Sans','Tilda Sans Fallback',system-ui,sans-serif}.layout[data-v-47bd53e9]{display:flex;flex-direction:column;max-width:100%;min-height:100vh;min-width:0;overflow-x:clip;position:relative}.floating-expert[data-v-cd0a1259]{animation:floating-expert-enter-cd0a1259 .35s ease forwards;bottom:24px;opacity:0;position:fixed;right:24px;transform:translateY(14px);width:min(360px,100vw - 32px);z-index:40}@media screen and (max-width:540px){.floating-expert[data-v-cd0a1259]{bottom:16px;right:16px}}.floating-expert__card[data-v-cd0a1259]{align-items:center;animation:floating-expert-pulse-cd0a1259 2.15s cubic-bezier(.22,.61,.36,1) .45s infinite;background:#fff;border:1px solid hsla(0,0%,7%,.14);box-shadow:0 22px 62px #0000005c;color:#000;cursor:pointer;display:inline-flex;font:inherit;gap:18px;min-height:104px;padding:14px 58px 14px 14px;text-align:left;transition:transform .25s ease,box-shadow .25s ease;width:100%}@media screen and (max-width:540px){.floating-expert__card[data-v-cd0a1259]{gap:12px;min-height:88px;padding:10px 46px 10px 10px}}.floating-expert__card[data-v-cd0a1259]:focus-visible,.floating-expert__card[data-v-cd0a1259]:hover{box-shadow:0 28px 74px #00000075;transform:translateY(-2px) scale(1.025)}.floating-expert__avatar[data-v-cd0a1259]{background:#f3f1ec;border-radius:50%;flex:0 0 72px;height:72px;overflow:hidden;width:72px}@media screen and (max-width:540px){.floating-expert__avatar[data-v-cd0a1259]{flex-basis:64px;height:64px;width:64px}}.floating-expert__avatar img[data-v-cd0a1259]{display:block;filter:saturate(.92) contrast(1.02);height:100%;-o-object-fit:cover;object-fit:cover;width:100%}.floating-expert__content[data-v-cd0a1259]{display:grid;gap:6px;min-width:0}.floating-expert__label[data-v-cd0a1259]{color:#8a837b;font-size:10px;letter-spacing:.14em;line-height:1.25;text-transform:uppercase}@media screen and (max-width:540px){.floating-expert__label[data-v-cd0a1259]{font-size:9px}}.floating-expert__title[data-v-cd0a1259]{color:#6e1f2d;font-size:13px;font-weight:500;letter-spacing:.16em;line-height:1.2;max-width:250px;text-transform:uppercase}@media screen and (max-width:540px){.floating-expert__title[data-v-cd0a1259]{font-size:12px;max-width:172px}}.floating-expert__name[data-v-cd0a1259]{color:#8a837b;font-size:10px;letter-spacing:.14em;line-height:1.2;text-transform:uppercase}.floating-expert__close[data-v-cd0a1259]{background:transparent;border:0;cursor:pointer;height:30px;position:absolute;right:10px;top:10px;width:30px}@keyframes floating-expert-enter-cd0a1259{to{opacity:1;transform:translateY(0)}}@keyframes floating-expert-pulse-cd0a1259{0%,to{box-shadow:0 22px 62px #12121233}42%{box-shadow:0 22px 62px #12121233,0 0 0 12px #12121214}58%{box-shadow:0 26px 74px #1212123d,0 0 0 22px #12121200}}@media(prefers-reduced-motion:reduce){.floating-expert[data-v-cd0a1259]{animation:none;opacity:1;transform:none}.floating-expert__card[data-v-cd0a1259]{animation:none;transition:none}}
+@charset "UTF-8";
+@charset "UTF-8";
+@charset "UTF-8";@font-face{font-display:swap;font-family:Tilda Sans;font-style:normal;font-weight:300;src:url("../assets/f0f2c165784c7234.woff2") format("woff2")}@font-face{font-display:swap;font-family:Tilda Sans;font-style:normal;font-weight:400;src:url("../assets/2670dad44ca6c2a1.woff2") format("woff2")}@font-face{font-display:swap;font-family:Tilda Sans;font-style:normal;font-weight:500;src:url("../assets/f716269e361f4665.woff2") format("woff2")}@font-face{font-display:swap;font-family:Tilda Sans;font-style:normal;font-weight:600;src:url("../assets/3814f8c444073262.woff2") format("woff2")}@font-face{font-display:swap;font-family:Tilda Sans;font-style:normal;font-weight:700;src:url("../assets/a2690df6fe834806.woff2") format("woff2")}@font-face{font-display:swap;font-family:Tilda Sans;font-style:normal;font-weight:800;src:url("../assets/726a3a878465a590.woff2") format("woff2")}@font-face{font-display:swap;font-family:Tilda Sans;font-style:normal;font-weight:900;src:url("../assets/73abed6708c43912.woff2") format("woff2")}@font-face{ascent-override:102.43%;descent-override:26.82%;font-family:Tilda Sans Fallback;line-gap-override:0%;size-adjust:92.84%;src:local("Arial"),local("Helvetica Neue"),local("Helvetica")}html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}img{border:0}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}html{color:#1e1e1e;font-size:16px;font-weight:400;line-height:1;scroll-behavior:smooth;scrollbar-gutter:stable}html,html body{font-family:Tilda Sans,Tilda Sans Fallback,system-ui,-apple-system,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif}html body{height:100%;margin:0;text-rendering:optimizeLegibility;width:100%;-webkit-font-smoothing:antialiased;background-color:#fff}*,:after,:before{box-sizing:border-box}*{-webkit-tap-highlight-color:rgba(0,0,0,0);outline:none}button,input,textarea{font-family:inherit}img{height:auto;max-width:100%}button:not(:disabled){cursor:pointer}a:focus-visible,button:focus-visible{outline:2px solid rgba(20,71,230,.45);outline-offset:2px}@keyframes splide-loading{0%{transform:rotate(0)}to{transform:rotate(1turn)}}@keyframes fade-in{0%{opacity:0}to{opacity:1}}@keyframes fade-out{0%{opacity:1}to{opacity:0}}@keyframes fadeOut{0%{opacity:1}to{opacity:0}}@keyframes fadeInDown{0%{opacity:0;transform:translate3d(0,-100%,0)}to{opacity:1;transform:none}}@keyframes fadeInUp{0%{opacity:0;transform:translate3d(0,100%,0)}to{opacity:1;transform:none}}@keyframes partners-marquee-right-923dc07c{0%{transform:translate3d(-50%,0,0)}to{transform:translateZ(0)}}@keyframes partners-marquee-left-923dc07c{0%{transform:translateZ(0)}to{transform:translate3d(-50%,0,0)}}.floating-expert[data-v-cd0a1259]{animation:floating-expert-enter-cd0a1259 .35s ease forwards;bottom:24px;opacity:0;position:fixed;right:24px;transform:translateY(14px);width:min(360px,100vw - 32px);z-index:40}@media screen and (max-width:540px){.floating-expert[data-v-cd0a1259]{bottom:16px;right:16px}}.floating-expert__card[data-v-cd0a1259]{align-items:center;animation:floating-expert-pulse-cd0a1259 2.15s cubic-bezier(.22,.61,.36,1) .45s infinite;background:#fff;border:1px solid hsla(0,0%,7%,.14);box-shadow:0 22px 62px #0000005c;color:#000;cursor:pointer;display:inline-flex;font:inherit;gap:18px;min-height:104px;padding:14px 58px 14px 14px;text-align:left;transition:transform .25s ease,box-shadow .25s ease;width:100%}@media screen and (max-width:540px){.floating-expert__card[data-v-cd0a1259]{gap:12px;min-height:88px;padding:10px 46px 10px 10px}}.floating-expert__card[data-v-cd0a1259]:focus-visible,.floating-expert__card[data-v-cd0a1259]:hover{box-shadow:0 28px 74px #00000075;transform:translateY(-2px) scale(1.025)}.floating-expert__avatar[data-v-cd0a1259]{background:#f3f1ec;border-radius:50%;flex:0 0 72px;height:72px;overflow:hidden;width:72px}@media screen and (max-width:540px){.floating-expert__avatar[data-v-cd0a1259]{flex-basis:64px;height:64px;width:64px}}.floating-expert__avatar img[data-v-cd0a1259]{display:block;filter:saturate(.92) contrast(1.02);height:100%;-o-object-fit:cover;object-fit:cover;width:100%}.floating-expert__content[data-v-cd0a1259]{display:grid;gap:6px;min-width:0}.floating-expert__label[data-v-cd0a1259]{color:#8a837b;font-size:10px;letter-spacing:.14em;line-height:1.25;text-transform:uppercase}@media screen and (max-width:540px){.floating-expert__label[data-v-cd0a1259]{font-size:9px}}.floating-expert__title[data-v-cd0a1259]{color:#6e1f2d;font-size:13px;font-weight:500;letter-spacing:.16em;line-height:1.2;max-width:250px;text-transform:uppercase}@media screen and (max-width:540px){.floating-expert__title[data-v-cd0a1259]{font-size:12px;max-width:172px}}.floating-expert__name[data-v-cd0a1259]{color:#8a837b;font-size:10px;letter-spacing:.14em;line-height:1.2;text-transform:uppercase}.floating-expert__close[data-v-cd0a1259]{background:transparent;border:0;cursor:pointer;height:30px;position:absolute;right:10px;top:10px;width:30px}@keyframes floating-expert-enter-cd0a1259{to{opacity:1;transform:translateY(0)}}@keyframes floating-expert-pulse-cd0a1259{0%,to{box-shadow:0 22px 62px #12121233}42%{box-shadow:0 22px 62px #12121233,0 0 0 12px #12121214}58%{box-shadow:0 26px 74px #1212123d,0 0 0 22px #12121200}}@media(prefers-reduced-motion:reduce){.floating-expert[data-v-cd0a1259]{animation:none;opacity:1;transform:none}.floating-expert__card[data-v-cd0a1259]{animation:none;transition:none}}.layout[data-v-47bd53e9]{display:flex;flex-direction:column;max-width:100%;min-height:100vh;min-width:0;overflow-x:clip;position:relative}
+
+/* BARN Estate home UI-kit v1.0.0, approved 2026-11-01.
+ * Resort derivative 1.5.0. H1 hero and the entire FAQ retain their contracts.
+ * Property cards retain their styling; filters follow the current catalogue independently.
+ * One shared role layer for the page and standalone blocks; not a second theme.
+ */
+body.barnes-header-template {
+  --resort-section: clamp(72px, 6vw, 100px);
+  --resort-gutter: clamp(24px, calc(-26.66667px + 6.59722vw), 100px);
+  --resort-heading: 38px;
+  --resort-eyebrow: 14px;
+  --resort-eyebrow-line: 16.1px;
+  --resort-eyebrow-gap: 25px;
+  --resort-content-gap: 40px;
+  --resort-copy-gap: 24px;
+  --resort-action: 17px;
+  --resort-action-height: 70px;
+  --resort-action-pad: 36px;
+  --resort-channel: 17px;
+  --resort-field:18px; --resort-dialog-heading:24px; --resort-card-padding:32px;
+}
+@media(min-width:1441px) {
+  body.barnes-header-template { --resort-heading:44px; --resort-field:20px; --resort-action:19px; --resort-action-pad:47px; }
+}
+@media(min-width:1921px) {
+  body.barnes-header-template { --resort-gutter:0px; }
+}
+@media(max-width:1024px) {
+  body.barnes-header-template { --resort-card-padding:24px; --resort-dialog-heading:20px; --resort-eyebrow:12px; --resort-eyebrow-line:14.4px; --resort-eyebrow-gap:12px; }
+}
+@media(max-width:540px) {
+  body.barnes-header-template {
+    --resort-section:48px; --resort-gutter:22px; --resort-heading:22px;
+    --resort-content-gap:28px; --resort-copy-gap:16px;
+    --resort-action:18px; --resort-action-height:58px; --resort-action-pad:24px;
+    --resort-channel:18px; --resort-field:17px; --resort-card-padding:20px;
+  }
+}
+/* The FAQ container is deliberately excluded as well as its text and spacing. */
+/* Consume heading/content spacing once; legacy margins/padding added a second gap. */
+/* Start-sales carousel consumes the approved homepage slider spacing in its own stylesheet. */
+/* Primary actions and the separate compact form-submit role. */
+/* Header logo and request outline match the approved homepage exactly. */
+
+/* Disclosure state must override the captured display/max-height styles. */
+
+/* Keyboard affordance only; approved FAQ text geometry stays unchanged. */
+
+/* Full-page role audit, 2026-11-03. Object cards, catalogue controls, hero H1 and FAQ are excluded. */
+
+/* Contact actions copied from approved homepage home-header-contacts.css.
+ * Source: exact-2026-10-21/ (01.11.2026); adaptation 02.11.2026.
+ * Resort keeps its own section links and separate mobile request button.
+ */
+/* Hero order is the homepage's WA / Telegram / MAX / telephone. */
+/* The homepage shows the outlined request only after the hero. */
+@media(max-width:1024px) {
+  /* Keep the visible request compact while retaining a 44px contacts target. */
+}
+
+/* Breadcrumbs live in the hero again; the header contains only the main row. */
+/* Text scale shared by the current catalogue and Media breadcrumbs. */
+/* Reserve the overlapping header and leave the search group slightly lower. */
+
+/* Catalogue composition using the approved homepage search, choice and spacing roles. */
+/* Current control primitives; no dependency on the retired lower-line toolbar. */
+/* One continuous strip echoes the homepage search bar; labels carry the hierarchy. */
+/* Active chips/reset stay separate; collections share the result controls row. */
+/* Dropdown choices use the quiet selected state from the kit's quiz choices. */
+
+/* Two quick choices; advanced criteria stay in the shared full form. */
+
+/* Restore all four quick parameters on phones in a shared 2x2 grid. */
+
+/* Independent deal and market controls; all contextual quick fields stay visible. */
+
+/* Text and chevrons share the button's vertical center, including wrapped labels. */
+
+/* Quick choices do not repeat the field label. */
+
+/* Resort integration: same reference geometry, isolated from cards and headers. */
+
+/* Map quick controls share the same boxed geometry; the map itself is unchanged. */
+/* Measured full-dialog geometry and typography from the reference. */
+/* Legacy chip labels must not paint a second dark rectangle over the selection. */
+
+/* Purchase-only node: no redundant deal switch, three primary fields. */
+
+/* Current catalogue reset row and dropdown typography; purchase-only composition stays local. */
+
+/* Light advanced-filter component from the current catalogue; no object-card rules. */
+
+/*
+ * BARNES transferable UI layer for the Kurortnaya page.
+ * Baseline: ../reference-ui.md (2026-10-07).
+ * Project/offer cards are intentionally outside this layer.
+ */
+
+:root {
+  --kit-font: "Tilda Sans", "Tilda Sans Fallback", system-ui, sans-serif;
+  --kit-text: #1e1e1e;
+  --kit-text-secondary: #4f4d49;
+  --kit-text-muted: #656462;
+  --kit-burgundy: #8b1d25;
+  --kit-focus-accent: var(--kit-burgundy);
+  --kit-border: #e4e4e4;
+  --kit-h2-standard-size: 38px;
+  --kit-h2-standard-leading: 1.2;
+  --kit-h2-compact-size: 38px;
+  --kit-h2-compact-leading: 1;
+  --kit-h2-editorial-size: 44px;
+  --kit-h2-editorial-leading: 0.98;
+  --kit-eyebrow-size: 14px;
+  --kit-eyebrow-leading: 1.15;
+  --kit-eyebrow-gap: 25px;
+  --kit-action-height: 70px;
+  --kit-action-size: 17px;
+  --kit-action-padding: 36px;
+}
+
+html,
+body {
+  color: var(--kit-text);
+  font-family: var(--kit-font);
+}
+
+/* Headings outside the project-card component family. */
+
+/* Catalog content-page display follows the approved content H1 contract. */
+
+/* Long-form BARNES copy uses heading roles without introducing bold weights. */
+
+/* CTA portraits: Denis stays natural; the layout, not the photograph, is mirrored. */
+
+html body :is(.catalog-contact__mobile-photo, .catalog-contact__expert-photo, .floating-expert__avatar)[class] {
+  overflow: hidden;
+}
+
+html body .floating-expert__avatar[class] img {
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 0;
+  transform: scale(1.45);
+  transform-origin: 50% 0;
+  width: 100%;
+}
+
+/* FloatingExpert contract. */
+html body .floating-expert[class] {
+  border-color: #e4e4e4;
+  color: #1e1e1e;
+}
+
+html body :is(.floating-expert__label, .floating-expert__name)[class] {
+  color: #656462;
+}
+
+html body .floating-expert__title[class] {
+  color: #8b1d25;
+}
+
+html body .floating-expert__close[class] {
+  height: 44px;
+  min-height: 44px;
+  min-width: 44px;
+  width: 44px;
+}
+
+html body :is(.floating-expert__card, .floating-expert__close)[class]:focus-visible {
+  outline: 2px solid var(--kit-focus-accent);
+  outline-offset: 3px;
+}
+
+html body .floating-expert[class],
+html body .floating-expert[class]::before,
+html body .floating-expert[class]::after {
+  animation-iteration-count: 2;
+}
+
+/* Mobile hero contacts remain distinct from the sticky request-form button. */
+
+/* Compact ContactAction used as a channel selector inside both forms. */
+
+/* FAQ body typography follows the shared text roles at every breakpoint. */
+
+/* Parent layouts already contribute their own row gaps. Offset those gaps so
+   the visible eyebrow-to-title rhythm matches the approved 25px contract. */
+
+/* Shared rectangular action contract. Card actions are deliberately excluded. */
+
+/* Filter controls: the UI kit defines these separately from rectangular CTAs. */
+
+@media (min-width: 1441px) {
+  :root {
+    --kit-h2-standard-size: 44px;
+    --kit-h2-compact-size: 44px;
+    --kit-action-size: 19px;
+    --kit-action-padding: 47px;
+  }
+}
+
+@media (max-width: 540px) {
+  :root {
+    --kit-h2-standard-size: 22px;
+    --kit-h2-compact-size: 22px;
+    --kit-h2-editorial-size: 22px;
+    --kit-h2-editorial-leading: 1.2;
+    --kit-eyebrow-size: 12px;
+    --kit-eyebrow-leading: 1.2;
+    --kit-eyebrow-gap: 12px;
+    --kit-action-height: 58px;
+    --kit-action-size: 18px;
+    --kit-action-padding: 24px;
+  }
+}
+
+/* Header contract: compact owner-style navigation with direct contact channels. */
+
+@media (hover: hover) and (pointer: fine) {
+
+  /* Interactive accents are burgundy; yellow and gold are prohibited. */
+}
+
+/* Secondary header: copied from the approved partners-page contract. */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
+
+/* Footer contract from prodazha_sobstvennikam/owner-sale.css.
+   Base snapshot rules use the same data-v-6eb18211 scope on both pages. */
+
+/* ListingCard contract: shared geometry for project and secondary-lot modes. */
+
+/* Layout copied from approved homepage .barnes-choice, without direction controls. */
+/* The homepage keeps neighbours full-width and changes their height only. */
+
+/* Shared owner header template. Source: prodazha_sobstvennikam, 2026-10-12.
+ * Opt in with body.barnes-header-template. Only page anchors/content differ.
+ * Kurortnaya deliberately retains site-header--no-nav (no directions row).
+ */
+body.barnes-header-template { --owner-sale-ink: #1e1e1e; --owner-sale-brand: #8b1d25; --owner-sale-border: rgba(30,30,30,.14); }
+@media (max-width:540px) {
+  /* Keep the contact dropdown clickable; only the anchor list scrolls. */
+}
+
+/* Geometry, colors and markup come from the original css/source.css modal contract. */
+/* Shared desktop row for the two collections and sorting; compact views retain their order. */
+
+/* Dropdown markup/geometry follow front.barnes.vsavr.ru's catalog quick filters. */
+
+/* Native checkbox semantics; BARNES inline-filter typography and wine state. */
+
+/* Keep the two-word brand together without preventing the rest of a sentence from wrapping. */
+
+/* CTA background layers span the section; form layout stays on its existing grid. */
+
+/* Shared laptop hero policy. Primary heroes are 200px shorter; typography stays in the page kit. */
+@layer barn-hero-laptop {
+ @media (min-width:1025px) and (max-width:1919px), (min-width:1920px) and (max-height:1000px) {
+  body {--hero-laptop-main:620px;--hero-laptop-node:444px;--hero-laptop-lot:520px;}
+  @media(min-width:1441px){body{--hero-laptop-main:760px;--hero-laptop-node:494px;--hero-laptop-lot:650px;}}
+  body[data-node-shell]{--hero-laptop-node:var(--hero-laptop-main);}
+ }
+}
+
+/* Header derived from owner-sale; regenerate with main-site/tools/sync-node-shell.cjs. */
+@layer barn-node-shell-header {
+
+}
+
+/* Media header v1.1.0, mobile sticky menu 2026-11-04. Only headers opt into this component. */
+html body.barnes-media-header {--mh-gutter:calc(-26.66667px + 6.59722vw);--mh-pad:32px;--mh-logo:48px;--mh-panel-offset:41px;--mh-ink:#1e1e1e;}
+/* Owner/ambassador anchors retain their nodes, text and handlers. Only center/right change. */
+@media(min-width:1921px) {html body.barnes-media-header {--mh-gutter:0px;}}
+@media(max-width:768px) {html body.barnes-media-header {--mh-gutter:calc(8.94118px + 1.96078vw);}}
+@media(max-width:540px) {
+ html body.barnes-media-header {--mh-pad:16px;--mh-logo:36px;--mh-panel-offset:25px;}
+}
+
+/* Media has WA / Telegram / MAX above hero, WA / MAX / Telegram after hero. */
+
+/* One mobile row: menu / logo / contacts. Page anchors remain available on desktop. */
+
+/* Identical glyph inset on Media and owner/partner headers; retain the 44px touch target. */
+
+/* Direction pages use the burger only, without a second navigation row. */
+
+/* The sticky mobile bar owns its centered logo, even when legacy node CSS hid it. */
+@layer barn-node-shell-header {
+}
+
+/* Five direction pages share owner-sale header/hero metrics. Page data stays local. */
+@layer barn-node-shell {
+ html body[data-node-shell] {--node-hero-height:820px;--node-title-lines:1;}
+ @media(min-width:1441px){html body[data-node-shell]{--node-hero-height:960px;}}
+ @media(max-width:767px){html body[data-node-shell]{--node-title-lines:2;}}
+ @media(max-width:540px){html body[data-node-shell]{--node-hero-height:560px;}}
+ @media(max-width:389px){html body[data-node-shell]{--node-title-lines:3;}}
+ /* The international page already suppresses its legacy quick-link content. */
+}
+
+/* Vertical roles from the approved home-spacing.css / UI-kit v1.0.3.
+ * Scope: five direction nodes. Each interval is owned once, never margin + gap. */
+@layer barn-node-spacing {
+ html body[data-node-shell] {
+  --node-section-space:clamp(72px,6vw,100px);
+  --node-brow-gap:25px;--node-heading-content:40px;--node-copy-gap:24px;
+ }
+ @media(max-width:1024px){html body[data-node-shell]{--node-brow-gap:12px;}}
+ @media(max-width:540px){html body[data-node-shell]{--node-section-space:48px;--node-heading-content:28px;--node-copy-gap:16px;}}
+ /* Start-sales: the slider is a sibling of the heading container. */
+ /* Map: description belongs to the heading, then one content interval. */
+ /* Catalog controls keep their own existing internal intervals. */
+ /* Editorial intro: eyebrow -> H2 -> description, without a second flex gap. */
+ /* Directions/news: the parent gap owns heading -> cards. */
+ /* FAQ has no separate heading wrapper: margin belongs to the answer grid. */
+ /* Consultation owns its spacing inside the photo. Outer padding exposes dark bands. */
+ /* Photo CTA: retain the card's inner grid, normalize heading and form spacing. */
+}
+/* Editorial images use one frame and end at the introductory copy, above its action. */
+@layer barn-node-spacing {
+}
+
+/* Match apparent portrait distance; the office background still reaches every CTA edge. */
+@layer barn-node-spacing {
+}
+
+/* FAQ columns share question/answer tracks, so wrapping and expansion keep paired rows aligned. */
+@layer barn-node-spacing {
+}
+
+/* Final contact CTA: city layout/fields, shared by all five nodes.
+ * Original source: city/css/document-desktop.css; local backgrounds remain untouched. */
+@layer barn-node-spacing {
+}
+@layer barn-node-spacing {
+}
+
+/* Generated from the approved home reference by sync-node-recommendations.cjs. */
+@layer barn-node-recommendations {
+
+}
+/* Only node-specific integration. Card presentation is generated from the home source. */
+@layer barn-node-recommendations {
+}
+@layer barn-node-recommendations {
+}
+@layer barn-node-recommendations {
+ /* Splide's live horizontal track padding is zero in the home instance. */
+}
+
+/* Generated from the current katalog-nedvizhimosti filter sources; see sync-node-filters.cjs. */
+@layer barn-node-filters {
+/* kit/_shared/source.css */
+
+/* kit/_shared/ui-kit.css */
+
+/* kit/_shared/listing-mode.css */
+
+/* listing.css */
+
+/* kit-v1/home-typography.css */
+
+
+/* kit-v1/home-spacing.css */
+
+
+/* kit-v1/home-buttons.css */
+
+
+/* catalog-kit-v1.css */
+
+/* kit/filters-modal/filters-modal.css */
+
+/* kit/quick-filter-dropdowns/quick-filters.css */
+
+/* catalog-filters.css */
+
+/* kit/quick-filter-dropdowns/brand-filters.css */
+
+/* map-view/reference-map.css */
+
+/* catalog-map.css */
+
+}
+/* Integration with existing node data/controllers; shared catalogue presentation above. */
+@layer barn-node-filters {
+ html body[data-node-shell] {--node-filter-size:18px;}
+ @media(min-width:1441px){html body[data-node-shell]{--node-filter-size:20px;}}
+ @media(max-width:540px){html body[data-node-shell]{--node-filter-size:17px;}}
+}
+@layer barn-node-filters {
+}
+@layer barn-node-filters {
+}
+@layer barn-node-filters {
+}
+@layer barn-node-filters {
+}
+/* Map shell follows the Resort overlay; filter captions share the same left edge. */
+@layer barn-node-filters {
+}
+@layer barn-node-filters {
+}
+@layer barn-node-filters {
+}
+/* Give the desktop listing sort its own room inside the right page gutter. */
+@layer barn-node-filters {
+}
+/* Map parameters share listing state; the deal uses the listing's segmented control. */
+@layer barn-node-filters {
+}
+
+/* Small decorative up/down SVG for sorting; kept outside mutable button captions. */
+@layer barn-node-filters {
+}
+/* Mobile count is a real grid item; native nodes use a class instead of #results-count. */
+@layer barn-node-filters {
+}
+@layer barn-node-filters {
+}
+
+@layer barn-layout-grid {
+/* Horizontal grid from the approved homepage home-spacing.css, UI-kit v1.0.3.
+ * One inset per content frame. Full-bleed photos/CTA, split-form interiors and
+ * the resort FAQ's explicitly retained composition are separate contracts. */
+:root {
+  --barn-page-gutter: clamp(24px, calc(-26.66667px + 6.59722vw), 100px);
+}
+@media(max-width:540px) { :root { --barn-page-gutter:22px; } }
+@media(min-width:1921px) { :root { --barn-page-gutter:0px; } }
+/* Hero and header must follow the same grid as the page content. */
+html body.barnes-media-header { --mh-gutter:var(--barn-page-gutter)!important; }
+/* The footer used to add a section gutter and a second container gutter. */
+/* City/international exports still carried older container breakpoints. */
+/* These two lot-page frames were missing the shared content cap. */
+/* Keep text over project photos on the common grid; photos stay full bleed. */
+
+/* The photographic consultation keeps its full-bleed media; only its content
+ * inset follows the page grid. A named layer also isolates the old generated
+ * CTA adapter's high-specificity padding rules. */
+
+/* Mobile newsletter photography spans the canvas; only the copy owns gutters. */
+
+}
+
+/* Shared page navigation; deliberately outside the header and normal flow. */
+/* Keep the original footprint so neither hero content nor the header moves. */
+
+/* Canonical footer text-link states for all thirteen current BARN Estate pages. */
+
+/* UI-kit 1.0.3 compact chips and existing node section/heading roles. */
+@layer barn-node-spacing {
+}
+
+/* Generated from approved home NewsSection by sync-node-news.cjs. */
+@layer barn-node-spacing {
+}
+
+/* City quiz styles, shared once across five nodes. */
+/* Use the canonical semantic grays, rather than legacy low-opacity placeholders. */
+/* Keep the footer's primary action reachable while its button is on screen. */
+
+/* Homepage quiz: new controls inherit the owner/ambassador reference palette. */
+
+/* Keep one dialog frame through every quiz step; only the body scrolls. */
+
+/* Narrow quiz column: keep channel labels readable, including phone landscape. */
+
+/* One geometry/type contract per button role. Preserve fill/outline/inverse colors. */
+/* Compact choices retain a smaller footprint, sharing radius and regular weight. */
+
+/* Rectangular quiz choices use the same 1px corner as all CTA buttons. */
+
+/* Shared expert dialog, based on the approved homepage quiz geometry. */
+@layer barn-node-spacing {
+}
+@layer barn-node-spacing {
+ /* Explicit grid tracks prevent legacy flex alignment from shrinking different dialogs. */
+}
+
+/* Generated by sync-node-footer.cjs from approved homepage. */
+@layer barn-node-spacing {
+}
+
+/* Shared page navigation; deliberately outside the header and normal flow. */
+/* Keep the original footprint so neither hero content nor the header moves. */
+
+/* Geometry, colors and markup come from the original css/source.css modal contract. */
+/* Shared desktop row for the two collections and sorting; compact views retain their order. */
+
+/* Dropdown markup/geometry follow front.barnes.vsavr.ru's catalog quick filters. */

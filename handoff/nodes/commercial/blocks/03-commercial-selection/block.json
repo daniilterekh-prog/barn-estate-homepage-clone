@@ -1,0 +1,17 @@
+{
+  "id": "03-commercial-selection",
+  "title": "Выбор BARN Estate",
+  "kind": "catalog-best-offers",
+  "html": "../../html/03-commercial-selection.html",
+  "css": "../../css/03-commercial-selection.css",
+  "js": "../../js/03-commercial-selection.js",
+  "preview": "index.html",
+  "dependencies": [
+    "../../css/page.css",
+    "../../js/blocks-runtime.js",
+    "../../assets/",
+    "../../js/expert-quiz.js"
+  ],
+  "assets": "assets.json",
+  "integrationMode": "portable-adapter"
+}

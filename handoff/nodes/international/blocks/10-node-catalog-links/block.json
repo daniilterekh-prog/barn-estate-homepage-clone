@@ -1,0 +1,17 @@
+{
+  "id": "10-node-catalog-links",
+  "title": "Зарубежная недвижимость",
+  "kind": "node-catalog-links",
+  "html": "../../html/10-node-catalog-links.html",
+  "css": "../../css/10-node-catalog-links.css",
+  "js": "../../js/10-node-catalog-links.js",
+  "preview": "index.html",
+  "dependencies": [
+    "../../css/page.css",
+    "../../js/blocks-runtime.js",
+    "../../assets/",
+    "../../js/expert-quiz.js"
+  ],
+  "assets": "assets.json",
+  "integrationMode": "portable-adapter"
+}

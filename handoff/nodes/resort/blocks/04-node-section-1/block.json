@@ -1,0 +1,17 @@
+{
+  "id": "04-node-section-1",
+  "title": "Проекты на карте",
+  "kind": "catalog-map",
+  "html": "../../html/04-node-section-1.html",
+  "css": "../../css/04-node-section-1.css",
+  "js": "../../js/04-node-section-1.js",
+  "preview": "index.html",
+  "dependencies": [
+    "../../css/page.css",
+    "../../js/blocks-runtime.js",
+    "../../assets/",
+    "../../js/expert-quiz.js"
+  ],
+  "assets": "assets.json",
+  "integrationMode": "coupled-page-state"
+}

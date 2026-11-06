@@ -1,0 +1,588 @@
+@font-face{font-family:'Tilda Sans Fallback';src:local('Arial'),local('Helvetica Neue'),local('Helvetica');size-adjust:92.84%;ascent-override:102.43%;descent-override:26.82%;line-gap-override:0%}@font-face{font-family:'Tilda Sans';src:url("../assets/f0f2c165784c7234.woff2") format('woff2');font-weight:300;font-style:normal;font-display:swap}@font-face{font-family:'Tilda Sans';src:url("../assets/2670dad44ca6c2a1.woff2") format('woff2');font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:'Tilda Sans';src:url("../assets/f716269e361f4665.woff2") format('woff2');font-weight:500;font-style:normal;font-display:swap}html,body{font-family:'Tilda Sans','Tilda Sans Fallback',system-ui,sans-serif}@keyframes floating-expert-enter-cd0a1259{to{opacity:1;transform:translateY(0)}}@keyframes floating-expert-pulse-cd0a1259{0%,to{box-shadow:0 22px 62px #12121233}42%{box-shadow:0 22px 62px #12121233,0 0 0 12px #12121214}58%{box-shadow:0 26px 74px #1212123d,0 0 0 22px #12121200}}.catalog-hero-filters__panel-sections[data-v-bae9b978]{display:flex;flex-direction:column}.hero-filter-modal[data-v-58a861a1]{align-items:center;display:flex;inset:0;justify-content:center;padding:24px;position:fixed;z-index:300}@media screen and (max-width:540px){.hero-filter-modal[data-v-58a861a1]{align-items:flex-end;padding:0}}.hero-filter-modal--dark[data-v-58a861a1]{color:#f7f7f5;place-items:center}@media screen and (max-width:540px){.hero-filter-modal--dark[data-v-58a861a1]{align-items:stretch;padding:0}}.hero-filter-modal__backdrop[data-v-58a861a1]{background-color:transparent;background:#00000073;border:none;color:inherit;cursor:pointer;font:inherit;inset:0;outline:none;padding:0;position:absolute}.hero-filter-modal--dark .hero-filter-modal__backdrop[data-v-58a861a1]{background:#000000a8}.hero-filter-modal__dialog[data-v-58a861a1]{background:#fff;border-radius:8px;box-shadow:0 16px 48px #0003;display:flex;flex-direction:column;max-height:calc(100vh - 48px);max-width:640px;position:relative;width:100%;z-index:1}@media screen and (max-width:540px){.hero-filter-modal__dialog[data-v-58a861a1]{border-radius:12px 12px 0 0;max-height:90vh;max-width:none}}.hero-filter-modal--dark .hero-filter-modal__dialog[data-v-58a861a1]{background:#292929;box-shadow:0 20px 70px #00000073;height:min(952px,100vh - 48px);max-height:min(952px,100vh - 48px);overflow:hidden}@media screen and (max-width:540px){.hero-filter-modal--dark .hero-filter-modal__dialog[data-v-58a861a1]{border-radius:0;height:100%;max-height:none;width:100%}}.hero-filter-modal__header[data-v-58a861a1]{align-items:center;display:flex;flex-shrink:0;gap:16px;justify-content:space-between;padding:20px 20px 0}.hero-filter-modal--dark .hero-filter-modal__header[data-v-58a861a1]{border-bottom:1px solid #4a4a4a;padding:24px 26px 21px}@media screen and (max-width:540px){.hero-filter-modal--dark .hero-filter-modal__header[data-v-58a861a1]{padding:18px 18px 16px}}.hero-filter-modal__title[data-v-58a861a1]{color:#1e1e1e;font-size:20px;font-weight:400;line-height:1.2;margin:0}.hero-filter-modal--dark .hero-filter-modal__title[data-v-58a861a1]{color:#f7f7f5;font-size:24px}.hero-filter-modal__close[data-v-58a861a1]{align-items:center;background-color:transparent;border:none;color:inherit;color:#1e1e1e8c;cursor:pointer;display:inline-flex;flex-shrink:0;font:inherit;height:40px;justify-content:center;outline:none;padding:0;transition:color .2s ease,background-color .2s ease;width:40px}@media(min-width:1025px){.hero-filter-modal__close[data-v-58a861a1]:hover{color:#1e1e1e}}.hero-filter-modal--dark .hero-filter-modal__close[data-v-58a861a1]{color:#fff;height:30px;width:30px}@media(min-width:1025px){.hero-filter-modal--dark .hero-filter-modal__close[data-v-58a861a1]:hover{color:#fff;opacity:.8}}.hero-filter-modal__close-svg[data-v-58a861a1]{fill:none;height:22px;stroke:currentColor;stroke-linecap:round;stroke-width:1.4;width:22px}.hero-filter-modal__body[data-v-58a861a1]{flex:1;min-height:0;overflow-y:auto;padding:20px 20px 0}.hero-filter-modal__body[data-v-58a861a1]::-webkit-scrollbar{height:4px;width:4px}.hero-filter-modal__body[data-v-58a861a1]::-webkit-scrollbar-thumb{background-color:#1e1e1e99;border-radius:4px}.hero-filter-modal__body[data-v-58a861a1]::-webkit-scrollbar-track{background-color:#1e1e1e4d;border-radius:4px}@supports (-moz-appearance:auto){.hero-filter-modal__body[data-v-58a861a1]{scrollbar-color:rgba(30,30,30,.6) rgba(30,30,30,.3);scrollbar-width:thin}}.hero-filter-modal--dark .hero-filter-modal__body[data-v-58a861a1]{padding:0 26px;scrollbar-color:#6b6b6b transparent}@media screen and (max-width:540px){.hero-filter-modal--dark .hero-filter-modal__body[data-v-58a861a1]{padding-inline:18px}}.hero-filter-modal__footer[data-v-58a861a1]{border-top:1px solid rgba(30,30,30,.08);flex-shrink:0;padding:16px 20px 20px}.hero-filter-modal__footer--split[data-v-58a861a1]{display:flex;gap:10px}.hero-filter-modal--dark .hero-filter-modal__footer[data-v-58a861a1]{border-top:1px solid #4a4a4a;padding:18px 26px 22px}@media screen and (max-width:540px){.hero-filter-modal--dark .hero-filter-modal__footer[data-v-58a861a1]{padding:14px 18px 18px}}.hero-filter-modal__reset[data-v-58a861a1]{background-color:transparent;background:#3b3b3b;border:none;border-radius:3px;color:inherit;color:#fff;cursor:pointer;font:inherit;font-size:16px;height:46px;outline:none;padding:0;transition:background-color .2s ease;width:50%}@media(min-width:1025px){.hero-filter-modal__reset[data-v-58a861a1]:hover{background:#484848}}.hero-filter-modal__apply[data-v-58a861a1]{font-size:18px;font-weight:500;min-height:52px}.hero-filter-modal--dark .hero-filter-modal__apply[data-v-58a861a1]{background:#fff;border-color:#fff;border-radius:3px;color:#222;font-size:16px;font-weight:400;height:46px;min-height:46px;width:50%}@media(min-width:1025px){.hero-filter-modal--dark .hero-filter-modal__apply[data-v-58a861a1]:hover{background:#e9e9e9;border-color:#e9e9e9}}.hero-filter-modal__footer--split .hero-filter-modal__apply[data-v-58a861a1]{width:50%}
+@charset "UTF-8";
+@charset "UTF-8";.ui-button[data-v-0abc262e]{align-items:center;background-color:transparent;border:1px solid transparent;border-radius:3px;color:inherit;cursor:pointer;display:inline-flex;font:inherit;font-family:inherit;font-size:20px;font-weight:500;gap:8px;height:70px;justify-content:center;line-height:1;min-height:70px;outline:none;padding:0 28px;text-decoration:none;transition:background-color .2s ease,border-color .2s ease,color .2s ease;-webkit-user-select:none;-moz-user-select:none;user-select:none;white-space:nowrap}@media screen and (max-width:1024px){.ui-button[data-v-0abc262e]{font-size:16px;height:auto;min-height:40px;padding:10px 24px}}@media screen and (max-width:540px){.ui-button[data-v-0abc262e]{font-size:15px;height:auto;min-height:38px;padding:10px 20px}}.ui-button[data-v-0abc262e]:focus-visible{outline:2px solid rgba(139,29,37,.35);outline-offset:2px}.ui-button--secondary[data-v-0abc262e]{background:#fff;border-color:#1e1e1e1f;color:#1e1e1e}.ui-button--secondary[data-v-0abc262e]:hover:not(:disabled){background:#f7f7f7;border-color:#1e1e1e3d}
+@charset "UTF-8";@font-face{font-display:swap;font-family:Tilda Sans;font-style:normal;font-weight:300;src:url("../assets/f0f2c165784c7234.woff2") format("woff2")}@font-face{font-display:swap;font-family:Tilda Sans;font-style:normal;font-weight:400;src:url("../assets/2670dad44ca6c2a1.woff2") format("woff2")}@font-face{font-display:swap;font-family:Tilda Sans;font-style:normal;font-weight:500;src:url("../assets/f716269e361f4665.woff2") format("woff2")}@font-face{font-display:swap;font-family:Tilda Sans;font-style:normal;font-weight:600;src:url("../assets/3814f8c444073262.woff2") format("woff2")}@font-face{font-display:swap;font-family:Tilda Sans;font-style:normal;font-weight:700;src:url("../assets/a2690df6fe834806.woff2") format("woff2")}@font-face{font-display:swap;font-family:Tilda Sans;font-style:normal;font-weight:800;src:url("../assets/726a3a878465a590.woff2") format("woff2")}@font-face{font-display:swap;font-family:Tilda Sans;font-style:normal;font-weight:900;src:url("../assets/73abed6708c43912.woff2") format("woff2")}@font-face{ascent-override:102.43%;descent-override:26.82%;font-family:Tilda Sans Fallback;line-gap-override:0%;size-adjust:92.84%;src:local("Arial"),local("Helvetica Neue"),local("Helvetica")}html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}[hidden],template{display:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}html{color:#1e1e1e;font-size:16px;font-weight:400;line-height:1;scroll-behavior:smooth;scrollbar-gutter:stable}html,html body{font-family:Tilda Sans,Tilda Sans Fallback,system-ui,-apple-system,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif}html body{height:100%;margin:0;text-rendering:optimizeLegibility;width:100%;-webkit-font-smoothing:antialiased;background-color:#fff}*,:after,:before{box-sizing:border-box}*{-webkit-tap-highlight-color:rgba(0,0,0,0);outline:none}input:not([type=checkbox]):not([type=radio]),select,textarea{-webkit-appearance:none;-moz-appearance:none;appearance:none}h1,h2,h3,h4,h5,p{margin:0}button,input,textarea{font-family:inherit}input:not([type=checkbox]):not([type=radio]):not([type=number]),select,textarea{-webkit-appearance:none;-moz-appearance:none;appearance:none}button:not(:disabled){cursor:pointer}a:focus-visible,button:focus-visible{outline:2px solid rgba(20,71,230,.45);outline-offset:2px}@keyframes splide-loading{0%{transform:rotate(0)}to{transform:rotate(1turn)}}@keyframes fade-in{0%{opacity:0}to{opacity:1}}@keyframes fade-out{0%{opacity:1}to{opacity:0}}@keyframes fadeOut{0%{opacity:1}to{opacity:0}}@keyframes fadeInDown{0%{opacity:0;transform:translate3d(0,-100%,0)}to{opacity:1;transform:none}}@keyframes fadeInUp{0%{opacity:0;transform:translate3d(0,100%,0)}to{opacity:1;transform:none}}.ui-button[data-v-0abc262e]{align-items:center;background-color:transparent;border:1px solid transparent;border-radius:3px;color:inherit;cursor:pointer;display:inline-flex;font:inherit;font-family:inherit;font-size:20px;font-weight:500;gap:8px;height:70px;justify-content:center;line-height:1;min-height:70px;outline:none;padding:0 28px;text-decoration:none;transition:background-color .2s ease,border-color .2s ease,color .2s ease;-webkit-user-select:none;-moz-user-select:none;user-select:none;white-space:nowrap}@media screen and (max-width:1024px){.ui-button[data-v-0abc262e]{font-size:16px;height:auto;min-height:40px;padding:10px 24px}}@media screen and (max-width:540px){.ui-button[data-v-0abc262e]{font-size:15px;height:auto;min-height:38px;padding:10px 20px}}.ui-button[data-v-0abc262e]:focus-visible{outline:2px solid rgba(139,29,37,.35);outline-offset:2px}.ui-button--secondary[data-v-0abc262e]{background:#fff;border-color:#1e1e1e1f;color:#1e1e1e}.ui-button--secondary[data-v-0abc262e]:hover:not(:disabled){background:#f7f7f7;border-color:#1e1e1e3d}.ui-checkbox[data-v-612052d8]{align-items:center;cursor:pointer;display:inline-flex;gap:8px;position:relative;-webkit-user-select:none;-moz-user-select:none;user-select:none}.ui-checkbox__input[data-v-612052d8]{height:0;opacity:0;pointer-events:none;position:absolute;width:0}.ui-checkbox__input:focus-visible+.ui-checkbox__box[data-v-612052d8]{outline:2px solid rgba(139,29,37,.4);outline-offset:2px}.ui-checkbox__box[data-v-612052d8]{align-items:center;background:#fff;border:1px solid rgba(30,30,30,.08);display:flex;flex-shrink:0;height:18px;justify-content:center;transition:all .2s ease;width:18px}.ui-checkbox__icon[data-v-612052d8]{color:#fff;opacity:0;transform:scale(.7);transition:all .15s ease}.ui-checkbox__label[data-v-612052d8]{color:#1e1e1e;font-size:18px;font-weight:300;line-height:1}.ui-checkbox:hover:not(:has(.ui-checkbox__input:disabled)) .ui-checkbox__box[data-v-612052d8]{border-color:#1e1e1e24}.ui-checkbox--chip[data-v-612052d8]{border:1px solid #666;border-radius:3px;color:#ddd;gap:0;min-height:38px;padding:7px 13px;transition:border-color .2s ease,background-color .2s ease,color .2s ease}.ui-checkbox--chip .ui-checkbox__label[data-v-612052d8]{color:inherit;font-size:15px;font-weight:400;line-height:1.15}.ui-checkbox--chip .ui-checkbox__input:focus-visible~.ui-checkbox__label[data-v-612052d8]{outline:2px solid hsla(0,0%,100%,.35);outline-offset:2px}.ui-checkbox--dark[data-v-612052d8]:not(.ui-checkbox--chip){color:#ddd;gap:9px;min-height:38px}.ui-checkbox--dark:not(.ui-checkbox--chip) .ui-checkbox__box[data-v-612052d8]{background:transparent;border:1px solid #898989;border-radius:2px;height:17px;width:17px}.ui-checkbox--dark:not(.ui-checkbox--chip) .ui-checkbox__icon[data-v-612052d8]{display:none}.ui-checkbox--dark:not(.ui-checkbox--chip) .ui-checkbox__label[data-v-612052d8]{color:inherit;font-size:15px;font-weight:400}.ui-checkbox--dark:not(.ui-checkbox--chip):hover:not(:has(.ui-checkbox__input:disabled)) .ui-checkbox__box[data-v-612052d8]{border-color:#bbb}.ui-switch[data-v-b3220a92]{align-items:center;cursor:pointer;display:inline-flex;gap:10px;position:relative;-webkit-user-select:none;-moz-user-select:none;user-select:none}.ui-switch__input[data-v-b3220a92]{height:0;opacity:0;pointer-events:none;position:absolute;width:0}.ui-switch__input:focus-visible+.ui-switch__slider[data-v-b3220a92]{outline:2px solid rgba(139,29,37,.4);outline-offset:2px}.ui-switch__slider[data-v-b3220a92]{background:#1e1e1e1a;border-radius:11px;flex-shrink:0;height:22px;position:relative;transition:all .2s ease;width:40px}.ui-switch__handle[data-v-b3220a92]{background:#fff;border-radius:50%;box-shadow:0 2px 4px #0003;height:18px;left:2px;position:absolute;top:2px;transition:transform .2s ease;width:18px}.ui-switch__label[data-v-b3220a92]{color:#1e1e1e;font-size:14px;line-height:1.5}.ui-switch:hover:not(:has(.ui-switch__input:disabled)) .ui-switch__slider[data-v-b3220a92]{background:#1e1e1e24}.ui-switch--dark[data-v-b3220a92]{gap:12px}.ui-switch--dark .ui-switch__slider[data-v-b3220a92]{background:#626262;border-radius:99px;height:24px;width:42px}.ui-switch--dark .ui-switch__handle[data-v-b3220a92]{box-shadow:none;left:3px;top:3px}.ui-switch--dark .ui-switch__label[data-v-b3220a92]{color:#f7f7f5;font-size:16px;font-weight:400}.ui-switch--dark:hover:not(:has(.ui-switch__input:disabled)) .ui-switch__slider[data-v-b3220a92]{background:#727272}.hero-filter-panel-content+.hero-filter-panel-content[data-v-d9050531]{margin-top:24px}.hero-filter-panel-content--dark+.hero-filter-panel-content--dark[data-v-d9050531]{margin-top:0}.hero-filter-panel-content__group+.hero-filter-panel-content__group[data-v-d9050531]{margin-top:24px}.hero-filter-panel-content--dark .hero-filter-panel-content__group[data-v-d9050531]{border-bottom:1px solid #4a4a4a;margin-top:0;padding:22px 0 23px}.hero-filter-panel-content--dark .hero-filter-panel-content__group--toggle[data-v-d9050531]{padding-block:17px}.hero-filter-panel-content__group--toggle[data-v-d9050531]{align-items:center;display:flex;gap:16px;justify-content:space-between}.hero-filter-panel-content__title[data-v-d9050531]{color:#1e1e1eb3;font-size:14px;font-weight:500;line-height:1.35;margin:0 0 14px}.hero-filter-panel-content--dark .hero-filter-panel-content__title[data-v-d9050531]{color:#f7f7f5;font-size:18px;font-weight:400;margin-bottom:15px}.hero-filter-panel-content__range[data-v-d9050531]{display:grid;gap:24px 36px;grid-template-columns:repeat(2,minmax(0,1fr));max-width:436px}.hero-filter-panel-content--dark .hero-filter-panel-content__range[data-v-d9050531]{gap:10px;max-width:none}.hero-filter-panel-content__range-input[data-v-d9050531]{background:#fff;border:none;border-bottom:1px solid rgba(30,30,30,.12);color:#1e1e1e;font:inherit;font-size:18px;line-height:1.2;min-height:40px;padding:8px 12px 14px 0;transition:border-color .2s ease;width:100%}.hero-filter-panel-content__range-input[data-v-d9050531]::-moz-placeholder{color:#1e1e1e33}.hero-filter-panel-content__range-input[data-v-d9050531]::placeholder{color:#1e1e1e33}.hero-filter-panel-content__range-input[data-v-d9050531]:focus{border-color:#1e1e1e59;outline:none}.hero-filter-panel-content--dark .hero-filter-panel-content__range-input[data-v-d9050531]{background:#333;border:1px solid #666;border-radius:3px;color:#fff;font-size:15px;height:44px;min-height:44px;padding:0 13px}.hero-filter-panel-content--dark .hero-filter-panel-content__range-input[data-v-d9050531]::-moz-placeholder{color:#a4a4a4}.hero-filter-panel-content--dark .hero-filter-panel-content__range-input[data-v-d9050531]::placeholder{color:#a4a4a4}.hero-filter-panel-content--dark .hero-filter-panel-content__range-input[data-v-d9050531]:focus{border-color:#fff}.hero-filter-panel-content__checkboxes[data-v-d9050531]{display:flex;flex-wrap:wrap;gap:14px 24px}.hero-filter-panel-content__checkboxes--chips[data-v-d9050531]{gap:8px}.hero-filter-panel-content__checkboxes--districts[data-v-d9050531]{display:grid;gap:8px 18px;grid-template-columns:repeat(3,minmax(0,1fr))}@media screen and (max-width:540px){.hero-filter-panel-content__checkboxes--districts[data-v-d9050531]{gap:14px 12px;grid-template-columns:repeat(2,minmax(0,1fr))}}.hero-filter-panel[data-v-5df47db1]{background:#fff;border-radius:0 0 3px 3px;box-shadow:0 8px 24px #0000001f;display:flex;flex-direction:column;left:0;max-height:500px;min-height:70px;overflow-y:auto;padding:20px 24px 16px;position:absolute;right:0;top:100%;z-index:30}.hero-filter-panel[data-v-5df47db1]::-webkit-scrollbar{height:4px;width:4px}.hero-filter-panel[data-v-5df47db1]::-webkit-scrollbar-thumb{background-color:#1e1e1e99;border-radius:4px}.hero-filter-panel[data-v-5df47db1]::-webkit-scrollbar-track{background-color:#1e1e1e4d;border-radius:4px}@supports (-moz-appearance:auto){.hero-filter-panel[data-v-5df47db1]{scrollbar-color:rgba(30,30,30,.6) rgba(30,30,30,.3);scrollbar-width:thin}}@media screen and (max-width:1440px){.hero-filter-panel[data-v-5df47db1]{min-height:70px;padding:16px 20px 14px}}.hero-filter-panel--modal[data-v-5df47db1]{border-radius:0;box-shadow:none;left:auto;max-height:none;min-height:0;overflow:visible;padding:0;position:static;right:auto;top:auto;z-index:auto}.hero-filter-panel--dark[data-v-5df47db1]{background:transparent;color:#f7f7f5}.hero-filter-panel__content[data-v-5df47db1]{flex:1;min-width:0}.hero-filter-modal[data-v-58a861a1]{align-items:center;display:flex;inset:0;justify-content:center;padding:24px;position:fixed;z-index:300}@media screen and (max-width:540px){.hero-filter-modal[data-v-58a861a1]{align-items:flex-end;padding:0}}.hero-filter-modal--dark[data-v-58a861a1]{color:#f7f7f5;place-items:center}@media screen and (max-width:540px){.hero-filter-modal--dark[data-v-58a861a1]{align-items:stretch;padding:0}}.hero-filter-modal__backdrop[data-v-58a861a1]{background-color:transparent;background:#00000073;border:none;color:inherit;cursor:pointer;font:inherit;inset:0;outline:none;padding:0;position:absolute}.hero-filter-modal--dark .hero-filter-modal__backdrop[data-v-58a861a1]{background:#000000a8}.hero-filter-modal__dialog[data-v-58a861a1]{background:#fff;border-radius:8px;box-shadow:0 16px 48px #0003;display:flex;flex-direction:column;max-height:calc(100vh - 48px);max-width:640px;position:relative;width:100%;z-index:1}@media screen and (max-width:540px){.hero-filter-modal__dialog[data-v-58a861a1]{border-radius:12px 12px 0 0;max-height:90vh;max-width:none}}.hero-filter-modal--dark .hero-filter-modal__dialog[data-v-58a861a1]{background:#292929;box-shadow:0 20px 70px #00000073;height:min(952px,100vh - 48px);max-height:min(952px,100vh - 48px);overflow:hidden}@media screen and (max-width:540px){.hero-filter-modal--dark .hero-filter-modal__dialog[data-v-58a861a1]{border-radius:0;height:100%;max-height:none;width:100%}}.hero-filter-modal__header[data-v-58a861a1]{align-items:center;display:flex;flex-shrink:0;gap:16px;justify-content:space-between;padding:20px 20px 0}.hero-filter-modal--dark .hero-filter-modal__header[data-v-58a861a1]{border-bottom:1px solid #4a4a4a;padding:24px 26px 21px}@media screen and (max-width:540px){.hero-filter-modal--dark .hero-filter-modal__header[data-v-58a861a1]{padding:18px 18px 16px}}.hero-filter-modal__title[data-v-58a861a1]{color:#1e1e1e;font-size:20px;font-weight:400;line-height:1.2;margin:0}.hero-filter-modal--dark .hero-filter-modal__title[data-v-58a861a1]{color:#f7f7f5;font-size:24px}.hero-filter-modal__close[data-v-58a861a1]{align-items:center;background-color:transparent;border:none;color:inherit;color:#1e1e1e8c;cursor:pointer;display:inline-flex;flex-shrink:0;font:inherit;height:40px;justify-content:center;outline:none;padding:0;transition:color .2s ease,background-color .2s ease;width:40px}@media(min-width:1025px){.hero-filter-modal__close[data-v-58a861a1]:hover{color:#1e1e1e}}.hero-filter-modal--dark .hero-filter-modal__close[data-v-58a861a1]{color:#fff;height:30px;width:30px}@media(min-width:1025px){.hero-filter-modal--dark .hero-filter-modal__close[data-v-58a861a1]:hover{color:#fff;opacity:.8}}.hero-filter-modal__close-svg[data-v-58a861a1]{fill:none;height:22px;stroke:currentColor;stroke-linecap:round;stroke-width:1.4;width:22px}.hero-filter-modal__body[data-v-58a861a1]{flex:1;min-height:0;overflow-y:auto;padding:20px 20px 0}.hero-filter-modal__body[data-v-58a861a1]::-webkit-scrollbar{height:4px;width:4px}.hero-filter-modal__body[data-v-58a861a1]::-webkit-scrollbar-thumb{background-color:#1e1e1e99;border-radius:4px}.hero-filter-modal__body[data-v-58a861a1]::-webkit-scrollbar-track{background-color:#1e1e1e4d;border-radius:4px}@supports (-moz-appearance:auto){.hero-filter-modal__body[data-v-58a861a1]{scrollbar-color:rgba(30,30,30,.6) rgba(30,30,30,.3);scrollbar-width:thin}}.hero-filter-modal--dark .hero-filter-modal__body[data-v-58a861a1]{padding:0 26px;scrollbar-color:#6b6b6b transparent}@media screen and (max-width:540px){.hero-filter-modal--dark .hero-filter-modal__body[data-v-58a861a1]{padding-inline:18px}}.hero-filter-modal__footer[data-v-58a861a1]{border-top:1px solid rgba(30,30,30,.08);flex-shrink:0;padding:16px 20px 20px}.hero-filter-modal__footer--split[data-v-58a861a1]{display:flex;gap:10px}.hero-filter-modal--dark .hero-filter-modal__footer[data-v-58a861a1]{border-top:1px solid #4a4a4a;padding:18px 26px 22px}@media screen and (max-width:540px){.hero-filter-modal--dark .hero-filter-modal__footer[data-v-58a861a1]{padding:14px 18px 18px}}.hero-filter-modal__reset[data-v-58a861a1]{background-color:transparent;background:#3b3b3b;border:none;border-radius:3px;color:inherit;color:#fff;cursor:pointer;font:inherit;font-size:16px;height:46px;outline:none;padding:0;transition:background-color .2s ease;width:50%}@media(min-width:1025px){.hero-filter-modal__reset[data-v-58a861a1]:hover{background:#484848}}.hero-filter-modal__apply[data-v-58a861a1]{font-size:18px;font-weight:500;min-height:52px}.hero-filter-modal--dark .hero-filter-modal__apply[data-v-58a861a1]{background:#fff;border-color:#fff;border-radius:3px;color:#222;font-size:16px;font-weight:400;height:46px;min-height:46px;width:50%}@media(min-width:1025px){.hero-filter-modal--dark .hero-filter-modal__apply[data-v-58a861a1]:hover{background:#e9e9e9;border-color:#e9e9e9}}.hero-filter-modal__footer--split .hero-filter-modal__apply[data-v-58a861a1]{width:50%}@keyframes partners-marquee-right-923dc07c{0%{transform:translate3d(-50%,0,0)}to{transform:translateZ(0)}}@keyframes partners-marquee-left-923dc07c{0%{transform:translateZ(0)}to{transform:translate3d(-50%,0,0)}}.catalog-hero-filters__panel-sections[data-v-bae9b978]{display:flex;flex-direction:column}@keyframes floating-expert-enter-cd0a1259{to{opacity:1;transform:translateY(0)}}@keyframes floating-expert-pulse-cd0a1259{0%,to{box-shadow:0 22px 62px #12121233}42%{box-shadow:0 22px 62px #12121233,0 0 0 12px #12121214}58%{box-shadow:0 26px 74px #1212123d,0 0 0 22px #12121200}}
+
+/* BARN Estate home UI-kit v1.0.0, approved 2026-11-01.
+ * Resort derivative 1.5.0. H1 hero and the entire FAQ retain their contracts.
+ * Property cards retain their styling; filters follow the current catalogue independently.
+ * One shared role layer for the page and standalone blocks; not a second theme.
+ */
+body.barnes-header-template {
+  --resort-section: clamp(72px, 6vw, 100px);
+  --resort-gutter: clamp(24px, calc(-26.66667px + 6.59722vw), 100px);
+  --resort-heading: 38px;
+  --resort-eyebrow: 14px;
+  --resort-eyebrow-line: 16.1px;
+  --resort-eyebrow-gap: 25px;
+  --resort-content-gap: 40px;
+  --resort-copy-gap: 24px;
+  --resort-action: 17px;
+  --resort-action-height: 70px;
+  --resort-action-pad: 36px;
+  --resort-channel: 17px;
+  --resort-field:18px; --resort-dialog-heading:24px; --resort-card-padding:32px;
+}
+@media(min-width:1441px) {
+  body.barnes-header-template { --resort-heading:44px; --resort-field:20px; --resort-action:19px; --resort-action-pad:47px; }
+}
+@media(min-width:1921px) {
+  body.barnes-header-template { --resort-gutter:0px; }
+}
+@media(max-width:1024px) {
+  body.barnes-header-template { --resort-card-padding:24px; --resort-dialog-heading:20px; --resort-eyebrow:12px; --resort-eyebrow-line:14.4px; --resort-eyebrow-gap:12px; }
+}
+@media(max-width:540px) {
+  body.barnes-header-template {
+    --resort-section:48px; --resort-gutter:22px; --resort-heading:22px;
+    --resort-content-gap:28px; --resort-copy-gap:16px;
+    --resort-action:18px; --resort-action-height:58px; --resort-action-pad:24px;
+    --resort-channel:18px; --resort-field:17px; --resort-card-padding:20px;
+  }
+}
+/* The FAQ container is deliberately excluded as well as its text and spacing. */
+/* Consume heading/content spacing once; legacy margins/padding added a second gap. */
+/* Start-sales carousel consumes the approved homepage slider spacing in its own stylesheet. */
+/* Primary actions and the separate compact form-submit role. */
+html body.barnes-header-template :is(.catalog-hero-filters__submit,.catalog-consultation__submit,.catalog-contact__submit,.catalog-contact__card-submit,.site-footer__callback-btn,.hero-filter-modal__apply) {
+  box-sizing:border-box; font-family:var(--kit-font); font-size:var(--resort-action)!important;
+  font-weight:400!important; line-height:1.1!important; letter-spacing:0!important;
+  border-radius:1px!important; height:var(--resort-action-height)!important;
+  min-height:var(--resort-action-height)!important; padding:0 var(--resort-action-pad)!important;
+  display:inline-flex; align-items:center; justify-content:center;
+}
+html body.barnes-header-template .resort-filters .hero-filter-modal__footer {
+  flex-shrink:0; align-items:center;
+}
+/* Header logo and request outline match the approved homepage exactly. */
+
+/* Disclosure state must override the captured display/max-height styles. */
+
+/* Keyboard affordance only; approved FAQ text geometry stays unchanged. */
+
+/* Full-page role audit, 2026-11-03. Object cards, catalogue controls, hero H1 and FAQ are excluded. */
+
+/* Contact actions copied from approved homepage home-header-contacts.css.
+ * Source: exact-2026-10-21/ (01.11.2026); adaptation 02.11.2026.
+ * Resort keeps its own section links and separate mobile request button.
+ */
+/* Hero order is the homepage's WA / Telegram / MAX / telephone. */
+/* The homepage shows the outlined request only after the hero. */
+@media(max-width:1024px) {
+  /* Keep the visible request compact while retaining a 44px contacts target. */
+}
+
+/* Breadcrumbs live in the hero again; the header contains only the main row. */
+/* Text scale shared by the current catalogue and Media breadcrumbs. */
+/* Reserve the overlapping header and leave the search group slightly lower. */
+
+/* Catalogue composition using the approved homepage search, choice and spacing roles. */
+/* Current control primitives; no dependency on the retired lower-line toolbar. */
+/* One continuous strip echoes the homepage search bar; labels carry the hierarchy. */
+/* Active chips/reset stay separate; collections share the result controls row. */
+/* Dropdown choices use the quiet selected state from the kit's quiz choices. */
+
+/* Two quick choices; advanced criteria stay in the shared full form. */
+
+/* Restore all four quick parameters on phones in a shared 2x2 grid. */
+
+/* Independent deal and market controls; all contextual quick fields stay visible. */
+
+/* Text and chevrons share the button's vertical center, including wrapped labels. */
+
+/* Quick choices do not repeat the field label. */
+
+/* Resort integration: same reference geometry, isolated from cards and headers. */
+
+/* Map quick controls share the same boxed geometry; the map itself is unchanged. */
+/* Measured full-dialog geometry and typography from the reference. */
+html body.barnes-header-template .resort-filters .hero-filter-modal__dialog { display:flex; flex-direction:column; width:640px; max-width:100%; height:calc(100dvh - 48px); max-height:calc(100dvh - 48px); overflow:hidden; }
+html body.barnes-header-template .resort-filters .hero-filter-modal__header { flex:none; align-items:center; padding:24px 26px 21px!important; border-bottom:1px solid #e4e4e4; }
+html body.barnes-header-template .resort-filters .hero-filter-modal__title { margin:0!important;  }
+html body.barnes-header-template .resort-filters .hero-filter-modal__close { width:30px; height:30px; flex:none; }
+html body.barnes-header-template .resort-filters .hero-filter-modal__body { flex:1; min-height:0; overflow:auto; padding:0 26px!important; }
+html body.barnes-header-template .resort-filters .hero-filter-panel-content { display:block; padding:0!important; margin:0!important; gap:0; }
+html body.barnes-header-template .resort-filters .hero-filter-panel-content__group { padding:22px 0 23px!important; margin:0!important; border-bottom:1px solid #e4e4e4; }
+html body.barnes-header-template .resort-filters .hero-filter-panel-content__title { margin:0 0 15px!important; font:400 18px/1.35 'Tilda Sans',sans-serif!important; }
+html body.barnes-header-template .resort-filters .hero-filter-panel-content__range { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px; }
+html body.barnes-header-template .resort-filters input.hero-filter-panel-content__range-input { width:100%!important; min-width:0; max-width:none; height:44px; min-height:44px; padding:0 13px!important; font:300 18px/1.4 'Tilda Sans',sans-serif; }
+html body.barnes-header-template .resort-filters .ui-checkbox--chip { padding:7px 13px; font:400 16px/1 'Tilda Sans',sans-serif; }
+html body.barnes-header-template .resort-filters .ui-checkbox--chip .ui-checkbox__box { display:none!important; }
+html body.barnes-header-template .resort-filters .hero-filter-modal__footer { flex:none; padding:18px 26px 22px!important; border-top:1px solid #e4e4e4; }
+@media(max-width:540px) {
+ html body.barnes-header-template .resort-filters.hero-filter-modal { inset:0; padding:0!important; align-items:stretch; height:100dvh; }
+ html body.barnes-header-template .resort-filters .hero-filter-modal__dialog { width:100%; height:100dvh; max-height:none; margin:0; border-radius:0; }
+ html body.barnes-header-template .resort-filters .hero-filter-modal__header { padding:18px 18px 16px!important; }
+ html body.barnes-header-template .resort-filters .hero-filter-modal__body { padding:0 18px!important; }
+ html body.barnes-header-template .resort-filters .hero-filter-modal__footer { padding:14px 18px 18px!important; }
+}
+/* Legacy chip labels must not paint a second dark rectangle over the selection. */
+html body.barnes-header-template .resort-filters .ui-checkbox--chip .ui-checkbox__label { background:transparent!important; }
+html body.barnes-header-template .resort-filters .ui-checkbox.ui-checkbox--chip:hover { background:#8b1d25!important; border-color:#8b1d25!important; }
+html body.barnes-header-template .resort-filters .ui-checkbox.ui-checkbox--chip:hover .ui-checkbox__label { color:#fff!important; }
+
+/* Purchase-only node: no redundant deal switch, three primary fields. */
+
+/* Current catalogue reset row and dropdown typography; purchase-only composition stays local. */
+
+/* Light advanced-filter component from the current catalogue; no object-card rules. */
+html body.barnes-header-template .resort-filters .hero-filter-modal__dialog { background: rgb(255, 255, 255); color: rgb(30, 30, 30); border-radius: 1px; }
+html body.barnes-header-template .resort-filters :is(.hero-filter-modal__header, .hero-filter-modal__footer) { background: rgb(255, 255, 255); color: rgb(30, 30, 30); border-color: rgb(228, 228, 228); }
+html body.barnes-header-template .resort-filters :is(.hero-filter-panel-content__group, .hero-filter-modal__body) { border-color: rgb(228, 228, 228); color: rgb(30, 30, 30); }
+html body.barnes-header-template .resort-filters .ui-checkbox--chip { border: 1px solid rgb(139, 137, 134); border-radius: 1px; background: rgb(255, 255, 255); min-height: 44px; font-weight: 400; color: rgb(79, 77, 73); }
+html body.barnes-header-template .resort-filters .hero-filter-modal__close { color: rgb(30, 30, 30); }
+html body.barnes-header-template .resort-filters .hero-filter-modal__footer { gap: 12px; }
+html body.barnes-header-template .resort-filters :is(.hero-filter-modal__apply, .hero-filter-modal__reset) { height: 70px; min-height: 70px; padding: 0px 36px; font: 400 17px / 1.1 "Tilda Sans", sans-serif; letter-spacing: 0px; border-radius: 1px !important; }
+html body.barnes-header-template .resort-filters .hero-filter-modal__apply { border: 1px solid rgb(139, 29, 37); background: rgb(139, 29, 37) !important; color: rgb(255, 255, 255) !important; }
+html body.barnes-header-template .resort-filters .hero-filter-modal__reset { background: rgb(255, 255, 255); color: rgb(79, 77, 73); border: 1px solid rgb(139, 137, 134); }
+@media (min-width: 1441px){html body.barnes-header-template .resort-filters :is(.hero-filter-modal__apply, .hero-filter-modal__reset) { font-size: 19px; padding-inline: 47px; }}
+@media (max-width: 540px){html body.barnes-header-template .resort-filters :is(.hero-filter-modal__apply, .hero-filter-modal__reset) { height: 58px; min-height: 58px; font-size: 18px; padding-inline: 24px; }}
+@media (max-width: 400px){html body.barnes-header-template .resort-filters .hero-filter-modal__footer { flex-direction: column; }
+html body.barnes-header-template .resort-filters :is(.hero-filter-modal__apply, .hero-filter-modal__reset) { width: 100%; flex: 0 0 auto; }}
+html body.barnes-header-template .resort-filters input:focus-visible { outline: rgb(139, 29, 37) solid 2px; }
+html body.barnes-header-template .resort-filters input:not([type="checkbox"]):not([type="radio"]):not([type="hidden"]) { background: rgb(255, 255, 255); color: rgb(30, 30, 30); border: 1px solid rgb(139, 137, 134); border-radius: 1px; font: 300 var(--resort-field)/1.4 'Tilda Sans',sans-serif; }
+html body.barnes-header-template .resort-filters input::placeholder { color: rgb(101, 100, 98); opacity: 1; }
+html body.barnes-header-template .resort-filters .ui-checkbox--chip:hover .ui-checkbox__label { color: rgb(255, 255, 255) !important; }
+html body.barnes-header-template .resort-filters .ui-checkbox__box { border-radius: 1px; border-color: rgb(139, 137, 134) !important; }
+html body.barnes-header-template .resort-filters .hero-filter-modal__title { font-size: var(--resort-dialog-heading); line-height: 1.2; font-weight: 400; }
+html body.barnes-header-template .resort-filters .ui-checkbox--chip .ui-checkbox__label { font-size: 16px; line-height: 1.2; }
+
+html body.barnes-header-template .resort-filters input:focus-visible{outline:2px solid #8b1d25;outline-offset:2px}
+
+/*
+ * BARNES transferable UI layer for the Kurortnaya page.
+ * Baseline: ../reference-ui.md (2026-10-07).
+ * Project/offer cards are intentionally outside this layer.
+ */
+
+:root {
+  --kit-font: "Tilda Sans", "Tilda Sans Fallback", system-ui, sans-serif;
+  --kit-text: #1e1e1e;
+  --kit-text-secondary: #4f4d49;
+  --kit-text-muted: #656462;
+  --kit-burgundy: #8b1d25;
+  --kit-focus-accent: var(--kit-burgundy);
+  --kit-border: #e4e4e4;
+  --kit-h2-standard-size: 38px;
+  --kit-h2-standard-leading: 1.2;
+  --kit-h2-compact-size: 38px;
+  --kit-h2-compact-leading: 1;
+  --kit-h2-editorial-size: 44px;
+  --kit-h2-editorial-leading: 0.98;
+  --kit-eyebrow-size: 14px;
+  --kit-eyebrow-leading: 1.15;
+  --kit-eyebrow-gap: 25px;
+  --kit-action-height: 70px;
+  --kit-action-size: 17px;
+  --kit-action-padding: 36px;
+}
+
+html,
+body {
+  color: var(--kit-text);
+  font-family: var(--kit-font);
+}
+
+/* Headings outside the project-card component family. */
+
+/* Catalog content-page display follows the approved content H1 contract. */
+
+/* Long-form BARNES copy uses heading roles without introducing bold weights. */
+
+/* CTA portraits: Denis stays natural; the layout, not the photograph, is mirrored. */
+
+/* FloatingExpert contract. */
+
+/* Mobile hero contacts remain distinct from the sticky request-form button. */
+
+/* Compact ContactAction used as a channel selector inside both forms. */
+
+/* FAQ body typography follows the shared text roles at every breakpoint. */
+
+/* Parent layouts already contribute their own row gaps. Offset those gaps so
+   the visible eyebrow-to-title rhythm matches the approved 25px contract. */
+
+/* Shared rectangular action contract. Card actions are deliberately excluded. */
+
+/* Filter controls: the UI kit defines these separately from rectangular CTAs. */
+
+@media (min-width: 1441px) {
+  :root {
+    --kit-h2-standard-size: 44px;
+    --kit-h2-compact-size: 44px;
+    --kit-action-size: 19px;
+    --kit-action-padding: 47px;
+  }
+}
+
+@media (max-width: 540px) {
+  :root {
+    --kit-h2-standard-size: 22px;
+    --kit-h2-compact-size: 22px;
+    --kit-h2-editorial-size: 22px;
+    --kit-h2-editorial-leading: 1.2;
+    --kit-eyebrow-size: 12px;
+    --kit-eyebrow-leading: 1.2;
+    --kit-eyebrow-gap: 12px;
+    --kit-action-height: 58px;
+    --kit-action-size: 18px;
+    --kit-action-padding: 24px;
+  }
+}
+
+/* Header contract: compact owner-style navigation with direct contact channels. */
+
+@media (hover: hover) and (pointer: fine) {
+
+  /* Interactive accents are burgundy; yellow and gold are prohibited. */
+}
+
+/* Secondary header: copied from the approved partners-page contract. */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
+
+/* Footer contract from prodazha_sobstvennikam/owner-sale.css.
+   Base snapshot rules use the same data-v-6eb18211 scope on both pages. */
+
+/* ListingCard contract: shared geometry for project and secondary-lot modes. */
+
+/* Layout copied from approved homepage .barnes-choice, without direction controls. */
+/* The homepage keeps neighbours full-width and changes their height only. */
+
+/* Shared owner header template. Source: prodazha_sobstvennikam, 2026-10-12.
+ * Opt in with body.barnes-header-template. Only page anchors/content differ.
+ * Kurortnaya deliberately retains site-header--no-nav (no directions row).
+ */
+body.barnes-header-template { --owner-sale-ink: #1e1e1e; --owner-sale-brand: #8b1d25; --owner-sale-border: rgba(30,30,30,.14); }
+@media (max-width:540px) {
+  /* Keep the contact dropdown clickable; only the anchor list scrolls. */
+}
+
+/* Geometry, colors and markup come from the original css/source.css modal contract. */
+.resort-filters.hero-filter-modal { z-index: 11000; }
+.resort-filters .ui-checkbox--chip .ui-checkbox__box { display: none; }
+.resort-filters * { box-sizing: border-box; }
+.resort-filters .hero-filter-modal__body { overscroll-behavior: contain; }
+.resort-filters .ui-checkbox, .resort-filters .ui-switch { position: relative; }
+.resort-filters .ui-checkbox__input, .resort-filters .ui-switch__input { width: 100%; height: 100%; inset: 0; position: absolute; opacity: 0; pointer-events: auto; cursor: pointer; }
+.resort-filters .ui-checkbox:has(input:focus-visible), .resort-filters .ui-switch:has(input:focus-visible),
+.resort-filters button:focus-visible, .resort-filters input[type=text]:focus-visible { outline: 2px solid #8b1d25; outline-offset: 3px; }
+.resort-filters .ui-checkbox--chip:hover, .resort-filters .hero-filter-modal__apply:hover, .resort-filters .hero-filter-modal__reset:hover { background: #8b1d25 !important; border-color: #8b1d25 !important; color: #fff !important; }
+.resort-filters .hero-filter-modal__close:hover { color: #8b1d25 !important; }
+.resort-filters__error { color: #fff; border-left: 2px solid #8b1d25; padding: 8px 12px; margin: 12px 0; font-size: 14px; line-height: 1.4; }
+.resort-filters__error[hidden] { display: none; }
+@media (max-width: 540px) {
+  .resort-filters.hero-filter-modal { width: 100vw; height: 100dvh; }
+}
+/* Shared desktop row for the two collections and sorting; compact views retain their order. */
+
+/* Dropdown markup/geometry follow front.barnes.vsavr.ru's catalog quick filters. */
+
+/* Native checkbox semantics; BARNES inline-filter typography and wine state. */
+
+/* Keep the two-word brand together without preventing the rest of a sentence from wrapping. */
+
+/* CTA background layers span the section; form layout stays on its existing grid. */
+
+/* Shared laptop hero policy. Primary heroes are 200px shorter; typography stays in the page kit. */
+@layer barn-hero-laptop {
+ @media (min-width:1025px) and (max-width:1919px), (min-width:1920px) and (max-height:1000px) {
+  body {--hero-laptop-main:620px;--hero-laptop-node:444px;--hero-laptop-lot:520px;}
+  @media(min-width:1441px){body{--hero-laptop-main:760px;--hero-laptop-node:494px;--hero-laptop-lot:650px;}}
+  body[data-node-shell]{--hero-laptop-node:var(--hero-laptop-main);}
+ }
+}
+
+/* Header derived from owner-sale; regenerate with main-site/tools/sync-node-shell.cjs. */
+@layer barn-node-shell-header {
+
+}
+
+/* Media header v1.1.0, mobile sticky menu 2026-11-04. Only headers opt into this component. */
+html body.barnes-media-header {--mh-gutter:calc(-26.66667px + 6.59722vw);--mh-pad:32px;--mh-logo:48px;--mh-panel-offset:41px;--mh-ink:#1e1e1e;}
+/* Owner/ambassador anchors retain their nodes, text and handlers. Only center/right change. */
+@media(min-width:1921px) {html body.barnes-media-header {--mh-gutter:0px;}}
+@media(max-width:768px) {html body.barnes-media-header {--mh-gutter:calc(8.94118px + 1.96078vw);}}
+@media(max-width:540px) {
+ html body.barnes-media-header {--mh-pad:16px;--mh-logo:36px;--mh-panel-offset:25px;}
+}
+
+/* Media has WA / Telegram / MAX above hero, WA / MAX / Telegram after hero. */
+
+/* One mobile row: menu / logo / contacts. Page anchors remain available on desktop. */
+
+/* Identical glyph inset on Media and owner/partner headers; retain the 44px touch target. */
+
+/* Direction pages use the burger only, without a second navigation row. */
+
+/* The sticky mobile bar owns its centered logo, even when legacy node CSS hid it. */
+@layer barn-node-shell-header {
+}
+
+/* Five direction pages share owner-sale header/hero metrics. Page data stays local. */
+@layer barn-node-shell {
+ html body[data-node-shell] {--node-hero-height:820px;--node-title-lines:1;}
+ @media(min-width:1441px){html body[data-node-shell]{--node-hero-height:960px;}}
+ @media(max-width:767px){html body[data-node-shell]{--node-title-lines:2;}}
+ @media(max-width:540px){html body[data-node-shell]{--node-hero-height:560px;}}
+ @media(max-width:389px){html body[data-node-shell]{--node-title-lines:3;}}
+ /* The international page already suppresses its legacy quick-link content. */
+}
+
+/* Vertical roles from the approved home-spacing.css / UI-kit v1.0.3.
+ * Scope: five direction nodes. Each interval is owned once, never margin + gap. */
+@layer barn-node-spacing {
+ html body[data-node-shell] {
+  --node-section-space:clamp(72px,6vw,100px);
+  --node-brow-gap:25px;--node-heading-content:40px;--node-copy-gap:24px;
+ }
+ @media(max-width:1024px){html body[data-node-shell]{--node-brow-gap:12px;}}
+ @media(max-width:540px){html body[data-node-shell]{--node-section-space:48px;--node-heading-content:28px;--node-copy-gap:16px;}}
+ /* Start-sales: the slider is a sibling of the heading container. */
+ /* Map: description belongs to the heading, then one content interval. */
+ /* Catalog controls keep their own existing internal intervals. */
+ /* Editorial intro: eyebrow -> H2 -> description, without a second flex gap. */
+ /* Directions/news: the parent gap owns heading -> cards. */
+ /* FAQ has no separate heading wrapper: margin belongs to the answer grid. */
+ /* Consultation owns its spacing inside the photo. Outer padding exposes dark bands. */
+ /* Photo CTA: retain the card's inner grid, normalize heading and form spacing. */
+}
+/* Editorial images use one frame and end at the introductory copy, above its action. */
+@layer barn-node-spacing {
+}
+
+/* Match apparent portrait distance; the office background still reaches every CTA edge. */
+@layer barn-node-spacing {
+}
+
+/* FAQ columns share question/answer tracks, so wrapping and expansion keep paired rows aligned. */
+@layer barn-node-spacing {
+}
+
+/* Final contact CTA: city layout/fields, shared by all five nodes.
+ * Original source: city/css/document-desktop.css; local backgrounds remain untouched. */
+@layer barn-node-spacing {
+}
+@layer barn-node-spacing {
+}
+
+/* Generated from the approved home reference by sync-node-recommendations.cjs. */
+@layer barn-node-recommendations {
+
+}
+/* Only node-specific integration. Card presentation is generated from the home source. */
+@layer barn-node-recommendations {
+}
+@layer barn-node-recommendations {
+}
+@layer barn-node-recommendations {
+ /* Splide's live horizontal track padding is zero in the home instance. */
+}
+
+/* Generated from the current katalog-nedvizhimosti filter sources; see sync-node-filters.cjs. */
+@layer barn-node-filters {
+/* kit/_shared/source.css */
+html body[data-node-shell] .hero-filter-panel-content+.hero-filter-panel-content{margin-top:24px !important}html body[data-node-shell] .hero-filter-panel-content--dark+.hero-filter-panel-content--dark{margin-top:0 !important}html body[data-node-shell] .hero-filter-panel-content__group+.hero-filter-panel-content__group{margin-top:24px !important}html body[data-node-shell] .hero-filter-panel-content--dark .hero-filter-panel-content__group{border-bottom:1px solid #4a4a4a !important;margin-top:0 !important;padding:22px 0 23px !important}html body[data-node-shell] .hero-filter-panel-content--dark .hero-filter-panel-content__group--toggle{padding-block:17px !important}html body[data-node-shell] .hero-filter-panel-content__group--toggle{align-items:center !important;display:flex !important;gap:16px !important;justify-content:space-between !important}html body[data-node-shell] .hero-filter-panel-content__title{color:#1e1e1eb3 !important;font-size:14px !important;font-weight:500 !important;line-height:1.35 !important;margin:0 0 14px !important}html body[data-node-shell] .hero-filter-panel-content--dark .hero-filter-panel-content__title{color:#f7f7f5 !important;font-size:18px !important;font-weight:400 !important;margin-bottom:15px !important}html body[data-node-shell] .hero-filter-panel-content__range{display:grid !important;gap:24px 36px !important;grid-template-columns:repeat(2,minmax(0,1fr)) !important;max-width:436px !important}html body[data-node-shell] .hero-filter-panel-content--dark .hero-filter-panel-content__range{gap:10px !important;max-width:none !important}html body[data-node-shell] .hero-filter-panel-content__range-input{background:#fff !important;border:none !important;border-bottom:1px solid rgba(30,30,30,.12) !important;color:#1e1e1e !important;font:inherit !important;font-size:18px !important;line-height:1.2 !important;min-height:40px !important;padding:8px 12px 14px 0 !important;transition:border-color .2s ease !important;width:100% !important}html body[data-node-shell] .hero-filter-panel-content__range-input::-moz-placeholder{color:#1e1e1e33 !important}html body[data-node-shell] .hero-filter-panel-content__range-input::placeholder{color:#1e1e1e33 !important}html body[data-node-shell] .hero-filter-panel-content__range-input:focus{border-color:#1e1e1e59 !important;outline:none !important}html body[data-node-shell] .hero-filter-panel-content--dark .hero-filter-panel-content__range-input{background:#333 !important;border:1px solid #666 !important;border-radius:3px !important;color:#fff !important;font-size:15px !important;height:44px !important;min-height:44px !important;padding:0 13px !important}html body[data-node-shell] .hero-filter-panel-content--dark .hero-filter-panel-content__range-input::-moz-placeholder{color:#a4a4a4 !important}html body[data-node-shell] .hero-filter-panel-content--dark .hero-filter-panel-content__range-input::placeholder{color:#a4a4a4 !important}html body[data-node-shell] .hero-filter-panel-content--dark .hero-filter-panel-content__range-input:focus{border-color:#fff !important}html body[data-node-shell] .hero-filter-panel-content__checkboxes{display:flex !important;flex-wrap:wrap !important;gap:14px 24px !important}html body[data-node-shell] .hero-filter-panel-content__checkboxes--chips{gap:8px !important}html body[data-node-shell] .hero-filter-panel-content__checkboxes--districts{display:grid !important;gap:8px 18px !important;grid-template-columns:repeat(3,minmax(0,1fr)) !important}@media screen and (max-width:540px){html body[data-node-shell] .hero-filter-panel-content__checkboxes--districts{gap:14px 12px !important;grid-template-columns:repeat(2,minmax(0,1fr)) !important}}html body[data-node-shell] .hero-filter-panel{background:#fff !important;border-radius:0 0 3px 3px !important;box-shadow:0 8px 24px #0000001f !important;display:flex !important;flex-direction:column !important;left:0 !important;max-height:500px !important;min-height:70px !important;overflow-y:auto !important;padding:20px 24px 16px !important;position:absolute !important;right:0 !important;top:100% !important;z-index:30 !important}html body[data-node-shell] .hero-filter-panel::-webkit-scrollbar{height:4px !important;width:4px !important}html body[data-node-shell] .hero-filter-panel::-webkit-scrollbar-thumb{background-color:#1e1e1e99 !important;border-radius:4px !important}html body[data-node-shell] .hero-filter-panel::-webkit-scrollbar-track{background-color:#1e1e1e4d !important;border-radius:4px !important}@media screen and (max-width:1440px){html body[data-node-shell] .hero-filter-panel{min-height:70px !important;padding:16px 20px 14px !important}}html body[data-node-shell] .hero-filter-panel--modal{border-radius:0 !important;box-shadow:none !important;left:auto !important;max-height:none !important;min-height:0 !important;overflow:visible !important;padding:0 !important;position:static !important;right:auto !important;top:auto !important;z-index:auto !important}html body[data-node-shell] .hero-filter-panel--dark{background:transparent !important;color:#f7f7f5 !important}html body[data-node-shell] .hero-filter-panel__content{flex:1 !important;min-width:0 !important}html body[data-node-shell] .hero-filter-modal{align-items:center !important;display:flex !important;inset:0 !important;justify-content:center !important;padding:24px !important;position:fixed !important;z-index:300 !important}@media screen and (max-width:540px){html body[data-node-shell] .hero-filter-modal{align-items:flex-end !important;padding:0 !important}}html body[data-node-shell] .hero-filter-modal--dark{color:#f7f7f5 !important;place-items:center !important}@media screen and (max-width:540px){html body[data-node-shell] .hero-filter-modal--dark{align-items:stretch !important;padding:0 !important}}html body[data-node-shell] .hero-filter-modal__backdrop{background-color:transparent !important;background:#00000073 !important;border:none !important;color:inherit !important;cursor:pointer !important;font:inherit !important;inset:0 !important;outline:none !important;padding:0 !important;position:absolute !important}html body[data-node-shell] .hero-filter-modal--dark .hero-filter-modal__backdrop{background:#000000a8 !important}html body[data-node-shell] .hero-filter-modal__dialog{background:#fff !important;border-radius:8px !important;box-shadow:0 16px 48px #0003 !important;display:flex !important;flex-direction:column !important;max-height:calc(100vh - 48px) !important;max-width:640px !important;position:relative !important;width:100% !important;z-index:1 !important}@media screen and (max-width:540px){html body[data-node-shell] .hero-filter-modal__dialog{border-radius:12px 12px 0 0 !important;max-height:90vh !important;max-width:none !important}}html body[data-node-shell] .hero-filter-modal--dark .hero-filter-modal__dialog{background:#292929 !important;box-shadow:0 20px 70px #00000073 !important;height:min(952px,100vh - 48px) !important;max-height:min(952px,100vh - 48px) !important;overflow:hidden !important}@media screen and (max-width:540px){html body[data-node-shell] .hero-filter-modal--dark .hero-filter-modal__dialog{border-radius:0 !important;height:100% !important;max-height:none !important;width:100% !important}}html body[data-node-shell] .hero-filter-modal__header{align-items:center !important;display:flex !important;flex-shrink:0 !important;gap:16px !important;justify-content:space-between !important;padding:20px 20px 0 !important}html body[data-node-shell] .hero-filter-modal--dark .hero-filter-modal__header{border-bottom:1px solid #4a4a4a !important;padding:24px 26px 21px !important}@media screen and (max-width:540px){html body[data-node-shell] .hero-filter-modal--dark .hero-filter-modal__header{padding:18px 18px 16px !important}}html body[data-node-shell] .hero-filter-modal__title{color:#1e1e1e !important;font-size:20px !important;font-weight:400 !important;line-height:1.2 !important;margin:0 !important}html body[data-node-shell] .hero-filter-modal--dark .hero-filter-modal__title{color:#f7f7f5 !important;font-size:24px !important}html body[data-node-shell] .hero-filter-modal__close{align-items:center !important;background-color:transparent !important;border:none !important;color:inherit !important;color:#1e1e1e8c !important;cursor:pointer !important;display:inline-flex !important;flex-shrink:0 !important;font:inherit !important;height:40px !important;justify-content:center !important;outline:none !important;padding:0 !important;transition:color .2s ease,background-color .2s ease !important;width:40px !important}@media(min-width:1025px){html body[data-node-shell] .hero-filter-modal__close:hover{color:#1e1e1e !important}}html body[data-node-shell] .hero-filter-modal--dark .hero-filter-modal__close{color:#fff !important;height:30px !important;width:30px !important}@media(min-width:1025px){html body[data-node-shell] .hero-filter-modal--dark .hero-filter-modal__close:hover{color:#fff !important;opacity:.8 !important}}html body[data-node-shell] .hero-filter-modal__close-svg{fill:none !important;height:22px !important;stroke:currentColor !important;stroke-linecap:round !important;stroke-width:1.4 !important;width:22px !important}html body[data-node-shell] .hero-filter-modal__body{flex:1 !important;min-height:0 !important;overflow-y:auto !important;padding:20px 20px 0 !important}html body[data-node-shell] .hero-filter-modal__body::-webkit-scrollbar{height:4px !important;width:4px !important}html body[data-node-shell] .hero-filter-modal__body::-webkit-scrollbar-thumb{background-color:#1e1e1e99 !important;border-radius:4px !important}html body[data-node-shell] .hero-filter-modal__body::-webkit-scrollbar-track{background-color:#1e1e1e4d !important;border-radius:4px !important}html body[data-node-shell] .hero-filter-modal--dark .hero-filter-modal__body{padding:0 26px !important;scrollbar-color:#6b6b6b transparent !important}@media screen and (max-width:540px){html body[data-node-shell] .hero-filter-modal--dark .hero-filter-modal__body{padding-inline:18px !important}}html body[data-node-shell] .hero-filter-modal__footer{border-top:1px solid rgba(30,30,30,.08) !important;flex-shrink:0 !important;padding:16px 20px 20px !important}html body[data-node-shell] .hero-filter-modal__footer--split{display:flex !important;gap:10px !important}html body[data-node-shell] .hero-filter-modal--dark .hero-filter-modal__footer{border-top:1px solid #4a4a4a !important;padding:18px 26px 22px !important}@media screen and (max-width:540px){html body[data-node-shell] .hero-filter-modal--dark .hero-filter-modal__footer{padding:14px 18px 18px !important}}html body[data-node-shell] .hero-filter-modal__reset{background-color:transparent !important;background:#3b3b3b !important;border:none !important;border-radius:3px !important;color:inherit !important;color:#fff !important;cursor:pointer !important;font:inherit !important;font-size:16px !important;height:46px !important;outline:none !important;padding:0 !important;transition:background-color .2s ease !important;width:50% !important}@media(min-width:1025px){html body[data-node-shell] .hero-filter-modal__reset:hover{background:#484848 !important}}html body[data-node-shell] .hero-filter-modal__apply{font-size:18px !important;font-weight:500 !important;min-height:52px !important}html body[data-node-shell] .hero-filter-modal--dark .hero-filter-modal__apply{background:#fff !important;border-color:#fff !important;border-radius:3px !important;color:#222 !important;font-size:16px !important;font-weight:400 !important;height:46px !important;min-height:46px !important;width:50% !important}@media(min-width:1025px){html body[data-node-shell] .hero-filter-modal--dark .hero-filter-modal__apply:hover{background:#e9e9e9 !important;border-color:#e9e9e9 !important}}html body[data-node-shell] .hero-filter-modal__footer--split .hero-filter-modal__apply{width:50% !important}
+
+/* kit/_shared/ui-kit.css */
+
+/* kit/_shared/listing-mode.css */
+
+/* listing.css */
+
+/* kit-v1/home-typography.css */
+
+
+/* kit-v1/home-spacing.css */
+
+
+/* kit-v1/home-buttons.css */
+
+
+/* catalog-kit-v1.css */
+html body[data-node-shell] .resort-filters .hero-filter-modal__dialog{background:#fff !important;color:#1e1e1e !important;border-radius:1px !important}
+html body[data-node-shell] .resort-filters :is(.hero-filter-modal__header,.hero-filter-modal__footer){background:#fff !important;color:#1e1e1e !important;border-color:#e4e4e4 !important}
+html body[data-node-shell] .resort-filters :is(.hero-filter-panel-content__group,.hero-filter-modal__body){border-color:#e4e4e4 !important;color:#1e1e1e !important}
+html body[data-node-shell] .resort-filters :is(.hero-filter-panel-content__title,.hero-filter-modal__title){color:#1e1e1e!important}
+html body[data-node-shell] .resort-filters .ui-checkbox--chip{border:1px solid #8b8986 !important;border-radius:1px !important;background:#fff !important;min-height:44px !important;font-weight:400 !important;color:#4f4d49 !important}
+html body[data-node-shell] .resort-filters .hero-filter-modal__close{color:#1e1e1e !important}
+html body[data-node-shell] .resort-filters .hero-filter-modal__footer{gap:12px !important}
+html body[data-node-shell] .resort-filters :is(.hero-filter-modal__apply,.hero-filter-modal__reset){border-radius:1px!important;height:70px !important;min-height:70px !important;padding:0 36px !important;font:400 17px/1.1 'Tilda Sans',sans-serif !important;letter-spacing:0 !important}
+html body[data-node-shell] .resort-filters .hero-filter-modal__apply{background:#8b1d25!important;color:#fff!important;border:1px solid #8b1d25 !important}
+html body[data-node-shell] .resort-filters .hero-filter-modal__reset{background:#fff !important;color:#4f4d49 !important;border:1px solid #8b8986 !important}
+html body[data-node-shell] .resort-filters__error{color:#8b1d25 !important}
+@media(min-width:1441px){html body[data-node-shell] .resort-filters :is(.hero-filter-modal__apply,.hero-filter-modal__reset){font-size:19px !important;padding-inline:47px !important}}
+@media(max-width:540px){html body[data-node-shell] .resort-filters :is(.hero-filter-modal__apply,.hero-filter-modal__reset){height:58px !important;min-height:58px !important;font-size:18px !important;padding-inline:24px !important}}
+@media(max-width:400px){html body[data-node-shell] .resort-filters .hero-filter-modal__footer{flex-direction:column !important}html body[data-node-shell] .resort-filters :is(.hero-filter-modal__apply,.hero-filter-modal__reset){width:100% !important;flex:none !important}}
+html body[data-node-shell] .resort-filters input:focus-visible{outline:2px solid #8b1d25 !important;outline-offset:2px !important}
+html body[data-node-shell] .resort-filters input:not([type=checkbox]):not([type=radio]):not([type=hidden]){background:#fff !important;color:#1e1e1e !important;border:1px solid #8b8986 !important;border-radius:1px !important;font:300 var(--node-filter-size)/1.4 'Tilda Sans',sans-serif !important}
+html body[data-node-shell] .resort-filters input::placeholder{color:#656462 !important;opacity:1 !important}
+html body[data-node-shell] .resort-filters .ui-checkbox--chip:hover .ui-checkbox__label{color:#fff!important}
+html body[data-node-shell] .resort-filters .ui-checkbox__box{border-color:#8b8986!important;border-radius:1px !important}
+html body[data-node-shell] .resort-filters .hero-filter-modal__title{font-size:var(--home-card) !important;line-height:1.2 !important;font-weight:400 !important}
+html body[data-node-shell] .resort-filters .ui-checkbox--chip .ui-checkbox__label{font-size:16px !important;line-height:1.2 !important}
+
+/* kit/filters-modal/filters-modal.css */
+html body[data-node-shell] .resort-filters.hero-filter-modal { z-index: 11000 !important; }
+html body[data-node-shell] .resort-filters .ui-checkbox--chip .ui-checkbox__box { display: none !important; }
+html body[data-node-shell] .resort-filters * { box-sizing: border-box !important; }
+html body[data-node-shell] .resort-filters .hero-filter-modal__body { overscroll-behavior: contain !important; }
+html body[data-node-shell] .resort-filters .ui-checkbox,html body[data-node-shell] .resort-filters .ui-switch { position: relative !important; }
+html body[data-node-shell] .resort-filters .ui-checkbox__input,html body[data-node-shell] .resort-filters .ui-switch__input { width: 100% !important; height: 100% !important; inset: 0 !important; position: absolute !important; opacity: 0 !important; pointer-events: auto !important; cursor: pointer !important; }
+html body[data-node-shell] .resort-filters .ui-checkbox:has(input:focus-visible),html body[data-node-shell] .resort-filters .ui-switch:has(input:focus-visible),html body[data-node-shell] .resort-filters button:focus-visible,html body[data-node-shell] .resort-filters input[type=text]:focus-visible { outline: 2px solid #8b1d25 !important; outline-offset: 3px !important; }
+html body[data-node-shell] .resort-filters .ui-checkbox--chip:hover,html body[data-node-shell] .resort-filters .hero-filter-modal__apply:hover,html body[data-node-shell] .resort-filters .hero-filter-modal__reset:hover { background: #8b1d25 !important; border-color: #8b1d25 !important; color: #fff !important; }
+html body[data-node-shell] .resort-filters .hero-filter-modal__close:hover { color: #8b1d25 !important; }
+html body[data-node-shell] .resort-filters__error { color: #fff !important; border-left: 2px solid #8b1d25 !important; padding: 8px 12px !important; margin: 12px 0 !important; font-size: 14px !important; line-height: 1.4 !important; }
+html body[data-node-shell] .resort-filters__error[hidden] { display: none !important; }
+@media (max-width: 540px) {
+  html body[data-node-shell] .resort-filters.hero-filter-modal { width: 100vw !important; height: 100dvh !important; }
+}
+
+/* kit/quick-filter-dropdowns/quick-filters.css */
+
+/* catalog-filters.css */
+
+/* kit/quick-filter-dropdowns/brand-filters.css */
+
+/* map-view/reference-map.css */
+
+/* catalog-map.css */
+
+}
+/* Integration with existing node data/controllers; shared catalogue presentation above. */
+@layer barn-node-filters {
+ html body[data-node-shell] {--node-filter-size:18px;}
+ @media(min-width:1441px){html body[data-node-shell]{--node-filter-size:20px;}}
+ @media(max-width:540px){html body[data-node-shell]{--node-filter-size:17px;}}
+
+ html body[data-node-shell] .resort-filters input {font-synthesis:none!important;}
+}
+@layer barn-node-filters {
+}
+@layer barn-node-filters {
+ html body[data-node-shell] .resort-filters {--home-card:24px;}
+ @media(max-width:1024px){html body[data-node-shell] .resort-filters{--home-card:20px;}}
+ html body[data-node-shell] .resort-filters .hero-filter-modal__body {background:transparent!important;}
+}
+@layer barn-node-filters {
+}
+@layer barn-node-filters {
+}
+/* Map shell follows the Resort overlay; filter captions share the same left edge. */
+@layer barn-node-filters {
+ html body[data-node-shell] .resort-filters.hero-filter-modal {z-index:11000!important;}
+}
+@layer barn-node-filters {
+}
+@layer barn-node-filters {
+}
+/* Give the desktop listing sort its own room inside the right page gutter. */
+@layer barn-node-filters {
+}
+/* Map parameters share listing state; the deal uses the listing's segmented control. */
+@layer barn-node-filters {
+}
+
+/* Small decorative up/down SVG for sorting; kept outside mutable button captions. */
+@layer barn-node-filters {
+}
+/* Mobile count is a real grid item; native nodes use a class instead of #results-count. */
+@layer barn-node-filters {
+}
+@layer barn-node-filters {
+}
+
+@layer barn-layout-grid {
+/* Horizontal grid from the approved homepage home-spacing.css, UI-kit v1.0.3.
+ * One inset per content frame. Full-bleed photos/CTA, split-form interiors and
+ * the resort FAQ's explicitly retained composition are separate contracts. */
+:root {
+  --barn-page-gutter: clamp(24px, calc(-26.66667px + 6.59722vw), 100px);
+}
+@media(max-width:540px) { :root { --barn-page-gutter:22px; } }
+@media(min-width:1921px) { :root { --barn-page-gutter:0px; } }
+/* Hero and header must follow the same grid as the page content. */
+html body.barnes-media-header { --mh-gutter:var(--barn-page-gutter)!important; }
+/* The footer used to add a section gutter and a second container gutter. */
+/* City/international exports still carried older container breakpoints. */
+/* These two lot-page frames were missing the shared content cap. */
+/* Keep text over project photos on the common grid; photos stay full bleed. */
+
+/* The photographic consultation keeps its full-bleed media; only its content
+ * inset follows the page grid. A named layer also isolates the old generated
+ * CTA adapter's high-specificity padding rules. */
+
+/* Mobile newsletter photography spans the canvas; only the copy owns gutters. */
+
+}
+
+/* Shared page navigation; deliberately outside the header and normal flow. */
+/* Keep the original footprint so neither hero content nor the header moves. */
+
+/* Canonical footer text-link states for all thirteen current BARN Estate pages. */
+
+/* UI-kit 1.0.3 compact chips and existing node section/heading roles. */
+@layer barn-node-spacing {
+}
+
+/* Generated from approved home NewsSection by sync-node-news.cjs. */
+@layer barn-node-spacing {
+}
+
+/* City quiz styles, shared once across five nodes. */
+/* Use the canonical semantic grays, rather than legacy low-opacity placeholders. */
+/* Keep the footer's primary action reachable while its button is on screen. */
+
+/* Homepage quiz: new controls inherit the owner/ambassador reference palette. */
+
+/* Keep one dialog frame through every quiz step; only the body scrolls. */
+
+/* Narrow quiz column: keep channel labels readable, including phone landscape. */
+
+/* One geometry/type contract per button role. Preserve fill/outline/inverse colors. */
+/* Compact choices retain a smaller footprint, sharing radius and regular weight. */
+
+/* Rectangular quiz choices use the same 1px corner as all CTA buttons. */
+
+/* Shared expert dialog, based on the approved homepage quiz geometry. */
+@layer barn-node-spacing {
+}
+@layer barn-node-spacing {
+ /* Explicit grid tracks prevent legacy flex alignment from shrinking different dialogs. */
+}
+
+/* Generated by sync-node-footer.cjs from approved homepage. */
+@layer barn-node-spacing {
+}
+
+/* Shared page navigation; deliberately outside the header and normal flow. */
+/* Keep the original footprint so neither hero content nor the header moves. */
+
+/* Geometry, colors and markup come from the original css/source.css modal contract. */
+.resort-filters.hero-filter-modal { z-index: 11000; }
+.resort-filters .ui-checkbox--chip .ui-checkbox__box { display: none; }
+.resort-filters * { box-sizing: border-box; }
+.resort-filters .hero-filter-modal__body { overscroll-behavior: contain; }
+.resort-filters .ui-checkbox, .resort-filters .ui-switch { position: relative; }
+.resort-filters .ui-checkbox__input, .resort-filters .ui-switch__input { width: 100%; height: 100%; inset: 0; position: absolute; opacity: 0; pointer-events: auto; cursor: pointer; }
+.resort-filters .ui-checkbox:has(input:focus-visible), .resort-filters .ui-switch:has(input:focus-visible),
+.resort-filters button:focus-visible, .resort-filters input[type=text]:focus-visible { outline: 2px solid #8b1d25; outline-offset: 3px; }
+.resort-filters .ui-checkbox--chip:hover, .resort-filters .hero-filter-modal__apply:hover, .resort-filters .hero-filter-modal__reset:hover { background: #8b1d25 !important; border-color: #8b1d25 !important; color: #fff !important; }
+.resort-filters .hero-filter-modal__close:hover { color: #8b1d25 !important; }
+.resort-filters__error { color: #fff; border-left: 2px solid #8b1d25; padding: 8px 12px; margin: 12px 0; font-size: 14px; line-height: 1.4; }
+.resort-filters__error[hidden] { display: none; }
+@media (max-width: 540px) {
+  .resort-filters.hero-filter-modal { width: 100vw; height: 100dvh; }
+}
+/* Shared desktop row for the two collections and sorting; compact views retain their order. */
+
+/* Dropdown markup/geometry follow front.barnes.vsavr.ru's catalog quick filters. */

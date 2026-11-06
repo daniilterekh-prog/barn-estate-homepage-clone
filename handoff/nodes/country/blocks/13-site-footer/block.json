@@ -1,0 +1,17 @@
+{
+  "id": "13-site-footer",
+  "title": "Футер",
+  "kind": "site-footer",
+  "html": "../../html/13-site-footer.html",
+  "css": "../../css/13-site-footer.css",
+  "js": "../../js/13-site-footer.js",
+  "preview": "index.html",
+  "dependencies": [
+    "../../css/page.css",
+    "../../js/blocks-runtime.js",
+    "../../assets/",
+    "../../js/expert-quiz.js"
+  ],
+  "assets": "assets.json",
+  "integrationMode": "portable-adapter"
+}

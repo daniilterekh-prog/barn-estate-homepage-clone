@@ -1,0 +1,798 @@
+@font-face { font-family: "Tilda Sans Fallback"; src: local("Arial"), local("Helvetica Neue"), local("Helvetica"); size-adjust: 92.84%; ascent-override: 102.43%; descent-override: 26.82%; line-gap-override: 0%; }
+@font-face { font-family: "Tilda Sans"; src: url("../assets/f0f2c165784c7234.woff2") format("woff2"); font-weight: 300; font-style: normal; font-display: swap; }
+@font-face { font-family: "Tilda Sans"; src: url("../assets/2670dad44ca6c2a1.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "Tilda Sans"; src: url("../assets/f716269e361f4665.woff2") format("woff2"); font-weight: 500; font-style: normal; font-display: swap; }
+html, body { font-family: "Tilda Sans", "Tilda Sans Fallback", system-ui, sans-serif; }
+@keyframes floating-expert-enter-cd0a1259 {
+  100% { opacity: 1; transform: translateY(0px); }
+}
+@keyframes floating-expert-pulse-cd0a1259 {
+  0%, 100% { box-shadow: rgba(18, 18, 18, 0.2) 0px 22px 62px; }
+  42% { box-shadow: rgba(18, 18, 18, 0.2) 0px 22px 62px, rgba(18, 18, 18, 0.08) 0px 0px 0px 12px; }
+  58% { box-shadow: rgba(18, 18, 18, 0.24) 0px 26px 74px, rgba(18, 18, 18, 0) 0px 0px 0px 22px; }
+}
+@font-face { font-display: swap; font-family: "Tilda Sans"; font-style: normal; font-weight: 300; src: url("../assets/f0f2c165784c7234.woff2") format("woff2"); }
+@font-face { font-display: swap; font-family: "Tilda Sans"; font-style: normal; font-weight: 400; src: url("../assets/2670dad44ca6c2a1.woff2") format("woff2"); }
+@font-face { font-display: swap; font-family: "Tilda Sans"; font-style: normal; font-weight: 500; src: url("../assets/f716269e361f4665.woff2") format("woff2"); }
+@font-face { font-display: swap; font-family: "Tilda Sans"; font-style: normal; font-weight: 600; src: url("../assets/3814f8c444073262.woff2") format("woff2"); }
+@font-face { font-display: swap; font-family: "Tilda Sans"; font-style: normal; font-weight: 700; src: url("../assets/a2690df6fe834806.woff2") format("woff2"); }
+@font-face { font-display: swap; font-family: "Tilda Sans"; font-style: normal; font-weight: 800; src: url("../assets/726a3a878465a590.woff2") format("woff2"); }
+@font-face { font-display: swap; font-family: "Tilda Sans"; font-style: normal; font-weight: 900; src: url("../assets/73abed6708c43912.woff2") format("woff2"); }
+@font-face { ascent-override: 102.43%; descent-override: 26.82%; font-family: "Tilda Sans Fallback"; line-gap-override: 0%; size-adjust: 92.84%; src: local("Arial"), local("Helvetica Neue"), local("Helvetica"); }
+html { font-family: sans-serif; text-size-adjust: 100%; }
+body { margin: 0px; }
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary { display: block; }
+[hidden], template { display: none; }
+a { background-color: transparent; }
+a:active, a:hover { outline: 0px; }
+img { border: 0px; }
+svg:not(:root) { overflow: hidden; }
+button, input, optgroup, select, textarea { color: inherit; font: inherit; margin: 0px; }
+button { overflow: visible; }
+button, select { text-transform: none; }
+button, html input[type="button"], input[type="reset"], input[type="submit"] { appearance: button; cursor: pointer; }
+button[disabled], html input[disabled] { cursor: default; }
+input { line-height: normal; }
+input[type="checkbox"], input[type="radio"] { box-sizing: border-box; padding: 0px; }
+html { color: rgb(30, 30, 30); font-size: 16px; font-weight: 400; line-height: 1; scroll-behavior: smooth; scrollbar-gutter: stable; }
+html, html body { font-family: "Tilda Sans", "Tilda Sans Fallback", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+html body { height: 100%; margin: 0px; text-rendering: optimizelegibility; width: 100%; -webkit-font-smoothing: antialiased; background-color: rgb(255, 255, 255); }
+* { -webkit-tap-highlight-color: rgba(0, 0, 0, 0); outline: none; }
+input:not([type="checkbox"]):not([type="radio"]), select, textarea { appearance: none; }
+h1, h2, h3, h4, h5, p { margin: 0px; }
+button, input, textarea { font-family: inherit; }
+img { height: auto; max-width: 100%; }
+input:not([type="checkbox"]):not([type="radio"]):not([type="number"]), select, textarea { appearance: none; }
+button:not(:disabled) { cursor: pointer; }
+a { color: currentcolor; text-decoration: none; }
+a, a:active, a:focus { outline: none; }
+a:focus-visible, button:focus-visible { outline: rgba(20, 71, 230, 0.45) solid 2px; outline-offset: 2px; }
+@keyframes splide-loading {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(1turn); }
+}
+.vfm--absolute { position: absolute; }
+.vfm--inset { inset: 0px; }
+.vfm--overlay { background-color: rgba(0, 0, 0, 0.5); z-index: -1; }
+.vfm--prevent-none { pointer-events: none; }
+.vfm--outline-none:focus { outline: none; }
+@keyframes fade-in {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes fade-out {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+@keyframes fadeInDown {
+  0% { opacity: 0; transform: translate3d(0px, -100%, 0px); }
+  100% { opacity: 1; transform: none; }
+}
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translate3d(0px, 100%, 0px); }
+  100% { opacity: 1; transform: none; }
+}
+.modal { align-items: center; display: flex; justify-content: center; }
+.modal__content { background: rgb(255, 255, 255); border-radius: 10px; margin: 0px auto; max-width: 500px; padding: 20px; position: relative; width: calc(100% - 32px); }
+.modal__close[data-v-fd466e7b] { background: transparent; border-width: medium; border-style: none; border-color: currentcolor; border-image: none; color: rgb(30, 30, 30); cursor: pointer; height: 24px; position: absolute; right: 24px; top: 12px; transition: 0.3s; width: 24px; }
+@keyframes partners-marquee-right-923dc07c {
+  0% { transform: translate3d(-50%, 0px, 0px); }
+  100% { transform: translateZ(0px); }
+}
+@keyframes partners-marquee-left-923dc07c {
+  0% { transform: translateZ(0px); }
+  100% { transform: translate3d(-50%, 0px, 0px); }
+}
+:root { --owner-rent-ui-brand: #8b1d25; --owner-rent-ui-brand-accent: #8b1d25; --owner-rent-ui-background: #fff; --owner-rent-ui-surface: #f1f1f1; --owner-rent-ui-dark-surface: #262626; --owner-rent-ui-text-primary: #1e1e1e; --owner-rent-ui-text-secondary: #4f4d49; --owner-rent-ui-text-muted: #656462; --owner-rent-ui-border: #e4e4e4; --owner-rent-ui-error: #ef4444; --owner-rent-ui-heading-weight: 300; --owner-rent-ui-body-weight: 400; --owner-rent-ui-h2-size: 38px; --owner-rent-ui-h2-line: 45.6px; --owner-rent-ui-h2-compact-line: 38px; --owner-rent-ui-h2-wide-size: 44px; --owner-rent-ui-h2-wide-line: 52.8px; --owner-rent-ui-h2-compact-wide-line: 44px; --owner-rent-ui-h2-mobile-size: 22px; --owner-rent-ui-h2-mobile-line: 26.4px; --owner-rent-ui-control-radius: 1px; --owner-rent-ui-focus-width: 2px; --owner-rent-ui-focus-offset: 3px; --owner-rent-ui-motion: .2s ease; }
+@keyframes floating-expert-enter-cd0a1259 {
+  100% { opacity: 1; transform: translateY(0px); }
+}
+@keyframes floating-expert-pulse-cd0a1259 {
+  0%, 100% { box-shadow: rgba(18, 18, 18, 0.2) 0px 22px 62px; }
+  42% { box-shadow: rgba(18, 18, 18, 0.2) 0px 22px 62px, rgba(18, 18, 18, 0.08) 0px 0px 0px 12px; }
+  58% { box-shadow: rgba(18, 18, 18, 0.24) 0px 26px 74px, rgba(18, 18, 18, 0) 0px 0px 0px 22px; }
+}
+@keyframes ymaps3--controls-spinner-spin{0%{transform:rotate(0deg)}to{transform:rotate(1turn)}}
+
+/* Only runtime state and captured carousel sizing; source design stays in source.css. */
+[hidden] { display: none !important; }
+
+/*
+ * BARNES transferable UI layer for the Kurortnaya page.
+ * Baseline: ../reference-ui.md (2026-10-07).
+ * Project/offer cards are intentionally outside this layer.
+ */
+
+:root {
+  --kit-font: "Tilda Sans", "Tilda Sans Fallback", system-ui, sans-serif;
+  --kit-text: #1e1e1e;
+  --kit-text-secondary: #4f4d49;
+  --kit-text-muted: #656462;
+  --kit-burgundy: #8b1d25;
+  --kit-focus-accent: var(--kit-burgundy);
+  --kit-border: #e4e4e4;
+  --kit-h2-standard-size: 38px;
+  --kit-h2-standard-leading: 1.2;
+  --kit-h2-compact-size: 38px;
+  --kit-h2-compact-leading: 1;
+  --kit-h2-editorial-size: 44px;
+  --kit-h2-editorial-leading: 0.98;
+  --kit-eyebrow-size: 14px;
+  --kit-eyebrow-leading: 1.15;
+  --kit-eyebrow-gap: 25px;
+  --kit-action-height: 70px;
+  --kit-action-size: 17px;
+  --kit-action-padding: 36px;
+}
+
+html,
+body {
+  color: var(--kit-text);
+  font-family: var(--kit-font);
+}
+
+/* Headings outside the project-card component family. */
+
+/* Catalog content-page display follows the approved content H1 contract. */
+
+/* Long-form BARNES copy uses heading roles without introducing bold weights. */
+
+/* CTA portraits: Denis stays natural; the layout, not the photograph, is mirrored. */
+
+/* FloatingExpert contract. */
+
+/* Mobile hero contacts remain distinct from the sticky request-form button. */
+
+/* Compact ContactAction used as a channel selector inside both forms. */
+
+/* FAQ body typography follows the shared text roles at every breakpoint. */
+
+/* Parent layouts already contribute their own row gaps. Offset those gaps so
+   the visible eyebrow-to-title rhythm matches the approved 25px contract. */
+
+/* Shared rectangular action contract. Card actions are deliberately excluded. */
+
+/* Filter controls: the UI kit defines these separately from rectangular CTAs. */
+
+@media (min-width: 1441px) {
+  :root {
+    --kit-h2-standard-size: 44px;
+    --kit-h2-compact-size: 44px;
+    --kit-action-size: 19px;
+    --kit-action-padding: 47px;
+  }
+}
+
+@media (max-width: 540px) {
+  :root {
+    --kit-h2-standard-size: 22px;
+    --kit-h2-compact-size: 22px;
+    --kit-h2-editorial-size: 22px;
+    --kit-h2-editorial-leading: 1.2;
+    --kit-eyebrow-size: 12px;
+    --kit-eyebrow-leading: 1.2;
+    --kit-eyebrow-gap: 12px;
+    --kit-action-height: 58px;
+    --kit-action-size: 18px;
+    --kit-action-padding: 24px;
+  }
+}
+
+/* Header contract: compact owner-style navigation with direct contact channels. */
+
+@media (hover: hover) and (pointer: fine) {
+
+  /* Interactive accents are burgundy; yellow and gold are prohibited. */
+}
+
+/* Secondary header: copied from the approved partners-page contract. */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
+
+/* ListingCard contract: shared geometry for project and secondary-lot modes. */
+
+/* Filter layout: "lower lines" design from the approved mobile reference. */
+
+/* One chevron treatment at every breakpoint, matching the filter controls. */
+
+@media (max-width: 540px) {
+
+  /* Anchor every mobile arrow to its control, independently of text/padding. */
+}
+
+/* International content inside the approved node component contracts. */
+/* A title never adds another line to a listing card, including city variants. */
+
+/* Footer contract from prodazha_sobstvennikam/owner-sale.css.
+   Base snapshot rules use the same data-v-6eb18211 scope on both pages. */
+
+/* Shared owner header template. Source: prodazha_sobstvennikam, 2026-10-12.
+ * Opt in with body.barnes-header-template. Only page anchors/content differ.
+ * Kurortnaya deliberately retains site-header--no-nav (no directions row).
+ */
+body.barnes-header-template { --owner-sale-ink: #1e1e1e; --owner-sale-brand: #8b1d25; --owner-sale-border: rgba(30,30,30,.14); }
+@media (max-width:540px) {
+  /* Keep the contact dropdown clickable; only the anchor list scrolls. */
+}
+
+/* Catalogue composition using the approved homepage search, choice and spacing roles. */
+/* One continuous strip echoes the homepage search bar; labels carry the hierarchy. */
+/* Optional collections sit between the search and the result controls. */
+/* Dropdown choices use the quiet selected state from the kit's quiz choices. */
+
+/* Two quick choices; advanced criteria stay in the shared full form. */
+
+/* Restore all four quick parameters on phones in a shared 2x2 grid. */
+
+/* Resort integration: same reference geometry, isolated from cards and headers. */
+
+/* Light full form copied from catalogue role overrides. */
+/* Map quick controls share the same boxed geometry; the map itself is unchanged. */
+/* Measured full-dialog geometry and typography from the reference. */
+/* Legacy chip labels must not paint a second dark rectangle over the selection. */
+
+/* Keep the two-word brand together without preventing the rest of a sentence from wrapping. */
+.barn-estate-name{overflow-wrap:normal!important;word-break:normal!important;hyphens:none!important}
+
+/* CTA background layers span the section; form layout stays on its existing grid. */
+
+/* Shared laptop hero policy. Primary heroes are 200px shorter; typography stays in the page kit. */
+@layer barn-hero-laptop {
+ @media (min-width:1025px) and (max-width:1919px), (min-width:1920px) and (max-height:1000px) {
+  body {--hero-laptop-main:620px;--hero-laptop-node:444px;--hero-laptop-lot:520px;}
+  @media(min-width:1441px){body{--hero-laptop-main:760px;--hero-laptop-node:494px;--hero-laptop-lot:650px;}}
+  body[data-node-shell]{--hero-laptop-node:var(--hero-laptop-main);}
+ }
+}
+
+/* Header derived from owner-sale; regenerate with main-site/tools/sync-node-shell.cjs. */
+@layer barn-node-shell-header {
+
+}
+
+/* Media header v1.1.0, mobile sticky menu 2026-11-04. Only headers opt into this component. */
+html body.barnes-media-header {--mh-gutter:calc(-26.66667px + 6.59722vw);--mh-pad:32px;--mh-logo:48px;--mh-panel-offset:41px;--mh-ink:#1e1e1e;}
+/* Owner/ambassador anchors retain their nodes, text and handlers. Only center/right change. */
+@media(min-width:1921px) {html body.barnes-media-header {--mh-gutter:0px;}}
+@media(max-width:768px) {html body.barnes-media-header {--mh-gutter:calc(8.94118px + 1.96078vw);}}
+@media(max-width:540px) {
+ html body.barnes-media-header {--mh-pad:16px;--mh-logo:36px;--mh-panel-offset:25px;}
+}
+
+/* Media has WA / Telegram / MAX above hero, WA / MAX / Telegram after hero. */
+
+/* One mobile row: menu / logo / contacts. Page anchors remain available on desktop. */
+
+/* Identical glyph inset on Media and owner/partner headers; retain the 44px touch target. */
+
+/* Direction pages use the burger only, without a second navigation row. */
+
+/* The sticky mobile bar owns its centered logo, even when legacy node CSS hid it. */
+@layer barn-node-shell-header {
+}
+
+/* Five direction pages share owner-sale header/hero metrics. Page data stays local. */
+@layer barn-node-shell {
+ html body[data-node-shell] {--node-hero-height:820px;--node-title-lines:1;}
+ @media(min-width:1441px){html body[data-node-shell]{--node-hero-height:960px;}}
+ @media(max-width:767px){html body[data-node-shell]{--node-title-lines:2;}}
+ @media(max-width:540px){html body[data-node-shell]{--node-hero-height:560px;}}
+ @media(max-width:389px){html body[data-node-shell]{--node-title-lines:3;}}
+ /* The international page already suppresses its legacy quick-link content. */
+}
+
+/* Vertical roles from the approved home-spacing.css / UI-kit v1.0.3.
+ * Scope: five direction nodes. Each interval is owned once, never margin + gap. */
+@layer barn-node-spacing {
+ html body[data-node-shell] {
+  --node-section-space:clamp(72px,6vw,100px);
+  --node-brow-gap:25px;--node-heading-content:40px;--node-copy-gap:24px;
+ }
+ @media(max-width:1024px){html body[data-node-shell]{--node-brow-gap:12px;}}
+ @media(max-width:540px){html body[data-node-shell]{--node-section-space:48px;--node-heading-content:28px;--node-copy-gap:16px;}}
+ /* Start-sales: the slider is a sibling of the heading container. */
+ /* Map: description belongs to the heading, then one content interval. */
+ /* Catalog controls keep their own existing internal intervals. */
+ /* Editorial intro: eyebrow -> H2 -> description, without a second flex gap. */
+ /* Directions/news: the parent gap owns heading -> cards. */
+ /* FAQ has no separate heading wrapper: margin belongs to the answer grid. */
+ /* Consultation owns its spacing inside the photo. Outer padding exposes dark bands. */
+ /* Photo CTA: retain the card's inner grid, normalize heading and form spacing. */
+}
+/* Editorial images use one frame and end at the introductory copy, above its action. */
+@layer barn-node-spacing {
+}
+
+/* Match apparent portrait distance; the office background still reaches every CTA edge. */
+@layer barn-node-spacing {
+}
+
+/* FAQ columns share question/answer tracks, so wrapping and expansion keep paired rows aligned. */
+@layer barn-node-spacing {
+}
+
+/* Final contact CTA: city layout/fields, shared by all five nodes.
+ * Original source: city/css/document-desktop.css; local backgrounds remain untouched. */
+@layer barn-node-spacing {
+}
+@layer barn-node-spacing {
+}
+
+/* Generated from the approved home reference by sync-node-recommendations.cjs. */
+@layer barn-node-recommendations {
+
+}
+/* Only node-specific integration. Card presentation is generated from the home source. */
+@layer barn-node-recommendations {
+}
+@layer barn-node-recommendations {
+}
+@layer barn-node-recommendations {
+ /* Splide's live horizontal track padding is zero in the home instance. */
+}
+
+/* Generated from the current katalog-nedvizhimosti filter sources; see sync-node-filters.cjs. */
+@layer barn-node-filters {
+/* kit/_shared/source.css */
+
+/* kit/_shared/ui-kit.css */
+
+/* kit/_shared/listing-mode.css */
+
+/* listing.css */
+
+/* kit-v1/home-typography.css */
+
+
+/* kit-v1/home-spacing.css */
+
+
+/* kit-v1/home-buttons.css */
+
+
+/* catalog-kit-v1.css */
+
+/* kit/filters-modal/filters-modal.css */
+
+/* kit/quick-filter-dropdowns/quick-filters.css */
+
+/* catalog-filters.css */
+
+/* kit/quick-filter-dropdowns/brand-filters.css */
+
+/* map-view/reference-map.css */
+
+/* catalog-map.css */
+
+}
+/* Integration with existing node data/controllers; shared catalogue presentation above. */
+@layer barn-node-filters {
+ html body[data-node-shell] {--node-filter-size:18px;}
+ @media(min-width:1441px){html body[data-node-shell]{--node-filter-size:20px;}}
+ @media(max-width:540px){html body[data-node-shell]{--node-filter-size:17px;}}
+}
+@layer barn-node-filters {
+}
+@layer barn-node-filters {
+}
+@layer barn-node-filters {
+}
+@layer barn-node-filters {
+}
+/* Map shell follows the Resort overlay; filter captions share the same left edge. */
+@layer barn-node-filters {
+}
+@layer barn-node-filters {
+}
+@layer barn-node-filters {
+}
+/* Give the desktop listing sort its own room inside the right page gutter. */
+@layer barn-node-filters {
+}
+/* Map parameters share listing state; the deal uses the listing's segmented control. */
+@layer barn-node-filters {
+}
+
+/* Small decorative up/down SVG for sorting; kept outside mutable button captions. */
+@layer barn-node-filters {
+}
+/* Mobile count is a real grid item; native nodes use a class instead of #results-count. */
+@layer barn-node-filters {
+}
+@layer barn-node-filters {
+}
+
+@layer barn-layout-grid {
+/* Horizontal grid from the approved homepage home-spacing.css, UI-kit v1.0.3.
+ * One inset per content frame. Full-bleed photos/CTA, split-form interiors and
+ * the resort FAQ's explicitly retained composition are separate contracts. */
+:root {
+  --barn-page-gutter: clamp(24px, calc(-26.66667px + 6.59722vw), 100px);
+}
+@media(max-width:540px) { :root { --barn-page-gutter:22px; } }
+@media(min-width:1921px) { :root { --barn-page-gutter:0px; } }
+/* Hero and header must follow the same grid as the page content. */
+html body.barnes-media-header { --mh-gutter:var(--barn-page-gutter)!important; }
+/* The footer used to add a section gutter and a second container gutter. */
+/* City/international exports still carried older container breakpoints. */
+/* These two lot-page frames were missing the shared content cap. */
+/* Keep text over project photos on the common grid; photos stay full bleed. */
+
+/* The photographic consultation keeps its full-bleed media; only its content
+ * inset follows the page grid. A named layer also isolates the old generated
+ * CTA adapter's high-specificity padding rules. */
+
+/* Mobile newsletter photography spans the canvas; only the copy owns gutters. */
+
+}
+
+/* Shared page navigation; deliberately outside the header and normal flow. */
+/* Keep the original footprint so neither hero content nor the header moves. */
+
+/* Canonical footer text-link states for all thirteen current BARN Estate pages. */
+
+/* Geometry, colors and markup come from the original css/source.css modal contract. */
+
+/* Dropdown markup/geometry follow front.barnes.vsavr.ru's catalog quick filters. */
+
+/* Native checkbox semantics; BARNES inline-filter typography and wine state. */
+/* Account for text centering inside different-height controls, not only grid-gap. */
+
+/* UI-kit 1.0.3 compact chips and existing node section/heading roles. */
+@layer barn-node-spacing {
+}
+
+/* Generated from approved home NewsSection by sync-node-news.cjs. */
+@layer barn-node-spacing {
+}
+
+/* City quiz styles, shared once across five nodes. */
+.home-owner-host.barnes-template,.home-owner-host.barnes-template { font-family: "Tilda Sans", "Tilda Sans Fallback", system-ui, sans-serif; }
+.home-owner-host.barnes-template { font-family: sans-serif; text-size-adjust: 100%; }
+.home-owner-host.barnes-template { margin: 0px; }
+.home-owner-host.barnes-template a { background-color: transparent; }
+.home-owner-host.barnes-template a:active,.home-owner-host.barnes-template a:hover { outline: 0px; }
+.home-owner-host.barnes-template img { border: 0px; }
+svg:not(.home-owner-host.barnes-template) { overflow: hidden; }
+.home-owner-host.barnes-template button,.home-owner-host.barnes-template input,.home-owner-host.barnes-template optgroup,.home-owner-host.barnes-template select,.home-owner-host.barnes-template textarea { color: inherit; font: inherit; margin: 0px; }
+.home-owner-host.barnes-template button { overflow: visible; }
+.home-owner-host.barnes-template button,.home-owner-host.barnes-template select { text-transform: none; }
+.home-owner-host.barnes-template button,.home-owner-host.barnes-template input[type="button"],.home-owner-host.barnes-template input[type="reset"],.home-owner-host.barnes-template input[type="submit"] { appearance: button; cursor: pointer; }
+.home-owner-host.barnes-template input { line-height: normal; }
+.home-owner-host.barnes-template input[type="checkbox"],.home-owner-host.barnes-template input[type="radio"] { box-sizing: border-box; padding: 0px; }
+.home-owner-host.barnes-template { color: rgb(30, 30, 30); font-size: 16px; font-weight: 400; line-height: 1; scroll-behavior: smooth; scrollbar-gutter: stable; }
+.home-owner-host.barnes-template,.home-owner-host.barnes-template .home-owner-host.barnes-template { font-family: "Tilda Sans", "Tilda Sans Fallback", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+.home-owner-host.barnes-template * { -webkit-tap-highlight-color: rgba(0, 0, 0, 0); outline: none; }
+.home-owner-host.barnes-template input:not([type="checkbox"]):not([type="radio"]),.home-owner-host.barnes-template select,.home-owner-host.barnes-template textarea { appearance: none; }
+.home-owner-host.barnes-template h1,.home-owner-host.barnes-template h2,.home-owner-host.barnes-template h3,.home-owner-host.barnes-template h4,.home-owner-host.barnes-template h5,.home-owner-host.barnes-template p { margin: 0px; }
+.home-owner-host.barnes-template button,.home-owner-host.barnes-template input,.home-owner-host.barnes-template textarea { font-family: inherit; }
+.home-owner-host.barnes-template img { height: auto; max-width: 100%; }
+.home-owner-host.barnes-template input:not([type="checkbox"]):not([type="radio"]):not([type="number"]),.home-owner-host.barnes-template select,.home-owner-host.barnes-template textarea { appearance: none; }
+.home-owner-host.barnes-template button:not(:disabled) { cursor: pointer; }
+.home-owner-host.barnes-template a { color: currentcolor; text-decoration: none; }
+.home-owner-host.barnes-template a,.home-owner-host.barnes-template a:active,.home-owner-host.barnes-template a:focus { outline: none; }
+.home-owner-host.barnes-template a:focus-visible,.home-owner-host.barnes-template button:focus-visible { outline: rgba(20, 71, 230, 0.45) solid 2px; outline-offset: 2px; }
+.home-owner-host.barnes-template .vfm--absolute { position: absolute; }
+.home-owner-host.barnes-template .vfm--inset { inset: 0px; }
+.home-owner-host.barnes-template .vfm--overlay { background-color: rgba(0, 0, 0, 0.5); z-index: -1; }
+.home-owner-host.barnes-template .vfm--prevent-none { pointer-events: none; }
+.home-owner-host.barnes-template .vfm--outline-none:focus { outline: none; }
+
+
+
+
+
+.home-owner-host.barnes-template .home-owner-button[data-v-0abc262e] { align-items: center; background-color: transparent; border: 1px solid transparent; border-radius: 3px; color: inherit; cursor: pointer; display: inline-flex; font-style: inherit; font-variant: inherit; font-stretch: inherit; font-optical-sizing: inherit; font-size-adjust: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; font-language-override: inherit; font-family: inherit; font-size: 20px; font-weight: 500; gap: 8px; height: 70px; justify-content: center; line-height: 1; min-height: 70px; outline: none; padding: 0px 28px; text-decoration: none; transition: background-color 0.2s, border-color 0.2s, color 0.2s; user-select: none; white-space: nowrap; }
+@media screen and (max-width: 1024px) {
+.home-owner-host.barnes-template .home-owner-button[data-v-0abc262e] { font-size: 16px; height: auto; min-height: 40px; padding: 10px 24px; }
+}
+@media screen and (max-width: 540px) {
+.home-owner-host.barnes-template .home-owner-button[data-v-0abc262e] { font-size: 15px; height: auto; min-height: 38px; padding: 10px 20px; }
+}
+.home-owner-host.barnes-template .home-owner-button--large[data-v-0abc262e] { height: 70px; min-height: 70px; padding: 0px 68px; }
+@media screen and (max-width: 1024px) {
+.home-owner-host.barnes-template .home-owner-button--large[data-v-0abc262e] { font-size: 16px; height: auto; min-height: 56px; padding: 16px 40px; }
+}
+@media screen and (max-width: 540px) {
+.home-owner-host.barnes-template .home-owner-button--large[data-v-0abc262e] { font-size: 16px; height: auto; min-height: 68px; padding: 14px 24px; }
+}
+.home-owner-host.barnes-template .home-owner-button--full[data-v-0abc262e] { width: 100%; }
+.home-owner-host.barnes-template .home-owner-button[data-v-0abc262e]:focus-visible { outline: rgba(139, 29, 37, 0.35) solid 2px; outline-offset: 2px; }
+.home-owner-host.barnes-template .home-owner-button--primary[data-v-0abc262e] { background: rgb(139, 29, 37); border-color: rgb(139, 29, 37); color: rgb(255, 255, 255); }
+.home-owner-host.barnes-template .home-owner-button--primary[data-v-0abc262e]:hover:not(:disabled) { background: rgb(128, 27, 34); border-color: rgb(128, 27, 34); }
+.home-owner-host.barnes-template .modal { align-items: center; display: flex; justify-content: center; }
+.home-owner-host.barnes-template .modal__content { background: rgb(255, 255, 255); border-radius: 10px; margin: 0px auto; max-width: 500px; padding: 20px; position: relative; width: calc(100% - 32px); }
+.home-owner-host.barnes-template .modal__close[data-v-fd466e7b] { background: transparent; border-width: medium; border-style: none; border-color: currentcolor; border-image: none; color: rgb(30, 30, 30); cursor: pointer; height: 24px; position: absolute; right: 24px; top: 12px; transition: 0.3s; width: 24px; }
+.home-owner-host.barnes-template .home-owner-form.modal .modal__content { background: rgb(247, 244, 241); border-radius: 4px; max-width: 420px; overflow: hidden; padding: 0px; }
+.home-owner-host.barnes-template .home-owner-form.modal .modal__close { color: rgb(255, 255, 255); right: 14px; top: 14px; z-index: 3; }
+.home-owner-host.barnes-template .home-owner-form.modal .modal__close { stroke: rgb(255, 255, 255); }
+.home-owner-host.barnes-template .home-owner-form__layout[data-v-231b17b3] { display: flex; flex-direction: column; }
+.home-owner-host.barnes-template .home-owner-form__hero[data-v-231b17b3] { aspect-ratio: 420 / 200; background: rgb(30, 30, 30); overflow: hidden; position: relative; }
+.home-owner-host.barnes-template .home-owner-form__hero-image[data-v-231b17b3] { display: block; height: 100%; object-fit: cover; object-position: center center; width: 100%; }
+.home-owner-host.barnes-template .home-owner-form__body[data-v-231b17b3] { background: rgb(247, 244, 241); padding: 36px 36px 28px; }
+@media screen and (max-width: 540px) {
+.home-owner-host.barnes-template .home-owner-form__body[data-v-231b17b3] { padding: 28px 24px 24px; }
+}
+.home-owner-host.barnes-template .home-owner-form__title[data-v-231b17b3] { color: rgb(30, 30, 30); font-size: 24px; font-weight: 400; line-height: 1.35; margin: 0px; text-align: center; }
+@media screen and (max-width: 540px) {
+.home-owner-host.barnes-template .home-owner-form__title[data-v-231b17b3] { font-size: 20px; }
+}
+.home-owner-host.barnes-template .home-owner-form__form[data-v-231b17b3] { display: flex; flex-direction: column; gap: 22px; margin-top: 36px; }
+@media screen and (max-width: 540px) {
+.home-owner-host.barnes-template .home-owner-form__form[data-v-231b17b3] { gap: 18px; margin-top: 28px; }
+}
+.home-owner-host.barnes-template .home-owner-form__honeypot[data-v-231b17b3] { height: 1px; left: -9999px; overflow: hidden; position: absolute; width: 1px; }
+.home-owner-host.barnes-template .home-owner-form__field[data-v-231b17b3] { display: flex; flex-direction: column; gap: 6px; }
+.home-owner-host.barnes-template .home-owner-form__input[data-v-231b17b3] { background: transparent; border-width: 0px 0px 1px; border-style: none none solid; border-color: currentcolor currentcolor rgba(30, 30, 30, 0.22); border-image: none; border-radius: 0px; color: rgb(30, 30, 30); font-family: inherit; font-size: 16px; font-weight: 300; line-height: 1.4; padding: 0px 0px 12px; transition: border-color 0.2s; width: 100%; }
+.home-owner-host.barnes-template .home-owner-form__input[data-v-231b17b3]::placeholder { color: rgba(30, 30, 30, 0.4); }
+.home-owner-host.barnes-template .home-owner-form__input[data-v-231b17b3]:focus { border-bottom-color: rgb(30, 30, 30); outline: none; }
+.home-owner-host.barnes-template .home-owner-form__submit[data-v-231b17b3] { border-radius: 4px; font-size: 16px; font-weight: 500; margin-top: 8px; min-height: 56px; }
+@media screen and (max-width: 540px) {
+.home-owner-host.barnes-template .home-owner-form__submit[data-v-231b17b3] { font-size: 15px; min-height: 48px; }
+}
+.home-owner-host.barnes-template .home-owner-form__consent[data-v-231b17b3] { align-items: flex-start; cursor: pointer; display: flex; gap: 10px; }
+.home-owner-host.barnes-template .home-owner-form__consent-input[data-v-231b17b3] { opacity: 0; pointer-events: none; position: absolute; }
+.home-owner-host.barnes-template .home-owner-form__consent-box[data-v-231b17b3] { background: transparent; border: 1px solid rgba(30, 30, 30, 0.28); border-radius: 2px; flex-shrink: 0; height: 16px; margin-top: 2px; transition: border-color 0.2s, background-color 0.2s; width: 16px; }
+.home-owner-host.barnes-template .home-owner-form__consent-input:focus-visible + .home-owner-form__consent-box[data-v-231b17b3] { outline: rgba(139, 29, 37, 0.25) solid 2px; outline-offset: 2px; }
+.home-owner-host.barnes-template .home-owner-form__consent-text[data-v-231b17b3] { color: rgba(30, 30, 30, 0.55); font-size: 13px; font-weight: 300; line-height: 1.4; }
+.home-owner-host.barnes-template .home-owner-form__consent-link[data-v-231b17b3] { color: inherit; text-decoration: underline; text-underline-offset: 2px; }
+
+
+
+
+.home-owner-host.barnes-template.owner-sale-reference-ui .home-owner-form--owner-sale .modal__content { background: rgb(255, 255, 255); border: 1px solid rgb(229, 229, 229); border-radius: 3px; box-shadow: rgba(0, 0, 0, 0.05) 0px 12px 40px; max-height: calc(100dvh - 32px); max-width: 940px; overflow: auto; width: calc(100% - 32px); }
+.home-owner-host.barnes-template.owner-sale-reference-ui .home-owner-form--owner-sale .home-owner-form__layout { display: grid; grid-template-columns: minmax(0px, 1fr) minmax(0px, 1fr); min-height: 590px; }
+.home-owner-host.barnes-template.owner-sale-reference-ui .home-owner-form--owner-sale .home-owner-form__body { background: rgb(255, 255, 255); min-width: 0px; padding: 42px 26px 30px; }
+.home-owner-host.barnes-template.owner-sale-reference-ui .home-owner-form--owner-sale .home-owner-form__hero { background: rgb(238, 230, 219); max-width: 100%; min-height: 100%; min-width: 0px; overflow: hidden; position: relative; width: 100%; }
+.home-owner-host.barnes-template.owner-sale-reference-ui .home-owner-form--owner-sale .home-owner-form__hero picture { display: block; height: 100%; }
+.home-owner-host.barnes-template.owner-sale-reference-ui .home-owner-form--owner-sale .home-owner-form__hero-image { display: block; height: 100%; inset: 0px; object-fit: cover; object-position: center top; position: absolute; width: 100%; }
+.home-owner-host.barnes-template.owner-sale-reference-ui .home-owner-form--owner-sale .home-owner-form__title { color: rgb(30, 30, 30); font-size: 34px; font-weight: 300; letter-spacing: normal; line-height: 1.1; margin: 0px 0px 16px; text-align: left; }
+.home-owner-host.barnes-template.owner-sale-reference-ui .home-owner-form--owner-sale .home-owner-form__intro { color: rgb(85, 85, 85); font-size: 22px; font-weight: 300; line-height: 28.16px; margin: 0px 0px 24px; }
+.home-owner-host.barnes-template.owner-sale-reference-ui .home-owner-form--owner-sale .home-owner-form__channels { border-bottom: 1px solid rgb(221, 221, 221); display: grid; gap: 4px; grid-template-columns: 1.1fr 1.15fr 0.7fr 0.9fr; margin-bottom: 16px; }
+.home-owner-host.barnes-template.owner-sale-reference-ui .home-owner-form--owner-sale .home-owner-form__channels button { background: rgb(255, 255, 255); border-width: 0px 0px 2px; border-style: none none solid; border-color: currentcolor currentcolor transparent; border-image: none; color: rgb(85, 85, 85); cursor: pointer; font-family: inherit; font-size: 17px; font-weight: 400; line-height: 18.7px; margin-bottom: -1px; min-height: 44px; min-width: 0px; padding: 12px 0px; }
+.home-owner-host.barnes-template.owner-sale-reference-ui .home-owner-form--owner-sale .home-owner-form__channels button[aria-pressed="true"] { border-bottom-color: var(--owner-sale-brand); color: var(--owner-sale-brand); }
+.home-owner-host.barnes-template.owner-sale-reference-ui .home-owner-form--owner-sale .home-owner-form__channels button:focus-visible { outline: 2px solid var(--owner-sale-brand); outline-offset: -2px; }
+.home-owner-host.barnes-template.owner-sale-reference-ui .home-owner-form--owner-sale .home-owner-form__field { margin: 0px; }
+.home-owner-host.barnes-template.owner-sale-reference-ui .home-owner-form--owner-sale .home-owner-form__input { background: rgb(255, 255, 255); border-width: 0px 0px 1px; border-style: none none solid; border-color: currentcolor currentcolor rgb(204, 204, 204); border-image: none; border-radius: 0px; color: rgb(30, 30, 30); font-size: 20px; font-weight: 300; height: 56px; line-height: 1.3; padding: 15px 0px 12px; width: 100%; }
+.home-owner-host.barnes-template.owner-sale-reference-ui .home-owner-form--owner-sale .home-owner-form__input::placeholder { color: rgb(118, 118, 118); opacity: 1; }
+.home-owner-host.barnes-template.owner-sale-reference-ui .home-owner-form--owner-sale .home-owner-form__submit { background: var(--owner-sale-brand); border: 1px solid var(--owner-sale-brand); border-radius: 3px; color: rgb(255, 255, 255); font-size: 17px; font-weight: 400; height: 64px; line-height: 18.7px; margin-top: 28px; width: 100%; }
+.home-owner-host.barnes-template.owner-sale-reference-ui .home-owner-form--owner-sale .home-owner-form__consent { color: rgb(102, 102, 102); font-size: 13px; font-weight: 300; line-height: 1.35; margin-top: 20px; }
+.home-owner-host.barnes-template.owner-sale-reference-ui .home-owner-form--owner-sale .modal__close { background: rgb(255, 255, 255); border-radius: 50%; color: rgb(30, 30, 30); height: 36px; right: 8px; top: 8px; width: 36px; z-index: 4; }
+@media (hover: hover) and (pointer: fine) {
+.home-owner-host.barnes-template.owner-sale-reference-ui .home-owner-form--owner-sale .home-owner-form__submit:hover { background: rgb(117, 23, 30); border-color: rgb(117, 23, 30); color: rgb(255, 255, 255); }
+}
+@media (max-width: 580px) {
+.home-owner-host.barnes-template.owner-sale-reference-ui .home-owner-form--owner-sale .modal__content { max-height: calc(100dvh - 16px); width: calc(100% - 16px); }
+.home-owner-host.barnes-template.owner-sale-reference-ui .home-owner-form--owner-sale .home-owner-form__layout { display: flex; flex-direction: column; min-height: 0px; }
+.home-owner-host.barnes-template.owner-sale-reference-ui .home-owner-form--owner-sale .home-owner-form__hero { height: 240px; max-height: none; flex-shrink: 0; min-height: 0px; order: -1; }
+.home-owner-host.barnes-template.owner-sale-reference-ui .home-owner-form--owner-sale .home-owner-form__hero picture { height: auto; }
+.home-owner-host.barnes-template.owner-sale-reference-ui .home-owner-form--owner-sale .home-owner-form__hero-image { aspect-ratio: auto; height: 240px; object-fit: cover; position: static; }
+.home-owner-host.barnes-template.owner-sale-reference-ui .home-owner-form--owner-sale .home-owner-form__body { padding: 26px 20px 28px; }
+.home-owner-host.barnes-template.owner-sale-reference-ui .home-owner-form--owner-sale :is(.home-owner-form__title, .home-owner-form__intro) { text-align: center; }
+.home-owner-host.barnes-template.owner-sale-reference-ui .home-owner-form--owner-sale .home-owner-form__title { font-size: 31px; line-height: 1.05; }
+.home-owner-host.barnes-template.owner-sale-reference-ui .home-owner-form--owner-sale .home-owner-form__intro { font-size: 15px; line-height: 19.2px; }
+.home-owner-host.barnes-template.owner-sale-reference-ui .home-owner-form--owner-sale .home-owner-form__channels button { font-size: 18px; line-height: 19.8px; }
+.home-owner-host.barnes-template.owner-sale-reference-ui .home-owner-form--owner-sale .home-owner-form__input { font-size: 17px; }
+.home-owner-host.barnes-template.owner-sale-reference-ui .home-owner-form--owner-sale .home-owner-form__submit { font-size: 18px; line-height: 19.8px; min-height: 58px; }
+}
+@media (min-width: 581px) and (max-width: 1440px) {
+.home-owner-host.barnes-template.owner-sale-reference-ui .home-owner-form--owner-sale .home-owner-form__input { font-size: 18px; }
+}
+.home-owner-host.barnes-template.owner-sale-reference-ui { --owner-sale-ink: #1e1e1e; --owner-sale-secondary: #4f4d49; --owner-sale-muted: #656462; --owner-sale-brand: #8b1d25; --owner-sale-surface: #f1f1f1; --owner-sale-border: #e4e4e4; --owner-sale-footer: #262626; color: var(--owner-sale-ink); font-family: "Tilda Sans", system-ui, sans-serif; }
+.home-owner-host.barnes-template.owner-sale-reference-ui *,.home-owner-host.barnes-template.owner-sale-reference-ui ::before,.home-owner-host.barnes-template.owner-sale-reference-ui ::after { box-sizing: border-box; }
+.home-owner-host.barnes-template.owner-sale-reference-ui :is(button, a, input, textarea):focus-visible,.home-owner-host.barnes-template.owner-sale-reference-ui .owner-sale-presentation__card:focus-visible { outline: 2px solid var(--owner-sale-brand); outline-offset: 3px; }
+@media (prefers-reduced-motion: reduce) {
+.home-owner-host.barnes-template.owner-sale-reference-ui *,.home-owner-host.barnes-template.owner-sale-reference-ui ::before,.home-owner-host.barnes-template.owner-sale-reference-ui ::after { scroll-behavior: auto !important; transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; }
+}
+.home-owner-host.barnes-template { --owner-sale-brand:#8b1d25;--owner-sale-secondary:#4f4d49;--owner-sale-border:#e4e4e4;--owner-sale-footer:#262626;--owner-sale-muted:#656462;--owner-sale-ink:#1e1e1e;--owner-sale-surface:#f1f1f1; }
+/* Use the canonical semantic grays, rather than legacy low-opacity placeholders. */
+/* Keep the footer's primary action reachable while its button is on screen. */
+
+/* Homepage quiz: new controls inherit the owner/ambassador reference palette. */
+.home-quiz-host [hidden] { display:none!important; }
+.home-owner-host.barnes-template.owner-sale-reference-ui.home-quiz-host .home-owner-form--owner-sale .modal__content {max-width:1040px;}
+.home-owner-host.barnes-template.owner-sale-reference-ui.home-quiz-host .home-owner-form--owner-sale .home-owner-form__layout {grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);min-height:680px;}
+.home-owner-host.barnes-template.owner-sale-reference-ui.home-quiz-host .home-owner-form--owner-sale .home-owner-form__body {padding:32px;}
+.home-quiz-host .home-quiz__top {margin-bottom:24px;}
+.home-quiz-host .home-quiz__eyebrow {margin:0 0 12px;font-size:12px;line-height:1.4;letter-spacing:.12em;font-weight:400;color:#656462;}
+.home-quiz-host .home-quiz__progress {margin:0 0 10px;font-size:13px;line-height:1.4;font-weight:400;color:#4f4d49;}
+.home-quiz-host .home-quiz__track {height:2px;background:#e4e4e4;}
+.home-quiz-host .home-quiz__track span {display:block;height:100%;background:#8b1d25;transition:width .2s ease;}
+.home-quiz-host .home-quiz__back,.home-quiz-host .home-quiz__skip,.home-quiz-host .home-quiz__summary button {border:0;background:transparent;color:#656462;cursor:pointer;font:400 14px/1.4 "Tilda Sans",sans-serif;padding:10px 0;min-height:44px;}
+.home-quiz-host .home-quiz__back {margin:-10px 0 12px;}
+.home-quiz-host .home-quiz__options {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;}
+.home-quiz-host .home-quiz__option {display:flex;align-items:center;text-align:left;justify-content:space-between;gap:8px;border:1px solid #b7b5b2;background:white;color:#1e1e1e;border-radius:3px;min-height:58px;padding:14px 16px;font:400 17px/1.2 "Tilda Sans",sans-serif;cursor:pointer;width:100%;}
+.home-quiz-host .home-quiz__option::after {content:'';width:14px;height:14px;border:1px solid #8b8986;border-radius:50%;flex-shrink:0;}
+.home-quiz-host .home-quiz__options .home-quiz__option:last-child:nth-child(odd) {grid-column:1/-1;}
+.home-quiz-host .home-quiz__next {width:100%;min-height:64px;margin-top:24px;border:1px solid #8b1d25;border-radius:3px;background:#8b1d25;color:white;font:400 17px/1.2 "Tilda Sans",sans-serif;cursor:pointer;padding:16px;}
+.home-quiz-host .home-quiz__next:disabled {background:#efedeb;border-color:#e4e4e4;color:#656462;cursor:default;}
+.home-quiz-host .home-quiz__skip {display:block;margin:8px auto 0;text-decoration:underline;text-underline-offset:4px;}
+.home-quiz-host .home-quiz__summary {background:#f5f3f1;border-left:2px solid #8b1d25;padding:12px 16px;margin-bottom:20px;}
+.home-owner-host.barnes-template.owner-sale-reference-ui.home-quiz-host .home-owner-form__form {margin-top:0;gap:16px;}
+.home-owner-host.barnes-template.owner-sale-reference-ui.home-quiz-host .home-owner-form__submit {margin-top:8px;}
+.home-owner-host.barnes-template.owner-sale-reference-ui.home-quiz-host .home-owner-form__consent {margin-top:0;}
+.home-owner-host.barnes-template.owner-sale-reference-ui.home-quiz-host .home-owner-form__intro {font-size:22px;line-height:1.28;}
+.home-quiz-host [data-owner-status] {font-size:14px;line-height:1.4;margin:0;color:#8b1d25;}
+@media(hover:hover){
+.home-quiz-host .home-quiz__option:hover {border-color:#8b1d25;}}
+@media(max-width:760px) and (min-width:581px){
+.home-quiz-host .home-quiz__options {grid-template-columns:1fr;}.home-owner-host.barnes-template.owner-sale-reference-ui.home-quiz-host .home-owner-form--owner-sale .home-owner-form__body{padding:26px 20px;}}
+@media(max-width:580px){
+ .home-owner-host.barnes-template.owner-sale-reference-ui.home-quiz-host .home-owner-form--owner-sale .home-owner-form__layout{min-height:0;}
+ .home-owner-host.barnes-template.owner-sale-reference-ui.home-quiz-host .home-owner-form--owner-sale .home-owner-form__body{padding:24px 20px;}
+ .home-owner-host.barnes-template.owner-sale-reference-ui.home-quiz-host .home-owner-form--owner-sale .home-owner-form__hero,.home-owner-host.barnes-template.owner-sale-reference-ui.home-quiz-host .home-owner-form--owner-sale .home-owner-form__hero-image{height:160px;}
+ .home-owner-host.barnes-template.owner-sale-reference-ui.home-quiz-host .home-owner-form--owner-sale .home-owner-form__hero-image{object-position:50% 0%;}
+ .home-owner-host.barnes-template.owner-sale-reference-ui.home-quiz-host .home-owner-form--owner-sale .home-owner-form__title{font-size:31px;line-height:1.05;text-align:left;}
+ .home-owner-host.barnes-template.owner-sale-reference-ui.home-quiz-host .home-owner-form--owner-sale .home-owner-form__intro{font-size:15px;line-height:1.4;text-align:left;margin-bottom:20px;}
+.home-quiz-host .home-quiz__top {margin-bottom:20px;}
+.home-quiz-host .home-quiz__eyebrow {font-size:12px;}
+.home-quiz-host .home-quiz__option {font-size:16px;min-height:56px;padding:12px;}
+.home-quiz-host .home-quiz__next {min-height:58px;font-size:18px;margin-top:20px;}
+.home-quiz-host .home-quiz__options {gap:8px;}
+}
+@media(max-width:360px){.home-quiz-host .home-quiz__options{grid-template-columns:1fr;}}
+
+/* Keep one dialog frame through every quiz step; only the body scrolls. */
+.home-owner-host.barnes-template.owner-sale-reference-ui.home-quiz-host .home-owner-form--owner-sale .modal__content {
+ height:min(820px,calc(100dvh - 32px));
+ overflow:clip;
+}
+.home-owner-host.barnes-template.owner-sale-reference-ui.home-quiz-host .home-owner-form--owner-sale .home-owner-form__layout {
+ height:100%;min-height:0;
+}
+.home-owner-host.barnes-template.owner-sale-reference-ui.home-quiz-host .home-owner-form--owner-sale .home-owner-form__body {
+ min-height:0;overflow-y:auto;overflow-x:hidden;scrollbar-gutter:stable;overscroll-behavior:contain;
+}
+@media(max-width:580px){
+ .home-owner-host.barnes-template.owner-sale-reference-ui.home-quiz-host .home-owner-form--owner-sale .modal__content {height:calc(100dvh - 16px);}
+ .home-owner-host.barnes-template.owner-sale-reference-ui.home-quiz-host .home-owner-form--owner-sale .home-owner-form__body {flex:1;}
+}
+
+/* Narrow quiz column: keep channel labels readable, including phone landscape. */
+@media(max-width:760px) {
+ .home-owner-host.barnes-template.owner-sale-reference-ui.home-quiz-host .home-owner-form--owner-sale .home-owner-form__channels {
+  grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 12px;border-bottom:0;margin-bottom:4px;
+ }
+ .home-owner-host.barnes-template.owner-sale-reference-ui.home-quiz-host .home-owner-form--owner-sale .home-owner-form__channels button {
+  min-height:46px;border:1px solid #8b8986;border-radius:3px;margin:0;padding:10px 8px;white-space:nowrap;
+ }
+ .home-owner-host.barnes-template.owner-sale-reference-ui.home-quiz-host .home-owner-form--owner-sale .home-owner-form__channels button[aria-pressed=true] {
+  border-color:#8b1d25;background:#f9f3f3;
+ }
+}
+@media(max-width:580px) and (max-height:480px) {
+ .home-owner-host.barnes-template.owner-sale-reference-ui.home-quiz-host .home-owner-form--owner-sale .home-owner-form__hero {display:none;}
+}
+
+/* One geometry/type contract per button role. Preserve fill/outline/inverse colors. */
+.home-owner-host.barnes-template.owner-sale-reference-ui.home-quiz-host :is(.home-quiz__next,.home-owner-form__submit) {
+ border-radius:1px!important;font-size:17px!important;font-weight:400!important;
+ line-height:1.1!important;letter-spacing:0!important;
+ box-sizing:border-box;height:64px!important;min-height:64px!important;
+ padding:0 36px!important;
+}
+.home-owner-host.barnes-template.owner-sale-reference-ui.home-quiz-host .home-owner-form__channels {
+ border-bottom:0;margin-bottom:16px;gap:8px;grid-template-columns:repeat(4,minmax(0,1fr));
+}
+.home-owner-host.barnes-template.owner-sale-reference-ui.home-quiz-host .home-owner-form__channels button {
+ border:1px solid #8b8986;border-radius:1px!important;margin:0;
+ padding:10px 8px;min-height:46px;font-weight:400!important;
+ font-size:17px!important;line-height:1.1!important;white-space:nowrap;
+}
+.home-owner-host.barnes-template.owner-sale-reference-ui.home-quiz-host .home-owner-form__channels button[aria-pressed=true] {
+ border-color:#8b1d25;background:#f9f3f3;color:#8b1d25;
+}
+@media(min-width:1441px) {
+ .home-owner-host.barnes-template.owner-sale-reference-ui.home-quiz-host :is(.home-quiz__next,.home-owner-form__submit) {font-size:19px!important;padding-inline:47px!important;}
+}
+@media(max-width:1024px),(max-height:650px) {
+ .home-owner-host.barnes-template.owner-sale-reference-ui.home-quiz-host .home-owner-form__channels {grid-template-columns:repeat(2,minmax(0,1fr));}
+}
+@media(max-width:540px) {
+ .home-owner-host.barnes-template.owner-sale-reference-ui.home-quiz-host :is(.home-quiz__next,.home-owner-form__submit) {font-size:18px!important;height:58px!important;min-height:58px!important;padding-inline:24px!important;}
+ .home-owner-host.barnes-template.owner-sale-reference-ui.home-quiz-host .home-owner-form__channels button {font-size:18px!important;}
+}
+/* Compact choices retain a smaller footprint, sharing radius and regular weight. */
+
+/* Rectangular quiz choices use the same 1px corner as all CTA buttons. */
+.home-owner-host.barnes-template.owner-sale-reference-ui.home-quiz-host :is(.home-quiz__option,.home-quiz__back) {border-radius:1px!important;}
+
+/* Shared expert dialog, based on the approved homepage quiz geometry. */
+@layer barn-node-spacing {
+ html body[data-node-shell] .node-expert-dialog {position:fixed!important;inset:0!important;z-index:12000!important;box-sizing:border-box!important;display:grid!important;place-items:center!important;width:100%!important;height:100dvh!important;min-height:0!important;max-height:none!important;margin:0!important;padding:16px!important;overflow:hidden!important;background:rgba(0,0,0,.6)!important;color:#1e1e1e!important;font:400 16px/1.4 'Tilda Sans','Tilda Sans Fallback',system-ui,sans-serif!important;text-align:left!important;}
+ html body[data-node-shell] .node-expert-dialog[hidden],html body[data-node-shell] .node-expert-dialog [hidden][hidden][hidden] {display:none!important;}
+ html body[data-node-shell] .node-expert-dialog>.vfm__overlay {display:none!important;}
+ html body[data-node-shell] .node-expert-dialog :is(.node-dialog__content,.node-dialog__layout,.node-dialog__body,.node-dialog__hero,.node-dialog__field,.node-dialog__input,.node-dialog__option,.node-dialog__next,.node-dialog__submit) {box-sizing:border-box!important;}
+ html body[data-node-shell] .node-expert-dialog .node-dialog__content {position:relative!important;display:block!important;inset:auto!important;width:min(1040px,100%)!important;max-width:1040px!important;height:min(820px,calc(100dvh - 32px))!important;min-height:0!important;max-height:calc(100dvh - 32px)!important;margin:0!important;padding:0!important;overflow:clip!important;background:#fff!important;border:1px solid #e5e5e5!important;border-radius:1px!important;box-shadow:0 12px 40px rgb(0 0 0 / 5%)!important;transform:none!important;}
+ html body[data-node-shell] .node-expert-dialog .node-dialog__layout {display:grid!important;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr)!important;gap:0!important;width:100%!important;height:100%!important;min-height:0!important;}
+ html body[data-node-shell] .node-expert-dialog .node-dialog__body {position:relative!important;display:block!important;min-width:0!important;min-height:0!important;max-height:none!important;width:auto!important;height:auto!important;overflow-y:auto!important;overflow-x:hidden!important;overscroll-behavior:contain!important;scrollbar-gutter:stable!important;padding:32px!important;margin:0!important;background:#fff!important;order:0!important;}
+ html body[data-node-shell] .node-expert-dialog .node-dialog__hero {position:relative!important;inset:auto!important;display:block!important;width:auto!important;min-width:0!important;height:100%!important;min-height:0!important;max-height:none!important;overflow:hidden!important;order:0!important;}
+ html body[data-node-shell] .node-expert-dialog .node-dialog__photo {position:absolute!important;inset:0!important;display:block!important;width:100%!important;max-width:none!important;height:100%!important;object-fit:var(--node-dialog-photo-fit,cover)!important;object-position:var(--node-dialog-photo-position,center top)!important;transform:none!important;}
+ html body[data-node-shell] .node-expert-dialog .node-dialog__close {position:absolute!important;inset:8px 8px auto auto!important;z-index:5!important;display:grid!important;place-items:center!important;width:44px!important;height:44px!important;min-height:44px!important;margin:0!important;padding:10px!important;border:0!important;border-radius:50%!important;background:#fff!important;color:#1e1e1e!important;cursor:pointer!important;transform:none!important;}
+ html body[data-node-shell] .node-expert-dialog .node-dialog__close svg {display:block!important;width:24px!important;height:24px!important;}
+ html body[data-node-shell] .node-expert-dialog .node-dialog__title {margin:0 0 16px!important;padding:0!important;text-align:left!important;font-size:34px!important;font-weight:300!important;line-height:1.1!important;letter-spacing:normal!important;text-transform:none!important;color:#1e1e1e!important;}
+ html body[data-node-shell] .node-expert-dialog .node-dialog__intro {margin:0 0 24px!important;padding:0!important;text-align:left!important;font-size:22px!important;font-weight:300!important;line-height:1.28!important;letter-spacing:normal!important;color:#4f4d49!important;}
+ html body[data-node-shell] .node-expert-dialog .node-dialog__top {margin:0 0 24px!important;}
+ html body[data-node-shell] .node-expert-dialog .node-dialog__eyebrow {margin:0 0 12px!important;font:400 12px/1.4 'Tilda Sans',sans-serif!important;letter-spacing:.12em!important;color:#656462!important;}
+ html body[data-node-shell] .node-expert-dialog .node-dialog__progress {margin:0 0 10px!important;font-size:13px!important;font-weight:400!important;line-height:1.4!important;color:#4f4d49!important;}
+ html body[data-node-shell] .node-expert-dialog .node-dialog__track {height:2px!important;background:#e4e4e4!important;}
+ html body[data-node-shell] .node-expert-dialog .node-dialog__track span {display:block!important;height:100%!important;background:#8b1d25!important;}
+ html body[data-node-shell] .node-expert-dialog :is(.node-dialog__back,.node-dialog__skip) {border:0!important;border-radius:1px!important;background:transparent!important;color:#656462!important;cursor:pointer!important;font:400 14px/1.4 'Tilda Sans',sans-serif!important;padding:10px 0!important;min-height:44px!important;}
+ html body[data-node-shell] .node-expert-dialog .node-dialog__back {margin:-10px 0 12px!important;}
+ html body[data-node-shell] .node-expert-dialog .node-dialog__skip {display:block!important;margin:8px auto 0!important;text-decoration:underline!important;text-underline-offset:4px!important;}
+ html body[data-node-shell] .node-expert-dialog .node-dialog__panel {margin:0!important;padding:0!important;}
+ html body[data-node-shell] .node-expert-dialog .node-dialog__options {display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:10px!important;}
+ html body[data-node-shell] .node-expert-dialog .node-dialog__option {display:flex!important;align-items:center!important;justify-content:space-between!important;text-align:left!important;gap:8px!important;border:1px solid #b7b5b2!important;background:#fff!important;color:#1e1e1e!important;border-radius:1px!important;min-height:58px!important;padding:14px 16px!important;font:400 17px/1.2 'Tilda Sans',sans-serif!important;cursor:pointer!important;width:100%!important;}
+ html body[data-node-shell] .node-expert-dialog .node-dialog__option::after {content:""!important;display:block!important;width:14px!important;height:14px!important;border:1px solid #8b8986!important;border-radius:50%!important;flex:0 0 14px!important;}
+ html body[data-node-shell] .node-expert-dialog .node-dialog__options .node-dialog__option:last-child:nth-child(2n+1) {grid-column:1/-1!important;}
+ html body[data-node-shell] .node-expert-dialog :is(.node-dialog__next,.node-dialog__submit) {display:flex!important;align-items:center!important;justify-content:center!important;width:100%!important;height:64px!important;min-height:64px!important;margin:24px 0 0!important;border:1px solid #8b1d25!important;border-radius:1px!important;background:#8b1d25!important;color:#fff!important;font:400 17px/1.1 'Tilda Sans',sans-serif!important;letter-spacing:normal!important;text-transform:none!important;cursor:pointer!important;padding:0 36px!important;}
+ html body[data-node-shell] .node-expert-dialog .node-dialog__next:disabled {background:#efedeb!important;border-color:#e4e4e4!important;color:#656462!important;cursor:default!important;}
+ html body[data-node-shell] .node-expert-dialog .node-dialog__summary {border-left:2px solid #8b1d25!important;padding:12px 16px!important;margin:0 0 20px!important;background:#f5f3f1!important;}
+ html body[data-node-shell] .node-expert-dialog .node-dialog__form {display:flex!important;flex-direction:column!important;gap:14px!important;width:100%!important;max-width:none!important;margin:0!important;}
+ html body[data-node-shell] .node-expert-dialog .node-dialog__channels {display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:8px!important;margin:0!important;}
+ html body[data-node-shell] .node-expert-dialog .node-dialog__channels button {display:flex!important;align-items:center!important;justify-content:center!important;border:1px solid #b7b5b2!important;border-radius:1px!important;background:#fff!important;color:#4f4d49!important;min-height:46px!important;margin:0!important;padding:10px 8px!important;font:400 17px/1.1 'Tilda Sans',sans-serif!important;cursor:pointer!important;}
+ html body[data-node-shell] .node-expert-dialog .node-dialog__channels button[aria-pressed=true] {border-color:#8b1d25!important;color:#8b1d25!important;background:#f9f3f3!important;}
+ html body[data-node-shell] .node-expert-dialog .node-dialog__field {display:block!important;margin:0!important;padding:0!important;}
+ html body[data-node-shell] .node-expert-dialog .node-dialog__consent {display:flex!important;align-items:flex-start!important;gap:10px!important;margin:0!important;font:300 13px/1.4 'Tilda Sans',sans-serif!important;color:#656462!important;}
+ html body[data-node-shell] .node-expert-dialog .node-dialog__consent-input {position:absolute!important;width:1px!important;height:1px!important;opacity:0!important;margin:0!important;}
+ html body[data-node-shell] .node-expert-dialog .node-dialog__consent-box {position:relative!important;display:block!important;flex:0 0 18px!important;width:18px!important;height:18px!important;border:1px solid #8b8986!important;border-radius:0!important;background:#fff!important;margin:0!important;}
+ html body[data-node-shell] .node-expert-dialog .node-dialog__consent-box::after {content:""!important;position:absolute!important;display:none!important;left:5px!important;top:2px!important;width:5px!important;height:9px!important;border:solid #fff!important;border-width:0 2px 2px 0!important;transform:rotate(45deg)!important;}
+ html body[data-node-shell] .node-expert-dialog .node-dialog__consent-text {font:300 13px/1.4 'Tilda Sans',sans-serif!important;color:#656462!important;}
+ html body[data-node-shell] .node-expert-dialog .node-dialog__consent a {color:inherit!important;text-decoration:underline!important;}
+ html body[data-node-shell] .node-expert-dialog .node-dialog__status {font:400 14px/1.4 'Tilda Sans',sans-serif!important;color:#8b1d25!important;margin:0!important;}
+ html body[data-node-shell] .node-expert-dialog :is(button,input,select,textarea,a):focus-visible {outline:2px solid #8b1d25!important;outline-offset:3px!important;}
+ html body[data-node-shell] .node-expert-dialog .node-dialog__consent-input:focus-visible+.node-dialog__consent-box {outline:2px solid #8b1d25!important;outline-offset:3px!important;}
+ @media(max-width:580px){
+  html body[data-node-shell] .node-expert-dialog {padding:8px!important;}
+  html body[data-node-shell] .node-expert-dialog .node-dialog__content {width:100%!important;height:calc(100dvh - 16px)!important;max-height:calc(100dvh - 16px)!important;}
+  html body[data-node-shell] .node-expert-dialog .node-dialog__layout {display:flex!important;flex-direction:column!important;}
+  html body[data-node-shell] .node-expert-dialog .node-dialog__body {flex:1 1 auto!important;padding:24px 20px!important;}
+  html body[data-node-shell] .node-expert-dialog .node-dialog__hero {flex:none!important;min-height:0!important;height:auto!important;aspect-ratio:1700 / 889!important;order:-1!important;}
+  html body[data-node-shell] .node-expert-dialog .node-dialog__photo {height:100%!important;object-fit:cover!important;object-position:var(--node-dialog-mobile-photo-position,center top)!important;}
+  html body[data-node-shell] .node-expert-dialog .node-dialog__title {font-size:31px!important;line-height:1.05!important;}
+  html body[data-node-shell] .node-expert-dialog .node-dialog__intro {font-size:15px!important;line-height:1.4!important;margin-bottom:20px!important;}
+  html body[data-node-shell] .node-expert-dialog .node-dialog__top {margin-bottom:20px!important;}
+  html body[data-node-shell] .node-expert-dialog .node-dialog__option {min-height:56px!important;padding:12px!important;font-size:16px!important;}
+  html body[data-node-shell] .node-expert-dialog .node-dialog__options {gap:8px!important;}
+  html body[data-node-shell] .node-expert-dialog :is(.node-dialog__next,.node-dialog__submit) {height:58px!important;min-height:58px!important;margin-top:20px!important;font-size:18px!important;padding-inline:24px!important;}
+  html body[data-node-shell] .node-expert-dialog .node-dialog__input {font-size:17px!important;}
+ }
+ @media(max-width:580px) and (max-height:480px){html body[data-node-shell] .node-expert-dialog .node-dialog__hero{display:none!important;}}
+ @media(prefers-reduced-motion:reduce){html body[data-node-shell] .node-expert-dialog *{transition:none!important;scroll-behavior:auto!important;}}
+}
+@layer barn-node-spacing {
+ /* Explicit grid tracks prevent legacy flex alignment from shrinking different dialogs. */
+ html body[data-node-shell] .node-expert-dialog {width:100vw!important;grid-template-columns:minmax(0,1fr)!important;grid-template-rows:minmax(0,1fr)!important;justify-content:stretch!important;align-content:stretch!important;}
+ html body[data-node-shell] .node-expert-dialog .node-dialog__content {min-width:0!important;}
+ html body[data-node-shell] .node-expert-dialog :is(.node-dialog__content,.node-dialog__layout,.node-dialog__body,.node-dialog__hero,.node-dialog__close) {transition:none!important;animation:none!important;}
+ html body[data-node-shell] .node-expert-dialog .node-dialog__hero {background-color:#111318!important;}
+ html body[data-node-shell] .node-expert-dialog .node-dialog__channels {border:0!important;padding:0!important;color:#1e1e1e!important;}
+ html body[data-node-shell] .node-expert-dialog :is(.node-dialog__option,.node-dialog__channels button) {min-width:0!important;white-space:normal!important;overflow-wrap:anywhere!important;}
+}
+
+/* Generated by sync-node-footer.cjs from approved homepage. */
+@layer barn-node-spacing {
+}
+
+/* Shared page navigation; deliberately outside the header and normal flow. */
+/* Keep the original footprint so neither hero content nor the header moves. */
+
+/* Geometry, colors and markup come from the original css/source.css modal contract. */
+
+/* Dropdown markup/geometry follow front.barnes.vsavr.ru's catalog quick filters. */
+
+/* Native checkbox semantics; BARNES inline-filter typography and wine state. */
+/* Account for text centering inside different-height controls, not only grid-gap. */
