@@ -3,12 +3,12 @@
   document.body.classList.add('barnes-header-template');
   var ownerHeaderStyles = document.createElement('link');
   ownerHeaderStyles.rel = 'stylesheet';
-  ownerHeaderStyles.href = 'css/owner-header.css?v=69dfdda513c4';
+  ownerHeaderStyles.href = 'css/owner-header.css?v=b89b26e82c7f';
 
   if (!document.querySelector('link[data-kurortnaya-ui-kit]')) {
     var stylesheet = document.createElement('link');
     stylesheet.rel = 'stylesheet';
-    stylesheet.href = 'css/ui-kit.css?v=69dfdda513c4';
+    stylesheet.href = 'css/ui-kit.css?v=b89b26e82c7f';
     stylesheet.dataset.kurortnayaUiKit = 'true';
     document.head.appendChild(stylesheet);
   }
@@ -16,7 +16,7 @@
   if (!document.querySelector('link[data-kurortnaya-listing-mode]')) {
     var listingStylesheet = document.createElement('link');
     listingStylesheet.rel = 'stylesheet';
-    listingStylesheet.href = 'css/listing-mode.css?v=69dfdda513c4';
+    listingStylesheet.href = 'css/listing-mode.css?v=b89b26e82c7f';
     listingStylesheet.dataset.kurortnayaListingMode = 'true';
     document.head.appendChild(listingStylesheet);
   }
@@ -24,7 +24,7 @@
   if (!document.querySelector('link[data-kurortnaya-start-sales]')) {
     var startSalesStylesheet = document.createElement('link');
     startSalesStylesheet.rel = 'stylesheet';
-    startSalesStylesheet.href = 'css/start-sales-cards.css?v=69dfdda513c4';
+    startSalesStylesheet.href = 'css/start-sales-cards.css?v=b89b26e82c7f';
     startSalesStylesheet.dataset.kurortnayaStartSales = 'true';
     document.head.appendChild(startSalesStylesheet);
   }

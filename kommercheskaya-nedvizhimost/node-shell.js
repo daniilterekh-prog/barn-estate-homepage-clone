@@ -54,17 +54,33 @@
  }
 
  /* COMMON CATALOG LINKS LOADER */
- const linksScript=document.createElement('script');linksScript.src=new URL('node-catalog-links.js?v=8ec4ae29d75f',document.currentScript.src).href;document.body.append(linksScript);
+ const linksScript=document.createElement('script');linksScript.src=new URL('node-catalog-links.js?v=125d97c136c8',document.currentScript.src).href;document.body.append(linksScript);
  /* COMMON CATALOG LINKS LOADER END */
 
  /* COMMON NEWS LOADER */
- const newsScript=document.createElement('script');newsScript.src=new URL('node-news.js?v=8ec4ae29d75f',document.currentScript.src).href;document.body.append(newsScript);
+ const newsScript=document.createElement('script');newsScript.src=new URL('node-news.js?v=125d97c136c8',document.currentScript.src).href;document.body.append(newsScript);
  /* COMMON NEWS LOADER END */
  /* COMMON EXPERT DIALOG LOADER */
- const expertDialogScript=document.createElement('script');expertDialogScript.src=new URL('node-expert-dialog.js?v=8ec4ae29d75f',document.currentScript.src).href;document.body.append(expertDialogScript);
+ const expertDialogScript=document.createElement('script');expertDialogScript.src=new URL('node-expert-dialog.js?v=125d97c136c8',document.currentScript.src).href;document.body.append(expertDialogScript);
  /* COMMON EXPERT DIALOG LOADER END */
  /* COMMON FOOTER LOADER */
- const footerScript=document.createElement('script');footerScript.src=new URL('node-footer.js?v=8ec4ae29d75f',document.currentScript.src).href;document.body.append(footerScript);
+ const footerScript=document.createElement('script');footerScript.src=new URL('node-footer.js?v=125d97c136c8',document.currentScript.src).href;document.body.append(footerScript);
  /* COMMON FOOTER LOADER END */
+ // Keep only complete pills from the first two mobile rows, including keyboard navigation.
+ const heroPills=document.querySelector('.catalog-quick-links--hero .catalog-quick-links__list');
+ if(heroPills){
+  let pillsQueued=false,lastPillsWidth=-1;
+  function limitHeroPills(){
+   pillsQueued=false;
+   for(const item of heroPills.children)item.removeAttribute('data-node-hero-overflow');
+   if(!matchMedia('(max-width:767px)').matches)return;
+   const items=[...heroPills.children].filter(item=>item.getClientRects().length),rows=[];
+   for(const item of items){const top=item.offsetTop;if(!rows.some(row=>Math.abs(row-top)<2))rows.push(top);}
+   for(const item of items)if(rows.findIndex(row=>Math.abs(row-item.offsetTop)<2)>1)item.setAttribute('data-node-hero-overflow','');
+  }
+  function queueHeroPills(){if(!pillsQueued){pillsQueued=true;requestAnimationFrame(limitHeroPills);}}
+  new ResizeObserver(()=>{const width=heroPills.clientWidth;if(width!==lastPillsWidth){lastPillsWidth=width;queueHeroPills();}}).observe(heroPills);
+  addEventListener('resize',queueHeroPills,{passive:true});document.fonts?.ready.then(queueHeroPills);queueHeroPills();
+ }
  sync();
 })();
