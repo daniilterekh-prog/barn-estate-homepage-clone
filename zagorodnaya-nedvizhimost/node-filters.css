@@ -978,3 +978,10 @@ html body[data-node-shell] .catalog-map-browser .catalog-map-market[hidden]{disp
   html body[data-node-shell] .country-map-expanded .catalog-projects-map__panel:has(.node-country-map-controls) {width:100%!important;}
  }
 }
+/* Give the desktop listing sort its own room inside the right page gutter. */
+@layer barn-node-filters {
+ @media(min-width:1024px){
+  html body[data-node-shell] .catalog-results-toolbar>.catalog-result-summary .catalog-grid__sort {width:240px!important;flex:0 0 240px!important;margin-inline-end:16px!important;}
+  html body[data-node-shell] .catalog-results-toolbar>.catalog-result-summary .catalog-grid__sort :is(.country-sort-trigger,.resort-sort-trigger) {box-sizing:border-box!important;width:100%!important;min-width:0!important;padding:0 24px 0 0!important;}
+ }
+}

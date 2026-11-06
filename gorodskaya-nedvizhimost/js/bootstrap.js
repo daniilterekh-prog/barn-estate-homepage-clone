@@ -58,7 +58,7 @@
     document.dispatchEvent(new CustomEvent('barnes:node-ready'));
   }
   if(matchMedia('(max-width:540px)').matches&&!document.documentElement.dataset.cityMobile){
-    fetch('mobile.html?v=node-maps-20261106').then(r=>{if(!r.ok)throw Error('mobile snapshot');return r.text()}).then(html=>{
+    fetch('mobile.html?v=node-maps-20261106', { cache:'no-store' }).then(r=>{if(!r.ok)throw Error('mobile snapshot');return r.text()}).then(html=>{
       document.open();document.write(html);document.close();
     }).catch(start);
   }else start();
