@@ -25,6 +25,18 @@
  function layout(){if(small.matches){secondary.insertBefore(search,details);summary.after(collections);}else{primary.append(search);toolbar.after(collections);}input.placeholder=small.matches?'Название или ID':'Название, адрес или ID';}
  function patch(value){window.BarnesFilters.patch(value);}
  const list=grid.querySelector('.catalog-grid__list'), captured=[...list.querySelectorAll(':scope > .catalog-grid__item')];
+ const originalMore=grid.querySelector('.catalog-grid__more'),more=document.createElement('a');
+ for(const attr of originalMore.attributes)if(attr.name!=='type')more.setAttribute(attr.name,attr.value);
+ more.append(...originalMore.childNodes);originalMore.replaceWith(more);
+ function moreURL(value){
+  const url=new URL('../katalog-nedvizhimosti/',location.href);url.searchParams.set('direction','commercial');url.searchParams.set('deal',value.dealType==='rent'?'rent':'buy');
+  for(const key of ['priceMin','priceMax','areaMin','areaMax','sort'])if(value[key])url.searchParams.set(key,value[key]);
+  if(value.query)url.searchParams.set('q',value.query);
+  for(const key of ['priceRanges','brandFlags'])for(const v of value[key]||[])url.searchParams.append(key,v);
+  for(const type of value.propertyTypes||[])url.searchParams.append('propertyTypes',({ofice:'office',stock:'warehouse','free-appointment':'free-purpose'})[type]||type);
+  return url.href;
+ }
+
  /* COMMERCIAL METADATA START */const commercialMetadata={"584862":{"deal":"rent","propertyTypes":["free-purpose"],"brandFlags":[],"directions":["Москва"]},"587810":{"deal":"rent","propertyTypes":["office"],"brandFlags":[],"directions":["Москва"]},"593724":{"deal":"rent","propertyTypes":["office"],"brandFlags":[],"directions":["Москва"]},"595200":{"deal":"rent","propertyTypes":["office"],"brandFlags":[],"directions":["Москва"]}};/* COMMERCIAL METADATA END */
  const numeric=text=>Number(String(text).replace(/[^\d,.-]/g,'').replace(',','.'));
  const records=captured.map((item,index)=>{const name=item.querySelector('.apartment-card__name')?.textContent.trim()||'',text=item.textContent.toLocaleLowerCase('ru');const stat=[...item.querySelectorAll('.apartment-card__stat')].find(e=>e.querySelector('small')?.textContent.includes('Площадь'));const search=(name+' '+(item.querySelector('.apartment-card__address')?.textContent||'')+' '+(item.querySelector('.apartment-card__lotid')?.textContent||'')).toLocaleLowerCase('ru');const metadata=commercialMetadata[(item.querySelector('.apartment-card__lotid')?.textContent||'').replace(/\D/g,'')];return{item,index,name,text,search,metadata,deal:metadata?.deal==='rent'?'rent':metadata?.deal==='buy'?'purchase':/^Аренда|^Сда[её]тся/i.test(name)?'rent':/^Продажа/i.test(name)?'purchase':null,price:numeric(item.querySelector('.apartment-card__price')?.textContent||''),area:numeric(stat?.querySelector('b')?.textContent||'')};});
@@ -41,7 +53,7 @@
    r.match=show;r.item.hidden=!show;if(show)count++;
   }
   const sort=grid.querySelector('.catalog-grid__sort select').value;const ordered=[...records].sort((a,b)=>a.match!==b.match?Number(b.match)-Number(a.match):sort==='price_asc'?a.price-b.price:sort==='price_desc'?b.price-a.price:sort==='square_asc'?a.area-b.area:sort==='square_desc'?b.area-a.area:a.index-b.index);for(const r of ordered)list.append(r.item);
-  const countNode=summary.querySelector('.catalog-result-count');countNode.textContent=count+' '+(count%100>=11&&count%100<=14?'объектов':count%10===1?'объект':count%10>=2&&count%10<=4?'объекта':'объектов');empty.hidden=!!count;const footer=grid.querySelector('.catalog-grid__footer');if(footer)footer.hidden=count<=5;
+  const countNode=summary.querySelector('.catalog-result-count');countNode.textContent=count+' '+(count%100>=11&&count%100<=14?'объектов':count%10===1?'объект':count%10>=2&&count%10<=4?'объекта':'объектов');empty.hidden=!!count;const footer=grid.querySelector('.catalog-grid__footer');if(footer)footer.hidden=!count;more.href=moreURL(value);
  }
  function sync(){
   const value=window.BarnesFilters.getState(),groups=[];input.value=value.query||'';const sortSelect=grid.querySelector('.catalog-grid__sort select');if(sortSelect.value!==(value.sort||'relevance')){sortSelect.value=value.sort||'relevance';sortSelect.dispatchEvent(new Event('change',{bubbles:true}));}filterRecords(value);

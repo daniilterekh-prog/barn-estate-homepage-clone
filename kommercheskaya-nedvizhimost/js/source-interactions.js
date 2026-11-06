@@ -348,9 +348,6 @@
     cards.forEach(card => { card.hidden = query && !card.textContent.toLowerCase().includes(query); });
     scrollToSection('.catalog-grid');
   });
-  one('.catalog-grid__more')?.addEventListener('click', () => {
-    location.href = 'https://front.barnes.vsavr.ru/kommercheskaya-nedvizhimost/?page=2';
-  });
 
   function bindFilters(root) {
     if (root.classList.contains('hero-filter-modal')) {
@@ -406,7 +403,7 @@
   const selectionScript = document.createElement('script');
   selectionScript.src = 'js/selection-carousel.js?v=node-recommendations-20261105';
   document.body.append(selectionScript);
-  const nodeSync=document.createElement('script');nodeSync.src='js/reference-sync.js?v=20261105-node-filters-2';document.body.append(nodeSync);
+  const nodeSync=document.createElement('script');nodeSync.src='js/reference-sync.js?v=20261106-commercial-more-1';document.body.append(nodeSync);
 
   const slider = one('.news-section .splide__list');
   const slides = slider ? all('.splide__slide', slider) : [];

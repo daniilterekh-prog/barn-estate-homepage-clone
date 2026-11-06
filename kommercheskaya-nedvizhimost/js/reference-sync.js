@@ -113,7 +113,7 @@
     svg.setAttribute('viewBox','0 0 24 24');svg.setAttribute('stroke','none');svg.setAttribute('aria-hidden','true');svg.innerHTML=phoneArtwork;
   });
   await styles('css/home-kit.css');
-  await load('js/catalog-filters.js?v=20261105-node-filters-2');
+  await load('js/catalog-filters.js?v=20261106-commercial-more-1');
   await styles('css/catalog-filters.css?v=e725d8c23703');
   await styles('css/commercial-filter-layout.css?v=01ab9832829e');
   document.body.dataset.commercialHomeKit='1.0.0';
