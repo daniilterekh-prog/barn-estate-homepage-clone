@@ -70,7 +70,7 @@
   summary.innerHTML = '<p class="catalog-result-count" role="status" aria-live="polite"></p><div class="catalog-result-actions"><button class="catalog-map-trigger" type="button" aria-haspopup="dialog"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 6 6-3 6 3 6-3v15l-6 3-6-3-6 3V6Z M9 3v15 M15 6v15"/></svg><span>На карте</span></button></div>';
   summary.querySelector('.catalog-result-actions').append(sort);
   toolbar.after(collections, summary);
-  summary.querySelector('.catalog-map-trigger').addEventListener('click', () => window.countryMapEnter?.());
+  summary.querySelector('.catalog-map-trigger').addEventListener('click', event => window.countryMapEnter?.(event.currentTarget));
   const sortButton = sort.querySelector('.country-sort-trigger');
   if (sortButton) sortButton.setAttribute('aria-label', `Сортировка: ${sortButton.textContent}`);
   const badge = document.createElement('span');

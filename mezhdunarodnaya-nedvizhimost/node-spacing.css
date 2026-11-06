@@ -7,7 +7,7 @@
  }
  @media(max-width:1024px){html body[data-node-shell]{--node-brow-gap:12px;}}
  @media(max-width:540px){html body[data-node-shell]{--node-section-space:48px;--node-heading-content:28px;--node-copy-gap:16px;}}
- html body[data-node-shell] :is(.catalog-best-offers,.catalog-map,.catalog-grid,.catalog-intro,.departments-section,.news-section,.catalog-seo-links,.catalog-faq,.catalog-contact) {
+ html body[data-node-shell] :is(.catalog-best-offers,.catalog-map,.catalog-grid:not(.node-map-listing),.catalog-intro,.departments-section,.news-section,.catalog-seo-links,.catalog-faq,.catalog-contact) {
   padding-block:var(--node-section-space)!important;margin-block:0!important;
  }
  html body[data-node-shell] :is(.catalog-section-eyebrow,.catalog-intro__eyebrow,.news-section__eyebrow) {

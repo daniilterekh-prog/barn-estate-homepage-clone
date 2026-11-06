@@ -937,3 +937,44 @@ html body[data-node-shell] .catalog-map-browser .catalog-map-market[hidden]{disp
 @layer barn-node-filters {
  html body[data-node-shell] .catalog-map-browser [data-node-map-mode][hidden] {display:none!important;}
 }
+/* Map shell follows the Resort overlay; filter captions share the same left edge. */
+@layer barn-node-filters {
+ html body[data-node-shell] :is(.map-browser,.country-map-expanded) .node-map-brands-hidden {display:none!important;}
+ html body[data-node-shell] .catalog-map-browser .map-browser__filters :is(.catalog-map-context,.map-browser__reset) {padding-left:0!important;text-align:left!important;}
+ html body[data-node-shell] .catalog-map-browser .map-browser__filters :is(select,.resort-select-trigger,.node-filter-select-trigger) {padding-left:0!important;text-align:left!important;}
+ html body[data-node-shell] .catalog-map-browser .map-browser__search {padding-left:0!important;}
+ html body[data-node-shell] .node-map-listing.catalog-grid {display:block!important;flex:1!important;min-height:0!important;width:100%!important;margin:0!important;padding:0 20px 20px!important;overflow-y:auto!important;overscroll-behavior:contain;background:#fff!important;}
+ html body[data-node-shell] .node-map-listing .map-browser__card {padding:0!important;margin:0 0 24px!important;border:0!important;}
+ html body[data-node-shell] .node-map-listing .apartment-card {width:100%!important;min-width:0!important;height:auto!important;}
+ html body[data-node-shell] .node-map-listing .apartment-card__image {aspect-ratio:4/3!important;width:100%!important;object-fit:cover!important;}
+ html body[data-node-shell] .node-map-listing .apartment-card__media {aspect-ratio:4/3!important;width:100%!important;}
+ html body[data-node-shell] .node-map-listing .apartment-card__name {white-space:normal!important;}
+ html body[data-node-shell] .country-map-expanded.country-map-fallback {inset:0!important;width:100%!important;height:100dvh!important;z-index:10000!important;}
+ html body[data-node-shell] .country-map-expanded .catalog-projects-map__panel {display:flex!important;flex-direction:column!important;inset:0 auto 0 0!important;width:min(420px,100%)!important;height:100%!important;max-height:none!important;padding:0!important;overflow:hidden!important;background:#fff!important;}
+ html body[data-node-shell] .country-map-expanded .catalog-projects-map__panel-title {flex-shrink:0!important;margin:0!important;padding:20px 20px 12px!important;font:500 18px/1.3 'Tilda Sans',sans-serif!important;}
+ html body[data-node-shell] .country-map-expanded .catalog-projects-map__panel-exit {display:none!important;}
+ html body[data-node-shell] .resort-filters.hero-filter-modal {z-index:11000!important;}
+ @media(max-width:540px){
+  html body[data-node-shell] .node-map-listing.catalog-grid {padding:0 16px 16px!important;}
+  html body[data-node-shell] .country-map-expanded .catalog-projects-map__panel {inset:auto 0 0!important;width:100%!important;height:auto!important;max-height:85dvh!important;padding-bottom:env(safe-area-inset-bottom)!important;}
+  html body[data-node-shell] .country-map-expanded .catalog-projects-map__panel--expanded {height:85dvh!important;}
+  html body[data-node-shell] .country-map-expanded .catalog-projects-map__panel-title {padding:8px 16px 12px!important;}
+  html body[data-node-shell] .country-map-expanded .catalog-projects-map__panel:not(.catalog-projects-map__panel--expanded) :is(.catalog-projects-map__panel-title,.node-map-listing,.map-browser__filters) {display:none!important;}
+ }
+}
+@layer barn-node-filters {
+ html body[data-node-shell] .country-map-expanded .catalog-projects-map__panel-header {padding:0!important;margin:0!important;flex-shrink:0!important;}
+ html body[data-node-shell] .country-map-expanded .catalog-projects-map__exit {position:absolute!important;top:20px!important;right:20px!important;width:44px!important;height:44px!important;display:grid!important;place-items:center!important;border:1px solid #dedede!important;background:#fff!important;}
+ html body[data-node-shell] .node-country-map-controls .map-browser__search-row {margin:0 20px 16px!important;}
+ @media(max-width:540px){
+  html body[data-node-shell] .country-map-expanded .catalog-projects-map__panel-handle {min-height:32px!important;height:32px!important;padding:10px!important;}
+  html body[data-node-shell] .node-country-map-controls .map-browser__search-row {margin:0 16px 12px!important;}
+  html body[data-node-shell] .country-map-expanded .catalog-projects-map__exit {top:16px!important;right:16px!important;}
+ }
+}
+@layer barn-node-filters {
+ @media(max-width:540px){
+  html body[data-node-shell] .map-browser>.map-browser__panel,
+  html body[data-node-shell] .country-map-expanded .catalog-projects-map__panel:has(.node-country-map-controls) {width:100%!important;}
+ }
+}

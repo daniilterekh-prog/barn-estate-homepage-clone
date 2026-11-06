@@ -12,7 +12,7 @@
   if(toolbar.dataset.nodeFiltersReady)return;
   toolbar.dataset.nodeFiltersReady='true';document.body.dataset.nodeFilterDirection=direction;
   const grid=toolbar.closest('.catalog-grid'),collections=grid.querySelector('.catalog-collections-row'),summary=grid.querySelector('.catalog-result-summary'),details=toolbar.querySelector('.catalog-mode-detailed-filters');
-  if(collections){const listingBrands=collections.querySelector('[data-brand-context=listing],.barnes-brand-filters,.country-brand-filters');if(listingBrands){const holder=document.createElement('div');holder.dataset.catalogCollections='';holder.hidden=true;listingBrands.before(holder);holder.append(listingBrands);}collections.querySelector('.catalog-reset-all')?.classList.add('catalog-text-reset');const brands=collections.querySelector('.country-brand-filters');if(brands){brands.classList.add('barnes-brand-filters');brands.querySelectorAll('.country-brand-filters__box').forEach(e=>e.classList.add('barnes-brand-filters__box'));}}
+  if(collections){const listingBrands=collections.querySelector('[data-brand-context=listing],.barnes-brand-filters,.country-brand-filters');if(listingBrands){const holder=document.createElement('div');holder.dataset.catalogCollections='';holder.hidden=true;listingBrands.before(holder);holder.append(listingBrands);}collections.querySelector('.catalog-reset-all')?.classList.add('catalog-text-reset');const brands=collections.querySelector('.country-brand-filters');if(brands){brands.hidden=true;brands.inert=true;brands.classList.add('node-map-brands-hidden','barnes-brand-filters');brands.querySelectorAll('.country-brand-filters__box').forEach(e=>e.classList.add('barnes-brand-filters__box'));}}
   const available=['city','international','resort'].includes(direction);document.body.dataset.marketAvailable=String(available);
   let search=toolbar.querySelector('.catalog-search-row');const input=search.querySelector('input');
   if(search.tagName==='LABEL'){const label=search,row=document.createElement('div');row.className='catalog-search-row';label.replaceWith(row);label.className='catalog-text-search';row.append(label);search=row;}
@@ -123,6 +123,7 @@
   if(countryPanel&&!countryPanel.querySelector('.node-country-map-controls')){
    const sourceSearch=countryPanel.querySelector('.catalog-projects-map__panel-search-row');
    const wrapper=document.createElement('div');wrapper.className='map-browser node-country-map-controls';
+   sourceSearch.querySelector('input').addEventListener('input',event=>window.countryListing.setSelection('query',event.target.value));
    sourceSearch.before(wrapper);wrapper.append(sourceSearch);sourceSearch.classList.add('map-browser__search-row');
    sourceSearch.querySelector('label').classList.add('map-browser__search');sourceSearch.querySelector('button').classList.add('map-browser__filter-toggle');
    countryPanel.querySelectorAll('.country-map-market,.catalog-projects-map__panel-filters,.country-map-reference').forEach(e=>e.dataset.nodeMapSource='');roots.push(wrapper);
@@ -135,6 +136,7 @@
    if(old)old.dataset.nodeMapSource='';
    const holder=document.createElement('template');holder.innerHTML=mapTemplate;const controls=holder.content.firstElementChild;root.dataset.nodeMapReady='true';
    if(old)old.after(controls);else root.append(controls);
+   if(direction==='commercial')root.querySelector('input[type=search]').addEventListener('input',event=>window.BarnesFilters.patch({query:event.target.value}));
    const dept=controls.querySelector('[data-node-map-direction]'),market=controls.querySelector('[data-node-map-market]'),sort=controls.querySelector('[data-node-map-sort]');
    dept.replaceChildren(...[...mainDirection.options].map(o=>o.cloneNode(true)));dept.value=mainDirection.value;
    sort.replaceChildren(...[...mainSort.options].map(o=>o.cloneNode(true)));sort.value=mainSort.value;
@@ -146,9 +148,11 @@
    controls.querySelector('.map-browser__reset').addEventListener('click',()=>document.querySelector('.catalog-collections-row .catalog-reset-all')?.click());
    if(mainMarket)upgradeSelect(market);
    function sync(){
+    if(direction==='commercial'){const input=root.querySelector('input[type=search]'),value=window.BarnesFilters.getState().query||'';if(input.value!==value)input.value=value;}
+    if(root.classList.contains('node-country-map-controls')){const input=root.querySelector('input[type=search]'),value=window.countryListing.getSelection().query||'';if(input.value!==value)input.value=value;}
     for(let i=0;i<dept.options.length;i++){dept.options[i].disabled=mainDirection.options[i].disabled;dept.options[i].hidden=mainDirection.options[i].hidden;}
     const brands=(root.classList.contains('node-country-map-controls')?root.parentElement:root).querySelector('[data-brand-context=map]');if(brands&&!controls.contains(brands))controls.querySelector('.map-browser__reset').before(brands);
-    if(brands){brands.classList.add('barnes-brand-filters');brands.querySelectorAll('.country-brand-filters__box').forEach(e=>e.classList.add('barnes-brand-filters__box'));}
+    if(brands){brands.hidden=true;brands.inert=true;brands.classList.add('node-map-brands-hidden','barnes-brand-filters');brands.querySelectorAll('.country-brand-filters__box').forEach(e=>e.classList.add('barnes-brand-filters__box'));}
     const rental=document.body.dataset.nodeDeal==='rent';market.closest('label').hidden=!mainMarket||rental;
     controls.querySelector('[data-node-map-mode="1"]').hidden=['resort','international'].includes(direction);
     if(mainMarket&&market.value!==mainMarket.value){market.value=mainMarket.value;market.dispatchEvent(new Event('input'));}
@@ -163,6 +167,54 @@
   }
  }
 
- function schedule(){if(queued)return;queued=true;requestAnimationFrame(()=>{queued=false;mount();mountMaps();document.querySelectorAll('.country-catalog-filters').forEach(e=>e.classList.add('resort-filters'));for(const modal of document.querySelectorAll('.hero-filter-modal.resort-filters')){modal.classList.add('hero-filter-modal--dark');for(const name of ['hero-filter-panel','hero-filter-panel-content','ui-checkbox','ui-switch'])modal.querySelectorAll('.'+name).forEach(e=>e.classList.add(name+'--dark'));}});}
- new MutationObserver(schedule).observe(document.documentElement,{childList:true,subtree:true});document.addEventListener('barnes:node-ready',schedule);document.addEventListener('DOMContentLoaded',schedule);schedule();
+ // Reuse each node's listing card, never another direction's object facts.
+ window.addEventListener('click',event=>{const button=event.target.closest?.('[data-node-map-listing-card] .apartment-card__call-btn');if(button?.nodeMapRequest){event.preventDefault();event.stopImmediatePropagation();button.nodeMapRequest();}},true);
+ function enhanceMapCards(){
+  const cards=[...document.querySelectorAll('.catalog-grid__list>.catalog-grid__item>.apartment-card')];if(!cards.length)return;
+  const path=url=>{try{return new URL(url,location.href).pathname.replace(/\/$/,'');}catch{return url;}};
+  const href=card=>card.querySelector('.apartment-card__name[href],.apartment-card__media-link[href],.apartment-card__link[href]')?.href;
+  function closeMap(root){if(root.matches('.catalog-projects-map'))root.querySelector('.catalog-projects-map__exit')?.click();else root.querySelector('.map-browser__close')?.click();}
+  function copyCard(source,root,record){
+   const card=source.cloneNode(true);card.dataset.nodeMapListingCard='true';
+   card.querySelectorAll('[id]').forEach(e=>e.removeAttribute('id'));
+   card.querySelectorAll('img').forEach(e=>e.loading='lazy');
+   if(record){
+    card.querySelectorAll('.apartment-card__address,.apartment-card__lotid,.apartment-card__badge,.apartment-card__badges').forEach(e=>e.remove());
+    const name=card.querySelector('.apartment-card__name');name.replaceChildren(document.createTextNode(record.name));
+    card.querySelectorAll('a[href]').forEach(e=>e.href=record.href);
+    const image=card.querySelector('.apartment-card__image');image.src=record.image;image.alt=record.name;image.removeAttribute('srcset');
+    const price=card.querySelector('.apartment-card__price');if(price)price.textContent=record.price;
+    card.querySelectorAll('.listing-card-fact__value,.apartment-card__stat-value').forEach(e=>{e.textContent='По запросу';e.removeAttribute('title');});
+    // No saved favorite identity exists for these map-only records.
+    card.querySelector('.apartment-card__favorite')?.remove();
+   }else{
+    const favorite=card.querySelector('.apartment-card__favorite'),original=source.querySelector('.apartment-card__favorite');
+    favorite?.addEventListener('click',()=>{const before=original.getAttribute('aria-pressed');original.click();requestAnimationFrame(()=>{if(original.getAttribute('aria-pressed')===before){const active=before!=='true';original.setAttribute('aria-pressed',String(active));original.classList.toggle('apartment-card__favorite--active',active);}favorite.setAttribute('aria-pressed',original.getAttribute('aria-pressed'));favorite.className=original.className;});});
+   }
+   const call=card.querySelector('.apartment-card__call-btn');if(call)call.nodeMapRequest=()=>{closeMap(root);const original=!record&&source.querySelector('.apartment-card__call-btn');original?.click();requestAnimationFrame(()=>{const dialog=[...document.querySelectorAll('[role=dialog]')].some(e=>e.getBoundingClientRect().height>0&&getComputedStyle(e).visibility!=='hidden');if(!dialog){const input=document.querySelector('.catalog-consultation input:not([type=checkbox]):not([tabindex="-1"])');input?.scrollIntoView({block:'center'});input?.focus({preventScroll:true});}});};
+   return card;
+  }
+  function listingRows(root,list,items){
+   const key=items.map(e=>e.outerHTML).join('');
+   const own=[...list.children].every(e=>e.dataset.nodeMapCard||e.classList.contains('node-map-empty'));
+   if(list.nodeListingKey===key&&own)return;list.nodeListingKey=key;
+   const rows=items.map(source=>{const row=document.createElement('div');row.className='map-browser__card';row.dataset.nodeMapCard='listing';row.append(copyCard(source,root));return row;});
+   if(!rows.length){const empty=document.createElement('p');empty.className='map-browser__empty node-map-empty';empty.textContent='Ничего не найдено. Измени запрос или сбрось фильтры.';rows.push(empty);}list.replaceChildren(...rows);
+   root.querySelector('.map-browser__heading,.catalog-projects-map__panel-title').textContent='Найдено объектов: '+items.length;
+  }
+  const countryRoot=document.querySelector('.catalog-projects-map:has(.node-country-map-controls)');
+  if(countryRoot){const list=countryRoot.querySelector('.catalog-projects-map__panel-list');if(list){list.classList.add('catalog-grid','node-map-listing');listingRows(countryRoot,list,cards.filter(c=>c.closest('.catalog-grid__item').dataset.nodeFilterMatch==='true'));}}
+  for(const root of document.querySelectorAll('.map-browser:not(.node-country-map-controls)')){
+   const list=root.querySelector('.map-browser__list');if(!list)continue;list.classList.add('catalog-grid','node-map-listing');
+   if(direction==='commercial'){listingRows(root,list,cards.filter(c=>!c.closest('.catalog-grid__item').hidden));continue;}
+   for(const row of list.querySelectorAll(':scope>.map-browser__card:not([data-node-map-card])')){
+    const record={href:row.querySelector('a')?.href,name:row.querySelector('h3')?.textContent,image:row.querySelector('img')?.src,price:row.querySelector('p')?.textContent||'Цена по запросу'};
+    const source=cards.find(c=>path(href(c))===path(record.href));
+    row.dataset.nodeMapCard=source?'listing':'record';row.replaceChildren(copyCard(source||cards[0],root,source?null:record));
+   }
+  }
+ }
+
+ function schedule(){if(queued)return;queued=true;requestAnimationFrame(()=>{queued=false;mount();mountMaps();enhanceMapCards();document.querySelectorAll('.country-catalog-filters').forEach(e=>e.classList.add('resort-filters'));for(const modal of document.querySelectorAll('.hero-filter-modal.resort-filters')){modal.classList.add('hero-filter-modal--dark');for(const name of ['hero-filter-panel','hero-filter-panel-content','ui-checkbox','ui-switch'])modal.querySelectorAll('.'+name).forEach(e=>e.classList.add(name+'--dark'));}});}
+ new MutationObserver(schedule).observe(document.documentElement,{childList:true,subtree:true});document.addEventListener('barnes:node-ready',schedule);document.addEventListener('DOMContentLoaded',schedule);document.addEventListener('country-listing-render',schedule);document.addEventListener('barnes:filters-apply',schedule);schedule();
 })();

@@ -86,6 +86,7 @@
       const query = selection.query.trim().toLocaleLowerCase('ru');
       const searchable = [q('.apartment-card__name',item)?.textContent, item.dataset.location, q('.apartment-card__lotid',item)?.textContent].join(' ').toLocaleLowerCase('ru');
       const match = (deal !== 'rent' || item.dataset.deal === 'rent') && item.dataset.listingMode === mode && (!selection.location || item.dataset.location === selection.location) && (!selection.price || (Number(item.dataset.price) > 0 && Number(item.dataset.price) <= Number(selection.price))) && (!selection.bedrooms || Number.parseInt(item.dataset.bedrooms) >= Number(selection.bedrooms)) && (!query || searchable.includes(query)) && (!window.countryMatchesFullFilter || window.countryMatchesFullFilter(item));
+      item.dataset.nodeFilterMatch=String(match);
       item.hidden = !match || (innerWidth < 768 && !expanded && count >= 5);
       if (match) count++;
     });

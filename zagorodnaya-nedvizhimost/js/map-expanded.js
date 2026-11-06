@@ -67,10 +67,10 @@
     });
   });
   document.addEventListener('pointerdown',event=>{if(dropdown&&!dropdown.contains(event.target)&&!quick.some(button=>button.contains(event.target)))closeDropdown();});
-  map.setAttribute('data-v-25437794','');
+  map.setAttribute('data-v-25437794','');map.id='country-map-browser';
   map.querySelectorAll('[class*="catalog-projects-map__"]').forEach(e=>e.setAttribute('data-v-25437794',''));
   panel.hidden = exit.hidden = true;
-  let oldOverflow = '', active = false, pointerStart, suppressClick = false, background = [];
+  let returnFocus=trigger, oldOverflow = '', active = false, pointerStart, suppressClick = false, background = [];
   search.setAttribute('aria-label','Поиск объектов на карте');
   const expand = value => {
     panel.classList.toggle('catalog-projects-map__panel--expanded',value);
@@ -82,7 +82,7 @@
     active = value;
     map.classList.toggle('country-map-expanded',value);
     panel.hidden = exit.hidden = !value;
-    trigger.setAttribute('aria-expanded',String(value));
+    trigger.setAttribute('aria-expanded',String(value));returnFocus.setAttribute('aria-expanded',String(value));
     if (value) {
       for(let node=map;node!==document.body;node=node.parentElement) {
         [...node.parentElement.children].filter(e=>e!==node && e.id!=='catalog-hero-filters-panel' && !['SCRIPT','STYLE','LINK'].includes(e.tagName)).forEach(e=>{
@@ -100,7 +100,7 @@
       map.removeAttribute('role');map.removeAttribute('aria-modal');map.removeAttribute('aria-label');
       document.body.style.overflow=oldOverflow;
       map.classList.remove('country-map-fallback');
-      trigger.focus({preventScroll:true});
+      returnFocus.focus({preventScroll:true});
     }
     window.dispatchEvent(new Event('resize'));
   }
@@ -108,14 +108,10 @@
     if (document.fullscreenElement === map) await document.exitFullscreen();
     else sync(false);
   }
-  window.countryMapEnter = async () => {
+  window.countryMapEnter = async opener => {
     if (active) { await close(); return; }
-    try {
-      if (!map.requestFullscreen) throw Error('Fullscreen unavailable');
-      await map.requestFullscreen();
-    } catch {
-      map.classList.add('country-map-fallback'); sync(true);
-    }
+    returnFocus=opener||trigger;returnFocus.setAttribute('aria-controls',map.id);
+    map.classList.add('country-map-fallback');sync(true);
   };
   document.addEventListener('fullscreenchange',()=>sync(document.fullscreenElement===map));
   exit.addEventListener('click',close);
