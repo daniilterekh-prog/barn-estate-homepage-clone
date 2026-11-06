@@ -1,6 +1,6 @@
 /* One responsive document; no mobile document replacement. No Nuxt runtime or remote render resources. */
 (function(){
-  function load(file){return new Promise((resolve,reject)=>{const s=document.createElement('script');s.src='js/'+file+'?v=8dd0c634468e';s.onload=resolve;s.onerror=reject;document.body.append(s)})}
+  function load(file){return new Promise((resolve,reject)=>{const s=document.createElement('script');s.src='js/'+file+'?v=a2843bfd197d';s.onload=resolve;s.onerror=reject;document.body.append(s)})}
   function nativeControls(){
     const toggle=document.querySelector('.site-header__icon-btn');
     let menu=null,overflow='';
@@ -54,7 +54,7 @@
     });
   }
   async function start(){
-    await load('menu-template.js');await load('node-reference.js');await load('node-modal.js');await load('home-kit.js');nativeControls();
+    await load('menu-template.js');await load('node-reference.js');await load('home-kit.js');nativeControls();
     document.dispatchEvent(new CustomEvent('barnes:node-ready'));
   }
   start();

@@ -9,42 +9,6 @@
   let returnFocus = null;
   const originalMenuIcon = menuButton?.innerHTML;
   let filterValues = null;
-  // Reference: Kurortnaya / canonical first-degree request-modal fragment.
-  const callbackTemplate = document.getElementById('source-callback');
-  if (callbackTemplate) callbackTemplate.innerHTML = `
-    <div class="catalog-feedback-modal feedback-modal modal" role="dialog" aria-modal="true" aria-labelledby="catalog-feedback-modal-title">
-      <div class="modal__content" tabindex="-1">
-        <button class="modal__close" type="button" aria-label="Закрыть форму" data-catalog-modal-close>
-          <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M5 5l14 14M19 5L5 19"></path></svg>
-        </button>
-        <div class="feedback-modal__layout">
-          <div class="feedback-modal__body">
-            <h2 class="feedback-modal__title" id="catalog-feedback-modal-title">Поможем найти подходящий объект</h2>
-            <p class="feedback-modal__intro">Эксперт BARN Estate уточнит задачу и подберёт лучшие варианты.</p>
-            <form class="feedback-modal__form" novalidate>
-              <div class="feedback-modal__channels" role="group" aria-label="Предпочтительный способ связи">
-                <button type="button" data-channel="Telegram" aria-pressed="true">Telegram</button>
-                <button type="button" data-channel="WhatsApp" aria-pressed="false">WhatsApp</button>
-                <button type="button" data-channel="MAX" aria-pressed="false">MAX</button>
-                <button type="button" data-channel="Звонок" aria-pressed="false">Звонок</button>
-              </div>
-              <input type="hidden" name="preferredChannel" value="Telegram">
-              <label class="feedback-modal__field"><span class="visually-hidden">Ваше имя</span><input class="feedback-modal__input" name="name" type="text" autocomplete="name" placeholder="Ваше имя" required></label>
-              <label class="feedback-modal__field"><span class="visually-hidden">Номер телефона</span><input class="feedback-modal__input" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="Номер телефона в Telegram" required></label>
-              <label class="feedback-modal__field"><span class="visually-hidden">Комментарий</span><textarea class="feedback-modal__input feedback-modal__textarea" name="comment" rows="3" placeholder="Опишите, какой объект вы ищете"></textarea></label>
-              <button class="feedback-modal__submit" type="submit">Получить подборку</button>
-              <label class="feedback-modal__consent">
-                <input class="feedback-modal__consent-input" name="consent" type="checkbox" required>
-                <span class="feedback-modal__consent-box" aria-hidden="true"></span>
-                <span class="feedback-modal__consent-text">Я даю согласие на обработку <a class="feedback-modal__consent-link" href="https://front.barnes.vsavr.ru/legal_notices/yuridicheskie-uvedomleniya/" target="_blank" rel="noopener noreferrer">персональных данных</a></span>
-              </label>
-              <p class="feedback-modal__status" role="status" aria-live="polite"></p>
-            </form>
-          </div>
-          <div class="feedback-modal__hero"><img class="feedback-modal__hero-image feedback-modal__hero-image--alina" src="assets/alina-medvedeva-popup.png" alt="Алина Медведева — руководитель департамента коммерческой недвижимости BARN Estate" width="1734" height="907"></div>
-        </div>
-      </div>
-    </div>`;
   let contactToggle = null;
   let contactPanel = null;
   function closeContacts(restoreFocus = false) {
@@ -218,6 +182,7 @@
   }
 
   function openDialog(kind, trigger) {
+    if(kind==='callback'){window.BarnNodeQuiz?.open({trigger});return;}
     if (kind === 'filters' && window.BarnesFilters) { closeContacts(); window.BarnesFilters.open(trigger); return; }
     closeContacts();
     closeDialog(); returnFocus = trigger || document.activeElement;
@@ -380,9 +345,9 @@
   }
   bindForms(document);
   const selectionScript = document.createElement('script');
-  selectionScript.src = 'js/selection-carousel.js?v=9accd9d0a924';
+  selectionScript.src = 'js/selection-carousel.js?v=3f64f8bd7f41';
   document.body.append(selectionScript);
-  const nodeSync=document.createElement('script');nodeSync.src='js/reference-sync.js?v=9accd9d0a924';document.body.append(nodeSync);
+  const nodeSync=document.createElement('script');nodeSync.src='js/reference-sync.js?v=3f64f8bd7f41';document.body.append(nodeSync);
 
 
 

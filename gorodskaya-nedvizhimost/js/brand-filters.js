@@ -4,7 +4,7 @@
   var css = document.createElement('link');
   css.rel = 'stylesheet';
   css.dataset.barnesBrandFilters = '';
-  css.href = new URL('../css/brand-filters.css?v=8dd0c634468e', document.currentScript.src).href;
+  css.href = new URL('../css/brand-filters.css?v=a2843bfd197d', document.currentScript.src).href;
   document.head.appendChild(css);
   var choices = [['selection', 'Выбор BARN Estate'], ['exclusive', 'Эксклюзив BARN Estate']];
   function flags() { return window.BarnesFilters.getState().brandFlags || []; }

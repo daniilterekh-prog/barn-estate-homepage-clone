@@ -4,7 +4,7 @@
   var base = new URL('../', document.currentScript.src);
   var css = document.createElement('link');
   css.rel = 'stylesheet';
-  css.href = new URL('css/filters-modal.css?v=9accd9d0a924', base).href;
+  css.href = new URL('css/filters-modal.css?v=3f64f8bd7f41', base).href;
   document.head.appendChild(css);
   var template = document.createElement('template');
   template.innerHTML = window.BarnesFilterTemplate;

@@ -16,7 +16,7 @@
   }
   function openDialog(kind, trigger) {
     if(kind==='filters')document.dispatchEvent(new Event('barnes:filters-open'));
-    if(kind==='callback'&&window.BARNES_OPEN_CONTACT){window.BARNES_OPEN_CONTACT(trigger);return;}
+    if(kind==='callback'){window.BarnNodeQuiz?.open({trigger});return;}
     closeDialog(); returnFocus=trigger || document.activeElement;
     const mapFilters=kind==='filters'&&trigger?.matches('.map-browser__filter-toggle,.international-map-filter');
     const template=one(mapFilters?'#source-map-filters':'#source-'+kind); if(!template)return;

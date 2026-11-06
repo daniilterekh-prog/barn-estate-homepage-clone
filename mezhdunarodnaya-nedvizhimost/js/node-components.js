@@ -187,7 +187,7 @@ document.querySelector(".site-header__messengers")?.remove();
 
 enhanceCatalogStickyHeader();
   openContactModal = function (trigger) {
-    window.BarnesInternationalQuiz.open({trigger: trigger});
+    window.BarnNodeQuiz?.open({trigger: trigger});
   };
   function enhanceContactMethods() {
     [
