@@ -60,5 +60,8 @@
  /* COMMON NEWS LOADER */
  const newsScript=document.createElement('script');newsScript.src=new URL('node-news.js?v=a64d29fc421d',document.currentScript.src).href;document.body.append(newsScript);
  /* COMMON NEWS LOADER END */
+ /* COMMON FOOTER LOADER */
+ const footerScript=document.createElement('script');footerScript.src=new URL('node-footer.js?v=16a59b9c61d5',document.currentScript.src).href;document.body.append(footerScript);
+ /* COMMON FOOTER LOADER END */
  sync();
 })();
