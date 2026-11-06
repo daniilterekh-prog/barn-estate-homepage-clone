@@ -24,16 +24,16 @@
   const districtItem=quickList.querySelector('.catalog-quick-filters__item').cloneNode(true);districtItem.classList.add('commercial-district');
   districtItem.querySelector('.catalog-quick-filters__icon').innerHTML=districtIcon;
   quickList.append(districtItem);
-  await load('js/filters-modal.js?v=3f64f8bd7f41');
+  await load('js/filters-modal.js?v=e6357411a4e6');
   document.querySelectorAll('[data-commercial-filters]').forEach(button=>button.setAttribute('aria-controls',modal.id));
   // Preserve the front commercial zero-results capture; do not borrow resort projects.
   window.BarnesMapProjects=[];
-  await load('js/map-fullscreen.js?v=3f64f8bd7f41');
+  await load('js/map-fullscreen.js?v=e6357411a4e6');
   const districtField=document.createElement('label');districtField.className='map-browser__field commercial-district';
   districtField.innerHTML=districtIcon+'<input data-filter="district" aria-label="Район" type="text">';
   document.querySelector('.map-browser__filters').prepend(districtField);
-  await load('js/quick-filters.js?v=3f64f8bd7f41');
-  await load('js/brand-filters.js?v=3f64f8bd7f41');
+  await load('js/quick-filters.js?v=e6357411a4e6');
+  await load('js/brand-filters.js?v=e6357411a4e6');
   // Purchase/rent replaces residential markets, sharing selection with the map.
   function dealSwitch(context) {
     const group=document.createElement('div');
@@ -50,7 +50,7 @@
   document.querySelector('.map-browser__filters').prepend(dealSwitch('map'));
   function syncDeal(){const selected=window.BarnesFilters.getState().dealType||'purchase';const monthly=selected==='rent',config=window.BarnesQuickConfig.find(c=>c.key==='priceRanges');config.title=monthly?'Стоимость / месяц':'Стоимость';config.choices=monthly?['до 1 млн ₽/мес.','1 – 3 млн ₽/мес.','3 – 5 млн ₽/мес.','от 5 млн ₽/мес.']:['до 50 млн ₽','50 – 100 млн ₽','100 – 200 млн ₽','от 200 млн ₽'];config.values=monthly?['rent-1m','rent-1-3m','rent-3-5m','rent-5m+']:['50m','50-100m','100-200m','200m+'];document.querySelectorAll('.resort-filters input[name=priceRanges]').forEach((input,i)=>{if(!config.values[i])return;input.value=config.values[i];const label=input.closest('label').querySelector('.ui-checkbox__label');if(label)label.textContent=config.choices[i];});document.querySelectorAll('[data-commercial-deal]').forEach(button=>{const active=button.dataset.commercialDeal===selected;button.setAttribute('aria-pressed',String(active));button.classList.toggle('is-active',active);});}
   document.addEventListener('barnes:filters-apply',syncDeal,true);syncDeal();
-  await styles('css/reference-sync.css?v=3f64f8bd7f41');
+  await styles('css/reference-sync.css?v=e6357411a4e6');
   const request=document.createElement('button');request.type='button';request.className='catalog-sticky__request catalog-sticky__callback commercial-mobile-request';request.textContent='Оставить заявку';request.setAttribute('aria-haspopup','dialog');
   const desktopRequest=document.querySelector('.catalog-page-nav__request');
   request.addEventListener('click',()=>{desktopRequest.click();const channel=document.querySelector('.catalog-feedback-modal [data-channel="Звонок"]');channel?.click();});
@@ -107,10 +107,10 @@
   document.querySelectorAll('.site-header a[href^="tel:"] svg,.catalog-sticky a[href^="tel:"] svg').forEach(svg=>{
     svg.setAttribute('viewBox','0 0 24 24');svg.setAttribute('stroke','none');svg.setAttribute('aria-hidden','true');svg.innerHTML=phoneArtwork;
   });
-  await styles('css/home-kit.css?v=3f64f8bd7f41');
-  await load('js/catalog-filters.js?v=3f64f8bd7f41');
-  await styles('css/catalog-filters.css?v=3f64f8bd7f41');
-  await styles('css/commercial-filter-layout.css?v=3f64f8bd7f41');
+  await styles('css/home-kit.css?v=e6357411a4e6');
+  await load('js/catalog-filters.js?v=e6357411a4e6');
+  await styles('css/catalog-filters.css?v=e6357411a4e6');
+  await styles('css/commercial-filter-layout.css?v=e6357411a4e6');
   document.body.dataset.commercialHomeKit='1.0.0';
   document.body.dataset.commercialReferenceReady='true';
 })().catch(error=>console.error('Commercial reference initialization failed:',error));

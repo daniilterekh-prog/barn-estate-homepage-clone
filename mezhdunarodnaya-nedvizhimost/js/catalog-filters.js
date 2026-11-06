@@ -29,7 +29,7 @@
       summary.querySelector('.catalog-result-actions').append(sort);
       toolbar.replaceChildren(primary,secondary);toolbar.after(collections,summary);
       var empty=document.createElement('div');empty.className='catalog-filter-empty';empty.hidden=true;
-      empty.innerHTML='<p>Ничего не найдено. Попробуйте изменить параметры.</p><button type="button" data-catalog-reset>Сбросить фильтры</button>';list.before(empty);
+      empty.innerHTML='<p>Ничего не найдено. Попробуйте изменить параметры.</p>';list.before(empty);
     }
     var primary=toolbar.querySelector('.catalog-toolbar__primary'),secondary=toolbar.querySelector('.catalog-toolbar__secondary');
     var search=toolbar.querySelector('.catalog-search-row'),input=search.querySelector('input');
