@@ -40,5 +40,9 @@
   function queueIntro(){if(!queued){queued=true;requestAnimationFrame(alignIntro);}}
   const observer=new ResizeObserver(queueIntro);observer.observe(copy);observer.observe(lead);document.fonts?.ready.then(queueIntro);addEventListener('resize',queueIntro,{passive:true});queueIntro();
  }
+
+ /* COMMON NEWS LOADER */
+ const newsScript=document.createElement('script');newsScript.src=new URL('node-news.js?v=a64d29fc421d',document.currentScript.src).href;document.body.append(newsScript);
+ /* COMMON NEWS LOADER END */
  sync();
 })();
