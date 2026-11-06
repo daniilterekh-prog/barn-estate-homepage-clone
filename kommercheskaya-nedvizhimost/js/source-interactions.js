@@ -143,7 +143,6 @@
     if (sort) toolbar.append(sort);
   }
   all('.apartment-card--catalog').forEach(card => {
-    if(card.dataset.internalPrepared)return; // Child pages clone the already approved rendered card.
     const body = one('.apartment-card__body', card);
     const address = one('.apartment-card__address', card);
     const name = one('.apartment-card__name', card);
@@ -346,9 +345,9 @@
   }
   bindForms(document);
   const selectionScript = document.createElement('script');
-  selectionScript.src = 'js/selection-carousel.js?v=7635462a12fb';
+  selectionScript.src = 'js/selection-carousel.js?v=125d97c136c8';
   document.body.append(selectionScript);
-  const nodeSync=document.createElement('script');nodeSync.src='js/reference-sync.js?v=7635462a12fb';document.body.append(nodeSync);
+  const nodeSync=document.createElement('script');nodeSync.src='js/reference-sync.js?v=125d97c136c8';document.body.append(nodeSync);
 
 
 

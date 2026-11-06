@@ -20,7 +20,6 @@
   };
   const originals = all(':scope > .catalog-grid__item', list);
   originals.forEach(item => {
-    if(item.dataset.internalCard)return; // Internal pages already use the approved card facts/layout.
     item.style.display = '';
     const card = q('.apartment-card', item), body = q('.apartment-card__body', card);
     const stats = Object.fromEntries(all('.apartment-card__stat', card).map(s => [text('.apartment-card__stat-label', s), text('.apartment-card__stat-value', s)]));
