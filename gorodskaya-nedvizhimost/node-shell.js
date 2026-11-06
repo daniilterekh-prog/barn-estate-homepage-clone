@@ -32,6 +32,15 @@
  addEventListener('scroll',sync,{passive:true});addEventListener('resize',sync,{passive:true});
  // A page may have no initial menu markup; use the shared direction links after enhancement.
  requestAnimationFrame(()=>{if(!menu.querySelector('a')){const wrap=document.createElement('div');wrap.className='node-menu-links';const source=header.querySelector('.mh-reference-nav');if(source)wrap.append(source.cloneNode(true));menu.append(wrap);}sync();});
+ // Final CTA uses each expert's existing interior-backed photograph, never a black cutout.
+ const contact=document.querySelector('.catalog-contact');
+ if(contact){
+  const portrait=location.pathname.includes('gorodskaya-nedvizhimost')?['assets/cta-ruslan-unified-v1.webp','0% 0','1.6']:
+   location.pathname.includes('zagorodnaya-nedvizhimost')?['assets/consultation-background.png','100% 0','1.6']:
+   location.pathname.includes('kommercheskaya-nedvizhimost')?['assets/alina-medvedeva-popup.png','100% 0','1.6']:null;
+  contact.addEventListener('click',event=>{const selected=event.target.closest('.catalog-contact__method');if(!selected)return;contact.querySelectorAll('.catalog-contact__method').forEach(button=>{const active=button===selected;button.setAttribute('aria-selected',String(active));button.setAttribute('aria-pressed',String(active));button.classList.toggle('catalog-contact__method--active',active);});});
+  if(portrait){contact.style.setProperty('--node-contact-position',portrait[1]);contact.style.setProperty('--node-contact-zoom',portrait[2]);contact.querySelectorAll('.catalog-contact__mobile-photo img,.catalog-contact__expert-photo img').forEach(img=>{img.src=portrait[0];img.removeAttribute('srcset');});}
+ }
  // One track for each question and one for its answer, shared across FAQ columns.
  const faqGrid=document.querySelector('.catalog-faq__grid');
  if(faqGrid){const counts=[...faqGrid.querySelectorAll('.catalog-faq__column')].map(c=>c.querySelectorAll('.catalog-faq__item').length);if(counts.length)faqGrid.style.setProperty('--node-faq-tracks',2*Math.max(...counts));}
