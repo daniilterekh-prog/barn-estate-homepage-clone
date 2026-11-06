@@ -1,0 +1,5237 @@
+{
+  "status": "final-locked-by-user",
+  "confirmedOn": "2026-11-06",
+  "baseline": "dd0cba9a0f5d11ead9e9f56451bb40e3a730def7",
+  "protectedRoots": [
+    "gorodskaya-nedvizhimost",
+    "zagorodnaya-nedvizhimost",
+    "kommercheskaya-nedvizhimost",
+    "mezhdunarodnaya-nedvizhimost",
+    "kurortnaya",
+    "shared",
+    "fonts",
+    "assets/city-real-estate"
+  ],
+  "files": [
+    {
+      "path": "assets/city-real-estate/source-assets/01-01c7d982f2-logo.svg",
+      "blob": "8e58f464a17d964692e2f3c3b9ace808640fdb8c"
+    },
+    {
+      "path": "assets/city-real-estate/source-assets/01-35fc252d25-modal-request-img.webp",
+      "blob": "e578e00ad9f13d94b57b9f5e0e924552376d352e"
+    },
+    {
+      "path": "assets/city-real-estate/source-assets/02-5ae5fad54a-620ce0cc220756d13a72ddf266404e58.webp",
+      "blob": "4d19407c744706bb0658582925b021ace26bd209"
+    },
+    {
+      "path": "assets/city-real-estate/source-assets/02-f07a7f7f95-old-money-interior.webp",
+      "blob": "b4b0c84f9c9c97119704b780c2a08c7e7f87a36c"
+    },
+    {
+      "path": "assets/city-real-estate/source-assets/03-bde3f5977f-21ce567f1b92c491b64f63b94d959afb.jpeg",
+      "blob": "7fa7666350c4e5a5fefb23046f5a47f688ef323c"
+    },
+    {
+      "path": "assets/city-real-estate/source-assets/04-25aa0d29d3-bf27c20c21fc353582173b0bdbedc4e4.jpg",
+      "blob": "ef3770276a11c0f6d1a7883db2d03e9ee75db3d0"
+    },
+    {
+      "path": "assets/city-real-estate/source-assets/05-24502f6ddb-934315baddc94eba946f3de5ef2952c2.png",
+      "blob": "74f5a8921b9a301d5c635dae6085119401ad9ccf"
+    },
+    {
+      "path": "assets/city-real-estate/source-assets/06-72ea3e41e3-0e9724f64f0cad48954a32f0b4600e98.jpeg",
+      "blob": "e32aeb106fd58d8b1b3e1ed1db01d591843bfaf5"
+    },
+    {
+      "path": "assets/city-real-estate/source-assets/07-a0800b0d84-f81fe9a1a3b28284deab149397ab642b.jpg",
+      "blob": "f0205f0899d19e7913122f8cdbf9a1d981c96191"
+    },
+    {
+      "path": "assets/city-real-estate/source-assets/08-4df58196c0-196e2e8c421487d1de60f6ea9c1da2f1.jpg",
+      "blob": "b698131b0c9fc39b5bb42c64028864f70c7c7b65"
+    },
+    {
+      "path": "assets/city-real-estate/source-assets/09-4fb71a40b2-9004f858c1935be556240a8de08340cd.jpg",
+      "blob": "27afb76490b7af22d662e93a2c3fd65f90e8e9ed"
+    },
+    {
+      "path": "assets/city-real-estate/source-assets/10-2c7a57e26f-d0337cc656d70884875f51df19ecf1ee.jpg",
+      "blob": "cc327ec40d0aaef7398d41145d4ab74ce8c4f24e"
+    },
+    {
+      "path": "assets/city-real-estate/source-assets/11-08ff6d293e-716d24012c7ce87812bc9c8b4cbc7ef6.jpg",
+      "blob": "794229e4d8cc7072e17dbd5ed719f4037fb8fc30"
+    },
+    {
+      "path": "assets/city-real-estate/source-assets/12-b337d43794-46c3faafdead6086a4fb13bf5ebd9f11.jpg",
+      "blob": "67f5c9ecfc30d1d020c937fd9400320982d551c0"
+    },
+    {
+      "path": "assets/city-real-estate/source-assets/13-4354ab38ea-c5a2148047d1b32f79da0c2d8262fef3.jpg",
+      "blob": "1a1dcf5be39bcb596c8806aa9b581a489622f654"
+    },
+    {
+      "path": "assets/city-real-estate/source-assets/14-250bc80ff9-7a9aac70eea6eaed8bb7f51f30675d27.jpg",
+      "blob": "f46fe51732cc8af5cc2cfd5fb8cadf9f1142fa5c"
+    },
+    {
+      "path": "assets/city-real-estate/source-assets/15-35edf6f4a0-9a18ffe61bcbab82d1ec7235f332ac9f.png",
+      "blob": "2e81446f39cd4ea11f9829ad46f79c93999c3512"
+    },
+    {
+      "path": "assets/city-real-estate/source-assets/16-7d2ca45d4d-contacts-man.webp",
+      "blob": "b11a9064b7bed37c981687727d3050f6b9c14672"
+    },
+    {
+      "path": "assets/city-real-estate/source-assets/17-23350d2829-cta-ruslan-pruss.webp",
+      "blob": "bab2a62bfb1ebde400baabb7b8fa9e40f4be2fcc"
+    },
+    {
+      "path": "assets/city-real-estate/source-assets/18-b5c750adf4-1ae6ebb621690055c8904fa66e54c6ec.png",
+      "blob": "fca7d0480669c51f8c509365a70f08588c42f794"
+    },
+    {
+      "path": "assets/city-real-estate/source-assets/19-ee06d770fa-2c979b7710cc799e8745f4951b7af6c4.png",
+      "blob": "157eea9088f40f06a1ac46c46e0d4bf87a857518"
+    },
+    {
+      "path": "assets/city-real-estate/source-assets/20-957c14ee74-0707d00a27b0c3c3c37dccd097092612.png",
+      "blob": "dcd3966beef2d7bf7db36ba2f388d123fad533bb"
+    },
+    {
+      "path": "assets/city-real-estate/source-assets/21-a8c31cad0a-25ee31fd8e84085de48ad70d83f97bf3.png",
+      "blob": "2432d4c10e06ceaf1e5eefaf77a2682ac39445be"
+    },
+    {
+      "path": "assets/city-real-estate/source-assets/22-c216c9e869-f55bb31b66b750c049f3d456aba8fda1.png",
+      "blob": "d102e519f49878f62705a9246604714196cab295"
+    },
+    {
+      "path": "assets/city-real-estate/source-assets/23-b6ed82643b-fa7c0336463cae4dca0c27effe64df8d.png",
+      "blob": "64c3350f83bcee274ef94f2591172c5cd7fb695d"
+    },
+    {
+      "path": "assets/city-real-estate/source-assets/24-b1f7e2f756-2d541c7dfecd754ca846349069948092.png",
+      "blob": "ce5cc23678fff54b26b5a0488e46394ca64d1383"
+    },
+    {
+      "path": "assets/city-real-estate/source-assets/25-628927b905-192a17c4026d6bca687a655f7eb50ac4.png",
+      "blob": "41e9188d22f021749b133627e4a5f6cc1ed6ddea"
+    },
+    {
+      "path": "assets/city-real-estate/source-assets/26-e489725665-11e7ec8e3e7de7379b40ead6256afc1d.png",
+      "blob": "dcd258555581af7cba420adce52a5002a50f26d9"
+    },
+    {
+      "path": "assets/city-real-estate/source-assets/27-b81d3ca51b-c0aad7cb0a48d53d48132526dae9a863.png",
+      "blob": "83ea9357b5d4bf8021f3f27669b7b1bf94ca9152"
+    },
+    {
+      "path": "assets/city-real-estate/source-assets/28-efe74fcd8d-34d1736ff53b5fb081532066bedc8dd5.png",
+      "blob": "a743fb74954f06af5fa63a1111aa57603aff51ee"
+    },
+    {
+      "path": "assets/city-real-estate/source-assets/29-cc3cd91926-a41d0d682ade63e81e3b18e326b86603.png",
+      "blob": "10b885fe62102f29646a7df998a20bbc0f76ff39"
+    },
+    {
+      "path": "assets/city-real-estate/source-assets/30-886f63e629-contacts-background.webp",
+      "blob": "3cfe504d81d41c259442a19927986bdcb6902385"
+    },
+    {
+      "path": "assets/city-real-estate/source-assets/31-e76d228093-7ff80ab304dfc98b5ae7562c669daa76.webp",
+      "blob": "687c35b27120240c695fb728b76f53ba68b23ab0"
+    },
+    {
+      "path": "assets/city-real-estate/source-assets/32-f07a7f7f95-old-money-interior.webp",
+      "blob": "b4b0c84f9c9c97119704b780c2a08c7e7f87a36c"
+    },
+    {
+      "path": "assets/city-real-estate/source-assets/33-e474c91d08-38354625442181b9dd310d2ad6d696c8.png",
+      "blob": "7cbafa4e060e9bc424fe0208ffdaa9c6e828d10e"
+    },
+    {
+      "path": "assets/city-real-estate/source-assets/34-14acad5594-7fbe570016207b60c4b87abce0359c2b.jpg",
+      "blob": "8808c2e2516e95e9c9ae2372fde64e1443ffd3d4"
+    },
+    {
+      "path": "assets/city-real-estate/source-assets/35-e9b975955e-37537bbcc39d4cd6cbbfa8bee57ccfe0.jpg",
+      "blob": "a0efcc64633ac5052dc49fb29df0b9a7e03f9889"
+    },
+    {
+      "path": "assets/city-real-estate/source-assets/36-5202e32cb2-ee04fea766ad35ed0e0cc65912603d6f.jpeg",
+      "blob": "d6306c26dc7c4d87a3900f9fe486c26953c165c3"
+    },
+    {
+      "path": "assets/city-real-estate/source-assets/38-afa60a32dd-3484ecf7d74418f69a0504af4589a7d7.jpg",
+      "blob": "5f846ba6f580b681d290ccb485b2fc066a6f17a8"
+    },
+    {
+      "path": "assets/city-real-estate/source-assets/39-8bd2ad8d53-2a6f5cdc8f57a2f27dae77f9c4b3c757.jpeg",
+      "blob": "868a6c5eb072f809efdb0307c795833e3cb5b174"
+    },
+    {
+      "path": "assets/city-real-estate/source-assets/40-07d9342901-b138dc69ef90454451aad7e0b03633f8.png",
+      "blob": "cf53ce8d57aae99a125b88f2b1196735f79bad30"
+    },
+    {
+      "path": "assets/city-real-estate/source-assets/41-3c6cc5fdf3-dcd957119fb45bc4e6bf026b560fe838.jpg",
+      "blob": "2a70a3d68663aa0d8b250ccac9a04afb7bf44d5f"
+    },
+    {
+      "path": "assets/city-real-estate/source-assets/42-a11f0f9619-02ede6a47f1d7d9037a60bbd94dacd88.jpg",
+      "blob": "475b33be039d9bada994e7fc61254bba6621e05f"
+    },
+    {
+      "path": "assets/city-real-estate/source-assets/43-99c369462d-7488fd27911cb615739d3c4e0d57c4ed.jpg",
+      "blob": "6bc8af246b8586351415cb71831d25b24b4daa34"
+    },
+    {
+      "path": "assets/city-real-estate/source-assets/44-4df538ff81-6b514d540f5654546c4b1a03a4939179.jpg",
+      "blob": "0babe0673a448e121ee32c31c5b8071af3941712"
+    },
+    {
+      "path": "assets/city-real-estate/source-assets/45-9018d35c9b-7e61da0b466c54e69065ec03ac1fa43d.jpg",
+      "blob": "bf5c5435c05a3e336939bcd844cdd9f8a997c12a"
+    },
+    {
+      "path": "assets/city-real-estate/source-assets/46-7fb5e2504d-4c47aeb08f07b7fa3d3ce3ce4250a3c6.jpg",
+      "blob": "89006746713c5cba786316ec1c93b4889370d90a"
+    },
+    {
+      "path": "assets/city-real-estate/source-assets/47-de66e1c251-ai-background.webp",
+      "blob": "2a37d92704e02e408d689063670957b9691ec44c"
+    },
+    {
+      "path": "assets/city-real-estate/source-assets/48-7d2ca45d4d-contacts-man.webp",
+      "blob": "b11a9064b7bed37c981687727d3050f6b9c14672"
+    },
+    {
+      "path": "assets/city-real-estate/source-assets/49-23350d2829-cta-ruslan-pruss.webp",
+      "blob": "bab2a62bfb1ebde400baabb7b8fa9e40f4be2fcc"
+    },
+    {
+      "path": "assets/city-real-estate/source-assets/50-61a013ad14-32bb1c09e2de90b389dcf4bd8cfa3802.png",
+      "blob": "036aa0462ade91359f2e862fc56cb3a8ef018a61"
+    },
+    {
+      "path": "assets/city-real-estate/source-assets/51-078f1c295c-8b67d18cf8e818fb793c259ffb3fed78.png",
+      "blob": "1d1a9ab3e01cabaf2b78ea97bbbdc8138ba17675"
+    },
+    {
+      "path": "assets/city-real-estate/source-assets/52-80aed647c2-f65d8dbc17c559c5df2fd4ac4d1c0c94.png",
+      "blob": "2a2b38613dbf471e0b89696a00d10b1de46d5138"
+    },
+    {
+      "path": "assets/city-real-estate/source-assets/53-c1e891b2e1-f19bce520e61659e0feb1844a98319ae.png",
+      "blob": "16138321a3d24b04b660e1e5cbf77dc4782873e9"
+    },
+    {
+      "path": "assets/city-real-estate/source-assets/54-6ff3cd0ca4-764e3d4bccb6027b30366e2f2bf025d2.jpg",
+      "blob": "c7d5ed6a250fd2e37c0411f06e62a14552e7eaa4"
+    },
+    {
+      "path": "assets/city-real-estate/source-assets/55-df6283a98d-32b04ebf9a2af2e54c68f782cb58f3f9.png",
+      "blob": "ccb7e73a24d91ce7d0baa05213788585efbb1da1"
+    },
+    {
+      "path": "assets/city-real-estate/source-assets/56-886f63e629-contacts-background.webp",
+      "blob": "3cfe504d81d41c259442a19927986bdcb6902385"
+    },
+    {
+      "path": "assets/city-real-estate/source-assets/57-66c14d3d33-4d1303ca04ecaaa9b71128001a05fe93.jpg",
+      "blob": "2dd47b532f79ea7306155d08ef9ef26d25c3377c"
+    },
+    {
+      "path": "assets/city-real-estate/source-assets/58-83b4f3d0f5-98fcda8000395f94e56615cb37cc0552.jpg",
+      "blob": "4afe4b7f459a53c5b4daf66794f65d1a47119969"
+    },
+    {
+      "path": "assets/city-real-estate/source-assets/59-2942a9615b-fd25457afab1963a5533d7cd147a60f8.jpg",
+      "blob": "97540739cdc90376ab2babd5871b1107d141e81a"
+    },
+    {
+      "path": "assets/city-real-estate/source-assets/60-4b55877070-4302831025e1d832e89a0d6.51773830_e7cfb1ae7e_1920.jpg",
+      "blob": "f4098e8d361e8fb1c903465cccccd48e92c95afc"
+    },
+    {
+      "path": "assets/city-real-estate/source-assets/61-b1a38d8722-328645802601c0796034055.62190440_7d58f34253_1920.jpg",
+      "blob": "49d459192ff95cd43373d9f63f33de108566861c"
+    },
+    {
+      "path": "assets/city-real-estate/source-assets/62-fcc2abc9b3-9937090165e8b3a91d5cac2.30337839_d7e0f65378_1024.jpg",
+      "blob": "b880634723471d917efc8a40a6ca2553aa0f5788"
+    },
+    {
+      "path": "fonts/TildaSans-Black.woff2",
+      "blob": "c66e067bacd10c2fbae714fdb68bda0ed2efaddb"
+    },
+    {
+      "path": "fonts/TildaSans-Bold.woff2",
+      "blob": "9bc1cea0d9cd5d2482e7402ae8da35d273dec073"
+    },
+    {
+      "path": "fonts/TildaSans-ExtraBold.woff2",
+      "blob": "036c66f44b651d3e7854a010d43b5cd51b6aef06"
+    },
+    {
+      "path": "fonts/TildaSans-Light.woff2",
+      "blob": "59c22538cb38ed583a9be508537e71f52abe1e9a"
+    },
+    {
+      "path": "fonts/TildaSans-Medium.woff2",
+      "blob": "b349bb91b1ef8668e3f99f10210e8fdc123e0853"
+    },
+    {
+      "path": "fonts/TildaSans-Regular.woff2",
+      "blob": "eca2361b9e48b96633f3a494624756b7902679de"
+    },
+    {
+      "path": "fonts/TildaSans-Semibold.woff2",
+      "blob": "9adfc61d562d7c9a54dfc5a017687d4277dfd2ea"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/README.md",
+      "blob": "2071c4a14e081796cc51c93ece35c82e80680765"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/STRUCTURE.md",
+      "blob": "bd18f5ac63e3a85afd1eefffdf097fa01d147846"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/UI-KIT.md",
+      "blob": "e6db50456f68b4c78dadbd4ae79ca4c56ba92ce4"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/assets/040420c4b252e01e.jpg",
+      "blob": "0babe0673a448e121ee32c31c5b8071af3941712"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/assets/084b2b6f06e71057.jpg",
+      "blob": "bf5c5435c05a3e336939bcd844cdd9f8a997c12a"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/assets/0b26c7d34e34bc95.png",
+      "blob": "dcd258555581af7cba420adce52a5002a50f26d9"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/assets/1792fd049a30dde9.jpg",
+      "blob": "c7d5ed6a250fd2e37c0411f06e62a14552e7eaa4"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/assets/1c05545e99585231.png",
+      "blob": "dcd3966beef2d7bf7db36ba2f388d123fad533bb"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/assets/1c44604b5e775bc9.png",
+      "blob": "10b885fe62102f29646a7df998a20bbc0f76ff39"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/assets/1ded2e63e7c29cfa.png",
+      "blob": "036aa0462ade91359f2e862fc56cb3a8ef018a61"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/assets/1e2dd8c5d60e6a8c.jpg",
+      "blob": "ef3770276a11c0f6d1a7883db2d03e9ee75db3d0"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/assets/342dbb071189cbde.png",
+      "blob": "157eea9088f40f06a1ac46c46e0d4bf87a857518"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/assets/3e197e0e1f3e679e.svg",
+      "blob": "529fdfb0ef6bb6034fd07b14a9476eea0b0e4ed9"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/assets/4435c9a57e165a1c.svg",
+      "blob": "b637cb5160934ed0ae000909bd88753f2107910c"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/assets/4464b6998f60131d.webp",
+      "blob": "bab2a62bfb1ebde400baabb7b8fa9e40f4be2fcc"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/assets/46731dbe5fe00ce5.jpg",
+      "blob": "f46fe51732cc8af5cc2cfd5fb8cadf9f1142fa5c"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/assets/4bf9e58f8cd7ca21.png",
+      "blob": "64c3350f83bcee274ef94f2591172c5cd7fb695d"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/assets/4eb608f9f16b5961.png",
+      "blob": "16138321a3d24b04b660e1e5cbf77dc4782873e9"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/assets/4ee5443ab894e0ec.png",
+      "blob": "1d1a9ab3e01cabaf2b78ea97bbbdc8138ba17675"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/assets/5470c65bc66b3e42.png",
+      "blob": "2432d4c10e06ceaf1e5eefaf77a2682ac39445be"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/assets/54aefcc2d6a3ad61.jpg",
+      "blob": "f0205f0899d19e7913122f8cdbf9a1d981c96191"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/assets/558ec36c2123d231.png",
+      "blob": "83ea9357b5d4bf8021f3f27669b7b1bf94ca9152"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/assets/594482a7a9c71ba0.jpeg",
+      "blob": "e32aeb106fd58d8b1b3e1ed1db01d591843bfaf5"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/assets/5caa61a4b0731d0d.svg",
+      "blob": "a19c0577708a9dd615881b9fb07dddaa38638931"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/assets/5ea1816cf8be69ea.png",
+      "blob": "d102e519f49878f62705a9246604714196cab295"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/assets/612ba80ab547d43d.webp",
+      "blob": "3cfe504d81d41c259442a19927986bdcb6902385"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/assets/68f354994cc205b6.png",
+      "blob": "ccb7e73a24d91ce7d0baa05213788585efbb1da1"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/assets/709121d4e9a3cf06.webp",
+      "blob": "faf3f5ef1ef072329877e453036a58b050f3be13"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/assets/7781fce4e8048ef7.jpg",
+      "blob": "a0efcc64633ac5052dc49fb29df0b9a7e03f9889"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/assets/7aa20aa89b87356c.svg",
+      "blob": "8e58f464a17d964692e2f3c3b9ace808640fdb8c"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/assets/80933b4c042ba784.jpg",
+      "blob": "cc327ec40d0aaef7398d41145d4ab74ce8c4f24e"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/assets/8a62a86d05a443bf.webp",
+      "blob": "687c35b27120240c695fb728b76f53ba68b23ab0"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/assets/94c8b8d3a2cf6ea0.png",
+      "blob": "a743fb74954f06af5fa63a1111aa57603aff51ee"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/assets/94ce2169b9d1b8f4.jpg",
+      "blob": "1a1dcf5be39bcb596c8806aa9b581a489622f654"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/assets/9509f5dd4efa3674.webp",
+      "blob": "b4b0c84f9c9c97119704b780c2a08c7e7f87a36c"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/assets/963872afd408bd77.webp",
+      "blob": "b11a9064b7bed37c981687727d3050f6b9c14672"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/assets/a412283d63954d09.jpg",
+      "blob": "27afb76490b7af22d662e93a2c3fd65f90e8e9ed"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/assets/ab62129a25a7b22e.webp",
+      "blob": "4d19407c744706bb0658582925b021ace26bd209"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/assets/barn-estate-logo.svg",
+      "blob": "4a68fae5eb75034891f86a42bd6dbc64caeee4d1"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/assets/c5384c30d421ad70.jpg",
+      "blob": "8808c2e2516e95e9c9ae2372fde64e1443ffd3d4"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/assets/c6b4c97ed2ad6c4f.png",
+      "blob": "2e81446f39cd4ea11f9829ad46f79c93999c3512"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/assets/c714d4a43087da62.jpg",
+      "blob": "89006746713c5cba786316ec1c93b4889370d90a"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/assets/c99494947c54c106.png",
+      "blob": "41e9188d22f021749b133627e4a5f6cc1ed6ddea"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/assets/cb1ac940c0a5bc83.webp",
+      "blob": "e578e00ad9f13d94b57b9f5e0e924552376d352e"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/assets/city-map-preview.png",
+      "blob": "71fbbca2f302622ede1476ee267556baa3023c4d"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/assets/cta-ruslan-cutout.png",
+      "blob": "ed6a78af8f6e51098e69de57ad2412b2cfd6ef15"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/assets/cta-ruslan-unified-v1.md",
+      "blob": "55adcf4a7d0d67ef1b612ef3569c98aa0031de80"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/assets/cta-ruslan-unified-v1.webp",
+      "blob": "ddd44c2f6b2967b2b13679229e65874641f6f199"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/assets/dad5ee437891fb59.jpg",
+      "blob": "b698131b0c9fc39b5bb42c64028864f70c7c7b65"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/assets/dcbf59bef9c1e1ff.jpg",
+      "blob": "67f5c9ecfc30d1d020c937fd9400320982d551c0"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/assets/e10d5cf935dc2e4c.jpeg",
+      "blob": "7fa7666350c4e5a5fefb23046f5a47f688ef323c"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/assets/e7345b38f69b4715.png",
+      "blob": "fca7d0480669c51f8c509365a70f08588c42f794"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/assets/e8f9f87c7f81dc15.jpg",
+      "blob": "794229e4d8cc7072e17dbd5ed719f4037fb8fc30"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/assets/f64d846ee61ac060.png",
+      "blob": "ce5cc23678fff54b26b5a0488e46394ca64d1383"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/assets/f6b69a68d3dc5b84.png",
+      "blob": "74f5a8921b9a301d5c635dae6085119401ad9ccf"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/assets/fb2e3f1a53a0c743.png",
+      "blob": "2a2b38613dbf471e0b89696a00d10b1de46d5138"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/assets/fonts/TildaSans-Black.woff2",
+      "blob": "c66e067bacd10c2fbae714fdb68bda0ed2efaddb"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/assets/fonts/TildaSans-Bold.woff2",
+      "blob": "9bc1cea0d9cd5d2482e7402ae8da35d273dec073"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/assets/fonts/TildaSans-ExtraBold.woff2",
+      "blob": "036c66f44b651d3e7854a010d43b5cd51b6aef06"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/assets/fonts/TildaSans-Light.woff2",
+      "blob": "59c22538cb38ed583a9be508537e71f52abe1e9a"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/assets/fonts/TildaSans-Medium.woff2",
+      "blob": "b349bb91b1ef8668e3f99f10210e8fdc123e0853"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/assets/fonts/TildaSans-Regular.woff2",
+      "blob": "eca2361b9e48b96633f3a494624756b7902679de"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/assets/fonts/TildaSans-Semibold.woff2",
+      "blob": "9adfc61d562d7c9a54dfc5a017687d4277dfd2ea"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/assets/manifest.json",
+      "blob": "caa172f18a6ac3652dcd928ab9f0a516271c6a3b"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/assets/material-icons-LICENSE.txt",
+      "blob": "7a4a3ea2424c09fbe48d455aed1eaa94d9124835"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/assets/owner-modal-prus.webp",
+      "blob": "c0aa21b08c1705c28e1b9f702216a766748a525c"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/assets/quiz-mobile-prus-magazine.webp",
+      "blob": "5cdab60c4dca66d4624cffa35bdea4687cdb2f1e"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/_shared/preview.js",
+      "blob": "f58ec2a790df91d4f70063d4d2d7740deea5bbc9"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/brand-intro/README.md",
+      "blob": "9b7e9911c8d979c2edbaf5d5832dde8946198dc8"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/brand-intro/block.json",
+      "blob": "3e6f9adb7a263b6c774b446267f368b9c7dc9cbf"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/brand-intro/fragment.html",
+      "blob": "f19855a19151a9861ed332f30e5d4f5cc303bd2e"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/brand-intro/index.html",
+      "blob": "6cc9d411a791caf6b86063aed4515851c37e346c"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/brand-intro/mobile.html",
+      "blob": "f19855a19151a9861ed332f30e5d4f5cc303bd2e"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/brand-intro/page-desktop.html",
+      "blob": "8740e982b69a859f2b992cd95fbbec70ffb7af13"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/brand-intro/page-mobile.html",
+      "blob": "8740e982b69a859f2b992cd95fbbec70ffb7af13"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/brand-intro/styles.css",
+      "blob": "594ee55938c4eda0fffccbc82cf1beef7c637c7b"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/card-lot/README.md",
+      "blob": "74bbfa4a901a52919037116c602cc73374559587"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/card-lot/block.json",
+      "blob": "c8bf87d77823205e4e534593e81230cb5feb2034"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/card-lot/fragment.html",
+      "blob": "7f9ad9ded50dbe135d387073d7cdac4df5e6ec37"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/card-lot/index.html",
+      "blob": "7f25eb53c27a063544024a19f54d38dad55ff421"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/card-lot/mobile.html",
+      "blob": "7f9ad9ded50dbe135d387073d7cdac4df5e6ec37"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/card-lot/styles.css",
+      "blob": "594ee55938c4eda0fffccbc82cf1beef7c637c7b"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/card-project/README.md",
+      "blob": "6b9b931494286e0e6af9e92c915dd3d803764f27"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/card-project/block.json",
+      "blob": "62d2b728e67aa6a964a467cac48629789189b4c0"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/card-project/fragment.html",
+      "blob": "a3f2a5ca4a7711c6965efe42794b42280e1a9a62"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/card-project/index.html",
+      "blob": "ffe5b877d1bc0a68263f619d9f2e4f0625f25766"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/card-project/mobile.html",
+      "blob": "a3f2a5ca4a7711c6965efe42794b42280e1a9a62"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/card-project/styles.css",
+      "blob": "594ee55938c4eda0fffccbc82cf1beef7c637c7b"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/card-start-sales/README.md",
+      "blob": "c3bb066a45b7c4d0c60356e5afc84356cdb1cfa3"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/card-start-sales/block.json",
+      "blob": "4c2b3b9e4746f5e1669d41fc9813ba274fe725d0"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/card-start-sales/fragment.html",
+      "blob": "e62321ec899193ba72c279985f2228fd4cd97f2e"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/card-start-sales/index.html",
+      "blob": "b01320ad9716ce23be94bd2e39067c9f0766f08c"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/card-start-sales/mobile.html",
+      "blob": "506e4befa8e2ffb120d889a88744c02b05ff84db"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/card-start-sales/styles.css",
+      "blob": "594ee55938c4eda0fffccbc82cf1beef7c637c7b"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/catalog.html",
+      "blob": "0e9135e855b8e7c6a26abb9bf295f959292222d0"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/cta-bottom/README.md",
+      "blob": "2f5fdb0f4bd47a8748edb0c3c587a0927eb06754"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/cta-bottom/block.json",
+      "blob": "020854fa2f21f53df3cade32a80d7083cd176b93"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/cta-bottom/fragment.html",
+      "blob": "70a0347479207fed8a51132b46f6b043bc77b060"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/cta-bottom/index.html",
+      "blob": "fd774490970b7137ed796595b079e48ad4a0a3d2"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/cta-bottom/mobile.html",
+      "blob": "70a0347479207fed8a51132b46f6b043bc77b060"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/cta-bottom/page-desktop.html",
+      "blob": "bd4a5ec3547e10ec7eb3c4aac6d15f07c2760f8c"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/cta-bottom/page-mobile.html",
+      "blob": "bd4a5ec3547e10ec7eb3c4aac6d15f07c2760f8c"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/cta-bottom/styles.css",
+      "blob": "594ee55938c4eda0fffccbc82cf1beef7c637c7b"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/cta-central/README.md",
+      "blob": "34d2654ed6956f81554c927183eecdda88a7a4f1"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/cta-central/block.json",
+      "blob": "565c545c5e1c283eb61fbfb1ccbeae644f75f123"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/cta-central/fragment.html",
+      "blob": "c89cf129067063f7732c8cc7f6b94bc08aede00c"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/cta-central/index.html",
+      "blob": "de680dca18724d79a05f441a41920f4a57d5ea65"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/cta-central/mobile.html",
+      "blob": "c89cf129067063f7732c8cc7f6b94bc08aede00c"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/cta-central/page-desktop.html",
+      "blob": "5b3f893329e981122f189312496d2419883e366b"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/cta-central/page-mobile.html",
+      "blob": "5b3f893329e981122f189312496d2419883e366b"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/cta-central/styles.css",
+      "blob": "594ee55938c4eda0fffccbc82cf1beef7c637c7b"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/directions/README.md",
+      "blob": "30f51d5f25aa6dec36378d3250ecb7d644172654"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/directions/block.json",
+      "blob": "cd936279829f85f3bd64e093ed5f7286e8a8aa10"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/directions/fragment.html",
+      "blob": "5c93ff74521d7d49eec0ec0248ee2d97db4ccc78"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/directions/index.html",
+      "blob": "796a7ebe5c7d55c72333955db488ecbaa13a7f73"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/directions/mobile.html",
+      "blob": "5c93ff74521d7d49eec0ec0248ee2d97db4ccc78"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/directions/page-desktop.html",
+      "blob": "d9292bc3b856e5feece501ab71cfa9f5bee209b7"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/directions/page-mobile.html",
+      "blob": "d9292bc3b856e5feece501ab71cfa9f5bee209b7"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/directions/styles.css",
+      "blob": "594ee55938c4eda0fffccbc82cf1beef7c637c7b"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/faq/README.md",
+      "blob": "be5eebde2e05664daf00e9101c567e8ab5a9d896"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/faq/block.json",
+      "blob": "52b93edf322a18b0b6d9589118ce458e127d3b71"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/faq/fragment.html",
+      "blob": "8193ff7ad59d94656ebb837c864c584647389404"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/faq/index.html",
+      "blob": "bf41b1435fc4b6c3d97d0aafe9b574779c247e05"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/faq/mobile.html",
+      "blob": "8193ff7ad59d94656ebb837c864c584647389404"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/faq/page-desktop.html",
+      "blob": "062cb8f52f590f4969c281293aad697ca97e9d98"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/faq/page-mobile.html",
+      "blob": "062cb8f52f590f4969c281293aad697ca97e9d98"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/faq/styles.css",
+      "blob": "594ee55938c4eda0fffccbc82cf1beef7c637c7b"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/filters-modal/README.md",
+      "blob": "7dd53c19e87bc7bd154239d5db8366481f89773a"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/filters-modal/block.json",
+      "blob": "cf5ba8938f9190c93edcd2bb1656cee575b66903"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/filters-modal/fragment.html",
+      "blob": "ead0cbf12b1cb4069e9d736d1b5c7277fd601e21"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/filters-modal/index.html",
+      "blob": "b92355945e99d33a9514d3f871ebb26b10eda01a"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/filters-modal/mobile.html",
+      "blob": "ead0cbf12b1cb4069e9d736d1b5c7277fd601e21"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/filters-modal/styles.css",
+      "blob": "594ee55938c4eda0fffccbc82cf1beef7c637c7b"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/floating-expert/README.md",
+      "blob": "cbca5b1f9a90f160d0341c35820ee1c4805918d3"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/floating-expert/block.json",
+      "blob": "0d5fee080613e8ad4d5aff46df73e1da4da53fe3"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/floating-expert/fragment.html",
+      "blob": "3305dd55692efe1e7aebec1a4c9dbd891d4d2490"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/floating-expert/index.html",
+      "blob": "3eeb16d9e06049c8334d757c0366f72e0ba45714"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/floating-expert/mobile.html",
+      "blob": "3305dd55692efe1e7aebec1a4c9dbd891d4d2490"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/floating-expert/page-desktop.html",
+      "blob": "d5795025c8068e451307e4c650140e4d89d9bacc"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/floating-expert/page-mobile.html",
+      "blob": "d5795025c8068e451307e4c650140e4d89d9bacc"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/floating-expert/styles.css",
+      "blob": "594ee55938c4eda0fffccbc82cf1beef7c637c7b"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/footer/README.md",
+      "blob": "dbb957a638b5ebf1650c2272d3d5a4af62511a58"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/footer/block.json",
+      "blob": "49a098207441192043770e6d8646c9bd9414531f"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/footer/fragment.html",
+      "blob": "5ed8c08861d97a9addc773e465c39bc80d0d3696"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/footer/index.html",
+      "blob": "8eba972bf0d824235ec1b5d61b4e4a6565c7fe87"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/footer/mobile.html",
+      "blob": "d9eebdf33ee101b97fc44dd205803a64e4184156"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/footer/page-desktop.html",
+      "blob": "60089e29fc9a75e30df7520ea085d0e44b5fbd59"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/footer/page-mobile.html",
+      "blob": "60089e29fc9a75e30df7520ea085d0e44b5fbd59"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/footer/styles.css",
+      "blob": "594ee55938c4eda0fffccbc82cf1beef7c637c7b"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/header/README.md",
+      "blob": "fdbb0c55ab7de6eec42836fd83fcc48d9ca05bde"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/header/block.json",
+      "blob": "8704d1b4f056827d8651bf51794419f5075db37b"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/header/fragment.html",
+      "blob": "6c0587aa93e37629b031b356d890d049c4a1e5a7"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/header/index.html",
+      "blob": "668aa7a634c8e9ebc95480a67cfb71f5617b5c02"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/header/mobile.html",
+      "blob": "6c0587aa93e37629b031b356d890d049c4a1e5a7"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/header/page-desktop.html",
+      "blob": "79a10b819b66347ee980aee35bd4c1af2ada8d0d"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/header/page-mobile.html",
+      "blob": "79a10b819b66347ee980aee35bd4c1af2ada8d0d"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/header/styles.css",
+      "blob": "594ee55938c4eda0fffccbc82cf1beef7c637c7b"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/hero/README.md",
+      "blob": "a20abf3032f8eafbf68378ca1d1c019250758d99"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/hero/block.json",
+      "blob": "5a459ce2fa312fcadb4c7e3dd9dde82a5158c2bd"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/hero/fragment.html",
+      "blob": "374fbf16911f6eca2a57f374884cadff49505915"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/hero/index.html",
+      "blob": "a531bfa38bacd712ddd49f11313454af146612ae"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/hero/mobile.html",
+      "blob": "d28feecbfb5dbda426a60e4292cf23d8d85a45f7"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/hero/page-desktop.html",
+      "blob": "6a26cd167f4c5a30e7f2f0bb7f5bc14590da9076"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/hero/page-mobile.html",
+      "blob": "642f81edd24969f7945db9ae53696a356758ead5"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/hero/styles.css",
+      "blob": "594ee55938c4eda0fffccbc82cf1beef7c637c7b"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/listing/README.md",
+      "blob": "a6b77c186422b17587b97bd03a48289d60e6159e"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/listing/block.json",
+      "blob": "56bb54c966f0f5d2499b5aa338fb086d23541732"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/listing/fragment.html",
+      "blob": "648151c17055ced3c19e06eb32d1e4ee59599837"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/listing/index.html",
+      "blob": "a2f7aaa026faad560921b43d4d22b1b0b4b5f31b"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/listing/mobile.html",
+      "blob": "f789552af3ee3dab36b6c52961d19b6e1335440f"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/listing/page-desktop.html",
+      "blob": "073a702b4e32df0e4e12f3c0eead4c52b3231100"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/listing/page-mobile.html",
+      "blob": "232803ac6a06c46e2c6c04a5ed57025406b92d39"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/listing/styles.css",
+      "blob": "594ee55938c4eda0fffccbc82cf1beef7c637c7b"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/manifest.json",
+      "blob": "df7ba9bc3690cfe413e1aa0392a4d7fbf43154c8"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/map-panel/README.md",
+      "blob": "727869ed08c17c96ca08e5c6127c0e14f0721601"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/map-panel/block.json",
+      "blob": "116151175baed724f798e35b9d1df2d786e53526"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/map-panel/fragment.html",
+      "blob": "ab5150b77288ce37ccab511bf86788d0930e3fcf"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/map-panel/index.html",
+      "blob": "f0f6c3801224b982f0062f4b5dd0185105074e06"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/map-panel/mobile.html",
+      "blob": "bfe643112b8c66949c83116647c2a10cb9e3f4f8"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/map-panel/styles.css",
+      "blob": "594ee55938c4eda0fffccbc82cf1beef7c637c7b"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/map/README.md",
+      "blob": "af252ede2f5a4dac2db9d2b9a2f86c50fecd1318"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/map/block.json",
+      "blob": "28d67122a8b4285803f9837078e49eb18062b4fc"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/map/fragment.html",
+      "blob": "b06234c359092cd1285763684c44920425530dec"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/map/index.html",
+      "blob": "1b07a4d9f74ab273650488607ef28897d7bffb35"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/map/mobile.html",
+      "blob": "b06234c359092cd1285763684c44920425530dec"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/map/page-desktop.html",
+      "blob": "c82edb67af62ed5c4dae7348ff1f0f66084331c4"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/map/page-mobile.html",
+      "blob": "c82edb67af62ed5c4dae7348ff1f0f66084331c4"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/map/styles.css",
+      "blob": "594ee55938c4eda0fffccbc82cf1beef7c637c7b"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/news/README.md",
+      "blob": "bb290698baaedca5a21cc27d5842e904f3e43686"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/news/block.json",
+      "blob": "e177af71fa1e1729f97891cef25662f2c157887a"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/news/fragment.html",
+      "blob": "d064a16e21269076d5862ef2d7f16daa6fc859b8"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/news/index.html",
+      "blob": "5ade8edf17f496a9626371422125a15df5d3ee3e"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/news/mobile.html",
+      "blob": "ce8b927dc2b1690c892a09870f4f5cc1eda5c983"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/news/page-desktop.html",
+      "blob": "8358d52e224098e511bbfbd8574257ebaab8f493"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/news/page-mobile.html",
+      "blob": "ee6c7cb07834099b2742663f2ddf2951a7fa55bc"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/news/styles.css",
+      "blob": "594ee55938c4eda0fffccbc82cf1beef7c637c7b"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/quick-filter-dropdowns/README.md",
+      "blob": "2066ba8494ea1a5a02903340181dfc0c0e746d61"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/quick-filter-dropdowns/block.json",
+      "blob": "02aed51db13ef7701c755f8ee7d13ba15e670c25"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/quick-filter-dropdowns/fragment.html",
+      "blob": "6916c1c758895acfed499cf9f30e1ff21c59a711"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/quick-filter-dropdowns/index.html",
+      "blob": "3f17af93f5f5bf3bed156a1415b04bcbd8a2aa08"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/quick-filter-dropdowns/mobile.html",
+      "blob": "1460f2fb03958d4dd3e79e1106da39713f0704df"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/quick-filter-dropdowns/styles.css",
+      "blob": "594ee55938c4eda0fffccbc82cf1beef7c637c7b"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/request-modal/README.md",
+      "blob": "5bf06cc5596e91b108ec9161573f1a26c77ca258"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/request-modal/block.json",
+      "blob": "26ab6e95c60a91592408cab4904eb0c274369402"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/request-modal/fragment.html",
+      "blob": "807e40b8caedd781ad4d38a8bc311c2a62525fb1"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/request-modal/index.html",
+      "blob": "83eed994fba3a8ef7dab85cf6392bb5f00e86b94"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/request-modal/mobile.html",
+      "blob": "807e40b8caedd781ad4d38a8bc311c2a62525fb1"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/request-modal/styles.css",
+      "blob": "594ee55938c4eda0fffccbc82cf1beef7c637c7b"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/start-sales/README.md",
+      "blob": "32340eba56df4256b409c1c3dbaf3750f198695f"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/start-sales/block.json",
+      "blob": "c52a91aedda350a82910fc43538019f7873fe653"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/start-sales/fragment.html",
+      "blob": "5a4a912a823a2a1efeb75cbc2b21343a4f8a2ba6"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/start-sales/index.html",
+      "blob": "a823da525a6e9a7d7892a6bd5398b3d5ef83c98b"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/start-sales/mobile.html",
+      "blob": "7a0d3924a513a88324c35afa7475cf961900b657"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/start-sales/page-desktop.html",
+      "blob": "580838cbd5d9411d05110d2d9118f81895862ce4"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/start-sales/page-mobile.html",
+      "blob": "9540623413d72345d4cd25a1dc03a066ec1db721"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/start-sales/styles.css",
+      "blob": "594ee55938c4eda0fffccbc82cf1beef7c637c7b"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/sticky-nav/README.md",
+      "blob": "8565ab29fc2f4729b1673570ed859816dfa96290"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/sticky-nav/block.json",
+      "blob": "1ad4c1b6eeb38dab07c79374043d7e205ccd2409"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/sticky-nav/fragment.html",
+      "blob": "085080e79a636c78f208146e01c7a88ed19384bb"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/sticky-nav/index.html",
+      "blob": "91b9b4a7786a48aa97f4cd615b9577b4f0d36600"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/sticky-nav/mobile.html",
+      "blob": "0d9042b2cb388bb89d8bfcd8eb66eef1864994ac"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/blocks/sticky-nav/styles.css",
+      "blob": "594ee55938c4eda0fffccbc82cf1beef7c637c7b"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/brand-nowrap.css",
+      "blob": "c6e2c71216f0686ebeb5db7a5c2c71e6dde04bc5"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/brand-nowrap.js",
+      "blob": "3d08e7284078ddf235e0f9bcb1a5462e1e16e528"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/css/brand-filters.css",
+      "blob": "f6aa270560a28ec83547019857af2406a1244958"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/css/catalog-filters.css",
+      "blob": "3b073f8516f33202a1016529cf2ec20d2dd7a52a"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/css/city-map-fullscreen.css",
+      "blob": "3d6fb3ea42bef6fb6dad38b6431a1521f8c2beeb"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/css/document-desktop.css",
+      "blob": "93f4275b25f2904de2730c3d1cbc8e9ae12c07d5"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/css/filters-modal.css",
+      "blob": "2265d879e748a263dc59ad491f0ebf09aae0398d"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/css/filters-source.css",
+      "blob": "47a779bcdd1efe5d1768966771c9ad4f966b8125"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/css/home-kit.css",
+      "blob": "28a1cc2aac32170a7934bc6f77d384d5f5559068"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/css/node-city.css",
+      "blob": "a078934428e37fed5e744ee5b814bff35cbae19a"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/css/node-launch.css",
+      "blob": "b8ce26ec17a86e3a3d47ba9b9d8454e00564ee21"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/css/node-listing.css",
+      "blob": "4274ee688a23fdfce3342ca9917a3b62657d6777"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/css/node-ui.css",
+      "blob": "9eb52bcc27f25edb988f0748f446502489e70360"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/css/owner-footer.css",
+      "blob": "0ea24a1446487c7ce9165e5ad374d824f39a51e0"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/css/owner-header.css",
+      "blob": "4932b4b0dac927cf0d50184c2b4d2c56ff5c3e57"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/css/portable.css",
+      "blob": "9b14b3c5b52f3565c0b9420379c4ad9137270cae"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/css/quick-filters.css",
+      "blob": "7d39b69b309df52e4a268ad23702fd85e4efa036"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/css/quiz-buttons.css",
+      "blob": "983d64e9c66966deb7e96b761bd609a9f2f23bbc"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/css/request-quiz.css",
+      "blob": "cff1c4399e1e38dbe03592b0db8154ed1b9cc311"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/hero-laptop.css",
+      "blob": "5e6a0ea2a859c22e947af90ee0294cc996b0559c"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/index.html",
+      "blob": "8582b955bd44b34d14e0f6a616582c91ca642528"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/js/bootstrap.js",
+      "blob": "22b623a6c358a63863e05e61f3dc4b8bee392d63"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/js/brand-filters.js",
+      "blob": "70a5a6edb75f6b3f0f80548e4e64b40453fecd6b"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/js/catalog-filters.js",
+      "blob": "f15e094ffbe4d208123475ad1b4bce62bd13077e"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/js/city-map-fullscreen.js",
+      "blob": "5a0f1fb23a8b000bd2af411733b26aa38795ac6d"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/js/city-map-projects.js",
+      "blob": "2464680980610cef1f3466df4c5e6fe4a59b4a20"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/js/city-reference-extras.js",
+      "blob": "55c23bce76452e735e3b05018d7f781a68a2c1db"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/js/filters-modal.js",
+      "blob": "ba47f8f0309a2eedfbd9ddecac414ffdd93e93bc"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/js/filters-template.js",
+      "blob": "04fb4db3a3bfe68153e0a9f48685982594854aa0"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/js/home-kit.js",
+      "blob": "d3f872e9f0298019a96cbf41736486be12eb4f24"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/js/menu-template.js",
+      "blob": "169ee982c28f4d275d17a9b89dbcc5a3f217770d"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/js/news-slider.js",
+      "blob": "a6a588b32c1535bd2ac87258452cf2ca66a8d69a"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/js/node-launch.js",
+      "blob": "c6e4c585a84fa31dcd2d38e40767497270b70470"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/js/node-modal.js",
+      "blob": "065d95751916f758b908f9ce2bd7b3d5238772f1"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/js/node-reference.js",
+      "blob": "335c14d1392ee86cc827dfdc41ce369b89575b81"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/js/quick-filters.js",
+      "blob": "2987974678e49778b8b7d06be3404f51c4dc3d78"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/media-header.css",
+      "blob": "fefcda204554a82bfd3c632ad0e23cf8991b4728"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/media-header.js",
+      "blob": "65430fcda07e5e86f8d7ca0fe9fa9d37dc24a750"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/mobile.html",
+      "blob": "a0f0339fbb26cba7e98c13b35a4631ddc2070073"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/node-catalog-links.css",
+      "blob": "94acd378a04cb708060824c2ed133041af96ee82"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/node-catalog-links.js",
+      "blob": "041247681894a8d161267bc4b810e011148e15e9"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/node-expert-dialog.css",
+      "blob": "17ba1b00b5c5a23b6f590ced6e9727717078250e"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/node-expert-dialog.js",
+      "blob": "89a6aaba43129951c85e0427574efacac61de139"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/node-filters.css",
+      "blob": "b2de8462f3bfb7aca9627f1e98d212710f5eea9c"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/node-filters.js",
+      "blob": "b9b0dbf0e99a21df074a80a4931495e67ae55fc8"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/node-footer-logo.svg",
+      "blob": "4a68fae5eb75034891f86a42bd6dbc64caeee4d1"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/node-footer.css",
+      "blob": "30d641a79037a386b366a618989c90ca6eb8be08"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/node-footer.js",
+      "blob": "d27a79ed3152fd84e7f27829bf691fede0410e9a"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/node-header.css",
+      "blob": "fc4e7d756f5da9ee3cd3cb7a2ce5d488e4c2c6a1"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/node-news.css",
+      "blob": "2d7da1cc93431d3c9d2aa5878223c3e96762c0a7"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/node-news.js",
+      "blob": "854691e89feb331fab6840eb69512754982ceb8b"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/node-recommendations-LICENSE.txt",
+      "blob": "d2f800dd7dd363959544cb0adc001319202e8254"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/node-recommendations.css",
+      "blob": "238cf08dbcbb705922b93680564756452c83a845"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/node-recommendations.js",
+      "blob": "cacfb07a51556bc815b49e5001c7bf3481889a9e"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/node-shell.css",
+      "blob": "ec64ab464eaaf6eb286616f8ab42b63b960d323d"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/node-shell.js",
+      "blob": "85225906228a0b95e9e2abd242690f57d74ead67"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/node-spacing.css",
+      "blob": "66711c4b5ed5945c5699e21939456714c174a074"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/tools/build-page.cjs",
+      "blob": "a6be04d99899cc583ab11937d755dcf3ee73729d"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/tools/clean-package.cjs",
+      "blob": "2bc6907e89f77b831dc2e64457758192f63a2b2d"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/tools/export-blocks.cjs",
+      "blob": "f931b4f9cfe9d340d5ffcebfe7819f68d47ad491"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/tools/export-public.cjs",
+      "blob": "964002373f326cc44767d5297f15bce5d54d99e3"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/tools/verify-design.cjs",
+      "blob": "126c7ecd43aacf0f1d4a4d727ddba5c04de5b360"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/tools/verify-home-kit.cjs",
+      "blob": "bb4b17a9ff21e78afb371dc17c6f96d9bbbc6a8b"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/tools/verify-package.cjs",
+      "blob": "91df42f187c6152e9a9cec7235ffbb2d0bc39667"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/tools/verify-resort-filters.cjs",
+      "blob": "9a899085ebf355fdfa2ecc5d4e391567f94f5dfb"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/verification/README.md",
+      "blob": "c8dd1d7ab66d044629ac281ef95eb70fb41cad97"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/verification/baseline.json",
+      "blob": "b4c8d0adddf0a652c88036e2c73e0fe480687a0e"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/verification/cleanup.json",
+      "blob": "c821c823d0ab2ea6a1f8f70b619f155e96806b25"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/verification/design-parity.json",
+      "blob": "74ba69c488c7cd34414e85d38345e678c99655af"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/verification/home-kit-published.json",
+      "blob": "f48e0e1f037e8815148bd435b5010ca1593bfc5f"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/verification/home-kit.json",
+      "blob": "427e94febe8272d7d571f131ce3fe34a31879449"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/verification/migration-inventory.json",
+      "blob": "13ced8ee329c9aa354df0b38dc234f1deb0a74a1"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/verification/package.json",
+      "blob": "d629f39ca1c53be47f8f61bb51ffc5e5a0a13e0f"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/verification/published.json",
+      "blob": "18015628eac3e0ec69ae995961a033decb967809"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/verification/resort-filters-2026-11-02.json",
+      "blob": "ba7f79ce46d57dacedc1ecc6e19fa3fdfb34e7e1"
+    },
+    {
+      "path": "gorodskaya-nedvizhimost/verification/resort-filters-published-2026-11-02.json",
+      "blob": "1cd6979c99433eccaf0b6846c4c94c779559d7b4"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/HOME-KIT.md",
+      "blob": "3ed5f0b5acfed39d81923a4b5a30e01a461fdd47"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/README.md",
+      "blob": "b54e5c433b929672058e613fd5d3ecc06eea5c9e"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/STRUCTURE.md",
+      "blob": "50a3218b3651925d8661ab117f00674ded9d3849"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/assets/alina-medvedeva-popup.png",
+      "blob": "316850c591710fc01994914bc08343552379bd77"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/assets/barn-estate-logo.svg",
+      "blob": "4a68fae5eb75034891f86a42bd6dbc64caeee4d1"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/assets/cta-alina-unified-v2.md",
+      "blob": "7403f87fa516780ddd7f804bac6e3108397d6389"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/assets/cta-alina-unified-v2.png",
+      "blob": "6cffccad402e1b6430dfddbcf2be8b4ccabc35f5"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/assets/cta-consultation-interior.webp",
+      "blob": "faf3f5ef1ef072329877e453036a58b050f3be13"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/assets/directions/closed-sales.png",
+      "blob": "e8b2586bc7e38ac0c4a604837bac6ed63886d12d"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/assets/directions/commercial-land.png",
+      "blob": "1e3bc51ce3f766d82c1a7f7195bb140f3d720374"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/assets/directions/exclusive.png",
+      "blob": "c2c46604bcc69e7d8b8e0f9755d7a104b11e6a6f"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/assets/directions/offices.png",
+      "blob": "926a2fd0075815fa30c7cf84c69f6b97a0b516f4"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/assets/directions/ready-business.png",
+      "blob": "f6255e2caab54841441527488ab9a2759c76d9c3"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/assets/directions/retail.png",
+      "blob": "1feb2f1e925a7d7eb3f5c686d16e728b77c1b5cf"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/assets/directions/warehouses.png",
+      "blob": "312f61481ee1ed09c1277320aed851908bd215b7"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/assets/hero-commercial-desktop.png",
+      "blob": "72dc964f383f634612fda6dd5b3807687d28da35"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/assets/hero-commercial-mobile.png",
+      "blob": "1cc072f0aa924e8c871d734b44f0bb1d22eeb796"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/assets/logo.svg",
+      "blob": "f75df3d06ae45018704bccecf8ade06a5a7c0eb5"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/assets/material-icons-LICENSE.txt",
+      "blob": "7a4a3ea2424c09fbe48d455aed1eaa94d9124835"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/assets/open-map-1440.png",
+      "blob": "b9d8776986bb22ce2b4e682cd18f45e474940708"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/assets/source/030a4f12c737.png",
+      "blob": "14344701bb4378259b0d84d8ad8c49294b74f088"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/assets/source/20b70333976f.png",
+      "blob": "1d1a9ab3e01cabaf2b78ea97bbbdc8138ba17675"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/assets/source/22adb6240a0a.png",
+      "blob": "b031a28b3c12fc38a5da3a640322923b24e3166d"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/assets/source/23bc328bb8f3.png",
+      "blob": "9583c5058863cff9e99db00ec9c91e6298f47886"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/assets/source/251b08b599f0.webp",
+      "blob": "579df0e413fe1c29dd6d7f1644ac84844692f6d2"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/assets/source/2f79ec86a334.png",
+      "blob": "bd4d038de646670bb2c71963380cfab984ab7d69"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/assets/source/2fa11256c64e.jpg",
+      "blob": "fe8361e371f986e40d0958e03de36772d2424bd1"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/assets/source/33c9955c39a6.png",
+      "blob": "16138321a3d24b04b660e1e5cbf77dc4782873e9"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/assets/source/34d4876429d0.png",
+      "blob": "1f50125e02376c51000b489549658b259888144a"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/assets/source/39ea5e15e9a8.png",
+      "blob": "1cd23ff75f70d0f0e3d23534293dea6c71f22429"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/assets/source/3b692b1f9b01.ico",
+      "blob": "484ae6ad2e99ee42eed8ce521f3101e0a7097f5b"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/assets/source/4446da4485f2.woff2",
+      "blob": "59c22538cb38ed583a9be508537e71f52abe1e9a"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/assets/source/487d075df528.woff2",
+      "blob": "9bc1cea0d9cd5d2482e7402ae8da35d273dec073"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/assets/source/492799b0e689.png",
+      "blob": "a95630c4e4a005f726ca5c312fc5bea85e846222"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/assets/source/4aca6bc668ad.png",
+      "blob": "93e9cf79431ad055ead06ce99a1c46b9f013f8fd"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/assets/source/51f4e7a5474b.jpg",
+      "blob": "a0efcc64633ac5052dc49fb29df0b9a7e03f9889"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/assets/source/585f2ba0b6df.webp",
+      "blob": "d7d1b522958a2e9eee0ca776ba97b0d0426c89b1"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/assets/source/5f6ebe16fea8.jpg",
+      "blob": "da59597fe051c7fedfa497ccb40c2b70e2f9311b"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/assets/source/685fd2b4e430.png",
+      "blob": "653d0e8bf7491124f26e3b32bf1d127db0412fd3"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/assets/source/68c2bde4de27.jpg",
+      "blob": "f0f9b068fc4427c67d2fc8d91e8c3d55ed5b17fe"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/assets/source/68f39ab02777.svg",
+      "blob": "529fdfb0ef6bb6034fd07b14a9476eea0b0e4ed9"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/assets/source/6cfef9bc5c75.webp",
+      "blob": "1da6fd6a36d4b2c58149d1339443c1438d4e65b2"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/assets/source/6f9fc45581df.png",
+      "blob": "7ec35486251e3d3e4b4a9d20c1eaa8fdce85b5f6"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/assets/source/7378a04ec8e4.png",
+      "blob": "cafb5fd397953cb88bbe6890aef97eca87c9522b"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/assets/source/7695305458b7.webp",
+      "blob": "b4b0c84f9c9c97119704b780c2a08c7e7f87a36c"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/assets/source/76f9c9ab0436.png",
+      "blob": "923abab0f95efc341109c9013a80f08259fca89e"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/assets/source/805f812d9f5f.png",
+      "blob": "985c4e7e2f835c6aee94fe4d98d7383aa6fd2e94"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/assets/source/81a267c73922.jpg",
+      "blob": "8808c2e2516e95e9c9ae2372fde64e1443ffd3d4"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/assets/source/81c0c77c12fe.jpg",
+      "blob": "2f6c7ed2d3a2b497f8ba0fd166cf7c6049cbaa74"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/assets/source/8d4f040d9190.png",
+      "blob": "8c32c38262be68d10e7f091ba560abc51c3d711f"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/assets/source/8db2680a5926.svg",
+      "blob": "a19c0577708a9dd615881b9fb07dddaa38638931"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/assets/source/93bb22193634.png",
+      "blob": "a310f69c297f908c58e3f68b0f74e502d578e1da"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/assets/source/9b3c0b68f922.woff2",
+      "blob": "c66e067bacd10c2fbae714fdb68bda0ed2efaddb"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/assets/source/9d3810c9f2ec.png",
+      "blob": "c9d142ecf234644fd1da5e7ba8db96f4049b11e2"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/assets/source/9e58d5de2bbd.woff2",
+      "blob": "b349bb91b1ef8668e3f99f10210e8fdc123e0853"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/assets/source/a461ef0bb959.png",
+      "blob": "ccb7e73a24d91ce7d0baa05213788585efbb1da1"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/assets/source/a80cefdb36fa.webp",
+      "blob": "e578e00ad9f13d94b57b9f5e0e924552376d352e"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/assets/source/af10a3eba521.png",
+      "blob": "157dbdc0a3668d8212c50258b48c1cf002d59849"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/assets/source/afd8eddf7f3b.png",
+      "blob": "d6e4367a13ad63a4488a18fd01215ddd51935a69"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/assets/source/b362b060621c.png",
+      "blob": "036aa0462ade91359f2e862fc56cb3a8ef018a61"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/assets/source/b3db829cd4ce.jpg",
+      "blob": "c7d5ed6a250fd2e37c0411f06e62a14552e7eaa4"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/assets/source/b5c8cc1256ed.woff2",
+      "blob": "036c66f44b651d3e7854a010d43b5cd51b6aef06"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/assets/source/b99a8d6d757b.woff2",
+      "blob": "eca2361b9e48b96633f3a494624756b7902679de"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/assets/source/be5ff3c9cf24.png",
+      "blob": "f79da0594115caba5b25b89408bb1a1403d1afce"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/assets/source/cee560c8a397.png",
+      "blob": "2a2b38613dbf471e0b89696a00d10b1de46d5138"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/assets/source/d100227df6a0.jpg",
+      "blob": "a2db275f922a74628a173569fa4da3fcbd3d7471"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/assets/source/d454a27b72e6.png",
+      "blob": "e356692c2f1e1bbbfb02c543f3f415e49b020b28"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/assets/source/d5b716c8785b.jpg",
+      "blob": "c14bf1a6f000d6ab14943d900ce1ff80c08cdc60"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/assets/source/dfc880404774.png",
+      "blob": "1054a33360a1a0ee1ddecbad801a29efcf64ffab"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/assets/source/e29de3bc99f1.jpg",
+      "blob": "be02dbaca15d856ac656a4c1c72afe8d899f7980"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/assets/source/e9c8aa675761.jpeg",
+      "blob": "f6ccbfe067aaddcc7a643cf0f7dfa7fe3d2bb6bf"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/assets/source/ec07a4d0adc8.woff2",
+      "blob": "9adfc61d562d7c9a54dfc5a017687d4277dfd2ea"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/assets/source/ecd5335f18af.jpg",
+      "blob": "95549dcdad77fe115565e9768a29ec036fdb2be3"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/assets/source/efb3841071c8.png",
+      "blob": "12bb91b6d2cf421432d080503645947969706712"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/assets/source/f1a4bd916067.png",
+      "blob": "5fb05652c6717aa7101d583f2b397b7c4e69cdf0"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/assets/source/f42b2f83fe65.png",
+      "blob": "c9a9052e6f753d92da8890ad29ca4c490782f54b"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/assets/source/f8285279bd12.svg",
+      "blob": "f75df3d06ae45018704bccecf8ade06a5a7c0eb5"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/assets/source/fb0c64d3cf85.svg",
+      "blob": "b637cb5160934ed0ae000909bd88753f2107910c"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/assets/source/fbfb69732de9.jpg",
+      "blob": "d4656240ad4cda854dd915421cedaf30d614c582"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/assets/source/fc29905fc494.webp",
+      "blob": "20bb252973fc35731e7b38d622e5c16affd34da5"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/brand-nowrap.css",
+      "blob": "c6e2c71216f0686ebeb5db7a5c2c71e6dde04bc5"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/brand-nowrap.js",
+      "blob": "3d08e7284078ddf235e0f9bcb1a5462e1e16e528"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/css/5322e4836c34.css",
+      "blob": "4244240fb7e3efcd033865852c64f0233c261015"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/css/6d6653a6d4c9.css",
+      "blob": "006a2d2527056ec3bc3b028c71fc2a19d41b2b2e"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/css/brand-filters.css",
+      "blob": "f6aa270560a28ec83547019857af2406a1244958"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/css/catalog-filters.css",
+      "blob": "3b073f8516f33202a1016529cf2ec20d2dd7a52a"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/css/commercial-filter-layout.css",
+      "blob": "42748036b05ad0c863119c64991f6e67bc13fd34"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/css/e28230ec6c40.css",
+      "blob": "845792ba20d3845d7e195100f9e8429a0db8df7f"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/css/f4563e28471c.css",
+      "blob": "d96fcecce97faa2ab44df0174f36954393fc9d46"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/css/filters-modal.css",
+      "blob": "2265d879e748a263dc59ad491f0ebf09aae0398d"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/css/home-kit.css",
+      "blob": "5cf242d6a24358580571c476770bf5448935b832"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/css/map-fullscreen.css",
+      "blob": "6c23e692784afd11505f50b6270309e72cdd2033"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/css/node-adaptation.css",
+      "blob": "845ce468fc344953e8a958f80ccdcd1b39e5eab5"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/css/node-header.css",
+      "blob": "f5da404d930dc716b169b2fdcd9699d76b16e842"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/css/node-listing.css",
+      "blob": "4274ee688a23fdfce3342ca9917a3b62657d6777"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/css/node-ui-kit.css",
+      "blob": "ab177192d12f6ea723408276140f632b54b02b21"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/css/owner-footer.css",
+      "blob": "0ea24a1446487c7ce9165e5ad374d824f39a51e0"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/css/quick-filters.css",
+      "blob": "14407c24bac364396986fd2387381b81c3621026"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/css/reference-sync.css",
+      "blob": "83c0aa9631302eb0ea24080023d428f0231e8445"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/css/selection-cards.css",
+      "blob": "07d8eb732b18aaf0128b0da9b38c492e54ebd56b"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/css/selection-layout.css",
+      "blob": "3310c24a028b54b943f89e017a1d5358ce9dcad6"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/css/source-interactions.css",
+      "blob": "884a5d4e0f51c6d45a14edfdd74a88388e9b8182"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/hero-laptop.css",
+      "blob": "5e6a0ea2a859c22e947af90ee0294cc996b0559c"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/index.html",
+      "blob": "fa0cffb8a3d3fd0a7eeef00fa9a31d7e891695c6"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/js/brand-filters.js",
+      "blob": "afd778f49dada903fb9a3b0528b497b392e34d90"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/js/catalog-filters.js",
+      "blob": "94c91acd4894244c05caa5e0cc38e1e1155573a3"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/js/filters-modal.js",
+      "blob": "f4587d2ddbd914b2b7e32a6fa2d1b71b926516b4"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/js/map-fullscreen.js",
+      "blob": "e49bf096c674bb8d94e7938bd145f69a8f958f67"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/js/quick-filters.js",
+      "blob": "7794290194d8cb075c643c7de7cfd3363dbeb425"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/js/reference-sync.js",
+      "blob": "c601c49515de06f0e7a2303f6028a7a6ba4e876d"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/js/selection-carousel.js",
+      "blob": "f381d085a7d4eb50a2a962e3c3d475f7f6deb663"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/js/source-interactions.js",
+      "blob": "462ff2c663c0ef6aafd6bb2c967ba516f0906405"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/js/source-map-states.js",
+      "blob": "18129a807470e9092272acf89af05848e86467c5"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/media-header.css",
+      "blob": "fefcda204554a82bfd3c632ad0e23cf8991b4728"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/media-header.js",
+      "blob": "65430fcda07e5e86f8d7ca0fe9fa9d37dc24a750"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/node-catalog-links.css",
+      "blob": "94acd378a04cb708060824c2ed133041af96ee82"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/node-catalog-links.js",
+      "blob": "041247681894a8d161267bc4b810e011148e15e9"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/node-expert-dialog.css",
+      "blob": "17ba1b00b5c5a23b6f590ced6e9727717078250e"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/node-expert-dialog.js",
+      "blob": "89a6aaba43129951c85e0427574efacac61de139"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/node-filters.css",
+      "blob": "b2de8462f3bfb7aca9627f1e98d212710f5eea9c"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/node-filters.js",
+      "blob": "b9b0dbf0e99a21df074a80a4931495e67ae55fc8"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/node-footer-logo.svg",
+      "blob": "4a68fae5eb75034891f86a42bd6dbc64caeee4d1"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/node-footer.css",
+      "blob": "30d641a79037a386b366a618989c90ca6eb8be08"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/node-footer.js",
+      "blob": "d27a79ed3152fd84e7f27829bf691fede0410e9a"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/node-header.css",
+      "blob": "fc4e7d756f5da9ee3cd3cb7a2ce5d488e4c2c6a1"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/node-news.css",
+      "blob": "2d7da1cc93431d3c9d2aa5878223c3e96762c0a7"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/node-news.js",
+      "blob": "854691e89feb331fab6840eb69512754982ceb8b"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/node-recommendations-LICENSE.txt",
+      "blob": "d2f800dd7dd363959544cb0adc001319202e8254"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/node-recommendations.css",
+      "blob": "238cf08dbcbb705922b93680564756452c83a845"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/node-recommendations.js",
+      "blob": "cacfb07a51556bc815b49e5001c7bf3481889a9e"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/node-shell.css",
+      "blob": "ec64ab464eaaf6eb286616f8ab42b63b960d323d"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/node-shell.js",
+      "blob": "f46fb72ed04702b28b2ca8fd0d1c9562efa54bc1"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/node-spacing.css",
+      "blob": "66711c4b5ed5945c5699e21939456714c174a074"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/tools/verify-catalog-filters.cjs",
+      "blob": "d21bf16b364ddc60f59ff9ecf4f02e16b55bf385"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/tools/verify-home-kit.cjs",
+      "blob": "566d39ce42a19b2336311a3e65fed318b1a03fee"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/tools/verify-package.cjs",
+      "blob": "09f27e8a2de8f9b52102a0c70bfd551405ea311d"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/verification/REFERENCE-SYNC.md",
+      "blob": "8ae7030b40738c270eb8ceb0cb5fbad40666b290"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/verification/catalog-filters.json",
+      "blob": "4b2ee8c0a3e9eb4cf8e8fe548da27d85498d2e2c"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/verification/cleanup.json",
+      "blob": "795d8a31dde68d456c93b2069bee47237fbb31a7"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/verification/filter-verification-report.json",
+      "blob": "9e5b3506d9975eeb023aec669cbb4d6adaf23eea"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/verification/home-kit.json",
+      "blob": "cba412cc39110029b760db1727787abb2a890af4"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/verification/node-design-verification.json",
+      "blob": "9fbdbc364b0bea16ae9b527fa947b246fc140bbe"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/verification/node-reference-comparison.json",
+      "blob": "e13cf02a1de74111783577dd271f1012de53e4bf"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/verification/open-map-capture.json",
+      "blob": "cdd512c86cacc88f3904fbb2394997a088a0db91"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/verification/open-map-verification.json",
+      "blob": "287766753f1c1a40b5d6ab22a959bf1ed2480849"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/verification/package.json",
+      "blob": "b4b102f6f63fa69ecf0b5d13f8d600a1d2f782bd"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/verification/popup-verification.json",
+      "blob": "634bbdcc305642a1a7425758d30dacbcc963a7ec"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/verification/reference-sync-verification.json",
+      "blob": "d3d6ea9a13af1e0f9d68dabd4b5175262b66130f"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/verification/source-assets.json",
+      "blob": "a0d072a55d6881e102f78fca57a85618d7e4b70e"
+    },
+    {
+      "path": "kommercheskaya-nedvizhimost/verification/verification-report.json",
+      "blob": "a8dce0f51b988e98bd1ce1b499657207f5f130bb"
+    },
+    {
+      "path": "kurortnaya/README.md",
+      "blob": "479a3bd957539ec574f6b7c3dd60706f9ffcfb3b"
+    },
+    {
+      "path": "kurortnaya/STRUCTURE.md",
+      "blob": "e27671dff24cd1de38939276e970ffddcda0f033"
+    },
+    {
+      "path": "kurortnaya/UI-KIT.md",
+      "blob": "4729d9395784a06d7ad6e12622612eed9833bcda"
+    },
+    {
+      "path": "kurortnaya/assets/03ee3351109cbc9b.jpg",
+      "blob": "3d9e8081090e2b47e019ed07234bd3e6cf667aae"
+    },
+    {
+      "path": "kurortnaya/assets/0c6cbbc7668b1ca1.jpg",
+      "blob": "9f1755abb99aee9aebb9c9f7a22433daf0f6f222"
+    },
+    {
+      "path": "kurortnaya/assets/107b1d61c541ddd3.jpg",
+      "blob": "afec09ad6e7ba85a6a850a11e058f82bfa6677ad"
+    },
+    {
+      "path": "kurortnaya/assets/117996dc59c33346.jpg",
+      "blob": "9f65e1f2b36719f6293b4f71d871a2dd73a92acf"
+    },
+    {
+      "path": "kurortnaya/assets/20b70333976f429a.png",
+      "blob": "1d1a9ab3e01cabaf2b78ea97bbbdc8138ba17675"
+    },
+    {
+      "path": "kurortnaya/assets/27765be220f1b2f9.jpeg",
+      "blob": "21bbf743dfa3557c62e2264e8de0964974d62a02"
+    },
+    {
+      "path": "kurortnaya/assets/33c9955c39a65d9c.png",
+      "blob": "16138321a3d24b04b660e1e5cbf77dc4782873e9"
+    },
+    {
+      "path": "kurortnaya/assets/3fd148f5f9f9b21c.jpeg",
+      "blob": "868a6c5eb072f809efdb0307c795833e3cb5b174"
+    },
+    {
+      "path": "kurortnaya/assets/4b7c3c10af05d775.jpg",
+      "blob": "2f21868c3ba8b0c3ac5eea66ac16258b840b5041"
+    },
+    {
+      "path": "kurortnaya/assets/4ee944e87736b2ea.jpeg",
+      "blob": "aa97fc7c02b7f72ef9f00c6adb9472f75fbe2ddc"
+    },
+    {
+      "path": "kurortnaya/assets/5588050a39de0769.png",
+      "blob": "aa769c4fc27b67ac9f5e7ec1f4c765c81cbd4e62"
+    },
+    {
+      "path": "kurortnaya/assets/55bf4ebdafb15af9.png",
+      "blob": "9908cd9cd870dea4cd4a9493ea5853e3e8b7d6c3"
+    },
+    {
+      "path": "kurortnaya/assets/5cc4928106830728.jpg",
+      "blob": "322dc401effbb61b4ddb6446b2c18fa6fa7d95c9"
+    },
+    {
+      "path": "kurortnaya/assets/7695305458b754e9.webp",
+      "blob": "b4b0c84f9c9c97119704b780c2a08c7e7f87a36c"
+    },
+    {
+      "path": "kurortnaya/assets/7a61deff0d1613b9.png",
+      "blob": "23b4a221d823d486987ca888d29dbc2b247a117b"
+    },
+    {
+      "path": "kurortnaya/assets/82768dc0c130b8db.jpg",
+      "blob": "cc5f24b0acf8d6941354a7f88051c7f666d6adc4"
+    },
+    {
+      "path": "kurortnaya/assets/82a3957a0bfcc357.jpeg",
+      "blob": "42640f826d36dfc3be9df34b602ba181b4836f61"
+    },
+    {
+      "path": "kurortnaya/assets/8a11dda83f6df50d.jpg",
+      "blob": "7d9b5efe9a3a0d82e663cfaeef87044fecf37eae"
+    },
+    {
+      "path": "kurortnaya/assets/8da6aa07c453487e.jpg",
+      "blob": "4e80d470ed5713e7fad3ac32e48212a0329bc71c"
+    },
+    {
+      "path": "kurortnaya/assets/8fb32b0d5f29788f.jpg",
+      "blob": "359dbb3249fe317bebe860f24281ded1c7aaae46"
+    },
+    {
+      "path": "kurortnaya/assets/91221eb30b488577.jpg",
+      "blob": "c755399056c5d69c4537b282c6607af30aa2f51b"
+    },
+    {
+      "path": "kurortnaya/assets/SPLIDE-LICENSE.txt",
+      "blob": "d2f800dd7dd363959544cb0adc001319202e8254"
+    },
+    {
+      "path": "kurortnaya/assets/a461ef0bb9597a98.png",
+      "blob": "ccb7e73a24d91ce7d0baa05213788585efbb1da1"
+    },
+    {
+      "path": "kurortnaya/assets/b23d24c94cfe61c0.jpeg",
+      "blob": "a3167ac615579b220629e80492a0e37e07dac2db"
+    },
+    {
+      "path": "kurortnaya/assets/b362b060621c3f6a.png",
+      "blob": "036aa0462ade91359f2e862fc56cb3a8ef018a61"
+    },
+    {
+      "path": "kurortnaya/assets/b3db829cd4ce561e.jpg",
+      "blob": "c7d5ed6a250fd2e37c0411f06e62a14552e7eaa4"
+    },
+    {
+      "path": "kurortnaya/assets/b6f7eb6f0280e324.jpg",
+      "blob": "d9ebd025efa6fed430366073b684b25d56a65fc2"
+    },
+    {
+      "path": "kurortnaya/assets/barn-estate-logo.svg",
+      "blob": "08e09257be6ba36aab243eb00dd79e2e24ebdda9"
+    },
+    {
+      "path": "kurortnaya/assets/barnes-moscow-residence-v4.webp",
+      "blob": "143e742aa51d4b99505b88caa31c24b7a405bdc6"
+    },
+    {
+      "path": "kurortnaya/assets/bb3e2a4636a95a58.png",
+      "blob": "cdcd1efa8ab1d26e9ce8aa5b68129a69287755f0"
+    },
+    {
+      "path": "kurortnaya/assets/bff2c0c9ecfe54d1.png",
+      "blob": "c79d6c1855c0fff083eaff906d5a13110d7f5b3d"
+    },
+    {
+      "path": "kurortnaya/assets/c575a016dbfdbdf1.png",
+      "blob": "8daac676ec01ab7f102e9a358999784e10db1e70"
+    },
+    {
+      "path": "kurortnaya/assets/cc20901cde9e92cb.jpg",
+      "blob": "53ba341e3f5ff41d111ca4e51118bb9097ab3955"
+    },
+    {
+      "path": "kurortnaya/assets/cee560c8a397122f.png",
+      "blob": "2a2b38613dbf471e0b89696a00d10b1de46d5138"
+    },
+    {
+      "path": "kurortnaya/assets/cta-consultation-interior.webp",
+      "blob": "faf3f5ef1ef072329877e453036a58b050f3be13"
+    },
+    {
+      "path": "kurortnaya/assets/cta-contact-resort-lounge.webp",
+      "blob": "796d8a9bd9659f992f2ca13cf305604c4f2d30db"
+    },
+    {
+      "path": "kurortnaya/assets/d000369966411287.jpeg",
+      "blob": "3ef4370543788aa903475482cb70014863a2d8c7"
+    },
+    {
+      "path": "kurortnaya/assets/d342443bc715c08e.jpg",
+      "blob": "bb0fdf5966f59b68e437bad8713d65ca740ef0a0"
+    },
+    {
+      "path": "kurortnaya/assets/d7a73820d4b6be6b.jpg",
+      "blob": "823a8318c53a3b7e55be8485ce13f8968d3a2a20"
+    },
+    {
+      "path": "kurortnaya/assets/dc731cf3d49bbde9.png",
+      "blob": "33f1ae1011495f7ba058d864a68ec02e6a507de1"
+    },
+    {
+      "path": "kurortnaya/assets/dd795ec7bd4fa009.png",
+      "blob": "3ccaae2dc4a4aef3663da43073cb4dae8470454d"
+    },
+    {
+      "path": "kurortnaya/assets/denis-perkovsky-cutout.png",
+      "blob": "fc142e110d6f88317613b6043231818f1a01ac7e"
+    },
+    {
+      "path": "kurortnaya/assets/denis-perkovsky-interior-hq.webp",
+      "blob": "c9fd6742ceca0fc706c78519c5dc12e0baed726e"
+    },
+    {
+      "path": "kurortnaya/assets/e3361bf99169299e.png",
+      "blob": "48d8d318cb376bce6974463918058bb3edeefb19"
+    },
+    {
+      "path": "kurortnaya/assets/e3bfce24445edc32.png",
+      "blob": "e6877673751a0c2491b78aa13124f9896f36bfdb"
+    },
+    {
+      "path": "kurortnaya/assets/e5c25bc8ebe95560.jpg",
+      "blob": "5f846ba6f580b681d290ccb485b2fc066a6f17a8"
+    },
+    {
+      "path": "kurortnaya/assets/e60210b294be536a.jpg",
+      "blob": "3fdc5208cd4e5cceaef365d03221af13166060aa"
+    },
+    {
+      "path": "kurortnaya/assets/e6a3ae6693d26c01.jpg",
+      "blob": "59ccb3b6f179abba2d181be539a3390e130cca65"
+    },
+    {
+      "path": "kurortnaya/assets/eb513d698c3193b9.jpg",
+      "blob": "84e8939dc5c41c42385e4a116ffdb8ca02eb6cb8"
+    },
+    {
+      "path": "kurortnaya/assets/f17300db9185a4db.jpeg",
+      "blob": "8bce8ed26a40c3669eae9f149addc2b36e83c696"
+    },
+    {
+      "path": "kurortnaya/assets/f8285279bd12648c.svg",
+      "blob": "f75df3d06ae45018704bccecf8ade06a5a7c0eb5"
+    },
+    {
+      "path": "kurortnaya/assets/f84cc0de4307f7a6.jpg",
+      "blob": "7dfa87aee372f202270bf9eaf9f8922ed2dabab0"
+    },
+    {
+      "path": "kurortnaya/assets/favicon.ico",
+      "blob": "484ae6ad2e99ee42eed8ce521f3101e0a7097f5b"
+    },
+    {
+      "path": "kurortnaya/assets/fe08ef700cb1af95.jpg",
+      "blob": "56a9ac76fd42ccdeff5e8af2f0635ede14d8ca7e"
+    },
+    {
+      "path": "kurortnaya/assets/fonts/TildaSans-Black.woff2",
+      "blob": "c66e067bacd10c2fbae714fdb68bda0ed2efaddb"
+    },
+    {
+      "path": "kurortnaya/assets/fonts/TildaSans-Bold.woff2",
+      "blob": "9bc1cea0d9cd5d2482e7402ae8da35d273dec073"
+    },
+    {
+      "path": "kurortnaya/assets/fonts/TildaSans-ExtraBold.woff2",
+      "blob": "036c66f44b651d3e7854a010d43b5cd51b6aef06"
+    },
+    {
+      "path": "kurortnaya/assets/fonts/TildaSans-Light.woff2",
+      "blob": "59c22538cb38ed583a9be508537e71f52abe1e9a"
+    },
+    {
+      "path": "kurortnaya/assets/fonts/TildaSans-Medium.woff2",
+      "blob": "b349bb91b1ef8668e3f99f10210e8fdc123e0853"
+    },
+    {
+      "path": "kurortnaya/assets/fonts/TildaSans-Regular.woff2",
+      "blob": "eca2361b9e48b96633f3a494624756b7902679de"
+    },
+    {
+      "path": "kurortnaya/assets/fonts/TildaSans-Semibold.woff2",
+      "blob": "9adfc61d562d7c9a54dfc5a017687d4277dfd2ea"
+    },
+    {
+      "path": "kurortnaya/assets/footer-logo.svg",
+      "blob": "f75df3d06ae45018704bccecf8ade06a5a7c0eb5"
+    },
+    {
+      "path": "kurortnaya/assets/header-max.svg",
+      "blob": "a19c0577708a9dd615881b9fb07dddaa38638931"
+    },
+    {
+      "path": "kurortnaya/assets/header-phone.svg",
+      "blob": "313a8a0ee3b34ec366a4ad7535264e82868b6d2e"
+    },
+    {
+      "path": "kurortnaya/assets/header-telegram.svg",
+      "blob": "b637cb5160934ed0ae000909bd88753f2107910c"
+    },
+    {
+      "path": "kurortnaya/assets/header-whatsapp.svg",
+      "blob": "529fdfb0ef6bb6034fd07b14a9476eea0b0e4ed9"
+    },
+    {
+      "path": "kurortnaya/assets/hero-alpine-mobile.webp",
+      "blob": "a7ca5a980bd20c3dd45f0a5383353c3cbf3a9f3f"
+    },
+    {
+      "path": "kurortnaya/assets/hero-alpine-natural-desktop.webp",
+      "blob": "133564a050fe89e9da7fed603c33d40cac275551"
+    },
+    {
+      "path": "kurortnaya/assets/hero-alpine-natural.md",
+      "blob": "a26edd2dbecbf4ccf7d3a023af5568bd0491b3fa"
+    },
+    {
+      "path": "kurortnaya/assets/lot-interior.webp",
+      "blob": "ad77bcf238c5c46e44cd9eacbee3e6eecd3a1374"
+    },
+    {
+      "path": "kurortnaya/assets/manifest.json",
+      "blob": "51e8b10dbd9e3c7ab17cb803a0105ffad8f1767f"
+    },
+    {
+      "path": "kurortnaya/assets/map-preview.png",
+      "blob": "fdd5417d22871813b850c12c0c8c3799f64d7a41"
+    },
+    {
+      "path": "kurortnaya/assets/material-icons-LICENSE.txt",
+      "blob": "7a4a3ea2424c09fbe48d455aed1eaa94d9124835"
+    },
+    {
+      "path": "kurortnaya/assets/quiz-mobile-denis-waist.webp",
+      "blob": "1c47cdb98e8cc4711334ae33c3d3c7c6742bea14"
+    },
+    {
+      "path": "kurortnaya/blocks/README.md",
+      "blob": "775c9de3b521f4a692bede4bbcd247b82483b688"
+    },
+    {
+      "path": "kurortnaya/blocks/_shared/brand-filters.css",
+      "blob": "7bf8b47cbe3c076d95f5bf5dd7374562f8e5d5cb"
+    },
+    {
+      "path": "kurortnaya/blocks/_shared/catalog-filters.css",
+      "blob": "e496a7b165e604d45aacb68e00846ae431675b8f"
+    },
+    {
+      "path": "kurortnaya/blocks/_shared/library.css",
+      "blob": "894772ec05c44055d6f578a860540d7b34b2dcf9"
+    },
+    {
+      "path": "kurortnaya/blocks/_shared/listing-mode.css",
+      "blob": "7727f285074ddc99ca71ad482a8909cc81900405"
+    },
+    {
+      "path": "kurortnaya/blocks/_shared/owner-footer.css",
+      "blob": "484f8cefad744ffa7e64c0cae6140933d91536a4"
+    },
+    {
+      "path": "kurortnaya/blocks/_shared/owner-header.css",
+      "blob": "0edd67e325647c63c5c5ae41bfd37fbba097c9e3"
+    },
+    {
+      "path": "kurortnaya/blocks/_shared/preview.js",
+      "blob": "f5f7044a59eeafa66293fd39305eb97f1f5289a5"
+    },
+    {
+      "path": "kurortnaya/blocks/_shared/reference-filters.js",
+      "blob": "360480af61e4a347907d9746ecf65ad522867f5e"
+    },
+    {
+      "path": "kurortnaya/blocks/_shared/runtime.js",
+      "blob": "6658d7bff703409f64f691ac5b60e67c52816931"
+    },
+    {
+      "path": "kurortnaya/blocks/_shared/source.css",
+      "blob": "772d3393212f57a18eb9c5deb8b387f6a9028fef"
+    },
+    {
+      "path": "kurortnaya/blocks/_shared/start-sales-cards.css",
+      "blob": "ca8062d6f008f2d19be3ee382008fb928b54cabb"
+    },
+    {
+      "path": "kurortnaya/blocks/_shared/ui-kit.css",
+      "blob": "de9dbf08e245ee1b0c9fdd961c516ac73ab9772c"
+    },
+    {
+      "path": "kurortnaya/blocks/brand-intro/README.md",
+      "blob": "26dfbc5a87044d53b59ae91d3883194f0f8c2b3d"
+    },
+    {
+      "path": "kurortnaya/blocks/brand-intro/block.json",
+      "blob": "1714d548935f13f8a5863b5214f3602f5ca1d4e1"
+    },
+    {
+      "path": "kurortnaya/blocks/brand-intro/fragment.html",
+      "blob": "0214a9737539dee6e8920e3695dffc423aada0a1"
+    },
+    {
+      "path": "kurortnaya/blocks/brand-intro/index.html",
+      "blob": "fbae44dd2fc916f4a0d4389f62bd1142be94cfcf"
+    },
+    {
+      "path": "kurortnaya/blocks/brand-intro/mobile.html",
+      "blob": "0214a9737539dee6e8920e3695dffc423aada0a1"
+    },
+    {
+      "path": "kurortnaya/blocks/brand-intro/page-desktop.html",
+      "blob": "166c2b6f938cae796959c0188d7f697d47bcb85c"
+    },
+    {
+      "path": "kurortnaya/blocks/brand-intro/page-mobile.html",
+      "blob": "166c2b6f938cae796959c0188d7f697d47bcb85c"
+    },
+    {
+      "path": "kurortnaya/blocks/brand-intro/styles.css",
+      "blob": "42962d691055095d6c4d69f4b3df676a8ea18d93"
+    },
+    {
+      "path": "kurortnaya/blocks/card-lot/README.md",
+      "blob": "71618c29262c892c9e3a8aae1a642aac5ccead67"
+    },
+    {
+      "path": "kurortnaya/blocks/card-lot/block.json",
+      "blob": "d0da27d17725c3b664c70b7e863a3239de88e4cf"
+    },
+    {
+      "path": "kurortnaya/blocks/card-lot/fragment.html",
+      "blob": "5dbfda5565d9ced248c8a7b13f5defe7f2a5abe5"
+    },
+    {
+      "path": "kurortnaya/blocks/card-lot/index.html",
+      "blob": "e4f685579b02ef913473014855927d7c4a89f0fc"
+    },
+    {
+      "path": "kurortnaya/blocks/card-lot/mobile.html",
+      "blob": "5dbfda5565d9ced248c8a7b13f5defe7f2a5abe5"
+    },
+    {
+      "path": "kurortnaya/blocks/card-lot/styles.css",
+      "blob": "42962d691055095d6c4d69f4b3df676a8ea18d93"
+    },
+    {
+      "path": "kurortnaya/blocks/card-project/README.md",
+      "blob": "8f940739dc0c2c4220407475c6ae3c3d51a5f5bf"
+    },
+    {
+      "path": "kurortnaya/blocks/card-project/block.json",
+      "blob": "45c82050cba59cc629005ac1ec5da2d579c4a901"
+    },
+    {
+      "path": "kurortnaya/blocks/card-project/fragment.html",
+      "blob": "1a5c512dad16d1b39d47e5bf3d37965b65560cf5"
+    },
+    {
+      "path": "kurortnaya/blocks/card-project/index.html",
+      "blob": "e3e8b3764625a1da10f90beddcf3cf121701675a"
+    },
+    {
+      "path": "kurortnaya/blocks/card-project/mobile.html",
+      "blob": "1a5c512dad16d1b39d47e5bf3d37965b65560cf5"
+    },
+    {
+      "path": "kurortnaya/blocks/card-project/styles.css",
+      "blob": "42962d691055095d6c4d69f4b3df676a8ea18d93"
+    },
+    {
+      "path": "kurortnaya/blocks/card-start-sales/README.md",
+      "blob": "27d5c5f51d64307474eff994969c62c884333a09"
+    },
+    {
+      "path": "kurortnaya/blocks/card-start-sales/block.json",
+      "blob": "c9d0d610ee88a7d979f67dd3657e8baa9d164061"
+    },
+    {
+      "path": "kurortnaya/blocks/card-start-sales/fragment.html",
+      "blob": "bd3fff58edc05d13f048a15e394290ae44eeba1e"
+    },
+    {
+      "path": "kurortnaya/blocks/card-start-sales/index.html",
+      "blob": "5b3323f38c44237cf333e3bbef3c44e89b793eed"
+    },
+    {
+      "path": "kurortnaya/blocks/card-start-sales/mobile.html",
+      "blob": "bd3fff58edc05d13f048a15e394290ae44eeba1e"
+    },
+    {
+      "path": "kurortnaya/blocks/card-start-sales/styles.css",
+      "blob": "42962d691055095d6c4d69f4b3df676a8ea18d93"
+    },
+    {
+      "path": "kurortnaya/blocks/catalog.html",
+      "blob": "982f8e9a2dedc20aa6e346bc800b0a85755f6a52"
+    },
+    {
+      "path": "kurortnaya/blocks/cta-bottom/README.md",
+      "blob": "41eab0a738a9f7fa7a2de6e2f0c4a486b381efc5"
+    },
+    {
+      "path": "kurortnaya/blocks/cta-bottom/block.json",
+      "blob": "45bfb2a3cb4a9930b597be205a5d53d3b2e163f8"
+    },
+    {
+      "path": "kurortnaya/blocks/cta-bottom/fragment.html",
+      "blob": "87d827f753d5b390e7cb8ccff69e50d1e266fb25"
+    },
+    {
+      "path": "kurortnaya/blocks/cta-bottom/index.html",
+      "blob": "a8acf792e7b1c74b699bde717cc7a40d9788625d"
+    },
+    {
+      "path": "kurortnaya/blocks/cta-bottom/mobile.html",
+      "blob": "87d827f753d5b390e7cb8ccff69e50d1e266fb25"
+    },
+    {
+      "path": "kurortnaya/blocks/cta-bottom/page-desktop.html",
+      "blob": "868766ace4b44ee46fca00078e87419fb72ae68c"
+    },
+    {
+      "path": "kurortnaya/blocks/cta-bottom/page-mobile.html",
+      "blob": "868766ace4b44ee46fca00078e87419fb72ae68c"
+    },
+    {
+      "path": "kurortnaya/blocks/cta-bottom/styles.css",
+      "blob": "42962d691055095d6c4d69f4b3df676a8ea18d93"
+    },
+    {
+      "path": "kurortnaya/blocks/cta-central/README.md",
+      "blob": "b78fba3e2c2163f075246349546c613a62426e0e"
+    },
+    {
+      "path": "kurortnaya/blocks/cta-central/block.json",
+      "blob": "9307ff8032f25127affa4ff11b6b2e0760859864"
+    },
+    {
+      "path": "kurortnaya/blocks/cta-central/fragment.html",
+      "blob": "eb9e05ee84cbbc2172962682643e8a3e2e2e825a"
+    },
+    {
+      "path": "kurortnaya/blocks/cta-central/index.html",
+      "blob": "d5eca750ea1ee84692716c191482761e8e120fc6"
+    },
+    {
+      "path": "kurortnaya/blocks/cta-central/mobile.html",
+      "blob": "eb9e05ee84cbbc2172962682643e8a3e2e2e825a"
+    },
+    {
+      "path": "kurortnaya/blocks/cta-central/page-desktop.html",
+      "blob": "e7cac73d3a1d5ea2835543db1985de8c5d5cbae9"
+    },
+    {
+      "path": "kurortnaya/blocks/cta-central/page-mobile.html",
+      "blob": "e7cac73d3a1d5ea2835543db1985de8c5d5cbae9"
+    },
+    {
+      "path": "kurortnaya/blocks/cta-central/styles.css",
+      "blob": "42962d691055095d6c4d69f4b3df676a8ea18d93"
+    },
+    {
+      "path": "kurortnaya/blocks/directions/README.md",
+      "blob": "f2f59621acf0415f02541f403c733516a9b49ee8"
+    },
+    {
+      "path": "kurortnaya/blocks/directions/block.json",
+      "blob": "52b313118a988cfacc0a7b30dde4df8c1bf80315"
+    },
+    {
+      "path": "kurortnaya/blocks/directions/fragment.html",
+      "blob": "ddb78b9ca8092f894233f15168cecb5e48f40fd2"
+    },
+    {
+      "path": "kurortnaya/blocks/directions/index.html",
+      "blob": "cd524d176d3e2f25af8ef3031791b91a81fe813c"
+    },
+    {
+      "path": "kurortnaya/blocks/directions/mobile.html",
+      "blob": "ddb78b9ca8092f894233f15168cecb5e48f40fd2"
+    },
+    {
+      "path": "kurortnaya/blocks/directions/page-desktop.html",
+      "blob": "117f06ec7790a950de54d3b8d08feeb08d05e880"
+    },
+    {
+      "path": "kurortnaya/blocks/directions/page-mobile.html",
+      "blob": "117f06ec7790a950de54d3b8d08feeb08d05e880"
+    },
+    {
+      "path": "kurortnaya/blocks/directions/styles.css",
+      "blob": "42962d691055095d6c4d69f4b3df676a8ea18d93"
+    },
+    {
+      "path": "kurortnaya/blocks/faq/README.md",
+      "blob": "9ea75c2d217143d957228056a1b1a6a0b29e17e0"
+    },
+    {
+      "path": "kurortnaya/blocks/faq/block.json",
+      "blob": "f8f5b76e7dd0bc5c15ac801e9d6bc84da7f95329"
+    },
+    {
+      "path": "kurortnaya/blocks/faq/fragment.html",
+      "blob": "3ee84cb6cb4717fd91e80d75e8b64f90eb03466d"
+    },
+    {
+      "path": "kurortnaya/blocks/faq/index.html",
+      "blob": "153fc45731242461f3f665597564406285bd0941"
+    },
+    {
+      "path": "kurortnaya/blocks/faq/mobile.html",
+      "blob": "3ee84cb6cb4717fd91e80d75e8b64f90eb03466d"
+    },
+    {
+      "path": "kurortnaya/blocks/faq/page-desktop.html",
+      "blob": "a360b072cdddf4a4e145d390d4be3ecb2b0e4d44"
+    },
+    {
+      "path": "kurortnaya/blocks/faq/page-mobile.html",
+      "blob": "a360b072cdddf4a4e145d390d4be3ecb2b0e4d44"
+    },
+    {
+      "path": "kurortnaya/blocks/faq/styles.css",
+      "blob": "42962d691055095d6c4d69f4b3df676a8ea18d93"
+    },
+    {
+      "path": "kurortnaya/blocks/filters-modal/README.md",
+      "blob": "e5da60589ba64ec730062c37509d549e0008e32b"
+    },
+    {
+      "path": "kurortnaya/blocks/floating-expert/README.md",
+      "blob": "963e6f92fd8062aaf007203452828edae77a382e"
+    },
+    {
+      "path": "kurortnaya/blocks/floating-expert/block.json",
+      "blob": "7f732eb0e9ea025d46210d58cf3af4c91d1aef42"
+    },
+    {
+      "path": "kurortnaya/blocks/floating-expert/fragment.html",
+      "blob": "460b20aa8d60c8e14e5ab0fcc08a7051de191952"
+    },
+    {
+      "path": "kurortnaya/blocks/floating-expert/index.html",
+      "blob": "33f1d32c108d98b9a66f253cba75284da93b2ddb"
+    },
+    {
+      "path": "kurortnaya/blocks/floating-expert/mobile.html",
+      "blob": "460b20aa8d60c8e14e5ab0fcc08a7051de191952"
+    },
+    {
+      "path": "kurortnaya/blocks/floating-expert/page-desktop.html",
+      "blob": "029195586fc95129c9176851de32d6f7d0541988"
+    },
+    {
+      "path": "kurortnaya/blocks/floating-expert/page-mobile.html",
+      "blob": "029195586fc95129c9176851de32d6f7d0541988"
+    },
+    {
+      "path": "kurortnaya/blocks/floating-expert/styles.css",
+      "blob": "42962d691055095d6c4d69f4b3df676a8ea18d93"
+    },
+    {
+      "path": "kurortnaya/blocks/footer/README.md",
+      "blob": "abda60aae06347d60f8f3bda01b4874248f9cf82"
+    },
+    {
+      "path": "kurortnaya/blocks/footer/block.json",
+      "blob": "32ae80fa599f77257209e6454b32d108eb3e1fc2"
+    },
+    {
+      "path": "kurortnaya/blocks/footer/fragment.html",
+      "blob": "e64b502eb32615e77f903480fd499e5f8b3c2598"
+    },
+    {
+      "path": "kurortnaya/blocks/footer/index.html",
+      "blob": "a40b2122c91559d7272d3e912011f32fb3ec6313"
+    },
+    {
+      "path": "kurortnaya/blocks/footer/mobile.html",
+      "blob": "e64b502eb32615e77f903480fd499e5f8b3c2598"
+    },
+    {
+      "path": "kurortnaya/blocks/footer/page-desktop.html",
+      "blob": "d893b61cd9f1bfc8750388e38ce00e8272479f44"
+    },
+    {
+      "path": "kurortnaya/blocks/footer/page-mobile.html",
+      "blob": "d893b61cd9f1bfc8750388e38ce00e8272479f44"
+    },
+    {
+      "path": "kurortnaya/blocks/footer/styles.css",
+      "blob": "42962d691055095d6c4d69f4b3df676a8ea18d93"
+    },
+    {
+      "path": "kurortnaya/blocks/header/README.md",
+      "blob": "201e7ccc7c48a06f7a2a111fb4705bf6ae3276cb"
+    },
+    {
+      "path": "kurortnaya/blocks/header/block.json",
+      "blob": "176d4d3846cd57b39a807c56ff35b83a48b36373"
+    },
+    {
+      "path": "kurortnaya/blocks/header/fragment.html",
+      "blob": "c300753c61251c2031f8f632d4646c936f17c5d7"
+    },
+    {
+      "path": "kurortnaya/blocks/header/index.html",
+      "blob": "df89e32a9713ba185f749794308b66859a7b6a82"
+    },
+    {
+      "path": "kurortnaya/blocks/header/mobile.html",
+      "blob": "eaee57616e171e1c9c2ce127ef8bd128e1614c4e"
+    },
+    {
+      "path": "kurortnaya/blocks/header/page-desktop.html",
+      "blob": "bea520d86dfb233d63a84e439862c7118ad6732a"
+    },
+    {
+      "path": "kurortnaya/blocks/header/page-mobile.html",
+      "blob": "bea520d86dfb233d63a84e439862c7118ad6732a"
+    },
+    {
+      "path": "kurortnaya/blocks/header/styles.css",
+      "blob": "42962d691055095d6c4d69f4b3df676a8ea18d93"
+    },
+    {
+      "path": "kurortnaya/blocks/hero/README.md",
+      "blob": "62c133bec5a8a7657085434ba446a0e2a117ee29"
+    },
+    {
+      "path": "kurortnaya/blocks/hero/block.json",
+      "blob": "c27bd0cf50ad4edff2ff5c2f6e5a9d701e856e87"
+    },
+    {
+      "path": "kurortnaya/blocks/hero/fragment.html",
+      "blob": "8abff197faacd9efc1ed294828ad8117f822da61"
+    },
+    {
+      "path": "kurortnaya/blocks/hero/index.html",
+      "blob": "32bb5a46bfae1b6f82c483a7243f6284049b72d4"
+    },
+    {
+      "path": "kurortnaya/blocks/hero/mobile.html",
+      "blob": "8abff197faacd9efc1ed294828ad8117f822da61"
+    },
+    {
+      "path": "kurortnaya/blocks/hero/page-desktop.html",
+      "blob": "a5430f9ca8130b11b5c28c9a681797937e08c062"
+    },
+    {
+      "path": "kurortnaya/blocks/hero/page-mobile.html",
+      "blob": "a5430f9ca8130b11b5c28c9a681797937e08c062"
+    },
+    {
+      "path": "kurortnaya/blocks/hero/styles.css",
+      "blob": "42962d691055095d6c4d69f4b3df676a8ea18d93"
+    },
+    {
+      "path": "kurortnaya/blocks/index.html",
+      "blob": "004a7578ab3b4bf02470dd09456f4b5e6ce00d85"
+    },
+    {
+      "path": "kurortnaya/blocks/listing/README.md",
+      "blob": "10918265ca30b48fe50bb1b87f136969ac6e1d9c"
+    },
+    {
+      "path": "kurortnaya/blocks/listing/block.json",
+      "blob": "ddaaf0653dfee5961f185ce8419b688ff251ad0e"
+    },
+    {
+      "path": "kurortnaya/blocks/listing/fragment.html",
+      "blob": "cfd239cbdbab27f980d899191f8858572f0044af"
+    },
+    {
+      "path": "kurortnaya/blocks/listing/index.html",
+      "blob": "905fcbc3853b42195889c6d03952ee42fdece7b6"
+    },
+    {
+      "path": "kurortnaya/blocks/listing/mobile.html",
+      "blob": "5e16e04535d5109e8b57e2347e4b70a56da5f43c"
+    },
+    {
+      "path": "kurortnaya/blocks/listing/page-desktop.html",
+      "blob": "f6a30c3b336b5858f3b45381bdb860cd00ab0805"
+    },
+    {
+      "path": "kurortnaya/blocks/listing/page-mobile.html",
+      "blob": "9e450173b555f4641deddc22086def6e1a991d18"
+    },
+    {
+      "path": "kurortnaya/blocks/listing/styles.css",
+      "blob": "42962d691055095d6c4d69f4b3df676a8ea18d93"
+    },
+    {
+      "path": "kurortnaya/blocks/manifest.json",
+      "blob": "77dcc5b690fab5461da3c11228885315e34e2fa7"
+    },
+    {
+      "path": "kurortnaya/blocks/map/README.md",
+      "blob": "465d27b3142642a07761ebe33f6a3375026c4157"
+    },
+    {
+      "path": "kurortnaya/blocks/map/block.json",
+      "blob": "c4b0aff1c0ab5c3f265e3520fce5b6ba086bb02b"
+    },
+    {
+      "path": "kurortnaya/blocks/map/fragment.html",
+      "blob": "a9a9e22d3dd9428336c6af3ba9f4703b688b8736"
+    },
+    {
+      "path": "kurortnaya/blocks/map/index.html",
+      "blob": "a7e5f28dfcb786777b3f1907ec2bbd9f280e504e"
+    },
+    {
+      "path": "kurortnaya/blocks/map/mobile.html",
+      "blob": "a9a9e22d3dd9428336c6af3ba9f4703b688b8736"
+    },
+    {
+      "path": "kurortnaya/blocks/map/page-desktop.html",
+      "blob": "23c201f4514e6c77b1a88557105add9a4035a75a"
+    },
+    {
+      "path": "kurortnaya/blocks/map/page-mobile.html",
+      "blob": "23c201f4514e6c77b1a88557105add9a4035a75a"
+    },
+    {
+      "path": "kurortnaya/blocks/map/panel/README.md",
+      "blob": "b3b65be1da1d23eb122424d7cc40aa8a017b71e7"
+    },
+    {
+      "path": "kurortnaya/blocks/map/styles.css",
+      "blob": "42962d691055095d6c4d69f4b3df676a8ea18d93"
+    },
+    {
+      "path": "kurortnaya/blocks/news/README.md",
+      "blob": "db60b35534260244981b5837233cada73c6e3c30"
+    },
+    {
+      "path": "kurortnaya/blocks/news/block.json",
+      "blob": "10676a973d98b2401cc3f9120cad540513bd4e40"
+    },
+    {
+      "path": "kurortnaya/blocks/news/fragment.html",
+      "blob": "9b72106369b39508b103b8d32ef0b15d2915c65b"
+    },
+    {
+      "path": "kurortnaya/blocks/news/index.html",
+      "blob": "dc1e294f1ee812d08be3640ebf63e52ff19a5739"
+    },
+    {
+      "path": "kurortnaya/blocks/news/mobile.html",
+      "blob": "50124e54dce1108fbf95f74f4dac0eca9e8792d7"
+    },
+    {
+      "path": "kurortnaya/blocks/news/page-desktop.html",
+      "blob": "927543f64f0a089c78ba5d8976b1aea830d688d4"
+    },
+    {
+      "path": "kurortnaya/blocks/news/page-mobile.html",
+      "blob": "a5c2d021f9f616e0f27c3529c921d2edc4cd3441"
+    },
+    {
+      "path": "kurortnaya/blocks/news/styles.css",
+      "blob": "42962d691055095d6c4d69f4b3df676a8ea18d93"
+    },
+    {
+      "path": "kurortnaya/blocks/quick-filter-dropdowns/README.md",
+      "blob": "1fb9394461aea84a5b3254d540c739afd4e52d03"
+    },
+    {
+      "path": "kurortnaya/blocks/request-modal/README.md",
+      "blob": "f3beea3d6be1a99c7b7bbd99b6621bfef6b94348"
+    },
+    {
+      "path": "kurortnaya/blocks/request-modal/block.json",
+      "blob": "cb9718b5e167b9dff46dbc9f0c79dd80c0e34011"
+    },
+    {
+      "path": "kurortnaya/blocks/request-modal/fragment.html",
+      "blob": "07877db696fb293776c1c171a1f1580b05b498d3"
+    },
+    {
+      "path": "kurortnaya/blocks/request-modal/index.html",
+      "blob": "e150ca2d56765cd5ebb1253e8960fcb18d19c94b"
+    },
+    {
+      "path": "kurortnaya/blocks/request-modal/mobile.html",
+      "blob": "07877db696fb293776c1c171a1f1580b05b498d3"
+    },
+    {
+      "path": "kurortnaya/blocks/request-modal/questions.json",
+      "blob": "f5f4e5de509e3b84982a45ef11eeb671b5c54a74"
+    },
+    {
+      "path": "kurortnaya/blocks/request-modal/styles.css",
+      "blob": "42962d691055095d6c4d69f4b3df676a8ea18d93"
+    },
+    {
+      "path": "kurortnaya/blocks/start-sales/README.md",
+      "blob": "cb72148408d7d8965a1fd4143bf930fb9f11618c"
+    },
+    {
+      "path": "kurortnaya/blocks/start-sales/block.json",
+      "blob": "6dc29804ace38faf718a55d11a5926fd0d7dcec3"
+    },
+    {
+      "path": "kurortnaya/blocks/start-sales/fragment.html",
+      "blob": "8c7ad6fdc8816db5e4a03e5a99a1ce15c22fc570"
+    },
+    {
+      "path": "kurortnaya/blocks/start-sales/index.html",
+      "blob": "51dd46310f21aa2bd975ea212e857023bea4abaa"
+    },
+    {
+      "path": "kurortnaya/blocks/start-sales/mobile.html",
+      "blob": "8c7ad6fdc8816db5e4a03e5a99a1ce15c22fc570"
+    },
+    {
+      "path": "kurortnaya/blocks/start-sales/page-desktop.html",
+      "blob": "d287245139359f9d985352da6ab563e4a07804d4"
+    },
+    {
+      "path": "kurortnaya/blocks/start-sales/page-mobile.html",
+      "blob": "d287245139359f9d985352da6ab563e4a07804d4"
+    },
+    {
+      "path": "kurortnaya/blocks/start-sales/styles.css",
+      "blob": "42962d691055095d6c4d69f4b3df676a8ea18d93"
+    },
+    {
+      "path": "kurortnaya/blocks/sticky-nav/README.md",
+      "blob": "49950876f3b59350a5e4c8772c62530e5cb5817e"
+    },
+    {
+      "path": "kurortnaya/blocks/sticky-nav/block.json",
+      "blob": "43ff0afbb60cb945cd89a09ee889a12534ada850"
+    },
+    {
+      "path": "kurortnaya/blocks/sticky-nav/fragment.html",
+      "blob": "c7efc3e03f470d6d2feb4209a4c25b0c305e74c2"
+    },
+    {
+      "path": "kurortnaya/blocks/sticky-nav/index.html",
+      "blob": "3f3b86ceb194ab8c3e32404a99786604931b4cdf"
+    },
+    {
+      "path": "kurortnaya/blocks/sticky-nav/mobile.html",
+      "blob": "c7efc3e03f470d6d2feb4209a4c25b0c305e74c2"
+    },
+    {
+      "path": "kurortnaya/blocks/sticky-nav/styles.css",
+      "blob": "42962d691055095d6c4d69f4b3df676a8ea18d93"
+    },
+    {
+      "path": "kurortnaya/brand-nowrap.css",
+      "blob": "c6e2c71216f0686ebeb5db7a5c2c71e6dde04bc5"
+    },
+    {
+      "path": "kurortnaya/brand-nowrap.js",
+      "blob": "3d08e7284078ddf235e0f9bcb1a5462e1e16e528"
+    },
+    {
+      "path": "kurortnaya/css/brand-filters.css",
+      "blob": "7fc9c08aeaa74a9dec95fbc13510ba29a208bc0d"
+    },
+    {
+      "path": "kurortnaya/css/catalog-filters.css",
+      "blob": "75ed354bf5c460418d8ccc667ed67514c57a5a4b"
+    },
+    {
+      "path": "kurortnaya/css/document-index.css",
+      "blob": "15a8b50a3afa549bb11e88c79aeb4dab198d443e"
+    },
+    {
+      "path": "kurortnaya/css/expert-quiz.css",
+      "blob": "2b8673270f52eaa532cf9932f1c78bc14f2fc0fd"
+    },
+    {
+      "path": "kurortnaya/css/filters-modal.css",
+      "blob": "0445565c8f0d60597fda69581ca87679c3d6268f"
+    },
+    {
+      "path": "kurortnaya/css/header-actions.css",
+      "blob": "dd3e76f7c45c8660261bd2c15416f7dabc79d2fe"
+    },
+    {
+      "path": "kurortnaya/css/header-layout.css",
+      "blob": "02bbba4923b087d130e6e4447213e3757f18a619"
+    },
+    {
+      "path": "kurortnaya/css/home-reference.css",
+      "blob": "3d3e1128fbe0490908c647b619eca812272f04d0"
+    },
+    {
+      "path": "kurortnaya/css/listing-mode.css",
+      "blob": "2aedd522c3fabb13c94cce08d3f01c6e01e22059"
+    },
+    {
+      "path": "kurortnaya/css/map-fullscreen.css",
+      "blob": "dd828f14460c9cb4a9b80b9ae9734b28ab59266d"
+    },
+    {
+      "path": "kurortnaya/css/owner-footer.css",
+      "blob": "0ea24a1446487c7ce9165e5ad374d824f39a51e0"
+    },
+    {
+      "path": "kurortnaya/css/owner-header.css",
+      "blob": "4932b4b0dac927cf0d50184c2b4d2c56ff5c3e57"
+    },
+    {
+      "path": "kurortnaya/css/quick-filters.css",
+      "blob": "865f394ddb45bf127bdeaf724fcd31e97132106b"
+    },
+    {
+      "path": "kurortnaya/css/source.css",
+      "blob": "f419b406a5e5fe2bdd17b6dd36a6d52141ab1007"
+    },
+    {
+      "path": "kurortnaya/css/start-sales-cards.css",
+      "blob": "9502bfc3798c5727a9b84a06d596f1ebfbd1c192"
+    },
+    {
+      "path": "kurortnaya/css/ui-kit.css",
+      "blob": "ab177192d12f6ea723408276140f632b54b02b21"
+    },
+    {
+      "path": "kurortnaya/current-load-2026-11-03.md",
+      "blob": "f4f8ef902902ec4497789da07606eef57df5293c"
+    },
+    {
+      "path": "kurortnaya/expert-quiz-2026-11-02.md",
+      "blob": "4152f38c0013fd18dbc3760f0d462383f19e0827"
+    },
+    {
+      "path": "kurortnaya/filters-catalog-reference-2026-11-02.md",
+      "blob": "52d5fe729dafc67fdb7aea856a91dc736bd610a9"
+    },
+    {
+      "path": "kurortnaya/filters-current-catalog-2026-11-03.md",
+      "blob": "3dde932d60f8ed9217116ce69778a52f74d90ed0"
+    },
+    {
+      "path": "kurortnaya/hero-breadcrumbs-2026-11-03.md",
+      "blob": "497746e52c349f32ef52353cdb87dcfad1e85159"
+    },
+    {
+      "path": "kurortnaya/hero-laptop.css",
+      "blob": "5e6a0ea2a859c22e947af90ee0294cc996b0559c"
+    },
+    {
+      "path": "kurortnaya/index.html",
+      "blob": "27144329432451fb44cf996e7afa81c926e06e81"
+    },
+    {
+      "path": "kurortnaya/js/bootstrap.js",
+      "blob": "a715c4cb7587c29273951eb7a10b438c9b2bc26e"
+    },
+    {
+      "path": "kurortnaya/js/brand-filters.js",
+      "blob": "d0d318807e998e744bd3f02c121315b12263f308"
+    },
+    {
+      "path": "kurortnaya/js/catalog-filters.js",
+      "blob": "1e7e165a0d6d1c3b1a1e1dcc076db524e5a27282"
+    },
+    {
+      "path": "kurortnaya/js/expert-quiz.js",
+      "blob": "230bb8f1c6bcec5d8029cd1bdec6d28ed76d354c"
+    },
+    {
+      "path": "kurortnaya/js/faq.js",
+      "blob": "d8c0bebb2d249ce2da025bdef00d76b08ae8708e"
+    },
+    {
+      "path": "kurortnaya/js/filters-modal.js",
+      "blob": "d72e85dc453271b10dff9dc64de41c0ddc1a1b75"
+    },
+    {
+      "path": "kurortnaya/js/filters-template.js",
+      "blob": "881f3ca4bba7ab373a71474e400fd8a8329a0feb"
+    },
+    {
+      "path": "kurortnaya/js/header-layout.js",
+      "blob": "c5d08990b33cf727dda3e39a112ff9eab4dbbd3d"
+    },
+    {
+      "path": "kurortnaya/js/map-fullscreen.js",
+      "blob": "7690351a99b6250bb8860c901cb52f218795347f"
+    },
+    {
+      "path": "kurortnaya/js/map-projects.js",
+      "blob": "266453e2ba4682e92e954219ac4242158dc8fe3b"
+    },
+    {
+      "path": "kurortnaya/js/quick-filters.js",
+      "blob": "2c559462178bca654182800a614cd88b1df5ab86"
+    },
+    {
+      "path": "kurortnaya/js/start-sales-cards.js",
+      "blob": "259c026b20d9d817404818451c80a2486302fb04"
+    },
+    {
+      "path": "kurortnaya/js/ui-kit-runtime.js",
+      "blob": "b41d946a1bf8af54600e009f436cd5b4e62157f1"
+    },
+    {
+      "path": "kurortnaya/kit-2026-11-01.md",
+      "blob": "00abe0cb4638a5916da1523a57d42416a366b6b2"
+    },
+    {
+      "path": "kurortnaya/kit-refresh-2026-11-03.md",
+      "blob": "638ed7198d1041b97c758f04496a3038d274abf6"
+    },
+    {
+      "path": "kurortnaya/listing-controls-row-2026-11-03.md",
+      "blob": "8831149a45872816c7472c23c9ff9b7e81dfc945"
+    },
+    {
+      "path": "kurortnaya/media-header.css",
+      "blob": "fefcda204554a82bfd3c632ad0e23cf8991b4728"
+    },
+    {
+      "path": "kurortnaya/media-header.js",
+      "blob": "65430fcda07e5e86f8d7ca0fe9fa9d37dc24a750"
+    },
+    {
+      "path": "kurortnaya/mobile.html",
+      "blob": "a0f0339fbb26cba7e98c13b35a4631ddc2070073"
+    },
+    {
+      "path": "kurortnaya/node-catalog-links.css",
+      "blob": "94acd378a04cb708060824c2ed133041af96ee82"
+    },
+    {
+      "path": "kurortnaya/node-catalog-links.js",
+      "blob": "041247681894a8d161267bc4b810e011148e15e9"
+    },
+    {
+      "path": "kurortnaya/node-expert-dialog.css",
+      "blob": "17ba1b00b5c5a23b6f590ced6e9727717078250e"
+    },
+    {
+      "path": "kurortnaya/node-expert-dialog.js",
+      "blob": "89a6aaba43129951c85e0427574efacac61de139"
+    },
+    {
+      "path": "kurortnaya/node-filters.css",
+      "blob": "b2de8462f3bfb7aca9627f1e98d212710f5eea9c"
+    },
+    {
+      "path": "kurortnaya/node-filters.js",
+      "blob": "b9b0dbf0e99a21df074a80a4931495e67ae55fc8"
+    },
+    {
+      "path": "kurortnaya/node-footer-logo.svg",
+      "blob": "4a68fae5eb75034891f86a42bd6dbc64caeee4d1"
+    },
+    {
+      "path": "kurortnaya/node-footer.css",
+      "blob": "30d641a79037a386b366a618989c90ca6eb8be08"
+    },
+    {
+      "path": "kurortnaya/node-footer.js",
+      "blob": "d27a79ed3152fd84e7f27829bf691fede0410e9a"
+    },
+    {
+      "path": "kurortnaya/node-header.css",
+      "blob": "fc4e7d756f5da9ee3cd3cb7a2ce5d488e4c2c6a1"
+    },
+    {
+      "path": "kurortnaya/node-news.css",
+      "blob": "2d7da1cc93431d3c9d2aa5878223c3e96762c0a7"
+    },
+    {
+      "path": "kurortnaya/node-news.js",
+      "blob": "854691e89feb331fab6840eb69512754982ceb8b"
+    },
+    {
+      "path": "kurortnaya/node-recommendations-LICENSE.txt",
+      "blob": "d2f800dd7dd363959544cb0adc001319202e8254"
+    },
+    {
+      "path": "kurortnaya/node-recommendations.css",
+      "blob": "238cf08dbcbb705922b93680564756452c83a845"
+    },
+    {
+      "path": "kurortnaya/node-recommendations.js",
+      "blob": "cacfb07a51556bc815b49e5001c7bf3481889a9e"
+    },
+    {
+      "path": "kurortnaya/node-shell.css",
+      "blob": "ec64ab464eaaf6eb286616f8ab42b63b960d323d"
+    },
+    {
+      "path": "kurortnaya/node-shell.js",
+      "blob": "0e5c03568f697b6a4b8b172ccde9a84d2c2b94c7"
+    },
+    {
+      "path": "kurortnaya/node-spacing.css",
+      "blob": "66711c4b5ed5945c5699e21939456714c174a074"
+    },
+    {
+      "path": "kurortnaya/quiz-home-parity-2026-11-03.md",
+      "blob": "31f9dbb4ce9e47439fdbb8002e240f6452feabc6"
+    },
+    {
+      "path": "kurortnaya/reference-first-degree.md",
+      "blob": "2194423fbe1abb9df50bd07adaad06789770fcc0"
+    },
+    {
+      "path": "kurortnaya/release.json",
+      "blob": "8021009804f1c060a5dd5b45ab7d931568e78a10"
+    },
+    {
+      "path": "kurortnaya/start-sales-home-reference-2026-11-02.md",
+      "blob": "5d04d106b0d03bf020c1f59cb65ba076bacc6fb5"
+    },
+    {
+      "path": "kurortnaya/tools/build-page.cjs",
+      "blob": "77136c444bc6b4093d2f23c290352ece729f51ef"
+    },
+    {
+      "path": "kurortnaya/tools/sync-blocks.cjs",
+      "blob": "59d6053571429467d1a2d023449b5e9778ce56da"
+    },
+    {
+      "path": "kurortnaya/tools/verify-catalog-filter-blocks.cjs",
+      "blob": "100c14b214a28aedc42d43cdb890f1499d02cad2"
+    },
+    {
+      "path": "kurortnaya/tools/verify-catalog-filters.cjs",
+      "blob": "ce359b9c28622fe6ac501cfcacb234e1c996dc19"
+    },
+    {
+      "path": "kurortnaya/tools/verify-cta-contact-active.cjs",
+      "blob": "850a9d5e1634d122d2debe01fde71d9af955c7d9"
+    },
+    {
+      "path": "kurortnaya/tools/verify-current-load.cjs",
+      "blob": "42038fa5ff609bfb568eda3f44e5c1790dfda051"
+    },
+    {
+      "path": "kurortnaya/tools/verify-expert-quiz.cjs",
+      "blob": "00f77c52e37abc2895991b39c5436bb0fe707f66"
+    },
+    {
+      "path": "kurortnaya/tools/verify-faq.cjs",
+      "blob": "c48e0f5f8a219ac59bf1f57570f9f5400795e059"
+    },
+    {
+      "path": "kurortnaya/tools/verify-filter-reference.cjs",
+      "blob": "ea40fdb9781923f7bb081a96bf955cf04bb5bc3f"
+    },
+    {
+      "path": "kurortnaya/tools/verify-header-actions.cjs",
+      "blob": "f4cf2cf5179b1bba9b15e443b053046715356708"
+    },
+    {
+      "path": "kurortnaya/tools/verify-header-blocks.cjs",
+      "blob": "c23bded8c665b96ecabe1e7d1ec9f95da3264bc6"
+    },
+    {
+      "path": "kurortnaya/tools/verify-header-navigation.cjs",
+      "blob": "9d9e640d9ebf917c95a592f4e96136c5aa0f6df4"
+    },
+    {
+      "path": "kurortnaya/tools/verify-home-quiz-parity.cjs",
+      "blob": "062702d81e214a245371b501bfd9d863680aeeaf"
+    },
+    {
+      "path": "kurortnaya/tools/verify-home-reference.cjs",
+      "blob": "f6d645776770fe5ae4f513c4552a4321d297681e"
+    },
+    {
+      "path": "kurortnaya/tools/verify-intro-brand.cjs",
+      "blob": "ba6d80ea8a0b7a0ad3cff46e25ead6fc2afcba43"
+    },
+    {
+      "path": "kurortnaya/tools/verify-kit-roles.cjs",
+      "blob": "4d5233b2dd114fe6a33ad1fb557d5556f170b50b"
+    },
+    {
+      "path": "kurortnaya/tools/verify-listing-controls-row.cjs",
+      "blob": "eb835cbedcb23b4d44ab87c0723b4b51aa63e777"
+    },
+    {
+      "path": "kurortnaya/tools/verify-map-controls-row.cjs",
+      "blob": "ec28e8d19f4f666f2deb2028c78bca10d542065c"
+    },
+    {
+      "path": "kurortnaya/tools/verify-mobile-header.cjs",
+      "blob": "3a3e6769b5b1c713153b16a787d7b2b616bc16c5"
+    },
+    {
+      "path": "kurortnaya/tools/verify-package.cjs",
+      "blob": "6c0ebdec7b236ef01f1bded4f73936af1ac1241a"
+    },
+    {
+      "path": "kurortnaya/tools/verify-quiz-blocks.cjs",
+      "blob": "e478df009ae52428ad4eeb175feb714818eddcf6"
+    },
+    {
+      "path": "kurortnaya/tools/verify-shared-map.cjs",
+      "blob": "38a8d00254c442adf286c78113cbdaaa5beb2368"
+    },
+    {
+      "path": "kurortnaya/tools/verify-start-sales-interactions.cjs",
+      "blob": "8b838773283c2c1dd0372dacedcfc6322136d0a8"
+    },
+    {
+      "path": "kurortnaya/tools/verify-start-sales.cjs",
+      "blob": "bc43b0c363294c806f9272d4a548be65a3812293"
+    },
+    {
+      "path": "kurortnaya/verification/README.md",
+      "blob": "a93346aa0f63a1f4a34cb2bc33eb505ec1a2e882"
+    },
+    {
+      "path": "kurortnaya/verification/breadcrumb-sizes-2026-11-03.json",
+      "blob": "8e5f0ce53c655b43315026e28d8c66d7867ca7b1"
+    },
+    {
+      "path": "kurortnaya/verification/breadcrumb-sizes-before-2026-11-03.json",
+      "blob": "855e2239e5c8e34d698c5b01eb64e88bdaea1781"
+    },
+    {
+      "path": "kurortnaya/verification/breadcrumb-sizes-blocks-2026-11-03.json",
+      "blob": "8553c03f757b371c601fe520aed1d3ec77812059"
+    },
+    {
+      "path": "kurortnaya/verification/catalog-filter-blocks-2026-11-02.json",
+      "blob": "1b8f86e30da046a33f50c5eae33c82f9fb55f4f3"
+    },
+    {
+      "path": "kurortnaya/verification/catalog-filter-blocks-2026-11-03.json",
+      "blob": "1b8f86e30da046a33f50c5eae33c82f9fb55f4f3"
+    },
+    {
+      "path": "kurortnaya/verification/catalog-filters-2026-11-02.json",
+      "blob": "75da9a8f89516d26ac9a4d44b0dfcb644c311054"
+    },
+    {
+      "path": "kurortnaya/verification/catalog-filters-2026-11-03.json",
+      "blob": "432d4e542d27ef690cc12212aa1f0ba176c26db3"
+    },
+    {
+      "path": "kurortnaya/verification/catalog-filters-final-interactions-2026-11-03.json",
+      "blob": "aa0af89345b0addbe5666fe0c0e450956d5ca494"
+    },
+    {
+      "path": "kurortnaya/verification/cleanup.json",
+      "blob": "9b370b2804d07284f9546d9f6c833dba32dc6f8e"
+    },
+    {
+      "path": "kurortnaya/verification/cta-contact-active-2026-11-02.json",
+      "blob": "667e6f953f3fcb0ab37f49fc6468985b7bd3989a"
+    },
+    {
+      "path": "kurortnaya/verification/current-load-2026-11-03.json",
+      "blob": "630ca3c817f8ac8a1bdc5fdbc572964e4e44aac9"
+    },
+    {
+      "path": "kurortnaya/verification/current-load-blocks-2026-11-03.json",
+      "blob": "c53d3845b8763312a97784478327fba7bd93318f"
+    },
+    {
+      "path": "kurortnaya/verification/current-load-map-2026-11-03.json",
+      "blob": "e5ea5d4547e647a2222813b2a39970dddda475ad"
+    },
+    {
+      "path": "kurortnaya/verification/current-load-style-comparison-2026-11-03.json",
+      "blob": "f9c3974bd9a492a80f01f0eb272ba79128274e36"
+    },
+    {
+      "path": "kurortnaya/verification/deployment-home-reference.json",
+      "blob": "67a65419fa6f810edd93377083117e356330ae23"
+    },
+    {
+      "path": "kurortnaya/verification/design-parity.json",
+      "blob": "bbed98e0b6f464c7f1385f740f43758552232916"
+    },
+    {
+      "path": "kurortnaya/verification/expert-quiz-2026-11-02.json",
+      "blob": "9c58dd9102424cab0380adc141c572b24e5d1b5e"
+    },
+    {
+      "path": "kurortnaya/verification/expert-quiz-2026-11-03.json",
+      "blob": "9c58dd9102424cab0380adc141c572b24e5d1b5e"
+    },
+    {
+      "path": "kurortnaya/verification/faq-2026-11-02.json",
+      "blob": "644768b0b05272d449e3f9dddc378fecb4b514d5"
+    },
+    {
+      "path": "kurortnaya/verification/faq-source-2026-11-02.json",
+      "blob": "ac7cae8fc74330c74f69631f4f793f3aeb179354"
+    },
+    {
+      "path": "kurortnaya/verification/header-actions-2026-11-02.json",
+      "blob": "58d9c5975566a55a5b4dbc88e005790f391a8d42"
+    },
+    {
+      "path": "kurortnaya/verification/header-blocks-2026-11-03.json",
+      "blob": "a9d40e4793ca8763fd070a5dd029692b9b605ca2"
+    },
+    {
+      "path": "kurortnaya/verification/header-breadcrumbs-2026-11-03.json",
+      "blob": "6ad87775a273f5e5d319bcf88907965c6cbf5a81"
+    },
+    {
+      "path": "kurortnaya/verification/header-logo-2026-11-02.json",
+      "blob": "7dfd5537493f1949ff75d90f0e5011287bdcd743"
+    },
+    {
+      "path": "kurortnaya/verification/header-navigation-2026-11-02.json",
+      "blob": "0e4ce9bbdb02dd4dfdea9ec018e2928d436be6b7"
+    },
+    {
+      "path": "kurortnaya/verification/header-navigation-2026-11-02.md",
+      "blob": "967899520be5bffbd663086b573fbf50c92f3003"
+    },
+    {
+      "path": "kurortnaya/verification/header-navigation-source-2026-11-02.json",
+      "blob": "eeb5c589210351f4e6adb79320a71b5d18c1daa6"
+    },
+    {
+      "path": "kurortnaya/verification/header-reference-2026-11-02.json",
+      "blob": "e63fe5a26d4bd52c237487055e12b22879c4cdf8"
+    },
+    {
+      "path": "kurortnaya/verification/hero-header-before-2026-11-03.json",
+      "blob": "ee0173e0fdddf4280b42e5def16d8897942f2234"
+    },
+    {
+      "path": "kurortnaya/verification/hero-navigation-mobile-2026-11-02.md",
+      "blob": "51b1cd8b6ce4f58cddfed3c7e20076075a73e059"
+    },
+    {
+      "path": "kurortnaya/verification/hero-navigation-restored-2026-11-02.md",
+      "blob": "0bb28b4eae4b3d3dc488edff6c4c5801ad6f8cb1"
+    },
+    {
+      "path": "kurortnaya/verification/home-quiz-parity-2026-11-03.json",
+      "blob": "64df48e33fe2f86be16c231bdf6d630430bee501"
+    },
+    {
+      "path": "kurortnaya/verification/home-quiz-reference-2026-11-03.json",
+      "blob": "ffbe6079d04ddcfc18f8b7e23a503766f4aedd77"
+    },
+    {
+      "path": "kurortnaya/verification/home-reference-exceptions.json",
+      "blob": "7d0d1b7bb6881357b433aed560afd266855e424f"
+    },
+    {
+      "path": "kurortnaya/verification/home-reference.json",
+      "blob": "0f8abebe835809831912dae24271ce30e986408b"
+    },
+    {
+      "path": "kurortnaya/verification/intro-brand-2026-11-02.json",
+      "blob": "b2be0f32ce01e4dae3b6911871180bae58784044"
+    },
+    {
+      "path": "kurortnaya/verification/intro-source-2026-11-02.json",
+      "blob": "f0fea704a02582bf6ceeef986e9d7fe930213fd3"
+    },
+    {
+      "path": "kurortnaya/verification/kit-refresh-2026-11-03/additional-roles.json",
+      "blob": "f0ae84fe4462211f16cb81332a84448dae066744"
+    },
+    {
+      "path": "kurortnaya/verification/kit-refresh-2026-11-03/after-text-roles.json",
+      "blob": "cc857d909d936059e3bfd0d36cc6eaba79e37674"
+    },
+    {
+      "path": "kurortnaya/verification/kit-refresh-2026-11-03/before-layout.json",
+      "blob": "7a8355fb9978b5e7102ea811db7149a71719caa1"
+    },
+    {
+      "path": "kurortnaya/verification/kit-refresh-2026-11-03/before-text-roles.json",
+      "blob": "03aa040ff1a337e04800c99de727e1664e659102"
+    },
+    {
+      "path": "kurortnaya/verification/kit-refresh-2026-11-03/cta-channels.json",
+      "blob": "667e6f953f3fcb0ab37f49fc6468985b7bd3989a"
+    },
+    {
+      "path": "kurortnaya/verification/kit-refresh-2026-11-03/current-load.json",
+      "blob": "630ca3c817f8ac8a1bdc5fdbc572964e4e44aac9"
+    },
+    {
+      "path": "kurortnaya/verification/kit-refresh-2026-11-03/filter-popups.json",
+      "blob": "152203fc236c1200710948a3cf9eefae5103c52d"
+    },
+    {
+      "path": "kurortnaya/verification/kit-refresh-2026-11-03/filters.json",
+      "blob": "605b05e227c366bedc71474ace8503d3ef287e41"
+    },
+    {
+      "path": "kurortnaya/verification/kit-refresh-2026-11-03/home-kit.json",
+      "blob": "bcc9d5bda6874150c848915e302c0523f6181847"
+    },
+    {
+      "path": "kurortnaya/verification/kit-refresh-2026-11-03/intro.json",
+      "blob": "b2be0f32ce01e4dae3b6911871180bae58784044"
+    },
+    {
+      "path": "kurortnaya/verification/kit-refresh-2026-11-03/map-controls.json",
+      "blob": "822cf41e556e80380bad96f1d8771f38af89c6d1"
+    },
+    {
+      "path": "kurortnaya/verification/kit-refresh-2026-11-03/portable-filters.json",
+      "blob": "1b8f86e30da046a33f50c5eae33c82f9fb55f4f3"
+    },
+    {
+      "path": "kurortnaya/verification/kit-refresh-2026-11-03/portable-package.json",
+      "blob": "1ee71f06f608b16e5776218f5c9b902f7d4fbf4e"
+    },
+    {
+      "path": "kurortnaya/verification/kit-refresh-2026-11-03/preserved-exceptions.json",
+      "blob": "25abde2376e5fc15bd8e20ad4ef164eef5bad6df"
+    },
+    {
+      "path": "kurortnaya/verification/kit-refresh-2026-11-03/quiz.json",
+      "blob": "9c58dd9102424cab0380adc141c572b24e5d1b5e"
+    },
+    {
+      "path": "kurortnaya/verification/listing-controls-first-paint-2026-11-03.json",
+      "blob": "e377da92627300339d11a7a3e3bbdac26b112429"
+    },
+    {
+      "path": "kurortnaya/verification/listing-controls-row-2026-11-03.json",
+      "blob": "b7f6f5a7a3652f86820a7c2163137c316c9229ce"
+    },
+    {
+      "path": "kurortnaya/verification/map-controls-row-2026-11-03.json",
+      "blob": "6c4d0196409165249be20df34dd6c7015b0e27be"
+    },
+    {
+      "path": "kurortnaya/verification/map-controls-row-blocks-2026-11-03.json",
+      "blob": "117bed0757243ba58b159f39c540c2dc0bc91f97"
+    },
+    {
+      "path": "kurortnaya/verification/map-controls-row-standalone-2026-11-03.json",
+      "blob": "81040a4f8d8735447417f0e6dfd8c7512dee6fbc"
+    },
+    {
+      "path": "kurortnaya/verification/mobile-header-2026-11-02.json",
+      "blob": "7e1745142db06aef61c26825bd21bce53d829aa1"
+    },
+    {
+      "path": "kurortnaya/verification/mobile-header-2026-11-02.md",
+      "blob": "f67df90b724cc04db89fb2e2a06ef906445d07ea"
+    },
+    {
+      "path": "kurortnaya/verification/mobile-header-2026-11-03.json",
+      "blob": "7e1745142db06aef61c26825bd21bce53d829aa1"
+    },
+    {
+      "path": "kurortnaya/verification/package.json",
+      "blob": "1ee71f06f608b16e5776218f5c9b902f7d4fbf4e"
+    },
+    {
+      "path": "kurortnaya/verification/quick-options-2026-11-03.json",
+      "blob": "966af200cde8062c1b255d03ff68e0032462bcab"
+    },
+    {
+      "path": "kurortnaya/verification/quiz-blocks-2026-11-03.json",
+      "blob": "199a22f64d8b0fe07371a56ef0970a89a80bb160"
+    },
+    {
+      "path": "kurortnaya/verification/quiz-direct-form-regression-2026-11-03.json",
+      "blob": "f0ae84fe4462211f16cb81332a84448dae066744"
+    },
+    {
+      "path": "kurortnaya/verification/shared-map.json",
+      "blob": "9fedab5f16fae70912e30a98c9478d6f76255168"
+    },
+    {
+      "path": "kurortnaya/verification/start-sales-home-2026-11-02.json",
+      "blob": "ccc2b07dd60d4312c6854b7a70012d4dc61a0068"
+    },
+    {
+      "path": "kurortnaya/verification/start-sales-home-2026-11-02.md",
+      "blob": "dfcc0684a717a9a83ad9d129304bca7110672db2"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/QUIZ.md",
+      "blob": "3e458aaec49847e2ebfc9221fb441929e0e306c3"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/README.md",
+      "blob": "ef2742c2cd3b1c85279a236ef90a111a0a1322d0"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/STRUCTURE.md",
+      "blob": "204db36b2901e4f1e8f8c0db3320ba4ea4cc0f48"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/assets/0184877aeb67250c-12110504f1cbaf0e5fadcdeedefca145.png",
+      "blob": "94239149a8aad6a8caf91ff2168cddb05758e548"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/assets/08d282586c7988ea-41072c11239aec7624bb6663d40abd21.png",
+      "blob": "1c05fd2f9130b46b225bba06c5e458e92c710ca4"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/assets/0b0a4fc0a38c1047-3a8b2f35f0f0ac0d0d647e54e043a3ed.jpeg",
+      "blob": "ce948faa49447610f6c8d992021c4b3af4f73cff"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/assets/20b70333976f429a-8b67d18cf8e818fb793c259ffb3fed78.png",
+      "blob": "1d1a9ab3e01cabaf2b78ea97bbbdc8138ba17675"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/assets/26da7ffb2b82d0ed-abf24a8e6f4f82e0a5e050f6cf57a1d9.png",
+      "blob": "0638db5835fb2506454d9f4aefe5b2117427541d"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/assets/33c32b3ef0983087-acf1b4686a1661d64e15e1d9d85166a5.png",
+      "blob": "d267f1629782066e7aa77f7d978ff72ae8488f0e"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/assets/33c9955c39a65d9c-f19bce520e61659e0feb1844a98319ae.png",
+      "blob": "16138321a3d24b04b660e1e5cbf77dc4782873e9"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/assets/4b96859f4e2ad644-a28cef05eafcce010bfa74dd2256f09d.png",
+      "blob": "70de4afa3c0518777952e9e5d1288bf6bef23a57"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/assets/51f4e7a5474b3ba4-37537bbcc39d4cd6cbbfa8bee57ccfe0.jpg",
+      "blob": "a0efcc64633ac5052dc49fb29df0b9a7e03f9889"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/assets/6a65be074ca04121-52203586d8c1d6a7e0583582adcc9e48.png",
+      "blob": "20032f980ccf7474752e57fb8209ac17b40c8e4d"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/assets/81a267c739226d90-7fbe570016207b60c4b87abce0359c2b.jpg",
+      "blob": "8808c2e2516e95e9c9ae2372fde64e1443ffd3d4"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/assets/9783a5a60ad7ae44-be19a5749214443d45f5e54fdf0fdd03.png",
+      "blob": "65210c5e892fe7b1a559275371f2883ad3ccbe80"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/assets/a461ef0bb9597a98-32b04ebf9a2af2e54c68f782cb58f3f9.png",
+      "blob": "ccb7e73a24d91ce7d0baa05213788585efbb1da1"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/assets/ac02b23843f86d76-1a0ed34786a09a7f2761e9dc1b305ecf.png",
+      "blob": "4a4c448b6557cd5ecf09a3d0afcf0407d8721eb9"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/assets/b362b060621c3f6a-32bb1c09e2de90b389dcf4bd8cfa3802.png",
+      "blob": "036aa0462ade91359f2e862fc56cb3a8ef018a61"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/assets/b3db829cd4ce561e-764e3d4bccb6027b30366e2f2bf025d2.jpg",
+      "blob": "c7d5ed6a250fd2e37c0411f06e62a14552e7eaa4"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/assets/ba136ab747adee2c-7c727a309e816ccfe4aacda7f0347575.png",
+      "blob": "0ec7bfeac99715e0a1e34ede4c6c31ff4958b2d7"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/assets/barnes-moscow-residence-v4.webp",
+      "blob": "143e742aa51d4b99505b88caa31c24b7a405bdc6"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/assets/be654065c339de39-22eeb4f61f555b197047d63b94fef799.png",
+      "blob": "3eae777f1e8025d5d91d116e6e00756e77b4c2ed"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/assets/brand-logo.svg",
+      "blob": "4a68fae5eb75034891f86a42bd6dbc64caeee4d1"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/assets/cee560c8a397122f-f65d8dbc17c559c5df2fd4ac4d1c0c94.png",
+      "blob": "2a2b38613dbf471e0b89696a00d10b1de46d5138"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/assets/cta-consultation-interior.webp",
+      "blob": "faf3f5ef1ef072329877e453036a58b050f3be13"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/assets/cta-contact-resort-lounge.webp",
+      "blob": "796d8a9bd9659f992f2ca13cf305604c4f2d30db"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/assets/daabcafe5c83ce76-34bf83d12a3f06832c17da7388c0ed63.png",
+      "blob": "8313899e008e19fb7cee4655d711e75d9e3293cf"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/assets/dca955adff111df7-4cf274d717b11969513db0940caf108f.png",
+      "blob": "e7d3a537c9b2032e60f1bd38e97c04ebd8e9e51f"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/assets/denis-perkovsky-cutout.png",
+      "blob": "fc142e110d6f88317613b6043231818f1a01ac7e"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/assets/denis-perkovsky-interior-hq.webp",
+      "blob": "c9fd6742ceca0fc706c78519c5dc12e0baed726e"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/assets/e9a3e305939a871a-64928598c4b14783d8a95d366e842ebd.png",
+      "blob": "bb5ba8eb25464ad74739d0a59770bcc5b79a8994"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/assets/e9fabafdd48b462b-2.3.jpeg",
+      "blob": "619539b152719eb1e517d1dc4ab55febdf62f89d"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/assets/f0cd941b817681f6-5a3e61b48390c8dcd6bfe320b01e86d1.jpg",
+      "blob": "8b6efbcd4eb935b3a345fcc26eb9f21f8e757ab1"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/assets/fonts/TildaSans-Black.woff2",
+      "blob": "c66e067bacd10c2fbae714fdb68bda0ed2efaddb"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/assets/fonts/TildaSans-Bold.woff2",
+      "blob": "9bc1cea0d9cd5d2482e7402ae8da35d273dec073"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/assets/fonts/TildaSans-ExtraBold.woff2",
+      "blob": "036c66f44b651d3e7854a010d43b5cd51b6aef06"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/assets/fonts/TildaSans-Light.woff2",
+      "blob": "59c22538cb38ed583a9be508537e71f52abe1e9a"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/assets/fonts/TildaSans-Medium.woff2",
+      "blob": "b349bb91b1ef8668e3f99f10210e8fdc123e0853"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/assets/fonts/TildaSans-Regular.woff2",
+      "blob": "eca2361b9e48b96633f3a494624756b7902679de"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/assets/fonts/TildaSans-Semibold.woff2",
+      "blob": "9adfc61d562d7c9a54dfc5a017687d4277dfd2ea"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/assets/footer-logo.svg",
+      "blob": "f75df3d06ae45018704bccecf8ade06a5a7c0eb5"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/assets/header-max.svg",
+      "blob": "a19c0577708a9dd615881b9fb07dddaa38638931"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/assets/header-telegram.svg",
+      "blob": "b637cb5160934ed0ae000909bd88753f2107910c"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/assets/header-whatsapp.svg",
+      "blob": "529fdfb0ef6bb6034fd07b14a9476eea0b0e4ed9"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/assets/hero-mobile-villa.png",
+      "blob": "49821de12058ef0e958bc2444e31ca6553076e30"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/assets/imported/0fc874b9fa96d88d-cta-denis-background.webp",
+      "blob": "1c47cdb98e8cc4711334ae33c3d3c7c6742bea14"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/assets/imported/1343c5ea30ad329b.png",
+      "blob": "572307dcfdbc1b59741e6314ad5378f1562f6801"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/assets/imported/19de3829ff58c4f8-d0d5978e99581bc86d7f582e46645a32.png",
+      "blob": "9ca4857c95c099db5210afbcdd6ab4bfc72a25e7"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/assets/imported/251b08b599f06512-contacts-background.webp",
+      "blob": "579df0e413fe1c29dd6d7f1644ac84844692f6d2"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/assets/imported/274db89ec65413cf.png",
+      "blob": "1cf6aca4cef1fe075ca6326c03f4650aa7d303eb"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/assets/imported/287240ea860915c6-20073820215e41b43da1dcf6.37597236_6ce873e318_1920.jpg",
+      "blob": "560515ebb44d6894e4bd82d33e5e652ae9d4adee"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/assets/imported/2bd16de3ba49c7bb.png",
+      "blob": "d61102313c0f350819b5fa75dfb40182947994d9"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/assets/imported/3b692b1f9b013cd2-favicon.ico",
+      "blob": "484ae6ad2e99ee42eed8ce521f3101e0a7097f5b"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/assets/imported/4bce33e0cb4bddf4.png",
+      "blob": "79d1670a4ce694ca6a6ccde339efab8b75f9cc8d"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/assets/imported/52d2869ea025d871.png",
+      "blob": "bf538b9802208fb768e090ef55e1679f30faaea8"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/assets/imported/5649ea5fd7a0f8ea.png",
+      "blob": "0c02e42cfce2107cd04f1ce4b2efc90eace99d10"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/assets/imported/5b5b91a9b4ef9ad6-1710068464604a0c48b3a587.78605643_13730c11c1_1920.jpg",
+      "blob": "a5bfdcee80e39b235baf13c317bee5118ed9ced7"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/assets/imported/614675d68e4cffe8-8311052985d7bb1536375a8.30505639_144d933eda_1920.jpg",
+      "blob": "1026864cc926cc062bbe7ab5af708cda12d91e66"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/assets/imported/66af721518e1a963-9001572956_BG_38347_8-2048x1365.jpg",
+      "blob": "ce952706c727251a7a0411eee666702e460fd746"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/assets/imported/6cfef9bc5c753a8e-feedback-hero.webp",
+      "blob": "1da6fd6a36d4b2c58149d1339443c1438d4e65b2"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/assets/imported/72cf645ab4378aa4-2028178361600fc0e52adb51.35980688_011d2216ab_1920.jpg",
+      "blob": "30e0551b1d696068d92506bc2a2628b878ab8bcd"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/assets/imported/7695305458b754e9-old-money-interior.webp",
+      "blob": "b4b0c84f9c9c97119704b780c2a08c7e7f87a36c"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/assets/imported/82b95a666dc35706-20725795365c73b332ed7214.03809248_2a3b98b579_1276.jpg",
+      "blob": "0006ec7adb84542ee438d4821c267023869c87c3"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/assets/imported/8ebc1a6b42603e9e.png",
+      "blob": "5d2135dbf16915cabcdd2d53d9b39345b3f66d78"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/assets/imported/9ba38b6906f34c57.png",
+      "blob": "cb38473b8f7001379a47bd541bf62257da430273"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/assets/imported/a11d1657b8234502-15966406495f741fe0382aa9.36148629_0ddb33d60e_1920.jpg",
+      "blob": "a1f5505f3e2651f640755a3c5c95fcfaaced05c6"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/assets/imported/a1a512651fcff5e9-16722130825ffc7d95b95de6.41646085_9cd34af258_640.jpg",
+      "blob": "f0351b91cd7aa109ee95d1a9a639486387d7f226"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/assets/imported/a80cefdb36fa9c52-modal-request-img.webp",
+      "blob": "e578e00ad9f13d94b57b9f5e0e924552376d352e"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/assets/imported/a816c5096d2afa7f.png",
+      "blob": "b839c413d337d2a50ee9b3120d4b1959f3315f44"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/assets/imported/a98d02b177060520-20344160285f06f7ef8a8512.61326810_1920.jpg",
+      "blob": "293859613c9b4b76f5959c5019fe621fd9562eb9"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/assets/imported/beae72a563d46401.png",
+      "blob": "568c24c0bd989cbbb53bfbbe0473bea32e9eee45"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/assets/imported/c0a2fb1a9415f4d4.png",
+      "blob": "4b1fe037eddfd89ce623745baf33be4fdecc3551"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/assets/imported/d15419828f46668b-cta-denis-perkovsky.webp",
+      "blob": "327d2e269f29ee2455ec7dd053ccf5743535e16c"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/assets/imported/db731c1a7aae08fa.png",
+      "blob": "29fc105c8fa571887ca1ab90c932d1e1b00a3b42"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/assets/imported/e09ee3f4856bbe26-16614574485fd1fb39e172c7.19523611_7d263ad515_1920.jpg",
+      "blob": "0614345d5b5e24ac2a7211512250dfda8d9ff5e2"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/assets/imported/e35c239c50c1d380.png",
+      "blob": "1d556de21b348d9cc8567d06275293866b2db802"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/assets/imported/e4fcf8d37df56bb5.png",
+      "blob": "6f51f4039582d8330d68548a3438efd9a856e845"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/assets/imported/e906f1b5fae2f577.png",
+      "blob": "c33e99a7132ba1a6aecf16dd7b804d5dfbed7cde"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/assets/imported/f50ea3e762de6d51.png",
+      "blob": "abef199cc3c4c370b3cbc807121366c7298f3c56"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/assets/imported/provenance.json",
+      "blob": "0b55346121c86dec4a5f4c4b89ce4e0a8b27946d"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/assets/map-browser-preview.png",
+      "blob": "4aaea1918038d93b466a74845e06965de569824f"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/assets/provenance.json",
+      "blob": "c843aa1941cd76b90addc02d21a7f7c1eaab9404"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/assets/quiz-mobile-denis-waist.webp",
+      "blob": "1c47cdb98e8cc4711334ae33c3d3c7c6742bea14"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/blocks/brand-intro/page.html",
+      "blob": "aa8bd059a9ce4b39996649b23a1e80268930e8ad"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/blocks/cta-bottom/page.html",
+      "blob": "92f544f54bf97185e7b2037161d33bc0decf9e5e"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/blocks/cta-central/page.html",
+      "blob": "945ce8d7774431307e3cce393d3260c8a2c72076"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/blocks/directions/page.html",
+      "blob": "b50f9e28d886b35a5d5d55e6a0de5d2f39c9dd9c"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/blocks/faq/page.html",
+      "blob": "79dfbae155cd955b84e6ac315493e6a389c54d99"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/blocks/floating-expert/page.html",
+      "blob": "50d66fe8f6ef0d389957e49793f5915bd63f8169"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/blocks/footer/page.html",
+      "blob": "a0827e5591ed3d19d618f2ef95a04e208542701d"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/blocks/header/page.html",
+      "blob": "d37e7ebb438da4e50badba83183543fdeb714d6c"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/blocks/hero/page.html",
+      "blob": "1a1c6a648b8970c0fe2c17fab7557aba4cb48045"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/blocks/international-quiz/template.html",
+      "blob": "42bb1141fa80edbe44affc4f0f7e0466cdec2440"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/blocks/listing/page.html",
+      "blob": "5abdf6e976b0df83f589b0fea9c86b0eb036d8a3"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/blocks/map/page.html",
+      "blob": "98e4d1f6f49de9bc1508c1337d36d516bc735c64"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/blocks/news/page.html",
+      "blob": "4f4043b67c5df0f47d0e4885e097d5f2f123154a"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/blocks/start-sales/page.html",
+      "blob": "d88a497dbcaae9059648312418d9f38bfa75ffd2"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/brand-nowrap.css",
+      "blob": "c6e2c71216f0686ebeb5db7a5c2c71e6dde04bc5"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/brand-nowrap.js",
+      "blob": "3d08e7284078ddf235e0f9bcb1a5462e1e16e528"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/css/catalog-filters.css",
+      "blob": "3b073f8516f33202a1016529cf2ec20d2dd7a52a"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/css/filters-modal.css",
+      "blob": "0445565c8f0d60597fda69581ca87679c3d6268f"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/css/international-quiz.css",
+      "blob": "dedf8a306be0759be8d3559a1f27256a39606b37"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/css/node-brand-filters.css",
+      "blob": "f6aa270560a28ec83547019857af2406a1244958"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/css/node-listing.css",
+      "blob": "4274ee688a23fdfce3342ca9917a3b62657d6777"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/css/node-map-browser.css",
+      "blob": "6c23e692784afd11505f50b6270309e72cdd2033"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/css/node-owner-footer.css",
+      "blob": "0ea24a1446487c7ce9165e5ad374d824f39a51e0"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/css/node-page.css",
+      "blob": "43150611268d49c06ea4431114c53de1fd985c24"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/css/node-quick-filters.css",
+      "blob": "865f394ddb45bf127bdeaf724fcd31e97132106b"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/css/node-start-sales.css",
+      "blob": "b8ce26ec17a86e3a3d47ba9b9d8454e00564ee21"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/css/node-ui.css",
+      "blob": "ab177192d12f6ea723408276140f632b54b02b21"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/css/owner-header.css",
+      "blob": "4932b4b0dac927cf0d50184c2b4d2c56ff5c3e57"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/css/source-map.css",
+      "blob": "f0647b89b95e43057ca1063ed5d4d4da84990e5b"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/css/source-runtime.css",
+      "blob": "88781c7111fbc51a2c91567a496af5f53c16429e"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/css/source.css",
+      "blob": "bfb16bdecbb1f0863d5e120b6fbf4ebb0972bf60"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/hero-laptop.css",
+      "blob": "5e6a0ea2a859c22e947af90ee0294cc996b0559c"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/index.html",
+      "blob": "6c18eae87bbe3a746646ef5525d3905f6be3f9c8"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/js/catalog-filters.js",
+      "blob": "863f9728dd4512bc9f066218414f96540585e458"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/js/filters-modal.js",
+      "blob": "f7897162fa5e254621fb58641203b0e19cce9e00"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/js/filters-template.js",
+      "blob": "4f9218e1cfe55e97bb2ed08bcb839cb0e5f1a8ab"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/js/international-quiz.js",
+      "blob": "dbe5ff8176ec428f3174583519e4ad04429dfcdb"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/js/node-brand-filters.js",
+      "blob": "62736a6f762d723898dd282f65043521b099174c"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/js/node-catalog.js",
+      "blob": "fd95eab418a2d51c50d02342dc9b51526e72d8ef"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/js/node-components.js",
+      "blob": "a5641b54879e9ae91255edbe385b463e1ef2df6c"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/js/node-map-browser.js",
+      "blob": "c15bc1cb906a018fa1abfe3d7374e982f87c2104"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/js/node-quick-filters.js",
+      "blob": "3a4570c6d4432f523e68d18dccd4a169f56fd021"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/js/node-start-sales.js",
+      "blob": "75e38aa679da54681ccb9c74506ca21724cd0bdb"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/js/source-map-states.js",
+      "blob": "d5bc5df76a0b5cf6583f95040b537edf3492b1f6"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/js/source-runtime.js",
+      "blob": "a51eb00b823c82cea6deb74fd461fcbf4475ec3d"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/media-header.css",
+      "blob": "fefcda204554a82bfd3c632ad0e23cf8991b4728"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/media-header.js",
+      "blob": "65430fcda07e5e86f8d7ca0fe9fa9d37dc24a750"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/mobile.html",
+      "blob": "a4f2fc9926888c65649ce6ff42eb10abce5ab0eb"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/node-catalog-links.css",
+      "blob": "94acd378a04cb708060824c2ed133041af96ee82"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/node-catalog-links.js",
+      "blob": "041247681894a8d161267bc4b810e011148e15e9"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/node-expert-dialog.css",
+      "blob": "17ba1b00b5c5a23b6f590ced6e9727717078250e"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/node-expert-dialog.js",
+      "blob": "89a6aaba43129951c85e0427574efacac61de139"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/node-filters.css",
+      "blob": "b2de8462f3bfb7aca9627f1e98d212710f5eea9c"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/node-filters.js",
+      "blob": "b9b0dbf0e99a21df074a80a4931495e67ae55fc8"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/node-footer-logo.svg",
+      "blob": "4a68fae5eb75034891f86a42bd6dbc64caeee4d1"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/node-footer.css",
+      "blob": "30d641a79037a386b366a618989c90ca6eb8be08"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/node-footer.js",
+      "blob": "d27a79ed3152fd84e7f27829bf691fede0410e9a"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/node-header.css",
+      "blob": "fc4e7d756f5da9ee3cd3cb7a2ce5d488e4c2c6a1"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/node-news.css",
+      "blob": "2d7da1cc93431d3c9d2aa5878223c3e96762c0a7"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/node-news.js",
+      "blob": "854691e89feb331fab6840eb69512754982ceb8b"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/node-recommendations-LICENSE.txt",
+      "blob": "d2f800dd7dd363959544cb0adc001319202e8254"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/node-recommendations.css",
+      "blob": "238cf08dbcbb705922b93680564756452c83a845"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/node-recommendations.js",
+      "blob": "cacfb07a51556bc815b49e5001c7bf3481889a9e"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/node-shell.css",
+      "blob": "ec64ab464eaaf6eb286616f8ab42b63b960d323d"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/node-shell.js",
+      "blob": "b725b1853afe532fae59d4973c819242616a79a4"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/node-spacing.css",
+      "blob": "66711c4b5ed5945c5699e21939456714c174a074"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/standalone/index.html",
+      "blob": "c12f1b4200ee34aa3a3e930f71932afac19a7f1f"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/templates/map-filters.html",
+      "blob": "85fd8fee513f9850075788107961f2791b465d48"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/templates/page.html",
+      "blob": "32519e427999db1f5c9b292954bbd2db298d0093"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/tools/build-page.cjs",
+      "blob": "9ee3cb5f461ff634848c192e0d2602fe39b03c46"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/tools/clean-unused.cjs",
+      "blob": "660254e56ffd4075858ac164b7b6fd82a7b05cd2"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/tools/verify-filters.cjs",
+      "blob": "fffd109b2d6202413459e025d117d0d1fe325961"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/tools/verify-package.cjs",
+      "blob": "a70b01a08f4500e589a5533b28c0363d069c649c"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/tools/verify-quiz.cjs",
+      "blob": "04030099b16407b2ce574ad7b8c60891aa84d3a7"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/verification/cleanup.json",
+      "blob": "ff2f58db327ce5430aa37acf5d7eb7c10267078e"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/verification/filters-resort-2026-11-02.json",
+      "blob": "41fc031ae3d0a615730b8e8958a34a95a35be5e1"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/verification/layout.json",
+      "blob": "283506b3f057f834fb0871fb1aa72a42e11f70df"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/verification/migration.json",
+      "blob": "9576244dcd1c21c1a217cf4f0c4c1996d55c42f8"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/verification/package.json",
+      "blob": "54f7aa04cd39dca3821e7157603165cf2e90fbea"
+    },
+    {
+      "path": "mezhdunarodnaya-nedvizhimost/verification/quiz.json",
+      "blob": "d94b678789574987f480135ad801849b34530e8d"
+    },
+    {
+      "path": "shared/about-home.css",
+      "blob": "2083ca310ba81f2c147a59bb8b1d04025d74e2a2"
+    },
+    {
+      "path": "shared/about-home.js",
+      "blob": "15a25db35afd054d311fbd1015a6f6e83a8f2722"
+    },
+    {
+      "path": "shared/anchor-navigation.css",
+      "blob": "9df96e9738f64e7000ef54de3ed5827ab81bb25f"
+    },
+    {
+      "path": "shared/anchor-navigation.js",
+      "blob": "32790320561675bc5d0c3e0958d80f4ee97d5fc9"
+    },
+    {
+      "path": "shared/assets/barnes-private-salon.webp",
+      "blob": "b34f2250c857b855d0a2dbd9848332b3f08d1bf8"
+    },
+    {
+      "path": "shared/assets/home-about-logo-round-red.png",
+      "blob": "44f343618b10baf165ad4c5920b840938fd99480"
+    },
+    {
+      "path": "shared/assets/modal-expert-old-money.md",
+      "blob": "0944f6a315af00e8ef6f76f832ecad83d6b03621"
+    },
+    {
+      "path": "shared/assets/modal-expert-old-money.webp",
+      "blob": "b3e6d435654c8fe7ebfc43a96aba28f3945d43ee"
+    },
+    {
+      "path": "shared/assets/modal-ruslan-organic.md",
+      "blob": "9bc164e1f6ca4fa1ca5f36925981fb4dc26bc574"
+    },
+    {
+      "path": "shared/assets/modal-ruslan-organic.webp",
+      "blob": "c0aa21b08c1705c28e1b9f702216a766748a525c"
+    },
+    {
+      "path": "shared/assets/presentation-v2/README.md",
+      "blob": "64627ca40c5de1deeeb1a77fb4e6c61dead1097f"
+    },
+    {
+      "path": "shared/assets/presentation-v2/interior.webp",
+      "blob": "b6fcb2be87afcbdd51351d695bc2420139ea7ddd"
+    },
+    {
+      "path": "shared/assets/presentation-v2/legal.webp",
+      "blob": "e6e14d4e6a49b81aaad3c927dd8b55939cc00f4f"
+    },
+    {
+      "path": "shared/assets/presentation-v2/negotiation.webp",
+      "blob": "53890526c6bb85aa59b31552c18ae0d5508b1bf1"
+    },
+    {
+      "path": "shared/assets/presentation-v2/object-detail.webp",
+      "blob": "ebbb4fef558071bf9eafb28055575836594e0673"
+    },
+    {
+      "path": "shared/assets/presentation-v2/positioning.webp",
+      "blob": "6a4c1c9b7f122559eafbe5e8b73d4b1b6b8f597d"
+    },
+    {
+      "path": "shared/assets/presentation-v2/privacy.webp",
+      "blob": "b5feb25fb16f05123241db34694786dd559f640b"
+    },
+    {
+      "path": "shared/assets/presentation-v2/viewing.webp",
+      "blob": "b057d1b51daadaa566a2ba891389551995fadab2"
+    },
+    {
+      "path": "shared/assets/presentation-v3/README.md",
+      "blob": "06e1ef0eda18f87b02df9af98427f918c542d381"
+    },
+    {
+      "path": "shared/assets/presentation-v3/interior.webp",
+      "blob": "ad77bcf238c5c46e44cd9eacbee3e6eecd3a1374"
+    },
+    {
+      "path": "shared/assets/presentation-v3/legal.webp",
+      "blob": "5de0fc0ba07e215240a9fb123f7cdbe749305451"
+    },
+    {
+      "path": "shared/assets/presentation-v3/negotiation.webp",
+      "blob": "f36da44ccf90ded5df0f71ae490669aa46697d38"
+    },
+    {
+      "path": "shared/assets/presentation-v3/object-detail.webp",
+      "blob": "66fff1726258c2a7b9c003e8a198f894fb23f30a"
+    },
+    {
+      "path": "shared/assets/presentation-v3/positioning.webp",
+      "blob": "51491b6cc20ce38a509802dc27c8d2aa64fc83d0"
+    },
+    {
+      "path": "shared/assets/presentation-v3/privacy.webp",
+      "blob": "b57586dd896b087712ce81de1172d5b723989ee6"
+    },
+    {
+      "path": "shared/assets/presentation-v3/viewing.webp",
+      "blob": "ddf696faffd31793462009eff0331a95e44a67e8"
+    },
+    {
+      "path": "shared/assets/ruslan-floating-media.webp",
+      "blob": "c0aa21b08c1705c28e1b9f702216a766748a525c"
+    },
+    {
+      "path": "shared/block-library.md",
+      "blob": "6adf1b2665dbfd907e37dc8d3321c571e510eb9c"
+    },
+    {
+      "path": "shared/card-gaps.css",
+      "blob": "251c4b07ce942a5d8a55bd292c807e4ca44e559b"
+    },
+    {
+      "path": "shared/cta-bleed.css",
+      "blob": "475bad2cee22fad464cab48a555cac1c4b543699"
+    },
+    {
+      "path": "shared/cta-bleed.js",
+      "blob": "a757ea9b8fd03e15b7bbd48bb765cfce364b1308"
+    },
+    {
+      "path": "shared/cta-resort.css",
+      "blob": "1a2944a481b02c1ef26636384da5819ace52f24f"
+    },
+    {
+      "path": "shared/cta-resort.js",
+      "blob": "bfeda997c5edb840574426d216309649767c4ac4"
+    },
+    {
+      "path": "shared/expert-avatar.css",
+      "blob": "799564a32291ee4d8b2f09c584209a948edb7f44"
+    },
+    {
+      "path": "shared/expert-avatar.js",
+      "blob": "9358814c9f4a0b5b734c2a0c045233fe8ce3c390"
+    },
+    {
+      "path": "shared/expert-dialog.css",
+      "blob": "1c4a238e9aa93cc328c4ef4e3a9f614373bc34d7"
+    },
+    {
+      "path": "shared/expert-dialog.js",
+      "blob": "82dbb79cfed7bfa494bbecbb9e974b1817017de6"
+    },
+    {
+      "path": "shared/footer-links.css",
+      "blob": "79629a0cee359db173286cda95eed3d4178e9294"
+    },
+    {
+      "path": "shared/layout-gutters.css",
+      "blob": "ffee65129bf6e37b26c2ddec70771cef98a12fe0"
+    },
+    {
+      "path": "shared/newsletter-home.css",
+      "blob": "a69a5a6b0af26d0fa53a399145202e08358b8259"
+    },
+    {
+      "path": "shared/newsletter-home.js",
+      "blob": "81ec7caa3a0808d35a66f2e0949409d1c2efb295"
+    },
+    {
+      "path": "shared/node-menu.js",
+      "blob": "cd8636edb0cc9b552c2ee42fadb50fa5eed4772a"
+    },
+    {
+      "path": "shared/owner-header.css",
+      "blob": "ec93e9c9194f39c52f41423c9e654dafcffc26f1"
+    },
+    {
+      "path": "shared/owner-header.md",
+      "blob": "6fd3e0cad906793a0c0e05971f15853ee7c5669b"
+    },
+    {
+      "path": "shared/owner-mechanics.css",
+      "blob": "1a39d1f333487be7aede50b58eb13f4523aca894"
+    },
+    {
+      "path": "shared/owner-mechanics.md",
+      "blob": "fd38bdb1cc33947077c8dfac59dedb6366c1fec6"
+    },
+    {
+      "path": "shared/owner-panorama.css",
+      "blob": "8196e048498b7b52fffb3913f5d4d5e2442eddbe"
+    },
+    {
+      "path": "shared/owner-panorama.js",
+      "blob": "2ed8e1b34a19bbad7242d56010f14e2cdf020deb"
+    },
+    {
+      "path": "shared/owner-panorama.md",
+      "blob": "dd50f62f790605195cab957df4c6801b8f5653ee"
+    },
+    {
+      "path": "shared/page-breadcrumbs.css",
+      "blob": "c4e77c3b3738bbbd7373f4a504062005085d6ba7"
+    },
+    {
+      "path": "shared/page-breadcrumbs.js",
+      "blob": "f46a0cdf90417b6dd8b701b5e5f220fef7a3af39"
+    },
+    {
+      "path": "shared/presentation-mobile.css",
+      "blob": "fd1a67c2de6d6a16af9ec09782f8d9ee271e72b8"
+    },
+    {
+      "path": "shared/services-layout.css",
+      "blob": "7e1bc5a94e41a104442e18f20468da5c72591e47"
+    },
+    {
+      "path": "shared/slider-controls.css",
+      "blob": "8db17a23fe0c94dbe7a1a9e8700738fdf41ca566"
+    },
+    {
+      "path": "shared/slider-controls.js",
+      "blob": "a03e7387f53c801e62cb47d164c3713e269eb578"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/README.md",
+      "blob": "6687654bcaa1c1ea3f0e71e789ee8081d254e77f"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/STRUCTURE.md",
+      "blob": "9bc37f0d43d1811adf40cfd04731e82bcde73d86"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/assets/best-anosino.jpg",
+      "blob": "e0e388b56f5c0ac1a61f108736ef5d7753d8d5cf"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/assets/best-nikolskaya.jpg",
+      "blob": "681663235e12b42476103aceb247d78144205d2b"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/assets/best-papushevo.jpeg",
+      "blob": "8040341b6f1651488515ae1f1f2f7ad274937e8c"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/assets/best-renessans.jpg",
+      "blob": "75351a6ca4a795918eb91fb3678ec29da729a70e"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/assets/best-zaitsevo.jpg",
+      "blob": "da7abb520f653bdef4b15738b5653a0f12cd661b"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/assets/consultation-background.png",
+      "blob": "75c205f082173c6549313d00c81477fdb1a10e8d"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/assets/contact-background.webp",
+      "blob": "3cfe504d81d41c259442a19927986bdcb6902385"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/assets/cta-consultation-interior.webp",
+      "blob": "faf3f5ef1ef072329877e453036a58b050f3be13"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/assets/department-apartments.png",
+      "blob": "99d601432f8458cc414615ecd4c8a1f0ae44de4f"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/assets/department-closed.png",
+      "blob": "e1196b50597a6fd9deaa0ce395414a4c7f94accb"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/assets/department-exclusive.png",
+      "blob": "c4df4c56db44bce53a672e350036e0736d4f6c65"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/assets/department-houses.png",
+      "blob": "2e7f0b0c2b7628bdd1123c86f8dee9f3234c6adf"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/assets/department-land.png",
+      "blob": "50f5362ac8a43a68112ac571b2ceb82ea4d46ad6"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/assets/department-penthouses.png",
+      "blob": "66457f946b81295e89af7e81bb183f6364219488"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/assets/department-rent.png",
+      "blob": "4490ee5d3275015fc433f4482ae5c4d4e1aa7ef7"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/assets/department-spb.png",
+      "blob": "530f35bbb5d088be6e870c550649a0f9c6bbb7c0"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/assets/department-townhouses.png",
+      "blob": "41e9188d22f021749b133627e4a5f6cc1ed6ddea"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/assets/department-water.png",
+      "blob": "97441d372df5c87737424ca880e2542dbea2c95d"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/assets/expert-dolgov.webp",
+      "blob": "db6f42f20d32de6bc5d0f836dd4af34d4f8bc4e4"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/assets/fonts/TildaSans-Black.woff2",
+      "blob": "c66e067bacd10c2fbae714fdb68bda0ed2efaddb"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/assets/fonts/TildaSans-Bold.woff2",
+      "blob": "9bc1cea0d9cd5d2482e7402ae8da35d273dec073"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/assets/fonts/TildaSans-ExtraBold.woff2",
+      "blob": "036c66f44b651d3e7854a010d43b5cd51b6aef06"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/assets/fonts/TildaSans-Light.woff2",
+      "blob": "59c22538cb38ed583a9be508537e71f52abe1e9a"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/assets/fonts/TildaSans-Medium.woff2",
+      "blob": "b349bb91b1ef8668e3f99f10210e8fdc123e0853"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/assets/fonts/TildaSans-Regular.woff2",
+      "blob": "eca2361b9e48b96633f3a494624756b7902679de"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/assets/fonts/TildaSans-Semibold.woff2",
+      "blob": "9adfc61d562d7c9a54dfc5a017687d4277dfd2ea"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/assets/header-max.svg",
+      "blob": "a19c0577708a9dd615881b9fb07dddaa38638931"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/assets/header-telegram.svg",
+      "blob": "b637cb5160934ed0ae000909bd88753f2107910c"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/assets/header-whatsapp.svg",
+      "blob": "529fdfb0ef6bb6034fd07b14a9476eea0b0e4ed9"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/assets/hero-estate-desktop.png",
+      "blob": "2510589a4da42f3c605f50aa36e05353bf744b9c"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/assets/hero-estate-mobile.png",
+      "blob": "19bccb04ae951cc559366bdde58edb4152be5624"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/assets/intro-country.png",
+      "blob": "cb6466bc97f6cae5e73f067e85c9108652da7ba9"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/assets/logo-canonical.svg",
+      "blob": "08e09257be6ba36aab243eb00dd79e2e24ebdda9"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/assets/logo.svg",
+      "blob": "f75df3d06ae45018704bccecf8ade06a5a7c0eb5"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/assets/map/1232-641.png",
+      "blob": "66a17ca0850f0844e34487400270e1a972eccdb3"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/assets/map/1232-642.png",
+      "blob": "8a4f914b6e222194535d053582488133705431b9"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/assets/map/1233-639.png",
+      "blob": "39db6b75fcaa574d47a62ed7fdb6c18e7d174c1b"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/assets/map/1233-640.png",
+      "blob": "25a91daa7e7431538f2ce35820545bd8aa61c218"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/assets/map/1233-641.png",
+      "blob": "060bab1ef8a5e92b4fbeb2aa442ad68eda307794"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/assets/map/1233-642.png",
+      "blob": "733adf8c80f5b4ffe03121b613a038bd6359afaa"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/assets/map/1233-643.png",
+      "blob": "9629e6da863250ed409f487cc45170ed2ae9f864"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/assets/map/1233-644.png",
+      "blob": "eac1e16c8c427bbe11d44fd570b456534ef7e6b6"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/assets/map/1234-639.png",
+      "blob": "d2c38441a6a06267602d52688ef44142bcce2ef8"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/assets/map/1234-640.png",
+      "blob": "64951b2b8ce9115ba96eb0c8ee2957217ce99bf2"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/assets/map/1234-641.png",
+      "blob": "1cf6aca4cef1fe075ca6326c03f4650aa7d303eb"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/assets/map/1234-642.png",
+      "blob": "568c24c0bd989cbbb53bfbbe0473bea32e9eee45"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/assets/map/1234-643.png",
+      "blob": "0e0957754dd0d6b525be62b19a0e7bfa5f13ccde"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/assets/map/1234-644.png",
+      "blob": "434e33a355ae56d78981545203ce1579dd94b027"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/assets/map/1235-639.png",
+      "blob": "d459a130d19d73650a5707c8db1be542ffabe829"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/assets/map/1235-640.png",
+      "blob": "4b07908f09c675a039af8d6789e44b53ab3aa5f0"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/assets/map/1235-641.png",
+      "blob": "b839c413d337d2a50ee9b3120d4b1959f3315f44"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/assets/map/1235-642.png",
+      "blob": "0c02e42cfce2107cd04f1ce4b2efc90eace99d10"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/assets/map/1235-643.png",
+      "blob": "e172d37a08c9b6bcfc9e144cc1564508887b2ab3"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/assets/map/1235-644.png",
+      "blob": "6514776e62ae99f6a4048e58f73c975ab37ca8e5"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/assets/map/1236-639.png",
+      "blob": "60436d7d06e8165be6cc17978f6976d4e277b770"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/assets/map/1236-640.png",
+      "blob": "822072d73daf44dbb48f4190d7bc0936cee1fba9"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/assets/map/1236-641.png",
+      "blob": "29fc105c8fa571887ca1ab90c932d1e1b00a3b42"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/assets/map/1236-642.png",
+      "blob": "bf538b9802208fb768e090ef55e1679f30faaea8"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/assets/map/1236-643.png",
+      "blob": "32a29334f7c1d3b5f16126a553a98fe706d5afd1"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/assets/map/1236-644.png",
+      "blob": "7fd21583424e61b6a93ef2123afb592be3749380"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/assets/map/1237-639.png",
+      "blob": "ee9223c231574e414edff7875f9af5944ad08d4f"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/assets/map/1237-640.png",
+      "blob": "4afbf76fa4a8a5e42e91e31107889e7afb9064d0"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/assets/map/1237-641.png",
+      "blob": "4b1fe037eddfd89ce623745baf33be4fdecc3551"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/assets/map/1237-642.png",
+      "blob": "79d1670a4ce694ca6a6ccde339efab8b75f9cc8d"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/assets/map/1237-643.png",
+      "blob": "87b12509a71b851051fbec4de95340f873a3e904"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/assets/map/1237-644.png",
+      "blob": "6d696d64850d81de1dc03028c50c93d7490d1f2d"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/assets/map/1238-639.png",
+      "blob": "301dbd83643471d1d00aef9aaffb4411aee43d28"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/assets/map/1238-640.png",
+      "blob": "877c9c3e1ba16d9bbdfd3d754876e2b3e1319fad"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/assets/map/1238-641.png",
+      "blob": "abef199cc3c4c370b3cbc807121366c7298f3c56"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/assets/map/1238-642.png",
+      "blob": "6f51f4039582d8330d68548a3438efd9a856e845"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/assets/map/1238-643.png",
+      "blob": "b800dac9af0da009aa06c4adca40f77f9e369c4f"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/assets/map/1238-644.png",
+      "blob": "2b088bb3b7ea233b784d86232c7997e9d1e5fd4f"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/assets/map/1239-639.png",
+      "blob": "ce21289a62a97ae497dfe8fb0326dbd27508cd67"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/assets/map/1239-640.png",
+      "blob": "76f98e20a5b03b0e965b29c9cd2b13e7f0490728"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/assets/map/1239-641.png",
+      "blob": "cb38473b8f7001379a47bd541bf62257da430273"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/assets/map/1239-642.png",
+      "blob": "1d556de21b348d9cc8567d06275293866b2db802"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/assets/map/1239-643.png",
+      "blob": "e71ba273b913885afd48eddd2dc74ecefec8af95"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/assets/map/1239-644.png",
+      "blob": "89507d2cc781c1a29f12d72264e5360d691955d1"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/assets/map/1240-639.png",
+      "blob": "2f16d5a9461f527a1a9c07925d9d50a036a23626"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/assets/map/1240-640.png",
+      "blob": "4ec358c45d261b892380bae5545d50bd60b0a3ba"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/assets/map/1240-641.png",
+      "blob": "c33e99a7132ba1a6aecf16dd7b804d5dfbed7cde"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/assets/map/1240-642.png",
+      "blob": "d61102313c0f350819b5fa75dfb40182947994d9"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/assets/map/1240-643.png",
+      "blob": "18ebf96341eca3a0562479e9f769bba760336804"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/assets/map/1240-644.png",
+      "blob": "1762f7375f77edda87a27447d4b5f44bd457aab2"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/assets/map/1241-639.png",
+      "blob": "7639606b2aec6f94a96bee01bc70711164fff6bd"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/assets/map/1241-640.png",
+      "blob": "4cf5a47d21c7af2946493103b35921f4074e60e8"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/assets/map/1241-641.png",
+      "blob": "572307dcfdbc1b59741e6314ad5378f1562f6801"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/assets/map/1241-642.png",
+      "blob": "5d2135dbf16915cabcdd2d53d9b39345b3f66d78"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/assets/map/1241-643.png",
+      "blob": "4bdb4f717216c536ecfd6de750601116d89be5eb"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/assets/map/1241-644.png",
+      "blob": "64e405204dfd7d792b78a5dda9bdac70b7b71bd9"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/assets/map/1242-639.png",
+      "blob": "11259bea3d42ed65bd71aafdb3edef491f787162"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/assets/map/1242-640.png",
+      "blob": "eba442840376bf32e376f4a2671d56564b89e4eb"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/assets/map/1242-641.png",
+      "blob": "eec33569bd252f9f5e54fec59dd053ff8b8b51e5"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/assets/map/1242-642.png",
+      "blob": "481652fe3237546233ce11d0f9ebb8065dc6121c"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/assets/map/1242-643.png",
+      "blob": "9c6ad1246eece02581584be0f466dfc4f6aa296f"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/assets/map/1242-644.png",
+      "blob": "4002c28ccf21eff8730e42164df60635e35e6f06"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/assets/map/1243-641.png",
+      "blob": "182e7a5f99a1bdef7cd647452f598507b80d2523"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/assets/map/1243-642.png",
+      "blob": "d33d843d039daf3de18aeb6323ccc7450cae7dbc"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/assets/news-1.png",
+      "blob": "a1d1cd0742a3887f88ee6b5bcd7fdf34d90a96b2"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/assets/news-2.jpg",
+      "blob": "00d004c712d1190ad9057b75c68a7c86f1b65969"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/assets/news-3.jpg",
+      "blob": "dd9e4522ba79066b90ad5d4bddea7125bc92490c"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/assets/news-4.png",
+      "blob": "473a587c10624c76281846f2a3729a63239748c0"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/assets/news-5.jpg",
+      "blob": "5d3f53925bccf0b1c9c64483821155f2d1e2a1f2"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/assets/news-6.png",
+      "blob": "bb21acf839983bb2131e87919d7c38904eca1d20"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/assets/old-money-interior.webp",
+      "blob": "b4b0c84f9c9c97119704b780c2a08c7e7f87a36c"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/assets/reference-05fbf4abada4.jpg",
+      "blob": "4ec6996438e81621a6a01a9cc8a28afdaeb02ada"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/assets/reference-1a36d17521f2.jpg",
+      "blob": "3acb2f6cd87c7e0b7c25ad4d3e23f67860500f29"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/assets/reference-2fceff4488e7.jpg",
+      "blob": "b21cacbdb839dadfc14a055648016a29c683a295"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/assets/reference-30ef3d0413b1.jpg",
+      "blob": "483e5ded029b4c6f6a00c9e986bb227d7b9730a6"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/assets/reference-30f23f2af407.jpg",
+      "blob": "0ea661348a718eeaf80fa27b6a7616aa30022f55"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/assets/reference-588bcbba11f8.jpg",
+      "blob": "ce77ba4105bf42fef3282d02ad1a75431292edae"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/assets/reference-5e2cbce10f06.jpeg",
+      "blob": "ff48403535832d23e5d38223a7efa39db075f226"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/assets/reference-7aa20aa89b87.svg",
+      "blob": "f75df3d06ae45018704bccecf8ade06a5a7c0eb5"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/assets/reference-bfc38e9da7e8.jpeg",
+      "blob": "9461eb6cba6230f15e9606a020eb03e9c63e9e69"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/assets/reference-e853032ae786.jpg",
+      "blob": "4ac77d54b13e9ea81d2ebc5efcc45bb92b05dc8b"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/assets/reference-eba949f42e39.jpg",
+      "blob": "835f0bfecc5dff7e6fb0571f653abad3b1e57d7f"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/assets/reference-ec25cf71b8f6.jpg",
+      "blob": "94ea124b2280b4d2a9f1f0774be25f663d95b31c"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/assets/reference-f07d68578109.jpg",
+      "blob": "be60a7c68ffb987511e9d3043b3192ba5866f4fe"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/brand-nowrap.css",
+      "blob": "c6e2c71216f0686ebeb5db7a5c2c71e6dde04bc5"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/brand-nowrap.js",
+      "blob": "3d08e7284078ddf235e0f9bcb1a5462e1e16e528"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/css/country-catalog-filters.css",
+      "blob": "8c1a69a20549c49c2933b4212b52850686d8af1f"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/css/country-map-panel-match.css",
+      "blob": "ca0195fa107559c1ab6ac5a02f6265301da63f6d"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/css/country-node.css",
+      "blob": "522cd23f1102aa2da649ead1251d56ce4c449a5c"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/css/country-owner-footer.css",
+      "blob": "34971ded615ff3b54caa7c15c987215434f57f35"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/css/country-reference-controls.css",
+      "blob": "96abbeaf952f6579720000642c61370bf3b71304"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/css/country-source.css",
+      "blob": "6c7ad025e309b7c33705995fdbcd2bf5f7c15a86"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/css/home-kit-v1.css",
+      "blob": "97e5a33a1ccaec9498fb30d9f52dcc81e71c3264"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/css/listing-mode.css",
+      "blob": "b4d7ea866ba729c63842deff601dddb9d1fff218"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/css/map-expanded.css",
+      "blob": "fb097f3c215c4abd85fff480e1179fabb4e0521c"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/css/map-responsive.css",
+      "blob": "37816ec8de471337bdc7e1e8567cd1821dc03cbb"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/css/map-vendor-controls.css",
+      "blob": "d96fcecce97faa2ab44df0174f36954393fc9d46"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/css/map-vendor-distribution.css",
+      "blob": "4244240fb7e3efcd033865852c64f0233c261015"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/css/map-vendor.css",
+      "blob": "845792ba20d3845d7e195100f9e8429a0db8df7f"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/css/owner-header.css",
+      "blob": "4932b4b0dac927cf0d50184c2b4d2c56ff5c3e57"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/css/start-sales-cards.css",
+      "blob": "b8ce26ec17a86e3a3d47ba9b9d8454e00564ee21"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/css/ui-kit.css",
+      "blob": "b1c9de77d61cbc4628d473f9b02172c3ac09d0cf"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/hero-laptop.css",
+      "blob": "5e6a0ea2a859c22e947af90ee0294cc996b0559c"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/index.html",
+      "blob": "eee519ec05248836361ba37498e3b9301f42c3d0"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/js/country-catalog-filters.js",
+      "blob": "489df7e1c638510e361f4402e9cba64bd9de64da"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/js/country-filter-template.js",
+      "blob": "52c743ee10108da5e7a8303a936d77d70b03d45f"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/js/country-full-filters.js",
+      "blob": "9ec96f5020b89eaf80c818c5f139056ca9234ec7"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/js/country-node.js",
+      "blob": "d9c2aa917369777107a881ec534b8292c05b9737"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/js/country-reference-controls.js",
+      "blob": "72632385a34f8433937fcd80d493aed1ca9a9912"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/js/country-source.js",
+      "blob": "714f5334ca4f42434356391af65344f037576fd7"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/js/map-expanded-template.js",
+      "blob": "68932a6c349008658f7eea6a4c2e2297c14fba6b"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/js/map-expanded.js",
+      "blob": "db9896a72ac44ee4618bf197c7a8322aa50940bb"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/js/map.js",
+      "blob": "ce5ac885e4167e86fb9f57d330aa491c920fae90"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/js/start-sales-cards.js",
+      "blob": "52579f995a0c65aeec2c9bd30654a73b9816ca94"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/js/ui-kit-runtime.js",
+      "blob": "456f09596f0b7ab871a23492247e1ad52b23314b"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/media-header.css",
+      "blob": "fefcda204554a82bfd3c632ad0e23cf8991b4728"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/media-header.js",
+      "blob": "65430fcda07e5e86f8d7ca0fe9fa9d37dc24a750"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/node-catalog-links.css",
+      "blob": "94acd378a04cb708060824c2ed133041af96ee82"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/node-catalog-links.js",
+      "blob": "041247681894a8d161267bc4b810e011148e15e9"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/node-expert-dialog.css",
+      "blob": "17ba1b00b5c5a23b6f590ced6e9727717078250e"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/node-expert-dialog.js",
+      "blob": "89a6aaba43129951c85e0427574efacac61de139"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/node-filters.css",
+      "blob": "b2de8462f3bfb7aca9627f1e98d212710f5eea9c"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/node-filters.js",
+      "blob": "b9b0dbf0e99a21df074a80a4931495e67ae55fc8"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/node-footer-logo.svg",
+      "blob": "4a68fae5eb75034891f86a42bd6dbc64caeee4d1"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/node-footer.css",
+      "blob": "30d641a79037a386b366a618989c90ca6eb8be08"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/node-footer.js",
+      "blob": "d27a79ed3152fd84e7f27829bf691fede0410e9a"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/node-header.css",
+      "blob": "fc4e7d756f5da9ee3cd3cb7a2ce5d488e4c2c6a1"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/node-news.css",
+      "blob": "2d7da1cc93431d3c9d2aa5878223c3e96762c0a7"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/node-news.js",
+      "blob": "854691e89feb331fab6840eb69512754982ceb8b"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/node-recommendations-LICENSE.txt",
+      "blob": "d2f800dd7dd363959544cb0adc001319202e8254"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/node-recommendations.css",
+      "blob": "238cf08dbcbb705922b93680564756452c83a845"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/node-recommendations.js",
+      "blob": "cacfb07a51556bc815b49e5001c7bf3481889a9e"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/node-shell.css",
+      "blob": "ec64ab464eaaf6eb286616f8ab42b63b960d323d"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/node-shell.js",
+      "blob": "089f30380ac734b7cc9bd378e3ac8b6cde7bea1d"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/node-spacing.css",
+      "blob": "66711c4b5ed5945c5699e21939456714c174a074"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/tools/verify-catalog-filters.cjs",
+      "blob": "a75aeaf0ccf2d62ac6b286580d1939ca1251d001"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/tools/verify-home-kit.cjs",
+      "blob": "dcfa0118138b827dee84fd525e5228d9b6d696ad"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/tools/verify-package.cjs",
+      "blob": "9736f518d2b43ed31003202edf17ac939fd53e89"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/vendor/SPLIDE-LICENSE",
+      "blob": "d2f800dd7dd363959544cb0adc001319202e8254"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/vendor/splide-4.1.4.min.js",
+      "blob": "7f4cd983b97cab66c571da510ac3ca719e54eaa1"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/verification/catalog-filters-2026-11-02.json",
+      "blob": "eb9c01c201779607d2cebc1918ab6a092fc0b2fc"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/verification/cleanup.json",
+      "blob": "fee73a0cfd894174f2f9cd55b55bd96069189cb0"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/verification/home-kit-v1.json",
+      "blob": "511146fd56ff361837115ce1923a1036336d4aec"
+    },
+    {
+      "path": "zagorodnaya-nedvizhimost/verification/package.json",
+      "blob": "47a40f9fac797441e8887282cf5b459c313614c8"
+    }
+  ]
+}
