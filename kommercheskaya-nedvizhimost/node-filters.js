@@ -258,6 +258,13 @@
   }
  }
 
- function schedule(){if(queued)return;queued=true;requestAnimationFrame(()=>{queued=false;mount();mountMaps();enhanceMapCards();document.querySelectorAll('.country-catalog-filters').forEach(e=>e.classList.add('resort-filters'));for(const modal of document.querySelectorAll('.hero-filter-modal.resort-filters')){modal.classList.add('hero-filter-modal--dark');for(const name of ['hero-filter-panel','hero-filter-panel-content','ui-checkbox','ui-switch'])modal.querySelectorAll('.'+name).forEach(e=>e.classList.add(name+'--dark'));}});}
+ function enhanceSortArrows(){
+  for(const field of document.querySelectorAll('.catalog-result-summary .catalog-grid__sort,.catalog-map-browser label:has([data-node-map-sort])')){
+   field.classList.add('node-sort-field');if(field.querySelector(':scope>.node-sort-arrows'))continue;
+   const icon=document.createElement('span');icon.className='node-sort-arrows';icon.setAttribute('aria-hidden','true');
+   icon.innerHTML='<svg width="14" height="16" viewBox="0 0 16 16" fill="none" focusable="false"><path d="m4 6 4-4 4 4M4 10l4 4 4-4" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/></svg>';field.append(icon);
+  }
+ }
+ function schedule(){if(queued)return;queued=true;requestAnimationFrame(()=>{queued=false;mount();mountMaps();enhanceMapCards();enhanceSortArrows();document.querySelectorAll('.country-catalog-filters').forEach(e=>e.classList.add('resort-filters'));for(const modal of document.querySelectorAll('.hero-filter-modal.resort-filters')){modal.classList.add('hero-filter-modal--dark');for(const name of ['hero-filter-panel','hero-filter-panel-content','ui-checkbox','ui-switch'])modal.querySelectorAll('.'+name).forEach(e=>e.classList.add(name+'--dark'));}});}
  new MutationObserver(schedule).observe(document.documentElement,{childList:true,subtree:true});document.addEventListener('barnes:node-ready',schedule);document.addEventListener('DOMContentLoaded',schedule);document.addEventListener('country-listing-render',schedule);document.addEventListener('barnes:filters-apply',schedule);schedule();
 })();
