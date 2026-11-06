@@ -4,7 +4,7 @@
   var base = new URL('../', document.currentScript.src);
   var stylesheet = document.createElement('link');
   stylesheet.rel = 'stylesheet';
-  stylesheet.href = new URL('css/quick-filters.css?v=e6357411a4e6', base).href;
+  stylesheet.href = new URL('css/quick-filters.css?v=8ec4ae29d75f', base).href;
   document.head.appendChild(stylesheet);
   var configs = window.BarnesQuickConfig || [
     { title:'Локация', key:'directions', reset:'Все направления', choices:['Сочи','Анапа','Алтай','Архыз'] },

@@ -54,17 +54,17 @@
  }
 
  /* COMMON CATALOG LINKS LOADER */
- const linksScript=document.createElement('script');linksScript.src=new URL('node-catalog-links.js?v=e6357411a4e6',document.currentScript.src).href;document.body.append(linksScript);
+ const linksScript=document.createElement('script');linksScript.src=new URL('node-catalog-links.js?v=8ec4ae29d75f',document.currentScript.src).href;document.body.append(linksScript);
  /* COMMON CATALOG LINKS LOADER END */
 
  /* COMMON NEWS LOADER */
- const newsScript=document.createElement('script');newsScript.src=new URL('node-news.js?v=e6357411a4e6',document.currentScript.src).href;document.body.append(newsScript);
+ const newsScript=document.createElement('script');newsScript.src=new URL('node-news.js?v=8ec4ae29d75f',document.currentScript.src).href;document.body.append(newsScript);
  /* COMMON NEWS LOADER END */
  /* COMMON EXPERT DIALOG LOADER */
- const expertDialogScript=document.createElement('script');expertDialogScript.src=new URL('node-expert-dialog.js?v=e6357411a4e6',document.currentScript.src).href;document.body.append(expertDialogScript);
+ const expertDialogScript=document.createElement('script');expertDialogScript.src=new URL('node-expert-dialog.js?v=8ec4ae29d75f',document.currentScript.src).href;document.body.append(expertDialogScript);
  /* COMMON EXPERT DIALOG LOADER END */
  /* COMMON FOOTER LOADER */
- const footerScript=document.createElement('script');footerScript.src=new URL('node-footer.js?v=e6357411a4e6',document.currentScript.src).href;document.body.append(footerScript);
+ const footerScript=document.createElement('script');footerScript.src=new URL('node-footer.js?v=8ec4ae29d75f',document.currentScript.src).href;document.body.append(footerScript);
  /* COMMON FOOTER LOADER END */
  sync();
 })();

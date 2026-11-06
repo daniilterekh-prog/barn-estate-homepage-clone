@@ -11,7 +11,7 @@
   var base = new URL('.', document.currentScript.src);
   var css = document.createElement('link');
   css.rel = 'stylesheet';
-  css.href = new URL('../css/filters-modal.css?v=c9345e4382dd', base).href;
+  css.href = new URL('../css/filters-modal.css?v=d59ea6599341', base).href;
   if (!hasStylesheet(css.href)) document.head.appendChild(css);
   var template = document.createElement('template');
   template.innerHTML = window.BarnesFilterTemplate;

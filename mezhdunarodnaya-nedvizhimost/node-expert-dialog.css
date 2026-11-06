@@ -324,8 +324,8 @@ svg:not(.home-owner-host.barnes-template) { overflow: hidden; }
   html body[data-node-shell] .node-expert-dialog .node-dialog__content {width:100%!important;height:calc(100dvh - 16px)!important;max-height:calc(100dvh - 16px)!important;}
   html body[data-node-shell] .node-expert-dialog .node-dialog__layout {display:flex!important;flex-direction:column!important;}
   html body[data-node-shell] .node-expert-dialog .node-dialog__body {flex:1 1 auto!important;padding:24px 20px!important;}
-  html body[data-node-shell] .node-expert-dialog .node-dialog__hero {flex:none!important;min-height:0!important;height:160px!important;order:-1!important;}
-  html body[data-node-shell] .node-expert-dialog .node-dialog__photo {height:160px!important;object-fit:cover!important;object-position:var(--node-dialog-mobile-photo-position,center top)!important;}
+  html body[data-node-shell] .node-expert-dialog .node-dialog__hero {flex:none!important;min-height:0!important;height:auto!important;aspect-ratio:1700 / 889!important;order:-1!important;}
+  html body[data-node-shell] .node-expert-dialog .node-dialog__photo {height:100%!important;object-fit:cover!important;object-position:var(--node-dialog-mobile-photo-position,center top)!important;}
   html body[data-node-shell] .node-expert-dialog .node-dialog__title {font-size:31px!important;line-height:1.05!important;}
   html body[data-node-shell] .node-expert-dialog .node-dialog__intro {font-size:15px!important;line-height:1.4!important;margin-bottom:20px!important;}
   html body[data-node-shell] .node-expert-dialog .node-dialog__top {margin-bottom:20px!important;}

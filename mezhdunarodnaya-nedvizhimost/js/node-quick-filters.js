@@ -4,7 +4,7 @@
   var base = new URL('.', document.currentScript.src);
   var stylesheet = document.createElement('link');
   stylesheet.rel = 'stylesheet';
-  stylesheet.href = new URL('../css/node-quick-filters.css?v=2b58d3bd6ddb', base).href;
+  stylesheet.href = new URL('../css/node-quick-filters.css?v=f14c34310855', base).href;
   document.head.appendChild(stylesheet);
   var template=document.querySelector('#source-filters').content;
   function choices(title){

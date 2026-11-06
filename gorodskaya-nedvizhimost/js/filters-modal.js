@@ -2,10 +2,10 @@
   'use strict';
   if (window.BarnesFilters || !window.BarnesFilterTemplate) return;
   var base = new URL('.', document.currentScript.src);
-  var sourceCSS=document.createElement('link');sourceCSS.rel='stylesheet';sourceCSS.href=new URL('../css/filters-source.css?v=1ed6b0abaa7f',base).href;document.head.append(sourceCSS);
+  var sourceCSS=document.createElement('link');sourceCSS.rel='stylesheet';sourceCSS.href=new URL('../css/filters-source.css?v=6948a25778f3',base).href;document.head.append(sourceCSS);
   var css = document.createElement('link');
   css.rel = 'stylesheet';
-  css.href = new URL('../css/filters-modal.css?v=1ed6b0abaa7f', base).href;
+  css.href = new URL('../css/filters-modal.css?v=6948a25778f3', base).href;
   document.head.appendChild(css);
   var template = document.createElement('template');
   template.innerHTML = window.BarnesFilterTemplate;

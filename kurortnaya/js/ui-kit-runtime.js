@@ -1,18 +1,18 @@
 (function () {
   var navigation = document.createElement('script');
-  navigation.src = '../shared/node-menu.js?v=c9345e4382dd';
+  navigation.src = '../shared/node-menu.js?v=d59ea6599341';
   document.body.appendChild(navigation);
   var filtersTemplate = document.createElement('script');
-  filtersTemplate.src = 'js/filters-template.js?v=c9345e4382dd';
+  filtersTemplate.src = 'js/filters-template.js?v=d59ea6599341';
   filtersTemplate.onload = function () {
     var filtersScript = document.createElement('script');
-    filtersScript.src = 'js/filters-modal.js?v=c9345e4382dd';
+    filtersScript.src = 'js/filters-modal.js?v=d59ea6599341';
     filtersScript.onload = function () {
       var quickScript = document.createElement('script');
-      quickScript.src = 'js/quick-filters.js?v=c9345e4382dd';
+      quickScript.src = 'js/quick-filters.js?v=d59ea6599341';
       quickScript.onload = function () {
         var brandsScript = document.createElement('script');
-        brandsScript.src = 'js/brand-filters.js?v=c9345e4382dd';
+        brandsScript.src = 'js/brand-filters.js?v=d59ea6599341';
         document.body.appendChild(brandsScript);
       };
       document.body.appendChild(quickScript);
@@ -21,10 +21,10 @@
   };
   document.body.appendChild(filtersTemplate);
   var mapDataScript = document.createElement('script');
-  mapDataScript.src = 'js/map-projects.js?v=c9345e4382dd';
+  mapDataScript.src = 'js/map-projects.js?v=d59ea6599341';
   mapDataScript.onload = function () {
     var mapScript = document.createElement('script');
-    mapScript.src = 'js/map-fullscreen.js?v=c9345e4382dd';
+    mapScript.src = 'js/map-fullscreen.js?v=d59ea6599341';
     document.body.appendChild(mapScript);
   };
   document.body.appendChild(mapDataScript);
@@ -457,7 +457,7 @@
 
   if (!document.querySelector('script[data-kurortnaya-start-sales]')) {
     var startSalesScript = document.createElement('script');
-    startSalesScript.src = 'js/start-sales-cards.js?v=c9345e4382dd';
+    startSalesScript.src = 'js/start-sales-cards.js?v=d59ea6599341';
     startSalesScript.dataset.kurortnayaStartSales = 'true';
     document.body.appendChild(startSalesScript);
   }

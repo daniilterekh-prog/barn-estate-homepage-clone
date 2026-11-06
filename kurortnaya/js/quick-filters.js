@@ -11,7 +11,7 @@
   var base = new URL('.', document.currentScript.src);
   var stylesheet = document.createElement('link');
   stylesheet.rel = 'stylesheet';
-  stylesheet.href = new URL('../css/quick-filters.css?v=c9345e4382dd', base).href;
+  stylesheet.href = new URL('../css/quick-filters.css?v=d59ea6599341', base).href;
   if (!hasStylesheet(stylesheet.href)) document.head.appendChild(stylesheet);
   var configs = [
     { title:'Регион', key:'directions', reset:'Все локации', choices:['Сочи','Анапа','Алтай','Архыз'] },
