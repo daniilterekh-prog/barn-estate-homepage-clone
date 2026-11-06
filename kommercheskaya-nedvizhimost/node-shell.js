@@ -35,9 +35,10 @@
  // Final CTA uses each expert's existing interior-backed photograph, never a black cutout.
  const contact=document.querySelector('.catalog-contact');
  if(contact){
-  const portrait=location.pathname.includes('gorodskaya-nedvizhimost')?['assets/cta-ruslan-unified-v1.webp','0% 0','1.6']:
-   location.pathname.includes('zagorodnaya-nedvizhimost')?['assets/consultation-background.png','100% 0','1.6']:
-   location.pathname.includes('kommercheskaya-nedvizhimost')?['assets/alina-medvedeva-popup.png','107% 0','1.4']:null;
+  const direction=document.body.dataset.nodeFilterDirection;
+  const portrait=direction==='city'?['assets/cta-ruslan-unified-v1.webp','0% 0','1.6']:
+   direction==='country'?['assets/consultation-background.png','100% 0','1.6']:
+   direction==='commercial'?['assets/alina-medvedeva-popup.png','107% 0','1.4']:null;
   contact.addEventListener('click',event=>{const selected=event.target.closest('.catalog-contact__method');if(!selected)return;contact.querySelectorAll('.catalog-contact__method').forEach(button=>{const active=button===selected;button.setAttribute('aria-selected',String(active));button.setAttribute('aria-pressed',String(active));button.classList.toggle('catalog-contact__method--active',active);});});
   if(portrait){contact.style.setProperty('--node-contact-position',portrait[1]);contact.style.setProperty('--node-contact-zoom',portrait[2]);contact.querySelectorAll('.catalog-contact__mobile-photo img,.catalog-contact__expert-photo img').forEach(img=>{img.src=portrait[0];img.removeAttribute('srcset');});}
  }
@@ -54,17 +55,17 @@
  }
 
  /* COMMON CATALOG LINKS LOADER */
- const linksScript=document.createElement('script');linksScript.src=new URL('node-catalog-links.js?v=73ad3a38f4e7',document.currentScript.src).href;document.body.append(linksScript);
+ const linksScript=document.createElement('script');linksScript.src=new URL('node-catalog-links.js?v=7635462a12fb',document.currentScript.src).href;document.body.append(linksScript);
  /* COMMON CATALOG LINKS LOADER END */
 
  /* COMMON NEWS LOADER */
- const newsScript=document.createElement('script');newsScript.src=new URL('node-news.js?v=73ad3a38f4e7',document.currentScript.src).href;document.body.append(newsScript);
+ const newsScript=document.createElement('script');newsScript.src=new URL('node-news.js?v=7635462a12fb',document.currentScript.src).href;document.body.append(newsScript);
  /* COMMON NEWS LOADER END */
  /* COMMON EXPERT DIALOG LOADER */
- const expertDialogScript=document.createElement('script');expertDialogScript.src=new URL('node-expert-dialog.js?v=73ad3a38f4e7',document.currentScript.src).href;document.body.append(expertDialogScript);
+ const expertDialogScript=document.createElement('script');expertDialogScript.src=new URL('node-expert-dialog.js?v=7635462a12fb',document.currentScript.src).href;document.body.append(expertDialogScript);
  /* COMMON EXPERT DIALOG LOADER END */
  /* COMMON FOOTER LOADER */
- const footerScript=document.createElement('script');footerScript.src=new URL('node-footer.js?v=73ad3a38f4e7',document.currentScript.src).href;document.body.append(footerScript);
+ const footerScript=document.createElement('script');footerScript.src=new URL('node-footer.js?v=7635462a12fb',document.currentScript.src).href;document.body.append(footerScript);
  /* COMMON FOOTER LOADER END */
  // Keep only complete pills from the first two mobile rows, including keyboard navigation.
  const heroPills=document.querySelector('.catalog-quick-links--hero .catalog-quick-links__list');

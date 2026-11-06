@@ -1,6 +1,6 @@
 /* One responsive document; no mobile document replacement. No Nuxt runtime or remote render resources. */
 (function(){
-  function load(file){return new Promise((resolve,reject)=>{const s=document.createElement('script');s.src='js/'+file+'?v=c64f156438a3';s.onload=resolve;s.onerror=reject;document.body.append(s)})}
+  function load(file){return new Promise((resolve,reject)=>{const s=document.createElement('script');s.src='js/'+file+'?v=4e24245440df';s.onload=resolve;s.onerror=reject;document.body.append(s)})}
   function nativeControls(){
     const toggle=document.querySelector('.site-header__icon-btn');
     let menu=null,overflow='';

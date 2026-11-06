@@ -6,7 +6,7 @@
   var assetsBase = new URL('../', document.currentScript.src);
   var style = document.createElement('link');
   style.rel = 'stylesheet';
-  style.href = new URL('css/map-fullscreen.css?v=73ad3a38f4e7', assetsBase).href;
+  style.href = new URL('css/map-fullscreen.css?v=7635462a12fb', assetsBase).href;
   document.head.appendChild(style);
   var icon = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">';
   var parameterIcon = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">';

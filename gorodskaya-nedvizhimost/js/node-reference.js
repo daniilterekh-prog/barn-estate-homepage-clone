@@ -92,7 +92,7 @@
     const empty=document.createElement('p');empty.className='city-catalog-empty';empty.textContent='Объектов с такими параметрами нет. Измени фильтры.';list.after(empty);
     document.addEventListener('barnes:filters-apply',render);
     render();
-    const script=document.createElement('script');script.src=new URL('js/node-launch.js?v=c64f156438a3',document.baseURI);document.body.append(script);
+    const script=document.createElement('script');script.src=new URL('js/node-launch.js?v=4e24245440df',document.baseURI);document.body.append(script);
     setupHeader();
     setupSticky();
     setupFullFilters();
@@ -112,16 +112,16 @@
   }
   async function setupSharedFilters() {
     for(const file of ['filters-template.js','filters-modal.js','quick-filters.js','brand-filters.js','city-reference-extras.js']) {
-      await new Promise((resolve,reject)=>{const script=document.createElement('script');script.src=new URL('js/'+file+'?v=c64f156438a3',document.baseURI);script.onload=resolve;script.onerror=reject;document.body.append(script)});
+      await new Promise((resolve,reject)=>{const script=document.createElement('script');script.src=new URL('js/'+file+'?v=4e24245440df',document.baseURI);script.onload=resolve;script.onerror=reject;document.body.append(script)});
     }
-    const adapter=document.createElement('script');adapter.src=new URL('js/catalog-filters.js?v=c64f156438a3',document.baseURI);adapter.onload=()=>{window.BarnEstateCatalogFilters.mount(document);document.body.classList.add('city-reference-synced')};document.body.append(adapter);
+    const adapter=document.createElement('script');adapter.src=new URL('js/catalog-filters.js?v=4e24245440df',document.baseURI);adapter.onload=()=>{window.BarnEstateCatalogFilters.mount(document);document.body.classList.add('city-reference-synced')};document.body.append(adapter);
   }
   function setupMapResults() {
     const data=document.createElement('script');
-    data.src=new URL('js/city-map-projects.js?v=c64f156438a3',document.baseURI).href;
+    data.src=new URL('js/city-map-projects.js?v=4e24245440df',document.baseURI).href;
     data.onload=()=>{
       const script=document.createElement('script');
-      script.src=new URL('js/city-map-fullscreen.js?v=c64f156438a3',document.baseURI).href;
+      script.src=new URL('js/city-map-fullscreen.js?v=4e24245440df',document.baseURI).href;
       document.body.append(script);
     };
     document.body.append(data);
