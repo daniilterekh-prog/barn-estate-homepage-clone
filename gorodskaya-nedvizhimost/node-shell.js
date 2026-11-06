@@ -32,5 +32,13 @@
  addEventListener('scroll',sync,{passive:true});addEventListener('resize',sync,{passive:true});
  // A page may have no initial menu markup; use the shared direction links after enhancement.
  requestAnimationFrame(()=>{if(!menu.querySelector('a')){const wrap=document.createElement('div');wrap.className='node-menu-links';const source=header.querySelector('.mh-reference-nav');if(source)wrap.append(source.cloneNode(true));menu.append(wrap);}sync();});
+ // Measure only the action/details below the lead; expanding copy never pulls the photo down.
+ const intro=document.querySelector('.catalog-intro--with-media'),copy=intro?.querySelector('.catalog-intro__content'),lead=intro?.querySelector('.catalog-intro__lead');
+ if(intro&&copy&&lead){
+  let queued=false,last=-1;
+  function alignIntro(){queued=false;if(!intro.isConnected)return;const offset=Math.max(0,copy.getBoundingClientRect().bottom-lead.getBoundingClientRect().bottom);if(Math.abs(offset-last)>.25){intro.style.setProperty('--node-intro-action-depth',offset+'px');last=offset;}}
+  function queueIntro(){if(!queued){queued=true;requestAnimationFrame(alignIntro);}}
+  const observer=new ResizeObserver(queueIntro);observer.observe(copy);observer.observe(lead);document.fonts?.ready.then(queueIntro);addEventListener('resize',queueIntro,{passive:true});queueIntro();
+ }
  sync();
 })();
