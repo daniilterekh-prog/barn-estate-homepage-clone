@@ -54,7 +54,7 @@
  }
 
  /* COMMON CATALOG LINKS LOADER */
- const linksScript=document.createElement('script');linksScript.src=new URL('node-catalog-links.js?v=f0af542ac971',document.currentScript.src).href;document.body.append(linksScript);
+ const linksScript=document.createElement('script');linksScript.src=new URL('node-catalog-links.js?v=681696f5f7dc',document.currentScript.src).href;document.body.append(linksScript);
  /* COMMON CATALOG LINKS LOADER END */
 
  /* COMMON NEWS LOADER */
