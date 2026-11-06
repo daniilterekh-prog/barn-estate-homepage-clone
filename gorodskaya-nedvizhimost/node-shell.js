@@ -44,6 +44,10 @@
   const observer=new ResizeObserver(queueIntro);observer.observe(copy);observer.observe(lead);document.fonts?.ready.then(queueIntro);addEventListener('resize',queueIntro,{passive:true});queueIntro();
  }
 
+ /* COMMON CATALOG LINKS LOADER */
+ const linksScript=document.createElement('script');linksScript.src=new URL('node-catalog-links.js?v=f0af542ac971',document.currentScript.src).href;document.body.append(linksScript);
+ /* COMMON CATALOG LINKS LOADER END */
+
  /* COMMON NEWS LOADER */
  const newsScript=document.createElement('script');newsScript.src=new URL('node-news.js?v=a64d29fc421d',document.currentScript.src).href;document.body.append(newsScript);
  /* COMMON NEWS LOADER END */
