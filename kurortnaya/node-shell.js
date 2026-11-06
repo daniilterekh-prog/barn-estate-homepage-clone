@@ -32,6 +32,9 @@
  addEventListener('scroll',sync,{passive:true});addEventListener('resize',sync,{passive:true});
  // A page may have no initial menu markup; use the shared direction links after enhancement.
  requestAnimationFrame(()=>{if(!menu.querySelector('a')){const wrap=document.createElement('div');wrap.className='node-menu-links';const source=header.querySelector('.mh-reference-nav');if(source)wrap.append(source.cloneNode(true));menu.append(wrap);}sync();});
+ // One track for each question and one for its answer, shared across FAQ columns.
+ const faqGrid=document.querySelector('.catalog-faq__grid');
+ if(faqGrid){const counts=[...faqGrid.querySelectorAll('.catalog-faq__column')].map(c=>c.querySelectorAll('.catalog-faq__item').length);if(counts.length)faqGrid.style.setProperty('--node-faq-tracks',2*Math.max(...counts));}
  // Measure only the action/details below the lead; expanding copy never pulls the photo down.
  const intro=document.querySelector('.catalog-intro--with-media'),copy=intro?.querySelector('.catalog-intro__content'),lead=intro?.querySelector('.catalog-intro__lead');
  if(intro&&copy&&lead){

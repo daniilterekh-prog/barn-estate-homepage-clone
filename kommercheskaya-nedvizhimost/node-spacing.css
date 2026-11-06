@@ -79,3 +79,19 @@
   html body[data-node-shell] .catalog-consultation__image:is([src*="consultation-background"],[src*="cta-alina-unified"]) {height:100%!important;max-height:700px!important;mask-image:linear-gradient(to bottom,transparent,#000 4%),linear-gradient(90deg,#000 80%,transparent)!important;mask-composite:intersect!important;}
  }
 }
+
+/* FAQ columns share question/answer tracks, so wrapping and expansion keep paired rows aligned. */
+@layer barn-node-spacing {
+ html body[data-node-shell] .catalog-faq__inner {box-sizing:border-box!important;width:100%!important;max-width:1920px!important;margin-inline:auto!important;padding-inline:var(--barn-page-gutter)!important;text-align:left!important;}
+ html body[data-node-shell] .catalog-faq__inner>.catalog-section-eyebrow {font-size:14px!important;line-height:16.1px!important;font-weight:400!important;letter-spacing:.12em!important;color:#4f4d49!important;}
+ @media(max-width:1024px){html body[data-node-shell] .catalog-faq__inner>.catalog-section-eyebrow {font-size:12px!important;line-height:14.4px!important;}}
+ @media(min-width:541px){
+  html body[data-node-shell] .catalog-faq__grid {grid-template-columns:repeat(2,minmax(0,1fr))!important;grid-template-rows:repeat(var(--node-faq-tracks,10),auto)!important;grid-auto-flow:column!important;row-gap:0!important;align-items:stretch!important;}
+  html body[data-node-shell] .catalog-faq__column,html body[data-node-shell] .catalog-faq__item {display:contents!important;}
+  html body[data-node-shell] .catalog-faq__column:nth-child(1) {--node-faq-column:1;}
+  html body[data-node-shell] .catalog-faq__column:nth-child(2) {--node-faq-column:2;}
+  html body[data-node-shell] :is(.catalog-faq__question,.catalog-faq__answer) {grid-column:var(--node-faq-column)!important;min-width:0!important;}
+  html body[data-node-shell] .catalog-faq__column>.catalog-faq__item:first-child>.catalog-faq__question {border-top:1px solid rgba(30,30,30,.12)!important;}
+  html body[data-node-shell] .catalog-faq__answer {border-bottom:1px solid rgba(30,30,30,.12)!important;}
+ }
+}
