@@ -39,3 +39,5 @@
 [Сборка, границы исключения, хранение двух последних пакетов и откат](docs/pages-package.md). Workflow `Publish Pages package` публикует рабочие файлы без изменения содержимого; служебные проверки остаются в GitHub.
 
 06.11.2026: текущие стили загружаются до показа контента; новости, подборки, старты продаж и футеры узлов собраны в HTML. Мобильные URL городской и курортной страниц ведут на единый адаптивный документ. Дочерние скрипты получают версию текущей сборки. [Исходники и проверка](https://github.com/daniilterekh-prog/barnes-sites/tree/main/main-site/maintenance/2026-11-06-current-startup).
+
+Проверенная база очистки загрузки: [barnes-sites af17a1a](https://github.com/daniilterekh-prog/barnes-sites/commit/af17a1a). Пакет страниц и его локальные проверки сохранены в [dad86797](https://github.com/daniilterekh-prog/barn-estate-homepage-clone/commit/dad867975a6089e5ea20f3b06fed3740f6b7545e).
