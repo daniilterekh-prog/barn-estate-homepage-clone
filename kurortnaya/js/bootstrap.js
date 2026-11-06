@@ -11,7 +11,7 @@
     startRuntime();
     return;
   }
-  fetch('mobile.html?v=node-filters-20261105', { cache: 'no-store' })
+  fetch('mobile.html?v=node-maps-20261106', { cache: 'no-store' })
     .then(function (response) {
       if (!response.ok) throw new Error('Mobile snapshot unavailable');
       return response.text();
