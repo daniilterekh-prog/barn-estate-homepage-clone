@@ -36,8 +36,7 @@ html body.commercial-node .apartment-card--catalog .apartment-card__name-text[cl
 html body.commercial-node .catalog-feedback-modal .feedback-modal__hero-image--alina { object-fit:cover;object-position:90% center; }
 /* Selection carousel keeps its geometry while long names use one line. */
 html body.commercial-node .catalog-best-offers .launch-card .apartment-card__name { display:block;min-width:0;min-height:0;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;-webkit-line-clamp:unset; }
-/* Zoom out only Alina's bottom-right floating avatar, not the request form. */
-html body.commercial-node .floating-expert__avatar[class] img { transform:scale(1.9); }
+
 /* One generated room spans the whole CTA, including behind Alina. */
 html body.commercial-unified-cta .catalog-consultation__media::before { display:none; }
 html body.commercial-unified-cta .catalog-consultation__image[class] { width:100%;object-fit:cover;object-position:center; }
@@ -52,5 +51,8 @@ html body.commercial-unified-cta .catalog-consultation__image[class] { width:100
  html body.commercial-unified-cta .catalog-consultation__overlay { background:rgba(5,7,10,.7); }
 }
 @media(max-width:540px){
- html body.commercial-unified-cta .catalog-consultation__mobile-photo img { object-position:100% 20%;transform:scale(2.3);transform-origin:50% 0; }
+ html body.commercial-unified-cta .catalog-consultation__mobile-photo img { object-position:107% 0;transform:scale(1.4);transform-origin:50% 0; }
 }
+
+/* Match Alina's circle framing to the final CTA: centered face, more room around it. */
+html body.commercial-node .floating-expert__avatar[class] img { object-position:107% 0;transform:scale(1.4);transform-origin:50% 0; }

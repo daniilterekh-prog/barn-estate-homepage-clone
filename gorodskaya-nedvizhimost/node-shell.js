@@ -37,7 +37,7 @@
  if(contact){
   const portrait=location.pathname.includes('gorodskaya-nedvizhimost')?['assets/cta-ruslan-unified-v1.webp','0% 0','1.6']:
    location.pathname.includes('zagorodnaya-nedvizhimost')?['assets/consultation-background.png','100% 0','1.6']:
-   location.pathname.includes('kommercheskaya-nedvizhimost')?['assets/alina-medvedeva-popup.png','100% 0','1.6']:null;
+   location.pathname.includes('kommercheskaya-nedvizhimost')?['assets/alina-medvedeva-popup.png','107% 0','1.4']:null;
   contact.addEventListener('click',event=>{const selected=event.target.closest('.catalog-contact__method');if(!selected)return;contact.querySelectorAll('.catalog-contact__method').forEach(button=>{const active=button===selected;button.setAttribute('aria-selected',String(active));button.setAttribute('aria-pressed',String(active));button.classList.toggle('catalog-contact__method--active',active);});});
   if(portrait){contact.style.setProperty('--node-contact-position',portrait[1]);contact.style.setProperty('--node-contact-zoom',portrait[2]);contact.querySelectorAll('.catalog-contact__mobile-photo img,.catalog-contact__expert-photo img').forEach(img=>{img.src=portrait[0];img.removeAttribute('srcset');});}
  }
