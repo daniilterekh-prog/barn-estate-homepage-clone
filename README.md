@@ -1,6 +1,7 @@
 # BARN Estate — страницы основного сайта
 
 - [Команда — 27 сотрудников, фильтры и действующий UI-кит ·09.11.2026](team/) · [Исходники](https://github.com/daniilterekh-prog/barnes-sites/tree/main/main-site/pages/team).
+- [Контакты: три офиса, карты и способы связи ·09.11.2026](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/contacts/).
 
 **Пять основных узлов — ФИНАЛ, изменения запрещены пользователем06.11.2026.** Городская, коммерческая, загородная, зарубежная и курортная восстановлены по `dd0cba9a`. [Правила](AGENTS.md) · [Контроль файлов](FINAL-NODES.json). Их нельзя пересобирать или менять ради внутренних страниц; CI проверяет неизменность1305файлов.
 
@@ -10,7 +11,7 @@
 
 - [Единый первый экран пяти узлов по продаже собственникам ·05.11.2026](https://github.com/daniilterekh-prog/barnes-sites/tree/main/main-site/shared/node-shell).
 
-**[Актуальные13страниц и их рабочие исходники](PAGES.md)** · [Техническая очистка03.11.2026](https://github.com/daniilterekh-prog/barnes-sites/tree/main/main-site/maintenance/2026-11-03-cleanup). Главная и переносимые блоки — технический выпуск UI-кита1.0.2; дизайн сохранён.
+**[Актуальные страницы и их рабочие исходники](PAGES.md)** · [Техническая очистка03.11.2026](https://github.com/daniilterekh-prog/barnes-sites/tree/main/main-site/maintenance/2026-11-03-cleanup). Главная и переносимые блоки — технический выпуск UI-кита1.0.2; дизайн сохранён.
 
 - [Полная сверка hero по Медиа: амбассадоры, аренда и продажа ·03.11.2026](https://github.com/daniilterekh-prog/barnes-sites/tree/main/main-site/pages/hero-media-parity-2026-11-03).
 

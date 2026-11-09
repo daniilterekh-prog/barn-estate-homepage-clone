@@ -9,6 +9,15 @@
     "mode": "archived-home-with-current-layers"
   },
   {
+    "key": "contacts",
+    "title": "Контакты",
+    "public": "contacts",
+    "private": "main-site/pages/contacts",
+    "entry": "index.html",
+    "preview": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/contacts/",
+    "mode": "current-static-package"
+  },
+  {
     "key": "media",
     "title": "Медиа",
     "public": "media",
