@@ -1,0 +1,71 @@
+{
+  "sourceCommit": "d4ab833bc945a649cc45724ccaa3448e014d3ca2",
+  "date": "2026-11-09",
+  "baselineSources": [
+    "main-site/pages/media/_nuxt/style.CIys_ExF.css",
+    "main-site/pages/media/kit/home-typography.css",
+    "main-site/pages/media/kit/home-spacing.css",
+    "main-site/pages/media/kit/home-buttons.css"
+  ],
+  "copies": [
+    {
+      "source": "main-site/shared/media-header/media-header.css",
+      "target": "css/media-header.css",
+      "sourceSha256": "5dec0c68563d19025d56563c3118cb64725c2e551b135d1b67e8505d9713b941"
+    },
+    {
+      "source": "main-site/shared/media-header/media-header.js",
+      "target": "js/media-header.js",
+      "sourceSha256": "9434e924fd46edf2b97a3d9d1473505052dd64b4c5d8f3c9419baea0cc52449c"
+    },
+    {
+      "source": "main-site/shared/shared/layout-gutters.css",
+      "target": "css/layout-gutters.css",
+      "sourceSha256": "9c7ccfabdd5541cf007cac9a40fe23131f1fb2f28964c529d9e6f7bac9851bb1"
+    },
+    {
+      "source": "main-site/shared/shared/node-menu.js",
+      "target": "js/site-menu.js",
+      "sourceSha256": "fa575219e4e2bc69fd68fb72d8d2f39c502995f1e5cb77dd76e258edde92bfbb"
+    },
+    {
+      "source": "main-site/pages/media/hero-reference.css",
+      "target": "css/hero-reference.css",
+      "sourceSha256": "fb96da1db38b4390e9a5dc416a2fc5f0e621b38ecffa661abd2986a7dffbbf6b"
+    },
+    {
+      "source": "main-site/pages/media/hero-height.css",
+      "target": "css/hero-height.css",
+      "sourceSha256": "40349c90f3a4708bde8715bd542ef1c912240d84bb8ca176f59aa878625e720d"
+    },
+    {
+      "source": "main-site/pages/media/hero-laptop.css",
+      "target": "css/hero-laptop.css",
+      "sourceSha256": "4d092d1301257b5f197a31f6ec0461afbd8643687871f7c9b8bdb3d883bbe1a6"
+    },
+    {
+      "source": "main-site/shared/node-footer/footer.css",
+      "target": "css/footer.css",
+      "sourceSha256": "977e9500b90e53cfa88afb4a9f386821c1132bb94e41c3607a22f4c4c36ecf5f"
+    },
+    {
+      "source": "main-site/shared/node-footer/logo.svg",
+      "target": "assets/logo.svg",
+      "sourceSha256": "9b2d8c1a7d4d213587828c6bdf6592a37113a388fedc1b58211534d8cb1e7123"
+    }
+  ],
+  "menuImages": [
+    {
+      "file": "assets/7781fce4e8048ef7.jpg",
+      "source": "barn-estate-homepage-clone/gorodskaya-nedvizhimost/assets/7781fce4e8048ef7.jpg",
+      "sourceCommit": "dd0cba9a0f5d11ead9e9f56451bb40e3a730def7",
+      "sha256": "7781fce4e8048ef743e425d296b2437674b6dc3e1d3684da098beb3afc695357"
+    },
+    {
+      "file": "assets/c5384c30d421ad70.jpg",
+      "source": "barn-estate-homepage-clone/gorodskaya-nedvizhimost/assets/c5384c30d421ad70.jpg",
+      "sourceCommit": "dd0cba9a0f5d11ead9e9f56451bb40e3a730def7",
+      "sha256": "c5384c30d421ad705b43c8eb3dac7d16187ff87eb67392232fb15fa995980a7e"
+    }
+  ]
+}
