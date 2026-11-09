@@ -25,7 +25,10 @@ body.team-menu-open{overflow:hidden}.team-page .site-header.site-header--menu-op
 /* Compact internal-page opening: spacing and H1 match the Favorites reference. */
 .team-directory{padding-top:40px}.team-directory h1{color:var(--ink)}
 html body.team-page.barnes-media-header .site-header__logo img{filter:brightness(0)!important}
-html body.team-page.barnes-media-header .site-header__top{border-bottom-color:#000!important;margin-bottom:0!important}
+/* White owner-sale header: full-width 1px divider, effective published color. */
+.team-header-wrap{overflow-x:clip}
+html body.team-page.barnes-media-header .site-header__top{border-bottom-color:transparent!important;margin-bottom:0!important}
+.team-page .site-header__top::after{content:"";position:absolute;bottom:-1px;left:50%;width:100vw;height:1px;transform:translateX(-50%);background:rgba(30,30,30,.1);pointer-events:none}
 @media(min-width:1281px){html body.team-page.barnes-media-header .mh-reference-nav{display:block;padding-block:26px 0}}
 @media(max-width:1024px){.team-directory{padding-top:32px}}
 @media(max-width:540px){.team-directory{padding-top:28px}.team-directory h1{font-size:32px}}
@@ -40,8 +43,8 @@ html body.team-page.barnes-media-header .site-header__top{border-bottom-color:#0
 @media(max-width:540px){.team-question__inner{padding-block:24px}.team-question h2{font-size:22px}.team-question p{font-size:15px}.team-question .primary-button{min-width:0;width:100%}}
 
 /* Local team search; white surface, existing burgundy accents and compact controls. */
-.team-directory__intro{display:flex;align-items:flex-end;justify-content:space-between;gap:32px}
-.team-search{flex:0 1 440px;max-width:48%;min-width:0}
+.team-directory__intro{display:flex;flex-direction:column;align-items:flex-start;gap:28px}
+.team-search{flex:none;width:100%;max-width:600px;min-width:0}
 .team-search label{display:block;margin-bottom:10px;font-size:14px;line-height:1.3;font-weight:400;color:var(--ink)}
 .team-search__field{display:flex;align-items:center;gap:12px;height:58px;padding:0 6px 0 18px;border:1px solid var(--accent);border-radius:1px;background:#fff;color:var(--ink)}
 .team-search__field:focus-within{outline:2px solid var(--accent);outline-offset:3px}
