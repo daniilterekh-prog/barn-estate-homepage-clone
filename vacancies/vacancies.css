@@ -166,7 +166,6 @@ html body.career-page .mh-contact-panel:not([hidden]) { display: flex !important
   .career-openings__note { font-size: 14px; }
   .career-job { gap: 16px; grid-template-columns: 22px minmax(0,1fr); }
   .career-job .career-button { width: 100%; min-width: 0; justify-content: space-between; }
-  .career-invitation .career-button { width: 100%; }
   .career-page .site-footer__column-title { font-size: 14px !important; line-height: 1.2 !important; font-weight: 400 !important; }
   .career-page .site-footer__link { font-size: 13px !important; line-height: 1.4 !important; font-weight: 400 !important; }
   .career-page .site-footer__callback-btn { margin-bottom: 0; }
@@ -175,41 +174,4 @@ html body.career-page .mh-contact-panel:not([hidden]) { display: flex !important
 @media (prefers-reduced-motion:reduce) {
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition: none !important; animation: none !important; }
-}
-/* Recruitment CTA: the owners' approved full-bleed room and Ruslan portrait,
-   adapted to the existing hh.ru application flow. The photo adds no hiring-role claim. */
-.career-invitation {
-  position: relative;
-  isolation: isolate;
-  padding-block: var(--career-section);
-  color: #fff;
-  background: #101318;
-}
-.career-invitation__photo, .career-invitation__shade {
-  position: absolute; inset: 0; width: 100%; height: 100%;
-}
-.career-invitation__photo { z-index: -2; object-fit: cover; object-position: 75% top; }
-.career-invitation__shade { z-index: -1; background: rgba(5,7,10,.12); }
-.career-invitation__inner { min-height: calc(640px - 2 * var(--career-section)); display: flex; align-items: center; }
-.career-invitation__copy { width: min(44%, 620px); }
-.career-invitation .career-eyebrow { color: rgba(255,255,255,.75); }
-.career-invitation h2 { color: #fff; }
-.career-invitation__lead { margin-top: var(--career-copy-gap); color: rgba(255,255,255,.75); font-size: var(--career-lead); line-height: var(--career-lead-line); font-weight: 300; }
-.career-invitation .career-button { width: 100%; max-width: 560px; margin-top: var(--career-content-gap); }
-.career-invitation__note { max-width: 440px; margin-top: 16px; font-size: 13px; line-height: 18px; font-weight: 300; color: rgba(255,255,255,.75); }
-.career-invitation__portrait { display: none; }
-@media (min-width:1441px) {
-  .career-invitation__inner { min-height: calc(760px - 2 * var(--career-section)); }
-}
-@media (max-width:1024px) {
-  .career-invitation { padding-bottom: 0; }
-  .career-invitation__photo { display: none; }
-  .career-invitation__shade { background: linear-gradient(135deg,#282728,#101318 70%); }
-  .career-invitation__inner { min-height: 0; display: flex; flex-direction: column; align-items: flex-start; gap: 40px; }
-  .career-invitation__copy { width: 100%; max-width: 620px; }
-  .career-invitation__portrait { display: block; width: min(100%,520px); height: 420px; object-fit: cover; object-position: center top; align-self: center; }
-}
-@media (max-width:540px) {
-  .career-invitation__inner { gap: 28px; }
-  .career-invitation__portrait { width: min(100%,380px); height: 320px; }
 }

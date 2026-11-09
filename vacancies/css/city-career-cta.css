@@ -1,0 +1,232 @@
+/* Isolated copy of the finalized city consultation block. Only text and hh.ru action are adapted. */
+.career-invitation { --kit-font:"Tilda Sans","Tilda Sans Fallback",system-ui,sans-serif; --kit-h2-standard-size:38px; --kit-h2-standard-leading:1.2; --kit-focus-accent:#8b1d25; --kit-action-height:70px; --kit-action-padding:36px; --kit-action-size:17px; --node-copy-gap:24px; --node-heading-content:40px; --city-section-space:var(--career-section); --barn-page-gutter:var(--home-gutter); --uk-gutter:var(--home-gutter); }
+@media(min-width:1441px){.career-invitation{--kit-h2-standard-size:44px;--kit-action-size:19px;--kit-action-padding:47px;}}
+@media(max-width:540px){.career-invitation{--kit-h2-standard-size:22px;--kit-action-height:58px;--kit-action-size:18px;--kit-action-padding:24px;--node-copy-gap:16px;--node-heading-content:28px;}}
+
+/* document-desktop.css */
+.catalog-consultation[data-v-f88b8c19] { color: rgb(255, 255, 255); max-width: 100%; min-width: 0px; overflow-x: clip; padding: 60px 0px; width: 100%; }
+@media screen and (max-width: 1440px) {
+.catalog-consultation[data-v-f88b8c19] { padding: 48px 0px; }
+}
+@media screen and (max-width: 540px) {
+.catalog-consultation[data-v-f88b8c19] { padding: 32px 0px; }
+}
+.catalog-consultation__inner[data-v-f88b8c19] { max-width: none; padding-inline: 0px; width: 100%; }
+.catalog-consultation__media[data-v-f88b8c19] { isolation: isolate; overflow: hidden; padding-inline: 100px; position: relative; }
+@media (max-width: 1920px) {
+.catalog-consultation__media[data-v-f88b8c19] { padding-inline: calc(-26.6667px + 6.59722vw); }
+}
+@media (max-width: 768px) {
+.catalog-consultation__media[data-v-f88b8c19] { padding-inline: calc(8.94118px + 1.96078vw); }
+}
+.catalog-consultation__media[data-v-f88b8c19] { padding-block: 72px 80px; }
+@media screen and (max-width: 1440px) {
+.catalog-consultation__media[data-v-f88b8c19] { align-items: center; display: flex; min-height: 638px; padding-block: 48px; }
+}
+@media screen and (max-width: 540px) {
+.catalog-consultation__media[data-v-f88b8c19] { background: rgb(38, 38, 38); min-height: 0px; padding-block: 24px 30px; }
+}
+@media screen and (min-width: 1921px) {
+.catalog-consultation__media[data-v-f88b8c19] { min-height: 760px; padding-inline: calc(50% - 860px); }
+}
+.catalog-consultation__image[data-v-f88b8c19] { display: block; height: 100%; inset: 0px; object-fit: cover; object-position: center top; position: absolute; width: 100%; }
+@media screen and (max-width: 540px) {
+.catalog-consultation__image[data-v-f88b8c19] { display: none; }
+}
+.catalog-consultation__overlay[data-v-f88b8c19] { inset: 0px; pointer-events: none; position: absolute; z-index: 1; }
+@media screen and (max-width: 540px) {
+.catalog-consultation__overlay[data-v-f88b8c19] { display: none; }
+}
+.catalog-consultation__grid[data-v-f88b8c19] { display: block; position: relative; width: 100%; z-index: 2; }
+.catalog-consultation__content[data-v-f88b8c19] { max-width: 690px; }
+@media screen and (max-width: 1440px) {
+.catalog-consultation__content[data-v-f88b8c19] { max-width: 560px; }
+}
+.catalog-consultation__mobile-expert[data-v-f88b8c19], .catalog-consultation__mobile-header[data-v-f88b8c19] { display: none; }
+@media screen and (max-width: 540px) {
+.catalog-consultation__mobile-expert[data-v-f88b8c19], .catalog-consultation__mobile-header[data-v-f88b8c19] { display: flex; }
+.catalog-consultation__mobile-expert[data-v-f88b8c19] { align-items: center; gap: 12px; margin-bottom: 20px; }
+}
+.catalog-consultation__mobile-photo[data-v-f88b8c19] { background: rgb(38, 38, 38); border: 1px solid rgb(255, 255, 255); border-radius: 50%; flex: 0 0 68px; height: 68px; overflow: hidden; width: 68px; }
+.catalog-consultation__mobile-photo img[data-v-f88b8c19] { display: block; height: 100%; object-fit: cover; object-position: 50% 20%; transform: scale(1.15); transform-origin: 50% 20%; width: 100%; }
+.catalog-consultation__mobile-role[data-v-f88b8c19] { color: rgba(255, 255, 255, 0.55); font-size: 11px; letter-spacing: 0.1em; line-height: 1.2; margin: 0px 0px 4px; text-transform: uppercase; }
+.catalog-consultation__mobile-name[data-v-f88b8c19] { color: rgb(255, 255, 255); font-size: 21px; font-weight: 300; line-height: 1.1; margin: 0px; }
+@media screen and (max-width: 540px) {
+.catalog-consultation__mobile-header[data-v-f88b8c19] { display: block; margin-bottom: 20px; }
+}
+.catalog-consultation__mobile-title[data-v-f88b8c19] { color: rgb(255, 255, 255); font-size: 31px; font-weight: 300; letter-spacing: -0.05em; line-height: 1.05; margin: 0px; }
+.catalog-consultation__mobile-lead[data-v-f88b8c19] { color: rgba(255, 255, 255, 0.7); font-size: 15px; font-weight: 300; line-height: 1.4; margin: 12px 0px 0px; }
+.catalog-consultation__header[data-v-f88b8c19] { margin-bottom: 24px; }
+@media screen and (max-width: 1440px) {
+.catalog-consultation__header[data-v-f88b8c19] { margin-bottom: 20px; }
+}
+@media screen and (max-width: 540px) {
+.catalog-consultation__header[data-v-f88b8c19] { display: none; }
+}
+.catalog-consultation__subtitle[data-v-f88b8c19] { font-size: 40px; font-weight: 300; line-height: 1.1; margin: 0px; }
+@media screen and (max-width: 1440px) {
+.catalog-consultation__subtitle[data-v-f88b8c19] { font-size: 34px; }
+}
+.catalog-consultation__lead[data-v-f88b8c19] { color: rgba(255, 255, 255, 0.7); font-size: 24px; font-weight: 300; line-height: 1.3; margin: 16px 0px 0px; max-width: 560px; }
+@media screen and (max-width: 1440px) {
+.catalog-consultation__lead[data-v-f88b8c19] { font-size: 22px; line-height: 1.35; }
+}
+.catalog-consultation__methods[data-v-f88b8c19] { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 24px; }
+@media screen and (max-width: 1440px) {
+.catalog-consultation__methods[data-v-f88b8c19] { gap: 10px; margin-bottom: 20px; }
+}
+@media screen and (max-width: 540px) {
+.catalog-consultation__methods[data-v-f88b8c19] { margin-bottom: 16px; }
+}
+.catalog-consultation__method[data-v-f88b8c19] { align-items: center; background-color: transparent; border: 1px solid rgb(255, 255, 255); border-radius: 0px; color: rgb(255, 255, 255); cursor: pointer; display: inline-flex; font-style: inherit; font-variant: inherit; font-stretch: inherit; font-family: inherit; font-optical-sizing: inherit; font-size-adjust: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; font-language-override: inherit; font-size: 18px; font-weight: 300; gap: 7px; line-height: 1; min-height: 38px; outline: none; padding: 7px 17px; transition: background-color 0.2s, color 0.2s, border-color 0.2s; }
+@media screen and (max-width: 1440px) {
+.catalog-consultation__method[data-v-f88b8c19] { font-size: 16px; min-height: 34px; padding: 6px 15px; }
+}
+@media screen and (max-width: 540px) {
+.catalog-consultation__method[data-v-f88b8c19] { flex: 0 0 calc(50% - 5px); justify-content: center; }
+}
+.catalog-consultation__method--active[data-v-f88b8c19] { background: rgb(255, 255, 255); border-color: rgb(255, 255, 255); color: rgb(30, 30, 30); }
+.catalog-consultation__method-icon[data-v-f88b8c19] { display: block; flex: 0 0 15px; font-size: 15px; height: 15px; width: 15px; }
+.catalog-consultation__method-icon--max[data-v-f88b8c19] { flex-basis: 14px; font-size: 14px; height: 14px; width: 14px; }
+.catalog-consultation__form[data-v-f88b8c19] { display: flex; flex-direction: column; gap: 6px; max-width: 610px; width: 100%; }
+.catalog-consultation__honeypot[data-v-f88b8c19] { height: 1px; left: -9999px; opacity: 0; overflow: hidden; pointer-events: none; position: absolute; width: 1px; }
+.catalog-consultation__field[data-v-f88b8c19] { display: flex; flex-direction: column; padding-bottom: 12px; position: relative; }
+.catalog-consultation__input[data-v-f88b8c19] { background: transparent; border-width: 0px 0px 1px; border-style: none none solid; border-color: currentcolor currentcolor rgba(255, 255, 255, 0.42); border-image: none; border-radius: 0px; color: rgb(255, 255, 255); font-size: 20px; font-weight: 300; line-height: 1.3; outline: none; padding: 16px 0px 12px; transition: border-color 0.2s, box-shadow 0.2s; width: 100%; }
+@media screen and (max-width: 1440px) {
+.catalog-consultation__input[data-v-f88b8c19] { font-size: 18px; padding: 14px 0px 10px; }
+}
+@media screen and (max-width: 540px) {
+.catalog-consultation__input[data-v-f88b8c19] { font-size: 17px; }
+}
+.catalog-consultation__input[data-v-f88b8c19]::placeholder { color: rgba(255, 255, 255, 0.55); font-size: inherit; opacity: 1; }
+.catalog-consultation__input[data-v-f88b8c19]:focus { border-bottom-color: rgb(255, 255, 255); box-shadow: rgb(255, 255, 255) 0px 1px; }
+.catalog-consultation__input--error[data-v-f88b8c19] { border-bottom-color: rgb(239, 68, 68); }
+.catalog-consultation__textarea[data-v-f88b8c19] { background: transparent; border: 1px solid rgba(255, 255, 255, 0.42); border-radius: 0px; color: rgb(255, 255, 255); font-family: inherit; font-size: 20px; font-weight: 300; line-height: 1.35; max-height: 120px; min-height: 72px; outline: none; padding: 14px 16px; resize: vertical; transition: border-color 0.2s; width: 100%; }
+@media screen and (max-width: 1440px) {
+.catalog-consultation__textarea[data-v-f88b8c19] { font-size: 18px; }
+}
+@media screen and (max-width: 540px) {
+.catalog-consultation__textarea[data-v-f88b8c19] { font-size: 17px; min-height: 64px; padding: 12px 14px; }
+}
+.catalog-consultation__textarea[data-v-f88b8c19]::placeholder { color: rgba(255, 255, 255, 0.55); font-size: inherit; opacity: 1; }
+.catalog-consultation__textarea[data-v-f88b8c19]:focus { border-color: rgb(255, 255, 255); }
+.catalog-consultation__textarea--error[data-v-f88b8c19] { border-color: rgb(239, 68, 68); }
+.catalog-consultation__error[data-v-f88b8c19] { color: rgb(239, 68, 68); font-size: 12px; inset: auto 0px 0px; line-height: 1.3; pointer-events: none; position: absolute; z-index: 1; }
+.catalog-consultation__error--consent[data-v-f88b8c19] { left: 0px; }
+.catalog-consultation__submit[data-v-f88b8c19] { border-radius: 0px; font-size: 16px; font-weight: 400; letter-spacing: normal; margin-top: 6px; min-height: 58px; text-transform: none; }
+@media screen and (max-width: 1440px) {
+.catalog-consultation__submit[data-v-f88b8c19] { font-size: 15px; min-height: 54px; }
+}
+.catalog-consultation__consent-wrap[data-v-f88b8c19] { padding: 4px 0px 0px; position: relative; }
+.catalog-consultation__consent[data-v-f88b8c19] { align-items: flex-start; cursor: pointer; display: flex; gap: 12px; }
+.catalog-consultation__consent-input[data-v-f88b8c19] { height: 1px; margin: 0px; opacity: 0; pointer-events: none; position: absolute; width: 1px; }
+.catalog-consultation__consent-input:checked + .catalog-consultation__consent-box[data-v-f88b8c19] { background: rgb(255, 255, 255); border-color: rgb(255, 255, 255); }
+.catalog-consultation__consent-input:checked + .catalog-consultation__consent-box[data-v-f88b8c19]::after { opacity: 1; }
+.catalog-consultation__consent-input:focus-visible + .catalog-consultation__consent-box[data-v-f88b8c19] { outline: rgba(255, 255, 255, 0.45) solid 2px; outline-offset: 2px; }
+.catalog-consultation__consent-box[data-v-f88b8c19] { background: transparent; border: 1px solid rgba(255, 255, 255, 0.42); flex: 0 0 22px; height: 22px; margin-top: 1px; position: relative; transition: background-color 0.2s, border-color 0.2s; width: 22px; }
+.catalog-consultation__consent-box[data-v-f88b8c19]::after { border-bottom: 2px solid rgb(30, 30, 30); border-right: 2px solid rgb(30, 30, 30); content: ""; height: 11px; inset: 0px; margin: auto; opacity: 0; position: absolute; transform: rotate(45deg) translateY(-1px); transition: opacity 0.2s; width: 6px; }
+.catalog-consultation__consent-text[data-v-f88b8c19] { color: rgba(255, 255, 255, 0.7); font-size: 15px; font-weight: 300; line-height: 1.4; }
+@media screen and (max-width: 540px) {
+.catalog-consultation__consent-text[data-v-f88b8c19] { font-size: 14px; }
+}
+.catalog-consultation__consent-link[data-v-f88b8c19] { color: inherit; text-decoration: underline; text-underline-offset: 3px; transition: color 0.2s; }
+@media (min-width: 1025px) {
+.catalog-consultation__consent-link[data-v-f88b8c19]:hover { color: rgb(255, 255, 255); }
+}
+
+/* node-ui.css */
+.career-page .career-invitation :is(.catalog-map__title, .catalog-grid__title, .departments-section__title, .catalog-faq__title, .catalog-consultation__mobile-title, .catalog-consultation__subtitle, .catalog-contact__title)[class] { font-size: var(--kit-h2-standard-size); font-weight: 300; line-height: var(--kit-h2-standard-leading); }
+@media (min-width: 769px) {
+.career-page .career-invitation .catalog-consultation__media[class] { background: rgb(16, 19, 24); overflow: hidden; }
+.career-page .career-invitation .catalog-consultation__media[class]::before { background: url("../assets/city-cta-709121d4e9a3cf06.webp") center center / cover no-repeat; bottom: 0px; clip-path: inset(0px); content: ""; filter: brightness(0.72); left: 0px; position: absolute; top: 0px; width: 100%; z-index: 0; }
+.career-page .career-invitation .catalog-consultation__image[class] { background: transparent; height: 100%; left: 0px; object-fit: contain; object-position: center bottom; right: auto; width: 50%; z-index: 1; }
+.career-page .career-invitation .catalog-consultation__overlay[class] { background: linear-gradient(90deg, rgba(5, 7, 10, 0.08) 0%, rgba(10, 12, 16, 0.18) 42%, rgba(10, 12, 16, 0.72) 62%, rgba(10, 12, 16, 0.88) 100%); z-index: 2; }
+.career-page .career-invitation .catalog-consultation__grid[class] { z-index: 3; }
+.career-page .career-invitation .catalog-consultation__content[class] { margin-left: auto; }
+}
+.career-page .career-invitation :is(.catalog-consultation__methods, .catalog-contact__methods)[class] { box-sizing: border-box; display: grid; gap: 12px; grid-template-columns: repeat(4, minmax(0px, 1fr)); max-width: 610px; width: 100%; }
+.career-page .career-invitation :is(.catalog-consultation__method, .catalog-contact__method)[class] { --contact-icon-size: 18px; align-items: center; border: 1px solid rgba(255, 255, 255, 0.55); border-radius: 1px; display: grid; flex: initial; font-family: var(--kit-font); font-size: 17px; font-weight: 400; gap: 8px; grid-template-columns: var(--contact-icon-size) 4.8em; height: 44px; justify-content: center; line-height: 1.1; min-height: 44px; min-width: 0px; padding: 0px 12px; text-align: left; white-space: nowrap; width: 100%; }
+.career-page .career-invitation :is(.catalog-consultation__method-icon, .catalog-contact__method-icon)[class] { flex: 0 0 18px; font-size: 18px; height: var(--contact-icon-size); width: var(--contact-icon-size); }
+.career-page .career-invitation :is(.catalog-consultation__method-icon, .catalog-contact__method-icon)[class] svg { display: block; height: 100%; width: 100%; }
+.career-page .career-invitation :is(.catalog-consultation__method, .catalog-contact__method)[class]:focus-visible { outline: 2px solid var(--kit-focus-accent); outline-offset: 3px; }
+.career-page .career-invitation :is(.catalog-consultation__lead, .catalog-contact__card-text)[class] { font-size: 22px; font-weight: 300; line-height: 1.5; }
+.career-page .career-invitation :is(.catalog-hero-filters__submit, .catalog-consultation__submit, .catalog-contact__submit, .catalog-contact__card-submit)[class] { border-radius: 1px; font-family: var(--kit-font); font-size: var(--kit-action-size); font-weight: 400; height: var(--kit-action-height); line-height: 1.1; min-height: var(--kit-action-height); padding-inline: var(--kit-action-padding); }
+.career-page .career-invitation :is(.catalog-hero-filters__submit, .catalog-consultation__submit, .catalog-contact__submit, .catalog-contact__card-submit, .catalog-page-nav__request, .site-footer__callback-btn, .catalog-intro__toggle, .catalog-grid__more, .news-section__read-more)[class]:focus-visible, .career-page .career-invitation :is(.catalog-consultation__input, .catalog-consultation__textarea, .catalog-contact__input, .catalog-contact__textarea, .catalog-hero-filters__search-input, .catalog-projects-map__search-input, .catalog-grid__sort-select)[class]:focus-visible { outline: 2px solid var(--kit-focus-accent); outline-offset: 3px; }
+.career-page .career-invitation :is(.catalog-consultation__input, .catalog-contact__input)[class]:focus-visible { border-bottom-color: rgb(255, 255, 255); }
+.career-page .career-invitation :is(.catalog-consultation__textarea, .catalog-contact__textarea)[class]:focus-visible { border-color: rgb(255, 255, 255); }
+@media (min-width: 1280px) and (max-width: 1440px) {
+.career-page .career-invitation .catalog-consultation[class] { padding-block: 72px; }
+}
+@media (min-width: 1441px) {
+.career-page .career-invitation :is(.catalog-consultation__method, .catalog-contact__method)[class] { font-size: 19px; height: 46px; min-height: 46px; }
+.career-page .career-invitation :is(.catalog-consultation__methods, .catalog-contact__methods)[class] { grid-template-columns: repeat(2, minmax(0px, 1fr)); }
+.career-page .career-invitation .catalog-consultation__media[class] { min-height: 820px; }
+}
+@media (max-width: 1440px) {
+.career-page .career-invitation :is(.catalog-consultation__methods, .catalog-contact__methods)[class] { grid-template-columns: repeat(2, minmax(0px, 1fr)); }
+}
+@media (max-width: 540px) {
+.career-page .career-invitation :is(.catalog-consultation__method, .catalog-contact__method)[class] { --contact-icon-size: 20px; font-size: 18px; height: 46px; line-height: 1.1; min-height: 46px; padding-inline: 10px; }
+.career-page .career-invitation :is(.catalog-consultation__method-icon, .catalog-contact__method-icon)[class] { flex-basis: 20px; font-size: 20px; height: 20px; width: 20px; }
+.career-page .career-invitation :is(.catalog-consultation__lead, .catalog-contact__card-text)[class] { font-size: 15px; line-height: 1.4; }
+}
+@media (max-width: 540px) {
+.career-page .career-invitation .catalog-consultation__mobile-photo[class] img { object-position: 50% 0px; transform: translateY(6px) scale(1.35); transform-origin: 50% 0px; }
+}
+
+/* node-city.css */
+@media (min-width: 769px) {
+.career-page .career-invitation .catalog-consultation__image[class] { width: 100%; object-fit: cover; object-position: center top; }
+.career-page .career-invitation .catalog-consultation__media[class]::before { content: none; background-image: none; }
+}
+@media (min-width: 541px) and (max-width: 768px) {
+.career-page .career-invitation .catalog-consultation__image[class] { object-position: right top; }
+.career-page .career-invitation .catalog-consultation__overlay[class] { background: rgba(10, 12, 16, 0.75); }
+}
+
+/* home-kit.css */
+.career-page .career-invitation :is(.catalog-best-offers, .catalog-map, .catalog-grid, .catalog-intro, .catalog-consultation, .departments-section, .news-section, .catalog-faq, .catalog-contact)[class] { padding-block: var(--city-section-space) !important; }
+.career-page .career-invitation :is(.catalog-consultation__method, .catalog-contact__method)[class] { min-height: 46px; height: auto; padding: 10px 8px; border-radius: 1px; font-weight: 400; }
+
+/* cta-bleed.css */
+.career-page .career-invitation [data-cta-bleed] { isolation: isolate; position: relative !important; overflow: hidden !important; }
+.career-page .career-invitation [data-cta-bleed] > .cta-bleed-backdrop { position: absolute; inset: 0px; z-index: -1; overflow: hidden; pointer-events: none; background-position: center center; background-size: cover; }
+.career-page .career-invitation [data-cta-bleed] > .cta-bleed-backdrop > div { position: absolute; inset: 0px; pointer-events: none; background-position: center center; background-repeat: no-repeat; background-size: cover; }
+.career-page .career-invitation [data-cta-bleed] .cta-bleed-clear { background-image: none !important; background-color: transparent !important; }
+.career-page .career-invitation [data-cta-bleed] .cta-bleed-hide { opacity: 0 !important; }
+
+/* node-header.css */
+@layer barn-node-shell-header {
+.owner-sale-reference-ui :is(.site-header__icon-btn, .ui-more-link, .catalog-consultation__method, .catalog-contact__method, .floating-expert__close) { min-height: 44px !important; }
+.career-page .career-invitation.barnes-page-kit[data-page-kit]:is(#partners-kit-page, #ui-kit-page) :is(main .base-container:not(.owner-sale-sticky__inner):not(.owner-sale-hero__inner):not(.ambassadors-hero__inner):not(.media-hero__inner), .about-company__inner, .catalog-contact__inner, .catalog-consultation__inner, .newsletter-cta__inner, .site-footer__inner) { box-sizing: border-box !important; width: 100% !important; max-width: 1920px !important; margin-inline: auto !important; padding-inline: var(--uk-gutter) !important; }
+}
+
+/* node-spacing.css */
+@layer barn-node-spacing {
+.career-page .career-invitation :is(.catalog-best-offers__title, .catalog-map__title, .catalog-grid__title, .catalog-intro__title, .departments-section__title, .news-section__title, .catalog-faq__title, .catalog-consultation__subtitle, .catalog-consultation__mobile-title, .catalog-contact__title) { margin-block: 0px !important; }
+.career-page .career-invitation .catalog-consultation { padding-block: 0px !important; margin-block: 0px !important; }
+.career-page .career-invitation :is(.catalog-consultation__header, .catalog-consultation__mobile-header, .catalog-contact__header) { row-gap: 0px !important; margin: 0 0 var(--node-heading-content) !important; }
+.career-page .career-invitation :is(.catalog-consultation__lead, .catalog-consultation__mobile-lead, .catalog-contact__subtitle) { margin: var(--node-copy-gap) 0 0 !important; }
+.career-page .career-invitation :is(.catalog-consultation__methods, .catalog-contact__methods) { margin-bottom: var(--node-copy-gap) !important; }
+}
+@layer barn-node-spacing {
+@media (min-width: 769px) {
+.career-page .career-invitation .catalog-consultation__image { top: auto !important; bottom: 0px !important; max-height: 800px !important; }
+.career-page .career-invitation .catalog-consultation__image[src*="cta-ruslan-cutout"] { left: 0px !important; right: auto !important; width: 50% !important; height: 82% !important; max-height: 640px !important; object-fit: contain !important; object-position: center bottom !important; }
+.career-page .career-invitation .catalog-consultation__media::before { content: "" !important; background-image: url("../assets/city-cta-709121d4e9a3cf06.webp") !important; }
+.career-page .career-invitation .catalog-consultation__image:is([src*="consultation-background"], [src*="cta-alina-unified"]) { height: 100% !important; max-height: 700px !important; mask-image: linear-gradient(transparent, rgb(0, 0, 0) 4%), linear-gradient(90deg, rgb(0, 0, 0) 80%, transparent) !important; mask-composite: intersect !important; }
+}
+}
+
+/* layout-gutters.css */
+@layer barn-layout-grid {
+.career-page .career-invitation .catalog-consultation .catalog-consultation__media { padding-inline: max(var(--barn-page-gutter), calc((100% - 1920px) / 2)) !important; }
+}
+
+/* Retain the existing application button and its original external destination. */
+.career-invitation .catalog-consultation__actions { width:100%;max-width:610px; }
+.career-invitation .career-button { width:100%;max-width:560px; }
+.career-invitation__note { max-width:440px;margin-top:16px;font-size:13px;line-height:18px;font-weight:300;color:rgba(255,255,255,.75); }
+
+/* The reference role inherits400 from the city document; the careers body uses300. */
+.career-invitation .catalog-consultation__mobile-role { font-weight:400; }

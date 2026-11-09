@@ -1,7 +1,7 @@
 {
   "source_repository": "daniilterekh-prog/barnes-sites",
   "source_branch": "codex/vacancies-20261109",
-  "source_commit": "61e9cec446264610e985235cc2f30218c045136b",
+  "source_commit": "3c388ef96d9c279e06977ccea8b5c4823c1dd00e",
   "source_path": "main-site/pages/vacancies",
   "runtime_sha256": {
     "assets/2670dad44ca6c2a1.woff2": "2670dad44ca6c2a1b9bbdbf1af6d8db9173f2dbe31604e80bdf9599b55047d41",
@@ -11,22 +11,29 @@
     "assets/9b2d8c1a7d4d2135.svg": "25d4a2a32ee6f85768e04db21d646d048ccd61ebd4d214d6f54737491d2fc5e0",
     "assets/career-ruslan-prus.webp": "4464b6998f60131d99ee19b3887a776b896162ce4cbbf1cefd4bb7dcbf7a3986",
     "assets/career-team-background.webp": "963872afd408bd77fca71e32647e7617d1c526fc33f8c25b582dc1d1a17c1700",
+    "assets/city-cta-4464b6998f60131d.webp": "4464b6998f60131d99ee19b3887a776b896162ce4cbbf1cefd4bb7dcbf7a3986",
+    "assets/city-cta-709121d4e9a3cf06.webp": "709121d4e9a3cf0688a44fffccbfcb4703a725726487a4b56e45623ebc958ce8",
+    "assets/city-cta-cta-ruslan-cutout.png": "205fdca0ec62349d368d95f71d0fc8c4a662bdc9c86d7349e0c224e729f7d209",
+    "assets/city-cta-cta-ruslan-unified-v1.webp": "fc1838cec9214135f5909a86ce6039b67e1a2e38ce95d61f97705ea110002415",
+    "assets/city-cta-provenance.json": "9c2914cc50c32bffba0b6171a0b8aa8f8054ca2d18ed88f42904f59c55c857f2",
     "assets/cta-provenance.json": "45c18bbbc50b63af31a232daac6661920611d84229b2dacbd21dd6ad68bfbcb9",
     "assets/f0f2c165784c7234.woff2": "f0f2c165784c72343618a7c2cbde00e45dbb9b09af5149984792f280cac9642e",
     "assets/f716269e361f4665.woff2": "f716269e361f466570f37bc920988c619ddc8a7828c5949c1c56a731a320ab47",
+    "assets/hero-team-provenance.json": "d666adba97eb2c688eae49675a24bff72b18cbaf327ad2297b8a385263ada14c",
+    "assets/hero-team-warm-v1.webp": "a53ac804c953d81eb6e1d3ab23c98ee11440634cb7dfb92bdc2b9d3917791558",
     "assets/kit-264d18dad6.svg": "6870171eea83ea80607e3a4e9b5de7ed724da07aa3af2de9c7b50e7408926a2b",
     "assets/kit-4f7f052a2e.svg": "5caa61a4b0731d0d89421b4fb24f41433025e5aea59155a14cf3a3fada6c9174",
     "assets/kit-548ec3b8ed.svg": "d740699a25af5d0677344e14bf3456d3d39c4d6da8633465086ccaf176fa7f24",
     "assets/kit-d93f7ae7f0.svg": "25d4a2a32ee6f85768e04db21d646d048ccd61ebd4d214d6f54737491d2fc5e0",
     "assets/office-meeting.webp": "3a3d55681a7ac4260461584e23aab0bb0da4b6cc2903b9ccb54aedf21213994d",
+    "city-career-cta.js": "f90d6d4403ca1d68756a678224fbc4818a26b2a652b77ec40265584611d427e5",
     "content.json": "7b49065901e3b06c5ec9f42d86ae6cb74599400f84b37d199c052c5b64e48ca5",
     "css/01-site-header.css": "e912f09fc6b297d302fe631a66efe68b8fe9b91dd9a400747d006852915f1216",
     "css/14-site-footer.css": "abba3c753c7465cb33ba562baf8be20a4711024e7f7e406b5525f00a4705170d",
+    "css/city-career-cta.css": "fe008fd35efdc5799873e033b69c7e493a55f3577eaf356e025233298dfc5c87",
     "css/page-breadcrumbs.css": "7a58ed93dc94357053343f42781a513a93b66b3f6c61f0f9a6c0e26bcaef7d30",
-    "index.html": "f060ca75052739dc389a1929cc6edd7bf38e57d860a70856dad9f0c15a0588f1",
-    "vacancies.css": "e82a20ffd30d748d6216ffc216e173537b0a4609a3248c9e5621079356dc8d98",
-    "vacancies.js": "45fbdf723de8b66435a6f44268b8a94ea3d2c144b377107a2136d2f799ad412a",
-    "assets/hero-team-warm-v1.webp": "a53ac804c953d81eb6e1d3ab23c98ee11440634cb7dfb92bdc2b9d3917791558",
-    "assets/hero-team-provenance.json": "d666adba97eb2c688eae49675a24bff72b18cbaf327ad2297b8a385263ada14c"
+    "index.html": "b78cc6551488da766946c88d5bc6ae0b3290616dba1a4b3d3d935138baa9e20a",
+    "vacancies.css": "625e7633a4de646f937e9b6664bfca8acf0489e25c84eec5c0e73e05bf1e2683",
+    "vacancies.js": "45fbdf723de8b66435a6f44268b8a94ea3d2c144b377107a2136d2f799ad412a"
   }
 }
