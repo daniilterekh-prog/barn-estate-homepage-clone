@@ -1,7 +1,7 @@
 {
   "source_repository": "daniilterekh-prog/barnes-sites",
   "source_branch": "codex/vacancies-20261109",
-  "source_commit": "e08782b3e3d74285010b283f17e6cb32d84721da",
+  "source_commit": "61e9cec446264610e985235cc2f30218c045136b",
   "source_path": "main-site/pages/vacancies",
   "runtime_sha256": {
     "assets/2670dad44ca6c2a1.woff2": "2670dad44ca6c2a1b9bbdbf1af6d8db9173f2dbe31604e80bdf9599b55047d41",
@@ -23,8 +23,10 @@
     "css/01-site-header.css": "e912f09fc6b297d302fe631a66efe68b8fe9b91dd9a400747d006852915f1216",
     "css/14-site-footer.css": "abba3c753c7465cb33ba562baf8be20a4711024e7f7e406b5525f00a4705170d",
     "css/page-breadcrumbs.css": "7a58ed93dc94357053343f42781a513a93b66b3f6c61f0f9a6c0e26bcaef7d30",
-    "index.html": "048324c34635b0c3768df97050082c6fda7469ec3a83404ac0ea24b0c1e8e29d",
-    "vacancies.css": "3aca7a219efa3b3a8f34497f1d35804320e8485d6449128eda9490e5bedc7588",
-    "vacancies.js": "45fbdf723de8b66435a6f44268b8a94ea3d2c144b377107a2136d2f799ad412a"
+    "index.html": "f060ca75052739dc389a1929cc6edd7bf38e57d860a70856dad9f0c15a0588f1",
+    "vacancies.css": "e82a20ffd30d748d6216ffc216e173537b0a4609a3248c9e5621079356dc8d98",
+    "vacancies.js": "45fbdf723de8b66435a6f44268b8a94ea3d2c144b377107a2136d2f799ad412a",
+    "assets/hero-team-warm-v1.webp": "a53ac804c953d81eb6e1d3ab23c98ee11440634cb7dfb92bdc2b9d3917791558",
+    "assets/hero-team-provenance.json": "d666adba97eb2c688eae49675a24bff72b18cbaf327ad2297b8a385263ada14c"
   }
 }

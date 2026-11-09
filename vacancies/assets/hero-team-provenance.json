@@ -1,0 +1,14 @@
+{
+  "file": "hero-team-warm-v1.webp",
+  "width": 1536,
+  "height": 1024,
+  "bytes": 161212,
+  "sha256": "a53ac804c953d81eb6e1d3ab23c98ee11440634cb7dfb92bdc2b9d3917791558",
+  "source": "../references/team-photos/team-warm-v1.png",
+  "source_sha256": "e363e1598e3a85cd327f0ee0cba473182e2c050f9a66ba7f714a2890656737af",
+  "origin": "Generative warm relighting of a real group photo from Google Drive",
+  "original_drive_url": "https://drive.google.com/file/d/1Wmk3BMO6FaMs_vdaeFX5B6zW-01Nl8rX/view?usp=drivesdk",
+  "conversion": "Installed Codex Toolkit / Sharp; PNG to WebP; width1536; no upscaling or new generative edit",
+  "native_generated_size": "1536x1024",
+  "prompt": "../references/team-photos/team-warm-v1-prompt.txt"
+}
