@@ -1,5 +1,7 @@
 # BARN Estate — страницы основного сайта
 
+- [Команда — 27 сотрудников, фильтры и действующий UI-кит ·09.11.2026](team/) · [Исходники](https://github.com/daniilterekh-prog/barnes-sites/tree/main/main-site/pages/team).
+
 **Пять основных узлов — ФИНАЛ, изменения запрещены пользователем06.11.2026.** Городская, коммерческая, загородная, зарубежная и курортная восстановлены по `dd0cba9a`. [Правила](AGENTS.md) · [Контроль файлов](FINAL-NODES.json). Их нельзя пересобирать или менять ради внутренних страниц; CI проверяет неизменность1305файлов.
 
 - [39 внутренних страниц — общий каталог и ссылки](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/internal-pages/) · [HTML, редакция и порядок блоков](https://github.com/daniilterekh-prog/barnes-sites/tree/main/main-site/internal-pages).

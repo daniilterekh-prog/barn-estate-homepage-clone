@@ -7,6 +7,7 @@
 | Страница | Посмотреть | Рабочие исходники |
 |---|---|---|
 | Главная | [Превью](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/) | [Исходники](https://github.com/daniilterekh-prog/barnes-sites/tree/main/main-site/pages/home/exact-2026-10-21/source) |
+| Команда | [Превью](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/team/) | [Исходники](https://github.com/daniilterekh-prog/barnes-sites/tree/main/main-site/pages/team) |
 | Медиа | [Превью](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/media/) | [Исходники](https://github.com/daniilterekh-prog/barnes-sites/tree/main/main-site/pages/media) |
 | Амбассадоры | [Превью](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/for-partners/) | [Исходники](https://github.com/daniilterekh-prog/barnes-sites/tree/main/main-site/pages/partners) |
 | Собственникам — аренда | [Превью](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/arenda_sobstvennikam/) | [Исходники](https://github.com/daniilterekh-prog/barnes-sites/tree/main/main-site/pages/owner-rent) |
