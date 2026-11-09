@@ -8,6 +8,7 @@
 
 | Страница | Посмотреть | Рабочие исходники |
 |---|---|---|
+| Вакансии | [Превью](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/vacancies/) | [Исходники](https://github.com/daniilterekh-prog/barnes-sites/tree/codex/vacancies-20261109/main-site/pages/vacancies) |
 | Главная | [Превью](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/) | [Исходники](https://github.com/daniilterekh-prog/barnes-sites/tree/main/main-site/pages/home/exact-2026-10-21/source) |
 | Команда | [Превью](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/team/) | [Исходники](https://github.com/daniilterekh-prog/barnes-sites/tree/main/main-site/pages/team) |
 | Контакты | [Превью](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/contacts/) | [Исходники](https://github.com/daniilterekh-prog/barnes-sites/tree/main/main-site/pages/contacts) |

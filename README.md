@@ -1,5 +1,7 @@
 # BARN Estate — страницы основного сайта
 
+- [Вакансии — отдельная страница на GitHub Pages](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/vacancies/) · [папка и исходники](vacancies/) ·09.11.2026.
+
 - [Прелоадер главной: стиль Загорья, знак BARN Estate, повтор анимации](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/preloader/) ·09.11.2026.
 
 - [Главная: мероприятия по амбассадорам ·09.11.2026](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/#home-events) · [отдельный блок](exact-2026-10-21/blocks/18-events/).
