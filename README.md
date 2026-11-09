@@ -6,7 +6,7 @@
 
 - [Прелоадер главной: стиль Загорья, знак BARN Estate, повтор анимации](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/preloader/) ·09.11.2026.
 
-- [Главная: мероприятия по амбассадорам ·09.11.2026](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/#home-events) · [отдельный блок](exact-2026-10-21/blocks/18-events/).
+- [Главная: мероприятия по амбассадорам ·09.11.2026](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/#home-events) · [отдельный блок](exact-2026-10-21/blocks/18-events/) · [чистый пакет HTML/CSS/JS для разработчика](exact-2026-10-21/blocks/18-events/developer/README.md).
 
 - [Команда — 27 сотрудников, фильтры и действующий UI-кит ·09.11.2026](team/) · [Исходники](https://github.com/daniilterekh-prog/barnes-sites/tree/main/main-site/pages/team).
 - [Контакты: три офиса, карты и способы связи ·09.11.2026](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/contacts/).
