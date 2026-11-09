@@ -716,21 +716,28 @@ a:focus-visible,button:focus-visible {
 
   .office-tabs {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     gap: 16px;
-    margin-bottom: 28px
+    margin-bottom: 28px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    overscroll-behavior-x: contain;
+    scrollbar-width: none
   }
+
+  .office-tabs::-webkit-scrollbar { display: none; }
+  .office-tabs a:focus-visible { outline-offset: -2px; }
 
   .office-tabs a {
     flex: 0 0 auto;
-    width: min-content;
+    width: auto;
     min-width: 44px;
-    min-height: 64px;
+    min-height: 54px;
     padding: 12px 0;
     align-items: center;
     justify-content: center;
     text-align: center;
-    text-wrap: balance;
+    white-space: nowrap;
     font-size: 15px;
     line-height: 1.25
   }
