@@ -6,7 +6,7 @@
  const root=new URL('../',script.src),home='https://barn-estate.ru/';
  const titles={contacts:'Контакты',home:'Главная',media:'Медиа',partners:'Амбассадорам','owner-rent':'Собственникам — аренда','owner-sale':'Собственникам — продажа',city:'Городская недвижимость Москвы',country:'Загородная недвижимость Москвы',international:'Зарубежная недвижимость',commercial:'Коммерческая недвижимость',resort:'Курортная недвижимость',catalog:'Каталог недвижимости',favorites:'Избранное',lot:'Лот'};
  if(!(key in titles))return;
- const nav=document.createElement('nav');nav.className='page-breadcrumbs';nav.dataset.barnBreadcrumbs='';nav.dataset.page=key;nav.dataset.tone=['catalog','favorites','lot'].includes(key)?'light':'dark';nav.setAttribute('aria-label','Хлебные крошки');
+ const nav=document.createElement('nav');nav.className='page-breadcrumbs';nav.dataset.barnBreadcrumbs='';nav.dataset.page=key;nav.dataset.tone=['contacts','catalog','favorites','lot'].includes(key)?'light':'dark';nav.setAttribute('aria-label','Хлебные крошки');
  const list=document.createElement('ol');nav.append(list);
  const clean=s=>s.replace(/\s+/g,' ').trim();
  let current,observedHeader=null,lastTop=120,scheduled=false;

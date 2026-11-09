@@ -1,13 +1,11 @@
 /* Local controllers: office tabs, accessible site menu, contact dialog. No requests are submitted. */
 (()=>{
  'use strict';
- const header=document.querySelector('.site-header'),hero=document.querySelector('.contacts-hero');
+ const header=document.querySelector('.site-header');
  const menu=document.querySelector('.site-menu'),menuButton=header.querySelector('.site-header__icon-btn');
  const main=document.querySelector('main'),footer=document.querySelector('footer');
  const dialog=document.querySelector('.contact-dialog');
  let menuOpen=false,restoreOverflow='';
- function scrollHeader(){header.classList.toggle('site-header--scrolled',window.scrollY>hero.offsetHeight-110)}
- window.addEventListener('scroll',scrollHeader,{passive:true});scrollHeader();
  function setMenu(open){
   menuOpen=open;menu.hidden=!open;header.classList.toggle('site-header--menu-open',open);
   menuButton.setAttribute('aria-expanded',String(open));menuButton.setAttribute('aria-label',open?'Закрыть меню':'Открыть меню');
@@ -31,8 +29,6 @@
  });
  panels.forEach(panel=>{panel.setAttribute('role','tabpanel');panel.tabIndex=0});
  selectOffice(location.hash.startsWith('#office-')&&panels.some(p=>'#'+p.id===location.hash)?location.hash.slice(8):'moscow');
- document.querySelectorAll('[data-select-office]').forEach(link=>link.addEventListener('click',()=>selectOffice(link.dataset.selectOffice)));
- document.querySelector('.hero-bottom>a:first-child').addEventListener('click',()=>selectOffice('moscow'));
  let dialogTrigger=null,dialogOverflow='';
  function openContact(trigger){if(menuOpen)setMenu(false);dialogTrigger=trigger?.getClientRects().length?trigger:document.activeElement;dialogOverflow=document.documentElement.style.overflow;document.documentElement.style.overflow='hidden';dialog.showModal();dialog.querySelector('.dialog-close').focus();window.BarnPageBreadcrumbs?.refresh()}
  document.addEventListener('click',event=>{const trigger=event.target.closest('[data-contact-open]');if(trigger){event.preventDefault();openContact(trigger)}});
