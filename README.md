@@ -1,5 +1,7 @@
 # BARN Estate — страницы основного сайта
 
+- [Главная СПб — отдельная страница](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/home-spb/) ·09.11.2026.
+
 - [BARN Estate Club — страница клуба](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/barn-estate-club/) ·09.11.2026.
 
 - [Вакансии — отдельная страница на GitHub Pages](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/vacancies/) · [папка и исходники](vacancies/) ·09.11.2026.

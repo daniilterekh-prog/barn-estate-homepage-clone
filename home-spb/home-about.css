@@ -1,0 +1,80 @@
+/* Saved About component, adapted to the homepage owner/ambassador type and spacing roles. */
+body.barnes-home-typography .about-company {
+  padding-block: var(--home-section-space);
+  background: #fff;
+  color: var(--home-primary);
+}
+body.barnes-home-typography .about-company *,
+body.barnes-home-typography .about-company *::before { box-sizing: border-box; }
+body.barnes-home-typography .about-company__inner {
+  display: grid;
+  grid-template-columns: minmax(0,.8fr) minmax(0,1.45fr);
+  gap: clamp(48px, 7vw, 120px);
+  width: 100%;
+  max-width: 1920px;
+  margin-inline: auto;
+  padding-inline: var(--home-gutter);
+}
+body.barnes-home-typography .about-company__brand {
+  align-self: start;
+  position: sticky;
+  top: 140px;
+  display: block;
+  max-width: 440px;
+  width: 100%;
+  margin-inline: 0;
+}
+body.barnes-home-typography .about-company__brand-logo { display: block; width:100%; height:auto; max-width:440px; }
+body.barnes-home-typography .about-company__content { min-width:0; }
+body.barnes-home-typography .about-company__title {
+  margin:0;
+  font-size:var(--home-heading);
+  font-weight:300;
+  line-height:1.2;
+  text-transform:uppercase;
+}
+body.barnes-home-typography .about-company__intro {
+  margin:var(--home-heading-content) 0 0;
+  padding-top:var(--home-copy-gap);
+  border-top:1px solid rgba(30,30,30,.18);
+  color:var(--home-secondary);
+  font-size:var(--home-lead);
+  font-weight:300;
+  line-height:var(--home-lead-line);
+}
+body.barnes-home-typography .about-company__copy { margin-top:24px; color:var(--home-secondary); font-size:var(--home-lead); font-weight:300; line-height:var(--home-lead-line); }
+body.barnes-home-typography .about-company__copy-text { font-size:18px;line-height:1.5; }
+body.barnes-home-typography .about-company__copy-text[hidden] { display:none; }
+body.barnes-home-typography .about-company__copy p { margin:0 0 var(--home-copy-gap); }
+body.barnes-home-typography .about-company__read-more {
+  display:inline-flex;align-items:center;gap:12px;min-height:44px;margin:0;padding:8px 0;
+  border:0;border-bottom:1px solid var(--home-brand);background:transparent;color:var(--home-brand);
+  cursor:pointer;font:inherit;font-size:var(--home-eyebrow);font-weight:400;letter-spacing:.12em;text-transform:uppercase;
+}
+body.barnes-home-typography .about-company__read-more-icon { display:inline-flex;width:16px;height:16px; }
+body.barnes-home-typography .about-company__read-more-icon svg { width:100%;height:100%; }
+body.barnes-home-typography .about-company__read-more:focus-visible { outline:2px solid var(--home-brand);outline-offset:5px; }
+@media(max-width:1279px) {
+ body.barnes-home-typography .about-company__inner { grid-template-columns:1fr;gap:32px; }
+ body.barnes-home-typography .about-company__brand { position:static;max-width:280px; }
+}
+@media(max-width:540px) {
+ body.barnes-home-typography .about-company__brand { max-width:220px; }
+ body.barnes-home-typography .about-company__copy-text { font-size:14px; }
+}
+
+/* Size the square logo to the visible right column, including the read-more button. */
+@media(min-width:1280px) {
+ body.barnes-home-typography .about-company__brand {
+   position:static;
+   width:var(--home-about-logo-size,100%);
+   max-width:none;
+ }
+ body.barnes-home-typography .about-company__brand-logo { width:100%;max-width:none;height:auto; }
+}
+
+/* Preserve the desktop column proportions on the shared 1920px wide-screen grid. */
+@media(min-width:1921px) {
+ body.barnes-home-typography .about-company__inner { grid-template-columns:minmax(0,.8fr) minmax(0,1.45fr); }
+ body.barnes-home-typography .about-company__brand { width:100%;max-width:440px; }
+}
