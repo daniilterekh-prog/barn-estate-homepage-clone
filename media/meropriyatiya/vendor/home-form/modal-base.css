@@ -1,0 +1,9 @@
+/* Isolated unchanged modal shell declarations from the approved homepage bundle. */
+.homepage-quiz-host .modal__content{background:#fff;border-radius:10px;margin:0 auto;max-width:500px;padding:20px;position:relative;width:calc(100% - 32px)}
+/* Input normalization inherited by the same component on the homepage. */
+.homepage-quiz-host input{color:inherit;line-height:normal}
+
+/* Match the homepage brand helper without the events heading's no-wrap rule. */
+.homepage-quiz-host .barn-estate-name{white-space:normal;overflow-wrap:normal!important;word-break:normal!important;hyphens:none!important}
+.homepage-quiz-host select{line-height:inherit}
+.homepage-quiz-host input:not([type=checkbox]):not([type=radio]),.homepage-quiz-host select{appearance:none}

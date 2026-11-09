@@ -56,20 +56,11 @@
   addEventListener('scroll', scheduleCrumbs, { passive: true });
   placeCrumbs();
 
-  const dialog = document.getElementById('contact-dialog');
-  let returnFocus;
-  function openContact(trigger) {
-    returnFocus = trigger; dialog.showModal();
-  }
   document.addEventListener('click', event => {
-    const trigger = event.target.closest('[data-open-contact],.site-header__request,.site-footer__callback-btn');
-    if (trigger) { event.preventDefault(); openContact(trigger); }
+    const trigger = event.target.closest('[data-open-contact]');
+    if (trigger) {
+      event.preventDefault();
+      window.__barnesOwnerForm.open({ trigger });
+    }
   });
-  dialog.querySelector('[data-close]').addEventListener('click', () => dialog.close());
-  dialog.addEventListener('click', event => {
-    if (event.target !== dialog) return;
-    const rect = dialog.getBoundingClientRect();
-    if (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) dialog.close();
-  });
-  dialog.addEventListener('close', () => returnFocus?.focus({ preventScroll: true }));
 })();
