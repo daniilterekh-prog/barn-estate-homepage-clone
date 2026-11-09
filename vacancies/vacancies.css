@@ -92,7 +92,8 @@ html body.career-page .mh-contact-panel:not([hidden]) { display: flex !important
 .career-benefit h3 { margin-bottom: var(--career-copy-gap); }
 .career-openings__heading { display: flex; align-items: flex-end; justify-content: space-between; gap: 32px; margin-bottom: var(--career-content-gap); }
 .career-openings__note { font-size: 16px; line-height: 1.5; color: var(--career-muted); padding-bottom: 4px; }
-.career-openings__note a { border-bottom: 1px solid var(--career-muted); padding-block: 10px; display: inline-block; }
+.career-openings__note a { border-bottom: 1px solid var(--career-muted); padding-block: 10px; display: inline-flex; align-items: center; gap: 6px; }
+.career-openings__note a svg { width: 16px; height: 16px; flex: none; }
 .career-openings__note a:hover { color: var(--career-accent); border-color: var(--career-accent); }
 .career-job { display: grid; grid-template-columns: 44px minmax(0,1fr) auto; gap: 32px; padding-block: var(--career-content-gap); border-top: 1px solid var(--career-line); align-items: center; }
 .career-job__number { align-self: start; padding-top: 0; }
