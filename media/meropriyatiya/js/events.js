@@ -5,7 +5,7 @@
   const more = document.getElementById('events-more');
   const progress = document.getElementById('events-progress');
   const count = document.getElementById('events-count');
-  const pageSize = matchMedia('(max-width:540px)').matches ? 6 : 12;
+  const pageSize = 6;
   let year = 'all', limit = pageSize;
   const plural = n => n % 10 === 1 && n % 100 !== 11 ? 'событие' : n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14) ? 'события' : 'событий';
   function render() {

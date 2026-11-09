@@ -78,7 +78,7 @@ html body.barnes-events .site-header:is(.site-header--scrolled,.site-header--men
 .events-more .events-button {min-width:260px}
 .events-progress {color:var(--quiet);font-size:13px;font-weight:300;line-height:18px}
 html:not(.js) .events-years,html:not(.js) .events-count {display:none}
-.js:not(.events-ready) .event-card:nth-child(n+13) {display:none}
+.js:not(.events-ready) .event-card:nth-child(n+7) {display:none}
 /* Contact overlay uses the existing dialog-title / body / compact-action roles. */
 .contact-dialog {width:min(560px,calc(100vw - 44px));max-height:calc(100dvh - 44px);padding:48px;border:0;border-radius:1px;background:#fff;color:var(--ink)}
 .contact-dialog::backdrop {background:rgba(0,0,0,.55)}
