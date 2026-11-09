@@ -1,0 +1,54 @@
+{
+  "reference_url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/prodazha_sobstvennikam/",
+  "source_repository": "daniilterekh-prog/barn-estate-homepage-clone",
+  "source_commit": "070468dffcdcca44bab019c7dc2e7f86709d763c",
+  "source_files": [
+    "prodazha_sobstvennikam/media-header.css",
+    "prodazha_sobstvennikam/media-header.js"
+  ],
+  "nav_items": [
+    {
+      "label": "Москва",
+      "href": "https://barn-estate.ru/gorodskaya-nedvizhimost/"
+    },
+    {
+      "label": "Загородная",
+      "href": "https://barn-estate.ru/zagorodnaya-nedvizhimost/"
+    },
+    {
+      "label": "Коммерческая",
+      "href": "https://barn-estate.ru/kommercheskaya-nedvizhimost/"
+    },
+    {
+      "label": "Курортная",
+      "href": "https://barn-estate.ru/kurortnaya/"
+    },
+    {
+      "label": "Зарубежная",
+      "href": "https://barn-estate.ru/mezhdunarodnaya-nedvizhimost/"
+    },
+    {
+      "label": "Санкт-Петербург",
+      "href": "https://barnes-spb.ru/"
+    },
+    {
+      "label": "Медиа",
+      "href": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/media/"
+    },
+    {
+      "label": "О BARN Estate",
+      "href": "https://barn-estate.ru/mir-barn-estate/"
+    },
+    {
+      "label": "Собственникам",
+      "href": "https://barn-estate.ru/sobstvennikam/"
+    }
+  ],
+  "layout": "Visible>=1281px before sticky header; gap26px; font16px/300,18px above1440; same dropdown content and interactions",
+  "adaptations": [
+    "Existing static careers header retained; navigation controller bound to copied static markup.",
+    "Current vacancies child link points to #vacancies.",
+    "Same main destinations and explicit owner sale/rent/ambassador links added to compact dialog.",
+    "Local hero shade strengthened behind the navigation and open dropdowns for readability over team photo."
+  ]
+}
