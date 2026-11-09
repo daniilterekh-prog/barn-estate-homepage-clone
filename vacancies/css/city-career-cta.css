@@ -230,3 +230,8 @@
 
 /* The reference role inherits400 from the city document; the careers body uses300. */
 .career-invitation .catalog-consultation__mobile-role { font-weight:400; }
+
+/* Keep the two columns separate while the original fixed560px copy column is too wide. */
+@media (min-width:769px) and (max-width:1280px) {
+ .career-page .career-invitation .catalog-consultation__content { max-width:calc(50% - 24px); }
+}

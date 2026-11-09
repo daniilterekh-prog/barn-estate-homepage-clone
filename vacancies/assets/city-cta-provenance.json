@@ -28,5 +28,6 @@
       "sha256": "709121d4e9a3cf0688a44fffccbfcb4703a725726487a4b56e45623ebc958ce8"
     }
   ],
-  "portrait_selector_fix": "At min-width769px, the source50% width/82% height/max640px/contain/left-bottom rule is bound to the portrait class rather than an img.src substring; picture selects the PNG through currentSrc."
+  "portrait_selector_fix": "At min-width769px, the source50% width/82% height/max640px/contain/left-bottom rule is bound to the portrait class rather than an img.src substring; picture selects the PNG through currentSrc.",
+  "narrow_columns": "At769-1280px, content max-width is calc(50% - 24px) to keep text clear of the left portrait."
 }

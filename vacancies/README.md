@@ -2,7 +2,7 @@
 
 [Открыть страницу на GitHub Pages](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/vacancies/).
 
-Отдельная самостоятельная папка: HTML, CSS, JS, фотографии, SVG и шрифты. Публикация09.11.2026 из [рабочих исходников и проверок](https://github.com/daniilterekh-prog/barnes-sites/tree/codex/vacancies-20261109/main-site/pages/vacancies), commit `12643c0c965000cc9838a6efa02bfd95e8e970ae`. Побайтовый состав runtime зафиксирован в [SOURCE.json](SOURCE.json).
+Отдельная самостоятельная папка: HTML, CSS, JS, фотографии, SVG и шрифты. Публикация09.11.2026 из [рабочих исходников и проверок](https://github.com/daniilterekh-prog/barnes-sites/tree/codex/vacancies-20261109/main-site/pages/vacancies), commit `f8e5ed655c62d11131fd13f62594feb9673f4e98`. Побайтовый состав runtime зафиксирован в [SOURCE.json](SOURCE.json).
 
 Содержание — по [старой странице вакансий](https://barn-estate.ru/vacancies/), оформление — действующий кит BARN Estate, hero — по страницам собственников. Три направления и кнопки отклика ведут на исходную страницу работодателя hh.ru. Hero использует тёплую генеративно обработанную общую фотографию команды с Google Drive, нижний CTA скопирован из финального городского узла; [происхождение](assets/city-cta-provenance.json). Подобранные альтернативные фотографии и генерируемая концепция сохранены отдельно в [исходниках](https://github.com/daniilterekh-prog/barnes-sites/tree/codex/vacancies-20261109/main-site/pages/vacancies/references/team-photos) и здесь не подменяют утверждённую версию.
 
@@ -24,3 +24,5 @@
 
 
 09.11.2026: удалена граница после последней вакансии. Исправлено условие исходного правила масштаба портрета: `picture.currentSrc` выбирал PNG, но условие смотрело на fallback `img.src`. Правило теперь связано с классом портрета: от769px Руслан слева, ширина50%, высота82% с максимумом640px, `contain`. Мобильный аватар сохранён.704проверки с активированным исходным правилом и11ширин/6сценариев/axe прошли. [Подробности и сравнение](https://github.com/daniilterekh-prog/barnes-sites/tree/codex/vacancies-20261109/main-site/pages/vacancies/verification/portrait-fix).
+
+На769–1280px правая колонка ограничена половиной сетки минус24px, чтобы текст не заходил на портрет. Геометрия проверяется отдельным условием на11ширинах; новый CSS получил версию кэша.
