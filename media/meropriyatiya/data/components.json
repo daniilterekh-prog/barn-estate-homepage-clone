@@ -52,6 +52,11 @@
       "source": "main-site/shared/node-footer/logo.svg",
       "target": "assets/logo.svg",
       "sourceSha256": "9b2d8c1a7d4d213587828c6bdf6592a37113a388fedc1b58211534d8cb1e7123"
+    },
+    {
+      "source": "main-site/shared/shared/page-breadcrumbs.css",
+      "target": "css/page-breadcrumbs.css",
+      "sourceSha256": "7a58ed93dc94357053343f42781a513a93b66b3f6c61f0f9a6c0e26bcaef7d30"
     }
   ],
   "menuImages": [
@@ -67,5 +72,17 @@
       "sourceCommit": "dd0cba9a0f5d11ead9e9f56451bb40e3a730def7",
       "sha256": "c5384c30d421ad705b43c8eb3dac7d16187ff87eb67392232fb15fa995980a7e"
     }
-  ]
+  ],
+  "audit2026-11-09": {
+    "kit": "1.0.3",
+    "reference": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/media/",
+    "report": "verification/kit-2026-11-09/README.md",
+    "adaptations": [
+      "Canonical breadcrumbs positioned against current header rule",
+      "Typography explicitly mapped to Media roles; no synthesized fonts",
+      "Canonical scrolled-header state and contact order",
+      "Menu footer landmark is presentational inside dialog",
+      "Content-addressed stylesheet/script URLs prevent stale browser caches"
+    ]
+  }
 }

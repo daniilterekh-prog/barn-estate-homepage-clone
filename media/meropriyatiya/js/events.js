@@ -34,7 +34,27 @@
   new IntersectionObserver(entries => {
     const sticky = !entries[0].isIntersecting && entries[0].boundingClientRect.top < 0;
     header.classList.toggle('is-sticky', sticky);
+    header.classList.toggle('site-header--scrolled', sticky);
   }, { threshold: 0 }).observe(hero);
+
+  // Position the standard crumbs against the header rule, including after resize.
+  const crumbs = document.querySelector('.page-breadcrumbs');
+  let crumbFrame = 0;
+  function placeCrumbs() {
+    crumbFrame = 0;
+    const canvas = document.body.getBoundingClientRect();
+    crumbs.style.width = Math.min(1920, canvas.width) + 'px';
+    crumbs.style.left = canvas.left + Math.max(0, (canvas.width - 1920) / 2) + 'px';
+    crumbs.style.visibility = innerWidth <= 1024 || scrollY > 4 || header.classList.contains('site-header--menu-open') ? 'hidden' : '';
+    crumbs.style.zIndex = '1301';
+    if (scrollY <= 4) crumbs.style.top = header.querySelector('.site-header__top').getBoundingClientRect().bottom - crumbs.offsetHeight - 8 + 'px';
+  }
+  function scheduleCrumbs() { if (!crumbFrame) crumbFrame = requestAnimationFrame(placeCrumbs); }
+  new ResizeObserver(scheduleCrumbs).observe(header);
+  new MutationObserver(scheduleCrumbs).observe(header, { attributes: true, attributeFilter: ['class'] });
+  addEventListener('resize', scheduleCrumbs, { passive: true });
+  addEventListener('scroll', scheduleCrumbs, { passive: true });
+  placeCrumbs();
 
   const dialog = document.getElementById('contact-dialog');
   let returnFocus;

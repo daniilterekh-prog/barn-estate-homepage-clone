@@ -21,6 +21,8 @@
     if (menu) { close(); return; }
     const fragment = document.createElement('template'); fragment.innerHTML = markup;
     menu = fragment.content.firstElementChild;
+    // This is navigation inside a dialog, not a second page contentinfo landmark.
+    menu.querySelectorAll('footer').forEach(footer => footer.setAttribute('role', 'presentation'));
     // The resort snapshot uses a different Vue scope for the same component.
     [menu, ...menu.querySelectorAll('*')].forEach(el => el.setAttribute('data-v-6d1f991a', ''));
     menu.id = 'current-site-menu';
