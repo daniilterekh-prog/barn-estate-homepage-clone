@@ -1,0 +1,11 @@
+{
+  "date": "2026-11-09",
+  "sourceCommit": "f26c555f5dd24bf6801886d0bfb52631388026d7",
+  "reference": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/izbrannoe/",
+  "source": "main-site/pages/favorites/",
+  "copies": {
+    "header.css": "50d7eedf4174b956483e8e279f2583cd9d040b99853aabaa23e23d923a9c21b4",
+    "header-navigation.js": "9d1c3a1f39c04b0814b6eb077ed7150f33ec9835240325017c6135fc6e3a7e8c"
+  },
+  "integration": "Full header markup and JSON menu/9 dropdown sections copied; paths rebased. Original header initialization/contact/menu-focus code extracted without carousel, form and favorites-page-only logic. Dropdown CSS scoped to Team. Fonts and only referenced assets copied; protected shared files are unchanged."
+}
