@@ -89,6 +89,7 @@
       section.remove();
     }
     window.__barnesHomeAbout?.refresh();
+    window.__barnesHomeEvents?.refresh();
     for (const [parentSelector, headingSelector, text, existingSelector] of roles) {
       const parent = document.querySelector(parentSelector);
       const heading = parent?.querySelector(headingSelector);

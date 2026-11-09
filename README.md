@@ -1,5 +1,7 @@
 # BARN Estate — страницы основного сайта
 
+- [Главная: мероприятия по амбассадорам ·09.11.2026](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/#home-events) · [отдельный блок](exact-2026-10-21/blocks/18-events/).
+
 - [Команда — 27 сотрудников, фильтры и действующий UI-кит ·09.11.2026](team/) · [Исходники](https://github.com/daniilterekh-prog/barnes-sites/tree/main/main-site/pages/team).
 - [Контакты: три офиса, карты и способы связи ·09.11.2026](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/contacts/).
 - [Мероприятия — новый каталог на утверждённом ките](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/media/meropriyatiya/): 37 событий, фильтр по годам; [исходники и проверки](https://github.com/daniilterekh-prog/barnes-sites/tree/main/main-site/pages/events), 09.11.2026.

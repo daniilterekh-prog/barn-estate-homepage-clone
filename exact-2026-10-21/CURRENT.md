@@ -1,12 +1,12 @@
 # Передача разработчику ·05.11.2026
 
-[Актуальные HTML/CSS/JS и блоки](../handoff/current/home/README.md). Прежние комплекты заменены; история исходной главной ниже.
+[Актуальные HTML/CSS/JS и блоки](../../../handoff/current/home/README.md). Прежние комплекты заменены; история исходной главной ниже.
 
 # Актуальная главная BARN Estate — 01.11.2026
 
-[Опубликованная главная](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/) · [16 отдельных блоков](blocks/README.md) · [Каталог превью](blocks/index.html) · [Страница из блоков](../handoff/current/home/html/).
+[Опубликованная главная](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/) · [16 отдельных блоков](blocks/README.md) · [Каталог превью](blocks/index.html) · [Страница из блоков](../../../handoff/current/home/html/).
 
-[Открыть живой каталог блоков](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/blocks/) · [Скачать все блоки ZIP](../handoff/current/home/../barn-estate-five-pages-2026-11-05.zip).
+[Открыть живой каталог блоков](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/blocks/) · [Скачать все блоки ZIP](../../../handoff/current/home/../barn-estate-five-pages-2026-11-05.zip).
 
 Рабочее состояние — исходный архив плюс home-*.css/js и инструменты tools/. Архивный index.html21.10 не переписывается: сервер и экспорт подключают актуальные изменения. Для переноса отдельной секции используй blocks/, а не фрагмент старого архивного HTML.
 
@@ -75,3 +75,7 @@
 ## Техническая очистка v1.0.2 ·03.11.2026
 
 Удалены повторные CSS/SSR-декларации; дизайн и сценарии сохранены. Автономные блоки и ZIP обновлены. Активные входы всего сайта — main-site/current-pages.json.
+
+## Мероприятия ·09.11.2026
+
+Перед статьями добавлен блок встреч по амбассадорам: две последние публикации из каталога мероприятий, реальные даты и оригинальные фото; ссылка на весь архив. [Автономный блок18](blocks/18-events/README.md). Остальное содержание и дизайн главной сохранены.
