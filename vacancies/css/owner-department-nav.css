@@ -11,8 +11,3 @@ html body.career-page .mh-subnav a { display: inline-block; font: 300 16px / 1 "
 @media (min-width: 1441px) {html body.career-page .mh-nav-item > a { font-size: 18px; }}
 /* The careers top row already owns its bottom border. Match the owners26px gap. */
 @media(min-width:1281px){html body.career-page .site-header:not(.site-header--scrolled):not(.site-header--menu-open) .mh-reference-nav {margin-top:26px;}}
-/* Keep the reference white links legible over the brighter team photograph. */
-@media(min-width:1281px){
- html body.career-page .career-hero__shade {background:linear-gradient(180deg,rgba(15,15,15,.62) 0px,rgba(15,15,15,.62) 174px,rgba(15,15,15,.12) 48%,rgba(15,15,15,.85) 100%),linear-gradient(90deg,rgba(15,15,15,.28),rgba(15,15,15,0) 75%);}
- html body.career-page:has(.mh-reference-nav .mh-subnav:not([hidden])) .career-hero__shade {background:linear-gradient(180deg,rgba(15,15,15,.68) 0px,rgba(15,15,15,.68) 460px,rgba(15,15,15,.85) 100%);}
-}
