@@ -906,3 +906,36 @@ html body.contacts-page.barnes-media-header .mh-subnav {border-top-color:rgba(30
 @media(max-width:1024px) {.contacts-top {padding-top:32px;} .contacts-heading {padding-top:53.2px;}}
 @media(max-width:768px) {.contacts-heading {padding-top:50.4px;}}
 @media(max-width:540px) {.contacts-top {padding-top:28px;} .contacts-heading {padding-block:41.6px 28px;} .contacts-heading h1 {font-size:32px;}}
+
+/* Communication and directions belong to each office, alongside its details. */
+.office-actions {
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:12px;
+  max-width:560px;
+}
+.office-action {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:12px;
+  height:70px;
+  padding:0 20px;
+  border:1px solid #8b8986;
+  border-radius:1px;
+  color:var(--secondary);
+  font-size:var(--action);
+  font-weight:400;
+  line-height:1.1;
+  white-space:nowrap;
+  transition:color .2s,background-color .2s,border-color .2s;
+}
+.office-action img,.office-action svg {width:26px;height:26px;flex:none;}
+.office-action--route {color:#fff;background:var(--brand);border-color:var(--brand);}
+.office-action--route svg {width:24px;height:24px;}
+@media(hover:hover) and (pointer:fine) {
+  .office-action:hover {color:#fff;background:var(--brand);border-color:var(--brand);}
+  .office-action--route:hover {background:#70171e;border-color:#70171e;}
+}
+@media(max-width:1024px) {.office-action {padding-inline:12px;gap:8px;}}
+@media(max-width:540px) {.office-actions {gap:12px;} .office-action {height:58px;padding-inline:10px;gap:8px;} .office-action img {width:22px;height:22px;} .office-action--route svg {width:22px;height:22px;}}
