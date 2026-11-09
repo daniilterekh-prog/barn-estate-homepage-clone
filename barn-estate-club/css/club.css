@@ -579,7 +579,7 @@ h2 + .description {
   width: min(100%, 400px);
   height: auto;
   /* Account for the illustration's white canvas above the roof. */
-  transform: translateY(-2.5%);
+  transform: translateY(-1.25%);
 }
 .ruled-copy {
   border-top: 1px solid var(--line);
