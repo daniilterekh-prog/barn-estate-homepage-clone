@@ -119,6 +119,19 @@ body.barnes-home-typography :is(.services-section__link, .department-card__link,
 }
 body.barnes-home-typography .news-section__read-more { color: var(--home-primary) !important; }
 body.barnes-home-typography .ui-more-link__label { color: var(--home-brand) !important; }
+/* Persistent text underlines on all homepage editorial actions, including first cards. */
+body.barnes-home-typography :is(.services-section__link,.department-card__link,
+ .team-member-card__link,.news-section__read-more,.ui-more-link__label,
+ .about-company__read-more,.home-events__link) {
+  text-decoration-line: underline !important;
+  text-decoration-thickness: 1px !important;
+  text-underline-offset: 4px !important;
+}
+/* Keep the previous boxes; one text underline replaces a second border line. */
+body.barnes-home-typography :is(.services-section__link,.department-card__link,
+ .ui-more-link,.about-company__read-more,.home-events__link) {
+  border-bottom-color: transparent !important;
+}
 body.barnes-home-typography .site-header__request { font-size: 16px !important; font-weight: 400 !important; }
 /* Header directions retain the original Tilda Sans Light (300). */
 body.barnes-home-typography .barnes-choice__tab {

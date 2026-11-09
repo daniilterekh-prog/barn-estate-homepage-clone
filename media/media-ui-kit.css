@@ -8,18 +8,18 @@ body.barnes-media-kit .media-cta-banner__inner > .media-kit-heading {align-items
 body.barnes-media-kit :is(.media-intents__action,.media-weekly__action,.media-fresh__action,.media-market__featured-action,.team-member-card__link) {
  box-sizing:border-box;display:inline-flex!important;align-items:center;align-self:flex-start;
  width:max-content;max-width:100%;min-height:44px;padding:8px 0!important;
- text-decoration:none!important;border-bottom:1px solid currentColor;
+ text-decoration:underline!important;text-decoration-thickness:1px!important;
+ text-underline-offset:4px!important;border-bottom:0;
 }
-body.barnes-media-kit .ui-more-link {min-height:44px;padding-block:8px;}
+body.barnes-media-kit .ui-more-link {min-height:44px;padding-block:8px;border-bottom-color:transparent!important;}
+body.barnes-media-kit .ui-more-link__label {text-decoration:underline!important;text-decoration-thickness:1px!important;text-underline-offset:4px!important;}
 /* Decorative arrows stay visible on touch screens; only their motion is hover-only. */
 body.barnes-media-kit :is(.media-intents__action,.media-weekly__action,.media-fresh__action,.media-market__featured-action,.team-member-card__link) {
  position:relative;gap:12px;padding-right:5px!important;border-bottom:0;
  opacity:1!important;
 }
 body.barnes-media-kit :is(.media-intents__action,.media-weekly__action,.media-fresh__action,.media-market__featured-action,.team-member-card__link)::before {
- content:"";position:absolute;left:0;right:5px;bottom:0;height:1px;
- background:currentColor;transform:scaleX(.45);transform-origin:left;
- transition:transform 180ms ease-out;pointer-events:none;
+ content:none;
 }
 body.barnes-media-kit :is(.media-intents__action,.media-weekly__action,.media-fresh__action,.media-market__featured-action,.team-member-card__link)::after {
  content:"";display:block;flex:0 0 20px;width:20px;height:12px;
