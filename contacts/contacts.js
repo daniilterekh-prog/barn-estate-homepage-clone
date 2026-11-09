@@ -13,6 +13,7 @@
   menuButton.setAttribute('aria-expanded',String(open));menuButton.setAttribute('aria-label',open?'Закрыть меню':'Открыть меню');
   if(open){restoreOverflow=document.documentElement.style.overflow;document.documentElement.style.overflow='hidden';menu.setAttribute('role','dialog');menu.setAttribute('aria-modal','true');menu.setAttribute('aria-label','Основное меню');main.inert=true;footer.inert=true;menu.querySelector('a').focus()}
   else{document.documentElement.style.overflow=restoreOverflow;main.inert=false;footer.inert=false;menuButton.focus({preventScroll:true})}
+  window.BarnPageBreadcrumbs?.refresh();
  }
  menuButton.addEventListener('click',()=>setMenu(!menuOpen));
  menu.addEventListener('click',event=>{if(event.target.closest('a'))setMenu(false)});
@@ -33,12 +34,12 @@
  document.querySelectorAll('[data-select-office]').forEach(link=>link.addEventListener('click',()=>selectOffice(link.dataset.selectOffice)));
  document.querySelector('.hero-bottom>a:first-child').addEventListener('click',()=>selectOffice('moscow'));
  let dialogTrigger=null,dialogOverflow='';
- function openContact(trigger){if(menuOpen)setMenu(false);dialogTrigger=trigger?.getClientRects().length?trigger:document.activeElement;dialogOverflow=document.documentElement.style.overflow;document.documentElement.style.overflow='hidden';dialog.showModal();dialog.querySelector('.dialog-close').focus()}
+ function openContact(trigger){if(menuOpen)setMenu(false);dialogTrigger=trigger?.getClientRects().length?trigger:document.activeElement;dialogOverflow=document.documentElement.style.overflow;document.documentElement.style.overflow='hidden';dialog.showModal();dialog.querySelector('.dialog-close').focus();window.BarnPageBreadcrumbs?.refresh()}
  document.addEventListener('click',event=>{const trigger=event.target.closest('[data-contact-open]');if(trigger){event.preventDefault();openContact(trigger)}});
  dialog.querySelector('.dialog-close').addEventListener('click',()=>dialog.close());
  dialog.addEventListener('click',event=>{if(event.target===dialog){const rect=dialog.getBoundingClientRect();if(event.clientX<rect.left||event.clientX>rect.right||event.clientY<rect.top||event.clientY>rect.bottom)dialog.close()}});
  dialog.addEventListener('keydown',event=>{if(event.key!=='Tab')return;const items=[...dialog.querySelectorAll('button,a[href]')],first=items[0],last=items[items.length-1];if(event.shiftKey&&document.activeElement===first){event.preventDefault();last.focus()}else if(!event.shiftKey&&document.activeElement===last){event.preventDefault();first.focus()}});
- dialog.addEventListener('close',()=>{document.documentElement.style.overflow=dialogOverflow;dialogTrigger?.focus({preventScroll:true})});
+ dialog.addEventListener('close',()=>{document.documentElement.style.overflow=dialogOverflow;dialogTrigger?.focus({preventScroll:true});window.BarnPageBreadcrumbs?.refresh()});
  // Keep the shared header callback contract without introducing a second form controller.
  window.__barnesOwnerForm={open:({trigger}={})=>openContact(trigger)};
  const stored=(()=>{try{return JSON.parse(localStorage.getItem('barnes:favorites')||'[]')}catch{return []}})();
