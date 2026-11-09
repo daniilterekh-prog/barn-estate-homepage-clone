@@ -192,7 +192,7 @@
       "name": "Anastasija Zolotova",
       "role": "Руководитель отдела маркетинга",
       "sourceRole": "Head of Marketing Department",
-      "group": "office",
+      "group": "marketing",
       "sourceImage": "https://barn-estate.ru/upload/resize_cache/iblock/291/860_860_1/keycheijte6bn7usidoomhq5m6e4urpz.png",
       "image": "assets/person-19.webp",
       "leadership": true
@@ -222,7 +222,7 @@
       "name": "Marina Belikova",
       "role": "SMM-менеджер",
       "sourceRole": "Social Media Manager",
-      "group": "office",
+      "group": "marketing",
       "sourceImage": "https://barn-estate.ru/upload/resize_cache/iblock/b56/860_860_1/mr9qpj2ho5nr7l7a98fo3nsdk3tlqqis.png",
       "image": "assets/person-22.webp",
       "leadership": false
@@ -232,7 +232,7 @@
       "name": "Elini Parsalova",
       "role": "SMM-менеджер",
       "sourceRole": "Social Media Manager",
-      "group": "office",
+      "group": "marketing",
       "sourceImage": "https://barn-estate.ru/upload/resize_cache/iblock/f9f/860_860_1/e7p88w9gl91csuda85vx3ybqidjfswqr.png",
       "image": "assets/person-23.webp",
       "leadership": false
@@ -242,7 +242,7 @@
       "name": "Dmitry Tolkachev",
       "role": "Бренд-менеджер",
       "sourceRole": "Brand Manager",
-      "group": "office",
+      "group": "marketing",
       "sourceImage": "https://barn-estate.ru/upload/resize_cache/iblock/b70/860_860_1/bxsyflg3kh21jj7uf3c8k69no4ns7l4r.png",
       "image": "assets/person-24.webp",
       "leadership": false
@@ -290,6 +290,23 @@
       "person-16",
       "person-19"
     ],
-    "note": "Фильтр руководителей дополнительно включает сотрудников их профильных направлений; первоначальные sourceRole сохранены."
+    "note": "Фильтр руководителей дополнительно включает сотрудников их профильных направлений; первоначальные sourceRole сохранены.",
+    "departmentSplit": {
+      "date": "2026-11-09",
+      "source": "Уточнение пользователя: выделить маркетинг и офис отдельно",
+      "marketingIds": [
+        "person-19",
+        "person-22",
+        "person-23",
+        "person-24"
+      ],
+      "officeIds": [
+        "person-20",
+        "person-21",
+        "person-25",
+        "person-26",
+        "person-27"
+      ]
+    }
   }
 }
