@@ -114,7 +114,10 @@ html body.barnes-events .site-footer :is(a,button):is(:hover,:focus-visible) {co
   .media-hero__image {object-position:58% center}
   .events-button {min-height:58px;padding:0 24px;font-size:18px}
   .media-categories {display:none}
-  .events-years {width:100%;justify-content:center;column-gap:8px}
+  .events-years {width:100%;min-width:0;max-width:100%;flex-wrap:nowrap;justify-content:flex-start;column-gap:8px;overflow-x:auto;overscroll-behavior-x:contain;scrollbar-width:none}
+  .events-years::-webkit-scrollbar {display:none}
+  .events-year {flex:0 0 auto}
+  .events-year:focus-visible {outline-offset:-2px}
   .events-count {width:100%;text-align:center}
   .events-grid {grid-template-columns:1fr}
   .event-card__media {aspect-ratio:1.5}
