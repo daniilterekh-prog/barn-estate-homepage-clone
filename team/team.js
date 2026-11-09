@@ -2,6 +2,62 @@
   const filters = [...document.querySelectorAll('[data-filter]')];
   const cards = [...document.querySelectorAll('.team-grid__item')];
   const status = document.querySelector('.team-count');
+  // Reserve the tallest name and role across the entire team, including filtered cards.
+  // Filter changes must not move a person's name; only available card width may resize it.
+  const grid = document.querySelector('.team-grid');
+  let alignmentFrame = 0;
+  const alignCardText = () => {
+    alignmentFrame = 0;
+    const visible = cards.filter(card => !card.hidden);
+    if (!visible.length) return;
+    const overlay = visible[0].querySelector('.team-member-card__overlay');
+    const overlayStyle = getComputedStyle(overlay);
+    const width = Math.min(...visible.map(card => card.querySelector('.team-member-card__overlay').getBoundingClientRect().width))
+      - parseFloat(overlayStyle.paddingLeft) - parseFloat(overlayStyle.paddingRight);
+    if (width <= 0) return;
+    const probe = document.createElement('div');
+    probe.setAttribute('aria-hidden', 'true');
+    probe.inert = true;
+    probe.style.cssText = `position:fixed;left:-10000px;top:0;width:${width}px;visibility:hidden;pointer-events:none;`;
+    const probes = {};
+    for (const kind of ['name', 'role']) {
+      const selector = `.team-member-card__${kind}`;
+      const type = getComputedStyle(visible[0].querySelector(selector));
+      probes[kind] = cards.map(card => {
+        const node = document.createElement('div');
+        node.textContent = card.querySelector(selector).textContent;
+        Object.assign(node.style, {
+          font: type.font, letterSpacing: type.letterSpacing,
+          overflowWrap: type.overflowWrap, wordBreak: type.wordBreak,
+          whiteSpace: type.whiteSpace, textTransform: type.textTransform,
+          fontKerning: type.fontKerning, fontFeatureSettings: type.fontFeatureSettings,
+          margin: '0', padding: '0', border: '0'
+        });
+        probe.append(node);
+        return node;
+      });
+    }
+    document.body.append(probe);
+    for (const kind of ['name', 'role']) {
+      const height = Math.ceil(Math.max(...probes[kind].map(node => node.getBoundingClientRect().height)));
+      grid.style.setProperty(`--team-${kind}-height`, `${height}px`);
+    }
+    probe.remove();
+  };
+  const scheduleAlignment = () => {
+    if (!alignmentFrame) alignmentFrame = requestAnimationFrame(alignCardText);
+  };
+  let observedWidth = -1;
+  const alignmentObserver = new ResizeObserver(entries => {
+    const width = entries[0].contentRect.width;
+    if (Math.abs(width - observedWidth) > 0.1) {
+      observedWidth = width;
+      scheduleAlignment();
+    }
+  });
+  alignmentObserver.observe(grid);
+  document.fonts.ready.then(scheduleAlignment);
+
   document.querySelector('.team-filters').hidden = false;
   filters.forEach(button => button.addEventListener('click', () => {
     filters.forEach(item => item.setAttribute('aria-pressed', String(item === button)));
