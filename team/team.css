@@ -25,7 +25,7 @@ body.team-menu-open{overflow:hidden}.team-page .site-header.site-header--menu-op
 /* Compact internal-page opening: spacing and H1 match the Favorites reference. */
 .team-directory{padding-top:40px}.team-directory h1{color:var(--ink)}
 html body.team-page.barnes-media-header .site-header__logo img{filter:brightness(0)!important}
-html body.team-page.barnes-media-header .site-header__top{border-bottom-color:rgba(139,29,37,.2)!important;margin-bottom:0!important}
+html body.team-page.barnes-media-header .site-header__top{border-bottom-color:#000!important;margin-bottom:0!important}
 @media(min-width:1281px){html body.team-page.barnes-media-header .mh-reference-nav{display:block;padding-block:26px 0}}
 @media(max-width:1024px){.team-directory{padding-top:32px}}
 @media(max-width:540px){.team-directory{padding-top:28px}.team-directory h1{font-size:32px}}
