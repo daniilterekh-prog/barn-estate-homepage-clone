@@ -109,12 +109,13 @@ html body.barnes-events .site-footer :is(a,button):is(:hover,:focus-visible) {co
 @media(max-width:540px) {
   :root {--section-pad:48px;--section-gap:28px;--filter-size:14px;--filter-gap:16px;--card-gap:24px}
   html {scroll-padding-top:96px}
+  .events-heading {text-align:center}
   .events-title {font-size:22px}
   .media-hero__image {object-position:58% center}
   .events-button {min-height:58px;padding:0 24px;font-size:18px}
-  .media-categories {flex-wrap:nowrap;overflow-x:auto;max-width:100%;padding-bottom:12px;scrollbar-width:thin}
-  .media-categories a {flex-shrink:0}
-  .events-years {column-gap:8px}
+  .media-categories {display:none}
+  .events-years {width:100%;justify-content:center;column-gap:8px}
+  .events-count {width:100%;text-align:center}
   .events-grid {grid-template-columns:1fr}
   .event-card__media {aspect-ratio:1.5}
   .events-more {gap:16px}
