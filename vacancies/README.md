@@ -2,7 +2,7 @@
 
 [Открыть страницу на GitHub Pages](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/vacancies/).
 
-Отдельная самостоятельная папка: HTML, CSS, JS, фотографии, SVG и шрифты. Публикация09.11.2026 из [рабочих исходников и проверок](https://github.com/daniilterekh-prog/barnes-sites/tree/codex/vacancies-20261109/main-site/pages/vacancies), commit `77993d87c03cea1412105f4307dcbd680580a6f7`. Побайтовый состав runtime зафиксирован в [SOURCE.json](SOURCE.json).
+Отдельная самостоятельная папка: HTML, CSS, JS, фотографии, SVG и шрифты. Публикация09.11.2026 из [рабочих исходников и проверок](https://github.com/daniilterekh-prog/barnes-sites/tree/codex/vacancies-20261109/main-site/pages/vacancies), commit `12643c0c965000cc9838a6efa02bfd95e8e970ae`. Побайтовый состав runtime зафиксирован в [SOURCE.json](SOURCE.json).
 
 Содержание — по [старой странице вакансий](https://barn-estate.ru/vacancies/), оформление — действующий кит BARN Estate, hero — по страницам собственников. Три направления и кнопки отклика ведут на исходную страницу работодателя hh.ru. Hero использует тёплую генеративно обработанную общую фотографию команды с Google Drive, нижний CTA скопирован из финального городского узла; [происхождение](assets/city-cta-provenance.json). Подобранные альтернативные фотографии и генерируемая концепция сохранены отдельно в [исходниках](https://github.com/daniilterekh-prog/barnes-sites/tree/codex/vacancies-20261109/main-site/pages/vacancies/references/team-photos) и здесь не подменяют утверждённую версию.
 
@@ -21,3 +21,6 @@
 По уточнению пользователя используется готовый `.catalog-consultation` из финального городского узла: тот же фон/портрет, desktop-композиция и мобильный аватар. Тексты заменены на карьерные. Контактные поля и каналы заменены прежней кнопкой «Откликнуться на hh.ru» с неизменённым адресом работодателя и подсказкой об отправке резюме. Херо с командой сохранён.
 
 Стили и контроллер фоновых слоёв скопированы локально в папку вакансий; городской узел/общие зависимости не изменены. [Четыре изображения и контрольные суммы](assets/city-cta-provenance.json) побайтово совпадают с городскими.704сверки с живым городским CTA на11ширинах прошли;17478проверок общего кита на36ширинах прошли;11ширин/6сценариев/axe390и1440 — без ошибок. [Проверки в рабочих исходниках](https://github.com/daniilterekh-prog/barnes-sites/tree/codex/vacancies-20261109/main-site/pages/vacancies/verification/city-cta).
+
+
+09.11.2026: удалена граница после последней вакансии. Исправлено условие исходного правила масштаба портрета: `picture.currentSrc` выбирал PNG, но условие смотрело на fallback `img.src`. Правило теперь связано с классом портрета: от769px Руслан слева, ширина50%, высота82% с максимумом640px, `contain`. Мобильный аватар сохранён.704проверки с активированным исходным правилом и11ширин/6сценариев/axe прошли. [Подробности и сравнение](https://github.com/daniilterekh-prog/barnes-sites/tree/codex/vacancies-20261109/main-site/pages/vacancies/verification/portrait-fix).

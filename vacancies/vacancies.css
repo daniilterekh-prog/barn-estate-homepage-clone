@@ -95,7 +95,6 @@ html body.career-page .mh-contact-panel:not([hidden]) { display: flex !important
 .career-openings__note a { border-bottom: 1px solid var(--career-muted); padding-block: 10px; display: inline-block; }
 .career-openings__note a:hover { color: var(--career-accent); border-color: var(--career-accent); }
 .career-job { display: grid; grid-template-columns: 44px minmax(0,1fr) auto; gap: 32px; padding-block: var(--career-content-gap); border-top: 1px solid var(--career-line); align-items: center; }
-.career-job:last-child { border-bottom: 1px solid var(--career-line); }
 .career-job__number { align-self: start; padding-top: 0; }
 .career-job__area { font-size: var(--career-eyebrow); line-height: var(--career-eyebrow-line); text-transform: uppercase; letter-spacing: .12em; font-weight: 400; color: var(--career-muted); margin-bottom: var(--career-brow-gap); }
 .career-job h3 { max-width: 620px; }

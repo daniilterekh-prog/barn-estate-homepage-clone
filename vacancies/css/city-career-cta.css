@@ -212,7 +212,7 @@
 @layer barn-node-spacing {
 @media (min-width: 769px) {
 .career-page .career-invitation .catalog-consultation__image { top: auto !important; bottom: 0px !important; max-height: 800px !important; }
-.career-page .career-invitation .catalog-consultation__image[src*="cta-ruslan-cutout"] { left: 0px !important; right: auto !important; width: 50% !important; height: 82% !important; max-height: 640px !important; object-fit: contain !important; object-position: center bottom !important; }
+.career-page .career-invitation .catalog-consultation__image.career-invitation__photo { left: 0px !important; right: auto !important; width: 50% !important; height: 82% !important; max-height: 640px !important; object-fit: contain !important; object-position: center bottom !important; }
 .career-page .career-invitation .catalog-consultation__media::before { content: "" !important; background-image: url("../assets/city-cta-709121d4e9a3cf06.webp") !important; }
 .career-page .career-invitation .catalog-consultation__image:is([src*="consultation-background"], [src*="cta-alina-unified"]) { height: 100% !important; max-height: 700px !important; mask-image: linear-gradient(transparent, rgb(0, 0, 0) 4%), linear-gradient(90deg, rgb(0, 0, 0) 80%, transparent) !important; mask-composite: intersect !important; }
 }
