@@ -568,7 +568,7 @@ h2 + .description {
   display: grid;
   grid-template-columns: 1fr 1.6fr;
   gap: 7vw;
-  align-items: center;
+  align-items: start;
 }
 .about-illustration {
   display: flex;
@@ -576,8 +576,10 @@ h2 + .description {
   justify-content: center;
 }
 .about-illustration img {
-  width: min(100%, 350px);
+  width: min(100%, 400px);
   height: auto;
+  /* Account for the illustration's white canvas above the roof. */
+  transform: translateY(-2.5%);
 }
 .ruled-copy {
   border-top: 1px solid var(--line);
@@ -1095,7 +1097,8 @@ form .button {
     gap: 32px;
   }
   .about-illustration img {
-    width: 220px;
+    width: 250px;
+    transform: none;
   }
   .ruled-copy {
     margin-top: 28px;
