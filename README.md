@@ -1,5 +1,7 @@
 # BARN Estate — страницы основного сайта
 
+- [Контакты: папка для разработчика — HTML/CSS/JS, ассеты и дизайн · 09.11.2026](handoff/contacts-2026-11-09/README.md) · [ZIP](handoff/contacts-2026-11-09/contacts-developer-2026-11-09.zip).
+
 - [Команда: папка для разработчика — HTML/CSS/JS, ассеты и дизайн ·09.11.2026](handoff/team-2026-11-09/README.md) · [ZIP](handoff/team-2026-11-09/team-developer-2026-11-09.zip) · [Превью](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/handoff/team-2026-11-09/code/html/index.html).
 
 - [Главная СПб — отдельная страница](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/home-spb/) ·09.11.2026.

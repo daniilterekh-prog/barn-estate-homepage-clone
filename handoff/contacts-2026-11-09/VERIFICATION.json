@@ -1,0 +1,144 @@
+{
+  "date": "2026-11-09",
+  "reference": "http://127.0.0.1:8824/main-site/pages/contacts/",
+  "package": "http://127.0.0.1:8931/code/html/index.html",
+  "parity": [
+    {
+      "width": 320,
+      "equal": true
+    },
+    {
+      "width": 360,
+      "equal": true
+    },
+    {
+      "width": 375,
+      "equal": true
+    },
+    {
+      "width": 390,
+      "equal": true
+    },
+    {
+      "width": 430,
+      "equal": true
+    },
+    {
+      "width": 540,
+      "equal": true
+    },
+    {
+      "width": 541,
+      "equal": true
+    },
+    {
+      "width": 768,
+      "equal": true
+    },
+    {
+      "width": 1024,
+      "equal": true
+    },
+    {
+      "width": 1280,
+      "equal": true
+    },
+    {
+      "width": 1281,
+      "equal": true
+    },
+    {
+      "width": 1440,
+      "equal": true
+    },
+    {
+      "width": 1441,
+      "equal": true
+    },
+    {
+      "width": 1920,
+      "equal": true
+    },
+    {
+      "width": 2560,
+      "equal": true
+    },
+    {
+      "width": 3840,
+      "equal": true
+    }
+  ],
+  "screenshots": [
+    {
+      "width": 390,
+      "byteIdentical": false,
+      "rawPixelDifferences": 12,
+      "significantPixels": 0,
+      "threshold": 0.1,
+      "sha256": "6060546ce3a0c3db1aea8d6142fe80f458d45387c27f630226a2a1b4c75a1b3b"
+    },
+    {
+      "width": 1440,
+      "byteIdentical": false,
+      "rawPixelDifferences": 12,
+      "significantPixels": 0,
+      "threshold": 0.1,
+      "sha256": "eab4a10b26363e8a08e161ad56da81ceb947e5de07b59690871afff924cd5dfa"
+    },
+    {
+      "width": 1920,
+      "byteIdentical": false,
+      "rawPixelDifferences": 6,
+      "significantPixels": 0,
+      "threshold": 0.1,
+      "sha256": "bb57f777158b032d6695e92b463a30c590fc36da1099df64f2b51acbda65a700"
+    }
+  ],
+  "menus": [
+    {
+      "index": 0,
+      "links": 8
+    },
+    {
+      "index": 1,
+      "links": 3
+    },
+    {
+      "index": 2,
+      "links": 6
+    },
+    {
+      "index": 3,
+      "links": 4
+    },
+    {
+      "index": 4,
+      "links": 10
+    },
+    {
+      "index": 5,
+      "links": 7
+    },
+    {
+      "index": 6,
+      "links": 7
+    },
+    {
+      "index": 7,
+      "links": 8
+    },
+    {
+      "index": 8,
+      "links": 3
+    }
+  ],
+  "keyboardTabs": true,
+  "mobileMenu": true,
+  "mobileContacts": true,
+  "contactDialog": true,
+  "noJavaScript": true,
+  "axe": [],
+  "errors": [],
+  "bad": [],
+  "unexpectedExternalResources": []
+}
