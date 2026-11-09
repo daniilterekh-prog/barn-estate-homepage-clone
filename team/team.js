@@ -58,18 +58,44 @@
   alignmentObserver.observe(grid);
   document.fonts.ready.then(scheduleAlignment);
 
-  document.querySelector('.team-filters').hidden = false;
-  filters.forEach(button => button.addEventListener('click', () => {
-    filters.forEach(item => item.setAttribute('aria-pressed', String(item === button)));
+  const search = document.querySelector('#team-search-input');
+  const clearSearch = document.querySelector('.team-search__clear');
+  const empty = document.querySelector('.team-search-empty');
+  const transliteration = {а:'a',б:'b',в:'v',г:'g',д:'d',е:'e',ж:'zh',з:'z',и:'i',й:'y',к:'k',л:'l',м:'m',н:'n',о:'o',п:'p',р:'r',с:'s',т:'t',у:'u',ф:'f',х:'kh',ц:'ts',ч:'ch',ш:'sh',щ:'shch',ъ:'',ы:'y',ь:'',э:'e',ю:'yu',я:'ya'};
+  const fold = value => String(value).toLocaleLowerCase('ru-RU').replace(/ё/g,'е')
+    .replace(/[а-я]/g, letter => transliteration[letter]).normalize('NFKD')
+    .replace(/[\u0300-\u036f]/g,'').replace(/ija/g,'ya').replace(/iy/g,'y').replace(/ia/g,'ya').replace(/zh/g,'j')
+    .replace(/[^a-z0-9]+/g,' ').trim();
+  const searchIndex = new Map(cards.map(card => [card, fold(`${card.textContent} ${card.dataset.searchAliases || ''}`)]));
+  let activeFilter = 'all';
+  const applyFilters = () => {
+    const tokens = fold(search.value).split(/\s+/).filter(Boolean);
     let count = 0;
     cards.forEach(card => {
-      const filter = button.dataset.filter;
-      const matches = filter === 'all' || (filter === 'management' ? card.dataset.leadership === 'true' : card.dataset.group === filter);
-      card.hidden = !matches;
+      const directionMatches = activeFilter === 'all' || (activeFilter === 'management' ? card.dataset.leadership === 'true' : card.dataset.group === activeFilter);
+      card.hidden = !(directionMatches && tokens.every(token => searchIndex.get(card).includes(token)));
       if (!card.hidden) count++;
     });
-    status.textContent = `${button.dataset.filter === 'all' ? 'Все специалисты' : button.textContent} · ${count}`;
+    const label = activeFilter === 'all' ? 'Все специалисты' : filters.find(button => button.dataset.filter === activeFilter).textContent;
+    status.textContent = `${tokens.length ? 'Найдено' : label} · ${count}`;
+    clearSearch.hidden = !search.value;
+    empty.hidden = count !== 0;
+    if (count) scheduleAlignment();
+  };
+  document.querySelector('.team-filters').hidden = false;
+  document.querySelector('.team-search').hidden = false;
+  filters.forEach(button => button.addEventListener('click', () => {
+    activeFilter = button.dataset.filter;
+    filters.forEach(item => item.setAttribute('aria-pressed', String(item === button)));
+    applyFilters();
   }));
+  const resetSearch = () => {search.value = '';applyFilters();search.focus();};
+  search.addEventListener('input', applyFilters);
+  search.addEventListener('keydown', event => {
+    if (event.key === 'Escape' && search.value) {event.preventDefault();event.stopPropagation();resetSearch();}
+  });
+  clearSearch.addEventListener('click', resetSearch);
+  empty.querySelector('button').addEventListener('click', resetSearch);
   const burger = document.querySelector('.site-header__icon-btn');
   const menu = document.querySelector('#site-mobile-menu');
   const header = document.querySelector('.site-header');
