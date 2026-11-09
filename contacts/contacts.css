@@ -715,16 +715,18 @@ a:focus-visible,button:focus-visible {
   }
 
   .office-tabs {
-    display: grid;
-    grid-template-columns: repeat(3,minmax(0,1fr));
-    gap: 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
     margin-bottom: 28px
   }
 
   .office-tabs a {
-    min-width: 0;
+    flex: 0 0 auto;
+    width: min-content;
+    min-width: 44px;
     min-height: 64px;
-    padding: 12px 4px;
+    padding: 12px 0;
     align-items: center;
     justify-content: center;
     text-align: center;
