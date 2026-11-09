@@ -41,8 +41,8 @@
   }
   function refreshLinks() {
     const destinations = new Map([
-      ['НОВОСТРОЙКИ МОСКВЫ', 'https://barn-estate.ru/novostroyki/'],
-      ['ВТОРИЧНАЯ НЕДВИЖИМОСТЬ', 'https://barn-estate.ru/vtorichnaya-nedvizhimost/']
+      ['НОВОСТРОЙКИ САНКТ-ПЕТЕРБУРГА', 'https://barnestate-spb.ru/gorodskaya-nedvizhimost/novostroyki/'],
+      ['ВТОРИЧНАЯ НЕДВИЖИМОСТЬ', 'https://barnestate-spb.ru/gorodskaya-nedvizhimost/vtorichnaya-nedvizhimost/']
     ]);
     for (const card of document.querySelectorAll('.department-card')) {
       const href = destinations.get(card.querySelector('.department-card__title')?.textContent.trim());
@@ -65,12 +65,13 @@
     for (const link of document.querySelectorAll('.office-contact__social')) {
       const href=link.getAttribute('href')||'';
       const kind=href.startsWith('mailto:')?'email':href.startsWith('tel:')?'phone':href.includes('yandex.ru/maps')?'map':null;
+      if(kind==='map')link.href='https://yandex.ru/maps/?rtext=~'+encodeURIComponent('Санкт-Петербург, набережная реки Мойки, 59')+'&rtt=auto';
       if(!kind)continue;
       const label=link.querySelector(':scope > span:not(.office-contact__arrow)');
       const text=kind==='email'?'Email':kind==='map'?'На карте':null;
       if(text&&label&&label.textContent!==text)label.textContent=text;
       if(kind==='email')link.setAttribute('aria-label','Email: '+href.slice(7));
-      if(kind==='map')link.setAttribute('aria-label','На карте: офис BARN Estate, Петровка, 19');
+      if(kind==='map')link.setAttribute('aria-label','На карте: офис BARN Estate, Санкт-Петербург, набережная реки Мойки, 59');
       if(link.dataset.homeContactArtwork===kind)continue;
       const current=link.querySelector(':scope > svg,:scope > img');
       if(current){const holder=document.createElement('div');holder.innerHTML=contactArtwork[kind];current.replaceWith(holder.firstElementChild);link.dataset.homeContactArtwork=kind;}
@@ -147,7 +148,7 @@
     const copyright = document.querySelector('.site-footer__copyright');
     if (copyright && copyright.textContent !== '© 2026 BARN ESTATE') copyright.textContent = '© 2026 BARN ESTATE';
     const hours = document.querySelector('.site-footer__hours');
-    if (hours && hours.textContent !== 'Ежедневно с 09:00 до 21:00') hours.textContent = 'Ежедневно с 09:00 до 21:00';
+    if (hours && hours.textContent !== 'Ежедневно с 09:30 до 21:30') hours.textContent = 'Ежедневно с 09:30 до 21:30';
     refreshContactButtons();
     refreshLinks();
     refreshBrand();

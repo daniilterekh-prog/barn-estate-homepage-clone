@@ -18,7 +18,7 @@
   toggle.innerHTML='<svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.5 9.8 9.8 0 0 1-4-.9L3 21l1.7-4.6A8.4 8.4 0 1 1 21 11.5Z"/><path d="M8 12h.01M12 12h.01M16 12h.01"/></svg>';
   panel=document.createElement('nav');panel.className='home-header-contacts-panel';panel.id='home-header-contact-panel';panel.hidden=true;panel.setAttribute('aria-label','Способы связи');
   for(const label of['WhatsApp','MAX','Telegram']){const source=[...contacts.querySelectorAll('a')].find(a=>a.getAttribute('aria-label')===label);if(!source)continue;const a=document.createElement('a');a.href=source.href;a.target='_blank';a.rel='noopener noreferrer';a.setAttribute('aria-label','Написать в '+label);const img=source.querySelector('img').cloneNode(true);img.alt='';img.setAttribute('aria-hidden','true');a.append(img);panel.append(a)}
-  const phone=contacts.querySelector('a[href^="tel:"]');if(phone){const a=document.createElement('a');a.href=phone.href;a.setAttribute('aria-label','Позвонить по номеру +7 (495) 182-50-79');a.append(phone.querySelector('svg').cloneNode(true));panel.append(a)}
+  const phone=contacts.querySelector('a[href^="tel:"]');if(phone){const a=document.createElement('a');a.href=phone.href;a.setAttribute('aria-label','Позвонить по номеру +7 (499) 272-48-72');a.append(phone.querySelector('svg').cloneNode(true));panel.append(a)}
   top.append(toggle,panel);
   observer=new MutationObserver(()=>{if(header.classList.contains('site-header--menu-open'))close()});observer.observe(header,{attributes:true,attributeFilter:['class']});
  }
