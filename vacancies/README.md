@@ -2,7 +2,7 @@
 
 [Открыть страницу на GitHub Pages](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/vacancies/).
 
-Отдельная самостоятельная папка: HTML, CSS, JS, фотографии, SVG и шрифты. Публикация09.11.2026 из [рабочих исходников и проверок](https://github.com/daniilterekh-prog/barnes-sites/tree/codex/vacancies-20261109/main-site/pages/vacancies), commit `3c388ef96d9c279e06977ccea8b5c4823c1dd00e`. Побайтовый состав runtime зафиксирован в [SOURCE.json](SOURCE.json).
+Отдельная самостоятельная папка: HTML, CSS, JS, фотографии, SVG и шрифты. Публикация09.11.2026 из [рабочих исходников и проверок](https://github.com/daniilterekh-prog/barnes-sites/tree/codex/vacancies-20261109/main-site/pages/vacancies), commit `77993d87c03cea1412105f4307dcbd680580a6f7`. Побайтовый состав runtime зафиксирован в [SOURCE.json](SOURCE.json).
 
 Содержание — по [старой странице вакансий](https://barn-estate.ru/vacancies/), оформление — действующий кит BARN Estate, hero — по страницам собственников. Три направления и кнопки отклика ведут на исходную страницу работодателя hh.ru. Hero использует тёплую генеративно обработанную общую фотографию команды с Google Drive, нижний CTA скопирован из финального городского узла; [происхождение](assets/city-cta-provenance.json). Подобранные альтернативные фотографии и генерируемая концепция сохранены отдельно в [исходниках](https://github.com/daniilterekh-prog/barnes-sites/tree/codex/vacancies-20261109/main-site/pages/vacancies/references/team-photos) и здесь не подменяют утверждённую версию.
 
