@@ -96,6 +96,9 @@
   });
   clearSearch.addEventListener('click', resetSearch);
   empty.querySelector('button').addEventListener('click', resetSearch);
+  document.querySelector('[data-home-form-open]').addEventListener('click', event => {
+    window.__barnesOwnerForm.open({trigger:event.currentTarget});
+  });
   const burger = document.querySelector('.site-header__icon-btn');
   const menu = document.querySelector('#site-mobile-menu');
   const header = document.querySelector('.site-header');
