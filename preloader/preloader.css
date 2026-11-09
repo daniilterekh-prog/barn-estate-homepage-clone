@@ -1,0 +1,53 @@
+/* Paint the existing scrollbar gutter without changing page width or scroll state. */
+html:has(.be-preloader.is-active) { background-color: #111; }
+.be-preloader {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  z-index: 2147483647;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  color: #fff;
+  background: linear-gradient(rgba(13,13,13,.84), rgba(13,13,13,.84)),
+    url("../exact-2026-10-21/assets/home-hero-cleaned.png") center / cover no-repeat, #111;
+  --be-ease: cubic-bezier(.22,.61,.36,1);
+}
+.be-preloader.is-active { display: flex; animation: be-watchdog 0s 5s forwards; }
+.be-preloader__inner {
+  width: min(560px, calc(100vw - 48px));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.be-preloader__brand { animation: be-fade-up .9s var(--be-ease) .15s both; }
+.be-preloader__logo { display: block; width: min(256px,64vw); height: auto; }
+.be-preloader__line {
+  width: 100%; height: 1px; margin-top: 38px;
+  background: rgba(255,255,255,.18); overflow: hidden;
+}
+.be-preloader__progress {
+  display: block; width: 100%; height: 100%; background: rgba(255,255,255,.86);
+  transform: scaleX(0); transform-origin: left;
+  animation: be-line 1.55s var(--be-ease) .35s both;
+}
+.be-preloader__caption {
+  width: 100%; margin-top: 22px; display: flex; justify-content: space-between; gap: 24px;
+  font-family: "Tilda Sans",Arial,sans-serif; font-size: 11px; font-weight: 400;
+  line-height: 1.2; letter-spacing: .14em; text-transform: uppercase;
+  color: rgba(255,255,255,.55);
+  animation: be-fade-up .9s var(--be-ease) .45s both;
+}
+.be-preloader.is-leaving { pointer-events: none; animation: be-exit .9s cubic-bezier(.76,0,.24,1) both, be-watchdog 0s 1s forwards; }
+.be-preloader.is-leaving .be-preloader__inner { animation: be-inner-out .7s var(--be-ease) both; }
+@keyframes be-fade-up { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes be-line { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+@keyframes be-inner-out { to { opacity: 0; transform: translateY(-18px); } }
+@keyframes be-exit { from { clip-path: inset(0); } to { clip-path: inset(0 0 100% 0); } }
+@keyframes be-watchdog { to { visibility: hidden; pointer-events: none; } }
+@media (max-width: 640px) {
+  .be-preloader__logo { width: min(216px,62vw); }
+  .be-preloader__caption { flex-direction: column; align-items: center; text-align: center; gap: 8px; }
+}
+@media (prefers-reduced-motion: reduce) { .be-preloader.is-active { display: none; animation: none; } .be-preloader * { animation: none; } }

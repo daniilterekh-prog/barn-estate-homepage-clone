@@ -1,5 +1,7 @@
 # Актуальные страницы основного сайта
 
+- [Прелоадер BARN Estate — отдельное превью с повтором анимации](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/preloader/) ·09.11.2026.
+
 Дополнительно: [39 внутренних страниц на компонентах пяти узлов](https://github.com/daniilterekh-prog/barnes-sites/blob/main/main-site/internal-pages/README.md) · [Общий каталог превью](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/internal-pages/).
 
 Один рабочий вход для каждого раздела. Старые варианты восстанавливаются из Git, а не выбираются по словам latest/standalone. Превью не является установкой на barn-estate.ru.
