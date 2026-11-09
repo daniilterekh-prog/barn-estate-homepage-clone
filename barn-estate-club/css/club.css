@@ -702,7 +702,7 @@ h2 + .description {
 .inquiry__caption {
   position: relative;
   z-index: 1;
-  padding: var(--section) clamp(32px, 5vw, 100px) var(--section) var(--gutter);
+  padding: var(--section) clamp(32px, 5vw, 100px);
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -718,8 +718,7 @@ h2 + .description {
   margin: 24px 0;
 }
 .inquiry__form {
-  padding: var(--section) max(var(--gutter), calc((100vw - 1920px) / 2));
-  padding-left: clamp(32px, 5vw, 100px);
+  padding: var(--section) clamp(32px, 5vw, 100px);
 }
 .inquiry__form .description {
   max-width: 560px;
@@ -872,12 +871,6 @@ form .button {
   :root {
     --gutter: 0px;
   }
-  .inquiry__form {
-    padding-right: max(0px, calc(100% - 960px));
-  }
-  .inquiry__caption {
-    padding-left: max(0px, calc(100% - 960px));
-  }
 }
 @media (min-width: 1025px) and (max-width: 1440px) {
   .club-hero {
@@ -978,7 +971,7 @@ form .button {
     padding-inline: var(--gutter);
   }
   .inquiry__form {
-    padding: var(--section) var(--gutter);
+    padding: var(--section) 0;
   }
   form {
     max-width: none;
