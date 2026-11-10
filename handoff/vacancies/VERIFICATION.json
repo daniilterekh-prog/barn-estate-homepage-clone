@@ -1,0 +1,654 @@
+{
+  "status": "passed",
+  "source_commit": "81f9411090c8144b9d67af2a3da73e0534855fed",
+  "source_regression": {
+    "base": "http://127.0.0.1:8819/",
+    "widths": [
+      {
+        "width": 320,
+        "overflow": 0,
+        "h1": 1,
+        "jobs": 3,
+        "logoHeight": 36,
+        "brokenImages": [],
+        "responses": [
+          "https://hh.ru/employer/5102390?hhtmFrom=vacancy",
+          "https://hh.ru/employer/5102390?hhtmFrom=vacancy",
+          "https://hh.ru/employer/5102390?hhtmFrom=vacancy"
+        ],
+        "headingSize": "22px",
+        "bodySize": "15px",
+        "gutter": 22
+      },
+      {
+        "width": 360,
+        "overflow": 0,
+        "h1": 1,
+        "jobs": 3,
+        "logoHeight": 36,
+        "brokenImages": [],
+        "responses": [
+          "https://hh.ru/employer/5102390?hhtmFrom=vacancy",
+          "https://hh.ru/employer/5102390?hhtmFrom=vacancy",
+          "https://hh.ru/employer/5102390?hhtmFrom=vacancy"
+        ],
+        "headingSize": "22px",
+        "bodySize": "15px",
+        "gutter": 22
+      },
+      {
+        "width": 390,
+        "overflow": 0,
+        "h1": 1,
+        "jobs": 3,
+        "logoHeight": 36,
+        "brokenImages": [],
+        "responses": [
+          "https://hh.ru/employer/5102390?hhtmFrom=vacancy",
+          "https://hh.ru/employer/5102390?hhtmFrom=vacancy",
+          "https://hh.ru/employer/5102390?hhtmFrom=vacancy"
+        ],
+        "headingSize": "22px",
+        "bodySize": "15px",
+        "gutter": 22
+      },
+      {
+        "width": 540,
+        "overflow": 0,
+        "h1": 1,
+        "jobs": 3,
+        "logoHeight": 36,
+        "brokenImages": [],
+        "responses": [
+          "https://hh.ru/employer/5102390?hhtmFrom=vacancy",
+          "https://hh.ru/employer/5102390?hhtmFrom=vacancy",
+          "https://hh.ru/employer/5102390?hhtmFrom=vacancy"
+        ],
+        "headingSize": "22px",
+        "bodySize": "15px",
+        "gutter": 22
+      },
+      {
+        "width": 768,
+        "overflow": 0,
+        "h1": 1,
+        "jobs": 3,
+        "logoHeight": 48,
+        "brokenImages": [],
+        "responses": [
+          "https://hh.ru/employer/5102390?hhtmFrom=vacancy",
+          "https://hh.ru/employer/5102390?hhtmFrom=vacancy",
+          "https://hh.ru/employer/5102390?hhtmFrom=vacancy"
+        ],
+        "headingSize": "38px",
+        "bodySize": "22px",
+        "gutter": 24
+      },
+      {
+        "width": 1024,
+        "overflow": 0,
+        "h1": 1,
+        "jobs": 3,
+        "logoHeight": 48,
+        "brokenImages": [],
+        "responses": [
+          "https://hh.ru/employer/5102390?hhtmFrom=vacancy",
+          "https://hh.ru/employer/5102390?hhtmFrom=vacancy",
+          "https://hh.ru/employer/5102390?hhtmFrom=vacancy"
+        ],
+        "headingSize": "38px",
+        "bodySize": "22px",
+        "gutter": 40.8889
+      },
+      {
+        "width": 1280,
+        "overflow": 0,
+        "h1": 1,
+        "jobs": 3,
+        "logoHeight": 48,
+        "brokenImages": [],
+        "responses": [
+          "https://hh.ru/employer/5102390?hhtmFrom=vacancy",
+          "https://hh.ru/employer/5102390?hhtmFrom=vacancy",
+          "https://hh.ru/employer/5102390?hhtmFrom=vacancy"
+        ],
+        "headingSize": "38px",
+        "bodySize": "22px",
+        "gutter": 57.7777
+      },
+      {
+        "width": 1440,
+        "overflow": 0,
+        "h1": 1,
+        "jobs": 3,
+        "logoHeight": 48,
+        "brokenImages": [],
+        "responses": [
+          "https://hh.ru/employer/5102390?hhtmFrom=vacancy",
+          "https://hh.ru/employer/5102390?hhtmFrom=vacancy",
+          "https://hh.ru/employer/5102390?hhtmFrom=vacancy"
+        ],
+        "headingSize": "38px",
+        "bodySize": "22px",
+        "gutter": 68.3333
+      },
+      {
+        "width": 1920,
+        "overflow": 0,
+        "h1": 1,
+        "jobs": 3,
+        "logoHeight": 48,
+        "brokenImages": [],
+        "responses": [
+          "https://hh.ru/employer/5102390?hhtmFrom=vacancy",
+          "https://hh.ru/employer/5102390?hhtmFrom=vacancy",
+          "https://hh.ru/employer/5102390?hhtmFrom=vacancy"
+        ],
+        "headingSize": "44px",
+        "bodySize": "22px",
+        "gutter": 100
+      },
+      {
+        "width": 2560,
+        "overflow": 0,
+        "h1": 1,
+        "jobs": 3,
+        "logoHeight": 48,
+        "brokenImages": [],
+        "responses": [
+          "https://hh.ru/employer/5102390?hhtmFrom=vacancy",
+          "https://hh.ru/employer/5102390?hhtmFrom=vacancy",
+          "https://hh.ru/employer/5102390?hhtmFrom=vacancy"
+        ],
+        "headingSize": "44px",
+        "bodySize": "22px",
+        "gutter": 320
+      },
+      {
+        "width": 3840,
+        "overflow": 0,
+        "h1": 1,
+        "jobs": 3,
+        "logoHeight": 48,
+        "brokenImages": [],
+        "responses": [
+          "https://hh.ru/employer/5102390?hhtmFrom=vacancy",
+          "https://hh.ru/employer/5102390?hhtmFrom=vacancy",
+          "https://hh.ru/employer/5102390?hhtmFrom=vacancy"
+        ],
+        "headingSize": "44px",
+        "bodySize": "22px",
+        "gutter": 960
+      }
+    ],
+    "interactions": {
+      "menuEscapeAndFocus": true,
+      "menuVacanciesAnchor": true,
+      "contactsEscape": true,
+      "heroAnchorAndSticky": true,
+      "reducedMotion": true,
+      "keyboardSkip": true
+    },
+    "errors": [],
+    "httpErrors": [],
+    "accessibility": [
+      {
+        "width": 390,
+        "violations": []
+      },
+      {
+        "width": 1440,
+        "violations": []
+      }
+    ]
+  },
+  "package_regression": {
+    "base": "http://127.0.0.1:8820/html/index.html",
+    "widths": [
+      {
+        "width": 320,
+        "overflow": 0,
+        "h1": 1,
+        "jobs": 3,
+        "logoHeight": 36,
+        "brokenImages": [],
+        "responses": [
+          "https://hh.ru/employer/5102390?hhtmFrom=vacancy",
+          "https://hh.ru/employer/5102390?hhtmFrom=vacancy",
+          "https://hh.ru/employer/5102390?hhtmFrom=vacancy"
+        ],
+        "headingSize": "22px",
+        "bodySize": "15px",
+        "gutter": 22
+      },
+      {
+        "width": 360,
+        "overflow": 0,
+        "h1": 1,
+        "jobs": 3,
+        "logoHeight": 36,
+        "brokenImages": [],
+        "responses": [
+          "https://hh.ru/employer/5102390?hhtmFrom=vacancy",
+          "https://hh.ru/employer/5102390?hhtmFrom=vacancy",
+          "https://hh.ru/employer/5102390?hhtmFrom=vacancy"
+        ],
+        "headingSize": "22px",
+        "bodySize": "15px",
+        "gutter": 22
+      },
+      {
+        "width": 390,
+        "overflow": 0,
+        "h1": 1,
+        "jobs": 3,
+        "logoHeight": 36,
+        "brokenImages": [],
+        "responses": [
+          "https://hh.ru/employer/5102390?hhtmFrom=vacancy",
+          "https://hh.ru/employer/5102390?hhtmFrom=vacancy",
+          "https://hh.ru/employer/5102390?hhtmFrom=vacancy"
+        ],
+        "headingSize": "22px",
+        "bodySize": "15px",
+        "gutter": 22
+      },
+      {
+        "width": 540,
+        "overflow": 0,
+        "h1": 1,
+        "jobs": 3,
+        "logoHeight": 36,
+        "brokenImages": [],
+        "responses": [
+          "https://hh.ru/employer/5102390?hhtmFrom=vacancy",
+          "https://hh.ru/employer/5102390?hhtmFrom=vacancy",
+          "https://hh.ru/employer/5102390?hhtmFrom=vacancy"
+        ],
+        "headingSize": "22px",
+        "bodySize": "15px",
+        "gutter": 22
+      },
+      {
+        "width": 768,
+        "overflow": 0,
+        "h1": 1,
+        "jobs": 3,
+        "logoHeight": 48,
+        "brokenImages": [],
+        "responses": [
+          "https://hh.ru/employer/5102390?hhtmFrom=vacancy",
+          "https://hh.ru/employer/5102390?hhtmFrom=vacancy",
+          "https://hh.ru/employer/5102390?hhtmFrom=vacancy"
+        ],
+        "headingSize": "38px",
+        "bodySize": "22px",
+        "gutter": 24
+      },
+      {
+        "width": 1024,
+        "overflow": 0,
+        "h1": 1,
+        "jobs": 3,
+        "logoHeight": 48,
+        "brokenImages": [],
+        "responses": [
+          "https://hh.ru/employer/5102390?hhtmFrom=vacancy",
+          "https://hh.ru/employer/5102390?hhtmFrom=vacancy",
+          "https://hh.ru/employer/5102390?hhtmFrom=vacancy"
+        ],
+        "headingSize": "38px",
+        "bodySize": "22px",
+        "gutter": 40.8889
+      },
+      {
+        "width": 1280,
+        "overflow": 0,
+        "h1": 1,
+        "jobs": 3,
+        "logoHeight": 48,
+        "brokenImages": [],
+        "responses": [
+          "https://hh.ru/employer/5102390?hhtmFrom=vacancy",
+          "https://hh.ru/employer/5102390?hhtmFrom=vacancy",
+          "https://hh.ru/employer/5102390?hhtmFrom=vacancy"
+        ],
+        "headingSize": "38px",
+        "bodySize": "22px",
+        "gutter": 57.7777
+      },
+      {
+        "width": 1440,
+        "overflow": 0,
+        "h1": 1,
+        "jobs": 3,
+        "logoHeight": 48,
+        "brokenImages": [],
+        "responses": [
+          "https://hh.ru/employer/5102390?hhtmFrom=vacancy",
+          "https://hh.ru/employer/5102390?hhtmFrom=vacancy",
+          "https://hh.ru/employer/5102390?hhtmFrom=vacancy"
+        ],
+        "headingSize": "38px",
+        "bodySize": "22px",
+        "gutter": 68.3333
+      },
+      {
+        "width": 1920,
+        "overflow": 0,
+        "h1": 1,
+        "jobs": 3,
+        "logoHeight": 48,
+        "brokenImages": [],
+        "responses": [
+          "https://hh.ru/employer/5102390?hhtmFrom=vacancy",
+          "https://hh.ru/employer/5102390?hhtmFrom=vacancy",
+          "https://hh.ru/employer/5102390?hhtmFrom=vacancy"
+        ],
+        "headingSize": "44px",
+        "bodySize": "22px",
+        "gutter": 100
+      },
+      {
+        "width": 2560,
+        "overflow": 0,
+        "h1": 1,
+        "jobs": 3,
+        "logoHeight": 48,
+        "brokenImages": [],
+        "responses": [
+          "https://hh.ru/employer/5102390?hhtmFrom=vacancy",
+          "https://hh.ru/employer/5102390?hhtmFrom=vacancy",
+          "https://hh.ru/employer/5102390?hhtmFrom=vacancy"
+        ],
+        "headingSize": "44px",
+        "bodySize": "22px",
+        "gutter": 320
+      },
+      {
+        "width": 3840,
+        "overflow": 0,
+        "h1": 1,
+        "jobs": 3,
+        "logoHeight": 48,
+        "brokenImages": [],
+        "responses": [
+          "https://hh.ru/employer/5102390?hhtmFrom=vacancy",
+          "https://hh.ru/employer/5102390?hhtmFrom=vacancy",
+          "https://hh.ru/employer/5102390?hhtmFrom=vacancy"
+        ],
+        "headingSize": "44px",
+        "bodySize": "22px",
+        "gutter": 960
+      }
+    ],
+    "interactions": {
+      "menuEscapeAndFocus": true,
+      "menuVacanciesAnchor": true,
+      "contactsEscape": true,
+      "heroAnchorAndSticky": true,
+      "reducedMotion": true,
+      "keyboardSkip": true
+    },
+    "errors": [],
+    "httpErrors": [],
+    "accessibility": [
+      {
+        "width": 390,
+        "violations": []
+      },
+      {
+        "width": 1440,
+        "violations": []
+      }
+    ]
+  },
+  "requested_changes": {
+    "base": "http://127.0.0.1:8820/html/index.html",
+    "results": [
+      {
+        "width": 390,
+        "top": {
+          "height": 77,
+          "top": 0,
+          "logo": 36,
+          "arrowPaths": [
+            "M6 18 18 6M6 6h12v12",
+            "M6 18 18 6M6 6h12v12",
+            "M6 18 18 6M6 6h12v12",
+            "M6 18 18 6M6 6h12v12",
+            "M6 18 18 6M6 6h12v12",
+            "M6 18 18 6M6 6h12v12"
+          ],
+          "overflow": 0
+        },
+        "sticky": {
+          "height": 77,
+          "class": "site-header site-header--no-nav site-header--scrolled"
+        },
+        "button": {
+          "border": "1px solid rgba(255, 255, 255, 0.7)",
+          "borderWidth": "1px",
+          "borderStyle": "solid",
+          "borderColor": "rgba(255, 255, 255, 0.7)",
+          "height": 58,
+          "href": "mailto:moscow@barn-estate.com",
+          "background": "rgba(0, 0, 0, 0)",
+          "color": "rgb(255, 255, 255)"
+        },
+        "footerHover": []
+      },
+      {
+        "width": 768,
+        "top": {
+          "height": 111,
+          "top": 0,
+          "logo": 48,
+          "arrowPaths": [
+            "M6 18 18 6M6 6h12v12",
+            "M6 18 18 6M6 6h12v12",
+            "M6 18 18 6M6 6h12v12",
+            "M6 18 18 6M6 6h12v12",
+            "M6 18 18 6M6 6h12v12",
+            "M6 18 18 6M6 6h12v12"
+          ],
+          "overflow": 0
+        },
+        "sticky": {
+          "height": 111,
+          "class": "site-header site-header--no-nav site-header--scrolled"
+        },
+        "button": {
+          "border": "1px solid rgba(255, 255, 255, 0.7)",
+          "borderWidth": "1px",
+          "borderStyle": "solid",
+          "borderColor": "rgba(255, 255, 255, 0.7)",
+          "height": 70,
+          "href": "mailto:moscow@barn-estate.com",
+          "background": "rgba(0, 0, 0, 0)",
+          "color": "rgb(255, 255, 255)"
+        },
+        "footerHover": []
+      },
+      {
+        "width": 1280,
+        "top": {
+          "height": 111,
+          "top": 0,
+          "logo": 48,
+          "arrowPaths": [
+            "M6 18 18 6M6 6h12v12",
+            "M6 18 18 6M6 6h12v12",
+            "M6 18 18 6M6 6h12v12",
+            "M6 18 18 6M6 6h12v12",
+            "M6 18 18 6M6 6h12v12",
+            "M6 18 18 6M6 6h12v12"
+          ],
+          "overflow": 0
+        },
+        "sticky": {
+          "height": 111,
+          "class": "site-header site-header--no-nav site-header--scrolled"
+        },
+        "button": {
+          "border": "1px solid rgba(255, 255, 255, 0.7)",
+          "borderWidth": "1px",
+          "borderStyle": "solid",
+          "borderColor": "rgba(255, 255, 255, 0.7)",
+          "height": 70,
+          "href": "mailto:moscow@barn-estate.com",
+          "background": "rgba(0, 0, 0, 0)",
+          "color": "rgb(255, 255, 255)"
+        },
+        "footerHover": [
+          {
+            "selector": ".site-footer__link",
+            "color": "rgb(139, 29, 37)"
+          },
+          {
+            "selector": ".site-footer__phone",
+            "color": "rgb(139, 29, 37)"
+          },
+          {
+            "selector": ".site-footer__email",
+            "color": "rgb(139, 29, 37)"
+          },
+          {
+            "selector": ".site-footer__privacy",
+            "color": "rgb(139, 29, 37)"
+          }
+        ]
+      },
+      {
+        "width": 1440,
+        "top": {
+          "height": 153,
+          "top": 0,
+          "logo": 48,
+          "arrowPaths": [
+            "M6 18 18 6M6 6h12v12",
+            "M6 18 18 6M6 6h12v12",
+            "M6 18 18 6M6 6h12v12",
+            "M6 18 18 6M6 6h12v12",
+            "M6 18 18 6M6 6h12v12",
+            "M6 18 18 6M6 6h12v12"
+          ],
+          "overflow": 0
+        },
+        "sticky": {
+          "height": 111,
+          "class": "site-header site-header--no-nav site-header--scrolled"
+        },
+        "button": {
+          "border": "1px solid rgba(255, 255, 255, 0.7)",
+          "borderWidth": "1px",
+          "borderStyle": "solid",
+          "borderColor": "rgba(255, 255, 255, 0.7)",
+          "height": 70,
+          "href": "mailto:moscow@barn-estate.com",
+          "background": "rgba(0, 0, 0, 0)",
+          "color": "rgb(255, 255, 255)"
+        },
+        "footerHover": [
+          {
+            "selector": ".site-footer__link",
+            "color": "rgb(139, 29, 37)"
+          },
+          {
+            "selector": ".site-footer__phone",
+            "color": "rgb(139, 29, 37)"
+          },
+          {
+            "selector": ".site-footer__email",
+            "color": "rgb(139, 29, 37)"
+          },
+          {
+            "selector": ".site-footer__privacy",
+            "color": "rgb(139, 29, 37)"
+          }
+        ]
+      },
+      {
+        "width": 1920,
+        "top": {
+          "height": 155,
+          "top": 0,
+          "logo": 48,
+          "arrowPaths": [
+            "M6 18 18 6M6 6h12v12",
+            "M6 18 18 6M6 6h12v12",
+            "M6 18 18 6M6 6h12v12",
+            "M6 18 18 6M6 6h12v12",
+            "M6 18 18 6M6 6h12v12",
+            "M6 18 18 6M6 6h12v12"
+          ],
+          "overflow": 0
+        },
+        "sticky": {
+          "height": 111,
+          "class": "site-header site-header--no-nav site-header--scrolled"
+        },
+        "button": {
+          "border": "1px solid rgba(255, 255, 255, 0.7)",
+          "borderWidth": "1px",
+          "borderStyle": "solid",
+          "borderColor": "rgba(255, 255, 255, 0.7)",
+          "height": 70,
+          "href": "mailto:moscow@barn-estate.com",
+          "background": "rgba(0, 0, 0, 0)",
+          "color": "rgb(255, 255, 255)"
+        },
+        "footerHover": [
+          {
+            "selector": ".site-footer__link",
+            "color": "rgb(139, 29, 37)"
+          },
+          {
+            "selector": ".site-footer__phone",
+            "color": "rgb(139, 29, 37)"
+          },
+          {
+            "selector": ".site-footer__email",
+            "color": "rgb(139, 29, 37)"
+          },
+          {
+            "selector": ".site-footer__privacy",
+            "color": "rgb(139, 29, 37)"
+          }
+        ]
+      }
+    ],
+    "errors": [],
+    "httpErrors": []
+  },
+  "source_package_visual_parity": {
+    "method": "Playwright PNG comparison, Pixelmatch threshold0.1, same viewport/DPR/fonts; source vs html/index.html",
+    "rows": [
+      {
+        "width": 390,
+        "height": 4263,
+        "differentPixels": 0
+      },
+      {
+        "width": 1440,
+        "height": 4085,
+        "differentPixels": 0
+      },
+      {
+        "width": 1920,
+        "height": 4743,
+        "differentPixels": 0
+      }
+    ]
+  },
+  "fragments": {
+    "fragments": 4,
+    "reassembled_body_matches": true
+  },
+  "assets": 12,
+  "notes": [
+    "No real messages or resumes submitted.",
+    "Source and package checked locally; public deployment is verified separately in canonical source verification/current.",
+    "ZIP contains only the current package; no historical variants or private native team photos."
+  ]
+}

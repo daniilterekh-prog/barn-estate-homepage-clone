@@ -1,7 +1,7 @@
 @font-face { font-family: "Tilda Sans Fallback"; src: local("Arial"), local("Helvetica Neue"), local("Helvetica"); size-adjust: 92.84%; ascent-override: 102.43%; descent-override: 26.82%; line-gap-override: 0%; }
-@font-face { font-family: "Tilda Sans"; src: url("../assets/f0f2c165784c7234.woff2") format("woff2"); font-weight: 300; font-style: normal; font-display: swap; }
-@font-face { font-family: "Tilda Sans"; src: url("../assets/2670dad44ca6c2a1.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
-@font-face { font-family: "Tilda Sans"; src: url("../assets/f716269e361f4665.woff2") format("woff2"); font-weight: 500; font-style: normal; font-display: swap; }
+@font-face { font-family: "Tilda Sans"; src: url("../assets/TildaSans-Light.woff2") format("woff2"); font-weight: 300; font-style: normal; font-display: swap; }
+@font-face { font-family: "Tilda Sans"; src: url("../assets/TildaSans-Regular.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "Tilda Sans"; src: url("../assets/TildaSans-Medium.woff2") format("woff2"); font-weight: 500; font-style: normal; font-display: swap; }
 @keyframes floating-expert-enter-cd0a1259 {
   100% { opacity: 1; transform: translateY(0px); }
 }
@@ -18,9 +18,9 @@
   0% { transform: translateZ(0px); }
   100% { transform: translate3d(-50%, 0px, 0px); }
 }
-@font-face { font-display: swap; font-family: "Tilda Sans"; font-style: normal; font-weight: 300; src: url("../assets/f0f2c165784c7234.woff2") format("woff2"); }
-@font-face { font-display: swap; font-family: "Tilda Sans"; font-style: normal; font-weight: 400; src: url("../assets/2670dad44ca6c2a1.woff2") format("woff2"); }
-@font-face { font-display: swap; font-family: "Tilda Sans"; font-style: normal; font-weight: 500; src: url("../assets/f716269e361f4665.woff2") format("woff2"); }
+@font-face { font-display: swap; font-family: "Tilda Sans"; font-style: normal; font-weight: 300; src: url("../assets/TildaSans-Light.woff2") format("woff2"); }
+@font-face { font-display: swap; font-family: "Tilda Sans"; font-style: normal; font-weight: 400; src: url("../assets/TildaSans-Regular.woff2") format("woff2"); }
+@font-face { font-display: swap; font-family: "Tilda Sans"; font-style: normal; font-weight: 500; src: url("../assets/TildaSans-Medium.woff2") format("woff2"); }
 @font-face { font-display: swap; font-family: "Tilda Sans"; font-style: normal; font-weight: 600; src: url("https://daniilterekh-prog.github.io/fonts/TildaSans-Semibold.woff2") format("woff2"); }
 @font-face { font-display: swap; font-family: "Tilda Sans"; font-style: normal; font-weight: 700; src: url("https://daniilterekh-prog.github.io/fonts/TildaSans-Bold.woff2") format("woff2"); }
 @font-face { font-display: swap; font-family: "Tilda Sans"; font-style: normal; font-weight: 800; src: url("https://daniilterekh-prog.github.io/fonts/TildaSans-ExtraBold.woff2") format("woff2"); }
@@ -115,7 +115,7 @@ svg:not(.partners-brand-block) { overflow: hidden; }
 .site-footer__link[data-v-fd49876a] { color: rgba(255, 255, 255, 0.8); display: inline-block; font-size: 18px; font-weight: 300; line-height: 1; transition: color 0.3s; }
 @media screen and (max-width: 1440px) {.site-footer__link[data-v-fd49876a] { font-size: 16px; }}
 @media screen and (max-width: 540px) {.site-footer__link[data-v-fd49876a] { font-size: 11px; }}
-@media (min-width: 1025px) {.site-footer__link[data-v-fd49876a]:hover { color: rgb(231, 200, 143); }}
+@media (min-width: 1025px) {.site-footer__link[data-v-fd49876a]:hover { color: var(--career-accent, #8b1d25); }}
 .site-footer__bottom[data-v-fd49876a] { align-items: flex-end; border-top: 1px solid rgba(255, 255, 255, 0.3); display: flex; gap: 40px; justify-content: space-between; padding-top: 48px; width: 100%; }
 @media screen and (max-width: 1024px) {.site-footer__bottom[data-v-fd49876a] { align-items: flex-start; flex-direction: column; gap: 28px; }}
 @media screen and (max-width: 540px) {.site-footer__bottom[data-v-fd49876a] { border-top: 0px; gap: 20px; padding-top: 24px; }}
@@ -124,11 +124,11 @@ svg:not(.partners-brand-block) { overflow: hidden; }
 .site-footer__phone[data-v-fd49876a] { color: rgb(255, 255, 255); font-size: 29px; font-weight: 400; line-height: 1.4; margin-bottom: 15px; text-decoration: none; transition: color 0.3s; }
 @media screen and (max-width: 1440px) {.site-footer__phone[data-v-fd49876a] { font-size: 26px; }}
 @media screen and (max-width: 540px) {.site-footer__phone[data-v-fd49876a] { font-size: 16px; margin-bottom: 8px; }}
-@media (min-width: 1025px) {.site-footer__phone[data-v-fd49876a]:hover { color: rgb(231, 200, 143); }}
+@media (min-width: 1025px) {.site-footer__phone[data-v-fd49876a]:hover { color: var(--career-accent, #8b1d25); }}
 .site-footer__email[data-v-fd49876a] { color: rgba(255, 255, 255, 0.8); font-size: 18px; font-weight: 300; line-height: 1.4; margin-bottom: 3px; text-decoration: none; transition: color 0.3s; }
 @media screen and (max-width: 1440px) {.site-footer__email[data-v-fd49876a] { font-size: 16px; }}
 @media screen and (max-width: 540px) {.site-footer__email[data-v-fd49876a] { font-size: 12px; margin-bottom: 4px; }}
-@media (min-width: 1025px) {.site-footer__email[data-v-fd49876a]:hover { color: rgb(231, 200, 143); }}
+@media (min-width: 1025px) {.site-footer__email[data-v-fd49876a]:hover { color: var(--career-accent, #8b1d25); }}
 .site-footer__address[data-v-fd49876a], .site-footer__hours[data-v-fd49876a] { color: rgba(255, 255, 255, 0.8); font-size: 18px; font-weight: 300; line-height: 1.4; margin: 0px; }
 @media screen and (max-width: 1440px) {.site-footer__address[data-v-fd49876a], .site-footer__hours[data-v-fd49876a] { font-size: 16px; }}
 @media screen and (max-width: 540px) {.site-footer__address[data-v-fd49876a], .site-footer__hours[data-v-fd49876a] { font-size: 12px; }}
@@ -149,7 +149,7 @@ svg:not(.partners-brand-block) { overflow: hidden; }
 .site-footer__privacy[data-v-fd49876a] { color: rgba(255, 255, 255, 0.8); font-size: 18px; font-weight: 300; line-height: 1.4; margin-bottom: 3px; text-decoration: underline; text-underline-offset: 3px; transition: color 0.3s; }
 @media screen and (max-width: 1440px) {.site-footer__privacy[data-v-fd49876a] { font-size: 16px; }}
 @media screen and (max-width: 540px) {.site-footer__privacy[data-v-fd49876a] { font-size: 12px; margin: 0px 0px -8px; order: 4; text-align: center; width: 100%; }}
-@media (min-width: 1025px) {.site-footer__privacy[data-v-fd49876a]:hover { color: rgb(231, 200, 143); }}
+@media (min-width: 1025px) {.site-footer__privacy[data-v-fd49876a]:hover { color: var(--career-accent, #8b1d25); }}
 .site-footer__copyright[data-v-fd49876a] { color: rgba(255, 255, 255, 0.8); font-size: 18px; font-weight: 300; line-height: 1.4; margin: 0px; text-transform: uppercase; }
 @media screen and (max-width: 1440px) {.site-footer__copyright[data-v-fd49876a] { font-size: 16px; }}
 @media screen and (max-width: 540px) {.site-footer__copyright[data-v-fd49876a] { font-size: 14px; order: 5; text-align: center; text-transform: none; width: 100%; }}

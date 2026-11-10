@@ -54,8 +54,8 @@ html body.career-page { --mh-gutter: var(--home-gutter); --mh-pad: 32px; --mh-lo
 html body.career-page .site-header { color: #fff; pointer-events: auto; }
 html body.career-page .site-header__top { margin-bottom: 0 !important; }
 .career-page .site-header__request { display: none !important; }
-html body.career-page .site-header--scrolled { position: fixed; inset: 0 0 auto; padding-top: 20px !important; color: var(--career-ink); background: #fff; box-shadow: 0 1px 0 #ddd; }
-html body.career-page .site-header--scrolled .site-header__top { padding-bottom: 20px !important; }
+html body.career-page .site-header--scrolled { position: fixed; inset: 0 0 auto; padding-top: 32px !important; color: var(--career-ink); background: #fff; box-shadow: 0 1px 0 #ddd; }
+html body.career-page .site-header--scrolled .site-header__top { padding-bottom: 30px !important; }
 html body.career-page .site-header--scrolled .site-header__logo img { filter: none !important; }
 .career-page .site-header--scrolled .site-header__request { display: inline-flex !important; align-items: center; justify-content: center; height: 44px; min-height: 44px; padding: 0 18px; border: 1px solid var(--career-accent); border-radius: 1px; color: var(--career-accent); line-height: 1.1; }
 .career-page .site-header--scrolled .site-header__request:hover { background: var(--career-accent); color: #fff; }
@@ -181,3 +181,6 @@ html body.career-page .mh-contact-panel:not([hidden]) { display: flex !important
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition: none !important; animation: none !important; }
 }
+
+/* Match footer hover with keyboard focus. */
+.career-page .site-footer :is(.site-footer__link,.site-footer__phone,.site-footer__email,.site-footer__privacy):focus-visible { color: var(--career-accent); }

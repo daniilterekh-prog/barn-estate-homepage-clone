@@ -10,3 +10,5 @@
 
 - `handoff/barn-club/` — один актуальный комплект HTML/CSS/JS/ассетов и ZIP для разработчика.
 - `barn-estate-club/` — отдельная страница BARN Estate Club, экспорт из barnes-sites,09.11.2026.
+
+- `handoff/vacancies/` — один актуальный комплект HTML/CSS/JS/ассетов и ZIP для разработчика; исходник страницы в `vacancies/`.

@@ -1,0 +1,100 @@
+{
+  "ui_kit": "BARN Estate1.0.3, isolated HTML/CSS/SVG copies from the current main site and finalized city CTA; no new runtime libraries.",
+  "hero": {
+    "file": "assets/hero-team.webp",
+    "sha256": "611b0200a4698acef7488eb9e1233350cfc20f647f059fc1dfa25cb95253e2cd",
+    "native_size": [
+      1536,
+      1024
+    ],
+    "tool": "built-in image_gen",
+    "original_drive_url": "https://drive.google.com/file/d/1Wmk3BMO6FaMs_vdaeFX5B6zW-01Nl8rX/view?usp=drivesdk",
+    "private_native_source": "references/team-hero.png",
+    "private_prompt": "references/team-hero-prompt.txt",
+    "previous_generation_history": "https://github.com/daniilterekh-prog/barnes-sites/tree/fe3014bd/main-site/pages/vacancies/references/team-photos",
+    "treatment": "Wider framing of the accepted warm group photograph. An additional constant8% CSS shade is applied. No dropdown-dependent dimming."
+  },
+  "cta": {
+    "source_repository": "daniilterekh-prog/barn-estate-homepage-clone",
+    "source_commit": "f6fa1dec15d34c9e45baa12dafeb111083dde052",
+    "source_section": "gorodskaya-nedvizhimost/index.html .catalog-consultation",
+    "reference_url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/gorodskaya-nedvizhimost/",
+    "styles": "CTA-only CSSOM rules retaining original media queries and layers; document ancestor selectors scoped to career-invitation; inherited font weight400 copied explicitly",
+    "controller": "shared/cta-bleed.js; only roots selector restricted to .career-invitation .catalog-consultation",
+    "adaptation": "Career heading/description and existing HH link replace channel selector and contact fields. Hero and other sections unchanged.",
+    "assets": [
+      {
+        "source_path": "gorodskaya-nedvizhimost/assets/cta-ruslan-cutout.png",
+        "local_path": "assets/cta-ruslan-cutout.png",
+        "sha256": "205fdca0ec62349d368d95f71d0fc8c4a662bdc9c86d7349e0c224e729f7d209"
+      },
+      {
+        "source_path": "gorodskaya-nedvizhimost/assets/cta-ruslan-unified-v1.webp",
+        "local_path": "assets/cta-ruslan-composite.webp",
+        "sha256": "fc1838cec9214135f5909a86ce6039b67e1a2e38ce95d61f97705ea110002415"
+      },
+      {
+        "source_path": "gorodskaya-nedvizhimost/assets/4464b6998f60131d.webp",
+        "local_path": "assets/cta-ruslan-avatar.webp",
+        "sha256": "4464b6998f60131d99ee19b3887a776b896162ce4cbbf1cefd4bb7dcbf7a3986"
+      },
+      {
+        "source_path": "gorodskaya-nedvizhimost/assets/709121d4e9a3cf06.webp",
+        "local_path": "assets/cta-background.webp",
+        "sha256": "709121d4e9a3cf0688a44fffccbfcb4703a725726487a4b56e45623ebc958ce8"
+      }
+    ],
+    "portrait_selector_fix": "At min-width769px, the source50% width/82% height/max640px/contain/left-bottom rule is bound to the portrait class rather than an img.src substring; picture selects the PNG through currentSrc.",
+    "narrow_columns": "From769px the copy is centered in the right half, max560px, with24px minimum inner side spacing."
+  },
+  "assets": [
+    {
+      "file": "assets/TildaSans-Light.woff2",
+      "sha256": "f0f2c165784c72343618a7c2cbde00e45dbb9b09af5149984792f280cac9642e"
+    },
+    {
+      "file": "assets/TildaSans-Medium.woff2",
+      "sha256": "f716269e361f466570f37bc920988c619ddc8a7828c5949c1c56a731a320ab47"
+    },
+    {
+      "file": "assets/TildaSans-Regular.woff2",
+      "sha256": "2670dad44ca6c2a1b9bbdbf1af6d8db9173f2dbe31604e80bdf9599b55047d41"
+    },
+    {
+      "file": "assets/cta-background.webp",
+      "sha256": "709121d4e9a3cf0688a44fffccbfcb4703a725726487a4b56e45623ebc958ce8"
+    },
+    {
+      "file": "assets/cta-ruslan-avatar.webp",
+      "sha256": "4464b6998f60131d99ee19b3887a776b896162ce4cbbf1cefd4bb7dcbf7a3986"
+    },
+    {
+      "file": "assets/cta-ruslan-composite.webp",
+      "sha256": "fc1838cec9214135f5909a86ce6039b67e1a2e38ce95d61f97705ea110002415"
+    },
+    {
+      "file": "assets/cta-ruslan-cutout.png",
+      "sha256": "205fdca0ec62349d368d95f71d0fc8c4a662bdc9c86d7349e0c224e729f7d209"
+    },
+    {
+      "file": "assets/hero-team.webp",
+      "sha256": "611b0200a4698acef7488eb9e1233350cfc20f647f059fc1dfa25cb95253e2cd"
+    },
+    {
+      "file": "assets/logo.svg",
+      "sha256": "25d4a2a32ee6f85768e04db21d646d048ccd61ebd4d214d6f54737491d2fc5e0"
+    },
+    {
+      "file": "assets/max.svg",
+      "sha256": "5caa61a4b0731d0d89421b4fb24f41433025e5aea59155a14cf3a3fada6c9174"
+    },
+    {
+      "file": "assets/telegram.svg",
+      "sha256": "d740699a25af5d0677344e14bf3456d3d39c4d6da8633465086ccaf176fa7f24"
+    },
+    {
+      "file": "assets/whatsapp.svg",
+      "sha256": "6870171eea83ea80607e3a4e9b5de7ed724da07aa3af2de9c7b50e7408926a2b"
+    }
+  ]
+}

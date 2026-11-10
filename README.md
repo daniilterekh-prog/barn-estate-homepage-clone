@@ -1,5 +1,7 @@
 # BARN Estate — страницы основного сайта
 
+- [Вакансии: постоянный комплект разработчику](handoff/vacancies/README.md) · [ZIP](handoff/vacancies/vacancies-developer.zip) · [Превью комплекта](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/handoff/vacancies/html/).
+
 - [BARN Estate Club: постоянный пакет разработчику](handoff/barn-club/README.md) · [ZIP](handoff/barn-club/barn-club.zip).
 
 [Правило хранения пакетов разработчику](handoff/RULES.md): постоянные папки handoff/slug, одна актуальная версия.
