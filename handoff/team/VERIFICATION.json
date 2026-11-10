@@ -1,0 +1,56 @@
+{
+  "date": "2026-11-10T10:00:06.324Z",
+  "url": "http://127.0.0.1:8281/html/index.html",
+  "original": "http://127.0.0.1:8279/",
+  "widths": [
+    320,
+    360,
+    375,
+    390,
+    414,
+    540,
+    768,
+    769,
+    1024,
+    1200,
+    1280,
+    1281,
+    1440,
+    1920,
+    2560,
+    3840
+  ],
+  "parity": [
+    {
+      "width": 390,
+      "pixelIdentical": true,
+      "maxChannelDelta": 0,
+      "changedChannels": 0,
+      "sha256": "0508dd467377397d0e8d356b83a758a4efd0018e596e2973d264e92700c8e75d"
+    },
+    {
+      "width": 1440,
+      "pixelIdentical": false,
+      "maxChannelDelta": 1,
+      "changedChannels": 18,
+      "sha256": "ebaa93a8cff7fe382e485bb9a879d4c15acadde0e3a68e5d043fb5b36e8e5828"
+    },
+    {
+      "width": 1920,
+      "pixelIdentical": true,
+      "maxChannelDelta": 0,
+      "changedChannels": 0,
+      "sha256": "904424173229b43f56c979587b7365cdafa96f468b65f88f91527e23352fc8a1"
+    }
+  ],
+  "flows": [
+    "all 9 header dropdowns",
+    "search, filters, empty state and reset",
+    "homepage form and validation",
+    "mobile menu, Escape and contact panel",
+    "all 27 people available without JS"
+  ],
+  "errors": [],
+  "failed": [],
+  "externalRequests": []
+}
