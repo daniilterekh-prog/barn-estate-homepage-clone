@@ -48,23 +48,6 @@ document.querySelectorAll('[data-room]').forEach(button => button.addEventListen
   const count = document.querySelectorAll('[data-format]:not([hidden])').length;
   document.querySelector('#format-status').textContent = `Примеров форматов: ${count} · наличие и стоимость уточняются`;
 }));
-document.querySelector('#annotations').addEventListener('click', event => {
-  const enabled = document.body.classList.toggle('show-structure');
-  const button = event.currentTarget;
-  button.setAttribute('aria-pressed', String(enabled));
-  button.innerHTML = enabled ? 'Скрыть структуру <span aria-hidden="true">−</span>' : 'Показать структуру <span aria-hidden="true">＋</span>';
-});
-const menuTrigger = document.querySelector('.menu-trigger');
-const menu = document.querySelector('#mobile-menu');
-menuTrigger.addEventListener('click', () => {
-  menu.hidden = !menu.hidden;
-  menuTrigger.setAttribute('aria-expanded', String(!menu.hidden));
-});
-menu.querySelectorAll('a').forEach(link => link.addEventListener('click', () => { menu.hidden = true; menuTrigger.setAttribute('aria-expanded', 'false'); }));
-document.addEventListener('keydown', event => {
-  if (event.key === 'Escape' && !menu.hidden) { menu.hidden = true; menuTrigger.setAttribute('aria-expanded', 'false'); menuTrigger.focus(); }
-});
-
 const mapButton = document.querySelector('#load-map');
 mapButton.addEventListener('click', () => {
   const panel = document.querySelector('.map-panel');

@@ -1,0 +1,32 @@
+/* Embedding only. Header geometry/artwork: canonical owner-header + media-header. */
+html{scrollbar-gutter:stable}
+.layout__header{position:absolute;inset:0 0 auto;z-index:40;color:#fff}
+.layout__header.is-menu-open{z-index:1301}
+html body.barnes-header-template .layout__header>.site-header{height:auto;background:transparent;color:#fff;position:static}
+html body.barnes-header-template .layout__header>.site-header.site-header--menu-open{position:fixed;background:#fff;color:#1e1e1e}
+.site-header__inner{position:relative}
+.zhk-header-breadcrumbs{position:absolute;left:0;right:0;bottom:7px;display:flex;align-items:center;gap:8px;color:rgba(255,255,255,.75);font:300 17px/18px "Tilda Sans",sans-serif;white-space:nowrap}
+.zhk-header-breadcrumbs a:hover{color:inherit;text-decoration:underline}
+.site-header--menu-open .zhk-header-breadcrumbs{display:none}
+.owner-sale-sticky{position:fixed;top:0;left:0;right:0;background:#fff;transform:translateY(-100%);opacity:0;visibility:hidden}
+.owner-sale-sticky--visible{transform:translateY(0);opacity:1;visibility:visible}
+.site-menu{position:fixed;z-index:1300;top:var(--zhk-menu-top,110px);left:0;right:0;bottom:0;overflow:auto;background:#fff;color:#1e1e1e;padding:36px 0 60px;overscroll-behavior:contain}
+#zhk-site-menu-nav{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px 48px}
+.zhk-menu-section{border-top:1px solid var(--line);border-bottom:0;align-self:start}
+.zhk-menu-section summary{font-size:20px}
+.zhk-menu-section a{display:block;min-height:38px;padding:7px 0;font-size:16px}
+.zhk-menu-section a:hover{text-decoration:underline;text-underline-offset:4px}
+.zhk-menu-project{margin-top:36px;padding-top:24px;border-top:1px solid var(--line)}
+.zhk-menu-project .eyebrow{margin-bottom:12px}
+.zhk-menu-project ul{display:flex;gap:24px;flex-wrap:wrap;list-style:none;margin:0;padding:0}
+.zhk-menu-project a{display:block;padding-block:10px;font-size:16px}
+body.has-site-menu{overflow:hidden}
+body.has-site-menu .mobile-action{display:none}
+/* The same first-screen heights as the owner/media kit; laptop policy is copied unchanged. */
+.hero{height:820px;min-height:0;max-height:none}
+.hero-inner{padding-top:190px;padding-bottom:56px;justify-content:flex-end}
+.hero-copy{margin-top:0}
+@media(min-width:1441px){.hero{height:960px}}
+@media(max-width:1024px){.zhk-header-breadcrumbs{display:none}.hero-inner{padding-top:140px}}
+@media(max-width:767px){#zhk-site-menu-nav{grid-template-columns:1fr}.site-menu{padding-top:16px}.zhk-menu-section summary{font-size:18px}.hero{height:820px}}
+@media(max-width:540px){.hero{height:560px}.hero-inner{padding-top:110px;padding-bottom:40px}.hero-copy{margin-top:0}.hero .actions{margin-top:24px}.site-menu .wrap{padding-inline:22px}}
