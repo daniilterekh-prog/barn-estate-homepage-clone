@@ -1,0 +1,133 @@
+{
+  "date": "2026-11-10",
+  "url": "http://127.0.0.1:4381/main-site/handoff/barn-club/html/",
+  "widths": [
+    {
+      "width": 320,
+      "overflow": false,
+      "brokenImages": [],
+      "headingSize": "22px",
+      "buttonHeight": 58,
+      "gutter": "22px",
+      "footerGutter": "22px",
+      "heroHeight": 560
+    },
+    {
+      "width": 360,
+      "overflow": false,
+      "brokenImages": [],
+      "headingSize": "22px",
+      "buttonHeight": 58,
+      "gutter": "22px",
+      "footerGutter": "22px",
+      "heroHeight": 560
+    },
+    {
+      "width": 390,
+      "overflow": false,
+      "brokenImages": [],
+      "headingSize": "22px",
+      "buttonHeight": 58,
+      "gutter": "22px",
+      "footerGutter": "22px",
+      "heroHeight": 560
+    },
+    {
+      "width": 540,
+      "overflow": false,
+      "brokenImages": [],
+      "headingSize": "22px",
+      "buttonHeight": 58,
+      "gutter": "22px",
+      "footerGutter": "22px",
+      "heroHeight": 560
+    },
+    {
+      "width": 768,
+      "overflow": false,
+      "brokenImages": [],
+      "headingSize": "38px",
+      "buttonHeight": 70,
+      "gutter": "24px",
+      "footerGutter": "24px",
+      "heroHeight": 820
+    },
+    {
+      "width": 1024,
+      "overflow": false,
+      "brokenImages": [],
+      "headingSize": "38px",
+      "buttonHeight": 70,
+      "gutter": "40.8889px",
+      "footerGutter": "40.8889px",
+      "heroHeight": 820
+    },
+    {
+      "width": 1280,
+      "overflow": false,
+      "brokenImages": [],
+      "headingSize": "38px",
+      "buttonHeight": 70,
+      "gutter": "57.7777px",
+      "footerGutter": "57.7777px",
+      "heroHeight": 620
+    },
+    {
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": [],
+      "headingSize": "38px",
+      "buttonHeight": 70,
+      "gutter": "68.3333px",
+      "footerGutter": "68.3333px",
+      "heroHeight": 620
+    },
+    {
+      "width": 1920,
+      "overflow": false,
+      "brokenImages": [],
+      "headingSize": "44px",
+      "buttonHeight": 70,
+      "gutter": "100px",
+      "footerGutter": "100px",
+      "heroHeight": 760
+    },
+    {
+      "width": 2560,
+      "overflow": false,
+      "brokenImages": [],
+      "headingSize": "44px",
+      "buttonHeight": 70,
+      "gutter": "0px",
+      "footerGutter": "0px",
+      "heroHeight": 760
+    },
+    {
+      "width": 3840,
+      "overflow": false,
+      "brokenImages": [],
+      "headingSize": "44px",
+      "buttonHeight": 70,
+      "gutter": "0px",
+      "footerGutter": "0px",
+      "heroHeight": 760
+    }
+  ],
+  "interactions": [
+    "Menu: keyboard, Escape, focus return, anchor, close; sticky header after hero",
+    "Mobile contacts: keyboard, Escape, focus return, mutual exclusion with menu",
+    "Reduced motion disables smooth scrolling",
+    "Form: required fields, whitespace name, consent, draft recipient/subject/body, honest status; no email sent"
+  ],
+  "accessibility": [
+    {
+      "width": 390,
+      "violations": []
+    },
+    {
+      "width": 1440,
+      "violations": []
+    }
+  ],
+  "errors": []
+}
