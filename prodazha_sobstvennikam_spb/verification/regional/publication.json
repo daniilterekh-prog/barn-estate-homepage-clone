@@ -1,0 +1,25 @@
+{
+  "checkedAt": "2026-11-10T13:25:52.204848+00:00",
+  "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/prodazha_sobstvennikam_spb/?v=editorial-20261110",
+  "liveVerified": true,
+  "pageChangeCommit": "b819ab30291e8b77f015eef134d75081d76d67fd",
+  "deploymentCommit": "61abfd4f1a3d937eb901dc26a7a12fed7068ebdd",
+  "deploymentRun": "https://github.com/daniilterekh-prog/barn-estate-homepage-clone/actions/runs/42823599462",
+  "deploymentStatusAtCheck": "syncing_files",
+  "deploymentNote": "The live page and all new images passed browser checks while GitHub was still reporting syncing_files. The deployment commit contains the page change; no page files changed between these commits.",
+  "assetLibraryCommit": "c78d797",
+  "canonicalSourceCommit": "512cdac",
+  "widths": [
+    320,
+    390,
+    768,
+    1440,
+    1920,
+    2560
+  ],
+  "newEditorialImages": 11,
+  "browserErrors": 0,
+  "failedSameOriginRequests": 0,
+  "horizontalOverflow": false,
+  "report": "live/report.json"
+}
