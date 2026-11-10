@@ -716,8 +716,8 @@ a:focus-visible,button:focus-visible {
 
   .office-tabs {
     display: flex;
-    justify-content: space-between;
-    gap: 0;
+    justify-content: flex-start;
+    gap: clamp(2px, calc((100vw - 315px) / 2), 16px);
     margin-bottom: 28px;
     overflow-x: auto;
     overflow-y: hidden;

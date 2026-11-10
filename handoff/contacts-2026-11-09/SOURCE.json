@@ -1,7 +1,7 @@
 {
   "date": "2026-11-10",
   "repository": "daniilterekh-prog/barnes-sites",
-  "commit": "cc64c86400b7c464331f0a7695a48b05542d3485",
+  "commit": "cd19a0bbe06face41be7211064d8ad09cf52f085",
   "source": "main-site/pages/contacts/",
   "preview": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/contacts/",
   "transform": "Local resource paths only. JavaScript, assets and content data copied byte-for-byte. HTML fragments extracted from the exported full page.",
@@ -49,9 +49,9 @@
     {
       "source": "main-site/pages/contacts/contacts.css",
       "file": "code/css/contacts.css",
-      "sourceSha256": "7d0f4fac1daff98cb9b4acc17d633081a6ff8b497b8774149a85ea23389063c5",
-      "sha256": "1a8f3df887e9662492b8062a62c71f07b141e35a0f170e2759c86ebd15bd5f49",
-      "bytes": 16637,
+      "sourceSha256": "dd6c38982364e74b7d1474720a2b01e92004c3b116fb47409d6a1544ea753221",
+      "sha256": "d98eaabc5b9c6ba4ca9224a57e58cc0496b04d31fdf9b5dea200d41f439087f0",
+      "bytes": 16676,
       "changedPathsOnly": true
     },
     {
@@ -97,9 +97,9 @@
     {
       "source": "main-site/pages/contacts/index.html",
       "file": "code/html/index.html",
-      "sourceSha256": "0cfbc003bc01f863c1e2838cca29f4eac7aa9800601451ca3ce9369e4f6bc005",
-      "sha256": "0653bd597f725de7019a1b48abefda29354316d92615364421937fd366821c3a",
-      "bytes": 39601,
+      "sourceSha256": "ae31993a5b9565fbe326690dd983370a74289c157f4deb6007a4efb60a43dc76",
+      "sha256": "122482570ab9b73eabaeacff79adc13eaede7fe5c6fa54bdd0d7f3105a0d72ef",
+      "bytes": 39602,
       "changedPathsOnly": true
     },
     {
@@ -221,7 +221,7 @@
     },
     {
       "owner": "index.html",
-      "before": "contacts.css?v=edge-office-tabs-20261109-1",
+      "before": "contacts.css?v=compact-left-tabs-20261110-1",
       "after": "../css/contacts.css"
     },
     {
