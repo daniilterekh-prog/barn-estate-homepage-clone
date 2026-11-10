@@ -121,9 +121,12 @@ html body.career-page .mh-contact-panel:not([hidden]) { display: flex !important
   :root { --career-heading: 44px; --career-hero-height: 960px; --career-hero-bottom: 72px; --home-button-font: 19px; --home-button-pad: 47px; }
   .career-hero__description { margin-top: 20px; }
 }
+@media (min-width:1281px) {
+  .career-hero__photo { object-position: center calc(65% - 32px); }
+}
 @media (min-width:1921px) {
   :root { --home-gutter: 0px; }
-  .career-hero__photo { object-position: center 50%; }
+  .career-hero__photo { object-position: center calc(50% - 32px); }
 }
 /* Exactly the current main-page laptop policy, including height-sensitive wide desktops. */
 @media (min-width:1025px) and (max-width:1919px), (min-width:1920px) and (max-height:1000px) {
