@@ -399,7 +399,7 @@
       ['Презентация', 'presentation'],
       ['Команда', 'team'],
       ['Этапы', 'stages'],
-      ['Направления', 'property-types']
+
     ].map(function (item) {
       return '<li class="owner-sale-sticky__item"><a class="owner-sale-sticky__link" href="#' + item[1] + '">' + item[0] + '</a></li>';
     }).join('') + '<li class="owner-sale-sticky__item owner-sale-sticky__item--contacts"><button class="owner-sale-sticky__contact-toggle" type="button" aria-expanded="false" aria-controls="owner-sale-sticky-contacts" aria-label="Показать способы связи"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.5 9.8 9.8 0 0 1-4-.9L3 21l1.7-4.6A8.4 8.4 0 1 1 21 11.5Z"></path><path d="M8 12h.01M12 12h.01M16 12h.01"></path></svg></button></li>';
@@ -440,7 +440,7 @@
     menu = document.createElement('aside');
     menu.className = 'owner-sale-clone-menu';
     menu.setAttribute('hidden', '');
-    menu.innerHTML = '<div class="owner-sale-clone-menu__inner"><button class="owner-sale-clone-menu__close" type="button" aria-label="Закрыть меню">×</button><nav aria-label="Навигация"><a href="#stages">Процесс продажи объекта</a><a href="#about">О BARN Estate</a><a href="#property-types">Виды недвижимости</a><a href="#request">Оставить заявку</a><a href="#newsletter-title">Статьи</a></nav><a class="owner-sale-clone-menu__phone" href="tel:+74992724872">+7 (499) 272-48-72</a></div>';
+    menu.innerHTML = '<div class="owner-sale-clone-menu__inner"><button class="owner-sale-clone-menu__close" type="button" aria-label="Закрыть меню">×</button><nav aria-label="Навигация"><a href="#stages">Процесс продажи объекта</a><a href="#about">О BARN Estate</a><a href="#request">Оставить заявку</a><a href="#newsletter-title">Статьи</a></nav><a class="owner-sale-clone-menu__phone" href="tel:+74992724872">+7 (499) 272-48-72</a></div>';
     document.body.appendChild(menu);
     menu.querySelector('.owner-sale-clone-menu__close').addEventListener('click', function () {
       menu.setAttribute('hidden', '');
@@ -453,7 +453,7 @@
     const expert = document.createElement('aside');
     expert.className = 'floating-expert floating-expert--gorodskaya';
     expert.setAttribute('aria-label', 'Людмила Белоусова');
-    expert.innerHTML = '<button type="button" class="floating-expert__card" aria-haspopup="dialog"><span class="floating-expert__avatar"><img src="assets/ludmila-belousova-bw.webp" alt="Людмила Белоусова" width="72" height="72" loading="lazy" decoding="async"></span><span class="floating-expert__content"><span class="floating-expert__label">Руководитель филиала BARN Estate в Санкт-Петербурге</span><span class="floating-expert__title">Задать вопрос эксперту</span><span class="floating-expert__name">Людмила Белоусова</span></span></button><button type="button" class="floating-expert__close" aria-label="Скрыть карточку Людмила Белоусова"></button>';
+    expert.innerHTML = '<button type="button" class="floating-expert__card" aria-haspopup="dialog"><span class="floating-expert__avatar"><img src="assets/ludmila-belousova-hq-avatar.webp" alt="Людмила Белоусова" width="72" height="72" loading="lazy" decoding="async"></span><span class="floating-expert__content"><span class="floating-expert__label">Руководитель филиала BARN Estate в Санкт-Петербурге</span><span class="floating-expert__title">Задать вопрос эксперту</span><span class="floating-expert__name">Людмила Белоусова</span></span></button><button type="button" class="floating-expert__close" aria-label="Скрыть карточку Людмила Белоусова"></button>';
     expert.querySelectorAll('*').forEach(function (element) {
       element.setAttribute('data-v-cd0a1259', '');
     });

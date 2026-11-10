@@ -16,8 +16,10 @@ const base=process.env.CHECK_URL||'http://127.0.0.1:8769/barn-estate-homepage-cl
    assert.equal(await page.locator('.site-menu__nav-title').evaluateAll(headings=>headings.filter(e=>e.textContent.trim()==='Санкт-Петербург').length),1,'В мобильном меню одна группа Петербурга');
    assert.match(await page.locator('.floating-expert').innerText(),/ЛЮДМИЛА БЕЛОУСОВА/i);
    assert.equal(await page.locator('a[href^="tel:"]').evaluateAll(links=>links.every(a=>a.href.replace(/\D/g,'')==='74992724872')),true,'Все телефонные ссылки должны совпадать с главной СПб');
-   assert.equal(await page.locator('.owner-sale-types__card').count(),4);
-   assert.equal(await page.locator('.owner-sale-types__card').evaluateAll(links=>links.every(a=>a.hash==='#request'||a.hostname==='barnestate-spb.ru')),true);
+   assert.equal(await page.locator('.owner-sale-types').count(),0,'Блок направлений должен быть удалён');
+   assert.equal(await page.locator('a[href="#property-types"]').count(),0,'Ссылок на удалённый блок быть не должно');
+   assert.match(await page.locator('.catalog-consultation__image').getAttribute('src'),/ludmila.*hq/);
+   assert.match(await page.locator('.catalog-consultation__media').evaluate(e=>getComputedStyle(e).backgroundImage),/cta-residence/);
    const hero=page.locator('.owner-sale-hero img').first();assert.match(await hero.getAttribute('src'),/zen/);assert.equal(await hero.evaluate(i=>i.complete&&i.naturalWidth>0),true);
    const copyButton=page.locator('.about-company__read-more');await copyButton.scrollIntoViewIfNeeded();await copyButton.click();
    assert.doesNotMatch(await page.locator('.about-company').innerText(),/Петровк|Москв|Подмосков/);
@@ -29,12 +31,14 @@ const base=process.env.CHECK_URL||'http://127.0.0.1:8769/barn-estate-homepage-cl
    await dialog.locator('button[type=submit]').click();assert.match(await dialog.locator('[role=status]').innerText(),/имя/);
    await page.keyboard.press('Escape');await dialog.waitFor({state:'detached'});
    assert.equal(await page.locator('.owner-sale-hero__button').evaluate(e=>e===document.activeElement),true,'Закрытие формы возвращает фокус');
-   const direction=page.locator('.owner-sale-types__card').nth(1);await direction.scrollIntoViewIfNeeded();await direction.click();await dialog.waitFor({state:'visible'});assert.match(await dialog.locator('.expert-dialog__summary').innerText(),/загородный дом/);await page.keyboard.press('Escape');await dialog.waitFor({state:'detached'});
+   await page.locator('#request').scrollIntoViewIfNeeded();
+   assert.equal(await page.locator('.catalog-consultation__media').evaluate(e=>e.getBoundingClientRect().width>=document.body.getBoundingClientRect().width-1),true,'Фотофон CTA должен занимать всю ширину страницы');
+   await page.screenshot({path:path.join(process.env.REPORT_DIR||__dirname,width+'-consultation.webp'),animations:'disabled'});
    await page.evaluate(()=>scrollTo(0,0));await page.waitForTimeout(300);
    assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),true);
    assert.deepEqual(errors,[]);assert.deepEqual(failed,[]);
    const directory=process.env.REPORT_DIR||__dirname;fs.mkdirSync(directory,{recursive:true});await page.screenshot({path:path.join(directory,width+'-hero.webp'),animations:'disabled'});
-   report.push({width,h1:await page.locator('h1').innerText(),expert:await page.locator('.floating-expert__name').innerText(),errors,failed,dialogValidation:true,focusRestored:true,overflow:false});await page.close();
+   report.push({width,h1:await page.locator('h1').innerText(),expert:await page.locator('.floating-expert__name').innerText(),errors,failed,dialogValidation:true,focusRestored:true,directionsRemoved:true,fullWidthInteriorBackground:true,portrait:"ludmila-belousova-hq",overflow:false});await page.close();
   }
   fs.writeFileSync(path.join(process.env.REPORT_DIR||__dirname,'report.json'),JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify(report,null,2));
  }finally{await browser.close()}

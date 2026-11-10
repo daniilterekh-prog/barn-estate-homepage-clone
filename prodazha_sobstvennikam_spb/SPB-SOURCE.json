@@ -48,8 +48,8 @@
   "expert": {
     "name": "Людмила Белоусова",
     "role": "Руководитель филиала BARN Estate в Санкт-Петербурге",
-    "portrait": "assets/ludmila-belousova-bw.webp",
-    "canonicalPortrait": "https://github.com/daniilterekh-prog/barnes-assets/blob/main/portraits/ludmila-belousova/2026-11-09/ludmila-belousova-bw-v1.png",
+    "portrait": "assets/ludmila-belousova-hq-avatar.webp",
+    "canonicalPortrait": "https://github.com/daniilterekh-prog/barnes-assets/blob/main/portraits/ludmila-belousova/2026-11-10/ludmila-belousova-hq.png",
     "roleSource": "Уточнение пользователя в чате,10.11.2026: «Белоусова руководитель филиала барн эстейт спб»",
     "updated": "2026-11-10",
     "placement": [
@@ -58,7 +58,8 @@
       "widget-contact-quiz"
     ],
     "profileUrl": null,
-    "note": "По просьбе пользователя установлен ранее подготовленный чёрно-белый вариант; лицо заново не генерировалось. Персональный URL СПб не найден, ссылка на чужой профиль не добавлена."
+    "note": "Новый генеративный портрет по поручению пользователя 10.11.2026, исходное фото сохранено в библиотеке.",
+    "referencePortrait": "https://github.com/daniilterekh-prog/barnes-assets/blob/main/portraits/ludmila-belousova/2026-11-09/ludmila-belousova-bw-v1.png"
   },
   "catalogSource": "home-spb/spb-catalog.json",
   "contacts": {
@@ -111,5 +112,21 @@
       "max.svg",
       "telegram.svg"
     ]
-  }
+  },
+  "directionsBlock": "Удалён по поручению пользователя 10.11.2026",
+  "ctaBackground": {
+    "reference": "kommercheskaya-nedvizhimost/assets/cta-consultation-interior.webp",
+    "local": "assets/cta-residence.webp",
+    "treatment": "Существующее интерьерное изображение скопировано без перерисовки; CSS cover и затемнение."
+  },
+  "currentPortraitFiles": [
+    {
+      "path": "assets/ludmila-belousova-hq.webp",
+      "sha256": "962dc256c6c0ba442ee5e766812e316882bbc0219e115872d060a6843d6b4578"
+    },
+    {
+      "path": "assets/ludmila-belousova-hq-avatar.webp",
+      "sha256": "93bc2e87dd650283be917ca399dd030172b2d08bb7be8446f04a9a0a509bb73e"
+    }
+  ]
 }

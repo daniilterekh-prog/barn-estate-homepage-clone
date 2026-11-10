@@ -18,6 +18,5 @@ function update(){
   if(sibling){group.replaceWith(sibling)}else{heading.textContent='Санкт-Петербург'}
  }
 }
-document.addEventListener('click',event=>{const card=event.target.closest('.owner-sale-types__card');if(!card||card.getAttribute('href')!=='#request')return;event.preventDefault();event.stopImmediatePropagation();window.__barnesExpertDialog?.open({trigger:card,context:{directionId:card.dataset.direction,directionName:card.querySelector('h3').textContent}})},true);
 update();new MutationObserver(update).observe(document.body,{childList:true,subtree:true});
 })();
