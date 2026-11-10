@@ -12,7 +12,7 @@
   document.head.appendChild(headerStyles);
 
   page.querySelectorAll('.catalog-consultation__subtitle, .catalog-consultation__mobile-title').forEach(function (title) {
-    title.textContent = 'Расскажите об объекте эксперту BARN Estate';
+    title.textContent = 'Обсудим продажу вашей недвижимости в Петербурге';
   });
   page.querySelectorAll('.catalog-consultation__lead, .catalog-consultation__mobile-lead').forEach(function (lead) {
     lead.hidden = true;
@@ -50,12 +50,11 @@
     header.classList.remove('site-header--no-nav');
     if (!inner.querySelector(':scope > .site-header__nav')) {
       const items = [
-        ['Москва', 'https://barn-estate.ru/gorodskaya-nedvizhimost/', [['Вторичная', 'https://barn-estate.ru/vtorichnaya-nedvizhimost/'], ['Арендовать', 'https://barn-estate.ru/arendovat/'], ['Новостройки', 'https://barn-estate.ru/novostroyki/'], ['Жилые комплексы', 'https://barn-estate.ru/zhilye-kompleksy/'], ['Квартиры', 'https://barn-estate.ru/gorodskaya-nedvizhimost/kvartiry/'], ['Апартаменты', 'https://barn-estate.ru/gorodskaya-nedvizhimost/apartamenty/'], ['Пентхаусы', 'https://barn-estate.ru/kupit-penthausy-v-moskve/'], ['Застройщики', 'https://barn-estate.ru/zastroyshchiki/']]],
+        ['Санкт-Петербург', 'https://barnestate-spb.ru', [['Вторичная', 'https://barnestate-spb.ru/gorodskaya-nedvizhimost/vtorichnaya-nedvizhimost/'], ['Новостройки', 'https://barnestate-spb.ru/gorodskaya-nedvizhimost/novostroyki/'], ['Загородная', 'https://barnestate-spb.ru/zagorodnaya-nedvizhimost/'], ['Коммерческая', 'https://barnestate-spb.ru/kommercheskaya-nedvizhimost/'], ['Эксклюзив', 'https://barnestate-spb.ru/exclusive/'], ['Апартаменты', 'https://barnestate-spb.ru/gorodskaya-nedvizhimost/filter/type_immovables-is-apartamenty/'], ['Пентхаус', 'https://barnestate-spb.ru/gorodskaya-nedvizhimost/filter/type_immovables-is-penthausy/']]],
         ['Загородная', 'https://barn-estate.ru/zagorodnaya-nedvizhimost/', [['Купить', 'https://barn-estate.ru/zagorodnaya-nedvizhimost/'], ['Снять', 'https://barn-estate.ru/snyat-zagorodnuyu-nedvizhimost/'], ['Коттеджные поселки', 'https://barn-estate.ru/kottedzhnye-poselki/']]],
         ['Коммерческая', 'https://barn-estate.ru/kommercheskaya-nedvizhimost/', [['Купить', 'https://barn-estate.ru/kommercheskaya-nedvizhimost/'], ['Снять', 'https://barn-estate.ru/kommercheskaya-nedvizhimost/arendovat/'], ['Здания', 'https://barn-estate.ru/kommercheskaya-nedvizhimost/zdanie/'], ['Бизнес-центры', 'https://barn-estate.ru/kommercheskaya-nedvizhimost/business-center/'], ['Особняки', 'https://barn-estate.ru/kommercheskaya-nedvizhimost/osobnyak/'], ['Арендный бизнес', 'https://barn-estate.ru/kommercheskaya-nedvizhimost/arendnyj-biznes/']]],
         ['Курортная', 'https://barn-estate.ru/kurortnaya/', [['Инвестиции', 'https://barn-estate.ru/media/tag/investitsii-v-kurortnuyu-nedvizhimost-rossii/'], ['Алтай', 'https://barn-estate.ru/altai/'], ['Архыз', 'https://barn-estate.ru/arhyz/'], ['Сочи', 'https://barn-estate.ru/sochi/']]],
         ['Зарубежная', 'https://barn-estate.ru/mezhdunarodnaya-nedvizhimost/', [['ОАЭ', 'https://barn-estate.ru/oae/'], ['Турция', 'https://barn-estate.ru/mezhdunarodnaya-nedvizhimost/turtsiya/'], ['Таиланд', 'https://barn-estate.ru/tailand/'], ['Бали', 'https://barn-estate.ru/zhilye-kompleksy-indonesia/'], ['Испания', 'https://barn-estate.ru/ispaniya/'], ['Италия', 'https://barn-estate.ru/italiya/'], ['Португалия', 'https://barn-estate.ru/portugaliya/'], ['Франция', 'https://barn-estate.ru/frantsiya/'], ['Оман', 'https://barn-estate.ru/oman/'], ['Жилые комплексы', 'https://barn-estate.ru/mezhdunarodnaya-nedvizhimost-zhilye-kompleksy/']]],
-        ['Санкт-Петербург', 'https://barnes-spb.ru', [['Вторичная', 'https://barnes-spb.ru/gorodskaya-nedvizhimost/vtorichnaya-nedvizhimost/'], ['Новостройки', 'https://barnes-spb.ru/gorodskaya-nedvizhimost/novostroyki/'], ['Загородная', 'https://barnes-spb.ru/zagorodnaya-nedvizhimost/'], ['Коммерческая', 'https://barnes-spb.ru/kommercheskaya-nedvizhimost/'], ['Эксклюзив', 'https://barnes-spb.ru/exclusive/'], ['Апартаменты', 'https://barnes-spb.ru/gorodskaya-nedvizhimost/filter/type_immovables-is-apartamenty/'], ['Пентхаус', 'https://barnes-spb.ru/gorodskaya-nedvizhimost/filter/type_immovables-is-penthausy/']]],
         ['Медиа', 'https://barn-estate.ru/media/', [['Блог', 'https://barn-estate.ru/media/blog/'], ['Новости', 'https://barn-estate.ru/media/novosti/'], ['Вебинары и видео', 'https://barn-estate.ru/media/vebinary-i-video/'], ['Аналитика рынка', 'https://barn-estate.ru/media/analitika/'], ['Искусство жить', 'https://barn-estate.ru/media/stil-zhizni/'], ['Кейсы', 'https://barn-estate.ru/media/cases/'], ['Журнал', 'https://barn-estate.ru/zhurnaly/']]],
         ['О BARN Estate', 'https://barn-estate.ru/mir-barnes/', [['Контакты', 'https://barn-estate.ru/contacts/'], ['Партнерам', 'https://barn-estate.ru/for-partners/'], ['BARN Estate Club', 'https://barn-estate.ru/barnes-club/'], ['СМИ о нас', 'https://barn-estate.ru/novosti/smi-o-nas/'], ['Мероприятия', 'https://barn-estate.ru/novosti/meropriyatiya/'], ['Команда', 'https://barn-estate.ru/team/'], ['Вакансии', 'https://barn-estate.ru/vacancies/'], ['Стиль жизни', 'https://barn-estate.ru/stily-zhizni/']]],
         ['Собственникам', 'https://barn-estate.ru/sobstvennikam/', [['Продажа', 'https://barn-estate.ru/prodazha_sobstvennikam/'], ['Аренда', 'https://barn-estate.ru/arenda_sobstvennikam/']]]
@@ -81,9 +80,9 @@
     contacts.className = 'owner-sale-hero-contacts';
     contacts.setAttribute('aria-label', 'Способы связи');
     [
-      ['WhatsApp', 'https://wa.me/79252621650', '../pictures/office-contact/whatsapp.svg'],
-      ['MAX', 'https://max.ru/join/AWj8ibiCtAPOJOlulMGNkykKGz_prXVWg-IQK1KpUG8', '../pictures/office-contact/max.svg'],
-      ['Telegram', 'https://t.me/art_de_vivre_barnes', '../pictures/office-contact/telegram.svg']
+      ['WhatsApp', 'https://wa.me/79252621650', 'assets/whatsapp.svg'],
+      ['MAX', 'https://max.ru/join/AWj8ibiCtAPOJOlulMGNkykKGz_prXVWg-IQK1KpUG8', 'assets/max.svg'],
+      ['Telegram', 'https://t.me/art_de_vivre_barnes', 'assets/telegram.svg']
     ].forEach(function (item) {
       const link = document.createElement('a');
       const icon = document.createElement('img');
@@ -99,7 +98,7 @@
       contacts.appendChild(link);
     });
     phone.classList.add('owner-sale-hero-contact', 'owner-sale-hero-contact--phone');
-    phone.setAttribute('aria-label', 'Позвонить по номеру +7 495 182-50-79');
+    phone.setAttribute('aria-label', 'Позвонить по номеру +7 (499) 272-48-72');
     contacts.appendChild(phone);
     right.appendChild(contacts);
   };
@@ -143,7 +142,7 @@
       ['.owner-sale-stages__title', 'КАК ПРОХОДИТ СДЕЛКА'],
       ['.owner-sale-strategy__title', 'СТРАТЕГИЯ BARN Estate'],
       ['.owner-sale-presentation__title', 'СТРАТЕГИЯ ПРЕЗЕНТАЦИИ'],
-      ['.about-company__title', 'BARN Estate / МОСКВА'],
+      ['.about-company__title', 'BARN Estate / САНКТ-ПЕТЕРБУРГ'],
     ].forEach(function (item) {
       const title = document.querySelector(item[0]);
       const container = title && title.parentElement;
@@ -372,9 +371,9 @@
       messengers.className = 'owner-sale-sticky__messengers';
       messengers.setAttribute('aria-label', 'Способы связи');
       [
-        ['WhatsApp', 'https://wa.me/79252621650', '../pictures/office-contact/whatsapp.svg'],
-        ['MAX', 'https://max.ru/join/AWj8ibiCtAPOJOlulMGNkykKGz_prXVWg-IQK1KpUG8', '../pictures/office-contact/max.svg'],
-        ['Telegram', 'https://t.me/art_de_vivre_barnes', '../pictures/office-contact/telegram.svg']
+        ['WhatsApp', 'https://wa.me/79252621650', 'assets/whatsapp.svg'],
+        ['MAX', 'https://max.ru/join/AWj8ibiCtAPOJOlulMGNkykKGz_prXVWg-IQK1KpUG8', 'assets/max.svg'],
+        ['Telegram', 'https://t.me/art_de_vivre_barnes', 'assets/telegram.svg']
       ].forEach(function (item) {
         const link = document.createElement('a');
         const icon = document.createElement('img');
@@ -393,7 +392,7 @@
     }
 
     const messengers = brand.querySelector('.owner-sale-sticky__messengers');
-    phone.setAttribute('aria-label', 'Позвонить по номеру +7 495 182-50-79');
+    phone.setAttribute('aria-label', 'Позвонить по номеру +7 (499) 272-48-72');
     if (messengers && phone.parentElement !== messengers) messengers.appendChild(phone);
 
     list.innerHTML = [
@@ -441,7 +440,7 @@
     menu = document.createElement('aside');
     menu.className = 'owner-sale-clone-menu';
     menu.setAttribute('hidden', '');
-    menu.innerHTML = '<div class="owner-sale-clone-menu__inner"><button class="owner-sale-clone-menu__close" type="button" aria-label="Закрыть меню">×</button><nav aria-label="Навигация"><a href="#stages">Процесс продажи объекта</a><a href="#about">О BARN Estate</a><a href="#property-types">Виды недвижимости</a><a href="#request">Оставить заявку</a><a href="#newsletter-title">Статьи</a></nav><a class="owner-sale-clone-menu__phone" href="tel:74951825079">+7 (495) 182-50-79</a></div>';
+    menu.innerHTML = '<div class="owner-sale-clone-menu__inner"><button class="owner-sale-clone-menu__close" type="button" aria-label="Закрыть меню">×</button><nav aria-label="Навигация"><a href="#stages">Процесс продажи объекта</a><a href="#about">О BARN Estate</a><a href="#property-types">Виды недвижимости</a><a href="#request">Оставить заявку</a><a href="#newsletter-title">Статьи</a></nav><a class="owner-sale-clone-menu__phone" href="tel:+74992724872">+7 (499) 272-48-72</a></div>';
     document.body.appendChild(menu);
     menu.querySelector('.owner-sale-clone-menu__close').addEventListener('click', function () {
       menu.setAttribute('hidden', '');
@@ -453,8 +452,8 @@
   if (!document.querySelector('.floating-expert')) {
     const expert = document.createElement('aside');
     expert.className = 'floating-expert floating-expert--gorodskaya';
-    expert.setAttribute('aria-label', 'Руслан Прус');
-    expert.innerHTML = '<button type="button" class="floating-expert__card" aria-haspopup="dialog"><span class="floating-expert__avatar"><img src="assets/ruslan.webp" alt="Руслан Прус" width="72" height="72" loading="lazy" decoding="async"></span><span class="floating-expert__content"><span class="floating-expert__label">Руководитель департамента городской недвижимости</span><span class="floating-expert__title">Задать вопрос эксперту</span><span class="floating-expert__name">Руслан Прус</span></span></button><button type="button" class="floating-expert__close" aria-label="Скрыть карточку Руслан Прус"></button>';
+    expert.setAttribute('aria-label', 'Людмила Белоусова');
+    expert.innerHTML = '<button type="button" class="floating-expert__card" aria-haspopup="dialog"><span class="floating-expert__avatar"><img src="assets/ludmila-belousova-bw.webp" alt="Людмила Белоусова" width="72" height="72" loading="lazy" decoding="async"></span><span class="floating-expert__content"><span class="floating-expert__label">Руководитель филиала BARN Estate в Санкт-Петербурге</span><span class="floating-expert__title">Задать вопрос эксперту</span><span class="floating-expert__name">Людмила Белоусова</span></span></button><button type="button" class="floating-expert__close" aria-label="Скрыть карточку Людмила Белоусова"></button>';
     expert.querySelectorAll('*').forEach(function (element) {
       element.setAttribute('data-v-cd0a1259', '');
     });
@@ -678,13 +677,9 @@
       event.preventDefault();
       const submit = form.querySelector('button[type="submit"], button');
       if (!submit) return;
-      const original = submit.textContent;
-      submit.textContent = 'Спасибо, заявка отправлена';
-      submit.disabled = true;
-      window.setTimeout(function () {
-        submit.textContent = original;
-        submit.disabled = false;
-      }, 2600);
+      let status = form.querySelector('[data-preview-status]');
+      if (!status) { status = document.createElement('p'); status.dataset.previewStatus = ''; status.setAttribute('role', 'status'); form.append(status); }
+      status.textContent = 'В превью отправка заявок не подключена. Свяжитесь с нами по телефону +7 (499) 272-48-72.';
     });
   });
 
