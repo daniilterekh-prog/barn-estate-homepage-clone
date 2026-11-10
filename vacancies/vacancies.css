@@ -128,10 +128,9 @@ html body.career-page .mh-contact-panel:not([hidden]) { display: flex !important
   :root { --home-gutter: 0px; }
   .career-hero__photo { object-position: center calc(50% - 32px); }
 }
-/* Exactly the current main-page laptop policy, including height-sensitive wide desktops. */
-@media (min-width:1025px) and (max-width:1919px), (min-width:1920px) and (max-height:1000px) {
-  :root { --career-hero-height: 620px; --career-hero-top: 140px; }
-  @media (min-width:1441px) { :root { --career-hero-height: 760px; } }
+/* Reserve room for the team between the navigation and the original bottom caption. */
+@media (min-width:1025px) {
+  .career-hero { min-height: max(var(--career-hero-height), var(--career-framing-height, 0px)); }
 }
 @media (max-width:1024px) {
   :root { --career-card: 20px; --career-eyebrow: 12px; --career-eyebrow-line: 14.4px; --career-brow-gap: 12px; --career-hero-top: 128px; --career-hero-bottom: 48px; }
@@ -184,21 +183,3 @@ html body.career-page .mh-contact-panel:not([hidden]) { display: flex !important
 
 /* Match footer hover with keyboard focus. */
 .career-page .site-footer :is(.site-footer__link,.site-footer__phone,.site-footer__email,.site-footer__privacy):focus-visible { color: var(--career-accent); }
-
-/* Keep compact desktop copy above the original, unretouched team faces. */
-@media (min-width:1025px) and (max-width:1919px), (min-width:1920px) and (max-height:1000px) {
- .career-hero__inner { align-items: flex-start; }
- .career-hero__content { display: grid; grid-template-columns: minmax(0,1fr) auto; align-items: center; gap: 32px; max-width: none; }
- .career-hero__description { display: none; }
- .career-hero .career-button { margin-top: 0; }
-}
-@media (min-width:1281px) and (max-width:1919px), (min-width:1920px) and (max-height:1000px) {
- .career-hero__inner { padding-top: 185px; }
-}
-@media (min-width:1921px) {
- :root { --career-hero-height: max(960px, calc(21.875vw + 303px)); }
- .career-hero__inner { align-items: flex-start; padding-top: 185px; }
- .career-hero__content { display: grid; grid-template-columns: minmax(0,1fr) auto; align-items: center; gap: 32px; max-width: none; }
- .career-hero__description { display: none; }
- .career-hero .career-button { margin-top: 0; }
-}

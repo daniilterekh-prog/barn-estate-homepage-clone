@@ -11,25 +11,35 @@
   const heroTitle = hero.querySelector('h1');
   const syncHeroCrop = () => {
     if (!heroPhoto.naturalWidth) return;
+    // Keep the approved bottom-left title/button stack. Adapt the image and
+    // reserve enough vertical room for all faces instead of moving the caption.
+    const navBottom = innerWidth >= 1281 ? (innerWidth >= 1441 ? 155 : 153) : (innerWidth > 540 ? 111 : 77);
+    if (innerWidth > 1024) {
+      const style = getComputedStyle(hero.querySelector('.career-hero__inner'));
+      const copyHeight = hero.querySelector('.career-hero__content').getBoundingClientRect().height;
+      const required = navBottom + 24 + 504 * hero.clientWidth / heroPhoto.naturalWidth + 24 + copyHeight + parseFloat(style.paddingBottom);
+      hero.style.setProperty('--career-framing-height', `${Math.ceil(required)}px`);
+    } else hero.style.removeProperty('--career-framing-height');
     const r = hero.getBoundingClientRect(), title = heroTitle.getBoundingClientRect();
     const scale = Math.max(r.width / heroPhoto.naturalWidth, r.height / heroPhoto.naturalHeight);
     const overflow = Math.max(0, heroPhoto.naturalHeight * scale - r.height);
-    if (overflow < 1) { heroPhoto.style.objectPosition = '50% 0px'; return; }
+    if (overflow < 1 && innerWidth <= 1024) { heroPhoto.style.objectPosition = '50% 0px'; return; }
     // Landmarks refer to the approved2304x1536 image, whose original people remain1:1.
-    const navBottom = innerWidth >= 1281 ? (innerWidth >= 1441 ? 155 : 153) : (innerWidth > 540 ? 111 : 77);
-    const compact = matchMedia('(min-width:1025px) and (max-width:1919px), (min-width:1920px) and (max-height:1000px), (min-width:1921px)').matches;
-    const clearTop = compact ? hero.querySelector('.career-hero__content').getBoundingClientRect().bottom - r.top : navBottom;
-    const low = Math.max(-overflow, clearTop + 24 - 546 * scale);
+    const low = innerWidth > 1024 ? Math.min(0, navBottom + 24 - 546 * scale) : Math.max(-overflow, navBottom + 24 - 546 * scale);
     const preferred = -overflow * (innerWidth > 1920 ? .5 : .65) - (innerWidth >= 1281 ? 32 : 0);
-    const faceLeft = r.left + (r.width - heroPhoto.naturalWidth * scale) / 2 + 282 * scale;
-    const faceRight = faceLeft + 85 * scale;
     const clamp = (value, min, max) => Math.max(min, Math.min(max, value));
-    let offset = clamp(preferred, low, 0);
-    if (!compact && faceRight > title.left && faceLeft < title.right) {
-      const above = Math.min(0, title.top - r.top - 4 - 991 * scale);
-      const below = Math.max(low, title.bottom - r.top + 8 - 886 * scale);
-      if (above >= low) offset = clamp(preferred, low, above);
-      else if (below <= 0) offset = clamp(preferred, below, 0);
+    const upper = Math.min(0, title.top - r.top - 24 - 1050 * scale);
+    let offset = clamp(preferred, low, Math.max(low, upper));
+    if (innerWidth <= 1024) {
+      const faceLeft = r.left + (r.width - heroPhoto.naturalWidth * scale) / 2 + 282 * scale;
+      const faceRight = faceLeft + 85 * scale;
+      offset = clamp(preferred, low, 0);
+      if (faceRight > title.left && faceLeft < title.right) {
+        const above = Math.min(0, title.top - r.top - 4 - 991 * scale);
+        const below = Math.max(low, title.bottom - r.top + 8 - 886 * scale);
+        if (above >= low) offset = clamp(preferred, low, above);
+        else if (below <= 0) offset = clamp(preferred, below, 0);
+      }
     }
     heroPhoto.style.objectPosition = `50% ${Math.round(offset * 100) / 100}px`;
   };
