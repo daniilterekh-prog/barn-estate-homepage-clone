@@ -1,14 +1,15 @@
 {
   "date": "2026-11-10",
   "sourceRepository": "daniilterekh-prog/barnes-sites",
-  "sourceCommit": "a0915b32aef4f868e5c2b2609b51a74f340559dc",
+  "sourceCommit": "3f6ec5f741d37b94ef7fb7449ea643980ddcea1e",
   "sourcePath": "main-site/pages/lot",
   "uiKit": "BARN Estate 1.0.6",
   "scope": "Only stranitsa-lota plus root catalog entries",
   "privateReferenceExcluded": true,
-  "checks": "16 viewport pairs: homepage height + exact Owner/Media title/CTA roles and bottom spacing; 27 dropdowns; forms/gallery 320/390/1440",
+  "checks": "16 viewports: hero roles, resort fact layout, 4 desktop/3 mobile values, no overflow; 27 dropdowns; forms/gallery 320/390/1440",
   "previewOnly": true,
   "heroOptions": "hero-options/",
   "defaultHeroUnchanged": true,
-  "hero3": "Media/Owner hero title role, homepage white action row, quiet price and single primary CTA; homepage height preserved"
+  "hero3": "Resort-style photo footer: large values above captions and one horizontal rule; compact price/action row; existing BARN Estate typography and homepage height",
+  "factsReference": "barnes-sites/docs/landing-builder/hero-prototype/hero.css"
 }

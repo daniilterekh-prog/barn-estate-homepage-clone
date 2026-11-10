@@ -115,8 +115,16 @@
       "target": "hero-variants.css",
       "sourceCommit": "93ff4c2c32ceae0881967d3e4a7d119fc61d49dc",
       "sourceSha256": "002bf2d2c75f7ec115686583aaf4c007c82f0a93884dcef8ef52570cf22ae81d",
-      "sha256": "68b17cdde9b03dd9337856d40b324287579560da07546971d12f86ad50c2263e",
+      "sha256": "87c59fb236b715163d431e160485c89c878d074df61b5d509f328616578517f6",
       "adaptation": "Variant 3 reuses Media/Owner hero title, CTA, overlay and spacing roles; compact white action row follows homepage filters; other optional variants remain local."
+    },
+    {
+      "source": "docs/landing-builder/hero-prototype/hero.css",
+      "target": "hero-variants.css",
+      "sourceCommit": "52a4dc52db81b2c2012dcf56aa9da194f4b1c8e3",
+      "sourceSha256": "ba38428f8a64418a4ff201b51ae55cde37903292ee7d744ea87e0f63f17422de",
+      "sha256": "87c59fb236b715163d431e160485c89c878d074df61b5d509f328616578517f6",
+      "adaptation": "Keep Tilda Sans and existing BARN Estate H1/CTA roles. Use exact lot values. On narrow screens keep area, bedrooms and floor; finish remains in full apartment facts. Semantic dt precedes dd in DOM, visual values precede captions. Adopt resort footer geometry and value/caption hierarchy only."
     }
   ]
 }

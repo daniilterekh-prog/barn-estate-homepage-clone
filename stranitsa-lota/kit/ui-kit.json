@@ -69,5 +69,22 @@
       "mobile": 32
     },
     "note": "Hero title is a distinct role from section headings; white action-row composition derives from homepage filters."
+  },
+  "heroFacts": {
+    "source": "docs/landing-builder/hero-prototype/hero.css",
+    "sourceCommit": "52a4dc52db81b2c2012dcf56aa9da194f4b1c8e3",
+    "sourceSha256": "ba38428f8a64418a4ff201b51ae55cde37903292ee7d744ea87e0f63f17422de",
+    "layout": "Photo footer with one horizontal rule, large value over a small caption, no individual cards or vertical rules",
+    "valueSizes": {
+      "desktop": 27,
+      "tablet": 23,
+      "mobile": 20,
+      "wide": "clamp(30px,1.25vw,40px)"
+    },
+    "captionSizes": {
+      "desktop": 11,
+      "mobile": 10
+    },
+    "adaptation": "Keep Tilda Sans and existing BARN Estate H1/CTA roles. Use exact lot values. On narrow screens keep area, bedrooms and floor; finish remains in full apartment facts. Semantic dt precedes dd in DOM, visual values precede captions."
   }
 }

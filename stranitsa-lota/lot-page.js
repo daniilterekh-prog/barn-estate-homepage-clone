@@ -126,7 +126,21 @@
     offer.append(offerActions);
     if (data.demo) offer.append(el('p', 'Архивный пример. Актуальную цену и доступность уточните у брокера.', 'lot-offer__notice'));
     hero.append(visual, offer);
-    if (document.body.dataset.heroVariant === '3') hero.insertBefore(copy, offer);
+    if (document.body.dataset.heroVariant === '3') {
+      hero.insertBefore(copy, offer);
+      const metrics = $('.lot-offer__facts', offer);
+      if (metrics?.childElementCount) {
+        metrics.classList.add('lot-hero__facts');
+        metrics.setAttribute('aria-label', 'Основные характеристики объекта');
+        const secondary = [...metrics.children].find(row => $('dt', row)?.textContent === 'Отделка');
+        const hideSecondary = secondary && metrics.childElementCount > 1;
+        if (hideSecondary) secondary.dataset.heroFactSecondary = '';
+        metrics.style.setProperty('--hero-fact-count', metrics.childElementCount);
+        metrics.style.setProperty('--hero-fact-mobile-count', metrics.childElementCount - (hideSecondary ? 1 : 0));
+        hero.dataset.hasHeroFacts = 'true';
+        hero.append(metrics);
+      } else metrics?.remove();
+    }
     main.append(hero);
     if (document.body.dataset.heroVariant === '5') {
       const filmstrip = el('div', null, 'hero-filmstrip'); filmstrip.setAttribute('aria-label', 'Выбрать фотографию первого экрана');

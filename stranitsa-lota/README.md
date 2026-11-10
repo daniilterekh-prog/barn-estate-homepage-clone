@@ -1,4 +1,4 @@
-[Вариант 3: крупный заголовок херо и белая строка параметров · 10.11.2026](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/stranitsa-lota/?hero=3&v=hero-kit-20261110). Высота главной сохранена; типографика, CTA и отступы сверены со страницами Медиа/Собственников. [Детали и проверки](https://github.com/daniilterekh-prog/barnes-sites/blob/main/main-site/pages/lot/HERO-OPTIONS.md).
+[Вариант 3: характеристики по курортным лендингам · 10.11.2026](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/stranitsa-lota/?hero=3&v=resort-facts-20261110). Крупные значения и подписи на фотографии по примеру «Кедров», компактная цена и запись; сохранены Tilda Sans, роли H1/CTA и высота главной. [Источник и проверки](https://github.com/daniilterekh-prog/barnes-sites/blob/main/main-site/pages/lot/HERO-OPTIONS.md).
 
 # Общий шаблон лота BARN Estate
 
@@ -55,3 +55,6 @@ node main-site/pages/lot/export-page.cjs /новый/пустой/каталог
 `index.html` уже содержит отрендеренную структуру. `build-index.cjs` воспроизводит её тем же рендерером. Экспорт включает только самодостаточный runtime лота, исключает приватный референс, исследование, старые скрипты и отчёты. Исторические local/home-kit/lot-sections и старые verify-файлы не подключаются; прежние отчёты не подтверждают текущую версию.
 
 Боевой домен агентства этой задачей не обновляется. Для передачи разработчику действует постоянный путь `main-site/handoff/lot/` и публичный `handoff/lot/`; отдельный пакет здесь пока не создавался.
+
+
+[Локальное превью и инструкция запуска](https://github.com/daniilterekh-prog/barnes-sites/blob/main/main-site/pages/lot/README.md#local-preview).
