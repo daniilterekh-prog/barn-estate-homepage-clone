@@ -1,14 +1,14 @@
 {
   "date": "2026-11-10",
   "sourceRepository": "daniilterekh-prog/barnes-sites",
-  "sourceCommit": "98d516fb22907ed2ff5e79dd6893405cf29b1c27",
+  "sourceCommit": "66a6fea48efc3fa6a44cd14399f758ed5a01ca61",
   "sourcePath": "main-site/pages/lot",
   "uiKit": "BARN Estate 1.0.6",
   "scope": "Only stranitsa-lota plus root catalog entries",
   "privateReferenceExcluded": true,
-  "checks": "Hero 3: seven widths 320-2560; gallery/forms regression 390/1440; desktop/mobile screenshots",
+  "checks": "16 measured homepage viewport pairs; 27 dropdowns with canonical URLs and keyboard checks; gallery/forms 320/390/1440",
   "previewOnly": true,
   "heroOptions": "hero-options/",
   "defaultHeroUnchanged": true,
-  "hero3": "Title, description and gallery/plan buttons lowered above bottom offer strip"
+  "hero3": "Height matches homepage at every breakpoint; title above bottom offer strip"
 }

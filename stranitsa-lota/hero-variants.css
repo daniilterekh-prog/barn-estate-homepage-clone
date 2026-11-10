@@ -215,3 +215,17 @@ body[data-hero-variant="5"] .lot-offer__actions .text-link {display:none}
   .hero-filmstrip img{aspect-ratio:4/3}
 }
 @media(max-height:700px) and (min-width:768px){body[data-hero-variant] .lot-hero{height:800px}}
+
+/* Variant 3 follows the approved homepage hero height, including laptop policy. */
+body[data-hero-variant="3"] .lot-hero {height:960px;min-height:0}
+@media(max-width:1440px){body[data-hero-variant="3"] .lot-hero {height:820px}}
+@media(max-width:540px){
+  body[data-hero-variant="3"] .lot-hero {height:560px}
+  body[data-hero-variant="3"] .lot-hero__actions .button {padding-inline:12px}
+}
+@media(min-width:1025px) and (max-width:1919px), (min-width:1920px) and (max-height:1000px){
+  body[data-hero-variant="3"] .lot-hero {height:620px}
+}
+@media(min-width:1441px) and (max-width:1919px), (min-width:1920px) and (max-height:1000px){
+  body[data-hero-variant="3"] .lot-hero {height:760px}
+}

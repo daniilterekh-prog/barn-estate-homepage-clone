@@ -17,7 +17,9 @@
     {
       "source": "main-site/pages/contacts/vendor/header-navigation.css",
       "target": "kit/vendor/header-navigation.css",
-      "sha256": "8f88f226b07ca6f5f29c4a94809ed231c57e5cd02bbfba63c7990a3db1a7c217"
+      "sha256": "f7248c22fed78809c199268d43bd18efcf623061a51e6b426e92f13526402a39",
+      "sourceSha256": "8f88f226b07ca6f5f29c4a94809ed231c57e5cd02bbfba63c7990a3db1a7c217",
+      "adaptation": "Local selector scope: body.contacts-page → body.lot-page; dropdown styling applies to this page"
     },
     {
       "source": "main-site/pages/contacts/vendor/header-navigation.js",
