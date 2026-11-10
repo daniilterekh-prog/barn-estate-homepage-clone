@@ -2,17 +2,35 @@
   "ui_kit": "BARN Estate1.0.3, isolated HTML/CSS/SVG copies from the current main site and finalized city CTA; no new runtime libraries.",
   "hero": {
     "file": "assets/hero-team.webp",
-    "sha256": "611b0200a4698acef7488eb9e1233350cfc20f647f059fc1dfa25cb95253e2cd",
-    "native_size": [
-      1536,
-      1024
+    "sha256": "9759b564bf1ed2b435b09947b1b197b7c8cf828ae07186d7a838dbcb3caef128",
+    "size": [
+      2304,
+      1536
     ],
-    "tool": "built-in image_gen",
-    "original_drive_url": "https://drive.google.com/file/d/1Wmk3BMO6FaMs_vdaeFX5B6zW-01Nl8rX/view?usp=drivesdk",
-    "private_native_source": "references/team-hero.png",
-    "private_prompt": "references/team-hero-prompt.txt",
-    "previous_generation_history": "https://github.com/daniilterekh-prog/barnes-sites/tree/fe3014bd/main-site/pages/vacancies/references/team-photos",
-    "treatment": "Wider framing of the accepted warm group photograph. An additional constant8% CSS shade is applied. No dropdown-dependent dimming."
+    "format": "lossless WebP; decoded pixels exactly match the approved PNG",
+    "origin": "User-attached original PNG,2026-11-10",
+    "tool": "built-in image_gen for room extension, deterministic Sharp compositing for preservation of original people",
+    "private_native_source": "references/hero/result.png",
+    "private_original": "references/hero/input.png",
+    "private_prompt": "references/hero/prompt.txt",
+    "original_people_scale": 1,
+    "color_correction": {
+      "rgbMultiplier": [
+        1.045,
+        1.015,
+        0.96
+      ],
+      "denoise": false,
+      "sharpen": false,
+      "faceRestoration": false
+    },
+    "verification": {
+      "differentChannelValues": 0,
+      "maxDelta": 0,
+      "comparedChannelValues": 5591040,
+      "comparison": "Exact raw pixel equality against the globally color-graded input in the protected original-pixel region. This checks pixel preservation, not face recognition."
+    },
+    "treatment": "Frame expanded by20%; people appear16.7% farther away. Original people are not redrawn, blurred or resampled. Constant additional8% CSS shade unchanged."
   },
   "cta": {
     "source_repository": "daniilterekh-prog/barn-estate-homepage-clone",
@@ -78,7 +96,7 @@
     },
     {
       "file": "assets/hero-team.webp",
-      "sha256": "611b0200a4698acef7488eb9e1233350cfc20f647f059fc1dfa25cb95253e2cd"
+      "sha256": "9759b564bf1ed2b435b09947b1b197b7c8cf828ae07186d7a838dbcb3caef128"
     },
     {
       "file": "assets/logo.svg",

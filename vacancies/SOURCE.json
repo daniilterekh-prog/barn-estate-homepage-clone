@@ -1,14 +1,14 @@
 {
   "source_repository": "daniilterekh-prog/barnes-sites",
   "source_branch": "codex/vacancies-20261109",
-  "source_commit": "81f9411090c8144b9d67af2a3da73e0534855fed",
+  "source_commit": "4736bf6a1da486e4649210808a84b4ea638ef6e2",
   "source_path": "main-site/pages/vacancies",
   "canonical_handoff_path": "main-site/handoff/vacancies",
-  "handoff_commit": "ce9e8447ef36ff210c83d0343c980a92413f3a35",
+  "handoff_commit": "1067a1f3e71ea7dbcfbf968c12f87420854892e9",
   "runtime_sha256": {
-    "index.html": "862bf74c3924e951da6a841dfe8241245f68ad060d1d0f2f5ff08d5bbe66013d",
-    "vacancies.css": "fdf4040e6537c738a7a2597d6dbd1024167627bd94102b082f4f8d1feffa79d9",
-    "vacancies.js": "45fbdf723de8b66435a6f44268b8a94ea3d2c144b377107a2136d2f799ad412a",
+    "index.html": "4d2765dc3e706e336b739364961bd916de3bce7cebd7504b8209288e0f34df75",
+    "vacancies.css": "2cd3c1ef6aa7c8bc2d937c62e1cd6dd7b7955e954d963c7e531480dccce9d1a9",
+    "vacancies.js": "2e404583be905ce01bd47c64d0cc81421968c716f34fb045417b7d0a7fa469fe",
     "city-career-cta.js": "f90d6d4403ca1d68756a678224fbc4818a26b2a652b77ec40265584611d427e5",
     "owner-department-nav.js": "9c0e24c7ebae249f864cd5d82bd2a03ed135a11f1e8768dbbc296612e1a7ade5",
     "css/01-site-header.css": "07dad2249ff16faeb243bfb36bdc8fcae4e3a9dae7e7def3320057a1e05138e4",
@@ -23,13 +23,13 @@
     "assets/cta-ruslan-avatar.webp": "4464b6998f60131d99ee19b3887a776b896162ce4cbbf1cefd4bb7dcbf7a3986",
     "assets/cta-ruslan-composite.webp": "fc1838cec9214135f5909a86ce6039b67e1a2e38ce95d61f97705ea110002415",
     "assets/cta-ruslan-cutout.png": "205fdca0ec62349d368d95f71d0fc8c4a662bdc9c86d7349e0c224e729f7d209",
-    "assets/hero-team.webp": "611b0200a4698acef7488eb9e1233350cfc20f647f059fc1dfa25cb95253e2cd",
+    "assets/hero-team.webp": "9759b564bf1ed2b435b09947b1b197b7c8cf828ae07186d7a838dbcb3caef128",
     "assets/logo.svg": "25d4a2a32ee6f85768e04db21d646d048ccd61ebd4d214d6f54737491d2fc5e0",
     "assets/max.svg": "5caa61a4b0731d0d89421b4fb24f41433025e5aea59155a14cf3a3fada6c9174",
     "assets/telegram.svg": "d740699a25af5d0677344e14bf3456d3d39c4d6da8633465086ccaf176fa7f24",
     "assets/whatsapp.svg": "6870171eea83ea80607e3a4e9b5de7ed724da07aa3af2de9c7b50e7408926a2b",
     "data/content.json": "7b49065901e3b06c5ec9f42d86ae6cb74599400f84b37d199c052c5b64e48ca5",
     "data/departments.json": "2cda355e71fbfdb7f1a768661ab51370e1395bd480e35e97fc32a49b1167e173",
-    "data/sources.json": "0f0c0ba648eb5d9950408cf4d177b14064a7a9201b6b81eff58e237a83c83ea7"
+    "data/sources.json": "11e689e8dea57a2039b4b3470fbefd71d50511c4b589b5bb91e646a09360e17f"
   }
 }

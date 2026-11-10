@@ -1,6 +1,6 @@
 {
   "status": "passed",
-  "source_commit": "81f9411090c8144b9d67af2a3da73e0534855fed",
+  "source_commit": "4736bf6a1da486e4649210808a84b4ea638ef6e2",
   "source_regression": {
     "base": "http://127.0.0.1:8819/",
     "widths": [
@@ -403,7 +403,7 @@
       }
     ]
   },
-  "requested_changes": {
+  "requested_styles": {
     "base": "http://127.0.0.1:8820/html/index.html",
     "results": [
       {
@@ -621,6 +621,735 @@
     "errors": [],
     "httpErrors": []
   },
+  "framing": {
+    "base": "http://127.0.0.1:8819/",
+    "landmarks": {
+      "highestHeadY": 546,
+      "lowestFaceY": 1050,
+      "frontLeftFace": [
+        282,
+        886,
+        367,
+        991
+      ]
+    },
+    "rows": [
+      {
+        "width": 320,
+        "height": 844,
+        "natural": [
+          2304,
+          1536
+        ],
+        "hero": {
+          "x": 0,
+          "y": 0,
+          "width": 320,
+          "height": 560,
+          "top": 0,
+          "right": 320,
+          "bottom": 560,
+          "left": 0
+        },
+        "title": {
+          "x": 22,
+          "y": 370.8125,
+          "width": 276,
+          "height": 67.1875,
+          "top": 370.8125,
+          "right": 298,
+          "bottom": 438,
+          "left": 22
+        },
+        "copy": {
+          "x": 22,
+          "y": 370.8125,
+          "width": 276,
+          "height": 157.1875,
+          "top": 370.8125,
+          "right": 298,
+          "bottom": 528,
+          "left": 22
+        },
+        "copyGrid": false,
+        "firstHeadY": 199.0625,
+        "lastFaceY": 382.8125,
+        "navBottom": null,
+        "face": {
+          "left": -157.1875,
+          "right": -126.19791666666669,
+          "top": 323.0208333333333,
+          "bottom": 361.3020833333333
+        },
+        "overflow": 0,
+        "objectPosition": "50% 0px",
+        "shade": "linear-gradient(rgba(15, 15, 15, 0.08), rgba(15, 15, 15, 0.08)), linear-gradient(rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.05) 28%, rgba(15, 15, 15, 0.12) 46%, rgba(15, 15, 15, 0.85) 100%), linear-gradient(90deg, rgba(15, 15, 15, 0.28), rgba(15, 15, 15, 0) 75%)"
+      },
+      {
+        "width": 390,
+        "height": 844,
+        "natural": [
+          2304,
+          1536
+        ],
+        "hero": {
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 560,
+          "top": 0,
+          "right": 390,
+          "bottom": 560,
+          "left": 0
+        },
+        "title": {
+          "x": 22,
+          "y": 404.40625,
+          "width": 346,
+          "height": 33.59375,
+          "top": 404.40625,
+          "right": 368,
+          "bottom": 438,
+          "left": 22
+        },
+        "copy": {
+          "x": 22,
+          "y": 404.40625,
+          "width": 346,
+          "height": 123.59375,
+          "top": 404.40625,
+          "right": 368,
+          "bottom": 528,
+          "left": 22
+        },
+        "copyGrid": false,
+        "firstHeadY": 199.0625,
+        "lastFaceY": 382.8125,
+        "navBottom": null,
+        "face": {
+          "left": -122.1875,
+          "right": -91.19791666666669,
+          "top": 323.0208333333333,
+          "bottom": 361.3020833333333
+        },
+        "overflow": 0,
+        "objectPosition": "50% 0px",
+        "shade": "linear-gradient(rgba(15, 15, 15, 0.08), rgba(15, 15, 15, 0.08)), linear-gradient(rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.05) 28%, rgba(15, 15, 15, 0.12) 46%, rgba(15, 15, 15, 0.85) 100%), linear-gradient(90deg, rgba(15, 15, 15, 0.28), rgba(15, 15, 15, 0) 75%)"
+      },
+      {
+        "width": 540,
+        "height": 844,
+        "natural": [
+          2304,
+          1536
+        ],
+        "hero": {
+          "x": 0,
+          "y": 0,
+          "width": 540,
+          "height": 560,
+          "top": 0,
+          "right": 540,
+          "bottom": 560,
+          "left": 0
+        },
+        "title": {
+          "x": 22,
+          "y": 404.40625,
+          "width": 496,
+          "height": 33.59375,
+          "top": 404.40625,
+          "right": 518,
+          "bottom": 438,
+          "left": 22
+        },
+        "copy": {
+          "x": 22,
+          "y": 404.40625,
+          "width": 496,
+          "height": 123.59375,
+          "top": 404.40625,
+          "right": 518,
+          "bottom": 528,
+          "left": 22
+        },
+        "copyGrid": false,
+        "firstHeadY": 199.0625,
+        "lastFaceY": 382.8125,
+        "navBottom": null,
+        "face": {
+          "left": -47.1875,
+          "right": -16.197916666666686,
+          "top": 323.0208333333333,
+          "bottom": 361.3020833333333
+        },
+        "overflow": 0,
+        "objectPosition": "50% 0px",
+        "shade": "linear-gradient(rgba(15, 15, 15, 0.08), rgba(15, 15, 15, 0.08)), linear-gradient(rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.05) 28%, rgba(15, 15, 15, 0.12) 46%, rgba(15, 15, 15, 0.85) 100%), linear-gradient(90deg, rgba(15, 15, 15, 0.28), rgba(15, 15, 15, 0) 75%)"
+      },
+      {
+        "width": 768,
+        "height": 1000,
+        "natural": [
+          2304,
+          1536
+        ],
+        "hero": {
+          "x": 0,
+          "y": 0,
+          "width": 768,
+          "height": 820,
+          "top": 0,
+          "right": 768,
+          "bottom": 820,
+          "left": 0
+        },
+        "title": {
+          "x": 24,
+          "y": 567.796875,
+          "width": 720,
+          "height": 39.890625,
+          "top": 567.796875,
+          "right": 744,
+          "bottom": 607.6875,
+          "left": 24
+        },
+        "copy": {
+          "x": 24,
+          "y": 567.796875,
+          "width": 720,
+          "height": 212.203125,
+          "top": 567.796875,
+          "right": 744,
+          "bottom": 780,
+          "left": 24
+        },
+        "copyGrid": false,
+        "firstHeadY": 291.484375,
+        "lastFaceY": 560.546875,
+        "navBottom": null,
+        "face": {
+          "left": -80.453125,
+          "right": -35.07552083333334,
+          "top": 472.99479166666663,
+          "bottom": 529.0494791666666
+        },
+        "overflow": 0,
+        "objectPosition": "50% 0px",
+        "shade": "linear-gradient(rgba(15, 15, 15, 0.08), rgba(15, 15, 15, 0.08)), linear-gradient(rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.05) 28%, rgba(15, 15, 15, 0.12) 46%, rgba(15, 15, 15, 0.85) 100%), linear-gradient(90deg, rgba(15, 15, 15, 0.28), rgba(15, 15, 15, 0) 75%)"
+      },
+      {
+        "width": 1024,
+        "height": 1000,
+        "natural": [
+          2304,
+          1536
+        ],
+        "hero": {
+          "x": 0,
+          "y": 0,
+          "width": 1024,
+          "height": 820,
+          "top": 0,
+          "right": 1024,
+          "bottom": 820,
+          "left": 0
+        },
+        "title": {
+          "x": 40.875,
+          "y": 556.6875,
+          "width": 925,
+          "height": 43,
+          "top": 556.6875,
+          "right": 965.875,
+          "bottom": 599.6875,
+          "left": 40.875
+        },
+        "copy": {
+          "x": 40.875,
+          "y": 556.6875,
+          "width": 925,
+          "height": 215.3125,
+          "top": 556.6875,
+          "right": 965.875,
+          "bottom": 772,
+          "left": 40.875
+        },
+        "copyGrid": false,
+        "firstHeadY": 291.484375,
+        "lastFaceY": 560.546875,
+        "navBottom": null,
+        "face": {
+          "left": 47.546875,
+          "right": 92.92447916666666,
+          "top": 472.99479166666663,
+          "bottom": 529.0494791666666
+        },
+        "overflow": 0,
+        "objectPosition": "50% 0px",
+        "shade": "linear-gradient(rgba(15, 15, 15, 0.08), rgba(15, 15, 15, 0.08)), linear-gradient(rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.05) 28%, rgba(15, 15, 15, 0.12) 46%, rgba(15, 15, 15, 0.85) 100%), linear-gradient(90deg, rgba(15, 15, 15, 0.28), rgba(15, 15, 15, 0) 75%)"
+      },
+      {
+        "width": 1280,
+        "height": 800,
+        "natural": [
+          2304,
+          1536
+        ],
+        "hero": {
+          "x": 0,
+          "y": 0,
+          "width": 1280,
+          "height": 620,
+          "top": 0,
+          "right": 1280,
+          "bottom": 620,
+          "left": 0
+        },
+        "title": {
+          "x": 57.765625,
+          "y": 148.125,
+          "width": 704.46875,
+          "height": 53.75,
+          "top": 148.125,
+          "right": 762.234375,
+          "bottom": 201.875,
+          "left": 57.765625
+        },
+        "copy": {
+          "x": 57.765625,
+          "y": 140,
+          "width": 1164.46875,
+          "height": 70,
+          "top": 140,
+          "right": 1222.234375,
+          "bottom": 210,
+          "left": 57.765625
+        },
+        "copyGrid": true,
+        "firstHeadY": 234.0033333333334,
+        "lastFaceY": 514.0033333333333,
+        "navBottom": null,
+        "face": {
+          "left": 156.66666666666669,
+          "right": 203.88888888888889,
+          "top": 422.89222222222224,
+          "bottom": 481.22555555555556
+        },
+        "overflow": 0,
+        "objectPosition": "50% -69.33px",
+        "shade": "linear-gradient(rgba(15, 15, 15, 0.08), rgba(15, 15, 15, 0.08)), linear-gradient(rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.05) 28%, rgba(15, 15, 15, 0.12) 46%, rgba(15, 15, 15, 0.85) 100%), linear-gradient(90deg, rgba(15, 15, 15, 0.28), rgba(15, 15, 15, 0) 75%)"
+      },
+      {
+        "width": 1281,
+        "height": 800,
+        "natural": [
+          2304,
+          1536
+        ],
+        "hero": {
+          "x": 0,
+          "y": 0,
+          "width": 1281,
+          "height": 620,
+          "top": 0,
+          "right": 1281,
+          "bottom": 620,
+          "left": 0
+        },
+        "title": {
+          "x": 57.828125,
+          "y": 193.109375,
+          "width": 705.34375,
+          "height": 53.78125,
+          "top": 193.109375,
+          "right": 763.171875,
+          "bottom": 246.890625,
+          "left": 57.828125
+        },
+        "copy": {
+          "x": 57.828125,
+          "y": 185,
+          "width": 1165.34375,
+          "height": 70,
+          "top": 185,
+          "right": 1223.171875,
+          "bottom": 255,
+          "left": 57.828125
+        },
+        "copyGrid": true,
+        "firstHeadY": 279.0003125,
+        "lastFaceY": 559.2190625,
+        "navBottom": 153,
+        "face": {
+          "left": 156.7890625,
+          "right": 204.04817708333334,
+          "top": 468.0367708333334,
+          "bottom": 526.4156770833333
+        },
+        "overflow": 0,
+        "objectPosition": "50% -24.57px",
+        "shade": "linear-gradient(rgba(15, 15, 15, 0.08), rgba(15, 15, 15, 0.08)), linear-gradient(rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.05) 28%, rgba(15, 15, 15, 0.12) 46%, rgba(15, 15, 15, 0.85) 100%), linear-gradient(90deg, rgba(15, 15, 15, 0.28), rgba(15, 15, 15, 0) 75%)"
+      },
+      {
+        "width": 1440,
+        "height": 900,
+        "natural": [
+          2304,
+          1536
+        ],
+        "hero": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 620,
+          "top": 0,
+          "right": 1440,
+          "bottom": 620,
+          "left": 0
+        },
+        "title": {
+          "x": 68.328125,
+          "y": 189.765625,
+          "width": 843.34375,
+          "height": 60.46875,
+          "top": 189.765625,
+          "right": 911.671875,
+          "bottom": 250.234375,
+          "left": 68.328125
+        },
+        "copy": {
+          "x": 68.328125,
+          "y": 185,
+          "width": 1303.34375,
+          "height": 70,
+          "top": 185,
+          "right": 1371.671875,
+          "bottom": 255,
+          "left": 68.328125
+        },
+        "copyGrid": true,
+        "firstHeadY": 279,
+        "lastFaceY": 594,
+        "navBottom": 153,
+        "face": {
+          "left": 176.25,
+          "right": 229.375,
+          "top": 491.5,
+          "bottom": 557.125
+        },
+        "overflow": 0,
+        "objectPosition": "50% -62.25px",
+        "shade": "linear-gradient(rgba(15, 15, 15, 0.08), rgba(15, 15, 15, 0.08)), linear-gradient(rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.05) 28%, rgba(15, 15, 15, 0.12) 46%, rgba(15, 15, 15, 0.85) 100%), linear-gradient(90deg, rgba(15, 15, 15, 0.28), rgba(15, 15, 15, 0) 75%)"
+      },
+      {
+        "width": 1441,
+        "height": 900,
+        "natural": [
+          2304,
+          1536
+        ],
+        "hero": {
+          "x": 0,
+          "y": 0,
+          "width": 1441,
+          "height": 760,
+          "top": 0,
+          "right": 1441,
+          "bottom": 760,
+          "left": 0
+        },
+        "title": {
+          "x": 68.390625,
+          "y": 189.734375,
+          "width": 844.21875,
+          "height": 60.515625,
+          "top": 189.734375,
+          "right": 912.609375,
+          "bottom": 250.25,
+          "left": 68.390625
+        },
+        "copy": {
+          "x": 68.390625,
+          "y": 185,
+          "width": 1304.21875,
+          "height": 70,
+          "top": 185,
+          "right": 1372.609375,
+          "bottom": 255,
+          "left": 68.390625
+        },
+        "copyGrid": true,
+        "firstHeadY": 278.9969791666667,
+        "lastFaceY": 594.2157291666666,
+        "navBottom": 155,
+        "face": {
+          "left": 176.37239583333334,
+          "right": 229.53428819444446,
+          "top": 491.6445486111111,
+          "bottom": 557.3151215277778
+        },
+        "overflow": 0,
+        "objectPosition": "50% -62.49px",
+        "shade": "linear-gradient(rgba(15, 15, 15, 0.08), rgba(15, 15, 15, 0.08)), linear-gradient(rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.05) 28%, rgba(15, 15, 15, 0.12) 46%, rgba(15, 15, 15, 0.85) 100%), linear-gradient(90deg, rgba(15, 15, 15, 0.28), rgba(15, 15, 15, 0) 75%)"
+      },
+      {
+        "width": 1513,
+        "height": 1080,
+        "natural": [
+          2304,
+          1536
+        ],
+        "hero": {
+          "x": 0,
+          "y": 0,
+          "width": 1513,
+          "height": 760,
+          "top": 0,
+          "right": 1513,
+          "bottom": 760,
+          "left": 0
+        },
+        "title": {
+          "x": 73.140625,
+          "y": 189.546875,
+          "width": 906.71875,
+          "height": 60.890625,
+          "top": 189.546875,
+          "right": 979.859375,
+          "bottom": 250.4375,
+          "left": 73.140625
+        },
+        "copy": {
+          "x": 73.140625,
+          "y": 185,
+          "width": 1366.71875,
+          "height": 70,
+          "top": 185,
+          "right": 1439.859375,
+          "bottom": 255,
+          "left": 73.140625
+        },
+        "copyGrid": true,
+        "firstHeadY": 278.9994791666667,
+        "lastFaceY": 609.9682291666667,
+        "navBottom": 155,
+        "face": {
+          "left": 185.18489583333334,
+          "right": 241.00303819444446,
+          "top": 502.2720486111111,
+          "bottom": 571.2238715277779
+        },
+        "overflow": 0,
+        "objectPosition": "50% -79.55px",
+        "shade": "linear-gradient(rgba(15, 15, 15, 0.08), rgba(15, 15, 15, 0.08)), linear-gradient(rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.05) 28%, rgba(15, 15, 15, 0.12) 46%, rgba(15, 15, 15, 0.85) 100%), linear-gradient(90deg, rgba(15, 15, 15, 0.28), rgba(15, 15, 15, 0) 75%)"
+      },
+      {
+        "width": 1920,
+        "height": 1080,
+        "natural": [
+          2304,
+          1536
+        ],
+        "hero": {
+          "x": 0,
+          "y": 0,
+          "width": 1920,
+          "height": 960,
+          "top": 0,
+          "right": 1920,
+          "bottom": 960,
+          "left": 0
+        },
+        "title": {
+          "x": 99.984375,
+          "y": 660.796875,
+          "width": 925,
+          "height": 60.890625,
+          "top": 660.796875,
+          "right": 1024.984375,
+          "bottom": 721.6875,
+          "left": 99.984375
+        },
+        "copy": {
+          "x": 99.984375,
+          "y": 660.796875,
+          "width": 925,
+          "height": 227.203125,
+          "top": 660.796875,
+          "right": 1024.984375,
+          "bottom": 888,
+          "left": 99.984375
+        },
+        "copyGrid": false,
+        "firstHeadY": 215,
+        "lastFaceY": 635,
+        "navBottom": 155,
+        "face": {
+          "left": 235,
+          "right": 305.83333333333337,
+          "top": 498.33333333333337,
+          "bottom": 585.8333333333334
+        },
+        "overflow": 0,
+        "objectPosition": "50% -240px",
+        "shade": "linear-gradient(rgba(15, 15, 15, 0.08), rgba(15, 15, 15, 0.08)), linear-gradient(rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.05) 28%, rgba(15, 15, 15, 0.12) 46%, rgba(15, 15, 15, 0.85) 100%), linear-gradient(90deg, rgba(15, 15, 15, 0.28), rgba(15, 15, 15, 0) 75%)"
+      },
+      {
+        "width": 1920,
+        "height": 900,
+        "natural": [
+          2304,
+          1536
+        ],
+        "hero": {
+          "x": 0,
+          "y": 0,
+          "width": 1920,
+          "height": 760,
+          "top": 0,
+          "right": 1920,
+          "bottom": 760,
+          "left": 0
+        },
+        "title": {
+          "x": 99.984375,
+          "y": 189.546875,
+          "width": 1260.03125,
+          "height": 60.890625,
+          "top": 189.546875,
+          "right": 1360.015625,
+          "bottom": 250.4375,
+          "left": 99.984375
+        },
+        "copy": {
+          "x": 99.984375,
+          "y": 185,
+          "width": 1720.03125,
+          "height": 70,
+          "top": 185,
+          "right": 1820.015625,
+          "bottom": 255,
+          "left": 99.984375
+        },
+        "copyGrid": true,
+        "firstHeadY": 279,
+        "lastFaceY": 699,
+        "navBottom": 155,
+        "face": {
+          "left": 235,
+          "right": 305.83333333333337,
+          "top": 562.3333333333334,
+          "bottom": 649.8333333333334
+        },
+        "overflow": 0,
+        "objectPosition": "50% -176px",
+        "shade": "linear-gradient(rgba(15, 15, 15, 0.08), rgba(15, 15, 15, 0.08)), linear-gradient(rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.05) 28%, rgba(15, 15, 15, 0.12) 46%, rgba(15, 15, 15, 0.85) 100%), linear-gradient(90deg, rgba(15, 15, 15, 0.28), rgba(15, 15, 15, 0) 75%)"
+      },
+      {
+        "width": 2560,
+        "height": 1440,
+        "natural": [
+          2304,
+          1536
+        ],
+        "hero": {
+          "x": 0,
+          "y": 0,
+          "width": 2560,
+          "height": 960,
+          "top": 0,
+          "right": 2560,
+          "bottom": 960,
+          "left": 0
+        },
+        "title": {
+          "x": 320,
+          "y": 189.546875,
+          "width": 1460,
+          "height": 60.890625,
+          "top": 189.546875,
+          "right": 1780,
+          "bottom": 250.4375,
+          "left": 320
+        },
+        "copy": {
+          "x": 320,
+          "y": 185,
+          "width": 1920,
+          "height": 70,
+          "top": 185,
+          "right": 2240,
+          "bottom": 255,
+          "left": 320
+        },
+        "copyGrid": true,
+        "firstHeadY": 278.9966666666667,
+        "lastFaceY": 838.9966666666667,
+        "navBottom": 155,
+        "face": {
+          "left": 313.33333333333337,
+          "right": 407.77777777777777,
+          "top": 656.7744444444445,
+          "bottom": 773.441111111111
+        },
+        "overflow": 0,
+        "objectPosition": "50% -327.67px",
+        "shade": "linear-gradient(rgba(15, 15, 15, 0.08), rgba(15, 15, 15, 0.08)), linear-gradient(rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.05) 28%, rgba(15, 15, 15, 0.12) 46%, rgba(15, 15, 15, 0.85) 100%), linear-gradient(90deg, rgba(15, 15, 15, 0.28), rgba(15, 15, 15, 0) 75%)"
+      },
+      {
+        "width": 3840,
+        "height": 1600,
+        "natural": [
+          2304,
+          1536
+        ],
+        "hero": {
+          "x": 0,
+          "y": 0,
+          "width": 3840,
+          "height": 1143,
+          "top": 0,
+          "right": 3840,
+          "bottom": 1143,
+          "left": 0
+        },
+        "title": {
+          "x": 960,
+          "y": 189.546875,
+          "width": 1460,
+          "height": 60.890625,
+          "top": 189.546875,
+          "right": 2420,
+          "bottom": 250.4375,
+          "left": 960
+        },
+        "copy": {
+          "x": 960,
+          "y": 185,
+          "width": 1920,
+          "height": 70,
+          "top": 185,
+          "right": 2880,
+          "bottom": 255,
+          "left": 960
+        },
+        "copyGrid": true,
+        "firstHeadY": 279,
+        "lastFaceY": 1119,
+        "navBottom": 155,
+        "face": {
+          "left": 470,
+          "right": 611.6666666666667,
+          "top": 845.6666666666667,
+          "bottom": 1020.6666666666667
+        },
+        "overflow": 0,
+        "objectPosition": "50% -631px",
+        "shade": "linear-gradient(rgba(15, 15, 15, 0.08), rgba(15, 15, 15, 0.08)), linear-gradient(rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.05) 28%, rgba(15, 15, 15, 0.12) 46%, rgba(15, 15, 15, 0.85) 100%), linear-gradient(90deg, rgba(15, 15, 15, 0.28), rgba(15, 15, 15, 0) 75%)"
+      }
+    ]
+  },
   "source_package_visual_parity": {
     "method": "Playwright PNG comparison, Pixelmatch threshold0.1, same viewport/DPR/fonts; source vs html/index.html",
     "rows": [
@@ -641,14 +1370,24 @@
       }
     ]
   },
-  "fragments": {
-    "fragments": 4,
-    "reassembled_body_matches": true
+  "image_integrity": {
+    "width": 2304,
+    "height": 1536,
+    "format": "lossless WebP",
+    "decodedPixelMatchToApprovedPng": true,
+    "differentChannelValues": 0,
+    "webpSha256": "9759b564bf1ed2b435b09947b1b197b7c8cf828ae07186d7a838dbcb3caef128",
+    "originalFaceRegion": {
+      "differentChannelValues": 0,
+      "maxDelta": 0,
+      "comparedChannelValues": 5591040,
+      "comparison": "Exact raw pixel equality against the globally color-graded input in the protected original-pixel region. This checks pixel preservation, not face recognition."
+    }
   },
   "assets": 12,
   "notes": [
     "No real messages or resumes submitted.",
-    "Source and package checked locally; public deployment is verified separately in canonical source verification/current.",
-    "ZIP contains only the current package; no historical variants or private native team photos."
+    "Private native originals are not included.",
+    "Public delivery checked separately in canonical verification/current."
   ]
 }
