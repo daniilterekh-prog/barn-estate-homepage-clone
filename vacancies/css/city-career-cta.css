@@ -1,4 +1,4 @@
-/* Isolated copy of the finalized city consultation block. Only text and hh.ru action are adapted. */
+/* Isolated city consultation copy with careers text, hh.ru action and centered right column. */
 .career-invitation { --kit-font:"Tilda Sans","Tilda Sans Fallback",system-ui,sans-serif; --kit-h2-standard-size:38px; --kit-h2-standard-leading:1.2; --kit-focus-accent:#8b1d25; --kit-action-height:70px; --kit-action-padding:36px; --kit-action-size:17px; --node-copy-gap:24px; --node-heading-content:40px; --city-section-space:var(--career-section); --barn-page-gutter:var(--home-gutter); --uk-gutter:var(--home-gutter); }
 @media(min-width:1441px){.career-invitation{--kit-h2-standard-size:44px;--kit-action-size:19px;--kit-action-padding:47px;}}
 @media(max-width:540px){.career-invitation{--kit-h2-standard-size:22px;--kit-action-height:58px;--kit-action-size:18px;--kit-action-padding:24px;--node-copy-gap:16px;--node-heading-content:28px;}}
@@ -231,7 +231,18 @@
 /* The reference role inherits400 from the city document; the careers body uses300. */
 .career-invitation .catalog-consultation__mobile-role { font-weight:400; }
 
-/* Keep the two columns separate while the original fixed560px copy column is too wide. */
-@media (min-width:769px) and (max-width:1280px) {
- .career-page .career-invitation .catalog-consultation__content { max-width:calc(50% - 24px); }
+
+/* Center the careers copy as a group inside the right half of the CTA. */
+@media (min-width: 769px) {
+ .career-page .career-invitation .catalog-consultation__media[class] { display: flex; align-items: center; }
+ .career-page .career-invitation .catalog-consultation__grid[class] { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: center; }
+ .career-page .career-invitation .catalog-consultation__content[class] { grid-column: 2; justify-self: center; width: calc(100% - 48px); max-width: 560px; margin-inline: 0; }
+}
+@media (min-width: 1441px) {
+ .career-page .career-invitation .catalog-consultation__media[class] { padding-bottom: 72px; }
+}
+@layer barn-layout-grid {
+ @media (min-width: 769px) {
+  .career-page .career-invitation .catalog-consultation .catalog-consultation__media { padding-inline: 0 !important; }
+ }
 }
