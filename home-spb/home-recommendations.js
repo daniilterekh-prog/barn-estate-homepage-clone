@@ -3,7 +3,7 @@
  if(window.__barnesRecommendations)return;
  const favorites=new Set();
  const catalog=JSON.parse(document.getElementById('spb-catalog-data').textContent);
- const catalogRecords=new Map([...catalog.projects,...catalog.lots].map(item=>[item.url,item]));
+ const catalogRecords=new Map([...catalog.projects,...catalog.lots,...(catalog.centralRecommendations||[])].map(item=>[item.url,item]));
  // The embedded SPb catalog also identifies Splide loop clones by their real destination URL.
  const imageBase=new URL('assets/',document.currentScript.src);
  try{for(const value of JSON.parse(localStorage.getItem('barnes-preview-recommendation-favorites')||'[]'))favorites.add(value)}catch{}
