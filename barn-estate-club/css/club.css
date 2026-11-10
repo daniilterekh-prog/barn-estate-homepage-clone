@@ -534,7 +534,7 @@ h2 + .description {
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-end;
-  gap: 36px;
+  gap: 20px;
   padding-top: 210px;
   padding-bottom: 56px;
 }
@@ -863,8 +863,10 @@ form .button {
     height: 960px;
   }
   .club-hero__inner {
-    gap: 48px;
     padding-bottom: 72px;
+  }
+  .hero-description {
+    margin-top: 20px;
   }
 }
 @media (min-width: 1921px) {
@@ -924,6 +926,9 @@ form .button {
     padding-top: 128px;
     padding-bottom: 48px;
     gap: 32px;
+  }
+  .hero-description {
+    margin-top: 14px;
   }
   .club-menu {
     gap: 32px;
@@ -1064,7 +1069,6 @@ form .button {
   .club-hero__inner {
     padding-top: 96px;
     padding-bottom: 32px;
-    gap: 24px;
   }
   .club-hero h1 {
     font-size: 32px;
@@ -1074,9 +1078,6 @@ form .button {
   }
   .hero-description {
     display: none;
-    font-size: 22px;
-    line-height: 1.4;
-    margin-top: 16px;
   }
   .desktop-break {
     display: none;
@@ -1274,7 +1275,6 @@ form .button {
 }
 @media (min-width: 541px) and (max-width: 768px) {
   .club-hero__inner {
-    gap: 28px;
     padding-bottom: 40px;
   }
 }
