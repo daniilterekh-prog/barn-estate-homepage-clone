@@ -7,12 +7,12 @@
   const saleImageBase = new URL('assets/', document.currentScript.src).href;
   const floatingPortrait = new URL('assets/owner-modal-prus.webp', document.currentScript.src).href;
   const roles = [
-    ['.services-section__header', '.services-section__titles', 'BARN ESTATE', '.services-section__eyebrow'],
+    ['.services-section__header', '.services-section__titles', 'BARN ESTATE · SAINT PETERSBURG', '.services-section__eyebrow'],
     ['.barnes-choice__heading', '.barnes-choice__title', 'Недвижимость по направлениям'],
     ['.departments-section__heading', '.departments-section__title', 'Выбрать направление'],
     ['.reviews-section__intro', '.reviews-section__title', 'Репутация BARN Estate', '.reviews-section__eyebrow'],
     ['.team-section__intro', '.team-section__title', 'Эксперты по недвижимости'],
-    ['.partners-section__intro', '.partners-section__title', 'Международная сеть'],
+    ['.partners-section__intro', '.partners-section__title', 'Девелоперы Петербурга'],
     ['.office-contact__copy', 'h2', 'Контакт'],
     ['.news-section__header', '.news-section__title', 'Медиа BARN Estate', '.news-section__eyebrow'],
     ['.newsletter-cta__copy', 'h2', 'Рассылка BARN Estate'],
@@ -38,6 +38,33 @@
     }
     const title = brandText(document.title);
     if (document.title !== title) document.title = title;
+  }
+  // Regional identity and copy belong only to this independent SPb page.
+  const regionalCopy = {
+  ".services-section__description": "BARN Estate Saint Petersburg помогает выбрать недвижимость для жизни, отдыха и инвестиций. Подбираем квартиры в историческом центре и новых жилых кварталах Петербурга, загородные дома в Ленинградской области. Сопровождаем покупку, продажу и аренду с вниманием к вашим задачам и конфиденциальности.",
+  ".about-company__intro": "BARN Estate Saint Petersburg помогает покупать, продавать и арендовать элитную недвижимость Петербурга и Ленинградской области. Учитываем ваш образ жизни, требования к дому и окружению, сопровождаем выбор объекта и сделку на каждом этапе.",
+  ".team-section__description": "Эксперты BARN Estate помогают оценить объект, сравнить предложения и пройти все этапы сделки. К каждому запросу подключаем специалиста по нужному направлению — от городской квартиры до загородного дома.",
+  ".partners-section__description": "Изучаем проекты петербургских застройщиков: сравниваем архитектуру, расположение, планировки и условия покупки. Помогаем выбрать дом с учётом ваших задач, привычных маршрутов и требований к окружению.",
+  ".office-contact__lead": "Приглашаем в петербургский офис на набережной Мойки: обсудим ваши планы и подберём подходящий формат недвижимости."
+};
+  function refreshSpbIdentity() {
+    for (const [selector, text] of Object.entries(regionalCopy)) {
+      const element = document.querySelector(selector);
+      if (element && element.textContent.replace(/\u00a0/g, ' ') !== text.replace(/\u00a0/g, ' ')) element.textContent = text;
+    }
+    for (const host of document.querySelectorAll('.site-header__logo,.owner-sale-sticky__logo,.site-footer__logo,.about-company__brand')) {
+      if (!host.querySelector('img')) continue;
+      let caption = host.querySelector(':scope > .spb-brand-caption');
+      if (!caption) {
+        caption = document.createElement('span');
+        caption.className = 'spb-brand-caption';
+        caption.lang = 'en';
+        caption.textContent = 'Saint Petersburg';
+        host.append(caption);
+      }
+      const label = 'BARN Estate Saint Petersburg' + (host.tagName === 'A' ? ' — на главную' : '');
+      if (host.getAttribute('aria-label') !== label) host.setAttribute('aria-label', label);
+    }
   }
   function refreshLinks() {
     const destinations = new Map([
@@ -146,12 +173,13 @@
       avatar.height = 1448;
     }
     const copyright = document.querySelector('.site-footer__copyright');
-    if (copyright && copyright.textContent !== '© 2026 BARN ESTATE') copyright.textContent = '© 2026 BARN ESTATE';
+    if (copyright && copyright.textContent !== '© 2026 BARN ESTATE · SAINT PETERSBURG') copyright.textContent = '© 2026 BARN ESTATE · SAINT PETERSBURG';
     const hours = document.querySelector('.site-footer__hours');
     if (hours && hours.textContent !== 'Ежедневно с 09:30 до 21:30') hours.textContent = 'Ежедневно с 09:30 до 21:30';
     refreshContactButtons();
     refreshLinks();
     refreshBrand();
+    refreshSpbIdentity();
     window.__barnesHomeAbout?.fitLogo();
     window.__barnesHeaderContacts?.refresh();
     window.__barnesRecommendations?.refresh();

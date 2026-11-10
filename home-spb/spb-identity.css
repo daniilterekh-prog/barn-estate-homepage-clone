@@ -1,0 +1,49 @@
+/* Saint Petersburg department signature; isolated from Moscow and final nodes. */
+.spb-brand-caption {
+  display: block;
+  font-family: 'Tilda Sans', sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: .24em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  text-align: center;
+}
+html body.barnes-media-header :is(.site-header__logo,.owner-sale-sticky__logo) {
+  flex-direction: column !important;
+  gap: 0 !important;
+  min-height: calc(var(--mh-logo) + 8px);
+}
+html body.barnes-media-header :is(.site-header__logo,.owner-sale-sticky__logo) .spb-brand-caption {
+  margin-top: -4px;
+  color: #fff;
+}
+html body.barnes-media-header :is(.site-header--scrolled,.site-header--menu-open,.owner-sale-sticky) .spb-brand-caption {
+  color: #1e1e1e;
+}
+.site-footer__logo { height: auto !important; gap: 0 !important; }
+.site-footer__logo img {
+  height: var(--mh-logo,48px) !important;
+  width: auto !important;
+  flex-shrink: 0;
+}
+.site-footer__logo .spb-brand-caption {
+  margin-top: 9px;
+  font-size: 11px;
+  color: inherit;
+}
+.about-company__brand .spb-brand-caption {
+  margin-top: 18px;
+  font-size: 12px;
+  letter-spacing: .3em;
+  color: #8b1d25;
+}
+@media (max-width: 767px) {
+  html body.barnes-media-header :is(.site-header__logo,.owner-sale-sticky__logo) .spb-brand-caption {
+    margin-top: -3px;
+    font-size: 8px;
+    letter-spacing: .2em;
+  }
+  .about-company__brand .spb-brand-caption { font-size: 10px; }
+}
