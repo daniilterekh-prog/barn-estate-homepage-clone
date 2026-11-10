@@ -207,7 +207,7 @@
       "name": "Yana Jolobodkina",
       "role": "Руководитель контактного центра",
       "sourceRole": "Head of Contact Center",
-      "group": "office",
+      "group": "marketing",
       "sourceImage": "https://barn-estate.ru/upload/resize_cache/iblock/600/860_860_1/egaqww0ixdzkpsk1ubuwnemyi56mamn5.png",
       "image": "assets/person-20.webp",
       "leadership": false
@@ -217,7 +217,7 @@
       "name": "Natalia Kushnerova",
       "role": "Руководитель службы качества и клиентского сервиса",
       "sourceRole": "Head of Quality Control & Care",
-      "group": "office",
+      "group": "marketing",
       "sourceImage": "https://barn-estate.ru/upload/resize_cache/iblock/675/860_860_1/7xczfrxsxft8rxod0tixobvxs9ytfxuz.png",
       "image": "assets/person-21.webp",
       "leadership": false
@@ -297,17 +297,17 @@
     ],
     "note": "Фильтр руководителей дополнительно включает сотрудников их профильных направлений; первоначальные sourceRole сохранены.",
     "departmentSplit": {
-      "date": "2026-11-09",
-      "source": "Уточнение пользователя: выделить маркетинг и офис отдельно",
+      "date": "2026-11-10",
+      "source": "Уточнение пользователя: Жолободкину и Кушнереву добавить в маркетинг",
       "marketingIds": [
         "person-19",
+        "person-20",
+        "person-21",
         "person-22",
         "person-23",
         "person-24"
       ],
       "officeIds": [
-        "person-20",
-        "person-21",
         "person-25",
         "person-26",
         "person-27"
