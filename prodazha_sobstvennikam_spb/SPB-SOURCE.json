@@ -162,6 +162,7 @@
     "canonicalLibrary": "https://github.com/daniilterekh-prog/barnes-assets/tree/main/portraits/ludmila-belousova/2026-11-10",
     "metadata": "color-metadata.json",
     "prompt": "color-prompt.txt",
-    "backgroundTreatment": "Original full-colour interior; grayscale filters removed"
+    "backgroundTreatment": "Original full-colour interior; grayscale filters removed",
+    "ctaScale": 0.92
   }
 }

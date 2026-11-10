@@ -1,0 +1,92 @@
+[
+  {
+    "width": 390,
+    "images": [
+      {
+        "large": true,
+        "visible": false,
+        "transform": "none",
+        "loaded": true
+      },
+      {
+        "large": false,
+        "visible": true,
+        "transform": "matrix(1.24, 0, 0, 1.24, 0, 6)",
+        "loaded": true
+      }
+    ],
+    "overflow": false
+  },
+  {
+    "width": 768,
+    "images": [
+      {
+        "large": true,
+        "visible": false,
+        "transform": "none",
+        "loaded": true
+      },
+      {
+        "large": false,
+        "visible": false,
+        "transform": "none",
+        "loaded": true
+      }
+    ],
+    "overflow": false
+  },
+  {
+    "width": 1440,
+    "images": [
+      {
+        "large": true,
+        "visible": true,
+        "transform": "matrix(0.92, 0, 0, 0.92, 0, 0)",
+        "loaded": true
+      },
+      {
+        "large": false,
+        "visible": false,
+        "transform": "none",
+        "loaded": true
+      }
+    ],
+    "overflow": false
+  },
+  {
+    "width": 1920,
+    "images": [
+      {
+        "large": true,
+        "visible": true,
+        "transform": "matrix(0.92, 0, 0, 0.92, 0, 0)",
+        "loaded": true
+      },
+      {
+        "large": false,
+        "visible": false,
+        "transform": "none",
+        "loaded": true
+      }
+    ],
+    "overflow": false
+  },
+  {
+    "width": 2560,
+    "images": [
+      {
+        "large": true,
+        "visible": true,
+        "transform": "matrix(0.92, 0, 0, 0.92, 0, 0)",
+        "loaded": true
+      },
+      {
+        "large": false,
+        "visible": false,
+        "transform": "none",
+        "loaded": true
+      }
+    ],
+    "overflow": false
+  }
+]
