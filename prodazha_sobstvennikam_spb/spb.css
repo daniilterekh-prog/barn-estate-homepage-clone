@@ -13,6 +13,6 @@
  .home-owner-form__hero-image{object-position:center bottom}
 }
 
-.home-owner-form__hero{filter:grayscale(1);background:#181818 url("assets/editorial/cta-residence.webp") center/cover no-repeat}
+.home-owner-form__hero{background:#181818 url("assets/editorial/cta-residence.webp") center/cover no-repeat}
 .floating-expert__avatar{background:#dedede}
 .catalog-consultation__mobile-photo{background:#dedede;border-radius:50%;overflow:hidden}

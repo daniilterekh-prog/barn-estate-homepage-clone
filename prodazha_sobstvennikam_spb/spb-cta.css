@@ -32,6 +32,3 @@ html body#ui-kit-page[data-resort-cta] :is(#request,#resort-cta-consultation,#re
 html body#ui-kit-page[data-resort-cta] :is(#request,#resort-cta-consultation,#resort-cta-contact):where(.catalog-contact,.catalog-consultation):where([data-resort-node]):not(#rs-priority#rs-priority#rs-priority):not(#rs-priority#rs-priority#rs-priority).catalog-consultation .catalog-consultation__image{display:none!important}
 html body#ui-kit-page[data-resort-cta] :is(#request,#resort-cta-consultation,#resort-cta-contact):where(.catalog-contact,.catalog-consultation):where([data-resort-node]):not(#rs-priority#rs-priority#rs-priority):not(#rs-priority#rs-priority#rs-priority).catalog-consultation .catalog-consultation__overlay{background:rgba(5,7,10,.72)!important}
 }
-
-/* Match the monochrome portrait without desaturating the form controls. */
-html body#ui-kit-page[data-resort-cta] :is(#request,#resort-cta-consultation).catalog-consultation .catalog-consultation__overlay{backdrop-filter:grayscale(1)!important;-webkit-backdrop-filter:grayscale(1)!important}

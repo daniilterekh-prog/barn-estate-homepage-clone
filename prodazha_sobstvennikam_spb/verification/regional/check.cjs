@@ -43,7 +43,7 @@ const base=process.env.CHECK_URL||'http://127.0.0.1:8769/barn-estate-homepage-cl
    assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),true);
    assert.deepEqual(errors,[]);assert.deepEqual(failed,[]);
    const directory=process.env.REPORT_DIR||__dirname;fs.mkdirSync(directory,{recursive:true});await page.screenshot({path:path.join(directory,width+'-hero.webp'),animations:'disabled'});
-   report.push({width,h1:await page.locator('h1').innerText(),expert:await page.locator('.floating-expert__name').innerText(),errors,failed,dialogValidation:true,focusRestored:true,directionsRemoved:true,fullWidthInteriorBackground:true,newEditorialImages:10,portrait:"ludmila-belousova-hq",overflow:false});await page.close();
+   report.push({width,h1:await page.locator('h1').innerText(),expert:await page.locator('.floating-expert__name').innerText(),errors,failed,dialogValidation:true,focusRestored:true,directionsRemoved:true,fullWidthInteriorBackground:true,newEditorialImages:10,portrait:"ludmila-belousova-color-hq",overflow:false});await page.close();
   }
   fs.writeFileSync(path.join(process.env.REPORT_DIR||__dirname,'report.json'),JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify(report,null,2));
  }finally{await browser.close()}

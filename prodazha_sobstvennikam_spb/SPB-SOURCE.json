@@ -15,8 +15,8 @@
   "expert": {
     "name": "Людмила Белоусова",
     "role": "Руководитель филиала BARN Estate в Санкт-Петербурге",
-    "portrait": "assets/ludmila-belousova-hq-avatar.webp",
-    "canonicalPortrait": "https://github.com/daniilterekh-prog/barnes-assets/blob/main/portraits/ludmila-belousova/2026-11-10/ludmila-belousova-hq.png",
+    "portrait": "assets/ludmila-belousova-color-hq-avatar.webp",
+    "canonicalPortrait": "https://github.com/daniilterekh-prog/barnes-assets/blob/main/portraits/ludmila-belousova/2026-11-10/ludmila-belousova-color-hq.png",
     "roleSource": "Уточнение пользователя в чате,10.11.2026: «Белоусова руководитель филиала барн эстейт спб»",
     "updated": "2026-11-10",
     "placement": [
@@ -25,7 +25,7 @@
       "widget-contact-quiz"
     ],
     "profileUrl": null,
-    "note": "Новый генеративный портрет по поручению пользователя 10.11.2026, исходное фото сохранено в библиотеке.",
+    "note": "Цветная колоризация существующего генеративного портрета встроенным image_gen по поручению пользователя 10.11.2026. Цвет восстановлен приблизительно.",
     "referencePortrait": "https://github.com/daniilterekh-prog/barnes-assets/blob/main/portraits/ludmila-belousova/2026-11-09/ludmila-belousova-bw-v1.png"
   },
   "catalogSource": "home-spb/spb-catalog.json",
@@ -88,12 +88,12 @@
   },
   "currentPortraitFiles": [
     {
-      "path": "assets/ludmila-belousova-hq.webp",
-      "sha256": "962dc256c6c0ba442ee5e766812e316882bbc0219e115872d060a6843d6b4578"
+      "path": "assets/ludmila-belousova-color-hq.webp",
+      "sha256": "ce4bb977f89ee04f3036bd93efe589b64caea495f693d09f569792d5dd4be121"
     },
     {
-      "path": "assets/ludmila-belousova-hq-avatar.webp",
-      "sha256": "93bc2e87dd650283be917ca399dd030172b2d08bb7be8446f04a9a0a509bb73e"
+      "path": "assets/ludmila-belousova-color-hq-avatar.webp",
+      "sha256": "208a9913dbefc0c6a7bc9d069c779c1cd2d0b0cd5d720f4ed7965ae653134dd2"
     }
   ],
   "previousHeroReference": {
@@ -156,5 +156,12 @@
         "sha256": "3285d219f1845deb8887ba3bc04b8e79ce8d3bec99dd568d8a51b8c5fa8bf9af"
       }
     ]
+  },
+  "currentPortrait": {
+    "type": "generated-colourisation",
+    "canonicalLibrary": "https://github.com/daniilterekh-prog/barnes-assets/tree/main/portraits/ludmila-belousova/2026-11-10",
+    "metadata": "color-metadata.json",
+    "prompt": "color-prompt.txt",
+    "backgroundTreatment": "Original full-colour interior; grayscale filters removed"
   }
 }

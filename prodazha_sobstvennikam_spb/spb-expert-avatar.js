@@ -1,6 +1,6 @@
 /* Same Ruslan portrait as Media; wait for preserved page hydration. */
 (() => {
-  const portrait = new URL('assets/ludmila-belousova-hq-avatar.webp', document.currentScript.src).href;
+  const portrait = new URL('assets/ludmila-belousova-color-hq-avatar.webp', document.currentScript.src).href;
   function update() {
     for (const image of document.querySelectorAll('.floating-expert__avatar img')) {
       if (image.src !== portrait) {
