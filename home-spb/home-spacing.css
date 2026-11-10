@@ -194,26 +194,26 @@ body.barnes-home-typography .services-section__link {
   }
 }
 
-/* User-selected hero image; uniform 40% black overlay. */
+/* SPb hero trial: Kollektsioner, official RBI image; keep the kit's 40% overlay. */
 body.barnes-home-typography .home-hero__media {
-  background-image: url("assets/home-hero-cleaned.png");
+  background-image: url("assets/home-spb-hero-kollektsioner.webp");
   background-size: cover;
-  background-position: center 25%;
+  background-position: center 35%;
   background-repeat: no-repeat;
 }
 body.barnes-home-typography .home-hero__video { display: none !important; }
 body.barnes-home-typography .home-hero__overlay { background: rgba(0,0,0,.4) !important; }
 
-/* Dedicated panoramic composition for viewports strictly wider than 1920px. */
+/* Same official architecture on ultrawide displays. */
 @media(min-width:1921px) {
-  body.barnes-home-typography .home-hero__media { background-image: url("assets/home-hero-ultrawide.png"); }
+  body.barnes-home-typography .home-hero__media { background-image: url("assets/home-spb-hero-kollektsioner.webp"); }
 }
 
-/* Independently generated portrait composition for phones. */
+/* Mobile crop keeps the principal stone facade in frame. */
 @media(max-width:767px) {
   body.barnes-home-typography .home-hero__media {
-    background-image: url("assets/home-hero-mobile.webp");
-    background-position: center;
+    background-image: url("assets/home-spb-hero-kollektsioner-mobile.webp");
+    background-position: 38% center;
   }
 }
 

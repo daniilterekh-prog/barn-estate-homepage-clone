@@ -1,9 +1,9 @@
-# Главная СПб — BARN Estate
+# Главная СПб — примерка херо «Коллекционер»
 
-[Открыть страницу](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/home-spb/).
+[Открыть страницу](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/home-spb/) ·10.11.2026.
 
-Независимая копия московской главной на UI-ките v1.0.3. Общие тексты, навигация, квиз, адрес офиса и метаданные адаптированы под Санкт-Петербург. Московские объекты временно оставлены примерами по выбору пользователя.
+По поручению пользователя в херо установлен кадр №9 из подборки, официальный материал RBI. Дизайн и затемнение40% сохранены, на телефоне отдельное положение кадра. Примерка ещё не означает финальное утверждение.
 
-[Рабочие исходники и проверки](https://github.com/daniilterekh-prog/barnes-sites/tree/main/main-site/pages/home-spb). Превью с noindex, отправка заявок отключена.
+[Канонические исходники](https://github.com/daniilterekh-prog/barnes-sites/tree/main/main-site/pages/home-spb) · [Оригинал и WebP](https://github.com/daniilterekh-prog/barnes-assets/tree/main/home-spb/hero/kollektsioner) · [Происхождение](hero-source.json).
 
-[Что ещё заменить или убрать](https://github.com/daniilterekh-prog/barnes-sites/blob/main/main-site/pages/home-spb/LOCALIZATION-2026-11-09.md).
+Страница представляет рабочую адаптацию СПб; московские карточки сохранены примерами по выбору пользователя. На боевой домен СПб не устанавливалась.
