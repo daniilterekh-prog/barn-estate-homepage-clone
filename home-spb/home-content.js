@@ -54,15 +54,8 @@
     }
     for (const host of document.querySelectorAll('.site-header__logo,.owner-sale-sticky__logo,.site-footer__logo,.about-company__brand')) {
       if (!host.querySelector('img')) continue;
-      let caption = host.querySelector(':scope > .spb-brand-caption');
-      if (!caption) {
-        caption = document.createElement('span');
-        caption.className = 'spb-brand-caption';
-        caption.lang = 'en';
-        caption.textContent = 'Saint Petersburg';
-        host.append(caption);
-      }
-      const label = 'BARN Estate Saint Petersburg' + (host.tagName === 'A' ? ' — на главную' : '');
+      host.querySelectorAll('.spb-brand-caption').forEach(caption => caption.remove());
+      const label = 'BARN Estate' + (host.tagName === 'A' ? ' — на главную' : '');
       if (host.getAttribute('aria-label') !== label) host.setAttribute('aria-label', label);
     }
   }
