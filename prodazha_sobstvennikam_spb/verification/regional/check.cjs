@@ -20,7 +20,12 @@ const base=process.env.CHECK_URL||'http://127.0.0.1:8769/barn-estate-homepage-cl
    assert.equal(await page.locator('a[href="#property-types"]').count(),0,'Ссылок на удалённый блок быть не должно');
    assert.match(await page.locator('.catalog-consultation__image').getAttribute('src'),/ludmila.*hq/);
    assert.match(await page.locator('.catalog-consultation__media').evaluate(e=>getComputedStyle(e).backgroundImage),/cta-residence/);
-   const hero=page.locator('.owner-sale-hero img').first();assert.match(await hero.getAttribute('src'),/zen/);assert.equal(await hero.evaluate(i=>i.complete&&i.naturalWidth>0),true);
+   const hero=page.locator('.owner-sale-hero img').first();assert.match(await hero.getAttribute('src'),/editorial\/hero/);assert.equal(await hero.evaluate(i=>i.complete&&i.naturalWidth>0),true);
+   const editorialImages=page.locator('.owner-sale-hero__image,.owner-sale-presentation__image,.be-panorama-image,.owner-sale-strategy__image,.newsletter-cta img');
+   assert.equal(await editorialImages.count(),10,'На странице десять новых иллюстраций в img и отдельный фон CTA');
+   assert.equal(await editorialImages.evaluateAll(images=>images.every(i=>i.currentSrc.includes('/assets/editorial/')||i.src.includes('/assets/editorial/'))),true,'Все иллюстрации должны использовать новую серию');
+   for(const image of await editorialImages.all()){await image.scrollIntoViewIfNeeded();await image.evaluate(i=>i.decode());}
+   assert.equal(await editorialImages.evaluateAll(images=>images.every(i=>i.complete&&i.naturalWidth>0)),true,'Все изображения должны загружаться');
    const copyButton=page.locator('.about-company__read-more');await copyButton.scrollIntoViewIfNeeded();await copyButton.click();
    assert.doesNotMatch(await page.locator('.about-company').innerText(),/Петровк|Москв|Подмосков/);
    assert.match(await page.locator('.about-company').innerText(),/Мойки, 59/);
@@ -38,7 +43,7 @@ const base=process.env.CHECK_URL||'http://127.0.0.1:8769/barn-estate-homepage-cl
    assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),true);
    assert.deepEqual(errors,[]);assert.deepEqual(failed,[]);
    const directory=process.env.REPORT_DIR||__dirname;fs.mkdirSync(directory,{recursive:true});await page.screenshot({path:path.join(directory,width+'-hero.webp'),animations:'disabled'});
-   report.push({width,h1:await page.locator('h1').innerText(),expert:await page.locator('.floating-expert__name').innerText(),errors,failed,dialogValidation:true,focusRestored:true,directionsRemoved:true,fullWidthInteriorBackground:true,portrait:"ludmila-belousova-hq",overflow:false});await page.close();
+   report.push({width,h1:await page.locator('h1').innerText(),expert:await page.locator('.floating-expert__name').innerText(),errors,failed,dialogValidation:true,focusRestored:true,directionsRemoved:true,fullWidthInteriorBackground:true,newEditorialImages:11,portrait:"ludmila-belousova-hq",overflow:false});await page.close();
   }
   fs.writeFileSync(path.join(process.env.REPORT_DIR||__dirname,'report.json'),JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify(report,null,2));
  }finally{await browser.close()}
