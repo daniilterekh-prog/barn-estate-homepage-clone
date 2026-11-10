@@ -136,8 +136,25 @@
     "canonicalCommit": "8e2d3986af58cd2a269489da64617cff32e21c92"
   },
   "currentImageSeries": {
-    "count": 11,
+    "count": 10,
     "library": "https://github.com/daniilterekh-prog/barnes-assets/tree/main/owner-sale-spb/editorial",
     "manifest": "EDITORIAL-IMAGES.json"
+  },
+  "newsletter": {
+    "reference": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/home-spb/",
+    "referenceCommit": "2e198699",
+    "sameAsMainHomepage": true,
+    "css": "spb-newsletter.css",
+    "backgroundAdapter": "spb-newsletter.js",
+    "assets": [
+      {
+        "path": "assets/newsletter-home.webp",
+        "sha256": "a59b66d0d7fdeda1b0b0726fc2b9f0f23450da792c5cff66bba1482a09d8774f"
+      },
+      {
+        "path": "assets/newsletter-home-mobile.webp",
+        "sha256": "3285d219f1845deb8887ba3bc04b8e79ce8d3bec99dd568d8a51b8c5fa8bf9af"
+      }
+    ]
   }
 }

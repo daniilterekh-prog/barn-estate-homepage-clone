@@ -1,0 +1,83 @@
+{
+  "referenceCommit": "2e198699",
+  "viewportHeight": 1000,
+  "deviceScaleFactor": 1,
+  "fontReady": true,
+  "animationsDisabled": true,
+  "fixture": "Section pinned to integer top; external header/footer/floating expert hidden for component-only comparison. Geometry was measured in normal flow first.",
+  "pixelmatchThreshold": 0.1,
+  "rows": [
+    {
+      "width": 320,
+      "dimensions": [
+        305,
+        516
+      ],
+      "differentPixels": 0,
+      "ratio": 0,
+      "referencePngSha256": "c53fbaa0b484433d18fa13deade27ff5d2aaded5389dd6e2118e1f00a1385093",
+      "pagePngSha256": "c53fbaa0b484433d18fa13deade27ff5d2aaded5389dd6e2118e1f00a1385093",
+      "pngByteIdentical": true
+    },
+    {
+      "width": 390,
+      "dimensions": [
+        375,
+        495
+      ],
+      "differentPixels": 0,
+      "ratio": 0,
+      "referencePngSha256": "bee9277187d2434287c464c7ec7459f1f3d45716cfda56ffff79f223ff983199",
+      "pagePngSha256": "bee9277187d2434287c464c7ec7459f1f3d45716cfda56ffff79f223ff983199",
+      "pngByteIdentical": true
+    },
+    {
+      "width": 768,
+      "dimensions": [
+        753,
+        732
+      ],
+      "differentPixels": 0,
+      "ratio": 0,
+      "referencePngSha256": "30076dfc85b5cc589cfb645b2eedb4f04935bd6464a42ad9557a8e58a74e8663",
+      "pagePngSha256": "30076dfc85b5cc589cfb645b2eedb4f04935bd6464a42ad9557a8e58a74e8663",
+      "pngByteIdentical": true
+    },
+    {
+      "width": 1440,
+      "dimensions": [
+        1425,
+        667
+      ],
+      "differentPixels": 0,
+      "ratio": 0,
+      "referencePngSha256": "aa003d6b24a1fe9674aa32b93373fc5094b2a3920474aeadad8a2704167cd75b",
+      "pagePngSha256": "aa003d6b24a1fe9674aa32b93373fc5094b2a3920474aeadad8a2704167cd75b",
+      "pngByteIdentical": true
+    },
+    {
+      "width": 1920,
+      "dimensions": [
+        1905,
+        680
+      ],
+      "differentPixels": 0,
+      "ratio": 0,
+      "referencePngSha256": "3e6c594854d15d823c2e7f210699ca4ba64c024079749ba832df323f06490359",
+      "pagePngSha256": "3e6c594854d15d823c2e7f210699ca4ba64c024079749ba832df323f06490359",
+      "pngByteIdentical": true
+    },
+    {
+      "width": 2560,
+      "dimensions": [
+        2545,
+        680
+      ],
+      "differentPixels": 0,
+      "ratio": 0,
+      "referencePngSha256": "b4397bd27142b1f19d0af54187664af61811c7ed67ae1134983c74bfa6225caa",
+      "pagePngSha256": "b4397bd27142b1f19d0af54187664af61811c7ed67ae1134983c74bfa6225caa",
+      "pngByteIdentical": true
+    }
+  ]
+}
