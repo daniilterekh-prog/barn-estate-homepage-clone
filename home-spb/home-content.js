@@ -5,7 +5,7 @@
   if (window.__barnesHomeContent) return;
   window.__barnesHomeContent = {pending: true};
   const saleImageBase = new URL('assets/', document.currentScript.src).href;
-  const floatingPortrait = new URL('assets/owner-modal-prus.webp', document.currentScript.src).href;
+  const floatingPortrait = new URL('assets/ludmila-belousova-bw.webp', document.currentScript.src).href;
   const roles = [
     ['.services-section__header', '.services-section__titles', 'BARN ESTATE · SAINT PETERSBURG', '.services-section__eyebrow'],
     ['.barnes-choice__heading', '.barnes-choice__title', 'Недвижимость по направлениям'],
@@ -187,8 +187,18 @@
     if (avatar && avatar.src !== floatingPortrait) {
       avatar.removeAttribute('srcset');
       avatar.src = floatingPortrait;
-      avatar.width = 1086;
-      avatar.height = 1448;
+      avatar.width = 1254;
+      avatar.height = 1254;
+    }
+    const expert = document.querySelector('.floating-expert');
+    for (const [selector, text] of [['.floating-expert__name', 'Людмила Белоусова'], ['.floating-expert__label', 'Руководитель отдела продаж BARN Estate Saint Petersburg']]) {
+      const element = expert?.querySelector(selector);
+      if (element && element.textContent.replace(/\u00a0/g, ' ') !== text) element.textContent = text;
+    }
+    if (expert) {
+      expert.setAttribute('aria-label', 'Людмила Белоусова');
+      expert.querySelector('.floating-expert__close')?.setAttribute('aria-label', 'Скрыть карточку Людмилы Белоусовой');
+      if (avatar) avatar.alt = 'Людмила Белоусова';
     }
     const copyright = document.querySelector('.site-footer__copyright');
     if (copyright && copyright.textContent !== '© 2026 BARN ESTATE · SAINT PETERSBURG') copyright.textContent = '© 2026 BARN ESTATE · SAINT PETERSBURG';

@@ -148,16 +148,15 @@ body.barnes-home-typography .office-contact { padding-inline: 0 !important; }
 body.barnes-home-typography .site-footer :is(.site-footer__link,
  .site-footer__column-title--link,.site-footer__phone,.site-footer__email,
  .site-footer__privacy):is(:hover,:focus-visible,:active) { color: #8b1d25 !important; }
-/* High-resolution library portrait: closer face with headroom in the round avatar.
- * Uses the existing 1086x1448 source, without enlarging a low-resolution crop. */
+/* Monochrome Ludmila portrait: frame the face inside the existing round avatar. */
 body.barnes-home-typography .floating-expert__avatar { position: relative; }
 body.barnes-home-typography .floating-expert__avatar img {
   position: absolute;
-  width: 170% !important;
+  width: 155% !important;
   max-width: none;
   height: auto !important;
-  left: -35%;
-  top: -5%;
+  left: -27.5%;
+  top: -6%;
   object-fit: cover !important;
   object-position: center top !important;
   transform: none !important;
