@@ -28,7 +28,7 @@
 | Курортная | [Превью](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/kurortnaya/) | [Исходники](https://github.com/daniilterekh-prog/barnes-sites/tree/main/main-site/pages/resort/kit-2026-11-01) |
 | Каталог | [Превью](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/katalog-nedvizhimosti/) | [Исходники](https://github.com/daniilterekh-prog/barnes-sites/tree/main/main-site/pages/catalog) |
 | Избранное | [Превью](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/izbrannoe/) | [Исходники](https://github.com/daniilterekh-prog/barnes-sites/tree/main/main-site/pages/favorites) |
-| Страница лота · херо №3 по высоте главной | [Сравнение](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/stranitsa-lota/hero-options/) | [Описание](https://github.com/daniilterekh-prog/barnes-sites/blob/main/main-site/pages/lot/HERO-OPTIONS.md) |
+| Страница лота · №3: крупный заголовок и белая строка | [Сравнение](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/stranitsa-lota/hero-options/) | [Описание](https://github.com/daniilterekh-prog/barnes-sites/blob/main/main-site/pages/lot/HERO-OPTIONS.md) |
 | Страница лота · кит1.0.6, структура10.11 | [Превью](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/stranitsa-lota/) | [Исходники](https://github.com/daniilterekh-prog/barnes-sites/tree/main/main-site/pages/lot) |
 
 Старые адреса `/`, `/barnes-moscow/` ведут на текущую главную; `international-latest.html` — на текущую зарубежную. Утверждённые Git-метки сохраняют исходные релизы.

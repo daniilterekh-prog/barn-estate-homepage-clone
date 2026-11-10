@@ -109,6 +109,14 @@
       "sourceCommit": "98a0f9d1f2125954bc146a59a7eef004aca23c51",
       "sha256": "9ba4a0fec8a92ebf53749bea2ea9bb6269b139be7eb96ad7f4e0a55586d3d3f3",
       "adaptation": "Local package root; tone for optional full-screen hero previews; hidden while dialogs/menu are open"
+    },
+    {
+      "source": "main-site/shared/hero-media/hero.css",
+      "target": "hero-variants.css",
+      "sourceCommit": "93ff4c2c32ceae0881967d3e4a7d119fc61d49dc",
+      "sourceSha256": "002bf2d2c75f7ec115686583aaf4c007c82f0a93884dcef8ef52570cf22ae81d",
+      "sha256": "68b17cdde9b03dd9337856d40b324287579560da07546971d12f86ad50c2263e",
+      "adaptation": "Variant 3 reuses Media/Owner hero title, CTA, overlay and spacing roles; compact white action row follows homepage filters; other optional variants remain local."
     }
   ]
 }

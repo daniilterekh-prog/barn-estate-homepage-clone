@@ -1,4 +1,4 @@
-[Вариант 3: высота главной, текст внизу и исправленные меню · 10.11.2026](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/stranitsa-lota/?hero=3&v=hero3-home-20261110). Сверены все правила высоты главной и 16 размеров окна, проверены 27 выпадающих меню; [детали](https://github.com/daniilterekh-prog/barnes-sites/blob/main/main-site/pages/lot/HERO-OPTIONS.md).
+[Вариант 3: крупный заголовок херо и белая строка параметров · 10.11.2026](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/stranitsa-lota/?hero=3&v=hero-kit-20261110). Высота главной сохранена; типографика, CTA и отступы сверены со страницами Медиа/Собственников. [Детали и проверки](https://github.com/daniilterekh-prog/barnes-sites/blob/main/main-site/pages/lot/HERO-OPTIONS.md).
 
 # Общий шаблон лота BARN Estate
 
