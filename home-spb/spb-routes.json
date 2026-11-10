@@ -32,9 +32,10 @@
     "/gorodskaya-nedvizhimost/filter/type_immovables-is-apartamenty/": "https://barnestate-spb.ru/gorodskaya-nedvizhimost/filter/type_immovables-is-apartamenty/",
     "/gorodskaya-nedvizhimost/filter/type_immovables-is-penthausy/": "https://barnestate-spb.ru/gorodskaya-nedvizhimost/filter/type_immovables-is-penthausy/"
   },
-  "pending": [
-    "/kurortnaya/",
-    "/mezhdunarodnaya-nedvizhimost/"
-  ],
-  "note": "Общие курортный и зарубежный разделы на СПб-домене404; до ответа пользователя остаются прежние рабочие центральные ссылки. Областные/страновые страницы СПб найдены отдельно."
+  "pending": [],
+  "note": "10.11.2026 пользователь подтвердил: «Курортная» и «Зарубежная» ведут на московский barn-estate.ru. Ожидающих уточнения URL нет.",
+  "approvedCentralRoutes": {
+    "/kurortnaya/": "https://barn-estate.ru/kurortnaya/",
+    "/mezhdunarodnaya-nedvizhimost/": "https://barn-estate.ru/mezhdunarodnaya-nedvizhimost/"
+  }
 }

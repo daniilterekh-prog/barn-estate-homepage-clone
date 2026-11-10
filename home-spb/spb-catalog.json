@@ -500,7 +500,7 @@
       "name": "Курортная",
       "url": "https://barn-estate.ru/kurortnaya/",
       "picture": "/barn-estate-homepage-clone/home-spb/assets/af90d2d2ac76e4759316c0f5.jpg",
-      "pendingRoute": true
+      "pendingRoute": false
     },
     {
       "id": 109331,
@@ -508,7 +508,7 @@
       "name": "Зарубежная",
       "url": "https://barn-estate.ru/mezhdunarodnaya-nedvizhimost/",
       "picture": "/barn-estate-homepage-clone/home-spb/assets/7000afc1a60de3e76de77dde.jpg",
-      "pendingRoute": true
+      "pendingRoute": false
     }
   ],
   "groups": [
@@ -1108,10 +1108,7 @@
       "squareTo": 0
     }
   ],
-  "pendingRoutes": [
-    "resort",
-    "international"
-  ],
+  "pendingRoutes": [],
   "regionLinks": {
     "resort": [
       {
@@ -1135,5 +1132,9 @@
     ]
   },
   "canonicalAssetsCommit": "633480528f86a7a45aeaef52b24dbd176d726364",
-  "status": "Каталог и четыре основных направления обновлены. Общие URL курортного и зарубежного направлений ожидают уточнения пользователя."
+  "status": "Шесть направлений и каталог обновлены. Московский домен для курортного и зарубежного направлений подтверждён пользователем.",
+  "approvedCentralRoutes": {
+    "/kurortnaya/": "https://barn-estate.ru/kurortnaya/",
+    "/mezhdunarodnaya-nedvizhimost/": "https://barn-estate.ru/mezhdunarodnaya-nedvizhimost/"
+  }
 }
