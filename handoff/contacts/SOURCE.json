@@ -1,14 +1,14 @@
 {
   "date": "2026-11-10",
   "repository": "daniilterekh-prog/barnes-sites",
-  "commit": "cd19a0bbe06face41be7211064d8ad09cf52f085",
+  "commit": "78b259d72e0a4717f8a04909f12bbc086e4f29db",
   "source": "main-site/pages/contacts/",
   "preview": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/contacts/",
   "transform": "Local resource paths only. JavaScript, assets and content data copied byte-for-byte. HTML fragments extracted from the exported full page.",
   "files": [
     {
       "source": "main-site/pages/contacts/assets/footer-logo.svg",
-      "file": "code/assets/icons/footer-logo.svg",
+      "file": "assets/icons/footer-logo.svg",
       "sourceSha256": "25d4a2a32ee6f85768e04db21d646d048ccd61ebd4d214d6f54737491d2fc5e0",
       "sha256": "25d4a2a32ee6f85768e04db21d646d048ccd61ebd4d214d6f54737491d2fc5e0",
       "bytes": 6582,
@@ -16,7 +16,7 @@
     },
     {
       "source": "main-site/pages/contacts/assets/logo.svg",
-      "file": "code/assets/icons/logo.svg",
+      "file": "assets/icons/logo.svg",
       "sourceSha256": "25d4a2a32ee6f85768e04db21d646d048ccd61ebd4d214d6f54737491d2fc5e0",
       "sha256": "25d4a2a32ee6f85768e04db21d646d048ccd61ebd4d214d6f54737491d2fc5e0",
       "bytes": 6582,
@@ -24,7 +24,7 @@
     },
     {
       "source": "main-site/pages/contacts/assets/max.svg",
-      "file": "code/assets/icons/max.svg",
+      "file": "assets/icons/max.svg",
       "sourceSha256": "5caa61a4b0731d0d89421b4fb24f41433025e5aea59155a14cf3a3fada6c9174",
       "sha256": "5caa61a4b0731d0d89421b4fb24f41433025e5aea59155a14cf3a3fada6c9174",
       "bytes": 72862,
@@ -32,7 +32,7 @@
     },
     {
       "source": "main-site/pages/contacts/assets/telegram.svg",
-      "file": "code/assets/icons/telegram.svg",
+      "file": "assets/icons/telegram.svg",
       "sourceSha256": "d740699a25af5d0677344e14bf3456d3d39c4d6da8633465086ccaf176fa7f24",
       "sha256": "d740699a25af5d0677344e14bf3456d3d39c4d6da8633465086ccaf176fa7f24",
       "bytes": 758,
@@ -40,7 +40,7 @@
     },
     {
       "source": "main-site/pages/contacts/assets/whatsapp.svg",
-      "file": "code/assets/icons/whatsapp.svg",
+      "file": "assets/icons/whatsapp.svg",
       "sourceSha256": "6870171eea83ea80607e3a4e9b5de7ed724da07aa3af2de9c7b50e7408926a2b",
       "sha256": "6870171eea83ea80607e3a4e9b5de7ed724da07aa3af2de9c7b50e7408926a2b",
       "bytes": 1232,
@@ -48,7 +48,7 @@
     },
     {
       "source": "main-site/pages/contacts/contacts.css",
-      "file": "code/css/contacts.css",
+      "file": "css/contacts.css",
       "sourceSha256": "dd6c38982364e74b7d1474720a2b01e92004c3b116fb47409d6a1544ea753221",
       "sha256": "d98eaabc5b9c6ba4ca9224a57e58cc0496b04d31fdf9b5dea200d41f439087f0",
       "bytes": 16676,
@@ -56,7 +56,7 @@
     },
     {
       "source": "main-site/pages/contacts/contacts.js",
-      "file": "code/js/contacts.js",
+      "file": "js/contacts.js",
       "sourceSha256": "60c4c3efc217c05c6a0163c49ad11e9f537378fb5d8ffce653889d402ccea92a",
       "sha256": "60c4c3efc217c05c6a0163c49ad11e9f537378fb5d8ffce653889d402ccea92a",
       "bytes": 4837,
@@ -64,7 +64,7 @@
     },
     {
       "source": "main-site/pages/contacts/content-sources.json",
-      "file": "code/data/content-sources.json",
+      "file": "data/content-sources.json",
       "sourceSha256": "361cbfde09d50ba44c502600148d30fb046404132b415ffe55b51d6ae6a660d3",
       "sha256": "361cbfde09d50ba44c502600148d30fb046404132b415ffe55b51d6ae6a660d3",
       "bytes": 2745,
@@ -72,7 +72,7 @@
     },
     {
       "source": "main-site/pages/contacts/fonts/TildaSans-Light.woff2",
-      "file": "code/assets/fonts/TildaSans-Light.woff2",
+      "file": "assets/fonts/TildaSans-Light.woff2",
       "sourceSha256": "f0f2c165784c72343618a7c2cbde00e45dbb9b09af5149984792f280cac9642e",
       "sha256": "f0f2c165784c72343618a7c2cbde00e45dbb9b09af5149984792f280cac9642e",
       "bytes": 63952,
@@ -80,7 +80,7 @@
     },
     {
       "source": "main-site/pages/contacts/fonts/TildaSans-Medium.woff2",
-      "file": "code/assets/fonts/TildaSans-Medium.woff2",
+      "file": "assets/fonts/TildaSans-Medium.woff2",
       "sourceSha256": "f716269e361f466570f37bc920988c619ddc8a7828c5949c1c56a731a320ab47",
       "sha256": "f716269e361f466570f37bc920988c619ddc8a7828c5949c1c56a731a320ab47",
       "bytes": 62556,
@@ -88,7 +88,7 @@
     },
     {
       "source": "main-site/pages/contacts/fonts/TildaSans-Regular.woff2",
-      "file": "code/assets/fonts/TildaSans-Regular.woff2",
+      "file": "assets/fonts/TildaSans-Regular.woff2",
       "sourceSha256": "2670dad44ca6c2a1b9bbdbf1af6d8db9173f2dbe31604e80bdf9599b55047d41",
       "sha256": "2670dad44ca6c2a1b9bbdbf1af6d8db9173f2dbe31604e80bdf9599b55047d41",
       "bytes": 61636,
@@ -96,7 +96,7 @@
     },
     {
       "source": "main-site/pages/contacts/index.html",
-      "file": "code/html/index.html",
+      "file": "html/index.html",
       "sourceSha256": "ae31993a5b9565fbe326690dd983370a74289c157f4deb6007a4efb60a43dc76",
       "sha256": "122482570ab9b73eabaeacff79adc13eaede7fe5c6fa54bdd0d7f3105a0d72ef",
       "bytes": 39602,
@@ -104,7 +104,7 @@
     },
     {
       "source": "main-site/pages/contacts/vendor/footer.css",
-      "file": "code/css/vendor/footer.css",
+      "file": "css/vendor/footer.css",
       "sourceSha256": "aed9ca358345d99190c815de92ea63a1f0c4ab762a72316016e54e7b410dc1f0",
       "sha256": "aed9ca358345d99190c815de92ea63a1f0c4ab762a72316016e54e7b410dc1f0",
       "bytes": 18736,
@@ -112,7 +112,7 @@
     },
     {
       "source": "main-site/pages/contacts/vendor/material-icons-LICENSE.txt",
-      "file": "code/assets/licenses/material-icons-LICENSE.txt",
+      "file": "assets/licenses/material-icons-LICENSE.txt",
       "sourceSha256": "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd",
       "sha256": "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd",
       "bytes": 11357,
@@ -120,7 +120,7 @@
     },
     {
       "source": "main-site/pages/contacts/vendor/media-header.css",
-      "file": "code/css/vendor/media-header.css",
+      "file": "css/vendor/media-header.css",
       "sourceSha256": "5dec0c68563d19025d56563c3118cb64725c2e551b135d1b67e8505d9713b941",
       "sha256": "5dec0c68563d19025d56563c3118cb64725c2e551b135d1b67e8505d9713b941",
       "bytes": 14311,
@@ -128,7 +128,7 @@
     },
     {
       "source": "main-site/pages/contacts/vendor/media-header.js",
-      "file": "code/js/vendor/media-header.js",
+      "file": "js/vendor/media-header.js",
       "sourceSha256": "3d6cbd7e2d2cdee15b767421267be0da6e2c2edfeab0eb5979bc362fd667f417",
       "sha256": "3d6cbd7e2d2cdee15b767421267be0da6e2c2edfeab0eb5979bc362fd667f417",
       "bytes": 121031,
@@ -136,7 +136,7 @@
     },
     {
       "source": "main-site/pages/contacts/vendor/page-breadcrumbs.css",
-      "file": "code/css/vendor/page-breadcrumbs.css",
+      "file": "css/vendor/page-breadcrumbs.css",
       "sourceSha256": "7a58ed93dc94357053343f42781a513a93b66b3f6c61f0f9a6c0e26bcaef7d30",
       "sha256": "7a58ed93dc94357053343f42781a513a93b66b3f6c61f0f9a6c0e26bcaef7d30",
       "bytes": 1558,
@@ -144,7 +144,7 @@
     },
     {
       "source": "main-site/pages/contacts/vendor/page-breadcrumbs.js",
-      "file": "code/js/vendor/page-breadcrumbs.js",
+      "file": "js/vendor/page-breadcrumbs.js",
       "sourceSha256": "8eb64309599bb49e46766224815c2ab9d292c6c4019579b4407664104aec6b3c",
       "sha256": "8eb64309599bb49e46766224815c2ab9d292c6c4019579b4407664104aec6b3c",
       "bytes": 4476,
@@ -152,7 +152,7 @@
     },
     {
       "source": "main-site/pages/contacts/assets/home-contact-whatsapp.svg",
-      "file": "code/assets/icons/home-contact-whatsapp.svg",
+      "file": "assets/icons/home-contact-whatsapp.svg",
       "sourceSha256": "6870171eea83ea80607e3a4e9b5de7ed724da07aa3af2de9c7b50e7408926a2b",
       "sha256": "6870171eea83ea80607e3a4e9b5de7ed724da07aa3af2de9c7b50e7408926a2b",
       "bytes": 1232,
@@ -160,7 +160,7 @@
     },
     {
       "source": "main-site/pages/contacts/assets/home-contact-telegram.svg",
-      "file": "code/assets/icons/home-contact-telegram.svg",
+      "file": "assets/icons/home-contact-telegram.svg",
       "sourceSha256": "d740699a25af5d0677344e14bf3456d3d39c4d6da8633465086ccaf176fa7f24",
       "sha256": "d740699a25af5d0677344e14bf3456d3d39c4d6da8633465086ccaf176fa7f24",
       "bytes": 758,
@@ -168,7 +168,7 @@
     },
     {
       "source": "main-site/pages/contacts/vendor/header-navigation.css",
-      "file": "code/css/vendor/header-navigation.css",
+      "file": "css/vendor/header-navigation.css",
       "sourceSha256": "8f88f226b07ca6f5f29c4a94809ed231c57e5cd02bbfba63c7990a3db1a7c217",
       "sha256": "8f88f226b07ca6f5f29c4a94809ed231c57e5cd02bbfba63c7990a3db1a7c217",
       "bytes": 1600,
@@ -176,7 +176,7 @@
     },
     {
       "source": "main-site/pages/contacts/vendor/header-navigation.js",
-      "file": "code/js/vendor/header-navigation.js",
+      "file": "js/vendor/header-navigation.js",
       "sourceSha256": "9d1c3a1f39c04b0814b6eb077ed7150f33ec9835240325017c6135fc6e3a7e8c",
       "sha256": "9d1c3a1f39c04b0814b6eb077ed7150f33ec9835240325017c6135fc6e3a7e8c",
       "bytes": 5487,

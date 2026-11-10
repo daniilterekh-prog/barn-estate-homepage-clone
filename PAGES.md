@@ -14,7 +14,7 @@
 | Главная | [Превью](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/) | [Исходники](https://github.com/daniilterekh-prog/barnes-sites/tree/main/main-site/pages/home/exact-2026-10-21/source) |
 | Команда | [Превью](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/team/) | [Исходники](https://github.com/daniilterekh-prog/barnes-sites/tree/main/main-site/pages/team) |
 | Контакты | [Превью](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/contacts/) | [Исходники](https://github.com/daniilterekh-prog/barnes-sites/tree/main/main-site/pages/contacts) |
-| Контакты — пакет разработчику | [ZIP](handoff/contacts-2026-11-09/contacts-developer-2026-11-09.zip) | [HTML/CSS/JS и дизайн](handoff/contacts-2026-11-09/README.md) |
+| Контакты — пакет разработчику | [ZIP](handoff/contacts/contacts-developer.zip) | [HTML/CSS/JS и дизайн](handoff/contacts/README.md) |
 | Мероприятия | [Превью](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/media/meropriyatiya/) | [Исходники](https://github.com/daniilterekh-prog/barnes-sites/tree/main/main-site/pages/events) |
 | Медиа | [Превью](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/media/) | [Исходники](https://github.com/daniilterekh-prog/barnes-sites/tree/main/main-site/pages/media) |
 | Амбассадоры | [Превью](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/for-partners/) | [Исходники](https://github.com/daniilterekh-prog/barnes-sites/tree/main/main-site/pages/partners) |
