@@ -1,0 +1,12 @@
+{
+  "name": "BARN Estate",
+  "version": "1.0.6",
+  "source": "main-site/pages/home/exact-2026-10-21/UI-KIT.md",
+  "font": "Tilda Sans",
+  "colors": {"ink":"#1e1e1e","copy":"#4f4d49","muted":"#656462","brand":"#8b1d25","surface":"#ffffff"},
+  "heading": {"mobile":22,"desktop":38,"wide":44,"weight":300,"lineHeight":1.2},
+  "body": {"mobile":15,"desktop":22,"weight":300,"lineHeight":1.5},
+  "button": {"mobileHeight":58,"desktopHeight":70,"mobileFont":18,"desktopFont":17,"wideFont":19,"weight":400,"radius":1},
+  "section": {"mobilePadding":48,"desktopPadding":"clamp(72px,6vw,100px)","contentGap":40,"mobileContentGap":28},
+  "grid": {"maxWidth":1920,"mobileGutter":22,"desktopGutter":"clamp(24px,calc(-26.66667px + 6.59722vw),100px)","wideGutter":0}
+}

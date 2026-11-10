@@ -1,182 +1,98 @@
 {
-  "reference": "barn-estate-home-reference-v1.0.0",
-  "blocks": [
+  "date": "2026-11-10",
+  "uiKit": "BARN Estate v1.0.6",
+  "sourceCommit": "e0a6df73c88aa749afb68b644056bae73e720ea1",
+  "shellSource": "contacts",
+  "files": [
     {
-      "name": "01-header",
-      "source": "main-site/pages/home/exact-2026-10-21/blocks/01-header/",
-      "htmlSha256": "41bfb481352f052c46907856e8568a26365f596aa2dc16aa8229bcf1e0d6a9d4",
-      "cssSha256": "50d7eedf4174b956483e8e279f2583cd9d040b99853aabaa23e23d923a9c21b4",
-      "sourceCssSha256": "76f3f5d92dbf80463dca961c93ea69b8e12c914456c68b4228b37cbee14d2e51"
+      "source": "main-site/pages/contacts/vendor/media-header.css",
+      "target": "kit/vendor/media-header.css",
+      "sha256": "5dec0c68563d19025d56563c3118cb64725c2e551b135d1b67e8505d9713b941"
     },
     {
-      "name": "14-newsletter",
-      "source": "main-site/pages/home/exact-2026-10-21/blocks/14-newsletter/",
-      "htmlSha256": "cbe662a8f0f639218fad834c00b051e0cd14ae271da44cdd49ca786c08c30f39",
-      "cssSha256": "79d50d7f012ec7c47eada833b94ec2b3dccc7d96e29bbff4411e887e2787263d",
-      "sourceCssSha256": "57d1b9165304fda05ef2e2be8952c0025cd79ed4aafc79513fd25ddc3bb7fb87"
+      "source": "main-site/pages/contacts/vendor/media-header.js",
+      "target": "kit/vendor/media-header.js",
+      "sha256": "3d6cbd7e2d2cdee15b767421267be0da6e2c2edfeab0eb5979bc362fd667f417"
     },
     {
-      "name": "15-footer",
-      "source": "main-site/pages/home/exact-2026-10-21/blocks/15-footer/",
-      "htmlSha256": "7349f9b72f930aacf922437a91e7d38ea73513f2f7a32348ca78861abaa719a1",
-      "cssSha256": "94161c31bf3889513861e395e34ec5292ce4fd6275605dc27cafcd319472f1a7",
-      "sourceCssSha256": "649f37e74259d18f4a2cf854a2901b7d923ad2d78d5367ea1c7f01b9163bbc05"
-    }
-  ],
-  "assets": [
-    {
-      "block": "01-header",
-      "file": "c57d9b3c8de986fa0d618d09.svg",
-      "sha256": "9b2d8c1a7d4d213587828c6bdf6592a37113a388fedc1b58211534d8cb1e7123"
+      "source": "main-site/pages/contacts/vendor/header-navigation.css",
+      "target": "kit/vendor/header-navigation.css",
+      "sha256": "8f88f226b07ca6f5f29c4a94809ed231c57e5cd02bbfba63c7990a3db1a7c217"
     },
     {
-      "block": "01-header",
-      "file": "29bbe9068117f193bae0f419.svg",
-      "sha256": "3e197e0e1f3e679ee09823c75e1c7bad3a19da9bd1ba01df395268b9ae91816f"
+      "source": "main-site/pages/contacts/vendor/header-navigation.js",
+      "target": "kit/vendor/header-navigation.js",
+      "sha256": "9d1c3a1f39c04b0814b6eb077ed7150f33ec9835240325017c6135fc6e3a7e8c"
     },
     {
-      "block": "01-header",
-      "file": "d98028a12bc9366262f97604.svg",
-      "sha256": "4435c9a57e165a1c3b7f27e0b5b11b82b10d674ea4fff7f6748cb67b7fcb994e"
+      "source": "main-site/pages/contacts/vendor/footer.css",
+      "target": "kit/vendor/footer.css",
+      "sha256": "3d9a33bacd3e7c5bcc3997ff0d98fccc4c76c6dfb3cf06f707c4e564ae948318",
+      "sourceSha256": "aed9ca358345d99190c815de92ea63a1f0c4ab762a72316016e54e7b410dc1f0",
+      "adaptation": "Local selector scope: body.contacts-page → body.lot-page"
     },
     {
-      "block": "01-header",
-      "file": "5f9a5f75aa9de0fd5d980437.svg",
+      "source": "main-site/pages/contacts/vendor/material-icons-LICENSE.txt",
+      "target": "kit/vendor/material-icons-LICENSE.txt",
+      "sha256": "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd"
+    },
+    {
+      "source": "main-site/pages/contacts/assets/logo.svg",
+      "target": "kit/assets/logo.svg",
+      "sha256": "25d4a2a32ee6f85768e04db21d646d048ccd61ebd4d214d6f54737491d2fc5e0"
+    },
+    {
+      "source": "main-site/pages/contacts/assets/footer-logo.svg",
+      "target": "kit/assets/footer-logo.svg",
+      "sha256": "25d4a2a32ee6f85768e04db21d646d048ccd61ebd4d214d6f54737491d2fc5e0"
+    },
+    {
+      "source": "main-site/pages/contacts/assets/max.svg",
+      "target": "kit/assets/max.svg",
       "sha256": "5caa61a4b0731d0d89421b4fb24f41433025e5aea59155a14cf3a3fada6c9174"
     },
     {
-      "block": "01-header",
-      "file": "d77b3a703b03cd404472d2c4.jpg",
-      "sha256": "b558020c3e4b76d7de5cdf7e298f14e8d01c9484f2aca0693e4608c200d7632d"
+      "source": "main-site/pages/contacts/assets/telegram.svg",
+      "target": "kit/assets/telegram.svg",
+      "sha256": "d740699a25af5d0677344e14bf3456d3d39c4d6da8633465086ccaf176fa7f24"
     },
     {
-      "block": "01-header",
-      "file": "45166ee6283659ea6541abd2.jpg",
-      "sha256": "5b10e2286da52d333e30561ce0f29ce392401a8f34fd8ca9efc2fd06553acfd4"
+      "source": "main-site/pages/contacts/assets/whatsapp.svg",
+      "target": "kit/assets/whatsapp.svg",
+      "sha256": "6870171eea83ea80607e3a4e9b5de7ed724da07aa3af2de9c7b50e7408926a2b"
     },
     {
-      "block": "01-header",
-      "file": "de589af6ec6325d4b365d646.woff2",
+      "source": "main-site/pages/contacts/fonts/TildaSans-Light.woff2",
+      "target": "fonts/TildaSans-Light.woff2",
       "sha256": "f0f2c165784c72343618a7c2cbde00e45dbb9b09af5149984792f280cac9642e"
     },
     {
-      "block": "01-header",
-      "file": "9e76f26b05473907fc0031ca.woff2",
+      "source": "main-site/pages/contacts/fonts/TildaSans-Regular.woff2",
+      "target": "fonts/TildaSans-Regular.woff2",
       "sha256": "2670dad44ca6c2a1b9bbdbf1af6d8db9173f2dbe31604e80bdf9599b55047d41"
     },
     {
-      "block": "01-header",
-      "file": "a9f2b67f7136af9bde4f58b8.woff2",
+      "source": "main-site/pages/contacts/fonts/TildaSans-Medium.woff2",
+      "target": "fonts/TildaSans-Medium.woff2",
       "sha256": "f716269e361f466570f37bc920988c619ddc8a7828c5949c1c56a731a320ab47"
     },
     {
-      "block": "01-header",
-      "file": "TildaSans-Semibold.woff2",
-      "sha256": "3814f8c444073262523050f3554c6f09cb49353e1f6fdc22a3561d354a231439"
+      "source": "main-site/pages/contacts/index.html",
+      "target": "kit/header.html",
+      "adaptation": "Extracted header fragment; local asset paths",
+      "sha256": "32739b3f382b50d1088b421d3d140c17bc403749d69fa84e7ec724ae37943c8b"
     },
     {
-      "block": "01-header",
-      "file": "TildaSans-Bold.woff2",
-      "sha256": "a2690df6fe8348066df79e3a3421a3a9bc0b058cc536f3d846f782ea5337afec"
+      "source": "main-site/pages/contacts/index.html",
+      "target": "kit/menu.html",
+      "adaptation": "Extracted menu fragment; local asset paths",
+      "sha256": "1c6780ccbd8025a6e12b386703ad4544fee0b669d934b0a30cc7ec08f7bec64a"
     },
     {
-      "block": "01-header",
-      "file": "TildaSans-ExtraBold.woff2",
-      "sha256": "726a3a878465a590443308ea9e14459ab5943f699cff4887c844af4ed76ce577"
-    },
-    {
-      "block": "01-header",
-      "file": "TildaSans-Black.woff2",
-      "sha256": "73abed6708c43912dbd5c2760147f72462887ccd803522a1486209ca1e97031a"
-    },
-    {
-      "block": "14-newsletter",
-      "file": "f6f65669dc22ef4fe836335c.webp",
-      "sha256": "3285d219f1845deb8887ba3bc04b8e79ce8d3bec99dd568d8a51b8c5fa8bf9af"
-    },
-    {
-      "block": "14-newsletter",
-      "file": "8a78978e0423f444f2adbe1f.webp",
-      "sha256": "a59b66d0d7fdeda1b0b0726fc2b9f0f23450da792c5cff66bba1482a09d8774f"
-    },
-    {
-      "block": "14-newsletter",
-      "file": "de589af6ec6325d4b365d646.woff2",
-      "sha256": "f0f2c165784c72343618a7c2cbde00e45dbb9b09af5149984792f280cac9642e"
-    },
-    {
-      "block": "14-newsletter",
-      "file": "9e76f26b05473907fc0031ca.woff2",
-      "sha256": "2670dad44ca6c2a1b9bbdbf1af6d8db9173f2dbe31604e80bdf9599b55047d41"
-    },
-    {
-      "block": "14-newsletter",
-      "file": "a9f2b67f7136af9bde4f58b8.woff2",
-      "sha256": "f716269e361f466570f37bc920988c619ddc8a7828c5949c1c56a731a320ab47"
-    },
-    {
-      "block": "14-newsletter",
-      "file": "TildaSans-Semibold.woff2",
-      "sha256": "3814f8c444073262523050f3554c6f09cb49353e1f6fdc22a3561d354a231439"
-    },
-    {
-      "block": "14-newsletter",
-      "file": "TildaSans-Bold.woff2",
-      "sha256": "a2690df6fe8348066df79e3a3421a3a9bc0b058cc536f3d846f782ea5337afec"
-    },
-    {
-      "block": "14-newsletter",
-      "file": "TildaSans-ExtraBold.woff2",
-      "sha256": "726a3a878465a590443308ea9e14459ab5943f699cff4887c844af4ed76ce577"
-    },
-    {
-      "block": "14-newsletter",
-      "file": "TildaSans-Black.woff2",
-      "sha256": "73abed6708c43912dbd5c2760147f72462887ccd803522a1486209ca1e97031a"
-    },
-    {
-      "block": "15-footer",
-      "file": "c57d9b3c8de986fa0d618d09.svg",
-      "sha256": "9b2d8c1a7d4d213587828c6bdf6592a37113a388fedc1b58211534d8cb1e7123"
-    },
-    {
-      "block": "15-footer",
-      "file": "de589af6ec6325d4b365d646.woff2",
-      "sha256": "f0f2c165784c72343618a7c2cbde00e45dbb9b09af5149984792f280cac9642e"
-    },
-    {
-      "block": "15-footer",
-      "file": "9e76f26b05473907fc0031ca.woff2",
-      "sha256": "2670dad44ca6c2a1b9bbdbf1af6d8db9173f2dbe31604e80bdf9599b55047d41"
-    },
-    {
-      "block": "15-footer",
-      "file": "a9f2b67f7136af9bde4f58b8.woff2",
-      "sha256": "f716269e361f466570f37bc920988c619ddc8a7828c5949c1c56a731a320ab47"
-    },
-    {
-      "block": "15-footer",
-      "file": "TildaSans-Semibold.woff2",
-      "sha256": "3814f8c444073262523050f3554c6f09cb49353e1f6fdc22a3561d354a231439"
-    },
-    {
-      "block": "15-footer",
-      "file": "TildaSans-Bold.woff2",
-      "sha256": "a2690df6fe8348066df79e3a3421a3a9bc0b058cc536f3d846f782ea5337afec"
-    },
-    {
-      "block": "15-footer",
-      "file": "TildaSans-ExtraBold.woff2",
-      "sha256": "726a3a878465a590443308ea9e14459ab5943f699cff4887c844af4ed76ce577"
-    },
-    {
-      "block": "15-footer",
-      "file": "TildaSans-Black.woff2",
-      "sha256": "73abed6708c43912dbd5c2760147f72462887ccd803522a1486209ca1e97031a"
+      "source": "main-site/pages/contacts/index.html",
+      "target": "kit/footer.html",
+      "adaptation": "Extracted footer fragment; local asset paths",
+      "sha256": "dce59e2d130081b48eace08a4ac86c02c42f4d723dd798e972ca9a505c941bed"
     }
-  ],
-  "maintenance": {
-    "date": "2026-11-03",
-    "kind": "Exact CSS duplicate cleanup; source reference unchanged"
-  }
+  ]
 }

@@ -1,47 +1,53 @@
-# Общий шаблон лота BARNES
+# Общий шаблон лота BARN Estate
 
-[Открыть последнюю опубликованную версию в GitHub Pages](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/stranitsa-lota/?v=b01bcd4). Публичный экспорт исходника `b80dd67` — commit `369625429bfdb7185911aee9b8c303ca8d9983b8`, защита CSS/JS от старого кэша — `b01bcd4c495e59ea1f80aa2dd83e894e074097e9` в `barn-estate-homepage-clone`. [Проверка опубликованной страницы](https://github.com/daniilterekh-prog/barnes-sites/blob/main/main-site/pages/lot/verification/pages.json). Это превью, не установка на рабочий домен агентства.
+**Актуальная структура ·10.11.2026 · UI-кит главной v1.0.6.**
 
-## Текущее оформление · 01.11.2026
+[Открыть превью](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/stranitsa-lota/?v=structure-20261110) · [Структура и план](https://github.com/daniilterekh-prog/barnes-sites/blob/main/main-site/pages/lot/STRUCTURE.md) · [Исследование конкурентов](https://github.com/daniilterekh-prog/barnes-sites/blob/main/main-site/pages/lot/research/2026-11-10/README.md) · [Сохранённый паспорт кита](https://github.com/daniilterekh-prog/barnes-sites/blob/main/main-site/pages/lot/kit/ui-kit.json) · [Источники оформления](https://github.com/daniilterekh-prog/barnes-sites/blob/main/main-site/pages/lot/kit/provenance.json).
 
-Шаблон переведён на **утверждённый UI-кит главной v1.0.0**. Готовые хедер (светлое состояние внутренней страницы), рассылка и футер импортированы из `barn-estate-home-reference-v1.0.0`, без общего квиза. Их HTML/CSS и только используемые ассеты находятся в `kit/`; происхождение и SHA — `kit/provenance.json`. SVG звонка — Material Icons, Apache-2.0, лицензия сохранена рядом с ассетами. Новые библиотеки не устанавливались.
+## Оформление и структура
 
-`home-kit.css` — единые роли типографики, сетки и кнопок; `home-kit.js` — контакты хедера и доступные подписи форм. Сохранены H1 объекта, цена, галерея, характеристики, условные секции, брокер и обращение по конкретному лоту. Страница не превращена в главную или лендинг ЖК. Формы по-прежнему локальные, CRM не подключена.
+Пользователь поручил сохранить стилистику остальных страниц, частично опереться на старую версию Figma и собрать структуру из исследования. Используется Tilda Sans, бордовый #8b1d25, действующие шрифтовые роли, кнопки, отступы и контейнер1920px. Хедер, меню, футер, SVG и шрифты взяты из актуальной страницы «Контакты» и сохранены локально. Общие ресурсы и пять финальных узлов не меняются.
 
-[Новые проверки и снимки](https://github.com/daniilterekh-prog/barnes-sites/blob/main/main-site/pages/lot/verification/home-kit.json) · [390 px](https://github.com/daniilterekh-prog/barnes-sites/blob/main/main-site/pages/lot/verification/page-390.png) · [1440 px](https://github.com/daniilterekh-prog/barnes-sites/blob/main/main-site/pages/lot/verification/page-1440.png) · [2560 px](https://github.com/daniilterekh-prog/barnes-sites/blob/main/main-site/pages/lot/verification/page-2560.png) · [план переноса](https://github.com/daniilterekh-prog/barnes-sites/blob/main/main-site/pages/lot/IMPLEMENTATION.md).
+Порядок: паспорт/галерея → особенности → планировка → описание и характеристики → дом → расположение → условия → просмотр с брокером → похожие предложения → футер. После первого экрана цена и запись остаются доступны в компактной панели; на телефоне панель закреплена снизу. Общая рассылка не прерывает сценарий конкретного лота.
 
-Проверка кита: сервер на4194 и `PLAYWRIGHT_MODULE=/путь/к/playwright node main-site/pages/lot/verify-home-kit.cjs` из корня. Проверяет12 ширин320–3840 px, фактические токены, новые общие блоки, подписи/контекст формы, валидацию, меню, мобильные контакты, галерею, материалы, футер и Escape.
+Из [старого макета](https://github.com/daniilterekh-prog/barnes-sites/blob/main/main-site/pages/lot/references/figma-old-lot.webp) взяты композиция фото и боковой карточки, чередование секций и контактная композиция. Это пользовательский растровый экспорт, не редактируемый файл Figma. [Происхождение](https://github.com/daniilterekh-prog/barnes-sites/blob/main/main-site/pages/lot/references/source.json). Референс хранится только в приватном репозитории и не попадает в публичное превью. Старые заглушки, цены, отзывы и ипотечные ставки не переносились.
 
-Исторические `preview-desktop.png`, `preview-mobile.png` и сравнение конкурентов ниже относятся к структуре до визуального переноса; для актуального вида использовать снимки из `verification/`.
+## Наполнение
 
-Рабочая страница: `/main-site/pages/lot/`. Один тип страницы для всех лотов, без папок по ID. Главная и страница ЖК независимы. На живой домен эта версия не установлена.
+`window.BARNES_LOT_DATA` задаётся до `lot-data.js`. Одна страница для всех объектов; папки по ID не создаются. Обязательны `id`, `title`, `cover.src`. Текущее наполнение — архивный объект588036 от12.10.2026, не подтверждение цены и наличия.
 
-Фото, цена и брокер → описание и характеристики → планировка при наличии → расположение → компактная справка о доме при подтверждённой связи → реальные похожие предложения при наличии → контакт.
+- `features`: массив `{label,text}`; `facts`: массив `{label,value}`; `descriptionParagraphs`: абзацы.
+- `floorPlan:{src,alt,description?}`: собственный действительный план объекта. Без файла — компактный запрос брокеру, без фиктивного чертежа.
+- `building:{verified:true,name,description?,facts?,image?,url?}`: только подтверждённый дом; без `verified:true` раздел скрыт.
+- `location:{label,mapImage?,mapUrl?,embedUrl?,nearby?,note?}`: своя карта и окружение. В демонстрации — локальный снимок прежних тайлов Яндекса, ссылка открывает карту; фальшивых элементов управления нет.
+- `terms:{title,note,items?}`: условия конкретной сделки; неизвестные условия не додумываются.
+- `related:[{title,url,cover?,displayPrice?}]`: реальные альтернативы; без данных — предложение подбора.
+- `documents:[{title,url}]` и `faq:[{question,answer}]` подключаются по наличию. У документов объекта не должно быть приватных данных собственника.
+- `presentation.url`: актуальный файл конкретного лота. Без файла — запрос материалов.
 
-[Анализ конкурентов и решение](https://github.com/daniilterekh-prog/barnes-sites/blob/main/main-site/pages/lot/STRUCTURE-ANALYSIS.md) · [Проверка новой структуры](https://github.com/daniilterekh-prog/barnes-sites/blob/main/main-site/pages/lot/structure-verification.json).
+В галерее37действительных фото: ранее записанный нулевой файл исключён. Портрет брокера восстановлен из сохранившейся верхней части повреждённого исходного JPEG; лицо не изменялось. [Источники содержания и производных файлов](https://github.com/daniilterekh-prog/barnes-sites/blob/main/main-site/pages/lot/content-sources.json). Материалы и факты ЖК подчиняются политике первоисточников застройщика из AGENTS.md.
 
-Проверенные снимки новой версии: [1440 px](https://github.com/daniilterekh-prog/barnes-sites/blob/main/main-site/pages/lot/preview-desktop.png), [390 px](https://github.com/daniilterekh-prog/barnes-sites/blob/main/main-site/pages/lot/preview-mobile.png).
+## Формы и взаимодействия
 
-## Данные
+Native dialog: галерея, клавиши/свайп, увеличение, Escape и возврат фокуса. Меню и контакты доступны с клавиатуры. Есть подписи полей, нативная проверка обязательных значений, проверка телефона и ID объекта в обращении.
 
-Поставщик задаёт `window.BARNES_LOT_DATA` **до** загрузки `lot-data.js`. Выбор объекта — до инициализации; горячее переключение без перезагрузки не поддерживается. `lot-data.js` содержит демонстрационный объект 588036, сохранённый 12.10.2026, а не актуальную базу цен/наличия.
+CRM/почтовый транспорт не подключались. Форма **готовит** обращение, затем даёт пользователю открыть письмо брокеру или позвонить. Автоматической отправки, POST-запросов и ложного сообщения об отправленной заявке нет. Это ограничение действующего превью, не реализованная CRM-интеграция.
 
-- Обязательны `id`, `title`, `cover.src`.
-- `descriptionParagraphs` — абзацы; `facts` — массив `{label, value}`; пустые значения скрыты.
-- `floorPlan: {src, alt}` — действительная планировка этого объекта. Нет файла — небольшой запрос материалов, без фиктивного изображения.
-- `building: {verified: true, name, description, url}` — одна справка. Без явного `verified: true` скрыта. Не определять принадлежность по фото/категории.
-- `related: [{title, url, cover?: {src, alt}, displayPrice?}]` — реальные отобранные лоты. Без массива — только кнопка подбора у брокера.
-- `broker`, `gallery`, `map` необязательны. Карта — локальный снимок; для другого объекта нужны его собственные данные. Без карты скрываются блок и вкладка.
-- Старые `complex.cards`, `developer`, `construction`, тестовые кредитные ставки исключены из страницы. Для вторички и аренды нет фиктивного ипотечного платежа.
+## Сборка, проверка, экспорт
 
-`lot-template.js` заполняет исходные компоненты и диалоги; `lot-sections.js` строит новую структуру; `lot-sections.css` сохраняет шрифт и палитру BARNES. `local.js` — галерея, карта, меню, диалоги, локальная валидация. CRM не подключена: формы предлагают телефон и не сообщают об успешной отправке.
+Без новых UI-зависимостей. Frontend-памятка и бесплатный каталог проверены10.11.2026; выбран существующий статический стек и native dialog. JS/CSS написаны в проекте; шрифты/иконки сохранены из действующей библиотеки, лицензия Material Call — в kit/vendor/.
 
-## Происхождение и проверки
+Из корня репозитория:
 
-Исходный HTML, TildaSans, изображения и стили: [BARNES 588036](https://front.barnes.vsavr.ru/vtorichnaya-nedvizhimost/588036/), снимок [barn-estate-homepage-clone, e279089](https://github.com/daniilterekh-prog/barn-estate-homepage-clone/tree/e2790893cfd2110da9b654f2d0c0d8e5d93591dc/stranitsa-lota). Хеши ассетов — `source-assets.json`; каноническая библиотека — [barnes-assets](https://github.com/daniilterekh-prog/barnes-assets). Новых UI-пакетов нет: собственные статические HTML/CSS/JS и существующие компоненты.
+```sh
+node main-site/pages/lot/build-index.cjs
+python3 -m http.server 8836 --bind 127.0.0.1
+node main-site/pages/lot/verify-structure.cjs
+node main-site/pages/lot/export-page.cjs /новый/пустой/каталог
+```
 
-`verification.json`, `interaction-verification.json`, `data-binding-verification.json`, `PLAN.md` — исторические проверки/план копии **до** изменения структуры, не доказательство соответствия текущей страницы оригиналу пиксель в пиксель.
+Проверка использует установленный Playwright/Chrome; пути можно задать через `PLAYWRIGHT_MODULE`, `JSDOM_MODULE`, `LOT_BASE_URL`, `LOT_CHECK_OUT`. Ничего не устанавливает. [Актуальный отчёт](https://github.com/daniilterekh-prog/barnes-sites/blob/main/main-site/pages/lot/verification/structure-2026-11-10/report.json):12ширин320–3840, токены, порядок секций, галерея, меню, контакты, валидация, контекст запроса и условное наполнение другого объекта. Снимки390/1440/2560 проверены визуально.
 
-Превью из корня: `python3 tools/preview.py --port 4192`, открыть `http://127.0.0.1:4192/main-site/pages/lot/`.
+`index.html` уже содержит отрендеренную структуру. `build-index.cjs` воспроизводит её тем же рендерером. Экспорт включает только самодостаточный runtime лота, исключает приватный референс, исследование, старые скрипты и отчёты. Исторические local/home-kit/lot-sections и старые verify-файлы не подключаются; прежние отчёты не подтверждают текущую версию.
 
-Проверка: `PLAYWRIGHT_MODULE=/путь/к/playwright node main-site/pages/lot/verify.cjs`. Использует уже установленный Playwright и Chrome; ничего не устанавливает. Семь ширин 320–1920 px, overflow, изображения, якоря, три диалога, Escape и три варианта данных. Снимки — `/tmp`, отчёт — рядом. Тестовая картинка планировки проверяет только условный рендер, не попадает в демонстрационное наполнение.
+Боевой домен агентства этой задачей не обновляется. Для передачи разработчику действует постоянный путь `main-site/handoff/lot/` и публичный `handoff/lot/`; отдельный пакет здесь пока не создавался.
