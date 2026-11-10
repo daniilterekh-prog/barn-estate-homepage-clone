@@ -1,0 +1,76 @@
+/* Shared section/UI roles from approved BARN Estate homepage v1.0.2.
+   Editorial cards, numeric directions and the hero have separate registered roles. */
+html body.barnes-page-kit[data-page-kit]:is(#partners-kit-page,#ui-kit-page) {
+ --uk-space:clamp(72px,6vw,100px);--uk-gutter:clamp(24px,calc(-26.66667px + 6.59722vw),100px);
+ --uk-heading:38px;--uk-body:22px;--uk-leading:33px;--uk-action:17px;--uk-field:18px;
+ --uk-height:70px;--uk-pad:36px;--uk-content:40px;--uk-copy:24px;--uk-brow:14px;--uk-brow-line:16.1px;--uk-brow-gap:25px;
+ font-family:"Tilda Sans",system-ui,sans-serif;font-synthesis:none;
+}
+@media(min-width:1441px){html body.barnes-page-kit[data-page-kit]:is(#partners-kit-page,#ui-kit-page) {--uk-heading:44px;--uk-action:19px;--uk-field:20px;--uk-pad:47px}}
+@media(min-width:1921px){html body.barnes-page-kit[data-page-kit]:is(#partners-kit-page,#ui-kit-page) {--uk-gutter:0px}}
+@media(max-width:1024px){html body.barnes-page-kit[data-page-kit]:is(#partners-kit-page,#ui-kit-page) {--uk-brow:12px;--uk-brow-line:14.4px;--uk-brow-gap:12px}}
+@media(max-width:540px){html body.barnes-page-kit[data-page-kit]:is(#partners-kit-page,#ui-kit-page) {--uk-space:48px;--uk-gutter:22px;--uk-heading:22px;--uk-body:15px;--uk-leading:21px;--uk-action:18px;--uk-field:17px;--uk-height:58px;--uk-pad:24px;--uk-content:28px;--uk-copy:16px}}
+/* One content inset, with a separate approved hero/header inset. */
+html body.barnes-page-kit[data-page-kit]:is(#partners-kit-page,#ui-kit-page) :is(main .base-container:not(.owner-sale-sticky__inner):not(.owner-sale-hero__inner):not(.ambassadors-hero__inner):not(.media-hero__inner),.about-company__inner,.catalog-contact__inner,.catalog-consultation__inner,.newsletter-cta__inner,.site-footer__inner){box-sizing:border-box!important;width:100%!important;max-width:1920px!important;margin-inline:auto!important;padding-inline:var(--uk-gutter)!important}
+html body.barnes-page-kit[data-page-kit]:is(#partners-kit-page,#ui-kit-page) :is(.owner-sale-presentation,.owner-sale-services,.owner-sale-exclusive,.owner-sale-magazine,.owner-sale-stages,.owner-sale-strategy,.owner-sale-types,.about-company,.catalog-contact,.catalog-consultation,.catalog-faq,.ap-section,.ambassadors-conditions,.media-intents,.media-weekly,.media-market,.media-fresh,.media-analytics,.media-cta-banner,.media-library,.team-section){padding-block:var(--uk-space)!important;margin-block:0!important}
+html body.barnes-page-kit[data-page-kit]:is(#partners-kit-page,#ui-kit-page) #why-barnes .be-section{padding-block:var(--uk-space)!important}
+html body.barnes-page-kit[data-page-kit]:is(#partners-kit-page,#ui-kit-page) .newsletter-cta{padding:var(--uk-space) 0 40px!important;margin:0!important}
+/* Section headings and descriptions. Keep the photo-card foreground colour. */
+html body.barnes-page-kit[data-page-kit]:is(#partners-kit-page,#ui-kit-page) :is(main h2,.catalog-contact__title,.about-company__title,.catalog-faq__title){font-family:"Tilda Sans",system-ui,sans-serif!important;font-size:var(--uk-heading)!important;font-weight:300!important;line-height:1.2!important;letter-spacing:0!important;margin-block:0!important}
+html body.barnes-page-kit[data-page-kit]:is(#partners-kit-page,#ui-kit-page) :is(.media-weekly__title,.media-fresh__title,.team-section__title,.partners-section__title){line-height:1!important}
+html body.barnes-page-kit[data-page-kit]:is(#partners-kit-page,#ui-kit-page) .newsletter-cta h2{font-size:var(--uk-heading)!important;font-weight:300!important;line-height:1!important;letter-spacing:-.04em!important;margin:0!important}
+html body.barnes-page-kit[data-page-kit]:is(#partners-kit-page,#ui-kit-page) :is(.home-section-eyebrow,.owner-rent-section-eyebrow,.owner-sale-section-eyebrow,.partners-section-eyebrow,.bd-eyebrow){font-family:"Tilda Sans",system-ui,sans-serif!important;font-size:var(--uk-brow)!important;line-height:var(--uk-brow-line)!important;font-weight:400!important;letter-spacing:.12em!important;margin:0 0 var(--uk-brow-gap)!important;padding:0!important;color:#4f4d49!important}
+html body.barnes-page-kit[data-page-kit]:is(#partners-kit-page,#ui-kit-page) :is(.about-company__intro,.about-company__description,.catalog-contact__subtitle,.catalog-consultation__lead,.catalog-consultation__mobile-lead,.owner-sale-stages__intro,.owner-sale-stages__item-text,.owner-sale-exclusive__intro,.owner-sale-exclusive__text,.owner-sale-strategy__text,.newsletter-cta__lead){font-size:var(--uk-body)!important;line-height:var(--uk-leading)!important;font-weight:300!important;letter-spacing:0!important}
+html body.barnes-page-kit[data-page-kit]:is(#partners-kit-page,#ui-kit-page) :is(.catalog-contact__subtitle,.newsletter-cta__lead){margin:var(--uk-copy) 0 0!important}
+html body.barnes-page-kit[data-page-kit]:is(#partners-kit-page,#ui-kit-page) .catalog-contact__subtitle{color:rgba(255,255,255,.75)!important}
+html body.barnes-page-kit[data-page-kit]:is(#partners-kit-page,#ui-kit-page) :is(.newsletter-cta__lead,.about-company__intro,.about-company__description){color:#4f4d49!important}
+/* Main rectangular CTAs, independent of archived component padding. */
+html body.barnes-page-kit[data-page-kit]:is(#partners-kit-page,#ui-kit-page) :is(.ui-button:not(.owner-sale-hero__button):not(.ambassadors-hero__button):not(.media-hero__button):not(.media-analytics__button--compact),.be-cta,.ap-action,.bd-cta,.newsletter-form__row>button,.catalog-contact__submit,.catalog-contact__card-submit,.catalog-consultation__button,.owner-sale-strategy__button,.feedback-modal__submit,.site-footer__callback-btn){box-sizing:border-box!important;min-height:var(--uk-height)!important;height:var(--uk-height)!important;padding:0 var(--uk-pad)!important;border-radius:1px!important;font-family:"Tilda Sans",system-ui,sans-serif!important;font-size:var(--uk-action)!important;line-height:1.1!important;font-weight:400!important;letter-spacing:0!important}
+html body.barnes-page-kit[data-page-kit]:is(#partners-kit-page,#ui-kit-page) :is(.newsletter-form__row>input,.feedback-modal__input,.catalog-contact__input,.catalog-contact__textarea,.catalog-consultation__input){font-size:var(--uk-field)!important;line-height:1.4!important;font-weight:300!important;border-radius:1px}
+html body.barnes-page-kit[data-page-kit]:is(#partners-kit-page,#ui-kit-page) :is(.catalog-contact__consent,.catalog-contact__consent-text,.newsletter-form__note,.newsletter-form__note-link){font:300 13px/18px "Tilda Sans",sans-serif!important}
+html body.barnes-page-kit[data-page-kit]:is(#partners-kit-page,#ui-kit-page) .catalog-contact__method{box-sizing:border-box;height:35px!important;min-height:0!important;padding:0 8px!important;border-radius:1px!important;font:400 var(--uk-action)/1.1 "Tilda Sans",sans-serif!important;position:relative}
+html body.barnes-page-kit[data-page-kit]:is(#partners-kit-page,#ui-kit-page) .catalog-contact__method::before{content:"";position:absolute;inset:50% 0 auto;height:44px;transform:translateY(-50%)}
+html body.barnes-page-kit[data-page-kit]:is(#partners-kit-page,#ui-kit-page) .catalog-contact__method :is(svg,img){width:22px!important;height:22px!important;flex-shrink:0}
+html body.barnes-page-kit[data-page-kit]:is(#partners-kit-page,#ui-kit-page) .catalog-contact__methods{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px 12px}
+/* Shared About reveal geometry and text roles. */
+html body.barnes-page-kit[data-page-kit]:is(#partners-kit-page,#ui-kit-page) .about-company__intro{margin:var(--uk-content) 0 0!important;padding-top:var(--uk-copy)!important;border-top:1px solid rgba(30,30,30,.18)}
+html body.barnes-page-kit[data-page-kit]:is(#partners-kit-page,#ui-kit-page) .about-company__brand{max-width:440px;width:100%;margin:0!important;min-height:0;padding:0;position:static;align-self:start}
+html body.barnes-page-kit[data-page-kit]:is(#partners-kit-page,#ui-kit-page) .about-company__brand-logo{display:block;width:100%!important;max-width:440px!important;height:auto!important;margin:0!important;object-fit:contain}
+html body.barnes-page-kit[data-page-kit]:is(#partners-kit-page,#ui-kit-page) :is(.about-company__copy,.about-company__copy p,.about-company__text,.about-company__text p){font-size:18px!important;line-height:27px!important;font-weight:300!important;color:#4f4d49!important}
+html body.barnes-page-kit[data-page-kit]:is(#partners-kit-page,#ui-kit-page) .about-company__copy p{margin:0 0 var(--uk-copy)!important}
+html body.barnes-page-kit[data-page-kit]:is(#partners-kit-page,#ui-kit-page) .about-company .ui-more-link{display:inline-flex!important;align-items:center;min-height:44px!important;padding:8px 0!important;font:400 14px/1.2 "Tilda Sans",sans-serif!important;letter-spacing:.12em!important;color:#8b1d25!important}
+html body.barnes-page-kit[data-page-kit]:is(#partners-kit-page,#ui-kit-page) .about-company .ui-more-link__label{font:inherit!important;letter-spacing:inherit!important}
+html body.barnes-page-kit[data-page-kit]:is(#partners-kit-page,#ui-kit-page) .newsletter-cta__copy{display:block;padding-block:0!important}
+html body.barnes-page-kit[data-page-kit]:is(#partners-kit-page,#ui-kit-page) .newsletter-form{margin-top:24px!important}
+html body.barnes-page-kit[data-page-kit]:is(#partners-kit-page,#ui-kit-page) .newsletter-form__note{margin-top:16px!important;color:#656462!important}
+/* Footer is a registered component, with the same responsive scale on every page. */
+html body.barnes-page-kit[data-page-kit]:is(#partners-kit-page,#ui-kit-page) .site-footer__column-title{font:400 18px/1 "Tilda Sans",sans-serif!important;margin-bottom:30px}
+html body.barnes-page-kit[data-page-kit]:is(#partners-kit-page,#ui-kit-page) .site-footer__link{font:300 16px/1 "Tilda Sans",sans-serif!important}
+@media(min-width:1441px){html body.barnes-page-kit[data-page-kit]:is(#partners-kit-page,#ui-kit-page) .site-footer__column-title{font-size:20px!important}html body.barnes-page-kit[data-page-kit]:is(#partners-kit-page,#ui-kit-page) .site-footer__link{font-size:18px!important}}
+@media(max-width:1279px){html body.barnes-page-kit[data-page-kit]:is(#partners-kit-page,#ui-kit-page) .catalog-contact__methods{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:540px){
+ /* Owner presentation cards share ambassador conditions' mobile text sizes. */
+ html body#ui-kit-page.barnes-page-kit[data-page-kit] .owner-sale-presentation :is(.owner-sale-presentation__caption,.owner-sale-presentation__featured-title){font-size:20px!important;line-height:24px!important;overflow-wrap:anywhere}
+ html body#ui-kit-page.barnes-page-kit[data-page-kit] .owner-sale-presentation :is(.owner-sale-presentation__reveal-text,.owner-sale-presentation__featured-text){font-size:16px!important;line-height:22.4px!important}
+ html body.barnes-page-kit[data-page-kit]:is(#partners-kit-page,#ui-kit-page) .newsletter-cta h2{line-height:1.2!important}
+ html body.barnes-page-kit[data-page-kit]:is(#partners-kit-page,#ui-kit-page) :is(.ap-action,.bd-cta,.catalog-contact__submit,.catalog-consultation__button,.newsletter-form__row>button,.site-footer__callback-btn){width:100%!important;justify-content:center!important;text-align:center!important}
+ html body.barnes-page-kit[data-page-kit]:is(#partners-kit-page,#ui-kit-page) .catalog-contact__method{height:29px!important}
+ html body.barnes-page-kit[data-page-kit]:is(#partners-kit-page,#ui-kit-page) .catalog-contact__method :is(svg,img){width:18px!important;height:18px!important}
+ html body.barnes-page-kit[data-page-kit]:is(#partners-kit-page,#ui-kit-page) .about-company__brand{max-width:220px!important}
+ html body.barnes-page-kit[data-page-kit]:is(#partners-kit-page,#ui-kit-page) :is(.about-company__copy,.about-company__copy p,.about-company__text,.about-company__text p){font-size:14px!important;line-height:21px!important}
+ html body.barnes-page-kit[data-page-kit]:is(#partners-kit-page,#ui-kit-page) .about-company .ui-more-link{font-size:12px!important}
+ html body.barnes-page-kit[data-page-kit]:is(#partners-kit-page,#ui-kit-page) .site-footer__column-title{font-size:14px!important;line-height:1.2!important;margin-bottom:16px}
+ html body.barnes-page-kit[data-page-kit]:is(#partners-kit-page,#ui-kit-page) .site-footer__link{font-size:13px!important;line-height:1.4!important;font-weight:400!important}
+}
+
+html body.barnes-page-kit[data-page-kit]:is(#partners-kit-page,#ui-kit-page) .media-cta-banner .home-section-eyebrow{color:rgba(255,255,255,.8)!important}
+
+/* Heading-to-content spacing is owned by the header/grid, never by H2 margins. */
+html body.barnes-page-kit[data-page-kit]:is(#partners-kit-page,#ui-kit-page) .owner-sale-presentation__grid{margin-top:var(--uk-content)!important}
+html body.barnes-page-kit[data-page-kit]:is(#partners-kit-page,#ui-kit-page) :is(.owner-sale-services__header-wrap,.owner-sale-types__header,.owner-sale-exclusive__header,.be-panorama-header){margin-bottom:var(--uk-content)!important}
+html body.barnes-page-kit[data-page-kit]:is(#partners-kit-page,#ui-kit-page) :is(.owner-sale-types__header,.be-panorama-header){row-gap:0!important}
+html body.barnes-page-kit[data-page-kit]:is(#partners-kit-page,#ui-kit-page) :is(.owner-sale-exclusive__intro,.owner-sale-stages__intro){margin:var(--uk-copy) 0 0!important}
+html body.barnes-page-kit[data-page-kit]:is(#partners-kit-page,#ui-kit-page) .owner-sale-stages__body{row-gap:var(--uk-content)!important}
+html body.barnes-page-kit[data-page-kit]:is(#partners-kit-page,#ui-kit-page) .about-company__inner{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.45fr);gap:clamp(48px,7vw,120px)}
+@media(max-width:1279px){html body.barnes-page-kit[data-page-kit]:is(#partners-kit-page,#ui-kit-page) .about-company__inner{grid-template-columns:1fr;gap:32px}html body.barnes-page-kit[data-page-kit]:is(#partners-kit-page,#ui-kit-page) .about-company__brand{max-width:280px}}
+@media(max-width:540px){html body.barnes-page-kit[data-page-kit]:is(#partners-kit-page,#ui-kit-page) .about-company__brand{max-width:220px}}

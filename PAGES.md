@@ -20,6 +20,7 @@
 | Амбассадоры | [Превью](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/for-partners/) | [Исходники](https://github.com/daniilterekh-prog/barnes-sites/tree/main/main-site/pages/partners) |
 | Собственникам — аренда | [Превью](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/arenda_sobstvennikam/) | [Исходники](https://github.com/daniilterekh-prog/barnes-sites/tree/main/main-site/pages/owner-rent) |
 | Собственникам — продажа | [Превью](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/prodazha_sobstvennikam/) | [Исходники](https://github.com/daniilterekh-prog/barnes-sites/tree/main/main-site/pages/owner-sale) |
+| Собственник — продажа СПб | [Превью](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/prodazha_sobstvennikam_spb/) | [Исходники](https://github.com/daniilterekh-prog/barnes-sites/tree/main/main-site/pages/owner-sale-spb) |
 | Городская | [Превью](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/gorodskaya-nedvizhimost/) | [Исходники](https://github.com/daniilterekh-prog/barnes-sites/tree/main/main-site/pages/city) |
 | Загородная | [Превью](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/zagorodnaya-nedvizhimost/) | [Исходники](https://github.com/daniilterekh-prog/barnes-sites/tree/main/main-site/pages/country) |
 | Зарубежная | [Превью](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/mezhdunarodnaya-nedvizhimost/) | [Исходники](https://github.com/daniilterekh-prog/barnes-sites/tree/main/main-site/pages/international) |
