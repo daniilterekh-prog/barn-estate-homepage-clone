@@ -1,9 +1,9 @@
 {
   "date": "2026-11-10",
   "canonicalRepository": "daniilterekh-prog/barnes-sites",
-  "canonicalCommit": "93ff4c2c32ceae0881967d3e4a7d119fc61d49dc",
+  "canonicalCommit": "52a4dc52db81b2c2012dcf56aa9da194f4b1c8e3",
   "source": "main-site/pages/owner-sale-spb",
-  "publicReferenceCommit": "a49c9b7069872df6f8f7e7fcb00fbfeccd1f47e6",
+  "publicReferenceCommit": "165b076c6f3cff12e33a54dba8b0b6dce81b49af",
   "preview": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/prodazha_sobstvennikam_spb/",
   "entryPolicy": "Materialised public HTML is the export input; canonical source remains in barnes-sites. Archive-only extraction of inline files is not replayed into the handoff.",
   "transform": "Relocate runtime resources; externalize inline CSS/JS; preserve design, native controllers and preview-only forms; omit unused framework preload hints. HTML navigation links retain their approved destinations as absolute links.",
@@ -12,9 +12,9 @@
       "source": "prodazha_sobstvennikam_spb/index.html",
       "repository": "daniilterekh-prog/barn-estate-homepage-clone",
       "file": "html/index.html",
-      "sourceSha256": "07b6f7e8f5f24f998b08059046d4b74cde8da24ce822d5c079f69d5df81a5d3a",
+      "sourceSha256": "47c5a3199c5152f8e81b6f72dcefcb3c48617ea524a25639d35788b15a52d4a4",
       "canonicalReference": "main-site/pages/owner-sale-spb/index.html",
-      "canonicalSha256": "d0043164f53cf4130fc5abc04a9d7b852032246d744506b4171130087f8a003d"
+      "canonicalSha256": "63e4a360c1cea543be21a2ee2d82c55ee75950fa03400c380e1fc2a70a21117c"
     },
     {
       "source": "prodazha_sobstvennikam_spb/source.css",
@@ -164,9 +164,9 @@
       "source": "prodazha_sobstvennikam_spb/spb-cta.css",
       "repository": "daniilterekh-prog/barn-estate-homepage-clone",
       "file": "css/spb-cta.css",
-      "sourceSha256": "dc6e0e82c0c85dc2d0d5ffaf9edb5acf4dc2eea313a9791555e5cafeefdd0c1b",
+      "sourceSha256": "fa6734013bef15dfed056157c0e2769660c17c7e7bcecabba259ac680a9c8845",
       "canonicalReference": "main-site/pages/owner-sale-spb/spb-cta.css",
-      "canonicalSha256": "dc6e0e82c0c85dc2d0d5ffaf9edb5acf4dc2eea313a9791555e5cafeefdd0c1b"
+      "canonicalSha256": "fa6734013bef15dfed056157c0e2769660c17c7e7bcecabba259ac680a9c8845"
     },
     {
       "source": "shared/cta-resort.js",
@@ -890,8 +890,8 @@
     },
     {
       "owner": "prodazha_sobstvennikam_spb/index.html",
-      "before": "spb-cta.css?v=dc6e0e82c0c8",
-      "after": "../css/spb-cta.css?v=dc6e0e82c0c8"
+      "before": "spb-cta.css?v=fa6734013bef",
+      "after": "../css/spb-cta.css?v=fa6734013bef"
     },
     {
       "owner": "prodazha_sobstvennikam_spb/index.html",
@@ -1462,8 +1462,8 @@
     },
     {
       "file": "css/spb-cta.css",
-      "bytes": 139848,
-      "sha256": "dfba921149f2075da426faa56dea08925a3f728918d3298d898c22506e7fc50c"
+      "bytes": 140639,
+      "sha256": "f211cb0a915ad2b83b4f7a4ff7908460429c04480c36142172b41c7f859397ea"
     },
     {
       "file": "css/spb-newsletter.css",
@@ -1482,8 +1482,8 @@
     },
     {
       "file": "data/SPB-SOURCE.json",
-      "bytes": 7382,
-      "sha256": "0f4f57cc78c0892f8343139f4f99f53ddbe89003c339d5621fd23d29a615c96c"
+      "bytes": 7404,
+      "sha256": "5c603af5c2d8fcea9aeae3507c960d0ee095d95373c68753f599d17ef6decd49"
     },
     {
       "file": "data/body-attributes.json",
@@ -1503,12 +1503,12 @@
     {
       "file": "html/head.fragment.html",
       "bytes": 4473,
-      "sha256": "530efcfaa86b511d3aca96ea5083943e4456aa344e6f862045f443412bc6c6a2"
+      "sha256": "4bb78469b30c4ef827ee01f20cc78eabece0cc40c8b35fdf1218b0c12f854ebb"
     },
     {
       "file": "html/index.html",
       "bytes": 133168,
-      "sha256": "164cffdc16b603030095075a0496dbd073ad23ed0b747e8025a3397a4440844f"
+      "sha256": "7277887c148dcd4cd0f6d935a7fe0a52e9ff783cd5aadd00c6cc525dcee05d7b"
     },
     {
       "file": "js/brand-nowrap.js",

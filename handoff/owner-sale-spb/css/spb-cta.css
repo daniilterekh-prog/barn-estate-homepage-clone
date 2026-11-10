@@ -32,3 +32,7 @@ html body#ui-kit-page[data-resort-cta] :is(#request,#resort-cta-consultation,#re
 html body#ui-kit-page[data-resort-cta] :is(#request,#resort-cta-consultation,#resort-cta-contact):where(.catalog-contact,.catalog-consultation):where([data-resort-node]):not(#rs-priority#rs-priority#rs-priority):not(#rs-priority#rs-priority#rs-priority).catalog-consultation .catalog-consultation__image{display:none!important}
 html body#ui-kit-page[data-resort-cta] :is(#request,#resort-cta-consultation,#resort-cta-contact):where(.catalog-contact,.catalog-consultation):where([data-resort-node]):not(#rs-priority#rs-priority#rs-priority):not(#rs-priority#rs-priority#rs-priority).catalog-consultation .catalog-consultation__overlay{background:rgba(5,7,10,.72)!important}
 }
+
+/* Give Ludmila more room in the consultation, keeping the portrait anchored below. */
+html body#ui-kit-page[data-resort-cta] :is(#request,#resort-cta-consultation,#resort-cta-contact):where(.catalog-consultation):where([data-resort-node]):not(#rs-priority#rs-priority#rs-priority):not(#rs-priority#rs-priority#rs-priority) .catalog-consultation__image{transform:scale(.92)!important;transform-origin:center bottom!important}
+html body#ui-kit-page[data-resort-cta] :is(#request,#resort-cta-consultation,#resort-cta-contact):where(.catalog-consultation):where([data-resort-node]):not(#rs-priority#rs-priority#rs-priority):not(#rs-priority#rs-priority#rs-priority) .catalog-consultation__mobile-photo img{transform:translateY(6px) scale(1.24)!important;transform-origin:center top!important}

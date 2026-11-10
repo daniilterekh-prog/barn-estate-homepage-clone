@@ -1,16 +1,19 @@
-[
-  {
-    "width": 390,
-    "standaloneZip": true,
-    "avatarScale": 1.39990234375,
-    "expertDialog": true,
-    "errors": []
-  },
-  {
-    "width": 1440,
-    "standaloneZip": true,
-    "avatarScale": 1.3999565972222223,
-    "expertDialog": true,
-    "errors": []
-  }
-]
+{
+  "checkedAt": "2026-11-10T17:43:46.112Z",
+  "report": [
+    {
+      "width": 390,
+      "standaloneZip": true,
+      "ctaTransform": "matrix(1.24, 0, 0, 1.24, 0, 6)",
+      "expertDialog": true,
+      "errors": []
+    },
+    {
+      "width": 1440,
+      "standaloneZip": true,
+      "ctaTransform": "matrix(0.92, 0, 0, 0.92, 0, 0)",
+      "expertDialog": true,
+      "errors": []
+    }
+  ]
+}
