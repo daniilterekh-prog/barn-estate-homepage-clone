@@ -273,6 +273,16 @@ body.barnes-home-typography .newsletter-cta__copy {justify-content:flex-start!im
  body.barnes-home-typography :is(.project-hero,.project-hero__slide,.project-hero__content) {min-height:840px!important;}
  body.barnes-home-typography .project-hero__content {padding-block:80px!important;}
 }
+/* Long featured-project names must fit the phone/tablet content width. */
+@media(max-width:1024px) {
+ body.barnes-home-typography .project-hero__title {
+  min-width:0;
+  max-width:100%;
+  font-size:clamp(28px,9vw,84px);
+  line-height:1.08;
+  overflow-wrap:anywhere;
+ }
+}
 /* Below the office-photo breakpoint, do not reserve the old 600px photo row. */
 @media(max-width:860px) {
  body.barnes-home-typography :is(.office-contact__inner,.office-contact__grid,.office-contact__copy) {min-height:0!important;}
