@@ -1,13 +1,11 @@
-/* Page wiring for the unchanged owner/media header component. */
+/* Home header states: transparent at the top, fixed white after 48px of scrolling. */
 (() => {
   const header = document.querySelector('.site-header');
   const wrapper = document.querySelector('.layout__header');
   const menu = document.querySelector('.site-menu');
   const trigger = header.querySelector('.site-header__icon-btn');
-  const sticky = document.querySelector('.owner-sale-sticky');
   const main = document.querySelector('main');
   const footer = document.querySelector('footer');
-  const hero = document.querySelector('.hero');
   const target = document.querySelector('#zhk-site-menu-nav');
   const updateTop = () => document.documentElement.style.setProperty('--zhk-menu-top', `${header.getBoundingClientRect().height}px`);
   new ResizeObserver(updateTop).observe(header);
@@ -20,6 +18,7 @@
       const group = document.createElement('details');
       group.className = 'zhk-menu-section';
       const summary = document.createElement('summary');
+      summary.tabIndex = 0;
       summary.textContent = parent.textContent;
       group.append(summary);
       const all = document.createElement('a');
@@ -52,23 +51,21 @@
     if (!event.target.closest('a')) return;
     setMenu(false);
   });
-  new IntersectionObserver(([entry]) => {
-    const visible = entry.boundingClientRect.bottom <= 0;
-    sticky.classList.toggle('owner-sale-sticky--visible', visible);
-    sticky.setAttribute('aria-hidden', String(!visible));
-    sticky.inert = !visible;
+  const updateScrolled = () => {
+    const scrolled = window.scrollY > 48;
+    if (header.classList.contains('site-header--scrolled') === scrolled) return;
+    header.classList.toggle('site-header--scrolled', scrolled);
+    updateTop();
     window.__barnesMediaHeaderSync?.refresh();
-  }, { threshold: 0 }).observe(hero);
-  const anchors = sticky.querySelectorAll('.owner-sale-sticky__link');
-  const sectionsObserver = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (!entry.isIntersecting) return;
-      anchors.forEach(link => {
-        const active = link.hash === `#${entry.target.id}`;
-        link.classList.toggle('owner-sale-sticky__link--active', active);
-        if (active) link.setAttribute('aria-current', 'location'); else link.removeAttribute('aria-current');
-      });
+  };
+  let scrollFrame = 0;
+  window.addEventListener('scroll', () => {
+    if (scrollFrame) return;
+    scrollFrame = requestAnimationFrame(() => {
+      scrollFrame = 0;
+      updateScrolled();
     });
-  }, { rootMargin: '-120px 0px -55% 0px', threshold: 0 });
-  anchors.forEach(link => { const section = document.querySelector(link.hash); if (section) sectionsObserver.observe(section); });
+  }, { passive: true });
+  window.addEventListener('pageshow', updateScrolled);
+  updateScrolled();
 })();

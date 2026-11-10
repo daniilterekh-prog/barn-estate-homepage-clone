@@ -1,15 +1,15 @@
-/* Embedding only. Header geometry/artwork: canonical owner-header + media-header. */
+/* Shared header artwork/geometry, with the same transparent-to-white states as home. */
 html{scrollbar-gutter:stable}
 .layout__header{position:absolute;inset:0 0 auto;z-index:40;color:#fff;font-size:16px}
 .layout__header.is-menu-open{z-index:1301}
 html body.barnes-header-template .layout__header>.site-header{height:auto;background:transparent;color:#fff;position:static}
-html body.barnes-header-template .layout__header>.site-header.site-header--menu-open{position:fixed;background:#fff;color:#1e1e1e}
+html body.barnes-header-template .layout__header>.site-header:is(.site-header--scrolled,.site-header--menu-open){position:fixed;inset:0 0 auto;background:#fff;color:#1e1e1e}
+html body.barnes-header-template .layout__header>.site-header.site-header--scrolled:not(.site-header--menu-open){z-index:200;box-shadow:0 4px 24px rgba(0,0,0,.08)}
+html body.barnes-header-template .layout__header>.site-header.site-header--scrolled:not(.site-header--menu-open) .site-header__top{margin-bottom:0}
 .site-header__inner{position:relative}
 .zhk-header-breadcrumbs{position:absolute;left:0;right:0;bottom:7px;display:flex;align-items:center;gap:8px;color:rgba(255,255,255,.75);font:300 17px/18px "Tilda Sans",sans-serif;white-space:nowrap}
 .zhk-header-breadcrumbs a:hover{color:inherit;text-decoration:underline}
-.site-header--menu-open .zhk-header-breadcrumbs{display:none}
-.owner-sale-sticky{position:fixed;top:0;left:0;right:0;background:#fff;transform:translateY(-100%);opacity:0;visibility:hidden;font-size:16px}
-.owner-sale-sticky--visible{transform:translateY(0);opacity:1;visibility:visible}
+:is(.site-header--scrolled,.site-header--menu-open) .zhk-header-breadcrumbs{display:none}
 .site-menu{position:fixed;z-index:1300;top:var(--zhk-menu-top,110px);left:0;right:0;bottom:0;overflow:auto;background:#fff;color:#1e1e1e;padding:36px 0 60px;overscroll-behavior:contain}
 #zhk-site-menu-nav{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px 48px}
 .zhk-menu-section{border-top:1px solid var(--line);border-bottom:0;align-self:start}
