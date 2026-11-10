@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-09",
+  "date": "2026-11-10",
   "reference": "http://127.0.0.1:8824/main-site/pages/contacts/",
   "package": "http://127.0.0.1:8931/code/html/index.html",
   "parity": [
@@ -83,7 +83,7 @@
       "rawPixelDifferences": 12,
       "significantPixels": 0,
       "threshold": 0.1,
-      "sha256": "eab4a10b26363e8a08e161ad56da81ceb947e5de07b59690871afff924cd5dfa"
+      "sha256": "55a239e3b5c0e8637a2bdefd47a96d3d49cebcdbe50e123454a036bc9145192e"
     },
     {
       "width": 1920,
@@ -91,7 +91,7 @@
       "rawPixelDifferences": 6,
       "significantPixels": 0,
       "threshold": 0.1,
-      "sha256": "bb57f777158b032d6695e92b463a30c590fc36da1099df64f2b51acbda65a700"
+      "sha256": "22555f5fc089ab1f2f26e1f63b67cee7b6ccfa0dc3b1330b6f87fa9430fd135d"
     }
   ],
   "menus": [
