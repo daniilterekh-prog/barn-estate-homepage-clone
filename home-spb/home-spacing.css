@@ -194,9 +194,9 @@ body.barnes-home-typography .services-section__link {
   }
 }
 
-/* SPb hero trial: Kollektsioner, official RBI image; keep the kit's 40% overlay. */
+/* SPb hero trial: ZEN, official YARD image; keep the kit's 40% overlay. */
 body.barnes-home-typography .home-hero__media {
-  background-image: url("assets/home-spb-hero-kollektsioner.webp");
+  background-image: url("assets/home-spb-hero-zen.webp");
   background-size: cover;
   background-position: center 35%;
   background-repeat: no-repeat;
@@ -206,14 +206,14 @@ body.barnes-home-typography .home-hero__overlay { background: rgba(0,0,0,.4) !im
 
 /* Same official architecture on ultrawide displays. */
 @media(min-width:1921px) {
-  body.barnes-home-typography .home-hero__media { background-image: url("assets/home-spb-hero-kollektsioner.webp"); }
+  body.barnes-home-typography .home-hero__media { background-image: url("assets/home-spb-hero-zen.webp"); }
 }
 
-/* Mobile crop keeps the principal stone facade in frame. */
+/* Mobile crop keeps the city skyline and terrace edge in frame. */
 @media(max-width:767px) {
   body.barnes-home-typography .home-hero__media {
-    background-image: url("assets/home-spb-hero-kollektsioner-mobile.webp");
-    background-position: 38% center;
+    background-image: url("assets/home-spb-hero-zen-mobile.webp");
+    background-position: 88% center;
   }
 }
 
