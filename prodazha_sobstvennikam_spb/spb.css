@@ -5,7 +5,8 @@
 .owner-sale-hero__text{max-width:860px}
 .spb-hero-location{white-space:nowrap}
 .home-owner-form__hero-image{object-fit:contain;object-position:center bottom}
-.floating-expert__avatar img{object-position:center 18%}
+/* A little more room around Ludmila in the floating expert circle. */
+body#ui-kit-page .floating-expert__avatar img{width:150%!important;left:-25%!important;top:-1%!important}
 .catalog-consultation [data-preview-status]{font-size:16px;line-height:1.5}
 @media(max-width:540px){
  .owner-sale-reference-ui .owner-sale-hero .owner-sale-hero__image{object-position:88% center}
