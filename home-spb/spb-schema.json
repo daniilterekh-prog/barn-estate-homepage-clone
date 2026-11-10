@@ -1,0 +1,225 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://barn-estate.ru/#organization",
+      "name": "BARN Estate",
+      "url": "https://barn-estate.ru/",
+      "logo": {
+        "@id": "https://barnestate-spb.ru/#logo"
+      }
+    },
+    {
+      "@type": "RealEstateAgent",
+      "@id": "https://barnestate-spb.ru/#agency",
+      "name": "BARN Estate Санкт-Петербург",
+      "url": "https://barnestate-spb.ru/",
+      "description": "Филиал BARN Estate в Санкт-Петербурге. Покупка, продажа и аренда элитной недвижимости Петербурга и Ленинградской области.",
+      "parentOrganization": {
+        "@id": "https://barn-estate.ru/#organization"
+      },
+      "logo": {
+        "@id": "https://barnestate-spb.ru/#logo"
+      },
+      "telephone": "+74992724872",
+      "email": "moscow@barn-estate.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "наб. реки Мойки, д. 59, БЦ «Сенатор», пом. 307",
+        "addressLocality": "Санкт-Петербург",
+        "addressRegion": "Санкт-Петербург",
+        "addressCountry": "RU"
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Санкт-Петербург"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Ленинградская область"
+        }
+      ],
+      "hasMap": "https://yandex.ru/maps/?rtext=~%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3%2C%20%D0%BD%D0%B0%D0%B1%D0%B5%D1%80%D0%B5%D0%B6%D0%BD%D0%B0%D1%8F%20%D1%80%D0%B5%D0%BA%D0%B8%20%D0%9C%D0%BE%D0%B9%D0%BA%D0%B8%2C%2059&rtt=auto",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "https://schema.org/Monday",
+            "https://schema.org/Tuesday",
+            "https://schema.org/Wednesday",
+            "https://schema.org/Thursday",
+            "https://schema.org/Friday",
+            "https://schema.org/Saturday",
+            "https://schema.org/Sunday"
+          ],
+          "opens": "09:30",
+          "closes": "21:30"
+        }
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer service",
+        "telephone": "+74992724872",
+        "email": "moscow@barn-estate.com",
+        "availableLanguage": "ru",
+        "url": "https://barnestate-spb.ru/contacts/"
+      },
+      "employee": {
+        "@id": "https://barnestate-spb.ru/#lyudmila-belousova"
+      },
+      "hasOfferCatalog": {
+        "@id": "https://barnestate-spb.ru/#services"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://barnestate-spb.ru/#website",
+      "url": "https://barnestate-spb.ru/",
+      "name": "BARN Estate Санкт-Петербург",
+      "inLanguage": "ru-RU",
+      "publisher": {
+        "@id": "https://barnestate-spb.ru/#agency"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://barnestate-spb.ru/#webpage",
+      "url": "https://barnestate-spb.ru/",
+      "name": "Элитная недвижимость в Санкт-Петербурге — BARN Estate",
+      "description": "Покупка, продажа и аренда элитной недвижимости в Санкт-Петербурге и Ленинградской области. Новостройки, вторичная недвижимость и загородные дома с BARN Estate.",
+      "inLanguage": "ru-RU",
+      "isPartOf": {
+        "@id": "https://barnestate-spb.ru/#website"
+      },
+      "about": {
+        "@id": "https://barnestate-spb.ru/#agency"
+      },
+      "mainEntity": {
+        "@id": "https://barnestate-spb.ru/#agency"
+      },
+      "primaryImageOfPage": {
+        "@id": "https://barnestate-spb.ru/#primaryimage"
+      }
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://barnestate-spb.ru/#logo",
+      "url": "https://raw.githubusercontent.com/daniilterekh-prog/barnes-assets/6f2fa58843570d71cf36d4c5ca5af95a1d63bc2b/brand/barn-estate/logo.svg",
+      "contentUrl": "https://raw.githubusercontent.com/daniilterekh-prog/barnes-assets/6f2fa58843570d71cf36d4c5ca5af95a1d63bc2b/brand/barn-estate/logo.svg",
+      "caption": "BARN Estate"
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://barnestate-spb.ru/#primaryimage",
+      "url": "https://raw.githubusercontent.com/daniilterekh-prog/barnes-assets/6f2fa58843570d71cf36d4c5ca5af95a1d63bc2b/home-spb/hero/zen/hero-desktop.webp",
+      "contentUrl": "https://raw.githubusercontent.com/daniilterekh-prog/barnes-assets/6f2fa58843570d71cf36d4c5ca5af95a1d63bc2b/home-spb/hero/zen/hero-desktop.webp",
+      "width": 2880,
+      "height": 1620,
+      "caption": "Панорама Санкт-Петербурга — проект ZEN"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://barnestate-spb.ru/#lyudmila-belousova",
+      "name": "Людмила Белоусова",
+      "jobTitle": "Руководитель филиала BARN Estate в Санкт-Петербурге",
+      "image": "https://raw.githubusercontent.com/daniilterekh-prog/barnes-assets/6f2fa58843570d71cf36d4c5ca5af95a1d63bc2b/portraits/ludmila-belousova/2026-11-09/ludmila-belousova-bw.webp",
+      "worksFor": {
+        "@id": "https://barnestate-spb.ru/#agency"
+      }
+    },
+    {
+      "@type": "OfferCatalog",
+      "@id": "https://barnestate-spb.ru/#services",
+      "name": "Недвижимость по направлениям",
+      "numberOfItems": 6,
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "url": "https://barnestate-spb.ru/zhilye-kompleksy/",
+          "itemOffered": {
+            "@type": "Service",
+            "@id": "https://barnestate-spb.ru/#service-new",
+            "name": "Новостройки",
+            "serviceType": "Новостройки",
+            "url": "https://barnestate-spb.ru/zhilye-kompleksy/",
+            "provider": {
+              "@id": "https://barnestate-spb.ru/#agency"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "url": "https://barnestate-spb.ru/gorodskaya-nedvizhimost/vtorichnaya-nedvizhimost/",
+          "itemOffered": {
+            "@type": "Service",
+            "@id": "https://barnestate-spb.ru/#service-secondary",
+            "name": "Вторичная недвижимость",
+            "serviceType": "Вторичная недвижимость",
+            "url": "https://barnestate-spb.ru/gorodskaya-nedvizhimost/vtorichnaya-nedvizhimost/",
+            "provider": {
+              "@id": "https://barnestate-spb.ru/#agency"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "url": "https://barnestate-spb.ru/zagorodnaya-nedvizhimost/",
+          "itemOffered": {
+            "@type": "Service",
+            "@id": "https://barnestate-spb.ru/#service-country",
+            "name": "Загородная недвижимость",
+            "serviceType": "Загородная недвижимость",
+            "url": "https://barnestate-spb.ru/zagorodnaya-nedvizhimost/",
+            "provider": {
+              "@id": "https://barnestate-spb.ru/#agency"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "url": "https://barnestate-spb.ru/kommercheskaya-nedvizhimost/",
+          "itemOffered": {
+            "@type": "Service",
+            "@id": "https://barnestate-spb.ru/#service-commercial",
+            "name": "Коммерческая недвижимость",
+            "serviceType": "Коммерческая недвижимость",
+            "url": "https://barnestate-spb.ru/kommercheskaya-nedvizhimost/",
+            "provider": {
+              "@id": "https://barnestate-spb.ru/#agency"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "url": "https://barn-estate.ru/kurortnaya/",
+          "itemOffered": {
+            "@type": "Service",
+            "@id": "https://barnestate-spb.ru/#service-resort",
+            "name": "Курортная недвижимость",
+            "serviceType": "Курортная недвижимость",
+            "url": "https://barn-estate.ru/kurortnaya/",
+            "provider": {
+              "@id": "https://barnestate-spb.ru/#agency"
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "url": "https://barn-estate.ru/mezhdunarodnaya-nedvizhimost/",
+          "itemOffered": {
+            "@type": "Service",
+            "@id": "https://barnestate-spb.ru/#service-international",
+            "name": "Зарубежная недвижимость",
+            "serviceType": "Зарубежная недвижимость",
+            "url": "https://barn-estate.ru/mezhdunarodnaya-nedvizhimost/",
+            "provider": {
+              "@id": "https://barnestate-spb.ru/#agency"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
