@@ -1,5 +1,7 @@
 # BARN Estate — страницы основного сайта
 
+- [BARN Estate Club: постоянный пакет разработчику](handoff/barn-club/README.md) · [ZIP](handoff/barn-club/barn-club.zip).
+
 [Правило хранения пакетов разработчику](handoff/RULES.md): постоянные папки handoff/slug, одна актуальная версия.
 
 - [Контакты: актуальная папка для разработчика — HTML/CSS/JS, ассеты и дизайн ·10.11.2026](handoff/contacts/README.md) · [ZIP](handoff/contacts/contacts-developer.zip).

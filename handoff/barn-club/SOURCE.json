@@ -1,0 +1,93 @@
+{
+  "date": "2026-11-10",
+  "repository": "daniilterekh-prog/barnes-sites",
+  "branch": "main",
+  "source_path": "main-site/pages/barn-club",
+  "source_base_commit": "b7349e92182390bbe522bc6d6502c7e6da822e2a",
+  "source_files": [
+    {
+      "path": "assets/TildaSans-Light.woff2",
+      "bytes": 63952,
+      "sha256": "f0f2c165784c72343618a7c2cbde00e45dbb9b09af5149984792f280cac9642e"
+    },
+    {
+      "path": "assets/TildaSans-Regular.woff2",
+      "bytes": 61636,
+      "sha256": "2670dad44ca6c2a1b9bbdbf1af6d8db9173f2dbe31604e80bdf9599b55047d41"
+    },
+    {
+      "path": "assets/about-club.webp",
+      "bytes": 532574,
+      "sha256": "a0748dde42134321d45a55fe8debe92774f6ef2e88e2b08037780b5e1e81ff39"
+    },
+    {
+      "path": "assets/business-lounge.webp",
+      "bytes": 203484,
+      "sha256": "a32fdf061f88f11098c2dfbdb48afca9b409f10f6d2142c22b02c7426941cb6e"
+    },
+    {
+      "path": "assets/business.webp",
+      "bytes": 218824,
+      "sha256": "f5a60095fad2d033d26bb681f2f5ed33413d8a52f0b5dbf061e717a0f1f11891"
+    },
+    {
+      "path": "assets/club-bar.webp",
+      "bytes": 273892,
+      "sha256": "e59783b0a129247ee5b23dd02fea29fa2fa3e8cdcaee6a5444920ce08d3c7153"
+    },
+    {
+      "path": "assets/first-floor-office.webp",
+      "bytes": 262016,
+      "sha256": "3d791eedb91f6ed9edc2f2179190a8a780b7c784d6d2f3b729882957496eb4ff"
+    },
+    {
+      "path": "assets/guests.webp",
+      "bytes": 257962,
+      "sha256": "b00ff1283404a4b4ee4dac2c0b33ab1e71f12e4b66cf096858fa675d8bcdc49f"
+    },
+    {
+      "path": "assets/logo.svg",
+      "bytes": 6582,
+      "sha256": "25d4a2a32ee6f85768e04db21d646d048ccd61ebd4d214d6f54737491d2fc5e0"
+    },
+    {
+      "path": "assets/max.svg",
+      "bytes": 72862,
+      "sha256": "5caa61a4b0731d0d89421b4fb24f41433025e5aea59155a14cf3a3fada6c9174"
+    },
+    {
+      "path": "assets/telegram.svg",
+      "bytes": 757,
+      "sha256": "4435c9a57e165a1c3b7f27e0b5b11b82b10d674ea4fff7f6748cb67b7fcb994e"
+    },
+    {
+      "path": "assets/whatsapp.svg",
+      "bytes": 1231,
+      "sha256": "3e197e0e1f3e679ee09823c75e1c7bad3a19da9bd1ba01df395268b9ae91816f"
+    },
+    {
+      "path": "css/club.css",
+      "bytes": 24450,
+      "sha256": "9bf3a5080e40220fd3d0889903c411347f949b92a011272090f000c5d00d24d3"
+    },
+    {
+      "path": "css/footer.css",
+      "bytes": 9265,
+      "sha256": "5768b7a44d9335d9a09a2149f310cfc626b16242f4d8f542545cf599628b285e"
+    },
+    {
+      "path": "index.html",
+      "bytes": 53669,
+      "sha256": "bf71886672361ad3eb4a2764420b133710991bee546c6577ba26d209844e59e6"
+    },
+    {
+      "path": "js/club.js",
+      "bytes": 4539,
+      "sha256": "a6f14a3788bdd23745b52df01affbd86f558e6feb8ec2962ec03485bc8a734f5"
+    }
+  ],
+  "html_transform": "Only local assets/css/js URLs gain ../ for html/ folder",
+  "public_path": "handoff/barn-club/",
+  "preview_path": "barn-estate-club/",
+  "form": "mailto draft, no API or CRM"
+}

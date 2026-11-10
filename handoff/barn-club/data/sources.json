@@ -1,0 +1,74 @@
+{
+  "checked": "2026-11-09",
+  "source_page": "https://barn-estate.ru/barn-estate-club/",
+  "source_html_sha256": "bd0a9af857355f16845b319cb41b1a8df272b2bfd0ff9bbc15a6042b8a5a18d2",
+  "ui_kit": "main-site/pages/home/exact-2026-10-21/UI-KIT.md",
+  "ui_kit_version": "1.0.3",
+  "component_source_commit": "d4ab833b",
+  "images": [
+    {
+      "file": "assets/guests.webp",
+      "source": "https://barn-estate.ru/images/sb_pic1.png",
+      "original_sha256": "5964813ea4f738370502c4e21a89cc1e3ad677c3247ec3c292226aefe105a729",
+      "webp_sha256": "b00ff1283404a4b4ee4dac2c0b33ab1e71f12e4b66cf096858fa675d8bcdc49f",
+      "transform": "WebP quality 88, no resizing, no retouching"
+    },
+    {
+      "file": "assets/first-floor-office.webp",
+      "source": "https://github.com/daniilterekh-prog/barnes-sites/blob/60990a64a10dacb380ba46dbb85abefa06bacdf3/main-site/pages/home/exact-2026-10-21/source/assets/home-office-estate.webp",
+      "source_page": "Утверждённая главная BARN Estate — блок офиса",
+      "checked": "2026-11-09",
+      "width": 1563,
+      "height": 1006,
+      "webp_sha256": "3d791eedb91f6ed9edc2f2179190a8a780b7c784d6d2f3b729882957496eb4ff",
+      "transform": "Byte-for-byte copy from homepage; no new editing",
+      "provenance": "Ранее обработанное изображение главной: водяной знак удалён, логотип на стене заменён. Не подтверждает фактическую установку вывески."
+    },
+    {
+      "file": "assets/business.webp",
+      "source": "https://barn-estate.ru/images/office2.png",
+      "original_sha256": "86ec8901714f486e1c97548aef6d87f43430694b13c8278d9f163b69801ef8a7",
+      "webp_sha256": "f5a60095fad2d033d26bb681f2f5ed33413d8a52f0b5dbf061e717a0f1f11891",
+      "transform": "WebP quality 88, no resizing, no retouching"
+    },
+    {
+      "file": "assets/club-bar.webp",
+      "source": "https://drive.google.com/file/d/12Q8MJOb4J_KvmmSnFp0-Y2pWnIFdvu0G/view",
+      "selection": "Фото №5 из показанной пользователю подборки; блок «Будем рады знакомству»",
+      "original_sha256": "994f0c2d016ec49c3d157ad5e6f75b740e8f07cd5f39e5c3033e9c19de14d822",
+      "webp_sha256": "e59783b0a129247ee5b23dd02fea29fa2fa3e8cdcaee6a5444920ce08d3c7153",
+      "width": 1500,
+      "height": 1000,
+      "transform": "Sharp: EXIF orientation, WebP quality 88; no resizing or retouching"
+    },
+    {
+      "file": "assets/business-lounge.webp",
+      "source": "https://drive.google.com/file/d/1AXKDJ0vB42IT2Jgi4xVjy2DtdWaFJ0z9/view",
+      "selection": "Фото №7 из показанной пользователю подборки; блок «Деловой клуб»",
+      "original_sha256": "988a36285992afddc2fa7bf1f0984ac61a709b2c271ab45f3f619ae3730c5629",
+      "webp_sha256": "a32fdf061f88f11098c2dfbdb48afca9b409f10f6d2142c22b02c7426941cb6e",
+      "width": 1500,
+      "height": 1000,
+      "transform": "Sharp: EXIF orientation, WebP quality 88; no resizing or retouching"
+    },
+    {
+      "file": "assets/about-club.webp",
+      "source": "https://github.com/daniilterekh-prog/barnes-assets/blob/e4b713447c16b60ce9677ab454ee4f700679a85a/club/about/2026-11-09/v2/about-mansion-v2.webp",
+      "kind": "AI architectural illustration, independently recomposed variant",
+      "tool": "built-in image_gen",
+      "prompt": "https://github.com/daniilterekh-prog/barnes-assets/blob/e4b713447c16b60ce9677ab454ee4f700679a85a/club/about/2026-11-09/v2/prompt.md",
+      "original_png": "https://github.com/daniilterekh-prog/barnes-assets/blob/e4b713447c16b60ce9677ab454ee4f700679a85a/club/about/2026-11-09/v2/original.png",
+      "width": 1254,
+      "height": 1254,
+      "webp_sha256": "a0748dde42134321d45a55fe8debe92774f6ef2e88e2b08037780b5e1e81ff39",
+      "changes": [
+        "green four-door car at left",
+        "new pair at entrance",
+        "three-quarter mansion view",
+        "street lamp at right",
+        "different balcony, storefront flowers, paving and reflections"
+      ],
+      "transform": "Sharp WebP quality94; no resizing"
+    }
+  ]
+}

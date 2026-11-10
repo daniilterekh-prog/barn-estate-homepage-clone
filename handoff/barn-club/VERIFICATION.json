@@ -1,0 +1,55 @@
+{
+  "date": "2026-11-10",
+  "status": "passed",
+  "browser": "Chromium",
+  "package_source_parity": {
+    "widths": 27,
+    "range": "320–3840px",
+    "pixel_identical_screenshots": 4
+  },
+  "flow": {
+    "widths": 11,
+    "checks": [
+      "menu keyboard/Escape/focus",
+      "mobile contacts",
+      "sticky header",
+      "reduced motion",
+      "required name/email/consent",
+      "whitespace name",
+      "mailto recipient/subject/body and honest status"
+    ],
+    "email_sent": false
+  },
+  "axe": {
+    "widths": [
+      390,
+      1440
+    ],
+    "violations": 0
+  },
+  "source_kit_audit": {
+    "widths": 29,
+    "sweep": 221,
+    "height_cases": 9,
+    "checks": 20440,
+    "failures": 0,
+    "axe_widths": 6
+  },
+  "limitations": [
+    "No real email delivery or CRM",
+    "No manual screen-reader test",
+    "No independent Firefox/Safari run"
+  ],
+  "evidence": [
+    "verification/parity.json",
+    "verification/flow.json",
+    "verification/files.json"
+  ],
+  "extracted_zip": {
+    "standalone_server": true,
+    "widths": 27,
+    "pixel_identical_screenshots": 4,
+    "flow_widths": 11,
+    "axe_violations": 0
+  }
+}

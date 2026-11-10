@@ -8,7 +8,7 @@
 
 | Страница | Посмотреть | Рабочие исходники |
 |---|---|---|
-| BARN Estate Club | [Превью](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/barn-estate-club/) | [Исходники](https://github.com/daniilterekh-prog/barnes-sites/tree/codex/barn-club/main-site/pages/barn-club) |
+| [BARN Estate Club — пакет и ZIP](handoff/barn-club/README.md) | [Превью](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/barn-estate-club/) | [Исходники](https://github.com/daniilterekh-prog/barnes-sites/tree/main/main-site/pages/barn-club) |
 | Вакансии | [Превью](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/vacancies/) | [Исходники](https://github.com/daniilterekh-prog/barnes-sites/tree/codex/vacancies-20261109/main-site/pages/vacancies) |
 | Главная СПб | [Превью](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/home-spb/) | [Исходники](https://github.com/daniilterekh-prog/barnes-sites/tree/main/main-site/pages/home-spb) |
 | Главная | [Превью](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/) | [Исходники](https://github.com/daniilterekh-prog/barnes-sites/tree/main/main-site/pages/home/exact-2026-10-21/source) |
