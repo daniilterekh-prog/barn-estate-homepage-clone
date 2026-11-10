@@ -1,0 +1,1 @@
+window.__NUXT__={};window.__NUXT__.config={public:{apiUrl:"https://barn-estate.ru",siteUrl:"https://barn-estate.ru",yandexMaps:{apikey:"HANDOFF_MAP_KEY_NOT_CONFIGURED",lang:"ru_RU"}},app:{baseURL:"/main-site/pages/home-spb/",buildId:"ceeca7b6-3bab-4d30-9841-e8078050b09d",buildAssetsDir:"/_nuxt/",cdnURL:""}}

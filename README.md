@@ -14,7 +14,7 @@
 
 - [Команда: папка для разработчика — HTML/CSS/JS, ассеты и дизайн ·09.11.2026](handoff/team/README.md) · [ZIP](handoff/team/team-developer.zip) · [Превью](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/handoff/team/html/index.html).
 
-- [Главная СПб — отдельная страница](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/home-spb/) ·09.11.2026.
+- [Главная СПб — отдельная страница](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/home-spb/) ·09.11.2026. [Папка разработчику](handoff/home-spb/README.md) · [ZIP](handoff/home-spb/home-spb-developer.zip) ·10.11.2026.
 
 - [BARN Estate Club — страница клуба](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/barn-estate-club/) ·09.11.2026.
 

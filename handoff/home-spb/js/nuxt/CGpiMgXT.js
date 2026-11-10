@@ -1,0 +1,1 @@
+const s={"name":"BARN Estate","description":"Агентство элитной недвижимости BARN Estate в Санкт-Петербурге.","logo":"/main-site/pages/home-spb/assets/c57d9b3c8de986fa0d618d09.svg","address":{"streetAddress":"наб. реки Мойки, д. 59, БЦ «Сенатор», пом. 307","addressLocality":"Санкт-Петербург","addressCountry":"RU"}},e="#identity";export{s as B,e as a};

@@ -1,0 +1,453 @@
+{
+  "date": "2026-11-10",
+  "url": "http://127.0.0.1:38525/home-spb/html/",
+  "network": "External resource requests blocked; expected search navigation fulfilled by test",
+  "results": [
+    {
+      "width": 320,
+      "title": "Элитная недвижимость в Санкт-Петербурге — BARN Estate",
+      "overflow": false,
+      "tabs": [
+        "Новостройки",
+        "Вторичка",
+        "Загородная",
+        "Коммерческая",
+        "Курортная",
+        "Зарубежная"
+      ],
+      "brandCaptions": 0,
+      "robots": "noindex,nofollow",
+      "groups": [],
+      "slides": [
+        {
+          "name": "Клубный дом «Коллекционер»",
+          "left": 22,
+          "right": 283,
+          "lines": [
+            {
+              "left": 22,
+              "right": 233
+            },
+            {
+              "left": 22,
+              "right": 281
+            }
+          ]
+        },
+        {
+          "name": "LDM",
+          "left": 22,
+          "right": 283,
+          "lines": [
+            {
+              "left": 22,
+              "right": 81
+            }
+          ]
+        }
+      ],
+      "team": {
+        "count": 25,
+        "name": "Людмила Белоусова",
+        "role": "Руководитель филиала BARN Estate в Санкт-Петербурге"
+      },
+      "allImages": 74,
+      "searchDestination": "https://barnestate-spb.ru/gorodskaya-nedvizhimost/vtorichnaya-nedvizhimost/585004/",
+      "errors": [],
+      "failed": [],
+      "external": []
+    },
+    {
+      "width": 390,
+      "title": "Элитная недвижимость в Санкт-Петербурге — BARN Estate",
+      "overflow": false,
+      "tabs": [
+        "Новостройки",
+        "Вторичка",
+        "Загородная",
+        "Коммерческая",
+        "Курортная",
+        "Зарубежная"
+      ],
+      "brandCaptions": 0,
+      "robots": "noindex,nofollow",
+      "groups": [
+        {
+          "name": "Новостройки",
+          "records": [
+            {
+              "name": "Клубный дом «Фонтанка 130»",
+              "url": "https://barnestate-spb.ru/zhilye-kompleksy/klubnyy-dom-fontanka-130/",
+              "img": "http://127.0.0.1:38525/home-spb/assets/spb-project-fontanka.webp"
+            },
+            {
+              "name": "Клубный дом «Коллекционер»",
+              "url": "https://barnestate-spb.ru/zhilye-kompleksy/klubnyy-dom-kollektsioner/",
+              "img": "http://127.0.0.1:38525/home-spb/assets/spb-project-kollektsioner.webp"
+            },
+            {
+              "name": "LDM",
+              "url": "https://barnestate-spb.ru/zhilye-kompleksy/ldm/",
+              "img": "http://127.0.0.1:38525/home-spb/assets/spb-project-ldm.webp"
+            },
+            {
+              "name": "Визионер",
+              "url": "https://barnestate-spb.ru/zhilye-kompleksy/vizioner/",
+              "img": "http://127.0.0.1:38525/home-spb/assets/spb-project-visioner.webp"
+            }
+          ],
+          "action": "https://barnestate-spb.ru/zhilye-kompleksy/"
+        },
+        {
+          "name": "Вторичка",
+          "records": [
+            {
+              "name": "5-комнатная квартира на Большой Монетной",
+              "url": "https://barnestate-spb.ru/gorodskaya-nedvizhimost/vtorichnaya-nedvizhimost/585004/",
+              "img": "http://127.0.0.1:38525/home-spb/assets/spb-lot-585004.webp"
+            },
+            {
+              "name": "Квартира с дизайнерским ремонтом",
+              "url": "https://barnestate-spb.ru/gorodskaya-nedvizhimost/vtorichnaya-nedvizhimost/599592/",
+              "img": "http://127.0.0.1:38525/home-spb/assets/spb-lot-599592.webp"
+            },
+            {
+              "name": "Квартира в доме трёх Бенуа",
+              "url": "https://barnestate-spb.ru/gorodskaya-nedvizhimost/vtorichnaya-nedvizhimost/594491/",
+              "img": "http://127.0.0.1:38525/home-spb/assets/spb-lot-594491.webp"
+            }
+          ],
+          "action": "https://barnestate-spb.ru/gorodskaya-nedvizhimost/vtorichnaya-nedvizhimost/"
+        },
+        {
+          "name": "Загородная",
+          "records": [
+            {
+              "name": "Поместье в Комарово",
+              "url": "https://barnestate-spb.ru/zagorodnaya-nedvizhimost/587590/",
+              "img": "http://127.0.0.1:38525/home-spb/assets/spb-lot-587590.webp"
+            },
+            {
+              "name": "Дом у Охта Парка",
+              "url": "https://barnestate-spb.ru/zagorodnaya-nedvizhimost/584207/",
+              "img": "http://127.0.0.1:38525/home-spb/assets/spb-lot-584207.webp"
+            },
+            {
+              "name": "Резиденция у Финского залива",
+              "url": "https://barnestate-spb.ru/zagorodnaya-nedvizhimost/588043/",
+              "img": "http://127.0.0.1:38525/home-spb/assets/spb-lot-588043.webp"
+            }
+          ],
+          "action": "https://barnestate-spb.ru/zagorodnaya-nedvizhimost/"
+        },
+        {
+          "name": "Коммерческая",
+          "records": [
+            {
+              "name": "Офис в БЦ «Биржа»",
+              "url": "https://barnestate-spb.ru/gorodskaya-nedvizhimost/kommercheskaya-nedvizhimost/599632/",
+              "img": "http://127.0.0.1:38525/home-spb/assets/spb-lot-599632.webp"
+            },
+            {
+              "name": "Офис на набережной Кутузова",
+              "url": "https://barnestate-spb.ru/gorodskaya-nedvizhimost/kommercheskaya-nedvizhimost/593524/",
+              "img": "http://127.0.0.1:38525/home-spb/assets/spb-lot-593524.webp"
+            },
+            {
+              "name": "Коммерческое здание в центре",
+              "url": "https://barnestate-spb.ru/gorodskaya-nedvizhimost/kommercheskaya-nedvizhimost/590188/",
+              "img": "http://127.0.0.1:38525/home-spb/assets/spb-lot-590188.webp"
+            }
+          ],
+          "action": "https://barnestate-spb.ru/kommercheskaya-nedvizhimost/"
+        },
+        {
+          "name": "Курортная",
+          "records": [
+            {
+              "name": "LIVINGSTON SOCHI GRAND RESORT & SPA",
+              "url": "https://barn-estate.ru/zhilye-kompleksy/livingston-sochi-grand-resort-spa/",
+              "img": "http://127.0.0.1:38525/home-spb/assets/central-resort-55594.webp"
+            },
+            {
+              "name": "MANTERA RESIDENCE",
+              "url": "https://barn-estate.ru/zhilye-kompleksy/mantera-residence/",
+              "img": "http://127.0.0.1:38525/home-spb/assets/central-resort-58118.webp"
+            },
+            {
+              "name": "СКАЙВИЛЬ КРАСНАЯ ПОЛЯНА",
+              "url": "https://barn-estate.ru/zhilye-kompleksy/skayvil-krasnaya-polyana/",
+              "img": "http://127.0.0.1:38525/home-spb/assets/central-resort-57515.webp"
+            }
+          ],
+          "action": "https://barn-estate.ru/kurortnaya/"
+        },
+        {
+          "name": "Зарубежная",
+          "records": [
+            {
+              "name": "VERVE CITY WALK Пентхаус с 5 спальнями",
+              "url": "https://barn-estate.ru/mezhdunarodnaya-nedvizhimost/562771/",
+              "img": "http://127.0.0.1:38525/home-spb/assets/central-international-37445.webp"
+            },
+            {
+              "name": "Above Element Villas · вилла с 3 спальнями",
+              "url": "https://barn-estate.ru/mezhdunarodnaya-nedvizhimost/586471/",
+              "img": "http://127.0.0.1:38525/home-spb/assets/central-international-95031.webp"
+            },
+            {
+              "name": "Апартаменты в финансовом центре Стамбула",
+              "url": "https://barn-estate.ru/mezhdunarodnaya-nedvizhimost/557235/",
+              "img": "http://127.0.0.1:38525/home-spb/assets/central-international-17364.webp"
+            },
+            {
+              "name": "Benahavís",
+              "url": "https://barn-estate.ru/mezhdunarodnaya-nedvizhimost/prodazha_benahav_s_5012/",
+              "img": "http://127.0.0.1:38525/home-spb/assets/central-international-8985.webp"
+            },
+            {
+              "name": "Elviria",
+              "url": "https://barn-estate.ru/mezhdunarodnaya-nedvizhimost/prodazha_elviria_5008/",
+              "img": "http://127.0.0.1:38525/home-spb/assets/central-international-8981.webp"
+            }
+          ],
+          "action": "https://barn-estate.ru/mezhdunarodnaya-nedvizhimost/"
+        }
+      ],
+      "slides": [
+        {
+          "name": "Клубный дом «Коллекционер»",
+          "left": 22,
+          "right": 353,
+          "lines": [
+            {
+              "left": 22,
+              "right": 277
+            },
+            {
+              "left": 22,
+              "right": 332
+            }
+          ]
+        },
+        {
+          "name": "LDM",
+          "left": 22,
+          "right": 353,
+          "lines": [
+            {
+              "left": 22,
+              "right": 95
+            }
+          ]
+        }
+      ],
+      "team": {
+        "count": 25,
+        "name": "Людмила Белоусова",
+        "role": "Руководитель филиала BARN Estate в Санкт-Петербурге"
+      },
+      "allImages": 74,
+      "searchDestination": "https://barnestate-spb.ru/gorodskaya-nedvizhimost/vtorichnaya-nedvizhimost/585004/",
+      "errors": [],
+      "failed": [],
+      "external": []
+    },
+    {
+      "width": 1440,
+      "title": "Элитная недвижимость в Санкт-Петербурге — BARN Estate",
+      "overflow": false,
+      "tabs": [
+        "Новостройки",
+        "Вторичка",
+        "Загородная",
+        "Коммерческая",
+        "Курортная",
+        "Зарубежная"
+      ],
+      "brandCaptions": 0,
+      "robots": "noindex,nofollow",
+      "groups": [
+        {
+          "name": "Новостройки",
+          "records": [
+            {
+              "name": "Клубный дом «Фонтанка 130»",
+              "url": "https://barnestate-spb.ru/zhilye-kompleksy/klubnyy-dom-fontanka-130/",
+              "img": "http://127.0.0.1:38525/home-spb/assets/spb-project-fontanka.webp"
+            },
+            {
+              "name": "Клубный дом «Коллекционер»",
+              "url": "https://barnestate-spb.ru/zhilye-kompleksy/klubnyy-dom-kollektsioner/",
+              "img": "http://127.0.0.1:38525/home-spb/assets/spb-project-kollektsioner.webp"
+            },
+            {
+              "name": "LDM",
+              "url": "https://barnestate-spb.ru/zhilye-kompleksy/ldm/",
+              "img": "http://127.0.0.1:38525/home-spb/assets/spb-project-ldm.webp"
+            },
+            {
+              "name": "Визионер",
+              "url": "https://barnestate-spb.ru/zhilye-kompleksy/vizioner/",
+              "img": "http://127.0.0.1:38525/home-spb/assets/spb-project-visioner.webp"
+            }
+          ],
+          "action": "https://barnestate-spb.ru/zhilye-kompleksy/"
+        },
+        {
+          "name": "Вторичка",
+          "records": [
+            {
+              "name": "5-комнатная квартира на Большой Монетной",
+              "url": "https://barnestate-spb.ru/gorodskaya-nedvizhimost/vtorichnaya-nedvizhimost/585004/",
+              "img": "http://127.0.0.1:38525/home-spb/assets/spb-lot-585004.webp"
+            },
+            {
+              "name": "Квартира с дизайнерским ремонтом",
+              "url": "https://barnestate-spb.ru/gorodskaya-nedvizhimost/vtorichnaya-nedvizhimost/599592/",
+              "img": "http://127.0.0.1:38525/home-spb/assets/spb-lot-599592.webp"
+            },
+            {
+              "name": "Квартира в доме трёх Бенуа",
+              "url": "https://barnestate-spb.ru/gorodskaya-nedvizhimost/vtorichnaya-nedvizhimost/594491/",
+              "img": "http://127.0.0.1:38525/home-spb/assets/spb-lot-594491.webp"
+            }
+          ],
+          "action": "https://barnestate-spb.ru/gorodskaya-nedvizhimost/vtorichnaya-nedvizhimost/"
+        },
+        {
+          "name": "Загородная",
+          "records": [
+            {
+              "name": "Поместье в Комарово",
+              "url": "https://barnestate-spb.ru/zagorodnaya-nedvizhimost/587590/",
+              "img": "http://127.0.0.1:38525/home-spb/assets/spb-lot-587590.webp"
+            },
+            {
+              "name": "Дом у Охта Парка",
+              "url": "https://barnestate-spb.ru/zagorodnaya-nedvizhimost/584207/",
+              "img": "http://127.0.0.1:38525/home-spb/assets/spb-lot-584207.webp"
+            },
+            {
+              "name": "Резиденция у Финского залива",
+              "url": "https://barnestate-spb.ru/zagorodnaya-nedvizhimost/588043/",
+              "img": "http://127.0.0.1:38525/home-spb/assets/spb-lot-588043.webp"
+            }
+          ],
+          "action": "https://barnestate-spb.ru/zagorodnaya-nedvizhimost/"
+        },
+        {
+          "name": "Коммерческая",
+          "records": [
+            {
+              "name": "Офис в БЦ «Биржа»",
+              "url": "https://barnestate-spb.ru/gorodskaya-nedvizhimost/kommercheskaya-nedvizhimost/599632/",
+              "img": "http://127.0.0.1:38525/home-spb/assets/spb-lot-599632.webp"
+            },
+            {
+              "name": "Офис на набережной Кутузова",
+              "url": "https://barnestate-spb.ru/gorodskaya-nedvizhimost/kommercheskaya-nedvizhimost/593524/",
+              "img": "http://127.0.0.1:38525/home-spb/assets/spb-lot-593524.webp"
+            },
+            {
+              "name": "Коммерческое здание в центре",
+              "url": "https://barnestate-spb.ru/gorodskaya-nedvizhimost/kommercheskaya-nedvizhimost/590188/",
+              "img": "http://127.0.0.1:38525/home-spb/assets/spb-lot-590188.webp"
+            }
+          ],
+          "action": "https://barnestate-spb.ru/kommercheskaya-nedvizhimost/"
+        },
+        {
+          "name": "Курортная",
+          "records": [
+            {
+              "name": "LIVINGSTON SOCHI GRAND RESORT & SPA",
+              "url": "https://barn-estate.ru/zhilye-kompleksy/livingston-sochi-grand-resort-spa/",
+              "img": "http://127.0.0.1:38525/home-spb/assets/central-resort-55594.webp"
+            },
+            {
+              "name": "MANTERA RESIDENCE",
+              "url": "https://barn-estate.ru/zhilye-kompleksy/mantera-residence/",
+              "img": "http://127.0.0.1:38525/home-spb/assets/central-resort-58118.webp"
+            },
+            {
+              "name": "СКАЙВИЛЬ КРАСНАЯ ПОЛЯНА",
+              "url": "https://barn-estate.ru/zhilye-kompleksy/skayvil-krasnaya-polyana/",
+              "img": "http://127.0.0.1:38525/home-spb/assets/central-resort-57515.webp"
+            }
+          ],
+          "action": "https://barn-estate.ru/kurortnaya/"
+        },
+        {
+          "name": "Зарубежная",
+          "records": [
+            {
+              "name": "VERVE CITY WALK Пентхаус с 5 спальнями",
+              "url": "https://barn-estate.ru/mezhdunarodnaya-nedvizhimost/562771/",
+              "img": "http://127.0.0.1:38525/home-spb/assets/central-international-37445.webp"
+            },
+            {
+              "name": "Above Element Villas · вилла с 3 спальнями",
+              "url": "https://barn-estate.ru/mezhdunarodnaya-nedvizhimost/586471/",
+              "img": "http://127.0.0.1:38525/home-spb/assets/central-international-95031.webp"
+            },
+            {
+              "name": "Апартаменты в финансовом центре Стамбула",
+              "url": "https://barn-estate.ru/mezhdunarodnaya-nedvizhimost/557235/",
+              "img": "http://127.0.0.1:38525/home-spb/assets/central-international-17364.webp"
+            },
+            {
+              "name": "Benahavís",
+              "url": "https://barn-estate.ru/mezhdunarodnaya-nedvizhimost/prodazha_benahav_s_5012/",
+              "img": "http://127.0.0.1:38525/home-spb/assets/central-international-8985.webp"
+            },
+            {
+              "name": "Elviria",
+              "url": "https://barn-estate.ru/mezhdunarodnaya-nedvizhimost/prodazha_elviria_5008/",
+              "img": "http://127.0.0.1:38525/home-spb/assets/central-international-8981.webp"
+            }
+          ],
+          "action": "https://barn-estate.ru/mezhdunarodnaya-nedvizhimost/"
+        }
+      ],
+      "slides": [
+        {
+          "name": "Клубный дом «Коллекционер»",
+          "left": 68.3333,
+          "right": 1356.6667,
+          "lines": [
+            {
+              "left": 68.328125,
+              "right": 679.328125
+            },
+            {
+              "left": 68.328125,
+              "right": 813.328125
+            }
+          ]
+        },
+        {
+          "name": "LDM",
+          "left": 68.3333,
+          "right": 1356.6667,
+          "lines": [
+            {
+              "left": 68.328125,
+              "right": 240.328125
+            }
+          ]
+        }
+      ],
+      "team": {
+        "count": 25,
+        "name": "Людмила Белоусова",
+        "role": "Руководитель филиала BARN Estate в Санкт-Петербурге"
+      },
+      "allImages": 74,
+      "searchDestination": "https://barnestate-spb.ru/gorodskaya-nedvizhimost/vtorichnaya-nedvizhimost/585004/",
+      "errors": [],
+      "failed": [],
+      "external": []
+    }
+  ]
+}
