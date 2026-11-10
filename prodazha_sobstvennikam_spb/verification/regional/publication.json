@@ -1,14 +1,13 @@
 {
-  "checkedAt": "2026-11-10T13:25:52.204848+00:00",
-  "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/prodazha_sobstvennikam_spb/?v=editorial-20261110",
-  "liveVerified": true,
-  "pageChangeCommit": "b819ab30291e8b77f015eef134d75081d76d67fd",
-  "deploymentCommit": "61abfd4f1a3d937eb901dc26a7a12fed7068ebdd",
-  "deploymentRun": "https://github.com/daniilterekh-prog/barn-estate-homepage-clone/actions/runs/42823599462",
-  "deploymentStatusAtCheck": "syncing_files",
-  "deploymentNote": "The live page and all new images passed browser checks while GitHub was still reporting syncing_files. The deployment commit contains the page change; no page files changed between these commits.",
-  "assetLibraryCommit": "c78d797",
-  "canonicalSourceCommit": "512cdac",
+  "checkedAt": "2026-11-10T14:56:14.505946+00:00",
+  "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/prodazha_sobstvennikam_spb/?v=colour-20261110",
+  "pageCommit": "94ea19dd878bfa6aecad5c76f2ab16e5cceac3fd",
+  "deploymentRun": "https://github.com/daniilterekh-prog/barn-estate-homepage-clone/actions/runs/42838432558",
+  "deploymentConclusion": "success",
+  "assetLibraryCommit": "60f539c",
+  "canonicalSourceCommit": "2b91346",
+  "portrait": "ludmila-belousova-color-hq",
+  "treatment": "full-colour portrait and room; no grayscale filters",
   "widths": [
     320,
     390,
@@ -17,9 +16,10 @@
     1920,
     2560
   ],
-  "newEditorialImages": 11,
+  "newEditorialImages": 10,
   "browserErrors": 0,
   "failedSameOriginRequests": 0,
   "horizontalOverflow": false,
-  "report": "live/report.json"
+  "report": "live/report.json",
+  "appearanceReport": "appearance-live.json"
 }
