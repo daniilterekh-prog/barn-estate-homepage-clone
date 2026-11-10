@@ -1,0 +1,47 @@
+{
+  "checkedAt": "2026-11-10T14:45:03.617602+00:00",
+  "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/prodazha_sobstvennikam_spb/?v=newsletter-home-20261110#newsletter",
+  "pageCommit": "817b0bee07f5eef9bf4c34db52d0f099f8d360f1",
+  "workflow": "https://github.com/daniilterekh-prog/barn-estate-homepage-clone/actions/runs/42836545435",
+  "workflowConclusion": "success",
+  "rows": [
+    {
+      "width": 390,
+      "heights": [
+        494.171875,
+        494.171875
+      ],
+      "diffs": [],
+      "referencePngSha256": "bee9277187d2434287c464c7ec7459f1f3d45716cfda56ffff79f223ff983199",
+      "pagePngSha256": "bee9277187d2434287c464c7ec7459f1f3d45716cfda56ffff79f223ff983199",
+      "pngByteIdentical": true
+    },
+    {
+      "width": 1440,
+      "heights": [
+        666.390625,
+        666.390625
+      ],
+      "diffs": [],
+      "referencePngSha256": "aa003d6b24a1fe9674aa32b93373fc5094b2a3920474aeadad8a2704167cd75b",
+      "pagePngSha256": "aa003d6b24a1fe9674aa32b93373fc5094b2a3920474aeadad8a2704167cd75b",
+      "pngByteIdentical": true
+    }
+  ],
+  "form": [
+    {
+      "width": 390,
+      "nativeEmailValidation": true,
+      "keyboardOrder": true,
+      "previewStatus": true,
+      "postRequests": 0
+    },
+    {
+      "width": 1440,
+      "nativeEmailValidation": true,
+      "keyboardOrder": true,
+      "previewStatus": true,
+      "postRequests": 0
+    }
+  ]
+}
