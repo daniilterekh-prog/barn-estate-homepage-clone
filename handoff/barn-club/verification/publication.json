@@ -1,0 +1,26 @@
+{
+  "date": "2026-11-10",
+  "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+  "export_commit": "7f6f9e4550c056ed988c578ecae54eb760a7a694",
+  "runtime_deployed_commit": "edadac9953400a5275f1333d11ce7195077a0a74",
+  "run": "https://github.com/daniilterekh-prog/barn-estate-homepage-clone/actions/runs/42793442088",
+  "conclusion": "success",
+  "live_browser_parity": {
+    "widths": 27,
+    "pixel_identical_screenshots": 4,
+    "runtime_http_or_js_errors": 0
+  },
+  "zip": {
+    "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/handoff/barn-club/barn-club.zip",
+    "status": 200,
+    "bytes": 1918975,
+    "sha256": "cad26b9bff53cd0ea6d2f0917929cbf4f3fb437312a08266cba527fba37399bf"
+  },
+  "obsolete_assets_absent_from_public_git_tree": [
+    "hero.webp",
+    "lounge.webp",
+    "about-mansion.webp",
+    "about-mansion-v2.webp"
+  ],
+  "live_parity": "live-parity.json"
+}
