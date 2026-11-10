@@ -2,6 +2,8 @@
 
 **Актуальная структура ·10.11.2026 · UI-кит главной v1.0.6.**
 
+[Пять полноэкранных вариантов херо и крошки в хедере ·10.11.2026](https://github.com/daniilterekh-prog/barnes-sites/blob/main/main-site/pages/lot/HERO-OPTIONS.md) · [Сравнить варианты](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/stranitsa-lota/hero-options/). Это предложения для выбора; крошки уже перенесены в общее положение под бургером над линией хедера, до1024px скрыты.
+
 [Открыть превью](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/stranitsa-lota/?v=structure-20261110) · [Структура и план](https://github.com/daniilterekh-prog/barnes-sites/blob/main/main-site/pages/lot/STRUCTURE.md) · [Исследование конкурентов](https://github.com/daniilterekh-prog/barnes-sites/blob/main/main-site/pages/lot/research/2026-11-10/README.md) · [Сохранённый паспорт кита](https://github.com/daniilterekh-prog/barnes-sites/blob/main/main-site/pages/lot/kit/ui-kit.json) · [Источники оформления](https://github.com/daniilterekh-prog/barnes-sites/blob/main/main-site/pages/lot/kit/provenance.json).
 
 ## Оформление и структура

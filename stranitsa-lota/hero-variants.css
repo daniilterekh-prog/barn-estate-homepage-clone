@@ -1,0 +1,211 @@
+/* Five opt-in compositions. Every photograph covers 100% of the initial viewport. */
+body[data-hero-variant] {
+  --hero-inset:var(--barn-page-gutter);
+  --hero-top:190px;
+  --hero-bottom:48px;
+}
+body[data-hero-variant] .site-header {
+  position:absolute;
+  inset:0 0 auto;
+  background:transparent;
+  color:#fff;
+}
+html body[data-hero-variant].barnes-media-header .site-header:not(.site-header--menu-open) {
+  background:transparent!important;
+  color:#fff!important;
+}
+html body[data-hero-variant].barnes-media-header .site-header:not(.site-header--menu-open) .site-header__logo img {
+  filter:brightness(0) invert(1)!important;
+}
+html body[data-hero-variant].barnes-media-header .site-header:not(.site-header--menu-open) .site-header__top {
+  border-bottom-color:#ffffff50!important;
+}
+body[data-hero-variant] .lot-hero {
+  position:relative;
+  display:block;
+  isolation:isolate;
+  width:100%;
+  max-width:none;
+  height:100svh;
+  min-height:740px;
+  overflow:hidden;
+  background:#333;
+  color:#fff;
+}
+body[data-hero-variant] .lot-hero__visual {
+  position:absolute;
+  inset:0;
+  min-height:0;
+  height:100%;
+  z-index:0;
+}
+body[data-hero-variant] .lot-hero__image {
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+body[data-hero-variant] .lot-hero__visual::after {
+  background:linear-gradient(180deg,#0009,#0004 30%,#0007 55%,#000c),linear-gradient(90deg,#0005,transparent 75%);
+}
+body[data-hero-variant] .lot-hero__copy {
+  position:absolute;
+  left:max(var(--hero-inset),calc((100vw - 1920px)/2));
+  bottom:var(--hero-bottom);
+  width:min(56%,900px);
+  padding:0;
+}
+body[data-hero-variant] .lot-offer {
+  position:absolute;
+  z-index:1;
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-end;
+  right:max(var(--hero-inset),calc((100vw - 1920px)/2));
+  bottom:var(--hero-bottom);
+  width:min(32%,450px);
+  gap:24px;
+  padding:0;
+  border:0;
+  color:#fff;
+}
+body[data-hero-variant] .lot-price-per,
+body[data-hero-variant] .lot-offer__meta,
+body[data-hero-variant] .lot-offer__notice,
+body[data-hero-variant] .lot-offer .broker__role,
+body[data-hero-variant] .lot-offer__facts dt {
+  color:#fff;
+}
+body[data-hero-variant] .lot-offer__facts {border-color:#ffffff50}
+body[data-hero-variant] .lot-offer .text-link {color:#fff}
+body[data-hero-variant] .lot-offer__notice {font-size:12px;line-height:18px}
+body[data-hero-variant] .lot-hero__copy .lead {max-width:720px}
+body[data-hero-variant] .site-header__search-btn {color:inherit}
+body[data-hero-variant] .lot-offer .lot-price {font-size:var(--heading)}
+body[data-hero-variant] .lot-offer__facts,
+body[data-hero-variant] .lot-offer .broker,
+body[data-hero-variant] .lot-offer__notice {display:none}
+/* 1 — editorial, two quiet columns over the same photograph. */
+body[data-hero-variant="1"] .lot-hero__copy {width:min(54%,850px)}
+body[data-hero-variant="1"] .lot-offer {width:min(34%,440px)}
+body[data-hero-variant="1"] .lot-offer__meta {display:block}
+/* 2 — one floating white offer card, photograph continues behind it. */
+body[data-hero-variant="2"] .lot-offer {
+  top:max(var(--hero-top),calc((100svh - 560px)/2));
+  bottom:var(--hero-bottom);
+  width:390px;
+  padding:32px;
+  background:#fff;
+  color:var(--ink);
+  justify-content:center;
+  gap:22px;
+}
+body[data-hero-variant="2"] .lot-offer__facts {display:grid;padding-block:20px;gap:16px;border-color:var(--line)}
+body[data-hero-variant="2"] .lot-offer .broker {display:flex}
+body[data-hero-variant="2"] .lot-price-per,
+body[data-hero-variant="2"] .lot-offer__meta,
+body[data-hero-variant="2"] .lot-offer .broker__role,
+body[data-hero-variant="2"] .lot-offer__facts dt {color:var(--muted)}
+body[data-hero-variant="2"] .lot-offer .text-link {color:var(--brand)}
+body[data-hero-variant="2"] .lot-offer .lot-price {font-size:32px}
+body[data-hero-variant="2"] .lot-hero__copy {width:calc(100% - 540px - var(--hero-inset));max-width:840px}
+/* 3 — image and title above a horizontal bottom passport. */
+body[data-hero-variant="3"] .lot-hero__copy {top:var(--hero-top);bottom:auto;width:min(66%,950px)}
+body[data-hero-variant="3"] .lot-hero__actions {margin-top:28px}
+body[data-hero-variant="3"] .lot-offer {
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr;
+  align-items:center;
+  justify-content:stretch;
+  gap:40px;
+  left:0;right:0;bottom:0;
+  width:100%;
+  padding:32px max(var(--hero-inset),calc((100vw - 1920px)/2));
+  background:#151515a6;
+  border-top:1px solid #ffffff50;
+}
+body[data-hero-variant="3"] .lot-offer__meta {display:none}
+body[data-hero-variant="3"] .lot-offer__facts {display:grid;border:0;padding:0;gap:14px 28px;grid-template-columns:repeat(2,1fr)}
+body[data-hero-variant="3"] .lot-offer__actions .text-link {display:none}
+/* 4 — centered composition, quiet information and one viewing action. */
+body[data-hero-variant="4"] .lot-hero__copy {
+  left:50%;top:45%;bottom:auto;
+  width:min(900px,76%);
+  transform:translate(-50%,-50%);
+  text-align:center;
+}
+body[data-hero-variant="4"] .lot-hero__visual::after {
+  background:linear-gradient(180deg,#0009,#0006 40%,#000b),radial-gradient(ellipse at 50% 45%,#0008,transparent 75%);
+}
+body[data-hero-variant="4"] .lot-hero__copy h1,
+body[data-hero-variant="4"] .lot-hero__copy .lead {margin-inline:auto}
+body[data-hero-variant="4"] .lot-hero__actions {justify-content:center;margin-top:28px}
+body[data-hero-variant="4"] .lot-offer {
+  right:auto;left:50%;bottom:50px;
+  width:420px;max-width:calc(100% - 44px);
+  transform:translateX(-50%);
+  text-align:center;
+  gap:20px;
+}
+body[data-hero-variant="4"] .lot-offer__meta {display:none}
+body[data-hero-variant="4"] .lot-offer__actions .text-link {display:none}
+/* 5 — full photo, compact left passport and an interactive filmstrip. */
+body[data-hero-variant="5"] .lot-hero__copy {bottom:250px;width:min(62%,950px)}
+body[data-hero-variant="5"] .lot-offer {
+  left:max(var(--hero-inset),calc((100vw - 1920px)/2));right:auto;bottom:var(--hero-bottom);
+  width:min(62%,950px);display:grid;grid-template-columns:1fr 1fr;align-items:end;gap:24px;
+}
+body[data-hero-variant="5"] .lot-offer__meta {grid-column:1/-1}
+body[data-hero-variant="5"] .lot-offer__actions .text-link {display:none}
+.hero-filmstrip {position:absolute;z-index:2;right:max(var(--hero-inset),calc((100vw - 1920px)/2));bottom:var(--hero-bottom);display:grid;gap:14px;width:170px}
+.hero-filmstrip button {padding:0;border:1px solid #ffffff80;background:#222;opacity:.8}
+.hero-filmstrip button[aria-pressed=true] {border:3px solid #fff;opacity:1}
+.hero-filmstrip img {width:100%;aspect-ratio:3/2;object-fit:cover}
+@media(min-width:1921px){body[data-hero-variant]{--hero-inset:0px}}
+@media(max-width:1200px){
+  body[data-hero-variant]{--hero-top:190px}
+  body[data-hero-variant="2"] .lot-offer {width:350px;padding:24px}
+  body[data-hero-variant="2"] .lot-hero__copy {width:calc(100% - 440px - var(--hero-inset))}
+  body[data-hero-variant="3"] .lot-offer {gap:24px}
+  .hero-filmstrip{width:135px}
+}
+@media(max-width:1024px){
+  body[data-hero-variant]{--hero-top:125px;--hero-bottom:40px}
+  body[data-hero-variant] .lot-offer {grid-column:auto;grid-row:auto}
+  body[data-hero-variant] .lot-hero {min-height:800px}
+  body[data-hero-variant="2"] .lot-offer .broker {display:none}
+  body[data-hero-variant="3"] .lot-offer {grid-template-columns:1fr 1fr}
+  body[data-hero-variant="3"] .lot-offer__facts {display:none}
+  body[data-hero-variant="3"] .lot-offer__actions {grid-row:auto;grid-column:auto}
+}
+@media(max-width:1024px){
+  body[data-hero-variant] .lot-hero {height:100svh;min-height:760px}
+  body[data-hero-variant] .lot-hero__copy {left:22px;bottom:300px;width:calc(100% - 44px)}
+  body[data-hero-variant] .lot-hero__copy .lead {font-size:var(--lead)}
+  body[data-hero-variant] .lot-hero__actions {display:flex;gap:12px;margin-top:24px}
+  body[data-hero-variant] .lot-hero__actions .button {font-size:16px;min-height:52px;padding:14px 20px}
+  body[data-hero-variant] .lot-offer {right:22px;left:22px;bottom:28px;width:calc(100% - 44px);gap:18px}
+  body[data-hero-variant] .lot-offer__meta {display:none}
+  body[data-hero-variant] .lot-offer .lot-price {font-size:30px}
+  body[data-hero-variant] .lot-offer__actions {width:100%}
+  body[data-hero-variant] .lot-offer__actions .text-link {display:none}
+  body[data-hero-variant] .lot-offer__actions .button {min-height:58px}
+  body[data-hero-variant] .lot-hero__copy h1 {font-size:var(--heading);line-height:1.2}
+  body[data-hero-variant]:not([data-lot-hero-offscreen=true]) .lot-mobile-bar {display:none}
+  body[data-hero-variant="1"] .lot-hero__copy {bottom:250px}
+  body[data-hero-variant="2"] .lot-offer {top:auto;bottom:22px;padding:24px;gap:18px}
+  body[data-hero-variant="2"] .lot-offer__facts {display:none}
+  body[data-hero-variant="2"] .lot-offer .lot-price {font-size:clamp(24px,7.5vw,30px)}
+  body[data-hero-variant="2"] .lot-hero__copy {bottom:300px}
+  body[data-hero-variant="3"] .lot-hero__copy {top:140px;bottom:auto}
+  body[data-hero-variant="3"] .lot-offer {left:0;right:0;bottom:0;width:100%;display:block;padding:24px 22px}
+  body[data-hero-variant="3"] .lot-offer__actions {margin-top:20px}
+  body[data-hero-variant="4"] .lot-hero__copy {top:42%;bottom:auto;left:50%;width:calc(100% - 44px)}
+  body[data-hero-variant="4"] .lot-hero__actions {justify-content:center}
+  body[data-hero-variant="4"] .lot-offer {left:50%;right:auto;width:calc(100% - 44px);bottom:40px}
+  body[data-hero-variant="5"] .lot-hero__copy {top:140px;bottom:auto}
+  body[data-hero-variant="5"] .lot-offer {display:flex;bottom:24px;gap:14px}
+  body[data-hero-variant="5"] .lot-hero__actions {margin-top:20px}
+  body[data-hero-variant="5"] .hero-filmstrip {left:22px;right:22px;bottom:210px;width:auto;grid-template-columns:repeat(3,1fr);gap:12px}
+  .hero-filmstrip img{aspect-ratio:4/3}
+}
+@media(max-height:700px) and (min-width:768px){body[data-hero-variant] .lot-hero{height:800px}}

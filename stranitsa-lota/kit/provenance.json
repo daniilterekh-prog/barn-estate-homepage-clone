@@ -93,6 +93,20 @@
       "target": "kit/footer.html",
       "adaptation": "Extracted footer fragment; local asset paths",
       "sha256": "dce59e2d130081b48eace08a4ac86c02c42f4d723dd798e972ca9a505c941bed"
+    },
+    {
+      "source": "main-site/shared/shared/page-breadcrumbs.css",
+      "target": "kit/vendor/page-breadcrumbs.css",
+      "sourceCommit": "98a0f9d1f2125954bc146a59a7eef004aca23c51",
+      "sha256": "7a58ed93dc94357053343f42781a513a93b66b3f6c61f0f9a6c0e26bcaef7d30",
+      "adaptation": "Unchanged canonical CSS"
+    },
+    {
+      "source": "main-site/shared/shared/page-breadcrumbs.js",
+      "target": "kit/vendor/page-breadcrumbs.js",
+      "sourceCommit": "98a0f9d1f2125954bc146a59a7eef004aca23c51",
+      "sha256": "9ba4a0fec8a92ebf53749bea2ea9bb6269b139be7eb96ad7f4e0a55586d3d3f3",
+      "adaptation": "Local package root; tone for optional full-screen hero previews; hidden while dialogs/menu are open"
     }
   ]
 }

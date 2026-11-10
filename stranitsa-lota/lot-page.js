@@ -4,6 +4,8 @@
   const $ = (s, root = document) => root.querySelector(s);
   const $$ = (s, root = document) => [...root.querySelectorAll(s)];
   const main = $('#main');
+  const heroVariant = new URLSearchParams(location.search).get('hero');
+  if (/^[1-5]$/.test(heroVariant || '')) document.body.dataset.heroVariant = heroVariant;
   const icons = {
     arrow: '<path d="M4 12h16M14 6l6 6-6 6"/>',
     photos: '<rect x="3" y="4" width="18" height="16" rx="1"/><circle cx="8" cy="9" r="1.5"/><path d="m3 17 6-5 4 3 4-5 4 5"/>',
@@ -101,9 +103,6 @@
     $('meta[property="og:title"]').content = document.title;
     $('meta[property="og:description"]').content = data.description || data.title;
     $('meta[property="og:image"]').content = new URL(safeUrl(data.cover.src), location.href).href;
-    const crumbs = el('nav', null, 'container lot-breadcrumbs'); crumbs.setAttribute('aria-label', 'Хлебные крошки');
-    crumbs.append(link('Главная', '../exact-2026-10-21/', ''), el('span', '/'), link('Каталог недвижимости', '../katalog-nedvizhimosti/', ''), el('span', '/'), el('span', 'Лот ' + data.id));
-    main.append(crumbs);
     const hero = el('section', null, 'lot-hero'); hero.id = 'lot-photos'; hero.setAttribute('aria-labelledby', 'lot-title');
     const visual = el('div', null, 'lot-hero__visual'); visual.append(image(data.cover, 'lot-hero__image', true));
     const copy = el('div', null, 'lot-hero__copy'); copy.append(el('p', data.locationLabel || 'Недвижимость BARN Estate', 'eyebrow'));
@@ -121,12 +120,18 @@
     if (area > 0 && data.priceRub != null) p.append(el('p', money(Math.round(data.priceRub / area)) + '/м²', 'lot-price-per'));
     offer.append(p, factsList((data.facts || []).filter(f => ['Площадь', 'Спален', 'Этаж', 'Отделка'].includes(f.label)), 'lot-offer__facts'), brokerBlock(data));
     const offerActions = el('div', null, 'lot-offer__actions');
-    offerActions.append(action('Записаться на просмотр', 'tour', 'button', 'arrow'));
+    offerActions.append(action(document.body.dataset.heroVariant === '2' ? 'На просмотр' : 'Записаться на просмотр', 'tour', 'button', 'arrow'));
     if (data.presentation?.url) offerActions.append(link('Скачать презентацию', data.presentation.url));
     else offerActions.append(action('Запросить презентацию', 'presentation', 'text-link'));
     offer.append(offerActions);
     if (data.demo) offer.append(el('p', 'Архивный пример. Актуальную цену и доступность уточните у брокера.', 'lot-offer__notice'));
     hero.append(visual, offer); main.append(hero);
+    if (document.body.dataset.heroVariant === '5') {
+      const filmstrip = el('div', null, 'hero-filmstrip'); filmstrip.setAttribute('aria-label', 'Выбрать фотографию первого экрана');
+      (data.gallery?.length ? data.gallery : [data.cover]).slice(0, 3).forEach((photo, index) => {
+        const button = el('button'); button.type = 'button'; button.dataset.heroImage = String(index); button.setAttribute('aria-label', 'Фотография ' + (index + 1)); button.setAttribute('aria-pressed', String(index === 0)); button.append(image(photo)); filmstrip.append(button);
+      }); hero.append(filmstrip);
+    }
     const navWrap = el('div', null, 'lot-nav-wrap'); const nav = el('nav', null, 'container lot-nav'); nav.setAttribute('aria-label', 'Разделы лота'); navWrap.append(nav); main.append(navWrap);
     if (data.features?.length) {
       const s = section('lot-features', 'ДЕТАЛИ, КОТОРЫЕ ВАЖНЫ', 'Особенности объекта');
@@ -256,6 +261,12 @@
     showPhoto(); galleryDialog.showModal(); $('.dialog-close', galleryDialog).focus({preventScroll: true});
   }
   document.addEventListener('click', event => {
+    const thumbnail = event.target.closest('[data-hero-image]');
+    if (thumbnail) {
+      const selected = (lot.gallery?.length ? lot.gallery : [lot.cover])[Number(thumbnail.dataset.heroImage)];
+      const cover = $('.lot-hero__image'); cover.src = safeUrl(selected.src); cover.alt = selected.alt || '';
+      $$('[data-hero-image]').forEach(button => button.setAttribute('aria-pressed', String(button === thumbnail)));
+    }
     const button = event.target.closest('[data-request]');
     if (button) {
       event.preventDefault();
