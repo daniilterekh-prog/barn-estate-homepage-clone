@@ -36,3 +36,5 @@ CTA и окно эксперта используют исходный цвет�
 Через встроенный image_gen выполнена колоризация существующего портрета с сохранением лица, позы и прозрачности. Цветной вариант установлен в CTA, форме эксперта и обеих аватарках этой страницы. Интерьер снова показан в цвете. [PNG, WebP и происхождение](https://github.com/daniilterekh-prog/barnes-assets/blob/main/portraits/ludmila-belousova/2026-11-10/README.md) · [Промпт](https://github.com/daniilterekh-prog/barnes-assets/blob/main/portraits/ludmila-belousova/2026-11-10/color-prompt.txt).
 
 Портрет в плавающем кружке справа снизу немного отдалён: ширина изображения 140% вместо 170%, по центру. Размер кружка сохранён. Правка изолирована в spb.css.
+
+[Постоянная папка разработчика и актуальный ZIP](../handoff/owner-sale-spb/README.md).

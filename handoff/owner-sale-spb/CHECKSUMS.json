@@ -1,0 +1,542 @@
+[
+  {
+    "file": "DESIGN.md",
+    "bytes": 2897,
+    "sha256": "876c074ac68bdfe4a37e8be043268ca9872b119ea1d6dafae154a7c866f3a07b"
+  },
+  {
+    "file": "INTEGRATION.md",
+    "bytes": 5938,
+    "sha256": "3e676be862c7d2391da1f46fceb24c2610b1cdf8791fb1f43d36586ee2b2b7b2"
+  },
+  {
+    "file": "README.md",
+    "bytes": 7389,
+    "sha256": "510aa81e30d4b32f1bd5bbae242b0be9dd7009db706b6a38013f6728f13942b9"
+  },
+  {
+    "file": "SOURCE.json",
+    "bytes": 67942,
+    "sha256": "c5955a507c9203092e7026e5e00edad0b2f42d1f5dcab121847ca1c994eb67bc"
+  },
+  {
+    "file": "VERIFICATION.json",
+    "bytes": 3352,
+    "sha256": "22885d1eebc2a0270581304fd5224c1417e15788d6964dee15d9311008608833"
+  },
+  {
+    "file": "assets/brand/logo.svg",
+    "bytes": 6644,
+    "sha256": "9b2d8c1a7d4d213587828c6bdf6592a37113a388fedc1b58211534d8cb1e7123"
+  },
+  {
+    "file": "assets/editorial/cta-residence.webp",
+    "bytes": 131494,
+    "sha256": "1f103dc29cf91ea0db60c640c95d06ebd0626ca90ba26d86d99cd0413b215765"
+  },
+  {
+    "file": "assets/editorial/hero-mobile.webp",
+    "bytes": 70968,
+    "sha256": "8be0e3a27bc8a82aed65d6a66d190bfcf348bcf3582d7f867db4506ff10110ef"
+  },
+  {
+    "file": "assets/editorial/hero.webp",
+    "bytes": 161402,
+    "sha256": "743f8e97377c0078adff35ec219a0e054117fc235bbd91bdafb269b54eca1370"
+  },
+  {
+    "file": "assets/editorial/panorama.webp",
+    "bytes": 283984,
+    "sha256": "28716f0627f140b929343abc402b175b21dcc4a00c3e10592e136b8ec829023c"
+  },
+  {
+    "file": "assets/editorial/presentation-detail.webp",
+    "bytes": 256942,
+    "sha256": "f44ca14f1a7cc2b5afc6a3d5998a4d327519ff85f8f24b3c0e2e688732a9121f"
+  },
+  {
+    "file": "assets/editorial/presentation-legal.webp",
+    "bytes": 275698,
+    "sha256": "34b5c8bb5e85b9fba48486d598ffa6bce52ca88178bbd28e513b15943fcaecbb"
+  },
+  {
+    "file": "assets/editorial/presentation-negotiation.webp",
+    "bytes": 151876,
+    "sha256": "56e17810ebd56a32e8239c98b467f5a127ab8d2c64e22f7da21de610af6481bf"
+  },
+  {
+    "file": "assets/editorial/presentation-positioning.webp",
+    "bytes": 255186,
+    "sha256": "f5e1486f2815287b305ae07d823c0b8da094f29ad0a0e4aa236b2a7ede59821b"
+  },
+  {
+    "file": "assets/editorial/presentation-privacy.webp",
+    "bytes": 139444,
+    "sha256": "bffd6fd11647b4ba810bcbf9840b8111c9b69f2250c97bbdd1630ef18f972cc5"
+  },
+  {
+    "file": "assets/editorial/presentation-viewing.webp",
+    "bytes": 237492,
+    "sha256": "a0fc2f3acb7d1e58ee38a6bf59fcf5820f02b8a824b93eaff7caabeb214ce5f9"
+  },
+  {
+    "file": "assets/editorial/strategy.webp",
+    "bytes": 168018,
+    "sha256": "5bbd204bca14a1252861fb76b4a70ec4cc623af54c159d96d33a243f24d62208"
+  },
+  {
+    "file": "assets/floating-expert-bg.webp",
+    "bytes": 12644,
+    "sha256": "9509f5dd4efa3674e55b1ca7c6689298da37c3ba47588c98f1a9e6f1420aeb88"
+  },
+  {
+    "file": "assets/fonts/TildaSans-Black.woff2",
+    "bytes": 57952,
+    "sha256": "73abed6708c43912dbd5c2760147f72462887ccd803522a1486209ca1e97031a"
+  },
+  {
+    "file": "assets/fonts/TildaSans-Bold.woff2",
+    "bytes": 63216,
+    "sha256": "a2690df6fe8348066df79e3a3421a3a9bc0b058cc536f3d846f782ea5337afec"
+  },
+  {
+    "file": "assets/fonts/TildaSans-ExtraBold.woff2",
+    "bytes": 62820,
+    "sha256": "726a3a878465a590443308ea9e14459ab5943f699cff4887c844af4ed76ce577"
+  },
+  {
+    "file": "assets/fonts/TildaSans-Light-f0f2c165.woff2",
+    "bytes": 63952,
+    "sha256": "f0f2c165784c72343618a7c2cbde00e45dbb9b09af5149984792f280cac9642e"
+  },
+  {
+    "file": "assets/fonts/TildaSans-Light.woff2",
+    "bytes": 63952,
+    "sha256": "f0f2c165784c72343618a7c2cbde00e45dbb9b09af5149984792f280cac9642e"
+  },
+  {
+    "file": "assets/fonts/TildaSans-Medium-f716269e.woff2",
+    "bytes": 62556,
+    "sha256": "f716269e361f466570f37bc920988c619ddc8a7828c5949c1c56a731a320ab47"
+  },
+  {
+    "file": "assets/fonts/TildaSans-Medium.woff2",
+    "bytes": 62556,
+    "sha256": "f716269e361f466570f37bc920988c619ddc8a7828c5949c1c56a731a320ab47"
+  },
+  {
+    "file": "assets/fonts/TildaSans-Regular-2670dad4.woff2",
+    "bytes": 61636,
+    "sha256": "2670dad44ca6c2a1b9bbdbf1af6d8db9173f2dbe31604e80bdf9599b55047d41"
+  },
+  {
+    "file": "assets/fonts/TildaSans-Regular.woff2",
+    "bytes": 61636,
+    "sha256": "2670dad44ca6c2a1b9bbdbf1af6d8db9173f2dbe31604e80bdf9599b55047d41"
+  },
+  {
+    "file": "assets/fonts/TildaSans-Semibold.woff2",
+    "bytes": 63528,
+    "sha256": "3814f8c444073262523050f3554c6f09cb49353e1f6fdc22a3561d354a231439"
+  },
+  {
+    "file": "assets/home-about-logo-round-red.png",
+    "bytes": 39787,
+    "sha256": "abb141124e76fe4cdc5d4c036160eb1fadcf2a61484bb8bd78b40c756c631395"
+  },
+  {
+    "file": "assets/ludmila-belousova-color-hq-avatar.webp",
+    "bytes": 63628,
+    "sha256": "208a9913dbefc0c6a7bc9d069c779c1cd2d0b0cd5d720f4ed7965ae653134dd2"
+  },
+  {
+    "file": "assets/ludmila-belousova-color-hq.webp",
+    "bytes": 168508,
+    "sha256": "ce4bb977f89ee04f3036bd93efe589b64caea495f693d09f569792d5dd4be121"
+  },
+  {
+    "file": "assets/ludmila-belousova-hq-avatar.webp",
+    "bytes": 67434,
+    "sha256": "93bc2e87dd650283be917ca399dd030172b2d08bb7be8446f04a9a0a509bb73e"
+  },
+  {
+    "file": "assets/max.svg",
+    "bytes": 72862,
+    "sha256": "5caa61a4b0731d0d89421b4fb24f41433025e5aea59155a14cf3a3fada6c9174"
+  },
+  {
+    "file": "assets/menu-featured-01.jpg",
+    "bytes": 264325,
+    "sha256": "c5384c30d421ad705b43c8eb3dac7d16187ff87eb67392232fb15fa995980a7e"
+  },
+  {
+    "file": "assets/menu-featured-02.jpg",
+    "bytes": 374206,
+    "sha256": "7781fce4e8048ef743e425d296b2437674b6dc3e1d3684da098beb3afc695357"
+  },
+  {
+    "file": "assets/modal-request.webp",
+    "bytes": 75360,
+    "sha256": "cb1ac940c0a5bc83fa9285b6fd4060c10d7ca2b177f73b4d9404a1e4c9210d17"
+  },
+  {
+    "file": "assets/newsletter-home-mobile.webp",
+    "bytes": 15704,
+    "sha256": "3285d219f1845deb8887ba3bc04b8e79ce8d3bec99dd568d8a51b8c5fa8bf9af"
+  },
+  {
+    "file": "assets/newsletter-home.webp",
+    "bytes": 113252,
+    "sha256": "a59b66d0d7fdeda1b0b0726fc2b9f0f23450da792c5cff66bba1482a09d8774f"
+  },
+  {
+    "file": "assets/services-bg.png",
+    "bytes": 987570,
+    "sha256": "a1f881f235a834e68dcadb17dfd08223f94b37f8916a1cf3a7f32b98164978b2"
+  },
+  {
+    "file": "assets/shared/favicon.ico",
+    "bytes": 59582,
+    "sha256": "2f312a5f919c41bbc6bb97de56d67e6af8abedec12827a749c276e773160dddf"
+  },
+  {
+    "file": "assets/shared/old-money-interior.webp",
+    "bytes": 12644,
+    "sha256": "9509f5dd4efa3674e55b1ca7c6689298da37c3ba47588c98f1a9e6f1420aeb88"
+  },
+  {
+    "file": "assets/stages.png",
+    "bytes": 697780,
+    "sha256": "718abf0b246fe187705050a7ab4cfc65d94986ee14e6b10b2072cb29801f71fb"
+  },
+  {
+    "file": "assets/telegram.svg",
+    "bytes": 757,
+    "sha256": "4435c9a57e165a1c3b7f27e0b5b11b82b10d674ea4fff7f6748cb67b7fcb994e"
+  },
+  {
+    "file": "assets/whatsapp.svg",
+    "bytes": 1231,
+    "sha256": "3e197e0e1f3e679ee09823c75e1c7bad3a19da9bd1ba01df395268b9ae91816f"
+  },
+  {
+    "file": "css/brand-nowrap.css",
+    "bytes": 197,
+    "sha256": "09ea8dedc25f5cbc24540b51aba46a441634eb410cec1d4c49a8b2fc479f7967"
+  },
+  {
+    "file": "css/hero-laptop.css",
+    "bytes": 2012,
+    "sha256": "4d092d1301257b5f197a31f6ec0461afbd8643687871f7c9b8bdb3d883bbe1a6"
+  },
+  {
+    "file": "css/hero.css",
+    "bytes": 10382,
+    "sha256": "002bf2d2c75f7ec115686583aaf4c007c82f0a93884dcef8ef52570cf22ae81d"
+  },
+  {
+    "file": "css/home-home-owner-form.css",
+    "bytes": 29398,
+    "sha256": "5312ef62e68fefcb95a3c1f7c4cc6eba0b4fcf34cbe71ebeefd06fecb9a6a408"
+  },
+  {
+    "file": "css/inline-01.css",
+    "bytes": 735,
+    "sha256": "cd2aa284a84e9d2265470803e7c75993b77f89cb445bd3217bc4d4b53160f6bb"
+  },
+  {
+    "file": "css/inline-02.css",
+    "bytes": 343,
+    "sha256": "fab2b81abd821e2f3de9f97199a0f5337ab4577b7f13dbdddc974f28efc69ceb"
+  },
+  {
+    "file": "css/inline-03.css",
+    "bytes": 7560,
+    "sha256": "a046be0b451e1e89942e3a588399617dd02b8e23465d2df84ed22a470e96e574"
+  },
+  {
+    "file": "css/inline-04.css",
+    "bytes": 4745,
+    "sha256": "7ff34ba7e9cdcad00bc036a041f11ea73e96423a848f8fd8b7ea7bc997054b47"
+  },
+  {
+    "file": "css/media-header.css",
+    "bytes": 14311,
+    "sha256": "5dec0c68563d19025d56563c3118cb64725c2e551b135d1b67e8505d9713b941"
+  },
+  {
+    "file": "css/media-reference.css",
+    "bytes": 6203,
+    "sha256": "108763d774ad2bd6cf0275acb84fc8dead0a15afc908015758f8ed1e37771355"
+  },
+  {
+    "file": "css/owner-sale.css",
+    "bytes": 47159,
+    "sha256": "66d7d1042786b8bc83c2b71e700257bb3603e34bc4eefd4603b60c04211d58d8"
+  },
+  {
+    "file": "css/page-kit.css",
+    "bytes": 13976,
+    "sha256": "49bc6097d1dad04271ffc2fa917400c312b9604432f9c94cde774a84ce35663c"
+  },
+  {
+    "file": "css/shared-about-home.css",
+    "bytes": 7981,
+    "sha256": "7a557a16b6602dc9505d6e0e68607e5f5671ae7be16828b911f841279a8831d5"
+  },
+  {
+    "file": "css/shared-anchor-navigation.css",
+    "bytes": 530,
+    "sha256": "fddf6c892c5be3414dc22056fe00df3b6cfc329e034fb29428f77cb5ab1705ea"
+  },
+  {
+    "file": "css/shared-card-gaps.css",
+    "bytes": 483,
+    "sha256": "efb542f53c1aa677a28f3cf4f8eac15b1ffa0267c209a553465bb7249bb401bc"
+  },
+  {
+    "file": "css/shared-cta-bleed.css",
+    "bytes": 711,
+    "sha256": "d892ba286df8056cbf94809a56c7c03339ab9b88495612d67019ec893dfb804e"
+  },
+  {
+    "file": "css/shared-expert-avatar.css",
+    "bytes": 490,
+    "sha256": "7a84fccb7131d4c9d8cf387e6b1e14333c4c5e371ccbe2222f7a239e34336ce2"
+  },
+  {
+    "file": "css/shared-expert-dialog.css",
+    "bytes": 3116,
+    "sha256": "59427a1afb5c95f9eb477aa6c69aa38564f4c2e9439c85e31b57f86cf42af483"
+  },
+  {
+    "file": "css/shared-footer-links.css",
+    "bytes": 322,
+    "sha256": "454a2301171e3882b500b819aa9bb46dcc67280c90bf0f4cd73729485a6b0066"
+  },
+  {
+    "file": "css/shared-layout-gutters.css",
+    "bytes": 3327,
+    "sha256": "9c7ccfabdd5541cf007cac9a40fe23131f1fb2f28964c529d9e6f7bac9851bb1"
+  },
+  {
+    "file": "css/shared-owner-header.css",
+    "bytes": 28215,
+    "sha256": "840ead018f62f399165a9146de64244d0192349f38060de2d69232cccff97daa"
+  },
+  {
+    "file": "css/shared-owner-mechanics.css",
+    "bytes": 16337,
+    "sha256": "eb7ed42c9009917b5eae82bc7168219f4090ad28c6c752e1c6c9c88bc7513428"
+  },
+  {
+    "file": "css/shared-owner-panorama.css",
+    "bytes": 8171,
+    "sha256": "7dea4e54a3538d40f1164ae25eb5f74355f0cdfaf51b25aec0450678f79f7c5e"
+  },
+  {
+    "file": "css/shared-page-breadcrumbs.css",
+    "bytes": 1558,
+    "sha256": "7a58ed93dc94357053343f42781a513a93b66b3f6c61f0f9a6c0e26bcaef7d30"
+  },
+  {
+    "file": "css/shared-presentation-mobile.css",
+    "bytes": 714,
+    "sha256": "2aae5b3df68322229738c1a50ab41cb0ad005da467bfae2438cc1c6bf66e110e"
+  },
+  {
+    "file": "css/shared-services-layout.css",
+    "bytes": 5909,
+    "sha256": "d187a06f1b490b1c50647a95cda77d9e9e0bf026ecfb65de3ef05212c279bf04"
+  },
+  {
+    "file": "css/shared-slider-controls.css",
+    "bytes": 271,
+    "sha256": "a9d6b5ec1e88e1f25f7fbee31b237064357124f96258faf81b1601b7d26dd6d8"
+  },
+  {
+    "file": "css/source.css",
+    "bytes": 660158,
+    "sha256": "bda6bc0e6910543f780bf75f8a969e69d3569e1b594d16006675a7bec9769baa"
+  },
+  {
+    "file": "css/spb-cta.css",
+    "bytes": 139848,
+    "sha256": "dfba921149f2075da426faa56dea08925a3f728918d3298d898c22506e7fc50c"
+  },
+  {
+    "file": "css/spb-newsletter.css",
+    "bytes": 16831,
+    "sha256": "689337a7ebfdf29218d368e40b8fd6065c55771b7b4d425ac1a7453279ab8220"
+  },
+  {
+    "file": "css/spb.css",
+    "bytes": 1179,
+    "sha256": "3fa897f170ca1e1f6882f8373205802083201cf80b486483e4c42edd15b26802"
+  },
+  {
+    "file": "data/EDITORIAL-IMAGES.json",
+    "bytes": 7077,
+    "sha256": "de95c8f3bf7dfc29d0066b75cf114e408cfa8e9fa6e7200acb574a5891a6a8b7"
+  },
+  {
+    "file": "data/SPB-SOURCE.json",
+    "bytes": 7382,
+    "sha256": "0f4f57cc78c0892f8343139f4f99f53ddbe89003c339d5621fd23d29a615c96c"
+  },
+  {
+    "file": "data/body-attributes.json",
+    "bytes": 200,
+    "sha256": "d6526dc0fbaa56f203ffee6f888383e78540be07e4cdbe134958033d93718b83"
+  },
+  {
+    "file": "design/1440-consultation.webp",
+    "bytes": 69632,
+    "sha256": "7a1b7910d9354f1582116dd65b81c2d91b9aa9dc712a52e67dad735f241a0ede"
+  },
+  {
+    "file": "design/1440-hero.webp",
+    "bytes": 71424,
+    "sha256": "81f6805123df054271c84ce7d2b32b144919759089807cc74ffe1eb22c7d7111"
+  },
+  {
+    "file": "design/1440-newsletter.webp",
+    "bytes": 80510,
+    "sha256": "509862a9e2abaf431d9dce7095703bd8e5cc2ecfd0c867fc84251e7e49494468"
+  },
+  {
+    "file": "design/390-consultation.webp",
+    "bytes": 27892,
+    "sha256": "ced43ff848a9a69e04c1513f73ab7848613b61e89fcd54f32816c2d18af44896"
+  },
+  {
+    "file": "design/390-hero.webp",
+    "bytes": 25184,
+    "sha256": "20d3c5a08ef18eab0989496569a832925ec03c395da998d64374c5fb33b68dd2"
+  },
+  {
+    "file": "design/390-newsletter.webp",
+    "bytes": 17594,
+    "sha256": "ff24d8debf68dd827ba327c53f6600669fa5b245ebfc80b467c7d94aacefb0f3"
+  },
+  {
+    "file": "html/README.md",
+    "bytes": 405,
+    "sha256": "33ab943c8227693ca5ad58a5ee878c44c5b7ca76492d941b8a94651f0bb77135"
+  },
+  {
+    "file": "html/body.fragment.html",
+    "bytes": 128605,
+    "sha256": "6c0bbfc7c00e96d1e1014b0123e51cb33925e550dc1cb4d06964d5519afb9199"
+  },
+  {
+    "file": "html/head.fragment.html",
+    "bytes": 4473,
+    "sha256": "530efcfaa86b511d3aca96ea5083943e4456aa344e6f862045f443412bc6c6a2"
+  },
+  {
+    "file": "html/index.html",
+    "bytes": 133168,
+    "sha256": "164cffdc16b603030095075a0496dbd073ad23ed0b747e8025a3397a4440844f"
+  },
+  {
+    "file": "index.html",
+    "bytes": 329,
+    "sha256": "6e7cc07c989f6e70fcf374156ef49a2746aa396637ad6fafadda6179a2d319f9"
+  },
+  {
+    "file": "js/brand-nowrap.js",
+    "bytes": 2269,
+    "sha256": "55c3b91fbb6c5069fa49ee63c7cf5967d85ab5d48006fbe006609f46355ed5fa"
+  },
+  {
+    "file": "js/inline-05.js",
+    "bytes": 313,
+    "sha256": "84ff0512a687c14961f3e6c85f759242ed65ee053467570ccbf84f98ee3af2a3"
+  },
+  {
+    "file": "js/media-header.js",
+    "bytes": 127546,
+    "sha256": "d6341c9aa788a1ef7ce8f73ec102fbc579e2ae213ffdcd63ac2a132b30602a44"
+  },
+  {
+    "file": "js/owner-sale.js",
+    "bytes": 38793,
+    "sha256": "60786463737382338a685823c91136e50a5b51d18b49e8719f98215f664c4def"
+  },
+  {
+    "file": "js/shared-anchor-navigation.js",
+    "bytes": 1956,
+    "sha256": "d42478c6de2973d4261daac172ae08634f4a3ba39bf8cd3ce617ad1f719e1ca9"
+  },
+  {
+    "file": "js/shared-cta-bleed.js",
+    "bytes": 3651,
+    "sha256": "45d164865450e12665bf787ca4941858a46d653483c5e8244fb5d01c41e87b98"
+  },
+  {
+    "file": "js/shared-cta-resort.js",
+    "bytes": 1184,
+    "sha256": "2252a1787aa3d465fc521e87b3181d9b9f9d6818c9b52dd5588a9e917e83e3fb"
+  },
+  {
+    "file": "js/shared-slider-controls.js",
+    "bytes": 6262,
+    "sha256": "dce5bdecd97ff41e7e21efe56e5a22942f080f99ba1dac9081cf00f98de7ef03"
+  },
+  {
+    "file": "js/spb-about.js",
+    "bytes": 7350,
+    "sha256": "726a4187128ed05f9eda24d8ee699270d4feaf95feaeec400c366d4269f1b929"
+  },
+  {
+    "file": "js/spb-breadcrumbs.js",
+    "bytes": 4353,
+    "sha256": "1e8ff54c09004b8482fa899a50413ad2d28f65f5f72ddacb99598c77adf6939b"
+  },
+  {
+    "file": "js/spb-content.js",
+    "bytes": 4190,
+    "sha256": "e7a4c74518187147191bce7dedda5c5cc5abc8d5a4944523aec8734638f57bd5"
+  },
+  {
+    "file": "js/spb-expert-avatar.js",
+    "bytes": 1604,
+    "sha256": "47fa90a58a046e9bd79c4676f9eb2d18965a73dd00f228dcd4a9d4032d377d66"
+  },
+  {
+    "file": "js/spb-expert-dialog.js",
+    "bytes": 11925,
+    "sha256": "01e749dd838cd22cf5a3202479cf37b8e4eafa297fb57757a4e99ebb827f2396"
+  },
+  {
+    "file": "js/spb-newsletter.js",
+    "bytes": 3948,
+    "sha256": "330b7871a297d992eba0050b1781d60ece66f04368eef6e28d80f5d011eb2ac4"
+  },
+  {
+    "file": "js/spb-panorama.js",
+    "bytes": 9727,
+    "sha256": "fd68430e2f921df6f5bd96634ea443b2313b2ad4170ea4f27a255f8cf7a78eb1"
+  },
+  {
+    "file": "tools/archive.py",
+    "bytes": 1496,
+    "sha256": "fcf46e71141bda0c26e5ea243cd33654b5b3a878940ddb7c399d70a9ece5b741"
+  },
+  {
+    "file": "tools/build.cjs",
+    "bytes": 12787,
+    "sha256": "bf55f3f9121d7942eb17d0923cdaa52b4032854274e16c33f75f0a0843aaeba7"
+  },
+  {
+    "file": "tools/check-files.py",
+    "bytes": 1661,
+    "sha256": "d942717d650c8e64545d198bf7ff2f340e774055957a8b74fb4effb7d832debc"
+  },
+  {
+    "file": "tools/verify.cjs",
+    "bytes": 7039,
+    "sha256": "bdeba1c3e274d3a030959a39edf77799dc04883eb8d101344261d197fa9e299d"
+  }
+]

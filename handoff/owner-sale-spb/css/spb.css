@@ -1,0 +1,19 @@
+/* Existing BARN Estate kit; SPb imagery and portrait framing. */
+.owner-sale-reference-ui .owner-sale-hero .owner-sale-hero__image{object-position:center 35%}
+.owner-sale-reference-ui .owner-sale-hero .owner-sale-hero__overlay{background:rgba(0,0,0,.4)}
+.owner-sale-hero__title{max-width:1100px}
+.owner-sale-hero__text{max-width:860px}
+.spb-hero-location{white-space:nowrap}
+.home-owner-form__hero-image{object-fit:contain;object-position:center bottom}
+/* A little more room around Ludmila in the floating expert circle. */
+body#ui-kit-page .floating-expert__avatar img{width:140%!important;left:-20%!important;top:0!important}
+.catalog-consultation [data-preview-status]{font-size:16px;line-height:1.5}
+@media(max-width:540px){
+ .owner-sale-reference-ui .owner-sale-hero .owner-sale-hero__image{object-position:88% center}
+ .owner-sale-hero__title{max-width:350px}
+ .home-owner-form__hero-image{object-position:center bottom}
+}
+
+.home-owner-form__hero{background:#181818 url("../assets/editorial/cta-residence.webp") center/cover no-repeat}
+.floating-expert__avatar{background:#dedede}
+.catalog-consultation__mobile-photo{background:#dedede;border-radius:50%;overflow:hidden}
