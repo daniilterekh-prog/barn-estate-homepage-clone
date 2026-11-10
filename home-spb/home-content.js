@@ -66,26 +66,44 @@
       if (host.getAttribute('aria-label') !== label) host.setAttribute('aria-label', label);
     }
   }
+  const spbCatalog=JSON.parse(document.getElementById('spb-catalog-data').textContent);
+  const spbRoutes={"/": "https://barnestate-spb.ru/", "/gorodskaya-nedvizhimost/": "https://barnestate-spb.ru/gorodskaya-nedvizhimost/vtorichnaya-nedvizhimost/", "/vtorichnaya-nedvizhimost/": "https://barnestate-spb.ru/gorodskaya-nedvizhimost/vtorichnaya-nedvizhimost/", "/novostroyki/": "https://barnestate-spb.ru/gorodskaya-nedvizhimost/novostroyki/", "/kottedzhnye-poselki/": "https://barnestate-spb.ru/zagorodnaya-nedvizhimost/", "/barnes-club/": "https://barnestate-spb.ru/barn-estate-club/", "/mir-barnes/": "https://barnestate-spb.ru/mir-barn-estate/", "/zhilye-kompleksy/": "https://barnestate-spb.ru/zhilye-kompleksy/", "/gorodskaya-nedvizhimost/novostroyki/": "https://barnestate-spb.ru/gorodskaya-nedvizhimost/novostroyki/", "/gorodskaya-nedvizhimost/vtorichnaya-nedvizhimost/": "https://barnestate-spb.ru/gorodskaya-nedvizhimost/vtorichnaya-nedvizhimost/", "/zagorodnaya-nedvizhimost/": "https://barnestate-spb.ru/zagorodnaya-nedvizhimost/", "/kommercheskaya-nedvizhimost/": "https://barnestate-spb.ru/kommercheskaya-nedvizhimost/", "/kommercheskaya-nedvizhimost/arendovat/": "https://barnestate-spb.ru/kommercheskaya-nedvizhimost/arendovat/", "/contacts/": "https://barnestate-spb.ru/contacts/", "/sobstvennikam/": "https://barnestate-spb.ru/sobstvennikam/", "/prodazha_sobstvennikam/": "https://barnestate-spb.ru/prodazha_sobstvennikam/", "/arenda_sobstvennikam/": "https://barnestate-spb.ru/arenda_sobstvennikam/", "/exclusive/": "https://barnestate-spb.ru/exclusive/", "/team/": "https://barnestate-spb.ru/team/", "/vacancies/": "https://barnestate-spb.ru/vacancies/", "/mir-barn-estate/": "https://barnestate-spb.ru/mir-barn-estate/", "/barn-estate-club/": "https://barnestate-spb.ru/barn-estate-club/", "/stily-zhizni/": "https://barnestate-spb.ru/stily-zhizni/", "/zhurnaly/": "https://barnestate-spb.ru/zhurnaly/", "/altai/": "https://barnestate-spb.ru/altai/", "/arhyz/": "https://barnestate-spb.ru/arhyz/", "/italiya/": "https://barnestate-spb.ru/italiya/", "/portugaliya/": "https://barnestate-spb.ru/portugaliya/", "/gorodskaya-nedvizhimost/filter/type_immovables-is-apartamenty/": "https://barnestate-spb.ru/gorodskaya-nedvizhimost/filter/type_immovables-is-apartamenty/", "/gorodskaya-nedvizhimost/filter/type_immovables-is-penthausy/": "https://barnestate-spb.ru/gorodskaya-nedvizhimost/filter/type_immovables-is-penthausy/"};
   function refreshLinks() {
-    const destinations = new Map([
-      ['НОВОСТРОЙКИ САНКТ-ПЕТЕРБУРГА', 'https://barnestate-spb.ru/gorodskaya-nedvizhimost/novostroyki/'],
-      ['ВТОРИЧНАЯ НЕДВИЖИМОСТЬ', 'https://barnestate-spb.ru/gorodskaya-nedvizhimost/vtorichnaya-nedvizhimost/']
-    ]);
-    for (const card of document.querySelectorAll('.department-card')) {
-      const href = destinations.get(card.querySelector('.department-card__title')?.textContent.trim());
-      if (href && card.tagName === 'A') { card.href = href; card.dataset.homeOriginalLink = ''; }
+    const destinations=new Map(spbCatalog.directions.map(item=>[item.name.toLocaleLowerCase('ru'),item.url]));
+    for(const card of document.querySelectorAll('.department-card')){
+      const href=destinations.get(card.querySelector('.department-card__title')?.textContent.trim().toLocaleLowerCase('ru'));
+      if(href&&card.tagName==='A'&&card.href!==href){card.href=href;card.dataset.homeOriginalLink='';}
     }
-    for (const link of document.querySelectorAll('a[href^="/"]:not([href^="//"])')) {
-      const href = link.getAttribute('href');
-      if (href === '/') continue;
-      link.href = new URL(href, 'https://barn-estate.ru').href;
-      link.dataset.homeOriginalLink = '';
+    for(const link of document.querySelectorAll('a[href]')){
+      const href=link.getAttribute('href');if(!href||href.startsWith('#'))continue;
+      let parsed;try{parsed=new URL(href, 'https://barn-estate.ru');}catch{continue;}
+      if(!/^(?:www\.)?(?:barn-estate\.ru|barnestate-spb\.ru|barnes-spb\.ru|barnes-moscow\.com)$/.test(parsed.hostname))continue;
+      const target=spbRoutes[parsed.pathname];
+      if(target&&link.href!==target){link.href=target;link.dataset.homeOriginalLink='';}
+      else if(href.startsWith('/')&&!href.startsWith('//')){link.href=new URL(href,'https://barn-estate.ru').href;link.dataset.homeOriginalLink='';}
     }
   }
   // Keep the archived Vue router from intercepting corrected external links.
   document.addEventListener('click', event => {
     if (event.target.closest('a[data-home-original-link]')) event.stopImmediatePropagation();
   }, true);
+  // The copied search shell must leave this preview for the regional catalog.
+  document.addEventListener('submit', event => {
+    const form=event.target;
+    if(!form.matches?.('.home-hero-filters__bar'))return;
+    const category=document.querySelector('.home-hero-filters__tab-group--category [aria-selected="true"]')?.textContent.trim()||'Городская';
+    const key=category==='Загородная'?'country':category==='Коммерческая'?'commercial':category==='Зарубежная'?'international':'secondary';
+    const direction=spbCatalog.directions.find(item=>item.key===key);
+    if(!direction)return;
+    event.preventDefault();event.stopImmediatePropagation();
+    const rent=document.querySelector('.home-hero-filters__tab-group--deal [aria-selected="true"]')?.textContent.trim()==='Арендовать';
+    const field=form.querySelector('input[placeholder*="Поиск"]');
+    const query=field?.value.trim().toLocaleLowerCase('ru')||'';
+    const matches=query?[...spbCatalog.projects,...spbCatalog.lots].filter(item=>String(item.lotid||item.id)===query||(item.name+' '+item.address).toLocaleLowerCase('ru').includes(query)):[];
+    const target=matches.length===1?matches[0].url:rent&&key==='commercial'?'https://barnestate-spb.ru/kommercheskaya-nedvizhimost/arendovat/':direction.url;
+    window.location.assign(target);
+  },true);
+
   // Header Material Call, custom email artwork, official Yandex Maps service icon.
   const contactArtwork = {"email":"<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"contact-button__icon home-contact-artwork\" width=\"26\" height=\"26\" viewBox=\"0 0 24 24\" aria-hidden=\"true\" focusable=\"false\" data-email-icon=\"blue-envelope\"><rect x=\"1\" y=\"5\" width=\"22\" height=\"15\" rx=\"3\" fill=\"#208bd1\"/><path d=\"M2 7.2 12 14 22 7.2V7a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1Z\" fill=\"#70bff0\"/><path d=\"m2 18 7.3-5.5L12 14l2.7-1.5L22 18v.2a.8.8 0 0 1-.8.8H2.8a.8.8 0 0 1-.8-.8Z\" fill=\"#0876b9\"/><path d=\"m2.5 7.2 8.6 5.9a1.6 1.6 0 0 0 1.8 0l8.6-5.9\" fill=\"none\" stroke=\"#fff\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg>","map":"<svg class=\"contact-button__icon home-contact-artwork\" width=\"26\" height=\"26\" aria-hidden=\"true\" focusable=\"false\" data-map-icon=\"yandex\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M8 1C4.6862 1 2 3.6862 2 7C2 8.6563 2.6711 10.156 3.7565 11.2417C4.8422 12.328 7.4 13.9 7.55 15.55C7.57249 15.7974 7.7516 16 8 16C8.2484 16 8.42751 15.7974 8.45 15.55C8.6 13.9 11.1578 12.328 12.2435 11.2417C13.3289 10.156 14 8.6563 14 7C14 3.6862 11.3138 1 8 1Z\" fill=\"#FF4433\"/><path d=\"M8.00002 9.10015C9.15982 9.10015 10.1 8.15994 10.1 7.00015C10.1 5.84035 9.15982 4.90015 8.00002 4.90015C6.84023 4.90015 5.90002 5.84035 5.90002 7.00015C5.90002 8.15994 6.84023 9.10015 8.00002 9.10015Z\" fill=\"white\"/></svg>","phone":"<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"contact-button__icon home-contact-artwork\" width=\"26\" height=\"26\" viewBox=\"0 0 24 24\" aria-hidden=\"true\" focusable=\"false\"><circle cx=\"12\" cy=\"12\" r=\"12\" fill=\"#2BB673\"/><g transform=\"translate(3 3) scale(.75)\" fill=\"white\"><path d=\"M0 0h24v24H0z\" fill=\"none\"/><path d=\"M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z\"/></g></svg>\n"};
   function refreshContactButtons() {
@@ -145,12 +163,12 @@
     const countryCard=[...document.querySelectorAll('.department-card')].find(card=>card.querySelector('.department-card__title')?.textContent.trim()==='Загородная');
     countryCard?.classList.add('department-card--country-clear');
     const countryImage=countryCard?.querySelector('.department-card__image');
-    const countryPhoto=saleImageBase+'home-direction-country.webp';
+    const countryPhoto=saleImageBase+'spb-lot-588043.webp';
     if(countryImage && countryImage.src!==countryPhoto){
       countryImage.removeAttribute('srcset');
       countryImage.src=countryPhoto;
-      countryImage.width=1920;
-      countryImage.height=526;
+      countryImage.width=1280;
+      countryImage.height=720;
       countryImage.style.objectPosition='right center';
     }
     const recommendationTitle=document.querySelector('.barnes-choice__title');
