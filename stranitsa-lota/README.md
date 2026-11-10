@@ -1,3 +1,5 @@
+[Вариант 3: заголовок и кнопки внизу фотографии · 10.11.2026](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/stranitsa-lota/?hero=3&v=hero3-bottom-20261110). Проверен на 7 ширинах; [детали](https://github.com/daniilterekh-prog/barnes-sites/blob/main/main-site/pages/lot/HERO-OPTIONS.md).
+
 # Общий шаблон лота BARN Estate
 
 **Актуальная структура ·10.11.2026 · UI-кит главной v1.0.6.**

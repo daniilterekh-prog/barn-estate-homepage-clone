@@ -125,7 +125,9 @@
     else offerActions.append(action('Запросить презентацию', 'presentation', 'text-link'));
     offer.append(offerActions);
     if (data.demo) offer.append(el('p', 'Архивный пример. Актуальную цену и доступность уточните у брокера.', 'lot-offer__notice'));
-    hero.append(visual, offer); main.append(hero);
+    hero.append(visual, offer);
+    if (document.body.dataset.heroVariant === '3') hero.insertBefore(copy, offer);
+    main.append(hero);
     if (document.body.dataset.heroVariant === '5') {
       const filmstrip = el('div', null, 'hero-filmstrip'); filmstrip.setAttribute('aria-label', 'Выбрать фотографию первого экрана');
       (data.gallery?.length ? data.gallery : [data.cover]).slice(0, 3).forEach((photo, index) => {

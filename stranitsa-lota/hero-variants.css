@@ -108,10 +108,16 @@ body[data-hero-variant="2"] .lot-offer__facts dt {color:var(--muted)}
 body[data-hero-variant="2"] .lot-offer .text-link {color:var(--brand)}
 body[data-hero-variant="2"] .lot-offer .lot-price {font-size:32px}
 body[data-hero-variant="2"] .lot-hero__copy {width:calc(100% - 540px - var(--hero-inset));max-width:840px}
-/* 3 — image and title above a horizontal bottom passport. */
-body[data-hero-variant="3"] .lot-hero__copy {top:var(--hero-top);bottom:auto;width:min(66%,950px)}
+/* 3 — title and actions sit directly above the horizontal bottom passport. */
+body[data-hero-variant="3"] .lot-hero {display:flex;flex-direction:column;justify-content:flex-end}
+body[data-hero-variant="3"] .lot-hero__copy {
+  position:relative;z-index:1;top:auto;bottom:auto;left:auto;
+  width:min(66%,950px);
+  margin:0 max(var(--hero-inset),calc((100vw - 1920px)/2)) 36px;
+}
 body[data-hero-variant="3"] .lot-hero__actions {margin-top:28px}
 body[data-hero-variant="3"] .lot-offer {
+  position:relative;flex:none;
   display:grid;
   grid-template-columns:1fr 1fr 1fr;
   align-items:center;
@@ -196,7 +202,7 @@ body[data-hero-variant="5"] .lot-offer__actions .text-link {display:none}
   body[data-hero-variant="2"] .lot-offer__facts {display:none}
   body[data-hero-variant="2"] .lot-offer .lot-price {font-size:clamp(24px,7.5vw,30px)}
   body[data-hero-variant="2"] .lot-hero__copy {bottom:300px}
-  body[data-hero-variant="3"] .lot-hero__copy {top:140px;bottom:auto}
+  body[data-hero-variant="3"] .lot-hero__copy {top:auto;bottom:auto;left:auto;width:calc(100% - 44px);margin:0 22px 28px}
   body[data-hero-variant="3"] .lot-offer {left:0;right:0;bottom:0;width:100%;display:block;padding:24px 22px}
   body[data-hero-variant="3"] .lot-offer__actions {margin-top:20px}
   body[data-hero-variant="4"] .lot-hero__copy {top:42%;bottom:auto;left:50%;width:calc(100% - 44px)}
