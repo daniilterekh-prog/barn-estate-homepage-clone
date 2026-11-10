@@ -64,8 +64,8 @@ html body.career-page .mh-contact-panel:not([hidden]) { display: flex !important
 /* Hero uses the same separate typography role as owners and partners. */
 .career-hero { position: relative; min-height: var(--career-hero-height); color: #fff; background: #403b36; isolation: isolate; }
 .career-hero__photo, .career-hero__shade { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: -2; }
-.career-hero__photo { object-position: center 42%; }
-.career-hero__shade { z-index: -1; background: linear-gradient(180deg,rgba(15,15,15,.5),rgba(15,15,15,.05) 28%,rgba(15,15,15,.12) 46%,rgba(15,15,15,.85) 100%),linear-gradient(90deg,rgba(15,15,15,.28),rgba(15,15,15,0) 75%); }
+.career-hero__photo { object-position: center 65%; }
+.career-hero__shade { z-index: -1; background: linear-gradient(rgba(15,15,15,.08),rgba(15,15,15,.08)),linear-gradient(180deg,rgba(15,15,15,.5),rgba(15,15,15,.05) 28%,rgba(15,15,15,.12) 46%,rgba(15,15,15,.85) 100%),linear-gradient(90deg,rgba(15,15,15,.28),rgba(15,15,15,0) 75%); }
 .career-hero__inner { position: relative; min-height: inherit; padding-top: var(--career-hero-top); padding-bottom: var(--career-hero-bottom); display: flex; align-items: flex-end; }
 .career-hero__content { width: 100%; max-width: 925px; }
 .career-eyebrow { font-size: var(--career-eyebrow); line-height: var(--career-eyebrow-line); font-weight: 400; letter-spacing: .12em; text-transform: uppercase; margin-bottom: var(--career-brow-gap); color: var(--career-muted); }
@@ -121,7 +121,10 @@ html body.career-page .mh-contact-panel:not([hidden]) { display: flex !important
   :root { --career-heading: 44px; --career-hero-height: 960px; --career-hero-bottom: 72px; --home-button-font: 19px; --home-button-pad: 47px; }
   .career-hero__description { margin-top: 20px; }
 }
-@media (min-width:1921px) { :root { --home-gutter: 0px; } }
+@media (min-width:1921px) {
+  :root { --home-gutter: 0px; }
+  .career-hero__photo { object-position: center 50%; }
+}
 /* Exactly the current main-page laptop policy, including height-sensitive wide desktops. */
 @media (min-width:1025px) and (max-width:1919px), (min-width:1920px) and (max-height:1000px) {
   :root { --career-hero-height: 620px; --career-hero-top: 140px; }

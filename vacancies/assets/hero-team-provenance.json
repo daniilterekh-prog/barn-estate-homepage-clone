@@ -1,14 +1,29 @@
 {
-  "file": "hero-team-warm-v1.webp",
+  "file": "hero-team-warm-wide-v2.webp",
   "width": 1536,
   "height": 1024,
-  "bytes": 161212,
-  "sha256": "a53ac804c953d81eb6e1d3ab23c98ee11440634cb7dfb92bdc2b9d3917791558",
-  "source": "../references/team-photos/team-warm-v1.png",
-  "source_sha256": "e363e1598e3a85cd327f0ee0cba473182e2c050f9a66ba7f714a2890656737af",
-  "origin": "Generative warm relighting of a real group photo from Google Drive",
+  "bytes": 137632,
+  "sha256": "611b0200a4698acef7488eb9e1233350cfc20f647f059fc1dfa25cb95253e2cd",
+  "source": "../references/team-photos/team-warm-wide-v2.png",
+  "source_sha256": "2eae23936b07185b1c07d856f6f53c4c0c634b05c2d09b32036e5839b170aee0",
+  "origin": "Generative wider framing of the existing warm team photo, requested 2026-11-10",
   "original_drive_url": "https://drive.google.com/file/d/1Wmk3BMO6FaMs_vdaeFX5B6zW-01Nl8rX/view?usp=drivesdk",
-  "conversion": "Installed Codex Toolkit / Sharp; PNG to WebP; width1536; no upscaling or new generative edit",
+  "conversion": "Installed Codex Toolkit / Sharp, PNG to WebP at native width1536, no upscaling",
   "native_generated_size": "1536x1024",
-  "prompt": "../references/team-photos/team-warm-v1-prompt.txt"
+  "prompt": "../references/team-photos/team-warm-wide-v2-prompt.txt",
+  "previous_runtime": {
+    "file": "hero-team-warm-v1.webp",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 161212,
+    "sha256": "a53ac804c953d81eb6e1d3ab23c98ee11440634cb7dfb92bdc2b9d3917791558",
+    "source": "../references/team-photos/team-warm-v1.png",
+    "source_sha256": "e363e1598e3a85cd327f0ee0cba473182e2c050f9a66ba7f714a2890656737af",
+    "origin": "Generative warm relighting of a real group photo from Google Drive",
+    "original_drive_url": "https://drive.google.com/file/d/1Wmk3BMO6FaMs_vdaeFX5B6zW-01Nl8rX/view?usp=drivesdk",
+    "conversion": "Installed Codex Toolkit / Sharp; PNG to WebP; width1536; no upscaling or new generative edit",
+    "native_generated_size": "1536x1024",
+    "prompt": "../references/team-photos/team-warm-v1-prompt.txt"
+  },
+  "overlay": "Constant additional rgba(15,15,15,.08) over existing hero gradient, no dropdown-dependent dimming"
 }

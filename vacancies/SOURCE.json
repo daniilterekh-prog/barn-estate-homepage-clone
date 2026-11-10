@@ -1,7 +1,7 @@
 {
   "source_repository": "daniilterekh-prog/barnes-sites",
   "source_branch": "codex/vacancies-20261109",
-  "source_commit": "0d43b9be2c0104307beb0f15d3e9d6454b430d28",
+  "source_commit": "fee704cb92708ad1ac6912e69da0c2cb471062e6",
   "source_path": "main-site/pages/vacancies",
   "runtime_sha256": {
     "assets/2670dad44ca6c2a1.woff2": "2670dad44ca6c2a1b9bbdbf1af6d8db9173f2dbe31604e80bdf9599b55047d41",
@@ -19,7 +19,7 @@
     "assets/cta-provenance.json": "45c18bbbc50b63af31a232daac6661920611d84229b2dacbd21dd6ad68bfbcb9",
     "assets/f0f2c165784c7234.woff2": "f0f2c165784c72343618a7c2cbde00e45dbb9b09af5149984792f280cac9642e",
     "assets/f716269e361f4665.woff2": "f716269e361f466570f37bc920988c619ddc8a7828c5949c1c56a731a320ab47",
-    "assets/hero-team-provenance.json": "d666adba97eb2c688eae49675a24bff72b18cbaf327ad2297b8a385263ada14c",
+    "assets/hero-team-provenance.json": "6c679a274957baaee03d63db2bc22f1276f0cb7ab7e88e187e85a4f24e97c867",
     "assets/hero-team-warm-v1.webp": "a53ac804c953d81eb6e1d3ab23c98ee11440634cb7dfb92bdc2b9d3917791558",
     "assets/kit-264d18dad6.svg": "6870171eea83ea80607e3a4e9b5de7ed724da07aa3af2de9c7b50e7408926a2b",
     "assets/kit-4f7f052a2e.svg": "5caa61a4b0731d0d89421b4fb24f41433025e5aea59155a14cf3a3fada6c9174",
@@ -32,11 +32,12 @@
     "css/14-site-footer.css": "abba3c753c7465cb33ba562baf8be20a4711024e7f7e406b5525f00a4705170d",
     "css/city-career-cta.css": "8efe3e59c32168a3b9d3cf19edd0ce39ab0452e8db8859046830f25c45ae15c9",
     "css/page-breadcrumbs.css": "7a58ed93dc94357053343f42781a513a93b66b3f6c61f0f9a6c0e26bcaef7d30",
-    "index.html": "0c75776c284918f8e3011da61bbea359a12a3994f1f43284649fba7315dd074b",
-    "vacancies.css": "b8021990732e628d284b1f644c25c961a68ae253d81711e54ec1258e64dbd6bb",
+    "index.html": "b3966e214f33989602a9cc2ce1149ea1835875763d529794a5d327dbc5d30206",
+    "vacancies.css": "d441e68891e2cd50c8af0c19059367b89467cb4dcebc09e9eee1892c0d0c8111",
     "vacancies.js": "45fbdf723de8b66435a6f44268b8a94ea3d2c144b377107a2136d2f799ad412a",
     "css/owner-department-nav.css": "1beee5f002a2e2c4ea7864a32fb16c6785636790d0b7ca2369e20c2ab7db4d36",
     "owner-department-nav.js": "9c0e24c7ebae249f864cd5d82bd2a03ed135a11f1e8768dbbc296612e1a7ade5",
-    "owner-nav-source.json": "2cda355e71fbfdb7f1a768661ab51370e1395bd480e35e97fc32a49b1167e173"
+    "owner-nav-source.json": "2cda355e71fbfdb7f1a768661ab51370e1395bd480e35e97fc32a49b1167e173",
+    "assets/hero-team-warm-wide-v2.webp": "611b0200a4698acef7488eb9e1233350cfc20f647f059fc1dfa25cb95253e2cd"
   }
 }
