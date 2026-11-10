@@ -184,7 +184,7 @@
       avatar.height = 1254;
     }
     const expert = document.querySelector('.floating-expert');
-    for (const [selector, text] of [['.floating-expert__name', 'Людмила Белоусова'], ['.floating-expert__label', 'Руководитель отдела продаж BARN Estate Saint Petersburg']]) {
+    for (const [selector, text] of [['.floating-expert__name', 'Людмила Белоусова'], ['.floating-expert__label', 'Руководитель филиала BARN Estate в Санкт-Петербурге']]) {
       const element = expert?.querySelector(selector);
       if (element && element.textContent.replace(/\u00a0/g, ' ') !== text) element.textContent = text;
     }
