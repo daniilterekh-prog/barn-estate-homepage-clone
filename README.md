@@ -1,5 +1,7 @@
 # BARN Estate — страницы основного сайта
 
+- [ЖК: визуальный черновик новой структуры в действующем UI-ките ·10.11.2026](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/zhk-structure/) — отдельное превью, 15 блоков; текущая Вавилова 64 сохранена.
+
 - [Собственник — продажа СПб — адаптация по главной СПб ·10.11.2026](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/prodazha_sobstvennikam_spb/).
 
 - [Вакансии: постоянный комплект разработчику](handoff/vacancies/README.md) · [ZIP](handoff/vacancies/vacancies-developer.zip) · [Превью комплекта](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/handoff/vacancies/html/).

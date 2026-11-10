@@ -1,0 +1,89 @@
+[
+  {
+    "file": "garden.jpg",
+    "source": "https://api.vavilova64.ru/upload/iblock/dc8/ajyzuzq3bv3b80itqxcigt2maxwnqg5x/Whitemark_Svetoch_CGI10_landscape_Phase2_Rev2.jpg",
+    "checked_on": "2026-11-10",
+    "sha256": "47dbd76f29738c1fa831fde4e12ccba7f3db07579cc74bf33725c25b5ca31680",
+    "bytes": 591697,
+    "processing": "Уменьшение до 2200 px (фото стройки до 1800 px), без изменения содержания"
+  },
+  {
+    "file": "lobby.jpg",
+    "source": "https://api.vavilova64.ru/upload/iblock/6e7/fiphr2v1jqe4y4ebjoo4whoawgka2ouh/Vavilova_Mop_20_11.jpg",
+    "checked_on": "2026-11-10",
+    "sha256": "eadb638c9639fe426f95597395a4f17ab7d15e21d86b899af1cd2786b36ab140",
+    "bytes": 571006,
+    "processing": "Уменьшение до 2200 px (фото стройки до 1800 px), без изменения содержания"
+  },
+  {
+    "file": "view.jpg",
+    "source": "https://api.vavilova64.ru/upload/iblock/5c5/596sn4ftw4hcfykqb4q55d5kz11bu89g/Whitemark_Svetoch_CGI8_view_TT024_rev5_Night_Final.jpg",
+    "checked_on": "2026-11-10",
+    "sha256": "147263f728899e84ef1da860f37bd778960f7a49113b0caf11574ee31bbd5263",
+    "bytes": 465490,
+    "processing": "Уменьшение до 2200 px (фото стройки до 1800 px), без изменения содержания"
+  },
+  {
+    "file": "architecture-detail.jpg",
+    "source": "https://api.vavilova64.ru/upload/iblock/210/z0a0vgox2wh5cj9haz7jdyr03c5x1e55/Whitemark_Svetoch_CGI12_Phase2_Rev2.jpg",
+    "checked_on": "2026-11-10",
+    "sha256": "75ac5c5dbbd2f519dd5a4fc419a5d5fc3d82967a9a112c38beb7df387dbdad21",
+    "bytes": 440560,
+    "processing": "Уменьшение до 2200 px (фото стройки до 1800 px), без изменения содержания"
+  },
+  {
+    "file": "lobby-wide.webp",
+    "source": "https://api.vavilova64.ru/upload/iblock/44d/9lqzowihpwgchgms8pa4wse1ypnyk130/lobby_hero.webp",
+    "checked_on": "2026-11-10",
+    "sha256": "5a55204d73002b354d17e4949cd83cd5229f04438a71a0bedf8e75a4ad1e1318",
+    "bytes": 255266,
+    "processing": "Уменьшение до 2200 px (фото стройки до 1800 px), без изменения содержания"
+  },
+  {
+    "file": "panorama.jpg",
+    "source": "https://vavilova64.ru/images/home/panorama.jpg",
+    "checked_on": "2026-11-10",
+    "sha256": "1c5e86ee21d9fdbb1fcffcf6fb1674c189c177b05a49103b8f1ea1c518b260da",
+    "bytes": 438211,
+    "processing": "Уменьшение до 2200 px (фото стройки до 1800 px), без изменения содержания"
+  },
+  {
+    "file": "plan-126.svg",
+    "source": "https://api.vavilova64.ru/upload/iblock/6a7/hwwqmm7k8khkeuptgz012uuimwgb49e0/flat_126_white.svg",
+    "checked_on": "2026-11-10",
+    "sha256": "947bf34631b5a3b8e60fbffe9d0d8b2e85b8423bacc886e64ba36c431919e64f",
+    "bytes": 963743,
+    "processing": "Нормализованы переводы строк и пробелы; геометрия SVG сохранена"
+  },
+  {
+    "file": "logo.svg",
+    "source": "https://daniilterekh-prog.github.io/barnes-assets/brand/barn-estate/logo.svg",
+    "checked_on": "2026-11-10",
+    "sha256": "25d4a2a32ee6f85768e04db21d646d048ccd61ebd4d214d6f54737491d2fc5e0",
+    "bytes": 6582,
+    "processing": "Нормализованы переводы строк и пробелы; геометрия SVG сохранена"
+  },
+  {
+    "file": "TildaSans-Light.woff2",
+    "source_repository": "barnes-sites",
+    "source_path": "main-site/pages/home/exact-2026-10-21/blocks/01-header/assets/TildaSans-Light.woff2",
+    "sha256": "f0f2c165784c72343618a7c2cbde00e45dbb9b09af5149984792f280cac9642e",
+    "bytes": 63952
+  },
+  {
+    "file": "TildaSans-Regular.woff2",
+    "source_repository": "barnes-sites",
+    "source_path": "main-site/pages/home/exact-2026-10-21/blocks/01-header/assets/TildaSans-Regular.woff2",
+    "sha256": "2670dad44ca6c2a1b9bbdbf1af6d8db9173f2dbe31604e80bdf9599b55047d41",
+    "bytes": 61636
+  },
+  {
+    "file": "construction.jpg",
+    "source": "https://api.vavilova64.ru/upload/iblock/24e/o76c87rkx4nh371849w2mgq183vzy3bg/vav-oct2.jpg",
+    "checked_on": "2026-11-10",
+    "caption": "Октябрь 2026, официальный фотоотчёт",
+    "sha256": "4ef9485d672c4b7f8f03d1312b252565b0d15c364fc8b85f5eaf7d6b54afb4a6",
+    "bytes": 505755,
+    "processing": "Уменьшение до 2200 px (фото стройки до 1800 px), без изменения содержания"
+  }
+]
