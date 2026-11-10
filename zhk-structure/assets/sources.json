@@ -85,5 +85,13 @@
     "sha256": "4ef9485d672c4b7f8f03d1312b252565b0d15c364fc8b85f5eaf7d6b54afb4a6",
     "bytes": 505755,
     "processing": "Уменьшение до 2200 px (фото стройки до 1800 px), без изменения содержания"
+  },
+  {
+    "file": "hero-facade.webp",
+    "source": "https://daniilterekh-prog.github.io/barnes-assets/vavilova-64/vavilova-64-render-facade-corner.webp",
+    "checked_on": "2026-11-10",
+    "sha256": "03fe58cb1f9ef7886111d8b2bdf1609095a12e49c01738786ff75ed94391eb69",
+    "bytes": 173192,
+    "processing": "Канонический WebP без изменения байтов; тот же кадр, что на 64vavilova.ru"
   }
 ]

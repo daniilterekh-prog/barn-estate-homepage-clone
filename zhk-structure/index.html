@@ -6,7 +6,7 @@
   <title>Вавилова 64 | BARN Estate</title>
   <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
   <link rel="preload" href="assets/TildaSans-Light.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="css/page.css?v=footer-20261110"><link rel="stylesheet" href="css/owner-header.css"><link rel="stylesheet" href="css/media-header.css"><link rel="stylesheet" href="css/hero-laptop.css"><link rel="stylesheet" href="css/layout-gutters.css"><link rel="stylesheet" href="css/header.css?v=home-switch-20261110"><link rel="stylesheet" href="css/footer.css?v=footer-exact-20261110">
+  <link rel="stylesheet" href="css/page.css?v=footer-20261110"><link rel="stylesheet" href="css/owner-header.css"><link rel="stylesheet" href="css/media-header.css"><link rel="stylesheet" href="css/hero-laptop.css"><link rel="stylesheet" href="css/layout-gutters.css"><link rel="stylesheet" href="css/header.css?v=home-switch-20261110"><link rel="stylesheet" href="css/footer.css?v=footer-exact-20261110"><link rel="stylesheet" href="css/hero.css?v=cinematic-20261110">
   <script defer src="js/media-header.js"></script><script defer src="js/header.js?v=home-switch-20261110"></script><script defer src="js/page.js?v=header-20261110"></script><script defer src="js/footer.js?v=footer-20261110"></script>
 </head>
 <body class="barnes-header-template barnes-media-header barnes-zhk-footer">
@@ -14,14 +14,32 @@
 <div class="layout__header"><header class="site-header"><div class="site-header__inner base-container"><div class="site-header__top"><div class="site-header__left"><button type="button" class="site-header__icon-btn" aria-label="Открыть меню" aria-controls="zhk-site-menu" aria-expanded="false"><span class="site-header__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M5 7h14M5 12h14M5 17h14"/></svg></span></button><a class="site-header__favorites-btn" href="https://daniilterekh-prog.github.io/barn-estate-homepage-clone/favorites/" aria-label="Избранное"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg></a></div><a class="site-header__logo" href="https://barn-estate.ru/" aria-label="BARN Estate — на главную"><img src="assets/logo.svg" alt="BARN Estate" width="172" height="48"></a><div class="site-header__right"><button class="site-header__request" type="button" data-contact="Консультация по Вавилова 64">Оставить заявку</button></div><nav class="zhk-header-breadcrumbs" aria-label="Хлебные крошки"><a href="https://barn-estate.ru/">Главная</a><span>/</span><a href="https://barn-estate.ru/zhilye-kompleksy/">Жилые комплексы</a><span>/</span><span aria-current="page">Вавилова 64</span></nav></div></div></header></div>
 <div class="site-menu" id="zhk-site-menu" role="dialog" aria-modal="true" aria-label="Основное меню BARN Estate" hidden><div class="wrap"><nav id="zhk-site-menu-nav" aria-label="Направления BARN Estate"></nav><nav class="zhk-menu-project" aria-label="Разделы проекта"><p class="eyebrow">Вавилова 64</p><ul><li><a href="#apartments">Квартиры</a></li><li><a href="#architecture">О проекте</a></li><li><a href="#location">Расположение</a></li><li><a href="#purchase">Покупка</a></li><li><a href="#documents">Документы</a></li></ul></nav></div></div>
 <main id="main">
-  <section class="hero block owner-sale-hero" id="project">
-    <img class="hero-image" src="assets/view.jpg" alt="Визуализация вида на город из жилого комплекса Вавилова 64" fetchpriority="high" width="2200" height="1232">
-    <div class="wrap hero-inner owner-sale-hero__inner">
-      <div class="hero-copy"><p class="eyebrow">Москва · Гагаринский район</p><h1>Вавилова 64</h1><p class="lead">Новый взгляд на жизнь<br>на юго-западе Москвы</p>
-      <dl class="hero-facts"><div><dt>Стоимость</dt><dd>По запросу</dd></div><div><dt>Расположение</dt><dd>Улица Вавилова</dd></div><div><dt>Девелопер</dt><dd>СИТИ21</dd></div></dl>
-      <div class="actions"><a class="button" href="#apartments">Выбрать квартиру <span aria-hidden="true">↗</span></a><button class="button white-outline" data-contact="Презентация Вавилова 64">Получить презентацию</button></div></div>
+  <section class="hero block project-hero" id="project" aria-labelledby="project-title">
+    <img class="hero-image" src="assets/hero-facade.webp" alt="Фасад жилого комплекса Вавилова 64 — визуализация проекта" fetchpriority="high" width="1280" height="854">
+    <div class="wrap hero-inner project-hero__inner">
+      <div class="hero-copy">
+        <p class="eyebrow">Москва · Гагаринский район</p>
+        <h1 id="project-title">Вавилова 64</h1>
+        <dl class="project-hero__facts" aria-label="Характеристики жилого комплекса">
+          <div><dt>Класс комплекса</dt><dd>Премиум</dd></div>
+          <div><dt>Площадь квартир</dt><dd>29–120 м²</dd></div>
+          <div><dt>Этажность</dt><dd>21 этаж</dd></div>
+          <div><dt>Застройщик</dt><dd>Сити21</dd></div>
+        </dl>
+        <div class="actions">
+          <button class="button" data-contact="Обсудить проект Вавилова 64">Обсудить проект <span aria-hidden="true">↗</span></button>
+          <a class="text-link" href="#passport">Смотреть проект <span aria-hidden="true">↓</span></a>
+        </div>
+      </div>
       <span class="image-caption">Визуализация проекта</span>
     </div>
+    <nav class="project-hero__chapters wrap" aria-label="Разделы проекта">
+      <div class="project-hero__chapters-inner">
+        <a href="#passport"><span aria-hidden="true">01</span>О проекте</a>
+        <a href="#location"><span aria-hidden="true">02</span>Расположение</a>
+        <a href="#expert"><span aria-hidden="true">03</span>Связаться с экспертом</a>
+      </div>
+    </nav>
   </section>
   <section class="section block" id="passport"><div class="wrap">
     <div class="section-heading"><div><p class="eyebrow">Главное о проекте</p><h2>Пространство ваших возможностей</h2></div><p class="lead">Архитектура с панорамным остеклением,<br class="desktop"> приватный сад и собственные сервисы.</p></div>
