@@ -1,0 +1,17 @@
+/* Owners hub: content additions only; typography/spacing are inherited from page-kit. */
+.owner-hub-page .owner-hub-service-lead {
+ margin:var(--uk-copy) 0;
+ color:#fff;
+ font:300 var(--uk-body)/var(--uk-leading) "Tilda Sans",system-ui,sans-serif;
+ letter-spacing:0;
+ text-transform:none;
+}
+.owner-hub-page .owner-sale-types__content {gap:0;}
+.owner-hub-page .owner-sale-types__card:focus-visible,
+.owner-hub-page .owner-sale-services__slider:focus-visible {
+ outline:2px solid #8b1d25;
+ outline-offset:4px;
+}
+@media(prefers-reduced-motion:reduce) {
+ .owner-hub-page *, .owner-hub-page *::before, .owner-hub-page *::after {scroll-behavior:auto!important;transition:none!important;animation:none!important;}
+}

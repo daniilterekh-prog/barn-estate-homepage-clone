@@ -2,13 +2,13 @@
 (function () {
   'use strict';
   const script = document.currentScript;
-  const direction = script.dataset.direction === 'rent' ? 'rent' : 'sale';
+  const direction = 'hub';
   const image = new URL('assets/barnes-private-salon.webp', script.src).href;
   const reasons = [
-    { title: 'Доступ к аудитории', headline: direction === 'rent' ? 'Находим арендаторов на вашу недвижимость' : 'Находим покупателей на вашу недвижимость', text: direction === 'rent' ? 'Представим объект клиентам BARN Estate, участникам партнёрской сети и международной аудитории, которые ищут недвижимость с подходящими параметрами.' : 'Представим ваш объект клиентам BARN Estate, участникам партнёрской сети и международной аудитории, которая ищет недвижимость с подходящими параметрами.', evidence: 'Клиентская база · Партнёрская сеть · BARN Estate Club' },
+    { title: 'Доступ к аудитории', headline: 'Находим покупателей и арендаторов для вашей недвижимости', text: direction === 'rent' ? 'Представим объект клиентам BARN Estate, участникам партнёрской сети и международной аудитории, которые ищут недвижимость с подходящими параметрами.' : 'Представим ваш объект клиентам BARN Estate, участникам партнёрской сети и международной аудитории, которая ищет недвижимость с подходящими параметрами.', evidence: 'Клиентская база · Партнёрская сеть · BARN Estate Club' },
     { title: 'Собственные медиа', headline: 'Продвигаем объект через собственные медиа BARN Estate', text: 'Представляем недвижимость в контексте архитектуры, окружения и образа жизни. Подбираем каналы BARN Estate под особенности объекта.', evidence: 'Журнал BARN Estate · Цифровые обзоры · Мероприятия' },
-    { title: 'Экспертиза сегмента', headline: direction === 'rent' ? 'Обосновываем ставку аренды и условия сделки' : 'Обосновываем цену продажи и условия сделки', text: 'Специализируемся на премиальной недвижимости. Анализ рынка и особенностей объекта помогает обосновать его позиционирование и вести переговоры.', evidence: 'Аналитика рынка · Позиционирование · Переговоры' },
-    { title: 'Между­народная сеть', headline: direction === 'rent' ? 'Подключаем зарубежные офисы к поиску арендатора' : 'Подключаем зарубежные офисы к поиску покупателя', text: 'Работаем с международными запросами через зарубежные офисы и партнёров, когда это соответствует объекту и вашим целям.', evidence: 'Международная сеть офисов и партнёров' }
+    { title: 'Экспертиза сегмента', headline: 'Обосновываем цену продажи или ставку аренды', text: 'Специализируемся на премиальной недвижимости. Анализ рынка и особенностей объекта помогает обосновать его позиционирование и вести переговоры.', evidence: 'Аналитика рынка · Позиционирование · Переговоры' },
+    { title: 'Между­народная сеть', headline: 'Подключаем зарубежные офисы к поиску покупателей и арендаторов', text: 'Работаем с международными запросами через зарубежные офисы и партнёров, когда это соответствует объекту и вашим целям.', evidence: 'Международная сеть офисов и партнёров' }
   ];
   const content = reason => '<div class="be-argument-heading"><h3>' + reason.headline + '</h3></div><div><p class="be-body">' + reason.text + '</p><p class="be-evidence">' + reason.evidence + '</p></div>';
   const arrow = '<svg viewBox="0 0 16 16" focusable="false" aria-hidden="true"><path d="M3 13 13 3M5 3h8v8" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25"/></svg>';
@@ -20,7 +20,7 @@
       if (!nuxt || nuxt.isHydrating) return false;
     }
     const page = document.querySelector('.owner-sale-page');
-    const path = page?.querySelector(direction === 'rent' ? '.owner-sale-exclusive' : '.owner-sale-stages');
+    const path = page?.querySelector('.owner-sale-types');
     if (!path) return false;
     if (page.querySelector('#why-barnes')) return true;
     const root = document.createElement('section');
@@ -89,6 +89,7 @@
     const action = root.querySelector('.be-cta');
     let modal = null;
     action.addEventListener('click', () => {
+      if (window.__barnesExpertDialog) { window.__barnesExpertDialog.open({trigger: action}); return; }
       root.dispatchEvent(new CustomEvent('barnes:owner-request', { bubbles: true, detail: { direction, source: 'why-barnes-panorama' } }));
       page.querySelector('.owner-sale-hero__button')?.click();
       requestAnimationFrame(() => {

@@ -81,9 +81,9 @@
     contacts.className = 'owner-sale-hero-contacts';
     contacts.setAttribute('aria-label', 'Способы связи');
     [
-      ['WhatsApp', 'https://wa.me/79252621650', '../pictures/office-contact/whatsapp.svg'],
-      ['MAX', 'https://max.ru/join/AWj8ibiCtAPOJOlulMGNkykKGz_prXVWg-IQK1KpUG8', '../pictures/office-contact/max.svg'],
-      ['Telegram', 'https://t.me/art_de_vivre_barnes', '../pictures/office-contact/telegram.svg']
+      ['WhatsApp', 'https://wa.me/79252621650', '_site/pictures/office-contact/whatsapp.svg'],
+      ['MAX', 'https://max.ru/join/AWj8ibiCtAPOJOlulMGNkykKGz_prXVWg-IQK1KpUG8', '_site/pictures/office-contact/max.svg'],
+      ['Telegram', 'https://t.me/art_de_vivre_barnes', '_site/pictures/office-contact/telegram.svg']
     ].forEach(function (item) {
       const link = document.createElement('a');
       const icon = document.createElement('img');
@@ -160,7 +160,7 @@
     if (services && servicesHeader && !services.querySelector(':scope > .owner-sale-section-eyebrow')) {
       const eyebrow = document.createElement('p');
       eyebrow.className = 'owner-sale-section-eyebrow owner-sale-services__eyebrow';
-      eyebrow.textContent = 'ЕДИНАЯ КОМАНДА BARN Estate';
+      eyebrow.textContent = 'СОПРОВОЖДЕНИЕ СДЕЛКИ';
       services.insertBefore(eyebrow, servicesHeader);
     }
 
@@ -212,13 +212,9 @@
     if (!hero) return;
 
     const orderedSections = [
-      page.querySelector(':scope > .owner-sale-presentation'),
+      page.querySelector(':scope > .owner-sale-types'),
       page.querySelector(':scope > .owner-sale-services'),
-      page.querySelector(':scope > .about-company'),
-      page.querySelector(':scope > .owner-sale-stages'),
-      page.querySelector(':scope > .owner-sale-strategy'),
-      page.querySelector(':scope > .catalog-consultation'),
-      page.querySelector(':scope > .owner-sale-types')
+      page.querySelector(':scope > .owner-sale-strategy')
     ].filter(Boolean);
 
     let insertionPoint = hero.nextSibling;
@@ -372,9 +368,9 @@
       messengers.className = 'owner-sale-sticky__messengers';
       messengers.setAttribute('aria-label', 'Способы связи');
       [
-        ['WhatsApp', 'https://wa.me/79252621650', '../pictures/office-contact/whatsapp.svg'],
-        ['MAX', 'https://max.ru/join/AWj8ibiCtAPOJOlulMGNkykKGz_prXVWg-IQK1KpUG8', '../pictures/office-contact/max.svg'],
-        ['Telegram', 'https://t.me/art_de_vivre_barnes', '../pictures/office-contact/telegram.svg']
+        ['WhatsApp', 'https://wa.me/79252621650', '_site/pictures/office-contact/whatsapp.svg'],
+        ['MAX', 'https://max.ru/join/AWj8ibiCtAPOJOlulMGNkykKGz_prXVWg-IQK1KpUG8', '_site/pictures/office-contact/max.svg'],
+        ['Telegram', 'https://t.me/art_de_vivre_barnes', '_site/pictures/office-contact/telegram.svg']
       ].forEach(function (item) {
         const link = document.createElement('a');
         const icon = document.createElement('img');
@@ -397,10 +393,10 @@
     if (messengers && phone.parentElement !== messengers) messengers.appendChild(phone);
 
     list.innerHTML = [
-      ['Презентация', 'presentation'],
-      ['Команда', 'team'],
-      ['Этапы', 'stages'],
-      ['Направления', 'property-types']
+      ['Услуги', 'property-types'],
+      ['Преимущества', 'why-barnes'],
+      ['Как работаем', 'services'],
+      ['Консультация', 'request']
     ].map(function (item) {
       return '<li class="owner-sale-sticky__item"><a class="owner-sale-sticky__link" href="#' + item[1] + '">' + item[0] + '</a></li>';
     }).join('') + '<li class="owner-sale-sticky__item owner-sale-sticky__item--contacts"><button class="owner-sale-sticky__contact-toggle" type="button" aria-expanded="false" aria-controls="owner-sale-sticky-contacts" aria-label="Показать способы связи"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.5 9.8 9.8 0 0 1-4-.9L3 21l1.7-4.6A8.4 8.4 0 1 1 21 11.5Z"></path><path d="M8 12h.01M12 12h.01M16 12h.01"></path></svg></button></li>';
@@ -441,7 +437,7 @@
     menu = document.createElement('aside');
     menu.className = 'owner-sale-clone-menu';
     menu.setAttribute('hidden', '');
-    menu.innerHTML = '<div class="owner-sale-clone-menu__inner"><button class="owner-sale-clone-menu__close" type="button" aria-label="Закрыть меню">×</button><nav aria-label="Навигация"><a href="#stages">Процесс продажи объекта</a><a href="#about">О BARN Estate</a><a href="#property-types">Виды недвижимости</a><a href="#request">Оставить заявку</a><a href="#newsletter-title">Статьи</a></nav><a class="owner-sale-clone-menu__phone" href="tel:74951825079">+7 (495) 182-50-79</a></div>';
+    menu.innerHTML = '<div class="owner-sale-clone-menu__inner"><button class="owner-sale-clone-menu__close" type="button" aria-label="Закрыть меню">×</button><nav aria-label="Навигация"><a href="#property-types">Наши услуги</a><a href="#why-barnes">Преимущества</a><a href="#services">Как мы работаем</a><a href="#request">Получить консультацию</a></nav><a class="owner-sale-clone-menu__phone" href="tel:74951825079">+7 (495) 182-50-79</a></div>';
     document.body.appendChild(menu);
     menu.querySelector('.owner-sale-clone-menu__close').addEventListener('click', function () {
       menu.setAttribute('hidden', '');
@@ -469,37 +465,25 @@
     if (!placeholder || placeholder.children.length) return;
 
     const services = [
-      'Отдельная веб-страница с презентацией объекта',
-      'Адресные рассылки по клиентской базе — на почту и в мессенджеры',
-      'Включение объекта в тематические подборки недвижимости',
-      'Размещение в социальных сетях и на онлайн-площадках',
-      'Персональный брокер, погруженный во все детали объекта',
-      'Нестандартные сценарии продажи: аукцион, обмен и другие форматы',
-      'Виртуальный 3D-тур для детального знакомства с объектом онлайн',
-      'Профессиональная видеосъемка недвижимости',
-      'Создание рекламных материалов для продвижения объекта',
-      'Профессиональная фотосъемка и обработка изображений',
-      'Брендированный баннер на объекте'
+      'Анализируем рынок, характеристики объекта и определяем оптимальную стоимость продажи или аренды.',
+      'Разрабатываем план продвижения с учётом особенностей недвижимости, целевой аудитории и задач собственника.',
+      'Готовим объект к выходу на рынок, создаём презентационные материалы и используем собственные каналы продвижения BARN Estate.',
+      'Представляем объект подходящей аудитории, организуем показы и проводим переговоры с заинтересованными клиентами.',
+      'Согласовываем условия, координируем подготовку документов и сопровождаем сделку до её завершения.'
     ];
-
     const serviceTitles = [
-      'Презентация объекта',
-      'Адресные рассылки',
-      'Тематические подборки',
-      'Социальные сети и площадки',
-      'Персональный брокер',
-      'Индивидуальный сценарий продажи',
-      'Виртуальный 3D-тур',
-      'Видеосъёмка',
-      'Рекламные материалы',
-      'Фотосъёмка',
-      'Баннер на объекте'
+      'Оценка недвижимости',
+      'Индивидуальная стратегия',
+      'Презентация и продвижение',
+      'Поиск покупателей и арендаторов',
+      'Сопровождение сделки'
     ];
     const slider = document.createElement('div');
     slider.className = 'splide owner-sale-services__slider is-overflow is-initialized splide--slide splide--ltr splide--draggable is-active';
     slider.setAttribute('data-v-2d6c67d9', '');
     slider.setAttribute('role', 'region');
-    slider.setAttribute('aria-label', 'Список услуг');
+    slider.setAttribute('aria-label', 'Пять этапов работы с собственниками');
+    slider.tabIndex = 0;
     slider.innerHTML = '<div class="splide__track" data-v-2d6c67d9=""><ul class="splide__list" data-v-2d6c67d9="">' + services.map(function (service, index) {
       const number = String(index + 1).padStart(2, '0');
       return '<li class="splide__slide" data-v-2d6c67d9=""><article class="owner-sale-services__card" data-v-2d6c67d9=""><span class="owner-sale-services__number" data-v-2d6c67d9="">' + number + '</span><p class="owner-sale-services__text" data-v-2d6c67d9=""><strong>' + serviceTitles[index] + '</strong><span>' + service + '</span></p></article></li>';
@@ -595,7 +579,7 @@
 
   page.querySelectorAll('.owner-sale-sticky__link').forEach(function (link) {
     link.addEventListener('click', function () {
-      const targets = { Презентация: '#presentation', Команда: '#team', Этапы: '#stages', Направления: '#property-types' };
+      const targets = { Услуги: '#property-types', Преимущества: '#why-barnes', 'Как работаем': '#services', Консультация: '#request' };
       const target = document.querySelector(targets[link.textContent.trim()]);
       if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
     });
@@ -627,6 +611,7 @@
     };
     const render = function () {
       list.style.transform = 'translateX(' + (-offset) + 'px)';
+      slider.setAttribute('aria-description', 'Используйте стрелки влево и вправо для просмотра пяти этапов.');
       previous.disabled = offset <= 0;
       next.disabled = offset >= maxOffset() - 1;
     };
@@ -638,6 +623,25 @@
       offset = Math.min(maxOffset(), offset + step());
       render();
     });
+    slider.addEventListener('keydown', function (event) {
+      if (event.target !== slider) return;
+      if (!['ArrowLeft', 'ArrowRight', 'Home', 'End'].includes(event.key)) return;
+      event.preventDefault();
+      if (event.key === 'Home') offset = 0;
+      else if (event.key === 'End') offset = maxOffset();
+      else offset = Math.min(maxOffset(), Math.max(0, offset + (event.key === 'ArrowRight' ? 1 : -1) * step()));
+      render();
+    });
+    let touchStart = null;
+    slider.addEventListener('touchstart', function (event) { touchStart = event.touches[0].clientX; }, { passive: true });
+    slider.addEventListener('touchend', function (event) {
+      if (touchStart === null) return;
+      const delta = touchStart - event.changedTouches[0].clientX;
+      touchStart = null;
+      if (Math.abs(delta) < 40) return;
+      offset = Math.min(maxOffset(), Math.max(0, offset + (delta > 0 ? 1 : -1) * step()));
+      render();
+    }, { passive: true });
     window.addEventListener('resize', function () {
       offset = Math.min(offset, maxOffset());
       render();

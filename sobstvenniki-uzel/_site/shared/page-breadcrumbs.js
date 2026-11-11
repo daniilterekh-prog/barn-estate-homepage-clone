@@ -3,8 +3,8 @@
  'use strict';
  if(window.BarnPageBreadcrumbs?.document===document.body)return;
  const script=document.currentScript,key=script.dataset.page;
- const root=new URL('../',script.src),home=new URL('exact-2026-10-21/',root).href;
- const titles={home:'Главная',media:'Медиа',partners:'Амбассадорам','owner-rent':'Собственникам — аренда','owner-sale':'Собственникам — продажа',city:'Городская недвижимость Москвы',country:'Загородная недвижимость Москвы',international:'Зарубежная недвижимость',commercial:'Коммерческая недвижимость',resort:'Курортная недвижимость',catalog:'Каталог недвижимости',favorites:'Избранное',lot:'Лот'};
+ const root=new URL('https://daniilterekh-prog.github.io/barn-estate-homepage-clone/'),home=new URL('exact-2026-10-21/',root).href;
+ const titles={'owner-hub':'Собственникам',home:'Главная',media:'Медиа',partners:'Амбассадорам','owner-rent':'Собственникам — аренда','owner-sale':'Собственникам — продажа',city:'Городская недвижимость Москвы',country:'Загородная недвижимость Москвы',international:'Зарубежная недвижимость',commercial:'Коммерческая недвижимость',resort:'Курортная недвижимость',catalog:'Каталог недвижимости',favorites:'Избранное',lot:'Лот'};
  if(!(key in titles))return;
  const nav=document.createElement('nav');nav.className='page-breadcrumbs';nav.dataset.barnBreadcrumbs='';nav.dataset.page=key;nav.dataset.tone=['catalog','favorites','lot'].includes(key)?'light':'dark';nav.setAttribute('aria-label','Хлебные крошки');
  const list=document.createElement('ol');nav.append(list);

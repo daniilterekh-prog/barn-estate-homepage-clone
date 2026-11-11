@@ -38,7 +38,7 @@ function setupMechanics(){
 function serviceAction(root){
  let cta=root.querySelector('.owner-sale-services__cta');if(cta)return cta;
  cta=document.createElement('a');cta.className='ui-button ui-button--primary ui-button--medium owner-sale-services__cta';cta.href='#request';
- cta.innerHTML=(document.body.classList.contains('owner-rent-reference-ui')?'Обсудить стратегию сдачи':'Обсудить стратегию продажи')+' <span aria-hidden="true"><svg viewBox="0 0 16 16" focusable="false"><path d="M3 13 13 3M5 3h8v8" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25"/></svg></span>';
+ cta.innerHTML='Обсудить вашу задачу'+' <span aria-hidden="true"><svg viewBox="0 0 16 16" focusable="false"><path d="M3 13 13 3M5 3h8v8" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25"/></svg></span>';
  root.append(cta);return cta;
 }
 function refresh(){
