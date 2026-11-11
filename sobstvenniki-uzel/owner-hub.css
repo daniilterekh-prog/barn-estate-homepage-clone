@@ -15,3 +15,5 @@
 @media(prefers-reduced-motion:reduce) {
  .owner-hub-page *, .owner-hub-page *::before, .owner-hub-page *::after {scroll-behavior:auto!important;transition:none!important;animation:none!important;}
 }
+/* New light editorial scenes retain readable white captions in the existing card design. */
+body.owner-sale-reference-ui .owner-hub-page .owner-sale-types__card .owner-sale-types__overlay {background:rgba(0,0,0,.58);}
