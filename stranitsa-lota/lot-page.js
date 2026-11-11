@@ -110,6 +110,13 @@
     if (data.description) copy.append(el('p', data.description, 'lead'));
     const actions = el('div', null, 'lot-hero__actions');
     const photos = action('Все фото · ' + (data.gallery?.length || 1), 'gallery', 'button', 'photos');
+    if (document.body.dataset.heroVariant === '3') {
+      photos.firstChild.remove();
+      const label = el('span', 'Все фото · ' + (data.gallery?.length || 1), 'lot-gallery-label');
+      const compact = el('span', (data.gallery?.length || 1) + ' фото', 'lot-gallery-label--compact');
+      compact.setAttribute('aria-hidden', 'true');
+      photos.prepend(label, compact);
+    }
     photos.setAttribute('aria-label', 'Открыть галерею фотографий');
     actions.append(photos, link('Планировка', '#lot-plan', 'button button--outline'));
     copy.append(actions); visual.append(copy);

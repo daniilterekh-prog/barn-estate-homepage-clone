@@ -68,7 +68,7 @@
       "smallTablet": 40,
       "mobile": 32
     },
-    "note": "Hero title is a distinct role from section headings; white action-row composition derives from homepage filters."
+    "note": "Hero title is a distinct role from section headings. Desktop white action row follows homepage filters; at <=768px the offer is transparent on the photo after the facts, with one primary CTA and a compact gallery control."
   },
   "heroFacts": {
     "source": "docs/landing-builder/hero-prototype/hero.css",

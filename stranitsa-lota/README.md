@@ -1,3 +1,5 @@
+[Мобильный херо обновлён ·11.11.2026](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/stranitsa-lota/?hero=3&v=mobile-hero-20261111): цена на фотографии, компактная галерея, одна основная кнопка.
+
 [Вариант 3: характеристики по курортным лендингам · 10.11.2026](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/stranitsa-lota/?hero=3&v=resort-facts-20261110). Крупные значения и подписи на фотографии по примеру «Кедров», компактная цена и запись; сохранены Tilda Sans, роли H1/CTA и высота главной. [Источник и проверки](https://github.com/daniilterekh-prog/barnes-sites/blob/main/main-site/pages/lot/HERO-OPTIONS.md).
 
 # Общий шаблон лота BARN Estate

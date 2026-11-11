@@ -284,3 +284,24 @@ body[data-hero-variant="3"] .lot-hero:not([data-has-hero-facts]) .lot-offer {mar
   body[data-hero-variant="3"] .lot-hero__facts dd {font-size:20px}
   body[data-hero-variant="3"] .lot-hero__facts dt {font-size:10px}
 }
+
+/* Mobile composition: photo canvas, compact gallery, one unboxed offer. */
+.lot-gallery-label--compact {display:none}
+@media(max-width:768px){
+  body[data-hero-variant="3"] .lot-hero__copy {position:static;order:1;margin-bottom:24px}
+  body[data-hero-variant="3"] .lot-hero__actions {position:absolute;top:128px;right:var(--hero-inset);margin:0;display:block}
+  body[data-hero-variant="3"] .lot-hero__actions .button {min-height:44px;padding:10px 14px;font-size:14px;line-height:20px;gap:10px;border-color:#ffffff80}
+  body[data-hero-variant="3"] .lot-hero__actions svg {width:18px;height:18px}
+  body[data-hero-variant="3"] .lot-gallery-label {display:none}
+  body[data-hero-variant="3"] .lot-gallery-label--compact {display:inline}
+  body[data-hero-variant="3"] .lot-hero__facts {order:2;margin-bottom:24px;padding-top:16px}
+  body[data-hero-variant="3"] .lot-offer {order:3;background:transparent;color:#fff;padding:0;margin-bottom:var(--kit-hero-bottom)}
+  body[data-hero-variant="3"] .lot-offer>div:first-of-type {padding:0 0 20px}
+  body[data-hero-variant="3"] .lot-offer .lot-price {color:#fff;font-size:28px;font-weight:300;line-height:1.2}
+}
+@media(max-width:540px){
+  body[data-hero-variant="3"] .lot-hero__actions {top:100px}
+  body[data-hero-variant="3"] .lot-hero__copy .eyebrow {font-size:12px;line-height:16px;margin-bottom:12px}
+  body[data-hero-variant="3"] .lot-hero__copy {margin-bottom:20px}
+  body[data-hero-variant="3"] .lot-hero__facts {margin-bottom:20px}
+}
