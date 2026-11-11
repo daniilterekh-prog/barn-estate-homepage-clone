@@ -1,6 +1,6 @@
 # BARN Estate — страницы основного сайта
 
-- [Собственники узел — отдельная копия продажи для собственников ·10.11.2026](sobstvenniki-uzel/README.md).
+- [Собственники узел — открыть страницу](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/sobstvenniki-uzel/) · [исходники копии](sobstvenniki-uzel/README.md).
 
 - [ЖК: визуальный черновик новой структуры в действующем UI-ките ·10.11.2026](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/zhk-structure/) — отдельное превью, 15 блоков; текущая Вавилова 64 сохранена.
 
