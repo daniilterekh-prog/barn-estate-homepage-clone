@@ -1,0 +1,87 @@
+{
+  "sections": [
+    {
+      "class": "owner-sale-sticky",
+      "id": "",
+      "height": 77,
+      "padding": "0px"
+    },
+    {
+      "class": "owner-sale-hero",
+      "id": "",
+      "height": 560,
+      "padding": "0px"
+    },
+    {
+      "class": "owner-sale-types",
+      "id": "property-types",
+      "height": 1086.796875,
+      "padding": "48px 0px"
+    },
+    {
+      "class": "",
+      "id": "why-barnes",
+      "height": 994.359375,
+      "padding": "0px"
+    },
+    {
+      "class": "owner-sale-services",
+      "id": "services",
+      "height": 569.78125,
+      "padding": "48px 0px"
+    },
+    {
+      "class": "owner-sale-strategy",
+      "id": "request",
+      "height": 718.1875,
+      "padding": "48px 0px"
+    }
+  ],
+  "roles": [
+    {
+      "selector": "h1",
+      "font": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      "size": "32px",
+      "lineHeight": "33.6px",
+      "weight": "300",
+      "letterSpacing": "-1.44px",
+      "color": "rgb(255, 255, 255)"
+    },
+    {
+      "selector": ".owner-sale-types__title",
+      "font": "\"Tilda Sans\", system-ui, sans-serif",
+      "size": "18px",
+      "lineHeight": "24.3px",
+      "weight": "400",
+      "letterSpacing": "normal",
+      "color": "rgb(255, 255, 255)"
+    },
+    {
+      "selector": "#panorama-title",
+      "font": "\"Tilda Sans\", system-ui, sans-serif",
+      "size": "22px",
+      "lineHeight": "26.4px",
+      "weight": "300",
+      "letterSpacing": "normal",
+      "color": "rgb(30, 30, 30)"
+    },
+    {
+      "selector": ".owner-sale-services__text",
+      "font": "\"Tilda Sans\", system-ui, sans-serif",
+      "size": "15px",
+      "lineHeight": "21px",
+      "weight": "300",
+      "letterSpacing": "normal",
+      "color": "rgb(79, 77, 73)"
+    },
+    {
+      "selector": ".owner-sale-strategy__title",
+      "font": "\"Tilda Sans\", system-ui, sans-serif",
+      "size": "22px",
+      "lineHeight": "26.4px",
+      "weight": "300",
+      "letterSpacing": "normal",
+      "color": "rgb(30, 30, 30)"
+    }
+  ]
+}

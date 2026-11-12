@@ -1,0 +1,1322 @@
+{
+  "date": "2026-11-12",
+  "canonicalRepository": "daniilterekh-prog/barnes-sites",
+  "canonicalCommit": "1cc2a3cd9d19ca3dec1bf842ed08b81462ba9245",
+  "source": "main-site/pages/owner-hub",
+  "publicReferenceCommit": "80edd79176e37ca8320b41fd3d17b67eb129e66c",
+  "preview": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/sobstvenniki-uzel/",
+  "entryPolicy": "Materialised public HTML is the export input; canonical source remains in barnes-sites. Archive-only extraction of inline files is not replayed into the handoff.",
+  "transform": "Relocate runtime resources; externalize inline CSS/JS; preserve design, native controllers and preview-only forms; omit unused framework preload hints. HTML navigation links retain their approved destinations as absolute links.",
+  "files": [
+    {
+      "source": "sobstvenniki-uzel/index.html",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "html/index.html",
+      "sourceSha256": "5385d80a09da57c3db9df485d128cfd4aea2184c90c44e1b1b9466c19e0ad454",
+      "canonicalReference": "main-site/pages/owner-hub/index.html",
+      "canonicalSha256": "5385d80a09da57c3db9df485d128cfd4aea2184c90c44e1b1b9466c19e0ad454"
+    },
+    {
+      "source": "sobstvenniki-uzel/source.css",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "css/source.css",
+      "sourceSha256": "3c6aab569051fd135ece39698d875f1dd83edc05580c9b7d3a7cb379906819e9",
+      "canonicalReference": "main-site/pages/owner-hub/source.css",
+      "canonicalSha256": "3c6aab569051fd135ece39698d875f1dd83edc05580c9b7d3a7cb379906819e9"
+    },
+    {
+      "source": "sobstvenniki-uzel/owner-sale.css",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "css/owner-sale.css",
+      "sourceSha256": "66d7d1042786b8bc83c2b71e700257bb3603e34bc4eefd4603b60c04211d58d8",
+      "canonicalReference": "main-site/pages/owner-hub/owner-sale.css",
+      "canonicalSha256": "66d7d1042786b8bc83c2b71e700257bb3603e34bc4eefd4603b60c04211d58d8"
+    },
+    {
+      "source": "favicon.ico",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "assets/shared/favicon.ico",
+      "sourceSha256": "2f312a5f919c41bbc6bb97de56d67e6af8abedec12827a749c276e773160dddf",
+      "canonicalReference": null,
+      "canonicalSha256": null
+    },
+    {
+      "source": "sobstvenniki-uzel/owner-sale.js",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "js/owner-sale.js",
+      "sourceSha256": "eb2e94aa0238b6d46d2bb7250ab179ed8099ce0a48ded3dd8a20f4a23789136c",
+      "canonicalReference": "main-site/pages/owner-hub/owner-sale.js",
+      "canonicalSha256": "eb2e94aa0238b6d46d2bb7250ab179ed8099ce0a48ded3dd8a20f4a23789136c"
+    },
+    {
+      "source": "sobstvenniki-uzel/_site/shared/owner-mechanics.css",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "css/shared-owner-mechanics.css",
+      "sourceSha256": "eb7ed42c9009917b5eae82bc7168219f4090ad28c6c752e1c6c9c88bc7513428",
+      "canonicalReference": "main-site/pages/owner-hub/_site/shared/owner-mechanics.css",
+      "canonicalSha256": "eb7ed42c9009917b5eae82bc7168219f4090ad28c6c752e1c6c9c88bc7513428"
+    },
+    {
+      "source": "sobstvenniki-uzel/_site/shared/owner-panorama.css",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "css/shared-owner-panorama.css",
+      "sourceSha256": "7dea4e54a3538d40f1164ae25eb5f74355f0cdfaf51b25aec0450678f79f7c5e",
+      "canonicalReference": "main-site/pages/owner-hub/_site/shared/owner-panorama.css",
+      "canonicalSha256": "7dea4e54a3538d40f1164ae25eb5f74355f0cdfaf51b25aec0450678f79f7c5e"
+    },
+    {
+      "source": "sobstvenniki-uzel/_site/shared/owner-panorama.js",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "js/shared-owner-panorama.js",
+      "sourceSha256": "8b10eaf0b79d997884add95f77336da59f96628edb836e34a62bc2ad8176ebc4",
+      "canonicalReference": "main-site/pages/owner-hub/_site/shared/owner-panorama.js",
+      "canonicalSha256": "8b10eaf0b79d997884add95f77336da59f96628edb836e34a62bc2ad8176ebc4"
+    },
+    {
+      "source": "sobstvenniki-uzel/_site/shared/presentation-mobile.css",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "css/shared-presentation-mobile.css",
+      "sourceSha256": "2aae5b3df68322229738c1a50ab41cb0ad005da467bfae2438cc1c6bf66e110e",
+      "canonicalReference": "main-site/pages/owner-hub/_site/shared/presentation-mobile.css",
+      "canonicalSha256": "2aae5b3df68322229738c1a50ab41cb0ad005da467bfae2438cc1c6bf66e110e"
+    },
+    {
+      "source": "sobstvenniki-uzel/_site/shared/anchor-navigation.css",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "css/shared-anchor-navigation.css",
+      "sourceSha256": "fddf6c892c5be3414dc22056fe00df3b6cfc329e034fb29428f77cb5ab1705ea",
+      "canonicalReference": "main-site/pages/owner-hub/_site/shared/anchor-navigation.css",
+      "canonicalSha256": "fddf6c892c5be3414dc22056fe00df3b6cfc329e034fb29428f77cb5ab1705ea"
+    },
+    {
+      "source": "sobstvenniki-uzel/_site/shared/expert-avatar.css",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "css/shared-expert-avatar.css",
+      "sourceSha256": "7a84fccb7131d4c9d8cf387e6b1e14333c4c5e371ccbe2222f7a239e34336ce2",
+      "canonicalReference": "main-site/pages/owner-hub/_site/shared/expert-avatar.css",
+      "canonicalSha256": "7a84fccb7131d4c9d8cf387e6b1e14333c4c5e371ccbe2222f7a239e34336ce2"
+    },
+    {
+      "source": "sobstvenniki-uzel/_site/shared/expert-avatar.js",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "js/shared-expert-avatar.js",
+      "sourceSha256": "2ded60e46b61ebe4a22970a0aef24000cb471e0f8e1cb3dde3e7dfccfae62597",
+      "canonicalReference": "main-site/pages/owner-hub/_site/shared/expert-avatar.js",
+      "canonicalSha256": "2ded60e46b61ebe4a22970a0aef24000cb471e0f8e1cb3dde3e7dfccfae62597"
+    },
+    {
+      "source": "sobstvenniki-uzel/page-kit.css",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "css/page-kit.css",
+      "sourceSha256": "49bc6097d1dad04271ffc2fa917400c312b9604432f9c94cde774a84ce35663c",
+      "canonicalReference": "main-site/pages/owner-hub/page-kit.css",
+      "canonicalSha256": "49bc6097d1dad04271ffc2fa917400c312b9604432f9c94cde774a84ce35663c"
+    },
+    {
+      "source": "sobstvenniki-uzel/brand-nowrap.css",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "css/brand-nowrap.css",
+      "sourceSha256": "09ea8dedc25f5cbc24540b51aba46a441634eb410cec1d4c49a8b2fc479f7967",
+      "canonicalReference": "main-site/pages/owner-hub/brand-nowrap.css",
+      "canonicalSha256": "09ea8dedc25f5cbc24540b51aba46a441634eb410cec1d4c49a8b2fc479f7967"
+    },
+    {
+      "source": "sobstvenniki-uzel/brand-nowrap.js",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "js/brand-nowrap.js",
+      "sourceSha256": "55c3b91fbb6c5069fa49ee63c7cf5967d85ab5d48006fbe006609f46355ed5fa",
+      "canonicalReference": "main-site/pages/owner-hub/brand-nowrap.js",
+      "canonicalSha256": "55c3b91fbb6c5069fa49ee63c7cf5967d85ab5d48006fbe006609f46355ed5fa"
+    },
+    {
+      "source": "sobstvenniki-uzel/_site/shared/about-home.css",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "css/shared-about-home.css",
+      "sourceSha256": "7a557a16b6602dc9505d6e0e68607e5f5671ae7be16828b911f841279a8831d5",
+      "canonicalReference": "main-site/pages/owner-hub/_site/shared/about-home.css",
+      "canonicalSha256": "7a557a16b6602dc9505d6e0e68607e5f5671ae7be16828b911f841279a8831d5"
+    },
+    {
+      "source": "sobstvenniki-uzel/_site/shared/cta-bleed.css",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "css/shared-cta-bleed.css",
+      "sourceSha256": "d892ba286df8056cbf94809a56c7c03339ab9b88495612d67019ec893dfb804e",
+      "canonicalReference": "main-site/pages/owner-hub/_site/shared/cta-bleed.css",
+      "canonicalSha256": "d892ba286df8056cbf94809a56c7c03339ab9b88495612d67019ec893dfb804e"
+    },
+    {
+      "source": "sobstvenniki-uzel/_site/shared/cta-resort.css",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "css/shared-cta-resort.css",
+      "sourceSha256": "0fbe5b5ac5d2676858a15505195fa8a353d8952f61cdd155fd2eac327ba18eae",
+      "canonicalReference": "main-site/pages/owner-hub/_site/shared/cta-resort.css",
+      "canonicalSha256": "0fbe5b5ac5d2676858a15505195fa8a353d8952f61cdd155fd2eac327ba18eae"
+    },
+    {
+      "source": "sobstvenniki-uzel/_site/shared/slider-controls.css",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "css/shared-slider-controls.css",
+      "sourceSha256": "a9d6b5ec1e88e1f25f7fbee31b237064357124f96258faf81b1601b7d26dd6d8",
+      "canonicalReference": "main-site/pages/owner-hub/_site/shared/slider-controls.css",
+      "canonicalSha256": "a9d6b5ec1e88e1f25f7fbee31b237064357124f96258faf81b1601b7d26dd6d8"
+    },
+    {
+      "source": "sobstvenniki-uzel/_site/shared/slider-controls.js",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "js/shared-slider-controls.js",
+      "sourceSha256": "5dc9622e345c1e142ba7321f5084a9330afc43fe2178dd8d0132234e88c6c22a",
+      "canonicalReference": "main-site/pages/owner-hub/_site/shared/slider-controls.js",
+      "canonicalSha256": "5dc9622e345c1e142ba7321f5084a9330afc43fe2178dd8d0132234e88c6c22a"
+    },
+    {
+      "source": "sobstvenniki-uzel/_site/shared/card-gaps.css",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "css/shared-card-gaps.css",
+      "sourceSha256": "efb542f53c1aa677a28f3cf4f8eac15b1ffa0267c209a553465bb7249bb401bc",
+      "canonicalReference": "main-site/pages/owner-hub/_site/shared/card-gaps.css",
+      "canonicalSha256": "efb542f53c1aa677a28f3cf4f8eac15b1ffa0267c209a553465bb7249bb401bc"
+    },
+    {
+      "source": "sobstvenniki-uzel/_site/shared/services-layout.css",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "css/shared-services-layout.css",
+      "sourceSha256": "d187a06f1b490b1c50647a95cda77d9e9e0bf026ecfb65de3ef05212c279bf04",
+      "canonicalReference": "main-site/pages/owner-hub/_site/shared/services-layout.css",
+      "canonicalSha256": "d187a06f1b490b1c50647a95cda77d9e9e0bf026ecfb65de3ef05212c279bf04"
+    },
+    {
+      "source": "sobstvenniki-uzel/_site/shared/newsletter-home.css",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "css/shared-newsletter-home.css",
+      "sourceSha256": "14e3d47b57b96ed37c4dab0d8f9c833ea1a32f7b0f2357e33230e77189247cf3",
+      "canonicalReference": "main-site/pages/owner-hub/_site/shared/newsletter-home.css",
+      "canonicalSha256": "14e3d47b57b96ed37c4dab0d8f9c833ea1a32f7b0f2357e33230e77189247cf3"
+    },
+    {
+      "source": "sobstvenniki-uzel/hero-laptop.css",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "css/hero-laptop.css",
+      "sourceSha256": "4d092d1301257b5f197a31f6ec0461afbd8643687871f7c9b8bdb3d883bbe1a6",
+      "canonicalReference": "main-site/pages/owner-hub/hero-laptop.css",
+      "canonicalSha256": "4d092d1301257b5f197a31f6ec0461afbd8643687871f7c9b8bdb3d883bbe1a6"
+    },
+    {
+      "source": "sobstvenniki-uzel/_site/shared/layout-gutters.css",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "css/shared-layout-gutters.css",
+      "sourceSha256": "9c7ccfabdd5541cf007cac9a40fe23131f1fb2f28964c529d9e6f7bac9851bb1",
+      "canonicalReference": "main-site/pages/owner-hub/_site/shared/layout-gutters.css",
+      "canonicalSha256": "9c7ccfabdd5541cf007cac9a40fe23131f1fb2f28964c529d9e6f7bac9851bb1"
+    },
+    {
+      "source": "sobstvenniki-uzel/_site/shared/page-breadcrumbs.css",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "css/shared-page-breadcrumbs.css",
+      "sourceSha256": "7a58ed93dc94357053343f42781a513a93b66b3f6c61f0f9a6c0e26bcaef7d30",
+      "canonicalReference": "main-site/pages/owner-hub/_site/shared/page-breadcrumbs.css",
+      "canonicalSha256": "7a58ed93dc94357053343f42781a513a93b66b3f6c61f0f9a6c0e26bcaef7d30"
+    },
+    {
+      "source": "sobstvenniki-uzel/_site/shared/page-breadcrumbs.js",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "js/shared-page-breadcrumbs.js",
+      "sourceSha256": "8f0beb0a5b435ede64e6ea9d030fa0e180d55eb235b9b9fd3b4d784857280e02",
+      "canonicalReference": "main-site/pages/owner-hub/_site/shared/page-breadcrumbs.js",
+      "canonicalSha256": "8f0beb0a5b435ede64e6ea9d030fa0e180d55eb235b9b9fd3b4d784857280e02"
+    },
+    {
+      "source": "sobstvenniki-uzel/_site/shared/footer-links.css",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "css/shared-footer-links.css",
+      "sourceSha256": "454a2301171e3882b500b819aa9bb46dcc67280c90bf0f4cd73729485a6b0066",
+      "canonicalReference": "main-site/pages/owner-hub/_site/shared/footer-links.css",
+      "canonicalSha256": "454a2301171e3882b500b819aa9bb46dcc67280c90bf0f4cd73729485a6b0066"
+    },
+    {
+      "source": "sobstvenniki-uzel/_site/shared/owner-header.css",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "css/shared-owner-header.css",
+      "sourceSha256": "840ead018f62f399165a9146de64244d0192349f38060de2d69232cccff97daa",
+      "canonicalReference": "main-site/pages/owner-hub/_site/shared/owner-header.css",
+      "canonicalSha256": "840ead018f62f399165a9146de64244d0192349f38060de2d69232cccff97daa"
+    },
+    {
+      "source": "sobstvenniki-uzel/media-reference.css",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "css/media-reference.css",
+      "sourceSha256": "108763d774ad2bd6cf0275acb84fc8dead0a15afc908015758f8ed1e37771355",
+      "canonicalReference": "main-site/pages/owner-hub/media-reference.css",
+      "canonicalSha256": "108763d774ad2bd6cf0275acb84fc8dead0a15afc908015758f8ed1e37771355"
+    },
+    {
+      "source": "sobstvenniki-uzel/media-header.css",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "css/media-header.css",
+      "sourceSha256": "5dec0c68563d19025d56563c3118cb64725c2e551b135d1b67e8505d9713b941",
+      "canonicalReference": "main-site/pages/owner-hub/media-header.css",
+      "canonicalSha256": "5dec0c68563d19025d56563c3118cb64725c2e551b135d1b67e8505d9713b941"
+    },
+    {
+      "source": "sobstvenniki-uzel/hero.css",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "css/hero.css",
+      "sourceSha256": "002bf2d2c75f7ec115686583aaf4c007c82f0a93884dcef8ef52570cf22ae81d",
+      "canonicalReference": "main-site/pages/owner-hub/hero.css",
+      "canonicalSha256": "002bf2d2c75f7ec115686583aaf4c007c82f0a93884dcef8ef52570cf22ae81d"
+    },
+    {
+      "source": "sobstvenniki-uzel/_site/exact-2026-10-21/home-owner-form.css",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "css/home-home-owner-form.css",
+      "sourceSha256": "5312ef62e68fefcb95a3c1f7c4cc6eba0b4fcf34cbe71ebeefd06fecb9a6a408",
+      "canonicalReference": "main-site/pages/owner-hub/_site/exact-2026-10-21/home-owner-form.css",
+      "canonicalSha256": "5312ef62e68fefcb95a3c1f7c4cc6eba0b4fcf34cbe71ebeefd06fecb9a6a408"
+    },
+    {
+      "source": "sobstvenniki-uzel/_site/shared/expert-dialog.css",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "css/shared-expert-dialog.css",
+      "sourceSha256": "59427a1afb5c95f9eb477aa6c69aa38564f4c2e9439c85e31b57f86cf42af483",
+      "canonicalReference": "main-site/pages/owner-hub/_site/shared/expert-dialog.css",
+      "canonicalSha256": "59427a1afb5c95f9eb477aa6c69aa38564f4c2e9439c85e31b57f86cf42af483"
+    },
+    {
+      "source": "sobstvenniki-uzel/owner-hub.css",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "css/owner-hub.css",
+      "sourceSha256": "51555f0b77ebcf5b0be958faaf0ea3a3ea085c9ae0579f89f1491d41f427f62d",
+      "canonicalReference": "main-site/pages/owner-hub/owner-hub.css",
+      "canonicalSha256": "51555f0b77ebcf5b0be958faaf0ea3a3ea085c9ae0579f89f1491d41f427f62d"
+    },
+    {
+      "source": "sobstvenniki-uzel/assets/editorial/hero.webp",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "assets/editorial/hero.webp",
+      "sourceSha256": "a5273ab51dc83c3eaedabe8ed2d7ecf5fcedc66859fb3047ba9a8df2e0a291c6",
+      "canonicalReference": "main-site/pages/owner-hub/assets/editorial/hero.webp",
+      "canonicalSha256": "a5273ab51dc83c3eaedabe8ed2d7ecf5fcedc66859fb3047ba9a8df2e0a291c6"
+    },
+    {
+      "source": "sobstvenniki-uzel/assets/editorial/service-city.webp",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "assets/editorial/service-city.webp",
+      "sourceSha256": "ed9dcf05b37513db963ea49b59588a6b5f0a4127913df385c8403c584338ece1",
+      "canonicalReference": "main-site/pages/owner-hub/assets/editorial/service-city.webp",
+      "canonicalSha256": "ed9dcf05b37513db963ea49b59588a6b5f0a4127913df385c8403c584338ece1"
+    },
+    {
+      "source": "sobstvenniki-uzel/assets/editorial/service-country.webp",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "assets/editorial/service-country.webp",
+      "sourceSha256": "8d5e96001f2d07f6b7bf99e0739a824c980b2d937c0689ee9702c9316d5f7a3a",
+      "canonicalReference": "main-site/pages/owner-hub/assets/editorial/service-country.webp",
+      "canonicalSha256": "8d5e96001f2d07f6b7bf99e0739a824c980b2d937c0689ee9702c9316d5f7a3a"
+    },
+    {
+      "source": "sobstvenniki-uzel/assets/editorial/service-commercial.webp",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "assets/editorial/service-commercial.webp",
+      "sourceSha256": "8d302ab9570ab38d0f4e04163381730eebcb49a1d7eb6cc3e20b69ac9c279fe2",
+      "canonicalReference": "main-site/pages/owner-hub/assets/editorial/service-commercial.webp",
+      "canonicalSha256": "8d302ab9570ab38d0f4e04163381730eebcb49a1d7eb6cc3e20b69ac9c279fe2"
+    },
+    {
+      "source": "sobstvenniki-uzel/assets/editorial/service-rent.webp",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "assets/editorial/service-rent.webp",
+      "sourceSha256": "6618f0f5d98c4b09bb5bba13cebbcf1ad7cbb363ec36e3727456f75871f7d5a5",
+      "canonicalReference": "main-site/pages/owner-hub/assets/editorial/service-rent.webp",
+      "canonicalSha256": "6618f0f5d98c4b09bb5bba13cebbcf1ad7cbb363ec36e3727456f75871f7d5a5"
+    },
+    {
+      "source": "sobstvenniki-uzel/assets/editorial/strategy.webp",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "assets/editorial/strategy.webp",
+      "sourceSha256": "bb1e8af3249843e2760562027648702a32224a926d492cfa001ddd65ebcc35e6",
+      "canonicalReference": "main-site/pages/owner-hub/assets/editorial/strategy.webp",
+      "canonicalSha256": "bb1e8af3249843e2760562027648702a32224a926d492cfa001ddd65ebcc35e6"
+    },
+    {
+      "source": "sobstvenniki-uzel/assets/menu-featured-01.jpg",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "assets/menu-featured-01.jpg",
+      "sourceSha256": "c5384c30d421ad705b43c8eb3dac7d16187ff87eb67392232fb15fa995980a7e",
+      "canonicalReference": "main-site/pages/owner-hub/assets/menu-featured-01.jpg",
+      "canonicalSha256": "c5384c30d421ad705b43c8eb3dac7d16187ff87eb67392232fb15fa995980a7e"
+    },
+    {
+      "source": "sobstvenniki-uzel/assets/menu-featured-02.jpg",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "assets/menu-featured-02.jpg",
+      "sourceSha256": "7781fce4e8048ef743e425d296b2437674b6dc3e1d3684da098beb3afc695357",
+      "canonicalReference": "main-site/pages/owner-hub/assets/menu-featured-02.jpg",
+      "canonicalSha256": "7781fce4e8048ef743e425d296b2437674b6dc3e1d3684da098beb3afc695357"
+    },
+    {
+      "source": "sobstvenniki-uzel/_site/shared/anchor-navigation.js",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "js/shared-anchor-navigation.js",
+      "sourceSha256": "d42478c6de2973d4261daac172ae08634f4a3ba39bf8cd3ce617ad1f719e1ca9",
+      "canonicalReference": "main-site/pages/owner-hub/_site/shared/anchor-navigation.js",
+      "canonicalSha256": "d42478c6de2973d4261daac172ae08634f4a3ba39bf8cd3ce617ad1f719e1ca9"
+    },
+    {
+      "source": "sobstvenniki-uzel/media-header.js",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "js/media-header.js",
+      "sourceSha256": "9434e924fd46edf2b97a3d9d1473505052dd64b4c5d8f3c9419baea0cc52449c",
+      "canonicalReference": "main-site/pages/owner-hub/media-header.js",
+      "canonicalSha256": "9434e924fd46edf2b97a3d9d1473505052dd64b4c5d8f3c9419baea0cc52449c"
+    },
+    {
+      "source": "sobstvenniki-uzel/_site/shared/expert-dialog.js",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "js/shared-expert-dialog.js",
+      "sourceSha256": "e1bdeb770940921c414e65a82ed5e0343295d97870cb2b0f74c59f51065071a2",
+      "canonicalReference": "main-site/pages/owner-hub/_site/shared/expert-dialog.js",
+      "canonicalSha256": "e1bdeb770940921c414e65a82ed5e0343295d97870cb2b0f74c59f51065071a2"
+    },
+    {
+      "source": "sobstvenniki-uzel/_site/shared/assets/modal-ruslan-organic.webp",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "assets/shared/modal-ruslan-organic.webp",
+      "sourceSha256": "6bbaa8e1df83e7d5eda42c83d174e1f0177a8cbb5698bd5ec01ee3602e8f84aa",
+      "canonicalReference": "main-site/pages/owner-hub/_site/shared/assets/modal-ruslan-organic.webp",
+      "canonicalSha256": "6bbaa8e1df83e7d5eda42c83d174e1f0177a8cbb5698bd5ec01ee3602e8f84aa"
+    },
+    {
+      "source": "brand/barn-estate/logo.svg",
+      "repository": "daniilterekh-prog/barnes-assets",
+      "file": "assets/brand/logo.svg",
+      "sourceSha256": "9b2d8c1a7d4d213587828c6bdf6592a37113a388fedc1b58211534d8cb1e7123",
+      "canonicalReference": null,
+      "canonicalSha256": null
+    },
+    {
+      "source": "sobstvenniki-uzel/_site/fonts/TildaSans-Light.woff2",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "assets/fonts/TildaSans-Light.woff2",
+      "sourceSha256": "f0f2c165784c72343618a7c2cbde00e45dbb9b09af5149984792f280cac9642e",
+      "canonicalReference": "main-site/pages/owner-hub/_site/fonts/TildaSans-Light.woff2",
+      "canonicalSha256": "f0f2c165784c72343618a7c2cbde00e45dbb9b09af5149984792f280cac9642e"
+    },
+    {
+      "source": "sobstvenniki-uzel/_site/fonts/TildaSans-Regular.woff2",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "assets/fonts/TildaSans-Regular.woff2",
+      "sourceSha256": "2670dad44ca6c2a1b9bbdbf1af6d8db9173f2dbe31604e80bdf9599b55047d41",
+      "canonicalReference": "main-site/pages/owner-hub/_site/fonts/TildaSans-Regular.woff2",
+      "canonicalSha256": "2670dad44ca6c2a1b9bbdbf1af6d8db9173f2dbe31604e80bdf9599b55047d41"
+    },
+    {
+      "source": "sobstvenniki-uzel/_site/fonts/TildaSans-Medium.woff2",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "assets/fonts/TildaSans-Medium.woff2",
+      "sourceSha256": "f716269e361f466570f37bc920988c619ddc8a7828c5949c1c56a731a320ab47",
+      "canonicalReference": "main-site/pages/owner-hub/_site/fonts/TildaSans-Medium.woff2",
+      "canonicalSha256": "f716269e361f466570f37bc920988c619ddc8a7828c5949c1c56a731a320ab47"
+    },
+    {
+      "source": "pictures/floating-expert/old-money-interior.webp",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "assets/shared/old-money-interior.webp",
+      "sourceSha256": "9509f5dd4efa3674e55b1ca7c6689298da37c3ba47588c98f1a9e6f1420aeb88",
+      "canonicalReference": null,
+      "canonicalSha256": null
+    },
+    {
+      "source": "sobstvenniki-uzel/assets/fonts/TildaSans-Light.woff2",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "assets/fonts/TildaSans-Light-f0f2c165.woff2",
+      "sourceSha256": "f0f2c165784c72343618a7c2cbde00e45dbb9b09af5149984792f280cac9642e",
+      "canonicalReference": "main-site/pages/owner-hub/assets/fonts/TildaSans-Light.woff2",
+      "canonicalSha256": "f0f2c165784c72343618a7c2cbde00e45dbb9b09af5149984792f280cac9642e"
+    },
+    {
+      "source": "sobstvenniki-uzel/assets/fonts/TildaSans-Regular.woff2",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "assets/fonts/TildaSans-Regular-2670dad4.woff2",
+      "sourceSha256": "2670dad44ca6c2a1b9bbdbf1af6d8db9173f2dbe31604e80bdf9599b55047d41",
+      "canonicalReference": "main-site/pages/owner-hub/assets/fonts/TildaSans-Regular.woff2",
+      "canonicalSha256": "2670dad44ca6c2a1b9bbdbf1af6d8db9173f2dbe31604e80bdf9599b55047d41"
+    },
+    {
+      "source": "sobstvenniki-uzel/assets/fonts/TildaSans-Medium.woff2",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "assets/fonts/TildaSans-Medium-f716269e.woff2",
+      "sourceSha256": "f716269e361f466570f37bc920988c619ddc8a7828c5949c1c56a731a320ab47",
+      "canonicalReference": "main-site/pages/owner-hub/assets/fonts/TildaSans-Medium.woff2",
+      "canonicalSha256": "f716269e361f466570f37bc920988c619ddc8a7828c5949c1c56a731a320ab47"
+    },
+    {
+      "source": "sobstvenniki-uzel/assets/fonts/TildaSans-Semibold.woff2",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "assets/fonts/TildaSans-Semibold.woff2",
+      "sourceSha256": "3814f8c444073262523050f3554c6f09cb49353e1f6fdc22a3561d354a231439",
+      "canonicalReference": "main-site/pages/owner-hub/assets/fonts/TildaSans-Semibold.woff2",
+      "canonicalSha256": "3814f8c444073262523050f3554c6f09cb49353e1f6fdc22a3561d354a231439"
+    },
+    {
+      "source": "sobstvenniki-uzel/assets/fonts/TildaSans-Bold.woff2",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "assets/fonts/TildaSans-Bold.woff2",
+      "sourceSha256": "a2690df6fe8348066df79e3a3421a3a9bc0b058cc536f3d846f782ea5337afec",
+      "canonicalReference": "main-site/pages/owner-hub/assets/fonts/TildaSans-Bold.woff2",
+      "canonicalSha256": "a2690df6fe8348066df79e3a3421a3a9bc0b058cc536f3d846f782ea5337afec"
+    },
+    {
+      "source": "sobstvenniki-uzel/assets/fonts/TildaSans-ExtraBold.woff2",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "assets/fonts/TildaSans-ExtraBold.woff2",
+      "sourceSha256": "726a3a878465a590443308ea9e14459ab5943f699cff4887c844af4ed76ce577",
+      "canonicalReference": "main-site/pages/owner-hub/assets/fonts/TildaSans-ExtraBold.woff2",
+      "canonicalSha256": "726a3a878465a590443308ea9e14459ab5943f699cff4887c844af4ed76ce577"
+    },
+    {
+      "source": "sobstvenniki-uzel/assets/fonts/TildaSans-Black.woff2",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "assets/fonts/TildaSans-Black.woff2",
+      "sourceSha256": "73abed6708c43912dbd5c2760147f72462887ccd803522a1486209ca1e97031a",
+      "canonicalReference": "main-site/pages/owner-hub/assets/fonts/TildaSans-Black.woff2",
+      "canonicalSha256": "73abed6708c43912dbd5c2760147f72462887ccd803522a1486209ca1e97031a"
+    },
+    {
+      "source": "sobstvenniki-uzel/assets/modal-request.webp",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "assets/modal-request.webp",
+      "sourceSha256": "cb1ac940c0a5bc83fa9285b6fd4060c10d7ca2b177f73b4d9404a1e4c9210d17",
+      "canonicalReference": "main-site/pages/owner-hub/assets/modal-request.webp",
+      "canonicalSha256": "cb1ac940c0a5bc83fa9285b6fd4060c10d7ca2b177f73b4d9404a1e4c9210d17"
+    },
+    {
+      "source": "sobstvenniki-uzel/assets/floating-expert-bg.webp",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "assets/floating-expert-bg.webp",
+      "sourceSha256": "9509f5dd4efa3674e55b1ca7c6689298da37c3ba47588c98f1a9e6f1420aeb88",
+      "canonicalReference": "main-site/pages/owner-hub/assets/floating-expert-bg.webp",
+      "canonicalSha256": "9509f5dd4efa3674e55b1ca7c6689298da37c3ba47588c98f1a9e6f1420aeb88"
+    },
+    {
+      "source": "sobstvenniki-uzel/_site/pictures/office-contact/whatsapp.svg",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "assets/shared/whatsapp.svg",
+      "sourceSha256": "3e197e0e1f3e679ee09823c75e1c7bad3a19da9bd1ba01df395268b9ae91816f",
+      "canonicalReference": "main-site/pages/owner-hub/_site/pictures/office-contact/whatsapp.svg",
+      "canonicalSha256": "3e197e0e1f3e679ee09823c75e1c7bad3a19da9bd1ba01df395268b9ae91816f"
+    },
+    {
+      "source": "sobstvenniki-uzel/_site/pictures/office-contact/max.svg",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "assets/shared/max.svg",
+      "sourceSha256": "5caa61a4b0731d0d89421b4fb24f41433025e5aea59155a14cf3a3fada6c9174",
+      "canonicalReference": "main-site/pages/owner-hub/_site/pictures/office-contact/max.svg",
+      "canonicalSha256": "5caa61a4b0731d0d89421b4fb24f41433025e5aea59155a14cf3a3fada6c9174"
+    },
+    {
+      "source": "sobstvenniki-uzel/_site/pictures/office-contact/telegram.svg",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "assets/shared/telegram.svg",
+      "sourceSha256": "4435c9a57e165a1c3b7f27e0b5b11b82b10d674ea4fff7f6748cb67b7fcb994e",
+      "canonicalReference": "main-site/pages/owner-hub/_site/pictures/office-contact/telegram.svg",
+      "canonicalSha256": "4435c9a57e165a1c3b7f27e0b5b11b82b10d674ea4fff7f6748cb67b7fcb994e"
+    },
+    {
+      "source": "sobstvenniki-uzel/assets/ruslan.webp",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "assets/ruslan.webp",
+      "sourceSha256": "4464b6998f60131d99ee19b3887a776b896162ce4cbbf1cefd4bb7dcbf7a3986",
+      "canonicalReference": "main-site/pages/owner-hub/assets/ruslan.webp",
+      "canonicalSha256": "4464b6998f60131d99ee19b3887a776b896162ce4cbbf1cefd4bb7dcbf7a3986"
+    },
+    {
+      "source": "sobstvenniki-uzel/assets/editorial/advantages-panorama.webp",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "assets/editorial/advantages-panorama.webp",
+      "sourceSha256": "c5b57dc1ef040749a6ecf363b3cc6a19fe81ed68abad4be38e52e31e1c5f8ab1",
+      "canonicalReference": "main-site/pages/owner-hub/assets/editorial/advantages-panorama.webp",
+      "canonicalSha256": "c5b57dc1ef040749a6ecf363b3cc6a19fe81ed68abad4be38e52e31e1c5f8ab1"
+    },
+    {
+      "source": "sobstvenniki-uzel/_site/shared/assets/ruslan-floating-media.webp",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "assets/shared/ruslan-floating-media.webp",
+      "sourceSha256": "6bbaa8e1df83e7d5eda42c83d174e1f0177a8cbb5698bd5ec01ee3602e8f84aa",
+      "canonicalReference": "main-site/pages/owner-hub/_site/shared/assets/ruslan-floating-media.webp",
+      "canonicalSha256": "6bbaa8e1df83e7d5eda42c83d174e1f0177a8cbb5698bd5ec01ee3602e8f84aa"
+    }
+  ],
+  "references": [
+    {
+      "owner": "sobstvenniki-uzel/source.css",
+      "before": "assets/fonts/TildaSans-Light.woff2",
+      "after": "../assets/fonts/TildaSans-Light-f0f2c165.woff2"
+    },
+    {
+      "owner": "sobstvenniki-uzel/source.css",
+      "before": "assets/fonts/TildaSans-Regular.woff2",
+      "after": "../assets/fonts/TildaSans-Regular-2670dad4.woff2"
+    },
+    {
+      "owner": "sobstvenniki-uzel/source.css",
+      "before": "assets/fonts/TildaSans-Medium.woff2",
+      "after": "../assets/fonts/TildaSans-Medium-f716269e.woff2"
+    },
+    {
+      "owner": "sobstvenniki-uzel/source.css",
+      "before": "assets/fonts/TildaSans-Semibold.woff2",
+      "after": "../assets/fonts/TildaSans-Semibold.woff2"
+    },
+    {
+      "owner": "sobstvenniki-uzel/source.css",
+      "before": "assets/fonts/TildaSans-Bold.woff2",
+      "after": "../assets/fonts/TildaSans-Bold.woff2"
+    },
+    {
+      "owner": "sobstvenniki-uzel/source.css",
+      "before": "assets/fonts/TildaSans-ExtraBold.woff2",
+      "after": "../assets/fonts/TildaSans-ExtraBold.woff2"
+    },
+    {
+      "owner": "sobstvenniki-uzel/source.css",
+      "before": "assets/fonts/TildaSans-Black.woff2",
+      "after": "../assets/fonts/TildaSans-Black.woff2"
+    },
+    {
+      "owner": "sobstvenniki-uzel/source.css",
+      "before": "assets/modal-request.webp",
+      "after": "../assets/modal-request.webp"
+    },
+    {
+      "owner": "sobstvenniki-uzel/source.css",
+      "before": "assets/floating-expert-bg.webp",
+      "after": "../assets/floating-expert-bg.webp"
+    },
+    {
+      "owner": "sobstvenniki-uzel/owner-sale.js",
+      "before": "_site/shared/owner-header.css?v=e8e698f4b57f",
+      "after": "../css/shared-owner-header.css?v=e8e698f4b57f"
+    },
+    {
+      "owner": "sobstvenniki-uzel/owner-sale.js",
+      "before": "_site/pictures/office-contact/whatsapp.svg",
+      "after": "../assets/shared/whatsapp.svg"
+    },
+    {
+      "owner": "sobstvenniki-uzel/owner-sale.js",
+      "before": "_site/pictures/office-contact/max.svg",
+      "after": "../assets/shared/max.svg"
+    },
+    {
+      "owner": "sobstvenniki-uzel/owner-sale.js",
+      "before": "_site/pictures/office-contact/telegram.svg",
+      "after": "../assets/shared/telegram.svg"
+    },
+    {
+      "owner": "sobstvenniki-uzel/owner-sale.js",
+      "before": "_site/pictures/office-contact/whatsapp.svg",
+      "after": "../assets/shared/whatsapp.svg"
+    },
+    {
+      "owner": "sobstvenniki-uzel/owner-sale.js",
+      "before": "_site/pictures/office-contact/max.svg",
+      "after": "../assets/shared/max.svg"
+    },
+    {
+      "owner": "sobstvenniki-uzel/owner-sale.js",
+      "before": "_site/pictures/office-contact/telegram.svg",
+      "after": "../assets/shared/telegram.svg"
+    },
+    {
+      "owner": "sobstvenniki-uzel/owner-sale.js",
+      "before": "assets/ruslan.webp",
+      "after": "../assets/ruslan.webp"
+    },
+    {
+      "owner": "sobstvenniki-uzel/_site/shared/owner-panorama.js",
+      "before": "../../assets/editorial/advantages-panorama.webp",
+      "after": "../assets/editorial/advantages-panorama.webp"
+    },
+    {
+      "owner": "sobstvenniki-uzel/_site/shared/expert-avatar.js",
+      "before": "assets/ruslan-floating-media.webp",
+      "after": "../assets/shared/ruslan-floating-media.webp"
+    },
+    {
+      "owner": "sobstvenniki-uzel/index.html",
+      "before": "_site/fonts/TildaSans-Light.woff2",
+      "after": "../assets/fonts/TildaSans-Light.woff2"
+    },
+    {
+      "owner": "sobstvenniki-uzel/index.html",
+      "before": "_site/fonts/TildaSans-Regular.woff2",
+      "after": "../assets/fonts/TildaSans-Regular.woff2"
+    },
+    {
+      "owner": "sobstvenniki-uzel/index.html",
+      "before": "_site/fonts/TildaSans-Medium.woff2",
+      "after": "../assets/fonts/TildaSans-Medium.woff2"
+    },
+    {
+      "owner": "sobstvenniki-uzel/index.html",
+      "before": "/main-site/shared/pictures/floating-expert/old-money-interior.webp",
+      "after": "../assets/shared/old-money-interior.webp"
+    },
+    {
+      "owner": "sobstvenniki-uzel/index.html",
+      "before": "source.css?v=3c6aab569051",
+      "after": "../css/source.css?v=3c6aab569051"
+    },
+    {
+      "owner": "sobstvenniki-uzel/index.html",
+      "before": "owner-sale.css?v=66d7d1042786",
+      "after": "../css/owner-sale.css?v=66d7d1042786"
+    },
+    {
+      "owner": "sobstvenniki-uzel/index.html",
+      "before": "https://front.barnes.vsavr.ru/favicon.ico",
+      "after": "../assets/shared/favicon.ico"
+    },
+    {
+      "owner": "sobstvenniki-uzel/index.html",
+      "before": "https://front.barnes.vsavr.ru/favicon.ico",
+      "after": "../assets/shared/favicon.ico"
+    },
+    {
+      "owner": "sobstvenniki-uzel/index.html",
+      "before": "https://front.barnes.vsavr.ru/favicon.ico",
+      "after": "../assets/shared/favicon.ico"
+    },
+    {
+      "owner": "sobstvenniki-uzel/index.html",
+      "before": "owner-sale.js?v=eb2e94aa0238",
+      "after": "../js/owner-sale.js?v=eb2e94aa0238"
+    },
+    {
+      "owner": "sobstvenniki-uzel/index.html",
+      "before": "_site/shared/owner-mechanics.css?v=eb7ed42c9009",
+      "after": "../css/shared-owner-mechanics.css?v=eb7ed42c9009"
+    },
+    {
+      "owner": "sobstvenniki-uzel/index.html",
+      "before": "_site/shared/owner-panorama.css?v=7dea4e54a353",
+      "after": "../css/shared-owner-panorama.css?v=7dea4e54a353"
+    },
+    {
+      "owner": "sobstvenniki-uzel/index.html",
+      "before": "_site/shared/owner-panorama.js?v=8b10eaf0b79d",
+      "after": "../js/shared-owner-panorama.js?v=8b10eaf0b79d"
+    },
+    {
+      "owner": "sobstvenniki-uzel/index.html",
+      "before": "_site/shared/presentation-mobile.css?v=2aae5b3df683",
+      "after": "../css/shared-presentation-mobile.css?v=2aae5b3df683"
+    },
+    {
+      "owner": "sobstvenniki-uzel/index.html",
+      "before": "_site/shared/anchor-navigation.css?v=fddf6c892c5b",
+      "after": "../css/shared-anchor-navigation.css?v=fddf6c892c5b"
+    },
+    {
+      "owner": "sobstvenniki-uzel/index.html",
+      "before": "_site/shared/expert-avatar.css?v=7a84fccb7131",
+      "after": "../css/shared-expert-avatar.css?v=7a84fccb7131"
+    },
+    {
+      "owner": "sobstvenniki-uzel/index.html",
+      "before": "_site/shared/expert-avatar.js?v=2ded60e46b61",
+      "after": "../js/shared-expert-avatar.js?v=2ded60e46b61"
+    },
+    {
+      "owner": "sobstvenniki-uzel/index.html",
+      "before": "page-kit.css?v=49bc6097d1da",
+      "after": "../css/page-kit.css?v=49bc6097d1da"
+    },
+    {
+      "owner": "sobstvenniki-uzel/index.html",
+      "before": "brand-nowrap.css?v=09ea8dedc25f",
+      "after": "../css/brand-nowrap.css?v=09ea8dedc25f"
+    },
+    {
+      "owner": "sobstvenniki-uzel/index.html",
+      "before": "brand-nowrap.js?v=55c3b91fbb6c",
+      "after": "../js/brand-nowrap.js?v=55c3b91fbb6c"
+    },
+    {
+      "owner": "sobstvenniki-uzel/index.html",
+      "before": "_site/shared/about-home.css?v=7a557a16b660",
+      "after": "../css/shared-about-home.css?v=7a557a16b660"
+    },
+    {
+      "owner": "sobstvenniki-uzel/index.html",
+      "before": "_site/shared/cta-bleed.css?v=d892ba286df8",
+      "after": "../css/shared-cta-bleed.css?v=d892ba286df8"
+    },
+    {
+      "owner": "sobstvenniki-uzel/index.html",
+      "before": "_site/shared/cta-resort.css?v=0fbe5b5ac5d2",
+      "after": "../css/shared-cta-resort.css?v=0fbe5b5ac5d2"
+    },
+    {
+      "owner": "sobstvenniki-uzel/index.html",
+      "before": "_site/shared/slider-controls.css?v=a9d6b5ec1e88",
+      "after": "../css/shared-slider-controls.css?v=a9d6b5ec1e88"
+    },
+    {
+      "owner": "sobstvenniki-uzel/index.html",
+      "before": "_site/shared/slider-controls.js?v=5dc9622e345c",
+      "after": "../js/shared-slider-controls.js?v=5dc9622e345c"
+    },
+    {
+      "owner": "sobstvenniki-uzel/index.html",
+      "before": "_site/shared/card-gaps.css?v=efb542f53c1a",
+      "after": "../css/shared-card-gaps.css?v=efb542f53c1a"
+    },
+    {
+      "owner": "sobstvenniki-uzel/index.html",
+      "before": "_site/shared/services-layout.css?v=d187a06f1b49",
+      "after": "../css/shared-services-layout.css?v=d187a06f1b49"
+    },
+    {
+      "owner": "sobstvenniki-uzel/index.html",
+      "before": "_site/shared/newsletter-home.css?v=14e3d47b57b9",
+      "after": "../css/shared-newsletter-home.css?v=14e3d47b57b9"
+    },
+    {
+      "owner": "sobstvenniki-uzel/index.html",
+      "before": "./hero-laptop.css?v=4d092d130125",
+      "after": "../css/hero-laptop.css?v=4d092d130125"
+    },
+    {
+      "owner": "sobstvenniki-uzel/index.html",
+      "before": "_site/shared/layout-gutters.css?v=9c7ccfabdd55",
+      "after": "../css/shared-layout-gutters.css?v=9c7ccfabdd55"
+    },
+    {
+      "owner": "sobstvenniki-uzel/index.html",
+      "before": "_site/shared/page-breadcrumbs.css?v=7a58ed93dc94",
+      "after": "../css/shared-page-breadcrumbs.css?v=7a58ed93dc94"
+    },
+    {
+      "owner": "sobstvenniki-uzel/index.html",
+      "before": "_site/shared/page-breadcrumbs.js?v=8f0beb0a5b43",
+      "after": "../js/shared-page-breadcrumbs.js?v=8f0beb0a5b43"
+    },
+    {
+      "owner": "sobstvenniki-uzel/index.html",
+      "before": "_site/shared/footer-links.css?v=454a2301171e",
+      "after": "../css/shared-footer-links.css?v=454a2301171e"
+    },
+    {
+      "owner": "sobstvenniki-uzel/index.html",
+      "before": "_site/shared/owner-header.css?v=840ead018f62",
+      "after": "../css/shared-owner-header.css?v=840ead018f62"
+    },
+    {
+      "owner": "sobstvenniki-uzel/index.html",
+      "before": "./media-reference.css?v=108763d774ad",
+      "after": "../css/media-reference.css?v=108763d774ad"
+    },
+    {
+      "owner": "sobstvenniki-uzel/index.html",
+      "before": "./media-header.css?v=5dec0c68563d",
+      "after": "../css/media-header.css?v=5dec0c68563d"
+    },
+    {
+      "owner": "sobstvenniki-uzel/index.html",
+      "before": "./hero.css?v=002bf2d2c75f",
+      "after": "../css/hero.css?v=002bf2d2c75f"
+    },
+    {
+      "owner": "sobstvenniki-uzel/index.html",
+      "before": "_site/exact-2026-10-21/home-owner-form.css?v=5312ef62e68f",
+      "after": "../css/home-home-owner-form.css?v=5312ef62e68f"
+    },
+    {
+      "owner": "sobstvenniki-uzel/index.html",
+      "before": "_site/shared/expert-dialog.css?v=59427a1afb5c",
+      "after": "../css/shared-expert-dialog.css?v=59427a1afb5c"
+    },
+    {
+      "owner": "sobstvenniki-uzel/index.html",
+      "before": "owner-hub.css?v=51555f0b77eb",
+      "after": "../css/owner-hub.css?v=51555f0b77eb"
+    },
+    {
+      "owner": "sobstvenniki-uzel/index.html",
+      "before": "https://daniilterekh-prog.github.io/barnes-assets/brand/barn-estate/logo.svg",
+      "after": "../assets/brand/logo.svg"
+    },
+    {
+      "owner": "sobstvenniki-uzel/index.html",
+      "before": "https://daniilterekh-prog.github.io/barnes-assets/brand/barn-estate/logo.svg",
+      "after": "../assets/brand/logo.svg"
+    },
+    {
+      "owner": "sobstvenniki-uzel/index.html",
+      "before": "assets/editorial/hero.webp",
+      "after": "../assets/editorial/hero.webp"
+    },
+    {
+      "owner": "sobstvenniki-uzel/index.html",
+      "before": "assets/editorial/service-city.webp",
+      "after": "../assets/editorial/service-city.webp"
+    },
+    {
+      "owner": "sobstvenniki-uzel/index.html",
+      "before": "assets/editorial/service-country.webp",
+      "after": "../assets/editorial/service-country.webp"
+    },
+    {
+      "owner": "sobstvenniki-uzel/index.html",
+      "before": "assets/editorial/service-commercial.webp",
+      "after": "../assets/editorial/service-commercial.webp"
+    },
+    {
+      "owner": "sobstvenniki-uzel/index.html",
+      "before": "assets/editorial/service-rent.webp",
+      "after": "../assets/editorial/service-rent.webp"
+    },
+    {
+      "owner": "sobstvenniki-uzel/index.html",
+      "before": "assets/editorial/strategy.webp",
+      "after": "../assets/editorial/strategy.webp"
+    },
+    {
+      "owner": "sobstvenniki-uzel/index.html",
+      "before": "https://daniilterekh-prog.github.io/barnes-assets/brand/barn-estate/logo.svg",
+      "after": "../assets/brand/logo.svg"
+    },
+    {
+      "owner": "sobstvenniki-uzel/index.html",
+      "before": "assets/menu-featured-01.jpg",
+      "after": "../assets/menu-featured-01.jpg"
+    },
+    {
+      "owner": "sobstvenniki-uzel/index.html",
+      "before": "assets/menu-featured-02.jpg",
+      "after": "../assets/menu-featured-02.jpg"
+    },
+    {
+      "owner": "sobstvenniki-uzel/index.html",
+      "before": "_site/shared/anchor-navigation.js?v=d42478c6de29",
+      "after": "../js/shared-anchor-navigation.js?v=d42478c6de29"
+    },
+    {
+      "owner": "sobstvenniki-uzel/index.html",
+      "before": "./media-header.js?v=9434e924fd46",
+      "after": "../js/media-header.js?v=9434e924fd46"
+    },
+    {
+      "owner": "sobstvenniki-uzel/index.html",
+      "before": "_site/shared/expert-dialog.js?v=e1bdeb770940",
+      "after": "../js/shared-expert-dialog.js?v=e1bdeb770940"
+    },
+    {
+      "owner": "sobstvenniki-uzel/index.html",
+      "before": "_site/shared/assets/modal-ruslan-organic.webp",
+      "after": "../assets/shared/modal-ruslan-organic.webp"
+    }
+  ],
+  "outputs": [
+    {
+      "file": "assets/LICENSES.md",
+      "bytes": 835,
+      "sha256": "5177c8aaf5ba8c0e8c966ff508d26207be41cb609ba9011da28dbac53ead5992"
+    },
+    {
+      "file": "assets/brand/logo.svg",
+      "bytes": 6644,
+      "sha256": "9b2d8c1a7d4d213587828c6bdf6592a37113a388fedc1b58211534d8cb1e7123"
+    },
+    {
+      "file": "assets/editorial/advantages-panorama.webp",
+      "bytes": 246498,
+      "sha256": "c5b57dc1ef040749a6ecf363b3cc6a19fe81ed68abad4be38e52e31e1c5f8ab1"
+    },
+    {
+      "file": "assets/editorial/hero.webp",
+      "bytes": 172540,
+      "sha256": "a5273ab51dc83c3eaedabe8ed2d7ecf5fcedc66859fb3047ba9a8df2e0a291c6"
+    },
+    {
+      "file": "assets/editorial/service-city.webp",
+      "bytes": 99170,
+      "sha256": "ed9dcf05b37513db963ea49b59588a6b5f0a4127913df385c8403c584338ece1"
+    },
+    {
+      "file": "assets/editorial/service-commercial.webp",
+      "bytes": 201874,
+      "sha256": "8d302ab9570ab38d0f4e04163381730eebcb49a1d7eb6cc3e20b69ac9c279fe2"
+    },
+    {
+      "file": "assets/editorial/service-country.webp",
+      "bytes": 288882,
+      "sha256": "8d5e96001f2d07f6b7bf99e0739a824c980b2d937c0689ee9702c9316d5f7a3a"
+    },
+    {
+      "file": "assets/editorial/service-rent.webp",
+      "bytes": 179398,
+      "sha256": "6618f0f5d98c4b09bb5bba13cebbcf1ad7cbb363ec36e3727456f75871f7d5a5"
+    },
+    {
+      "file": "assets/editorial/strategy.webp",
+      "bytes": 182676,
+      "sha256": "bb1e8af3249843e2760562027648702a32224a926d492cfa001ddd65ebcc35e6"
+    },
+    {
+      "file": "assets/floating-expert-bg.webp",
+      "bytes": 12644,
+      "sha256": "9509f5dd4efa3674e55b1ca7c6689298da37c3ba47588c98f1a9e6f1420aeb88"
+    },
+    {
+      "file": "assets/fonts/TildaSans-Black.woff2",
+      "bytes": 57952,
+      "sha256": "73abed6708c43912dbd5c2760147f72462887ccd803522a1486209ca1e97031a"
+    },
+    {
+      "file": "assets/fonts/TildaSans-Bold.woff2",
+      "bytes": 63216,
+      "sha256": "a2690df6fe8348066df79e3a3421a3a9bc0b058cc536f3d846f782ea5337afec"
+    },
+    {
+      "file": "assets/fonts/TildaSans-ExtraBold.woff2",
+      "bytes": 62820,
+      "sha256": "726a3a878465a590443308ea9e14459ab5943f699cff4887c844af4ed76ce577"
+    },
+    {
+      "file": "assets/fonts/TildaSans-Light-f0f2c165.woff2",
+      "bytes": 63952,
+      "sha256": "f0f2c165784c72343618a7c2cbde00e45dbb9b09af5149984792f280cac9642e"
+    },
+    {
+      "file": "assets/fonts/TildaSans-Light.woff2",
+      "bytes": 63952,
+      "sha256": "f0f2c165784c72343618a7c2cbde00e45dbb9b09af5149984792f280cac9642e"
+    },
+    {
+      "file": "assets/fonts/TildaSans-Medium-f716269e.woff2",
+      "bytes": 62556,
+      "sha256": "f716269e361f466570f37bc920988c619ddc8a7828c5949c1c56a731a320ab47"
+    },
+    {
+      "file": "assets/fonts/TildaSans-Medium.woff2",
+      "bytes": 62556,
+      "sha256": "f716269e361f466570f37bc920988c619ddc8a7828c5949c1c56a731a320ab47"
+    },
+    {
+      "file": "assets/fonts/TildaSans-Regular-2670dad4.woff2",
+      "bytes": 61636,
+      "sha256": "2670dad44ca6c2a1b9bbdbf1af6d8db9173f2dbe31604e80bdf9599b55047d41"
+    },
+    {
+      "file": "assets/fonts/TildaSans-Regular.woff2",
+      "bytes": 61636,
+      "sha256": "2670dad44ca6c2a1b9bbdbf1af6d8db9173f2dbe31604e80bdf9599b55047d41"
+    },
+    {
+      "file": "assets/fonts/TildaSans-Semibold.woff2",
+      "bytes": 63528,
+      "sha256": "3814f8c444073262523050f3554c6f09cb49353e1f6fdc22a3561d354a231439"
+    },
+    {
+      "file": "assets/licenses/material-icons-LICENSE.txt",
+      "bytes": 11357,
+      "sha256": "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd"
+    },
+    {
+      "file": "assets/menu-featured-01.jpg",
+      "bytes": 264325,
+      "sha256": "c5384c30d421ad705b43c8eb3dac7d16187ff87eb67392232fb15fa995980a7e"
+    },
+    {
+      "file": "assets/menu-featured-02.jpg",
+      "bytes": 374206,
+      "sha256": "7781fce4e8048ef743e425d296b2437674b6dc3e1d3684da098beb3afc695357"
+    },
+    {
+      "file": "assets/modal-request.webp",
+      "bytes": 75360,
+      "sha256": "cb1ac940c0a5bc83fa9285b6fd4060c10d7ca2b177f73b4d9404a1e4c9210d17"
+    },
+    {
+      "file": "assets/ruslan.webp",
+      "bytes": 96154,
+      "sha256": "4464b6998f60131d99ee19b3887a776b896162ce4cbbf1cefd4bb7dcbf7a3986"
+    },
+    {
+      "file": "assets/shared/favicon.ico",
+      "bytes": 59582,
+      "sha256": "2f312a5f919c41bbc6bb97de56d67e6af8abedec12827a749c276e773160dddf"
+    },
+    {
+      "file": "assets/shared/max.svg",
+      "bytes": 72862,
+      "sha256": "5caa61a4b0731d0d89421b4fb24f41433025e5aea59155a14cf3a3fada6c9174"
+    },
+    {
+      "file": "assets/shared/modal-ruslan-organic.webp",
+      "bytes": 210000,
+      "sha256": "6bbaa8e1df83e7d5eda42c83d174e1f0177a8cbb5698bd5ec01ee3602e8f84aa"
+    },
+    {
+      "file": "assets/shared/old-money-interior.webp",
+      "bytes": 12644,
+      "sha256": "9509f5dd4efa3674e55b1ca7c6689298da37c3ba47588c98f1a9e6f1420aeb88"
+    },
+    {
+      "file": "assets/shared/ruslan-floating-media.webp",
+      "bytes": 210000,
+      "sha256": "6bbaa8e1df83e7d5eda42c83d174e1f0177a8cbb5698bd5ec01ee3602e8f84aa"
+    },
+    {
+      "file": "assets/shared/telegram.svg",
+      "bytes": 757,
+      "sha256": "4435c9a57e165a1c3b7f27e0b5b11b82b10d674ea4fff7f6748cb67b7fcb994e"
+    },
+    {
+      "file": "assets/shared/whatsapp.svg",
+      "bytes": 1231,
+      "sha256": "3e197e0e1f3e679ee09823c75e1c7bad3a19da9bd1ba01df395268b9ae91816f"
+    },
+    {
+      "file": "css/brand-nowrap.css",
+      "bytes": 197,
+      "sha256": "09ea8dedc25f5cbc24540b51aba46a441634eb410cec1d4c49a8b2fc479f7967"
+    },
+    {
+      "file": "css/hero-laptop.css",
+      "bytes": 2012,
+      "sha256": "4d092d1301257b5f197a31f6ec0461afbd8643687871f7c9b8bdb3d883bbe1a6"
+    },
+    {
+      "file": "css/hero.css",
+      "bytes": 10382,
+      "sha256": "002bf2d2c75f7ec115686583aaf4c007c82f0a93884dcef8ef52570cf22ae81d"
+    },
+    {
+      "file": "css/home-home-owner-form.css",
+      "bytes": 29398,
+      "sha256": "5312ef62e68fefcb95a3c1f7c4cc6eba0b4fcf34cbe71ebeefd06fecb9a6a408"
+    },
+    {
+      "file": "css/inline-01.css",
+      "bytes": 735,
+      "sha256": "cd2aa284a84e9d2265470803e7c75993b77f89cb445bd3217bc4d4b53160f6bb"
+    },
+    {
+      "file": "css/inline-02.css",
+      "bytes": 343,
+      "sha256": "fab2b81abd821e2f3de9f97199a0f5337ab4577b7f13dbdddc974f28efc69ceb"
+    },
+    {
+      "file": "css/inline-03.css",
+      "bytes": 7560,
+      "sha256": "a046be0b451e1e89942e3a588399617dd02b8e23465d2df84ed22a470e96e574"
+    },
+    {
+      "file": "css/inline-04.css",
+      "bytes": 4745,
+      "sha256": "7ff34ba7e9cdcad00bc036a041f11ea73e96423a848f8fd8b7ea7bc997054b47"
+    },
+    {
+      "file": "css/media-header.css",
+      "bytes": 14311,
+      "sha256": "5dec0c68563d19025d56563c3118cb64725c2e551b135d1b67e8505d9713b941"
+    },
+    {
+      "file": "css/media-reference.css",
+      "bytes": 6203,
+      "sha256": "108763d774ad2bd6cf0275acb84fc8dead0a15afc908015758f8ed1e37771355"
+    },
+    {
+      "file": "css/owner-hub.css",
+      "bytes": 929,
+      "sha256": "51555f0b77ebcf5b0be958faaf0ea3a3ea085c9ae0579f89f1491d41f427f62d"
+    },
+    {
+      "file": "css/owner-sale.css",
+      "bytes": 47159,
+      "sha256": "66d7d1042786b8bc83c2b71e700257bb3603e34bc4eefd4603b60c04211d58d8"
+    },
+    {
+      "file": "css/page-kit.css",
+      "bytes": 13976,
+      "sha256": "49bc6097d1dad04271ffc2fa917400c312b9604432f9c94cde774a84ce35663c"
+    },
+    {
+      "file": "css/shared-about-home.css",
+      "bytes": 7981,
+      "sha256": "7a557a16b6602dc9505d6e0e68607e5f5671ae7be16828b911f841279a8831d5"
+    },
+    {
+      "file": "css/shared-anchor-navigation.css",
+      "bytes": 530,
+      "sha256": "fddf6c892c5be3414dc22056fe00df3b6cfc329e034fb29428f77cb5ab1705ea"
+    },
+    {
+      "file": "css/shared-card-gaps.css",
+      "bytes": 483,
+      "sha256": "efb542f53c1aa677a28f3cf4f8eac15b1ffa0267c209a553465bb7249bb401bc"
+    },
+    {
+      "file": "css/shared-cta-bleed.css",
+      "bytes": 711,
+      "sha256": "d892ba286df8056cbf94809a56c7c03339ab9b88495612d67019ec893dfb804e"
+    },
+    {
+      "file": "css/shared-cta-resort.css",
+      "bytes": 137320,
+      "sha256": "0fbe5b5ac5d2676858a15505195fa8a353d8952f61cdd155fd2eac327ba18eae"
+    },
+    {
+      "file": "css/shared-expert-avatar.css",
+      "bytes": 490,
+      "sha256": "7a84fccb7131d4c9d8cf387e6b1e14333c4c5e371ccbe2222f7a239e34336ce2"
+    },
+    {
+      "file": "css/shared-expert-dialog.css",
+      "bytes": 3116,
+      "sha256": "59427a1afb5c95f9eb477aa6c69aa38564f4c2e9439c85e31b57f86cf42af483"
+    },
+    {
+      "file": "css/shared-footer-links.css",
+      "bytes": 322,
+      "sha256": "454a2301171e3882b500b819aa9bb46dcc67280c90bf0f4cd73729485a6b0066"
+    },
+    {
+      "file": "css/shared-layout-gutters.css",
+      "bytes": 3327,
+      "sha256": "9c7ccfabdd5541cf007cac9a40fe23131f1fb2f28964c529d9e6f7bac9851bb1"
+    },
+    {
+      "file": "css/shared-newsletter-home.css",
+      "bytes": 1306,
+      "sha256": "14e3d47b57b96ed37c4dab0d8f9c833ea1a32f7b0f2357e33230e77189247cf3"
+    },
+    {
+      "file": "css/shared-owner-header.css",
+      "bytes": 28215,
+      "sha256": "840ead018f62f399165a9146de64244d0192349f38060de2d69232cccff97daa"
+    },
+    {
+      "file": "css/shared-owner-mechanics.css",
+      "bytes": 16337,
+      "sha256": "eb7ed42c9009917b5eae82bc7168219f4090ad28c6c752e1c6c9c88bc7513428"
+    },
+    {
+      "file": "css/shared-owner-panorama.css",
+      "bytes": 8171,
+      "sha256": "7dea4e54a3538d40f1164ae25eb5f74355f0cdfaf51b25aec0450678f79f7c5e"
+    },
+    {
+      "file": "css/shared-page-breadcrumbs.css",
+      "bytes": 1558,
+      "sha256": "7a58ed93dc94357053343f42781a513a93b66b3f6c61f0f9a6c0e26bcaef7d30"
+    },
+    {
+      "file": "css/shared-presentation-mobile.css",
+      "bytes": 714,
+      "sha256": "2aae5b3df68322229738c1a50ab41cb0ad005da467bfae2438cc1c6bf66e110e"
+    },
+    {
+      "file": "css/shared-services-layout.css",
+      "bytes": 5909,
+      "sha256": "d187a06f1b490b1c50647a95cda77d9e9e0bf026ecfb65de3ef05212c279bf04"
+    },
+    {
+      "file": "css/shared-slider-controls.css",
+      "bytes": 271,
+      "sha256": "a9d6b5ec1e88e1f25f7fbee31b237064357124f96258faf81b1601b7d26dd6d8"
+    },
+    {
+      "file": "css/source.css",
+      "bytes": 660158,
+      "sha256": "bda6bc0e6910543f780bf75f8a969e69d3569e1b594d16006675a7bec9769baa"
+    },
+    {
+      "file": "data/body-attributes.json",
+      "bytes": 200,
+      "sha256": "d6526dc0fbaa56f203ffee6f888383e78540be07e4cdbe134958033d93718b83"
+    },
+    {
+      "file": "data/editorial-prompts.json",
+      "bytes": 9846,
+      "sha256": "e6c3ed4e3a752a897750b36db6ade02e84bbfaba994d5c017d547a557cab6acb"
+    },
+    {
+      "file": "data/editorial-sources.json",
+      "bytes": 2851,
+      "sha256": "4405a4d0923550edc26393b61841e186ff19595f1ce01df159195f3d5441783d"
+    },
+    {
+      "file": "data/service-links.json",
+      "bytes": 1580,
+      "sha256": "524b9d23bdc63cb873671ec257f5bd1c0f800f9dc5a9481581f06a9d38d1e7d7"
+    },
+    {
+      "file": "html/README.md",
+      "bytes": 405,
+      "sha256": "33ab943c8227693ca5ad58a5ee878c44c5b7ca76492d941b8a94651f0bb77135"
+    },
+    {
+      "file": "html/body.fragment.html",
+      "bytes": 52113,
+      "sha256": "a6221d2c7ff41a601f4d44446c29c73dccfa88b6e8113de52a1d142955b2e2a4"
+    },
+    {
+      "file": "html/head.fragment.html",
+      "bytes": 4229,
+      "sha256": "dd491c9eeec467a524c70e6a74ef6f4b4c2f970e031e454626f5a8605f987821"
+    },
+    {
+      "file": "html/index.html",
+      "bytes": 56422,
+      "sha256": "dcdb6fcbd53a84c8fc50fab92e3014e75a37c8e1c4628bbe15c68e9d5889282c"
+    },
+    {
+      "file": "js/brand-nowrap.js",
+      "bytes": 2269,
+      "sha256": "55c3b91fbb6c5069fa49ee63c7cf5967d85ab5d48006fbe006609f46355ed5fa"
+    },
+    {
+      "file": "js/media-header.js",
+      "bytes": 129074,
+      "sha256": "9434e924fd46edf2b97a3d9d1473505052dd64b4c5d8f3c9419baea0cc52449c"
+    },
+    {
+      "file": "js/owner-sale.js",
+      "bytes": 39968,
+      "sha256": "4547c7a27e8618ecd9c76a7c0867af503d984fe8381bbe296938bd0a9d389d40"
+    },
+    {
+      "file": "js/shared-anchor-navigation.js",
+      "bytes": 1956,
+      "sha256": "d42478c6de2973d4261daac172ae08634f4a3ba39bf8cd3ce617ad1f719e1ca9"
+    },
+    {
+      "file": "js/shared-expert-avatar.js",
+      "bytes": 1501,
+      "sha256": "f34dce94894c534cf0b17a408330ab604df31a7acd75e90178543ea72db3d528"
+    },
+    {
+      "file": "js/shared-expert-dialog.js",
+      "bytes": 12373,
+      "sha256": "e1bdeb770940921c414e65a82ed5e0343295d97870cb2b0f74c59f51065071a2"
+    },
+    {
+      "file": "js/shared-owner-panorama.js",
+      "bytes": 9468,
+      "sha256": "d26f50f24a4c8634809a406d4483ed2f142b34f16f391e61c865d9850ab56ee1"
+    },
+    {
+      "file": "js/shared-page-breadcrumbs.js",
+      "bytes": 4444,
+      "sha256": "8f0beb0a5b435ede64e6ea9d030fa0e180d55eb235b9b9fd3b4d784857280e02"
+    },
+    {
+      "file": "js/shared-slider-controls.js",
+      "bytes": 6139,
+      "sha256": "5dc9622e345c1e142ba7321f5084a9330afc43fe2178dd8d0132234e88c6c22a"
+    }
+  ]
+}

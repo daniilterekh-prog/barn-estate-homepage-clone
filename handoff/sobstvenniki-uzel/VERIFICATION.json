@@ -1,0 +1,209 @@
+{
+  "checkedAt": "2026-11-12T07:44:15.423Z",
+  "packageUrl": "http://127.0.0.1:8796/html/index.html",
+  "sourceUrl": "http://127.0.0.1:8795/sobstvenniki-uzel/",
+  "widths": [
+    {
+      "width": 320,
+      "localResources": true,
+      "browserErrors": 0,
+      "httpErrors": 0,
+      "externalRequests": 0,
+      "postRequests": 0,
+      "overflow": false,
+      "expertDialog": true,
+      "validation": true,
+      "keyboard": true,
+      "tabs": true,
+      "sliderKeyboard": true,
+      "serviceLinks": true
+    },
+    {
+      "width": 390,
+      "localResources": true,
+      "browserErrors": 0,
+      "httpErrors": 0,
+      "externalRequests": 0,
+      "postRequests": 0,
+      "overflow": false,
+      "expertDialog": true,
+      "validation": true,
+      "keyboard": true,
+      "tabs": true,
+      "sliderKeyboard": true,
+      "serviceLinks": true
+    },
+    {
+      "width": 540,
+      "localResources": true,
+      "browserErrors": 0,
+      "httpErrors": 0,
+      "externalRequests": 0,
+      "postRequests": 0,
+      "overflow": false,
+      "expertDialog": true,
+      "validation": true,
+      "keyboard": true,
+      "tabs": true,
+      "sliderKeyboard": true,
+      "serviceLinks": true
+    },
+    {
+      "width": 768,
+      "localResources": true,
+      "browserErrors": 0,
+      "httpErrors": 0,
+      "externalRequests": 0,
+      "postRequests": 0,
+      "overflow": false,
+      "expertDialog": true,
+      "validation": true,
+      "keyboard": true,
+      "tabs": true,
+      "sliderKeyboard": true,
+      "serviceLinks": true
+    },
+    {
+      "width": 1024,
+      "localResources": true,
+      "browserErrors": 0,
+      "httpErrors": 0,
+      "externalRequests": 0,
+      "postRequests": 0,
+      "overflow": false,
+      "expertDialog": true,
+      "validation": true,
+      "keyboard": true,
+      "tabs": true,
+      "sliderKeyboard": true,
+      "serviceLinks": true
+    },
+    {
+      "width": 1440,
+      "localResources": true,
+      "browserErrors": 0,
+      "httpErrors": 0,
+      "externalRequests": 0,
+      "postRequests": 0,
+      "overflow": false,
+      "expertDialog": true,
+      "validation": true,
+      "keyboard": true,
+      "tabs": true,
+      "sliderKeyboard": true,
+      "serviceLinks": true
+    },
+    {
+      "width": 1920,
+      "localResources": true,
+      "browserErrors": 0,
+      "httpErrors": 0,
+      "externalRequests": 0,
+      "postRequests": 0,
+      "overflow": false,
+      "expertDialog": true,
+      "validation": true,
+      "keyboard": true,
+      "tabs": true,
+      "sliderKeyboard": true,
+      "serviceLinks": true
+    },
+    {
+      "width": 2560,
+      "localResources": true,
+      "browserErrors": 0,
+      "httpErrors": 0,
+      "externalRequests": 0,
+      "postRequests": 0,
+      "overflow": false,
+      "expertDialog": true,
+      "validation": true,
+      "keyboard": true,
+      "tabs": true,
+      "sliderKeyboard": true,
+      "serviceLinks": true
+    }
+  ],
+  "parity": [
+    {
+      "width": 390,
+      "section": "hero",
+      "geometry": {
+        "width": 375,
+        "height": 560
+      },
+      "differentPixels": 0,
+      "ratio": 0
+    },
+    {
+      "width": 390,
+      "section": "consultation",
+      "geometry": {
+        "width": 375,
+        "height": 718.1875
+      },
+      "differentPixels": 0,
+      "ratio": 0
+    },
+    {
+      "width": 390,
+      "section": "services",
+      "geometry": {
+        "width": 375,
+        "height": 1086.796875
+      },
+      "differentPixels": 0,
+      "ratio": 0
+    },
+    {
+      "width": 390,
+      "section": "advantages",
+      "geometry": {
+        "width": 375,
+        "height": 994.359375
+      },
+      "differentPixels": 0,
+      "ratio": 0
+    },
+    {
+      "width": 1440,
+      "section": "hero",
+      "geometry": {
+        "width": 1425,
+        "height": 620
+      },
+      "differentPixels": 0,
+      "ratio": 0
+    },
+    {
+      "width": 1440,
+      "section": "consultation",
+      "geometry": {
+        "width": 1425,
+        "height": 674.78125
+      },
+      "differentPixels": 0,
+      "ratio": 0
+    },
+    {
+      "width": 1440,
+      "section": "services",
+      "geometry": {
+        "width": 1425,
+        "height": 991.46875
+      },
+      "differentPixels": 0,
+      "ratio": 0
+    },
+    {
+      "width": 1440,
+      "section": "advantages",
+      "geometry": {
+        "width": 1425,
+        "height": 1025.0625
+      },
+      "differentPixels": 0,
+      "ratio": 0
+    }
+  ]
+}
