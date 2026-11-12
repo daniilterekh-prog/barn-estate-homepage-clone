@@ -2,12 +2,7 @@
 (() => {
  'use strict';
  const root=document.querySelector('.owner-sale-page');if(!root)return;
- const hero=root.querySelector('.owner-sale-hero');
- const lead=hero.querySelector('.owner-sale-hero__description,.owner-sale-hero__text');
- if(lead)lead.textContent='Выстроим стратегию продажи дома и участка, найдём покупателя, проведём переговоры и сопроводим сделку.';
  for(const e of document.querySelectorAll('.breadcrumbs__item:last-child,.breadcrumbs__current'))e.textContent='Собственникам — загородная недвижимость';
- const stages=root.querySelector('.owner-sale-stages__text');
- if(stages)stages.textContent='Изучим дом, участок и окружение. Предложим стратегию продажи с учётом рынка, сроков и ваших задач.';
  const photo=root.querySelector('.catalog-consultation__image');
  if(photo){photo.src='assets/hero-country.png';photo.alt='Загородная резиденция';}
  // Static previews do not claim a lead was delivered or send personal information.

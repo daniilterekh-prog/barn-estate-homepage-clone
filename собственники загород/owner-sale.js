@@ -140,9 +140,9 @@
 
   const enhanceSectionEyebrows = function () {
     [
-      ['.owner-sale-stages__title', 'КАК ПРОХОДИТ СДЕЛКА'],
+      ['.owner-sale-stages__title', 'ПРОЦЕСС ПРОДАЖИ'],
       ['.owner-sale-strategy__title', 'СТРАТЕГИЯ BARN Estate'],
-      ['.owner-sale-presentation__title', 'СТРАТЕГИЯ ПРЕЗЕНТАЦИИ'],
+      ['.owner-sale-presentation__title', 'ИСКУССТВО ПРАВИЛЬНОГО ПРЕДСТАВЛЕНИЯ'],
       ['.about-company__title', 'BARN Estate / МОСКВА'],
     ].forEach(function (item) {
       const title = document.querySelector(item[0]);
@@ -160,7 +160,7 @@
     if (services && servicesHeader && !services.querySelector(':scope > .owner-sale-section-eyebrow')) {
       const eyebrow = document.createElement('p');
       eyebrow.className = 'owner-sale-section-eyebrow owner-sale-services__eyebrow';
-      eyebrow.textContent = 'ЕДИНАЯ КОМАНДА BARN Estate';
+      eyebrow.textContent = 'ПРОДВИЖЕНИЕ НЕДВИЖИМОСТИ С BARN Estate';
       services.insertBefore(eyebrow, servicesHeader);
     }
 
@@ -232,13 +232,13 @@
 
   const enhancePresentationCards = function () {
     const descriptions = [
-      'Находим сильные стороны объекта и превращаем их в понятные преимущества для будущего покупателя.',
-      'Определяем позиционирование, ценовой ориентир и ключевые акценты для презентации объекта.',
-      'Выбираем релевантные каналы и показываем объект аудитории, которая соответствует его уровню.',
-      'Берём на себя коммуникацию с покупателями и защищаем интересы собственника на каждом этапе переговоров.',
-      'Проверяем документы и сопровождаем сделку, чтобы обеспечить её юридическую чистоту и безопасность.',
-      'Контролируем доступ к информации об объекте и проводим просмотры с учётом требований собственника.'
-    ];
+      "Оцениваем дом, участок, дополнительные строения, коммуникации, посёлок и окружение с точки зрения их общей ценности для покупателя.",
+      "Понимаем, как представить рынку как готовую резиденцию, так и дом с устаревшей отделкой, незавершённым ремонтом и другими особенностями.",
+      "Не предлагаем лишних вложений: оцениваем, что повлияет на восприятие объекта покупателем, а что можно оставить без изменений.",
+      "Берём на себя коммуникацию с покупателями и защищаем интересы собственника на каждом этапе переговоров.",
+      "При необходимости привлекаем юристов, кадастровых инженеров и других экспертов, чтобы заранее решить вопросы по документам, границам участка и оформлению объектов.",
+      "Разбираемся, что сдерживает продажу: позиционирование, состояние дома, подача, стоимость. Определяем, что стоит изменить, и выстраиваем новый план работы."
+];
 
     page.querySelectorAll('.owner-sale-presentation__card').forEach(function (card, index) {
       const caption = card.querySelector('.owner-sale-presentation__caption');
@@ -454,7 +454,7 @@
     const expert = document.createElement('aside');
     expert.className = 'floating-expert floating-expert--gorodskaya';
     expert.setAttribute('aria-label', 'Михаил Долгов');
-    expert.innerHTML = '<button type="button" class="floating-expert__card" aria-haspopup="dialog"><span class="floating-expert__avatar"><img src="assets/mikhail-dolgov.jpg" alt="Михаил Долгов" width="72" height="72" loading="lazy" decoding="async"></span><span class="floating-expert__content"><span class="floating-expert__label">Эксперт по загородной недвижимости</span><span class="floating-expert__title">Задать вопрос эксперту</span><span class="floating-expert__name">Михаил Долгов</span></span></button><button type="button" class="floating-expert__close" aria-label="Скрыть карточку Михаил Долгов"></button>';
+    expert.innerHTML = '<button type="button" class="floating-expert__card" aria-haspopup="dialog"><span class="floating-expert__avatar"><img src="assets/mikhail-dolgov.jpg" alt="Михаил Долгов" width="72" height="72" loading="lazy" decoding="async"></span><span class="floating-expert__content"><span class="floating-expert__label">Руководитель департамента загородной недвижимости</span><span class="floating-expert__title">Задать вопрос эксперту</span><span class="floating-expert__name">Михаил Долгов</span></span></button><button type="button" class="floating-expert__close" aria-label="Скрыть карточку Михаил Долгов"></button>';
     expert.querySelectorAll('*').forEach(function (element) {
       element.setAttribute('data-v-cd0a1259', '');
     });
@@ -469,32 +469,30 @@
     if (!placeholder || placeholder.children.length) return;
 
     const services = [
-      'Отдельная веб-страница с презентацией объекта',
-      'Адресные рассылки по клиентской базе — на почту и в мессенджеры',
-      'Включение объекта в тематические подборки недвижимости',
-      'Размещение в социальных сетях и на онлайн-площадках',
-      'Персональный брокер, погруженный во все детали объекта',
-      'Нестандартные сценарии продажи: аукцион, обмен и другие форматы',
-      'Виртуальный 3D-тур для детального знакомства с объектом онлайн',
-      'Профессиональная видеосъемка недвижимости',
-      'Создание рекламных материалов для продвижения объекта',
-      'Профессиональная фотосъемка и обработка изображений',
-      'Брендированный баннер на объекте'
-    ];
+      "Готовим дом и территорию к фотосессии и показам.",
+      "Проводим профессиональную съёмку дома и участка.",
+      "Используем аэросъёмку, чтобы показать масштаб участка, окружение и расположение объекта.",
+      "Создаём видеопрезентацию, которая помогает передать архитектуру, простор и атмосферу.",
+      "Готовим виртуальный 3D-тур для дистанционного знакомства с домом.",
+      "Показываем не только дом, но и преимущества посёлка, окружения, инфраструктуры и направления.",
+      "Делаем адресные рассылки по клиентской базе и предлагаем объект покупателям с подходящим запросом.",
+      "Размещаем объект на профильных площадках, в социальных сетях и партнерских каналах.",
+      "Включаем недвижимость в тематические подборки и предложения загородных объектов.",
+      "Отслеживаем обращения и обратную связь покупателей, чтобы при необходимости корректировать подачу и продвижение."
+];
 
     const serviceTitles = [
-      'Презентация объекта',
-      'Адресные рассылки',
-      'Тематические подборки',
-      'Социальные сети и площадки',
-      'Персональный брокер',
-      'Индивидуальный сценарий продажи',
-      'Виртуальный 3D-тур',
-      'Видеосъёмка',
-      'Рекламные материалы',
-      'Фотосъёмка',
-      'Баннер на объекте'
-    ];
+      "Подготовка к показам",
+      "Съёмка дома и участка",
+      "Аэросъёмка",
+      "Видеопрезентация",
+      "Виртуальный 3D-тур",
+      "Посёлок и окружение",
+      "Адресные рассылки",
+      "Профильные площадки",
+      "Тематические подборки",
+      "Обратная связь покупателей"
+];
     const slider = document.createElement('div');
     slider.className = 'splide owner-sale-services__slider is-overflow is-initialized splide--slide splide--ltr splide--draggable is-active';
     slider.setAttribute('data-v-2d6c67d9', '');

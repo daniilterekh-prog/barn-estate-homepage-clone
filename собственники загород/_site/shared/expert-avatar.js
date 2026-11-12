@@ -9,7 +9,7 @@
       }
       if (image.alt !== 'Михаил Долгов') image.alt = 'Михаил Долгов';
       const card = image.closest('.floating-expert');
-      for (const [selector, text] of [['.floating-expert__name', 'Михаил Долгов'], ['.floating-expert__label', 'Эксперт по загородной недвижимости']]) {
+      for (const [selector, text] of [['.floating-expert__name', 'Михаил Долгов'], ['.floating-expert__label', 'Руководитель департамента загородной недвижимости']]) {
         const label = card?.querySelector(selector);
         if (label && label.textContent !== text) label.textContent = text;
       }
