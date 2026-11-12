@@ -1,0 +1,21 @@
+{
+  "date": "2026-11-12",
+  "spec": "https://docs.google.com/document/d/10h2UBtZCoKiUJGEKvC43um7Xax_V-sTJ3soDRDN-2iY/edit?tab=t.r3ubibduiehj",
+  "spec_revision_date": "11.11.2026",
+  "portrait": "https://drive.google.com/file/d/1nlJxUr_3_2_JQmLp9DrBjgHtwI9UAHTX/view",
+  "base_public_commit": "e7de0eb6b5801fa24f05baec98096505f6631275",
+  "assets": {
+    "hero-country.png": "zagorodnaya-nedvizhimost/assets/hero-estate-desktop.png",
+    "hero-country-mobile.png": "zagorodnaya-nedvizhimost/assets/hero-estate-mobile.png",
+    "direction-spb.webp": "home-spb/assets/home-spb-hero-kollektsioner.webp",
+    "direction-commercial.webp": "home-spb/assets/spb-direction-commercial.webp",
+    "direction-rent.webp": "home-spb/assets/spb-direction-secondary.webp",
+    "direction-international.png": "prodazha_sobstvennikam/assets/types-02.png"
+  },
+  "notes": [
+    "Фото эксперта — оригинал из ТЗ, без генерации и ретуши.",
+    "Изображения повторно использованы из действующих страниц BARN Estate, без изменения защищённых исходников.",
+    "Фронт разработчиков возвращает HTTP 401; доступ к CMS отсутствует. Исправление загрузки из админки остаётся задачей разработчиков.",
+    "Превью не отправляет заявки и не заменяет production."
+  ]
+}

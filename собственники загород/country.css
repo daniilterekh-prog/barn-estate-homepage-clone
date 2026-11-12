@@ -1,0 +1,27 @@
+/* BARN Estate UI kit; isolated country-owner corrections, 2026-11-12. */
+html body#ui-kit-page[data-owner-country] .owner-sale-page > :is(.owner-sale-presentation,.owner-sale-services,.about-company,.owner-sale-stages,.owner-sale-strategy,.owner-sale-types) {
+ padding-block:clamp(36px,4vw,64px)!important;
+}
+html body#ui-kit-page[data-owner-country] #why-barnes .be-section {padding-block:clamp(36px,4vw,64px)!important;}
+html body#ui-kit-page[data-owner-country] .owner-sale-hero__title {max-width:1100px;}
+html body#ui-kit-page[data-owner-country] .owner-sale-hero__image {object-fit:cover;object-position:center;}
+html body#ui-kit-page[data-owner-country] .owner-sale-services__card:is(:hover,:focus-within) {background:#7c1425!important;color:#fff!important;}
+html body#ui-kit-page[data-owner-country] .owner-sale-services__card:is(:hover,:focus-within) :is(.owner-sale-services__text,strong,span,.owner-sale-services__number) {color:#fff!important;opacity:1!important;}
+html body#ui-kit-page[data-owner-country] :is(.floating-expert__avatar,.catalog-consultation__mobile-photo) {overflow:hidden;}
+html body#ui-kit-page[data-owner-country] :is(.floating-expert__avatar,.catalog-consultation__mobile-photo) img {
+ width:100%!important;height:100%!important;max-width:none!important;object-fit:cover!important;object-position:50% 18%!important;transform:none!important;filter:none!important;
+}
+html body#ui-kit-page[data-owner-country] .home-owner-form__hero {background:#827c78!important;}
+html body#ui-kit-page[data-owner-country] .home-owner-form__hero-image {width:100%!important;height:100%!important;object-fit:cover!important;object-position:50% 18%!important;filter:none!important;}
+html body#ui-kit-page[data-owner-country] .country-form-status {color:inherit;font-size:15px;line-height:1.5;margin-top:12px;}
+html body#ui-kit-page[data-owner-country] [aria-invalid=true] {outline:2px solid #b32639;outline-offset:3px;}
+html body#ui-kit-page[data-owner-country] .owner-sale-types__card:focus-visible {outline:3px solid #7c1425;outline-offset:4px;}
+@media(max-width:540px){
+ html body#ui-kit-page[data-owner-country] .home-owner-form__hero {min-height:180px;max-height:240px;}
+ html body#ui-kit-page[data-owner-country] .home-owner-form__hero-image {object-position:50% 14%!important;}
+}
+/* Full portrait is framed as a headshot inside the small circular widget. */
+html body#ui-kit-page[data-owner-country] .floating-expert__avatar img {
+ position:absolute!important;inset:auto!important;top:-8%!important;left:-40%!important;width:180%!important;height:180%!important;object-position:50% 16%!important;
+}
+html body#ui-kit-page[data-owner-country] .catalog-consultation__mobile-photo img {position:static!important;inset:auto!important;}
