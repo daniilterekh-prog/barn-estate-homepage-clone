@@ -1,0 +1,42 @@
+{
+  "checkedAt": "2026-11-12T07:47:48.637Z",
+  "deployment": {
+    "run": 43177631456,
+    "commit": "cdc55bf43988fcad13d60e60db5d79761430fd3b"
+  },
+  "canonicalCommit": "fc4a79168281f09406ca279691df681e28cd980c",
+  "preview": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/handoff/sobstvenniki-uzel/html/index.html",
+  "htmlMatchesPackage": true,
+  "remoteZipPreviouslyVerified": {
+    "http": 200,
+    "bytes": 4066693,
+    "sha256": "dcc332ec08786a9058b412136a7b495ab58e6ce9841db9bf94cd02ffb2c7a97c",
+    "crc": "pass",
+    "fileChecksums": 101
+  },
+  "canonicalAndPublicFolder": {
+    "identicalFiles": 104
+  },
+  "widths": [
+    {
+      "width": 390,
+      "images": 7,
+      "serviceCards": 4,
+      "modal": true,
+      "overflow": false,
+      "errors": [],
+      "failures": [],
+      "external": []
+    },
+    {
+      "width": 1440,
+      "images": 7,
+      "serviceCards": 4,
+      "modal": true,
+      "overflow": false,
+      "errors": [],
+      "failures": [],
+      "external": []
+    }
+  ]
+}
