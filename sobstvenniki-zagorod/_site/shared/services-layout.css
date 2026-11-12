@@ -1,0 +1,34 @@
+/* Owner services and partner mechanics: existing BARN Estate card/button roles. */
+html body.barnes-page-kit:is(#ui-kit-page,#partners-kit-page) :is(.owner-sale-services,#how-it-works) .barn-slider-footer{width:100%;align-items:center;justify-content:space-between;gap:24px}
+html body.barnes-page-kit:is(#ui-kit-page,#partners-kit-page) :is(.owner-sale-services,#how-it-works) .barn-slider-footer>:is(.owner-sale-services__cta,.ap-action){display:flex!important;align-items:center!important;justify-content:space-between!important;gap:16px!important;box-sizing:border-box!important;width:360px!important;max-width:calc(100% - 164px)!important;min-width:0!important;height:auto!important;min-height:70px!important;margin:0!important;padding:16px 36px!important;background:#8b1d25;border:1px solid #8b1d25;color:#fff;font:400 var(--reference-action,17px)/1.1 "Tilda Sans",sans-serif!important;white-space:normal!important;text-align:left!important;text-decoration:none;border-radius:1px}
+html body.barnes-page-kit:is(#ui-kit-page,#partners-kit-page) .barn-slider-footer>:is(.owner-sale-services__cta,.ap-action) :is(span,svg){flex-shrink:0;width:16px;height:16px}
+html body.barnes-page-kit:is(#ui-kit-page,#partners-kit-page) .barn-slider-footer>:is(.owner-sale-services__cta,.ap-action):hover{background:#fff;color:#8b1d25}
+html body.barnes-page-kit:is(#ui-kit-page,#partners-kit-page) .barn-slider-footer>:is(.owner-sale-services__cta,.ap-action):focus-visible{outline:2px solid #8b1d25;outline-offset:4px}
+/* Mechanics retains its five original list items and intent button. */
+html body#partners-kit-page #how-it-works .ap-steps{display:grid!important;grid-template-columns:none!important;grid-auto-flow:column;grid-auto-columns:359px;gap:12px!important;overflow-x:auto;scroll-snap-type:x mandatory;overscroll-behavior-inline:contain;scrollbar-width:none;padding:0!important;list-style:none}
+html body#partners-kit-page #how-it-works .ap-steps::-webkit-scrollbar{display:none}
+html body#partners-kit-page #how-it-works .ap-steps:focus-visible{outline:2px solid #8b1d25;outline-offset:4px}
+html body#partners-kit-page #how-it-works .ap-steps>li{display:flex!important;flex-direction:column;justify-content:space-between;gap:32px!important;box-sizing:border-box;position:relative;min-width:0;min-height:280px;padding:20px 24px 24px!important;border:1px solid #e4e4e4;background:#fff;scroll-snap-align:start}
+html body#partners-kit-page #how-it-works .ap-steps>li::before{content:"";position:absolute;top:0;left:0;right:0;height:4px;background:#8b1d25}
+html body#partners-kit-page #how-it-works .ap-steps .ap-number{display:inline-flex;align-items:center;justify-content:center;flex:0 0 38px;width:38px;height:38px;box-sizing:border-box;border:1px solid #8b1d25;border-radius:50%;margin:0!important;font:400 13px/18px "Tilda Sans",sans-serif!important;letter-spacing:.08em;color:#8b1d25}
+html body#partners-kit-page #how-it-works .ap-steps>li>div{display:flex;flex-direction:column;gap:8px}
+html body#partners-kit-page #how-it-works .ap-steps h3{margin:0!important;font:400 20px/24px "Tilda Sans",sans-serif!important;color:#1e1e1e}
+html body#partners-kit-page #how-it-works .ap-steps li>div>p{margin:0!important;font:300 var(--reference-lead,22px)/var(--reference-lead-line,33px) "Tilda Sans",sans-serif!important;color:#4f4d49}
+html body#partners-kit-page .ap-mechanics__nav{display:flex;gap:20px;flex:0 0 auto}
+html body#partners-kit-page .ap-mechanics__nav button{display:flex;align-items:center;justify-content:center;box-sizing:border-box;width:56px;height:56px;padding:0;border:1px solid #656462;border-radius:50%;background:#fff;color:#656462;cursor:pointer}
+html body#partners-kit-page .ap-mechanics__nav svg{width:24px;height:24px}
+html body#partners-kit-page .ap-mechanics__nav button:disabled{opacity:.45;cursor:default}
+html body#partners-kit-page .ap-mechanics__nav button:focus-visible{outline:2px solid #8b1d25;outline-offset:4px}
+@media(hover:hover) and (pointer:fine){html body#partners-kit-page #how-it-works .ap-steps>li:hover{background:#8b1d25;border-color:#8b1d25}html body#partners-kit-page #how-it-works .ap-steps>li:hover::before{background:#fff}html body#partners-kit-page #how-it-works .ap-steps>li:hover :is(.ap-number,h3,p){color:#fff!important;border-color:#fff!important}}
+@media(min-width:1441px){html body#partners-kit-page #how-it-works .ap-steps{grid-auto-columns:565px}html body#partners-kit-page .ap-mechanics__nav button{width:68px;height:68px}}
+@media(max-width:900px){html body#partners-kit-page #how-it-works .ap-steps{grid-auto-columns:279px}}
+@media(max-width:540px){
+ html body.barnes-page-kit:is(#ui-kit-page,#partners-kit-page) :is(.owner-sale-services,#how-it-works) .barn-slider-footer{gap:12px}
+ html body.barnes-page-kit:is(#ui-kit-page,#partners-kit-page) :is(.owner-sale-services,#how-it-works) .barn-slider-footer>:is(.owner-sale-services__cta,.ap-action){flex:1 1 0;width:auto!important;max-width:none!important;min-height:58px!important;padding:12px!important;gap:8px!important;overflow-wrap:normal}
+ html body.barnes-page-kit:is(#ui-kit-page,#partners-kit-page) :is(.owner-sale-services__nav,.ap-mechanics__nav){gap:8px!important;flex:0 0 auto}
+ html body.barnes-page-kit:is(#ui-kit-page,#partners-kit-page) :is(.owner-sale-services__nav,.ap-mechanics__nav) button{width:44px!important;height:44px!important;min-width:44px!important;min-height:44px!important}
+ html body#partners-kit-page #how-it-works .ap-steps{grid-auto-columns:calc(82% - 1px)}
+ html body#partners-kit-page #how-it-works .ap-steps>li{min-height:220px;padding:24px 20px 28px!important;gap:20px!important}
+}
+@media(prefers-reduced-motion:reduce){html body#partners-kit-page #how-it-works .ap-steps{scroll-behavior:auto}}
+@media(max-width:360px){html body.barnes-page-kit#partners-kit-page #how-it-works .barn-slider-footer>.ap-action{padding-inline:6px!important;gap:4px!important;}}

@@ -1,6 +1,8 @@
 # BARN Estate — страницы основного сайта
 
-- [Собственники — загород: открыть страницу](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/собственники%20загород/) — полное загородное наполнение со страницы разработчиков: 6 преимуществ, 10 инструментов продвижения, 6 этапов и стратегия Подмосковья. Фото Михаила Долгова и действующий UI-кит. [Исходники](https://github.com/daniilterekh-prog/barnes-sites/tree/main/main-site/pages/собственники%20загород). Статическое превью; интеграция CMS/CRM не выполнялась.
+- [Собственники — загород: открыть страницу](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/sobstvenniki-zagorod/) — проверенный адрес без кириллицы и пробелов; полное загородное наполнение, Михаил Долгов и действующий UI-кит. [Исходники](https://github.com/daniilterekh-prog/barnes-sites/tree/main/main-site/pages/собственники%20загород). Статическое превью; интеграция CMS/CRM не выполнялась.
+
+
 
 
 
