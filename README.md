@@ -1,5 +1,7 @@
 # BARN Estate — страницы основного сайта
 
+- [собственники коммерция](%D1%81%D0%BE%D0%B1%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%B8%D0%BA%D0%B8%20%D0%BA%D0%BE%D0%BC%D0%BC%D0%B5%D1%80%D1%86%D0%B8%D1%8F/) — точная копия страницы «Собственникам — продажа» из `prodazha_sobstvennikam/`, исходный commit `80edd79176e37ca8320b41fd3d17b67eb129e66c`. Скопировано по поручению владельца 12.11.2026; тексты, оформление и файлы страницы сохранены без изменений.
+
 - [Собственники узел — открыть страницу](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/sobstvenniki-uzel/) · [структура, исходники и семь новых изображений](sobstvenniki-uzel/README.md).
 
 - [ЖК: визуальный черновик новой структуры в действующем UI-ките ·10.11.2026](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/zhk-structure/) — отдельное превью, 15 блоков; текущая Вавилова 64 сохранена.
