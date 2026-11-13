@@ -1,0 +1,89 @@
+{
+  "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/%D1%81%D0%BE%D0%B1%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%B8%D0%BA%D0%B8%20%D0%BA%D0%BE%D0%BC%D0%BC%D0%B5%D1%80%D1%86%D0%B8%D1%8F/",
+  "checkedAt": "2026-11-13T13:32:27.272Z",
+  "deployedCodeCommit": "e52b643a52ce78c59e37d7eead8388a422f6431f",
+  "htmlStatus": 200,
+  "expectedHtmlSha256": "36e42d91fe001def99c094e2199ac102d33e4b9747f8af4aa1fafe258e5103f4",
+  "htmlSha256": "36e42d91fe001def99c094e2199ac102d33e4b9747f8af4aa1fafe258e5103f4",
+  "images": [
+    {
+      "file": "hero.webp",
+      "status": 200,
+      "sha256": "66b69abcd2b54fd3f5bf74f14fa2d8a17fb502ad7a9155afc0c963df7a139edf"
+    },
+    {
+      "file": "economics.webp",
+      "status": 200,
+      "sha256": "83c0a62f0eb260970838eb9318bd382bb981e2b60ae62f09dabe8afd4e0d25ca"
+    },
+    {
+      "file": "buyer.webp",
+      "status": 200,
+      "sha256": "2f8f49e9137f00a9e12ba5ca4398f98cac949d4e157cbd0065ed482345fb900e"
+    },
+    {
+      "file": "potential.webp",
+      "status": 200,
+      "sha256": "c220206e7bfdae8b314a5c031dfe4525211eec657b7f9fe32d54743e567d39fb"
+    },
+    {
+      "file": "specialists.webp",
+      "status": 200,
+      "sha256": "4ec8b6b81177869cd4cc9c1bc254916dacb623e900479546384aed60d249e04e"
+    },
+    {
+      "file": "repositioning.webp",
+      "status": 200,
+      "sha256": "1b7b137c3d0d987b0380ce095a4c076785fc441478872d8e986488d8ebbaf5de"
+    },
+    {
+      "file": "privacy.webp",
+      "status": 200,
+      "sha256": "98e374158d7b17116a33b63074c4c5357ab37ffc78bba1c434efe51518f12c08"
+    },
+    {
+      "file": "strategy.webp",
+      "status": 200,
+      "sha256": "08adeaf2b91d00d0ea73f7ecbabea83034d3ccdf45dcccb75d15cbe721338967"
+    },
+    {
+      "file": "advantages-panorama.webp",
+      "status": 200,
+      "sha256": "cb76beaffda8406f5c85147586fe65c595996d3027f9f1a6a7a38120b7a4370b"
+    },
+    {
+      "file": "newsletter.webp",
+      "status": 200,
+      "sha256": "d51f35ecf6b488ef0d30e28a95ad45ec38175cf17553c2f25cdc54ecdc546743"
+    }
+  ],
+  "viewports": [
+    {
+      "width": 390,
+      "h1": "Продать коммерческую недвижимость с BARN Estate",
+      "overflow": 0,
+      "brokenImages": [],
+      "faq": 6,
+      "tools": 11,
+      "stages": 6,
+      "expert": "Алина Медведева"
+    },
+    {
+      "width": 1440,
+      "h1": "Продать коммерческую недвижимость с BARN Estate",
+      "overflow": 0,
+      "brokenImages": [],
+      "faq": 6,
+      "tools": 11,
+      "stages": 6,
+      "expert": "Алина Медведева"
+    }
+  ],
+  "httpErrors": [],
+  "pageErrors": [],
+  "nonGetRequests": [],
+  "passed": true,
+  "workflow": "https://github.com/daniilterekh-prog/barn-estate-homepage-clone/actions/runs/43434217480",
+  "sourceCommit": "02f540dd55e5a7e094dce757c7f95d1ca554d7c4",
+  "assetCommit": "d1408f73a2119d5cf6b772312df44f9777687da4"
+}
