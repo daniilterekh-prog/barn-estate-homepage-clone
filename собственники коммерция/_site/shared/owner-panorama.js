@@ -20,7 +20,7 @@
       if (!nuxt || nuxt.isHydrating) return false;
     }
     const page = document.querySelector('.owner-sale-page');
-    const path = page?.querySelector('.owner-sale-types');
+    const path = page?.querySelector('.owner-sale-stages');
     if (!path) return false;
     if (page.querySelector('#why-barnes')) return true;
     const root = document.createElement('section');

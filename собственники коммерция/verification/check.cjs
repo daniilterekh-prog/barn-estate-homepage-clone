@@ -7,6 +7,8 @@ const {chromium}=require('/home/daniil/.local/share/codex-toolkit/node_modules/p
 const {default:AxeBuilder}=require('/home/daniil/.local/share/codex-toolkit/node_modules/@axe-core/playwright');
 const base=process.env.COMMERCIAL_PREVIEW_URL||'http://127.0.0.1:8796/';
 const out=__dirname;
+const layout=JSON.parse(fs.readFileSync(path.join(out,'layout-expectations.json')));
+const hash=bytes=>crypto.createHash('sha256').update(bytes).digest('hex');
 const report={url:base,viewports:[],flows:[],httpErrors:[],pageErrors:[],nonGetRequests:[],requestedAssets:[],axe:[]};
 const fail=[];
 const check=(ok,message)=>{if(!ok)fail.push(message);};
@@ -26,9 +28,10 @@ const normalize=s=>s.replace(/\s|\u00a0/g,' ').trim();
   await ready(width,width<768?844:1000);
   const state=await page.evaluate(()=>{
    const hero=document.querySelector('.owner-sale-hero'),button=hero.querySelector('.owner-sale-hero__button');
-   return {width:innerWidth,overflow:Math.max(0,document.documentElement.scrollWidth-innerWidth),heroButtonFits:button.getBoundingClientRect().bottom<=hero.getBoundingClientRect().bottom+1,brokenImages:[...document.images].filter(i=>i.currentSrc&&(!i.complete||!i.naturalWidth)).map(i=>i.currentSrc),h1:document.querySelectorAll('h1').length,faq:document.querySelectorAll('#faq details').length,steps:document.querySelectorAll('.owner-sale-stages__item').length,tools:document.querySelectorAll('.owner-sale-services__card').length,cta:document.querySelector('.catalog-consultation__lead').textContent,expert:document.querySelector('.floating-expert__name')?.textContent};
+   return {footerBackground:getComputedStyle(document.querySelector('.site-footer')).backgroundColor,footerGrid:getComputedStyle(document.querySelector('.site-footer__nav')).display,sectionOrder:[...document.querySelectorAll('.owner-sale-page > section')].map(e=>e.id||e.classList[0]),footerLogo:document.querySelector('.site-footer__logo img').getAttribute('src'),footerHours:document.querySelector('.site-footer__hours').textContent,footerClub:[...document.querySelectorAll('.site-footer a')].some(a=>a.textContent.trim()==='BARN Club'),width:innerWidth,overflow:Math.max(0,document.documentElement.scrollWidth-innerWidth),heroButtonFits:button.getBoundingClientRect().bottom<=hero.getBoundingClientRect().bottom+1,brokenImages:[...document.images].filter(i=>i.currentSrc&&(!i.complete||!i.naturalWidth)).map(i=>i.currentSrc),h1:document.querySelectorAll('h1').length,faq:document.querySelectorAll('#faq details').length,steps:document.querySelectorAll('.owner-sale-stages__item').length,tools:document.querySelectorAll('.owner-sale-services__card').length,cta:document.querySelector('.catalog-consultation__lead').textContent,expert:document.querySelector('.floating-expert__name')?.textContent};
   });
   check(state.overflow===0,`overflow at ${width}`);check(state.heroButtonFits,`hero clips its CTA at ${width}`);check(state.brokenImages.length===0,`broken images at ${width}`);check(state.h1===1&&state.faq===6&&state.steps===6&&state.tools===11,`content incomplete at ${width}`);check(normalize(state.expert||'')==='Алина Медведева',`expert at ${width}`);
+  check(JSON.stringify(state.sectionOrder)===JSON.stringify(layout.sectionOrder),`section order at ${width}`);check(state.footerBackground==='rgb(38, 38, 38)'&&state.footerGrid==='grid'&&state.footerLogo==='assets/barn-estate-logo.svg'&&state.footerHours==='Ежедневно с 09:00 до 21:00'&&state.footerClub,`current footer at ${width}`);
   report.viewports.push(state);
  }
  for(const width of [390,1440]){
@@ -49,6 +52,7 @@ const normalize=s=>s.replace(/\s|\u00a0/g,' ').trim();
    check(box.fits&&box.readable,`advantage card clips at ${width}`);
   }
   if(width===1440){const service=page.locator('.owner-sale-services__card').nth(1);await service.hover();check(await service.locator('strong').evaluate(e=>getComputedStyle(e).color)==='rgb(255, 255, 255)','hover text must be white');const next=page.locator('.owner-sale-services .slider-controls button').last();if(await next.count()&&await next.isEnabled())await next.click();}
+  await page.locator('.site-footer__callback-btn').click();check(await page.locator('.home-owner-host').count()===1,`footer callback at ${width}`);await page.keyboard.press('Escape');await page.locator('.site-footer').screenshot({path:path.join(out,`footer-${width}.png`)});
   const axe=await new AxeBuilder({page}).include('.owner-sale-page').analyze();report.axe.push({width,violations:axe.violations.map(v=>({id:v.id,impact:v.impact,nodes:v.nodes.map(n=>n.target)}))});
   check(!axe.violations.some(v=>['serious','critical'].includes(v.impact)),`serious axe at ${width}`);
   await page.evaluate(()=>scrollTo(0,0));await page.screenshot({path:path.join(out,`page-${width}.png`),fullPage:true});await page.screenshot({path:path.join(out,`hero-${width}.png`)});
@@ -57,6 +61,7 @@ const normalize=s=>s.replace(/\s|\u00a0/g,' ').trim();
  const pageRoot=path.dirname(out),repo=path.dirname(pageRoot);
  const hub=fs.existsSync(path.join(repo,'sobstvenniki-uzel'))?'sobstvenniki-uzel':'owner-hub';
  report.directionHashes=['service-city.webp','service-country.webp','service-rent.webp'].map(file=>{const hash=p=>crypto.createHash('sha256').update(fs.readFileSync(p)).digest('hex');const a=hash(path.join(pageRoot,'assets/directions',file)),b=hash(path.join(repo,hub,'assets/editorial',file));check(a===b,`direction image changed: ${file}`);return {file,sha256:a,matchesOwnerHub:a===b};});
+ check(hash(fs.readFileSync(path.join(pageRoot,'assets/barn-estate-logo.svg')))===layout.footerLogoSha256,'canonical footer logo hash');
  check(!report.pageErrors.length,'JavaScript errors');check(!report.httpErrors.length,'HTTP errors');check(!report.nonGetRequests.length,'unexpected data transmission');
  report.requestedAssets=[...new Set(report.requestedAssets)].sort();report.failures=fail;report.passed=!fail.length;
  fs.writeFileSync(path.join(out,'browser.json'),JSON.stringify(report,null,2)+'\n');await browser.close();

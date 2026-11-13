@@ -43,3 +43,13 @@ html body#ui-kit-page[data-owner-commercial] .owner-sale-stages__item-title {fon
   html body#ui-kit-page[data-owner-commercial] .home-owner-form__hero {min-height:180px;max-height:260px;}
   html body#ui-kit-page[data-owner-commercial] .home-owner-form__hero-image {object-position:82% 18%!important;}
 }
+
+/* Current home footer markup; inherited owner UI kit supplies its base grid. */
+html body#ui-kit-page[data-owner-commercial] .site-footer__logo {width:max-content;max-width:100%;margin-inline:auto;}
+html body#ui-kit-page[data-owner-commercial] .site-footer__logo img {display:block;width:auto;height:48px;object-fit:contain;}
+@media(max-width:540px){
+ html body#ui-kit-page[data-owner-commercial] .site-footer__logo img {height:36px;}
+ html body#ui-kit-page[data-owner-commercial] .site-footer__column-title {font-size:14px!important;line-height:1.2!important;font-weight:400!important;}
+ html body#ui-kit-page[data-owner-commercial] .site-footer__link {font-size:13px!important;line-height:1.4!important;font-weight:400!important;}
+}
+html body#ui-kit-page[data-owner-commercial][data-commercial-footer-visible=true] .floating-expert {visibility:hidden!important;pointer-events:none!important;}

@@ -11,6 +11,9 @@
       if(next===undefined)return;event.preventDefault();tabs[next].click();tabs[next].focus();
     });
   }
+  // Same footer handoff behavior as the current home page: keep its action reachable.
+  const footerAction=document.querySelector('.site-footer__callback-btn');
+  if(footerAction){const observer=new IntersectionObserver(([entry])=>{document.body.dataset.commercialFooterVisible=String(entry.isIntersecting);});observer.observe(footerAction);}
   window.addEventListener('submit', event => {
     const form=event.target;
     if(!(form instanceof HTMLFormElement)||form.closest('.home-owner-host'))return;
