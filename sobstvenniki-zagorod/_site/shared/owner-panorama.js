@@ -3,7 +3,7 @@
   'use strict';
   const script = document.currentScript;
   const direction = script.dataset.direction === 'rent' ? 'rent' : 'sale';
-  const image = new URL('assets/barnes-private-salon.webp', script.src).href;
+  const image = new URL('../../assets/editorial/country-panorama.webp', script.src).href;
   const reasons = [
     { title: 'Доступ к аудитории', headline: direction === 'rent' ? 'Находим арендаторов на вашу недвижимость' : 'Находим покупателей на вашу недвижимость', text: direction === 'rent' ? 'Представим объект клиентам BARN Estate, участникам партнёрской сети и международной аудитории, которые ищут недвижимость с подходящими параметрами.' : 'Представим ваш объект клиентам BARN Estate, участникам партнёрской сети и международной аудитории, которая ищет недвижимость с подходящими параметрами.', evidence: 'Клиентская база · Партнёрская сеть · BARN Estate Club' },
     { title: 'Собственные медиа', headline: 'Продвигаем объект через собственные медиа BARN Estate', text: 'Представляем недвижимость в контексте архитектуры, окружения и образа жизни. Подбираем каналы BARN Estate под особенности объекта.', evidence: 'Журнал BARN Estate · Цифровые обзоры · Мероприятия' },

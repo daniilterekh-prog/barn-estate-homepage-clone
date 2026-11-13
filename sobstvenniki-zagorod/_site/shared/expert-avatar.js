@@ -1,11 +1,11 @@
-/* Same Ruslan portrait as Media; wait for preserved page hydration. */
+/* Same Mikhail Dolgov photograph as the current country node. */
 (() => {
-  const portrait = new URL('../../assets/mikhail-dolgov.jpg', document.currentScript.src).href;
+  const portrait = new URL('../../assets/expert-dolgov.webp', document.currentScript.src).href;
   function update() {
     for (const image of document.querySelectorAll('.floating-expert__avatar img')) {
       if (image.src !== portrait) {
         image.removeAttribute('srcset'); image.src = portrait;
-        image.width = 1086; image.height = 1448; image.loading = 'eager';
+        image.width = 240; image.height = 273; image.loading = 'eager';
       }
       if (image.alt !== 'Михаил Долгов') image.alt = 'Михаил Долгов';
       const card = image.closest('.floating-expert');

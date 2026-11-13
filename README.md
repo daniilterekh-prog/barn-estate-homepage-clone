@@ -1,6 +1,6 @@
 # BARN Estate — страницы основного сайта
 
-- [Собственники — загород: открыть страницу](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/sobstvenniki-zagorod/) — проверенный адрес без кириллицы и пробелов; полное загородное наполнение, Михаил Долгов и действующий UI-кит. [Исходники](https://github.com/daniilterekh-prog/barnes-sites/tree/main/main-site/pages/собственники%20загород). Статическое превью; интеграция CMS/CRM не выполнялась.
+- [Собственники — загород: открыть страницу](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/sobstvenniki-zagorod/) — 12 собственных загородных изображений; фото Михаила и CTA из действующего загородного узла; актуальный логотип BARN Estate. [Исходники](https://github.com/daniilterekh-prog/barnes-sites/tree/main/main-site/pages/собственники%20загород). ·13.11.2026.
 
 
 

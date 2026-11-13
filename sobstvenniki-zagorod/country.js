@@ -3,8 +3,6 @@
  'use strict';
  const root=document.querySelector('.owner-sale-page');if(!root)return;
  for(const e of document.querySelectorAll('.breadcrumbs__item:last-child,.breadcrumbs__current'))e.textContent='Собственникам — загородная недвижимость';
- const photo=root.querySelector('.catalog-consultation__image');
- if(photo){photo.src='assets/hero-country.png';photo.alt='Загородная резиденция';}
  // Static previews do not claim a lead was delivered or send personal information.
  window.addEventListener('submit',event=>{
   const form=event.target;if(!(form instanceof HTMLFormElement)||form.closest('.home-owner-host'))return;

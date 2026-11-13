@@ -11,13 +11,6 @@
   headerStyles.href = '_site/shared/owner-header.css?v=e8e698f4b57f';
   document.head.appendChild(headerStyles);
 
-  page.querySelectorAll('.catalog-consultation__subtitle, .catalog-consultation__mobile-title').forEach(function (title) {
-    title.textContent = 'Расскажите об объекте эксперту BARN Estate';
-  });
-  page.querySelectorAll('.catalog-consultation__lead, .catalog-consultation__mobile-lead').forEach(function (lead) {
-    lead.hidden = true;
-  });
-
   const menuButton = document.querySelector('[aria-label="Открыть меню"]');
   let menu = document.querySelector('.site-menu');
   const sticky = page.querySelector('.owner-sale-sticky');
@@ -454,7 +447,7 @@
     const expert = document.createElement('aside');
     expert.className = 'floating-expert floating-expert--gorodskaya';
     expert.setAttribute('aria-label', 'Михаил Долгов');
-    expert.innerHTML = '<button type="button" class="floating-expert__card" aria-haspopup="dialog"><span class="floating-expert__avatar"><img src="assets/mikhail-dolgov.jpg" alt="Михаил Долгов" width="72" height="72" loading="lazy" decoding="async"></span><span class="floating-expert__content"><span class="floating-expert__label">Руководитель департамента загородной недвижимости</span><span class="floating-expert__title">Задать вопрос эксперту</span><span class="floating-expert__name">Михаил Долгов</span></span></button><button type="button" class="floating-expert__close" aria-label="Скрыть карточку Михаил Долгов"></button>';
+    expert.innerHTML = '<button type="button" class="floating-expert__card" aria-haspopup="dialog"><span class="floating-expert__avatar"><img src="assets/expert-dolgov.webp" alt="Михаил Долгов" width="72" height="72" loading="lazy" decoding="async"></span><span class="floating-expert__content"><span class="floating-expert__label">Руководитель департамента загородной недвижимости</span><span class="floating-expert__title">Задать вопрос эксперту</span><span class="floating-expert__name">Михаил Долгов</span></span></button><button type="button" class="floating-expert__close" aria-label="Скрыть карточку Михаил Долгов"></button>';
     expert.querySelectorAll('*').forEach(function (element) {
       element.setAttribute('data-v-cd0a1259', '');
     });
