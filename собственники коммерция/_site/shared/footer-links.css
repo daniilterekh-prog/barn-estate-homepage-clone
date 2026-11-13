@@ -1,0 +1,6 @@
+/* Canonical footer text-link states for all thirteen current BARN Estate pages. */
+@layer barn-node-spacing {
+ html body .site-footer :is(.site-footer__link,.site-footer__column-title--link,.site-footer__phone,.site-footer__email,.site-footer__privacy):is(:hover,:focus-visible,:active) {
+  color:#8b1d25!important;
+ }
+}

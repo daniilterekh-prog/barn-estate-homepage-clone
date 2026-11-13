@@ -8,14 +8,14 @@
   document.body.classList.add('barnes-header-template');
   const headerStyles = document.createElement('link');
   headerStyles.rel = 'stylesheet';
-  headerStyles.href = '../shared/owner-header.css?v=e8e698f4b57f';
+  headerStyles.href = '_site/shared/owner-header.css?v=e8e698f4b57f';
   document.head.appendChild(headerStyles);
 
   page.querySelectorAll('.catalog-consultation__subtitle, .catalog-consultation__mobile-title').forEach(function (title) {
-    title.textContent = 'Расскажите об объекте эксперту BARN Estate';
+    title.textContent = "Эксперты BARN Estate помогут";
   });
   page.querySelectorAll('.catalog-consultation__lead, .catalog-consultation__mobile-lead').forEach(function (lead) {
-    lead.hidden = true;
+    lead.hidden = false; lead.textContent = "Оценим коммерческий объект, разработаем стратегию продвижения, найдём покупателя и сопроводим сделку на всех этапах.";
   });
 
   const menuButton = document.querySelector('[aria-label="Открыть меню"]');
@@ -81,9 +81,9 @@
     contacts.className = 'owner-sale-hero-contacts';
     contacts.setAttribute('aria-label', 'Способы связи');
     [
-      ['WhatsApp', 'https://wa.me/79252621650', '../pictures/office-contact/whatsapp.svg'],
-      ['MAX', 'https://max.ru/join/AWj8ibiCtAPOJOlulMGNkykKGz_prXVWg-IQK1KpUG8', '../pictures/office-contact/max.svg'],
-      ['Telegram', 'https://t.me/art_de_vivre_barnes', '../pictures/office-contact/telegram.svg']
+      ['WhatsApp', 'https://wa.me/79252621650', '_site/pictures/office-contact/whatsapp.svg'],
+      ['MAX', 'https://max.ru/join/AWj8ibiCtAPOJOlulMGNkykKGz_prXVWg-IQK1KpUG8', '_site/pictures/office-contact/max.svg'],
+      ['Telegram', 'https://t.me/art_de_vivre_barnes', '_site/pictures/office-contact/telegram.svg']
     ].forEach(function (item) {
       const link = document.createElement('a');
       const icon = document.createElement('img');
@@ -169,7 +169,7 @@
     if (typesSection && typesInner && !typesInner.querySelector(':scope > .owner-sale-types__header')) {
       const header = document.createElement('header');
       header.className = 'owner-sale-types__header';
-      header.innerHTML = '<p class="owner-sale-section-eyebrow owner-sale-types__eyebrow">НАПРАВЛЕНИЯ BARN Estate</p><h2 class="owner-sale-types__section-title" id="owner-sale-types-title">ПОМОЖЕМ ПРОДАТЬ ВАШУ НЕДВИЖИМОСТЬ</h2>';
+      header.innerHTML = '<p class="owner-sale-section-eyebrow owner-sale-types__eyebrow">ВАША СЛЕДУЮЩАЯ ЗАДАЧА</p><h2 class="owner-sale-types__section-title" id="owner-sale-types-title">ДРУГИЕ УСЛУГИ СОБСТВЕННИКАМ</h2>';
       typesInner.insertBefore(header, typesInner.firstChild);
       typesSection.setAttribute('aria-labelledby', 'owner-sale-types-title');
       typesSection.removeAttribute('aria-label');
@@ -232,13 +232,13 @@
 
   const enhancePresentationCards = function () {
     const descriptions = [
-      'Находим сильные стороны объекта и превращаем их в понятные преимущества для будущего покупателя.',
-      'Определяем позиционирование, ценовой ориентир и ключевые акценты для презентации объекта.',
-      'Выбираем релевантные каналы и показываем объект аудитории, которая соответствует его уровню.',
-      'Берём на себя коммуникацию с покупателями и защищаем интересы собственника на каждом этапе переговоров.',
-      'Проверяем документы и сопровождаем сделку, чтобы обеспечить её юридическую чистоту и безопасность.',
-      'Контролируем доступ к информации об объекте и проводим просмотры с учётом требований собственника.'
-    ];
+  "Изучаем площадь, планировку, назначение и технические характеристики. Если объект сдан в аренду, анализируем условия договоров и действующий арендный поток.",
+  "Определяем, кому подходит объект: частному инвестору, компании для собственного использования или профильному участнику рынка. Готовим аргументы для каждой аудитории.",
+  "Представляем локацию, транспортную доступность, окружение и возможности использования. Готовим материалы, которые помогают покупателю оценить объект до просмотра.",
+  "Координируем работу брокера и специалистов, необходимых для конкретного объекта. Уточняем документы, технические параметры и вопросы, влияющие на условия сделки.",
+  "Разбираем историю экспозиции, обратную связь и предложения конкурентов. При необходимости корректируем позиционирование, материалы и каналы продвижения.",
+  "Согласовываем объём публичной информации, круг потенциальных покупателей и порядок просмотров. Учитываем интересы собственника и действующих арендаторов."
+];
 
     page.querySelectorAll('.owner-sale-presentation__card').forEach(function (card, index) {
       const caption = card.querySelector('.owner-sale-presentation__caption');
@@ -286,60 +286,7 @@
 
   enhanceSaleStages();
 
-  let stagesScrollFrame = null;
-  const updateStagesScrollState = function () {
-    const section = page.querySelector('.owner-sale-stages');
-    const items = section && Array.from(section.querySelectorAll('.owner-sale-stages__item'));
-    const headerBlock = section && section.querySelector('.owner-sale-stages__header');
-    const desktop = window.matchMedia('(min-width: 901px)').matches;
-    if (!section || !items.length) return;
-
-    if (!desktop) {
-      section.classList.remove('owner-sale-stages--scroll-ready');
-      items.forEach(function (item) {
-        item.classList.remove('is-active', 'is-past');
-        item.style.removeProperty('--owner-sale-stages-last-offset');
-      });
-      return;
-    }
-
-    let alignmentLine = headerBlock ? parseFloat(window.getComputedStyle(headerBlock).top) : 120;
-    if (!Number.isFinite(alignmentLine)) alignmentLine = 120;
-    const lastItem = items[items.length - 1];
-    const currentLastOffset = parseFloat(lastItem.style.getPropertyValue('--owner-sale-stages-last-offset')) || 0;
-    const naturalLastTop = lastItem.getBoundingClientRect().top - currentLastOffset;
-    const headerTop = headerBlock ? headerBlock.getBoundingClientRect().top : alignmentLine;
-    const lastOffset = Math.max(0, headerTop - naturalLastTop);
-    lastItem.style.setProperty('--owner-sale-stages-last-offset', lastOffset + 'px');
-
-    let activeIndex = 0;
-    let closestDistance = Infinity;
-    items.forEach(function (item, index) {
-      const distance = Math.abs(item.getBoundingClientRect().top - alignmentLine);
-      if (distance < closestDistance) {
-        closestDistance = distance;
-        activeIndex = index;
-      }
-    });
-
-    section.classList.add('owner-sale-stages--scroll-ready');
-    items.forEach(function (item, index) {
-      item.classList.toggle('is-active', index === activeIndex);
-      item.classList.toggle('is-past', index < activeIndex);
-    });
-  };
-
-  const requestStagesScrollUpdate = function () {
-    if (stagesScrollFrame) return;
-    stagesScrollFrame = window.requestAnimationFrame(function () {
-      stagesScrollFrame = null;
-      updateStagesScrollState();
-    });
-  };
-
-  window.addEventListener('scroll', requestStagesScrollUpdate, { passive: true });
-  window.addEventListener('resize', requestStagesScrollUpdate, { passive: true });
-  requestStagesScrollUpdate();
+  // All six stages remain visible; no extra scroll runway on this page.
 
   const enhanceStickyHeader = function () {
     const inner = sticky && sticky.querySelector('.owner-sale-sticky__inner');
@@ -372,9 +319,9 @@
       messengers.className = 'owner-sale-sticky__messengers';
       messengers.setAttribute('aria-label', 'Способы связи');
       [
-        ['WhatsApp', 'https://wa.me/79252621650', '../pictures/office-contact/whatsapp.svg'],
-        ['MAX', 'https://max.ru/join/AWj8ibiCtAPOJOlulMGNkykKGz_prXVWg-IQK1KpUG8', '../pictures/office-contact/max.svg'],
-        ['Telegram', 'https://t.me/art_de_vivre_barnes', '../pictures/office-contact/telegram.svg']
+        ['WhatsApp', 'https://wa.me/79252621650', '_site/pictures/office-contact/whatsapp.svg'],
+        ['MAX', 'https://max.ru/join/AWj8ibiCtAPOJOlulMGNkykKGz_prXVWg-IQK1KpUG8', '_site/pictures/office-contact/max.svg'],
+        ['Telegram', 'https://t.me/art_de_vivre_barnes', '_site/pictures/office-contact/telegram.svg']
       ].forEach(function (item) {
         const link = document.createElement('a');
         const icon = document.createElement('img');
@@ -453,8 +400,8 @@
   if (!document.querySelector('.floating-expert')) {
     const expert = document.createElement('aside');
     expert.className = 'floating-expert floating-expert--gorodskaya';
-    expert.setAttribute('aria-label', 'Руслан Прус');
-    expert.innerHTML = '<button type="button" class="floating-expert__card" aria-haspopup="dialog"><span class="floating-expert__avatar"><img src="assets/ruslan.webp" alt="Руслан Прус" width="72" height="72" loading="lazy" decoding="async"></span><span class="floating-expert__content"><span class="floating-expert__label">Руководитель департамента городской недвижимости</span><span class="floating-expert__title">Задать вопрос эксперту</span><span class="floating-expert__name">Руслан Прус</span></span></button><button type="button" class="floating-expert__close" aria-label="Скрыть карточку Руслан Прус"></button>';
+    expert.setAttribute('aria-label', 'Алина Медведева');
+    expert.innerHTML = '<button type="button" class="floating-expert__card" aria-haspopup="dialog"><span class="floating-expert__avatar"><img src="assets/alina-medvedeva.webp" alt="Алина Медведева" width="72" height="72" loading="lazy" decoding="async"></span><span class="floating-expert__content"><span class="floating-expert__label">Эксперт по коммерческой недвижимости</span><span class="floating-expert__title">Задать вопрос эксперту</span><span class="floating-expert__name">Алина Медведева</span></span></button><button type="button" class="floating-expert__close" aria-label="Скрыть карточку Алина Медведева"></button>';
     expert.querySelectorAll('*').forEach(function (element) {
       element.setAttribute('data-v-cd0a1259', '');
     });
@@ -469,32 +416,32 @@
     if (!placeholder || placeholder.children.length) return;
 
     const services = [
-      'Отдельная веб-страница с презентацией объекта',
-      'Адресные рассылки по клиентской базе — на почту и в мессенджеры',
-      'Включение объекта в тематические подборки недвижимости',
-      'Размещение в социальных сетях и на онлайн-площадках',
-      'Персональный брокер, погруженный во все детали объекта',
-      'Нестандартные сценарии продажи: аукцион, обмен и другие форматы',
-      'Виртуальный 3D-тур для детального знакомства с объектом онлайн',
-      'Профессиональная видеосъемка недвижимости',
-      'Создание рекламных материалов для продвижения объекта',
-      'Профессиональная фотосъемка и обработка изображений',
-      'Брендированный баннер на объекте'
-    ];
+  "Отдельная веб-страница с характеристиками, планами и условиями продажи коммерческого объекта.",
+  "Представление объекта подходящим клиентам по электронной почте и в мессенджерах.",
+  "Включение объекта в подборки офисов, зданий, торговых помещений или инвестиционной недвижимости.",
+  "Размещение материалов на профильных площадках и в подходящих каналах продвижения.",
+  "Одна точка связи по просмотрам, обращениям покупателей, обратной связи и условиям продажи.",
+  "Открытая экспозиция или адресный поиск покупателя с согласованным уровнем конфиденциальности.",
+  "Дистанционное знакомство с планировкой и пространством, когда такой формат подходит объекту.",
+  "Видеопрезентация недвижимости, её расположения и важных для покупателя особенностей.",
+  "Материалы с ключевыми параметрами объекта для индивидуальных презентаций и встреч.",
+  "Съёмка фасадов, интерьеров и деталей, позволяющих оценить состояние и возможности пространства.",
+  "Информация о продаже на самом объекте, если размещение возможно и согласовано с собственником."
+];
 
     const serviceTitles = [
-      'Презентация объекта',
-      'Адресные рассылки',
-      'Тематические подборки',
-      'Социальные сети и площадки',
-      'Персональный брокер',
-      'Индивидуальный сценарий продажи',
-      'Виртуальный 3D-тур',
-      'Видеосъёмка',
-      'Рекламные материалы',
-      'Фотосъёмка',
-      'Баннер на объекте'
-    ];
+  "Презентация объекта",
+  "Адресные рассылки",
+  "Тематические подборки",
+  "Социальные сети и площадки",
+  "Персональный брокер",
+  "Индивидуальный сценарий",
+  "Виртуальный 3D-тур",
+  "Видеосъёмка",
+  "Рекламные материалы",
+  "Фотосъёмка",
+  "Баннер на объекте"
+];
     const slider = document.createElement('div');
     slider.className = 'splide owner-sale-services__slider is-overflow is-initialized splide--slide splide--ltr splide--draggable is-active';
     slider.setAttribute('data-v-2d6c67d9', '');
@@ -586,7 +533,7 @@
     '.owner-sale-types img',
     '.newsletter-cta img'
   ].join(',')).forEach(function (image) {
-    image.setAttribute('loading', 'eager');
+    image.setAttribute('loading', 'lazy');
   });
 
   document.querySelectorAll('a[target="_blank"]').forEach(function (link) {
@@ -672,21 +619,6 @@
       if (copy) copy.classList.toggle('about-company__copy--open', !expanded);
     });
   }
-
-  page.querySelectorAll('form').forEach(function (form) {
-    form.addEventListener('submit', function (event) {
-      event.preventDefault();
-      const submit = form.querySelector('button[type="submit"], button');
-      if (!submit) return;
-      const original = submit.textContent;
-      submit.textContent = 'Спасибо, заявка отправлена';
-      submit.disabled = true;
-      window.setTimeout(function () {
-        submit.textContent = original;
-        submit.disabled = false;
-      }, 2600);
-    });
-  });
 
   document.querySelectorAll('.floating-expert__close').forEach(function (close) {
     close.addEventListener('click', function (event) {

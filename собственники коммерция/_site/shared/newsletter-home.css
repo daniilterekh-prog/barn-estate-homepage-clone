@@ -1,0 +1,10 @@
+/* Original homepage email subscription; independent of the consultation CTA adapter. */
+html body#ui-kit-page .newsletter-cta[data-home-newsletter]{background:#fff!important;color:#1e1e1e!important}
+html body#ui-kit-page .newsletter-cta[data-home-newsletter] .newsletter-cta__copy{display:flex!important;flex-direction:column!important;justify-content:flex-start!important}
+html body#ui-kit-page .newsletter-cta[data-home-newsletter] .home-section-eyebrow{font:400 14px/16.1px "Tilda Sans",sans-serif!important;letter-spacing:.12em!important;text-transform:uppercase!important;margin:0 0 25px!important;color:#4f4d49!important}
+html body#ui-kit-page .newsletter-cta[data-home-newsletter] .newsletter-form{width:100%;margin-top:24px!important}
+html body#ui-kit-page .newsletter-cta[data-home-newsletter] .newsletter-form__row>button svg{flex:0 0 16px;width:16px;height:16px}
+@media(max-width:1024px){html body#ui-kit-page .newsletter-cta[data-home-newsletter] .home-section-eyebrow{font-size:12px!important;line-height:14.4px!important;margin-bottom:12px!important}}
+@media(max-width:540px){html body#ui-kit-page .newsletter-cta[data-home-newsletter] .newsletter-form{margin-top:16px!important}}
+
+html body#ui-kit-page .newsletter-cta[data-home-newsletter] .newsletter-form__error{color:#b42318!important}
