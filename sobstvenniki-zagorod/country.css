@@ -35,3 +35,24 @@ html body#ui-kit-page[data-owner-country] #request .catalog-consultation__inner 
 @media(max-width:540px){html body#ui-kit-page[data-owner-country] .catalog-consultation{--node-heading-content:28px;--node-copy-gap:16px;}}
 /* Leave the inline form clear while the visitor is working with it. */
 html body#ui-kit-page[data-owner-country]:has(#request:focus-within) .floating-expert {visibility:hidden;pointer-events:none;}
+/* Anchor the capped portrait to the CTA floor. With both top and bottom set,
+   top won the over-constrained positioning and left a hard edge below the photo. */
+@media(min-width:769px) {
+ html body#ui-kit-page[data-owner-country] #request.catalog-consultation .catalog-consultation__image {
+  top:auto!important;
+  bottom:0!important;
+ }
+}
+/* Leave a clear gap between the expert and the form in the tablet split layout. */
+@media(min-width:769px) and (max-width:1024px) {
+ html body#ui-kit-page[data-owner-country] #request.catalog-consultation .catalog-consultation__image {left:-33%!important;}
+}
+/* A single-column form uses the existing expert avatar instead of cropping
+   a full-height portrait behind the fields. */
+@media(max-width:768px) {
+ html body#ui-kit-page[data-owner-country] #request.catalog-consultation .catalog-consultation__image {display:none!important;}
+ html body#ui-kit-page[data-owner-country] #request .catalog-consultation__media {background:#242424!important;}
+ html body#ui-kit-page[data-owner-country] #request .catalog-consultation__mobile-expert {display:flex!important;align-items:center!important;gap:12px!important;margin-bottom:24px!important;}
+ html body#ui-kit-page[data-owner-country] #request .catalog-consultation__content {width:100%!important;max-width:none!important;margin-inline:0!important;}
+ html body#ui-kit-page[data-owner-country] #request :is(.catalog-consultation__form,.catalog-consultation__methods) {max-width:none!important;}
+}
