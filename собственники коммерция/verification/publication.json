@@ -1,10 +1,10 @@
 {
   "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/%D1%81%D0%BE%D0%B1%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%B8%D0%BA%D0%B8%20%D0%BA%D0%BE%D0%BC%D0%BC%D0%B5%D1%80%D1%86%D0%B8%D1%8F/",
-  "checkedAt": "2026-11-13T13:32:27.272Z",
-  "deployedCodeCommit": "e52b643a52ce78c59e37d7eead8388a422f6431f",
+  "checkedAt": "2026-11-13T14:07:21.750Z",
+  "deployedCodeCommit": "5380e40b78c51c074e378f2a2c7ab926400a7cda",
   "htmlStatus": 200,
-  "expectedHtmlSha256": "36e42d91fe001def99c094e2199ac102d33e4b9747f8af4aa1fafe258e5103f4",
-  "htmlSha256": "36e42d91fe001def99c094e2199ac102d33e4b9747f8af4aa1fafe258e5103f4",
+  "expectedHtmlSha256": "79266529f4181ee7ff345bd3bdde3cd24a78831a74b6d3a2e51f907b1aa84f4c",
+  "htmlSha256": "79266529f4181ee7ff345bd3bdde3cd24a78831a74b6d3a2e51f907b1aa84f4c",
   "images": [
     {
       "file": "hero.webp",
@@ -59,6 +59,21 @@
   ],
   "viewports": [
     {
+      "footerBackground": "rgb(38, 38, 38)",
+      "footerGrid": "grid",
+      "sectionOrder": [
+        "owner-sale-hero",
+        "presentation",
+        "services",
+        "team",
+        "stages",
+        "why-barnes",
+        "owner-sale-strategy",
+        "request",
+        "property-types",
+        "faq"
+      ],
+      "footerHours": "Ежедневно с 09:00 до 21:00",
       "width": 390,
       "h1": "Продать коммерческую недвижимость с BARN Estate",
       "overflow": 0,
@@ -69,6 +84,21 @@
       "expert": "Алина Медведева"
     },
     {
+      "footerBackground": "rgb(38, 38, 38)",
+      "footerGrid": "grid",
+      "sectionOrder": [
+        "owner-sale-hero",
+        "presentation",
+        "services",
+        "team",
+        "stages",
+        "why-barnes",
+        "owner-sale-strategy",
+        "request",
+        "property-types",
+        "faq"
+      ],
+      "footerHours": "Ежедневно с 09:00 до 21:00",
       "width": 1440,
       "h1": "Продать коммерческую недвижимость с BARN Estate",
       "overflow": 0,
@@ -82,8 +112,6 @@
   "httpErrors": [],
   "pageErrors": [],
   "nonGetRequests": [],
-  "passed": true,
-  "workflow": "https://github.com/daniilterekh-prog/barn-estate-homepage-clone/actions/runs/43434217480",
-  "sourceCommit": "02f540dd55e5a7e094dce757c7f95d1ca554d7c4",
-  "assetCommit": "d1408f73a2119d5cf6b772312df44f9777687da4"
+  "footerLogoSha256": "9b2d8c1a7d4d213587828c6bdf6592a37113a388fedc1b58211534d8cb1e7123",
+  "passed": true
 }
