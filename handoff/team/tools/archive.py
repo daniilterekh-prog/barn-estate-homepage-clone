@@ -13,7 +13,7 @@ checksums.write_text(''.join(hashlib.sha256(p.read_bytes()).hexdigest() + '  ' +
 files.append(checksums)
 with zipfile.ZipFile(archive, 'w', compression=zipfile.ZIP_DEFLATED, compresslevel=9) as output:
     for file in sorted(files):
-        entry = zipfile.ZipInfo(name + '/' + file.relative_to(root).as_posix(), date_time=(2026, 11, 10, 0, 0, 0))
+        entry = zipfile.ZipInfo(name + '/' + file.relative_to(root).as_posix(), date_time=(2026, 11, 13, 0, 0, 0))
         entry.compress_type = zipfile.ZIP_DEFLATED
         entry.external_attr = 0o100644 << 16
         output.writestr(entry, file.read_bytes())

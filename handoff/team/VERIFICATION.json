@@ -1,7 +1,7 @@
 {
-  "date": "2026-11-10T10:00:06.324Z",
-  "url": "http://127.0.0.1:8281/html/index.html",
-  "original": "http://127.0.0.1:8279/",
+  "date": "2026-11-13T14:28:22.998Z",
+  "url": "http://127.0.0.1:8181/html/index.html",
+  "original": "http://127.0.0.1:8179/",
   "widths": [
     320,
     360,
@@ -33,14 +33,14 @@
       "pixelIdentical": false,
       "maxChannelDelta": 1,
       "changedChannels": 18,
-      "sha256": "ebaa93a8cff7fe382e485bb9a879d4c15acadde0e3a68e5d043fb5b36e8e5828"
+      "sha256": "d79fa7df227963bc4b4adeb975728e837081efa7374ff14f9ce7a69130642d42"
     },
     {
       "width": 1920,
       "pixelIdentical": true,
       "maxChannelDelta": 0,
       "changedChannels": 0,
-      "sha256": "904424173229b43f56c979587b7365cdafa96f468b65f88f91527e23352fc8a1"
+      "sha256": "958de3ebe0c6bf334f1a9ad2702ec9f222cfa2414cb2e343d7dd446152e803a4"
     }
   ],
   "flows": [
@@ -52,5 +52,139 @@
   ],
   "errors": [],
   "failed": [],
-  "externalRequests": []
+  "externalRequests": [],
+  "headerSearch": {
+    "date": "2026-11-13T14:28:49.673Z",
+    "results": [
+      {
+        "url": "http://127.0.0.1:8179/",
+        "width": 320,
+        "searchVisible": false,
+        "overflow": false
+      },
+      {
+        "url": "http://127.0.0.1:8179/",
+        "width": 390,
+        "searchVisible": false,
+        "overflow": false
+      },
+      {
+        "url": "http://127.0.0.1:8179/",
+        "width": 540,
+        "searchVisible": false,
+        "overflow": false
+      },
+      {
+        "url": "http://127.0.0.1:8179/",
+        "width": 541,
+        "searchVisible": true,
+        "overflow": false
+      },
+      {
+        "url": "http://127.0.0.1:8179/",
+        "width": 768,
+        "searchVisible": true,
+        "overflow": false
+      },
+      {
+        "url": "http://127.0.0.1:8179/",
+        "width": 1024,
+        "searchVisible": true,
+        "overflow": false
+      },
+      {
+        "url": "http://127.0.0.1:8179/",
+        "width": 1280,
+        "searchVisible": true,
+        "overflow": false
+      },
+      {
+        "url": "http://127.0.0.1:8179/",
+        "width": 1440,
+        "searchVisible": true,
+        "overflow": false
+      },
+      {
+        "url": "http://127.0.0.1:8179/",
+        "width": 1920,
+        "searchVisible": true,
+        "overflow": false
+      },
+      {
+        "url": "http://127.0.0.1:8179/",
+        "width": 3840,
+        "searchVisible": true,
+        "overflow": false
+      },
+      {
+        "url": "http://127.0.0.1:8181/html/index.html",
+        "width": 320,
+        "searchVisible": false,
+        "overflow": false
+      },
+      {
+        "url": "http://127.0.0.1:8181/html/index.html",
+        "width": 390,
+        "searchVisible": false,
+        "overflow": false
+      },
+      {
+        "url": "http://127.0.0.1:8181/html/index.html",
+        "width": 540,
+        "searchVisible": false,
+        "overflow": false
+      },
+      {
+        "url": "http://127.0.0.1:8181/html/index.html",
+        "width": 541,
+        "searchVisible": true,
+        "overflow": false
+      },
+      {
+        "url": "http://127.0.0.1:8181/html/index.html",
+        "width": 768,
+        "searchVisible": true,
+        "overflow": false
+      },
+      {
+        "url": "http://127.0.0.1:8181/html/index.html",
+        "width": 1024,
+        "searchVisible": true,
+        "overflow": false
+      },
+      {
+        "url": "http://127.0.0.1:8181/html/index.html",
+        "width": 1280,
+        "searchVisible": true,
+        "overflow": false
+      },
+      {
+        "url": "http://127.0.0.1:8181/html/index.html",
+        "width": 1440,
+        "searchVisible": true,
+        "overflow": false
+      },
+      {
+        "url": "http://127.0.0.1:8181/html/index.html",
+        "width": 1920,
+        "searchVisible": true,
+        "overflow": false
+      },
+      {
+        "url": "http://127.0.0.1:8181/html/index.html",
+        "width": 3840,
+        "searchVisible": true,
+        "overflow": false
+      }
+    ],
+    "checks": [
+      "visible above 540px, hidden at mobile breakpoint",
+      "search geometry and no overlap",
+      "Tab focus and visible focus ring",
+      "Enter navigates to existing property catalog (intercepted, no live request)",
+      "visible after sticky scroll",
+      "works without JavaScript"
+    ],
+    "passed": true
+  }
 }

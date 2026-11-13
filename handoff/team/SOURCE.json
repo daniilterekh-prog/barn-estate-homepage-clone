@@ -1,7 +1,7 @@
 {
-  "date": "2026-11-10",
+  "date": "2026-11-13",
   "repository": "daniilterekh-prog/barnes-sites",
-  "commit": "22f5650a72d1e87fd8db95ccb4e9c03b24ed2d03",
+  "commit": "89ea0df24c6a521b5fc94eff487b4487f0ded056",
   "source": "main-site/pages/team/",
   "preview": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/team/",
   "transform": "Resource paths only; remote font URLs use the already included matching fonts. Page links point to the public site. No UI or behavior changes.",
@@ -429,9 +429,9 @@
     {
       "source": "main-site/pages/team/favorites-header/integration.css",
       "file": "css/header/integration.css",
-      "sourceSha256": "9dd1e34ab677000400a2740b3ce9065fbd61a593fd4d5399a41d04773d8066c7",
-      "sha256": "9dd1e34ab677000400a2740b3ce9065fbd61a593fd4d5399a41d04773d8066c7",
-      "bytes": 1566
+      "sourceSha256": "3c16b4c729d2a1f920b4da759212c9993e96bd25d612f1bf32acf0b494bc9932",
+      "sha256": "3c16b4c729d2a1f920b4da759212c9993e96bd25d612f1bf32acf0b494bc9932",
+      "bytes": 2225
     },
     {
       "source": "main-site/pages/team/home-form/assets/owner-modal-prus.webp",
@@ -464,9 +464,9 @@
     {
       "source": "main-site/pages/team/index.html",
       "file": "html/index.html",
-      "sourceSha256": "73a987de8234b1e24f72034e413b0f360647c4481d4e76fdde481895c62c725e",
-      "sha256": "bc4d1d3d6f617e0d9fc6261ad2ab4a53f124b561abbbf3130447faf1013a027b",
-      "bytes": 68013
+      "sourceSha256": "8f1a25b2d79a7473548d9efc7cf567c9588e86f3e6034d9d02a3482f5d16d09e",
+      "sha256": "741caa04281d17519195486e0072e884a4ec847c349d8c9574a014bdc12a1567",
+      "bytes": 68421
     },
     {
       "source": "main-site/pages/team/team.css",

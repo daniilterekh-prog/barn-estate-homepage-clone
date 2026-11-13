@@ -104,5 +104,5 @@ for name, content in fragments.items():
     (PACKAGE / 'html' / name).write_text('<!-- Integration fragment; load the same CSS/JS and data as index.html. -->\n' + content.strip() + '\n')
 for item in refs:
     assert (PACKAGE / item['to']).is_file(), item
-(PACKAGE / 'SOURCE.json').write_text(json.dumps({'date': '2026-11-10', 'repository': 'daniilterekh-prog/barnes-sites', 'commit': commit, 'source': prefix, 'preview': SOURCE_URL, 'transform': 'Resource paths only; remote font URLs use the already included matching fonts. Page links point to the public site. No UI or behavior changes.', 'files': records, 'resolvedReferences': refs}, ensure_ascii=False, indent=2) + '\n')
+(PACKAGE / 'SOURCE.json').write_text(json.dumps({'date': '2026-11-13', 'repository': 'daniilterekh-prog/barnes-sites', 'commit': commit, 'source': prefix, 'preview': SOURCE_URL, 'transform': 'Resource paths only; remote font URLs use the already included matching fonts. Page links point to the public site. No UI or behavior changes.', 'files': records, 'resolvedReferences': refs}, ensure_ascii=False, indent=2) + '\n')
 print(f'Exported {len(records)} runtime files and 4 HTML fragments; {len(refs)} local references resolved.')
