@@ -14,3 +14,6 @@
 
 .map-panel{position:relative;overflow:hidden}.map-panel iframe{position:absolute;inset:0;background:white}/* Local SVG arrows share the line weight and currentColor of the site icons. */
 .ui-arrow{display:inline-block;width:18px;height:18px;flex:0 0 18px;vertical-align:-.16em;overflow:visible;pointer-events:none}
+
+/* The apartment selection CTA uses the established primary button component. */
+#apartments .selection-cta{margin-top:24px;max-width:100%;white-space:normal}
