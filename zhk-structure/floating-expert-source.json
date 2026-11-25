@@ -1,0 +1,18 @@
+{
+  "checked_on": "2026-11-25",
+  "reference": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/exact-2026-10-21/",
+  "source": "Existing homepage floating-expert; measured layout and source home-spacing portrait crop",
+  "asset": {
+    "local": "assets/floating-ruslan.webp",
+    "source": "https://raw.githubusercontent.com/daniilterekh-prog/barnes-assets/main/blocks/_assets/6bbaa8e1df83-modal-ruslan-organic.webp",
+    "sha256": "6bbaa8e1df83e7d5eda42c83d174e1f0177a8cbb5698bd5ec01ee3602e8f84aa",
+    "git_blob": "c0aa21b08c1705c28e1b9f702216a766748a525c",
+    "matches_home_source": "main-site/pages/home/exact-2026-10-21/source/assets/owner-modal-prus.webp",
+    "bytes": 210000
+  },
+  "action": "Existing local demonstration contact dialog; widget appearance only, homepage multi-step quiz not imported",
+  "mobile": "Raised above existing mobile actions using observed bar height",
+  "visibility": "Hide beside final expert CTA, footer, or an open dialog; close dismisses until reload",
+  "dependencies_added": false,
+  "shared_sources_modified": false
+}
