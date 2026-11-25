@@ -13,7 +13,7 @@
 
 - [Собственники узел — открыть страницу](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/sobstvenniki-uzel/) · [структура, исходники и семь новых изображений](sobstvenniki-uzel/README.md).
 
-- [ЖК: визуальный черновик новой структуры в действующем UI-ките ·10.11.2026](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/zhk-structure/) — отдельное превью, 13 блоков; текущая Вавилова 64 сохранена.
+- [ЖК: визуальный черновик новой структуры в действующем UI-ките ·10.11.2026](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/zhk-structure/) — отдельное превью, 14 блоков; текущая Вавилова 64 сохранена.
 
 - [Собственник — продажа СПб — адаптация по главной СПб ·10.11.2026](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/prodazha_sobstvennikam_spb/). [Папка разработчика](handoff/owner-sale-spb/README.md) · [ZIP](handoff/owner-sale-spb/owner-sale-spb-developer.zip).
 
