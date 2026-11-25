@@ -17,7 +17,9 @@ section.project-hero{
   margin:0;width:100%;display:grid;
   grid-template-columns:minmax(0,1fr) 280px;column-gap:48px;align-items:end;
 }
-.project-hero .hero-copy>:is(.eyebrow,h1,.project-hero__summary){grid-column:1}
+.project-hero__details{min-width:0}
+.project-hero .eyebrow{display:flex;align-items:center;gap:8px}
+.project-hero__pin{width:16px;height:16px;flex:0 0 16px}
 .project-hero .eyebrow{margin-bottom:26px;font-size:14px;line-height:1.4;letter-spacing:.12em;color:#fff}
 .project-hero h1{
   max-width:1250px;margin:0 0 22px;
@@ -25,15 +27,15 @@ section.project-hero{
   letter-spacing:normal;text-transform:none;text-wrap:balance;
 }
 .project-hero__summary{
-  display:flex;align-items:center;flex-wrap:wrap;gap:10px 18px;
+  display:flex;align-items:center;flex-wrap:wrap;gap:12px 28px;
   margin:0;font-size:22px;line-height:1.4;font-weight:300;color:#fff;
 }
-.project-hero__summary>span{white-space:nowrap}
-.project-hero__separator{opacity:.7}
-.project-hero .actions{grid-column:2;grid-row:1/4;gap:18px;margin:0;width:100%;max-width:none;flex-direction:column;align-items:stretch}
+.project-hero__metric{display:inline-flex;align-items:center;gap:9px;padding-bottom:7px;border-bottom:1px solid rgba(255,255,255,.6);white-space:nowrap}
+.project-hero__metric svg{flex:0 0 20px}
+.project-hero .actions{gap:14px;margin:0;width:100%;max-width:none;flex-direction:column;align-items:stretch}
 .project-hero .button{min-width:0;width:100%;white-space:nowrap}
-.project-hero .text-link{justify-content:space-between;min-height:44px;font-size:17px;gap:24px;color:#fff;text-decoration-color:rgba(255,255,255,.65)}
-.project-hero .text-link:hover{color:#fff;text-decoration-color:#fff}
+.project-hero .project-hero__secondary{background:transparent;border:1px solid rgba(255,255,255,.7);color:#fff;text-decoration:none}
+.project-hero .project-hero__secondary:hover{background:rgba(255,255,255,.12);border-color:#fff;color:#fff}
 .project-hero :is(a,button):focus-visible{outline-color:#fff}
 .project-hero .image-caption{right:var(--gutter);bottom:18px;font-size:12px;opacity:1}
 @media(min-width:1441px){
@@ -62,10 +64,9 @@ section.project-hero{
   .project-hero .hero-image{object-position:52% center}
   .project-hero .eyebrow{font-size:11px;letter-spacing:.1em;margin-bottom:24px}
   .project-hero h1{font-size:48px;margin-bottom:20px}
-  .project-hero__summary{font-size:20px;gap:8px 14px}
+  .project-hero__summary{font-size:20px;gap:12px 22px}
   .project-hero .actions{flex-direction:column;align-items:stretch;gap:10px;margin-top:28px;max-width:280px;margin-left:auto}
   .project-hero .button{min-width:0;width:100%;white-space:nowrap}
-  .project-hero .text-link{justify-content:space-between;font-size:16px;min-height:44px}
   .project-hero .image-caption{bottom:18px;font-size:11px}
 }
 
@@ -74,7 +75,9 @@ section.project-hero{
   .project-hero .project-hero__inner{padding-top:110px;padding-bottom:72px}
   .project-hero .eyebrow{margin-bottom:16px}
   .project-hero h1{font-size:clamp(38px,10vw,48px);margin-bottom:18px}
-  .project-hero__summary{font-size:17px;gap:8px 12px}
-  .project-hero .actions{margin-top:28px;gap:4px}
+  .project-hero__summary{font-size:17px;gap:12px 16px}
+  .project-hero__metric{gap:6px;padding-bottom:6px}
+  .project-hero__metric svg{width:16px;height:16px;flex-basis:16px}
+  .project-hero .actions{margin-top:28px;gap:10px}
   .project-hero .image-caption{bottom:12px}
 }
