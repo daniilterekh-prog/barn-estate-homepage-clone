@@ -6,7 +6,6 @@
   const buttons=Array.from(section.querySelectorAll('.pg-photo'));
   const previous=section.querySelector('[data-gallery-prev]');
   const next=section.querySelector('[data-gallery-next]');
-  const counter=section.querySelector('.pg-counter');
   const total=buttons.length;
   if(!total){section.hidden=true;return;}
   if(window.BarnSplide){
@@ -18,9 +17,6 @@
       i18n:{carousel:'галерея проекта',slide:'фотография',slideLabel:'%s из %s'}
     });
     function sync(){
-      const first=carousel.index+1,last=Math.min(total,carousel.index+carousel.options.perPage);
-      counter.textContent=first===last?`${first} / ${total}`:`${first}–${last} / ${total}`;
-      counter.setAttribute('aria-label',`Фотографии ${first===last?first:`${first}–${last}`} из ${total}`);
       previous.disabled=carousel.index===0;
       next.disabled=carousel.index>=carousel.Components.Controller.getEnd();
       previous.hidden=next.hidden=total<=carousel.options.perPage;

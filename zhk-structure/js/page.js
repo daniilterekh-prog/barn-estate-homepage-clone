@@ -2,6 +2,7 @@ const contactDialog = document.querySelector('#contact-dialog');
 const imageDialog = document.querySelector('#image-dialog');
 const result = document.querySelector('#contact-result');
 let previousFocus;
+const unavailableMessage = 'Заявка не отправлена. Свяжитесь с нами: +7 (495) 182-50-79.';
 function openDialog(dialog) {
   previousFocus = document.activeElement;
   dialog.showModal();
@@ -27,7 +28,7 @@ document.querySelectorAll('[data-contact]').forEach(button => button.addEventLis
 }));
 document.querySelector('#contact-form').addEventListener('submit', event => {
   event.preventDefault();
-  result.textContent = 'Сценарий проверен. В рабочей версии здесь будет отправка обращения эксперту. Введённые данные никуда не отправлены и не сохранены.';
+  result.textContent = unavailableMessage;
   event.currentTarget.reset();
 });
 document.querySelectorAll('[data-image]').forEach(button => button.addEventListener('click', () => {
@@ -45,15 +46,13 @@ document.querySelectorAll('[data-room]').forEach(button => button.addEventListen
     item.setAttribute('aria-pressed', String(selected));
   });
   document.querySelectorAll('[data-format]').forEach(item => { item.hidden = room !== 'all' && item.dataset.format !== room; });
-  const count = document.querySelectorAll('[data-format]:not([hidden])').length;
-  document.querySelector('#format-status').textContent = `Примеров форматов: ${count} · наличие и стоимость уточняются`;
 }));
 
 const expertForm = document.querySelector('#project-consultation-form');
 expertForm?.addEventListener('submit', event => {
   event.preventDefault();
   const status = document.querySelector('#expert-result');
-  status.textContent = 'Сценарий обращения проверен. Введённые данные никуда не отправлены и не сохранены.';
+  status.textContent = unavailableMessage;
   status.hidden = false;
   expertForm.reset();
   status.focus({ preventScroll: true });

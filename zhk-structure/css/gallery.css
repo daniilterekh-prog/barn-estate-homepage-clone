@@ -18,11 +18,14 @@
 .pg-nav-button svg{display:block;width:11px;height:22px}
 .pg-nav-button:disabled{opacity:.35;cursor:default}
 .pg-nav-button:not(:disabled):hover{color:var(--brand);border-color:var(--brand)}
-.pg-counter{font-size:14px;font-weight:400;line-height:1.2;color:var(--copy);font-variant-numeric:tabular-nums}
+
 .project-gallery .pg-photo:focus-visible{outline:2px solid var(--brand);outline-offset:-4px}
 .project-gallery .pg-nav-button:focus-visible,#image-dialog .pg-nav-button:focus-visible{outline:2px solid var(--brand);outline-offset:4px}
 #image-dialog .pg-viewer-nav{display:flex;align-items:center;justify-content:center;gap:24px;margin-top:16px}
 #image-dialog.pg-viewer #image-large{height:calc(100svh - 245px)}
 @media(min-width:1441px){.pg-nav-button{width:68px;height:68px;flex-basis:68px}.pg-nav{gap:40px}}
-@media(max-width:767px){.project-gallery .splide:not(.is-initialized) .splide__slide{width:100%}.pg-footer{margin-top:24px}.pg-nav{gap:20px}.pg-nav-button{width:48px;height:48px;flex-basis:48px}.pg-expand{right:12px;bottom:12px;width:36px;height:36px}.pg-counter{font-size:13px}}
+@media(max-width:767px){.project-gallery .splide:not(.is-initialized) .splide__slide{width:100%}.pg-footer{margin-top:24px}.pg-nav{gap:20px}.pg-nav-button{width:48px;height:48px;flex-basis:48px}.pg-expand{right:12px;bottom:12px;width:36px;height:36px}}
 @media(prefers-reduced-motion:reduce){.project-gallery *{transition:none!important;scroll-behavior:auto!important}}
+
+/* Keep the native dialog accessible without displaying gallery captions. */
+#image-dialog.pg-viewer #image-caption{display:none}
