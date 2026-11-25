@@ -1,0 +1,9 @@
+/* Text-first project description using existing homepage typography and gutters. */
+#architecture .project-description{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(32px,5vw,80px);align-items:start}
+#architecture .project-description__text{min-width:0;color:var(--copy);font-size:var(--lead);font-weight:300;line-height:var(--lead-line);overflow-wrap:anywhere}
+#architecture .project-description__text p+p{margin-top:var(--copy-gap,24px)}
+#architecture .project-description__image{margin:0;min-width:0}
+#architecture .project-description__image img{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover}
+#architecture .project-description--text-only{display:block}
+#architecture .project-description--text-only .project-description__text{max-width:900px}
+@media(max-width:767px){#architecture .project-description{grid-template-columns:1fr;gap:28px}#architecture .project-description__text p+p{margin-top:16px}#architecture .project-description__image img{aspect-ratio:4/3}}
