@@ -1,0 +1,32 @@
+/* Project-card appearance from the existing city sales node; isolated local copy. */
+.related-project-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;list-style:none;margin:0;padding:0}
+.related-project-grid>li{min-width:0;display:flex}
+.rp-card{width:100%;min-width:0;display:flex;flex-direction:column;background:#fff;color:var(--ink)}
+.rp-media{position:relative;aspect-ratio:4/3;background:#fff;overflow:hidden}
+.rp-image-link{display:block;width:100%;height:100%}
+.rp-media img{display:block;width:100%;height:100%;object-fit:cover}
+.rp-favorite{position:absolute;top:14px;right:14px;width:40px;height:40px;border:1px solid rgba(30,30,30,.16);border-radius:50%;display:grid;place-items:center;background:#fff;color:var(--ink);padding:0;cursor:pointer}
+.rp-favorite[aria-pressed=true]{color:var(--brand)}
+.rp-favorite[aria-pressed=true] svg{fill:var(--brand)}
+.rp-body{position:relative;background:#fff;margin:-35px 12px 0;padding:20px 18px 0;display:flex;flex-direction:column;flex:1}
+.rp-address{font:400 16px/1.25 "Tilda Sans",sans-serif;min-height:40px;margin:0}
+.rp-name{font:400 23px/1.12 "Tilda Sans",sans-serif;letter-spacing:normal;text-transform:none;margin:10px 0 15px;overflow-wrap:anywhere}
+.rp-name a{color:inherit;text-decoration:none}
+.rp-name a:hover{color:var(--brand)}
+.rp-facts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:auto 0 0;padding:0 0 18px;border-bottom:1px solid var(--line);text-align:center}
+.rp-facts>div{min-width:0}
+.rp-facts dt{font:400 12px/1.2 "Tilda Sans",sans-serif;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);margin-bottom:5px}
+.rp-facts dd{font:400 16px/1.25 "Tilda Sans",sans-serif;overflow-wrap:anywhere}
+.rp-actions{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:0 12px;padding:20px 18px 0}
+.rp-call,.rp-details{box-sizing:border-box;display:flex;align-items:center;justify-content:center;gap:8px;width:100%;min-height:54px;padding:9px 8px;border:1px solid rgba(30,30,30,.22);border-radius:1px;font:400 15px/1 "Tilda Sans",sans-serif;cursor:pointer;text-decoration:none;text-align:center}
+.rp-call{background:#fff;color:var(--ink)}
+.rp-details{background:var(--brand);border-color:var(--brand);color:#fff}
+.rp-details svg{flex:0 0 16px}
+.rp-call:hover{border-color:var(--brand);color:var(--brand)}
+.rp-details:hover{background:#801b22;border-color:#801b22}
+.rp-card :is(a,button):focus-visible{outline:2px solid var(--brand);outline-offset:4px}
+.rp-card .rp-image-link:focus-visible{outline-offset:-4px}
+.rp-status{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}
+@media(max-width:1024px){.related-project-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:767px){.related-project-grid{grid-template-columns:1fr;gap:32px}.rp-name{font-size:22px}.rp-call,.rp-details{min-height:50px}}
+@media(max-width:359px){.rp-actions{padding-inline:8px}.rp-call,.rp-details{font-size:14px}.rp-body{padding-inline:14px}}

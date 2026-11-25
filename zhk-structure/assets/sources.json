@@ -117,5 +117,35 @@
     "sha256": "6bbaa8e1df83e7d5eda42c83d174e1f0177a8cbb5698bd5ec01ee3602e8f84aa",
     "bytes": 210000,
     "processing": "Copied unchanged from canonical assets; matches the current homepage owner-modal-prus portrait"
+  },
+  {
+    "file": "related-opus.webp",
+    "source": "https://raw.githubusercontent.com/daniilterekh-prog/barnes-assets/291073edeb9a6914e9e066e738a3e8f5bb9a65d7/related-projects/moscow/official/opus.webp",
+    "official_source": "https://opus-home.ru/upload/iblock/eb7/pq96iiwpv2usjvojsg3r22sscd55hxq1.webp",
+    "checked_on": "2026-11-25",
+    "sha256": "bbeee4df2f9f8e55d5fd69c512607fa38f91d22d64c3500036797f8838734102",
+    "bytes": 71168,
+    "processing": "ctk images (Sharp): EXIF orientation, width capped at 960px without enlargement, WebP output; content unchanged",
+    "tool": "ctk images / Sharp 0.35.5"
+  },
+  {
+    "file": "related-high-life.webp",
+    "source": "https://raw.githubusercontent.com/daniilterekh-prog/barnes-assets/291073edeb9a6914e9e066e738a3e8f5bb9a65d7/related-projects/moscow/official/high-life.webp",
+    "official_source": "https://highlife.ru/upload/iblock/7fb/2ipwo9yso7udjf5qwh1eg41gol7lz857.webp",
+    "checked_on": "2026-11-25",
+    "sha256": "a8d4e4cc61eaf0af88468eec1d5f306dea15f52f71be4b9b9f7c8ca395138565",
+    "bytes": 86144,
+    "processing": "ctk images (Sharp): EXIF orientation, width capped at 960px without enlargement, WebP output; content unchanged",
+    "tool": "ctk images / Sharp 0.35.5"
+  },
+  {
+    "file": "related-vesper-kutuzovsky.webp",
+    "source": "https://raw.githubusercontent.com/daniilterekh-prog/barnes-assets/291073edeb9a6914e9e066e738a3e8f5bb9a65d7/related-projects/moscow/official/vesper-kutuzovsky.webp",
+    "official_source": "https://vesper-kutuzovsky.ru/wp-content/uploads/2025/02/img-4.jpg",
+    "checked_on": "2026-11-25",
+    "sha256": "881541b3d44fb23a493c81db2e6ac0fe7fd9b4baf1c222b67eeb8e79528eb026",
+    "bytes": 67202,
+    "processing": "ctk images (Sharp): EXIF orientation, width capped at 960px without enlargement, WebP output; content unchanged",
+    "tool": "ctk images / Sharp 0.35.5"
   }
 ]
