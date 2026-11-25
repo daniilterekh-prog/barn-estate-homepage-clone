@@ -1,0 +1,5 @@
+/* Shared text-field presentation; existing BARN Estate typography and spacing. */
+#territory{background:#fff}
+#territory .infrastructure-text{max-width:900px;color:var(--copy);font-size:var(--lead);font-weight:300;line-height:var(--lead-line);overflow-wrap:anywhere}
+#territory .infrastructure-text p+p{margin-top:24px}
+@media(max-width:540px){#territory .infrastructure-text p+p{margin-top:16px}}
