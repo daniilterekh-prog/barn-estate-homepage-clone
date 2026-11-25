@@ -3,3 +3,6 @@
 #territory .infrastructure-text{max-width:900px;color:var(--copy);font-size:var(--lead);font-weight:300;line-height:var(--lead-line);overflow-wrap:anywhere}
 #territory .infrastructure-text p+p{margin-top:24px}
 @media(max-width:540px){#territory .infrastructure-text p+p{margin-top:16px}}
+#territory .infrastructure-more{margin-top:24px}
+#territory .infrastructure-toggle{margin-top:16px;scroll-margin-block:110px 90px}
+@media(max-width:540px){#territory .infrastructure-more{margin-top:16px}}
