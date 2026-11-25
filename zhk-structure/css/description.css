@@ -7,3 +7,12 @@
 #architecture .project-description--text-only{display:block}
 #architecture .project-description--text-only .project-description__text{max-width:900px}
 @media(max-width:767px){#architecture .project-description{grid-template-columns:1fr;gap:28px}#architecture .project-description__text p+p{margin-top:16px}#architecture .project-description__image img{aspect-ratio:4/3}}
+/* Content stays complete without JS; only measured overflow gets a disclosure. */
+#architecture .project-description__body{min-width:0}
+#architecture .project-description--text-only .project-description__body{max-width:900px}
+#architecture .project-description__body[data-description-collapsed="true"] .project-description__text{
+  max-height:var(--description-preview-height);overflow:hidden;
+  -webkit-mask-image:linear-gradient(#000 calc(100% - 1.5em),transparent);
+  mask-image:linear-gradient(#000 calc(100% - 1.5em),transparent);
+}
+#architecture .project-description__toggle{margin-top:16px;scroll-margin-block:110px 90px}
