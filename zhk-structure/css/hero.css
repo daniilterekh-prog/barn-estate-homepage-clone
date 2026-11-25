@@ -31,12 +31,15 @@ section.project-hero{
 .project-hero__summary>span{white-space:nowrap}
 .project-hero__separator{opacity:.7}
 .project-hero .actions{grid-column:2;grid-row:1/4;gap:18px;margin:0;width:100%;max-width:none;flex-direction:column;align-items:stretch}
-.project-hero .button{min-width:0;width:100%}
+.project-hero .button{min-width:0;width:100%;white-space:nowrap}
 .project-hero .text-link{justify-content:space-between;min-height:44px;font-size:17px;gap:24px;color:#fff;text-decoration-color:rgba(255,255,255,.65)}
 .project-hero .text-link:hover{color:#fff;text-decoration-color:#fff}
 .project-hero :is(a,button):focus-visible{outline-color:#fff}
 .project-hero .image-caption{right:var(--gutter);bottom:18px;font-size:12px;opacity:1}
-@media(min-width:1441px){section.project-hero{height:960px;min-height:960px}}
+@media(min-width:1441px){
+  section.project-hero{height:960px;min-height:960px}
+  .project-hero .hero-copy{grid-template-columns:minmax(0,1fr) 320px}
+}
 @media(min-width:1921px){.project-hero .project-hero__inner{padding-top:220px;padding-bottom:100px}}
 /* Same laptop-height policy as the homepage, using the existing local kit variable. */
 @media(min-width:1025px) and (max-width:1919px),(min-width:1920px) and (max-height:1000px){
@@ -61,7 +64,7 @@ section.project-hero{
   .project-hero h1{font-size:48px;margin-bottom:20px}
   .project-hero__summary{font-size:20px;gap:8px 14px}
   .project-hero .actions{flex-direction:column;align-items:stretch;gap:10px;margin-top:28px;max-width:280px;margin-left:auto}
-  .project-hero .button{min-width:0;width:100%}
+  .project-hero .button{min-width:0;width:100%;white-space:nowrap}
   .project-hero .text-link{justify-content:space-between;font-size:16px;min-height:44px}
   .project-hero .image-caption{bottom:18px;font-size:11px}
 }
