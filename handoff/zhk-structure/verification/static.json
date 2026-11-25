@@ -1,8 +1,8 @@
 {
-  "checks": 125,
+  "checks": 136,
   "passed": true,
   "failures": [],
-  "local_references": 71,
+  "local_references": 78,
   "sections": [
     "project",
     "passport",
@@ -19,7 +19,7 @@
     "newsletter",
     "expert"
   ],
-  "files": 108,
+  "files": 118,
   "details": [
     {
       "check": "reference html/index.html -> ../assets/logo.svg",
@@ -90,7 +90,7 @@
       "passed": true
     },
     {
-      "check": "reference html/index.html -> ../js/floating-expert.js?v=home-widget-20261125",
+      "check": "reference html/index.html -> ../js/floating-expert.js?v=calcus-clearance-20261125",
       "passed": true
     },
     {
@@ -151,6 +151,14 @@
     },
     {
       "check": "reference html/index.html -> ../css/floorplans.css?v=reference-table-20261125",
+      "passed": true
+    },
+    {
+      "check": "reference html/index.html -> ../css/mortgage.css?v=calcus-trial-20261125",
+      "passed": true
+    },
+    {
+      "check": "reference html/index.html -> ../js/mortgage.js?v=calcus-trial-20261125",
       "passed": true
     },
     {
@@ -223,6 +231,10 @@
     },
     {
       "check": "reference html/index.html -> ../assets/panorama.jpg",
+      "passed": true
+    },
+    {
+      "check": "reference html/index.html -> mortgage.html",
       "passed": true
     },
     {
@@ -310,6 +322,22 @@
       "passed": true
     },
     {
+      "check": "reference html/mortgage.html -> ../css/mortgage-widget.css?v=calcus-trial-20261125",
+      "passed": true
+    },
+    {
+      "check": "reference html/mortgage.html -> ../js/mortgage-widget.js?v=calcus-trial-20261125",
+      "passed": true
+    },
+    {
+      "check": "unchanged css/mortgage-widget.css",
+      "passed": true
+    },
+    {
+      "check": "unchanged css/mortgage.css",
+      "passed": true
+    },
+    {
       "check": "unchanged css/floorplans.css",
       "passed": true
     },
@@ -386,6 +414,14 @@
       "passed": true
     },
     {
+      "check": "unchanged js/mortgage-widget.js",
+      "passed": true
+    },
+    {
+      "check": "unchanged js/mortgage.js",
+      "passed": true
+    },
+    {
       "check": "unchanged js/infrastructure.js",
       "passed": true
     },
@@ -439,6 +475,14 @@
     },
     {
       "check": "reference css/page.css -> ../assets/TildaSans-Regular.woff2",
+      "passed": true
+    },
+    {
+      "check": "reference css/mortgage-widget.css -> ../assets/TildaSans-Light.woff2",
+      "passed": true
+    },
+    {
+      "check": "reference css/mortgage-widget.css -> ../assets/TildaSans-Regular.woff2",
       "passed": true
     },
     {

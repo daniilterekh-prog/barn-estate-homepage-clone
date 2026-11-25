@@ -1,8 +1,8 @@
 {
   "source_repository": "daniilterekh-prog/barnes-sites",
-  "source_commit": "29c4051ce17a91c50889c71c01a72f4ab115da4b",
+  "source_commit": "e085232b9b1c6fc5b953242f54af00f8fb58032e",
   "source_path": "main-site/pages/residential-complex/structure/preview",
-  "source_html_sha256": "c1fd000ff25b99907a44ba0363d628396eeb3076463a11165e2a8a7328dcce14",
+  "source_html_sha256": "2671df1b062a5b4ec1c9f7f3e6211408fba536bc0f919edd813b1ae559bc97fd",
   "preview_repository": "daniilterekh-prog/barn-estate-homepage-clone",
   "preview_runtime_identity": "Runtime exported from source_commit in the same publication as this handoff",
   "transformations": [
@@ -29,7 +29,10 @@
   "not_connected": [
     "Intrum API",
     "live apartment inventory",
-    "form transport/CRM"
+    "contact form transport/CRM"
   ],
-  "external_widget": "Yandex map iframe"
+  "external_widgets": [
+    "Yandex map iframe",
+    "Calcus Free in html/mortgage.html; external scripts/styles/calculation API"
+  ]
 }

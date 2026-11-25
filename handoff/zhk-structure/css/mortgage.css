@@ -1,0 +1,11 @@
+/* Local outer wrapper; the provider runs in its own same-origin document. */
+#purchase .mortgage-intro{display:flex;align-items:center;justify-content:space-between;gap:40px}
+#purchase .mortgage-intro>p{font-size:var(--lead);line-height:var(--lead-line);color:var(--copy);max-width:690px}
+#purchase #mortgage-launch{flex:none}
+#purchase #mortgage-launch[hidden]{display:none}
+#purchase #mortgage-calculator{display:block;width:100%;border:0;margin-top:32px;min-height:240px;scroll-margin-top:120px}
+#purchase #mortgage-calculator[hidden]{display:none}
+#purchase .mortgage-followup{display:flex;align-items:center;justify-content:space-between;gap:24px;margin-top:24px;border-top:1px solid var(--line);padding-top:24px}
+#purchase .mortgage-followup>p{font-size:16px;color:var(--copy);line-height:1.5;max-width:650px}
+#purchase .mortgage-followup .text-link{margin:0;flex:none}
+@media(max-width:767px){#purchase .mortgage-intro,#purchase .mortgage-followup{align-items:flex-start;flex-direction:column;gap:20px}#purchase #mortgage-launch{max-width:100%}#purchase #mortgage-calculator{margin-top:24px}#purchase .mortgage-followup{gap:12px}}
