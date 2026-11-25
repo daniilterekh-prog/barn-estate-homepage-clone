@@ -31,20 +31,19 @@
   }
   function render(root,data){
     const items=normalize(data);
-    root.replaceChildren();
+    Array.from(root.children).filter(cell=>cell.hasAttribute('data-optional-fact')).forEach(cell=>cell.remove());
     for(const item of items){
       const cell=document.createElement('div'),label=document.createElement('dt'),value=document.createElement('dd');
-      cell.dataset.characteristic=item.key;label.textContent=item.label;value.textContent=item.value;
+      cell.dataset.optionalFact='true';cell.dataset.characteristic=item.key;label.textContent=item.label;value.textContent=item.value;
       cell.append(label,value);root.append(cell);
     }
-    root.style.setProperty('--optional-count',String(items.length));
-    root.dataset.count=String(items.length);root.hidden=items.length===0;
+    root.dataset.count=String(items.length);root.hidden=false;
     return items;
   }
   window.BarnProjectCharacteristics={normalize,render};
   const root=document.querySelector('#project-optional-facts'),source=document.querySelector('#project-optional-data');
   if(root&&source){
     try{render(root,JSON.parse(source.textContent));}
-    catch{root.replaceChildren();root.hidden=true;}
+    catch{Array.from(root.children).filter(cell=>cell.hasAttribute('data-optional-fact')).forEach(cell=>cell.remove());root.dataset.count='0';root.hidden=false;}
   }
 })();
