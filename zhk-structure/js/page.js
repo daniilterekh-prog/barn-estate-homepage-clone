@@ -48,12 +48,3 @@ document.querySelectorAll('[data-room]').forEach(button => button.addEventListen
   const count = document.querySelectorAll('[data-format]:not([hidden])').length;
   document.querySelector('#format-status').textContent = `Примеров форматов: ${count} · наличие и стоимость уточняются`;
 }));
-const mapButton = document.querySelector('#load-map');
-mapButton.addEventListener('click', () => {
-  const panel = document.querySelector('.map-panel');
-  const frame = panel.querySelector('iframe');
-  mapButton.disabled = true;
-  document.querySelector('#map-status').textContent = 'Загружается карта. Также можно открыть её по ссылке ниже.';
-  frame.addEventListener('load', () => { frame.hidden = false; panel.classList.add('is-loaded'); }, { once: true });
-  frame.src = frame.dataset.src;
-});

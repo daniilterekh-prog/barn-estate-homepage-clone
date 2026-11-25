@@ -12,7 +12,5 @@
 
 @media(max-width:767px){.header-inner>.button{font-size:0;min-width:44px;padding:0}.header-inner>.button:after{content:"";display:inline-block;width:18px;height:18px;background:currentColor;-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 24 24%27 fill=%27none%27 stroke=%27black%27 stroke-width=%271.5%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27%3E%3Cpath d=%27M6 18 18 6M6 6h12v12%27/%3E%3C/svg%3E") center/contain no-repeat;mask:url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 24 24%27 fill=%27none%27 stroke=%27black%27 stroke-width=%271.5%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27%3E%3Cpath d=%27M6 18 18 6M6 6h12v12%27/%3E%3C/svg%3E") center/contain no-repeat}}
 
-.map-panel{position:relative;overflow:hidden}.map-preview{width:100%;height:100%;object-fit:cover;object-position:50% 70%;filter:brightness(.65)}.map-cover{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:24px;padding:24px;color:#fff;text-align:center}.map-panel iframe{position:absolute;inset:0;background:white}.map-panel.is-loaded .map-cover,.map-panel.is-loaded .map-preview{display:none}
-
-/* Local SVG arrows share the line weight and currentColor of the site icons. */
+.map-panel{position:relative;overflow:hidden}.map-panel iframe{position:absolute;inset:0;background:white}/* Local SVG arrows share the line weight and currentColor of the site icons. */
 .ui-arrow{display:inline-block;width:18px;height:18px;flex:0 0 18px;vertical-align:-.16em;overflow:visible;pointer-events:none}
