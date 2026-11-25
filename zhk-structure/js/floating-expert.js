@@ -30,6 +30,6 @@
       }
       update();
     }, { threshold: 0 });
-    document.querySelectorAll('#expert,#footer,#mortgage-calculator').forEach(section => observer.observe(section));
+    document.querySelectorAll('#expert,#footer').forEach(section => observer.observe(section));
   } else update();
 })();

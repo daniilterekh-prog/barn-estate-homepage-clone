@@ -5,7 +5,7 @@
   "browser": "verification/browser.json",
   "visual": "verification/visual.json",
   "summary": {
-    "static_checks": 136,
+    "static_checks": 125,
     "viewport_widths": [
       320,
       390,
@@ -29,12 +29,11 @@
       "unchanged gallery/FAQ/forms previously verified"
     ],
     "local_form_posts": 0,
-    "external_service_note": "Yandex iframe and authorized Calcus Free trial require network. Calcus calculates using user-entered parameters; no bank offers or lead transport."
+    "external_service_note": "Only Yandex map is external; calculator files and connections excluded."
   },
   "extracted_zip": "verification/extracted-zip.json",
   "floorplans": "verification/floorplans.json",
   "notes": "Room filter tabs removed in the current reference layout; prior hero/passport snapshots and unchanged component checks remain valid.",
-  "current_package": "verification/current-package.json",
-  "mortgage": "verification/mortgage.json",
-  "mortgage_package": "verification/mortgage-package.json"
+  "current_package": "verification/no-calculator.json",
+  "calculator": "excluded by user"
 }
