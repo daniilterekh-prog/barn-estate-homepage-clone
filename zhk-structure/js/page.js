@@ -48,3 +48,13 @@ document.querySelectorAll('[data-room]').forEach(button => button.addEventListen
   const count = document.querySelectorAll('[data-format]:not([hidden])').length;
   document.querySelector('#format-status').textContent = `Примеров форматов: ${count} · наличие и стоимость уточняются`;
 }));
+
+const expertForm = document.querySelector('#project-consultation-form');
+expertForm?.addEventListener('submit', event => {
+  event.preventDefault();
+  const status = document.querySelector('#expert-result');
+  status.textContent = 'Сценарий обращения проверен. Введённые данные никуда не отправлены и не сохранены.';
+  status.hidden = false;
+  expertForm.reset();
+  status.focus({ preventScroll: true });
+});

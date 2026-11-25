@@ -58,11 +58,6 @@
       "h2": "Вопросы и ответы"
     },
     {
-      "id": "expert",
-      "eyebrow": "BARN Estate",
-      "h2": "Консультация эксперта"
-    },
-    {
       "id": "similar",
       "eyebrow": "Другие предложения",
       "h2": "Похожие жилые комплексы"
@@ -71,6 +66,11 @@
       "id": "newsletter",
       "eyebrow": "Медиа BARN Estate",
       "h2": "Новости рынка недвижимости"
+    },
+    {
+      "id": "expert",
+      "eyebrow": "BARN Estate",
+      "h2": "Консультация эксперта"
     }
   ],
   "conditional_sections": "A generic label does not make a section mandatory: hide section and anchor when its data source is absent"

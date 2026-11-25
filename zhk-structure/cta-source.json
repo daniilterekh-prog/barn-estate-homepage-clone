@@ -1,0 +1,29 @@
+{
+  "checked_on": "2026-11-25",
+  "reference": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/prodazha_sobstvennikam/#request",
+  "source_type": "Existing BARN Estate owner-sale consultation component; assets from canonical barnes-assets with matching source Git blob hashes",
+  "layout": "Form left, composite expert photo right; mobile expert avatar above form",
+  "assets": [
+    {
+      "local": "assets/cta-ruslan-background.webp",
+      "source": "https://raw.githubusercontent.com/daniilterekh-prog/barnes-assets/main/blocks/_assets/963872afd408-consultation-bg.webp",
+      "sha256": "963872afd408bd77fca71e32647e7617d1c526fc33f8c25b582dc1d1a17c1700",
+      "bytes": 94912
+    },
+    {
+      "local": "assets/cta-ruslan-avatar.webp",
+      "source": "https://raw.githubusercontent.com/daniilterekh-prog/barnes-assets/main/blocks/_assets/4464b6998f60-ruslan.webp",
+      "sha256": "4464b6998f60131d99ee19b3887a776b896162ce4cbbf1cefd4bb7dcbf7a3986",
+      "bytes": 96154
+    }
+  ],
+  "dependencies_added": false,
+  "shared_sources_modified": false,
+  "transport_connected": false,
+  "reference_git_blobs": {
+    "background": "b11a9064b7bed37c981687727d3050f6b9c14672",
+    "avatar": "bab2a62bfb1ebde400baabb7b8fa9e40f4be2fcc"
+  },
+  "asset_match": "Both canonical asset Git blob IDs exactly match the current owner-sale assets",
+  "icons": "SVG icons read from existing owner-sale channel controls; native radio inputs provide checked and keyboard behavior"
+}
