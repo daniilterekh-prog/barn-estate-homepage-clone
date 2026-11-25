@@ -1,0 +1,36 @@
+{
+  "updated_on": "2026-11-25",
+  "section_id": "passport",
+  "placement": "Append optional cells into the same passport-facts definition list as the four core facts. Same borders, padding, type sizes and responsive columns. Missing values create no cells; when all are missing the original four cells remain. An odd final cell spans the available row.",
+  "api_connected": false,
+  "fields": [
+    {
+      "key": "handover_year",
+      "label": "Год сдачи",
+      "intrum": "Дата сдачи год",
+      "rules": "Normalize spacing in 2 030; require a four-digit year 1900–2199. Zero/missing/placeholder hidden. A past year does not imply Сдан."
+    },
+    {
+      "key": "finishing",
+      "label": "Отделка",
+      "intrum": "Отделка",
+      "rules": "Use explicit meaningful text; blank and placeholders hidden. Без отделки and explicit Нет are meaningful values, not empty."
+    },
+    {
+      "key": "ceiling_height",
+      "label": "Высота потолков",
+      "intrum": "Высота потолков",
+      "rules": "Positive numeric value gains metres; explicit text/ranges with positive numbers preserved, zero or missing hidden. Do not infer from floor count or general description."
+    }
+  ],
+  "rendering": "preview/js/optional-characteristics.js exposes BarnProjectCharacteristics.render(root, publicValues). Root #project-optional-facts is now the common passport definition list. It replaces only data-optional-fact cells and preserves the four core facts. Uses textContent; only public values belong in the payload.",
+  "preview": {
+    "handover_year": 0,
+    "finishing": null,
+    "ceiling_height": "3,15–7,4 м",
+    "provenance": "Year 0 and missing finishing from prior Intrum audit; exact ceiling text was not retained by that audit, so the static preview height is checked against the official project page, not claimed to be a new CRM export.",
+    "ceiling_source": "https://vavilova64.ru/detali-proekta/",
+    "ceiling_source_checked_on": "2026-11-25",
+    "historical_value_not_reused": "Older saved page showed upper floors 3.95m; current official page gives up to 7.4m."
+  }
+}

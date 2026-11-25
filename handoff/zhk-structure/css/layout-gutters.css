@@ -1,0 +1,57 @@
+@layer barn-layout-grid {
+/* Horizontal grid from the approved homepage home-spacing.css, UI-kit v1.0.3.
+ * One inset per content frame. Full-bleed photos/CTA, split-form interiors and
+ * the resort FAQ's explicitly retained composition are separate contracts. */
+:root {
+  --barn-page-gutter: clamp(24px, calc(-26.66667px + 6.59722vw), 100px);
+}
+@media(max-width:540px) { :root { --barn-page-gutter:22px; } }
+@media(min-width:1921px) { :root { --barn-page-gutter:0px; } }
+/* Hero and header must follow the same grid as the page content. */
+html body.barnes-media-header { --mh-gutter:var(--barn-page-gutter)!important; }
+html body:is(.barnes-media-reference,.barnes-media-kit) { --media-hero-gutter:var(--barn-page-gutter)!important; }
+/* The footer used to add a section gutter and a second container gutter. */
+html body .site-footer.site-footer { padding-inline:0!important; }
+html body .site-footer .site-footer__inner.base-container {
+  box-sizing:border-box!important;width:100%!important;max-width:1920px!important;
+  margin-inline:auto!important;padding-inline:var(--barn-page-gutter)!important;
+}
+/* City/international exports still carried older container breakpoints. */
+html body:is(.international-source-page,.city-home-kit) .base-container {
+  box-sizing:border-box!important;width:100%!important;max-width:1920px!important;
+  margin-inline:auto!important;padding-inline:var(--barn-page-gutter)!important;
+}
+/* These two lot-page frames were missing the shared content cap. */
+html body .lot-page :is(.lot-complex-bar__inner,.surroundings-map__inner).base-container {
+  box-sizing:border-box!important;width:100%!important;max-width:1920px!important;
+  margin-inline:auto!important;padding-inline:var(--barn-page-gutter)!important;
+}
+/* Keep text over project photos on the common grid; photos stay full bleed. */
+html body.barnes-home-typography .project-hero__content.base-container {
+  padding-inline:var(--barn-page-gutter)!important;
+}
+
+/* The photographic consultation keeps its full-bleed media; only its content
+ * inset follows the page grid. A named layer also isolates the old generated
+ * CTA adapter's high-specificity padding rules. */
+html body .catalog-consultation .catalog-consultation__media {
+  padding-inline:max(var(--barn-page-gutter), calc((100% - 1920px) / 2))!important;
+}
+
+/* Mobile newsletter photography spans the canvas; only the copy owns gutters. */
+@media(max-width:540px) {
+ html body:is(.barnes-home-typography,.owner-sale-reference-ui,.owner-rent-reference-ui,.partners-owner-shell) .newsletter-cta__inner {overflow:visible!important;}
+ html body:is(.barnes-home-typography,.owner-sale-reference-ui,.owner-rent-reference-ui,.partners-owner-shell) .newsletter-cta__grid {
+  width:calc(100% + 2 * var(--barn-page-gutter))!important;
+  margin-inline:calc(-1 * var(--barn-page-gutter))!important;
+ }
+ html body:is(.barnes-home-typography,.owner-sale-reference-ui,.owner-rent-reference-ui,.partners-owner-shell) .newsletter-cta__copy {
+  box-sizing:border-box!important;padding-inline:var(--barn-page-gutter)!important;
+ }
+ html body:is(.barnes-home-typography,.owner-sale-reference-ui,.owner-rent-reference-ui,.partners-owner-shell) .newsletter-cta__visual {
+  inset-inline:0!important;width:100%!important;max-width:none!important;
+  height:calc(100% + 40px)!important;
+ }
+}
+
+}

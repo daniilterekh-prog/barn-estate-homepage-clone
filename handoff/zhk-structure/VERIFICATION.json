@@ -1,0 +1,37 @@
+{
+  "checked_on": "2026-11-25",
+  "status": "passed",
+  "static": "verification/static.json",
+  "browser": "verification/browser.json",
+  "visual": "verification/visual.json",
+  "summary": {
+    "static_checks": 123,
+    "viewport_widths": [
+      320,
+      390,
+      541,
+      768,
+      1024,
+      1440,
+      1920,
+      2560,
+      3840
+    ],
+    "overflow": false,
+    "broken_images": [],
+    "local_http_errors": [],
+    "javascript_errors": [],
+    "pixel_identical_views": "hero/passport at 390 and 1440 px, animations disabled in audit only",
+    "interaction_checks": [
+      "room filtering/reset",
+      "plan image dialog/Escape",
+      "gallery image dialog/Escape",
+      "FAQ keyboard",
+      "selection contact dialog",
+      "two forms honest unconnected result"
+    ],
+    "local_form_posts": 0,
+    "external_service_note": "Yandex iframe sends its own service analytics requests; no form transport added."
+  },
+  "extracted_zip": "verification/extracted-zip.json"
+}

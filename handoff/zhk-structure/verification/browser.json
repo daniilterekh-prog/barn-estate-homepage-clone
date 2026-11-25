@@ -1,0 +1,102 @@
+{
+  "rows": [
+    {
+      "width": 320,
+      "overflow": false,
+      "sections": 14,
+      "h1": 1,
+      "broken": [],
+      "optional": "1",
+      "buttonHeight": 58
+    },
+    {
+      "width": 390,
+      "overflow": false,
+      "sections": 14,
+      "h1": 1,
+      "broken": [],
+      "optional": "1",
+      "buttonHeight": 58
+    },
+    {
+      "width": 541,
+      "overflow": false,
+      "sections": 14,
+      "h1": 1,
+      "broken": [],
+      "optional": "1",
+      "buttonHeight": 70
+    },
+    {
+      "width": 768,
+      "overflow": false,
+      "sections": 14,
+      "h1": 1,
+      "broken": [],
+      "optional": "1",
+      "buttonHeight": 70
+    },
+    {
+      "width": 1024,
+      "overflow": false,
+      "sections": 14,
+      "h1": 1,
+      "broken": [],
+      "optional": "1",
+      "buttonHeight": 70
+    },
+    {
+      "width": 1440,
+      "overflow": false,
+      "sections": 14,
+      "h1": 1,
+      "broken": [],
+      "optional": "1",
+      "buttonHeight": 70
+    },
+    {
+      "width": 1920,
+      "overflow": false,
+      "sections": 14,
+      "h1": 1,
+      "broken": [],
+      "optional": "1",
+      "buttonHeight": 70
+    },
+    {
+      "width": 2560,
+      "overflow": false,
+      "sections": 14,
+      "h1": 1,
+      "broken": [],
+      "optional": "1",
+      "buttonHeight": 70
+    },
+    {
+      "width": 3840,
+      "overflow": false,
+      "sections": 14,
+      "h1": 1,
+      "broken": [],
+      "optional": "1",
+      "buttonHeight": 70
+    }
+  ],
+  "interactions": {
+    "filtered": 1,
+    "reset": 3,
+    "plan": true,
+    "gallery": true,
+    "faq": true,
+    "contact": true,
+    "honestSubmit": true,
+    "expertSubmit": true
+  },
+  "errors": [],
+  "bad": [],
+  "external_post_endpoints": [
+    "https://mc.yandex.com/watch/2141027/1",
+    "https://mc.yandex.com/watch/44120344/1"
+  ],
+  "local_form_posts": 0
+}

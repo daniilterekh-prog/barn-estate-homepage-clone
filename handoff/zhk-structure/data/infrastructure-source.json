@@ -1,0 +1,25 @@
+{
+  "updated_on": "2026-11-25",
+  "section_id": "territory",
+  "source_label": "Инфраструктура",
+  "source_group_qualifier": "Для презентации",
+  "api_connected": false,
+  "layout": "Full-width heading, readable text column below, no photographs, gallery captions, cards, or accordion. Existing lead typography and section spacing.",
+  "content_contract": {
+    "single_text_field": true,
+    "preserve_paragraphs": true,
+    "truncate": false,
+    "sanitize_source_markup": true,
+    "when_empty": "Do not render the section or navigation anchor. Do not infer infrastructure features from another field or fill manually.",
+    "disclosure": {
+      "visible_paragraphs": 2,
+      "condition": "Only show Читать далее when there are more than two non-empty paragraphs.",
+      "expanded_label": "Свернуть",
+      "paragraph_format": "Top-level p elements; plain text line breaks or br-only markup normalized into paragraphs without parsing HTML strings. Empty paragraphs ignored.",
+      "accessibility": "Native button with aria-expanded/controls; the remaining paragraphs use hidden and leave the tab/accessibility order while collapsed.",
+      "updates": "Re-evaluate when text changes. Without JS the whole original text remains visible."
+    }
+  },
+  "preview": "Static example reuses the infrastructure facts already present in this prototype before section removal. This is not a fresh Intrum export; replace whole text from the public infrastructure field when the CRM adapter is connected.",
+  "user_examples": "Рождественка 8 includes a filled Infrastructure field; ЖК Гала example does not. The block is conditional."
+}

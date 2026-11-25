@@ -1,0 +1,517 @@
+{
+  "checks": 123,
+  "passed": true,
+  "failures": [],
+  "local_references": 70,
+  "sections": [
+    "project",
+    "passport",
+    "apartments",
+    "architecture",
+    "gallery",
+    "territory",
+    "location",
+    "purchase",
+    "developer",
+    "documents",
+    "faq",
+    "similar",
+    "newsletter",
+    "expert"
+  ],
+  "files": 95,
+  "details": [
+    {
+      "check": "reference html/index.html -> ../assets/logo.svg",
+      "passed": true
+    },
+    {
+      "check": "reference html/index.html -> ../assets/TildaSans-Light.woff2",
+      "passed": true
+    },
+    {
+      "check": "reference html/index.html -> ../css/page.css?v=selection-button-20261125",
+      "passed": true
+    },
+    {
+      "check": "reference html/index.html -> ../css/owner-header.css",
+      "passed": true
+    },
+    {
+      "check": "reference html/index.html -> ../css/media-header.css",
+      "passed": true
+    },
+    {
+      "check": "reference html/index.html -> ../css/hero-laptop.css",
+      "passed": true
+    },
+    {
+      "check": "reference html/index.html -> ../css/layout-gutters.css",
+      "passed": true
+    },
+    {
+      "check": "reference html/index.html -> ../css/header.css?v=home-switch-20261110",
+      "passed": true
+    },
+    {
+      "check": "reference html/index.html -> ../css/footer.css?v=footer-exact-20261110",
+      "passed": true
+    },
+    {
+      "check": "reference html/index.html -> ../css/hero.css?v=hero-mobile-actions-20261125",
+      "passed": true
+    },
+    {
+      "check": "reference html/index.html -> ../css/consultation.css?v=ultrawide-20261125",
+      "passed": true
+    },
+    {
+      "check": "reference html/index.html -> ../css/floating-expert.css?v=home-widget-20261125",
+      "passed": true
+    },
+    {
+      "check": "reference html/index.html -> ../css/related-projects.css?v=node-cards-20261125",
+      "passed": true
+    },
+    {
+      "check": "reference html/index.html -> ../js/media-header.js",
+      "passed": true
+    },
+    {
+      "check": "reference html/index.html -> ../js/header.js?v=home-switch-20261110",
+      "passed": true
+    },
+    {
+      "check": "reference html/index.html -> ../js/page.js?v=public-copy-20261125",
+      "passed": true
+    },
+    {
+      "check": "reference html/index.html -> ../js/footer.js?v=footer-20261110",
+      "passed": true
+    },
+    {
+      "check": "reference html/index.html -> ../js/floating-expert.js?v=home-widget-20261125",
+      "passed": true
+    },
+    {
+      "check": "reference html/index.html -> ../js/related-projects.js?v=node-cards-20261125",
+      "passed": true
+    },
+    {
+      "check": "reference html/index.html -> ../css/news.css?v=home-media-20261125",
+      "passed": true
+    },
+    {
+      "check": "reference html/index.html -> ../js/vendor/splide.js",
+      "passed": true
+    },
+    {
+      "check": "reference html/index.html -> ../js/news.js?v=home-media-20261125",
+      "passed": true
+    },
+    {
+      "check": "reference html/index.html -> ../css/faq.css?v=sales-node-20261125",
+      "passed": true
+    },
+    {
+      "check": "reference html/index.html -> ../css/description.css?v=read-more-20261125",
+      "passed": true
+    },
+    {
+      "check": "reference html/index.html -> ../css/infrastructure.css?v=two-paragraphs-20261125",
+      "passed": true
+    },
+    {
+      "check": "reference html/index.html -> ../css/gallery.css?v=no-captions-20261125",
+      "passed": true
+    },
+    {
+      "check": "reference html/index.html -> ../js/gallery.js?v=no-captions-20261125",
+      "passed": true
+    },
+    {
+      "check": "reference html/index.html -> ../css/optional-characteristics.css?v=integrated-cells-20261125",
+      "passed": true
+    },
+    {
+      "check": "reference html/index.html -> ../js/optional-characteristics.js?v=integrated-cells-20261125",
+      "passed": true
+    },
+    {
+      "check": "reference html/index.html -> ../js/description.js?v=read-more-20261125",
+      "passed": true
+    },
+    {
+      "check": "reference html/index.html -> ../js/infrastructure.js?v=two-paragraphs-20261125",
+      "passed": true
+    },
+    {
+      "check": "reference html/index.html -> ../css/metadata.css?v=passport-cells-20261125",
+      "passed": true
+    },
+    {
+      "check": "reference html/index.html -> ../assets/logo.svg",
+      "passed": true
+    },
+    {
+      "check": "reference html/index.html -> ../assets/hero-facade.webp",
+      "passed": true
+    },
+    {
+      "check": "reference html/index.html -> ../assets/lobby.jpg",
+      "passed": true
+    },
+    {
+      "check": "reference html/index.html -> ../assets/plan-126.svg",
+      "passed": true
+    },
+    {
+      "check": "reference html/index.html -> ../assets/plan-126.svg",
+      "passed": true
+    },
+    {
+      "check": "reference html/index.html -> ../assets/architecture-detail.jpg",
+      "passed": true
+    },
+    {
+      "check": "reference html/index.html -> ../assets/architecture-detail.jpg",
+      "passed": true
+    },
+    {
+      "check": "reference html/index.html -> ../assets/architecture-detail.jpg",
+      "passed": true
+    },
+    {
+      "check": "reference html/index.html -> ../assets/garden.jpg",
+      "passed": true
+    },
+    {
+      "check": "reference html/index.html -> ../assets/garden.jpg",
+      "passed": true
+    },
+    {
+      "check": "reference html/index.html -> ../assets/lobby-wide.webp",
+      "passed": true
+    },
+    {
+      "check": "reference html/index.html -> ../assets/lobby-wide.webp",
+      "passed": true
+    },
+    {
+      "check": "reference html/index.html -> ../assets/lobby.jpg",
+      "passed": true
+    },
+    {
+      "check": "reference html/index.html -> ../assets/lobby.jpg",
+      "passed": true
+    },
+    {
+      "check": "reference html/index.html -> ../assets/view.jpg",
+      "passed": true
+    },
+    {
+      "check": "reference html/index.html -> ../assets/view.jpg",
+      "passed": true
+    },
+    {
+      "check": "reference html/index.html -> ../assets/panorama.jpg",
+      "passed": true
+    },
+    {
+      "check": "reference html/index.html -> ../assets/panorama.jpg",
+      "passed": true
+    },
+    {
+      "check": "reference html/index.html -> ../assets/lobby-wide.webp",
+      "passed": true
+    },
+    {
+      "check": "reference html/index.html -> ../assets/related-opus.webp",
+      "passed": true
+    },
+    {
+      "check": "reference html/index.html -> ../assets/related-high-life.webp",
+      "passed": true
+    },
+    {
+      "check": "reference html/index.html -> ../assets/related-vesper-kutuzovsky.webp",
+      "passed": true
+    },
+    {
+      "check": "reference html/index.html -> ../assets/news/6e988d73b47da9c8a91af06c.png",
+      "passed": true
+    },
+    {
+      "check": "reference html/index.html -> ../assets/news/5fb738b9b9961a801fca5055.png",
+      "passed": true
+    },
+    {
+      "check": "reference html/index.html -> ../assets/news/c0794823ca1f1fe82787456b.png",
+      "passed": true
+    },
+    {
+      "check": "reference html/index.html -> ../assets/news/33c9955c39a65d9cb0219b56.png",
+      "passed": true
+    },
+    {
+      "check": "reference html/index.html -> ../assets/news/b3db829cd4ce561e76de09cc.jpg",
+      "passed": true
+    },
+    {
+      "check": "reference html/index.html -> ../assets/news/a461ef0bb9597a98337a8b1d.png",
+      "passed": true
+    },
+    {
+      "check": "reference html/index.html -> ../assets/news/105c96639ff388f661acbad2.png",
+      "passed": true
+    },
+    {
+      "check": "reference html/index.html -> ../assets/news/a88ccd8d029aefb9b01634a0.png",
+      "passed": true
+    },
+    {
+      "check": "reference html/index.html -> ../assets/news/08372dc2136e4b180d843f73.png",
+      "passed": true
+    },
+    {
+      "check": "reference html/index.html -> ../assets/news/70ae8e588fd6d296fbeb9475.png",
+      "passed": true
+    },
+    {
+      "check": "reference html/index.html -> ../assets/cta-ruslan-background.webp",
+      "passed": true
+    },
+    {
+      "check": "reference html/index.html -> ../assets/cta-ruslan-avatar.webp",
+      "passed": true
+    },
+    {
+      "check": "reference html/index.html -> ../assets/footer-logo.svg",
+      "passed": true
+    },
+    {
+      "check": "reference html/index.html -> ../assets/floating-ruslan.webp",
+      "passed": true
+    },
+    {
+      "check": "14 project sections",
+      "passed": true
+    },
+    {
+      "check": "unique HTML IDs",
+      "passed": true
+    },
+    {
+      "check": "all image sources local",
+      "passed": true
+    },
+    {
+      "check": "unchanged css/metadata.css",
+      "passed": true
+    },
+    {
+      "check": "unchanged css/optional-characteristics.css",
+      "passed": true
+    },
+    {
+      "check": "unchanged css/gallery.css",
+      "passed": true
+    },
+    {
+      "check": "unchanged css/infrastructure.css",
+      "passed": true
+    },
+    {
+      "check": "unchanged css/description.css",
+      "passed": true
+    },
+    {
+      "check": "unchanged css/faq.css",
+      "passed": true
+    },
+    {
+      "check": "unchanged css/news.css",
+      "passed": true
+    },
+    {
+      "check": "unchanged css/related-projects.css",
+      "passed": true
+    },
+    {
+      "check": "unchanged css/floating-expert.css",
+      "passed": true
+    },
+    {
+      "check": "unchanged css/consultation.css",
+      "passed": true
+    },
+    {
+      "check": "unchanged css/page.css",
+      "passed": true
+    },
+    {
+      "check": "unchanged css/owner-header.css",
+      "passed": true
+    },
+    {
+      "check": "unchanged css/media-header.css",
+      "passed": true
+    },
+    {
+      "check": "unchanged css/layout-gutters.css",
+      "passed": true
+    },
+    {
+      "check": "unchanged css/hero.css",
+      "passed": true
+    },
+    {
+      "check": "unchanged css/hero-laptop.css",
+      "passed": true
+    },
+    {
+      "check": "unchanged css/header.css",
+      "passed": true
+    },
+    {
+      "check": "unchanged css/footer.css",
+      "passed": true
+    },
+    {
+      "check": "unchanged js/infrastructure.js",
+      "passed": true
+    },
+    {
+      "check": "unchanged js/description.js",
+      "passed": true
+    },
+    {
+      "check": "unchanged js/optional-characteristics.js",
+      "passed": true
+    },
+    {
+      "check": "unchanged js/gallery.js",
+      "passed": true
+    },
+    {
+      "check": "unchanged js/news.js",
+      "passed": true
+    },
+    {
+      "check": "unchanged js/related-projects.js",
+      "passed": true
+    },
+    {
+      "check": "unchanged js/floating-expert.js",
+      "passed": true
+    },
+    {
+      "check": "unchanged js/page.js",
+      "passed": true
+    },
+    {
+      "check": "unchanged js/media-header.js",
+      "passed": true
+    },
+    {
+      "check": "unchanged js/header.js",
+      "passed": true
+    },
+    {
+      "check": "unchanged js/footer.js",
+      "passed": true
+    },
+    {
+      "check": "unchanged js/vendor/splide.js",
+      "passed": true
+    },
+    {
+      "check": "reference css/page.css -> ../assets/TildaSans-Light.woff2",
+      "passed": true
+    },
+    {
+      "check": "reference css/page.css -> ../assets/TildaSans-Regular.woff2",
+      "passed": true
+    },
+    {
+      "check": "HTML matches source after reversing path localization",
+      "passed": true
+    },
+    {
+      "check": "unchanged asset SPLIDE-LICENSE.txt",
+      "passed": true
+    },
+    {
+      "check": "unchanged asset view.jpg",
+      "passed": true
+    },
+    {
+      "check": "unchanged asset related-vesper-kutuzovsky.webp",
+      "passed": true
+    },
+    {
+      "check": "unchanged asset related-opus.webp",
+      "passed": true
+    },
+    {
+      "check": "unchanged asset related-high-life.webp",
+      "passed": true
+    },
+    {
+      "check": "unchanged asset plan-126.svg",
+      "passed": true
+    },
+    {
+      "check": "unchanged asset panorama.jpg",
+      "passed": true
+    },
+    {
+      "check": "unchanged asset logo.svg",
+      "passed": true
+    },
+    {
+      "check": "unchanged asset lobby.jpg",
+      "passed": true
+    },
+    {
+      "check": "unchanged asset lobby-wide.webp",
+      "passed": true
+    },
+    {
+      "check": "unchanged asset hero-facade.webp",
+      "passed": true
+    },
+    {
+      "check": "unchanged asset garden.jpg",
+      "passed": true
+    },
+    {
+      "check": "unchanged asset footer-logo.svg",
+      "passed": true
+    },
+    {
+      "check": "unchanged asset floating-ruslan.webp",
+      "passed": true
+    },
+    {
+      "check": "unchanged asset cta-ruslan-background.webp",
+      "passed": true
+    },
+    {
+      "check": "unchanged asset cta-ruslan-avatar.webp",
+      "passed": true
+    },
+    {
+      "check": "unchanged asset architecture-detail.jpg",
+      "passed": true
+    },
+    {
+      "check": "unchanged asset TildaSans-Regular.woff2",
+      "passed": true
+    },
+    {
+      "check": "unchanged asset TildaSans-Light.woff2",
+      "passed": true
+    }
+  ]
+}

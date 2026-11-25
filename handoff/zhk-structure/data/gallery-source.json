@@ -1,0 +1,50 @@
+{
+  "updated_on": "2026-11-25",
+  "section_id": "gallery",
+  "source_label": "Фото",
+  "api_connected": false,
+  "content_contract": "Use published project photos in CRM order. No manual image captions or category text required. Omit section with no valid photos; with one photo omit navigation.",
+  "implementation": "Existing Splide 4.1.4/MIT, two images desktop / one <=767px, SVG arrows, swipe. Native image dialog reused, previous/next and keyboard arrows available only for gallery. No new packages.",
+  "preview": "Six existing official-project visualizations for layout; not a live Intrum photo export. Previous CRM audit observed three photos, so do not infer CRM count from this visual sample.",
+  "photos": [
+    {
+      "file": "assets/architecture-detail.jpg",
+      "source": "https://api.vavilova64.ru/upload/iblock/210/z0a0vgox2wh5cj9haz7jdyr03c5x1e55/Whitemark_Svetoch_CGI12_Phase2_Rev2.jpg",
+      "source_checked_on": "2026-11-10",
+      "sha256": "75ac5c5dbbd2f519dd5a4fc419a5d5fc3d82967a9a112c38beb7df387dbdad21"
+    },
+    {
+      "file": "assets/garden.jpg",
+      "source": "https://api.vavilova64.ru/upload/iblock/dc8/ajyzuzq3bv3b80itqxcigt2maxwnqg5x/Whitemark_Svetoch_CGI10_landscape_Phase2_Rev2.jpg",
+      "source_checked_on": "2026-11-10",
+      "sha256": "47dbd76f29738c1fa831fde4e12ccba7f3db07579cc74bf33725c25b5ca31680"
+    },
+    {
+      "file": "assets/lobby-wide.webp",
+      "source": "https://api.vavilova64.ru/upload/iblock/44d/9lqzowihpwgchgms8pa4wse1ypnyk130/lobby_hero.webp",
+      "source_checked_on": "2026-11-10",
+      "sha256": "5a55204d73002b354d17e4949cd83cd5229f04438a71a0bedf8e75a4ad1e1318"
+    },
+    {
+      "file": "assets/lobby.jpg",
+      "source": "https://api.vavilova64.ru/upload/iblock/6e7/fiphr2v1jqe4y4ebjoo4whoawgka2ouh/Vavilova_Mop_20_11.jpg",
+      "source_checked_on": "2026-11-10",
+      "sha256": "eadb638c9639fe426f95597395a4f17ab7d15e21d86b899af1cd2786b36ab140"
+    },
+    {
+      "file": "assets/view.jpg",
+      "source": "https://api.vavilova64.ru/upload/iblock/5c5/596sn4ftw4hcfykqb4q55d5kz11bu89g/Whitemark_Svetoch_CGI8_view_TT024_rev5_Night_Final.jpg",
+      "source_checked_on": "2026-11-10",
+      "sha256": "147263f728899e84ef1da860f37bd778960f7a49113b0caf11574ee31bbd5263"
+    },
+    {
+      "file": "assets/panorama.jpg",
+      "source": "https://vavilova64.ru/images/home/panorama.jpg",
+      "source_checked_on": "2026-11-10",
+      "sha256": "1c5e86ee21d9fdbb1fcffcf6fb1674c189c177b05a49103b8f1ea1c518b260da"
+    }
+  ],
+  "visible_counter": false,
+  "visible_modal_caption": false,
+  "accessibility": "Native dialog keeps an accessible project label; Splide slide positions remain available to assistive technology, without a visible counter."
+}

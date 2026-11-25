@@ -1,0 +1,35 @@
+{
+  "source_repository": "daniilterekh-prog/barnes-sites",
+  "source_commit": "845a8a13785e625b8987a793d85cbc1fed2ae5a2",
+  "source_path": "main-site/pages/residential-complex/structure/preview",
+  "source_html_sha256": "c29bcbf6cf115d143eee45ad0a12c49aa9715c27be200a76e88eca1c441be358",
+  "preview_repository": "daniilterekh-prog/barn-estate-homepage-clone",
+  "preview_runtime_commit": "fecf38449957b24f247f825e5d3b049fd9513355",
+  "transformations": [
+    "HTML relative paths gain ../ for html/ location",
+    "10 homepage news images copied byte-for-byte to assets/news",
+    "CSS and JS copied byte-for-byte, with original load order"
+  ],
+  "sections": [
+    "project",
+    "passport",
+    "apartments",
+    "architecture",
+    "gallery",
+    "territory",
+    "location",
+    "purchase",
+    "developer",
+    "documents",
+    "faq",
+    "similar",
+    "newsletter",
+    "expert"
+  ],
+  "not_connected": [
+    "Intrum API",
+    "live apartment inventory",
+    "form transport/CRM"
+  ],
+  "external_widget": "Yandex map iframe"
+}

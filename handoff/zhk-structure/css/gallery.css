@@ -1,0 +1,31 @@
+/* Local project gallery. Splide 4.1.4/MIT is already used by the homepage Media block. */
+#gallery{background:#fff}
+.project-gallery .splide{position:relative;visibility:visible}
+.project-gallery .splide__track{position:relative;overflow:hidden;z-index:0}
+.project-gallery .splide__list{display:flex;list-style:none;margin:0!important;padding:0!important;backface-visibility:hidden}
+.project-gallery .splide__slide{flex-shrink:0;position:relative;min-width:0;list-style:none;box-sizing:border-box;backface-visibility:hidden}
+.project-gallery .splide:not(.is-initialized) .splide__list{gap:24px;overflow:auto;scroll-snap-type:x mandatory}
+.project-gallery .splide:not(.is-initialized) .splide__slide{width:calc((100% - 24px)/2);scroll-snap-align:start}
+.project-gallery .splide__sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}
+.project-gallery .splide__track--draggable{user-select:none;-webkit-touch-callout:none}
+.pg-photo{position:relative;display:block;width:100%;padding:0;border:0;background:#fff;cursor:zoom-in;aspect-ratio:4/3}
+.pg-photo img{width:100%;height:100%;object-fit:cover}
+.pg-expand{position:absolute;right:18px;bottom:18px;display:grid;place-items:center;width:42px;height:42px;border-radius:50%;background:#fff;color:var(--ink)}
+.pg-expand svg{width:20px;height:20px}
+.pg-footer{display:flex;align-items:center;justify-content:space-between;gap:24px;margin-top:32px}
+.pg-nav{display:flex;align-items:center;gap:28px}
+.pg-nav-button{display:inline-flex;align-items:center;justify-content:center;width:56px;height:56px;flex:0 0 56px;padding:0;border:1px solid #656462;border-radius:50%;color:#656462;background:#fff;cursor:pointer}
+.pg-nav-button svg{display:block;width:11px;height:22px}
+.pg-nav-button:disabled{opacity:.35;cursor:default}
+.pg-nav-button:not(:disabled):hover{color:var(--brand);border-color:var(--brand)}
+
+.project-gallery .pg-photo:focus-visible{outline:2px solid var(--brand);outline-offset:-4px}
+.project-gallery .pg-nav-button:focus-visible,#image-dialog .pg-nav-button:focus-visible{outline:2px solid var(--brand);outline-offset:4px}
+#image-dialog .pg-viewer-nav{display:flex;align-items:center;justify-content:center;gap:24px;margin-top:16px}
+#image-dialog.pg-viewer #image-large{height:calc(100svh - 245px)}
+@media(min-width:1441px){.pg-nav-button{width:68px;height:68px;flex-basis:68px}.pg-nav{gap:40px}}
+@media(max-width:767px){.project-gallery .splide:not(.is-initialized) .splide__slide{width:100%}.pg-footer{margin-top:24px}.pg-nav{gap:20px}.pg-nav-button{width:48px;height:48px;flex-basis:48px}.pg-expand{right:12px;bottom:12px;width:36px;height:36px}}
+@media(prefers-reduced-motion:reduce){.project-gallery *{transition:none!important;scroll-behavior:auto!important}}
+
+/* Keep the native dialog accessible without displaying gallery captions. */
+#image-dialog.pg-viewer #image-caption{display:none}

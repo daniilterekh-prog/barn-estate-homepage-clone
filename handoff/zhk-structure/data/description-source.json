@@ -1,0 +1,46 @@
+{
+  "updated_on": "2026-11-25",
+  "section_id": "architecture",
+  "heading": "Описание проекта",
+  "text_source": {
+    "intrum_label": "Общее описание",
+    "field_id": null,
+    "api_connected": false,
+    "rendering": "Keep complete sanitized description in DOM with paragraphs. If taller than the adjacent photo, collapse visually and show Читать далее; expand without losing text."
+  },
+  "image_source": {
+    "intrum_label": "Фото",
+    "maximum": 1,
+    "required": false,
+    "caption": false,
+    "when_missing": "Omit figure; use project-description--text-only for a readable single text column. Do not substitute unrelated photo."
+  },
+  "preview": {
+    "status": "static-visual-example-not-a-CRM-export",
+    "description": "Short illustration composed from facts already present in this preview and the previous audited Vavilova card; the original full CRM description was not retained in the audit. Replace with the full public field when the adapter is connected.",
+    "image": "assets/architecture-detail.jpg",
+    "image_provenance": "preview/assets/sources.json (official project image; reused unchanged)",
+    "removed_from_section": [
+      "assets/lobby-wide.webp",
+      "assets/garden.jpg",
+      "Visible image captions",
+      "Gallery zoom buttons"
+    ]
+  },
+  "disclosure": {
+    "desktop_min_width": 768,
+    "threshold": "Full text taller than rendered adjacent image. Reserve the measured link-button height plus 16px gap inside that height.",
+    "mobile_or_no_photo": "Preview budget of 8 text lines including disclosure control; short descriptions remain fully visible.",
+    "labels": [
+      "Читать далее",
+      "Свернуть"
+    ],
+    "recalculate_on": [
+      "viewport/image size changes",
+      "font/image load",
+      "text content mutation"
+    ],
+    "accessibility": "Native button with aria-expanded and aria-controls, keyboard operation; clipped interactive descendants removed from tab order and restored on expand. Full source text remains in DOM.",
+    "no_javascript": "Show complete text, hide the disclosure button."
+  }
+}

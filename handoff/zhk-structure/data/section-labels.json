@@ -1,0 +1,77 @@
+{
+  "version": 1,
+  "updated_on": "2026-11-25",
+  "purpose": "Universal editorial labels maintained once in the page template; no per-project copy fields needed",
+  "hero": {
+    "h1": "Public project name from CRM",
+    "eyebrow": "Location from CRM"
+  },
+  "sections": [
+    {
+      "id": "passport",
+      "eyebrow": "О проекте",
+      "h2": "Характеристики проекта"
+    },
+    {
+      "id": "apartments",
+      "eyebrow": "Предложения",
+      "h2": "Квартиры и планировки"
+    },
+    {
+      "id": "architecture",
+      "eyebrow": "Жилой комплекс",
+      "h2": "Описание проекта"
+    },
+    {
+      "id": "gallery",
+      "eyebrow": "Фотографии",
+      "h2": "Галерея проекта"
+    },
+    {
+      "id": "territory",
+      "eyebrow": "Для жителей",
+      "h2": "Инфраструктура комплекса"
+    },
+    {
+      "id": "location",
+      "eyebrow": "Локация",
+      "h2": "Расположение"
+    },
+    {
+      "id": "purchase",
+      "eyebrow": "Приобретение недвижимости",
+      "h2": "Условия покупки"
+    },
+    {
+      "id": "developer",
+      "eyebrow": "О компании",
+      "h2": "Застройщик"
+    },
+    {
+      "id": "documents",
+      "eyebrow": "Информация о проекте",
+      "h2": "Документы"
+    },
+    {
+      "id": "faq",
+      "eyebrow": "Полезная информация",
+      "h2": "Вопросы и ответы"
+    },
+    {
+      "id": "similar",
+      "eyebrow": "Другие предложения",
+      "h2": "Похожие жилые комплексы"
+    },
+    {
+      "id": "newsletter",
+      "eyebrow": "Медиа BARN Estate",
+      "h2": "Наши новости"
+    },
+    {
+      "id": "expert",
+      "eyebrow": "BARN Estate",
+      "h2": "Консультация эксперта"
+    }
+  ],
+  "conditional_sections": "A generic label does not make a section mandatory: hide section and anchor when its data source is absent"
+}

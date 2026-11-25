@@ -1,0 +1,104 @@
+{
+  "checked_on": "2026-11-25",
+  "status": "static-visual-examples-not-connected-to-crm",
+  "reference_card": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/gorodskaya-nedvizhimost/blocks/card-project/",
+  "reference_source": "main-site/pages/city/blocks/card-project/fragment.html; isolated appearance only, protected source unchanged",
+  "selection": "Three illustrative Moscow residential projects; no claimed automated ranking or current unit availability",
+  "prices_included": false,
+  "projects": [
+    {
+      "key": "opus",
+      "name": "OPUS",
+      "address": "Дербеневская набережная, 1",
+      "class": "De Luxe",
+      "developer": "PIONEER",
+      "url": "https://barn-estate.ru/zhilye-kompleksy/zhk-opus/",
+      "official_sources": [
+        "https://opus-home.ru/",
+        "https://opus-home.ru/team",
+        "https://opus-home.ru/news/pioneer_zavershil_stroitelstvo_klubnogo_doma_opus"
+      ],
+      "image": "assets/related-opus.webp",
+      "image_height": 540,
+      "asset_source": {
+        "file": "opus.webp",
+        "source": "https://opus-home.ru/upload/iblock/eb7/pq96iiwpv2usjvojsg3r22sscd55hxq1.webp",
+        "checked_on": "2026-11-25",
+        "processing": "ctk images (Sharp): EXIF orientation, width capped at 960px without enlargement, WebP output; content unchanged",
+        "original_sha256": "b3e433fc5b01ccda37c2bbf07464c53f5d40e94ecad9d53aa0a5178cf973c231",
+        "original_bytes": 816850,
+        "sha256": "bbeee4df2f9f8e55d5fd69c512607fa38f91d22d64c3500036797f8838734102",
+        "bytes": 71168,
+        "width": 960,
+        "height": 540
+      },
+      "canonical_image": "https://raw.githubusercontent.com/daniilterekh-prog/barnes-assets/291073edeb9a6914e9e066e738a3e8f5bb9a65d7/related-projects/moscow/official/opus.webp"
+    },
+    {
+      "key": "high-life",
+      "name": "HIGH LIFE",
+      "address": "Летниковская улица, 11",
+      "class": "Премиум",
+      "developer": "PIONEER",
+      "url": "https://barn-estate.ru/zhilye-kompleksy/zhk-high-life/",
+      "official_sources": [
+        "https://highlife.ru/",
+        "https://highlife.ru/news/218",
+        "https://pioneer.ru/project/high-life"
+      ],
+      "image": "assets/related-high-life.webp",
+      "image_height": 559,
+      "asset_source": {
+        "file": "high-life.webp",
+        "source": "https://highlife.ru/upload/iblock/7fb/2ipwo9yso7udjf5qwh1eg41gol7lz857.webp",
+        "checked_on": "2026-11-25",
+        "processing": "ctk images (Sharp): EXIF orientation, width capped at 960px without enlargement, WebP output; content unchanged",
+        "original_sha256": "45b28ed514853a325e1d242824046cc9a3a22307e6a91ba51515ed59240ba852",
+        "original_bytes": 640128,
+        "sha256": "a8d4e4cc61eaf0af88468eec1d5f306dea15f52f71be4b9b9f7c8ca395138565",
+        "bytes": 86144,
+        "width": 960,
+        "height": 559
+      },
+      "canonical_image": "https://raw.githubusercontent.com/daniilterekh-prog/barnes-assets/291073edeb9a6914e9e066e738a3e8f5bb9a65d7/related-projects/moscow/official/high-life.webp"
+    },
+    {
+      "key": "vesper-kutuzovsky",
+      "name": "Веспер Кутузовский",
+      "address": "Кутузовский проспект, 12, стр. 5",
+      "class": "Премиум",
+      "developer": "Vesper",
+      "url": "https://barn-estate.ru/zhilye-kompleksy/vesper-kutuzovsky-vesper-kutuzovskiy/",
+      "official_sources": [
+        "https://vesper-kutuzovsky.ru/",
+        "https://vespermoscow.com/projects/kutuzovsky/"
+      ],
+      "image": "assets/related-vesper-kutuzovsky.webp",
+      "image_height": 433,
+      "asset_source": {
+        "file": "vesper-kutuzovsky.webp",
+        "source": "https://vesper-kutuzovsky.ru/wp-content/uploads/2025/02/img-4.jpg",
+        "checked_on": "2026-11-25",
+        "processing": "ctk images (Sharp): EXIF orientation, width capped at 960px without enlargement, WebP output; content unchanged",
+        "original_sha256": "facbea12d80a8a188776c9d88bf4b5bebdddcdffa4e36e6e09e6d61d302a2c23",
+        "original_bytes": 248586,
+        "sha256": "881541b3d44fb23a493c81db2e6ac0fe7fd9b4baf1c222b67eeb8e79528eb026",
+        "bytes": 67202,
+        "width": 960,
+        "height": 433
+      },
+      "canonical_image": "https://raw.githubusercontent.com/daniilterekh-prog/barnes-assets/291073edeb9a6914e9e066e738a3e8f5bb9a65d7/related-projects/moscow/official/vesper-kutuzovsky.webp"
+    }
+  ],
+  "appearance": {
+    "columns": "3 desktop / 2 tablet / 1 mobile",
+    "image_ratio": "4/3",
+    "body_overlap_px": 35,
+    "body_margin_inline_px": 12,
+    "body_padding_px": "20px 18px 0",
+    "name_font_px": "23 desktop / 22 mobile",
+    "favorite_px": 40,
+    "action_height_px": "54 desktop / 50 mobile",
+    "fields": "Address, name, class and developer; no unverified prices, deadlines or unit counts"
+  }
+}
