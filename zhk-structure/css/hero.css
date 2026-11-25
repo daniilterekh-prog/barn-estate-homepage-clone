@@ -10,10 +10,14 @@ section.project-hero{
   background:linear-gradient(90deg,rgba(0,0,0,.62),rgba(0,0,0,.22) 70%),linear-gradient(0deg,rgba(0,0,0,.62),transparent 65%),linear-gradient(180deg,rgba(0,0,0,.2),transparent 30%);
 }
 .project-hero .project-hero__inner{
-  height:100%;min-height:inherit;padding-top:190px;padding-bottom:56px;
-  display:flex;flex-direction:column;justify-content:center;
+  height:100%;min-height:inherit;padding-top:190px;padding-bottom:80px;
+  display:flex;flex-direction:column;justify-content:flex-end;
 }
-.project-hero .hero-copy{margin:0;width:100%}
+.project-hero .hero-copy{
+  margin:0;width:100%;display:grid;
+  grid-template-columns:minmax(0,1fr) 280px;column-gap:48px;align-items:end;
+}
+.project-hero .hero-copy>:is(.eyebrow,h1,.project-hero__summary){grid-column:1}
 .project-hero .eyebrow{margin-bottom:26px;font-size:14px;line-height:1.4;letter-spacing:.12em;color:#fff}
 .project-hero h1{
   max-width:1250px;margin:0 0 22px;
@@ -26,37 +30,37 @@ section.project-hero{
 }
 .project-hero__summary>span{white-space:nowrap}
 .project-hero__separator{opacity:.7}
-.project-hero .actions{gap:32px;margin-top:36px;max-width:none;flex-direction:row;align-items:center}
-.project-hero .button{min-width:248px}
-.project-hero .text-link{font-size:17px;gap:24px;color:#fff;text-decoration-color:rgba(255,255,255,.65)}
+.project-hero .actions{grid-column:2;grid-row:1/4;gap:18px;margin:0;width:100%;max-width:none;flex-direction:column;align-items:stretch}
+.project-hero .button{min-width:0;width:100%}
+.project-hero .text-link{justify-content:space-between;min-height:44px;font-size:17px;gap:24px;color:#fff;text-decoration-color:rgba(255,255,255,.65)}
 .project-hero .text-link:hover{color:#fff;text-decoration-color:#fff}
 .project-hero :is(a,button):focus-visible{outline-color:#fff}
 .project-hero .image-caption{right:var(--gutter);bottom:18px;font-size:12px;opacity:1}
 @media(min-width:1441px){section.project-hero{height:960px;min-height:960px}}
-@media(min-width:1921px){.project-hero .project-hero__inner{padding-top:220px;padding-bottom:18px}}
+@media(min-width:1921px){.project-hero .project-hero__inner{padding-top:220px;padding-bottom:100px}}
 /* Same laptop-height policy as the homepage, using the existing local kit variable. */
 @media(min-width:1025px) and (max-width:1919px),(min-width:1920px) and (max-height:1000px){
   section.project-hero{height:var(--hero-laptop-main);min-height:var(--hero-laptop-main)}
-  .project-hero .project-hero__inner{padding-top:185px;padding-bottom:56px}
+  .project-hero .project-hero__inner{padding-top:185px;padding-bottom:80px}
 }
 @media(min-width:1025px) and (max-width:1440px){
   .project-hero .eyebrow{margin-bottom:14px}
   .project-hero h1{margin-bottom:22px}
-  .project-hero .actions{margin-top:22px}
   .project-hero .image-caption{bottom:18px}
 }
 @media(max-width:1024px){
   section.project-hero{min-height:820px}
-  .project-hero .project-hero__inner{padding-top:150px;padding-bottom:56px}
+  .project-hero .project-hero__inner{padding-top:150px;padding-bottom:80px}
 }
 @media(max-width:767px){
   section.project-hero{height:820px;min-height:820px}
-  .project-hero .project-hero__inner{padding-top:120px;padding-bottom:130px}
+  .project-hero .project-hero__inner{padding-top:120px;padding-bottom:80px}
+  .project-hero .hero-copy{display:block}
   .project-hero .hero-image{object-position:52% center}
   .project-hero .eyebrow{font-size:11px;letter-spacing:.1em;margin-bottom:24px}
   .project-hero h1{font-size:48px;margin-bottom:20px}
   .project-hero__summary{font-size:20px;gap:8px 14px}
-  .project-hero .actions{flex-direction:column;align-items:stretch;gap:10px;margin-top:28px;max-width:500px}
+  .project-hero .actions{flex-direction:column;align-items:stretch;gap:10px;margin-top:28px;max-width:280px;margin-left:auto}
   .project-hero .button{min-width:0;width:100%}
   .project-hero .text-link{justify-content:space-between;font-size:16px;min-height:44px}
   .project-hero .image-caption{bottom:18px;font-size:11px}
@@ -64,7 +68,7 @@ section.project-hero{
 
 @media(max-width:540px){
   section.project-hero{height:560px;min-height:560px}
-  .project-hero .project-hero__inner{padding-top:110px;padding-bottom:32px}
+  .project-hero .project-hero__inner{padding-top:110px;padding-bottom:72px}
   .project-hero .eyebrow{margin-bottom:16px}
   .project-hero h1{font-size:clamp(38px,10vw,48px);margin-bottom:18px}
   .project-hero__summary{font-size:17px;gap:8px 12px}
