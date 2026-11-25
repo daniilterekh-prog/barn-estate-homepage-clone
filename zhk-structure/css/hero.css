@@ -16,18 +16,16 @@ section.project-hero{
 .project-hero .hero-copy{margin:0;width:100%}
 .project-hero .eyebrow{margin-bottom:26px;font-size:14px;line-height:1.4;letter-spacing:.12em;color:#fff}
 .project-hero h1{
-  max-width:1250px;margin:0 0 28px;
-  font:300 var(--heading)/1.2 "Tilda Sans",sans-serif;
+  max-width:1250px;margin:0 0 22px;
+  font:300 clamp(48px,5vw,88px)/1.08 "Tilda Sans",sans-serif;
   letter-spacing:normal;text-transform:none;text-wrap:balance;
 }
-.project-hero__facts{
-  display:grid;grid-template-columns:repeat(auto-fit,minmax(min(150px,100%),1fr));
-  max-width:850px;gap:14px;margin:0;
+.project-hero__summary{
+  display:flex;align-items:center;flex-wrap:wrap;gap:10px 18px;
+  margin:0;font-size:22px;line-height:1.4;font-weight:300;color:#fff;
 }
-.project-hero__facts>div{min-width:0;display:flex;flex-direction:column;gap:8px;padding:14px 22px;border:1px solid rgba(255,255,255,.4)}
-.project-hero__facts dt{order:2;font-size:13px;line-height:1.3;color:#fff}
-.project-hero__facts dd{font-size:27px;line-height:1.15;font-weight:300;overflow-wrap:anywhere}
-.project-hero__facts>div:before{content:"";width:44px;height:1px;background:rgba(255,255,255,.6);margin-bottom:3px}
+.project-hero__summary>span{white-space:nowrap}
+.project-hero__separator{opacity:.7}
 .project-hero .actions{gap:32px;margin-top:36px;max-width:none;flex-direction:row;align-items:center}
 .project-hero .button{min-width:248px}
 .project-hero .text-link{font-size:17px;gap:24px;color:#fff;text-decoration-color:rgba(255,255,255,.65)}
@@ -44,49 +42,32 @@ section.project-hero{
 @media(min-width:1025px) and (max-width:1440px){
   .project-hero .eyebrow{margin-bottom:14px}
   .project-hero h1{margin-bottom:22px}
-  .project-hero__facts>div{padding:8px 20px;gap:7px}
-  .project-hero__facts>div:before{margin-bottom:0}
-  .project-hero__facts dd{font-size:25px}
   .project-hero .actions{margin-top:22px}
   .project-hero .image-caption{bottom:18px}
 }
 @media(max-width:1024px){
   section.project-hero{min-height:820px}
   .project-hero .project-hero__inner{padding-top:150px;padding-bottom:56px}
-  .project-hero__facts{max-width:800px;gap:10px}
-  .project-hero__facts>div{padding:12px 16px}
-  .project-hero__facts dd{font-size:24px}
 }
 @media(max-width:767px){
   section.project-hero{height:820px;min-height:820px}
   .project-hero .project-hero__inner{padding-top:120px;padding-bottom:130px}
   .project-hero .hero-image{object-position:52% center}
   .project-hero .eyebrow{font-size:11px;letter-spacing:.1em;margin-bottom:24px}
-  .project-hero h1{margin-bottom:30px}
-  .project-hero__facts{grid-template-columns:repeat(2,minmax(0,1fr));max-width:500px;gap:10px}
-  .project-hero__facts>div{padding:12px;gap:7px}
-  .project-hero__facts>div:before{width:30px;margin:0}
-  .project-hero__facts dd{font-size:23px}
-  .project-hero__facts dt{font-size:12px}
+  .project-hero h1{font-size:48px;margin-bottom:20px}
+  .project-hero__summary{font-size:20px;gap:8px 14px}
   .project-hero .actions{flex-direction:column;align-items:stretch;gap:10px;margin-top:28px;max-width:500px}
   .project-hero .button{min-width:0;width:100%}
   .project-hero .text-link{justify-content:space-between;font-size:16px;min-height:44px}
   .project-hero .image-caption{bottom:18px;font-size:11px}
-}
-@media(max-width:359px){
-  .project-hero__facts>div{padding:10px 12px}
-  .project-hero__facts dd{font-size:21px}
 }
 
 @media(max-width:540px){
   section.project-hero{height:560px;min-height:560px}
   .project-hero .project-hero__inner{padding-top:110px;padding-bottom:32px}
   .project-hero .eyebrow{margin-bottom:16px}
-  .project-hero h1{margin-bottom:20px}
-  .project-hero__facts{gap:8px}
-  .project-hero__facts>div{padding:8px 12px;gap:6px}
-  .project-hero__facts dd{font-size:21px}
-  .project-hero__facts dt{font-size:11px}
-  .project-hero .actions{margin-top:20px;gap:4px}
+  .project-hero h1{font-size:clamp(38px,10vw,48px);margin-bottom:18px}
+  .project-hero__summary{font-size:17px;gap:8px 12px}
+  .project-hero .actions{margin-top:28px;gap:4px}
   .project-hero .image-caption{bottom:12px}
 }
