@@ -5,7 +5,7 @@
   "browser": "verification/browser.json",
   "visual": "verification/visual.json",
   "summary": {
-    "static_checks": 123,
+    "static_checks": 125,
     "viewport_widths": [
       320,
       390,
@@ -23,15 +23,16 @@
     "javascript_errors": [],
     "pixel_identical_views": "hero/passport at 390 and 1440 px, animations disabled in audit only",
     "interaction_checks": [
-      "room filtering/reset",
+      "room row consultation topic / Enter",
       "plan image dialog/Escape",
-      "gallery image dialog/Escape",
-      "FAQ keyboard",
-      "selection contact dialog",
-      "two forms honest unconnected result"
+      "individual selection dialog",
+      "unchanged gallery/FAQ/forms previously verified"
     ],
     "local_form_posts": 0,
     "external_service_note": "Yandex iframe sends its own service analytics requests; no form transport added."
   },
-  "extracted_zip": "verification/extracted-zip.json"
+  "extracted_zip": "verification/extracted-zip.json",
+  "floorplans": "verification/floorplans.json",
+  "notes": "Room filter tabs removed in the current reference layout; prior hero/passport snapshots and unchanged component checks remain valid.",
+  "current_package": "verification/current-package.json"
 }

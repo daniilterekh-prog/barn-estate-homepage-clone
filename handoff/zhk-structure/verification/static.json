@@ -1,8 +1,8 @@
 {
-  "checks": 123,
+  "checks": 125,
   "passed": true,
   "failures": [],
-  "local_references": 70,
+  "local_references": 71,
   "sections": [
     "project",
     "passport",
@@ -19,7 +19,7 @@
     "newsletter",
     "expert"
   ],
-  "files": 95,
+  "files": 108,
   "details": [
     {
       "check": "reference html/index.html -> ../assets/logo.svg",
@@ -150,6 +150,10 @@
       "passed": true
     },
     {
+      "check": "reference html/index.html -> ../css/floorplans.css?v=reference-table-20261125",
+      "passed": true
+    },
+    {
       "check": "reference html/index.html -> ../assets/logo.svg",
       "passed": true
     },
@@ -162,7 +166,7 @@
       "passed": true
     },
     {
-      "check": "reference html/index.html -> ../assets/plan-126.svg",
+      "check": "reference html/index.html -> ../assets/view.jpg",
       "passed": true
     },
     {
@@ -303,6 +307,10 @@
     },
     {
       "check": "all image sources local",
+      "passed": true
+    },
+    {
+      "check": "unchanged css/floorplans.css",
       "passed": true
     },
     {

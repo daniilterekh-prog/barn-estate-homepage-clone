@@ -1,0 +1,26 @@
+{
+  "updated_on": "2026-11-25",
+  "section_id": "apartments",
+  "request": "Use the attached layout reference: compact rows on the left, a large photo with text at the bottom on the right; preserve the existing BARN Estate kit.",
+  "composition": "Four aligned desktop columns: room count, price, area, action. On tablets actions occupy a second row; on phones each format uses a two-by-two grid above the photo. No redundant room-filter tabs.",
+  "image": "Existing official project image assets/view.jpg, documented in preview/assets/sources.json; no new media or project facts introduced.",
+  "text": "Shared BARN Estate service copy; the same text can be used for all projects.",
+  "plan": "Existing official plan-126.svg stays available from the photo card, labelled 2 rooms / 58.6 m²; not linked to live availability.",
+  "current_rows": [
+    {"rooms": 1, "area_m2": 40, "price": null, "available_count": null},
+    {"rooms": 2, "area_m2": 58.6, "price": null, "available_count": null},
+    {"rooms": 3, "area_m2": 77.5, "price": null, "available_count": null}
+  ],
+  "current_data_status": "Previously preserved official format examples, not current inventory, not minimum area per eligible stock group. Show no 'от' for the sample area. Unknown price uses По запросу; row opens consultation.",
+  "live_contract": {
+    "connected": false,
+    "source": "Published eligible lot records joined to the project by a verified stable ID",
+    "grouping": "Use actual room count; bedroom count in the reference must not be substituted for room count. Include 4+ only when present in returned data.",
+    "price": "Minimum valid total price of eligible lots in the group; render 'от' only when this is an actual minimum. Currency must match. No valid price => По запросу.",
+    "price_per_m2": "Optional secondary line from valid values in the same eligible group; hide if absent. Do not copy the reference's numbers.",
+    "area": "Minimum valid area of the returned group, then 'от'; otherwise hide missing values. Never claim the static sample is the live minimum.",
+    "count": "Exact count of eligible returned lots, with correct Russian plural and a working filtered results URL. No feed/count => no number; preserve service consultation action.",
+    "empty_group": "Hide the entire row; no empty group or fake availability. Empty inventory section must follow the overall visibility contract."
+  },
+  "runtime": ["preview/index.html", "preview/css/floorplans.css", "preview/js/page.js"]
+}

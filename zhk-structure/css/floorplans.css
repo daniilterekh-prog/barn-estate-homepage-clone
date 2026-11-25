@@ -1,0 +1,45 @@
+/* Reference composition: compact format rows and a photographic card, in the existing kit. */
+#apartments .apartments-layout{grid-template-columns:minmax(0,1.35fr) minmax(0,.9fr);gap:clamp(32px,4.5vw,80px);align-items:stretch}
+#apartments .formats-content{min-width:0}
+#apartments{--formats-action-column:116px}
+#apartments .formats-heading,#apartments .format-row{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1.1fr) minmax(0,.7fr) var(--formats-action-column);align-items:center;gap:20px}
+#apartments .formats-heading{padding:0 0 20px;font-size:16px;font-weight:400;color:var(--copy)}
+#apartments .format-list{margin:0;border-top:1px solid var(--line)}
+#apartments .format-row{width:100%;min-height:100px;padding:24px 0;border-bottom:1px solid var(--line);font-size:20px;line-height:1.35;text-align:left}
+#apartments .format-row>span{min-width:0}
+#apartments .format-row .format-price{font-weight:400}
+#apartments .format-row .format-area{white-space:nowrap}
+#apartments .format-row .format-action{display:inline-flex;align-items:center;justify-content:flex-end;gap:8px;grid-column:auto;text-align:right;color:var(--brand);font-size:17px;font-weight:400;white-space:nowrap}
+#apartments .format-action svg,#apartments .formats-plan-link svg{flex:none}
+#apartments .format-row:hover .format-action{text-decoration:underline;text-underline-offset:4px}
+#apartments .selection-cta{margin-top:32px;max-width:100%;white-space:normal}
+#apartments .formats-cover{position:relative;isolation:isolate;min-height:420px;overflow:hidden;color:#fff}
+#apartments .formats-cover>img{position:absolute;inset:0;z-index:-2;width:100%;height:100%;object-fit:cover;object-position:62% center}
+#apartments .formats-cover:after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,transparent 20%,#0009 65%,#000d)}
+#apartments .formats-cover figcaption{position:absolute;left:32px;right:32px;bottom:32px}
+#apartments .formats-cover h3{font-size:28px;line-height:1.2;margin-bottom:16px}
+#apartments .formats-cover p{font-size:18px;line-height:1.45;font-weight:300;max-width:440px}
+#apartments .formats-plan-link{display:inline-flex;align-items:center;gap:12px;min-height:44px;margin-top:16px;padding:4px 0;color:#fff;font-size:16px;font-weight:400;text-align:left;text-decoration:underline;text-underline-offset:4px}
+#apartments .formats-plan-link:hover{color:#fff;text-decoration-thickness:2px}
+@media(min-width:1441px){#apartments{--formats-action-column:132px}#apartments .format-row{font-size:22px}#apartments .format-row .format-action{font-size:19px}}
+@media(min-width:768px) and (max-width:1200px){
+  #apartments .apartments-layout{grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:28px}
+  #apartments .formats-heading,#apartments .format-row{grid-template-columns:minmax(0,1fr) minmax(0,1fr) 78px;gap:12px}
+  #apartments .formats-heading>span:last-child{display:none}
+  #apartments .format-row{font-size:18px;padding:20px 0;row-gap:12px}
+  #apartments .format-row .format-action{grid-column:1/-1;font-size:16px}
+  #apartments .formats-cover figcaption{left:24px;right:24px;bottom:24px}
+}
+@media(max-width:767px){
+  #apartments .apartments-layout{grid-template-columns:1fr;gap:32px}
+  #apartments .formats-heading{display:none}
+  #apartments .format-row{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px 16px;min-height:104px;padding:20px 0;font-size:18px}
+  #apartments .format-row .format-price{text-align:right}
+  #apartments .format-row .format-area{font-size:16px}
+  #apartments .format-row .format-action{grid-column:auto;font-size:16px}
+  #apartments .selection-cta{margin-top:24px}
+  #apartments .formats-cover{min-height:340px}
+  #apartments .formats-cover figcaption{left:24px;right:24px;bottom:24px}
+  #apartments .formats-cover h3{font-size:24px;margin-bottom:12px}
+  #apartments .formats-cover p{font-size:16px;line-height:1.5}
+}

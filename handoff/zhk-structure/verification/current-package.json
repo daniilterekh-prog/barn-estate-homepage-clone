@@ -1,0 +1,35 @@
+{
+  "rows": [
+    {
+      "width": 390,
+      "overflow": false,
+      "formats": 3,
+      "photo": true,
+      "sections": 14
+    },
+    {
+      "width": 768,
+      "overflow": false,
+      "formats": 3,
+      "photo": true,
+      "sections": 14
+    },
+    {
+      "width": 1440,
+      "overflow": false,
+      "formats": 3,
+      "photo": true,
+      "sections": 14
+    },
+    {
+      "width": 3840,
+      "overflow": false,
+      "formats": 3,
+      "photo": true,
+      "sections": 14
+    }
+  ],
+  "plan": true,
+  "selection": true,
+  "errors": []
+}

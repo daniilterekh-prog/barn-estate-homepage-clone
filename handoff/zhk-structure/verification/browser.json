@@ -1,5 +1,5 @@
 {
-  "rows": [
+  "previous_package_rows": [
     {
       "width": 320,
       "overflow": false,
@@ -83,8 +83,6 @@
     }
   ],
   "interactions": {
-    "filtered": 1,
-    "reset": 3,
     "plan": true,
     "gallery": true,
     "faq": true,
@@ -98,5 +96,7 @@
     "https://mc.yandex.com/watch/2141027/1",
     "https://mc.yandex.com/watch/44120344/1"
   ],
-  "local_form_posts": 0
+  "local_form_posts": 0,
+  "current_floorplans_report": "floorplans.json",
+  "previous_package_rows_note": "Prior complete responsive audit; current floorplans follow floorplans.json."
 }

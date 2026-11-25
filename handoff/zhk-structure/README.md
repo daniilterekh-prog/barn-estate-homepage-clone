@@ -1,6 +1,6 @@
 # Страница ЖК BARN Estate — пакет разработчику
 
-Актуальная сборка от 25.11.2026 из согласованного превью `zhk-structure`, включая кнопку индивидуальной подборки и дополнительные характеристики в ячейках. Это одна постоянная папка: при правках обновляются она и ZIP, история остаётся в Git.
+Актуальная сборка от 25.11.2026 из согласованного превью `zhk-structure`, включая планировки по присланному референсу, кнопку индивидуальной подборки и дополнительные характеристики в ячейках. Это одна постоянная папка: при правках обновляются она и ZIP, история остаётся в Git.
 
 | Что нужно | Где находится |
 | --- | --- |
@@ -31,6 +31,6 @@ python3 -m http.server 8080
 
 Это готовая передача визуального шаблона. Intrum API, актуальный каталог квартир и отправка заявок не подключены. Формы показывают «Заявка не отправлена» и телефон; разработчику нужно подключить свой транспорт. Статические форматы квартир и похожие проекты не следует считать актуальным наличием. Подробности — в DATA.md.
 
-[Исходники](https://github.com/daniilterekh-prog/barnes-sites/tree/main/main-site/pages/residential-complex/structure) · [Превью](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/zhk-structure/?v=fecf384) · [Открыть пакет](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/handoff/zhk-structure/html/index.html).
+[Исходники](https://github.com/daniilterekh-prog/barnes-sites/tree/main/main-site/pages/residential-complex/structure) · [Превью](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/zhk-structure/) · [Открыть пакет](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/handoff/zhk-structure/html/index.html).
 
 Пересборка в каноническом репозитории: `python3 main-site/pages/residential-complex/structure/tools/build-handoff.py`; после проверок — та же команда с `--package`. Затем скопировать готовую папку в `barn-estate-homepage-clone/handoff/zhk-structure/`, проверить, commit + push. Не редактировать защищённые узлы и не смешивать их общие зависимости с локальными файлами этого пакета.
