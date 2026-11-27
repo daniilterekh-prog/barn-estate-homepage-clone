@@ -150,6 +150,13 @@ function files(dir) {
     assert.equal(spb.status, 200);
     report.spbPageStatus = spb.status;
     report.imageRequests = [...new Set(report.imageRequests)];
+    report.servedRasterFormats = await Promise.all(report.imageRequests.filter(url => /\.webp([?#]|$)/i.test(url)).map(async url => {
+      const response = await fetch(url);assert.equal(response.status,200);
+      const bytes = Buffer.from(await response.arrayBuffer()),meta = await sharp(bytes).metadata();
+      assert.equal(meta.format,'webp','Actual served bytes must be WebP');
+      return {url,format:meta.format,width:meta.width,height:meta.height,bytes:bytes.length};
+    }));
+
     assert.deepEqual(report.nonWebpRasterRequests, []);
     assert.deepEqual(report.httpErrors, []);
     assert.deepEqual(report.jsErrors, []);
