@@ -1,4 +1,4 @@
-[Актуальное превью лота](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/stranitsa-lota/?hero=3&v=sticky-header-20261127): цена без подложки, прямое листание фото и компактный белый хедер после херо, по узлу «Собственникам». [Источники и проверки](https://github.com/daniilterekh-prog/barnes-sites/tree/main/main-site/pages/lot).
+[Текущая страница лота](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/stranitsa-lota/?hero=3&v=zhk-components-20261127): готовые компоненты ЖК с параметрами, фото и брокером лота. [Карта адаптации и проверки](https://github.com/daniilterekh-prog/barnes-sites/blob/main/main-site/pages/lot/ADAPTATION.md).
 
 # Общий шаблон лота BARN Estate
 

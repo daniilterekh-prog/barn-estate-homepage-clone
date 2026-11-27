@@ -118,5 +118,27 @@
     "background": "#ffffff",
     "sectionHeadings": "uppercase; Tilda Sans 300; existing kit sizes and line height",
     "rule": "No gray or beige content fills, including plan/building/terms, gallery container and map loading background. Thin kit lines and secondary ink remain. Photo sections and the canonical dark footer keep their photographic/brand treatment."
+  },
+  "componentDesignSource": {
+    "reference": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/zhk-structure/?v=97aa519#project",
+    "sourceCommit": "ccbbd989a6909f1b1508656a83077583be48e282",
+    "components": [
+      "passport and metadata",
+      "project-description",
+      "floorplans formats and photographic card",
+      "purchase cards",
+      "location panel",
+      "consultation fields and expert card",
+      "documents, FAQ and related-project cards"
+    ],
+    "arrows": {
+      "source": "gallery.css",
+      "phoneThrough767": 48,
+      "desktopThrough1440": 56,
+      "wide": 68,
+      "svg": "11x22; M9.5 21 1 11 9.5 1 / M1.5 21 10 11 1.5 1"
+    },
+    "form": "Existing lot request form, restyled with project consultation; no new transport or unsupported channel choices",
+    "hero": "Retain chosen composition/height, short fact gaps and direct slides; align gutters and CTA padding to source kit"
   }
 }

@@ -7,11 +7,11 @@
   const heroVariant = new URLSearchParams(location.search).get('hero');
   if (/^[1-5]$/.test(heroVariant || '')) document.body.dataset.heroVariant = heroVariant;
   const icons = {
-    arrow: '<path d="M4 12h16M14 6l6 6-6 6"/>',
+    arrow: '<path d="M6 18 18 6M6 6h12v12"/>',
     photos: '<rect x="3" y="4" width="18" height="16" rx="1"/><circle cx="8" cy="9" r="1.5"/><path d="m3 17 6-5 4 3 4-5 4 5"/>',
     plan: '<path d="M3 3h18v18H3zM3 12h9V3M12 12v9M12 16h9"/>',
-    left: '<path d="m14 6-6 6 6 6"/>',
-    right: '<path d="m10 6 6 6-6 6"/>'
+    left: '<path d="M9.5 21 1 11 9.5 1"/>',
+    right: '<path d="M1.5 21 10 11 1.5 1"/>'
   };
   function el(tag, text, cls) {
     const node = document.createElement(tag);
@@ -21,12 +21,15 @@
   }
   function icon(name) {
     const node = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
-    node.setAttribute('viewBox', '0 0 24 24');
+    node.setAttribute('width', name === 'left' || name === 'right' ? '11' : '18');
+    node.setAttribute('height', name === 'left' || name === 'right' ? '22' : '18');
+    node.classList.add('ui-arrow');
+    node.setAttribute('viewBox', name === 'left' || name === 'right' ? '0 0 11 22' : '0 0 24 24');
     node.setAttribute('fill', 'none');
     node.setAttribute('stroke', 'currentColor');
-    node.setAttribute('stroke-width', '1.5');
-    node.setAttribute('stroke-linecap', 'round');
-    node.setAttribute('stroke-linejoin', 'round');
+    node.setAttribute('stroke-width', name === 'left' || name === 'right' ? '1' : '1.5');
+    node.setAttribute('stroke-linecap', name === 'left' || name === 'right' ? 'butt' : 'round');
+    node.setAttribute('stroke-linejoin', name === 'left' || name === 'right' ? 'miter' : 'round');
     node.setAttribute('aria-hidden', 'true');
     node.innerHTML = icons[name] || icons.arrow;
     return node;
@@ -62,8 +65,9 @@
     node.setAttribute('aria-labelledby', id + '-title');
     const box = el('div', null, 'container');
     const heading = el('div', null, 'section-heading');
-    if (eyebrow) heading.append(el('p', eyebrow, 'eyebrow'));
-    const h2 = el('h2', title); h2.id = id + '-title'; heading.append(h2);
+    const group = el('div');
+    if (eyebrow) group.append(el('p', eyebrow, 'eyebrow'));
+    const h2 = el('h2', title); h2.id = id + '-title'; group.append(h2); heading.append(group);
     box.append(heading); node.append(box); return {node, box, heading};
   }
   function brokerBlock(lot) {
@@ -123,11 +127,11 @@
         actions.classList.add('lot-hero__slider');
         actions.setAttribute('role', 'group');
         actions.setAttribute('aria-label', 'Фотографии объекта');
-        const previous = el('button', null, 'icon-button'); previous.type = 'button';
+        const previous = el('button', null, 'icon-button pg-nav-button'); previous.type = 'button';
         previous.dataset.heroStep = '-1'; previous.setAttribute('aria-label', 'Предыдущее фото в херо'); previous.append(icon('left'));
         const counter = el('span', '1 / ' + items.length, 'lot-hero__counter');
         counter.setAttribute('aria-live', 'polite'); counter.setAttribute('aria-atomic', 'true');
-        const next = el('button', null, 'icon-button'); next.type = 'button';
+        const next = el('button', null, 'icon-button pg-nav-button'); next.type = 'button';
         next.dataset.heroStep = '1'; next.setAttribute('aria-label', 'Следующее фото в херо'); next.append(icon('right'));
         actions.append(previous, counter, next); copy.append(actions);
       }
@@ -174,94 +178,103 @@
       }); hero.append(filmstrip);
     }
     const sectionLinks = [];
-    if (data.features?.length) {
-      const s = section('lot-features', 'ДЕТАЛИ, КОТОРЫЕ ВАЖНЫ', 'Особенности объекта');
-      const grid = el('div', null, 'lot-features');
-      data.features.forEach((f, i) => {
-        const card = el('article', null, 'lot-feature'); card.append(el('p', String(i + 1).padStart(2, '0'), 'lot-feature__number'), el('h3', f.label));
-        if (f.text) card.append(el('p', f.text)); grid.append(card);
-      }); s.box.append(grid); main.append(s.node);
+    const photosForBlocks = heroPhotos(data);
+    const photoFor = index => photosForBlocks[index] || data.cover;
+    const characteristics = (data.facts || []).filter(f => f.value != null && f.value !== '');
+    if (characteristics.length || data.features?.length) {
+      const s = section('lot-features', 'ОБ ОБЪЕКТЕ', 'Характеристики объекта');
+      const passport = el('div', null, 'passport'); const figure = el('figure'); figure.append(image(photoFor(1)));
+      const items = characteristics.length ? characteristics : data.features.map(f => ({label:f.label,value:f.text}));
+      const list = factsList(items, 'passport-facts'); list.setAttribute('aria-label','Характеристики объекта');
+      passport.append(figure,list); s.box.append(passport); main.append(s.node);
     }
     {
-      const s = section('lot-plan', 'ПРОСТРАНСТВО', 'Планировка', 'lot-soft');
-      const split = el('div', null, 'lot-split'); const intro = el('div'); intro.append(s.heading);
-      intro.append(el('p', data.floorPlan?.description || 'Посмотрите, как устроено пространство, и обсудите планировку с брокером.', 'lead'));
-      if (data.floorPlan?.src) {
-        const button = action('', 'plan', 'lot-plan-image'); button.append(image(data.floorPlan), el('span', 'Открыть и увеличить планировку')); split.append(intro, button);
-      } else {
-        const empty = el('div', null, 'lot-plan-empty');
-        if (fact(data, 'Площадь')) { const metric = el('p', fact(data, 'Площадь'), 'lot-plan-empty__metric'); metric.append(el('small', 'общая площадь')); empty.append(metric); }
-        const text = el('div'); text.append(el('h3', 'Планировка по запросу'), el('p', 'Попросите брокера прислать план и уточнить размеры помещений.'), action('Запросить планировку', 'plan-request', 'text-link'));
-        empty.append(text); split.append(intro, empty);
-      } s.box.append(split); main.append(s.node);
+      const s = section('lot-plan', 'ПРОСТРАНСТВО', 'Планировка');
+      const layout = el('div',null,'apartments-layout'); const content = el('div',null,'formats-content');
+      const heading = el('div',null,'formats-heading'); heading.setAttribute('aria-hidden','true');
+      ['Формат','Площадь','Комнат',''].forEach(value=>heading.append(el('span',value)));
+      const formats = el('div',null,'format-list'); formats.setAttribute('aria-label','Параметры планировки объекта');
+      const request = data.floorPlan?.src ? 'plan' : 'plan-request';
+      const row = action('',request,'format-row');
+      row.append(el('span',fact(data,'Тип объекта') || 'Объект','format-name'),el('span',fact(data,'Площадь') || 'Уточнить','format-price'),el('span',fact(data,'Комнат') ? fact(data,'Комнат') + ' комн.' : '—','format-area'));
+      const rowAction=el('span',data.floorPlan?.src?'Смотреть':'Запросить','format-action'); rowAction.append(icon('right')); row.append(rowAction); formats.append(row);
+      content.append(heading,formats);
+      if(data.floorPlan?.description) content.append(el('p',data.floorPlan.description,'format-note lead'));
+      const cover=el('figure',null,'formats-cover'); cover.append(image(photoFor(3)));
+      const caption=el('figcaption'); caption.append(el('h3',data.floorPlan?.src?'Планировка объекта':'Планировка по запросу'),el('p',data.floorPlan?.src?'Посмотрите план и обсудите пространство с брокером.':'Попросите брокера прислать план и уточнить размеры помещений.'));
+      caption.append(action(data.floorPlan?.src?'Открыть планировку':'Запросить планировку',request,'formats-plan-link','arrow')); cover.append(caption);
+      layout.append(content,cover); s.box.append(layout); main.append(s.node);
     }
     {
-      const s = section('lot-about', 'ВАШ БУДУЩИЙ ДОМ', 'О квартире'); const split = el('div', null, 'lot-split');
-      const text = el('div', null, 'lot-copy');
-      (data.descriptionParagraphs || [data.description]).filter(Boolean).forEach(p => text.append(el('p', p, 'lead')));
-      split.append(text, factsList(data.facts)); s.box.append(split); main.append(s.node);
+      const s=section('lot-about','ВАШ БУДУЩИЙ ДОМ','О квартире'); const description=el('div',null,'project-description');
+      const text=el('div',null,'project-description__text');
+      (data.descriptionParagraphs || [data.description]).filter(Boolean).forEach(p=>text.append(el('p',p)));
+      if(data.features?.length){const list=el('ul',null,'plain-list');data.features.forEach(f=>list.append(el('li',f.label+(f.text?' — '+f.text:''))));text.append(list);}
+      const figure=el('figure',null,'project-description__image');figure.append(image(photoFor(2)));
+      description.append(text,figure);s.box.append(description);main.append(s.node);
     }
-    if (data.building?.verified === true && data.building.name) {
-      const b = data.building, s = section('lot-building', 'АДРЕС И ХАРАКТЕР', 'О доме', 'lot-soft');
-      const split = el('div', null, 'lot-split'); const info = el('div');
-      info.append(el('h3', b.name)); if (b.description) info.append(el('p', b.description, 'lead'));
-      if (b.url) info.append(link('Подробнее о доме / ЖК', b.url));
-      const panel = el('div', null, 'lot-building-summary');
-      if (b.image?.src) panel.append(image(b.image, 'lot-building-image'));
-      if (b.facts?.length) panel.append(factsList(b.facts, 'lot-building-facts'));
-      else panel.append(el('p', 'Уточните у брокера сведения о доме, парковке и сервисе.', 'lead'));
-      split.append(info, panel); s.box.append(split); main.append(s.node);
+    if(data.building?.verified===true && data.building.name){
+      const b=data.building,s=section('lot-building','АДРЕС И ХАРАКТЕР','О доме');
+      const description=el('div',null,'project-description'+(b.image?.src?'':' project-description--text-only'));
+      const text=el('div',null,'project-description__text'); text.append(el('h3',b.name));
+      if(b.description)text.append(el('p',b.description));if(b.url)text.append(link('Подробнее о доме / ЖК',b.url));description.append(text);
+      if(b.image?.src){const figure=el('figure',null,'project-description__image');figure.append(image(b.image));description.append(figure);}
+      s.box.append(description);
+      if(b.facts?.length){const passport=el('div',null,'passport passport--text-only');passport.append(factsList(b.facts,'passport-facts'));s.box.append(passport);}
+      main.append(s.node);
     }
-    if (data.locationLabel || data.location) {
-      const s = section('lot-location', 'ГОРОД ВОКРУГ ВАС', 'Расположение и окружение'); s.heading.classList.add('lot-location-top');
-      const headingGroup = el('div'); headingGroup.append(...s.heading.childNodes); s.heading.append(headingGroup);
-      const address = el('div'); address.append(el('p', data.location?.label || data.locationLabel, 'lead')); s.heading.append(address);
-      const mapUrl = safeUrl(data.location?.mapUrl || 'https://yandex.ru/maps/?text=' + encodeURIComponent(data.locationLabel));
-      if (data.location?.mapImage?.src) {
-        const preview = link('', mapUrl, 'lot-map-preview'); preview.target = '_blank'; preview.rel = 'noopener noreferrer'; preview.setAttribute('aria-label', 'Открыть расположение объекта в Яндекс Картах');
-        preview.append(image(data.location.mapImage, 'lot-map'));
-        const pin = el('span', null, 'lot-map-pin'); pin.setAttribute('aria-hidden', 'true'); preview.append(pin); s.box.append(preview);
-      }
-      if (data.location?.embedUrl) {
-        const frame = el('iframe', null, 'lot-map'); frame.src = safeUrl(data.location.embedUrl); frame.title = 'Расположение объекта на карте'; frame.loading = 'lazy'; frame.referrerPolicy = 'no-referrer-when-downgrade'; s.box.append(frame);
-      }
-      const bar = el('div', null, 'lot-location-footer'); const mapLink = link('Открыть в Яндекс Картах', mapUrl); mapLink.target = '_blank'; mapLink.rel = 'noopener noreferrer';
-      bar.append(el('p', data.location?.note || 'Точный адрес и детали окружения уточнит брокер.', 'note'), mapLink); s.box.append(bar);
-      if (data.location?.mapImage?.src) s.box.append(link('© Яндекс · Условия использования', 'https://yandex.ru/legal/maps_termsofuse/', 'note lot-map-attribution'));
-      if (data.location?.nearby?.length) {
-        const grid = el('div', null, 'lot-nearby'); data.location.nearby.forEach(place => { const card = el('article'); card.append(el('h3', place.name)); if (place.detail) card.append(el('p', place.detail)); grid.append(card); }); s.box.append(grid);
-      } main.append(s.node);
+    if(data.locationLabel || data.location){
+      const s=section('lot-location','ГОРОД ВОКРУГ ВАС','Расположение и окружение');
+      const layout=el('div',null,'location-layout');const panel=el('div',null,'map-panel');
+      const mapUrl=safeUrl(data.location?.mapUrl || 'https://yandex.ru/maps/?text='+encodeURIComponent(data.locationLabel));
+      if(data.location?.mapImage?.src){const preview=link('',mapUrl,'lot-map-preview');preview.target='_blank';preview.rel='noopener noreferrer';preview.setAttribute('aria-label','Открыть расположение объекта в Яндекс Картах');preview.append(image(data.location.mapImage,'lot-map'));const pin=el('span',null,'lot-map-pin');pin.setAttribute('aria-hidden','true');preview.append(pin);panel.append(preview);}
+      if(data.location?.embedUrl){const frame=el('iframe',null,'lot-map');frame.src=safeUrl(data.location.embedUrl);frame.title='Расположение объекта на карте';frame.loading='lazy';frame.referrerPolicy='no-referrer-when-downgrade';panel.append(frame);}
+      const copy=el('div',null,'location-copy');copy.append(el('h3',data.location?.label || data.locationLabel),el('p',data.location?.note || 'Точный адрес и детали окружения уточнит брокер.','lead'));
+      const mapLink=link('Открыть в Яндекс Картах',mapUrl);mapLink.target='_blank';mapLink.rel='noopener noreferrer';mapLink.append(icon('arrow'));copy.append(mapLink);
+      if(data.location?.nearby?.length){const list=el('ul',null,'plain-list');data.location.nearby.forEach(place=>list.append(el('li',place.name+(place.detail?' — '+place.detail:''))));copy.append(list);}
+      if(panel.childElementCount)layout.append(panel);else layout.classList.add('location-layout--text-only');layout.append(copy);s.box.append(layout);
+      if(data.location?.mapImage?.src)s.box.append(link('© Яндекс · Условия использования','https://yandex.ru/legal/maps_termsofuse/','note lot-map-attribution'));main.append(s.node);
     }
     {
-      const s = section('lot-terms', 'СЛЕДУЮЩИЙ ШАГ', data.terms?.title || 'Стоимость и условия', 'lot-soft lot-terms');
-      const split = el('div', null, 'lot-split'); const amount = el('div'); amount.append(el('p', price(data), 'lot-terms-price'));
-      if (data.demo) amount.append(el('p', 'Стоимость из сохранённой карточки объекта.', 'note'));
-      const text = el('div'); if (data.terms?.note) text.append(el('p', data.terms.note, 'lead'));
-      if (data.terms?.items?.length) { const ul = el('ul', null, 'lot-terms-list'); data.terms.items.forEach(item => ul.append(el('li', item))); text.append(ul); }
-      text.append(action('Обсудить условия с брокером', 'terms', 'text-link')); split.append(amount, text); s.box.append(split); main.append(s.node);
+      const s=section('lot-terms','ПРИОБРЕТЕНИЕ НЕДВИЖИМОСТИ',data.terms?.title || 'Стоимость и условия','purchase');
+      const grid=el('div',null,'three-columns lot-purchase-pair');
+      const amount=el('article');amount.append(el('span','01','item-number'),el('h3','Стоимость объекта'),el('p',price(data),'lot-price-caption'));
+      if(data.demo)amount.append(el('p','Стоимость из сохранённой карточки объекта.','small muted'));
+      amount.append(action('Уточнить стоимость','terms','text-link','arrow'));
+      const terms=el('article');terms.append(el('span','02','item-number'),el('h3','Условия сделки'));
+      if(data.terms?.note)terms.append(el('p',data.terms.note));
+      if(data.terms?.items?.length){const list=el('ul',null,'plain-list');data.terms.items.forEach(item=>list.append(el('li',item)));terms.append(list);}
+      terms.append(action('Обсудить условия с брокером','terms','text-link','arrow'));grid.append(amount,terms);s.box.append(grid);main.append(s.node);
     }
-    if (data.documents?.length) {
-      const s = section('lot-documents', 'МАТЕРИАЛЫ', 'Документы'); const list = el('div', null, 'lot-optional-list');
-      data.documents.filter(d => d.url && d.title).forEach(d => { const a = link(d.title, d.url); a.target = '_blank'; a.rel = 'noopener noreferrer'; list.append(a); });
-      if (list.childElementCount) { s.box.append(list); main.append(s.node); }
+    if(data.documents?.length){
+      const s=section('lot-documents','МАТЕРИАЛЫ','Документы');const grid=el('div',null,'three-columns documents');
+      data.documents.filter(d=>d.url&&d.title).forEach(d=>{const a=link('',d.url,'');a.target='_blank';a.rel='noopener noreferrer';const label=el('span','Документ','small muted');label.append(icon('arrow'));a.append(label,el('h3',d.title),el('span','Открыть документ','small'));grid.append(a)});
+      if(grid.childElementCount){s.box.append(grid);main.append(s.node)}
     }
-    if (data.faq?.length) {
-      const s = section('lot-faq', 'ПОДРОБНОСТИ', 'Вопросы об объекте'); s.box.classList.add('lot-faq');
-      data.faq.forEach(f => { const details = el('details'); details.append(el('summary', f.question), el('p', f.answer)); s.box.append(details); }); main.append(s.node);
-    }
-    {
-      const s = section('lot-contact', 'ВАШ БРОКЕР', 'Запишитесь на просмотр', 'lot-contact');
-      const grid = el('div', null, 'lot-contact-grid'); const intro = el('div'); intro.append(s.heading, el('p', 'Уточним детали объекта, обсудим ваши пожелания и удобное время просмотра.', 'lead'), brokerBlock(data));
-      const request = el('div'); request.append(form('inline')); grid.append(intro, request); s.box.append(grid); main.append(s.node);
+    if(data.faq?.length){
+      const s=section('lot-faq','ПОДРОБНОСТИ','Вопросы об объекте');const list=el('div',null,'faq-list');
+      data.faq.forEach(f=>{const details=el('details');const summary=el('summary');summary.append(el('span',f.question,'faq-question'));const plus=el('span',null,'faq-icon');plus.innerHTML='<svg viewBox="0 0 30 30" fill="none" stroke="currentColor" aria-hidden="true"><path d="M15 5v20M5 15h20"/></svg>';summary.append(plus);details.append(summary,el('p',f.answer));list.append(details)});s.box.append(list);main.append(s.node);
     }
     {
-      const s = section('lot-related', 'ПРОДОЛЖИТЬ ВЫБОР', 'Похожие предложения');
-      const valid = (data.related || []).filter(item => item.title && item.url);
-      if (valid.length) {
-        const grid = el('div', null, 'lot-related'); valid.forEach(item => { const a = link('', item.url, ''); if (item.cover?.src) a.append(image(item.cover)); a.append(el('h3', item.title)); if (item.displayPrice) a.append(el('p', item.displayPrice)); grid.append(a); }); s.box.append(grid);
-      } else {
-        const box = el('div', null, 'lot-pick'); box.append(el('p', 'Сравните несколько вариантов по локации, площади и бюджету. Брокер подготовит подборку под ваш запрос.', 'lead'), action('Подобрать похожие', 'similar', 'button button--outline', 'arrow')); s.box.append(box);
-      } main.append(s.node);
+      const s=section('lot-contact','ВАШ БРОКЕР','Запишитесь на просмотр','project-consultation lot-contact');s.heading.className='pc-header';
+      s.node.prepend(image(data.cover,'pc-background'),el('div',null,'pc-overlay'));
+      const content=el('div',null,'pc-content');const broker=data.broker || {name:'Команда BARN Estate',role:'Подбор недвижимости',phone:'+7 (499) 272-48-72'};
+      const expert=el('div',null,'pc-expert lot-broker-visible');
+      if(broker.photo?.src){const photo=el('span',null,'pc-expert-photo');photo.append(image(broker.photo));expert.append(photo)}
+      const info=el('div');info.append(el('p',broker.role,'pc-expert-role'),el('p',broker.name,'pc-expert-name'));
+      if(broker.phone)info.append(link(broker.phone,'tel:'+broker.phone.replace(/[^+\d]/g,''),'pc-broker-phone'));expert.append(info);
+      const request=form('inline');request.classList.add('pc-form');const fields=el('div',null,'pc-fields');
+      for(const label of $$('label:not(.consent)',request)){const input=$('input',label);if(!input)continue;input.classList.add('pc-input');input.placeholder=input.name==='name'?'Введите ваше имя':'Ваш номер телефона';$('span',label).classList.add('pc-sr-only');fields.append(label)}
+      const submit=$('button[type=submit]',request),consent=$('.consent',request);submit.classList.add('pc-submit');consent.classList.add('pc-consent');request.prepend(fields);request.append(submit,consent,$('.lot-form-note',request));
+      content.append(expert,s.heading,request);s.box.append(content);main.append(s.node);
+    }
+    {
+      const s=section('lot-related','ПРОДОЛЖИТЬ ВЫБОР','Похожие предложения');const valid=(data.related || []).filter(item=>item.title&&item.url);
+      if(valid.length){const grid=el('ul',null,'related-project-grid');valid.forEach(item=>{const li=el('li'),card=el('article',null,'rp-card');
+        if(item.cover?.src){const media=el('div',null,'rp-media');const a=link('',item.url,'rp-image-link');a.append(image(item.cover));media.append(a);card.append(media)}
+        const body=el('div',null,'rp-body');const title=el('h3',null,'rp-name');title.append(link(item.title,item.url,''));body.append(title);
+        if(item.displayPrice)body.append(el('p',item.displayPrice));card.append(body);const actions=el('div',null,'rp-actions');actions.append(action('Обсудить','similar','rp-call'),link('Подробнее',item.url,'rp-details'));card.append(actions);li.append(card);grid.append(li)});s.box.append(grid);
+      }else{const content=el('div',null,'project-description__text lot-selection-copy');content.append(el('p','Сравните несколько вариантов по локации, площади и бюджету. Брокер подготовит подборку под ваш запрос.','lead'),action('Подобрать похожие','similar','button outline selection-cta','arrow'));s.box.append(content)}main.append(s.node);
     }
     for (const [id, label] of [['lot-photos', 'Фото'], ['lot-plan', 'Планировка'], ['lot-about', 'О квартире'], ['lot-building', 'О доме'], ['lot-location', 'Расположение'], ['lot-terms', 'Условия'], ['lot-contact', 'Контакт']]) {
       if ($('#' + id)) sectionLinks.push({id, label});
@@ -453,4 +466,7 @@
   new IntersectionObserver(entries => {
     document.body.dataset.lotHeroOffscreen = String(!entries[0].isIntersecting);
   }).observe($('#lot-photos'));
+  new IntersectionObserver(entries => {
+    document.body.dataset.lotFooterVisible = String(entries[0].isIntersecting);
+  }).observe($('footer'));
 })();

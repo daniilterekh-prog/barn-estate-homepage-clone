@@ -1,0 +1,9 @@
+/* Readable metadata labels, per the page-specific request; other page roles unchanged. */
+.lot-page .passport dt,
+#lot-documents .documents .small{
+  font-size:18px;font-weight:400;line-height:1.4;
+}
+@media(max-width:767px){
+  .lot-page .passport dt,
+  #lot-documents .documents .small{font-size:16px}
+}

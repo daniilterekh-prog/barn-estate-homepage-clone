@@ -131,7 +131,7 @@
       "sourceCommit": "6f2ce65ec5ac1383660562cd6bff0313eadf8a35",
       "sourceSha256": "eb2e94aa0238b6d46d2bb7250ab179ed8099ce0a48ded3dd8a20f4a23789136c",
       "target": "lot-page.js",
-      "sha256": "21860abe955085e38c0b05424d4560a47877808e55cc2414d7170517e15cb9ea",
+      "sha256": "50fef009b379a4829794472aa93ba736ae975fc9a1ef0d595697bd2996ebe204",
       "adaptation": "Copy hero-bottom-minus-120 reveal threshold and hidden/inert states. Reuse local media-header adapter with lot anchors, request context and focus return."
     },
     {
@@ -149,6 +149,84 @@
       "target": "lot-page.css",
       "sha256": "4d82f853b7c71b5e6665bde3ac53021de9d1a97a219356778be95cbec2ca41fa",
       "adaptation": "Policy reference and live visual comparison: white content surfaces, uppercase section headings in existing Tilda Sans roles, thin separators. Remove #f7f6f4/#eeece8/#f5f4f2 UI fills; photo CTA and brand footer retained like the current project page."
+    },
+    {
+      "source": "main-site/pages/residential-complex/structure/preview/css/page.css",
+      "sourceCommit": "ccbbd989a6909f1b1508656a83077583be48e282",
+      "sourceSha256": "8db2f53f51fb33bf47464d3a1d5e26f898cc8429b663457cc9a6ace065758a30",
+      "target": "kit/vendor/zhk/base-components.css",
+      "sha256": "ce9a9e9d092e49ea4380363114f3188cd152f4f266dffeb2a291cc8e5ba8479e",
+      "adaptation": "Filter existing component rules and scope to .lot-page"
+    },
+    {
+      "source": "User-requested semantic adaptation of existing project components",
+      "target": "kit/vendor/zhk/bridge.css",
+      "sha256": "35e9e134c8063fb53217dff982a01981ce45cebcd701385f4b525f94cf7a9db4",
+      "adaptation": "Existing local token aliases; actual lot/broker assets; two deal cards instead of three financial programs; bright-photo contrast; preserve approved hero geometry; native request transport unchanged."
+    },
+    {
+      "source": "main-site/pages/residential-complex/structure/preview/css/consultation.css",
+      "sourceCommit": "ccbbd989a6909f1b1508656a83077583be48e282",
+      "sourceSha256": "ca49d4b94f4202e5d2eefa1bd99f633e029237098ddadd38d20a6a088eaaeac8",
+      "target": "kit/vendor/zhk/consultation.css",
+      "sha256": "ca49d4b94f4202e5d2eefa1bd99f633e029237098ddadd38d20a6a088eaaeac8",
+      "adaptation": "Reuse existing component; rename source section IDs to lot IDs where required"
+    },
+    {
+      "source": "main-site/pages/residential-complex/structure/preview/css/description.css",
+      "sourceCommit": "ccbbd989a6909f1b1508656a83077583be48e282",
+      "sourceSha256": "c9cda536ed126ed3cb6454cfedeae71d2bfbb77c1e25473d2d8ce95ebd5ddd8f",
+      "target": "kit/vendor/zhk/description.css",
+      "sha256": "81ffa37e29cd94b9f5ad6bb254202f0caa981f6845802e66c7c10ff024ee9d9c",
+      "adaptation": "Reuse existing component; rename source section IDs to lot IDs where required"
+    },
+    {
+      "source": "main-site/pages/residential-complex/structure/preview/css/faq.css",
+      "sourceCommit": "ccbbd989a6909f1b1508656a83077583be48e282",
+      "sourceSha256": "608322234d125c88e7606cd605df04e9dfa77a6b50ba9c41b24cd319871b20e0",
+      "target": "kit/vendor/zhk/faq.css",
+      "sha256": "0f3a7420faf6f1b49bda225e47d42e8bb0fac3f3dc1d8fa26b5d285870fbed32",
+      "adaptation": "Reuse existing component; rename source section IDs to lot IDs where required"
+    },
+    {
+      "source": "main-site/pages/residential-complex/structure/preview/css/floorplans.css",
+      "sourceCommit": "ccbbd989a6909f1b1508656a83077583be48e282",
+      "sourceSha256": "d10ea0f6908c53861b6cfc411c235dfbb39777fdb9ae07c5466a117bc8b5fcc0",
+      "target": "kit/vendor/zhk/floorplans.css",
+      "sha256": "81595a1f646ad3f1cf6a256f43cb2effee0a6d871ba643ad91c20df0944c2513",
+      "adaptation": "Reuse existing component; rename source section IDs to lot IDs where required"
+    },
+    {
+      "source": "main-site/pages/residential-complex/structure/preview/css/gallery.css",
+      "sourceCommit": "ccbbd989a6909f1b1508656a83077583be48e282",
+      "sourceSha256": "d866de5fdcd9e2c794f1bbc9143af630304764684adc005ad53d59e72df9ce38",
+      "target": "kit/vendor/zhk/gallery.css",
+      "sha256": "d866de5fdcd9e2c794f1bbc9143af630304764684adc005ad53d59e72df9ce38",
+      "adaptation": "Reuse existing component; rename source section IDs to lot IDs where required"
+    },
+    {
+      "source": "main-site/pages/residential-complex/structure/preview/css/metadata.css",
+      "sourceCommit": "ccbbd989a6909f1b1508656a83077583be48e282",
+      "sourceSha256": "d0be66bcdd89754333480804be66d122fde30312c45eeb19685408b87eed3403",
+      "target": "kit/vendor/zhk/metadata.css",
+      "sha256": "9800737def94fecacc6309c602df224f1ea1c2b3685a7a4ab49e996753b4875f",
+      "adaptation": "Reuse existing component; rename source section IDs to lot IDs where required"
+    },
+    {
+      "source": "main-site/pages/residential-complex/structure/preview/css/optional-characteristics.css",
+      "sourceCommit": "ccbbd989a6909f1b1508656a83077583be48e282",
+      "sourceSha256": "627d503c023c5f388e6615f78a42dd919cbd21130d350edb767a28278c713bdd",
+      "target": "kit/vendor/zhk/optional-characteristics.css",
+      "sha256": "e7c0d5d82880a4ad6bd3576505e268570334b2ec37fe2c95b242a76deaf76d69",
+      "adaptation": "Reuse existing component; rename source section IDs to lot IDs where required"
+    },
+    {
+      "source": "main-site/pages/residential-complex/structure/preview/css/related-projects.css",
+      "sourceCommit": "ccbbd989a6909f1b1508656a83077583be48e282",
+      "sourceSha256": "dbf8d764190f338eda49e73c79ab2042fbac92cfc508d94609e3452fc0adf3ee",
+      "target": "kit/vendor/zhk/related-projects.css",
+      "sha256": "dbf8d764190f338eda49e73c79ab2042fbac92cfc508d94609e3452fc0adf3ee",
+      "adaptation": "Reuse existing component; rename source section IDs to lot IDs where required"
     }
   ]
 }
