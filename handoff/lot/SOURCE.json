@@ -1,0 +1,36 @@
+{
+  "sourceRepository": "daniilterekh-prog/barnes-sites",
+  "sourceCommit": "74c70dc6695662450584e4df6f4fc308146d8916",
+  "sourcePath": "main-site/pages/lot",
+  "sourceHtmlSha256": "9fc37a2385dd3ce169e0c863eb3bebf60a631910876cb6f4079e8024b7fff18f",
+  "dataSourceSha256": "cffa45d05d02f8e3b690602765b244d423e9254d4ec14193045da378af28ff08",
+  "dataset": "601669",
+  "hero": "3",
+  "sections": [
+    "lot-photos",
+    "lot-features",
+    "lot-plan",
+    "lot-about",
+    "lot-building",
+    "lot-location",
+    "lot-contact",
+    "lot-related",
+    "lot-newsletter"
+  ],
+  "transformations": [
+    "Render approved601669 as static default; set hero3 on body",
+    "Split local HTML/CSS/JS/assets; rewrite portable URLs; preserve stylesheet/script order",
+    "Replace archived default dataset with public601669 fixture; keep global override",
+    "Exclude raw CRM screens/internal example values/archived variants and photos"
+  ],
+  "notConnected": [
+    "Intrum API/field IDs",
+    "form delivery",
+    "mailing service",
+    "automatic related selection"
+  ],
+  "external": [
+    "Yandex map iframe",
+    "intentional catalogue/messenger/privacy/navigation links"
+  ]
+}

@@ -1,7 +1,7 @@
 {
   "date": "2026-11-27",
   "sourceRepository": "daniilterekh-prog/barnes-sites",
-  "sourceCommit": "96154c273179b768b7a3584d80f44cc09fda8d45",
+  "sourceCommit": "74c70dc6695662450584e4df6f4fc308146d8916",
   "sourcePath": "main-site/pages/lot",
   "uiKit": "BARN Estate 1.0.6",
   "scope": "Only stranitsa-lota",
@@ -33,5 +33,7 @@
   "purchaseConditions": "Removed by user request; no section or anchor. Consultation follows location; prices remain in hero and characteristics. Both examples checked390/1440.",
   "relatedSpb": "601669:3 real public Saint Petersburg apartments in the exact project-page card CSS; area/floor facts, favorites, per-lot callback IDs, valid detail links. Static examples, not automatic or exact-budget matching.8 widths checked and3 photos exported.",
   "fullDescription": "Full user-supplied General Description in about block, plain text with paragraph/line breaks; no manually assembled benefit list. Project-page read-more keeps collapsed body+control within adjacent photo height; mobile8-line budget.8 widths, keyboard, short/empty/rerender and controller-unavailable fallbacks checked.",
-  "intrumContract": "Logic and73-field map in private source. No actual API/field IDs or automated publishing. Building uses structured facts, location uses structured address/metro/coordinates; no generated prose."
+  "intrumContract": "Logic and73-field map in private source. No actual API/field IDs or automated publishing. Building uses structured facts, location uses structured address/metro/coordinates; no generated prose.",
+  "heroPriceAboveArrows": "One large hero price above right arrow controls,22/30/36/42px; location remains above title. Count visually hidden, live announcement retained. CTA/arrow center and hero heights preserved;11 widths tested.",
+  "handoff": "handoff/lot: full html/index.html,12 fragments,css/js/assets/data,INTEGRATION/DATA/DESIGN,source provenance,verification,checksums,one ZIP;isolated9 widths/18 source comparisons/25 photos and actions passed"
 }

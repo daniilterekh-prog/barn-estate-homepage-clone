@@ -1,0 +1,69 @@
+/* Reference composition: compact format rows and a photographic card, in the existing kit. */
+#lot-plan .apartments-layout{grid-template-columns:minmax(0,1.35fr) minmax(0,.9fr);gap:clamp(32px,4.5vw,80px);align-items:stretch}
+#lot-plan .formats-content{min-width:0}
+#lot-plan{--formats-action-column:116px}
+#lot-plan .formats-heading,#lot-plan .format-row{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1.1fr) minmax(0,.7fr) var(--formats-action-column);align-items:center;gap:20px}
+#lot-plan .formats-heading{padding:0 0 20px;font-size:16px;font-weight:400;color:var(--copy)}
+#lot-plan .format-list{margin:0;border-top:1px solid var(--line)}
+#lot-plan .format-row{width:100%;min-height:100px;padding:24px 0;border-bottom:1px solid var(--line);font-size:20px;line-height:1.35;text-align:left}
+#lot-plan .format-row>span{min-width:0}
+#lot-plan .format-row .format-price{font-weight:400}
+#lot-plan .format-row .format-area{white-space:nowrap}
+#lot-plan .format-row .format-action{display:inline-flex;align-items:center;justify-content:flex-end;gap:8px;grid-column:auto;text-align:right;color:var(--brand);font-size:17px;font-weight:400;white-space:nowrap}
+#lot-plan .format-action svg,#lot-plan .formats-plan-link svg{flex:none}
+#lot-plan .format-row:hover .format-action{text-decoration:underline;text-underline-offset:4px}
+#lot-plan .selection-cta{margin-top:32px;max-width:100%;white-space:normal}
+#lot-plan .formats-cover{position:relative;isolation:isolate;min-height:420px;overflow:hidden;color:#fff}
+#lot-plan .formats-cover>img{position:absolute;inset:0;z-index:-2;width:100%;height:100%;object-fit:cover;object-position:62% center}
+#lot-plan .formats-cover:after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,transparent 20%,#0009 65%,#000d)}
+#lot-plan .formats-cover figcaption{position:absolute;left:32px;right:32px;bottom:32px}
+#lot-plan .formats-cover h3{font-size:28px;line-height:1.2;margin-bottom:16px}
+#lot-plan .formats-cover p{font-size:18px;line-height:1.45;font-weight:300;max-width:440px}
+#lot-plan .formats-plan-link{display:inline-flex;align-items:center;gap:12px;min-height:44px;margin-top:16px;padding:4px 0;color:#fff;font-size:16px;font-weight:400;text-align:left;text-decoration:underline;text-underline-offset:4px}
+#lot-plan .formats-plan-link:hover{color:#fff;text-decoration-thickness:2px}
+@media(min-width:1441px){#lot-plan{--formats-action-column:132px}#lot-plan .format-row{font-size:22px}#lot-plan .format-row .format-action{font-size:19px}}
+@media(min-width:768px) and (max-width:1200px){
+  #lot-plan .apartments-layout{grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:28px}
+  #lot-plan .formats-heading,#lot-plan .format-row{grid-template-columns:minmax(0,1fr) minmax(0,1fr) 78px;gap:12px}
+  #lot-plan .formats-heading>span:last-child{display:none}
+  #lot-plan .format-row{font-size:18px;padding:20px 0;row-gap:12px}
+  #lot-plan .format-row .format-action{grid-column:1/-1;font-size:16px}
+  #lot-plan .formats-cover figcaption{left:24px;right:24px;bottom:24px}
+}
+@media(max-width:767px){
+  #lot-plan .apartments-layout{grid-template-columns:1fr;gap:32px}
+  #lot-plan .formats-heading{display:none}
+  #lot-plan .format-row{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px 16px;min-height:104px;padding:20px 0;font-size:18px}
+  #lot-plan .format-row .format-price{text-align:right}
+  #lot-plan .format-row .format-area{font-size:16px}
+  #lot-plan .format-row .format-action{grid-column:auto;font-size:16px}
+  #lot-plan .selection-cta{margin-top:24px}
+  #lot-plan .formats-cover{min-height:340px}
+  #lot-plan .formats-cover figcaption{left:24px;right:24px;bottom:24px}
+  #lot-plan .formats-cover h3{font-size:24px;margin-bottom:12px}
+  #lot-plan .formats-cover p{font-size:16px;line-height:1.5}
+}
+
+/* Real lot plans remain complete, including their legend and attribution. */
+#lot-plan .formats-cover--plan{display:flex;flex-direction:column;min-height:0;color:var(--ink);overflow:visible;isolation:auto}
+#lot-plan .formats-cover--plan:after{display:none}
+#lot-plan .formats-plan-preview{display:block;width:100%;padding:0;border:1px solid var(--line);background:#fff;cursor:zoom-in}
+#lot-plan .formats-plan-preview img{display:block;width:100%;height:auto;object-fit:contain}
+#lot-plan .formats-cover--plan figcaption{position:static;padding-top:24px}
+#lot-plan .formats-cover--plan .formats-plan-link{color:var(--brand)}
+
+/* A single lot has a single plan: large original sheet, then room areas in kit typography. */
+#lot-plan .lot-plan-layout{grid-template-columns:minmax(0,1.8fr) minmax(0,1fr);gap:clamp(32px,4.5vw,80px);align-items:start}
+#lot-plan .lot-plan-layout .formats-cover{min-width:0}
+#lot-plan .lot-plan-details h3{font-size:28px;line-height:1.2;margin-bottom:16px}
+#lot-plan .lot-plan-summary{font-size:27px;line-height:1.2;font-weight:300;margin-bottom:32px}
+#lot-plan .lot-plan-rooms{border-top:1px solid var(--line)}
+#lot-plan .lot-plan-rooms>div{display:flex;justify-content:space-between;align-items:baseline;gap:24px;padding:18px 0;border-bottom:1px solid var(--line);font-size:20px;line-height:1.4}
+#lot-plan .lot-plan-rooms dt{color:var(--copy);font-weight:300}
+#lot-plan .lot-plan-rooms dd{white-space:nowrap;font-weight:300}
+#lot-plan .lot-plan-note{margin-top:24px}
+#lot-plan .lot-plan-open{margin-top:32px;max-width:100%;gap:24px}
+#lot-plan .formats-plan-preview:focus-visible{outline:2px solid var(--brand);outline-offset:4px}
+@media(min-width:1441px){#lot-plan .lot-plan-summary{font-size:32px}#lot-plan .lot-plan-rooms>div{font-size:22px}}
+@media(max-width:1024px){#lot-plan .lot-plan-layout{grid-template-columns:1fr;gap:32px}#lot-plan .lot-plan-details{max-width:680px}#lot-plan .lot-plan-summary{font-size:24px}}
+@media(max-width:540px){#lot-plan .lot-plan-details h3{font-size:24px;margin-bottom:12px}#lot-plan .lot-plan-summary{font-size:23px;margin-bottom:24px}#lot-plan .lot-plan-rooms>div{padding:14px 0;font-size:18px;gap:16px}#lot-plan .lot-plan-note{margin-top:20px}#lot-plan .lot-plan-open{width:100%;margin-top:24px}}

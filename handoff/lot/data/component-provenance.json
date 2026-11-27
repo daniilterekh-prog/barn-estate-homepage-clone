@@ -1,0 +1,322 @@
+{
+  "date": "2026-11-10",
+  "uiKit": "BARN Estate v1.0.6",
+  "sourceCommit": "e0a6df73c88aa749afb68b644056bae73e720ea1",
+  "shellSource": "contacts",
+  "files": [
+    {
+      "source": "main-site/pages/contacts/vendor/media-header.css",
+      "target": "kit/vendor/media-header.css",
+      "sha256": "5dec0c68563d19025d56563c3118cb64725c2e551b135d1b67e8505d9713b941"
+    },
+    {
+      "source": "main-site/pages/contacts/vendor/media-header.js",
+      "target": "kit/vendor/media-header.js",
+      "sha256": "3d6cbd7e2d2cdee15b767421267be0da6e2c2edfeab0eb5979bc362fd667f417"
+    },
+    {
+      "source": "main-site/pages/contacts/vendor/header-navigation.css",
+      "target": "kit/vendor/header-navigation.css",
+      "sha256": "f7248c22fed78809c199268d43bd18efcf623061a51e6b426e92f13526402a39",
+      "sourceSha256": "8f88f226b07ca6f5f29c4a94809ed231c57e5cd02bbfba63c7990a3db1a7c217",
+      "adaptation": "Local selector scope: body.contacts-page → body.lot-page; dropdown styling applies to this page"
+    },
+    {
+      "source": "main-site/pages/contacts/vendor/header-navigation.js",
+      "target": "kit/vendor/header-navigation.js",
+      "sha256": "9d1c3a1f39c04b0814b6eb077ed7150f33ec9835240325017c6135fc6e3a7e8c"
+    },
+    {
+      "source": "main-site/pages/contacts/vendor/footer.css",
+      "target": "kit/vendor/footer.css",
+      "sha256": "3d9a33bacd3e7c5bcc3997ff0d98fccc4c76c6dfb3cf06f707c4e564ae948318",
+      "sourceSha256": "aed9ca358345d99190c815de92ea63a1f0c4ab762a72316016e54e7b410dc1f0",
+      "adaptation": "Local selector scope: body.contacts-page → body.lot-page"
+    },
+    {
+      "source": "main-site/pages/contacts/vendor/material-icons-LICENSE.txt",
+      "target": "kit/vendor/material-icons-LICENSE.txt",
+      "sha256": "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd"
+    },
+    {
+      "source": "main-site/pages/contacts/assets/logo.svg",
+      "target": "kit/assets/logo.svg",
+      "sha256": "25d4a2a32ee6f85768e04db21d646d048ccd61ebd4d214d6f54737491d2fc5e0"
+    },
+    {
+      "source": "main-site/pages/contacts/assets/footer-logo.svg",
+      "target": "kit/assets/footer-logo.svg",
+      "sha256": "25d4a2a32ee6f85768e04db21d646d048ccd61ebd4d214d6f54737491d2fc5e0"
+    },
+    {
+      "source": "main-site/pages/contacts/assets/max.svg",
+      "target": "kit/assets/max.svg",
+      "sha256": "5caa61a4b0731d0d89421b4fb24f41433025e5aea59155a14cf3a3fada6c9174"
+    },
+    {
+      "source": "main-site/pages/contacts/assets/telegram.svg",
+      "target": "kit/assets/telegram.svg",
+      "sha256": "d740699a25af5d0677344e14bf3456d3d39c4d6da8633465086ccaf176fa7f24"
+    },
+    {
+      "source": "main-site/pages/contacts/assets/whatsapp.svg",
+      "target": "kit/assets/whatsapp.svg",
+      "sha256": "6870171eea83ea80607e3a4e9b5de7ed724da07aa3af2de9c7b50e7408926a2b"
+    },
+    {
+      "source": "main-site/pages/contacts/fonts/TildaSans-Light.woff2",
+      "target": "fonts/TildaSans-Light.woff2",
+      "sha256": "f0f2c165784c72343618a7c2cbde00e45dbb9b09af5149984792f280cac9642e"
+    },
+    {
+      "source": "main-site/pages/contacts/fonts/TildaSans-Regular.woff2",
+      "target": "fonts/TildaSans-Regular.woff2",
+      "sha256": "2670dad44ca6c2a1b9bbdbf1af6d8db9173f2dbe31604e80bdf9599b55047d41"
+    },
+    {
+      "source": "main-site/pages/contacts/fonts/TildaSans-Medium.woff2",
+      "target": "fonts/TildaSans-Medium.woff2",
+      "sha256": "f716269e361f466570f37bc920988c619ddc8a7828c5949c1c56a731a320ab47"
+    },
+    {
+      "source": "main-site/pages/contacts/index.html",
+      "target": "kit/header.html",
+      "adaptation": "Extracted header fragment; local asset paths",
+      "sha256": "32739b3f382b50d1088b421d3d140c17bc403749d69fa84e7ec724ae37943c8b"
+    },
+    {
+      "source": "main-site/pages/contacts/index.html",
+      "target": "kit/menu.html",
+      "adaptation": "Extracted menu fragment; local asset paths",
+      "sha256": "1c6780ccbd8025a6e12b386703ad4544fee0b669d934b0a30cc7ec08f7bec64a"
+    },
+    {
+      "source": "main-site/pages/contacts/index.html",
+      "target": "kit/footer.html",
+      "adaptation": "Extracted footer fragment; local asset paths",
+      "sha256": "dce59e2d130081b48eace08a4ac86c02c42f4d723dd798e972ca9a505c941bed"
+    },
+    {
+      "source": "main-site/shared/shared/page-breadcrumbs.css",
+      "target": "kit/vendor/page-breadcrumbs.css",
+      "sourceCommit": "98a0f9d1f2125954bc146a59a7eef004aca23c51",
+      "sha256": "7a58ed93dc94357053343f42781a513a93b66b3f6c61f0f9a6c0e26bcaef7d30",
+      "adaptation": "Unchanged canonical CSS"
+    },
+    {
+      "source": "main-site/shared/shared/page-breadcrumbs.js",
+      "target": "kit/vendor/page-breadcrumbs.js",
+      "sourceCommit": "98a0f9d1f2125954bc146a59a7eef004aca23c51",
+      "sha256": "9ba4a0fec8a92ebf53749bea2ea9bb6269b139be7eb96ad7f4e0a55586d3d3f3",
+      "adaptation": "Local package root; tone for optional full-screen hero previews; hidden while dialogs/menu are open"
+    },
+    {
+      "source": "main-site/shared/hero-media/hero.css",
+      "target": "hero-variants.css",
+      "sourceCommit": "93ff4c2c32ceae0881967d3e4a7d119fc61d49dc",
+      "sourceSha256": "002bf2d2c75f7ec115686583aaf4c007c82f0a93884dcef8ef52570cf22ae81d",
+      "sha256": "7fd9840f8ae2e0111a4e46f884c18f79fbe083e0d748500a46b24de121030149",
+      "adaptation": "Variant 3 reuses Media/Owner hero title, CTA, overlay and spacing roles; compact white action row follows homepage filters; other optional variants remain local. Mobile <=768px: unboxed price and primary action below the resort facts; gallery is a 44px secondary control. 27.11.2026 requested override: transparent price at all sizes; smaller footer gaps; inline arrows/counter from local icon kit replace the gallery opener."
+    },
+    {
+      "source": "docs/landing-builder/hero-prototype/hero.css",
+      "target": "hero-variants.css",
+      "sourceCommit": "52a4dc52db81b2c2012dcf56aa9da194f4b1c8e3",
+      "sourceSha256": "ba38428f8a64418a4ff201b51ae55cde37903292ee7d744ea87e0f63f17422de",
+      "sha256": "7fd9840f8ae2e0111a4e46f884c18f79fbe083e0d748500a46b24de121030149",
+      "adaptation": "Keep Tilda Sans and existing BARN Estate H1/CTA roles. Use exact lot values. On narrow screens keep area, bedrooms and floor; finish remains in full apartment facts. Semantic dt precedes dd in DOM, visual values precede captions. Adopt resort footer geometry and value/caption hierarchy only. Mobile <=768px: unboxed price and primary action below the resort facts; gallery is a 44px secondary control. 27.11.2026 requested override: transparent price at all sizes; smaller footer gaps; inline arrows/counter from local icon kit replace the gallery opener."
+    },
+    {
+      "source": "main-site/pages/owner-hub/owner-sale.js",
+      "sourceCommit": "6f2ce65ec5ac1383660562cd6bff0313eadf8a35",
+      "sourceSha256": "eb2e94aa0238b6d46d2bb7250ab179ed8099ce0a48ded3dd8a20f4a23789136c",
+      "target": "lot-page.js",
+      "sha256": "4f41cf7388bd83f00889072340c4b9c43ca10a08015740efb2af50b8affce6c5",
+      "adaptation": "Copy hero-bottom-minus-120 reveal threshold and hidden/inert states. Reuse local media-header adapter with lot anchors, request context and focus return."
+    },
+    {
+      "source": "main-site/pages/owner-hub/owner-sale.css",
+      "sourceCommit": "6f2ce65ec5ac1383660562cd6bff0313eadf8a35",
+      "sourceSha256": "66d7d1042786b8bc83c2b71e700257bb3603e34bc4eefd4603b60c04211d58d8",
+      "target": "lot-page.css",
+      "sha256": "4d82f853b7c71b5e6665bde3ac53021de9d1a97a219356778be95cbec2ca41fa",
+      "adaptation": "Copy fixed white surface, opacity/translate reveal timings, active links; local .lot-page scope and z-index below menu. Shared Media adapter owns logo/grid/contact geometry. Hide desktop anchor scrollbar; mobile anchors stay under header."
+    },
+    {
+      "source": "main-site/pages/residential-complex/structure/README.md",
+      "sourceCommit": "dcfecb81c95afd6aaa824f1414a7a85eb2a57456",
+      "sourceSha256": "71524e470025d286c4e4aed0264ec721f9f2c2a31eff556399e2c099cfa705bf",
+      "target": "lot-page.css",
+      "sha256": "4d82f853b7c71b5e6665bde3ac53021de9d1a97a219356778be95cbec2ca41fa",
+      "adaptation": "Policy reference and live visual comparison: white content surfaces, uppercase section headings in existing Tilda Sans roles, thin separators. Remove #f7f6f4/#eeece8/#f5f4f2 UI fills; photo CTA and brand footer retained like the current project page."
+    },
+    {
+      "source": "main-site/pages/residential-complex/structure/preview/css/page.css",
+      "sourceCommit": "ccbbd989a6909f1b1508656a83077583be48e282",
+      "sourceSha256": "8db2f53f51fb33bf47464d3a1d5e26f898cc8429b663457cc9a6ace065758a30",
+      "target": "kit/vendor/zhk/base-components.css",
+      "sha256": "ce9a9e9d092e49ea4380363114f3188cd152f4f266dffeb2a291cc8e5ba8479e",
+      "adaptation": "Filter existing component rules and scope to .lot-page"
+    },
+    {
+      "source": "User-requested semantic adaptation of existing project components",
+      "target": "kit/vendor/zhk/bridge.css",
+      "sha256": "d44043d46335fa2f1f13988eeaae14cd76b1ca213353efec169333a3943e5f0e",
+      "adaptation": "Existing local token aliases; actual lot/broker assets; two deal cards instead of three financial programs; bright-photo contrast; preserve approved hero geometry; native request transport unchanged."
+    },
+    {
+      "source": "main-site/pages/residential-complex/structure/preview/css/consultation.css",
+      "sourceCommit": "ccbbd989a6909f1b1508656a83077583be48e282",
+      "sourceSha256": "ca49d4b94f4202e5d2eefa1bd99f633e029237098ddadd38d20a6a088eaaeac8",
+      "target": "kit/vendor/zhk/consultation.css",
+      "sha256": "ca49d4b94f4202e5d2eefa1bd99f633e029237098ddadd38d20a6a088eaaeac8",
+      "adaptation": "Reuse existing component; rename source section IDs to lot IDs where required"
+    },
+    {
+      "source": "main-site/pages/residential-complex/structure/preview/css/description.css",
+      "sourceCommit": "ccbbd989a6909f1b1508656a83077583be48e282",
+      "sourceSha256": "c9cda536ed126ed3cb6454cfedeae71d2bfbb77c1e25473d2d8ce95ebd5ddd8f",
+      "target": "kit/vendor/zhk/description.css",
+      "sha256": "031358ddf408c9986e7c9d92ba0e981cf5cf8d10fc69e567a334b63035450ce2",
+      "adaptation": "Reuse existing component; rename source section IDs to lot IDs where required"
+    },
+    {
+      "source": "main-site/pages/residential-complex/structure/preview/css/faq.css",
+      "sourceCommit": "ccbbd989a6909f1b1508656a83077583be48e282",
+      "sourceSha256": "608322234d125c88e7606cd605df04e9dfa77a6b50ba9c41b24cd319871b20e0",
+      "target": "kit/vendor/zhk/faq.css",
+      "sha256": "0f3a7420faf6f1b49bda225e47d42e8bb0fac3f3dc1d8fa26b5d285870fbed32",
+      "adaptation": "Reuse existing component; rename source section IDs to lot IDs where required"
+    },
+    {
+      "source": "main-site/pages/residential-complex/structure/preview/css/floorplans.css",
+      "sourceCommit": "ccbbd989a6909f1b1508656a83077583be48e282",
+      "sourceSha256": "d10ea0f6908c53861b6cfc411c235dfbb39777fdb9ae07c5466a117bc8b5fcc0",
+      "target": "kit/vendor/zhk/floorplans.css",
+      "sha256": "8eda8f495ca6911cc3d13db3846bcf25838357ae542b5d2ce9a8616cae29b649",
+      "adaptation": "Reuse existing component; rename source section IDs to lot IDs where required"
+    },
+    {
+      "source": "main-site/pages/residential-complex/structure/preview/css/gallery.css",
+      "sourceCommit": "ccbbd989a6909f1b1508656a83077583be48e282",
+      "sourceSha256": "d866de5fdcd9e2c794f1bbc9143af630304764684adc005ad53d59e72df9ce38",
+      "target": "kit/vendor/zhk/gallery.css",
+      "sha256": "d866de5fdcd9e2c794f1bbc9143af630304764684adc005ad53d59e72df9ce38",
+      "adaptation": "Reuse existing component; rename source section IDs to lot IDs where required"
+    },
+    {
+      "source": "main-site/pages/residential-complex/structure/preview/css/metadata.css",
+      "sourceCommit": "ccbbd989a6909f1b1508656a83077583be48e282",
+      "sourceSha256": "d0be66bcdd89754333480804be66d122fde30312c45eeb19685408b87eed3403",
+      "target": "kit/vendor/zhk/metadata.css",
+      "sha256": "9800737def94fecacc6309c602df224f1ea1c2b3685a7a4ab49e996753b4875f",
+      "adaptation": "Reuse existing component; rename source section IDs to lot IDs where required"
+    },
+    {
+      "source": "main-site/pages/residential-complex/structure/preview/css/optional-characteristics.css",
+      "sourceCommit": "ccbbd989a6909f1b1508656a83077583be48e282",
+      "sourceSha256": "627d503c023c5f388e6615f78a42dd919cbd21130d350edb767a28278c713bdd",
+      "target": "kit/vendor/zhk/optional-characteristics.css",
+      "sha256": "c21a3eeed409da67a773a87a66e4828aeb1311d58d917eda12d565f6be478874",
+      "adaptation": "Reuse existing component; rename source section IDs to lot IDs where required"
+    },
+    {
+      "source": "main-site/pages/residential-complex/structure/preview/css/related-projects.css",
+      "sourceCommit": "ccbbd989a6909f1b1508656a83077583be48e282",
+      "sourceSha256": "dbf8d764190f338eda49e73c79ab2042fbac92cfc508d94609e3452fc0adf3ee",
+      "target": "kit/vendor/zhk/related-projects.css",
+      "sha256": "dbf8d764190f338eda49e73c79ab2042fbac92cfc508d94609e3452fc0adf3ee",
+      "adaptation": "Reuse existing component; rename source section IDs to lot IDs where required"
+    }
+  ],
+  "consultationCorrection": {
+    "date": "2026-11-27",
+    "source": "residential-complex/structure/cta-source.json",
+    "layout": "Complete existing CTA, form left, expert composite right, avatar mobile. Removed the lot photograph and custom broker card.",
+    "expert": "Ruslan Prus is the existing agency consultation illustration; not asserted as the assigned broker of lot 588036. Lot broker and mailto/phone destination stay in data.",
+    "form": "Canonical channel radios and comment restored; selected preference and comment included in prepared request, no POST or CRM added.",
+    "assets": [
+      {
+        "target": "kit/assets/cta-ruslan-background.webp",
+        "source": "https://raw.githubusercontent.com/daniilterekh-prog/barnes-assets/main/blocks/_assets/963872afd408-consultation-bg.webp",
+        "sha256": "963872afd408bd77fca71e32647e7617d1c526fc33f8c25b582dc1d1a17c1700"
+      },
+      {
+        "target": "kit/assets/cta-ruslan-avatar.webp",
+        "source": "https://raw.githubusercontent.com/daniilterekh-prog/barnes-assets/main/blocks/_assets/4464b6998f60-ruslan.webp",
+        "sha256": "4464b6998f60131d99ee19b3887a776b896162ce4cbbf1cefd4bb7dcbf7a3986"
+      }
+    ]
+  },
+  "lowerPageComponents": {
+    "date": "2026-11-27",
+    "cards": "Complete rp-card markup from residential-complex/structure/preview/index.html#similar, with lot fields area/bedrooms and per-item callbacks; existing related-projects.css unchanged.",
+    "newsletter": "Homepage source/index.html .newsletter-cta; selected rules from legacy approved block14 plus existing home typography/button root tokens; no global/shared styles changed.",
+    "floatingExpert": "Complete project-floating-expert markup and unchanged floating-expert.css from zhk-structure; selectors/visibility adapted to lot IDs, email form and current request dialog. Price panel removed from DOM.",
+    "subscriptionTransport": "Validation + user-controlled mailto request; no newsletter service connected, no success claim or POST.",
+    "files": [
+      {
+        "target": "kit/vendor/newsletter.css",
+        "source": "main-site/pages/lot/kit/14-newsletter.css; home/source/home-buttons.css and home-typography.css tokens",
+        "sha256": "0b7721e76812384e4ad55e5ceb31d1b3e69c9532f1c18c9c8212625ca65d8fe1"
+      },
+      {
+        "target": "kit/vendor/zhk/floating-expert.css",
+        "source": "main-site/pages/residential-complex/structure/preview/css/floating-expert.css",
+        "sha256": "68c9f789bd5ae71dd40fd99207c94b82c34e931508656af3dcd35dcd251038fb"
+      },
+      {
+        "target": "kit/assets/floating-ruslan.webp",
+        "source": "https://raw.githubusercontent.com/daniilterekh-prog/barnes-assets/main/blocks/_assets/6bbaa8e1df83-modal-ruslan-organic.webp",
+        "sha256": "6bbaa8e1df83e7d5eda42c83d174e1f0177a8cbb5698bd5ec01ee3602e8f84aa"
+      },
+      {
+        "target": "kit/assets/newsletter-desktop.webp",
+        "source": "main-site/pages/home/exact-2026-10-21/source/assets/8a78978e0423f444f2adbe1f.webp",
+        "sha256": "a59b66d0d7fdeda1b0b0726fc2b9f0f23450da792c5cff66bba1482a09d8774f"
+      },
+      {
+        "target": "kit/assets/newsletter-mobile.webp",
+        "source": "main-site/pages/home/exact-2026-10-21/source/assets/f6f65669dc22ef4fe836335c.webp",
+        "sha256": "3285d219f1845deb8887ba3bc04b8e79ce8d3bec99dd568d8a51b8c5fa8bf9af"
+      }
+    ]
+  },
+  "heroLocationColor": {
+    "date": "2026-11-27",
+    "selector": "body[data-hero-variant=\"3\"] .lot-hero__copy .eyebrow",
+    "color": "#ffffff",
+    "reason": "Keep the location light like hero title; section eyebrow styles were overriding inherited white."
+  },
+  "heroSliderAlignment": {
+    "date": "2026-11-27",
+    "layout": "Existing slider controls share the CTA row and vertical center. Price is now in the upper metadata line; CTA starts at title edge.",
+    "mobile": "Same button height/font/padding and arrow sizes; counter above arrows. Hide decorative CTA diagonal only through540px so full label fits beside controls."
+  },
+  "heroPriceLocation": {
+    "date": "2026-11-27",
+    "format": "price | location, above the title",
+    "type": "Existing light eyebrow typography; one hero price only, no lower duplicate. CTA starts at title edge; arrow alignment retained.",
+    "mobile": "32px reservation above the CTA row keeps its counter clear of facts after the old price row is removed."
+  },
+  "heroStylesheetSha256": "cf16d1cb37a652f0bd6caf007463edc3fa10fee7dc477e7f4d8d38adb25429a3",
+  "heroDropdownSurface": {
+    "date": "2026-11-27",
+    "scope": "Opt-in hero state, original header not in menu-open state and compact sticky header inactive",
+    "appearance": "Transparent background and border; no box shadow; white submenu links and expanded parent label",
+    "behavior": "Existing positioning and keyboard/hover handlers unchanged; normal menu keeps white surface and dark links"
+  },
+  "characteristicIcons": {
+    "source": "https://lucide.dev/",
+    "manifest": "kit/lucide-source.json",
+    "license": "kit/vendor/lucide/LICENSE",
+    "adaptation": "Thin stroke 1.5 and #656462; same passport and list components; decorative SVG."
+  },
+  "lotDescriptionController": {
+    "source": "main-site/pages/residential-complex/structure/preview/js/description.js",
+    "target": "kit/vendor/lot-description.js",
+    "sourceSha256": "5311d96055f1362ff755f1a797124befe2e9018f7789d795f23ea40d0a5a4838",
+    "sha256": "9d5d6816bb38077cfdc4e95b1c7f14ce4e4949016e3cedc0d0665751dfe2f651",
+    "adaptation": "#architecture → #lot-about; disposable initialization for rerendered lot data. Same photo-height measurement and kit control."
+  }
+}

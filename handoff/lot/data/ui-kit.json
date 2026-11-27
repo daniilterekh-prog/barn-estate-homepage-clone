@@ -1,0 +1,150 @@
+{
+  "name": "BARN Estate",
+  "version": "1.0.6",
+  "source": "main-site/pages/home/exact-2026-10-21/UI-KIT.md",
+  "font": "Tilda Sans",
+  "colors": {
+    "ink": "#1e1e1e",
+    "copy": "#4f4d49",
+    "muted": "#656462",
+    "brand": "#8b1d25",
+    "surface": "#ffffff"
+  },
+  "heading": {
+    "mobile": 22,
+    "desktop": 38,
+    "wide": 44,
+    "weight": 300,
+    "lineHeight": 1.2
+  },
+  "body": {
+    "mobile": 15,
+    "desktop": 22,
+    "weight": 300,
+    "lineHeight": 1.5
+  },
+  "button": {
+    "mobileHeight": 58,
+    "desktopHeight": 70,
+    "mobileFont": 18,
+    "desktopFont": 17,
+    "wideFont": 19,
+    "weight": 400,
+    "radius": 1
+  },
+  "section": {
+    "mobilePadding": 48,
+    "desktopPadding": "clamp(72px,6vw,100px)",
+    "contentGap": 40,
+    "mobileContentGap": 28
+  },
+  "grid": {
+    "maxWidth": 1920,
+    "mobileGutter": 22,
+    "desktopGutter": "clamp(24px,calc(-26.66667px + 6.59722vw),100px)",
+    "wideGutter": 0
+  },
+  "hero": {
+    "source": "main-site/shared/hero-media/hero.css (Media/Owner pages)",
+    "title": {
+      "desktop": "clamp(38px,4vw,58px)",
+      "mobile": 32,
+      "weight": 300,
+      "lineHeight": 1.05,
+      "letterSpacing": "-.045em",
+      "maxWidth": 925
+    },
+    "primaryAction": {
+      "desktopWidth": 428,
+      "desktopHeight": 70,
+      "mobileHeight": 58,
+      "fontWeight": 400,
+      "radius": 1
+    },
+    "bottomSpace": {
+      "desktop": 12,
+      "wide": 16,
+      "tablet": 12,
+      "smallTablet": 12,
+      "mobile": 8
+    },
+    "note": "Keep Media/Owner title and CTA roles. Lot-specific override requested 27.11.2026: transparent price on every viewport, smaller bottom space, direct arrow controls instead of gallery opener.",
+    "inlineSlider": {
+      "source": "Existing lot gallery assets and icon-button/SVG kit",
+      "controls": "Previous, live counter, next; keyboard arrows while controls focused; horizontal touch swipe; no autoplay",
+      "fallback": "Hide controls for one photo; cover remains visible"
+    }
+  },
+  "heroFacts": {
+    "source": "docs/landing-builder/hero-prototype/hero.css",
+    "sourceCommit": "52a4dc52db81b2c2012dcf56aa9da194f4b1c8e3",
+    "sourceSha256": "ba38428f8a64418a4ff201b51ae55cde37903292ee7d744ea87e0f63f17422de",
+    "layout": "Photo footer with one horizontal rule, large value over a small caption, no individual cards or vertical rules",
+    "valueSizes": {
+      "desktop": 27,
+      "tablet": 23,
+      "mobile": 20,
+      "wide": "clamp(30px,1.25vw,40px)"
+    },
+    "captionSizes": {
+      "desktop": 11,
+      "mobile": 10
+    },
+    "adaptation": "Keep Tilda Sans and existing BARN Estate H1/CTA roles. Use exact lot values. On narrow screens keep area, bedrooms and floor; finish remains in full apartment facts. Semantic dt precedes dd in DOM, visual values precede captions.",
+    "topPadding": {
+      "desktop": 12,
+      "wide": 16,
+      "mobile": 8
+    }
+  },
+  "compactHeader": {
+    "source": "main-site/pages/owner-hub/owner-sale.js and owner-sale.css; existing local media-header adapter",
+    "reveal": "scrollY > hero.offsetTop + hero.offsetHeight - 120",
+    "height": {
+      "mobile": 77,
+      "larger": 111
+    },
+    "logoHeight": {
+      "mobile": 36,
+      "larger": 48
+    },
+    "transition": "opacity 200ms ease, transform 240ms ease; none with reduced motion",
+    "content": "Lot anchors on desktop; burger, centered black logo and contacts on mobile",
+    "navigation": "Lot anchors live only in the compact desktop header. No intermediate contents row. Anchor targets account for the compact header height.",
+    "accessibility": "Hidden compact header inert; original header inert while compact shown; menu restores focus to compact burger"
+  },
+  "contentSurfaces": {
+    "reference": "main-site/pages/residential-complex/structure/README.md — White backgrounds; published zhk-structure",
+    "background": "#ffffff",
+    "sectionHeadings": "uppercase; Tilda Sans 300; existing kit sizes and line height",
+    "rule": "No gray or beige content fills, including plan/building/terms, gallery container and map loading background. Thin kit lines and secondary ink remain. Photo sections and the canonical dark footer keep their photographic/brand treatment."
+  },
+  "componentDesignSource": {
+    "reference": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/zhk-structure/?v=97aa519#project",
+    "sourceCommit": "ccbbd989a6909f1b1508656a83077583be48e282",
+    "components": [
+      "passport and metadata",
+      "project-description",
+      "floorplans formats and photographic card",
+      "purchase cards",
+      "location panel",
+      "complete existing consultation CTA",
+      "documents, FAQ and related-project cards"
+    ],
+    "arrows": {
+      "source": "gallery.css",
+      "phoneThrough767": 48,
+      "desktopThrough1440": 56,
+      "wide": 68,
+      "svg": "11x22; M9.5 21 1 11 9.5 1 / M1.5 21 10 11 1.5 1"
+    },
+    "form": "Complete canonical agency consultation markup; selected channel preference and comment retained in prepared handoff. No new transport.",
+    "hero": "Retain chosen composition/height, short fact gaps and direct slides; align gutters and CTA padding to source kit"
+  },
+  "consultationCorrection": "Complete existing project/owner-sale CTA and original canonical expert imagery, no lot-photo hybrid. Channel preference/comment included in prepared request.",
+  "lowerPageComponents": {
+    "related": "Complete project cards; actual lot images, area/bedrooms, favorites/callback/details",
+    "floating": "Same project/home expert widget, right24/bottom24 desktop,16/16 mobile; hides by forms/footer, in dialogs/menu, and after dismissal",
+    "newsletter": "Original homepage email CTA,70px button and36px inset desktop,58/24 mobile; homepage font/spacing tokens; mailto handoff only"
+  }
+}

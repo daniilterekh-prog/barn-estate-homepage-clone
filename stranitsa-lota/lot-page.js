@@ -143,11 +143,11 @@
         actions.setAttribute('aria-label', 'Фотографии объекта');
         const previous = el('button', null, 'icon-button pg-nav-button'); previous.type = 'button';
         previous.dataset.heroStep = '-1'; previous.setAttribute('aria-label', 'Предыдущее фото в херо'); previous.append(icon('left'));
-        const counter = el('span', '1 / ' + items.length, 'lot-hero__counter');
+        const counter = el('span', '1 / ' + items.length, 'lot-hero__counter sr-only');
         counter.setAttribute('aria-live', 'polite'); counter.setAttribute('aria-atomic', 'true');
         const next = el('button', null, 'icon-button pg-nav-button'); next.type = 'button';
         next.dataset.heroStep = '1'; next.setAttribute('aria-label', 'Следующее фото в херо'); next.append(icon('right'));
-        actions.append(previous, counter, next); copy.append(actions);
+        actions.append(previous, next, counter); copy.append(actions);
       }
     } else {
       const photos = action('Все фото · ' + (data.gallery?.length || 1), 'gallery', 'button', 'photos');
@@ -172,9 +172,12 @@
     if (document.body.dataset.heroVariant === '3') {
       hero.insertBefore(copy, offer);
       const meta = $('.eyebrow', copy), location = meta.textContent;
-      meta.replaceChildren(el('span', price(data), 'lot-price'), document.createTextNode(' | '), el('span', location, 'lot-hero__location'));
+      meta.replaceChildren(el('span', location, 'lot-hero__location'));
       p.remove();
-      if (actions.classList.contains('lot-hero__slider')) offer.append(actions);
+      const heroPrice = el('p', price(data), 'lot-price');
+      if (actions.classList.contains('lot-hero__slider')) {
+        heroPrice.classList.add('lot-hero__slider-price');actions.prepend(heroPrice);offer.append(actions);
+      } else {heroPrice.classList.add('lot-hero__price-only');offer.append(heroPrice);}
       const metrics = $('.lot-offer__facts', offer);
       if (metrics?.childElementCount) {
         metrics.classList.add('lot-hero__facts');

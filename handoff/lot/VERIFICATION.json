@@ -1,0 +1,665 @@
+{
+  "date": "2026-11-27",
+  "base": "http://127.0.0.1:40083/html/index.html",
+  "isolatedHTTPRoot": true,
+  "checkedReferences": 333,
+  "mappedResourcesVerified": 86,
+  "results": [
+    {
+      "width": 320,
+      "overflow": false,
+      "hero": {
+        "x": 0,
+        "y": 0,
+        "width": 320,
+        "height": 560,
+        "font": "18px",
+        "color": "rgb(255, 255, 255)",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
+      },
+      "heading": {
+        "x": 22,
+        "y": 292.421875,
+        "width": 276,
+        "height": 67.1875,
+        "font": "32px",
+        "color": "rgb(255, 255, 255)",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
+      },
+      "price": {
+        "x": 162.296875,
+        "y": 460,
+        "width": 135.703125,
+        "height": 25.296875,
+        "font": "22px",
+        "color": "rgb(255, 255, 255)",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
+      },
+      "arrow": {
+        "x": 250,
+        "y": 497.296875,
+        "width": 48,
+        "height": 48,
+        "font": "18px",
+        "color": "rgb(255, 255, 255)",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
+      },
+      "cta": {
+        "x": 22,
+        "y": 490.609375,
+        "width": 148,
+        "height": 61.390625,
+        "font": "18px",
+        "color": "rgb(255, 255, 255)",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
+      },
+      "counterClip": "inset(50%)",
+      "sections": [
+        "lot-photos",
+        "lot-features",
+        "lot-plan",
+        "lot-about",
+        "lot-building",
+        "lot-location",
+        "lot-contact",
+        "lot-related",
+        "lot-newsletter"
+      ],
+      "slider": true
+    },
+    {
+      "width": 390,
+      "overflow": false,
+      "hero": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 560,
+        "font": "18px",
+        "color": "rgb(255, 255, 255)",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
+      },
+      "heading": {
+        "x": 22,
+        "y": 295.8125,
+        "width": 346,
+        "height": 67.1875,
+        "font": "32px",
+        "color": "rgb(255, 255, 255)",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
+      },
+      "price": {
+        "x": 232.296875,
+        "y": 461.703125,
+        "width": 135.703125,
+        "height": 25.296875,
+        "font": "22px",
+        "color": "rgb(255, 255, 255)",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
+      },
+      "arrow": {
+        "x": 320,
+        "y": 499,
+        "width": 48,
+        "height": 48,
+        "font": "18px",
+        "color": "rgb(255, 255, 255)",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
+      },
+      "cta": {
+        "x": 22,
+        "y": 494,
+        "width": 218,
+        "height": 58,
+        "font": "18px",
+        "color": "rgb(255, 255, 255)",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
+      },
+      "counterClip": "inset(50%)",
+      "sections": [
+        "lot-photos",
+        "lot-features",
+        "lot-plan",
+        "lot-about",
+        "lot-building",
+        "lot-location",
+        "lot-contact",
+        "lot-related",
+        "lot-newsletter"
+      ],
+      "slider": true
+    },
+    {
+      "width": 540,
+      "overflow": false,
+      "hero": {
+        "x": 0,
+        "y": 0,
+        "width": 540,
+        "height": 560,
+        "font": "18px",
+        "color": "rgb(255, 255, 255)",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
+      },
+      "heading": {
+        "x": 22,
+        "y": 329.40625,
+        "width": 496,
+        "height": 33.59375,
+        "font": "32px",
+        "color": "rgb(255, 255, 255)",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
+      },
+      "price": {
+        "x": 382.296875,
+        "y": 461.703125,
+        "width": 135.703125,
+        "height": 25.296875,
+        "font": "22px",
+        "color": "rgb(255, 255, 255)",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
+      },
+      "arrow": {
+        "x": 470,
+        "y": 499,
+        "width": 48,
+        "height": 48,
+        "font": "18px",
+        "color": "rgb(255, 255, 255)",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
+      },
+      "cta": {
+        "x": 22,
+        "y": 494,
+        "width": 368,
+        "height": 58,
+        "font": "18px",
+        "color": "rgb(255, 255, 255)",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
+      },
+      "counterClip": "inset(50%)",
+      "sections": [
+        "lot-photos",
+        "lot-features",
+        "lot-plan",
+        "lot-about",
+        "lot-building",
+        "lot-location",
+        "lot-contact",
+        "lot-related",
+        "lot-newsletter"
+      ],
+      "slider": true
+    },
+    {
+      "width": 768,
+      "overflow": false,
+      "hero": {
+        "x": 0,
+        "y": 0,
+        "width": 768,
+        "height": 820,
+        "font": "18px",
+        "color": "rgb(255, 255, 255)",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
+      },
+      "heading": {
+        "x": 24,
+        "y": 537.625,
+        "width": 720,
+        "height": 39.890625,
+        "font": "38px",
+        "color": "rgb(255, 255, 255)",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
+      },
+      "price": {
+        "x": 558.953125,
+        "y": 694.5,
+        "width": 185.046875,
+        "height": 34.5,
+        "font": "30px",
+        "color": "rgb(255, 255, 255)",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
+      },
+      "arrow": {
+        "x": 688,
+        "y": 745,
+        "width": 56,
+        "height": 56,
+        "font": "18px",
+        "color": "rgb(255, 255, 255)",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
+      },
+      "cta": {
+        "x": 24,
+        "y": 738,
+        "width": 568,
+        "height": 70,
+        "font": "17px",
+        "color": "rgb(255, 255, 255)",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
+      },
+      "counterClip": "inset(50%)",
+      "sections": [
+        "lot-photos",
+        "lot-features",
+        "lot-plan",
+        "lot-about",
+        "lot-building",
+        "lot-location",
+        "lot-contact",
+        "lot-related",
+        "lot-newsletter"
+      ],
+      "slider": true
+    },
+    {
+      "width": 1024,
+      "overflow": false,
+      "hero": {
+        "x": 0,
+        "y": 0,
+        "width": 1024,
+        "height": 820,
+        "font": "18px",
+        "color": "rgb(255, 255, 255)",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
+      },
+      "heading": {
+        "x": 40.875,
+        "y": 518.515625,
+        "width": 925,
+        "height": 43,
+        "font": "40.96px",
+        "color": "rgb(255, 255, 255)",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
+      },
+      "price": {
+        "x": 798.046875,
+        "y": 606.015625,
+        "width": 185.046875,
+        "height": 34.5,
+        "font": "30px",
+        "color": "rgb(255, 255, 255)",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
+      },
+      "arrow": {
+        "x": 927.09375,
+        "y": 656.515625,
+        "width": 56,
+        "height": 56,
+        "font": "18px",
+        "color": "rgb(255, 255, 255)",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
+      },
+      "cta": {
+        "x": 40.875,
+        "y": 649.515625,
+        "width": 790.21875,
+        "height": 70,
+        "font": "17px",
+        "color": "rgb(255, 255, 255)",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
+      },
+      "counterClip": "inset(50%)",
+      "sections": [
+        "lot-photos",
+        "lot-features",
+        "lot-plan",
+        "lot-about",
+        "lot-building",
+        "lot-location",
+        "lot-contact",
+        "lot-related",
+        "lot-newsletter"
+      ],
+      "slider": true
+    },
+    {
+      "width": 1440,
+      "overflow": false,
+      "hero": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 620,
+        "font": "18px",
+        "color": "rgb(255, 255, 255)",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
+      },
+      "heading": {
+        "x": 68.328125,
+        "y": 295.84375,
+        "width": 925,
+        "height": 60.46875,
+        "font": "57.6px",
+        "color": "rgb(255, 255, 255)",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
+      },
+      "price": {
+        "x": 1149.59375,
+        "y": 393.921875,
+        "width": 222.0625,
+        "height": 41.390625,
+        "font": "36px",
+        "color": "rgb(255, 255, 255)",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
+      },
+      "arrow": {
+        "x": 1315.65625,
+        "y": 451.3125,
+        "width": 56,
+        "height": 56,
+        "font": "18px",
+        "color": "rgb(255, 255, 255)",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
+      },
+      "cta": {
+        "x": 68.328125,
+        "y": 444.3125,
+        "width": 428,
+        "height": 70,
+        "font": "17px",
+        "color": "rgb(255, 255, 255)",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
+      },
+      "counterClip": "inset(50%)",
+      "sections": [
+        "lot-photos",
+        "lot-features",
+        "lot-plan",
+        "lot-about",
+        "lot-building",
+        "lot-location",
+        "lot-contact",
+        "lot-related",
+        "lot-newsletter"
+      ],
+      "slider": true
+    },
+    {
+      "width": 1920,
+      "overflow": false,
+      "hero": {
+        "x": 0,
+        "y": 0,
+        "width": 1920,
+        "height": 960,
+        "font": "18px",
+        "color": "rgb(255, 255, 255)",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
+      },
+      "heading": {
+        "x": 99.984375,
+        "y": 631.421875,
+        "width": 925,
+        "height": 60.890625,
+        "font": "58px",
+        "color": "rgb(255, 255, 255)",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
+      },
+      "price": {
+        "x": 1560.921875,
+        "y": 717.015625,
+        "width": 259.0625,
+        "height": 48.296875,
+        "font": "42px",
+        "color": "rgb(255, 255, 255)",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
+      },
+      "arrow": {
+        "x": 1751.984375,
+        "y": 781.3125,
+        "width": 68,
+        "height": 68,
+        "font": "18px",
+        "color": "rgb(255, 255, 255)",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
+      },
+      "cta": {
+        "x": 99.984375,
+        "y": 780.3125,
+        "width": 428,
+        "height": 70,
+        "font": "19px",
+        "color": "rgb(255, 255, 255)",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
+      },
+      "counterClip": "inset(50%)",
+      "sections": [
+        "lot-photos",
+        "lot-features",
+        "lot-plan",
+        "lot-about",
+        "lot-building",
+        "lot-location",
+        "lot-contact",
+        "lot-related",
+        "lot-newsletter"
+      ],
+      "slider": true
+    },
+    {
+      "width": 2560,
+      "overflow": false,
+      "hero": {
+        "x": 0,
+        "y": 0,
+        "width": 2560,
+        "height": 960,
+        "font": "18px",
+        "color": "rgb(255, 255, 255)",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
+      },
+      "heading": {
+        "x": 320,
+        "y": 613.953125,
+        "width": 925,
+        "height": 60.890625,
+        "font": "58px",
+        "color": "rgb(255, 255, 255)",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
+      },
+      "price": {
+        "x": 1980.9375,
+        "y": 699.546875,
+        "width": 259.0625,
+        "height": 48.296875,
+        "font": "42px",
+        "color": "rgb(255, 255, 255)",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
+      },
+      "arrow": {
+        "x": 2172,
+        "y": 763.84375,
+        "width": 68,
+        "height": 68,
+        "font": "18px",
+        "color": "rgb(255, 255, 255)",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
+      },
+      "cta": {
+        "x": 320,
+        "y": 762.84375,
+        "width": 428,
+        "height": 70,
+        "font": "19px",
+        "color": "rgb(255, 255, 255)",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
+      },
+      "counterClip": "inset(50%)",
+      "sections": [
+        "lot-photos",
+        "lot-features",
+        "lot-plan",
+        "lot-about",
+        "lot-building",
+        "lot-location",
+        "lot-contact",
+        "lot-related",
+        "lot-newsletter"
+      ],
+      "slider": true
+    },
+    {
+      "width": 3840,
+      "overflow": false,
+      "hero": {
+        "x": 0,
+        "y": 0,
+        "width": 3840,
+        "height": 960,
+        "font": "18px",
+        "color": "rgb(255, 255, 255)",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
+      },
+      "heading": {
+        "x": 960,
+        "y": 599.3125,
+        "width": 925,
+        "height": 60.890625,
+        "font": "58px",
+        "color": "rgb(255, 255, 255)",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
+      },
+      "price": {
+        "x": 2620.9375,
+        "y": 684.90625,
+        "width": 259.0625,
+        "height": 48.296875,
+        "font": "42px",
+        "color": "rgb(255, 255, 255)",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
+      },
+      "arrow": {
+        "x": 2812,
+        "y": 749.203125,
+        "width": 68,
+        "height": 68,
+        "font": "18px",
+        "color": "rgb(255, 255, 255)",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
+      },
+      "cta": {
+        "x": 960,
+        "y": 748.203125,
+        "width": 428,
+        "height": 70,
+        "font": "19px",
+        "color": "rgb(255, 255, 255)",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
+      },
+      "counterClip": "inset(50%)",
+      "sections": [
+        "lot-photos",
+        "lot-features",
+        "lot-plan",
+        "lot-about",
+        "lot-building",
+        "lot-location",
+        "lot-contact",
+        "lot-related",
+        "lot-newsletter"
+      ],
+      "slider": true
+    }
+  ],
+  "comparisons": [
+    {
+      "width": 390,
+      "selector": ".lot-hero",
+      "match": true
+    },
+    {
+      "width": 390,
+      "selector": "h1",
+      "match": true
+    },
+    {
+      "width": 390,
+      "selector": ".lot-hero__slider-price",
+      "match": true
+    },
+    {
+      "width": 390,
+      "selector": ".lot-offer__actions .button",
+      "match": true
+    },
+    {
+      "width": 390,
+      "selector": "#lot-features .passport dt",
+      "match": true
+    },
+    {
+      "width": 390,
+      "selector": "#lot-features .passport dd",
+      "match": true
+    },
+    {
+      "width": 390,
+      "selector": "#lot-related .rp-body",
+      "match": true
+    },
+    {
+      "width": 390,
+      "selector": "#lot-related .rp-name",
+      "match": true
+    },
+    {
+      "width": 390,
+      "selector": "#lot-related .rp-details",
+      "match": true
+    },
+    {
+      "width": 1440,
+      "selector": ".lot-hero",
+      "match": true
+    },
+    {
+      "width": 1440,
+      "selector": "h1",
+      "match": true
+    },
+    {
+      "width": 1440,
+      "selector": ".lot-hero__slider-price",
+      "match": true
+    },
+    {
+      "width": 1440,
+      "selector": ".lot-offer__actions .button",
+      "match": true
+    },
+    {
+      "width": 1440,
+      "selector": "#lot-features .passport dt",
+      "match": true
+    },
+    {
+      "width": 1440,
+      "selector": "#lot-features .passport dd",
+      "match": true
+    },
+    {
+      "width": 1440,
+      "selector": "#lot-related .rp-body",
+      "match": true
+    },
+    {
+      "width": 1440,
+      "selector": "#lot-related .rp-name",
+      "match": true
+    },
+    {
+      "width": 1440,
+      "selector": "#lot-related .rp-details",
+      "match": true
+    }
+  ],
+  "flows": "25 photos decoded at390; plan/zoom/Escape/focus; read-more; favorites/per-item request ID; email validation/prepared request at390/1440. No delivery.",
+  "noJavaScript": "Static601669 and complete description visible",
+  "errors": [],
+  "missing": [],
+  "posts": [],
+  "externalServices": "Blocked in test to verify local independence; Yandex map intentionally needs network"
+}

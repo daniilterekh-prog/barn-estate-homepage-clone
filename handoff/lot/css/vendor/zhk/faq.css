@@ -1,0 +1,24 @@
+/* Sales-node FAQ appearance, copied locally from the approved city node.
+ * Native details/summary retain disclosure semantics without another controller. */
+#lot-faq{background:#fff}
+#lot-faq .faq-layout{display:block}
+#lot-faq .faq-layout>.faq-heading{max-width:none}
+#lot-faq .faq-heading h2{font-size:var(--heading);font-weight:300;line-height:1.2;text-transform:uppercase}
+#lot-faq .faq-heading .eyebrow{text-align:left}
+#lot-faq .faq-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:repeat(3,auto);grid-auto-flow:column;column-gap:48px;row-gap:0;margin-top:var(--content-gap);align-items:stretch}
+#lot-faq .faq-list details{min-width:0;border-top:0;border-bottom:1px solid rgba(30,30,30,.12)}
+#lot-faq .faq-list details:first-child,#lot-faq .faq-list details:nth-child(4){border-top:1px solid rgba(30,30,30,.12)}
+#lot-faq .faq-list summary{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:24px 0;list-style:none;color:#262626;font-size:20px;font-weight:400;line-height:1.4;text-align:left;min-height:100%}
+#lot-faq .faq-list details[open] summary{min-height:0}
+#lot-faq .faq-list summary::after{content:none}
+#lot-faq .faq-list summary::-webkit-details-marker{display:none}
+#lot-faq .faq-question{min-width:0}
+#lot-faq .faq-icon{display:flex;align-items:center;justify-content:center;flex:0 0 30px;width:30px;height:30px;color:rgba(30,30,30,.5);transform:rotate(0);transition:transform .35s ease,color .35s ease}
+#lot-faq .faq-icon svg{display:block;width:100%;height:100%}
+#lot-faq .faq-list details[open] .faq-icon{transform:rotate(45deg)}
+#lot-faq .faq-list p{margin:0;padding:0 0 24px;color:#262626;font-size:16px;font-weight:300;line-height:1.4}
+#lot-faq .faq-list summary:focus-visible{outline:2px solid var(--brand);outline-offset:-3px}
+@media(min-width:1441px){#lot-faq .faq-list summary{font-size:22px}}
+@media(max-width:1024px){#lot-faq .faq-list summary{gap:16px;padding-block:20px;font-size:18px}#lot-faq .faq-icon{flex-basis:24px;width:24px;height:24px}#lot-faq .faq-list p{padding-bottom:20px}}
+@media(max-width:540px){#lot-faq .faq-list{grid-template-columns:1fr;grid-template-rows:none;grid-auto-flow:row;gap:0}#lot-faq .faq-list details:nth-child(4){border-top:0}}
+@media(prefers-reduced-motion:reduce){#lot-faq .faq-icon{transition:none}}

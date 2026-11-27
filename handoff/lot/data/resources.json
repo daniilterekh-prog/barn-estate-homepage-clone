@@ -1,0 +1,31 @@
+{
+  "css": [
+    "../css/vendor/media-header.css?v=5dec0c68563d",
+    "../css/vendor/header-navigation.css?v=f7248c22fed7",
+    "../css/vendor/footer.css?v=3d9a33bacd3e",
+    "../css/lot-page.css?v=188a434c468e",
+    "../css/hero-variants.css?v=cf16d1cb37a6",
+    "../css/vendor/zhk/base-components.css?v=ce9a9e9d092e",
+    "../css/vendor/zhk/description.css?v=031358ddf408",
+    "../css/vendor/zhk/metadata.css?v=9800737def94",
+    "../css/vendor/zhk/floorplans.css?v=8eda8f495ca6",
+    "../css/vendor/zhk/consultation.css?v=ca49d4b94f42",
+    "../css/vendor/zhk/gallery.css?v=d866de5fdcd9",
+    "../css/vendor/zhk/related-projects.css?v=dbf8d764190f",
+    "../css/vendor/zhk/faq.css?v=0f3a7420faf6",
+    "../css/vendor/zhk/optional-characteristics.css?v=c21a3eeed409",
+    "../css/vendor/zhk/bridge.css?v=d44043d46335",
+    "../css/vendor/zhk/floating-expert.css?v=68c9f789bd5a",
+    "../css/vendor/newsletter.css?v=0b7721e76812",
+    "../css/vendor/page-breadcrumbs.css?v=7a58ed93dc94"
+  ],
+  "js": [
+    "../js/lot-data.js?v=f532f5642dde",
+    "../js/lot-page.js?v=28054fadba21",
+    "../js/vendor/lot-description.js?v=9d5d6816bb38",
+    "../js/vendor/lot-extras.js?v=310edd953347",
+    "../js/vendor/media-header.js?v=3d6cbd7e2d2c",
+    "../js/vendor/header-navigation.js?v=9d1c3a1f39c0",
+    "../js/vendor/page-breadcrumbs.js?v=9ba4a0fec8a9"
+  ]
+}
