@@ -115,7 +115,7 @@
       "target": "hero-variants.css",
       "sourceCommit": "93ff4c2c32ceae0881967d3e4a7d119fc61d49dc",
       "sourceSha256": "002bf2d2c75f7ec115686583aaf4c007c82f0a93884dcef8ef52570cf22ae81d",
-      "sha256": "4f65a1ee18410b7793f0f3f40a4de81b3e396785444e31219686869b77b6ed8e",
+      "sha256": "7fd9840f8ae2e0111a4e46f884c18f79fbe083e0d748500a46b24de121030149",
       "adaptation": "Variant 3 reuses Media/Owner hero title, CTA, overlay and spacing roles; compact white action row follows homepage filters; other optional variants remain local. Mobile <=768px: unboxed price and primary action below the resort facts; gallery is a 44px secondary control. 27.11.2026 requested override: transparent price at all sizes; smaller footer gaps; inline arrows/counter from local icon kit replace the gallery opener."
     },
     {
@@ -123,7 +123,7 @@
       "target": "hero-variants.css",
       "sourceCommit": "52a4dc52db81b2c2012dcf56aa9da194f4b1c8e3",
       "sourceSha256": "ba38428f8a64418a4ff201b51ae55cde37903292ee7d744ea87e0f63f17422de",
-      "sha256": "4f65a1ee18410b7793f0f3f40a4de81b3e396785444e31219686869b77b6ed8e",
+      "sha256": "7fd9840f8ae2e0111a4e46f884c18f79fbe083e0d748500a46b24de121030149",
       "adaptation": "Keep Tilda Sans and existing BARN Estate H1/CTA roles. Use exact lot values. On narrow screens keep area, bedrooms and floor; finish remains in full apartment facts. Semantic dt precedes dd in DOM, visual values precede captions. Adopt resort footer geometry and value/caption hierarchy only. Mobile <=768px: unboxed price and primary action below the resort facts; gallery is a 44px secondary control. 27.11.2026 requested override: transparent price at all sizes; smaller footer gaps; inline arrows/counter from local icon kit replace the gallery opener."
     },
     {
@@ -131,7 +131,7 @@
       "sourceCommit": "6f2ce65ec5ac1383660562cd6bff0313eadf8a35",
       "sourceSha256": "eb2e94aa0238b6d46d2bb7250ab179ed8099ce0a48ded3dd8a20f4a23789136c",
       "target": "lot-page.js",
-      "sha256": "a6f56d4b963c7bfd6c0645b2db55028147cb5da2c7a24db4a14ca67684729df1",
+      "sha256": "10ceffb4203d7ef929b0b2ea2efb15f056d69a1cec1e42f89549046320bd90fd",
       "adaptation": "Copy hero-bottom-minus-120 reveal threshold and hidden/inert states. Reuse local media-header adapter with lot anchors, request context and focus return."
     },
     {
@@ -193,7 +193,7 @@
       "sourceCommit": "ccbbd989a6909f1b1508656a83077583be48e282",
       "sourceSha256": "d10ea0f6908c53861b6cfc411c235dfbb39777fdb9ae07c5466a117bc8b5fcc0",
       "target": "kit/vendor/zhk/floorplans.css",
-      "sha256": "81595a1f646ad3f1cf6a256f43cb2effee0a6d871ba643ad91c20df0944c2513",
+      "sha256": "96c738821d56881fc1239b63a1d6966d151a4c2dedf4b9f7021294d828ee1906",
       "adaptation": "Reuse existing component; rename source section IDs to lot IDs where required"
     },
     {
@@ -217,7 +217,7 @@
       "sourceCommit": "ccbbd989a6909f1b1508656a83077583be48e282",
       "sourceSha256": "627d503c023c5f388e6615f78a42dd919cbd21130d350edb767a28278c713bdd",
       "target": "kit/vendor/zhk/optional-characteristics.css",
-      "sha256": "e7c0d5d82880a4ad6bd3576505e268570334b2ec37fe2c95b242a76deaf76d69",
+      "sha256": "c21a3eeed409da67a773a87a66e4828aeb1311d58d917eda12d565f6be478874",
       "adaptation": "Reuse existing component; rename source section IDs to lot IDs where required"
     },
     {
@@ -305,5 +305,11 @@
     "scope": "Opt-in hero state, original header not in menu-open state and compact sticky header inactive",
     "appearance": "Transparent background and border; no box shadow; white submenu links and expanded parent label",
     "behavior": "Existing positioning and keyboard/hover handlers unchanged; normal menu keeps white surface and dark links"
+  },
+  "characteristicIcons": {
+    "source": "https://lucide.dev/",
+    "manifest": "kit/lucide-source.json",
+    "license": "kit/vendor/lucide/LICENSE",
+    "adaptation": "Thin stroke 1.5 and #656462; same passport and list components; decorative SVG."
   }
 }

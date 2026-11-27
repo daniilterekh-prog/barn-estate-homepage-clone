@@ -1,0 +1,121 @@
+{
+  "library": "Lucide",
+  "commit": "1188e0d2ff889e68aaf456c95b792b169df5b2ef",
+  "source": "https://lucide.dev/",
+  "license": "ISC; see vendor/lucide/LICENSE (includes Feather MIT notice)",
+  "adaptation": "24px viewBox, stroke 1.5 and kit muted color #656462. Decorative icons only; no UI dependency.",
+  "files": [
+    {
+      "name": "building",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/1188e0d2ff889e68aaf456c95b792b169df5b2ef/icons/building.svg",
+      "sourceSha256": "62afdf63b5020448cba93267343a91c16ee4dffc7969e46b223ee531cf0bcd1c",
+      "target": "kit/vendor/lucide/building.svg",
+      "sha256": "82056723d9bd2c88ff48d35b4566c4cffb821bc6765d033ac0af79692fc94b71"
+    },
+    {
+      "name": "ruler",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/1188e0d2ff889e68aaf456c95b792b169df5b2ef/icons/ruler.svg",
+      "sourceSha256": "af9710f70510217ef33773d502d0be2425c3a9cb1e3294ace27da9f0b4c8850b",
+      "target": "kit/vendor/lucide/ruler.svg",
+      "sha256": "a1a3ddd467623dcca2ecb6a9f3d7174722cfc041388a482d035d95a7f605522c"
+    },
+    {
+      "name": "door-open",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/1188e0d2ff889e68aaf456c95b792b169df5b2ef/icons/door-open.svg",
+      "sourceSha256": "1bddb273d0893f65778e2a58aa1af66c8129d8d7634a3552d95be66191ea7526",
+      "target": "kit/vendor/lucide/door-open.svg",
+      "sha256": "71c3e1b7e84c59a20cfd2f697441a884dc1b9437e9f67ee802a2cee83688a179"
+    },
+    {
+      "name": "bed-double",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/1188e0d2ff889e68aaf456c95b792b169df5b2ef/icons/bed-double.svg",
+      "sourceSha256": "b8db0c1a2178019c7659f10d0461e5903eddd4e8bb8a826b380eba556278bac5",
+      "target": "kit/vendor/lucide/bed-double.svg",
+      "sha256": "1296c1a114fcc3494a70249222252e99991143f6003a0c1d71bd36869071d940"
+    },
+    {
+      "name": "cooking-pot",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/1188e0d2ff889e68aaf456c95b792b169df5b2ef/icons/cooking-pot.svg",
+      "sourceSha256": "f44a2639fb86ad9e3b0284a87b6083f6656491fd9e09f6c5e173b81f98b8c090",
+      "target": "kit/vendor/lucide/cooking-pot.svg",
+      "sha256": "3fc854451bfd696c78012fd403f64318c3579f7fae6041f711b501e457c44dc7"
+    },
+    {
+      "name": "move-vertical",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/1188e0d2ff889e68aaf456c95b792b169df5b2ef/icons/move-vertical.svg",
+      "sourceSha256": "86b1224300716e364892b634a7004b0afaba036f1c59af0b4e229b233ca3b6fc",
+      "target": "kit/vendor/lucide/move-vertical.svg",
+      "sha256": "89b343132c23979ac2f7d7ea3545db0275c12dc964c894a5d2f5e053cb93ffd9"
+    },
+    {
+      "name": "layers",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/1188e0d2ff889e68aaf456c95b792b169df5b2ef/icons/layers.svg",
+      "sourceSha256": "ce16d0a955e3581cda17f6b2fd5c5bc2034b405f9cecc31c8ebb8495b4afc1bb",
+      "target": "kit/vendor/lucide/layers.svg",
+      "sha256": "65ef9a112269153ce1cddc0d9b3a6ae6fc60d4422ad2e4dc50f7a7e50d108fbf"
+    },
+    {
+      "name": "paint-roller",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/1188e0d2ff889e68aaf456c95b792b169df5b2ef/icons/paint-roller.svg",
+      "sourceSha256": "5ee870ae29a42f19e5876cddee9bec1caed915e7554716844963a271e7dac740",
+      "target": "kit/vendor/lucide/paint-roller.svg",
+      "sha256": "fc53926651811281c829ac2911ca123226c3db551fcbfc66a8f7f4b94086e911"
+    },
+    {
+      "name": "bath",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/1188e0d2ff889e68aaf456c95b792b169df5b2ef/icons/bath.svg",
+      "sourceSha256": "095c5a94cde4aad141ec17cc9d808570236fcbf56dd870a87ddbec7c7ed3b5b1",
+      "target": "kit/vendor/lucide/bath.svg",
+      "sha256": "c8813c9bdd83df48d7a77e0e9131af32c391c2c4552d227fb001a39272f56dce"
+    },
+    {
+      "name": "panels-top-left",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/1188e0d2ff889e68aaf456c95b792b169df5b2ef/icons/panels-top-left.svg",
+      "sourceSha256": "321a2a5500f2b814a2e62eb73c4b01dc65c7334fe2e6f7d77517239383e26bb1",
+      "target": "kit/vendor/lucide/panels-top-left.svg",
+      "sha256": "894d84bbbc913894ce3cc7829e96c041cc8e2f1123cf62c0e3820d21580cc210"
+    },
+    {
+      "name": "calendar-days",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/1188e0d2ff889e68aaf456c95b792b169df5b2ef/icons/calendar-days.svg",
+      "sourceSha256": "9330eb8d7c4989e97b6361314abbf02953243c602874725c9e58ceca00da3bd7",
+      "target": "kit/vendor/lucide/calendar-days.svg",
+      "sha256": "be0cb593c0988acd628d3059eb6c670104e59859c2115aa17353814e8bd534ad"
+    },
+    {
+      "name": "square-letter-p",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/1188e0d2ff889e68aaf456c95b792b169df5b2ef/icons/square-letter-p.svg",
+      "sourceSha256": "216181108c658d0bec1a5de8bb8689b8c2ecc068c404e03227f2d7498d97e76e",
+      "target": "kit/vendor/lucide/square-letter-p.svg",
+      "sha256": "899e8fe70503c683bc094c4354a05716b69d188531b0d8f847080c20594568aa"
+    },
+    {
+      "name": "trees",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/1188e0d2ff889e68aaf456c95b792b169df5b2ef/icons/trees.svg",
+      "sourceSha256": "5bd0ff178d40b8c81dd38180dae0683aa9bc89c71b204167e06d2a3a0d506563",
+      "target": "kit/vendor/lucide/trees.svg",
+      "sha256": "cb3499821a499db37c58f20e3129a36ab653d4c1a7866cda9a3bf8a507ed10e1"
+    },
+    {
+      "name": "shirt",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/1188e0d2ff889e68aaf456c95b792b169df5b2ef/icons/shirt.svg",
+      "sourceSha256": "6e7df3e5ab01881bce6e00eebd449c950fd8535de656c7b720e6cba6b5a70602",
+      "target": "kit/vendor/lucide/shirt.svg",
+      "sha256": "ff5f41ead0b58fa2382a050fcfbc7636aa1a26c29f6844e205c5adfc6e46b21b"
+    },
+    {
+      "name": "heater",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/1188e0d2ff889e68aaf456c95b792b169df5b2ef/icons/heater.svg",
+      "sourceSha256": "2806ae9c318f7c1bbdabe6c57cdfae58e185c8bf707245fa99c1198db6291323",
+      "target": "kit/vendor/lucide/heater.svg",
+      "sha256": "8be65c24e1a20688d63f9e789dbdb8eb9f77d8637b8d5980e9c735074ad2abe3"
+    },
+    {
+      "name": "fence",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/1188e0d2ff889e68aaf456c95b792b169df5b2ef/icons/fence.svg",
+      "sourceSha256": "05c0bafa899af230f7bd1db3d6fb01ced801281d1bdea72d82ac2847f530bdd2",
+      "target": "kit/vendor/lucide/fence.svg",
+      "sha256": "bd0bd36b4a83e3b1b3fdcba147eeae25b7da46f5d1972fd7cbec8ea7b9b4b8b5"
+    }
+  ]
+}

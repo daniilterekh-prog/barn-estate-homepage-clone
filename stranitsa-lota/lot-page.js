@@ -78,11 +78,25 @@
     if (b.phone) info.append(link(b.phone, 'tel:' + b.phone.replace(/[^+\d]/g, ''), 'broker__phone'));
     node.append(info); return node;
   }
+  const factIcons = {'Тип объекта':'building','Площадь':'ruler','Комнат':'door-open','Спален':'bed-double','Санузлов':'bath','Санузел':'bath','Этаж':'layers','Этажность':'layers','Отделка':'paint-roller','Год постройки':'calendar-days','Кухня':'cooking-pot','Потолки':'move-vertical','Окна':'panels-top-left','Паркинг':'square-letter-p','Двор':'trees','Класс дома':'building'};
+  function characteristicIcon(name) {
+    // Only allow the local, licensed icon subset; never turn CRM text into a URL.
+    const allowed = new Set(Object.values(factIcons).concat(['shirt','heater','fence']));
+    if (!allowed.has(name)) return null;
+    const img = el('img', null, 'characteristic-icon');
+    img.src = 'kit/vendor/lucide/' + name + '.svg'; img.alt = '';
+    img.width = 24; img.height = 24; img.setAttribute('aria-hidden', 'true');
+    return img;
+  }
   function factsList(items, cls = 'lot-facts') {
     const dl = el('dl', null, cls);
     for (const item of items || []) {
       if (item.value == null || item.value === '') continue;
-      const row = el('div'); row.append(el('dt', item.label), el('dd', item.value)); dl.append(row);
+      const row = el('div'), label = el('dt');
+      const svg = cls.includes('passport-facts') && characteristicIcon(item.icon || factIcons[item.label]);
+      if (svg) label.append(svg);
+      label.append(el('span', item.label));
+      row.append(label, el('dd', item.value)); dl.append(row);
     }
     return dl;
   }
@@ -147,7 +161,7 @@
     const p = el('div'); p.append(el('p', price(data), 'lot-price'));
     const area = parseFloat(String(fact(data, 'Площадь') || '').replace(',', '.'));
     if (area > 0 && data.priceRub != null) p.append(el('p', money(Math.round(data.priceRub / area)) + '/м²', 'lot-price-per'));
-    offer.append(p, factsList((data.facts || []).filter(f => ['Площадь', 'Спален', 'Этаж', 'Отделка'].includes(f.label)), 'lot-offer__facts'), brokerBlock(data));
+    offer.append(p, factsList((data.facts || []).filter(f => (data.heroFacts || ['Площадь', 'Спален', 'Этаж', 'Отделка']).includes(f.label)), 'lot-offer__facts'), brokerBlock(data));
     const offerActions = el('div', null, 'lot-offer__actions');
     offerActions.append(action(document.body.dataset.heroVariant === '2' ? 'На просмотр' : 'Записаться на просмотр', 'tour', 'button', 'arrow'));
     if (data.presentation?.url) offerActions.append(link('Скачать презентацию', data.presentation.url));
@@ -187,7 +201,7 @@
     const characteristics = (data.facts || []).filter(f => f.value != null && f.value !== '');
     if (characteristics.length || data.features?.length) {
       const s = section('lot-features', 'ОБ ОБЪЕКТЕ', 'Характеристики объекта');
-      const passport = el('div', null, 'passport'); const figure = el('figure'); figure.append(image(photoFor(1)));
+      const passport = el('div', null, 'passport'); const figure = el('figure'); figure.append(image(data.sectionImages?.features || photoFor(1)));
       const items = characteristics.length ? characteristics : data.features.map(f => ({label:f.label,value:f.text}));
       const list = factsList(items, 'passport-facts'); list.setAttribute('aria-label','Характеристики объекта');
       passport.append(figure,list); s.box.append(passport); main.append(s.node);
@@ -204,7 +218,13 @@
       const rowAction=el('span',data.floorPlan?.src?'Смотреть':'Запросить','format-action'); rowAction.append(icon('right')); row.append(rowAction); formats.append(row);
       content.append(heading,formats);
       if(data.floorPlan?.description) content.append(el('p',data.floorPlan.description,'format-note lead'));
-      const cover=el('figure',null,'formats-cover'); cover.append(image(photoFor(3)));
+      const cover=el('figure',null,'formats-cover');
+      if (data.floorPlan?.src) {
+        cover.classList.add('formats-cover--plan');
+        const open = action('', 'plan', 'formats-plan-preview');
+        open.setAttribute('aria-label', 'Открыть и увеличить планировку');
+        open.append(image(data.floorPlan)); cover.append(open);
+      } else cover.append(image(photoFor(3)));
       const caption=el('figcaption'); caption.append(el('h3',data.floorPlan?.src?'Планировка объекта':'Планировка по запросу'),el('p',data.floorPlan?.src?'Посмотрите план и обсудите пространство с брокером.':'Попросите брокера прислать план и уточнить размеры помещений.'));
       caption.append(action(data.floorPlan?.src?'Открыть планировку':'Запросить планировку',request,'formats-plan-link','arrow')); cover.append(caption);
       layout.append(content,cover); s.box.append(layout); main.append(s.node);
@@ -213,8 +233,8 @@
       const s=section('lot-about','ВАШ БУДУЩИЙ ДОМ','О квартире'); const description=el('div',null,'project-description');
       const text=el('div',null,'project-description__text');
       (data.descriptionParagraphs || [data.description]).filter(Boolean).forEach(p=>text.append(el('p',p)));
-      if(data.features?.length){const list=el('ul',null,'plain-list');data.features.forEach(f=>list.append(el('li',f.label+(f.text?' — '+f.text:''))));text.append(list);}
-      const figure=el('figure',null,'project-description__image');figure.append(image(photoFor(2)));
+      if(data.features?.length){const list=el('ul',null,'plain-list');data.features.forEach(f=>{const row=el('li');const svg=characteristicIcon(f.icon);if(svg){row.classList.add('has-characteristic-icon');row.append(svg);}row.append(el('span',f.label+(f.text?' — '+f.text:'')));list.append(row);});text.append(list);}
+      const figure=el('figure',null,'project-description__image');figure.append(image(data.sectionImages?.about || photoFor(2)));
       description.append(text,figure);s.box.append(description);main.append(s.node);
     }
     if(data.building?.verified===true && data.building.name){
@@ -243,6 +263,7 @@
       const s=section('lot-terms','ПРИОБРЕТЕНИЕ НЕДВИЖИМОСТИ',data.terms?.title || 'Стоимость и условия','purchase');
       const grid=el('div',null,'three-columns lot-purchase-pair');
       const amount=el('article');amount.append(el('span','01','item-number'),el('h3','Стоимость объекта'),el('p',price(data),'lot-price-caption'));
+      if(data.pricePerSquareMeter)amount.append(el('p',data.pricePerSquareMeter,'small muted'));
       if(data.demo)amount.append(el('p','Стоимость из сохранённой карточки объекта.','small muted'));
       amount.append(action('Уточнить стоимость','terms','text-link','arrow'));
       const terms=el('article');terms.append(el('span','02','item-number'),el('h3','Условия сделки'));

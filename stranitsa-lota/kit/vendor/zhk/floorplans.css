@@ -43,3 +43,11 @@
   #lot-plan .formats-cover h3{font-size:24px;margin-bottom:12px}
   #lot-plan .formats-cover p{font-size:16px;line-height:1.5}
 }
+
+/* Real lot plans remain complete, including their legend and attribution. */
+#lot-plan .formats-cover--plan{display:flex;flex-direction:column;min-height:0;color:var(--ink);overflow:visible;isolation:auto}
+#lot-plan .formats-cover--plan:after{display:none}
+#lot-plan .formats-plan-preview{display:block;width:100%;padding:0;border:1px solid var(--line);background:#fff;cursor:zoom-in}
+#lot-plan .formats-plan-preview img{display:block;width:100%;height:auto;object-fit:contain}
+#lot-plan .formats-cover--plan figcaption{position:static;padding-top:24px}
+#lot-plan .formats-cover--plan .formats-plan-link{color:var(--brand)}

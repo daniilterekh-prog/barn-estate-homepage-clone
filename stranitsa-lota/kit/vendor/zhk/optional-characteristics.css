@@ -9,3 +9,10 @@
 @media(max-width:540px){
   :is(#lot-features,#lot-building) .passport-facts>div:nth-child(-n+2){border-top:1px solid var(--line)}
 }
+
+/* Thin decorative SVGs use the existing passport grid, labels and dividers. */
+.lot-page .passport-facts dt{display:flex;align-items:center;gap:12px}
+.lot-page .characteristic-icon{width:24px;height:24px;flex:0 0 24px;object-fit:contain}
+.lot-page .plain-list .has-characteristic-icon{display:flex;align-items:flex-start;gap:16px}
+.lot-page .has-characteristic-icon .characteristic-icon{margin-top:2px}
+@media(max-width:540px){.lot-page .passport-facts dt{gap:8px;align-items:flex-start}.lot-page .characteristic-icon{width:22px;height:22px;flex-basis:22px}}
