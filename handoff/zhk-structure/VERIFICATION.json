@@ -5,7 +5,7 @@
   "browser": "verification/browser.json",
   "visual": "verification/visual.json",
   "summary": {
-    "static_checks": 129,
+    "static_checks": 130,
     "viewport_widths": [
       320,
       390,
@@ -33,9 +33,10 @@
   },
   "extracted_zip": "verification/extracted-zip.json",
   "floorplans": "verification/floorplans.json",
-  "notes": "Mobile actions revised 27 Nov. Earlier visual/ZIP reports describe their recorded revisions; current changed-view check is mobile-cards.json. CTA moved directly before FAQ; mobile and desktop order, single form and expert popup hiding verified. Apartments moved directly after purchase conditions; 390/1440px, single block, image dialog and consultation verified.",
+  "notes": "Mobile actions revised 27 Nov. Earlier visual/ZIP reports describe their recorded revisions; current changed-view check is mobile-cards.json. CTA moved directly before FAQ; mobile and desktop order, single form and expert popup hiding verified. Apartments moved directly after purchase conditions; 390/1440px, single block, image dialog and consultation verified. Infrastructure image placed at right, below text on mobile; responsive layout and read more verified.",
   "current_package": "verification/mobile-cards.json",
   "calculator": "excluded by user",
   "cta_order": "verification/cta-before-faq.json",
-  "apartments_order": "verification/apartments-after-purchase.json"
+  "apartments_order": "verification/apartments-after-purchase.json",
+  "infrastructure_image": "verification/infrastructure-image.json"
 }

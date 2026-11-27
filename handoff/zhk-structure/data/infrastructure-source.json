@@ -1,10 +1,10 @@
 {
-  "updated_on": "2026-11-25",
+  "updated_on": "2026-11-27",
   "section_id": "territory",
   "source_label": "Инфраструктура",
   "source_group_qualifier": "Для презентации",
   "api_connected": false,
-  "layout": "Full-width heading, readable text column below, no photographs, gallery captions, cards, or accordion. Existing lead typography and section spacing.",
+  "layout": "Full-width heading; text at left and one optional project infrastructure photograph at right. Stack photograph below text on mobile <=767px. No captions or cards. Existing typography, spacing and two-paragraph disclosure retained.",
   "content_contract": {
     "single_text_field": true,
     "preserve_paragraphs": true,
@@ -21,5 +21,13 @@
     }
   },
   "preview": "Static example reuses the infrastructure facts already present in this prototype before section removal. This is not a fresh Intrum export; replace whole text from the public infrastructure field when the CRM adapter is connected.",
-  "user_examples": "Рождественка 8 includes a filled Infrastructure field; ЖК Гала example does not. The block is conditional."
+  "user_examples": "Рождественка 8 includes a filled Infrastructure field; ЖК Гала example does not. The block is conditional.",
+  "image": {
+    "optional": true,
+    "preview_file": "assets/garden.jpg",
+    "provenance": "preview/assets/sources.json: garden.jpg, official project asset checked 2026-11-10",
+    "crm_connected": false,
+    "when_empty": "Omit figure and apply infrastructure-layout--text-only; do not show placeholder or fetch an unrelated image.",
+    "integration": "Use an available verified infrastructure image from the project media feed; exact CRM media mapping must be defined by adapter."
+  }
 }

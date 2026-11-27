@@ -1,8 +1,14 @@
-/* Shared text-field presentation; existing BARN Estate typography and spacing. */
+/* Text and optional project photograph, matching the description block grid. */
 #territory{background:#fff}
+#territory .infrastructure-layout{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(32px,5vw,80px);align-items:start}
+#territory .infrastructure-body,#territory .infrastructure-image{min-width:0}
+#territory .infrastructure-image{margin:0}
+#territory .infrastructure-image img{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover}
+#territory .infrastructure-layout--text-only{display:block}
 #territory .infrastructure-text{max-width:900px;color:var(--copy);font-size:var(--lead);font-weight:300;line-height:var(--lead-line);overflow-wrap:anywhere}
 #territory .infrastructure-text p+p{margin-top:24px}
 @media(max-width:540px){#territory .infrastructure-text p+p{margin-top:16px}}
 #territory .infrastructure-more{margin-top:24px}
 #territory .infrastructure-toggle{margin-top:16px;scroll-margin-block:110px 90px}
+@media(max-width:767px){#territory .infrastructure-layout{grid-template-columns:1fr;gap:28px}}
 @media(max-width:540px){#territory .infrastructure-more{margin-top:16px}}

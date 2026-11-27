@@ -1,8 +1,8 @@
 {
-  "checks": 129,
+  "checks": 130,
   "passed": true,
   "failures": [],
-  "local_references": 73,
+  "local_references": 74,
   "sections": [
     "project",
     "passport",
@@ -19,7 +19,7 @@
     "similar",
     "newsletter"
   ],
-  "files": 117,
+  "files": 118,
   "details": [
     {
       "check": "reference html/index.html -> ../assets/logo.svg",
@@ -118,7 +118,7 @@
       "passed": true
     },
     {
-      "check": "reference html/index.html -> ../css/infrastructure.css?v=two-paragraphs-20261125",
+      "check": "reference html/index.html -> ../css/infrastructure.css?v=image-right-20261127",
       "passed": true
     },
     {
@@ -223,6 +223,10 @@
     },
     {
       "check": "reference html/index.html -> ../assets/panorama.jpg",
+      "passed": true
+    },
+    {
+      "check": "reference html/index.html -> ../assets/garden.jpg",
       "passed": true
     },
     {
