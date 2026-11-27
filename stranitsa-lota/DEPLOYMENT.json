@@ -1,15 +1,15 @@
 {
-  "date": "2026-11-11",
+  "date": "2026-11-27",
   "sourceRepository": "daniilterekh-prog/barnes-sites",
-  "sourceCommit": "0204b6dcee3b62f20fe2ed1ebe97c5d5649d1919",
+  "sourceCommit": "0924ede187a2722d72c40fafcca4bf8d1bbacc3f",
   "sourcePath": "main-site/pages/lot",
   "uiKit": "BARN Estate 1.0.6",
   "scope": "Only stranitsa-lota plus root catalog entries",
   "privateReferenceExcluded": true,
-  "checks": "16 viewports and 27 dropdowns; 16 width/variant combinations; flows on 320/390/768/1440",
+  "checks": "16 hero sizes + 27 dropdowns; 16 responsive combinations; 5 slider widths, 37 images decoded, native touch/keyboard/wrap/fallback; variant 3 and default flows",
   "previewOnly": true,
   "heroOptions": "hero-options/",
   "defaultHeroUnchanged": true,
-  "hero3": "Desktop resort facts preserved; mobile unboxed price after facts, one primary CTA, compact gallery control",
+  "hero3": "Transparent price at every viewport; half bottom gaps; inline previous/next arrows and counter; keyboard and native horizontal swipe",
   "factsReference": "barnes-sites/docs/landing-builder/hero-prototype/hero.css"
 }

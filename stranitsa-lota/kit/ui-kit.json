@@ -62,13 +62,18 @@
       "radius": 1
     },
     "bottomSpace": {
-      "desktop": 56,
-      "wide": 72,
-      "tablet": 48,
-      "smallTablet": 40,
-      "mobile": 32
+      "desktop": 28,
+      "wide": 36,
+      "tablet": 24,
+      "smallTablet": 24,
+      "mobile": 16
     },
-    "note": "Hero title is a distinct role from section headings. Desktop white action row follows homepage filters; at <=768px the offer is transparent on the photo after the facts, with one primary CTA and a compact gallery control."
+    "note": "Keep Media/Owner title and CTA roles. Lot-specific override requested 27.11.2026: transparent price on every viewport, smaller bottom space, direct arrow controls instead of gallery opener.",
+    "inlineSlider": {
+      "source": "Existing lot gallery assets and icon-button/SVG kit",
+      "controls": "Previous, live counter, next; keyboard arrows while controls focused; horizontal touch swipe; no autoplay",
+      "fallback": "Hide controls for one photo; cover remains visible"
+    }
   },
   "heroFacts": {
     "source": "docs/landing-builder/hero-prototype/hero.css",

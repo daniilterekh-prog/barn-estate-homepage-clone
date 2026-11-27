@@ -93,10 +93,18 @@
     const phone = $('[name=phone]', node); phone.setAttribute('aria-describedby', prefix + '-error');
     return node;
   }
-  let lot;
+  function heroPhotos(data) {
+    const seen = new Set();
+    return [data.cover, ...(data.gallery || [])].filter(photo => {
+      const src = safeUrl(photo?.src, '');
+      if (!src || seen.has(src)) return false;
+      seen.add(src); return true;
+    });
+  }
+  let lot, heroIndex = 0;
   function render(data) {
     if (!data?.id || !data.title || !data.cover?.src) throw new Error('Для лота нужны id, title и cover.src');
-    lot = data; window.BARNES_LOT_DATA = data;
+    lot = data; heroIndex = 0; window.BARNES_LOT_DATA = data;
     main.replaceChildren();
     document.title = (data.pageTitle || data.title) + ' — BARN Estate';
     $('meta[name=description]').content = data.description || data.title;
@@ -109,17 +117,27 @@
     const title = el('h1', data.title); title.id = 'lot-title'; copy.append(title);
     if (data.description) copy.append(el('p', data.description, 'lead'));
     const actions = el('div', null, 'lot-hero__actions');
-    const photos = action('Все фото · ' + (data.gallery?.length || 1), 'gallery', 'button', 'photos');
     if (document.body.dataset.heroVariant === '3') {
-      photos.firstChild.remove();
-      const label = el('span', 'Все фото · ' + (data.gallery?.length || 1), 'lot-gallery-label');
-      const compact = el('span', (data.gallery?.length || 1) + ' фото', 'lot-gallery-label--compact');
-      compact.setAttribute('aria-hidden', 'true');
-      photos.prepend(label, compact);
+      const items = heroPhotos(data);
+      if (items.length > 1) {
+        actions.classList.add('lot-hero__slider');
+        actions.setAttribute('role', 'group');
+        actions.setAttribute('aria-label', 'Фотографии объекта');
+        const previous = el('button', null, 'icon-button'); previous.type = 'button';
+        previous.dataset.heroStep = '-1'; previous.setAttribute('aria-label', 'Предыдущее фото в херо'); previous.append(icon('left'));
+        const counter = el('span', '1 / ' + items.length, 'lot-hero__counter');
+        counter.setAttribute('aria-live', 'polite'); counter.setAttribute('aria-atomic', 'true');
+        const next = el('button', null, 'icon-button'); next.type = 'button';
+        next.dataset.heroStep = '1'; next.setAttribute('aria-label', 'Следующее фото в херо'); next.append(icon('right'));
+        actions.append(previous, counter, next); copy.append(actions);
+      }
+    } else {
+      const photos = action('Все фото · ' + (data.gallery?.length || 1), 'gallery', 'button', 'photos');
+      photos.setAttribute('aria-label', 'Открыть галерею фотографий');
+      actions.append(photos, link('Планировка', '#lot-plan', 'button button--outline'));
+      copy.append(actions);
     }
-    photos.setAttribute('aria-label', 'Открыть галерею фотографий');
-    actions.append(photos, link('Планировка', '#lot-plan', 'button button--outline'));
-    copy.append(actions); visual.append(copy);
+    visual.append(copy);
     const offer = el('aside', null, 'lot-offer'); offer.setAttribute('aria-label', 'Стоимость и контакт по лоту');
     offer.append(el('p', 'Лот ' + data.id + (data.statusLabel ? ' · ' + data.statusLabel : ''), 'lot-offer__meta'));
     const p = el('div'); p.append(el('p', price(data), 'lot-price'));
@@ -283,7 +301,36 @@
     $('#gallery-context').textContent = 'Лот ' + lot.id + ' · ' + lot.title;
     showPhoto(); galleryDialog.showModal(); $('.dialog-close', galleryDialog).focus({preventScroll: true});
   }
+  function advanceHero(offset) {
+    const items = heroPhotos(lot);
+    if (items.length < 2) return;
+    heroIndex = (heroIndex + offset + items.length) % items.length;
+    const selected = items[heroIndex], cover = $('.lot-hero__image');
+    cover.src = safeUrl(selected.src); cover.alt = selected.alt || '';
+    $('.lot-hero__counter').textContent = (heroIndex + 1) + ' / ' + items.length;
+  }
+  document.addEventListener('keydown', event => {
+    if (!event.target.closest('.lot-hero__slider')) return;
+    if (event.key === 'ArrowLeft' || event.key === 'ArrowRight') {
+      event.preventDefault(); advanceHero(event.key === 'ArrowRight' ? 1 : -1);
+    }
+  });
+  let heroTouch = null;
+  document.addEventListener('pointerdown', event => {
+    if (document.body.dataset.heroVariant !== '3' || event.pointerType !== 'touch' ||
+        !event.target.closest('.lot-hero') || event.target.closest('a,button,input')) return;
+    heroTouch = {id:event.pointerId,x:event.clientX,y:event.clientY};
+  }, {passive:true});
+  document.addEventListener('pointerup', event => {
+    if (!heroTouch || heroTouch.id !== event.pointerId) return;
+    const dx = event.clientX - heroTouch.x, dy = event.clientY - heroTouch.y;
+    heroTouch = null;
+    if (Math.abs(dx) > 60 && Math.abs(dx) > Math.abs(dy) * 1.2) advanceHero(dx < 0 ? 1 : -1);
+  }, {passive:true});
+  document.addEventListener('pointercancel', () => {heroTouch = null;}, {passive:true});
   document.addEventListener('click', event => {
+    const heroStep = event.target.closest('[data-hero-step]');
+    if (heroStep) {advanceHero(Number(heroStep.dataset.heroStep));return;}
     const thumbnail = event.target.closest('[data-hero-image]');
     if (thumbnail) {
       const selected = (lot.gallery?.length ? lot.gallery : [lot.cover])[Number(thumbnail.dataset.heroImage)];
