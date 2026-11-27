@@ -249,13 +249,16 @@
         layout.append(content,cover); s.box.append(layout); main.append(s.node);
       }
     }
-    {
+    const descriptionText = data.descriptionText ?? data.descriptionParagraphs?.join('\n\n') ?? data.description;
+    if (typeof descriptionText === 'string' && descriptionText.trim()) {
       const s=section('lot-about','ВАШ БУДУЩИЙ ДОМ','О квартире'); const description=el('div',null,'project-description');
-      const text=el('div',null,'project-description__text');
-      (data.descriptionParagraphs || [data.description]).filter(Boolean).forEach(p=>text.append(el('p',p)));
-      if(data.features?.length){const list=el('ul',null,'plain-list');data.features.forEach(f=>{const row=el('li');const svg=characteristicIcon(f.icon);if(svg){row.classList.add('has-characteristic-icon');row.append(svg);}row.append(el('span',f.label+(f.text?' — '+f.text:'')));list.append(row);});text.append(list);}
+      const body=el('div',null,'project-description__body'),text=el('div',null,'project-description__text');text.id='lot-description-text';
+      descriptionText.split(/\n\s*\n/).filter(p=>p.trim()).forEach(p=>text.append(el('p',p)));
+      const toggle=el('button','Читать далее','text-link project-description__toggle');toggle.type='button';toggle.hidden=true;
+      toggle.setAttribute('aria-expanded','false');toggle.setAttribute('aria-controls',text.id);
+      body.append(text,toggle);
       const figure=el('figure',null,'project-description__image');figure.append(image(data.sectionImages?.about || photoFor(2)));
-      description.append(text,figure);s.box.append(description);main.append(s.node);
+      description.append(body,figure);s.box.append(description);main.append(s.node);
     }
     if(data.building?.verified===true && data.building.name){
       const b=data.building,s=section('lot-building','АДРЕС И ХАРАКТЕР','О доме');
@@ -264,7 +267,7 @@
       if(b.description)text.append(el('p',b.description));if(b.url)text.append(link('Подробнее о доме / ЖК',b.url));description.append(text);
       if(b.image?.src){const figure=el('figure',null,'project-description__image');figure.append(image(b.image));description.append(figure);}
       s.box.append(description);
-      if(b.facts?.length){const passport=el('div',null,'passport passport--text-only');passport.append(factsList(b.facts,'passport-facts'));s.box.append(passport);}
+      if(b.facts?.length){const passport=el('div',null,'passport passport--text-only');passport.append(factsList(b.facts,'passport-facts'));if(b.image?.src)text.append(passport);else s.box.append(passport);}
       main.append(s.node);
     }
     if(data.locationLabel || data.location){
@@ -361,7 +364,7 @@
     const brand = el('div', null, 'owner-sale-sticky__brand');
     brand.append(action('Связаться с нами', 'tour', 'owner-sale-sticky__request'));
     inner.append(stickyNav, logo, brand); sticky.append(inner); main.before(sticky);
-    if (!window.__LOT_RENDER_ONLY__) requestAnimationFrame(syncSticky);
+    if (!window.__LOT_RENDER_ONLY__) {requestAnimationFrame(syncSticky);window.initBarnesLotDescription?.();}
   }
   window.renderBarnesLot = render;
   render(window.BARNES_LOT_DATA);

@@ -1,7 +1,7 @@
 {
   "date": "2026-11-27",
   "sourceRepository": "daniilterekh-prog/barnes-sites",
-  "sourceCommit": "fd2f1a976ee28f01e807238bf367ada3643816dc",
+  "sourceCommit": "96154c273179b768b7a3584d80f44cc09fda8d45",
   "sourcePath": "main-site/pages/lot",
   "uiKit": "BARN Estate 1.0.6",
   "scope": "Only stranitsa-lota",
@@ -31,5 +31,7 @@
   "characteristicsPricePerSquareMeter": "601669: price per m² immediately right of windows, derived from priceRub / total area;same kit cell and licensed ruble SVG;checked320/390/768/1440 and price recalculation",
   "floorPlanLayout": "Large complete source sheet left and room areas right (1.8:1); image first below1025px; kit outline button opens original plan with existing zoom/Escape/focus return. 9 layout widths and10 flow widths checked; no-file request preserved.",
   "purchaseConditions": "Removed by user request; no section or anchor. Consultation follows location; prices remain in hero and characteristics. Both examples checked390/1440.",
-  "relatedSpb": "601669:3 real public Saint Petersburg apartments in the exact project-page card CSS; area/floor facts, favorites, per-lot callback IDs, valid detail links. Static examples, not automatic or exact-budget matching.8 widths checked and3 photos exported."
+  "relatedSpb": "601669:3 real public Saint Petersburg apartments in the exact project-page card CSS; area/floor facts, favorites, per-lot callback IDs, valid detail links. Static examples, not automatic or exact-budget matching.8 widths checked and3 photos exported.",
+  "fullDescription": "Full user-supplied General Description in about block, plain text with paragraph/line breaks; no manually assembled benefit list. Project-page read-more keeps collapsed body+control within adjacent photo height; mobile8-line budget.8 widths, keyboard, short/empty/rerender and controller-unavailable fallbacks checked.",
+  "intrumContract": "Logic and73-field map in private source. No actual API/field IDs or automated publishing. Building uses structured facts, location uses structured address/metro/coordinates; no generated prose."
 }

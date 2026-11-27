@@ -131,7 +131,7 @@
       "sourceCommit": "6f2ce65ec5ac1383660562cd6bff0313eadf8a35",
       "sourceSha256": "eb2e94aa0238b6d46d2bb7250ab179ed8099ce0a48ded3dd8a20f4a23789136c",
       "target": "lot-page.js",
-      "sha256": "9ddd2351dc0128f46dec9587c8fceb3b7fa36f67eb0b7258231b836cb93320f6",
+      "sha256": "4f41cf7388bd83f00889072340c4b9c43ca10a08015740efb2af50b8affce6c5",
       "adaptation": "Copy hero-bottom-minus-120 reveal threshold and hidden/inert states. Reuse local media-header adapter with lot anchors, request context and focus return."
     },
     {
@@ -177,7 +177,7 @@
       "sourceCommit": "ccbbd989a6909f1b1508656a83077583be48e282",
       "sourceSha256": "c9cda536ed126ed3cb6454cfedeae71d2bfbb77c1e25473d2d8ce95ebd5ddd8f",
       "target": "kit/vendor/zhk/description.css",
-      "sha256": "81ffa37e29cd94b9f5ad6bb254202f0caa981f6845802e66c7c10ff024ee9d9c",
+      "sha256": "031358ddf408c9986e7c9d92ba0e981cf5cf8d10fc69e567a334b63035450ce2",
       "adaptation": "Reuse existing component; rename source section IDs to lot IDs where required"
     },
     {
@@ -311,5 +311,12 @@
     "manifest": "kit/lucide-source.json",
     "license": "kit/vendor/lucide/LICENSE",
     "adaptation": "Thin stroke 1.5 and #656462; same passport and list components; decorative SVG."
+  },
+  "lotDescriptionController": {
+    "source": "main-site/pages/residential-complex/structure/preview/js/description.js",
+    "target": "kit/vendor/lot-description.js",
+    "sourceSha256": "5311d96055f1362ff755f1a797124befe2e9018f7789d795f23ea40d0a5a4838",
+    "sha256": "9d5d6816bb38077cfdc4e95b1c7f14ce4e4949016e3cedc0d0665751dfe2f651",
+    "adaptation": "#architecture → #lot-about; disposable initialization for rerendered lot data. Same photo-height measurement and kit control."
   }
 }

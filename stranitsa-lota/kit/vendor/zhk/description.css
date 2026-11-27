@@ -16,3 +16,6 @@
   mask-image:linear-gradient(#000 calc(100% - 1.5em),transparent);
 }
 :is(#lot-about,#lot-building) .project-description__toggle{margin-top:16px;scroll-margin-block:110px 90px}
+
+/* Whole CRM text: preserve authored line breaks, without an extra feature list. */
+#lot-about .project-description__text p{white-space:pre-line}
