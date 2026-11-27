@@ -358,3 +358,13 @@ body[data-hero-variant="3"] .lot-offer:has(.lot-hero__price-only) .lot-offer__ac
 @media(min-width:1441px){body[data-hero-variant="3"] .lot-hero__slider>.lot-hero__slider-price,body[data-hero-variant="3"] .lot-hero__price-only{font-size:42px}}
 @media(max-width:1024px){body[data-hero-variant="3"] .lot-hero__slider>.lot-hero__slider-price,body[data-hero-variant="3"] .lot-hero__price-only{font-size:30px}}
 @media(max-width:540px){body[data-hero-variant="3"] .lot-offer:has(.lot-hero__slider){padding-top:32px}body[data-hero-variant="3"] .lot-hero__slider>.lot-hero__slider-price,body[data-hero-variant="3"] .lot-hero__price-only{font-size:22px}body[data-hero-variant="3"] .lot-hero__slider>.lot-hero__slider-price{bottom:calc(100% + 12px)}}
+
+/* The same price node moves above the facts on phones; the reserved32px keeps H1 fixed. */
+body[data-hero-variant="3"] .lot-hero__mobile-price-slot{display:none;position:relative;z-index:2}
+@media(max-width:540px){
+ body[data-hero-variant="3"] .lot-hero__mobile-price-slot{display:block;order:2;width:calc(100% - var(--hero-inset)*2);height:32px;flex:none;margin:0 var(--hero-inset);color:#fff}
+ body[data-hero-variant="3"] .lot-hero__mobile-price-slot>.lot-price{position:static;margin:0;font-size:22px;font-weight:300;line-height:1.15;letter-spacing:0;text-align:left;white-space:nowrap;color:#fff}
+ body[data-hero-variant="3"] .lot-hero__facts{order:3}
+ body[data-hero-variant="3"] .lot-offer{order:4}
+ body[data-hero-variant="3"] .lot-offer:has(.lot-hero__slider){padding-top:0}
+}

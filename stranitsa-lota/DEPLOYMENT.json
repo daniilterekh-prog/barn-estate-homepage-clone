@@ -1,7 +1,7 @@
 {
   "date": "2026-11-27",
   "sourceRepository": "daniilterekh-prog/barnes-sites",
-  "sourceCommit": "d95f123519b1333400cb432fdbcdbe6eb4a7314b",
+  "sourceCommit": "345794785dba1f68ae6c47b77bea92276c064174",
   "sourcePath": "main-site/pages/lot",
   "uiKit": "BARN Estate 1.0.6",
   "scope": "Only stranitsa-lota",
@@ -36,5 +36,6 @@
   "intrumContract": "Logic and73-field map in private source. No actual API/field IDs or automated publishing. Building uses structured facts, location uses structured address/metro/coordinates; no generated prose.",
   "heroPriceAboveArrows": "One large hero price above right arrow controls,22/30/36/42px; location remains above title. Count visually hidden, live announcement retained. CTA/arrow center and hero heights preserved;11 widths tested.",
   "handoff": "handoff/lot: full html/index.html,12 fragments,css/js/assets/data,INTEGRATION/DATA/DESIGN,source provenance,verification,checksums,one ZIP;isolated9 widths/18 source comparisons/25 photos and actions passed",
-  "heroH1Position": "Restored title64px lower on desktop/tablet and12px lower on mobile. Price, arrow/CTA coordinates and hero height unchanged;11 width regression and refreshed handoff9 widths/18 comparisons passed."
+  "heroH1Position": "Restored title64px lower on desktop/tablet and12px lower on mobile. Price, arrow/CTA coordinates and hero height unchanged;11 width regression and refreshed handoff9 widths/18 comparisons passed.",
+  "heroMobilePrice": "Up to540px: same price DOM node moves left above hero facts; reserved32px moved from CTA padding, preserving H1 and controls. Above540px: price stays above arrows.11 widths and live resize checked; handoff rebuilt/verified9 widths."
 }

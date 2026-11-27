@@ -11,7 +11,7 @@
 | Поле публичной модели | Назначение |
 |---|---|
 | id/title/cover.src | Обязательны рендереру; ID — контекст действий |
-| priceRub/displayPrice/locationLabel | Херо; цена один раз над стрелками, география над заголовком |
+| priceRub/displayPrice/locationLabel | Херо; цена один раз: на desktop над стрелками, на телефоне над характеристиками; география над заголовком |
 | facts[{label,value,icon?}] | Характеристики; heroFacts задаёт краткую нижнюю строку |
 | showPricePerSquareMeterInCharacteristics | Цена за м² = priceRub / площадь, справа от окон |
 | descriptionText | Всё «Общее описание» целиком; plain text с абзацами/переносами |

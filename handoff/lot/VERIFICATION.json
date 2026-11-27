@@ -1,6 +1,6 @@
 {
   "date": "2026-11-27",
-  "base": "http://127.0.0.1:43379/html/index.html",
+  "base": "http://127.0.0.1:46525/html/index.html",
   "isolatedHTTPRoot": true,
   "checkedReferences": 333,
   "mappedResourcesVerified": 86,
@@ -27,14 +27,25 @@
         "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
       },
       "price": {
-        "x": 162.296875,
-        "y": 460,
-        "width": 135.703125,
+        "x": 22,
+        "y": 391.609375,
+        "width": 276,
         "height": 25.296875,
         "font": "22px",
         "color": "rgb(255, 255, 255)",
         "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
       },
+      "facts": {
+        "x": 22,
+        "y": 423.609375,
+        "width": 276,
+        "height": 55,
+        "font": "18px",
+        "color": "rgb(255, 255, 255)",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
+      },
+      "priceParent": "lot-hero__mobile-price-slot",
+      "priceOnTop": true,
       "arrow": {
         "x": 250,
         "y": 497.296875,
@@ -89,14 +100,25 @@
         "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
       },
       "price": {
-        "x": 232.296875,
-        "y": 461.703125,
-        "width": 135.703125,
+        "x": 22,
+        "y": 395,
+        "width": 346,
         "height": 25.296875,
         "font": "22px",
         "color": "rgb(255, 255, 255)",
         "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
       },
+      "facts": {
+        "x": 22,
+        "y": 427,
+        "width": 346,
+        "height": 55,
+        "font": "18px",
+        "color": "rgb(255, 255, 255)",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
+      },
+      "priceParent": "lot-hero__mobile-price-slot",
+      "priceOnTop": true,
       "arrow": {
         "x": 320,
         "y": 499,
@@ -151,14 +173,25 @@
         "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
       },
       "price": {
-        "x": 382.296875,
-        "y": 461.703125,
-        "width": 135.703125,
+        "x": 22,
+        "y": 395,
+        "width": 496,
         "height": 25.296875,
         "font": "22px",
         "color": "rgb(255, 255, 255)",
         "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
       },
+      "facts": {
+        "x": 22,
+        "y": 427,
+        "width": 496,
+        "height": 55,
+        "font": "18px",
+        "color": "rgb(255, 255, 255)",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
+      },
+      "priceParent": "lot-hero__mobile-price-slot",
+      "priceOnTop": true,
       "arrow": {
         "x": 470,
         "y": 499,
@@ -221,6 +254,17 @@
         "color": "rgb(255, 255, 255)",
         "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
       },
+      "facts": {
+        "x": 24,
+        "y": 665.515625,
+        "width": 720,
+        "height": 60.484375,
+        "font": "18px",
+        "color": "rgb(255, 255, 255)",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
+      },
+      "priceParent": "lot-hero__actions lot-hero__slider",
+      "priceOnTop": true,
       "arrow": {
         "x": 688,
         "y": 745,
@@ -283,6 +327,17 @@
         "color": "rgb(255, 255, 255)",
         "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
       },
+      "facts": {
+        "x": 40.875,
+        "y": 743.515625,
+        "width": 942.21875,
+        "height": 64.484375,
+        "font": "18px",
+        "color": "rgb(255, 255, 255)",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
+      },
+      "priceParent": "lot-hero__actions lot-hero__slider",
+      "priceOnTop": true,
       "arrow": {
         "x": 927.09375,
         "y": 656.515625,
@@ -345,6 +400,17 @@
         "color": "rgb(255, 255, 255)",
         "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
       },
+      "facts": {
+        "x": 68.328125,
+        "y": 538.3125,
+        "width": 1303.328125,
+        "height": 69.6875,
+        "font": "18px",
+        "color": "rgb(255, 255, 255)",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
+      },
+      "priceParent": "lot-hero__actions lot-hero__slider",
+      "priceOnTop": true,
       "arrow": {
         "x": 1315.65625,
         "y": 451.3125,
@@ -407,6 +473,17 @@
         "color": "rgb(255, 255, 255)",
         "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
       },
+      "facts": {
+        "x": 99.984375,
+        "y": 874.3125,
+        "width": 1720,
+        "height": 69.6875,
+        "font": "18px",
+        "color": "rgb(255, 255, 255)",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
+      },
+      "priceParent": "lot-hero__actions lot-hero__slider",
+      "priceOnTop": true,
       "arrow": {
         "x": 1751.984375,
         "y": 781.3125,
@@ -469,6 +546,17 @@
         "color": "rgb(255, 255, 255)",
         "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
       },
+      "facts": {
+        "x": 320,
+        "y": 856.84375,
+        "width": 1920,
+        "height": 87.15625,
+        "font": "18px",
+        "color": "rgb(255, 255, 255)",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
+      },
+      "priceParent": "lot-hero__actions lot-hero__slider",
+      "priceOnTop": true,
       "arrow": {
         "x": 2172,
         "y": 763.84375,
@@ -531,6 +619,17 @@
         "color": "rgb(255, 255, 255)",
         "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
       },
+      "facts": {
+        "x": 960,
+        "y": 842.203125,
+        "width": 1920,
+        "height": 101.796875,
+        "font": "18px",
+        "color": "rgb(255, 255, 255)",
+        "family": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
+      },
+      "priceParent": "lot-hero__actions lot-hero__slider",
+      "priceOnTop": true,
       "arrow": {
         "x": 2812,
         "y": 749.203125,

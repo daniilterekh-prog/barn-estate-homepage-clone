@@ -119,10 +119,18 @@
       seen.add(src); return true;
     });
   }
-  let lot, heroIndex = 0;
+  const mobileHeroPrice = window.matchMedia?.('(max-width:540px)');
+  let lot, heroIndex = 0, heroPriceLayout = null;
+  function syncHeroPricePosition() {
+    if (!heroPriceLayout) return;
+    const {price, slot, home, slider} = heroPriceLayout;
+    if (mobileHeroPrice?.matches) slot.append(price);
+    else if (slider) home.prepend(price);
+    else home.append(price);
+  }
   function render(data) {
     if (!data?.id || !data.title || !data.cover?.src) throw new Error('Для лота нужны id, title и cover.src');
-    lot = data; heroIndex = 0; window.BARNES_LOT_DATA = data;
+    lot = data; heroIndex = 0; heroPriceLayout = null; window.BARNES_LOT_DATA = data;
     main.replaceChildren();
     document.title = (data.pageTitle || data.title) + ' — BARN Estate';
     $('meta[name=description]').content = data.description || data.title;
@@ -190,6 +198,10 @@
         hero.dataset.hasHeroFacts = 'true';
         hero.append(metrics);
       } else metrics?.remove();
+      const mobileSlot = el('div', null, 'lot-hero__mobile-price-slot');
+      hero.insertBefore(mobileSlot, $('.lot-hero__facts', hero) || offer);
+      heroPriceLayout = {price:heroPrice,slot:mobileSlot,home:actions.classList.contains('lot-hero__slider')?actions:offer,slider:actions.classList.contains('lot-hero__slider')};
+      syncHeroPricePosition();
     }
     main.append(hero);
     if (document.body.dataset.heroVariant === '5') {
@@ -372,6 +384,7 @@
   window.renderBarnesLot = render;
   render(window.BARNES_LOT_DATA);
   if (window.__LOT_RENDER_ONLY__) return;
+  mobileHeroPrice?.addEventListener('change', syncHeroPricePosition);
 
   const requestDialog = $('#request-dialog'), galleryDialog = $('#gallery-dialog');
   let requestKind = 'tour', requestTarget = null, requestTrigger = null, galleryTrigger = null, galleryItems = [], galleryIndex = 0;
