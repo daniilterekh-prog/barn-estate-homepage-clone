@@ -34,3 +34,5 @@ python3 -m http.server 8080
 [Исходники](https://github.com/daniilterekh-prog/barnes-sites/tree/main/main-site/pages/residential-complex/structure) · [Превью](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/zhk-structure/) · [Открыть пакет](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/handoff/zhk-structure/html/index.html).
 
 Пересборка в каноническом репозитории: `python3 main-site/pages/residential-complex/structure/tools/build-handoff.py`; после проверок — та же команда с `--package`. Затем скопировать готовую папку в `barn-estate-homepage-clone/handoff/zhk-structure/`, проверить, commit + push. Не редактировать защищённые узлы и не смешивать их общие зависимости с локальными файлами этого пакета.
+
+Мобильная редакция27.11.2026: нет нижней фиксированной панели; в hero одна кнопка «Консультация эксперта». Условия покупки/документы — карусели до767px. Подключать `mobile-cards.css` и `mobile-cards.js` в порядке полной страницы, после существующего Splide4.1.4/MIT; новые зависимости не нужны.

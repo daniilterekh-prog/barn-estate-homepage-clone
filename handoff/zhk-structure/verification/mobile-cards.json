@@ -1,0 +1,321 @@
+{
+  "errors": [],
+  "widths": [
+    {
+      "width": 320,
+      "overflow": false,
+      "sections": 14,
+      "heroButtons": [
+        "Консультация эксперта"
+      ],
+      "sticky": false,
+      "cards": [
+        {
+          "id": "purchase",
+          "layout": "flex",
+          "grid": "1fr",
+          "nav": "flex",
+          "links": []
+        },
+        {
+          "id": "documents",
+          "layout": "flex",
+          "grid": "1fr",
+          "nav": "flex",
+          "links": [
+            {
+              "hidden": false,
+              "tab": null
+            },
+            {
+              "hidden": true,
+              "tab": "-1"
+            },
+            {
+              "hidden": true,
+              "tab": "-1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "overflow": false,
+      "sections": 14,
+      "heroButtons": [
+        "Консультация эксперта"
+      ],
+      "sticky": false,
+      "cards": [
+        {
+          "id": "purchase",
+          "layout": "flex",
+          "grid": "1fr",
+          "nav": "flex",
+          "links": []
+        },
+        {
+          "id": "documents",
+          "layout": "flex",
+          "grid": "1fr",
+          "nav": "flex",
+          "links": [
+            {
+              "hidden": false,
+              "tab": null
+            },
+            {
+              "hidden": true,
+              "tab": "-1"
+            },
+            {
+              "hidden": true,
+              "tab": "-1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "width": 540,
+      "overflow": false,
+      "sections": 14,
+      "heroButtons": [
+        "Консультация эксперта"
+      ],
+      "sticky": false,
+      "cards": [
+        {
+          "id": "purchase",
+          "layout": "flex",
+          "grid": "1fr",
+          "nav": "flex",
+          "links": []
+        },
+        {
+          "id": "documents",
+          "layout": "flex",
+          "grid": "1fr",
+          "nav": "flex",
+          "links": [
+            {
+              "hidden": false,
+              "tab": null
+            },
+            {
+              "hidden": true,
+              "tab": "-1"
+            },
+            {
+              "hidden": true,
+              "tab": "-1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "width": 767,
+      "overflow": false,
+      "sections": 14,
+      "heroButtons": [
+        "Консультация эксперта"
+      ],
+      "sticky": false,
+      "cards": [
+        {
+          "id": "purchase",
+          "layout": "flex",
+          "grid": "1fr",
+          "nav": "flex",
+          "links": []
+        },
+        {
+          "id": "documents",
+          "layout": "flex",
+          "grid": "1fr",
+          "nav": "flex",
+          "links": [
+            {
+              "hidden": false,
+              "tab": null
+            },
+            {
+              "hidden": true,
+              "tab": "-1"
+            },
+            {
+              "hidden": true,
+              "tab": "-1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "overflow": false,
+      "sections": 14,
+      "heroButtons": [
+        "Открыть лоты",
+        "Консультация эксперта"
+      ],
+      "sticky": false,
+      "cards": [
+        {
+          "id": "purchase",
+          "layout": "grid",
+          "grid": "235px 235px 235px",
+          "nav": "none",
+          "links": []
+        },
+        {
+          "id": "documents",
+          "layout": "grid",
+          "grid": "235px 235px 235px",
+          "nav": "none",
+          "links": [
+            {
+              "hidden": false,
+              "tab": null
+            },
+            {
+              "hidden": false,
+              "tab": null
+            },
+            {
+              "hidden": false,
+              "tab": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "overflow": false,
+      "sections": 14,
+      "heroButtons": [
+        "Открыть лоты",
+        "Консультация эксперта"
+      ],
+      "sticky": false,
+      "cards": [
+        {
+          "id": "purchase",
+          "layout": "grid",
+          "grid": "429.438px 429.453px 429.438px",
+          "nav": "none",
+          "links": []
+        },
+        {
+          "id": "documents",
+          "layout": "grid",
+          "grid": "429.438px 429.453px 429.438px",
+          "nav": "none",
+          "links": [
+            {
+              "hidden": false,
+              "tab": null
+            },
+            {
+              "hidden": false,
+              "tab": null
+            },
+            {
+              "hidden": false,
+              "tab": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "width": 2560,
+      "overflow": false,
+      "sections": 14,
+      "heroButtons": [
+        "Открыть лоты",
+        "Консультация эксперта"
+      ],
+      "sticky": false,
+      "cards": [
+        {
+          "id": "purchase",
+          "layout": "grid",
+          "grid": "640px 640px 640px",
+          "nav": "none",
+          "links": []
+        },
+        {
+          "id": "documents",
+          "layout": "grid",
+          "grid": "640px 640px 640px",
+          "nav": "none",
+          "links": [
+            {
+              "hidden": false,
+              "tab": null
+            },
+            {
+              "hidden": false,
+              "tab": null
+            },
+            {
+              "hidden": false,
+              "tab": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "width": 3840,
+      "overflow": false,
+      "sections": 14,
+      "heroButtons": [
+        "Открыть лоты",
+        "Консультация эксперта"
+      ],
+      "sticky": false,
+      "cards": [
+        {
+          "id": "purchase",
+          "layout": "grid",
+          "grid": "640px 640px 640px",
+          "nav": "none",
+          "links": []
+        },
+        {
+          "id": "documents",
+          "layout": "grid",
+          "grid": "640px 640px 640px",
+          "nav": "none",
+          "links": [
+            {
+              "hidden": false,
+              "tab": null
+            },
+            {
+              "hidden": false,
+              "tab": null
+            },
+            {
+              "hidden": false,
+              "tab": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "purchase": {
+    "index": 2,
+    "endDisabled": true
+  },
+  "documents": {
+    "index": 2,
+    "endDisabled": true
+  }
+}

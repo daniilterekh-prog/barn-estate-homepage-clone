@@ -1,19 +1,18 @@
 {
-  "checked_on": "2026-11-25",
+  "checked_on": "2026-11-27",
   "status": "passed",
   "static": "verification/static.json",
   "browser": "verification/browser.json",
   "visual": "verification/visual.json",
   "summary": {
-    "static_checks": 125,
+    "static_checks": 129,
     "viewport_widths": [
       320,
       390,
-      541,
+      540,
+      767,
       768,
-      1024,
       1440,
-      1920,
       2560,
       3840
     ],
@@ -23,9 +22,10 @@
     "javascript_errors": [],
     "pixel_identical_views": "hero/passport at 390 and 1440 px, animations disabled in audit only",
     "interaction_checks": [
-      "room row consultation topic / Enter",
-      "plan image dialog/Escape",
-      "individual selection dialog",
+      "mobile hero consultation dialog",
+      "purchase and document arrows, Enter and drag",
+      "offscreen document links excluded from tab order",
+      "desktop destroy and mobile remount on resize",
       "unchanged gallery/FAQ/forms previously verified"
     ],
     "local_form_posts": 0,
@@ -33,7 +33,7 @@
   },
   "extracted_zip": "verification/extracted-zip.json",
   "floorplans": "verification/floorplans.json",
-  "notes": "Room filter tabs removed in the current reference layout; prior hero/passport snapshots and unchanged component checks remain valid.",
-  "current_package": "verification/no-calculator.json",
+  "notes": "Mobile actions revised 27 Nov. Earlier visual/ZIP reports describe their recorded revisions; current changed-view check is mobile-cards.json.",
+  "current_package": "verification/mobile-cards.json",
   "calculator": "excluded by user"
 }

@@ -1,8 +1,8 @@
 {
-  "checks": 125,
+  "checks": 129,
   "passed": true,
   "failures": [],
-  "local_references": 71,
+  "local_references": 73,
   "sections": [
     "project",
     "passport",
@@ -19,7 +19,7 @@
     "newsletter",
     "expert"
   ],
-  "files": 112,
+  "files": 116,
   "details": [
     {
       "check": "reference html/index.html -> ../assets/logo.svg",
@@ -151,6 +151,14 @@
     },
     {
       "check": "reference html/index.html -> ../css/floorplans.css?v=reference-table-20261125",
+      "passed": true
+    },
+    {
+      "check": "reference html/index.html -> ../css/mobile-cards.css?v=20261127",
+      "passed": true
+    },
+    {
+      "check": "reference html/index.html -> ../js/mobile-cards.js?v=20261127",
       "passed": true
     },
     {
@@ -310,6 +318,10 @@
       "passed": true
     },
     {
+      "check": "unchanged css/mobile-cards.css",
+      "passed": true
+    },
+    {
       "check": "unchanged css/floorplans.css",
       "passed": true
     },
@@ -383,6 +395,10 @@
     },
     {
       "check": "unchanged css/footer.css",
+      "passed": true
+    },
+    {
+      "check": "unchanged js/mobile-cards.js",
       "passed": true
     },
     {
