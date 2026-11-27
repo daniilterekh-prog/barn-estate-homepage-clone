@@ -6,13 +6,13 @@
   "base_public_commit": "e7de0eb6b5801fa24f05baec98096505f6631275",
   "assets": {
     "assets/editorial/": "barnes-assets/owner-country/editorial/, 12 новых сцен; PROMPTS.json содержит промпты и SHA-256",
-    "assets/consultation-background.png": "barnes-sites/main-site/pages/country/assets/consultation-background.png",
     "assets/expert-dolgov.webp": "barnes-sites/main-site/pages/country/assets/expert-dolgov.webp",
     "assets/cta-consultation-interior.webp": "barnes-sites/main-site/pages/country/assets/cta-consultation-interior.webp",
     "assets/logo-canonical.svg": "barnes-assets/brand/barn-estate/logo.svg",
     "assets/service-city.webp": "barnes-sites/main-site/pages/owner-hub/assets/editorial/service-city.webp",
     "assets/service-commercial.webp": "barnes-sites/main-site/pages/owner-hub/assets/editorial/service-commercial.webp",
-    "assets/service-rent.webp": "barnes-sites/main-site/pages/owner-hub/assets/editorial/service-rent.webp"
+    "assets/service-rent.webp": "barnes-sites/main-site/pages/owner-hub/assets/editorial/service-rent.webp",
+    "assets/consultation-background.webp": "barnes-sites/main-site/pages/country/assets/consultation-background.png"
   },
   "notes": [
     "12 загородных сцен сгенерированы специально для этой страницы, это иллюстрации, не конкретные лоты.",
@@ -28,13 +28,13 @@
   "editorial_library": "https://github.com/daniilterekh-prog/barnes-assets/tree/main/owner-country/editorial",
   "editorial_assets_commit": "72eb2e6ea4322a307e502ecee9d6db371c643f41",
   "sha256": {
-    "assets/consultation-background.png": "9db783ddb2be13d5912a1b531848bbc10fb776b83f77b77ab8672db0688d6fdb",
     "assets/expert-dolgov.webp": "16e88c19cf1e42ce763c5c8650676be8f0fa8896c0dc738d9f6258a50db16954",
     "assets/cta-consultation-interior.webp": "709121d4e9a3cf0688a44fffccbfcb4703a725726487a4b56e45623ebc958ce8",
     "assets/logo-canonical.svg": "9b2d8c1a7d4d213587828c6bdf6592a37113a388fedc1b58211534d8cb1e7123",
     "assets/service-city.webp": "ed9dcf05b37513db963ea49b59588a6b5f0a4127913df385c8403c584338ece1",
     "assets/service-commercial.webp": "8d302ab9570ab38d0f4e04163381730eebcb49a1d7eb6cc3e20b69ac9c279fe2",
-    "assets/service-rent.webp": "6618f0f5d98c4b09bb5bba13cebbcf1ad7cbb363ec36e3727456f75871f7d5a5"
+    "assets/service-rent.webp": "6618f0f5d98c4b09bb5bba13cebbcf1ad7cbb363ec36e3727456f75871f7d5a5",
+    "assets/consultation-background.webp": "f54dd4263a8e8bc9fbd24c63b885ee4651495816da3399fa26ea5904e431816d"
   },
   "reference_sections_2026_11_27": {
     "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/prodazha_sobstvennikam/",
@@ -47,5 +47,15 @@
       "_site/exact-2026-10-21/blocks/14-newsletter/assets/8a78978e0423f444f2adbe1f.webp": "a59b66d0d7fdeda1b0b0726fc2b9f0f23450da792c5cff66bba1482a09d8774f"
     },
     "layout": "Four reference direction images in the unmodified shared reference grid; original newsletter magazine image. Existing city, commercial, rental owner links preserved; added SPb owner sale."
+  },
+  "webp_conversion": {
+    "date": "2026-11-27",
+    "library": "https://github.com/daniilterekh-prog/barnes-assets/tree/main/owner-country/page-webp",
+    "count": 24,
+    "sourceBytes": 18268151,
+    "webpBytes": 2455022,
+    "dimensionsPreserved": true,
+    "svgRetained": true,
+    "manifest": "WEBP-MIGRATION.json"
   }
 }

@@ -19,7 +19,7 @@ function mount(root){
  function update(){
   media.classList.remove('cta-bleed-clear');image.classList.remove('cta-bleed-hide');overlay?.classList.remove('cta-bleed-hide');frame?.classList.remove('cta-bleed-clear');
   const m=getComputedStyle(media),im=getComputedStyle(image),ov=overlay&&getComputedStyle(overlay),rr=root.getBoundingClientRect(),mr=media.getBoundingClientRect();
-  const url=image.currentSrc||image.src,cutout=/cutout|\.png(?:[?#]|$)/i.test(url)&&!split;
+  const url=image.currentSrc||image.src,cutout=(image.hasAttribute('data-cta-foreground')||/cutout|\.png(?:[?#]|$)/i.test(url))&&!split;
   backdrop.style.backgroundColor=m.backgroundColor==='rgba(0, 0, 0, 0)'?(split?'transparent':'#101318'):m.backgroundColor;
   backdrop.style.backgroundImage=m.backgroundImage;
   photo.style.backgroundImage=im.display==='none'||cutout?'none':'url('+JSON.stringify(url)+')';
