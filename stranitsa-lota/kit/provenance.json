@@ -115,7 +115,7 @@
       "target": "hero-variants.css",
       "sourceCommit": "93ff4c2c32ceae0881967d3e4a7d119fc61d49dc",
       "sourceSha256": "002bf2d2c75f7ec115686583aaf4c007c82f0a93884dcef8ef52570cf22ae81d",
-      "sha256": "63cd48ac6eac03c2f74f5d7e9ec812c7341145351b11acce0d14bedc842e5d0d",
+      "sha256": "a6af0e2a6bb89826ed00c0fce3830e966e8ac8135ce124316a9ec9c2c6919072",
       "adaptation": "Variant 3 reuses Media/Owner hero title, CTA, overlay and spacing roles; compact white action row follows homepage filters; other optional variants remain local. Mobile <=768px: unboxed price and primary action below the resort facts; gallery is a 44px secondary control. 27.11.2026 requested override: transparent price at all sizes; smaller footer gaps; inline arrows/counter from local icon kit replace the gallery opener."
     },
     {
@@ -123,7 +123,7 @@
       "target": "hero-variants.css",
       "sourceCommit": "52a4dc52db81b2c2012dcf56aa9da194f4b1c8e3",
       "sourceSha256": "ba38428f8a64418a4ff201b51ae55cde37903292ee7d744ea87e0f63f17422de",
-      "sha256": "63cd48ac6eac03c2f74f5d7e9ec812c7341145351b11acce0d14bedc842e5d0d",
+      "sha256": "a6af0e2a6bb89826ed00c0fce3830e966e8ac8135ce124316a9ec9c2c6919072",
       "adaptation": "Keep Tilda Sans and existing BARN Estate H1/CTA roles. Use exact lot values. On narrow screens keep area, bedrooms and floor; finish remains in full apartment facts. Semantic dt precedes dd in DOM, visual values precede captions. Adopt resort footer geometry and value/caption hierarchy only. Mobile <=768px: unboxed price and primary action below the resort facts; gallery is a 44px secondary control. 27.11.2026 requested override: transparent price at all sizes; smaller footer gaps; inline arrows/counter from local icon kit replace the gallery opener."
     },
     {
@@ -131,7 +131,7 @@
       "sourceCommit": "6f2ce65ec5ac1383660562cd6bff0313eadf8a35",
       "sourceSha256": "eb2e94aa0238b6d46d2bb7250ab179ed8099ce0a48ded3dd8a20f4a23789136c",
       "target": "lot-page.js",
-      "sha256": "15bb6c16bd6ca8dc2ff892cb792a596ae8e7923362642304aa2f4ed01796237b",
+      "sha256": "e10d9563170b9ff75e473e919506d71b9845cad0bb7845d4f0f1dc310af86cb3",
       "adaptation": "Copy hero-bottom-minus-120 reveal threshold and hidden/inert states. Reuse local media-header adapter with lot anchors, request context and focus return."
     },
     {
@@ -287,5 +287,11 @@
     "selector": "body[data-hero-variant=\"3\"] .lot-hero__copy .eyebrow",
     "color": "#ffffff",
     "reason": "Keep the location light like hero title; section eyebrow styles were overriding inherited white."
+  },
+  "heroSliderAlignment": {
+    "date": "2026-11-27",
+    "layout": "Move existing slider controls into the offer row; vertical centers match the viewing CTA. Desktop price/CTA positions preserved.",
+    "mobile": "Same button height/font/padding and arrow sizes; counter above arrows. Hide decorative CTA diagonal only through540px so full label fits beside controls.",
+    "heroVariantsSha256": "a6af0e2a6bb89826ed00c0fce3830e966e8ac8135ce124316a9ec9c2c6919072"
   }
 }

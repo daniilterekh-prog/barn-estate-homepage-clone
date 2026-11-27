@@ -313,3 +313,28 @@ body[data-hero-variant="3"] .lot-hero__counter {min-width:46px;font-size:14px;li
   body[data-hero-variant="3"] .lot-hero__copy .eyebrow {font-size:12px;line-height:16px;margin-bottom:12px}
   body[data-hero-variant="3"] .lot-hero__copy {margin-bottom:20px}
 }
+
+/* Align the native slide controls with the viewing CTA, using the existing kit sizes. */
+body[data-hero-variant="3"] .lot-hero__copy{grid-template-columns:minmax(0,1fr)}
+body[data-hero-variant="3"] .lot-offer{
+  --hero-price-width:285px;--hero-action-width:428px;
+  width:calc(100% - max(var(--hero-inset),calc((100vw - 1920px)/2))*2);
+  grid-template-columns:var(--hero-price-width) var(--hero-action-width) minmax(0,1fr);column-gap:0;
+}
+body[data-hero-variant="3"] .lot-offer>.lot-hero__slider{
+  position:relative;inset:auto;grid-column:3;grid-row:1;align-self:center;justify-self:end;margin:0;
+}
+@media(min-width:1441px){body[data-hero-variant="3"] .lot-offer{--hero-price-width:300px}}
+@media(max-width:1200px){body[data-hero-variant="3"] .lot-offer{--hero-action-width:320px}}
+@media(max-width:1024px){
+  body[data-hero-variant="3"] .lot-offer{display:grid;grid-template-columns:minmax(0,1fr) auto;grid-template-areas:"price price" "cta slides";gap:16px 24px}
+  body[data-hero-variant="3"] .lot-offer>div:first-of-type{grid-area:price;padding:0}
+  body[data-hero-variant="3"] .lot-offer__actions{grid-area:cta;min-width:0}
+  body[data-hero-variant="3"] .lot-offer>.lot-hero__slider{grid-area:slides}
+  body[data-hero-variant="3"] .lot-offer:not(:has(.lot-hero__slider)){grid-template-columns:minmax(0,1fr);grid-template-areas:"price" "cta"}
+}
+@media(max-width:540px){
+  body[data-hero-variant="3"] .lot-offer{column-gap:16px}
+  body[data-hero-variant="3"] .lot-offer:has(.lot-hero__slider) .lot-offer__actions .button svg{display:none}
+  body[data-hero-variant="3"] .lot-hero__counter{position:absolute;bottom:calc(100% + 16px);left:50%;transform:translateX(-50%)}
+}

@@ -157,6 +157,7 @@
     hero.append(visual, offer);
     if (document.body.dataset.heroVariant === '3') {
       hero.insertBefore(copy, offer);
+      if (actions.classList.contains('lot-hero__slider')) offer.append(actions);
       const metrics = $('.lot-offer__facts', offer);
       if (metrics?.childElementCount) {
         metrics.classList.add('lot-hero__facts');

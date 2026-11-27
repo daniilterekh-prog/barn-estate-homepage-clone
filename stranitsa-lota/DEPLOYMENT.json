@@ -1,7 +1,7 @@
 {
   "date": "2026-11-27",
   "sourceRepository": "daniilterekh-prog/barnes-sites",
-  "sourceCommit": "210a91738e1b8ff15c18b004643c829894d98f1c",
+  "sourceCommit": "aca7b98617e0230c2b46178a0a03d9d7fdea2a10",
   "sourcePath": "main-site/pages/lot",
   "uiKit": "BARN Estate 1.0.6",
   "scope": "Only stranitsa-lota",
@@ -22,5 +22,6 @@
   "related": "Complete project-page cards adapted to three actual catalog lots with terraces;area/bedrooms instead of project class/developer;favorites and correct per-item request context;prices omitted",
   "newsletter": "Original homepage email subscription component and local images/tokens. Email validation and user-controlled prepared mailto; mailing service not connected.",
   "fixedAction": "Existing project/home floating expert replaces price panel at all widths;desktop24px/mobile16px;hide near forms/footer/in menu/dialog or after close",
-  "heroLocationColor": "#ffffff, same as title; checked390/768/1440/2560; section eyebrow colors unchanged"
+  "heroLocationColor": "#ffffff, same as title; checked390/768/1440/2560; section eyebrow colors unchanged",
+  "heroSliderAlignment": "Controls share the viewing CTA row and vertical center at11 widths320–3840. Mobile counter above arrows; kit circle/button sizes unchanged;full CTA label fits. Five slider widths,37 photos and single/empty fallbacks passed."
 }
