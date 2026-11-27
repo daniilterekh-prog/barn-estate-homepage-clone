@@ -263,5 +263,66 @@ window.BARNES_LOT_DATA = window.BARNES_LOT_DATA || {
       "alt": "Расположение в районе Патриарших прудов на карте Москвы"
     }
   },
-  "related": []
+  "related": [
+  {
+    "id": "595434",
+    "title": "Двухуровневый пентхаус с террасой",
+    "url": "https://barn-estate.ru/vtorichnaya-nedvizhimost/595434/",
+    "address": "Большая Полянка ул, 9стр1",
+    "cover": {
+      "src": "kit/assets/related-595434.webp",
+      "alt": "Двухуровневый пентхаус с террасой"
+    },
+    "facts": [
+      {
+        "label": "Площадь",
+        "value": "270 м²"
+      },
+      {
+        "label": "Спален",
+        "value": "3"
+      }
+    ]
+  },
+  {
+    "id": "549230",
+    "title": "Видовая 3-уровневая квартира с террасой",
+    "url": "https://barn-estate.ru/vtorichnaya-nedvizhimost/549230/",
+    "address": "Флотская ул, 2",
+    "cover": {
+      "src": "kit/assets/related-549230.webp",
+      "alt": "Видовая 3-уровневая квартира с террасой"
+    },
+    "facts": [
+      {
+        "label": "Площадь",
+        "value": "227 м²"
+      },
+      {
+        "label": "Спален",
+        "value": "3"
+      }
+    ]
+  },
+  {
+    "id": "557748",
+    "title": "Видовой пентхаус с террасой в клубном доме «Дворянское гнездо»",
+    "url": "https://barn-estate.ru/vtorichnaya-nedvizhimost/557748/",
+    "address": "Большой Лёвшинский пер, 11",
+    "cover": {
+      "src": "kit/assets/related-557748.webp",
+      "alt": "Видовой пентхаус с террасой в клубном доме «Дворянское гнездо»"
+    },
+    "facts": [
+      {
+        "label": "Площадь",
+        "value": "273.2 м²"
+      },
+      {
+        "label": "Спален",
+        "value": "4"
+      }
+    ]
+  }
+]
 };

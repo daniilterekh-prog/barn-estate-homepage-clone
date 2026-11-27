@@ -1,12 +1,12 @@
 {
   "date": "2026-11-27",
   "sourceRepository": "daniilterekh-prog/barnes-sites",
-  "sourceCommit": "bf64b5905c0405a833bde25b2570eea42f07039b",
+  "sourceCommit": "38d36d88356521e4f1c129810af14ddab9b06835",
   "sourcePath": "main-site/pages/lot",
   "uiKit": "BARN Estate 1.0.6",
   "scope": "Only stranitsa-lota",
   "privateReferenceExcluded": true,
-  "checks": "68 component comparisons; ten CTA widths; two CTA keyboard/validation/handoff flows and axe checks; two existing lot flow widths; standalone export 86 files",
+  "checks": "92 comparisons to project page,12 newsletter role comparisons to homepage;9 responsive widths320–3840 with favorites/callback IDs/expert/email validation;lot flows390/1440;export96 files;package5/5",
   "previewOnly": true,
   "heroOptions": "hero-options/",
   "defaultHeroUnchanged": true,
@@ -15,8 +15,11 @@
   "compactHeader": "Owner-hub reveal at hero bottom - 120px; white 77/111px bar, black logo, lot anchors desktop and menu/contacts mobile",
   "contentSurfaces": "White content fills and uppercase section headings matched to current zhk-structure; gray/beige plan, building, terms, gallery/map backgrounds removed",
   "compactHero": "No intermediate contents row; facts top padding 8/12/16px and hero bottom 8/12/16px; lot anchors remain in compact desktop header",
-  "contentComponents": "Existing zhk-structure passport, description, formats/plan request, purchase cards, location and consultation adapted to lot data; conditional documents, FAQ and related components",
+  "contentComponents": "Existing project components:passport,description,formats/plan request,purchase/location/consultation,full related cards,floating expert;homepage email newsletter",
   "componentSource": "zhk-structure/?v=97aa519#project",
   "uiKitCorrections": "Source chevrons 11×22 and circles 48/56/68; canonical hero gutters; CTA block padding 0; source text spacing",
-  "consultation": "Complete existing zhk-structure expert CTA with original canonical composite and mobile avatar. Removed lot-photo background, custom overlay and desktop avatar. Preferred channel and comment included in prepared request; no POST/CRM."
+  "consultation": "Complete existing zhk-structure expert CTA with original canonical composite and mobile avatar. Removed lot-photo background, custom overlay and desktop avatar. Preferred channel and comment included in prepared request; no POST/CRM.",
+  "related": "Complete project-page cards adapted to three actual catalog lots with terraces;area/bedrooms instead of project class/developer;favorites and correct per-item request context;prices omitted",
+  "newsletter": "Original homepage email subscription component and local images/tokens. Email validation and user-controlled prepared mailto; mailing service not connected.",
+  "fixedAction": "Existing project/home floating expert replaces price panel at all widths;desktop24px/mobile16px;hide near forms/footer/in menu/dialog or after close"
 }

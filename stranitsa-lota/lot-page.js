@@ -293,18 +293,23 @@
     }
     {
       const s=section('lot-related','ПРОДОЛЖИТЬ ВЫБОР','Похожие предложения');const valid=(data.related || []).filter(item=>item.title&&item.url);
-      if(valid.length){const grid=el('ul',null,'related-project-grid');valid.forEach(item=>{const li=el('li'),card=el('article',null,'rp-card');
-        if(item.cover?.src){const media=el('div',null,'rp-media');const a=link('',item.url,'rp-image-link');a.append(image(item.cover));media.append(a);card.append(media)}
-        const body=el('div',null,'rp-body');const title=el('h3',null,'rp-name');title.append(link(item.title,item.url,''));body.append(title);
-        if(item.displayPrice)body.append(el('p',item.displayPrice));card.append(body);const actions=el('div',null,'rp-actions');actions.append(action('Обсудить','similar','rp-call'),link('Подробнее',item.url,'rp-details'));card.append(actions);li.append(card);grid.append(li)});s.box.append(grid);
+      if(valid.length){const grid=el('ul',null,'related-project-grid');grid.setAttribute('aria-label','Похожие предложения недвижимости');
+        valid.forEach((item,index)=>{const li=el('li'),card=el('article',null,'rp-card');const key=String(item.id || index);card.setAttribute('aria-labelledby','related-'+key+'-title');
+          if(item.cover?.src){const media=el('div',null,'rp-media'),a=link('',item.url,'rp-image-link');a.append(image(item.cover));media.append(a);
+            const favorite=el('button',null,'rp-favorite');favorite.type='button';favorite.dataset.relatedFavorite=key;favorite.dataset.relatedTitle=item.title;favorite.setAttribute('aria-pressed','false');favorite.setAttribute('aria-label','Добавить '+item.title+' в избранное');
+            favorite.innerHTML='<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>';media.append(favorite);card.append(media);}
+          const body=el('div',null,'rp-body');if(item.address)body.append(el('p',item.address,'rp-address'));const title=el('h3',null,'rp-name');title.id='related-'+key+'-title';title.append(link(item.title,item.url,''));body.append(title);
+          if(item.facts?.length)body.append(factsList(item.facts,'rp-facts'));if(item.displayPrice)body.append(el('p',item.displayPrice,'small'));card.append(body);
+          const actions=el('div',null,'rp-actions'),call=action('Заказать звонок','related','rp-call');call.setAttribute('aria-haspopup','dialog');call.dataset.relatedId=item.id || '';call.dataset.relatedTitle=item.title;
+          const details=link('Подробнее',item.url,'rp-details');details.innerHTML+=' <svg viewBox="0 0 16 16" width="16" height="16" fill="none" aria-hidden="true" focusable="false"><path d="M3 13 13 3M6 3h7v7" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25"/></svg>';
+          actions.append(call,details);card.append(actions);li.append(card);grid.append(li);
+        });s.box.append(grid);const status=el('p',null,'rp-status');status.setAttribute('role','status');status.setAttribute('aria-live','polite');s.box.append(status);
       }else{const content=el('div',null,'project-description__text lot-selection-copy');content.append(el('p','Сравните несколько вариантов по локации, площади и бюджету. Брокер подготовит подборку под ваш запрос.','lead'),action('Подобрать похожие','similar','button outline selection-cta','arrow'));s.box.append(content)}main.append(s.node);
     }
     for (const [id, label] of [['lot-photos', 'Фото'], ['lot-plan', 'Планировка'], ['lot-about', 'О квартире'], ['lot-building', 'О доме'], ['lot-location', 'Расположение'], ['lot-terms', 'Условия'], ['lot-contact', 'Контакт']]) {
       if ($('#' + id)) sectionLinks.push({id, label});
     }
-    const bar = $('.lot-mobile-bar'); bar.replaceChildren();
-    const label = el('div'); label.append(el('strong', price(data)), el('small', 'Лот ' + data.id)); bar.append(label, action('На просмотр', 'tour'));
-    const contact = $('#lot-contact'); contact.style.setProperty('--contact-image', 'url("' + safeUrl(data.cover.src).replace(/["\\]/g, '') + '")');
+    const newsletter = el('div');newsletter.innerHTML = "<section class=\"newsletter-cta\" aria-labelledby=\"newsletter-title\" data-v-47bd53e9=\"\" data-v-1e8e9561=\"\" id=\"lot-newsletter\"><div class=\"newsletter-cta__inner\" data-v-1e8e9561=\"\"><div class=\"newsletter-cta__grid\" data-v-1e8e9561=\"\"><div class=\"newsletter-cta__copy\" data-v-1e8e9561=\"\"><p class=\"home-section-eyebrow\">Рассылка BARN Estate</p><h2 id=\"newsletter-title\" data-v-1e8e9561=\"\"> В центре событий рынка недвижимости </h2><p class=\"newsletter-cta__lead\" data-v-1e8e9561=\"\"> Узнавайте первыми о новых проектах, редких объектах и ключевых тенденциях рынка элитной недвижимости. Подписывайтесь на рассылку BARN Estate. </p><form class=\"newsletter-form\" novalidate=\"\" data-v-1e8e9561=\"\" aria-label=\"Подписка на новости BARN Estate\"><label class=\"newsletter-form__label\" for=\"newsletter-email\" data-v-1e8e9561=\"\"> Ваш email </label><div class=\"newsletter-form__row\" data-v-1e8e9561=\"\"><input id=\"newsletter-email\" value=\"\" name=\"email\" type=\"email\" autocomplete=\"email\" placeholder=\"Ваш email\" aria-describedby=\"newsletter-note newsletter-error\" data-v-1e8e9561=\"\" required=\"\"><button type=\"submit\" data-v-1e8e9561=\"\">Подписаться <svg aria-hidden=\"true\" focusable=\"false\" width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\"><path d=\"M3 13 13 3M5 3h8v8\" stroke=\"currentColor\" stroke-width=\"1.25\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path></svg></button></div><p id=\"newsletter-error\" class=\"newsletter-form__error\" data-v-1e8e9561=\"\" role=\"alert\"></p><p class=\"newsletter-form__note\" id=\"newsletter-note\" data-v-1e8e9561=\"\"> Нажимая на кнопку, вы соглашаетесь с <a class=\"newsletter-form__note-link\" target=\"_blank\" href=\"https://barn-estate.ru/legal_notices/yuridicheskie-uvedomleniya/\" data-v-1e8e9561=\"\" rel=\"noopener noreferrer\"><!--[--> политикой конфиденциальности <!--]--></a>. </p><!----></form></div><div class=\"newsletter-cta__visual\" data-v-1e8e9561=\"\"><picture data-v-1e8e9561=\"\"><source media=\"(max-width: 540px)\" srcset=\"kit/assets/newsletter-mobile.webp\" data-v-1e8e9561=\"\"><img src=\"kit/assets/newsletter-desktop.webp\" alt=\"Обложки журнала BARN Estate\" width=\"1100\" height=\"540\" loading=\"lazy\" data-v-1e8e9561=\"\"></picture></div></div></div></section>";main.append(newsletter.firstElementChild);
     main.dataset.lotId = data.id;
     // Reuse the existing Owner/Media compact header adapter with lot anchors.
     $('.lot-sticky-header')?.remove();
@@ -330,13 +335,14 @@
   if (window.__LOT_RENDER_ONLY__) return;
 
   const requestDialog = $('#request-dialog'), galleryDialog = $('#gallery-dialog');
-  let requestKind = 'tour', requestTrigger = null, galleryTrigger = null, galleryItems = [], galleryIndex = 0;
-  const requestNames = {tour: 'Просмотр объекта', presentation: 'Презентация объекта', 'plan-request': 'Планировка объекта', terms: 'Условия сделки', similar: 'Подбор похожих предложений'};
+  let requestKind = 'tour', requestTarget = null, requestTrigger = null, galleryTrigger = null, galleryItems = [], galleryIndex = 0;
+  const requestNames = {tour: 'Просмотр объекта', presentation: 'Презентация объекта', 'plan-request': 'Планировка объекта', terms: 'Условия сделки', similar: 'Подбор похожих предложений', expert:'Вопрос эксперту', related:'Вопрос по объекту'};
   function openRequest(kind, trigger) {
     if (menuOpen) setMenu(false);
     requestKind = kind; requestTrigger = trigger?.checkVisibility() ? trigger : document.activeElement;
     $('#request-title').textContent = kind === 'tour' ? 'Записаться на просмотр' : requestNames[kind] || 'Обсудить объект';
-    $('#request-context').textContent = 'Лот ' + lot.id + ' · ' + lot.title;
+    requestTarget = trigger?.dataset.relatedTitle ? {id:trigger.dataset.relatedId || '',title:trigger.dataset.relatedTitle} : lot;
+    $('#request-context').textContent = (requestTarget.id ? 'Лот ' + requestTarget.id + ' · ' : '') + requestTarget.title;
     const body = $('#request-body'); body.replaceChildren(form('dialog'));
     if (!requestDialog.open) requestDialog.showModal();
     $('#dialog-name').focus({preventScroll: true});
@@ -417,11 +423,12 @@
     const channel = $('[name=channel]:checked', node)?.value;
     const channels = {call:'Звонок',max:'MAX',whatsapp:'WhatsApp',telegram:'Telegram'};
     const comment = $('[name=comment]', node)?.value.trim();
-    const text = [requestNames[kind], 'Лот ' + lot.id + ' · ' + lot.title, 'Имя: ' + name, 'Телефон: ' + phone.value.trim(), channel && 'Предпочтительный способ связи: ' + channels[channel], comment && 'Комментарий: ' + comment].filter(Boolean).join('\n');
+    const target = node.closest('dialog') ? requestTarget || lot : lot;
+    const text = [requestNames[kind], (target.id ? 'Лот ' + target.id + ' · ' : '') + target.title, 'Имя: ' + name, 'Телефон: ' + phone.value.trim(), channel && 'Предпочтительный способ связи: ' + channels[channel], comment && 'Комментарий: ' + comment].filter(Boolean).join('\n');
     const result = el('div', null, 'lot-request-result'); result.setAttribute('role', 'status'); result.tabIndex = -1;
     result.append(el('h3', 'Запрос подготовлен'), el('p', text));
     const email = lot.broker?.email || 'moscow@barn-estate.com';
-    result.append(link('Открыть письмо брокеру', 'mailto:' + email + '?subject=' + encodeURIComponent(requestNames[kind] + ' · лот ' + lot.id) + '&body=' + encodeURIComponent(text), 'button'));
+    result.append(link('Открыть письмо брокеру', 'mailto:' + email + '?subject=' + encodeURIComponent(requestNames[kind] + (target.id ? ' · лот ' + target.id : '')) + '&body=' + encodeURIComponent(text), 'button'));
     const phoneNumber = lot.broker?.phone || '+7 (499) 272-48-72'; result.append(link('Позвонить: ' + phoneNumber, 'tel:' + phoneNumber.replace(/[^+\d]/g, '')));
     result.append(el('p', 'Передайте запрос удобным способом. Он ещё не отправлен.', 'lot-form-note'));
     node.replaceWith(result); result.focus({preventScroll: true});
@@ -444,7 +451,7 @@
   function setMenu(open) {
     menuOpen = open; menu.hidden = !open; header.classList.toggle('site-header--menu-open', open);
     menuButton.setAttribute('aria-expanded', String(open)); menuButton.setAttribute('aria-label', open ? 'Закрыть меню' : 'Открыть меню');
-    main.inert = open; $('footer').inert = open; $('.lot-mobile-bar').inert = open;
+    main.inert = open; $('footer').inert = open; $('.project-floating-expert').inert = open;
     if (open) { previousOverflow = document.documentElement.style.overflow; document.documentElement.style.overflow = 'hidden'; menu.setAttribute('role', 'dialog'); menu.setAttribute('aria-modal', 'true'); menu.setAttribute('aria-label', 'Основное меню'); $('a', menu).focus(); }
     else { document.documentElement.style.overflow = previousOverflow; menuButton.focus({preventScroll: true}); }
     syncSticky();
@@ -492,7 +499,5 @@
   new IntersectionObserver(entries => {
     document.body.dataset.lotHeroOffscreen = String(!entries[0].isIntersecting);
   }).observe($('#lot-photos'));
-  new IntersectionObserver(entries => {
-    document.body.dataset.lotFooterVisible = String(entries[0].isIntersecting);
-  }).observe($('footer'));
+
 })();

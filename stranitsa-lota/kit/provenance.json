@@ -131,7 +131,7 @@
       "sourceCommit": "6f2ce65ec5ac1383660562cd6bff0313eadf8a35",
       "sourceSha256": "eb2e94aa0238b6d46d2bb7250ab179ed8099ce0a48ded3dd8a20f4a23789136c",
       "target": "lot-page.js",
-      "sha256": "83889ec18b9553d5f62f6b4b6ecc4211f3f7290129fe9fcf8a44b87628616454",
+      "sha256": "15bb6c16bd6ca8dc2ff892cb792a596ae8e7923362642304aa2f4ed01796237b",
       "adaptation": "Copy hero-bottom-minus-120 reveal threshold and hidden/inert states. Reuse local media-header adapter with lot anchors, request context and focus return."
     },
     {
@@ -161,7 +161,7 @@
     {
       "source": "User-requested semantic adaptation of existing project components",
       "target": "kit/vendor/zhk/bridge.css",
-      "sha256": "094c13378649becf21e29b11735dd94e9caf6184371c830f80570f07f8211adc",
+      "sha256": "d44043d46335fa2f1f13988eeaae14cd76b1ca213353efec169333a3943e5f0e",
       "adaptation": "Existing local token aliases; actual lot/broker assets; two deal cards instead of three financial programs; bright-photo contrast; preserve approved hero geometry; native request transport unchanged."
     },
     {
@@ -245,6 +245,40 @@
         "target": "kit/assets/cta-ruslan-avatar.webp",
         "source": "https://raw.githubusercontent.com/daniilterekh-prog/barnes-assets/main/blocks/_assets/4464b6998f60-ruslan.webp",
         "sha256": "4464b6998f60131d99ee19b3887a776b896162ce4cbbf1cefd4bb7dcbf7a3986"
+      }
+    ]
+  },
+  "lowerPageComponents": {
+    "date": "2026-11-27",
+    "cards": "Complete rp-card markup from residential-complex/structure/preview/index.html#similar, with lot fields area/bedrooms and per-item callbacks; existing related-projects.css unchanged.",
+    "newsletter": "Homepage source/index.html .newsletter-cta; selected rules from legacy approved block14 plus existing home typography/button root tokens; no global/shared styles changed.",
+    "floatingExpert": "Complete project-floating-expert markup and unchanged floating-expert.css from zhk-structure; selectors/visibility adapted to lot IDs, email form and current request dialog. Price panel removed from DOM.",
+    "subscriptionTransport": "Validation + user-controlled mailto request; no newsletter service connected, no success claim or POST.",
+    "files": [
+      {
+        "target": "kit/vendor/newsletter.css",
+        "source": "main-site/pages/lot/kit/14-newsletter.css; home/source/home-buttons.css and home-typography.css tokens",
+        "sha256": "0b7721e76812384e4ad55e5ceb31d1b3e69c9532f1c18c9c8212625ca65d8fe1"
+      },
+      {
+        "target": "kit/vendor/zhk/floating-expert.css",
+        "source": "main-site/pages/residential-complex/structure/preview/css/floating-expert.css",
+        "sha256": "68c9f789bd5ae71dd40fd99207c94b82c34e931508656af3dcd35dcd251038fb"
+      },
+      {
+        "target": "kit/assets/floating-ruslan.webp",
+        "source": "https://raw.githubusercontent.com/daniilterekh-prog/barnes-assets/main/blocks/_assets/6bbaa8e1df83-modal-ruslan-organic.webp",
+        "sha256": "6bbaa8e1df83e7d5eda42c83d174e1f0177a8cbb5698bd5ec01ee3602e8f84aa"
+      },
+      {
+        "target": "kit/assets/newsletter-desktop.webp",
+        "source": "main-site/pages/home/exact-2026-10-21/source/assets/8a78978e0423f444f2adbe1f.webp",
+        "sha256": "a59b66d0d7fdeda1b0b0726fc2b9f0f23450da792c5cff66bba1482a09d8774f"
+      },
+      {
+        "target": "kit/assets/newsletter-mobile.webp",
+        "source": "main-site/pages/home/exact-2026-10-21/source/assets/f6f65669dc22ef4fe836335c.webp",
+        "sha256": "3285d219f1845deb8887ba3bc04b8e79ce8d3bec99dd568d8a51b8c5fa8bf9af"
       }
     ]
   }

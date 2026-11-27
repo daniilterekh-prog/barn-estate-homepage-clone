@@ -39,6 +39,19 @@ body[data-hero-variant="3"] .lot-offer__actions .button{padding-block:0}
 :where(.lot-page main) h2{text-transform:uppercase}
 .lot-page :is(.format-row,.formats-plan-link){border:0;background:transparent}
 .lot-page :is(.format-action,.formats-plan-link) svg{width:18px;height:18px;flex:0 0 18px}
-.lot-page .lot-mobile-bar .button{min-height:44px;padding:0 24px;font-size:16px}
-.lot-page[data-lot-footer-visible=true] .lot-mobile-bar{display:none!important}
 .lot-page .rp-card:not(:has(.rp-media)) .rp-body{margin-top:0}
+
+/* Removed price panel; the existing expert widget occupies this role. */
+.lot-page{padding-bottom:0;--home-section-space:var(--section-space);--home-copy-gap:24px;--home-field:20px;--home-primary:var(--ink);--home-muted:var(--muted);--home-action:var(--action)}
+.lot-page .project-floating-expert{--pf-mobile-height:0px}
+.lot-page .newsletter-cta .home-section-eyebrow{font-size:14px;line-height:16.1px;font-weight:400;letter-spacing:.12em;text-transform:uppercase;color:var(--secondary);margin-bottom:25px}
+.lot-page .newsletter-cta__inner{width:calc(100% - 2 * clamp(20px,5.2vw,100px));padding-inline:0}
+.lot-page .newsletter-form__row>button svg{flex:0 0 16px;width:16px;height:16px}
+.lot-page .newsletter-result{margin-top:16px;font-size:15px;line-height:1.4}
+@media(max-width:1024px){.lot-page .newsletter-cta .home-section-eyebrow{font-size:12px;line-height:14.4px;margin-bottom:12px}}
+@media(max-width:540px){.lot-page{--home-copy-gap:16px;--home-field:18px}.lot-page .newsletter-cta__inner{width:auto;margin-inline:22px}.lot-page .newsletter-cta__copy{padding-inline:0}}
+body:has(dialog[open]) .project-floating-expert,body:has(.site-menu:not([hidden])) .project-floating-expert{visibility:hidden}
+/* Root dependencies of the imported homepage newsletter typography/buttons. */
+.lot-page{--home-secondary:var(--secondary);--home-heading:38px;--home-lead:22px;--home-lead-line:33px;--home-gutter:var(--barn-page-gutter);--home-field:18px;--home-button-radius:1px;--home-button-weight:400;--home-button-font:17px;--home-button-height:70px;--home-button-pad:36px}
+@media(min-width:1441px){.lot-page{--home-heading:44px;--home-action:19px;--home-field:20px;--home-button-font:19px;--home-button-pad:47px}}
+@media(max-width:540px){.lot-page{--home-heading:22px;--home-lead:15px;--home-lead-line:21px;--home-field:17px;--home-button-font:18px;--home-button-height:58px;--home-button-pad:24px}}
