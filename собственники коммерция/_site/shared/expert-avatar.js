@@ -1,11 +1,11 @@
-/* Same Ruslan portrait as Media; wait for preserved page hydration. */
+/* User-selected square Alina portrait for this page-local floating widget. */
 (() => {
-  const portrait = new URL('../../assets/alina-medvedeva.webp', document.currentScript.src).href;
+  const portrait = new URL('../../assets/alina-floating-avatar.webp', document.currentScript.src).href;
   function update() {
     for (const image of document.querySelectorAll('.floating-expert__avatar img')) {
       if (image.src !== portrait) {
         image.removeAttribute('srcset'); image.src = portrait;
-        image.width = 1086; image.height = 1448; image.loading = 'eager';
+        image.width = 640; image.height = 640; image.loading = 'eager';
       }
       if (image.alt !== 'Алина Медведева') image.alt = 'Алина Медведева';
       const card = image.closest('.floating-expert');

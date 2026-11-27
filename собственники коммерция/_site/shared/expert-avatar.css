@@ -1,5 +1,5 @@
-/* Use the Media portrait and its exact close circular crop. */
+/* Display the complete square avatar inside the existing circular frame. */
 .floating-expert__avatar { position:relative; border-radius:50%!important; overflow:hidden; }
-.floating-expert__avatar img { position:absolute; width:170%!important; max-width:none; height:auto!important; left:-35%; top:-5%; object-fit:cover!important; object-position:center top!important; transform:none!important; filter:none; }
+.floating-expert__avatar img { position:absolute; inset:0; width:100%!important; max-width:100%; height:100%!important; object-fit:contain!important; object-position:center!important; transform:none!important; filter:none; }
 
 @media(max-width:540px) { body.owner-rent-reference-ui .floating-expert { display:block; } }

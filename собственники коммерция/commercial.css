@@ -9,9 +9,9 @@ html body#ui-kit-page[data-owner-commercial] .owner-sale-presentation__reveal-te
 html body#ui-kit-page[data-owner-commercial] .catalog-consultation__lead,
 html body#ui-kit-page[data-owner-commercial] .catalog-consultation__mobile-lead {display:block;}
 html body#ui-kit-page[data-owner-commercial] :is(.catalog-consultation__image,.home-owner-form__hero-image) {object-position:82% center!important;}
-html body#ui-kit-page[data-owner-commercial] :is(.floating-expert__avatar,.catalog-consultation__mobile-photo) img {width:100%!important;height:100%!important;max-width:none!important;object-fit:cover!important;object-position:82% 18%!important;transform:none!important;filter:none!important;}
-html body#ui-kit-page[data-owner-commercial] :is(.floating-expert__avatar,.catalog-consultation__mobile-photo) {position:relative;overflow:hidden;}
-html body#ui-kit-page[data-owner-commercial] :is(.floating-expert__avatar,.catalog-consultation__mobile-photo) img {position:absolute!important;inset:auto!important;left:-94%!important;top:3%!important;width:200%!important;height:200%!important;object-position:82% center!important;}
+html body#ui-kit-page[data-owner-commercial] .catalog-consultation__mobile-photo img {width:100%!important;height:100%!important;max-width:none!important;object-fit:cover!important;object-position:82% 18%!important;transform:none!important;filter:none!important;}
+html body#ui-kit-page[data-owner-commercial] .catalog-consultation__mobile-photo {position:relative;overflow:hidden;}
+html body#ui-kit-page[data-owner-commercial] .catalog-consultation__mobile-photo img {position:absolute!important;inset:auto!important;left:-94%!important;top:3%!important;width:200%!important;height:200%!important;object-position:82% center!important;}
 html body#ui-kit-page[data-owner-commercial] .home-owner-form__hero-image {width:100%!important;height:100%!important;object-fit:cover!important;filter:none!important;}
 html body#ui-kit-page[data-owner-commercial] .commercial-form-status {color:inherit;font-size:15px;line-height:1.5;margin-top:12px;}
 html body#ui-kit-page[data-owner-commercial] [aria-invalid=true] {outline:2px solid #b32639;outline-offset:3px;}
@@ -34,3 +34,6 @@ html body#ui-kit-page[data-owner-commercial] .site-footer__logo img {display:blo
  html body#ui-kit-page[data-owner-commercial] .site-footer__link {font-size:13px!important;line-height:1.4!important;font-weight:400!important;}
 }
 html body#ui-kit-page[data-owner-commercial][data-commercial-footer-visible=true] .floating-expert {visibility:hidden!important;pointer-events:none!important;}
+
+/* Full square source: removes the old 200% crop while retaining the 64/72px circle. */
+html body#ui-kit-page[data-owner-commercial] .floating-expert__avatar img {position:absolute!important;inset:0!important;width:100%!important;height:100%!important;max-width:100%!important;object-fit:contain!important;object-position:center!important;transform:none!important;filter:none!important;}

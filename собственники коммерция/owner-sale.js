@@ -401,7 +401,7 @@
     const expert = document.createElement('aside');
     expert.className = 'floating-expert floating-expert--gorodskaya';
     expert.setAttribute('aria-label', 'Алина Медведева');
-    expert.innerHTML = '<button type="button" class="floating-expert__card" aria-haspopup="dialog"><span class="floating-expert__avatar"><img src="assets/alina-medvedeva.webp" alt="Алина Медведева" width="72" height="72" loading="lazy" decoding="async"></span><span class="floating-expert__content"><span class="floating-expert__label">Эксперт по коммерческой недвижимости</span><span class="floating-expert__title">Задать вопрос эксперту</span><span class="floating-expert__name">Алина Медведева</span></span></button><button type="button" class="floating-expert__close" aria-label="Скрыть карточку Алина Медведева"></button>';
+    expert.innerHTML = '<button type="button" class="floating-expert__card" aria-haspopup="dialog"><span class="floating-expert__avatar"><img src="assets/alina-floating-avatar.webp" alt="Алина Медведева" width="72" height="72" loading="lazy" decoding="async"></span><span class="floating-expert__content"><span class="floating-expert__label">Эксперт по коммерческой недвижимости</span><span class="floating-expert__title">Задать вопрос эксперту</span><span class="floating-expert__name">Алина Медведева</span></span></button><button type="button" class="floating-expert__close" aria-label="Скрыть карточку Алина Медведева"></button>';
     expert.querySelectorAll('*').forEach(function (element) {
       element.setAttribute('data-v-cd0a1259', '');
     });
