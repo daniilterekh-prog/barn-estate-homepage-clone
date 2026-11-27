@@ -157,6 +157,9 @@
     hero.append(visual, offer);
     if (document.body.dataset.heroVariant === '3') {
       hero.insertBefore(copy, offer);
+      const meta = $('.eyebrow', copy), location = meta.textContent;
+      meta.replaceChildren(el('span', price(data), 'lot-price'), document.createTextNode(' | '), el('span', location, 'lot-hero__location'));
+      p.remove();
       if (actions.classList.contains('lot-hero__slider')) offer.append(actions);
       const metrics = $('.lot-offer__facts', offer);
       if (metrics?.childElementCount) {

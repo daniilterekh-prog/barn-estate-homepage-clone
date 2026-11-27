@@ -115,7 +115,7 @@
       "target": "hero-variants.css",
       "sourceCommit": "93ff4c2c32ceae0881967d3e4a7d119fc61d49dc",
       "sourceSha256": "002bf2d2c75f7ec115686583aaf4c007c82f0a93884dcef8ef52570cf22ae81d",
-      "sha256": "a6af0e2a6bb89826ed00c0fce3830e966e8ac8135ce124316a9ec9c2c6919072",
+      "sha256": "4f65a1ee18410b7793f0f3f40a4de81b3e396785444e31219686869b77b6ed8e",
       "adaptation": "Variant 3 reuses Media/Owner hero title, CTA, overlay and spacing roles; compact white action row follows homepage filters; other optional variants remain local. Mobile <=768px: unboxed price and primary action below the resort facts; gallery is a 44px secondary control. 27.11.2026 requested override: transparent price at all sizes; smaller footer gaps; inline arrows/counter from local icon kit replace the gallery opener."
     },
     {
@@ -123,7 +123,7 @@
       "target": "hero-variants.css",
       "sourceCommit": "52a4dc52db81b2c2012dcf56aa9da194f4b1c8e3",
       "sourceSha256": "ba38428f8a64418a4ff201b51ae55cde37903292ee7d744ea87e0f63f17422de",
-      "sha256": "a6af0e2a6bb89826ed00c0fce3830e966e8ac8135ce124316a9ec9c2c6919072",
+      "sha256": "4f65a1ee18410b7793f0f3f40a4de81b3e396785444e31219686869b77b6ed8e",
       "adaptation": "Keep Tilda Sans and existing BARN Estate H1/CTA roles. Use exact lot values. On narrow screens keep area, bedrooms and floor; finish remains in full apartment facts. Semantic dt precedes dd in DOM, visual values precede captions. Adopt resort footer geometry and value/caption hierarchy only. Mobile <=768px: unboxed price and primary action below the resort facts; gallery is a 44px secondary control. 27.11.2026 requested override: transparent price at all sizes; smaller footer gaps; inline arrows/counter from local icon kit replace the gallery opener."
     },
     {
@@ -131,7 +131,7 @@
       "sourceCommit": "6f2ce65ec5ac1383660562cd6bff0313eadf8a35",
       "sourceSha256": "eb2e94aa0238b6d46d2bb7250ab179ed8099ce0a48ded3dd8a20f4a23789136c",
       "target": "lot-page.js",
-      "sha256": "e10d9563170b9ff75e473e919506d71b9845cad0bb7845d4f0f1dc310af86cb3",
+      "sha256": "a6f56d4b963c7bfd6c0645b2db55028147cb5da2c7a24db4a14ca67684729df1",
       "adaptation": "Copy hero-bottom-minus-120 reveal threshold and hidden/inert states. Reuse local media-header adapter with lot anchors, request context and focus return."
     },
     {
@@ -290,8 +290,14 @@
   },
   "heroSliderAlignment": {
     "date": "2026-11-27",
-    "layout": "Move existing slider controls into the offer row; vertical centers match the viewing CTA. Desktop price/CTA positions preserved.",
-    "mobile": "Same button height/font/padding and arrow sizes; counter above arrows. Hide decorative CTA diagonal only through540px so full label fits beside controls.",
-    "heroVariantsSha256": "a6af0e2a6bb89826ed00c0fce3830e966e8ac8135ce124316a9ec9c2c6919072"
-  }
+    "layout": "Existing slider controls share the CTA row and vertical center. Price is now in the upper metadata line; CTA starts at title edge.",
+    "mobile": "Same button height/font/padding and arrow sizes; counter above arrows. Hide decorative CTA diagonal only through540px so full label fits beside controls."
+  },
+  "heroPriceLocation": {
+    "date": "2026-11-27",
+    "format": "price | location, above the title",
+    "type": "Existing light eyebrow typography; one hero price only, no lower duplicate. CTA starts at title edge; arrow alignment retained.",
+    "mobile": "32px reservation above the CTA row keeps its counter clear of facts after the old price row is removed."
+  },
+  "heroStylesheetSha256": "4f65a1ee18410b7793f0f3f40a4de81b3e396785444e31219686869b77b6ed8e"
 }
