@@ -107,14 +107,14 @@ const selectors = [
     }
     row.targetExtra = await p.evaluate(() => ({
       overflow: document.documentElement.scrollWidth > innerWidth,
-      faqSpace: getComputedStyle(document.querySelector(".commercial-faq"))
+      faqSpace: getComputedStyle(document.querySelector(".catalog-faq"))
         .paddingTop,
       sectionSpace: getComputedStyle(
         document.querySelector(".owner-sale-types"),
       ).paddingTop,
       faqTitleGap: getComputedStyle(
-        document.querySelector(".commercial-faq__title"),
-      ).marginBottom,
+        document.querySelector(".catalog-faq__grid"),
+      ).marginTop,
       contentSpace: getComputedStyle(document.body)
         .getPropertyValue("--uk-content")
         .trim(),

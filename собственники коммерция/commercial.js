@@ -33,3 +33,12 @@
     status.textContent='В превью отправка не подключена. Данные не отправлены.';
   },true);
 })();
+/* Purchase-node FAQ interaction, with explicit accessible answer regions. */
+for(const question of document.querySelectorAll('#faq .catalog-faq__question')){
+ question.addEventListener('click',()=>{
+  const item=question.closest('.catalog-faq__item'),answer=document.getElementById(question.getAttribute('aria-controls'));
+  const open=question.getAttribute('aria-expanded')!=='true';
+  question.setAttribute('aria-expanded',String(open));item.classList.toggle('catalog-faq__item--open',open);
+  answer.classList.toggle('catalog-faq__answer--open',open);answer.setAttribute('aria-hidden',String(!open));answer.inert=!open;
+ });
+}
