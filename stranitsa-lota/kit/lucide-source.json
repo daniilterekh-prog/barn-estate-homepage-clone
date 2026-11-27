@@ -116,6 +116,13 @@
       "sourceSha256": "05c0bafa899af230f7bd1db3d6fb01ced801281d1bdea72d82ac2847f530bdd2",
       "target": "kit/vendor/lucide/fence.svg",
       "sha256": "bd0bd36b4a83e3b1b3fdcba147eeae25b7da46f5d1972fd7cbec8ea7b9b4b8b5"
+    },
+    {
+      "name": "russian-ruble",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/1188e0d2ff889e68aaf456c95b792b169df5b2ef/icons/russian-ruble.svg",
+      "sourceSha256": "5384f6651cc031b7b692fb782184b2f26d0b65f4d2f45a3fe192e72de8681ca7",
+      "target": "kit/vendor/lucide/russian-ruble.svg",
+      "sha256": "89d7666bcb88d8fb323230faffcdf34afbeb018a2d35605b416c597870e30613"
     }
   ]
 }

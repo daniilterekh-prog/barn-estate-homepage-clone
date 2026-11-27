@@ -78,7 +78,7 @@
     if (b.phone) info.append(link(b.phone, 'tel:' + b.phone.replace(/[^+\d]/g, ''), 'broker__phone'));
     node.append(info); return node;
   }
-  const factIcons = {'Тип объекта':'building','Площадь':'ruler','Комнат':'door-open','Спален':'bed-double','Санузлов':'bath','Санузел':'bath','Этаж':'layers','Этажность':'layers','Отделка':'paint-roller','Год постройки':'calendar-days','Кухня':'cooking-pot','Потолки':'move-vertical','Окна':'panels-top-left','Паркинг':'square-letter-p','Двор':'trees','Класс дома':'building'};
+  const factIcons = {'Цена за м²':'russian-ruble','Тип объекта':'building','Площадь':'ruler','Комнат':'door-open','Спален':'bed-double','Санузлов':'bath','Санузел':'bath','Этаж':'layers','Этажность':'layers','Отделка':'paint-roller','Год постройки':'calendar-days','Кухня':'cooking-pot','Потолки':'move-vertical','Окна':'panels-top-left','Паркинг':'square-letter-p','Двор':'trees','Класс дома':'building'};
   function characteristicIcon(name) {
     // Only allow the local, licensed icon subset; never turn CRM text into a URL.
     const allowed = new Set(Object.values(factIcons).concat(['shirt','heater','fence']));
@@ -199,6 +199,9 @@
     const photosForBlocks = heroPhotos(data);
     const photoFor = index => photosForBlocks[index] || data.cover;
     const characteristics = (data.facts || []).filter(f => f.value != null && f.value !== '');
+    if (data.showPricePerSquareMeterInCharacteristics && area > 0 && Number.isFinite(data.priceRub) && !characteristics.some(f => f.label === 'Цена за м²')) {
+      characteristics.push({label:'Цена за м²',value:money(Math.round(data.priceRub / area)),icon:'russian-ruble'});
+    }
     if (characteristics.length || data.features?.length) {
       const s = section('lot-features', 'ОБ ОБЪЕКТЕ', 'Характеристики объекта');
       const passport = el('div', null, 'passport'); const figure = el('figure'); figure.append(image(data.sectionImages?.features || photoFor(1)));

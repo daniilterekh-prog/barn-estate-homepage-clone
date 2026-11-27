@@ -5,6 +5,7 @@ if (new URLSearchParams(location.search).get("lot") === "601669") {
   "title": "Квартира у Лахтинского разлива",
   "description": "Двухкомнатная квартира площадью 62,4 м² в Приморском районе Санкт-Петербурга.",
   "locationLabel": "Санкт-Петербург, Приморский район",
+  "showPricePerSquareMeterInCharacteristics": true,
   "priceRub": 20800000,
   "displayPrice": "20 800 000 ₽",
   "cover": {

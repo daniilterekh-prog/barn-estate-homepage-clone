@@ -1,7 +1,7 @@
 {
   "date": "2026-11-27",
   "sourceRepository": "daniilterekh-prog/barnes-sites",
-  "sourceCommit": "edb53a7f08c962fde302c8040cc212e3cfb7cb85",
+  "sourceCommit": "a582371650c2e2d39bcd68a7657e96e5372f565c",
   "sourcePath": "main-site/pages/lot",
   "uiKit": "BARN Estate 1.0.6",
   "scope": "Only stranitsa-lota",
@@ -27,5 +27,6 @@
   "heroPriceLocation": "Single light metadata line above title: price | location. Lower price removed;CTA starts at title edge;arrow centers preserved. Checked9 widths320–3840, no text clipping or duplicate hero price.",
   "heroDropdownSurface": "Transparent hero dropdown background/border, no shadow, white submenu and expanded parent text. Normal open menu style preserved. All9 menus checked at1281/1440/2560 with hover, keyboard and Escape/focus.",
   "intrumExample": "?hero=3&lot=601669: own user photos and complete plan; parking/year/storeys/class/courtyard in building, apartment equipment in description; bedrooms hidden pending verification. No CRM API or assigned broker.",
-  "characteristicIcons": "Local Lucide SVG subset, pinned commit and license in kit; kit muted color #656462, stroke1.5,decorative24/22px; no backgrounds."
+  "characteristicIcons": "Local Lucide SVG subset, pinned commit and license in kit; kit muted color #656462, stroke1.5,decorative24/22px; no backgrounds.",
+  "characteristicsPricePerSquareMeter": "601669: price per m² immediately right of windows, derived from priceRub / total area;same kit cell and licensed ruble SVG;checked320/390/768/1440 and price recalculation"
 }
