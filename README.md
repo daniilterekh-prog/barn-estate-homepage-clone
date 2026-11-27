@@ -2,7 +2,7 @@
 
 - [Страница ЖК: постоянная папка разработчику](handoff/zhk-structure/README.md) · [ZIP](handoff/zhk-structure/zhk-structure-developer.zip) · [Превью пакета](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/handoff/zhk-structure/html/index.html) ·27.11.2026.
 
-- [Собственники — загород: открыть страницу](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/sobstvenniki-zagorod/) — отступы и типографика по референсу продажи; проверены24ширины320–3840px. [Отчёт](sobstvenniki-zagorod/RESPONSIVE-AUDIT.md) · [Исходники](https://github.com/daniilterekh-prog/barnes-sites/tree/main/main-site/pages/собственники%20загород) ·27.11.2026.
+- [Собственники — загород: открыть страницу](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/sobstvenniki-zagorod/) — новый CTA: Елена Валерьевна Картавцева справа, текст и форма слева; WebP,16ширин320–3840px. [Исходники](https://github.com/daniilterekh-prog/barnes-sites/tree/main/main-site/pages/собственники%20загород) ·27.11.2026.
 
 
 

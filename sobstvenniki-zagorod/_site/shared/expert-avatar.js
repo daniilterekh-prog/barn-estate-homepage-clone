@@ -1,21 +1,21 @@
-/* Same Mikhail Dolgov photograph as the current country node. */
+/* User-supplied Elena portrait, isolated to the country owner page. */
 (() => {
-  const portrait = new URL('../../assets/expert-dolgov.webp', document.currentScript.src).href;
+  const portrait = new URL('../../assets/expert-elena.webp', document.currentScript.src).href;
   function update() {
     for (const image of document.querySelectorAll('.floating-expert__avatar img')) {
       if (image.src !== portrait) {
         image.removeAttribute('srcset'); image.src = portrait;
-        image.width = 240; image.height = 273; image.loading = 'eager';
+        image.width = 256; image.height = 256; image.loading = 'eager';
       }
-      if (image.alt !== 'Михаил Долгов') image.alt = 'Михаил Долгов';
+      if (image.alt !== 'Елена Валерьевна Картавцева') image.alt = 'Елена Валерьевна Картавцева';
       const card = image.closest('.floating-expert');
-      for (const [selector, text] of [['.floating-expert__name', 'Михаил Долгов'], ['.floating-expert__label', 'Руководитель департамента загородной недвижимости']]) {
+      for (const [selector, text] of [['.floating-expert__name', 'Елена Валерьевна Картавцева'], ['.floating-expert__label', 'Руководитель департамента загородной недвижимости BARN Estate']]) {
         const label = card?.querySelector(selector);
-        if (label && label.textContent !== text) label.textContent = text;
+        if (label && label.textContent.replace(/\s+/g, ' ') !== text) label.textContent = text;
       }
-      if (card && card.getAttribute('aria-label') !== 'Михаил Долгов') card.setAttribute('aria-label', 'Михаил Долгов');
+      if (card && card.getAttribute('aria-label') !== 'Елена Валерьевна Картавцева') card.setAttribute('aria-label', 'Елена Валерьевна Картавцева');
       const close = card?.querySelector('.floating-expert__close');
-      if (close && close.getAttribute('aria-label') !== 'Скрыть карточку Михаил Долгов') close.setAttribute('aria-label', 'Скрыть карточку Михаил Долгов');
+      if (close && close.getAttribute('aria-label') !== 'Скрыть карточку Елена Валерьевна Картавцева') close.setAttribute('aria-label', 'Скрыть карточку Елена Валерьевна Картавцева');
     }
   }
   update(); new MutationObserver(update).observe(document.documentElement, {childList:true,subtree:true});

@@ -1,0 +1,31 @@
+{
+  "date": "2026-11-27",
+  "source": "User attachment e62b220c-4c49-49f8-8e93-023e7a3cd72a.png",
+  "expert": {
+    "name": "Елена Валерьевна Картавцева",
+    "role": "Руководитель департамента загородной недвижимости BARN Estate",
+    "confirmedBy": "User in this chat"
+  },
+  "processing": "Sharp 0.35.5: WebP quality92; full frame unchanged, avatar crop x1035 y30 width440 height440 to256px; no generative edits",
+  "images": {
+    "source.png": {
+      "bytes": 1891528,
+      "sha256": "9182c2718ad3d24429c6a60db095662e075608de36b05f047824f3fcc5f47d19",
+      "width": 1672,
+      "height": 941
+    },
+    "consultation-elena.webp": {
+      "bytes": 161040,
+      "sha256": "6f4a48bee34320f3cb1b2b310a13c576024e617ebece2a2a30fb8312bc86b2f8",
+      "width": 1672,
+      "height": 941
+    },
+    "expert-elena.webp": {
+      "bytes": 19362,
+      "sha256": "a60c2ed26890b27c3587262462ee0b60c2d490958bf838411b96acf14866de85",
+      "width": 256,
+      "height": 256
+    }
+  },
+  "canonicalAssetsCommit": "38c9c687f2a6e413661c348bc433e4e05236037a"
+}

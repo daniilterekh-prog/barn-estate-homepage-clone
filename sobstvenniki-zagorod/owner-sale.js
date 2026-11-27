@@ -446,8 +446,8 @@
   if (!document.querySelector('.floating-expert')) {
     const expert = document.createElement('aside');
     expert.className = 'floating-expert floating-expert--gorodskaya';
-    expert.setAttribute('aria-label', 'Михаил Долгов');
-    expert.innerHTML = '<button type="button" class="floating-expert__card" aria-haspopup="dialog"><span class="floating-expert__avatar"><img src="assets/expert-dolgov.webp" alt="Михаил Долгов" width="72" height="72" loading="lazy" decoding="async"></span><span class="floating-expert__content"><span class="floating-expert__label">Руководитель департамента загородной недвижимости</span><span class="floating-expert__title">Задать вопрос эксперту</span><span class="floating-expert__name">Михаил Долгов</span></span></button><button type="button" class="floating-expert__close" aria-label="Скрыть карточку Михаил Долгов"></button>';
+    expert.setAttribute('aria-label', 'Елена Валерьевна Картавцева');
+    expert.innerHTML = '<button type="button" class="floating-expert__card" aria-haspopup="dialog"><span class="floating-expert__avatar"><img src="assets/expert-elena.webp" alt="Елена Валерьевна Картавцева" width="72" height="72" loading="lazy" decoding="async"></span><span class="floating-expert__content"><span class="floating-expert__label">Руководитель департамента загородной недвижимости BARN Estate</span><span class="floating-expert__title">Задать вопрос эксперту</span><span class="floating-expert__name">Елена Валерьевна Картавцева</span></span></button><button type="button" class="floating-expert__close" aria-label="Скрыть карточку Елена Валерьевна Картавцева"></button>';
     expert.querySelectorAll('*').forEach(function (element) {
       element.setAttribute('data-v-cd0a1259', '');
     });

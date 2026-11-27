@@ -3,6 +3,7 @@
 const roots='.media-library,.media-cta-banner,.catalog-consultation,.catalog-contact,.newsletter-cta,.office-contact',mounted=new WeakMap();
 function layer(parent){const e=document.createElement('div');parent.append(e);return e;}
 function mount(root){
+ if(root.hasAttribute('data-cta-layout'))return;
  if(document.body.hasAttribute('data-resort-cta')&&!(document.body.hasAttribute('data-owner-country')&&root.matches('.catalog-consultation'))&&root.matches('.catalog-consultation,.catalog-contact,.newsletter-cta'))return;
  if(mounted.has(root))return;
  if(root.classList.contains('catalog-contact')){root.dataset.ctaBleed='existing';mounted.set(root,{});return;}

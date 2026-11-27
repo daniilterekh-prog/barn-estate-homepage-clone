@@ -2,7 +2,7 @@
   "date": "2026-11-13",
   "spec": "https://docs.google.com/document/d/10h2UBtZCoKiUJGEKvC43um7Xax_V-sTJ3soDRDN-2iY/edit?tab=t.r3ubibduiehj",
   "spec_revision_date": "11.11.2026",
-  "portrait": "https://raw.githubusercontent.com/daniilterekh-prog/barnes-assets/main/experts/cta-alexander-dolgov.png",
+  "portrait": "https://raw.githubusercontent.com/daniilterekh-prog/barnes-assets/main/owner-country/cta/consultation-elena.webp",
   "base_public_commit": "e7de0eb6b5801fa24f05baec98096505f6631275",
   "assets": {
     "assets/editorial/": "barnes-assets/owner-country/editorial/, 12 новых сцен; PROMPTS.json содержит промпты и SHA-256",
@@ -12,7 +12,9 @@
     "assets/service-city.webp": "barnes-sites/main-site/pages/owner-hub/assets/editorial/service-city.webp",
     "assets/service-commercial.webp": "barnes-sites/main-site/pages/owner-hub/assets/editorial/service-commercial.webp",
     "assets/service-rent.webp": "barnes-sites/main-site/pages/owner-hub/assets/editorial/service-rent.webp",
-    "assets/consultation-background.webp": "barnes-sites/main-site/pages/country/assets/consultation-background.png"
+    "assets/consultation-background.webp": "barnes-sites/main-site/pages/country/assets/consultation-background.png",
+    "assets/consultation-elena.webp": "barnes-assets/owner-country/cta/consultation-elena.webp",
+    "assets/expert-elena.webp": "barnes-assets/owner-country/cta/expert-elena.webp"
   },
   "notes": [
     "12 загородных сцен сгенерированы специально для этой страницы, это иллюстрации, не конкретные лоты.",
@@ -23,7 +25,7 @@
   ],
   "text_source": "https://front.barnes.vsavr.ru/prodazha_zagorodnoy_nedvizhimosti/",
   "text_read_date": "2026-11-12",
-  "portrait_choice": "По уточнению пользователя 13.11.2026 используется тот же оригинал и композиция Михаила Долгова, что в действующем загородном узле. Историческое имя файла alexander не меняет действующее имя Михаил. Фото не генерировалось и не ретушировалось.",
+  "portrait_choice": "По указанию пользователя27.11.2026: переданный кадр с Еленой Валерьевной Картавцевой, руководителем департамента загородной недвижимости BARN Estate. Текст и форма слева, фотография справа; на экранах до1024px — над формой. Имя и должность подтверждены пользователем. Лицо не изменялось.",
   "previous_portrait_from_spec": "https://drive.google.com/file/d/1nlJxUr_3_2_JQmLp9DrBjgHtwI9UAHTX/view",
   "editorial_library": "https://github.com/daniilterekh-prog/barnes-assets/tree/main/owner-country/editorial",
   "editorial_assets_commit": "72eb2e6ea4322a307e502ecee9d6db371c643f41",
@@ -57,5 +59,7 @@
     "dimensionsPreserved": true,
     "svgRetained": true,
     "manifest": "WEBP-MIGRATION.json"
-  }
+  },
+  "previous_portrait_choice": "По уточнению пользователя 13.11.2026 используется тот же оригинал и композиция Михаила Долгова, что в действующем загородном узле. Историческое имя файла alexander не меняет действующее имя Михаил. Фото не генерировалось и не ретушировалось.",
+  "cta_asset_commit": "38c9c687f2a6e413661c348bc433e4e05236037a"
 }
