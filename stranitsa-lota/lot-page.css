@@ -21,3 +21,21 @@ dialog{position:fixed;margin:auto;border:0;border-radius:1px;padding:0;max-width
 @media(max-width:540px){.lot-offer__actions .button svg{display:none}}
 @media(min-width:768px){body[data-lot-hero-offscreen=true] .lot-mobile-bar{position:fixed;right:max(24px,calc((100vw - 1920px)/2));bottom:24px;z-index:22;display:flex;align-items:center;gap:28px;padding:20px 24px;border:1px solid var(--line);background:#fff;box-shadow:0 8px 32px #0000000d}.lot-mobile-bar strong{font-size:22px;font-weight:400;line-height:1.2}.lot-mobile-bar small{display:block;font-size:13px;line-height:18px;color:var(--muted);margin-top:4px}.lot-mobile-bar .button{min-height:44px;padding:12px 24px;font-size:16px}}
 @media(prefers-reduced-motion:reduce){:root{scroll-behavior:auto}*,*::before,*::after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
+
+/* Owner/Media compact header: local copy of the owner-hub sticky contract. */
+.lot-page .lot-sticky-header{position:fixed;inset:0 0 auto;z-index:24;background:#fff;color:var(--ink);box-shadow:0 1px 0 rgb(30 30 30 / 10%);opacity:0;pointer-events:none;transform:translateY(-100%);transition:opacity 200ms ease,transform 240ms ease}
+.lot-page .lot-sticky-header.owner-sale-sticky--visible{opacity:1;pointer-events:auto;transform:translateY(0)}
+.lot-page .lot-sticky-header .owner-sale-sticky__nav{scrollbar-width:none}
+.lot-page .lot-sticky-header .owner-sale-sticky__nav::-webkit-scrollbar{display:none}
+.lot-page .lot-sticky-header .owner-sale-sticky__list{display:flex;align-items:center;gap:24px;list-style:none;margin:0;padding:0;width:max-content;white-space:nowrap}
+.lot-page .lot-sticky-header .owner-sale-sticky__link{display:inline-flex;align-items:center;min-height:44px;min-width:44px;font-size:15px;font-weight:400;color:var(--ink)}
+.lot-page .lot-sticky-header .owner-sale-sticky__link--active{color:var(--brand)}
+.lot-page .lot-sticky-header .owner-sale-sticky__request{display:none}
+html body.lot-page .site-header.site-header--menu-open{position:fixed;inset:0 0 auto}
+html:has(body.lot-page){scroll-padding-top:calc(var(--lot-sticky-height,110px) + 40px)}
+@media(min-width:1025px){.lot-page[data-lot-sticky-active=true] .lot-nav-wrap{position:relative}}
+@media(max-width:1024px){
+ .lot-page[data-lot-sticky-active=true] .lot-nav-wrap{top:var(--lot-sticky-height,110px)}
+ html:has(body.lot-page){scroll-padding-top:calc(var(--lot-sticky-height,110px) + 90px)}
+}
+@media(prefers-reduced-motion:reduce){.lot-page .lot-sticky-header{transition:none}}

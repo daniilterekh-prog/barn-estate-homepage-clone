@@ -125,6 +125,22 @@
       "sourceSha256": "ba38428f8a64418a4ff201b51ae55cde37903292ee7d744ea87e0f63f17422de",
       "sha256": "bc060079ad09e93d3f41540083eddb5013211d289fb56400f912fdb41b5ea89c",
       "adaptation": "Keep Tilda Sans and existing BARN Estate H1/CTA roles. Use exact lot values. On narrow screens keep area, bedrooms and floor; finish remains in full apartment facts. Semantic dt precedes dd in DOM, visual values precede captions. Adopt resort footer geometry and value/caption hierarchy only. Mobile <=768px: unboxed price and primary action below the resort facts; gallery is a 44px secondary control. 27.11.2026 requested override: transparent price at all sizes; smaller footer gaps; inline arrows/counter from local icon kit replace the gallery opener."
+    },
+    {
+      "source": "main-site/pages/owner-hub/owner-sale.js",
+      "sourceCommit": "6f2ce65ec5ac1383660562cd6bff0313eadf8a35",
+      "sourceSha256": "eb2e94aa0238b6d46d2bb7250ab179ed8099ce0a48ded3dd8a20f4a23789136c",
+      "target": "lot-page.js",
+      "sha256": "dc7e0c79c1691136b4133c0f9b2d6491c6e8a58be2016e2ad08251022fa14681",
+      "adaptation": "Copy hero-bottom-minus-120 reveal threshold and hidden/inert states. Reuse local media-header adapter with lot anchors, request context and focus return."
+    },
+    {
+      "source": "main-site/pages/owner-hub/owner-sale.css",
+      "sourceCommit": "6f2ce65ec5ac1383660562cd6bff0313eadf8a35",
+      "sourceSha256": "66d7d1042786b8bc83c2b71e700257bb3603e34bc4eefd4603b60c04211d58d8",
+      "target": "lot-page.css",
+      "sha256": "8abb7b85c4ef0337ae1e412224a6cc7fb317eddf759bcbfa4c1e3001af64e6a9",
+      "adaptation": "Copy fixed white surface, opacity/translate reveal timings, active links; local .lot-page scope and z-index below menu. Shared Media adapter owns logo/grid/contact geometry. Hide desktop anchor scrollbar; mobile anchors stay under header."
     }
   ]
 }

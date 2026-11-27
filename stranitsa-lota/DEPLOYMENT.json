@@ -1,15 +1,16 @@
 {
   "date": "2026-11-27",
   "sourceRepository": "daniilterekh-prog/barnes-sites",
-  "sourceCommit": "0924ede187a2722d72c40fafcca4bf8d1bbacc3f",
+  "sourceCommit": "3c8a4df9264b10a7602991610019f16b2216b9a0",
   "sourcePath": "main-site/pages/lot",
   "uiKit": "BARN Estate 1.0.6",
   "scope": "Only stranitsa-lota plus root catalog entries",
   "privateReferenceExcluded": true,
-  "checks": "16 hero sizes + 27 dropdowns; 16 responsive combinations; 5 slider widths, 37 images decoded, native touch/keyboard/wrap/fallback; variant 3 and default flows",
+  "checks": "10 compact-header widths 320-3840; reveal threshold, menu/contact/focus and anchor requests; 16 hero roles + 27 dropdowns; lot flows and all 37 slider photos",
   "previewOnly": true,
   "heroOptions": "hero-options/",
   "defaultHeroUnchanged": true,
   "hero3": "Transparent price at every viewport; half bottom gaps; inline previous/next arrows and counter; keyboard and native horizontal swipe",
-  "factsReference": "barnes-sites/docs/landing-builder/hero-prototype/hero.css"
+  "factsReference": "barnes-sites/docs/landing-builder/hero-prototype/hero.css",
+  "compactHeader": "Owner-hub reveal at hero bottom - 120px; white 77/111px bar, black logo, lot anchors desktop and menu/contacts mobile"
 }

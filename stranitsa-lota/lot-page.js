@@ -270,6 +270,24 @@
     const label = el('div'); label.append(el('strong', price(data)), el('small', 'Лот ' + data.id)); bar.append(label, action('На просмотр', 'tour'));
     const contact = $('#lot-contact'); contact.style.setProperty('--contact-image', 'url("' + safeUrl(data.cover.src).replace(/["\\]/g, '') + '")');
     main.dataset.lotId = data.id;
+    // Reuse the existing Owner/Media compact header adapter with lot anchors.
+    $('.lot-sticky-header')?.remove();
+    const sticky = el('div', null, 'owner-sale-sticky lot-sticky-header');
+    sticky.setAttribute('aria-label', 'Навигация и связь по лоту');
+    sticky.setAttribute('aria-hidden', 'true'); sticky.setAttribute('inert', '');
+    const inner = el('div', null, 'owner-sale-sticky__inner base-container');
+    const stickyNav = el('nav', null, 'owner-sale-sticky__nav'); stickyNav.setAttribute('aria-label', 'Разделы лота в хедере');
+    const list = el('ul', null, 'owner-sale-sticky__list');
+    for (const a of $$('a', nav)) {
+      const item = el('li', null, 'owner-sale-sticky__item');
+      item.append(link(a.textContent, a.getAttribute('href'), 'owner-sale-sticky__link')); list.append(item);
+    }
+    stickyNav.append(list);
+    const logo = $('.site-header__logo').cloneNode(true); logo.className = 'owner-sale-sticky__logo';
+    const brand = el('div', null, 'owner-sale-sticky__brand');
+    brand.append(action('Связаться с нами', 'tour', 'owner-sale-sticky__request'));
+    inner.append(stickyNav, logo, brand); sticky.append(inner); main.before(sticky);
+    if (!window.__LOT_RENDER_ONLY__) requestAnimationFrame(syncSticky);
   }
   window.renderBarnesLot = render;
   render(window.BARNES_LOT_DATA);
@@ -280,7 +298,7 @@
   const requestNames = {tour: 'Просмотр объекта', presentation: 'Презентация объекта', 'plan-request': 'Планировка объекта', terms: 'Условия сделки', similar: 'Подбор похожих предложений'};
   function openRequest(kind, trigger) {
     if (menuOpen) setMenu(false);
-    requestKind = kind; requestTrigger = trigger || document.activeElement;
+    requestKind = kind; requestTrigger = trigger?.checkVisibility() ? trigger : document.activeElement;
     $('#request-title').textContent = kind === 'tour' ? 'Записаться на просмотр' : requestNames[kind] || 'Обсудить объект';
     $('#request-context').textContent = 'Лот ' + lot.id + ' · ' + lot.title;
     const body = $('#request-body'); body.replaceChildren(form('dialog'));
@@ -390,6 +408,7 @@
     main.inert = open; $('footer').inert = open; $('.lot-mobile-bar').inert = open;
     if (open) { previousOverflow = document.documentElement.style.overflow; document.documentElement.style.overflow = 'hidden'; menu.setAttribute('role', 'dialog'); menu.setAttribute('aria-modal', 'true'); menu.setAttribute('aria-label', 'Основное меню'); $('a', menu).focus(); }
     else { document.documentElement.style.overflow = previousOverflow; menuButton.focus({preventScroll: true}); }
+    syncSticky();
   }
   menuButton.addEventListener('click', () => setMenu(!menuOpen));
   menu.addEventListener('click', event => { if (event.target.closest('a')) setMenu(false); });
@@ -407,12 +426,30 @@
   const count = $('.site-header__favorites-count');
   try { const stored = JSON.parse(localStorage.getItem('barnes:favorites') || '[]'); count.textContent = Array.isArray(stored) ? String(stored.length) : '0'; } catch { count.textContent = '0'; }
   let pending = false;
-  function activeNav() {
-    pending = false; const links = $$('.lot-nav a'); let active = links[0];
-    for (const a of links) { if ($(a.hash)?.getBoundingClientRect().top < 100) active = a; }
-    links.forEach(a => a === active ? a.setAttribute('aria-current', 'true') : a.removeAttribute('aria-current'));
+  function syncSticky() {
+    const sticky = $('.lot-sticky-header'), hero = $('#lot-photos');
+    if (!sticky || !hero) return;
+    const visible = window.scrollY > hero.offsetTop + hero.offsetHeight - 120 && !menuOpen;
+    sticky.classList.toggle('owner-sale-sticky--visible', visible);
+    sticky.setAttribute('aria-hidden', String(!visible)); sticky.inert = !visible;
+    document.body.dataset.lotStickyActive = String(visible);
+    document.documentElement.style.setProperty('--lot-sticky-height', sticky.offsetHeight + 'px');
   }
-  window.addEventListener('scroll', () => { if (!pending) { pending = true; requestAnimationFrame(activeNav); } }, {passive: true}); activeNav();
+  function activeNav() {
+    pending = false; syncSticky();
+    const links = $$('.lot-nav a'); let active = links[0];
+    const line = parseFloat(getComputedStyle(document.documentElement).scrollPaddingTop) + 2;
+    for (const a of links) { if ($(a.hash)?.getBoundingClientRect().top < line) active = a; }
+    for (const a of [...links, ...$$('.lot-sticky-header .owner-sale-sticky__link')]) {
+      const selected = a.hash === active?.hash;
+      if (selected) a.setAttribute('aria-current', 'true'); else a.removeAttribute('aria-current');
+      a.classList.toggle('owner-sale-sticky__link--active', selected);
+    }
+  }
+  const scheduleNav = () => {if (!pending) {pending = true; requestAnimationFrame(activeNav);}};
+  window.addEventListener('scroll', scheduleNav, {passive:true});
+  window.addEventListener('resize', scheduleNav); activeNav();
+  new ResizeObserver(scheduleNav).observe($('.lot-sticky-header'));
   new IntersectionObserver(entries => {
     document.body.dataset.lotHeroOffscreen = String(!entries[0].isIntersecting);
   }).observe($('#lot-photos'));

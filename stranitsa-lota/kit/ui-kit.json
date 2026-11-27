@@ -91,5 +91,21 @@
       "mobile": 10
     },
     "adaptation": "Keep Tilda Sans and existing BARN Estate H1/CTA roles. Use exact lot values. On narrow screens keep area, bedrooms and floor; finish remains in full apartment facts. Semantic dt precedes dd in DOM, visual values precede captions."
+  },
+  "compactHeader": {
+    "source": "main-site/pages/owner-hub/owner-sale.js and owner-sale.css; existing local media-header adapter",
+    "reveal": "scrollY > hero.offsetTop + hero.offsetHeight - 120",
+    "height": {
+      "mobile": 77,
+      "larger": 111
+    },
+    "logoHeight": {
+      "mobile": 36,
+      "larger": 48
+    },
+    "transition": "opacity 200ms ease, transform 240ms ease; none with reduced motion",
+    "content": "Lot anchors on desktop; burger, centered black logo and contacts on mobile",
+    "navigation": "Mobile section bar below compact header; desktop section bar remains in document flow",
+    "accessibility": "Hidden compact header inert; original header inert while compact shown; menu restores focus to compact burger"
   }
 }
