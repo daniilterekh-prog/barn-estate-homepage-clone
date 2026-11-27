@@ -6,12 +6,12 @@
   "sections": [
     "project",
     "passport",
-    "apartments",
     "architecture",
     "gallery",
     "territory",
     "location",
     "purchase",
+    "apartments",
     "developer",
     "documents",
     "expert",
@@ -19,7 +19,7 @@
     "similar",
     "newsletter"
   ],
-  "files": 116,
+  "files": 117,
   "details": [
     {
       "check": "reference html/index.html -> ../assets/logo.svg",
@@ -174,63 +174,63 @@
       "passed": true
     },
     {
+      "check": "reference html/index.html -> ../assets/architecture-detail.jpg",
+      "passed": true
+    },
+    {
+      "check": "reference html/index.html -> ../assets/architecture-detail.jpg",
+      "passed": true
+    },
+    {
+      "check": "reference html/index.html -> ../assets/architecture-detail.jpg",
+      "passed": true
+    },
+    {
+      "check": "reference html/index.html -> ../assets/garden.jpg",
+      "passed": true
+    },
+    {
+      "check": "reference html/index.html -> ../assets/garden.jpg",
+      "passed": true
+    },
+    {
+      "check": "reference html/index.html -> ../assets/lobby-wide.webp",
+      "passed": true
+    },
+    {
+      "check": "reference html/index.html -> ../assets/lobby-wide.webp",
+      "passed": true
+    },
+    {
+      "check": "reference html/index.html -> ../assets/lobby.jpg",
+      "passed": true
+    },
+    {
+      "check": "reference html/index.html -> ../assets/lobby.jpg",
+      "passed": true
+    },
+    {
+      "check": "reference html/index.html -> ../assets/view.jpg",
+      "passed": true
+    },
+    {
+      "check": "reference html/index.html -> ../assets/view.jpg",
+      "passed": true
+    },
+    {
+      "check": "reference html/index.html -> ../assets/panorama.jpg",
+      "passed": true
+    },
+    {
+      "check": "reference html/index.html -> ../assets/panorama.jpg",
+      "passed": true
+    },
+    {
       "check": "reference html/index.html -> ../assets/view.jpg",
       "passed": true
     },
     {
       "check": "reference html/index.html -> ../assets/plan-126.svg",
-      "passed": true
-    },
-    {
-      "check": "reference html/index.html -> ../assets/architecture-detail.jpg",
-      "passed": true
-    },
-    {
-      "check": "reference html/index.html -> ../assets/architecture-detail.jpg",
-      "passed": true
-    },
-    {
-      "check": "reference html/index.html -> ../assets/architecture-detail.jpg",
-      "passed": true
-    },
-    {
-      "check": "reference html/index.html -> ../assets/garden.jpg",
-      "passed": true
-    },
-    {
-      "check": "reference html/index.html -> ../assets/garden.jpg",
-      "passed": true
-    },
-    {
-      "check": "reference html/index.html -> ../assets/lobby-wide.webp",
-      "passed": true
-    },
-    {
-      "check": "reference html/index.html -> ../assets/lobby-wide.webp",
-      "passed": true
-    },
-    {
-      "check": "reference html/index.html -> ../assets/lobby.jpg",
-      "passed": true
-    },
-    {
-      "check": "reference html/index.html -> ../assets/lobby.jpg",
-      "passed": true
-    },
-    {
-      "check": "reference html/index.html -> ../assets/view.jpg",
-      "passed": true
-    },
-    {
-      "check": "reference html/index.html -> ../assets/view.jpg",
-      "passed": true
-    },
-    {
-      "check": "reference html/index.html -> ../assets/panorama.jpg",
-      "passed": true
-    },
-    {
-      "check": "reference html/index.html -> ../assets/panorama.jpg",
       "passed": true
     },
     {

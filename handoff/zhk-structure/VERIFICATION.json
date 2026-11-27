@@ -33,8 +33,9 @@
   },
   "extracted_zip": "verification/extracted-zip.json",
   "floorplans": "verification/floorplans.json",
-  "notes": "Mobile actions revised 27 Nov. Earlier visual/ZIP reports describe their recorded revisions; current changed-view check is mobile-cards.json. CTA moved directly before FAQ; mobile and desktop order, single form and expert popup hiding verified.",
+  "notes": "Mobile actions revised 27 Nov. Earlier visual/ZIP reports describe their recorded revisions; current changed-view check is mobile-cards.json. CTA moved directly before FAQ; mobile and desktop order, single form and expert popup hiding verified. Apartments moved directly after purchase conditions; 390/1440px, single block, image dialog and consultation verified.",
   "current_package": "verification/mobile-cards.json",
   "calculator": "excluded by user",
-  "cta_order": "verification/cta-before-faq.json"
+  "cta_order": "verification/cta-before-faq.json",
+  "apartments_order": "verification/apartments-after-purchase.json"
 }

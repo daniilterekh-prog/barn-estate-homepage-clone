@@ -1,0 +1,55 @@
+{
+  "errors": [],
+  "views": [
+    {
+      "width": 390,
+      "order": [
+        "project",
+        "passport",
+        "architecture",
+        "gallery",
+        "territory",
+        "location",
+        "purchase",
+        "apartments",
+        "developer",
+        "documents",
+        "expert",
+        "faq",
+        "similar",
+        "newsletter"
+      ],
+      "apartmentCount": 1,
+      "overflow": false,
+      "afterPurchase": true,
+      "ctaBeforeFaq": true,
+      "planOpen": true,
+      "consultationOpen": true
+    },
+    {
+      "width": 1440,
+      "order": [
+        "project",
+        "passport",
+        "architecture",
+        "gallery",
+        "territory",
+        "location",
+        "purchase",
+        "apartments",
+        "developer",
+        "documents",
+        "expert",
+        "faq",
+        "similar",
+        "newsletter"
+      ],
+      "apartmentCount": 1,
+      "overflow": false,
+      "afterPurchase": true,
+      "ctaBeforeFaq": true,
+      "planOpen": true,
+      "consultationOpen": true
+    }
+  ]
+}

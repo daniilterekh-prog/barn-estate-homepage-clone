@@ -1,8 +1,8 @@
 {
   "source_repository": "daniilterekh-prog/barnes-sites",
-  "source_commit": "ce3602b10772cceffde1ad3d4734f12bde1b87a3",
+  "source_commit": "fd157bf4e76c40b7125b26f5c88a9c246512e66d",
   "source_path": "main-site/pages/residential-complex/structure/preview",
-  "source_html_sha256": "cbcec65b9a838c74de792b6ce7a19d8f72abfe884393df4eead6b215580c6b3a",
+  "source_html_sha256": "8dc42251d6dce18d024430574c1c679e842892132fddd5ad40a499cda35f516f",
   "preview_repository": "daniilterekh-prog/barn-estate-homepage-clone",
   "preview_runtime_identity": "Runtime exported from source_commit in the same publication as this handoff",
   "transformations": [
@@ -13,12 +13,12 @@
   "sections": [
     "project",
     "passport",
-    "apartments",
     "architecture",
     "gallery",
     "territory",
     "location",
     "purchase",
+    "apartments",
     "developer",
     "documents",
     "expert",
