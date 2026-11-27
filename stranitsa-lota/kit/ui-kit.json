@@ -107,5 +107,11 @@
     "content": "Lot anchors on desktop; burger, centered black logo and contacts on mobile",
     "navigation": "Mobile section bar below compact header; desktop section bar remains in document flow",
     "accessibility": "Hidden compact header inert; original header inert while compact shown; menu restores focus to compact burger"
+  },
+  "contentSurfaces": {
+    "reference": "main-site/pages/residential-complex/structure/README.md — White backgrounds; published zhk-structure",
+    "background": "#ffffff",
+    "sectionHeadings": "uppercase; Tilda Sans 300; existing kit sizes and line height",
+    "rule": "No gray or beige content fills, including plan/building/terms, gallery container and map loading background. Thin kit lines and secondary ink remain. Photo sections and the canonical dark footer keep their photographic/brand treatment."
   }
 }

@@ -58,3 +58,6 @@ node main-site/pages/lot/export-page.cjs /новый/пустой/каталог
 
 
 [Локальное превью и инструкция запуска](https://github.com/daniilterekh-prog/barnes-sites/blob/main/main-site/pages/lot/README.md#local-preview).
+
+
+Белые фоны ·27.11.2026: планировка, дом, условия, галерея и карта — белые; заголовки разделов прописные по текущей странице ЖК. [Превью](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/stranitsa-lota/?hero=3&v=white-surfaces-20261127).
