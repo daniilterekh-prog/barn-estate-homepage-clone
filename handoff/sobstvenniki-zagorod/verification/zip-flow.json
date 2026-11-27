@@ -1,0 +1,182 @@
+{
+  "date": "2026-11-27",
+  "profiles": [
+    {
+      "width": 390,
+      "layout": "photo-above-copy",
+      "geometry": {
+        "image": {
+          "x": 0,
+          "y": 5501.265625,
+          "width": 375,
+          "height": 260,
+          "bottom": 5761.265625
+        },
+        "content": {
+          "x": 22,
+          "y": 5793.265625,
+          "width": 331,
+          "height": 542.578125,
+          "right": 353,
+          "bottom": 6335.84375
+        },
+        "media": {
+          "x": 0,
+          "width": 375,
+          "bottom": 6375.84375
+        },
+        "personLeft": 218.9984059511158,
+        "opacity": "1",
+        "src": "http://127.0.0.1:18786/assets/consultation-elena.webp",
+        "bleed": false,
+        "captionCount": 0
+      },
+      "formChecked": true,
+      "dialogChecked": true,
+      "menuChecked": true,
+      "brokenImages": 0,
+      "jsErrors": 0,
+      "httpErrors": 0,
+      "nonGetRequests": 0,
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "layout": "copy-left-photo-right",
+      "geometry": {
+        "image": {
+          "x": 0,
+          "y": 6289.46875,
+          "width": 1425,
+          "height": 820,
+          "bottom": 7109.46875
+        },
+        "content": {
+          "x": 68.328125,
+          "y": 6337.46875,
+          "width": 610,
+          "height": 615.34375,
+          "right": 678.328125,
+          "bottom": 6952.8125
+        },
+        "media": {
+          "x": 0,
+          "width": 1425,
+          "bottom": 7109.46875
+        },
+        "personLeft": 811.8411264612115,
+        "opacity": "1",
+        "src": "http://127.0.0.1:18786/assets/consultation-elena.webp",
+        "bleed": false,
+        "captionCount": 0
+      },
+      "formChecked": true,
+      "dialogChecked": true,
+      "menuChecked": true,
+      "brokenImages": 0,
+      "jsErrors": 0,
+      "httpErrors": 0,
+      "nonGetRequests": 0,
+      "overflow": false
+    }
+  ],
+  "images": [
+    {
+      "url": "http://127.0.0.1:18786/assets/editorial/hero.webp",
+      "contentType": "image/webp"
+    },
+    {
+      "url": "http://127.0.0.1:18786/assets/logo-canonical.svg",
+      "contentType": "image/svg+xml"
+    },
+    {
+      "url": "http://127.0.0.1:18786/assets/editorial/market-strategy.webp",
+      "contentType": "image/webp"
+    },
+    {
+      "url": "http://127.0.0.1:18786/assets/editorial/whole-property.webp",
+      "contentType": "image/webp"
+    },
+    {
+      "url": "http://127.0.0.1:18786/assets/editorial/completed-home.webp",
+      "contentType": "image/webp"
+    },
+    {
+      "url": "http://127.0.0.1:18786/assets/editorial/positioning.webp",
+      "contentType": "image/webp"
+    },
+    {
+      "url": "http://127.0.0.1:18786/assets/editorial/private-viewing.webp",
+      "contentType": "image/webp"
+    },
+    {
+      "url": "http://127.0.0.1:18786/assets/editorial/market-analysis.webp",
+      "contentType": "image/webp"
+    },
+    {
+      "url": "http://127.0.0.1:18786/assets/editorial/negotiation.webp",
+      "contentType": "image/webp"
+    },
+    {
+      "url": "http://127.0.0.1:18786/assets/consultation-elena.webp",
+      "contentType": "image/webp"
+    },
+    {
+      "url": "http://127.0.0.1:18786/assets/types-01.webp",
+      "contentType": "image/webp"
+    },
+    {
+      "url": "http://127.0.0.1:18786/assets/types-03.webp",
+      "contentType": "image/webp"
+    },
+    {
+      "url": "http://127.0.0.1:18786/assets/types-02.webp",
+      "contentType": "image/webp"
+    },
+    {
+      "url": "http://127.0.0.1:18786/assets/types-04.webp",
+      "contentType": "image/webp"
+    },
+    {
+      "url": "http://127.0.0.1:18786/assets/shared/f6f65669dc22ef4fe836335c.webp",
+      "contentType": "image/webp"
+    },
+    {
+      "url": "http://127.0.0.1:18786/assets/shared/telegram.svg",
+      "contentType": "image/svg+xml"
+    },
+    {
+      "url": "http://127.0.0.1:18786/assets/shared/max.svg",
+      "contentType": "image/svg+xml"
+    },
+    {
+      "url": "http://127.0.0.1:18786/assets/shared/whatsapp.svg",
+      "contentType": "image/svg+xml"
+    },
+    {
+      "url": "http://127.0.0.1:18786/assets/expert-avatar-square.webp",
+      "contentType": "image/webp"
+    },
+    {
+      "url": "http://127.0.0.1:18786/assets/shared/home-about-logo-round-red.webp",
+      "contentType": "image/webp"
+    },
+    {
+      "url": "http://127.0.0.1:18786/assets/editorial/country-panorama.webp",
+      "contentType": "image/webp"
+    },
+    {
+      "url": "http://127.0.0.1:18786/assets/menu-featured-02.webp",
+      "contentType": "image/webp"
+    },
+    {
+      "url": "http://127.0.0.1:18786/assets/menu-featured-01.webp",
+      "contentType": "image/webp"
+    },
+    {
+      "url": "http://127.0.0.1:18786/assets/shared/8a78978e0423f444f2adbe1f.webp",
+      "contentType": "image/webp"
+    }
+  ],
+  "result": "pass"
+}

@@ -1,5 +1,8 @@
 # Актуальные страницы основного сайта
 
+- [Собственники — загород: папка разработчику](handoff/sobstvenniki-zagorod/README.md) · [ZIP](handoff/sobstvenniki-zagorod/sobstvenniki-zagorod-developer.zip) · [Посмотреть пакет](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/handoff/sobstvenniki-zagorod/html/index.html) ·27.11.2026.
+
+
 - [Собственники — загород: открыть страницу](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/sobstvenniki-zagorod/) — CTA без дополнительных подписей, текст слева; новый аватар карточки справа снизу, WebP. [Исходники](https://github.com/daniilterekh-prog/barnes-sites/tree/main/main-site/pages/собственники%20загород) ·27.11.2026.
 
 

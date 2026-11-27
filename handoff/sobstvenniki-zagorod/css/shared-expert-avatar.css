@@ -1,0 +1,5 @@
+/* Use the Media portrait and its exact close circular crop. */
+.floating-expert__avatar { position:relative; border-radius:50%!important; overflow:hidden; }
+.floating-expert__avatar img { position:absolute; width:170%!important; max-width:none; height:auto!important; left:-35%; top:-5%; object-fit:cover!important; object-position:center top!important; transform:none!important; filter:none; }
+
+@media(max-width:540px) { body.owner-rent-reference-ui .floating-expert { display:block; } }

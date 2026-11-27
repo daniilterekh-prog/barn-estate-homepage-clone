@@ -1,0 +1,618 @@
+{
+  "date": "2026-11-27",
+  "sourceUrl": "http://127.0.0.1:18784/",
+  "packageUrl": "http://127.0.0.1:18785/html/index.html",
+  "parity": [
+    {
+      "width": 390,
+      "height": 9653,
+      "differentPixels": 0,
+      "ratio": 0,
+      "geometry": [
+        {
+          "class": "owner-sale-sticky",
+          "id": "",
+          "width": 375,
+          "height": 77,
+          "padding": "0px"
+        },
+        {
+          "class": "owner-sale-hero",
+          "id": "",
+          "width": 375,
+          "height": 560,
+          "padding": "0px"
+        },
+        {
+          "class": "owner-sale-presentation",
+          "id": "presentation",
+          "width": 375,
+          "height": 575.1875,
+          "padding": "48px 0px"
+        },
+        {
+          "class": "owner-sale-services",
+          "id": "services",
+          "width": 375,
+          "height": 452.8125,
+          "padding": "48px 0px"
+        },
+        {
+          "class": "about-company",
+          "id": "team",
+          "width": 375,
+          "height": 687.1875,
+          "padding": "48px 0px"
+        },
+        {
+          "class": "owner-sale-stages",
+          "id": "stages",
+          "width": 375,
+          "height": 1537.53125,
+          "padding": "48px 0px"
+        },
+        {
+          "class": "",
+          "id": "why-barnes",
+          "width": 375,
+          "height": 970.359375,
+          "padding": "0px"
+        },
+        {
+          "class": "owner-sale-strategy",
+          "id": "",
+          "width": 375,
+          "height": 718.1875,
+          "padding": "48px 0px"
+        },
+        {
+          "class": "catalog-consultation",
+          "id": "request",
+          "width": 375,
+          "height": 874.578125,
+          "padding": "0px"
+        },
+        {
+          "class": "owner-sale-types",
+          "id": "property-types",
+          "width": 375,
+          "height": 1113.1875,
+          "padding": "48px 0px"
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "height": 9970,
+      "differentPixels": 0,
+      "ratio": 0,
+      "geometry": [
+        {
+          "class": "owner-sale-sticky",
+          "id": "",
+          "width": 1425,
+          "height": 111,
+          "padding": "0px"
+        },
+        {
+          "class": "owner-sale-hero",
+          "id": "",
+          "width": 1425,
+          "height": 620,
+          "padding": "0px"
+        },
+        {
+          "class": "owner-sale-presentation",
+          "id": "presentation",
+          "width": 1425,
+          "height": 1085.125,
+          "padding": "86.4px 0px"
+        },
+        {
+          "class": "owner-sale-services",
+          "id": "services",
+          "width": 1425,
+          "height": 551.875,
+          "padding": "86.4px 0px"
+        },
+        {
+          "class": "about-company",
+          "id": "team",
+          "width": 1425,
+          "height": 576.0625,
+          "padding": "86.4px 0px"
+        },
+        {
+          "class": "owner-sale-stages owner-sale-stages--scroll-ready",
+          "id": "stages",
+          "width": 1425,
+          "height": 1756.5625,
+          "padding": "86.4px 0px"
+        },
+        {
+          "class": "",
+          "id": "why-barnes",
+          "width": 1425,
+          "height": 1025.0625,
+          "padding": "0px"
+        },
+        {
+          "class": "owner-sale-strategy",
+          "id": "",
+          "width": 1425,
+          "height": 674.78125,
+          "padding": "86.4px 0px"
+        },
+        {
+          "class": "catalog-consultation",
+          "id": "request",
+          "width": 1425,
+          "height": 820,
+          "padding": "0px"
+        },
+        {
+          "class": "owner-sale-types",
+          "id": "property-types",
+          "width": 1425,
+          "height": 991.46875,
+          "padding": "86.4px 0px"
+        }
+      ]
+    }
+  ],
+  "flows": {
+    "date": "2026-11-27",
+    "profiles": [
+      {
+        "width": 320,
+        "layout": "photo-above-copy",
+        "geometry": {
+          "image": {
+            "x": 0,
+            "y": 6189.9375,
+            "width": 305,
+            "height": 260,
+            "bottom": 6449.9375
+          },
+          "content": {
+            "x": 22,
+            "y": 6481.9375,
+            "width": 261,
+            "height": 555.578125,
+            "right": 283,
+            "bottom": 7037.515625
+          },
+          "media": {
+            "x": 0,
+            "width": 305,
+            "bottom": 7077.515625
+          },
+          "personLeft": 183.9984059511158,
+          "opacity": "1",
+          "src": "http://127.0.0.1:18785/assets/consultation-elena.webp",
+          "bleed": false,
+          "captionCount": 0
+        },
+        "formChecked": false,
+        "dialogChecked": true,
+        "menuChecked": true,
+        "brokenImages": 0,
+        "jsErrors": 0,
+        "httpErrors": 0,
+        "nonGetRequests": 0,
+        "overflow": false
+      },
+      {
+        "width": 390,
+        "layout": "photo-above-copy",
+        "geometry": {
+          "image": {
+            "x": 0,
+            "y": 5501.265625,
+            "width": 375,
+            "height": 260,
+            "bottom": 5761.265625
+          },
+          "content": {
+            "x": 22,
+            "y": 5793.265625,
+            "width": 331,
+            "height": 542.578125,
+            "right": 353,
+            "bottom": 6335.84375
+          },
+          "media": {
+            "x": 0,
+            "width": 375,
+            "bottom": 6375.84375
+          },
+          "personLeft": 218.9984059511158,
+          "opacity": "1",
+          "src": "http://127.0.0.1:18785/assets/consultation-elena.webp",
+          "bleed": false,
+          "captionCount": 0
+        },
+        "formChecked": true,
+        "dialogChecked": true,
+        "menuChecked": true,
+        "brokenImages": 0,
+        "jsErrors": 0,
+        "httpErrors": 0,
+        "nonGetRequests": 0,
+        "overflow": false
+      },
+      {
+        "width": 541,
+        "layout": "photo-above-copy",
+        "geometry": {
+          "image": {
+            "x": 0,
+            "y": 8566.609375,
+            "width": 526,
+            "height": 260,
+            "bottom": 8826.609375
+          },
+          "content": {
+            "x": 24,
+            "y": 8858.609375,
+            "width": 478,
+            "height": 660.9375,
+            "right": 502,
+            "bottom": 9519.546875
+          },
+          "media": {
+            "x": 0,
+            "width": 526,
+            "bottom": 9559.546875
+          },
+          "personLeft": 298.8636363636364,
+          "opacity": "1",
+          "src": "http://127.0.0.1:18785/assets/consultation-elena.webp",
+          "bleed": false,
+          "captionCount": 0
+        },
+        "formChecked": false,
+        "dialogChecked": true,
+        "menuChecked": true,
+        "brokenImages": 0,
+        "jsErrors": 0,
+        "httpErrors": 0,
+        "nonGetRequests": 0,
+        "overflow": false
+      },
+      {
+        "width": 768,
+        "layout": "photo-above-copy",
+        "geometry": {
+          "image": {
+            "x": 0,
+            "y": 7497.75,
+            "width": 753,
+            "height": 368.625,
+            "bottom": 7866.375
+          },
+          "content": {
+            "x": 24,
+            "y": 7898.375,
+            "width": 610,
+            "height": 615.34375,
+            "right": 634,
+            "bottom": 8513.71875
+          },
+          "media": {
+            "x": 0,
+            "width": 753,
+            "bottom": 8553.71875
+          },
+          "personLeft": 427.84090909090907,
+          "opacity": "1",
+          "src": "http://127.0.0.1:18785/assets/consultation-elena.webp",
+          "bleed": false,
+          "captionCount": 0
+        },
+        "formChecked": false,
+        "dialogChecked": true,
+        "menuChecked": true,
+        "brokenImages": 0,
+        "jsErrors": 0,
+        "httpErrors": 0,
+        "nonGetRequests": 0,
+        "overflow": false
+      },
+      {
+        "width": 1024,
+        "layout": "photo-above-copy",
+        "geometry": {
+          "image": {
+            "x": 0,
+            "y": 7640.046875,
+            "width": 1009,
+            "height": 440,
+            "bottom": 8080.046875
+          },
+          "content": {
+            "x": 40.875,
+            "y": 8120.046875,
+            "width": 610,
+            "height": 615.34375,
+            "right": 650.875,
+            "bottom": 8735.390625
+          },
+          "media": {
+            "x": 0,
+            "width": 1009,
+            "bottom": 8783.390625
+          },
+          "personLeft": 573.2954545454545,
+          "opacity": "1",
+          "src": "http://127.0.0.1:18785/assets/consultation-elena.webp",
+          "bleed": false,
+          "captionCount": 0
+        },
+        "formChecked": false,
+        "dialogChecked": true,
+        "menuChecked": true,
+        "brokenImages": 0,
+        "jsErrors": 0,
+        "httpErrors": 0,
+        "nonGetRequests": 0,
+        "overflow": false
+      },
+      {
+        "width": 1025,
+        "layout": "copy-left-photo-right",
+        "geometry": {
+          "image": {
+            "x": 0,
+            "y": 6895.96875,
+            "width": 1010,
+            "height": 820,
+            "bottom": 7715.96875
+          },
+          "content": {
+            "x": 40.953125,
+            "y": 6943.96875,
+            "width": 445.484375,
+            "height": 660.9375,
+            "right": 486.4375,
+            "bottom": 7604.90625
+          },
+          "media": {
+            "x": 0,
+            "width": 1010,
+            "bottom": 7715.96875
+          },
+          "personLeft": 604.3411264612115,
+          "opacity": "1",
+          "src": "http://127.0.0.1:18785/assets/consultation-elena.webp",
+          "bleed": false,
+          "captionCount": 0
+        },
+        "formChecked": false,
+        "dialogChecked": true,
+        "menuChecked": true,
+        "brokenImages": 0,
+        "jsErrors": 0,
+        "httpErrors": 0,
+        "nonGetRequests": 0,
+        "overflow": false
+      },
+      {
+        "width": 1440,
+        "layout": "copy-left-photo-right",
+        "geometry": {
+          "image": {
+            "x": 0,
+            "y": 6289.46875,
+            "width": 1425,
+            "height": 820,
+            "bottom": 7109.46875
+          },
+          "content": {
+            "x": 68.328125,
+            "y": 6337.46875,
+            "width": 610,
+            "height": 615.34375,
+            "right": 678.328125,
+            "bottom": 6952.8125
+          },
+          "media": {
+            "x": 0,
+            "width": 1425,
+            "bottom": 7109.46875
+          },
+          "personLeft": 811.8411264612115,
+          "opacity": "1",
+          "src": "http://127.0.0.1:18785/assets/consultation-elena.webp",
+          "bleed": false,
+          "captionCount": 0
+        },
+        "formChecked": true,
+        "dialogChecked": true,
+        "menuChecked": true,
+        "brokenImages": 0,
+        "jsErrors": 0,
+        "httpErrors": 0,
+        "nonGetRequests": 0,
+        "overflow": false
+      },
+      {
+        "width": 1920,
+        "layout": "copy-left-photo-right",
+        "geometry": {
+          "image": {
+            "x": 0,
+            "y": 7203.234375,
+            "width": 1905,
+            "height": 820,
+            "bottom": 8023.234375
+          },
+          "content": {
+            "x": 99.984375,
+            "y": 7275.234375,
+            "width": 610,
+            "height": 649.796875,
+            "right": 709.984375,
+            "bottom": 7925.03125
+          },
+          "media": {
+            "x": 0,
+            "width": 1905,
+            "bottom": 8023.234375
+          },
+          "personLeft": 1082.3863636363635,
+          "opacity": "1",
+          "src": "http://127.0.0.1:18785/assets/consultation-elena.webp",
+          "bleed": false,
+          "captionCount": 0
+        },
+        "formChecked": false,
+        "dialogChecked": true,
+        "menuChecked": true,
+        "brokenImages": 0,
+        "jsErrors": 0,
+        "httpErrors": 0,
+        "nonGetRequests": 0,
+        "overflow": false
+      },
+      {
+        "width": 3840,
+        "layout": "copy-left-photo-right",
+        "geometry": {
+          "image": {
+            "x": 952.5,
+            "y": 7390.390625,
+            "width": 1920,
+            "height": 820,
+            "bottom": 8210.390625
+          },
+          "content": {
+            "x": 952.5,
+            "y": 7462.390625,
+            "width": 610,
+            "height": 649.796875,
+            "right": 1562.5,
+            "bottom": 8112.1875
+          },
+          "media": {
+            "x": 0,
+            "width": 3825,
+            "bottom": 8210.390625
+          },
+          "personLeft": 2043.409090909091,
+          "opacity": "1",
+          "src": "http://127.0.0.1:18785/assets/consultation-elena.webp",
+          "bleed": false,
+          "captionCount": 0
+        },
+        "formChecked": false,
+        "dialogChecked": true,
+        "menuChecked": true,
+        "brokenImages": 0,
+        "jsErrors": 0,
+        "httpErrors": 0,
+        "nonGetRequests": 0,
+        "overflow": false
+      }
+    ],
+    "images": [
+      {
+        "url": "http://127.0.0.1:18785/assets/editorial/hero.webp",
+        "contentType": "image/webp"
+      },
+      {
+        "url": "http://127.0.0.1:18785/assets/logo-canonical.svg",
+        "contentType": "image/svg+xml"
+      },
+      {
+        "url": "http://127.0.0.1:18785/assets/editorial/market-strategy.webp",
+        "contentType": "image/webp"
+      },
+      {
+        "url": "http://127.0.0.1:18785/assets/editorial/whole-property.webp",
+        "contentType": "image/webp"
+      },
+      {
+        "url": "http://127.0.0.1:18785/assets/editorial/completed-home.webp",
+        "contentType": "image/webp"
+      },
+      {
+        "url": "http://127.0.0.1:18785/assets/editorial/positioning.webp",
+        "contentType": "image/webp"
+      },
+      {
+        "url": "http://127.0.0.1:18785/assets/editorial/private-viewing.webp",
+        "contentType": "image/webp"
+      },
+      {
+        "url": "http://127.0.0.1:18785/assets/editorial/market-analysis.webp",
+        "contentType": "image/webp"
+      },
+      {
+        "url": "http://127.0.0.1:18785/assets/editorial/negotiation.webp",
+        "contentType": "image/webp"
+      },
+      {
+        "url": "http://127.0.0.1:18785/assets/consultation-elena.webp",
+        "contentType": "image/webp"
+      },
+      {
+        "url": "http://127.0.0.1:18785/assets/types-02.webp",
+        "contentType": "image/webp"
+      },
+      {
+        "url": "http://127.0.0.1:18785/assets/types-01.webp",
+        "contentType": "image/webp"
+      },
+      {
+        "url": "http://127.0.0.1:18785/assets/types-03.webp",
+        "contentType": "image/webp"
+      },
+      {
+        "url": "http://127.0.0.1:18785/assets/types-04.webp",
+        "contentType": "image/webp"
+      },
+      {
+        "url": "http://127.0.0.1:18785/assets/shared/f6f65669dc22ef4fe836335c.webp",
+        "contentType": "image/webp"
+      },
+      {
+        "url": "http://127.0.0.1:18785/assets/shared/whatsapp.svg",
+        "contentType": "image/svg+xml"
+      },
+      {
+        "url": "http://127.0.0.1:18785/assets/shared/max.svg",
+        "contentType": "image/svg+xml"
+      },
+      {
+        "url": "http://127.0.0.1:18785/assets/shared/telegram.svg",
+        "contentType": "image/svg+xml"
+      },
+      {
+        "url": "http://127.0.0.1:18785/assets/expert-avatar-square.webp",
+        "contentType": "image/webp"
+      },
+      {
+        "url": "http://127.0.0.1:18785/assets/shared/home-about-logo-round-red.webp",
+        "contentType": "image/webp"
+      },
+      {
+        "url": "http://127.0.0.1:18785/assets/editorial/country-panorama.webp",
+        "contentType": "image/webp"
+      },
+      {
+        "url": "http://127.0.0.1:18785/assets/menu-featured-01.webp",
+        "contentType": "image/webp"
+      },
+      {
+        "url": "http://127.0.0.1:18785/assets/menu-featured-02.webp",
+        "contentType": "image/webp"
+      },
+      {
+        "url": "http://127.0.0.1:18785/assets/shared/8a78978e0423f444f2adbe1f.webp",
+        "contentType": "image/webp"
+      }
+    ],
+    "result": "pass"
+  }
+}
