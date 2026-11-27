@@ -1,0 +1,48 @@
+{
+  "reference": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/prodazha_sobstvennikam/",
+  "convertedAt": "2026-11-27",
+  "tool": "Sharp 0.35.5",
+  "quality": 90,
+  "images": [
+    {
+      "file": "service-city.webp",
+      "label": "Продать городскую недвижимость в Москве",
+      "source": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/prodazha_sobstvennikam/assets/types-02.png",
+      "sourceSha256": "f1cefa66d4f8cc2a5c25c8e526cec309ad3abbc39f87703f30b8857877a3069d",
+      "sha256": "5733e6167392ba9bb0229fe1977ce5aeb55096d5a8d3352a65d661ec5ed17ed9",
+      "width": 849,
+      "height": 490,
+      "bytes": 108382
+    },
+    {
+      "file": "service-spb.webp",
+      "label": "Продать недвижимость в Санкт-Петербурге",
+      "source": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/prodazha_sobstvennikam/assets/types-01.png",
+      "sourceSha256": "f780a9179fd099d091dd37d51667d38a78c62aa490e8cd96b8997f793665d628",
+      "sha256": "c4fcea4691ce04e611c0eec14482f058f85f81f3dd71d46b02e1d9c684fc86b4",
+      "width": 849,
+      "height": 490,
+      "bytes": 92572
+    },
+    {
+      "file": "service-country.webp",
+      "label": "Продать загородную недвижимость",
+      "source": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/prodazha_sobstvennikam/assets/types-03.png",
+      "sourceSha256": "7e10e0bd72639a4bb0848c048c667642d5945399ebb3402636ddc92e6064df52",
+      "sha256": "16ea18abb8b0d3d7af437a926bd5fc929e45b4f1b10f190ee29eecee8836a371",
+      "width": 849,
+      "height": 490,
+      "bytes": 71990
+    },
+    {
+      "file": "service-rent.webp",
+      "label": "Сдать недвижимость в аренду",
+      "source": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/prodazha_sobstvennikam/assets/types-04.png",
+      "sourceSha256": "398e4b6d8ad616325eaeeaeebc4c250875a0940d6bc1049971951151f96975e5",
+      "sha256": "51b77a72220655437c73ba0b32aa2a600d5ebc5f32678a19e2e26acd1a38f229",
+      "width": 849,
+      "height": 490,
+      "bytes": 81660
+    }
+  ]
+}

@@ -1,5 +1,7 @@
 # BARN Estate — страницы основного сайта
 
+- [Собственники — коммерция: постоянная папка разработчику](handoff/owner-commercial/README.md) · [ZIP](handoff/owner-commercial/owner-commercial-developer.zip) · [Посмотреть пакет](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/handoff/owner-commercial/html/index.html) · 27.11.2026.
+
 - [Собственники — загород: папка разработчику](handoff/sobstvenniki-zagorod/README.md) · [ZIP](handoff/sobstvenniki-zagorod/sobstvenniki-zagorod-developer.zip) · [Посмотреть пакет](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/handoff/sobstvenniki-zagorod/html/index.html) ·27.11.2026.
 
 

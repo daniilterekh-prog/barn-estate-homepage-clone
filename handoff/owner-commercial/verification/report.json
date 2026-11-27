@@ -1,0 +1,319 @@
+{
+  "date": "2026-11-27",
+  "url": "http://127.0.0.1:18785/html/index.html",
+  "profiles": [
+    {
+      "width": 320,
+      "forms": false,
+      "faqKeyboard": false,
+      "dialog": true,
+      "menu": true,
+      "avatar": {
+        "width": 64,
+        "height": 64,
+        "parentWidth": 64,
+        "parentHeight": 64,
+        "transform": "none",
+        "position": "50% 50%"
+      },
+      "brokenImages": 0,
+      "overflow": false,
+      "jsErrors": 0,
+      "httpErrors": 0,
+      "nonGetRequests": 0,
+      "externalRuntimeRequests": 0
+    },
+    {
+      "width": 390,
+      "forms": true,
+      "faqKeyboard": true,
+      "dialog": true,
+      "menu": true,
+      "avatar": {
+        "width": 64,
+        "height": 64,
+        "parentWidth": 64,
+        "parentHeight": 64,
+        "transform": "none",
+        "position": "50% 50%"
+      },
+      "brokenImages": 0,
+      "overflow": false,
+      "jsErrors": 0,
+      "httpErrors": 0,
+      "nonGetRequests": 0,
+      "externalRuntimeRequests": 0
+    },
+    {
+      "width": 540,
+      "forms": false,
+      "faqKeyboard": false,
+      "dialog": true,
+      "menu": true,
+      "avatar": {
+        "width": 64,
+        "height": 64,
+        "parentWidth": 64,
+        "parentHeight": 64,
+        "transform": "none",
+        "position": "50% 50%"
+      },
+      "brokenImages": 0,
+      "overflow": false,
+      "jsErrors": 0,
+      "httpErrors": 0,
+      "nonGetRequests": 0,
+      "externalRuntimeRequests": 0
+    },
+    {
+      "width": 541,
+      "forms": false,
+      "faqKeyboard": false,
+      "dialog": true,
+      "menu": true,
+      "avatar": {
+        "width": 72,
+        "height": 72,
+        "parentWidth": 72,
+        "parentHeight": 72,
+        "transform": "none",
+        "position": "50% 50%"
+      },
+      "brokenImages": 0,
+      "overflow": false,
+      "jsErrors": 0,
+      "httpErrors": 0,
+      "nonGetRequests": 0,
+      "externalRuntimeRequests": 0
+    },
+    {
+      "width": 768,
+      "forms": false,
+      "faqKeyboard": false,
+      "dialog": true,
+      "menu": true,
+      "avatar": {
+        "width": 72,
+        "height": 72,
+        "parentWidth": 72,
+        "parentHeight": 72,
+        "transform": "none",
+        "position": "50% 50%"
+      },
+      "brokenImages": 0,
+      "overflow": false,
+      "jsErrors": 0,
+      "httpErrors": 0,
+      "nonGetRequests": 0,
+      "externalRuntimeRequests": 0
+    },
+    {
+      "width": 1024,
+      "forms": false,
+      "faqKeyboard": false,
+      "dialog": true,
+      "menu": true,
+      "avatar": {
+        "width": 72,
+        "height": 72,
+        "parentWidth": 72,
+        "parentHeight": 72,
+        "transform": "none",
+        "position": "50% 50%"
+      },
+      "brokenImages": 0,
+      "overflow": false,
+      "jsErrors": 0,
+      "httpErrors": 0,
+      "nonGetRequests": 0,
+      "externalRuntimeRequests": 0
+    },
+    {
+      "width": 1025,
+      "forms": false,
+      "faqKeyboard": false,
+      "dialog": true,
+      "menu": true,
+      "avatar": {
+        "width": 72,
+        "height": 72,
+        "parentWidth": 72,
+        "parentHeight": 72,
+        "transform": "none",
+        "position": "50% 50%"
+      },
+      "brokenImages": 0,
+      "overflow": false,
+      "jsErrors": 0,
+      "httpErrors": 0,
+      "nonGetRequests": 0,
+      "externalRuntimeRequests": 0
+    },
+    {
+      "width": 1440,
+      "forms": true,
+      "faqKeyboard": true,
+      "dialog": true,
+      "menu": true,
+      "avatar": {
+        "width": 72,
+        "height": 72,
+        "parentWidth": 72,
+        "parentHeight": 72,
+        "transform": "none",
+        "position": "50% 50%"
+      },
+      "brokenImages": 0,
+      "overflow": false,
+      "jsErrors": 0,
+      "httpErrors": 0,
+      "nonGetRequests": 0,
+      "externalRuntimeRequests": 0
+    },
+    {
+      "width": 1920,
+      "forms": false,
+      "faqKeyboard": false,
+      "dialog": true,
+      "menu": true,
+      "avatar": {
+        "width": 72,
+        "height": 72,
+        "parentWidth": 72,
+        "parentHeight": 72,
+        "transform": "none",
+        "position": "50% 50%"
+      },
+      "brokenImages": 0,
+      "overflow": false,
+      "jsErrors": 0,
+      "httpErrors": 0,
+      "nonGetRequests": 0,
+      "externalRuntimeRequests": 0
+    },
+    {
+      "width": 3840,
+      "forms": false,
+      "faqKeyboard": false,
+      "dialog": true,
+      "menu": true,
+      "avatar": {
+        "width": 72,
+        "height": 72,
+        "parentWidth": 72,
+        "parentHeight": 72,
+        "transform": "none",
+        "position": "50% 50%"
+      },
+      "brokenImages": 0,
+      "overflow": false,
+      "jsErrors": 0,
+      "httpErrors": 0,
+      "nonGetRequests": 0,
+      "externalRuntimeRequests": 0
+    }
+  ],
+  "images": [
+    {
+      "url": "http://127.0.0.1:18785/assets/barn-estate-logo.svg",
+      "contentType": "image/svg+xml"
+    },
+    {
+      "url": "http://127.0.0.1:18785/assets/editorial/hero.webp",
+      "contentType": "image/webp"
+    },
+    {
+      "url": "http://127.0.0.1:18785/assets/alina-medvedeva-cta.webp",
+      "contentType": "image/webp"
+    },
+    {
+      "url": "http://127.0.0.1:18785/assets/editorial/strategy.webp",
+      "contentType": "image/webp"
+    },
+    {
+      "url": "http://127.0.0.1:18785/assets/editorial/economics.webp",
+      "contentType": "image/webp"
+    },
+    {
+      "url": "http://127.0.0.1:18785/assets/editorial/buyer.webp",
+      "contentType": "image/webp"
+    },
+    {
+      "url": "http://127.0.0.1:18785/assets/shared/telegram.svg",
+      "contentType": "image/svg+xml"
+    },
+    {
+      "url": "http://127.0.0.1:18785/assets/shared/whatsapp.svg",
+      "contentType": "image/svg+xml"
+    },
+    {
+      "url": "http://127.0.0.1:18785/assets/shared/max.svg",
+      "contentType": "image/svg+xml"
+    },
+    {
+      "url": "http://127.0.0.1:18785/assets/alina-floating-avatar.webp",
+      "contentType": "image/webp"
+    },
+    {
+      "url": "http://127.0.0.1:18785/assets/shared/home-about-logo-round-red.webp",
+      "contentType": "image/webp"
+    },
+    {
+      "url": "http://127.0.0.1:18785/assets/editorial/potential.webp",
+      "contentType": "image/webp"
+    },
+    {
+      "url": "http://127.0.0.1:18785/assets/editorial/repositioning.webp",
+      "contentType": "image/webp"
+    },
+    {
+      "url": "http://127.0.0.1:18785/assets/editorial/privacy.webp",
+      "contentType": "image/webp"
+    },
+    {
+      "url": "http://127.0.0.1:18785/assets/editorial/specialists.webp",
+      "contentType": "image/webp"
+    },
+    {
+      "url": "http://127.0.0.1:18785/assets/directions/service-city.webp",
+      "contentType": "image/webp"
+    },
+    {
+      "url": "http://127.0.0.1:18785/assets/editorial/advantages-panorama.webp",
+      "contentType": "image/webp"
+    },
+    {
+      "url": "http://127.0.0.1:18785/assets/directions/service-spb.webp",
+      "contentType": "image/webp"
+    },
+    {
+      "url": "http://127.0.0.1:18785/assets/directions/service-rent.webp",
+      "contentType": "image/webp"
+    },
+    {
+      "url": "http://127.0.0.1:18785/assets/newsletter/magazines-mobile.webp",
+      "contentType": "image/webp"
+    },
+    {
+      "url": "http://127.0.0.1:18785/assets/directions/service-country.webp",
+      "contentType": "image/webp"
+    },
+    {
+      "url": "http://127.0.0.1:18785/assets/menu-featured-01.webp",
+      "contentType": "image/webp"
+    },
+    {
+      "url": "http://127.0.0.1:18785/assets/menu-featured-02.webp",
+      "contentType": "image/webp"
+    },
+    {
+      "url": "http://127.0.0.1:18785/assets/alina-medvedeva.webp",
+      "contentType": "image/webp"
+    },
+    {
+      "url": "http://127.0.0.1:18785/assets/newsletter/magazines-desktop.webp",
+      "contentType": "image/webp"
+    }
+  ],
+  "result": "pass"
+}

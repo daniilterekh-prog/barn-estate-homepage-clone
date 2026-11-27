@@ -1,0 +1,1627 @@
+{
+  "date": "2026-11-27",
+  "canonicalRepository": "daniilterekh-prog/barnes-sites",
+  "canonicalCommit": "533a6c9dc5dd6faee76237e2162da65a2304fb70",
+  "source": "main-site/pages/собственники коммерция",
+  "publicReferenceCommit": "276592a6679d573410ab61ba204e47f0032cd638",
+  "preview": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/собственники коммерция/",
+  "entryPolicy": "Materialised public HTML is the export input; canonical source remains in barnes-sites. Archive-only extraction of inline files is not replayed into the handoff.",
+  "transform": "Relocate runtime resources; externalize inline CSS/JS; preserve design, native controllers and preview-only forms; omit unused framework preload hints. HTML navigation links retain their approved destinations as absolute links.",
+  "files": [
+    {
+      "source": "собственники коммерция/index.html",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "html/index.html",
+      "sourceSha256": "2ce54d00be184e2956dd42ede12ca3f2b336e7ad9600cc5cb9348877de96c26f",
+      "canonicalReference": "main-site/pages/собственники коммерция/index.html",
+      "canonicalSha256": "2ce54d00be184e2956dd42ede12ca3f2b336e7ad9600cc5cb9348877de96c26f"
+    },
+    {
+      "source": "собственники коммерция/source.css",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "css/source.css",
+      "sourceSha256": "3c6aab569051fd135ece39698d875f1dd83edc05580c9b7d3a7cb379906819e9",
+      "canonicalReference": "main-site/pages/собственники коммерция/source.css",
+      "canonicalSha256": "3c6aab569051fd135ece39698d875f1dd83edc05580c9b7d3a7cb379906819e9"
+    },
+    {
+      "source": "собственники коммерция/owner-sale.css",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "css/owner-sale.css",
+      "sourceSha256": "66d7d1042786b8bc83c2b71e700257bb3603e34bc4eefd4603b60c04211d58d8",
+      "canonicalReference": "main-site/pages/собственники коммерция/owner-sale.css",
+      "canonicalSha256": "66d7d1042786b8bc83c2b71e700257bb3603e34bc4eefd4603b60c04211d58d8"
+    },
+    {
+      "source": "собственники коммерция/owner-sale.js",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "js/owner-sale.js",
+      "sourceSha256": "4cea9241bf9c431bca1f325efe2fb5b5123c992396ecf36273bb832567f8bf6f",
+      "canonicalReference": "main-site/pages/собственники коммерция/owner-sale.js",
+      "canonicalSha256": "4cea9241bf9c431bca1f325efe2fb5b5123c992396ecf36273bb832567f8bf6f"
+    },
+    {
+      "source": "собственники коммерция/_site/shared/owner-mechanics.css",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "css/shared-owner-mechanics.css",
+      "sourceSha256": "eb7ed42c9009917b5eae82bc7168219f4090ad28c6c752e1c6c9c88bc7513428",
+      "canonicalReference": "main-site/pages/собственники коммерция/_site/shared/owner-mechanics.css",
+      "canonicalSha256": "eb7ed42c9009917b5eae82bc7168219f4090ad28c6c752e1c6c9c88bc7513428"
+    },
+    {
+      "source": "собственники коммерция/_site/shared/owner-panorama.css",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "css/shared-owner-panorama.css",
+      "sourceSha256": "7dea4e54a3538d40f1164ae25eb5f74355f0cdfaf51b25aec0450678f79f7c5e",
+      "canonicalReference": "main-site/pages/собственники коммерция/_site/shared/owner-panorama.css",
+      "canonicalSha256": "7dea4e54a3538d40f1164ae25eb5f74355f0cdfaf51b25aec0450678f79f7c5e"
+    },
+    {
+      "source": "собственники коммерция/_site/shared/owner-panorama.js",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "js/shared-owner-panorama.js",
+      "sourceSha256": "ab1ad2ca56a460846b8cd2378dd1736f78a90474ea525096ab4cb49f6538d511",
+      "canonicalReference": "main-site/pages/собственники коммерция/_site/shared/owner-panorama.js",
+      "canonicalSha256": "ab1ad2ca56a460846b8cd2378dd1736f78a90474ea525096ab4cb49f6538d511"
+    },
+    {
+      "source": "собственники коммерция/_site/shared/presentation-mobile.css",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "css/shared-presentation-mobile.css",
+      "sourceSha256": "2aae5b3df68322229738c1a50ab41cb0ad005da467bfae2438cc1c6bf66e110e",
+      "canonicalReference": "main-site/pages/собственники коммерция/_site/shared/presentation-mobile.css",
+      "canonicalSha256": "2aae5b3df68322229738c1a50ab41cb0ad005da467bfae2438cc1c6bf66e110e"
+    },
+    {
+      "source": "собственники коммерция/_site/shared/anchor-navigation.css",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "css/shared-anchor-navigation.css",
+      "sourceSha256": "fddf6c892c5be3414dc22056fe00df3b6cfc329e034fb29428f77cb5ab1705ea",
+      "canonicalReference": "main-site/pages/собственники коммерция/_site/shared/anchor-navigation.css",
+      "canonicalSha256": "fddf6c892c5be3414dc22056fe00df3b6cfc329e034fb29428f77cb5ab1705ea"
+    },
+    {
+      "source": "собственники коммерция/_site/shared/expert-avatar.css",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "css/shared-expert-avatar.css",
+      "sourceSha256": "bd28c32d8d15b64f97aad45335f77a4f4b92281c5d905c74242ff51f892a6afa",
+      "canonicalReference": "main-site/pages/собственники коммерция/_site/shared/expert-avatar.css",
+      "canonicalSha256": "bd28c32d8d15b64f97aad45335f77a4f4b92281c5d905c74242ff51f892a6afa"
+    },
+    {
+      "source": "собственники коммерция/_site/shared/expert-avatar.js",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "js/shared-expert-avatar.js",
+      "sourceSha256": "924ce58da7056329b5f82a36aedac1ec8d770b04a705829cc0956bcfda6d9fcb",
+      "canonicalReference": "main-site/pages/собственники коммерция/_site/shared/expert-avatar.js",
+      "canonicalSha256": "924ce58da7056329b5f82a36aedac1ec8d770b04a705829cc0956bcfda6d9fcb"
+    },
+    {
+      "source": "собственники коммерция/page-kit.css",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "css/page-kit.css",
+      "sourceSha256": "49bc6097d1dad04271ffc2fa917400c312b9604432f9c94cde774a84ce35663c",
+      "canonicalReference": "main-site/pages/собственники коммерция/page-kit.css",
+      "canonicalSha256": "49bc6097d1dad04271ffc2fa917400c312b9604432f9c94cde774a84ce35663c"
+    },
+    {
+      "source": "собственники коммерция/brand-nowrap.css",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "css/brand-nowrap.css",
+      "sourceSha256": "09ea8dedc25f5cbc24540b51aba46a441634eb410cec1d4c49a8b2fc479f7967",
+      "canonicalReference": "main-site/pages/собственники коммерция/brand-nowrap.css",
+      "canonicalSha256": "09ea8dedc25f5cbc24540b51aba46a441634eb410cec1d4c49a8b2fc479f7967"
+    },
+    {
+      "source": "собственники коммерция/brand-nowrap.js",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "js/brand-nowrap.js",
+      "sourceSha256": "55c3b91fbb6c5069fa49ee63c7cf5967d85ab5d48006fbe006609f46355ed5fa",
+      "canonicalReference": "main-site/pages/собственники коммерция/brand-nowrap.js",
+      "canonicalSha256": "55c3b91fbb6c5069fa49ee63c7cf5967d85ab5d48006fbe006609f46355ed5fa"
+    },
+    {
+      "source": "собственники коммерция/_site/shared/about-home.css",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "css/shared-about-home.css",
+      "sourceSha256": "7a557a16b6602dc9505d6e0e68607e5f5671ae7be16828b911f841279a8831d5",
+      "canonicalReference": "main-site/pages/собственники коммерция/_site/shared/about-home.css",
+      "canonicalSha256": "7a557a16b6602dc9505d6e0e68607e5f5671ae7be16828b911f841279a8831d5"
+    },
+    {
+      "source": "собственники коммерция/_site/shared/about-home.js",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "js/shared-about-home.js",
+      "sourceSha256": "148ef27c873372c79eb1fe6dd7d6de7bce78017ce5baf31d52487f90b7c705e3",
+      "canonicalReference": "main-site/pages/собственники коммерция/_site/shared/about-home.js",
+      "canonicalSha256": "148ef27c873372c79eb1fe6dd7d6de7bce78017ce5baf31d52487f90b7c705e3"
+    },
+    {
+      "source": "собственники коммерция/_site/shared/cta-bleed.css",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "css/shared-cta-bleed.css",
+      "sourceSha256": "d892ba286df8056cbf94809a56c7c03339ab9b88495612d67019ec893dfb804e",
+      "canonicalReference": "main-site/pages/собственники коммерция/_site/shared/cta-bleed.css",
+      "canonicalSha256": "d892ba286df8056cbf94809a56c7c03339ab9b88495612d67019ec893dfb804e"
+    },
+    {
+      "source": "собственники коммерция/_site/shared/cta-bleed.js",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "js/shared-cta-bleed.js",
+      "sourceSha256": "45d164865450e12665bf787ca4941858a46d653483c5e8244fb5d01c41e87b98",
+      "canonicalReference": "main-site/pages/собственники коммерция/_site/shared/cta-bleed.js",
+      "canonicalSha256": "45d164865450e12665bf787ca4941858a46d653483c5e8244fb5d01c41e87b98"
+    },
+    {
+      "source": "собственники коммерция/_site/shared/cta-resort.css",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "css/shared-cta-resort.css",
+      "sourceSha256": "0fbe5b5ac5d2676858a15505195fa8a353d8952f61cdd155fd2eac327ba18eae",
+      "canonicalReference": "main-site/pages/собственники коммерция/_site/shared/cta-resort.css",
+      "canonicalSha256": "0fbe5b5ac5d2676858a15505195fa8a353d8952f61cdd155fd2eac327ba18eae"
+    },
+    {
+      "source": "собственники коммерция/_site/shared/cta-resort.js",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "js/shared-cta-resort.js",
+      "sourceSha256": "2252a1787aa3d465fc521e87b3181d9b9f9d6818c9b52dd5588a9e917e83e3fb",
+      "canonicalReference": "main-site/pages/собственники коммерция/_site/shared/cta-resort.js",
+      "canonicalSha256": "2252a1787aa3d465fc521e87b3181d9b9f9d6818c9b52dd5588a9e917e83e3fb"
+    },
+    {
+      "source": "собственники коммерция/_site/shared/slider-controls.css",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "css/shared-slider-controls.css",
+      "sourceSha256": "a9d6b5ec1e88e1f25f7fbee31b237064357124f96258faf81b1601b7d26dd6d8",
+      "canonicalReference": "main-site/pages/собственники коммерция/_site/shared/slider-controls.css",
+      "canonicalSha256": "a9d6b5ec1e88e1f25f7fbee31b237064357124f96258faf81b1601b7d26dd6d8"
+    },
+    {
+      "source": "собственники коммерция/_site/shared/slider-controls.js",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "js/shared-slider-controls.js",
+      "sourceSha256": "dce5bdecd97ff41e7e21efe56e5a22942f080f99ba1dac9081cf00f98de7ef03",
+      "canonicalReference": "main-site/pages/собственники коммерция/_site/shared/slider-controls.js",
+      "canonicalSha256": "dce5bdecd97ff41e7e21efe56e5a22942f080f99ba1dac9081cf00f98de7ef03"
+    },
+    {
+      "source": "собственники коммерция/_site/shared/card-gaps.css",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "css/shared-card-gaps.css",
+      "sourceSha256": "efb542f53c1aa677a28f3cf4f8eac15b1ffa0267c209a553465bb7249bb401bc",
+      "canonicalReference": "main-site/pages/собственники коммерция/_site/shared/card-gaps.css",
+      "canonicalSha256": "efb542f53c1aa677a28f3cf4f8eac15b1ffa0267c209a553465bb7249bb401bc"
+    },
+    {
+      "source": "собственники коммерция/_site/shared/services-layout.css",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "css/shared-services-layout.css",
+      "sourceSha256": "d187a06f1b490b1c50647a95cda77d9e9e0bf026ecfb65de3ef05212c279bf04",
+      "canonicalReference": "main-site/pages/собственники коммерция/_site/shared/services-layout.css",
+      "canonicalSha256": "d187a06f1b490b1c50647a95cda77d9e9e0bf026ecfb65de3ef05212c279bf04"
+    },
+    {
+      "source": "собственники коммерция/_site/shared/newsletter-home.css",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "css/shared-newsletter-home.css",
+      "sourceSha256": "14e3d47b57b96ed37c4dab0d8f9c833ea1a32f7b0f2357e33230e77189247cf3",
+      "canonicalReference": "main-site/pages/собственники коммерция/_site/shared/newsletter-home.css",
+      "canonicalSha256": "14e3d47b57b96ed37c4dab0d8f9c833ea1a32f7b0f2357e33230e77189247cf3"
+    },
+    {
+      "source": "собственники коммерция/_site/shared/newsletter-home.js",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "js/shared-newsletter-home.js",
+      "sourceSha256": "6d1fa8e1a8aca3dcd35d850bd23e2665b1c6ef0c2823732a23fa501ffa3992b8",
+      "canonicalReference": "main-site/pages/собственники коммерция/_site/shared/newsletter-home.js",
+      "canonicalSha256": "6d1fa8e1a8aca3dcd35d850bd23e2665b1c6ef0c2823732a23fa501ffa3992b8"
+    },
+    {
+      "source": "собственники коммерция/hero-laptop.css",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "css/hero-laptop.css",
+      "sourceSha256": "4d092d1301257b5f197a31f6ec0461afbd8643687871f7c9b8bdb3d883bbe1a6",
+      "canonicalReference": "main-site/pages/собственники коммерция/hero-laptop.css",
+      "canonicalSha256": "4d092d1301257b5f197a31f6ec0461afbd8643687871f7c9b8bdb3d883bbe1a6"
+    },
+    {
+      "source": "собственники коммерция/_site/shared/layout-gutters.css",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "css/shared-layout-gutters.css",
+      "sourceSha256": "9c7ccfabdd5541cf007cac9a40fe23131f1fb2f28964c529d9e6f7bac9851bb1",
+      "canonicalReference": "main-site/pages/собственники коммерция/_site/shared/layout-gutters.css",
+      "canonicalSha256": "9c7ccfabdd5541cf007cac9a40fe23131f1fb2f28964c529d9e6f7bac9851bb1"
+    },
+    {
+      "source": "собственники коммерция/_site/shared/page-breadcrumbs.css",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "css/shared-page-breadcrumbs.css",
+      "sourceSha256": "7a58ed93dc94357053343f42781a513a93b66b3f6c61f0f9a6c0e26bcaef7d30",
+      "canonicalReference": "main-site/pages/собственники коммерция/_site/shared/page-breadcrumbs.css",
+      "canonicalSha256": "7a58ed93dc94357053343f42781a513a93b66b3f6c61f0f9a6c0e26bcaef7d30"
+    },
+    {
+      "source": "собственники коммерция/_site/shared/footer-links.css",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "css/shared-footer-links.css",
+      "sourceSha256": "454a2301171e3882b500b819aa9bb46dcc67280c90bf0f4cd73729485a6b0066",
+      "canonicalReference": "main-site/pages/собственники коммерция/_site/shared/footer-links.css",
+      "canonicalSha256": "454a2301171e3882b500b819aa9bb46dcc67280c90bf0f4cd73729485a6b0066"
+    },
+    {
+      "source": "собственники коммерция/_site/shared/owner-header.css",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "css/shared-owner-header.css",
+      "sourceSha256": "305d85f67f82cf4b3a207ca8ff94fe1ffd4bf3a26da8d98d00b00fc0409f4333",
+      "canonicalReference": "main-site/pages/собственники коммерция/_site/shared/owner-header.css",
+      "canonicalSha256": "305d85f67f82cf4b3a207ca8ff94fe1ffd4bf3a26da8d98d00b00fc0409f4333"
+    },
+    {
+      "source": "собственники коммерция/media-reference.css",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "css/media-reference.css",
+      "sourceSha256": "108763d774ad2bd6cf0275acb84fc8dead0a15afc908015758f8ed1e37771355",
+      "canonicalReference": "main-site/pages/собственники коммерция/media-reference.css",
+      "canonicalSha256": "108763d774ad2bd6cf0275acb84fc8dead0a15afc908015758f8ed1e37771355"
+    },
+    {
+      "source": "собственники коммерция/media-header.css",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "css/media-header.css",
+      "sourceSha256": "5dec0c68563d19025d56563c3118cb64725c2e551b135d1b67e8505d9713b941",
+      "canonicalReference": "main-site/pages/собственники коммерция/media-header.css",
+      "canonicalSha256": "5dec0c68563d19025d56563c3118cb64725c2e551b135d1b67e8505d9713b941"
+    },
+    {
+      "source": "собственники коммерция/hero.css",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "css/hero.css",
+      "sourceSha256": "002bf2d2c75f7ec115686583aaf4c007c82f0a93884dcef8ef52570cf22ae81d",
+      "canonicalReference": "main-site/pages/собственники коммерция/hero.css",
+      "canonicalSha256": "002bf2d2c75f7ec115686583aaf4c007c82f0a93884dcef8ef52570cf22ae81d"
+    },
+    {
+      "source": "собственники коммерция/_site/exact-2026-10-21/home-owner-form.css",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "css/home-home-owner-form.css",
+      "sourceSha256": "5312ef62e68fefcb95a3c1f7c4cc6eba0b4fcf34cbe71ebeefd06fecb9a6a408",
+      "canonicalReference": "main-site/pages/собственники коммерция/_site/exact-2026-10-21/home-owner-form.css",
+      "canonicalSha256": "5312ef62e68fefcb95a3c1f7c4cc6eba0b4fcf34cbe71ebeefd06fecb9a6a408"
+    },
+    {
+      "source": "собственники коммерция/_site/shared/expert-dialog.css",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "css/shared-expert-dialog.css",
+      "sourceSha256": "59427a1afb5c95f9eb477aa6c69aa38564f4c2e9439c85e31b57f86cf42af483",
+      "canonicalReference": "main-site/pages/собственники коммерция/_site/shared/expert-dialog.css",
+      "canonicalSha256": "59427a1afb5c95f9eb477aa6c69aa38564f4c2e9439c85e31b57f86cf42af483"
+    },
+    {
+      "source": "собственники коммерция/commercial-footer.css",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "css/commercial-footer.css",
+      "sourceSha256": "4ce08debf33f6ff9e7e8366cc8c1f8c4353987bfaef0bc17a02d1530e30203f1",
+      "canonicalReference": "main-site/pages/собственники коммерция/commercial-footer.css",
+      "canonicalSha256": "4ce08debf33f6ff9e7e8366cc8c1f8c4353987bfaef0bc17a02d1530e30203f1"
+    },
+    {
+      "source": "собственники коммерция/commercial.css",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "css/commercial.css",
+      "sourceSha256": "21daea3335520f40060fee3546bf8b639046600c632bbcc56051f2a167aa6874",
+      "canonicalReference": "main-site/pages/собственники коммерция/commercial.css",
+      "canonicalSha256": "21daea3335520f40060fee3546bf8b639046600c632bbcc56051f2a167aa6874"
+    },
+    {
+      "source": "собственники коммерция/commercial-faq.css",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "css/commercial-faq.css",
+      "sourceSha256": "4723a3023f182bf443b69d0794a0a46bb6eac686ae0e25afd4d5f27597f6c0df",
+      "canonicalReference": "main-site/pages/собственники коммерция/commercial-faq.css",
+      "canonicalSha256": "4723a3023f182bf443b69d0794a0a46bb6eac686ae0e25afd4d5f27597f6c0df"
+    },
+    {
+      "source": "собственники коммерция/assets/barn-estate-logo.svg",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "assets/barn-estate-logo.svg",
+      "sourceSha256": "9b2d8c1a7d4d213587828c6bdf6592a37113a388fedc1b58211534d8cb1e7123",
+      "canonicalReference": "main-site/pages/собственники коммерция/assets/barn-estate-logo.svg",
+      "canonicalSha256": "9b2d8c1a7d4d213587828c6bdf6592a37113a388fedc1b58211534d8cb1e7123"
+    },
+    {
+      "source": "собственники коммерция/assets/editorial/hero.webp",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "assets/editorial/hero.webp",
+      "sourceSha256": "66b69abcd2b54fd3f5bf74f14fa2d8a17fb502ad7a9155afc0c963df7a139edf",
+      "canonicalReference": "main-site/pages/собственники коммерция/assets/editorial/hero.webp",
+      "canonicalSha256": "66b69abcd2b54fd3f5bf74f14fa2d8a17fb502ad7a9155afc0c963df7a139edf"
+    },
+    {
+      "source": "собственники коммерция/assets/editorial/strategy.webp",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "assets/editorial/strategy.webp",
+      "sourceSha256": "08adeaf2b91d00d0ea73f7ecbabea83034d3ccdf45dcccb75d15cbe721338967",
+      "canonicalReference": "main-site/pages/собственники коммерция/assets/editorial/strategy.webp",
+      "canonicalSha256": "08adeaf2b91d00d0ea73f7ecbabea83034d3ccdf45dcccb75d15cbe721338967"
+    },
+    {
+      "source": "собственники коммерция/assets/editorial/economics.webp",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "assets/editorial/economics.webp",
+      "sourceSha256": "83c0a62f0eb260970838eb9318bd382bb981e2b60ae62f09dabe8afd4e0d25ca",
+      "canonicalReference": "main-site/pages/собственники коммерция/assets/editorial/economics.webp",
+      "canonicalSha256": "83c0a62f0eb260970838eb9318bd382bb981e2b60ae62f09dabe8afd4e0d25ca"
+    },
+    {
+      "source": "собственники коммерция/assets/editorial/buyer.webp",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "assets/editorial/buyer.webp",
+      "sourceSha256": "2f8f49e9137f00a9e12ba5ca4398f98cac949d4e157cbd0065ed482345fb900e",
+      "canonicalReference": "main-site/pages/собственники коммерция/assets/editorial/buyer.webp",
+      "canonicalSha256": "2f8f49e9137f00a9e12ba5ca4398f98cac949d4e157cbd0065ed482345fb900e"
+    },
+    {
+      "source": "собственники коммерция/assets/editorial/potential.webp",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "assets/editorial/potential.webp",
+      "sourceSha256": "c220206e7bfdae8b314a5c031dfe4525211eec657b7f9fe32d54743e567d39fb",
+      "canonicalReference": "main-site/pages/собственники коммерция/assets/editorial/potential.webp",
+      "canonicalSha256": "c220206e7bfdae8b314a5c031dfe4525211eec657b7f9fe32d54743e567d39fb"
+    },
+    {
+      "source": "собственники коммерция/assets/editorial/specialists.webp",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "assets/editorial/specialists.webp",
+      "sourceSha256": "4ec8b6b81177869cd4cc9c1bc254916dacb623e900479546384aed60d249e04e",
+      "canonicalReference": "main-site/pages/собственники коммерция/assets/editorial/specialists.webp",
+      "canonicalSha256": "4ec8b6b81177869cd4cc9c1bc254916dacb623e900479546384aed60d249e04e"
+    },
+    {
+      "source": "собственники коммерция/assets/editorial/repositioning.webp",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "assets/editorial/repositioning.webp",
+      "sourceSha256": "1b7b137c3d0d987b0380ce095a4c076785fc441478872d8e986488d8ebbaf5de",
+      "canonicalReference": "main-site/pages/собственники коммерция/assets/editorial/repositioning.webp",
+      "canonicalSha256": "1b7b137c3d0d987b0380ce095a4c076785fc441478872d8e986488d8ebbaf5de"
+    },
+    {
+      "source": "собственники коммерция/assets/editorial/privacy.webp",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "assets/editorial/privacy.webp",
+      "sourceSha256": "98e374158d7b17116a33b63074c4c5357ab37ffc78bba1c434efe51518f12c08",
+      "canonicalReference": "main-site/pages/собственники коммерция/assets/editorial/privacy.webp",
+      "canonicalSha256": "98e374158d7b17116a33b63074c4c5357ab37ffc78bba1c434efe51518f12c08"
+    },
+    {
+      "source": "собственники коммерция/assets/alina-medvedeva-cta.webp",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "assets/alina-medvedeva-cta.webp",
+      "sourceSha256": "849bc06a25cd8daa24bb642b6a7f19e6efdbf6989471fd1f9ca6cd183ff508c7",
+      "canonicalReference": "main-site/pages/собственники коммерция/assets/alina-medvedeva-cta.webp",
+      "canonicalSha256": "849bc06a25cd8daa24bb642b6a7f19e6efdbf6989471fd1f9ca6cd183ff508c7"
+    },
+    {
+      "source": "собственники коммерция/assets/directions/service-city.webp",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "assets/directions/service-city.webp",
+      "sourceSha256": "5733e6167392ba9bb0229fe1977ce5aeb55096d5a8d3352a65d661ec5ed17ed9",
+      "canonicalReference": "main-site/pages/собственники коммерция/assets/directions/service-city.webp",
+      "canonicalSha256": "5733e6167392ba9bb0229fe1977ce5aeb55096d5a8d3352a65d661ec5ed17ed9"
+    },
+    {
+      "source": "собственники коммерция/assets/directions/service-spb.webp",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "assets/directions/service-spb.webp",
+      "sourceSha256": "c4fcea4691ce04e611c0eec14482f058f85f81f3dd71d46b02e1d9c684fc86b4",
+      "canonicalReference": "main-site/pages/собственники коммерция/assets/directions/service-spb.webp",
+      "canonicalSha256": "c4fcea4691ce04e611c0eec14482f058f85f81f3dd71d46b02e1d9c684fc86b4"
+    },
+    {
+      "source": "собственники коммерция/assets/directions/service-country.webp",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "assets/directions/service-country.webp",
+      "sourceSha256": "16ea18abb8b0d3d7af437a926bd5fc929e45b4f1b10f190ee29eecee8836a371",
+      "canonicalReference": "main-site/pages/собственники коммерция/assets/directions/service-country.webp",
+      "canonicalSha256": "16ea18abb8b0d3d7af437a926bd5fc929e45b4f1b10f190ee29eecee8836a371"
+    },
+    {
+      "source": "собственники коммерция/assets/directions/service-rent.webp",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "assets/directions/service-rent.webp",
+      "sourceSha256": "51b77a72220655437c73ba0b32aa2a600d5ebc5f32678a19e2e26acd1a38f229",
+      "canonicalReference": "main-site/pages/собственники коммерция/assets/directions/service-rent.webp",
+      "canonicalSha256": "51b77a72220655437c73ba0b32aa2a600d5ebc5f32678a19e2e26acd1a38f229"
+    },
+    {
+      "source": "собственники коммерция/assets/newsletter/magazines-mobile.webp",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "assets/newsletter/magazines-mobile.webp",
+      "sourceSha256": "3285d219f1845deb8887ba3bc04b8e79ce8d3bec99dd568d8a51b8c5fa8bf9af",
+      "canonicalReference": "main-site/pages/собственники коммерция/assets/newsletter/magazines-mobile.webp",
+      "canonicalSha256": "3285d219f1845deb8887ba3bc04b8e79ce8d3bec99dd568d8a51b8c5fa8bf9af"
+    },
+    {
+      "source": "собственники коммерция/assets/newsletter/magazines-desktop.webp",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "assets/newsletter/magazines-desktop.webp",
+      "sourceSha256": "a59b66d0d7fdeda1b0b0726fc2b9f0f23450da792c5cff66bba1482a09d8774f",
+      "canonicalReference": "main-site/pages/собственники коммерция/assets/newsletter/magazines-desktop.webp",
+      "canonicalSha256": "a59b66d0d7fdeda1b0b0726fc2b9f0f23450da792c5cff66bba1482a09d8774f"
+    },
+    {
+      "source": "собственники коммерция/assets/menu-featured-01.webp",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "assets/menu-featured-01.webp",
+      "sourceSha256": "5fa04d6f84449d6e8e24aa5fe80d2d071efa651a4f4da16d3b694a65f5a6f31b",
+      "canonicalReference": "main-site/pages/собственники коммерция/assets/menu-featured-01.webp",
+      "canonicalSha256": "5fa04d6f84449d6e8e24aa5fe80d2d071efa651a4f4da16d3b694a65f5a6f31b"
+    },
+    {
+      "source": "собственники коммерция/assets/menu-featured-02.webp",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "assets/menu-featured-02.webp",
+      "sourceSha256": "0118984b23a5ee9ed8908973ee9106ad69cad1932458df2985ed9dec6362f43b",
+      "canonicalReference": "main-site/pages/собственники коммерция/assets/menu-featured-02.webp",
+      "canonicalSha256": "0118984b23a5ee9ed8908973ee9106ad69cad1932458df2985ed9dec6362f43b"
+    },
+    {
+      "source": "собственники коммерция/_site/shared/anchor-navigation.js",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "js/shared-anchor-navigation.js",
+      "sourceSha256": "d42478c6de2973d4261daac172ae08634f4a3ba39bf8cd3ce617ad1f719e1ca9",
+      "canonicalReference": "main-site/pages/собственники коммерция/_site/shared/anchor-navigation.js",
+      "canonicalSha256": "d42478c6de2973d4261daac172ae08634f4a3ba39bf8cd3ce617ad1f719e1ca9"
+    },
+    {
+      "source": "собственники коммерция/media-header.js",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "js/media-header.js",
+      "sourceSha256": "9434e924fd46edf2b97a3d9d1473505052dd64b4c5d8f3c9419baea0cc52449c",
+      "canonicalReference": "main-site/pages/собственники коммерция/media-header.js",
+      "canonicalSha256": "9434e924fd46edf2b97a3d9d1473505052dd64b4c5d8f3c9419baea0cc52449c"
+    },
+    {
+      "source": "собственники коммерция/_site/shared/expert-dialog.js",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "js/shared-expert-dialog.js",
+      "sourceSha256": "cfcfac43934d1b1307fb80cc6e6c94d128a84d49ae34311e31d5b7ded02ed713",
+      "canonicalReference": "main-site/pages/собственники коммерция/_site/shared/expert-dialog.js",
+      "canonicalSha256": "cfcfac43934d1b1307fb80cc6e6c94d128a84d49ae34311e31d5b7ded02ed713"
+    },
+    {
+      "source": "собственники коммерция/assets/alina-medvedeva.webp",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "assets/alina-medvedeva.webp",
+      "sourceSha256": "2be4ad39d69423f267becc1f06cfb67b1776e123833c023c48b4615244a82cf1",
+      "canonicalReference": "main-site/pages/собственники коммерция/assets/alina-medvedeva.webp",
+      "canonicalSha256": "2be4ad39d69423f267becc1f06cfb67b1776e123833c023c48b4615244a82cf1"
+    },
+    {
+      "source": "собственники коммерция/commercial.js",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "js/commercial.js",
+      "sourceSha256": "8dd49786da1a8a06efdf3e640e1f1d4fbdacdca409cae39e0103cdfd456c16dc",
+      "canonicalReference": "main-site/pages/собственники коммерция/commercial.js",
+      "canonicalSha256": "8dd49786da1a8a06efdf3e640e1f1d4fbdacdca409cae39e0103cdfd456c16dc"
+    },
+    {
+      "source": "собственники коммерция/_site/shared/page-breadcrumbs.js",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "js/shared-page-breadcrumbs.js",
+      "sourceSha256": "509ca8c4ee3eb6b1cbb6148eb4f5862eb10e51e849808af5e8e8021e74649676",
+      "canonicalReference": "main-site/pages/собственники коммерция/_site/shared/page-breadcrumbs.js",
+      "canonicalSha256": "509ca8c4ee3eb6b1cbb6148eb4f5862eb10e51e849808af5e8e8021e74649676"
+    },
+    {
+      "source": "fonts/TildaSans-Light.woff2",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "assets/fonts/TildaSans-Light.woff2",
+      "sourceSha256": "f0f2c165784c72343618a7c2cbde00e45dbb9b09af5149984792f280cac9642e",
+      "canonicalReference": null,
+      "canonicalSha256": null
+    },
+    {
+      "source": "fonts/TildaSans-Regular.woff2",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "assets/fonts/TildaSans-Regular.woff2",
+      "sourceSha256": "2670dad44ca6c2a1b9bbdbf1af6d8db9173f2dbe31604e80bdf9599b55047d41",
+      "canonicalReference": null,
+      "canonicalSha256": null
+    },
+    {
+      "source": "fonts/TildaSans-Medium.woff2",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "assets/fonts/TildaSans-Medium.woff2",
+      "sourceSha256": "f716269e361f466570f37bc920988c619ddc8a7828c5949c1c56a731a320ab47",
+      "canonicalReference": null,
+      "canonicalSha256": null
+    },
+    {
+      "source": "pictures/floating-expert/old-money-interior.webp",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "assets/shared/old-money-interior.webp",
+      "sourceSha256": "9509f5dd4efa3674e55b1ca7c6689298da37c3ba47588c98f1a9e6f1420aeb88",
+      "canonicalReference": null,
+      "canonicalSha256": null
+    },
+    {
+      "source": "собственники коммерция/assets/fonts/TildaSans-Light.woff2",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "assets/fonts/TildaSans-Light-f0f2c165.woff2",
+      "sourceSha256": "f0f2c165784c72343618a7c2cbde00e45dbb9b09af5149984792f280cac9642e",
+      "canonicalReference": "main-site/pages/собственники коммерция/assets/fonts/TildaSans-Light.woff2",
+      "canonicalSha256": "f0f2c165784c72343618a7c2cbde00e45dbb9b09af5149984792f280cac9642e"
+    },
+    {
+      "source": "собственники коммерция/assets/fonts/TildaSans-Regular.woff2",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "assets/fonts/TildaSans-Regular-2670dad4.woff2",
+      "sourceSha256": "2670dad44ca6c2a1b9bbdbf1af6d8db9173f2dbe31604e80bdf9599b55047d41",
+      "canonicalReference": "main-site/pages/собственники коммерция/assets/fonts/TildaSans-Regular.woff2",
+      "canonicalSha256": "2670dad44ca6c2a1b9bbdbf1af6d8db9173f2dbe31604e80bdf9599b55047d41"
+    },
+    {
+      "source": "собственники коммерция/assets/fonts/TildaSans-Medium.woff2",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "assets/fonts/TildaSans-Medium-f716269e.woff2",
+      "sourceSha256": "f716269e361f466570f37bc920988c619ddc8a7828c5949c1c56a731a320ab47",
+      "canonicalReference": "main-site/pages/собственники коммерция/assets/fonts/TildaSans-Medium.woff2",
+      "canonicalSha256": "f716269e361f466570f37bc920988c619ddc8a7828c5949c1c56a731a320ab47"
+    },
+    {
+      "source": "собственники коммерция/assets/fonts/TildaSans-Semibold.woff2",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "assets/fonts/TildaSans-Semibold.woff2",
+      "sourceSha256": "3814f8c444073262523050f3554c6f09cb49353e1f6fdc22a3561d354a231439",
+      "canonicalReference": "main-site/pages/собственники коммерция/assets/fonts/TildaSans-Semibold.woff2",
+      "canonicalSha256": "3814f8c444073262523050f3554c6f09cb49353e1f6fdc22a3561d354a231439"
+    },
+    {
+      "source": "собственники коммерция/assets/fonts/TildaSans-Bold.woff2",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "assets/fonts/TildaSans-Bold.woff2",
+      "sourceSha256": "a2690df6fe8348066df79e3a3421a3a9bc0b058cc536f3d846f782ea5337afec",
+      "canonicalReference": "main-site/pages/собственники коммерция/assets/fonts/TildaSans-Bold.woff2",
+      "canonicalSha256": "a2690df6fe8348066df79e3a3421a3a9bc0b058cc536f3d846f782ea5337afec"
+    },
+    {
+      "source": "собственники коммерция/assets/fonts/TildaSans-ExtraBold.woff2",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "assets/fonts/TildaSans-ExtraBold.woff2",
+      "sourceSha256": "726a3a878465a590443308ea9e14459ab5943f699cff4887c844af4ed76ce577",
+      "canonicalReference": "main-site/pages/собственники коммерция/assets/fonts/TildaSans-ExtraBold.woff2",
+      "canonicalSha256": "726a3a878465a590443308ea9e14459ab5943f699cff4887c844af4ed76ce577"
+    },
+    {
+      "source": "собственники коммерция/assets/fonts/TildaSans-Black.woff2",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "assets/fonts/TildaSans-Black.woff2",
+      "sourceSha256": "73abed6708c43912dbd5c2760147f72462887ccd803522a1486209ca1e97031a",
+      "canonicalReference": "main-site/pages/собственники коммерция/assets/fonts/TildaSans-Black.woff2",
+      "canonicalSha256": "73abed6708c43912dbd5c2760147f72462887ccd803522a1486209ca1e97031a"
+    },
+    {
+      "source": "собственники коммерция/assets/modal-request.webp",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "assets/modal-request.webp",
+      "sourceSha256": "cb1ac940c0a5bc83fa9285b6fd4060c10d7ca2b177f73b4d9404a1e4c9210d17",
+      "canonicalReference": "main-site/pages/собственники коммерция/assets/modal-request.webp",
+      "canonicalSha256": "cb1ac940c0a5bc83fa9285b6fd4060c10d7ca2b177f73b4d9404a1e4c9210d17"
+    },
+    {
+      "source": "собственники коммерция/assets/floating-expert-bg.webp",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "assets/floating-expert-bg.webp",
+      "sourceSha256": "9509f5dd4efa3674e55b1ca7c6689298da37c3ba47588c98f1a9e6f1420aeb88",
+      "canonicalReference": "main-site/pages/собственники коммерция/assets/floating-expert-bg.webp",
+      "canonicalSha256": "9509f5dd4efa3674e55b1ca7c6689298da37c3ba47588c98f1a9e6f1420aeb88"
+    },
+    {
+      "source": "собственники коммерция/_site/pictures/office-contact/whatsapp.svg",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "assets/shared/whatsapp.svg",
+      "sourceSha256": "3e197e0e1f3e679ee09823c75e1c7bad3a19da9bd1ba01df395268b9ae91816f",
+      "canonicalReference": "main-site/pages/собственники коммерция/_site/pictures/office-contact/whatsapp.svg",
+      "canonicalSha256": "3e197e0e1f3e679ee09823c75e1c7bad3a19da9bd1ba01df395268b9ae91816f"
+    },
+    {
+      "source": "собственники коммерция/_site/pictures/office-contact/max.svg",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "assets/shared/max.svg",
+      "sourceSha256": "5caa61a4b0731d0d89421b4fb24f41433025e5aea59155a14cf3a3fada6c9174",
+      "canonicalReference": "main-site/pages/собственники коммерция/_site/pictures/office-contact/max.svg",
+      "canonicalSha256": "5caa61a4b0731d0d89421b4fb24f41433025e5aea59155a14cf3a3fada6c9174"
+    },
+    {
+      "source": "собственники коммерция/_site/pictures/office-contact/telegram.svg",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "assets/shared/telegram.svg",
+      "sourceSha256": "4435c9a57e165a1c3b7f27e0b5b11b82b10d674ea4fff7f6748cb67b7fcb994e",
+      "canonicalReference": "main-site/pages/собственники коммерция/_site/pictures/office-contact/telegram.svg",
+      "canonicalSha256": "4435c9a57e165a1c3b7f27e0b5b11b82b10d674ea4fff7f6748cb67b7fcb994e"
+    },
+    {
+      "source": "собственники коммерция/assets/alina-floating-avatar.webp",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "assets/alina-floating-avatar.webp",
+      "sourceSha256": "e877387e3f8f919894e58460909f8dc52490cac789d7869eb2f2929da258099f",
+      "canonicalReference": "main-site/pages/собственники коммерция/assets/alina-floating-avatar.webp",
+      "canonicalSha256": "e877387e3f8f919894e58460909f8dc52490cac789d7869eb2f2929da258099f"
+    },
+    {
+      "source": "собственники коммерция/assets/editorial/advantages-panorama.webp",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "assets/editorial/advantages-panorama.webp",
+      "sourceSha256": "cb76beaffda8406f5c85147586fe65c595996d3027f9f1a6a7a38120b7a4370b",
+      "canonicalReference": "main-site/pages/собственники коммерция/assets/editorial/advantages-panorama.webp",
+      "canonicalSha256": "cb76beaffda8406f5c85147586fe65c595996d3027f9f1a6a7a38120b7a4370b"
+    },
+    {
+      "source": "собственники коммерция/_site/shared/assets/home-about-logo-round-red.webp",
+      "repository": "daniilterekh-prog/barn-estate-homepage-clone",
+      "file": "assets/shared/home-about-logo-round-red.webp",
+      "sourceSha256": "5f595f5a67a3568be8b035657cf437233f54b6490b238a59d3192cf4ec2a18d0",
+      "canonicalReference": "main-site/pages/собственники коммерция/_site/shared/assets/home-about-logo-round-red.webp",
+      "canonicalSha256": "5f595f5a67a3568be8b035657cf437233f54b6490b238a59d3192cf4ec2a18d0"
+    }
+  ],
+  "references": [
+    {
+      "owner": "собственники коммерция/source.css",
+      "before": "assets/fonts/TildaSans-Light.woff2",
+      "after": "../assets/fonts/TildaSans-Light-f0f2c165.woff2"
+    },
+    {
+      "owner": "собственники коммерция/source.css",
+      "before": "assets/fonts/TildaSans-Regular.woff2",
+      "after": "../assets/fonts/TildaSans-Regular-2670dad4.woff2"
+    },
+    {
+      "owner": "собственники коммерция/source.css",
+      "before": "assets/fonts/TildaSans-Medium.woff2",
+      "after": "../assets/fonts/TildaSans-Medium-f716269e.woff2"
+    },
+    {
+      "owner": "собственники коммерция/source.css",
+      "before": "assets/fonts/TildaSans-Semibold.woff2",
+      "after": "../assets/fonts/TildaSans-Semibold.woff2"
+    },
+    {
+      "owner": "собственники коммерция/source.css",
+      "before": "assets/fonts/TildaSans-Bold.woff2",
+      "after": "../assets/fonts/TildaSans-Bold.woff2"
+    },
+    {
+      "owner": "собственники коммерция/source.css",
+      "before": "assets/fonts/TildaSans-ExtraBold.woff2",
+      "after": "../assets/fonts/TildaSans-ExtraBold.woff2"
+    },
+    {
+      "owner": "собственники коммерция/source.css",
+      "before": "assets/fonts/TildaSans-Black.woff2",
+      "after": "../assets/fonts/TildaSans-Black.woff2"
+    },
+    {
+      "owner": "собственники коммерция/source.css",
+      "before": "assets/modal-request.webp",
+      "after": "../assets/modal-request.webp"
+    },
+    {
+      "owner": "собственники коммерция/source.css",
+      "before": "assets/floating-expert-bg.webp",
+      "after": "../assets/floating-expert-bg.webp"
+    },
+    {
+      "owner": "собственники коммерция/owner-sale.js",
+      "before": "_site/shared/owner-header.css?v=e8e698f4b57f",
+      "after": "../css/shared-owner-header.css?v=e8e698f4b57f"
+    },
+    {
+      "owner": "собственники коммерция/owner-sale.js",
+      "before": "_site/pictures/office-contact/whatsapp.svg",
+      "after": "../assets/shared/whatsapp.svg"
+    },
+    {
+      "owner": "собственники коммерция/owner-sale.js",
+      "before": "_site/pictures/office-contact/max.svg",
+      "after": "../assets/shared/max.svg"
+    },
+    {
+      "owner": "собственники коммерция/owner-sale.js",
+      "before": "_site/pictures/office-contact/telegram.svg",
+      "after": "../assets/shared/telegram.svg"
+    },
+    {
+      "owner": "собственники коммерция/owner-sale.js",
+      "before": "_site/pictures/office-contact/whatsapp.svg",
+      "after": "../assets/shared/whatsapp.svg"
+    },
+    {
+      "owner": "собственники коммерция/owner-sale.js",
+      "before": "_site/pictures/office-contact/max.svg",
+      "after": "../assets/shared/max.svg"
+    },
+    {
+      "owner": "собственники коммерция/owner-sale.js",
+      "before": "_site/pictures/office-contact/telegram.svg",
+      "after": "../assets/shared/telegram.svg"
+    },
+    {
+      "owner": "собственники коммерция/owner-sale.js",
+      "before": "assets/alina-floating-avatar.webp",
+      "after": "../assets/alina-floating-avatar.webp"
+    },
+    {
+      "owner": "собственники коммерция/_site/shared/owner-panorama.js",
+      "before": "../../assets/editorial/advantages-panorama.webp",
+      "after": "../assets/editorial/advantages-panorama.webp"
+    },
+    {
+      "owner": "собственники коммерция/_site/shared/expert-avatar.js",
+      "before": "../../assets/alina-floating-avatar.webp",
+      "after": "../assets/alina-floating-avatar.webp"
+    },
+    {
+      "owner": "собственники коммерция/_site/shared/about-home.js",
+      "before": "assets/home-about-logo-round-red.webp",
+      "after": "../assets/shared/home-about-logo-round-red.webp"
+    },
+    {
+      "owner": "собственники коммерция/index.html",
+      "before": "/barn-estate-homepage-clone/fonts/TildaSans-Light.woff2",
+      "after": "../assets/fonts/TildaSans-Light.woff2"
+    },
+    {
+      "owner": "собственники коммерция/index.html",
+      "before": "/barn-estate-homepage-clone/fonts/TildaSans-Regular.woff2",
+      "after": "../assets/fonts/TildaSans-Regular.woff2"
+    },
+    {
+      "owner": "собственники коммерция/index.html",
+      "before": "/barn-estate-homepage-clone/fonts/TildaSans-Medium.woff2",
+      "after": "../assets/fonts/TildaSans-Medium.woff2"
+    },
+    {
+      "owner": "собственники коммерция/index.html",
+      "before": "/main-site/shared/pictures/floating-expert/old-money-interior.webp",
+      "after": "../assets/shared/old-money-interior.webp"
+    },
+    {
+      "owner": "собственники коммерция/index.html",
+      "before": "source.css?v=3c6aab569051",
+      "after": "../css/source.css?v=3c6aab569051"
+    },
+    {
+      "owner": "собственники коммерция/index.html",
+      "before": "owner-sale.css?v=66d7d1042786",
+      "after": "../css/owner-sale.css?v=66d7d1042786"
+    },
+    {
+      "owner": "собственники коммерция/index.html",
+      "before": "owner-sale.js?v=4cea9241bf9c",
+      "after": "../js/owner-sale.js?v=4cea9241bf9c"
+    },
+    {
+      "owner": "собственники коммерция/index.html",
+      "before": "_site/shared/owner-mechanics.css?v=eb7ed42c9009",
+      "after": "../css/shared-owner-mechanics.css?v=eb7ed42c9009"
+    },
+    {
+      "owner": "собственники коммерция/index.html",
+      "before": "_site/shared/owner-panorama.css?v=7dea4e54a353",
+      "after": "../css/shared-owner-panorama.css?v=7dea4e54a353"
+    },
+    {
+      "owner": "собственники коммерция/index.html",
+      "before": "_site/shared/owner-panorama.js?v=ab1ad2ca56a4",
+      "after": "../js/shared-owner-panorama.js?v=ab1ad2ca56a4"
+    },
+    {
+      "owner": "собственники коммерция/index.html",
+      "before": "_site/shared/presentation-mobile.css?v=2aae5b3df683",
+      "after": "../css/shared-presentation-mobile.css?v=2aae5b3df683"
+    },
+    {
+      "owner": "собственники коммерция/index.html",
+      "before": "_site/shared/anchor-navigation.css?v=fddf6c892c5b",
+      "after": "../css/shared-anchor-navigation.css?v=fddf6c892c5b"
+    },
+    {
+      "owner": "собственники коммерция/index.html",
+      "before": "_site/shared/expert-avatar.css?v=bd28c32d8d15",
+      "after": "../css/shared-expert-avatar.css?v=bd28c32d8d15"
+    },
+    {
+      "owner": "собственники коммерция/index.html",
+      "before": "_site/shared/expert-avatar.js?v=924ce58da705",
+      "after": "../js/shared-expert-avatar.js?v=924ce58da705"
+    },
+    {
+      "owner": "собственники коммерция/index.html",
+      "before": "page-kit.css?v=49bc6097d1da",
+      "after": "../css/page-kit.css?v=49bc6097d1da"
+    },
+    {
+      "owner": "собственники коммерция/index.html",
+      "before": "brand-nowrap.css?v=09ea8dedc25f",
+      "after": "../css/brand-nowrap.css?v=09ea8dedc25f"
+    },
+    {
+      "owner": "собственники коммерция/index.html",
+      "before": "brand-nowrap.js?v=55c3b91fbb6c",
+      "after": "../js/brand-nowrap.js?v=55c3b91fbb6c"
+    },
+    {
+      "owner": "собственники коммерция/index.html",
+      "before": "_site/shared/about-home.css?v=7a557a16b660",
+      "after": "../css/shared-about-home.css?v=7a557a16b660"
+    },
+    {
+      "owner": "собственники коммерция/index.html",
+      "before": "_site/shared/about-home.js?v=148ef27c8733",
+      "after": "../js/shared-about-home.js?v=148ef27c8733"
+    },
+    {
+      "owner": "собственники коммерция/index.html",
+      "before": "_site/shared/cta-bleed.css?v=d892ba286df8",
+      "after": "../css/shared-cta-bleed.css?v=d892ba286df8"
+    },
+    {
+      "owner": "собственники коммерция/index.html",
+      "before": "_site/shared/cta-bleed.js?v=45d164865450",
+      "after": "../js/shared-cta-bleed.js?v=45d164865450"
+    },
+    {
+      "owner": "собственники коммерция/index.html",
+      "before": "_site/shared/cta-resort.css?v=0fbe5b5ac5d2",
+      "after": "../css/shared-cta-resort.css?v=0fbe5b5ac5d2"
+    },
+    {
+      "owner": "собственники коммерция/index.html",
+      "before": "_site/shared/cta-resort.js?v=2252a1787aa3",
+      "after": "../js/shared-cta-resort.js?v=2252a1787aa3"
+    },
+    {
+      "owner": "собственники коммерция/index.html",
+      "before": "_site/shared/slider-controls.css?v=a9d6b5ec1e88",
+      "after": "../css/shared-slider-controls.css?v=a9d6b5ec1e88"
+    },
+    {
+      "owner": "собственники коммерция/index.html",
+      "before": "_site/shared/slider-controls.js?v=dce5bdecd97f",
+      "after": "../js/shared-slider-controls.js?v=dce5bdecd97f"
+    },
+    {
+      "owner": "собственники коммерция/index.html",
+      "before": "_site/shared/card-gaps.css?v=efb542f53c1a",
+      "after": "../css/shared-card-gaps.css?v=efb542f53c1a"
+    },
+    {
+      "owner": "собственники коммерция/index.html",
+      "before": "_site/shared/services-layout.css?v=d187a06f1b49",
+      "after": "../css/shared-services-layout.css?v=d187a06f1b49"
+    },
+    {
+      "owner": "собственники коммерция/index.html",
+      "before": "_site/shared/newsletter-home.css?v=14e3d47b57b9",
+      "after": "../css/shared-newsletter-home.css?v=14e3d47b57b9"
+    },
+    {
+      "owner": "собственники коммерция/index.html",
+      "before": "_site/shared/newsletter-home.js?v=6d1fa8e1a8ac",
+      "after": "../js/shared-newsletter-home.js?v=6d1fa8e1a8ac"
+    },
+    {
+      "owner": "собственники коммерция/index.html",
+      "before": "./hero-laptop.css?v=4d092d130125",
+      "after": "../css/hero-laptop.css?v=4d092d130125"
+    },
+    {
+      "owner": "собственники коммерция/index.html",
+      "before": "_site/shared/layout-gutters.css?v=9c7ccfabdd55",
+      "after": "../css/shared-layout-gutters.css?v=9c7ccfabdd55"
+    },
+    {
+      "owner": "собственники коммерция/index.html",
+      "before": "_site/shared/page-breadcrumbs.css?v=7a58ed93dc94",
+      "after": "../css/shared-page-breadcrumbs.css?v=7a58ed93dc94"
+    },
+    {
+      "owner": "собственники коммерция/index.html",
+      "before": "_site/shared/footer-links.css?v=454a2301171e",
+      "after": "../css/shared-footer-links.css?v=454a2301171e"
+    },
+    {
+      "owner": "собственники коммерция/index.html",
+      "before": "_site/shared/owner-header.css?v=305d85f67f82",
+      "after": "../css/shared-owner-header.css?v=305d85f67f82"
+    },
+    {
+      "owner": "собственники коммерция/index.html",
+      "before": "./media-reference.css?v=108763d774ad",
+      "after": "../css/media-reference.css?v=108763d774ad"
+    },
+    {
+      "owner": "собственники коммерция/index.html",
+      "before": "./media-header.css?v=5dec0c68563d",
+      "after": "../css/media-header.css?v=5dec0c68563d"
+    },
+    {
+      "owner": "собственники коммерция/index.html",
+      "before": "./hero.css?v=002bf2d2c75f",
+      "after": "../css/hero.css?v=002bf2d2c75f"
+    },
+    {
+      "owner": "собственники коммерция/index.html",
+      "before": "_site/exact-2026-10-21/home-owner-form.css?v=5312ef62e68f",
+      "after": "../css/home-home-owner-form.css?v=5312ef62e68f"
+    },
+    {
+      "owner": "собственники коммерция/index.html",
+      "before": "_site/shared/expert-dialog.css?v=59427a1afb5c",
+      "after": "../css/shared-expert-dialog.css?v=59427a1afb5c"
+    },
+    {
+      "owner": "собственники коммерция/index.html",
+      "before": "commercial-footer.css?v=4ce08debf33f",
+      "after": "../css/commercial-footer.css?v=4ce08debf33f"
+    },
+    {
+      "owner": "собственники коммерция/index.html",
+      "before": "commercial.css?v=21daea333552",
+      "after": "../css/commercial.css?v=21daea333552"
+    },
+    {
+      "owner": "собственники коммерция/index.html",
+      "before": "commercial-faq.css?v=4723a3023f18",
+      "after": "../css/commercial-faq.css?v=4723a3023f18"
+    },
+    {
+      "owner": "собственники коммерция/index.html",
+      "before": "assets/barn-estate-logo.svg",
+      "after": "../assets/barn-estate-logo.svg"
+    },
+    {
+      "owner": "собственники коммерция/index.html",
+      "before": "assets/barn-estate-logo.svg",
+      "after": "../assets/barn-estate-logo.svg"
+    },
+    {
+      "owner": "собственники коммерция/index.html",
+      "before": "assets/editorial/hero.webp",
+      "after": "../assets/editorial/hero.webp"
+    },
+    {
+      "owner": "собственники коммерция/index.html",
+      "before": "assets/editorial/strategy.webp",
+      "after": "../assets/editorial/strategy.webp"
+    },
+    {
+      "owner": "собственники коммерция/index.html",
+      "before": "assets/editorial/economics.webp",
+      "after": "../assets/editorial/economics.webp"
+    },
+    {
+      "owner": "собственники коммерция/index.html",
+      "before": "assets/editorial/buyer.webp",
+      "after": "../assets/editorial/buyer.webp"
+    },
+    {
+      "owner": "собственники коммерция/index.html",
+      "before": "assets/editorial/potential.webp",
+      "after": "../assets/editorial/potential.webp"
+    },
+    {
+      "owner": "собственники коммерция/index.html",
+      "before": "assets/editorial/specialists.webp",
+      "after": "../assets/editorial/specialists.webp"
+    },
+    {
+      "owner": "собственники коммерция/index.html",
+      "before": "assets/editorial/repositioning.webp",
+      "after": "../assets/editorial/repositioning.webp"
+    },
+    {
+      "owner": "собственники коммерция/index.html",
+      "before": "assets/editorial/privacy.webp",
+      "after": "../assets/editorial/privacy.webp"
+    },
+    {
+      "owner": "собственники коммерция/index.html",
+      "before": "assets/barn-estate-logo.svg",
+      "after": "../assets/barn-estate-logo.svg"
+    },
+    {
+      "owner": "собственники коммерция/index.html",
+      "before": "assets/alina-medvedeva-cta.webp",
+      "after": "../assets/alina-medvedeva-cta.webp"
+    },
+    {
+      "owner": "собственники коммерция/index.html",
+      "before": "assets/alina-medvedeva-cta.webp",
+      "after": "../assets/alina-medvedeva-cta.webp"
+    },
+    {
+      "owner": "собственники коммерция/index.html",
+      "before": "assets/directions/service-city.webp",
+      "after": "../assets/directions/service-city.webp"
+    },
+    {
+      "owner": "собственники коммерция/index.html",
+      "before": "assets/directions/service-spb.webp",
+      "after": "../assets/directions/service-spb.webp"
+    },
+    {
+      "owner": "собственники коммерция/index.html",
+      "before": "assets/directions/service-country.webp",
+      "after": "../assets/directions/service-country.webp"
+    },
+    {
+      "owner": "собственники коммерция/index.html",
+      "before": "assets/directions/service-rent.webp",
+      "after": "../assets/directions/service-rent.webp"
+    },
+    {
+      "owner": "собственники коммерция/index.html",
+      "before": "assets/newsletter/magazines-mobile.webp",
+      "after": "../assets/newsletter/magazines-mobile.webp"
+    },
+    {
+      "owner": "собственники коммерция/index.html",
+      "before": "assets/newsletter/magazines-desktop.webp",
+      "after": "../assets/newsletter/magazines-desktop.webp"
+    },
+    {
+      "owner": "собственники коммерция/index.html",
+      "before": "assets/barn-estate-logo.svg",
+      "after": "../assets/barn-estate-logo.svg"
+    },
+    {
+      "owner": "собственники коммерция/index.html",
+      "before": "assets/menu-featured-01.webp",
+      "after": "../assets/menu-featured-01.webp"
+    },
+    {
+      "owner": "собственники коммерция/index.html",
+      "before": "assets/menu-featured-02.webp",
+      "after": "../assets/menu-featured-02.webp"
+    },
+    {
+      "owner": "собственники коммерция/index.html",
+      "before": "_site/shared/anchor-navigation.js?v=d42478c6de29",
+      "after": "../js/shared-anchor-navigation.js?v=d42478c6de29"
+    },
+    {
+      "owner": "собственники коммерция/index.html",
+      "before": "./media-header.js?v=9434e924fd46",
+      "after": "../js/media-header.js?v=9434e924fd46"
+    },
+    {
+      "owner": "собственники коммерция/index.html",
+      "before": "_site/shared/expert-dialog.js?v=cfcfac43934d",
+      "after": "../js/shared-expert-dialog.js?v=cfcfac43934d"
+    },
+    {
+      "owner": "собственники коммерция/index.html",
+      "before": "assets/alina-medvedeva.webp",
+      "after": "../assets/alina-medvedeva.webp"
+    },
+    {
+      "owner": "собственники коммерция/index.html",
+      "before": "commercial.js?v=8dd49786da1a",
+      "after": "../js/commercial.js?v=8dd49786da1a"
+    },
+    {
+      "owner": "собственники коммерция/index.html",
+      "before": "_site/shared/page-breadcrumbs.js?v=509ca8c4ee3e",
+      "after": "../js/shared-page-breadcrumbs.js?v=509ca8c4ee3e"
+    }
+  ],
+  "outputs": [
+    {
+      "file": "assets/LICENSES.md",
+      "bytes": 1184,
+      "sha256": "7d6c1b59bc853b721a3bca7754acd68beec52cbe32028a2ea5808b4dde5266d2"
+    },
+    {
+      "file": "assets/alina-floating-avatar.webp",
+      "bytes": 343974,
+      "sha256": "e877387e3f8f919894e58460909f8dc52490cac789d7869eb2f2929da258099f"
+    },
+    {
+      "file": "assets/alina-medvedeva-cta.webp",
+      "bytes": 160812,
+      "sha256": "849bc06a25cd8daa24bb642b6a7f19e6efdbf6989471fd1f9ca6cd183ff508c7"
+    },
+    {
+      "file": "assets/alina-medvedeva.webp",
+      "bytes": 41370,
+      "sha256": "2be4ad39d69423f267becc1f06cfb67b1776e123833c023c48b4615244a82cf1"
+    },
+    {
+      "file": "assets/barn-estate-logo.svg",
+      "bytes": 6644,
+      "sha256": "9b2d8c1a7d4d213587828c6bdf6592a37113a388fedc1b58211534d8cb1e7123"
+    },
+    {
+      "file": "assets/directions/service-city.webp",
+      "bytes": 108382,
+      "sha256": "5733e6167392ba9bb0229fe1977ce5aeb55096d5a8d3352a65d661ec5ed17ed9"
+    },
+    {
+      "file": "assets/directions/service-country.webp",
+      "bytes": 71990,
+      "sha256": "16ea18abb8b0d3d7af437a926bd5fc929e45b4f1b10f190ee29eecee8836a371"
+    },
+    {
+      "file": "assets/directions/service-rent.webp",
+      "bytes": 81660,
+      "sha256": "51b77a72220655437c73ba0b32aa2a600d5ebc5f32678a19e2e26acd1a38f229"
+    },
+    {
+      "file": "assets/directions/service-spb.webp",
+      "bytes": 92572,
+      "sha256": "c4fcea4691ce04e611c0eec14482f058f85f81f3dd71d46b02e1d9c684fc86b4"
+    },
+    {
+      "file": "assets/editorial/advantages-panorama.webp",
+      "bytes": 174160,
+      "sha256": "cb76beaffda8406f5c85147586fe65c595996d3027f9f1a6a7a38120b7a4370b"
+    },
+    {
+      "file": "assets/editorial/buyer.webp",
+      "bytes": 201358,
+      "sha256": "2f8f49e9137f00a9e12ba5ca4398f98cac949d4e157cbd0065ed482345fb900e"
+    },
+    {
+      "file": "assets/editorial/economics.webp",
+      "bytes": 108938,
+      "sha256": "83c0a62f0eb260970838eb9318bd382bb981e2b60ae62f09dabe8afd4e0d25ca"
+    },
+    {
+      "file": "assets/editorial/hero.webp",
+      "bytes": 227374,
+      "sha256": "66b69abcd2b54fd3f5bf74f14fa2d8a17fb502ad7a9155afc0c963df7a139edf"
+    },
+    {
+      "file": "assets/editorial/potential.webp",
+      "bytes": 123770,
+      "sha256": "c220206e7bfdae8b314a5c031dfe4525211eec657b7f9fe32d54743e567d39fb"
+    },
+    {
+      "file": "assets/editorial/privacy.webp",
+      "bytes": 116102,
+      "sha256": "98e374158d7b17116a33b63074c4c5357ab37ffc78bba1c434efe51518f12c08"
+    },
+    {
+      "file": "assets/editorial/repositioning.webp",
+      "bytes": 246498,
+      "sha256": "1b7b137c3d0d987b0380ce095a4c076785fc441478872d8e986488d8ebbaf5de"
+    },
+    {
+      "file": "assets/editorial/specialists.webp",
+      "bytes": 178414,
+      "sha256": "4ec8b6b81177869cd4cc9c1bc254916dacb623e900479546384aed60d249e04e"
+    },
+    {
+      "file": "assets/editorial/strategy.webp",
+      "bytes": 284024,
+      "sha256": "08adeaf2b91d00d0ea73f7ecbabea83034d3ccdf45dcccb75d15cbe721338967"
+    },
+    {
+      "file": "assets/floating-expert-bg.webp",
+      "bytes": 12644,
+      "sha256": "9509f5dd4efa3674e55b1ca7c6689298da37c3ba47588c98f1a9e6f1420aeb88"
+    },
+    {
+      "file": "assets/fonts/TildaSans-Black.woff2",
+      "bytes": 57952,
+      "sha256": "73abed6708c43912dbd5c2760147f72462887ccd803522a1486209ca1e97031a"
+    },
+    {
+      "file": "assets/fonts/TildaSans-Bold.woff2",
+      "bytes": 63216,
+      "sha256": "a2690df6fe8348066df79e3a3421a3a9bc0b058cc536f3d846f782ea5337afec"
+    },
+    {
+      "file": "assets/fonts/TildaSans-ExtraBold.woff2",
+      "bytes": 62820,
+      "sha256": "726a3a878465a590443308ea9e14459ab5943f699cff4887c844af4ed76ce577"
+    },
+    {
+      "file": "assets/fonts/TildaSans-Light-f0f2c165.woff2",
+      "bytes": 63952,
+      "sha256": "f0f2c165784c72343618a7c2cbde00e45dbb9b09af5149984792f280cac9642e"
+    },
+    {
+      "file": "assets/fonts/TildaSans-Light.woff2",
+      "bytes": 63952,
+      "sha256": "f0f2c165784c72343618a7c2cbde00e45dbb9b09af5149984792f280cac9642e"
+    },
+    {
+      "file": "assets/fonts/TildaSans-Medium-f716269e.woff2",
+      "bytes": 62556,
+      "sha256": "f716269e361f466570f37bc920988c619ddc8a7828c5949c1c56a731a320ab47"
+    },
+    {
+      "file": "assets/fonts/TildaSans-Medium.woff2",
+      "bytes": 62556,
+      "sha256": "f716269e361f466570f37bc920988c619ddc8a7828c5949c1c56a731a320ab47"
+    },
+    {
+      "file": "assets/fonts/TildaSans-Regular-2670dad4.woff2",
+      "bytes": 61636,
+      "sha256": "2670dad44ca6c2a1b9bbdbf1af6d8db9173f2dbe31604e80bdf9599b55047d41"
+    },
+    {
+      "file": "assets/fonts/TildaSans-Regular.woff2",
+      "bytes": 61636,
+      "sha256": "2670dad44ca6c2a1b9bbdbf1af6d8db9173f2dbe31604e80bdf9599b55047d41"
+    },
+    {
+      "file": "assets/fonts/TildaSans-Semibold.woff2",
+      "bytes": 63528,
+      "sha256": "3814f8c444073262523050f3554c6f09cb49353e1f6fdc22a3561d354a231439"
+    },
+    {
+      "file": "assets/licenses/material-icons-LICENSE.txt",
+      "bytes": 11357,
+      "sha256": "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd"
+    },
+    {
+      "file": "assets/menu-featured-01.webp",
+      "bytes": 273602,
+      "sha256": "5fa04d6f84449d6e8e24aa5fe80d2d071efa651a4f4da16d3b694a65f5a6f31b"
+    },
+    {
+      "file": "assets/menu-featured-02.webp",
+      "bytes": 379468,
+      "sha256": "0118984b23a5ee9ed8908973ee9106ad69cad1932458df2985ed9dec6362f43b"
+    },
+    {
+      "file": "assets/modal-request.webp",
+      "bytes": 75360,
+      "sha256": "cb1ac940c0a5bc83fa9285b6fd4060c10d7ca2b177f73b4d9404a1e4c9210d17"
+    },
+    {
+      "file": "assets/newsletter/magazines-desktop.webp",
+      "bytes": 113252,
+      "sha256": "a59b66d0d7fdeda1b0b0726fc2b9f0f23450da792c5cff66bba1482a09d8774f"
+    },
+    {
+      "file": "assets/newsletter/magazines-mobile.webp",
+      "bytes": 15704,
+      "sha256": "3285d219f1845deb8887ba3bc04b8e79ce8d3bec99dd568d8a51b8c5fa8bf9af"
+    },
+    {
+      "file": "assets/shared/home-about-logo-round-red.webp",
+      "bytes": 15196,
+      "sha256": "5f595f5a67a3568be8b035657cf437233f54b6490b238a59d3192cf4ec2a18d0"
+    },
+    {
+      "file": "assets/shared/max.svg",
+      "bytes": 72862,
+      "sha256": "5caa61a4b0731d0d89421b4fb24f41433025e5aea59155a14cf3a3fada6c9174"
+    },
+    {
+      "file": "assets/shared/old-money-interior.webp",
+      "bytes": 12644,
+      "sha256": "9509f5dd4efa3674e55b1ca7c6689298da37c3ba47588c98f1a9e6f1420aeb88"
+    },
+    {
+      "file": "assets/shared/telegram.svg",
+      "bytes": 757,
+      "sha256": "4435c9a57e165a1c3b7f27e0b5b11b82b10d674ea4fff7f6748cb67b7fcb994e"
+    },
+    {
+      "file": "assets/shared/whatsapp.svg",
+      "bytes": 1231,
+      "sha256": "3e197e0e1f3e679ee09823c75e1c7bad3a19da9bd1ba01df395268b9ae91816f"
+    },
+    {
+      "file": "css/brand-nowrap.css",
+      "bytes": 197,
+      "sha256": "09ea8dedc25f5cbc24540b51aba46a441634eb410cec1d4c49a8b2fc479f7967"
+    },
+    {
+      "file": "css/commercial-faq.css",
+      "bytes": 3483,
+      "sha256": "4723a3023f182bf443b69d0794a0a46bb6eac686ae0e25afd4d5f27597f6c0df"
+    },
+    {
+      "file": "css/commercial-footer.css",
+      "bytes": 10977,
+      "sha256": "4ce08debf33f6ff9e7e8366cc8c1f8c4353987bfaef0bc17a02d1530e30203f1"
+    },
+    {
+      "file": "css/commercial.css",
+      "bytes": 5233,
+      "sha256": "21daea3335520f40060fee3546bf8b639046600c632bbcc56051f2a167aa6874"
+    },
+    {
+      "file": "css/hero-laptop.css",
+      "bytes": 2012,
+      "sha256": "4d092d1301257b5f197a31f6ec0461afbd8643687871f7c9b8bdb3d883bbe1a6"
+    },
+    {
+      "file": "css/hero.css",
+      "bytes": 10382,
+      "sha256": "002bf2d2c75f7ec115686583aaf4c007c82f0a93884dcef8ef52570cf22ae81d"
+    },
+    {
+      "file": "css/home-home-owner-form.css",
+      "bytes": 29398,
+      "sha256": "5312ef62e68fefcb95a3c1f7c4cc6eba0b4fcf34cbe71ebeefd06fecb9a6a408"
+    },
+    {
+      "file": "css/inline-01.css",
+      "bytes": 735,
+      "sha256": "cd2aa284a84e9d2265470803e7c75993b77f89cb445bd3217bc4d4b53160f6bb"
+    },
+    {
+      "file": "css/inline-02.css",
+      "bytes": 343,
+      "sha256": "fab2b81abd821e2f3de9f97199a0f5337ab4577b7f13dbdddc974f28efc69ceb"
+    },
+    {
+      "file": "css/inline-03.css",
+      "bytes": 7560,
+      "sha256": "a046be0b451e1e89942e3a588399617dd02b8e23465d2df84ed22a470e96e574"
+    },
+    {
+      "file": "css/inline-04.css",
+      "bytes": 4745,
+      "sha256": "7ff34ba7e9cdcad00bc036a041f11ea73e96423a848f8fd8b7ea7bc997054b47"
+    },
+    {
+      "file": "css/media-header.css",
+      "bytes": 14311,
+      "sha256": "5dec0c68563d19025d56563c3118cb64725c2e551b135d1b67e8505d9713b941"
+    },
+    {
+      "file": "css/media-reference.css",
+      "bytes": 6203,
+      "sha256": "108763d774ad2bd6cf0275acb84fc8dead0a15afc908015758f8ed1e37771355"
+    },
+    {
+      "file": "css/owner-sale.css",
+      "bytes": 47159,
+      "sha256": "66d7d1042786b8bc83c2b71e700257bb3603e34bc4eefd4603b60c04211d58d8"
+    },
+    {
+      "file": "css/page-kit.css",
+      "bytes": 13976,
+      "sha256": "49bc6097d1dad04271ffc2fa917400c312b9604432f9c94cde774a84ce35663c"
+    },
+    {
+      "file": "css/shared-about-home.css",
+      "bytes": 7981,
+      "sha256": "7a557a16b6602dc9505d6e0e68607e5f5671ae7be16828b911f841279a8831d5"
+    },
+    {
+      "file": "css/shared-anchor-navigation.css",
+      "bytes": 530,
+      "sha256": "fddf6c892c5be3414dc22056fe00df3b6cfc329e034fb29428f77cb5ab1705ea"
+    },
+    {
+      "file": "css/shared-card-gaps.css",
+      "bytes": 483,
+      "sha256": "efb542f53c1aa677a28f3cf4f8eac15b1ffa0267c209a553465bb7249bb401bc"
+    },
+    {
+      "file": "css/shared-cta-bleed.css",
+      "bytes": 711,
+      "sha256": "d892ba286df8056cbf94809a56c7c03339ab9b88495612d67019ec893dfb804e"
+    },
+    {
+      "file": "css/shared-cta-resort.css",
+      "bytes": 137320,
+      "sha256": "0fbe5b5ac5d2676858a15505195fa8a353d8952f61cdd155fd2eac327ba18eae"
+    },
+    {
+      "file": "css/shared-expert-avatar.css",
+      "bytes": 490,
+      "sha256": "bd28c32d8d15b64f97aad45335f77a4f4b92281c5d905c74242ff51f892a6afa"
+    },
+    {
+      "file": "css/shared-expert-dialog.css",
+      "bytes": 3116,
+      "sha256": "59427a1afb5c95f9eb477aa6c69aa38564f4c2e9439c85e31b57f86cf42af483"
+    },
+    {
+      "file": "css/shared-footer-links.css",
+      "bytes": 322,
+      "sha256": "454a2301171e3882b500b819aa9bb46dcc67280c90bf0f4cd73729485a6b0066"
+    },
+    {
+      "file": "css/shared-layout-gutters.css",
+      "bytes": 3327,
+      "sha256": "9c7ccfabdd5541cf007cac9a40fe23131f1fb2f28964c529d9e6f7bac9851bb1"
+    },
+    {
+      "file": "css/shared-newsletter-home.css",
+      "bytes": 1306,
+      "sha256": "14e3d47b57b96ed37c4dab0d8f9c833ea1a32f7b0f2357e33230e77189247cf3"
+    },
+    {
+      "file": "css/shared-owner-header.css",
+      "bytes": 28214,
+      "sha256": "305d85f67f82cf4b3a207ca8ff94fe1ffd4bf3a26da8d98d00b00fc0409f4333"
+    },
+    {
+      "file": "css/shared-owner-mechanics.css",
+      "bytes": 16337,
+      "sha256": "eb7ed42c9009917b5eae82bc7168219f4090ad28c6c752e1c6c9c88bc7513428"
+    },
+    {
+      "file": "css/shared-owner-panorama.css",
+      "bytes": 8171,
+      "sha256": "7dea4e54a3538d40f1164ae25eb5f74355f0cdfaf51b25aec0450678f79f7c5e"
+    },
+    {
+      "file": "css/shared-page-breadcrumbs.css",
+      "bytes": 1558,
+      "sha256": "7a58ed93dc94357053343f42781a513a93b66b3f6c61f0f9a6c0e26bcaef7d30"
+    },
+    {
+      "file": "css/shared-presentation-mobile.css",
+      "bytes": 714,
+      "sha256": "2aae5b3df68322229738c1a50ab41cb0ad005da467bfae2438cc1c6bf66e110e"
+    },
+    {
+      "file": "css/shared-services-layout.css",
+      "bytes": 5909,
+      "sha256": "d187a06f1b490b1c50647a95cda77d9e9e0bf026ecfb65de3ef05212c279bf04"
+    },
+    {
+      "file": "css/shared-slider-controls.css",
+      "bytes": 271,
+      "sha256": "a9d6b5ec1e88e1f25f7fbee31b237064357124f96258faf81b1601b7d26dd6d8"
+    },
+    {
+      "file": "css/source.css",
+      "bytes": 660158,
+      "sha256": "bda6bc0e6910543f780bf75f8a969e69d3569e1b594d16006675a7bec9769baa"
+    },
+    {
+      "file": "data/CONTENT.json",
+      "bytes": 11616,
+      "sha256": "521a7810a5fbc77f0fdd325fb4899f6e41ddec7ecee0fe3d26289b12e4945477"
+    },
+    {
+      "file": "data/body-attributes.json",
+      "bytes": 231,
+      "sha256": "bef7c0fe692c275f43d19185f057008fc5ec9d5e16425f78b9583f50e56f0aa7"
+    },
+    {
+      "file": "data/provenance/alina-floating-avatar-source.json",
+      "bytes": 592,
+      "sha256": "945c6a5e7528f426202e0dfbcbbb157e7bc97166842413c4cb336252677a4ebb"
+    },
+    {
+      "file": "data/provenance/alina-medvedeva-cta-source.json",
+      "bytes": 485,
+      "sha256": "9766e30fb7da64761dd21dc3da22ccb0fd770d490a31e15d0bba3f8e069c811d"
+    },
+    {
+      "file": "data/provenance/directions/source.json",
+      "bytes": 2174,
+      "sha256": "574d088b9ab4811642bad0829fb31f2e98de5f7de0c71946c08bdc2a4e4e433f"
+    },
+    {
+      "file": "data/provenance/editorial/prompts.json",
+      "bytes": 10040,
+      "sha256": "dec985c44f4808cfb31c1d642d441f84707426e765d1b68e281f5cac3c06b88b"
+    },
+    {
+      "file": "data/provenance/editorial/sources.json",
+      "bytes": 4525,
+      "sha256": "db7d6016f0eb7a3971e63ea840e6f9e38698d193299602c8b4847dea6a94bc2e"
+    },
+    {
+      "file": "data/provenance/newsletter/source.json",
+      "bytes": 739,
+      "sha256": "92c6aadec0732c5568184ef0eb5e3eaf27aee12f0bbcbc2d41ad0090aa183de0"
+    },
+    {
+      "file": "data/provenance/webp-conversion.json",
+      "bytes": 4654,
+      "sha256": "22b251404915ab3929cc20cf8f773944ccf071a8a4e2ac08312db85d1431cb8e"
+    },
+    {
+      "file": "data/service-links.json",
+      "bytes": 1156,
+      "sha256": "fa8bea8eab28c3f229daf669aa4f3902c5b76469ea108727c95cbca4544bf4c8"
+    },
+    {
+      "file": "html/README.md",
+      "bytes": 405,
+      "sha256": "33ab943c8227693ca5ad58a5ee878c44c5b7ca76492d941b8a94651f0bb77135"
+    },
+    {
+      "file": "html/body.fragment.html",
+      "bytes": 87487,
+      "sha256": "2ba9ec84dcb1e87919e5a0be1fbdce4a30855fb027187571898964143684c1ae"
+    },
+    {
+      "file": "html/head.fragment.html",
+      "bytes": 4367,
+      "sha256": "0e007eda1b2383425c6ebc319614c321901402c90efda558cf54610444340e50"
+    },
+    {
+      "file": "html/index.html",
+      "bytes": 91959,
+      "sha256": "897e2ca510d726acc5159548bf4a1b7545f8bfd3f0a35806f2865e37e02a9747"
+    },
+    {
+      "file": "js/brand-nowrap.js",
+      "bytes": 2269,
+      "sha256": "55c3b91fbb6c5069fa49ee63c7cf5967d85ab5d48006fbe006609f46355ed5fa"
+    },
+    {
+      "file": "js/commercial.js",
+      "bytes": 3484,
+      "sha256": "8dd49786da1a8a06efdf3e640e1f1d4fbdacdca409cae39e0103cdfd456c16dc"
+    },
+    {
+      "file": "js/media-header.js",
+      "bytes": 129074,
+      "sha256": "9434e924fd46edf2b97a3d9d1473505052dd64b4c5d8f3c9419baea0cc52449c"
+    },
+    {
+      "file": "js/owner-sale.js",
+      "bytes": 38126,
+      "sha256": "1e659a359617814280eb384f771e636daf68224a4ddc4220d4f72dc6934a9eb1"
+    },
+    {
+      "file": "js/shared-about-home.js",
+      "bytes": 7744,
+      "sha256": "a075763b5227017f25b74a3ee89065da3d2e2a7741d69c8200524c975af33994"
+    },
+    {
+      "file": "js/shared-anchor-navigation.js",
+      "bytes": 1956,
+      "sha256": "d42478c6de2973d4261daac172ae08634f4a3ba39bf8cd3ce617ad1f719e1ca9"
+    },
+    {
+      "file": "js/shared-cta-bleed.js",
+      "bytes": 3651,
+      "sha256": "45d164865450e12665bf787ca4941858a46d653483c5e8244fb5d01c41e87b98"
+    },
+    {
+      "file": "js/shared-cta-resort.js",
+      "bytes": 1184,
+      "sha256": "2252a1787aa3d465fc521e87b3181d9b9f9d6818c9b52dd5588a9e917e83e3fb"
+    },
+    {
+      "file": "js/shared-expert-avatar.js",
+      "bytes": 1531,
+      "sha256": "5436b95e6f33be91a808e65ba5b99d866c977deb285f36ce3a6fe60fdec862e6"
+    },
+    {
+      "file": "js/shared-expert-dialog.js",
+      "bytes": 12326,
+      "sha256": "cfcfac43934d1b1307fb80cc6e6c94d128a84d49ae34311e31d5b7ded02ed713"
+    },
+    {
+      "file": "js/shared-newsletter-home.js",
+      "bytes": 2155,
+      "sha256": "6d1fa8e1a8aca3dcd35d850bd23e2665b1c6ef0c2823732a23fa501ffa3992b8"
+    },
+    {
+      "file": "js/shared-owner-panorama.js",
+      "bytes": 9413,
+      "sha256": "31264033f791375342535efd0cf5f8b706213d14c78995b7b1efc7474a886cb1"
+    },
+    {
+      "file": "js/shared-page-breadcrumbs.js",
+      "bytes": 4530,
+      "sha256": "509ca8c4ee3eb6b1cbb6148eb4f5862eb10e51e849808af5e8e8021e74649676"
+    },
+    {
+      "file": "js/shared-slider-controls.js",
+      "bytes": 6262,
+      "sha256": "dce5bdecd97ff41e7e21efe56e5a22942f080f99ba1dac9081cf00f98de7ef03"
+    }
+  ]
+}

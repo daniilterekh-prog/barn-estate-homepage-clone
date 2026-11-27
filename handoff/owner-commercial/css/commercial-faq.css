@@ -1,0 +1,68 @@
+/* FAQ typography from the current city purchase node; base scoped FAQ CSS is in source.css. */
+
+html body#ui-kit-page[data-owner-commercial] .catalog-faq__question-text[class] {
+  color: #262626;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+html body#ui-kit-page[data-owner-commercial] .catalog-faq__answer-content[class] {
+  color: #262626;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.4;
+}
+
+html body#ui-kit-page[data-owner-commercial] .catalog-faq__question[class] {
+  gap: 24px;
+  padding-block: 24px;
+}
+
+html body#ui-kit-page[data-owner-commercial] .catalog-faq__item--open[class] .catalog-faq__answer-content[class] {
+  padding-bottom: 24px;
+}
+
+html body#ui-kit-page[data-owner-commercial] .catalog-faq__icon[class] {
+  font-size: 30px;
+}
+
+@media (min-width: 1441px) {
+  html body#ui-kit-page[data-owner-commercial] .catalog-faq__question-text[class] {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 1024px) {
+  html body#ui-kit-page[data-owner-commercial] .catalog-faq__question[class] {
+    gap: 16px;
+    padding-block: 20px;
+  }
+
+  html body#ui-kit-page[data-owner-commercial] .catalog-faq__question-text[class] {
+    font-size: 18px;
+  }
+
+  html body#ui-kit-page[data-owner-commercial] .catalog-faq__item--open[class] .catalog-faq__answer-content[class] {
+    padding-bottom: 20px;
+  }
+
+  html body#ui-kit-page[data-owner-commercial] .catalog-faq__icon[class] {
+    font-size: 24px;
+  }
+}
+/* Current purchase-node FAQ spacing and shared question/answer tracks. */
+html body#ui-kit-page[data-owner-commercial] #faq .catalog-faq__inner {row-gap:0!important;padding-block:0!important;text-align:left!important;}
+html body#ui-kit-page[data-owner-commercial] #faq .catalog-section-eyebrow {display:block;flex-shrink:0;padding:0;margin:0 0 25px!important;font-size:14px!important;line-height:16.1px!important;font-weight:400!important;letter-spacing:.12em!important;color:#4f4d49!important;}
+html body#ui-kit-page[data-owner-commercial] #faq .catalog-faq__grid {margin-top:var(--uk-content)!important;}
+html body#ui-kit-page[data-owner-commercial] #faq .catalog-faq__question:focus-visible {outline:2px solid #8b1d25;outline-offset:3px;}
+@media(max-width:1024px){html body#ui-kit-page[data-owner-commercial] #faq .catalog-section-eyebrow {margin-bottom:12px!important;font-size:12px!important;line-height:14.4px!important;}}
+@media(min-width:541px){
+ html body#ui-kit-page[data-owner-commercial] #faq .catalog-faq__grid {grid-template-columns:repeat(2,minmax(0,1fr))!important;grid-template-rows:repeat(var(--node-faq-tracks,6),auto)!important;grid-auto-flow:column!important;row-gap:0!important;align-items:stretch!important;}
+ html body#ui-kit-page[data-owner-commercial] #faq :is(.catalog-faq__column,.catalog-faq__item) {display:contents!important;}
+ html body#ui-kit-page[data-owner-commercial] #faq .catalog-faq__column:nth-child(1) {--node-faq-column:1;}
+ html body#ui-kit-page[data-owner-commercial] #faq .catalog-faq__column:nth-child(2) {--node-faq-column:2;}
+ html body#ui-kit-page[data-owner-commercial] #faq :is(.catalog-faq__question,.catalog-faq__answer) {grid-column:var(--node-faq-column)!important;min-width:0!important;}
+ html body#ui-kit-page[data-owner-commercial] #faq .catalog-faq__column>.catalog-faq__item:first-child>.catalog-faq__question {border-top:1px solid rgba(30,30,30,.12)!important;}
+ html body#ui-kit-page[data-owner-commercial] #faq .catalog-faq__answer {border-bottom:1px solid rgba(30,30,30,.12)!important;}
+}

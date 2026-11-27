@@ -1,0 +1,12 @@
+/* Same active-section underline for the three owner/partner sticky headers. */
+body:is(.owner-rent-reference-ui, .owner-sale-reference-ui, .partners-owner-shell) .owner-sale-sticky .owner-sale-sticky__link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  border-bottom: 1px solid transparent;
+  padding-bottom: 4px;
+}
+body:is(.owner-rent-reference-ui, .owner-sale-reference-ui, .partners-owner-shell) .owner-sale-sticky .owner-sale-sticky__link--active {
+  color: #8b1d25;
+  border-bottom-color: #8b1d25;
+}

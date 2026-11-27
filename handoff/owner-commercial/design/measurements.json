@@ -1,0 +1,260 @@
+[
+  {
+    "width": 390,
+    "body": {
+      "font": "\"Tilda Sans\", system-ui, sans-serif",
+      "background": "rgb(255, 255, 255)"
+    },
+    "sections": [
+      {
+        "id": "",
+        "class": "owner-sale-hero",
+        "width": 375,
+        "height": 560,
+        "padding": "0px",
+        "margin": "0px",
+        "font": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "background": "rgb(30, 30, 30)"
+      },
+      {
+        "id": "presentation",
+        "class": "owner-sale-presentation",
+        "width": 375,
+        "height": 601.578125,
+        "padding": "48px 0px",
+        "margin": "0px",
+        "font": "\"Tilda Sans\", system-ui, sans-serif",
+        "background": "rgb(255, 255, 255)"
+      },
+      {
+        "id": "services",
+        "class": "owner-sale-services",
+        "width": 375,
+        "height": 527.78125,
+        "padding": "48px 0px",
+        "margin": "0px",
+        "font": "\"Tilda Sans\", system-ui, sans-serif",
+        "background": "rgb(255, 255, 255)"
+      },
+      {
+        "id": "team",
+        "class": "about-company",
+        "width": 375,
+        "height": 687.1875,
+        "padding": "48px 0px",
+        "margin": "0px",
+        "font": "\"Tilda Sans\", system-ui, sans-serif",
+        "background": "rgb(255, 255, 255)"
+      },
+      {
+        "id": "stages",
+        "class": "owner-sale-stages",
+        "width": 375,
+        "height": 1428.359375,
+        "padding": "48px 0px",
+        "margin": "0px",
+        "font": "\"Tilda Sans\", system-ui, sans-serif",
+        "background": "rgb(255, 255, 255)"
+      },
+      {
+        "id": "why-barnes",
+        "class": "",
+        "width": 375,
+        "height": 970.359375,
+        "padding": "0px",
+        "margin": "0px",
+        "font": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, sans-serif",
+        "background": "rgb(255, 255, 255)"
+      },
+      {
+        "id": "",
+        "class": "owner-sale-strategy",
+        "width": 375,
+        "height": 723.578125,
+        "padding": "48px 0px",
+        "margin": "0px",
+        "font": "\"Tilda Sans\", system-ui, sans-serif",
+        "background": "rgb(255, 255, 255)"
+      },
+      {
+        "id": "request",
+        "class": "catalog-consultation",
+        "width": 375,
+        "height": 747.578125,
+        "padding": "0px",
+        "margin": "0px",
+        "font": "\"Tilda Sans\", system-ui, sans-serif",
+        "background": "rgb(16, 19, 24)"
+      },
+      {
+        "id": "property-types",
+        "class": "owner-sale-types",
+        "width": 375,
+        "height": 1113.1875,
+        "padding": "48px 0px",
+        "margin": "0px",
+        "font": "\"Tilda Sans\", system-ui, sans-serif",
+        "background": "rgb(255, 255, 255)"
+      },
+      {
+        "id": "faq",
+        "class": "catalog-faq",
+        "width": 375,
+        "height": 728.453125,
+        "padding": "48px 0px",
+        "margin": "0px",
+        "font": "\"Tilda Sans\", system-ui, sans-serif",
+        "background": "rgb(255, 255, 255)"
+      },
+      {
+        "id": "",
+        "class": "newsletter-cta",
+        "width": 375,
+        "height": 556.5625,
+        "padding": "48px 0px 40px",
+        "margin": "0px",
+        "font": "\"Tilda Sans\", system-ui, sans-serif",
+        "background": "rgb(255, 255, 255)"
+      },
+      {
+        "id": "",
+        "class": "site-footer",
+        "width": 375,
+        "height": 1675.71875,
+        "padding": "0px",
+        "margin": "0px",
+        "font": "\"Tilda Sans\", system-ui, sans-serif",
+        "background": "rgb(38, 38, 38)"
+      }
+    ]
+  },
+  {
+    "width": 1440,
+    "body": {
+      "font": "\"Tilda Sans\", system-ui, sans-serif",
+      "background": "rgb(255, 255, 255)"
+    },
+    "sections": [
+      {
+        "id": "",
+        "class": "owner-sale-hero",
+        "width": 1425,
+        "height": 620,
+        "padding": "0px",
+        "margin": "0px",
+        "font": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "background": "rgb(30, 30, 30)"
+      },
+      {
+        "id": "presentation",
+        "class": "owner-sale-presentation",
+        "width": 1425,
+        "height": 1085.125,
+        "padding": "86.4px 0px",
+        "margin": "0px",
+        "font": "\"Tilda Sans\", system-ui, sans-serif",
+        "background": "rgb(255, 255, 255)"
+      },
+      {
+        "id": "services",
+        "class": "owner-sale-services",
+        "width": 1425,
+        "height": 725.0625,
+        "padding": "86.4px 0px",
+        "margin": "0px",
+        "font": "\"Tilda Sans\", system-ui, sans-serif",
+        "background": "rgb(255, 255, 255)"
+      },
+      {
+        "id": "team",
+        "class": "about-company",
+        "width": 1425,
+        "height": 576.0625,
+        "padding": "86.4px 0px",
+        "margin": "0px",
+        "font": "\"Tilda Sans\", system-ui, sans-serif",
+        "background": "rgb(255, 255, 255)"
+      },
+      {
+        "id": "stages",
+        "class": "owner-sale-stages",
+        "width": 1425,
+        "height": 1756.5625,
+        "padding": "86.4px 0px",
+        "margin": "0px",
+        "font": "\"Tilda Sans\", system-ui, sans-serif",
+        "background": "rgb(255, 255, 255)"
+      },
+      {
+        "id": "why-barnes",
+        "class": "",
+        "width": 1425,
+        "height": 1025.0625,
+        "padding": "0px",
+        "margin": "0px",
+        "font": "\"Tilda Sans\", \"Tilda Sans Fallback\", system-ui, sans-serif",
+        "background": "rgb(255, 255, 255)"
+      },
+      {
+        "id": "",
+        "class": "owner-sale-strategy",
+        "width": 1425,
+        "height": 674.78125,
+        "padding": "86.4px 0px",
+        "margin": "0px",
+        "font": "\"Tilda Sans\", system-ui, sans-serif",
+        "background": "rgb(255, 255, 255)"
+      },
+      {
+        "id": "request",
+        "class": "catalog-consultation",
+        "width": 1425,
+        "height": 774.34375,
+        "padding": "0px",
+        "margin": "0px",
+        "font": "\"Tilda Sans\", system-ui, sans-serif",
+        "background": "rgb(16, 19, 24)"
+      },
+      {
+        "id": "property-types",
+        "class": "owner-sale-types",
+        "width": 1425,
+        "height": 991.46875,
+        "padding": "86.4px 0px",
+        "margin": "0px",
+        "font": "\"Tilda Sans\", system-ui, sans-serif",
+        "background": "rgb(255, 255, 255)"
+      },
+      {
+        "id": "faq",
+        "class": "catalog-faq",
+        "width": 1425,
+        "height": 537.46875,
+        "padding": "86.4px 0px",
+        "margin": "0px",
+        "font": "\"Tilda Sans\", system-ui, sans-serif",
+        "background": "rgb(255, 255, 255)"
+      },
+      {
+        "id": "",
+        "class": "newsletter-cta",
+        "width": 1425,
+        "height": 666.390625,
+        "padding": "86.4px 0px 40px",
+        "margin": "0px",
+        "font": "\"Tilda Sans\", system-ui, sans-serif",
+        "background": "rgb(255, 255, 255)"
+      },
+      {
+        "id": "",
+        "class": "site-footer",
+        "width": 1425,
+        "height": 1209.5625,
+        "padding": "0px",
+        "margin": "0px",
+        "font": "\"Tilda Sans\", system-ui, sans-serif",
+        "background": "rgb(38, 38, 38)"
+      }
+    ]
+  }
+]

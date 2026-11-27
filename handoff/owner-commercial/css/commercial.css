@@ -1,0 +1,42 @@
+/* Page-local additions on the existing BARN Estate UI kit. */
+/* Common sections inherit --uk-space from the owner-sale reference page kit. */
+html body#ui-kit-page[data-owner-commercial] .owner-sale-hero__title {max-width:1100px;}
+html body#ui-kit-page[data-owner-commercial] .owner-sale-services__card:is(:hover,:focus-within) {background:#7c1425!important;color:#fff!important;}
+html body#ui-kit-page[data-owner-commercial] .owner-sale-services__card:is(:hover,:focus-within) :is(.owner-sale-services__text,strong,span,.owner-sale-services__number) {color:#fff!important;opacity:1!important;}
+html body#ui-kit-page[data-owner-commercial] .owner-sale-presentation__card:is(:hover,:focus,:focus-within) .owner-sale-presentation__reveal-text {max-height:320px!important;}
+html body#ui-kit-page[data-owner-commercial] .owner-sale-presentation__caption {font-size:clamp(16px,1.4vw,20px)!important;line-height:1.25!important;}
+html body#ui-kit-page[data-owner-commercial] .owner-sale-presentation__reveal-text {font-size:clamp(15px,1.25vw,18px)!important;line-height:1.4!important;}
+html body#ui-kit-page[data-owner-commercial] .catalog-consultation__lead,
+html body#ui-kit-page[data-owner-commercial] .catalog-consultation__mobile-lead {display:block;}
+html body#ui-kit-page[data-owner-commercial] :is(.catalog-consultation__image,.home-owner-form__hero-image) {object-position:82% center!important;}
+html body#ui-kit-page[data-owner-commercial] .catalog-consultation__mobile-photo img {width:100%!important;height:100%!important;max-width:none!important;object-fit:cover!important;object-position:82% 18%!important;transform:none!important;filter:none!important;}
+html body#ui-kit-page[data-owner-commercial] .catalog-consultation__mobile-photo {position:relative;overflow:hidden;}
+html body#ui-kit-page[data-owner-commercial] .catalog-consultation__mobile-photo img {position:absolute!important;inset:auto!important;left:-94%!important;top:3%!important;width:200%!important;height:200%!important;object-position:82% center!important;}
+html body#ui-kit-page[data-owner-commercial] .home-owner-form__hero-image {width:100%!important;height:100%!important;object-fit:cover!important;filter:none!important;}
+html body#ui-kit-page[data-owner-commercial] .commercial-form-status {color:inherit;font-size:15px;line-height:1.5;margin-top:12px;}
+html body#ui-kit-page[data-owner-commercial] [aria-invalid=true] {outline:2px solid #b32639;outline-offset:3px;}
+html body#ui-kit-page[data-owner-commercial] .owner-sale-types__card:focus-visible {outline:3px solid #7c1425;outline-offset:4px;}
+html body#ui-kit-page[data-owner-commercial] .owner-sale-stages__item {transform:none!important;}
+html body#ui-kit-page[data-owner-commercial] :is(.owner-sale-stages__number,.owner-sale-stages__item-body) {opacity:1!important;transform:none!important;}
+html body#ui-kit-page[data-owner-commercial] .owner-sale-stages__item-title {font-size:var(--reference-lead);line-height:1.3;margin:0;}
+@media(max-width:1199px){html body#ui-kit-page[data-owner-commercial] .owner-sale-presentation__card {min-height:360px;}}
+@media(max-width:540px){
+  html body#ui-kit-page[data-owner-commercial] .home-owner-form__hero {min-height:180px;max-height:260px;}
+  html body#ui-kit-page[data-owner-commercial] .home-owner-form__hero-image {object-position:82% 18%!important;}
+}
+
+/* Current home footer markup; inherited owner UI kit supplies its base grid. */
+html body#ui-kit-page[data-owner-commercial] .site-footer__logo {width:max-content;max-width:100%;margin-inline:auto;}
+html body#ui-kit-page[data-owner-commercial] .site-footer__logo img {display:block;width:auto;height:48px;object-fit:contain;}
+@media(max-width:540px){
+ html body#ui-kit-page[data-owner-commercial] .site-footer__logo img {height:36px;}
+ html body#ui-kit-page[data-owner-commercial] .site-footer__column-title {font-size:14px!important;line-height:1.2!important;font-weight:400!important;}
+ html body#ui-kit-page[data-owner-commercial] .site-footer__link {font-size:13px!important;line-height:1.4!important;font-weight:400!important;}
+}
+html body#ui-kit-page[data-owner-commercial][data-commercial-footer-visible=true] .floating-expert {visibility:hidden!important;pointer-events:none!important;}
+
+/* Full square source: removes the old 200% crop while retaining the 64/72px circle. */
+html body#ui-kit-page[data-owner-commercial] .floating-expert__avatar img {position:absolute!important;inset:0!important;width:100%!important;height:100%!important;max-width:100%!important;object-fit:contain!important;object-position:center!important;transform:none!important;filter:none!important;}
+/* The supplied wide CTA image places the portrait in its rightmost square. */
+html body#ui-kit-page.barnes-page-kit[data-page-kit][data-owner-commercial] #request .catalog-consultation__mobile-photo {position:relative!important;overflow:hidden!important;}
+html body#ui-kit-page.barnes-page-kit[data-page-kit][data-owner-commercial] #request .catalog-consultation__mobile-photo img {position:absolute!important;inset:0!important;width:100%!important;height:100%!important;max-width:100%!important;object-fit:cover!important;object-position:100% 0%!important;transform:none!important;filter:none!important;}
