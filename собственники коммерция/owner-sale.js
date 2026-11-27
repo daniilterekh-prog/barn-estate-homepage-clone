@@ -286,7 +286,7 @@
 
   enhanceSaleStages();
 
-  // All six stages remain visible; no extra scroll runway on this page.
+  // All six stages remain visible; spacing inherits the owner-sale reference CSS.
 
   const enhanceStickyHeader = function () {
     const inner = sticky && sticky.querySelector('.owner-sale-sticky__inner');

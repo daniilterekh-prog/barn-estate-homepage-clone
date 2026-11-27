@@ -1,0 +1,5722 @@
+{
+  "reference": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/prodazha_sobstvennikam/",
+  "target": "http://127.0.0.1:8796/",
+  "widths": [
+    {
+      "width": 390,
+      "reference": {
+        ".owner-sale-hero": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 560
+        },
+        ".owner-sale-hero__content": null,
+        ".owner-sale-hero__title": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 67.1875
+        },
+        ".owner-sale-hero__description": null,
+        ".owner-sale-presentation": {
+          "padding": [
+            "48px",
+            "0px",
+            "48px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 575.1875
+        },
+        ".owner-sale-presentation__inner": {
+          "padding": [
+            "0px",
+            "22px",
+            "0px",
+            "22px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 479.1875
+        },
+        ".owner-sale-presentation__title": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 52.78125
+        },
+        ".owner-sale-presentation__grid": {
+          "padding": [
+            "0px",
+            "0px",
+            "12px",
+            "0px"
+          ],
+          "margin": [
+            "28px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "12px",
+            "12px"
+          ],
+          "height": 372
+        },
+        ".owner-sale-presentation__card": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 360
+        },
+        ".owner-sale-services": {
+          "padding": [
+            "48px",
+            "0px",
+            "48px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 514.78125
+        },
+        ".owner-sale-services__inner": null,
+        ".owner-sale-services__title": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 52.78125
+        },
+        ".owner-sale-services__card": {
+          "padding": [
+            "24px",
+            "20px",
+            "28px",
+            "20px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "0px",
+            "0px"
+          ],
+          "height": 220
+        },
+        ".about-company": {
+          "padding": [
+            "48px",
+            "0px",
+            "48px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 687.1875
+        },
+        ".about-company__inner": {
+          "padding": [
+            "0px",
+            "22px",
+            "0px",
+            "22px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "32px",
+            "32px"
+          ],
+          "height": 591.1875
+        },
+        ".about-company__title": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 52.78125
+        },
+        ".owner-sale-stages": {
+          "padding": [
+            "48px",
+            "0px",
+            "48px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 1228.578125
+        },
+        ".owner-sale-stages__inner": {
+          "padding": [
+            "0px",
+            "22px",
+            "0px",
+            "22px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 1132.578125
+        },
+        ".owner-sale-stages__list": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "0px",
+            "0px"
+          ],
+          "height": 907.78125
+        },
+        ".owner-sale-stages__item": {
+          "padding": [
+            "22px",
+            "0px",
+            "24px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "14px",
+            "14px"
+          ],
+          "height": 130.296875
+        },
+        ".owner-sale-stages__item-title": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 24.296875
+        },
+        "#why-barnes .be-section": {
+          "padding": [
+            "48px",
+            "22px",
+            "48px",
+            "22px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 970.359375
+        },
+        "#why-barnes .be-panorama-header": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "28px",
+            "0px"
+          ],
+          "gap": [
+            "0px",
+            "16px"
+          ],
+          "height": 52.78125
+        },
+        "#why-barnes .be-tabs": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "24px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "16px",
+            "20px"
+          ],
+          "height": 128.78125
+        },
+        "#why-barnes .be-tab-panel": {
+          "padding": [
+            "24px",
+            "20px",
+            "24px",
+            "20px"
+          ],
+          "margin": [
+            "28px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "20px",
+            "20px"
+          ],
+          "height": 280
+        },
+        ".owner-sale-strategy": {
+          "padding": [
+            "48px",
+            "0px",
+            "48px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 718.1875
+        },
+        ".owner-sale-strategy__inner": {
+          "padding": [
+            "0px",
+            "22px",
+            "0px",
+            "22px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 620.1875
+        },
+        ".owner-sale-strategy__content": {
+          "padding": [
+            "28px",
+            "0px",
+            "36px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "20px",
+            "20px"
+          ],
+          "height": 340.1875
+        },
+        ".owner-sale-strategy__title": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 52.78125
+        },
+        ".catalog-consultation": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 693.96875
+        },
+        ".catalog-consultation__inner": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 693.96875
+        },
+        ".catalog-consultation__title": null,
+        ".owner-sale-types": {
+          "padding": [
+            "48px",
+            "0px",
+            "48px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 1113.1875
+        },
+        ".owner-sale-types__inner": {
+          "padding": [
+            "0px",
+            "22px",
+            "0px",
+            "22px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "0px",
+            "normal"
+          ],
+          "height": 1017.1875
+        },
+        ".owner-sale-types__title": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 48.59375
+        },
+        ".owner-sale-types__grid": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "10px",
+            "10px"
+          ],
+          "height": 910
+        },
+        ".newsletter-cta": {
+          "padding": [
+            "48px",
+            "0px",
+            "40px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 494.171875
+        },
+        ".site-footer": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 1670.15625
+        }
+      },
+      "target": {
+        ".owner-sale-hero": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 560
+        },
+        ".owner-sale-hero__content": null,
+        ".owner-sale-hero__title": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 100.78125
+        },
+        ".owner-sale-hero__description": null,
+        ".owner-sale-presentation": {
+          "padding": [
+            "36px",
+            "0px",
+            "36px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 577.578125
+        },
+        ".owner-sale-presentation__inner": {
+          "padding": [
+            "0px",
+            "22px",
+            "0px",
+            "22px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 505.578125
+        },
+        ".owner-sale-presentation__title": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 79.171875
+        },
+        ".owner-sale-presentation__grid": {
+          "padding": [
+            "0px",
+            "0px",
+            "12px",
+            "0px"
+          ],
+          "margin": [
+            "28px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "12px",
+            "12px"
+          ],
+          "height": 372
+        },
+        ".owner-sale-presentation__card": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 360
+        },
+        ".owner-sale-services": {
+          "padding": [
+            "36px",
+            "0px",
+            "36px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 490.78125
+        },
+        ".owner-sale-services__inner": null,
+        ".owner-sale-services__title": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 52.78125
+        },
+        ".owner-sale-services__card": {
+          "padding": [
+            "24px",
+            "20px",
+            "28px",
+            "20px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "0px",
+            "0px"
+          ],
+          "height": 220
+        },
+        ".about-company": {
+          "padding": [
+            "36px",
+            "0px",
+            "36px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 663.1875
+        },
+        ".about-company__inner": {
+          "padding": [
+            "0px",
+            "22px",
+            "0px",
+            "22px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "32px",
+            "32px"
+          ],
+          "height": 591.1875
+        },
+        ".about-company__title": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 52.78125
+        },
+        ".owner-sale-stages": {
+          "padding": [
+            "36px",
+            "0px",
+            "36px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 1416.359375
+        },
+        ".owner-sale-stages__inner": {
+          "padding": [
+            "0px",
+            "22px",
+            "0px",
+            "22px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 1344.359375
+        },
+        ".owner-sale-stages__list": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "0px",
+            "0px"
+          ],
+          "height": 1045.78125
+        },
+        ".owner-sale-stages__item": {
+          "padding": [
+            "24px",
+            "0px",
+            "24px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "14px",
+            "14px"
+          ],
+          "height": 174.296875
+        },
+        ".owner-sale-stages__item-title": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 24.296875
+        },
+        "#why-barnes .be-section": {
+          "padding": [
+            "48px",
+            "22px",
+            "48px",
+            "22px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 970.359375
+        },
+        "#why-barnes .be-panorama-header": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "28px",
+            "0px"
+          ],
+          "gap": [
+            "0px",
+            "16px"
+          ],
+          "height": 52.78125
+        },
+        "#why-barnes .be-tabs": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "24px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "16px",
+            "20px"
+          ],
+          "height": 128.78125
+        },
+        "#why-barnes .be-tab-panel": {
+          "padding": [
+            "24px",
+            "20px",
+            "24px",
+            "20px"
+          ],
+          "margin": [
+            "28px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "20px",
+            "20px"
+          ],
+          "height": 280
+        },
+        ".owner-sale-strategy": {
+          "padding": [
+            "36px",
+            "0px",
+            "36px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 699.578125
+        },
+        ".owner-sale-strategy__inner": {
+          "padding": [
+            "0px",
+            "22px",
+            "0px",
+            "22px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 625.578125
+        },
+        ".owner-sale-strategy__content": {
+          "padding": [
+            "28px",
+            "0px",
+            "36px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "20px",
+            "20px"
+          ],
+          "height": 345.578125
+        },
+        ".owner-sale-strategy__title": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 79.171875
+        },
+        ".catalog-consultation": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 709.578125
+        },
+        ".catalog-consultation__inner": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 709.578125
+        },
+        ".catalog-consultation__title": null,
+        ".owner-sale-types": {
+          "padding": [
+            "36px",
+            "0px",
+            "36px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 859.1875
+        },
+        ".owner-sale-types__inner": {
+          "padding": [
+            "0px",
+            "22px",
+            "0px",
+            "22px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "0px",
+            "normal"
+          ],
+          "height": 787.1875
+        },
+        ".owner-sale-types__title": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 48.59375
+        },
+        ".owner-sale-types__grid": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "10px",
+            "10px"
+          ],
+          "height": 680
+        },
+        ".newsletter-cta": {
+          "padding": [
+            "48px",
+            "0px",
+            "40px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 499.5625
+        },
+        ".site-footer": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 1675.71875
+        }
+      },
+      "differences": [
+        {
+          "selector": ".owner-sale-presentation",
+          "property": "padding",
+          "reference": [
+            "48px",
+            "0px",
+            "48px",
+            "0px"
+          ],
+          "target": [
+            "36px",
+            "0px",
+            "36px",
+            "0px"
+          ]
+        },
+        {
+          "selector": ".owner-sale-services",
+          "property": "padding",
+          "reference": [
+            "48px",
+            "0px",
+            "48px",
+            "0px"
+          ],
+          "target": [
+            "36px",
+            "0px",
+            "36px",
+            "0px"
+          ]
+        },
+        {
+          "selector": ".about-company",
+          "property": "padding",
+          "reference": [
+            "48px",
+            "0px",
+            "48px",
+            "0px"
+          ],
+          "target": [
+            "36px",
+            "0px",
+            "36px",
+            "0px"
+          ]
+        },
+        {
+          "selector": ".owner-sale-stages",
+          "property": "padding",
+          "reference": [
+            "48px",
+            "0px",
+            "48px",
+            "0px"
+          ],
+          "target": [
+            "36px",
+            "0px",
+            "36px",
+            "0px"
+          ]
+        },
+        {
+          "selector": ".owner-sale-stages__item",
+          "property": "padding",
+          "reference": [
+            "22px",
+            "0px",
+            "24px",
+            "0px"
+          ],
+          "target": [
+            "24px",
+            "0px",
+            "24px",
+            "0px"
+          ]
+        },
+        {
+          "selector": ".owner-sale-strategy",
+          "property": "padding",
+          "reference": [
+            "48px",
+            "0px",
+            "48px",
+            "0px"
+          ],
+          "target": [
+            "36px",
+            "0px",
+            "36px",
+            "0px"
+          ]
+        },
+        {
+          "selector": ".owner-sale-types",
+          "property": "padding",
+          "reference": [
+            "48px",
+            "0px",
+            "48px",
+            "0px"
+          ],
+          "target": [
+            "36px",
+            "0px",
+            "36px",
+            "0px"
+          ]
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "reference": {
+        ".owner-sale-hero": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 820
+        },
+        ".owner-sale-hero__content": null,
+        ".owner-sale-hero__title": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 39.890625
+        },
+        ".owner-sale-hero__description": null,
+        ".owner-sale-presentation": {
+          "padding": [
+            "72px",
+            "0px",
+            "72px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 1281.890625
+        },
+        ".owner-sale-presentation__inner": {
+          "padding": [
+            "0px",
+            "24px",
+            "0px",
+            "24px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 1137.890625
+        },
+        ".owner-sale-presentation__title": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 91.1875
+        },
+        ".owner-sale-presentation__grid": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "40px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "12px",
+            "12px"
+          ],
+          "height": 980.296875
+        },
+        ".owner-sale-presentation__card": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 318.765625
+        },
+        ".owner-sale-services": {
+          "padding": [
+            "72px",
+            "0px",
+            "72px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 681.59375
+        },
+        ".owner-sale-services__inner": null,
+        ".owner-sale-services__title": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 91.1875
+        },
+        ".owner-sale-services__card": {
+          "padding": [
+            "20px",
+            "24px",
+            "24px",
+            "24px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "0px",
+            "0px"
+          ],
+          "height": 280
+        },
+        ".about-company": {
+          "padding": [
+            "72px",
+            "0px",
+            "72px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 877.59375
+        },
+        ".about-company__inner": {
+          "padding": [
+            "0px",
+            "24px",
+            "0px",
+            "24px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "32px",
+            "32px"
+          ],
+          "height": 733.59375
+        },
+        ".about-company__title": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 91.1875
+        },
+        ".owner-sale-stages": {
+          "padding": [
+            "72px",
+            "0px",
+            "72px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 1605.78125
+        },
+        ".owner-sale-stages__inner": {
+          "padding": [
+            "0px",
+            "24px",
+            "0px",
+            "24px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 1461.78125
+        },
+        ".owner-sale-stages__list": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "0px",
+            "0px"
+          ],
+          "height": 1159.78125
+        },
+        ".owner-sale-stages__item": {
+          "padding": [
+            "34px",
+            "0px",
+            "36px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "24px",
+            "24px"
+          ],
+          "height": 182.296875
+        },
+        ".owner-sale-stages__item-title": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 24.296875
+        },
+        "#why-barnes .be-section": {
+          "padding": [
+            "72px",
+            "24px",
+            "72px",
+            "24px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 1183.984375
+        },
+        "#why-barnes .be-panorama-header": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "40px",
+            "0px"
+          ],
+          "gap": [
+            "0px",
+            "20px"
+          ],
+          "height": 91.1875
+        },
+        "#why-barnes .be-tabs": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "28px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "16px",
+            "16px"
+          ],
+          "height": 112
+        },
+        "#why-barnes .be-tab-panel": {
+          "padding": [
+            "32px",
+            "32px",
+            "36px",
+            "32px"
+          ],
+          "margin": [
+            "36px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "32px",
+            "32px"
+          ],
+          "height": 365
+        },
+        ".owner-sale-strategy": {
+          "padding": [
+            "72px",
+            "0px",
+            "72px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 868.59375
+        },
+        ".owner-sale-strategy__inner": {
+          "padding": [
+            "0px",
+            "24px",
+            "0px",
+            "24px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 722.59375
+        },
+        ".owner-sale-strategy__content": {
+          "padding": [
+            "36px",
+            "0px",
+            "40px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "24px",
+            "24px"
+          ],
+          "height": 402.59375
+        },
+        ".owner-sale-strategy__title": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 91.1875
+        },
+        ".catalog-consultation": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 731.9375
+        },
+        ".catalog-consultation__inner": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 731.9375
+        },
+        ".catalog-consultation__title": null,
+        ".owner-sale-types": {
+          "padding": [
+            "72px",
+            "0px",
+            "72px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 793.59375
+        },
+        ".owner-sale-types__inner": {
+          "padding": [
+            "0px",
+            "24px",
+            "0px",
+            "24px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "0px",
+            "normal"
+          ],
+          "height": 649.59375
+        },
+        ".owner-sale-types__title": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 48.59375
+        },
+        ".owner-sale-types__grid": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "12px",
+            "12px"
+          ],
+          "height": 492
+        },
+        ".newsletter-cta": {
+          "padding": [
+            "72px",
+            "0px",
+            "40px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 732
+        },
+        ".site-footer": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 2037.828125
+        }
+      },
+      "target": {
+        ".owner-sale-hero": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 820
+        },
+        ".owner-sale-hero__content": null,
+        ".owner-sale-hero__title": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 79.78125
+        },
+        ".owner-sale-hero__description": null,
+        ".owner-sale-presentation": {
+          "padding": [
+            "36px",
+            "0px",
+            "36px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 1333.59375
+        },
+        ".owner-sale-presentation__inner": {
+          "padding": [
+            "0px",
+            "24px",
+            "0px",
+            "24px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 1261.59375
+        },
+        ".owner-sale-presentation__title": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 91.1875
+        },
+        ".owner-sale-presentation__grid": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "40px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "12px",
+            "12px"
+          ],
+          "height": 1104
+        },
+        ".owner-sale-presentation__card": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 360
+        },
+        ".owner-sale-services": {
+          "padding": [
+            "36px",
+            "0px",
+            "36px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 609.59375
+        },
+        ".owner-sale-services__inner": null,
+        ".owner-sale-services__title": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 91.1875
+        },
+        ".owner-sale-services__card": {
+          "padding": [
+            "20px",
+            "24px",
+            "24px",
+            "24px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "0px",
+            "0px"
+          ],
+          "height": 280
+        },
+        ".about-company": {
+          "padding": [
+            "36px",
+            "0px",
+            "36px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 805.59375
+        },
+        ".about-company__inner": {
+          "padding": [
+            "0px",
+            "24px",
+            "0px",
+            "24px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "32px",
+            "32px"
+          ],
+          "height": 733.59375
+        },
+        ".about-company__title": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 91.1875
+        },
+        ".owner-sale-stages": {
+          "padding": [
+            "36px",
+            "0px",
+            "36px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 1624.96875
+        },
+        ".owner-sale-stages__inner": {
+          "padding": [
+            "0px",
+            "24px",
+            "0px",
+            "24px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 1552.96875
+        },
+        ".owner-sale-stages__list": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "0px",
+            "0px"
+          ],
+          "height": 1159.78125
+        },
+        ".owner-sale-stages__item": {
+          "padding": [
+            "24px",
+            "0px",
+            "24px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "24px",
+            "24px"
+          ],
+          "height": 193.296875
+        },
+        ".owner-sale-stages__item-title": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 24.296875
+        },
+        "#why-barnes .be-section": {
+          "padding": [
+            "72px",
+            "24px",
+            "72px",
+            "24px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 1183.984375
+        },
+        "#why-barnes .be-panorama-header": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "40px",
+            "0px"
+          ],
+          "gap": [
+            "0px",
+            "20px"
+          ],
+          "height": 91.1875
+        },
+        "#why-barnes .be-tabs": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "28px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "16px",
+            "16px"
+          ],
+          "height": 112
+        },
+        "#why-barnes .be-tab-panel": {
+          "padding": [
+            "32px",
+            "32px",
+            "36px",
+            "32px"
+          ],
+          "margin": [
+            "36px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "32px",
+            "32px"
+          ],
+          "height": 365
+        },
+        ".owner-sale-strategy": {
+          "padding": [
+            "36px",
+            "0px",
+            "36px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 796.59375
+        },
+        ".owner-sale-strategy__inner": {
+          "padding": [
+            "0px",
+            "24px",
+            "0px",
+            "24px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 722.59375
+        },
+        ".owner-sale-strategy__content": {
+          "padding": [
+            "36px",
+            "0px",
+            "40px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "24px",
+            "24px"
+          ],
+          "height": 402.59375
+        },
+        ".owner-sale-strategy__title": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 91.1875
+        },
+        ".catalog-consultation": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 752.34375
+        },
+        ".catalog-consultation__inner": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 752.34375
+        },
+        ".catalog-consultation__title": null,
+        ".owner-sale-types": {
+          "padding": [
+            "36px",
+            "0px",
+            "36px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 424
+        },
+        ".owner-sale-types__inner": {
+          "padding": [
+            "0px",
+            "24px",
+            "0px",
+            "24px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "0px",
+            "normal"
+          ],
+          "height": 352
+        },
+        ".owner-sale-types__title": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 97.1875
+        },
+        ".owner-sale-types__grid": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "12px",
+            "12px"
+          ],
+          "height": 240
+        },
+        ".newsletter-cta": {
+          "padding": [
+            "72px",
+            "0px",
+            "40px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 732
+        },
+        ".site-footer": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 2044.34375
+        }
+      },
+      "differences": [
+        {
+          "selector": ".owner-sale-presentation",
+          "property": "padding",
+          "reference": [
+            "72px",
+            "0px",
+            "72px",
+            "0px"
+          ],
+          "target": [
+            "36px",
+            "0px",
+            "36px",
+            "0px"
+          ]
+        },
+        {
+          "selector": ".owner-sale-services",
+          "property": "padding",
+          "reference": [
+            "72px",
+            "0px",
+            "72px",
+            "0px"
+          ],
+          "target": [
+            "36px",
+            "0px",
+            "36px",
+            "0px"
+          ]
+        },
+        {
+          "selector": ".about-company",
+          "property": "padding",
+          "reference": [
+            "72px",
+            "0px",
+            "72px",
+            "0px"
+          ],
+          "target": [
+            "36px",
+            "0px",
+            "36px",
+            "0px"
+          ]
+        },
+        {
+          "selector": ".owner-sale-stages",
+          "property": "padding",
+          "reference": [
+            "72px",
+            "0px",
+            "72px",
+            "0px"
+          ],
+          "target": [
+            "36px",
+            "0px",
+            "36px",
+            "0px"
+          ]
+        },
+        {
+          "selector": ".owner-sale-stages__item",
+          "property": "padding",
+          "reference": [
+            "34px",
+            "0px",
+            "36px",
+            "0px"
+          ],
+          "target": [
+            "24px",
+            "0px",
+            "24px",
+            "0px"
+          ]
+        },
+        {
+          "selector": ".owner-sale-strategy",
+          "property": "padding",
+          "reference": [
+            "72px",
+            "0px",
+            "72px",
+            "0px"
+          ],
+          "target": [
+            "36px",
+            "0px",
+            "36px",
+            "0px"
+          ]
+        },
+        {
+          "selector": ".owner-sale-types",
+          "property": "padding",
+          "reference": [
+            "72px",
+            "0px",
+            "72px",
+            "0px"
+          ],
+          "target": [
+            "36px",
+            "0px",
+            "36px",
+            "0px"
+          ]
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "reference": {
+        ".owner-sale-hero": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 620
+        },
+        ".owner-sale-hero__content": null,
+        ".owner-sale-hero__title": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 60.46875
+        },
+        ".owner-sale-hero__description": null,
+        ".owner-sale-presentation": {
+          "padding": [
+            "86.4px",
+            "0px",
+            "86.4px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 1085.125
+        },
+        ".owner-sale-presentation__inner": {
+          "padding": [
+            "0px",
+            "68.3333px",
+            "0px",
+            "68.3333px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 912.34375
+        },
+        ".owner-sale-presentation__title": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 45.59375
+        },
+        ".owner-sale-presentation__grid": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "40px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "20px",
+            "20px"
+          ],
+          "height": 785.65625
+        },
+        ".owner-sale-presentation__card": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 382.8125
+        },
+        ".owner-sale-services": {
+          "padding": [
+            "86.4px",
+            "0px",
+            "86.4px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 725.0625
+        },
+        ".owner-sale-services__inner": null,
+        ".owner-sale-services__title": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 91.1875
+        },
+        ".owner-sale-services__card": {
+          "padding": [
+            "20px",
+            "24px",
+            "24px",
+            "24px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "0px",
+            "0px"
+          ],
+          "height": 280
+        },
+        ".about-company": {
+          "padding": [
+            "86.4px",
+            "0px",
+            "86.4px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 576.0625
+        },
+        ".about-company__inner": {
+          "padding": [
+            "0px",
+            "68.3333px",
+            "0px",
+            "68.3333px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "100.8px",
+            "100.8px"
+          ],
+          "height": 403.28125
+        },
+        ".about-company__title": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 91.1875
+        },
+        ".owner-sale-stages": {
+          "padding": [
+            "86.4px",
+            "0px",
+            "86.4px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 1624.5625
+        },
+        ".owner-sale-stages__inner": {
+          "padding": [
+            "0px",
+            "68.3333px",
+            "0px",
+            "68.3333px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 1451.78125
+        },
+        ".owner-sale-stages__list": {
+          "padding": [
+            "0px",
+            "0px",
+            "292px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "0px",
+            "0px"
+          ],
+          "height": 1451.78125
+        },
+        ".owner-sale-stages__item": {
+          "padding": [
+            "34px",
+            "0px",
+            "36px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "24px",
+            "24px"
+          ],
+          "height": 182.296875
+        },
+        ".owner-sale-stages__item-title": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 24.296875
+        },
+        "#why-barnes .be-section": {
+          "padding": [
+            "86.4px",
+            "68.3333px",
+            "86.4px",
+            "68.3333px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 1025.0625
+        },
+        "#why-barnes .be-panorama-header": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "40px",
+            "0px"
+          ],
+          "gap": [
+            "0px",
+            "56px"
+          ],
+          "height": 91.1875
+        },
+        "#why-barnes .be-tabs": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "28px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "28px",
+            "28px"
+          ],
+          "height": 48
+        },
+        "#why-barnes .be-tab-panel": {
+          "padding": [
+            "32px",
+            "32px",
+            "36px",
+            "32px"
+          ],
+          "margin": [
+            "36px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "56px",
+            "56px"
+          ],
+          "height": 239
+        },
+        ".owner-sale-strategy": {
+          "padding": [
+            "86.4px",
+            "0px",
+            "86.4px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 674.78125
+        },
+        ".owner-sale-strategy__inner": {
+          "padding": [
+            "0px",
+            "68.3333px",
+            "0px",
+            "68.3333px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 500
+        },
+        ".owner-sale-strategy__content": {
+          "padding": [
+            "56px",
+            "48px",
+            "56px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "32px",
+            "32px"
+          ],
+          "height": 500
+        },
+        ".owner-sale-strategy__title": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 91.1875
+        },
+        ".catalog-consultation": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 731.9375
+        },
+        ".catalog-consultation__inner": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 731.9375
+        },
+        ".catalog-consultation__title": null,
+        ".owner-sale-types": {
+          "padding": [
+            "86.4px",
+            "0px",
+            "86.4px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 991.46875
+        },
+        ".owner-sale-types__inner": {
+          "padding": [
+            "0px",
+            "68.3333px",
+            "0px",
+            "68.3333px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "0px",
+            "normal"
+          ],
+          "height": 818.6875
+        },
+        ".owner-sale-types__title": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 24.296875
+        },
+        ".owner-sale-types__grid": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "12px",
+            "12px"
+          ],
+          "height": 692
+        },
+        ".newsletter-cta": {
+          "padding": [
+            "86.4px",
+            "0px",
+            "40px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 666.390625
+        },
+        ".site-footer": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 1203.046875
+        }
+      },
+      "target": {
+        ".owner-sale-hero": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 620
+        },
+        ".owner-sale-hero__content": null,
+        ".owner-sale-hero__title": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 120.9375
+        },
+        ".owner-sale-hero__description": null,
+        ".owner-sale-presentation": {
+          "padding": [
+            "57.6px",
+            "0px",
+            "57.6px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 1027.53125
+        },
+        ".owner-sale-presentation__inner": {
+          "padding": [
+            "0px",
+            "68.3333px",
+            "0px",
+            "68.3333px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 912.34375
+        },
+        ".owner-sale-presentation__title": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 45.59375
+        },
+        ".owner-sale-presentation__grid": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "40px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "20px",
+            "20px"
+          ],
+          "height": 785.65625
+        },
+        ".owner-sale-presentation__card": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 382.8125
+        },
+        ".owner-sale-services": {
+          "padding": [
+            "57.6px",
+            "0px",
+            "57.6px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 667.46875
+        },
+        ".owner-sale-services__inner": null,
+        ".owner-sale-services__title": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 91.1875
+        },
+        ".owner-sale-services__card": {
+          "padding": [
+            "20px",
+            "24px",
+            "24px",
+            "24px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "0px",
+            "0px"
+          ],
+          "height": 280
+        },
+        ".about-company": {
+          "padding": [
+            "57.6px",
+            "0px",
+            "57.6px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 518.46875
+        },
+        ".about-company__inner": {
+          "padding": [
+            "0px",
+            "68.3333px",
+            "0px",
+            "68.3333px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "100.8px",
+            "100.8px"
+          ],
+          "height": 403.28125
+        },
+        ".about-company__title": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 91.1875
+        },
+        ".owner-sale-stages": {
+          "padding": [
+            "57.6px",
+            "0px",
+            "57.6px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 1274.96875
+        },
+        ".owner-sale-stages__inner": {
+          "padding": [
+            "0px",
+            "68.3333px",
+            "0px",
+            "68.3333px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 1159.78125
+        },
+        ".owner-sale-stages__list": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "0px",
+            "0px"
+          ],
+          "height": 1159.78125
+        },
+        ".owner-sale-stages__item": {
+          "padding": [
+            "24px",
+            "0px",
+            "24px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "24px",
+            "24px"
+          ],
+          "height": 193.296875
+        },
+        ".owner-sale-stages__item-title": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 24.296875
+        },
+        "#why-barnes .be-section": {
+          "padding": [
+            "86.4px",
+            "68.3333px",
+            "86.4px",
+            "68.3333px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 1025.0625
+        },
+        "#why-barnes .be-panorama-header": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "40px",
+            "0px"
+          ],
+          "gap": [
+            "0px",
+            "56px"
+          ],
+          "height": 91.1875
+        },
+        "#why-barnes .be-tabs": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "28px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "28px",
+            "28px"
+          ],
+          "height": 48
+        },
+        "#why-barnes .be-tab-panel": {
+          "padding": [
+            "32px",
+            "32px",
+            "36px",
+            "32px"
+          ],
+          "margin": [
+            "36px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "56px",
+            "56px"
+          ],
+          "height": 239
+        },
+        ".owner-sale-strategy": {
+          "padding": [
+            "57.6px",
+            "0px",
+            "57.6px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 617.1875
+        },
+        ".owner-sale-strategy__inner": {
+          "padding": [
+            "0px",
+            "68.3333px",
+            "0px",
+            "68.3333px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 500
+        },
+        ".owner-sale-strategy__content": {
+          "padding": [
+            "56px",
+            "48px",
+            "56px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "32px",
+            "32px"
+          ],
+          "height": 500
+        },
+        ".owner-sale-strategy__title": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 91.1875
+        },
+        ".catalog-consultation": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 752.34375
+        },
+        ".catalog-consultation__inner": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 752.34375
+        },
+        ".catalog-consultation__title": null,
+        ".owner-sale-types": {
+          "padding": [
+            "57.6px",
+            "0px",
+            "57.6px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 581.875
+        },
+        ".owner-sale-types__inner": {
+          "padding": [
+            "0px",
+            "68.3333px",
+            "0px",
+            "68.3333px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "0px",
+            "normal"
+          ],
+          "height": 466.6875
+        },
+        ".owner-sale-types__title": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 48.59375
+        },
+        ".owner-sale-types__grid": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "12px",
+            "12px"
+          ],
+          "height": 340
+        },
+        ".newsletter-cta": {
+          "padding": [
+            "86.4px",
+            "0px",
+            "40px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 666.390625
+        },
+        ".site-footer": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 1209.5625
+        }
+      },
+      "differences": [
+        {
+          "selector": ".owner-sale-presentation",
+          "property": "padding",
+          "reference": [
+            "86.4px",
+            "0px",
+            "86.4px",
+            "0px"
+          ],
+          "target": [
+            "57.6px",
+            "0px",
+            "57.6px",
+            "0px"
+          ]
+        },
+        {
+          "selector": ".owner-sale-services",
+          "property": "padding",
+          "reference": [
+            "86.4px",
+            "0px",
+            "86.4px",
+            "0px"
+          ],
+          "target": [
+            "57.6px",
+            "0px",
+            "57.6px",
+            "0px"
+          ]
+        },
+        {
+          "selector": ".about-company",
+          "property": "padding",
+          "reference": [
+            "86.4px",
+            "0px",
+            "86.4px",
+            "0px"
+          ],
+          "target": [
+            "57.6px",
+            "0px",
+            "57.6px",
+            "0px"
+          ]
+        },
+        {
+          "selector": ".owner-sale-stages",
+          "property": "padding",
+          "reference": [
+            "86.4px",
+            "0px",
+            "86.4px",
+            "0px"
+          ],
+          "target": [
+            "57.6px",
+            "0px",
+            "57.6px",
+            "0px"
+          ]
+        },
+        {
+          "selector": ".owner-sale-stages__list",
+          "property": "padding",
+          "reference": [
+            "0px",
+            "0px",
+            "292px",
+            "0px"
+          ],
+          "target": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ]
+        },
+        {
+          "selector": ".owner-sale-stages__item",
+          "property": "padding",
+          "reference": [
+            "34px",
+            "0px",
+            "36px",
+            "0px"
+          ],
+          "target": [
+            "24px",
+            "0px",
+            "24px",
+            "0px"
+          ]
+        },
+        {
+          "selector": ".owner-sale-strategy",
+          "property": "padding",
+          "reference": [
+            "86.4px",
+            "0px",
+            "86.4px",
+            "0px"
+          ],
+          "target": [
+            "57.6px",
+            "0px",
+            "57.6px",
+            "0px"
+          ]
+        },
+        {
+          "selector": ".owner-sale-types",
+          "property": "padding",
+          "reference": [
+            "86.4px",
+            "0px",
+            "86.4px",
+            "0px"
+          ],
+          "target": [
+            "57.6px",
+            "0px",
+            "57.6px",
+            "0px"
+          ]
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "reference": {
+        ".owner-sale-hero": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 760
+        },
+        ".owner-sale-hero__content": null,
+        ".owner-sale-hero__title": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 60.890625
+        },
+        ".owner-sale-hero__description": null,
+        ".owner-sale-presentation": {
+          "padding": [
+            "100px",
+            "0px",
+            "100px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 1368.984375
+        },
+        ".owner-sale-presentation__inner": {
+          "padding": [
+            "0px",
+            "100px",
+            "0px",
+            "100px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 1168.984375
+        },
+        ".owner-sale-presentation__title": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 52.796875
+        },
+        ".owner-sale-presentation__grid": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "40px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "47px",
+            "47px"
+          ],
+          "height": 1035.09375
+        },
+        ".owner-sale-presentation__card": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 494.03125
+        },
+        ".owner-sale-services": {
+          "padding": [
+            "100px",
+            "0px",
+            "100px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 766.6875
+        },
+        ".owner-sale-services__inner": null,
+        ".owner-sale-services__title": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 105.59375
+        },
+        ".owner-sale-services__card": {
+          "padding": [
+            "20px",
+            "24px",
+            "24px",
+            "24px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "0px",
+            "0px"
+          ],
+          "height": 280
+        },
+        ".about-company": {
+          "padding": [
+            "100px",
+            "0px",
+            "100px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 584.6875
+        },
+        ".about-company__inner": {
+          "padding": [
+            "0px",
+            "100px",
+            "0px",
+            "100px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "120px",
+            "120px"
+          ],
+          "height": 384.6875
+        },
+        ".about-company__title": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 105.59375
+        },
+        ".owner-sale-stages": {
+          "padding": [
+            "100px",
+            "0px",
+            "100px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 1663.78125
+        },
+        ".owner-sale-stages__inner": {
+          "padding": [
+            "0px",
+            "100px",
+            "0px",
+            "100px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 1463.78125
+        },
+        ".owner-sale-stages__list": {
+          "padding": [
+            "0px",
+            "0px",
+            "292px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "0px",
+            "0px"
+          ],
+          "height": 1463.78125
+        },
+        ".owner-sale-stages__item": {
+          "padding": [
+            "34px",
+            "0px",
+            "36px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "24px",
+            "24px"
+          ],
+          "height": 184.296875
+        },
+        ".owner-sale-stages__item-title": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 24.296875
+        },
+        "#why-barnes .be-section": {
+          "padding": [
+            "100px",
+            "100px",
+            "100px",
+            "100px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 1122.6875
+        },
+        "#why-barnes .be-panorama-header": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "40px",
+            "0px"
+          ],
+          "gap": [
+            "0px",
+            "56px"
+          ],
+          "height": 105.59375
+        },
+        "#why-barnes .be-tabs": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "28px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "28px",
+            "28px"
+          ],
+          "height": 48
+        },
+        "#why-barnes .be-tab-panel": {
+          "padding": [
+            "32px",
+            "32px",
+            "36px",
+            "32px"
+          ],
+          "margin": [
+            "36px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "56px",
+            "56px"
+          ],
+          "height": 215
+        },
+        ".owner-sale-strategy": {
+          "padding": [
+            "100px",
+            "0px",
+            "100px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 792
+        },
+        ".owner-sale-strategy__inner": {
+          "padding": [
+            "0px",
+            "100px",
+            "0px",
+            "100px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 590
+        },
+        ".owner-sale-strategy__content": {
+          "padding": [
+            "72px",
+            "72px",
+            "72px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "40px",
+            "40px"
+          ],
+          "height": 590
+        },
+        ".owner-sale-strategy__title": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 105.59375
+        },
+        ".catalog-consultation": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 829.59375
+        },
+        ".catalog-consultation__inner": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 829.59375
+        },
+        ".catalog-consultation__title": null,
+        ".owner-sale-types": {
+          "padding": [
+            "100px",
+            "0px",
+            "100px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 1143.890625
+        },
+        ".owner-sale-types__inner": {
+          "padding": [
+            "0px",
+            "100px",
+            "0px",
+            "100px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "0px",
+            "normal"
+          ],
+          "height": 943.890625
+        },
+        ".owner-sale-types__title": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 24.296875
+        },
+        ".owner-sale-types__grid": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "12px",
+            "12px"
+          ],
+          "height": 810
+        },
+        ".newsletter-cta": {
+          "padding": [
+            "100px",
+            "0px",
+            "40px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 680
+        },
+        ".site-footer": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 1255.640625
+        }
+      },
+      "target": {
+        ".owner-sale-hero": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 760
+        },
+        ".owner-sale-hero__content": null,
+        ".owner-sale-hero__title": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 121.78125
+        },
+        ".owner-sale-hero__description": null,
+        ".owner-sale-presentation": {
+          "padding": [
+            "64px",
+            "0px",
+            "64px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 1296.984375
+        },
+        ".owner-sale-presentation__inner": {
+          "padding": [
+            "0px",
+            "100px",
+            "0px",
+            "100px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 1168.984375
+        },
+        ".owner-sale-presentation__title": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 52.796875
+        },
+        ".owner-sale-presentation__grid": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "40px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "47px",
+            "47px"
+          ],
+          "height": 1035.09375
+        },
+        ".owner-sale-presentation__card": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 494.03125
+        },
+        ".owner-sale-services": {
+          "padding": [
+            "64px",
+            "0px",
+            "64px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 694.6875
+        },
+        ".owner-sale-services__inner": null,
+        ".owner-sale-services__title": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 105.59375
+        },
+        ".owner-sale-services__card": {
+          "padding": [
+            "20px",
+            "24px",
+            "24px",
+            "24px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "0px",
+            "0px"
+          ],
+          "height": 280
+        },
+        ".about-company": {
+          "padding": [
+            "64px",
+            "0px",
+            "64px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 512.6875
+        },
+        ".about-company__inner": {
+          "padding": [
+            "0px",
+            "100px",
+            "0px",
+            "100px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "120px",
+            "120px"
+          ],
+          "height": 384.6875
+        },
+        ".about-company__title": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 105.59375
+        },
+        ".owner-sale-stages": {
+          "padding": [
+            "64px",
+            "0px",
+            "64px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 1299.78125
+        },
+        ".owner-sale-stages__inner": {
+          "padding": [
+            "0px",
+            "100px",
+            "0px",
+            "100px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 1171.78125
+        },
+        ".owner-sale-stages__list": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "0px",
+            "0px"
+          ],
+          "height": 1171.78125
+        },
+        ".owner-sale-stages__item": {
+          "padding": [
+            "24px",
+            "0px",
+            "24px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "24px",
+            "24px"
+          ],
+          "height": 195.296875
+        },
+        ".owner-sale-stages__item-title": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 24.296875
+        },
+        "#why-barnes .be-section": {
+          "padding": [
+            "100px",
+            "100px",
+            "100px",
+            "100px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 1122.6875
+        },
+        "#why-barnes .be-panorama-header": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "40px",
+            "0px"
+          ],
+          "gap": [
+            "0px",
+            "56px"
+          ],
+          "height": 105.59375
+        },
+        "#why-barnes .be-tabs": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "28px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "28px",
+            "28px"
+          ],
+          "height": 48
+        },
+        "#why-barnes .be-tab-panel": {
+          "padding": [
+            "32px",
+            "32px",
+            "36px",
+            "32px"
+          ],
+          "margin": [
+            "36px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "56px",
+            "56px"
+          ],
+          "height": 215
+        },
+        ".owner-sale-strategy": {
+          "padding": [
+            "64px",
+            "0px",
+            "64px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 720
+        },
+        ".owner-sale-strategy__inner": {
+          "padding": [
+            "0px",
+            "100px",
+            "0px",
+            "100px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 590
+        },
+        ".owner-sale-strategy__content": {
+          "padding": [
+            "72px",
+            "72px",
+            "72px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "40px",
+            "40px"
+          ],
+          "height": 590
+        },
+        ".owner-sale-strategy__title": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 105.59375
+        },
+        ".catalog-consultation": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 842.796875
+        },
+        ".catalog-consultation__inner": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 842.796875
+        },
+        ".catalog-consultation__title": null,
+        ".owner-sale-types": {
+          "padding": [
+            "64px",
+            "0px",
+            "64px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 660.890625
+        },
+        ".owner-sale-types__inner": {
+          "padding": [
+            "0px",
+            "100px",
+            "0px",
+            "100px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "0px",
+            "normal"
+          ],
+          "height": 532.890625
+        },
+        ".owner-sale-types__title": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 24.296875
+        },
+        ".owner-sale-types__grid": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "12px",
+            "12px"
+          ],
+          "height": 399
+        },
+        ".newsletter-cta": {
+          "padding": [
+            "100px",
+            "0px",
+            "40px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 843.328125
+        },
+        ".site-footer": {
+          "padding": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "margin": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ],
+          "gap": [
+            "normal",
+            "normal"
+          ],
+          "height": 1262.15625
+        }
+      },
+      "differences": [
+        {
+          "selector": ".owner-sale-presentation",
+          "property": "padding",
+          "reference": [
+            "100px",
+            "0px",
+            "100px",
+            "0px"
+          ],
+          "target": [
+            "64px",
+            "0px",
+            "64px",
+            "0px"
+          ]
+        },
+        {
+          "selector": ".owner-sale-services",
+          "property": "padding",
+          "reference": [
+            "100px",
+            "0px",
+            "100px",
+            "0px"
+          ],
+          "target": [
+            "64px",
+            "0px",
+            "64px",
+            "0px"
+          ]
+        },
+        {
+          "selector": ".about-company",
+          "property": "padding",
+          "reference": [
+            "100px",
+            "0px",
+            "100px",
+            "0px"
+          ],
+          "target": [
+            "64px",
+            "0px",
+            "64px",
+            "0px"
+          ]
+        },
+        {
+          "selector": ".owner-sale-stages",
+          "property": "padding",
+          "reference": [
+            "100px",
+            "0px",
+            "100px",
+            "0px"
+          ],
+          "target": [
+            "64px",
+            "0px",
+            "64px",
+            "0px"
+          ]
+        },
+        {
+          "selector": ".owner-sale-stages__list",
+          "property": "padding",
+          "reference": [
+            "0px",
+            "0px",
+            "292px",
+            "0px"
+          ],
+          "target": [
+            "0px",
+            "0px",
+            "0px",
+            "0px"
+          ]
+        },
+        {
+          "selector": ".owner-sale-stages__item",
+          "property": "padding",
+          "reference": [
+            "34px",
+            "0px",
+            "36px",
+            "0px"
+          ],
+          "target": [
+            "24px",
+            "0px",
+            "24px",
+            "0px"
+          ]
+        },
+        {
+          "selector": ".owner-sale-strategy",
+          "property": "padding",
+          "reference": [
+            "100px",
+            "0px",
+            "100px",
+            "0px"
+          ],
+          "target": [
+            "64px",
+            "0px",
+            "64px",
+            "0px"
+          ]
+        },
+        {
+          "selector": ".owner-sale-types",
+          "property": "padding",
+          "reference": [
+            "100px",
+            "0px",
+            "100px",
+            "0px"
+          ],
+          "target": [
+            "64px",
+            "0px",
+            "64px",
+            "0px"
+          ]
+        }
+      ]
+    }
+  ]
+}
