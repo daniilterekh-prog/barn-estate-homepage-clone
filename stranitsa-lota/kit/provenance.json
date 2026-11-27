@@ -131,7 +131,7 @@
       "sourceCommit": "6f2ce65ec5ac1383660562cd6bff0313eadf8a35",
       "sourceSha256": "eb2e94aa0238b6d46d2bb7250ab179ed8099ce0a48ded3dd8a20f4a23789136c",
       "target": "lot-page.js",
-      "sha256": "50fef009b379a4829794472aa93ba736ae975fc9a1ef0d595697bd2996ebe204",
+      "sha256": "83889ec18b9553d5f62f6b4b6ecc4211f3f7290129fe9fcf8a44b87628616454",
       "adaptation": "Copy hero-bottom-minus-120 reveal threshold and hidden/inert states. Reuse local media-header adapter with lot anchors, request context and focus return."
     },
     {
@@ -161,7 +161,7 @@
     {
       "source": "User-requested semantic adaptation of existing project components",
       "target": "kit/vendor/zhk/bridge.css",
-      "sha256": "35e9e134c8063fb53217dff982a01981ce45cebcd701385f4b525f94cf7a9db4",
+      "sha256": "094c13378649becf21e29b11735dd94e9caf6184371c830f80570f07f8211adc",
       "adaptation": "Existing local token aliases; actual lot/broker assets; two deal cards instead of three financial programs; bright-photo contrast; preserve approved hero geometry; native request transport unchanged."
     },
     {
@@ -228,5 +228,24 @@
       "sha256": "dbf8d764190f338eda49e73c79ab2042fbac92cfc508d94609e3452fc0adf3ee",
       "adaptation": "Reuse existing component; rename source section IDs to lot IDs where required"
     }
-  ]
+  ],
+  "consultationCorrection": {
+    "date": "2026-11-27",
+    "source": "residential-complex/structure/cta-source.json",
+    "layout": "Complete existing CTA, form left, expert composite right, avatar mobile. Removed the lot photograph and custom broker card.",
+    "expert": "Ruslan Prus is the existing agency consultation illustration; not asserted as the assigned broker of lot 588036. Lot broker and mailto/phone destination stay in data.",
+    "form": "Canonical channel radios and comment restored; selected preference and comment included in prepared request, no POST or CRM added.",
+    "assets": [
+      {
+        "target": "kit/assets/cta-ruslan-background.webp",
+        "source": "https://raw.githubusercontent.com/daniilterekh-prog/barnes-assets/main/blocks/_assets/963872afd408-consultation-bg.webp",
+        "sha256": "963872afd408bd77fca71e32647e7617d1c526fc33f8c25b582dc1d1a17c1700"
+      },
+      {
+        "target": "kit/assets/cta-ruslan-avatar.webp",
+        "source": "https://raw.githubusercontent.com/daniilterekh-prog/barnes-assets/main/blocks/_assets/4464b6998f60-ruslan.webp",
+        "sha256": "4464b6998f60131d99ee19b3887a776b896162ce4cbbf1cefd4bb7dcbf7a3986"
+      }
+    ]
+  }
 }

@@ -1,3 +1,5 @@
+CTA заменён целиком на готовый `#expert` страницы ЖК: исходная фотография эксперта и мобильный аватар, стандартные каналы/поля/комментарий. Картинки — из barnes-assets, исходный CSS консультации сохранён. Предпочтительный канал и комментарий входят в подготовленное обращение; CRM не подключена.
+
 [Текущая страница лота](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/stranitsa-lota/?hero=3&v=zhk-components-20261127): готовые компоненты ЖК с параметрами, фото и брокером лота. [Карта адаптации и проверки](https://github.com/daniilterekh-prog/barnes-sites/blob/main/main-site/pages/lot/ADAPTATION.md).
 
 # Общий шаблон лота BARN Estate

@@ -1,12 +1,12 @@
 {
   "date": "2026-11-27",
   "sourceRepository": "daniilterekh-prog/barnes-sites",
-  "sourceCommit": "28326740c960ac213a02b32a09af7f7872b6fc70",
+  "sourceCommit": "bf64b5905c0405a833bde25b2570eea42f07039b",
   "sourcePath": "main-site/pages/lot",
   "uiKit": "BARN Estate 1.0.6",
   "scope": "Only stranitsa-lota",
   "privateReferenceExcluded": true,
-  "checks": "44 component comparisons to zhk-structure; 11 responsive widths 320–3840; six flow widths; 16 hero sizes and 27 dropdowns; 10 header widths; five slider widths and 37 photos; standalone export 84 files; package tests 5/5",
+  "checks": "68 component comparisons; ten CTA widths; two CTA keyboard/validation/handoff flows and axe checks; two existing lot flow widths; standalone export 86 files",
   "previewOnly": true,
   "heroOptions": "hero-options/",
   "defaultHeroUnchanged": true,
@@ -17,5 +17,6 @@
   "compactHero": "No intermediate contents row; facts top padding 8/12/16px and hero bottom 8/12/16px; lot anchors remain in compact desktop header",
   "contentComponents": "Existing zhk-structure passport, description, formats/plan request, purchase cards, location and consultation adapted to lot data; conditional documents, FAQ and related components",
   "componentSource": "zhk-structure/?v=97aa519#project",
-  "uiKitCorrections": "Source chevrons 11×22 and circles 48/56/68; canonical hero gutters; CTA block padding 0; source text spacing"
+  "uiKitCorrections": "Source chevrons 11×22 and circles 48/56/68; canonical hero gutters; CTA block padding 0; source text spacing",
+  "consultation": "Complete existing zhk-structure expert CTA with original canonical composite and mobile avatar. Removed lot-photo background, custom overlay and desktop avatar. Preferred channel and comment included in prepared request; no POST/CRM."
 }

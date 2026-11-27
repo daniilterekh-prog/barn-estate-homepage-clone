@@ -15,21 +15,6 @@
 .lot-page .documents svg{width:18px;height:18px}
 .lot-page .lot-selection-copy{max-width:900px}
 .lot-page .lot-selection-copy .selection-cta{margin-top:24px}
-/* The source CTA embeds its broker in its image. This lot retains its own broker/photo. */
-.lot-page .project-consultation::before{content:none}
-.lot-page .project-consultation .pc-overlay{background:linear-gradient(90deg,#000c,#0004)}
-.lot-page .project-consultation .lot-broker-visible{display:flex;align-items:center;gap:12px;margin-bottom:20px}
-.lot-page .project-consultation .pc-expert-photo{display:block;width:68px;height:68px;border-radius:50%;border:1px solid #fff;overflow:hidden;flex:0 0 68px}
-.lot-page .project-consultation .pc-expert-photo>img{width:66px;height:66px;object-fit:cover;object-position:50% 20%;transform:none}
-.lot-page .project-consultation .pc-expert-role{font-size:11px;line-height:1.25;letter-spacing:.07em;text-transform:uppercase;color:#ffffffcc;margin:0 0 5px}
-.lot-page .project-consultation .pc-expert-name{font-size:20px;line-height:1.1;margin:0}
-.lot-page .project-consultation .pc-broker-phone{display:inline-block;font-size:14px;line-height:1.4;color:#fff;text-decoration:underline;text-underline-offset:4px;margin-top:6px}
-.lot-page .project-consultation .pc-form{display:block}
-.lot-page .project-consultation .pc-form .pc-input{font:300 18px/1.4 'Tilda Sans',sans-serif;min-height:50px;padding:14px 0 10px;border:0;border-bottom:1px solid #ffffff6b;background:transparent;color:#fff}
-.lot-page .project-consultation .pc-form .pc-input::placeholder{color:#ffffffb3}
-.lot-page .project-consultation .pc-form .pc-consent{margin:10px 0 0;color:#ffffffcc}
-.lot-page .project-consultation .pc-form .pc-consent span{margin:0;padding-top:2px}
-.lot-page .project-consultation .lot-form-note{color:#ffffffcc;margin-top:16px}
 /* Canonical gallery arrow geometry, inverted on the photograph. */
 body[data-hero-variant="3"]{--hero-inset:var(--barn-page-gutter)}
 body[data-hero-variant="3"] .lot-hero__slider .pg-nav-button,.lot-page .gallery-arrows .pg-nav-button{width:56px;height:56px;flex:0 0 56px;padding:0}
@@ -39,7 +24,6 @@ body[data-hero-variant="3"] .lot-offer__actions .button{padding-block:0}
 @media(min-width:1441px){
  .lot-page{--button-padding:47px}
  body[data-hero-variant="3"] .lot-hero__slider .pg-nav-button,.lot-page .gallery-arrows .pg-nav-button{width:68px;height:68px;flex-basis:68px}
- .lot-page .project-consultation .pc-form .pc-input{font-size:20px;min-height:57px;padding:16px 0 12px}
 }
 @media(max-width:1024px){.lot-page{--eyebrow:12px;--eyebrow-gap:12px}}
 @media(max-width:767px){
@@ -48,7 +32,6 @@ body[data-hero-variant="3"] .lot-offer__actions .button{padding-block:0}
 }
 @media(max-width:540px){
  .lot-page{--lead-line:21px;--button-height:58px;--button-padding:24px}
- .lot-page .project-consultation .pc-form .pc-input{font-size:17px;min-height:49px}
  .lot-page .project-description__text h3{margin-bottom:16px}
  .lot-page .location-copy .lead,.lot-page .location-copy .text-link{margin-top:16px}
 }
@@ -57,9 +40,5 @@ body[data-hero-variant="3"] .lot-offer__actions .button{padding-block:0}
 .lot-page :is(.format-row,.formats-plan-link){border:0;background:transparent}
 .lot-page :is(.format-action,.formats-plan-link) svg{width:18px;height:18px;flex:0 0 18px}
 .lot-page .lot-mobile-bar .button{min-height:44px;padding:0 24px;font-size:16px}
-/* The lot photograph is brighter than the source's baked composite; keep form contrast. */
-.lot-page .project-consultation .pc-overlay{background:linear-gradient(90deg,#000c 0%,#000c 55%,#0008)}
-@media(max-width:1024px){.lot-page .project-consultation .pc-overlay{background:#000c}}
-
 .lot-page[data-lot-footer-visible=true] .lot-mobile-bar{display:none!important}
 .lot-page .rp-card:not(:has(.rp-media)) .rp-body{margin-top:0}

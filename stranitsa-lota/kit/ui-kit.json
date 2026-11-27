@@ -128,7 +128,7 @@
       "floorplans formats and photographic card",
       "purchase cards",
       "location panel",
-      "consultation fields and expert card",
+      "complete existing consultation CTA",
       "documents, FAQ and related-project cards"
     ],
     "arrows": {
@@ -138,7 +138,8 @@
       "wide": 68,
       "svg": "11x22; M9.5 21 1 11 9.5 1 / M1.5 21 10 11 1.5 1"
     },
-    "form": "Existing lot request form, restyled with project consultation; no new transport or unsupported channel choices",
+    "form": "Complete canonical agency consultation markup; selected channel preference and comment retained in prepared handoff. No new transport.",
     "hero": "Retain chosen composition/height, short fact gaps and direct slides; align gutters and CTA padding to source kit"
-  }
+  },
+  "consultationCorrection": "Complete existing project/owner-sale CTA and original canonical expert imagery, no lot-photo hybrid. Channel preference/comment included in prepared request."
 }
