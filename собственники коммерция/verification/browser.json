@@ -413,10 +413,10 @@
     "_site/pictures/office-contact/telegram.svg",
     "_site/pictures/office-contact/whatsapp.svg",
     "_site/shared/about-home.css?v=7a557a16b660",
-    "_site/shared/about-home.js?v=6254541df8e7",
+    "_site/shared/about-home.js?v=148ef27c8733",
     "_site/shared/anchor-navigation.css?v=fddf6c892c5b",
     "_site/shared/anchor-navigation.js?v=d42478c6de29",
-    "_site/shared/assets/home-about-logo-round-red.png",
+    "_site/shared/assets/home-about-logo-round-red.webp",
     "_site/shared/card-gaps.css?v=efb542f53c1a",
     "_site/shared/cta-bleed.css?v=d892ba286df8",
     "_site/shared/cta-bleed.js?v=45d164865450",
@@ -446,6 +446,7 @@
     "assets/directions/service-city.webp",
     "assets/directions/service-country.webp",
     "assets/directions/service-rent.webp",
+    "assets/directions/service-spb.webp",
     "assets/editorial/advantages-panorama.webp",
     "assets/editorial/buyer.webp",
     "assets/editorial/economics.webp",
@@ -458,8 +459,8 @@
     "assets/fonts/TildaSans-Light.woff2",
     "assets/fonts/TildaSans-Medium.woff2",
     "assets/fonts/TildaSans-Regular.woff2",
-    "assets/menu-featured-01.jpg",
-    "assets/menu-featured-02.jpg",
+    "assets/menu-featured-01.webp",
+    "assets/menu-featured-02.webp",
     "assets/newsletter/magazines-desktop.webp",
     "assets/newsletter/magazines-mobile.webp",
     "brand-nowrap.css?v=09ea8dedc25f",
@@ -491,18 +492,23 @@
   "directionHashes": [
     {
       "file": "service-city.webp",
-      "sha256": "ed9dcf05b37513db963ea49b59588a6b5f0a4127913df385c8403c584338ece1",
-      "matchesOwnerHub": true
+      "sha256": "5733e6167392ba9bb0229fe1977ce5aeb55096d5a8d3352a65d661ec5ed17ed9",
+      "matchesReference": true
+    },
+    {
+      "file": "service-spb.webp",
+      "sha256": "c4fcea4691ce04e611c0eec14482f058f85f81f3dd71d46b02e1d9c684fc86b4",
+      "matchesReference": true
     },
     {
       "file": "service-country.webp",
-      "sha256": "8d5e96001f2d07f6b7bf99e0739a824c980b2d937c0689ee9702c9316d5f7a3a",
-      "matchesOwnerHub": true
+      "sha256": "16ea18abb8b0d3d7af437a926bd5fc929e45b4f1b10f190ee29eecee8836a371",
+      "matchesReference": true
     },
     {
       "file": "service-rent.webp",
-      "sha256": "6618f0f5d98c4b09bb5bba13cebbcf1ad7cbb363ec36e3727456f75871f7d5a5",
-      "matchesOwnerHub": true
+      "sha256": "51b77a72220655437c73ba0b32aa2a600d5ebc5f32678a19e2e26acd1a38f229",
+      "matchesReference": true
     }
   ],
   "failures": [],

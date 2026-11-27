@@ -106,7 +106,7 @@ const faq = [
         row.referenceFaq,
         "FAQ styles differ at " + width,
       );
-      assert.equal(await p.locator(".owner-sale-types__card").count(), 3);
+      assert.equal(await p.locator(".owner-sale-types__card").count(), 4);
       assert.equal(await p.locator("#faq .catalog-faq__question").count(), 6);
       assert.equal(
         await p.evaluate(
@@ -201,6 +201,7 @@ const faq = [
     }
     report.directionHashes = [
       "service-city.webp",
+      "service-spb.webp",
       "service-country.webp",
       "service-rent.webp",
     ].map((file) => ({

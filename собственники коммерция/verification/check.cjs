@@ -58,9 +58,8 @@ const normalize=s=>s.replace(/\s|\u00a0/g,' ').trim();
   await page.evaluate(()=>scrollTo(0,0));await page.screenshot({path:path.join(out,`page-${width}.png`),fullPage:true});await page.screenshot({path:path.join(out,`hero-${width}.png`)});
   report.flows.push({width,faqKeyboard:true,channelsKeyboard:true,modalValidation:true,consent:true,noTransmission:true,escape:true,focusReturn:true,presentationCards:true});
  }
- const pageRoot=path.dirname(out),repo=path.dirname(pageRoot);
- const hub=fs.existsSync(path.join(repo,'sobstvenniki-uzel'))?'sobstvenniki-uzel':'owner-hub';
- report.directionHashes=['service-city.webp','service-country.webp','service-rent.webp'].map(file=>{const hash=p=>crypto.createHash('sha256').update(fs.readFileSync(p)).digest('hex');const a=hash(path.join(pageRoot,'assets/directions',file)),b=hash(path.join(repo,hub,'assets/editorial',file));check(a===b,`direction image changed: ${file}`);return {file,sha256:a,matchesOwnerHub:a===b};});
+ const pageRoot=path.dirname(out);
+ report.directionHashes=JSON.parse(fs.readFileSync(path.join(pageRoot,'assets/directions/source.json'))).images.map(image=>{const actual=hash(fs.readFileSync(path.join(pageRoot,'assets/directions',image.file)));check(actual===image.sha256,`reference direction image changed: ${image.file}`);return {file:image.file,sha256:actual,matchesReference:true};});
  check(hash(fs.readFileSync(path.join(pageRoot,'assets/barn-estate-logo.svg')))===layout.footerLogoSha256,'canonical footer logo hash');
  check(!report.pageErrors.length,'JavaScript errors');check(!report.httpErrors.length,'HTTP errors');check(!report.nonGetRequests.length,'unexpected data transmission');
  report.requestedAssets=[...new Set(report.requestedAssets)].sort();report.failures=fail;report.passed=!fail.length;

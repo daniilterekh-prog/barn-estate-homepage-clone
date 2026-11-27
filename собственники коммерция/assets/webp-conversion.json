@@ -1,0 +1,130 @@
+{
+  "convertedAt": "2026-11-27",
+  "scope": "Entire self-contained commercial-owner page, excluding verification screenshots and vector SVGs",
+  "sourceCommit": "8d2f8423949eba56585c0800a403beb59d2e96d8",
+  "tool": "Sharp 0.35.5",
+  "entries": [
+    {
+      "source": "_site/shared/assets/home-about-logo-round-red.png",
+      "file": "_site/shared/assets/home-about-logo-round-red.webp",
+      "sourceSha256": "abb141124e76fe4cdc5d4c036160eb1fadcf2a61484bb8bd78b40c756c631395",
+      "sha256": "5f595f5a67a3568be8b035657cf437233f54b6490b238a59d3192cf4ec2a18d0",
+      "sourceBytes": 39787,
+      "bytes": 15196,
+      "width": 600,
+      "height": 600,
+      "lossless": true,
+      "losslessPixelsVerified": true
+    },
+    {
+      "source": "assets/alexandra.png",
+      "file": "assets/alexandra.webp",
+      "sourceSha256": "0c0e269c6b3592cae1974cba344e0f9f3d43fe07aff735577b4f9238c0b4a585",
+      "sha256": "bd1c86e0a5c84dc2e384beab919b14e9b4601d5ce14e6d1576b8a38422e0213e",
+      "sourceBytes": 25431,
+      "bytes": 5568,
+      "width": 121,
+      "height": 121,
+      "lossless": false
+    },
+    {
+      "source": "assets/menu-featured-01.jpg",
+      "file": "assets/menu-featured-01.webp",
+      "sourceSha256": "c5384c30d421ad705b43c8eb3dac7d16187ff87eb67392232fb15fa995980a7e",
+      "sha256": "5fa04d6f84449d6e8e24aa5fe80d2d071efa651a4f4da16d3b694a65f5a6f31b",
+      "sourceBytes": 264325,
+      "bytes": 273602,
+      "width": 1920,
+      "height": 1080,
+      "lossless": false
+    },
+    {
+      "source": "assets/menu-featured-02.jpg",
+      "file": "assets/menu-featured-02.webp",
+      "sourceSha256": "7781fce4e8048ef743e425d296b2437674b6dc3e1d3684da098beb3afc695357",
+      "sha256": "0118984b23a5ee9ed8908973ee9106ad69cad1932458df2985ed9dec6362f43b",
+      "sourceBytes": 374206,
+      "bytes": 379468,
+      "width": 1920,
+      "height": 1280,
+      "lossless": false
+    },
+    {
+      "source": "assets/presentation-01.png",
+      "file": "assets/presentation-01.webp",
+      "sourceSha256": "d2c24c0dd2501ea6c8d425b4400dbc375d8edbc0a0e981d1308b0bc98f88c353",
+      "sha256": "78b4cd5c25f5eb47f8b9a745c9526e2487ba4fc3f2711fbdbd0386db587cada6",
+      "sourceBytes": 319209,
+      "bytes": 30046,
+      "width": 535,
+      "height": 508,
+      "lossless": false
+    },
+    {
+      "source": "assets/presentation-02.png",
+      "file": "assets/presentation-02.webp",
+      "sourceSha256": "2958038e3c80716f231371ddd621a0d9152685b3e5d61d13c6f1430b90eccc7d",
+      "sha256": "014181355dd3d042d5a330f47936e6a3594d3e057df92156360ca22a18da2d20",
+      "sourceBytes": 302654,
+      "bytes": 20944,
+      "width": 535,
+      "height": 508,
+      "lossless": false
+    },
+    {
+      "source": "assets/presentation-03.png",
+      "file": "assets/presentation-03.webp",
+      "sourceSha256": "487aea8e8077619356ddfa28d878e60b5547a5f7d2de9a945967b530d55462e8",
+      "sha256": "bec7b9adc2e8561dbcbc98ee7fbb5e7769e4533af61aabb63a3d835d18fbd2b6",
+      "sourceBytes": 492653,
+      "bytes": 55900,
+      "width": 535,
+      "height": 508,
+      "lossless": false
+    },
+    {
+      "source": "assets/presentation-04.png",
+      "file": "assets/presentation-04.webp",
+      "sourceSha256": "da70abb247192a8c1f79f4ace89f5cc77b4254a1082777de74812d1fbf1dd3cb",
+      "sha256": "59f1954440c0fe7587f230f6bf59a655b0eb03ceccf17390bf064e9717225e5a",
+      "sourceBytes": 497281,
+      "bytes": 65340,
+      "width": 535,
+      "height": 508,
+      "lossless": false
+    },
+    {
+      "source": "assets/presentation-05.png",
+      "file": "assets/presentation-05.webp",
+      "sourceSha256": "d0e660ddbcd13662a8ec9283cc149d3bc78f952bbcdc60b73dbf3004c0eb7083",
+      "sha256": "623f044372017c9d69d9788c8b3141618cb05ef833aad3ce0986f3769f7fcd2d",
+      "sourceBytes": 527618,
+      "bytes": 62686,
+      "width": 535,
+      "height": 508,
+      "lossless": false
+    },
+    {
+      "source": "assets/presentation-06.png",
+      "file": "assets/presentation-06.webp",
+      "sourceSha256": "c76a94b7b8d8bfbf0313af095aa3e38abe5edc0cecffac7f29a6bc782996517d",
+      "sha256": "2214e81e4903dcc9ac99791396a4fad5844764139e608f2cce467b2397ec26b5",
+      "sourceBytes": 539101,
+      "bytes": 64504,
+      "width": 535,
+      "height": 508,
+      "lossless": false
+    },
+    {
+      "source": "assets/request-bg.png",
+      "file": "assets/request-bg.webp",
+      "sourceSha256": "6c4bf7721f51b9c8aca085b6fc78a08e3fcb5dbc7e4e4ba5816fefc67129dd07",
+      "sha256": "1415992a3f99fed695695a64023418a4028ce51e5c9e767c9a8b21523d85155d",
+      "sourceBytes": 934032,
+      "bytes": 20182,
+      "width": 1920,
+      "height": 885,
+      "lossless": false
+    }
+  ]
+}
