@@ -37,3 +37,6 @@ html body#ui-kit-page[data-owner-commercial][data-commercial-footer-visible=true
 
 /* Full square source: removes the old 200% crop while retaining the 64/72px circle. */
 html body#ui-kit-page[data-owner-commercial] .floating-expert__avatar img {position:absolute!important;inset:0!important;width:100%!important;height:100%!important;max-width:100%!important;object-fit:contain!important;object-position:center!important;transform:none!important;filter:none!important;}
+/* The supplied wide CTA image places the portrait in its rightmost square. */
+html body#ui-kit-page.barnes-page-kit[data-page-kit][data-owner-commercial] #request .catalog-consultation__mobile-photo {position:relative!important;overflow:hidden!important;}
+html body#ui-kit-page.barnes-page-kit[data-page-kit][data-owner-commercial] #request .catalog-consultation__mobile-photo img {position:absolute!important;inset:0!important;width:100%!important;height:100%!important;max-width:100%!important;object-fit:cover!important;object-position:100% 0%!important;transform:none!important;filter:none!important;}
