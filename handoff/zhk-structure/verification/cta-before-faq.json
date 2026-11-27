@@ -1,0 +1,67 @@
+{
+  "errors": [],
+  "views": [
+    {
+      "width": 390,
+      "order": [
+        "project",
+        "passport",
+        "apartments",
+        "architecture",
+        "gallery",
+        "territory",
+        "location",
+        "purchase",
+        "developer",
+        "documents",
+        "expert",
+        "faq",
+        "similar",
+        "newsletter"
+      ],
+      "ctaCount": 1,
+      "overflow": false,
+      "beforeFaq": true,
+      "forms": 1,
+      "faqOpen": true
+    },
+    {
+      "width": 1440,
+      "order": [
+        "project",
+        "passport",
+        "apartments",
+        "architecture",
+        "gallery",
+        "territory",
+        "location",
+        "purchase",
+        "developer",
+        "documents",
+        "expert",
+        "faq",
+        "similar",
+        "newsletter"
+      ],
+      "ctaCount": 1,
+      "overflow": false,
+      "beforeFaq": true,
+      "forms": 1,
+      "faqOpen": true
+    }
+  ],
+  "handoff": [
+    {
+      "width": 390,
+      "ctaBeforeFaq": true,
+      "floatingHidden": true,
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "ctaBeforeFaq": true,
+      "floatingHidden": true,
+      "overflow": false
+    }
+  ]
+}

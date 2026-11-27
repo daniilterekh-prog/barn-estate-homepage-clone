@@ -14,10 +14,10 @@
     "purchase",
     "developer",
     "documents",
+    "expert",
     "faq",
     "similar",
-    "newsletter",
-    "expert"
+    "newsletter"
   ],
   "files": 116,
   "details": [
@@ -238,6 +238,14 @@
       "passed": true
     },
     {
+      "check": "reference html/index.html -> ../assets/cta-ruslan-background.webp",
+      "passed": true
+    },
+    {
+      "check": "reference html/index.html -> ../assets/cta-ruslan-avatar.webp",
+      "passed": true
+    },
+    {
       "check": "reference html/index.html -> ../assets/related-opus.webp",
       "passed": true
     },
@@ -287,14 +295,6 @@
     },
     {
       "check": "reference html/index.html -> ../assets/news/70ae8e588fd6d296fbeb9475.png",
-      "passed": true
-    },
-    {
-      "check": "reference html/index.html -> ../assets/cta-ruslan-background.webp",
-      "passed": true
-    },
-    {
-      "check": "reference html/index.html -> ../assets/cta-ruslan-avatar.webp",
       "passed": true
     },
     {

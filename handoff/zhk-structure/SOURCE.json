@@ -1,8 +1,8 @@
 {
   "source_repository": "daniilterekh-prog/barnes-sites",
-  "source_commit": "aa3b704e86dcb313a5144b703937d400b17c84f5",
+  "source_commit": "ce3602b10772cceffde1ad3d4734f12bde1b87a3",
   "source_path": "main-site/pages/residential-complex/structure/preview",
-  "source_html_sha256": "1bddd4271887a2970b1b00a9e876fea97b12c1884a76a6d5f0d114509d8f39f9",
+  "source_html_sha256": "cbcec65b9a838c74de792b6ce7a19d8f72abfe884393df4eead6b215580c6b3a",
   "preview_repository": "daniilterekh-prog/barn-estate-homepage-clone",
   "preview_runtime_identity": "Runtime exported from source_commit in the same publication as this handoff",
   "transformations": [
@@ -21,10 +21,10 @@
     "purchase",
     "developer",
     "documents",
+    "expert",
     "faq",
     "similar",
-    "newsletter",
-    "expert"
+    "newsletter"
   ],
   "not_connected": [
     "Intrum API",
