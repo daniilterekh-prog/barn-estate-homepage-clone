@@ -279,18 +279,6 @@
       if(panel.childElementCount)layout.append(panel);else layout.classList.add('location-layout--text-only');layout.append(copy);s.box.append(layout);
       if(data.location?.mapImage?.src)s.box.append(link('© Яндекс · Условия использования','https://yandex.ru/legal/maps_termsofuse/','note lot-map-attribution'));main.append(s.node);
     }
-    {
-      const s=section('lot-terms','ПРИОБРЕТЕНИЕ НЕДВИЖИМОСТИ',data.terms?.title || 'Стоимость и условия','purchase');
-      const grid=el('div',null,'three-columns lot-purchase-pair');
-      const amount=el('article');amount.append(el('span','01','item-number'),el('h3','Стоимость объекта'),el('p',price(data),'lot-price-caption'));
-      if(data.pricePerSquareMeter)amount.append(el('p',data.pricePerSquareMeter,'small muted'));
-      if(data.demo)amount.append(el('p','Стоимость из сохранённой карточки объекта.','small muted'));
-      amount.append(action('Уточнить стоимость','terms','text-link','arrow'));
-      const terms=el('article');terms.append(el('span','02','item-number'),el('h3','Условия сделки'));
-      if(data.terms?.note)terms.append(el('p',data.terms.note));
-      if(data.terms?.items?.length){const list=el('ul',null,'plain-list');data.terms.items.forEach(item=>list.append(el('li',item)));terms.append(list);}
-      terms.append(action('Обсудить условия с брокером','terms','text-link','arrow'));grid.append(amount,terms);s.box.append(grid);main.append(s.node);
-    }
     if(data.documents?.length){
       const s=section('lot-documents','МАТЕРИАЛЫ','Документы');const grid=el('div',null,'three-columns documents');
       data.documents.filter(d=>d.url&&d.title).forEach(d=>{const a=link('',d.url,'');a.target='_blank';a.rel='noopener noreferrer';const label=el('span','Документ','small muted');label.append(icon('arrow'));a.append(label,el('h3',d.title),el('span','Открыть документ','small'));grid.append(a)});
@@ -351,7 +339,7 @@
         });s.box.append(grid);const status=el('p',null,'rp-status');status.setAttribute('role','status');status.setAttribute('aria-live','polite');s.box.append(status);
       }else{const content=el('div',null,'project-description__text lot-selection-copy');content.append(el('p','Сравните несколько вариантов по локации, площади и бюджету. Брокер подготовит подборку под ваш запрос.','lead'),action('Подобрать похожие','similar','button outline selection-cta','arrow'));s.box.append(content)}main.append(s.node);
     }
-    for (const [id, label] of [['lot-photos', 'Фото'], ['lot-plan', 'Планировка'], ['lot-about', 'О квартире'], ['lot-building', 'О доме'], ['lot-location', 'Расположение'], ['lot-terms', 'Условия'], ['lot-contact', 'Контакт']]) {
+    for (const [id, label] of [['lot-photos', 'Фото'], ['lot-plan', 'Планировка'], ['lot-about', 'О квартире'], ['lot-building', 'О доме'], ['lot-location', 'Расположение'], ['lot-contact', 'Контакт']]) {
       if ($('#' + id)) sectionLinks.push({id, label});
     }
     const newsletter = el('div');newsletter.innerHTML = "<section class=\"newsletter-cta\" aria-labelledby=\"newsletter-title\" data-v-47bd53e9=\"\" data-v-1e8e9561=\"\" id=\"lot-newsletter\"><div class=\"newsletter-cta__inner\" data-v-1e8e9561=\"\"><div class=\"newsletter-cta__grid\" data-v-1e8e9561=\"\"><div class=\"newsletter-cta__copy\" data-v-1e8e9561=\"\"><p class=\"home-section-eyebrow\">Рассылка BARN Estate</p><h2 id=\"newsletter-title\" data-v-1e8e9561=\"\"> В центре событий рынка недвижимости </h2><p class=\"newsletter-cta__lead\" data-v-1e8e9561=\"\"> Узнавайте первыми о новых проектах, редких объектах и ключевых тенденциях рынка элитной недвижимости. Подписывайтесь на рассылку BARN Estate. </p><form class=\"newsletter-form\" novalidate=\"\" data-v-1e8e9561=\"\" aria-label=\"Подписка на новости BARN Estate\"><label class=\"newsletter-form__label\" for=\"newsletter-email\" data-v-1e8e9561=\"\"> Ваш email </label><div class=\"newsletter-form__row\" data-v-1e8e9561=\"\"><input id=\"newsletter-email\" value=\"\" name=\"email\" type=\"email\" autocomplete=\"email\" placeholder=\"Ваш email\" aria-describedby=\"newsletter-note newsletter-error\" data-v-1e8e9561=\"\" required=\"\"><button type=\"submit\" data-v-1e8e9561=\"\">Подписаться <svg aria-hidden=\"true\" focusable=\"false\" width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\"><path d=\"M3 13 13 3M5 3h8v8\" stroke=\"currentColor\" stroke-width=\"1.25\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path></svg></button></div><p id=\"newsletter-error\" class=\"newsletter-form__error\" data-v-1e8e9561=\"\" role=\"alert\"></p><p class=\"newsletter-form__note\" id=\"newsletter-note\" data-v-1e8e9561=\"\"> Нажимая на кнопку, вы соглашаетесь с <a class=\"newsletter-form__note-link\" target=\"_blank\" href=\"https://barn-estate.ru/legal_notices/yuridicheskie-uvedomleniya/\" data-v-1e8e9561=\"\" rel=\"noopener noreferrer\"><!--[--> политикой конфиденциальности <!--]--></a>. </p><!----></form></div><div class=\"newsletter-cta__visual\" data-v-1e8e9561=\"\"><picture data-v-1e8e9561=\"\"><source media=\"(max-width: 540px)\" srcset=\"kit/assets/newsletter-mobile.webp\" data-v-1e8e9561=\"\"><img src=\"kit/assets/newsletter-desktop.webp\" alt=\"Обложки журнала BARN Estate\" width=\"1100\" height=\"540\" loading=\"lazy\" data-v-1e8e9561=\"\"></picture></div></div></div></section>";main.append(newsletter.firstElementChild);
