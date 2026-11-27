@@ -281,5 +281,11 @@
         "sha256": "3285d219f1845deb8887ba3bc04b8e79ce8d3bec99dd568d8a51b8c5fa8bf9af"
       }
     ]
+  },
+  "heroLocationColor": {
+    "date": "2026-11-27",
+    "selector": "body[data-hero-variant=\"3\"] .lot-hero__copy .eyebrow",
+    "color": "#ffffff",
+    "reason": "Keep the location light like hero title; section eyebrow styles were overriding inherited white."
   }
 }

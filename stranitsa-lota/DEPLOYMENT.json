@@ -1,7 +1,7 @@
 {
   "date": "2026-11-27",
   "sourceRepository": "daniilterekh-prog/barnes-sites",
-  "sourceCommit": "38d36d88356521e4f1c129810af14ddab9b06835",
+  "sourceCommit": "210a91738e1b8ff15c18b004643c829894d98f1c",
   "sourcePath": "main-site/pages/lot",
   "uiKit": "BARN Estate 1.0.6",
   "scope": "Only stranitsa-lota",
@@ -21,5 +21,6 @@
   "consultation": "Complete existing zhk-structure expert CTA with original canonical composite and mobile avatar. Removed lot-photo background, custom overlay and desktop avatar. Preferred channel and comment included in prepared request; no POST/CRM.",
   "related": "Complete project-page cards adapted to three actual catalog lots with terraces;area/bedrooms instead of project class/developer;favorites and correct per-item request context;prices omitted",
   "newsletter": "Original homepage email subscription component and local images/tokens. Email validation and user-controlled prepared mailto; mailing service not connected.",
-  "fixedAction": "Existing project/home floating expert replaces price panel at all widths;desktop24px/mobile16px;hide near forms/footer/in menu/dialog or after close"
+  "fixedAction": "Existing project/home floating expert replaces price panel at all widths;desktop24px/mobile16px;hide near forms/footer/in menu/dialog or after close",
+  "heroLocationColor": "#ffffff, same as title; checked390/768/1440/2560; section eyebrow colors unchanged"
 }
