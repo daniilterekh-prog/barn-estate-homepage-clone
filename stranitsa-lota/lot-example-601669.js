@@ -274,6 +274,67 @@ if (new URLSearchParams(location.search).get("lot") === "601669") {
       "Основание собственности — договор купли-продажи"
     ]
   },
-  "related": []
+  "related": [
+  {
+    "id": "595231",
+    "title": "Квартира с террасой",
+    "address": "Санкт-Петербург, Афанасьевская ул., 1",
+    "url": "https://barnestate-spb.ru/gorodskaya-nedvizhimost/vtorichnaya-nedvizhimost/595231/",
+    "cover": {
+      "src": "assets/601669/related-595231.webp",
+      "alt": "Квартира с террасой — лот 595231"
+    },
+    "facts": [
+      {
+        "label": "Площадь",
+        "value": "60,6 м²"
+      },
+      {
+        "label": "Этаж",
+        "value": "8"
+      }
+    ]
+  },
+  {
+    "id": "594080",
+    "title": "Квартира у канала Грибоедова",
+    "address": "Санкт-Петербург, наб. канала Грибоедова, 46",
+    "url": "https://barnestate-spb.ru/gorodskaya-nedvizhimost/vtorichnaya-nedvizhimost/594080/",
+    "cover": {
+      "src": "assets/601669/related-594080.webp",
+      "alt": "Квартира у канала Грибоедова — лот 594080"
+    },
+    "facts": [
+      {
+        "label": "Площадь",
+        "value": "78 м²"
+      },
+      {
+        "label": "Этаж",
+        "value": "3"
+      }
+    ]
+  },
+  {
+    "id": "595739",
+    "title": "Квартира у воды на Петровском",
+    "address": "Санкт-Петербург, Петровский проспект, 28 к 1",
+    "url": "https://barnestate-spb.ru/gorodskaya-nedvizhimost/vtorichnaya-nedvizhimost/595739/",
+    "cover": {
+      "src": "assets/601669/related-595739.webp",
+      "alt": "Квартира у воды на Петровском — лот 595739"
+    },
+    "facts": [
+      {
+        "label": "Площадь",
+        "value": "57,2 м²"
+      },
+      {
+        "label": "Этаж",
+        "value": "8"
+      }
+    ]
+  }
+]
 };
 }

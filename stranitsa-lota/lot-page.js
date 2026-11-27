@@ -325,7 +325,7 @@
       main.append(wrapper.firstElementChild);
     }
     {
-      const s=section('lot-related','ПРОДОЛЖИТЬ ВЫБОР','Похожие предложения');const valid=(data.related || []).filter(item=>item.title&&item.url);
+      const s=section('lot-related','ДРУГИЕ ПРЕДЛОЖЕНИЯ','Похожие предложения');const valid=(data.related || []).filter(item=>item.title&&item.url);
       if(valid.length){const grid=el('ul',null,'related-project-grid');grid.setAttribute('aria-label','Похожие предложения недвижимости');
         valid.forEach((item,index)=>{const li=el('li'),card=el('article',null,'rp-card');const key=String(item.id || index);card.setAttribute('aria-labelledby','related-'+key+'-title');
           if(item.cover?.src){const media=el('div',null,'rp-media'),a=link('',item.url,'rp-image-link');a.append(image(item.cover));media.append(a);
@@ -333,8 +333,8 @@
             favorite.innerHTML='<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>';media.append(favorite);card.append(media);}
           const body=el('div',null,'rp-body');if(item.address)body.append(el('p',item.address,'rp-address'));const title=el('h3',null,'rp-name');title.id='related-'+key+'-title';title.append(link(item.title,item.url,''));body.append(title);
           if(item.facts?.length)body.append(factsList(item.facts,'rp-facts'));if(item.displayPrice)body.append(el('p',item.displayPrice,'small'));card.append(body);
-          const actions=el('div',null,'rp-actions'),call=action('Заказать звонок','related','rp-call');call.setAttribute('aria-haspopup','dialog');call.dataset.relatedId=item.id || '';call.dataset.relatedTitle=item.title;
-          const details=link('Подробнее',item.url,'rp-details');details.innerHTML+=' <svg viewBox="0 0 16 16" width="16" height="16" fill="none" aria-hidden="true" focusable="false"><path d="M3 13 13 3M6 3h7v7" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25"/></svg>';
+          const actions=el('div',null,'rp-actions'),call=action('Заказать звонок','related','rp-call');call.setAttribute('aria-haspopup','dialog');call.setAttribute('aria-label','Заказать звонок по объекту '+item.title);call.dataset.relatedId=item.id || '';call.dataset.relatedTitle=item.title;
+          const details=link('Подробнее',item.url,'rp-details');details.setAttribute('aria-label','Подробнее об объекте '+item.title);details.innerHTML+=' <svg viewBox="0 0 16 16" width="16" height="16" fill="none" aria-hidden="true" focusable="false"><path d="M3 13 13 3M6 3h7v7" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25"/></svg>';
           actions.append(call,details);card.append(actions);li.append(card);grid.append(li);
         });s.box.append(grid);const status=el('p',null,'rp-status');status.setAttribute('role','status');status.setAttribute('aria-live','polite');s.box.append(status);
       }else{const content=el('div',null,'project-description__text lot-selection-copy');content.append(el('p','Сравните несколько вариантов по локации, площади и бюджету. Брокер подготовит подборку под ваш запрос.','lead'),action('Подобрать похожие','similar','button outline selection-cta','arrow'));s.box.append(content)}main.append(s.node);
