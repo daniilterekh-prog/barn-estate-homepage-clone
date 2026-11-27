@@ -342,3 +342,8 @@ body[data-hero-variant="3"] .lot-offer>.lot-hero__slider{
 body[data-hero-variant="3"] .lot-hero__copy .lot-price{font:inherit;letter-spacing:inherit;color:inherit;white-space:nowrap}
 body[data-hero-variant="3"] .lot-offer>div.lot-offer__actions{padding:0;grid-column:1;grid-row:1}
 @media(max-width:540px){body[data-hero-variant="3"] .lot-offer:has(.lot-hero__slider){padding-top:32px}}
+
+/* Hero dropdowns sit directly on the photograph, like the light header navigation. */
+html body.lot-page[data-hero-variant]:not([data-lot-sticky-active="true"]) .site-header:not(.site-header--menu-open) .catalog-header-dropdown{background:transparent;border-color:transparent;box-shadow:none}
+html body.lot-page[data-hero-variant]:not([data-lot-sticky-active="true"]) .site-header:not(.site-header--menu-open) .catalog-header-dropdown__link,
+html body.lot-page[data-hero-variant]:not([data-lot-sticky-active="true"]) .site-header:not(.site-header--menu-open) .catalog-global-nav .site-header__nav-link[aria-expanded=true]{color:#fff}

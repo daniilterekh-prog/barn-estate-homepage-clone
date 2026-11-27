@@ -299,5 +299,11 @@
     "type": "Existing light eyebrow typography; one hero price only, no lower duplicate. CTA starts at title edge; arrow alignment retained.",
     "mobile": "32px reservation above the CTA row keeps its counter clear of facts after the old price row is removed."
   },
-  "heroStylesheetSha256": "4f65a1ee18410b7793f0f3f40a4de81b3e396785444e31219686869b77b6ed8e"
+  "heroStylesheetSha256": "7fd9840f8ae2e0111a4e46f884c18f79fbe083e0d748500a46b24de121030149",
+  "heroDropdownSurface": {
+    "date": "2026-11-27",
+    "scope": "Opt-in hero state, original header not in menu-open state and compact sticky header inactive",
+    "appearance": "Transparent background and border; no box shadow; white submenu links and expanded parent label",
+    "behavior": "Existing positioning and keyboard/hover handlers unchanged; normal menu keeps white surface and dark links"
+  }
 }

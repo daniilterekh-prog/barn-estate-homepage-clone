@@ -1,7 +1,7 @@
 {
   "date": "2026-11-27",
   "sourceRepository": "daniilterekh-prog/barnes-sites",
-  "sourceCommit": "a18b1045990ffa37d33119fcc9e59b105a2eef39",
+  "sourceCommit": "789fba79f5167d7e8a3b639db94f25153e703e7e",
   "sourcePath": "main-site/pages/lot",
   "uiKit": "BARN Estate 1.0.6",
   "scope": "Only stranitsa-lota",
@@ -24,5 +24,6 @@
   "fixedAction": "Existing project/home floating expert replaces price panel at all widths;desktop24px/mobile16px;hide near forms/footer/in menu/dialog or after close",
   "heroLocationColor": "#ffffff, same as title; checked390/768/1440/2560; section eyebrow colors unchanged",
   "heroSliderAlignment": "Controls share the viewing CTA row and vertical center at11 widths320–3840. Mobile counter above arrows; kit circle/button sizes unchanged;full CTA label fits. Five slider widths,37 photos and single/empty fallbacks passed.",
-  "heroPriceLocation": "Single light metadata line above title: price | location. Lower price removed;CTA starts at title edge;arrow centers preserved. Checked9 widths320–3840, no text clipping or duplicate hero price."
+  "heroPriceLocation": "Single light metadata line above title: price | location. Lower price removed;CTA starts at title edge;arrow centers preserved. Checked9 widths320–3840, no text clipping or duplicate hero price.",
+  "heroDropdownSurface": "Transparent hero dropdown background/border, no shadow, white submenu and expanded parent text. Normal open menu style preserved. All9 menus checked at1281/1440/2560 with hover, keyboard and Escape/focus."
 }
