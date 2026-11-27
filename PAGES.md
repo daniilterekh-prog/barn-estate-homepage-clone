@@ -1,6 +1,6 @@
 # Актуальные страницы основного сайта
 
-- [Собственники — загород: открыть страницу](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/sobstvenniki-zagorod/) — проверенный адрес без кириллицы и пробелов; полное загородное наполнение, Михаил Долгов и действующий UI-кит. [Исходники](https://github.com/daniilterekh-prog/barnes-sites/tree/main/main-site/pages/собственники%20загород). Статическое превью; интеграция CMS/CRM не выполнялась.
+- [Собственники — загород: открыть страницу](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/sobstvenniki-zagorod/) — отступы и типографика по референсу продажи; проверены24ширины320–3840px. [Отчёт](sobstvenniki-zagorod/RESPONSIVE-AUDIT.md) · [Исходники](https://github.com/daniilterekh-prog/barnes-sites/tree/main/main-site/pages/собственники%20загород) ·27.11.2026.
 
 
 
