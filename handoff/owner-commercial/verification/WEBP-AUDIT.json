@@ -1,0 +1,1695 @@
+{
+  "date": "2026-11-27T11:40:53.276Z",
+  "scope": "Commercial owners page and its permanent developer handoff only",
+  "publicCommit": "809eeed76efc51aae214457167db4457e77c8b77",
+  "static": {
+    "page": {
+      "images": [
+        {
+          "file": "_site/exact-2026-10-21/blocks/14-newsletter/assets/8a78978e0423f444f2adbe1f.webp",
+          "format": "webp",
+          "width": 1916,
+          "height": 821,
+          "bytes": 113252,
+          "sha256": "a59b66d0d7fdeda1b0b0726fc2b9f0f23450da792c5cff66bba1482a09d8774f",
+          "canonicalMatch": true
+        },
+        {
+          "file": "_site/exact-2026-10-21/blocks/14-newsletter/assets/f6f65669dc22ef4fe836335c.webp",
+          "format": "webp",
+          "width": 686,
+          "height": 600,
+          "bytes": 15704,
+          "sha256": "3285d219f1845deb8887ba3bc04b8e79ce8d3bec99dd568d8a51b8c5fa8bf9af",
+          "canonicalMatch": true
+        },
+        {
+          "file": "_site/exact-2026-10-21/blocks/14-newsletter/assets/owner-modal-prus.webp",
+          "format": "webp",
+          "width": 1086,
+          "height": 1448,
+          "bytes": 210000,
+          "sha256": "6bbaa8e1df83e7d5eda42c83d174e1f0177a8cbb5698bd5ec01ee3602e8f84aa",
+          "canonicalMatch": true
+        },
+        {
+          "file": "_site/exact-2026-10-21/blocks/14-newsletter/assets/quiz-mobile-prus-magazine.webp",
+          "format": "webp",
+          "width": 1440,
+          "height": 600,
+          "bytes": 105912,
+          "sha256": "8985649766af231100dd863db3e4fac10809a7b9f94bc2d38c6922c8e10b67c1",
+          "canonicalMatch": true
+        },
+        {
+          "file": "_site/shared/assets/barnes-private-salon.webp",
+          "format": "webp",
+          "width": 1536,
+          "height": 1024,
+          "bytes": 263238,
+          "sha256": "ffab11f9222a5a3d9133c9c95a3e81d9e5f9fb02531ec2f84e3ad9f557223cbc",
+          "canonicalMatch": true
+        },
+        {
+          "file": "_site/shared/assets/home-about-logo-round-red.webp",
+          "format": "webp",
+          "width": 600,
+          "height": 600,
+          "bytes": 15196,
+          "sha256": "5f595f5a67a3568be8b035657cf437233f54b6490b238a59d3192cf4ec2a18d0",
+          "canonicalMatch": true
+        },
+        {
+          "file": "_site/shared/assets/modal-expert-old-money.webp",
+          "format": "webp",
+          "width": 1086,
+          "height": 1448,
+          "bytes": 186766,
+          "sha256": "13ddaea5522e3d7ea7bcb75372ca4b450871d7839642a6993d4cd707865bb681",
+          "canonicalMatch": true
+        },
+        {
+          "file": "_site/shared/assets/modal-ruslan-organic.webp",
+          "format": "webp",
+          "width": 1086,
+          "height": 1448,
+          "bytes": 210000,
+          "sha256": "6bbaa8e1df83e7d5eda42c83d174e1f0177a8cbb5698bd5ec01ee3602e8f84aa",
+          "canonicalMatch": true
+        },
+        {
+          "file": "_site/shared/assets/presentation-v2/interior.webp",
+          "format": "webp",
+          "width": 1254,
+          "height": 1254,
+          "bytes": 231608,
+          "sha256": "56faf2ac423782bd8a90e9af9d9bb2c9949ab222c6b5562fbb8e57172e33da27",
+          "canonicalMatch": true
+        },
+        {
+          "file": "_site/shared/assets/presentation-v2/legal.webp",
+          "format": "webp",
+          "width": 1254,
+          "height": 1254,
+          "bytes": 136004,
+          "sha256": "43f0726045d1b3395434647b145bd8c387c2437554c84d246682edf494c04ee4",
+          "canonicalMatch": true
+        },
+        {
+          "file": "_site/shared/assets/presentation-v2/negotiation.webp",
+          "format": "webp",
+          "width": 1254,
+          "height": 1254,
+          "bytes": 238932,
+          "sha256": "d05e3a6b23777a9c5917c3c13f04d7605d05e3c82327841de10fb702964ddf37",
+          "canonicalMatch": true
+        },
+        {
+          "file": "_site/shared/assets/presentation-v2/object-detail.webp",
+          "format": "webp",
+          "width": 1254,
+          "height": 1254,
+          "bytes": 162974,
+          "sha256": "3f707409dcd5305034bae2c290b1f05d190be17473c3d218cb93709b40c02f89",
+          "canonicalMatch": true
+        },
+        {
+          "file": "_site/shared/assets/presentation-v2/positioning.webp",
+          "format": "webp",
+          "width": 1254,
+          "height": 1254,
+          "bytes": 176328,
+          "sha256": "98b92bd1838968a2c2fc51a252370d60e1acdb24d32080534b849730f49a828f",
+          "canonicalMatch": true
+        },
+        {
+          "file": "_site/shared/assets/presentation-v2/privacy.webp",
+          "format": "webp",
+          "width": 1254,
+          "height": 1254,
+          "bytes": 136596,
+          "sha256": "9c9786b7065737819c1c0d21ceca79cb7348791f8536863ee8d7c90644510241",
+          "canonicalMatch": true
+        },
+        {
+          "file": "_site/shared/assets/presentation-v2/viewing.webp",
+          "format": "webp",
+          "width": 1254,
+          "height": 1254,
+          "bytes": 129866,
+          "sha256": "b9244fca5d2aaf9aa675c1f0eb1ea39a69fb7375684784ad3c7610bb20ccc6fb",
+          "canonicalMatch": true
+        },
+        {
+          "file": "_site/shared/assets/presentation-v3/interior.webp",
+          "format": "webp",
+          "width": 1254,
+          "height": 1254,
+          "bytes": 267604,
+          "sha256": "cc0622404bfda9fadbdf822971fddd5b95234e4ae4be4a9578b29e0b33198f10",
+          "canonicalMatch": true
+        },
+        {
+          "file": "_site/shared/assets/presentation-v3/legal.webp",
+          "format": "webp",
+          "width": 1254,
+          "height": 1254,
+          "bytes": 141826,
+          "sha256": "ec539a2263ccb105caf68061423f13eea78a2c81d1f36ea8a8b08558cad85cd5",
+          "canonicalMatch": true
+        },
+        {
+          "file": "_site/shared/assets/presentation-v3/negotiation.webp",
+          "format": "webp",
+          "width": 1254,
+          "height": 1254,
+          "bytes": 211552,
+          "sha256": "a8167d8f84ef0ecab92bafc1e25a45db3106c0e259ee9a0f48d9ac857dd05a41",
+          "canonicalMatch": true
+        },
+        {
+          "file": "_site/shared/assets/presentation-v3/object-detail.webp",
+          "format": "webp",
+          "width": 1254,
+          "height": 1254,
+          "bytes": 160646,
+          "sha256": "fe53b29e285ed19e672b043e9c993c576d8a3060c1e5ed120d394c368b081532",
+          "canonicalMatch": true
+        },
+        {
+          "file": "_site/shared/assets/presentation-v3/positioning.webp",
+          "format": "webp",
+          "width": 1254,
+          "height": 1254,
+          "bytes": 177744,
+          "sha256": "925883abb16a4b93ae655c635be8f18ddad40e68570b5ad96a1b9d013131b22b",
+          "canonicalMatch": true
+        },
+        {
+          "file": "_site/shared/assets/presentation-v3/privacy.webp",
+          "format": "webp",
+          "width": 1254,
+          "height": 1254,
+          "bytes": 163154,
+          "sha256": "cc27430018adaa0a598303e63cffe601f9788af56a265c1e6103efd78fdbd3b6",
+          "canonicalMatch": true
+        },
+        {
+          "file": "_site/shared/assets/presentation-v3/viewing.webp",
+          "format": "webp",
+          "width": 1254,
+          "height": 1254,
+          "bytes": 146918,
+          "sha256": "5d852247fa02f311596b86476a82b70f705c8169c79f24ed1999f71062beaeae",
+          "canonicalMatch": true
+        },
+        {
+          "file": "_site/shared/assets/ruslan-floating-media.webp",
+          "format": "webp",
+          "width": 1086,
+          "height": 1448,
+          "bytes": 210000,
+          "sha256": "6bbaa8e1df83e7d5eda42c83d174e1f0177a8cbb5698bd5ec01ee3602e8f84aa",
+          "canonicalMatch": true
+        },
+        {
+          "file": "assets/alexandra.webp",
+          "format": "webp",
+          "width": 121,
+          "height": 121,
+          "bytes": 5568,
+          "sha256": "bd1c86e0a5c84dc2e384beab919b14e9b4601d5ce14e6d1576b8a38422e0213e",
+          "canonicalMatch": true
+        },
+        {
+          "file": "assets/alina-floating-avatar.webp",
+          "format": "webp",
+          "width": 640,
+          "height": 640,
+          "bytes": 343974,
+          "sha256": "e877387e3f8f919894e58460909f8dc52490cac789d7869eb2f2929da258099f",
+          "canonicalMatch": true
+        },
+        {
+          "file": "assets/alina-medvedeva-cta.webp",
+          "format": "webp",
+          "width": 1672,
+          "height": 941,
+          "bytes": 160812,
+          "sha256": "849bc06a25cd8daa24bb642b6a7f19e6efdbf6989471fd1f9ca6cd183ff508c7",
+          "canonicalMatch": true
+        },
+        {
+          "file": "assets/alina-medvedeva.webp",
+          "format": "webp",
+          "width": 1734,
+          "height": 907,
+          "bytes": 41370,
+          "sha256": "2be4ad39d69423f267becc1f06cfb67b1776e123833c023c48b4615244a82cf1",
+          "canonicalMatch": true
+        },
+        {
+          "file": "assets/brand-mark.webp",
+          "format": "webp",
+          "width": 1254,
+          "height": 1254,
+          "bytes": 93540,
+          "sha256": "cb9aa27328e32455b79ca891066511217ba8a36dc164692c271dea367a3cb22a",
+          "canonicalMatch": true
+        },
+        {
+          "file": "assets/consultation-bg.webp",
+          "format": "webp",
+          "width": 1700,
+          "height": 889,
+          "bytes": 94912,
+          "sha256": "963872afd408bd77fca71e32647e7617d1c526fc33f8c25b582dc1d1a17c1700",
+          "canonicalMatch": true
+        },
+        {
+          "file": "assets/directions/service-city.webp",
+          "format": "webp",
+          "width": 849,
+          "height": 490,
+          "bytes": 108382,
+          "sha256": "5733e6167392ba9bb0229fe1977ce5aeb55096d5a8d3352a65d661ec5ed17ed9",
+          "canonicalMatch": true
+        },
+        {
+          "file": "assets/directions/service-country.webp",
+          "format": "webp",
+          "width": 849,
+          "height": 490,
+          "bytes": 71990,
+          "sha256": "16ea18abb8b0d3d7af437a926bd5fc929e45b4f1b10f190ee29eecee8836a371",
+          "canonicalMatch": true
+        },
+        {
+          "file": "assets/directions/service-rent.webp",
+          "format": "webp",
+          "width": 849,
+          "height": 490,
+          "bytes": 81660,
+          "sha256": "51b77a72220655437c73ba0b32aa2a600d5ebc5f32678a19e2e26acd1a38f229",
+          "canonicalMatch": true
+        },
+        {
+          "file": "assets/directions/service-spb.webp",
+          "format": "webp",
+          "width": 849,
+          "height": 490,
+          "bytes": 92572,
+          "sha256": "c4fcea4691ce04e611c0eec14482f058f85f81f3dd71d46b02e1d9c684fc86b4",
+          "canonicalMatch": true
+        },
+        {
+          "file": "assets/editorial/advantages-panorama.webp",
+          "format": "webp",
+          "width": 1672,
+          "height": 941,
+          "bytes": 174160,
+          "sha256": "cb76beaffda8406f5c85147586fe65c595996d3027f9f1a6a7a38120b7a4370b",
+          "canonicalMatch": true
+        },
+        {
+          "file": "assets/editorial/buyer.webp",
+          "format": "webp",
+          "width": 1200,
+          "height": 900,
+          "bytes": 201358,
+          "sha256": "2f8f49e9137f00a9e12ba5ca4398f98cac949d4e157cbd0065ed482345fb900e",
+          "canonicalMatch": true
+        },
+        {
+          "file": "assets/editorial/economics.webp",
+          "format": "webp",
+          "width": 1200,
+          "height": 900,
+          "bytes": 108938,
+          "sha256": "83c0a62f0eb260970838eb9318bd382bb981e2b60ae62f09dabe8afd4e0d25ca",
+          "canonicalMatch": true
+        },
+        {
+          "file": "assets/editorial/hero.webp",
+          "format": "webp",
+          "width": 1672,
+          "height": 941,
+          "bytes": 227374,
+          "sha256": "66b69abcd2b54fd3f5bf74f14fa2d8a17fb502ad7a9155afc0c963df7a139edf",
+          "canonicalMatch": true
+        },
+        {
+          "file": "assets/editorial/newsletter.webp",
+          "format": "webp",
+          "width": 1200,
+          "height": 900,
+          "bytes": 126950,
+          "sha256": "d51f35ecf6b488ef0d30e28a95ad45ec38175cf17553c2f25cdc54ecdc546743",
+          "canonicalMatch": true
+        },
+        {
+          "file": "assets/editorial/potential.webp",
+          "format": "webp",
+          "width": 1200,
+          "height": 900,
+          "bytes": 123770,
+          "sha256": "c220206e7bfdae8b314a5c031dfe4525211eec657b7f9fe32d54743e567d39fb",
+          "canonicalMatch": true
+        },
+        {
+          "file": "assets/editorial/privacy.webp",
+          "format": "webp",
+          "width": 1200,
+          "height": 900,
+          "bytes": 116102,
+          "sha256": "98e374158d7b17116a33b63074c4c5357ab37ffc78bba1c434efe51518f12c08",
+          "canonicalMatch": true
+        },
+        {
+          "file": "assets/editorial/repositioning.webp",
+          "format": "webp",
+          "width": 1200,
+          "height": 900,
+          "bytes": 246498,
+          "sha256": "1b7b137c3d0d987b0380ce095a4c076785fc441478872d8e986488d8ebbaf5de",
+          "canonicalMatch": true
+        },
+        {
+          "file": "assets/editorial/specialists.webp",
+          "format": "webp",
+          "width": 1200,
+          "height": 900,
+          "bytes": 178414,
+          "sha256": "4ec8b6b81177869cd4cc9c1bc254916dacb623e900479546384aed60d249e04e",
+          "canonicalMatch": true
+        },
+        {
+          "file": "assets/editorial/strategy.webp",
+          "format": "webp",
+          "width": 1672,
+          "height": 941,
+          "bytes": 284024,
+          "sha256": "08adeaf2b91d00d0ea73f7ecbabea83034d3ccdf45dcccb75d15cbe721338967",
+          "canonicalMatch": true
+        },
+        {
+          "file": "assets/feedback-hero.webp",
+          "format": "webp",
+          "width": 1160,
+          "height": 586,
+          "bytes": 74680,
+          "sha256": "b5b079b952ba93c6b91da8d51c241550ebcd9339af80e6afb52ef1165da228ac",
+          "canonicalMatch": true
+        },
+        {
+          "file": "assets/feedback-modal-interior-desktop.webp",
+          "format": "webp",
+          "width": 1122,
+          "height": 1402,
+          "bytes": 380040,
+          "sha256": "bb98b3f926be348bfb5e09c6edfa4864a694a3f51de9d66bfa3e3245609b788d",
+          "canonicalMatch": true
+        },
+        {
+          "file": "assets/floating-expert-bg.webp",
+          "format": "webp",
+          "width": 480,
+          "height": 271,
+          "bytes": 12644,
+          "sha256": "9509f5dd4efa3674e55b1ca7c6689298da37c3ba47588c98f1a9e6f1420aeb88",
+          "canonicalMatch": true
+        },
+        {
+          "file": "assets/menu-featured-01.webp",
+          "format": "webp",
+          "width": 1920,
+          "height": 1080,
+          "bytes": 273602,
+          "sha256": "5fa04d6f84449d6e8e24aa5fe80d2d071efa651a4f4da16d3b694a65f5a6f31b",
+          "canonicalMatch": true
+        },
+        {
+          "file": "assets/menu-featured-02.webp",
+          "format": "webp",
+          "width": 1920,
+          "height": 1280,
+          "bytes": 379468,
+          "sha256": "0118984b23a5ee9ed8908973ee9106ad69cad1932458df2985ed9dec6362f43b",
+          "canonicalMatch": true
+        },
+        {
+          "file": "assets/modal-request.webp",
+          "format": "webp",
+          "width": 934,
+          "height": 1188,
+          "bytes": 75360,
+          "sha256": "cb1ac940c0a5bc83fa9285b6fd4060c10d7ca2b177f73b4d9404a1e4c9210d17",
+          "canonicalMatch": true
+        },
+        {
+          "file": "assets/newsletter/magazines-desktop.webp",
+          "format": "webp",
+          "width": 1916,
+          "height": 821,
+          "bytes": 113252,
+          "sha256": "a59b66d0d7fdeda1b0b0726fc2b9f0f23450da792c5cff66bba1482a09d8774f",
+          "canonicalMatch": true
+        },
+        {
+          "file": "assets/newsletter/magazines-mobile.webp",
+          "format": "webp",
+          "width": 686,
+          "height": 600,
+          "bytes": 15704,
+          "sha256": "3285d219f1845deb8887ba3bc04b8e79ce8d3bec99dd568d8a51b8c5fa8bf9af",
+          "canonicalMatch": true
+        },
+        {
+          "file": "assets/newsletter-mobile.webp",
+          "format": "webp",
+          "width": 686,
+          "height": 600,
+          "bytes": 15704,
+          "sha256": "3285d219f1845deb8887ba3bc04b8e79ce8d3bec99dd568d8a51b8c5fa8bf9af",
+          "canonicalMatch": true
+        },
+        {
+          "file": "assets/newsletter.webp",
+          "format": "webp",
+          "width": 2220,
+          "height": 736,
+          "bytes": 63620,
+          "sha256": "32aa70cd1ff3d81fa867ef4e5f3808f02cd6763d444aca4a27ab1a27b4736c7b",
+          "canonicalMatch": true
+        },
+        {
+          "file": "assets/presentation-01.webp",
+          "format": "webp",
+          "width": 535,
+          "height": 508,
+          "bytes": 30046,
+          "sha256": "78b4cd5c25f5eb47f8b9a745c9526e2487ba4fc3f2711fbdbd0386db587cada6",
+          "canonicalMatch": true
+        },
+        {
+          "file": "assets/presentation-02.webp",
+          "format": "webp",
+          "width": 535,
+          "height": 508,
+          "bytes": 20944,
+          "sha256": "014181355dd3d042d5a330f47936e6a3594d3e057df92156360ca22a18da2d20",
+          "canonicalMatch": true
+        },
+        {
+          "file": "assets/presentation-03.webp",
+          "format": "webp",
+          "width": 535,
+          "height": 508,
+          "bytes": 55900,
+          "sha256": "bec7b9adc2e8561dbcbc98ee7fbb5e7769e4533af61aabb63a3d835d18fbd2b6",
+          "canonicalMatch": true
+        },
+        {
+          "file": "assets/presentation-04.webp",
+          "format": "webp",
+          "width": 535,
+          "height": 508,
+          "bytes": 65340,
+          "sha256": "59f1954440c0fe7587f230f6bf59a655b0eb03ceccf17390bf064e9717225e5a",
+          "canonicalMatch": true
+        },
+        {
+          "file": "assets/presentation-05.webp",
+          "format": "webp",
+          "width": 535,
+          "height": 508,
+          "bytes": 62686,
+          "sha256": "623f044372017c9d69d9788c8b3141618cb05ef833aad3ce0986f3769f7fcd2d",
+          "canonicalMatch": true
+        },
+        {
+          "file": "assets/presentation-06.webp",
+          "format": "webp",
+          "width": 535,
+          "height": 508,
+          "bytes": 64504,
+          "sha256": "2214e81e4903dcc9ac99791396a4fad5844764139e608f2cce467b2397ec26b5",
+          "canonicalMatch": true
+        },
+        {
+          "file": "assets/request-bg.webp",
+          "format": "webp",
+          "width": 1920,
+          "height": 885,
+          "bytes": 20182,
+          "sha256": "1415992a3f99fed695695a64023418a4028ce51e5c9e767c9a8b21523d85155d",
+          "canonicalMatch": true
+        }
+      ],
+      "webp": 60,
+      "nonWebp": 0,
+      "diagnosticPngExcluded": 34
+    },
+    "handoff": {
+      "images": [
+        {
+          "file": "assets/alina-floating-avatar.webp",
+          "format": "webp",
+          "width": 640,
+          "height": 640,
+          "bytes": 343974,
+          "sha256": "e877387e3f8f919894e58460909f8dc52490cac789d7869eb2f2929da258099f",
+          "canonicalMatch": true
+        },
+        {
+          "file": "assets/alina-medvedeva-cta.webp",
+          "format": "webp",
+          "width": 1672,
+          "height": 941,
+          "bytes": 160812,
+          "sha256": "849bc06a25cd8daa24bb642b6a7f19e6efdbf6989471fd1f9ca6cd183ff508c7",
+          "canonicalMatch": true
+        },
+        {
+          "file": "assets/alina-medvedeva.webp",
+          "format": "webp",
+          "width": 1734,
+          "height": 907,
+          "bytes": 41370,
+          "sha256": "2be4ad39d69423f267becc1f06cfb67b1776e123833c023c48b4615244a82cf1",
+          "canonicalMatch": true
+        },
+        {
+          "file": "assets/directions/service-city.webp",
+          "format": "webp",
+          "width": 849,
+          "height": 490,
+          "bytes": 108382,
+          "sha256": "5733e6167392ba9bb0229fe1977ce5aeb55096d5a8d3352a65d661ec5ed17ed9",
+          "canonicalMatch": true
+        },
+        {
+          "file": "assets/directions/service-country.webp",
+          "format": "webp",
+          "width": 849,
+          "height": 490,
+          "bytes": 71990,
+          "sha256": "16ea18abb8b0d3d7af437a926bd5fc929e45b4f1b10f190ee29eecee8836a371",
+          "canonicalMatch": true
+        },
+        {
+          "file": "assets/directions/service-rent.webp",
+          "format": "webp",
+          "width": 849,
+          "height": 490,
+          "bytes": 81660,
+          "sha256": "51b77a72220655437c73ba0b32aa2a600d5ebc5f32678a19e2e26acd1a38f229",
+          "canonicalMatch": true
+        },
+        {
+          "file": "assets/directions/service-spb.webp",
+          "format": "webp",
+          "width": 849,
+          "height": 490,
+          "bytes": 92572,
+          "sha256": "c4fcea4691ce04e611c0eec14482f058f85f81f3dd71d46b02e1d9c684fc86b4",
+          "canonicalMatch": true
+        },
+        {
+          "file": "assets/editorial/advantages-panorama.webp",
+          "format": "webp",
+          "width": 1672,
+          "height": 941,
+          "bytes": 174160,
+          "sha256": "cb76beaffda8406f5c85147586fe65c595996d3027f9f1a6a7a38120b7a4370b",
+          "canonicalMatch": true
+        },
+        {
+          "file": "assets/editorial/buyer.webp",
+          "format": "webp",
+          "width": 1200,
+          "height": 900,
+          "bytes": 201358,
+          "sha256": "2f8f49e9137f00a9e12ba5ca4398f98cac949d4e157cbd0065ed482345fb900e",
+          "canonicalMatch": true
+        },
+        {
+          "file": "assets/editorial/economics.webp",
+          "format": "webp",
+          "width": 1200,
+          "height": 900,
+          "bytes": 108938,
+          "sha256": "83c0a62f0eb260970838eb9318bd382bb981e2b60ae62f09dabe8afd4e0d25ca",
+          "canonicalMatch": true
+        },
+        {
+          "file": "assets/editorial/hero.webp",
+          "format": "webp",
+          "width": 1672,
+          "height": 941,
+          "bytes": 227374,
+          "sha256": "66b69abcd2b54fd3f5bf74f14fa2d8a17fb502ad7a9155afc0c963df7a139edf",
+          "canonicalMatch": true
+        },
+        {
+          "file": "assets/editorial/potential.webp",
+          "format": "webp",
+          "width": 1200,
+          "height": 900,
+          "bytes": 123770,
+          "sha256": "c220206e7bfdae8b314a5c031dfe4525211eec657b7f9fe32d54743e567d39fb",
+          "canonicalMatch": true
+        },
+        {
+          "file": "assets/editorial/privacy.webp",
+          "format": "webp",
+          "width": 1200,
+          "height": 900,
+          "bytes": 116102,
+          "sha256": "98e374158d7b17116a33b63074c4c5357ab37ffc78bba1c434efe51518f12c08",
+          "canonicalMatch": true
+        },
+        {
+          "file": "assets/editorial/repositioning.webp",
+          "format": "webp",
+          "width": 1200,
+          "height": 900,
+          "bytes": 246498,
+          "sha256": "1b7b137c3d0d987b0380ce095a4c076785fc441478872d8e986488d8ebbaf5de",
+          "canonicalMatch": true
+        },
+        {
+          "file": "assets/editorial/specialists.webp",
+          "format": "webp",
+          "width": 1200,
+          "height": 900,
+          "bytes": 178414,
+          "sha256": "4ec8b6b81177869cd4cc9c1bc254916dacb623e900479546384aed60d249e04e",
+          "canonicalMatch": true
+        },
+        {
+          "file": "assets/editorial/strategy.webp",
+          "format": "webp",
+          "width": 1672,
+          "height": 941,
+          "bytes": 284024,
+          "sha256": "08adeaf2b91d00d0ea73f7ecbabea83034d3ccdf45dcccb75d15cbe721338967",
+          "canonicalMatch": true
+        },
+        {
+          "file": "assets/floating-expert-bg.webp",
+          "format": "webp",
+          "width": 480,
+          "height": 271,
+          "bytes": 12644,
+          "sha256": "9509f5dd4efa3674e55b1ca7c6689298da37c3ba47588c98f1a9e6f1420aeb88",
+          "canonicalMatch": true
+        },
+        {
+          "file": "assets/menu-featured-01.webp",
+          "format": "webp",
+          "width": 1920,
+          "height": 1080,
+          "bytes": 273602,
+          "sha256": "5fa04d6f84449d6e8e24aa5fe80d2d071efa651a4f4da16d3b694a65f5a6f31b",
+          "canonicalMatch": true
+        },
+        {
+          "file": "assets/menu-featured-02.webp",
+          "format": "webp",
+          "width": 1920,
+          "height": 1280,
+          "bytes": 379468,
+          "sha256": "0118984b23a5ee9ed8908973ee9106ad69cad1932458df2985ed9dec6362f43b",
+          "canonicalMatch": true
+        },
+        {
+          "file": "assets/modal-request.webp",
+          "format": "webp",
+          "width": 934,
+          "height": 1188,
+          "bytes": 75360,
+          "sha256": "cb1ac940c0a5bc83fa9285b6fd4060c10d7ca2b177f73b4d9404a1e4c9210d17",
+          "canonicalMatch": true
+        },
+        {
+          "file": "assets/newsletter/magazines-desktop.webp",
+          "format": "webp",
+          "width": 1916,
+          "height": 821,
+          "bytes": 113252,
+          "sha256": "a59b66d0d7fdeda1b0b0726fc2b9f0f23450da792c5cff66bba1482a09d8774f",
+          "canonicalMatch": true
+        },
+        {
+          "file": "assets/newsletter/magazines-mobile.webp",
+          "format": "webp",
+          "width": 686,
+          "height": 600,
+          "bytes": 15704,
+          "sha256": "3285d219f1845deb8887ba3bc04b8e79ce8d3bec99dd568d8a51b8c5fa8bf9af",
+          "canonicalMatch": true
+        },
+        {
+          "file": "assets/shared/home-about-logo-round-red.webp",
+          "format": "webp",
+          "width": 600,
+          "height": 600,
+          "bytes": 15196,
+          "sha256": "5f595f5a67a3568be8b035657cf437233f54b6490b238a59d3192cf4ec2a18d0",
+          "canonicalMatch": true
+        },
+        {
+          "file": "assets/shared/old-money-interior.webp",
+          "format": "webp",
+          "width": 480,
+          "height": 271,
+          "bytes": 12644,
+          "sha256": "9509f5dd4efa3674e55b1ca7c6689298da37c3ba47588c98f1a9e6f1420aeb88",
+          "canonicalMatch": true
+        },
+        {
+          "file": "design/page-1440.webp",
+          "format": "webp",
+          "width": 1440,
+          "height": 10620,
+          "bytes": 1141246,
+          "sha256": "75eb8ff5b8e0585700187d324dcb54e6b33ff1d11c4c082cc7db082324a64917",
+          "canonicalMatch": true
+        },
+        {
+          "file": "design/page-390.webp",
+          "format": "webp",
+          "width": 390,
+          "height": 10225,
+          "bytes": 442676,
+          "sha256": "b64e62c29fd3db6954c6442e28462b92086b50b7a00c6e5979bf382234ca0561",
+          "canonicalMatch": true
+        }
+      ],
+      "webp": 26,
+      "nonWebp": 0,
+      "diagnosticPngExcluded": 2
+    }
+  },
+  "zip": {
+    "crc": "pass",
+    "checksums": 116,
+    "images": [
+      {
+        "file": "owner-commercial/assets/alina-floating-avatar.webp",
+        "bytes": 343974,
+        "sha256": "e877387e3f8f919894e58460909f8dc52490cac789d7869eb2f2929da258099f",
+        "format": "webp"
+      },
+      {
+        "file": "owner-commercial/assets/alina-medvedeva-cta.webp",
+        "bytes": 160812,
+        "sha256": "849bc06a25cd8daa24bb642b6a7f19e6efdbf6989471fd1f9ca6cd183ff508c7",
+        "format": "webp"
+      },
+      {
+        "file": "owner-commercial/assets/alina-medvedeva.webp",
+        "bytes": 41370,
+        "sha256": "2be4ad39d69423f267becc1f06cfb67b1776e123833c023c48b4615244a82cf1",
+        "format": "webp"
+      },
+      {
+        "file": "owner-commercial/assets/directions/service-city.webp",
+        "bytes": 108382,
+        "sha256": "5733e6167392ba9bb0229fe1977ce5aeb55096d5a8d3352a65d661ec5ed17ed9",
+        "format": "webp"
+      },
+      {
+        "file": "owner-commercial/assets/directions/service-country.webp",
+        "bytes": 71990,
+        "sha256": "16ea18abb8b0d3d7af437a926bd5fc929e45b4f1b10f190ee29eecee8836a371",
+        "format": "webp"
+      },
+      {
+        "file": "owner-commercial/assets/directions/service-rent.webp",
+        "bytes": 81660,
+        "sha256": "51b77a72220655437c73ba0b32aa2a600d5ebc5f32678a19e2e26acd1a38f229",
+        "format": "webp"
+      },
+      {
+        "file": "owner-commercial/assets/directions/service-spb.webp",
+        "bytes": 92572,
+        "sha256": "c4fcea4691ce04e611c0eec14482f058f85f81f3dd71d46b02e1d9c684fc86b4",
+        "format": "webp"
+      },
+      {
+        "file": "owner-commercial/assets/editorial/advantages-panorama.webp",
+        "bytes": 174160,
+        "sha256": "cb76beaffda8406f5c85147586fe65c595996d3027f9f1a6a7a38120b7a4370b",
+        "format": "webp"
+      },
+      {
+        "file": "owner-commercial/assets/editorial/buyer.webp",
+        "bytes": 201358,
+        "sha256": "2f8f49e9137f00a9e12ba5ca4398f98cac949d4e157cbd0065ed482345fb900e",
+        "format": "webp"
+      },
+      {
+        "file": "owner-commercial/assets/editorial/economics.webp",
+        "bytes": 108938,
+        "sha256": "83c0a62f0eb260970838eb9318bd382bb981e2b60ae62f09dabe8afd4e0d25ca",
+        "format": "webp"
+      },
+      {
+        "file": "owner-commercial/assets/editorial/hero.webp",
+        "bytes": 227374,
+        "sha256": "66b69abcd2b54fd3f5bf74f14fa2d8a17fb502ad7a9155afc0c963df7a139edf",
+        "format": "webp"
+      },
+      {
+        "file": "owner-commercial/assets/editorial/potential.webp",
+        "bytes": 123770,
+        "sha256": "c220206e7bfdae8b314a5c031dfe4525211eec657b7f9fe32d54743e567d39fb",
+        "format": "webp"
+      },
+      {
+        "file": "owner-commercial/assets/editorial/privacy.webp",
+        "bytes": 116102,
+        "sha256": "98e374158d7b17116a33b63074c4c5357ab37ffc78bba1c434efe51518f12c08",
+        "format": "webp"
+      },
+      {
+        "file": "owner-commercial/assets/editorial/repositioning.webp",
+        "bytes": 246498,
+        "sha256": "1b7b137c3d0d987b0380ce095a4c076785fc441478872d8e986488d8ebbaf5de",
+        "format": "webp"
+      },
+      {
+        "file": "owner-commercial/assets/editorial/specialists.webp",
+        "bytes": 178414,
+        "sha256": "4ec8b6b81177869cd4cc9c1bc254916dacb623e900479546384aed60d249e04e",
+        "format": "webp"
+      },
+      {
+        "file": "owner-commercial/assets/editorial/strategy.webp",
+        "bytes": 284024,
+        "sha256": "08adeaf2b91d00d0ea73f7ecbabea83034d3ccdf45dcccb75d15cbe721338967",
+        "format": "webp"
+      },
+      {
+        "file": "owner-commercial/assets/floating-expert-bg.webp",
+        "bytes": 12644,
+        "sha256": "9509f5dd4efa3674e55b1ca7c6689298da37c3ba47588c98f1a9e6f1420aeb88",
+        "format": "webp"
+      },
+      {
+        "file": "owner-commercial/assets/menu-featured-01.webp",
+        "bytes": 273602,
+        "sha256": "5fa04d6f84449d6e8e24aa5fe80d2d071efa651a4f4da16d3b694a65f5a6f31b",
+        "format": "webp"
+      },
+      {
+        "file": "owner-commercial/assets/menu-featured-02.webp",
+        "bytes": 379468,
+        "sha256": "0118984b23a5ee9ed8908973ee9106ad69cad1932458df2985ed9dec6362f43b",
+        "format": "webp"
+      },
+      {
+        "file": "owner-commercial/assets/modal-request.webp",
+        "bytes": 75360,
+        "sha256": "cb1ac940c0a5bc83fa9285b6fd4060c10d7ca2b177f73b4d9404a1e4c9210d17",
+        "format": "webp"
+      },
+      {
+        "file": "owner-commercial/assets/newsletter/magazines-desktop.webp",
+        "bytes": 113252,
+        "sha256": "a59b66d0d7fdeda1b0b0726fc2b9f0f23450da792c5cff66bba1482a09d8774f",
+        "format": "webp"
+      },
+      {
+        "file": "owner-commercial/assets/newsletter/magazines-mobile.webp",
+        "bytes": 15704,
+        "sha256": "3285d219f1845deb8887ba3bc04b8e79ce8d3bec99dd568d8a51b8c5fa8bf9af",
+        "format": "webp"
+      },
+      {
+        "file": "owner-commercial/assets/shared/home-about-logo-round-red.webp",
+        "bytes": 15196,
+        "sha256": "5f595f5a67a3568be8b035657cf437233f54b6490b238a59d3192cf4ec2a18d0",
+        "format": "webp"
+      },
+      {
+        "file": "owner-commercial/assets/shared/old-money-interior.webp",
+        "bytes": 12644,
+        "sha256": "9509f5dd4efa3674e55b1ca7c6689298da37c3ba47588c98f1a9e6f1420aeb88",
+        "format": "webp"
+      },
+      {
+        "file": "owner-commercial/design/page-1440.webp",
+        "bytes": 1141246,
+        "sha256": "75eb8ff5b8e0585700187d324dcb54e6b33ff1d11c4c082cc7db082324a64917",
+        "format": "webp"
+      },
+      {
+        "file": "owner-commercial/design/page-390.webp",
+        "bytes": 442676,
+        "sha256": "b64e62c29fd3db6954c6442e28462b92086b50b7a00c6e5979bf382234ca0561",
+        "format": "webp"
+      }
+    ],
+    "webp": 26,
+    "nonWebp": 0
+  },
+  "browser": [
+    {
+      "label": "page",
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/собственники%20коммерция/",
+      "width": 390,
+      "images": [
+        {
+          "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/%D1%81%D0%BE%D0%B1%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%B8%D0%BA%D0%B8%20%D0%BA%D0%BE%D0%BC%D0%BC%D0%B5%D1%80%D1%86%D0%B8%D1%8F/assets/barn-estate-logo.svg",
+          "format": "svg",
+          "contentType": "image/svg+xml",
+          "bytes": 6644,
+          "sha256": "9b2d8c1a7d4d213587828c6bdf6592a37113a388fedc1b58211534d8cb1e7123"
+        },
+        {
+          "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/%D1%81%D0%BE%D0%B1%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%B8%D0%BA%D0%B8%20%D0%BA%D0%BE%D0%BC%D0%BC%D0%B5%D1%80%D1%86%D0%B8%D1%8F/assets/editorial/hero.webp",
+          "format": "webp",
+          "contentType": "image/webp",
+          "bytes": 227374,
+          "sha256": "66b69abcd2b54fd3f5bf74f14fa2d8a17fb502ad7a9155afc0c963df7a139edf"
+        },
+        {
+          "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/%D1%81%D0%BE%D0%B1%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%B8%D0%BA%D0%B8%20%D0%BA%D0%BE%D0%BC%D0%BC%D0%B5%D1%80%D1%86%D0%B8%D1%8F/assets/alina-medvedeva-cta.webp",
+          "format": "webp",
+          "contentType": "image/webp",
+          "bytes": 160812,
+          "sha256": "849bc06a25cd8daa24bb642b6a7f19e6efdbf6989471fd1f9ca6cd183ff508c7"
+        },
+        {
+          "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/%D1%81%D0%BE%D0%B1%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%B8%D0%BA%D0%B8%20%D0%BA%D0%BE%D0%BC%D0%BC%D0%B5%D1%80%D1%86%D0%B8%D1%8F/_site/pictures/office-contact/telegram.svg",
+          "format": "svg",
+          "contentType": "image/svg+xml",
+          "bytes": 757,
+          "sha256": "4435c9a57e165a1c3b7f27e0b5b11b82b10d674ea4fff7f6748cb67b7fcb994e"
+        },
+        {
+          "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/%D1%81%D0%BE%D0%B1%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%B8%D0%BA%D0%B8%20%D0%BA%D0%BE%D0%BC%D0%BC%D0%B5%D1%80%D1%86%D0%B8%D1%8F/_site/pictures/office-contact/whatsapp.svg",
+          "format": "svg",
+          "contentType": "image/svg+xml",
+          "bytes": 1231,
+          "sha256": "3e197e0e1f3e679ee09823c75e1c7bad3a19da9bd1ba01df395268b9ae91816f"
+        },
+        {
+          "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/%D1%81%D0%BE%D0%B1%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%B8%D0%BA%D0%B8%20%D0%BA%D0%BE%D0%BC%D0%BC%D0%B5%D1%80%D1%86%D0%B8%D1%8F/_site/pictures/office-contact/max.svg",
+          "format": "svg",
+          "contentType": "image/svg+xml",
+          "bytes": 72862,
+          "sha256": "5caa61a4b0731d0d89421b4fb24f41433025e5aea59155a14cf3a3fada6c9174"
+        },
+        {
+          "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/%D1%81%D0%BE%D0%B1%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%B8%D0%BA%D0%B8%20%D0%BA%D0%BE%D0%BC%D0%BC%D0%B5%D1%80%D1%86%D0%B8%D1%8F/_site/shared/assets/home-about-logo-round-red.webp",
+          "format": "webp",
+          "contentType": "image/webp",
+          "bytes": 15196,
+          "sha256": "5f595f5a67a3568be8b035657cf437233f54b6490b238a59d3192cf4ec2a18d0"
+        },
+        {
+          "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/%D1%81%D0%BE%D0%B1%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%B8%D0%BA%D0%B8%20%D0%BA%D0%BE%D0%BC%D0%BC%D0%B5%D1%80%D1%86%D0%B8%D1%8F/assets/editorial/economics.webp",
+          "format": "webp",
+          "contentType": "image/webp",
+          "bytes": 108938,
+          "sha256": "83c0a62f0eb260970838eb9318bd382bb981e2b60ae62f09dabe8afd4e0d25ca"
+        },
+        {
+          "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/%D1%81%D0%BE%D0%B1%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%B8%D0%BA%D0%B8%20%D0%BA%D0%BE%D0%BC%D0%BC%D0%B5%D1%80%D1%86%D0%B8%D1%8F/assets/editorial/strategy.webp",
+          "format": "webp",
+          "contentType": "image/webp",
+          "bytes": 284024,
+          "sha256": "08adeaf2b91d00d0ea73f7ecbabea83034d3ccdf45dcccb75d15cbe721338967"
+        },
+        {
+          "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/%D1%81%D0%BE%D0%B1%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%B8%D0%BA%D0%B8%20%D0%BA%D0%BE%D0%BC%D0%BC%D0%B5%D1%80%D1%86%D0%B8%D1%8F/assets/editorial/buyer.webp",
+          "format": "webp",
+          "contentType": "image/webp",
+          "bytes": 201358,
+          "sha256": "2f8f49e9137f00a9e12ba5ca4398f98cac949d4e157cbd0065ed482345fb900e"
+        },
+        {
+          "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/%D1%81%D0%BE%D0%B1%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%B8%D0%BA%D0%B8%20%D0%BA%D0%BE%D0%BC%D0%BC%D0%B5%D1%80%D1%86%D0%B8%D1%8F/assets/alina-floating-avatar.webp",
+          "format": "webp",
+          "contentType": "image/webp",
+          "bytes": 343974,
+          "sha256": "e877387e3f8f919894e58460909f8dc52490cac789d7869eb2f2929da258099f"
+        },
+        {
+          "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/%D1%81%D0%BE%D0%B1%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%B8%D0%BA%D0%B8%20%D0%BA%D0%BE%D0%BC%D0%BC%D0%B5%D1%80%D1%86%D0%B8%D1%8F/assets/editorial/advantages-panorama.webp",
+          "format": "webp",
+          "contentType": "image/webp",
+          "bytes": 174160,
+          "sha256": "cb76beaffda8406f5c85147586fe65c595996d3027f9f1a6a7a38120b7a4370b"
+        },
+        {
+          "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/%D1%81%D0%BE%D0%B1%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%B8%D0%BA%D0%B8%20%D0%BA%D0%BE%D0%BC%D0%BC%D0%B5%D1%80%D1%86%D0%B8%D1%8F/assets/editorial/repositioning.webp",
+          "format": "webp",
+          "contentType": "image/webp",
+          "bytes": 246498,
+          "sha256": "1b7b137c3d0d987b0380ce095a4c076785fc441478872d8e986488d8ebbaf5de"
+        },
+        {
+          "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/%D1%81%D0%BE%D0%B1%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%B8%D0%BA%D0%B8%20%D0%BA%D0%BE%D0%BC%D0%BC%D0%B5%D1%80%D1%86%D0%B8%D1%8F/assets/menu-featured-01.webp",
+          "format": "webp",
+          "contentType": "image/webp",
+          "bytes": 273602,
+          "sha256": "5fa04d6f84449d6e8e24aa5fe80d2d071efa651a4f4da16d3b694a65f5a6f31b"
+        },
+        {
+          "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/%D1%81%D0%BE%D0%B1%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%B8%D0%BA%D0%B8%20%D0%BA%D0%BE%D0%BC%D0%BC%D0%B5%D1%80%D1%86%D0%B8%D1%8F/assets/directions/service-city.webp",
+          "format": "webp",
+          "contentType": "image/webp",
+          "bytes": 108382,
+          "sha256": "5733e6167392ba9bb0229fe1977ce5aeb55096d5a8d3352a65d661ec5ed17ed9"
+        },
+        {
+          "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/%D1%81%D0%BE%D0%B1%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%B8%D0%BA%D0%B8%20%D0%BA%D0%BE%D0%BC%D0%BC%D0%B5%D1%80%D1%86%D0%B8%D1%8F/assets/editorial/potential.webp",
+          "format": "webp",
+          "contentType": "image/webp",
+          "bytes": 123770,
+          "sha256": "c220206e7bfdae8b314a5c031dfe4525211eec657b7f9fe32d54743e567d39fb"
+        },
+        {
+          "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/%D1%81%D0%BE%D0%B1%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%B8%D0%BA%D0%B8%20%D0%BA%D0%BE%D0%BC%D0%BC%D0%B5%D1%80%D1%86%D0%B8%D1%8F/assets/directions/service-spb.webp",
+          "format": "webp",
+          "contentType": "image/webp",
+          "bytes": 92572,
+          "sha256": "c4fcea4691ce04e611c0eec14482f058f85f81f3dd71d46b02e1d9c684fc86b4"
+        },
+        {
+          "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/%D1%81%D0%BE%D0%B1%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%B8%D0%BA%D0%B8%20%D0%BA%D0%BE%D0%BC%D0%BC%D0%B5%D1%80%D1%86%D0%B8%D1%8F/assets/directions/service-country.webp",
+          "format": "webp",
+          "contentType": "image/webp",
+          "bytes": 71990,
+          "sha256": "16ea18abb8b0d3d7af437a926bd5fc929e45b4f1b10f190ee29eecee8836a371"
+        },
+        {
+          "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/%D1%81%D0%BE%D0%B1%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%B8%D0%BA%D0%B8%20%D0%BA%D0%BE%D0%BC%D0%BC%D0%B5%D1%80%D1%86%D0%B8%D1%8F/assets/editorial/privacy.webp",
+          "format": "webp",
+          "contentType": "image/webp",
+          "bytes": 116102,
+          "sha256": "98e374158d7b17116a33b63074c4c5357ab37ffc78bba1c434efe51518f12c08"
+        },
+        {
+          "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/%D1%81%D0%BE%D0%B1%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%B8%D0%BA%D0%B8%20%D0%BA%D0%BE%D0%BC%D0%BC%D0%B5%D1%80%D1%86%D0%B8%D1%8F/assets/directions/service-rent.webp",
+          "format": "webp",
+          "contentType": "image/webp",
+          "bytes": 81660,
+          "sha256": "51b77a72220655437c73ba0b32aa2a600d5ebc5f32678a19e2e26acd1a38f229"
+        },
+        {
+          "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/%D1%81%D0%BE%D0%B1%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%B8%D0%BA%D0%B8%20%D0%BA%D0%BE%D0%BC%D0%BC%D0%B5%D1%80%D1%86%D0%B8%D1%8F/assets/newsletter/magazines-mobile.webp",
+          "format": "webp",
+          "contentType": "image/webp",
+          "bytes": 15704,
+          "sha256": "3285d219f1845deb8887ba3bc04b8e79ce8d3bec99dd568d8a51b8c5fa8bf9af"
+        },
+        {
+          "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/%D1%81%D0%BE%D0%B1%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%B8%D0%BA%D0%B8%20%D0%BA%D0%BE%D0%BC%D0%BC%D0%B5%D1%80%D1%86%D0%B8%D1%8F/assets/menu-featured-02.webp",
+          "format": "webp",
+          "contentType": "image/webp",
+          "bytes": 379468,
+          "sha256": "0118984b23a5ee9ed8908973ee9106ad69cad1932458df2985ed9dec6362f43b"
+        },
+        {
+          "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/%D1%81%D0%BE%D0%B1%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%B8%D0%BA%D0%B8%20%D0%BA%D0%BE%D0%BC%D0%BC%D0%B5%D1%80%D1%86%D0%B8%D1%8F/assets/editorial/specialists.webp",
+          "format": "webp",
+          "contentType": "image/webp",
+          "bytes": 178414,
+          "sha256": "4ec8b6b81177869cd4cc9c1bc254916dacb623e900479546384aed60d249e04e"
+        },
+        {
+          "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/%D1%81%D0%BE%D0%B1%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%B8%D0%BA%D0%B8%20%D0%BA%D0%BE%D0%BC%D0%BC%D0%B5%D1%80%D1%86%D0%B8%D1%8F/assets/alina-medvedeva.webp",
+          "format": "webp",
+          "contentType": "image/webp",
+          "bytes": 41370,
+          "sha256": "2be4ad39d69423f267becc1f06cfb67b1776e123833c023c48b4615244a82cf1"
+        }
+      ],
+      "webp": 20,
+      "svg": 4,
+      "nonWebpRaster": 0,
+      "broken": 0,
+      "errors": [],
+      "inlineRasterData": 0,
+      "domImages": 44,
+      "menuAndExpertDialog": true
+    },
+    {
+      "label": "page",
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/собственники%20коммерция/",
+      "width": 1440,
+      "images": [
+        {
+          "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/%D1%81%D0%BE%D0%B1%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%B8%D0%BA%D0%B8%20%D0%BA%D0%BE%D0%BC%D0%BC%D0%B5%D1%80%D1%86%D0%B8%D1%8F/assets/barn-estate-logo.svg",
+          "format": "svg",
+          "contentType": "image/svg+xml",
+          "bytes": 6644,
+          "sha256": "9b2d8c1a7d4d213587828c6bdf6592a37113a388fedc1b58211534d8cb1e7123"
+        },
+        {
+          "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/%D1%81%D0%BE%D0%B1%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%B8%D0%BA%D0%B8%20%D0%BA%D0%BE%D0%BC%D0%BC%D0%B5%D1%80%D1%86%D0%B8%D1%8F/assets/editorial/hero.webp",
+          "format": "webp",
+          "contentType": "image/webp",
+          "bytes": 227374,
+          "sha256": "66b69abcd2b54fd3f5bf74f14fa2d8a17fb502ad7a9155afc0c963df7a139edf"
+        },
+        {
+          "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/%D1%81%D0%BE%D0%B1%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%B8%D0%BA%D0%B8%20%D0%BA%D0%BE%D0%BC%D0%BC%D0%B5%D1%80%D1%86%D0%B8%D1%8F/_site/pictures/office-contact/whatsapp.svg",
+          "format": "svg",
+          "contentType": "image/svg+xml",
+          "bytes": 1231,
+          "sha256": "3e197e0e1f3e679ee09823c75e1c7bad3a19da9bd1ba01df395268b9ae91816f"
+        },
+        {
+          "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/%D1%81%D0%BE%D0%B1%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%B8%D0%BA%D0%B8%20%D0%BA%D0%BE%D0%BC%D0%BC%D0%B5%D1%80%D1%86%D0%B8%D1%8F/_site/pictures/office-contact/telegram.svg",
+          "format": "svg",
+          "contentType": "image/svg+xml",
+          "bytes": 757,
+          "sha256": "4435c9a57e165a1c3b7f27e0b5b11b82b10d674ea4fff7f6748cb67b7fcb994e"
+        },
+        {
+          "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/%D1%81%D0%BE%D0%B1%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%B8%D0%BA%D0%B8%20%D0%BA%D0%BE%D0%BC%D0%BC%D0%B5%D1%80%D1%86%D0%B8%D1%8F/assets/alina-medvedeva-cta.webp",
+          "format": "webp",
+          "contentType": "image/webp",
+          "bytes": 160812,
+          "sha256": "849bc06a25cd8daa24bb642b6a7f19e6efdbf6989471fd1f9ca6cd183ff508c7"
+        },
+        {
+          "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/%D1%81%D0%BE%D0%B1%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%B8%D0%BA%D0%B8%20%D0%BA%D0%BE%D0%BC%D0%BC%D0%B5%D1%80%D1%86%D0%B8%D1%8F/assets/editorial/repositioning.webp",
+          "format": "webp",
+          "contentType": "image/webp",
+          "bytes": 246498,
+          "sha256": "1b7b137c3d0d987b0380ce095a4c076785fc441478872d8e986488d8ebbaf5de"
+        },
+        {
+          "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/%D1%81%D0%BE%D0%B1%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%B8%D0%BA%D0%B8%20%D0%BA%D0%BE%D0%BC%D0%BC%D0%B5%D1%80%D1%86%D0%B8%D1%8F/assets/editorial/economics.webp",
+          "format": "webp",
+          "contentType": "image/webp",
+          "bytes": 108938,
+          "sha256": "83c0a62f0eb260970838eb9318bd382bb981e2b60ae62f09dabe8afd4e0d25ca"
+        },
+        {
+          "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/%D1%81%D0%BE%D0%B1%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%B8%D0%BA%D0%B8%20%D0%BA%D0%BE%D0%BC%D0%BC%D0%B5%D1%80%D1%86%D0%B8%D1%8F/assets/editorial/potential.webp",
+          "format": "webp",
+          "contentType": "image/webp",
+          "bytes": 123770,
+          "sha256": "c220206e7bfdae8b314a5c031dfe4525211eec657b7f9fe32d54743e567d39fb"
+        },
+        {
+          "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/%D1%81%D0%BE%D0%B1%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%B8%D0%BA%D0%B8%20%D0%BA%D0%BE%D0%BC%D0%BC%D0%B5%D1%80%D1%86%D0%B8%D1%8F/assets/editorial/buyer.webp",
+          "format": "webp",
+          "contentType": "image/webp",
+          "bytes": 201358,
+          "sha256": "2f8f49e9137f00a9e12ba5ca4398f98cac949d4e157cbd0065ed482345fb900e"
+        },
+        {
+          "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/%D1%81%D0%BE%D0%B1%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%B8%D0%BA%D0%B8%20%D0%BA%D0%BE%D0%BC%D0%BC%D0%B5%D1%80%D1%86%D0%B8%D1%8F/_site/pictures/office-contact/max.svg",
+          "format": "svg",
+          "contentType": "image/svg+xml",
+          "bytes": 72862,
+          "sha256": "5caa61a4b0731d0d89421b4fb24f41433025e5aea59155a14cf3a3fada6c9174"
+        },
+        {
+          "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/%D1%81%D0%BE%D0%B1%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%B8%D0%BA%D0%B8%20%D0%BA%D0%BE%D0%BC%D0%BC%D0%B5%D1%80%D1%86%D0%B8%D1%8F/assets/editorial/privacy.webp",
+          "format": "webp",
+          "contentType": "image/webp",
+          "bytes": 116102,
+          "sha256": "98e374158d7b17116a33b63074c4c5357ab37ffc78bba1c434efe51518f12c08"
+        },
+        {
+          "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/%D1%81%D0%BE%D0%B1%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%B8%D0%BA%D0%B8%20%D0%BA%D0%BE%D0%BC%D0%BC%D0%B5%D1%80%D1%86%D0%B8%D1%8F/assets/editorial/specialists.webp",
+          "format": "webp",
+          "contentType": "image/webp",
+          "bytes": 178414,
+          "sha256": "4ec8b6b81177869cd4cc9c1bc254916dacb623e900479546384aed60d249e04e"
+        },
+        {
+          "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/%D1%81%D0%BE%D0%B1%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%B8%D0%BA%D0%B8%20%D0%BA%D0%BE%D0%BC%D0%BC%D0%B5%D1%80%D1%86%D0%B8%D1%8F/assets/alina-floating-avatar.webp",
+          "format": "webp",
+          "contentType": "image/webp",
+          "bytes": 343974,
+          "sha256": "e877387e3f8f919894e58460909f8dc52490cac789d7869eb2f2929da258099f"
+        },
+        {
+          "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/%D1%81%D0%BE%D0%B1%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%B8%D0%BA%D0%B8%20%D0%BA%D0%BE%D0%BC%D0%BC%D0%B5%D1%80%D1%86%D0%B8%D1%8F/_site/shared/assets/home-about-logo-round-red.webp",
+          "format": "webp",
+          "contentType": "image/webp",
+          "bytes": 15196,
+          "sha256": "5f595f5a67a3568be8b035657cf437233f54b6490b238a59d3192cf4ec2a18d0"
+        },
+        {
+          "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/%D1%81%D0%BE%D0%B1%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%B8%D0%BA%D0%B8%20%D0%BA%D0%BE%D0%BC%D0%BC%D0%B5%D1%80%D1%86%D0%B8%D1%8F/assets/editorial/advantages-panorama.webp",
+          "format": "webp",
+          "contentType": "image/webp",
+          "bytes": 174160,
+          "sha256": "cb76beaffda8406f5c85147586fe65c595996d3027f9f1a6a7a38120b7a4370b"
+        },
+        {
+          "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/%D1%81%D0%BE%D0%B1%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%B8%D0%BA%D0%B8%20%D0%BA%D0%BE%D0%BC%D0%BC%D0%B5%D1%80%D1%86%D0%B8%D1%8F/assets/directions/service-city.webp",
+          "format": "webp",
+          "contentType": "image/webp",
+          "bytes": 108382,
+          "sha256": "5733e6167392ba9bb0229fe1977ce5aeb55096d5a8d3352a65d661ec5ed17ed9"
+        },
+        {
+          "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/%D1%81%D0%BE%D0%B1%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%B8%D0%BA%D0%B8%20%D0%BA%D0%BE%D0%BC%D0%BC%D0%B5%D1%80%D1%86%D0%B8%D1%8F/assets/directions/service-country.webp",
+          "format": "webp",
+          "contentType": "image/webp",
+          "bytes": 71990,
+          "sha256": "16ea18abb8b0d3d7af437a926bd5fc929e45b4f1b10f190ee29eecee8836a371"
+        },
+        {
+          "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/%D1%81%D0%BE%D0%B1%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%B8%D0%BA%D0%B8%20%D0%BA%D0%BE%D0%BC%D0%BC%D0%B5%D1%80%D1%86%D0%B8%D1%8F/assets/directions/service-spb.webp",
+          "format": "webp",
+          "contentType": "image/webp",
+          "bytes": 92572,
+          "sha256": "c4fcea4691ce04e611c0eec14482f058f85f81f3dd71d46b02e1d9c684fc86b4"
+        },
+        {
+          "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/%D1%81%D0%BE%D0%B1%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%B8%D0%BA%D0%B8%20%D0%BA%D0%BE%D0%BC%D0%BC%D0%B5%D1%80%D1%86%D0%B8%D1%8F/assets/editorial/strategy.webp",
+          "format": "webp",
+          "contentType": "image/webp",
+          "bytes": 284024,
+          "sha256": "08adeaf2b91d00d0ea73f7ecbabea83034d3ccdf45dcccb75d15cbe721338967"
+        },
+        {
+          "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/%D1%81%D0%BE%D0%B1%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%B8%D0%BA%D0%B8%20%D0%BA%D0%BE%D0%BC%D0%BC%D0%B5%D1%80%D1%86%D0%B8%D1%8F/assets/directions/service-rent.webp",
+          "format": "webp",
+          "contentType": "image/webp",
+          "bytes": 81660,
+          "sha256": "51b77a72220655437c73ba0b32aa2a600d5ebc5f32678a19e2e26acd1a38f229"
+        },
+        {
+          "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/%D1%81%D0%BE%D0%B1%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%B8%D0%BA%D0%B8%20%D0%BA%D0%BE%D0%BC%D0%BC%D0%B5%D1%80%D1%86%D0%B8%D1%8F/assets/menu-featured-01.webp",
+          "format": "webp",
+          "contentType": "image/webp",
+          "bytes": 273602,
+          "sha256": "5fa04d6f84449d6e8e24aa5fe80d2d071efa651a4f4da16d3b694a65f5a6f31b"
+        },
+        {
+          "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/%D1%81%D0%BE%D0%B1%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%B8%D0%BA%D0%B8%20%D0%BA%D0%BE%D0%BC%D0%BC%D0%B5%D1%80%D1%86%D0%B8%D1%8F/assets/menu-featured-02.webp",
+          "format": "webp",
+          "contentType": "image/webp",
+          "bytes": 379468,
+          "sha256": "0118984b23a5ee9ed8908973ee9106ad69cad1932458df2985ed9dec6362f43b"
+        },
+        {
+          "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/%D1%81%D0%BE%D0%B1%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%B8%D0%BA%D0%B8%20%D0%BA%D0%BE%D0%BC%D0%BC%D0%B5%D1%80%D1%86%D0%B8%D1%8F/assets/newsletter/magazines-desktop.webp",
+          "format": "webp",
+          "contentType": "image/webp",
+          "bytes": 113252,
+          "sha256": "a59b66d0d7fdeda1b0b0726fc2b9f0f23450da792c5cff66bba1482a09d8774f"
+        },
+        {
+          "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/%D1%81%D0%BE%D0%B1%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%B8%D0%BA%D0%B8%20%D0%BA%D0%BE%D0%BC%D0%BC%D0%B5%D1%80%D1%86%D0%B8%D1%8F/assets/alina-medvedeva.webp",
+          "format": "webp",
+          "contentType": "image/webp",
+          "bytes": 41370,
+          "sha256": "2be4ad39d69423f267becc1f06cfb67b1776e123833c023c48b4615244a82cf1"
+        }
+      ],
+      "webp": 20,
+      "svg": 4,
+      "nonWebpRaster": 0,
+      "broken": 0,
+      "errors": [],
+      "inlineRasterData": 0,
+      "domImages": 44,
+      "menuAndExpertDialog": true
+    },
+    {
+      "label": "handoff",
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/handoff/owner-commercial/html/index.html",
+      "width": 390,
+      "images": [
+        {
+          "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/handoff/owner-commercial/assets/alina-medvedeva-cta.webp",
+          "format": "webp",
+          "contentType": "image/webp",
+          "bytes": 160812,
+          "sha256": "849bc06a25cd8daa24bb642b6a7f19e6efdbf6989471fd1f9ca6cd183ff508c7"
+        },
+        {
+          "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/handoff/owner-commercial/assets/barn-estate-logo.svg",
+          "format": "svg",
+          "contentType": "image/svg+xml",
+          "bytes": 6644,
+          "sha256": "9b2d8c1a7d4d213587828c6bdf6592a37113a388fedc1b58211534d8cb1e7123"
+        },
+        {
+          "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/handoff/owner-commercial/assets/editorial/hero.webp",
+          "format": "webp",
+          "contentType": "image/webp",
+          "bytes": 227374,
+          "sha256": "66b69abcd2b54fd3f5bf74f14fa2d8a17fb502ad7a9155afc0c963df7a139edf"
+        },
+        {
+          "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/handoff/owner-commercial/assets/shared/whatsapp.svg",
+          "format": "svg",
+          "contentType": "image/svg+xml",
+          "bytes": 1231,
+          "sha256": "3e197e0e1f3e679ee09823c75e1c7bad3a19da9bd1ba01df395268b9ae91816f"
+        },
+        {
+          "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/handoff/owner-commercial/assets/editorial/economics.webp",
+          "format": "webp",
+          "contentType": "image/webp",
+          "bytes": 108938,
+          "sha256": "83c0a62f0eb260970838eb9318bd382bb981e2b60ae62f09dabe8afd4e0d25ca"
+        },
+        {
+          "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/handoff/owner-commercial/assets/shared/telegram.svg",
+          "format": "svg",
+          "contentType": "image/svg+xml",
+          "bytes": 757,
+          "sha256": "4435c9a57e165a1c3b7f27e0b5b11b82b10d674ea4fff7f6748cb67b7fcb994e"
+        },
+        {
+          "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/handoff/owner-commercial/assets/editorial/buyer.webp",
+          "format": "webp",
+          "contentType": "image/webp",
+          "bytes": 201358,
+          "sha256": "2f8f49e9137f00a9e12ba5ca4398f98cac949d4e157cbd0065ed482345fb900e"
+        },
+        {
+          "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/handoff/owner-commercial/assets/alina-floating-avatar.webp",
+          "format": "webp",
+          "contentType": "image/webp",
+          "bytes": 343974,
+          "sha256": "e877387e3f8f919894e58460909f8dc52490cac789d7869eb2f2929da258099f"
+        },
+        {
+          "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/handoff/owner-commercial/assets/shared/home-about-logo-round-red.webp",
+          "format": "webp",
+          "contentType": "image/webp",
+          "bytes": 15196,
+          "sha256": "5f595f5a67a3568be8b035657cf437233f54b6490b238a59d3192cf4ec2a18d0"
+        },
+        {
+          "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/handoff/owner-commercial/assets/shared/max.svg",
+          "format": "svg",
+          "contentType": "image/svg+xml",
+          "bytes": 72862,
+          "sha256": "5caa61a4b0731d0d89421b4fb24f41433025e5aea59155a14cf3a3fada6c9174"
+        },
+        {
+          "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/handoff/owner-commercial/assets/editorial/strategy.webp",
+          "format": "webp",
+          "contentType": "image/webp",
+          "bytes": 284024,
+          "sha256": "08adeaf2b91d00d0ea73f7ecbabea83034d3ccdf45dcccb75d15cbe721338967"
+        },
+        {
+          "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/handoff/owner-commercial/assets/editorial/advantages-panorama.webp",
+          "format": "webp",
+          "contentType": "image/webp",
+          "bytes": 174160,
+          "sha256": "cb76beaffda8406f5c85147586fe65c595996d3027f9f1a6a7a38120b7a4370b"
+        },
+        {
+          "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/handoff/owner-commercial/assets/directions/service-spb.webp",
+          "format": "webp",
+          "contentType": "image/webp",
+          "bytes": 92572,
+          "sha256": "c4fcea4691ce04e611c0eec14482f058f85f81f3dd71d46b02e1d9c684fc86b4"
+        },
+        {
+          "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/handoff/owner-commercial/assets/editorial/privacy.webp",
+          "format": "webp",
+          "contentType": "image/webp",
+          "bytes": 116102,
+          "sha256": "98e374158d7b17116a33b63074c4c5357ab37ffc78bba1c434efe51518f12c08"
+        },
+        {
+          "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/handoff/owner-commercial/assets/directions/service-rent.webp",
+          "format": "webp",
+          "contentType": "image/webp",
+          "bytes": 81660,
+          "sha256": "51b77a72220655437c73ba0b32aa2a600d5ebc5f32678a19e2e26acd1a38f229"
+        },
+        {
+          "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/handoff/owner-commercial/assets/directions/service-country.webp",
+          "format": "webp",
+          "contentType": "image/webp",
+          "bytes": 71990,
+          "sha256": "16ea18abb8b0d3d7af437a926bd5fc929e45b4f1b10f190ee29eecee8836a371"
+        },
+        {
+          "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/handoff/owner-commercial/assets/menu-featured-01.webp",
+          "format": "webp",
+          "contentType": "image/webp",
+          "bytes": 273602,
+          "sha256": "5fa04d6f84449d6e8e24aa5fe80d2d071efa651a4f4da16d3b694a65f5a6f31b"
+        },
+        {
+          "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/handoff/owner-commercial/assets/directions/service-city.webp",
+          "format": "webp",
+          "contentType": "image/webp",
+          "bytes": 108382,
+          "sha256": "5733e6167392ba9bb0229fe1977ce5aeb55096d5a8d3352a65d661ec5ed17ed9"
+        },
+        {
+          "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/handoff/owner-commercial/assets/newsletter/magazines-mobile.webp",
+          "format": "webp",
+          "contentType": "image/webp",
+          "bytes": 15704,
+          "sha256": "3285d219f1845deb8887ba3bc04b8e79ce8d3bec99dd568d8a51b8c5fa8bf9af"
+        },
+        {
+          "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/handoff/owner-commercial/assets/editorial/potential.webp",
+          "format": "webp",
+          "contentType": "image/webp",
+          "bytes": 123770,
+          "sha256": "c220206e7bfdae8b314a5c031dfe4525211eec657b7f9fe32d54743e567d39fb"
+        },
+        {
+          "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/handoff/owner-commercial/assets/editorial/repositioning.webp",
+          "format": "webp",
+          "contentType": "image/webp",
+          "bytes": 246498,
+          "sha256": "1b7b137c3d0d987b0380ce095a4c076785fc441478872d8e986488d8ebbaf5de"
+        },
+        {
+          "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/handoff/owner-commercial/assets/editorial/specialists.webp",
+          "format": "webp",
+          "contentType": "image/webp",
+          "bytes": 178414,
+          "sha256": "4ec8b6b81177869cd4cc9c1bc254916dacb623e900479546384aed60d249e04e"
+        },
+        {
+          "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/handoff/owner-commercial/assets/menu-featured-02.webp",
+          "format": "webp",
+          "contentType": "image/webp",
+          "bytes": 379468,
+          "sha256": "0118984b23a5ee9ed8908973ee9106ad69cad1932458df2985ed9dec6362f43b"
+        },
+        {
+          "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/handoff/owner-commercial/assets/alina-medvedeva.webp",
+          "format": "webp",
+          "contentType": "image/webp",
+          "bytes": 41370,
+          "sha256": "2be4ad39d69423f267becc1f06cfb67b1776e123833c023c48b4615244a82cf1"
+        }
+      ],
+      "webp": 20,
+      "svg": 4,
+      "nonWebpRaster": 0,
+      "broken": 0,
+      "errors": [],
+      "inlineRasterData": 0,
+      "domImages": 44,
+      "menuAndExpertDialog": true
+    },
+    {
+      "label": "handoff",
+      "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/handoff/owner-commercial/html/index.html",
+      "width": 1440,
+      "images": [
+        {
+          "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/handoff/owner-commercial/assets/barn-estate-logo.svg",
+          "format": "svg",
+          "contentType": "image/svg+xml",
+          "bytes": 6644,
+          "sha256": "9b2d8c1a7d4d213587828c6bdf6592a37113a388fedc1b58211534d8cb1e7123"
+        },
+        {
+          "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/handoff/owner-commercial/assets/editorial/hero.webp",
+          "format": "webp",
+          "contentType": "image/webp",
+          "bytes": 227374,
+          "sha256": "66b69abcd2b54fd3f5bf74f14fa2d8a17fb502ad7a9155afc0c963df7a139edf"
+        },
+        {
+          "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/handoff/owner-commercial/assets/alina-medvedeva-cta.webp",
+          "format": "webp",
+          "contentType": "image/webp",
+          "bytes": 160812,
+          "sha256": "849bc06a25cd8daa24bb642b6a7f19e6efdbf6989471fd1f9ca6cd183ff508c7"
+        },
+        {
+          "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/handoff/owner-commercial/assets/shared/whatsapp.svg",
+          "format": "svg",
+          "contentType": "image/svg+xml",
+          "bytes": 1231,
+          "sha256": "3e197e0e1f3e679ee09823c75e1c7bad3a19da9bd1ba01df395268b9ae91816f"
+        },
+        {
+          "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/handoff/owner-commercial/assets/shared/telegram.svg",
+          "format": "svg",
+          "contentType": "image/svg+xml",
+          "bytes": 757,
+          "sha256": "4435c9a57e165a1c3b7f27e0b5b11b82b10d674ea4fff7f6748cb67b7fcb994e"
+        },
+        {
+          "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/handoff/owner-commercial/assets/editorial/economics.webp",
+          "format": "webp",
+          "contentType": "image/webp",
+          "bytes": 108938,
+          "sha256": "83c0a62f0eb260970838eb9318bd382bb981e2b60ae62f09dabe8afd4e0d25ca"
+        },
+        {
+          "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/handoff/owner-commercial/assets/editorial/potential.webp",
+          "format": "webp",
+          "contentType": "image/webp",
+          "bytes": 123770,
+          "sha256": "c220206e7bfdae8b314a5c031dfe4525211eec657b7f9fe32d54743e567d39fb"
+        },
+        {
+          "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/handoff/owner-commercial/assets/editorial/repositioning.webp",
+          "format": "webp",
+          "contentType": "image/webp",
+          "bytes": 246498,
+          "sha256": "1b7b137c3d0d987b0380ce095a4c076785fc441478872d8e986488d8ebbaf5de"
+        },
+        {
+          "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/handoff/owner-commercial/assets/shared/max.svg",
+          "format": "svg",
+          "contentType": "image/svg+xml",
+          "bytes": 72862,
+          "sha256": "5caa61a4b0731d0d89421b4fb24f41433025e5aea59155a14cf3a3fada6c9174"
+        },
+        {
+          "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/handoff/owner-commercial/assets/editorial/specialists.webp",
+          "format": "webp",
+          "contentType": "image/webp",
+          "bytes": 178414,
+          "sha256": "4ec8b6b81177869cd4cc9c1bc254916dacb623e900479546384aed60d249e04e"
+        },
+        {
+          "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/handoff/owner-commercial/assets/editorial/buyer.webp",
+          "format": "webp",
+          "contentType": "image/webp",
+          "bytes": 201358,
+          "sha256": "2f8f49e9137f00a9e12ba5ca4398f98cac949d4e157cbd0065ed482345fb900e"
+        },
+        {
+          "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/handoff/owner-commercial/assets/editorial/privacy.webp",
+          "format": "webp",
+          "contentType": "image/webp",
+          "bytes": 116102,
+          "sha256": "98e374158d7b17116a33b63074c4c5357ab37ffc78bba1c434efe51518f12c08"
+        },
+        {
+          "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/handoff/owner-commercial/assets/shared/home-about-logo-round-red.webp",
+          "format": "webp",
+          "contentType": "image/webp",
+          "bytes": 15196,
+          "sha256": "5f595f5a67a3568be8b035657cf437233f54b6490b238a59d3192cf4ec2a18d0"
+        },
+        {
+          "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/handoff/owner-commercial/assets/alina-floating-avatar.webp",
+          "format": "webp",
+          "contentType": "image/webp",
+          "bytes": 343974,
+          "sha256": "e877387e3f8f919894e58460909f8dc52490cac789d7869eb2f2929da258099f"
+        },
+        {
+          "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/handoff/owner-commercial/assets/editorial/advantages-panorama.webp",
+          "format": "webp",
+          "contentType": "image/webp",
+          "bytes": 174160,
+          "sha256": "cb76beaffda8406f5c85147586fe65c595996d3027f9f1a6a7a38120b7a4370b"
+        },
+        {
+          "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/handoff/owner-commercial/assets/directions/service-spb.webp",
+          "format": "webp",
+          "contentType": "image/webp",
+          "bytes": 92572,
+          "sha256": "c4fcea4691ce04e611c0eec14482f058f85f81f3dd71d46b02e1d9c684fc86b4"
+        },
+        {
+          "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/handoff/owner-commercial/assets/directions/service-country.webp",
+          "format": "webp",
+          "contentType": "image/webp",
+          "bytes": 71990,
+          "sha256": "16ea18abb8b0d3d7af437a926bd5fc929e45b4f1b10f190ee29eecee8836a371"
+        },
+        {
+          "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/handoff/owner-commercial/assets/editorial/strategy.webp",
+          "format": "webp",
+          "contentType": "image/webp",
+          "bytes": 284024,
+          "sha256": "08adeaf2b91d00d0ea73f7ecbabea83034d3ccdf45dcccb75d15cbe721338967"
+        },
+        {
+          "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/handoff/owner-commercial/assets/directions/service-city.webp",
+          "format": "webp",
+          "contentType": "image/webp",
+          "bytes": 108382,
+          "sha256": "5733e6167392ba9bb0229fe1977ce5aeb55096d5a8d3352a65d661ec5ed17ed9"
+        },
+        {
+          "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/handoff/owner-commercial/assets/directions/service-rent.webp",
+          "format": "webp",
+          "contentType": "image/webp",
+          "bytes": 81660,
+          "sha256": "51b77a72220655437c73ba0b32aa2a600d5ebc5f32678a19e2e26acd1a38f229"
+        },
+        {
+          "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/handoff/owner-commercial/assets/menu-featured-01.webp",
+          "format": "webp",
+          "contentType": "image/webp",
+          "bytes": 273602,
+          "sha256": "5fa04d6f84449d6e8e24aa5fe80d2d071efa651a4f4da16d3b694a65f5a6f31b"
+        },
+        {
+          "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/handoff/owner-commercial/assets/menu-featured-02.webp",
+          "format": "webp",
+          "contentType": "image/webp",
+          "bytes": 379468,
+          "sha256": "0118984b23a5ee9ed8908973ee9106ad69cad1932458df2985ed9dec6362f43b"
+        },
+        {
+          "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/handoff/owner-commercial/assets/newsletter/magazines-desktop.webp",
+          "format": "webp",
+          "contentType": "image/webp",
+          "bytes": 113252,
+          "sha256": "a59b66d0d7fdeda1b0b0726fc2b9f0f23450da792c5cff66bba1482a09d8774f"
+        },
+        {
+          "url": "https://daniilterekh-prog.github.io/barn-estate-homepage-clone/handoff/owner-commercial/assets/alina-medvedeva.webp",
+          "format": "webp",
+          "contentType": "image/webp",
+          "bytes": 41370,
+          "sha256": "2be4ad39d69423f267becc1f06cfb67b1776e123833c023c48b4615244a82cf1"
+        }
+      ],
+      "webp": 20,
+      "svg": 4,
+      "nonWebpRaster": 0,
+      "broken": 0,
+      "errors": [],
+      "inlineRasterData": 0,
+      "domImages": 44,
+      "menuAndExpertDialog": true
+    }
+  ],
+  "result": "pass",
+  "note": "SVG vector logos/icons remain SVG. PNG files are diagnostic screenshots in verification folders; none are page assets or ZIP images. No runtime or ZIP modifications were needed."
+}
