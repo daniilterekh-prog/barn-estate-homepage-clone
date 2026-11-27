@@ -1,17 +1,18 @@
 {
   "date": "2026-11-27",
   "sourceRepository": "daniilterekh-prog/barnes-sites",
-  "sourceCommit": "172114b675f6d3c207ec73dc5c27309d80a827f3",
+  "sourceCommit": "ecca88f1af28a01721c526aa9c7679a85d465fe0",
   "sourcePath": "main-site/pages/lot",
   "uiKit": "BARN Estate 1.0.6",
   "scope": "Only stranitsa-lota plus root catalog entries",
   "privateReferenceExcluded": true,
-  "checks": "White surfaces and uppercase headings verified at 320/390/1440/2560; no overflow or JS errors; request/gallery/menu/conditional flows at 390/1440; package tests 5/5",
+  "checks": "16 hero viewports + 27 dropdowns; 10 compact-header widths; four widths verify no contents row and features follow hero; flows 390/1440; package tests 5/5",
   "previewOnly": true,
   "heroOptions": "hero-options/",
   "defaultHeroUnchanged": true,
   "hero3": "Transparent price at every viewport; half bottom gaps; inline previous/next arrows and counter; keyboard and native horizontal swipe",
   "factsReference": "barnes-sites/docs/landing-builder/hero-prototype/hero.css",
   "compactHeader": "Owner-hub reveal at hero bottom - 120px; white 77/111px bar, black logo, lot anchors desktop and menu/contacts mobile",
-  "contentSurfaces": "White content fills and uppercase section headings matched to current zhk-structure; gray/beige plan, building, terms, gallery/map backgrounds removed"
+  "contentSurfaces": "White content fills and uppercase section headings matched to current zhk-structure; gray/beige plan, building, terms, gallery/map backgrounds removed",
+  "compactHero": "No intermediate contents row; facts top padding 8/12/16px and hero bottom 8/12/16px; lot anchors remain in compact desktop header"
 }

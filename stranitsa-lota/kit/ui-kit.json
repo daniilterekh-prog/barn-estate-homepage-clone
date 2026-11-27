@@ -62,11 +62,11 @@
       "radius": 1
     },
     "bottomSpace": {
-      "desktop": 28,
-      "wide": 36,
-      "tablet": 24,
-      "smallTablet": 24,
-      "mobile": 16
+      "desktop": 12,
+      "wide": 16,
+      "tablet": 12,
+      "smallTablet": 12,
+      "mobile": 8
     },
     "note": "Keep Media/Owner title and CTA roles. Lot-specific override requested 27.11.2026: transparent price on every viewport, smaller bottom space, direct arrow controls instead of gallery opener.",
     "inlineSlider": {
@@ -90,7 +90,12 @@
       "desktop": 11,
       "mobile": 10
     },
-    "adaptation": "Keep Tilda Sans and existing BARN Estate H1/CTA roles. Use exact lot values. On narrow screens keep area, bedrooms and floor; finish remains in full apartment facts. Semantic dt precedes dd in DOM, visual values precede captions."
+    "adaptation": "Keep Tilda Sans and existing BARN Estate H1/CTA roles. Use exact lot values. On narrow screens keep area, bedrooms and floor; finish remains in full apartment facts. Semantic dt precedes dd in DOM, visual values precede captions.",
+    "topPadding": {
+      "desktop": 12,
+      "wide": 16,
+      "mobile": 8
+    }
   },
   "compactHeader": {
     "source": "main-site/pages/owner-hub/owner-sale.js and owner-sale.css; existing local media-header adapter",
@@ -105,7 +110,7 @@
     },
     "transition": "opacity 200ms ease, transform 240ms ease; none with reduced motion",
     "content": "Lot anchors on desktop; burger, centered black logo and contacts on mobile",
-    "navigation": "Mobile section bar below compact header; desktop section bar remains in document flow",
+    "navigation": "Lot anchors live only in the compact desktop header. No intermediate contents row. Anchor targets account for the compact header height.",
     "accessibility": "Hidden compact header inert; original header inert while compact shown; menu restores focus to compact burger"
   },
   "contentSurfaces": {

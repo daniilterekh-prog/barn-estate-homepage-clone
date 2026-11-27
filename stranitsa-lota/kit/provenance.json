@@ -115,7 +115,7 @@
       "target": "hero-variants.css",
       "sourceCommit": "93ff4c2c32ceae0881967d3e4a7d119fc61d49dc",
       "sourceSha256": "002bf2d2c75f7ec115686583aaf4c007c82f0a93884dcef8ef52570cf22ae81d",
-      "sha256": "bc060079ad09e93d3f41540083eddb5013211d289fb56400f912fdb41b5ea89c",
+      "sha256": "63cd48ac6eac03c2f74f5d7e9ec812c7341145351b11acce0d14bedc842e5d0d",
       "adaptation": "Variant 3 reuses Media/Owner hero title, CTA, overlay and spacing roles; compact white action row follows homepage filters; other optional variants remain local. Mobile <=768px: unboxed price and primary action below the resort facts; gallery is a 44px secondary control. 27.11.2026 requested override: transparent price at all sizes; smaller footer gaps; inline arrows/counter from local icon kit replace the gallery opener."
     },
     {
@@ -123,7 +123,7 @@
       "target": "hero-variants.css",
       "sourceCommit": "52a4dc52db81b2c2012dcf56aa9da194f4b1c8e3",
       "sourceSha256": "ba38428f8a64418a4ff201b51ae55cde37903292ee7d744ea87e0f63f17422de",
-      "sha256": "bc060079ad09e93d3f41540083eddb5013211d289fb56400f912fdb41b5ea89c",
+      "sha256": "63cd48ac6eac03c2f74f5d7e9ec812c7341145351b11acce0d14bedc842e5d0d",
       "adaptation": "Keep Tilda Sans and existing BARN Estate H1/CTA roles. Use exact lot values. On narrow screens keep area, bedrooms and floor; finish remains in full apartment facts. Semantic dt precedes dd in DOM, visual values precede captions. Adopt resort footer geometry and value/caption hierarchy only. Mobile <=768px: unboxed price and primary action below the resort facts; gallery is a 44px secondary control. 27.11.2026 requested override: transparent price at all sizes; smaller footer gaps; inline arrows/counter from local icon kit replace the gallery opener."
     },
     {
@@ -131,7 +131,7 @@
       "sourceCommit": "6f2ce65ec5ac1383660562cd6bff0313eadf8a35",
       "sourceSha256": "eb2e94aa0238b6d46d2bb7250ab179ed8099ce0a48ded3dd8a20f4a23789136c",
       "target": "lot-page.js",
-      "sha256": "dc7e0c79c1691136b4133c0f9b2d6491c6e8a58be2016e2ad08251022fa14681",
+      "sha256": "21860abe955085e38c0b05424d4560a47877808e55cc2414d7170517e15cb9ea",
       "adaptation": "Copy hero-bottom-minus-120 reveal threshold and hidden/inert states. Reuse local media-header adapter with lot anchors, request context and focus return."
     },
     {
@@ -139,7 +139,7 @@
       "sourceCommit": "6f2ce65ec5ac1383660562cd6bff0313eadf8a35",
       "sourceSha256": "66d7d1042786b8bc83c2b71e700257bb3603e34bc4eefd4603b60c04211d58d8",
       "target": "lot-page.css",
-      "sha256": "363e920ccf1a081d6c41a4d64aa52668e361c4b8378921913155dae08606a789",
+      "sha256": "4d82f853b7c71b5e6665bde3ac53021de9d1a97a219356778be95cbec2ca41fa",
       "adaptation": "Copy fixed white surface, opacity/translate reveal timings, active links; local .lot-page scope and z-index below menu. Shared Media adapter owns logo/grid/contact geometry. Hide desktop anchor scrollbar; mobile anchors stay under header."
     },
     {
@@ -147,7 +147,7 @@
       "sourceCommit": "dcfecb81c95afd6aaa824f1414a7a85eb2a57456",
       "sourceSha256": "71524e470025d286c4e4aed0264ec721f9f2c2a31eff556399e2c099cfa705bf",
       "target": "lot-page.css",
-      "sha256": "363e920ccf1a081d6c41a4d64aa52668e361c4b8378921913155dae08606a789",
+      "sha256": "4d82f853b7c71b5e6665bde3ac53021de9d1a97a219356778be95cbec2ca41fa",
       "adaptation": "Policy reference and live visual comparison: white content surfaces, uppercase section headings in existing Tilda Sans roles, thin separators. Remove #f7f6f4/#eeece8/#f5f4f2 UI fills; photo CTA and brand footer retained like the current project page."
     }
   ]

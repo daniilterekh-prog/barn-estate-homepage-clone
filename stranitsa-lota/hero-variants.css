@@ -263,20 +263,20 @@ body[data-hero-variant="3"] .lot-hero__facts {
   justify-content:space-between;gap:28px;
   width:calc(100% - max(var(--hero-inset),calc((100vw - 1920px)/2))*2);
   margin:0 max(var(--hero-inset),calc((100vw - 1920px)/2)) var(--kit-hero-bottom);
-  padding:24px 0 0;border:0;border-top:1px solid #ffffff59;
+  padding:12px 0 0;border:0;border-top:1px solid #ffffff59;
 }
 body[data-hero-variant="3"] .lot-hero__facts>div {display:flex;flex-direction:column;gap:4px;min-width:0;padding:0}
 body[data-hero-variant="3"] .lot-hero__facts dd {order:0;margin:0;font-size:27px;font-weight:300;line-height:1.3;color:#fff;white-space:nowrap}
 body[data-hero-variant="3"] .lot-hero__facts dt {order:1;margin:0;font-size:11px;font-weight:300;line-height:1.6;letter-spacing:.02em;color:#ffffffcc}
 body[data-hero-variant="3"] .lot-hero:not([data-has-hero-facts]) .lot-offer {margin-bottom:var(--kit-hero-bottom)}
 @media(min-width:1921px){
-  body[data-hero-variant="3"] .lot-hero__facts {padding-top:32px}
+  body[data-hero-variant="3"] .lot-hero__facts {padding-top:16px}
   body[data-hero-variant="3"] .lot-hero__facts dd {font-size:clamp(30px,1.25vw,40px)}
   body[data-hero-variant="3"] .lot-hero__facts dt {font-size:clamp(13px,.6vw,18px)}
 }
 @media(max-width:1024px){body[data-hero-variant="3"] .lot-hero__facts dd {font-size:23px}}
 @media(max-width:768px){
-  body[data-hero-variant="3"] .lot-hero__facts {grid-template-columns:repeat(var(--hero-fact-mobile-count,3),minmax(0,1fr));gap:16px;padding-top:16px}
+  body[data-hero-variant="3"] .lot-hero__facts {grid-template-columns:repeat(var(--hero-fact-mobile-count,3),minmax(0,1fr));gap:16px;padding-top:8px}
   body[data-hero-variant="3"] .lot-hero__facts>[data-hero-fact-secondary] {display:none}
   body[data-hero-variant="3"] .lot-offer {margin-bottom:16px}
 }
@@ -287,7 +287,7 @@ body[data-hero-variant="3"] .lot-hero:not([data-has-hero-facts]) .lot-offer {mar
 
 /* Direct hero slider and unboxed price, using the existing icon/button kit. */
 body[data-hero-variant="3"] .lot-hero {touch-action:pan-y pinch-zoom}
-body[data-hero-variant="3"] {--kit-hero-bottom:28px}
+body[data-hero-variant="3"] {--kit-hero-bottom:12px}
 body[data-hero-variant="3"] .lot-offer {background:transparent;color:#fff}
 body[data-hero-variant="3"] .lot-offer>div:first-of-type {padding:0 24px 0 0}
 body[data-hero-variant="3"] .lot-offer .lot-price {color:#fff}
@@ -296,19 +296,19 @@ body[data-hero-variant="3"] .lot-hero__slider .icon-button {border-color:#ffffff
 body[data-hero-variant="3"] .lot-hero__slider .icon-button:hover {background:#ffffff26}
 body[data-hero-variant="3"] .lot-hero__slider .icon-button:focus-visible {outline-color:#fff}
 body[data-hero-variant="3"] .lot-hero__counter {min-width:46px;font-size:14px;line-height:20px;font-weight:400;text-align:center;font-variant-numeric:tabular-nums;color:#fff}
-@media(min-width:1441px){body[data-hero-variant="3"] {--kit-hero-bottom:36px}}
-@media(max-width:1024px){body[data-hero-variant="3"] {--kit-hero-bottom:24px}}
+@media(min-width:1441px){body[data-hero-variant="3"] {--kit-hero-bottom:16px}}
+@media(max-width:1024px){body[data-hero-variant="3"] {--kit-hero-bottom:12px}}
 @media(max-width:768px){
   body[data-hero-variant="3"] .lot-hero__copy {position:static;order:1;margin-bottom:24px}
   body[data-hero-variant="3"] .lot-hero__slider {position:absolute;top:128px;right:var(--hero-inset);margin:0}
   body[data-hero-variant="3"] .lot-hero__slider .icon-button {width:44px;height:44px}
-  body[data-hero-variant="3"] .lot-hero__facts {order:2;margin-bottom:16px;padding-top:16px}
+  body[data-hero-variant="3"] .lot-hero__facts {order:2;margin-bottom:12px;padding-top:8px}
   body[data-hero-variant="3"] .lot-offer {order:3;padding:0;margin-bottom:var(--kit-hero-bottom)}
   body[data-hero-variant="3"] .lot-offer>div:first-of-type {padding:0 0 16px}
   body[data-hero-variant="3"] .lot-offer .lot-price {font-size:28px;font-weight:300;line-height:1.2}
 }
 @media(max-width:540px){
-  body[data-hero-variant="3"] {--kit-hero-bottom:16px}
+  body[data-hero-variant="3"] {--kit-hero-bottom:8px}
   body[data-hero-variant="3"] .lot-hero__slider {top:100px}
   body[data-hero-variant="3"] .lot-hero__copy .eyebrow {font-size:12px;line-height:16px;margin-bottom:12px}
   body[data-hero-variant="3"] .lot-hero__copy {margin-bottom:20px}

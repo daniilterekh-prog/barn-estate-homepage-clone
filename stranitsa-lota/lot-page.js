@@ -173,7 +173,7 @@
         const button = el('button'); button.type = 'button'; button.dataset.heroImage = String(index); button.setAttribute('aria-label', 'Фотография ' + (index + 1)); button.setAttribute('aria-pressed', String(index === 0)); button.append(image(photo)); filmstrip.append(button);
       }); hero.append(filmstrip);
     }
-    const navWrap = el('div', null, 'lot-nav-wrap'); const nav = el('nav', null, 'container lot-nav'); nav.setAttribute('aria-label', 'Разделы лота'); navWrap.append(nav); main.append(navWrap);
+    const sectionLinks = [];
     if (data.features?.length) {
       const s = section('lot-features', 'ДЕТАЛИ, КОТОРЫЕ ВАЖНЫ', 'Особенности объекта');
       const grid = el('div', null, 'lot-features');
@@ -264,7 +264,7 @@
       } main.append(s.node);
     }
     for (const [id, label] of [['lot-photos', 'Фото'], ['lot-plan', 'Планировка'], ['lot-about', 'О квартире'], ['lot-building', 'О доме'], ['lot-location', 'Расположение'], ['lot-terms', 'Условия'], ['lot-contact', 'Контакт']]) {
-      if ($('#' + id)) nav.append(link(label, '#' + id, ''));
+      if ($('#' + id)) sectionLinks.push({id, label});
     }
     const bar = $('.lot-mobile-bar'); bar.replaceChildren();
     const label = el('div'); label.append(el('strong', price(data)), el('small', 'Лот ' + data.id)); bar.append(label, action('На просмотр', 'tour'));
@@ -278,9 +278,9 @@
     const inner = el('div', null, 'owner-sale-sticky__inner base-container');
     const stickyNav = el('nav', null, 'owner-sale-sticky__nav'); stickyNav.setAttribute('aria-label', 'Разделы лота в хедере');
     const list = el('ul', null, 'owner-sale-sticky__list');
-    for (const a of $$('a', nav)) {
+    for (const {id, label} of sectionLinks) {
       const item = el('li', null, 'owner-sale-sticky__item');
-      item.append(link(a.textContent, a.getAttribute('href'), 'owner-sale-sticky__link')); list.append(item);
+      item.append(link(label, '#' + id, 'owner-sale-sticky__link')); list.append(item);
     }
     stickyNav.append(list);
     const logo = $('.site-header__logo').cloneNode(true); logo.className = 'owner-sale-sticky__logo';
@@ -437,10 +437,10 @@
   }
   function activeNav() {
     pending = false; syncSticky();
-    const links = $$('.lot-nav a'); let active = links[0];
+    const links = $$('.lot-sticky-header .owner-sale-sticky__link'); let active = links[0];
     const line = parseFloat(getComputedStyle(document.documentElement).scrollPaddingTop) + 2;
     for (const a of links) { if ($(a.hash)?.getBoundingClientRect().top < line) active = a; }
-    for (const a of [...links, ...$$('.lot-sticky-header .owner-sale-sticky__link')]) {
+    for (const a of links) {
       const selected = a.hash === active?.hash;
       if (selected) a.setAttribute('aria-current', 'true'); else a.removeAttribute('aria-current');
       a.classList.toggle('owner-sale-sticky__link--active', selected);
