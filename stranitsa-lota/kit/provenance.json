@@ -131,7 +131,7 @@
       "sourceCommit": "6f2ce65ec5ac1383660562cd6bff0313eadf8a35",
       "sourceSha256": "eb2e94aa0238b6d46d2bb7250ab179ed8099ce0a48ded3dd8a20f4a23789136c",
       "target": "lot-page.js",
-      "sha256": "10ceffb4203d7ef929b0b2ea2efb15f056d69a1cec1e42f89549046320bd90fd",
+      "sha256": "9ddd2351dc0128f46dec9587c8fceb3b7fa36f67eb0b7258231b836cb93320f6",
       "adaptation": "Copy hero-bottom-minus-120 reveal threshold and hidden/inert states. Reuse local media-header adapter with lot anchors, request context and focus return."
     },
     {
@@ -193,7 +193,7 @@
       "sourceCommit": "ccbbd989a6909f1b1508656a83077583be48e282",
       "sourceSha256": "d10ea0f6908c53861b6cfc411c235dfbb39777fdb9ae07c5466a117bc8b5fcc0",
       "target": "kit/vendor/zhk/floorplans.css",
-      "sha256": "96c738821d56881fc1239b63a1d6966d151a4c2dedf4b9f7021294d828ee1906",
+      "sha256": "8eda8f495ca6911cc3d13db3846bcf25838357ae542b5d2ce9a8616cae29b649",
       "adaptation": "Reuse existing component; rename source section IDs to lot IDs where required"
     },
     {

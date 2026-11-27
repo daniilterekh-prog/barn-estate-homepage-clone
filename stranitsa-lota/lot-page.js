@@ -211,26 +211,43 @@
     }
     {
       const s = section('lot-plan', 'ПРОСТРАНСТВО', 'Планировка');
-      const layout = el('div',null,'apartments-layout'); const content = el('div',null,'formats-content');
-      const heading = el('div',null,'formats-heading'); heading.setAttribute('aria-hidden','true');
-      ['Формат','Площадь','Комнат',''].forEach(value=>heading.append(el('span',value)));
-      const formats = el('div',null,'format-list'); formats.setAttribute('aria-label','Параметры планировки объекта');
-      const request = data.floorPlan?.src ? 'plan' : 'plan-request';
-      const row = action('',request,'format-row');
-      row.append(el('span',fact(data,'Тип объекта') || 'Объект','format-name'),el('span',fact(data,'Площадь') || 'Уточнить','format-price'),el('span',fact(data,'Комнат') ? fact(data,'Комнат') + ' комн.' : '—','format-area'));
-      const rowAction=el('span',data.floorPlan?.src?'Смотреть':'Запросить','format-action'); rowAction.append(icon('right')); row.append(rowAction); formats.append(row);
-      content.append(heading,formats);
-      if(data.floorPlan?.description) content.append(el('p',data.floorPlan.description,'format-note lead'));
-      const cover=el('figure',null,'formats-cover');
       if (data.floorPlan?.src) {
-        cover.classList.add('formats-cover--plan');
+        s.node.classList.add('lot-plan--available');
+        const layout = el('div', null, 'apartments-layout lot-plan-layout');
+        const cover = el('figure', null, 'formats-cover formats-cover--plan');
         const open = action('', 'plan', 'formats-plan-preview');
         open.setAttribute('aria-label', 'Открыть и увеличить планировку');
         open.append(image(data.floorPlan)); cover.append(open);
-      } else cover.append(image(photoFor(3)));
-      const caption=el('figcaption'); caption.append(el('h3',data.floorPlan?.src?'Планировка объекта':'Планировка по запросу'),el('p',data.floorPlan?.src?'Посмотрите план и обсудите пространство с брокером.':'Попросите брокера прислать план и уточнить размеры помещений.'));
-      caption.append(action(data.floorPlan?.src?'Открыть планировку':'Запросить планировку',request,'formats-plan-link','arrow')); cover.append(caption);
-      layout.append(content,cover); s.box.append(layout); main.append(s.node);
+        const content = el('div', null, 'formats-content lot-plan-details');
+        content.append(el('h3', data.floorPlan.title || 'Параметры планировки'));
+        const summary = [fact(data, 'Площадь'), fact(data, 'Комнат') && fact(data, 'Комнат') + ' комн.'].filter(Boolean).join(' · ');
+        if (summary) content.append(el('p', summary, 'lot-plan-summary'));
+        const rooms = (data.floorPlan.rooms || []).filter(room => room.label && room.value);
+        if (rooms.length) {
+          const list = el('dl', null, 'lot-plan-rooms'); list.setAttribute('aria-label', 'Площади помещений');
+          for (const room of rooms) {const row = el('div'); row.append(el('dt', room.label), el('dd', room.value)); list.append(row);}
+          content.append(list);
+        }
+        const note = data.floorPlan.note || (!rooms.length && data.floorPlan.description);
+        if (note) content.append(el('p', note, 'lead lot-plan-note'));
+        content.append(action('Увеличить планировку', 'plan', 'button outline lot-plan-open', 'arrow'));
+        layout.append(cover, content); s.box.append(layout); main.append(s.node);
+      } else {
+        const layout = el('div',null,'apartments-layout'); const content = el('div',null,'formats-content');
+        const heading = el('div',null,'formats-heading'); heading.setAttribute('aria-hidden','true');
+        ['Формат','Площадь','Комнат',''].forEach(value=>heading.append(el('span',value)));
+        const formats = el('div',null,'format-list'); formats.setAttribute('aria-label','Параметры планировки объекта');
+        const request = 'plan-request';
+        const row = action('',request,'format-row');
+        row.append(el('span',fact(data,'Тип объекта') || 'Объект','format-name'),el('span',fact(data,'Площадь') || 'Уточнить','format-price'),el('span',fact(data,'Комнат') ? fact(data,'Комнат') + ' комн.' : '—','format-area'));
+        const rowAction=el('span','Запросить','format-action'); rowAction.append(icon('right')); row.append(rowAction); formats.append(row);
+        content.append(heading,formats);
+        if(data.floorPlan?.description) content.append(el('p',data.floorPlan.description,'format-note lead'));
+        const cover=el('figure',null,'formats-cover'); cover.append(image(photoFor(3)));
+        const caption=el('figcaption'); caption.append(el('h3','Планировка по запросу'),el('p','Попросите брокера прислать план и уточнить размеры помещений.'));
+        caption.append(action('Запросить планировку',request,'formats-plan-link','arrow')); cover.append(caption);
+        layout.append(content,cover); s.box.append(layout); main.append(s.node);
+      }
     }
     {
       const s=section('lot-about','ВАШ БУДУЩИЙ ДОМ','О квартире'); const description=el('div',null,'project-description');

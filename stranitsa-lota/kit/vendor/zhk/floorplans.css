@@ -51,3 +51,19 @@
 #lot-plan .formats-plan-preview img{display:block;width:100%;height:auto;object-fit:contain}
 #lot-plan .formats-cover--plan figcaption{position:static;padding-top:24px}
 #lot-plan .formats-cover--plan .formats-plan-link{color:var(--brand)}
+
+/* A single lot has a single plan: large original sheet, then room areas in kit typography. */
+#lot-plan .lot-plan-layout{grid-template-columns:minmax(0,1.8fr) minmax(0,1fr);gap:clamp(32px,4.5vw,80px);align-items:start}
+#lot-plan .lot-plan-layout .formats-cover{min-width:0}
+#lot-plan .lot-plan-details h3{font-size:28px;line-height:1.2;margin-bottom:16px}
+#lot-plan .lot-plan-summary{font-size:27px;line-height:1.2;font-weight:300;margin-bottom:32px}
+#lot-plan .lot-plan-rooms{border-top:1px solid var(--line)}
+#lot-plan .lot-plan-rooms>div{display:flex;justify-content:space-between;align-items:baseline;gap:24px;padding:18px 0;border-bottom:1px solid var(--line);font-size:20px;line-height:1.4}
+#lot-plan .lot-plan-rooms dt{color:var(--copy);font-weight:300}
+#lot-plan .lot-plan-rooms dd{white-space:nowrap;font-weight:300}
+#lot-plan .lot-plan-note{margin-top:24px}
+#lot-plan .lot-plan-open{margin-top:32px;max-width:100%;gap:24px}
+#lot-plan .formats-plan-preview:focus-visible{outline:2px solid var(--brand);outline-offset:4px}
+@media(min-width:1441px){#lot-plan .lot-plan-summary{font-size:32px}#lot-plan .lot-plan-rooms>div{font-size:22px}}
+@media(max-width:1024px){#lot-plan .lot-plan-layout{grid-template-columns:1fr;gap:32px}#lot-plan .lot-plan-details{max-width:680px}#lot-plan .lot-plan-summary{font-size:24px}}
+@media(max-width:540px){#lot-plan .lot-plan-details h3{font-size:24px;margin-bottom:12px}#lot-plan .lot-plan-summary{font-size:23px;margin-bottom:24px}#lot-plan .lot-plan-rooms>div{padding:14px 0;font-size:18px;gap:16px}#lot-plan .lot-plan-note{margin-top:20px}#lot-plan .lot-plan-open{width:100%;margin-top:24px}}

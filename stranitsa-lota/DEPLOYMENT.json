@@ -1,7 +1,7 @@
 {
   "date": "2026-11-27",
   "sourceRepository": "daniilterekh-prog/barnes-sites",
-  "sourceCommit": "a582371650c2e2d39bcd68a7657e96e5372f565c",
+  "sourceCommit": "f7594c877b40dad7621b7c9bd75aa093c23dc48e",
   "sourcePath": "main-site/pages/lot",
   "uiKit": "BARN Estate 1.0.6",
   "scope": "Only stranitsa-lota",
@@ -28,5 +28,6 @@
   "heroDropdownSurface": "Transparent hero dropdown background/border, no shadow, white submenu and expanded parent text. Normal open menu style preserved. All9 menus checked at1281/1440/2560 with hover, keyboard and Escape/focus.",
   "intrumExample": "?hero=3&lot=601669: own user photos and complete plan; parking/year/storeys/class/courtyard in building, apartment equipment in description; bedrooms hidden pending verification. No CRM API or assigned broker.",
   "characteristicIcons": "Local Lucide SVG subset, pinned commit and license in kit; kit muted color #656462, stroke1.5,decorative24/22px; no backgrounds.",
-  "characteristicsPricePerSquareMeter": "601669: price per m² immediately right of windows, derived from priceRub / total area;same kit cell and licensed ruble SVG;checked320/390/768/1440 and price recalculation"
+  "characteristicsPricePerSquareMeter": "601669: price per m² immediately right of windows, derived from priceRub / total area;same kit cell and licensed ruble SVG;checked320/390/768/1440 and price recalculation",
+  "floorPlanLayout": "Large complete source sheet left and room areas right (1.8:1); image first below1025px; kit outline button opens original plan with existing zoom/Escape/focus return. 9 layout widths and10 flow widths checked; no-file request preserved."
 }
