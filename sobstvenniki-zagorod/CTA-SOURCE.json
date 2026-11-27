@@ -27,5 +27,15 @@
       "height": 256
     }
   },
-  "canonicalAssetsCommit": "38c9c687f2a6e413661c348bc433e4e05236037a"
+  "canonicalAssetsCommit": "38c9c687f2a6e413661c348bc433e4e05236037a",
+  "floatingAvatar": {
+    "source": "https://raw.githubusercontent.com/daniilterekh-prog/barnes-assets/main/portraits/floating-expert-dark-hair/expert-avatar-square.webp",
+    "canonicalAssetsCommit": "da742cfa700fed639dd3f11794973aa240e9c674",
+    "local": "assets/expert-avatar-square.webp",
+    "sha256": "f6809c635a0de60175f88dc0ef79a78d1f371c0fd1e959e582b6e2e63eeb25d6",
+    "processing": "Exact copy; no re-encoding",
+    "width": 640,
+    "height": 640
+  },
+  "captionPolicy": "Per user correction: no personal name or job title in the large CTA."
 }

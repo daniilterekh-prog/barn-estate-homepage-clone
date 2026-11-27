@@ -1,6 +1,6 @@
 # Актуальные страницы основного сайта
 
-- [Собственники — загород: открыть страницу](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/sobstvenniki-zagorod/) — новый CTA: Елена Валерьевна Картавцева справа, текст и форма слева; WebP,16ширин320–3840px. [Исходники](https://github.com/daniilterekh-prog/barnes-sites/tree/main/main-site/pages/собственники%20загород) ·27.11.2026.
+- [Собственники — загород: открыть страницу](https://daniilterekh-prog.github.io/barn-estate-homepage-clone/sobstvenniki-zagorod/) — CTA без дополнительных подписей, текст слева; новый аватар карточки справа снизу, WebP. [Исходники](https://github.com/daniilterekh-prog/barnes-sites/tree/main/main-site/pages/собственники%20загород) ·27.11.2026.
 
 
 

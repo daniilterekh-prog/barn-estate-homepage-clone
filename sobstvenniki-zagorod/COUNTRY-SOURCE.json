@@ -14,7 +14,8 @@
     "assets/service-rent.webp": "barnes-sites/main-site/pages/owner-hub/assets/editorial/service-rent.webp",
     "assets/consultation-background.webp": "barnes-sites/main-site/pages/country/assets/consultation-background.png",
     "assets/consultation-elena.webp": "barnes-assets/owner-country/cta/consultation-elena.webp",
-    "assets/expert-elena.webp": "barnes-assets/owner-country/cta/expert-elena.webp"
+    "assets/expert-elena.webp": "barnes-assets/owner-country/cta/expert-elena.webp",
+    "assets/expert-avatar-square.webp": "barnes-assets/portraits/floating-expert-dark-hair/expert-avatar-square.webp"
   },
   "notes": [
     "12 загородных сцен сгенерированы специально для этой страницы, это иллюстрации, не конкретные лоты.",
@@ -61,5 +62,6 @@
     "manifest": "WEBP-MIGRATION.json"
   },
   "previous_portrait_choice": "По уточнению пользователя 13.11.2026 используется тот же оригинал и композиция Михаила Долгова, что в действующем загородном узле. Историческое имя файла alexander не меняет действующее имя Михаил. Фото не генерировалось и не ретушировалось.",
-  "cta_asset_commit": "38c9c687f2a6e413661c348bc433e4e05236037a"
+  "cta_asset_commit": "38c9c687f2a6e413661c348bc433e4e05236037a",
+  "cta_caption_policy": "По уточнению пользователя27.11.2026: без имени и должности в большом CTA. Аватар плавающего виджета — точная копия предоставленного WebP из канонической библиотеки."
 }

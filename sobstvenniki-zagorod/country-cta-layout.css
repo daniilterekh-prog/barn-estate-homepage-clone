@@ -31,30 +31,6 @@ html body#ui-kit-page[data-owner-country] #request .catalog-consultation__conten
  max-width:610px!important;
  margin-inline:0!important;
 }
-html body#ui-kit-page[data-owner-country] #request .catalog-consultation__mobile-expert {
- display:flex!important;
- gap:0!important;
- margin:0 0 24px!important;
-}
-html body#ui-kit-page[data-owner-country] #request .catalog-consultation__mobile-photo {
- display:none!important;
-}
-html body#ui-kit-page[data-owner-country] #request .catalog-consultation__mobile-name {
- color:#fff!important;
- font-size:20px!important;
- font-weight:400!important;
- line-height:1.3!important;
- margin:8px 0 0!important;
-}
-html body#ui-kit-page[data-owner-country] #request .catalog-consultation__mobile-role {
- color:#fff!important;
- opacity:.8!important;
- font-size:13px!important;
- line-height:1.4!important;
- letter-spacing:0!important;
- text-transform:none!important;
- margin:0!important;
-}
 @media(min-width:1921px) {
  html body#ui-kit-page[data-owner-country] #request.catalog-consultation .catalog-consultation__image {
   width:1920px!important;
@@ -95,8 +71,5 @@ html body#ui-kit-page[data-owner-country] #request .catalog-consultation__mobile
  html body#ui-kit-page[data-owner-country] #request .catalog-consultation__grid {
   padding:32px var(--barn-page-gutter) 40px!important;
  }
- html body#ui-kit-page[data-owner-country] #request .catalog-consultation__mobile-name {
-  font-size:18px!important;
  }
-}
 }
