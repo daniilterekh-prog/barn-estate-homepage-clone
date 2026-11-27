@@ -139,8 +139,16 @@
       "sourceCommit": "6f2ce65ec5ac1383660562cd6bff0313eadf8a35",
       "sourceSha256": "66d7d1042786b8bc83c2b71e700257bb3603e34bc4eefd4603b60c04211d58d8",
       "target": "lot-page.css",
-      "sha256": "8abb7b85c4ef0337ae1e412224a6cc7fb317eddf759bcbfa4c1e3001af64e6a9",
+      "sha256": "363e920ccf1a081d6c41a4d64aa52668e361c4b8378921913155dae08606a789",
       "adaptation": "Copy fixed white surface, opacity/translate reveal timings, active links; local .lot-page scope and z-index below menu. Shared Media adapter owns logo/grid/contact geometry. Hide desktop anchor scrollbar; mobile anchors stay under header."
+    },
+    {
+      "source": "main-site/pages/residential-complex/structure/README.md",
+      "sourceCommit": "dcfecb81c95afd6aaa824f1414a7a85eb2a57456",
+      "sourceSha256": "71524e470025d286c4e4aed0264ec721f9f2c2a31eff556399e2c099cfa705bf",
+      "target": "lot-page.css",
+      "sha256": "363e920ccf1a081d6c41a4d64aa52668e361c4b8378921913155dae08606a789",
+      "adaptation": "Policy reference and live visual comparison: white content surfaces, uppercase section headings in existing Tilda Sans roles, thin separators. Remove #f7f6f4/#eeece8/#f5f4f2 UI fills; photo CTA and brand footer retained like the current project page."
     }
   ]
 }
