@@ -1,7 +1,7 @@
 {
   "date": "2026-11-27",
   "sourceRepository": "daniilterekh-prog/barnes-sites",
-  "sourceCommit": "74c70dc6695662450584e4df6f4fc308146d8916",
+  "sourceCommit": "d95f123519b1333400cb432fdbcdbe6eb4a7314b",
   "sourcePath": "main-site/pages/lot",
   "uiKit": "BARN Estate 1.0.6",
   "scope": "Only stranitsa-lota",
@@ -24,7 +24,7 @@
   "fixedAction": "Existing project/home floating expert replaces price panel at all widths;desktop24px/mobile16px;hide near forms/footer/in menu/dialog or after close",
   "heroLocationColor": "#ffffff, same as title; checked390/768/1440/2560; section eyebrow colors unchanged",
   "heroSliderAlignment": "Controls share the viewing CTA row and vertical center at11 widths320–3840. Mobile counter above arrows; kit circle/button sizes unchanged;full CTA label fits. Five slider widths,37 photos and single/empty fallbacks passed.",
-  "heroPriceLocation": "Single light metadata line above title: price | location. Lower price removed;CTA starts at title edge;arrow centers preserved. Checked9 widths320–3840, no text clipping or duplicate hero price.",
+  "heroPriceLocation": "Location only above title; large price above right arrow controls.",
   "heroDropdownSurface": "Transparent hero dropdown background/border, no shadow, white submenu and expanded parent text. Normal open menu style preserved. All9 menus checked at1281/1440/2560 with hover, keyboard and Escape/focus.",
   "intrumExample": "?hero=3&lot=601669: own user photos and complete plan; parking/year/storeys/class/courtyard in building, apartment equipment in description; bedrooms hidden pending verification. No CRM API or assigned broker.",
   "characteristicIcons": "Local Lucide SVG subset, pinned commit and license in kit; kit muted color #656462, stroke1.5,decorative24/22px; no backgrounds.",
@@ -35,5 +35,6 @@
   "fullDescription": "Full user-supplied General Description in about block, plain text with paragraph/line breaks; no manually assembled benefit list. Project-page read-more keeps collapsed body+control within adjacent photo height; mobile8-line budget.8 widths, keyboard, short/empty/rerender and controller-unavailable fallbacks checked.",
   "intrumContract": "Logic and73-field map in private source. No actual API/field IDs or automated publishing. Building uses structured facts, location uses structured address/metro/coordinates; no generated prose.",
   "heroPriceAboveArrows": "One large hero price above right arrow controls,22/30/36/42px; location remains above title. Count visually hidden, live announcement retained. CTA/arrow center and hero heights preserved;11 widths tested.",
-  "handoff": "handoff/lot: full html/index.html,12 fragments,css/js/assets/data,INTEGRATION/DATA/DESIGN,source provenance,verification,checksums,one ZIP;isolated9 widths/18 source comparisons/25 photos and actions passed"
+  "handoff": "handoff/lot: full html/index.html,12 fragments,css/js/assets/data,INTEGRATION/DATA/DESIGN,source provenance,verification,checksums,one ZIP;isolated9 widths/18 source comparisons/25 photos and actions passed",
+  "heroH1Position": "Restored title64px lower on desktop/tablet and12px lower on mobile. Price, arrow/CTA coordinates and hero height unchanged;11 width regression and refreshed handoff9 widths/18 comparisons passed."
 }
