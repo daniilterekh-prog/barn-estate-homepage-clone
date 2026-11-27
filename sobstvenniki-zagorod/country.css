@@ -15,8 +15,6 @@ html body#ui-kit-page[data-owner-country] .owner-sale-presentation__card:is(:hov
 html body#ui-kit-page[data-owner-country] .floating-expert__avatar img {position:static!important;inset:auto!important;width:100%!important;height:100%!important;object-fit:cover!important;object-position:center!important;transform:none!important;filter:none!important;}
 html body#ui-kit-page[data-owner-country] .home-owner-form__hero-image {object-position:80% center!important;filter:none!important;}
 html body#ui-kit-page[data-owner-country] .catalog-consultation__lead[hidden] {display:none!important;}
-html body#ui-kit-page[data-owner-country] .owner-sale-types__grid {grid-template-columns:repeat(3,minmax(0,1fr))!important;}
-@media(max-width:767px){html body#ui-kit-page[data-owner-country] .owner-sale-types__grid{grid-template-columns:1fr!important;}}
 /* Reference CTA spacing, independent of the page-wide owner-sale section rules. */
 html body#ui-kit-page[data-owner-country] #request.catalog-consultation {--node-heading-content:40px;--node-copy-gap:24px;padding:0!important;margin:0!important;background:transparent!important;}
 html body#ui-kit-page[data-owner-country] #request .catalog-consultation__inner {width:100%!important;max-width:none!important;padding:0!important;}
